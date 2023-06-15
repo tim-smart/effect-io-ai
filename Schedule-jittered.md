@@ -1,0 +1,11 @@
+# jittered
+
+Returns a new schedule that randomly modifies the size of the intervals of
+this schedule.
+
+Defaults `min` to `0.8` and `max` to `1.2`.
+
+The new interval size is between `min * old interval size` and `max * old
+interval size`.
+
+Part of the `Schedule` module from the `@effect/io` package. Also known as `Schedule.jittered`.
