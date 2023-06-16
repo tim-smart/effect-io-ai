@@ -3,7 +3,7 @@
 Converts a `Effect<R, Either<B, E>, A>` into a `Effect<R, E, Either<B, A>>`.
 The inverse of `right`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

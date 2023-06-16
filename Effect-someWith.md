@@ -3,7 +3,7 @@
 Perfoms the specified operation while "zoomed in" on the `Some` case of an
 `Option`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

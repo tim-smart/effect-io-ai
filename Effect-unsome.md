@@ -2,7 +2,7 @@
 
 Converts an option on errors into an option on values.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

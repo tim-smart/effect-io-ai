@@ -3,7 +3,7 @@
 Keeps none of the errors, and terminates the fiber with them, using the
 specified function to convert the `E` into a `Throwable`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

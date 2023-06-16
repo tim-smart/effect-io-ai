@@ -6,7 +6,7 @@ added. Note that finalizers are run sequentially by default so this only
 has meaning if used within a scope where finalizers are being run in
 parallel.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

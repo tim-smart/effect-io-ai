@@ -3,7 +3,7 @@
 Filters the specified effect with the provided function returning the value
 of the effect if it is successful, otherwise returns the value of `orElse`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

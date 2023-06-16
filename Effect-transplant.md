@@ -7,7 +7,7 @@ executes this effect.
 This can be used to "graft" deep grandchildren onto a higher-level scope,
 effectively extending their lifespans into the parent scope.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

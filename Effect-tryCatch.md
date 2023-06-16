@@ -3,7 +3,7 @@
 Imports a synchronous side-effect into a pure value, translating any
 thrown exceptions into typed failed effects.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

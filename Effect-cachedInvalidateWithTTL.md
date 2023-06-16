@@ -5,7 +5,7 @@ effect. Cached results will expire after `timeToLive` duration. In
 addition, returns an effect that can be used to invalidate the current
 cached value before the `timeToLive` duration expires.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

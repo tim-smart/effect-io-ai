@@ -2,7 +2,7 @@
 
 Returns a new effect that executes this one and times the execution.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

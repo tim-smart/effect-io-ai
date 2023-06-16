@@ -3,7 +3,7 @@
 Swaps the error/value parameters, applies the function `f` and flips the
 parameters back
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

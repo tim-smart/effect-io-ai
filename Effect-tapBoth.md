@@ -3,7 +3,7 @@
 Returns an effect that effectfully "peeks" at the failure or success of
 this effect.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

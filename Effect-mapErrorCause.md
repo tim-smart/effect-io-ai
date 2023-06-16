@@ -7,7 +7,7 @@ original structure of `Cause`.
 See `absorb`, `sandbox`, `catchAllCause` for other functions for dealing
 with defects.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -6,7 +6,7 @@ in error channel or successes in success channel.
 This combinator is lossy meaning that if there are errors all successes
 will be lost. To retain all information please use [[partitionPar]].
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

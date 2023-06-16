@@ -6,7 +6,7 @@ to the first execution, so that `io.repeat(Schedule.once)` yields an effect
 that executes `io`, and then if that succeeds, executes `io` an additional
 time.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

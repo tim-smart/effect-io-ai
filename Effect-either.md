@@ -9,7 +9,7 @@ This method is useful for recovering from effects that may fail.
 The error parameter of the returned `Effect` is `never`, since it is
 guaranteed the effect does not model failure.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

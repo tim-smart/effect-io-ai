@@ -3,7 +3,7 @@
 This function maps the error value of an `Effect` value to a `Left` value
 in an `Either` value.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

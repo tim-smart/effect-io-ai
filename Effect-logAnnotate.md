@@ -2,7 +2,7 @@
 
 Annotates each log in this effect with the specified log annotation.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

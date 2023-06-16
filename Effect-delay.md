@@ -3,7 +3,7 @@
 Returns an effect that is delayed from this effect by the specified
 `Duration`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

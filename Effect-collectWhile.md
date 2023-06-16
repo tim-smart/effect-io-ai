@@ -3,7 +3,7 @@
 Transforms all elements of the chunk for as long as the specified partial
 function is defined.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

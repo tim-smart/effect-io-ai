@@ -22,7 +22,7 @@ fail, even if the `use` `Effect` value succeeds. If this fail-fast behavior
 is not desired, errors produced by the `release` `Effect` value can be caught
 and ignored.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

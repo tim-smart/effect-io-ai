@@ -3,7 +3,7 @@
 Sets the implementation of the clock service to the specified value and
 restores it to its original value when the scope is closed.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -2,7 +2,7 @@
 
 The moral equivalent of `if (!p) exp` when `p` has side-effects.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

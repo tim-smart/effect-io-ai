@@ -8,7 +8,7 @@ success value of the effect.
 If the timeout elapses without producing a value, the running effect will
 be safely interrupted.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

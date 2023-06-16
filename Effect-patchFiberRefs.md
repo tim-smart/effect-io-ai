@@ -3,7 +3,7 @@
 Applies the specified changes to the `FiberRef` values for the fiber
 running this workflow.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

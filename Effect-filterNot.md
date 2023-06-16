@@ -3,7 +3,7 @@
 Filters the collection using the specified effectual predicate, removing
 all elements that satisfy the predicate.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

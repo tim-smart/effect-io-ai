@@ -5,7 +5,7 @@ fiber, and if so, performs self-interruption.
 
 Note that this allows for interruption to occur in uninterruptible regions.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -3,7 +3,7 @@
 Sequentially zips the this result with the specified result. Combines both
 `Cause`s when both effects fail.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

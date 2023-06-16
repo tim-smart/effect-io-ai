@@ -3,7 +3,7 @@
 Determines whether any element of the `Iterable<A>` satisfies the effectual
 predicate `f`, working sequentially.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

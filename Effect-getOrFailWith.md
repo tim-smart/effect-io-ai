@@ -3,7 +3,7 @@
 Lifts an `Maybe` into an `Effect`. If the option is not defined, fail with
 the specified `e` value.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

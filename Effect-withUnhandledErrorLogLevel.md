@@ -2,7 +2,7 @@
 
 Decides wether child fibers will report or not unhandled errors via the logger
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

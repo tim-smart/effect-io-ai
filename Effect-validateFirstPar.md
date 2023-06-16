@@ -3,7 +3,7 @@
 Feeds elements of type `A` to `f` until it succeeds. Returns first success
 or the accumulation of all errors.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

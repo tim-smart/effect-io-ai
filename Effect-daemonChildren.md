@@ -3,7 +3,7 @@
 Returns a new workflow that will not supervise any fibers forked by this
 workflow.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

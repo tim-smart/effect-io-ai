@@ -8,7 +8,7 @@ Scheduled recurrences are in addition to the first execution, so that
 `pipe(effect, Effect.repeat(Schedule.once()))` yields an effect that executes
 `effect`, and then if that succeeds, executes `effect` an additional time.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -9,7 +9,7 @@ This function is sequential, meaning that the `Effect` values in the
 iterable will be executed in sequence, and the first one that succeeds
 will determine the outcome of the resulting `Effect` value.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

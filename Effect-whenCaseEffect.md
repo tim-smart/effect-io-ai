@@ -3,7 +3,7 @@
 Runs an effect when the supplied partial function matches for the given
 value, otherwise does nothing.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

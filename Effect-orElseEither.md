@@ -3,7 +3,7 @@
 Returns an effect that will produce the value of this effect, unless it
 fails, in which case, it will produce the value of the specified effect.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -5,7 +5,7 @@ Imports an asynchronous side-effect into an effect allowing control of interrupt
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

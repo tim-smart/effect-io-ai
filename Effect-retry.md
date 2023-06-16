@@ -5,7 +5,7 @@ failure of the original `io` (up to a fixed maximum with `once` or `recurs`
 for example), so that that `io.retry(Schedule.once)` means "execute `io`
 and in case of failure, try again once".
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

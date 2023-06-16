@@ -3,7 +3,7 @@
 Returns an effect whose failure and success channels have been mapped by
 the specified pair of functions, `f` and `g`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

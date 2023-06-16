@@ -7,7 +7,7 @@ composed effect will fail with some error.
 WARNING: The raced effect will safely interrupt the "loser", but will not
 resume until the loser has been cleanly terminated.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

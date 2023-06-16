@@ -3,7 +3,7 @@
 Sets the `FiberRef` values for the fiber running this effect to the values
 in the specified collection of `FiberRef` values.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

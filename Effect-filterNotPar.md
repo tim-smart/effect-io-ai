@@ -3,7 +3,7 @@
 Filters the collection in parallel using the specified effectual predicate.
 See `filterNot` for a sequential version.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

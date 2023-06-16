@@ -10,7 +10,7 @@ succeed with the value contained in the `Right`. If the `Either` value
 is a `Left` value, then the `Effect` value will fail with the error
 contained in the `Left`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

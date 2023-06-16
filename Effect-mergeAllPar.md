@@ -11,7 +11,7 @@ Due to the parallel nature of this combinator, `f` must be both:
 It's unsafe to execute side effects inside `f`, as `f` may be executed
 more than once for some of `in` elements during effect execution.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

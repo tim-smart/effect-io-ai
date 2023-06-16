@@ -2,7 +2,7 @@
 
 Constructs an effect with information about the current `Fiber`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

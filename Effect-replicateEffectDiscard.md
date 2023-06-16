@@ -2,7 +2,7 @@
 
 Performs this effect the specified number of times, discarding the results.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

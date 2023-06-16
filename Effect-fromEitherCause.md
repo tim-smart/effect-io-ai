@@ -2,7 +2,7 @@
 
 Lifts an `Either<Cause<E>, A>` into an `Effect<never, E, A>`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

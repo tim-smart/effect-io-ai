@@ -4,7 +4,7 @@ Returns an effect that races this effect with all the specified effects,
 yielding the value of the first effect to succeed with a value. Losers of
 the race will be interrupted immediately
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

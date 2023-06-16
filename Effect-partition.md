@@ -3,7 +3,7 @@
 Feeds elements of type `A` to a function `f` that returns an effect.
 Collects all successes and failures in a tupled fashion.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

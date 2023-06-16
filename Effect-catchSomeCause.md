@@ -2,7 +2,7 @@
 
 Recovers from some or all of the error cases with provided cause.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

@@ -2,7 +2,7 @@
 
 Executes the specified workflow with the specified configuration provider.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

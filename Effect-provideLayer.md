@@ -2,7 +2,7 @@
 
 Provides a layer to the effect, which translates it to another level.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

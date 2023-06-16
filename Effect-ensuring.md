@@ -10,7 +10,7 @@ Finalizers offer very powerful guarantees, but they are low-level, and
 should generally not be used for releasing resources. For higher-level
 logic built on `ensuring`, see the `acquireRelease` family of methods.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

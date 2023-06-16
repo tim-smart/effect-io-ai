@@ -3,7 +3,7 @@
 Performs the specified operation while "zoomed in" on the `Left` case of an
 `Either`.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

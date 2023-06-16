@@ -2,7 +2,7 @@
 
 Inherits values from all `FiberRef` instances into current fiber.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

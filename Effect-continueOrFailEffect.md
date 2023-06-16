@@ -3,7 +3,7 @@
 Fail with the specifed `error` if the supplied partial function does not
 match, otherwise continue with the returned value.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

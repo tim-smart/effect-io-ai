@@ -3,7 +3,7 @@
 Repeats this effect for as long as its value is equal to the specified
 value or until the first failure.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 

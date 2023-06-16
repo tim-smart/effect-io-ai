@@ -3,7 +3,7 @@
 Ensures that a cleanup functions runs, whether this effect succeeds, fails,
 or is interrupted.
 
-Part of the `Effect` module from the `@effect/io` package.
+Part of the `Effect` module, imported from `@effect/io/Effect`.
 
 ### Signature
 
