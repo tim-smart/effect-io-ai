@@ -5,9 +5,9 @@ specified combiner function.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const zipWithPar: {
   <R2, E2, A2, A, B>(that: Effect<R2, E2, A2>, f: (a: A, b: A2) => B): <R, E>(
     self: Effect<R, E, A>

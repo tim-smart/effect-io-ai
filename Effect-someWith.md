@@ -5,9 +5,9 @@ Perfoms the specified operation while "zoomed in" on the `Some` case of an
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const someWith: {
   <R, E, A, R1, E1, A1>(f: (effect: Effect<R, Option.Option<E>, A>) => Effect<R1, Option.Option<E1>, A1>): (
     self: Effect<R, E, Option.Option<A>>

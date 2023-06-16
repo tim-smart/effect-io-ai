@@ -6,8 +6,8 @@ returned effect terminates, the forked fiber will continue running.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const forkDaemon: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Fiber.RuntimeFiber<E, A>>
 ```

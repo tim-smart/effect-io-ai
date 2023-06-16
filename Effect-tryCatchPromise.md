@@ -5,9 +5,9 @@ its result, errors will be handled using `onReject`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const tryCatchPromise: <E, A>(
   evaluate: LazyArg<Promise<A>>,
   onReject: (reason: unknown) => E

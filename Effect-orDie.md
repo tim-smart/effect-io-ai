@@ -5,8 +5,8 @@ unchecked and not a part of the type of the effect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const orDie: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, A>
 ```

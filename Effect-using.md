@@ -5,9 +5,9 @@ without effecting the scope of any resources acquired by `use`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const using: {
   <A, R2, E2, A2>(use: (a: A) => Effect<R2, E2, A2>): <R, E>(
     self: Effect<Scope.Scope | R, E, A>

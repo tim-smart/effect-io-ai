@@ -5,9 +5,9 @@ fails, in which case, it will produce the value of the specified effect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const orElseEither: {
   <R2, E2, A2>(that: LazyArg<Effect<R2, E2, A2>>): <R, E, A>(
     self: Effect<R, E, A>

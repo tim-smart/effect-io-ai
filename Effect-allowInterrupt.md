@@ -7,8 +7,8 @@ Note that this allows for interruption to occur in uninterruptible regions.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const allowInterrupt: (_: void) => Effect<never, never, void>
 ```

@@ -9,9 +9,9 @@ effectively extending their lifespans into the parent scope.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const transplant: <R, E, A>(
   f: (grafter: <R2, E2, A2>(effect: Effect<R2, E2, A2>) => Effect<R2, E2, A2>) => Effect<R, E, A>
 ) => Effect<R, E, A>

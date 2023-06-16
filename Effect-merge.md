@@ -5,8 +5,8 @@ success channel to their common combined type.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const merge: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, E | A>
 ```

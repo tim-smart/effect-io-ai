@@ -6,9 +6,9 @@ work or compute some value.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const configProviderWith: <R, E, A>(
   f: (configProvider: ConfigProvider) => Effect<R, E, A>
 ) => Effect<R, E, A>

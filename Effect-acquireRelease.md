@@ -14,9 +14,9 @@ specified when the scope is closed.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const acquireRelease: {
   <A, R2, X>(release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>): <R, E>(
     acquire: Effect<R, E, A>

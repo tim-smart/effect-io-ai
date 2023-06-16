@@ -6,8 +6,8 @@ defect has been detected in the code.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const dieMessage: (message: string) => Effect<never, never, never>
 ```

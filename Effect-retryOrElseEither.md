@@ -6,9 +6,9 @@ the recovery function.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const retryOrElseEither: {
   <R1, E extends E3, A1, R2, E2, A2, E3>(
     policy: Schedule.Schedule<R1, E3, A1>,

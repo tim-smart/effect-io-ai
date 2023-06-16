@@ -4,9 +4,9 @@ Recovers from some or all of the error cases with provided cause.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const catchSomeCause: {
   <E, R2, E2, A2>(f: (cause: Cause.Cause<E>) => Option.Option<Effect<R2, E2, A2>>): <R, A>(
     self: Effect<R, E, A>

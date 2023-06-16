@@ -5,8 +5,8 @@ result of the workflow or rejects with an error.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const runPromise: <E, A>(effect: Effect<never, E, A>) => Promise<A>
 ```

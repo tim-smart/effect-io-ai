@@ -6,9 +6,9 @@ effect succeeds.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const ensuringChild: {
   <R2, X>(f: (fiber: Fiber.Fiber<any, Array<unknown>>) => Effect<R2, never, X>): <R, E, A>(
     self: Effect<R, E, A>

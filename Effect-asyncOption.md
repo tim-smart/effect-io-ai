@@ -12,9 +12,9 @@ provided to allow for better diagnostics.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const asyncOption: <R, E, A>(
   register: (callback: (_: Effect<R, E, A>) => void) => Option.Option<Effect<R, E, A>>,
   blockingOn?: FiberId.FiberId

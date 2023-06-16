@@ -5,8 +5,8 @@ Returns a effect that will never produce anything. The moral equivalent of
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const never: (_: void) => Effect<never, never, never>
 ```

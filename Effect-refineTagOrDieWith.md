@@ -5,9 +5,9 @@ with the rest, using the specified function to convert the `E` into a defect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const refineTagOrDieWith: {
   <R, E extends { _tag: string }, A, K extends E['_tag'] & string>(k: K, f: (e: Exclude<E, { _tag: K }>) => unknown): (
     self: Effect<R, E, A>

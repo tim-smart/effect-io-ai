@@ -5,9 +5,9 @@ results.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const replicateEffect: {
   (n: number): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A[]>
   <R, E, A>(self: Effect<R, E, A>, n: number): Effect<R, E, A[]>

@@ -5,9 +5,9 @@ match, otherwise continue with the returned value.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const continueOrFailEffect: {
   <E1, A, R2, E2, A2>(error: LazyArg<E1>, pf: (a: A) => Option.Option<Effect<R2, E2, A2>>): <R, E>(
     self: Effect<R, E, A>

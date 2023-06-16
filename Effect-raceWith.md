@@ -5,9 +5,9 @@ the specified finisher as soon as one result or the other has been computed.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const raceWith: {
   <E, A, R1, E1, A1, R2, E2, A2, R3, E3, A3>(
     that: Effect<R1, E1, A1>,

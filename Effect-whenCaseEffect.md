@@ -5,9 +5,9 @@ value, otherwise does nothing.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const whenCaseEffect: {
   <A, R2, E2, A2>(pf: (a: A) => Option.Option<Effect<R2, E2, A2>>): <R, E>(
     self: Effect<R, E, A>

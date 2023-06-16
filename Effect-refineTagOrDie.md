@@ -5,9 +5,9 @@ with the rest
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const refineTagOrDie: {
   <R, E extends { _tag: string }, A, K extends E['_tag'] & string>(k: K): (
     self: Effect<R, E, A>

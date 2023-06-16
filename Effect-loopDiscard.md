@@ -14,9 +14,9 @@ while (cont(s)) {
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const loopDiscard: <Z, R, E, X>(
   initial: Z,
   cont: (z: Z) => boolean,

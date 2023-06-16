@@ -5,8 +5,8 @@ Lifts an `Option` into a `Effect`. If the option is empty it succeeds with
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const noneOrFail: <E>(option: Option.Option<E>) => Effect<never, E, void>
 ```

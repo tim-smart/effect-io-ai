@@ -5,9 +5,9 @@ attached to the current scope.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const scheduleForked: {
   <R2, Out>(schedule: Schedule.Schedule<R2, unknown, Out>): <R, E, A>(
     self: Effect<R, E, A>

@@ -4,9 +4,9 @@ Recovers from the specified tagged errors.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const catchTags: {
   <
     E extends { _tag: string },

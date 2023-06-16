@@ -5,8 +5,8 @@ Runs an `Effect` workflow, returning a `Promise` which resolves with the
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const runPromiseExit: <E, A>(effect: Effect<never, E, A>) => Promise<Exit.Exit<E, A>>
 ```

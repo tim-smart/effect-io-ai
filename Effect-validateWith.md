@@ -5,9 +5,9 @@ combiner function. Combines the causes in case both effect fail.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const validateWith: {
   <A, R2, E2, B, C>(that: Effect<R2, E2, B>, f: (a: A, b: B) => C): <R, E>(
     self: Effect<R, E, A>

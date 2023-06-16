@@ -10,9 +10,9 @@ Scheduled recurrences are in addition to the first execution, so that
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const repeatOrElseEither: {
   <R2, A extends A0, A0, B, E, R3, E2, C>(
     schedule: Schedule.Schedule<R2, A0, B>,

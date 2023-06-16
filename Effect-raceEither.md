@@ -9,9 +9,9 @@ resume until the loser has been cleanly terminated.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const raceEither: {
   <R2, E2, A2>(that: Effect<R2, E2, A2>): <R, E, A>(
     self: Effect<R, E, A>

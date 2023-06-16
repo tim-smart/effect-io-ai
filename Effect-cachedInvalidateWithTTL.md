@@ -7,9 +7,9 @@ cached value before the `timeToLive` duration expires.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const cachedInvalidateWithTTL: {
   (timeToLive: Duration.Duration): <R, E, A>(
     self: Effect<R, E, A>

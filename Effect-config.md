@@ -5,8 +5,8 @@ an error of type Config.Error.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const config: <A>(config: Config<A>) => Effect<never, ConfigError, A>
 ```

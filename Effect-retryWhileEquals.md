@@ -5,9 +5,9 @@ error.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const retryWhileEquals: {
   <E>(e: E): <R, A>(self: Effect<R, E, A>) => Effect<R, E, A>
   <R, E, A>(self: Effect<R, E, A>, e: E): Effect<R, E, A>

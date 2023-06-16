@@ -9,8 +9,8 @@ error type that allows it to fail with any type of error.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const absorb: <R, E, A>(self: Effect<R, E, A>) => Effect<R, unknown, A>
 ```

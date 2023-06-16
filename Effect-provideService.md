@@ -5,9 +5,9 @@ requires more than one service use `provideContext` instead.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const provideService: {
   <T extends Context.Tag<any, any>>(tag: T, service: Context.Tag.Service<T>): <R, E, A>(
     self: Effect<R, E, A>

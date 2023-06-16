@@ -5,8 +5,8 @@ For a sequential version, see `all`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const allParDiscard: All.SignatureDiscard
 ```

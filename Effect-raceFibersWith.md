@@ -8,9 +8,9 @@ higher-level operators like `race`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const raceFibersWith: {
   <E, A, R1, E1, A1, R2, E2, A2, R3, E3, A3>(
     that: Effect<R1, E1, A1>,

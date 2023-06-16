@@ -5,9 +5,9 @@ function to convert the `E` into an `E1 | E2`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const unrefineWith: {
   <E, E1, E2>(pf: (u: unknown) => Option.Option<E1>, f: (e: E) => E2): <R, A>(
     self: Effect<R, E, A>

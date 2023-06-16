@@ -4,9 +4,9 @@ Like bind for values
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const letDiscard: {
   <N extends string, K, A>(tag: Exclude<N, keyof K>, f: A): <R, E>(
     self: Effect<R, E, K>

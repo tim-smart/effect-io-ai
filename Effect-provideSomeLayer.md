@@ -5,9 +5,9 @@ specified layer and leaving the remainder `R0`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const provideSomeLayer: {
   <R2, E2, A2>(layer: Layer.Layer<R2, E2, A2>): <R, E, A>(
     self: Effect<R, E, A>

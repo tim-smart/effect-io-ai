@@ -7,9 +7,9 @@ If `elements` is empty then `Effect.fail([])` is returned.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Example
+**Example**
 
-```typescript
+```ts
 import * as Effect from '@effect/io/Effect'
 import * as Either from '@effect/data/Either'
 
@@ -25,9 +25,9 @@ assert.deepStrictEqual(
 )
 ```
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const validateFirst: {
   <R, E, A, B>(f: (a: A) => Effect<R, E, B>): (elements: Iterable<A>) => Effect<R, E[], B>
   <R, E, A, B>(elements: Iterable<A>, f: (a: A) => Effect<R, E, B>): Effect<R, E[], B>

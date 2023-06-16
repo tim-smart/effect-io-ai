@@ -6,8 +6,8 @@ that must call back into Effect code.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const runtime: <R>() => Effect<R, never, Runtime.Runtime<R>>
 ```

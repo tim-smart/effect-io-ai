@@ -7,9 +7,9 @@ provided to allow for better diagnostics.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const asyncInterrupt: <R, E, A>(
   register: (callback: (effect: Effect<R, E, A>) => void) => Effect<R, never, void>,
   blockingOn?: FiberId.FiberId

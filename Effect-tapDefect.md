@@ -4,9 +4,9 @@ Returns an effect that effectually "peeks" at the defect of this effect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const tapDefect: {
   <R2, E2, X>(f: (cause: Cause.Cause<never>) => Effect<R2, E2, X>): <R, E, A>(
     self: Effect<R, E, A>

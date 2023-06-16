@@ -6,9 +6,9 @@ both sides fail, then the cause will be combined.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const validateWithPar: {
   <A, R1, E1, B, C>(that: Effect<R1, E1, B>, f: (a: A, b: B) => C): <R, E>(
     self: Effect<R, E, A>

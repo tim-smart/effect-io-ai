@@ -5,9 +5,9 @@ of the effect if it is successful, otherwise returns the value of `orElse`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const filterOrElse: {
   <A, B extends A, R2, E2, C>(f: Refinement<A, B>, orElse: LazyArg<Effect<R2, E2, C>>): <R, E>(
     self: Effect<R, E, A>

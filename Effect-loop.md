@@ -17,9 +17,9 @@ A.reverse(as)
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const loop: <Z, R, E, A>(
   initial: Z,
   cont: (z: Z) => boolean,

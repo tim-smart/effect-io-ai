@@ -5,9 +5,9 @@ Performs the specified operation while "zoomed in" on the `Left` case of an
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const leftWith: {
   <R, E, B, A, R1, E1, B1, A1>(
     f: (effect: Effect<R, Either.Either<E, B>, A>) => Effect<R1, Either.Either<E1, B1>, A1>

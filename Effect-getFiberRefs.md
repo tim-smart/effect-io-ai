@@ -5,8 +5,8 @@ effect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const getFiberRefs: (_: void) => Effect<never, never, FiberRefs.FiberRefs>
 ```

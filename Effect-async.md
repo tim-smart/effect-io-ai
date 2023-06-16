@@ -11,9 +11,9 @@ provided to allow for better diagnostics.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const async: <R, E, A>(
   register: (callback: (_: Effect<R, E, A>) => void) => void,
   blockingOn?: FiberId.FiberId

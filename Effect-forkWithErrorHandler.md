@@ -4,9 +4,9 @@ Like fork but handles an error with the provided handler.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const forkWithErrorHandler: {
   <E, X>(handler: (e: E) => Effect<never, never, X>): <R, A>(
     self: Effect<R, E, A>

@@ -6,9 +6,9 @@ the specified effect.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const orElseOptional: {
   <R, E, A, R2, E2, A2>(that: LazyArg<Effect<R2, Option.Option<E2>, A2>>): (
     self: Effect<R, Option.Option<E>, A>

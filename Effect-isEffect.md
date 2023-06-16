@@ -10,8 +10,8 @@ argument to a function that expects an `Effect` value.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
 ```

@@ -5,8 +5,8 @@ results. For a parallel version, see `collectAllParDiscard`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const allDiscard: All.SignatureDiscard
 ```

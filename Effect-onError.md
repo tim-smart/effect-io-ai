@@ -5,9 +5,9 @@ effect if it exists. The provided effect will not be interrupted.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const onError: {
   <E, R2, X>(cleanup: (cause: Cause.Cause<E>) => Effect<R2, never, X>): <R, A>(
     self: Effect<R, E, A>

@@ -6,8 +6,8 @@ Supports multiple arguments, a single argument tuple / array or record / struct.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const all: All.Signature
 ```

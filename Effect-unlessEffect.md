@@ -4,9 +4,9 @@ The moral equivalent of `if (!p) exp` when `p` has side-effects.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const unlessEffect: {
   <R2, E2>(predicate: Effect<R2, E2, boolean>): <R, E, A>(
     self: Effect<R, E, A>

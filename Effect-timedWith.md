@@ -4,9 +4,9 @@ A more powerful variation of `timed` that allows specifying the clock.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const timedWith: {
   <R1, E1>(milliseconds: Effect<R1, E1, number>): <R, E, A>(
     self: Effect<R, E, A>

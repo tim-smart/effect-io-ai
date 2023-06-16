@@ -5,9 +5,9 @@ constant value.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const as: {
   <B>(value: B): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, B>
   <R, E, A, B>(self: Effect<R, E, A>, value: B): Effect<R, E, B>

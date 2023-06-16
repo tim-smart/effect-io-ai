@@ -10,9 +10,9 @@ be safely interrupted.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const timeoutTo: {
   <A, B, B1>(def: B1, f: (a: A) => B, duration: Duration.Duration): <R, E>(
     self: Effect<R, E, A>

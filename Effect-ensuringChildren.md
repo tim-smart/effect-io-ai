@@ -5,9 +5,9 @@ will be invoked, whether or not this effect succeeds.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const ensuringChildren: {
   <R1, X>(children: (fibers: Array<Fiber.RuntimeFiber<any, any>>) => Effect<R1, never, X>): <R, E, A>(
     self: Effect<R, E, A>

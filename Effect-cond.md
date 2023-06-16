@@ -7,9 +7,9 @@ For effectful conditionals, see `ifEffect`.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const cond: <E, A>(
   predicate: LazyArg<boolean>,
   result: LazyArg<A>,

@@ -14,9 +14,9 @@ return s
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const iterate: <Z, R, E>(
   initial: Z,
   cont: (z: Z) => boolean,

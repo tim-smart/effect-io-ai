@@ -5,9 +5,9 @@ timeout, it will produce the specified failure.
 
 Part of the `Effect` module, imported from `@effect/io/Effect`.
 
-### Signature
+**Signature**
 
-```typescript
+```ts
 export declare const timeoutFailCause: {
   <E1>(evaluate: LazyArg<Cause.Cause<E1>>, duration: Duration.Duration): <R, E, A>(
     self: Effect<R, E, A>
