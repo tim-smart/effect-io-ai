@@ -6,7 +6,7 @@ the race. This method does not interrupt, join, or otherwise do anything
 with the fibers. It can be considered a low-level building block for
 higher-level operators like `race`.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.raceFibersWith`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

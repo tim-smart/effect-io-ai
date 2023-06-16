@@ -5,7 +5,7 @@ true, and the given `E` as error otherwise
 
 For effectful conditionals, see `ifEffect`.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.cond`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

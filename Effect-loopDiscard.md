@@ -12,7 +12,7 @@ while (cont(s)) {
 }
 ```
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.loopDiscard`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

@@ -10,7 +10,7 @@ function must be called at most once.
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.asyncOption`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

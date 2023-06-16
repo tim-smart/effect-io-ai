@@ -4,7 +4,7 @@ Forks the effect into a new fiber attached to the global scope. Because the
 new fiber is attached to the global scope, when the fiber executing the
 returned effect terminates, the forked fiber will continue running.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.forkDaemon`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

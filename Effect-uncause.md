@@ -6,7 +6,7 @@ succeeds with unit, depending on whether the cause is empty.
 
 This operation is the opposite of `cause`.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.uncause`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

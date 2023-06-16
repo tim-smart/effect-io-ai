@@ -12,7 +12,7 @@ The `acquire` and `release` `Effect` values will be run uninterruptibly.
 Additionally, the `release` `Effect` value may depend on the `Exit` value
 specified when the scope is closed.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.acquireRelease`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

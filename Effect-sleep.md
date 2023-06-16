@@ -3,7 +3,7 @@
 Returns an effect that suspends for the specified duration. This method is
 asynchronous, and does not actually block the fiber executing the effect.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.sleep`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

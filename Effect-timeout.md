@@ -15,7 +15,7 @@ first disconnects the effect's interruption signal before performing the
 timeout, resulting in earliest possible return, before an underlying effect
 has been successfully interrupted.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.timeout`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

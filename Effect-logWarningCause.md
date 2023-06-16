@@ -2,7 +2,7 @@
 
 Logs the specified cause at the warning log level.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.logWarningCause`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

@@ -7,7 +7,7 @@ original structure of `Cause`.
 See `absorb`, `sandbox`, `catchAllCause` for other functions for dealing
 with defects.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.mapErrorCause`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

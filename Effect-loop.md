@@ -15,7 +15,7 @@ while (cont(s)) {
 A.reverse(as)
 ```
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.loop`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

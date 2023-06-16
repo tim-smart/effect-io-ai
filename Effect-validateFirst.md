@@ -5,7 +5,7 @@ or the accumulation of all errors.
 
 If `elements` is empty then `Effect.fail([])` is returned.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.validateFirst`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Example
 

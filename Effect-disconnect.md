@@ -12,7 +12,7 @@ background.
 
 See timeout and race for other applications.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.disconnect`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

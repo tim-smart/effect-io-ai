@@ -7,7 +7,7 @@ method should be used only at the boundary between Effect and an external
 system, to transmit information on a defect for diagnostic or explanatory
 purposes.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.catchSomeDefect`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 

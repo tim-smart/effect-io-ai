@@ -11,7 +11,7 @@ desired, then instead of performing `l raceFirst r`, perform
 interrupt signal, allowing a fast return, with interruption performed
 in the background.
 
-Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.raceFirst`.
+Part of the `Effect` module from the `@effect/io` package.
 
 ### Signature
 
