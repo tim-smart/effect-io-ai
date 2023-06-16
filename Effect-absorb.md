@@ -8,3 +8,9 @@ type as the original `Effect` value, but it will have a more general
 error type that allows it to fail with any type of error.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.absorb`.
+
+### Signature
+
+```typescript
+export declare const absorb: <R, E, A>(self: Effect<R, E, A>) => Effect<R, unknown, A>
+```

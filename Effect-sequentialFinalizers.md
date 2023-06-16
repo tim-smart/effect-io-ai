@@ -7,3 +7,9 @@ has meaning if used within a scope where finalizers are being run in
 parallel.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.sequentialFinalizers`.
+
+### Signature
+
+```typescript
+export declare const sequentialFinalizers: <R, E, A>(self: Effect<R, E, A>) => Effect<Scope.Scope | R, E, A>
+```

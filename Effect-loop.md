@@ -16,3 +16,14 @@ A.reverse(as)
 ```
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.loop`.
+
+### Signature
+
+```typescript
+export declare const loop: <Z, R, E, A>(
+  initial: Z,
+  cont: (z: Z) => boolean,
+  inc: (z: Z) => Z,
+  body: (z: Z) => Effect<R, E, A>
+) => Effect<R, E, A[]>
+```

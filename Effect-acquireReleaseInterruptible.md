@@ -13,3 +13,12 @@ Additionally, the `release` `Effect` value may depend on the `Exit` value
 specified when the scope is closed.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.acquireReleaseInterruptible`.
+
+### Signature
+
+```typescript
+export declare const acquireReleaseInterruptible: <R, E, A, R2, X>(
+  acquire: Effect<R, E, A>,
+  release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
+) => Effect<Scope.Scope | R | R2, E, A>
+```

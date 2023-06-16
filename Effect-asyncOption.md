@@ -11,3 +11,12 @@ The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.asyncOption`.
+
+### Signature
+
+```typescript
+export declare const asyncOption: <R, E, A>(
+  register: (callback: (_: Effect<R, E, A>) => void) => Option.Option<Effect<R, E, A>>,
+  blockingOn?: FiberId.FiberId
+) => Effect<R, E, A>
+```

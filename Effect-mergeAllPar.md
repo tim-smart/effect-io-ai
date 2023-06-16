@@ -12,3 +12,12 @@ It's unsafe to execute side effects inside `f`, as `f` may be executed
 more than once for some of `in` elements during effect execution.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.mergeAllPar`.
+
+### Signature
+
+```typescript
+export declare const mergeAllPar: {
+  <R, E, A, Z>(elements: Iterable<Effect<R, E, A>>, zero: Z, f: (z: Z, a: A) => Z): Effect<R, E, Z>
+  <Z, A>(zero: Z, f: (z: Z, a: A) => Z): <R, E>(elements: Iterable<Effect<R, E, A>>) => Effect<R, E, Z>
+}
+```

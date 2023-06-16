@@ -1,0 +1,17 @@
+# filterOrFail
+
+Filter the specified effect with the provided function, failing with specified
+error if the predicate fails.
+
+Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.filterOrFail`.
+
+### Signature
+
+```typescript
+export declare const filterOrFail: {
+  <A, B extends A, E2>(f: Refinement<A, B>, error: LazyArg<E2>): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, B>
+  <A, E2>(f: Predicate<A>, error: LazyArg<E2>): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, A>
+  <R, E, A, B extends A, E2>(self: Effect<R, E, A>, f: Refinement<A, B>, error: LazyArg<E2>): Effect<R, E | E2, B>
+  <R, E, A, E2>(self: Effect<R, E, A>, f: Predicate<A>, error: LazyArg<E2>): Effect<R, E | E2, A>
+}
+```

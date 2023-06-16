@@ -24,3 +24,12 @@ assert.deepStrictEqual(
   Either.left(['-1 is negative', '-2 is negative'])
 )
 ```
+
+### Signature
+
+```typescript
+export declare const validateFirst: {
+  <R, E, A, B>(f: (a: A) => Effect<R, E, B>): (elements: Iterable<A>) => Effect<R, E[], B>
+  <R, E, A, B>(elements: Iterable<A>, f: (a: A) => Effect<R, E, B>): Effect<R, E[], B>
+}
+```

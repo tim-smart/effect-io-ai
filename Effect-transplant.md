@@ -8,3 +8,11 @@ This can be used to "graft" deep grandchildren onto a higher-level scope,
 effectively extending their lifespans into the parent scope.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.transplant`.
+
+### Signature
+
+```typescript
+export declare const transplant: <R, E, A>(
+  f: (grafter: <R2, E2, A2>(effect: Effect<R2, E2, A2>) => Effect<R2, E2, A2>) => Effect<R, E, A>
+) => Effect<R, E, A>
+```

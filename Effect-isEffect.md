@@ -9,3 +9,9 @@ use `isEffect` to check the type of a value before using it as an
 argument to a function that expects an `Effect` value.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.isEffect`.
+
+### Signature
+
+```typescript
+export declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
+```

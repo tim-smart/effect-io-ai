@@ -6,3 +6,12 @@ so that `io.repeatN(1)` yields an effect that executes `io`, and then if
 that succeeds, executes `io` an additional time.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.repeatN`.
+
+### Signature
+
+```typescript
+export declare const repeatN: {
+  (n: number): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+  <R, E, A>(self: Effect<R, E, A>, n: number): Effect<R, E, A>
+}
+```

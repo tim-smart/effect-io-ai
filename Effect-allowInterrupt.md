@@ -6,3 +6,9 @@ fiber, and if so, performs self-interruption.
 Note that this allows for interruption to occur in uninterruptible regions.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.allowInterrupt`.
+
+### Signature
+
+```typescript
+export declare const allowInterrupt: (_: void) => Effect<never, never, void>
+```

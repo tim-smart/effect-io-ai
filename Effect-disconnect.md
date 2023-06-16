@@ -13,3 +13,9 @@ background.
 See timeout and race for other applications.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.disconnect`.
+
+### Signature
+
+```typescript
+export declare const disconnect: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+```

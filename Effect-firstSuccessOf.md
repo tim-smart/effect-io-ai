@@ -10,3 +10,9 @@ iterable will be executed in sequence, and the first one that succeeds
 will determine the outcome of the resulting `Effect` value.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.firstSuccessOf`.
+
+### Signature
+
+```typescript
+export declare const firstSuccessOf: <R, E, A>(effects: Iterable<Effect<R, E, A>>) => Effect<R, E, A>
+```

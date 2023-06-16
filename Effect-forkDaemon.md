@@ -5,3 +5,9 @@ new fiber is attached to the global scope, when the fiber executing the
 returned effect terminates, the forked fiber will continue running.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.forkDaemon`.
+
+### Signature
+
+```typescript
+export declare const forkDaemon: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Fiber.RuntimeFiber<E, A>>
+```

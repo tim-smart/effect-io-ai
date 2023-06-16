@@ -7,3 +7,9 @@ succeeds with unit, depending on whether the cause is empty.
 This operation is the opposite of `cause`.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.uncause`.
+
+### Signature
+
+```typescript
+export declare const uncause: <R, E>(self: Effect<R, never, Cause.Cause<E>>) => Effect<R, E, void>
+```

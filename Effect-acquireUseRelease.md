@@ -23,3 +23,19 @@ is not desired, errors produced by the `release` `Effect` value can be caught
 and ignored.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.acquireUseRelease`.
+
+### Signature
+
+```typescript
+export declare const acquireUseRelease: {
+  <A, R2, E2, A2, R3, X>(
+    use: (a: A) => Effect<R2, E2, A2>,
+    release: (a: A, exit: Exit.Exit<E2, A2>) => Effect<R3, never, X>
+  ): <R, E>(acquire: Effect<R, E, A>) => Effect<R2 | R3 | R, E2 | E, A2>
+  <R, E, A, R2, E2, A2, R3, X>(
+    acquire: Effect<R, E, A>,
+    use: (a: A) => Effect<R2, E2, A2>,
+    release: (a: A, exit: Exit.Exit<E2, A2>) => Effect<R3, never, X>
+  ): Effect<R | R2 | R3, E | E2, A2>
+}
+```

@@ -6,3 +6,9 @@ succeed. If the original `Effect` value fails, the returned `Effect` value
 will fail with the same error.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.asUnit`.
+
+### Signature
+
+```typescript
+export declare const asUnit: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, void>
+```

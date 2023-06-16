@@ -9,3 +9,9 @@ is a `Left` value, then the `Effect` value will fail with the error
 contained in the `Left`.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.absolve`.
+
+### Signature
+
+```typescript
+export declare const absolve: <R, E, A>(self: Effect<R, E, Either.Either<E, A>>) => Effect<R, E, A>
+```

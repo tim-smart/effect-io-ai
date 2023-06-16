@@ -10,3 +10,9 @@ The error parameter of the returned `Effect` is `never`, since it is
 guaranteed the effect does not model failure.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.either`.
+
+### Signature
+
+```typescript
+export declare const either: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Either.Either<E, A>>
+```

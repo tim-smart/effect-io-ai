@@ -5,3 +5,12 @@ a second argument that corresponds to the index (starting from 0)
 of the current element being iterated over.
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.forEachWithIndex`.
+
+### Signature
+
+```typescript
+export declare const forEachWithIndex: {
+  <A, R, E, B>(f: (a: A, i: number) => Effect<R, E, B>): (elements: Iterable<A>) => Effect<R, E, B[]>
+  <A, R, E, B>(elements: Iterable<A>, f: (a: A, i: number) => Effect<R, E, B>): Effect<R, E, B[]>
+}
+```

@@ -13,3 +13,14 @@ while (cont(s)) {
 ```
 
 Part of the `Effect` module from the `@effect/io` package. Also known as `Effect.loopDiscard`.
+
+### Signature
+
+```typescript
+export declare const loopDiscard: <Z, R, E, X>(
+  initial: Z,
+  cont: (z: Z) => boolean,
+  inc: (z: Z) => Z,
+  body: (z: Z) => Effect<R, E, X>
+) => Effect<R, E, void>
+```
