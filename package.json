@@ -1,5 +1,0 @@
-{
-	"dependencies": {
-		"@effect/docgen": "file:vendor/effect-docgen-0.1.1.tgz"
-	}
-}
