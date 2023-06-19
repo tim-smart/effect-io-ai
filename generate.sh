@@ -42,6 +42,7 @@ for repo in ${repos[@]}; do
   fi
 
   pnpm install
+  pnpm rm @effect/docgen
   pnpm add -D ../vendor/effect-docgen-0.1.1.tgz
   pnpm run build
   pnpm run docs
