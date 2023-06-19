@@ -1,0 +1,32 @@
+# getEquivalence
+
+Given a struct of `Equivalence`s returns a new `Equivalence` that compares values of a struct
+by applying each `Equivalence` to the corresponding property of the struct.
+
+Alias of {@link equivalence.struct}.
+
+Part of the `Struct` module, imported from `@effect/data/Struct`.
+
+**Example**
+
+```ts
+import { getEquivalence } from '@effect/data/Struct'
+import * as S from '@effect/data/String'
+import * as N from '@effect/data/Number'
+
+const PersonEquivalence = getEquivalence({
+  name: S.Equivalence,
+  age: N.Equivalence,
+})
+
+assert.deepStrictEqual(PersonEquivalence({ name: 'John', age: 25 }, { name: 'John', age: 25 }), true)
+assert.deepStrictEqual(PersonEquivalence({ name: 'John', age: 25 }, { name: 'John', age: 40 }), false)
+```
+
+**Signature**
+
+```ts
+export declare const getEquivalence: <R extends Record<string, equivalence.Equivalence<any>>>(
+  predicates: R
+) => equivalence.Equivalence<{ readonly [K in keyof R]: [R[K]] extends [equivalence.Equivalence<infer A>] ? A : never }>
+```

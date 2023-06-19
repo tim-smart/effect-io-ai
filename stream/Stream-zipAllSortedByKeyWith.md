@@ -1,0 +1,35 @@
+# zipAllSortedByKeyWith
+
+Zips this stream that is sorted by distinct keys and the specified stream
+that is sorted by distinct keys to produce a new stream that is sorted by
+distinct keys. Uses the functions `left`, `right`, and `both` to handle
+the cases where a key and value exist in this stream, that stream, or
+both streams.
+
+This allows zipping potentially unbounded streams of data by key in
+constant space but the caller is responsible for ensuring that the
+streams are sorted by distinct keys.
+
+Part of the `Stream` module, imported from `@effect/stream/Stream`.
+
+**Signature**
+
+```ts
+export declare const zipAllSortedByKeyWith: {
+  <R2, E2, A, A3, A2, K>(
+    that: Stream<R2, E2, readonly [K, A2]>,
+    left: (a: A) => A3,
+    right: (a2: A2) => A3,
+    both: (a: A, a2: A2) => A3,
+    order: Order.Order<K>
+  ): <R, E>(self: Stream<R, E, readonly [K, A]>) => Stream<R2 | R, E2 | E, readonly [K, A3]>
+  <R, E, R2, E2, A, A3, A2, K>(
+    self: Stream<R, E, readonly [K, A]>,
+    that: Stream<R2, E2, readonly [K, A2]>,
+    left: (a: A) => A3,
+    right: (a2: A2) => A3,
+    both: (a: A, a2: A2) => A3,
+    order: Order.Order<K>
+  ): Stream<R | R2, E | E2, readonly [K, A3]>
+}
+```

@@ -1,0 +1,11 @@
+# die
+
+Creates a sink halting with the specified defect.
+
+Part of the `Sink` module, imported from `@effect/stream/Sink`.
+
+**Signature**
+
+```ts
+export declare const die: (defect: unknown) => Sink<never, never, unknown, never, never>
+```

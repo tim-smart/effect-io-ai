@@ -1,0 +1,11 @@
+# pop
+
+Removes the last value from the list and returns it, if it exists.
+
+Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+
+**Signature**
+
+```ts
+export declare const pop: <A>(self: MutableList<A>) => A | undefined
+```

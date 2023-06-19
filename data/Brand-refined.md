@@ -1,0 +1,34 @@
+# refined
+
+Returns a `Brand.Constructor` that can construct a branded type from an unbranded value using the provided `refinement`
+predicate as validation of the input data.
+
+If you don't want to perform any validation but only distinguish between two values of the same type but with different meanings,
+see {@link nominal}.
+
+Part of the `Brand` module, imported from `@effect/data/Brand`.
+
+**Example**
+
+```ts
+import * as Brand from '@effect/data/Brand'
+
+type Int = number & Brand.Brand<'Int'>
+
+const Int = Brand.refined<Int>(
+  (n) => Number.isInteger(n),
+  (n) => Brand.error(`Expected ${n} to be an integer`)
+)
+
+assert.strictEqual(Int(1), 1)
+assert.throws(() => Int(1.1))
+```
+
+**Signature**
+
+```ts
+export declare const refined: <A extends Brand<any>>(
+  refinement: Predicate<Brand.Unbranded<A>>,
+  onFailure: (a: Brand.Unbranded<A>) => Brand.BrandErrors
+) => Brand.Constructor<A>
+```
