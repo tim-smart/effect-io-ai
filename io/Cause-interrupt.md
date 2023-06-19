@@ -1,6 +1,11 @@
-# Interrupt
+# interrupt
 
-The `Interrupt` cause represents failure due to `Fiber` interruption, which
-contains the `FiberId` of the interrupted `Fiber`.
+Constructs a new `Interrupt` cause from the specified `fiberId`.
 
 Part of the `Cause` module, imported from `@effect/io/Cause`.
+
+**Signature**
+
+```ts
+export declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>
+```
