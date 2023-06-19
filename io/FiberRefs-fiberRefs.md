@@ -1,8 +1,11 @@
-# FiberRefs
+# fiberRefs
 
-`FiberRefs` is a data type that represents a collection of `FiberRef` values.
-
-This allows safely propagating `FiberRef` values across fiber boundaries, for
-example between an asynchronous producer and consumer.
+Returns a set of each `FiberRef` in this collection.
 
 Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+
+**Signature**
+
+```ts
+export declare const fiberRefs: (self: FiberRefs) => HashSet.HashSet<FiberRef.FiberRef<any>>
+```

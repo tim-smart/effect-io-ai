@@ -1,12 +1,12 @@
-# interruption
+# Interruption
 
-Returns `true` if the `Interruption` `RuntimeFlag` is enabled, `false`
-otherwise.
+The interruption flag determines whether or not the Effect runtime system will
+interrupt a fiber.
 
 Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
 
 **Signature**
 
 ```ts
-export declare const interruption: (self: RuntimeFlags) => boolean
+export declare const Interruption: RuntimeFlag
 ```

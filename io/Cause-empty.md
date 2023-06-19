@@ -1,5 +1,11 @@
-# Empty
+# empty
 
-The `Empty` cause represents a lack of errors.
+Constructs a new `Empty` cause.
 
 Part of the `Cause` module, imported from `@effect/io/Cause`.
+
+**Signature**
+
+```ts
+export declare const empty: Cause<never>
+```

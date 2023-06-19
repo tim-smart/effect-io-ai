@@ -13,5 +13,5 @@ Part of the `Schedule` module, imported from `@effect/io/Schedule`.
 **Signature**
 
 ```ts
-export declare const jittered: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Random.Random | Env, In, Out>
+export declare const jittered: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
 ```

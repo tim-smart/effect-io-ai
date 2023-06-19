@@ -1,11 +1,12 @@
-# Sequential
+# sequential
 
-The `Sequential` cause represents the composition of two causes which occurred
-sequentially.
-
-For example, if we perform Effect-TS's analog of `try-finally` (i.e.
-`Effect.ensuring`), and both the `try` and `finally` blocks fail, we have two
-errors which occurred sequentially. In these cases, the errors can be
-represented by the `Sequential` cause.
+Constructs a new `Sequential` cause from the specified pecified `left` and
+`right` causes.
 
 Part of the `Cause` module, imported from `@effect/io/Cause`.
+
+**Signature**
+
+```ts
+export declare const sequential: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
+```

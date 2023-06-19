@@ -1,12 +1,12 @@
-# Parallel
+# parallel
 
-The `Parallel` cause represents the composition of two causes which occurred
-in parallel.
-
-In Effect-TS programs, it is possible that two operations may be performed in
-parallel. In these cases, the `Effect` workflow can fail for more than one
-reason. If both computations fail, then there are actually two errors which
-occurred in parallel. In these cases, the errors can be represented by the
-`Parallel` cause.
+Constructs a new `Parallel` cause from the specified `left` and `right`
+causes.
 
 Part of the `Cause` module, imported from `@effect/io/Cause`.
+
+**Signature**
+
+```ts
+export declare const parallel: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
+```

@@ -1,12 +1,12 @@
-# cooperativeYielding
+# CooperativeYielding
 
-Returns `true` if the `CooperativeYielding` `RuntimeFlag` is enabled, `false`
-otherwise.
+The cooperative yielding flag determines whether the Effect runtime will
+yield to another fiber.
 
 Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
 
 **Signature**
 
 ```ts
-export declare const cooperativeYielding: (self: RuntimeFlags) => boolean
+export declare const CooperativeYielding: RuntimeFlag
 ```

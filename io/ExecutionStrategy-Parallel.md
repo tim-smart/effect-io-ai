@@ -1,11 +1,5 @@
-# parallel
+# Parallel
 
 Execute effects in parallel.
 
 Part of the `ExecutionStrategy` module, imported from `@effect/io/ExecutionStrategy`.
-
-**Signature**
-
-```ts
-export declare const parallel: ExecutionStrategy
-```

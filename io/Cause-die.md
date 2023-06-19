@@ -1,8 +1,11 @@
-# Die
+# die
 
-The `Die` cause represents a `Cause` which failed as a result of a defect, or
-in other words, an unexpected error.
-
-type `E`.
+Constructs a new `Die` cause from the specified `defect`.
 
 Part of the `Cause` module, imported from `@effect/io/Cause`.
+
+**Signature**
+
+```ts
+export declare const die: (defect: unknown) => Cause<never>
+```
