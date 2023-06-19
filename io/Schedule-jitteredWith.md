@@ -12,13 +12,7 @@ Part of the `Schedule` module, imported from `@effect/io/Schedule`.
 
 ```ts
 export declare const jitteredWith: {
-  (options: { min?: number; max?: number }): <Env, In, Out>(
-    self: Schedule<Env, In, Out>
-  ) => Schedule<Random.Random | Env, In, Out>
-  <Env, In, Out>(self: Schedule<Env, In, Out>, options: { min?: number; max?: number }): Schedule<
-    Random.Random | Env,
-    In,
-    Out
-  >
+  (options: { min?: number; max?: number }): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
+  <Env, In, Out>(self: Schedule<Env, In, Out>, options: { min?: number; max?: number }): Schedule<Env, In, Out>
 }
 ```
