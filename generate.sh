@@ -11,6 +11,8 @@ SHORT_SHA=`git rev-parse --short HEAD`
 repos=(\
   "effect-ts/io"\
   "effect-ts/data"\
+  "effect-ts/schema"\
+  "effect-ts/stm"\
   "effect-ts/stream"\
 )
 
