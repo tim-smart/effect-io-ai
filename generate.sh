@@ -43,8 +43,8 @@ for repo in ${repos[@]}; do
 
   pnpm install
   pnpm add -D ../vendor/effect-docgen-0.1.1.tgz
-  pnpm build
-  ../node_modules/.bin/docgen
+  pnpm run build
+  pnpm run docs
 
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
