@@ -2,7 +2,14 @@
 
 Runs the stream only for its effects. The emitted elements are discarded.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runDrain` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runDrain
+```
 
 **Signature**
 

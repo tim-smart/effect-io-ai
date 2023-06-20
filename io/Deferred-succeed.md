@@ -2,7 +2,14 @@
 
 Completes the `Deferred` with the specified value.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `succeed` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.succeed
+```
 
 **Signature**
 

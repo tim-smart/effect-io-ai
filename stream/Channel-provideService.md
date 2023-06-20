@@ -3,7 +3,14 @@
 Provides the effect with the single service it requires. If the effect
 requires more than one service use `provideContext` instead.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `provideService` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.provideService
+```
 
 **Signature**
 

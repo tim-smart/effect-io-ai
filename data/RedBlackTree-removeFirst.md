@@ -2,7 +2,14 @@
 
 Removes the entry with the specified key, if it exists.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `removeFirst` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.removeFirst
+```
 
 **Signature**
 

@@ -9,7 +9,14 @@ Iterable<Option<A>> -> Option<A[]>
 Flattens a collection of `Option`s into a single `Option` that contains a list of all the `Some` values.
 If there is a `None` value in the collection, it returns `None` as the result.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `all` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.all
+```
 
 **Example**
 

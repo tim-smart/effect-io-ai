@@ -3,7 +3,14 @@
 Constructs a channel that succeeds immediately with the specified lazily
 evaluated `Cause`.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `failCauseSync` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.failCauseSync
+```
 
 **Signature**
 

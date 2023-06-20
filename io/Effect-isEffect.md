@@ -8,7 +8,14 @@ attempting to operate on it as an `Effect` value. For example, you could
 use `isEffect` to check the type of a value before using it as an
 argument to a function that expects an `Effect` value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `isEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.isEffect
+```
 
 **Signature**
 

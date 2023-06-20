@@ -2,7 +2,14 @@
 
 Transforms `Take<E, A>` to `Take<E, B>` by applying function `f`.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `map` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.map
+```
 
 **Signature**
 

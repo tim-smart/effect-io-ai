@@ -4,7 +4,14 @@ Same as `forEach`, except that the function `f` is supplied
 a second argument that corresponds to the index (starting from 0)
 of the current element being iterated over.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forEachWithIndex` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forEachWithIndex
+```
 
 **Signature**
 

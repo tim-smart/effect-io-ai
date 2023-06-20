@@ -3,7 +3,14 @@
 Returns a config that is the composes this config and the specified config
 using the provided function.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `zipWith` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.zipWith
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Create a new object by omitting properties of an existing object.
 
-Part of the `Struct` module, imported from `@effect/data/Struct`.
+To import and use `omit` from the "Struct" module:
+
+```ts
+import * as Struct from '@effect/data/Struct'
+
+// Can be accessed like this
+Struct.omit
+```
 
 **Example**
 

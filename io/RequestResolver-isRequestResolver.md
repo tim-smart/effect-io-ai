@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `RequestResolver`, `false` otherwise.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `isRequestResolver` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.isRequestResolver
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Renders the provided `RuntimeFlagsPatch` to a string.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `render` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.render
+```
 
 **Signature**
 

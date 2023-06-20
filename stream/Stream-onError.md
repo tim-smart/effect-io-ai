@@ -6,7 +6,14 @@ effect if it exists.
 Note: Unlike `Effect.onError` there is no guarantee that the provided
 effect will not be interrupted.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `onError` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.onError
+```
 
 **Signature**
 

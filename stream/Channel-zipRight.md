@@ -4,7 +4,14 @@ Returns a new channel that is the sequential composition of this channel
 and the specified channel. The returned channel terminates with the
 terminal value of that channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `zipRight` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.zipRight
+```
 
 **Signature**
 

@@ -8,7 +8,14 @@ Defaults `min` to `0.8` and `max` to `1.2`.
 The new interval size is between `min * old interval size` and `max * old
 interval size`.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `jittered` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.jittered
+```
 
 **Signature**
 

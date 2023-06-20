@@ -3,7 +3,14 @@
 Transforms a `ReadonlyRecord` into a `Record` by applying the function `f` to each key and value in the original `ReadonlyRecord`.
 If the function returns `Some`, the key-value pair is included in the output `Record`.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `filterMap` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.filterMap
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Converts the specified list to a `Chunk`.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `toChunk` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.toChunk
+```
 
 **Signature**
 

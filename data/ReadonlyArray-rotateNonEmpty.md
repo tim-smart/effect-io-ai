@@ -2,7 +2,14 @@
 
 Rotate a `NonEmptyReadonlyArray` by `n` steps.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `rotateNonEmpty` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.rotateNonEmpty
+```
 
 **Signature**
 

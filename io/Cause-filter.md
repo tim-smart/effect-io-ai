@@ -2,7 +2,14 @@
 
 Filters causes which match the provided predicate out of the specified cause.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `filter` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.filter
+```
 
 **Signature**
 

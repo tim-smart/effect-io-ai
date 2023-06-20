@@ -3,7 +3,14 @@
 Partitions a `ReadonlyRecord` of `Either` values into two separate records,
 one with the `Left` values and one with the `Right` values.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `separate` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.separate
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Runs a schedule using the provided inputs, and collects all outputs.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `run` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.run
+```
 
 **Signature**
 

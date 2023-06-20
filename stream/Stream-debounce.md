@@ -10,7 +10,14 @@ eventually settle down and you only need the final event of the burst. For
 example, a search engine may only want to initiate a search after a user
 has paused typing so as to not prematurely recommend results.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `debounce` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.debounce
+```
 
 **Signature**
 

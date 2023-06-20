@@ -3,7 +3,14 @@
 Keeps some of the errors, and terminates the fiber with the rest, using
 the specified function to convert the `E` into a defect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `refineOrDieWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.refineOrDieWith
+```
 
 **Signature**
 

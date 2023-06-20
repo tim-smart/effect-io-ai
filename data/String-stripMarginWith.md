@@ -4,7 +4,14 @@ For every line in this string, strip a leading prefix consisting of blanks
 or control characters followed by the character specified by `marginChar`
 from the line.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `stripMarginWith` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.stripMarginWith
+```
 
 **Signature**
 

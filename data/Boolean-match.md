@@ -3,7 +3,14 @@
 This function returns the result of either of the given functions depending on the value of the boolean parameter.
 It is useful when you have to run one of two functions depending on the boolean value.
 
-Part of the `Boolean` module, imported from `@effect/data/Boolean`.
+To import and use `match` from the "Boolean" module:
+
+```ts
+import * as Boolean from '@effect/data/Boolean'
+
+// Can be accessed like this
+Boolean.match
+```
 
 **Example**
 

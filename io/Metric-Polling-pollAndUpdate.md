@@ -2,7 +2,14 @@
 
 An effect that polls for a value and uses the value to update the metric.
 
-Part of the `Polling` module, imported from `@effect/io/Metric/Polling`.
+To import and use `pollAndUpdate` from the "Polling" module:
+
+```ts
+import * as Polling from '@effect/io/Metric/Polling'
+
+// Can be accessed like this
+Polling.pollAndUpdate
+```
 
 **Signature**
 

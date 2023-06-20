@@ -5,7 +5,14 @@ Creates a sink that folds elements of type `In` into a structure of type
 
 Like `Sink.foldWeighted`, but with a constant cost function of `1`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `foldUntil` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.foldUntil
+```
 
 **Signature**
 

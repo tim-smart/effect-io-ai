@@ -3,7 +3,14 @@
 Like `Stream.runIntoHub`, but provides the result as a scoped effect to
 allow for scope composition.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runIntoHubScoped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runIntoHubScoped
+```
 
 **Signature**
 

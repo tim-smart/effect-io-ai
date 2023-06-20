@@ -2,7 +2,14 @@
 
 Constructs a new `HashMap` from an iterable of key/value pairs.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `fromIterable` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.fromIterable
+```
 
 **Signature**
 

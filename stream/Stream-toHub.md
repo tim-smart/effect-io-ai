@@ -3,7 +3,14 @@
 Converts the stream to a scoped hub of chunks. After the scope is closed,
 the hub will never again produce values and should be discarded.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `toHub` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.toHub
+```
 
 **Signature**
 

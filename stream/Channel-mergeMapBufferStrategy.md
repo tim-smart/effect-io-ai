@@ -2,7 +2,14 @@
 
 Like `mergeMap`, but with a configurable `bufferSize` and `mergeStrategy` parameter.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `mergeMapBufferStrategy` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.mergeMapBufferStrategy
+```
 
 **Signature**
 

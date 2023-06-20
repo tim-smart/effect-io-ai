@@ -2,7 +2,14 @@
 
 Maps a `ReadonlyRecord` into another `Record` by applying a transformation function to each of its values.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `map` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.map
+```
 
 **Example**
 

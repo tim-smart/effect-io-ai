@@ -7,7 +7,14 @@ provided hash.
 The update function will be invoked with the current value of the key if it
 exists, or `None` if no such value exists.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `modifyAt` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.modifyAt
+```
 
 **Signature**
 

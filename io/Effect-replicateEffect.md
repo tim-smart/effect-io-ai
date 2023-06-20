@@ -3,7 +3,14 @@
 Performs this effect the specified number of times and collects the
 results.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `replicateEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.replicateEffect
+```
 
 **Signature**
 

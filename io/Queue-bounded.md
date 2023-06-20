@@ -8,7 +8,14 @@ the queue.
 better performance by utilising an optimised version of the underlying
 `RingBuffer`.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `bounded` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.bounded
+```
 
 **Signature**
 

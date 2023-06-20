@@ -10,7 +10,14 @@ chunksOf(n)(xs).concat(chunksOf(n)(ys)) == chunksOf(n)(xs.concat(ys)))
 
 whenever `n` evenly divides the length of `self`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `chunksOf` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.chunksOf
+```
 
 **Signature**
 

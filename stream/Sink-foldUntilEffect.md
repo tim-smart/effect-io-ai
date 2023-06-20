@@ -5,7 +5,14 @@ structure of type `S` until `max` elements have been folded.
 
 Like `Sink.foldWeightedEffect` but with a constant cost function of `1`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `foldUntilEffect` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.foldUntilEffect
+```
 
 **Signature**
 

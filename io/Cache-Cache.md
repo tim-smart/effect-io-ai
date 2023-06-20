@@ -17,4 +17,11 @@ The cache is safe for concurrent access. If multiple fibers attempt to get
 the same key the lookup function will only be computed once and the result
 will be returned to all fibers.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `Cache` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.Cache
+```

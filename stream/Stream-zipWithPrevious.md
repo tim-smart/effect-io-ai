@@ -3,7 +3,14 @@
 Zips each element with the previous element. Initially accompanied by
 `None`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zipWithPrevious` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zipWithPrevious
+```
 
 **Signature**
 

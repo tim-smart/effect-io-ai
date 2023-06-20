@@ -2,7 +2,14 @@
 
 Concatenates all of the streams in the chunk to one stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `concatAll` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.concatAll
+```
 
 **Signature**
 

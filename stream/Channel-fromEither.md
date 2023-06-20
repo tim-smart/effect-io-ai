@@ -2,7 +2,14 @@
 
 Constructs a channel from an `Either`.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `fromEither` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.fromEither
+```
 
 **Signature**
 

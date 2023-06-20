@@ -4,7 +4,14 @@ Interrupts the fiber as if interrupted from the specified fiber. If the
 fiber has already exited, the returned effect will resume immediately.
 Otherwise, the effect will resume when the fiber exits.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `interruptAsFork` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.interruptAsFork
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ function, which creates new channels in response. These new channels are
 sequentially concatenated together, and all their outputs appear as outputs
 of the newly returned channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `concatMap` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.concatMap
+```
 
 **Signature**
 

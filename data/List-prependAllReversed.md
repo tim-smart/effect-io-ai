@@ -3,7 +3,14 @@
 Prepends the specified prefix list (in reverse order) to the beginning of the
 specified list.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `prependAllReversed` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.prependAllReversed
+```
 
 **Signature**
 

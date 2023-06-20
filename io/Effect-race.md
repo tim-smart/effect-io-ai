@@ -10,7 +10,14 @@ interruption of the loser will always be performed in the background. If this
 behavior is not desired, you can use `Effect.raceWith`, which will not
 disconnect or interrupt losers.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `race` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.race
+```
 
 **Signature**
 

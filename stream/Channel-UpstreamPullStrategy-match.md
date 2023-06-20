@@ -2,7 +2,14 @@
 
 Folds an `UpstreamPullStrategy<A>` into a value of type `Z`.
 
-Part of the `UpstreamPullStrategy` module, imported from `@effect/stream/Channel/UpstreamPullStrategy`.
+To import and use `match` from the "UpstreamPullStrategy" module:
+
+```ts
+import * as UpstreamPullStrategy from '@effect/stream/Channel/UpstreamPullStrategy'
+
+// Can be accessed like this
+UpstreamPullStrategy.match
+```
 
 **Signature**
 

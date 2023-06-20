@@ -2,7 +2,14 @@
 
 Creates a new supervisor that constantly yields effect when polled
 
-Part of the `Supervisor` module, imported from `@effect/io/Supervisor`.
+To import and use `fromEffect` from the "Supervisor" module:
+
+```ts
+import * as Supervisor from '@effect/io/Supervisor'
+
+// Can be accessed like this
+Supervisor.fromEffect
+```
 
 **Signature**
 

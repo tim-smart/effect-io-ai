@@ -5,7 +5,14 @@ configuration names with the specified function. This can be utilized to
 adapt the names of configuration properties from one naming convention to
 another.
 
-Part of the `Provider` module, imported from `@effect/io/Config/Provider`.
+To import and use `contramapPath` from the "Provider" module:
+
+```ts
+import * as Provider from '@effect/io/Config/Provider'
+
+// Can be accessed like this
+Provider.contramapPath
+```
 
 **Signature**
 

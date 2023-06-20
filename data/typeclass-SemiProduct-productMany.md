@@ -2,7 +2,14 @@
 
 Returns a default `productMany` implementation.
 
-Part of the `SemiProduct` module, imported from `@effect/data/typeclass/SemiProduct`.
+To import and use `productMany` from the "SemiProduct" module:
+
+```ts
+import * as SemiProduct from '@effect/data/typeclass/SemiProduct'
+
+// Can be accessed like this
+SemiProduct.productMany
+```
 
 **Signature**
 

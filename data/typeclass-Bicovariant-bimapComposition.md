@@ -2,7 +2,14 @@
 
 Returns a default ternary `bimap` composition.
 
-Part of the `Bicovariant` module, imported from `@effect/data/typeclass/Bicovariant`.
+To import and use `bimapComposition` from the "Bicovariant" module:
+
+```ts
+import * as Bicovariant from '@effect/data/typeclass/Bicovariant'
+
+// Can be accessed like this
+Bicovariant.bimapComposition
+```
 
 **Signature**
 

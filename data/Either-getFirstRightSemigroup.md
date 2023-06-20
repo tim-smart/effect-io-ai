@@ -11,7 +11,14 @@ Semigroup returning the left-most `Right` value.
 | right(a1)  | right(a2)  | right(a1)           |
 ```
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getFirstRightSemigroup` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getFirstRightSemigroup
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Folds over a `ChildExecutorDecision` to produce a value of type `A`.
 
-Part of the `ChildExecutorDecision` module, imported from `@effect/stream/Channel/ChildExecutorDecision`.
+To import and use `match` from the "ChildExecutorDecision" module:
+
+```ts
+import * as ChildExecutorDecision from '@effect/stream/Channel/ChildExecutorDecision'
+
+// Can be accessed like this
+ChildExecutorDecision.match
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Provides a layer to the effect, which translates it to another level.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `provideLayer` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.provideLayer
+```
 
 **Signature**
 

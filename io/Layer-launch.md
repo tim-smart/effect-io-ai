@@ -3,7 +3,14 @@
 Builds this layer and uses it until it is interrupted. This is useful when
 your entire application is a layer, such as an HTTP server.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `launch` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.launch
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ messages if the hub is at capacity.
 
 For best performance use capacities that are powers of two.
 
-Part of the `Hub` module, imported from `@effect/io/Hub`.
+To import and use `dropping` from the "Hub" module:
+
+```ts
+import * as Hub from '@effect/io/Hub'
+
+// Can be accessed like this
+Hub.dropping
+```
 
 **Signature**
 

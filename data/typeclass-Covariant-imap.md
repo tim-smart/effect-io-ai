@@ -2,7 +2,14 @@
 
 Returns a default `imap` implementation.
 
-Part of the `Covariant` module, imported from `@effect/data/typeclass/Covariant`.
+To import and use `imap` from the "Covariant" module:
+
+```ts
+import * as Covariant from '@effect/data/typeclass/Covariant'
+
+// Can be accessed like this
+Covariant.imap
+```
 
 **Signature**
 

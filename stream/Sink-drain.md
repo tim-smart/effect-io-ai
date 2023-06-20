@@ -2,7 +2,14 @@
 
 A sink that ignores its inputs.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `drain` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.drain
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Maps the `Right` value of this `Either` to the `void` constant value.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `asUnit` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.asUnit
+```
 
 **Signature**
 

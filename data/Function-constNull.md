@@ -2,7 +2,14 @@
 
 A thunk that returns always `null`.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `constNull` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.constNull
+```
 
 **Example**
 

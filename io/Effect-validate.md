@@ -3,7 +3,14 @@
 Sequentially zips the this result with the specified result. Combines both
 `Cause`s when both effects fail.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validate` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validate
+```
 
 **Signature**
 

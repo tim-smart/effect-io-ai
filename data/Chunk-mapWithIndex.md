@@ -2,7 +2,14 @@
 
 Returns an effect whose success is mapped by the specified f function.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `mapWithIndex` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.mapWithIndex
+```
 
 **Signature**
 

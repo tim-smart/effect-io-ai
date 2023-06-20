@@ -2,7 +2,14 @@
 
 Collects the all element of the `Collection<A>` for which the effect returns a value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `collectAllPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.collectAllPar
+```
 
 **Signature**
 

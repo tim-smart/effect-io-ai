@@ -2,7 +2,14 @@
 
 An `Interval` of zero-width.
 
-Part of the `Interval` module, imported from `@effect/io/Schedule/Interval`.
+To import and use `empty` from the "Interval" module:
+
+```ts
+import * as Interval from '@effect/io/Schedule/Interval'
+
+// Can be accessed like this
+Interval.empty
+```
 
 **Signature**
 

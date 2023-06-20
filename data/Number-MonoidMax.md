@@ -4,7 +4,14 @@ A `Monoid` that uses the maximum between two values.
 
 The `empty` value is `Infinity`.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `MonoidMax` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.MonoidMax
+```
 
 **Example**
 

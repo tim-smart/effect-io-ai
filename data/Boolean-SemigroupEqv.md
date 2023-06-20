@@ -2,7 +2,14 @@
 
 `boolean` semigroup under equivalence.
 
-Part of the `Boolean` module, imported from `@effect/data/Boolean`.
+To import and use `SemigroupEqv` from the "Boolean" module:
+
+```ts
+import * as Boolean from '@effect/data/Boolean'
+
+// Can be accessed like this
+Boolean.SemigroupEqv
+```
 
 **Example**
 

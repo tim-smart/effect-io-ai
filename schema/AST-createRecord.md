@@ -2,7 +2,14 @@
 
 Create a record with the specified key type and value type.
 
-Part of the `AST` module, imported from `@effect/schema/AST`.
+To import and use `createRecord` from the "AST" module:
+
+```ts
+import * as AST from '@effect/schema/AST'
+
+// Can be accessed like this
+AST.createRecord
+```
 
 **Signature**
 

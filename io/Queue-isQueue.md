@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `Queue`, `false` otherwise.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `isQueue` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.isQueue
+```
 
 **Signature**
 

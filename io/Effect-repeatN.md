@@ -5,7 +5,14 @@ or until the first failure. Repeats are in addition to the first execution,
 so that `io.repeatN(1)` yields an effect that executes `io`, and then if
 that succeeds, executes `io` an additional time.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `repeatN` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.repeatN
+```
 
 **Signature**
 

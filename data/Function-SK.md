@@ -5,7 +5,14 @@ lambda calculus and the SKI combinator calculus.
 
 This function is useful for discarding the first argument passed to it and returning the second argument.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `SK` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.SK
+```
 
 **Example**
 

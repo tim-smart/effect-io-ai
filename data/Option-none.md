@@ -2,7 +2,14 @@
 
 Creates a new `Option` that represents the absence of a value.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `none` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.none
+```
 
 **Signature**
 

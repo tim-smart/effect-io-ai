@@ -3,7 +3,14 @@
 Transforms the type of values that this differ knows how to differ using
 the specified functions that map the new and old value types to each other.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `transform` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.transform
+```
 
 **Signature**
 

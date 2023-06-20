@@ -2,7 +2,14 @@
 
 Change the last element, creating a new `NonEmptyReadonlyArray`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `setNonEmptyLast` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.setNonEmptyLast
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new metric, which is identical in every way to this one, except
 the specified tags have been added to the tags of this metric.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `tagged` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.tagged
+```
 
 **Signature**
 

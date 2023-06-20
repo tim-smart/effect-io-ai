@@ -2,7 +2,14 @@
 
 Performs an effectful filter and map in a single step.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `collectEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.collectEffect
+```
 
 **Signature**
 

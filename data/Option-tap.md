@@ -5,7 +5,14 @@ unless `f` returns `None`, in which case it returns `None`.
 
 This function is useful for performing additional computations on the value of the input `Option` without affecting its value.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `tap` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.tap
+```
 
 **Example**
 

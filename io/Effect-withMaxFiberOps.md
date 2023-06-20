@@ -2,7 +2,14 @@
 
 Sets the child effect's maximum number of ops before yield
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `withMaxFiberOps` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.withMaxFiberOps
+```
 
 **Signature**
 

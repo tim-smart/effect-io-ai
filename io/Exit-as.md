@@ -3,7 +3,14 @@
 Maps the `Success` value of the specified exit to the provided constant
 value.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `as` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.as
+```
 
 **Signature**
 

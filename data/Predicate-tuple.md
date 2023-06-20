@@ -6,7 +6,14 @@ Similar to `Promise.all` but operates on `Predicate`s.
 [Predicate<A>, Predicate<B>, ...] -> Predicate<[A, B, ...]>
 ```
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `tuple` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.tuple
+```
 
 **Signature**
 

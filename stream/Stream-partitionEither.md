@@ -3,7 +3,14 @@
 Split a stream by an effectful predicate. The faster stream may advance by
 up to buffer elements further than the slower one.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `partitionEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.partitionEither
+```
 
 **Signature**
 

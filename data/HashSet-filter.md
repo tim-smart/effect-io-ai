@@ -2,7 +2,14 @@
 
 Filters values out of a `HashSet` using the specified predicate.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `filter` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.filter
+```
 
 **Signature**
 

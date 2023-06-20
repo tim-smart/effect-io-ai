@@ -9,7 +9,14 @@ If `n` is not a positive number, an empty string will be returned.
 
 If `n` is a float, it will be rounded down to the nearest integer.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `takeLeft` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.takeLeft
+```
 
 **Example**
 

@@ -5,7 +5,14 @@ Builds a record from an iterable of key-value pairs.
 If there are conflicting keys when using `fromEntries`, the last occurrence of the key/value pair will overwrite the
 previous ones. So the resulting record will only have the value of the last occurrence of each key.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `fromEntries` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.fromEntries
+```
 
 **Example**
 

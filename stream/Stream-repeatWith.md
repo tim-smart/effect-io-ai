@@ -5,7 +5,14 @@ execute normally, and then repeat again according to the provided schedule.
 The schedule output will be emitted at the end of each repetition and can
 be unified with the stream elements using the provided functions.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatWith
+```
 
 **Signature**
 

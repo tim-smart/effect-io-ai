@@ -2,7 +2,14 @@
 
 Clamp a value between `minBound` and `maxBound` values.
 
-Part of the `Bounded` module, imported from `@effect/data/typeclass/Bounded`.
+To import and use `clamp` from the "Bounded" module:
+
+```ts
+import * as Bounded from '@effect/data/typeclass/Bounded'
+
+// Can be accessed like this
+Bounded.clamp
+```
 
 **Signature**
 

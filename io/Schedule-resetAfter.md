@@ -3,7 +3,14 @@
 Return a new schedule that automatically resets the schedule to its initial
 state after some time of inactivity defined by `duration`.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `resetAfter` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.resetAfter
+```
 
 **Signature**
 

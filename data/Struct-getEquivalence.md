@@ -5,7 +5,14 @@ by applying each `Equivalence` to the corresponding property of the struct.
 
 Alias of {@link equivalence.struct}.
 
-Part of the `Struct` module, imported from `@effect/data/Struct`.
+To import and use `getEquivalence` from the "Struct" module:
+
+```ts
+import * as Struct from '@effect/data/Struct'
+
+// Can be accessed like this
+Struct.getEquivalence
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Applies the transducer to the stream and emits its outputs.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `transduce` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.transduce
+```
 
 **Signature**
 

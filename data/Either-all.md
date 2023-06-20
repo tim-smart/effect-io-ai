@@ -9,7 +9,14 @@ Iterable<Either<E, A>> -> Either<E, A[]>
 Flattens a collection of `Either`s into a single `Either` that contains a list of all the `Right` values.
 If there is a `Left` value in the collection, it returns the first `Left` found as the result.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `all` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.all
+```
 
 **Example**
 

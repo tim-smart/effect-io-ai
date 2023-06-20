@@ -3,7 +3,14 @@
 Fail with the specifed `error` if the supplied partial function does not
 match, otherwise continue with the returned value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `continueOrFail` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.continueOrFail
+```
 
 **Signature**
 

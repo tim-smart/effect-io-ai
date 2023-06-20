@@ -2,7 +2,14 @@
 
 Retreives the `Clock` service from the context
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `clock` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.clock
+```
 
 **Signature**
 

@@ -6,7 +6,14 @@ automatically, so if you want to retry on errors, you should first apply
 retry policies to the acquisition effect before passing it to this
 constructor.
 
-Part of the `Resource` module, imported from `@effect/io/Resource`.
+To import and use `auto` from the "Resource" module:
+
+```ts
+import * as Resource from '@effect/io/Resource'
+
+// Can be accessed like this
+Resource.auto
+```
 
 **Signature**
 

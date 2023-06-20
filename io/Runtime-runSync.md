@@ -5,7 +5,14 @@ Executes the effect synchronously throwing in case of errors or async boundaries
 This method is effectful and should only be invoked at the edges of your
 program.
 
-Part of the `Runtime` module, imported from `@effect/io/Runtime`.
+To import and use `runSync` from the "Runtime" module:
+
+```ts
+import * as Runtime from '@effect/io/Runtime'
+
+// Can be accessed like this
+Runtime.runSync
+```
 
 **Signature**
 

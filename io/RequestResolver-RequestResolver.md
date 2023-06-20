@@ -20,4 +20,11 @@ the query, and place the results into the `RequestCompletionMap` using
 sources must provide results for all requests received. Failure to do so
 will cause a query to die with a `QueryFailure` when run.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `RequestResolver` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.RequestResolver
+```

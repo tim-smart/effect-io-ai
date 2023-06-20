@@ -3,7 +3,14 @@
 Returns a new schedule that effectfully processes every input to this
 schedule.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `tapInput` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.tapInput
+```
 
 **Signature**
 

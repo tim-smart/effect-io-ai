@@ -2,7 +2,14 @@
 
 Merges all the layers together in parallel.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `mergeAll` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.mergeAll
+```
 
 **Signature**
 

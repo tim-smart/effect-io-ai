@@ -2,7 +2,14 @@
 
 Tests if a value is a `Either`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `isEither` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.isEither
+```
 
 **Example**
 

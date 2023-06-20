@@ -2,7 +2,14 @@
 
 Like `mergeMap`, but with a configurable `mergeStrategy` parameter.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `mergeMapStrategy` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.mergeMapStrategy
+```
 
 **Signature**
 

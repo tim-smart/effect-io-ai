@@ -2,7 +2,14 @@
 
 Drops the first `n` elements from the specified list.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `drop` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.drop
+```
 
 **Signature**
 

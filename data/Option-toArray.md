@@ -4,7 +4,14 @@ Transforms an `Option` into an `Array`.
 If the input is `None`, an empty array is returned.
 If the input is `Some`, the value is wrapped in an array.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `toArray` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.toArray
+```
 
 **Example**
 

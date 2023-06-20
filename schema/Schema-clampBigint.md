@@ -2,7 +2,14 @@
 
 Clamps a bigint between a minimum and a maximum value.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `clampBigint` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.clampBigint
+```
 
 **Signature**
 

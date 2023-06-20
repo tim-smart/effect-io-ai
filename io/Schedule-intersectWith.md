@@ -4,7 +4,14 @@ Returns a new schedule that combines this schedule with the specified
 schedule, continuing as long as both schedules want to continue and merging
 the next intervals according to the specified merge function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `intersectWith` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.intersectWith
+```
 
 **Signature**
 

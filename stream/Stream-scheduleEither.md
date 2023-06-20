@@ -3,7 +3,14 @@
 Schedules the output of the stream using the provided `schedule` and emits
 its output at the end (if `schedule` is finite).
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `scheduleEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.scheduleEither
+```
 
 **Signature**
 

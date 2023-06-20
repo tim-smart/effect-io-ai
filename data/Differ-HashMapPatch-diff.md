@@ -3,7 +3,14 @@
 Constructs a map patch from a new and old map of keys and values and a
 differ for the values.
 
-Part of the `HashMapPatch` module, imported from `@effect/data/Differ/HashMapPatch`.
+To import and use `diff` from the "HashMapPatch" module:
+
+```ts
+import * as HashMapPatch from '@effect/data/Differ/HashMapPatch'
+
+// Can be accessed like this
+HashMapPatch.diff
+```
 
 **Signature**
 

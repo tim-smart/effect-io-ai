@@ -3,7 +3,14 @@
 Splits an `Iterable` into sub-non-empty-arrays stored in an object, based on the result of calling a `string`-returning
 function on each element, and grouping the results according to values returned
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `groupBy` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.groupBy
+```
 
 **Signature**
 

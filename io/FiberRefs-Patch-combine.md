@@ -4,7 +4,14 @@ Combines this patch and the specified patch to create a new patch that
 describes applying the changes from this patch and the specified patch
 sequentially.
 
-Part of the `Patch` module, imported from `@effect/io/FiberRefs/Patch`.
+To import and use `combine` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/FiberRefs/Patch'
+
+// Can be accessed like this
+Patch.combine
+```
 
 **Signature**
 

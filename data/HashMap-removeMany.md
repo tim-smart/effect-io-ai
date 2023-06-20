@@ -2,7 +2,14 @@
 
 Removes all entries in the `HashMap` which have the specified keys.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `removeMany` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.removeMany
+```
 
 **Signature**
 

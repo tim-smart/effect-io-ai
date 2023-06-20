@@ -2,7 +2,14 @@
 
 Applies a provided function that returns an `Either` to the contents of an `Option`, flattening the result into another `Option`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `flatMapEither` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.flatMapEither
+```
 
 **Example**
 

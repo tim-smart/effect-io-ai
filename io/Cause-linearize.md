@@ -3,7 +3,14 @@
 Linearizes the specified cause into a `HashSet` of parallel causes where each
 parallel cause contains a linear sequence of failures.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `linearize` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.linearize
+```
 
 **Signature**
 

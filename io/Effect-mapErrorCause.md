@@ -7,7 +7,14 @@ original structure of `Cause`.
 See `absorb`, `sandbox`, `catchAllCause` for other functions for dealing
 with defects.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `mapErrorCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.mapErrorCause
+```
 
 **Signature**
 

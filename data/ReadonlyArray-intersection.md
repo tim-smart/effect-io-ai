@@ -3,7 +3,14 @@
 Creates an `Array` of unique values that are included in all given `Iterable`s.
 The order and references of result values are determined by the first `Iterable`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `intersection` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.intersection
+```
 
 **Signature**
 

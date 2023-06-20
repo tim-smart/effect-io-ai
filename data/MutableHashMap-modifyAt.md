@@ -3,7 +3,14 @@
 Set or remove the specified key in the `MutableHashMap` using the specified
 update function.
 
-Part of the `MutableHashMap` module, imported from `@effect/data/MutableHashMap`.
+To import and use `modifyAt` from the "MutableHashMap" module:
+
+```ts
+import * as MutableHashMap from '@effect/data/MutableHashMap'
+
+// Can be accessed like this
+MutableHashMap.modifyAt
+```
 
 **Signature**
 

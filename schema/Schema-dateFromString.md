@@ -2,7 +2,14 @@
 
 A combinator that transforms a `string` into a valid `Date`.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `dateFromString` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.dateFromString
+```
 
 **Signature**
 

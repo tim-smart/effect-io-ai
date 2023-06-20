@@ -2,7 +2,14 @@
 
 Group equal, consecutive elements of a `NonEmptyReadonlyArray` into `NonEmptyArray`s.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `group` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.group
+```
 
 **Signature**
 

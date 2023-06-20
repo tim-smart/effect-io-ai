@@ -3,7 +3,14 @@
 Combines two or patches to produce a new or patch that describes applying
 their changes sequentially.
 
-Part of the `OrPatch` module, imported from `@effect/data/Differ/OrPatch`.
+To import and use `combine` from the "OrPatch" module:
+
+```ts
+import * as OrPatch from '@effect/data/Differ/OrPatch'
+
+// Can be accessed like this
+OrPatch.combine
+```
 
 **Signature**
 

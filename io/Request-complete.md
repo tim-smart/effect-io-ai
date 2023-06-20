@@ -2,7 +2,14 @@
 
 Complete a `Request` with the specified result.
 
-Part of the `Request` module, imported from `@effect/io/Request`.
+To import and use `complete` from the "Request" module:
+
+```ts
+import * as Request from '@effect/io/Request'
+
+// Can be accessed like this
+Request.complete
+```
 
 **Signature**
 

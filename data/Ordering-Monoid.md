@@ -4,7 +4,14 @@
 
 The `empty` value is `0`.
 
-Part of the `Ordering` module, imported from `@effect/data/Ordering`.
+To import and use `Monoid` from the "Ordering" module:
+
+```ts
+import * as Ordering from '@effect/data/Ordering'
+
+// Can be accessed like this
+Ordering.Monoid
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Provides this data source with part of its required context.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `contramapContext` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.contramapContext
+```
 
 **Signature**
 

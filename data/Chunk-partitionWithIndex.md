@@ -2,7 +2,14 @@
 
 Separate elements based on a predicate that also exposes the index of the element.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `partitionWithIndex` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.partitionWithIndex
+```
 
 **Signature**
 

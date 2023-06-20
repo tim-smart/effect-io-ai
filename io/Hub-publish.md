@@ -3,7 +3,14 @@
 Publishes a message to the hub, returning whether the message was published
 to the hub.
 
-Part of the `Hub` module, imported from `@effect/io/Hub`.
+To import and use `publish` from the "Hub" module:
+
+```ts
+import * as Hub from '@effect/io/Hub'
+
+// Can be accessed like this
+Hub.publish
+```
 
 **Signature**
 

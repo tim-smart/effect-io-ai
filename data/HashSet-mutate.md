@@ -2,7 +2,14 @@
 
 Mutates the `HashSet` within the context of the provided function.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `mutate` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.mutate
+```
 
 **Signature**
 

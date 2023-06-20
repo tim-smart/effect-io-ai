@@ -2,7 +2,14 @@
 
 Determine if a `ReadonlyArray` is empty narrowing down the type to `readonly []`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `isEmptyReadonlyArray` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.isEmptyReadonlyArray
+```
 
 **Example**
 

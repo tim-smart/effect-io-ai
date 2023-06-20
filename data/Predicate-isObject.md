@@ -2,7 +2,14 @@
 
 Tests if a value is an `object`.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `isObject` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.isObject
+```
 
 **Example**
 

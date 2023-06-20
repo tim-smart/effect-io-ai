@@ -2,7 +2,14 @@
 
 A variant of `bind` that sequentially ignores the scope.
 
-Part of the `Identity` module, imported from `@effect/data/Identity`.
+To import and use `bindDiscard` from the "Identity" module:
+
+```ts
+import * as Identity from '@effect/data/Identity'
+
+// Can be accessed like this
+Identity.bindDiscard
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Runs both sinks in parallel on the input and combines the results using the
 provided function.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `zipWithPar` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.zipWithPar
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 A schedule that recurs for until the input value becomes applicable to
 partial function and then map that value with given function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `recurUntilOption` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.recurUntilOption
+```
 
 **Signature**
 

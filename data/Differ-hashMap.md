@@ -3,7 +3,14 @@
 Constructs a differ that knows how to diff a `HashMap` of keys and values given
 a differ that knows how to diff the values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `hashMap` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.hashMap
+```
 
 **Signature**
 

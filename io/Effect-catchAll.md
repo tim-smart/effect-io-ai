@@ -6,7 +6,14 @@ Recovers from all recoverable errors.
 recover from both recoverable and unrecoverable errors use
 `Effect.catchAllCause`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `catchAll` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.catchAll
+```
 
 **Signature**
 

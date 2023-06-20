@@ -3,7 +3,14 @@
 A data source aspect that executes requests between two effects, `before`
 and `after`, where the result of `before` can be used by `after`.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `around` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.around
+```
 
 **Signature**
 

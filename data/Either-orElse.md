@@ -3,7 +3,14 @@
 Executes this effect and returns its value, if it succeeds, but otherwise
 executes the specified effect.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `orElse` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.orElse
+```
 
 **Signature**
 

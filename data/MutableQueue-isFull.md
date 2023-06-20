@@ -2,7 +2,14 @@
 
 Returns `true` if the queue is full, `false` otherwise.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `isFull` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.isFull
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Specialized version of `Stream.interruptWhen` which interrupts the
 evaluation of this stream after the given `Duration`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `interruptAfter` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.interruptAfter
+```
 
 **Signature**
 

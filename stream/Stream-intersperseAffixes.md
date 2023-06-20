@@ -2,7 +2,14 @@
 
 Intersperse the specified element, also adding a prefix and a suffix.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `intersperseAffixes` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.intersperseAffixes
+```
 
 **Signature**
 

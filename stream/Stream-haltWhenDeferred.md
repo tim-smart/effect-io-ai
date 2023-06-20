@@ -4,7 +4,14 @@ Halts the evaluation of this stream when the provided promise resolves.
 
 If the promise completes with a failure, the stream will emit that failure.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `haltWhenDeferred` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.haltWhenDeferred
+```
 
 **Signature**
 

@@ -7,7 +7,14 @@ This method will not return until either the reference is successfully
 changed to the new value, with old resources released, or until the attempt
 to acquire a new value fails.
 
-Part of the `ScopedRef` module, imported from `@effect/io/ScopedRef`.
+To import and use `set` from the "ScopedRef" module:
+
+```ts
+import * as ScopedRef from '@effect/io/ScopedRef'
+
+// Can be accessed like this
+ScopedRef.set
+```
 
 **Signature**
 

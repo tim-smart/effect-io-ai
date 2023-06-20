@@ -4,7 +4,14 @@ Returns an effect that executes both this effect and the specified effect,
 in parallel, returning result of that effect. If either side fails,
 then the other side will be interrupted.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `zipParLeft` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.zipParLeft
+```
 
 **Signature**
 

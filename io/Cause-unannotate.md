@@ -2,7 +2,14 @@
 
 Removes any annotation from the cause
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `unannotate` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.unannotate
+```
 
 **Signature**
 

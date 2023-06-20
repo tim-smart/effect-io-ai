@@ -3,7 +3,14 @@
 Submerges the iterables carried by this stream into the stream's structure,
 while still preserving them.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenIterables` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenIterables
+```
 
 **Signature**
 

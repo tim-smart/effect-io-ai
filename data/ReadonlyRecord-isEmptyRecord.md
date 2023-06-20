@@ -2,7 +2,14 @@
 
 Determine if a `Record` is empty.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `isEmptyRecord` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.isEmptyRecord
+```
 
 **Example**
 

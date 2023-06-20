@@ -3,7 +3,14 @@
 Swaps the error/value parameters, applies the function `f` and flips the
 parameters back
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `flipWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.flipWith
+```
 
 **Signature**
 

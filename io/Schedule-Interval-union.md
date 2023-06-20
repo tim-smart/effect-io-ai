@@ -4,7 +4,14 @@ Computes a new `Interval` which is the union of this `Interval` and that
 `Interval` as a `Some`, otherwise returns `None` if the two intervals cannot
 form a union.
 
-Part of the `Interval` module, imported from `@effect/io/Schedule/Interval`.
+To import and use `union` from the "Interval" module:
+
+```ts
+import * as Interval from '@effect/io/Schedule/Interval'
+
+// Can be accessed like this
+Interval.union
+```
 
 **Signature**
 

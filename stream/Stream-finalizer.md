@@ -3,7 +3,14 @@
 Creates a one-element stream that never fails and executes the finalizer
 when it ends.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `finalizer` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.finalizer
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Constructs a `Chunk` by repeatedly applying the function `f` as long as it \* returns `Some`.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `unfold` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.unfold
+```
 
 **Signature**
 

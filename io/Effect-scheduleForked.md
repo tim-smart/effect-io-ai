@@ -3,7 +3,14 @@
 Runs this effect according to the specified schedule in a new fiber
 attached to the current scope.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `scheduleForked` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.scheduleForked
+```
 
 **Signature**
 

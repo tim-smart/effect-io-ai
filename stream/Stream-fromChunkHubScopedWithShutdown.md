@@ -6,7 +6,14 @@ the hub while the stream describes taking messages from the hub.
 
 The hub will be shut down once the stream is closed.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `fromChunkHubScopedWithShutdown` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.fromChunkHubScopedWithShutdown
+```
 
 **Signature**
 

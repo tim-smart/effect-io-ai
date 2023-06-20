@@ -3,7 +3,14 @@
 Creates a `RuntimeFlagsPatch` which describes the inverse of the patch
 specified by the provided `RuntimeFlagsPatch`.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `inverse` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.inverse
+```
 
 **Signature**
 

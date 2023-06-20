@@ -7,7 +7,14 @@ means using `Schedule.recurs(1)` actually results in the original effect,
 plus an additional recurrence, for a total of two repetitions of each value
 in the stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatElementsEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatElementsEither
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns the current number of elements in the queue.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `length` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.length
+```
 
 **Signature**
 

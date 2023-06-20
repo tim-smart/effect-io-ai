@@ -3,7 +3,14 @@
 Executes a pure fold over the stream of values. Returns a scoped value that
 represents the scope of the stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runFoldScoped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runFoldScoped
+```
 
 **Signature**
 

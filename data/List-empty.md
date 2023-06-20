@@ -2,7 +2,14 @@
 
 Constructs a new empty `List<A>`.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `empty` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.empty
+```
 
 **Signature**
 

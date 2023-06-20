@@ -2,7 +2,14 @@
 
 Determine if a `Either` is a `Right`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `isRight` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.isRight
+```
 
 **Example**
 

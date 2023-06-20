@@ -2,7 +2,14 @@
 
 Creates a metric key for a gauge, with the specified name.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `gauge` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.gauge
+```
 
 **Signature**
 

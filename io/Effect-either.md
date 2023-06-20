@@ -9,7 +9,14 @@ This method is useful for recovering from effects that may fail.
 The error parameter of the returned `Effect` is `never`, since it is
 guaranteed the effect does not model failure.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `either` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.either
+```
 
 **Signature**
 

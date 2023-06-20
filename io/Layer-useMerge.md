@@ -4,7 +4,14 @@ Feeds the output services of this layer into the input of the specified
 layer, resulting in a new layer with the inputs of this layer, and the
 outputs of both layers.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `useMerge` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.useMerge
+```
 
 **Signature**
 

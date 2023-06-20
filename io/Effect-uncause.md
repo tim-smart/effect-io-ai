@@ -6,7 +6,14 @@ succeeds with unit, depending on whether the cause is empty.
 
 This operation is the opposite of `cause`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `uncause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.uncause
+```
 
 **Signature**
 

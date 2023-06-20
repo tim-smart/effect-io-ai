@@ -4,7 +4,14 @@ Given a type `A`, this function creates and returns a `Semigroup` for `ReadonlyA
 
 The `empty` value is the empty array.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `array` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.array
+```
 
 **Signature**
 

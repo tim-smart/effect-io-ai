@@ -2,7 +2,14 @@
 
 Unearth the unchecked failure of the effect (opposite of `orDie`).
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `resurrect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.resurrect
+```
 
 **Signature**
 

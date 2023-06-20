@@ -3,7 +3,14 @@
 Returns a new scoped workflow that returns the result of this workflow as
 well as a finalizer that can be run to close the scope of this workflow.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `withEarlyRelease` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.withEarlyRelease
+```
 
 **Signature**
 

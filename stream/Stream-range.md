@@ -3,7 +3,14 @@
 Constructs a stream from a range of integers (lower bound included, upper
 bound not included).
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `range` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.range
+```
 
 **Signature**
 

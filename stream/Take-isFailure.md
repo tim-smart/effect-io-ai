@@ -2,7 +2,14 @@
 
 Checks if this `take` is a failure.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `isFailure` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.isFailure
+```
 
 **Signature**
 

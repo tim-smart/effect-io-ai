@@ -3,7 +3,14 @@
 Constructs a new `Schedule` with the specified `initial` state and the
 specified `step` function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `makeWithState` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.makeWithState
+```
 
 **Signature**
 

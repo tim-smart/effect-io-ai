@@ -2,7 +2,14 @@
 
 Filters the sink's input with the given predicate.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `filterInput` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.filterInput
+```
 
 **Signature**
 

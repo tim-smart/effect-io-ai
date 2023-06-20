@@ -3,7 +3,14 @@
 Unfolds a schedule that repeats one time from the specified state and
 iterator.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `unfold` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.unfold
+```
 
 **Signature**
 

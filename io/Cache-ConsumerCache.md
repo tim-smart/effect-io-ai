@@ -4,4 +4,11 @@ A ConsumerCache models a portion of a cache which is safe to share without allow
 
 It can be used safely to give over control for request management without leaking writer side details.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `ConsumerCache` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.ConsumerCache
+```

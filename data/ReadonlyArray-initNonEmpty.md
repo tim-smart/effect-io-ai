@@ -2,7 +2,14 @@
 
 Get all but the last element of a non empty array, creating a new array.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `initNonEmpty` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.initNonEmpty
+```
 
 **Signature**
 

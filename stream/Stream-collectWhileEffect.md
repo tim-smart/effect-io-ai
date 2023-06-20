@@ -3,7 +3,14 @@
 Effectfully transforms all elements of the stream for as long as the
 specified partial function is defined.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `collectWhileEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.collectWhileEffect
+```
 
 **Signature**
 

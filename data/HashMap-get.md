@@ -3,7 +3,14 @@
 Safely lookup the value for the specified key in the `HashMap` using the
 internal hashing function.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `get` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.get
+```
 
 **Signature**
 

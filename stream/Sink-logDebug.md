@@ -2,7 +2,14 @@
 
 Logs the specified message at the debug log level.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `logDebug` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.logDebug
+```
 
 **Signature**
 

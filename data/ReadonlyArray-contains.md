@@ -2,7 +2,14 @@
 
 Returns a function that checks if a `ReadonlyArray` contains a given value using a provided `equivalence` function.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `contains` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.contains
+```
 
 **Signature**
 

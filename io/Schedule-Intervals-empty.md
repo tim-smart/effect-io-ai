@@ -2,7 +2,14 @@
 
 Constructs an empty list of `Interval`s.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `empty` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.empty
+```
 
 **Signature**
 

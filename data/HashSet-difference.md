@@ -6,7 +6,14 @@ Computes the set difference between this `HashSet` and the specified
 **NOTE**: the hash and equal of the values in both the set and the iterable
 must be the same.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `difference` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.difference
+```
 
 **Signature**
 

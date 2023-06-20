@@ -2,7 +2,14 @@
 
 Creates a sink halting with a specified `Cause`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `failCause` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.failCause
+```
 
 **Signature**
 

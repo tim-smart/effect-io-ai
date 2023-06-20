@@ -2,7 +2,14 @@
 
 Appends an element to the end of a tuple.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `appendElement` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.appendElement
+```
 
 **Signature**
 

@@ -16,4 +16,11 @@ Features the following semantics:
 - Trying to publish another emit/error/done after an error/done have
   already been published results in an interruption.
 
-Part of the `SingleProducerAsyncInput` module, imported from `@effect/stream/Channel/SingleProducerAsyncInput`.
+To import and use `SingleProducerAsyncInput` from the "SingleProducerAsyncInput" module:
+
+```ts
+import * as SingleProducerAsyncInput from '@effect/stream/Channel/SingleProducerAsyncInput'
+
+// Can be accessed like this
+SingleProducerAsyncInput.SingleProducerAsyncInput
+```

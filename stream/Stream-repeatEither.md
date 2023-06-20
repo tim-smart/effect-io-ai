@@ -4,7 +4,14 @@ Repeats the entire stream using the specified schedule. The stream will
 execute normally, and then repeat again according to the provided schedule.
 The schedule output will be emitted at the end of each repetition.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatEither
+```
 
 **Signature**
 

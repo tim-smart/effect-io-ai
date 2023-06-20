@@ -2,7 +2,14 @@
 
 Returns a new `Context` that contains only the specified services.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `pick` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.pick
+```
 
 **Example**
 

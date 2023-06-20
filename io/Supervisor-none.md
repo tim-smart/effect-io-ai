@@ -2,7 +2,14 @@
 
 A supervisor that doesn't do anything in response to supervision events.
 
-Part of the `Supervisor` module, imported from `@effect/io/Supervisor`.
+To import and use `none` from the "Supervisor" module:
+
+```ts
+import * as Supervisor from '@effect/io/Supervisor'
+
+// Can be accessed like this
+Supervisor.none
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 This function provides a safe way to read a value at a particular index from a `Chunk`.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `get` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.get
+```
 
 **Signature**
 

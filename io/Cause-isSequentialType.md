@@ -3,7 +3,14 @@
 Returns `true` if the specified `Cause` is a `Sequential` type, `false`
 otherwise.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `isSequentialType` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.isSequentialType
+```
 
 **Signature**
 

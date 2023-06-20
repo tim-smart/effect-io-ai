@@ -3,7 +3,14 @@
 Returns `true` if the specified `Layer` is a fresh version that will not be
 shared, `false` otherwise.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `isFresh` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.isFresh
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ The returned `Semigroup` combines two structs of the same type by applying the c
 
 It is useful when you need to combine two structs of the same type and you have a specific way of combining each property of the struct.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `struct` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.struct
+```
 
 **Signature**
 

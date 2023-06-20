@@ -2,7 +2,14 @@
 
 Gets the current fiber if one is running.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `getCurrentFiber` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.getCurrentFiber
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Adds a group of annotations, potentially overwriting existing annotations.
 
-Part of the `AST` module, imported from `@effect/schema/AST`.
+To import and use `mergeAnnotations` from the "AST" module:
+
+```ts
+import * as AST from '@effect/schema/AST'
+
+// Can be accessed like this
+AST.mergeAnnotations
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 A logger that does nothing in response to logging events.
 
-Part of the `Logger` module, imported from `@effect/io/Logger`.
+To import and use `none` from the "Logger" module:
+
+```ts
+import * as Logger from '@effect/io/Logger'
+
+// Can be accessed like this
+Logger.none
+```
 
 **Signature**
 

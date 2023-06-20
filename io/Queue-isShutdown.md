@@ -2,7 +2,14 @@
 
 Returns `true` if `shutdown` has been called, otherwise returns `false`.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `isShutdown` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.isShutdown
+```
 
 **Signature**
 

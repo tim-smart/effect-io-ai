@@ -8,7 +8,14 @@ For `Exit` values that do not signal end-of-stream, prefer:
 stream.mapZIO(ZIO.done(_))
 ```
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenExitOption` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenExitOption
+```
 
 **Signature**
 

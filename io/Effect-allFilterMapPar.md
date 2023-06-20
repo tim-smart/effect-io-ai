@@ -3,7 +3,14 @@
 Evaluate each effect in the structure with `collectAllPar`, and collect
 the results with given partial function.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `allFilterMapPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.allFilterMapPar
+```
 
 **Signature**
 

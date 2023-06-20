@@ -5,7 +5,14 @@ provided `Sink` and then returns both the `Z` and the rest of the
 `Stream` in a scope. Like all scoped values, the provided stream is
 valid only within the scope.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `peel` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.peel
+```
 
 **Signature**
 

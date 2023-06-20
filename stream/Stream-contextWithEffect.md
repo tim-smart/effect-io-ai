@@ -2,7 +2,14 @@
 
 Accesses the context of the stream in the context of an effect.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `contextWithEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.contextWithEffect
+```
 
 **Signature**
 

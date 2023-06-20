@@ -4,7 +4,14 @@ Determine if a `ReadonlyArray` is non empty narrowing down the type to `NonEmpty
 
 A `ReadonlyArray` is considered to be a `NonEmptyReadonlyArray` if it contains at least one element.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `isNonEmptyReadonlyArray` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.isNonEmptyReadonlyArray
+```
 
 **Example**
 

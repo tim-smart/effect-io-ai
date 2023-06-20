@@ -2,7 +2,14 @@
 
 Given a `Predicate<A>` returns a `Predicate<B>`
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `contramap` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.contramap
+```
 
 **Example**
 

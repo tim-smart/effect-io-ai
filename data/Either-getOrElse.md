@@ -2,7 +2,14 @@
 
 Returns the wrapped value if it's a `Right` or a default value if is a `Left`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getOrElse` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getOrElse
+```
 
 **Example**
 

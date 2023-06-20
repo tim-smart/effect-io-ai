@@ -3,7 +3,14 @@
 The `gen` API is a helper function that provides a generator interface for the `Option` monad instance.
 It can be used to easily create complex `Option` computations in a readable and concise manner.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `gen` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.gen
+```
 
 **Example**
 

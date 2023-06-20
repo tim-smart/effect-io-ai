@@ -8,7 +8,14 @@ Scheduled recurrences are in addition to the first execution, so that
 `pipe(effect, Effect.repeat(Schedule.once()))` yields an effect that executes
 `effect`, and then if that succeeds, executes `effect` an additional time.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `repeatOrElse` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.repeatOrElse
+```
 
 **Signature**
 

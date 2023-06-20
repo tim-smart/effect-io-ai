@@ -3,7 +3,14 @@
 Combines two or more brands together to form a single branded type.
 This API is useful when you want to validate that the input data passes multiple brand validators.
 
-Part of the `Brand` module, imported from `@effect/data/Brand`.
+To import and use `all` from the "Brand" module:
+
+```ts
+import * as Brand from '@effect/data/Brand'
+
+// Can be accessed like this
+Brand.all
+```
 
 **Example**
 

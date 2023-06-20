@@ -3,7 +3,14 @@
 Converts a layer that requires no services into a scoped runtime, which can
 be used to execute effects.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `toRuntime` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.toRuntime
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Re-chunks the elements of the stream into chunks of `n` elements each. The
 last chunk might contain less than `n` elements.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `rechunk` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.rechunk
+```
 
 **Signature**
 

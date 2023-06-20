@@ -2,7 +2,14 @@
 
 Constructs a data source from an effectual function.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `fromFunctionEffect` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.fromFunctionEffect
+```
 
 **Signature**
 

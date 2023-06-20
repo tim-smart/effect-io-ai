@@ -3,7 +3,14 @@
 Returns a new schedule that performs a geometric union on the intervals
 defined by both schedules.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `either` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.either
+```
 
 **Signature**
 

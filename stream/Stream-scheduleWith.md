@@ -4,7 +4,14 @@ Schedules the output of the stream using the provided `schedule` and emits
 its output at the end (if `schedule` is finite). Uses the provided function
 to align the stream and schedule outputs on the same type.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `scheduleWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.scheduleWith
+```
 
 **Signature**
 

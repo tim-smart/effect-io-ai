@@ -2,7 +2,14 @@
 
 Zips this chunk pointwise with the specified chunk.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `zip` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.zip
+```
 
 **Signature**
 

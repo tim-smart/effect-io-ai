@@ -3,7 +3,14 @@
 Feeds elements of type `A` to a function `f` that returns an effect.
 Collects all successes and failures in a tupled fashion.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `partition` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.partition
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns an aspect that will update this metric with the success value of
 the effects that it is applied to.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `trackSuccess` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.trackSuccess
+```
 
 **Signature**
 

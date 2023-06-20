@@ -3,7 +3,14 @@
 Apply a function to pairs of elements at the same index in two `Iterable`s, collecting the results in a new `Array`. If one
 input `Iterable` is short, excess elements of the longer `Iterable` are discarded.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `zipWith` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.zipWith
+```
 
 **Signature**
 

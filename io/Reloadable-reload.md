@@ -2,7 +2,14 @@
 
 Reloads the specified service.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `reload` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.reload
+```
 
 **Signature**
 

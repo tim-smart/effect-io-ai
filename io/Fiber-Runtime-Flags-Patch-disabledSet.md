@@ -3,7 +3,14 @@
 Returns a `ReadonlySet<number>` containing the `RuntimeFlags` described as
 disabled by the specified `RuntimeFlagsPatch`.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `disabledSet` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.disabledSet
+```
 
 **Signature**
 

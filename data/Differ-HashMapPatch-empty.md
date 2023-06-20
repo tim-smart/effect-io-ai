@@ -2,7 +2,14 @@
 
 Constructs an empty map patch.
 
-Part of the `HashMapPatch` module, imported from `@effect/data/Differ/HashMapPatch`.
+To import and use `empty` from the "HashMapPatch" module:
+
+```ts
+import * as HashMapPatch from '@effect/data/Differ/HashMapPatch'
+
+// Can be accessed like this
+HashMapPatch.empty
+```
 
 **Signature**
 

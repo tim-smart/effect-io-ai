@@ -2,7 +2,14 @@
 
 Convert a value in a singleton array in a given effect.
 
-Part of the `Invariant` module, imported from `@effect/data/typeclass/Invariant`.
+To import and use `tupled` from the "Invariant" module:
+
+```ts
+import * as Invariant from '@effect/data/typeclass/Invariant'
+
+// Can be accessed like this
+Invariant.tupled
+```
 
 **Signature**
 

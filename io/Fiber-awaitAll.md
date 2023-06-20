@@ -2,7 +2,14 @@
 
 Awaits on all fibers to be completed, successfully or not.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `awaitAll` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.awaitAll
+```
 
 **Signature**
 

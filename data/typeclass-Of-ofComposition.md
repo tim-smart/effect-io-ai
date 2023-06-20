@@ -2,7 +2,14 @@
 
 Returns a default `of` composition.
 
-Part of the `Of` module, imported from `@effect/data/typeclass/Of`.
+To import and use `ofComposition` from the "Of" module:
+
+```ts
+import * as Of from '@effect/data/typeclass/Of'
+
+// Can be accessed like this
+Of.ofComposition
+```
 
 **Signature**
 

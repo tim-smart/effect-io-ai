@@ -2,7 +2,14 @@
 
 A guard that always fails.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `isNever` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.isNever
+```
 
 **Example**
 

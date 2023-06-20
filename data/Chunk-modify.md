@@ -3,7 +3,14 @@
 Apply a function to the element at the specified index, creating a new `Chunk`,
 or returning the input if the index is out of bounds.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `modify` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.modify
+```
 
 **Signature**
 

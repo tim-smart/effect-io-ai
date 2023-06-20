@@ -4,7 +4,14 @@ Returns a new metric that is powered by this one, but which outputs a new
 state type, determined by transforming the state type of this metric by the
 specified function.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `map` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.map
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new schedule that modifies the delay using the specified
 effectual function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `modifyDelayEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.modifyDelayEffect
+```
 
 **Signature**
 

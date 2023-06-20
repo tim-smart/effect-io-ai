@@ -4,7 +4,14 @@ Returns a fiber that prefers `this` fiber, but falls back to the `that` one
 when `this` one fails. Interrupting the returned fiber will interrupt both
 fibers, sequentially, from left to right.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `orElseEither` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.orElseEither
+```
 
 **Signature**
 

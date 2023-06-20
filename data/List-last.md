@@ -3,7 +3,14 @@
 Returns the last element of the specified list, or `None` if the list is
 empty.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `last` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.last
+```
 
 **Signature**
 

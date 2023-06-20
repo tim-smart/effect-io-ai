@@ -2,7 +2,14 @@
 
 Computes the union of this `Intervals` and that `Intervals`
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `union` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.union
+```
 
 **Signature**
 

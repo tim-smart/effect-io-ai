@@ -2,7 +2,14 @@
 
 Maps each entry of a `ReadonlyRecord` to an effect and collects the results into a new record.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `traverse` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.traverse
+```
 
 **Example**
 

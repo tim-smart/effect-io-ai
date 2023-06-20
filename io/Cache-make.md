@@ -3,7 +3,14 @@
 Constructs a new cache with the specified capacity, time to live, and
 lookup function.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `make` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.make
+```
 
 **Signature**
 

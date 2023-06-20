@@ -4,7 +4,14 @@ Folds over the failure value or the success value to yield an effect that
 does not fail, but succeeds with the value returned by the left or right
 function passed to `match`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `match` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.match
+```
 
 **Signature**
 

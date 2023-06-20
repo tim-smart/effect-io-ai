@@ -2,7 +2,14 @@
 
 Performs a union of this `HashMap` and that `HashMap`.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `union` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.union
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Like `evaluate`, but with a configurable `bufferSize` parameter.
 
-Part of the `GroupBy` module, imported from `@effect/stream/GroupBy`.
+To import and use `evaluateBuffer` from the "GroupBy" module:
+
+```ts
+import * as GroupBy from '@effect/stream/GroupBy'
+
+// Can be accessed like this
+GroupBy.evaluateBuffer
+```
 
 **Signature**
 

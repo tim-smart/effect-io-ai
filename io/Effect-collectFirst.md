@@ -3,7 +3,14 @@
 Collects the first element of the `Collection<A>` for which the effectual
 function `f` returns `Some`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `collectFirst` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.collectFirst
+```
 
 **Signature**
 

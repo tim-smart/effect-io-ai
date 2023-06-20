@@ -5,7 +5,14 @@ piping the output of this one into the input of the other. Effects
 described by this schedule will always be executed before the effects
 described by the second schedule.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `compose` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.compose
+```
 
 **Signature**
 

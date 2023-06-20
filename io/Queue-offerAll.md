@@ -14,7 +14,14 @@ new ones. Always returns true.
 For Dropping Queue: uses `Dropping` Strategy, It places the values in the
 queue but if there is no room it will not enqueue them and return false.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `offerAll` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.offerAll
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Constructs a layer from the specified scoped effect, which must return one
 or more services.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `scopedContext` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.scopedContext
+```
 
 **Signature**
 

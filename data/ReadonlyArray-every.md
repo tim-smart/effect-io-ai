@@ -2,7 +2,14 @@
 
 Check if a predicate holds true for every `ReadonlyArray` member.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `every` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.every
+```
 
 **Signature**
 

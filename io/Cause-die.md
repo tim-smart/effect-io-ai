@@ -2,7 +2,14 @@
 
 Constructs a new `Die` cause from the specified `defect`.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `die` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.die
+```
 
 **Signature**
 

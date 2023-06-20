@@ -2,7 +2,14 @@
 
 Reduce a state over the map entries.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `reduce` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.reduce
+```
 
 **Signature**
 

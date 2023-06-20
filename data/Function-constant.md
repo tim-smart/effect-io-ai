@@ -5,7 +5,14 @@ Creates a constant value that never changes.
 This is useful when you want to pass a value to a higher-order function (a function that takes another function as its argument)
 and want that inner function to always use the same value, no matter how many times it is called.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `constant` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.constant
+```
 
 **Example**
 

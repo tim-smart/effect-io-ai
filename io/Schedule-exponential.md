@@ -4,7 +4,14 @@ A schedule that always recurs, but will wait a certain amount between
 repetitions, given by `base * factor.pow(n)`, where `n` is the number of
 repetitions so far. Returns the current duration between recurrences.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `exponential` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.exponential
+```
 
 **Signature**
 

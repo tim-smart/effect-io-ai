@@ -4,7 +4,14 @@ A schedule that always recurs, increasing delays by summing the preceding
 two delays (similar to the fibonacci sequence). Returns the current
 duration between recurrences.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `fibonacci` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.fibonacci
+```
 
 **Signature**
 

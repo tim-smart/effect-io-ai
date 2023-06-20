@@ -2,7 +2,14 @@
 
 Return all the `Left` elements from an `Interable` of `Either`s.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `lefts` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.lefts
+```
 
 **Signature**
 

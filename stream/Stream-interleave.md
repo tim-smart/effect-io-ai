@@ -5,7 +5,14 @@ alternating pulling values from this stream and the specified stream. When
 one stream is exhausted all remaining values in the other stream will be
 pulled.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `interleave` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.interleave
+```
 
 **Signature**
 

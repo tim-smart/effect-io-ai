@@ -3,7 +3,14 @@
 Publishes all of the specified messages to the hub, returning whether they
 were published to the hub.
 
-Part of the `Hub` module, imported from `@effect/io/Hub`.
+To import and use `publishAll` from the "Hub" module:
+
+```ts
+import * as Hub from '@effect/io/Hub'
+
+// Can be accessed like this
+Hub.publishAll
+```
 
 **Signature**
 

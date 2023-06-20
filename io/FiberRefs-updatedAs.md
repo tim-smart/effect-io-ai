@@ -2,7 +2,14 @@
 
 Updates the value of the specified `FiberRef` using the provided `FiberId`
 
-Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+To import and use `updatedAs` from the "FiberRefs" module:
+
+```ts
+import * as FiberRefs from '@effect/io/FiberRefs'
+
+// Can be accessed like this
+FiberRefs.updatedAs
+```
 
 **Signature**
 

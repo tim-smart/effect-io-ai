@@ -3,7 +3,14 @@
 Returns a config that has this configuration nested as a property of the
 specified name.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `nested` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.nested
+```
 
 **Signature**
 

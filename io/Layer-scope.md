@@ -5,7 +5,14 @@ is provided to completes execution, whether by success, failure, or
 interruption. This can be used to close a scope when providing a layer to a
 workflow.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `scope` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.scope
+```
 
 **Signature**
 

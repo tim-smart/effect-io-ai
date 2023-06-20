@@ -2,7 +2,14 @@
 
 Fails with given error 'e' if value is `Left`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `rightOrFail` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.rightOrFail
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ The returned `Order` compares two tuples of the same type by applying the corres
 It is useful when you need to compare two tuples of the same type and you have a specific way of comparing each element
 of the tuple.
 
-Part of the `Tuple` module, imported from `@effect/data/Tuple`.
+To import and use `getOrder` from the "Tuple" module:
+
+```ts
+import * as Tuple from '@effect/data/Tuple'
+
+// Can be accessed like this
+Tuple.getOrder
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Determines whether all elements of the `Collection<A>` satisfies the effectual
 predicate `f`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forAll` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forAll
+```
 
 **Signature**
 

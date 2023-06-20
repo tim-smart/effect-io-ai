@@ -2,7 +2,14 @@
 
 Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `between` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.between
+```
 
 **Example**
 

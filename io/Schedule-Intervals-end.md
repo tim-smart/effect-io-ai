@@ -2,7 +2,14 @@
 
 The end of the latest interval in the specified `Intervals`.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `end` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.end
+```
 
 **Signature**
 

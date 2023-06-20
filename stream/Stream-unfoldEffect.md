@@ -3,7 +3,14 @@
 Creates a stream by effectfully peeling off the "layers" of a value of type
 `S`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `unfoldEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.unfoldEffect
+```
 
 **Signature**
 

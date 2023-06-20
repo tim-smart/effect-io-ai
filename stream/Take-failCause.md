@@ -2,7 +2,14 @@
 
 Creates a failing `Take` with the specified cause.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `failCause` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.failCause
+```
 
 **Signature**
 

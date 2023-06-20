@@ -4,7 +4,14 @@ Drains the provided stream in the background for as long as this stream is
 running. If this stream ends before `other`, `other` will be interrupted.
 If `other` fails, this stream will fail with that error.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `drainFork` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.drainFork
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 A variant of `bind` that sequentially ignores the scope.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `bindDiscard` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.bindDiscard
+```
 
 **Signature**
 

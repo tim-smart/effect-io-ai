@@ -4,7 +4,14 @@ Composing two contravariant functors yields a Covariant functor.
 
 Returns a default binary `map` composition.
 
-Part of the `Contravariant` module, imported from `@effect/data/typeclass/Contravariant`.
+To import and use `contramapComposition` from the "Contravariant" module:
+
+```ts
+import * as Contravariant from '@effect/data/typeclass/Contravariant'
+
+// Can be accessed like this
+Contravariant.contramapComposition
+```
 
 **Signature**
 

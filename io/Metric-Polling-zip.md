@@ -2,7 +2,14 @@
 
 Zips this polling metric with the specified polling metric.
 
-Part of the `Polling` module, imported from `@effect/io/Metric/Polling`.
+To import and use `zip` from the "Polling" module:
+
+```ts
+import * as Polling from '@effect/io/Metric/Polling'
+
+// Can be accessed like this
+Polling.zip
+```
 
 **Signature**
 

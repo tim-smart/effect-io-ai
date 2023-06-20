@@ -3,7 +3,14 @@
 Creates a new `ScopedRef` from the specified value. This method should
 not be used for values whose creation require the acquisition of resources.
 
-Part of the `ScopedRef` module, imported from `@effect/io/ScopedRef`.
+To import and use `make` from the "ScopedRef" module:
+
+```ts
+import * as ScopedRef from '@effect/io/ScopedRef'
+
+// Can be accessed like this
+ScopedRef.make
+```
 
 **Signature**
 

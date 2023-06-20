@@ -3,7 +3,14 @@
 Lifts an `Option` into an `Effect`, if the option is not defined it fails
 with `NoSuchElementException`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `getOrFail` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.getOrFail
+```
 
 **Signature**
 

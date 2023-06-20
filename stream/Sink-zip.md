@@ -4,7 +4,14 @@ Feeds inputs to this sink until it yields a result, then switches over to
 the provided sink until it yields a result, finally combining the two
 results into a tuple.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `zip` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.zip
+```
 
 **Signature**
 

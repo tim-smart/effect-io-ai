@@ -6,7 +6,14 @@ operation should be associative. In addition, if the combine operation is
 commutative then joining multiple fibers concurrently will result in
 deterministic `FiberRef` values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `combine` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.combine
+```
 
 **Signature**
 

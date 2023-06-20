@@ -4,7 +4,14 @@ Returns a new config whose structure is the samea as this one, but which
 may produce a different value, constructed using the specified fallible
 function.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `mapOrFail` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.mapOrFail
+```
 
 **Signature**
 

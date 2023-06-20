@@ -3,7 +3,14 @@
 Provides the stream with its required context, which eliminates its
 dependency on `R`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `provideContext` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.provideContext
+```
 
 **Signature**
 

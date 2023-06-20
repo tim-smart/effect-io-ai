@@ -2,7 +2,14 @@
 
 Calculate the longest initial subarray for which all element satisfy the specified predicate, creating a new `Array`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `takeWhile` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.takeWhile
+```
 
 **Signature**
 

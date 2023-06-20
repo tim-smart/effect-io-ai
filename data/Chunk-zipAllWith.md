@@ -6,7 +6,14 @@ pairs of elements from each chunk combined using the specified function
 function `left` or `right` to map the element that does exist to the
 result type.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `zipAllWith` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.zipAllWith
+```
 
 **Signature**
 

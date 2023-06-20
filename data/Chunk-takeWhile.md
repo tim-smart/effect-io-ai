@@ -2,7 +2,14 @@
 
 Takes all elements so long as the predicate returns true.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `takeWhile` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.takeWhile
+```
 
 **Signature**
 

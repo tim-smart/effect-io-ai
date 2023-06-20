@@ -3,7 +3,14 @@
 Transforms the context being provided to the channel with the specified
 function.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `contramapContext` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.contramapContext
+```
 
 **Signature**
 

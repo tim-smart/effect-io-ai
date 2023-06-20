@@ -5,4 +5,11 @@ in other words, an unexpected error.
 
 type `E`.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `Die` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.Die
+```

@@ -3,7 +3,14 @@
 Returns a config that describes the same structure as this one, but has the
 specified default value in case the information cannot be found.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `withDefault` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.withDefault
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Lifts a function that may throw to one returning a `Either`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `liftThrowable` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.liftThrowable
+```
 
 **Signature**
 

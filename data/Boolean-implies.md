@@ -2,7 +2,14 @@
 
 Combines two booleans using an implication: `(!self || that)`.
 
-Part of the `Boolean` module, imported from `@effect/data/Boolean`.
+To import and use `implies` from the "Boolean" module:
+
+```ts
+import * as Boolean from '@effect/data/Boolean'
+
+// Can be accessed like this
+Boolean.implies
+```
 
 **Example**
 

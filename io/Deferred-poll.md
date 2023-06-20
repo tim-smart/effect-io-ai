@@ -3,7 +3,14 @@
 Returns a `Some<Effect<R, E, A>>` from the `Deferred` if this `Deferred` has
 already been completed, `None` otherwise.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `poll` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.poll
+```
 
 **Signature**
 

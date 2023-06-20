@@ -6,7 +6,14 @@ specified `Iterable<A>`.
 **NOTE**: the hash and equal of the values in both the set and the iterable
 must be the same.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `union` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.union
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a scoped effect that, if evaluated, will return the lazily computed
 result of this layer.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `memoize` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.memoize
+```
 
 **Signature**
 

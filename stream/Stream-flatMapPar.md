@@ -5,7 +5,14 @@ non-deterministic merge of those streams, executing up to `n` inner streams
 concurrently. Up to `bufferSize` elements of the produced streams may be
 buffered in memory by this operator.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flatMapPar` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flatMapPar
+```
 
 **Signature**
 

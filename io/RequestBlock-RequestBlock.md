@@ -6,4 +6,11 @@ which requests must be performed sequentially and which can be performed in
 parallel, allowing for maximum possible batching and pipelining while
 preserving ordering guarantees.
 
-Part of the `RequestBlock` module, imported from `@effect/io/RequestBlock`.
+To import and use `RequestBlock` from the "RequestBlock" module:
+
+```ts
+import * as RequestBlock from '@effect/io/RequestBlock'
+
+// Can be accessed like this
+RequestBlock.RequestBlock
+```

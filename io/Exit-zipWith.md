@@ -3,7 +3,14 @@
 Zips this exit together with that exit using the specified combination
 functions.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `zipWith` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.zipWith
+```
 
 **Signature**
 

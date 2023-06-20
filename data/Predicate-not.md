@@ -2,7 +2,14 @@
 
 Negates the result of a given predicate.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `not` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.not
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Wraps an array into a chunk without copying, unsafe on mutable arrays
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `unsafeFromArray` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.unsafeFromArray
+```
 
 **Signature**
 

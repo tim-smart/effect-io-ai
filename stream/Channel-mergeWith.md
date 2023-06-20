@@ -5,7 +5,14 @@ channel, where the behavior of the returned channel on left or right early
 termination is decided by the specified `leftDone` and `rightDone` merge
 decisions.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `mergeWith` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.mergeWith
+```
 
 **Signature**
 

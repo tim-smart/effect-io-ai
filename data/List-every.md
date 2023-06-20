@@ -3,7 +3,14 @@
 Returns `true` if all elements of the specified list satisfy the specified
 predicate, `false` otherwise.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `every` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.every
+```
 
 **Signature**
 

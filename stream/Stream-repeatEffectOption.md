@@ -3,7 +3,14 @@
 Creates a stream from an effect producing values of type `A` until it fails
 with `None`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatEffectOption` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatEffectOption
+```
 
 **Signature**
 

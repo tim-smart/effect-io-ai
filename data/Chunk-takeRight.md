@@ -2,7 +2,14 @@
 
 Takes the last `n` elements.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `takeRight` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.takeRight
+```
 
 **Signature**
 

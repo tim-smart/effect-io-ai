@@ -3,7 +3,14 @@
 Executes the specified workflow with the specified implementation of the
 clock service.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `withClock` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.withClock
+```
 
 **Signature**
 

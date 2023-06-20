@@ -2,7 +2,14 @@
 
 Accesses the whole context of the channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `context` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.context
+```
 
 **Signature**
 

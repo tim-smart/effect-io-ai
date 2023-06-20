@@ -2,7 +2,14 @@
 
 Compares the two chunks of equal length using the specified function
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `correspondsTo` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.correspondsTo
+```
 
 **Signature**
 

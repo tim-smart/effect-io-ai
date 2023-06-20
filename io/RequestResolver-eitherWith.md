@@ -4,7 +4,14 @@ Returns a new data source that executes requests of type `C` using the
 specified function to transform `C` requests into requests that either this
 data source or that data source can execute.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `eitherWith` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.eitherWith
+```
 
 **Signature**
 

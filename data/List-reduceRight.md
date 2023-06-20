@@ -3,7 +3,14 @@
 Folds over the elements of the list using the specified function, beginning
 with the last element of the list, using the specified initial value.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `reduceRight` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.reduceRight
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 A helper method to create histogram bucket boundaries for a histogram
 with exponentially increasing values.
 
-Part of the `Boundaries` module, imported from `@effect/io/Metric/Boundaries`.
+To import and use `exponential` from the "Boundaries" module:
+
+```ts
+import * as Boundaries from '@effect/io/Metric/Boundaries'
+
+// Can be accessed like this
+Boundaries.exponential
+```
 
 **Signature**
 

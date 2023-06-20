@@ -14,7 +14,14 @@ pipe(
 // => Chunk(Chunk(1, 2, 3), Chunk(5, 6, 7), Chunk(9))
 ```
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `split` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.split
+```
 
 **Signature**
 

@@ -7,7 +7,14 @@ outputs of type `K`. Up to `buffer` elements may be buffered per partition.
 Transformed elements may be reordered but the order within a partition is
 maintained.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapEffectParByKey` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapEffectParByKey
+```
 
 **Signature**
 

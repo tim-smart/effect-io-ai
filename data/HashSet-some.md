@@ -2,7 +2,14 @@
 
 Returns `true` if any value in the `HashSet` matches the specified predicate.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `some` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.some
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Maps over the value of an `Option` and filters out `None`s.
 
 Useful when in addition to filtering you also want to change the type of the `Option`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `filterMap` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.filterMap
+```
 
 **Example**
 

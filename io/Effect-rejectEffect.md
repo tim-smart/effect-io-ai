@@ -4,7 +4,14 @@ Continue with the returned computation if the `PartialFunction` matches,
 translating the successful match into a failure, otherwise continue with
 our held value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `rejectEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.rejectEffect
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Terminates the stream when encountering the first `Exit.Failure`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `collectWhileSuccess` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.collectWhileSuccess
+```
 
 **Signature**
 

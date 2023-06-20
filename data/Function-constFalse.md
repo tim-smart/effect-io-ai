@@ -2,7 +2,14 @@
 
 A thunk that returns always `false`.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `constFalse` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.constFalse
+```
 
 **Example**
 

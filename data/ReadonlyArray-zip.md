@@ -4,7 +4,14 @@ Takes two `Iterable`s and returns an `Array` of corresponding pairs.
 If one input `Iterable` is short, excess elements of the
 longer `Iterable` are discarded.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `zip` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.zip
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Runs an `Effect` workflow, returning a `Promise` which resolves with the
 `Exit` value of the workflow.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `runPromiseExit` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.runPromiseExit
+```
 
 **Signature**
 

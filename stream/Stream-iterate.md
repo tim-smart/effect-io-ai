@@ -3,7 +3,14 @@
 The infinite stream of iterative function application: a, f(a), f(f(a)),
 f(f(f(a))), ...
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `iterate` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.iterate
+```
 
 **Signature**
 

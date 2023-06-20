@@ -2,7 +2,14 @@
 
 Repeats this effect forever (until the first error).
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forever` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forever
+```
 
 **Signature**
 

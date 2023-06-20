@@ -3,7 +3,14 @@
 A schedule spanning all time, which can be stepped only the specified
 number of times before it terminates.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `recurs` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.recurs
+```
 
 **Signature**
 

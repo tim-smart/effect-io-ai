@@ -3,7 +3,14 @@
 Constructs a new `Sequential` cause from the specified pecified `left` and
 `right` causes.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `sequential` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.sequential
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a single-valued pure stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `succeed` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.succeed
+```
 
 **Signature**
 

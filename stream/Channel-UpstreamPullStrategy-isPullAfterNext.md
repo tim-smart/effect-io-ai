@@ -3,7 +3,14 @@
 Returns `true` if the specified `UpstreamPullStrategy` is a `PullAfterNext`,
 `false` otherwise.
 
-Part of the `UpstreamPullStrategy` module, imported from `@effect/stream/Channel/UpstreamPullStrategy`.
+To import and use `isPullAfterNext` from the "UpstreamPullStrategy" module:
+
+```ts
+import * as UpstreamPullStrategy from '@effect/stream/Channel/UpstreamPullStrategy'
+
+// Can be accessed like this
+UpstreamPullStrategy.isPullAfterNext
+```
 
 **Signature**
 

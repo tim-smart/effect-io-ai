@@ -3,7 +3,14 @@
 Applies the changes described by this patch to the specified collection
 of `FiberRef` values.
 
-Part of the `Patch` module, imported from `@effect/io/FiberRefs/Patch`.
+To import and use `patch` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/FiberRefs/Patch'
+
+// Can be accessed like this
+Patch.patch
+```
 
 **Signature**
 

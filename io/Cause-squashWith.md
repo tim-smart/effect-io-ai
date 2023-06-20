@@ -4,7 +4,14 @@ Squashes a `Cause` down to a single defect, chosen to be the "most important"
 defect. If a recoverable error is found, the provided function will be used
 to map the error a defect, and the resulting value will be returned.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `squashWith` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.squashWith
+```
 
 **Signature**
 

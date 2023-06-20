@@ -3,7 +3,14 @@
 A schedule that occurs everywhere, which returns the total elapsed duration
 since the first step.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `elapsed` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.elapsed
+```
 
 **Signature**
 

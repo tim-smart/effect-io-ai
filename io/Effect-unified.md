@@ -2,7 +2,14 @@
 
 Used to unify effects that would otherwise be `Effect<A, B, C> | Effect<D, E, F>`
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unified` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unified
+```
 
 **Signature**
 

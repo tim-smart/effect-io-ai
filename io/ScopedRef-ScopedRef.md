@@ -6,4 +6,11 @@ which must be released properly. You can both get the current value of any
 resources). The reference itself takes care of properly releasing resources
 for the old value whenever a new value is obtained.
 
-Part of the `ScopedRef` module, imported from `@effect/io/ScopedRef`.
+To import and use `ScopedRef` from the "ScopedRef" module:
+
+```ts
+import * as ScopedRef from '@effect/io/ScopedRef'
+
+// Can be accessed like this
+ScopedRef.ScopedRef
+```

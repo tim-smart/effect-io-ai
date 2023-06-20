@@ -4,7 +4,14 @@ Returns a new channel, which is the same as this one, except the terminal
 value of the returned channel is created by applying the specified function
 to the terminal value of this channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `map` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.map
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Enqueues a collection of values into the queue.
 
 Returns a `List` of the values that were **not** able to be enqueued.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `offerAll` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.offerAll
+```
 
 **Signature**
 

@@ -12,4 +12,11 @@ The semantic of `encode` is:
 - `none()` you don't want to output the key/value pair
 - `some(value)` you want to output the key/value pair
 
-Part of the `AST` module, imported from `@effect/schema/AST`.
+To import and use `PropertySignatureTransformation` from the "AST" module:
+
+```ts
+import * as AST from '@effect/schema/AST'
+
+// Can be accessed like this
+AST.PropertySignatureTransformation
+```

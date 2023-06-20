@@ -5,7 +5,14 @@ meaning that it should be impossible for this code to be executed.
 
 This function is particularly when it's necessary to specify that certain cases are impossible.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `absurd` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.absurd
+```
 
 **Signature**
 

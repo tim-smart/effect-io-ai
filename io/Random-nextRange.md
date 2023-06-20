@@ -3,7 +3,14 @@
 Returns the next numeric value in the specified range from the
 pseudo-random number generator.
 
-Part of the `Random` module, imported from `@effect/io/Random`.
+To import and use `nextRange` from the "Random" module:
+
+```ts
+import * as Random from '@effect/io/Random'
+
+// Can be accessed like this
+Random.nextRange
+```
 
 **Signature**
 

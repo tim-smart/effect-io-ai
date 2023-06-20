@@ -4,7 +4,14 @@ Performs left-to-right function composition. The first argument may have any ari
 
 See also {@link pipe}.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `flow` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.flow
+```
 
 **Example**
 

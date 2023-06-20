@@ -3,7 +3,14 @@
 Returns the defect associated with the first `Die` in this `Cause`, if one
 exists.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `dieOption` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.dieOption
+```
 
 **Signature**
 

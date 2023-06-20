@@ -2,7 +2,14 @@
 
 Provides an addition operation on `bigint`s.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `sum` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.sum
+```
 
 **Example**
 

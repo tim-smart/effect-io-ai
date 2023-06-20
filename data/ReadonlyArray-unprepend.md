@@ -2,7 +2,14 @@
 
 Return a tuple containing the first element, and a new `Array` of the remaining elements, if any.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `unprepend` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.unprepend
+```
 
 **Signature**
 

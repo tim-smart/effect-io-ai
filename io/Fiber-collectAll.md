@@ -3,7 +3,14 @@
 Collects all fibers into a single fiber producing an in-order list of the
 results.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `collectAll` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.collectAll
+```
 
 **Signature**
 

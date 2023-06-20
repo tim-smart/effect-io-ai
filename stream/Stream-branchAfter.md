@@ -4,7 +4,14 @@ Returns a `Stream` that first collects `n` elements from the input `Stream`,
 and then creates a new `Stream` using the specified function, and sends all
 the following elements through that.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `branchAfter` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.branchAfter
+```
 
 **Signature**
 

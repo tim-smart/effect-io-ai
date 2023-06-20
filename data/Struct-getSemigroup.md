@@ -7,7 +7,14 @@ It is useful when you need to combine two structs of the same type and you have 
 
 See also {@link getMonoid}.
 
-Part of the `Struct` module, imported from `@effect/data/Struct`.
+To import and use `getSemigroup` from the "Struct" module:
+
+```ts
+import * as Struct from '@effect/data/Struct'
+
+// Can be accessed like this
+Struct.getSemigroup
+```
 
 **Example**
 

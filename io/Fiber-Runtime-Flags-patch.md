@@ -3,7 +3,14 @@
 Patches a set of `RuntimeFlag`s with a `RuntimeFlagsPatch`, returning the
 patched set of `RuntimeFlag`s.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `patch` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.patch
+```
 
 **Signature**
 

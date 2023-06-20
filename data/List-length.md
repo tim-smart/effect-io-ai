@@ -2,7 +2,14 @@
 
 Returns the number of elements contained in the specified `List`
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `length` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.length
+```
 
 **Signature**
 

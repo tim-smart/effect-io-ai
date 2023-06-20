@@ -2,7 +2,14 @@
 
 A variant of `flatMap` that ignores the value produced by this effect.
 
-Part of the `FlatMap` module, imported from `@effect/data/typeclass/FlatMap`.
+To import and use `zipRight` from the "FlatMap" module:
+
+```ts
+import * as FlatMap from '@effect/data/typeclass/FlatMap'
+
+// Can be accessed like this
+FlatMap.zipRight
+```
 
 **Signature**
 

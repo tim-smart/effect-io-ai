@@ -2,7 +2,14 @@
 
 Decrements a number by `1n`.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `decrement` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.decrement
+```
 
 **Example**
 

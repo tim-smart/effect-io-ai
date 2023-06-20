@@ -8,4 +8,11 @@ concurrently with the parent effect.
 Fibers can be joined, yielding their result to other fibers, or interrupted,
 which terminates the fiber, safely releasing all resources.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `Fiber` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.Fiber
+```

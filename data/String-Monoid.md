@@ -4,7 +4,14 @@
 
 The `empty` value is `''`.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `Monoid` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.Monoid
+```
 
 **Signature**
 

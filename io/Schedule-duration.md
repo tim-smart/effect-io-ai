@@ -3,7 +3,14 @@
 A schedule that can recur one time, the specified amount of time into the
 future.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `duration` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.duration
+```
 
 **Signature**
 

@@ -2,4 +2,11 @@
 
 A patch which describes updates to a map of keys and values.
 
-Part of the `HashMapPatch` module, imported from `@effect/data/Differ/HashMapPatch`.
+To import and use `HashMapPatch` from the "HashMapPatch" module:
+
+```ts
+import * as HashMapPatch from '@effect/data/Differ/HashMapPatch'
+
+// Can be accessed like this
+HashMapPatch.HashMapPatch
+```

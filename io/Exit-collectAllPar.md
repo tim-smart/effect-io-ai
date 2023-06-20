@@ -5,7 +5,14 @@ the provided iterable contains no elements, `None` will be returned.
 
 **Note**: `Exit.collectAll` combines `Cause` values in parallel.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `collectAllPar` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.collectAllPar
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Converts this stream to a stream that executes its effects but emits no
 elements. Useful for sequencing effects using streams:
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `drain` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.drain
+```
 
 **Signature**
 

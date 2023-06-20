@@ -2,7 +2,14 @@
 
 Converts an option on values into an option on errors.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `some` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.some
+```
 
 **Signature**
 

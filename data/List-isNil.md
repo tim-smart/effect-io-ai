@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `List.Nil<A>`, `false` otherwise.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `isNil` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.isNil
+```
 
 **Signature**
 

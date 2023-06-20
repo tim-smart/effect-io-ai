@@ -2,4 +2,11 @@
 
 Producer-side view of `SingleProducerAsyncInput` for variance purposes.
 
-Part of the `SingleProducerAsyncInput` module, imported from `@effect/stream/Channel/SingleProducerAsyncInput`.
+To import and use `AsyncInputProducer` from the "SingleProducerAsyncInput" module:
+
+```ts
+import * as SingleProducerAsyncInput from '@effect/stream/Channel/SingleProducerAsyncInput'
+
+// Can be accessed like this
+SingleProducerAsyncInput.AsyncInputProducer
+```

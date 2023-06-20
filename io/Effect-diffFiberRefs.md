@@ -3,7 +3,14 @@
 Returns a new workflow that executes this one and captures the changes in
 `FiberRef` values.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `diffFiberRefs` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.diffFiberRefs
+```
 
 **Signature**
 

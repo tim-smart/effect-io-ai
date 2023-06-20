@@ -3,7 +3,14 @@
 Returns `true` if the `Interruption` `RuntimeFlag` is enabled, `false`
 otherwise.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `interruption` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.interruption
+```
 
 **Signature**
 

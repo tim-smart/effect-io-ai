@@ -2,7 +2,14 @@
 
 Takes the first up to `n` elements from the chunk
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `take` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.take
+```
 
 **Signature**
 

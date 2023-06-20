@@ -4,7 +4,14 @@ Partition a list into two lists, where the first list contains all elements
 that did not satisfy the specified predicate, and the second list contains
 all elements that did satisfy the specified predicate.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `partition` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.partition
+```
 
 **Signature**
 

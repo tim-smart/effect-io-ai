@@ -4,7 +4,14 @@ Fan out the stream, producing a dynamic number of streams that have the
 same elements as this stream. The driver stream will only ever advance the
 `maximumLag` chunks before the slowest downstream stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `broadcastDynamic` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.broadcastDynamic
+```
 
 **Signature**
 

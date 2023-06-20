@@ -4,7 +4,14 @@ Feeds elements of type `A` to `f` until it succeeds. Returns first success or th
 
 If `elements` is empty then `Either.left([])` is returned.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `validateFirst` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.validateFirst
+```
 
 **Example**
 

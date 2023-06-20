@@ -4,7 +4,14 @@ Attaches a property signature with the specified key and value to the schema.
 This API is useful when you want to add a property to your schema which doesn't describe the shape of the input,
 but rather maps to another schema, for example when you want to add a discriminant to a simple union.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `attachPropertySignature` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.attachPropertySignature
+```
 
 **Example**
 

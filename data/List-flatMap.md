@@ -2,7 +2,14 @@
 
 Flat maps a list using the specified function.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `flatMap` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.flatMap
+```
 
 **Signature**
 

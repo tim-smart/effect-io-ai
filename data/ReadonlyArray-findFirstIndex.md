@@ -2,7 +2,14 @@
 
 Return the first index for which a predicate holds.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `findFirstIndex` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.findFirstIndex
+```
 
 **Signature**
 

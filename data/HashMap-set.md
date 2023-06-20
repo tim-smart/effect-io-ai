@@ -3,7 +3,14 @@
 Sets the specified key to the specified value using the internal hashing
 function.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `set` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.set
+```
 
 **Signature**
 

@@ -3,4 +3,11 @@
 A `Resource` is a possibly resourceful value that is loaded into memory, and
 which can be refreshed either manually or automatically.
 
-Part of the `Resource` module, imported from `@effect/io/Resource`.
+To import and use `Resource` from the "Resource" module:
+
+```ts
+import * as Resource from '@effect/io/Resource'
+
+// Can be accessed like this
+Resource.Resource
+```

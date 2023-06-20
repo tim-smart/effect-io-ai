@@ -2,7 +2,14 @@
 
 Returns the provided `Option` `that` if `self` is `None`, otherwise returns `self`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `orElse` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.orElse
+```
 
 **Example**
 

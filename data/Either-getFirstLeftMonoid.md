@@ -6,7 +6,14 @@ are combined using the provided `Monoid`.
 - `combine` is provided by {@link getFirstLeftSemigroup}.
 - `empty` is `right(M.empty)`
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getFirstLeftMonoid` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getFirstLeftMonoid
+```
 
 **Signature**
 

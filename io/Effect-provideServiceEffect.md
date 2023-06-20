@@ -3,7 +3,14 @@
 Provides the effect with the single service it requires. If the effect
 requires more than one service use `provideContext` instead.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `provideServiceEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.provideServiceEffect
+```
 
 **Signature**
 

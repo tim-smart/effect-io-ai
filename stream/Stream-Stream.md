@@ -16,4 +16,11 @@ facilities for its `E` type parameter, modeled similarly to `Effect` (with
 some adjustments for the multiple-valued nature of `Stream`). These aspects
 allow for rich and expressive composition of streams.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `Stream` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.Stream
+```

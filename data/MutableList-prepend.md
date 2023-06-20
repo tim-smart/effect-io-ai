@@ -2,7 +2,14 @@
 
 Prepends the specified value to the beginning of the list.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `prepend` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.prepend
+```
 
 **Signature**
 

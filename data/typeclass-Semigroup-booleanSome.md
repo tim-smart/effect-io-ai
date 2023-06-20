@@ -2,7 +2,14 @@
 
 `boolean` semigroup under disjunction.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `booleanSome` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.booleanSome
+```
 
 **Signature**
 

@@ -10,7 +10,14 @@ function must be called at most once.
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `asyncOption` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.asyncOption
+```
 
 **Signature**
 

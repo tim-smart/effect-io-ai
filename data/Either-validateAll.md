@@ -6,7 +6,14 @@ channel or successes in success channel.
 This combinator is lossy meaning that if there are errors all successes
 will be lost. To retain all information please use `ReadonlyArray.separate`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `validateAll` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.validateAll
+```
 
 **Example**
 

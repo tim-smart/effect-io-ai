@@ -2,7 +2,14 @@
 
 Lifts an `Either<Cause<E>, A>` into an `Effect<never, E, A>`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `fromEitherCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.fromEitherCause
+```
 
 **Signature**
 

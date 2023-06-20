@@ -2,7 +2,14 @@
 
 Returns a default `productMany` composition.
 
-Part of the `SemiProduct` module, imported from `@effect/data/typeclass/SemiProduct`.
+To import and use `productManyComposition` from the "SemiProduct" module:
+
+```ts
+import * as SemiProduct from '@effect/data/typeclass/SemiProduct'
+
+// Can be accessed like this
+SemiProduct.productManyComposition
+```
 
 **Signature**
 

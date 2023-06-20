@@ -4,7 +4,14 @@ Summarizes a effect by computing some value before and after execution, and
 then combining the values to produce a summary, together with the result of
 execution.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `summarized` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.summarized
+```
 
 **Signature**
 

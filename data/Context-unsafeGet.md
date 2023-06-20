@@ -5,7 +5,14 @@ This function is unsafe because if the tag is not present in the context, a runt
 
 For a safer version see {@link getOption}.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `unsafeGet` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.unsafeGet
+```
 
 **Example**
 

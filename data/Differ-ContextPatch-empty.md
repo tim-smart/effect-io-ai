@@ -2,7 +2,14 @@
 
 An empty patch which returns the environment unchanged.
 
-Part of the `ContextPatch` module, imported from `@effect/data/Differ/ContextPatch`.
+To import and use `empty` from the "ContextPatch" module:
+
+```ts
+import * as ContextPatch from '@effect/data/Differ/ContextPatch'
+
+// Can be accessed like this
+ContextPatch.empty
+```
 
 **Signature**
 

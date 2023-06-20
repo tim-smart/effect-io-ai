@@ -2,7 +2,14 @@
 
 Checks if a `Duration` is between a `minimum` and `maximum` value.
 
-Part of the `Duration` module, imported from `@effect/data/Duration`.
+To import and use `between` from the "Duration" module:
+
+```ts
+import * as Duration from '@effect/data/Duration'
+
+// Can be accessed like this
+Duration.between
+```
 
 **Signature**
 

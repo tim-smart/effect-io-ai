@@ -3,7 +3,14 @@
 Creates a stream from an effect producing chunks of `A` values until it
 fails with `None`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatEffectChunkOption` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatEffectChunkOption
+```
 
 **Signature**
 

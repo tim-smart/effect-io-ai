@@ -3,7 +3,14 @@
 Repeats this effect until its value is equal to the specified value or
 until the first failure.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `repeatUntilEquals` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.repeatUntilEquals
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a new bounded `MutableQueue`.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `bounded` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.bounded
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a metric key for a counter, with the specified name.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `counter` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.counter
+```
 
 **Signature**
 

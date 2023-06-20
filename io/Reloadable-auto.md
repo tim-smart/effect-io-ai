@@ -4,7 +4,14 @@ Makes a new reloadable service from a layer that describes the construction
 of a static service. The service is automatically reloaded according to the
 provided schedule.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `auto` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.auto
+```
 
 **Signature**
 

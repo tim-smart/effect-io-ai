@@ -8,7 +8,14 @@ Note: tracking the latest value is done on a per-chunk basis. That means
 that emitted elements that are not the last value in chunks will never be
 used for zipping.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zipLatestWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zipLatestWith
+```
 
 **Signature**
 

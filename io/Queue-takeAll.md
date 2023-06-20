@@ -3,7 +3,14 @@
 Takes all the values in the queue and returns the values. If the queue is
 empty returns an empty collection.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `takeAll` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.takeAll
+```
 
 **Signature**
 

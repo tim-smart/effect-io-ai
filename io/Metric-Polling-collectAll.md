@@ -3,7 +3,14 @@
 Collects all of the polling metrics into a single polling metric, which
 polls for, updates, and produces the outputs of all individual metrics.
 
-Part of the `Polling` module, imported from `@effect/io/Metric/Polling`.
+To import and use `collectAll` from the "Polling" module:
+
+```ts
+import * as Polling from '@effect/io/Metric/Polling'
+
+// Can be accessed like this
+Polling.collectAll
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Like `toQueueSliding`, but with a configurable `capacity` parameter.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `toQueueSlidingCapacity` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.toQueueSlidingCapacity
+```
 
 **Signature**
 

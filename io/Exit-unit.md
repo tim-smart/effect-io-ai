@@ -2,7 +2,14 @@
 
 Represents an `Exit` which succeeds with `undefined`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `unit` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.unit
+```
 
 **Signature**
 

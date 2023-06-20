@@ -2,7 +2,14 @@
 
 Removes any annotation from the failure cause
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `unannotate` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.unannotate
+```
 
 **Signature**
 

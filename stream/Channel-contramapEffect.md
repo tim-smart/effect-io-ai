@@ -3,7 +3,14 @@
 Returns a new channel which is the same as this one but applies the given
 effectual function to the input channel's done value.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `contramapEffect` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.contramapEffect
+```
 
 **Signature**
 

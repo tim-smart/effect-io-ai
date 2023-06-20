@@ -2,7 +2,14 @@
 
 Returns `true` if the specified cause is empty, `false` otherwise.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `isEmpty` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.isEmpty
+```
 
 **Signature**
 

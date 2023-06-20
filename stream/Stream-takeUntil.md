@@ -3,7 +3,14 @@
 Takes all elements of the stream until the specified predicate evaluates to
 `true`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `takeUntil` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.takeUntil
+```
 
 **Signature**
 

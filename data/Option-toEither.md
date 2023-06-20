@@ -2,7 +2,14 @@
 
 Converts an `Option` to an `Either`, allowing you to provide a value to be used in the case of a `None`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `toEither` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.toEither
+```
 
 **Example**
 

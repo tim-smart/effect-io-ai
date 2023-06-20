@@ -4,7 +4,14 @@ Flattens a stream of streams into a stream by executing a non-deterministic
 concurrent merge. Up to `n` streams may be consumed in parallel and up to
 `outputBuffer` elements may be buffered by this operator.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenPar` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenPar
+```
 
 **Signature**
 

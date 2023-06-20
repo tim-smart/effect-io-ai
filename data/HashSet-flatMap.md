@@ -2,7 +2,14 @@
 
 Chains over the values of the `HashSet` using the specified function.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `flatMap` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.flatMap
+```
 
 **Signature**
 

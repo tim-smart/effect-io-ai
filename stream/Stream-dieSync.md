@@ -2,7 +2,14 @@
 
 The stream that dies with the specified lazily evaluated defect.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `dieSync` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.dieSync
+```
 
 **Signature**
 

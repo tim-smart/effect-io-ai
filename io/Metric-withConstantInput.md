@@ -4,7 +4,14 @@ Returns a new metric that is powered by this one, but which accepts updates
 of any type, and translates them to updates with the specified constant
 update value.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `withConstantInput` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.withConstantInput
+```
 
 **Signature**
 

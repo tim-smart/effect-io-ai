@@ -3,7 +3,14 @@
 Returns a schedule that repeats one time, producing the specified constant
 value.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `succeed` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.succeed
+```
 
 **Signature**
 

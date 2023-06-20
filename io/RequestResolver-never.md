@@ -2,7 +2,14 @@
 
 A data source that never executes requests.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `never` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.never
+```
 
 **Signature**
 

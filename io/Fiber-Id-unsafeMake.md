@@ -2,7 +2,14 @@
 
 Unsafely creates a new `FiberId`.
 
-Part of the `Id` module, imported from `@effect/io/Fiber/Id`.
+To import and use `unsafeMake` from the "Id" module:
+
+```ts
+import * as Id from '@effect/io/Fiber/Id'
+
+// Can be accessed like this
+Id.unsafeMake
+```
 
 **Signature**
 

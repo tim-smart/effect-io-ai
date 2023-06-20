@@ -3,7 +3,14 @@
 Merges this stream and the specified stream together. New produced stream
 will terminate when either stream terminates.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mergeHaltEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mergeHaltEither
+```
 
 **Signature**
 

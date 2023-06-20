@@ -2,7 +2,14 @@
 
 Reverse an `Iterable`, creating a new `Array`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `reverse` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.reverse
+```
 
 **Signature**
 

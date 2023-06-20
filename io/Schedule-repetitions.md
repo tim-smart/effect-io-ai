@@ -2,7 +2,14 @@
 
 Returns a new schedule that outputs the number of repetitions of this one.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `repetitions` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.repetitions
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Determines whether any element of the `Iterable<A>` satisfies the effectual
 predicate `f`, working in parallel. Interrupts all effects on any failure or
 finding an element that satisfies the predicate.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `existsPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.existsPar
+```
 
 **Signature**
 

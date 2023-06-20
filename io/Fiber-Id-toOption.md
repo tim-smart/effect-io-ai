@@ -2,7 +2,14 @@
 
 Convert a `FiberId` into an `Option<FiberId>`.
 
-Part of the `Id` module, imported from `@effect/io/Fiber/Id`.
+To import and use `toOption` from the "Id" module:
+
+```ts
+import * as Id from '@effect/io/Fiber/Id'
+
+// Can be accessed like this
+Id.toOption
+```
 
 **Signature**
 

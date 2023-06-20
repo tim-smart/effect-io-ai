@@ -4,7 +4,14 @@ Returns an effect that effectfully "peeks" at the success of this effect.
 If the partial function isn't defined at the input, the result is
 equivalent to the original effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `tapSome` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.tapSome
+```
 
 **Signature**
 

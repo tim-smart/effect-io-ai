@@ -5,7 +5,14 @@ triggers at zero second of the minute. Producing a count of repeats: 0, 1, 2.
 
 NOTE: `minute` parameter is validated lazily. Must be in range 0...59.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `minuteOfHour` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.minuteOfHour
+```
 
 **Signature**
 

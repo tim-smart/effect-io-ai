@@ -3,7 +3,14 @@
 Sets the `FiberRef` values for the fiber running this effect to the values
 in the specified collection of `FiberRef` values.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `setFiberRefs` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.setFiberRefs
+```
 
 **Signature**
 

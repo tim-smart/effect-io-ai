@@ -5,7 +5,14 @@ while elements that are `Some` are combined using the provided `Semigroup`.
 
 The `empty` value is `none()`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getOptionalMonoid` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getOptionalMonoid
+```
 
 **Example**
 

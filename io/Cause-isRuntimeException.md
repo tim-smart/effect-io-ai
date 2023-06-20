@@ -3,7 +3,14 @@
 Returns `true` if the specified value is an `RuntimeException`, `false`
 otherwise.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `isRuntimeException` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.isRuntimeException
+```
 
 **Signature**
 

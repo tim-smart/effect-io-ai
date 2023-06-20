@@ -2,7 +2,14 @@
 
 Returns the result of adding `1` to a given number.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `increment` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.increment
+```
 
 **Example**
 

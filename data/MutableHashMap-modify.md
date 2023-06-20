@@ -2,7 +2,14 @@
 
 Updates the value of the specified key within the `MutableHashMap` if it exists.
 
-Part of the `MutableHashMap` module, imported from `@effect/data/MutableHashMap`.
+To import and use `modify` from the "MutableHashMap" module:
+
+```ts
+import * as MutableHashMap from '@effect/data/MutableHashMap'
+
+// Can be accessed like this
+MutableHashMap.modify
+```
 
 **Signature**
 

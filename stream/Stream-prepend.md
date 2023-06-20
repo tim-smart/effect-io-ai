@@ -2,7 +2,14 @@
 
 Emits the provided chunk before emitting any other value.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `prepend` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.prepend
+```
 
 **Signature**
 

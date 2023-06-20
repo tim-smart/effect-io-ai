@@ -2,7 +2,14 @@
 
 Creates a sink that drops `n` elements.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `drop` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.drop
+```
 
 **Signature**
 

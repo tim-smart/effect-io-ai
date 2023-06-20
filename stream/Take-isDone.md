@@ -2,7 +2,14 @@
 
 Checks if this `take` is done (`Take.end`).
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `isDone` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.isDone
+```
 
 **Signature**
 

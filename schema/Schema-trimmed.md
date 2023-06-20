@@ -5,7 +5,14 @@ Verifies that a string contains no leading or trailing whitespaces.
 Note. This combinator does not make any transformations, it only validates.
 If what you were looking for was a combinator to trim strings, then check out the `trim` combinator.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `trimmed` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.trimmed
+```
 
 **Signature**
 

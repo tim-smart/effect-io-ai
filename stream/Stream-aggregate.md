@@ -12,7 +12,14 @@ completion.
 Any sink can be used here, but see `Sink.foldWeightedEffect` and
 `Sink.foldUntilEffect` for sinks that cover the common usecases.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `aggregate` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.aggregate
+```
 
 **Signature**
 

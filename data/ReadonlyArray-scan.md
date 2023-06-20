@@ -2,7 +2,14 @@
 
 Reduce an `Iterable` from the left, keeping all intermediate results instead of only the final result.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `scan` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.scan
+```
 
 **Signature**
 

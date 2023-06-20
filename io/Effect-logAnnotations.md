@@ -2,7 +2,14 @@
 
 Retrieves the log annotations associated with the current scope.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `logAnnotations` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.logAnnotations
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Applies the specified mapping function to each element of the list.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `map` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.map
+```
 
 **Signature**
 

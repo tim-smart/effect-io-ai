@@ -4,7 +4,14 @@ More powerful version of `Stream.broadcast`. Allows to provide a function
 that determines what queues should receive which elements. The decide
 function will receive the indices of the queues in the resulting list.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `distributedWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.distributedWith
+```
 
 **Signature**
 

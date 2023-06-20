@@ -3,7 +3,14 @@
 Constructs a `Arrat` by repeatedly applying the effectual function `f` as
 long as it returns `Some`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unfold` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unfold
+```
 
 **Signature**
 

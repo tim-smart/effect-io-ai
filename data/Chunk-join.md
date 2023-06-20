@@ -2,7 +2,14 @@
 
 Joins the elements together with "sep" in the middle.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `join` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.join
+```
 
 **Signature**
 

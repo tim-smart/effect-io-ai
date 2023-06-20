@@ -2,4 +2,11 @@
 
 The base interface that all `Queue`s must implement.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `BaseQueue` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.BaseQueue
+```

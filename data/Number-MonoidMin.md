@@ -4,7 +4,14 @@ A `Monoid` that uses the minimum between two values.
 
 The `empty` value is `-Infinity`.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `MonoidMin` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.MonoidMin
+```
 
 **Example**
 

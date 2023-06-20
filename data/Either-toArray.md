@@ -4,7 +4,14 @@ Transforms an `Either` into an `Array`.
 If the input is `Left`, an empty array is returned.
 If the input is `Right`, the value is wrapped in an array.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `toArray` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.toArray
+```
 
 **Example**
 

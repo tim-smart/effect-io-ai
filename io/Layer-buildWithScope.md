@@ -6,7 +6,14 @@ has been extended. This allows building layers where the lifetime of some of
 the services output by the layer exceed the lifetime of the effect the
 layer is provided to.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `buildWithScope` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.buildWithScope
+```
 
 **Signature**
 

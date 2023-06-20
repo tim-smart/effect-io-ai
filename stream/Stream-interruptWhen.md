@@ -8,7 +8,14 @@ in-progress element being pulled from upstream.
 If the effect completes with a failure before the stream completes, the
 returned stream will emit that failure.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `interruptWhen` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.interruptWhen
+```
 
 **Signature**
 

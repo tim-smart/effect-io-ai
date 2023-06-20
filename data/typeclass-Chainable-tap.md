@@ -2,7 +2,14 @@
 
 Returns an effect that effectfully "peeks" at the success of this effect.
 
-Part of the `Chainable` module, imported from `@effect/data/typeclass/Chainable`.
+To import and use `tap` from the "Chainable" module:
+
+```ts
+import * as Chainable from '@effect/data/typeclass/Chainable'
+
+// Can be accessed like this
+Chainable.tap
+```
 
 **Signature**
 

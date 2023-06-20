@@ -2,7 +2,14 @@
 
 Creates a stream from a `Channel`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `fromChannel` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.fromChannel
+```
 
 **Signature**
 

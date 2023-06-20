@@ -2,7 +2,14 @@
 
 The empty string `""`.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `empty` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.empty
+```
 
 **Signature**
 

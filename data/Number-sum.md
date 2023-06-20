@@ -2,7 +2,14 @@
 
 Provides an addition operation on `number`s.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `sum` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.sum
+```
 
 **Example**
 

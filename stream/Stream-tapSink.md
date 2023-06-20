@@ -3,7 +3,14 @@
 Sends all elements emitted by this stream to the specified sink in addition
 to emitting them.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `tapSink` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.tapSink
+```
 
 **Signature**
 

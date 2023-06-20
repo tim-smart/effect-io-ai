@@ -4,7 +4,14 @@ Like `Stream.unfold`, but allows the emission of values to end one step further
 than the unfolding of the state. This is useful for embedding paginated
 APIs, hence the name.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `paginate` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.paginate
+```
 
 **Signature**
 

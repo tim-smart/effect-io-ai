@@ -4,7 +4,14 @@ Returns an effect that executes both this effect and the specified effect,
 in parallel, combining their results with the specified `f` function. If
 both sides fail, then the cause will be combined.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validateWithPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validateWithPar
+```
 
 **Signature**
 

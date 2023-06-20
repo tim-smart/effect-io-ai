@@ -3,7 +3,14 @@
 Returns an effect that races this effect with the specified effect, calling
 the specified finisher as soon as one result or the other has been computed.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `raceWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.raceWith
+```
 
 **Signature**
 

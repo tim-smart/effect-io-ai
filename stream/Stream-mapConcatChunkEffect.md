@@ -3,7 +3,14 @@
 Effectfully maps each element to a chunk, and flattens the chunks into the
 output of this stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapConcatChunkEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapConcatChunkEffect
+```
 
 **Signature**
 

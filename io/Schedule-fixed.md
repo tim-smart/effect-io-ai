@@ -11,7 +11,14 @@ action will be run immediately, but re-runs will not "pile up".
 |---------action--------||action|-----|action|-----------|
 ```
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `fixed` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.fixed
+```
 
 **Signature**
 

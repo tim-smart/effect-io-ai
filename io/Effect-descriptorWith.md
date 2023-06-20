@@ -2,7 +2,14 @@
 
 Constructs an effect based on information about the current `Fiber`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `descriptorWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.descriptorWith
+```
 
 **Signature**
 

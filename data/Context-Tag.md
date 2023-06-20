@@ -8,7 +8,14 @@ key will map to the same instance.
 Note: this is useful for cases where live reload can happen and it is
 desireable to preserve the instance across reloads.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `Tag` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.Tag
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Returns two splits of this chunk at the specified index.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `splitAt` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.splitAt
+```
 
 **Signature**
 

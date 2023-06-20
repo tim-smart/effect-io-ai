@@ -5,7 +5,14 @@ effect. Note that if acquisition fails, then the returned effect will fail
 for that same reason. Retrying a failed acquisition attempt will repeat the
 acquisition attempt.
 
-Part of the `KeyedPool` module, imported from `@effect/io/KeyedPool`.
+To import and use `get` from the "KeyedPool" module:
+
+```ts
+import * as KeyedPool from '@effect/io/KeyedPool'
+
+// Can be accessed like this
+KeyedPool.get
+```
 
 **Signature**
 

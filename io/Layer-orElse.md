@@ -3,7 +3,14 @@
 Executes this layer and returns its output, if it succeeds, but otherwise
 executes the specified layer.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `orElse` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.orElse
+```
 
 **Signature**
 

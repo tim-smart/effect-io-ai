@@ -4,7 +4,14 @@
 
 The `empty` value is `1n`.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `bigintMultiply` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.bigintMultiply
+```
 
 **Signature**
 

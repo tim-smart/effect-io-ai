@@ -3,7 +3,14 @@
 Lazily constructs a layer. This is useful to avoid infinite recursion when
 creating layers that refer to themselves.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `suspend` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.suspend
+```
 
 **Signature**
 

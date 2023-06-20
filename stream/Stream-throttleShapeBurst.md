@@ -2,7 +2,14 @@
 
 Like `throttleShape`, but with a configurable `burst` parameter.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `throttleShapeBurst` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.throttleShapeBurst
+```
 
 **Signature**
 

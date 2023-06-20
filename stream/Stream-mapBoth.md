@@ -3,7 +3,14 @@
 Returns a stream whose failure and success channels have been mapped by the
 specified pair of functions, `f` and `g`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapBoth` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapBoth
+```
 
 **Signature**
 

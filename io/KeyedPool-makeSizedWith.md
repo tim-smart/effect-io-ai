@@ -7,7 +7,14 @@ will be released in some unspecified order.
 
 The size of the underlying pools can be configured per key.
 
-Part of the `KeyedPool` module, imported from `@effect/io/KeyedPool`.
+To import and use `makeSizedWith` from the "KeyedPool" module:
+
+```ts
+import * as KeyedPool from '@effect/io/KeyedPool'
+
+// Can be accessed like this
+KeyedPool.makeSizedWith
+```
 
 **Signature**
 

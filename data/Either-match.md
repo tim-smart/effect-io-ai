@@ -3,7 +3,14 @@
 Takes two functions and an `Either` value, if the value is a `Left` the inner value is applied to the first function,
 if the value is a `Right` the inner value is applied to the second function.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `match` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.match
+```
 
 **Example**
 

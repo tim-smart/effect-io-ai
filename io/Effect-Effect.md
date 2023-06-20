@@ -12,4 +12,11 @@ interruption, structured concurrency, and high scalability.
 To run an `Effect` value, you need a `Runtime`, which is a type that is capable
 of executing `Effect` values.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `Effect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.Effect
+```

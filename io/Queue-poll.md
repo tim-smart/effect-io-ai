@@ -3,7 +3,14 @@
 Returns the first value in the `Queue` as a `Some<A>`, or `None` if the queue
 is empty.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `poll` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.poll
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Executes this workflow when value of the specified `FiberRef` satisfies the
 predicate.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `whenFiberRef` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.whenFiberRef
+```
 
 **Signature**
 

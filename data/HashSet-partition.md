@@ -6,7 +6,14 @@ If a value matches the predicate, it will be placed into the `HashSet` on the
 right side of the resulting `Tuple`, otherwise the value will be placed into
 the left side.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `partition` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.partition
+```
 
 **Signature**
 

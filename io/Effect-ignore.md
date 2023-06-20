@@ -2,7 +2,14 @@
 
 Returns a new effect that ignores the success or failure of this effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `ignore` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.ignore
+```
 
 **Signature**
 

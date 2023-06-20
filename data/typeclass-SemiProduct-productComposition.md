@@ -2,7 +2,14 @@
 
 Returns a default `product` composition.
 
-Part of the `SemiProduct` module, imported from `@effect/data/typeclass/SemiProduct`.
+To import and use `productComposition` from the "SemiProduct" module:
+
+```ts
+import * as SemiProduct from '@effect/data/typeclass/SemiProduct'
+
+// Can be accessed like this
+SemiProduct.productComposition
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Constructs a layer that dies with the specified defect.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `die` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.die
+```
 
 **Signature**
 

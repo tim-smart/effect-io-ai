@@ -3,7 +3,14 @@
 Returns a new schedule that first executes this schedule to completion, and
 then executes the specified schedule to completion.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `andThenEither` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.andThenEither
+```
 
 **Signature**
 

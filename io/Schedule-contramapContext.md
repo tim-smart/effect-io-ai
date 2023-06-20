@@ -3,7 +3,14 @@
 Transforms the context being provided to this schedule with the
 specified function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `contramapContext` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.contramapContext
+```
 
 **Signature**
 

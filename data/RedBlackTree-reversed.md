@@ -2,7 +2,14 @@
 
 Traverse the tree in reverse order.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `reversed` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.reversed
+```
 
 **Signature**
 

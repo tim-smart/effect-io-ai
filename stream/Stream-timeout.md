@@ -2,7 +2,14 @@
 
 Ends the stream if it does not produce a value after the specified duration.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `timeout` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.timeout
+```
 
 **Signature**
 

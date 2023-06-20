@@ -3,7 +3,14 @@
 Returns a stream made of the concatenation in strict order of all the
 streams produced by passing each element of this stream to `f0`
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flatMap` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flatMap
+```
 
 **Signature**
 

@@ -7,7 +7,14 @@ It triggers at zero hour of the day. Producing a count of repeats: 0, 1, 2.
 
 NOTE: `day` parameter is validated lazily. Must be in range 1...31.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `dayOfMonth` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.dayOfMonth
+```
 
 **Signature**
 

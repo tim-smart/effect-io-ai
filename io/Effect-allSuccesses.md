@@ -3,7 +3,14 @@
 Evaluate and run each effect in the structure and collect the results,
 discarding results from failed effects.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `allSuccesses` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.allSuccesses
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Takes a struct of `Option`s and returns an `Option` of a struct of values.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `struct` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.struct
+```
 
 **Example**
 

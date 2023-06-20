@@ -4,7 +4,14 @@ A useful recursion pattern for processing an `Iterable` to produce a new `Array`
 `Iterable`. Typically chop is called with some function that will consume an initial prefix of the `Iterable` and produce a
 value and the rest of the `Array`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `chop` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.chop
+```
 
 **Signature**
 

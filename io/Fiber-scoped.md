@@ -3,7 +3,14 @@
 Converts this fiber into a scoped effect. The fiber is interrupted when the
 scope is closed.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `scoped` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.scoped
+```
 
 **Signature**
 

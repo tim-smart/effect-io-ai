@@ -4,7 +4,14 @@ The `JsonNumber` is a schema for representing JSON numbers. It ensures that the 
 number by filtering out `NaN` and `(+/-) Infinity`. This is useful when you want to validate and represent numbers in JSON
 format.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `JsonNumber` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.JsonNumber
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Finds the value in the tree associated with the specified key, if it exists.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `findFirst` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.findFirst
+```
 
 **Signature**
 

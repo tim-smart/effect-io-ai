@@ -3,7 +3,14 @@
 Applies a patch to an old value to produce a new value that is equal to the
 old value with the updates described by the patch.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `patch` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.patch
+```
 
 **Signature**
 

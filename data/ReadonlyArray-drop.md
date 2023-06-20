@@ -4,7 +4,14 @@ Drop a max number of elements from the start of an `Iterable`, creating a new `A
 
 **Note**. `n` is normalized to a non negative integer.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `drop` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.drop
+```
 
 **Signature**
 

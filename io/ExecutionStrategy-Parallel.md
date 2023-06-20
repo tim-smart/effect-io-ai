@@ -2,4 +2,11 @@
 
 Execute effects in parallel.
 
-Part of the `ExecutionStrategy` module, imported from `@effect/io/ExecutionStrategy`.
+To import and use `Parallel` from the "ExecutionStrategy" module:
+
+```ts
+import * as ExecutionStrategy from '@effect/io/ExecutionStrategy'
+
+// Can be accessed like this
+ExecutionStrategy.Parallel
+```

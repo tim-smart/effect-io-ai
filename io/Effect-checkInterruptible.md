@@ -3,7 +3,14 @@
 Checks the interrupt status, and produces the effect returned by the
 specified callback.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `checkInterruptible` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.checkInterruptible
+```
 
 **Signature**
 

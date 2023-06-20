@@ -3,7 +3,14 @@
 Runs both sinks in parallel on the input, using the specified merge
 function as soon as one result or the other has been computed.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `raceWith` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.raceWith
+```
 
 **Signature**
 

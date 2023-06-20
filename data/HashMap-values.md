@@ -2,7 +2,14 @@
 
 Returns an `IterableIterator` of the values within the `HashMap`.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `values` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.values
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Combines two map patches to produce a new map patch that describes
 applying their changes sequentially.
 
-Part of the `HashMapPatch` module, imported from `@effect/data/Differ/HashMapPatch`.
+To import and use `combine` from the "HashMapPatch" module:
+
+```ts
+import * as HashMapPatch from '@effect/data/Differ/HashMapPatch'
+
+// Can be accessed like this
+HashMapPatch.combine
+```
 
 **Signature**
 

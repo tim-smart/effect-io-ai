@@ -6,7 +6,14 @@ other stream.
 The provided default value will be used if this stream ends before the
 other one.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zipAllRight` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zipAllRight
+```
 
 **Signature**
 

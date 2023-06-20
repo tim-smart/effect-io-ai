@@ -4,7 +4,14 @@ Forks this collection of fiber refs as the specified child fiber id. This
 will potentially modify the value of the fiber refs, as determined by the
 individual fiber refs that make up the collection.
 
-Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+To import and use `forkAs` from the "FiberRefs" module:
+
+```ts
+import * as FiberRefs from '@effect/io/FiberRefs'
+
+// Can be accessed like this
+FiberRefs.forkAs
+```
 
 **Signature**
 

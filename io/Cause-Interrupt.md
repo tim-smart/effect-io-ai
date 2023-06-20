@@ -3,4 +3,11 @@
 The `Interrupt` cause represents failure due to `Fiber` interruption, which
 contains the `FiberId` of the interrupted `Fiber`.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `Interrupt` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.Interrupt
+```

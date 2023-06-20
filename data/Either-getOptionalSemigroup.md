@@ -3,7 +3,14 @@
 Semigroup that models the combination of values that may be absent, elements that are `Left` are ignored
 while elements that are `Right` are combined using the provided `Semigroup`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getOptionalSemigroup` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getOptionalSemigroup
+```
 
 **Signature**
 

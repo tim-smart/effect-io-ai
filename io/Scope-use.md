@@ -5,7 +5,14 @@ guaranteeing that the scope is closed with the result of that workflow as
 soon as the workflow completes execution, whether by success, failure, or
 interruption.
 
-Part of the `Scope` module, imported from `@effect/io/Scope`.
+To import and use `use` from the "Scope" module:
+
+```ts
+import * as Scope from '@effect/io/Scope'
+
+// Can be accessed like this
+Scope.use
+```
 
 **Signature**
 

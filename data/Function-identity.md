@@ -2,7 +2,14 @@
 
 The identity function, i.e. A function that returns its input argument.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `identity` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.identity
+```
 
 **Example**
 

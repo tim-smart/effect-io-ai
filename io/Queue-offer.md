@@ -2,7 +2,14 @@
 
 Places one value in the queue.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `offer` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.offer
+```
 
 **Signature**
 

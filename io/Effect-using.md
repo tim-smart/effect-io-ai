@@ -3,7 +3,14 @@
 Scopes all resources acquired by `resource` to the lifetime of `use`
 without effecting the scope of any resources acquired by `use`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `using` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.using
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a `Some<Cause<E>>` if the specified exit is a `Failure`, `None`
 otherwise.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `causeOption` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.causeOption
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Get a monoid where `combine` will return the maximum, based on the provided boun
 
 The `empty` value is the `minimum` value.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `max` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.max
+```
 
 **Signature**
 

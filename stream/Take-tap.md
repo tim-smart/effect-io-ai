@@ -2,7 +2,14 @@
 
 Returns an effect that effectfully "peeks" at the success of this take.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `tap` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.tap
+```
 
 **Signature**
 

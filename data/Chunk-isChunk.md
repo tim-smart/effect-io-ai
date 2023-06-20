@@ -2,7 +2,14 @@
 
 Checks if `u` is a `Chunk<unknown>`
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `isChunk` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.isChunk
+```
 
 **Signature**
 

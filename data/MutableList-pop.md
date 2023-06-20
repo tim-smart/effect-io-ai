@@ -2,7 +2,14 @@
 
 Removes the last value from the list and returns it, if it exists.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `pop` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.pop
+```
 
 **Signature**
 

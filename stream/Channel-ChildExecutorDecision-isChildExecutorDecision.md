@@ -3,7 +3,14 @@
 Returns `true` if the specified value is a `ChildExecutorDecision`, `false`
 otherwise.
 
-Part of the `ChildExecutorDecision` module, imported from `@effect/stream/Channel/ChildExecutorDecision`.
+To import and use `isChildExecutorDecision` from the "ChildExecutorDecision" module:
+
+```ts
+import * as ChildExecutorDecision from '@effect/stream/Channel/ChildExecutorDecision'
+
+// Can be accessed like this
+ChildExecutorDecision.isChildExecutorDecision
+```
 
 **Signature**
 

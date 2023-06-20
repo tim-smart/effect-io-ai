@@ -2,7 +2,14 @@
 
 Test whether one value is _strictly greater than_ another.
 
-Part of the `Order` module, imported from `@effect/data/typeclass/Order`.
+To import and use `greaterThan` from the "Order" module:
+
+```ts
+import * as Order from '@effect/data/typeclass/Order'
+
+// Can be accessed like this
+Order.greaterThan
+```
 
 **Signature**
 

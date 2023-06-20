@@ -4,7 +4,14 @@ Creates a sink that folds elements of type `In` into a structure of type
 `S`, until `max` worth of elements (determined by the `costFn`) have been
 folded.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `foldWeighted` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.foldWeighted
+```
 
 **Signature**
 

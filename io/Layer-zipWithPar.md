@@ -4,7 +4,14 @@ Combines this layer the specified layer, producing a new layer that has the
 inputs of both, and the outputs of both combined using the specified
 function.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `zipWithPar` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.zipWithPar
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Makes a new reloadable service from a layer that describes the construction
 of a static service.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `manual` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.manual
+```
 
 **Signature**
 

@@ -2,4 +2,11 @@
 
 An `Intervals` represents a list of several `Interval`s.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `Intervals` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.Intervals
+```

@@ -2,7 +2,14 @@
 
 Constructs a config which contains the specified lazy value.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `sync` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.sync
+```
 
 **Signature**
 

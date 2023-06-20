@@ -6,7 +6,14 @@ processing of elements by allowing the token bucket to accumulate tokens up
 to a `units + burst` threshold. The weight of each chunk is determined by
 the `costFn` effectful function.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `throttleShapeEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.throttleShapeEffect
+```
 
 **Signature**
 

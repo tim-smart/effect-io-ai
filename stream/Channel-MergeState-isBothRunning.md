@@ -3,7 +3,14 @@
 Returns `true` if the specified `MergeState` is a `BothRunning`, `false`
 otherwise.
 
-Part of the `MergeState` module, imported from `@effect/stream/Channel/MergeState`.
+To import and use `isBothRunning` from the "MergeState" module:
+
+```ts
+import * as MergeState from '@effect/stream/Channel/MergeState'
+
+// Can be accessed like this
+MergeState.isBothRunning
+```
 
 **Signature**
 

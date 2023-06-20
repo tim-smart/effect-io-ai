@@ -3,7 +3,14 @@
 Allows a faster producer to progress independently of a slower consumer by
 buffering up to `capacity` elements in a dropping queue.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `bufferDropping` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.bufferDropping
+```
 
 **Signature**
 

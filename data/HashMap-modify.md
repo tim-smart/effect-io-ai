@@ -2,7 +2,14 @@
 
 Updates the value of the specified key within the `HashMap` if it exists.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `modify` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.modify
+```
 
 **Signature**
 

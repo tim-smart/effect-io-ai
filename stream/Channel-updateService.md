@@ -2,7 +2,14 @@
 
 Updates a service in the context of this channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `updateService` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.updateService
+```
 
 **Signature**
 

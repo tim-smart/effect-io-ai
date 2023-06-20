@@ -2,7 +2,14 @@
 
 Returns every elements after the first.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `tailNonEmpty` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.tailNonEmpty
+```
 
 **Signature**
 

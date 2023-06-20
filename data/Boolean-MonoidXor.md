@@ -4,7 +4,14 @@
 
 The `empty` value is `false`.
 
-Part of the `Boolean` module, imported from `@effect/data/Boolean`.
+To import and use `MonoidXor` from the "Boolean" module:
+
+```ts
+import * as Boolean from '@effect/data/Boolean'
+
+// Can be accessed like this
+Boolean.MonoidXor
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a effect that will never produce anything. The moral equivalent of
 `while(true) {}`, only without the wasted CPU cycles.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `never` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.never
+```
 
 **Signature**
 

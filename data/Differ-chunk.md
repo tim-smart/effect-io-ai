@@ -3,7 +3,14 @@
 Constructs a differ that knows how to diff a `Chunk` of values given a
 differ that knows how to diff the values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `chunk` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.chunk
+```
 
 **Signature**
 

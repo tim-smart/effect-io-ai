@@ -3,7 +3,14 @@
 Returns `true` if this `Interval` is less than `that` interval, `false`
 otherwise.
 
-Part of the `Interval` module, imported from `@effect/io/Schedule/Interval`.
+To import and use `lessThan` from the "Interval" module:
+
+```ts
+import * as Interval from '@effect/io/Schedule/Interval'
+
+// Can be accessed like this
+Interval.lessThan
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Retrieves the current value of the scoped reference.
 
-Part of the `ScopedRef` module, imported from `@effect/io/ScopedRef`.
+To import and use `get` from the "ScopedRef" module:
+
+```ts
+import * as ScopedRef from '@effect/io/ScopedRef'
+
+// Can be accessed like this
+ScopedRef.get
+```
 
 **Signature**
 

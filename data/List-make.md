@@ -2,7 +2,14 @@
 
 Constructs a new `List<A>` from the specified values.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `make` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.make
+```
 
 **Signature**
 

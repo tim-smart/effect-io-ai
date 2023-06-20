@@ -4,7 +4,14 @@ Returns the remainder left over when one operand is divided by a second operand.
 
 It always takes the sign of the dividend.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `remainder` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.remainder
+```
 
 **Example**
 

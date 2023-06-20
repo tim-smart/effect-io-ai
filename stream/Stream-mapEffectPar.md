@@ -4,7 +4,14 @@ Maps over elements of the stream with the specified effectful function,
 executing up to `n` invocations of `f` concurrently. Transformed elements
 will be emitted in the original order.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapEffectPar` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapEffectPar
+```
 
 **Signature**
 

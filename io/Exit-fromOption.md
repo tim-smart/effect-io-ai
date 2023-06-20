@@ -2,7 +2,14 @@
 
 Converts an `Option<A>` into an `Exit<void, A>`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `fromOption` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.fromOption
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Constructs a new `List<A>` from the specified value.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `of` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.of
+```
 
 **Signature**
 

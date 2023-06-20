@@ -5,7 +5,14 @@ element evaluated to true and the second one will contain all element
 evaluated to false. The faster stream may advance by up to buffer elements
 further than the slower one.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `partition` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.partition
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns a `Semigroup` for `ReadonlyArray<A>`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `getSemigroup` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.getSemigroup
+```
 
 **Signature**
 

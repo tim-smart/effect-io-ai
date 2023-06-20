@@ -3,7 +3,14 @@
 Returns a collection of all `FiberRef` values for the fiber running this
 effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `getFiberRefs` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.getFiberRefs
+```
 
 **Signature**
 

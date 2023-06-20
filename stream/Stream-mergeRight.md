@@ -3,7 +3,14 @@
 Merges this stream and the specified stream together, discarding the values
 from the left stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mergeRight` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mergeRight
+```
 
 **Signature**
 

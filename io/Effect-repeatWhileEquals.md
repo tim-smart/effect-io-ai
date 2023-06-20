@@ -3,7 +3,14 @@
 Repeats this effect for as long as its value is equal to the specified
 value or until the first failure.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `repeatWhileEquals` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.repeatWhileEquals
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns a new `MetricKey` with the specified tags appended.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `taggedWithLabelSet` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.taggedWithLabelSet
+```
 
 **Signature**
 

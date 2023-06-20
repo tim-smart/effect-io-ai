@@ -3,7 +3,14 @@
 Returns the stream when the given partial function is defined for the given
 effectful value, otherwise returns an empty stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `whenCaseEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.whenCaseEffect
+```
 
 **Signature**
 

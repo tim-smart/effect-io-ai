@@ -3,7 +3,14 @@
 Returns `true` if the specified `UpstreamPullRequest` is a `Pulled`, `false`
 otherwise.
 
-Part of the `UpstreamPullRequest` module, imported from `@effect/stream/Channel/UpstreamPullRequest`.
+To import and use `isPulled` from the "UpstreamPullRequest" module:
+
+```ts
+import * as UpstreamPullRequest from '@effect/stream/Channel/UpstreamPullRequest'
+
+// Can be accessed like this
+UpstreamPullRequest.isPulled
+```
 
 **Signature**
 

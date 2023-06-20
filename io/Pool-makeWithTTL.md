@@ -29,7 +29,14 @@ Effect.scoped(
 )
 ```
 
-Part of the `Pool` module, imported from `@effect/io/Pool`.
+To import and use `makeWithTTL` from the "Pool" module:
+
+```ts
+import * as Pool from '@effect/io/Pool'
+
+// Can be accessed like this
+Pool.makeWithTTL
+```
 
 **Signature**
 

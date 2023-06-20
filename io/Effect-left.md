@@ -3,7 +3,14 @@
 "Zooms in" on the value in the `Left` side of an `Either`, moving the
 possibility that the value is a `Right` to the error channel.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `left` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.left
+```
 
 **Signature**
 

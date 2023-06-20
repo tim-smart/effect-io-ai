@@ -4,7 +4,14 @@ Extracts the value of an `Either` or throws if the `Either` is `Left`.
 
 If a default error is sufficient for your use case and you don't need to configure the thrown error, see {@link getOrThrow}.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getOrThrowWith` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getOrThrowWith
+```
 
 **Example**
 

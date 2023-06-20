@@ -2,7 +2,14 @@
 
 Partitions a `ReadonlyRecord` into two separate `Record`s based on the result of a predicate function.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `partition` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.partition
+```
 
 **Example**
 

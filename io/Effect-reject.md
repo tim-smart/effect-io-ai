@@ -3,7 +3,14 @@
 Fail with the returned value if the `PartialFunction` matches, otherwise
 continue with our held value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `reject` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.reject
+```
 
 **Signature**
 

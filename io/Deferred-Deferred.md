@@ -8,4 +8,11 @@ calling `Deferred.await`) and automatically resume when the variable is set.
 require the coordinated action of multiple fibers, and for building
 higher-level concurrent or asynchronous structures.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `Deferred` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.Deferred
+```

@@ -3,7 +3,14 @@
 Runs the specified effect if this effect fails, providing the error to the
 effect if it exists. The provided effect will not be interrupted.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `onError` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.onError
+```
 
 **Signature**
 

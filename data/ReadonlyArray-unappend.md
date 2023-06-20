@@ -2,7 +2,14 @@
 
 Return a tuple containing a copy of the `NonEmptyReadonlyArray` without its last element, and that last element.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `unappend` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.unappend
+```
 
 **Signature**
 

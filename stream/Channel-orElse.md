@@ -4,7 +4,14 @@ Returns a new channel that will perform the operations of this one, until
 failure, and then it will switch over to the operations of the specified
 fallback channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `orElse` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.orElse
+```
 
 **Signature**
 

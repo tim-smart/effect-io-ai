@@ -2,7 +2,14 @@
 
 Apply a function to a given value.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `apply` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.apply
+```
 
 **Example**
 

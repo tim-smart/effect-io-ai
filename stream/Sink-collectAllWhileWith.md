@@ -3,7 +3,14 @@
 Repeatedly runs the sink for as long as its results satisfy the predicate
 `p`. The sink's results will be accumulated using the stepping function `f`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `collectAllWhileWith` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.collectAllWhileWith
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Return the number of elements in a `ReadonlyArray`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `length` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.length
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Maps over the values of the `HashMap` using the specified partial function
 and filters out `None` values.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `filterMap` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.filterMap
+```
 
 **Signature**
 

@@ -10,7 +10,14 @@ pipe(Stream.make(1, 2, 3, 4), Stream.sliding(2), Stream.runCollect)
 // => Chunk(Chunk(1, 2), Chunk(2, 3), Chunk(3, 4))
 ```
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `sliding` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.sliding
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Makes a new reloadable service from a layer that describes the construction
 of a static service. The service is automatically reloaded according to a
 schedule, which is extracted from the input to the layer.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `autoFromConfig` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.autoFromConfig
+```
 
 **Signature**
 

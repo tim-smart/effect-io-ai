@@ -3,7 +3,14 @@
 Filters the specified effect with the provided function returning the value
 of the effect if it is successful, otherwise returns the value of `orElse`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `filterOrElseWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.filterOrElseWith
+```
 
 **Signature**
 

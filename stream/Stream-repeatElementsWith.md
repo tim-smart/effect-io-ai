@@ -11,7 +11,14 @@ This function accepts two conversion functions, which allow the output of
 this stream and the output of the provided schedule to be unified into a
 single type. For example, `Either` or similar data type.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatElementsWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatElementsWith
+```
 
 **Signature**
 

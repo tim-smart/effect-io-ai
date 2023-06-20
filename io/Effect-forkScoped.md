@@ -2,7 +2,14 @@
 
 Forks the fiber in a `Scope`, interrupting it when the scope is closed.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forkScoped` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forkScoped
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Filter values inside a context.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `traverseFilter` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.traverseFilter
+```
 
 **Signature**
 

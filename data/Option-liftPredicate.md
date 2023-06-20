@@ -3,7 +3,14 @@
 Transforms a `Predicate` function into a `Some` of the input value if the predicate returns `true` or `None`
 if the predicate returns `false`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `liftPredicate` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.liftPredicate
+```
 
 **Example**
 

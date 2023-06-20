@@ -7,7 +7,14 @@ The `empty` value of the returned `Monoid` is a struct where each property is th
 
 It is useful when you need to combine two structs of the same type and you have a specific way of combining each property of the struct.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `struct` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.struct
+```
 
 **Signature**
 

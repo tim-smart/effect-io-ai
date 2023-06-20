@@ -4,7 +4,14 @@ Splits the sink on the specified predicate, returning a new sink that
 consumes elements until an element after the first satisfies the specified
 predicate.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `splitWhere` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.splitWhere
+```
 
 **Signature**
 

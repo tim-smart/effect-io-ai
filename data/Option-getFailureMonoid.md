@@ -8,7 +8,14 @@ The `empty` value is `some(M.empty)`.
 
 See also `getFailureSemigroup` if you need a `Semigroup` instead of a `Monoid`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getFailureMonoid` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getFailureMonoid
+```
 
 **Signature**
 

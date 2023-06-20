@@ -9,7 +9,14 @@ an array of strings with a separator string in between.
 It is interesting to note that there is no equivalent API in the `Monoid` module. This is because the value `empty`,
 which is required for the `Monoid` interface, cannot exist.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `intercalate` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.intercalate
+```
 
 **Example**
 

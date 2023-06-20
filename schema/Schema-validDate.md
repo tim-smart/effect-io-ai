@@ -2,7 +2,14 @@
 
 A filter excluding invalid dates (e.g. `new Date("fail")`).
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `validDate` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.validDate
+```
 
 **Signature**
 

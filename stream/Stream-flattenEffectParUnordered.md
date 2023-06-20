@@ -4,7 +4,14 @@ Flattens `Effect` values into the stream's structure, preserving all
 information about the effect. The element order is
 not enforced by this combinator, and elements may be reordered.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenEffectParUnordered` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenEffectParUnordered
+```
 
 **Signature**
 

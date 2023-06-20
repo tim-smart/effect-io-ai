@@ -2,7 +2,14 @@
 
 Converts the provided `RuntimeFlags` into a `ReadonlySet<number>`.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `toSet` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.toSet
+```
 
 **Signature**
 

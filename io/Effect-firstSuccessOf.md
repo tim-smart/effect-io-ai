@@ -9,7 +9,14 @@ This function is sequential, meaning that the `Effect` values in the
 iterable will be executed in sequence, and the first one that succeeds
 will determine the outcome of the resulting `Effect` value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `firstSuccessOf` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.firstSuccessOf
+```
 
 **Signature**
 

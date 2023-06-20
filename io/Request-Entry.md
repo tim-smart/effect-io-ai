@@ -6,4 +6,11 @@ type. This is used internally by the library to support data sources that
 return different result types for different requests while guaranteeing that
 results will be of the type requested.
 
-Part of the `Request` module, imported from `@effect/io/Request`.
+To import and use `Entry` from the "Request" module:
+
+```ts
+import * as Request from '@effect/io/Request'
+
+// Can be accessed like this
+Request.Entry
+```

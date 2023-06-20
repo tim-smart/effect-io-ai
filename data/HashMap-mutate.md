@@ -2,7 +2,14 @@
 
 Mutates the `HashMap` within the context of the provided function.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `mutate` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.mutate
+```
 
 **Signature**
 

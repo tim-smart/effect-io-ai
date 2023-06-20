@@ -3,7 +3,14 @@
 Reduces the elements in the stream to a value of type `S`. Stops the fold
 early when the condition is not fulfilled. Example:
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runFoldWhile` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runFoldWhile
+```
 
 **Signature**
 

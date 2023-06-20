@@ -2,7 +2,14 @@
 
 Executes an effectful fold over the stream of values.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runFoldEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runFoldEffect
+```
 
 **Signature**
 

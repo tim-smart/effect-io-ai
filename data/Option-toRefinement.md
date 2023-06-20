@@ -3,7 +3,14 @@
 Returns a type guard from a `Option` returning function.
 This function ensures that a type guard definition is type-safe.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `toRefinement` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.toRefinement
+```
 
 **Example**
 

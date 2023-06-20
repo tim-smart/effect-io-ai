@@ -2,7 +2,14 @@
 
 Constructs a config for a string value.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `string` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.string
+```
 
 **Signature**
 

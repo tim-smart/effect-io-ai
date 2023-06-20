@@ -3,7 +3,14 @@
 Applies an `OrPatch` to a value to produce a new value which represents
 the original value updated with the changes described by this patch.
 
-Part of the `OrPatch` module, imported from `@effect/data/Differ/OrPatch`.
+To import and use `patch` from the "OrPatch" module:
+
+```ts
+import * as OrPatch from '@effect/data/Differ/OrPatch'
+
+// Can be accessed like this
+OrPatch.patch
+```
 
 **Signature**
 

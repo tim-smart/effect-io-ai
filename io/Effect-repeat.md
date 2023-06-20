@@ -6,7 +6,14 @@ to the first execution, so that `io.repeat(Schedule.once)` yields an effect
 that executes `io`, and then if that succeeds, executes `io` an additional
 time.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `repeat` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.repeat
+```
 
 **Signature**
 

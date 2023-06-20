@@ -4,7 +4,14 @@ Switches over to the stream produced by the provided function in case this
 one fails. Allows recovery from all causes of failure, including
 interruption if the stream is uninterruptible.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `catchAllCause` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.catchAllCause
+```
 
 **Signature**
 

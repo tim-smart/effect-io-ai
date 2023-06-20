@@ -2,7 +2,14 @@
 
 Find the first element which satisfies a predicate (or a refinement) function.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `findFirst` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.findFirst
+```
 
 **Signature**
 

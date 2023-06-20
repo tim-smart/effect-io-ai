@@ -3,7 +3,14 @@
 Creates a new channel which runs in parallel this and the other channel and
 when both succeeds finishes with the first one's done value.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `zipParLeft` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.zipParLeft
+```
 
 **Signature**
 

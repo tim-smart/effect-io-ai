@@ -6,7 +6,14 @@ result in a catchable error. Joining an interrupted fiber will result in an
 "inner interruption" of this fiber, unlike interruption triggered by
 another fiber, "inner interruption" can be caught and recovered.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `join` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.join
+```
 
 **Signature**
 

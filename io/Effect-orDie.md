@@ -3,7 +3,14 @@
 Translates effect failure into death of the fiber, making all failures
 unchecked and not a part of the type of the effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `orDie` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.orDie
+```
 
 **Signature**
 

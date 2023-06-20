@@ -2,7 +2,14 @@
 
 Creates a `RuntimeFlagsPatch` describing enabling the provided `RuntimeFlag`.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `enable` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.enable
+```
 
 **Signature**
 

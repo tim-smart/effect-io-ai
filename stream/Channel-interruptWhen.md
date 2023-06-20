@@ -8,7 +8,14 @@ On the other hand, if the underlying channel finishes first, then the
 returned channel will yield the success value of the underlying channel as
 its terminal value.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `interruptWhen` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.interruptWhen
+```
 
 **Signature**
 

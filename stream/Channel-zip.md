@@ -4,7 +4,14 @@ Returns a new channel that is the sequential composition of this channel
 and the specified channel. The returned channel terminates with a tuple of
 the terminal values of both channels.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `zip` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.zip
+```
 
 **Signature**
 

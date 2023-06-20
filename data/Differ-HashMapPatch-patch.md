@@ -4,7 +4,14 @@ Applies a map patch to a map of keys and values to produce a new map of
 keys and values values which represents the original map of keys and
 values updated with the changes described by this patch.
 
-Part of the `HashMapPatch` module, imported from `@effect/data/Differ/HashMapPatch`.
+To import and use `patch` from the "HashMapPatch" module:
+
+```ts
+import * as HashMapPatch from '@effect/data/Differ/HashMapPatch'
+
+// Can be accessed like this
+HashMapPatch.patch
+```
 
 **Signature**
 

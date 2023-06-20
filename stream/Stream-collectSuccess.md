@@ -2,7 +2,14 @@
 
 Filters any `Exit.Failure` values.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `collectSuccess` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.collectSuccess
+```
 
 **Signature**
 

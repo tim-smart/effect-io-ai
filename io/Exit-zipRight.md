@@ -3,7 +3,14 @@
 Sequentially zips the this result with the specified result discarding the
 first element of the tuple or else returns the failed `Cause<E | E2>`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `zipRight` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.zipRight
+```
 
 **Signature**
 

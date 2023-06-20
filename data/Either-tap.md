@@ -2,7 +2,14 @@
 
 Returns an effect that effectfully "peeks" at the success of this effect.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `tap` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.tap
+```
 
 **Signature**
 

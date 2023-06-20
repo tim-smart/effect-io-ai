@@ -2,7 +2,14 @@
 
 Retries constructing this layer according to the specified schedule.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `retry` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.retry
+```
 
 **Signature**
 

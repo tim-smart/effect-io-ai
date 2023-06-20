@@ -3,7 +3,14 @@
 A schedule that recurs as long as the effectful condition holds, collecting
 all inputs into a list.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `collectWhileEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.collectWhileEffect
+```
 
 **Signature**
 

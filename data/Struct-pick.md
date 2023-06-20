@@ -2,7 +2,14 @@
 
 Create a new object by picking properties of an existing object.
 
-Part of the `Struct` module, imported from `@effect/data/Struct`.
+To import and use `pick` from the "Struct" module:
+
+```ts
+import * as Struct from '@effect/data/Struct'
+
+// Can be accessed like this
+Struct.pick
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Returns the next integer value from the pseudo-random number generator.
 
-Part of the `Random` module, imported from `@effect/io/Random`.
+To import and use `nextInt` from the "Random" module:
+
+```ts
+import * as Random from '@effect/io/Random'
+
+// Can be accessed like this
+Random.nextInt
+```
 
 **Signature**
 

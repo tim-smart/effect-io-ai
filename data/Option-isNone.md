@@ -2,7 +2,14 @@
 
 Determine if a `Option` is a `None`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `isNone` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.isNone
+```
 
 **Example**
 

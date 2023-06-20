@@ -2,7 +2,14 @@
 
 Used to unify functions that would otherwise return `Effect<A, B, C> | Effect<D, E, F>`
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unifiedFn` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unifiedFn
+```
 
 **Signature**
 

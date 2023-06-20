@@ -3,7 +3,14 @@
 Finds the first element emitted by this stream that satisfies the provided
 predicate.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `find` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.find
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Splits the specified list into two lists at the specified index.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `splitAt` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.splitAt
+```
 
 **Signature**
 

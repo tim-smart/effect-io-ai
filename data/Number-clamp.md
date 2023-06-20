@@ -6,7 +6,14 @@ Restricts the given `number` to be within the range specified by the `minimum` a
 - If the `number` is greater than the `maximum` value, the function returns the `maximum` value.
 - Otherwise, it returns the original `number`.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `clamp` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.clamp
+```
 
 **Example**
 

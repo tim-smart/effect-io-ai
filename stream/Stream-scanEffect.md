@@ -3,7 +3,14 @@
 Statefully and effectfully maps over the elements of this stream to produce
 all intermediate results of type `S` given an initial S.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `scanEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.scanEffect
+```
 
 **Signature**
 

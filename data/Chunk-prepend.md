@@ -2,7 +2,14 @@
 
 Prepends the value to the chunk
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `prepend` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.prepend
+```
 
 **Signature**
 

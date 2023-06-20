@@ -5,7 +5,14 @@ configuration under the specified property name. This can be utilized to
 aggregate separate configuration sources that are all required to load a
 single configuration value.
 
-Part of the `Provider` module, imported from `@effect/io/Config/Provider`.
+To import and use `nested` from the "Provider" module:
+
+```ts
+import * as Provider from '@effect/io/Config/Provider'
+
+// Can be accessed like this
+Provider.nested
+```
 
 **Signature**
 

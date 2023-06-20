@@ -2,7 +2,14 @@
 
 `Monoid` that returns last maximum of elements.
 
-Part of the `Bounded` module, imported from `@effect/data/typeclass/Bounded`.
+To import and use `max` from the "Bounded" module:
+
+```ts
+import * as Bounded from '@effect/data/typeclass/Bounded'
+
+// Can be accessed like this
+Bounded.max
+```
 
 **Signature**
 

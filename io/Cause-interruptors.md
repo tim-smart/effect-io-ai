@@ -3,7 +3,14 @@
 Returns a `HashSet` of `FiberId`s for all fibers that interrupted the fiber
 described by the specified cause.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `interruptors` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.interruptors
+```
 
 **Signature**
 

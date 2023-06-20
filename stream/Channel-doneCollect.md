@@ -8,7 +8,14 @@ As the channel returned from this channel collects all of this channel's
 output into an in- memory chunk, it is not safe to call this method on
 channels that output a large or unbounded number of values.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `doneCollect` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.doneCollect
+```
 
 **Signature**
 

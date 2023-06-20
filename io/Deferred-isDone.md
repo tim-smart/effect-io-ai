@@ -3,7 +3,14 @@
 Returns `true` if this `Deferred` has already been completed with a value or
 an error, `false` otherwise.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `isDone` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.isDone
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Takes an iterable and a projection function and returns a record.
 The projection function maps each value of the iterable to a tuple of a key and a value, which is then added to the resulting record.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `fromIterable` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.fromIterable
+```
 
 **Example**
 

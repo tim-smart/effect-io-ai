@@ -4,7 +4,14 @@ Checks if a value is present in the `HashSet`. If it is present, the value
 will be removed from the `HashSet`, otherwise the value will be added to the
 `HashSet`.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `toggle` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.toggle
+```
 
 **Signature**
 

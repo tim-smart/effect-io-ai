@@ -3,7 +3,14 @@
 Closes a scope with the specified exit value, running all finalizers that
 have been added to the scope.
 
-Part of the `Scope` module, imported from `@effect/io/Scope`.
+To import and use `close` from the "Scope" module:
+
+```ts
+import * as Scope from '@effect/io/Scope'
+
+// Can be accessed like this
+Scope.close
+```
 
 **Signature**
 

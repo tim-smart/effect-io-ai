@@ -3,7 +3,14 @@
 Provides the sink with its required context, which eliminates its
 dependency on `R`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `provideContext` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.provideContext
+```
 
 **Signature**
 

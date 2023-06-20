@@ -2,7 +2,14 @@
 
 Same as `zip` but discards the output of that `Fiber`.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `zipLeft` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.zipLeft
+```
 
 **Signature**
 

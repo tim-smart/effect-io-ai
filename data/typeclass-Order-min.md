@@ -2,7 +2,14 @@
 
 Take the minimum of two values. If they are considered equal, the first argument is chosen.
 
-Part of the `Order` module, imported from `@effect/data/typeclass/Order`.
+To import and use `min` from the "Order" module:
+
+```ts
+import * as Order from '@effect/data/typeclass/Order'
+
+// Can be accessed like this
+Order.min
+```
 
 **Signature**
 

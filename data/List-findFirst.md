@@ -3,7 +3,14 @@
 Returns the first element of the specified list that satisfies the specified
 predicate, or `None` if no such element exists.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `findFirst` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.findFirst
+```
 
 **Signature**
 

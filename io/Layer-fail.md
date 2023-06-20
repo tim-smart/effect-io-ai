@@ -2,7 +2,14 @@
 
 Constructs a layer that fails with the specified error.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `fail` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.fail
+```
 
 **Signature**
 

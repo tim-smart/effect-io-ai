@@ -2,7 +2,14 @@
 
 Constructs a new `EntryStats` from the specified values.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `makeEntryStats` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.makeEntryStats
+```
 
 **Signature**
 

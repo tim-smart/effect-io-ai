@@ -3,7 +3,14 @@
 Returns `true` if the `RuntimeFlagsPatch` describes the specified
 `RuntimeFlag` as enabled.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `isEnabled` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.isEnabled
+```
 
 **Signature**
 

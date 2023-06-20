@@ -3,7 +3,14 @@
 Returns `true` if the specified `ChildExecutorDecision` is a `Close`, `false`
 otherwise.
 
-Part of the `ChildExecutorDecision` module, imported from `@effect/stream/Channel/ChildExecutorDecision`.
+To import and use `isClose` from the "ChildExecutorDecision" module:
+
+```ts
+import * as ChildExecutorDecision from '@effect/stream/Channel/ChildExecutorDecision'
+
+// Can be accessed like this
+ChildExecutorDecision.isClose
+```
 
 **Signature**
 

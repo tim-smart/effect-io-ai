@@ -2,7 +2,14 @@
 
 Returns a default `map` composition.
 
-Part of the `Covariant` module, imported from `@effect/data/typeclass/Covariant`.
+To import and use `mapComposition` from the "Covariant" module:
+
+```ts
+import * as Covariant from '@effect/data/typeclass/Covariant'
+
+// Can be accessed like this
+Covariant.mapComposition
+```
 
 **Signature**
 

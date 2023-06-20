@@ -9,7 +9,14 @@ state being specified by `s`.
 Where possible, prefer `Stream.combineChunks` for a more efficient
 implementation.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `combine` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.combine
+```
 
 **Signature**
 

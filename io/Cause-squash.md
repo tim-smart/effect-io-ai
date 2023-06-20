@@ -3,7 +3,14 @@
 Squashes a `Cause` down to a single defect, chosen to be the "most important"
 defect.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `squash` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.squash
+```
 
 **Signature**
 

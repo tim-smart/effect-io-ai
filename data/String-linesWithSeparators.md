@@ -3,7 +3,14 @@
 Returns an `IterableIterator` which yields each line contained within the
 string as well as the trailing newline character.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `linesWithSeparators` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.linesWithSeparators
+```
 
 **Signature**
 

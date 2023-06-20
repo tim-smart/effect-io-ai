@@ -5,7 +5,14 @@ scope by providing it to the workflow but not closing the scope when the
 workflow completes execution. This allows extending a scoped value into a
 larger scope.
 
-Part of the `Scope` module, imported from `@effect/io/Scope`.
+To import and use `extend` from the "Scope" module:
+
+```ts
+import * as Scope from '@effect/io/Scope'
+
+// Can be accessed like this
+Scope.extend
+```
 
 **Signature**
 

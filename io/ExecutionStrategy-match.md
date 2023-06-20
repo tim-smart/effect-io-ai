@@ -3,7 +3,14 @@
 Folds over the specified `ExecutionStrategy` using the provided case
 functions.
 
-Part of the `ExecutionStrategy` module, imported from `@effect/io/ExecutionStrategy`.
+To import and use `match` from the "ExecutionStrategy" module:
+
+```ts
+import * as ExecutionStrategy from '@effect/io/ExecutionStrategy'
+
+// Can be accessed like this
+ExecutionStrategy.match
+```
 
 **Signature**
 

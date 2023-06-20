@@ -2,4 +2,11 @@
 
 Represents a snapshot of statistics for an entry in the cache.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `EntryStats` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.EntryStats
+```

@@ -7,7 +7,14 @@ The resulting `Effect` value will have the same context and success
 type as the original `Effect` value, but it will have a more general
 error type that allows it to fail with any type of error.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `absorb` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.absorb
+```
 
 **Signature**
 

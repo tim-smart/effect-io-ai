@@ -3,7 +3,14 @@
 Returns a new schedule that chooses between two schedules with a common
 output.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `chooseMerge` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.chooseMerge
+```
 
 **Signature**
 

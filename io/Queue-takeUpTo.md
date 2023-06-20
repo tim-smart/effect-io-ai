@@ -2,7 +2,14 @@
 
 Takes up to max number of values from the queue.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `takeUpTo` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.takeUpTo
+```
 
 **Signature**
 

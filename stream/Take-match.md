@@ -3,7 +3,14 @@
 Folds over the failure cause, success value and end-of-stream marker to
 yield a value.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `match` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.match
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ specified channel. The returned channel has the input type of this channel,
 and the output type of the specified channel, terminating with the value of
 the specified channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `pipeTo` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.pipeTo
+```
 
 **Signature**
 

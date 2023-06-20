@@ -3,7 +3,14 @@
 Converts an `Iterable` of values into an `Option`. Returns the first value of the `Iterable` wrapped in a `Some`
 if the `Iterable` is not empty, otherwise returns `None`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `fromIterable` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.fromIterable
+```
 
 **Example**
 

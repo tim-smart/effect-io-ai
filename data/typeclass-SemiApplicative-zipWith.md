@@ -2,7 +2,14 @@
 
 Zips two `F` values together using a provided function, returning a new `F` of the result.
 
-Part of the `SemiApplicative` module, imported from `@effect/data/typeclass/SemiApplicative`.
+To import and use `zipWith` from the "SemiApplicative" module:
+
+```ts
+import * as SemiApplicative from '@effect/data/typeclass/SemiApplicative'
+
+// Can be accessed like this
+SemiApplicative.zipWith
+```
 
 **Signature**
 

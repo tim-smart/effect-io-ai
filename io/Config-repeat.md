@@ -3,7 +3,14 @@
 Returns a config that describes a sequence of values, each of which has the
 structure of this config.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `repeat` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.repeat
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Extends the `Either` value with the value of another `Either` type.
 
 If both `Either` instances are `Left`, then the result will be the first `Left`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `bindDiscard` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.bindDiscard
+```
 
 **Example**
 

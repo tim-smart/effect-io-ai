@@ -2,7 +2,14 @@
 
 Groups elements in chunks of up to `n` elements.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `chunksOf` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.chunksOf
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Converts the specified list to a `ReadonlyArray`.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `toReadonlyArray` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.toReadonlyArray
+```
 
 **Signature**
 

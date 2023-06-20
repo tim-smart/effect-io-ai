@@ -6,7 +6,14 @@ type with the specified mapping functions.
 New produced stream will terminate when both specified stream terminate if
 no termination strategy is specified.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mergeWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mergeWith
+```
 
 **Signature**
 

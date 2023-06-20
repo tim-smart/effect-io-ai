@@ -4,7 +4,14 @@ Filters an `Option` using a predicate. If the predicate is not satisfied or the 
 
 If you need to change the type of the `Option` in addition to filtering, see `filterMap`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `filter` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.filter
+```
 
 **Example**
 

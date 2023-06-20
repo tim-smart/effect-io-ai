@@ -5,7 +5,14 @@ Recovers from both recoverable and unrecoverable errors.
 See `absorb`, `sandbox`, `mapErrorCause` for other functions that can
 recover from defects.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `catchAllCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.catchAllCause
+```
 
 **Signature**
 

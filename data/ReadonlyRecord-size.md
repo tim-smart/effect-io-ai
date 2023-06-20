@@ -2,7 +2,14 @@
 
 Returns the number of key/value pairs in a `ReadonlyRecord`.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `size` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.size
+```
 
 **Example**
 

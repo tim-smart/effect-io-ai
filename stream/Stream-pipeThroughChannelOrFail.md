@@ -3,7 +3,14 @@
 Pipes all values from this stream through the provided channel, passing
 through any error emitted by this stream unchanged.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `pipeThroughChannelOrFail` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.pipeThroughChannelOrFail
+```
 
 **Signature**
 

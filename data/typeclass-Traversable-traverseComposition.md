@@ -2,7 +2,14 @@
 
 Returns a default binary `traverse` composition.
 
-Part of the `Traversable` module, imported from `@effect/data/typeclass/Traversable`.
+To import and use `traverseComposition` from the "Traversable" module:
+
+```ts
+import * as Traversable from '@effect/data/typeclass/Traversable'
+
+// Can be accessed like this
+Traversable.traverseComposition
+```
 
 **Signature**
 

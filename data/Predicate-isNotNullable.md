@@ -2,7 +2,14 @@
 
 A guard that succeeds when the input is not `null` or `undefined`.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `isNotNullable` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.isNotNullable
+```
 
 **Example**
 

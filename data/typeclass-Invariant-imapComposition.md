@@ -2,7 +2,14 @@
 
 Returns a default ternary `imap` composition.
 
-Part of the `Invariant` module, imported from `@effect/data/typeclass/Invariant`.
+To import and use `imapComposition` from the "Invariant" module:
+
+```ts
+import * as Invariant from '@effect/data/typeclass/Invariant'
+
+// Can be accessed like this
+Invariant.imapComposition
+```
 
 **Signature**
 

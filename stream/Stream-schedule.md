@@ -2,7 +2,14 @@
 
 Schedules the output of the stream using the provided `schedule`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `schedule` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.schedule
+```
 
 **Signature**
 

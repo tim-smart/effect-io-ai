@@ -2,7 +2,14 @@
 
 Constructs a new tuple from the provided values.
 
-Part of the `Tuple` module, imported from `@effect/data/Tuple`.
+To import and use `tuple` from the "Tuple" module:
+
+```ts
+import * as Tuple from '@effect/data/Tuple'
+
+// Can be accessed like this
+Tuple.tuple
+```
 
 **Example**
 

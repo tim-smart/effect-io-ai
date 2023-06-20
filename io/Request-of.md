@@ -2,7 +2,14 @@
 
 Constructs a new `Request`.
 
-Part of the `Request` module, imported from `@effect/io/Request`.
+To import and use `of` from the "Request" module:
+
+```ts
+import * as Request from '@effect/io/Request'
+
+// Can be accessed like this
+Request.of
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 The stream that dies with an exception described by `message`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `dieMessage` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.dieMessage
+```
 
 **Signature**
 

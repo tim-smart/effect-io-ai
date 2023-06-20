@@ -4,7 +4,14 @@ Constructs a new cache with the specified capacity, time to live, and
 lookup function, where the time to live can depend on the `Exit` value
 returned by the lookup function.
 
-Part of the `ScopedCache` module, imported from `@effect/io/ScopedCache`.
+To import and use `makeWith` from the "ScopedCache" module:
+
+```ts
+import * as ScopedCache from '@effect/io/ScopedCache'
+
+// Can be accessed like this
+ScopedCache.makeWith
+```
 
 **Signature**
 

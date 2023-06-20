@@ -4,7 +4,14 @@ Returns a new channel with an attached finalizer. The finalizer is
 guaranteed to be executed so long as the channel begins execution (and
 regardless of whether or not it completes).
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `ensuringWith` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.ensuringWith
+```
 
 **Signature**
 

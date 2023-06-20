@@ -3,7 +3,14 @@
 Returns an effect with the behavior of this one, but where all child fibers
 forked in the effect are reported to the specified supervisor.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `supervised` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.supervised
+```
 
 **Signature**
 

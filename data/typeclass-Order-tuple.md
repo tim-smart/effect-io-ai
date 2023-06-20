@@ -11,7 +11,14 @@ The returned `Order` compares two tuples of the same type by applying the corres
 It is useful when you need to compare two tuples of the same type and you have a specific way of comparing each element
 of the tuple.
 
-Part of the `Order` module, imported from `@effect/data/typeclass/Order`.
+To import and use `tuple` from the "Order" module:
+
+```ts
+import * as Order from '@effect/data/typeclass/Order'
+
+// Can be accessed like this
+Order.tuple
+```
 
 **Signature**
 

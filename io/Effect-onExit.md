@@ -3,7 +3,14 @@
 Ensures that a cleanup functions runs, whether this effect succeeds, fails,
 or is interrupted.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `onExit` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.onExit
+```
 
 **Signature**
 

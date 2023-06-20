@@ -3,7 +3,14 @@
 Partitions the stream with the specified `chunkSize` or until the specified
 `duration` has passed, whichever is satisfied first.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `groupedWithin` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.groupedWithin
+```
 
 **Signature**
 

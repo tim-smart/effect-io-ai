@@ -2,7 +2,14 @@
 
 `Monoid` that returns last minimum of elements.
 
-Part of the `Bounded` module, imported from `@effect/data/typeclass/Bounded`.
+To import and use `min` from the "Bounded" module:
+
+```ts
+import * as Bounded from '@effect/data/typeclass/Bounded'
+
+// Can be accessed like this
+Bounded.min
+```
 
 **Signature**
 

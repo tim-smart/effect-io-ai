@@ -3,7 +3,14 @@
 Create a new `Schema` by transforming the input and output of an existing `Schema`
 using the provided decoding functions.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `transformResult` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.transformResult
+```
 
 **Signature**
 

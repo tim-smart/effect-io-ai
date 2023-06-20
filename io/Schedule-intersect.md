@@ -3,7 +3,14 @@
 Returns a new schedule that performs a geometric intersection on the
 intervals defined by both schedules.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `intersect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.intersect
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Zips this fiber with the specified fiber, combining their results using the
 specified combiner function. Both joins and interruptions are performed in
 sequential order from left to right.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `zipWith` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.zipWith
+```
 
 **Signature**
 

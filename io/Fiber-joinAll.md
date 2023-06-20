@@ -4,7 +4,14 @@ Joins all fibers, awaiting their _successful_ completion. Attempting to
 join a fiber that has erred will result in a catchable error, _if_ that
 error does not result from interruption.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `joinAll` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.joinAll
+```
 
 **Signature**
 

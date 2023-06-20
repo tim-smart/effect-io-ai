@@ -2,7 +2,14 @@
 
 Builds a `NonEmptyChunk` from an non-empty collection of elements.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `make` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.make
+```
 
 **Signature**
 

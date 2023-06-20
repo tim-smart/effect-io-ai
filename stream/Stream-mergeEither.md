@@ -3,7 +3,14 @@
 Merges this stream and the specified stream together to produce a stream of
 eithers.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mergeEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mergeEither
+```
 
 **Signature**
 

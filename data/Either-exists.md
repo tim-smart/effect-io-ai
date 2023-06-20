@@ -2,7 +2,14 @@
 
 Returns `false` if `Left` or returns the Either of the application of the given predicate to the `Right` value.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `exists` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.exists
+```
 
 **Example**
 

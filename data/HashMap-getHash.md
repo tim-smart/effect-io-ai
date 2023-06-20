@@ -2,7 +2,14 @@
 
 Lookup the value for the specified key in the `HashMap` using a custom hash.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `getHash` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.getHash
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Unsafely returns the last element of the specified `List`.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `unsafeLast` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.unsafeLast
+```
 
 **Signature**
 

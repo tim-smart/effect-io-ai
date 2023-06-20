@@ -2,7 +2,14 @@
 
 Runs the sink on the stream to produce either the sink's result or an error.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `run` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.run
+```
 
 **Signature**
 

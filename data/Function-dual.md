@@ -12,7 +12,14 @@ you may want to use a predicate. For example, if you have a function that
 takes an optional argument, you can use a predicate to determine if the
 function is being used in a data-first or data-last style.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `dual` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.dual
+```
 
 **Example**
 

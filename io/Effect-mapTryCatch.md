@@ -3,7 +3,14 @@
 Returns an effect whose success is mapped by the specified side effecting
 `f` function, translating any thrown exceptions into typed failed effects.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `mapTryCatch` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.mapTryCatch
+```
 
 **Signature**
 

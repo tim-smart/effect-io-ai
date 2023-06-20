@@ -2,7 +2,14 @@
 
 Lifts an `Effect` into a `Fiber`.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `fromEffect` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.fromEffect
+```
 
 **Signature**
 

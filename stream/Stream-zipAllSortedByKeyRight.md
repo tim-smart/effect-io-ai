@@ -9,7 +9,14 @@ This allows zipping potentially unbounded streams of data by key in
 constant space but the caller is responsible for ensuring that the
 streams are sorted by distinct keys.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zipAllSortedByKeyRight` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zipAllSortedByKeyRight
+```
 
 **Signature**
 

@@ -11,7 +11,14 @@ Due to the parallel nature of this combinator, `f` must be both:
 It's unsafe to execute side effects inside `f`, as `f` may be executed
 more than once for some of `in` elements during effect execution.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `mergeAllPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.mergeAllPar
+```
 
 **Signature**
 

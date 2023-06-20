@@ -2,7 +2,14 @@
 
 Constructs a new `Differ`.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `make` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.make
+```
 
 **Signature**
 

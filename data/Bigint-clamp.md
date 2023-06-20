@@ -6,7 +6,14 @@ Restricts the given `bigint` to be within the range specified by the `minimum` a
 - If the `bigint` is greater than the `maximum` value, the function returns the `maximum` value.
 - Otherwise, it returns the original `bigint`.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `clamp` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.clamp
+```
 
 **Example**
 

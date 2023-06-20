@@ -2,7 +2,14 @@
 
 Constructs an empty `OrPatch`.
 
-Part of the `OrPatch` module, imported from `@effect/data/Differ/OrPatch`.
+To import and use `empty` from the "OrPatch" module:
+
+```ts
+import * as OrPatch from '@effect/data/Differ/OrPatch'
+
+// Can be accessed like this
+OrPatch.empty
+```
 
 **Signature**
 

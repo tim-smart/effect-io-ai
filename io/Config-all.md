@@ -2,7 +2,14 @@
 
 Constructs a config from a tuple / struct / arguments of configs.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `all` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.all
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new schedule with the given effectfully computed delay added to
 every interval defined by this schedule.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `addDelayEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.addDelayEffect
+```
 
 **Signature**
 

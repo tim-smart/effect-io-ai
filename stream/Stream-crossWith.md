@@ -6,7 +6,14 @@ run multiple times, for every element in the `this` stream.
 
 See also `Stream.zipWith` for the more common point-wise variant.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `crossWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.crossWith
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Returns a new schedule that applies the current one but runs the specified
 effect for every decision of this schedule. This can be used to create
 schedules that log failures, decisions, or computed values.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `onDecision` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.onDecision
+```
 
 **Signature**
 

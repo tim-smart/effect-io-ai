@@ -3,7 +3,14 @@
 Creates a metric key for a summary, with the specified name, maxAge,
 maxSize, error, and quantiles.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `summary` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.summary
+```
 
 **Signature**
 

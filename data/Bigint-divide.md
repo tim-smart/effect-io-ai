@@ -5,7 +5,14 @@ Provides a division operation on `bigint`s.
 If the dividend is not a multiple of the divisor the result will be a `bigint` value
 which represents the integer division rounded down to the nearest integer.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `divide` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.divide
+```
 
 **Example**
 

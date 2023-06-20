@@ -2,7 +2,14 @@
 
 Updates the service with the required service entry.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `updateService` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.updateService
+```
 
 **Signature**
 

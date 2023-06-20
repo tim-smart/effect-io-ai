@@ -2,7 +2,14 @@
 
 Prepend an element to the front of an `Iterable`, creating a new `NonEmptyArray`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `prepend` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.prepend
+```
 
 **Signature**
 

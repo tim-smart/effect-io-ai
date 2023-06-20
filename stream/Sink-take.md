@@ -2,7 +2,14 @@
 
 A sink that takes the specified number of values.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `take` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.take
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a new `MutableList` from an `Iterable`.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `from` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.from
+```
 
 **Signature**
 

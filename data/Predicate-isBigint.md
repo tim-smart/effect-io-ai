@@ -2,7 +2,14 @@
 
 Tests if a value is a `bigint`.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `isBigint` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.isBigint
+```
 
 **Example**
 

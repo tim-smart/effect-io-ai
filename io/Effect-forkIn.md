@@ -3,7 +3,14 @@
 Forks the effect in the specified scope. The fiber will be interrupted
 when the scope is closed.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forkIn` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forkIn
+```
 
 **Signature**
 

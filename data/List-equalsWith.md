@@ -3,7 +3,14 @@
 Returns `true` if the two lists are equal according to the provided function,
 `false` otherwise.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `equalsWith` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.equalsWith
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Return all the `Left` elements from an `Interable` of `Either`s.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `lefts` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.lefts
+```
 
 **Signature**
 

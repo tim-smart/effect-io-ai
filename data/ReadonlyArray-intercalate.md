@@ -3,7 +3,14 @@
 Fold an `Iterable`, accumulating values in some `Monoid`, combining adjacent elements
 using the specified separator.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `intercalate` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.intercalate
+```
 
 **Signature**
 

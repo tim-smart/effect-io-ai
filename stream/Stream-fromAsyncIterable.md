@@ -2,7 +2,14 @@
 
 Creates a stream from an `AsyncIterable`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `fromAsyncIterable` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.fromAsyncIterable
+```
 
 **Signature**
 

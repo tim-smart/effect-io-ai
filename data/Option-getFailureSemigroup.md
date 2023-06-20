@@ -6,7 +6,14 @@ is the combination of the wrapped elements using the provided `Semigroup`.
 
 See also `getFailureMonoid` if you need a `Monoid` instead of a `Semigroup`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getFailureSemigroup` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getFailureSemigroup
+```
 
 **Signature**
 

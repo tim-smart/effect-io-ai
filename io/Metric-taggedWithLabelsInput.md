@@ -5,7 +5,14 @@ dynamic tags are added based on the update values. Note that the metric
 returned by this method does not return any useful information, due to the
 dynamic nature of the added tags.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `taggedWithLabelsInput` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.taggedWithLabelsInput
+```
 
 **Signature**
 

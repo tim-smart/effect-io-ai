@@ -2,7 +2,14 @@
 
 Runs `onTrue` if the result of `self` is `true` and `onFalse` otherwise.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `ifEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.ifEffect
+```
 
 **Signature**
 

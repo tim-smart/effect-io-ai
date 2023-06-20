@@ -2,7 +2,14 @@
 
 Returns the minimum between two `number`s.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `min` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.min
+```
 
 **Example**
 

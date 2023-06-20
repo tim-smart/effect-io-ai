@@ -2,7 +2,14 @@
 
 Returns this `FiberId` if it is not `None`, otherwise returns that `FiberId`.
 
-Part of the `Id` module, imported from `@effect/io/Fiber/Id`.
+To import and use `getOrElse` from the "Id" module:
+
+```ts
+import * as Id from '@effect/io/Fiber/Id'
+
+// Can be accessed like this
+Id.getOrElse
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns a function that checks if a given `bigint` is greater than or equal to the provided one.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `greaterThanOrEqualTo` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.greaterThanOrEqualTo
+```
 
 **Example**
 

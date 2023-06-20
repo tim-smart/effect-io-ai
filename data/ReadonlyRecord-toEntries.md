@@ -2,7 +2,14 @@
 
 Takes a record and returns an array of tuples containing its keys and values.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `toEntries` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.toEntries
+```
 
 **Example**
 

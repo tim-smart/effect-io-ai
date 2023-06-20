@@ -3,4 +3,11 @@
 `CacheStats` represents a snapshot of statistics for the cache as of a
 point in time.
 
-Part of the `Cache` module, imported from `@effect/io/Cache`.
+To import and use `CacheStats` from the "Cache" module:
+
+```ts
+import * as Cache from '@effect/io/Cache'
+
+// Can be accessed like this
+Cache.CacheStats
+```

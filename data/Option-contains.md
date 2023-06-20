@@ -2,7 +2,14 @@
 
 Returns a function that checks if an `Option` contains a given value using a provided `Equivalence` instance.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `contains` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.contains
+```
 
 **Example**
 

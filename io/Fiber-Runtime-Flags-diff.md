@@ -3,7 +3,14 @@
 Creates a `RuntimeFlagsPatch` which describes the difference between `self`
 and `that`.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `diff` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.diff
+```
 
 **Signature**
 

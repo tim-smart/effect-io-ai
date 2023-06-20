@@ -4,7 +4,14 @@ Applies a set patch to a set of values to produce a new set of values
 which represents the original set of values updated with the changes
 described by this patch.
 
-Part of the `HashSetPatch` module, imported from `@effect/data/Differ/HashSetPatch`.
+To import and use `patch` from the "HashSetPatch" module:
+
+```ts
+import * as HashSetPatch from '@effect/data/Differ/HashSetPatch'
+
+// Can be accessed like this
+HashSetPatch.patch
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new effect that will pass the success value of this effect to the
 provided callback. If this effect fails, then the failure will be ignored.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forEachEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forEachEffect
+```
 
 **Signature**
 

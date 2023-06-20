@@ -8,4 +8,11 @@ For example, if we perform Effect-TS's analog of `try-finally` (i.e.
 errors which occurred sequentially. In these cases, the errors can be
 represented by the `Sequential` cause.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `Sequential` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.Sequential
+```

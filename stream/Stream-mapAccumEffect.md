@@ -3,7 +3,14 @@
 Statefully and effectfully maps over the elements of this stream to produce
 new elements.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapAccumEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapAccumEffect
+```
 
 **Signature**
 

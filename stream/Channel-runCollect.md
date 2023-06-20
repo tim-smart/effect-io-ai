@@ -5,7 +5,14 @@ and collects its emitted output elements.
 
 The channel must not read any input.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `runCollect` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.runCollect
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Sets the provided scheduler for usage in the wrapped effect
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `withScheduler` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.withScheduler
+```
 
 **Signature**
 

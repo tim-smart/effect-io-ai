@@ -4,7 +4,14 @@ Returns a stream whose failures and successes have been lifted into an
 `Either`. The resulting stream cannot fail, because the failures have been
 exposed as part of the `Either` success case.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `either` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.either
+```
 
 **Signature**
 

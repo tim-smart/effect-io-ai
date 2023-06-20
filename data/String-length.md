@@ -2,7 +2,14 @@
 
 Calculate the number of characters in a `string`.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `length` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.length
+```
 
 **Example**
 

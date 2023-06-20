@@ -5,7 +5,14 @@ The inverse operation `sandbox(effect)`
 Terminates with exceptions on the `Left` side of the `Either` error, if it
 exists. Otherwise extracts the contained `Effect< R, E, A>`
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unsandbox` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unsandbox
+```
 
 **Signature**
 

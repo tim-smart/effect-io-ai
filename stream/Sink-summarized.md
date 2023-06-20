@@ -3,7 +3,14 @@
 Summarize a sink by running an effect when the sink starts and again when
 it completes.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `summarized` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.summarized
+```
 
 **Signature**
 

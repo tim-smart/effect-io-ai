@@ -3,7 +3,14 @@
 Takes a lazy default and a nullable value, if the value is not nully, turn it into a `Right`, if the value is nully use
 the provided default as a `Left`.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `fromNullable` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.fromNullable
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Returns a default ternary `reduce` composition.
 
-Part of the `Foldable` module, imported from `@effect/data/typeclass/Foldable`.
+To import and use `reduceComposition` from the "Foldable" module:
+
+```ts
+import * as Foldable from '@effect/data/typeclass/Foldable'
+
+// Can be accessed like this
+Foldable.reduceComposition
+```
 
 **Signature**
 

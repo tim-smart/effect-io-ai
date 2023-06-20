@@ -3,7 +3,14 @@
 Sequentially zips this effect with the specified effect using the
 specified combiner function.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `zipWithPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.zipWithPar
+```
 
 **Signature**
 

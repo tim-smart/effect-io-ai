@@ -4,7 +4,14 @@ Returns an effect that dies with a `RuntimeException` having the specified
 text message. This method can be used for terminating a fiber because a
 defect has been detected in the code.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `dieMessage` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.dieMessage
+```
 
 **Signature**
 

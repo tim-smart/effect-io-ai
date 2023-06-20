@@ -2,7 +2,14 @@
 
 Returns a new layer whose output is mapped by the specified function.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `map` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.map
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Retreives the `Random` service from the context and uses it to run the
 specified workflow.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `randomWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.randomWith
+```
 
 **Signature**
 

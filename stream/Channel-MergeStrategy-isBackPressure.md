@@ -3,7 +3,14 @@
 Returns `true` if the specified `MergeStrategy` is a `BackPressure`, `false`
 otherwise.
 
-Part of the `MergeStrategy` module, imported from `@effect/stream/Channel/MergeStrategy`.
+To import and use `isBackPressure` from the "MergeStrategy" module:
+
+```ts
+import * as MergeStrategy from '@effect/stream/Channel/MergeStrategy'
+
+// Can be accessed like this
+MergeStrategy.isBackPressure
+```
 
 **Signature**
 

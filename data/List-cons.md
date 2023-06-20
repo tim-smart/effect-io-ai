@@ -2,7 +2,14 @@
 
 Constructs a new `List.Cons<A>` from the specified `head` and `tail` values.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `cons` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.cons
+```
 
 **Signature**
 

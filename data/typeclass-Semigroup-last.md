@@ -2,7 +2,14 @@
 
 Always return the last argument.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `last` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.last
+```
 
 **Signature**
 

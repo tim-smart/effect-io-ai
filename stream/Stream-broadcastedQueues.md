@@ -6,7 +6,14 @@ replicated to every queue with the slowest queue being allowed to buffer
 
 Queues can unsubscribe from upstream by shutting down.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `broadcastedQueues` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.broadcastedQueues
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Constructs a config for a sequence of values.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `setOf` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.setOf
+```
 
 **Signature**
 

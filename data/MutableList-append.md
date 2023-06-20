@@ -2,7 +2,14 @@
 
 Appends the specified value to the end of the list.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `append` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.append
+```
 
 **Signature**
 

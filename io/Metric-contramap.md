@@ -4,7 +4,14 @@ Returns a new metric that is powered by this one, but which accepts updates
 of the specified new type, which must be transformable to the input type of
 this metric.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `contramap` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.contramap
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a config that describes the same structure as this one, but which
 performs validation during loading.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `validate` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.validate
+```
 
 **Signature**
 

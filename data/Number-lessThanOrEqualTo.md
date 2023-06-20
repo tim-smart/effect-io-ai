@@ -2,7 +2,14 @@
 
 Returns a function that checks if a given `number` is less than or equal to the provided one.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `lessThanOrEqualTo` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.lessThanOrEqualTo
+```
 
 **Example**
 

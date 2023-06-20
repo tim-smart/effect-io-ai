@@ -2,7 +2,14 @@
 
 Returns the maximum of the two `Intervals` (i.e. which has the latest start).
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `max` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.max
+```
 
 **Signature**
 

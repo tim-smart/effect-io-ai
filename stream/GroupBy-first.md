@@ -2,7 +2,14 @@
 
 Only consider the first `n` groups found in the `Stream`.
 
-Part of the `GroupBy` module, imported from `@effect/stream/GroupBy`.
+To import and use `first` from the "GroupBy" module:
+
+```ts
+import * as GroupBy from '@effect/stream/GroupBy'
+
+// Can be accessed like this
+GroupBy.first
+```
 
 **Signature**
 

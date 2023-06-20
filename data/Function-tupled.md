@@ -2,7 +2,14 @@
 
 Creates a tupled version of this function: instead of `n` arguments, it accepts a single tuple argument.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `tupled` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.tupled
+```
 
 **Example**
 

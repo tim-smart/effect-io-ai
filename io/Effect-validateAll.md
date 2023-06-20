@@ -6,7 +6,14 @@ channel or successes in success channel.
 This combinator is lossy meaning that if there are errors all successes
 will be lost. To retain all information please use `partition`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validateAll` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validateAll
+```
 
 **Signature**
 

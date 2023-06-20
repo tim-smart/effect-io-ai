@@ -5,7 +5,14 @@ triggers at zero minute of the hour. Producing a count of repeats: 0, 1, 2.
 
 NOTE: `hour` parameter is validated lazily. Must be in range 0...23.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `hourOfDay` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.hourOfDay
+```
 
 **Signature**
 

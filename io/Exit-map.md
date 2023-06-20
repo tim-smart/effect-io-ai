@@ -3,7 +3,14 @@
 Maps over the `Success` value of the specified exit using the provided
 function.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `map` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.map
+```
 
 **Signature**
 

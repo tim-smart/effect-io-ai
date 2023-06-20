@@ -6,7 +6,14 @@ the type the `Option` contains.
 
 `None` is considered to be less than any `Some` value.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getOrder` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getOrder
+```
 
 **Example**
 

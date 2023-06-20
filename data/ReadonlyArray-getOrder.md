@@ -5,7 +5,14 @@ The returned `Order` compares two arrays by applying the given `Order` to each e
 If all elements are equal, the arrays are then compared based on their length.
 It is useful when you need to compare two arrays of the same type and you have a specific way of comparing each element of the array.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `getOrder` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.getOrder
+```
 
 **Signature**
 

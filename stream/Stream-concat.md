@@ -4,7 +4,14 @@ Concatenates the specified stream with this stream, resulting in a stream
 that emits the elements from this stream and then the elements from the
 specified stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `concat` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.concat
+```
 
 **Signature**
 

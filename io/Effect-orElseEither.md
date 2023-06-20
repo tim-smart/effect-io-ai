@@ -3,7 +3,14 @@
 Returns an effect that will produce the value of this effect, unless it
 fails, in which case, it will produce the value of the specified effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `orElseEither` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.orElseEither
+```
 
 **Signature**
 

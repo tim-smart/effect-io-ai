@@ -3,7 +3,14 @@
 Feeds elements of type `A` to `f` until it succeeds. Returns first success
 or the accumulation of all errors.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validateFirstPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validateFirstPar
+```
 
 **Signature**
 

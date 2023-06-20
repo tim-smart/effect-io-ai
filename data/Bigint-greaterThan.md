@@ -2,7 +2,14 @@
 
 Returns `true` if the first argument is greater than the second, otherwise `false`.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `greaterThan` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.greaterThan
+```
 
 **Example**
 

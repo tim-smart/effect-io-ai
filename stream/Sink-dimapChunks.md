@@ -3,7 +3,14 @@
 Transforms both input chunks and result of this sink using the provided
 functions.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `dimapChunks` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.dimapChunks
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Reduce a state over the entries of the tree.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `reduceWithIndex` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.reduceWithIndex
+```
 
 **Signature**
 

@@ -6,7 +6,14 @@ Returns a nominal branded schema by applying a brand to a given schema.
 Schema<A> + B -> Schema<A & Brand<B>>
 ```
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `brand` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.brand
+```
 
 **Example**
 

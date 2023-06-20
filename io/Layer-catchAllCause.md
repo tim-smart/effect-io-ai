@@ -2,7 +2,14 @@
 
 Recovers from all errors.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `catchAllCause` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.catchAllCause
+```
 
 **Signature**
 

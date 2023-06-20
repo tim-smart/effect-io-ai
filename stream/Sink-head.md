@@ -2,7 +2,14 @@
 
 Creates a sink containing the first value.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `head` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.head
+```
 
 **Signature**
 

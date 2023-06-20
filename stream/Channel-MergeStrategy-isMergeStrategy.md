@@ -3,7 +3,14 @@
 Returns `true` if the specified value is a `MergeStrategy`, `false`
 otherwise.
 
-Part of the `MergeStrategy` module, imported from `@effect/stream/Channel/MergeStrategy`.
+To import and use `isMergeStrategy` from the "MergeStrategy" module:
+
+```ts
+import * as MergeStrategy from '@effect/stream/Channel/MergeStrategy'
+
+// Can be accessed like this
+MergeStrategy.isMergeStrategy
+```
 
 **Signature**
 

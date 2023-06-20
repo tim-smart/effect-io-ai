@@ -6,7 +6,14 @@ value of the channel is the specified constant value.
 This method produces the same result as mapping this channel to the
 specified constant value.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `as` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.as
+```
 
 **Signature**
 

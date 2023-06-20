@@ -3,7 +3,14 @@
 Creates a `RuntimeFlagsPatch` describing application of both the `self` patch
 and `that` patch.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `both` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.both
+```
 
 **Signature**
 

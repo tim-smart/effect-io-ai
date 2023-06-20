@@ -3,7 +3,14 @@
 Maps over the `Success` and `Failure` cases of the specified exit using the
 provided functions.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `mapBoth` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.mapBoth
+```
 
 **Signature**
 

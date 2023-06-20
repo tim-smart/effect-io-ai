@@ -20,7 +20,14 @@ terminates, the child fiber will be terminated as well, ensuring that no
 fibers leak. This behavior is called "auto supervision", and if this
 behavior is not desired, you may use the `forkDaemon` or `forkIn` methods.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `fork` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.fork
+```
 
 **Signature**
 

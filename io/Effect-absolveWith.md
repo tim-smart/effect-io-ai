@@ -10,7 +10,14 @@ succeed with the value contained in the `Right`. If the `Either` value
 is a `Left` value, then the `Effect` value will fail with the error
 contained in the `Left`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `absolveWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.absolveWith
+```
 
 **Signature**
 

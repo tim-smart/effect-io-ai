@@ -3,7 +3,14 @@
 A schedule that always recurs, mapping input values through the specified
 function.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `fromFunction` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.fromFunction
+```
 
 **Signature**
 

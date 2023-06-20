@@ -2,7 +2,14 @@
 
 Returns `true` if the specified `Exit` is a `Success`, `false` otherwise.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `isSuccess` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.isSuccess
+```
 
 **Signature**
 

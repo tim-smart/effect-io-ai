@@ -3,7 +3,14 @@
 Apply a function to the element at the specified index, creating a new `Array`,
 or return `None` if the index is out of bounds.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `modifyOption` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.modifyOption
+```
 
 **Signature**
 

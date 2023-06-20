@@ -2,7 +2,14 @@
 
 Folds an `MergeStrategy` into a value of type `A`.
 
-Part of the `MergeStrategy` module, imported from `@effect/stream/Channel/MergeStrategy`.
+To import and use `match` from the "MergeStrategy" module:
+
+```ts
+import * as MergeStrategy from '@effect/stream/Channel/MergeStrategy'
+
+// Can be accessed like this
+MergeStrategy.match
+```
 
 **Signature**
 

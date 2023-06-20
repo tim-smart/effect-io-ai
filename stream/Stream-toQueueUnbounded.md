@@ -3,7 +3,14 @@
 Converts the stream into an unbounded scoped queue. After the scope is
 closed, the queue will never again produce values and should be discarded.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `toQueueUnbounded` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.toQueueUnbounded
+```
 
 **Signature**
 

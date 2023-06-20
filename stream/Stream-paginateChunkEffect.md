@@ -4,7 +4,14 @@ Like `Stream.unfoldChunkEffect`, but allows the emission of values to end one st
 further than the unfolding of the state. This is useful for embedding
 paginated APIs, hence the name.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `paginateChunkEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.paginateChunkEffect
+```
 
 **Signature**
 

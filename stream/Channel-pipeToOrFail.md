@@ -4,7 +4,14 @@ Returns a new channel that pipes the output of this channel into the
 specified channel and preserves this channel's failures without providing
 them to the other channel for observation.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `pipeToOrFail` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.pipeToOrFail
+```
 
 **Signature**
 

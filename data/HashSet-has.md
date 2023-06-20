@@ -2,7 +2,14 @@
 
 Checks if the specified value exists in the `HashSet`.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `has` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.has
+```
 
 **Signature**
 

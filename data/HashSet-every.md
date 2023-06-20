@@ -3,7 +3,14 @@
 Returns `true` only if all values in the `HashSet` match the specified
 predicate.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `every` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.every
+```
 
 **Signature**
 

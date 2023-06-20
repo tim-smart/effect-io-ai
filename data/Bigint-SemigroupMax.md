@@ -2,7 +2,14 @@
 
 A `Semigroup` that uses the maximum between two values.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `SemigroupMax` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.SemigroupMax
+```
 
 **Example**
 

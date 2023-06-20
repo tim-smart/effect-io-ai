@@ -6,4 +6,11 @@ or when the key is not present in the object being decoded. In either case, the 
 the invalid key value. This error is typically used in combination with the `Unexpected` error,
 which indicates that an unexpected key was found in the object being decoded.
 
-Part of the `ParseResult` module, imported from `@effect/schema/ParseResult`.
+To import and use `Key` from the "ParseResult" module:
+
+```ts
+import * as ParseResult from '@effect/schema/ParseResult'
+
+// Can be accessed like this
+ParseResult.Key
+```

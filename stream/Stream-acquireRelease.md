@@ -3,7 +3,14 @@
 Creates a stream from a single value that will get cleaned up after the
 stream is consumed.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `acquireRelease` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.acquireRelease
+```
 
 **Signature**
 

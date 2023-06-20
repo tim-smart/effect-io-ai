@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `Fiber`, `false` otherwise.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `isFiber` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.isFiber
+```
 
 **Signature**
 

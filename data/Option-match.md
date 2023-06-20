@@ -3,7 +3,14 @@
 Matches the given `Option` and returns either the provided `onNone` value or the result of the provided `onSome`
 function when passed the `Option`'s value.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `match` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.match
+```
 
 **Example**
 

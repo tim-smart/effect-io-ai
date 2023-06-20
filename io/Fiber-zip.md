@@ -3,7 +3,14 @@
 Zips this fiber and the specified fiber together, producing a tuple of
 their output.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `zip` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.zip
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Filters the collection in parallel using the specified effectual predicate.
 See `filter` for a sequential version of it.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `filterPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.filterPar
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Get all the keys present in the tree in order.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `keys` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.keys
+```
 
 **Signature**
 

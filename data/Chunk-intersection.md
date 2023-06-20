@@ -4,7 +4,14 @@ Creates a Chunk of unique values that are included in all given Chunks.
 
 The order and references of result values are determined by the Chunk.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `intersection` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.intersection
+```
 
 **Signature**
 

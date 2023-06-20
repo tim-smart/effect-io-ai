@@ -3,7 +3,14 @@
 Returns a config that is the composition of this config and the specified
 config.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `zip` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.zip
+```
 
 **Signature**
 

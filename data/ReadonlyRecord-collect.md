@@ -2,7 +2,14 @@
 
 Transforms the values of a `ReadonlyRecord` into an `Array` with a custom mapping function.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `collect` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.collect
+```
 
 **Example**
 

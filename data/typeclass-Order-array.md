@@ -5,7 +5,14 @@ The returned `Order` compares two arrays by applying the given `Order` to each e
 If all elements are equal, the arrays are then compared based on their length.
 It is useful when you need to compare two arrays of the same type and you have a specific way of comparing each element of the array.
 
-Part of the `Order` module, imported from `@effect/data/typeclass/Order`.
+To import and use `array` from the "Order" module:
+
+```ts
+import * as Order from '@effect/data/typeclass/Order'
+
+// Can be accessed like this
+Order.array
+```
 
 **Signature**
 

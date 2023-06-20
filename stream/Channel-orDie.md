@@ -3,7 +3,14 @@
 Translates channel failure into death of the fiber, making all failures
 unchecked and not a part of the type of the channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `orDie` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.orDie
+```
 
 **Signature**
 

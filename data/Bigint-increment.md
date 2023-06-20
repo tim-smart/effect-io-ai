@@ -2,7 +2,14 @@
 
 Returns the result of adding `1n` to a given number.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `increment` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.increment
+```
 
 **Example**
 

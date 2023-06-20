@@ -3,7 +3,14 @@
 Combines this layer with the specified layer, producing a new layer that
 has the inputs and outputs of both.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `merge` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.merge
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Produces the specified chunk if this stream is empty.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `orElseIfEmptyChunk` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.orElseIfEmptyChunk
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns an effect that effectfully "peeks" at the failure or success of
 this effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `tapBoth` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.tapBoth
+```
 
 **Signature**
 

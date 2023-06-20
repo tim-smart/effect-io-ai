@@ -5,7 +5,14 @@ tree.
 
 **Note**: The iterator will run through elements in reverse order.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `atReversed` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.atReversed
+```
 
 **Signature**
 

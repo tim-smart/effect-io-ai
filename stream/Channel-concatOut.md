@@ -4,7 +4,14 @@ Returns a new channel, which is the concatenation of all the channels that
 are written out by this channel. This method may only be called on channels
 that output other channels.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `concatOut` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.concatOut
+```
 
 **Signature**
 

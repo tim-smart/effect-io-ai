@@ -3,7 +3,14 @@
 Returns a new config provider that transforms the config provider with the
 specified function within the specified path.
 
-Part of the `Provider` module, imported from `@effect/io/Config/Provider`.
+To import and use `within` from the "Provider" module:
+
+```ts
+import * as Provider from '@effect/io/Config/Provider'
+
+// Can be accessed like this
+Provider.within
+```
 
 **Signature**
 

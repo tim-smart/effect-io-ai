@@ -5,7 +5,14 @@ for each property in the struct.
 
 Alias of {@link order.struct}.
 
-Part of the `Struct` module, imported from `@effect/data/Struct`.
+To import and use `getOrder` from the "Struct" module:
+
+```ts
+import * as Struct from '@effect/data/Struct'
+
+// Can be accessed like this
+Struct.getOrder
+```
 
 **Signature**
 

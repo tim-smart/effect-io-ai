@@ -3,7 +3,14 @@
 Returns the element at the specified index within the tree or `None` if the
 specified index does not exist.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `getAt` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.getAt
+```
 
 **Signature**
 

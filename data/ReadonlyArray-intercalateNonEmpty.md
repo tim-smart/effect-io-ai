@@ -2,7 +2,14 @@
 
 Places an element in between members of a `NonEmptyReadonlyArray`, then folds the results using the provided `Semigroup`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `intercalateNonEmpty` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.intercalateNonEmpty
+```
 
 **Signature**
 

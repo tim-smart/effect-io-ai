@@ -3,7 +3,14 @@
 Kills the `Deferred` with the specified defect, which will be propagated to
 all fibers waiting on the value of the `Deferred`.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `die` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.die
+```
 
 **Signature**
 

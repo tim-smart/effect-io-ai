@@ -2,7 +2,14 @@
 
 Get all but the last element of an `Iterable`, creating a new `Array`, or `None` if the `Iterable` is empty.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `init` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.init
+```
 
 **Signature**
 

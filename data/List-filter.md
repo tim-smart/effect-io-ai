@@ -2,7 +2,14 @@
 
 Filters a list using the specified predicate.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `filter` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.filter
+```
 
 **Signature**
 

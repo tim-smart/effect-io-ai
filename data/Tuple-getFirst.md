@@ -2,7 +2,14 @@
 
 Return the first element of a tuple.
 
-Part of the `Tuple` module, imported from `@effect/data/Tuple`.
+To import and use `getFirst` from the "Tuple" module:
+
+```ts
+import * as Tuple from '@effect/data/Tuple'
+
+// Can be accessed like this
+Tuple.getFirst
+```
 
 **Example**
 

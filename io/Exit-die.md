@@ -2,7 +2,14 @@
 
 Constructs a new `Exit.Failure` from the specified unrecoverable defect.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `die` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.die
+```
 
 **Signature**
 

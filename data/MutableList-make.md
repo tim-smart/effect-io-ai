@@ -2,7 +2,14 @@
 
 Creates a new `MutableList` from the specified elements.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `make` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.make
+```
 
 **Signature**
 

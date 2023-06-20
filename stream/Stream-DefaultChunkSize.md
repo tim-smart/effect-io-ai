@@ -3,7 +3,14 @@
 The default chunk size used by the various combinators and constructors of
 `Stream`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `DefaultChunkSize` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.DefaultChunkSize
+```
 
 **Signature**
 

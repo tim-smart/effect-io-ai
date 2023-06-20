@@ -2,7 +2,14 @@
 
 Marks the `HashSet` as mutable.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `beginMutation` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.beginMutation
+```
 
 **Signature**
 

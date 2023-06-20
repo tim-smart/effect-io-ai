@@ -2,7 +2,14 @@
 
 Partitions the elements of a `ReadonlyRecord` into two groups: those that match a predicate, and those that don't.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `partitionMap` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.partitionMap
+```
 
 **Example**
 

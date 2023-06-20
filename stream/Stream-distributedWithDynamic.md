@@ -7,7 +7,14 @@ enqueued in all queues. Shutdown of the queues is handled by the driver.
 Downstream users can also shutdown queues manually. In this case the driver
 will continue but no longer backpressure on them.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `distributedWithDynamic` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.distributedWithDynamic
+```
 
 **Signature**
 

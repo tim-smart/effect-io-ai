@@ -3,7 +3,14 @@
 Returns a schedule that recurs continuously, each repetition spaced the
 specified duration from the last run.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `spaced` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.spaced
+```
 
 **Signature**
 

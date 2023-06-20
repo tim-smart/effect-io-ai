@@ -15,4 +15,11 @@ common data types such as `Chunk`, `HashMap`, and ` HashSet``. In addition,
 using the`orElseEither`and`zip`operators. This allows creating`Differ`
 values for arbitrarily complex data types compositionally.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `Differ` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.Differ
+```

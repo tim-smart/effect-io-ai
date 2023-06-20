@@ -2,7 +2,14 @@
 
 Returns a new `MetricKey` with the specified tag appended.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `tagged` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.tagged
+```
 
 **Signature**
 

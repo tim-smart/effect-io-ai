@@ -3,7 +3,14 @@
 Filter the specified effect with the provided function, dying with specified
 defect if the predicate fails.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `filterOrDie` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.filterOrDie
+```
 
 **Signature**
 

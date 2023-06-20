@@ -2,7 +2,14 @@
 
 Returns a new schedule that contramaps the input and maps the output.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `dimapEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.dimapEffect
+```
 
 **Signature**
 

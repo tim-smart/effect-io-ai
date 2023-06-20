@@ -3,7 +3,14 @@
 Completes the `Deferred` with interruption. This will interrupt all fibers
 waiting on the value of the `Deferred` with the specified `FiberId`.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `interruptWith` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.interruptWith
+```
 
 **Signature**
 

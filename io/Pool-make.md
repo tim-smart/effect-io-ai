@@ -5,7 +5,14 @@ Makes a new pool of the specified fixed size. The pool is returned in a
 because the `Scope` is closed, the individual items allocated by the pool
 will be released in some unspecified order.
 
-Part of the `Pool` module, imported from `@effect/io/Pool`.
+To import and use `make` from the "Pool" module:
+
+```ts
+import * as Pool from '@effect/io/Pool'
+
+// Can be accessed like this
+Pool.make
+```
 
 **Signature**
 

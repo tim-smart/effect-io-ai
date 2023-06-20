@@ -2,7 +2,14 @@
 
 Returns the sink that executes this one and times its execution.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `withDuration` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.withDuration
+```
 
 **Signature**
 

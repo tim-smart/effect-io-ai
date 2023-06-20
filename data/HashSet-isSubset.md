@@ -5,7 +5,14 @@ element of the second set,
 
 **NOTE**: the hash and equal of both sets must be the same.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `isSubset` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.isSubset
+```
 
 **Signature**
 

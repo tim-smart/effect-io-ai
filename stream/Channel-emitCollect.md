@@ -3,7 +3,14 @@
 Returns a new channel that collects the output and terminal value of this
 channel, which it then writes as output of the returned channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `emitCollect` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.emitCollect
+```
 
 **Signature**
 

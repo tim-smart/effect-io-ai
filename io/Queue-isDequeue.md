@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `Dequeue`, `false` otherwise.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `isDequeue` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.isDequeue
+```
 
 **Signature**
 

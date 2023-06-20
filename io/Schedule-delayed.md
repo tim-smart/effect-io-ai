@@ -3,7 +3,14 @@
 Returns a new schedule with the specified effectfully computed delay added
 before the start of each interval produced by this schedule.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `delayed` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.delayed
+```
 
 **Signature**
 

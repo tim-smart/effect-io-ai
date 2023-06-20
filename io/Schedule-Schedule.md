@@ -24,4 +24,11 @@ A variety of other operators exist for transforming and combining schedules,
 and the companion object for `Schedule` contains all common types of
 schedules, both for performing retrying, as well as performing repetition.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `Schedule` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.Schedule
+```

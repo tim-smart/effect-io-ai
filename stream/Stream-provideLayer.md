@@ -2,7 +2,14 @@
 
 Provides a `Layer` to the stream, which translates it to another level.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `provideLayer` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.provideLayer
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Creates a stream from a subscription to a `Hub`.
 
 The hub will be shut down once the stream is closed.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `fromChunkHubWithShutdown` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.fromChunkHubWithShutdown
+```
 
 **Signature**
 

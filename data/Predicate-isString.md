@@ -2,7 +2,14 @@
 
 Tests if a value is a `string`.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `isString` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.isString
+```
 
 **Example**
 

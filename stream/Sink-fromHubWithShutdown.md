@@ -3,7 +3,14 @@
 Create a sink which publishes each element to the specified hub. The hub
 will be shutdown once the stream is closed.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `fromHubWithShutdown` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.fromHubWithShutdown
+```
 
 **Signature**
 

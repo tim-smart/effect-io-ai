@@ -3,7 +3,14 @@
 Returns `true` if the `Queue` contains at least one element, `false`
 otherwise.
 
-Part of the `Hub` module, imported from `@effect/io/Hub`.
+To import and use `isFull` from the "Hub" module:
+
+```ts
+import * as Hub from '@effect/io/Hub'
+
+// Can be accessed like this
+Hub.isFull
+```
 
 **Signature**
 

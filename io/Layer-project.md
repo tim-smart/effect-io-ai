@@ -3,7 +3,14 @@
 Projects out part of one of the services output by this layer using the
 specified function.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `project` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.project
+```
 
 **Signature**
 

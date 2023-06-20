@@ -3,7 +3,14 @@
 Transforms all elements of the chunk for as long as the specified partial
 function is defined.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `collectWhile` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.collectWhile
+```
 
 **Signature**
 

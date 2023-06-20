@@ -9,4 +9,11 @@ reason. If both computations fail, then there are actually two errors which
 occurred in parallel. In these cases, the errors can be represented by the
 `Parallel` cause.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `Parallel` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.Parallel
+```

@@ -4,7 +4,14 @@ Retrieves the value of the property with the given `key` from a `ReadonlyRecord`
 of a tuple with the value and the `ReadonlyRecord` with the removed property.
 If the key is not present, returns `O.none`.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `pop` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.pop
+```
 
 **Example**
 

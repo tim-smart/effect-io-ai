@@ -2,7 +2,14 @@
 
 Provides a constructor for a Case Class.
 
-Part of the `Data` module, imported from `@effect/data/Data`.
+To import and use `Class` from the "Data" module:
+
+```ts
+import * as Data from '@effect/data/Data'
+
+// Can be accessed like this
+Data.Class
+```
 
 **Signature**
 

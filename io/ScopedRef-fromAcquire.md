@@ -3,7 +3,14 @@
 Creates a new `ScopedRef` from an effect that resourcefully produces a
 value.
 
-Part of the `ScopedRef` module, imported from `@effect/io/ScopedRef`.
+To import and use `fromAcquire` from the "ScopedRef" module:
+
+```ts
+import * as ScopedRef from '@effect/io/ScopedRef'
+
+// Can be accessed like this
+ScopedRef.fromAcquire
+```
 
 **Signature**
 

@@ -8,7 +8,14 @@ acquire operations.
 The schedule is reset as soon as the first element passes through the
 stream again.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `retry` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.retry
+```
 
 **Signature**
 

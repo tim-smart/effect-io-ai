@@ -2,7 +2,14 @@
 
 Updates the specified service within the context of the `Stream`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `updateService` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.updateService
+```
 
 **Signature**
 

@@ -8,7 +8,14 @@ Similar to `Promise.all` but operates on `Option`s.
 
 Takes a tuple of `Option`s and returns an `Option` of a tuple of values.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `tuple` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.tuple
+```
 
 **Example**
 

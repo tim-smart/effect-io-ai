@@ -3,7 +3,14 @@
 Creates a metric key for a categorical frequency table, with the specified
 name.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `frequency` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.frequency
+```
 
 **Signature**
 

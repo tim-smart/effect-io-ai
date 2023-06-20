@@ -2,7 +2,14 @@
 
 Provides each data source with part of its required environment.
 
-Part of the `RequestBlock` module, imported from `@effect/io/RequestBlock`.
+To import and use `contramapContext` from the "RequestBlock" module:
+
+```ts
+import * as RequestBlock from '@effect/io/RequestBlock'
+
+// Can be accessed like this
+RequestBlock.contramapContext
+```
 
 **Signature**
 

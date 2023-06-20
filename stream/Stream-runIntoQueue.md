@@ -3,7 +3,14 @@
 Enqueues elements of this stream into a queue. Stream failure and ending
 will also be signalled.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runIntoQueue` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runIntoQueue
+```
 
 **Signature**
 

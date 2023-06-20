@@ -5,7 +5,14 @@ Merges this stream and the specified stream together.
 New produced stream will terminate when both specified stream terminate if
 no termination strategy is specified.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `merge` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.merge
+```
 
 **Signature**
 

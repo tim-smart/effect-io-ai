@@ -5,7 +5,14 @@ Effectful version of `Take.fold`.
 Folds over the failure cause, success value and end-of-stream marker to
 yield an effect.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `matchEffect` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.matchEffect
+```
 
 **Signature**
 

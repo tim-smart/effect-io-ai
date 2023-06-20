@@ -2,7 +2,14 @@
 
 Removes a key from a `ReadonlyRecord` and returns a new `Record`
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `remove` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.remove
+```
 
 **Example**
 

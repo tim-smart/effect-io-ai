@@ -2,7 +2,14 @@
 
 Unsafely creates a new `Deferred` from the specified `FiberId`.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `unsafeMake` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.unsafeMake
+```
 
 **Signature**
 

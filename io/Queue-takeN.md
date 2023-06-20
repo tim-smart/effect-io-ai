@@ -4,7 +4,14 @@ Takes the specified number of elements from the queue. If there are fewer
 than the specified number of elements available, it suspends until they
 become available.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `takeN` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.takeN
+```
 
 **Signature**
 

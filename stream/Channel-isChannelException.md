@@ -3,7 +3,14 @@
 Returns `true` if the specified value is an `ChannelException`, `false`
 otherwise.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `isChannelException` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.isChannelException
+```
 
 **Signature**
 

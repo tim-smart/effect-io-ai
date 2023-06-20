@@ -2,7 +2,14 @@
 
 Returns `true` if the specified `Interval` is empty, `false` otherwise.
 
-Part of the `Interval` module, imported from `@effect/io/Schedule/Interval`.
+To import and use `isEmpty` from the "Interval" module:
+
+```ts
+import * as Interval from '@effect/io/Schedule/Interval'
+
+// Can be accessed like this
+Interval.isEmpty
+```
 
 **Signature**
 

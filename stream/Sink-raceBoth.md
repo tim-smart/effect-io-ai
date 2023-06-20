@@ -3,7 +3,14 @@
 Runs both sinks in parallel on the input, returning the result or the error
 from the one that finishes first.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `raceBoth` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.raceBoth
+```
 
 **Signature**
 

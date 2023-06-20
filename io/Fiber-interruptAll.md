@@ -2,7 +2,14 @@
 
 Interrupts all fibers, awaiting their interruption.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `interruptAll` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.interruptAll
+```
 
 **Signature**
 

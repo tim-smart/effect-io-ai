@@ -3,7 +3,14 @@
 Visit each node of the tree in order with key lower than max and greater
 than or equal to min.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `forEachBetween` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.forEachBetween
+```
 
 **Signature**
 

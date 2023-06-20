@@ -4,7 +4,14 @@ Executes a pure fold over the stream of values. Returns a scoped value that
 represents the scope of the stream. Stops the fold early when the condition
 is not fulfilled.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runFoldWhileScoped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runFoldWhileScoped
+```
 
 **Signature**
 

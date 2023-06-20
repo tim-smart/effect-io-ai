@@ -2,7 +2,14 @@
 
 Determine if a `Option` is a `Some`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `isSome` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.isSome
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Creates a `RuntimeFlagsPatch` describing disabling the provided `RuntimeFlag`.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `disable` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.disable
+```
 
 **Signature**
 

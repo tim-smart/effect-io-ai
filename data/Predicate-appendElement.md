@@ -3,7 +3,14 @@
 This function appends a predicate to a tuple-like predicate, allowing you to create a new predicate that includes
 the original elements and the new one.
 
-Part of the `Predicate` module, imported from `@effect/data/Predicate`.
+To import and use `appendElement` from the "Predicate" module:
+
+```ts
+import * as Predicate from '@effect/data/Predicate'
+
+// Can be accessed like this
+Predicate.appendElement
+```
 
 **Signature**
 

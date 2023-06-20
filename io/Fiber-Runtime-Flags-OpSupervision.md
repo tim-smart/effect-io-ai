@@ -5,7 +5,14 @@ will supervise all operations of the Effect runtime. Use of this flag will
 negatively impact performance, but is required for some operations, such as
 profiling.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `OpSupervision` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.OpSupervision
+```
 
 **Signature**
 

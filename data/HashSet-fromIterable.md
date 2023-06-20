@@ -2,7 +2,14 @@
 
 Construct a new `HashSet` from a `Collection` of values
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `fromIterable` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.fromIterable
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Maps over the `Cause` contained in the `Failure` of the specified exit using
 the provided function.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `mapErrorCause` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.mapErrorCause
+```
 
 **Signature**
 

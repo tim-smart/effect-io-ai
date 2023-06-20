@@ -6,7 +6,14 @@ It returns an error if the value can't be converted (for example when non-numeri
 
 The following special string values are supported: "NaN", "Infinity", "-Infinity".
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `numberFromString` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.numberFromString
+```
 
 **Signature**
 

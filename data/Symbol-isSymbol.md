@@ -2,7 +2,14 @@
 
 Tests if a value is a `symbol`.
 
-Part of the `Symbol` module, imported from `@effect/data/Symbol`.
+To import and use `isSymbol` from the "Symbol" module:
+
+```ts
+import * as Symbol from '@effect/data/Symbol'
+
+// Can be accessed like this
+Symbol.isSymbol
+```
 
 **Example**
 

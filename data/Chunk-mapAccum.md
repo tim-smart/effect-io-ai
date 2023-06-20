@@ -2,7 +2,14 @@
 
 Statefully maps over the chunk, producing new elements of type `B`.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `mapAccum` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.mapAccum
+```
 
 **Signature**
 

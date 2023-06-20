@@ -3,7 +3,14 @@
 Provides the effect with its required context, which eliminates its
 dependency on `R`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `provideContext` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.provideContext
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 A `Semigroup` that uses the minimum between two values.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `SemigroupMin` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.SemigroupMin
+```
 
 **Example**
 

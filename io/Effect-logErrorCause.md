@@ -2,7 +2,14 @@
 
 Logs the specified cause at the error log level.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `logErrorCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.logErrorCause
+```
 
 **Signature**
 

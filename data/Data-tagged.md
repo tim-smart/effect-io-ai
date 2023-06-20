@@ -2,7 +2,14 @@
 
 Provides a tagged constructor for the specified `Case`.
 
-Part of the `Data` module, imported from `@effect/data/Data`.
+To import and use `tagged` from the "Data" module:
+
+```ts
+import * as Data from '@effect/data/Data'
+
+// Can be accessed like this
+Data.tagged
+```
 
 **Signature**
 

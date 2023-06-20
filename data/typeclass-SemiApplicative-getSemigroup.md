@@ -2,7 +2,14 @@
 
 Lift a `Semigroup` into 'F', the inner values are combined using the provided `Semigroup`.
 
-Part of the `SemiApplicative` module, imported from `@effect/data/typeclass/SemiApplicative`.
+To import and use `getSemigroup` from the "SemiApplicative" module:
+
+```ts
+import * as SemiApplicative from '@effect/data/typeclass/SemiApplicative'
+
+// Can be accessed like this
+SemiApplicative.getSemigroup
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns `true` if the specified `ConfigError` is a `SourceUnavailable`,
 `false` otherwise.
 
-Part of the `Error` module, imported from `@effect/io/Config/Error`.
+To import and use `isSourceUnavailable` from the "Error" module:
+
+```ts
+import * as Error from '@effect/io/Config/Error'
+
+// Can be accessed like this
+Error.isSourceUnavailable
+```
 
 **Signature**
 

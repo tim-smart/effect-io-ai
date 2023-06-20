@@ -9,7 +9,14 @@ Similar to `Promise.all` but operates on `Equivalence`s.
 Given a tuple of `Equivalence`s returns a new `Equivalence` that compares values of a tuple
 by applying each `Equivalence` to the corresponding element of the tuple.
 
-Part of the `Equivalence` module, imported from `@effect/data/typeclass/Equivalence`.
+To import and use `tuple` from the "Equivalence" module:
+
+```ts
+import * as Equivalence from '@effect/data/typeclass/Equivalence'
+
+// Can be accessed like this
+Equivalence.tuple
+```
 
 **Signature**
 

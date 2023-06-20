@@ -4,7 +4,14 @@ Returns a new schedule with the single service it requires provided to it.
 If the schedule requires multiple services use `provideContext`
 instead.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `provideService` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.provideService
+```
 
 **Signature**
 

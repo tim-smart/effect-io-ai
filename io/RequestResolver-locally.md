@@ -2,7 +2,14 @@
 
 Returns a new data source with a localized FiberRef
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `locally` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.locally
+```
 
 **Signature**
 

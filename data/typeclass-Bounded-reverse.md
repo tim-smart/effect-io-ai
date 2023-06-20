@@ -2,7 +2,14 @@
 
 Reverses the `Order` of a `Bounded` and flips `maxBound` and `minBound` values.
 
-Part of the `Bounded` module, imported from `@effect/data/typeclass/Bounded`.
+To import and use `reverse` from the "Bounded" module:
+
+```ts
+import * as Bounded from '@effect/data/typeclass/Bounded'
+
+// Can be accessed like this
+Bounded.reverse
+```
 
 **Signature**
 

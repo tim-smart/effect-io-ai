@@ -6,7 +6,14 @@ are done in addition to the first execution, which means using
 additional recurrence, for a total of two repetitions of each value in the
 stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `repeatElements` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.repeatElements
+```
 
 **Signature**
 

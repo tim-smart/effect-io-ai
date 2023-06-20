@@ -3,7 +3,14 @@
 Constructs a data source from a function taking a collection of requests
 and returning a `RequestCompletionMap`.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `makeBatched` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.makeBatched
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Insert an element at the specified index, creating a new `NonEmptyArray`,
 or return `None` if the index is out of bounds.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `insertAt` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.insertAt
+```
 
 **Signature**
 

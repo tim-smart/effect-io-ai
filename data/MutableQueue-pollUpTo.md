@@ -4,7 +4,14 @@ Dequeues up to `n` elements from the queue.
 
 Returns a `List` of up to `n` elements.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `pollUpTo` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.pollUpTo
+```
 
 **Signature**
 

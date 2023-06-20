@@ -5,7 +5,14 @@ returning the first successful `A` from the faster side. If one effect
 succeeds, the other will be interrupted. If neither succeeds, then the
 effect will fail with some error.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `raceAwait` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.raceAwait
+```
 
 **Signature**
 

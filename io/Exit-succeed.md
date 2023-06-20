@@ -2,7 +2,14 @@
 
 Constructs a new `Exit.Success` containing the specified value of type `A`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `succeed` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.succeed
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Filters any `Right` values.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `collectLeft` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.collectLeft
+```
 
 **Signature**
 

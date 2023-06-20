@@ -2,7 +2,14 @@
 
 Maps over the entries of the `HashMap` using the specified function.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `mapWithIndex` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.mapWithIndex
+```
 
 **Signature**
 

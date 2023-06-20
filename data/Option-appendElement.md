@@ -2,7 +2,14 @@
 
 Appends an element to the end of a tuple wrapped in an `Option` type.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `appendElement` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.appendElement
+```
 
 **Example**
 

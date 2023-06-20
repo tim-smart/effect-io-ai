@@ -2,7 +2,14 @@
 
 Creates a new supervisor that tracks children in a set.
 
-Part of the `Supervisor` module, imported from `@effect/io/Supervisor`.
+To import and use `track` from the "Supervisor" module:
+
+```ts
+import * as Supervisor from '@effect/io/Supervisor'
+
+// Can be accessed like this
+Supervisor.track
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Repeatedly runs the sink and accumulates its results into a `Chunk`.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `collectAllFrom` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.collectAllFrom
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Converts the specified `Cause<Option<E>>` to an `Option<Cause<E>>` by
 recursively stripping out any failures with the error `None`.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `flipCauseOption` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.flipCauseOption
+```
 
 **Signature**
 

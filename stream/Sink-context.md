@@ -2,7 +2,14 @@
 
 Accesses the whole context of the sink.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `context` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.context
+```
 
 **Signature**
 

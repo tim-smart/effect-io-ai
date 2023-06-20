@@ -5,7 +5,14 @@ The **maximum** number of elements that a queue can hold.
 **Note**: unbounded queues can still implement this interface with
 `capacity = Infinity`.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `capacity` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.capacity
+```
 
 **Signature**
 

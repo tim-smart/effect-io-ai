@@ -2,7 +2,14 @@
 
 A counter, which can be incremented by numbers.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `counter` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.counter
+```
 
 **Signature**
 

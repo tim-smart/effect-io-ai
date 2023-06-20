@@ -15,7 +15,14 @@ first disconnects the effect's interruption signal before performing the
 timeout, resulting in earliest possible return, before an underlying effect
 has been successfully interrupted.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `timeout` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.timeout
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns a new schedule that collects the outputs of this one into a chunk.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `collectAllOutputs` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.collectAllOutputs
+```
 
 **Signature**
 

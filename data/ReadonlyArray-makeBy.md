@@ -4,7 +4,14 @@ Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.
 
 **Note**. `n` is normalized to an integer >= 1.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `makeBy` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.makeBy
+```
 
 **Example**
 

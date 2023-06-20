@@ -4,7 +4,14 @@ Fan out the stream, producing a list of streams that have the same elements
 as this stream. The driver stream will only ever advance the `maximumLag`
 chunks before the slowest downstream stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `broadcast` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.broadcast
+```
 
 **Signature**
 

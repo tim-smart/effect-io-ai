@@ -3,7 +3,14 @@
 Executes the predicate on the value of the specified exit if it is a
 `Success`, otherwise returns `false`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `exists` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.exists
+```
 
 **Signature**
 

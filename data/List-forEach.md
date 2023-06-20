@@ -2,7 +2,14 @@
 
 Applies the specified function to each element of the list.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `forEach` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.forEach
+```
 
 **Signature**
 

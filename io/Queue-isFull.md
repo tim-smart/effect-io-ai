@@ -3,7 +3,14 @@
 Returns `true` if the `Queue` contains at least one element, `false`
 otherwise.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `isFull` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.isFull
+```
 
 **Signature**
 

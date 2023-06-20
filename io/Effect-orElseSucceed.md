@@ -3,7 +3,14 @@
 Executes this effect and returns its value, if it succeeds, but
 otherwise succeeds with the specified value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `orElseSucceed` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.orElseSucceed
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Translates any failure into a stream termination, making the stream
 infallible and all failures unchecked.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `orDie` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.orDie
+```
 
 **Signature**
 

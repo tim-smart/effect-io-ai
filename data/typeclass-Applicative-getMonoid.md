@@ -5,7 +5,14 @@ Lift a `Monoid` into `F`, combining the inner values using the provided `Monoid`
 - `combine` is provided by {@link semiApplicative.getSemigroup}.
 - `empty` is `F.of(M.empty)`
 
-Part of the `Applicative` module, imported from `@effect/data/typeclass/Applicative`.
+To import and use `getMonoid` from the "Applicative" module:
+
+```ts
+import * as Applicative from '@effect/data/typeclass/Applicative'
+
+// Can be accessed like this
+Applicative.getMonoid
+```
 
 **Signature**
 

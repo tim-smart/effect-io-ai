@@ -2,7 +2,14 @@
 
 Returns an `IterableIterator` of the values in the `HashSet`.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `values` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.values
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Keeps none of the errors, and terminates the stream with them, using the
 specified function to convert the `E` into a defect.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `orDieWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.orDieWith
+```
 
 **Signature**
 

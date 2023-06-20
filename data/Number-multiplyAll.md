@@ -2,7 +2,14 @@
 
 Takes an `Iterable` of `number`s and returns their multiplication as a single `number`.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `multiplyAll` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.multiplyAll
+```
 
 **Example**
 

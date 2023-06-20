@@ -4,7 +4,14 @@ Returns a new stream that only emits elements that are not equal to the
 previous element emitted, using the specified effectual function to
 determine whether two elements are equal.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `changesWithEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.changesWithEffect
+```
 
 **Signature**
 

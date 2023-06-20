@@ -4,7 +4,14 @@ Retrieves the size of the queue, which is equal to the number of elements
 in the queue. This may be negative if fibers are suspended waiting for
 elements to be added to the queue.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `size` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.size
+```
 
 **Signature**
 

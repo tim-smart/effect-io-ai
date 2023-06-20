@@ -2,7 +2,14 @@
 
 Converts this channel to a `Sink`.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `toSink` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.toSink
+```
 
 **Signature**
 

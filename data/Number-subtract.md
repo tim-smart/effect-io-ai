@@ -2,7 +2,14 @@
 
 Provides a subtraction operation on `number`s.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `subtract` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.subtract
+```
 
 **Example**
 

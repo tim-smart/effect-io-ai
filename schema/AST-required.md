@@ -2,7 +2,14 @@
 
 Equivalent at runtime to the built-in TypeScript utility type `Required`.
 
-Part of the `AST` module, imported from `@effect/schema/AST`.
+To import and use `required` from the "AST" module:
+
+```ts
+import * as AST from '@effect/schema/AST'
+
+// Can be accessed like this
+AST.required
+```
 
 **Signature**
 

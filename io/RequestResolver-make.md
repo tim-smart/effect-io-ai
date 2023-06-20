@@ -3,7 +3,14 @@
 Constructs a data source with the specified identifier and method to run
 requests.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `make` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.make
+```
 
 **Signature**
 

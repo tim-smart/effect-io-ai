@@ -2,7 +2,14 @@
 
 Returns a new list with the elements of the specified list in reverse order.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `reverse` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.reverse
+```
 
 **Signature**
 

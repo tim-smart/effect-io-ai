@@ -2,7 +2,14 @@
 
 Apply a function to the head, creating a new `NonEmptyReadonlyArray`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `modifyNonEmptyHead` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.modifyNonEmptyHead
+```
 
 **Signature**
 

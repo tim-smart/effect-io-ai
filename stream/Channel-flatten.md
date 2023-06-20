@@ -4,7 +4,14 @@ Returns a new channel, which flattens the terminal value of this channel.
 This function may only be called if the terminal value of this channel is
 another channel of compatible types.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `flatten` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.flatten
+```
 
 **Signature**
 

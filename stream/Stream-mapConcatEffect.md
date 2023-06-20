@@ -3,7 +3,14 @@
 Effectfully maps each element to an iterable, and flattens the iterables
 into the output of this stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mapConcatEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mapConcatEffect
+```
 
 **Signature**
 

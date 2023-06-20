@@ -3,7 +3,14 @@
 Combines two patches to produce a new patch that describes applying the
 updates from this patch and then the updates from the specified patch.
 
-Part of the `ContextPatch` module, imported from `@effect/data/Differ/ContextPatch`.
+To import and use `combine` from the "ContextPatch" module:
+
+```ts
+import * as ContextPatch from '@effect/data/Differ/ContextPatch'
+
+// Can be accessed like this
+ContextPatch.combine
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 A more powerful variation of `timed` that allows specifying the clock.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `timedWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.timedWith
+```
 
 **Signature**
 

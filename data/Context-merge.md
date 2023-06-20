@@ -2,7 +2,14 @@
 
 Merges two `Context`s, returning a new `Context` containing the services of both.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `merge` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.merge
+```
 
 **Example**
 

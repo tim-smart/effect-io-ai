@@ -2,7 +2,14 @@
 
 A variant of `bind` that sequentially ignores the scope.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `bindDiscard` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.bindDiscard
+```
 
 **Signature**
 

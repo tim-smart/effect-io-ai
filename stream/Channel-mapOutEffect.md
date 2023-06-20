@@ -3,7 +3,14 @@
 Creates a channel that is like this channel but the given effectful function
 gets applied to each emitted output element.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `mapOutEffect` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.mapOutEffect
+```
 
 **Signature**
 

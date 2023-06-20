@@ -6,7 +6,14 @@ the terminal value of this channel. The result is a channel that will first
 perform the functions of this channel, before performing the functions of
 the created channel (including yielding its terminal value).
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `flatMap` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.flatMap
+```
 
 **Signature**
 

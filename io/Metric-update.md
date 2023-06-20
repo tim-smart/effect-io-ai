@@ -4,7 +4,14 @@ Updates the metric with the specified update message. For example, if the
 metric were a counter, the update would increment the method by the
 provided amount.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `update` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.update
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 `Semigroup` that returns last maximum of elements.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `max` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.max
+```
 
 **Signature**
 

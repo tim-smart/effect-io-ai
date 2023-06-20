@@ -3,7 +3,14 @@
 Folds over the elements of the list using the specified function, using the
 specified initial value.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `reduce` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.reduce
+```
 
 **Signature**
 

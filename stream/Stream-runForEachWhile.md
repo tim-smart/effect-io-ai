@@ -3,7 +3,14 @@
 Consumes elements of the stream, passing them to the specified callback,
 and terminating consumption when the callback returns `false`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runForEachWhile` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runForEachWhile
+```
 
 **Signature**
 

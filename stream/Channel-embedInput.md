@@ -3,7 +3,14 @@
 Returns a new channel which connects the given `AsyncInputProducer` as
 this channel's input.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `embedInput` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.embedInput
+```
 
 **Signature**
 

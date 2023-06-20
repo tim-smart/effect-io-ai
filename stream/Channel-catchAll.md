@@ -4,7 +4,14 @@ Returns a new channel that is the same as this one, except if this channel
 errors for any typed error, then the returned channel will switch over to
 using the fallback channel returned by the specified error handler.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `catchAll` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.catchAll
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ original `Effect` value succeeds, the returned `Effect` value will also
 succeed. If the original `Effect` value fails, the returned `Effect` value
 will fail with the same error.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `asUnit` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.asUnit
+```
 
 **Signature**
 

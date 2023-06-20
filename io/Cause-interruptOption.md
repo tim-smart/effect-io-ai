@@ -3,7 +3,14 @@
 Returns the `FiberId` associated with the first `Interrupt` in the specified
 cause, if one exists.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `interruptOption` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.interruptOption
+```
 
 **Signature**
 

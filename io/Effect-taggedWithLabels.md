@@ -2,7 +2,14 @@
 
 Tags each metric in this effect with the specific tag.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `taggedWithLabels` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.taggedWithLabels
+```
 
 **Signature**
 

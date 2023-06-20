@@ -2,7 +2,14 @@
 
 Returns `true` if the specified `ConfigError` is an `And`, `false` otherwise.
 
-Part of the `Error` module, imported from `@effect/io/Config/Error`.
+To import and use `isAnd` from the "Error" module:
+
+```ts
+import * as Error from '@effect/io/Config/Error'
+
+// Can be accessed like this
+Error.isAnd
+```
 
 **Signature**
 

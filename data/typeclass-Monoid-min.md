@@ -4,7 +4,14 @@ Get a monoid where `combine` will return the minimum, based on the provided boun
 
 The `empty` value is the `maxBound` value.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `min` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.min
+```
 
 **Signature**
 

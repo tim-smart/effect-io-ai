@@ -2,7 +2,14 @@
 
 A schedule that always recurs, producing a count of repeats: 0, 1, 2.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `forever` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.forever
+```
 
 **Signature**
 

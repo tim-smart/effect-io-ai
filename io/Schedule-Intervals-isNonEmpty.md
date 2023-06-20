@@ -2,7 +2,14 @@
 
 Returns `true` if this `Intervals` is non-empty, `false` otherwise.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `isNonEmpty` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.isNonEmpty
+```
 
 **Signature**
 

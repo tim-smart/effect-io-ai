@@ -7,7 +7,14 @@ composed effect will fail with some error.
 WARNING: The raced effect will safely interrupt the "loser", but will not
 resume until the loser has been cleanly terminated.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `raceEither` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.raceEither
+```
 
 **Signature**
 

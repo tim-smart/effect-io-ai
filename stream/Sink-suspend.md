@@ -3,7 +3,14 @@
 Returns a lazily constructed sink that may require effects for its
 creation.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `suspend` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.suspend
+```
 
 **Signature**
 

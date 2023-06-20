@@ -3,7 +3,14 @@
 Applies the function `f` if the argument is non-empty and returns the
 results in a new `Option<B>`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forEachOption` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forEachOption
+```
 
 **Signature**
 

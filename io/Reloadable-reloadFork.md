@@ -2,7 +2,14 @@
 
 Forks the reload of the service in the background, ignoring any errors.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `reloadFork` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.reloadFork
+```
 
 **Signature**
 

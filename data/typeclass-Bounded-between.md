@@ -2,7 +2,14 @@
 
 Checks if a value is between the lower and upper limit of a bound.
 
-Part of the `Bounded` module, imported from `@effect/data/typeclass/Bounded`.
+To import and use `between` from the "Bounded" module:
+
+```ts
+import * as Bounded from '@effect/data/typeclass/Bounded'
+
+// Can be accessed like this
+Bounded.between
+```
 
 **Signature**
 

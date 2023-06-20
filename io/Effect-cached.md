@@ -3,7 +3,14 @@
 Returns an effect that, if evaluated, will return the lazily computed
 result of this effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `cached` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.cached
+```
 
 **Signature**
 

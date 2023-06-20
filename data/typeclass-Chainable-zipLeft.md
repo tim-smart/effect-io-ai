@@ -3,7 +3,14 @@
 Sequences the specified effect after this effect, but ignores the value
 produced by the effect.
 
-Part of the `Chainable` module, imported from `@effect/data/typeclass/Chainable`.
+To import and use `zipLeft` from the "Chainable" module:
+
+```ts
+import * as Chainable from '@effect/data/typeclass/Chainable'
+
+// Can be accessed like this
+Chainable.zipLeft
+```
 
 **Signature**
 

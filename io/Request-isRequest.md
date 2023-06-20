@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `Request`, `false` otherwise.
 
-Part of the `Request` module, imported from `@effect/io/Request`.
+To import and use `isRequest` from the "Request" module:
+
+```ts
+import * as Request from '@effect/io/Request'
+
+// Can be accessed like this
+Request.isRequest
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Keeps none of the errors, and terminates the fiber with them, using the
 specified function to convert the `OutErr` into a defect.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `orDieWith` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.orDieWith
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Returns a `BrandErrors` that contains a single `RefinementError`.
 
-Part of the `Brand` module, imported from `@effect/data/Brand`.
+To import and use `error` from the "Brand" module:
+
+```ts
+import * as Brand from '@effect/data/Brand'
+
+// Can be accessed like this
+Brand.error
+```
 
 **Signature**
 

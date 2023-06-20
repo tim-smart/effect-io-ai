@@ -4,7 +4,14 @@ Acts on the children of this fiber (collected into a single fiber),
 guaranteeing the specified callback will be invoked, whether or not this
 effect succeeds.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `ensuringChild` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.ensuringChild
+```
 
 **Signature**
 

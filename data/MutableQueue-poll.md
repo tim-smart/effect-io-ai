@@ -7,7 +7,14 @@ Returns either an element from the queue, or the `def` param.
 **Note**: if there is no meaningful default for your type, you can always
 use `poll(MutableQueue.EmptyMutableQueue)`.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `poll` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.poll
+```
 
 **Signature**
 

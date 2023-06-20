@@ -2,7 +2,14 @@
 
 Reduces an `Iterable` of `Option<A>` to a single value of type `B`, elements that are `None` are ignored.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `reduceCompact` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.reduceCompact
+```
 
 **Example**
 

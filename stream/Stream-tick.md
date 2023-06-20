@@ -2,7 +2,14 @@
 
 A stream that emits Unit values spaced by the specified duration.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `tick` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.tick
+```
 
 **Signature**
 

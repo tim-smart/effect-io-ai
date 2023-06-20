@@ -2,7 +2,14 @@
 
 Filters the elements emitted by this stream using the provided function.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `filter` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.filter
+```
 
 **Signature**
 

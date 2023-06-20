@@ -8,7 +8,14 @@ success value of the effect.
 If the timeout elapses without producing a value, the running effect will
 be safely interrupted.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `timeoutTo` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.timeoutTo
+```
 
 **Signature**
 

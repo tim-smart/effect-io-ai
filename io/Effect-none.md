@@ -2,7 +2,14 @@
 
 Requires the option produced by this value to be `None`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `none` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.none
+```
 
 **Signature**
 

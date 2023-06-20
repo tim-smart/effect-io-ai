@@ -3,7 +3,14 @@
 The interruption flag determines whether or not the Effect runtime system will
 interrupt a fiber.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `Interruption` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.Interruption
+```
 
 **Signature**
 

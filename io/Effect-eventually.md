@@ -3,7 +3,14 @@
 Returns an effect that ignores errors and runs repeatedly until it
 eventually succeeds.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `eventually` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.eventually
+```
 
 **Signature**
 

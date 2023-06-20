@@ -2,7 +2,14 @@
 
 Partitions the stream with specified `chunkSize`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `grouped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.grouped
+```
 
 **Signature**
 

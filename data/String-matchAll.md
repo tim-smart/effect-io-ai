@@ -2,7 +2,14 @@
 
 It is the `pipe`-able version of the native `matchAll` method.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `matchAll` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.matchAll
+```
 
 **Signature**
 

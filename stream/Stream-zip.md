@@ -5,7 +5,14 @@ both streams.
 
 The new stream will end when one of the sides ends.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zip` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zip
+```
 
 **Signature**
 

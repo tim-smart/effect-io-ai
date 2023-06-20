@@ -3,7 +3,14 @@
 Performs the specified stream transformation with the chunk structure of
 the stream exposed.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `chunksWith` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.chunksWith
+```
 
 **Signature**
 

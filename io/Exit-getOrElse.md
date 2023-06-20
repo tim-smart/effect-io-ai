@@ -4,7 +4,14 @@ Returns the `A` if specified exit is a `Success`, otherwise returns the
 alternate `A` value computed from the specified function which receives the
 `Cause<E>` of the exit `Failure`.
 
-Part of the `Exit` module, imported from `@effect/io/Exit`.
+To import and use `getOrElse` from the "Exit" module:
+
+```ts
+import * as Exit from '@effect/io/Exit'
+
+// Can be accessed like this
+Exit.getOrElse
+```
 
 **Signature**
 

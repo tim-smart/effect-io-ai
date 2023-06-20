@@ -2,7 +2,14 @@
 
 Returns a new effect that executes this one and times the execution.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `timed` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.timed
+```
 
 **Signature**
 

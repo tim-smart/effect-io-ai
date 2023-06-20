@@ -2,7 +2,14 @@
 
 Returns a default binary `traverseFilterMap` implementation.
 
-Part of the `TraversableFilterable` module, imported from `@effect/data/typeclass/TraversableFilterable`.
+To import and use `traverseFilterMap` from the "TraversableFilterable" module:
+
+```ts
+import * as TraversableFilterable from '@effect/data/typeclass/TraversableFilterable'
+
+// Can be accessed like this
+TraversableFilterable.traverseFilterMap
+```
 
 **Signature**
 

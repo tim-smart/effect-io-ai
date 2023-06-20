@@ -2,7 +2,14 @@
 
 Constructs `Intervals` from the specified `Iterable<Interval>`.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `fromIterable` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.fromIterable
+```
 
 **Signature**
 

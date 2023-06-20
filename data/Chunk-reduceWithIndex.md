@@ -2,7 +2,14 @@
 
 Folds over the elements in this chunk from the left.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `reduceWithIndex` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.reduceWithIndex
+```
 
 **Signature**
 

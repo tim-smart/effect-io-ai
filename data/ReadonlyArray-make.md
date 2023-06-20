@@ -2,7 +2,14 @@
 
 Builds a `NonEmptyArray` from an non-empty collection of elements.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `make` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.make
+```
 
 **Signature**
 

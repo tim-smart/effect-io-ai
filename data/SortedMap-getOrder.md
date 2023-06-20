@@ -2,7 +2,14 @@
 
 Gets the `Order<K>` that the `SortedMap<K, V>` is using.
 
-Part of the `SortedMap` module, imported from `@effect/data/SortedMap`.
+To import and use `getOrder` from the "SortedMap" module:
+
+```ts
+import * as SortedMap from '@effect/data/SortedMap'
+
+// Can be accessed like this
+SortedMap.getOrder
+```
 
 **Signature**
 

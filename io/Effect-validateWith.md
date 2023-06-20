@@ -3,7 +3,14 @@
 Sequentially zips this effect with the specified effect using the specified
 combiner function. Combines the causes in case both effect fail.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validateWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validateWith
+```
 
 **Signature**
 

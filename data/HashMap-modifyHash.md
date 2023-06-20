@@ -9,7 +9,14 @@ exists, or `None` if no such value exists.
 
 This function will always either update or insert a value into the `HashMap`.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `modifyHash` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.modifyHash
+```
 
 **Signature**
 

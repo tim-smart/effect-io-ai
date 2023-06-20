@@ -2,7 +2,14 @@
 
 A schedule that recurs for until the predicate evaluates to true.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `recurUntil` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.recurUntil
+```
 
 **Signature**
 

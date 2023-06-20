@@ -3,7 +3,14 @@
 Gets the value of the specified `FiberRef` in this collection of `FiberRef`
 values if it exists or the `initial` value of the `FiberRef` otherwise.
 
-Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+To import and use `getOrDefault` from the "FiberRefs" module:
+
+```ts
+import * as FiberRefs from '@effect/io/FiberRefs'
+
+// Can be accessed like this
+FiberRefs.getOrDefault
+```
 
 **Signature**
 

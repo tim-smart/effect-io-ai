@@ -4,7 +4,14 @@ Fails with given error in case this one fails with a typed error.
 
 See also `Stream.catchAll`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `orElseFail` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.orElseFail
+```
 
 **Signature**
 

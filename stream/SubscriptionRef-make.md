@@ -2,7 +2,14 @@
 
 Creates a new `SubscriptionRef` with the specified value.
 
-Part of the `SubscriptionRef` module, imported from `@effect/stream/SubscriptionRef`.
+To import and use `make` from the "SubscriptionRef" module:
+
+```ts
+import * as SubscriptionRef from '@effect/stream/SubscriptionRef'
+
+// Can be accessed like this
+SubscriptionRef.make
+```
 
 **Signature**
 

@@ -5,7 +5,14 @@ It can be used to create nominal types that allow distinguishing between two val
 
 If you also want to perform some validation, see {@link refined}.
 
-Part of the `Brand` module, imported from `@effect/data/Brand`.
+To import and use `nominal` from the "Brand" module:
+
+```ts
+import * as Brand from '@effect/data/Brand'
+
+// Can be accessed like this
+Brand.nominal
+```
 
 **Example**
 

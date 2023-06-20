@@ -2,7 +2,14 @@
 
 Creates an empty `HashSet`.
 
-Part of the `HashSet` module, imported from `@effect/data/HashSet`.
+To import and use `empty` from the "HashSet" module:
+
+```ts
+import * as HashSet from '@effect/data/HashSet'
+
+// Can be accessed like this
+HashSet.empty
+```
 
 **Signature**
 

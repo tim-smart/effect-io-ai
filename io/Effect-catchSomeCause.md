@@ -2,7 +2,14 @@
 
 Recovers from some or all of the error cases with provided cause.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `catchSomeCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.catchSomeCause
+```
 
 **Signature**
 

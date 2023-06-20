@@ -2,7 +2,14 @@
 
 Unsafely creates a new Semaphore
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unsafeMakeSemaphore` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unsafeMakeSemaphore
+```
 
 **Signature**
 

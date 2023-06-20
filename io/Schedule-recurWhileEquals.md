@@ -3,7 +3,14 @@
 A schedule that recurs for as long as the predicate is equal to the
 specified value.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `recurWhileEquals` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.recurWhileEquals
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Adds a service to a given `Context`.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `add` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.add
+```
 
 **Example**
 

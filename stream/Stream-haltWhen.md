@@ -9,7 +9,14 @@ effect completes. See `interruptWhen` for this behavior.
 
 If the effect completes with a failure, the stream will emit that failure.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `haltWhen` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.haltWhen
+```
 
 **Signature**
 

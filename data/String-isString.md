@@ -2,7 +2,14 @@
 
 Tests if a value is a `string`.
 
-Part of the `String` module, imported from `@effect/data/String`.
+To import and use `isString` from the "String" module:
+
+```ts
+import * as String from '@effect/data/String'
+
+// Can be accessed like this
+String.isString
+```
 
 **Example**
 

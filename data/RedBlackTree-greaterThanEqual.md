@@ -3,7 +3,14 @@
 Returns an iterator that traverse entries in order with keys greater than or
 equal to the specified key.
 
-Part of the `RedBlackTree` module, imported from `@effect/data/RedBlackTree`.
+To import and use `greaterThanEqual` from the "RedBlackTree" module:
+
+```ts
+import * as RedBlackTree from '@effect/data/RedBlackTree'
+
+// Can be accessed like this
+RedBlackTree.greaterThanEqual
+```
 
 **Signature**
 

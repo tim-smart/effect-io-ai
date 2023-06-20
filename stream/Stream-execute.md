@@ -2,7 +2,14 @@
 
 Creates a stream that executes the specified effect but emits no elements.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `execute` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.execute
+```
 
 **Signature**
 

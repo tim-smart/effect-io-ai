@@ -7,7 +7,14 @@ to a `units + burst` threshold. Chunks that do not meet the bandwidth
 constraints are dropped. The weight of each chunk is determined by the
 `costFn` function.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `throttleEnforce` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.throttleEnforce
+```
 
 **Signature**
 

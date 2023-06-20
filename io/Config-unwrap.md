@@ -12,7 +12,14 @@ interface Options { key: string }
 const makeConfig = (config: Config.Wrap<Options>): Config<Options> => unwrap(config)
 ```
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `unwrap` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.unwrap
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 A string histogram metric, which keeps track of the counts of different
 strings.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `frequency` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.frequency
+```
 
 **Signature**
 

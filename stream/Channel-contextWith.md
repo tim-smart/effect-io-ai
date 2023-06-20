@@ -2,7 +2,14 @@
 
 Accesses the context of the channel with the specified function.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `contextWith` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.contextWith
+```
 
 **Signature**
 

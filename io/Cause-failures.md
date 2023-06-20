@@ -3,7 +3,14 @@
 Returns a `List` of all recoverable errors of type `E` in the specified
 cause.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `failures` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.failures
+```
 
 **Signature**
 

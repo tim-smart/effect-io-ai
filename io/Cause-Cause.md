@@ -8,4 +8,11 @@ to represent the `Cause` data type. This allows us to take a base type `E`
 (which represents the error type of an `Effect`) and capture the sequential
 and parallel composition of errors in a fully lossless fashion.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `Cause` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.Cause
+```

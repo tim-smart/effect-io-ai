@@ -2,7 +2,14 @@
 
 Remove duplicates from a `NonEmptyReadonlyArray`, keeping the first occurrence of an element.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `uniqNonEmpty` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.uniqNonEmpty
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Takes a number of elements from the queue between the specified minimum and
 maximum. If there are fewer than the minimum number of elements available,
 suspends until at least the minimum number of elements have been collected.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `takeBetween` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.takeBetween
+```
 
 **Signature**
 

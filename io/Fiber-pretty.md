@@ -2,7 +2,14 @@
 
 Pretty-prints a `RuntimeFiber`.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `pretty` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.pretty
+```
 
 **Signature**
 

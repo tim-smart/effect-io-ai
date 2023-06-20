@@ -3,7 +3,14 @@
 Creates a `Array` of values not included in the other given `Iterable`.
 The order and references of result values are determined by the first `Iterable`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `difference` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.difference
+```
 
 **Signature**
 

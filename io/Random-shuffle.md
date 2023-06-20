@@ -2,7 +2,14 @@
 
 Uses the pseudo-random number generator to shuffle the specified iterable.
 
-Part of the `Random` module, imported from `@effect/io/Random`.
+To import and use `shuffle` from the "Random" module:
+
+```ts
+import * as Random from '@effect/io/Random'
+
+// Can be accessed like this
+Random.shuffle
+```
 
 **Signature**
 

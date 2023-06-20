@@ -2,7 +2,14 @@
 
 Returns the first element of the list, if it exists.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `head` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.head
+```
 
 **Signature**
 

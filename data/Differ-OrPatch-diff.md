@@ -3,7 +3,14 @@
 Constructs an `OrPatch` from a new and old value and a differ for the
 values.
 
-Part of the `OrPatch` module, imported from `@effect/data/Differ/OrPatch`.
+To import and use `diff` from the "OrPatch" module:
+
+```ts
+import * as OrPatch from '@effect/data/Differ/OrPatch'
+
+// Can be accessed like this
+OrPatch.diff
+```
 
 **Signature**
 

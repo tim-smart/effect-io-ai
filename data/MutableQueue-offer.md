@@ -4,7 +4,14 @@ Offers an element to the queue.
 
 Returns whether the enqueue was successful or not.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `offer` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.offer
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Creates a pipeline that groups on adjacent keys, calculated by the
 specified function.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `groupAdjacentBy` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.groupAdjacentBy
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a new `Equivalence` for an array of values based on a given `Equivalence` for the elements of the array.
 
-Part of the `Equivalence` module, imported from `@effect/data/typeclass/Equivalence`.
+To import and use `array` from the "Equivalence" module:
+
+```ts
+import * as Equivalence from '@effect/data/typeclass/Equivalence'
+
+// Can be accessed like this
+Equivalence.array
+```
 
 **Signature**
 

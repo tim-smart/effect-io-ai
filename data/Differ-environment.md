@@ -2,7 +2,14 @@
 
 Constructs a differ that knows how to diff `Env` values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `environment` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.environment
+```
 
 **Signature**
 

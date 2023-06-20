@@ -2,7 +2,14 @@
 
 Produces the intersection of this `Intervals` and that `Intervals`.
 
-Part of the `Intervals` module, imported from `@effect/io/Schedule/Intervals`.
+To import and use `intersect` from the "Intervals" module:
+
+```ts
+import * as Intervals from '@effect/io/Schedule/Intervals'
+
+// Can be accessed like this
+Intervals.intersect
+```
 
 **Signature**
 

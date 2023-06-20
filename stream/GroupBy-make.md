@@ -2,7 +2,14 @@
 
 Constructs a `GroupBy` from a `Stream`.
 
-Part of the `GroupBy` module, imported from `@effect/stream/GroupBy`.
+To import and use `make` from the "GroupBy" module:
+
+```ts
+import * as GroupBy from '@effect/stream/GroupBy'
+
+// Can be accessed like this
+GroupBy.make
+```
 
 **Signature**
 

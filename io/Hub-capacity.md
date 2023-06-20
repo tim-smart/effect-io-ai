@@ -2,7 +2,14 @@
 
 Returns the number of elements the queue can hold.
 
-Part of the `Hub` module, imported from `@effect/io/Hub`.
+To import and use `capacity` from the "Hub" module:
+
+```ts
+import * as Hub from '@effect/io/Hub'
+
+// Can be accessed like this
+Hub.capacity
+```
 
 **Signature**
 

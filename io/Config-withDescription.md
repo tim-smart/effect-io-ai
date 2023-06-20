@@ -2,7 +2,14 @@
 
 Adds a description to this configuration, which is intended for humans.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `withDescription` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.withDescription
+```
 
 **Signature**
 

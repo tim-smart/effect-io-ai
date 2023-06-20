@@ -2,7 +2,14 @@
 
 Takes an `Iterable` of `bigint`s and returns their multiplication as a single `number`.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `multiplyAll` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.multiplyAll
+```
 
 **Example**
 

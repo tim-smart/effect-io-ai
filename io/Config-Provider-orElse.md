@@ -4,7 +4,14 @@ Returns a new config provider that preferentially loads configuration data
 from this one, but which will fall back to the specified alternate provider
 if there are any issues loading the configuration from this provider.
 
-Part of the `Provider` module, imported from `@effect/io/Config/Provider`.
+To import and use `orElse` from the "Provider" module:
+
+```ts
+import * as Provider from '@effect/io/Config/Provider'
+
+// Can be accessed like this
+Provider.orElse
+```
 
 **Signature**
 

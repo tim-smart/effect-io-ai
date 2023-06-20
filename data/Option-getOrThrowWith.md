@@ -4,7 +4,14 @@ Extracts the value of an `Option` or throws if the `Option` is `None`.
 
 If a default error is sufficient for your use case and you don't need to configure the thrown error, see {@link getOrThrow}.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getOrThrowWith` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getOrThrowWith
+```
 
 **Example**
 

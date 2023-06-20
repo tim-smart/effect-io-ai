@@ -2,7 +2,14 @@
 
 Converts a `Either` to an `Option` discarding the error.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `toOption` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.toOption
+```
 
 **Example**
 

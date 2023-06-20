@@ -13,7 +13,14 @@ The `empty` value of the returned `Monoid` is the tuple of `empty` values of the
 
 It is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `tuple` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.tuple
+```
 
 **Signature**
 

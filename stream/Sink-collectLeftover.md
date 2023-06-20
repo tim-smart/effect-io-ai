@@ -3,7 +3,14 @@
 Collects the leftovers from the stream when the sink succeeds and returns
 them as part of the sink's result.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `collectLeftover` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.collectLeftover
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Converts a `Effect<R, Either<E, B>, A>` into a `Effect<R, E, Either<A, B>>`.
 The inverse of `left`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `unleft` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.unleft
+```
 
 **Signature**
 

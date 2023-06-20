@@ -2,7 +2,14 @@
 
 Extracts the optional value, or executes the given 'orElse' effect.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `someOrElseEffect` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.someOrElseEffect
+```
 
 **Signature**
 

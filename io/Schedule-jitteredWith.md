@@ -6,7 +6,14 @@ this schedule.
 The new interval size is between `min * old interval size` and `max * old
 interval size`.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `jitteredWith` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.jitteredWith
+```
 
 **Signature**
 

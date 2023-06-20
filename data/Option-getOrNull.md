@@ -2,7 +2,14 @@
 
 Returns the value of the `Option` if it is a `Some`, otherwise returns `null`.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `getOrNull` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.getOrNull
+```
 
 **Example**
 

@@ -2,7 +2,14 @@
 
 Create a sink which publishes each element to the specified hub.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `fromHub` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.fromHub
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Constructs a `Take`.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `make` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.make
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 The empty `RuntimeFlagsPatch`.
 
-Part of the `Patch` module, imported from `@effect/io/Fiber/Runtime/Flags/Patch`.
+To import and use `empty` from the "Patch" module:
+
+```ts
+import * as Patch from '@effect/io/Fiber/Runtime/Flags/Patch'
+
+// Can be accessed like this
+Patch.empty
+```
 
 **Signature**
 

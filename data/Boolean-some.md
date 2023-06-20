@@ -2,7 +2,14 @@
 
 This utility function is used to check if at least one of the elements in a collection of boolean values is `true`.
 
-Part of the `Boolean` module, imported from `@effect/data/Boolean`.
+To import and use `some` from the "Boolean" module:
+
+```ts
+import * as Boolean from '@effect/data/Boolean'
+
+// Can be accessed like this
+Boolean.some
+```
 
 **Example**
 

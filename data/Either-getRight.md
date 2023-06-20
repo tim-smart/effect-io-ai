@@ -4,7 +4,14 @@ Converts a `Either` to an `Option` discarding the error.
 
 Alias of {@link toOption}.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getRight` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getRight
+```
 
 **Example**
 

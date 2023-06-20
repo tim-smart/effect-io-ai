@@ -2,7 +2,14 @@
 
 Depending on the `Ordering` parameter given to it, returns a value produced by one of the 3 functions provided as parameters.
 
-Part of the `Ordering` module, imported from `@effect/data/Ordering`.
+To import and use `match` from the "Ordering" module:
+
+```ts
+import * as Ordering from '@effect/data/Ordering'
+
+// Can be accessed like this
+Ordering.match
+```
 
 **Example**
 

@@ -3,7 +3,14 @@
 Locally applies the specified `LogLevel` to an `Effect` workflow, reverting
 to the previous `LogLevel` after the `Effect` workflow completes.
 
-Part of the `Level` module, imported from `@effect/io/Logger/Level`.
+To import and use `locally` from the "Level" module:
+
+```ts
+import * as Level from '@effect/io/Logger/Level'
+
+// Can be accessed like this
+Level.locally
+```
 
 **Signature**
 

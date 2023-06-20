@@ -2,7 +2,14 @@
 
 Replaces a value in the record with the new value passed as parameter.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `replaceOption` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.replaceOption
+```
 
 **Example**
 

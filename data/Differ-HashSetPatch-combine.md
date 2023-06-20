@@ -3,7 +3,14 @@
 Combines two set patches to produce a new set patch that describes
 applying their changes sequentially.
 
-Part of the `HashSetPatch` module, imported from `@effect/data/Differ/HashSetPatch`.
+To import and use `combine` from the "HashSetPatch" module:
+
+```ts
+import * as HashSetPatch from '@effect/data/Differ/HashSetPatch'
+
+// Can be accessed like this
+HashSetPatch.combine
+```
 
 **Signature**
 

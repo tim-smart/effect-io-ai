@@ -3,7 +3,14 @@
 Combines this logger with the specified logger to produce a new logger that
 logs to both this logger and that logger.
 
-Part of the `Logger` module, imported from `@effect/io/Logger`.
+To import and use `zip` from the "Logger" module:
+
+```ts
+import * as Logger from '@effect/io/Logger'
+
+// Can be accessed like this
+Logger.zip
+```
 
 **Signature**
 

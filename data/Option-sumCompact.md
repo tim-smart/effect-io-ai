@@ -2,7 +2,14 @@
 
 Sum all numbers in an iterable of `Option<number>` ignoring the `None` values.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `sumCompact` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.sumCompact
+```
 
 **Example**
 

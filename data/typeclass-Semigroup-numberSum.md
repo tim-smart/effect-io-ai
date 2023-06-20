@@ -2,7 +2,14 @@
 
 `number` semigroup under addition.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `numberSum` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.numberSum
+```
 
 **Signature**
 

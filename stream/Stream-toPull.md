@@ -5,7 +5,14 @@ from the stream. The pull effect fails with None when the stream is
 finished, or with Some error if it fails, otherwise it returns a chunk of
 the stream's output.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `toPull` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.toPull
+```
 
 **Signature**
 

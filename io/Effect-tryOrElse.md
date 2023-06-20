@@ -3,7 +3,14 @@
 Executed `that` in case `self` fails with a `Cause` that doesn't contain
 defects, executes `success` in case of successes
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `tryOrElse` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.tryOrElse
+```
 
 **Signature**
 

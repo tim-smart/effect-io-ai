@@ -3,7 +3,14 @@
 Reduces the specified cause into a value of type `Z` using a `Cause.Reducer`.
 Also allows for accessing the provided context during reduction.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `reduceWithContext` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.reduceWithContext
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Note: it will not copy the provided Map, make sure to provide a fresh one.
 
-Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+To import and use `unsafeMake` from the "FiberRefs" module:
+
+```ts
+import * as FiberRefs from '@effect/io/FiberRefs'
+
+// Can be accessed like this
+FiberRefs.unsafeMake
+```
 
 **Signature**
 

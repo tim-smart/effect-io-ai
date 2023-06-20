@@ -3,4 +3,11 @@
 Represents a generic checked exception which occurs when a `Channel` is
 executed.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `ChannelException` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.ChannelException
+```

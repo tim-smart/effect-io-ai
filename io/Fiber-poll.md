@@ -3,7 +3,14 @@
 Tentatively observes the fiber, but returns immediately if it is not
 already done.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `poll` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.poll
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Takes an array of pairs and return two corresponding arrays.
 
 Note: The function is reverse of `zip`.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `unzip` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.unzip
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Equivalent to `intersect` followed by `map`.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `zipWith` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.zipWith
+```
 
 **Signature**
 

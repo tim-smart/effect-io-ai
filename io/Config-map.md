@@ -3,7 +3,14 @@
 Returns a config whose structure is the same as this one, but which produces
 a different value, constructed using the specified function.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `map` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.map
+```
 
 **Signature**
 

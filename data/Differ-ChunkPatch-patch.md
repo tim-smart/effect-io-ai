@@ -4,7 +4,14 @@ Applies a chunk patch to a chunk of values to produce a new chunk of
 values which represents the original chunk of values updated with the
 changes described by this patch.
 
-Part of the `ChunkPatch` module, imported from `@effect/data/Differ/ChunkPatch`.
+To import and use `patch` from the "ChunkPatch" module:
+
+```ts
+import * as ChunkPatch from '@effect/data/Differ/ChunkPatch'
+
+// Can be accessed like this
+ChunkPatch.patch
+```
 
 **Signature**
 

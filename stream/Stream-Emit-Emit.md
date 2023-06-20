@@ -7,4 +7,11 @@ indicates to emit those elements, failing with `Some<E>` indicates to
 terminate with that error, and failing with `None` indicates to terminate
 with an end of stream signal.
 
-Part of the `Emit` module, imported from `@effect/stream/Stream/Emit`.
+To import and use `Emit` from the "Emit" module:
+
+```ts
+import * as Emit from '@effect/stream/Stream/Emit'
+
+// Can be accessed like this
+Emit.Emit
+```

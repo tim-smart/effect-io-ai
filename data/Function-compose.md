@@ -3,7 +3,14 @@
 Composes two functions, `ab` and `bc` into a single function that takes in an argument `a` of type `A` and returns a result of type `C`.
 The result is obtained by first applying the `ab` function to `a` and then applying the `bc` function to the result of `ab`.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `compose` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.compose
+```
 
 **Example**
 

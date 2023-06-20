@@ -10,7 +10,14 @@ as.map(f).filter(g) -> pipe(as, map(f), filter(g))
 
 See also {@link flow}.
 
-Part of the `Function` module, imported from `@effect/data/Function`.
+To import and use `pipe` from the "Function" module:
+
+```ts
+import * as Function from '@effect/data/Function'
+
+// Can be accessed like this
+Function.pipe
+```
 
 **Example**
 

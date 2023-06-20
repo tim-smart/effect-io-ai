@@ -3,7 +3,14 @@
 This function creates and returns a new `Order` for a struct of values based on the given `Order`s
 for each property in the struct.
 
-Part of the `Order` module, imported from `@effect/data/typeclass/Order`.
+To import and use `struct` from the "Order" module:
+
+```ts
+import * as Order from '@effect/data/typeclass/Order'
+
+// Can be accessed like this
+Order.struct
+```
 
 **Signature**
 

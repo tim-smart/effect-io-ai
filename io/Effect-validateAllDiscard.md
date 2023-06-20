@@ -3,7 +3,14 @@
 Feeds elements of type `A` to `f` and accumulates all errors, discarding
 the successes.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `validateAllDiscard` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.validateAllDiscard
+```
 
 **Signature**
 

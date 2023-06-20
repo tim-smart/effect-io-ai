@@ -2,7 +2,14 @@
 
 Constructs a config for an array of values.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `arrayOf` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.arrayOf
+```
 
 **Signature**
 

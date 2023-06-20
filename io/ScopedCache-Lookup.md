@@ -2,4 +2,11 @@
 
 Similar to `Cache.Lookup`, but executes the lookup function within a `Scope`.
 
-Part of the `ScopedCache` module, imported from `@effect/io/ScopedCache`.
+To import and use `Lookup` from the "ScopedCache" module:
+
+```ts
+import * as ScopedCache from '@effect/io/ScopedCache'
+
+// Can be accessed like this
+ScopedCache.Lookup
+```

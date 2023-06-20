@@ -3,7 +3,14 @@
 Returns `true` if the specified `Fiber` is a `RuntimeFiber`, `false`
 otherwise.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `isRuntimeFiber` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.isRuntimeFiber
+```
 
 **Signature**
 

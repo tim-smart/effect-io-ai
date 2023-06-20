@@ -16,4 +16,11 @@ There are five primitive metric types supported by Effect:
 - Histograms
 - Summaries
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `Metric` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.Metric
+```

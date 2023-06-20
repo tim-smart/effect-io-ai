@@ -3,7 +3,14 @@
 Returns a combined string resulting from concatenating each of the values
 from the stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `mkString` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.mkString
+```
 
 **Signature**
 

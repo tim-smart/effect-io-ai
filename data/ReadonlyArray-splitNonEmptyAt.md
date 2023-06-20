@@ -2,7 +2,14 @@
 
 Splits a `NonEmptyReadonlyArray` into two pieces, the first piece has max `n` elements.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `splitNonEmptyAt` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.splitNonEmptyAt
+```
 
 **Signature**
 

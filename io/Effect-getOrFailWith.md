@@ -3,7 +3,14 @@
 Lifts an `Maybe` into an `Effect`. If the option is not defined, fail with
 the specified `e` value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `getOrFailWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.getOrFailWith
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns an effect that will launch the polling metric in a background
 fiber, using the specified schedule.
 
-Part of the `Polling` module, imported from `@effect/io/Metric/Polling`.
+To import and use `launch` from the "Polling" module:
+
+```ts
+import * as Polling from '@effect/io/Metric/Polling'
+
+// Can be accessed like this
+Polling.launch
+```
 
 **Signature**
 

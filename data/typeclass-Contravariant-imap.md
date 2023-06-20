@@ -2,7 +2,14 @@
 
 Returns a default `imap` implementation.
 
-Part of the `Contravariant` module, imported from `@effect/data/typeclass/Contravariant`.
+To import and use `imap` from the "Contravariant" module:
+
+```ts
+import * as Contravariant from '@effect/data/typeclass/Contravariant'
+
+// Can be accessed like this
+Contravariant.imap
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns `true` if the specified value is a `MergeDecision`, `false`
 otherwise.
 
-Part of the `MergeDecision` module, imported from `@effect/stream/Channel/MergeDecision`.
+To import and use `isMergeDecision` from the "MergeDecision" module:
+
+```ts
+import * as MergeDecision from '@effect/stream/Channel/MergeDecision'
+
+// Can be accessed like this
+MergeDecision.isMergeDecision
+```
 
 **Signature**
 

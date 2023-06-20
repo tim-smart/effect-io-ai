@@ -3,7 +3,14 @@
 This function maps the success value of an `Effect` value to a `Left` value
 in an `Either` value.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `asLeft` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.asLeft
+```
 
 **Signature**
 

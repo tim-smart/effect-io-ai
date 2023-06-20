@@ -2,7 +2,14 @@
 
 Returns `true` if the queue is empty, `false` otherwise.
 
-Part of the `MutableQueue` module, imported from `@effect/data/MutableQueue`.
+To import and use `isEmpty` from the "MutableQueue" module:
+
+```ts
+import * as MutableQueue from '@effect/data/MutableQueue'
+
+// Can be accessed like this
+MutableQueue.isEmpty
+```
 
 **Signature**
 

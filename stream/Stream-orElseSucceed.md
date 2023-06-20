@@ -2,7 +2,14 @@
 
 Succeeds with the specified value if this one fails with a typed error.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `orElseSucceed` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.orElseSucceed
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Like `Stream.runForEachChunk`, but returns a scoped effect so the
 finalization order can be controlled.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runForEachChunkScoped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runForEachChunkScoped
+```
 
 **Signature**
 

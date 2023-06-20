@@ -2,7 +2,14 @@
 
 `number` semigroup under multiplication.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `SemigroupMultiply` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.SemigroupMultiply
+```
 
 **Example**
 

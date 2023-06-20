@@ -5,7 +5,14 @@ which contains information about which of the two `Option`s has been chosen.
 
 This is useful when it's important to know whether the value was retrieved from the first `Option` or the second option.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `orElseEither` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.orElseEither
+```
 
 **Signature**
 

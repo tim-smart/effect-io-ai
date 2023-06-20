@@ -2,7 +2,14 @@
 
 Concatentates the specified lists together.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `concat` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.concat
+```
 
 **Signature**
 

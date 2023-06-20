@@ -3,7 +3,14 @@
 The `gen` API is a helper function that provides a generator interface for the `Either` monad instance.
 It can be used to easily create complex `Either` computations in a readable and concise manner.
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `gen` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.gen
+```
 
 **Example**
 

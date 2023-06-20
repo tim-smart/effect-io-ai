@@ -11,7 +11,14 @@ fiber pulls the aggregated value, or until the schedule's delay has passed.
 Aggregated elements will be fed into the schedule to determine the delays
 between pulls.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `aggregateWithinEither` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.aggregateWithinEither
+```
 
 **Signature**
 

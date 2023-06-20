@@ -3,7 +3,14 @@
 Apply a function to the element at the specified key, creating a new record,
 or return `None` if the key doesn't exist.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `modifyOption` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.modifyOption
+```
 
 **Example**
 

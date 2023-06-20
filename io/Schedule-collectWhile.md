@@ -3,7 +3,14 @@
 A schedule that recurs as long as the condition f holds, collecting all
 inputs into a list.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `collectWhile` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.collectWhile
+```
 
 **Signature**
 

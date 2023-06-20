@@ -2,7 +2,14 @@
 
 Returns a data source that executes at most `n` requests in parallel.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `batchN` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.batchN
+```
 
 **Signature**
 

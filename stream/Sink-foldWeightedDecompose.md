@@ -33,7 +33,14 @@ choice than to yield a value that will cross the threshold.
 `Sink.foldWeightedDecomposeEffect` allows the decompose function to return an
 effect value, and consequently it allows the sink to fail.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `foldWeightedDecompose` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.foldWeightedDecompose
+```
 
 **Signature**
 

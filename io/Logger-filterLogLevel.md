@@ -3,7 +3,14 @@
 Returns a version of this logger that only logs messages when the log level
 satisfies the specified predicate.
 
-Part of the `Logger` module, imported from `@effect/io/Logger`.
+To import and use `filterLogLevel` from the "Logger" module:
+
+```ts
+import * as Logger from '@effect/io/Logger'
+
+// Can be accessed like this
+Logger.filterLogLevel
+```
 
 **Signature**
 

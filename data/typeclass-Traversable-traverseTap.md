@@ -5,7 +5,14 @@ through the running of this function on all the values in `T`,
 returning an `T<A>` in a `F` context, ignoring the values
 returned by the provided function.
 
-Part of the `Traversable` module, imported from `@effect/data/typeclass/Traversable`.
+To import and use `traverseTap` from the "Traversable" module:
+
+```ts
+import * as Traversable from '@effect/data/typeclass/Traversable'
+
+// Can be accessed like this
+Traversable.traverseTap
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a fresh version of this layer that will not be shared.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `fresh` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.fresh
+```
 
 **Signature**
 

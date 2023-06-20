@@ -6,7 +6,14 @@ predicate as validation of the input data.
 If you don't want to perform any validation but only distinguish between two values of the same type but with different meanings,
 see {@link nominal}.
 
-Part of the `Brand` module, imported from `@effect/data/Brand`.
+To import and use `refined` from the "Brand" module:
+
+```ts
+import * as Brand from '@effect/data/Brand'
+
+// Can be accessed like this
+Brand.refined
+```
 
 **Example**
 

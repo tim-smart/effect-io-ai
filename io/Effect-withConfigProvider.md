@@ -2,7 +2,14 @@
 
 Executes the specified workflow with the specified configuration provider.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `withConfigProvider` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.withConfigProvider
+```
 
 **Signature**
 

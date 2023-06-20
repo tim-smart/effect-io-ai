@@ -6,7 +6,14 @@ after the given duration.
 An element in the process of being pulled will not be interrupted when the
 given duration completes. See `interruptAfter` for this behavior.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `haltAfter` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.haltAfter
+```
 
 **Signature**
 

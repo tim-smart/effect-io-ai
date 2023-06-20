@@ -3,7 +3,14 @@
 Forks a new scope that is a child of this scope. The child scope will
 automatically be closed when this scope is closed.
 
-Part of the `Scope` module, imported from `@effect/io/Scope`.
+To import and use `fork` from the "Scope" module:
+
+```ts
+import * as Scope from '@effect/io/Scope'
+
+// Can be accessed like this
+Scope.fork
+```
 
 **Signature**
 

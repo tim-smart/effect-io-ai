@@ -4,7 +4,14 @@ Returns a new schedule that effectfully reconsiders every decision made by
 this schedule, possibly modifying the next interval and the output type in
 the process.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `reconsiderEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.reconsiderEffect
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new schedule with its context provided to it, so the
 resulting schedule does not require any context.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `provideContext` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.provideContext
+```
 
 **Signature**
 

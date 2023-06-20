@@ -2,7 +2,14 @@
 
 This schema allows removing whitespaces from the beginning and end of a string.
 
-Part of the `Schema` module, imported from `@effect/schema/Schema`.
+To import and use `Trim` from the "Schema" module:
+
+```ts
+import * as Schema from '@effect/schema/Schema'
+
+// Can be accessed like this
+Schema.Trim
+```
 
 **Signature**
 

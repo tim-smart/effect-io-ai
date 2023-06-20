@@ -2,7 +2,14 @@
 
 Transforms all elements of the chunk for as long as the specified function returns some value
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `filterMapWhile` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.filterMapWhile
+```
 
 **Signature**
 

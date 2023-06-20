@@ -2,7 +2,14 @@
 
 Creates a stream produced from a scoped `Effect`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `unwrapScoped` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.unwrapScoped
+```
 
 **Signature**
 

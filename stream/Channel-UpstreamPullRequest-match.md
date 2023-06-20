@@ -2,7 +2,14 @@
 
 Folds an `UpstreamPullRequest<A>` into a value of type `Z`.
 
-Part of the `UpstreamPullRequest` module, imported from `@effect/stream/Channel/UpstreamPullRequest`.
+To import and use `match` from the "UpstreamPullRequest" module:
+
+```ts
+import * as UpstreamPullRequest from '@effect/stream/Channel/UpstreamPullRequest'
+
+// Can be accessed like this
+UpstreamPullRequest.match
+```
 
 **Signature**
 

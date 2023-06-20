@@ -4,7 +4,14 @@
 
 The `bigint` value is `0n`.
 
-Part of the `Monoid` module, imported from `@effect/data/typeclass/Monoid`.
+To import and use `bigintSum` from the "Monoid" module:
+
+```ts
+import * as Monoid from '@effect/data/typeclass/Monoid'
+
+// Can be accessed like this
+Monoid.bigintSum
+```
 
 **Signature**
 

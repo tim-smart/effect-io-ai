@@ -6,7 +6,14 @@ the race. This method does not interrupt, join, or otherwise do anything
 with the fibers. It can be considered a low-level building block for
 higher-level operators like `race`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `raceFibersWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.raceFibersWith
+```
 
 **Signature**
 

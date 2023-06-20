@@ -3,7 +3,14 @@
 Filters the collection using the specified effectual predicate, removing
 all elements that satisfy the predicate.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `filterNot` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.filterNot
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Creates a metric key for a histogram, with the specified name and boundaries.
 
-Part of the `Key` module, imported from `@effect/io/Metric/Key`.
+To import and use `histogram` from the "Key" module:
+
+```ts
+import * as Key from '@effect/io/Metric/Key'
+
+// Can be accessed like this
+Key.histogram
+```
 
 **Signature**
 

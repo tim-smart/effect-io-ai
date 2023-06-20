@@ -4,7 +4,14 @@ Returns a new data source that executes requests by sending them to this
 data source and that data source, returning the results from the first data
 source to complete and safely interrupting the loser.
 
-Part of the `RequestResolver` module, imported from `@effect/io/RequestResolver`.
+To import and use `race` from the "RequestResolver" module:
+
+```ts
+import * as RequestResolver from '@effect/io/RequestResolver'
+
+// Can be accessed like this
+RequestResolver.race
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns a new schedule that has both the inputs and outputs of this and the
 specified schedule.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `bothInOut` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.bothInOut
+```
 
 **Signature**
 

@@ -12,7 +12,14 @@ are combined using the provided `Semigroup`.
 | right(a1)  | right(a2)  | right(combine(a1, a2))  |
 ```
 
-Part of the `Either` module, imported from `@effect/data/Either`.
+To import and use `getFirstLeftSemigroup` from the "Either" module:
+
+```ts
+import * as Either from '@effect/data/Either'
+
+// Can be accessed like this
+Either.getFirstLeftSemigroup
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Provides the channel with its required context, which eliminates its
 dependency on `Env`.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `provideContext` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.provideContext
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Feeds the error or output services of this layer into the input of either
 the specified `failure` or `success` layers, resulting in a new layer with
 the inputs of this layer, and the error or outputs of the specified layer.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `matchCauseLayer` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.matchCauseLayer
+```
 
 **Signature**
 

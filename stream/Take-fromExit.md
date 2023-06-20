@@ -2,7 +2,14 @@
 
 Creates a `Take` from an `Exit`.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `fromExit` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.fromExit
+```
 
 **Signature**
 

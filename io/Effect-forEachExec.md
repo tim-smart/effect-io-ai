@@ -3,7 +3,14 @@
 Applies the function `f` to each element of the `Collection<A>` and returns
 the result in a new `Arrat<B>` using the specified execution strategy.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `forEachExec` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.forEachExec
+```
 
 **Signature**
 

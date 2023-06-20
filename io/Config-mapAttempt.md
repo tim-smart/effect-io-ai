@@ -4,7 +4,14 @@ Returns a config whose structure is the same as this one, but which may
 produce a different value, constructed using the specified function, which
 may throw exceptions that will be translated into validation errors.
 
-Part of the `Config` module, imported from `@effect/io/Config`.
+To import and use `mapAttempt` from the "Config" module:
+
+```ts
+import * as Config from '@effect/io/Config'
+
+// Can be accessed like this
+Config.mapAttempt
+```
 
 **Signature**
 

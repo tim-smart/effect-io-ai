@@ -3,7 +3,14 @@
 Effectfully transforms both input chunks and result of this sink using the
 provided functions. `f` and `g` must preserve chunking-invariance.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `dimapChunksEffect` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.dimapChunksEffect
+```
 
 **Signature**
 

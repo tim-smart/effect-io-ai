@@ -3,7 +3,14 @@
 Retries this effect for as long as its error is equal to the specified
 error.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `retryWhileEquals` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.retryWhileEquals
+```
 
 **Signature**
 

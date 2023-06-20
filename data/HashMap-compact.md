@@ -2,7 +2,14 @@
 
 Filters out `None` values from a `HashMap` of `Options`s.
 
-Part of the `HashMap` module, imported from `@effect/data/HashMap`.
+To import and use `compact` from the "HashMap" module:
+
+```ts
+import * as HashMap from '@effect/data/HashMap'
+
+// Can be accessed like this
+HashMap.compact
+```
 
 **Signature**
 

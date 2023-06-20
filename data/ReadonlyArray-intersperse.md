@@ -2,7 +2,14 @@
 
 Places an element in between members of an `Iterable`
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `intersperse` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.intersperse
+```
 
 **Signature**
 

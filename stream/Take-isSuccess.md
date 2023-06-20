@@ -2,7 +2,14 @@
 
 Checks if this `take` is a success.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `isSuccess` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.isSuccess
+```
 
 **Signature**
 

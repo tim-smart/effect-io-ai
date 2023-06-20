@@ -2,7 +2,14 @@
 
 Splits this chunk on the first element that matches this predicate.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `splitWhere` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.splitWhere
+```
 
 **Signature**
 

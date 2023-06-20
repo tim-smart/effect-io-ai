@@ -3,7 +3,14 @@
 The same as `timeout`, but instead of producing a `None` in the event of
 timeout, it will produce the specified failure.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `timeoutFailCause` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.timeoutFailCause
+```
 
 **Signature**
 

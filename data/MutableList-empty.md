@@ -2,7 +2,14 @@
 
 Creates an empty `MutableList`.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `empty` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.empty
+```
 
 **Signature**
 

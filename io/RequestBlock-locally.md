@@ -2,7 +2,14 @@
 
 Provides each data source with a fiber ref value.
 
-Part of the `RequestBlock` module, imported from `@effect/io/RequestBlock`.
+To import and use `locally` from the "RequestBlock" module:
+
+```ts
+import * as RequestBlock from '@effect/io/RequestBlock'
+
+// Can be accessed like this
+RequestBlock.locally
+```
 
 **Signature**
 

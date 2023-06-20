@@ -2,7 +2,14 @@
 
 Find the last element for which a predicate holds.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `findLast` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.findLast
+```
 
 **Signature**
 

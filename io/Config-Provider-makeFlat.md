@@ -2,7 +2,14 @@
 
 Creates a new flat config provider.
 
-Part of the `Provider` module, imported from `@effect/io/Config/Provider`.
+To import and use `makeFlat` from the "Provider" module:
+
+```ts
+import * as Provider from '@effect/io/Config/Provider'
+
+// Can be accessed like this
+Provider.makeFlat
+```
 
 **Signature**
 

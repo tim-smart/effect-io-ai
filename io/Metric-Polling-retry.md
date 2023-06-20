@@ -3,7 +3,14 @@
 Returns a new polling metric whose poll function will be retried with the
 specified retry policy.
 
-Part of the `Polling` module, imported from `@effect/io/Metric/Polling`.
+To import and use `retry` from the "Polling" module:
+
+```ts
+import * as Polling from '@effect/io/Metric/Polling'
+
+// Can be accessed like this
+Polling.retry
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Returns `true` if the specified cause contains only interruptions (without
 any `Die` or `Fail` causes), `false` otherwise.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `isInterruptedOnly` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.isInterruptedOnly
+```
 
 **Signature**
 

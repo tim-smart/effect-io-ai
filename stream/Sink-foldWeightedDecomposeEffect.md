@@ -13,7 +13,14 @@ than to yield a value that will cross the threshold.
 
 See `Sink.foldWeightedDecompose` for an example.
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `foldWeightedDecomposeEffect` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.foldWeightedDecomposeEffect
+```
 
 **Signature**
 

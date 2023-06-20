@@ -4,7 +4,14 @@ A useful recursion pattern for processing a `NonEmptyReadonlyArray` to produce a
 `NonEmptyReadonlyArray`. Typically `chop` is called with some function that will consume an initial prefix of the `NonEmptyReadonlyArray` and produce a
 value and the tail of the `NonEmptyReadonlyArray`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `chopNonEmpty` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.chopNonEmpty
+```
 
 **Signature**
 

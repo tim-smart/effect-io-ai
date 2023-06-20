@@ -11,7 +11,14 @@ The returned `Semigroup` combines two tuples of the same type by applying the co
 
 It is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.
 
-Part of the `Semigroup` module, imported from `@effect/data/typeclass/Semigroup`.
+To import and use `tuple` from the "Semigroup" module:
+
+```ts
+import * as Semigroup from '@effect/data/typeclass/Semigroup'
+
+// Can be accessed like this
+Semigroup.tuple
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Combines this differ and the specified differ to produce a differ that
 knows how to diff the sum of their values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `orElseResult` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.orElseResult
+```
 
 **Signature**
 

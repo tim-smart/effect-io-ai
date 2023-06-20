@@ -3,4 +3,11 @@
 A runtime fiber that is executing an effect. Runtime fibers have an
 identity and a trace.
 
-Part of the `Fiber` module, imported from `@effect/io/Fiber`.
+To import and use `RuntimeFiber` from the "Fiber" module:
+
+```ts
+import * as Fiber from '@effect/io/Fiber'
+
+// Can be accessed like this
+Fiber.RuntimeFiber
+```

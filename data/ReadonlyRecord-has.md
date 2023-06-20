@@ -2,7 +2,14 @@
 
 Check if a given `key` exists in a `ReadonlyRecord`.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `has` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.has
+```
 
 **Example**
 

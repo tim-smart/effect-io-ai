@@ -2,7 +2,14 @@
 
 Returns a default binary `partitionMap` composition.
 
-Part of the `Filterable` module, imported from `@effect/data/typeclass/Filterable`.
+To import and use `partitionMapComposition` from the "Filterable" module:
+
+```ts
+import * as Filterable from '@effect/data/typeclass/Filterable'
+
+// Can be accessed like this
+Filterable.partitionMapComposition
+```
 
 **Signature**
 

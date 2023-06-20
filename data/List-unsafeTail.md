@@ -2,7 +2,14 @@
 
 Unsafely returns the tail of the specified `List`.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `unsafeTail` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.unsafeTail
+```
 
 **Signature**
 

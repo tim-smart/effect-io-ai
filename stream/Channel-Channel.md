@@ -22,4 +22,11 @@ Channels compose in a variety of ways:
   channels, which are all concatenated together. The first channel and the
   function that makes the other channels can be composed into a channel.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `Channel` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.Channel
+```

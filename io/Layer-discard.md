@@ -3,7 +3,14 @@
 Replaces the layer's output with `void` and includes the layer only for its
 side-effects.
 
-Part of the `Layer` module, imported from `@effect/io/Layer`.
+To import and use `discard` from the "Layer" module:
+
+```ts
+import * as Layer from '@effect/io/Layer'
+
+// Can be accessed like this
+Layer.discard
+```
 
 **Signature**
 

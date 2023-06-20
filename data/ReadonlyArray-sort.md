@@ -2,7 +2,14 @@
 
 Sort the elements of an `Iterable` in increasing order, creating a new `Array`.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `sort` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.sort
+```
 
 **Signature**
 

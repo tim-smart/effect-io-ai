@@ -4,7 +4,14 @@ Returns an aspect that will update this metric with the duration that the
 effect takes to execute. To call this method, you must supply a function
 that can convert the `Duration` to the input type of this metric.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `trackDurationWith` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.trackDurationWith
+```
 
 **Signature**
 

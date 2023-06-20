@@ -3,7 +3,14 @@
 Returns a new channel which merges a number of channels emitted by this
 channel using the back pressuring merge strategy. See `Channel.mergeAll`.
 
-Part of the `Channel` module, imported from `@effect/stream/Channel`.
+To import and use `mergeOut` from the "Channel" module:
+
+```ts
+import * as Channel from '@effect/stream/Channel'
+
+// Can be accessed like this
+Channel.mergeOut
+```
 
 **Signature**
 

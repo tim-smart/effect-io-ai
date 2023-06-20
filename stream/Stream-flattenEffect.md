@@ -3,7 +3,14 @@
 Flattens `Effect` values into the stream's structure, preserving all
 information about the effect.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenEffect
+```
 
 **Signature**
 

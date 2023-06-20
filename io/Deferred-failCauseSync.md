@@ -3,7 +3,14 @@
 Fails the `Deferred` with the specified `Cause`, which will be propagated to
 all fibers waiting on the value of the `Deferred`.
 
-Part of the `Deferred` module, imported from `@effect/io/Deferred`.
+To import and use `failCauseSync` from the "Deferred" module:
+
+```ts
+import * as Deferred from '@effect/io/Deferred'
+
+// Can be accessed like this
+Deferred.failCauseSync
+```
 
 **Signature**
 

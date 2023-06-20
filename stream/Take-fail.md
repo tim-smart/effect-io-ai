@@ -2,7 +2,14 @@
 
 Creates a failing `Take` with the specified error.
 
-Part of the `Take` module, imported from `@effect/stream/Take`.
+To import and use `fail` from the "Take" module:
+
+```ts
+import * as Take from '@effect/stream/Take'
+
+// Can be accessed like this
+Take.fail
+```
 
 **Signature**
 

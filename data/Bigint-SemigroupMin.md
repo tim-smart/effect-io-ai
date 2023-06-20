@@ -2,7 +2,14 @@
 
 A `Semigroup` that uses the minimum between two values.
 
-Part of the `Bigint` module, imported from `@effect/data/Bigint`.
+To import and use `SemigroupMin` from the "Bigint" module:
+
+```ts
+import * as Bigint from '@effect/data/Bigint'
+
+// Can be accessed like this
+Bigint.SemigroupMin
+```
 
 **Example**
 

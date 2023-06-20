@@ -3,7 +3,14 @@
 Returns a driver that can be used to step the schedule, appropriately
 handling sleeping.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `driver` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.driver
+```
 
 **Signature**
 

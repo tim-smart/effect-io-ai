@@ -2,7 +2,14 @@
 
 Retrieves the current version of the reloadable service.
 
-Part of the `Reloadable` module, imported from `@effect/io/Reloadable`.
+To import and use `get` from the "Reloadable" module:
+
+```ts
+import * as Reloadable from '@effect/io/Reloadable'
+
+// Can be accessed like this
+Reloadable.get
+```
 
 **Signature**
 

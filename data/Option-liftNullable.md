@@ -2,7 +2,14 @@
 
 This API is useful for lifting a function that returns `null` or `undefined` into the `Option` context.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `liftNullable` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.liftNullable
+```
 
 **Example**
 

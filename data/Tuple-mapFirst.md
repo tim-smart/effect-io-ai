@@ -2,7 +2,14 @@
 
 Transforms the first component of a tuple using a given function.
 
-Part of the `Tuple` module, imported from `@effect/data/Tuple`.
+To import and use `mapFirst` from the "Tuple" module:
+
+```ts
+import * as Tuple from '@effect/data/Tuple'
+
+// Can be accessed like this
+Tuple.mapFirst
+```
 
 **Example**
 

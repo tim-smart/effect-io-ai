@@ -2,7 +2,14 @@
 
 Constructs an empty set patch.
 
-Part of the `HashSetPatch` module, imported from `@effect/data/Differ/HashSetPatch`.
+To import and use `empty` from the "HashSetPatch" module:
+
+```ts
+import * as HashSetPatch from '@effect/data/Differ/HashSetPatch'
+
+// Can be accessed like this
+HashSetPatch.empty
+```
 
 **Signature**
 

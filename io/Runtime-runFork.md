@@ -3,7 +3,14 @@
 Executes the effect using the provided Scheduler or using the global
 Scheduler if not provided
 
-Part of the `Runtime` module, imported from `@effect/io/Runtime`.
+To import and use `runFork` from the "Runtime" module:
+
+```ts
+import * as Runtime from '@effect/io/Runtime'
+
+// Can be accessed like this
+Runtime.runFork
+```
 
 **Signature**
 

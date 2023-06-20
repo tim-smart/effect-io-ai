@@ -2,7 +2,14 @@
 
 This function is the inverse of `zip`. Takes an `Iterable` of pairs and return two corresponding `Array`s.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `unzip` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.unzip
+```
 
 **Signature**
 

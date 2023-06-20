@@ -2,7 +2,14 @@
 
 Transforms both elements of a tuple using the given functions.
 
-Part of the `Tuple` module, imported from `@effect/data/Tuple`.
+To import and use `bimap` from the "Tuple" module:
+
+```ts
+import * as Tuple from '@effect/data/Tuple'
+
+// Can be accessed like this
+Tuple.bimap
+```
 
 **Example**
 

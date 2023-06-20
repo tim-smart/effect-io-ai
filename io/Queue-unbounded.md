@@ -2,7 +2,14 @@
 
 Creates a new unbounded `Queue`.
 
-Part of the `Queue` module, imported from `@effect/io/Queue`.
+To import and use `unbounded` from the "Queue" module:
+
+```ts
+import * as Queue from '@effect/io/Queue'
+
+// Can be accessed like this
+Queue.unbounded
+```
 
 **Signature**
 

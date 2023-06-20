@@ -4,7 +4,14 @@ Returns an aspect that will update this metric with the result of applying
 the specified function to the defect throwables of the effects that the
 aspect is applied to.
 
-Part of the `Metric` module, imported from `@effect/io/Metric`.
+To import and use `trackDefectWith` from the "Metric" module:
+
+```ts
+import * as Metric from '@effect/io/Metric'
+
+// Can be accessed like this
+Metric.trackDefectWith
+```
 
 **Signature**
 

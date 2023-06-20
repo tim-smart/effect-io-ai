@@ -3,7 +3,14 @@
 Provides the stream with the single service it requires. If the stream
 requires more than one service use `Stream.provideContext` instead.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `provideServiceEffect` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.provideServiceEffect
+```
 
 **Signature**
 

@@ -2,7 +2,14 @@
 
 Drops the last specified number of elements from this stream.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `dropRight` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.dropRight
+```
 
 **Signature**
 

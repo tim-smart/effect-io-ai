@@ -2,7 +2,14 @@
 
 Set each ref to either its value or its default.
 
-Part of the `FiberRefs` module, imported from `@effect/io/FiberRefs`.
+To import and use `setAll` from the "FiberRefs" module:
+
+```ts
+import * as FiberRefs from '@effect/io/FiberRefs'
+
+// Can be accessed like this
+FiberRefs.setAll
+```
 
 **Signature**
 

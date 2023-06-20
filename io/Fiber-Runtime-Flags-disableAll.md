@@ -2,7 +2,14 @@
 
 Disables all of the `RuntimeFlag`s in the specified set of `RuntimeFlags`.
 
-Part of the `Flags` module, imported from `@effect/io/Fiber/Runtime/Flags`.
+To import and use `disableAll` from the "Flags" module:
+
+```ts
+import * as Flags from '@effect/io/Fiber/Runtime/Flags'
+
+// Can be accessed like this
+Flags.disableAll
+```
 
 **Signature**
 

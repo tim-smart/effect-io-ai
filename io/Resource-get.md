@@ -2,7 +2,14 @@
 
 Retrieves the current value stored in the cache.
 
-Part of the `Resource` module, imported from `@effect/io/Resource`.
+To import and use `get` from the "Resource" module:
+
+```ts
+import * as Resource from '@effect/io/Resource'
+
+// Can be accessed like this
+Resource.get
+```
 
 **Signature**
 

@@ -4,7 +4,14 @@ Remove all `Die` causes that the specified partial function is defined at,
 returning `Some` with the remaining causes or `None` if there are no
 remaining causes.
 
-Part of the `Cause` module, imported from `@effect/io/Cause`.
+To import and use `stripSomeDefects` from the "Cause" module:
+
+```ts
+import * as Cause from '@effect/io/Cause'
+
+// Can be accessed like this
+Cause.stripSomeDefects
+```
 
 **Signature**
 

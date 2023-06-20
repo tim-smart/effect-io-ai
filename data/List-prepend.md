@@ -2,7 +2,14 @@
 
 Prepends the specified element to the beginning of the list.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `prepend` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.prepend
+```
 
 **Signature**
 

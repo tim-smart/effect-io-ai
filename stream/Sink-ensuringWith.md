@@ -4,7 +4,14 @@ Returns a new sink with an attached finalizer. The finalizer is guaranteed
 to be executed so long as the sink begins execution (and regardless of
 whether or not it completes).
 
-Part of the `Sink` module, imported from `@effect/stream/Sink`.
+To import and use `ensuringWith` from the "Sink" module:
+
+```ts
+import * as Sink from '@effect/stream/Sink'
+
+// Can be accessed like this
+Sink.ensuringWith
+```
 
 **Signature**
 

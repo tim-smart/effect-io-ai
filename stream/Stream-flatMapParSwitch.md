@@ -7,7 +7,14 @@ stream, the oldest executing stream is cancelled. Up to `bufferSize`
 elements of the produced streams may be buffered in memory by this
 operator.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flatMapParSwitch` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flatMapParSwitch
+```
 
 **Signature**
 

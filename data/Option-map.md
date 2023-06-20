@@ -2,7 +2,14 @@
 
 Maps the `Some` side of an `Option` value to a new `Option` value.
 
-Part of the `Option` module, imported from `@effect/data/Option`.
+To import and use `map` from the "Option" module:
+
+```ts
+import * as Option from '@effect/data/Option'
+
+// Can be accessed like this
+Option.map
+```
 
 **Signature**
 

@@ -6,7 +6,14 @@ conceptually "offer" it to the destination stream. `f` can maintain some
 internal state to control the combining process, with the initial state
 being specified by `s`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `combineChunks` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.combineChunks
+```
 
 **Signature**
 

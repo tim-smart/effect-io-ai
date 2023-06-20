@@ -7,7 +7,14 @@ executes this effect.
 This can be used to "graft" deep grandchildren onto a higher-level scope,
 effectively extending their lifespans into the parent scope.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `transplant` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.transplant
+```
 
 **Signature**
 

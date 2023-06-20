@@ -3,7 +3,14 @@
 Zips this chunk with the index of every element, starting from the initial
 index value.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `zipWithIndex` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.zipWithIndex
+```
 
 **Signature**
 

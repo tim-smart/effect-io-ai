@@ -2,7 +2,14 @@
 
 Filter the groups to be processed.
 
-Part of the `GroupBy` module, imported from `@effect/stream/GroupBy`.
+To import and use `filter` from the "GroupBy" module:
+
+```ts
+import * as GroupBy from '@effect/stream/GroupBy'
+
+// Can be accessed like this
+GroupBy.filter
+```
 
 **Signature**
 

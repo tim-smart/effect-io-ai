@@ -2,7 +2,14 @@
 
 Constructs an empty chunk patch.
 
-Part of the `ChunkPatch` module, imported from `@effect/data/Differ/ChunkPatch`.
+To import and use `empty` from the "ChunkPatch" module:
+
+```ts
+import * as ChunkPatch from '@effect/data/Differ/ChunkPatch'
+
+// Can be accessed like this
+ChunkPatch.empty
+```
 
 **Signature**
 

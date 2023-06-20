@@ -3,7 +3,14 @@
 Returns a new schedule that continues until the specified effectful
 predicate on the input evaluates to true.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `untilInputEffect` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.untilInputEffect
+```
 
 **Signature**
 

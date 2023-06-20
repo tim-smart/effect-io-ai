@@ -3,7 +3,14 @@
 Consumes all elements of the stream, passing them to the specified
 callback.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `runForEachChunk` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.runForEachChunk
+```
 
 **Signature**
 

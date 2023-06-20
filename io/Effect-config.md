@@ -3,7 +3,14 @@
 Uses the default config provider to load the specified config, or fail with
 an error of type Config.Error.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `config` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.config
+```
 
 **Signature**
 

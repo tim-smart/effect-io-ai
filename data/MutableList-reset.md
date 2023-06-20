@@ -2,7 +2,14 @@
 
 Removes all elements from the doubly-linked list.
 
-Part of the `MutableList` module, imported from `@effect/data/MutableList`.
+To import and use `reset` from the "MutableList" module:
+
+```ts
+import * as MutableList from '@effect/data/MutableList'
+
+// Can be accessed like this
+MutableList.reset
+```
 
 **Signature**
 

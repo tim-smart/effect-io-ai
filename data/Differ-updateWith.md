@@ -3,7 +3,14 @@
 A variant of `update` that allows specifying the function that will be used
 to combine old values with new values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `updateWith` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.updateWith
+```
 
 **Signature**
 

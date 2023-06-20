@@ -3,7 +3,14 @@
 Get the value associated with the specified tag from the context wrapped in an `Option` object. If the tag is not
 found, the `Option` object will be `None`.
 
-Part of the `Context` module, imported from `@effect/data/Context`.
+To import and use `getOption` from the "Context" module:
+
+```ts
+import * as Context from '@effect/data/Context'
+
+// Can be accessed like this
+Context.getOption
+```
 
 **Example**
 

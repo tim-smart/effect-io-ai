@@ -2,7 +2,14 @@
 
 Sort the elements of a Chunk in increasing order, creating a new Chunk.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `sort` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.sort
+```
 
 **Signature**
 

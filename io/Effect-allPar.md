@@ -4,7 +4,14 @@ Runs all the provided effects in parallel respecting the structure provided in i
 
 Supports multiple arguments, a single argument tuple / array or record / struct.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `allPar` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.allPar
+```
 
 **Signature**
 

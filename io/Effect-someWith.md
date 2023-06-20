@@ -3,7 +3,14 @@
 Perfoms the specified operation while "zoomed in" on the `Some` case of an
 `Option`.
 
-Part of the `Effect` module, imported from `@effect/io/Effect`.
+To import and use `someWith` from the "Effect" module:
+
+```ts
+import * as Effect from '@effect/io/Effect'
+
+// Can be accessed like this
+Effect.someWith
+```
 
 **Signature**
 

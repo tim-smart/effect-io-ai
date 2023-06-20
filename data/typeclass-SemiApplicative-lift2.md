@@ -2,7 +2,14 @@
 
 Lifts a binary function into `F`.
 
-Part of the `SemiApplicative` module, imported from `@effect/data/typeclass/SemiApplicative`.
+To import and use `lift2` from the "SemiApplicative" module:
+
+```ts
+import * as SemiApplicative from '@effect/data/typeclass/SemiApplicative'
+
+// Can be accessed like this
+SemiApplicative.lift2
+```
 
 **Signature**
 

@@ -6,7 +6,14 @@ elements from both sides.
 The defaults `defaultLeft` and `defaultRight` will be used if the streams
 have different lengths and one of the streams has ended before the other.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `zipAll` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.zipAll
+```
 
 **Signature**
 

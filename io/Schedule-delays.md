@@ -2,7 +2,14 @@
 
 Returns a new schedule that outputs the delay between each occurence.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `delays` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.delays
+```
 
 **Signature**
 

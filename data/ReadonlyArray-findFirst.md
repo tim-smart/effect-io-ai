@@ -2,7 +2,14 @@
 
 Find the first element for which a predicate holds.
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `findFirst` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.findFirst
+```
 
 **Signature**
 

@@ -3,7 +3,14 @@
 Unwraps `Exit` values and flatten chunks that also signify end-of-stream
 by failing with `None`.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flattenTake` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flattenTake
+```
 
 **Signature**
 

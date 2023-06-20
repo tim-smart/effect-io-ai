@@ -2,7 +2,14 @@
 
 A schedule that recurs for as long as the predicate evaluates to true.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `recurWhile` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.recurWhile
+```
 
 **Signature**
 

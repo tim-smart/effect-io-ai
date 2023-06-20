@@ -5,7 +5,14 @@ Split an `Iterable` into two parts:
 1. the longest initial subarray for which all elements satisfy the specified predicate
 2. the remaining elements
 
-Part of the `ReadonlyArray` module, imported from `@effect/data/ReadonlyArray`.
+To import and use `span` from the "ReadonlyArray" module:
+
+```ts
+import * as ReadonlyArray from '@effect/data/ReadonlyArray'
+
+// Can be accessed like this
+ReadonlyArray.span
+```
 
 **Signature**
 

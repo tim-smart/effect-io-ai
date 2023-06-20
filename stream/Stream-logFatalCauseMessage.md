@@ -2,7 +2,14 @@
 
 Logs the specified message and `Cause` at the fatal log level.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `logFatalCauseMessage` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.logFatalCauseMessage
+```
 
 **Signature**
 

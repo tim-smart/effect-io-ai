@@ -2,7 +2,14 @@
 
 Returns `true` if the specified value is a `List.Cons<A>`, `false` otherwise.
 
-Part of the `List` module, imported from `@effect/data/List`.
+To import and use `isCons` from the "List" module:
+
+```ts
+import * as List from '@effect/data/List'
+
+// Can be accessed like this
+List.isCons
+```
 
 **Signature**
 

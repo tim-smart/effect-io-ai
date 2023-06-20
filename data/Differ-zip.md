@@ -3,7 +3,14 @@
 Combines this differ and the specified differ to produce a new differ that
 knows how to diff the product of their values.
 
-Part of the `Differ` module, imported from `@effect/data/Differ`.
+To import and use `zip` from the "Differ" module:
+
+```ts
+import * as Differ from '@effect/data/Differ'
+
+// Can be accessed like this
+Differ.zip
+```
 
 **Signature**
 

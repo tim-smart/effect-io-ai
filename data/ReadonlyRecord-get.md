@@ -2,7 +2,14 @@
 
 Retrieve a value at a particular key from a `ReadonlyRecord`, returning it wrapped in an `Option`.
 
-Part of the `ReadonlyRecord` module, imported from `@effect/data/ReadonlyRecord`.
+To import and use `get` from the "ReadonlyRecord" module:
+
+```ts
+import * as ReadonlyRecord from '@effect/data/ReadonlyRecord'
+
+// Can be accessed like this
+ReadonlyRecord.get
+```
 
 **Example**
 

@@ -4,7 +4,14 @@ Complete a `Request` with the specified effectful computation, failing the
 request with the error from the effect workflow if it fails, and completing
 the request with the value of the effect workflow if it succeeds.
 
-Part of the `Request` module, imported from `@effect/io/Request`.
+To import and use `completeEffect` from the "Request" module:
+
+```ts
+import * as Request from '@effect/io/Request'
+
+// Can be accessed like this
+Request.completeEffect
+```
 
 **Signature**
 

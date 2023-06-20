@@ -2,7 +2,14 @@
 
 A schedule that recurs once with the specified delay.
 
-Part of the `Schedule` module, imported from `@effect/io/Schedule`.
+To import and use `fromDelay` from the "Schedule" module:
+
+```ts
+import * as Schedule from '@effect/io/Schedule'
+
+// Can be accessed like this
+Schedule.fromDelay
+```
 
 **Signature**
 

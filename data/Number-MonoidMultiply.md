@@ -4,7 +4,14 @@
 
 The `empty` value is `1`.
 
-Part of the `Number` module, imported from `@effect/data/Number`.
+To import and use `MonoidMultiply` from the "Number" module:
+
+```ts
+import * as Number from '@effect/data/Number'
+
+// Can be accessed like this
+Number.MonoidMultiply
+```
 
 **Example**
 

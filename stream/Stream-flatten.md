@@ -3,7 +3,14 @@
 Flattens this stream-of-streams into a stream made of the concatenation in
 strict order of all the streams.
 
-Part of the `Stream` module, imported from `@effect/stream/Stream`.
+To import and use `flatten` from the "Stream" module:
+
+```ts
+import * as Stream from '@effect/stream/Stream'
+
+// Can be accessed like this
+Stream.flatten
+```
 
 **Signature**
 

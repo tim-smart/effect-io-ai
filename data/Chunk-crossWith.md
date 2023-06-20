@@ -2,7 +2,14 @@
 
 Zips this chunk crosswise with the specified chunk using the specified combiner.
 
-Part of the `Chunk` module, imported from `@effect/data/Chunk`.
+To import and use `crossWith` from the "Chunk" module:
+
+```ts
+import * as Chunk from '@effect/data/Chunk'
+
+// Can be accessed like this
+Chunk.crossWith
+```
 
 **Signature**
 
