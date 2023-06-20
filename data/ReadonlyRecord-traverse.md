@@ -33,10 +33,10 @@ assert.deepStrictEqual(
 export declare const traverse: <F extends TypeLambda>(
   F: applicative.Applicative<F>
 ) => {
-  <A, R, O, E, B>(f: (a: A, key: string) => Kind<F, R, O, E, B>): (
-    self: ReadonlyRecord<A>
+  <K extends string, A, R, O, E, B>(f: (a: A, key: K) => Kind<F, R, O, E, B>): (
+    self: Record<K, A>
   ) => Kind<F, R, O, E, Record<string, B>>
-  <A, R, O, E, B>(self: ReadonlyRecord<A>, f: (a: A, key: string) => Kind<F, R, O, E, B>): Kind<
+  <K extends string, A, R, O, E, B>(self: Record<K, A>, f: (a: A, key: K) => Kind<F, R, O, E, B>): Kind<
     F,
     R,
     O,
