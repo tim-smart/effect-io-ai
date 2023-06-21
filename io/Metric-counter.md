@@ -14,5 +14,5 @@ Metric.counter
 **Signature**
 
 ```ts
-export declare const counter: (name: string) => Metric.Counter<number>
+export declare const counter: (name: string, description?: string) => Metric.Counter<number>
 ```

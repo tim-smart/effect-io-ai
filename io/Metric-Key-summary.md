@@ -20,6 +20,7 @@ export declare const summary: (
   maxAge: Duration.Duration,
   maxSize: number,
   error: number,
-  quantiles: Chunk.Chunk<number>
+  quantiles: Chunk.Chunk<number>,
+  description?: string
 ) => MetricKey.Summary
 ```

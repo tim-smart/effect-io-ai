@@ -17,6 +17,7 @@ Metric.histogram
 ```ts
 export declare const histogram: (
   name: string,
-  boundaries: MetricBoundaries.MetricBoundaries
+  boundaries: MetricBoundaries.MetricBoundaries,
+  description?: string
 ) => Metric<MetricKeyType.MetricKeyType.Histogram, number, MetricState.MetricState.Histogram>
 ```

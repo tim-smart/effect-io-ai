@@ -14,5 +14,9 @@ Key.histogram
 **Signature**
 
 ```ts
-export declare const histogram: (name: string, boundaries: MetricBoundaries.MetricBoundaries) => MetricKey.Histogram
+export declare const histogram: (
+  name: string,
+  boundaries: MetricBoundaries.MetricBoundaries,
+  description?: string
+) => MetricKey.Histogram
 ```

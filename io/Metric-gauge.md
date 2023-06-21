@@ -14,5 +14,5 @@ Metric.gauge
 **Signature**
 
 ```ts
-export declare const gauge: (name: string) => Metric.Gauge<number>
+export declare const gauge: (name: string, description?: string) => Metric.Gauge<number>
 ```

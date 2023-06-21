@@ -15,5 +15,5 @@ Metric.frequency
 **Signature**
 
 ```ts
-export declare const frequency: (name: string) => Metric.Frequency<string>
+export declare const frequency: (name: string, description?: string) => Metric.Frequency<string>
 ```
