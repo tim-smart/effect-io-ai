@@ -15,17 +15,24 @@ Effect.withSpan
 
 ```ts
 export declare const withSpan: {
-  (name: string, options?: { attributes?: Record<string, string>; parent?: Tracer.ParentSpan; root?: boolean }): <
-    R,
-    E,
-    A
-  >(
-    self: Effect<R, E, A>
-  ) => Effect<R, E, A>
+  (
+    name: string,
+    options?: {
+      readonly attributes?: Record<string, Tracer.AttributeValue>
+      readonly parent?: Tracer.ParentSpan
+      readonly root?: boolean
+      readonly context?: Context.Context<never>
+    }
+  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
   <R, E, A>(
     self: Effect<R, E, A>,
     name: string,
-    options?: { attributes?: Record<string, string>; parent?: Tracer.ParentSpan; root?: boolean }
+    options?: {
+      readonly attributes?: Record<string, Tracer.AttributeValue>
+      readonly parent?: Tracer.ParentSpan
+      readonly root?: boolean
+      readonly context?: Context.Context<never>
+    }
   ): Effect<R, E, A>
 }
 ```
