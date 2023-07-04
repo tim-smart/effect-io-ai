@@ -14,6 +14,8 @@ Sink.as
 **Signature**
 
 ```ts
-export declare const as: (<Z2>(z: Z2) => <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, L, Z2>) &
-  (<R, E, In, L, Z, Z2>(self: Sink<R, E, In, L, Z>, z: Z2) => Sink<R, E, In, L, Z2>)
+export declare const as: {
+  <Z2>(z: Z2): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, L, Z2>
+  <R, E, In, L, Z, Z2>(self: Sink<R, E, In, L, Z>, z: Z2): Sink<R, E, In, L, Z2>
+}
 ```
