@@ -15,10 +15,10 @@ OrPatch.diff
 **Signature**
 
 ```ts
-export declare const diff: <Value, Value2, Patch, Patch2>(
-  oldValue: Either<Value, Value2>,
-  newValue: Either<Value, Value2>,
-  left: Differ<Value, Patch>,
-  right: Differ<Value2, Patch2>
-) => OrPatch<Value, Value2, Patch, Patch2>
+export declare const diff: <Value, Value2, Patch, Patch2>(options: {
+  readonly oldValue: Either<Value, Value2>
+  readonly newValue: Either<Value, Value2>
+  readonly left: Differ<Value, Patch>
+  readonly right: Differ<Value2, Patch2>
+}) => OrPatch<Value, Value2, Patch, Patch2>
 ```

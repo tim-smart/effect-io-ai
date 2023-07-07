@@ -15,5 +15,5 @@ Effect.sleep
 **Signature**
 
 ```ts
-export declare const sleep: (duration: Duration.Duration) => Effect<never, never, void>
+export declare const sleep: (duration: Duration.DurationInput) => Effect<never, never, void>
 ```

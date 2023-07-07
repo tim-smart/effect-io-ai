@@ -15,9 +15,9 @@ HashMapPatch.diff
 **Signature**
 
 ```ts
-export declare const diff: <Key, Value, Patch>(
-  oldValue: HashMap<Key, Value>,
-  newValue: HashMap<Key, Value>,
-  differ: Differ<Value, Patch>
-) => HashMapPatch<Key, Value, Patch>
+export declare const diff: <Key, Value, Patch>(options: {
+  readonly oldValue: HashMap<Key, Value>
+  readonly newValue: HashMap<Key, Value>
+  readonly differ: Differ<Value, Patch>
+}) => HashMapPatch<Key, Value, Patch>
 ```

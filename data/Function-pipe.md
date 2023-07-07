@@ -8,8 +8,6 @@ This is useful in combination with data-last functions as a simulation of method
 as.map(f).filter(g) -> pipe(as, map(f), filter(g))
 ```
 
-See also {@link flow}.
-
 To import and use `pipe` from the "Function" module:
 
 ```ts

@@ -17,7 +17,7 @@ Schedule.fromDelays
 
 ```ts
 export declare const fromDelays: (
-  delay: Duration.Duration,
-  ...delays: Array<Duration.Duration>
+  delay: Duration.DurationInput,
+  ...delays: Array<Duration.DurationInput>
 ) => Schedule<never, unknown, Duration.Duration>
 ```

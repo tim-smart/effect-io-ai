@@ -14,5 +14,8 @@ ReadonlyArray.some
 **Signature**
 
 ```ts
-export declare const some: <A>(predicate: Predicate<A>) => (self: readonly A[]) => self is readonly [A, ...A[]]
+export declare const some: {
+  <A>(predicate: Predicate<A>): (self: readonly A[]) => self is readonly [A, ...A[]]
+  <A>(self: readonly A[], predicate: Predicate<A>): self is readonly [A, ...A[]]
+}
 ```

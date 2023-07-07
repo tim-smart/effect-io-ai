@@ -14,5 +14,5 @@ Effect.timed
 **Signature**
 
 ```ts
-export declare const timed: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, [Duration.Duration, A]>
+export declare const timed: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, readonly [Duration.Duration, A]>
 ```

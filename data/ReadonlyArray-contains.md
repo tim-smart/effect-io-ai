@@ -1,6 +1,6 @@
 # contains
 
-Returns a function that checks if a `ReadonlyArray` contains a given value using a provided `equivalence` function.
+Returns a function that checks if a `ReadonlyArray` contains a given value using the provided `isEquivalent` function.
 
 To import and use `contains` from the "ReadonlyArray" module:
 
@@ -14,8 +14,5 @@ ReadonlyArray.contains
 **Signature**
 
 ```ts
-export declare const contains: <A>(isEquivalent: (self: A, that: A) => boolean) => {
-  (a: A): (self: Iterable<A>) => boolean
-  (self: Iterable<A>, a: A): boolean
-}
+export declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean }
 ```

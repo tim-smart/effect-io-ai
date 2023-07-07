@@ -1,6 +1,6 @@
 # unzip
 
-Takes an array of pairs and return two corresponding arrays.
+Takes a `Chunk` of pairs and return two corresponding `Chunk`s.
 
 Note: The function is reverse of `zip`.
 
@@ -16,5 +16,5 @@ Chunk.unzip
 **Signature**
 
 ```ts
-export declare const unzip: <A, B>(as: Chunk<readonly [A, B]>) => readonly [Chunk<A>, Chunk<B>]
+export declare const unzip: <A, B>(self: Chunk<readonly [A, B]>) => [Chunk<A>, Chunk<B>]
 ```

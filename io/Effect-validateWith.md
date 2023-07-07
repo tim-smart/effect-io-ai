@@ -16,13 +16,14 @@ Effect.validateWith
 
 ```ts
 export declare const validateWith: {
-  <A, R2, E2, B, C>(that: Effect<R2, E2, B>, f: (a: A, b: B) => C): <R, E>(
+  <A, R1, E1, B, C>(that: Effect<R1, E1, B>, f: (a: A, b: B) => C, options?: { readonly parallel?: boolean }): <R, E>(
     self: Effect<R, E, A>
-  ) => Effect<R2 | R, E2 | E, C>
-  <R, E, A, R2, E2, B, C>(self: Effect<R, E, A>, that: Effect<R2, E2, B>, f: (a: A, b: B) => C): Effect<
-    R | R2,
-    E | E2,
-    C
-  >
+  ) => Effect<R1 | R, E1 | E, C>
+  <R, E, A, R1, E1, B, C>(
+    self: Effect<R, E, A>,
+    that: Effect<R1, E1, B>,
+    f: (a: A, b: B) => C,
+    options?: { readonly parallel?: boolean }
+  ): Effect<R | R1, E | E1, C>
 }
 ```

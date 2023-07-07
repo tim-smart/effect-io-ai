@@ -17,6 +17,6 @@ Reloadable.manual
 ```ts
 export declare const manual: <Out extends Context.Tag<any, any>, In, E>(
   tag: Out,
-  layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>>
+  options: { readonly layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>> }
 ) => Layer.Layer<In, E, Reloadable<Context.Tag.Identifier<Out>>>
 ```

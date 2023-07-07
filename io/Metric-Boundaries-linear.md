@@ -15,5 +15,9 @@ Boundaries.linear
 **Signature**
 
 ```ts
-export declare const linear: (start: number, width: number, count: number) => MetricBoundaries
+export declare const linear: (options: {
+  readonly start: number
+  readonly width: number
+  readonly count: number
+}) => MetricBoundaries
 ```

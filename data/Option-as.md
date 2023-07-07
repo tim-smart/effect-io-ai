@@ -14,5 +14,5 @@ Option.as
 **Signature**
 
 ```ts
-export declare const as: { <_, B>(self: Option<_>, b: B): Option<B>; <B>(b: B): <_>(self: Option<_>) => Option<B> }
+export declare const as: <B>(b: B) => <_>(self: Option<_>) => Option<B>
 ```

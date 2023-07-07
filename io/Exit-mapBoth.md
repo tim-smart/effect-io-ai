@@ -16,7 +16,12 @@ Exit.mapBoth
 
 ```ts
 export declare const mapBoth: {
-  <E, A, E2, A2>(onFailure: (e: E) => E2, onSuccess: (a: A) => A2): (self: Exit<E, A>) => Exit<E2, A2>
-  <E, A, E2, A2>(self: Exit<E, A>, onFailure: (e: E) => E2, onSuccess: (a: A) => A2): Exit<E2, A2>
+  <E, A, E2, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2 }): (
+    self: Exit<E, A>
+  ) => Exit<E2, A2>
+  <E, A, E2, A2>(
+    self: Exit<E, A>,
+    options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2 }
+  ): Exit<E2, A2>
 }
 ```

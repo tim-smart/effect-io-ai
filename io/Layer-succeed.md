@@ -14,8 +14,14 @@ Layer.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <T extends Context.Tag<any, any>>(
-  tag: T,
-  resource: Context.Tag.Service<T>
-) => Layer<never, never, Context.Tag.Identifier<T>>
+export declare const succeed: {
+  <T extends Context.Tag<any, any>>(tag: T): (
+    resource: Context.Tag.Service<T>
+  ) => Layer<never, never, Context.Tag.Identifier<T>>
+  <T extends Context.Tag<any, any>>(tag: T, resource: Context.Tag.Service<T>): Layer<
+    never,
+    never,
+    Context.Tag.Identifier<T>
+  >
+}
 ```

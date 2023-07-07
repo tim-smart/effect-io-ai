@@ -16,9 +16,9 @@ ScopedCache.makeWith
 **Signature**
 
 ```ts
-export declare const makeWith: <Key, Environment, Error, Value>(
-  capacity: number,
-  lookup: Lookup<Key, Environment, Error, Value>,
-  timeToLive: (exit: Exit.Exit<Error, Value>) => Duration.Duration
-) => Effect.Effect<Scope.Scope | Environment, never, ScopedCache<Key, Error, Value>>
+export declare const makeWith: <Key, Environment, Error, Value>(options: {
+  readonly capacity: number
+  readonly lookup: Lookup<Key, Environment, Error, Value>
+  readonly timeToLive: (exit: Exit.Exit<Error, Value>) => Duration.DurationInput
+}) => Effect.Effect<Scope.Scope | Environment, never, ScopedCache<Key, Error, Value>>
 ```

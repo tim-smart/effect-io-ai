@@ -14,5 +14,5 @@ Fiber.unit
 **Signature**
 
 ```ts
-export declare const unit: (_: void) => Fiber<never, void>
+export declare const unit: Fiber<never, void>
 ```

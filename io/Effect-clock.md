@@ -14,5 +14,5 @@ Effect.clock
 **Signature**
 
 ```ts
-export declare const clock: (_: void) => Effect<never, never, Clock.Clock>
+export declare const clock: Effect<never, never, Clock.Clock>
 ```

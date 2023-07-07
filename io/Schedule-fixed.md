@@ -23,5 +23,5 @@ Schedule.fixed
 **Signature**
 
 ```ts
-export declare const fixed: (interval: Duration.Duration) => Schedule<never, unknown, number>
+export declare const fixed: (interval: Duration.DurationInput) => Schedule<never, unknown, number>
 ```

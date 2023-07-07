@@ -16,7 +16,12 @@ Effect.timeoutFail
 
 ```ts
 export declare const timeoutFail: {
-  <E1>(evaluate: LazyArg<E1>, duration: Duration.Duration): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E1 | E, A>
-  <R, E, A, E1>(self: Effect<R, E, A>, evaluate: LazyArg<E1>, duration: Duration.Duration): Effect<R, E | E1, A>
+  <E1>(options: { readonly onTimeout: LazyArg<E1>; readonly duration: Duration.DurationInput }): <R, E, A>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E1 | E, A>
+  <R, E, A, E1>(
+    self: Effect<R, E, A>,
+    options: { readonly onTimeout: LazyArg<E1>; readonly duration: Duration.DurationInput }
+  ): Effect<R, E | E1, A>
 }
 ```

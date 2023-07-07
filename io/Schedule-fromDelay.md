@@ -14,5 +14,5 @@ Schedule.fromDelay
 **Signature**
 
 ```ts
-export declare const fromDelay: (delay: Duration.Duration) => Schedule<never, unknown, Duration.Duration>
+export declare const fromDelay: (delay: Duration.DurationInput) => Schedule<never, unknown, Duration.Duration>
 ```

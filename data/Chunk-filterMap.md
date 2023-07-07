@@ -15,7 +15,7 @@ Chunk.filterMap
 
 ```ts
 export declare const filterMap: {
-  <A, B>(f: (a: A) => Option<B>): (self: Iterable<A>) => Chunk<B>
-  <A, B>(self: Iterable<A>, f: (a: A) => Option<B>): Chunk<B>
+  <A, B>(f: (a: A, i: number) => Option<B>): (self: Chunk<A>) => Chunk<B>
+  <A, B>(self: Chunk<A>, f: (a: A, i: number) => Option<B>): Chunk<B>
 }
 ```

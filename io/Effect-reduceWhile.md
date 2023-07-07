@@ -16,13 +16,14 @@ Effect.reduceWhile
 
 ```ts
 export declare const reduceWhile: {
-  <A, R, E, Z>(zero: Z, predicate: Predicate<Z>, f: (s: Z, a: A) => Effect<R, E, Z>): (
-    elements: Iterable<A>
-  ) => Effect<R, E, Z>
-  <A, R, E, Z>(elements: Iterable<A>, zero: Z, predicate: Predicate<Z>, f: (s: Z, a: A) => Effect<R, E, Z>): Effect<
-    R,
-    E,
-    Z
-  >
+  <A, R, E, Z>(
+    zero: Z,
+    options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<R, E, Z> }
+  ): (elements: Iterable<A>) => Effect<R, E, Z>
+  <A, R, E, Z>(
+    elements: Iterable<A>,
+    zero: Z,
+    options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<R, E, Z> }
+  ): Effect<R, E, Z>
 }
 ```

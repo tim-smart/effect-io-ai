@@ -15,5 +15,5 @@ Schedule.repeatForever
 **Signature**
 
 ```ts
-export declare const repeatForever: (_: void) => Schedule<never, unknown, number>
+export declare const repeatForever: Schedule<never, unknown, number>
 ```

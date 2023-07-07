@@ -15,5 +15,5 @@ Schedule.spaced
 **Signature**
 
 ```ts
-export declare const spaced: (duration: Duration.Duration) => Schedule<never, unknown, number>
+export declare const spaced: (duration: Duration.DurationInput) => Schedule<never, unknown, number>
 ```

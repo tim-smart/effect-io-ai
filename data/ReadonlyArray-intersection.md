@@ -15,8 +15,8 @@ ReadonlyArray.intersection
 **Signature**
 
 ```ts
-export declare const intersection: <A>(isEquivalent: (self: A, that: A) => boolean) => {
-  (that: Iterable<A>): (self: Iterable<A>) => A[]
-  (self: Iterable<A>, that: Iterable<A>): A[]
+export declare const intersection: {
+  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => (A & B)[]
+  <A, B>(self: Iterable<A>, that: Iterable<B>): (A & B)[]
 }
 ```

@@ -16,9 +16,20 @@ Effect.filterOrDieMessage
 
 ```ts
 export declare const filterOrDieMessage: {
-  <A, B extends A>(f: Refinement<A, B>, message: string): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B>
-  <A>(f: Predicate<A>, message: string): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A, B extends A>(self: Effect<R, E, A>, f: Refinement<A, B>, message: string): Effect<R, E, B>
-  <R, E, A>(self: Effect<R, E, A>, f: Predicate<A>, message: string): Effect<R, E, A>
+  <A, B extends A>(options: { readonly filter: Refinement<A, B>; readonly message: string }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E, B>
+  <A>(options: { readonly filter: Predicate<A>; readonly message: string }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E, A>
+  <R, E, A, B extends A>(
+    self: Effect<R, E, A>,
+    options: { readonly filter: Refinement<A, B>; readonly message: string }
+  ): Effect<R, E, B>
+  <R, E, A>(self: Effect<R, E, A>, options: { readonly filter: Predicate<A>; readonly message: string }): Effect<
+    R,
+    E,
+    A
+  >
 }
 ```

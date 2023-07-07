@@ -17,5 +17,5 @@ Effect.allowInterrupt
 **Signature**
 
 ```ts
-export declare const allowInterrupt: (_: void) => Effect<never, never, void>
+export declare const allowInterrupt: Effect<never, never, void>
 ```

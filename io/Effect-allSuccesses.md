@@ -15,5 +15,8 @@ Effect.allSuccesses
 **Signature**
 
 ```ts
-export declare const allSuccesses: <R, E, A>(as: Iterable<Effect<R, E, A>>) => Effect<R, never, A[]>
+export declare const allSuccesses: <R, E, A>(
+  elements: Iterable<Effect<R, E, A>>,
+  options?: { readonly concurrency?: Concurrency; readonly batched?: boolean }
+) => Effect<R, never, A[]>
 ```

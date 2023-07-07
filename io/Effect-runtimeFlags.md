@@ -15,5 +15,5 @@ Effect.runtimeFlags
 **Signature**
 
 ```ts
-export declare const runtimeFlags: (_: void) => Effect<never, never, RuntimeFlags.RuntimeFlags>
+export declare const runtimeFlags: Effect<never, never, RuntimeFlags.RuntimeFlags>
 ```

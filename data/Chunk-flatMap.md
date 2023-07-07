@@ -15,7 +15,7 @@ Chunk.flatMap
 
 ```ts
 export declare const flatMap: {
-  <A, B>(f: (a: A) => Chunk<B>): (self: Chunk<A>) => Chunk<B>
-  <A, B>(self: Chunk<A>, f: (a: A) => Chunk<B>): Chunk<B>
+  <A, B>(f: (a: A, i: number) => Chunk<B>): (self: Chunk<A>) => Chunk<B>
+  <A, B>(self: Chunk<A>, f: (a: A, i: number) => Chunk<B>): Chunk<B>
 }
 ```

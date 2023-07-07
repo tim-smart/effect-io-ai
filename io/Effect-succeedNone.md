@@ -14,5 +14,5 @@ Effect.succeedNone
 **Signature**
 
 ```ts
-export declare const succeedNone: (_: void) => Effect<never, never, Option.Option<never>>
+export declare const succeedNone: Effect<never, never, Option.Option<never>>
 ```

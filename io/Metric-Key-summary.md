@@ -15,12 +15,12 @@ Key.summary
 **Signature**
 
 ```ts
-export declare const summary: (
-  name: string,
-  maxAge: Duration.Duration,
-  maxSize: number,
-  error: number,
-  quantiles: Chunk.Chunk<number>,
-  description?: string
-) => MetricKey.Summary
+export declare const summary: (options: {
+  readonly name: string
+  readonly maxAge: Duration.DurationInput
+  readonly maxSize: number
+  readonly error: number
+  readonly quantiles: Chunk.Chunk<number>
+  readonly description?: string
+}) => MetricKey.Summary
 ```

@@ -15,5 +15,5 @@ Schedule.duration
 **Signature**
 
 ```ts
-export declare const duration: (duration: Duration.Duration) => Schedule<never, unknown, Duration.Duration>
+export declare const duration: (duration: Duration.DurationInput) => Schedule<never, unknown, Duration.Duration>
 ```

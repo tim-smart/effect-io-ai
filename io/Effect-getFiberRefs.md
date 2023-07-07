@@ -15,5 +15,5 @@ Effect.getFiberRefs
 **Signature**
 
 ```ts
-export declare const getFiberRefs: (_: void) => Effect<never, never, FiberRefs.FiberRefs>
+export declare const getFiberRefs: Effect<never, never, FiberRefs.FiberRefs>
 ```

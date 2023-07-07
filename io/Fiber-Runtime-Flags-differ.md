@@ -14,5 +14,5 @@ Flags.differ
 **Signature**
 
 ```ts
-export declare const differ: (_: void) => Differ.Differ<RuntimeFlags, RuntimeFlagsPatch.RuntimeFlagsPatch>
+export declare const differ: Differ.Differ<RuntimeFlags, RuntimeFlagsPatch.RuntimeFlagsPatch>
 ```

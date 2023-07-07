@@ -14,8 +14,14 @@ Layer.sync
 **Signature**
 
 ```ts
-export declare const sync: <T extends Context.Tag<any, any>>(
-  tag: T,
-  evaluate: LazyArg<Context.Tag.Service<T>>
-) => Layer<never, never, Context.Tag.Identifier<T>>
+export declare const sync: {
+  <T extends Context.Tag<any, any>>(tag: T): (
+    evaluate: LazyArg<Context.Tag.Service<T>>
+  ) => Layer<never, never, Context.Tag.Identifier<T>>
+  <T extends Context.Tag<any, any>>(tag: T, evaluate: LazyArg<Context.Tag.Service<T>>): Layer<
+    never,
+    never,
+    Context.Tag.Identifier<T>
+  >
+}
 ```

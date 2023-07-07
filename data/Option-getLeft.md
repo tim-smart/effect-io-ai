@@ -18,7 +18,7 @@ import * as O from '@effect/data/Option'
 import * as E from '@effect/data/Either'
 
 assert.deepStrictEqual(O.getLeft(E.right('ok')), O.none())
-assert.deepStrictEqual(O.getLeft(E.left('error')), O.some('error'))
+assert.deepStrictEqual(O.getLeft(E.left('a')), O.some('a'))
 ```
 
 **Signature**

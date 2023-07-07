@@ -17,13 +17,12 @@ Effect.ensuringChild
 
 ```ts
 export declare const ensuringChild: {
-  <R2, X>(f: (fiber: Fiber.Fiber<any, Array<unknown>>) => Effect<R2, never, X>): <R, E, A>(
+  <R2, X>(f: (fiber: Fiber.Fiber<any, ReadonlyArray<unknown>>) => Effect<R2, never, X>): <R, E, A>(
     self: Effect<R, E, A>
   ) => Effect<R2 | R, E, A>
-  <R, E, A, R2, X>(self: Effect<R, E, A>, f: (fiber: Fiber.Fiber<any, Array<unknown>>) => Effect<R2, never, X>): Effect<
-    R | R2,
-    E,
-    A
-  >
+  <R, E, A, R2, X>(
+    self: Effect<R, E, A>,
+    f: (fiber: Fiber.Fiber<any, ReadonlyArray<unknown>>) => Effect<R2, never, X>
+  ): Effect<R | R2, E, A>
 }
 ```

@@ -14,8 +14,8 @@ ReadonlyArray.every
 **Signature**
 
 ```ts
-export declare function every<A, B extends A>(
-  refinement: Refinement<A, B>
-): Refinement<ReadonlyArray<A>, ReadonlyArray<B>>
-export declare function every<A>(predicate: Predicate<A>): Predicate<ReadonlyArray<A>>
+export declare const every: {
+  <A>(predicate: Predicate<A>): (self: readonly A[]) => boolean
+  <A>(self: readonly A[], predicate: Predicate<A>): boolean
+}
 ```

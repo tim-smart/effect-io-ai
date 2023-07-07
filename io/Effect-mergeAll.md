@@ -16,7 +16,16 @@ Effect.mergeAll
 
 ```ts
 export declare const mergeAll: {
-  <Z, A>(zero: Z, f: (z: Z, a: A) => Z): <R, E>(elements: Iterable<Effect<R, E, A>>) => Effect<R, E, Z>
-  <R, E, Z, A>(elements: Iterable<Effect<R, E, A>>, zero: Z, f: (z: Z, a: A) => Z): Effect<R, E, Z>
+  <Z, A>(
+    zero: Z,
+    f: (z: Z, a: A, i: number) => Z,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean }
+  ): <R, E>(elements: Iterable<Effect<R, E, A>>) => Effect<R, E, Z>
+  <R, E, A, Z>(
+    elements: Iterable<Effect<R, E, A>>,
+    zero: Z,
+    f: (z: Z, a: A, i: number) => Z,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean }
+  ): Effect<R, E, Z>
 }
 ```

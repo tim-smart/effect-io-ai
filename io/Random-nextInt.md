@@ -14,5 +14,5 @@ Random.nextInt
 **Signature**
 
 ```ts
-export declare const nextInt: (_: void) => Effect.Effect<never, never, number>
+export declare const nextInt: Effect.Effect<never, never, number>
 ```

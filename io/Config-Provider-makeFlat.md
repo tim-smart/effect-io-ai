@@ -14,12 +14,15 @@ Provider.makeFlat
 **Signature**
 
 ```ts
-export declare const makeFlat: (
-  load: <A>(
-    path: Array<string>,
-    config: Config.Config.Primitive<A>
-  ) => Effect.Effect<never, ConfigError.ConfigError, A[]>,
-  enumerateChildren: (path: Array<string>) => Effect.Effect<never, ConfigError.ConfigError, HashSet.HashSet<string>>,
-  patch: PathPatch.PathPatch
-) => ConfigProvider.Flat
+export declare const makeFlat: (options: {
+  readonly load: <A>(
+    path: ReadonlyArray<string>,
+    config: Config.Config.Primitive<A>,
+    split: boolean
+  ) => Effect.Effect<never, ConfigError.ConfigError, readonly A[]>
+  readonly enumerateChildren: (
+    path: ReadonlyArray<string>
+  ) => Effect.Effect<never, ConfigError.ConfigError, HashSet.HashSet<string>>
+  readonly patch: PathPatch.PathPatch
+}) => ConfigProvider.Flat
 ```

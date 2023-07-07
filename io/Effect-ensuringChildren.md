@@ -16,12 +16,12 @@ Effect.ensuringChildren
 
 ```ts
 export declare const ensuringChildren: {
-  <R1, X>(children: (fibers: Array<Fiber.RuntimeFiber<any, any>>) => Effect<R1, never, X>): <R, E, A>(
+  <R1, X>(children: (fibers: ReadonlyArray<Fiber.RuntimeFiber<any, any>>) => Effect<R1, never, X>): <R, E, A>(
     self: Effect<R, E, A>
   ) => Effect<R1 | R, E, A>
   <R, E, A, R1, X>(
     self: Effect<R, E, A>,
-    children: (fibers: Array<Fiber.RuntimeFiber<any, any>>) => Effect<R1, never, X>
+    children: (fibers: ReadonlyArray<Fiber.RuntimeFiber<any, any>>) => Effect<R1, never, X>
   ): Effect<R | R1, E, A>
 }
 ```

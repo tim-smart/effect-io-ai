@@ -16,9 +16,19 @@ Effect.filterOrFail
 
 ```ts
 export declare const filterOrFail: {
-  <A, B extends A, E2>(f: Refinement<A, B>, error: LazyArg<E2>): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, B>
-  <A, E2>(f: Predicate<A>, error: LazyArg<E2>): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, A>
-  <R, E, A, B extends A, E2>(self: Effect<R, E, A>, f: Refinement<A, B>, error: LazyArg<E2>): Effect<R, E | E2, B>
-  <R, E, A, E2>(self: Effect<R, E, A>, f: Predicate<A>, error: LazyArg<E2>): Effect<R, E | E2, A>
+  <A, B extends A, E2>(options: { readonly filter: Refinement<A, B>; readonly orFailWith: (a: A) => E2 }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E2 | E, B>
+  <A, E2>(options: { readonly filter: Predicate<A>; readonly orFailWith: (a: A) => E2 }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E2 | E, A>
+  <R, E, A, B extends A, E2>(
+    self: Effect<R, E, A>,
+    options: { readonly filter: Refinement<A, B>; readonly orFailWith: (a: A) => E2 }
+  ): Effect<R, E | E2, B>
+  <R, E, A, E2>(
+    self: Effect<R, E, A>,
+    options: { readonly filter: Predicate<A>; readonly orFailWith: (a: A) => E2 }
+  ): Effect<R, E | E2, A>
 }
 ```

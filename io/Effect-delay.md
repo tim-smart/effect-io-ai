@@ -16,7 +16,7 @@ Effect.delay
 
 ```ts
 export declare const delay: {
-  (duration: Duration.Duration): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(self: Effect<R, E, A>, duration: Duration.Duration): Effect<R, E, A>
+  (duration: Duration.DurationInput): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+  <R, E, A>(self: Effect<R, E, A>, duration: Duration.DurationInput): Effect<R, E, A>
 }
 ```

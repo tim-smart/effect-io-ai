@@ -15,5 +15,9 @@ Boundaries.exponential
 **Signature**
 
 ```ts
-export declare const exponential: (start: number, factor: number, count: number) => MetricBoundaries
+export declare const exponential: (options: {
+  readonly start: number
+  readonly factor: number
+  readonly count: number
+}) => MetricBoundaries
 ```

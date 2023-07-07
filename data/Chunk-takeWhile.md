@@ -15,7 +15,7 @@ Chunk.takeWhile
 
 ```ts
 export declare const takeWhile: {
-  <A>(f: Predicate<A>): (self: Chunk<A>) => Chunk<A>
-  <A>(self: Chunk<A>, f: Predicate<A>): Chunk<A>
+  <A>(predicate: Predicate<A>): (self: Chunk<A>) => Chunk<A>
+  <A>(self: Chunk<A>, predicate: Predicate<A>): Chunk<A>
 }
 ```

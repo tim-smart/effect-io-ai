@@ -17,7 +17,7 @@ Either.isRight
 import { isRight, left, right } from '@effect/data/Either'
 
 assert.deepStrictEqual(isRight(right(1)), true)
-assert.deepStrictEqual(isRight(left('error')), false)
+assert.deepStrictEqual(isRight(left('a')), false)
 ```
 
 **Signature**

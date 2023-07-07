@@ -15,7 +15,12 @@ FiberRefs.updatedAs
 
 ```ts
 export declare const updatedAs: {
-  <A>(fiberId: FiberId.Runtime, fiberRef: FiberRef.FiberRef<A>, value: A): (self: FiberRefs) => FiberRefs
-  <A>(self: FiberRefs, fiberId: FiberId.Runtime, fiberRef: FiberRef.FiberRef<A>, value: A): FiberRefs
+  <A>(options: { readonly fiberId: FiberId.Runtime; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A }): (
+    self: FiberRefs
+  ) => FiberRefs
+  <A>(
+    self: FiberRefs,
+    options: { readonly fiberId: FiberId.Runtime; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A }
+  ): FiberRefs
 }
 ```

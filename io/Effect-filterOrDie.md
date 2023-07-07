@@ -16,9 +16,19 @@ Effect.filterOrDie
 
 ```ts
 export declare const filterOrDie: {
-  <A, B extends A>(f: Refinement<A, B>, defect: LazyArg<unknown>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B>
-  <A>(f: Predicate<A>, defect: LazyArg<unknown>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A, B extends A>(self: Effect<R, E, A>, f: Refinement<A, B>, defect: LazyArg<unknown>): Effect<R, E, B>
-  <R, E, A>(self: Effect<R, E, A>, f: Predicate<A>, defect: LazyArg<unknown>): Effect<R, E, A>
+  <A, B extends A>(options: { readonly filter: Refinement<A, B>; readonly orDieWith: LazyArg<unknown> }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E, B>
+  <A>(options: { readonly filter: Predicate<A>; readonly orDieWith: LazyArg<unknown> }): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E, A>
+  <R, E, A, B extends A>(
+    self: Effect<R, E, A>,
+    options: { readonly filter: Refinement<A, B>; readonly orDieWith: LazyArg<unknown> }
+  ): Effect<R, E, B>
+  <R, E, A>(
+    self: Effect<R, E, A>,
+    options: { readonly filter: Predicate<A>; readonly orDieWith: LazyArg<unknown> }
+  ): Effect<R, E, A>
 }
 ```

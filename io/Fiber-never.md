@@ -14,5 +14,5 @@ Fiber.never
 **Signature**
 
 ```ts
-export declare const never: (_: void) => Fiber<never, never>
+export declare const never: Fiber<never, never>
 ```

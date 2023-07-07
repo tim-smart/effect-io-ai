@@ -14,5 +14,5 @@ Chunk.compact
 **Signature**
 
 ```ts
-export declare const compact: <A>(self: Iterable<Option<A>>) => Chunk<A>
+export declare const compact: <A>(self: Chunk<Option<A>>) => Chunk<A>
 ```

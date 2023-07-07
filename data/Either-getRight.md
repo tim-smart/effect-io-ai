@@ -1,6 +1,6 @@
 # getRight
 
-Converts a `Either` to an `Option` discarding the error.
+Converts a `Either` to an `Option` discarding the `Left`.
 
 Alias of {@link toOption}.
 

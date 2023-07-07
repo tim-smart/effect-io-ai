@@ -15,7 +15,7 @@ Chunk.splitAt
 
 ```ts
 export declare const splitAt: {
-  (n: number): <A>(self: Chunk<A>) => readonly [Chunk<A>, Chunk<A>]
-  <A>(self: Chunk<A>, n: number): readonly [Chunk<A>, Chunk<A>]
+  (n: number): <A>(self: Chunk<A>) => [Chunk<A>, Chunk<A>]
+  <A>(self: Chunk<A>, n: number): [Chunk<A>, Chunk<A>]
 }
 ```

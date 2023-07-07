@@ -14,5 +14,5 @@ Random.next
 **Signature**
 
 ```ts
-export declare const next: (_: void) => Effect.Effect<never, never, number>
+export declare const next: Effect.Effect<never, never, number>
 ```

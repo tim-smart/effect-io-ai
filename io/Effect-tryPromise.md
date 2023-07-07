@@ -15,5 +15,8 @@ Effect.tryPromise
 **Signature**
 
 ```ts
-export declare const tryPromise: <A>(evaluate: LazyArg<Promise<A>>) => Effect<never, unknown, A>
+export declare const tryPromise: {
+  <A, E>(options: { readonly try: LazyArg<Promise<A>>; readonly catch: (error: unknown) => E }): Effect<never, E, A>
+  <A>(try_: LazyArg<Promise<A>>): Effect<never, unknown, A>
+}
 ```

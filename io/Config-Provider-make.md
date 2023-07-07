@@ -14,8 +14,8 @@ Provider.make
 **Signature**
 
 ```ts
-export declare const make: (
-  load: <A>(config: Config.Config<A>) => Effect.Effect<never, ConfigError.ConfigError, A>,
-  flattened: ConfigProvider.Flat
-) => ConfigProvider
+export declare const make: (options: {
+  readonly load: <A>(config: Config.Config<A>) => Effect.Effect<never, ConfigError.ConfigError, A>
+  readonly flattened: ConfigProvider.Flat
+}) => ConfigProvider
 ```

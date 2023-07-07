@@ -16,5 +16,5 @@ Effect.all
 **Signature**
 
 ```ts
-export declare const all: All.Signature
+export declare const all: All.All
 ```

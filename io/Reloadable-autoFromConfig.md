@@ -18,7 +18,9 @@ Reloadable.autoFromConfig
 ```ts
 export declare const autoFromConfig: <Out extends Context.Tag<any, any>, In, E, R>(
   tag: Out,
-  layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>>,
-  scheduleFromConfig: (context: Context.Context<In>) => Schedule.Schedule<R, unknown, unknown>
+  options: {
+    readonly layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>>
+    readonly scheduleFromConfig: (context: Context.Context<In>) => Schedule.Schedule<R, unknown, unknown>
+  }
 ) => Layer.Layer<In | R, E, Reloadable<Context.Tag.Identifier<Out>>>
 ```

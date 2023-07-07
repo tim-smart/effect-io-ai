@@ -1,6 +1,7 @@
 # log
 
-Logs the specified message at the current log level.
+Logs the specified message. You can optionally provide the log level
+and a cause.
 
 To import and use `log` from the "Effect" module:
 
@@ -14,5 +15,17 @@ Effect.log
 **Signature**
 
 ```ts
-export declare const log: (message: string) => Effect<never, never, void>
+export declare const log: {
+  (options?: {
+    readonly cause?: Cause.Cause<unknown>
+    readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
+  }): (message: string) => Effect<never, never, void>
+  (
+    message: string,
+    options?: {
+      readonly cause?: Cause.Cause<unknown>
+      readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
+    }
+  ): Effect<never, never, void>
+}
 ```

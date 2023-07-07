@@ -14,5 +14,5 @@ Metric.snapshot
 **Signature**
 
 ```ts
-export declare const snapshot: () => Effect.Effect<never, never, HashSet.HashSet<MetricPair.MetricPair.Untyped>>
+export declare const snapshot: Effect.Effect<never, never, HashSet.HashSet<MetricPair.MetricPair.Untyped>>
 ```

@@ -14,5 +14,9 @@ Cache.makeCacheStats
 **Signature**
 
 ```ts
-export declare const makeCacheStats: (hits: number, misses: number, size: number) => CacheStats
+export declare const makeCacheStats: (options: {
+  readonly hits: number
+  readonly misses: number
+  readonly size: number
+}) => CacheStats
 ```

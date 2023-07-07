@@ -18,10 +18,10 @@ Effect.cachedInvalidateWithTTL
 
 ```ts
 export declare const cachedInvalidateWithTTL: {
-  (timeToLive: Duration.Duration): <R, E, A>(
+  (timeToLive: Duration.DurationInput): <R, E, A>(
     self: Effect<R, E, A>
   ) => Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
-  <R, E, A>(self: Effect<R, E, A>, timeToLive: Duration.Duration): Effect<
+  <R, E, A>(self: Effect<R, E, A>, timeToLive: Duration.DurationInput): Effect<
     R,
     never,
     [Effect<never, E, A>, Effect<never, never, void>]

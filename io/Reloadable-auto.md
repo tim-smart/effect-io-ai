@@ -18,7 +18,9 @@ Reloadable.auto
 ```ts
 export declare const auto: <Out extends Context.Tag<any, any>, In, E, R>(
   tag: Out,
-  layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>>,
-  policy: Schedule.Schedule<R, unknown, unknown>
+  options: {
+    readonly layer: Layer.Layer<In, E, Context.Tag.Identifier<Out>>
+    readonly schedule: Schedule.Schedule<R, unknown, unknown>
+  }
 ) => Layer.Layer<In | R, E, Reloadable<Context.Tag.Identifier<Out>>>
 ```

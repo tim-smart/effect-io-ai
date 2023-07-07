@@ -15,7 +15,14 @@ Effect.filter
 
 ```ts
 export declare const filter: {
-  <A, R, E>(f: (a: A) => Effect<R, E, boolean>): (elements: Iterable<A>) => Effect<R, E, A[]>
-  <A, R, E>(elements: Iterable<A>, f: (a: A) => Effect<R, E, boolean>): Effect<R, E, A[]>
+  <A, R, E>(
+    f: (a: A, i: number) => Effect<R, E, boolean>,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly negate?: boolean }
+  ): (elements: Iterable<A>) => Effect<R, E, A[]>
+  <A, R, E>(
+    elements: Iterable<A>,
+    f: (a: A, i: number) => Effect<R, E, boolean>,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly negate?: boolean }
+  ): Effect<R, E, A[]>
 }
 ```

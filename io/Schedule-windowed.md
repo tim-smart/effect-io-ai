@@ -24,5 +24,5 @@ Schedule.windowed
 **Signature**
 
 ```ts
-export declare const windowed: (interval: Duration.Duration) => Schedule<never, unknown, number>
+export declare const windowed: (interval: Duration.DurationInput) => Schedule<never, unknown, number>
 ```

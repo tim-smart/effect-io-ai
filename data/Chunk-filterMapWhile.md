@@ -15,7 +15,7 @@ Chunk.filterMapWhile
 
 ```ts
 export declare const filterMapWhile: {
-  <A, B>(f: (a: A) => Option<B>): (self: Iterable<A>) => Chunk<B>
-  <A, B>(self: Iterable<A>, f: (a: A) => Option<B>): Chunk<B>
+  <A, B>(f: (a: A) => Option<B>): (self: Chunk<A>) => Chunk<B>
+  <A, B>(self: Chunk<A>, f: (a: A) => Option<B>): Chunk<B>
 }
 ```

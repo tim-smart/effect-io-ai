@@ -15,7 +15,7 @@ Chunk.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): (self: Chunk<A>) => Chunk<B>
-  <A, B>(self: Chunk<A>, f: (a: A) => B): Chunk<B>
+  <A, B>(f: (a: A, i: number) => B): (self: Chunk<A>) => Chunk<B>
+  <A, B>(self: Chunk<A>, f: (a: A, i: number) => B): Chunk<B>
 }
 ```

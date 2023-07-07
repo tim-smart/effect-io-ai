@@ -19,7 +19,23 @@ Effect.validateAll
 
 ```ts
 export declare const validateAll: {
-  <R, E, A, B>(f: (a: A) => Effect<R, E, B>): (elements: Iterable<A>) => Effect<R, E[], B[]>
-  <R, E, A, B>(elements: Iterable<A>, f: (a: A) => Effect<R, E, B>): Effect<R, E[], B[]>
+  <R, E, A, B>(
+    f: (a: A, i: number) => Effect<R, E, B>,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly discard?: false }
+  ): (elements: Iterable<A>) => Effect<R, E[], B[]>
+  <R, E, A, B>(
+    f: (a: A, i: number) => Effect<R, E, B>,
+    options: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly discard: true }
+  ): (elements: Iterable<A>) => Effect<R, E[], void>
+  <R, E, A, B>(
+    elements: Iterable<A>,
+    f: (a: A, i: number) => Effect<R, E, B>,
+    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly discard?: false }
+  ): Effect<R, E[], B[]>
+  <R, E, A, B>(
+    elements: Iterable<A>,
+    f: (a: A, i: number) => Effect<R, E, B>,
+    options: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly discard: true }
+  ): Effect<R, E[], void>
 }
 ```

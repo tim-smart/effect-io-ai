@@ -2,7 +2,7 @@
 
 Enqueues a collection of values into the queue.
 
-Returns a `List` of the values that were **not** able to be enqueued.
+Returns a `Chunk` of the values that were **not** able to be enqueued.
 
 To import and use `offerAll` from the "MutableQueue" module:
 

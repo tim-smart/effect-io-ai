@@ -16,12 +16,12 @@ Schedule.modifyDelay
 
 ```ts
 export declare const modifyDelay: {
-  <Out>(f: (out: Out, duration: Duration.Duration) => Duration.Duration): <Env, In>(
+  <Out>(f: (out: Out, duration: Duration.Duration) => Duration.DurationInput): <Env, In>(
     self: Schedule<Env, In, Out>
   ) => Schedule<Env, In, Out>
   <Env, In, Out>(
     self: Schedule<Env, In, Out>,
-    f: (out: Out, duration: Duration.Duration) => Duration.Duration
+    f: (out: Out, duration: Duration.Duration) => Duration.DurationInput
   ): Schedule<Env, In, Out>
 }
 ```

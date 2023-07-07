@@ -14,5 +14,5 @@ Effect.descriptor
 **Signature**
 
 ```ts
-export declare const descriptor: (_: void) => Effect<never, never, Fiber.Fiber.Descriptor>
+export declare const descriptor: Effect<never, never, Fiber.Fiber.Descriptor>
 ```

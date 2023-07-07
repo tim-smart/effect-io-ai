@@ -19,6 +19,6 @@ Predicate.tuple
 
 ```ts
 export declare const tuple: <T extends readonly Predicate<any>[]>(
-  ...predicates: T
+  ...elements: T
 ) => Predicate<Readonly<{ [I in keyof T]: [T[I]] extends [Predicate<infer A>] ? A : never }>>
 ```

@@ -17,7 +17,7 @@ Option.zipLeft
 
 ```ts
 export declare const zipLeft: {
-  <A, _>(self: Option<A>, that: Option<_>): Option<A>
   <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>
+  <A, _>(self: Option<A>, that: Option<_>): Option<A>
 }
 ```

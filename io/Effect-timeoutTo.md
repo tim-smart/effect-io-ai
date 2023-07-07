@@ -21,9 +21,14 @@ Effect.timeoutTo
 
 ```ts
 export declare const timeoutTo: {
-  <A, B, B1>(def: B1, f: (a: A) => B, duration: Duration.Duration): <R, E>(
-    self: Effect<R, E, A>
-  ) => Effect<R, E, B | B1>
-  <R, E, A, B, B1>(self: Effect<R, E, A>, def: B1, f: (a: A) => B, duration: Duration.Duration): Effect<R, E, B | B1>
+  <A, B, B1>(options: {
+    readonly onTimeout: B1
+    readonly onSuccess: (a: A) => B
+    readonly duration: Duration.DurationInput
+  }): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B | B1>
+  <R, E, A, B, B1>(
+    self: Effect<R, E, A>,
+    options: { readonly onTimeout: B1; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput }
+  ): Effect<R, E, B | B1>
 }
 ```

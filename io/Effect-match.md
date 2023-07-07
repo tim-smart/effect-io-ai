@@ -17,13 +17,12 @@ Effect.match
 
 ```ts
 export declare const match: {
-  <E, A, A2, A3>(onFailure: (error: E) => A2, onSuccess: (value: A) => A3): <R>(
+  <E, A, A2, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }): <R>(
     self: Effect<R, E, A>
   ) => Effect<R, never, A2 | A3>
-  <R, E, A, A2, A3>(self: Effect<R, E, A>, onFailure: (error: E) => A2, onSuccess: (value: A) => A3): Effect<
-    R,
-    never,
-    A2 | A3
-  >
+  <R, E, A, A2, A3>(
+    self: Effect<R, E, A>,
+    options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }
+  ): Effect<R, never, A2 | A3>
 }
 ```

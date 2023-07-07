@@ -15,5 +15,5 @@ Effect.never
 **Signature**
 
 ```ts
-export declare const never: (_: void) => Effect<never, never, never>
+export declare const never: Effect<never, never, never>
 ```

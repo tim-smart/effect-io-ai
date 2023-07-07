@@ -1,6 +1,6 @@
 # difference
 
-Creates a `Array` of values not included in the other given `Iterable`.
+Creates a `Array` of values not included in the other given `Iterable` using the provided `isEquivalent` function.
 The order and references of result values are determined by the first `Iterable`.
 
 To import and use `difference` from the "ReadonlyArray" module:
@@ -15,8 +15,8 @@ ReadonlyArray.difference
 **Signature**
 
 ```ts
-export declare const difference: <A>(isEquivalent: (self: A, that: A) => boolean) => {
-  (that: Iterable<A>): (self: Iterable<A>) => A[]
-  (self: Iterable<A>, that: Iterable<A>): A[]
+export declare const difference: {
+  <A>(that: Iterable<A>): (self: Iterable<A>) => A[]
+  <A>(self: Iterable<A>, that: Iterable<A>): A[]
 }
 ```

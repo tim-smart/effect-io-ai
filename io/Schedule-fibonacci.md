@@ -16,5 +16,5 @@ Schedule.fibonacci
 **Signature**
 
 ```ts
-export declare const fibonacci: (one: Duration.Duration) => Schedule<never, unknown, Duration.Duration>
+export declare const fibonacci: (one: Duration.DurationInput) => Schedule<never, unknown, Duration.Duration>
 ```

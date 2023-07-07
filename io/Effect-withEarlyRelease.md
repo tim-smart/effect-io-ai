@@ -17,5 +17,5 @@ Effect.withEarlyRelease
 ```ts
 export declare const withEarlyRelease: <R, E, A>(
   self: Effect<R, E, A>
-) => Effect<Scope.Scope | R, E, [Effect<never, never, void>, A]>
+) => Effect<Scope.Scope | R, E, readonly [Effect<never, never, void>, A]>
 ```

@@ -17,7 +17,7 @@ Either.isEither
 import { isEither, left, right } from '@effect/data/Either'
 
 assert.deepStrictEqual(isEither(right(1)), true)
-assert.deepStrictEqual(isEither(left('error')), true)
+assert.deepStrictEqual(isEither(left('a')), true)
 assert.deepStrictEqual(isEither({ right: 1 }), false)
 ```
 

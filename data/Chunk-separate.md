@@ -14,5 +14,5 @@ Chunk.separate
 **Signature**
 
 ```ts
-export declare const separate: <A, B>(self: Chunk<Either<A, B>>) => readonly [Chunk<A>, Chunk<B>]
+export declare const separate: <A, B>(self: Chunk<Either<A, B>>) => [Chunk<A>, Chunk<B>]
 ```

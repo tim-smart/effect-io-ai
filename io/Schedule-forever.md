@@ -14,5 +14,5 @@ Schedule.forever
 **Signature**
 
 ```ts
-export declare const forever: (_: void) => Schedule<never, unknown, number>
+export declare const forever: Schedule<never, unknown, number>
 ```

@@ -14,5 +14,5 @@ Logger.none
 **Signature**
 
 ```ts
-export declare const none: (_: void) => Logger<unknown, void>
+export declare const none: Logger<unknown, void>
 ```

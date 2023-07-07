@@ -16,7 +16,9 @@ Effect.replicateEffect
 
 ```ts
 export declare const replicateEffect: {
-  (n: number): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A[]>
-  <R, E, A>(self: Effect<R, E, A>, n: number): Effect<R, E, A[]>
+  (n: number, options?: { readonly discard?: false }): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A[]>
+  (n: number, options: { readonly discard: true }): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, void>
+  <R, E, A>(self: Effect<R, E, A>, n: number, options?: { readonly discard?: false }): Effect<R, E, A[]>
+  <R, E, A>(self: Effect<R, E, A>, n: number, options: { readonly discard: true }): Effect<R, E, void>
 }
 ```

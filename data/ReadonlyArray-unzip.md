@@ -14,5 +14,5 @@ ReadonlyArray.unzip
 **Signature**
 
 ```ts
-export declare const unzip: <A, B>(self: Iterable<[A, B]>) => [A[], B[]]
+export declare const unzip: <A, B>(self: Iterable<readonly [A, B]>) => [A[], B[]]
 ```
