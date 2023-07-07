@@ -26,7 +26,7 @@ const Shape = S.union(
   pipe(Square, S.attachPropertySignature('kind', 'square'))
 )
 
-assert.deepStrictEqual(S.decode(Shape)({ radius: 10 }), {
+assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {
   kind: 'circle',
   radius: 10,
 })
