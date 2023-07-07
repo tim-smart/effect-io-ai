@@ -1,6 +1,6 @@
 # every
 
-Check if a predicate holds true for every `ReadonlyArray` member.
+Check if a predicate holds true for every `Iterable` member.
 
 To import and use `every` from the "ReadonlyArray" module:
 
@@ -15,7 +15,7 @@ ReadonlyArray.every
 
 ```ts
 export declare const every: {
-  <A>(predicate: Predicate<A>): (self: readonly A[]) => boolean
-  <A>(self: readonly A[], predicate: Predicate<A>): boolean
+  <A>(predicate: Predicate<A>): (self: Iterable<A>) => boolean
+  <A>(self: Iterable<A>, predicate: Predicate<A>): boolean
 }
 ```
