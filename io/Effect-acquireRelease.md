@@ -25,15 +25,23 @@ Effect.acquireRelease
 
 ```ts
 export declare const acquireRelease: {
-  <R, E, A, R2, X>(options: {
-    readonly acquire: Effect<R, E, A>
-    readonly release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
-    readonly interruptable?: false | undefined
-  }): Effect<Scope.Scope | R | R2, E, A>
-  <R, E, A, R2, X>(options: {
-    readonly acquire: Effect<R, E, A>
-    readonly release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
-    readonly interruptable: true
-  }): Effect<Scope.Scope | R | R2, E, A>
+  <A, R2, X>(
+    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>,
+    options?: { readonly interruptible?: false }
+  ): <R, E>(acquire: Effect<R, E, A>) => Effect<Scope.Scope | R2 | R, E, A>
+  <A, R2, X>(
+    release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>,
+    options?: { readonly interruptible: true }
+  ): <R, E>(acquire: Effect<R, E, A>) => Effect<Scope.Scope | R2 | R, E, A>
+  <R, E, A, R2, X>(
+    acquire: Effect<R, E, A>,
+    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>,
+    options?: { readonly interruptible?: false }
+  ): Effect<Scope.Scope | R | R2, E, A>
+  <R, E, A, R2, X>(
+    acquire: Effect<R, E, A>,
+    release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>,
+    options?: { readonly interruptible: true }
+  ): Effect<Scope.Scope | R | R2, E, A>
 }
 ```
