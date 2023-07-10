@@ -1,6 +1,7 @@
 # findFirst
 
-Find the first element for which a predicate holds.
+Returns the first element that satisfies the specified
+predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "ReadonlyArray" module:
 

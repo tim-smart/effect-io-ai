@@ -1,6 +1,6 @@
 # append
 
-Appends the value to the chunk
+Appends the specified element to the end of the `Chunk`.
 
 To import and use `append` from the "Chunk" module:
 

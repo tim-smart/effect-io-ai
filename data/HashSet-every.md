@@ -1,7 +1,6 @@
 # every
 
-Returns `true` only if all values in the `HashSet` match the specified
-predicate.
+Check if a predicate holds true for every `HashSet` element.
 
 To import and use `every` from the "HashSet" module:
 

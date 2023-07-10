@@ -1,6 +1,6 @@
 # append
 
-Appends the specified element to the end of the list.
+Appends the specified element to the end of the `List`.
 
 To import and use `append` from the "List" module:
 

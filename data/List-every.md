@@ -1,7 +1,6 @@
 # every
 
-Returns `true` if all elements of the specified list satisfy the specified
-predicate, `false` otherwise.
+Check if a predicate holds true for every `List` element.
 
 To import and use `every` from the "List" module:
 

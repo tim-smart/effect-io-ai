@@ -1,6 +1,6 @@
 # prepend
 
-Prepends the value to the chunk
+Prepend an element to the front of a `Chunk`, creating a new `NonEmptyChunk`.
 
 To import and use `prepend` from the "Chunk" module:
 

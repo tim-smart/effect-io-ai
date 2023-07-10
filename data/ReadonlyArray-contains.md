@@ -1,6 +1,6 @@
 # contains
 
-Returns a function that checks if a `ReadonlyArray` contains a given value using the provided `isEquivalent` function.
+Returns a function that checks if a `ReadonlyArray` contains a given value using the default `Equivalence`.
 
 To import and use `contains` from the "ReadonlyArray" module:
 

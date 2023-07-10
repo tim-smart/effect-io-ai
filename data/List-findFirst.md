@@ -1,6 +1,6 @@
 # findFirst
 
-Returns the first element of the specified list that satisfies the specified
+Returns the first element that satisfies the specified
 predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "List" module:

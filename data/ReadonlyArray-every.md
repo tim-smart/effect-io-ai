@@ -1,6 +1,6 @@
 # every
 
-Check if a predicate holds true for every `ReadonlyArray` member.
+Check if a predicate holds true for every `ReadonlyArray` element.
 
 To import and use `every` from the "ReadonlyArray" module:
 

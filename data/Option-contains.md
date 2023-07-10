@@ -1,6 +1,6 @@
 # contains
 
-Returns a function that checks if an `Option` contains a given value using a provided `Equivalence` instance.
+Returns a function that checks if a `Option` contains a given value using a provided `isEquivalent` function.
 
 To import and use `contains` from the "Option" module:
 

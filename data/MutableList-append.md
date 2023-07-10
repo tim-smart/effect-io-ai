@@ -1,6 +1,6 @@
 # append
 
-Appends the specified value to the end of the list.
+Appends the specified element to the end of the `MutableList`.
 
 To import and use `append` from the "MutableList" module:
 

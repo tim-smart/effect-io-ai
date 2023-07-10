@@ -1,7 +1,6 @@
 # some
 
-Returns `true` if any element of the specified list satisfies the specified
-predicate, `false` otherwise.
+Check if a predicate holds true for some `List` element.
 
 To import and use `some` from the "List" module:
 
