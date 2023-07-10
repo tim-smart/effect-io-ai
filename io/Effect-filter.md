@@ -17,12 +17,20 @@ Effect.filter
 export declare const filter: {
   <A, R, E>(
     f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly negate?: boolean }
+    options?: {
+      readonly concurrency?: Concurrency
+      readonly batchRequests?: boolean | 'inherit'
+      readonly negate?: boolean
+    }
   ): (elements: Iterable<A>) => Effect<R, E, A[]>
   <A, R, E>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean; readonly negate?: boolean }
+    options?: {
+      readonly concurrency?: Concurrency
+      readonly batchRequests?: boolean | 'inherit'
+      readonly negate?: boolean
+    }
   ): Effect<R, E, A[]>
 }
 ```

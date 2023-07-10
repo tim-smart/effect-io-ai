@@ -18,12 +18,12 @@ Effect.exists
 export declare const exists: {
   <R, E, A>(
     f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency?: Concurrency; readonly batched?: boolean }
+    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
   ): (elements: Iterable<A>) => Effect<R, E, boolean>
   <R, E, A>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency: Concurrency; readonly batched?: boolean }
+    options?: { readonly concurrency: Concurrency; readonly batchRequests?: boolean | 'inherit' }
   ): Effect<R, E, boolean>
 }
 ```

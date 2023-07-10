@@ -17,6 +17,6 @@ Effect.allSuccesses
 ```ts
 export declare const allSuccesses: <R, E, A>(
   elements: Iterable<Effect<R, E, A>>,
-  options?: { readonly concurrency?: Concurrency; readonly batched?: boolean }
+  options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
 ) => Effect<R, never, A[]>
 ```
