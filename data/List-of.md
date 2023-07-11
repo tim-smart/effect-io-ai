@@ -14,5 +14,5 @@ List.of
 **Signature**
 
 ```ts
-export declare const of: <A>(value: A) => List<A>
+export declare const of: <A>(value: A) => Cons<A>
 ```

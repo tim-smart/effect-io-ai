@@ -17,7 +17,7 @@ List.filterMap
 
 ```ts
 export declare const filterMap: {
-  <A, B>(pf: (a: A) => Option.Option<B>): (self: Iterable<A>) => List<B>
-  <A, B>(self: Iterable<A>, pf: (a: A) => Option.Option<B>): List<B>
+  <A, B>(f: (a: A) => Option.Option<B>): (self: List<A>) => List<B>
+  <A, B>(self: List<A>, f: (a: A) => Option.Option<B>): List<B>
 }
 ```

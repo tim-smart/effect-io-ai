@@ -1,6 +1,6 @@
 # forEach
 
-Applies the specified function to each element of the list.
+Applies the specified function to each element of the `List`.
 
 To import and use `forEach` from the "List" module:
 

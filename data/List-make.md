@@ -14,5 +14,5 @@ List.make
 **Signature**
 
 ```ts
-export declare const make: <Elements extends readonly [any, ...any[]]>(...elements: Elements) => List<Elements[number]>
+export declare const make: <Elements extends readonly [any, ...any[]]>(...elements: Elements) => Cons<Elements[number]>
 ```

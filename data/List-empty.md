@@ -2,6 +2,8 @@
 
 Constructs a new empty `List<A>`.
 
+Alias of {@link nil}.
+
 To import and use `empty` from the "List" module:
 
 ```ts

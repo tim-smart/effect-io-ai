@@ -14,5 +14,5 @@ List.compact
 **Signature**
 
 ```ts
-export declare const compact: <A>(self: Iterable<Option.Option<A>>) => List<A>
+export declare const compact: <A>(self: List<Option.Option<A>>) => List<A>
 ```

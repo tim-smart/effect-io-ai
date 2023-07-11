@@ -1,6 +1,6 @@
 # toReadonlyArray
 
-Converts to a `ReadonlyArray<A>`
+Converts the specified `Chunk` to a `ReadonlyArray`.
 
 To import and use `toReadonlyArray` from the "Chunk" module:
 

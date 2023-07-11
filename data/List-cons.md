@@ -14,5 +14,5 @@ List.cons
 **Signature**
 
 ```ts
-export declare const cons: <A>(head: A, tail: List<A>) => List.Cons<A>
+export declare const cons: <A>(head: A, tail: List<A>) => Cons<A>
 ```

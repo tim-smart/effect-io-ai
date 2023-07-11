@@ -1,6 +1,6 @@
 # toChunk
 
-Converts the specified list to a `Chunk`.
+Converts the specified `List` to a `Chunk`.
 
 To import and use `toChunk` from the "List" module:
 

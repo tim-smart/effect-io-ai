@@ -1,6 +1,6 @@
 # toReadonlyArray
 
-Converts the specified list to a `ReadonlyArray`.
+Converts the specified `List` to a `ReadonlyArray`.
 
 To import and use `toReadonlyArray` from the "List" module:
 

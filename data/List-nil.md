@@ -1,6 +1,6 @@
 # nil
 
-Constructs a new `List.Nil<A>`.
+Constructs a new empty `List<A>`.
 
 To import and use `nil` from the "List" module:
 
@@ -14,5 +14,5 @@ List.nil
 **Signature**
 
 ```ts
-export declare const nil: <A = never>() => List.Nil<A>
+export declare const nil: <A = never>() => List<A>
 ```

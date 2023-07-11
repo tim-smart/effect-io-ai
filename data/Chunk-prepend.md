@@ -15,7 +15,7 @@ Chunk.prepend
 
 ```ts
 export declare const prepend: {
-  <B>(elem: B): <A>(self: Chunk<A>) => Chunk<B | A>
-  <A, B>(self: Chunk<A>, elem: B): Chunk<A | B>
+  <B>(elem: B): <A>(self: Chunk<A>) => NonEmptyChunk<B | A>
+  <A, B>(self: Chunk<A>, elem: B): NonEmptyChunk<A | B>
 }
 ```
