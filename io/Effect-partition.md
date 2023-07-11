@@ -18,12 +18,12 @@ Effect.partition
 export declare const partition: {
   <R, E, A, B>(
     f: (a: A) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): (elements: Iterable<A>) => Effect<R, never, readonly [E[], B[]]>
   <R, E, A, B>(
     elements: Iterable<A>,
     f: (a: A) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): Effect<R, never, readonly [E[], B[]]>
 }
 ```

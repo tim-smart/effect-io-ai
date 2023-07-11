@@ -1,6 +1,6 @@
 # promise
 
-Like `tryCatchPromise` but produces a defect in case of errors.
+Like `tryPromise` but produces a defect in case of errors.
 
 To import and use `promise` from the "Effect" module:
 

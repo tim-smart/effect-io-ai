@@ -1,20 +1,20 @@
-# contramapContext
+# mapInputContext
 
 Provides this data source with part of its required context.
 
-To import and use `contramapContext` from the "RequestResolver" module:
+To import and use `mapInputContext` from the "RequestResolver" module:
 
 ```ts
 import * as RequestResolver from '@effect/io/RequestResolver'
 
 // Can be accessed like this
-RequestResolver.contramapContext
+RequestResolver.mapInputContext
 ```
 
 **Signature**
 
 ```ts
-export declare const contramapContext: {
+export declare const mapInputContext: {
   <R0, R>(f: (context: Context.Context<R0>) => Context.Context<R>): <A extends Request.Request<any, any>>(
     self: RequestResolver<A, R>
   ) => RequestResolver<A, R0>

@@ -22,8 +22,8 @@ import { pipe } from '@effect/data/Function'
 const Circle = S.struct({ radius: S.number })
 const Square = S.struct({ sideLength: S.number })
 const Shape = S.union(
-  pipe(Circle, S.attachPropertySignature('kind', 'circle')),
-  pipe(Square, S.attachPropertySignature('kind', 'square'))
+  Circle.pipe(S.attachPropertySignature('kind', 'circle')),
+  Square.pipe(S.attachPropertySignature('kind', 'square'))
 )
 
 assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {

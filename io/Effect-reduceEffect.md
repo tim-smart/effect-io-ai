@@ -18,13 +18,13 @@ export declare const reduceEffect: {
   <R, E, A>(
     zero: Effect<R, E, A>,
     f: (acc: A, a: A, i: number) => A,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): (elements: Iterable<Effect<R, E, A>>) => Effect<R, E, A>
   <R, E, A>(
     elements: Iterable<Effect<R, E, A>>,
     zero: Effect<R, E, A>,
     f: (acc: A, a: A, i: number) => A,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): Effect<R, E, A>
 }
 ```

@@ -1,20 +1,20 @@
-# dimapEffect
+# mapBothEffect
 
-Returns a new schedule that contramaps the input and maps the output.
+Returns a new schedule that maps both the input and output.
 
-To import and use `dimapEffect` from the "Schedule" module:
+To import and use `mapBothEffect` from the "Schedule" module:
 
 ```ts
 import * as Schedule from '@effect/io/Schedule'
 
 // Can be accessed like this
-Schedule.dimapEffect
+Schedule.mapBothEffect
 ```
 
 **Signature**
 
 ```ts
-export declare const dimapEffect: {
+export declare const mapBothEffect: {
   <In2, Env2, In, Out, Env3, Out2>(options: {
     readonly onInput: (input: In2) => Effect.Effect<Env2, never, In>
     readonly onOutput: (out: Out) => Effect.Effect<Env3, never, Out2>

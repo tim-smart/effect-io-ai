@@ -16,14 +16,16 @@ Effect.validateWith
 
 ```ts
 export declare const validateWith: {
-  <A, R1, E1, B, C>(that: Effect<R1, E1, B>, f: (a: A, b: B) => C, options?: { readonly parallel?: boolean }): <R, E>(
-    self: Effect<R, E, A>
-  ) => Effect<R1 | R, E1 | E, C>
+  <A, R1, E1, B, C>(
+    that: Effect<R1, E1, B>,
+    f: (a: A, b: B) => C,
+    options?: { readonly concurrent?: boolean; readonly batching?: boolean | 'inherit' }
+  ): <R, E>(self: Effect<R, E, A>) => Effect<R1 | R, E1 | E, C>
   <R, E, A, R1, E1, B, C>(
     self: Effect<R, E, A>,
     that: Effect<R1, E1, B>,
     f: (a: A, b: B) => C,
-    options?: { readonly parallel?: boolean }
+    options?: { readonly concurrent?: boolean; readonly batching?: boolean | 'inherit' }
   ): Effect<R | R1, E | E1, C>
 }
 ```

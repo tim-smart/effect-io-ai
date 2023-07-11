@@ -1,20 +1,20 @@
-# dimap
+# mapBoth
 
-Returns a new schedule that contramaps the input and maps the output.
+Returns a new schedule that maps both the input and output.
 
-To import and use `dimap` from the "Schedule" module:
+To import and use `mapBoth` from the "Schedule" module:
 
 ```ts
 import * as Schedule from '@effect/io/Schedule'
 
 // Can be accessed like this
-Schedule.dimap
+Schedule.mapBoth
 ```
 
 **Signature**
 
 ```ts
-export declare const dimap: {
+export declare const mapBoth: {
   <In, Out, In2, Out2>(options: { readonly onInput: (in2: In2) => In; readonly onOutput: (out: Out) => Out2 }): <Env>(
     self: Schedule<Env, In, Out>
   ) => Schedule<Env, In2, Out2>

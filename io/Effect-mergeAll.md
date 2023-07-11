@@ -19,13 +19,13 @@ export declare const mergeAll: {
   <Z, A>(
     zero: Z,
     f: (z: Z, a: A, i: number) => Z,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): <R, E>(elements: Iterable<Effect<R, E, A>>) => Effect<R, E, Z>
   <R, E, A, Z>(
     elements: Iterable<Effect<R, E, A>>,
     zero: Z,
     f: (z: Z, a: A, i: number) => Z,
-    options?: { readonly concurrency?: Concurrency; readonly batchRequests?: boolean | 'inherit' }
+    options?: { readonly concurrency?: Concurrency; readonly batching?: boolean | 'inherit' }
   ): Effect<R, E, Z>
 }
 ```
