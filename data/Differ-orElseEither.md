@@ -1,20 +1,21 @@
-# orElseResult
+# orElseEither
 
-Use `orElseEither` instead.
+Combines this differ and the specified differ to produce a differ that
+knows how to diff the sum of their values.
 
-To import and use `orElseResult` from the "Differ" module:
+To import and use `orElseEither` from the "Differ" module:
 
 ```ts
 import * as Differ from '@effect/data/Differ'
 
 // Can be accessed like this
-Differ.orElseResult
+Differ.orElseEither
 ```
 
 **Signature**
 
 ```ts
-export declare const orElseResult: {
+export declare const orElseEither: {
   <Value2, Patch2>(that: Differ<Value2, Patch2>): <Value, Patch>(
     self: Differ<Value, Patch>
   ) => Differ<Either<Value, Value2>, OrPatch<Value, Value2, Patch, Patch2>>
