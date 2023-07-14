@@ -15,9 +15,9 @@ HashMap.filter
 
 ```ts
 export declare const filter: {
-  <A, B extends A>(f: Refinement<A, B>): <K>(self: HashMap<K, A>) => HashMap<K, B>
-  <A>(f: Predicate<A>): <K>(self: HashMap<K, A>) => HashMap<K, A>
-  <K, A, B extends A>(self: HashMap<K, A>, f: Refinement<A, B>): HashMap<K, B>
-  <K, A>(self: HashMap<K, A>, f: Predicate<A>): HashMap<K, A>
+  <K, A, B extends A>(f: (a: A, k: K) => a is B): (self: HashMap<K, A>) => HashMap<K, B>
+  <K, A>(f: (a: A, k: K) => boolean): (self: HashMap<K, A>) => HashMap<K, A>
+  <K, A, B extends A>(self: HashMap<K, A>, f: (a: A, k: K) => a is B): HashMap<K, B>
+  <K, A>(self: HashMap<K, A>, f: (a: A, k: K) => boolean): HashMap<K, A>
 }
 ```

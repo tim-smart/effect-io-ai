@@ -1,6 +1,6 @@
 # findFirst
 
-Finds the value in the tree associated with the specified key, if it exists.
+Finds the first value in the tree associated with the specified key, if it exists.
 
 To import and use `findFirst` from the "RedBlackTree" module:
 

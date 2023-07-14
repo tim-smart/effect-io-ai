@@ -15,7 +15,7 @@ ReadonlyArray.sortNonEmpty
 
 ```ts
 export declare const sortNonEmpty: {
-  <B>(O: order.Order<B>): <A extends B>(self: readonly [A, ...A[]]) => [A, ...A[]]
-  <A extends B, B>(self: readonly [A, ...A[]], O: order.Order<B>): [A, ...A[]]
+  <B>(O: Order.Order<B>): <A extends B>(self: readonly [A, ...A[]]) => [A, ...A[]]
+  <A extends B, B>(self: readonly [A, ...A[]], O: Order.Order<B>): [A, ...A[]]
 }
 ```

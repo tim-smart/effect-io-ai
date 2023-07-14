@@ -1,6 +1,6 @@
 # filterMap
 
-Maps over the values of the `HashMap` using the specified partial function
+Maps over the entries of the `HashMap` using the specified partial function
 and filters out `None` values.
 
 To import and use `filterMap` from the "HashMap" module:
@@ -16,7 +16,7 @@ HashMap.filterMap
 
 ```ts
 export declare const filterMap: {
-  <A, B>(f: (value: A) => Option<B>): <K>(self: HashMap<K, A>) => HashMap<K, B>
-  <K, A, B>(self: HashMap<K, A>, f: (value: A) => Option<B>): HashMap<K, B>
+  <A, K, B>(f: (value: A, key: K) => Option<B>): (self: HashMap<K, A>) => HashMap<K, B>
+  <K, A, B>(self: HashMap<K, A>, f: (value: A, key: K) => Option<B>): HashMap<K, B>
 }
 ```

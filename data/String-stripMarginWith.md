@@ -16,6 +16,8 @@ String.stripMarginWith
 **Signature**
 
 ```ts
-export declare const stripMarginWith: ((marginChar: string) => (self: string) => string) &
-  ((self: string, marginChar: string) => string)
+export declare const stripMarginWith: {
+  (marginChar: string): (self: string) => string
+  (self: string, marginChar: string): string
+}
 ```

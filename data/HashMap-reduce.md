@@ -1,6 +1,6 @@
 # reduce
 
-Reduces the specified state over the values of the `HashMap`.
+Reduces the specified state over the entries of the `HashMap`.
 
 To import and use `reduce` from the "HashMap" module:
 
@@ -15,7 +15,7 @@ HashMap.reduce
 
 ```ts
 export declare const reduce: {
-  <V, Z>(z: Z, f: (z: Z, v: V) => Z): <K>(self: HashMap<K, V>) => Z
-  <K, V, Z>(self: HashMap<K, V>, z: Z, f: (z: Z, v: V) => Z): Z
+  <Z, V, K>(zero: Z, f: (accumulator: Z, value: V, key: K) => Z): (self: HashMap<K, V>) => Z
+  <Z, V, K>(self: HashMap<K, V>, zero: Z, f: (accumulator: Z, value: V, key: K) => Z): Z
 }
 ```

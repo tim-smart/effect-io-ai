@@ -1,6 +1,6 @@
 # map
 
-Maps over the values of the `HashMap` using the specified function.
+Maps over the entries of the `HashMap` using the specified function.
 
 To import and use `map` from the "HashMap" module:
 
@@ -15,7 +15,7 @@ HashMap.map
 
 ```ts
 export declare const map: {
-  <V, A>(f: (value: V) => A): <K>(self: HashMap<K, V>) => HashMap<K, A>
-  <K, V, A>(self: HashMap<K, V>, f: (value: V) => A): HashMap<K, A>
+  <A, V, K>(f: (value: V, key: K) => A): (self: HashMap<K, V>) => HashMap<K, A>
+  <K, V, A>(self: HashMap<K, V>, f: (value: V, key: K) => A): HashMap<K, A>
 }
 ```

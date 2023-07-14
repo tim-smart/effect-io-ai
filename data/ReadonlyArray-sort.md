@@ -15,7 +15,7 @@ ReadonlyArray.sort
 
 ```ts
 export declare const sort: {
-  <B>(O: order.Order<B>): <A extends B>(self: Iterable<A>) => A[]
-  <A extends B, B>(self: Iterable<A>, O: order.Order<B>): A[]
+  <B>(O: Order.Order<B>): <A extends B>(self: Iterable<A>) => A[]
+  <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): A[]
 }
 ```

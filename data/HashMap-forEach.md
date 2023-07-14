@@ -1,6 +1,6 @@
 # forEach
 
-Applies the specified function to the values of the `HashMap`.
+Applies the specified function to the entries of the `HashMap`.
 
 To import and use `forEach` from the "HashMap" module:
 
@@ -15,7 +15,7 @@ HashMap.forEach
 
 ```ts
 export declare const forEach: {
-  <V>(f: (value: V) => void): <K>(self: HashMap<K, V>) => void
-  <K, V>(self: HashMap<K, V>, f: (value: V) => void): void
+  <V, K>(f: (value: V, key: K) => void): (self: HashMap<K, V>) => void
+  <V, K>(self: HashMap<K, V>, f: (value: V, key: K) => void): void
 }
 ```
