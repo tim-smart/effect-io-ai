@@ -19,8 +19,8 @@ export declare const filterOrDie: {
   <A, B extends A>(filter: Refinement<A, B>, orDieWith: LazyArg<unknown>): <R, E>(
     self: Effect<R, E, A>
   ) => Effect<R, E, B>
-  <A>(filter: Predicate<A>, orDieWith: LazyArg<unknown>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
+  <A, X extends A>(filter: Predicate<X>, orDieWith: LazyArg<unknown>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
   <R, E, A, B extends A>(self: Effect<R, E, A>, filter: Refinement<A, B>, orDieWith: LazyArg<unknown>): Effect<R, E, B>
-  <R, E, A>(self: Effect<R, E, A>, filter: Predicate<A>, orDieWith: LazyArg<unknown>): Effect<R, E, A>
+  <R, E, A, X extends A>(self: Effect<R, E, A>, filter: Predicate<X>, orDieWith: LazyArg<unknown>): Effect<R, E, A>
 }
 ```

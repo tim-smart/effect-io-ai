@@ -14,5 +14,8 @@ Effect.replicate
 **Signature**
 
 ```ts
-export declare const replicate: (n: number) => <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>[]
+export declare const replicate: {
+  (n: number): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>[]
+  <R, E, A>(self: Effect<R, E, A>, n: number): Effect<R, E, A>[]
+}
 ```

@@ -15,16 +15,14 @@ Effect.logCause
 
 ```ts
 export declare const logCause: {
-  (options?: {
-    readonly message?: string
-    readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
-  }): (cause: Cause.Cause<unknown>) => Effect<never, never, void>
+  (
+    level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace',
+    options?: { readonly message?: string }
+  ): (cause: Cause.Cause<unknown>) => Effect<never, never, void>
   (
     cause: Cause.Cause<unknown>,
-    options?: {
-      readonly message?: string
-      readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
-    }
+    level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace',
+    options?: { readonly message?: string }
   ): Effect<never, never, void>
 }
 ```

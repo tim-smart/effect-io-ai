@@ -15,7 +15,9 @@ Effect.tapError
 
 ```ts
 export declare const tapError: {
-  <E, R2, E2, X>(f: (e: E) => Effect<R2, E2, X>): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E | E2, A>
-  <R, E, A, R2, E2, X>(self: Effect<R, E, A>, f: (e: E) => Effect<R2, E2, X>): Effect<R | R2, E | E2, A>
+  <E, XE extends E, R2, E2, X>(f: (e: XE) => Effect<R2, E2, X>): <R, A>(
+    self: Effect<R, E, A>
+  ) => Effect<R2 | R, E | E2, A>
+  <R, E, XE extends E, A, R2, E2, X>(self: Effect<R, E, A>, f: (e: XE) => Effect<R2, E2, X>): Effect<R | R2, E | E2, A>
 }
 ```

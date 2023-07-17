@@ -17,18 +17,14 @@ Effect.withLog
 export declare const withLog: {
   (
     message: string,
-    options?: {
-      readonly cause?: Cause.Cause<unknown>
-      readonly level?: 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace' | 'None'
-    }
+    level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace',
+    options?: { readonly cause?: Cause.Cause<unknown> }
   ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
   <R, E, A>(
     self: Effect<R, E, A>,
     message: string,
-    options: {
-      readonly cause?: Cause.Cause<unknown>
-      readonly level?: 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace' | 'None'
-    }
+    level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace',
+    options?: { readonly cause?: Cause.Cause<unknown> }
   ): Effect<R, E, A>
 }
 ```

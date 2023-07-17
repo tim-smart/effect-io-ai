@@ -15,16 +15,14 @@ Effect.withLogCause
 
 ```ts
 export declare const withLogCause: {
-  (options?: {
-    readonly message?: string
-    readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
-  }): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+  (
+    level?: 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace' | 'None',
+    options?: { readonly message?: string }
+  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
   <R, E, A>(
     self: Effect<R, E, A>,
-    options?: {
-      readonly message?: string
-      readonly level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace'
-    }
+    level?: 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace' | 'None',
+    options?: { readonly message?: string }
   ): Effect<R, E, A>
 }
 ```

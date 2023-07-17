@@ -16,15 +16,21 @@ Effect.filterOrFail
 
 ```ts
 export declare const filterOrFail: {
-  <A, B extends A, E2>(filter: Refinement<A, B>, orFailWith: (a: A) => E2): <R, E>(
+  <A, B extends A, X extends A, E2>(filter: Refinement<A, B>, orFailWith: (a: X) => E2): <R, E>(
     self: Effect<R, E, A>
   ) => Effect<R, E2 | E, B>
-  <A, E2>(filter: Predicate<A>, orFailWith: (a: A) => E2): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, A>
-  <R, E, A, B extends A, E2>(self: Effect<R, E, A>, filter: Refinement<A, B>, orFailWith: (a: A) => E2): Effect<
-    R,
-    E | E2,
-    B
-  >
-  <R, E, A, E2>(self: Effect<R, E, A>, filter: Predicate<A>, orFailWith: (a: A) => E2): Effect<R, E | E2, A>
+  <A, X extends A, Y extends A, E2>(filter: Predicate<X>, orFailWith: (a: Y) => E2): <R, E>(
+    self: Effect<R, E, A>
+  ) => Effect<R, E2 | E, A>
+  <R, E, A, B extends A, X extends A, E2>(
+    self: Effect<R, E, A>,
+    filter: Refinement<A, B>,
+    orFailWith: (a: X) => E2
+  ): Effect<R, E | E2, B>
+  <R, E, A, X extends A, Y extends A, E2>(
+    self: Effect<R, E, A>,
+    filter: Predicate<X>,
+    orFailWith: (a: Y) => E2
+  ): Effect<R, E | E2, A>
 }
 ```

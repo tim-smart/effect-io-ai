@@ -15,12 +15,12 @@ Layer.tapErrorCause
 
 ```ts
 export declare const tapErrorCause: {
-  <E, RIn2, E2, X>(f: (cause: Cause.Cause<E>) => Effect.Effect<RIn2, E2, X>): <RIn, ROut>(
+  <E, XE extends E, RIn2, E2, X>(f: (cause: Cause.Cause<XE>) => Effect.Effect<RIn2, E2, X>): <RIn, ROut>(
     self: Layer<RIn, E, ROut>
   ) => Layer<RIn2 | RIn, E | E2, ROut>
-  <RIn, E, ROut, RIn2, E2, X>(
+  <RIn, E, XE extends E, ROut, RIn2, E2, X>(
     self: Layer<RIn, E, ROut>,
-    f: (cause: Cause.Cause<E>) => Effect.Effect<RIn2, E2, X>
+    f: (cause: Cause.Cause<XE>) => Effect.Effect<RIn2, E2, X>
   ): Layer<RIn | RIn2, E | E2, ROut>
 }
 ```
