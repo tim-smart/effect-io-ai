@@ -15,7 +15,7 @@ Duration.between
 
 ```ts
 export declare const between: {
-  (minimum: Duration, maximum: Duration): (self: Duration) => boolean
-  (self: Duration, minimum: Duration, maximum: Duration): boolean
+  (minimum: DurationInput, maximum: DurationInput): (self: DurationInput) => boolean
+  (self: DurationInput, minimum: DurationInput, maximum: DurationInput): boolean
 }
 ```

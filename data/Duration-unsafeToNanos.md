@@ -16,5 +16,5 @@ Duration.unsafeToNanos
 **Signature**
 
 ```ts
-export declare const unsafeToNanos: (self: Duration) => bigint
+export declare const unsafeToNanos: (self: DurationInput) => bigint
 ```

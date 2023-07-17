@@ -16,5 +16,5 @@ Duration.toNanos
 **Signature**
 
 ```ts
-export declare const toNanos: (self: Duration) => Option.Option<bigint>
+export declare const toNanos: (self: DurationInput) => Option.Option<bigint>
 ```
