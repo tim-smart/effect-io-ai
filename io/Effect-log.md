@@ -1,7 +1,8 @@
 # log
 
-Logs the specified message. You can optionally provide the log level
-and a cause.
+Logs the specified message or cause at the current log level.
+
+You can set the current log level using `FiberRef.currentLogLevel`.
 
 To import and use `log` from the "Effect" module:
 
@@ -15,9 +16,8 @@ Effect.log
 **Signature**
 
 ```ts
-export declare const log: (
-  message: string,
-  level?: 'None' | 'All' | 'Fatal' | 'Error' | 'Warning' | 'Info' | 'Debug' | 'Trace',
-  options?: { readonly cause?: Cause.Cause<unknown> }
+export declare const log: <A extends string | Cause.Cause<unknown>>(
+  messageOrCause: A,
+  supplementry?: (A extends string ? Cause.Cause<unknown> : string) | undefined
 ) => Effect<never, never, void>
 ```
