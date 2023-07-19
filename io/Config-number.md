@@ -1,18 +1,18 @@
-# float
+# number
 
 Constructs a config for a float value.
 
-To import and use `float` from the "Config" module:
+To import and use `number` from the "Config" module:
 
 ```ts
 import * as Config from '@effect/io/Config'
 
 // Can be accessed like this
-Config.float
+Config.number
 ```
 
 **Signature**
 
 ```ts
-export declare const float: (name?: string | undefined) => Config<number>
+export declare const number: (name?: string | undefined) => Config<number>
 ```
