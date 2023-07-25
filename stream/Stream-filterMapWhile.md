@@ -15,7 +15,8 @@ Stream.filterMapWhile
 **Signature**
 
 ```ts
-export declare const filterMapWhile: <A, A2>(
-  pf: (a: A) => Option.Option<A2>
-) => <R, E>(self: Stream<R, E, A>) => Stream<R, E, A2>
+export declare const filterMapWhile: {
+  <A, X extends A, A2>(pf: (a: X) => Option.Option<A2>): <R, E>(self: Stream<R, E, A>) => Stream<R, E, A2>
+  <R, E, A, X extends A, A2>(self: Stream<R, E, A>, pf: (a: X) => Option.Option<A2>): Stream<R, E, A2>
+}
 ```
