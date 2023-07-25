@@ -25,5 +25,5 @@ Order.tuple
 ```ts
 export declare const tuple: <T extends readonly Order<any>[]>(
   ...elements: T
-) => Order<{ [I in keyof T]: [T[I]] extends [Order<infer A>] ? A : never }>
+) => Order<Readonly<{ [I in keyof T]: [T[I]] extends [Order<infer A>] ? A : never }>>
 ```
