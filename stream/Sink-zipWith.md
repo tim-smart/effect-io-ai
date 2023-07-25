@@ -17,13 +17,16 @@ Sink.zipWith
 
 ```ts
 export declare const zipWith: {
-  <R2, E2, In, In2 extends In, L, L2, Z, Z2, Z3>(that: Sink<R2, E2, In2, L2, Z2>, f: (z: Z, z1: Z2) => Z3): <R, E>(
-    self: Sink<R, E, In, L, Z>
-  ) => Sink<R2 | R, E2 | E, In & In2, L | L2, Z3>
+  <R2, E2, In, In2 extends In, L, L2, Z, Z2, Z3>(
+    that: Sink<R2, E2, In2, L2, Z2>,
+    f: (z: Z, z1: Z2) => Z3,
+    options?: { readonly concurrent?: boolean }
+  ): <R, E>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In & In2, L | L2, Z3>
   <R, E, R2, E2, In, In2 extends In, L, L2, Z, Z2, Z3>(
     self: Sink<R, E, In, L, Z>,
     that: Sink<R2, E2, In2, L2, Z2>,
-    f: (z: Z, z1: Z2) => Z3
+    f: (z: Z, z1: Z2) => Z3,
+    options?: { readonly concurrent?: boolean }
   ): Sink<R | R2, E | E2, In & In2, L | L2, Z3>
 }
 ```

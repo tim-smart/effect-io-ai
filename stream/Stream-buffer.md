@@ -16,7 +16,16 @@ Stream.buffer
 
 ```ts
 export declare const buffer: {
-  (capacity: number): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(self: Stream<R, E, A>, capacity: number): Stream<R, E, A>
+  (
+    options:
+      | { readonly capacity: 'unbounded' }
+      | { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }
+  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
+  <R, E, A>(
+    self: Stream<R, E, A>,
+    options:
+      | { readonly capacity: 'unbounded' }
+      | { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }
+  ): Stream<R, E, A>
 }
 ```

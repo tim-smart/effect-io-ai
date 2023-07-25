@@ -17,17 +17,20 @@ Stream.distributedWith
 
 ```ts
 export declare const distributedWith: {
-  <N extends number, A>(n: N, maximumLag: number, decide: (a: A) => Effect.Effect<never, never, Predicate<number>>): <
-    R,
-    E
-  >(
+  <N extends number, A>(options: {
+    readonly size: N
+    readonly maximumLag: number
+    readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+  }): <R, E>(
     self: Stream<R, E, A>
   ) => Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>, N>>
   <R, E, N extends number, A>(
     self: Stream<R, E, A>,
-    n: N,
-    maximumLag: number,
-    decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+    options: {
+      readonly size: N
+      readonly maximumLag: number
+      readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+    }
   ): Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>, N>>
 }
 ```

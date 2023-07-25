@@ -16,14 +16,18 @@ Take.match
 
 ```ts
 export declare const match: {
-  <Z, E, Z2, A, Z3>(onEnd: () => Z, onError: (cause: Cause.Cause<E>) => Z2, onSuccess: (chunk: Chunk.Chunk<A>) => Z3): (
-    self: Take<E, A>
-  ) => Z | Z2 | Z3
+  <Z, E, Z2, A, Z3>(options: {
+    readonly onEnd: () => Z
+    readonly onFailure: (cause: Cause.Cause<E>) => Z2
+    readonly onSuccess: (chunk: Chunk.Chunk<A>) => Z3
+  }): (self: Take<E, A>) => Z | Z2 | Z3
   <Z, E, Z2, A, Z3>(
     self: Take<E, A>,
-    onEnd: () => Z,
-    onError: (cause: Cause.Cause<E>) => Z2,
-    onSuccess: (chunk: Chunk.Chunk<A>) => Z3
+    options: {
+      readonly onEnd: () => Z
+      readonly onFailure: (cause: Cause.Cause<E>) => Z2
+      readonly onSuccess: (chunk: Chunk.Chunk<A>) => Z3
+    }
   ): Z | Z2 | Z3
 }
 ```

@@ -15,14 +15,16 @@ UpstreamPullStrategy.match
 
 ```ts
 export declare const match: {
-  <A, Z>(
-    onPullAfterNext: (emitSeparator: Option.Option<A>) => Z,
-    onPullAfterAllEnqueued: (emitSeparator: Option.Option<A>) => Z
-  ): (self: UpstreamPullStrategy<A>) => Z
+  <A, Z>(options: {
+    readonly onNext: (emitSeparator: Option.Option<A>) => Z
+    readonly onAllEnqueued: (emitSeparator: Option.Option<A>) => Z
+  }): (self: UpstreamPullStrategy<A>) => Z
   <A, Z>(
     self: UpstreamPullStrategy<A>,
-    onPullAfterNext: (emitSeparator: Option.Option<A>) => Z,
-    onPullAfterAllEnqueued: (emitSeparator: Option.Option<A>) => Z
+    options: {
+      readonly onNext: (emitSeparator: Option.Option<A>) => Z
+      readonly onAllEnqueued: (emitSeparator: Option.Option<A>) => Z
+    }
   ): Z
 }
 ```

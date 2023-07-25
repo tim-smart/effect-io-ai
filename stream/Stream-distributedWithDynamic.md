@@ -20,7 +20,10 @@ Stream.distributedWithDynamic
 
 ```ts
 export declare const distributedWithDynamic: {
-  <E, A, _>(maximumLag: number, decide: (a: A) => Effect.Effect<never, never, Predicate<number>>): <R>(
+  <E, A, _>(options: {
+    readonly maximumLag: number
+    readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+  }): <R>(
     self: Stream<R, E, A>
   ) => Effect.Effect<
     Scope.Scope | R,
@@ -29,8 +32,7 @@ export declare const distributedWithDynamic: {
   >
   <R, E, A, _>(
     self: Stream<R, E, A>,
-    maximumLag: number,
-    decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+    options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>> }
   ): Effect.Effect<
     Scope.Scope | R,
     never,

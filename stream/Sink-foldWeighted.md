@@ -16,10 +16,10 @@ Sink.foldWeighted
 **Signature**
 
 ```ts
-export declare const foldWeighted: <S, In>(
-  s: S,
-  max: number,
-  costFn: (s: S, input: In) => number,
-  f: (s: S, input: In) => S
-) => Sink<never, never, In, In, S>
+export declare const foldWeighted: <S, In>(options: {
+  readonly initial: S
+  readonly maxCost: number
+  readonly cost: (s: S, input: In) => number
+  readonly body: (s: S, input: In) => S
+}) => Sink<never, never, In, In, S>
 ```

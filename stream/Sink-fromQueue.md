@@ -14,5 +14,8 @@ Sink.fromQueue
 **Signature**
 
 ```ts
-export declare const fromQueue: <In>(queue: Queue.Enqueue<In>) => Sink<never, never, In, never, void>
+export declare const fromQueue: <In>(
+  queue: Queue.Enqueue<In>,
+  options?: { readonly shutdown?: boolean }
+) => Sink<never, never, In, never, void>
 ```

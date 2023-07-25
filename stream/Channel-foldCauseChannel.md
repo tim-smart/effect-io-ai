@@ -32,10 +32,10 @@ export declare const foldCauseChannel: {
     OutDone,
     OutDone2,
     OutDone3
-  >(
-    onError: (c: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>,
-    onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
-  ): <Env, InErr, InElem, InDone, OutElem>(
+  >(options: {
+    readonly onFailure: (c: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>
+    readonly onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
+  }): <Env, InErr, InElem, InDone, OutElem>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<
     Env1 | Env2 | Env,
@@ -70,8 +70,12 @@ export declare const foldCauseChannel: {
     OutDone3
   >(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    onError: (c: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>,
-    onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
+    options: {
+      readonly onFailure: (
+        c: Cause.Cause<OutErr>
+      ) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>
+      readonly onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
+    }
   ): Channel<
     Env | Env1 | Env2,
     InErr & InErr1 & InErr2,

@@ -14,5 +14,16 @@ Stream.fromChunkHub
 **Signature**
 
 ```ts
-export declare const fromChunkHub: <A>(hub: Hub.Hub<Chunk.Chunk<A>>) => Stream<never, never, A>
+export declare const fromChunkHub: {
+  <A>(hub: Hub.Hub<Chunk.Chunk<A>>, options: { readonly scoped: true; readonly shutdown?: boolean }): Effect.Effect<
+    Scope.Scope,
+    never,
+    Stream<never, never, A>
+  >
+  <A>(hub: Hub.Hub<Chunk.Chunk<A>>, options?: { readonly scoped?: false; readonly shutdown?: boolean }): Stream<
+    never,
+    never,
+    A
+  >
+}
 ```

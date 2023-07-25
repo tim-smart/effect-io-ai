@@ -45,11 +45,11 @@ Sink.foldWeightedDecompose
 **Signature**
 
 ```ts
-export declare const foldWeightedDecompose: <S, In>(
-  s: S,
-  max: number,
-  costFn: (s: S, input: In) => number,
-  decompose: (input: In) => Chunk.Chunk<In>,
-  f: (s: S, input: In) => S
-) => Sink<never, never, In, In, S>
+export declare const foldWeightedDecompose: <S, In>(options: {
+  readonly initial: S
+  readonly maxCost: number
+  readonly cost: (s: S, input: In) => number
+  readonly decompose: (input: In) => Chunk.Chunk<In>
+  readonly body: (s: S, input: In) => S
+}) => Sink<never, never, In, In, S>
 ```

@@ -16,8 +16,13 @@ Stream.mergeAll
 **Signature**
 
 ```ts
-export declare const mergeAll: (
-  n: number,
-  bufferSize?: number
-) => <R, E, A>(...streams: Stream<R, E, A>[]) => Stream<R, E, A>
+export declare const mergeAll: {
+  (options: { readonly concurrency: number | 'unbounded'; readonly bufferSize?: number }): <R, E, A>(
+    streams: Iterable<Stream<R, E, A>>
+  ) => Stream<R, E, A>
+  <R, E, A>(
+    streams: Iterable<Stream<R, E, A>>,
+    options: { readonly concurrency: number | 'unbounded'; readonly bufferSize?: number }
+  ): Stream<R, E, A>
+}
 ```

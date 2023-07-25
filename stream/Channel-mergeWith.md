@@ -18,15 +18,29 @@ Channel.mergeWith
 
 ```ts
 export declare const mergeWith: {
-  <Env1, InErr1, InElem1, InDone1, OutErr, OutErr1, OutErr2, OutErr3, OutElem1, OutDone, OutDone1, OutDone2, OutDone3>(
-    that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    leftDone: (
+  <
+    Env1,
+    InErr1,
+    InElem1,
+    InDone1,
+    OutErr,
+    OutErr1,
+    OutErr2,
+    OutErr3,
+    OutElem1,
+    OutDone,
+    OutDone1,
+    OutDone2,
+    OutDone3
+  >(options: {
+    readonly other: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+    readonly onSelfDone: (
       exit: Exit.Exit<OutErr, OutDone>
-    ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>,
-    rightDone: (
+    ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>
+    readonly onOtherDone: (
       ex: Exit.Exit<OutErr1, OutDone1>
     ) => MergeDecision.MergeDecision<Env1, OutErr, OutDone, OutErr3, OutDone3>
-  ): <Env, InErr, InElem, InDone, OutElem>(
+  }): <Env, InErr, InElem, InDone, OutElem>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<
     Env1 | Env,
@@ -58,13 +72,15 @@ export declare const mergeWith: {
     OutDone3
   >(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    leftDone: (
-      exit: Exit.Exit<OutErr, OutDone>
-    ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>,
-    rightDone: (
-      ex: Exit.Exit<OutErr1, OutDone1>
-    ) => MergeDecision.MergeDecision<Env1, OutErr, OutDone, OutErr3, OutDone3>
+    options: {
+      readonly other: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+      readonly onSelfDone: (
+        exit: Exit.Exit<OutErr, OutDone>
+      ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>
+      readonly onOtherDone: (
+        ex: Exit.Exit<OutErr1, OutDone1>
+      ) => MergeDecision.MergeDecision<Env1, OutErr, OutDone, OutErr3, OutDone3>
+    }
   ): Channel<
     Env | Env1,
     InErr & InErr1,

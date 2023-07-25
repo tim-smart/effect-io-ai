@@ -16,10 +16,10 @@ Sink.foldWeightedEffect
 **Signature**
 
 ```ts
-export declare const foldWeightedEffect: <S, In, R, E, R2, E2>(
-  s: S,
-  max: number,
-  costFn: (s: S, input: In) => Effect.Effect<R, E, number>,
-  f: (s: S, input: In) => Effect.Effect<R2, E2, S>
-) => Sink<R | R2, E | E2, In, In, S>
+export declare const foldWeightedEffect: <S, In, R, E, R2, E2>(options: {
+  readonly initial: S
+  readonly maxCost: number
+  readonly cost: (s: S, input: In) => Effect.Effect<R, E, number>
+  readonly body: (s: S, input: In) => Effect.Effect<R2, E2, S>
+}) => Sink<R | R2, E | E2, In, In, S>
 ```

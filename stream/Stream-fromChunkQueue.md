@@ -14,5 +14,8 @@ Stream.fromChunkQueue
 **Signature**
 
 ```ts
-export declare const fromChunkQueue: <A>(queue: Queue.Dequeue<Chunk.Chunk<A>>) => Stream<never, never, A>
+export declare const fromChunkQueue: <A>(
+  queue: Queue.Dequeue<Chunk.Chunk<A>>,
+  options?: { readonly shutdown?: boolean }
+) => Stream<never, never, A>
 ```

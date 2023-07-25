@@ -19,14 +19,22 @@ Stream.mergeWith
 
 ```ts
 export declare const mergeWith: {
-  <R2, E2, A2, A, A3, A4>(that: Stream<R2, E2, A2>, left: (a: A) => A3, right: (a2: A2) => A4): <R, E>(
-    self: Stream<R, E, A>
-  ) => Stream<R2 | R, E2 | E, A3 | A4>
+  <R2, E2, A2, A, A3, A4>(
+    other: Stream<R2, E2, A2>,
+    options: {
+      readonly onSelf: (a: A) => A3
+      readonly onOther: (a2: A2) => A4
+      readonly haltStrategy?: HaltStrategy.HaltStrategyInput | undefined
+    }
+  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A3 | A4>
   <R, E, R2, E2, A2, A, A3, A4>(
     self: Stream<R, E, A>,
-    that: Stream<R2, E2, A2>,
-    left: (a: A) => A3,
-    right: (a2: A2) => A4
+    other: Stream<R2, E2, A2>,
+    options: {
+      readonly onSelf: (a: A) => A3
+      readonly onOther: (a2: A2) => A4
+      readonly haltStrategy?: HaltStrategy.HaltStrategyInput | undefined
+    }
   ): Stream<R | R2, E | E2, A3 | A4>
 }
 ```

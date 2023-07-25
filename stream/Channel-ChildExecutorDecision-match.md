@@ -15,7 +15,12 @@ ChildExecutorDecision.match
 
 ```ts
 export declare const match: {
-  <A>(onContinue: () => A, onClose: (value: unknown) => A, onYield: () => A): (self: ChildExecutorDecision) => A
-  <A>(self: ChildExecutorDecision, onContinue: () => A, onClose: (value: unknown) => A, onYield: () => A): A
+  <A>(options: { readonly onContinue: () => A; readonly onClose: (value: unknown) => A; readonly onYield: () => A }): (
+    self: ChildExecutorDecision
+  ) => A
+  <A>(
+    self: ChildExecutorDecision,
+    options: { readonly onContinue: () => A; readonly onClose: (value: unknown) => A; readonly onYield: () => A }
+  ): A
 }
 ```

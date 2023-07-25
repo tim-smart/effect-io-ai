@@ -14,5 +14,8 @@ Sink.fromHub
 **Signature**
 
 ```ts
-export declare const fromHub: <In>(hub: Hub.Hub<In>) => Sink<never, never, In, never, void>
+export declare const fromHub: <In>(
+  hub: Hub.Hub<In>,
+  options?: { readonly shutdown?: boolean }
+) => Sink<never, never, In, never, void>
 ```

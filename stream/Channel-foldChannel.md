@@ -32,10 +32,10 @@ export declare const foldChannel: {
     OutDone,
     OutDone1,
     OutDone2
-  >(
-    onError: (error: OutErr) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    onSuccess: (done: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone2>
-  ): <Env, InErr, InElem, InDone, OutElem>(
+  >(options: {
+    readonly onFailure: (error: OutErr) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+    readonly onSuccess: (done: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone2>
+  }): <Env, InErr, InElem, InDone, OutElem>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<
     Env1 | Env2 | Env,
@@ -70,8 +70,10 @@ export declare const foldChannel: {
     OutDone2
   >(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    onError: (error: OutErr) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    onSuccess: (done: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone2>
+    options: {
+      readonly onFailure: (error: OutErr) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+      readonly onSuccess: (done: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone2>
+    }
   ): Channel<
     Env | Env1 | Env2,
     InErr & InErr1 & InErr2,

@@ -16,15 +16,17 @@ Sink.collectAllWhileWith
 
 ```ts
 export declare const collectAllWhileWith: {
-  <Z, S>(z: S, p: Predicate<Z>, f: (s: S, z: Z) => S): <R, E, In, L extends In>(
-    self: Sink<R, E, In, L, Z>
-  ) => Sink<R, E, In, L, S>
-  <R, E, In, L extends In, Z, S>(self: Sink<R, E, In, L, Z>, z: S, p: Predicate<Z>, f: (s: S, z: Z) => S): Sink<
+  <Z, S>(options: { readonly initial: S; readonly while: Predicate<Z>; readonly body: (s: S, z: Z) => S }): <
     R,
     E,
     In,
-    L,
-    S
-  >
+    L extends In
+  >(
+    self: Sink<R, E, In, L, Z>
+  ) => Sink<R, E, In, L, S>
+  <R, E, In, L extends In, Z, S>(
+    self: Sink<R, E, In, L, Z>,
+    options: { readonly initial: S; readonly while: Predicate<Z>; readonly body: (s: S, z: Z) => S }
+  ): Sink<R, E, In, L, S>
 }
 ```
