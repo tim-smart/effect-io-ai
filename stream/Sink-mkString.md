@@ -14,5 +14,5 @@ Sink.mkString
 **Signature**
 
 ```ts
-export declare const mkString: () => Sink<never, never, unknown, never, string>
+export declare const mkString: Sink<never, never, unknown, never, string>
 ```

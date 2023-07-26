@@ -14,5 +14,5 @@ Sink.sum
 **Signature**
 
 ```ts
-export declare const sum: () => Sink<never, never, number, never, number>
+export declare const sum: Sink<never, never, number, never, number>
 ```

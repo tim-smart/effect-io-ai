@@ -14,5 +14,5 @@ Sink.never
 **Signature**
 
 ```ts
-export declare const never: () => Sink<never, never, unknown, never, never>
+export declare const never: Sink<never, never, unknown, never, never>
 ```

@@ -14,5 +14,5 @@ Sink.drain
 **Signature**
 
 ```ts
-export declare const drain: () => Sink<never, never, unknown, never, void>
+export declare const drain: Sink<never, never, unknown, never, void>
 ```

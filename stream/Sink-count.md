@@ -14,5 +14,5 @@ Sink.count
 **Signature**
 
 ```ts
-export declare const count: () => Sink<never, never, unknown, never, number>
+export declare const count: Sink<never, never, unknown, never, number>
 ```

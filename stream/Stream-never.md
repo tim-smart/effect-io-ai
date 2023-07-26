@@ -14,5 +14,5 @@ Stream.never
 **Signature**
 
 ```ts
-export declare const never: () => Stream<never, never, never>
+export declare const never: Stream<never, never, never>
 ```
