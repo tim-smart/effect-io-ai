@@ -14,5 +14,5 @@ Effect.logAnnotations
 **Signature**
 
 ```ts
-export declare const logAnnotations: Effect<never, never, HashMap.HashMap<string, string>>
+export declare const logAnnotations: Effect<never, never, HashMap.HashMap<string, Logger.AnnotationValue>>
 ```

@@ -1,6 +1,10 @@
 # asyncInterrupt
 
-Imports an asynchronous side-effect into an effect allowing control of interruption.
+Imports an asynchronous side-effect into a pure `Effect` value.
+The callback function `Effect<R, E, A> => void` must be called at most once.
+
+The registration function receives an AbortSignal that can be used to handle
+interruption.
 
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
@@ -18,7 +22,7 @@ Effect.asyncInterrupt
 
 ```ts
 export declare const asyncInterrupt: <R, E, A>(
-  register: (callback: (effect: Effect<R, E, A>) => void) => Effect<R, never, void>,
+  register: (callback: (_: Effect<R, E, A>) => void, signal: AbortSignal) => void,
   blockingOn?: FiberId.FiberId
 ) => Effect<R, E, A>
 ```

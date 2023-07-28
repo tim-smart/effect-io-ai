@@ -1,4 +1,4 @@
-# asyncInterruptEither
+# asyncEither
 
 Imports an asynchronous side-effect into an effect. It has the option of
 returning the value synchronously, which is useful in cases where it cannot
@@ -14,19 +14,19 @@ function must be called at most once.
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
 
-To import and use `asyncInterruptEither` from the "Effect" module:
+To import and use `asyncEither` from the "Effect" module:
 
 ```ts
 import * as Effect from '@effect/io/Effect'
 
 // Can be accessed like this
-Effect.asyncInterruptEither
+Effect.asyncEither
 ```
 
 **Signature**
 
 ```ts
-export declare const asyncInterruptEither: <R, E, A>(
+export declare const asyncEither: <R, E, A>(
   register: (callback: (effect: Effect<R, E, A>) => void) => Either.Either<Effect<R, never, void>, Effect<R, E, A>>,
   blockingOn?: FiberId.FiberId
 ) => Effect<R, E, A>

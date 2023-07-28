@@ -1,10 +1,10 @@
 # async
 
-Imports an asynchronous side-effect into a pure `Effect` value. See
-`asyncMaybe` for the more expressive variant of this function that can
-return a value synchronously.
-
+Imports an asynchronous side-effect into a pure `Effect` value.
 The callback function `Effect<R, E, A> => void` must be called at most once.
+
+If an Effect is returned by the registration function, it will be executed
+if the fiber executing the effect is interrupted.
 
 The `FiberId` of the fiber that may complete the async callback may be
 provided to allow for better diagnostics.
@@ -22,7 +22,7 @@ Effect.async
 
 ```ts
 export declare const async: <R, E, A>(
-  register: (callback: (_: Effect<R, E, A>) => void) => void,
+  register: (callback: (_: Effect<R, E, A>) => void) => void | Effect<R, never, void>,
   blockingOn?: FiberId.FiberId
 ) => Effect<R, E, A>
 ```
