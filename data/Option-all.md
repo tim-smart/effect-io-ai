@@ -20,9 +20,9 @@ Option.all
 ```ts
 import * as O from '@effect/data/Option'
 
+assert.deepStrictEqual(O.all([O.some(1), O.some(2)]), O.some([1, 2]))
 assert.deepStrictEqual(O.all({ a: O.some(1), b: O.some('hello') }), O.some({ a: 1, b: 'hello' }))
 assert.deepStrictEqual(O.all({ a: O.some(1), b: O.none() }), O.none())
-assert.deepStrictEqual(O.all([O.some(1), O.some(2)]), O.some([1, 2]))
 ```
 
 **Signature**
