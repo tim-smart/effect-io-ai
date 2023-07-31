@@ -3,6 +3,9 @@
 Create an `Effect` that when executed will construct `promise` and wait for
 its result, errors will produce failure as `unknown`.
 
+An optional `AbortSignal` can be provided to allow for interruption of the
+wrapped Promise api.
+
 To import and use `tryPromise` from the "Effect" module:
 
 ```ts
@@ -16,7 +19,10 @@ Effect.tryPromise
 
 ```ts
 export declare const tryPromise: {
-  <A, E>(options: { readonly try: LazyArg<Promise<A>>; readonly catch: (error: unknown) => E }): Effect<never, E, A>
-  <A>(try_: LazyArg<Promise<A>>): Effect<never, unknown, A>
+  <A, E>(options: {
+    readonly try: LazyArg<Promise<A>> | ((signal: AbortSignal) => Promise<A>)
+    readonly catch: (error: unknown) => E
+  }): Effect<never, E, A>
+  <A>(try_: LazyArg<Promise<A>> | ((signal: AbortSignal) => Promise<A>)): Effect<never, unknown, A>
 }
 ```

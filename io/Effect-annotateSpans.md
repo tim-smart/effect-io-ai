@@ -15,7 +15,9 @@ Effect.annotateSpans
 
 ```ts
 export declare const annotateSpans: {
-  (key: string, value: Tracer.AttributeValue): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(self: Effect<R, E, A>, key: string, value: Tracer.AttributeValue): Effect<R, E, A>
+  (key: string, value: Tracer.AttributeValue): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
+  (values: Record<string, Tracer.AttributeValue>): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
+  <R, E, A>(effect: Effect<R, E, A>, key: string, value: Tracer.AttributeValue): Effect<R, E, A>
+  <R, E, A>(effect: Effect<R, E, A>, values: Record<string, Tracer.AttributeValue>): Effect<R, E, A>
 }
 ```
