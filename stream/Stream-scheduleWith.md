@@ -17,13 +17,13 @@ Stream.scheduleWith
 
 ```ts
 export declare const scheduleWith: {
-  <R2, A, B, C>(
-    schedule: Schedule.Schedule<R2, A, B>,
+  <R2, A, A0 extends A, B, C>(
+    schedule: Schedule.Schedule<R2, A0, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
   ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E, C>
-  <R, E, R2, A, B, C>(
+  <R, E, R2, A, A0 extends A, B, C>(
     self: Stream<R, E, A>,
-    schedule: Schedule.Schedule<R2, A, B>,
+    schedule: Schedule.Schedule<R2, A0, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
   ): Stream<R | R2, E, C>
 }
