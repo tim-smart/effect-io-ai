@@ -17,7 +17,5 @@ Effect.promise
 **Signature**
 
 ```ts
-export declare const promise: <A>(
-  evaluate: LazyArg<Promise<A>> | ((signal: AbortSignal) => Promise<A>)
-) => Effect<never, never, A>
+export declare const promise: <A>(evaluate: (signal: AbortSignal) => Promise<A>) => Effect<never, never, A>
 ```

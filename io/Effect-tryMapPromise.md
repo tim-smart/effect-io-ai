@@ -19,16 +19,13 @@ Effect.tryMapPromise
 
 ```ts
 export declare const tryMapPromise: {
-  <A, B, E1>(
-    options:
-      | { readonly try: (a: A, signal: AbortSignal) => Promise<B>; readonly catch: (error: unknown) => E1 }
-      | { readonly try: (a: A) => Promise<B>; readonly catch: (error: unknown) => E1 }
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R, E1 | E, B>
+  <A, B, E1>(options: {
+    readonly try: (a: A, signal: AbortSignal) => Promise<B>
+    readonly catch: (error: unknown) => E1
+  }): <R, E>(self: Effect<R, E, A>) => Effect<R, E1 | E, B>
   <R, E, A, B, E1>(
     self: Effect<R, E, A>,
-    options:
-      | { readonly try: (a: A, signal: AbortSignal) => Promise<B>; readonly catch: (error: unknown) => E1 }
-      | { readonly try: (a: A) => Promise<B>; readonly catch: (error: unknown) => E1 }
+    options: { readonly try: (a: A, signal: AbortSignal) => Promise<B>; readonly catch: (error: unknown) => E1 }
   ): Effect<R, E | E1, B>
 }
 ```

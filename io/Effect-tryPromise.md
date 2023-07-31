@@ -19,10 +19,11 @@ Effect.tryPromise
 
 ```ts
 export declare const tryPromise: {
-  <A, E>(options: {
-    readonly try: LazyArg<Promise<A>> | ((signal: AbortSignal) => Promise<A>)
-    readonly catch: (error: unknown) => E
-  }): Effect<never, E, A>
-  <A>(try_: LazyArg<Promise<A>> | ((signal: AbortSignal) => Promise<A>)): Effect<never, unknown, A>
+  <A, E>(options: { readonly try: (signal: AbortSignal) => Promise<A>; readonly catch: (error: unknown) => E }): Effect<
+    never,
+    E,
+    A
+  >
+  <A>(try_: (signal: AbortSignal) => Promise<A>): Effect<never, unknown, A>
 }
 ```
