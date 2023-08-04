@@ -22,13 +22,17 @@ Effect.timeoutTo
 ```ts
 export declare const timeoutTo: {
   <A, B, B1>(options: {
-    readonly onTimeout: B1
+    readonly onTimeout: LazyArg<B1>
     readonly onSuccess: (a: A) => B
     readonly duration: Duration.DurationInput
   }): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B | B1>
   <R, E, A, B, B1>(
     self: Effect<R, E, A>,
-    options: { readonly onTimeout: B1; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput }
+    options: {
+      readonly onTimeout: LazyArg<B1>
+      readonly onSuccess: (a: A) => B
+      readonly duration: Duration.DurationInput
+    }
   ): Effect<R, E, B | B1>
 }
 ```
