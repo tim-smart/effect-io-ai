@@ -14,8 +14,8 @@ Config.all
 **Signature**
 
 ```ts
-export declare const all: <const Arg extends Iterable<Config<any>> | Record<string, Config<any>>>(
-  arg: Arg
+export declare const all: <Arg extends Iterable<Config<any>> | Record<string, Config<any>>>(
+  arg: Config.Narrow<Arg>
 ) => Config<
   [Arg] extends [readonly Config<any>[]]
     ? { -readonly [K in keyof Arg]: [Arg[K]] extends [Config<infer A>] ? A : never }
