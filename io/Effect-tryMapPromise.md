@@ -1,7 +1,8 @@
 # tryMapPromise
 
 Returns an effect whose success is mapped by the specified side effecting
-`f` function, translating any promise rejections into typed failed effects.
+`try` function, translating any promise rejections into typed failed effects
+via the `catch` function.
 
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped Promise api.

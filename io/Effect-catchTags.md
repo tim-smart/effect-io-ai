@@ -16,8 +16,10 @@ Effect.catchTags
 ```ts
 export declare const catchTags: {
   <
-    E extends { _tag: string },
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+    E,
+    Cases extends E extends { _tag: string }
+      ? { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+      : {}
   >(
     cases: Cases
   ): <R, A>(
@@ -38,9 +40,11 @@ export declare const catchTags: {
   >
   <
     R,
-    E extends { _tag: string },
+    E,
     A,
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+    Cases extends E extends { _tag: string }
+      ? { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+      : {}
   >(
     self: Effect<R, E, A>,
     cases: Cases

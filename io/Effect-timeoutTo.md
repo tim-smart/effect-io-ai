@@ -2,7 +2,7 @@
 
 Returns an effect that will timeout this effect, returning either the
 default value if the timeout elapses before the effect has produced a
-value or returning the result of applying the function `f` to the
+value or returning the result of applying the function `onSuccess` to the
 success value of the effect.
 
 If the timeout elapses without producing a value, the running effect will

@@ -1,7 +1,7 @@
 # mapBoth
 
 Returns an effect whose failure and success channels have been mapped by
-the specified pair of functions, `f` and `g`.
+the specified `onFailure` and `onSuccess` functions.
 
 To import and use `mapBoth` from the "Effect" module:
 
