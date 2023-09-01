@@ -18,5 +18,5 @@ Stream.fromPull
 ```ts
 export declare const fromPull: <R, R2, E, A>(
   effect: Effect.Effect<Scope.Scope | R, never, Effect.Effect<R2, Option.Option<E>, Chunk.Chunk<A>>>
-) => Stream<R | R2, E, A>
+) => Stream<R2 | Exclude<R, Scope.Scope>, E, A>
 ```

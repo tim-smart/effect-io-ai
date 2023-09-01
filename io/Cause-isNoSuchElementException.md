@@ -1,6 +1,6 @@
 # isNoSuchElementException
 
-Returns `true` if the specified value is an `IllegalArgumentException`, `false`
+Returns `true` if the specified value is an `NoSuchElementException`, `false`
 otherwise.
 
 To import and use `isNoSuchElementException` from the "Cause" module:
