@@ -15,6 +15,6 @@ Data.Class
 
 ```ts
 export declare const Class: new <A extends Record<string, any>>(
-  args: IsEqualTo<Omit<A, keyof Equal.Equal>, {}> extends true ? void : Omit<A, keyof Equal.Equal>
+  args: Types.Equals<Omit<A, keyof Equal.Equal>, {}> extends true ? void : Omit<A, keyof Equal.Equal>
 ) => Data<A>
 ```

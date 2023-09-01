@@ -17,5 +17,5 @@ Differ.chunk
 ```ts
 export declare const chunk: <Value, Patch>(
   differ: Differ<Value, Patch>
-) => Differ<Chunk<Value>, ChunkPatch<Value, Patch>>
+) => Differ<Chunk<Value>, Differ.Chunk.Patch<Value, Patch>>
 ```

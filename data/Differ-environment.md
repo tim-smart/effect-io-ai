@@ -14,5 +14,5 @@ Differ.environment
 **Signature**
 
 ```ts
-export declare const environment: <A>() => Differ<Context<A>, ContextPatch<A, A>>
+export declare const environment: <A>() => Differ<Context<A>, Differ.Context.Patch<A, A>>
 ```

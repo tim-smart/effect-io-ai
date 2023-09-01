@@ -17,5 +17,5 @@ Differ.hashMap
 ```ts
 export declare const hashMap: <Key, Value, Patch>(
   differ: Differ<Value, Patch>
-) => Differ<HashMap<Key, Value>, HashMapPatch<Key, Value, Patch>>
+) => Differ<HashMap<Key, Value>, Differ.HashMap.Patch<Key, Value, Patch>>
 ```

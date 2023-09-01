@@ -17,6 +17,6 @@ Data.TaggedClass
 export declare const TaggedClass: <Key extends string>(
   tag: Key
 ) => new <A extends Record<string, any>>(
-  args: IsEqualTo<Omit<A, keyof Equal.Equal>, {}> extends true ? void : Omit<A, keyof Equal.Equal>
+  args: Types.Equals<Omit<A, keyof Equal.Equal>, {}> extends true ? void : Omit<A, keyof Equal.Equal>
 ) => Data<A & { _tag: Key }>
 ```

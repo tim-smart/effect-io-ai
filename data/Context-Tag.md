@@ -29,5 +29,5 @@ assert.strictEqual(Context.Tag('PORT') === Context.Tag('PORT'), true)
 **Signature**
 
 ```ts
-export declare const Tag: <Identifier, Service = Identifier>(key?: unknown) => Tag<Identifier, Service>
+export declare const Tag: <Identifier, Service = Identifier>(identifier?: unknown) => Tag<Identifier, Service>
 ```

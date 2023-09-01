@@ -14,5 +14,5 @@ Differ.hashSet
 **Signature**
 
 ```ts
-export declare const hashSet: <Value>() => Differ<HashSet<Value>, HashSetPatch<Value>>
+export declare const hashSet: <Value>() => Differ<HashSet<Value>, Differ.HashSet.Patch<Value>>
 ```
