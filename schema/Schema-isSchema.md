@@ -14,5 +14,5 @@ Schema.isSchema
 **Signature**
 
 ```ts
-export declare const isSchema: (input: unknown) => input is Schema<unknown, unknown>
+export declare const isSchema: (u: unknown) => u is Schema<unknown, unknown>
 ```

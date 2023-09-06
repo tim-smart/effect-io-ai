@@ -1,6 +1,6 @@
 # encodeHex
 
-Encodes a Uint8Array into a hex string.
+Encodes the given value into a hex `string`.
 
 To import and use `encodeHex` from the "Encoding" module:
 
@@ -14,5 +14,5 @@ Encoding.encodeHex
 **Signature**
 
 ```ts
-export declare const encodeHex: (bytes: Uint8Array) => string
+export declare const encodeHex: (input: Uint8Array | string) => string
 ```

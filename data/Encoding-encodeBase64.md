@@ -1,6 +1,6 @@
 # encodeBase64
 
-Encodes a Uint8Array into a base64 (RFC4648) string.
+Encodes the given value into a base64 (RFC4648) `string`.
 
 To import and use `encodeBase64` from the "Encoding" module:
 
@@ -14,5 +14,5 @@ Encoding.encodeBase64
 **Signature**
 
 ```ts
-export declare const encodeBase64: (bytes: Uint8Array) => string
+export declare const encodeBase64: (input: Uint8Array | string) => string
 ```

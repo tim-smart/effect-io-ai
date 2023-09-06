@@ -14,5 +14,5 @@ AST.setAnnotation
 **Signature**
 
 ```ts
-export declare const setAnnotation: (ast: AST, id: PropertyKey, value: unknown) => AST
+export declare const setAnnotation: (ast: AST, sym: symbol, value: unknown) => AST
 ```

@@ -15,6 +15,6 @@ Sink.unwrapScoped
 
 ```ts
 export declare const unwrapScoped: <R, E, In, L, Z>(
-  effect: Effect.Effect<Scope.Scope | R, E, Sink<R, E, In, L, Z>>
-) => Sink<R, E, In, L, Z>
+  effect: Effect.Effect<R, E, Sink<R, E, In, L, Z>>
+) => Sink<Exclude<R, Scope.Scope>, E, In, L, Z>
 ```

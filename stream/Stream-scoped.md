@@ -14,7 +14,5 @@ Stream.scoped
 **Signature**
 
 ```ts
-export declare const scoped: <R, E, A>(
-  effect: Effect.Effect<Scope.Scope | R, E, A>
-) => Stream<Exclude<R, Scope.Scope>, E, A>
+export declare const scoped: <R, E, A>(effect: Effect.Effect<R, E, A>) => Stream<Exclude<R, Scope.Scope>, E, A>
 ```

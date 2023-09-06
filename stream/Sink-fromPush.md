@@ -16,9 +16,9 @@ Sink.fromPush
 ```ts
 export declare const fromPush: <R, E, In, L, Z>(
   push: Effect.Effect<
-    Scope.Scope | R,
+    R,
     never,
     (_: Option.Option<Chunk.Chunk<In>>) => Effect.Effect<R, readonly [Either.Either<E, Z>, Chunk.Chunk<L>], void>
   >
-) => Sink<R, E, In, L, Z>
+) => Sink<Exclude<R, Scope.Scope>, E, In, L, Z>
 ```

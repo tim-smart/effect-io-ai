@@ -15,6 +15,6 @@ Channel.unwrapScoped
 
 ```ts
 export declare const unwrapScoped: <R, E, Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Effect.Effect<Scope.Scope | R, E, Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>>
+  self: Effect.Effect<R, E, Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>>
 ) => Channel<Env | Exclude<R, Scope.Scope>, InErr, InElem, InDone, E | OutErr, OutElem, OutDone>
 ```

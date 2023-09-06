@@ -18,7 +18,7 @@ Stream.asyncScoped
 
 ```ts
 export declare const asyncScoped: <R, E, A>(
-  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<Scope.Scope | R, E, unknown>,
+  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<R, E, unknown>,
   outputBuffer?: number
-) => Stream<R, E, A>
+) => Stream<Exclude<R, Scope.Scope>, E, A>
 ```

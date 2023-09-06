@@ -16,12 +16,9 @@ Schema.transform
 
 ```ts
 export declare const transform: {
-  <I2, A2, A1>(to: Schema<I2, A2>, decode: (a1: A1) => I2, encode: (i2: I2) => A1): <I1>(
-    self: Schema<I1, A1>
-  ) => Schema<I1, A2>
-  <I1, A1, I2, A2>(from: Schema<I1, A1>, to: Schema<I2, A2>, decode: (a1: A1) => I2, encode: (i2: I2) => A1): Schema<
-    I1,
-    A2
-  >
+  <C, D, B>(to: Schema<C, D>, decode: (b: B) => unknown, encode: (c: C) => unknown): <A>(
+    self: Schema<A, B>
+  ) => Schema<A, D>
+  <A, B, C, D>(from: Schema<A, B>, to: Schema<C, D>, decode: (b: B) => unknown, encode: (c: C) => unknown): Schema<A, D>
 }
 ```

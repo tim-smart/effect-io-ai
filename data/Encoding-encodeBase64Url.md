@@ -1,6 +1,6 @@
 # encodeBase64Url
 
-Encodes a Uint8Array into a base64 (URL) string.
+Encodes the given value into a base64 (URL) `string`.
 
 To import and use `encodeBase64Url` from the "Encoding" module:
 
@@ -14,5 +14,5 @@ Encoding.encodeBase64Url
 **Signature**
 
 ```ts
-export declare const encodeBase64Url: (bytes: Uint8Array) => string
+export declare const encodeBase64Url: (input: Uint8Array | string) => string
 ```

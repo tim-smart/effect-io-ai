@@ -15,6 +15,6 @@ Channel.scoped
 
 ```ts
 export declare const scoped: <R, E, A>(
-  effect: Effect.Effect<Scope.Scope | R, E, A>
+  effect: Effect.Effect<R, E, A>
 ) => Channel<Exclude<R, Scope.Scope>, unknown, unknown, unknown, E, A, unknown>
 ```

@@ -1,6 +1,6 @@
 # decodeBase64
 
-Decodes a base64 (RFC4648) encoded string.
+Decodes a base64 (RFC4648) encoded `string` into a `Uint8Array`.
 
 To import and use `decodeBase64` from the "Encoding" module:
 

@@ -18,10 +18,10 @@ Schema.brand
 **Example**
 
 ```ts
-import * as S from '@effect/schema/Schema'
+import * as Schema from '@effect/schema/Schema'
 
-const Int = S.number.pipe(S.int(), S.brand('Int'))
-type Int = S.To<typeof Int> // number & Brand<"Int">
+const Int = Schema.number.pipe(Schema.int(), Schema.brand('Int'))
+type Int = Schema.Schema.To<typeof Int> // number & Brand<"Int">
 ```
 
 **Signature**
@@ -29,6 +29,6 @@ type Int = S.To<typeof Int> // number & Brand<"Int">
 ```ts
 export declare const brand: <B extends string | symbol, A>(
   brand: B,
-  options?: AnnotationOptions<A> | undefined
-) => <I>(self: Schema<I, A>) => BrandSchema<I, A & Brand<B>>
+  options?: DocAnnotations<A> | undefined
+) => <I>(self: Schema<I, A>) => BrandSchema<I, A & Brand.Brand<B>>
 ```

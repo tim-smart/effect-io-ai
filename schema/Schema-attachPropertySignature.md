@@ -35,8 +35,13 @@ assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {
 **Signature**
 
 ```ts
-export declare const attachPropertySignature: <K extends PropertyKey, V extends AST.LiteralValue>(
-  key: K,
-  value: V
-) => <I, A extends object>(schema: Schema<I, A>) => Schema<I, Spread<A & { readonly [k in K]: V }>>
+export declare const attachPropertySignature: {
+  <K extends PropertyKey, V extends AST.LiteralValue>(key: K, value: V): <I, A extends object>(
+    schema: Schema<I, A>
+  ) => Schema<I, Simplify<A & { readonly [k in K]: V }>>
+  <I, A, K extends PropertyKey, V extends AST.LiteralValue>(schema: Schema<I, A>, key: K, value: V): Schema<
+    I,
+    Simplify<A & { readonly [k in K]: V }>
+  >
+}
 ```

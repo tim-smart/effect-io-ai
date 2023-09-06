@@ -1,6 +1,6 @@
 # decodeHex
 
-Decodes a hex encoded string.
+Decodes a hex encoded `string` into a `Uint8Array`.
 
 To import and use `decodeHex` from the "Encoding" module:
 
