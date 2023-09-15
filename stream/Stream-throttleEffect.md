@@ -28,7 +28,7 @@ export declare const throttleEffect: {
   <A, R2, E2>(options: {
     readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, number>
     readonly units: number
-    readonly duration: Duration.Duration
+    readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
     readonly strategy?: 'enforce' | 'shape' | undefined
   }): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A>
@@ -37,7 +37,7 @@ export declare const throttleEffect: {
     options: {
       readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, number>
       readonly units: number
-      readonly duration: Duration.Duration
+      readonly duration: Duration.DurationInput
       readonly burst?: number | undefined
       readonly strategy?: 'enforce' | 'shape' | undefined
     }

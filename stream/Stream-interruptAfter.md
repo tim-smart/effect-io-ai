@@ -16,7 +16,7 @@ Stream.interruptAfter
 
 ```ts
 export declare const interruptAfter: {
-  (duration: Duration.Duration): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(self: Stream<R, E, A>, duration: Duration.Duration): Stream<R, E, A>
+  (duration: Duration.DurationInput): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
+  <R, E, A>(self: Stream<R, E, A>, duration: Duration.DurationInput): Stream<R, E, A>
 }
 ```

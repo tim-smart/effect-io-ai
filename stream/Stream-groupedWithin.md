@@ -16,7 +16,9 @@ Stream.groupedWithin
 
 ```ts
 export declare const groupedWithin: {
-  (chunkSize: number, duration: Duration.Duration): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, Chunk.Chunk<A>>
-  <R, E, A>(self: Stream<R, E, A>, chunkSize: number, duration: Duration.Duration): Stream<R, E, Chunk.Chunk<A>>
+  (chunkSize: number, duration: Duration.DurationInput): <R, E, A>(
+    self: Stream<R, E, A>
+  ) => Stream<R, E, Chunk.Chunk<A>>
+  <R, E, A>(self: Stream<R, E, A>, chunkSize: number, duration: Duration.DurationInput): Stream<R, E, Chunk.Chunk<A>>
 }
 ```

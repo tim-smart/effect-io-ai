@@ -14,5 +14,5 @@ Stream.tick
 **Signature**
 
 ```ts
-export declare const tick: (interval: Duration.Duration) => Stream<never, never, void>
+export declare const tick: (interval: Duration.DurationInput) => Stream<never, never, void>
 ```
