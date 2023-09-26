@@ -1,21 +1,21 @@
-# contramapError
+# mapInputError
 
 Returns a new channel which is the same as this one but applies the given
 function to the input channel's error value.
 
-To import and use `contramapError` from the "Channel" module:
+To import and use `mapInputError` from the "Channel" module:
 
 ```ts
 import * as Channel from '@effect/stream/Channel'
 
 // Can be accessed like this
-Channel.contramapError
+Channel.mapInputError
 ```
 
 **Signature**
 
 ```ts
-export declare const contramapError: {
+export declare const mapInputError: {
   <InErr0, InErr>(f: (a: InErr0) => InErr): <Env, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env, InErr0, InElem, InDone, OutErr, OutElem, OutDone>

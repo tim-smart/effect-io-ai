@@ -1,21 +1,21 @@
-# contramapEffect
+# mapInputEffect
 
 Returns a new channel which is the same as this one but applies the given
 effectual function to the input channel's done value.
 
-To import and use `contramapEffect` from the "Channel" module:
+To import and use `mapInputEffect` from the "Channel" module:
 
 ```ts
 import * as Channel from '@effect/stream/Channel'
 
 // Can be accessed like this
-Channel.contramapEffect
+Channel.mapInputEffect
 ```
 
 **Signature**
 
 ```ts
-export declare const contramapEffect: {
+export declare const mapInputEffect: {
   <Env1, InErr, InDone0, InDone>(f: (i: InDone0) => Effect.Effect<Env1, InErr, InDone>): <
     Env,
     InElem,

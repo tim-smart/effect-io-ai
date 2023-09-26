@@ -1,7 +1,6 @@
 # range
 
-Constructs a stream from a range of integers (lower bound included, upper
-bound not included).
+Constructs a stream from a range of integers, including both endpoints.
 
 To import and use `range` from the "Stream" module:
 

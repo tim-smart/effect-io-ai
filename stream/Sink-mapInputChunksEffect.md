@@ -1,21 +1,21 @@
-# contramapChunksEffect
+# mapInputChunksEffect
 
 Effectfully transforms this sink's input chunks. `f` must preserve
 chunking-invariance.
 
-To import and use `contramapChunksEffect` from the "Sink" module:
+To import and use `mapInputChunksEffect` from the "Sink" module:
 
 ```ts
 import * as Sink from '@effect/stream/Sink'
 
 // Can be accessed like this
-Sink.contramapChunksEffect
+Sink.mapInputChunksEffect
 ```
 
 **Signature**
 
 ```ts
-export declare const contramapChunksEffect: {
+export declare const mapInputChunksEffect: {
   <In0, R2, E2, In>(f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>): <R, E, L, Z>(
     self: Sink<R, E, In, L, Z>
   ) => Sink<R2 | R, E2 | E, In0, L, Z>

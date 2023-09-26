@@ -1,21 +1,21 @@
-# contramapContext
+# mapInputContext
 
 Transforms the context being provided to the channel with the specified
 function.
 
-To import and use `contramapContext` from the "Channel" module:
+To import and use `mapInputContext` from the "Channel" module:
 
 ```ts
 import * as Channel from '@effect/stream/Channel'
 
 // Can be accessed like this
-Channel.contramapContext
+Channel.mapInputContext
 ```
 
 **Signature**
 
 ```ts
-export declare const contramapContext: {
+export declare const mapInputContext: {
   <Env0, Env>(f: (env: Context.Context<Env0>) => Context.Context<Env>): <
     InErr,
     InElem,

@@ -22,12 +22,12 @@ import * as Exit from '@effect/io/Exit'
 
 const f = (n: number) => (n > 0 ? Effect.succeed(n) : Effect.fail(`${n} is negative`))
 
-assert.deepStrictEqual(Exit.unannotate(Effect.runSyncExit(Effect.validateFirst([], f))), Exit.fail([]))
-assert.deepStrictEqual(Exit.unannotate(Effect.runSyncExit(Effect.validateFirst([1, 2], f))), Exit.succeed(1))
-assert.deepStrictEqual(Exit.unannotate(Effect.runSyncExit(Effect.validateFirst([1, -1], f))), Exit.succeed(1))
-assert.deepStrictEqual(Exit.unannotate(Effect.runSyncExit(Effect.validateFirst([-1, 2], f))), Exit.succeed(2))
+assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([], f)), Exit.fail([]))
+assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([1, 2], f)), Exit.succeed(1))
+assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([1, -1], f)), Exit.succeed(1))
+assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([-1, 2], f)), Exit.succeed(2))
 assert.deepStrictEqual(
-  Exit.unannotate(Effect.runSyncExit(Effect.validateFirst([-1, -2], f))),
+  Effect.runSyncExit(Effect.validateFirst([-1, -2], f)),
   Exit.fail(['-1 is negative', '-2 is negative'])
 )
 ```

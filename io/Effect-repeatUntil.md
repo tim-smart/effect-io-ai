@@ -16,7 +16,9 @@ Effect.repeatUntil
 
 ```ts
 export declare const repeatUntil: {
+  <A, B extends A>(f: Refinement<A, B>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B>
   <A>(f: Predicate<A>): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
+  <R, E, A, B extends A>(self: Effect<R, E, A>, f: Predicate<A>): Effect<R, E, B>
   <R, E, A>(self: Effect<R, E, A>, f: Predicate<A>): Effect<R, E, A>
 }
 ```
