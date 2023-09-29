@@ -17,7 +17,7 @@ Schema.attachPropertySignature
 
 ```ts
 import * as S from '@effect/schema/Schema'
-import { pipe } from '@effect/data/Function'
+import { pipe } from 'effect/Function'
 
 const Circle = S.struct({ radius: S.number })
 const Square = S.struct({ sideLength: S.number })
