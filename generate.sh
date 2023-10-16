@@ -46,7 +46,7 @@ for repo in ${repos[@]}; do
   pnpm rm @effect/docgen
   pnpm add -D ../vendor/effect-docgen-0.1.1.tgz
   pnpm run build
-  pnpm run docs
+  pnpm run docs || pnpm docgen
 
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
