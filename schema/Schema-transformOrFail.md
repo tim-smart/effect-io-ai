@@ -18,16 +18,27 @@ Schema.transformOrFail
 export declare const transformOrFail: {
   <C, D, B>(
     to: Schema<C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<C>,
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<B>
+  ): <A>(self: Schema<A, B>) => Schema<A, D>
+  <C, D, B>(
+    to: Schema<C, D>,
     decode: (b: B, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<unknown>,
     encode: (c: C, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<unknown>,
-    annotations?: AST.Annotated['annotations']
+    options: { strict: false }
   ): <A>(self: Schema<A, B>) => Schema<A, D>
+  <A, B, C, D>(
+    from: Schema<A, B>,
+    to: Schema<C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<C>,
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<B>
+  ): Schema<A, D>
   <A, B, C, D>(
     from: Schema<A, B>,
     to: Schema<C, D>,
     decode: (b: B, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<unknown>,
     encode: (c: C, options: ParseOptions, ast: AST.AST) => ParseResult.ParseResult<unknown>,
-    annotations?: AST.Annotated['annotations']
+    options: { strict: false }
   ): Schema<A, D>
 }
 ```

@@ -18,14 +18,27 @@ Schema.transform
 export declare const transform: {
   <C, D, B>(
     to: Schema<C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.AST) => C,
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => B
+  ): <A>(self: Schema<A, B>) => Schema<A, D>
+  <C, D, B>(
+    to: Schema<C, D>,
     decode: (b: B, options: ParseOptions, ast: AST.AST) => unknown,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown,
+    options: { strict: false }
   ): <A>(self: Schema<A, B>) => Schema<A, D>
   <A, B, C, D>(
     from: Schema<A, B>,
     to: Schema<C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.AST) => C,
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => B
+  ): Schema<A, D>
+  <A, B, C, D>(
+    from: Schema<A, B>,
+    to: Schema<C, D>,
     decode: (b: B, options: ParseOptions, ast: AST.AST) => unknown,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown
+    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown,
+    options: { strict: false }
   ): Schema<A, D>
 }
 ```
