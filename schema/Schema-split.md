@@ -15,7 +15,7 @@ Schema.split
 
 ```ts
 export declare const split: {
-  (separator: string): <I>(self: Schema<I, string>) => Schema<I, readonly string[]>
-  <I>(self: Schema<I, string>, separator: string): Schema<I, readonly string[]>
+  (separator: string): <I, A extends string>(self: Schema<I, A>) => Schema<I, readonly string[]>
+  <I, A extends string>(self: Schema<I, A>, separator: string): Schema<I, readonly string[]>
 }
 ```
