@@ -9,10 +9,8 @@ tarballjs="$cwd/tarball.js"
 SHORT_SHA=`git rev-parse --short HEAD`
 
 repos=(\
-  "effect-ts/io"\
-  "effect-ts/data"\
+  "effect-ts/effect"\
   "effect-ts/schema"\
-  "effect-ts/stream"\
 )
 
 latest_tarball() {
