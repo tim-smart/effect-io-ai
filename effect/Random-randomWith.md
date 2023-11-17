@@ -6,8 +6,7 @@ specified workflow.
 To import and use `randomWith` from the "Random" module:
 
 ```ts
-import * as Random from 'effect/Random'
-
+import * as Random from "effect/Random"
 // Can be accessed like this
 Random.randomWith
 ```

@@ -8,8 +8,7 @@ program.
 To import and use `runSyncExit` from the "Runtime" module:
 
 ```ts
-import * as Runtime from 'effect/Runtime'
-
+import * as Runtime from "effect/Runtime"
 // Can be accessed like this
 Runtime.runSyncExit
 ```

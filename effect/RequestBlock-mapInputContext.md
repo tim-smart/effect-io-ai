@@ -5,8 +5,7 @@ Provides each data source with part of its required environment.
 To import and use `mapInputContext` from the "RequestBlock" module:
 
 ```ts
-import * as RequestBlock from 'effect/RequestBlock'
-
+import * as RequestBlock from "effect/RequestBlock"
 // Can be accessed like this
 RequestBlock.mapInputContext
 ```

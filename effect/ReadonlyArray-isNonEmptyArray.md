@@ -7,8 +7,7 @@ An `Array` is considered to be a `NonEmptyArray` if it contains at least one ele
 To import and use `isNonEmptyArray` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.isNonEmptyArray
 ```
@@ -16,7 +15,7 @@ ReadonlyArray.isNonEmptyArray
 **Example**
 
 ```ts
-import { isNonEmptyArray } from 'effect/ReadonlyArray'
+import { isNonEmptyArray } from "effect/ReadonlyArray"
 
 assert.deepStrictEqual(isNonEmptyArray([]), false)
 assert.deepStrictEqual(isNonEmptyArray([1, 2, 3]), true)

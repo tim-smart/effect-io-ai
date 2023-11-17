@@ -5,8 +5,7 @@ Gets the `Order<K>` that the `SortedMap<K, V>` is using.
 To import and use `getOrder` from the "SortedMap" module:
 
 ```ts
-import * as SortedMap from 'effect/SortedMap'
-
+import * as SortedMap from "effect/SortedMap"
 // Can be accessed like this
 SortedMap.getOrder
 ```

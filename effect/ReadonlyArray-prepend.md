@@ -5,8 +5,7 @@ Prepend an element to the front of an `Iterable`, creating a new `NonEmptyArray`
 To import and use `prepend` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.prepend
 ```

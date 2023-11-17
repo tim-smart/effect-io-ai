@@ -6,8 +6,7 @@ generator.
 To import and use `nextIntBetween` from the "TRandom" module:
 
 ```ts
-import * as TRandom from 'effect/TRandom'
-
+import * as TRandom from "effect/TRandom"
 // Can be accessed like this
 TRandom.nextIntBetween
 ```

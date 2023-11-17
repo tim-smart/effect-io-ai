@@ -7,8 +7,7 @@ data source or that data source can execute.
 To import and use `eitherWith` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.eitherWith
 ```

@@ -6,8 +6,7 @@ were published to the `TPubSub`.
 To import and use `publishAll` from the "TPubSub" module:
 
 ```ts
-import * as TPubSub from 'effect/TPubSub'
-
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.publishAll
 ```

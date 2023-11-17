@@ -11,8 +11,7 @@ ignored.
 To import and use `interleaveWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.interleaveWith
 ```
@@ -21,9 +20,10 @@ Stream.interleaveWith
 
 ```ts
 export declare const interleaveWith: {
-  <R2, E2, A2, R3, E3>(that: Stream<R2, E2, A2>, decider: Stream<R3, E3, boolean>): <R, E, A>(
-    self: Stream<R, E, A>
-  ) => Stream<R2 | R3 | R, E2 | E3 | E, A2 | A>
+  <R2, E2, A2, R3, E3>(
+    that: Stream<R2, E2, A2>,
+    decider: Stream<R3, E3, boolean>
+  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | R3 | R, E2 | E3 | E, A2 | A>
   <R, E, A, R2, E2, A2, R3, E3>(
     self: Stream<R, E, A>,
     that: Stream<R2, E2, A2>,

@@ -6,8 +6,7 @@ function when passed the `Option`'s value.
 To import and use `match` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.match
 ```
@@ -15,17 +14,17 @@ Option.match
 **Example**
 
 ```ts
-import { some, none, match } from 'effect/Option'
-import { pipe } from 'effect/Function'
+import { some, none, match } from "effect/Option"
+import { pipe } from "effect/Function"
 
 assert.deepStrictEqual(
-  pipe(some(1), match({ onNone: () => 'a none', onSome: (a) => `a some containing ${a}` })),
-  'a some containing 1'
+  pipe(some(1), match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
+  "a some containing 1"
 )
 
 assert.deepStrictEqual(
-  pipe(none(), match({ onNone: () => 'a none', onSome: (a) => `a some containing ${a}` })),
-  'a none'
+  pipe(none(), match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
+  "a none"
 )
 ```
 

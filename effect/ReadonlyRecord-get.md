@@ -5,8 +5,7 @@ Retrieve a value at a particular key from a record, returning it wrapped in an `
 To import and use `get` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.get
 ```
@@ -14,13 +13,13 @@ ReadonlyRecord.get
 **Example**
 
 ```ts
-import { get } from 'effect/ReadonlyRecord'
-import { some, none } from 'effect/Option'
+import { get } from "effect/ReadonlyRecord"
+import { some, none } from "effect/Option"
 
-const person = { name: 'John Doe', age: 35 }
+const person = { name: "John Doe", age: 35 }
 
-assert.deepStrictEqual(get(person, 'name'), some('John Doe'))
-assert.deepStrictEqual(get(person, 'email'), none())
+assert.deepStrictEqual(get(person, "name"), some("John Doe"))
+assert.deepStrictEqual(get(person, "email"), none())
 ```
 
 **Signature**

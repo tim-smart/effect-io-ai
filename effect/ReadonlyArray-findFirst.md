@@ -6,8 +6,7 @@ predicate, or `None` if no such element exists.
 To import and use `findFirst` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.findFirst
 ```

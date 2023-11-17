@@ -5,8 +5,7 @@ Atomically updates all values using a transactional function.
 To import and use `transformValuesSTM` from the "TMap" module:
 
 ```ts
-import * as TMap from 'effect/TMap'
-
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.transformValuesSTM
 ```

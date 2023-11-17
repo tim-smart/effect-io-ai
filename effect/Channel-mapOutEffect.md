@@ -6,8 +6,7 @@ gets applied to each emitted output element.
 To import and use `mapOutEffect` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapOutEffect
 ```
@@ -16,14 +15,9 @@ Channel.mapOutEffect
 
 ```ts
 export declare const mapOutEffect: {
-  <OutElem, Env1, OutErr1, OutElem1>(f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>): <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
-    OutDone
-  >(
+  <OutElem, Env1, OutErr1, OutElem1>(
+    f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>
+  ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem1, OutDone>
   <Env, InErr, InElem, InDone, OutErr, OutDone, OutElem, Env1, OutErr1, OutElem1>(

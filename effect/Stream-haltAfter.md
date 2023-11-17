@@ -9,8 +9,7 @@ given duration completes. See `interruptAfter` for this behavior.
 To import and use `haltAfter` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.haltAfter
 ```

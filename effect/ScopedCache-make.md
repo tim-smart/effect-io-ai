@@ -6,8 +6,7 @@ lookup function.
 To import and use `make` from the "ScopedCache" module:
 
 ```ts
-import * as ScopedCache from 'effect/ScopedCache'
-
+import * as ScopedCache from "effect/ScopedCache"
 // Can be accessed like this
 ScopedCache.make
 ```

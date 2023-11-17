@@ -7,8 +7,7 @@ You can set the current log level using `FiberRef.currentLogLevel`.
 To import and use `log` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.log
 ```

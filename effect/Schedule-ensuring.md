@@ -9,8 +9,7 @@ the driver of the schedule may not run to completion. However, if the
 To import and use `ensuring` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.ensuring
 ```

@@ -11,8 +11,7 @@ its terminal value.
 To import and use `interruptWhen` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.interruptWhen
 ```
@@ -21,15 +20,9 @@ Channel.interruptWhen
 
 ```ts
 export declare const interruptWhen: {
-  <Env1, OutErr1, OutDone1>(effect: Effect.Effect<Env1, OutErr1, OutDone1>): <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
-    OutElem,
-    OutDone
-  >(
+  <Env1, OutErr1, OutDone1>(
+    effect: Effect.Effect<Env1, OutErr1, OutDone1>
+  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem, OutDone1 | OutDone>
   <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, OutErr1, OutDone1>(

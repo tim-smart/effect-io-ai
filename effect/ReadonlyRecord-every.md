@@ -5,8 +5,7 @@ Check if all entries in a record meet a specific condition.
 To import and use `every` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.every
 ```

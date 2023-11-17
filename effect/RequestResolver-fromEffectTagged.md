@@ -8,8 +8,7 @@ request list.
 To import and use `fromEffectTagged` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.fromEffectTagged
 ```
@@ -19,7 +18,7 @@ RequestResolver.fromEffectTagged
 ```ts
 export declare const fromEffectTagged: <A extends Request.Request<any, any> & { readonly _tag: string }>() => <
   Fns extends {
-    readonly [Tag in A['_tag']]: [Extract<A, { readonly _tag: Tag }>] extends [infer Req]
+    readonly [Tag in A["_tag"]]: [Extract<A, { readonly _tag: Tag }>] extends [infer Req]
       ? Req extends Request.Request<infer ReqE, infer ReqA>
         ? (requests: Req[]) => Effect.Effect<any, ReqE, Iterable<ReqA>>
         : never

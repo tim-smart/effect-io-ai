@@ -5,8 +5,7 @@ Returns a function that checks if a `Chunk` contains a given value using a provi
 To import and use `containsWith` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.containsWith
 ```

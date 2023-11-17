@@ -7,8 +7,7 @@ to map the error a defect, and the resulting value will be returned.
 To import and use `squashWith` from the "Cause" module:
 
 ```ts
-import * as Cause from 'effect/Cause'
-
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.squashWith
 ```

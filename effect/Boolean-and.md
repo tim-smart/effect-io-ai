@@ -5,8 +5,7 @@ Combines two boolean using AND: `self && that`.
 To import and use `and` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.and
 ```
@@ -14,7 +13,7 @@ Boolean.and
 **Example**
 
 ```ts
-import { and } from 'effect/Boolean'
+import { and } from "effect/Boolean"
 
 assert.deepStrictEqual(and(true, true), true)
 assert.deepStrictEqual(and(true, false), false)

@@ -5,8 +5,7 @@ Returns a new data source with a localized FiberRef
 To import and use `locally` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.locally
 ```
@@ -15,12 +14,14 @@ RequestResolver.locally
 
 ```ts
 export declare const locally: {
-  <A>(self: FiberRef<A>, value: A): <R, B extends Request.Request<any, any>>(
-    use: RequestResolver<B, R>
-  ) => RequestResolver<B, R>
-  <R, B extends Request.Request<any, any>, A>(use: RequestResolver<B, R>, self: FiberRef<A>, value: A): RequestResolver<
-    B,
-    R
-  >
+  <A>(
+    self: FiberRef<A>,
+    value: A
+  ): <R, B extends Request.Request<any, any>>(use: RequestResolver<B, R>) => RequestResolver<B, R>
+  <R, B extends Request.Request<any, any>, A>(
+    use: RequestResolver<B, R>,
+    self: FiberRef<A>,
+    value: A
+  ): RequestResolver<B, R>
 }
 ```

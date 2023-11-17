@@ -8,8 +8,7 @@ created. See `Channel.mergeAll`.
 To import and use `mergeMap` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mergeMap
 ```
@@ -21,9 +20,9 @@ export declare const mergeMap: {
   <OutElem, Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, Z>(
     f: (outElem: OutElem) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, Z>,
     options: {
-      readonly concurrency: number | 'unbounded'
-      readonly bufferSize?: number
-      readonly mergeStrategy?: MergeStrategy.MergeStrategy
+      readonly concurrency: number | "unbounded"
+      readonly bufferSize?: number | undefined
+      readonly mergeStrategy?: MergeStrategy.MergeStrategy | undefined
     }
   ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
@@ -32,9 +31,9 @@ export declare const mergeMap: {
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
     f: (outElem: OutElem) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, Z>,
     options: {
-      readonly concurrency: number | 'unbounded'
-      readonly bufferSize?: number
-      readonly mergeStrategy?: MergeStrategy.MergeStrategy
+      readonly concurrency: number | "unbounded"
+      readonly bufferSize?: number | undefined
+      readonly mergeStrategy?: MergeStrategy.MergeStrategy | undefined
     }
   ): Channel<Env | Env1, InErr & InErr1, InElem & InElem1, InDone & InDone1, OutErr | OutErr1, OutElem1, unknown>
 }

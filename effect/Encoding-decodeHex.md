@@ -5,8 +5,7 @@ Decodes a hex encoded `string` into a `Uint8Array`.
 To import and use `decodeHex` from the "Encoding" module:
 
 ```ts
-import * as Encoding from 'effect/Encoding'
-
+import * as Encoding from "effect/Encoding"
 // Can be accessed like this
 Encoding.decodeHex
 ```

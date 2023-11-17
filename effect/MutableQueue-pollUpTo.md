@@ -7,8 +7,7 @@ Returns a `List` of up to `n` elements.
 To import and use `pollUpTo` from the "MutableQueue" module:
 
 ```ts
-import * as MutableQueue from 'effect/MutableQueue'
-
+import * as MutableQueue from "effect/MutableQueue"
 // Can be accessed like this
 MutableQueue.pollUpTo
 ```

@@ -6,8 +6,7 @@ when the predicate is not satisfied.
 To import and use `reduceWhile` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.reduceWhile
 ```

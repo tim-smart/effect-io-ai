@@ -7,8 +7,7 @@ If the key is not present, returns `O.none`.
 To import and use `pop` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.pop
 ```
@@ -16,11 +15,11 @@ ReadonlyRecord.pop
 **Example**
 
 ```ts
-import { pop } from 'effect/ReadonlyRecord'
-import { some, none } from 'effect/Option'
+import { pop } from "effect/ReadonlyRecord"
+import { some, none } from "effect/Option"
 
-assert.deepStrictEqual(pop({ a: 1, b: 2 }, 'a'), some([1, { b: 2 }]))
-assert.deepStrictEqual(pop({ a: 1, b: 2 }, 'c'), none())
+assert.deepStrictEqual(pop({ a: 1, b: 2 }, "a"), some([1, { b: 2 }]))
+assert.deepStrictEqual(pop({ a: 1, b: 2 }, "c"), none())
 ```
 
 **Signature**

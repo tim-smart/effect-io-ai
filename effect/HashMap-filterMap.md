@@ -6,8 +6,7 @@ and filters out `None` values.
 To import and use `filterMap` from the "HashMap" module:
 
 ```ts
-import * as HashMap from 'effect/HashMap'
-
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.filterMap
 ```

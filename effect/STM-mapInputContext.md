@@ -6,8 +6,7 @@ function.
 To import and use `mapInputContext` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.mapInputContext
 ```

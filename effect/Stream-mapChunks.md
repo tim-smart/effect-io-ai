@@ -5,8 +5,7 @@ Transforms the chunks emitted by this stream.
 To import and use `mapChunks` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mapChunks
 ```

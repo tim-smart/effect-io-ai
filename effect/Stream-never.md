@@ -5,8 +5,7 @@ The stream that never produces any value or fails with any error.
 To import and use `never` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.never
 ```

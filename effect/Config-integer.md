@@ -5,8 +5,7 @@ Constructs a config for a integer value.
 To import and use `integer` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.integer
 ```

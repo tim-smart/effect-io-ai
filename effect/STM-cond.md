@@ -6,8 +6,7 @@ success if predicate returns true, and the given E as error otherwise
 To import and use `cond` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.cond
 ```

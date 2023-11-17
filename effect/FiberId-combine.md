@@ -5,8 +5,7 @@ Combine two `FiberId`s.
 To import and use `combine` from the "FiberId" module:
 
 ```ts
-import * as FiberId from 'effect/FiberId'
-
+import * as FiberId from "effect/FiberId"
 // Can be accessed like this
 FiberId.combine
 ```

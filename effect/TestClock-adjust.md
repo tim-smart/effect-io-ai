@@ -7,8 +7,7 @@ the new time in order.
 To import and use `adjust` from the "TestClock" module:
 
 ```ts
-import * as TestClock from 'effect/TestClock'
-
+import * as TestClock from "effect/TestClock"
 // Can be accessed like this
 TestClock.adjust
 ```

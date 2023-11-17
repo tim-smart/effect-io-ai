@@ -6,8 +6,7 @@ The order and references of result values are determined by the first `Iterable`
 To import and use `intersection` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.intersection
 ```

@@ -5,8 +5,7 @@ Insert a new item into the tree.
 To import and use `insert` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.insert
 ```

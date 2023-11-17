@@ -5,8 +5,7 @@ Provides a subtraction operation on `number`s.
 To import and use `subtract` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.subtract
 ```
@@ -14,7 +13,7 @@ Number.subtract
 **Example**
 
 ```ts
-import { subtract } from 'effect/Number'
+import { subtract } from "effect/Number"
 
 assert.deepStrictEqual(subtract(2, 3), -1)
 ```

@@ -6,8 +6,7 @@ dependency on `R`.
 To import and use `provideContext` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.provideContext
 ```

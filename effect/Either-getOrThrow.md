@@ -7,8 +7,7 @@ The thrown error is a default error. To configure the error thrown, see {@link g
 To import and use `getOrThrow` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrThrow
 ```
@@ -16,10 +15,10 @@ Either.getOrThrow
 **Example**
 
 ```ts
-import * as E from 'effect/Either'
+import * as E from "effect/Either"
 
 assert.deepStrictEqual(E.getOrThrow(E.right(1)), 1)
-assert.throws(() => E.getOrThrow(E.left('error')))
+assert.throws(() => E.getOrThrow(E.left("error")))
 ```
 
 **Signature**

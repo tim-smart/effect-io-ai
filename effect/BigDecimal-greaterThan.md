@@ -5,8 +5,7 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 To import and use `greaterThan` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.greaterThan
 ```
@@ -14,11 +13,11 @@ BigDecimal.greaterThan
 **Example**
 
 ```ts
-import { greaterThan, unsafeFromString } from 'effect/BigDecimal'
+import { greaterThan, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(greaterThan(unsafeFromString('2'), unsafeFromString('3')), false)
-assert.deepStrictEqual(greaterThan(unsafeFromString('3'), unsafeFromString('3')), false)
-assert.deepStrictEqual(greaterThan(unsafeFromString('4'), unsafeFromString('3')), true)
+assert.deepStrictEqual(greaterThan(unsafeFromString("2"), unsafeFromString("3")), false)
+assert.deepStrictEqual(greaterThan(unsafeFromString("3"), unsafeFromString("3")), false)
+assert.deepStrictEqual(greaterThan(unsafeFromString("4"), unsafeFromString("3")), true)
 ```
 
 **Signature**

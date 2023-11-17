@@ -9,8 +9,7 @@ this one.
 To import and use `zipAllLeft` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipAllLeft
 ```

@@ -6,8 +6,7 @@ messages if the `TPubSub` is at capacity.
 To import and use `dropping` from the "TPubSub" module:
 
 ```ts
-import * as TPubSub from 'effect/TPubSub'
-
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.dropping
 ```

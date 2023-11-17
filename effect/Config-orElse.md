@@ -7,8 +7,7 @@ reading from this config.
 To import and use `orElse` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.orElse
 ```

@@ -5,8 +5,7 @@ Negates the given boolean: `!self`
 To import and use `not` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.not
 ```
@@ -14,7 +13,7 @@ Boolean.not
 **Example**
 
 ```ts
-import { not } from 'effect/Boolean'
+import { not } from "effect/Boolean"
 
 assert.deepStrictEqual(not(true), false)
 assert.deepStrictEqual(not(false), true)

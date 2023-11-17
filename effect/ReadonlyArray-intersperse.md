@@ -5,8 +5,7 @@ Places an element in between members of an `Iterable`
 To import and use `intersperse` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.intersperse
 ```

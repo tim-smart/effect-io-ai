@@ -7,8 +7,7 @@ become available.
 To import and use `takeN` from the "Queue" module:
 
 ```ts
-import * as Queue from 'effect/Queue'
-
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.takeN
 ```

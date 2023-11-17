@@ -5,8 +5,7 @@ Takes the first matching value, or retries until there is one.
 To import and use `takeFirst` from the "TSet" module:
 
 ```ts
-import * as TSet from 'effect/TSet'
-
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.takeFirst
 ```

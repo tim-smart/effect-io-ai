@@ -7,8 +7,7 @@ It can be used safely to give over control for request management without leakin
 To import and use `ConsumerCache` from the "Cache" module:
 
 ```ts
-import * as Cache from 'effect/Cache'
-
+import * as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.ConsumerCache
 ```

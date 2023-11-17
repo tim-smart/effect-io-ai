@@ -6,8 +6,7 @@ Returns `true` if the specified `ExecutionStrategy` is an instance of
 To import and use `isSequential` from the "ExecutionStrategy" module:
 
 ```ts
-import * as ExecutionStrategy from 'effect/ExecutionStrategy'
-
+import * as ExecutionStrategy from "effect/ExecutionStrategy"
 // Can be accessed like this
 ExecutionStrategy.isSequential
 ```

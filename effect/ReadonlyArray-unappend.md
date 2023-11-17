@@ -5,8 +5,7 @@ Return a tuple containing a copy of the `NonEmptyReadonlyArray` without its last
 To import and use `unappend` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.unappend
 ```

@@ -5,8 +5,7 @@ Applies the specified function to each element of the `List`.
 To import and use `forEach` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.forEach
 ```

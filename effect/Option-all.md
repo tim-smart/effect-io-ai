@@ -9,8 +9,7 @@ Takes a structure of `Option`s and returns an `Option` of values with the same s
 To import and use `all` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.all
 ```
@@ -18,10 +17,10 @@ Option.all
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 assert.deepStrictEqual(O.all([O.some(1), O.some(2)]), O.some([1, 2]))
-assert.deepStrictEqual(O.all({ a: O.some(1), b: O.some('hello') }), O.some({ a: 1, b: 'hello' }))
+assert.deepStrictEqual(O.all({ a: O.some(1), b: O.some("hello") }), O.some({ a: 1, b: "hello" }))
 assert.deepStrictEqual(O.all({ a: O.some(1), b: O.none() }), O.none())
 ```
 
@@ -33,6 +32,6 @@ export declare const all: <const I extends Iterable<Option<any>> | Record<string
 ) => [I] extends [readonly Option<any>[]]
   ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
   : [I] extends [Iterable<Option<infer A>>]
-  ? Option<A[]>
-  : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
+    ? Option<A[]>
+    : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
 ```

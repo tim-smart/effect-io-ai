@@ -6,8 +6,7 @@ empty.
 To import and use `last` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.last
 ```

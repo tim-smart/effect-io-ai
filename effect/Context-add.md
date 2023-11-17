@@ -5,8 +5,7 @@ Adds a service to a given `Context`.
 To import and use `add` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.add
 ```
@@ -14,8 +13,8 @@ Context.add
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
-import { pipe } from 'effect/Function'
+import * as Context from "effect/Context"
+import { pipe } from "effect/Function"
 
 const Port = Context.Tag<{ PORT: number }>()
 const Timeout = Context.Tag<{ TIMEOUT: number }>()
@@ -32,11 +31,14 @@ assert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })
 
 ```ts
 export declare const add: {
-  <T extends Tag<any, any>>(tag: T, service: Tag.Service<T>): <Services>(
-    self: Context<Services>
-  ) => Context<Services | Tag.Identifier<T>>
-  <Services, T extends Tag<any, any>>(self: Context<Services>, tag: T, service: Tag.Service<T>): Context<
-    Services | Tag.Identifier<T>
-  >
+  <T extends Tag<any, any>>(
+    tag: T,
+    service: Tag.Service<T>
+  ): <Services>(self: Context<Services>) => Context<Services | Tag.Identifier<T>>
+  <Services, T extends Tag<any, any>>(
+    self: Context<Services>,
+    tag: T,
+    service: Tag.Service<T>
+  ): Context<Services | Tag.Identifier<T>>
 }
 ```

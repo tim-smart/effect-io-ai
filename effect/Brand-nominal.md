@@ -8,8 +8,7 @@ If you also want to perform some validation, see {@link refined}.
 To import and use `nominal` from the "Brand" module:
 
 ```ts
-import * as Brand from 'effect/Brand'
-
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.nominal
 ```
@@ -17,9 +16,9 @@ Brand.nominal
 **Example**
 
 ```ts
-import * as Brand from 'effect/Brand'
+import * as Brand from "effect/Brand"
 
-type UserId = number & Brand.Brand<'UserId'>
+type UserId = number & Brand.Brand<"UserId">
 
 const UserId = Brand.nominal<UserId>()
 

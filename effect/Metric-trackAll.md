@@ -7,8 +7,7 @@ that effect fails or succeeds.
 To import and use `trackAll` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackAll
 ```
@@ -17,11 +16,12 @@ Metric.trackAll
 
 ```ts
 export declare const trackAll: {
-  <In>(input: In): <Type, Out>(
-    self: Metric<Type, In, Out>
-  ) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
-  <Type, In, Out>(self: Metric<Type, In, Out>, input: In): <R, E, A>(
-    effect: Effect.Effect<R, E, A>
-  ) => Effect.Effect<R, E, A>
+  <In>(
+    input: In
+  ): <Type, Out>(self: Metric<Type, In, Out>) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  <Type, In, Out>(
+    self: Metric<Type, In, Out>,
+    input: In
+  ): <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
 }
 ```

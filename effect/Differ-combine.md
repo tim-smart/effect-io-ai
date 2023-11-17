@@ -9,8 +9,7 @@ deterministic `FiberRef` values.
 To import and use `combine` from the "Differ" module:
 
 ```ts
-import * as Differ from 'effect/Differ'
-
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.combine
 ```

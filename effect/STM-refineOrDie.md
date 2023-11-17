@@ -5,8 +5,7 @@ Keeps some of the errors, and terminates the fiber with the rest.
 To import and use `refineOrDie` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.refineOrDie
 ```

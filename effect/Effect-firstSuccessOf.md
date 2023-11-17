@@ -12,8 +12,7 @@ will determine the outcome of the resulting `Effect` value.
 To import and use `firstSuccessOf` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.firstSuccessOf
 ```

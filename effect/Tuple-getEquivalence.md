@@ -6,8 +6,7 @@ by applying each `Equivalence` to the corresponding element of the tuple.
 To import and use `getEquivalence` from the "Tuple" module:
 
 ```ts
-import * as Tuple from 'effect/Tuple'
-
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.getEquivalence
 ```

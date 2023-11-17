@@ -5,8 +5,7 @@ Returns a function that checks if a given `number` is less than or equal to the 
 To import and use `lessThanOrEqualTo` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.lessThanOrEqualTo
 ```
@@ -14,7 +13,7 @@ Number.lessThanOrEqualTo
 **Example**
 
 ```ts
-import { lessThanOrEqualTo } from 'effect/Number'
+import { lessThanOrEqualTo } from "effect/Number"
 
 assert.deepStrictEqual(lessThanOrEqualTo(2, 3), true)
 assert.deepStrictEqual(lessThanOrEqualTo(3, 3), true)

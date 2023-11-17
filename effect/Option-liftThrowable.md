@@ -8,8 +8,7 @@ the exception in a more functional way.
 To import and use `liftThrowable` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.liftThrowable
 ```
@@ -17,12 +16,12 @@ Option.liftThrowable
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const parse = O.liftThrowable(JSON.parse)
 
-assert.deepStrictEqual(parse('1'), O.some(1))
-assert.deepStrictEqual(parse(''), O.none())
+assert.deepStrictEqual(parse("1"), O.some(1))
+assert.deepStrictEqual(parse(""), O.none())
 ```
 
 **Signature**

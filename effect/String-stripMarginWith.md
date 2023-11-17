@@ -7,8 +7,7 @@ from the line.
 To import and use `stripMarginWith` from the "String" module:
 
 ```ts
-import * as String from 'effect/String'
-
+import * as String from "effect/String"
 // Can be accessed like this
 String.stripMarginWith
 ```

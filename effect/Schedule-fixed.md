@@ -14,8 +14,7 @@ action will be run immediately, but re-runs will not "pile up".
 To import and use `fixed` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.fixed
 ```

@@ -7,8 +7,7 @@ or an end-of-stream marker.
 To import and use `Take` from the "Take" module:
 
 ```ts
-import * as Take from 'effect/Take'
-
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.Take
 ```

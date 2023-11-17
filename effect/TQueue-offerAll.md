@@ -17,8 +17,7 @@ queue but if there is no room it will not enqueue them and return false.
 To import and use `offerAll` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.offerAll
 ```

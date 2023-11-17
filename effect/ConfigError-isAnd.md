@@ -5,8 +5,7 @@ Returns `true` if the specified `ConfigError` is an `And`, `false` otherwise.
 To import and use `isAnd` from the "ConfigError" module:
 
 ```ts
-import * as ConfigError from 'effect/ConfigError'
-
+import * as ConfigError from "effect/ConfigError"
 // Can be accessed like this
 ConfigError.isAnd
 ```

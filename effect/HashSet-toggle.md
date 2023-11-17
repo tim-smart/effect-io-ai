@@ -7,8 +7,7 @@ will be removed from the `HashSet`, otherwise the value will be added to the
 To import and use `toggle` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.toggle
 ```

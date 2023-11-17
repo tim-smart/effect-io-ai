@@ -5,8 +5,7 @@ Tags each metric in this effect with the specific tag.
 To import and use `tagMetrics` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tagMetrics
 ```

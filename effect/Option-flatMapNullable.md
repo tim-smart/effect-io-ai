@@ -5,8 +5,7 @@ This is `flatMap` + `fromNullable`, useful when working with optional values.
 To import and use `flatMapNullable` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.flatMapNullable
 ```
@@ -14,8 +13,8 @@ Option.flatMapNullable
 **Example**
 
 ```ts
-import { some, none, flatMapNullable } from 'effect/Option'
-import { pipe } from 'effect/Function'
+import { some, none, flatMapNullable } from "effect/Option"
+import { pipe } from "effect/Function"
 
 interface Employee {
   company?: {
@@ -27,14 +26,14 @@ interface Employee {
   }
 }
 
-const employee1: Employee = { company: { address: { street: { name: 'high street' } } } }
+const employee1: Employee = { company: { address: { street: { name: "high street" } } } }
 
 assert.deepStrictEqual(
   pipe(
     some(employee1),
     flatMapNullable((employee) => employee.company?.address?.street?.name)
   ),
-  some('high street')
+  some("high street")
 )
 
 const employee2: Employee = { company: { address: { street: {} } } }

@@ -7,8 +7,7 @@ effectful function to the terminal value of this channel.
 To import and use `mapEffect` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapEffect
 ```
@@ -17,14 +16,9 @@ Channel.mapEffect
 
 ```ts
 export declare const mapEffect: {
-  <Env1, OutErr1, OutDone, OutDone1>(f: (o: OutDone) => Effect.Effect<Env1, OutErr1, OutDone1>): <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
-    OutElem
-  >(
+  <Env1, OutErr1, OutDone, OutDone1>(
+    f: (o: OutDone) => Effect.Effect<Env1, OutErr1, OutDone1>
+  ): <Env, InErr, InElem, InDone, OutErr, OutElem>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem, OutDone1>
   <Env, InErr, InElem, InDone, OutErr, OutElem, Env1, OutErr1, OutDone, OutDone1>(

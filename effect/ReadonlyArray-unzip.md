@@ -5,8 +5,7 @@ This function is the inverse of `zip`. Takes an `Iterable` of pairs and return t
 To import and use `unzip` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.unzip
 ```

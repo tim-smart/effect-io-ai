@@ -5,8 +5,7 @@ Provides a subtraction operation on `BigDecimal`s.
 To import and use `subtract` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.subtract
 ```
@@ -14,9 +13,9 @@ BigDecimal.subtract
 **Example**
 
 ```ts
-import { subtract, unsafeFromString } from 'effect/BigDecimal'
+import { subtract, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(subtract(unsafeFromString('2'), unsafeFromString('3')), unsafeFromString('-1'))
+assert.deepStrictEqual(subtract(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("-1"))
 ```
 
 **Signature**

@@ -5,8 +5,7 @@ Creates a stream from a subscription to a `PubSub`.
 To import and use `fromChunkPubSub` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromChunkPubSub
 ```
@@ -17,11 +16,11 @@ Stream.fromChunkPubSub
 export declare const fromChunkPubSub: {
   <A>(
     pubsub: PubSub.PubSub<Chunk.Chunk<A>>,
-    options: { readonly scoped: true; readonly shutdown?: boolean }
+    options: { readonly scoped: true; readonly shutdown?: boolean | undefined }
   ): Effect.Effect<Scope.Scope, never, Stream<never, never, A>>
   <A>(
     pubsub: PubSub.PubSub<Chunk.Chunk<A>>,
-    options?: { readonly scoped?: false; readonly shutdown?: boolean }
+    options?: { readonly scoped?: false | undefined; readonly shutdown?: boolean | undefined }
   ): Stream<never, never, A>
 }
 ```

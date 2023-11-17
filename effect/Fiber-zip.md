@@ -6,8 +6,7 @@ their output.
 To import and use `zip` from the "Fiber" module:
 
 ```ts
-import * as Fiber from 'effect/Fiber'
-
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.zip
 ```
@@ -16,7 +15,7 @@ Fiber.zip
 
 ```ts
 export declare const zip: {
-  <E2, A2>(that: Fiber<E2, A2>): <E, A>(self: Fiber<E, A>) => Fiber<E2 | E, readonly [A, A2]>
-  <E, A, E2, A2>(self: Fiber<E, A>, that: Fiber<E2, A2>): Fiber<E | E2, readonly [A, A2]>
+  <E2, A2>(that: Fiber<E2, A2>): <E, A>(self: Fiber<E, A>) => Fiber<E2 | E, [A, A2]>
+  <E, A, E2, A2>(self: Fiber<E, A>, that: Fiber<E2, A2>): Fiber<E | E2, [A, A2]>
 }
 ```

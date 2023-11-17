@@ -5,8 +5,7 @@ Intersperse stream with provided `element`.
 To import and use `intersperse` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.intersperse
 ```

@@ -5,8 +5,7 @@ Returns the maximum between two `BigDecimal`s.
 To import and use `max` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.max
 ```
@@ -14,9 +13,9 @@ BigDecimal.max
 **Example**
 
 ```ts
-import { max, unsafeFromString } from 'effect/BigDecimal'
+import { max, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(max(unsafeFromString('2'), unsafeFromString('3')), unsafeFromString('3'))
+assert.deepStrictEqual(max(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("3"))
 ```
 
 **Signature**

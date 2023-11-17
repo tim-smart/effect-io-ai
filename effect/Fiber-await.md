@@ -6,8 +6,7 @@ fiber has been determined.
 To import and use `await` from the "Fiber" module:
 
 ```ts
-import * as Fiber from 'effect/Fiber'
-
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.await
 ```

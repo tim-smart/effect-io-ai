@@ -5,8 +5,7 @@ Return the last index for which a predicate holds.
 To import and use `findLastIndex` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.findLastIndex
 ```

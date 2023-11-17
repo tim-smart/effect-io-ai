@@ -6,8 +6,7 @@ Summary metrics provide statistical information about a set of values, including
 To import and use `summary` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.summary
 ```
@@ -15,16 +14,16 @@ Metric.summary
 **Example**
 
 ```ts
-import * as Metric from 'effect/Metric'
-import * as Chunk from 'effect/Chunk'
+import * as Metric from "effect/Metric"
+import * as Chunk from "effect/Chunk"
 
 const responseTimesSummary = Metric.summary({
-  name: 'response_times_summary',
-  maxAge: '60 seconds', // Retain observations for 60 seconds.
+  name: "response_times_summary",
+  maxAge: "60 seconds", // Retain observations for 60 seconds.
   maxSize: 1000, // Keep a maximum of 1000 observations.
   error: 0.01, // Allow a 1% error when calculating quantiles.
   quantiles: Chunk.make(0.5, 0.9, 0.99), // Calculate 50th, 90th, and 99th percentiles.
-  description: 'Measures the distribution of response times.',
+  description: "Measures the distribution of response times."
 })
 ```
 
@@ -37,6 +36,6 @@ export declare const summary: (options: {
   readonly maxSize: number
   readonly error: number
   readonly quantiles: Chunk.Chunk<number>
-  readonly description?: string
+  readonly description?: string | undefined
 }) => Metric.Summary<number>
 ```

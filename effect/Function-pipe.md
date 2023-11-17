@@ -11,8 +11,7 @@ as.map(f).filter(g) -> pipe(as, map(f), filter(g))
 To import and use `pipe` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.pipe
 ```
@@ -20,13 +19,13 @@ Function.pipe
 **Example**
 
 ```ts
-import { pipe } from 'effect/Function'
+import { pipe } from "effect/Function"
 
 const length = (s: string): number => s.length
 const double = (n: number): number => n * 2
 const decrement = (n: number): number => n - 1
 
-assert.deepStrictEqual(pipe(length('hello'), double, decrement), 9)
+assert.deepStrictEqual(pipe(length("hello"), double, decrement), 9)
 ```
 
 **Signature**

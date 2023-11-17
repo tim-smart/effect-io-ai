@@ -5,8 +5,7 @@ Adds a value to the `HashSet`.
 To import and use `add` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.add
 ```

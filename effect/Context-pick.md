@@ -5,8 +5,7 @@ Returns a new `Context` that contains only the specified services.
 To import and use `pick` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.pick
 ```
@@ -14,9 +13,9 @@ Context.pick
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
-import { pipe } from 'effect/Function'
-import * as O from 'effect/Option'
+import * as Context from "effect/Context"
+import { pipe } from "effect/Function"
+import * as O from "effect/Option"
 
 const Port = Context.Tag<{ PORT: number }>()
 const Timeout = Context.Tag<{ TIMEOUT: number }>()

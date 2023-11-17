@@ -5,8 +5,7 @@ Creates a sink halting with a specified `Cause`.
 To import and use `failCause` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.failCause
 ```

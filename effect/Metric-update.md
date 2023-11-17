@@ -7,8 +7,7 @@ provided amount.
 To import and use `update` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.update
 ```

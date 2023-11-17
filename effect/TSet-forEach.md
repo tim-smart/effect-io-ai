@@ -5,8 +5,7 @@ Atomically performs transactional-effect for each element in set.
 To import and use `forEach` from the "TSet" module:
 
 ```ts
-import * as TSet from 'effect/TSet'
-
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.forEach
 ```

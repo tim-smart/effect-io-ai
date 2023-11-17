@@ -7,8 +7,7 @@ If the divisor is `0`, the result will be `None`.
 To import and use `remainder` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.remainder
 ```
@@ -16,12 +15,12 @@ BigDecimal.remainder
 **Example**
 
 ```ts
-import { remainder, unsafeFromString } from 'effect/BigDecimal'
-import { some, none } from 'effect/Option'
+import { remainder, unsafeFromString } from "effect/BigDecimal"
+import { some } from "effect/Option"
 
-assert.deepStrictEqual(remainder(unsafeFromString('2'), unsafeFromString('2')), some(unsafeFromString('0')))
-assert.deepStrictEqual(remainder(unsafeFromString('3'), unsafeFromString('2')), some(unsafeFromString('1')))
-assert.deepStrictEqual(remainder(unsafeFromString('-4'), unsafeFromString('2')), some(unsafeFromString('0')))
+assert.deepStrictEqual(remainder(unsafeFromString("2"), unsafeFromString("2")), some(unsafeFromString("0")))
+assert.deepStrictEqual(remainder(unsafeFromString("3"), unsafeFromString("2")), some(unsafeFromString("1")))
+assert.deepStrictEqual(remainder(unsafeFromString("-4"), unsafeFromString("2")), some(unsafeFromString("0")))
 ```
 
 **Signature**

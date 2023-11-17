@@ -27,8 +27,7 @@ schedules, both for performing retrying, as well as performing repetition.
 To import and use `Schedule` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.Schedule
 ```

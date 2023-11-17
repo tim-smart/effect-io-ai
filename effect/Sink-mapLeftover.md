@@ -5,8 +5,7 @@ Transforms the leftovers emitted by this sink using `f`.
 To import and use `mapLeftover` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.mapLeftover
 ```

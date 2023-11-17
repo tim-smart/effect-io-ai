@@ -5,8 +5,7 @@ Rotate an `Iterable` by `n` steps.
 To import and use `rotate` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.rotate
 ```

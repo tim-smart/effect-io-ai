@@ -6,8 +6,7 @@ time, or no time at all.
 To import and use `Interval` from the "ScheduleInterval" module:
 
 ```ts
-import * as ScheduleInterval from 'effect/ScheduleInterval'
-
+import * as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.Interval
 ```

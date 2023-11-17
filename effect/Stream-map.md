@@ -5,8 +5,7 @@ Transforms the elements of this stream using the supplied function.
 To import and use `map` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.map
 ```

@@ -10,8 +10,7 @@ Returns `None` if the divisor is `0n`.
 To import and use `divide` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.divide
 ```
@@ -19,8 +18,8 @@ BigInt.divide
 **Example**
 
 ```ts
-import { divide } from 'effect/BigInt'
-import { some, none } from 'effect/Option'
+import { divide } from "effect/BigInt"
+import { some, none } from "effect/Option"
 
 assert.deepStrictEqual(divide(6n, 3n), some(2n))
 assert.deepStrictEqual(divide(6n, 0n), none())

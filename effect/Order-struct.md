@@ -6,8 +6,7 @@ for each property in the struct.
 To import and use `struct` from the "Order" module:
 
 ```ts
-import * as Order from 'effect/Order'
-
+import * as Order from "effect/Order"
 // Can be accessed like this
 Order.struct
 ```

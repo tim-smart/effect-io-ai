@@ -5,8 +5,7 @@ Creates a sink produced from an effect.
 To import and use `unwrap` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.unwrap
 ```

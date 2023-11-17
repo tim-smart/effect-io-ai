@@ -5,8 +5,7 @@ A thunk that returns always `false`.
 To import and use `constFalse` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.constFalse
 ```
@@ -14,7 +13,7 @@ Function.constFalse
 **Example**
 
 ```ts
-import { constFalse } from 'effect/Function'
+import { constFalse } from "effect/Function"
 
 assert.deepStrictEqual(constFalse(), false)
 ```

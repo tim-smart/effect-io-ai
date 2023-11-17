@@ -6,8 +6,7 @@ milliseconds.
 To import and use `currentTimeMillis` from the "TestClock" module:
 
 ```ts
-import * as TestClock from 'effect/TestClock'
-
+import * as TestClock from "effect/TestClock"
 // Can be accessed like this
 TestClock.currentTimeMillis
 ```

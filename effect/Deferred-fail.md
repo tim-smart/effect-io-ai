@@ -6,8 +6,7 @@ all fibers waiting on the value of the `Deferred`.
 To import and use `fail` from the "Deferred" module:
 
 ```ts
-import * as Deferred from 'effect/Deferred'
-
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.fail
 ```

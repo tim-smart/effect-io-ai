@@ -5,8 +5,7 @@ Wraps an array into a chunk without copying, unsafe on mutable arrays
 To import and use `unsafeFromArray` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.unsafeFromArray
 ```

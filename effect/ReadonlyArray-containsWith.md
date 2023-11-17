@@ -5,8 +5,7 @@ Returns a function that checks if a `ReadonlyArray` contains a given value using
 To import and use `containsWith` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.containsWith
 ```

@@ -8,8 +8,7 @@ profiling.
 To import and use `OpSupervision` from the "RuntimeFlags" module:
 
 ```ts
-import * as RuntimeFlags from 'effect/RuntimeFlags'
-
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.OpSupervision
 ```

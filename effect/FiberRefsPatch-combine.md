@@ -7,8 +7,7 @@ sequentially.
 To import and use `combine` from the "FiberRefsPatch" module:
 
 ```ts
-import * as FiberRefsPatch from 'effect/FiberRefsPatch'
-
+import * as FiberRefsPatch from "effect/FiberRefsPatch"
 // Can be accessed like this
 FiberRefsPatch.combine
 ```

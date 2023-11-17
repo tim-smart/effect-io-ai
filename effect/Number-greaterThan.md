@@ -5,8 +5,7 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 To import and use `greaterThan` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.greaterThan
 ```
@@ -14,7 +13,7 @@ Number.greaterThan
 **Example**
 
 ```ts
-import { greaterThan } from 'effect/Number'
+import { greaterThan } from "effect/Number"
 
 assert.deepStrictEqual(greaterThan(2, 3), false)
 assert.deepStrictEqual(greaterThan(3, 3), false)

@@ -6,8 +6,7 @@ predicate.
 To import and use `find` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.find
 ```

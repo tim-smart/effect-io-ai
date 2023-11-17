@@ -5,8 +5,7 @@ Provides a subtraction operation on `bigint`s.
 To import and use `subtract` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.subtract
 ```
@@ -14,7 +13,7 @@ BigInt.subtract
 **Example**
 
 ```ts
-import { subtract } from 'effect/BigInt'
+import { subtract } from "effect/BigInt"
 
 assert.deepStrictEqual(subtract(2n, 3n), -1n)
 ```

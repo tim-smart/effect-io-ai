@@ -9,8 +9,7 @@ wrapped Promise api.
 To import and use `tryPromise` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tryPromise
 ```
@@ -19,11 +18,10 @@ Effect.tryPromise
 
 ```ts
 export declare const tryPromise: {
-  <A, E>(options: { readonly try: (signal: AbortSignal) => Promise<A>; readonly catch: (error: unknown) => E }): Effect<
-    never,
-    E,
-    A
-  >
+  <A, E>(options: {
+    readonly try: (signal: AbortSignal) => Promise<A>
+    readonly catch: (error: unknown) => E
+  }): Effect<never, E, A>
   <A>(try_: (signal: AbortSignal) => Promise<A>): Effect<never, unknown, A>
 }
 ```

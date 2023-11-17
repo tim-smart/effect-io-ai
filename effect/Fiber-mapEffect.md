@@ -5,8 +5,7 @@ Effectually maps over the value the fiber computes.
 To import and use `mapEffect` from the "Fiber" module:
 
 ```ts
-import * as Fiber from 'effect/Fiber'
-
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.mapEffect
 ```

@@ -7,8 +7,7 @@ function passed to `match`.
 To import and use `match` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.match
 ```
@@ -17,9 +16,10 @@ Effect.match
 
 ```ts
 export declare const match: {
-  <E, A, A2, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }): <R>(
-    self: Effect<R, E, A>
-  ) => Effect<R, never, A2 | A3>
+  <E, A, A2, A3>(options: {
+    readonly onFailure: (error: E) => A2
+    readonly onSuccess: (value: A) => A3
+  }): <R>(self: Effect<R, E, A>) => Effect<R, never, A2 | A3>
   <R, E, A, A2, A3>(
     self: Effect<R, E, A>,
     options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }

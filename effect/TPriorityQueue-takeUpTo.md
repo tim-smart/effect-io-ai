@@ -5,8 +5,7 @@ Takes up to the specified maximum number of elements from the queue.
 To import and use `takeUpTo` from the "TPriorityQueue" module:
 
 ```ts
-import * as TPriorityQueue from 'effect/TPriorityQueue'
-
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.takeUpTo
 ```

@@ -5,8 +5,7 @@ Applies the specified function to each element of the `List`.
 To import and use `forEach` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.forEach
 ```

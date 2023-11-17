@@ -7,8 +7,7 @@ contains all elements for which the specified function returned a `Right`.
 To import and use `partitionMap` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.partitionMap
 ```
@@ -17,7 +16,7 @@ List.partitionMap
 
 ```ts
 export declare const partitionMap: {
-  <A, B, C>(f: (a: A) => Either.Either<B, C>): (self: List<A>) => readonly [List<B>, List<C>]
-  <A, B, C>(self: List<A>, f: (a: A) => Either.Either<B, C>): readonly [List<B>, List<C>]
+  <A, B, C>(f: (a: A) => Either.Either<B, C>): (self: List<A>) => [List<B>, List<C>]
+  <A, B, C>(self: List<A>, f: (a: A) => Either.Either<B, C>): [List<B>, List<C>]
 }
 ```

@@ -5,8 +5,7 @@ Zips this chunk pointwise with the specified chunk using the specified combiner.
 To import and use `zipWith` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.zipWith
 ```

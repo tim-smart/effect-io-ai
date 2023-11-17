@@ -7,8 +7,7 @@ fails, the returned `STM` will fail with the same error.
 To import and use `asUnit` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.asUnit
 ```

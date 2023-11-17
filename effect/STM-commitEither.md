@@ -6,8 +6,7 @@ is a success or a failure.
 To import and use `commitEither` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.commitEither
 ```

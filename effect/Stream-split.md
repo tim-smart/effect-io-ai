@@ -3,8 +3,8 @@
 Splits elements based on a predicate.
 
 ```ts
-import * as Stream from './Stream'
-import { pipe } from './Function'
+import * as Stream from "./Stream"
+import { pipe } from "./Function"
 
 pipe(
   Stream.range(1, 10),
@@ -17,8 +17,7 @@ pipe(
 To import and use `split` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.split
 ```

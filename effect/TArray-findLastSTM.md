@@ -5,8 +5,7 @@ Find the last element in the array matching a transactional predicate.
 To import and use `findLastSTM` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findLastSTM
 ```

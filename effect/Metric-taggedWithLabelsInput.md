@@ -8,8 +8,7 @@ dynamic nature of the added tags.
 To import and use `taggedWithLabelsInput` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.taggedWithLabelsInput
 ```
@@ -18,13 +17,12 @@ Metric.taggedWithLabelsInput
 
 ```ts
 export declare const taggedWithLabelsInput: {
-  <In>(f: (input: In) => Iterable<MetricLabel.MetricLabel>): <Type, Out>(
-    self: Metric<Type, In, Out>
-  ) => Metric<Type, In, void>
-  <Type, In, Out>(self: Metric<Type, In, Out>, f: (input: In) => Iterable<MetricLabel.MetricLabel>): Metric<
-    Type,
-    In,
-    void
-  >
+  <In>(
+    f: (input: In) => Iterable<MetricLabel.MetricLabel>
+  ): <Type, Out>(self: Metric<Type, In, Out>) => Metric<Type, In, void>
+  <Type, In, Out>(
+    self: Metric<Type, In, Out>,
+    f: (input: In) => Iterable<MetricLabel.MetricLabel>
+  ): Metric<Type, In, void>
 }
 ```

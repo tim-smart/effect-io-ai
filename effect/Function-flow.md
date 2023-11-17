@@ -7,8 +7,7 @@ See also [`pipe`](#pipe).
 To import and use `flow` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.flow
 ```
@@ -16,14 +15,14 @@ Function.flow
 **Example**
 
 ```ts
-import { flow } from 'effect/Function'
+import { flow } from "effect/Function"
 
 const len = (s: string): number => s.length
 const double = (n: number): number => n * 2
 
 const f = flow(len, double)
 
-assert.strictEqual(f('aaa'), 6)
+assert.strictEqual(f("aaa"), 6)
 ```
 
 **Signature**

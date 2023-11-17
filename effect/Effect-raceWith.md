@@ -6,8 +6,7 @@ the specified finisher as soon as one result or the other has been computed.
 To import and use `raceWith` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.raceWith
 ```

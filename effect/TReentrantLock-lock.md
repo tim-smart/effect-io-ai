@@ -8,8 +8,7 @@ See `TReentrantLock.writeLock`.
 To import and use `lock` from the "TReentrantLock" module:
 
 ```ts
-import * as TReentrantLock from 'effect/TReentrantLock'
-
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.lock
 ```

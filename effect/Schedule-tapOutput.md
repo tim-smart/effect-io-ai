@@ -6,8 +6,7 @@ schedule.
 To import and use `tapOutput` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.tapOutput
 ```
@@ -16,9 +15,9 @@ Schedule.tapOutput
 
 ```ts
 export declare const tapOutput: {
-  <Out, XO extends Out, Env2, X>(f: (out: XO) => Effect.Effect<Env2, never, X>): <Env, In>(
-    self: Schedule<Env, In, Out>
-  ) => Schedule<Env2 | Env, In, Out>
+  <Out, XO extends Out, Env2, X>(
+    f: (out: XO) => Effect.Effect<Env2, never, X>
+  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
   <Env, In, Out, XO extends Out, Env2, X>(
     self: Schedule<Env, In, Out>,
     f: (out: XO) => Effect.Effect<Env2, never, X>

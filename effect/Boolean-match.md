@@ -6,8 +6,7 @@ It is useful when you have to run one of two functions depending on the boolean 
 To import and use `match` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.match
 ```
@@ -15,7 +14,7 @@ Boolean.match
 **Example**
 
 ```ts
-import * as B from 'effect/Boolean'
+import * as B from "effect/Boolean"
 
 assert.deepStrictEqual(B.match(true, { onFalse: () => "It's false!", onTrue: () => "It's true!" }), "It's true!")
 ```

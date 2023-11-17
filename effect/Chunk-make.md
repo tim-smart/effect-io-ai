@@ -5,8 +5,7 @@ Builds a `NonEmptyChunk` from an non-empty collection of elements.
 To import and use `make` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.make
 ```

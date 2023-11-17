@@ -5,8 +5,7 @@ Atomically updates all elements using a transactional function.
 To import and use `transformSTM` from the "TSet" module:
 
 ```ts
-import * as TSet from 'effect/TSet'
-
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.transformSTM
 ```

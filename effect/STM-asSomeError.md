@@ -5,8 +5,7 @@ Maps the error value of this effect to an optional value.
 To import and use `asSomeError` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.asSomeError
 ```

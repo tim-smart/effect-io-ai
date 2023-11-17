@@ -5,8 +5,7 @@ Determines the greatest common divisor of two `bigint`s.
 To import and use `gcd` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.gcd
 ```
@@ -14,7 +13,7 @@ BigInt.gcd
 **Example**
 
 ```ts
-import { gcd } from 'effect/BigInt'
+import { gcd } from "effect/BigInt"
 
 assert.deepStrictEqual(gcd(2n, 3n), 1n)
 assert.deepStrictEqual(gcd(2n, 4n), 2n)

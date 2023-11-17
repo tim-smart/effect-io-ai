@@ -5,8 +5,7 @@ Splits a `NonEmptyReadonlyArray` into two pieces, the first piece has max `n` el
 To import and use `splitNonEmptyAt` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.splitNonEmptyAt
 ```

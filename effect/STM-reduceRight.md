@@ -6,8 +6,7 @@ from right to left.
 To import and use `reduceRight` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.reduceRight
 ```

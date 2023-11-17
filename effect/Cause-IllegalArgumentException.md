@@ -6,8 +6,7 @@ provided to a method.
 To import and use `IllegalArgumentException` from the "Cause" module:
 
 ```ts
-import * as Cause from 'effect/Cause'
-
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.IllegalArgumentException
 ```

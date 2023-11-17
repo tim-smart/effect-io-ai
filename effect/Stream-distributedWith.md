@@ -7,8 +7,7 @@ function will receive the indices of the queues in the resulting list.
 To import and use `distributedWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.distributedWith
 ```

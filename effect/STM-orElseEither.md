@@ -7,8 +7,7 @@ the value of the specified effect in right side.
 To import and use `orElseEither` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.orElseEither
 ```

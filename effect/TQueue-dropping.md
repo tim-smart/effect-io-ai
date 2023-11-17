@@ -8,8 +8,7 @@ For best performance use capacities that are powers of two.
 To import and use `dropping` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.dropping
 ```

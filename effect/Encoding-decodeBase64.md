@@ -5,8 +5,7 @@ Decodes a base64 (RFC4648) encoded `string` into a `Uint8Array`.
 To import and use `decodeBase64` from the "Encoding" module:
 
 ```ts
-import * as Encoding from 'effect/Encoding'
-
+import * as Encoding from "effect/Encoding"
 // Can be accessed like this
 Encoding.decodeBase64
 ```

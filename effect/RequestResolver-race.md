@@ -7,8 +7,7 @@ source to complete and safely interrupting the loser.
 To import and use `race` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.race
 ```
@@ -17,9 +16,9 @@ RequestResolver.race
 
 ```ts
 export declare const race: {
-  <R2, A2 extends Request.Request<any, any>>(that: RequestResolver<A2, R2>): <R, A extends Request.Request<any, any>>(
-    self: RequestResolver<A, R>
-  ) => RequestResolver<A2 | A, R2 | R>
+  <R2, A2 extends Request.Request<any, any>>(
+    that: RequestResolver<A2, R2>
+  ): <R, A extends Request.Request<any, any>>(self: RequestResolver<A, R>) => RequestResolver<A2 | A, R2 | R>
   <R, A extends Request.Request<any, any>, R2, A2 extends Request.Request<any, any>>(
     self: RequestResolver<A, R>,
     that: RequestResolver<A2, R2>

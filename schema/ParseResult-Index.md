@@ -8,8 +8,7 @@ that a specific element in an array did not match the expected type or value.
 To import and use `Index` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from '@effect/schema/ParseResult'
-
+import * as ParseResult from "@effect/schema/ParseResult"
 // Can be accessed like this
 ParseResult.Index
 ```

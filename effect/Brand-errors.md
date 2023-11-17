@@ -5,8 +5,7 @@ Takes a variable number of `BrandErrors` and returns a single `BrandErrors` that
 To import and use `errors` from the "Brand" module:
 
 ```ts
-import * as Brand from 'effect/Brand'
-
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.errors
 ```

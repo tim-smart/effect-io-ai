@@ -14,8 +14,7 @@ single type. For example, `Either` or similar data type.
 To import and use `repeatElementsWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.repeatElementsWith
 ```

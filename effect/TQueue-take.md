@@ -6,8 +6,7 @@ a computation that resumes when an item has been added to the queue.
 To import and use `take` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.take
 ```

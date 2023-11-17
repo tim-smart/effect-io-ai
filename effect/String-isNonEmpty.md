@@ -5,8 +5,7 @@ Test whether a `string` is non empty.
 To import and use `isNonEmpty` from the "String" module:
 
 ```ts
-import * as String from 'effect/String'
-
+import * as String from "effect/String"
 // Can be accessed like this
 String.isNonEmpty
 ```

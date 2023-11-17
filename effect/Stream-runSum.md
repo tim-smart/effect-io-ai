@@ -5,8 +5,7 @@ Runs the stream to a sink which sums elements, provided they are Numeric.
 To import and use `runSum` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runSum
 ```

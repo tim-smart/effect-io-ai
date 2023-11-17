@@ -5,8 +5,7 @@ Provides a constructor for a Case Class.
 To import and use `Error` from the "Data" module:
 
 ```ts
-import * as Data from 'effect/Data'
-
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.Error
 ```

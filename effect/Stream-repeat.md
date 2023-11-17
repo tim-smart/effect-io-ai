@@ -6,8 +6,7 @@ execute normally, and then repeat again according to the provided schedule.
 To import and use `repeat` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.repeat
 ```

@@ -5,8 +5,7 @@ Tests if a value is a `boolean`.
 To import and use `isBoolean` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isBoolean
 ```
@@ -14,11 +13,11 @@ Predicate.isBoolean
 **Example**
 
 ```ts
-import { isBoolean } from 'effect/Predicate'
+import { isBoolean } from "effect/Predicate"
 
 assert.deepStrictEqual(isBoolean(true), true)
 
-assert.deepStrictEqual(isBoolean('true'), false)
+assert.deepStrictEqual(isBoolean("true"), false)
 ```
 
 **Signature**

@@ -5,8 +5,7 @@ Returns `true` if the specified value is an `Exit`, `false` otherwise.
 To import and use `isExit` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.isExit
 ```

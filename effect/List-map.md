@@ -5,8 +5,7 @@ Applies the specified mapping function to each element of the list.
 To import and use `map` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.map
 ```

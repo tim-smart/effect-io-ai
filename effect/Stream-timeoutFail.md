@@ -6,8 +6,7 @@ duration.
 To import and use `timeoutFail` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.timeoutFail
 ```

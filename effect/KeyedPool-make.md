@@ -8,8 +8,7 @@ will be released in some unspecified order.
 To import and use `make` from the "KeyedPool" module:
 
 ```ts
-import * as KeyedPool from 'effect/KeyedPool'
-
+import * as KeyedPool from "effect/KeyedPool"
 // Can be accessed like this
 KeyedPool.make
 ```

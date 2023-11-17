@@ -5,8 +5,7 @@ Transforms the values of a record into an `Array` with a custom mapping function
 To import and use `collect` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.collect
 ```
@@ -14,15 +13,15 @@ ReadonlyRecord.collect
 **Example**
 
 ```ts
-import { collect } from 'effect/ReadonlyRecord'
+import { collect } from "effect/ReadonlyRecord"
 
 const x = { a: 1, b: 2, c: 3 }
 assert.deepStrictEqual(
   collect(x, (key, n) => [key, n]),
   [
-    ['a', 1],
-    ['b', 2],
-    ['c', 3],
+    ["a", 1],
+    ["b", 2],
+    ["c", 3]
   ]
 )
 ```

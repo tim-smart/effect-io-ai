@@ -5,8 +5,7 @@ Returns `true` if the specified value is a `Layer`, `false` otherwise.
 To import and use `isLayer` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.isLayer
 ```

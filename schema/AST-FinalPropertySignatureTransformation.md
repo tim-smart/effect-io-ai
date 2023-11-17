@@ -15,8 +15,7 @@ The semantic of `encode` is:
 To import and use `FinalPropertySignatureTransformation` from the "AST" module:
 
 ```ts
-import * as AST from '@effect/schema/AST'
-
+import * as AST from "@effect/schema/AST"
 // Can be accessed like this
 AST.FinalPropertySignatureTransformation
 ```

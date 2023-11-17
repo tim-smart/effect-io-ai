@@ -5,8 +5,7 @@ Find the last element for which a predicate holds.
 To import and use `findLast` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.findLast
 ```

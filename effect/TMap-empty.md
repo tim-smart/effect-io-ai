@@ -5,8 +5,7 @@ Makes an empty `TMap`.
 To import and use `empty` from the "TMap" module:
 
 ```ts
-import * as TMap from 'effect/TMap'
-
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.empty
 ```

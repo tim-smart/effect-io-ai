@@ -5,8 +5,7 @@ Combines two boolean using NAND: `!(self && that)`.
 To import and use `nand` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.nand
 ```
@@ -14,7 +13,7 @@ Boolean.nand
 **Example**
 
 ```ts
-import { nand } from 'effect/Boolean'
+import { nand } from "effect/Boolean"
 
 assert.deepStrictEqual(nand(true, true), false)
 assert.deepStrictEqual(nand(true, false), true)

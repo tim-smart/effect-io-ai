@@ -15,8 +15,7 @@ function is being used in a data-first or data-last style.
 To import and use `dual` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.dual
 ```
@@ -24,10 +23,10 @@ Function.dual
 **Example**
 
 ```ts
-import { dual, pipe } from 'effect/Function'
+import { dual, pipe } from "effect/Function"
 
 // Exampe using arity to determine data-first or data-last style
-export const sum: {
+const sum: {
   (that: number): (self: number) => number
   (self: number, that: number): number
 } = dual(2, (self: number, that: number): number => self + that)
@@ -36,7 +35,7 @@ assert.deepStrictEqual(sum(2, 3), 5)
 assert.deepStrictEqual(pipe(2, sum(3)), 5)
 
 // Example using a predicate to determine data-first or data-last style
-export const sum2: {
+const sum2: {
   (that: number): (self: number) => number
   (self: number, that: number): number
 } = dual(
@@ -53,7 +52,7 @@ assert.deepStrictEqual(pipe(2, sum(3)), 5)
 ```ts
 export declare const dual: {
   <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(
-    arity: Parameters<DataFirst>['length'],
+    arity: Parameters<DataFirst>["length"],
     body: DataFirst
   ): DataLast & DataFirst
   <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(

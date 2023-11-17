@@ -6,8 +6,7 @@ Creates a stream by effectfully peeling off the "layers" of a value of type
 To import and use `unfoldChunkEffect` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.unfoldChunkEffect
 ```

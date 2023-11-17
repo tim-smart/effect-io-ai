@@ -6,8 +6,7 @@ function as soon as one result or the other has been computed.
 To import and use `raceWith` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.raceWith
 ```

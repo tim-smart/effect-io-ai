@@ -5,8 +5,7 @@ The stream that always fails with the specified lazily evaluated `Cause`.
 To import and use `failCauseSync` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.failCauseSync
 ```

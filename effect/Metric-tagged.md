@@ -6,8 +6,7 @@ the specified tags have been added to the tags of this metric.
 To import and use `tagged` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.tagged
 ```

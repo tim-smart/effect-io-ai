@@ -5,8 +5,7 @@ Transforms all elements of the `readonlyArray` for as long as the specified func
 To import and use `filterMapWhile` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.filterMapWhile
 ```

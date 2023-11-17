@@ -6,8 +6,7 @@ if the `Iterable` is not empty, otherwise returns `None`.
 To import and use `fromIterable` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.fromIterable
 ```
@@ -15,7 +14,7 @@ Option.fromIterable
 **Example**
 
 ```ts
-import { fromIterable, some, none } from 'effect/Option'
+import { fromIterable, some, none } from "effect/Option"
 
 assert.deepStrictEqual(fromIterable([1, 2, 3]), some(1))
 assert.deepStrictEqual(fromIterable([]), none())

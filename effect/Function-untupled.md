@@ -5,8 +5,7 @@ Inverse function of `tupled`
 To import and use `untupled` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.untupled
 ```
@@ -14,7 +13,7 @@ Function.untupled
 **Example**
 
 ```ts
-import { untupled } from 'effect/Function'
+import { untupled } from "effect/Function"
 
 const getFirst = untupled(<A, B>(tuple: [A, B]): A => tuple[0])
 

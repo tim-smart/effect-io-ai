@@ -6,8 +6,7 @@ number of read locks held by this fiber.
 To import and use `releaseRead` from the "TReentrantLock" module:
 
 ```ts
-import * as TReentrantLock from 'effect/TReentrantLock'
-
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.releaseRead
 ```

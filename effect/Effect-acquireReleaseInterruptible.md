@@ -17,8 +17,7 @@ specified when the scope is closed.
 To import and use `acquireReleaseInterruptible` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.acquireReleaseInterruptible
 ```
@@ -27,9 +26,9 @@ Effect.acquireReleaseInterruptible
 
 ```ts
 export declare const acquireReleaseInterruptible: {
-  <A, R2, X>(release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>): <R, E>(
-    acquire: Effect<R, E, A>
-  ) => Effect<Scope.Scope | R2 | R, E, A>
+  <A, R2, X>(
+    release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
+  ): <R, E>(acquire: Effect<R, E, A>) => Effect<Scope.Scope | R2 | R, E, A>
   <R, E, A, R2, X>(
     acquire: Effect<R, E, A>,
     release: (exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>

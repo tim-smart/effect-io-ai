@@ -5,8 +5,7 @@ Check if a value in an `Option` type meets a certain predicate.
 To import and use `exists` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.exists
 ```
@@ -14,8 +13,8 @@ Option.exists
 **Example**
 
 ```ts
-import { some, none, exists } from 'effect/Option'
-import { pipe } from 'effect/Function'
+import { some, none, exists } from "effect/Option"
+import { pipe } from "effect/Function"
 
 const isEven = (n: number) => n % 2 === 0
 

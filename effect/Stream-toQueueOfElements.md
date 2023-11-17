@@ -8,8 +8,7 @@ Defaults to a capacity of 2.
 To import and use `toQueueOfElements` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toQueueOfElements
 ```
@@ -18,13 +17,14 @@ Stream.toQueueOfElements
 
 ```ts
 export declare const toQueueOfElements: {
-  (options?: { readonly capacity?: number }): <R, E, A>(
+  (options?: {
+    readonly capacity?: number | undefined
+  }): <R, E, A>(
     self: Stream<R, E, A>
   ) => Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>>
-  <R, E, A>(self: Stream<R, E, A>, options?: { readonly capacity?: number }): Effect.Effect<
-    Scope.Scope | R,
-    never,
-    Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>
-  >
+  <R, E, A>(
+    self: Stream<R, E, A>,
+    options?: { readonly capacity?: number | undefined }
+  ): Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>>
 }
 ```

@@ -6,8 +6,7 @@ case this one fails with an error matching one of the given `_tag`'s.
 To import and use `catchTags` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.catchTags
 ```
@@ -18,7 +17,7 @@ Stream.catchTags
 export declare const catchTags: {
   <
     E extends { _tag: string },
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
+    Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
   >(
     cases: Cases
   ): <R, A>(
@@ -47,7 +46,7 @@ export declare const catchTags: {
     R,
     E extends { _tag: string },
     A,
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
+    Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
   >(
     self: Stream<R, E, A>,
     cases: Cases

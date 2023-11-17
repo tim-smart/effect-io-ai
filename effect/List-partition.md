@@ -7,8 +7,7 @@ all elements that did satisfy the specified predicate.
 To import and use `partition` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.partition
 ```

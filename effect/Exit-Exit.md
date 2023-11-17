@@ -10,8 +10,7 @@ There are two possible values for an `Exit<E, A>`:
 To import and use `Exit` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.Exit
 ```

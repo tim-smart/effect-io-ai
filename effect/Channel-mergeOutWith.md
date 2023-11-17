@@ -8,8 +8,7 @@ to merge each completed subchannel's result value. See
 To import and use `mergeOutWith` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mergeOutWith
 ```
@@ -18,19 +17,10 @@ Channel.mergeOutWith
 
 ```ts
 export declare const mergeOutWith: {
-  <OutDone1>(n: number, f: (o1: OutDone1, o2: OutDone1) => OutDone1): <
-    Env,
-    Env1,
-    InErr,
-    InErr1,
-    InElem,
-    InElem1,
-    InDone,
-    InDone1,
-    OutErr,
-    OutErr1,
-    OutElem1
-  >(
+  <OutDone1>(
+    n: number,
+    f: (o1: OutDone1, o2: OutDone1) => OutDone1
+  ): <Env, Env1, InErr, InErr1, InElem, InElem1, InDone, InDone1, OutErr, OutErr1, OutElem1>(
     self: Channel<
       Env,
       InErr,

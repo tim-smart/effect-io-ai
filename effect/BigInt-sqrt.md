@@ -5,8 +5,7 @@ Determines the square root of a given `bigint` safely. Returns `none` if the giv
 To import and use `sqrt` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.sqrt
 ```
@@ -14,8 +13,8 @@ BigInt.sqrt
 **Example**
 
 ```ts
-import { sqrt } from 'effect/BigInt'
-import * as Option from 'effect/Option'
+import { sqrt } from "effect/BigInt"
+import * as Option from "effect/Option"
 
 assert.deepStrictEqual(sqrt(4n), Option.some(2n))
 assert.deepStrictEqual(sqrt(9n), Option.some(3n))

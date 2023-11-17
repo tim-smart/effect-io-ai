@@ -6,8 +6,7 @@ Returns a new workflow that executes this one and captures the changes in
 To import and use `diffFiberRefs` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.diffFiberRefs
 ```
@@ -15,7 +14,5 @@ Effect.diffFiberRefs
 **Signature**
 
 ```ts
-export declare const diffFiberRefs: <R, E, A>(
-  self: Effect<R, E, A>
-) => Effect<R, E, readonly [FiberRefsPatch.FiberRefsPatch, A]>
+export declare const diffFiberRefs: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, [FiberRefsPatch.FiberRefsPatch, A]>
 ```

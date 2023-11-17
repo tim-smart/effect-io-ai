@@ -7,8 +7,7 @@ fails, everything will be rolled back.
 To import and use `ensuring` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.ensuring
 ```

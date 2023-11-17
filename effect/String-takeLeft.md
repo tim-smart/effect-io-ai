@@ -12,8 +12,7 @@ If `n` is a float, it will be rounded down to the nearest integer.
 To import and use `takeLeft` from the "String" module:
 
 ```ts
-import * as String from 'effect/String'
-
+import * as String from "effect/String"
 // Can be accessed like this
 String.takeLeft
 ```
@@ -21,9 +20,9 @@ String.takeLeft
 **Example**
 
 ```ts
-import * as S from 'effect/String'
+import * as S from "effect/String"
 
-assert.deepStrictEqual(S.takeLeft('Hello World', 5), 'Hello')
+assert.deepStrictEqual(S.takeLeft("Hello World", 5), "Hello")
 ```
 
 **Signature**

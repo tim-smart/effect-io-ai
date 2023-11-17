@@ -10,8 +10,7 @@ The size of the underlying pools can be configured per key.
 To import and use `makeWith` from the "KeyedPool" module:
 
 ```ts
-import * as KeyedPool from 'effect/KeyedPool'
-
+import * as KeyedPool from "effect/KeyedPool"
 // Can be accessed like this
 KeyedPool.makeWith
 ```

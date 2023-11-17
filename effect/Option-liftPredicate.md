@@ -6,8 +6,7 @@ if the predicate returns `false`.
 To import and use `liftPredicate` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.liftPredicate
 ```
@@ -15,7 +14,7 @@ Option.liftPredicate
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const getOption = O.liftPredicate((n: number) => n >= 0)
 

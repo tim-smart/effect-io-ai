@@ -5,8 +5,7 @@ Check if a predicate holds true for every `HashSet` element.
 To import and use `every` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.every
 ```

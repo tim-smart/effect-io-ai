@@ -5,8 +5,7 @@ Create a sink which publishes each element to the specified `PubSub`.
 To import and use `fromPubSub` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.fromPubSub
 ```
@@ -16,6 +15,6 @@ Sink.fromPubSub
 ```ts
 export declare const fromPubSub: <In>(
   pubsub: PubSub.PubSub<In>,
-  options?: { readonly shutdown?: boolean }
+  options?: { readonly shutdown?: boolean | undefined }
 ) => Sink<never, never, In, never, void>
 ```

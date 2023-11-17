@@ -10,8 +10,7 @@ See also `Stream.zipRight` for the more common point-wise variant.
 To import and use `crossRight` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.crossRight
 ```

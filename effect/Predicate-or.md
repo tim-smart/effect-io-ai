@@ -5,8 +5,7 @@ Combines two predicates into a new predicate that returns `true` if at least one
 To import and use `or` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.or
 ```
@@ -14,8 +13,8 @@ Predicate.or
 **Example**
 
 ```ts
-import * as P from 'effect/Predicate'
-import * as N from 'effect/Number'
+import * as P from "effect/Predicate"
+import * as N from "effect/Number"
 
 const nonZero = P.or(N.lessThan(0), N.greaterThan(0))
 

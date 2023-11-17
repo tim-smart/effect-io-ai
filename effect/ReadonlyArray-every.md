@@ -5,8 +5,7 @@ Check if a predicate holds true for every `ReadonlyArray` element.
 To import and use `every` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.every
 ```

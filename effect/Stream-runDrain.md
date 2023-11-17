@@ -5,8 +5,7 @@ Runs the stream only for its effects. The emitted elements are discarded.
 To import and use `runDrain` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runDrain
 ```

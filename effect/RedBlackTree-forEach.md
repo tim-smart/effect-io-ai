@@ -5,8 +5,7 @@ Execute the specified function for each node of the tree, in order.
 To import and use `forEach` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.forEach
 ```

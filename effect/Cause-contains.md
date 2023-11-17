@@ -6,8 +6,7 @@ Returns `true` if the `self` cause contains or is equal to `that` cause,
 To import and use `contains` from the "Cause" module:
 
 ```ts
-import * as Cause from 'effect/Cause'
-
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.contains
 ```

@@ -7,8 +7,7 @@ value and the rest of the `Array`.
 To import and use `chop` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.chop
 ```

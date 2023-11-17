@@ -5,8 +5,7 @@ Check if a predicate holds true for every `SortedSet` element.
 To import and use `every` from the "SortedSet" module:
 
 ```ts
-import * as SortedSet from 'effect/SortedSet'
-
+import * as SortedSet from "effect/SortedSet"
 // Can be accessed like this
 SortedSet.every
 ```

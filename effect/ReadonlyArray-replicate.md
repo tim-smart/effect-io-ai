@@ -7,8 +7,7 @@ Return a `NonEmptyArray` containing a value repeated the specified number of tim
 To import and use `replicate` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.replicate
 ```
@@ -16,9 +15,9 @@ ReadonlyArray.replicate
 **Example**
 
 ```ts
-import { replicate } from 'effect/ReadonlyArray'
+import { replicate } from "effect/ReadonlyArray"
 
-assert.deepStrictEqual(replicate('a', 3), ['a', 'a', 'a'])
+assert.deepStrictEqual(replicate("a", 3), ["a", "a", "a"])
 ```
 
 **Signature**

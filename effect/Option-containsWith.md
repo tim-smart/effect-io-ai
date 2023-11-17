@@ -5,8 +5,7 @@ Returns a function that checks if a `Option` contains a given value using a prov
 To import and use `containsWith` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.containsWith
 ```
@@ -14,9 +13,9 @@ Option.containsWith
 **Example**
 
 ```ts
-import { some, none, containsWith } from 'effect/Option'
-import { Equivalence } from 'effect/Number'
-import { pipe } from 'effect/Function'
+import { some, none, containsWith } from "effect/Option"
+import { Equivalence } from "effect/Number"
+import { pipe } from "effect/Function"
 
 assert.deepStrictEqual(pipe(some(2), containsWith(Equivalence)(2)), true)
 assert.deepStrictEqual(pipe(some(1), containsWith(Equivalence)(2)), false)

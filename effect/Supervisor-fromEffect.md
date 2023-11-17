@@ -5,8 +5,7 @@ Creates a new supervisor that constantly yields effect when polled
 To import and use `fromEffect` from the "Supervisor" module:
 
 ```ts
-import * as Supervisor from 'effect/Supervisor'
-
+import * as Supervisor from "effect/Supervisor"
 // Can be accessed like this
 Supervisor.fromEffect
 ```

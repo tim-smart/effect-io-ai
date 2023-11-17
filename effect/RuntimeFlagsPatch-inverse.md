@@ -6,8 +6,7 @@ specified by the provided `RuntimeFlagsPatch`.
 To import and use `inverse` from the "RuntimeFlagsPatch" module:
 
 ```ts
-import * as RuntimeFlagsPatch from 'effect/RuntimeFlagsPatch'
-
+import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.inverse
 ```

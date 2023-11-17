@@ -5,8 +5,7 @@ Makes a new `TSet` that is initialized with specified values.
 To import and use `make` from the "TSet" module:
 
 ```ts
-import * as TSet from 'effect/TSet'
-
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.make
 ```

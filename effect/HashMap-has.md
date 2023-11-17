@@ -5,8 +5,7 @@ Checks if the specified key has an entry in the `HashMap`.
 To import and use `has` from the "HashMap" module:
 
 ```ts
-import * as HashMap from 'effect/HashMap'
-
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.has
 ```

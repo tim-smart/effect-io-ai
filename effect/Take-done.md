@@ -5,8 +5,7 @@ Transforms a `Take<E, A>` to an `Effect<never, E, A>`.
 To import and use `done` from the "Take" module:
 
 ```ts
-import * as Take from 'effect/Take'
-
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.done
 ```

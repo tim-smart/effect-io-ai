@@ -5,8 +5,7 @@ Maps the success values of this stream to the specified constant value.
 To import and use `as` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.as
 ```

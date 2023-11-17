@@ -5,8 +5,7 @@ Adds a rest element to the end of a tuple, or throws an exception if the rest el
 To import and use `appendRestElement` from the "AST" module:
 
 ```ts
-import * as AST from '@effect/schema/AST'
-
+import * as AST from "@effect/schema/AST"
 // Can be accessed like this
 AST.appendRestElement
 ```

@@ -5,8 +5,7 @@ Flat maps a list using the specified function.
 To import and use `flatMap` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.flatMap
 ```

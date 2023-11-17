@@ -9,8 +9,7 @@ Supports multiple arguments, a single argument tuple / array or record / struct.
 To import and use `allWith` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.allWith
 ```
@@ -21,9 +20,9 @@ Effect.allWith
 export declare const allWith: <
   O extends {
     readonly concurrency?: Concurrency | undefined
-    readonly batching?: boolean | 'inherit' | undefined
+    readonly batching?: boolean | "inherit" | undefined
     readonly discard?: boolean | undefined
-    readonly mode?: 'default' | 'validate' | 'either' | undefined
+    readonly mode?: "default" | "validate" | "either" | undefined
   }
 >(
   options?: O | undefined

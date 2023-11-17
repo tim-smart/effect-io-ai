@@ -5,8 +5,7 @@ Returns the number of elements the `TPubSub` can hold.
 To import and use `capacity` from the "TPubSub" module:
 
 ```ts
-import * as TPubSub from 'effect/TPubSub'
-
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.capacity
 ```

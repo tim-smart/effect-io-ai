@@ -5,8 +5,7 @@ Uses the pseudo-random number generator to shuffle the specified iterable.
 To import and use `shuffle` from the "TRandom" module:
 
 ```ts
-import * as TRandom from 'effect/TRandom'
-
+import * as TRandom from "effect/TRandom"
 // Can be accessed like this
 TRandom.shuffle
 ```

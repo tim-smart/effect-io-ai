@@ -6,8 +6,7 @@ input `Iterable` is short, excess elements of the longer `Iterable` are discarde
 To import and use `zipWith` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.zipWith
 ```

@@ -5,8 +5,7 @@ Returns the wrapped value if it's a `Right` or a default value if is a `Left`.
 To import and use `getOrElse` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrElse
 ```
@@ -14,15 +13,15 @@ Either.getOrElse
 **Example**
 
 ```ts
-import * as Either from 'effect/Either'
+import * as Either from "effect/Either"
 
 assert.deepStrictEqual(
-  Either.getOrElse(Either.right(1), (error) => error + '!'),
+  Either.getOrElse(Either.right(1), (error) => error + "!"),
   1
 )
 assert.deepStrictEqual(
-  Either.getOrElse(Either.left('not a number'), (error) => error + '!'),
-  'not a number!'
+  Either.getOrElse(Either.left("not a number"), (error) => error + "!"),
+  "not a number!"
 )
 ```
 

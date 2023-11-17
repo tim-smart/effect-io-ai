@@ -5,8 +5,7 @@ Disables the specified `RuntimeFlag`.
 To import and use `disable` from the "RuntimeFlags" module:
 
 ```ts
-import * as RuntimeFlags from 'effect/RuntimeFlags'
-
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.disable
 ```

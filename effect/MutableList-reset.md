@@ -5,8 +5,7 @@ Removes all elements from the doubly-linked list.
 To import and use `reset` from the "MutableList" module:
 
 ```ts
-import * as MutableList from 'effect/MutableList'
-
+import * as MutableList from "effect/MutableList"
 // Can be accessed like this
 MutableList.reset
 ```

@@ -5,8 +5,7 @@ Logs the specified message or cause at the Warning log level.
 To import and use `logWarning` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.logWarning
 ```

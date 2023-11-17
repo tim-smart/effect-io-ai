@@ -6,8 +6,7 @@ requests.
 To import and use `make` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.make
 ```

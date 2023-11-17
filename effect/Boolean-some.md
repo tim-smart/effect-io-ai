@@ -5,8 +5,7 @@ This utility function is used to check if at least one of the elements in a coll
 To import and use `some` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.some
 ```
@@ -14,7 +13,7 @@ Boolean.some
 **Example**
 
 ```ts
-import { some } from 'effect/Boolean'
+import { some } from "effect/Boolean"
 
 assert.deepStrictEqual(some([true, false, true]), true)
 assert.deepStrictEqual(some([false, false, false]), false)

@@ -5,8 +5,7 @@ Folds the specified cause into a value of type `Z`.
 To import and use `match` from the "Cause" module:
 
 ```ts
-import * as Cause from 'effect/Cause'
-
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.match
 ```

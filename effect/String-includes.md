@@ -6,8 +6,7 @@ greater than or equal to `position`; otherwise, returns `false`.
 To import and use `includes` from the "String" module:
 
 ```ts
-import * as String from 'effect/String'
-
+import * as String from "effect/String"
 // Can be accessed like this
 String.includes
 ```

@@ -6,8 +6,7 @@ if there is not a value in the queue.
 To import and use `peekOption` from the "TPriorityQueue" module:
 
 ```ts
-import * as TPriorityQueue from 'effect/TPriorityQueue'
-
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.peekOption
 ```

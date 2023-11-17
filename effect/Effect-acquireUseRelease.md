@@ -25,8 +25,7 @@ and ignored.
 To import and use `acquireUseRelease` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.acquireUseRelease
 ```

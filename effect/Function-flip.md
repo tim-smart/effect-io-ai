@@ -5,8 +5,7 @@ Reverses the order of arguments for a curried function.
 To import and use `flip` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.flip
 ```
@@ -14,11 +13,11 @@ Function.flip
 **Example**
 
 ```ts
-import { flip } from 'effect/Function'
+import { flip } from "effect/Function"
 
 const f = (a: number) => (b: string) => a - b.length
 
-assert.deepStrictEqual(flip(f)('aaa')(2), -1)
+assert.deepStrictEqual(flip(f)("aaa")(2), -1)
 ```
 
 **Signature**

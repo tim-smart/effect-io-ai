@@ -6,8 +6,7 @@ be used to execute effects.
 To import and use `toRuntime` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.toRuntime
 ```

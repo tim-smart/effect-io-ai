@@ -5,8 +5,7 @@ Merges all the layers together in parallel.
 To import and use `mergeAll` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.mergeAll
 ```

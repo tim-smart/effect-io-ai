@@ -6,8 +6,7 @@ or return `None` if the index is out of bounds.
 To import and use `modifyOption` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.modifyOption
 ```

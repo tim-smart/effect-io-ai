@@ -5,8 +5,7 @@ Returns a new schedule that folds over the outputs of this one.
 To import and use `reduce` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.reduce
 ```

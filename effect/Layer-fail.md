@@ -5,8 +5,7 @@ Constructs a layer that fails with the specified error.
 To import and use `fail` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.fail
 ```

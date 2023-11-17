@@ -7,8 +7,7 @@ returned.
 To import and use `make` from the "ScheduleInterval" module:
 
 ```ts
-import * as ScheduleInterval from 'effect/ScheduleInterval'
-
+import * as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.make
 ```

@@ -7,8 +7,7 @@ the `Take<E, A>`. Error from stream when pulling is converted to
 To import and use `fromEffect` from the "Take" module:
 
 ```ts
-import * as Take from 'effect/Take'
-
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.fromEffect
 ```

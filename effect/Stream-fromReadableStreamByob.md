@@ -7,8 +7,7 @@ See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader.
 To import and use `fromReadableStreamByob` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromReadableStreamByob
 ```

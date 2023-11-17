@@ -7,8 +7,7 @@ If a default error is sufficient for your use case and you don't need to configu
 To import and use `getOrThrowWith` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrThrowWith
 ```
@@ -16,13 +15,13 @@ Option.getOrThrowWith
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 assert.deepStrictEqual(
-  O.getOrThrowWith(O.some(1), () => new Error('Unexpected None')),
+  O.getOrThrowWith(O.some(1), () => new Error("Unexpected None")),
   1
 )
-assert.throws(() => O.getOrThrowWith(O.none(), () => new Error('Unexpected None')))
+assert.throws(() => O.getOrThrowWith(O.none(), () => new Error("Unexpected None")))
 ```
 
 **Signature**

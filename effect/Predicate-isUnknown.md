@@ -5,8 +5,7 @@ A guard that always succeeds.
 To import and use `isUnknown` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isUnknown
 ```
@@ -14,7 +13,7 @@ Predicate.isUnknown
 **Example**
 
 ```ts
-import { isUnknown } from 'effect/Predicate'
+import { isUnknown } from "effect/Predicate"
 
 assert.deepStrictEqual(isUnknown(null), true)
 assert.deepStrictEqual(isUnknown(undefined), true)

@@ -5,8 +5,7 @@ Returns the size of the tree.
 To import and use `size` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.size
 ```

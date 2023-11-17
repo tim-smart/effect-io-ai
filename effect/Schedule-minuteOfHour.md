@@ -8,8 +8,7 @@ NOTE: `minute` parameter is validated lazily. Must be in range 0...59.
 To import and use `minuteOfHour` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.minuteOfHour
 ```

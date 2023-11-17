@@ -5,8 +5,7 @@ An effect that polls a value that may be fed to the metric.
 To import and use `poll` from the "MetricPolling" module:
 
 ```ts
-import * as MetricPolling from 'effect/MetricPolling'
-
+import * as MetricPolling from "effect/MetricPolling"
 // Can be accessed like this
 MetricPolling.poll
 ```

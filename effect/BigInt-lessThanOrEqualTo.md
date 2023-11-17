@@ -5,8 +5,7 @@ Returns a function that checks if a given `bigint` is less than or equal to the 
 To import and use `lessThanOrEqualTo` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.lessThanOrEqualTo
 ```
@@ -14,7 +13,7 @@ BigInt.lessThanOrEqualTo
 **Example**
 
 ```ts
-import { lessThanOrEqualTo } from 'effect/BigInt'
+import { lessThanOrEqualTo } from "effect/BigInt"
 
 assert.deepStrictEqual(lessThanOrEqualTo(2n, 3n), true)
 assert.deepStrictEqual(lessThanOrEqualTo(3n, 3n), true)

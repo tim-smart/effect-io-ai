@@ -6,8 +6,7 @@ specified function to convert the `E` into a defect.
 To import and use `orDieWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.orDieWith
 ```

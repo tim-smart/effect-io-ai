@@ -5,8 +5,7 @@ Constructs `Intervals` from the specified `Iterable<Interval>`.
 To import and use `fromIterable` from the "ScheduleIntervals" module:
 
 ```ts
-import * as ScheduleIntervals from 'effect/ScheduleIntervals'
-
+import * as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.fromIterable
 ```

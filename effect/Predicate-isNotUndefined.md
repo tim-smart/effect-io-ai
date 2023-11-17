@@ -5,8 +5,7 @@ Tests if a value is not `undefined`.
 To import and use `isNotUndefined` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isNotUndefined
 ```
@@ -14,10 +13,10 @@ Predicate.isNotUndefined
 **Example**
 
 ```ts
-import { isNotUndefined } from 'effect/Predicate'
+import { isNotUndefined } from "effect/Predicate"
 
 assert.deepStrictEqual(isNotUndefined(null), true)
-assert.deepStrictEqual(isNotUndefined('undefined'), true)
+assert.deepStrictEqual(isNotUndefined("undefined"), true)
 
 assert.deepStrictEqual(isNotUndefined(undefined), false)
 ```

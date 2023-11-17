@@ -6,8 +6,7 @@ than or equal to min.
 To import and use `forEachBetween` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.forEachBetween
 ```
@@ -16,9 +15,11 @@ RedBlackTree.forEachBetween
 
 ```ts
 export declare const forEachBetween: {
-  <K, V>(options: { readonly min: K; readonly max: K; readonly body: (key: K, value: V) => void }): (
-    self: RedBlackTree<K, V>
-  ) => void
+  <K, V>(options: {
+    readonly min: K
+    readonly max: K
+    readonly body: (key: K, value: V) => void
+  }): (self: RedBlackTree<K, V>) => void
   <K, V>(
     self: RedBlackTree<K, V>,
     options: { readonly min: K; readonly max: K; readonly body: (key: K, value: V) => void }

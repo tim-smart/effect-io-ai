@@ -6,8 +6,7 @@ specified `step` function.
 To import and use `makeWithState` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.makeWithState
 ```

@@ -7,8 +7,7 @@ structure of type `S`, until `max` worth of elements (determined by the
 To import and use `foldWeightedEffect` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldWeightedEffect
 ```

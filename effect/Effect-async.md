@@ -15,8 +15,7 @@ provided to allow for better diagnostics.
 To import and use `async` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.async
 ```

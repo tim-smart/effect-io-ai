@@ -6,8 +6,7 @@ If the function returns `Some`, the key-value pair is included in the output rec
 To import and use `filterMap` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.filterMap
 ```
@@ -15,8 +14,8 @@ ReadonlyRecord.filterMap
 **Example**
 
 ```ts
-import { filterMap } from 'effect/ReadonlyRecord'
-import { some, none } from 'effect/Option'
+import { filterMap } from "effect/ReadonlyRecord"
+import { some, none } from "effect/Option"
 
 const x = { a: 1, b: 2, c: 3 }
 const f = (a: number, key: string) => (a > 2 ? some(a * 2) : none())

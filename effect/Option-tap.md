@@ -8,8 +8,7 @@ This function is useful for performing additional computations on the value of t
 To import and use `tap` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.tap
 ```
@@ -17,7 +16,7 @@ Option.tap
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const getInteger = (n: number) => (Number.isInteger(n) ? O.some(n) : O.none())
 

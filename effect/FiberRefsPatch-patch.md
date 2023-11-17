@@ -6,8 +6,7 @@ of `FiberRef` values.
 To import and use `patch` from the "FiberRefsPatch" module:
 
 ```ts
-import * as FiberRefsPatch from 'effect/FiberRefsPatch'
-
+import * as FiberRefsPatch from "effect/FiberRefsPatch"
 // Can be accessed like this
 FiberRefsPatch.patch
 ```

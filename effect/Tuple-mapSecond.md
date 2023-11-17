@@ -5,8 +5,7 @@ Transforms the second component of a tuple using a given function.
 To import and use `mapSecond` from the "Tuple" module:
 
 ```ts
-import * as Tuple from 'effect/Tuple'
-
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.mapSecond
 ```
@@ -14,11 +13,11 @@ Tuple.mapSecond
 **Example**
 
 ```ts
-import { mapSecond } from 'effect/Tuple'
+import { mapSecond } from "effect/Tuple"
 
 assert.deepStrictEqual(
-  mapSecond(['hello', 42], (n) => n.toString()),
-  ['hello', '42']
+  mapSecond(["hello", 42], (n) => n.toString()),
+  ["hello", "42"]
 )
 ```
 

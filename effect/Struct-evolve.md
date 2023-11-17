@@ -6,8 +6,7 @@ If no transformation function is provided for a key, it will return the origiona
 To import and use `evolve` from the "Struct" module:
 
 ```ts
-import * as Struct from 'effect/Struct'
-
+import * as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.evolve
 ```
@@ -15,15 +14,15 @@ Struct.evolve
 **Example**
 
 ```ts
-import { evolve } from 'effect/Struct'
-import { pipe } from 'effect/Function'
+import { evolve } from "effect/Struct"
+import { pipe } from "effect/Function"
 
 assert.deepStrictEqual(
   pipe(
-    { a: 'a', b: 1, c: 3 },
+    { a: "a", b: 1, c: 3 },
     evolve({
       a: (a) => a.length,
-      b: (b) => b * 2,
+      b: (b) => b * 2
     })
   ),
   { a: 1, b: 2, c: 3 }
@@ -34,11 +33,14 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const evolve: {
-  <O, T extends Partial<{ [K in keyof O]: (a: O[K]) => unknown }>>(t: T): (obj: O) => {
+  <O, T extends Partial<{ [K in keyof O]: (a: O[K]) => unknown }>>(
+    t: T
+  ): (obj: O) => {
     [K in keyof O]: K extends keyof T ? (T[K] extends (...a: any) => any ? ReturnType<T[K]> : O[K]) : O[K]
   }
-  <O, T extends Partial<{ [K in keyof O]: (a: O[K]) => unknown }>>(obj: O, t: T): {
-    [K in keyof O]: K extends keyof T ? (T[K] extends (...a: any) => any ? ReturnType<T[K]> : O[K]) : O[K]
-  }
+  <O, T extends Partial<{ [K in keyof O]: (a: O[K]) => unknown }>>(
+    obj: O,
+    t: T
+  ): { [K in keyof O]: K extends keyof T ? (T[K] extends (...a: any) => any ? ReturnType<T[K]> : O[K]) : O[K] }
 }
 ```

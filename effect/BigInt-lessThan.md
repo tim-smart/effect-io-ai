@@ -5,8 +5,7 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 To import and use `lessThan` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.lessThan
 ```
@@ -14,7 +13,7 @@ BigInt.lessThan
 **Example**
 
 ```ts
-import { lessThan } from 'effect/BigInt'
+import { lessThan } from "effect/BigInt"
 
 assert.deepStrictEqual(lessThan(2n, 3n), true)
 assert.deepStrictEqual(lessThan(3n, 3n), false)

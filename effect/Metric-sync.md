@@ -5,8 +5,7 @@ Creates a metric that ignores input and produces constant output.
 To import and use `sync` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.sync
 ```

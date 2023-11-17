@@ -6,8 +6,7 @@ followed by `that` patch.
 To import and use `andThen` from the "RuntimeFlagsPatch" module:
 
 ```ts
-import * as RuntimeFlagsPatch from 'effect/RuntimeFlagsPatch'
-
+import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.andThen
 ```

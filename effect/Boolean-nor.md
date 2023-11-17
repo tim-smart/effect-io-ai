@@ -5,8 +5,7 @@ Combines two booleans using NOR: `!(self || that)`.
 To import and use `nor` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.nor
 ```
@@ -14,7 +13,7 @@ Boolean.nor
 **Example**
 
 ```ts
-import { nor } from 'effect/Boolean'
+import { nor } from "effect/Boolean"
 
 assert.deepStrictEqual(nor(true, true), false)
 assert.deepStrictEqual(nor(true, false), false)

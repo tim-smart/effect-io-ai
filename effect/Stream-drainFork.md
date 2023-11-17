@@ -7,8 +7,7 @@ If `other` fails, this stream will fail with that error.
 To import and use `drainFork` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.drainFork
 ```

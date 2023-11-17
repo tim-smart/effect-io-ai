@@ -9,8 +9,7 @@ This function essentially runs sinks in sequence.
 To import and use `flatMap` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.flatMap
 ```
@@ -19,9 +18,9 @@ Sink.flatMap
 
 ```ts
 export declare const flatMap: {
-  <R1, E1, In, In1 extends In, L, L1, Z, Z1>(f: (z: Z) => Sink<R1, E1, In1, L1, Z1>): <R, E>(
-    self: Sink<R, E, In, L, Z>
-  ) => Sink<R1 | R, E1 | E, In & In1, L | L1, Z1>
+  <R1, E1, In, In1 extends In, L, L1, Z, Z1>(
+    f: (z: Z) => Sink<R1, E1, In1, L1, Z1>
+  ): <R, E>(self: Sink<R, E, In, L, Z>) => Sink<R1 | R, E1 | E, In & In1, L | L1, Z1>
   <R, E, R1, E1, In, In1 extends In, L, L1, Z, Z1>(
     self: Sink<R, E, In, L, Z>,
     f: (z: Z) => Sink<R1, E1, In1, L1, Z1>

@@ -5,8 +5,7 @@ Runs the specified workflow with a lock.
 To import and use `withLock` from the "TReentrantLock" module:
 
 ```ts
-import * as TReentrantLock from 'effect/TReentrantLock'
-
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.withLock
 ```

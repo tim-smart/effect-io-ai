@@ -7,8 +7,7 @@ Drop a max number of elements from the end of an `Iterable`, creating a new `Arr
 To import and use `dropRight` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.dropRight
 ```

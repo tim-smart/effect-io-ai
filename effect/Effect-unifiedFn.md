@@ -5,8 +5,7 @@ Used to unify functions that would otherwise return `Effect<A, B, C> | Effect<D,
 To import and use `unifiedFn` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.unifiedFn
 ```

@@ -5,8 +5,7 @@ Iterate over the `Iterable` applying `f`.
 To import and use `forEach` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.forEach
 ```

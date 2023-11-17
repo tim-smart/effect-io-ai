@@ -11,8 +11,7 @@ desireable to preserve the instance across reloads.
 To import and use `Tag` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.Tag
 ```
@@ -20,10 +19,10 @@ Context.Tag
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
+import * as Context from "effect/Context"
 
 assert.strictEqual(Context.Tag() === Context.Tag(), false)
-assert.strictEqual(Context.Tag('PORT') === Context.Tag('PORT'), true)
+assert.strictEqual(Context.Tag("PORT") === Context.Tag("PORT"), true)
 ```
 
 **Signature**

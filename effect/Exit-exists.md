@@ -6,8 +6,7 @@ Executes the predicate on the value of the specified exit if it is a
 To import and use `exists` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.exists
 ```

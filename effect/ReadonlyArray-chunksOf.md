@@ -13,8 +13,7 @@ whenever `n` evenly divides the length of `self`.
 To import and use `chunksOf` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.chunksOf
 ```

@@ -6,8 +6,7 @@ polls for, updates, and produces the outputs of all individual metrics.
 To import and use `collectAll` from the "MetricPolling" module:
 
 ```ts
-import * as MetricPolling from 'effect/MetricPolling'
-
+import * as MetricPolling from "effect/MetricPolling"
 // Can be accessed like this
 MetricPolling.collectAll
 ```

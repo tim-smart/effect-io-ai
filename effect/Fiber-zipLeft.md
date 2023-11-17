@@ -5,8 +5,7 @@ Same as `zip` but discards the output of that `Fiber`.
 To import and use `zipLeft` from the "Fiber" module:
 
 ```ts
-import * as Fiber from 'effect/Fiber'
-
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.zipLeft
 ```

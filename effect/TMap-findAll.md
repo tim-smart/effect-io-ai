@@ -6,8 +6,7 @@ the provided function to extract values out them.
 To import and use `findAll` from the "TMap" module:
 
 ```ts
-import * as TMap from 'effect/TMap'
-
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.findAll
 ```

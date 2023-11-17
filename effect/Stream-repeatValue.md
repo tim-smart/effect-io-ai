@@ -5,8 +5,7 @@ Repeats the provided value infinitely.
 To import and use `repeatValue` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.repeatValue
 ```

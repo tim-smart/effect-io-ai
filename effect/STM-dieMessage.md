@@ -6,8 +6,7 @@ contains the specified message.
 To import and use `dieMessage` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.dieMessage
 ```

@@ -5,8 +5,7 @@ This API is useful for lifting a function that returns `null` or `undefined` int
 To import and use `liftNullable` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.liftNullable
 ```
@@ -14,7 +13,7 @@ Option.liftNullable
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const parse = (s: string): number | undefined => {
   const n = parseFloat(s)
@@ -23,8 +22,8 @@ const parse = (s: string): number | undefined => {
 
 const parseOption = O.liftNullable(parse)
 
-assert.deepStrictEqual(parseOption('1'), O.some(1))
-assert.deepStrictEqual(parseOption('not a number'), O.none())
+assert.deepStrictEqual(parseOption("1"), O.some(1))
+assert.deepStrictEqual(parseOption("not a number"), O.none())
 ```
 
 **Signature**

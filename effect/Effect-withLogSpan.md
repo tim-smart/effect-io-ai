@@ -5,8 +5,7 @@ Adjusts the label for the current logging span.
 To import and use `withLogSpan` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withLogSpan
 ```

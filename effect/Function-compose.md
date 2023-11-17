@@ -6,8 +6,7 @@ The result is obtained by first applying the `ab` function to `a` and then apply
 To import and use `compose` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.compose
 ```
@@ -15,7 +14,7 @@ Function.compose
 **Example**
 
 ```ts
-import { compose } from 'effect/Function'
+import { compose } from "effect/Function"
 
 const increment = (n: number) => n + 1
 const square = (n: number) => n * n

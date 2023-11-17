@@ -6,10 +6,29 @@ evaluated multiple times.
 To import and use `once` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.once
+```
+
+**Example**
+
+```ts
+import * as Effect from "effect/Effect"
+import * as Console from "effect/Console"
+
+const program = Effect.gen(function* (_) {
+  const twice = Console.log("twice")
+  yield* _(twice, Effect.repeatN(1))
+  const once = yield* _(Console.log("once"), Effect.once)
+  yield* _(once, Effect.repeatN(1))
+})
+
+Effect.runFork(program)
+// Output:
+// twice
+// twice
+// once
 ```
 
 **Signature**

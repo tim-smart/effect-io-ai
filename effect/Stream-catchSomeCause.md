@@ -7,8 +7,7 @@ including interruption if the stream is uninterruptible.
 To import and use `catchSomeCause` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.catchSomeCause
 ```
@@ -17,9 +16,9 @@ Stream.catchSomeCause
 
 ```ts
 export declare const catchSomeCause: {
-  <E, R2, E2, A2>(pf: (cause: Cause.Cause<E>) => Option.Option<Stream<R2, E2, A2>>): <R, A>(
-    self: Stream<R, E, A>
-  ) => Stream<R2 | R, E | E2, A2 | A>
+  <E, R2, E2, A2>(
+    pf: (cause: Cause.Cause<E>) => Option.Option<Stream<R2, E2, A2>>
+  ): <R, A>(self: Stream<R, E, A>) => Stream<R2 | R, E | E2, A2 | A>
   <R, A, E, R2, E2, A2>(
     self: Stream<R, E, A>,
     pf: (cause: Cause.Cause<E>) => Option.Option<Stream<R2, E2, A2>>

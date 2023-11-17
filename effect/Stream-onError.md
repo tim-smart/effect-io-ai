@@ -9,8 +9,7 @@ effect will not be interrupted.
 To import and use `onError` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.onError
 ```
@@ -19,13 +18,12 @@ Stream.onError
 
 ```ts
 export declare const onError: {
-  <E, R2, _>(cleanup: (cause: Cause.Cause<E>) => Effect.Effect<R2, never, _>): <R, A>(
-    self: Stream<R, E, A>
-  ) => Stream<R2 | R, E, A>
-  <R, A, E, R2, _>(self: Stream<R, E, A>, cleanup: (cause: Cause.Cause<E>) => Effect.Effect<R2, never, _>): Stream<
-    R | R2,
-    E,
-    A
-  >
+  <E, R2, _>(
+    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<R2, never, _>
+  ): <R, A>(self: Stream<R, E, A>) => Stream<R2 | R, E, A>
+  <R, A, E, R2, _>(
+    self: Stream<R, E, A>,
+    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<R2, never, _>
+  ): Stream<R | R2, E, A>
 }
 ```

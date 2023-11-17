@@ -7,8 +7,7 @@ execution, whether by success, failure, or interruption.
 To import and use `scoped` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.scoped
 ```

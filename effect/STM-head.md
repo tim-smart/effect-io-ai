@@ -6,8 +6,7 @@ non-empty or fails with the error `None` if the list is empty.
 To import and use `head` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.head
 ```

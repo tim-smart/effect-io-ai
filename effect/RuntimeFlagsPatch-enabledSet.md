@@ -6,8 +6,7 @@ enabled by the specified `RuntimeFlagsPatch`.
 To import and use `enabledSet` from the "RuntimeFlagsPatch" module:
 
 ```ts
-import * as RuntimeFlagsPatch from 'effect/RuntimeFlagsPatch'
-
+import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.enabledSet
 ```

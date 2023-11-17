@@ -7,8 +7,7 @@ each time.
 To import and use `subscribe` from the "PubSub" module:
 
 ```ts
-import * as PubSub from 'effect/PubSub'
-
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.subscribe
 ```

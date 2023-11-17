@@ -5,8 +5,7 @@ Transforms `Take<E, A>` to `Take<E, B>` by applying function `f`.
 To import and use `map` from the "Take" module:
 
 ```ts
-import * as Take from 'effect/Take'
-
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.map
 ```

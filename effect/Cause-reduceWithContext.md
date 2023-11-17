@@ -6,8 +6,7 @@ Also allows for accessing the provided context during reduction.
 To import and use `reduceWithContext` from the "Cause" module:
 
 ```ts
-import * as Cause from 'effect/Cause'
-
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.reduceWithContext
 ```

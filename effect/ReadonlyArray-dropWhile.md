@@ -5,8 +5,7 @@ Remove the longest initial subarray for which all element satisfy the specified 
 To import and use `dropWhile` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.dropWhile
 ```

@@ -5,8 +5,7 @@ Merges two object where the keys of the right object take precedence in the case
 To import and use `MergeRight` from the "Types" module:
 
 ```ts
-import * as Types from 'effect/Types'
-
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.MergeRight
 ```
@@ -14,6 +13,6 @@ Types.MergeRight
 **Example**
 
 ```ts
-import * as Types from 'effect/Types'
+import * as Types from "effect/Types"
 type MergeRight = Types.MergeRight<{ a: number; b: number }, { a: string }> // { a: string; b: number; }
 ```

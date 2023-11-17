@@ -5,8 +5,7 @@ Get the index of the first entry in the array matching a predicate.
 To import and use `findFirstIndexWhere` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstIndexWhere
 ```

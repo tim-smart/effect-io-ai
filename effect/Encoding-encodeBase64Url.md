@@ -5,8 +5,7 @@ Encodes the given value into a base64 (URL) `string`.
 To import and use `encodeBase64Url` from the "Encoding" module:
 
 ```ts
-import * as Encoding from 'effect/Encoding'
-
+import * as Encoding from "effect/Encoding"
 // Can be accessed like this
 Encoding.encodeBase64Url
 ```

@@ -7,8 +7,7 @@ for a constructor, `Hash`, and `Equal`.
 To import and use `Case` from the "Data" module:
 
 ```ts
-import * as Data from 'effect/Data'
-
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.Case
 ```

@@ -5,8 +5,7 @@ Returns whether this transactional effect is a failure.
 To import and use `isFailure` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.isFailure
 ```

@@ -10,8 +10,7 @@ related to fiber shutdown.
 To import and use `interruptible` from the "RuntimeFlags" module:
 
 ```ts
-import * as RuntimeFlags from 'effect/RuntimeFlags'
-
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.interruptible
 ```

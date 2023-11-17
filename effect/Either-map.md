@@ -5,8 +5,7 @@ Maps the `Right` side of an `Either` value to a new `Either` value.
 To import and use `map` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.map
 ```

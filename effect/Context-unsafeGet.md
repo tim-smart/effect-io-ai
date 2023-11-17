@@ -8,8 +8,7 @@ For a safer version see {@link getOption}.
 To import and use `unsafeGet` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.unsafeGet
 ```
@@ -17,7 +16,7 @@ Context.unsafeGet
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
+import * as Context from "effect/Context"
 
 const Port = Context.Tag<{ PORT: number }>()
 const Timeout = Context.Tag<{ TIMEOUT: number }>()

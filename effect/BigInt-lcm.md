@@ -5,8 +5,7 @@ Determines the least common multiple of two `bigint`s.
 To import and use `lcm` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.lcm
 ```
@@ -14,7 +13,7 @@ BigInt.lcm
 **Example**
 
 ```ts
-import { lcm } from 'effect/BigInt'
+import { lcm } from "effect/BigInt"
 
 assert.deepStrictEqual(lcm(2n, 3n), 6n)
 assert.deepStrictEqual(lcm(2n, 4n), 4n)

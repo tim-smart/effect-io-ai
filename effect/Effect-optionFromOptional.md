@@ -6,8 +6,7 @@ Wraps the success value of this effect with `Option.some`, and maps
 To import and use `optionFromOptional` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.optionFromOptional
 ```

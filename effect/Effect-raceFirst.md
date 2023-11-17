@@ -14,8 +14,7 @@ in the background.
 To import and use `raceFirst` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.raceFirst
 ```

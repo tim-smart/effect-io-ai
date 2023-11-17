@@ -8,8 +8,7 @@ cached value before the `timeToLive` duration expires.
 To import and use `cachedInvalidateWithTTL` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.cachedInvalidateWithTTL
 ```
@@ -18,13 +17,12 @@ Effect.cachedInvalidateWithTTL
 
 ```ts
 export declare const cachedInvalidateWithTTL: {
-  (timeToLive: Duration.DurationInput): <R, E, A>(
-    self: Effect<R, E, A>
-  ) => Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
-  <R, E, A>(self: Effect<R, E, A>, timeToLive: Duration.DurationInput): Effect<
-    R,
-    never,
-    [Effect<never, E, A>, Effect<never, never, void>]
-  >
+  (
+    timeToLive: Duration.DurationInput
+  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
+  <R, E, A>(
+    self: Effect<R, E, A>,
+    timeToLive: Duration.DurationInput
+  ): Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
 }
 ```

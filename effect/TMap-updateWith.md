@@ -9,8 +9,7 @@ updated value or `None` if the value was removed from the map.
 To import and use `updateWith` from the "TMap" module:
 
 ```ts
-import * as TMap from 'effect/TMap'
-
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.updateWith
 ```
@@ -19,13 +18,14 @@ TMap.updateWith
 
 ```ts
 export declare const updateWith: {
-  <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (
-    self: TMap<K, V>
-  ) => STM.STM<never, never, Option.Option<V>>
-  <K, V>(self: TMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): STM.STM<
-    never,
-    never,
-    Option.Option<V>
-  >
+  <K, V>(
+    key: K,
+    f: (value: Option.Option<V>) => Option.Option<V>
+  ): (self: TMap<K, V>) => STM.STM<never, never, Option.Option<V>>
+  <K, V>(
+    self: TMap<K, V>,
+    key: K,
+    f: (value: Option.Option<V>) => Option.Option<V>
+  ): STM.STM<never, never, Option.Option<V>>
 }
 ```

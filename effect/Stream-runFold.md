@@ -6,8 +6,7 @@ the stream to a value of type `S`.
 To import and use `runFold` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runFold
 ```

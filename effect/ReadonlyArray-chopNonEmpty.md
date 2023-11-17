@@ -7,8 +7,7 @@ value and the tail of the `NonEmptyReadonlyArray`.
 To import and use `chopNonEmpty` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.chopNonEmpty
 ```

@@ -5,8 +5,7 @@ Returns a layer with its error channel mapped using the specified function.
 To import and use `mapError` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.mapError
 ```

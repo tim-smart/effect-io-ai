@@ -5,8 +5,7 @@ Create a non-empty record from a single element.
 To import and use `singleton` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.singleton
 ```

@@ -5,8 +5,7 @@ Returns an `IterableIterator` of the keys within the `HashMap`.
 To import and use `keys` from the "HashMap" module:
 
 ```ts
-import * as HashMap from 'effect/HashMap'
-
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.keys
 ```

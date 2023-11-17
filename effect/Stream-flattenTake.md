@@ -6,8 +6,7 @@ by failing with `None`.
 To import and use `flattenTake` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.flattenTake
 ```

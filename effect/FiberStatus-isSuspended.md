@@ -6,8 +6,7 @@ otherwise.
 To import and use `isSuspended` from the "FiberStatus" module:
 
 ```ts
-import * as FiberStatus from 'effect/FiberStatus'
-
+import * as FiberStatus from "effect/FiberStatus"
 // Can be accessed like this
 FiberStatus.isSuspended
 ```

@@ -5,8 +5,7 @@ Group equal, consecutive elements of a `NonEmptyReadonlyArray` into `NonEmptyArr
 To import and use `groupWith` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.groupWith
 ```

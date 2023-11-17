@@ -7,8 +7,7 @@ list must correspond to the item at the same index in the request list.
 To import and use `fromFunctionBatched` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.fromFunctionBatched
 ```

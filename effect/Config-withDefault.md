@@ -6,8 +6,7 @@ specified default value in case the information cannot be found.
 To import and use `withDefault` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.withDefault
 ```

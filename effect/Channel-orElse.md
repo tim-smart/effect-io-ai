@@ -7,8 +7,7 @@ fallback channel.
 To import and use `orElse` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.orElse
 ```

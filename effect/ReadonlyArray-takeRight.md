@@ -7,8 +7,7 @@ Keep only a max number of elements from the end of an `Iterable`, creating a new
 To import and use `takeRight` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.takeRight
 ```

@@ -5,8 +5,7 @@ Change the last element, creating a new `NonEmptyReadonlyArray`.
 To import and use `setNonEmptyLast` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.setNonEmptyLast
 ```

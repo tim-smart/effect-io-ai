@@ -5,8 +5,7 @@ Adds an annotation, potentially overwriting the existing annotation with the spe
 To import and use `setAnnotation` from the "AST" module:
 
 ```ts
-import * as AST from '@effect/schema/AST'
-
+import * as AST from "@effect/schema/AST"
 // Can be accessed like this
 AST.setAnnotation
 ```

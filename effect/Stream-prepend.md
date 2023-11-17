@@ -5,8 +5,7 @@ Emits the provided chunk before emitting any other value.
 To import and use `prepend` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.prepend
 ```

@@ -5,8 +5,7 @@ Constructs a config that fails with the specified message.
 To import and use `fail` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.fail
 ```

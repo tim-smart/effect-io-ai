@@ -7,8 +7,7 @@ Keep only a max number of elements from the start of an `Iterable`, creating a n
 To import and use `take` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.take
 ```

@@ -8,8 +8,7 @@ further than the slower one.
 To import and use `partition` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.partition
 ```
@@ -18,13 +17,14 @@ Stream.partition
 
 ```ts
 export declare const partition: {
-  <A>(predicate: Predicate<A>, options?: { bufferSize?: number }): <R, E>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R, E, readonly [Stream<never, E, A>, Stream<never, E, A>]>
-  <R, E, A>(self: Stream<R, E, A>, predicate: Predicate<A>, options?: { bufferSize?: number }): Effect.Effect<
-    Scope.Scope | R,
-    E,
-    readonly [Stream<never, E, A>, Stream<never, E, A>]
-  >
+  <A>(
+    predicate: Predicate<A>,
+    options?: { bufferSize?: number | undefined }
+  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, E, [Stream<never, E, A>, Stream<never, E, A>]>
+  <R, E, A>(
+    self: Stream<R, E, A>,
+    predicate: Predicate<A>,
+    options?: { bufferSize?: number | undefined }
+  ): Effect.Effect<Scope.Scope | R, E, [Stream<never, E, A>, Stream<never, E, A>]>
 }
 ```

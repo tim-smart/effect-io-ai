@@ -8,8 +8,7 @@ tree.
 To import and use `at` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.at
 ```
@@ -18,7 +17,7 @@ RedBlackTree.at
 
 ```ts
 export declare const at: {
-  (index: number): <K, V>(self: RedBlackTree<K, V>) => Iterable<readonly [K, V]>
-  <K, V>(self: RedBlackTree<K, V>, index: number): Iterable<readonly [K, V]>
+  (index: number): <K, V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
+  <K, V>(self: RedBlackTree<K, V>, index: number): Iterable<[K, V]>
 }
 ```

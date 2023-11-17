@@ -6,8 +6,7 @@ of the Effect runtime.
 To import and use `RuntimeFlag` from the "RuntimeFlags" module:
 
 ```ts
-import * as RuntimeFlags from 'effect/RuntimeFlags'
-
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.RuntimeFlag
 ```

@@ -6,8 +6,7 @@ string as well as the trailing newline character.
 To import and use `linesWithSeparators` from the "String" module:
 
 ```ts
-import * as String from 'effect/String'
-
+import * as String from "effect/String"
 // Can be accessed like this
 String.linesWithSeparators
 ```

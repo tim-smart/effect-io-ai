@@ -8,8 +8,7 @@ larger scope.
 To import and use `extend` from the "Scope" module:
 
 ```ts
-import * as Scope from 'effect/Scope'
-
+import * as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.extend
 ```

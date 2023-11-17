@@ -5,8 +5,7 @@ Creates a stream from a `Chunk` of values.
 To import and use `fromChunk` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromChunk
 ```

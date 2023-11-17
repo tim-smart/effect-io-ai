@@ -6,8 +6,7 @@ using the provided function.
 To import and use `zipWith` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.zipWith
 ```

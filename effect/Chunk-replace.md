@@ -6,8 +6,7 @@ or returning the input if the index is out of bounds.
 To import and use `replace` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.replace
 ```

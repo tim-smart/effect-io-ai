@@ -7,8 +7,7 @@ instead.
 To import and use `provideService` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.provideService
 ```
@@ -17,13 +16,14 @@ Schedule.provideService
 
 ```ts
 export declare const provideService: {
-  <T, T1 extends T>(tag: any, service: T1): <Env, In, Out>(
-    self: Schedule<T | Env, In, Out>
-  ) => Schedule<Exclude<Env, T>, In, Out>
-  <Env, T, In, Out, T1 extends T>(self: Schedule<Env | T, In, Out>, tag: any, service: T1): Schedule<
-    Exclude<Env, T>,
-    In,
-    Out
-  >
+  <T, T1 extends T>(
+    tag: any,
+    service: T1
+  ): <Env, In, Out>(self: Schedule<T | Env, In, Out>) => Schedule<Exclude<Env, T>, In, Out>
+  <Env, T, In, Out, T1 extends T>(
+    self: Schedule<Env | T, In, Out>,
+    tag: any,
+    service: T1
+  ): Schedule<Exclude<Env, T>, In, Out>
 }
 ```

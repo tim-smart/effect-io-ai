@@ -5,8 +5,7 @@ Merge two records, preserving only the entries that are unique to each record.
 To import and use `difference` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.difference
 ```

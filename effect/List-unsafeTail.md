@@ -5,8 +5,7 @@ Unsafely returns the tail of the specified `List`.
 To import and use `unsafeTail` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.unsafeTail
 ```

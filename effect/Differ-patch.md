@@ -6,8 +6,7 @@ old value with the updates described by the patch.
 To import and use `patch` from the "Differ" module:
 
 ```ts
-import * as Differ from 'effect/Differ'
-
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.patch
 ```

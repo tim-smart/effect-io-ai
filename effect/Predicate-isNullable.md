@@ -5,8 +5,7 @@ A guard that succeeds when the input is `null` or `undefined`.
 To import and use `isNullable` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isNullable
 ```
@@ -14,7 +13,7 @@ Predicate.isNullable
 **Example**
 
 ```ts
-import { isNullable } from 'effect/Predicate'
+import { isNullable } from "effect/Predicate"
 
 assert.deepStrictEqual(isNullable(null), true)
 assert.deepStrictEqual(isNullable(undefined), true)

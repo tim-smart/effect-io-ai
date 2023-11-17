@@ -7,8 +7,7 @@ If the promise completes with a failure, the stream will emit that failure.
 To import and use `haltWhenDeferred` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.haltWhenDeferred
 ```

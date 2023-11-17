@@ -10,8 +10,7 @@ wrapped Promise api.
 To import and use `tryMapPromise` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tryMapPromise
 ```

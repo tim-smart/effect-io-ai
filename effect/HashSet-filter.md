@@ -5,8 +5,7 @@ Filters values out of a `HashSet` using the specified predicate.
 To import and use `filter` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.filter
 ```

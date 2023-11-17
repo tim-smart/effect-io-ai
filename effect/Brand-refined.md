@@ -9,8 +9,7 @@ see {@link nominal}.
 To import and use `refined` from the "Brand" module:
 
 ```ts
-import * as Brand from 'effect/Brand'
-
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.refined
 ```
@@ -18,9 +17,9 @@ Brand.refined
 **Example**
 
 ```ts
-import * as Brand from 'effect/Brand'
+import * as Brand from "effect/Brand"
 
-type Int = number & Brand.Brand<'Int'>
+type Int = number & Brand.Brand<"Int">
 
 const Int = Brand.refined<Int>(
   (n) => Number.isInteger(n),

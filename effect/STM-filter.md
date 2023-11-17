@@ -5,8 +5,7 @@ Filters the collection using the specified effectual predicate.
 To import and use `filter` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.filter
 ```

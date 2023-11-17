@@ -1,25 +1,31 @@
 # loop
 
-Loops with the specified effectual function, collecting the results into a
-list. The moral equivalent of:
+The `Effect.loop` function allows you to repeatedly change the state based on an `step` function until a condition given by the `while` function is evaluated to `true`:
 
 ```ts
-let s = initial
-let as = [] as readonly A[]
+Effect.loop(initial, options: { while, step, body })
+```
 
-while (cont(s)) {
-  as = [body(s), ...as]
-  s = inc(s)
+It collects all intermediate states in an array and returns it as the final result.
+
+We can think of Effect.loop as equivalent to a while loop in JavaScript:
+
+```ts
+let state = initial
+const result = []
+
+while (options.while(state)) {
+  result.push(options.body(state))
+  state = options.step(state)
 }
 
-A.reverse(as)
+return result
 ```
 
 To import and use `loop` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.loop
 ```
@@ -28,21 +34,39 @@ Effect.loop
 
 ```ts
 export declare const loop: {
-  <Z, R, E, A>(
-    initial: Z,
+  <A, B extends A, R, E, C>(
+    initial: A,
     options: {
-      readonly while: (z: Z) => boolean
-      readonly step: (z: Z) => Z
-      readonly body: (z: Z) => Effect<R, E, A>
+      readonly while: Refinement<A, B>
+      readonly step: (b: B) => A
+      readonly body: (b: B) => Effect<R, E, C>
       readonly discard?: false | undefined
     }
-  ): Effect<R, E, A[]>
-  <Z, R, E, A>(
-    initial: Z,
+  ): Effect<R, E, C[]>
+  <A, R, E, C>(
+    initial: A,
     options: {
-      readonly while: (z: Z) => boolean
-      readonly step: (z: Z) => Z
-      readonly body: (z: Z) => Effect<R, E, A>
+      readonly while: (a: A) => boolean
+      readonly step: (a: A) => A
+      readonly body: (a: A) => Effect<R, E, C>
+      readonly discard?: false | undefined
+    }
+  ): Effect<R, E, C[]>
+  <A, B extends A, R, E, C>(
+    initial: A,
+    options: {
+      readonly while: Refinement<A, B>
+      readonly step: (b: B) => A
+      readonly body: (b: B) => Effect<R, E, C>
+      readonly discard: true
+    }
+  ): Effect<R, E, void>
+  <A, R, E, C>(
+    initial: A,
+    options: {
+      readonly while: (a: A) => boolean
+      readonly step: (a: A) => A
+      readonly body: (a: A) => Effect<R, E, C>
       readonly discard: true
     }
   ): Effect<R, E, void>

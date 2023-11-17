@@ -8,8 +8,7 @@ these services.
 To import and use `TestLive` from the "TestLive" module:
 
 ```ts
-import * as TestLive from 'effect/TestLive'
-
+import * as TestLive from "effect/TestLive"
 // Can be accessed like this
 TestLive.TestLive
 ```

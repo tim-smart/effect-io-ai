@@ -6,8 +6,7 @@ chunking-invariance.
 To import and use `mapInputChunksEffect` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.mapInputChunksEffect
 ```
@@ -16,9 +15,9 @@ Sink.mapInputChunksEffect
 
 ```ts
 export declare const mapInputChunksEffect: {
-  <In0, R2, E2, In>(f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>): <R, E, L, Z>(
-    self: Sink<R, E, In, L, Z>
-  ) => Sink<R2 | R, E2 | E, In0, L, Z>
+  <In0, R2, E2, In>(
+    f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>
+  ): <R, E, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In0, L, Z>
   <R, E, L, Z, In0, R2, E2, In>(
     self: Sink<R, E, In, L, Z>,
     f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>

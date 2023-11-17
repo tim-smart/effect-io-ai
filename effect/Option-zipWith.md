@@ -5,8 +5,7 @@ Zips two `Option` values together using a provided function, returning a new `Op
 To import and use `zipWith` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.zipWith
 ```
@@ -14,7 +13,7 @@ Option.zipWith
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 type Complex = [number, number]
 

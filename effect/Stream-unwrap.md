@@ -5,8 +5,7 @@ Creates a stream produced from an `Effect`.
 To import and use `unwrap` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.unwrap
 ```

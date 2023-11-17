@@ -8,8 +8,7 @@ end of the stream, by setting it to `None`.
 To import and use `asyncScoped` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.asyncScoped
 ```

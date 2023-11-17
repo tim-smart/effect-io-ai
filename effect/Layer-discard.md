@@ -6,8 +6,7 @@ side-effects.
 To import and use `discard` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.discard
 ```

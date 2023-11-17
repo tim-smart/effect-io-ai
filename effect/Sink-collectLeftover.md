@@ -6,8 +6,7 @@ them as part of the sink's result.
 To import and use `collectLeftover` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.collectLeftover
 ```
@@ -17,5 +16,5 @@ Sink.collectLeftover
 ```ts
 export declare const collectLeftover: <R, E, In, L, Z>(
   self: Sink<R, E, In, L, Z>
-) => Sink<R, E, In, never, readonly [Z, Chunk.Chunk<L>]>
+) => Sink<R, E, In, never, [Z, Chunk.Chunk<L>]>
 ```

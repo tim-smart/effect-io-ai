@@ -7,8 +7,7 @@ retries until at least the minimum number of elements have been collected.
 To import and use `takeBetween` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.takeBetween
 ```

@@ -8,8 +8,7 @@ Alias of {@link Equivalence.struct}.
 To import and use `getEquivalence` from the "Struct" module:
 
 ```ts
-import * as Struct from 'effect/Struct'
-
+import * as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.getEquivalence
 ```
@@ -17,17 +16,17 @@ Struct.getEquivalence
 **Example**
 
 ```ts
-import { getEquivalence } from 'effect/Struct'
-import * as S from 'effect/String'
-import * as N from 'effect/Number'
+import { getEquivalence } from "effect/Struct"
+import * as S from "effect/String"
+import * as N from "effect/Number"
 
 const PersonEquivalence = getEquivalence({
   name: S.Equivalence,
-  age: N.Equivalence,
+  age: N.Equivalence
 })
 
-assert.deepStrictEqual(PersonEquivalence({ name: 'John', age: 25 }, { name: 'John', age: 25 }), true)
-assert.deepStrictEqual(PersonEquivalence({ name: 'John', age: 25 }, { name: 'John', age: 40 }), false)
+assert.deepStrictEqual(PersonEquivalence({ name: "John", age: 25 }, { name: "John", age: 25 }), true)
+assert.deepStrictEqual(PersonEquivalence({ name: "John", age: 25 }, { name: "John", age: 40 }), false)
 ```
 
 **Signature**

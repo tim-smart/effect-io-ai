@@ -9,8 +9,7 @@ for the old value whenever a new value is obtained.
 To import and use `ScopedRef` from the "ScopedRef" module:
 
 ```ts
-import * as ScopedRef from 'effect/ScopedRef'
-
+import * as ScopedRef from "effect/ScopedRef"
 // Can be accessed like this
 ScopedRef.ScopedRef
 ```

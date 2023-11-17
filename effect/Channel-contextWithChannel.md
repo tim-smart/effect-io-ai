@@ -5,8 +5,7 @@ Accesses the context of the channel in the context of a channel.
 To import and use `contextWithChannel` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.contextWithChannel
 ```

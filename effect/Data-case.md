@@ -5,8 +5,7 @@ Provides a constructor for the specified `Case`.
 To import and use `case` from the "Data" module:
 
 ```ts
-import * as Data from 'effect/Data'
-
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.case
 ```
@@ -14,8 +13,8 @@ Data.case
 **Example**
 
 ```ts
-import * as Data from 'effect/Data'
-import * as Equal from 'effect/Equal'
+import * as Data from "effect/Data"
+import * as Equal from "effect/Equal"
 
 // Extending Data.Case to implement Equal
 interface Person extends Data.Case {
@@ -26,9 +25,9 @@ interface Person extends Data.Case {
 const Person = Data.case<Person>()
 
 // Creating instances of Person
-const mike1 = Person({ name: 'Mike' })
-const mike2 = Person({ name: 'Mike' })
-const john = Person({ name: 'John' })
+const mike1 = Person({ name: "Mike" })
+const mike2 = Person({ name: "Mike" })
+const john = Person({ name: "John" })
 
 // Checking equality
 assert.deepStrictEqual(Equal.equals(mike1, mike2), true)

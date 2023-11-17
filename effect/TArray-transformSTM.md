@@ -5,8 +5,7 @@ Atomically updates all elements using a transactional effect.
 To import and use `transformSTM` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.transformSTM
 ```

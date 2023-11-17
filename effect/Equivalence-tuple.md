@@ -12,8 +12,7 @@ by applying each `Equivalence` to the corresponding element of the tuple.
 To import and use `tuple` from the "Equivalence" module:
 
 ```ts
-import * as Equivalence from 'effect/Equivalence'
-
+import * as Equivalence from "effect/Equivalence"
 // Can be accessed like this
 Equivalence.tuple
 ```

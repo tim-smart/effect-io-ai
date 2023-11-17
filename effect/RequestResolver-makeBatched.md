@@ -6,8 +6,7 @@ and returning a `RequestCompletionMap`.
 To import and use `makeBatched` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.makeBatched
 ```

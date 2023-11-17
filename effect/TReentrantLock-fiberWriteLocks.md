@@ -5,8 +5,7 @@ Retrieves the number of acquired write locks for this fiber.
 To import and use `fiberWriteLocks` from the "TReentrantLock" module:
 
 ```ts
-import * as TReentrantLock from 'effect/TReentrantLock'
-
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.fiberWriteLocks
 ```

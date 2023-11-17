@@ -6,8 +6,7 @@ ensuring that the workflow itself is run with the test services.
 To import and use `provideWithLive` from the "TestServices" module:
 
 ```ts
-import * as TestServices from 'effect/TestServices'
-
+import * as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.provideWithLive
 ```

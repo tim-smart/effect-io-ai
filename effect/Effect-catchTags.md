@@ -5,8 +5,7 @@ Recovers from the specified tagged errors.
 To import and use `catchTags` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchTags
 ```
@@ -18,7 +17,7 @@ export declare const catchTags: {
   <
     E,
     Cases extends E extends { _tag: string }
-      ? { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+      ? { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
       : {}
   >(
     cases: Cases
@@ -43,7 +42,7 @@ export declare const catchTags: {
     E,
     A,
     Cases extends E extends { _tag: string }
-      ? { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
+      ? { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>) | undefined }
       : {}
   >(
     self: Effect<R, E, A>,

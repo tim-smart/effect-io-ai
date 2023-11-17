@@ -5,8 +5,7 @@ Takes the last `n` elements.
 To import and use `takeRight` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.takeRight
 ```

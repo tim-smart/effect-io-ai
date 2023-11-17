@@ -5,8 +5,7 @@ Reduce an `Iterable` from the left, keeping all intermediate results instead of 
 To import and use `scan` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.scan
 ```

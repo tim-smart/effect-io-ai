@@ -6,8 +6,7 @@ structure.
 To import and use `left` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.left
 ```

@@ -5,8 +5,7 @@ A lazy argument.
 To import and use `LazyArg` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.LazyArg
 ```
@@ -14,7 +13,7 @@ Function.LazyArg
 **Example**
 
 ```ts
-import { LazyArg, constant } from 'effect/Function'
+import { LazyArg, constant } from "effect/Function"
 
-export const constNull: LazyArg<null> = constant(null)
+const constNull: LazyArg<null> = constant(null)
 ```

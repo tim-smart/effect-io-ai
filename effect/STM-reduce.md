@@ -6,8 +6,7 @@ from left to right.
 To import and use `reduce` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.reduce
 ```

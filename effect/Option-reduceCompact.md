@@ -5,8 +5,7 @@ Reduces an `Iterable` of `Option<A>` to a single value of type `B`, elements tha
 To import and use `reduceCompact` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.reduceCompact
 ```
@@ -14,8 +13,8 @@ Option.reduceCompact
 **Example**
 
 ```ts
-import { some, none, reduceCompact } from 'effect/Option'
-import { pipe } from 'effect/Function'
+import { some, none, reduceCompact } from "effect/Option"
+import { pipe } from "effect/Function"
 
 const iterable = [some(1), none(), some(2), none()]
 assert.deepStrictEqual(

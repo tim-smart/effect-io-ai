@@ -9,8 +9,7 @@ NOTE: `day` parameter is validated lazily. Must be in range 1 (Monday)...7
 To import and use `dayOfWeek` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.dayOfWeek
 ```

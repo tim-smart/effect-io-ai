@@ -6,8 +6,7 @@ evaluation of this stream after the given `Duration`.
 To import and use `interruptAfter` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.interruptAfter
 ```

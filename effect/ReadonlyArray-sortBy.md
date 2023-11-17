@@ -6,8 +6,7 @@ using first `orders[0]`, then `orders[1]`, etc...
 To import and use `sortBy` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.sortBy
 ```

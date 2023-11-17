@@ -5,8 +5,7 @@ Removes all elements from the queue matching the specified predicate.
 To import and use `removeIf` from the "TPriorityQueue" module:
 
 ```ts
-import * as TPriorityQueue from 'effect/TPriorityQueue'
-
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.removeIf
 ```

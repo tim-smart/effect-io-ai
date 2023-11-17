@@ -5,8 +5,7 @@ Takes all elements so long as the predicate returns true.
 To import and use `takeWhile` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.takeWhile
 ```

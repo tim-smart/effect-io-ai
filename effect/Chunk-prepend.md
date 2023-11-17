@@ -5,8 +5,7 @@ Prepend an element to the front of a `Chunk`, creating a new `NonEmptyChunk`.
 To import and use `prepend` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.prepend
 ```

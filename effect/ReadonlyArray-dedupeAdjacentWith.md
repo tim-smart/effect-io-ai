@@ -5,8 +5,7 @@ Deduplicates adjacent elements that are identical using the provided `isEquivale
 To import and use `dedupeAdjacentWith` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.dedupeAdjacentWith
 ```

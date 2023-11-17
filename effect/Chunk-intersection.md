@@ -7,8 +7,7 @@ The order and references of result values are determined by the Chunk.
 To import and use `intersection` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.intersection
 ```

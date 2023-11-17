@@ -3,8 +3,8 @@
 Emits a sliding window of `n` elements.
 
 ```ts
-import * as Stream from './Stream'
-import { pipe } from './Function'
+import * as Stream from "./Stream"
+import { pipe } from "./Function"
 
 pipe(Stream.make(1, 2, 3, 4), Stream.sliding(2), Stream.runCollect)
 // => Chunk(Chunk(1, 2), Chunk(2, 3), Chunk(3, 4))
@@ -13,8 +13,7 @@ pipe(Stream.make(1, 2, 3, 4), Stream.sliding(2), Stream.runCollect)
 To import and use `sliding` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.sliding
 ```

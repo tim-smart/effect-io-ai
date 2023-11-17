@@ -19,8 +19,7 @@ allow for rich and expressive composition of streams.
 To import and use `Stream` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.Stream
 ```

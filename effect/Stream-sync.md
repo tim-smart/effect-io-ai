@@ -5,8 +5,7 @@ Creates a single-valued pure stream.
 To import and use `sync` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.sync
 ```

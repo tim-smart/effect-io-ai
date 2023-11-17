@@ -5,8 +5,7 @@ Creates a sink produced from a scoped effect.
 To import and use `unwrapScoped` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.unwrapScoped
 ```

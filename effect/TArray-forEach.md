@@ -5,8 +5,7 @@ Atomically performs transactional effect for each item in array.
 To import and use `forEach` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.forEach
 ```

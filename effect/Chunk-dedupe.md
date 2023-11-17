@@ -5,8 +5,7 @@ Remove duplicates from an array, keeping the first occurrence of an element.
 To import and use `dedupe` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.dedupe
 ```

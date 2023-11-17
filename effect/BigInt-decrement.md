@@ -5,8 +5,7 @@ Decrements a number by `1n`.
 To import and use `decrement` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.decrement
 ```
@@ -14,7 +13,7 @@ BigInt.decrement
 **Example**
 
 ```ts
-import { decrement } from 'effect/BigInt'
+import { decrement } from "effect/BigInt"
 
 assert.deepStrictEqual(decrement(3n), 2n)
 ```

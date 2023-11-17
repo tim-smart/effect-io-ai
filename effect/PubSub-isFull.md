@@ -6,8 +6,7 @@ otherwise.
 To import and use `isFull` from the "PubSub" module:
 
 ```ts
-import * as PubSub from 'effect/PubSub'
-
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.isFull
 ```

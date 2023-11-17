@@ -7,8 +7,7 @@ paginated APIs, hence the name.
 To import and use `paginateChunk` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.paginateChunk
 ```

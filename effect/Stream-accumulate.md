@@ -6,8 +6,7 @@ on each pull.
 To import and use `accumulate` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.accumulate
 ```

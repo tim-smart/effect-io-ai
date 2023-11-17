@@ -5,8 +5,7 @@ Updates a service in the context of this channel.
 To import and use `updateService` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.updateService
 ```
@@ -15,14 +14,10 @@ Channel.updateService
 
 ```ts
 export declare const updateService: {
-  <T extends Context.Tag<any, any>>(tag: T, f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>): <
-    R,
-    InErr,
-    InDone,
-    OutElem,
-    OutErr,
-    OutDone
-  >(
+  <T extends Context.Tag<any, any>>(
+    tag: T,
+    f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>
+  ): <R, InErr, InDone, OutElem, OutErr, OutDone>(
     self: Channel<R, InErr, unknown, InDone, OutErr, OutElem, OutDone>
   ) => Channel<T | R, InErr, unknown, InDone, OutErr, OutElem, OutDone>
   <R, InErr, InDone, OutElem, OutErr, OutDone, T extends Context.Tag<any, any>>(

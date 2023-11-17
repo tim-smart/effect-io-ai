@@ -7,8 +7,7 @@ The thrown error is a default error. To configure the error thrown, see {@link g
 To import and use `getOrThrow` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrThrow
 ```
@@ -16,7 +15,7 @@ Option.getOrThrow
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 assert.deepStrictEqual(O.getOrThrow(O.some(1)), 1)
 assert.throws(() => O.getOrThrow(O.none()))

@@ -6,8 +6,7 @@ value.
 To import and use `fromAcquire` from the "ScopedRef" module:
 
 ```ts
-import * as ScopedRef from 'effect/ScopedRef'
-
+import * as ScopedRef from "effect/ScopedRef"
 // Can be accessed like this
 ScopedRef.fromAcquire
 ```

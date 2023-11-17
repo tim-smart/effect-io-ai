@@ -7,8 +7,7 @@ same key, they are merged using the `merge` function.
 To import and use `collectAllToMap` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.collectAllToMap
 ```

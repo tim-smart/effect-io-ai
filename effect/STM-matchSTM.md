@@ -5,8 +5,7 @@ Effectfully folds over the `STM` effect, handling both failure and success.
 To import and use `matchSTM` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.matchSTM
 ```

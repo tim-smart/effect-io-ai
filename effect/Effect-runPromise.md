@@ -6,8 +6,7 @@ result of the workflow or rejects with an error.
 To import and use `runPromise` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.runPromise
 ```

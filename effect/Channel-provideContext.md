@@ -6,8 +6,7 @@ dependency on `Env`.
 To import and use `provideContext` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.provideContext
 ```
@@ -16,7 +15,9 @@ Channel.provideContext
 
 ```ts
 export declare const provideContext: {
-  <Env>(env: Context.Context<Env>): <InErr, InElem, InDone, OutErr, OutElem, OutDone>(
+  <Env>(
+    env: Context.Context<Env>
+  ): <InErr, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<never, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   <InErr, InElem, InDone, OutErr, OutElem, OutDone, Env>(

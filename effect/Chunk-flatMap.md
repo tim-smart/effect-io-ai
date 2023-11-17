@@ -5,8 +5,7 @@ Returns a chunk with the elements mapped by the specified function.
 To import and use `flatMap` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.flatMap
 ```

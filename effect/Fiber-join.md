@@ -9,8 +9,7 @@ another fiber, "inner interruption" can be caught and recovered.
 To import and use `join` from the "Fiber" module:
 
 ```ts
-import * as Fiber from 'effect/Fiber'
-
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.join
 ```

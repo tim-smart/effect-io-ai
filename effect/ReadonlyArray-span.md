@@ -8,8 +8,7 @@ Split an `Iterable` into two parts:
 To import and use `span` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.span
 ```

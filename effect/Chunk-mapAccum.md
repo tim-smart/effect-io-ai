@@ -5,8 +5,7 @@ Statefully maps over the chunk, producing new elements of type `B`.
 To import and use `mapAccum` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.mapAccum
 ```

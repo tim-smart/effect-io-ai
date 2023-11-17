@@ -5,8 +5,7 @@ Get the last element in a `ReadonlyArray`, or `None` if the `ReadonlyArray` is e
 To import and use `last` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.last
 ```

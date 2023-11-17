@@ -5,8 +5,7 @@ Exposes the full `Cause` of failure for the specified effect.
 To import and use `sandbox` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.sandbox
 ```

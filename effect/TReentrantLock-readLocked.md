@@ -5,8 +5,7 @@ Determines if any fiber has a read lock.
 To import and use `readLocked` from the "TReentrantLock" module:
 
 ```ts
-import * as TReentrantLock from 'effect/TReentrantLock'
-
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.readLocked
 ```

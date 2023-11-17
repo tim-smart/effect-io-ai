@@ -7,8 +7,7 @@ messages of type `A` and subscribers can subscribe to take messages of type
 To import and use `PubSub` from the "PubSub" module:
 
 ```ts
-import * as PubSub from 'effect/PubSub'
-
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.PubSub
 ```

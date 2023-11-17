@@ -7,8 +7,7 @@ If a default error is sufficient for your use case and you don't need to configu
 To import and use `getOrThrowWith` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrThrowWith
 ```
@@ -16,13 +15,13 @@ Either.getOrThrowWith
 **Example**
 
 ```ts
-import * as E from 'effect/Either'
+import * as E from "effect/Either"
 
 assert.deepStrictEqual(
-  E.getOrThrowWith(E.right(1), () => new Error('Unexpected Left')),
+  E.getOrThrowWith(E.right(1), () => new Error("Unexpected Left")),
   1
 )
-assert.throws(() => E.getOrThrowWith(E.left('error'), () => new Error('Unexpected Left')))
+assert.throws(() => E.getOrThrowWith(E.left("error"), () => new Error("Unexpected Left")))
 ```
 
 **Signature**

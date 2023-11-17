@@ -5,8 +5,7 @@ Returns the value of the `Option` if it is `Some`, otherwise returns `onNone`
 To import and use `getOrElse` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrElse
 ```
@@ -14,8 +13,8 @@ Option.getOrElse
 **Example**
 
 ```ts
-import { some, none, getOrElse } from 'effect/Option'
-import { pipe } from 'effect/Function'
+import { some, none, getOrElse } from "effect/Option"
+import { pipe } from "effect/Function"
 
 assert.deepStrictEqual(
   pipe(

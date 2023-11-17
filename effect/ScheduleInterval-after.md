@@ -6,8 +6,7 @@ specified start time.
 To import and use `after` from the "ScheduleInterval" module:
 
 ```ts
-import * as ScheduleInterval from 'effect/ScheduleInterval'
-
+import * as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.after
 ```

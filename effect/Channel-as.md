@@ -9,8 +9,7 @@ specified constant value.
 To import and use `as` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.as
 ```
@@ -19,7 +18,9 @@ Channel.as
 
 ```ts
 export declare const as: {
-  <OutDone2>(value: OutDone2): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
+  <OutDone2>(
+    value: OutDone2
+  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone2>
   <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, OutDone2>(

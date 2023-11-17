@@ -6,8 +6,7 @@ Histogram metrics are useful for measuring the distribution of values within a r
 To import and use `histogram` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.histogram
 ```
@@ -15,13 +14,13 @@ Metric.histogram
 **Example**
 
 ```ts
-import * as Metric from 'effect/Metric'
-import * as MetricBoundaries from 'effect/MetricBoundaries'
+import * as Metric from "effect/Metric"
+import * as MetricBoundaries from "effect/MetricBoundaries"
 
 const latencyHistogram = Metric.histogram(
-  'latency_histogram',
+  "latency_histogram",
   MetricBoundaries.linear({ start: 0, width: 10, count: 11 }),
-  'Measures the distribution of request latency.'
+  "Measures the distribution of request latency."
 )
 ```
 

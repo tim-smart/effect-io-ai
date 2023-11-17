@@ -8,8 +8,7 @@ It is useful when you need to compare two arrays of the same type and you have a
 To import and use `getOrder` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.getOrder
 ```

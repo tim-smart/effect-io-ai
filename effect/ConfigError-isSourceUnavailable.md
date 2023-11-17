@@ -6,8 +6,7 @@ Returns `true` if the specified `ConfigError` is a `SourceUnavailable`,
 To import and use `isSourceUnavailable` from the "ConfigError" module:
 
 ```ts
-import * as ConfigError from 'effect/ConfigError'
-
+import * as ConfigError from "effect/ConfigError"
 // Can be accessed like this
 ConfigError.isSourceUnavailable
 ```

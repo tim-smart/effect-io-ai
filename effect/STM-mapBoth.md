@@ -6,8 +6,7 @@ by the specified pair of functions, `f` and `g`.
 To import and use `mapBoth` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.mapBoth
 ```
@@ -16,9 +15,10 @@ STM.mapBoth
 
 ```ts
 export declare const mapBoth: {
-  <E, E2, A, A2>(options: { readonly onFailure: (error: E) => E2; readonly onSuccess: (value: A) => A2 }): <R>(
-    self: STM<R, E, A>
-  ) => STM<R, E2, A2>
+  <E, E2, A, A2>(options: {
+    readonly onFailure: (error: E) => E2
+    readonly onSuccess: (value: A) => A2
+  }): <R>(self: STM<R, E, A>) => STM<R, E2, A2>
   <R, E, E2, A, A2>(
     self: STM<R, E, A>,
     options: { readonly onFailure: (error: E) => E2; readonly onSuccess: (value: A) => A2 }

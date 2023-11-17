@@ -5,8 +5,7 @@ Provides a constructor for a Case Class.
 To import and use `Class` from the "Data" module:
 
 ```ts
-import * as Data from 'effect/Data'
-
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.Class
 ```
@@ -14,15 +13,15 @@ Data.Class
 **Example**
 
 ```ts
-import * as Data from 'effect/Data'
-import * as Equal from 'effect/Equal'
+import * as Data from "effect/Data"
+import * as Equal from "effect/Equal"
 
 class Person extends Data.Class<{ readonly name: string }> {}
 
 // Creating instances of Person
-const mike1 = new Person({ name: 'Mike' })
-const mike2 = new Person({ name: 'Mike' })
-const john = new Person({ name: 'John' })
+const mike1 = new Person({ name: "Mike" })
+const mike2 = new Person({ name: "Mike" })
+const john = new Person({ name: "John" })
 
 // Checking equality
 assert.deepStrictEqual(Equal.equals(mike1, mike2), true)

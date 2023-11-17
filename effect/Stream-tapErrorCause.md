@@ -6,8 +6,7 @@ stream.
 To import and use `tapErrorCause` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.tapErrorCause
 ```
@@ -16,9 +15,9 @@ Stream.tapErrorCause
 
 ```ts
 export declare const tapErrorCause: {
-  <E, X extends E, R2, E2, _>(f: (cause: Cause.Cause<X>) => Effect.Effect<R2, E2, _>): <R, A>(
-    self: Stream<R, E, A>
-  ) => Stream<R2 | R, E | E2, A>
+  <E, X extends E, R2, E2, _>(
+    f: (cause: Cause.Cause<X>) => Effect.Effect<R2, E2, _>
+  ): <R, A>(self: Stream<R, E, A>) => Stream<R2 | R, E | E2, A>
   <R, A, E, X extends E, R2, E2, _>(
     self: Stream<R, E, A>,
     f: (cause: Cause.Cause<X>) => Effect.Effect<R2, E2, _>

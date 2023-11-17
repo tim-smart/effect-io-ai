@@ -5,8 +5,7 @@ Check if a given `key` exists in a record.
 To import and use `has` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.has
 ```
@@ -14,10 +13,10 @@ ReadonlyRecord.has
 **Example**
 
 ```ts
-import { has } from 'effect/ReadonlyRecord'
+import { has } from "effect/ReadonlyRecord"
 
-assert.deepStrictEqual(has({ a: 1, b: 2 }, 'a'), true)
-assert.deepStrictEqual(has({ a: 1, b: 2 }, 'c'), false)
+assert.deepStrictEqual(has({ a: 1, b: 2 }, "a"), true)
+assert.deepStrictEqual(has({ a: 1, b: 2 }, "c"), false)
 ```
 
 **Signature**

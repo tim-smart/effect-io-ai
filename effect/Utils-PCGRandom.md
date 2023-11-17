@@ -7,8 +7,7 @@ hard to predict.
 To import and use `PCGRandom` from the "Utils" module:
 
 ```ts
-import * as Utils from 'effect/Utils'
-
+import * as Utils from "effect/Utils"
 // Can be accessed like this
 Utils.PCGRandom
 ```

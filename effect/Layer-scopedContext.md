@@ -6,8 +6,7 @@ or more services.
 To import and use `scopedContext` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.scopedContext
 ```

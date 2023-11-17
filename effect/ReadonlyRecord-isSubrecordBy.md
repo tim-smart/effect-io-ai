@@ -5,8 +5,7 @@ Check if all the keys and values in one record are also found in another record.
 To import and use `isSubrecordBy` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.isSubrecordBy
 ```

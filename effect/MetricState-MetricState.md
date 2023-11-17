@@ -7,8 +7,7 @@ This phantom type parameter is used to tie keys to their expected states.
 To import and use `MetricState` from the "MetricState" module:
 
 ```ts
-import * as MetricState from 'effect/MetricState'
-
+import * as MetricState from "effect/MetricState"
 // Can be accessed like this
 MetricState.MetricState
 ```

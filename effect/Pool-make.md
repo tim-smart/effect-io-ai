@@ -8,8 +8,7 @@ will be released in some unspecified order.
 To import and use `make` from the "Pool" module:
 
 ```ts
-import * as Pool from 'effect/Pool'
-
+import * as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.make
 ```

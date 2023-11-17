@@ -5,8 +5,7 @@ Performs a filter and map in a single step.
 To import and use `filterMap` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.filterMap
 ```

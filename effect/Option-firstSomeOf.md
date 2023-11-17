@@ -5,8 +5,7 @@ Given an `Iterable` collection of `Option`s, returns the first `Some` found in t
 To import and use `firstSomeOf` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.firstSomeOf
 ```
@@ -14,7 +13,7 @@ Option.firstSomeOf
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 assert.deepStrictEqual(O.firstSomeOf([O.none(), O.some(1), O.some(2)]), O.some(1))
 ```

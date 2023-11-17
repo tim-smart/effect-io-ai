@@ -8,11 +8,11 @@ used, the individual items allocated by the pool will be released in some
 unspecified order.
 
 ```ts
-import * as Duration from './Duration'
-import * as Effect from 'effect/Effect'
-import * as Pool from 'effect/Pool'
-import * as Scope from 'effect/Scope'
-import { pipe } from './Function'
+import * as Duration from "./Duration"
+import * as Effect from "effect/Effect"
+import * as Pool from "effect/Pool"
+import * as Scope from "effect/Scope"
+import { pipe } from "./Function"
 
 Effect.scoped(
   pipe(
@@ -32,8 +32,7 @@ Effect.scoped(
 To import and use `makeWithTTL` from the "Pool" module:
 
 ```ts
-import * as Pool from 'effect/Pool'
-
+import * as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.makeWithTTL
 ```

@@ -5,8 +5,7 @@ Flattens layers nested in the context of an effect.
 To import and use `flatten` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.flatten
 ```

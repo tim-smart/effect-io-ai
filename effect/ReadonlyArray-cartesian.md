@@ -5,8 +5,7 @@ Zips this chunk crosswise with the specified chunk.
 To import and use `cartesian` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.cartesian
 ```

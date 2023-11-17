@@ -6,8 +6,7 @@ first element of the tuple or else returns the failed `Cause<E | E2>`.
 To import and use `zipRight` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.zipRight
 ```

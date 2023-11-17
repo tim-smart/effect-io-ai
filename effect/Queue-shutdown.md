@@ -6,8 +6,7 @@ to `offer*` and `take*` will be interrupted immediately.
 To import and use `shutdown` from the "Queue" module:
 
 ```ts
-import * as Queue from 'effect/Queue'
-
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.shutdown
 ```

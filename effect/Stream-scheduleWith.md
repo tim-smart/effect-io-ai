@@ -7,8 +7,7 @@ to align the stream and schedule outputs on the same type.
 To import and use `scheduleWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.scheduleWith
 ```

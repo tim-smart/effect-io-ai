@@ -15,8 +15,7 @@ Defaults to the "shape" strategy.
 To import and use `throttle` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.throttle
 ```
@@ -30,7 +29,7 @@ export declare const throttle: {
     readonly units: number
     readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
-    readonly strategy?: 'enforce' | 'shape' | undefined
+    readonly strategy?: "enforce" | "shape" | undefined
   }): <R, E>(self: Stream<R, E, A>) => Stream<R, E, A>
   <R, E, A>(
     self: Stream<R, E, A>,
@@ -39,7 +38,7 @@ export declare const throttle: {
       readonly units: number
       readonly duration: Duration.DurationInput
       readonly burst?: number | undefined
-      readonly strategy?: 'enforce' | 'shape' | undefined
+      readonly strategy?: "enforce" | "shape" | undefined
     }
   ): Stream<R, E, A>
 }

@@ -6,8 +6,7 @@ flattening the result of the mapping function into a new `Effect` value.
 To import and use `flatMap` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.flatMap
 ```

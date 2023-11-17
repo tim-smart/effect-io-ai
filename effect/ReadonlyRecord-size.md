@@ -5,8 +5,7 @@ Returns the number of key/value pairs in a record.
 To import and use `size` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.size
 ```
@@ -14,9 +13,9 @@ ReadonlyRecord.size
 **Example**
 
 ```ts
-import { size } from 'effect/ReadonlyRecord'
+import { size } from "effect/ReadonlyRecord"
 
-assert.deepStrictEqual(size({ a: 'a', b: 1, c: true }), 3)
+assert.deepStrictEqual(size({ a: "a", b: 1, c: true }), 3)
 ```
 
 **Signature**

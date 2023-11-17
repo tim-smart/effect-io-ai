@@ -7,8 +7,7 @@ function.
 To import and use `mapOrFail` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.mapOrFail
 ```

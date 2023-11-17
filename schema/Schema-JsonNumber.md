@@ -7,8 +7,7 @@ format.
 To import and use `JsonNumber` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.JsonNumber
 ```
@@ -16,7 +15,7 @@ Schema.JsonNumber
 **Example**
 
 ```ts
-import * as S from '@effect/schema/Schema'
+import * as S from "@effect/schema/Schema"
 
 const is = S.is(S.JsonNumber)
 

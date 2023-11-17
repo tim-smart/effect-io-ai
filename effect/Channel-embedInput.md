@@ -6,8 +6,7 @@ this channel's input.
 To import and use `embedInput` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.embedInput
 ```
@@ -16,12 +15,9 @@ Channel.embedInput
 
 ```ts
 export declare const embedInput: {
-  <InErr, InElem, InDone>(input: SingleProducerAsyncInput.AsyncInputProducer<InErr, InElem, InDone>): <
-    Env,
-    OutErr,
-    OutElem,
-    OutDone
-  >(
+  <InErr, InElem, InDone>(
+    input: SingleProducerAsyncInput.AsyncInputProducer<InErr, InElem, InDone>
+  ): <Env, OutErr, OutElem, OutDone>(
     self: Channel<Env, unknown, unknown, unknown, OutErr, OutElem, OutDone>
   ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   <Env, OutErr, OutElem, OutDone, InErr, InElem, InDone>(

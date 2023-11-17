@@ -6,8 +6,7 @@ one with the `Left` values and one with the `Right` values.
 To import and use `separate` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.separate
 ```
@@ -15,10 +14,10 @@ ReadonlyRecord.separate
 **Example**
 
 ```ts
-import { separate } from 'effect/ReadonlyRecord'
-import { left, right } from 'effect/Either'
+import { separate } from "effect/ReadonlyRecord"
+import { left, right } from "effect/Either"
 
-assert.deepStrictEqual(separate({ a: left('e'), b: right(1) }), [{ a: 'e' }, { b: 1 }])
+assert.deepStrictEqual(separate({ a: left("e"), b: right(1) }), [{ a: "e" }, { b: 1 }])
 ```
 
 **Signature**

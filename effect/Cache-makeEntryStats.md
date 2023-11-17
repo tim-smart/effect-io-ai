@@ -5,8 +5,7 @@ Constructs a new `EntryStats` from the specified values.
 To import and use `makeEntryStats` from the "Cache" module:
 
 ```ts
-import * as Cache from 'effect/Cache'
-
+import * as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.makeEntryStats
 ```

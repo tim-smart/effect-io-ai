@@ -8,8 +8,7 @@ This function is useful for discarding the first argument passed to it and retur
 To import and use `SK` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.SK
 ```
@@ -17,9 +16,9 @@ Function.SK
 **Example**
 
 ```ts
-import { SK } from 'effect/Function'
+import { SK } from "effect/Function"
 
-assert.deepStrictEqual(SK(0, 'hello'), 'hello')
+assert.deepStrictEqual(SK(0, "hello"), "hello")
 ```
 
 **Signature**

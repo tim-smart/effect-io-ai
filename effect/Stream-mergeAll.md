@@ -7,8 +7,7 @@ buffered by this operator.
 To import and use `mergeAll` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mergeAll
 ```
@@ -17,12 +16,13 @@ Stream.mergeAll
 
 ```ts
 export declare const mergeAll: {
-  (options: { readonly concurrency: number | 'unbounded'; readonly bufferSize?: number }): <R, E, A>(
-    streams: Iterable<Stream<R, E, A>>
-  ) => Stream<R, E, A>
+  (options: {
+    readonly concurrency: number | "unbounded"
+    readonly bufferSize?: number | undefined
+  }): <R, E, A>(streams: Iterable<Stream<R, E, A>>) => Stream<R, E, A>
   <R, E, A>(
     streams: Iterable<Stream<R, E, A>>,
-    options: { readonly concurrency: number | 'unbounded'; readonly bufferSize?: number }
+    options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined }
   ): Stream<R, E, A>
 }
 ```

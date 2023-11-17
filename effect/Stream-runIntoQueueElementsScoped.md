@@ -6,8 +6,7 @@ to allow for scope composition.
 To import and use `runIntoQueueElementsScoped` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runIntoQueueElementsScoped
 ```
@@ -16,13 +15,12 @@ Stream.runIntoQueueElementsScoped
 
 ```ts
 export declare const runIntoQueueElementsScoped: {
-  <E, A>(queue: Queue.Enqueue<Exit.Exit<Option.Option<E>, A>>): <R>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R, never, void>
-  <R, E, A>(self: Stream<R, E, A>, queue: Queue.Enqueue<Exit.Exit<Option.Option<E>, A>>): Effect.Effect<
-    Scope.Scope | R,
-    never,
-    void
-  >
+  <E, A>(
+    queue: Queue.Enqueue<Exit.Exit<Option.Option<E>, A>>
+  ): <R>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, never, void>
+  <R, E, A>(
+    self: Stream<R, E, A>,
+    queue: Queue.Enqueue<Exit.Exit<Option.Option<E>, A>>
+  ): Effect.Effect<Scope.Scope | R, never, void>
 }
 ```

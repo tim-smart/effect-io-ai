@@ -6,8 +6,7 @@ since the first step.
 To import and use `elapsed` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.elapsed
 ```

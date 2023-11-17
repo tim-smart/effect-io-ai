@@ -7,8 +7,7 @@ Throws a `RangeError` if the divisor is `0`.
 To import and use `unsafeDivide` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.unsafeDivide
 ```
@@ -16,7 +15,7 @@ Number.unsafeDivide
 **Example**
 
 ```ts
-import { unsafeDivide } from 'effect/Number'
+import { unsafeDivide } from "effect/Number"
 
 assert.deepStrictEqual(unsafeDivide(6, 3), 2)
 ```

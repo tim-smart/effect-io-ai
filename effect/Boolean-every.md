@@ -5,8 +5,7 @@ This utility function is used to check if all the elements in a collection of bo
 To import and use `every` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.every
 ```
@@ -14,7 +13,7 @@ Boolean.every
 **Example**
 
 ```ts
-import { every } from 'effect/Boolean'
+import { every } from "effect/Boolean"
 
 assert.deepStrictEqual(every([true, true, true]), true)
 assert.deepStrictEqual(every([true, false, true]), false)

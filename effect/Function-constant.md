@@ -8,8 +8,7 @@ and want that inner function to always use the same value, no matter how many ti
 To import and use `constant` from the "Function" module:
 
 ```ts
-import * as Function from 'effect/Function'
-
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.constant
 ```
@@ -17,7 +16,7 @@ Function.constant
 **Example**
 
 ```ts
-import { constant } from 'effect/Function'
+import { constant } from "effect/Function"
 
 const constNull = constant(null)
 

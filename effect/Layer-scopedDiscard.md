@@ -5,8 +5,7 @@ Constructs a layer from the specified scoped effect.
 To import and use `scopedDiscard` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.scopedDiscard
 ```

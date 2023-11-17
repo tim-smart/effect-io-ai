@@ -6,8 +6,7 @@ into a list.
 To import and use `collectUntil` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.collectUntil
 ```

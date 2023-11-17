@@ -5,8 +5,7 @@ Takes a record and returns an array of tuples containing its keys and values.
 To import and use `fromRecord` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.fromRecord
 ```
@@ -14,13 +13,13 @@ ReadonlyArray.fromRecord
 **Example**
 
 ```ts
-import { fromRecord } from 'effect/ReadonlyArray'
+import { fromRecord } from "effect/ReadonlyArray"
 
 const x = { a: 1, b: 2, c: 3 }
 assert.deepStrictEqual(fromRecord(x), [
-  ['a', 1],
-  ['b', 2],
-  ['c', 3],
+  ["a", 1],
+  ["b", 2],
+  ["c", 3]
 ])
 ```
 

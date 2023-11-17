@@ -5,8 +5,7 @@ The number of times to repeat tests to ensure they are stable.
 To import and use `repeats` from the "TestServices" module:
 
 ```ts
-import * as TestServices from 'effect/TestServices'
-
+import * as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.repeats
 ```

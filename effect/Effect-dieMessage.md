@@ -7,8 +7,7 @@ defect has been detected in the code.
 To import and use `dieMessage` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.dieMessage
 ```

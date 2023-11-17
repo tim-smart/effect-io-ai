@@ -5,8 +5,7 @@ Return a `NonEmptyArray` containing a range of integers, including both endpoint
 To import and use `range` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.range
 ```
@@ -14,7 +13,7 @@ ReadonlyArray.range
 **Example**
 
 ```ts
-import { range } from 'effect/ReadonlyArray'
+import { range } from "effect/ReadonlyArray"
 
 assert.deepStrictEqual(range(1, 3), [1, 2, 3])
 ```

@@ -5,8 +5,7 @@ Atomically folds using a pure function.
 To import and use `reduce` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.reduce
 ```

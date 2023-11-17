@@ -6,8 +6,7 @@ represented by the specified `FiberId`.
 To import and use `threadName` from the "FiberId" module:
 
 ```ts
-import * as FiberId from 'effect/FiberId'
-
+import * as FiberId from "effect/FiberId"
 // Can be accessed like this
 FiberId.threadName
 ```

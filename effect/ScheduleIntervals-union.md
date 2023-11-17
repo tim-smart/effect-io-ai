@@ -5,8 +5,7 @@ Computes the union of this `Intervals` and that `Intervals`
 To import and use `union` from the "ScheduleIntervals" module:
 
 ```ts
-import * as ScheduleIntervals from 'effect/ScheduleIntervals'
-
+import * as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.union
 ```

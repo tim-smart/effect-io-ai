@@ -6,8 +6,7 @@ intermediate results of type `S` given an initial S.
 To import and use `scan` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.scan
 ```

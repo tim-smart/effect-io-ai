@@ -7,8 +7,7 @@ terminal value of this channel.
 To import and use `zipLeft` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.zipLeft
 ```
@@ -19,7 +18,7 @@ Channel.zipLeft
 export declare const zipLeft: {
   <Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>(
     that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    options?: { readonly concurrent?: boolean }
+    options?: { readonly concurrent?: boolean | undefined }
   ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<
@@ -34,7 +33,7 @@ export declare const zipLeft: {
   <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
     that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    options?: { readonly concurrent?: boolean }
+    options?: { readonly concurrent?: boolean | undefined }
   ): Channel<
     Env | Env1,
     InErr & InErr1,

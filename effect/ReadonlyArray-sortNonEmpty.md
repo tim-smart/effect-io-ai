@@ -5,8 +5,7 @@ Sort the elements of a `NonEmptyReadonlyArray` in increasing order, creating a n
 To import and use `sortNonEmpty` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.sortNonEmpty
 ```

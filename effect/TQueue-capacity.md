@@ -5,8 +5,7 @@ Returns the number of elements the queue can hold.
 To import and use `capacity` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.capacity
 ```

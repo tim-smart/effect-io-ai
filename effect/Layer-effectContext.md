@@ -6,8 +6,7 @@ services.
 To import and use `effectContext` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.effectContext
 ```

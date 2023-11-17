@@ -7,8 +7,7 @@ update value.
 To import and use `withConstantInput` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.withConstantInput
 ```

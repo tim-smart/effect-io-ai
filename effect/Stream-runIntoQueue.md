@@ -6,8 +6,7 @@ will also be signalled.
 To import and use `runIntoQueue` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runIntoQueue
 ```

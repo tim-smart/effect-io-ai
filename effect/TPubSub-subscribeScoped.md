@@ -7,8 +7,7 @@ each time.
 To import and use `subscribeScoped` from the "TPubSub" module:
 
 ```ts
-import * as TPubSub from 'effect/TPubSub'
-
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.subscribeScoped
 ```

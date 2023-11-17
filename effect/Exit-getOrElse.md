@@ -7,8 +7,7 @@ alternate `A` value computed from the specified function which receives the
 To import and use `getOrElse` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.getOrElse
 ```

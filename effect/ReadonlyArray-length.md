@@ -5,8 +5,7 @@ Return the number of elements in a `ReadonlyArray`.
 To import and use `length` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.length
 ```

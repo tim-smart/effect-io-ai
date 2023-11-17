@@ -7,8 +7,7 @@ elements to be added to the queue.
 To import and use `size` from the "PubSub" module:
 
 ```ts
-import * as PubSub from 'effect/PubSub'
-
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.size
 ```

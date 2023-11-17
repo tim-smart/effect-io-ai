@@ -5,8 +5,7 @@ Combines two booleans using EQV (aka XNOR): `!xor(self, that)`.
 To import and use `eqv` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.eqv
 ```
@@ -14,7 +13,7 @@ Boolean.eqv
 **Example**
 
 ```ts
-import { eqv } from 'effect/Boolean'
+import { eqv } from "effect/Boolean"
 
 assert.deepStrictEqual(eqv(true, true), true)
 assert.deepStrictEqual(eqv(true, false), false)

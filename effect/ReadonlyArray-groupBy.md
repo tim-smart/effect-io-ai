@@ -6,8 +6,7 @@ function on each element, and grouping the results according to values returned
 To import and use `groupBy` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.groupBy
 ```

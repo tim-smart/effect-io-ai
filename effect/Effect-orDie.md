@@ -6,8 +6,7 @@ unchecked and not a part of the type of the effect.
 To import and use `orDie` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orDie
 ```

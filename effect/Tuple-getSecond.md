@@ -5,8 +5,7 @@ Return the second element of a tuple.
 To import and use `getSecond` from the "Tuple" module:
 
 ```ts
-import * as Tuple from 'effect/Tuple'
-
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.getSecond
 ```
@@ -14,9 +13,9 @@ Tuple.getSecond
 **Example**
 
 ```ts
-import { getSecond } from 'effect/Tuple'
+import { getSecond } from "effect/Tuple"
 
-assert.deepStrictEqual(getSecond(['hello', 42]), 42)
+assert.deepStrictEqual(getSecond(["hello", 42]), 42)
 ```
 
 **Signature**

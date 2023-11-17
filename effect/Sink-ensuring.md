@@ -7,8 +7,7 @@ whether or not it completes).
 To import and use `ensuring` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.ensuring
 ```
@@ -17,9 +16,9 @@ Sink.ensuring
 
 ```ts
 export declare const ensuring: {
-  <R2, _>(finalizer: Effect.Effect<R2, never, _>): <R, E, In, L, Z>(
-    self: Sink<R, E, In, L, Z>
-  ) => Sink<R2 | R, E, In, L, Z>
+  <R2, _>(
+    finalizer: Effect.Effect<R2, never, _>
+  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E, In, L, Z>
   <R, E, In, L, Z, R2, _>(self: Sink<R, E, In, L, Z>, finalizer: Effect.Effect<R2, never, _>): Sink<R | R2, E, In, L, Z>
 }
 ```

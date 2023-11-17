@@ -5,8 +5,7 @@ Returns a `BrandErrors` that contains a single `RefinementError`.
 To import and use `error` from the "Brand" module:
 
 ```ts
-import * as Brand from 'effect/Brand'
-
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.error
 ```

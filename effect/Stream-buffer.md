@@ -6,8 +6,7 @@ buffering up to `capacity` elements in a queue.
 To import and use `buffer` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.buffer
 ```
@@ -18,14 +17,14 @@ Stream.buffer
 export declare const buffer: {
   (
     options:
-      | { readonly capacity: 'unbounded' }
-      | { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }
+      | { readonly capacity: "unbounded" }
+      | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
   ): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
   <R, E, A>(
     self: Stream<R, E, A>,
     options:
-      | { readonly capacity: 'unbounded' }
-      | { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }
+      | { readonly capacity: "unbounded" }
+      | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
   ): Stream<R, E, A>
 }
 ```

@@ -6,8 +6,7 @@ found, the `Option` object will be `None`.
 To import and use `getOption` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.getOption
 ```
@@ -15,8 +14,8 @@ Context.getOption
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
-import * as O from 'effect/Option'
+import * as Context from "effect/Context"
+import * as O from "effect/Option"
 
 const Port = Context.Tag<{ PORT: number }>()
 const Timeout = Context.Tag<{ TIMEOUT: number }>()

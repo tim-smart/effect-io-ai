@@ -8,8 +8,7 @@ It is useful when you need to compare two arrays of the same type and you have a
 To import and use `array` from the "Order" module:
 
 ```ts
-import * as Order from 'effect/Order'
-
+import * as Order from "effect/Order"
 // Can be accessed like this
 Order.array
 ```

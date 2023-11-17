@@ -5,8 +5,7 @@ Combines two predicates into a new predicate that returns `true` if both of the 
 To import and use `and` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.and
 ```
@@ -14,16 +13,16 @@ Predicate.and
 **Example**
 
 ```ts
-import * as P from 'effect/Predicate'
+import * as P from "effect/Predicate"
 
 const minLength = (n: number) => (s: string) => s.length >= n
 const maxLength = (n: number) => (s: string) => s.length <= n
 
 const length = (n: number) => P.and(minLength(n), maxLength(n))
 
-assert.deepStrictEqual(length(2)('aa'), true)
-assert.deepStrictEqual(length(2)('a'), false)
-assert.deepStrictEqual(length(2)('aaa'), false)
+assert.deepStrictEqual(length(2)("aa"), true)
+assert.deepStrictEqual(length(2)("a"), false)
+assert.deepStrictEqual(length(2)("aaa"), false)
 ```
 
 **Signature**

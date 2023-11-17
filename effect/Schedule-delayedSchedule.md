@@ -6,8 +6,7 @@ uses this delay to further delay intervals in the resulting schedule.
 To import and use `delayedSchedule` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.delayedSchedule
 ```

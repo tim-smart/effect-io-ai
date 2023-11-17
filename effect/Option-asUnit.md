@@ -7,8 +7,7 @@ This is useful when the value of the `Option` is not needed, but the presence or
 To import and use `asUnit` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.asUnit
 ```

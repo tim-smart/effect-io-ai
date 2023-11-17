@@ -5,8 +5,7 @@ Transforms the first component of a tuple using a given function.
 To import and use `mapFirst` from the "Tuple" module:
 
 ```ts
-import * as Tuple from 'effect/Tuple'
-
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.mapFirst
 ```
@@ -14,11 +13,11 @@ Tuple.mapFirst
 **Example**
 
 ```ts
-import { mapFirst } from 'effect/Tuple'
+import { mapFirst } from "effect/Tuple"
 
 assert.deepStrictEqual(
-  mapFirst(['hello', 42], (s) => s.toUpperCase()),
-  ['HELLO', 42]
+  mapFirst(["hello", 42], (s) => s.toUpperCase()),
+  ["HELLO", 42]
 )
 ```
 

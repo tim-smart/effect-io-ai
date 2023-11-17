@@ -5,8 +5,7 @@ This function provides a safe way to read a value at a particular index from a `
 To import and use `get` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.get
 ```

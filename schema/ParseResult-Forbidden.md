@@ -5,8 +5,7 @@ The `Forbidden` variant of the `ParseError` type represents an error that occurs
 To import and use `Forbidden` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from '@effect/schema/ParseResult'
-
+import * as ParseResult from "@effect/schema/ParseResult"
 // Can be accessed like this
 ParseResult.Forbidden
 ```

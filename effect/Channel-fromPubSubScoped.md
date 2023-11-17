@@ -5,8 +5,7 @@ Construct a `Channel` from a `PubSub` within a scoped effect.
 To import and use `fromPubSubScoped` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.fromPubSubScoped
 ```

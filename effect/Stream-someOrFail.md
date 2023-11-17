@@ -5,8 +5,7 @@ Extracts the optional value, or fails with the given error 'e'.
 To import and use `someOrFail` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.someOrFail
 ```

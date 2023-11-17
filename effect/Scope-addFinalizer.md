@@ -6,8 +6,7 @@ the scope is closed.
 To import and use `addFinalizer` from the "Scope" module:
 
 ```ts
-import * as Scope from 'effect/Scope'
-
+import * as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.addFinalizer
 ```

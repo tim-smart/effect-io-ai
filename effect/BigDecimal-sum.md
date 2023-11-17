@@ -5,8 +5,7 @@ Provides an addition operation on `BigDecimal`s.
 To import and use `sum` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.sum
 ```
@@ -14,9 +13,9 @@ BigDecimal.sum
 **Example**
 
 ```ts
-import { sum, unsafeFromString } from 'effect/BigDecimal'
+import { sum, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(sum(unsafeFromString('2'), unsafeFromString('3')), unsafeFromString('5'))
+assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("5"))
 ```
 
 **Signature**

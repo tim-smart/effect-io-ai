@@ -7,8 +7,7 @@ returned by the lookup function.
 To import and use `makeWith` from the "ScopedCache" module:
 
 ```ts
-import * as ScopedCache from 'effect/ScopedCache'
-
+import * as ScopedCache from "effect/ScopedCache"
 // Can be accessed like this
 ScopedCache.makeWith
 ```

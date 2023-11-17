@@ -6,8 +6,7 @@ by applying each `Equivalence` to the corresponding property of the struct.
 To import and use `struct` from the "Equivalence" module:
 
 ```ts
-import * as Equivalence from 'effect/Equivalence'
-
+import * as Equivalence from "effect/Equivalence"
 // Can be accessed like this
 Equivalence.struct
 ```

@@ -12,8 +12,7 @@ The size of the underlying pools can be configured per key.
 To import and use `makeWithTTLBy` from the "KeyedPool" module:
 
 ```ts
-import * as KeyedPool from 'effect/KeyedPool'
-
+import * as KeyedPool from "effect/KeyedPool"
 // Can be accessed like this
 KeyedPool.makeWithTTLBy
 ```

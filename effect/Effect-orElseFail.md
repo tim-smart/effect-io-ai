@@ -6,8 +6,7 @@ fails with the specified error.
 To import and use `orElseFail` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orElseFail
 ```

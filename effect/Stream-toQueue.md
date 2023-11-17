@@ -8,8 +8,7 @@ Defaults to the "suspend" back pressure strategy with a capacity of 2.
 To import and use `toQueue` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toQueue
 ```
@@ -20,14 +19,14 @@ Stream.toQueue
 export declare const toQueue: {
   (
     options?:
-      | { readonly strategy?: 'dropping' | 'sliding' | 'suspend'; readonly capacity?: number }
-      | { readonly strategy: 'unbounded' }
+      | { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined }
+      | { readonly strategy: "unbounded" }
   ): <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Take.Take<E, A>>>
   <R, E, A>(
     self: Stream<R, E, A>,
     options?:
-      | { readonly strategy?: 'dropping' | 'sliding' | 'suspend'; readonly capacity?: number }
-      | { readonly strategy: 'unbounded' }
+      | { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined }
+      | { readonly strategy: "unbounded" }
   ): Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Take.Take<E, A>>>
 }
 ```

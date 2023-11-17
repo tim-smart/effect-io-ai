@@ -12,8 +12,7 @@ streams are sorted by distinct keys.
 To import and use `zipAllSortedByKeyLeft` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipAllSortedByKeyLeft
 ```
@@ -26,7 +25,7 @@ export declare const zipAllSortedByKeyLeft: {
     readonly other: Stream<R2, E2, readonly [K, A2]>
     readonly defaultSelf: A
     readonly order: Order.Order<K>
-  }): <R, E>(self: Stream<R, E, readonly [K, A]>) => Stream<R2 | R, E2 | E, readonly [K, A]>
+  }): <R, E>(self: Stream<R, E, readonly [K, A]>) => Stream<R2 | R, E2 | E, [K, A]>
   <R, E, R2, E2, A2, A, K>(
     self: Stream<R, E, readonly [K, A]>,
     options: {
@@ -34,6 +33,6 @@ export declare const zipAllSortedByKeyLeft: {
       readonly defaultSelf: A
       readonly order: Order.Order<K>
     }
-  ): Stream<R | R2, E | E2, readonly [K, A]>
+  ): Stream<R | R2, E | E2, [K, A]>
 }
 ```

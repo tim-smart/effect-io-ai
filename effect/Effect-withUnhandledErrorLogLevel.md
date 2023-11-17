@@ -5,8 +5,7 @@ Decides wether child fibers will report or not unhandled errors via the logger
 To import and use `withUnhandledErrorLogLevel` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withUnhandledErrorLogLevel
 ```

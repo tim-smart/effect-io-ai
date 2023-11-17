@@ -5,8 +5,7 @@ Return the first index for which a predicate holds.
 To import and use `findFirstIndex` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.findFirstIndex
 ```

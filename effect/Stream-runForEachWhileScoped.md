@@ -6,8 +6,7 @@ finalization order can be controlled.
 To import and use `runForEachWhileScoped` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runForEachWhileScoped
 ```
@@ -16,13 +15,12 @@ Stream.runForEachWhileScoped
 
 ```ts
 export declare const runForEachWhileScoped: {
-  <A, R2, E2>(f: (a: A) => Effect.Effect<R2, E2, boolean>): <R, E>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R2 | R, E2 | E, void>
-  <R, E, A, R2, E2>(self: Stream<R, E, A>, f: (a: A) => Effect.Effect<R2, E2, boolean>): Effect.Effect<
-    Scope.Scope | R | R2,
-    E | E2,
-    void
-  >
+  <A, R2, E2>(
+    f: (a: A) => Effect.Effect<R2, E2, boolean>
+  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R2 | R, E2 | E, void>
+  <R, E, A, R2, E2>(
+    self: Stream<R, E, A>,
+    f: (a: A) => Effect.Effect<R2, E2, boolean>
+  ): Effect.Effect<Scope.Scope | R | R2, E | E2, void>
 }
 ```

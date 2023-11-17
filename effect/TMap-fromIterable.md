@@ -5,8 +5,7 @@ Makes a new `TMap` initialized with provided iterable.
 To import and use `fromIterable` from the "TMap" module:
 
 ```ts
-import * as TMap from 'effect/TMap'
-
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.fromIterable
 ```

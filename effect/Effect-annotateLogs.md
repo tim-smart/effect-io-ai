@@ -5,8 +5,7 @@ Annotates each log in this effect with the specified log annotation.
 To import and use `annotateLogs` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.annotateLogs
 ```

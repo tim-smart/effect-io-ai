@@ -5,8 +5,7 @@ Finds the first value in the tree associated with the specified key, if it exist
 To import and use `findFirst` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.findFirst
 ```

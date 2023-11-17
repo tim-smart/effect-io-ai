@@ -5,8 +5,7 @@ Atomically reduce the array, if non-empty, by a binary operator.
 To import and use `reduceOption` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.reduceOption
 ```

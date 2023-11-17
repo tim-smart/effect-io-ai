@@ -5,8 +5,7 @@ Find the last element for which a predicate holds.
 To import and use `findLast` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.findLast
 ```

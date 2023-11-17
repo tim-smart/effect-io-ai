@@ -6,8 +6,7 @@ the stream.
 To import and use `tapBoth` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.tapBoth
 ```

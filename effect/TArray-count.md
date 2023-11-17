@@ -5,8 +5,7 @@ Count the values in the array matching a predicate.
 To import and use `count` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.count
 ```

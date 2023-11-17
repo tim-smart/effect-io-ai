@@ -8,8 +8,7 @@ Appends an element to a tuple or throws an exception in the following cases:
 To import and use `appendElement` from the "AST" module:
 
 ```ts
-import * as AST from '@effect/schema/AST'
-
+import * as AST from "@effect/schema/AST"
 // Can be accessed like this
 AST.appendElement
 ```

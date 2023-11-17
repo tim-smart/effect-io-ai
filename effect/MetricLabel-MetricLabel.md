@@ -10,8 +10,7 @@ clients.
 To import and use `MetricLabel` from the "MetricLabel" module:
 
 ```ts
-import * as MetricLabel from 'effect/MetricLabel'
-
+import * as MetricLabel from "effect/MetricLabel"
 // Can be accessed like this
 MetricLabel.MetricLabel
 ```

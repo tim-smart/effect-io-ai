@@ -6,8 +6,7 @@ to combine old values with new values.
 To import and use `updateWith` from the "Differ" module:
 
 ```ts
-import * as Differ from 'effect/Differ'
-
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.updateWith
 ```

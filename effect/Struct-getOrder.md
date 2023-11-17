@@ -8,8 +8,7 @@ Alias of {@link order.struct}.
 To import and use `getOrder` from the "Struct" module:
 
 ```ts
-import * as Struct from 'effect/Struct'
-
+import * as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.getOrder
 ```

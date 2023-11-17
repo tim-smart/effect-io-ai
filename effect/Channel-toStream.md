@@ -5,8 +5,7 @@ Converts this channel to a `Stream`.
 To import and use `toStream` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.toStream
 ```

@@ -10,8 +10,7 @@ exists, or `None` if no such value exists.
 To import and use `modifyAt` from the "HashMap" module:
 
 ```ts
-import * as HashMap from 'effect/HashMap'
-
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.modifyAt
 ```

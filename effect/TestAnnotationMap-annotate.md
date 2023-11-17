@@ -5,8 +5,7 @@ Appends the specified annotation to the annotation map.
 To import and use `annotate` from the "TestAnnotationMap" module:
 
 ```ts
-import * as TestAnnotationMap from 'effect/TestAnnotationMap'
-
+import * as TestAnnotationMap from "effect/TestAnnotationMap"
 // Can be accessed like this
 TestAnnotationMap.annotate
 ```

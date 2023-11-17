@@ -6,8 +6,7 @@ govern behavior and features of the runtime system.
 To import and use `getRuntimeFlags` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.getRuntimeFlags
 ```

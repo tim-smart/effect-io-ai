@@ -8,8 +8,7 @@ previous ones. So the resulting record will only have the value of the last occu
 To import and use `fromEntries` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.fromEntries
 ```
@@ -17,11 +16,11 @@ ReadonlyRecord.fromEntries
 **Example**
 
 ```ts
-import { fromEntries } from 'effect/ReadonlyRecord'
+import { fromEntries } from "effect/ReadonlyRecord"
 
 const input: Array<[string, number]> = [
-  ['a', 1],
-  ['b', 2],
+  ["a", 1],
+  ["b", 2]
 ]
 
 assert.deepStrictEqual(fromEntries(input), { a: 1, b: 2 })

@@ -6,8 +6,7 @@ Runs an `Effect` workflow, returning a `Promise` which resolves with the
 To import and use `runPromiseExit` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.runPromiseExit
 ```

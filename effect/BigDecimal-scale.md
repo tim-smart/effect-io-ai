@@ -8,8 +8,7 @@ the nearest integer.
 To import and use `scale` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.scale
 ```

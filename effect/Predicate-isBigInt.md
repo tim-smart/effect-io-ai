@@ -5,8 +5,7 @@ Tests if a value is a `bigint`.
 To import and use `isBigInt` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isBigInt
 ```
@@ -14,7 +13,7 @@ Predicate.isBigInt
 **Example**
 
 ```ts
-import { isBigInt } from 'effect/Predicate'
+import { isBigInt } from "effect/Predicate"
 
 assert.deepStrictEqual(isBigInt(1n), true)
 

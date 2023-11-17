@@ -6,8 +6,7 @@ value in its domain.
 To import and use `collectFirstSTM` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.collectFirstSTM
 ```

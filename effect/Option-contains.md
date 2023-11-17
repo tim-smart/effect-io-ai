@@ -5,8 +5,7 @@ Returns a function that checks if an `Option` contains a given value using the d
 To import and use `contains` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.contains
 ```

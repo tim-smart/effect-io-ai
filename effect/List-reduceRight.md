@@ -6,8 +6,7 @@ with the last element of the list, using the specified initial value.
 To import and use `reduceRight` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.reduceRight
 ```

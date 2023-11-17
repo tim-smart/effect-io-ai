@@ -9,8 +9,7 @@ shrinkings to minimize large failures.
 To import and use `TestConfig` from the "TestConfig" module:
 
 ```ts
-import * as TestConfig from 'effect/TestConfig'
-
+import * as TestConfig from "effect/TestConfig"
 // Can be accessed like this
 TestConfig.TestConfig
 ```

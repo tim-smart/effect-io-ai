@@ -6,8 +6,7 @@ strict order of all the streams.
 To import and use `flatten` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.flatten
 ```
@@ -16,12 +15,13 @@ Stream.flatten
 
 ```ts
 export declare const flatten: {
-  (options?: { readonly concurrency?: number | 'unbounded'; readonly bufferSize?: number }): <R, E, R2, E2, A>(
-    self: Stream<R, E, Stream<R2, E2, A>>
-  ) => Stream<R | R2, E | E2, A>
+  (options?: {
+    readonly concurrency?: number | "unbounded" | undefined
+    readonly bufferSize?: number | undefined
+  }): <R, E, R2, E2, A>(self: Stream<R, E, Stream<R2, E2, A>>) => Stream<R | R2, E | E2, A>
   <R, E, R2, E2, A>(
     self: Stream<R, E, Stream<R2, E2, A>>,
-    options?: { readonly concurrency?: number | 'unbounded'; readonly bufferSize?: number }
+    options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
   ): Stream<R | R2, E | E2, A>
 }
 ```

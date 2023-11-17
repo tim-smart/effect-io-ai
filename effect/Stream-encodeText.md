@@ -5,8 +5,7 @@ Encode a stream of strings into a stream of Uint8Array chunks using the specifie
 To import and use `encodeText` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.encodeText
 ```

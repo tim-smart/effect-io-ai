@@ -11,8 +11,7 @@ Scheduled recurrences are in addition to the first execution, so that
 To import and use `repeatOrElse` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.repeatOrElse
 ```

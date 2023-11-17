@@ -5,8 +5,7 @@ Splits elements on a delimiter and transforms the splits into desired output.
 To import and use `splitOnChunk` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.splitOnChunk
 ```

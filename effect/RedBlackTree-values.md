@@ -5,8 +5,7 @@ Get all values present in the tree in order.
 To import and use `values` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.values
 ```

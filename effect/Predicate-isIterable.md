@@ -5,8 +5,7 @@ A guard that succeeds when the input is an `Iterable`.
 To import and use `isIterable` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isIterable
 ```
@@ -14,7 +13,7 @@ Predicate.isIterable
 **Example**
 
 ```ts
-import { isIterable } from 'effect/Predicate'
+import { isIterable } from "effect/Predicate"
 
 assert.deepStrictEqual(isIterable([]), true)
 assert.deepStrictEqual(isIterable(new Set()), true)

@@ -5,8 +5,7 @@ Apply a function to the head, creating a new `NonEmptyReadonlyArray`.
 To import and use `modifyNonEmptyHead` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.modifyNonEmptyHead
 ```

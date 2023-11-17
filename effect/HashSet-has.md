@@ -5,8 +5,7 @@ Checks if the specified value exists in the `HashSet`.
 To import and use `has` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.has
 ```

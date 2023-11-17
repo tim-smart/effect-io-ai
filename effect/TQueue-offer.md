@@ -5,8 +5,7 @@ Places one value in the queue.
 To import and use `offer` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.offer
 ```

@@ -5,8 +5,7 @@ Groups elements in chunks of up to `n` elements.
 To import and use `chunksOf` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.chunksOf
 ```

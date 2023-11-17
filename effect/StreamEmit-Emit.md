@@ -10,8 +10,7 @@ with an end of stream signal.
 To import and use `Emit` from the "StreamEmit" module:
 
 ```ts
-import * as StreamEmit from 'effect/StreamEmit'
-
+import * as StreamEmit from "effect/StreamEmit"
 // Can be accessed like this
 StreamEmit.Emit
 ```

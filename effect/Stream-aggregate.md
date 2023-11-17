@@ -15,8 +15,7 @@ Any sink can be used here, but see `Sink.foldWeightedEffect` and
 To import and use `aggregate` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.aggregate
 ```

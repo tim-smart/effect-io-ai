@@ -5,8 +5,7 @@ Sort the elements of a Chunk in increasing order, creating a new Chunk.
 To import and use `sort` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.sort
 ```

@@ -5,8 +5,7 @@ Return a tuple containing the first element, and a new `Array` of the remaining 
 To import and use `unprepend` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.unprepend
 ```

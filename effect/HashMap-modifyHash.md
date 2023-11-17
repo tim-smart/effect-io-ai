@@ -12,8 +12,7 @@ This function will always either update or insert a value into the `HashMap`.
 To import and use `modifyHash` from the "HashMap" module:
 
 ```ts
-import * as HashMap from 'effect/HashMap'
-
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.modifyHash
 ```

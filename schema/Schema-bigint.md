@@ -7,8 +7,7 @@ It returns an error if the value can't be converted (for example when non-numeri
 To import and use `bigint` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.bigint
 ```

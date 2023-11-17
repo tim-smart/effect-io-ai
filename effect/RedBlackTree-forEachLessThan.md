@@ -5,8 +5,7 @@ Visit each node of the tree in order with key lower then max.
 To import and use `forEachLessThan` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.forEachLessThan
 ```

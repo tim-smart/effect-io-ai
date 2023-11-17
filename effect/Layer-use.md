@@ -7,8 +7,7 @@ well as any leftover inputs, and the outputs of the specified builder.
 To import and use `use` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.use
 ```
@@ -17,13 +16,12 @@ Layer.use
 
 ```ts
 export declare const use: {
-  <RIn, E, ROut>(self: Layer<RIn, E, ROut>): <RIn2, E2, ROut2>(
-    that: Layer<RIn2, E2, ROut2>
-  ) => Layer<RIn | Exclude<RIn2, ROut>, E | E2, ROut2>
-  <RIn2, E2, ROut2, RIn, E, ROut>(that: Layer<RIn2, E2, ROut2>, self: Layer<RIn, E, ROut>): Layer<
-    RIn | Exclude<RIn2, ROut>,
-    E2 | E,
-    ROut2
-  >
+  <RIn, E, ROut>(
+    self: Layer<RIn, E, ROut>
+  ): <RIn2, E2, ROut2>(that: Layer<RIn2, E2, ROut2>) => Layer<RIn | Exclude<RIn2, ROut>, E | E2, ROut2>
+  <RIn2, E2, ROut2, RIn, E, ROut>(
+    that: Layer<RIn2, E2, ROut2>,
+    self: Layer<RIn, E, ROut>
+  ): Layer<RIn | Exclude<RIn2, ROut>, E2 | E, ROut2>
 }
 ```

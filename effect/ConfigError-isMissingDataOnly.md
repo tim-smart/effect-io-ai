@@ -5,8 +5,7 @@ Returns `true` if the specified `ConfigError` contains only `MissingData` errors
 To import and use `isMissingDataOnly` from the "ConfigError" module:
 
 ```ts
-import * as ConfigError from 'effect/ConfigError'
-
+import * as ConfigError from "effect/ConfigError"
 // Can be accessed like this
 ConfigError.isMissingDataOnly
 ```

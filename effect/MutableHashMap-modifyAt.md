@@ -6,8 +6,7 @@ update function.
 To import and use `modifyAt` from the "MutableHashMap" module:
 
 ```ts
-import * as MutableHashMap from 'effect/MutableHashMap'
-
+import * as MutableHashMap from "effect/MutableHashMap"
 // Can be accessed like this
 MutableHashMap.modifyAt
 ```

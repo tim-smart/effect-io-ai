@@ -5,8 +5,7 @@ Returns a function that checks if a given `number` is greater than or equal to t
 To import and use `greaterThanOrEqualTo` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.greaterThanOrEqualTo
 ```
@@ -14,7 +13,7 @@ Number.greaterThanOrEqualTo
 **Example**
 
 ```ts
-import { greaterThanOrEqualTo } from 'effect/Number'
+import { greaterThanOrEqualTo } from "effect/Number"
 
 assert.deepStrictEqual(greaterThanOrEqualTo(2, 3), false)
 assert.deepStrictEqual(greaterThanOrEqualTo(3, 3), true)

@@ -6,8 +6,7 @@ the provided default as a `Left`.
 To import and use `fromNullable` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.fromNullable
 ```
@@ -15,15 +14,15 @@ Either.fromNullable
 **Example**
 
 ```ts
-import * as Either from 'effect/Either'
+import * as Either from "effect/Either"
 
 assert.deepStrictEqual(
-  Either.fromNullable(1, () => 'fallback'),
+  Either.fromNullable(1, () => "fallback"),
   Either.right(1)
 )
 assert.deepStrictEqual(
-  Either.fromNullable(null, () => 'fallback'),
-  Either.left('fallback')
+  Either.fromNullable(null, () => "fallback"),
+  Either.left("fallback")
 )
 ```
 

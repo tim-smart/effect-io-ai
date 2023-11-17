@@ -5,8 +5,7 @@ Transforms a base64 `string` into a `Uint8Array`.
 To import and use `base64` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.base64
 ```

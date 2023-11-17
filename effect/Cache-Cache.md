@@ -20,8 +20,7 @@ will be returned to all fibers.
 To import and use `Cache` from the "Cache" module:
 
 ```ts
-import * as Cache from 'effect/Cache'
-
+import * as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.Cache
 ```

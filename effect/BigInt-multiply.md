@@ -5,8 +5,7 @@ Provides a multiplication operation on `bigint`s.
 To import and use `multiply` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.multiply
 ```
@@ -14,7 +13,7 @@ BigInt.multiply
 **Example**
 
 ```ts
-import { multiply } from 'effect/BigInt'
+import { multiply } from "effect/BigInt"
 
 assert.deepStrictEqual(multiply(2n, 3n), 6n)
 ```

@@ -9,8 +9,7 @@ the type the `Option` contains.
 To import and use `getOrder` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrder
 ```
@@ -18,9 +17,9 @@ Option.getOrder
 **Example**
 
 ```ts
-import { none, some, getOrder } from 'effect/Option'
-import * as N from 'effect/Number'
-import { pipe } from 'effect/Function'
+import { none, some, getOrder } from "effect/Option"
+import * as N from "effect/Number"
+import { pipe } from "effect/Function"
 
 const O = getOrder(N.Order)
 assert.deepStrictEqual(O(none(), none()), 0)

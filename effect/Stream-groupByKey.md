@@ -16,12 +16,12 @@ For example, to collect the first 2 words for every starting letter from a
 stream of words:
 
 ```ts
-import * as GroupBy from './GroupBy'
-import * as Stream from './Stream'
-import { pipe } from './Function'
+import * as GroupBy from "./GroupBy"
+import * as Stream from "./Stream"
+import { pipe } from "./Function"
 
 pipe(
-  Stream.fromIterable(['hello', 'world', 'hi', 'holla']),
+  Stream.fromIterable(["hello", "world", "hi", "holla"]),
   Stream.groupByKey((word) => word[0]),
   GroupBy.evaluate((key, stream) =>
     pipe(
@@ -36,8 +36,7 @@ pipe(
 To import and use `groupByKey` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.groupByKey
 ```
@@ -46,14 +45,14 @@ Stream.groupByKey
 
 ```ts
 export declare const groupByKey: {
-  <A, K>(f: (a: A) => K, options?: { readonly bufferSize?: number }): <R, E>(
-    self: Stream<R, E, A>
-  ) => GroupBy.GroupBy<R, E, K, A>
-  <R, E, A, K>(self: Stream<R, E, A>, f: (a: A) => K, options?: { readonly bufferSize?: number }): GroupBy.GroupBy<
-    R,
-    E,
-    K,
-    A
-  >
+  <A, K>(
+    f: (a: A) => K,
+    options?: { readonly bufferSize?: number | undefined }
+  ): <R, E>(self: Stream<R, E, A>) => GroupBy.GroupBy<R, E, K, A>
+  <R, E, A, K>(
+    self: Stream<R, E, A>,
+    f: (a: A) => K,
+    options?: { readonly bufferSize?: number | undefined }
+  ): GroupBy.GroupBy<R, E, K, A>
 }
 ```

@@ -5,8 +5,7 @@ Append an element to the end of an `Iterable`, creating a new `NonEmptyArray`.
 To import and use `append` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.append
 ```

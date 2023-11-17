@@ -5,8 +5,7 @@ Provides an addition operation on `number`s.
 To import and use `sum` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.sum
 ```
@@ -14,7 +13,7 @@ Number.sum
 **Example**
 
 ```ts
-import { sum } from 'effect/Number'
+import { sum } from "effect/Number"
 
 assert.deepStrictEqual(sum(2, 3), 5)
 ```

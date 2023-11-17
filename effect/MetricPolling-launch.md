@@ -6,8 +6,7 @@ fiber, using the specified schedule.
 To import and use `launch` from the "MetricPolling" module:
 
 ```ts
-import * as MetricPolling from 'effect/MetricPolling'
-
+import * as MetricPolling from "effect/MetricPolling"
 // Can be accessed like this
 MetricPolling.launch
 ```
@@ -16,7 +15,9 @@ MetricPolling.launch
 
 ```ts
 export declare const launch: {
-  <R2, A2>(schedule: Schedule.Schedule<R2, unknown, A2>): <Type, In, R, E, Out>(
+  <R2, A2>(
+    schedule: Schedule.Schedule<R2, unknown, A2>
+  ): <Type, In, R, E, Out>(
     self: PollingMetric<Type, In, R, E, Out>
   ) => Effect.Effect<Scope.Scope | R2 | R, never, Fiber.Fiber<E, A2>>
   <Type, In, R, E, Out, R2, A2>(

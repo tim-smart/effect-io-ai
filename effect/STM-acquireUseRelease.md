@@ -8,8 +8,7 @@ executed uninterruptibly as soon as the `use` workflow completes execution.
 To import and use `acquireUseRelease` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.acquireUseRelease
 ```
@@ -18,9 +17,10 @@ STM.acquireUseRelease
 
 ```ts
 export declare const acquireUseRelease: {
-  <A, R2, E2, A2, R3, E3, A3>(use: (resource: A) => STM<R2, E2, A2>, release: (resource: A) => STM<R3, E3, A3>): <R, E>(
-    acquire: STM<R, E, A>
-  ) => Effect.Effect<R2 | R3 | R, E2 | E3 | E, A2>
+  <A, R2, E2, A2, R3, E3, A3>(
+    use: (resource: A) => STM<R2, E2, A2>,
+    release: (resource: A) => STM<R3, E3, A3>
+  ): <R, E>(acquire: STM<R, E, A>) => Effect.Effect<R2 | R3 | R, E2 | E3 | E, A2>
   <R, E, A, R2, E2, A2, R3, E3, A3>(
     acquire: STM<R, E, A>,
     use: (resource: A) => STM<R2, E2, A2>,

@@ -5,8 +5,7 @@ Concatentates the specified lists together.
 To import and use `appendAll` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.appendAll
 ```

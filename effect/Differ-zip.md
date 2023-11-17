@@ -6,8 +6,7 @@ knows how to diff the product of their values.
 To import and use `zip` from the "Differ" module:
 
 ```ts
-import * as Differ from 'effect/Differ'
-
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.zip
 ```
@@ -16,12 +15,12 @@ Differ.zip
 
 ```ts
 export declare const zip: {
-  <Value2, Patch2>(that: Differ<Value2, Patch2>): <Value, Patch>(
-    self: Differ<Value, Patch>
-  ) => Differ<readonly [Value, Value2], readonly [Patch, Patch2]>
-  <Value, Patch, Value2, Patch2>(self: Differ<Value, Patch>, that: Differ<Value2, Patch2>): Differ<
-    readonly [Value, Value2],
-    readonly [Patch, Patch2]
-  >
+  <Value2, Patch2>(
+    that: Differ<Value2, Patch2>
+  ): <Value, Patch>(self: Differ<Value, Patch>) => Differ<readonly [Value, Value2], readonly [Patch, Patch2]>
+  <Value, Patch, Value2, Patch2>(
+    self: Differ<Value, Patch>,
+    that: Differ<Value2, Patch2>
+  ): Differ<readonly [Value, Value2], readonly [Patch, Patch2]>
 }
 ```

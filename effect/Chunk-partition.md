@@ -5,8 +5,7 @@ Separate elements based on a predicate that also exposes the index of the elemen
 To import and use `partition` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.partition
 ```

@@ -7,8 +7,7 @@ It always takes the sign of the dividend.
 To import and use `remainder` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.remainder
 ```
@@ -16,7 +15,7 @@ Number.remainder
 **Example**
 
 ```ts
-import { remainder } from 'effect/Number'
+import { remainder } from "effect/Number"
 
 assert.deepStrictEqual(remainder(2, 2), 0)
 assert.deepStrictEqual(remainder(3, 2), 1)

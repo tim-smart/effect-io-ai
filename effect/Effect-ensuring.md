@@ -13,8 +13,7 @@ logic built on `ensuring`, see the `acquireRelease` family of methods.
 To import and use `ensuring` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.ensuring
 ```

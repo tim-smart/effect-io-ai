@@ -9,8 +9,7 @@ Queues can unsubscribe from upstream by shutting down.
 To import and use `broadcastedQueues` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.broadcastedQueues
 ```
@@ -19,13 +18,16 @@ Stream.broadcastedQueues
 
 ```ts
 export declare const broadcastedQueues: {
-  <N extends number>(n: N, maximumLag: number): <R, E, A>(
+  <N extends number>(
+    n: N,
+    maximumLag: number
+  ): <R, E, A>(
     self: Stream<R, E, A>
   ) => Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Queue.Dequeue<Take.Take<E, A>>, N>>
-  <R, E, A, N extends number>(self: Stream<R, E, A>, n: N, maximumLag: number): Effect.Effect<
-    Scope.Scope | R,
-    never,
-    Stream.DynamicTuple<Queue.Dequeue<Take.Take<E, A>>, N>
-  >
+  <R, E, A, N extends number>(
+    self: Stream<R, E, A>,
+    n: N,
+    maximumLag: number
+  ): Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Queue.Dequeue<Take.Take<E, A>>, N>>
 }
 ```

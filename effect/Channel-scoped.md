@@ -5,8 +5,7 @@ Use a scoped effect to emit an output element.
 To import and use `scoped` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.scoped
 ```

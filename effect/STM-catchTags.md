@@ -5,8 +5,7 @@ Recovers from multiple tagged errors.
 To import and use `catchTags` from the "STM" module:
 
 ```ts
-import * as STM from 'effect/STM'
-
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.catchTags
 ```
@@ -17,7 +16,7 @@ STM.catchTags
 export declare const catchTags: {
   <
     E extends { _tag: string },
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
+    Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
   >(
     cases: Cases
   ): <R, A>(
@@ -34,7 +33,7 @@ export declare const catchTags: {
     R,
     E extends { _tag: string },
     A,
-    Cases extends { [K in E['_tag']]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
+    Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
   >(
     self: STM<R, E, A>,
     cases: Cases

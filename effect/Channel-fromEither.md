@@ -5,8 +5,7 @@ Constructs a channel from an `Either`.
 To import and use `fromEither` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.fromEither
 ```

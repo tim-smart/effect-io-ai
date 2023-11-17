@@ -5,8 +5,7 @@ A schedule that recurs during the given duration.
 To import and use `upTo` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.upTo
 ```

@@ -9,8 +9,7 @@ which indicates that an unexpected key was found in the object being decoded.
 To import and use `Key` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from '@effect/schema/ParseResult'
-
+import * as ParseResult from "@effect/schema/ParseResult"
 // Can be accessed like this
 ParseResult.Key
 ```

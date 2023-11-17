@@ -5,8 +5,7 @@ Recovers from all errors.
 To import and use `catchAll` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.catchAll
 ```

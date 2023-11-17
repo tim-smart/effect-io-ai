@@ -5,8 +5,7 @@ Tests if a value is an `object`.
 To import and use `isObject` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isObject
 ```
@@ -14,7 +13,7 @@ Predicate.isObject
 **Example**
 
 ```ts
-import { isObject } from 'effect/Predicate'
+import { isObject } from "effect/Predicate"
 
 assert.deepStrictEqual(isObject({}), true)
 assert.deepStrictEqual(isObject([]), true)

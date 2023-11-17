@@ -7,8 +7,7 @@ Retries if no elements satisfy the predicate.
 To import and use `seek` from the "TQueue" module:
 
 ```ts
-import * as TQueue from 'effect/TQueue'
-
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.seek
 ```

@@ -9,8 +9,7 @@ is a number, a `Type` decode error would be returned.
 To import and use `Type` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from '@effect/schema/ParseResult'
-
+import * as ParseResult from "@effect/schema/ParseResult"
 // Can be accessed like this
 ParseResult.Type
 ```

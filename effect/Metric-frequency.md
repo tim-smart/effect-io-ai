@@ -6,8 +6,7 @@ Frequency metrics are used to count the number of times specific events or incid
 To import and use `frequency` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.frequency
 ```
@@ -15,9 +14,9 @@ Metric.frequency
 **Example**
 
 ```ts
-import * as Metric from 'effect/Metric'
+import * as Metric from "effect/Metric"
 
-const errorFrequency = Metric.frequency('error_frequency', 'Counts the occurrences of errors.')
+const errorFrequency = Metric.frequency("error_frequency", "Counts the occurrences of errors.")
 ```
 
 **Signature**

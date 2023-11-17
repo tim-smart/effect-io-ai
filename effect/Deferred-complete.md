@@ -9,8 +9,7 @@ that if you do not need to memoize the result of the specified effect.
 To import and use `complete` from the "Deferred" module:
 
 ```ts
-import * as Deferred from 'effect/Deferred'
-
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.complete
 ```

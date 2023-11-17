@@ -5,8 +5,7 @@ Splits this chunk on the first element that matches this predicate.
 To import and use `splitWhere` from the "Chunk" module:
 
 ```ts
-import * as Chunk from 'effect/Chunk'
-
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.splitWhere
 ```

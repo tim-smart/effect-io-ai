@@ -6,8 +6,7 @@ functionality of `JSON.parse`. It also employs `JSON.stringify` for encoding.
 To import and use `ParseJson` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.ParseJson
 ```

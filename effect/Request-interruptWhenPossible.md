@@ -5,8 +5,7 @@ Interrupts the child effect when requests are no longer needed
 To import and use `interruptWhenPossible` from the "Request" module:
 
 ```ts
-import * as Request from 'effect/Request'
-
+import * as Request from "effect/Request"
 // Can be accessed like this
 Request.interruptWhenPossible
 ```

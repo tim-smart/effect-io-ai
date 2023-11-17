@@ -7,8 +7,7 @@ If an ExecutionStrategy is not provided `sequential` will be used.
 To import and use `make` from the "Scope" module:
 
 ```ts
-import * as Scope from 'effect/Scope'
-
+import * as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.make
 ```

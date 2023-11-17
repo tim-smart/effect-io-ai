@@ -10,8 +10,7 @@ underlying channel.
 To import and use `interruptWhenDeferred` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.interruptWhenDeferred
 ```
@@ -20,15 +19,9 @@ Channel.interruptWhenDeferred
 
 ```ts
 export declare const interruptWhenDeferred: {
-  <OutErr1, OutDone1>(deferred: Deferred.Deferred<OutErr1, OutDone1>): <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
-    OutElem,
-    OutDone
-  >(
+  <OutErr1, OutDone1>(
+    deferred: Deferred.Deferred<OutErr1, OutDone1>
+  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem, OutDone1 | OutDone>
   <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, OutErr1, OutDone1>(

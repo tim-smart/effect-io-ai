@@ -7,8 +7,7 @@ This function will produce incorrect results if the `BigDecimal` exceeds the 64-
 To import and use `unsafeToNumber` from the "BigDecimal" module:
 
 ```ts
-import * as BigDecimal from 'effect/BigDecimal'
-
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.unsafeToNumber
 ```
@@ -16,9 +15,9 @@ BigDecimal.unsafeToNumber
 **Example**
 
 ```ts
-import { unsafeToNumber, unsafeFromString } from 'effect/BigDecimal'
+import { unsafeToNumber, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(unsafeToNumber(unsafeFromString('123.456')), 123.456)
+assert.deepStrictEqual(unsafeToNumber(unsafeFromString("123.456")), 123.456)
 ```
 
 **Signature**

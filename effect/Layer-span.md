@@ -7,8 +7,7 @@ The span is ended when the Layer is released.
 To import and use `span` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.span
 ```
@@ -21,7 +20,7 @@ export declare const span: (
   options?:
     | {
         readonly attributes?: Record<string, unknown> | undefined
-        readonly links?: readonly Tracer.SpanLink[] | undefined
+        readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
         readonly parent?: Tracer.ParentSpan | undefined
         readonly root?: boolean | undefined
         readonly context?: Context.Context<never> | undefined

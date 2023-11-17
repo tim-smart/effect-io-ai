@@ -8,8 +8,7 @@ If what you were looking for was a combinator to trim strings, then check out th
 To import and use `trimmed` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.trimmed
 ```

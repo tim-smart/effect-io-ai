@@ -9,8 +9,7 @@ Schema<A> + B -> Schema<A & Brand<B>>
 To import and use `brand` from the "Schema" module:
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
-
+import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.brand
 ```
@@ -18,9 +17,9 @@ Schema.brand
 **Example**
 
 ```ts
-import * as Schema from '@effect/schema/Schema'
+import * as Schema from "@effect/schema/Schema"
 
-const Int = Schema.number.pipe(Schema.int(), Schema.brand('Int'))
+const Int = Schema.number.pipe(Schema.int(), Schema.brand("Int"))
 type Int = Schema.Schema.To<typeof Int> // number & Brand<"Int">
 ```
 

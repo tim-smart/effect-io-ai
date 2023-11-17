@@ -5,8 +5,7 @@ Transforms the full causes of failures emitted by this stream.
 To import and use `mapErrorCause` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mapErrorCause
 ```

@@ -6,8 +6,7 @@ specified initial value.
 To import and use `reduce` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.reduce
 ```

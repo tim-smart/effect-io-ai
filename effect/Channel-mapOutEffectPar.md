@@ -7,8 +7,7 @@ mapping them in parallel.
 To import and use `mapOutEffectPar` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapOutEffectPar
 ```
@@ -17,14 +16,10 @@ Channel.mapOutEffectPar
 
 ```ts
 export declare const mapOutEffectPar: {
-  <OutElem, Env1, OutErr1, OutElem1>(f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>, n: number): <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
-    OutDone
-  >(
+  <OutElem, Env1, OutErr1, OutElem1>(
+    f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>,
+    n: number
+  ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
     self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
   ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem1, OutDone>
   <Env, InErr, InElem, InDone, OutErr, OutDone, OutElem, Env1, OutErr1, OutElem1>(

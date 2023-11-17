@@ -6,8 +6,7 @@ buffering up to `capacity` chunks in a queue.
 To import and use `bufferChunks` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.bufferChunks
 ```
@@ -16,12 +15,13 @@ Stream.bufferChunks
 
 ```ts
 export declare const bufferChunks: {
-  (options: { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }): <R, E, A>(
-    self: Stream<R, E, A>
-  ) => Stream<R, E, A>
+  (options: {
+    readonly capacity: number
+    readonly strategy?: "dropping" | "sliding" | "suspend" | undefined
+  }): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
   <R, E, A>(
     self: Stream<R, E, A>,
-    options: { readonly capacity: number; readonly strategy?: 'dropping' | 'sliding' | 'suspend' }
+    options: { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
   ): Stream<R, E, A>
 }
 ```

@@ -6,8 +6,7 @@ propagated to all fibers waiting on the value of the `Deferred`.
 To import and use `done` from the "Deferred" module:
 
 ```ts
-import * as Deferred from 'effect/Deferred'
-
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.done
 ```

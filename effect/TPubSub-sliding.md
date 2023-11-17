@@ -8,8 +8,7 @@ For best performance use capacities that are powers of two.
 To import and use `sliding` from the "TPubSub" module:
 
 ```ts
-import * as TPubSub from 'effect/TPubSub'
-
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.sliding
 ```

@@ -5,8 +5,7 @@ A guard that succeeds when the input is a readonly record.
 To import and use `isReadonlyRecord` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isReadonlyRecord
 ```
@@ -14,7 +13,7 @@ Predicate.isReadonlyRecord
 **Example**
 
 ```ts
-import { isReadonlyRecord } from 'effect/Predicate'
+import { isReadonlyRecord } from "effect/Predicate"
 
 assert.deepStrictEqual(isReadonlyRecord({}), true)
 assert.deepStrictEqual(isReadonlyRecord({ a: 1 }), true)

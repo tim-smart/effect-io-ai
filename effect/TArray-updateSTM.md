@@ -5,8 +5,7 @@ Atomically updates element in the array with given transactional effect.
 To import and use `updateSTM` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.updateSTM
 ```

@@ -7,8 +7,7 @@ Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.
 To import and use `makeBy` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.makeBy
 ```
@@ -16,7 +15,7 @@ ReadonlyArray.makeBy
 **Example**
 
 ```ts
-import { makeBy } from 'effect/ReadonlyArray'
+import { makeBy } from "effect/ReadonlyArray"
 
 assert.deepStrictEqual(
   makeBy(5, (n) => n * 2),

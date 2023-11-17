@@ -6,8 +6,7 @@ specified index does not exist.
 To import and use `getAt` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.getAt
 ```
@@ -16,7 +15,7 @@ RedBlackTree.getAt
 
 ```ts
 export declare const getAt: {
-  (index: number): <K, V>(self: RedBlackTree<K, V>) => Option<readonly [K, V]>
-  <K, V>(self: RedBlackTree<K, V>, index: number): Option<readonly [K, V]>
+  (index: number): <K, V>(self: RedBlackTree<K, V>) => Option<[K, V]>
+  <K, V>(self: RedBlackTree<K, V>, index: number): Option<[K, V]>
 }
 ```

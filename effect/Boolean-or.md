@@ -5,8 +5,7 @@ Combines two boolean using OR: `self || that`.
 To import and use `or` from the "Boolean" module:
 
 ```ts
-import * as Boolean from 'effect/Boolean'
-
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.or
 ```
@@ -14,7 +13,7 @@ Boolean.or
 **Example**
 
 ```ts
-import { or } from 'effect/Boolean'
+import { or } from "effect/Boolean"
 
 assert.deepStrictEqual(or(true, true), true)
 assert.deepStrictEqual(or(true, false), true)

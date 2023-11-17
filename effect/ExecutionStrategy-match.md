@@ -6,8 +6,7 @@ functions.
 To import and use `match` from the "ExecutionStrategy" module:
 
 ```ts
-import * as ExecutionStrategy from 'effect/ExecutionStrategy'
-
+import * as ExecutionStrategy from "effect/ExecutionStrategy"
 // Can be accessed like this
 ExecutionStrategy.match
 ```

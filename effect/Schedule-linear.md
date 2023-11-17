@@ -7,8 +7,7 @@ the current duration between recurrences.
 To import and use `linear` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.linear
 ```

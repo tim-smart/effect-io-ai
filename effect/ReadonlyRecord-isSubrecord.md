@@ -6,8 +6,7 @@ This comparison uses default equality checks (`Equal.equivalence()`).
 To import and use `isSubrecord` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.isSubrecord
 ```

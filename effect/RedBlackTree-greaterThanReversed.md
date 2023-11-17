@@ -6,8 +6,7 @@ than the specified key.
 To import and use `greaterThanReversed` from the "RedBlackTree" module:
 
 ```ts
-import * as RedBlackTree from 'effect/RedBlackTree'
-
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.greaterThanReversed
 ```
@@ -16,7 +15,7 @@ RedBlackTree.greaterThanReversed
 
 ```ts
 export declare const greaterThanReversed: {
-  <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<readonly [K, V]>
-  <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<readonly [K, V]>
+  <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
+  <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<[K, V]>
 }
 ```

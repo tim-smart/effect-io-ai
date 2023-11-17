@@ -5,8 +5,7 @@ Mutates the `HashSet` within the context of the provided function.
 To import and use `mutate` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.mutate
 ```

@@ -10,8 +10,7 @@ Throws a `RangeError` if the divisor is `0n`.
 To import and use `unsafeDivide` from the "BigInt" module:
 
 ```ts
-import * as BigInt from 'effect/BigInt'
-
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.unsafeDivide
 ```
@@ -19,7 +18,7 @@ BigInt.unsafeDivide
 **Example**
 
 ```ts
-import { unsafeDivide } from 'effect/BigInt'
+import { unsafeDivide } from "effect/BigInt"
 
 assert.deepStrictEqual(unsafeDivide(6n, 3n), 2n)
 assert.deepStrictEqual(unsafeDivide(6n, 4n), 1n)

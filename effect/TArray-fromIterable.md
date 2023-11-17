@@ -5,8 +5,7 @@ Makes a new `TArray` initialized with provided iterable.
 To import and use `fromIterable` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.fromIterable
 ```

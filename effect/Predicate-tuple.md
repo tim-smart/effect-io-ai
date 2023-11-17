@@ -9,8 +9,7 @@ Similar to `Promise.all` but operates on `Predicate`s.
 To import and use `tuple` from the "Predicate" module:
 
 ```ts
-import * as Predicate from 'effect/Predicate'
-
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.tuple
 ```

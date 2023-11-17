@@ -5,8 +5,7 @@ Makes a new `TPriorityQueue` initialized with provided iterable.
 To import and use `fromIterable` from the "TPriorityQueue" module:
 
 ```ts
-import * as TPriorityQueue from 'effect/TPriorityQueue'
-
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.fromIterable
 ```

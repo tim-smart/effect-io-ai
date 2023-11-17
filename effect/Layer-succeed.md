@@ -5,8 +5,7 @@ Constructs a layer from the specified value.
 To import and use `succeed` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.succeed
 ```
@@ -15,13 +14,12 @@ Layer.succeed
 
 ```ts
 export declare const succeed: {
-  <T extends Context.Tag<any, any>>(tag: T): (
+  <T extends Context.Tag<any, any>>(
+    tag: T
+  ): (resource: Context.Tag.Service<T>) => Layer<never, never, Context.Tag.Identifier<T>>
+  <T extends Context.Tag<any, any>>(
+    tag: T,
     resource: Context.Tag.Service<T>
-  ) => Layer<never, never, Context.Tag.Identifier<T>>
-  <T extends Context.Tag<any, any>>(tag: T, resource: Context.Tag.Service<T>): Layer<
-    never,
-    never,
-    Context.Tag.Identifier<T>
-  >
+  ): Layer<never, never, Context.Tag.Identifier<T>>
 }
 ```

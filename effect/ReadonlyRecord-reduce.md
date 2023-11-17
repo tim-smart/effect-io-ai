@@ -5,8 +5,7 @@ Reduce a record to a single value by combining its entries with a specified func
 To import and use `reduce` from the "ReadonlyRecord" module:
 
 ```ts
-import * as ReadonlyRecord from 'effect/ReadonlyRecord'
-
+import * as ReadonlyRecord from "effect/ReadonlyRecord"
 // Can be accessed like this
 ReadonlyRecord.reduce
 ```

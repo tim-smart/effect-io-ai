@@ -5,8 +5,7 @@ Depending on the `Ordering` parameter given to it, returns a value produced by o
 To import and use `match` from the "Ordering" module:
 
 ```ts
-import * as Ordering from 'effect/Ordering'
-
+import * as Ordering from "effect/Ordering"
 // Can be accessed like this
 Ordering.match
 ```
@@ -14,18 +13,18 @@ Ordering.match
 **Example**
 
 ```ts
-import { match } from 'effect/Ordering'
-import { constant } from 'effect/Function'
+import { match } from "effect/Ordering"
+import { constant } from "effect/Function"
 
 const toMessage = match({
-  onLessThan: constant('less than'),
-  onEqual: constant('equal'),
-  onGreaterThan: constant('greater than'),
+  onLessThan: constant("less than"),
+  onEqual: constant("equal"),
+  onGreaterThan: constant("greater than")
 })
 
-assert.deepStrictEqual(toMessage(-1), 'less than')
-assert.deepStrictEqual(toMessage(0), 'equal')
-assert.deepStrictEqual(toMessage(1), 'greater than')
+assert.deepStrictEqual(toMessage(-1), "less than")
+assert.deepStrictEqual(toMessage(0), "equal")
+assert.deepStrictEqual(toMessage(1), "greater than")
 ```
 
 **Signature**

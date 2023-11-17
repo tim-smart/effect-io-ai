@@ -23,8 +23,7 @@ will cause a query to die with a `QueryFailure` when run.
 To import and use `RequestResolver` from the "RequestResolver" module:
 
 ```ts
-import * as RequestResolver from 'effect/RequestResolver'
-
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.RequestResolver
 ```

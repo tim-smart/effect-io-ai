@@ -10,8 +10,7 @@ will continue but no longer backpressure on them.
 To import and use `distributedWithDynamic` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.distributedWithDynamic
 ```
@@ -28,7 +27,7 @@ export declare const distributedWithDynamic: {
   ) => Effect.Effect<
     Scope.Scope | R,
     never,
-    Effect.Effect<never, never, readonly [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
+    Effect.Effect<never, never, [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
   >
   <R, E, A, _>(
     self: Stream<R, E, A>,
@@ -36,7 +35,7 @@ export declare const distributedWithDynamic: {
   ): Effect.Effect<
     Scope.Scope | R,
     never,
-    Effect.Effect<never, never, readonly [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
+    Effect.Effect<never, never, [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
   >
 }
 ```

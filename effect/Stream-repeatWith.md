@@ -8,8 +8,7 @@ be unified with the stream elements using the provided functions.
 To import and use `repeatWith` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.repeatWith
 ```

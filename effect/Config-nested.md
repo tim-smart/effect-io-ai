@@ -6,8 +6,7 @@ specified name.
 To import and use `nested` from the "Config" module:
 
 ```ts
-import * as Config from 'effect/Config'
-
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.nested
 ```

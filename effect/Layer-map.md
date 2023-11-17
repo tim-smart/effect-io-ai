@@ -5,8 +5,7 @@ Returns a new layer whose output is mapped by the specified function.
 To import and use `map` from the "Layer" module:
 
 ```ts
-import * as Layer from 'effect/Layer'
-
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.map
 ```

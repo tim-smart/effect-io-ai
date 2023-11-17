@@ -5,8 +5,7 @@ Succeeds with the specified value if this one fails with a typed error.
 To import and use `orElseSucceed` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.orElseSucceed
 ```

@@ -9,8 +9,7 @@ Takes a structure of `Option`s and returns an `Option` of values with the same s
 To import and use `all` from the "Either" module:
 
 ```ts
-import * as Either from 'effect/Either'
-
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.all
 ```
@@ -18,11 +17,11 @@ Either.all
 **Example**
 
 ```ts
-import * as Either from 'effect/Either'
+import * as Either from "effect/Either"
 
 assert.deepStrictEqual(Either.all([Either.right(1), Either.right(2)]), Either.right([1, 2]))
-assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.right('hello') }), Either.right({ a: 1, b: 'hello' }))
-assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.left('error') }), Either.left('error'))
+assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.right("hello") }), Either.right({ a: 1, b: "hello" }))
+assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.left("error") }), Either.left("error"))
 ```
 
 **Signature**
@@ -36,9 +35,9 @@ export declare const all: <const I extends Iterable<Either<any, any>> | Record<s
       { -readonly [K in keyof I]: [I[K]] extends [Either<any, infer A>] ? A : never }
     >
   : [I] extends [Iterable<Either<infer E, infer A>>]
-  ? Either<E, A[]>
-  : Either<
-      I[keyof I] extends never ? never : [I[keyof I]] extends [Either<infer E, any>] ? E : never,
-      { -readonly [K in keyof I]: [I[K]] extends [Either<any, infer A>] ? A : never }
-    >
+    ? Either<E, A[]>
+    : Either<
+        I[keyof I] extends never ? never : [I[keyof I]] extends [Either<infer E, any>] ? E : never,
+        { -readonly [K in keyof I]: [I[K]] extends [Either<any, infer A>] ? A : never }
+      >
 ```

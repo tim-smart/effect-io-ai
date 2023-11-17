@@ -6,8 +6,7 @@ functions.
 To import and use `zipWith` from the "Exit" module:
 
 ```ts
-import * as Exit from 'effect/Exit'
-
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.zipWith
 ```

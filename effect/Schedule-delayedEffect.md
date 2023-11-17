@@ -6,8 +6,7 @@ before the start of each interval produced by this schedule.
 To import and use `delayedEffect` from the "Schedule" module:
 
 ```ts
-import * as Schedule from 'effect/Schedule'
-
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.delayedEffect
 ```
@@ -16,9 +15,9 @@ Schedule.delayedEffect
 
 ```ts
 export declare const delayedEffect: {
-  <Env2>(f: (duration: Duration.Duration) => Effect.Effect<Env2, never, Duration.DurationInput>): <Env, In, Out>(
-    self: Schedule<Env, In, Out>
-  ) => Schedule<Env2 | Env, In, Out>
+  <Env2>(
+    f: (duration: Duration.Duration) => Effect.Effect<Env2, never, Duration.DurationInput>
+  ): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
   <Env, In, Out, Env2>(
     self: Schedule<Env, In, Out>,
     f: (duration: Duration.Duration) => Effect.Effect<Env2, never, Duration.DurationInput>

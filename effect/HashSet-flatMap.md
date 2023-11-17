@@ -5,8 +5,7 @@ Chains over the values of the `HashSet` using the specified function.
 To import and use `flatMap` from the "HashSet" module:
 
 ```ts
-import * as HashSet from 'effect/HashSet'
-
+import * as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.flatMap
 ```

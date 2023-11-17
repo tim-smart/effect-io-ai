@@ -7,8 +7,7 @@ the metric as a tag (i.e. `"time_unit: milliseconds"`).
 To import and use `timer` from the "Metric" module:
 
 ```ts
-import * as Metric from 'effect/Metric'
-
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.timer
 ```

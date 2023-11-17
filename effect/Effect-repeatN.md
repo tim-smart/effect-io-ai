@@ -8,8 +8,7 @@ that succeeds, executes `io` an additional time.
 To import and use `repeatN` from the "Effect" module:
 
 ```ts
-import * as Effect from 'effect/Effect'
-
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.repeatN
 ```

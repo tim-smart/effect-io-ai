@@ -6,8 +6,7 @@ This function ensures that a type guard definition is type-safe.
 To import and use `toRefinement` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.toRefinement
 ```
@@ -15,7 +14,7 @@ Option.toRefinement
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const parsePositive = (n: number): O.Option<number> => (n > 0 ? O.some(n) : O.none())
 

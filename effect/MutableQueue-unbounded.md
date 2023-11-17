@@ -5,8 +5,7 @@ Creates a new unbounded `MutableQueue`.
 To import and use `unbounded` from the "MutableQueue" module:
 
 ```ts
-import * as MutableQueue from 'effect/MutableQueue'
-
+import * as MutableQueue from "effect/MutableQueue"
 // Can be accessed like this
 MutableQueue.unbounded
 ```

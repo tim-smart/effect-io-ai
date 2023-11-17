@@ -5,8 +5,7 @@ Updates the value of the specified key within the `MutableHashMap` if it exists.
 To import and use `modify` from the "MutableHashMap" module:
 
 ```ts
-import * as MutableHashMap from 'effect/MutableHashMap'
-
+import * as MutableHashMap from "effect/MutableHashMap"
 // Can be accessed like this
 MutableHashMap.modify
 ```

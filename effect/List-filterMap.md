@@ -7,8 +7,7 @@ function not being defined for some elements.
 To import and use `filterMap` from the "List" module:
 
 ```ts
-import * as List from 'effect/List'
-
+import * as List from "effect/List"
 // Can be accessed like this
 List.filterMap
 ```

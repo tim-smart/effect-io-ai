@@ -6,8 +6,7 @@ name.
 To import and use `frequency` from the "MetricKey" module:
 
 ```ts
-import * as MetricKey from 'effect/MetricKey'
-
+import * as MetricKey from "effect/MetricKey"
 // Can be accessed like this
 MetricKey.frequency
 ```

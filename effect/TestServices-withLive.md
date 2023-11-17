@@ -6,8 +6,7 @@ live service.
 To import and use `withLive` from the "TestServices" module:
 
 ```ts
-import * as TestServices from 'effect/TestServices'
-
+import * as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.withLive
 ```

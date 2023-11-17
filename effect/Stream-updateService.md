@@ -5,8 +5,7 @@ Updates the specified service within the context of the `Stream`.
 To import and use `updateService` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.updateService
 ```

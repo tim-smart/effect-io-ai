@@ -6,8 +6,7 @@ with exponentially increasing values.
 To import and use `exponential` from the "MetricBoundaries" module:
 
 ```ts
-import * as MetricBoundaries from 'effect/MetricBoundaries'
-
+import * as MetricBoundaries from "effect/MetricBoundaries"
 // Can be accessed like this
 MetricBoundaries.exponential
 ```

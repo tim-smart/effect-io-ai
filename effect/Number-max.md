@@ -5,8 +5,7 @@ Returns the maximum between two `number`s.
 To import and use `max` from the "Number" module:
 
 ```ts
-import * as Number from 'effect/Number'
-
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.max
 ```
@@ -14,7 +13,7 @@ Number.max
 **Example**
 
 ```ts
-import { max } from 'effect/Number'
+import { max } from "effect/Number"
 
 assert.deepStrictEqual(max(2, 3), 3)
 ```

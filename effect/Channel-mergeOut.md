@@ -6,8 +6,7 @@ channel using the back pressuring merge strategy. See `Channel.mergeAll`.
 To import and use `mergeOut` from the "Channel" module:
 
 ```ts
-import * as Channel from 'effect/Channel'
-
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mergeOut
 ```
@@ -16,7 +15,9 @@ Channel.mergeOut
 
 ```ts
 export declare const mergeOut: {
-  (n: number): <Env, Env1, InErr, InErr1, InElem, InElem1, InDone, InDone1, OutErr, OutErr1, OutElem1, OutDone, Z>(
+  (
+    n: number
+  ): <Env, Env1, InErr, InErr1, InElem, InElem1, InDone, InDone1, OutErr, OutErr1, OutElem1, OutDone, Z>(
     self: Channel<
       Env,
       InErr,

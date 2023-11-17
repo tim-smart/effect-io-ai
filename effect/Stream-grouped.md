@@ -5,8 +5,7 @@ Partitions the stream with specified `chunkSize`.
 To import and use `grouped` from the "Stream" module:
 
 ```ts
-import * as Stream from 'effect/Stream'
-
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.grouped
 ```

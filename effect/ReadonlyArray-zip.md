@@ -7,8 +7,7 @@ longer `Iterable` are discarded.
 To import and use `zip` from the "ReadonlyArray" module:
 
 ```ts
-import * as ReadonlyArray from 'effect/ReadonlyArray'
-
+import * as ReadonlyArray from "effect/ReadonlyArray"
 // Can be accessed like this
 ReadonlyArray.zip
 ```

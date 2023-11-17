@@ -7,8 +7,7 @@ Useful when in addition to filtering you also want to change the type of the `Op
 To import and use `filterMap` from the "Option" module:
 
 ```ts
-import * as Option from 'effect/Option'
-
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.filterMap
 ```
@@ -16,7 +15,7 @@ Option.filterMap
 **Example**
 
 ```ts
-import * as O from 'effect/Option'
+import * as O from "effect/Option"
 
 const evenNumber = (n: number) => (n % 2 === 0 ? O.some(n) : O.none())
 

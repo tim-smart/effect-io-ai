@@ -5,8 +5,7 @@ The start of the earliest interval in the specified `Intervals`.
 To import and use `start` from the "ScheduleIntervals" module:
 
 ```ts
-import * as ScheduleIntervals from 'effect/ScheduleIntervals'
-
+import * as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.start
 ```

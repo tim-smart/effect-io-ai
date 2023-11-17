@@ -5,8 +5,7 @@ Extracts value from ref in array.
 To import and use `get` from the "TArray" module:
 
 ```ts
-import * as TArray from 'effect/TArray'
-
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.get
 ```

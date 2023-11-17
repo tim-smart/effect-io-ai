@@ -36,8 +36,7 @@ effect value, and consequently it allows the sink to fail.
 To import and use `foldWeightedDecompose` from the "Sink" module:
 
 ```ts
-import * as Sink from 'effect/Sink'
-
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldWeightedDecompose
 ```

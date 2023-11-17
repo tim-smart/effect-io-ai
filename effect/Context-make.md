@@ -5,8 +5,7 @@ Creates a new `Context` with a single service associated to the tag.
 To import and use `make` from the "Context" module:
 
 ```ts
-import * as Context from 'effect/Context'
-
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.make
 ```
@@ -14,7 +13,7 @@ Context.make
 **Example**
 
 ```ts
-import * as Context from 'effect/Context'
+import * as Context from "effect/Context"
 
 const Port = Context.Tag<{ PORT: number }>()
 
