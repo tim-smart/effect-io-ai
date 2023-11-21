@@ -13,5 +13,5 @@ ReadonlyArray.unappend
 **Signature**
 
 ```ts
-export declare const unappend: <A>(self: readonly [A, ...A[]]) => [A[], A]
+export declare const unappend: <A>(self: readonly [A, ...A[]]) => [arrayWithoutLastElement: A[], lastElement: A]
 ```

@@ -14,6 +14,6 @@ MetricPolling.pollAndUpdate
 
 ```ts
 export declare const pollAndUpdate: <Type, In, R, E, Out>(
-  self: PollingMetric<Type, In, R, E, Out>
+  self: MetricPolling<Type, In, R, E, Out>
 ) => Effect.Effect<R, E, void>
 ```

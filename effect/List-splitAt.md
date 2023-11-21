@@ -14,7 +14,7 @@ List.splitAt
 
 ```ts
 export declare const splitAt: {
-  (n: number): <A>(self: List<A>) => [List<A>, List<A>]
-  <A>(self: List<A>, n: number): [List<A>, List<A>]
+  (n: number): <A>(self: List<A>) => [beforeIndex: List<A>, fromIndex: List<A>]
+  <A>(self: List<A>, n: number): [beforeIndex: List<A>, fromIndex: List<A>]
 }
 ```

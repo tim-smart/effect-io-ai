@@ -20,12 +20,12 @@ HashSet.partition
 export declare const partition: {
   <C extends A, B extends A, A = C>(
     refinement: Refinement<A, B>
-  ): (self: HashSet<C>) => [HashSet<Exclude<C, B>>, HashSet<B>]
-  <B extends A, A = B>(predicate: (a: A) => boolean): (self: HashSet<B>) => [HashSet<B>, HashSet<B>]
-  <C extends A, B extends A, A = C>(
-    self: HashSet<C>,
+  ): (self: HashSet<C>) => [excluded: HashSet<Exclude<C, B>>, satisfying: HashSet<B>]
+  <B extends A, A = B>(predicate: Predicate<A>): (self: HashSet<B>) => [excluded: HashSet<B>, satisfying: HashSet<B>]
+  <A, B extends A>(
+    self: HashSet<A>,
     refinement: Refinement<A, B>
-  ): [HashSet<Exclude<C, B>>, HashSet<B>]
-  <B extends A, A = B>(self: HashSet<B>, predicate: (a: A) => boolean): [HashSet<B>, HashSet<B>]
+  ): [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]
+  <A>(self: HashSet<A>, predicate: Predicate<A>): [excluded: HashSet<A>, satisfying: HashSet<A>]
 }
 ```

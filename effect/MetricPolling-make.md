@@ -16,5 +16,5 @@ MetricPolling.make
 export declare const make: <Type, In, Out, R, E>(
   metric: Metric.Metric<Type, In, Out>,
   poll: Effect.Effect<R, E, In>
-) => PollingMetric<Type, In, R, E, Out>
+) => MetricPolling<Type, In, R, E, Out>
 ```

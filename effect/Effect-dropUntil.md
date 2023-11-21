@@ -14,7 +14,9 @@ Effect.dropUntil
 
 ```ts
 export declare const dropUntil: {
-  <A, R, E>(predicate: (a: A, i: number) => Effect<R, E, boolean>): (elements: Iterable<A>) => Effect<R, E, A[]>
+  <B extends A, R, E, A = B>(
+    predicate: (a: A, i: number) => Effect<R, E, boolean>
+  ): (elements: Iterable<B>) => Effect<R, E, B[]>
   <A, R, E>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<R, E, boolean>): Effect<R, E, A[]>
 }
 ```

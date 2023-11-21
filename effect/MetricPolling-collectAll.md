@@ -15,6 +15,6 @@ MetricPolling.collectAll
 
 ```ts
 export declare const collectAll: <R, E, Out>(
-  iterable: Iterable<PollingMetric<any, any, R, E, Out>>
-) => PollingMetric<any[], any[], R, E, Out[]>
+  iterable: Iterable<MetricPolling<any, any, R, E, Out>>
+) => MetricPolling<any[], any[], R, E, Out[]>
 ```

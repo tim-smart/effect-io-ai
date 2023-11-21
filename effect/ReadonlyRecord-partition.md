@@ -27,17 +27,17 @@ assert.deepStrictEqual(
 export declare const partition: {
   <K extends string, C extends A, B extends A, A = C>(
     refinement: (a: A, key: K) => a is B
-  ): (self: Record<K, C>) => [Record<string, C>, Record<string, B>]
+  ): (self: Record<K, C>) => [excluded: Record<string, Exclude<C, B>>, satisfying: Record<string, B>]
   <K extends string, B extends A, A = B>(
     predicate: (a: A, key: K) => boolean
-  ): (self: Record<K, B>) => [Record<string, B>, Record<string, B>]
-  <K extends string, C extends A, B extends A, A = C>(
-    self: Record<K, C>,
+  ): (self: Record<K, B>) => [excluded: Record<string, B>, satisfying: Record<string, B>]
+  <K extends string, A, B extends A>(
+    self: Record<K, A>,
     refinement: (a: A, key: K) => a is B
-  ): [Record<string, C>, Record<string, B>]
-  <K extends string, B extends A, A = B>(
-    self: Record<K, B>,
+  ): [excluded: Record<string, Exclude<A, B>>, satisfying: Record<string, B>]
+  <K extends string, A>(
+    self: Record<K, A>,
     predicate: (a: A, key: K) => boolean
-  ): [Record<string, B>, Record<string, B>]
+  ): [excluded: Record<string, A>, satisfying: Record<string, A>]
 }
 ```

@@ -26,6 +26,6 @@ STM.iterate
 ```ts
 export declare const iterate: <R, E, Z>(
   initial: Z,
-  options: { readonly while: (z: Z) => boolean; readonly body: (z: Z) => STM<R, E, Z> }
+  options: { readonly while: Predicate<Z>; readonly body: (z: Z) => STM<R, E, Z> }
 ) => STM<R, E, Z>
 ```

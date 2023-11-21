@@ -14,7 +14,9 @@ Effect.takeWhile
 
 ```ts
 export declare const takeWhile: {
-  <R, E, A>(predicate: (a: A, i: number) => Effect<R, E, boolean>): (elements: Iterable<A>) => Effect<R, E, A[]>
+  <R, E, B extends A, A = B>(
+    predicate: (a: A, i: number) => Effect<R, E, boolean>
+  ): (elements: Iterable<B>) => Effect<R, E, B[]>
   <R, E, A>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<R, E, boolean>): Effect<R, E, A[]>
 }
 ```

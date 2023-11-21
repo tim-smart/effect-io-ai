@@ -15,7 +15,7 @@ Option.zipWith
 ```ts
 import * as O from "effect/Option"
 
-type Complex = [number, number]
+type Complex = [real: number, imaginary: number]
 
 const complex = (real: number, imaginary: number): Complex => [real, imaginary]
 

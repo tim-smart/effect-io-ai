@@ -17,14 +17,27 @@ Stream.partition
 
 ```ts
 export declare const partition: {
+  <C extends A, B extends A, A = C>(
+    refinement: Refinement<A, B>,
+    options?: { bufferSize?: number | undefined }
+  ): <R, E>(
+    self: Stream<R, E, C>
+  ) => Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, Exclude<C, B>>, satisfying: Stream<never, E, B>]>
   <A>(
     predicate: Predicate<A>,
     options?: { bufferSize?: number | undefined }
-  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, E, [Stream<never, E, A>, Stream<never, E, A>]>
+  ): <R, E, B extends A>(
+    self: Stream<R, E, B>
+  ) => Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, B>, satisfying: Stream<never, E, B>]>
+  <R, E, A, B extends A>(
+    self: Stream<R, E, A>,
+    refinement: Refinement<A, B>,
+    options?: { bufferSize?: number | undefined }
+  ): Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, Exclude<A, B>>, satisfying: Stream<never, E, B>]>
   <R, E, A>(
     self: Stream<R, E, A>,
     predicate: Predicate<A>,
     options?: { bufferSize?: number | undefined }
-  ): Effect.Effect<Scope.Scope | R, E, [Stream<never, E, A>, Stream<never, E, A>]>
+  ): Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, A>, satisfying: Stream<never, E, A>]>
 }
 ```

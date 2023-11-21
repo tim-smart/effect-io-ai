@@ -17,10 +17,10 @@ MetricPolling.retry
 export declare const retry: {
   <R2, E, _>(
     policy: Schedule.Schedule<R2, E, _>
-  ): <Type, In, R, Out>(self: PollingMetric<Type, In, R, E, Out>) => PollingMetric<Type, In, R2 | R, E, Out>
+  ): <Type, In, R, Out>(self: MetricPolling<Type, In, R, E, Out>) => MetricPolling<Type, In, R2 | R, E, Out>
   <Type, In, R, Out, R2, E, _>(
-    self: PollingMetric<Type, In, R, E, Out>,
+    self: MetricPolling<Type, In, R, E, Out>,
     policy: Schedule.Schedule<R2, E, _>
-  ): PollingMetric<Type, In, R | R2, E, Out>
+  ): MetricPolling<Type, In, R | R2, E, Out>
 }
 ```

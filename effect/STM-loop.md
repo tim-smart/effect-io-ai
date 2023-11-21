@@ -30,7 +30,7 @@ export declare const loop: {
   <Z, R, E, A>(
     initial: Z,
     options: {
-      readonly while: (z: Z) => boolean
+      readonly while: Predicate<Z>
       readonly step: (z: Z) => Z
       readonly body: (z: Z) => STM<R, E, A>
       readonly discard?: false | undefined
@@ -39,7 +39,7 @@ export declare const loop: {
   <Z, R, E, A>(
     initial: Z,
     options: {
-      readonly while: (z: Z) => boolean
+      readonly while: Predicate<Z>
       readonly step: (z: Z) => Z
       readonly body: (z: Z) => STM<R, E, A>
       readonly discard: true

@@ -14,7 +14,7 @@ List.some
 
 ```ts
 export declare const some: {
-  <A>(predicate: Predicate<A>): <B extends A>(self: List<B>) => self is Cons<B>
-  <B extends A, A = B>(self: List<B>, predicate: Predicate<A>): self is Cons<B>
+  <B extends A, A = B>(predicate: Predicate<A>): (self: List<B>) => self is Cons<B>
+  <A>(self: List<A>, predicate: Predicate<A>): self is Cons<A>
 }
 ```

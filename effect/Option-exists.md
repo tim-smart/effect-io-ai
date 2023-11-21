@@ -27,7 +27,9 @@ assert.deepStrictEqual(pipe(none(), exists(isEven)), false)
 
 ```ts
 export declare const exists: {
-  <A>(predicate: Predicate<A>): (self: Option<A>) => boolean
+  <A, B extends A>(refinement: Refinement<A, B>): (self: Option<A>) => self is Option<B>
+  <B extends A, A = B>(predicate: Predicate<A>): (self: Option<B>) => boolean
+  <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): self is Option<B>
   <A>(self: Option<A>, predicate: Predicate<A>): boolean
 }
 ```

@@ -14,5 +14,8 @@ Sink.collectAllWhile
 **Signature**
 
 ```ts
-export declare const collectAllWhile: <In>(predicate: Predicate<In>) => Sink<never, never, In, In, Chunk.Chunk<In>>
+export declare const collectAllWhile: {
+  <In, Out extends In>(refinement: Refinement<In, Out>): Sink<never, never, In, In, Chunk.Chunk<Out>>
+  <In>(predicate: Predicate<In>): Sink<never, never, In, In, Chunk.Chunk<In>>
+}
 ```

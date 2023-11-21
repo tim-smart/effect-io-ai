@@ -26,7 +26,7 @@ assert.deepStrictEqual(getOption(1), O.some(1))
 
 ```ts
 export declare const liftPredicate: {
-  <C extends A, B extends A, A = C>(refinement: Refinement<A, B>): (c: C) => Option<B>
+  <A, B extends A>(refinement: Refinement<A, B>): (a: A) => Option<B>
   <B extends A, A = B>(predicate: Predicate<A>): (b: B) => Option<B>
 }
 ```

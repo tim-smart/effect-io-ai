@@ -27,10 +27,10 @@ assert.deepStrictEqual(partitionMap(x, f), [{ a: 1, c: 3 }, { b: 2 }])
 export declare const partitionMap: {
   <K extends string, A, B, C>(
     f: (a: A, key: K) => Either<B, C>
-  ): (self: Record<K, A>) => [Record<string, B>, Record<string, C>]
+  ): (self: Record<K, A>) => [left: Record<string, B>, right: Record<string, C>]
   <K extends string, A, B, C>(
     self: Record<K, A>,
     f: (a: A, key: K) => Either<B, C>
-  ): [Record<string, B>, Record<string, C>]
+  ): [left: Record<string, B>, right: Record<string, C>]
 }
 ```

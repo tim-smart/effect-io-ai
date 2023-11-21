@@ -14,7 +14,7 @@ ReadonlyArray.splitAt
 
 ```ts
 export declare const splitAt: {
-  (n: number): <A>(self: Iterable<A>) => [A[], A[]]
-  <A>(self: Iterable<A>, n: number): [A[], A[]]
+  (n: number): <A>(self: Iterable<A>) => [beforeIndex: A[], fromIndex: A[]]
+  <A>(self: Iterable<A>, n: number): [beforeIndex: A[], fromIndex: A[]]
 }
 ```

@@ -14,7 +14,7 @@ Chunk.partitionMap
 
 ```ts
 export declare const partitionMap: {
-  <A, B, C>(f: (a: A) => Either<B, C>): (self: Chunk<A>) => [Chunk<B>, Chunk<C>]
-  <A, B, C>(self: Chunk<A>, f: (a: A) => Either<B, C>): [Chunk<B>, Chunk<C>]
+  <A, B, C>(f: (a: A) => Either<B, C>): (self: Chunk<A>) => [left: Chunk<B>, right: Chunk<C>]
+  <A, B, C>(self: Chunk<A>, f: (a: A) => Either<B, C>): [left: Chunk<B>, right: Chunk<C>]
 }
 ```

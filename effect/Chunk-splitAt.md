@@ -14,7 +14,7 @@ Chunk.splitAt
 
 ```ts
 export declare const splitAt: {
-  (n: number): <A>(self: Chunk<A>) => [Chunk<A>, Chunk<A>]
-  <A>(self: Chunk<A>, n: number): [Chunk<A>, Chunk<A>]
+  (n: number): <A>(self: Chunk<A>) => [beforeIndex: Chunk<A>, fromIndex: Chunk<A>]
+  <A>(self: Chunk<A>, n: number): [beforeIndex: Chunk<A>, fromIndex: Chunk<A>]
 }
 ```

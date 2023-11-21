@@ -14,7 +14,7 @@ ReadonlyArray.splitNonEmptyAt
 
 ```ts
 export declare const splitNonEmptyAt: {
-  (n: number): <A>(self: readonly [A, ...A[]]) => [[A, ...A[]], A[]]
-  <A>(self: readonly [A, ...A[]], n: number): [[A, ...A[]], A[]]
+  (n: number): <A>(self: readonly [A, ...A[]]) => [beforeIndex: [A, ...A[]], fromIndex: A[]]
+  <A>(self: readonly [A, ...A[]], n: number): [beforeIndex: [A, ...A[]], fromIndex: A[]]
 }
 ```

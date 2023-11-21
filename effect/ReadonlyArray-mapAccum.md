@@ -14,7 +14,7 @@ ReadonlyArray.mapAccum
 
 ```ts
 export declare const mapAccum: {
-  <S, A, B>(s: S, f: (s: S, a: A) => readonly [S, B]): (self: Iterable<A>) => [S, B[]]
-  <S, A, B>(self: Iterable<A>, s: S, f: (s: S, a: A) => readonly [S, B]): [S, B[]]
+  <S, A, B>(s: S, f: (s: S, a: A) => readonly [S, B]): (self: Iterable<A>) => [state: S, mappedArray: B[]]
+  <S, A, B>(self: Iterable<A>, s: S, f: (s: S, a: A) => readonly [S, B]): [state: S, mappedArray: B[]]
 }
 ```

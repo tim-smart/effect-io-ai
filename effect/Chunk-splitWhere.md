@@ -14,7 +14,7 @@ Chunk.splitWhere
 
 ```ts
 export declare const splitWhere: {
-  <A>(predicate: Predicate<A>): (self: Chunk<A>) => [Chunk<A>, Chunk<A>]
-  <A>(self: Chunk<A>, predicate: Predicate<A>): [Chunk<A>, Chunk<A>]
+  <B extends A, A = B>(predicate: Predicate<A>): (self: Chunk<B>) => [beforeMatch: Chunk<B>, fromMatch: Chunk<B>]
+  <A>(self: Chunk<A>, predicate: Predicate<A>): [beforeMatch: Chunk<A>, fromMatch: Chunk<A>]
 }
 ```

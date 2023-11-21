@@ -14,7 +14,7 @@ ReadonlyArray.some
 
 ```ts
 export declare const some: {
-  <A>(predicate: Predicate<A>): <B extends A>(self: readonly B[]) => self is readonly [B, ...B[]]
-  <B extends A, A = B>(self: readonly B[], predicate: Predicate<A>): self is readonly [B, ...B[]]
+  <B extends A, A = B>(predicate: Predicate<A>): (self: readonly B[]) => self is readonly [B, ...B[]]
+  <A>(self: readonly A[], predicate: Predicate<A>): self is readonly [A, ...A[]]
 }
 ```

@@ -13,5 +13,5 @@ ReadonlyArray.unprepend
 **Signature**
 
 ```ts
-export declare const unprepend: <A>(self: readonly [A, ...A[]]) => [A, A[]]
+export declare const unprepend: <A>(self: readonly [A, ...A[]]) => [firstElement: A, remainingElements: A[]]
 ```
