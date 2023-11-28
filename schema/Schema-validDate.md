@@ -1,6 +1,6 @@
 # validDate
 
-A filter excluding invalid dates (e.g. `new Date("fail")`).
+A filter that **excludes invalid** dates (e.g., `new Date("Invalid Date")` is rejected).
 
 To import and use `validDate` from the "Schema" module:
 

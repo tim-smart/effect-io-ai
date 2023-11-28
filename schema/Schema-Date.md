@@ -1,6 +1,6 @@
 # Date
 
-A schema that transforms a `string` into a valid `Date`.
+A schema that transforms a `string` into a **valid** `Date`, ensuring that invalid dates, such as `new Date("Invalid Date")`, are rejected.
 
 To import and use `Date` from the "Schema" module:
 

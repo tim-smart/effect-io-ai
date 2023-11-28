@@ -1,6 +1,6 @@
 # dateFromString
 
-A combinator that transforms a `string` into a valid `Date`.
+A combinator that converts a `string` into a potentially **invalid** `Date` (e.g., `new Date("Invalid Date")` is not rejected).
 
 To import and use `dateFromString` from the "Schema" module:
 

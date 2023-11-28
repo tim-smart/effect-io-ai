@@ -1,6 +1,6 @@
 # ValidDateFromSelf
 
-A schema representing valid dates, e.g. `new Date("fail")` is excluded, even though it is an instance of `Date`.
+Represents a schema for handling only **valid** dates. For example, `new Date("Invalid Date")` is rejected, even though it is an instance of `Date`.
 
 To import and use `ValidDateFromSelf` from the "Schema" module:
 
