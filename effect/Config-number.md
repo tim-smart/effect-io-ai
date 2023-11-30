@@ -13,5 +13,5 @@ Config.number
 **Signature**
 
 ```ts
-export declare const number: (name?: string | undefined) => Config<number>
+export declare const number: (name?: string) => Config<number>
 ```

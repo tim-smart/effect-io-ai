@@ -14,5 +14,8 @@ ReadonlyArray.sortBy
 **Signature**
 
 ```ts
-export declare const sortBy: <B>(...orders: readonly Order.Order<B>[]) => <A extends B>(self: Iterable<A>) => A[]
+export declare const sortBy: <B>(...orders: readonly Order.Order<B>[]) => {
+  <A extends B>(as: readonly [A, ...A[]]): [A, ...A[]]
+  <A extends B>(self: Iterable<A>): A[]
+}
 ```

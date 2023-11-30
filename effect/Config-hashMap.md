@@ -13,5 +13,5 @@ Config.hashMap
 **Signature**
 
 ```ts
-export declare const hashMap: <A>(config: Config<A>, name?: string | undefined) => Config<HashMap.HashMap<string, A>>
+export declare const hashMap: <A>(config: Config<A>, name?: string) => Config<HashMap.HashMap<string, A>>
 ```

@@ -16,7 +16,10 @@ ReadonlyArray.chop
 
 ```ts
 export declare const chop: {
-  <A, B>(f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]): (self: Iterable<A>) => B[]
+  <A, B>(
+    f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]
+  ): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <A, B>(self: readonly [A, ...A[]], f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]): [B, ...B[]]
   <A, B>(self: Iterable<A>, f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]): B[]
 }
 ```

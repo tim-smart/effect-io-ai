@@ -13,5 +13,5 @@ Config.string
 **Signature**
 
 ```ts
-export declare const string: (name?: string | undefined) => Config<string>
+export declare const string: (name?: string) => Config<string>
 ```

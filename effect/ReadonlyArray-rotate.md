@@ -1,6 +1,7 @@
 # rotate
 
 Rotate an `Iterable` by `n` steps.
+If the input is a non-empty array, the result is also a non-empty array.
 
 To import and use `rotate` from the "ReadonlyArray" module:
 
@@ -13,5 +14,9 @@ ReadonlyArray.rotate
 **Signature**
 
 ```ts
-export declare const rotate: { (n: number): <A>(self: Iterable<A>) => A[]; <A>(self: Iterable<A>, n: number): A[] }
+export declare const rotate: {
+  (n: number): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <A>(self: readonly [A, ...A[]], n: number): [A, ...A[]]
+  <A>(self: Iterable<A>, n: number): A[]
+}
 ```

@@ -22,7 +22,12 @@ ReadonlyArray.chunksOf
 
 ```ts
 export declare const chunksOf: {
-  (n: number): <A>(self: Iterable<A>) => [A, ...A[]][]
+  (
+    n: number
+  ): <T extends readonly any[] | Iterable<any>>(
+    self: T
+  ) => ReadonlyArray.With<T, [ReadonlyArray.Infer<T>, ...ReadonlyArray.Infer<T>[]]>
+  <A>(self: readonly [A, ...A[]], n: number): [[A, ...A[]], ...[A, ...A[]][]]
   <A>(self: Iterable<A>, n: number): [A, ...A[]][]
 }
 ```

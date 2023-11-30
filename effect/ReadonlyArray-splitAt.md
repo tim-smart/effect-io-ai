@@ -1,6 +1,7 @@
 # splitAt
 
-Splits an `Iterable` into two pieces, the first piece has max `n` elements.
+Splits an `Iterable` into two segments, with the first segment containing a maximum of `n` elements.
+The value of `n` can be `0`.
 
 To import and use `splitAt` from the "ReadonlyArray" module:
 

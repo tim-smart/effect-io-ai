@@ -1,6 +1,7 @@
 # sort
 
-Sort the elements of an `Iterable` in increasing order, creating a new `Array`.
+Create a new array with elements sorted in increasing order based on the specified comparator.
+If the input is a `NonEmptyReadonlyArray`, the output will also be a `NonEmptyReadonlyArray`.
 
 To import and use `sort` from the "ReadonlyArray" module:
 
@@ -14,7 +15,10 @@ ReadonlyArray.sort
 
 ```ts
 export declare const sort: {
-  <B>(O: Order.Order<B>): <A extends B>(self: Iterable<A>) => A[]
+  <B>(
+    O: Order.Order<B>
+  ): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <A extends B, B>(self: readonly [A, ...A[]], O: Order.Order<B>): [A, ...A[]]
   <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): A[]
 }
 ```

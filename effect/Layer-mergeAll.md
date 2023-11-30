@@ -1,6 +1,6 @@
 # mergeAll
 
-Merges all the layers together in parallel.
+Combines all the provided layers concurrently, creating a new layer with merged input, error, and output types.
 
 To import and use `mergeAll` from the "Layer" module:
 

@@ -13,5 +13,5 @@ Config.hashSet
 **Signature**
 
 ```ts
-export declare const hashSet: <A>(config: Config<A>, name?: string | undefined) => Config<HashSet.HashSet<A>>
+export declare const hashSet: <A>(config: Config<A>, name?: string) => Config<HashSet.HashSet<A>>
 ```

@@ -16,7 +16,9 @@ ReadonlyArray.zip
 
 ```ts
 export declare const zip: {
+  <B>(that: readonly [B, ...B[]]): <A>(self: readonly [A, ...A[]]) => [[A, B], ...[A, B][]]
   <B>(that: Iterable<B>): <A>(self: Iterable<A>) => [A, B][]
+  <A, B>(self: readonly [A, ...A[]], that: readonly [B, ...B[]]): [[A, B], ...[A, B][]]
   <A, B>(self: Iterable<A>, that: Iterable<B>): [A, B][]
 }
 ```

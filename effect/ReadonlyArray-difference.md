@@ -1,6 +1,6 @@
 # difference
 
-Creates a `Array` of values not included in the other given `Iterable` using the provided `isEquivalent` function.
+Creates a `Array` of values not included in the other given `Iterable`.
 The order and references of result values are determined by the first `Iterable`.
 
 To import and use `difference` from the "ReadonlyArray" module:

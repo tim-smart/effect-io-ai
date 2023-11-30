@@ -1,6 +1,7 @@
 # dedupe
 
-Remove duplicates from am `Iterable`, keeping the first occurrence of an element.
+Remove duplicates from an `Iterable`, preserving the order of the first occurrence of each element.
+The equivalence used to compare elements is provided by `Equal.equivalence()` from the `Equal` module.
 
 To import and use `dedupe` from the "ReadonlyArray" module:
 
@@ -13,5 +14,5 @@ ReadonlyArray.dedupe
 **Signature**
 
 ```ts
-export declare const dedupe: <A>(self: Iterable<A>) => A[]
+export declare const dedupe: { <A>(self: readonly [A, ...A[]]): [A, ...A[]]; <A>(self: Iterable<A>): A[] }
 ```

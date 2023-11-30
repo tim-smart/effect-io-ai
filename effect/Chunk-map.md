@@ -1,6 +1,7 @@
 # map
 
-Returns a chunk with the elements mapped by the specified f function.
+Transforms the elements of a chunk using the specified mapping function.
+If the input chunk is non-empty, the resulting chunk will also be non-empty.
 
 To import and use `map` from the "Chunk" module:
 
@@ -10,11 +11,23 @@ import * as Chunk from "effect/Chunk"
 Chunk.map
 ```
 
+**Example**
+
+```ts
+import * as Chunk from "effect/Chunk"
+
+assert.deepStrictEqual(
+  Chunk.map(Chunk.make(1, 2), (n) => n + 1),
+  Chunk.make(2, 3)
+)
+```
+
 **Signature**
 
 ```ts
 export declare const map: {
-  <T extends Chunk<any>, B>(f: (a: Chunk.Infer<T>, i: number) => B): (self: T) => Chunk.With<T, B>
-  <T extends Chunk<any>, B>(self: T, f: (a: Chunk.Infer<T>, i: number) => B): Chunk.With<T, B>
+  <S extends Chunk<any>, B>(f: (a: Chunk.Infer<S>, i: number) => B): (self: S) => Chunk.With<S, B>
+  <A, B>(self: NonEmptyChunk<A>, f: (a: A, i: number) => B): NonEmptyChunk<B>
+  <A, B>(self: Chunk<A>, f: (a: A, i: number) => B): Chunk<B>
 }
 ```

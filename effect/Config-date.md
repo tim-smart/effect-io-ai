@@ -13,5 +13,5 @@ Config.date
 **Signature**
 
 ```ts
-export declare const date: (name?: string | undefined) => Config<Date>
+export declare const date: (name?: string) => Config<Date>
 ```

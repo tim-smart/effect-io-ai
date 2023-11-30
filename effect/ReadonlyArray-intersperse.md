@@ -1,6 +1,7 @@
 # intersperse
 
-Places an element in between members of an `Iterable`
+Places an element in between members of an `Iterable`.
+If the input is a non-empty array, the result is also a non-empty array.
 
 To import and use `intersperse` from the "ReadonlyArray" module:
 
@@ -14,7 +15,8 @@ ReadonlyArray.intersperse
 
 ```ts
 export declare const intersperse: {
-  <B>(middle: B): <A>(self: Iterable<A>) => (B | A)[]
+  <B>(middle: B): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <A, B>(self: readonly [A, ...A[]], middle: B): [A | B, ...(A | B)[]]
   <A, B>(self: Iterable<A>, middle: B): (A | B)[]
 }
 ```

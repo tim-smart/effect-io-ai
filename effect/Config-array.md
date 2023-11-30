@@ -13,5 +13,5 @@ Config.array
 **Signature**
 
 ```ts
-export declare const array: <A>(config: Config<A>, name?: string | undefined) => Config<readonly A[]>
+export declare const array: <A>(config: Config<A>, name?: string) => Config<readonly A[]>
 ```

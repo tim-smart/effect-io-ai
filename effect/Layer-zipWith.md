@@ -1,21 +1,20 @@
-# zipWithPar
+# zipWith
 
-Combines this layer the specified layer, producing a new layer that has the
-inputs of both, and the outputs of both combined using the specified
-function.
+Combines this layer with the specified layer concurrently, creating a new layer with merged input types and
+combined output types using the provided function.
 
-To import and use `zipWithPar` from the "Layer" module:
+To import and use `zipWith` from the "Layer" module:
 
 ```ts
 import * as Layer from "effect/Layer"
 // Can be accessed like this
-Layer.zipWithPar
+Layer.zipWith
 ```
 
 **Signature**
 
 ```ts
-export declare const zipWithPar: {
+export declare const zipWith: {
   <R2, E2, B, A, C>(
     that: Layer<R2, E2, B>,
     f: (a: Context.Context<A>, b: Context.Context<B>) => Context.Context<C>

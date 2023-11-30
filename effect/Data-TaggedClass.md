@@ -35,7 +35,7 @@ assert.deepStrictEqual(mike1._tag, "Person")
 ```ts
 export declare const TaggedClass: <Tag extends string>(
   tag: Tag
-) => new <A extends Record<string, any>>(
+) => new <A extends Record<string, any> = {}>(
   args: Types.Equals<Omit<A, keyof Equal.Equal>, {}> extends true
     ? void
     : { readonly [P in keyof A as P extends "_tag" | keyof Equal.Equal ? never : P]: A[P] }

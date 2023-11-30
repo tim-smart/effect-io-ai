@@ -13,5 +13,5 @@ Config.boolean
 **Signature**
 
 ```ts
-export declare const boolean: (name?: string | undefined) => Config<boolean>
+export declare const boolean: (name?: string) => Config<boolean>
 ```

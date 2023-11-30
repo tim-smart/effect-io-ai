@@ -16,6 +16,7 @@ Metric.timer
 
 ```ts
 export declare const timer: (
-  name: string
+  name: string,
+  description?: string
 ) => Metric<MetricKeyType.MetricKeyType.Histogram, Duration.Duration, MetricState.MetricState.Histogram>
 ```

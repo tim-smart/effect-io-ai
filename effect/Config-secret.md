@@ -13,5 +13,5 @@ Config.secret
 **Signature**
 
 ```ts
-export declare const secret: (name?: string | undefined) => Config<ConfigSecret.ConfigSecret>
+export declare const secret: (name?: string) => Config<ConfigSecret.ConfigSecret>
 ```

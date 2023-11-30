@@ -13,5 +13,5 @@ Config.chunk
 **Signature**
 
 ```ts
-export declare const chunk: <A>(config: Config<A>, name?: string | undefined) => Config<Chunk.Chunk<A>>
+export declare const chunk: <A>(config: Config<A>, name?: string) => Config<Chunk.Chunk<A>>
 ```

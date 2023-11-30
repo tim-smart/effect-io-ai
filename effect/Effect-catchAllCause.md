@@ -2,7 +2,7 @@
 
 Recovers from both recoverable and unrecoverable errors.
 
-See `absorb`, `sandbox`, `mapErrorCause` for other functions that can
+See `sandbox`, `mapErrorCause` for other functions that can
 recover from defects.
 
 To import and use `catchAllCause` from the "Effect" module:

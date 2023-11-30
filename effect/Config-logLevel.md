@@ -13,5 +13,5 @@ Config.logLevel
 **Signature**
 
 ```ts
-export declare const logLevel: (name?: string | undefined) => Config<LogLevel.LogLevel>
+export declare const logLevel: (name?: string) => Config<LogLevel.LogLevel>
 ```
