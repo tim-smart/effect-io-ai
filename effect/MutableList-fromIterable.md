@@ -1,6 +1,6 @@
 # fromIterable
 
-Creates a new `MutableList` from an `Iterable`.
+Creates a new `MutableList` from an iterable collection of values.
 
 To import and use `fromIterable` from the "MutableList" module:
 

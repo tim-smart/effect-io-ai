@@ -13,5 +13,7 @@ ReadonlyArray.reverse
 **Signature**
 
 ```ts
-export declare const reverse: { <A>(self: readonly [A, ...A[]]): [A, ...A[]]; <A>(self: Iterable<A>): A[] }
+export declare const reverse: <S extends Iterable<any> | readonly [any, ...any[]]>(
+  self: S
+) => S extends readonly [infer A, ...(infer A)[]] ? [A, ...A[]] : S extends Iterable<infer A> ? A[] : never
 ```

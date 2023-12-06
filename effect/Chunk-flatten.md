@@ -13,8 +13,5 @@ Chunk.flatten
 **Signature**
 
 ```ts
-export declare const flatten: {
-  <A>(self: NonEmptyChunk<NonEmptyChunk<A>>): NonEmptyChunk<A>
-  <A>(self: Chunk<Chunk<A>>): Chunk<A>
-}
+export declare const flatten: <S extends Chunk<Chunk<any>>>(self: S) => Chunk.Flatten<S>
 ```

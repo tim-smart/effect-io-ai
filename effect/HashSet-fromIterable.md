@@ -1,6 +1,6 @@
 # fromIterable
 
-Construct a new `HashSet` from a `Collection` of values
+Creates a new `HashSet` from an iterable collection of values.
 
 To import and use `fromIterable` from the "HashSet" module:
 

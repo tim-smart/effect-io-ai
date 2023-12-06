@@ -13,8 +13,5 @@ ReadonlyArray.flatten
 **Signature**
 
 ```ts
-export declare const flatten: {
-  <A>(self: readonly [readonly [A, ...A[]], ...(readonly [A, ...A[]])[]]): [A, ...A[]]
-  <A>(self: readonly (readonly A[])[]): A[]
-}
+export declare const flatten: <S extends readonly (readonly any[])[]>(self: S) => ReadonlyArray.Flatten<S>
 ```

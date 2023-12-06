@@ -16,7 +16,7 @@ ReadonlyArray.flatMap
 export declare const flatMap: {
   <S extends readonly any[], T extends readonly any[]>(
     f: (a: ReadonlyArray.Infer<S>, i: number) => T
-  ): (self: S) => ReadonlyArray.With2<S, T, ReadonlyArray.Infer<T>>
+  ): (self: S) => ReadonlyArray.AndNonEmpty<S, T, ReadonlyArray.Infer<T>>
   <A, B>(self: readonly [A, ...A[]], f: (a: A, i: number) => readonly [B, ...B[]]): [B, ...B[]]
   <A, B>(self: readonly A[], f: (a: A, i: number) => readonly B[]): B[]
 }

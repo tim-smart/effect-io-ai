@@ -1,6 +1,6 @@
 # fromIterable
 
-Creates a stream from an `Iterable` collection of values.
+Creates a new `Stream` from an iterable collection of values.
 
 To import and use `fromIterable` from the "Stream" module:
 

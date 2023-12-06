@@ -1,6 +1,6 @@
 # fromIterable
 
-Makes a new `TMap` initialized with provided iterable.
+Creates a new `TMap` from an iterable collection of key/value pairs.
 
 To import and use `fromIterable` from the "TMap" module:
 

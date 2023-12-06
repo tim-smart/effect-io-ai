@@ -1,6 +1,6 @@
 # fromIterable
 
-Makes a new `TArray` initialized with provided iterable.
+Creates a new `TArray` from an iterable collection of values.
 
 To import and use `fromIterable` from the "TArray" module:
 

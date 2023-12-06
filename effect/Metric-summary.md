@@ -22,7 +22,7 @@ const responseTimesSummary = Metric.summary({
   maxAge: "60 seconds", // Retain observations for 60 seconds.
   maxSize: 1000, // Keep a maximum of 1000 observations.
   error: 0.01, // Allow a 1% error when calculating quantiles.
-  quantiles: Chunk.make(0.5, 0.9, 0.99), // Calculate 50th, 90th, and 99th percentiles.
+  quantiles: [0.5, 0.9, 0.99], // Calculate 50th, 90th, and 99th percentiles.
   description: "Measures the distribution of response times."
 })
 ```
@@ -35,7 +35,7 @@ export declare const summary: (options: {
   readonly maxAge: Duration.DurationInput
   readonly maxSize: number
   readonly error: number
-  readonly quantiles: Chunk.Chunk<number>
+  readonly quantiles: ReadonlyArray<number>
   readonly description?: string | undefined
 }) => Metric.Summary<number>
 ```

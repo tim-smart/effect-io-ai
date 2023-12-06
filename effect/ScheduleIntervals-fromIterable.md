@@ -1,6 +1,6 @@
 # fromIterable
 
-Constructs `Intervals` from the specified `Iterable<Interval>`.
+Creates `Intervals` from the specified `Iterable<Interval>`.
 
 To import and use `fromIterable` from the "ScheduleIntervals" module:
 

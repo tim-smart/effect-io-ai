@@ -1,6 +1,6 @@
 # fromIterable
 
-Constructs a new `List<A>` from the specified `Iterable<A>`.
+Creates a new `List` from an iterable collection of values.
 
 To import and use `fromIterable` from the "List" module:
 

@@ -1,6 +1,6 @@
 # fromIterable
 
-Constructs a new `HashMap` from an iterable of key/value pairs.
+Creates a new `HashMap` from an iterable collection of key/value pairs.
 
 To import and use `fromIterable` from the "HashMap" module:
 

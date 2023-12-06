@@ -15,7 +15,7 @@ ReadonlyArray.rotate
 
 ```ts
 export declare const rotate: {
-  (n: number): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  (n: number): <S extends readonly any[] | Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
   <A>(self: readonly [A, ...A[]], n: number): [A, ...A[]]
   <A>(self: Iterable<A>, n: number): A[]
 }

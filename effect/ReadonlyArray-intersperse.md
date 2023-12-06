@@ -15,7 +15,7 @@ ReadonlyArray.intersperse
 
 ```ts
 export declare const intersperse: {
-  <B>(middle: B): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <B>(middle: B): <S extends readonly any[] | Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
   <A, B>(self: readonly [A, ...A[]], middle: B): [A | B, ...(A | B)[]]
   <A, B>(self: Iterable<A>, middle: B): (A | B)[]
 }

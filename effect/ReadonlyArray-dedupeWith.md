@@ -15,9 +15,9 @@ ReadonlyArray.dedupeWith
 
 ```ts
 export declare const dedupeWith: {
-  <A>(
-    isEquivalent: (self: A, that: A) => boolean
-  ): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  <S extends readonly any[] | Iterable<any>>(
+    isEquivalent: (self: ReadonlyArray.Infer<S>, that: ReadonlyArray.Infer<S>) => boolean
+  ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
   <A>(self: readonly [A, ...A[]], isEquivalent: (self: A, that: A) => boolean): [A, ...A[]]
   <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): A[]
 }

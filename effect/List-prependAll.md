@@ -23,7 +23,7 @@ assert.deepStrictEqual(List.make(1, 2).pipe(List.prependAll(List.make("a", "b"))
 
 ```ts
 export declare const prependAll: {
-  <S extends List<any>, T extends List<any>>(that: T): (self: S) => List.With2<S, T, List.Infer<S> | List.Infer<T>>
+  <S extends List<any>, T extends List<any>>(that: T): (self: S) => List.OrNonEmpty<S, T, List.Infer<S> | List.Infer<T>>
   <A, B>(self: List<A>, that: Cons<B>): Cons<A | B>
   <A, B>(self: Cons<A>, that: List<B>): Cons<A | B>
   <A, B>(self: List<A>, that: List<B>): List<A | B>

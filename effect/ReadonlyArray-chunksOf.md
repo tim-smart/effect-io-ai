@@ -24,9 +24,9 @@ ReadonlyArray.chunksOf
 export declare const chunksOf: {
   (
     n: number
-  ): <T extends readonly any[] | Iterable<any>>(
-    self: T
-  ) => ReadonlyArray.With<T, [ReadonlyArray.Infer<T>, ...ReadonlyArray.Infer<T>[]]>
+  ): <S extends readonly any[] | Iterable<any>>(
+    self: S
+  ) => ReadonlyArray.With<S, [ReadonlyArray.Infer<S>, ...ReadonlyArray.Infer<S>[]]>
   <A>(self: readonly [A, ...A[]], n: number): [[A, ...A[]], ...[A, ...A[]][]]
   <A>(self: Iterable<A>, n: number): [A, ...A[]][]
 }

@@ -19,7 +19,7 @@ export declare const summary: (options: {
   readonly maxAge: Duration.DurationInput
   readonly maxSize: number
   readonly error: number
-  readonly quantiles: Chunk.Chunk<number>
+  readonly quantiles: ReadonlyArray<number>
   readonly description?: string | undefined
 }) => MetricKey.Summary
 ```

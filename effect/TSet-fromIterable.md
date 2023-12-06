@@ -1,6 +1,6 @@
 # fromIterable
 
-Makes a new `TSet` initialized with provided iterable.
+Creates a new `TSet` from an iterable collection of values.
 
 To import and use `fromIterable` from the "TSet" module:
 

@@ -15,11 +15,11 @@ MetricKey.taggedWithLabels
 ```ts
 export declare const taggedWithLabels: {
   (
-    extraTags: Iterable<MetricLabel.MetricLabel>
+    extraTags: ReadonlyArray<MetricLabel.MetricLabel>
   ): <Type extends MetricKeyType.MetricKeyType<any, any>>(self: MetricKey<Type>) => MetricKey<Type>
   <Type extends MetricKeyType.MetricKeyType<any, any>>(
     self: MetricKey<Type>,
-    extraTags: Iterable<MetricLabel.MetricLabel>
+    extraTags: ReadonlyArray<MetricLabel.MetricLabel>
   ): MetricKey<Type>
 }
 ```

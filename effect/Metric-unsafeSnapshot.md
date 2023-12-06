@@ -13,5 +13,5 @@ Metric.unsafeSnapshot
 **Signature**
 
 ```ts
-export declare const unsafeSnapshot: (_: void) => HashSet.HashSet<MetricPair.MetricPair.Untyped>
+export declare const unsafeSnapshot: (_: void) => ReadonlyArray<MetricPair.MetricPair.Untyped>
 ```

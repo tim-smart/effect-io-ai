@@ -1,6 +1,6 @@
 # fromIterable
 
-Makes a new `TPriorityQueue` initialized with provided iterable.
+Creates a new `TPriorityQueue` from an iterable collection of values.
 
 To import and use `fromIterable` from the "TPriorityQueue" module:
 

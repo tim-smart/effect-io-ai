@@ -17,7 +17,7 @@ ReadonlyArray.sort
 export declare const sort: {
   <B>(
     O: Order.Order<B>
-  ): <T extends readonly any[] | Iterable<any>>(self: T) => ReadonlyArray.With<T, ReadonlyArray.Infer<T>>
+  ): <S extends readonly any[] | Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
   <A extends B, B>(self: readonly [A, ...A[]], O: Order.Order<B>): [A, ...A[]]
   <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): A[]
 }

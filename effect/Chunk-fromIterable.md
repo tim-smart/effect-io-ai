@@ -1,6 +1,6 @@
 # fromIterable
 
-Converts from an `Iterable<A>`
+Creates a new `Chunk` from an iterable collection of values.
 
 To import and use `fromIterable` from the "Chunk" module:
 

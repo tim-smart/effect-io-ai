@@ -23,7 +23,9 @@ assert.deepStrictEqual(Chunk.make(1, 2).pipe(Chunk.prependAll(Chunk.make("a", "b
 
 ```ts
 export declare const prependAll: {
-  <S extends Chunk<any>, T extends Chunk<any>>(that: T): (self: S) => Chunk.With2<S, T, Chunk.Infer<S> | Chunk.Infer<T>>
+  <S extends Chunk<any>, T extends Chunk<any>>(
+    that: T
+  ): (self: S) => Chunk.OrNonEmpty<S, T, Chunk.Infer<S> | Chunk.Infer<T>>
   <A, B>(self: Chunk<A>, that: NonEmptyChunk<B>): NonEmptyChunk<A | B>
   <A, B>(self: NonEmptyChunk<A>, that: Chunk<B>): NonEmptyChunk<A | B>
   <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<A | B>
