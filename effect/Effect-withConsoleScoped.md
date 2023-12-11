@@ -1,6 +1,6 @@
 # withConsoleScoped
 
-Sets the implementation of the clock service to the specified value and
+Sets the implementation of the console service to the specified value and
 restores it to its original value when the scope is closed.
 
 To import and use `withConsoleScoped` from the "Effect" module:
