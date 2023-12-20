@@ -1,6 +1,6 @@
 # Lowercase
 
-This combinator converts a string to lowercase
+This schema converts a string to lowercase.
 
 To import and use `Lowercase` from the "Schema" module:
 

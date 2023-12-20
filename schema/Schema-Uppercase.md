@@ -1,6 +1,6 @@
 # Uppercase
 
-This combinator converts a string to uppercase
+This schema converts a string to uppercase.
 
 To import and use `Uppercase` from the "Schema" module:
 

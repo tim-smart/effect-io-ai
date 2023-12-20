@@ -1,9 +1,6 @@
 # uppercased
 
-Verifies that a string is uppercased
-
-Note. This combinator does not make any transformations, it only validates.
-If what you were looking for was a combinator to uppercase strings, then check out the `uppercase` combinator.
+Verifies that a string is uppercased.
 
 To import and use `uppercased` from the "Schema" module:
 

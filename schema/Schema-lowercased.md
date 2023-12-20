@@ -1,9 +1,6 @@
 # lowercased
 
-Verifies that a string is lowercased
-
-Note. This combinator does not make any transformations, it only validates.
-If what you were looking for was a combinator to lowercase strings, then check out the `lowercase` combinator.
+Verifies that a string is lowercased.
 
 To import and use `lowercased` from the "Schema" module:
 
