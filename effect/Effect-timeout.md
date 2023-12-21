@@ -27,7 +27,7 @@ Effect.timeout
 
 ```ts
 export declare const timeout: {
-  (duration: Duration.DurationInput): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, Option.Option<A>>
-  <R, E, A>(self: Effect<R, E, A>, duration: Duration.DurationInput): Effect<R, E, Option.Option<A>>
+  (duration: Duration.DurationInput): <R, E, A>(self: Effect<R, E, A>) => Effect<R, Cause.NoSuchElementException | E, A>
+  <R, E, A>(self: Effect<R, E, A>, duration: Duration.DurationInput): Effect<R, Cause.NoSuchElementException | E, A>
 }
 ```

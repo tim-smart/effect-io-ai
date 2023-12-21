@@ -13,5 +13,7 @@ Effect.none
 **Signature**
 
 ```ts
-export declare const none: <R, E, A>(self: Effect<R, E, Option.Option<A>>) => Effect<R, Option.Option<E>, void>
+export declare const none: <R, E, A>(
+  self: Effect<R, E, Option.Option<A>>
+) => Effect<R, Cause.NoSuchElementException | E, void>
 ```
