@@ -14,9 +14,11 @@ ReadonlyArray.findLast
 
 ```ts
 export declare const findLast: {
-  <A, B extends A>(refinement: Refinement<A, B>): (self: Iterable<A>) => Option<B>
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Iterable<B>) => Option<B>
-  <A, B extends A>(self: Iterable<A>, refinement: Refinement<A, B>): Option<B>
-  <A>(self: Iterable<A>, predicate: Predicate<A>): Option<A>
+  <A, B>(f: (a: A, i: number) => Option<B>): (self: Iterable<A>) => Option<B>
+  <A, B extends A>(refinement: (a: A, i: number) => a is B): (self: Iterable<A>) => Option<B>
+  <B extends A, A = B>(predicate: (a: A, i: number) => boolean): (self: Iterable<B>) => Option<B>
+  <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option<B>): Option<B>
+  <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Option<B>
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option<A>
 }
 ```

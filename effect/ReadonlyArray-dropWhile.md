@@ -14,7 +14,7 @@ ReadonlyArray.dropWhile
 
 ```ts
 export declare const dropWhile: {
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Iterable<B>) => B[]
-  <A>(self: Iterable<A>, predicate: Predicate<A>): A[]
+  <B extends A, A = B>(predicate: (a: A, i: number) => boolean): (self: Iterable<B>) => B[]
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): A[]
 }
 ```

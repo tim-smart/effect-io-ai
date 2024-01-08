@@ -14,7 +14,7 @@ ReadonlyArray.filterMapWhile
 
 ```ts
 export declare const filterMapWhile: {
-  <A, B>(f: (a: A) => Option<B>): (self: Iterable<A>) => B[]
-  <A, B>(self: Iterable<A>, f: (a: A) => Option<B>): B[]
+  <A, B>(f: (a: A, i: number) => Option<B>): (self: Iterable<A>) => B[]
+  <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option<B>): B[]
 }
 ```

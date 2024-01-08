@@ -14,7 +14,7 @@ ReadonlyArray.findLastIndex
 
 ```ts
 export declare const findLastIndex: {
-  <A>(predicate: Predicate<A>): (self: Iterable<A>) => Option<number>
-  <A>(self: Iterable<A>, predicate: Predicate<A>): Option<number>
+  <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => Option<number>
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option<number>
 }
 ```

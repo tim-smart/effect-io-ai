@@ -15,7 +15,9 @@ ReadonlyArray.splitWhere
 
 ```ts
 export declare const splitWhere: {
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Iterable<B>) => [beforeMatch: B[], fromMatch: B[]]
-  <A>(self: Iterable<A>, predicate: Predicate<A>): [beforeMatch: A[], fromMatch: A[]]
+  <B extends A, A = B>(
+    predicate: (a: A, i: number) => boolean
+  ): (self: Iterable<B>) => [beforeMatch: B[], fromMatch: B[]]
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [beforeMatch: A[], fromMatch: A[]]
 }
 ```

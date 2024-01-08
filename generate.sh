@@ -10,7 +10,6 @@ SHORT_SHA=`git rev-parse --short HEAD`
 
 repos=(\
   "effect-ts/effect"\
-  "effect-ts/schema"\
 )
 
 latest_tarball() {
@@ -42,13 +41,14 @@ for repo in ${repos[@]}; do
 
   pnpm install
   pnpm rm @effect/docgen
-  pnpm add -D ../vendor/effect-docgen-0.3.4.tgz
+  pnpm add -Dw ../vendor/effect-docgen-0.3.4.tgz
   pnpm run build
   pnpm run docs || pnpm docgen
 
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
-  cp -r docs/ai/*.md "../$repo_name"
+  cp -r docs/ai/*.md "../$repo_name" || true
+  cp -r packages/*/docs/ai/*.md "../$repo_name" || true
 
   cd ..
 done
