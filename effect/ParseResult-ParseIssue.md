@@ -1,6 +1,6 @@
 # ParseIssue
 
-`ParseErrors` is a type that represents the different types of errors that can occur when decoding a value.
+`ParseIssue` is a type that represents the different types of errors that can occur when decoding/encoding a value.
 
 To import and use `ParseIssue` from the "ParseResult" module:
 
