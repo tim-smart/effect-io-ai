@@ -22,7 +22,7 @@ assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, omit("c")), { a: "a", b: 
 **Signature**
 
 ```ts
-export declare const omit: <S, Keys extends readonly [keyof S, ...(keyof S)[]]>(
+export declare const omit: <Keys extends PropertyKey[]>(
   ...keys: Keys
-) => (s: S) => Simplify<Omit<S, Keys[number]>>
+) => <S extends Record<Keys[number], any>>(s: S) => Simplify<Omit<S, Keys[number]>>
 ```

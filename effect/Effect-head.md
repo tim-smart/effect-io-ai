@@ -14,5 +14,5 @@ Effect.head
 **Signature**
 
 ```ts
-export declare const head: <R, E, A>(self: Effect<R, E, Iterable<A>>) => Effect<R, E | Cause.NoSuchElementException, A>
+export declare const head: <R, E, A>(self: Effect<R, E, Iterable<A>>) => Effect<R, Cause.NoSuchElementException | E, A>
 ```

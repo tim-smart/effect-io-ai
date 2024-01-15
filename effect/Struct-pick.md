@@ -22,7 +22,9 @@ assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, pick("a", "b")), { a: "a"
 **Signature**
 
 ```ts
-export declare const pick: <S, Keys extends readonly [keyof S, ...(keyof S)[]]>(
+export declare const pick: <Keys extends PropertyKey[]>(
   ...keys: Keys
-) => (s: S) => Simplify<Pick<S, Keys[number]>>
+) => <S extends Record<Keys[number], any>>(
+  s: S
+) => MatchRecord<S, { [K in Keys[number]]: S[K] | undefined }, { [K in Keys[number]]: S[K] }>
 ```
