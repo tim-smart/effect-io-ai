@@ -21,6 +21,6 @@ export declare const runCallback: <R>(
   runtime: Runtime<R>
 ) => <E, A>(
   effect: Effect.Effect<R, E, A>,
-  onExit?: ((exit: Exit.Exit<E, A>) => void) | undefined
-) => (fiberId?: FiberId.FiberId | undefined, onExit?: ((exit: Exit.Exit<E, A>) => void) | undefined) => void
+  options?: RunCallbackOptions<E, A> | undefined
+) => (fiberId?: FiberId.FiberId | undefined, options?: RunCallbackOptions<E, A> | undefined) => void
 ```
