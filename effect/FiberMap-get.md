@@ -14,7 +14,12 @@ FiberMap.get
 
 ```ts
 export declare const get: {
-  <K>(key: K): <E, A>(self: FiberMap<K, E, A>) => Effect.Effect<never, NoSuchElementException, Fiber.RuntimeFiber<E, A>>
-  <K, E, A>(self: FiberMap<K, E, A>, key: K): Effect.Effect<never, NoSuchElementException, Fiber.RuntimeFiber<E, A>>
+  <K>(
+    key: K
+  ): <E, A>(self: FiberMap.FiberMap<K, E, A>) => Effect.Effect<never, NoSuchElementException, Fiber.RuntimeFiber<E, A>>
+  <K, E, A>(
+    self: FiberMap.FiberMap<K, E, A>,
+    key: K
+  ): Effect.Effect<never, NoSuchElementException, Fiber.RuntimeFiber<E, A>>
 }
 ```

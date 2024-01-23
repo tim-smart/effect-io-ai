@@ -15,9 +15,11 @@ FiberSet.run
 
 ```ts
 export declare const run: {
-  <E, A, R, XE extends E, XA extends A>(
+  <E, A>(
+    self: FiberSet<E, A>
+  ): <R, XE extends E, XA extends A>(
     effect: Effect.Effect<R, XE, XA>
-  ): (self: FiberSet<E, A>) => Effect.Effect<R, never, Fiber.RuntimeFiber<XE, XA>>
+  ) => Effect.Effect<R, never, Fiber.RuntimeFiber<XE, XA>>
   <E, A, R, XE extends E, XA extends A>(
     self: FiberSet<E, A>,
     effect: Effect.Effect<R, XE, XA>

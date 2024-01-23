@@ -15,12 +15,14 @@ FiberMap.run
 
 ```ts
 export declare const run: {
-  <K, E, A, R, XE extends E, XA extends A>(
-    key: K,
+  <K, E, A>(
+    self: FiberMap.FiberMap<K, E, A>,
+    key: K
+  ): <R, XE extends E, XA extends A>(
     effect: Effect.Effect<R, XE, XA>
-  ): (self: FiberMap<K, E, A>) => Effect.Effect<R, never, Fiber.RuntimeFiber<XE, XA>>
+  ) => Effect.Effect<R, never, Fiber.RuntimeFiber<XE, XA>>
   <K, E, A, R, XE extends E, XA extends A>(
-    self: FiberMap<K, E, A>,
+    self: FiberMap.FiberMap<K, E, A>,
     key: K,
     effect: Effect.Effect<R, XE, XA>
   ): Effect.Effect<R, never, Fiber.RuntimeFiber<XE, XA>>
