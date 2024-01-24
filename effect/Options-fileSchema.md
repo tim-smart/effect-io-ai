@@ -16,7 +16,7 @@ Options.fileSchema
 ```ts
 export declare const fileSchema: <I, A>(
   name: string,
-  schema: Schema<I, A>,
+  schema: Schema<Terminal | FileSystem | Path, I, A>,
   format?: "json" | "yaml" | "ini" | "toml" | undefined
 ) => Options<A>
 ```

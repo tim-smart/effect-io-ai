@@ -14,5 +14,5 @@ Schema.DurationFromMillis
 **Signature**
 
 ```ts
-export declare const DurationFromMillis: Schema<number, Duration.Duration>
+export declare const DurationFromMillis: Schema<never, number, Duration.Duration>
 ```

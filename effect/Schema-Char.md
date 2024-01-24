@@ -13,5 +13,5 @@ Schema.Char
 **Signature**
 
 ```ts
-export declare const Char: Schema<string, string>
+export declare const Char: Schema<never, string, string>
 ```

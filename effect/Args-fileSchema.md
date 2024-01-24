@@ -15,5 +15,8 @@ Args.fileSchema
 **Signature**
 
 ```ts
-export declare const fileSchema: <I, A>(schema: Schema<I, A>, config?: Args.FormatArgsConfig | undefined) => Args<A>
+export declare const fileSchema: <I, A>(
+  schema: Schema<Terminal | FileSystem | Path, I, A>,
+  config?: Args.FormatArgsConfig | undefined
+) => Args<A>
 ```

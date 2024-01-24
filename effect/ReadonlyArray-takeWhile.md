@@ -14,8 +14,8 @@ ReadonlyArray.takeWhile
 
 ```ts
 export declare const takeWhile: {
-  <A, B extends A>(refinement: (a: A, i: number) => a is B): (self: Iterable<A>) => B[]
-  <B extends A, A = B>(predicate: (a: A, i: number) => boolean): (self: Iterable<B>) => B[]
+  <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => B[]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => A[]
   <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): B[]
   <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): A[]
 }

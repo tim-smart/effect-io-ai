@@ -13,5 +13,5 @@ Schema.symbol
 **Signature**
 
 ```ts
-export declare const symbol: Schema<string, symbol>
+export declare const symbol: Schema<never, string, symbol>
 ```

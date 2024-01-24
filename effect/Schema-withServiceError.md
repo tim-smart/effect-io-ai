@@ -14,14 +14,24 @@ Schema.withServiceError
 
 ```ts
 export declare const withServiceError: {
-  <EI extends internal.Json, E>(
-    error: Schema.Schema<EI, E>
+  <R, EI extends internal.Json, E>(
+    error: Schema.Schema<R, EI, E>
   ): <S extends RpcService.DefinitionWithId>(
     self: S
-  ) => RpcService.WithId<S, EI | RpcService.ErrorsFrom<S>, E | RpcService.Errors<S>>
-  <S extends RpcService.DefinitionWithId, EI extends internal.Json, E>(
+  ) => RpcService.WithId<
+    S,
+    R | Schema.Schema.Context<S[typeof RpcServiceErrorId]>,
+    EI | Schema.Schema.From<S[typeof RpcServiceErrorId]>,
+    E | Schema.Schema.To<S[typeof RpcServiceErrorId]>
+  >
+  <S extends RpcService.DefinitionWithId, R, EI extends internal.Json, E>(
     self: S,
-    error: Schema.Schema<EI, E>
-  ): RpcService.WithId<S, EI | RpcService.ErrorsFrom<S>, E | RpcService.Errors<S>>
+    error: Schema.Schema<R, EI, E>
+  ): RpcService.WithId<
+    S,
+    R | Schema.Schema.Context<S[typeof RpcServiceErrorId]>,
+    EI | Schema.Schema.From<S[typeof RpcServiceErrorId]>,
+    E | Schema.Schema.To<S[typeof RpcServiceErrorId]>
+  >
 }
 ```

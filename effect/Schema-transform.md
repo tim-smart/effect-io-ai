@@ -15,29 +15,29 @@ Schema.transform
 
 ```ts
 export declare const transform: {
-  <C, D, B>(
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => C,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => B
-  ): <A>(self: Schema<A, B>) => Schema<A, D>
-  <C, D, B>(
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => unknown,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown,
+  <R2, C, D, B>(
+    to: Schema<R2, C, D>,
+    decode: (b: B) => C,
+    encode: (c: C) => B
+  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R1, A, D>
+  <R2, C, D, B>(
+    to: Schema<R2, C, D>,
+    decode: (b: B) => unknown,
+    encode: (c: C) => unknown,
     options: { strict: false }
-  ): <A>(self: Schema<A, B>) => Schema<A, D>
-  <A, B, C, D>(
-    from: Schema<A, B>,
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => C,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => B
-  ): Schema<A, D>
-  <A, B, C, D>(
-    from: Schema<A, B>,
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => unknown,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => unknown,
+  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R1, A, D>
+  <R1, A, B, R2, C, D>(
+    from: Schema<R1, A, B>,
+    to: Schema<R2, C, D>,
+    decode: (b: B) => C,
+    encode: (c: C) => B
+  ): Schema<R1 | R2, A, D>
+  <R1, A, B, R2, C, D>(
+    from: Schema<R1, A, B>,
+    to: Schema<R2, C, D>,
+    decode: (b: B) => unknown,
+    encode: (c: C) => unknown,
     options: { strict: false }
-  ): Schema<A, D>
+  ): Schema<R1 | R2, A, D>
 }
 ```

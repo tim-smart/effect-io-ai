@@ -18,7 +18,7 @@ Stream.partition
 ```ts
 export declare const partition: {
   <C extends A, B extends A, A = C>(
-    refinement: Refinement<A, B>,
+    refinement: Refinement<NoInfer<A>, B>,
     options?: { bufferSize?: number | undefined }
   ): <R, E>(
     self: Stream<R, E, C>

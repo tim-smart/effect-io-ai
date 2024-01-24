@@ -26,5 +26,5 @@ assert.deepStrictEqual(S.decodeSync(schema)(0), "a")
 export declare const transformLiteral: <From extends AST.LiteralValue, To extends AST.LiteralValue>(
   from: From,
   to: To
-) => Schema<From, To>
+) => Schema<never, From, To>
 ```

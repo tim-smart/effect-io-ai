@@ -13,5 +13,5 @@ Schema.split
 **Signature**
 
 ```ts
-export declare const split: (separator: string) => Schema<string, ReadonlyArray<string>>
+export declare const split: (separator: string) => Schema<never, string, ReadonlyArray<string>>
 ```

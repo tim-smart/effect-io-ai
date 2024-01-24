@@ -42,8 +42,8 @@ assert.equal(
 
 ```ts
 export declare const filter: {
-  <A, B extends A>(f: (a: A, k: string) => a is B): (self: Trie<A>) => Trie<B>
-  <B extends A, A = B>(f: (a: A, k: string) => boolean): (self: Trie<B>) => Trie<B>
+  <A, B extends A>(f: (a: NoInfer<A>, k: string) => a is B): (self: Trie<A>) => Trie<B>
+  <A>(f: (a: NoInfer<A>, k: string) => boolean): (self: Trie<A>) => Trie<A>
   <A, B extends A>(self: Trie<A>, f: (a: A, k: string) => a is B): Trie<B>
   <A>(self: Trie<A>, f: (a: A, k: string) => boolean): Trie<A>
 }

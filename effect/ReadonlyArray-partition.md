@@ -14,10 +14,10 @@ ReadonlyArray.partition
 
 ```ts
 export declare const partition: {
-  <C extends A, B extends A, A = C>(
-    refinement: (a: A, i: number) => a is B
-  ): (self: Iterable<C>) => [excluded: Exclude<C, B>[], satisfying: B[]]
-  <B extends A, A = B>(predicate: (a: A, i: number) => boolean): (self: Iterable<B>) => [excluded: B[], satisfying: B[]]
+  <A, B extends A>(
+    refinement: (a: NoInfer<A>, i: number) => a is B
+  ): (self: Iterable<A>) => [excluded: Exclude<A, B>[], satisfying: B[]]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [excluded: A[], satisfying: A[]]
   <A, B extends A>(
     self: Iterable<A>,
     refinement: (a: A, i: number) => a is B

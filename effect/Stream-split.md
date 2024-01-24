@@ -26,7 +26,7 @@ Stream.split
 
 ```ts
 export declare const split: {
-  <B extends A, A = B>(predicate: Predicate<A>): <R, E>(self: Stream<R, E, B>) => Stream<R, E, Chunk.Chunk<B>>
+  <A>(predicate: Predicate<NoInfer<A>>): <R, E>(self: Stream<R, E, A>) => Stream<R, E, Chunk.Chunk<A>>
   <R, E, A>(self: Stream<R, E, A>, predicate: Predicate<A>): Stream<R, E, Chunk.Chunk<A>>
 }
 ```

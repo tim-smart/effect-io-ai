@@ -14,7 +14,7 @@ Chunk.dropWhile
 
 ```ts
 export declare const dropWhile: {
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Chunk<B>) => Chunk<B>
+  <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => Chunk<A>
   <A>(self: Chunk<A>, predicate: Predicate<A>): Chunk<A>
 }
 ```

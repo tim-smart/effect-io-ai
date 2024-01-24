@@ -13,5 +13,5 @@ Schema.Trim
 **Signature**
 
 ```ts
-export declare const Trim: Schema<string, string>
+export declare const Trim: Schema<never, string, string>
 ```

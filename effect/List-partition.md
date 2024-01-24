@@ -16,10 +16,10 @@ List.partition
 
 ```ts
 export declare const partition: {
-  <C extends A, B extends A, A = C>(
-    refinement: Refinement<A, B>
-  ): (self: List<C>) => [excluded: List<Exclude<C, B>>, satisfying: List<B>]
-  <B extends A, A = B>(predicate: Predicate<A>): (self: List<B>) => [excluded: List<B>, satisfying: List<B>]
+  <A, B extends A>(
+    refinement: Refinement<NoInfer<A>, B>
+  ): (self: List<A>) => [excluded: List<Exclude<A, B>>, satisfying: List<B>]
+  <A>(predicate: Predicate<NoInfer<A>>): (self: List<A>) => [excluded: List<A>, satisfying: List<A>]
   <A, B extends A>(self: List<A>, refinement: Refinement<A, B>): [excluded: List<Exclude<A, B>>, satisfying: List<B>]
   <A>(self: List<A>, predicate: Predicate<A>): [excluded: List<A>, satisfying: List<A>]
 }

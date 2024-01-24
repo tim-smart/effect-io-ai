@@ -26,10 +26,10 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const filter: {
-  <K extends string, A, B extends A>(refinement: (a: A, key: K) => a is B): (self: Record<K, A>) => Record<string, B>
-  <K extends string, B extends A, A = B>(
-    predicate: (A: A, key: K) => boolean
-  ): (self: Record<K, B>) => Record<string, B>
+  <K extends string, A, B extends A>(
+    refinement: (a: NoInfer<A>, key: K) => a is B
+  ): (self: Record<K, A>) => Record<string, B>
+  <K extends string, A>(predicate: (A: NoInfer<A>, key: K) => boolean): (self: Record<K, A>) => Record<string, A>
   <K extends string, A, B extends A>(self: Record<K, A>, refinement: (a: A, key: K) => a is B): Record<string, B>
   <K extends string, A>(self: Record<K, A>, predicate: (a: A, key: K) => boolean): Record<string, A>
 }

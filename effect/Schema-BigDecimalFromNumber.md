@@ -14,5 +14,5 @@ Schema.BigDecimalFromNumber
 **Signature**
 
 ```ts
-export declare const BigDecimalFromNumber: Schema<number, BigDecimal.BigDecimal>
+export declare const BigDecimalFromNumber: Schema<never, number, BigDecimal.BigDecimal>
 ```

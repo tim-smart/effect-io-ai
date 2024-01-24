@@ -15,5 +15,5 @@ Schema.make
 ```ts
 export declare const make: <S>(
   schema: S
-) => RpcService.Simplify<RpcService.Validate<"Schema.Json", internal.Json, S, []>, never, never>
+) => RpcService.Simplify<RpcService.Validate<"Schema.Json", internal.Json, S, []>, never, never, never>
 ```

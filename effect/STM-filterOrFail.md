@@ -14,23 +14,19 @@ STM.filterOrFail
 
 ```ts
 export declare const filterOrFail: {
-  <A, B extends A, X extends A, E2>(
-    refinement: Refinement<A, B>,
-    orFailWith: (a: X) => E2
+  <A, B extends A, E2>(
+    refinement: Refinement<NoInfer<A>, B>,
+    orFailWith: (a: NoInfer<A>) => E2
   ): <R, E>(self: STM<R, E, A>) => STM<R, E2 | E, B>
-  <A, X extends A, Y extends A, E2>(
-    predicate: Predicate<X>,
-    orFailWith: (a: Y) => E2
+  <A, E2>(
+    predicate: Predicate<NoInfer<A>>,
+    orFailWith: (a: NoInfer<A>) => E2
   ): <R, E>(self: STM<R, E, A>) => STM<R, E2 | E, A>
-  <R, E, A, B extends A, X extends A, E2>(
+  <R, E, A, B extends A, E2>(
     self: STM<R, E, A>,
     refinement: Refinement<A, B>,
-    orFailWith: (a: X) => E2
+    orFailWith: (a: A) => E2
   ): STM<R, E | E2, B>
-  <R, E, A, X extends A, Y extends A, E2>(
-    self: STM<R, E, A>,
-    predicate: Predicate<X>,
-    orFailWith: (a: Y) => E2
-  ): STM<R, E | E2, A>
+  <R, E, A, E2>(self: STM<R, E, A>, predicate: Predicate<A>, orFailWith: (a: A) => E2): STM<R, E | E2, A>
 }
 ```

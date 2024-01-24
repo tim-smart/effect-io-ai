@@ -13,5 +13,5 @@ Schema.Lowercase
 **Signature**
 
 ```ts
-export declare const Lowercase: Schema<string, string>
+export declare const Lowercase: Schema<never, string, string>
 ```

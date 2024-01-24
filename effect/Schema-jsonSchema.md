@@ -15,5 +15,7 @@ Schema.jsonSchema
 **Signature**
 
 ```ts
-export declare const jsonSchema: (jsonSchema: AST.JSONSchemaAnnotation) => <I, A>(self: Schema<I, A>) => Schema<I, A>
+export declare const jsonSchema: (
+  jsonSchema: AST.JSONSchemaAnnotation
+) => <R, I, A>(self: Schema<R, I, A>) => Schema<R, I, A>
 ```

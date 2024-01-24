@@ -14,12 +14,10 @@ Chunk.partition
 
 ```ts
 export declare const partition: {
-  <C extends A, B extends A, A = C>(
-    refinement: (a: A, i: number) => a is B
-  ): (self: Chunk<C>) => [excluded: Chunk<Exclude<C, B>>, satisfying: Chunk<B>]
-  <B extends A, A = B>(
-    predicate: (a: A, i: number) => boolean
-  ): (self: Chunk<B>) => [excluded: Chunk<B>, satisfying: Chunk<B>]
+  <A, B extends A>(
+    refinement: (a: NoInfer<A>, i: number) => a is B
+  ): (self: Chunk<A>) => [excluded: Chunk<Exclude<A, B>>, satisfying: Chunk<B>]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Chunk<A>) => [excluded: Chunk<A>, satisfying: Chunk<A>]
   <A, B extends A>(
     self: Chunk<A>,
     refinement: (a: A, i: number) => a is B

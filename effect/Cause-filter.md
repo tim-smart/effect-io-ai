@@ -14,7 +14,9 @@ Cause.filter
 
 ```ts
 export declare const filter: {
-  <E>(predicate: Predicate<Cause<E>>): (self: Cause<E>) => Cause<E>
+  <E, EB extends E>(refinement: Refinement<Cause<NoInfer<E>>, Cause<EB>>): (self: Cause<E>) => Cause<EB>
+  <E>(predicate: Predicate<Cause<NoInfer<E>>>): (self: Cause<E>) => Cause<E>
+  <E, EB extends E>(self: Cause<E>, refinement: Refinement<Cause<E>, Cause<EB>>): Cause<EB>
   <E>(self: Cause<E>, predicate: Predicate<Cause<E>>): Cause<E>
 }
 ```

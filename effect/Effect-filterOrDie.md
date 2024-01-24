@@ -15,23 +15,19 @@ Effect.filterOrDie
 
 ```ts
 export declare const filterOrDie: {
-  <A, B extends A, X extends A>(
-    filter: Refinement<A, B>,
-    orDieWith: (a: X) => unknown
+  <A, B extends A>(
+    refinement: Refinement<NoInfer<A>, B>,
+    orDieWith: (a: NoInfer<A>) => unknown
   ): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B>
-  <A, X extends A, Y extends A>(
-    filter: Predicate<X>,
-    orDieWith: (a: Y) => unknown
+  <A>(
+    predicate: Predicate<NoInfer<A>>,
+    orDieWith: (a: NoInfer<A>) => unknown
   ): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A, B extends A, X extends A>(
+  <R, E, A, B extends A>(
     self: Effect<R, E, A>,
-    filter: Refinement<A, B>,
-    orDieWith: (a: X) => unknown
+    refinement: Refinement<A, B>,
+    orDieWith: (a: A) => unknown
   ): Effect<R, E, B>
-  <R, E, A, X extends A, Y extends A>(
-    self: Effect<R, E, A>,
-    filter: Predicate<X>,
-    orDieWith: (a: Y) => unknown
-  ): Effect<R, E, A>
+  <R, E, A>(self: Effect<R, E, A>, filter: Predicate<A>, orDieWith: (a: A) => unknown): Effect<R, E, A>
 }
 ```

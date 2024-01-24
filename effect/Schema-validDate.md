@@ -13,5 +13,7 @@ Schema.validDate
 **Signature**
 
 ```ts
-export declare const validDate: (options?: FilterAnnotations<Date>) => <I>(self: Schema<I, Date>) => Schema<I, Date>
+export declare const validDate: (
+  options?: FilterAnnotations<Date>
+) => <R, I>(self: Schema<R, I, Date>) => Schema<R, I, Date>
 ```

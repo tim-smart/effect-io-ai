@@ -15,8 +15,8 @@ HashMap.findFirst
 
 ```ts
 export declare const findFirst: {
-  <K, A, B extends A>(predicate: (a: A, k: K) => a is B): (self: HashMap<K, A>) => Option<[K, B]>
-  <K, B extends A, A = B>(predicate: (a: A, k: K) => boolean): (self: HashMap<K, B>) => Option<[K, B]>
+  <K, A, B extends A>(predicate: (a: NoInfer<A>, k: K) => a is B): (self: HashMap<K, A>) => Option<[K, B]>
+  <K, A>(predicate: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => Option<[K, A]>
   <K, A, B extends A>(self: HashMap<K, A>, predicate: (a: A, k: K) => a is B): Option<[K, B]>
   <K, A>(self: HashMap<K, A>, predicate: (a: A, k: K) => boolean): Option<[K, A]>
 }

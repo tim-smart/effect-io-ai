@@ -16,7 +16,7 @@ Stream.partitionEither
 ```ts
 export declare const partitionEither: {
   <A, R2, E2, A2, A3>(
-    predicate: (a: A) => Effect.Effect<R2, E2, Either.Either<A2, A3>>,
+    predicate: (a: NoInfer<A>) => Effect.Effect<R2, E2, Either.Either<A2, A3>>,
     options?: { readonly bufferSize?: number | undefined }
   ): <R, E>(
     self: Stream<R, E, A>

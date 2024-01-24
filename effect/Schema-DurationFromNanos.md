@@ -14,5 +14,5 @@ Schema.DurationFromNanos
 **Signature**
 
 ```ts
-export declare const DurationFromNanos: Schema<bigint, Duration.Duration>
+export declare const DurationFromNanos: Schema<never, bigint, Duration.Duration>
 ```

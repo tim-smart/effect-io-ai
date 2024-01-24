@@ -13,5 +13,5 @@ AST.mergeAnnotations
 **Signature**
 
 ```ts
-export declare const mergeAnnotations: (ast: AST, annotations: Annotated["annotations"]) => AST
+export declare const mergeAnnotations: (ast: AST, annotations: Annotations) => AST
 ```

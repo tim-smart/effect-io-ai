@@ -14,7 +14,7 @@ ReadonlyArray.findFirstIndex
 
 ```ts
 export declare const findFirstIndex: {
-  <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => Option<number>
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option<number>
   <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option<number>
 }
 ```

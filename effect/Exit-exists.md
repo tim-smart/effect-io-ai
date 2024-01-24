@@ -15,8 +15,8 @@ Exit.exists
 
 ```ts
 export declare const exists: {
-  <A, B extends A>(refinement: Refinement<A, B>): <E>(self: Exit<E, A>) => self is Exit<never, B>
-  <A>(predicate: Predicate<A>): <E>(self: Exit<E, A>) => boolean
+  <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): <E>(self: Exit<E, A>) => self is Exit<never, B>
+  <A>(predicate: Predicate<NoInfer<A>>): <E>(self: Exit<E, A>) => boolean
   <E, A, B extends A>(self: Exit<E, A>, refinement: Refinement<A, B>): self is Exit<never, B>
   <E, A>(self: Exit<E, A>, predicate: Predicate<A>): boolean
 }

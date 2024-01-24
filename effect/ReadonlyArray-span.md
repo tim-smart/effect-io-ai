@@ -17,10 +17,10 @@ ReadonlyArray.span
 
 ```ts
 export declare const span: {
-  <C extends A, B extends A, A = C>(
-    refinement: (a: A, i: number) => a is B
-  ): (self: Iterable<C>) => [init: B[], rest: Exclude<C, B>[]]
-  <B extends A, A = B>(predicate: (a: A, i: number) => boolean): (self: Iterable<B>) => [init: B[], rest: B[]]
+  <A, B extends A>(
+    refinement: (a: NoInfer<A>, i: number) => a is B
+  ): (self: Iterable<A>) => [init: B[], rest: Exclude<A, B>[]]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [init: A[], rest: A[]]
   <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): [init: B[], rest: Exclude<A, B>[]]
   <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [init: A[], rest: A[]]
 }

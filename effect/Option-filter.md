@@ -36,8 +36,8 @@ assert.deepStrictEqual(O.filter(O.some(2), isNumber), O.some(2))
 
 ```ts
 export declare const filter: {
-  <A, B extends A>(refinement: Refinement<A, B>): (self: Option<A>) => Option<B>
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Option<B>) => Option<B>
+  <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Option<A>) => Option<B>
+  <A>(predicate: Predicate<NoInfer<A>>): (self: Option<A>) => Option<A>
   <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): Option<B>
   <A>(self: Option<A>, predicate: Predicate<A>): Option<A>
 }

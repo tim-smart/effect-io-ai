@@ -15,7 +15,9 @@ STM.retryUntil
 
 ```ts
 export declare const retryUntil: {
+  <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): <R, E>(self: STM<R, E, A>) => STM<R, E, B>
   <A>(predicate: Predicate<A>): <R, E>(self: STM<R, E, A>) => STM<R, E, A>
+  <R, E, A, B extends A>(self: STM<R, E, A>, refinement: Refinement<A, B>): STM<R, E, B>
   <R, E, A>(self: STM<R, E, A>, predicate: Predicate<A>): STM<R, E, A>
 }
 ```

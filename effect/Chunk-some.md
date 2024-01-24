@@ -14,7 +14,7 @@ Chunk.some
 
 ```ts
 export declare const some: {
-  <B extends A, A = B>(predicate: Predicate<A>): (self: Chunk<B>) => self is NonEmptyChunk<B>
+  <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => self is NonEmptyChunk<A>
   <A>(self: Chunk<A>, predicate: Predicate<A>): self is NonEmptyChunk<A>
 }
 ```

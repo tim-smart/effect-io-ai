@@ -15,8 +15,8 @@ Effect.unlessEffect
 ```ts
 export declare const unlessEffect: {
   <R2, E2>(
-    predicate: Effect<R2, E2, boolean>
+    condition: Effect<R2, E2, boolean>
   ): <R, E, A>(self: Effect<R, E, A>) => Effect<R2 | R, E2 | E, Option.Option<A>>
-  <R, E, A, R2, E2>(self: Effect<R, E, A>, predicate: Effect<R2, E2, boolean>): Effect<R | R2, E | E2, Option.Option<A>>
+  <R, E, A, R2, E2>(self: Effect<R, E, A>, condition: Effect<R2, E2, boolean>): Effect<R | R2, E | E2, Option.Option<A>>
 }
 ```

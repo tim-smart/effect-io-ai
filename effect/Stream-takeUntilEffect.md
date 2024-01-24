@@ -16,7 +16,7 @@ Stream.takeUntilEffect
 ```ts
 export declare const takeUntilEffect: {
   <A, R2, E2>(
-    predicate: (a: A) => Effect.Effect<R2, E2, boolean>
+    predicate: (a: NoInfer<A>) => Effect.Effect<R2, E2, boolean>
   ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A>
   <R, E, A, R2, E2>(
     self: Stream<R, E, A>,

@@ -15,29 +15,29 @@ Schema.transformOrFail
 
 ```ts
 export declare const transformOrFail: {
-  <C, D, B>(
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, C>,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, B>
-  ): <A>(self: Schema<A, B>) => Schema<A, D>
-  <C, D, B>(
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, unknown>,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, unknown>,
+  <R2, C, D, B, R3, R4>(
+    to: Schema<R2, C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R3, ParseResult.ParseIssue, C>,
+    encode: (c: C, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R4, ParseResult.ParseIssue, B>
+  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R3 | R4 | R1, A, D>
+  <R2, C, D, B, R3, R4>(
+    to: Schema<R2, C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R3, ParseResult.ParseIssue, unknown>,
+    encode: (c: C, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R4, ParseResult.ParseIssue, unknown>,
     options: { strict: false }
-  ): <A>(self: Schema<A, B>) => Schema<A, D>
-  <A, B, C, D>(
-    from: Schema<A, B>,
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, C>,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, B>
-  ): Schema<A, D>
-  <A, B, C, D>(
-    from: Schema<A, B>,
-    to: Schema<C, D>,
-    decode: (b: B, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, unknown>,
-    encode: (c: C, options: ParseOptions, ast: AST.AST) => Effect.Effect<never, ParseResult.ParseError, unknown>,
+  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R3 | R4 | R1, A, D>
+  <R1, A, B, R2, C, D, R3, R4>(
+    from: Schema<R1, A, B>,
+    to: Schema<R2, C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R3, ParseResult.ParseIssue, C>,
+    encode: (c: C, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R4, ParseResult.ParseIssue, B>
+  ): Schema<R1 | R2 | R3 | R4, A, D>
+  <R1, A, B, R2, C, D, R3, R4>(
+    from: Schema<R1, A, B>,
+    to: Schema<R2, C, D>,
+    decode: (b: B, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R3, ParseResult.ParseIssue, unknown>,
+    encode: (c: C, options: ParseOptions, ast: AST.Transform) => Effect.Effect<R4, ParseResult.ParseIssue, unknown>,
     options: { strict: false }
-  ): Schema<A, D>
+  ): Schema<R1 | R2 | R3 | R4, A, D>
 }
 ```

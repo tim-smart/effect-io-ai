@@ -18,10 +18,10 @@ HashSet.partition
 
 ```ts
 export declare const partition: {
-  <C extends A, B extends A, A = C>(
-    refinement: Refinement<A, B>
-  ): (self: HashSet<C>) => [excluded: HashSet<Exclude<C, B>>, satisfying: HashSet<B>]
-  <B extends A, A = B>(predicate: Predicate<A>): (self: HashSet<B>) => [excluded: HashSet<B>, satisfying: HashSet<B>]
+  <A, B extends A>(
+    refinement: Refinement<NoInfer<A>, B>
+  ): (self: HashSet<A>) => [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]
+  <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => [excluded: HashSet<A>, satisfying: HashSet<A>]
   <A, B extends A>(
     self: HashSet<A>,
     refinement: Refinement<A, B>
