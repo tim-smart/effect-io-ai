@@ -1,7 +1,7 @@
 # provideService
 
 Provides the effect with the single service it requires. If the effect
-requires more than one service use `provideContext` instead.
+requires more than one service use `provide` instead.
 
 To import and use `provideService` from the "Effect" module:
 
