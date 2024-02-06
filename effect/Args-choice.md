@@ -15,8 +15,5 @@ Args.choice
 **Signature**
 
 ```ts
-export declare const choice: <A>(
-  choices: readonly [[string, A], ...[string, A][]],
-  config?: Args.BaseArgsConfig
-) => Args<A>
+export declare const choice: <A>(choices: readonly [string, A][], config?: Args.BaseArgsConfig) => Args<A>
 ```

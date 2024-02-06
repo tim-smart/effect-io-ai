@@ -27,11 +27,11 @@ export declare const processCommandLine: {
     config: CliConfig
   ): <A>(
     self: Options<A>
-  ) => Effect<Terminal | FileSystem | Path, ValidationError, [Option<ValidationError>, readonly string[], A]>
+  ) => Effect<Terminal | FileSystem | Path, ValidationError, [Option<ValidationError>, string[], A]>
   <A>(
     self: Options<A>,
     args: ReadonlyArray<string>,
     config: CliConfig
-  ): Effect<Terminal | FileSystem | Path, ValidationError, [Option<ValidationError>, readonly string[], A]>
+  ): Effect<Terminal | FileSystem | Path, ValidationError, [Option<ValidationError>, string[], A]>
 }
 ```

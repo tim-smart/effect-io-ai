@@ -40,7 +40,7 @@ export const animal: Options.Options<Animal> = Options.choiceWithValue("animal",
 **Signature**
 
 ```ts
-export declare const choiceWithValue: <C extends readonly [[string, any], ...[string, any][]]>(
+export declare const choiceWithValue: <C extends readonly [string, any][]>(
   name: string,
   choices: C
 ) => Options<C[number][1]>
