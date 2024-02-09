@@ -15,14 +15,14 @@ Schedule.mapBothEffect
 ```ts
 export declare const mapBothEffect: {
   <In2, Env2, In, Out, Env3, Out2>(options: {
-    readonly onInput: (input: In2) => Effect.Effect<Env2, never, In>
-    readonly onOutput: (out: Out) => Effect.Effect<Env3, never, Out2>
+    readonly onInput: (input: In2) => Effect.Effect<In, never, Env2>
+    readonly onOutput: (out: Out) => Effect.Effect<Out2, never, Env3>
   }): <Env>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env3 | Env, In2, Out2>
   <Env, In, Out, In2, Env2, Env3, Out2>(
     self: Schedule<Env, In, Out>,
     options: {
-      readonly onInput: (input: In2) => Effect.Effect<Env2, never, In>
-      readonly onOutput: (out: Out) => Effect.Effect<Env3, never, Out2>
+      readonly onInput: (input: In2) => Effect.Effect<In, never, Env2>
+      readonly onOutput: (out: Out) => Effect.Effect<Out2, never, Env3>
     }
   ): Schedule<Env | Env2 | Env3, In2, Out2>
 }

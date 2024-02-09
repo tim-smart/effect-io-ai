@@ -16,11 +16,11 @@ Schedule.whileOutputEffect
 ```ts
 export declare const whileOutputEffect: {
   <Out, Env1>(
-    f: (out: Out) => Effect.Effect<Env1, never, boolean>
+    f: (out: Out) => Effect.Effect<boolean, never, Env1>
   ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env1 | Env, In, Out>
   <Env, In, Out, Env1>(
     self: Schedule<Env, In, Out>,
-    f: (out: Out) => Effect.Effect<Env1, never, boolean>
+    f: (out: Out) => Effect.Effect<boolean, never, Env1>
   ): Schedule<Env | Env1, In, Out>
 }
 ```

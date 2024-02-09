@@ -16,11 +16,11 @@ Schedule.mapInputEffect
 ```ts
 export declare const mapInputEffect: {
   <In, Env2, In2>(
-    f: (in2: In2) => Effect.Effect<Env2, never, In>
+    f: (in2: In2) => Effect.Effect<In, never, Env2>
   ): <Env, Out>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In2, Out>
   <Env, In, Out, Env2, In2>(
     self: Schedule<Env, In, Out>,
-    f: (in2: In2) => Effect.Effect<Env2, never, In>
+    f: (in2: In2) => Effect.Effect<In, never, Env2>
   ): Schedule<Env | Env2, In2, Out>
 }
 ```

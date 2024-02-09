@@ -17,11 +17,11 @@ Schedule.checkEffect
 ```ts
 export declare const checkEffect: {
   <In, Out, Env2>(
-    test: (input: In, output: Out) => Effect.Effect<Env2, never, boolean>
+    test: (input: In, output: Out) => Effect.Effect<boolean, never, Env2>
   ): <Env>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
   <Env, In, Out, Env2>(
     self: Schedule<Env, In, Out>,
-    test: (input: In, output: Out) => Effect.Effect<Env2, never, boolean>
+    test: (input: In, output: Out) => Effect.Effect<boolean, never, Env2>
   ): Schedule<Env | Env2, In, Out>
 }
 ```
