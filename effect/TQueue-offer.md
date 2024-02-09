@@ -14,7 +14,7 @@ TQueue.offer
 
 ```ts
 export declare const offer: {
-  <A>(value: A): (self: TEnqueue<A>) => STM.STM<never, never, void>
-  <A>(self: TEnqueue<A>, value: A): STM.STM<never, never, void>
+  <A>(value: A): (self: TEnqueue<A>) => STM.STM<void>
+  <A>(self: TEnqueue<A>, value: A): STM.STM<void>
 }
 ```

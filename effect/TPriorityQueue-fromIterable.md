@@ -15,5 +15,5 @@ TPriorityQueue.fromIterable
 ```ts
 export declare const fromIterable: <A>(
   order: Order.Order<A>
-) => (iterable: Iterable<A>) => STM.STM<never, never, TPriorityQueue<A>>
+) => (iterable: Iterable<A>) => STM.STM<TPriorityQueue<A>, never, never>
 ```

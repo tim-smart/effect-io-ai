@@ -13,5 +13,5 @@ Stream.accumulateChunks
 **Signature**
 
 ```ts
-export declare const accumulateChunks: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
+export declare const accumulateChunks: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```

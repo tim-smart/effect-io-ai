@@ -16,13 +16,13 @@ RequestResolver.around
 ```ts
 export declare const around: {
   <R2, A2, R3, _>(
-    before: Effect.Effect<R2, never, A2>,
-    after: (a: A2) => Effect.Effect<R3, never, _>
+    before: Effect.Effect<A2, never, R2>,
+    after: (a: A2) => Effect.Effect<_, never, R3>
   ): <R, A>(self: RequestResolver<A, R>) => RequestResolver<A, R2 | R3 | R>
   <R, A, R2, A2, R3, _>(
     self: RequestResolver<A, R>,
-    before: Effect.Effect<R2, never, A2>,
-    after: (a: A2) => Effect.Effect<R3, never, _>
+    before: Effect.Effect<A2, never, R2>,
+    after: (a: A2) => Effect.Effect<_, never, R3>
   ): RequestResolver<A, R | R2 | R3>
 }
 ```

@@ -14,5 +14,5 @@ Effect.diffFiberRefs
 **Signature**
 
 ```ts
-export declare const diffFiberRefs: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, [FiberRefsPatch.FiberRefsPatch, A]>
+export declare const diffFiberRefs: <A, E, R>(self: Effect<A, E, R>) => Effect<[FiberRefsPatch.FiberRefsPatch, A], E, R>
 ```

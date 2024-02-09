@@ -16,5 +16,5 @@ Stream.fromIteratorSucceed
 export declare const fromIteratorSucceed: <A>(
   iterator: IterableIterator<A>,
   maxChunkSize?: number
-) => Stream<never, never, A>
+) => Stream<A, never, never>
 ```

@@ -13,5 +13,5 @@ Sink.every
 **Signature**
 
 ```ts
-export declare const every: <In>(predicate: Predicate<In>) => Sink<never, never, In, In, boolean>
+export declare const every: <In>(predicate: Predicate<In>) => Sink<boolean, In, In, never, never>
 ```

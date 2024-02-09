@@ -13,5 +13,5 @@ Layer.failCauseSync
 **Signature**
 
 ```ts
-export declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Layer<never, E, unknown>
+export declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Layer<unknown, E, never>
 ```

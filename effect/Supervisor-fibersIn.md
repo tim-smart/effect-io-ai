@@ -15,5 +15,5 @@ Supervisor.fibersIn
 ```ts
 export declare const fibersIn: (
   ref: MutableRef.MutableRef<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>
-) => Effect.Effect<never, never, Supervisor<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>>
+) => Effect.Effect<Supervisor<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>>
 ```

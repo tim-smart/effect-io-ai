@@ -26,5 +26,5 @@ export declare const makeSpanScoped: (
     readonly root?: boolean | undefined
     readonly context?: Context.Context<never> | undefined
   }
-) => Effect<Scope.Scope, never, Tracer.Span>
+) => Effect<Tracer.Span, never, Scope.Scope>
 ```

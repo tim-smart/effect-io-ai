@@ -13,5 +13,5 @@ TQueue.isShutdown
 **Signature**
 
 ```ts
-export declare const isShutdown: <A>(self: TQueue<A>) => STM.STM<never, never, boolean>
+export declare const isShutdown: <A>(self: TQueue<A>) => STM.STM<boolean>
 ```

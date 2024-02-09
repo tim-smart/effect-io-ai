@@ -14,7 +14,7 @@ Effect.withMaxOpsBeforeYield
 
 ```ts
 export declare const withMaxOpsBeforeYield: {
-  (priority: number): <R, E, B>(self: Effect<R, E, B>) => Effect<R, E, B>
-  <R, E, B>(self: Effect<R, E, B>, priority: number): Effect<R, E, B>
+  (priority: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(self: Effect<A, E, R>, priority: number): Effect<A, E, R>
 }
 ```

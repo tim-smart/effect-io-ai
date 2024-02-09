@@ -14,13 +14,13 @@ Fiber.match
 
 ```ts
 export declare const match: {
-  <E, A, Z>(options: {
-    readonly onFiber: (fiber: Fiber<E, A>) => Z
-    readonly onRuntimeFiber: (fiber: RuntimeFiber<E, A>) => Z
-  }): (self: Fiber<E, A>) => Z
-  <E, A, Z>(
-    self: Fiber<E, A>,
-    options: { readonly onFiber: (fiber: Fiber<E, A>) => Z; readonly onRuntimeFiber: (fiber: RuntimeFiber<E, A>) => Z }
+  <A, E, Z>(options: {
+    readonly onFiber: (fiber: Fiber<A, E>) => Z
+    readonly onRuntimeFiber: (fiber: RuntimeFiber<A, E>) => Z
+  }): (self: Fiber<A, E>) => Z
+  <A, E, Z>(
+    self: Fiber<A, E>,
+    options: { readonly onFiber: (fiber: Fiber<A, E>) => Z; readonly onRuntimeFiber: (fiber: RuntimeFiber<A, E>) => Z }
   ): Z
 }
 ```

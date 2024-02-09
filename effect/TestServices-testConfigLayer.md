@@ -18,5 +18,5 @@ export declare const testConfigLayer: (params: {
   readonly retries: number
   readonly samples: number
   readonly shrinks: number
-}) => Layer.Layer<never, never, TestConfig.TestConfig>
+}) => Layer.Layer<TestConfig.TestConfig>
 ```

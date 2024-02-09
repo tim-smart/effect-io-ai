@@ -15,5 +15,5 @@ Reloadable.get
 ```ts
 export declare const get: <T extends Context.Tag<any, any>>(
   tag: T
-) => Effect.Effect<Reloadable<Context.Tag.Identifier<T>>, never, Context.Tag.Service<T>>
+) => Effect.Effect<Context.Tag.Service<T>, never, Reloadable<Context.Tag.Identifier<T>>>
 ```

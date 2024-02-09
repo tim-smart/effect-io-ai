@@ -35,9 +35,9 @@ Effect.gen(function* (_) {
 **Signature**
 
 ```ts
-export declare const make: <K, E = unknown, A = unknown>() => Effect.Effect<
-  Scope.Scope,
+export declare const make: <K, A = unknown, E = unknown>() => Effect.Effect<
+  FiberMap.FiberMap<K, A, E>,
   never,
-  FiberMap.FiberMap<K, E, A>
+  Scope.Scope
 >
 ```

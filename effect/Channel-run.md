@@ -13,7 +13,7 @@ Channel.run
 **Signature**
 
 ```ts
-export declare const run: <Env, InErr, InDone, OutErr, OutDone>(
-  self: Channel<Env, InErr, unknown, InDone, OutErr, never, OutDone>
-) => Effect.Effect<Env, OutErr, OutDone>
+export declare const run: <OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<never, unknown, OutErr, InErr, OutDone, InDone, Env>
+) => Effect.Effect<OutDone, OutErr, Env>
 ```

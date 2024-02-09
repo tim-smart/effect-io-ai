@@ -1,6 +1,6 @@
 # fromEither
 
-Converts an `Either<E, A>` into an `Exit<E, A>`.
+Converts an `Either<E, A>` into an `Exit<A, E>`.
 
 To import and use `fromEither` from the "Exit" module:
 
@@ -13,5 +13,5 @@ Exit.fromEither
 **Signature**
 
 ```ts
-export declare const fromEither: <E, A>(either: Either.Either<E, A>) => Exit<E, A>
+export declare const fromEither: <E, A>(either: Either.Either<E, A>) => Exit<A, E>
 ```

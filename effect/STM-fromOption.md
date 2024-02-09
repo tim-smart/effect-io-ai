@@ -13,5 +13,5 @@ STM.fromOption
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(option: Option.Option<A>) => STM<never, Option.Option<never>, A>
+export declare const fromOption: <A>(option: Option.Option<A>) => STM<A, Option.Option<never>, never>
 ```

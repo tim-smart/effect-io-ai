@@ -17,12 +17,12 @@ Stream.peel
 
 ```ts
 export declare const peel: {
-  <R2, E2, A, Z>(
-    sink: Sink.Sink<R2, E2, A, A, Z>
-  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R2 | R, E2 | E, [Z, Stream<never, E, A>]>
-  <R, E, R2, E2, A, Z>(
-    self: Stream<R, E, A>,
-    sink: Sink.Sink<R2, E2, A, A, Z>
-  ): Effect.Effect<Scope.Scope | R | R2, E | E2, [Z, Stream<never, E, A>]>
+  <A2, A, E2, R2>(
+    sink: Sink.Sink<A2, A, A, E2, R2>
+  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<[A2, Stream<A, E, never>], E2 | E, Scope.Scope | R2 | R>
+  <A, E, R, A2, E2, R2>(
+    self: Stream<A, E, R>,
+    sink: Sink.Sink<A2, A, A, E2, R2>
+  ): Effect.Effect<[A2, Stream<A, E, never>], E | E2, Scope.Scope | R | R2>
 }
 ```

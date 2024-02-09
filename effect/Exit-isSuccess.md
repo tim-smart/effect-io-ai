@@ -13,5 +13,5 @@ Exit.isSuccess
 **Signature**
 
 ```ts
-export declare const isSuccess: <E, A>(self: Exit<E, A>) => self is Success<E, A>
+export declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
 ```

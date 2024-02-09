@@ -15,12 +15,12 @@ Sink.mapInputChunksEffect
 
 ```ts
 export declare const mapInputChunksEffect: {
-  <In0, R2, E2, In>(
-    f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>
-  ): <R, E, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In0, L, Z>
-  <R, E, L, Z, In0, R2, E2, In>(
-    self: Sink<R, E, In, L, Z>,
-    f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<R2, E2, Chunk.Chunk<In>>
-  ): Sink<R | R2, E | E2, In0, L, Z>
+  <In0, In, E2, R2>(
+    f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<Chunk.Chunk<In>, E2, R2>
+  ): <A, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In0, L, E2 | E, R2 | R>
+  <A, In, L, E, R, In0, E2, R2>(
+    self: Sink<A, In, L, E, R>,
+    f: (chunk: Chunk.Chunk<In0>) => Effect.Effect<Chunk.Chunk<In>, E2, R2>
+  ): Sink<A, In0, L, E | E2, R | R2>
 }
 ```

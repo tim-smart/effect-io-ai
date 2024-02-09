@@ -13,5 +13,5 @@ Stream.dieMessage
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Stream<never, never, never>
+export declare const dieMessage: (message: string) => Stream<never>
 ```

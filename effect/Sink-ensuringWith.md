@@ -16,12 +16,12 @@ Sink.ensuringWith
 
 ```ts
 export declare const ensuringWith: {
-  <E, Z, R2, _>(
-    finalizer: (exit: Exit.Exit<E, Z>) => Effect.Effect<R2, never, _>
-  ): <R, In, L>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E, In, L, Z>
-  <R, In, L, E, Z, R2, _>(
-    self: Sink<R, E, In, L, Z>,
-    finalizer: (exit: Exit.Exit<E, Z>) => Effect.Effect<R2, never, _>
-  ): Sink<R | R2, E, In, L, Z>
+  <A, E, _, R2>(
+    finalizer: (exit: Exit.Exit<A, E>) => Effect.Effect<_, never, R2>
+  ): <In, L, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, L, E, R2 | R>
+  <A, In, L, E, R, _, R2>(
+    self: Sink<A, In, L, E, R>,
+    finalizer: (exit: Exit.Exit<A, E>) => Effect.Effect<_, never, R2>
+  ): Sink<A, In, L, E, R | R2>
 }
 ```

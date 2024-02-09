@@ -17,11 +17,11 @@ Layer.provideMerge
 ```ts
 export declare const provideMerge: {
   <RIn, E, ROut>(
-    self: Layer<RIn, E, ROut>
-  ): <RIn2, E2, ROut2>(that: Layer<RIn2, E2, ROut2>) => Layer<RIn | Exclude<RIn2, ROut>, E | E2, ROut | ROut2>
+    self: Layer<ROut, E, RIn>
+  ): <RIn2, E2, ROut2>(that: Layer<ROut2, E2, RIn2>) => Layer<ROut | ROut2, E | E2, RIn | Exclude<RIn2, ROut>>
   <RIn2, E2, ROut2, RIn, E, ROut>(
-    that: Layer<RIn2, E2, ROut2>,
-    self: Layer<RIn, E, ROut>
-  ): Layer<RIn | Exclude<RIn2, ROut>, E2 | E, ROut2 | ROut>
+    that: Layer<ROut2, E2, RIn2>,
+    self: Layer<ROut, E, RIn>
+  ): Layer<ROut2 | ROut, E2 | E, RIn | Exclude<RIn2, ROut>>
 }
 ```

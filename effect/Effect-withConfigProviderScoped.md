@@ -14,5 +14,5 @@ Effect.withConfigProviderScoped
 **Signature**
 
 ```ts
-export declare const withConfigProviderScoped: (value: ConfigProvider) => Effect<Scope.Scope, never, void>
+export declare const withConfigProviderScoped: (value: ConfigProvider) => Effect<void, never, Scope.Scope>
 ```

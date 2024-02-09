@@ -14,12 +14,12 @@ Effect.catchSome
 
 ```ts
 export declare const catchSome: {
-  <E, R2, E2, A2>(
-    pf: (e: E) => Option.Option<Effect<R2, E2, A2>>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E | E2, A2 | A>
-  <R, A, E, R2, E2, A2>(
-    self: Effect<R, E, A>,
-    pf: (e: E) => Option.Option<Effect<R2, E2, A2>>
-  ): Effect<R | R2, E | E2, A | A2>
+  <E, A2, E2, R2>(
+    pf: (e: NoInfer<E>) => Option.Option<Effect<A2, E2, R2>>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E | E2, R2 | R>
+  <A, E, R, A2, E2, R2>(
+    self: Effect<A, E, R>,
+    pf: (e: NoInfer<E>) => Option.Option<Effect<A2, E2, R2>>
+  ): Effect<A | A2, E | E2, R | R2>
 }
 ```

@@ -17,11 +17,11 @@ Request.completeEffect
 ```ts
 export declare const completeEffect: {
   <A extends Request<any, any>, R>(
-    effect: Effect.Effect<R, Request.Error<A>, Request.Success<A>>
-  ): (self: A) => Effect.Effect<R, never, void>
+    effect: Effect.Effect<Request.Success<A>, Request.Error<A>, R>
+  ): (self: A) => Effect.Effect<void, never, R>
   <A extends Request<any, any>, R>(
     self: A,
-    effect: Effect.Effect<R, Request.Error<A>, Request.Success<A>>
-  ): Effect.Effect<R, never, void>
+    effect: Effect.Effect<Request.Success<A>, Request.Error<A>, R>
+  ): Effect.Effect<void, never, R>
 }
 ```

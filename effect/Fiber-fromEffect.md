@@ -13,5 +13,5 @@ Fiber.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <E, A>(effect: Effect.Effect<never, E, A>) => Effect.Effect<never, never, Fiber<E, A>>
+export declare const fromEffect: <A, E>(effect: Effect.Effect<A, E, never>) => Effect.Effect<Fiber<A, E>, never, never>
 ```

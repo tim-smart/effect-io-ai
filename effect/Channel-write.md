@@ -13,5 +13,5 @@ Channel.write
 **Signature**
 
 ```ts
-export declare const write: <OutElem>(out: OutElem) => Channel<never, unknown, unknown, unknown, never, OutElem, void>
+export declare const write: <OutElem>(out: OutElem) => Channel<OutElem, unknown, never, unknown, void, unknown, never>
 ```

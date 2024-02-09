@@ -16,5 +16,5 @@ Runtime.runSync
 **Signature**
 
 ```ts
-export declare const runSync: <R>(runtime: Runtime<R>) => <E, A>(effect: Effect.Effect<R, E, A>) => A
+export declare const runSync: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => A
 ```

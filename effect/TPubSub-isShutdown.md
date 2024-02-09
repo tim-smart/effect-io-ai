@@ -13,5 +13,5 @@ TPubSub.isShutdown
 **Signature**
 
 ```ts
-export declare const isShutdown: <A>(self: TPubSub<A>) => STM.STM<never, never, boolean>
+export declare const isShutdown: <A>(self: TPubSub<A>) => STM.STM<boolean>
 ```

@@ -17,14 +17,14 @@ Stream.toQueueOfElements
 
 ```ts
 export declare const toQueueOfElements: {
-  (options?: {
-    readonly capacity?: number | undefined
-  }): <R, E, A>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>>
-  <R, E, A>(
-    self: Stream<R, E, A>,
-    options?: { readonly capacity?: number | undefined }
-  ): Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>>
+  (
+    options?: { readonly capacity?: number | undefined } | undefined
+  ): <A, E, R>(
+    self: Stream<A, E, R>
+  ) => Effect.Effect<Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>, never, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
+    options?: { readonly capacity?: number | undefined } | undefined
+  ): Effect.Effect<Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>, never, Scope.Scope | R>
 }
 ```

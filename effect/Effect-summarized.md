@@ -16,14 +16,14 @@ Effect.summarized
 
 ```ts
 export declare const summarized: {
-  <R2, E2, B, C>(
-    summary: Effect<R2, E2, B>,
+  <B, E2, R2, C>(
+    summary: Effect<B, E2, R2>,
     f: (start: B, end: B) => C
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R2 | R, E2 | E, [C, A]>
-  <R, E, A, R2, E2, B, C>(
-    self: Effect<R, E, A>,
-    summary: Effect<R2, E2, B>,
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[C, A], E2 | E, R2 | R>
+  <A, E, R, B, E2, R2, C>(
+    self: Effect<A, E, R>,
+    summary: Effect<B, E2, R2>,
     f: (start: B, end: B) => C
-  ): Effect<R | R2, E | E2, [C, A]>
+  ): Effect<[C, A], E | E2, R | R2>
 }
 ```

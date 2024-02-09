@@ -13,5 +13,5 @@ Exit.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Exit<never, A>
+export declare const succeed: <A>(value: A) => Exit<A, never>
 ```

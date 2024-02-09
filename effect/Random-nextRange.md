@@ -14,5 +14,5 @@ Random.nextRange
 **Signature**
 
 ```ts
-export declare const nextRange: (min: number, max: number) => Effect.Effect<never, never, number>
+export declare const nextRange: (min: number, max: number) => Effect.Effect<number>
 ```

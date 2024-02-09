@@ -14,7 +14,7 @@ TSet.transform
 
 ```ts
 export declare const transform: {
-  <A>(f: (a: A) => A): (self: TSet<A>) => STM.STM<never, never, void>
-  <A>(self: TSet<A>, f: (a: A) => A): STM.STM<never, never, void>
+  <A>(f: (a: A) => A): (self: TSet<A>) => STM.STM<void>
+  <A>(self: TSet<A>, f: (a: A) => A): STM.STM<void>
 }
 ```

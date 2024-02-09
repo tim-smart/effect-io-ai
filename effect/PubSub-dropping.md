@@ -16,5 +16,5 @@ PubSub.dropping
 **Signature**
 
 ```ts
-export declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<never, never, PubSub<A>>
+export declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<PubSub<A>, never, never>
 ```

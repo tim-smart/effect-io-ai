@@ -20,12 +20,12 @@ Stream.broadcastedQueuesDynamic
 export declare const broadcastedQueuesDynamic: {
   (
     maximumLag: number
-  ): <R, E, A>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R, never, Effect.Effect<Scope.Scope, never, Queue.Dequeue<Take.Take<E, A>>>>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+  ): <A, E, R>(
+    self: Stream<A, E, R>
+  ) => Effect.Effect<Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope>, never, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     maximumLag: number
-  ): Effect.Effect<Scope.Scope | R, never, Effect.Effect<Scope.Scope, never, Queue.Dequeue<Take.Take<E, A>>>>
+  ): Effect.Effect<Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope>, never, Scope.Scope | R>
 }
 ```

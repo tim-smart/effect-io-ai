@@ -13,5 +13,5 @@ Stream.some
 **Signature**
 
 ```ts
-export declare const some: <R, E, A>(self: Stream<R, E, Option.Option<A>>) => Stream<R, Option.Option<E>, A>
+export declare const some: <A, E, R>(self: Stream<Option.Option<A>, E, R>) => Stream<A, Option.Option<E>, R>
 ```

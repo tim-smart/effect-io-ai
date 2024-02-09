@@ -39,12 +39,12 @@ export declare const attachPropertySignature: {
     key: K,
     value: V,
     options?: DocAnnotations
-  ): <R, I, A extends object>(schema: Schema<R, I, A>) => Schema<R, I, Simplify<A & { readonly [k in K]: V }>>
-  <R, I, A, K extends PropertyKey, V extends symbol | AST.LiteralValue>(
-    schema: Schema<R, I, A>,
+  ): <A extends object, I, R>(schema: Schema<A, I, R>) => Schema<Simplify<A & { readonly [k in K]: V }>, I, R>
+  <A, I, R, K extends PropertyKey, V extends symbol | AST.LiteralValue>(
+    schema: Schema<A, I, R>,
     key: K,
     value: V,
     options?: DocAnnotations
-  ): Schema<R, I, Simplify<A & { readonly [k in K]: V }>>
+  ): Schema<Simplify<A & { readonly [k in K]: V }>, I, R>
 }
 ```

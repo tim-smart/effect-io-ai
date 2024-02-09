@@ -13,7 +13,7 @@ Channel.concatAll
 **Signature**
 
 ```ts
-export declare const concatAll: <Env, InErr, InElem, InDone, OutErr, OutElem>(
-  channels: Channel<Env, InErr, InElem, InDone, OutErr, Channel<Env, InErr, InElem, InDone, OutErr, OutElem, any>, any>
-) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, any>
+export declare const concatAll: <OutElem, InElem, OutErr, InErr, InDone, Env>(
+  channels: Channel<Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>, InElem, OutErr, InErr, any, InDone, Env>
+) => Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>
 ```

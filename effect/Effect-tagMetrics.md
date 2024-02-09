@@ -14,9 +14,9 @@ Effect.tagMetrics
 
 ```ts
 export declare const tagMetrics: {
-  (key: string, value: string): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  (values: Record<string, string>): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, key: string, value: string): Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, values: Record<string, string>): Effect<R, E, A>
+  (key: string, value: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  (values: Record<string, string>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, key: string, value: string): Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, values: Record<string, string>): Effect<A, E, R>
 }
 ```

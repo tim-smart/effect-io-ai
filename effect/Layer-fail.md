@@ -13,5 +13,5 @@ Layer.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Layer<never, E, unknown>
+export declare const fail: <E>(error: E) => Layer<unknown, E, never>
 ```

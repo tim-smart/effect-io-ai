@@ -15,7 +15,7 @@ Stream.groupAdjacentBy
 
 ```ts
 export declare const groupAdjacentBy: {
-  <A, K>(f: (a: A) => K): <R, E>(self: Stream<R, E, A>) => Stream<R, E, [K, Chunk.NonEmptyChunk<A>]>
-  <R, E, A, K>(self: Stream<R, E, A>, f: (a: A) => K): Stream<R, E, [K, Chunk.NonEmptyChunk<A>]>
+  <A, K>(f: (a: A) => K): <R, E>(self: Stream<A, E, R>) => Stream<[K, Chunk.NonEmptyChunk<A>], E, R>
+  <R, E, A, K>(self: Stream<A, E, R>, f: (a: A) => K): Stream<[K, Chunk.NonEmptyChunk<A>], E, R>
 }
 ```

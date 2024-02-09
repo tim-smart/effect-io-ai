@@ -15,7 +15,7 @@ Context.make
 ```ts
 import * as Context from "effect/Context"
 
-const Port = Context.Tag<{ PORT: number }>()
+const Port = Context.GenericTag<{ PORT: number }>("Port")
 
 const Services = Context.make(Port, { PORT: 8080 })
 

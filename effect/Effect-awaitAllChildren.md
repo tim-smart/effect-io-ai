@@ -14,5 +14,5 @@ Effect.awaitAllChildren
 **Signature**
 
 ```ts
-export declare const awaitAllChildren: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+export declare const awaitAllChildren: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```

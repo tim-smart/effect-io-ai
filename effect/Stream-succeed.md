@@ -13,5 +13,5 @@ Stream.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Stream<never, never, A>
+export declare const succeed: <A>(value: A) => Stream<A, never, never>
 ```

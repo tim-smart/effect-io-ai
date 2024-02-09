@@ -16,7 +16,7 @@ STM.mapAttempt
 
 ```ts
 export declare const mapAttempt: {
-  <A, B>(f: (a: A) => B): <R, E>(self: STM<R, E, A>) => STM<R, unknown, B>
-  <R, E, A, B>(self: STM<R, E, A>, f: (a: A) => B): STM<R, unknown, B>
+  <A, B>(f: (a: A) => B): <R, E>(self: STM<A, E, R>) => STM<B, unknown, R>
+  <R, E, A, B>(self: STM<A, E, R>, f: (a: A) => B): STM<B, unknown, R>
 }
 ```

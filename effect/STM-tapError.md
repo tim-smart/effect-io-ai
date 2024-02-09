@@ -14,7 +14,7 @@ STM.tapError
 
 ```ts
 export declare const tapError: {
-  <E, R2, E2, _>(f: (error: NoInfer<E>) => STM<R2, E2, _>): <R, A>(self: STM<R, E, A>) => STM<R2 | R, E | E2, A>
-  <R, A, E, R2, E2, _>(self: STM<R, E, A>, f: (error: E) => STM<R2, E2, _>): STM<R | R2, E | E2, A>
+  <E, R2, E2, _>(f: (error: NoInfer<E>) => STM<_, E2, R2>): <R, A>(self: STM<A, E, R>) => STM<A, E | E2, R2 | R>
+  <R, A, E, R2, E2, _>(self: STM<A, E, R>, f: (error: E) => STM<_, E2, R2>): STM<A, E | E2, R | R2>
 }
 ```

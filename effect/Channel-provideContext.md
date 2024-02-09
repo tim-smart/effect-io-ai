@@ -17,12 +17,12 @@ Channel.provideContext
 export declare const provideContext: {
   <Env>(
     env: Context.Context<Env>
-  ): <InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<never, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  <InErr, InElem, InDone, OutErr, OutElem, OutDone, Env>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, never>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     env: Context.Context<Env>
-  ): Channel<never, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, never>
 }
 ```

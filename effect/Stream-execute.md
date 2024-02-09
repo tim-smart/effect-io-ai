@@ -13,5 +13,5 @@ Stream.execute
 **Signature**
 
 ```ts
-export declare const execute: <R, E, _>(effect: Effect.Effect<R, E, _>) => Stream<R, E, never>
+export declare const execute: <R, E, _>(effect: Effect.Effect<_, E, R>) => Stream<never, E, R>
 ```

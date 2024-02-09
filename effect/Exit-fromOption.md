@@ -13,5 +13,5 @@ Exit.fromOption
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(option: Option.Option<A>) => Exit<void, A>
+export declare const fromOption: <A>(option: Option.Option<A>) => Exit<A, void>
 ```

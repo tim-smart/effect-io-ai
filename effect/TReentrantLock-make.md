@@ -13,5 +13,5 @@ TReentrantLock.make
 **Signature**
 
 ```ts
-export declare const make: STM.STM<never, never, TReentrantLock>
+export declare const make: STM.STM<TReentrantLock, never, never>
 ```

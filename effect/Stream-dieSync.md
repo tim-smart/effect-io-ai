@@ -13,5 +13,5 @@ Stream.dieSync
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Stream<never, never, never>
+export declare const dieSync: (evaluate: LazyArg<unknown>) => Stream<never>
 ```

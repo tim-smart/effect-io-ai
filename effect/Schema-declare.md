@@ -18,16 +18,16 @@ export declare const declare: {
   <A>(
     is: (input: unknown) => input is A,
     annotations?: DeclareAnnotations<readonly [], A> | undefined
-  ): Schema<never, A, A>
+  ): Schema<A, A, never>
   <const P extends readonly Schema<any, any, any>[], R extends Schema.Context<P[number]>, I, A>(
     typeParameters: P,
     decodeUnknown: (
       ...typeParameters: P
-    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<R, ParseResult.ParseIssue, A>,
+    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<A, ParseResult.ParseIssue, R>,
     encodeUnknown: (
       ...typeParameters: P
-    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<R, ParseResult.ParseIssue, I>,
+    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<I, ParseResult.ParseIssue, R>,
     annotations?: DeclareAnnotations<{ readonly [K in keyof P]: Schema.To<P[K]> }, A> | undefined
-  ): Schema<Schema.Context<P[number]>, I, A>
+  ): Schema<A, I, Schema.Context<P[number]>>
 }
 ```

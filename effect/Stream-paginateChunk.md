@@ -18,5 +18,5 @@ Stream.paginateChunk
 export declare const paginateChunk: <S, A>(
   s: S,
   f: (s: S) => readonly [Chunk.Chunk<A>, Option.Option<S>]
-) => Stream<never, never, A>
+) => Stream<A, never, never>
 ```

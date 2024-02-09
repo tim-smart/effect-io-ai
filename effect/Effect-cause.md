@@ -14,5 +14,5 @@ Effect.cause
 **Signature**
 
 ```ts
-export declare const cause: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Cause.Cause<E>>
+export declare const cause: <A, E, R>(self: Effect<A, E, R>) => Effect<Cause.Cause<E>, never, R>
 ```

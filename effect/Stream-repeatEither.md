@@ -18,10 +18,10 @@ Stream.repeatEither
 export declare const repeatEither: {
   <R2, B>(
     schedule: Schedule.Schedule<R2, unknown, B>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | R, E, Either.Either<B, A>>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<B, A>, E, R2 | R>
   <R, E, A, R2, B>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     schedule: Schedule.Schedule<R2, unknown, B>
-  ): Stream<R | R2, E, Either.Either<B, A>>
+  ): Stream<Either.Either<B, A>, E, R | R2>
 }
 ```

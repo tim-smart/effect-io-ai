@@ -16,11 +16,11 @@ Stream.mapConcatEffect
 ```ts
 export declare const mapConcatEffect: {
   <A, R2, E2, A2>(
-    f: (a: A) => Effect.Effect<R2, E2, Iterable<A2>>
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A2>
+    f: (a: A) => Effect.Effect<Iterable<A2>, E2, R2>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
   <R, E, A, R2, E2, A2>(
-    self: Stream<R, E, A>,
-    f: (a: A) => Effect.Effect<R2, E2, Iterable<A2>>
-  ): Stream<R | R2, E | E2, A2>
+    self: Stream<A, E, R>,
+    f: (a: A) => Effect.Effect<Iterable<A2>, E2, R2>
+  ): Stream<A2, E | E2, R | R2>
 }
 ```

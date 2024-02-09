@@ -14,9 +14,9 @@ STM.cond
 **Signature**
 
 ```ts
-export declare const cond: <E, A>(
+export declare const cond: <A, E>(
   predicate: LazyArg<boolean>,
   error: LazyArg<E>,
   result: LazyArg<A>
-) => STM<never, E, A>
+) => STM<A, E, never>
 ```

@@ -15,5 +15,5 @@ Stream.paginate
 **Signature**
 
 ```ts
-export declare const paginate: <S, A>(s: S, f: (s: S) => readonly [A, Option.Option<S>]) => Stream<never, never, A>
+export declare const paginate: <S, A>(s: S, f: (s: S) => readonly [A, Option.Option<S>]) => Stream<A, never, never>
 ```

@@ -14,5 +14,5 @@ TestServices.withSizedScoped
 **Signature**
 
 ```ts
-export declare const withSizedScoped: (sized: Sized.TestSized) => Effect.Effect<Scope.Scope, never, void>
+export declare const withSizedScoped: (sized: Sized.TestSized) => Effect.Effect<void, never, Scope.Scope>
 ```

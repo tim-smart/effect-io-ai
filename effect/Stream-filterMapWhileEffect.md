@@ -16,11 +16,11 @@ Stream.filterMapWhileEffect
 ```ts
 export declare const filterMapWhileEffect: {
   <A, R2, E2, A2>(
-    pf: (a: A) => Option.Option<Effect.Effect<R2, E2, A2>>
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A2>
+    pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
   <R, E, A, R2, E2, A2>(
-    self: Stream<R, E, A>,
-    pf: (a: A) => Option.Option<Effect.Effect<R2, E2, A2>>
-  ): Stream<R | R2, E | E2, A2>
+    self: Stream<A, E, R>,
+    pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>
+  ): Stream<A2, E | E2, R | R2>
 }
 ```

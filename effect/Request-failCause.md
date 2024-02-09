@@ -14,7 +14,7 @@ Request.failCause
 
 ```ts
 export declare const failCause: {
-  <A extends Request<any, any>>(cause: Cause<Request.Error<A>>): (self: A) => Effect.Effect<never, never, void>
-  <A extends Request<any, any>>(self: A, cause: Cause<Request.Error<A>>): Effect.Effect<never, never, void>
+  <A extends Request<any, any>>(cause: Cause<Request.Error<A>>): (self: A) => Effect.Effect<void>
+  <A extends Request<any, any>>(self: A, cause: Cause<Request.Error<A>>): Effect.Effect<void>
 }
 ```

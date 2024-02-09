@@ -13,5 +13,5 @@ STM.commit
 **Signature**
 
 ```ts
-export declare const commit: <R, E, A>(self: STM<R, E, A>) => Effect.Effect<R, E, A>
+export declare const commit: <A, E, R>(self: STM<A, E, R>) => Effect.Effect<A, E, R>
 ```

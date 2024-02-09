@@ -13,5 +13,5 @@ Take.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Take<E, never>
+export declare const fail: <E>(error: E) => Take<never, E>
 ```

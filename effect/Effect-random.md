@@ -13,5 +13,5 @@ Effect.random
 **Signature**
 
 ```ts
-export declare const random: Effect<never, never, Random.Random>
+export declare const random: Effect<Random.Random, never, never>
 ```

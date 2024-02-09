@@ -13,5 +13,5 @@ Effect.metricLabels
 **Signature**
 
 ```ts
-export declare const metricLabels: Effect<never, never, readonly MetricLabel.MetricLabel[]>
+export declare const metricLabels: Effect<readonly MetricLabel.MetricLabel[], never, never>
 ```

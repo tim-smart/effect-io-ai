@@ -13,5 +13,5 @@ Stream.suspend
 **Signature**
 
 ```ts
-export declare const suspend: <R, E, A>(stream: LazyArg<Stream<R, E, A>>) => Stream<R, E, A>
+export declare const suspend: <A, E, R>(stream: LazyArg<Stream<A, E, R>>) => Stream<A, E, R>
 ```

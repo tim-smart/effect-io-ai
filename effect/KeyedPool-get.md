@@ -17,7 +17,7 @@ KeyedPool.get
 
 ```ts
 export declare const get: {
-  <K>(key: K): <E, A>(self: KeyedPool<K, E, A>) => Effect.Effect<Scope.Scope, E, A>
-  <K, E, A>(self: KeyedPool<K, E, A>, key: K): Effect.Effect<Scope.Scope, E, A>
+  <K>(key: K): <A, E>(self: KeyedPool<K, A, E>) => Effect.Effect<A, E, Scope.Scope>
+  <K, A, E>(self: KeyedPool<K, A, E>, key: K): Effect.Effect<A, E, Scope.Scope>
 }
 ```

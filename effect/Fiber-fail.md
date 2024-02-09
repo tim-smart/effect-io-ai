@@ -13,5 +13,5 @@ Fiber.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Fiber<E, never>
+export declare const fail: <E>(error: E) => Fiber<never, E>
 ```

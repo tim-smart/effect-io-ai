@@ -14,5 +14,5 @@ Layer.effectContext
 **Signature**
 
 ```ts
-export declare const effectContext: <R, E, A>(effect: Effect.Effect<R, E, Context.Context<A>>) => Layer<R, E, A>
+export declare const effectContext: <A, E, R>(effect: Effect.Effect<Context.Context<A>, E, R>) => Layer<A, E, R>
 ```

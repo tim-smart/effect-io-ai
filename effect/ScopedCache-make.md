@@ -18,5 +18,5 @@ export declare const make: <Key, Environment, Error, Value>(options: {
   readonly lookup: Lookup<Key, Environment, Error, Value>
   readonly capacity: number
   readonly timeToLive: Duration.DurationInput
-}) => Effect.Effect<Scope.Scope | Environment, never, ScopedCache<Key, Error, Value>>
+}) => Effect.Effect<ScopedCache<Key, Error, Value>, never, Scope.Scope | Environment>
 ```

@@ -13,5 +13,5 @@ MetricPolling.poll
 **Signature**
 
 ```ts
-export declare const poll: <Type, In, R, E, Out>(self: MetricPolling<Type, In, R, E, Out>) => Effect.Effect<R, E, In>
+export declare const poll: <Type, In, R, E, Out>(self: MetricPolling<Type, In, R, E, Out>) => Effect.Effect<In, E, R>
 ```

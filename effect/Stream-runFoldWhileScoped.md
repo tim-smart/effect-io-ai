@@ -20,12 +20,12 @@ export declare const runFoldWhileScoped: {
     s: S,
     cont: Predicate<S>,
     f: (s: S, a: A) => S
-  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, E, S>
+  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<S, E, Scope.Scope | R>
   <R, E, S, A>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     s: S,
     cont: Predicate<S>,
     f: (s: S, a: A) => S
-  ): Effect.Effect<Scope.Scope | R, E, S>
+  ): Effect.Effect<S, E, Scope.Scope | R>
 }
 ```

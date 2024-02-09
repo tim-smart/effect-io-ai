@@ -16,30 +16,30 @@ Channel.catchAllCause
 
 ```ts
 export declare const catchAllCause: {
-  <Env1, InErr1, InElem1, InDone1, OutErr, OutErr1, OutElem1, OutDone1>(
-    f: (cause: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
-  ): <Env, InErr, InElem, InDone, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  <OutErr, OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>(
+    f: (cause: Cause.Cause<OutErr>) => Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>
+  ): <OutElem, InElem, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
   ) => Channel<
-    Env1 | Env,
-    InErr & InErr1,
-    InElem & InElem1,
-    InDone & InDone1,
-    OutErr1,
     OutElem1 | OutElem,
-    OutDone1 | OutDone
-  >
-  <Env, InErr, InElem, InDone, OutElem, OutDone, Env1, InErr1, InElem1, InDone1, OutErr, OutErr1, OutElem1, OutDone1>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    f: (cause: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
-  ): Channel<
-    Env | Env1,
-    InErr & InErr1,
     InElem & InElem1,
-    InDone & InDone1,
     OutErr1,
+    InErr & InErr1,
+    OutDone1 | OutDone,
+    InDone & InDone1,
+    Env1 | Env
+  >
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    f: (cause: Cause.Cause<OutErr>) => Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>
+  ): Channel<
     OutElem | OutElem1,
-    OutDone | OutDone1
+    InElem & InElem1,
+    OutErr1,
+    InErr & InErr1,
+    OutDone | OutDone1,
+    InDone & InDone1,
+    Env | Env1
   >
 }
 ```

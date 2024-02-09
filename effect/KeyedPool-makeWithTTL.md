@@ -20,10 +20,10 @@ KeyedPool.makeWithTTL
 **Signature**
 
 ```ts
-export declare const makeWithTTL: <K, R, E, A>(options: {
-  readonly acquire: (key: K) => Effect.Effect<R, E, A>
+export declare const makeWithTTL: <K, A, E, R>(options: {
+  readonly acquire: (key: K) => Effect.Effect<A, E, R>
   readonly min: (key: K) => number
   readonly max: (key: K) => number
   readonly timeToLive: Duration.DurationInput
-}) => Effect.Effect<Scope.Scope | R, never, KeyedPool<K, E, A>>
+}) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
 ```

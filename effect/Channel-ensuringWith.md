@@ -16,14 +16,14 @@ Channel.ensuringWith
 
 ```ts
 export declare const ensuringWith: {
-  <Env2, OutErr, OutDone>(
-    finalizer: (e: Exit.Exit<OutErr, OutDone>) => Effect.Effect<Env2, never, unknown>
-  ): <Env, InErr, InElem, InDone, OutElem>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env2 | Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  <Env, InErr, InElem, InDone, OutElem, Env2, OutErr, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    finalizer: (e: Exit.Exit<OutErr, OutDone>) => Effect.Effect<Env2, never, unknown>
-  ): Channel<Env | Env2, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  <OutDone, OutErr, Env2>(
+    finalizer: (e: Exit.Exit<OutDone, OutErr>) => Effect.Effect<unknown, never, Env2>
+  ): <OutElem, InElem, InErr, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env2 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, Env2>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    finalizer: (e: Exit.Exit<OutDone, OutErr>) => Effect.Effect<unknown, never, Env2>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | Env2>
 }
 ```

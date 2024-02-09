@@ -20,5 +20,5 @@ export declare const foldWeighted: <S, In>(options: {
   readonly maxCost: number
   readonly cost: (s: S, input: In) => number
   readonly body: (s: S, input: In) => S
-}) => Sink<never, never, In, In, S>
+}) => Sink<S, In, In, never, never>
 ```

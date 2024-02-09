@@ -13,5 +13,5 @@ STM.succeedNone
 **Signature**
 
 ```ts
-export declare const succeedNone: STM<never, never, Option.Option<never>>
+export declare const succeedNone: STM<Option.Option<never>, never, never>
 ```

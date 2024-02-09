@@ -24,12 +24,12 @@ Effect.acquireRelease
 
 ```ts
 export declare const acquireRelease: {
-  <A, R2, X>(
-    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
-  ): <R, E>(acquire: Effect<R, E, A>) => Effect<Scope.Scope | R2 | R, E, A>
-  <R, E, A, R2, X>(
-    acquire: Effect<R, E, A>,
-    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<R2, never, X>
-  ): Effect<Scope.Scope | R | R2, E, A>
+  <A, X, R2>(
+    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>
+  ): <E, R>(acquire: Effect<A, E, R>) => Effect<A, E, Scope.Scope | R2 | R>
+  <A, E, R, X, R2>(
+    acquire: Effect<A, E, R>,
+    release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>
+  ): Effect<A, E, Scope.Scope | R | R2>
 }
 ```

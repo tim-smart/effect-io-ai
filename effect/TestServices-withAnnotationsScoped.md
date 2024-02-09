@@ -16,5 +16,5 @@ TestServices.withAnnotationsScoped
 ```ts
 export declare const withAnnotationsScoped: (
   annotations: Annotations.TestAnnotations
-) => Effect.Effect<Scope.Scope, never, void>
+) => Effect.Effect<void, never, Scope.Scope>
 ```

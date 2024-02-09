@@ -14,6 +14,6 @@ Stream.contextWithStream
 
 ```ts
 export declare const contextWithStream: <R0, R, E, A>(
-  f: (env: Context.Context<R0>) => Stream<R, E, A>
-) => Stream<R0 | R, E, A>
+  f: (env: Context.Context<R0>) => Stream<A, E, R>
+) => Stream<A, E, R0 | R>
 ```

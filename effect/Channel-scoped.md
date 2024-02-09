@@ -13,7 +13,7 @@ Channel.scoped
 **Signature**
 
 ```ts
-export declare const scoped: <R, E, A>(
-  effect: Effect.Effect<R, E, A>
-) => Channel<Exclude<R, Scope.Scope>, unknown, unknown, unknown, E, A, unknown>
+export declare const scoped: <A, E, R>(
+  effect: Effect.Effect<A, E, R>
+) => Channel<A, unknown, E, unknown, unknown, unknown, Exclude<R, Scope.Scope>>
 ```

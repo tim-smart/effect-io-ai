@@ -14,5 +14,5 @@ TPubSub.isFull
 **Signature**
 
 ```ts
-export declare const isFull: <A>(self: TPubSub<A>) => STM.STM<never, never, boolean>
+export declare const isFull: <A>(self: TPubSub<A>) => STM.STM<boolean>
 ```

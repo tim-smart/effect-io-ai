@@ -13,5 +13,5 @@ Exit.asUnit
 **Signature**
 
 ```ts
-export declare const asUnit: <E, A>(self: Exit<E, A>) => Exit<E, void>
+export declare const asUnit: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```

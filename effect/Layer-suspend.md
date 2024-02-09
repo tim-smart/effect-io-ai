@@ -14,5 +14,5 @@ Layer.suspend
 **Signature**
 
 ```ts
-export declare const suspend: <RIn, E, ROut>(evaluate: LazyArg<Layer<RIn, E, ROut>>) => Layer<RIn, E, ROut>
+export declare const suspend: <RIn, E, ROut>(evaluate: LazyArg<Layer<ROut, E, RIn>>) => Layer<ROut, E, RIn>
 ```

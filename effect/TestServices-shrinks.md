@@ -13,5 +13,5 @@ TestServices.shrinks
 **Signature**
 
 ```ts
-export declare const shrinks: Effect.Effect<never, never, number>
+export declare const shrinks: Effect.Effect<number, never, never>
 ```

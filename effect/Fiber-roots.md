@@ -13,5 +13,5 @@ Fiber.roots
 **Signature**
 
 ```ts
-export declare const roots: Effect.Effect<never, never, RuntimeFiber<any, any>[]>
+export declare const roots: Effect.Effect<RuntimeFiber<any, any>[], never, never>
 ```

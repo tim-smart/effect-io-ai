@@ -16,9 +16,9 @@ Sink.foldChunksEffect
 **Signature**
 
 ```ts
-export declare const foldChunksEffect: <S, R, E, In>(
+export declare const foldChunksEffect: <S, In, E, R>(
   s: S,
   contFn: Predicate<S>,
-  f: (s: S, chunk: Chunk.Chunk<In>) => Effect.Effect<R, E, S>
-) => Sink<R, E, In, In, S>
+  f: (s: S, chunk: Chunk.Chunk<In>) => Effect.Effect<S, E, R>
+) => Sink<S, In, In, E, R>
 ```

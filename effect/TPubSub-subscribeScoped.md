@@ -15,5 +15,5 @@ TPubSub.subscribeScoped
 **Signature**
 
 ```ts
-export declare const subscribeScoped: <A>(self: TPubSub<A>) => Effect.Effect<Scope.Scope, never, TQueue.TDequeue<A>>
+export declare const subscribeScoped: <A>(self: TPubSub<A>) => Effect.Effect<TQueue.TDequeue<A>, never, Scope.Scope>
 ```

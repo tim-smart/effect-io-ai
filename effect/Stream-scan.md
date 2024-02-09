@@ -15,7 +15,7 @@ Stream.scan
 
 ```ts
 export declare const scan: {
-  <S, A>(s: S, f: (s: S, a: A) => S): <R, E>(self: Stream<R, E, A>) => Stream<R, E, S>
-  <R, E, S, A>(self: Stream<R, E, A>, s: S, f: (s: S, a: A) => S): Stream<R, E, S>
+  <S, A>(s: S, f: (s: S, a: A) => S): <R, E>(self: Stream<A, E, R>) => Stream<S, E, R>
+  <R, E, S, A>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Stream<S, E, R>
 }
 ```

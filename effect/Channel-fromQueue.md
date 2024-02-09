@@ -13,7 +13,7 @@ Channel.fromQueue
 **Signature**
 
 ```ts
-export declare const fromQueue: <Err, Elem, Done>(
-  queue: Queue.Dequeue<Either.Either<Exit.Exit<Err, Done>, Elem>>
-) => Channel<never, unknown, unknown, unknown, Err, Elem, Done>
+export declare const fromQueue: <Done, Err, Elem>(
+  queue: Queue.Dequeue<Either.Either<Exit.Exit<Done, Err>, Elem>>
+) => Channel<Elem, unknown, Err, unknown, Done, unknown, never>
 ```

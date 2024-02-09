@@ -16,7 +16,7 @@ Queue.takeBetween
 
 ```ts
 export declare const takeBetween: {
-  (min: number, max: number): <A>(self: Dequeue<A>) => Effect.Effect<never, never, Chunk.Chunk<A>>
-  <A>(self: Dequeue<A>, min: number, max: number): Effect.Effect<never, never, Chunk.Chunk<A>>
+  (min: number, max: number): <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>, never, never>
+  <A>(self: Dequeue<A>, min: number, max: number): Effect.Effect<Chunk.Chunk<A>, never, never>
 }
 ```

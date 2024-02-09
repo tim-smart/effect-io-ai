@@ -15,7 +15,7 @@ Deferred.failCause
 
 ```ts
 export declare const failCause: {
-  <E>(cause: Cause.Cause<E>): <A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, cause: Cause.Cause<E>): Effect.Effect<never, never, boolean>
+  <E>(cause: Cause.Cause<E>): <A>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, cause: Cause.Cause<E>): Effect.Effect<boolean>
 }
 ```

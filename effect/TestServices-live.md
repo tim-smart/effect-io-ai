@@ -13,5 +13,5 @@ TestServices.live
 **Signature**
 
 ```ts
-export declare const live: Effect.Effect<never, never, Live.TestLive>
+export declare const live: Effect.Effect<Live.TestLive, never, never>
 ```

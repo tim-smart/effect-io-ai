@@ -13,5 +13,5 @@ Fiber.pretty
 **Signature**
 
 ```ts
-export declare const pretty: <E, A>(self: RuntimeFiber<E, A>) => Effect.Effect<never, never, string>
+export declare const pretty: <A, E>(self: RuntimeFiber<A, E>) => Effect.Effect<string>
 ```

@@ -14,9 +14,9 @@ Effect.annotateLogs
 
 ```ts
 export declare const annotateLogs: {
-  (key: string, value: unknown): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  (values: Record<string, unknown>): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, key: string, value: unknown): Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, values: Record<string, unknown>): Effect<R, E, A>
+  (key: string, value: unknown): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  (values: Record<string, unknown>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, key: string, value: unknown): Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, values: Record<string, unknown>): Effect<A, E, R>
 }
 ```

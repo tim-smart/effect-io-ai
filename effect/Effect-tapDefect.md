@@ -14,12 +14,12 @@ Effect.tapDefect
 
 ```ts
 export declare const tapDefect: {
-  <R2, E2, X>(
-    f: (cause: Cause.Cause<never>) => Effect<R2, E2, X>
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R2 | R, E2 | E, A>
-  <R, E, A, R2, E2, X>(
-    self: Effect<R, E, A>,
-    f: (cause: Cause.Cause<never>) => Effect<R2, E2, X>
-  ): Effect<R | R2, E | E2, A>
+  <X, E2, R2>(
+    f: (cause: Cause.Cause<never>) => Effect<X, E2, R2>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R2 | R>
+  <A, E, R, X, E2, R2>(
+    self: Effect<A, E, R>,
+    f: (cause: Cause.Cause<never>) => Effect<X, E2, R2>
+  ): Effect<A, E | E2, R | R2>
 }
 ```

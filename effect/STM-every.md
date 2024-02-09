@@ -15,7 +15,7 @@ STM.every
 
 ```ts
 export declare const every: {
-  <A, R, E>(predicate: (a: NoInfer<A>) => STM<R, E, boolean>): (iterable: Iterable<A>) => STM<R, E, boolean>
-  <A, R, E>(iterable: Iterable<A>, predicate: (a: A) => STM<R, E, boolean>): STM<R, E, boolean>
+  <A, R, E>(predicate: (a: NoInfer<A>) => STM<boolean, E, R>): (iterable: Iterable<A>) => STM<boolean, E, R>
+  <A, R, E>(iterable: Iterable<A>, predicate: (a: A) => STM<boolean, E, R>): STM<boolean, E, R>
 }
 ```

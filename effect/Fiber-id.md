@@ -13,5 +13,5 @@ Fiber.id
 **Signature**
 
 ```ts
-export declare const id: <E, A>(self: Fiber<E, A>) => FiberId.FiberId
+export declare const id: <A, E>(self: Fiber<A, E>) => FiberId.FiberId
 ```

@@ -19,25 +19,25 @@ Stream.partition
 export declare const partition: {
   <C extends A, B extends A, A = C>(
     refinement: Refinement<NoInfer<A>, B>,
-    options?: { bufferSize?: number | undefined }
+    options?: { bufferSize?: number | undefined } | undefined
   ): <R, E>(
-    self: Stream<R, E, C>
-  ) => Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, Exclude<C, B>>, satisfying: Stream<never, E, B>]>
+    self: Stream<C, E, R>
+  ) => Effect.Effect<[excluded: Stream<Exclude<C, B>, E, never>, satisfying: Stream<B, E, never>], E, Scope.Scope | R>
   <A>(
     predicate: Predicate<A>,
-    options?: { bufferSize?: number | undefined }
-  ): <R, E, B extends A>(
-    self: Stream<R, E, B>
-  ) => Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, B>, satisfying: Stream<never, E, B>]>
-  <R, E, A, B extends A>(
-    self: Stream<R, E, A>,
+    options?: { bufferSize?: number | undefined } | undefined
+  ): <R, E>(
+    self: Stream<A, E, R>
+  ) => Effect.Effect<[excluded: Stream<A, E, never>, satisfying: Stream<A, E, never>], E, Scope.Scope | R>
+  <R, E, C extends A, B extends A, A = C>(
+    self: Stream<C, E, R>,
     refinement: Refinement<A, B>,
-    options?: { bufferSize?: number | undefined }
-  ): Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, Exclude<A, B>>, satisfying: Stream<never, E, B>]>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+    options?: { bufferSize?: number | undefined } | undefined
+  ): Effect.Effect<[excluded: Stream<Exclude<C, B>, E, never>, satisfying: Stream<B, E, never>], E, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     predicate: Predicate<A>,
-    options?: { bufferSize?: number | undefined }
-  ): Effect.Effect<Scope.Scope | R, E, [excluded: Stream<never, E, A>, satisfying: Stream<never, E, A>]>
+    options?: { bufferSize?: number | undefined } | undefined
+  ): Effect.Effect<[excluded: Stream<A, E, never>, satisfying: Stream<A, E, never>], E, Scope.Scope | R>
 }
 ```

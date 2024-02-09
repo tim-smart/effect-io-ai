@@ -16,11 +16,11 @@ Stream.provideSomeLayer
 ```ts
 export declare const provideSomeLayer: {
   <RIn, E2, ROut>(
-    layer: Layer.Layer<RIn, E2, ROut>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<RIn | Exclude<R, ROut>, E2 | E, A>
+    layer: Layer.Layer<ROut, E2, RIn>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, RIn | Exclude<R, ROut>>
   <R, E, A, RIn, E2, ROut>(
-    self: Stream<R, E, A>,
-    layer: Layer.Layer<RIn, E2, ROut>
-  ): Stream<RIn | Exclude<R, ROut>, E | E2, A>
+    self: Stream<A, E, R>,
+    layer: Layer.Layer<ROut, E2, RIn>
+  ): Stream<A, E | E2, RIn | Exclude<R, ROut>>
 }
 ```

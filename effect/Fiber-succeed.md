@@ -13,5 +13,5 @@ Fiber.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Fiber<never, A>
+export declare const succeed: <A>(value: A) => Fiber<A, never>
 ```

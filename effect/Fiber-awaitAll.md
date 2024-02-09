@@ -13,5 +13,5 @@ Fiber.awaitAll
 **Signature**
 
 ```ts
-export declare const awaitAll: (fibers: Iterable<Fiber<any, any>>) => Effect.Effect<never, never, void>
+export declare const awaitAll: (fibers: Iterable<Fiber<any, any>>) => Effect.Effect<void>
 ```

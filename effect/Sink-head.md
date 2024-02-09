@@ -13,5 +13,5 @@ Sink.head
 **Signature**
 
 ```ts
-export declare const head: <In>() => Sink<never, never, In, In, Option.Option<In>>
+export declare const head: <In>() => Sink<Option.Option<In>, In, In, never, never>
 ```

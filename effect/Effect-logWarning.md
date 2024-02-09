@@ -16,5 +16,5 @@ Effect.logWarning
 export declare const logWarning: <A>(
   messageOrCause: A,
   supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<never, never, void>
+) => Effect<void>
 ```

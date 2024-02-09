@@ -13,5 +13,5 @@ STM.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => STM<never, never, never>
+export declare const die: (defect: unknown) => STM<never>
 ```

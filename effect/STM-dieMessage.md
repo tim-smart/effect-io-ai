@@ -14,5 +14,5 @@ STM.dieMessage
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => STM<never, never, never>
+export declare const dieMessage: (message: string) => STM<never>
 ```

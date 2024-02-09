@@ -14,5 +14,5 @@ STM.eventually
 **Signature**
 
 ```ts
-export declare const eventually: <R, E, A>(self: STM<R, E, A>) => STM<R, E, A>
+export declare const eventually: <A, E, R>(self: STM<A, E, R>) => STM<A, E, R>
 ```

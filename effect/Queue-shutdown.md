@@ -14,5 +14,5 @@ Queue.shutdown
 **Signature**
 
 ```ts
-export declare const shutdown: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<never, never, void>
+export declare const shutdown: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<void>
 ```

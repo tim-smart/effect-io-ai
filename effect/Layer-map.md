@@ -14,7 +14,7 @@ Layer.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (context: Context.Context<A>) => Context.Context<B>): <R, E>(self: Layer<R, E, A>) => Layer<R, E, B>
-  <R, E, A, B>(self: Layer<R, E, A>, f: (context: Context.Context<A>) => Context.Context<B>): Layer<R, E, B>
+  <A, B>(f: (context: Context.Context<A>) => Context.Context<B>): <R, E>(self: Layer<A, E, R>) => Layer<B, E, R>
+  <R, E, A, B>(self: Layer<A, E, R>, f: (context: Context.Context<A>) => Context.Context<B>): Layer<B, E, R>
 }
 ```

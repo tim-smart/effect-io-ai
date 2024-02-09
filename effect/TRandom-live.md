@@ -13,5 +13,5 @@ TRandom.live
 **Signature**
 
 ```ts
-export declare const live: Layer.Layer<never, never, TRandom>
+export declare const live: Layer.Layer<TRandom, never, never>
 ```

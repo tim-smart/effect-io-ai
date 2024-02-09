@@ -16,13 +16,13 @@ Layer.zipWith
 ```ts
 export declare const zipWith: {
   <R2, E2, B, A, C>(
-    that: Layer<R2, E2, B>,
+    that: Layer<B, E2, R2>,
     f: (a: Context.Context<A>, b: Context.Context<B>) => Context.Context<C>
-  ): <R, E>(self: Layer<R, E, A>) => Layer<R2 | R, E2 | E, C>
+  ): <R, E>(self: Layer<A, E, R>) => Layer<C, E2 | E, R2 | R>
   <R, E, R2, E2, B, A, C>(
-    self: Layer<R, E, A>,
-    that: Layer<R2, E2, B>,
+    self: Layer<A, E, R>,
+    that: Layer<B, E2, R2>,
     f: (a: Context.Context<A>, b: Context.Context<B>) => Context.Context<C>
-  ): Layer<R | R2, E | E2, C>
+  ): Layer<C, E | E2, R | R2>
 }
 ```

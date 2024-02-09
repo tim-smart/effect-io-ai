@@ -14,7 +14,7 @@ Sink.collectAllUntilEffect
 **Signature**
 
 ```ts
-export declare const collectAllUntilEffect: <In, R, E>(
-  p: (input: In) => Effect.Effect<R, E, boolean>
-) => Sink<R, E, In, In, Chunk.Chunk<In>>
+export declare const collectAllUntilEffect: <In, E, R>(
+  p: (input: In) => Effect.Effect<boolean, E, R>
+) => Sink<Chunk.Chunk<In>, In, In, E, R>
 ```

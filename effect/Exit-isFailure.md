@@ -13,5 +13,5 @@ Exit.isFailure
 **Signature**
 
 ```ts
-export declare const isFailure: <E, A>(self: Exit<E, A>) => self is Failure<E, A>
+export declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```

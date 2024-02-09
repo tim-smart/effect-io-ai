@@ -15,5 +15,5 @@ Channel.contextWith
 ```ts
 export declare const contextWith: <Env, OutDone>(
   f: (env: Context.Context<Env>) => OutDone
-) => Channel<Env, unknown, unknown, unknown, never, never, OutDone>
+) => Channel<never, unknown, never, unknown, OutDone, unknown, Env>
 ```

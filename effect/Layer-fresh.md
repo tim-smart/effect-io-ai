@@ -13,5 +13,5 @@ Layer.fresh
 **Signature**
 
 ```ts
-export declare const fresh: <R, E, A>(self: Layer<R, E, A>) => Layer<R, E, A>
+export declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```

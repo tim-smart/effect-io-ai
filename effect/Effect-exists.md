@@ -15,14 +15,18 @@ Effect.exists
 
 ```ts
 export declare const exists: {
-  <R, E, A>(
-    f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): (elements: Iterable<A>) => Effect<R, E, boolean>
-  <R, E, A>(
+  <A, E, R>(
+    f: (a: A, i: number) => Effect<boolean, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): (elements: Iterable<A>) => Effect<boolean, E, R>
+  <A, E, R>(
     elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R, E, boolean>
+    f: (a: A, i: number) => Effect<boolean, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<boolean, E, R>
 }
 ```

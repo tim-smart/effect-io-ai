@@ -20,5 +20,5 @@ Effect.firstSuccessOf
 **Signature**
 
 ```ts
-export declare const firstSuccessOf: <R, E, A>(effects: Iterable<Effect<R, E, A>>) => Effect<R, E, A>
+export declare const firstSuccessOf: <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<A, E, R>
 ```

@@ -1,6 +1,6 @@
 # Stream
 
-A `Stream<R, E, A>` is a description of a program that, when evaluated, may
+A `Stream<A, E, R>` is a description of a program that, when evaluated, may
 emit zero or more values of type `A`, may fail with errors of type `E`, and
 uses an context of type `R`. One way to think of `Stream` is as a
 `Effect` program that could emit multiple values.

@@ -14,7 +14,7 @@ TSet.removeAll
 
 ```ts
 export declare const removeAll: {
-  <A>(iterable: Iterable<A>): (self: TSet<A>) => STM.STM<never, never, void>
-  <A>(self: TSet<A>, iterable: Iterable<A>): STM.STM<never, never, void>
+  <A>(iterable: Iterable<A>): (self: TSet<A>) => STM.STM<void>
+  <A>(self: TSet<A>, iterable: Iterable<A>): STM.STM<void>
 }
 ```

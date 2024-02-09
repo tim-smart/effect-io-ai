@@ -16,8 +16,8 @@ Stream.asyncScoped
 **Signature**
 
 ```ts
-export declare const asyncScoped: <R, E, A>(
-  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<Scope.Scope | R, E, unknown>,
+export declare const asyncScoped: <A, E = never, R = never>(
+  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, Scope.Scope | R>,
   outputBuffer?: number
-) => Stream<Exclude<R, Scope.Scope>, E, A>
+) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```

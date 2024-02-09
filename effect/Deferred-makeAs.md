@@ -13,5 +13,5 @@ Deferred.makeAs
 **Signature**
 
 ```ts
-export declare const makeAs: <E, A>(fiberId: FiberId.FiberId) => Effect.Effect<never, never, Deferred<E, A>>
+export declare const makeAs: <A, E = never>(fiberId: FiberId.FiberId) => Effect.Effect<Deferred<A, E>, never, never>
 ```

@@ -15,5 +15,5 @@ Stream.changes
 **Signature**
 
 ```ts
-export declare const changes: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
+export declare const changes: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```

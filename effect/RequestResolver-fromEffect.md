@@ -14,6 +14,6 @@ RequestResolver.fromEffect
 
 ```ts
 export declare const fromEffect: <R, A extends Request.Request<any, any>>(
-  f: (a: A) => Effect.Effect<R, Request.Request.Error<A>, Request.Request.Success<A>>
+  f: (a: A) => Effect.Effect<Request.Request.Success<A>, Request.Request.Error<A>, R>
 ) => RequestResolver<A, R>
 ```

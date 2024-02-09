@@ -15,7 +15,7 @@ Deferred.interruptWith
 
 ```ts
 export declare const interruptWith: {
-  (fiberId: FiberId.FiberId): <E, A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, fiberId: FiberId.FiberId): Effect.Effect<never, never, boolean>
+  (fiberId: FiberId.FiberId): <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, fiberId: FiberId.FiberId): Effect.Effect<boolean>
 }
 ```

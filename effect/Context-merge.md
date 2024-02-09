@@ -15,8 +15,8 @@ Context.merge
 ```ts
 import * as Context from "effect/Context"
 
-const Port = Context.Tag<{ PORT: number }>()
-const Timeout = Context.Tag<{ TIMEOUT: number }>()
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const firstContext = Context.make(Port, { PORT: 8080 })
 const secondContext = Context.make(Timeout, { TIMEOUT: 5000 })

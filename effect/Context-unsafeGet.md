@@ -18,8 +18,8 @@ Context.unsafeGet
 ```ts
 import * as Context from "effect/Context"
 
-const Port = Context.Tag<{ PORT: number }>()
-const Timeout = Context.Tag<{ TIMEOUT: number }>()
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const Services = Context.make(Port, { PORT: 8080 })
 

@@ -16,6 +16,6 @@ Stream.unfoldEffect
 ```ts
 export declare const unfoldEffect: <S, R, E, A>(
   s: S,
-  f: (s: S) => Effect.Effect<R, E, Option.Option<readonly [A, S]>>
-) => Stream<R, E, A>
+  f: (s: S) => Effect.Effect<Option.Option<readonly [A, S]>, E, R>
+) => Stream<A, E, R>
 ```

@@ -13,5 +13,5 @@ TPriorityQueue.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: TPriorityQueue<A>) => STM.STM<never, never, number>
+export declare const size: <A>(self: TPriorityQueue<A>) => STM.STM<number>
 ```

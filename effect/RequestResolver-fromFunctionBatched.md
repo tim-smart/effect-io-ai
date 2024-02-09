@@ -15,7 +15,7 @@ RequestResolver.fromFunctionBatched
 **Signature**
 
 ```ts
-export declare const fromFunctionBatched: <A extends Request.Request<never, any>>(
+export declare const fromFunctionBatched: <A extends Request.Request<any, never>>(
   f: (chunk: A[]) => Iterable<Request.Request.Success<A>>
 ) => RequestResolver<A, never>
 ```

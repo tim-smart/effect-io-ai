@@ -13,5 +13,5 @@ TReentrantLock.locked
 **Signature**
 
 ```ts
-export declare const locked: (self: TReentrantLock) => STM.STM<never, never, boolean>
+export declare const locked: (self: TReentrantLock) => STM.STM<boolean>
 ```

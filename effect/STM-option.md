@@ -13,5 +13,5 @@ STM.option
 **Signature**
 
 ```ts
-export declare const option: <R, E, A>(self: STM<R, E, A>) => STM<R, never, Option.Option<A>>
+export declare const option: <A, E, R>(self: STM<A, E, R>) => STM<Option.Option<A>, never, R>
 ```

@@ -13,5 +13,5 @@ Command.start
 **Signature**
 
 ```ts
-export declare const start: (command: Command) => Effect<CommandExecutor | Scope, PlatformError, Process>
+export declare const start: (command: Command) => Effect<Process, PlatformError, CommandExecutor | Scope>
 ```

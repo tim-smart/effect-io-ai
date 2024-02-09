@@ -16,5 +16,5 @@ Layer.scope
 **Signature**
 
 ```ts
-export declare const scope: Layer<never, never, Scope.CloseableScope>
+export declare const scope: Layer<Scope.CloseableScope, never, never>
 ```

@@ -13,5 +13,5 @@ STM.ignore
 **Signature**
 
 ```ts
-export declare const ignore: <R, E, A>(self: STM<R, E, A>) => STM<R, never, void>
+export declare const ignore: <A, E, R>(self: STM<A, E, R>) => STM<void, never, R>
 ```

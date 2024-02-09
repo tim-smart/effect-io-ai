@@ -20,14 +20,14 @@ export declare const catchTags: {
   >(
     cases: Cases
   ): <R, A>(
-    self: STM<R, E, A>
+    self: STM<A, E, R>
   ) => STM<
-    | R
-    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<infer R, any, any> ? R : never }[keyof Cases],
+    | A
+    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<infer A, any, any> ? A : never }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
     | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, infer E, any> ? E : never }[keyof Cases],
-    | A
-    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, any, infer A> ? A : never }[keyof Cases]
+    | R
+    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, any, infer R> ? R : never }[keyof Cases]
   >
   <
     R,
@@ -35,15 +35,15 @@ export declare const catchTags: {
     A,
     Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
   >(
-    self: STM<R, E, A>,
+    self: STM<A, E, R>,
     cases: Cases
   ): STM<
-    | R
-    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<infer R, any, any> ? R : never }[keyof Cases],
+    | A
+    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<infer A, any, any> ? A : never }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
     | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, infer E, any> ? E : never }[keyof Cases],
-    | A
-    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, any, infer A> ? A : never }[keyof Cases]
+    | R
+    | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => STM<any, any, infer R> ? R : never }[keyof Cases]
   >
 }
 ```

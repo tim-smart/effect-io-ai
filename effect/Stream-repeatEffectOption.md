@@ -14,5 +14,5 @@ Stream.repeatEffectOption
 **Signature**
 
 ```ts
-export declare const repeatEffectOption: <R, E, A>(effect: Effect.Effect<R, Option.Option<E>, A>) => Stream<R, E, A>
+export declare const repeatEffectOption: <A, E, R>(effect: Effect.Effect<A, Option.Option<E>, R>) => Stream<A, E, R>
 ```

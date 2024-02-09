@@ -16,32 +16,32 @@ Channel.zipLeft
 
 ```ts
 export declare const zipLeft: {
-  <Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>(
-    that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    options?: { readonly concurrent?: boolean | undefined }
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  <OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>(
+    that: Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>,
+    options?: { readonly concurrent?: boolean | undefined } | undefined
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
   ) => Channel<
-    Env1 | Env,
-    InErr & InErr1,
-    InElem & InElem1,
-    InDone & InDone1,
-    OutErr1 | OutErr,
     OutElem1 | OutElem,
-    OutDone
-  >
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    that: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-    options?: { readonly concurrent?: boolean | undefined }
-  ): Channel<
-    Env | Env1,
-    InErr & InErr1,
     InElem & InElem1,
+    OutErr1 | OutErr,
+    InErr & InErr1,
+    OutDone,
     InDone & InDone1,
-    OutErr | OutErr1,
+    Env1 | Env
+  >
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    that: Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>,
+    options?: { readonly concurrent?: boolean | undefined } | undefined
+  ): Channel<
     OutElem | OutElem1,
-    OutDone
+    InElem & InElem1,
+    OutErr | OutErr1,
+    InErr & InErr1,
+    OutDone,
+    InDone & InDone1,
+    Env | Env1
   >
 }
 ```

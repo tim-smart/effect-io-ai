@@ -13,5 +13,5 @@ STM.interruptAs
 **Signature**
 
 ```ts
-export declare const interruptAs: (fiberId: FiberId.FiberId) => STM<never, never, never>
+export declare const interruptAs: (fiberId: FiberId.FiberId) => STM<never>
 ```

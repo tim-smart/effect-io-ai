@@ -1,6 +1,6 @@
 # all
 
-Collects all of the specified exit values into a `Some<Exit<E, List<A>>>`. If
+Collects all of the specified exit values into a `Some<Exit<List<A>, E>>`. If
 the provided iterable contains no elements, `None` will be returned.
 
 To import and use `all` from the "Exit" module:
@@ -14,8 +14,8 @@ Exit.all
 **Signature**
 
 ```ts
-export declare const all: <E, A>(
-  exits: Iterable<Exit<E, A>>,
-  options?: { readonly parallel?: boolean | undefined }
-) => Option.Option<Exit<E, A[]>>
+export declare const all: <A, E>(
+  exits: Iterable<Exit<A, E>>,
+  options?: { readonly parallel?: boolean | undefined } | undefined
+) => Option.Option<Exit<A[], E>>
 ```

@@ -15,5 +15,5 @@ Effect.labelMetricsScoped
 ```ts
 export declare const labelMetricsScoped: (
   labels: ReadonlyArray<MetricLabel.MetricLabel>
-) => Effect<Scope.Scope, never, void>
+) => Effect<void, never, Scope.Scope>
 ```

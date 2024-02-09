@@ -14,7 +14,7 @@ TMap.set
 
 ```ts
 export declare const set: {
-  <K, V>(key: K, value: V): (self: TMap<K, V>) => STM.STM<never, never, void>
-  <K, V>(self: TMap<K, V>, key: K, value: V): STM.STM<never, never, void>
+  <K, V>(key: K, value: V): (self: TMap<K, V>) => STM.STM<void>
+  <K, V>(self: TMap<K, V>, key: K, value: V): STM.STM<void>
 }
 ```

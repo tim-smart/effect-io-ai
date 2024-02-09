@@ -13,7 +13,7 @@ Sink.collectAllFrom
 **Signature**
 
 ```ts
-export declare const collectAllFrom: <R, E, In, L extends In, Z>(
-  self: Sink<R, E, In, L, Z>
-) => Sink<R, E, In, L, Chunk.Chunk<Z>>
+export declare const collectAllFrom: <A, In, L extends In, E, R>(
+  self: Sink<A, In, L, E, R>
+) => Sink<Chunk.Chunk<A>, In, L, E, R>
 ```

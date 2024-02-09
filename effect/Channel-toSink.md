@@ -13,7 +13,7 @@ Channel.toSink
 **Signature**
 
 ```ts
-export declare const toSink: <Env, InErr, InElem, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, Chunk.Chunk<InElem>, unknown, OutErr, Chunk.Chunk<OutElem>, OutDone>
-) => Sink.Sink<Env, OutErr, InElem, OutElem, OutDone>
+export declare const toSink: <OutElem, InElem, OutErr, InErr, OutDone, Env>(
+  self: Channel<Chunk.Chunk<OutElem>, Chunk.Chunk<InElem>, OutErr, InErr, OutDone, unknown, Env>
+) => Sink.Sink<OutDone, InElem, OutElem, OutErr, Env>
 ```

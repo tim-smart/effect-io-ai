@@ -14,5 +14,5 @@ Stream.flattenTake
 **Signature**
 
 ```ts
-export declare const flattenTake: <R, E, E2, A>(self: Stream<R, E, Take.Take<E2, A>>) => Stream<R, E | E2, A>
+export declare const flattenTake: <R, E, E2, A>(self: Stream<Take.Take<A, E2>, E, R>) => Stream<A, E | E2, R>
 ```

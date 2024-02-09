@@ -14,7 +14,7 @@ Layer.scopedContext
 **Signature**
 
 ```ts
-export declare const scopedContext: <R, E, A>(
-  effect: Effect.Effect<R, E, Context.Context<A>>
-) => Layer<Exclude<R, Scope.Scope>, E, A>
+export declare const scopedContext: <A, E, R>(
+  effect: Effect.Effect<Context.Context<A>, E, R>
+) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```

@@ -15,7 +15,7 @@ Effect.withConsole
 
 ```ts
 export declare const withConsole: {
-  <A extends Console>(console: A): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A extends Console>(effect: Effect<R, E, A>, console: A): Effect<R, E, A>
+  <C extends Console>(console: C): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R, C extends Console>(effect: Effect<A, E, R>, console: C): Effect<A, E, R>
 }
 ```

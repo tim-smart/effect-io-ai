@@ -14,7 +14,7 @@ TMap.removeAll
 
 ```ts
 export declare const removeAll: {
-  <K>(keys: Iterable<K>): <V>(self: TMap<K, V>) => STM.STM<never, never, void>
-  <K, V>(self: TMap<K, V>, keys: Iterable<K>): STM.STM<never, never, void>
+  <K>(keys: Iterable<K>): <V>(self: TMap<K, V>) => STM.STM<void>
+  <K, V>(self: TMap<K, V>, keys: Iterable<K>): STM.STM<void>
 }
 ```

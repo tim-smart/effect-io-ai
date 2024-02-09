@@ -15,7 +15,7 @@ Deferred.fail
 
 ```ts
 export declare const fail: {
-  <E>(error: E): <A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, error: E): Effect.Effect<never, never, boolean>
+  <E>(error: E): <A>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, error: E): Effect.Effect<boolean>
 }
 ```

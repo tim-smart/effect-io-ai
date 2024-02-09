@@ -14,7 +14,7 @@ TArray.contains
 
 ```ts
 export declare const contains: {
-  <A>(value: A): (self: TArray<A>) => STM.STM<never, never, boolean>
-  <A>(self: TArray<A>, value: A): STM.STM<never, never, boolean>
+  <A>(value: A): (self: TArray<A>) => STM.STM<boolean>
+  <A>(self: TArray<A>, value: A): STM.STM<boolean>
 }
 ```

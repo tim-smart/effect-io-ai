@@ -15,5 +15,5 @@ Effect.dieMessage
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Effect<never, never, never>
+export declare const dieMessage: (message: string) => Effect<never>
 ```

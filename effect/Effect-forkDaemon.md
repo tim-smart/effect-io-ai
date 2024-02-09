@@ -15,5 +15,5 @@ Effect.forkDaemon
 **Signature**
 
 ```ts
-export declare const forkDaemon: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Fiber.RuntimeFiber<E, A>>
+export declare const forkDaemon: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
 ```

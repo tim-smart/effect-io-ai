@@ -16,7 +16,7 @@ Sink.splitWhere
 
 ```ts
 export declare const splitWhere: {
-  <In>(f: Predicate<In>): <R, E, L extends In, Z>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, In, Z>
-  <R, E, L extends In, Z, In>(self: Sink<R, E, In, L, Z>, f: Predicate<In>): Sink<R, E, In, In, Z>
+  <In>(f: Predicate<In>): <A, L extends In, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, In, E, R>
+  <A, In, L extends In, E, R>(self: Sink<A, In, L, E, R>, f: Predicate<In>): Sink<A, In, In, E, R>
 }
 ```

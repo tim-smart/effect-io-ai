@@ -13,5 +13,5 @@ Random.shuffle
 **Signature**
 
 ```ts
-export declare const shuffle: <A>(elements: Iterable<A>) => Effect.Effect<never, never, Chunk.Chunk<A>>
+export declare const shuffle: <A>(elements: Iterable<A>) => Effect.Effect<Chunk.Chunk<A>, never, never>
 ```

@@ -18,11 +18,11 @@ export declare const provideService: {
   <T extends Context.Tag<any, any>>(
     tag: T,
     service: Context.Tag.Service<T>
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<Exclude<R, Context.Tag.Identifier<T>>, E, A>
-  <R, E, A, T extends Context.Tag<any, any>>(
-    self: Effect<R, E, A>,
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Context.Tag.Identifier<T>>>
+  <A, E, R, T extends Context.Tag<any, any>>(
+    self: Effect<A, E, R>,
     tag: T,
     service: Context.Tag.Service<T>
-  ): Effect<Exclude<R, Context.Tag.Identifier<T>>, E, A>
+  ): Effect<A, E, Exclude<R, Context.Tag.Identifier<T>>>
 }
 ```

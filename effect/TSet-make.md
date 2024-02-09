@@ -15,5 +15,5 @@ TSet.make
 ```ts
 export declare const make: <Elements extends any[]>(
   ...elements: Elements
-) => STM.STM<never, never, TSet<Elements[number]>>
+) => STM.STM<TSet<Elements[number]>, never, never>
 ```

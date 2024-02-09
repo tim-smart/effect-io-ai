@@ -14,14 +14,14 @@ Stream.aggregateWithin
 
 ```ts
 export declare const aggregateWithin: {
-  <R2, E2, A, A2, B, R3, C>(
-    sink: Sink.Sink<R2, E2, A | A2, A2, B>,
+  <B, A, A2, E2, R2, R3, C>(
+    sink: Sink.Sink<B, A | A2, A2, E2, R2>,
     schedule: Schedule.Schedule<R3, Option.Option<B>, C>
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R3 | R, E2 | E, B>
-  <R, E, R2, E2, A, A2, B, R3, C>(
-    self: Stream<R, E, A>,
-    sink: Sink.Sink<R2, E2, A | A2, A2, B>,
+  ): <E, R>(self: Stream<A, E, R>) => Stream<B, E2 | E, R2 | R3 | R>
+  <A, E, R, B, A2, E2, R2, R3, C>(
+    self: Stream<A, E, R>,
+    sink: Sink.Sink<B, A | A2, A2, E2, R2>,
     schedule: Schedule.Schedule<R3, Option.Option<B>, C>
-  ): Stream<R | R2 | R3, E | E2, B>
+  ): Stream<B, E | E2, R | R2 | R3>
 }
 ```

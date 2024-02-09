@@ -16,7 +16,7 @@ STM.orElseEither
 
 ```ts
 export declare const orElseEither: {
-  <R2, E2, A2>(that: LazyArg<STM<R2, E2, A2>>): <R, E, A>(self: STM<R, E, A>) => STM<R2 | R, E2, Either.Either<A, A2>>
-  <R, E, A, R2, E2, A2>(self: STM<R, E, A>, that: LazyArg<STM<R2, E2, A2>>): STM<R | R2, E2, Either.Either<A, A2>>
+  <R2, E2, A2>(that: LazyArg<STM<A2, E2, R2>>): <A, E, R>(self: STM<A, E, R>) => STM<Either.Either<A, A2>, E2, R2 | R>
+  <R, E, A, R2, E2, A2>(self: STM<A, E, R>, that: LazyArg<STM<A2, E2, R2>>): STM<Either.Either<A, A2>, E2, R | R2>
 }
 ```

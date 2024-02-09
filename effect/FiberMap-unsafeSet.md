@@ -15,15 +15,15 @@ FiberMap.unsafeSet
 
 ```ts
 export declare const unsafeSet: {
-  <K, E, A, XE extends E, XA extends A>(
+  <K, A, E, XE extends E, XA extends A>(
     key: K,
-    fiber: Fiber.RuntimeFiber<XE, XA>,
+    fiber: Fiber.RuntimeFiber<XA, XE>,
     interruptAs?: FiberId.FiberId
-  ): (self: FiberMap.FiberMap<K, E, A>) => void
-  <K, E, A, XE extends E, XA extends A>(
-    self: FiberMap.FiberMap<K, E, A>,
+  ): (self: FiberMap.FiberMap<K, A, E>) => void
+  <K, A, E, XE extends E, XA extends A>(
+    self: FiberMap.FiberMap<K, A, E>,
     key: K,
-    fiber: Fiber.RuntimeFiber<XE, XA>,
+    fiber: Fiber.RuntimeFiber<XA, XE>,
     interruptAs?: FiberId.FiberId
   ): void
 }

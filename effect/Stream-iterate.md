@@ -14,5 +14,5 @@ Stream.iterate
 **Signature**
 
 ```ts
-export declare const iterate: <A>(value: A, next: (value: A) => A) => Stream<never, never, A>
+export declare const iterate: <A>(value: A, next: (value: A) => A) => Stream<A, never, never>
 ```

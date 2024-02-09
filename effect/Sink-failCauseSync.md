@@ -13,5 +13,5 @@ Sink.failCauseSync
 **Signature**
 
 ```ts
-export declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Sink<never, E, unknown, never, never>
+export declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Sink<never, unknown, never, E, never>
 ```

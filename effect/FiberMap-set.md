@@ -15,14 +15,14 @@ FiberMap.set
 
 ```ts
 export declare const set: {
-  <K, E, A, XE extends E, XA extends A>(
+  <K, A, E, XE extends E, XA extends A>(
     key: K,
-    fiber: Fiber.RuntimeFiber<XE, XA>
-  ): (self: FiberMap.FiberMap<K, E, A>) => Effect.Effect<never, never, void>
-  <K, E, A, XE extends E, XA extends A>(
-    self: FiberMap.FiberMap<K, E, A>,
+    fiber: Fiber.RuntimeFiber<XA, XE>
+  ): (self: FiberMap.FiberMap<K, A, E>) => Effect.Effect<void>
+  <K, A, E, XE extends E, XA extends A>(
+    self: FiberMap.FiberMap<K, A, E>,
     key: K,
-    fiber: Fiber.RuntimeFiber<XE, XA>
-  ): Effect.Effect<never, never, void>
+    fiber: Fiber.RuntimeFiber<XA, XE>
+  ): Effect.Effect<void>
 }
 ```

@@ -14,5 +14,5 @@ Sink.dieMessage
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Sink<never, never, unknown, never, never>
+export declare const dieMessage: (message: string) => Sink<never, unknown>
 ```

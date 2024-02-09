@@ -14,7 +14,7 @@ TSet.has
 
 ```ts
 export declare const has: {
-  <A>(value: A): (self: TSet<A>) => STM.STM<never, never, boolean>
-  <A>(self: TSet<A>, value: A): STM.STM<never, never, boolean>
+  <A>(value: A): (self: TSet<A>) => STM.STM<boolean>
+  <A>(self: TSet<A>, value: A): STM.STM<boolean>
 }
 ```

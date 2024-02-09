@@ -15,5 +15,5 @@ Channel.fromEither
 ```ts
 export declare const fromEither: <E, A>(
   either: Either.Either<E, A>
-) => Channel<never, unknown, unknown, unknown, E, never, A>
+) => Channel<never, unknown, E, unknown, A, unknown, never>
 ```

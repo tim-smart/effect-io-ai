@@ -15,7 +15,7 @@ Deferred.die
 
 ```ts
 export declare const die: {
-  (defect: unknown): <E, A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, defect: unknown): Effect.Effect<never, never, boolean>
+  (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, defect: unknown): Effect.Effect<boolean>
 }
 ```

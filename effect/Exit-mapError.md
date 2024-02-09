@@ -15,7 +15,7 @@ Exit.mapError
 
 ```ts
 export declare const mapError: {
-  <E, E2>(f: (e: E) => E2): <A>(self: Exit<E, A>) => Exit<E2, A>
-  <E, A, E2>(self: Exit<E, A>, f: (e: E) => E2): Exit<E2, A>
+  <E, E2>(f: (e: E) => E2): <A>(self: Exit<A, E>) => Exit<A, E2>
+  <A, E, E2>(self: Exit<A, E>, f: (e: E) => E2): Exit<A, E2>
 }
 ```

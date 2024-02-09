@@ -13,5 +13,5 @@ PubSub.unbounded
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => Effect.Effect<never, never, PubSub<A>>
+export declare const unbounded: <A>() => Effect.Effect<PubSub<A>, never, never>
 ```

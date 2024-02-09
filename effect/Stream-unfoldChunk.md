@@ -16,5 +16,5 @@ Stream.unfoldChunk
 export declare const unfoldChunk: <S, A>(
   s: S,
   f: (s: S) => Option.Option<readonly [Chunk.Chunk<A>, S]>
-) => Stream<never, never, A>
+) => Stream<A, never, never>
 ```

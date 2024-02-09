@@ -14,5 +14,5 @@ Fiber.isRuntimeFiber
 **Signature**
 
 ```ts
-export declare const isRuntimeFiber: <E, A>(self: Fiber<E, A>) => self is RuntimeFiber<E, A>
+export declare const isRuntimeFiber: <A, E>(self: Fiber<A, E>) => self is RuntimeFiber<A, E>
 ```

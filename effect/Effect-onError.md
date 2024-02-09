@@ -15,12 +15,12 @@ Effect.onError
 
 ```ts
 export declare const onError: {
-  <E, R2, X>(
-    cleanup: (cause: Cause.Cause<E>) => Effect<R2, never, X>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E, A>
-  <R, A, E, R2, X>(
-    self: Effect<R, E, A>,
-    cleanup: (cause: Cause.Cause<E>) => Effect<R2, never, X>
-  ): Effect<R | R2, E, A>
+  <E, X, R2>(
+    cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>
+  <A, E, R, X, R2>(
+    self: Effect<A, E, R>,
+    cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>
+  ): Effect<A, E, R | R2>
 }
 ```

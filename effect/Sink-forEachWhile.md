@@ -14,7 +14,7 @@ Sink.forEachWhile
 **Signature**
 
 ```ts
-export declare const forEachWhile: <In, R, E>(
-  f: (input: In) => Effect.Effect<R, E, boolean>
-) => Sink<R, E, In, In, void>
+export declare const forEachWhile: <In, E, R>(
+  f: (input: In) => Effect.Effect<boolean, E, R>
+) => Sink<void, In, In, E, R>
 ```

@@ -14,7 +14,7 @@ TArray.count
 
 ```ts
 export declare const count: {
-  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<never, never, number>
-  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<never, never, number>
+  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<number>
+  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<number>
 }
 ```

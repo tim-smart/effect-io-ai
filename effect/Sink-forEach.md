@@ -14,5 +14,5 @@ Sink.forEach
 **Signature**
 
 ```ts
-export declare const forEach: <In, R, E, _>(f: (input: In) => Effect.Effect<R, E, _>) => Sink<R, E, In, never, void>
+export declare const forEach: <In, _, E, R>(f: (input: In) => Effect.Effect<_, E, R>) => Sink<void, In, never, E, R>
 ```

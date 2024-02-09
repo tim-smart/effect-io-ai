@@ -13,5 +13,5 @@ Channel.context
 **Signature**
 
 ```ts
-export declare const context: <Env>() => Channel<Env, unknown, unknown, unknown, never, never, Context.Context<Env>>
+export declare const context: <Env>() => Channel<never, unknown, never, unknown, Context.Context<Env>, unknown, Env>
 ```

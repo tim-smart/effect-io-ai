@@ -16,7 +16,7 @@ Metric.update
 
 ```ts
 export declare const update: {
-  <In>(input: In): <Type, Out>(self: Metric<Type, In, Out>) => Effect.Effect<never, never, void>
-  <Type, In, Out>(self: Metric<Type, In, Out>, input: In): Effect.Effect<never, never, void>
+  <In>(input: In): <Type, Out>(self: Metric<Type, In, Out>) => Effect.Effect<void>
+  <Type, In, Out>(self: Metric<Type, In, Out>, input: In): Effect.Effect<void>
 }
 ```

@@ -16,6 +16,6 @@ Stream.unfoldChunkEffect
 ```ts
 export declare const unfoldChunkEffect: <R, E, A, S>(
   s: S,
-  f: (s: S) => Effect.Effect<R, E, Option.Option<readonly [Chunk.Chunk<A>, S]>>
-) => Stream<R, E, A>
+  f: (s: S) => Effect.Effect<Option.Option<readonly [Chunk.Chunk<A>, S]>, E, R>
+) => Stream<A, E, R>
 ```

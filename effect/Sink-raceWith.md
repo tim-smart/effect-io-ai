@@ -15,20 +15,20 @@ Sink.raceWith
 
 ```ts
 export declare const raceWith: {
-  <R2, E2, In2, L2, Z2, E, Z, Z3, Z4>(options: {
-    readonly other: Sink<R2, E2, In2, L2, Z2>
-    readonly onSelfDone: (exit: Exit.Exit<E, Z>) => MergeDecision.MergeDecision<R2, E2, Z2, E2 | E, Z3>
-    readonly onOtherDone: (exit: Exit.Exit<E2, Z2>) => MergeDecision.MergeDecision<R2, E, Z, E2 | E, Z4>
+  <A2, In2, L2, E2, R2, A, E, A3, A4>(options: {
+    readonly other: Sink<A2, In2, L2, E2, R2>
+    readonly onSelfDone: (exit: Exit.Exit<A, E>) => MergeDecision.MergeDecision<R2, E2, A2, E2 | E, A3>
+    readonly onOtherDone: (exit: Exit.Exit<A2, E2>) => MergeDecision.MergeDecision<R2, E, A, E2 | E, A4>
     readonly capacity?: number | undefined
-  }): <R, In, L>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In & In2, L2 | L, Z3 | Z4>
-  <R, In, L, R2, E2, In2, L2, Z2, E, Z, Z3, Z4>(
-    self: Sink<R, E, In, L, Z>,
+  }): <In, L, R>(self: Sink<A, In, L, E, R>) => Sink<A3 | A4, In & In2, L2 | L, E2 | E, R2 | R>
+  <A, In, L, E, R, A2, In2, L2, E2, R2, A3, A4>(
+    self: Sink<A, In, L, E, R>,
     options: {
-      readonly other: Sink<R2, E2, In2, L2, Z2>
-      readonly onSelfDone: (exit: Exit.Exit<E, Z>) => MergeDecision.MergeDecision<R2, E2, Z2, E2 | E, Z3>
-      readonly onOtherDone: (exit: Exit.Exit<E2, Z2>) => MergeDecision.MergeDecision<R2, E, Z, E2 | E, Z4>
+      readonly other: Sink<A2, In2, L2, E2, R2>
+      readonly onSelfDone: (exit: Exit.Exit<A, E>) => MergeDecision.MergeDecision<R2, E2, A2, E | E2, A3>
+      readonly onOtherDone: (exit: Exit.Exit<A2, E2>) => MergeDecision.MergeDecision<R2, E, A, E | E2, A4>
       readonly capacity?: number | undefined
     }
-  ): Sink<R | R2, E2 | E, In & In2, L | L2, Z3 | Z4>
+  ): Sink<A3 | A4, In & In2, L | L2, E | E2, R | R2>
 }
 ```

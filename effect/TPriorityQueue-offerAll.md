@@ -14,7 +14,7 @@ TPriorityQueue.offerAll
 
 ```ts
 export declare const offerAll: {
-  <A>(values: Iterable<A>): (self: TPriorityQueue<A>) => STM.STM<never, never, void>
-  <A>(self: TPriorityQueue<A>, values: Iterable<A>): STM.STM<never, never, void>
+  <A>(values: Iterable<A>): (self: TPriorityQueue<A>) => STM.STM<void>
+  <A>(self: TPriorityQueue<A>, values: Iterable<A>): STM.STM<void>
 }
 ```

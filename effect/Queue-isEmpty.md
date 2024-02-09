@@ -13,5 +13,5 @@ Queue.isEmpty
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<never, never, boolean>
+export declare const isEmpty: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<boolean>
 ```

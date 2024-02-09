@@ -16,5 +16,5 @@ Runtime.runFork
 ```ts
 export declare const runFork: <R>(
   runtime: Runtime<R>
-) => <E, A>(self: Effect.Effect<R, E, A>, options?: RunForkOptions) => Fiber.RuntimeFiber<E, A>
+) => <A, E>(self: Effect.Effect<A, E, R>, options?: RunForkOptions) => Fiber.RuntimeFiber<A, E>
 ```

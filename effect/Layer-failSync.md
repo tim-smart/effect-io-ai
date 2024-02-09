@@ -13,5 +13,5 @@ Layer.failSync
 **Signature**
 
 ```ts
-export declare const failSync: <E>(evaluate: LazyArg<E>) => Layer<never, E, unknown>
+export declare const failSync: <E>(evaluate: LazyArg<E>) => Layer<unknown, E, never>
 ```

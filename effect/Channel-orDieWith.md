@@ -17,12 +17,12 @@ Channel.orDieWith
 export declare const orDieWith: {
   <OutErr>(
     f: (e: OutErr) => unknown
-  ): <Env, InErr, InElem, InDone, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, never, OutElem, OutDone>
-  <Env, InErr, InElem, InDone, OutElem, OutDone, OutErr>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, never, InErr, OutDone, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     f: (e: OutErr) => unknown
-  ): Channel<Env, InErr, InElem, InDone, never, OutElem, OutDone>
+  ): Channel<OutElem, InElem, never, InErr, OutDone, InDone, Env>
 }
 ```

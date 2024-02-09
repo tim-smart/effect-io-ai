@@ -16,7 +16,7 @@ Stream.orElseFail
 
 ```ts
 export declare const orElseFail: {
-  <E2>(error: LazyArg<E2>): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E2, A>
-  <R, E, A, E2>(self: Stream<R, E, A>, error: LazyArg<E2>): Stream<R, E2, A>
+  <E2>(error: LazyArg<E2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2, R>
+  <R, E, A, E2>(self: Stream<A, E, R>, error: LazyArg<E2>): Stream<A, E2, R>
 }
 ```

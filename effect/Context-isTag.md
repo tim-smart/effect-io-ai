@@ -15,7 +15,7 @@ Context.isTag
 ```ts
 import * as Context from "effect/Context"
 
-assert.strictEqual(Context.isTag(Context.Tag()), true)
+assert.strictEqual(Context.isTag(Context.GenericTag("Tag")), true)
 ```
 
 **Signature**

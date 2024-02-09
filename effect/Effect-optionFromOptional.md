@@ -14,7 +14,7 @@ Effect.optionFromOptional
 **Signature**
 
 ```ts
-export declare const optionFromOptional: <R, E, A>(
-  self: Effect<R, E, A>
-) => Effect<R, Exclude<E, Cause.NoSuchElementException>, Option.Option<A>>
+export declare const optionFromOptional: <A, E, R>(
+  self: Effect<A, E, R>
+) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>
 ```

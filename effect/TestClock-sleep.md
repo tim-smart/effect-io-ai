@@ -15,5 +15,5 @@ TestClock.sleep
 **Signature**
 
 ```ts
-export declare const sleep: (durationInput: Duration.DurationInput) => Effect.Effect<never, never, void>
+export declare const sleep: (durationInput: Duration.DurationInput) => Effect.Effect<void>
 ```

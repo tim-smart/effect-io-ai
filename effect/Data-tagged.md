@@ -15,7 +15,7 @@ Data.tagged
 ```ts
 import * as Data from "effect/Data"
 
-interface Person extends Data.Case {
+interface Person {
   readonly _tag: "Person" // the tag
   readonly name: string
 }
@@ -30,5 +30,5 @@ assert.deepEqual(mike, { _tag: "Person", name: "Mike" })
 **Signature**
 
 ```ts
-export declare const tagged: <A extends Case & { readonly _tag: string }>(tag: A["_tag"]) => Case.Constructor<A, "_tag">
+export declare const tagged: <A extends { readonly _tag: string }>(tag: A["_tag"]) => Case.Constructor<A, "_tag">
 ```

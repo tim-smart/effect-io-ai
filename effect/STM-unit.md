@@ -13,5 +13,5 @@ STM.unit
 **Signature**
 
 ```ts
-export declare const unit: STM<never, never, void>
+export declare const unit: STM<void, never, never>
 ```

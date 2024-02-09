@@ -14,7 +14,7 @@ TArray.transform
 
 ```ts
 export declare const transform: {
-  <A>(f: (value: A) => A): (self: TArray<A>) => STM.STM<never, never, void>
-  <A>(self: TArray<A>, f: (value: A) => A): STM.STM<never, never, void>
+  <A>(f: (value: A) => A): (self: TArray<A>) => STM.STM<void>
+  <A>(self: TArray<A>, f: (value: A) => A): STM.STM<void>
 }
 ```

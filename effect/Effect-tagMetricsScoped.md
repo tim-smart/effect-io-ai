@@ -13,5 +13,5 @@ Effect.tagMetricsScoped
 **Signature**
 
 ```ts
-export declare const tagMetricsScoped: (key: string, value: string) => Effect<Scope.Scope, never, void>
+export declare const tagMetricsScoped: (key: string, value: string) => Effect<void, never, Scope.Scope>
 ```

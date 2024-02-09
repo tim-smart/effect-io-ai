@@ -19,10 +19,10 @@ export declare const launch: {
     schedule: Schedule.Schedule<R2, unknown, A2>
   ): <Type, In, R, E, Out>(
     self: MetricPolling<Type, In, R, E, Out>
-  ) => Effect.Effect<Scope.Scope | R2 | R, never, Fiber.Fiber<E, A2>>
+  ) => Effect.Effect<Fiber.Fiber<A2, E>, never, Scope.Scope | R2 | R>
   <Type, In, R, E, Out, R2, A2>(
     self: MetricPolling<Type, In, R, E, Out>,
     schedule: Schedule.Schedule<R2, unknown, A2>
-  ): Effect.Effect<Scope.Scope | R | R2, never, Fiber.Fiber<E, A2>>
+  ): Effect.Effect<Fiber.Fiber<A2, E>, never, Scope.Scope | R | R2>
 }
 ```

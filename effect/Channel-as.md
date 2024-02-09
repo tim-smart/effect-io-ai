@@ -20,12 +20,12 @@ Channel.as
 export declare const as: {
   <OutDone2>(
     value: OutDone2
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone2>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, OutDone2>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone2, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutDone2>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     value: OutDone2
-  ): Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone2>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone2, InDone, Env>
 }
 ```

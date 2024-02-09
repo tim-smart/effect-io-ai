@@ -14,7 +14,7 @@ TArray.get
 
 ```ts
 export declare const get: {
-  (index: number): <A>(self: TArray<A>) => STM.STM<never, never, A>
-  <A>(self: TArray<A>, index: number): STM.STM<never, never, A>
+  (index: number): <A>(self: TArray<A>) => STM.STM<A, never, never>
+  <A>(self: TArray<A>, index: number): STM.STM<A, never, never>
 }
 ```

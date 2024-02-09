@@ -13,5 +13,5 @@ Exit.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Exit<never, never>
+export declare const die: (defect: unknown) => Exit<never>
 ```

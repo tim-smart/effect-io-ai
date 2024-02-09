@@ -14,8 +14,5 @@ Scope.addFinalizer
 **Signature**
 
 ```ts
-export declare const addFinalizer: (
-  self: Scope,
-  finalizer: Effect.Effect<never, never, unknown>
-) => Effect.Effect<never, never, void>
+export declare const addFinalizer: (self: Scope, finalizer: Effect.Effect<unknown>) => Effect.Effect<void>
 ```

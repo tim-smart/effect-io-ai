@@ -14,7 +14,7 @@ TestClock.testClockWith
 **Signature**
 
 ```ts
-export declare const testClockWith: <R, E, A>(
-  f: (testClock: TestClock) => Effect.Effect<R, E, A>
-) => Effect.Effect<R, E, A>
+export declare const testClockWith: <A, E, R>(
+  f: (testClock: TestClock) => Effect.Effect<A, E, R>
+) => Effect.Effect<A, E, R>
 ```

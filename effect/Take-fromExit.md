@@ -13,5 +13,5 @@ Take.fromExit
 **Signature**
 
 ```ts
-export declare const fromExit: <E, A>(exit: Exit.Exit<E, A>) => Take<E, A>
+export declare const fromExit: <A, E>(exit: Exit.Exit<A, E>) => Take<A, E>
 ```

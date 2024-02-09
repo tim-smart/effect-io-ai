@@ -13,5 +13,5 @@ Stream.unfold
 **Signature**
 
 ```ts
-export declare const unfold: <S, A>(s: S, f: (s: S) => Option.Option<readonly [A, S]>) => Stream<never, never, A>
+export declare const unfold: <S, A>(s: S, f: (s: S) => Option.Option<readonly [A, S]>) => Stream<A, never, never>
 ```

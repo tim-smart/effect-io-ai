@@ -15,7 +15,7 @@ Stream.runFoldScoped
 
 ```ts
 export declare const runFoldScoped: {
-  <S, A>(s: S, f: (s: S, a: A) => S): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, E, S>
-  <R, E, S, A>(self: Stream<R, E, A>, s: S, f: (s: S, a: A) => S): Effect.Effect<Scope.Scope | R, E, S>
+  <S, A>(s: S, f: (s: S, a: A) => S): <R, E>(self: Stream<A, E, R>) => Effect.Effect<S, E, Scope.Scope | R>
+  <R, E, S, A>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Effect.Effect<S, E, Scope.Scope | R>
 }
 ```

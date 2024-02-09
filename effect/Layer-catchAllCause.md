@@ -14,12 +14,12 @@ Layer.catchAllCause
 
 ```ts
 export declare const catchAllCause: {
-  <E, R2, E2, A2>(
-    onError: (cause: Cause.Cause<E>) => Layer<R2, E2, A2>
-  ): <R, A>(self: Layer<R, E, A>) => Layer<R2 | R, E2, A & A2>
-  <R, E, A, R2, E2, A2>(
-    self: Layer<R, E, A>,
-    onError: (cause: Cause.Cause<E>) => Layer<R2, E2, A2>
-  ): Layer<R | R2, E2, A & A2>
+  <E, RIn2, E2, ROut2>(
+    onError: (cause: Cause.Cause<E>) => Layer<ROut2, E2, RIn2>
+  ): <RIn, ROut>(self: Layer<ROut, E, RIn>) => Layer<ROut & ROut2, E2, RIn2 | RIn>
+  <RIn, E, ROut, RIn2, E2, ROut22>(
+    self: Layer<ROut, E, RIn>,
+    onError: (cause: Cause.Cause<E>) => Layer<ROut22, E2, RIn2>
+  ): Layer<ROut & ROut22, E2, RIn | RIn2>
 }
 ```

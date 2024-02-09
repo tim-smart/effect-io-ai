@@ -15,7 +15,7 @@ Deferred.dieSync
 
 ```ts
 export declare const dieSync: {
-  (evaluate: LazyArg<unknown>): <E, A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, evaluate: LazyArg<unknown>): Effect.Effect<never, never, boolean>
+  (evaluate: LazyArg<unknown>): <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, evaluate: LazyArg<unknown>): Effect.Effect<boolean>
 }
 ```

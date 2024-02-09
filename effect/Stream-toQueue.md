@@ -21,12 +21,14 @@ export declare const toQueue: {
     options?:
       | { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined }
       | { readonly strategy: "unbounded" }
-  ): <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Take.Take<E, A>>>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+      | undefined
+  ): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     options?:
       | { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined }
       | { readonly strategy: "unbounded" }
-  ): Effect.Effect<Scope.Scope | R, never, Queue.Dequeue<Take.Take<E, A>>>
+      | undefined
+  ): Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope | R>
 }
 ```

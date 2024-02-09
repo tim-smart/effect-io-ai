@@ -15,7 +15,7 @@ Exit.zipPar
 
 ```ts
 export declare const zipPar: {
-  <E2, A2>(that: Exit<E2, A2>): <E, A>(self: Exit<E, A>) => Exit<E2 | E, [A, A2]>
-  <E, A, E2, A2>(self: Exit<E, A>, that: Exit<E2, A2>): Exit<E | E2, [A, A2]>
+  <A2, E2>(that: Exit<A2, E2>): <A, E>(self: Exit<A, E>) => Exit<[A, A2], E2 | E>
+  <A, E, A2, E2>(self: Exit<A, E>, that: Exit<A2, E2>): Exit<[A, A2], E | E2>
 }
 ```

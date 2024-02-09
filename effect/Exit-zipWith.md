@@ -15,20 +15,20 @@ Exit.zipWith
 
 ```ts
 export declare const zipWith: {
-  <E, E2, A, B, C>(
-    that: Exit<E2, B>,
+  <B, E2, A, C, E>(
+    that: Exit<B, E2>,
+    options: {
+      readonly onSuccess: (a: A, b: B) => C
+      readonly onFailure: (cause: Cause.Cause<E>, cause2: Cause.Cause<E2>) => Cause.Cause<any>
+    }
+  ): (self: Exit<A, E>) => Exit<C, any>
+  <A, E, B, E2, C>(
+    self: Exit<A, E>,
+    that: Exit<B, E2>,
     options: {
       readonly onSuccess: (a: A, b: B) => C
       readonly onFailure: (cause: Cause.Cause<E>, cause2: Cause.Cause<E2>) => Cause.Cause<E | E2>
     }
-  ): (self: Exit<E, A>) => Exit<E | E2, C>
-  <E, E2, A, B, C>(
-    self: Exit<E, A>,
-    that: Exit<E2, B>,
-    options: {
-      readonly onSuccess: (a: A, b: B) => C
-      readonly onFailure: (cause: Cause.Cause<E>, cause2: Cause.Cause<E2>) => Cause.Cause<E | E2>
-    }
-  ): Exit<E | E2, C>
+  ): Exit<C, E | E2>
 }
 ```

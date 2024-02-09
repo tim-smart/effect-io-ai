@@ -13,5 +13,5 @@ Fiber.interruptAll
 **Signature**
 
 ```ts
-export declare const interruptAll: (fibers: Iterable<Fiber<any, any>>) => Effect.Effect<never, never, void>
+export declare const interruptAll: (fibers: Iterable<Fiber<any, any>>) => Effect.Effect<void>
 ```

@@ -13,5 +13,5 @@ Sink.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <Z>(z: Z) => Sink<never, never, unknown, never, Z>
+export declare const succeed: <A>(a: A) => Sink<A, unknown, never, never, never>
 ```

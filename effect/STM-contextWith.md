@@ -13,5 +13,5 @@ STM.contextWith
 **Signature**
 
 ```ts
-export declare const contextWith: <R0, R>(f: (environment: Context.Context<R0>) => R) => STM<R0, never, R>
+export declare const contextWith: <R0, R>(f: (environment: Context.Context<R0>) => R) => STM<R, never, R0>
 ```

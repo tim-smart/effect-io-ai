@@ -18,7 +18,7 @@ Effect.transplant
 **Signature**
 
 ```ts
-export declare const transplant: <R, E, A>(
-  f: (grafter: <R2, E2, A2>(effect: Effect<R2, E2, A2>) => Effect<R2, E2, A2>) => Effect<R, E, A>
-) => Effect<R, E, A>
+export declare const transplant: <A, E, R>(
+  f: (grafter: <A2, E2, R2>(effect: Effect<A2, E2, R2>) => Effect<A2, E2, R2>) => Effect<A, E, R>
+) => Effect<A, E, R>
 ```

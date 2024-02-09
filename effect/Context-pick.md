@@ -17,8 +17,8 @@ import * as Context from "effect/Context"
 import { pipe } from "effect/Function"
 import * as O from "effect/Option"
 
-const Port = Context.Tag<{ PORT: number }>()
-const Timeout = Context.Tag<{ TIMEOUT: number }>()
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const someContext = pipe(Context.make(Port, { PORT: 8080 }), Context.add(Timeout, { TIMEOUT: 5000 }))
 

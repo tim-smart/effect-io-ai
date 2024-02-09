@@ -19,13 +19,13 @@ Stream.crossWith
 ```ts
 export declare const crossWith: {
   <R2, E2, B, A, C>(
-    that: Stream<R2, E2, B>,
+    that: Stream<B, E2, R2>,
     f: (a: A, b: B) => C
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, C>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<C, E2 | E, R2 | R>
   <R, E, R2, E2, B, A, C>(
-    self: Stream<R, E, A>,
-    that: Stream<R2, E2, B>,
+    self: Stream<A, E, R>,
+    that: Stream<B, E2, R2>,
     f: (a: A, b: B) => C
-  ): Stream<R | R2, E | E2, C>
+  ): Stream<C, E | E2, R | R2>
 }
 ```

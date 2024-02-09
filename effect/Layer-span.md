@@ -24,10 +24,8 @@ export declare const span: (
         readonly parent?: Tracer.ParentSpan | undefined
         readonly root?: boolean | undefined
         readonly context?: Context.Context<never> | undefined
-        readonly onEnd?:
-          | ((span: Tracer.Span, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<never, never, void>)
-          | undefined
+        readonly onEnd?: ((span: Tracer.Span, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>) | undefined
       }
     | undefined
-) => Layer<never, never, Tracer.ParentSpan>
+) => Layer<Tracer.ParentSpan>
 ```

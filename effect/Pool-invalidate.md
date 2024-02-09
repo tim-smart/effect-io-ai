@@ -16,7 +16,7 @@ Pool.invalidate
 
 ```ts
 export declare const invalidate: {
-  <A>(value: A): <E>(self: Pool<E, A>) => Effect.Effect<Scope.Scope, never, void>
-  <E, A>(self: Pool<E, A>, value: A): Effect.Effect<Scope.Scope, never, void>
+  <A>(value: A): <E>(self: Pool<A, E>) => Effect.Effect<void, never, Scope.Scope>
+  <A, E>(self: Pool<A, E>, value: A): Effect.Effect<void, never, Scope.Scope>
 }
 ```

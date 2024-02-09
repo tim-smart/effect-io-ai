@@ -8,7 +8,7 @@ which will be used by the runtime to cancel the asynchronous effect if the fiber
 executing the effect is interrupted.
 
 If the register function returns a value synchronously, then the callback
-function `Effect<R, E, A> => void` must not be called. Otherwise the callback
+function `Effect<A, E, R> => void` must not be called. Otherwise the callback
 function must be called at most once.
 
 The `FiberId` of the fiber that may complete the async callback may be
@@ -25,8 +25,8 @@ Effect.asyncEither
 **Signature**
 
 ```ts
-export declare const asyncEither: <R, E, A>(
-  register: (callback: (effect: Effect<R, E, A>) => void) => Either.Either<Effect<R, never, void>, Effect<R, E, A>>,
+export declare const asyncEither: <A, E = never, R = never>(
+  register: (callback: (effect: Effect<A, E, R>) => void) => Either.Either<Effect<void, never, R>, Effect<A, E, R>>,
   blockingOn?: FiberId.FiberId
-) => Effect<R, E, A>
+) => Effect<A, E, R>
 ```

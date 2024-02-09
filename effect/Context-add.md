@@ -16,8 +16,8 @@ Context.add
 import * as Context from "effect/Context"
 import { pipe } from "effect/Function"
 
-const Port = Context.Tag<{ PORT: number }>()
-const Timeout = Context.Tag<{ TIMEOUT: number }>()
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const someContext = Context.make(Port, { PORT: 8080 })
 

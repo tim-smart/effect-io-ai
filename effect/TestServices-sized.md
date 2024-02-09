@@ -13,5 +13,5 @@ TestServices.sized
 **Signature**
 
 ```ts
-export declare const sized: Effect.Effect<never, never, Sized.TestSized>
+export declare const sized: Effect.Effect<Sized.TestSized, never, never>
 ```

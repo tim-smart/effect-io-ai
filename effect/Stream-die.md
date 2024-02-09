@@ -13,5 +13,5 @@ Stream.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Stream<never, never, never>
+export declare const die: (defect: unknown) => Stream<never>
 ```

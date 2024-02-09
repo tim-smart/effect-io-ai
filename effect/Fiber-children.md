@@ -13,5 +13,5 @@ Fiber.children
 **Signature**
 
 ```ts
-export declare const children: <E, A>(self: Fiber<E, A>) => Effect.Effect<never, never, Array<RuntimeFiber<any, any>>>
+export declare const children: <A, E>(self: Fiber<A, E>) => Effect.Effect<Array<RuntimeFiber<any, any>>>
 ```

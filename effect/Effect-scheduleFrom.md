@@ -18,11 +18,11 @@ export declare const scheduleFrom: {
   <R2, In, Out>(
     initial: In,
     schedule: Schedule.Schedule<R2, In, Out>
-  ): <R, E>(self: Effect<R, E, In>) => Effect<R2 | R, E, Out>
-  <R, E, In, R2, Out>(
-    self: Effect<R, E, In>,
+  ): <E, R>(self: Effect<In, E, R>) => Effect<Out, E, R2 | R>
+  <In, E, R, R2, Out>(
+    self: Effect<In, E, R>,
     initial: In,
     schedule: Schedule.Schedule<R2, In, Out>
-  ): Effect<R | R2, E, Out>
+  ): Effect<Out, E, R | R2>
 }
 ```

@@ -14,5 +14,5 @@ STM.merge
 **Signature**
 
 ```ts
-export declare const merge: <R, E, A>(self: STM<R, E, A>) => STM<R, never, E | A>
+export declare const merge: <A, E, R>(self: STM<A, E, R>) => STM<A | E, never, R>
 ```

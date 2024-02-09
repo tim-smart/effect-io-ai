@@ -13,7 +13,7 @@ Channel.toStream
 **Signature**
 
 ```ts
-export declare const toStream: <Env, OutErr, OutElem, OutDone>(
-  self: Channel<Env, unknown, unknown, unknown, OutErr, Chunk.Chunk<OutElem>, OutDone>
-) => Stream.Stream<Env, OutErr, OutElem>
+export declare const toStream: <OutElem, OutErr, OutDone, Env>(
+  self: Channel<Chunk.Chunk<OutElem>, unknown, OutErr, unknown, OutDone, unknown, Env>
+) => Stream.Stream<OutElem, OutErr, Env>
 ```

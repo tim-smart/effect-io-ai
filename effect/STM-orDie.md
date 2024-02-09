@@ -14,5 +14,5 @@ STM.orDie
 **Signature**
 
 ```ts
-export declare const orDie: <R, E, A>(self: STM<R, E, A>) => STM<R, never, A>
+export declare const orDie: <A, E, R>(self: STM<A, E, R>) => STM<A, never, R>
 ```

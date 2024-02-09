@@ -14,5 +14,5 @@ Effect.option
 **Signature**
 
 ```ts
-export declare const option: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Option.Option<A>>
+export declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, never, R>
 ```

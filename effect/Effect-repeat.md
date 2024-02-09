@@ -20,42 +20,40 @@ Effect.repeat
 export declare const repeat: {
   <A, O extends Repeat.Options<A>>(
     options: O
-  ): <R, E>(
-    self: Effect<R, E, A>
+  ): <E, R>(
+    self: Effect<A, E, R>
   ) => Effect<
-    | R
-    | (O extends { schedule: Schedule.Schedule<infer X, infer _I, infer _O> } ? X : never)
-    | (O extends { while: (...args: any[]) => Effect<infer X, infer _E, infer _A> } ? X : never)
-    | (O extends { until: (...args: any[]) => Effect<infer X, infer _E, infer _A> } ? X : never),
-    | E
-    | (O extends { while: (...args: any[]) => Effect<infer _R, infer X, infer _A> } ? X : never)
-    | (O extends { until: (...args: any[]) => Effect<infer _R, infer X, infer _A> } ? X : never),
     O extends { schedule: Schedule.Schedule<infer _R, infer _I, infer Out> }
       ? Out
       : O extends { until: Refinement<A, infer B extends A> }
         ? B
-        : A
+        : A,
+    | E
+    | (O extends { while: (...args: any[]) => Effect<infer _A, infer E, infer _R> } ? E : never)
+    | (O extends { until: (...args: any[]) => Effect<infer _A, infer E, infer _R> } ? E : never),
+    | R
+    | (O extends { schedule: Schedule.Schedule<infer R, infer _I, infer _O> } ? R : never)
+    | (O extends { while: (...args: any[]) => Effect<infer _A, infer _E, infer R> } ? R : never)
+    | (O extends { until: (...args: any[]) => Effect<infer _A, infer _E, infer R> } ? R : never)
   >
-  <R1, A extends A0, A0, B>(
-    schedule: Schedule.Schedule<R1, A, B>
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R1 | R, E, B>
-  <R, E, A, O extends Repeat.Options<A>>(
-    self: Effect<R, E, A>,
+  <R1, A, B>(schedule: Schedule.Schedule<R1, A, B>): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R1 | R>
+  <A, E, R, O extends Repeat.Options<A>>(
+    self: Effect<A, E, R>,
     options: O
   ): Effect<
-    | R
-    | (O extends { schedule: Schedule.Schedule<infer X, infer _I, infer _O> } ? X : never)
-    | (O extends { while: (...args: any[]) => Effect<infer X, infer _E, infer _A> } ? X : never)
-    | (O extends { until: (...args: any[]) => Effect<infer X, infer _E, infer _A> } ? X : never),
-    | E
-    | (O extends { while: (...args: any[]) => Effect<infer _R, infer X, infer _A> } ? X : never)
-    | (O extends { until: (...args: any[]) => Effect<infer _R, infer X, infer _A> } ? X : never),
     O extends { schedule: Schedule.Schedule<infer _R, infer _I, infer Out> }
       ? Out
       : O extends { until: Refinement<A, infer B extends A> }
         ? B
-        : A
+        : A,
+    | E
+    | (O extends { while: (...args: any[]) => Effect<infer _A, infer E, infer _R> } ? E : never)
+    | (O extends { until: (...args: any[]) => Effect<infer _A, infer E, infer _R> } ? E : never),
+    | R
+    | (O extends { schedule: Schedule.Schedule<infer R, infer _I, infer _O> } ? R : never)
+    | (O extends { while: (...args: any[]) => Effect<infer _A, infer _E, infer R> } ? R : never)
+    | (O extends { until: (...args: any[]) => Effect<infer _A, infer _E, infer R> } ? R : never)
   >
-  <R, E, A extends A0, A0, R1, B>(self: Effect<R, E, A>, schedule: Schedule.Schedule<R1, A0, B>): Effect<R | R1, E, B>
+  <A, E, R, R1, B>(self: Effect<A, E, R>, schedule: Schedule.Schedule<R1, A, B>): Effect<B, E, R | R1>
 }
 ```

@@ -13,5 +13,5 @@ Clipboard.layer
 **Signature**
 
 ```ts
-export declare const layer: Layer.Layer<never, never, Clipboard>
+export declare const layer: Layer.Layer<Clipboard, never, never>
 ```

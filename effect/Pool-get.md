@@ -15,5 +15,5 @@ Pool.get
 **Signature**
 
 ```ts
-export declare const get: <E, A>(self: Pool<E, A>) => Effect.Effect<Scope.Scope, E, A>
+export declare const get: <A, E>(self: Pool<A, E>) => Effect.Effect<A, E, Scope.Scope>
 ```

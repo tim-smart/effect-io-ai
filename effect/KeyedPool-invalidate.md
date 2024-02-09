@@ -16,7 +16,7 @@ KeyedPool.invalidate
 
 ```ts
 export declare const invalidate: {
-  <A>(item: A): <K, E>(self: KeyedPool<K, E, A>) => Effect.Effect<never, never, void>
-  <K, E, A>(self: KeyedPool<K, E, A>, item: A): Effect.Effect<never, never, void>
+  <A>(item: A): <K, E>(self: KeyedPool<K, A, E>) => Effect.Effect<void>
+  <K, A, E>(self: KeyedPool<K, A, E>, item: A): Effect.Effect<void>
 }
 ```

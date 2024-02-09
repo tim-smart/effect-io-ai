@@ -18,10 +18,10 @@ export declare const makeFlat: (options: {
     path: ReadonlyArray<string>,
     config: Config.Config.Primitive<A>,
     split: boolean
-  ) => Effect.Effect<never, ConfigError.ConfigError, readonly A[]>
+  ) => Effect.Effect<readonly A[], ConfigError.ConfigError, never>
   readonly enumerateChildren: (
     path: ReadonlyArray<string>
-  ) => Effect.Effect<never, ConfigError.ConfigError, HashSet.HashSet<string>>
+  ) => Effect.Effect<HashSet.HashSet<string>, ConfigError.ConfigError>
   readonly patch: PathPatch.PathPatch
 }) => ConfigProvider.Flat
 ```

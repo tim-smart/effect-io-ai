@@ -16,7 +16,7 @@ Fiber.interruptAs
 
 ```ts
 export declare const interruptAs: {
-  (fiberId: FiberId.FiberId): <E, A>(self: Fiber<E, A>) => Effect.Effect<never, never, Exit.Exit<E, A>>
-  <E, A>(self: Fiber<E, A>, fiberId: FiberId.FiberId): Effect.Effect<never, never, Exit.Exit<E, A>>
+  (fiberId: FiberId.FiberId): <A, E>(self: Fiber<A, E>) => Effect.Effect<Exit.Exit<A, E>, never, never>
+  <A, E>(self: Fiber<A, E>, fiberId: FiberId.FiberId): Effect.Effect<Exit.Exit<A, E>, never, never>
 }
 ```

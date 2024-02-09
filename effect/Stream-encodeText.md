@@ -13,5 +13,5 @@ Stream.encodeText
 **Signature**
 
 ```ts
-export declare const encodeText: <R, E>(self: Stream<R, E, string>) => Stream<R, E, Uint8Array>
+export declare const encodeText: <R, E>(self: Stream<string, E, R>) => Stream<Uint8Array, E, R>
 ```

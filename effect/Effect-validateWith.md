@@ -15,16 +15,20 @@ Effect.validateWith
 
 ```ts
 export declare const validateWith: {
-  <A, R1, E1, B, C>(
-    that: Effect<R1, E1, B>,
+  <B, E1, R1, A, C>(
+    that: Effect<B, E1, R1>,
     f: (a: A, b: B) => C,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R1 | R, E1 | E, C>
-  <R, E, A, R1, E1, B, C>(
-    self: Effect<R, E, A>,
-    that: Effect<R1, E1, B>,
+    options?:
+      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): <E, R>(self: Effect<A, E, R>) => Effect<C, E1 | E, R1 | R>
+  <A, E, R, B, E1, R1, C>(
+    self: Effect<A, E, R>,
+    that: Effect<B, E1, R1>,
     f: (a: A, b: B) => C,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R | R1, E | E1, C>
+    options?:
+      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<C, E | E1, R | R1>
 }
 ```

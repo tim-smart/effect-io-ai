@@ -18,7 +18,7 @@ Schedule.ensuring
 
 ```ts
 export declare const ensuring: {
-  <X>(finalizer: Effect.Effect<never, never, X>): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
-  <Env, In, Out, X>(self: Schedule<Env, In, Out>, finalizer: Effect.Effect<never, never, X>): Schedule<Env, In, Out>
+  <X>(finalizer: Effect.Effect<X, never, never>): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
+  <Env, In, Out, X>(self: Schedule<Env, In, Out>, finalizer: Effect.Effect<X, never, never>): Schedule<Env, In, Out>
 }
 ```

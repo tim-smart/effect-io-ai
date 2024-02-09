@@ -15,6 +15,6 @@ Layer.memoize
 
 ```ts
 export declare const memoize: <RIn, E, ROut>(
-  self: Layer<RIn, E, ROut>
-) => Effect.Effect<Scope.Scope, never, Layer<RIn, E, ROut>>
+  self: Layer<ROut, E, RIn>
+) => Effect.Effect<Layer<ROut, E, RIn>, never, Scope.Scope>
 ```

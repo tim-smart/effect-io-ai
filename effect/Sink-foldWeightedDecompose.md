@@ -50,5 +50,5 @@ export declare const foldWeightedDecompose: <S, In>(options: {
   readonly cost: (s: S, input: In) => number
   readonly decompose: (input: In) => Chunk.Chunk<In>
   readonly body: (s: S, input: In) => S
-}) => Sink<never, never, In, In, S>
+}) => Sink<S, In, In, never, never>
 ```

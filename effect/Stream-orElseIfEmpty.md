@@ -14,7 +14,7 @@ Stream.orElseIfEmpty
 
 ```ts
 export declare const orElseIfEmpty: {
-  <A2>(element: LazyArg<A2>): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A2 | A>
-  <R, E, A, A2>(self: Stream<R, E, A>, element: LazyArg<A2>): Stream<R, E, A | A2>
+  <A2>(element: LazyArg<A2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E, R>
+  <R, E, A, A2>(self: Stream<A, E, R>, element: LazyArg<A2>): Stream<A | A2, E, R>
 }
 ```

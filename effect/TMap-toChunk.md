@@ -13,5 +13,5 @@ TMap.toChunk
 **Signature**
 
 ```ts
-export declare const toChunk: <K, V>(self: TMap<K, V>) => STM.STM<never, never, Chunk.Chunk<[K, V]>>
+export declare const toChunk: <K, V>(self: TMap<K, V>) => STM.STM<Chunk.Chunk<[K, V]>, never, never>
 ```

@@ -20,14 +20,14 @@ Channel.interruptWhen
 
 ```ts
 export declare const interruptWhen: {
-  <Env1, OutErr1, OutDone1>(
-    effect: Effect.Effect<Env1, OutErr1, OutDone1>
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem, OutDone1 | OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, OutErr1, OutDone1>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    effect: Effect.Effect<Env1, OutErr1, OutDone1>
-  ): Channel<Env | Env1, InErr, InElem, InDone, OutErr | OutErr1, OutElem, OutDone | OutDone1>
+  <OutDone1, OutErr1, Env1>(
+    effect: Effect.Effect<OutDone1, OutErr1, Env1>
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr1 | OutErr, InErr, OutDone1 | OutDone, InDone, Env1 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutDone1, OutErr1, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    effect: Effect.Effect<OutDone1, OutErr1, Env1>
+  ): Channel<OutElem, InElem, OutErr | OutErr1, InErr, OutDone | OutDone1, InDone, Env | Env1>
 }
 ```

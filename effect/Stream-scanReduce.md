@@ -17,7 +17,7 @@ Stream.scanReduce
 
 ```ts
 export declare const scanReduce: {
-  <A2, A>(f: (a2: A2 | A, a: A) => A2): <R, E>(self: Stream<R, E, A>) => Stream<R, E, A2 | A>
-  <R, E, A2, A>(self: Stream<R, E, A>, f: (a2: A2 | A, a: A) => A2): Stream<R, E, A2 | A>
+  <A2, A>(f: (a2: A2 | A, a: A) => A2): <R, E>(self: Stream<A, E, R>) => Stream<A2 | A, E, R>
+  <R, E, A2, A>(self: Stream<A, E, R>, f: (a2: A2 | A, a: A) => A2): Stream<A2 | A, E, R>
 }
 ```

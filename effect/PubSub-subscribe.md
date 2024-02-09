@@ -15,5 +15,5 @@ PubSub.subscribe
 **Signature**
 
 ```ts
-export declare const subscribe: <A>(self: PubSub<A>) => Effect.Effect<Scope.Scope, never, Queue.Dequeue<A>>
+export declare const subscribe: <A>(self: PubSub<A>) => Effect.Effect<Queue.Dequeue<A>, never, Scope.Scope>
 ```

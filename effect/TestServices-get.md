@@ -14,5 +14,5 @@ TestServices.get
 **Signature**
 
 ```ts
-export declare const get: <A>(key: TestAnnotation.TestAnnotation<A>) => Effect.Effect<never, never, A>
+export declare const get: <A>(key: TestAnnotation.TestAnnotation<A>) => Effect.Effect<A, never, never>
 ```

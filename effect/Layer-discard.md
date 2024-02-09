@@ -14,5 +14,5 @@ Layer.discard
 **Signature**
 
 ```ts
-export declare const discard: <RIn, E, ROut>(self: Layer<RIn, E, ROut>) => Layer<RIn, E, never>
+export declare const discard: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Layer<never, E, RIn>
 ```

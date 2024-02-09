@@ -19,11 +19,11 @@ export declare const trackSuccessWith: {
   <Type, In, Out, In2>(
     metric: Metric<Type, In, Out>,
     f: (value: In2) => In
-  ): <R, E, A extends In2>(self: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  ): <R, E, A extends In2>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
   <R, E, A extends In2, Type, In, Out, In2>(
-    self: Effect.Effect<R, E, A>,
+    self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>,
     f: (value: In2) => In
-  ): Effect.Effect<R, E, A>
+  ): Effect.Effect<A, E, R>
 }
 ```

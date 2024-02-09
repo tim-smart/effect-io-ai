@@ -14,7 +14,12 @@ Effect.findFirst
 
 ```ts
 export declare const findFirst: {
-  <A, R, E>(f: (a: A, i: number) => Effect<R, E, boolean>): (elements: Iterable<A>) => Effect<R, E, Option.Option<A>>
-  <A, R, E>(elements: Iterable<A>, f: (a: A, i: number) => Effect<R, E, boolean>): Effect<R, E, Option.Option<A>>
+  <A, E, R>(
+    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
+  ): (elements: Iterable<A>) => Effect<Option.Option<A>, E, R>
+  <A, E, R>(
+    elements: Iterable<A>,
+    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
+  ): Effect<Option.Option<A>, E, R>
 }
 ```

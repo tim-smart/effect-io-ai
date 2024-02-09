@@ -14,7 +14,7 @@ Effect.withLogSpan
 
 ```ts
 export declare const withLogSpan: {
-  (label: string): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, label: string): Effect<R, E, A>
+  (label: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, label: string): Effect<A, E, R>
 }
 ```

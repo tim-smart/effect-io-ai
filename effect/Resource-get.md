@@ -13,5 +13,5 @@ Resource.get
 **Signature**
 
 ```ts
-export declare const get: <E, A>(self: Resource<E, A>) => Effect.Effect<never, E, A>
+export declare const get: <A, E>(self: Resource<A, E>) => Effect.Effect<A, E, never>
 ```

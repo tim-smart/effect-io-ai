@@ -15,7 +15,7 @@ Stream.repeat
 
 ```ts
 export declare const repeat: {
-  <R2, B>(schedule: Schedule.Schedule<R2, unknown, B>): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | R, E, A>
-  <R, E, A, R2, B>(self: Stream<R, E, A>, schedule: Schedule.Schedule<R2, unknown, B>): Stream<R | R2, E, A>
+  <R2, B>(schedule: Schedule.Schedule<R2, unknown, B>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <R, E, A, R2, B>(self: Stream<A, E, R>, schedule: Schedule.Schedule<R2, unknown, B>): Stream<A, E, R | R2>
 }
 ```

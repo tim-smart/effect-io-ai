@@ -13,5 +13,5 @@ TestServices.testConfig
 **Signature**
 
 ```ts
-export declare const testConfig: Effect.Effect<never, never, TestConfig.TestConfig>
+export declare const testConfig: Effect.Effect<TestConfig.TestConfig, never, never>
 ```

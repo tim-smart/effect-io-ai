@@ -14,12 +14,12 @@ Effect.catchSomeCause
 
 ```ts
 export declare const catchSomeCause: {
-  <E, R2, E2, A2>(
-    f: (cause: Cause.Cause<E>) => Option.Option<Effect<R2, E2, A2>>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E | E2, A2 | A>
-  <R, E, A, R2, E2, A2>(
-    self: Effect<R, E, A>,
-    f: (cause: Cause.Cause<E>) => Option.Option<Effect<R2, E2, A2>>
-  ): Effect<R | R2, E | E2, A | A2>
+  <E, A2, E2, R2>(
+    f: (cause: Cause.Cause<NoInfer<E>>) => Option.Option<Effect<A2, E2, R2>>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E | E2, R2 | R>
+  <A, E, R, A2, E2, R2>(
+    self: Effect<A, E, R>,
+    f: (cause: Cause.Cause<NoInfer<E>>) => Option.Option<Effect<A2, E2, R2>>
+  ): Effect<A | A2, E | E2, R | R2>
 }
 ```

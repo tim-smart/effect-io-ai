@@ -16,6 +16,6 @@ Stream.whenCase
 ```ts
 export declare const whenCase: <A, R, E, A2>(
   evaluate: LazyArg<A>,
-  pf: (a: A) => Option.Option<Stream<R, E, A2>>
-) => Stream<R, E, A2>
+  pf: (a: A) => Option.Option<Stream<A2, E, R>>
+) => Stream<A2, E, R>
 ```

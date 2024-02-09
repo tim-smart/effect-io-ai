@@ -14,5 +14,5 @@ Effect.cached
 **Signature**
 
 ```ts
-export declare const cached: <R, E, A>(self: Effect<R, E, A>) => Effect<never, never, Effect<R, E, A>>
+export declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>, never, never>
 ```

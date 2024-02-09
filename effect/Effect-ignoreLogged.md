@@ -15,5 +15,5 @@ Effect.ignoreLogged
 **Signature**
 
 ```ts
-export declare const ignoreLogged: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, void>
+export declare const ignoreLogged: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```

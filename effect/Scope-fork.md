@@ -14,8 +14,5 @@ Scope.fork
 **Signature**
 
 ```ts
-export declare const fork: (
-  self: Scope,
-  strategy: ExecutionStrategy.ExecutionStrategy
-) => Effect.Effect<never, never, CloseableScope>
+export declare const fork: (self: Scope, strategy: ExecutionStrategy.ExecutionStrategy) => Effect.Effect<CloseableScope>
 ```

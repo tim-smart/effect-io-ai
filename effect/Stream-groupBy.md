@@ -15,13 +15,13 @@ Stream.groupBy
 ```ts
 export declare const groupBy: {
   <A, R2, E2, K, V>(
-    f: (a: A) => Effect.Effect<R2, E2, readonly [K, V]>,
-    options?: { readonly bufferSize?: number | undefined }
-  ): <R, E>(self: Stream<R, E, A>) => GroupBy.GroupBy<R2 | R, E2 | E, K, V>
+    f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>,
+    options?: { readonly bufferSize?: number | undefined } | undefined
+  ): <R, E>(self: Stream<A, E, R>) => GroupBy.GroupBy<R2 | R, E2 | E, K, V>
   <R, E, A, R2, E2, K, V>(
-    self: Stream<R, E, A>,
-    f: (a: A) => Effect.Effect<R2, E2, readonly [K, V]>,
-    options?: { readonly bufferSize?: number | undefined }
+    self: Stream<A, E, R>,
+    f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>,
+    options?: { readonly bufferSize?: number | undefined } | undefined
   ): GroupBy.GroupBy<R | R2, E | E2, K, V>
 }
 ```

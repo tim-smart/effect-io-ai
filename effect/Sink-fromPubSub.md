@@ -16,5 +16,5 @@ Sink.fromPubSub
 export declare const fromPubSub: <In>(
   pubsub: PubSub.PubSub<In>,
   options?: { readonly shutdown?: boolean | undefined }
-) => Sink<never, never, In, never, void>
+) => Sink<void, In, never, never, never>
 ```

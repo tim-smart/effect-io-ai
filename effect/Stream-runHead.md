@@ -14,5 +14,5 @@ Stream.runHead
 **Signature**
 
 ```ts
-export declare const runHead: <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<R, E, Option.Option<A>>
+export declare const runHead: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Option.Option<A>, E, R>
 ```

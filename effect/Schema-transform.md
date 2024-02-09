@@ -15,29 +15,29 @@ Schema.transform
 
 ```ts
 export declare const transform: {
-  <R2, C, D, B>(
-    to: Schema<R2, C, D>,
-    decode: (b: B) => C,
-    encode: (c: C) => B
-  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R1, A, D>
-  <R2, C, D, B>(
-    to: Schema<R2, C, D>,
-    decode: (b: B) => unknown,
-    encode: (c: C) => unknown,
+  <ToA, ToI, ToR, FromA>(
+    to: Schema<ToA, ToI, ToR>,
+    decode: (fromA: FromA) => ToI,
+    encode: (toI: ToI) => FromA
+  ): <FromI, FromR>(from: Schema<FromA, FromI, FromR>) => Schema<ToA, FromI, ToR | FromR>
+  <ToA, ToI, ToR, FromA>(
+    to: Schema<ToA, ToI, ToR>,
+    decode: (fromA: FromA) => unknown,
+    encode: (toI: ToI) => unknown,
     options: { strict: false }
-  ): <R1, A>(self: Schema<R1, A, B>) => Schema<R2 | R1, A, D>
-  <R1, A, B, R2, C, D>(
-    from: Schema<R1, A, B>,
-    to: Schema<R2, C, D>,
-    decode: (b: B) => C,
-    encode: (c: C) => B
-  ): Schema<R1 | R2, A, D>
-  <R1, A, B, R2, C, D>(
-    from: Schema<R1, A, B>,
-    to: Schema<R2, C, D>,
-    decode: (b: B) => unknown,
-    encode: (c: C) => unknown,
+  ): <FromI, FromR>(from: Schema<FromA, FromI, FromR>) => Schema<ToA, FromI, ToR | FromR>
+  <FromA, FromI, FromR, ToA, ToI, ToR>(
+    from: Schema<FromA, FromI, FromR>,
+    to: Schema<ToA, ToI, ToR>,
+    decode: (fromA: FromA) => ToI,
+    encode: (toI: ToI) => FromA
+  ): Schema<ToA, FromI, FromR | ToR>
+  <FromA, FromI, FromR, ToA, ToI, ToR>(
+    from: Schema<FromA, FromI, FromR>,
+    to: Schema<ToA, ToI, ToR>,
+    decode: (fromA: FromA) => unknown,
+    encode: (toI: ToI) => unknown,
     options: { strict: false }
-  ): Schema<R1 | R2, A, D>
+  ): Schema<ToA, FromI, FromR | ToR>
 }
 ```

@@ -21,21 +21,21 @@ Stream.distributedWithDynamic
 export declare const distributedWithDynamic: {
   <E, A, _>(options: {
     readonly maximumLag: number
-    readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>>
+    readonly decide: (a: A) => Effect.Effect<Predicate<number>>
   }): <R>(
-    self: Stream<R, E, A>
+    self: Stream<A, E, R>
   ) => Effect.Effect<
-    Scope.Scope | R,
+    Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>,
     never,
-    Effect.Effect<never, never, [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
+    Scope.Scope | R
   >
   <R, E, A, _>(
-    self: Stream<R, E, A>,
-    options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<never, never, Predicate<number>> }
+    self: Stream<A, E, R>,
+    options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<Predicate<number>> }
   ): Effect.Effect<
-    Scope.Scope | R,
+    Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>,
     never,
-    Effect.Effect<never, never, [number, Queue.Dequeue<Exit.Exit<Option.Option<E>, A>>]>
+    Scope.Scope | R
   >
 }
 ```

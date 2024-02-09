@@ -13,5 +13,5 @@ SubscriptionRef.make
 **Signature**
 
 ```ts
-export declare const make: <A>(value: A) => Effect.Effect<never, never, SubscriptionRef<A>>
+export declare const make: <A>(value: A) => Effect.Effect<SubscriptionRef<A>, never, never>
 ```

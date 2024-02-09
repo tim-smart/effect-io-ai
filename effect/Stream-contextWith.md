@@ -13,5 +13,5 @@ Stream.contextWith
 **Signature**
 
 ```ts
-export declare const contextWith: <R, A>(f: (env: Context.Context<R>) => A) => Stream<R, never, A>
+export declare const contextWith: <R, A>(f: (env: Context.Context<R>) => A) => Stream<A, never, R>
 ```

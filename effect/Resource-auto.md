@@ -17,8 +17,8 @@ Resource.auto
 **Signature**
 
 ```ts
-export declare const auto: <R, E, A, R2, Out>(
-  acquire: Effect.Effect<R, E, A>,
+export declare const auto: <A, E, R, R2, Out>(
+  acquire: Effect.Effect<A, E, R>,
   policy: Schedule.Schedule<R2, unknown, Out>
-) => Effect.Effect<Scope.Scope | R | R2, never, Resource<E, A>>
+) => Effect.Effect<Resource<A, E>, never, Scope.Scope | R | R2>
 ```

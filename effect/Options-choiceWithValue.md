@@ -19,13 +19,13 @@ import * as Data from "effect/Data"
 
 export type Animal = Dog | Cat
 
-export interface Dog extends Data.Case {
+export interface Dog {
   readonly _tag: "Dog"
 }
 
 export const Dog = Data.tagged<Dog>("Dog")
 
-export interface Cat extends Data.Case {
+export interface Cat {
   readonly _tag: "Cat"
 }
 

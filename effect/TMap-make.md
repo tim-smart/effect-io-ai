@@ -13,5 +13,5 @@ TMap.make
 **Signature**
 
 ```ts
-export declare const make: <K, V>(...entries: (readonly [K, V])[]) => STM.STM<never, never, TMap<K, V>>
+export declare const make: <K, V>(...entries: (readonly [K, V])[]) => STM.STM<TMap<K, V>, never, never>
 ```

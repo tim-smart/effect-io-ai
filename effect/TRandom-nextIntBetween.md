@@ -14,5 +14,5 @@ TRandom.nextIntBetween
 **Signature**
 
 ```ts
-export declare const nextIntBetween: (low: number, high: number) => STM.STM<TRandom, never, number>
+export declare const nextIntBetween: (low: number, high: number) => STM.STM<number, never, TRandom>
 ```

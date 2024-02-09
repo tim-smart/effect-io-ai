@@ -13,5 +13,5 @@ Layer.setConfigProvider
 **Signature**
 
 ```ts
-export declare const setConfigProvider: (configProvider: ConfigProvider) => Layer<never, never, never>
+export declare const setConfigProvider: (configProvider: ConfigProvider) => Layer<never>
 ```

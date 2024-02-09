@@ -19,7 +19,7 @@ Channel.doneCollect
 **Signature**
 
 ```ts
-export declare const doneCollect: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-) => Channel<Env, InErr, InElem, InDone, OutErr, never, [Chunk.Chunk<OutElem>, OutDone]>
+export declare const doneCollect: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+) => Channel<never, InElem, OutErr, InErr, [Chunk.Chunk<OutElem>, OutDone], InDone, Env>
 ```

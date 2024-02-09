@@ -14,5 +14,5 @@ Stream.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <R, E, A>(effect: Effect.Effect<R, E, A>) => Stream<R, E, A>
+export declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```

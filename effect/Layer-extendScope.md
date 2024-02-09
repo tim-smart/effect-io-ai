@@ -16,5 +16,5 @@ Layer.extendScope
 **Signature**
 
 ```ts
-export declare const extendScope: <RIn, E, ROut>(self: Layer<RIn, E, ROut>) => Layer<Scope.Scope | RIn, E, ROut>
+export declare const extendScope: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Layer<ROut, E, Scope.Scope | RIn>
 ```

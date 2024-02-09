@@ -13,5 +13,5 @@ STM.asSomeError
 **Signature**
 
 ```ts
-export declare const asSomeError: <R, E, A>(self: STM<R, E, A>) => STM<R, Option.Option<E>, A>
+export declare const asSomeError: <A, E, R>(self: STM<A, E, R>) => STM<A, Option.Option<E>, R>
 ```

@@ -15,5 +15,5 @@ TestClock.save
 **Signature**
 
 ```ts
-export declare const save: () => Effect.Effect<never, never, Effect.Effect<never, never, void>>
+export declare const save: () => Effect.Effect<Effect.Effect<void>>
 ```

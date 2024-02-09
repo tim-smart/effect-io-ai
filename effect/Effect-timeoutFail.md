@@ -18,10 +18,10 @@ export declare const timeoutFail: {
   <E1>(options: {
     readonly onTimeout: LazyArg<E1>
     readonly duration: Duration.DurationInput
-  }): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E1 | E, A>
-  <R, E, A, E1>(
-    self: Effect<R, E, A>,
+  }): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E1 | E, R>
+  <A, E, R, E1>(
+    self: Effect<A, E, R>,
     options: { readonly onTimeout: LazyArg<E1>; readonly duration: Duration.DurationInput }
-  ): Effect<R, E | E1, A>
+  ): Effect<A, E | E1, R>
 }
 ```

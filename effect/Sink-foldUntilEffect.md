@@ -16,9 +16,9 @@ Sink.foldUntilEffect
 **Signature**
 
 ```ts
-export declare const foldUntilEffect: <S, R, E, In>(
+export declare const foldUntilEffect: <S, In, E, R>(
   s: S,
   max: number,
-  f: (s: S, input: In) => Effect.Effect<R, E, S>
-) => Sink<R, E, In, In, S>
+  f: (s: S, input: In) => Effect.Effect<S, E, R>
+) => Sink<S, In, In, E, R>
 ```

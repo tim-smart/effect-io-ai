@@ -17,12 +17,12 @@ Channel.orDie
 export declare const orDie: {
   <E>(
     error: LazyArg<E>
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, never, OutElem, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, E>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, never, InErr, OutDone, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, E>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     error: LazyArg<E>
-  ): Channel<Env, InErr, InElem, InDone, never, OutElem, OutDone>
+  ): Channel<OutElem, InElem, never, InErr, OutDone, InDone, Env>
 }
 ```

@@ -13,5 +13,5 @@ STM.isFailure
 **Signature**
 
 ```ts
-export declare const isFailure: <R, E, A>(self: STM<R, E, A>) => STM<R, never, boolean>
+export declare const isFailure: <A, E, R>(self: STM<A, E, R>) => STM<boolean, never, R>
 ```

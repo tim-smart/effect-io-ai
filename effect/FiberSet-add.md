@@ -14,12 +14,7 @@ FiberSet.add
 
 ```ts
 export declare const add: {
-  <E, A, XE extends E, XA extends A>(
-    fiber: Fiber.RuntimeFiber<XE, XA>
-  ): (self: FiberSet<E, A>) => Effect.Effect<never, never, void>
-  <E, A, XE extends E, XA extends A>(
-    self: FiberSet<E, A>,
-    fiber: Fiber.RuntimeFiber<XE, XA>
-  ): Effect.Effect<never, never, void>
+  <A, E, XE extends E, XA extends A>(fiber: Fiber.RuntimeFiber<XA, XE>): (self: FiberSet<A, E>) => Effect.Effect<void>
+  <A, E, XE extends E, XA extends A>(self: FiberSet<A, E>, fiber: Fiber.RuntimeFiber<XA, XE>): Effect.Effect<void>
 }
 ```

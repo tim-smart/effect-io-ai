@@ -14,7 +14,7 @@ TQueue.takeUpTo
 
 ```ts
 export declare const takeUpTo: {
-  (max: number): <A>(self: TDequeue<A>) => STM.STM<never, never, A[]>
-  <A>(self: TDequeue<A>, max: number): STM.STM<never, never, A[]>
+  (max: number): <A>(self: TDequeue<A>) => STM.STM<A[], never, never>
+  <A>(self: TDequeue<A>, max: number): STM.STM<A[], never, never>
 }
 ```

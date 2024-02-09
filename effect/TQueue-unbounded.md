@@ -13,5 +13,5 @@ TQueue.unbounded
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => STM.STM<never, never, TQueue<A>>
+export declare const unbounded: <A>() => STM.STM<TQueue<A>, never, never>
 ```

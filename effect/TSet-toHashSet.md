@@ -13,5 +13,5 @@ TSet.toHashSet
 **Signature**
 
 ```ts
-export declare const toHashSet: <A>(self: TSet<A>) => STM.STM<never, never, HashSet.HashSet<A>>
+export declare const toHashSet: <A>(self: TSet<A>) => STM.STM<HashSet.HashSet<A>, never, never>
 ```

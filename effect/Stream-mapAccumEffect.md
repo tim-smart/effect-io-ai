@@ -15,14 +15,14 @@ Stream.mapAccumEffect
 
 ```ts
 export declare const mapAccumEffect: {
-  <S, A, R2, E2, A2>(
+  <S, A, A2, E2, R2>(
     s: S,
-    f: (s: S, a: A) => Effect.Effect<R2, E2, readonly [S, A2]>
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A2>
-  <R, E, S, A, R2, E2, A2>(
-    self: Stream<R, E, A>,
+    f: (s: S, a: A) => Effect.Effect<readonly [S, A2], E2, R2>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
+  <R, E, A, S, A2, E2, R2>(
+    self: Stream<A, E, R>,
     s: S,
-    f: (s: S, a: A) => Effect.Effect<R2, E2, readonly [S, A2]>
-  ): Stream<R | R2, E | E2, A2>
+    f: (s: S, a: A) => Effect.Effect<readonly [S, A2], E2, R2>
+  ): Stream<A2, E | E2, R | R2>
 }
 ```

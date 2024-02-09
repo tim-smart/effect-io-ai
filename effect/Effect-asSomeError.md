@@ -15,5 +15,5 @@ Effect.asSomeError
 **Signature**
 
 ```ts
-export declare const asSomeError: <R, E, A>(self: Effect<R, E, A>) => Effect<R, Option.Option<E>, A>
+export declare const asSomeError: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Option.Option<E>, R>
 ```

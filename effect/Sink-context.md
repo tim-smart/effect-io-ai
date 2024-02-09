@@ -13,5 +13,5 @@ Sink.context
 **Signature**
 
 ```ts
-export declare const context: <R>() => Sink<R, never, unknown, never, Context.Context<R>>
+export declare const context: <R>() => Sink<Context.Context<R>, unknown, never, never, R>
 ```

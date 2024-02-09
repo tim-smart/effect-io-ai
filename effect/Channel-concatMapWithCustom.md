@@ -19,8 +19,8 @@ Channel.concatMapWithCustom
 
 ```ts
 export declare const concatMapWithCustom: {
-  <OutElem, OutElem2, OutDone, OutDone2, OutDone3, Env2, InErr2, InElem2, InDone2, OutErr2>(
-    f: (o: OutElem) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone>,
+  <OutElem, OutElem2, InElem2, OutErr2, InErr2, OutDone, InDone2, Env2, OutDone2, OutDone3>(
+    f: (o: OutElem) => Channel<OutElem2, InElem2, OutErr2, InErr2, OutDone, InDone2, Env2>,
     g: (o: OutDone, o1: OutDone) => OutDone,
     h: (o: OutDone, o2: OutDone2) => OutDone3,
     onPull: (
@@ -28,33 +28,33 @@ export declare const concatMapWithCustom: {
     ) => UpstreamPullStrategy.UpstreamPullStrategy<OutElem2>,
     onEmit: (elem: OutElem2) => ChildExecutorDecision.ChildExecutorDecision
   ): <Env, InErr, InElem, InDone, OutErr>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone2>
-  ) => Channel<Env2 | Env, InErr & InErr2, InElem & InElem2, InDone & InDone2, OutErr2 | OutErr, OutElem2, OutDone3>
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone2, InDone, Env>
+  ) => Channel<OutElem2, InElem & InElem2, OutErr2 | OutErr, InErr & InErr2, OutDone3, InDone & InDone2, Env2 | Env>
   <
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
     OutElem,
-    OutElem2,
-    OutDone,
+    InElem,
+    OutErr,
+    InErr,
     OutDone2,
-    OutDone3,
-    Env2,
-    InErr2,
+    InDone,
+    Env,
+    OutElem2,
     InElem2,
+    OutErr2,
+    InErr2,
+    OutDone,
     InDone2,
-    OutErr2
+    Env2,
+    OutDone3
   >(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone2>,
-    f: (o: OutElem) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, OutDone>,
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone2, InDone, Env>,
+    f: (o: OutElem) => Channel<OutElem2, InElem2, OutErr2, InErr2, OutDone, InDone2, Env2>,
     g: (o: OutDone, o1: OutDone) => OutDone,
     h: (o: OutDone, o2: OutDone2) => OutDone3,
     onPull: (
       upstreamPullRequest: UpstreamPullRequest.UpstreamPullRequest<OutElem>
     ) => UpstreamPullStrategy.UpstreamPullStrategy<OutElem2>,
     onEmit: (elem: OutElem2) => ChildExecutorDecision.ChildExecutorDecision
-  ): Channel<Env | Env2, InErr & InErr2, InElem & InElem2, InDone & InDone2, OutErr | OutErr2, OutElem2, OutDone3>
+  ): Channel<OutElem2, InElem & InElem2, OutErr | OutErr2, InErr & InErr2, OutDone3, InDone & InDone2, Env | Env2>
 }
 ```

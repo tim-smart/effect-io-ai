@@ -14,11 +14,11 @@ TestServices.provideWithLive
 **Signature**
 
 ```ts
-export declare const provideWithLive: (<R, E, A, R2, E2, A2>(
-  f: (effect: Effect.Effect<R, E, A>) => Effect.Effect<R2, E2, A2>
-) => (self: Effect.Effect<R, E, A>) => Effect.Effect<R | R2, E | E2, A2>) &
-  (<R, E, A, R2, E2, A2>(
-    self: Effect.Effect<R, E, A>,
-    f: (effect: Effect.Effect<R, E, A>) => Effect.Effect<R2, E2, A2>
-  ) => Effect.Effect<R | R2, E | E2, A2>)
+export declare const provideWithLive: (<A, E, R, A2, E2, R2>(
+  f: (effect: Effect.Effect<A, E, R>) => Effect.Effect<A2, E2, R2>
+) => (self: Effect.Effect<A, E, R>) => Effect.Effect<A2, E | E2, R | R2>) &
+  (<A, E, R, A2, E2, R2>(
+    self: Effect.Effect<A, E, R>,
+    f: (effect: Effect.Effect<A, E, R>) => Effect.Effect<A2, E2, R2>
+  ) => Effect.Effect<A2, E | E2, R | R2>)
 ```

@@ -14,5 +14,5 @@ Layer.passthrough
 **Signature**
 
 ```ts
-export declare const passthrough: <RIn, E, ROut>(self: Layer<RIn, E, ROut>) => Layer<RIn, E, RIn | ROut>
+export declare const passthrough: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Layer<RIn | ROut, E, RIn>
 ```

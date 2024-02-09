@@ -13,7 +13,7 @@ Sink.toChannel
 **Signature**
 
 ```ts
-export declare const toChannel: <R, E, In, L, Z>(
-  self: Sink<R, E, In, L, Z>
-) => Channel.Channel<R, never, Chunk.Chunk<In>, unknown, E, Chunk.Chunk<L>, Z>
+export declare const toChannel: <A, In, L, E, R>(
+  self: Sink<A, In, L, E, R>
+) => Channel.Channel<Chunk.Chunk<L>, Chunk.Chunk<In>, E, never, A, unknown, R>
 ```

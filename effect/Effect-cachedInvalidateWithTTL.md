@@ -19,10 +19,10 @@ Effect.cachedInvalidateWithTTL
 export declare const cachedInvalidateWithTTL: {
   (
     timeToLive: Duration.DurationInput
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
-  <R, E, A>(
-    self: Effect<R, E, A>,
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E, never>, Effect<void, never, never>], never, R>
+  <A, E, R>(
+    self: Effect<A, E, R>,
     timeToLive: Duration.DurationInput
-  ): Effect<R, never, [Effect<never, E, A>, Effect<never, never, void>]>
+  ): Effect<[Effect<A, E, never>, Effect<void, never, never>], never, R>
 }
 ```

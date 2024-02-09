@@ -14,5 +14,5 @@ Layer.launch
 **Signature**
 
 ```ts
-export declare const launch: <RIn, E, ROut>(self: Layer<RIn, E, ROut>) => Effect.Effect<RIn, E, never>
+export declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<never, E, RIn>
 ```

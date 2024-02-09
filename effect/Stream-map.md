@@ -14,7 +14,7 @@ Stream.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): <R, E>(self: Stream<R, E, A>) => Stream<R, E, B>
-  <R, E, A, B>(self: Stream<R, E, A>, f: (a: A) => B): Stream<R, E, B>
+  <A, B>(f: (a: A) => B): <R, E>(self: Stream<A, E, R>) => Stream<B, E, R>
+  <R, E, A, B>(self: Stream<A, E, R>, f: (a: A) => B): Stream<B, E, R>
 }
 ```

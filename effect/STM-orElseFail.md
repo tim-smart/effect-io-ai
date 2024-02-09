@@ -15,7 +15,7 @@ STM.orElseFail
 
 ```ts
 export declare const orElseFail: {
-  <E2>(error: LazyArg<E2>): <R, E, A>(self: STM<R, E, A>) => STM<R, E2, A>
-  <R, E, A, E2>(self: STM<R, E, A>, error: LazyArg<E2>): STM<R, E2, A>
+  <E2>(error: LazyArg<E2>): <A, E, R>(self: STM<A, E, R>) => STM<A, E2, R>
+  <R, E, A, E2>(self: STM<A, E, R>, error: LazyArg<E2>): STM<A, E2, R>
 }
 ```

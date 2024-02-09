@@ -14,5 +14,5 @@ STM.commitEither
 **Signature**
 
 ```ts
-export declare const commitEither: <R, E, A>(self: STM<R, E, A>) => Effect.Effect<R, E, A>
+export declare const commitEither: <A, E, R>(self: STM<A, E, R>) => Effect.Effect<A, E, R>
 ```

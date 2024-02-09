@@ -13,7 +13,7 @@ Channel.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <R, E, A>(
-  effect: Effect.Effect<R, E, A>
-) => Channel<R, unknown, unknown, unknown, E, never, A>
+export declare const fromEffect: <A, E, R>(
+  effect: Effect.Effect<A, E, R>
+) => Channel<never, unknown, E, unknown, A, unknown, R>
 ```

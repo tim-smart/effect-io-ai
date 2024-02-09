@@ -13,7 +13,7 @@ Effect.descriptorWith
 **Signature**
 
 ```ts
-export declare const descriptorWith: <R, E, A>(
-  f: (descriptor: Fiber.Fiber.Descriptor) => Effect<R, E, A>
-) => Effect<R, E, A>
+export declare const descriptorWith: <A, E, R>(
+  f: (descriptor: Fiber.Fiber.Descriptor) => Effect<A, E, R>
+) => Effect<A, E, R>
 ```

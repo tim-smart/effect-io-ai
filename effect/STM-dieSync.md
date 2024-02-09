@@ -13,5 +13,5 @@ STM.dieSync
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => STM<never, never, never>
+export declare const dieSync: (evaluate: LazyArg<unknown>) => STM<never>
 ```

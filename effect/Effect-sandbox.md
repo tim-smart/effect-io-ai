@@ -13,5 +13,5 @@ Effect.sandbox
 **Signature**
 
 ```ts
-export declare const sandbox: <R, E, A>(self: Effect<R, E, A>) => Effect<R, Cause.Cause<E>, A>
+export declare const sandbox: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Cause.Cause<E>, R>
 ```

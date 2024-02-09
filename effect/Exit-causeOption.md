@@ -14,5 +14,5 @@ Exit.causeOption
 **Signature**
 
 ```ts
-export declare const causeOption: <E, A>(self: Exit<E, A>) => Option.Option<Cause.Cause<E>>
+export declare const causeOption: <A, E>(self: Exit<A, E>) => Option.Option<Cause.Cause<E>>
 ```

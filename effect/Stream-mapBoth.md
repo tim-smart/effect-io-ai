@@ -18,10 +18,10 @@ export declare const mapBoth: {
   <E, E2, A, A2>(options: {
     readonly onFailure: (e: E) => E2
     readonly onSuccess: (a: A) => A2
-  }): <R>(self: Stream<R, E, A>) => Stream<R, E2, A2>
+  }): <R>(self: Stream<A, E, R>) => Stream<A2, E2, R>
   <R, E, E2, A, A2>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2 }
-  ): Stream<R, E2, A2>
+  ): Stream<A2, E2, R>
 }
 ```

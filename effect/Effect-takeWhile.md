@@ -14,9 +14,9 @@ Effect.takeWhile
 
 ```ts
 export declare const takeWhile: {
-  <R, E, A>(
-    predicate: (a: NoInfer<A>, i: number) => Effect<R, E, boolean>
-  ): (elements: Iterable<A>) => Effect<R, E, A[]>
-  <R, E, A>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<R, E, boolean>): Effect<R, E, A[]>
+  <A, E, R>(
+    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
+  ): (elements: Iterable<A>) => Effect<A[], E, R>
+  <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<A[], E, R>
 }
 ```

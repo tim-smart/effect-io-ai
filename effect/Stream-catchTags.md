@@ -21,24 +21,24 @@ export declare const catchTags: {
   >(
     cases: Cases
   ): <R, A>(
-    self: Stream<R, E, A>
+    self: Stream<A, E, R>
   ) => Stream<
-    | R
+    | A
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer R, infer _E, infer _A>
-          ? R
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer A, infer _E, infer _R>
+          ? A
           : never
       }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer E, infer _A>
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _A, infer E, infer _R>
           ? E
           : never
       }[keyof Cases],
-    | A
+    | R
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer _E, infer A>
-          ? A
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _A, infer _E, infer R>
+          ? R
           : never
       }[keyof Cases]
   >
@@ -48,13 +48,13 @@ export declare const catchTags: {
     A,
     Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
   >(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     cases: Cases
   ): Stream<
-    | R
+    | A
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer R, infer _E, infer _A>
-          ? R
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer _E, infer A>
+          ? A
           : never
       }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
@@ -63,10 +63,10 @@ export declare const catchTags: {
           ? E
           : never
       }[keyof Cases],
-    | A
+    | R
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer _E, infer A>
-          ? A
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer R, infer _E, infer _A>
+          ? R
           : never
       }[keyof Cases]
   >

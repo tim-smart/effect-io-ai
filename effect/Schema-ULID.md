@@ -16,5 +16,5 @@ Schema.ULID
 **Signature**
 
 ```ts
-export declare const ULID: Schema<never, string, string>
+export declare const ULID: Schema<string, string, never>
 ```

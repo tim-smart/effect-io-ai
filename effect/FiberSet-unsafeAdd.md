@@ -14,7 +14,7 @@ FiberSet.unsafeAdd
 
 ```ts
 export declare const unsafeAdd: {
-  <E, A, XE extends E, XA extends A>(fiber: Fiber.RuntimeFiber<XE, XA>): (self: FiberSet<E, A>) => void
-  <E, A, XE extends E, XA extends A>(self: FiberSet<E, A>, fiber: Fiber.RuntimeFiber<XE, XA>): void
+  <A, E, XE extends E, XA extends A>(fiber: Fiber.RuntimeFiber<XA, XE>): (self: FiberSet<A, E>) => void
+  <A, E, XE extends E, XA extends A>(self: FiberSet<A, E>, fiber: Fiber.RuntimeFiber<XA, XE>): void
 }
 ```

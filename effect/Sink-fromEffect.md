@@ -13,5 +13,5 @@ Sink.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <R, E, Z>(effect: Effect.Effect<R, E, Z>) => Sink<R, E, unknown, never, Z>
+export declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Sink<A, unknown, never, E, R>
 ```

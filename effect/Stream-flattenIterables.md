@@ -14,5 +14,5 @@ Stream.flattenIterables
 **Signature**
 
 ```ts
-export declare const flattenIterables: <R, E, A>(self: Stream<R, E, Iterable<A>>) => Stream<R, E, A>
+export declare const flattenIterables: <A, E, R>(self: Stream<Iterable<A>, E, R>) => Stream<A, E, R>
 ```

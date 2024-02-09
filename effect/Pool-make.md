@@ -16,8 +16,8 @@ Pool.make
 **Signature**
 
 ```ts
-export declare const make: <R, E, A>(options: {
-  readonly acquire: Effect.Effect<R, E, A>
+export declare const make: <A, E, R>(options: {
+  readonly acquire: Effect.Effect<A, E, R>
   readonly size: number
-}) => Effect.Effect<Scope.Scope | R, never, Pool<E, A>>
+}) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
 ```

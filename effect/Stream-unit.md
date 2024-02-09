@@ -13,5 +13,5 @@ Stream.unit
 **Signature**
 
 ```ts
-export declare const unit: Stream<never, never, void>
+export declare const unit: Stream<void, never, never>
 ```

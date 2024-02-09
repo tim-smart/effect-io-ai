@@ -18,19 +18,19 @@ Stream.zipWithChunks
 ```ts
 export declare const zipWithChunks: {
   <R2, E2, A2, A, A3>(
-    that: Stream<R2, E2, A2>,
+    that: Stream<A2, E2, R2>,
     f: (
       left: Chunk.Chunk<A>,
       right: Chunk.Chunk<A2>
     ) => readonly [Chunk.Chunk<A3>, Either.Either<Chunk.Chunk<A>, Chunk.Chunk<A2>>]
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A3>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
   <R, E, R2, E2, A2, A, A3>(
-    self: Stream<R, E, A>,
-    that: Stream<R2, E2, A2>,
+    self: Stream<A, E, R>,
+    that: Stream<A2, E2, R2>,
     f: (
       left: Chunk.Chunk<A>,
       right: Chunk.Chunk<A2>
     ) => readonly [Chunk.Chunk<A3>, Either.Either<Chunk.Chunk<A>, Chunk.Chunk<A2>>]
-  ): Stream<R | R2, E | E2, A3>
+  ): Stream<A3, E | E2, R | R2>
 }
 ```

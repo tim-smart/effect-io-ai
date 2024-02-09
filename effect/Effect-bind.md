@@ -14,14 +14,14 @@ Effect.bind
 
 ```ts
 export declare const bind: {
-  <N extends string, K, R2, E2, A>(
+  <N extends string, K, A, E2, R2>(
     tag: Exclude<N, keyof K>,
-    f: (_: K) => Effect<R2, E2, A>
-  ): <R, E>(self: Effect<R, E, K>) => Effect<R2 | R, E2 | E, MergeRecord<K, { [k in N]: A }>>
-  <R, E, N extends string, K, R2, E2, A>(
-    self: Effect<R, E, K>,
+    f: (_: K) => Effect<A, E2, R2>
+  ): <E, R>(self: Effect<K, E, R>) => Effect<MergeRecord<K, { [k in N]: A }>, E2 | E, R2 | R>
+  <K, E, R, N extends string, A, E2, R2>(
+    self: Effect<K, E, R>,
     tag: Exclude<N, keyof K>,
-    f: (_: K) => Effect<R2, E2, A>
-  ): Effect<R | R2, E | E2, MergeRecord<K, { [k in N]: A }>>
+    f: (_: K) => Effect<A, E2, R2>
+  ): Effect<MergeRecord<K, { [k in N]: A }>, E | E2, R | R2>
 }
 ```

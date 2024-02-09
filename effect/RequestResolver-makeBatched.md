@@ -15,6 +15,6 @@ RequestResolver.makeBatched
 
 ```ts
 export declare const makeBatched: <R, A extends Request.Request<any, any>>(
-  run: (requests: A[]) => Effect.Effect<R, never, void>
+  run: (requests: A[]) => Effect.Effect<void, never, R>
 ) => RequestResolver<A, R>
 ```

@@ -13,5 +13,5 @@ Layer.setTracer
 **Signature**
 
 ```ts
-export declare const setTracer: (tracer: Tracer.Tracer) => Layer<never, never, never>
+export declare const setTracer: (tracer: Tracer.Tracer) => Layer<never>
 ```

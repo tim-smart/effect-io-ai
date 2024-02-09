@@ -13,5 +13,5 @@ Stream.concatAll
 **Signature**
 
 ```ts
-export declare const concatAll: <R, E, A>(streams: Chunk.Chunk<Stream<R, E, A>>) => Stream<R, E, A>
+export declare const concatAll: <A, E, R>(streams: Chunk.Chunk<Stream<A, E, R>>) => Stream<A, E, R>
 ```

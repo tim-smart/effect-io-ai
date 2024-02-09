@@ -13,5 +13,5 @@ Stream.range
 **Signature**
 
 ```ts
-export declare const range: (min: number, max: number, chunkSize?: number) => Stream<never, never, number>
+export declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```

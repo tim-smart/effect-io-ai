@@ -14,5 +14,5 @@ TPriorityQueue.peek
 **Signature**
 
 ```ts
-export declare const peek: <A>(self: TPriorityQueue<A>) => STM.STM<never, never, A>
+export declare const peek: <A>(self: TPriorityQueue<A>) => STM.STM<A, never, never>
 ```

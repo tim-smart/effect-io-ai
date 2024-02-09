@@ -13,5 +13,5 @@ TestServices.samples
 **Signature**
 
 ```ts
-export declare const samples: Effect.Effect<never, never, number>
+export declare const samples: Effect.Effect<number, never, never>
 ```

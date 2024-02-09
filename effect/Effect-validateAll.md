@@ -18,39 +18,43 @@ Effect.validateAll
 
 ```ts
 export declare const validateAll: {
-  <R, E, A, B>(
-    f: (a: A, i: number) => Effect<R, E, B>,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard?: false | undefined
-    }
-  ): (elements: Iterable<A>) => Effect<R, E[], B[]>
-  <R, E, A, B>(
-    f: (a: A, i: number) => Effect<R, E, B>,
+  <A, B, E, R>(
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly discard?: false | undefined
+        }
+      | undefined
+  ): (elements: Iterable<A>) => Effect<B[], E[], R>
+  <A, B, E, R>(
+    f: (a: A, i: number) => Effect<B, E, R>,
     options: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
     }
-  ): (elements: Iterable<A>) => Effect<R, E[], void>
-  <R, E, A, B>(
+  ): (elements: Iterable<A>) => Effect<void, E[], R>
+  <A, B, E, R>(
     elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<R, E, B>,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard?: false | undefined
-    }
-  ): Effect<R, E[], B[]>
-  <R, E, A, B>(
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly discard?: false | undefined
+        }
+      | undefined
+  ): Effect<B[], E[], R>
+  <A, B, E, R>(
     elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<R, E, B>,
+    f: (a: A, i: number) => Effect<B, E, R>,
     options: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
     }
-  ): Effect<R, E[], void>
+  ): Effect<void, E[], R>
 }
 ```

@@ -15,74 +15,74 @@ Channel.foldCauseChannel
 ```ts
 export declare const foldCauseChannel: {
   <
-    Env1,
-    Env2,
-    InErr1,
-    InErr2,
-    InElem1,
-    InElem2,
-    InDone1,
-    InDone2,
     OutErr,
-    OutErr2,
-    OutErr3,
     OutElem1,
-    OutElem2,
-    OutDone,
+    InElem1,
+    OutErr2,
+    InErr1,
     OutDone2,
-    OutDone3
+    InDone1,
+    Env1,
+    OutDone,
+    OutElem2,
+    InElem2,
+    OutErr3,
+    InErr2,
+    OutDone3,
+    InDone2,
+    Env2
   >(options: {
-    readonly onFailure: (c: Cause.Cause<OutErr>) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>
-    readonly onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
+    readonly onFailure: (c: Cause.Cause<OutErr>) => Channel<OutElem1, InElem1, OutErr2, InErr1, OutDone2, InDone1, Env1>
+    readonly onSuccess: (o: OutDone) => Channel<OutElem2, InElem2, OutErr3, InErr2, OutDone3, InDone2, Env2>
   }): <Env, InErr, InElem, InDone, OutElem>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
   ) => Channel<
-    Env1 | Env2 | Env,
-    InErr & InErr1 & InErr2,
-    InElem & InElem1 & InElem2,
-    InDone & InDone1 & InDone2,
-    OutErr2 | OutErr3,
     OutElem1 | OutElem2 | OutElem,
-    OutDone2 | OutDone3
+    InElem & InElem1 & InElem2,
+    OutErr2 | OutErr3,
+    InErr & InErr1 & InErr2,
+    OutDone2 | OutDone3,
+    InDone & InDone1 & InDone2,
+    Env1 | Env2 | Env
   >
   <
-    Env,
-    InErr,
-    InElem,
-    InDone,
     OutElem,
-    Env1,
-    Env2,
-    InErr1,
-    InErr2,
-    InElem1,
-    InElem2,
-    InDone1,
-    InDone2,
+    InElem,
     OutErr,
-    OutErr2,
-    OutErr3,
-    OutElem1,
-    OutElem2,
+    InErr,
     OutDone,
+    InDone,
+    Env,
+    OutElem1,
+    InElem1,
+    OutErr2,
+    InErr1,
     OutDone2,
-    OutDone3
+    InDone1,
+    Env1,
+    OutElem2,
+    InElem2,
+    OutErr3,
+    InErr2,
+    OutDone3,
+    InDone2,
+    Env2
   >(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     options: {
       readonly onFailure: (
         c: Cause.Cause<OutErr>
-      ) => Channel<Env1, InErr1, InElem1, InDone1, OutErr2, OutElem1, OutDone2>
-      readonly onSuccess: (o: OutDone) => Channel<Env2, InErr2, InElem2, InDone2, OutErr3, OutElem2, OutDone3>
+      ) => Channel<OutElem1, InElem1, OutErr2, InErr1, OutDone2, InDone1, Env1>
+      readonly onSuccess: (o: OutDone) => Channel<OutElem2, InElem2, OutErr3, InErr2, OutDone3, InDone2, Env2>
     }
   ): Channel<
-    Env | Env1 | Env2,
-    InErr & InErr1 & InErr2,
-    InElem & InElem1 & InElem2,
-    InDone & InDone1 & InDone2,
-    OutErr2 | OutErr3,
     OutElem | OutElem1 | OutElem2,
-    OutDone2 | OutDone3
+    InElem & InElem1 & InElem2,
+    OutErr2 | OutErr3,
+    InErr & InErr1 & InErr2,
+    OutDone2 | OutDone3,
+    InDone & InDone1 & InDone2,
+    Env | Env1 | Env2
   >
 }
 ```

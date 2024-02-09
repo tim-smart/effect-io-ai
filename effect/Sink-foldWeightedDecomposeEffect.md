@@ -24,11 +24,11 @@ Sink.foldWeightedDecomposeEffect
 **Signature**
 
 ```ts
-export declare const foldWeightedDecomposeEffect: <S, In, R, E, R2, E2, R3, E3>(options: {
+export declare const foldWeightedDecomposeEffect: <S, In, E, R, E2, R2, E3, R3>(options: {
   readonly initial: S
   readonly maxCost: number
-  readonly cost: (s: S, input: In) => Effect.Effect<R, E, number>
-  readonly decompose: (input: In) => Effect.Effect<R2, E2, Chunk.Chunk<In>>
-  readonly body: (s: S, input: In) => Effect.Effect<R3, E3, S>
-}) => Sink<R | R2 | R3, E | E2 | E3, In, In, S>
+  readonly cost: (s: S, input: In) => Effect.Effect<number, E, R>
+  readonly decompose: (input: In) => Effect.Effect<Chunk.Chunk<In>, E2, R2>
+  readonly body: (s: S, input: In) => Effect.Effect<S, E3, R3>
+}) => Sink<S, In, In, E | E2 | E3, R | R2 | R3>
 ```

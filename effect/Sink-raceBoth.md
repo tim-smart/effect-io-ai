@@ -15,14 +15,14 @@ Sink.raceBoth
 
 ```ts
 export declare const raceBoth: {
-  <R1, E1, In1, L1, Z1>(
-    that: Sink<R1, E1, In1, L1, Z1>,
-    options?: { readonly capacity?: number | undefined }
-  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R1 | R, E1 | E, In & In1, L1 | L, Either.Either<Z, Z1>>
-  <R, E, In, L, Z, R1, E1, In1, L1, Z1>(
-    self: Sink<R, E, In, L, Z>,
-    that: Sink<R1, E1, In1, L1, Z1>,
-    options?: { readonly capacity?: number | undefined }
-  ): Sink<R | R1, E | E1, In & In1, L | L1, Either.Either<Z, Z1>>
+  <A1, In1, L1, E1, R1>(
+    that: Sink<A1, In1, L1, E1, R1>,
+    options?: { readonly capacity?: number | undefined } | undefined
+  ): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<Either.Either<A, A1>, In & In1, L1 | L, E1 | E, R1 | R>
+  <A, In, L, E, R, A1, In1, L1, E1, R1>(
+    self: Sink<A, In, L, E, R>,
+    that: Sink<A1, In1, L1, E1, R1>,
+    options?: { readonly capacity?: number | undefined } | undefined
+  ): Sink<Either.Either<A, A1>, In & In1, L | L1, E | E1, R | R1>
 }
 ```

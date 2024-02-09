@@ -17,7 +17,7 @@ Effect.repeatN
 
 ```ts
 export declare const repeatN: {
-  (n: number): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(self: Effect<R, E, A>, n: number): Effect<R, E, A>
+  (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>
 }
 ```

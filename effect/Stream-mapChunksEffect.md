@@ -15,11 +15,11 @@ Stream.mapChunksEffect
 ```ts
 export declare const mapChunksEffect: {
   <A, R2, E2, B>(
-    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, Chunk.Chunk<B>>
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, B>
+    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<Chunk.Chunk<B>, E2, R2>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<B, E2 | E, R2 | R>
   <R, E, A, R2, E2, B>(
-    self: Stream<R, E, A>,
-    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, Chunk.Chunk<B>>
-  ): Stream<R | R2, E | E2, B>
+    self: Stream<A, E, R>,
+    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<Chunk.Chunk<B>, E2, R2>
+  ): Stream<B, E | E2, R | R2>
 }
 ```

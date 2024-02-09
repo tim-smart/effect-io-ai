@@ -18,13 +18,13 @@ STM.acquireUseRelease
 ```ts
 export declare const acquireUseRelease: {
   <A, R2, E2, A2, R3, E3, A3>(
-    use: (resource: A) => STM<R2, E2, A2>,
-    release: (resource: A) => STM<R3, E3, A3>
-  ): <R, E>(acquire: STM<R, E, A>) => Effect.Effect<R2 | R3 | R, E2 | E3 | E, A2>
+    use: (resource: A) => STM<A2, E2, R2>,
+    release: (resource: A) => STM<A3, E3, R3>
+  ): <R, E>(acquire: STM<A, E, R>) => Effect.Effect<A2, E2 | E3 | E, R2 | R3 | R>
   <R, E, A, R2, E2, A2, R3, E3, A3>(
-    acquire: STM<R, E, A>,
-    use: (resource: A) => STM<R2, E2, A2>,
-    release: (resource: A) => STM<R3, E3, A3>
-  ): Effect.Effect<R | R2 | R3, E | E2 | E3, A2>
+    acquire: STM<A, E, R>,
+    use: (resource: A) => STM<A2, E2, R2>,
+    release: (resource: A) => STM<A3, E3, R3>
+  ): Effect.Effect<A2, E | E2 | E3, R | R2 | R3>
 }
 ```

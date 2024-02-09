@@ -14,7 +14,7 @@ Sink.collectLeftover
 **Signature**
 
 ```ts
-export declare const collectLeftover: <R, E, In, L, Z>(
-  self: Sink<R, E, In, L, Z>
-) => Sink<R, E, In, never, [Z, Chunk.Chunk<L>]>
+export declare const collectLeftover: <A, In, L, E, R>(
+  self: Sink<A, In, L, E, R>
+) => Sink<[A, Chunk.Chunk<L>], In, never, E, R>
 ```

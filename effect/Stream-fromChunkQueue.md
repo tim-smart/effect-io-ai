@@ -16,5 +16,5 @@ Stream.fromChunkQueue
 export declare const fromChunkQueue: <A>(
   queue: Queue.Dequeue<Chunk.Chunk<A>>,
   options?: { readonly shutdown?: boolean | undefined }
-) => Stream<never, never, A>
+) => Stream<A, never, never>
 ```

@@ -16,13 +16,13 @@ TArray.findFirstIndexWhereFromSTM
 ```ts
 export declare const findFirstIndexWhereFromSTM: {
   <A, R, E>(
-    predicate: (value: A) => STM.STM<R, E, boolean>,
+    predicate: (value: A) => STM.STM<boolean, E, R>,
     from: number
-  ): (self: TArray<A>) => STM.STM<R, E, Option.Option<number>>
+  ): (self: TArray<A>) => STM.STM<Option.Option<number>, E, R>
   <A, R, E>(
     self: TArray<A>,
-    predicate: (value: A) => STM.STM<R, E, boolean>,
+    predicate: (value: A) => STM.STM<boolean, E, R>,
     from: number
-  ): STM.STM<R, E, Option.Option<number>>
+  ): STM.STM<Option.Option<number>, E, R>
 }
 ```

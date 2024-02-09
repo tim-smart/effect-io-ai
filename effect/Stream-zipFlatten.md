@@ -18,11 +18,11 @@ Stream.zipFlatten
 ```ts
 export declare const zipFlatten: {
   <R2, E2, A2>(
-    that: Stream<R2, E2, A2>
-  ): <R, E, A extends readonly any[]>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, [...A, A2]>
+    that: Stream<A2, E2, R2>
+  ): <R, E, A extends readonly any[]>(self: Stream<A, E, R>) => Stream<[...A, A2], E2 | E, R2 | R>
   <R, E, A extends readonly any[], R2, E2, A2>(
-    self: Stream<R, E, A>,
-    that: Stream<R2, E2, A2>
-  ): Stream<R | R2, E | E2, [...A, A2]>
+    self: Stream<A, E, R>,
+    that: Stream<A2, E2, R2>
+  ): Stream<[...A, A2], E | E2, R | R2>
 }
 ```

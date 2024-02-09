@@ -14,5 +14,5 @@ Deferred.isDone
 **Signature**
 
 ```ts
-export declare const isDone: <E, A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
+export declare const isDone: <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>
 ```

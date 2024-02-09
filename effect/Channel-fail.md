@@ -13,5 +13,5 @@ Channel.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Channel<never, unknown, unknown, unknown, E, never, never>
+export declare const fail: <E>(error: E) => Channel<never, unknown, E, unknown, never, unknown, never>
 ```

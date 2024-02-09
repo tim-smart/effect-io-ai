@@ -13,5 +13,5 @@ Effect.forever
 **Signature**
 
 ```ts
-export declare const forever: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, never>
+export declare const forever: <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
 ```

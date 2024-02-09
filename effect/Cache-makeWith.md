@@ -18,6 +18,6 @@ Cache.makeWith
 export declare const makeWith: <Key, Environment, Error, Value>(options: {
   readonly capacity: number
   readonly lookup: Lookup<Key, Environment, Error, Value>
-  readonly timeToLive: (exit: Exit.Exit<Error, Value>) => Duration.DurationInput
-}) => Effect.Effect<Environment, never, Cache<Key, Error, Value>>
+  readonly timeToLive: (exit: Exit.Exit<Value, Error>) => Duration.DurationInput
+}) => Effect.Effect<Cache<Key, Error, Value>, never, Environment>
 ```

@@ -15,14 +15,14 @@ Effect.mapAccum
 
 ```ts
 export declare const mapAccum: {
-  <A, B, R, E, Z>(
-    zero: Z,
-    f: (z: Z, a: A, i: number) => Effect<R, E, readonly [Z, B]>
-  ): (elements: Iterable<A>) => Effect<R, E, [Z, B[]]>
-  <A, B, R, E, Z>(
+  <S, A, B, E, R>(
+    zero: S,
+    f: (s: S, a: A, i: number) => Effect<readonly [S, B], E, R>
+  ): (elements: Iterable<A>) => Effect<[S, B[]], E, R>
+  <A, S, B, E, R>(
     elements: Iterable<A>,
-    zero: Z,
-    f: (z: Z, a: A, i: number) => Effect<R, E, readonly [Z, B]>
-  ): Effect<R, E, [Z, B[]]>
+    zero: S,
+    f: (s: S, a: A, i: number) => Effect<readonly [S, B], E, R>
+  ): Effect<[S, B[]], E, R>
 }
 ```

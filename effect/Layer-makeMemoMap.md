@@ -13,5 +13,5 @@ Layer.makeMemoMap
 **Signature**
 
 ```ts
-export declare const makeMemoMap: Effect.Effect<never, never, MemoMap>
+export declare const makeMemoMap: Effect.Effect<MemoMap, never, never>
 ```

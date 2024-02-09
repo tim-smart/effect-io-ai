@@ -29,5 +29,5 @@ type Int = Schema.Schema.To<typeof Int> // number & Brand<"Int">
 export declare const brand: <B extends string | symbol, A>(
   brand: B,
   options?: DocAnnotations
-) => <I>(self: Schema<never, I, A>) => BrandSchema<never, I, A & Brand.Brand<B>>
+) => <I>(self: Schema<A, I, never>) => BrandSchema<A & Brand.Brand<B>, I, never>
 ```

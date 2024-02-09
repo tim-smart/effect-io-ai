@@ -15,13 +15,16 @@ Stream.flatten
 
 ```ts
 export declare const flatten: {
-  (options?: {
-    readonly concurrency?: number | "unbounded" | undefined
-    readonly bufferSize?: number | undefined
-  }): <R, E, R2, E2, A>(self: Stream<R, E, Stream<R2, E2, A>>) => Stream<R | R2, E | E2, A>
+  (
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
+      | undefined
+  ): <R, E, R2, E2, A>(self: Stream<Stream<A, E2, R2>, E, R>) => Stream<A, E | E2, R | R2>
   <R, E, R2, E2, A>(
-    self: Stream<R, E, Stream<R2, E2, A>>,
-    options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
-  ): Stream<R | R2, E | E2, A>
+    self: Stream<Stream<A, E2, R2>, E, R>,
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
+      | undefined
+  ): Stream<A, E | E2, R | R2>
 }
 ```

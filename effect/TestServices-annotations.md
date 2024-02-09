@@ -13,5 +13,5 @@ TestServices.annotations
 **Signature**
 
 ```ts
-export declare const annotations: () => Effect.Effect<never, never, Annotations.TestAnnotations>
+export declare const annotations: () => Effect.Effect<Annotations.TestAnnotations>
 ```

@@ -14,5 +14,5 @@ Effect.eventually
 **Signature**
 
 ```ts
-export declare const eventually: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, A>
+export declare const eventually: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```

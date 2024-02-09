@@ -13,7 +13,7 @@ Stream.fromChannel
 **Signature**
 
 ```ts
-export declare const fromChannel: <R, E, A>(
-  channel: Channel.Channel<R, unknown, unknown, unknown, E, Chunk.Chunk<A>, unknown>
-) => Stream<R, E, A>
+export declare const fromChannel: <A, E, R>(
+  channel: Channel.Channel<Chunk.Chunk<A>, unknown, E, unknown, unknown, unknown, R>
+) => Stream<A, E, R>
 ```

@@ -13,5 +13,5 @@ Layer.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Layer<never, never, unknown>
+export declare const die: (defect: unknown) => Layer<unknown>
 ```

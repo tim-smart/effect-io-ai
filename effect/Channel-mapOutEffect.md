@@ -15,14 +15,14 @@ Channel.mapOutEffect
 
 ```ts
 export declare const mapOutEffect: {
-  <OutElem, Env1, OutErr1, OutElem1>(
-    f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>
-  ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr1 | OutErr, OutElem1, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutDone, OutElem, Env1, OutErr1, OutElem1>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    f: (o: OutElem) => Effect.Effect<Env1, OutErr1, OutElem1>
-  ): Channel<Env | Env1, InErr, InElem, InDone, OutErr | OutErr1, OutElem1, OutDone>
+  <OutElem, OutElem1, OutErr1, Env1>(
+    f: (o: OutElem) => Effect.Effect<OutElem1, OutErr1, Env1>
+  ): <InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem1, InElem, OutErr1 | OutErr, InErr, OutDone, InDone, Env1 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem1, OutErr1, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    f: (o: OutElem) => Effect.Effect<OutElem1, OutErr1, Env1>
+  ): Channel<OutElem1, InElem, OutErr | OutErr1, InErr, OutDone, InDone, Env | Env1>
 }
 ```

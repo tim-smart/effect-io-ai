@@ -18,10 +18,10 @@ export declare const bufferChunks: {
   (options: {
     readonly capacity: number
     readonly strategy?: "dropping" | "sliding" | "suspend" | undefined
-  }): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+  }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     options: { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
-  ): Stream<R, E, A>
+  ): Stream<A, E, R>
 }
 ```

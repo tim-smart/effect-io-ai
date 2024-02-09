@@ -16,5 +16,5 @@ Runtime.runSyncExit
 **Signature**
 
 ```ts
-export declare const runSyncExit: <R>(runtime: Runtime<R>) => <E, A>(effect: Effect.Effect<R, E, A>) => Exit.Exit<E, A>
+export declare const runSyncExit: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => Exit.Exit<A, E>
 ```

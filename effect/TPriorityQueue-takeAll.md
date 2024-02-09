@@ -13,5 +13,5 @@ TPriorityQueue.takeAll
 **Signature**
 
 ```ts
-export declare const takeAll: <A>(self: TPriorityQueue<A>) => STM.STM<never, never, A[]>
+export declare const takeAll: <A>(self: TPriorityQueue<A>) => STM.STM<A[], never, never>
 ```

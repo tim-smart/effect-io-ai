@@ -14,5 +14,5 @@ Fiber.inheritAll
 **Signature**
 
 ```ts
-export declare const inheritAll: <E, A>(self: Fiber<E, A>) => Effect.Effect<never, never, void>
+export declare const inheritAll: <A, E>(self: Fiber<A, E>) => Effect.Effect<void>
 ```

@@ -14,16 +14,16 @@ Sink.foldSink
 
 ```ts
 export declare const foldSink: {
-  <R1, R2, E, E1, E2, In, In1 extends In, In2 extends In, L, L1, L2, Z, Z1, Z2>(options: {
-    readonly onFailure: (err: E) => Sink<R1, E1, In1, L1, Z1>
-    readonly onSuccess: (z: Z) => Sink<R2, E2, In2, L2, Z2>
-  }): <R>(self: Sink<R, E, In, L, Z>) => Sink<R1 | R2 | R, E1 | E2, In1 & In2, L1 | L2, Z1 | Z2>
-  <R, R1, R2, E, E1, E2, In, In1 extends In, In2 extends In, L, L1, L2, Z, Z1, Z2>(
-    self: Sink<R, E, In, L, Z>,
+  <E, A1, In, In1 extends In, L1, E1, R1, A, A2, In2 extends In, L2, E2, R2>(options: {
+    readonly onFailure: (err: E) => Sink<A1, In1, L1, E1, R1>
+    readonly onSuccess: (a: A) => Sink<A2, In2, L2, E2, R2>
+  }): <L, R>(self: Sink<A, In, L, E, R>) => Sink<A1 | A2, In1 & In2, L1 | L2, E1 | E2, R1 | R2 | R>
+  <A, In, L, E, R, A1, In1 extends In, L1, E1, R1, A2, In2 extends In, L2, E2, R2>(
+    self: Sink<A, In, L, E, R>,
     options: {
-      readonly onFailure: (err: E) => Sink<R1, E1, In1, L1, Z1>
-      readonly onSuccess: (z: Z) => Sink<R2, E2, In2, L2, Z2>
+      readonly onFailure: (err: E) => Sink<A1, In1, L1, E1, R1>
+      readonly onSuccess: (a: A) => Sink<A2, In2, L2, E2, R2>
     }
-  ): Sink<R | R1 | R2, E1 | E2, In1 & In2, L1 | L2, Z1 | Z2>
+  ): Sink<A1 | A2, In1 & In2, L1 | L2, E1 | E2, R | R1 | R2>
 }
 ```

@@ -14,7 +14,7 @@ STM.as
 
 ```ts
 export declare const as: {
-  <A2>(value: A2): <R, E, A>(self: STM<R, E, A>) => STM<R, E, A2>
-  <R, E, A, A2>(self: STM<R, E, A>, value: A2): STM<R, E, A2>
+  <A2>(value: A2): <A, E, R>(self: STM<A, E, R>) => STM<A2, E, R>
+  <R, E, A, A2>(self: STM<A, E, R>, value: A2): STM<A2, E, R>
 }
 ```

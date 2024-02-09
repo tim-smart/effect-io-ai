@@ -13,5 +13,5 @@ STM.unsome
 **Signature**
 
 ```ts
-export declare const unsome: <R, E, A>(self: STM<R, Option.Option<E>, A>) => STM<R, E, Option.Option<A>>
+export declare const unsome: <A, E, R>(self: STM<A, Option.Option<E>, R>) => STM<Option.Option<A>, E, R>
 ```

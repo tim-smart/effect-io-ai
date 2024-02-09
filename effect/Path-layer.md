@@ -16,5 +16,5 @@ Path.layer
 **Signature**
 
 ```ts
-export declare const layer: Layer<never, never, Path>
+export declare const layer: Layer<Path, never, never>
 ```

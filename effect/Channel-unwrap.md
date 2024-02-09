@@ -13,7 +13,7 @@ Channel.unwrap
 **Signature**
 
 ```ts
-export declare const unwrap: <R, E, R2, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  channel: Effect.Effect<R, E, Channel<R2, InErr, InElem, InDone, OutErr, OutElem, OutDone>>
-) => Channel<R | R2, InErr, InElem, InDone, E | OutErr, OutElem, OutDone>
+export declare const unwrap: <OutElem, InElem, OutErr, InErr, OutDone, InDone, R2, E, R>(
+  channel: Effect.Effect<Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>, E, R>
+) => Channel<OutElem, InElem, OutErr | E, InErr, OutDone, InDone, R2 | R>
 ```

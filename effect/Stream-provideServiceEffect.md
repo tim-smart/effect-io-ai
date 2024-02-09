@@ -17,12 +17,12 @@ Stream.provideServiceEffect
 export declare const provideServiceEffect: {
   <T extends Context.Tag<any, any>, R2, E2>(
     tag: T,
-    effect: Effect.Effect<R2, E2, Context.Tag.Service<T>>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | Exclude<R, Context.Tag.Identifier<T>>, E2 | E, A>
+    effect: Effect.Effect<Context.Tag.Service<T>, E2, R2>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | Exclude<R, Context.Tag.Identifier<T>>>
   <R, E, A, T extends Context.Tag<any, any>, R2, E2>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     tag: T,
-    effect: Effect.Effect<R2, E2, Context.Tag.Service<T>>
-  ): Stream<R2 | Exclude<R, Context.Tag.Identifier<T>>, E | E2, A>
+    effect: Effect.Effect<Context.Tag.Service<T>, E2, R2>
+  ): Stream<A, E | E2, R2 | Exclude<R, Context.Tag.Identifier<T>>>
 }
 ```

@@ -16,7 +16,7 @@ Channel.runCollect
 **Signature**
 
 ```ts
-export declare const runCollect: <Env, InErr, InDone, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, unknown, InDone, OutErr, OutElem, OutDone>
-) => Effect.Effect<Env, OutErr, [Chunk.Chunk<OutElem>, OutDone]>
+export declare const runCollect: <OutElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, Env>
+) => Effect.Effect<[Chunk.Chunk<OutElem>, OutDone], OutErr, Env>
 ```

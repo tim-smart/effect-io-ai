@@ -15,11 +15,11 @@ Stream.ensuringWith
 ```ts
 export declare const ensuringWith: {
   <E, R2>(
-    finalizer: (exit: Exit.Exit<E, unknown>) => Effect.Effect<R2, never, unknown>
-  ): <R, A>(self: Stream<R, E, A>) => Stream<R2 | R, E, A>
+    finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>
+  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
   <R, E, A, R2>(
-    self: Stream<R, E, A>,
-    finalizer: (exit: Exit.Exit<E, unknown>) => Effect.Effect<R2, never, unknown>
-  ): Stream<R | R2, E, A>
+    self: Stream<A, E, R>,
+    finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>
+  ): Stream<A, E, R | R2>
 }
 ```

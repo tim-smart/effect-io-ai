@@ -14,7 +14,7 @@ Channel.drain
 **Signature**
 
 ```ts
-export declare const drain: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-) => Channel<Env, InErr, InElem, InDone, OutErr, never, OutDone>
+export declare const drain: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+) => Channel<never, InElem, OutErr, InErr, OutDone, InDone, Env>
 ```

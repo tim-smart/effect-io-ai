@@ -14,7 +14,7 @@ Sink.as
 
 ```ts
 export declare const as: {
-  <Z2>(z: Z2): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, L, Z2>
-  <R, E, In, L, Z, Z2>(self: Sink<R, E, In, L, Z>, z: Z2): Sink<R, E, In, L, Z2>
+  <A2>(a: A2): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A2, In, L, E, R>
+  <A, In, L, E, R, A2>(self: Sink<A, In, L, E, R>, a: A2): Sink<A2, In, L, E, R>
 }
 ```

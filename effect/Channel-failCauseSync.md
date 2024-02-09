@@ -16,5 +16,5 @@ Channel.failCauseSync
 ```ts
 export declare const failCauseSync: <E>(
   evaluate: LazyArg<Cause.Cause<E>>
-) => Channel<never, unknown, unknown, unknown, E, never, never>
+) => Channel<never, unknown, E, unknown, never, unknown, never>
 ```

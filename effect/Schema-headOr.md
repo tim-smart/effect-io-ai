@@ -15,8 +15,8 @@ Schema.headOr
 **Signature**
 
 ```ts
-export declare const headOr: <R, I, A>(
-  self: Schema<R, I, readonly A[]>,
+export declare const headOr: <A, I, R>(
+  self: Schema<readonly A[], I, R>,
   fallback?: LazyArg<A> | undefined
-) => Schema<R, I, A>
+) => Schema<A, I, R>
 ```

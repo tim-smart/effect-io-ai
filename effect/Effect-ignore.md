@@ -13,5 +13,5 @@ Effect.ignore
 **Signature**
 
 ```ts
-export declare const ignore: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, void>
+export declare const ignore: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```

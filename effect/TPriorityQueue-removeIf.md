@@ -14,7 +14,7 @@ TPriorityQueue.removeIf
 
 ```ts
 export declare const removeIf: {
-  <A>(predicate: Predicate<A>): (self: TPriorityQueue<A>) => STM.STM<never, never, void>
-  <A>(self: TPriorityQueue<A>, predicate: Predicate<A>): STM.STM<never, never, void>
+  <A>(predicate: Predicate<A>): (self: TPriorityQueue<A>) => STM.STM<void>
+  <A>(self: TPriorityQueue<A>, predicate: Predicate<A>): STM.STM<void>
 }
 ```

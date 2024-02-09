@@ -16,6 +16,6 @@ TestServices.withAnnotations
 ```ts
 export declare const withAnnotations: ((
   annotations: Annotations.TestAnnotations
-) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>) &
-  (<R, E, A>(effect: Effect.Effect<R, E, A>, annotations: Annotations.TestAnnotations) => Effect.Effect<R, E, A>)
+) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) &
+  (<A, E, R>(effect: Effect.Effect<A, E, R>, annotations: Annotations.TestAnnotations) => Effect.Effect<A, E, R>)
 ```

@@ -18,10 +18,10 @@ export declare const intersperseAffixes: {
     readonly start: A2
     readonly middle: A3
     readonly end: A4
-  }): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A2 | A3 | A4 | A>
+  }): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A3 | A4 | A, E, R>
   <R, E, A, A2, A3, A4>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     options: { readonly start: A2; readonly middle: A3; readonly end: A4 }
-  ): Stream<R, E, A | A2 | A3 | A4>
+  ): Stream<A | A2 | A3 | A4, E, R>
 }
 ```

@@ -14,5 +14,5 @@ Effect.checkInterruptible
 **Signature**
 
 ```ts
-export declare const checkInterruptible: <R, E, A>(f: (isInterruptible: boolean) => Effect<R, E, A>) => Effect<R, E, A>
+export declare const checkInterruptible: <A, E, R>(f: (isInterruptible: boolean) => Effect<A, E, R>) => Effect<A, E, R>
 ```

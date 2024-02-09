@@ -14,5 +14,5 @@ Random.randomWith
 **Signature**
 
 ```ts
-export declare const randomWith: <R, E, A>(f: (random: Random) => Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+export declare const randomWith: <A, E, R>(f: (random: Random) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```

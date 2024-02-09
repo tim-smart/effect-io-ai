@@ -15,14 +15,18 @@ Effect.partition
 
 ```ts
 export declare const partition: {
-  <R, E, A, B>(
-    f: (a: A) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): (elements: Iterable<A>) => Effect<R, never, [excluded: E[], satisfying: B[]]>
-  <R, E, A, B>(
+  <A, B, E, R>(
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): (elements: Iterable<A>) => Effect<[excluded: E[], satisfying: B[]], never, R>
+  <A, B, E, R>(
     elements: Iterable<A>,
-    f: (a: A) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R, never, [excluded: E[], satisfying: B[]]>
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<[excluded: E[], satisfying: B[]], never, R>
 }
 ```

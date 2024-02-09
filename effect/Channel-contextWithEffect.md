@@ -13,7 +13,7 @@ Channel.contextWithEffect
 **Signature**
 
 ```ts
-export declare const contextWithEffect: <Env, Env1, OutErr, OutDone>(
-  f: (env: Context.Context<Env>) => Effect.Effect<Env1, OutErr, OutDone>
-) => Channel<Env | Env1, unknown, unknown, unknown, OutErr, never, OutDone>
+export declare const contextWithEffect: <Env, OutDone, OutErr, Env1>(
+  f: (env: Context.Context<Env>) => Effect.Effect<OutDone, OutErr, Env1>
+) => Channel<never, unknown, OutErr, unknown, OutDone, unknown, Env | Env1>
 ```

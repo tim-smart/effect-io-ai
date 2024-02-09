@@ -14,7 +14,7 @@ Stream.orElseSucceed
 
 ```ts
 export declare const orElseSucceed: {
-  <A2>(value: LazyArg<A2>): <R, E, A>(self: Stream<R, E, A>) => Stream<R, never, A2 | A>
-  <R, E, A, A2>(self: Stream<R, E, A>, value: LazyArg<A2>): Stream<R, never, A | A2>
+  <A2>(value: LazyArg<A2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, never, R>
+  <R, E, A, A2>(self: Stream<A, E, R>, value: LazyArg<A2>): Stream<A | A2, never, R>
 }
 ```

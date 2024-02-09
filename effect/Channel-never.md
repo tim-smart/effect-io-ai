@@ -13,5 +13,5 @@ Channel.never
 **Signature**
 
 ```ts
-export declare const never: Channel<never, unknown, unknown, unknown, never, never, never>
+export declare const never: Channel<never, unknown, never, unknown, never, unknown, never>
 ```

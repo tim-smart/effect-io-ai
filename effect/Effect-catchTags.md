@@ -23,20 +23,20 @@ export declare const catchTags: {
     } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string }>["_tag"]>]: never })
   >(
     cases: Cases
-  ): <R, A>(
-    self: Effect<R, E, A>
+  ): <A, R>(
+    self: Effect<A, E, R>
   ) => Effect<
-    | R
+    | A
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<infer R, any, any> ? R : never
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<infer A, any, any> ? A : never
       }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
     | {
         [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, infer E, any> ? E : never
       }[keyof Cases],
-    | A
+    | R
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, any, infer A> ? A : never
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, any, infer R> ? R : never
       }[keyof Cases]
   >
   <
@@ -49,20 +49,20 @@ export declare const catchTags: {
         | undefined
     } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string }>["_tag"]>]: never })
   >(
-    self: Effect<R, E, A>,
+    self: Effect<A, E, R>,
     cases: Cases
   ): Effect<
-    | R
+    | A
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<infer R, any, any> ? R : never
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<infer A, any, any> ? A : never
       }[keyof Cases],
     | Exclude<E, { _tag: keyof Cases }>
     | {
         [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, infer E, any> ? E : never
       }[keyof Cases],
-    | A
+    | R
     | {
-        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, any, infer A> ? A : never
+        [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect<any, any, infer R> ? R : never
       }[keyof Cases]
   >
 }

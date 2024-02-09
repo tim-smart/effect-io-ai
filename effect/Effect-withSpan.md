@@ -16,24 +16,28 @@ Effect.withSpan
 export declare const withSpan: {
   (
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<Exclude<R, Tracer.ParentSpan>, E, A>
-  <R, E, A>(
-    self: Effect<R, E, A>,
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan>>
+  <A, E, R>(
+    self: Effect<A, E, R>,
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): Effect<Exclude<R, Tracer.ParentSpan>, E, A>
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): Effect<A, E, Exclude<R, Tracer.ParentSpan>>
 }
 ```

@@ -15,5 +15,5 @@ TPubSub.awaitShutdown
 **Signature**
 
 ```ts
-export declare const awaitShutdown: <A>(self: TPubSub<A>) => STM.STM<never, never, void>
+export declare const awaitShutdown: <A>(self: TPubSub<A>) => STM.STM<void>
 ```

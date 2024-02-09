@@ -19,12 +19,12 @@ export declare const project: {
     tagA: A,
     tagB: B,
     f: (a: Context.Tag.Service<A>) => Context.Tag.Service<B>
-  ): <RIn, E>(self: Layer<RIn, E, Context.Tag.Identifier<A>>) => Layer<RIn, E, Context.Tag.Identifier<B>>
+  ): <RIn, E>(self: Layer<Context.Tag.Identifier<A>, E, RIn>) => Layer<Context.Tag.Identifier<B>, E, RIn>
   <RIn, E, A extends Context.Tag<any, any>, B extends Context.Tag<any, any>>(
-    self: Layer<RIn, E, Context.Tag.Identifier<A>>,
+    self: Layer<Context.Tag.Identifier<A>, E, RIn>,
     tagA: A,
     tagB: B,
     f: (a: Context.Tag.Service<A>) => Context.Tag.Service<B>
-  ): Layer<RIn, E, Context.Tag.Identifier<B>>
+  ): Layer<Context.Tag.Identifier<B>, E, RIn>
 }
 ```

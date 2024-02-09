@@ -17,11 +17,11 @@ Schedule.onDecision
 ```ts
 export declare const onDecision: {
   <Out, Env2, X>(
-    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<Env2, never, X>
+    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, Env2>
   ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
   <Env, In, Out, Env2, X>(
     self: Schedule<Env, In, Out>,
-    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<Env2, never, X>
+    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, Env2>
   ): Schedule<Env | Env2, In, Out>
 }
 ```

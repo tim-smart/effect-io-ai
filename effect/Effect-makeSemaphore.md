@@ -13,5 +13,5 @@ Effect.makeSemaphore
 **Signature**
 
 ```ts
-export declare const makeSemaphore: (permits: number) => Effect<never, never, Semaphore>
+export declare const makeSemaphore: (permits: number) => Effect<Semaphore>
 ```

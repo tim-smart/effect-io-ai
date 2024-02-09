@@ -13,5 +13,5 @@ Take.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Take<E, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Take<never, E>
 ```

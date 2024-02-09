@@ -16,9 +16,9 @@ STM.zipWith
 ```ts
 export declare const zipWith: {
   <R1, E1, A1, A, A2>(
-    that: STM<R1, E1, A1>,
+    that: STM<A1, E1, R1>,
     f: (a: A, b: A1) => A2
-  ): <R, E>(self: STM<R, E, A>) => STM<R1 | R, E1 | E, A2>
-  <R, E, R1, E1, A1, A, A2>(self: STM<R, E, A>, that: STM<R1, E1, A1>, f: (a: A, b: A1) => A2): STM<R | R1, E | E1, A2>
+  ): <R, E>(self: STM<A, E, R>) => STM<A2, E1 | E, R1 | R>
+  <R, E, R1, E1, A1, A, A2>(self: STM<A, E, R>, that: STM<A1, E1, R1>, f: (a: A, b: A1) => A2): STM<A2, E | E1, R | R1>
 }
 ```

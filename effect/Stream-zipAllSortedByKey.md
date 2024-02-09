@@ -23,19 +23,19 @@ Stream.zipAllSortedByKey
 ```ts
 export declare const zipAllSortedByKey: {
   <R2, E2, A2, A, K>(options: {
-    readonly other: Stream<R2, E2, readonly [K, A2]>
+    readonly other: Stream<readonly [K, A2], E2, R2>
     readonly defaultSelf: A
     readonly defaultOther: A2
     readonly order: Order.Order<K>
-  }): <R, E>(self: Stream<R, E, readonly [K, A]>) => Stream<R2 | R, E2 | E, [K, [A, A2]]>
+  }): <R, E>(self: Stream<readonly [K, A], E, R>) => Stream<[K, [A, A2]], E2 | E, R2 | R>
   <R, E, R2, E2, A2, A, K>(
-    self: Stream<R, E, readonly [K, A]>,
+    self: Stream<readonly [K, A], E, R>,
     options: {
-      readonly other: Stream<R2, E2, readonly [K, A2]>
+      readonly other: Stream<readonly [K, A2], E2, R2>
       readonly defaultSelf: A
       readonly defaultOther: A2
       readonly order: Order.Order<K>
     }
-  ): Stream<R | R2, E | E2, [K, [A, A2]]>
+  ): Stream<[K, [A, A2]], E | E2, R | R2>
 }
 ```

@@ -13,5 +13,5 @@ PubSub.isShutdown
 **Signature**
 
 ```ts
-export declare const isShutdown: <A>(self: PubSub<A>) => Effect.Effect<never, never, boolean>
+export declare const isShutdown: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```

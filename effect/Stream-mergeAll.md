@@ -19,10 +19,10 @@ export declare const mergeAll: {
   (options: {
     readonly concurrency: number | "unbounded"
     readonly bufferSize?: number | undefined
-  }): <R, E, A>(streams: Iterable<Stream<R, E, A>>) => Stream<R, E, A>
-  <R, E, A>(
-    streams: Iterable<Stream<R, E, A>>,
+  }): <A, E, R>(streams: Iterable<Stream<A, E, R>>) => Stream<A, E, R>
+  <A, E, R>(
+    streams: Iterable<Stream<A, E, R>>,
     options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined }
-  ): Stream<R, E, A>
+  ): Stream<A, E, R>
 }
 ```

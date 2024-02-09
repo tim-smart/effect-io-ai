@@ -14,22 +14,26 @@ Effect.filter
 
 ```ts
 export declare const filter: {
-  <A, R, E>(
-    f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly negate?: boolean | undefined
-    }
-  ): (elements: Iterable<A>) => Effect<R, E, A[]>
-  <A, R, E>(
+  <A, E, R>(
+    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
+    options?:
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly negate?: boolean | undefined
+        }
+      | undefined
+  ): (elements: Iterable<A>) => Effect<A[], E, R>
+  <A, E, R>(
     elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<R, E, boolean>,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly negate?: boolean | undefined
-    }
-  ): Effect<R, E, A[]>
+    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
+    options?:
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly negate?: boolean | undefined
+        }
+      | undefined
+  ): Effect<A[], E, R>
 }
 ```

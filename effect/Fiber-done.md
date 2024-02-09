@@ -13,5 +13,5 @@ Fiber.done
 **Signature**
 
 ```ts
-export declare const done: <E, A>(exit: Exit.Exit<E, A>) => Fiber<E, A>
+export declare const done: <A, E>(exit: Exit.Exit<A, E>) => Fiber<A, E>
 ```

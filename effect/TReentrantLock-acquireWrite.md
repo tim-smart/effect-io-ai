@@ -15,5 +15,5 @@ TReentrantLock.acquireWrite
 **Signature**
 
 ```ts
-export declare const acquireWrite: (self: TReentrantLock) => STM.STM<never, never, number>
+export declare const acquireWrite: (self: TReentrantLock) => STM.STM<number>
 ```

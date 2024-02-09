@@ -14,5 +14,5 @@ Stream.flattenChunks
 **Signature**
 
 ```ts
-export declare const flattenChunks: <R, E, A>(self: Stream<R, E, Chunk.Chunk<A>>) => Stream<R, E, A>
+export declare const flattenChunks: <A, E, R>(self: Stream<Chunk.Chunk<A>, E, R>) => Stream<A, E, R>
 ```

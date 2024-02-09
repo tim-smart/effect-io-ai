@@ -16,14 +16,14 @@ Effect.retryOrElse
 
 ```ts
 export declare const retryOrElse: {
-  <R1, E extends E3, A1, R2, E2, A2, E3>(
-    policy: Schedule.Schedule<R1, E3, A1>,
-    orElse: (e: E, out: A1) => Effect<R2, E2, A2>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R1 | R2 | R, E | E2, A2 | A>
-  <R, E extends E3, A, R1, A1, R2, E2, A2, E3>(
-    self: Effect<R, E, A>,
-    policy: Schedule.Schedule<R1, E3, A1>,
-    orElse: (e: E, out: A1) => Effect<R2, E2, A2>
-  ): Effect<R | R1 | R2, E | E2, A | A2>
+  <R1, E, A1, A2, E2, R2>(
+    policy: Schedule.Schedule<R1, NoInfer<E>, A1>,
+    orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E | E2, R1 | R2 | R>
+  <A, E, R, A1, R1, A2, E2, R2>(
+    self: Effect<A, E, R>,
+    policy: Schedule.Schedule<R1, NoInfer<E>, A1>,
+    orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>
+  ): Effect<A | A2, E | E2, R | R1 | R2>
 }
 ```

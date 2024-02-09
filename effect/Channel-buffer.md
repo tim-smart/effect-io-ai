@@ -15,9 +15,9 @@ Channel.buffer
 **Signature**
 
 ```ts
-export declare const buffer: <InErr, InElem, InDone>(options: {
+export declare const buffer: <InElem, InErr, InDone>(options: {
   readonly empty: InElem
   readonly isEmpty: Predicate<InElem>
   readonly ref: Ref.Ref<InElem>
-}) => Channel<never, InErr, InElem, InDone, InErr, InElem, InDone>
+}) => Channel<InElem, InElem, InErr, InErr, InDone, InDone, never>
 ```

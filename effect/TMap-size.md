@@ -13,5 +13,5 @@ TMap.size
 **Signature**
 
 ```ts
-export declare const size: <K, V>(self: TMap<K, V>) => STM.STM<never, never, number>
+export declare const size: <K, V>(self: TMap<K, V>) => STM.STM<number>
 ```

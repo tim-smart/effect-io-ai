@@ -14,12 +14,12 @@ Effect.timedWith
 
 ```ts
 export declare const timedWith: {
-  <R1, E1>(
-    nanoseconds: Effect<R1, E1, bigint>
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R1 | R, E1 | E, [Duration.Duration, A]>
-  <R, E, A, R1, E1>(
-    self: Effect<R, E, A>,
-    nanoseconds: Effect<R1, E1, bigint>
-  ): Effect<R | R1, E | E1, [Duration.Duration, A]>
+  <E1, R1>(
+    nanoseconds: Effect<bigint, E1, R1>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[Duration.Duration, A], E1 | E, R1 | R>
+  <A, E, R, E1, R1>(
+    self: Effect<A, E, R>,
+    nanoseconds: Effect<bigint, E1, R1>
+  ): Effect<[Duration.Duration, A], E | E1, R | R1>
 }
 ```

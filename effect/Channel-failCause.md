@@ -13,5 +13,5 @@ Channel.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Channel<never, unknown, unknown, unknown, E, never, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Channel<never, unknown, E, unknown, never, unknown, never>
 ```

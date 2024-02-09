@@ -1,6 +1,6 @@
 # done
 
-Transforms a `Take<E, A>` to an `Effect<never, E, A>`.
+Transforms a `Take<A, E>` to an `Effect<A, E>`.
 
 To import and use `done` from the "Take" module:
 
@@ -13,5 +13,5 @@ Take.done
 **Signature**
 
 ```ts
-export declare const done: <E, A>(self: Take<E, A>) => Effect.Effect<never, Option.Option<E>, Chunk.Chunk<A>>
+export declare const done: <A, E>(self: Take<A, E>) => Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, never>
 ```

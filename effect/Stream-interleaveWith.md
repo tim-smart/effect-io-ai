@@ -21,13 +21,13 @@ Stream.interleaveWith
 ```ts
 export declare const interleaveWith: {
   <R2, E2, A2, R3, E3>(
-    that: Stream<R2, E2, A2>,
-    decider: Stream<R3, E3, boolean>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | R3 | R, E2 | E3 | E, A2 | A>
+    that: Stream<A2, E2, R2>,
+    decider: Stream<boolean, E3, R3>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E2 | E3 | E, R2 | R3 | R>
   <R, E, A, R2, E2, A2, R3, E3>(
-    self: Stream<R, E, A>,
-    that: Stream<R2, E2, A2>,
-    decider: Stream<R3, E3, boolean>
-  ): Stream<R | R2 | R3, E | E2 | E3, A | A2>
+    self: Stream<A, E, R>,
+    that: Stream<A2, E2, R2>,
+    decider: Stream<boolean, E3, R3>
+  ): Stream<A | A2, E | E2 | E3, R | R2 | R3>
 }
 ```

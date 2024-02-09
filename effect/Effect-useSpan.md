@@ -18,8 +18,8 @@ Effect.useSpan
 
 ```ts
 export declare const useSpan: {
-  <R, E, A>(name: string, evaluate: (span: Tracer.Span) => Effect<R, E, A>): Effect<R, E, A>
-  <R, E, A>(
+  <A, E, R>(name: string, evaluate: (span: Tracer.Span) => Effect<A, E, R>): Effect<A, E, R>
+  <A, E, R>(
     name: string,
     options: {
       readonly attributes?: Record<string, unknown> | undefined
@@ -28,7 +28,7 @@ export declare const useSpan: {
       readonly root?: boolean | undefined
       readonly context?: Context.Context<never> | undefined
     },
-    evaluate: (span: Tracer.Span) => Effect<R, E, A>
-  ): Effect<R, E, A>
+    evaluate: (span: Tracer.Span) => Effect<A, E, R>
+  ): Effect<A, E, R>
 }
 ```

@@ -17,12 +17,12 @@ Channel.mapInput
 export declare const mapInput: {
   <InDone0, InDone>(
     f: (a: InDone0) => InDone
-  ): <Env, InErr, InElem, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone0, OutErr, OutElem, OutDone>
-  <Env, InErr, InElem, OutErr, OutElem, OutDone, InDone0, InDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone0, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, InDone0>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     f: (a: InDone0) => InDone
-  ): Channel<Env, InErr, InElem, InDone0, OutErr, OutElem, OutDone>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone0, Env>
 }
 ```

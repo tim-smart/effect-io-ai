@@ -15,14 +15,14 @@ Sink.summarized
 
 ```ts
 export declare const summarized: {
-  <R2, E2, Z2, Z3>(
-    summary: Effect.Effect<R2, E2, Z2>,
-    f: (start: Z2, end: Z2) => Z3
-  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In, L, [Z, Z3]>
-  <R, E, In, L, Z, R2, E2, Z2, Z3>(
-    self: Sink<R, E, In, L, Z>,
-    summary: Effect.Effect<R2, E2, Z2>,
-    f: (start: Z2, end: Z2) => Z3
-  ): Sink<R | R2, E | E2, In, L, [Z, Z3]>
+  <A2, E2, R2, A3>(
+    summary: Effect.Effect<A2, E2, R2>,
+    f: (start: A2, end: A2) => A3
+  ): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<[A, A3], In, L, E2 | E, R2 | R>
+  <A, In, L, E, R, A2, E2, R2, A3>(
+    self: Sink<A, In, L, E, R>,
+    summary: Effect.Effect<A2, E2, R2>,
+    f: (start: A2, end: A2) => A3
+  ): Sink<[A, A3], In, L, E | E2, R | R2>
 }
 ```

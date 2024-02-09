@@ -14,6 +14,6 @@ STM.contextWithSTM
 
 ```ts
 export declare const contextWithSTM: <R0, R, E, A>(
-  f: (environment: Context.Context<R0>) => STM<R, E, A>
-) => STM<R0 | R, E, A>
+  f: (environment: Context.Context<R0>) => STM<A, E, R>
+) => STM<A, E, R0 | R>
 ```

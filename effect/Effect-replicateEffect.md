@@ -22,7 +22,7 @@ export declare const replicateEffect: {
       readonly batching?: boolean | "inherit" | undefined
       readonly discard?: false | undefined
     }
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A[]>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A[], E, R>
   (
     n: number,
     options: {
@@ -30,24 +30,24 @@ export declare const replicateEffect: {
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
     }
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, void>
-  <R, E, A>(
-    self: Effect<R, E, A>,
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
+  <A, E, R>(
+    self: Effect<A, E, R>,
     n: number,
     options?: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard?: false | undefined
     }
-  ): Effect<R, E, A[]>
-  <R, E, A>(
-    self: Effect<R, E, A>,
+  ): Effect<A[], E, R>
+  <A, E, R>(
+    self: Effect<A, E, R>,
     n: number,
     options: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
     }
-  ): Effect<R, E, void>
+  ): Effect<void, E, R>
 }
 ```

@@ -14,6 +14,6 @@ Stream.contextWithEffect
 
 ```ts
 export declare const contextWithEffect: <R0, R, E, A>(
-  f: (env: Context.Context<R0>) => Effect.Effect<R, E, A>
-) => Stream<R0 | R, E, A>
+  f: (env: Context.Context<R0>) => Effect.Effect<A, E, R>
+) => Stream<A, E, R0 | R>
 ```

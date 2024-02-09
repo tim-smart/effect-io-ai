@@ -14,5 +14,5 @@ TReentrantLock.releaseRead
 **Signature**
 
 ```ts
-export declare const releaseRead: (self: TReentrantLock) => STM.STM<never, never, number>
+export declare const releaseRead: (self: TReentrantLock) => STM.STM<number>
 ```

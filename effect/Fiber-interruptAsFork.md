@@ -16,7 +16,7 @@ Fiber.interruptAsFork
 
 ```ts
 export declare const interruptAsFork: {
-  (fiberId: FiberId.FiberId): <E, A>(self: Fiber<E, A>) => Effect.Effect<never, never, void>
-  <E, A>(self: Fiber<E, A>, fiberId: FiberId.FiberId): Effect.Effect<never, never, void>
+  (fiberId: FiberId.FiberId): <A, E>(self: Fiber<A, E>) => Effect.Effect<void>
+  <A, E>(self: Fiber<A, E>, fiberId: FiberId.FiberId): Effect.Effect<void>
 }
 ```

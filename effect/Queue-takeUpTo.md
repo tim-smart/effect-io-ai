@@ -14,7 +14,7 @@ Queue.takeUpTo
 
 ```ts
 export declare const takeUpTo: {
-  (max: number): <A>(self: Dequeue<A>) => Effect.Effect<never, never, Chunk.Chunk<A>>
-  <A>(self: Dequeue<A>, max: number): Effect.Effect<never, never, Chunk.Chunk<A>>
+  (max: number): <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>, never, never>
+  <A>(self: Dequeue<A>, max: number): Effect.Effect<Chunk.Chunk<A>, never, never>
 }
 ```

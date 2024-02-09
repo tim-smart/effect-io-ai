@@ -14,5 +14,5 @@ ScopedRef.make
 **Signature**
 
 ```ts
-export declare const make: <A>(evaluate: LazyArg<A>) => Effect.Effect<Scope.Scope, never, ScopedRef<A>>
+export declare const make: <A>(evaluate: LazyArg<A>) => Effect.Effect<ScopedRef<A>, never, Scope.Scope>
 ```

@@ -14,7 +14,7 @@ Effect.linkSpans
 
 ```ts
 export declare const linkSpans: {
-  (span: Tracer.ParentSpan, attributes?: Record<string, unknown>): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(self: Effect<R, E, A>, span: Tracer.ParentSpan, attributes?: Record<string, unknown>): Effect<R, E, A>
+  (span: Tracer.ParentSpan, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(self: Effect<A, E, R>, span: Tracer.ParentSpan, attributes?: Record<string, unknown>): Effect<A, E, R>
 }
 ```

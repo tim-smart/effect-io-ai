@@ -16,8 +16,7 @@ Data.case
 import * as Data from "effect/Data"
 import * as Equal from "effect/Equal"
 
-// Extending Data.Case to implement Equal
-interface Person extends Data.Case {
+interface Person {
   readonly name: string
 }
 

@@ -15,7 +15,7 @@ Effect.addFinalizer
 **Signature**
 
 ```ts
-export declare const addFinalizer: <R, X>(
-  finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<R, never, X>
-) => Effect<Scope.Scope | R, never, void>
+export declare const addFinalizer: <X, R>(
+  finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>
+) => Effect<void, never, Scope.Scope | R>
 ```

@@ -14,7 +14,7 @@ Deferred.succeed
 
 ```ts
 export declare const succeed: {
-  <A>(value: A): <E>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, value: A): Effect.Effect<never, never, boolean>
+  <A>(value: A): <E>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, value: A): Effect.Effect<boolean>
 }
 ```

@@ -13,7 +13,7 @@ Channel.contextWithChannel
 **Signature**
 
 ```ts
-export declare const contextWithChannel: <Env, Env1, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  f: (env: Context.Context<Env>) => Channel<Env1, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-) => Channel<Env | Env1, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+export declare const contextWithChannel: <Env, OutElem, InElem, OutErr, InErr, OutDone, InDone, Env1>(
+  f: (env: Context.Context<Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env1>
+) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | Env1>
 ```

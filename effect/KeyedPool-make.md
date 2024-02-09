@@ -16,8 +16,8 @@ KeyedPool.make
 **Signature**
 
 ```ts
-export declare const make: <K, R, E, A>(options: {
-  readonly acquire: (key: K) => Effect.Effect<R, E, A>
+export declare const make: <K, A, E, R>(options: {
+  readonly acquire: (key: K) => Effect.Effect<A, E, R>
   readonly size: number
-}) => Effect.Effect<Scope.Scope | R, never, KeyedPool<K, E, A>>
+}) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
 ```

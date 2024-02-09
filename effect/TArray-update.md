@@ -14,7 +14,7 @@ TArray.update
 
 ```ts
 export declare const update: {
-  <A>(index: number, f: (value: A) => A): (self: TArray<A>) => STM.STM<never, never, void>
-  <A>(self: TArray<A>, index: number, f: (value: A) => A): STM.STM<never, never, void>
+  <A>(index: number, f: (value: A) => A): (self: TArray<A>) => STM.STM<void>
+  <A>(self: TArray<A>, index: number, f: (value: A) => A): STM.STM<void>
 }
 ```

@@ -34,41 +34,41 @@ Effect.loop
 
 ```ts
 export declare const loop: {
-  <A, B extends A, R, E, C>(
+  <A, B extends A, C, E, R>(
     initial: A,
     options: {
       readonly while: Refinement<A, B>
       readonly step: (b: B) => A
-      readonly body: (b: B) => Effect<R, E, C>
+      readonly body: (b: B) => Effect<C, E, R>
       readonly discard?: false | undefined
     }
-  ): Effect<R, E, C[]>
-  <A, R, E, C>(
+  ): Effect<C[], E, R>
+  <A, C, E, R>(
     initial: A,
     options: {
       readonly while: (a: A) => boolean
       readonly step: (a: A) => A
-      readonly body: (a: A) => Effect<R, E, C>
+      readonly body: (a: A) => Effect<C, E, R>
       readonly discard?: false | undefined
     }
-  ): Effect<R, E, C[]>
-  <A, B extends A, R, E, C>(
+  ): Effect<C[], E, R>
+  <A, B extends A, C, E, R>(
     initial: A,
     options: {
       readonly while: Refinement<A, B>
       readonly step: (b: B) => A
-      readonly body: (b: B) => Effect<R, E, C>
+      readonly body: (b: B) => Effect<C, E, R>
       readonly discard: true
     }
-  ): Effect<R, E, void>
-  <A, R, E, C>(
+  ): Effect<void, E, R>
+  <A, C, E, R>(
     initial: A,
     options: {
       readonly while: (a: A) => boolean
       readonly step: (a: A) => A
-      readonly body: (a: A) => Effect<R, E, C>
+      readonly body: (a: A) => Effect<C, E, R>
       readonly discard: true
     }
-  ): Effect<R, E, void>
+  ): Effect<void, E, R>
 }
 ```

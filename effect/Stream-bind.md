@@ -16,14 +16,18 @@ Stream.bind
 export declare const bind: {
   <N extends string, K, R2, E2, A>(
     tag: Exclude<N, keyof K>,
-    f: (_: K) => Stream<R2, E2, A>,
-    options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
-  ): <R, E>(self: Stream<R, E, K>) => Stream<R2 | R, E2 | E, Effect.MergeRecord<K, { [k in N]: A }>>
+    f: (_: K) => Stream<A, E2, R2>,
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
+      | undefined
+  ): <R, E>(self: Stream<K, E, R>) => Stream<Effect.MergeRecord<K, { [k in N]: A }>, E2 | E, R2 | R>
   <R, E, N extends string, K, R2, E2, A>(
-    self: Stream<R, E, K>,
+    self: Stream<K, E, R>,
     tag: Exclude<N, keyof K>,
-    f: (_: K) => Stream<R2, E2, A>,
-    options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
-  ): Stream<R | R2, E | E2, Effect.MergeRecord<K, { [k in N]: A }>>
+    f: (_: K) => Stream<A, E2, R2>,
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
+      | undefined
+  ): Stream<Effect.MergeRecord<K, { [k in N]: A }>, E | E2, R | R2>
 }
 ```

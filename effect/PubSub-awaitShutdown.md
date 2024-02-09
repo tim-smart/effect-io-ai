@@ -15,5 +15,5 @@ PubSub.awaitShutdown
 **Signature**
 
 ```ts
-export declare const awaitShutdown: <A>(self: PubSub<A>) => Effect.Effect<never, never, void>
+export declare const awaitShutdown: <A>(self: PubSub<A>) => Effect.Effect<void>
 ```

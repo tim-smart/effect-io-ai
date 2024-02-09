@@ -14,7 +14,7 @@ Channel.emitCollect
 **Signature**
 
 ```ts
-export declare const emitCollect: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-) => Channel<Env, InErr, InElem, InDone, OutErr, [Chunk.Chunk<OutElem>, OutDone], void>
+export declare const emitCollect: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+) => Channel<[Chunk.Chunk<OutElem>, OutDone], InElem, OutErr, InErr, void, InDone, Env>
 ```

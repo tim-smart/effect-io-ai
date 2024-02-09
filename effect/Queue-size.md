@@ -15,5 +15,5 @@ Queue.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<never, never, number>
+export declare const size: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<number>
 ```

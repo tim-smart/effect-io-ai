@@ -24,14 +24,14 @@ export declare const timeoutTo: {
     readonly onTimeout: LazyArg<B1>
     readonly onSuccess: (a: A) => B
     readonly duration: Duration.DurationInput
-  }): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B | B1>
-  <R, E, A, B, B1>(
-    self: Effect<R, E, A>,
+  }): <E, R>(self: Effect<A, E, R>) => Effect<B | B1, E, R>
+  <A, E, R, B1, B>(
+    self: Effect<A, E, R>,
     options: {
       readonly onTimeout: LazyArg<B1>
       readonly onSuccess: (a: A) => B
       readonly duration: Duration.DurationInput
     }
-  ): Effect<R, E, B | B1>
+  ): Effect<B1 | B, E, R>
 }
 ```

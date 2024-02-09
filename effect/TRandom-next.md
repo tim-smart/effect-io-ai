@@ -13,5 +13,5 @@ TRandom.next
 **Signature**
 
 ```ts
-export declare const next: STM.STM<TRandom, never, number>
+export declare const next: STM.STM<number, never, TRandom>
 ```

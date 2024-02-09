@@ -14,5 +14,5 @@ Layer.isFresh
 **Signature**
 
 ```ts
-export declare const isFresh: <R, E, A>(self: Layer<R, E, A>) => boolean
+export declare const isFresh: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => boolean
 ```

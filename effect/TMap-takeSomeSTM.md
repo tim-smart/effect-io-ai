@@ -15,11 +15,11 @@ TMap.takeSomeSTM
 ```ts
 export declare const takeSomeSTM: {
   <K, V, R, E, A>(
-    pf: (key: K, value: V) => STM.STM<R, Option.Option<E>, A>
-  ): (self: TMap<K, V>) => STM.STM<R, E, [A, ...A[]]>
+    pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>
+  ): (self: TMap<K, V>) => STM.STM<[A, ...A[]], E, R>
   <K, V, R, E, A>(
     self: TMap<K, V>,
-    pf: (key: K, value: V) => STM.STM<R, Option.Option<E>, A>
-  ): STM.STM<R, E, [A, ...A[]]>
+    pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>
+  ): STM.STM<[A, ...A[]], E, R>
 }
 ```

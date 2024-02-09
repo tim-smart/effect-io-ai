@@ -17,12 +17,12 @@ Effect.catchAllCause
 
 ```ts
 export declare const catchAllCause: {
-  <E, R2, E2, A2>(
-    f: (cause: Cause.Cause<E>) => Effect<R2, E2, A2>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E2, A2 | A>
-  <R, A, E, R2, E2, A2>(
-    self: Effect<R, E, A>,
-    f: (cause: Cause.Cause<E>) => Effect<R2, E2, A2>
-  ): Effect<R | R2, E2, A | A2>
+  <E, A2, E2, R2>(
+    f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>
+  <A, E, R, A2, E2, R2>(
+    self: Effect<A, E, R>,
+    f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>
+  ): Effect<A | A2, E2, R | R2>
 }
 ```

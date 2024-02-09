@@ -13,11 +13,11 @@ Sink.fromPush
 **Signature**
 
 ```ts
-export declare const fromPush: <R, E, In, L, Z>(
+export declare const fromPush: <In, E, A, L, R>(
   push: Effect.Effect<
-    R,
+    (_: Option.Option<Chunk.Chunk<In>>) => Effect.Effect<void, readonly [Either.Either<E, A>, Chunk.Chunk<L>], R>,
     never,
-    (_: Option.Option<Chunk.Chunk<In>>) => Effect.Effect<R, readonly [Either.Either<E, Z>, Chunk.Chunk<L>], void>
+    R
   >
-) => Sink<Exclude<R, Scope.Scope>, E, In, L, Z>
+) => Sink<A, In, L, E, Exclude<R, Scope.Scope>>
 ```

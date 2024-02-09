@@ -16,15 +16,15 @@ Stream.partitionEither
 ```ts
 export declare const partitionEither: {
   <A, R2, E2, A2, A3>(
-    predicate: (a: NoInfer<A>) => Effect.Effect<R2, E2, Either.Either<A2, A3>>,
-    options?: { readonly bufferSize?: number | undefined }
+    predicate: (a: NoInfer<A>) => Effect.Effect<Either.Either<A2, A3>, E2, R2>,
+    options?: { readonly bufferSize?: number | undefined } | undefined
   ): <R, E>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R2 | R, E2 | E, [left: Stream<never, E2 | E, A2>, right: Stream<never, E2 | E, A3>]>
+    self: Stream<A, E, R>
+  ) => Effect.Effect<[left: Stream<A2, E2 | E, never>, right: Stream<A3, E2 | E, never>], E2 | E, Scope.Scope | R2 | R>
   <R, E, A, R2, E2, A2, A3>(
-    self: Stream<R, E, A>,
-    predicate: (a: A) => Effect.Effect<R2, E2, Either.Either<A2, A3>>,
-    options?: { readonly bufferSize?: number | undefined }
-  ): Effect.Effect<Scope.Scope | R | R2, E | E2, [left: Stream<never, E | E2, A2>, right: Stream<never, E | E2, A3>]>
+    self: Stream<A, E, R>,
+    predicate: (a: A) => Effect.Effect<Either.Either<A2, A3>, E2, R2>,
+    options?: { readonly bufferSize?: number | undefined } | undefined
+  ): Effect.Effect<[left: Stream<A2, E | E2, never>, right: Stream<A3, E | E2, never>], E | E2, Scope.Scope | R | R2>
 }
 ```

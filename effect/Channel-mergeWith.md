@@ -18,76 +18,76 @@ Channel.mergeWith
 ```ts
 export declare const mergeWith: {
   <
-    Env1,
-    InErr1,
-    InElem1,
-    InDone1,
-    OutErr,
-    OutErr1,
-    OutErr2,
-    OutErr3,
     OutElem1,
-    OutDone,
+    InElem1,
+    OutErr1,
+    InErr1,
     OutDone1,
+    InDone1,
+    Env1,
+    OutDone,
+    OutErr,
+    OutErr2,
     OutDone2,
+    OutErr3,
     OutDone3
   >(options: {
-    readonly other: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+    readonly other: Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>
     readonly onSelfDone: (
-      exit: Exit.Exit<OutErr, OutDone>
+      exit: Exit.Exit<OutDone, OutErr>
     ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>
     readonly onOtherDone: (
-      ex: Exit.Exit<OutErr1, OutDone1>
+      ex: Exit.Exit<OutDone1, OutErr1>
     ) => MergeDecision.MergeDecision<Env1, OutErr, OutDone, OutErr3, OutDone3>
   }): <Env, InErr, InElem, InDone, OutElem>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
   ) => Channel<
-    Env1 | Env,
-    InErr & InErr1,
-    InElem & InElem1,
-    InDone & InDone1,
-    OutErr2 | OutErr3,
     OutElem1 | OutElem,
-    OutDone2 | OutDone3
+    InElem & InElem1,
+    OutErr2 | OutErr3,
+    InErr & InErr1,
+    OutDone2 | OutDone3,
+    InDone & InDone1,
+    Env1 | Env
   >
   <
-    Env,
-    InErr,
-    InElem,
-    InDone,
     OutElem,
-    Env1,
-    InErr1,
-    InElem1,
-    InDone1,
+    InElem,
     OutErr,
-    OutErr1,
-    OutErr2,
-    OutErr3,
-    OutElem1,
+    InErr,
     OutDone,
+    InDone,
+    Env,
+    OutElem1,
+    InElem1,
+    OutErr1,
+    InErr1,
     OutDone1,
+    InDone1,
+    Env1,
+    OutErr2,
     OutDone2,
+    OutErr3,
     OutDone3
   >(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     options: {
-      readonly other: Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>
+      readonly other: Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>
       readonly onSelfDone: (
-        exit: Exit.Exit<OutErr, OutDone>
+        exit: Exit.Exit<OutDone, OutErr>
       ) => MergeDecision.MergeDecision<Env1, OutErr1, OutDone1, OutErr2, OutDone2>
       readonly onOtherDone: (
-        ex: Exit.Exit<OutErr1, OutDone1>
+        ex: Exit.Exit<OutDone1, OutErr1>
       ) => MergeDecision.MergeDecision<Env1, OutErr, OutDone, OutErr3, OutDone3>
     }
   ): Channel<
-    Env | Env1,
-    InErr & InErr1,
-    InElem & InElem1,
-    InDone & InDone1,
-    OutErr2 | OutErr3,
     OutElem | OutElem1,
-    OutDone2 | OutDone3
+    InElem & InElem1,
+    OutErr2 | OutErr3,
+    InErr & InErr1,
+    OutDone2 | OutDone3,
+    InDone & InDone1,
+    Env | Env1
   >
 }
 ```

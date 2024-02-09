@@ -1,7 +1,7 @@
 # fromEffect
 
-Creates an effect from `Effect<R, E, A>` that does not fail, but succeeds with
-the `Take<E, A>`. Error from stream when pulling is converted to
+Creates an effect from `Effect<A, E, R>` that does not fail, but succeeds with
+the `Take<A, E>`. Error from stream when pulling is converted to
 `Take.failCause`. Creates a single value chunk.
 
 To import and use `fromEffect` from the "Take" module:
@@ -15,5 +15,5 @@ Take.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, never, Take<E, A>>
+export declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<Take<A, E>, never, R>
 ```

@@ -19,11 +19,11 @@ export declare const scheduleWith: {
   <R2, A, A0 extends A, B, C>(
     schedule: Schedule.Schedule<R2, A0, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E, C>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<C, E, R2 | R>
   <R, E, R2, A, A0 extends A, B, C>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     schedule: Schedule.Schedule<R2, A0, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
-  ): Stream<R | R2, E, C>
+  ): Stream<C, E, R | R2>
 }
 ```

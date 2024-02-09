@@ -17,16 +17,16 @@ export declare const filterOrFail: {
   <A, B extends A, E2>(
     refinement: Refinement<NoInfer<A>, B>,
     orFailWith: (a: NoInfer<A>) => E2
-  ): <R, E>(self: STM<R, E, A>) => STM<R, E2 | E, B>
+  ): <R, E>(self: STM<A, E, R>) => STM<B, E2 | E, R>
   <A, E2>(
     predicate: Predicate<NoInfer<A>>,
     orFailWith: (a: NoInfer<A>) => E2
-  ): <R, E>(self: STM<R, E, A>) => STM<R, E2 | E, A>
+  ): <R, E>(self: STM<A, E, R>) => STM<A, E2 | E, R>
   <R, E, A, B extends A, E2>(
-    self: STM<R, E, A>,
+    self: STM<A, E, R>,
     refinement: Refinement<A, B>,
     orFailWith: (a: A) => E2
-  ): STM<R, E | E2, B>
-  <R, E, A, E2>(self: STM<R, E, A>, predicate: Predicate<A>, orFailWith: (a: A) => E2): STM<R, E | E2, A>
+  ): STM<B, E | E2, R>
+  <R, E, A, E2>(self: STM<A, E, R>, predicate: Predicate<A>, orFailWith: (a: A) => E2): STM<A, E | E2, R>
 }
 ```

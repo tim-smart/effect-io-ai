@@ -20,6 +20,6 @@ export declare const makeWithState: <S, Env, In, Out>(
     now: number,
     input: In,
     state: S
-  ) => Effect.Effect<Env, never, readonly [S, Out, ScheduleDecision.ScheduleDecision]>
+  ) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, Env>
 ) => Schedule<Env, In, Out>
 ```

@@ -13,7 +13,7 @@ Sink.unwrapScoped
 **Signature**
 
 ```ts
-export declare const unwrapScoped: <R, E, In, L, Z>(
-  effect: Effect.Effect<R, E, Sink<R, E, In, L, Z>>
-) => Sink<Exclude<R, Scope.Scope>, E, In, L, Z>
+export declare const unwrapScoped: <A, In, L, E, R>(
+  effect: Effect.Effect<Sink<A, In, L, E, R>, E, R>
+) => Sink<A, In, L, E, Exclude<R, Scope.Scope>>
 ```

@@ -14,5 +14,5 @@ Queue.poll
 **Signature**
 
 ```ts
-export declare const poll: <A>(self: Dequeue<A>) => Effect.Effect<never, never, Option.Option<A>>
+export declare const poll: <A>(self: Dequeue<A>) => Effect.Effect<Option.Option<A>, never, never>
 ```

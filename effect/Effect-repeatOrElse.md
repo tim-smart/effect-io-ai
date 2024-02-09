@@ -20,14 +20,14 @@ Effect.repeatOrElse
 
 ```ts
 export declare const repeatOrElse: {
-  <R2, A extends A0, A0, B, E, R3, E2>(
+  <R2, A, B, E, E2, R3>(
     schedule: Schedule.Schedule<R2, A, B>,
-    orElse: (error: E, option: Option.Option<B>) => Effect<R3, E2, B>
-  ): <R>(self: Effect<R, E, A>) => Effect<R2 | R3 | R, E2, B>
-  <R, E, A extends A0, A0, R2, B, R3, E2>(
-    self: Effect<R, E, A>,
-    schedule: Schedule.Schedule<R2, A0, B>,
-    orElse: (error: E, option: Option.Option<B>) => Effect<R3, E2, B>
-  ): Effect<R | R2 | R3, E2, B>
+    orElse: (error: E, option: Option.Option<B>) => Effect<B, E2, R3>
+  ): <R>(self: Effect<A, E, R>) => Effect<B, E2, R2 | R3 | R>
+  <A, E, R, R2, B, E2, R3>(
+    self: Effect<A, E, R>,
+    schedule: Schedule.Schedule<R2, A, B>,
+    orElse: (error: E, option: Option.Option<B>) => Effect<B, E2, R3>
+  ): Effect<B, E2, R | R2 | R3>
 }
 ```

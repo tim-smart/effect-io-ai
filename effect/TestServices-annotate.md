@@ -14,5 +14,5 @@ TestServices.annotate
 **Signature**
 
 ```ts
-export declare const annotate: <A>(key: TestAnnotation.TestAnnotation<A>, value: A) => Effect.Effect<never, never, void>
+export declare const annotate: <A>(key: TestAnnotation.TestAnnotation<A>, value: A) => Effect.Effect<void>
 ```

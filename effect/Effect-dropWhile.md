@@ -14,9 +14,9 @@ Effect.dropWhile
 
 ```ts
 export declare const dropWhile: {
-  <A, R, E>(
-    predicate: (a: NoInfer<A>, i: number) => Effect<R, E, boolean>
-  ): (elements: Iterable<A>) => Effect<R, E, A[]>
-  <A, R, E>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<R, E, boolean>): Effect<R, E, A[]>
+  <A, E, R>(
+    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
+  ): (elements: Iterable<A>) => Effect<A[], E, R>
+  <A, E, R>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<boolean, E, R>): Effect<A[], E, R>
 }
 ```

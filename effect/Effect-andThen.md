@@ -43,37 +43,37 @@ assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen((
 export declare const andThen: {
   <A, X>(
     f: (a: NoInfer<A>) => X
-  ): <R, E>(
-    self: Effect<R, E, A>
-  ) => [X] extends [Effect<infer R1, infer E1, infer A1>]
-    ? Effect<R | R1, E | E1, A1>
+  ): <E, R>(
+    self: Effect<A, E, R>
+  ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
+    ? Effect<A1, E | E1, R | R1>
     : [X] extends [Promise<infer A1>]
-      ? Effect<R, Cause.UnknownException | E, A1>
-      : Effect<R, E, X>
+      ? Effect<A1, Cause.UnknownException | E, R>
+      : Effect<X, E, R>
   <X>(
     f: X
-  ): <R, E, A>(
-    self: Effect<R, E, A>
-  ) => [X] extends [Effect<infer R1, infer E1, infer A1>]
-    ? Effect<R | R1, E | E1, A1>
+  ): <A, E, R>(
+    self: Effect<A, E, R>
+  ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
+    ? Effect<A1, E | E1, R | R1>
     : [X] extends [Promise<infer A1>]
-      ? Effect<R, Cause.UnknownException | E, A1>
-      : Effect<R, E, X>
+      ? Effect<A1, Cause.UnknownException | E, R>
+      : Effect<X, E, R>
   <A, R, E, X>(
-    self: Effect<R, E, A>,
+    self: Effect<A, E, R>,
     f: (a: NoInfer<A>) => X
-  ): [X] extends [Effect<infer R1, infer E1, infer A1>]
-    ? Effect<R | R1, E | E1, A1>
+  ): [X] extends [Effect<infer A1, infer E1, infer R1>]
+    ? Effect<A1, E | E1, R | R1>
     : [X] extends [Promise<infer A1>]
-      ? Effect<R, Cause.UnknownException | E, A1>
-      : Effect<R, E, X>
+      ? Effect<A1, Cause.UnknownException | E, R>
+      : Effect<X, E, R>
   <A, R, E, X>(
-    self: Effect<R, E, A>,
+    self: Effect<A, E, R>,
     f: X
-  ): [X] extends [Effect<infer R1, infer E1, infer A1>]
-    ? Effect<R | R1, E | E1, A1>
+  ): [X] extends [Effect<infer A1, infer E1, infer R1>]
+    ? Effect<A1, E | E1, R | R1>
     : [X] extends [Promise<infer A1>]
-      ? Effect<R, Cause.UnknownException | E, A1>
-      : Effect<R, E, X>
+      ? Effect<A1, Cause.UnknownException | E, R>
+      : Effect<X, E, R>
 }
 ```

@@ -16,12 +16,12 @@ Stream.runFoldEffect
 export declare const runFoldEffect: {
   <S, A, R2, E2>(
     s: S,
-    f: (s: S, a: A) => Effect.Effect<R2, E2, S>
-  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<R2 | R, E2 | E, S>
+    f: (s: S, a: A) => Effect.Effect<S, E2, R2>
+  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, R2 | R>
   <R, E, S, A, R2, E2>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     s: S,
-    f: (s: S, a: A) => Effect.Effect<R2, E2, S>
-  ): Effect.Effect<R | R2, E | E2, S>
+    f: (s: S, a: A) => Effect.Effect<S, E2, R2>
+  ): Effect.Effect<S, E | E2, R | R2>
 }
 ```

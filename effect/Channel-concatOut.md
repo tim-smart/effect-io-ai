@@ -15,15 +15,15 @@ Channel.concatOut
 **Signature**
 
 ```ts
-export declare const concatOut: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
+export declare const concatOut: <OutElem, InElem, OutErr, InErr, InDone, Env, OutDone>(
   self: Channel<
-    Env,
-    InErr,
+    Channel<OutElem, InElem, OutErr, InErr, unknown, InDone, Env>,
     InElem,
-    InDone,
     OutErr,
-    Channel<Env, InErr, InElem, InDone, OutErr, OutElem, unknown>,
-    OutDone
+    InErr,
+    OutDone,
+    InDone,
+    Env
   >
-) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, unknown>
+) => Channel<OutElem, InElem, OutErr, InErr, unknown, InDone, Env>
 ```

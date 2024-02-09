@@ -16,6 +16,6 @@ TestServices.withSized
 ```ts
 export declare const withSized: ((
   sized: Sized.TestSized
-) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>) &
-  (<R, E, A>(effect: Effect.Effect<R, E, A>, sized: Sized.TestSized) => Effect.Effect<R, E, A>)
+) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) &
+  (<A, E, R>(effect: Effect.Effect<A, E, R>, sized: Sized.TestSized) => Effect.Effect<A, E, R>)
 ```

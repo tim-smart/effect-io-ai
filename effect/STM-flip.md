@@ -15,5 +15,5 @@ STM.flip
 **Signature**
 
 ```ts
-export declare const flip: <R, E, A>(self: STM<R, E, A>) => STM<R, A, E>
+export declare const flip: <A, E, R>(self: STM<A, E, R>) => STM<E, A, R>
 ```

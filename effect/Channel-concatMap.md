@@ -17,14 +17,14 @@ Channel.concatMap
 
 ```ts
 export declare const concatMap: {
-  <OutElem, OutElem2, Env2, InErr2, InElem2, InDone2, OutErr2, _>(
-    f: (o: OutElem) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, _>
+  <OutElem, OutElem2, InElem2, OutErr2, InErr2, _, InDone2, Env2>(
+    f: (o: OutElem) => Channel<OutElem2, InElem2, OutErr2, InErr2, _, InDone2, Env2>
   ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env2 | Env, InErr & InErr2, InElem & InElem2, InDone & InDone2, OutErr2 | OutErr, OutElem2, unknown>
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem2, InElem & InElem2, OutErr2 | OutErr, InErr & InErr2, unknown, InDone & InDone2, Env2 | Env>
   <Env, InErr, InElem, InDone, OutErr, OutDone, OutElem, OutElem2, Env2, InErr2, InElem2, InDone2, OutErr2, _>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    f: (o: OutElem) => Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem2, _>
-  ): Channel<Env | Env2, InErr & InErr2, InElem & InElem2, InDone & InDone2, OutErr | OutErr2, OutElem2, unknown>
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    f: (o: OutElem) => Channel<OutElem2, InElem2, OutErr2, InErr2, _, InDone2, Env2>
+  ): Channel<OutElem2, InElem & InElem2, OutErr | OutErr2, InErr & InErr2, unknown, InDone & InDone2, Env | Env2>
 }
 ```

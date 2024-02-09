@@ -15,7 +15,7 @@ Fiber.mapFiber
 
 ```ts
 export declare const mapFiber: {
-  <E, E2, A, B>(f: (a: A) => Fiber<E2, B>): (self: Fiber<E, A>) => Effect.Effect<never, never, Fiber<E | E2, B>>
-  <E, A, E2, B>(self: Fiber<E, A>, f: (a: A) => Fiber<E2, B>): Effect.Effect<never, never, Fiber<E | E2, B>>
+  <E, E2, A, B>(f: (a: A) => Fiber<B, E2>): (self: Fiber<A, E>) => Effect.Effect<Fiber<B, E | E2>, never, never>
+  <A, E, E2, B>(self: Fiber<A, E>, f: (a: A) => Fiber<B, E2>): Effect.Effect<Fiber<B, E | E2>, never, never>
 }
 ```

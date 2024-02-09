@@ -14,7 +14,7 @@ STM.mapError
 
 ```ts
 export declare const mapError: {
-  <E, E2>(f: (error: E) => E2): <R, A>(self: STM<R, E, A>) => STM<R, E2, A>
-  <R, A, E, E2>(self: STM<R, E, A>, f: (error: E) => E2): STM<R, E2, A>
+  <E, E2>(f: (error: E) => E2): <R, A>(self: STM<A, E, R>) => STM<A, E2, R>
+  <R, A, E, E2>(self: STM<A, E, R>, f: (error: E) => E2): STM<A, E2, R>
 }
 ```

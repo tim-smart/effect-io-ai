@@ -32,11 +32,11 @@ Effect.iterate
 export declare const iterate: {
   <A, B extends A, R, E>(
     initial: A,
-    options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<R, E, A> }
-  ): Effect<R, E, A>
+    options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<A, E, R> }
+  ): Effect<A, E, R>
   <A, R, E>(
     initial: A,
-    options: { readonly while: (a: A) => boolean; readonly body: (a: A) => Effect<R, E, A> }
-  ): Effect<R, E, A>
+    options: { readonly while: Predicate<A>; readonly body: (a: A) => Effect<A, E, R> }
+  ): Effect<A, E, R>
 }
 ```

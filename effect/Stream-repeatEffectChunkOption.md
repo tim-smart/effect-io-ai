@@ -14,7 +14,7 @@ Stream.repeatEffectChunkOption
 **Signature**
 
 ```ts
-export declare const repeatEffectChunkOption: <R, E, A>(
-  effect: Effect.Effect<R, Option.Option<E>, Chunk.Chunk<A>>
-) => Stream<R, E, A>
+export declare const repeatEffectChunkOption: <A, E, R>(
+  effect: Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>
+) => Stream<A, E, R>
 ```

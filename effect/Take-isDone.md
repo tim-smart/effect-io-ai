@@ -13,5 +13,5 @@ Take.isDone
 **Signature**
 
 ```ts
-export declare const isDone: <E, A>(self: Take<E, A>) => boolean
+export declare const isDone: <A, E>(self: Take<A, E>) => boolean
 ```

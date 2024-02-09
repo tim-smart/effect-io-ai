@@ -13,5 +13,5 @@ Sink.sync
 **Signature**
 
 ```ts
-export declare const sync: <Z>(evaluate: LazyArg<Z>) => Sink<never, never, unknown, never, Z>
+export declare const sync: <A>(evaluate: LazyArg<A>) => Sink<A, unknown, never, never, never>
 ```

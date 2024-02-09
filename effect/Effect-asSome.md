@@ -15,5 +15,5 @@ Effect.asSome
 **Signature**
 
 ```ts
-export declare const asSome: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, Option.Option<A>>
+export declare const asSome: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>
 ```

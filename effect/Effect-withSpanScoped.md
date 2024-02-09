@@ -25,9 +25,9 @@ export declare const withSpanScoped: {
       readonly root?: boolean | undefined
       readonly context?: Context.Context<never> | undefined
     }
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<Scope.Scope | Exclude<R, Tracer.ParentSpan>, E, A>
-  <R, E, A>(
-    self: Effect<R, E, A>,
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Scope.Scope | Exclude<R, Tracer.ParentSpan>>
+  <A, E, R>(
+    self: Effect<A, E, R>,
     name: string,
     options?: {
       readonly attributes?: Record<string, unknown> | undefined
@@ -36,6 +36,6 @@ export declare const withSpanScoped: {
       readonly root?: boolean | undefined
       readonly context?: Context.Context<never> | undefined
     }
-  ): Effect<Scope.Scope | Exclude<R, Tracer.ParentSpan>, E, A>
+  ): Effect<A, E, Scope.Scope | Exclude<R, Tracer.ParentSpan>>
 }
 ```

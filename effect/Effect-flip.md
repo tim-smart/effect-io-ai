@@ -14,5 +14,5 @@ Effect.flip
 **Signature**
 
 ```ts
-export declare const flip: <R, E, A>(self: Effect<R, E, A>) => Effect<R, A, E>
+export declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```

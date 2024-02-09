@@ -15,13 +15,16 @@ Stream.flattenEffect
 
 ```ts
 export declare const flattenEffect: {
-  (options?: {
-    readonly concurrency?: number | "unbounded" | undefined
-    readonly unordered?: boolean | undefined
-  }): <R, E, R2, E2, A>(self: Stream<R, E, Effect.Effect<R2, E2, A>>) => Stream<R | R2, E | E2, A>
+  (
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined }
+      | undefined
+  ): <R, E, R2, E2, A>(self: Stream<Effect.Effect<A, E2, R2>, E, R>) => Stream<A, E | E2, R | R2>
   <R, E, R2, E2, A>(
-    self: Stream<R, E, Effect.Effect<R2, E2, A>>,
-    options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined }
-  ): Stream<R | R2, E | E2, A>
+    self: Stream<Effect.Effect<A, E2, R2>, E, R>,
+    options?:
+      | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined }
+      | undefined
+  ): Stream<A, E | E2, R | R2>
 }
 ```

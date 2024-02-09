@@ -18,20 +18,16 @@ export declare const retainIf: {
   <K, V>(
     predicate: (key: K, value: V) => boolean,
     options: { readonly discard: true }
-  ): (self: TMap<K, V>) => STM.STM<never, never, void>
+  ): (self: TMap<K, V>) => STM.STM<void>
   <K, V>(
     predicate: (key: K, value: V) => boolean,
     options?: { readonly discard: false }
-  ): (self: TMap<K, V>) => STM.STM<never, never, [K, V][]>
-  <K, V>(
-    self: TMap<K, V>,
-    predicate: (key: K, value: V) => boolean,
-    options: { readonly discard: true }
-  ): STM.STM<never, never, void>
+  ): (self: TMap<K, V>) => STM.STM<[K, V][], never, never>
+  <K, V>(self: TMap<K, V>, predicate: (key: K, value: V) => boolean, options: { readonly discard: true }): STM.STM<void>
   <K, V>(
     self: TMap<K, V>,
     predicate: (key: K, value: V) => boolean,
     options?: { readonly discard: false }
-  ): STM.STM<never, never, [K, V][]>
+  ): STM.STM<[K, V][], never, never>
 }
 ```

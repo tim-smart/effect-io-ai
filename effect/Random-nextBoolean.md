@@ -13,5 +13,5 @@ Random.nextBoolean
 **Signature**
 
 ```ts
-export declare const nextBoolean: Effect.Effect<never, never, boolean>
+export declare const nextBoolean: Effect.Effect<boolean, never, never>
 ```

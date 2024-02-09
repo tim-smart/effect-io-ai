@@ -15,5 +15,5 @@ Schema.BigintFromNumber
 **Signature**
 
 ```ts
-export declare const BigintFromNumber: Schema<never, number, bigint>
+export declare const BigintFromNumber: Schema<bigint, number, never>
 ```

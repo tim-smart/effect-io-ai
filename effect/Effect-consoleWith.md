@@ -14,5 +14,5 @@ Effect.consoleWith
 **Signature**
 
 ```ts
-export declare const consoleWith: <R, E, A>(f: (console: Console) => Effect<R, E, A>) => Effect<R, E, A>
+export declare const consoleWith: <A, E, R>(f: (console: Console) => Effect<A, E, R>) => Effect<A, E, R>
 ```

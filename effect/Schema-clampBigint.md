@@ -16,5 +16,5 @@ Schema.clampBigint
 export declare const clampBigint: (
   minimum: bigint,
   maximum: bigint
-) => <R, I, A extends bigint>(self: Schema<R, I, A>) => Schema<R, I, A>
+) => <R, I, A extends bigint>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

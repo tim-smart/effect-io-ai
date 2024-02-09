@@ -14,5 +14,5 @@ Layer.succeedContext
 **Signature**
 
 ```ts
-export declare const succeedContext: <A>(context: Context.Context<A>) => Layer<never, never, A>
+export declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A, never, never>
 ```

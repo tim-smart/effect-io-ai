@@ -15,20 +15,20 @@ Effect.raceWith
 
 ```ts
 export declare const raceWith: {
-  <E, A, R1, E1, A1, R2, E2, A2, R3, E3, A3>(
-    other: Effect<R1, E1, A1>,
+  <A1, E1, R1, E, A, A2, E2, R2, A3, E3, R3>(
+    other: Effect<A1, E1, R1>,
     options: {
-      readonly onSelfDone: (exit: Exit.Exit<E, A>, fiber: Fiber.Fiber<E1, A1>) => Effect<R2, E2, A2>
-      readonly onOtherDone: (exit: Exit.Exit<E1, A1>, fiber: Fiber.Fiber<E, A>) => Effect<R3, E3, A3>
+      readonly onSelfDone: (exit: Exit.Exit<A, E>, fiber: Fiber.Fiber<A1, E1>) => Effect<A2, E2, R2>
+      readonly onOtherDone: (exit: Exit.Exit<A1, E1>, fiber: Fiber.Fiber<A, E>) => Effect<A3, E3, R3>
     }
-  ): <R>(self: Effect<R, E, A>) => Effect<R1 | R2 | R3 | R, E2 | E3, A2 | A3>
-  <R, E, A, R1, E1, A1, R2, E2, A2, R3, E3, A3>(
-    self: Effect<R, E, A>,
-    other: Effect<R1, E1, A1>,
+  ): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, E2 | E3, R1 | R2 | R3 | R>
+  <A, E, R, A1, E1, R1, A2, E2, R2, A3, E3, R3>(
+    self: Effect<A, E, R>,
+    other: Effect<A1, E1, R1>,
     options: {
-      readonly onSelfDone: (exit: Exit.Exit<E, A>, fiber: Fiber.Fiber<E1, A1>) => Effect<R2, E2, A2>
-      readonly onOtherDone: (exit: Exit.Exit<E1, A1>, fiber: Fiber.Fiber<E, A>) => Effect<R3, E3, A3>
+      readonly onSelfDone: (exit: Exit.Exit<A, E>, fiber: Fiber.Fiber<A1, E1>) => Effect<A2, E2, R2>
+      readonly onOtherDone: (exit: Exit.Exit<A1, E1>, fiber: Fiber.Fiber<A, E>) => Effect<A3, E3, R3>
     }
-  ): Effect<R | R1 | R2 | R3, E2 | E3, A2 | A3>
+  ): Effect<A2 | A3, E2 | E3, R | R1 | R2 | R3>
 }
 ```

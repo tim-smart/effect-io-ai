@@ -32,8 +32,6 @@ assert.deepStrictEqual(Equal.equals(mike1, john), false)
 
 ```ts
 export declare const Class: new <A extends Record<string, any> = {}>(
-  args: Types.Equals<Omit<A, keyof Equal.Equal>, {}> extends true
-    ? void
-    : { readonly [P in keyof A as P extends keyof Equal.Equal ? never : P]: A[P] }
-) => Data<Readonly<A>>
+  args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A]: A[P] }
+) => Readonly<A>
 ```

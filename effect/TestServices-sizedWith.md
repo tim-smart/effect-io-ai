@@ -14,7 +14,7 @@ TestServices.sizedWith
 **Signature**
 
 ```ts
-export declare const sizedWith: <R, E, A>(
-  f: (sized: Sized.TestSized) => Effect.Effect<R, E, A>
-) => Effect.Effect<R, E, A>
+export declare const sizedWith: <A, E, R>(
+  f: (sized: Sized.TestSized) => Effect.Effect<A, E, R>
+) => Effect.Effect<A, E, R>
 ```

@@ -13,5 +13,5 @@ TMap.fromIterable
 **Signature**
 
 ```ts
-export declare const fromIterable: <K, V>(iterable: Iterable<readonly [K, V]>) => STM.STM<never, never, TMap<K, V>>
+export declare const fromIterable: <K, V>(iterable: Iterable<readonly [K, V]>) => STM.STM<TMap<K, V>, never, never>
 ```

@@ -14,5 +14,5 @@ TestServices.withLiveScoped
 **Signature**
 
 ```ts
-export declare const withLiveScoped: (live: Live.TestLive) => Effect.Effect<Scope.Scope, never, void>
+export declare const withLiveScoped: (live: Live.TestLive) => Effect.Effect<void, never, Scope.Scope>
 ```

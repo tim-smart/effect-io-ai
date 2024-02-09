@@ -15,7 +15,7 @@ Exit.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): <E>(self: Exit<E, A>) => Exit<E, B>
-  <E, A, B>(self: Exit<E, A>, f: (a: A) => B): Exit<E, B>
+  <A, B>(f: (a: A) => B): <E>(self: Exit<A, E>) => Exit<B, E>
+  <A, E, B>(self: Exit<A, E>, f: (a: A) => B): Exit<B, E>
 }
 ```

@@ -14,5 +14,5 @@ Queue.isFull
 **Signature**
 
 ```ts
-export declare const isFull: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<never, never, boolean>
+export declare const isFull: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<boolean>
 ```

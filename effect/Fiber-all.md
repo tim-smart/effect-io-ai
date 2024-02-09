@@ -14,5 +14,5 @@ Fiber.all
 **Signature**
 
 ```ts
-export declare const all: <E, A>(fibers: Iterable<Fiber<E, A>>) => Fiber<E, readonly A[]>
+export declare const all: <A, E>(fibers: Iterable<Fiber<A, E>>) => Fiber<readonly A[], E>
 ```

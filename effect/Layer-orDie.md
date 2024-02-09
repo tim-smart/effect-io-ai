@@ -14,5 +14,5 @@ Layer.orDie
 **Signature**
 
 ```ts
-export declare const orDie: <R, E, A>(self: Layer<R, E, A>) => Layer<R, never, A>
+export declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```

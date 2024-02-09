@@ -13,5 +13,5 @@ Stream.zipWithIndex
 **Signature**
 
 ```ts
-export declare const zipWithIndex: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, [A, number]>
+export declare const zipWithIndex: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, number], E, R>
 ```

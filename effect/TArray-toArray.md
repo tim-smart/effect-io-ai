@@ -13,5 +13,5 @@ TArray.toArray
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: TArray<A>) => STM.STM<never, never, A[]>
+export declare const toArray: <A>(self: TArray<A>) => STM.STM<A[], never, never>
 ```

@@ -14,5 +14,5 @@ Effect.orDie
 **Signature**
 
 ```ts
-export declare const orDie: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, A>
+export declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```

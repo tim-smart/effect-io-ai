@@ -19,13 +19,13 @@ export declare const broadcast: {
   <N extends number>(
     n: N,
     maximumLag: number
-  ): <R, E, A>(
-    self: Stream<R, E, A>
-  ) => Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Stream<never, E, A>, N>>
-  <R, E, A, N extends number>(
-    self: Stream<R, E, A>,
+  ): <A, E, R>(
+    self: Stream<A, E, R>
+  ) => Effect.Effect<Stream.DynamicTuple<Stream<A, E, never>, N>, never, Scope.Scope | R>
+  <A, E, R, N extends number>(
+    self: Stream<A, E, R>,
     n: N,
     maximumLag: number
-  ): Effect.Effect<Scope.Scope | R, never, Stream.DynamicTuple<Stream<never, E, A>, N>>
+  ): Effect.Effect<Stream.DynamicTuple<Stream<A, E, never>, N>, never, Scope.Scope | R>
 }
 ```

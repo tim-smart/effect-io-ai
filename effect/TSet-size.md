@@ -13,5 +13,5 @@ TSet.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: TSet<A>) => STM.STM<never, never, number>
+export declare const size: <A>(self: TSet<A>) => STM.STM<number>
 ```

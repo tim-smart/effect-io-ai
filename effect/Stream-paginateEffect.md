@@ -17,6 +17,6 @@ Stream.paginateEffect
 ```ts
 export declare const paginateEffect: <S, R, E, A>(
   s: S,
-  f: (s: S) => Effect.Effect<R, E, readonly [A, Option.Option<S>]>
-) => Stream<R, E, A>
+  f: (s: S) => Effect.Effect<readonly [A, Option.Option<S>], E, R>
+) => Stream<A, E, R>
 ```

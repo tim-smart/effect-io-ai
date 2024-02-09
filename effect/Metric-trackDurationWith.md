@@ -19,11 +19,11 @@ export declare const trackDurationWith: {
   <Type, In, Out>(
     metric: Metric<Type, In, Out>,
     f: (duration: Duration.Duration) => In
-  ): <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  ): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
   <R, E, A, Type, In, Out>(
-    self: Effect.Effect<R, E, A>,
+    self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>,
     f: (duration: Duration.Duration) => In
-  ): Effect.Effect<R, E, A>
+  ): Effect.Effect<A, E, R>
 }
 ```

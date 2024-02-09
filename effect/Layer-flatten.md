@@ -14,7 +14,7 @@ Layer.flatten
 
 ```ts
 export declare const flatten: {
-  <R2, E2, A, I>(tag: Context.Tag<I, Layer<R2, E2, A>>): <R, E>(self: Layer<R, E, I>) => Layer<R2 | R, E2 | E, A>
-  <R, E, A, R2, E2, I>(self: Layer<R, E, I>, tag: Context.Tag<I, Layer<R2, E2, A>>): Layer<R | R2, E | E2, A>
+  <R2, E2, A, I>(tag: Context.Tag<I, Layer<A, E2, R2>>): <R, E>(self: Layer<I, E, R>) => Layer<A, E2 | E, R2 | R>
+  <R, E, A, R2, E2, I>(self: Layer<I, E, R>, tag: Context.Tag<I, Layer<A, E2, R2>>): Layer<A, E | E2, R | R2>
 }
 ```

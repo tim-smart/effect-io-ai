@@ -17,11 +17,11 @@ Stream.orElseEither
 ```ts
 export declare const orElseEither: {
   <R2, E2, A2>(
-    that: LazyArg<Stream<R2, E2, A2>>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R2 | R, E2, Either.Either<A, A2>>
+    that: LazyArg<Stream<A2, E2, R2>>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<A, A2>, E2, R2 | R>
   <R, E, A, R2, E2, A2>(
-    self: Stream<R, E, A>,
-    that: LazyArg<Stream<R2, E2, A2>>
-  ): Stream<R | R2, E2, Either.Either<A, A2>>
+    self: Stream<A, E, R>,
+    that: LazyArg<Stream<A2, E2, R2>>
+  ): Stream<Either.Either<A, A2>, E2, R | R2>
 }
 ```

@@ -15,13 +15,13 @@ Sink.dimapChunks
 
 ```ts
 export declare const dimapChunks: {
-  <In0, In, Z, Z2>(options: {
+  <In0, In, A, A2>(options: {
     readonly onInput: (chunk: Chunk.Chunk<In0>) => Chunk.Chunk<In>
-    readonly onDone: (z: Z) => Z2
-  }): <R, E, L>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In0, L, Z2>
-  <R, E, L, In0, In, Z, Z2>(
-    self: Sink<R, E, In, L, Z>,
-    options: { readonly onInput: (chunk: Chunk.Chunk<In0>) => Chunk.Chunk<In>; readonly onDone: (z: Z) => Z2 }
-  ): Sink<R, E, In0, L, Z2>
+    readonly onDone: (a: A) => A2
+  }): <L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A2, In0, L, E, R>
+  <A, In, L, E, R, In0, A2>(
+    self: Sink<A, In, L, E, R>,
+    options: { readonly onInput: (chunk: Chunk.Chunk<In0>) => Chunk.Chunk<In>; readonly onDone: (a: A) => A2 }
+  ): Sink<A2, In0, L, E, R>
 }
 ```

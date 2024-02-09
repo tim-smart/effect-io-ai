@@ -14,7 +14,7 @@ TMap.has
 
 ```ts
 export declare const has: {
-  <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<never, never, boolean>
-  <K, V>(self: TMap<K, V>, key: K): STM.STM<never, never, boolean>
+  <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<boolean>
+  <K, V>(self: TMap<K, V>, key: K): STM.STM<boolean>
 }
 ```

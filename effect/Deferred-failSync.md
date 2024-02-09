@@ -15,7 +15,7 @@ Deferred.failSync
 
 ```ts
 export declare const failSync: {
-  <E>(evaluate: LazyArg<E>): <A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, evaluate: LazyArg<E>): Effect.Effect<never, never, boolean>
+  <E>(evaluate: LazyArg<E>): <A>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, evaluate: LazyArg<E>): Effect.Effect<boolean>
 }
 ```

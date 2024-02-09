@@ -18,5 +18,5 @@ Stream.fromReadableStream
 export declare const fromReadableStream: <A, E>(
   evaluate: LazyArg<ReadableStream<A>>,
   onError: (error: unknown) => E
-) => Stream<never, E, A>
+) => Stream<A, E, never>
 ```

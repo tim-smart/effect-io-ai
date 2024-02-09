@@ -14,7 +14,7 @@ Effect.withConfigProvider
 
 ```ts
 export declare const withConfigProvider: {
-  (value: ConfigProvider): <R, E, A>(effect: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A>(effect: Effect<R, E, A>, value: ConfigProvider): Effect<R, E, A>
+  (value: ConfigProvider): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(effect: Effect<A, E, R>, value: ConfigProvider): Effect<A, E, R>
 }
 ```

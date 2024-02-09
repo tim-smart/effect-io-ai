@@ -14,5 +14,5 @@ Command.exitCode
 **Signature**
 
 ```ts
-export declare const exitCode: (self: Command) => Effect<CommandExecutor, PlatformError, ExitCode>
+export declare const exitCode: (self: Command) => Effect<ExitCode, PlatformError, CommandExecutor>
 ```

@@ -16,6 +16,6 @@ TestServices.withLive
 ```ts
 export declare const withLive: ((
   live: Live.TestLive
-) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>) &
-  (<R, E, A>(effect: Effect.Effect<R, E, A>, live: Live.TestLive) => Effect.Effect<R, E, A>)
+) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) &
+  (<A, E, R>(effect: Effect.Effect<A, E, R>, live: Live.TestLive) => Effect.Effect<A, E, R>)
 ```

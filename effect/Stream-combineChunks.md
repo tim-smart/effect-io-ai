@@ -19,23 +19,23 @@ Stream.combineChunks
 ```ts
 export declare const combineChunks: {
   <R2, E2, A2, S, R3, E, A, R4, R5, A3>(
-    that: Stream<R2, E2, A2>,
+    that: Stream<A2, E2, R2>,
     s: S,
     f: (
       s: S,
-      pullLeft: Effect.Effect<R3, Option.Option<E>, Chunk.Chunk<A>>,
-      pullRight: Effect.Effect<R4, Option.Option<E2>, Chunk.Chunk<A2>>
-    ) => Effect.Effect<R5, never, Exit.Exit<Option.Option<E2 | E>, readonly [Chunk.Chunk<A3>, S]>>
-  ): <R>(self: Stream<R, E, A>) => Stream<R2 | R3 | R4 | R5 | R, E2 | E, A3>
+      pullLeft: Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R3>,
+      pullRight: Effect.Effect<Chunk.Chunk<A2>, Option.Option<E2>, R4>
+    ) => Effect.Effect<Exit.Exit<readonly [Chunk.Chunk<A3>, S], Option.Option<E2 | E>>, never, R5>
+  ): <R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R3 | R4 | R5 | R>
   <R, R2, E2, A2, S, R3, E, A, R4, R5, A3>(
-    self: Stream<R, E, A>,
-    that: Stream<R2, E2, A2>,
+    self: Stream<A, E, R>,
+    that: Stream<A2, E2, R2>,
     s: S,
     f: (
       s: S,
-      pullLeft: Effect.Effect<R3, Option.Option<E>, Chunk.Chunk<A>>,
-      pullRight: Effect.Effect<R4, Option.Option<E2>, Chunk.Chunk<A2>>
-    ) => Effect.Effect<R5, never, Exit.Exit<Option.Option<E2 | E>, readonly [Chunk.Chunk<A3>, S]>>
-  ): Stream<R | R2 | R3 | R4 | R5, E2 | E, A3>
+      pullLeft: Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R3>,
+      pullRight: Effect.Effect<Chunk.Chunk<A2>, Option.Option<E2>, R4>
+    ) => Effect.Effect<Exit.Exit<readonly [Chunk.Chunk<A3>, S], Option.Option<E2 | E>>, never, R5>
+  ): Stream<A3, E2 | E, R | R2 | R3 | R4 | R5>
 }
 ```

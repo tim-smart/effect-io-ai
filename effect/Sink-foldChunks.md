@@ -20,5 +20,5 @@ export declare const foldChunks: <S, In>(
   s: S,
   contFn: Predicate<S>,
   f: (s: S, chunk: Chunk.Chunk<In>) => S
-) => Sink<never, never, In, never, S>
+) => Sink<S, In, never, never, never>
 ```

@@ -13,5 +13,5 @@ Stream.runDrain
 **Signature**
 
 ```ts
-export declare const runDrain: <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<R, E, void>
+export declare const runDrain: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<void, E, R>
 ```

@@ -13,5 +13,5 @@ Supervisor.track
 **Signature**
 
 ```ts
-export declare const track: Effect.Effect<never, never, Supervisor<Fiber.RuntimeFiber<any, any>[]>>
+export declare const track: Effect.Effect<Supervisor<Fiber.RuntimeFiber<any, any>[]>, never, never>
 ```

@@ -15,7 +15,7 @@ Sink.collectAllWhile
 
 ```ts
 export declare const collectAllWhile: {
-  <In, Out extends In>(refinement: Refinement<In, Out>): Sink<never, never, In, In, Chunk.Chunk<Out>>
-  <In>(predicate: Predicate<In>): Sink<never, never, In, In, Chunk.Chunk<In>>
+  <In, Out extends In>(refinement: Refinement<In, Out>): Sink<Chunk.Chunk<Out>, In, In, never, never>
+  <In>(predicate: Predicate<In>): Sink<Chunk.Chunk<In>, In, In, never, never>
 }
 ```

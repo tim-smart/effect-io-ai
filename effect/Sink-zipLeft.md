@@ -14,14 +14,14 @@ Sink.zipLeft
 
 ```ts
 export declare const zipLeft: {
-  <R2, E2, In, In2 extends In, L, L2, Z, Z2>(
-    that: Sink<R2, E2, In2, L2, Z2>,
-    options?: { readonly concurrent?: boolean | undefined }
-  ): <R, E>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In & In2, L | L2, Z>
-  <R, E, R2, E2, In, In2 extends In, L, L2, Z, Z2>(
-    self: Sink<R, E, In, L, Z>,
-    that: Sink<R2, E2, In2, L2, Z2>,
-    options?: { readonly concurrent?: boolean | undefined }
-  ): Sink<R | R2, E | E2, In & In2, L | L2, Z>
+  <A2, In, In2 extends In, L2, E2, R2>(
+    that: Sink<A2, In2, L2, E2, R2>,
+    options?: { readonly concurrent?: boolean | undefined } | undefined
+  ): <A, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In & In2, L2 | L, E2 | E, R2 | R>
+  <A, In, L, E, R, A2, In2 extends In, L2, E2, R2>(
+    self: Sink<A, In, L, E, R>,
+    that: Sink<A2, In2, L2, E2, R2>,
+    options?: { readonly concurrent?: boolean | undefined } | undefined
+  ): Sink<A, In & In2, L | L2, E | E2, R | R2>
 }
 ```

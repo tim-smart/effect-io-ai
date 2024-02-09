@@ -14,7 +14,7 @@ TArray.findFirst
 
 ```ts
 export declare const findFirst: {
-  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<never, never, Option.Option<A>>
-  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<never, never, Option.Option<A>>
+  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
+  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<Option.Option<A>, never, never>
 }
 ```

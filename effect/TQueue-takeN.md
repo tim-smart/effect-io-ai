@@ -16,7 +16,7 @@ TQueue.takeN
 
 ```ts
 export declare const takeN: {
-  (n: number): <A>(self: TDequeue<A>) => STM.STM<never, never, A[]>
-  <A>(self: TDequeue<A>, n: number): STM.STM<never, never, A[]>
+  (n: number): <A>(self: TDequeue<A>) => STM.STM<A[], never, never>
+  <A>(self: TDequeue<A>, n: number): STM.STM<A[], never, never>
 }
 ```

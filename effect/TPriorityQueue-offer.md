@@ -14,7 +14,7 @@ TPriorityQueue.offer
 
 ```ts
 export declare const offer: {
-  <A>(value: A): (self: TPriorityQueue<A>) => STM.STM<never, never, void>
-  <A>(self: TPriorityQueue<A>, value: A): STM.STM<never, never, void>
+  <A>(value: A): (self: TPriorityQueue<A>) => STM.STM<void>
+  <A>(self: TPriorityQueue<A>, value: A): STM.STM<void>
 }
 ```

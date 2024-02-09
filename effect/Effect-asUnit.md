@@ -16,5 +16,5 @@ Effect.asUnit
 **Signature**
 
 ```ts
-export declare const asUnit: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, void>
+export declare const asUnit: <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
 ```

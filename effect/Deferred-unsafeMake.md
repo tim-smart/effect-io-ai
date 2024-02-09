@@ -13,5 +13,5 @@ Deferred.unsafeMake
 **Signature**
 
 ```ts
-export declare const unsafeMake: <E, A>(fiberId: FiberId.FiberId) => Deferred<E, A>
+export declare const unsafeMake: <A, E = never>(fiberId: FiberId.FiberId) => Deferred<A, E>
 ```

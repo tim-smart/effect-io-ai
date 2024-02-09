@@ -13,7 +13,7 @@ Channel.unwrapScoped
 **Signature**
 
 ```ts
-export declare const unwrapScoped: <R, E, Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Effect.Effect<R, E, Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>>
-) => Channel<Env | Exclude<R, Scope.Scope>, InErr, InElem, InDone, E | OutErr, OutElem, OutDone>
+export declare const unwrapScoped: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, E, R>(
+  self: Effect.Effect<Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, E, R>
+) => Channel<OutElem, InElem, OutErr | E, InErr, OutDone, InDone, Env | Exclude<R, Scope.Scope>>
 ```

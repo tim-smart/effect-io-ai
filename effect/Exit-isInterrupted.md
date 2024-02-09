@@ -14,5 +14,5 @@ Exit.isInterrupted
 **Signature**
 
 ```ts
-export declare const isInterrupted: <E, A>(self: Exit<E, A>) => boolean
+export declare const isInterrupted: <A, E>(self: Exit<A, E>) => boolean
 ```

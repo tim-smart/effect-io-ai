@@ -15,5 +15,5 @@ TPubSub.bounded
 **Signature**
 
 ```ts
-export declare const bounded: <A>(requestedCapacity: number) => STM.STM<never, never, TPubSub<A>>
+export declare const bounded: <A>(requestedCapacity: number) => STM.STM<TPubSub<A>, never, never>
 ```

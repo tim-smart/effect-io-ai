@@ -16,9 +16,9 @@ Sink.ensuring
 
 ```ts
 export declare const ensuring: {
-  <R2, _>(
-    finalizer: Effect.Effect<R2, never, _>
-  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E, In, L, Z>
-  <R, E, In, L, Z, R2, _>(self: Sink<R, E, In, L, Z>, finalizer: Effect.Effect<R2, never, _>): Sink<R | R2, E, In, L, Z>
+  <_, R2>(
+    finalizer: Effect.Effect<_, never, R2>
+  ): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, L, E, R2 | R>
+  <A, In, L, E, R, _, R2>(self: Sink<A, In, L, E, R>, finalizer: Effect.Effect<_, never, R2>): Sink<A, In, L, E, R | R2>
 }
 ```

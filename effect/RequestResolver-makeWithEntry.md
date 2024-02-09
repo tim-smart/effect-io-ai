@@ -15,6 +15,6 @@ RequestResolver.makeWithEntry
 
 ```ts
 export declare const makeWithEntry: <R, A>(
-  runAll: (requests: Request.Entry<A>[][]) => Effect.Effect<R, never, void>
+  runAll: (requests: Request.Entry<A>[][]) => Effect.Effect<void, never, R>
 ) => RequestResolver<A, R>
 ```

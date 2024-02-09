@@ -13,5 +13,5 @@ STM.either
 **Signature**
 
 ```ts
-export declare const either: <R, E, A>(self: STM<R, E, A>) => STM<R, never, Either.Either<E, A>>
+export declare const either: <A, E, R>(self: STM<A, E, R>) => STM<Either.Either<E, A>, never, R>
 ```

@@ -14,7 +14,7 @@ Effect.annotateCurrentSpan
 
 ```ts
 export declare const annotateCurrentSpan: {
-  (key: string, value: unknown): Effect<never, never, void>
-  (values: Record<string, unknown>): Effect<never, never, void>
+  (key: string, value: unknown): Effect<void>
+  (values: Record<string, unknown>): Effect<void>
 }
 ```

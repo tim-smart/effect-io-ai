@@ -26,11 +26,11 @@ export declare const repeatElementsWith: {
   <R2, B, A, C>(
     schedule: Schedule.Schedule<R2, unknown, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
-  ): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E, C>
+  ): <R, E>(self: Stream<A, E, R>) => Stream<C, E, R2 | R>
   <R, E, R2, B, A, C>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     schedule: Schedule.Schedule<R2, unknown, B>,
     options: { readonly onElement: (a: A) => C; readonly onSchedule: (b: B) => C }
-  ): Stream<R | R2, E, C>
+  ): Stream<C, E, R | R2>
 }
 ```

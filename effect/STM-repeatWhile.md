@@ -25,7 +25,7 @@ STM.repeatWhile
 
 ```ts
 export declare const repeatWhile: {
-  <A>(predicate: Predicate<A>): <R, E>(self: STM<R, E, A>) => STM<R, E, A>
-  <R, E, A>(self: STM<R, E, A>, predicate: Predicate<A>): STM<R, E, A>
+  <A>(predicate: Predicate<A>): <R, E>(self: STM<A, E, R>) => STM<A, E, R>
+  <A, E, R>(self: STM<A, E, R>, predicate: Predicate<A>): STM<A, E, R>
 }
 ```

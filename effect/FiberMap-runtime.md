@@ -18,12 +18,12 @@ import { Context, Effect, FiberMap } from "effect"
 interface Users {
   readonly _: unique symbol
 }
-const Users = Context.Tag<
+const Users = Context.GenericTag<
   Users,
   {
-    getAll: Effect.Effect<never, never, Array<unknown>>
+    getAll: Effect.Effect<Array<unknown>>
   }
->()
+>("Users")
 
 Effect.gen(function* (_) {
   const map = yield* _(FiberMap.make<string>())
@@ -46,15 +46,15 @@ Effect.gen(function* (_) {
 **Signature**
 
 ```ts
-export declare const runtime: <K, E, A>(
-  self: FiberMap.FiberMap<K, E, A>
-) => <R>() => Effect.Effect<
-  R,
-  never,
+export declare const runtime: <K, A, E>(
+  self: FiberMap.FiberMap<K, A, E>
+) => <R = never>() => Effect.Effect<
   <XE extends E, XA extends A>(
     key: K,
-    effect: Effect.Effect<R, XE, XA>,
+    effect: Effect.Effect<XA, XE, R>,
     options?: Runtime.RunForkOptions | undefined
-  ) => Fiber.RuntimeFiber<XE, XA>
+  ) => Fiber.RuntimeFiber<XA, XE>,
+  never,
+  R
 >
 ```

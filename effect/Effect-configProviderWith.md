@@ -15,7 +15,7 @@ Effect.configProviderWith
 **Signature**
 
 ```ts
-export declare const configProviderWith: <R, E, A>(
-  f: (configProvider: ConfigProvider) => Effect<R, E, A>
-) => Effect<R, E, A>
+export declare const configProviderWith: <A, E, R>(
+  f: (configProvider: ConfigProvider) => Effect<A, E, R>
+) => Effect<A, E, R>
 ```

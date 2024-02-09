@@ -13,5 +13,5 @@ Exit.unit
 **Signature**
 
 ```ts
-export declare const unit: Exit<never, void>
+export declare const unit: Exit<void, never>
 ```

@@ -14,5 +14,5 @@ TReentrantLock.releaseWrite
 **Signature**
 
 ```ts
-export declare const releaseWrite: (self: TReentrantLock) => STM.STM<never, never, number>
+export declare const releaseWrite: (self: TReentrantLock) => STM.STM<number>
 ```

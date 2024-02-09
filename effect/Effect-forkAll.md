@@ -17,12 +17,12 @@ Effect.forkAll
 export declare const forkAll: {
   (options?: {
     readonly discard?: false | undefined
-  }): <R, E, A>(effects: Iterable<Effect<R, E, A>>) => Effect<R, never, Fiber.Fiber<E, A[]>>
-  (options: { readonly discard: true }): <R, E, A>(effects: Iterable<Effect<R, E, A>>) => Effect<R, never, void>
-  <R, E, A>(
-    effects: Iterable<Effect<R, E, A>>,
+  }): <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<Fiber.Fiber<A[], E>, never, R>
+  (options: { readonly discard: true }): <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<void, never, R>
+  <A, E, R>(
+    effects: Iterable<Effect<A, E, R>>,
     options?: { readonly discard?: false | undefined }
-  ): Effect<R, never, Fiber.Fiber<E, A[]>>
-  <R, E, A>(effects: Iterable<Effect<R, E, A>>, options: { readonly discard: true }): Effect<R, never, void>
+  ): Effect<Fiber.Fiber<A[], E>, never, R>
+  <A, E, R>(effects: Iterable<Effect<A, E, R>>, options: { readonly discard: true }): Effect<void, never, R>
 }
 ```

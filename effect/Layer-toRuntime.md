@@ -15,6 +15,6 @@ Layer.toRuntime
 
 ```ts
 export declare const toRuntime: <RIn, E, ROut>(
-  self: Layer<RIn, E, ROut>
-) => Effect.Effect<Scope.Scope | RIn, E, Runtime.Runtime<ROut>>
+  self: Layer<ROut, E, RIn>
+) => Effect.Effect<Runtime.Runtime<ROut>, E, Scope.Scope | RIn>
 ```

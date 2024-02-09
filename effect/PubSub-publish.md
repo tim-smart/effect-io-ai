@@ -15,7 +15,7 @@ PubSub.publish
 
 ```ts
 export declare const publish: {
-  <A>(value: A): (self: PubSub<A>) => Effect.Effect<never, never, boolean>
-  <A>(self: PubSub<A>, value: A): Effect.Effect<never, never, boolean>
+  <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>
+  <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>
 }
 ```

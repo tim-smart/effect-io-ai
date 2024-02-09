@@ -15,5 +15,5 @@ Deferred.interrupt
 **Signature**
 
 ```ts
-export declare const interrupt: <E, A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
+export declare const interrupt: <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>
 ```

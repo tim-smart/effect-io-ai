@@ -17,10 +17,10 @@ Stream.toPubSub
 export declare const toPubSub: {
   (
     capacity: number
-  ): <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, never, PubSub.PubSub<Take.Take<E, A>>>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+  ): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<PubSub.PubSub<Take.Take<A, E>>, never, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     capacity: number
-  ): Effect.Effect<Scope.Scope | R, never, PubSub.PubSub<Take.Take<E, A>>>
+  ): Effect.Effect<PubSub.PubSub<Take.Take<A, E>>, never, Scope.Scope | R>
 }
 ```

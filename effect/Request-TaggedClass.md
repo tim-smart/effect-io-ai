@@ -33,8 +33,8 @@ class MyRequest extends Request.TaggedClass("MyRequest")<
 export declare const TaggedClass: <Tag extends string>(
   tag: Tag
 ) => new <Error, Success, A extends Record<string, any>>(
-  args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true
+  args: Types.Equals<Omit<A, typeof RequestTypeId>, {}> extends true
     ? void
-    : { readonly [P in keyof A as P extends "_tag" | keyof Request<unknown, unknown> ? never : P]: A[P] }
-) => Request<Error, Success> & Readonly<A> & { readonly _tag: Tag }
+    : { readonly [P in keyof A as P extends "_tag" | typeof RequestTypeId ? never : P]: A[P] }
+) => Request<Success, Error> & Readonly<A> & { readonly _tag: Tag }
 ```

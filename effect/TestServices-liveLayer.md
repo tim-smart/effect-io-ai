@@ -13,5 +13,5 @@ TestServices.liveLayer
 **Signature**
 
 ```ts
-export declare const liveLayer: () => Layer.Layer<DefaultServices.DefaultServices, never, Live.TestLive>
+export declare const liveLayer: () => Layer.Layer<Live.TestLive, never, DefaultServices.DefaultServices>
 ```

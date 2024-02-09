@@ -13,5 +13,5 @@ STM.check
 **Signature**
 
 ```ts
-export declare const check: (predicate: LazyArg<boolean>) => STM<never, never, void>
+export declare const check: (predicate: LazyArg<boolean>) => STM<void>
 ```

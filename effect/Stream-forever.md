@@ -13,5 +13,5 @@ Stream.forever
 **Signature**
 
 ```ts
-export declare const forever: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
+export declare const forever: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```

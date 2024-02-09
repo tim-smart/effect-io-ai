@@ -14,5 +14,5 @@ Deferred.unsafeDone
 **Signature**
 
 ```ts
-export declare const unsafeDone: <E, A>(self: Deferred<E, A>, effect: Effect.Effect<never, E, A>) => void
+export declare const unsafeDone: <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E, never>) => void
 ```

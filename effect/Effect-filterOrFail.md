@@ -47,16 +47,16 @@ export declare const filterOrFail: {
   <A, B extends A, E2>(
     refinement: Refinement<NoInfer<A>, B>,
     orFailWith: (a: NoInfer<A>) => E2
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, B>
+  ): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R>
   <A, E2>(
     predicate: Predicate<NoInfer<A>>,
     orFailWith: (a: NoInfer<A>) => E2
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R, E2 | E, A>
-  <R, E, A, B extends A, E2>(
-    self: Effect<R, E, A>,
+  ): <E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R>
+  <A, E, R, B extends A, E2>(
+    self: Effect<A, E, R>,
     refinement: Refinement<A, B>,
     orFailWith: (a: A) => E2
-  ): Effect<R, E | E2, B>
-  <R, E, A, E2>(self: Effect<R, E, A>, predicate: Predicate<A>, orFailWith: (a: A) => E2): Effect<R, E | E2, A>
+  ): Effect<B, E | E2, R>
+  <A, E, R, E2>(self: Effect<A, E, R>, predicate: Predicate<A>, orFailWith: (a: A) => E2): Effect<A, E | E2, R>
 }
 ```

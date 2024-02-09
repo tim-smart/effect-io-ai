@@ -13,5 +13,5 @@ Effect.inheritFiberRefs
 **Signature**
 
 ```ts
-export declare const inheritFiberRefs: (childFiberRefs: FiberRefs.FiberRefs) => Effect<never, never, void>
+export declare const inheritFiberRefs: (childFiberRefs: FiberRefs.FiberRefs) => Effect<void>
 ```

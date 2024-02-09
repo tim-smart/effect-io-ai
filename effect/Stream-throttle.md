@@ -30,9 +30,9 @@ export declare const throttle: {
     readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
     readonly strategy?: "enforce" | "shape" | undefined
-  }): <R, E>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+  }): <R, E>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     options: {
       readonly cost: (chunk: Chunk.Chunk<A>) => number
       readonly units: number
@@ -40,6 +40,6 @@ export declare const throttle: {
       readonly burst?: number | undefined
       readonly strategy?: "enforce" | "shape" | undefined
     }
-  ): Stream<R, E, A>
+  ): Stream<A, E, R>
 }
 ```

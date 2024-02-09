@@ -16,5 +16,5 @@ Schedule.driver
 ```ts
 export declare const driver: <Env, In, Out>(
   self: Schedule<Env, In, Out>
-) => Effect.Effect<never, never, ScheduleDriver<Env, In, Out>>
+) => Effect.Effect<ScheduleDriver<Env, In, Out>, never, never>
 ```

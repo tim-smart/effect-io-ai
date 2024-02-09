@@ -16,11 +16,11 @@ Schedule.modifyDelayEffect
 ```ts
 export declare const modifyDelayEffect: {
   <Out, Env2>(
-    f: (out: Out, duration: Duration.Duration) => Effect.Effect<Env2, never, Duration.DurationInput>
+    f: (out: Out, duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, Env2>
   ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
   <Env, In, Out, Env2>(
     self: Schedule<Env, In, Out>,
-    f: (out: Out, duration: Duration.Duration) => Effect.Effect<Env2, never, Duration.DurationInput>
+    f: (out: Out, duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, Env2>
   ): Schedule<Env | Env2, In, Out>
 }
 ```

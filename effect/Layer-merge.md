@@ -15,11 +15,11 @@ Layer.merge
 ```ts
 export declare const merge: {
   <RIn2, E2, ROut2>(
-    that: Layer<RIn2, E2, ROut2>
-  ): <RIn, E1, ROut>(self: Layer<RIn, E1, ROut>) => Layer<RIn2 | RIn, E2 | E1, ROut2 | ROut>
+    that: Layer<ROut2, E2, RIn2>
+  ): <RIn, E1, ROut>(self: Layer<ROut, E1, RIn>) => Layer<ROut2 | ROut, E2 | E1, RIn2 | RIn>
   <RIn, E1, ROut, RIn2, E2, ROut2>(
-    self: Layer<RIn, E1, ROut>,
-    that: Layer<RIn2, E2, ROut2>
-  ): Layer<RIn | RIn2, E1 | E2, ROut | ROut2>
+    self: Layer<ROut, E1, RIn>,
+    that: Layer<ROut2, E2, RIn2>
+  ): Layer<ROut | ROut2, E1 | E2, RIn | RIn2>
 }
 ```

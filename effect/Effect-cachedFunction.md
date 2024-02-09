@@ -13,8 +13,8 @@ Effect.cachedFunction
 **Signature**
 
 ```ts
-export declare const cachedFunction: <R, E, A, B>(
-  f: (a: A) => Effect<R, E, B>,
+export declare const cachedFunction: <A, B, E, R>(
+  f: (a: A) => Effect<B, E, R>,
   eq?: Equivalence<A> | undefined
-) => Effect<never, never, (a: A) => Effect<R, E, B>>
+) => Effect<(a: A) => Effect<B, E, R>, never, never>
 ```

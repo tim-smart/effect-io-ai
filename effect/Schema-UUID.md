@@ -15,5 +15,5 @@ Schema.UUID
 **Signature**
 
 ```ts
-export declare const UUID: Schema<never, string, string>
+export declare const UUID: Schema<string, string, never>
 ```

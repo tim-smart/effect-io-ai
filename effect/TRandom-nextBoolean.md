@@ -13,5 +13,5 @@ TRandom.nextBoolean
 **Signature**
 
 ```ts
-export declare const nextBoolean: STM.STM<TRandom, never, boolean>
+export declare const nextBoolean: STM.STM<boolean, never, TRandom>
 ```

@@ -14,5 +14,5 @@ Effect.withClockScoped
 **Signature**
 
 ```ts
-export declare const withClockScoped: <A extends Clock.Clock>(value: A) => Effect<Scope.Scope, never, void>
+export declare const withClockScoped: <A extends Clock.Clock>(value: A) => Effect<void, never, Scope.Scope>
 ```

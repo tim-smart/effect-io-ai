@@ -14,6 +14,6 @@ GroupBy.make
 
 ```ts
 export declare const make: <R, E, K, V>(
-  grouped: Stream.Stream<R, E, readonly [K, Queue.Dequeue<Take.Take<E, V>>]>
+  grouped: Stream.Stream<readonly [K, Queue.Dequeue<Take.Take<V, E>>], E, R>
 ) => GroupBy<R, E, K, V>
 ```

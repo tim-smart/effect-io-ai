@@ -32,18 +32,18 @@ export declare const loop: {
     options: {
       readonly while: Predicate<Z>
       readonly step: (z: Z) => Z
-      readonly body: (z: Z) => STM<R, E, A>
+      readonly body: (z: Z) => STM<A, E, R>
       readonly discard?: false | undefined
     }
-  ): STM<R, E, A[]>
+  ): STM<A[], E, R>
   <Z, R, E, A>(
     initial: Z,
     options: {
       readonly while: Predicate<Z>
       readonly step: (z: Z) => Z
-      readonly body: (z: Z) => STM<R, E, A>
+      readonly body: (z: Z) => STM<A, E, R>
       readonly discard: true
     }
-  ): STM<R, E, void>
+  ): STM<void, E, R>
 }
 ```

@@ -14,5 +14,5 @@ TestClock.currentTimeMillis
 **Signature**
 
 ```ts
-export declare const currentTimeMillis: Effect.Effect<never, never, number>
+export declare const currentTimeMillis: Effect.Effect<number, never, never>
 ```

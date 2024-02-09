@@ -13,5 +13,5 @@ FiberRefs.setAll
 **Signature**
 
 ```ts
-export declare const setAll: (self: FiberRefs) => Effect.Effect<never, never, void>
+export declare const setAll: (self: FiberRefs) => Effect.Effect<void>
 ```

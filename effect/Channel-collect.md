@@ -15,14 +15,14 @@ Channel.collect
 
 ```ts
 export declare const collect: {
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutElem2, OutDone>(
+  <OutElem, OutElem2>(
     pf: (o: OutElem) => Option.Option<OutElem2>
-  ): (
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem2, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutElem2, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, unknown, never, unknown, void, unknown, never>
+  ) => Channel<OutElem2, InElem, OutErr, InErr, OutDone, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem2>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     pf: (o: OutElem) => Option.Option<OutElem2>
-  ): Channel<Env, InErr, InElem, InDone, OutErr, OutElem2, OutDone>
+  ): Channel<OutElem2, InElem, OutErr, InErr, OutDone, InDone, Env>
 }
 ```

@@ -15,5 +15,5 @@ Reloadable.reload
 ```ts
 export declare const reload: <T extends Context.Tag<any, any>>(
   tag: T
-) => Effect.Effect<Reloadable<Context.Tag.Identifier<T>>, unknown, void>
+) => Effect.Effect<void, unknown, Reloadable<Context.Tag.Identifier<T>>>
 ```

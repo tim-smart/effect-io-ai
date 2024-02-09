@@ -13,5 +13,5 @@ Fiber.status
 **Signature**
 
 ```ts
-export declare const status: <E, A>(self: RuntimeFiber<E, A>) => Effect.Effect<never, never, FiberStatus.FiberStatus>
+export declare const status: <A, E>(self: RuntimeFiber<A, E>) => Effect.Effect<FiberStatus.FiberStatus>
 ```

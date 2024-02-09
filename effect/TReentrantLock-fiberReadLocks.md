@@ -13,5 +13,5 @@ TReentrantLock.fiberReadLocks
 **Signature**
 
 ```ts
-export declare const fiberReadLocks: (self: TReentrantLock) => STM.STM<never, never, number>
+export declare const fiberReadLocks: (self: TReentrantLock) => STM.STM<number>
 ```

@@ -18,7 +18,7 @@ export declare const refineOrDieWith: {
   <E, E2>(
     pf: (error: E) => Option.Option<E2>,
     f: (error: E) => unknown
-  ): <R, A>(self: Stream<R, E, A>) => Stream<R, E2, A>
-  <R, A, E, E2>(self: Stream<R, E, A>, pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): Stream<R, E2, A>
+  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E2, R>
+  <R, A, E, E2>(self: Stream<A, E, R>, pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): Stream<A, E2, R>
 }
 ```

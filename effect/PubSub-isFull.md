@@ -14,5 +14,5 @@ PubSub.isFull
 **Signature**
 
 ```ts
-export declare const isFull: <A>(self: PubSub<A>) => Effect.Effect<never, never, boolean>
+export declare const isFull: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```

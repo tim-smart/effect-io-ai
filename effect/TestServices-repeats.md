@@ -13,5 +13,5 @@ TestServices.repeats
 **Signature**
 
 ```ts
-export declare const repeats: Effect.Effect<never, never, number>
+export declare const repeats: Effect.Effect<number, never, never>
 ```

@@ -13,7 +13,7 @@ Channel.suspend
 **Signature**
 
 ```ts
-export declare const suspend: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  evaluate: LazyArg<Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>>
-) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+export declare const suspend: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+  evaluate: LazyArg<Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>>
+) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
 ```

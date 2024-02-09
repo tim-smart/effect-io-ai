@@ -14,7 +14,7 @@ Request.interruptWhenPossible
 
 ```ts
 export declare const interruptWhenPossible: {
-  (all: Iterable<Request<any, any>>): <R, E, A>(self: Effect.Effect<R, E, A>) => Effect.Effect<R, E, void>
-  <R, E, A>(self: Effect.Effect<R, E, A>, all: Iterable<Request<any, any>>): Effect.Effect<R, E, void>
+  (all: Iterable<Request<any, any>>): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<void, E, R>
+  <A, E, R>(self: Effect.Effect<A, E, R>, all: Iterable<Request<any, any>>): Effect.Effect<void, E, R>
 }
 ```

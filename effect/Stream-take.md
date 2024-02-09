@@ -14,7 +14,7 @@ Stream.take
 
 ```ts
 export declare const take: {
-  (n: number): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(self: Stream<R, E, A>, n: number): Stream<R, E, A>
+  (n: number): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A, E, R>(self: Stream<A, E, R>, n: number): Stream<A, E, R>
 }
 ```

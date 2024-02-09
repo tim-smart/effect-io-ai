@@ -19,5 +19,5 @@ export declare const fromReadableStreamByob: <E>(
   evaluate: LazyArg<ReadableStream<Uint8Array>>,
   onError: (error: unknown) => E,
   allocSize?: number
-) => Stream<never, E, Uint8Array>
+) => Stream<Uint8Array, E, never>
 ```

@@ -16,11 +16,11 @@ Stream.whenCaseEffect
 ```ts
 export declare const whenCaseEffect: {
   <A, R2, E2, A2>(
-    pf: (a: A) => Option.Option<Stream<R2, E2, A2>>
-  ): <R, E>(self: Effect.Effect<R, E, A>) => Stream<R2 | R, E2 | E, A2>
+    pf: (a: A) => Option.Option<Stream<A2, E2, R2>>
+  ): <R, E>(self: Effect.Effect<A, E, R>) => Stream<A2, E2 | E, R2 | R>
   <R, E, A, R2, E2, A2>(
-    self: Effect.Effect<R, E, A>,
-    pf: (a: A) => Option.Option<Stream<R2, E2, A2>>
-  ): Stream<R | R2, E | E2, A2>
+    self: Effect.Effect<A, E, R>,
+    pf: (a: A) => Option.Option<Stream<A2, E2, R2>>
+  ): Stream<A2, E | E2, R | R2>
 }
 ```

@@ -14,7 +14,7 @@ TArray.maxOption
 
 ```ts
 export declare const maxOption: {
-  <A>(order: Order.Order<A>): (self: TArray<A>) => STM.STM<never, never, Option.Option<A>>
-  <A>(self: TArray<A>, order: Order.Order<A>): STM.STM<never, never, Option.Option<A>>
+  <A>(order: Order.Order<A>): (self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
+  <A>(self: TArray<A>, order: Order.Order<A>): STM.STM<Option.Option<A>, never, never>
 }
 ```

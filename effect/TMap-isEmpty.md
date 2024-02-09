@@ -13,5 +13,5 @@ TMap.isEmpty
 **Signature**
 
 ```ts
-export declare const isEmpty: <K, V>(self: TMap<K, V>) => STM.STM<never, never, boolean>
+export declare const isEmpty: <K, V>(self: TMap<K, V>) => STM.STM<boolean>
 ```

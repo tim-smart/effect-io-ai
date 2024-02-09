@@ -14,5 +14,5 @@ Scope.addFinalizerExit
 **Signature**
 
 ```ts
-export declare const addFinalizerExit: (self: Scope, finalizer: Scope.Finalizer) => Effect.Effect<never, never, void>
+export declare const addFinalizerExit: (self: Scope, finalizer: Scope.Finalizer) => Effect.Effect<void>
 ```

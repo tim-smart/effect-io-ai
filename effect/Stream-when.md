@@ -15,7 +15,7 @@ Stream.when
 
 ```ts
 export declare const when: {
-  (test: LazyArg<boolean>): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(self: Stream<R, E, A>, test: LazyArg<boolean>): Stream<R, E, A>
+  (test: LazyArg<boolean>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A, E, R>(self: Stream<A, E, R>, test: LazyArg<boolean>): Stream<A, E, R>
 }
 ```

@@ -16,8 +16,8 @@ Stream.asyncOption
 **Signature**
 
 ```ts
-export declare const asyncOption: <R, E, A>(
-  register: (emit: Emit.Emit<R, E, A, void>) => Option.Option<Stream<R, E, A>>,
+export declare const asyncOption: <A, E = never, R = never>(
+  register: (emit: Emit.Emit<R, E, A, void>) => Option.Option<Stream<A, E, R>>,
   outputBuffer?: number
-) => Stream<R, E, A>
+) => Stream<A, E, R>
 ```

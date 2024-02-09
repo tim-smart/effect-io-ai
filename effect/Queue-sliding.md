@@ -20,5 +20,5 @@ Queue.sliding
 **Signature**
 
 ```ts
-export declare const sliding: <A>(requestedCapacity: number) => Effect.Effect<never, never, Queue<A>>
+export declare const sliding: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>, never, never>
 ```

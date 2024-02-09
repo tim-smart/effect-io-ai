@@ -15,5 +15,5 @@ Schema.lowercased
 ```ts
 export declare const lowercased: <A extends string>(
   options?: FilterAnnotations<A> | undefined
-) => <R, I>(self: Schema<R, I, A>) => Schema<R, I, A>
+) => <I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

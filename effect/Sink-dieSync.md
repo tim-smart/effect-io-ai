@@ -13,5 +13,5 @@ Sink.dieSync
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Sink<never, never, unknown, never, never>
+export declare const dieSync: (evaluate: LazyArg<unknown>) => Sink<never, unknown>
 ```

@@ -16,7 +16,7 @@ TQueue.takeBetween
 
 ```ts
 export declare const takeBetween: {
-  (min: number, max: number): <A>(self: TDequeue<A>) => STM.STM<never, never, A[]>
-  <A>(self: TDequeue<A>, min: number, max: number): STM.STM<never, never, A[]>
+  (min: number, max: number): <A>(self: TDequeue<A>) => STM.STM<A[], never, never>
+  <A>(self: TDequeue<A>, min: number, max: number): STM.STM<A[], never, never>
 }
 ```

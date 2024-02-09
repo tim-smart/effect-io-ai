@@ -13,5 +13,5 @@ Effect.contextWith
 **Signature**
 
 ```ts
-export declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<R, never, A>
+export declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<A, never, R>
 ```

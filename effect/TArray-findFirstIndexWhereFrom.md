@@ -15,7 +15,7 @@ TArray.findFirstIndexWhereFrom
 
 ```ts
 export declare const findFirstIndexWhereFrom: {
-  <A>(predicate: Predicate<A>, from: number): (self: TArray<A>) => STM.STM<never, never, Option.Option<number>>
-  <A>(self: TArray<A>, predicate: Predicate<A>, from: number): STM.STM<never, never, Option.Option<number>>
+  <A>(predicate: Predicate<A>, from: number): (self: TArray<A>) => STM.STM<Option.Option<number>>
+  <A>(self: TArray<A>, predicate: Predicate<A>, from: number): STM.STM<Option.Option<number>>
 }
 ```

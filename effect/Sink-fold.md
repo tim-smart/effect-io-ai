@@ -17,6 +17,6 @@ Sink.fold
 export declare const fold: <S, In>(
   s: S,
   contFn: Predicate<S>,
-  f: (z: S, input: In) => S
-) => Sink<never, never, In, In, S>
+  f: (s: S, input: In) => S
+) => Sink<S, In, In, never, never>
 ```

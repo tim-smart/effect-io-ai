@@ -13,5 +13,5 @@ STM.fiberId
 **Signature**
 
 ```ts
-export declare const fiberId: STM<never, never, FiberId.FiberId>
+export declare const fiberId: STM<FiberId.FiberId, never, never>
 ```

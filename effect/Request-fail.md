@@ -14,7 +14,7 @@ Request.fail
 
 ```ts
 export declare const fail: {
-  <A extends Request<any, any>>(error: Request.Error<A>): (self: A) => Effect.Effect<never, never, void>
-  <A extends Request<any, any>>(self: A, error: Request.Error<A>): Effect.Effect<never, never, void>
+  <A extends Request<any, any>>(error: Request.Error<A>): (self: A) => Effect.Effect<void>
+  <A extends Request<any, any>>(self: A, error: Request.Error<A>): Effect.Effect<void>
 }
 ```

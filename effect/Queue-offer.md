@@ -14,7 +14,7 @@ Queue.offer
 
 ```ts
 export declare const offer: {
-  <A>(value: A): (self: Enqueue<A>) => Effect.Effect<never, never, boolean>
-  <A>(self: Enqueue<A>, value: A): Effect.Effect<never, never, boolean>
+  <A>(value: A): (self: Enqueue<A>) => Effect.Effect<boolean>
+  <A>(self: Enqueue<A>, value: A): Effect.Effect<boolean>
 }
 ```

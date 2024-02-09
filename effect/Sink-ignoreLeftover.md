@@ -13,5 +13,5 @@ Sink.ignoreLeftover
 **Signature**
 
 ```ts
-export declare const ignoreLeftover: <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, never, Z>
+export declare const ignoreLeftover: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, never, E, R>
 ```

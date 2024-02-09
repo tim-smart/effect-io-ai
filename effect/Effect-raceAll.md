@@ -15,5 +15,5 @@ Effect.raceAll
 **Signature**
 
 ```ts
-export declare const raceAll: <R, E, A>(effects: Iterable<Effect<R, E, A>>) => Effect<R, E, A>
+export declare const raceAll: <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<A, E, R>
 ```

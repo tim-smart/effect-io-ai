@@ -14,5 +14,5 @@ Stream.drain
 **Signature**
 
 ```ts
-export declare const drain: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, never>
+export declare const drain: <A, E, R>(self: Stream<A, E, R>) => Stream<never, E, R>
 ```

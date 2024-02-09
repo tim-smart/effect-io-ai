@@ -15,9 +15,9 @@ Effect.flipWith
 
 ```ts
 export declare const flipWith: {
-  <R, A, E, R2, A2, E2>(
-    f: (effect: Effect<R, A, E>) => Effect<R2, A2, E2>
-  ): (self: Effect<R, E, A>) => Effect<R2, E2, A2>
-  <R, A, E, R2, A2, E2>(self: Effect<R, E, A>, f: (effect: Effect<R, A, E>) => Effect<R2, A2, E2>): Effect<R2, E2, A2>
+  <E, A, R, E2, A2, R2>(
+    f: (effect: Effect<E, A, R>) => Effect<E2, A2, R2>
+  ): (self: Effect<A, E, R>) => Effect<A2, E2, R2>
+  <A, E, R, E2, A2, R2>(self: Effect<A, E, R>, f: (effect: Effect<E, A, R>) => Effect<E2, A2, R2>): Effect<A2, E2, R2>
 }
 ```

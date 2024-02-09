@@ -16,7 +16,7 @@ Stream.broadcastDynamic
 
 ```ts
 export declare const broadcastDynamic: {
-  (maximumLag: number): <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R, never, Stream<never, E, A>>
-  <R, E, A>(self: Stream<R, E, A>, maximumLag: number): Effect.Effect<Scope.Scope | R, never, Stream<never, E, A>>
+  (maximumLag: number): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Stream<A, E, never>, never, Scope.Scope | R>
+  <A, E, R>(self: Stream<A, E, R>, maximumLag: number): Effect.Effect<Stream<A, E, never>, never, Scope.Scope | R>
 }
 ```

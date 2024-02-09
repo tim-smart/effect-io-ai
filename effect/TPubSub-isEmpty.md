@@ -13,5 +13,5 @@ TPubSub.isEmpty
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: TPubSub<A>) => STM.STM<never, never, boolean>
+export declare const isEmpty: <A>(self: TPubSub<A>) => STM.STM<boolean>
 ```

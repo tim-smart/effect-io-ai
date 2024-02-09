@@ -15,7 +15,7 @@ STM.orElseSucceed
 
 ```ts
 export declare const orElseSucceed: {
-  <A2>(value: LazyArg<A2>): <R, E, A>(self: STM<R, E, A>) => STM<R, never, A2 | A>
-  <R, E, A, A2>(self: STM<R, E, A>, value: LazyArg<A2>): STM<R, never, A | A2>
+  <A2>(value: LazyArg<A2>): <A, E, R>(self: STM<A, E, R>) => STM<A2 | A, never, R>
+  <R, E, A, A2>(self: STM<A, E, R>, value: LazyArg<A2>): STM<A | A2, never, R>
 }
 ```

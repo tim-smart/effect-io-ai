@@ -15,5 +15,5 @@ TestClock.adjust
 **Signature**
 
 ```ts
-export declare const adjust: (durationInput: Duration.DurationInput) => Effect.Effect<never, never, void>
+export declare const adjust: (durationInput: Duration.DurationInput) => Effect.Effect<void>
 ```

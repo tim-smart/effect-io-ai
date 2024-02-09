@@ -14,5 +14,5 @@ Effect.patchFiberRefs
 **Signature**
 
 ```ts
-export declare const patchFiberRefs: (patch: FiberRefsPatch.FiberRefsPatch) => Effect<never, never, void>
+export declare const patchFiberRefs: (patch: FiberRefsPatch.FiberRefsPatch) => Effect<void>
 ```

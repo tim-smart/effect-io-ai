@@ -18,12 +18,12 @@ Sink.flatMap
 
 ```ts
 export declare const flatMap: {
-  <R1, E1, In, In1 extends In, L, L1, Z, Z1>(
-    f: (z: Z) => Sink<R1, E1, In1, L1, Z1>
-  ): <R, E>(self: Sink<R, E, In, L, Z>) => Sink<R1 | R, E1 | E, In & In1, L | L1, Z1>
-  <R, E, R1, E1, In, In1 extends In, L, L1, Z, Z1>(
-    self: Sink<R, E, In, L, Z>,
-    f: (z: Z) => Sink<R1, E1, In1, L1, Z1>
-  ): Sink<R | R1, E | E1, In & In1, L | L1, Z1>
+  <A, A1, In, In1 extends In, L1, E1, R1>(
+    f: (a: A) => Sink<A1, In1, L1, E1, R1>
+  ): <L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A1, In & In1, L1 | L, E1 | E, R1 | R>
+  <A, In, L, E, R, A1, In1 extends In, L1, E1, R1>(
+    self: Sink<A, In, L, E, R>,
+    f: (a: A) => Sink<A1, In1, L1, E1, R1>
+  ): Sink<A1, In & In1, L | L1, E | E1, R | R1>
 }
 ```

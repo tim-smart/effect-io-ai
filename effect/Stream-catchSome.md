@@ -16,11 +16,11 @@ Stream.catchSome
 ```ts
 export declare const catchSome: {
   <E, R2, E2, A2>(
-    pf: (error: E) => Option.Option<Stream<R2, E2, A2>>
-  ): <R, A>(self: Stream<R, E, A>) => Stream<R2 | R, E | E2, A2 | A>
+    pf: (error: E) => Option.Option<Stream<A2, E2, R2>>
+  ): <R, A>(self: Stream<A, E, R>) => Stream<A2 | A, E | E2, R2 | R>
   <R, A, E, R2, E2, A2>(
-    self: Stream<R, E, A>,
-    pf: (error: E) => Option.Option<Stream<R2, E2, A2>>
-  ): Stream<R | R2, E | E2, A | A2>
+    self: Stream<A, E, R>,
+    pf: (error: E) => Option.Option<Stream<A2, E2, R2>>
+  ): Stream<A | A2, E | E2, R | R2>
 }
 ```

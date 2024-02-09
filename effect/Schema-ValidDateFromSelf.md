@@ -13,5 +13,5 @@ Schema.ValidDateFromSelf
 **Signature**
 
 ```ts
-export declare const ValidDateFromSelf: Schema<never, Date, Date>
+export declare const ValidDateFromSelf: Schema<Date, Date, never>
 ```

@@ -16,7 +16,7 @@ Fiber.orElse
 
 ```ts
 export declare const orElse: {
-  <E2, A2>(that: Fiber<E2, A2>): <E, A>(self: Fiber<E, A>) => Fiber<E2 | E, A2 | A>
-  <E, A, E2, A2>(self: Fiber<E, A>, that: Fiber<E2, A2>): Fiber<E | E2, A | A2>
+  <A2, E2>(that: Fiber<A2, E2>): <A, E>(self: Fiber<A, E>) => Fiber<A2 | A, E2 | E>
+  <A, E, A2, E2>(self: Fiber<A, E>, that: Fiber<A2, E2>): Fiber<A | A2, E | E2>
 }
 ```

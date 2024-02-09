@@ -13,5 +13,5 @@ Take.dieMessage
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Take<never, never>
+export declare const dieMessage: (message: string) => Take<never>
 ```

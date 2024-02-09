@@ -15,7 +15,7 @@ Effect.as
 
 ```ts
 export declare const as: {
-  <B>(value: B): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, B>
-  <R, E, A, B>(self: Effect<R, E, A>, value: B): Effect<R, E, B>
+  <B>(value: B): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E, R>
+  <A, E, R, B>(self: Effect<A, E, R>, value: B): Effect<B, E, R>
 }
 ```

@@ -13,5 +13,5 @@ Stream.repeatValue
 **Signature**
 
 ```ts
-export declare const repeatValue: <A>(value: A) => Stream<never, never, A>
+export declare const repeatValue: <A>(value: A) => Stream<A, never, never>
 ```

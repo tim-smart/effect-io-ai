@@ -16,14 +16,14 @@ Channel.ensuring
 
 ```ts
 export declare const ensuring: {
-  <Env1, Z>(
-    finalizer: Effect.Effect<Env1, never, Z>
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env1 | Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, Z>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    finalizer: Effect.Effect<Env1, never, Z>
-  ): Channel<Env | Env1, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  <Z, Env1>(
+    finalizer: Effect.Effect<Z, never, Env1>
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env1 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, Z, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    finalizer: Effect.Effect<Z, never, Env1>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | Env1>
 }
 ```

@@ -15,5 +15,5 @@ TestClock.setTime
 **Signature**
 
 ```ts
-export declare const setTime: (instant: number) => Effect.Effect<never, never, void>
+export declare const setTime: (instant: number) => Effect.Effect<void>
 ```

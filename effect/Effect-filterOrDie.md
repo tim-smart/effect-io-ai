@@ -18,16 +18,16 @@ export declare const filterOrDie: {
   <A, B extends A>(
     refinement: Refinement<NoInfer<A>, B>,
     orDieWith: (a: NoInfer<A>) => unknown
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R, E, B>
+  ): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>
   <A>(
     predicate: Predicate<NoInfer<A>>,
     orDieWith: (a: NoInfer<A>) => unknown
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R, E, A>
-  <R, E, A, B extends A>(
-    self: Effect<R, E, A>,
+  ): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R, B extends A>(
+    self: Effect<A, E, R>,
     refinement: Refinement<A, B>,
     orDieWith: (a: A) => unknown
-  ): Effect<R, E, B>
-  <R, E, A>(self: Effect<R, E, A>, filter: Predicate<A>, orDieWith: (a: A) => unknown): Effect<R, E, A>
+  ): Effect<B, E, R>
+  <A, E, R>(self: Effect<A, E, R>, predicate: Predicate<A>, orDieWith: (a: A) => unknown): Effect<A, E, R>
 }
 ```

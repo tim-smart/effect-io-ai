@@ -14,5 +14,5 @@ Queue.takeAll
 **Signature**
 
 ```ts
-export declare const takeAll: <A>(self: Dequeue<A>) => Effect.Effect<never, never, Chunk.Chunk<A>>
+export declare const takeAll: <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>, never, never>
 ```

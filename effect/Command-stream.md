@@ -13,5 +13,5 @@ Command.stream
 **Signature**
 
 ```ts
-export declare const stream: (command: Command) => Stream<CommandExecutor, PlatformError, Uint8Array>
+export declare const stream: (command: Command) => Stream<Uint8Array, PlatformError, CommandExecutor>
 ```

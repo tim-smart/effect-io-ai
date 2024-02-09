@@ -14,5 +14,5 @@ Stream.orDie
 **Signature**
 
 ```ts
-export declare const orDie: <R, E, A>(self: Stream<R, E, A>) => Stream<R, never, A>
+export declare const orDie: <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```

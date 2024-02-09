@@ -17,6 +17,6 @@ Stream.paginateChunkEffect
 ```ts
 export declare const paginateChunkEffect: <S, R, E, A>(
   s: S,
-  f: (s: S) => Effect.Effect<R, E, readonly [Chunk.Chunk<A>, Option.Option<S>]>
-) => Stream<R, E, A>
+  f: (s: S) => Effect.Effect<readonly [Chunk.Chunk<A>, Option.Option<S>], E, R>
+) => Stream<A, E, R>
 ```

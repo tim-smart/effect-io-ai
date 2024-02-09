@@ -14,7 +14,7 @@ FiberMap.remove
 
 ```ts
 export declare const remove: {
-  <K>(key: K): <E, A>(self: FiberMap.FiberMap<K, E, A>) => Effect.Effect<never, never, void>
-  <K, E, A>(self: FiberMap.FiberMap<K, E, A>, key: K): Effect.Effect<never, never, void>
+  <K>(key: K): <A, E>(self: FiberMap.FiberMap<K, A, E>) => Effect.Effect<void>
+  <K, A, E>(self: FiberMap.FiberMap<K, A, E>, key: K): Effect.Effect<void>
 }
 ```

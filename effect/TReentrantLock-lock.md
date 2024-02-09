@@ -16,5 +16,5 @@ TReentrantLock.lock
 **Signature**
 
 ```ts
-export declare const lock: (self: TReentrantLock) => Effect.Effect<Scope.Scope, never, number>
+export declare const lock: (self: TReentrantLock) => Effect.Effect<number, never, Scope.Scope>
 ```

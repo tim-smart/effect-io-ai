@@ -13,5 +13,5 @@ TPriorityQueue.empty
 **Signature**
 
 ```ts
-export declare const empty: <A>(order: Order.Order<A>) => STM.STM<never, never, TPriorityQueue<A>>
+export declare const empty: <A>(order: Order.Order<A>) => STM.STM<TPriorityQueue<A>, never, never>
 ```

@@ -14,5 +14,5 @@ Effect.getRuntimeFlags
 **Signature**
 
 ```ts
-export declare const getRuntimeFlags: Effect<never, never, RuntimeFlags.RuntimeFlags>
+export declare const getRuntimeFlags: Effect<RuntimeFlags.RuntimeFlags, never, never>
 ```

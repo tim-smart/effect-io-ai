@@ -13,7 +13,7 @@ Channel.fromPubSubScoped
 **Signature**
 
 ```ts
-export declare const fromPubSubScoped: <Err, Done, Elem>(
-  pubsub: PubSub.PubSub<Either.Either<Exit.Exit<Err, Done>, Elem>>
-) => Effect.Effect<Scope.Scope, never, Channel<never, unknown, unknown, unknown, Err, Elem, Done>>
+export declare const fromPubSubScoped: <Done, Err, Elem>(
+  pubsub: PubSub.PubSub<Either.Either<Exit.Exit<Done, Err>, Elem>>
+) => Effect.Effect<Channel<Elem, unknown, Err, unknown, Done, unknown, never>, never, Scope.Scope>
 ```

@@ -13,5 +13,5 @@ Stream.runCount
 **Signature**
 
 ```ts
-export declare const runCount: <R, E, A>(self: Stream<R, E, A>) => Effect.Effect<R, E, number>
+export declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
 ```

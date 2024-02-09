@@ -14,5 +14,5 @@ Fiber.scoped
 **Signature**
 
 ```ts
-export declare const scoped: <E, A>(self: Fiber<E, A>) => Effect.Effect<Scope.Scope, never, Fiber<E, A>>
+export declare const scoped: <A, E>(self: Fiber<A, E>) => Effect.Effect<Fiber<A, E>, never, Scope.Scope>
 ```

@@ -16,5 +16,5 @@ Stream.fromQueue
 export declare const fromQueue: <A>(
   queue: Queue.Dequeue<A>,
   options?: { readonly maxChunkSize?: number | undefined; readonly shutdown?: boolean | undefined }
-) => Stream<never, never, A>
+) => Stream<A, never, never>
 ```

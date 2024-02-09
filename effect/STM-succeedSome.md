@@ -13,5 +13,5 @@ STM.succeedSome
 **Signature**
 
 ```ts
-export declare const succeedSome: <A>(value: A) => STM<never, never, Option.Option<A>>
+export declare const succeedSome: <A>(value: A) => STM<Option.Option<A>, never, never>
 ```

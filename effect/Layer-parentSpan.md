@@ -13,5 +13,5 @@ Layer.parentSpan
 **Signature**
 
 ```ts
-export declare const parentSpan: (span: Tracer.ParentSpan) => Layer<never, never, Tracer.ParentSpan>
+export declare const parentSpan: (span: Tracer.ParentSpan) => Layer<Tracer.ParentSpan>
 ```

@@ -13,7 +13,7 @@ Sink.contextWithSink
 **Signature**
 
 ```ts
-export declare const contextWithSink: <R0, R, E, In, L, Z>(
-  f: (context: Context.Context<R0>) => Sink<R, E, In, L, Z>
-) => Sink<R0 | R, E, In, L, Z>
+export declare const contextWithSink: <R0, A, In, L, E, R>(
+  f: (context: Context.Context<R0>) => Sink<A, In, L, E, R>
+) => Sink<A, In, L, E, R0 | R>
 ```

@@ -19,19 +19,19 @@ Stream.zipAllWith
 ```ts
 export declare const zipAllWith: {
   <R2, E2, A2, A, A3>(options: {
-    readonly other: Stream<R2, E2, A2>
+    readonly other: Stream<A2, E2, R2>
     readonly onSelf: (a: A) => A3
     readonly onOther: (a2: A2) => A3
     readonly onBoth: (a: A, a2: A2) => A3
-  }): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A3>
+  }): <R, E>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
   <R, E, R2, E2, A2, A, A3>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     options: {
-      readonly other: Stream<R2, E2, A2>
+      readonly other: Stream<A2, E2, R2>
       readonly onSelf: (a: A) => A3
       readonly onOther: (a2: A2) => A3
       readonly onBoth: (a: A, a2: A2) => A3
     }
-  ): Stream<R | R2, E | E2, A3>
+  ): Stream<A3, E | E2, R | R2>
 }
 ```

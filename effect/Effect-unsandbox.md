@@ -3,7 +3,7 @@
 The inverse operation `sandbox(effect)`
 
 Terminates with exceptions on the `Left` side of the `Either` error, if it
-exists. Otherwise extracts the contained `Effect<R, E, A>`
+exists. Otherwise extracts the contained `Effect<A, E, R>`
 
 To import and use `unsandbox` from the "Effect" module:
 
@@ -16,5 +16,5 @@ Effect.unsandbox
 **Signature**
 
 ```ts
-export declare const unsandbox: <R, E, A>(self: Effect<R, Cause.Cause<E>, A>) => Effect<R, E, A>
+export declare const unsandbox: <A, E, R>(self: Effect<A, Cause.Cause<E>, R>) => Effect<A, E, R>
 ```

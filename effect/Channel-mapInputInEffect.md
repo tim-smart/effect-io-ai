@@ -15,14 +15,14 @@ Channel.mapInputInEffect
 
 ```ts
 export declare const mapInputInEffect: {
-  <Env1, InErr, InElem0, InElem>(
-    f: (a: InElem0) => Effect.Effect<Env1, InErr, InElem>
-  ): <Env, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env1 | Env, InErr, InElem0, InDone, OutErr, OutElem, OutDone>
-  <Env, InDone, OutErr, OutElem, OutDone, Env1, InErr, InElem0, InElem>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    f: (a: InElem0) => Effect.Effect<Env1, InErr, InElem>
-  ): Channel<Env | Env1, InErr, InElem0, InDone, OutErr, OutElem, OutDone>
+  <InElem0, InElem, InErr, Env1>(
+    f: (a: InElem0) => Effect.Effect<InElem, InErr, Env1>
+  ): <OutElem, OutErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem0, OutErr, InErr, OutDone, InDone, Env1 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, InElem0, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    f: (a: InElem0) => Effect.Effect<InElem, InErr, Env1>
+  ): Channel<OutElem, InElem0, OutErr, InErr, OutDone, InDone, Env | Env1>
 }
 ```

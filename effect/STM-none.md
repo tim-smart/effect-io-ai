@@ -13,5 +13,5 @@ STM.none
 **Signature**
 
 ```ts
-export declare const none: <R, E, A>(self: STM<R, E, Option.Option<A>>) => STM<R, Option.Option<E>, void>
+export declare const none: <A, E, R>(self: STM<Option.Option<A>, E, R>) => STM<void, Option.Option<E>, R>
 ```

@@ -13,5 +13,5 @@ TestServices.annotationsLayer
 **Signature**
 
 ```ts
-export declare const annotationsLayer: () => Layer.Layer<never, never, Annotations.TestAnnotations>
+export declare const annotationsLayer: () => Layer.Layer<Annotations.TestAnnotations>
 ```

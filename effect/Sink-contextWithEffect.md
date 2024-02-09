@@ -13,7 +13,7 @@ Sink.contextWithEffect
 **Signature**
 
 ```ts
-export declare const contextWithEffect: <R, R2, E, Z>(
-  f: (context: Context.Context<R>) => Effect.Effect<R2, E, Z>
-) => Sink<R | R2, E, unknown, never, Z>
+export declare const contextWithEffect: <R0, A, E, R>(
+  f: (context: Context.Context<R0>) => Effect.Effect<A, E, R>
+) => Sink<A, unknown, never, E, R0 | R>
 ```

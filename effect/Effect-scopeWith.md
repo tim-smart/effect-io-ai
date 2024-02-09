@@ -13,5 +13,5 @@ Effect.scopeWith
 **Signature**
 
 ```ts
-export declare const scopeWith: <R, E, A>(f: (scope: Scope.Scope) => Effect<R, E, A>) => Effect<Scope.Scope | R, E, A>
+export declare const scopeWith: <A, E, R>(f: (scope: Scope.Scope) => Effect<A, E, R>) => Effect<A, E, Scope.Scope | R>
 ```

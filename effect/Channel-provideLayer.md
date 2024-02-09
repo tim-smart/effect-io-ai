@@ -14,14 +14,14 @@ Channel.provideLayer
 
 ```ts
 export declare const provideLayer: {
-  <Env0, Env, OutErr2>(
-    layer: Layer.Layer<Env0, OutErr2, Env>
-  ): <InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env0, InErr, InElem, InDone, OutErr2 | OutErr, OutElem, OutDone>
-  <InErr, InElem, InDone, OutErr, OutElem, OutDone, Env0, Env, OutErr2>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    layer: Layer.Layer<Env0, OutErr2, Env>
-  ): Channel<Env0, InErr, InElem, InDone, OutErr | OutErr2, OutElem, OutDone>
+  <Env, OutErr2, Env0>(
+    layer: Layer.Layer<Env, OutErr2, Env0>
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr2 | OutErr, InErr, OutDone, InDone, Env0>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutErr2, Env0>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    layer: Layer.Layer<Env, OutErr2, Env0>
+  ): Channel<OutElem, InElem, OutErr | OutErr2, InErr, OutDone, InDone, Env0>
 }
 ```

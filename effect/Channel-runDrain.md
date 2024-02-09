@@ -13,7 +13,7 @@ Channel.runDrain
 **Signature**
 
 ```ts
-export declare const runDrain: <Env, InErr, InDone, OutElem, OutErr, OutDone>(
-  self: Channel<Env, InErr, unknown, InDone, OutErr, OutElem, OutDone>
-) => Effect.Effect<Env, OutErr, OutDone>
+export declare const runDrain: <OutElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, Env>
+) => Effect.Effect<OutDone, OutErr, Env>
 ```

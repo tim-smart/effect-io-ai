@@ -13,5 +13,5 @@ Layer.dieSync
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Layer<never, never, unknown>
+export declare const dieSync: (evaluate: LazyArg<unknown>) => Layer<unknown>
 ```

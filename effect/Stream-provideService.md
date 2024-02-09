@@ -18,11 +18,11 @@ export declare const provideService: {
   <T extends Context.Tag<any, any>>(
     tag: T,
     resource: Context.Tag.Service<T>
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<Exclude<R, Context.Tag.Identifier<T>>, E, A>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, Context.Tag.Identifier<T>>>
   <R, E, A, T extends Context.Tag<any, any>>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     tag: T,
     resource: Context.Tag.Service<T>
-  ): Stream<Exclude<R, Context.Tag.Identifier<T>>, E, A>
+  ): Stream<A, E, Exclude<R, Context.Tag.Identifier<T>>>
 }
 ```

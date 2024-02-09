@@ -13,5 +13,5 @@ STM.isSuccess
 **Signature**
 
 ```ts
-export declare const isSuccess: <R, E, A>(self: STM<R, E, A>) => STM<R, never, boolean>
+export declare const isSuccess: <A, E, R>(self: STM<A, E, R>) => STM<boolean, never, R>
 ```

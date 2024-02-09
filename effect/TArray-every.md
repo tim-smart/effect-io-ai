@@ -15,7 +15,7 @@ TArray.every
 
 ```ts
 export declare const every: {
-  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<never, never, boolean>
-  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<never, never, boolean>
+  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<boolean>
+  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<boolean>
 }
 ```

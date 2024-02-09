@@ -16,8 +16,8 @@ Stream.asyncEffect
 **Signature**
 
 ```ts
-export declare const asyncEffect: <R, E, A>(
-  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<R, E, unknown>,
+export declare const asyncEffect: <A, E = never, R = never>(
+  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, R>,
   outputBuffer?: number
-) => Stream<R, E, A>
+) => Stream<A, E, R>
 ```

@@ -14,5 +14,5 @@ Effect.withConsoleScoped
 **Signature**
 
 ```ts
-export declare const withConsoleScoped: <A extends Console>(console: A) => Effect<Scope.Scope, never, void>
+export declare const withConsoleScoped: <A extends Console>(console: A) => Effect<void, never, Scope.Scope>
 ```

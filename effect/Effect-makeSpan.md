@@ -22,5 +22,5 @@ export declare const makeSpan: (
     readonly root?: boolean | undefined
     readonly context?: Context.Context<never> | undefined
   }
-) => Effect<never, never, Tracer.Span>
+) => Effect<Tracer.Span>
 ```

@@ -15,12 +15,12 @@ Effect.tapErrorCause
 
 ```ts
 export declare const tapErrorCause: {
-  <E, XE extends E, R2, E2, X>(
-    f: (cause: Cause.Cause<XE>) => Effect<R2, E2, X>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R2 | R, E | E2, A>
-  <R, E, A, XE extends E, R2, E2, X>(
-    self: Effect<R, E, A>,
-    f: (cause: Cause.Cause<XE>) => Effect<R2, E2, X>
-  ): Effect<R | R2, E | E2, A>
+  <E, X, E2, R2>(
+    f: (cause: Cause.Cause<NoInfer<E>>) => Effect<X, E2, R2>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>
+  <A, E, R, X, E2, R2>(
+    self: Effect<A, E, R>,
+    f: (cause: Cause.Cause<E>) => Effect<X, E2, R2>
+  ): Effect<A, E | E2, R | R2>
 }
 ```

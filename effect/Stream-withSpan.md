@@ -16,24 +16,28 @@ Stream.withSpan
 export declare const withSpan: {
   (
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, A>
-  <R, E, A>(
-    self: Stream<R, E, A>,
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, Tracer.ParentSpan>>
+  <A, E, R>(
+    self: Stream<A, E, R>,
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): Stream<R, E, A>
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): Stream<A, E, Exclude<R, Tracer.ParentSpan>>
 }
 ```

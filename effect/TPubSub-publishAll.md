@@ -15,7 +15,7 @@ TPubSub.publishAll
 
 ```ts
 export declare const publishAll: {
-  <A>(iterable: Iterable<A>): (self: TPubSub<A>) => STM.STM<never, never, boolean>
-  <A>(self: TPubSub<A>, iterable: Iterable<A>): STM.STM<never, never, boolean>
+  <A>(iterable: Iterable<A>): (self: TPubSub<A>) => STM.STM<boolean>
+  <A>(self: TPubSub<A>, iterable: Iterable<A>): STM.STM<boolean>
 }
 ```

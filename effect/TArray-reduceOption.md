@@ -14,7 +14,7 @@ TArray.reduceOption
 
 ```ts
 export declare const reduceOption: {
-  <A>(f: (x: A, y: A) => A): (self: TArray<A>) => STM.STM<never, never, Option.Option<A>>
-  <A>(self: TArray<A>, f: (x: A, y: A) => A): STM.STM<never, never, Option.Option<A>>
+  <A>(f: (x: A, y: A) => A): (self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
+  <A>(self: TArray<A>, f: (x: A, y: A) => A): STM.STM<Option.Option<A>, never, never>
 }
 ```

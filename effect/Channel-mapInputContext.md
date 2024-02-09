@@ -17,12 +17,12 @@ Channel.mapInputContext
 export declare const mapInputContext: {
   <Env0, Env>(
     f: (env: Context.Context<Env0>) => Context.Context<Env>
-  ): <InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env0, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  <InErr, InElem, InDone, OutErr, OutElem, OutDone, Env0, Env>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env0>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, Env0>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     f: (env: Context.Context<Env0>) => Context.Context<Env>
-  ): Channel<Env0, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env0>
 }
 ```

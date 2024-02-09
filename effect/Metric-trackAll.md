@@ -18,10 +18,10 @@ Metric.trackAll
 export declare const trackAll: {
   <In>(
     input: In
-  ): <Type, Out>(self: Metric<Type, In, Out>) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  ): <Type, Out>(self: Metric<Type, In, Out>) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
   <Type, In, Out>(
     self: Metric<Type, In, Out>,
     input: In
-  ): <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  ): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 }
 ```

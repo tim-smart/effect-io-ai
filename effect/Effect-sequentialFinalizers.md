@@ -17,5 +17,5 @@ Effect.sequentialFinalizers
 **Signature**
 
 ```ts
-export declare const sequentialFinalizers: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+export declare const sequentialFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```

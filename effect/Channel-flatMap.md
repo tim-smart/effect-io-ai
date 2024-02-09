@@ -18,30 +18,30 @@ Channel.flatMap
 
 ```ts
 export declare const flatMap: {
-  <OutDone, Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone2>(
-    f: (d: OutDone) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone2>
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+  <OutDone, OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>(
+    f: (d: OutDone) => Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>
+  ): <OutElem, InElem, OutErr, InErr, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
   ) => Channel<
-    Env1 | Env,
-    InErr & InErr1,
-    InElem & InElem1,
-    InDone & InDone1,
-    OutErr1 | OutErr,
     OutElem1 | OutElem,
-    OutDone2
-  >
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone, Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone2>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    f: (d: OutDone) => Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone2>
-  ): Channel<
-    Env | Env1,
-    InErr & InErr1,
     InElem & InElem1,
+    OutErr1 | OutErr,
+    InErr & InErr1,
+    OutDone2,
     InDone & InDone1,
-    OutErr | OutErr1,
+    Env1 | Env
+  >
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    f: (d: OutDone) => Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>
+  ): Channel<
     OutElem | OutElem1,
-    OutDone2
+    InElem & InElem1,
+    OutErr | OutErr1,
+    InErr & InErr1,
+    OutDone2,
+    InDone & InDone1,
+    Env | Env1
   >
 }
 ```

@@ -13,5 +13,5 @@ TestClock.testClock
 **Signature**
 
 ```ts
-export declare const testClock: () => Effect.Effect<never, never, TestClock>
+export declare const testClock: () => Effect.Effect<TestClock>
 ```

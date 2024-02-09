@@ -15,5 +15,5 @@ Effect.runtime
 **Signature**
 
 ```ts
-export declare const runtime: <R>() => Effect<R, never, Runtime.Runtime<R>>
+export declare const runtime: <R>() => Effect<Runtime.Runtime<R>, never, R>
 ```

@@ -17,5 +17,5 @@ Schema.jsonSchema
 ```ts
 export declare const jsonSchema: (
   jsonSchema: AST.JSONSchemaAnnotation
-) => <R, I, A>(self: Schema<R, I, A>) => Schema<R, I, A>
+) => <A, I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

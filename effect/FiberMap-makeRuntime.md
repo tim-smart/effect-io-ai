@@ -14,12 +14,12 @@ FiberMap.makeRuntime
 
 ```ts
 export declare const makeRuntime: <R, K, E = unknown, A = unknown>() => Effect.Effect<
-  any,
-  never,
   <XE extends E, XA extends A>(
     key: K,
-    effect: Effect.Effect<R, XE, XA>,
+    effect: Effect.Effect<XA, XE, R>,
     options?: Runtime.RunForkOptions | undefined
-  ) => Fiber.RuntimeFiber<XE, XA>
+  ) => Fiber.RuntimeFiber<XA, XE>,
+  never,
+  any
 >
 ```

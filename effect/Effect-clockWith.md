@@ -14,5 +14,5 @@ Effect.clockWith
 **Signature**
 
 ```ts
-export declare const clockWith: <R, E, A>(f: (clock: Clock.Clock) => Effect<R, E, A>) => Effect<R, E, A>
+export declare const clockWith: <A, E, R>(f: (clock: Clock.Clock) => Effect<A, E, R>) => Effect<A, E, R>
 ```

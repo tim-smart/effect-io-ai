@@ -13,7 +13,7 @@ Stream.zipWithPreviousAndNext
 **Signature**
 
 ```ts
-export declare const zipWithPreviousAndNext: <R, E, A>(
-  self: Stream<R, E, A>
-) => Stream<R, E, [Option.Option<A>, A, Option.Option<A>]>
+export declare const zipWithPreviousAndNext: <A, E, R>(
+  self: Stream<A, E, R>
+) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
 ```

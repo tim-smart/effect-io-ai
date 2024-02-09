@@ -13,7 +13,7 @@ Sink.dropWhileEffect
 **Signature**
 
 ```ts
-export declare const dropWhileEffect: <In, R, E>(
-  predicate: (input: In) => Effect.Effect<R, E, boolean>
-) => Sink<R, E, In, In, unknown>
+export declare const dropWhileEffect: <In, E, R>(
+  predicate: (input: In) => Effect.Effect<boolean, E, R>
+) => Sink<unknown, In, In, E, R>
 ```

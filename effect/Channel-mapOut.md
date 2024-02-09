@@ -16,12 +16,12 @@ Channel.mapOut
 export declare const mapOut: {
   <OutElem, OutElem2>(
     f: (o: OutElem) => OutElem2
-  ): <Env, InErr, InElem, InDone, OutErr, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem2, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutDone, OutElem, OutElem2>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem2, InElem, OutErr, InErr, OutDone, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem2>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     f: (o: OutElem) => OutElem2
-  ): Channel<Env, InErr, InElem, InDone, OutErr, OutElem2, OutDone>
+  ): Channel<OutElem2, InElem, OutErr, InErr, OutDone, InDone, Env>
 }
 ```

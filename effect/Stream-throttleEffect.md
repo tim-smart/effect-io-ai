@@ -25,21 +25,21 @@ Stream.throttleEffect
 ```ts
 export declare const throttleEffect: {
   <A, R2, E2>(options: {
-    readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, number>
+    readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>
     readonly units: number
     readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
     readonly strategy?: "enforce" | "shape" | undefined
-  }): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A>
+  }): <R, E>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
   <R, E, A, R2, E2>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     options: {
-      readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<R2, E2, number>
+      readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>
       readonly units: number
       readonly duration: Duration.DurationInput
       readonly burst?: number | undefined
       readonly strategy?: "enforce" | "shape" | undefined
     }
-  ): Stream<R | R2, E | E2, A>
+  ): Stream<A, E | E2, R | R2>
 }
 ```

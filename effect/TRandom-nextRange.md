@@ -14,5 +14,5 @@ TRandom.nextRange
 **Signature**
 
 ```ts
-export declare const nextRange: (min: number, max: number) => STM.STM<TRandom, never, number>
+export declare const nextRange: (min: number, max: number) => STM.STM<number, never, TRandom>
 ```

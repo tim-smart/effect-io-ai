@@ -15,5 +15,5 @@ PubSub.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: PubSub<A>) => Effect.Effect<never, never, number>
+export declare const size: <A>(self: PubSub<A>) => Effect.Effect<number>
 ```

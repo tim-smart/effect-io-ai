@@ -17,14 +17,14 @@ Channel.pipeTo
 
 ```ts
 export declare const pipeTo: {
-  <Env2, OutErr, OutElem, OutDone, OutErr2, OutElem2, OutDone2>(
-    that: Channel<Env2, OutErr, OutElem, OutDone, OutErr2, OutElem2, OutDone2>
-  ): <Env, InErr, InElem, InDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env2 | Env, InErr, InElem, InDone, OutErr2, OutElem2, OutDone2>
-  <Env, InErr, InElem, InDone, Env2, OutErr, OutElem, OutDone, OutErr2, OutElem2, OutDone2>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
-    that: Channel<Env2, OutErr, OutElem, OutDone, OutErr2, OutElem2, OutDone2>
-  ): Channel<Env | Env2, InErr, InElem, InDone, OutErr2, OutElem2, OutDone2>
+  <OutElem2, OutElem, OutErr2, OutErr, OutDone2, OutDone, Env2>(
+    that: Channel<OutElem2, OutElem, OutErr2, OutErr, OutDone2, OutDone, Env2>
+  ): <InElem, InErr, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem2, InElem, OutErr2, InErr, OutDone2, InDone, Env2 | Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, OutElem2, OutErr2, OutDone2, Env2>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
+    that: Channel<OutElem2, OutElem, OutErr2, OutErr, OutDone2, OutDone, Env2>
+  ): Channel<OutElem2, InElem, OutErr2, InErr, OutDone2, InDone, Env | Env2>
 }
 ```

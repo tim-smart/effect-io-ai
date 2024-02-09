@@ -13,5 +13,5 @@ Exit.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<E, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
 ```

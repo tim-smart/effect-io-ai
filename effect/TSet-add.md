@@ -14,7 +14,7 @@ TSet.add
 
 ```ts
 export declare const add: {
-  <A>(value: A): (self: TSet<A>) => STM.STM<never, never, void>
-  <A>(self: TSet<A>, value: A): STM.STM<never, never, void>
+  <A>(value: A): (self: TSet<A>) => STM.STM<void>
+  <A>(self: TSet<A>, value: A): STM.STM<void>
 }
 ```

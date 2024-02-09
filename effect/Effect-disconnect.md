@@ -23,5 +23,5 @@ Effect.disconnect
 **Signature**
 
 ```ts
-export declare const disconnect: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+export declare const disconnect: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```

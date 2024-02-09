@@ -15,12 +15,12 @@ Effect.using
 
 ```ts
 export declare const using: {
-  <A, R2, E2, A2>(
-    use: (a: A) => Effect<R2, E2, A2>
-  ): <R, E>(self: Effect<R, E, A>) => Effect<R2 | Exclude<R, Scope.Scope>, E2 | E, A2>
-  <R, E, A, R2, E2, A2>(
-    self: Effect<R, E, A>,
-    use: (a: A) => Effect<R2, E2, A2>
-  ): Effect<R2 | Exclude<R, Scope.Scope>, E | E2, A2>
+  <A, A2, E2, R2>(
+    use: (a: A) => Effect<A2, E2, R2>
+  ): <E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | Exclude<R, Scope.Scope>>
+  <A, E, R, A2, E2, R2>(
+    self: Effect<A, E, R>,
+    use: (a: A) => Effect<A2, E2, R2>
+  ): Effect<A2, E | E2, R2 | Exclude<R, Scope.Scope>>
 }
 ```

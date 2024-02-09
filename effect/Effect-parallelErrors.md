@@ -13,5 +13,5 @@ Effect.parallelErrors
 **Signature**
 
 ```ts
-export declare const parallelErrors: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E[], A>
+export declare const parallelErrors: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E[], R>
 ```

@@ -15,11 +15,11 @@ Effect.forkWithErrorHandler
 ```ts
 export declare const forkWithErrorHandler: {
   <E, X>(
-    handler: (e: E) => Effect<never, never, X>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R, never, Fiber.RuntimeFiber<E, A>>
+    handler: (e: E) => Effect<X, never, never>
+  ): <R, A>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
   <R, E, A, X>(
-    self: Effect<R, E, A>,
-    handler: (e: E) => Effect<never, never, X>
-  ): Effect<R, never, Fiber.RuntimeFiber<E, A>>
+    self: Effect<A, E, R>,
+    handler: (e: E) => Effect<X, never, never>
+  ): Effect<Fiber.RuntimeFiber<A, E>, never, R>
 }
 ```

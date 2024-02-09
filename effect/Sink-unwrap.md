@@ -13,7 +13,7 @@ Sink.unwrap
 **Signature**
 
 ```ts
-export declare const unwrap: <R, E, R2, E2, In, L, Z>(
-  effect: Effect.Effect<R, E, Sink<R2, E2, In, L, Z>>
-) => Sink<R | R2, E | E2, In, L, Z>
+export declare const unwrap: <A, In, L, E2, R2, E, R>(
+  effect: Effect.Effect<Sink<A, In, L, E2, R2>, E, R>
+) => Sink<A, In, L, E2 | E, R2 | R>
 ```

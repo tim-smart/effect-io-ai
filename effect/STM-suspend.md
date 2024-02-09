@@ -13,5 +13,5 @@ STM.suspend
 **Signature**
 
 ```ts
-export declare const suspend: <R, E, A>(evaluate: LazyArg<STM<R, E, A>>) => STM<R, E, A>
+export declare const suspend: <A, E, R>(evaluate: LazyArg<STM<A, E, R>>) => STM<A, E, R>
 ```

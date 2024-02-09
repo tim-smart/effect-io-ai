@@ -13,5 +13,5 @@ Fiber.interrupted
 **Signature**
 
 ```ts
-export declare const interrupted: (fiberId: FiberId.FiberId) => Fiber<never, never>
+export declare const interrupted: (fiberId: FiberId.FiberId) => Fiber<never>
 ```

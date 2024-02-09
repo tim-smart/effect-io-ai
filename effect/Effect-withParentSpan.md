@@ -14,7 +14,7 @@ Effect.withParentSpan
 
 ```ts
 export declare const withParentSpan: {
-  (span: Tracer.ParentSpan): <R, E, A>(self: Effect<R, E, A>) => Effect<Exclude<R, Tracer.ParentSpan>, E, A>
-  <R, E, A>(self: Effect<R, E, A>, span: Tracer.ParentSpan): Effect<Exclude<R, Tracer.ParentSpan>, E, A>
+  (span: Tracer.ParentSpan): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan>>
+  <A, E, R>(self: Effect<A, E, R>, span: Tracer.ParentSpan): Effect<A, E, Exclude<R, Tracer.ParentSpan>>
 }
 ```

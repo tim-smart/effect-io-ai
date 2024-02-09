@@ -12,16 +12,16 @@ type HttpError = Data.TaggedEnum<{
 
 // Equivalent to:
 type HttpErrorPlain =
-  | Data.Data<{
+  | {
       readonly _tag: "BadRequest"
       readonly status: 400
       readonly message: string
-    }>
-  | Data.Data<{
+    }
+  | {
       readonly _tag: "NotFound"
       readonly status: 404
       readonly message: string
-    }>
+    }
 ```
 
 To import and use `TaggedEnum` from the "Data" module:

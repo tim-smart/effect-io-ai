@@ -14,7 +14,7 @@ TestServices.testConfigWith
 **Signature**
 
 ```ts
-export declare const testConfigWith: <R, E, A>(
-  f: (config: TestConfig.TestConfig) => Effect.Effect<R, E, A>
-) => Effect.Effect<R, E, A>
+export declare const testConfigWith: <A, E, R>(
+  f: (config: TestConfig.TestConfig) => Effect.Effect<A, E, R>
+) => Effect.Effect<A, E, R>
 ```

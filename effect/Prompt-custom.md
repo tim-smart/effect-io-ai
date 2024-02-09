@@ -24,7 +24,7 @@ export declare const custom: <State, Output>(
     prevState: Option<State>,
     nextState: State,
     action: Prompt.Action<State, Output>
-  ) => Effect<Terminal, never, string>,
-  process: (input: UserInput, state: State) => Effect<Terminal, never, Prompt.Action<State, Output>>
+  ) => Effect<string, never, Terminal>,
+  process: (input: UserInput, state: State) => Effect<Prompt.Action<State, Output>, never, Terminal>
 ) => Prompt<Output>
 ```

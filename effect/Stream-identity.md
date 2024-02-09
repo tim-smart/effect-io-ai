@@ -13,5 +13,5 @@ Stream.identity
 **Signature**
 
 ```ts
-export declare const identity: <R, E, A>() => Stream<R, E, A>
+export declare const identity: <A, E = never, R = never>() => Stream<A, E, R>
 ```

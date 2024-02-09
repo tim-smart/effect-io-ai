@@ -19,8 +19,8 @@ Data.taggedEnum
 import * as Data from "effect/Data"
 
 const { BadRequest, NotFound } = Data.taggedEnum<
-  | Data.Data<{ readonly _tag: "BadRequest"; readonly status: 400; readonly message: string }>
-  | Data.Data<{ readonly _tag: "NotFound"; readonly status: 404; readonly message: string }>
+  | { readonly _tag: "BadRequest"; readonly status: 400; readonly message: string }
+  | { readonly _tag: "NotFound"; readonly status: 404; readonly message: string }
 >()
 
 const notFound = NotFound({ status: 404, message: "Not Found" })
@@ -83,7 +83,7 @@ export declare const taggedEnum: {
       >
     ) => Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
   }
-  <A extends { readonly _tag: string } & Equal.Equal>(): {
+  <A extends { readonly _tag: string }>(): {
     readonly [Tag in A["_tag"]]: Case.Constructor<Extract<A, { readonly _tag: Tag }>, "_tag">
   }
 }

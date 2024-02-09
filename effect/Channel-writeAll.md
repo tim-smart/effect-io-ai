@@ -15,5 +15,5 @@ Channel.writeAll
 ```ts
 export declare const writeAll: <OutElems extends any[]>(
   ...outs: OutElems
-) => Channel<never, unknown, unknown, unknown, never, OutElems[number], void>
+) => Channel<OutElems[number], unknown, never, unknown, void, unknown, never>
 ```

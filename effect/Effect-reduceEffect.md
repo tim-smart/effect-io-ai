@@ -1,6 +1,6 @@
 # reduceEffect
 
-Reduces an `Iterable<Effect<R, E, A>>` to a single effect.
+Reduces an `Iterable<Effect<A, E, R>>` to a single effect.
 
 To import and use `reduceEffect` from the "Effect" module:
 
@@ -14,16 +14,16 @@ Effect.reduceEffect
 
 ```ts
 export declare const reduceEffect: {
-  <R, E, A>(
-    zero: Effect<R, E, A>,
-    f: (acc: A, a: A, i: number) => A,
+  <A, E, R>(
+    zero: Effect<A, E, R>,
+    f: (acc: NoInfer<A>, a: NoInfer<A>, i: number) => A,
     options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): (elements: Iterable<Effect<R, E, A>>) => Effect<R, E, A>
-  <R, E, A>(
-    elements: Iterable<Effect<R, E, A>>,
-    zero: Effect<R, E, A>,
-    f: (acc: A, a: A, i: number) => A,
+  ): (elements: Iterable<Effect<A, E, R>>) => Effect<A, E, R>
+  <A, E, R>(
+    elements: Iterable<Effect<A, E, R>>,
+    zero: Effect<A, E, R>,
+    f: (acc: NoInfer<A>, a: NoInfer<A>, i: number) => A,
     options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R, E, A>
+  ): Effect<A, E, R>
 }
 ```

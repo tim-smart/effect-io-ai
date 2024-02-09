@@ -14,7 +14,7 @@ TMap.transformValues
 
 ```ts
 export declare const transformValues: {
-  <V>(f: (value: V) => V): <K>(self: TMap<K, V>) => STM.STM<never, never, void>
-  <K, V>(self: TMap<K, V>, f: (value: V) => V): STM.STM<never, never, void>
+  <V>(f: (value: V) => V): <K>(self: TMap<K, V>) => STM.STM<void>
+  <K, V>(self: TMap<K, V>, f: (value: V) => V): STM.STM<void>
 }
 ```

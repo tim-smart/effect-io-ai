@@ -31,8 +31,8 @@ class MyRequest extends Request.Class<
 
 ```ts
 export declare const Class: new <Error, Success, A extends Record<string, any>>(
-  args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true
+  args: Types.Equals<Omit<A, typeof RequestTypeId>, {}> extends true
     ? void
-    : { readonly [P in keyof A as P extends keyof Request<unknown, unknown> ? never : P]: A[P] }
-) => Request<Error, Success> & Readonly<A>
+    : { readonly [P in keyof A as P extends typeof RequestTypeId ? never : P]: A[P] }
+) => Request<Success, Error> & Readonly<A>
 ```

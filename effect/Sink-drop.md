@@ -13,5 +13,5 @@ Sink.drop
 **Signature**
 
 ```ts
-export declare const drop: <In>(n: number) => Sink<never, never, In, In, unknown>
+export declare const drop: <In>(n: number) => Sink<unknown, In, In, never, never>
 ```

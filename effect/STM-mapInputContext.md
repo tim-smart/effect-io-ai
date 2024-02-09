@@ -15,7 +15,7 @@ STM.mapInputContext
 
 ```ts
 export declare const mapInputContext: {
-  <R0, R>(f: (context: Context.Context<R0>) => Context.Context<R>): <E, A>(self: STM<R, E, A>) => STM<R0, E, A>
-  <E, A, R0, R>(self: STM<R, E, A>, f: (context: Context.Context<R0>) => Context.Context<R>): STM<R0, E, A>
+  <R0, R>(f: (context: Context.Context<R0>) => Context.Context<R>): <A, E>(self: STM<A, E, R>) => STM<A, E, R0>
+  <A, E, R0, R>(self: STM<A, E, R>, f: (context: Context.Context<R0>) => Context.Context<R>): STM<A, E, R0>
 }
 ```

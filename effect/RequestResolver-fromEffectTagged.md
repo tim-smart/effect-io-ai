@@ -19,12 +19,12 @@ RequestResolver.fromEffectTagged
 export declare const fromEffectTagged: <A extends Request.Request<any, any> & { readonly _tag: string }>() => <
   Fns extends {
     readonly [Tag in A["_tag"]]: [Extract<A, { readonly _tag: Tag }>] extends [infer Req]
-      ? Req extends Request.Request<infer ReqE, infer ReqA>
-        ? (requests: Req[]) => Effect.Effect<any, ReqE, Iterable<ReqA>>
+      ? Req extends Request.Request<infer ReqA, infer ReqE>
+        ? (requests: Req[]) => Effect.Effect<Iterable<ReqA>, ReqE, any>
         : never
       : never
   }
 >(
   fns: Fns
-) => RequestResolver<A, ReturnType<Fns[keyof Fns]> extends Effect.Effect<infer R, infer _E, infer _A> ? R : never>
+) => RequestResolver<A, ReturnType<Fns[keyof Fns]> extends Effect.Effect<infer _A, infer _E, infer R> ? R : never>
 ```

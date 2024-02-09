@@ -13,9 +13,5 @@ TestServices.supervisedFibers
 **Signature**
 
 ```ts
-export declare const supervisedFibers: () => Effect.Effect<
-  never,
-  never,
-  SortedSet.SortedSet<Fiber.RuntimeFiber<unknown, unknown>>
->
+export declare const supervisedFibers: () => Effect.Effect<SortedSet.SortedSet<Fiber.RuntimeFiber<unknown, unknown>>>
 ```

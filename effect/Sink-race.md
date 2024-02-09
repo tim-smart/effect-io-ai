@@ -15,12 +15,12 @@ Sink.race
 
 ```ts
 export declare const race: {
-  <R1, E1, In1, L1, Z1>(
-    that: Sink<R1, E1, In1, L1, Z1>
-  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R1 | R, E1 | E, In & In1, L1 | L, Z1 | Z>
-  <R, E, In, L, Z, R1, E1, In1, L1, Z1>(
-    self: Sink<R, E, In, L, Z>,
-    that: Sink<R1, E1, In1, L1, Z1>
-  ): Sink<R | R1, E | E1, In & In1, L | L1, Z | Z1>
+  <R1, E1, In1, L1, A1>(
+    that: Sink<A1, In1, L1, E1, R1>
+  ): <R, E, In, L, A>(self: Sink<A, In, L, E, R>) => Sink<A1 | A, In & In1, L1 | L, E1 | E, R1 | R>
+  <A, In, L, E, R, A1, In1, L1, E1, R1>(
+    self: Sink<A, In, L, E, R>,
+    that: Sink<A1, In1, L1, E1, R1>
+  ): Sink<A | A1, In & In1, L | L1, E | E1, R | R1>
 }
 ```

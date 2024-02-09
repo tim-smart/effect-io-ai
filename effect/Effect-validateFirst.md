@@ -35,14 +35,18 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const validateFirst: {
-  <R, E, A, B>(
-    f: (a: A, i: number) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): (elements: Iterable<A>) => Effect<R, E[], B>
-  <R, E, A, B>(
+  <A, B, E, R>(
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): (elements: Iterable<A>) => Effect<B, E[], R>
+  <A, B, E, R>(
     elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<R, E, B>,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R, E[], B>
+    f: (a: A, i: number) => Effect<B, E, R>,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<B, E[], R>
 }
 ```

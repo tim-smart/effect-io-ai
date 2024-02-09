@@ -16,7 +16,7 @@ Channel.toPull
 **Signature**
 
 ```ts
-export declare const toPull: <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-  self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-) => Effect.Effect<Scope.Scope | Env, never, Effect.Effect<Env, OutErr, Either.Either<OutDone, OutElem>>>
+export declare const toPull: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+  self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+) => Effect.Effect<Effect.Effect<Either.Either<OutDone, OutElem>, OutErr, Env>, never, Scope.Scope | Env>
 ```

@@ -16,13 +16,13 @@ Effect.match
 
 ```ts
 export declare const match: {
-  <E, A, A2, A3>(options: {
+  <E, A2, A, A3>(options: {
     readonly onFailure: (error: E) => A2
     readonly onSuccess: (value: A) => A3
-  }): <R>(self: Effect<R, E, A>) => Effect<R, never, A2 | A3>
-  <R, E, A, A2, A3>(
-    self: Effect<R, E, A>,
+  }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>
+  <A, E, R, A2, A3>(
+    self: Effect<A, E, R>,
     options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }
-  ): Effect<R, never, A2 | A3>
+  ): Effect<A2 | A3, never, R>
 }
 ```

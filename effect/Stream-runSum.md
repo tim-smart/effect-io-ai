@@ -13,5 +13,5 @@ Stream.runSum
 **Signature**
 
 ```ts
-export declare const runSum: <R, E>(self: Stream<R, E, number>) => Effect.Effect<R, E, number>
+export declare const runSum: <R, E>(self: Stream<number, E, R>) => Effect.Effect<number, E, R>
 ```

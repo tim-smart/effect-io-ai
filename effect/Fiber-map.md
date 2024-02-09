@@ -14,7 +14,7 @@ Fiber.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): <E>(self: Fiber<E, A>) => Fiber<E, B>
-  <E, A, B>(self: Fiber<E, A>, f: (a: A) => B): Fiber<E, B>
+  <A, B>(f: (a: A) => B): <E>(self: Fiber<A, E>) => Fiber<B, E>
+  <A, E, B>(self: Fiber<A, E>, f: (a: A) => B): Fiber<B, E>
 }
 ```

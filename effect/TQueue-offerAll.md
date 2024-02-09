@@ -26,7 +26,7 @@ TQueue.offerAll
 
 ```ts
 export declare const offerAll: {
-  <A>(iterable: Iterable<A>): (self: TEnqueue<A>) => STM.STM<never, never, boolean>
-  <A>(self: TEnqueue<A>, iterable: Iterable<A>): STM.STM<never, never, boolean>
+  <A>(iterable: Iterable<A>): (self: TEnqueue<A>) => STM.STM<boolean>
+  <A>(self: TEnqueue<A>, iterable: Iterable<A>): STM.STM<boolean>
 }
 ```

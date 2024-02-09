@@ -15,7 +15,7 @@ STM.orDieWith
 
 ```ts
 export declare const orDieWith: {
-  <E>(f: (error: E) => unknown): <R, A>(self: STM<R, E, A>) => STM<R, never, A>
-  <R, A, E>(self: STM<R, E, A>, f: (error: E) => unknown): STM<R, never, A>
+  <E>(f: (error: E) => unknown): <R, A>(self: STM<A, E, R>) => STM<A, never, R>
+  <R, A, E>(self: STM<A, E, R>, f: (error: E) => unknown): STM<A, never, R>
 }
 ```

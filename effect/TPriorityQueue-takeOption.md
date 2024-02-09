@@ -14,5 +14,5 @@ TPriorityQueue.takeOption
 **Signature**
 
 ```ts
-export declare const takeOption: <A>(self: TPriorityQueue<A>) => STM.STM<never, never, Option.Option<A>>
+export declare const takeOption: <A>(self: TPriorityQueue<A>) => STM.STM<Option.Option<A>, never, never>
 ```

@@ -14,5 +14,5 @@ Stream.zipWithPrevious
 **Signature**
 
 ```ts
-export declare const zipWithPrevious: <R, E, A>(self: Stream<R, E, A>) => Stream<R, E, [Option.Option<A>, A]>
+export declare const zipWithPrevious: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A], E, R>
 ```

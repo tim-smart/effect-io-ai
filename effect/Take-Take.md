@@ -1,6 +1,6 @@
 # Take
 
-A `Take<E, A>` represents a single `take` from a queue modeling a stream of
+A `Take<A, E>` represents a single `take` from a queue modeling a stream of
 values. A `Take` may be a failure cause `Cause<E>`, a chunk value `Chunk<A>`,
 or an end-of-stream marker.
 

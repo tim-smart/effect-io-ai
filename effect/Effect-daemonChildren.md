@@ -14,5 +14,5 @@ Effect.daemonChildren
 **Signature**
 
 ```ts
-export declare const daemonChildren: <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, A>
+export declare const daemonChildren: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```

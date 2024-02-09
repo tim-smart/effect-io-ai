@@ -14,7 +14,7 @@ STM.filter
 
 ```ts
 export declare const filter: {
-  <A, R, E>(predicate: (a: NoInfer<A>) => STM<R, E, boolean>): (iterable: Iterable<A>) => STM<R, E, A[]>
-  <A, R, E>(iterable: Iterable<A>, predicate: (a: A) => STM<R, E, boolean>): STM<R, E, A[]>
+  <A, R, E>(predicate: (a: NoInfer<A>) => STM<boolean, E, R>): (iterable: Iterable<A>) => STM<A[], E, R>
+  <A, R, E>(iterable: Iterable<A>, predicate: (a: A) => STM<boolean, E, R>): STM<A[], E, R>
 }
 ```

@@ -14,5 +14,5 @@ TQueue.shutdown
 **Signature**
 
 ```ts
-export declare const shutdown: <A>(self: TQueue<A>) => STM.STM<never, never, void>
+export declare const shutdown: <A>(self: TQueue<A>) => STM.STM<void>
 ```

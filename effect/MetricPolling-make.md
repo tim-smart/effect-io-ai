@@ -15,6 +15,6 @@ MetricPolling.make
 ```ts
 export declare const make: <Type, In, Out, R, E>(
   metric: Metric.Metric<Type, In, Out>,
-  poll: Effect.Effect<R, E, In>
+  poll: Effect.Effect<In, E, R>
 ) => MetricPolling<Type, In, R, E, Out>
 ```

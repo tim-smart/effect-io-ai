@@ -17,7 +17,7 @@ Resource.manual
 **Signature**
 
 ```ts
-export declare const manual: <R, E, A>(
-  acquire: Effect.Effect<R, E, A>
-) => Effect.Effect<Scope.Scope | R, never, Resource<E, A>>
+export declare const manual: <A, E, R>(
+  acquire: Effect.Effect<A, E, R>
+) => Effect.Effect<Resource<A, E>, never, Scope.Scope | R>
 ```

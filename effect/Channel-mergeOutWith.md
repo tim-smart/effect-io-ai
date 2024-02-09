@@ -20,29 +20,29 @@ export declare const mergeOutWith: {
   <OutDone1>(
     n: number,
     f: (o1: OutDone1, o2: OutDone1) => OutDone1
-  ): <Env, Env1, InErr, InErr1, InElem, InElem1, InDone, InDone1, OutErr, OutErr1, OutElem1>(
+  ): <OutElem1, InElem1, OutErr1, InErr1, InDone1, Env1, InElem, OutErr, InErr, InDone, Env>(
     self: Channel<
-      Env,
-      InErr,
+      Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>,
       InElem,
-      InDone,
       OutErr,
-      Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-      OutDone1
+      InErr,
+      OutDone1,
+      InDone,
+      Env
     >
-  ) => Channel<Env | Env1, InErr & InErr1, InElem & InElem1, InDone & InDone1, OutErr | OutErr1, OutElem1, OutDone1>
-  <Env, Env1, InErr, InErr1, InElem, InElem1, InDone, InDone1, OutErr, OutErr1, OutElem1, OutDone1>(
+  ) => Channel<OutElem1, InElem & InElem1, OutErr1 | OutErr, InErr & InErr1, OutDone1, InDone & InDone1, Env1 | Env>
+  <OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1, InElem, OutErr, InErr, InDone, Env>(
     self: Channel<
-      Env,
-      InErr,
+      Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone1, InDone1, Env1>,
       InElem,
-      InDone,
       OutErr,
-      Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone1>,
-      OutDone1
+      InErr,
+      OutDone1,
+      InDone,
+      Env
     >,
     n: number,
     f: (o1: OutDone1, o2: OutDone1) => OutDone1
-  ): Channel<Env | Env1, InErr & InErr1, InElem & InElem1, InDone & InDone1, OutErr | OutErr1, OutElem1, OutDone1>
+  ): Channel<OutElem1, InElem & InElem1, OutErr1 | OutErr, InErr & InErr1, OutDone1, InDone & InDone1, Env1 | Env>
 }
 ```

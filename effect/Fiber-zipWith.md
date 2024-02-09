@@ -16,7 +16,7 @@ Fiber.zipWith
 
 ```ts
 export declare const zipWith: {
-  <E2, A, B, C>(that: Fiber<E2, B>, f: (a: A, b: B) => C): <E>(self: Fiber<E, A>) => Fiber<E2 | E, C>
-  <E, A, E2, B, C>(self: Fiber<E, A>, that: Fiber<E2, B>, f: (a: A, b: B) => C): Fiber<E | E2, C>
+  <B, E2, A, C>(that: Fiber<B, E2>, f: (a: A, b: B) => C): <E>(self: Fiber<A, E>) => Fiber<C, E2 | E>
+  <A, E, B, E2, C>(self: Fiber<A, E>, that: Fiber<B, E2>, f: (a: A, b: B) => C): Fiber<C, E | E2>
 }
 ```

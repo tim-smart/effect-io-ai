@@ -15,5 +15,5 @@ Fiber.interruptFork
 **Signature**
 
 ```ts
-export declare const interruptFork: <E, A>(self: Fiber<E, A>) => Effect.Effect<never, never, void>
+export declare const interruptFork: <A, E>(self: Fiber<A, E>) => Effect.Effect<void>
 ```

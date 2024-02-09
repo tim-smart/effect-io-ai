@@ -13,7 +13,7 @@ Effect.contextWithEffect
 **Signature**
 
 ```ts
-export declare const contextWithEffect: <R, R0, E, A>(
-  f: (context: Context.Context<R0>) => Effect<R, E, A>
-) => Effect<R | R0, E, A>
+export declare const contextWithEffect: <R0, A, E, R>(
+  f: (context: Context.Context<R0>) => Effect<A, E, R>
+) => Effect<A, E, R0 | R>
 ```

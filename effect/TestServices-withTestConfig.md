@@ -16,6 +16,6 @@ TestServices.withTestConfig
 ```ts
 export declare const withTestConfig: ((
   config: TestConfig.TestConfig
-) => <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>) &
-  (<R, E, A>(effect: Effect.Effect<R, E, A>, config: TestConfig.TestConfig) => Effect.Effect<R, E, A>)
+) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) &
+  (<A, E, R>(effect: Effect.Effect<A, E, R>, config: TestConfig.TestConfig) => Effect.Effect<A, E, R>)
 ```

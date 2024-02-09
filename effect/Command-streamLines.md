@@ -14,5 +14,5 @@ Command.streamLines
 **Signature**
 
 ```ts
-export declare const streamLines: (command: Command) => Stream<CommandExecutor, PlatformError, string>
+export declare const streamLines: (command: Command) => Stream<string, PlatformError, CommandExecutor>
 ```

@@ -34,14 +34,14 @@ Effect.acquireUseRelease
 
 ```ts
 export declare const acquireUseRelease: {
-  <A, R2, E2, A2, R3, X>(
-    use: (a: A) => Effect<R2, E2, A2>,
-    release: (a: A, exit: Exit.Exit<E2, A2>) => Effect<R3, never, X>
-  ): <R, E>(acquire: Effect<R, E, A>) => Effect<R2 | R3 | R, E2 | E, A2>
-  <R, E, A, R2, E2, A2, R3, X>(
-    acquire: Effect<R, E, A>,
-    use: (a: A) => Effect<R2, E2, A2>,
-    release: (a: A, exit: Exit.Exit<E2, A2>) => Effect<R3, never, X>
-  ): Effect<R | R2 | R3, E | E2, A2>
+  <A2, E2, R2, A, X, R3>(
+    use: (a: A) => Effect<A2, E2, R2>,
+    release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>
+  ): <E, R>(acquire: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R3 | R>
+  <A, E, R, A2, E2, R2, X, R3>(
+    acquire: Effect<A, E, R>,
+    use: (a: A) => Effect<A2, E2, R2>,
+    release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>
+  ): Effect<A2, E | E2, R | R2 | R3>
 }
 ```

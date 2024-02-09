@@ -14,8 +14,5 @@ Scope.close
 **Signature**
 
 ```ts
-export declare const close: (
-  self: CloseableScope,
-  exit: Exit.Exit<unknown, unknown>
-) => Effect.Effect<never, never, void>
+export declare const close: (self: CloseableScope, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>
 ```

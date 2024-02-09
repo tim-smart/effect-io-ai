@@ -14,5 +14,5 @@ Stream.finalizer
 **Signature**
 
 ```ts
-export declare const finalizer: <R, _>(finalizer: Effect.Effect<R, never, _>) => Stream<R, never, void>
+export declare const finalizer: <R, _>(finalizer: Effect.Effect<_, never, R>) => Stream<void, never, R>
 ```

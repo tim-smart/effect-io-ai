@@ -15,5 +15,5 @@ TArray.make
 ```ts
 export declare const make: <Elements extends [any, ...any[]]>(
   ...elements: Elements
-) => STM.STM<never, never, TArray<Elements[number]>>
+) => STM.STM<TArray<Elements[number]>, never, never>
 ```

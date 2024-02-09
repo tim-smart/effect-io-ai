@@ -13,5 +13,5 @@ TSet.fromIterable
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<never, never, TSet<A>>
+export declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<TSet<A>, never, never>
 ```

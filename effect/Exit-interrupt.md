@@ -14,5 +14,5 @@ Exit.interrupt
 **Signature**
 
 ```ts
-export declare const interrupt: (fiberId: FiberId.FiberId) => Exit<never, never>
+export declare const interrupt: (fiberId: FiberId.FiberId) => Exit<never>
 ```

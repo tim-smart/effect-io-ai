@@ -15,7 +15,7 @@ Exit.as
 
 ```ts
 export declare const as: {
-  <A2>(value: A2): <E, A>(self: Exit<E, A>) => Exit<E, A2>
-  <E, A, A2>(self: Exit<E, A>, value: A2): Exit<E, A2>
+  <A2>(value: A2): <A, E>(self: Exit<A, E>) => Exit<A2, E>
+  <A, E, A2>(self: Exit<A, E>, value: A2): Exit<A2, E>
 }
 ```

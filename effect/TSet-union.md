@@ -15,7 +15,7 @@ TSet.union
 
 ```ts
 export declare const union: {
-  <A>(other: TSet<A>): (self: TSet<A>) => STM.STM<never, never, void>
-  <A>(self: TSet<A>, other: TSet<A>): STM.STM<never, never, void>
+  <A>(other: TSet<A>): (self: TSet<A>) => STM.STM<void>
+  <A>(self: TSet<A>, other: TSet<A>): STM.STM<void>
 }
 ```

@@ -14,12 +14,12 @@ Sink.mapEffect
 
 ```ts
 export declare const mapEffect: {
-  <Z, R2, E2, Z2>(
-    f: (z: Z) => Effect.Effect<R2, E2, Z2>
-  ): <R, E, In, L>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In, L, Z2>
-  <R, E, In, L, Z, R2, E2, Z2>(
-    self: Sink<R, E, In, L, Z>,
-    f: (z: Z) => Effect.Effect<R2, E2, Z2>
-  ): Sink<R | R2, E | E2, In, L, Z2>
+  <A, A2, E2, R2>(
+    f: (a: A) => Effect.Effect<A2, E2, R2>
+  ): <In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A2, In, L, E2 | E, R2 | R>
+  <A, In, L, E, R, A2, E2, R2>(
+    self: Sink<A, In, L, E, R>,
+    f: (a: A) => Effect.Effect<A2, E2, R2>
+  ): Sink<A2, In, L, E | E2, R | R2>
 }
 ```

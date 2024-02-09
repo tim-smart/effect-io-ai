@@ -14,7 +14,7 @@ TArray.findFirstIndex
 
 ```ts
 export declare const findFirstIndex: {
-  <A>(value: A): (self: TArray<A>) => STM.STM<never, never, Option.Option<number>>
-  <A>(self: TArray<A>, value: A): STM.STM<never, never, Option.Option<number>>
+  <A>(value: A): (self: TArray<A>) => STM.STM<Option.Option<number>>
+  <A>(self: TArray<A>, value: A): STM.STM<Option.Option<number>>
 }
 ```

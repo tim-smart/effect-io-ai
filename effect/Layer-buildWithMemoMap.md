@@ -18,11 +18,11 @@ export declare const buildWithMemoMap: {
   (
     memoMap: MemoMap,
     scope: Scope.Scope
-  ): <RIn, E, ROut>(self: Layer<RIn, E, ROut>) => Effect.Effect<RIn, E, Context.Context<ROut>>
+  ): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Context.Context<ROut>, E, RIn>
   <RIn, E, ROut>(
-    self: Layer<RIn, E, ROut>,
+    self: Layer<ROut, E, RIn>,
     memoMap: MemoMap,
     scope: Scope.Scope
-  ): Effect.Effect<RIn, E, Context.Context<ROut>>
+  ): Effect.Effect<Context.Context<ROut>, E, RIn>
 }
 ```

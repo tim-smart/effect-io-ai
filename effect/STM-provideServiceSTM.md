@@ -17,12 +17,12 @@ STM.provideServiceSTM
 export declare const provideServiceSTM: {
   <T extends Context.Tag<any, any>, R1, E1>(
     tag: T,
-    stm: STM<R1, E1, Context.Tag.Service<T>>
-  ): <R, E, A>(self: STM<R, E, A>) => STM<R1 | Exclude<R, Context.Tag.Identifier<T>>, E1 | E, A>
+    stm: STM<Context.Tag.Service<T>, E1, R1>
+  ): <A, E, R>(self: STM<A, E, R>) => STM<A, E1 | E, R1 | Exclude<R, Context.Tag.Identifier<T>>>
   <R, E, A, T extends Context.Tag<any, any>, R1, E1>(
-    self: STM<R, E, A>,
+    self: STM<A, E, R>,
     tag: T,
-    stm: STM<R1, E1, Context.Tag.Service<T>>
-  ): STM<R1 | Exclude<R, Context.Tag.Identifier<T>>, E | E1, A>
+    stm: STM<Context.Tag.Service<T>, E1, R1>
+  ): STM<A, E | E1, R1 | Exclude<R, Context.Tag.Identifier<T>>>
 }
 ```

@@ -17,12 +17,12 @@ Channel.mapInputError
 export declare const mapInputError: {
   <InErr0, InErr>(
     f: (a: InErr0) => InErr
-  ): <Env, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr0, InElem, InDone, OutErr, OutElem, OutDone>
-  <Env, InElem, InDone, OutErr, OutElem, OutDone, InErr0, InErr>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr0, OutDone, InDone, Env>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, InErr0>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     f: (a: InErr0) => InErr
-  ): Channel<Env, InErr0, InElem, InDone, OutErr, OutElem, OutDone>
+  ): Channel<OutElem, InElem, OutErr, InErr0, OutDone, InDone, Env>
 }
 ```

@@ -16,10 +16,10 @@ Stream.updateService
 export declare const updateService: (<T extends Context.Tag<any, any>>(
   tag: T,
   f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-) => <R, E, A>(self: Stream<R, E, A>) => Stream<T | R, E, A>) &
+) => <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, T | R>) &
   (<R, E, A, T extends Context.Tag<any, any>>(
-    self: Stream<R, E, A>,
+    self: Stream<A, E, R>,
     tag: T,
     f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ) => Stream<R | T, E, A>)
+  ) => Stream<A, E, R | T>)
 ```

@@ -15,7 +15,7 @@ Deferred.failCauseSync
 
 ```ts
 export declare const failCauseSync: {
-  <E>(evaluate: LazyArg<Cause.Cause<E>>): <A>(self: Deferred<E, A>) => Effect.Effect<never, never, boolean>
-  <E, A>(self: Deferred<E, A>, evaluate: LazyArg<Cause.Cause<E>>): Effect.Effect<never, never, boolean>
+  <E>(evaluate: LazyArg<Cause.Cause<E>>): <A>(self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, evaluate: LazyArg<Cause.Cause<E>>): Effect.Effect<boolean>
 }
 ```

@@ -19,11 +19,11 @@ export declare const trackDefectWith: {
   <Type, In, Out>(
     metric: Metric<Type, In, Out>,
     f: (defect: unknown) => In
-  ): <R, E, A>(self: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+  ): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
   <R, E, A, Type, In, Out>(
-    self: Effect.Effect<R, E, A>,
+    self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>,
     f: (defect: unknown) => In
-  ): Effect.Effect<R, E, A>
+  ): Effect.Effect<A, E, R>
 }
 ```

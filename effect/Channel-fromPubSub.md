@@ -13,7 +13,7 @@ Channel.fromPubSub
 **Signature**
 
 ```ts
-export declare const fromPubSub: <Err, Done, Elem>(
-  pubsub: PubSub.PubSub<Either.Either<Exit.Exit<Err, Done>, Elem>>
-) => Channel<never, unknown, unknown, unknown, Err, Elem, Done>
+export declare const fromPubSub: <Done, Err, Elem>(
+  pubsub: PubSub.PubSub<Either.Either<Exit.Exit<Done, Err>, Elem>>
+) => Channel<Elem, unknown, Err, unknown, Done, unknown, never>
 ```

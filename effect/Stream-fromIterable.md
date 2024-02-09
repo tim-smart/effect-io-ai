@@ -13,5 +13,5 @@ Stream.fromIterable
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<never, never, A>
+export declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<A, never, never>
 ```

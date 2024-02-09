@@ -14,5 +14,5 @@ STM.head
 **Signature**
 
 ```ts
-export declare const head: <R, E, A>(self: STM<R, E, Iterable<A>>) => STM<R, Option.Option<E>, A>
+export declare const head: <A, E, R>(self: STM<Iterable<A>, E, R>) => STM<A, Option.Option<E>, R>
 ```

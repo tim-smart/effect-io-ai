@@ -14,14 +14,14 @@ Effect.tapErrorTag
 
 ```ts
 export declare const tapErrorTag: {
-  <K extends E extends { _tag: string } ? E["_tag"] : never, E, R1, E1, A1>(
+  <K extends E extends { _tag: string } ? E["_tag"] : never, E, A1, E1, R1>(
     k: K,
-    f: (e: Extract<E, { _tag: K }>) => Effect<R1, E1, A1>
-  ): <R, A>(self: Effect<R, E, A>) => Effect<R1 | R, E | E1, A>
-  <R, E, A, K extends E extends { _tag: string } ? E["_tag"] : never, R1, E1, A1>(
-    self: Effect<R, E, A>,
+    f: (e: Extract<E, { _tag: K }>) => Effect<A1, E1, R1>
+  ): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>
+  <A, E, R, K extends E extends { _tag: string } ? E["_tag"] : never, A1, E1, R1>(
+    self: Effect<A, E, R>,
     k: K,
-    f: (e: Extract<E, { _tag: K }>) => Effect<R1, E1, A1>
-  ): Effect<R | R1, E | E1, A>
+    f: (e: Extract<E, { _tag: K }>) => Effect<A1, E1, R1>
+  ): Effect<A, E | E1, R | R1>
 }
 ```

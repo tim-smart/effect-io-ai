@@ -15,13 +15,13 @@ Effect.tapBoth
 
 ```ts
 export declare const tapBoth: {
-  <E, XE extends E, A, XA extends A, R2, E2, X, R3, E3, X1>(options: {
-    readonly onFailure: (e: XE) => Effect<R2, E2, X>
-    readonly onSuccess: (a: XA) => Effect<R3, E3, X1>
-  }): <R>(self: Effect<R, E, A>) => Effect<R2 | R3 | R, E | E2 | E3, A>
-  <R, E, A, XE extends E, XA extends A, R2, E2, X, R3, E3, X1>(
-    self: Effect<R, E, A>,
-    options: { readonly onFailure: (e: XE) => Effect<R2, E2, X>; readonly onSuccess: (a: XA) => Effect<R3, E3, X1> }
-  ): Effect<R | R2 | R3, E | E2 | E3, A>
+  <E, X, E2, R2, A, X1, E3, R3>(options: {
+    readonly onFailure: (e: NoInfer<E>) => Effect<X, E2, R2>
+    readonly onSuccess: (a: NoInfer<A>) => Effect<X1, E3, R3>
+  }): <R>(self: Effect<A, E, R>) => Effect<A, E | E2 | E3, R2 | R3 | R>
+  <A, E, R, X, E2, R2, X1, E3, R3>(
+    self: Effect<A, E, R>,
+    options: { readonly onFailure: (e: E) => Effect<X, E2, R2>; readonly onSuccess: (a: A) => Effect<X1, E3, R3> }
+  ): Effect<A, E | E2 | E3, R | R2 | R3>
 }
 ```

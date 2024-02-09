@@ -15,7 +15,7 @@ TArray.collectFirst
 
 ```ts
 export declare const collectFirst: {
-  <A, B>(pf: (a: A) => Option.Option<B>): (self: TArray<A>) => STM.STM<never, never, Option.Option<B>>
-  <A, B>(self: TArray<A>, pf: (a: A) => Option.Option<B>): STM.STM<never, never, Option.Option<B>>
+  <A, B>(pf: (a: A) => Option.Option<B>): (self: TArray<A>) => STM.STM<Option.Option<B>, never, never>
+  <A, B>(self: TArray<A>, pf: (a: A) => Option.Option<B>): STM.STM<Option.Option<B>, never, never>
 }
 ```

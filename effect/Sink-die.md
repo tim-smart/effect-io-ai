@@ -13,5 +13,5 @@ Sink.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Sink<never, never, unknown, never, never>
+export declare const die: (defect: unknown) => Sink<never, unknown>
 ```

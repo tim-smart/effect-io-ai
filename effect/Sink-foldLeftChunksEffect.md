@@ -14,8 +14,8 @@ Sink.foldLeftChunksEffect
 **Signature**
 
 ```ts
-export declare const foldLeftChunksEffect: <S, R, E, In>(
+export declare const foldLeftChunksEffect: <S, In, E, R>(
   s: S,
-  f: (s: S, chunk: Chunk.Chunk<In>) => Effect.Effect<R, E, S>
-) => Sink<R, E, In, never, S>
+  f: (s: S, chunk: Chunk.Chunk<In>) => Effect.Effect<S, E, R>
+) => Sink<S, In, never, E, R>
 ```

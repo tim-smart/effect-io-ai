@@ -14,7 +14,7 @@ Effect.when
 
 ```ts
 export declare const when: {
-  (condition: LazyArg<boolean>): <R, E, A>(self: Effect<R, E, A>) => Effect<R, E, Option.Option<A>>
-  <R, E, A>(self: Effect<R, E, A>, condition: LazyArg<boolean>): Effect<R, E, Option.Option<A>>
+  (condition: LazyArg<boolean>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>
+  <A, E, R>(self: Effect<A, E, R>, condition: LazyArg<boolean>): Effect<Option.Option<A>, E, R>
 }
 ```

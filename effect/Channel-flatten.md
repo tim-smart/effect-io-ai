@@ -16,36 +16,36 @@ Channel.flatten
 
 ```ts
 export declare const flatten: <
-  Env,
-  InErr,
-  InElem,
-  InDone,
-  OutErr,
   OutElem,
-  Env1,
-  InErr1,
-  InElem1,
-  InDone1,
-  OutErr1,
+  InElem,
+  OutErr,
+  InErr,
   OutElem1,
-  OutDone2
+  InElem1,
+  OutErr1,
+  InErr1,
+  OutDone2,
+  InDone1,
+  Env1,
+  InDone,
+  Env
 >(
   self: Channel<
-    Env,
-    InErr,
-    InElem,
-    InDone,
-    OutErr,
     OutElem,
-    Channel<Env1, InErr1, InElem1, InDone1, OutErr1, OutElem1, OutDone2>
+    InElem,
+    OutErr,
+    InErr,
+    Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>,
+    InDone,
+    Env
   >
 ) => Channel<
-  Env | Env1,
-  InErr & InErr1,
-  InElem & InElem1,
-  InDone & InDone1,
-  OutErr | OutErr1,
   OutElem | OutElem1,
-  OutDone2
+  InElem & InElem1,
+  OutErr | OutErr1,
+  InErr & InErr1,
+  OutDone2,
+  InDone & InDone1,
+  Env1 | Env
 >
 ```

@@ -17,7 +17,7 @@ Command.string
 
 ```ts
 export declare const string: {
-  (encoding?: string): (command: Command) => Effect<CommandExecutor, PlatformError, string>
-  (command: Command, encoding?: string): Effect<CommandExecutor, PlatformError, string>
+  (encoding?: string): (command: Command) => Effect<string, PlatformError, CommandExecutor>
+  (command: Command, encoding?: string): Effect<string, PlatformError, CommandExecutor>
 }
 ```

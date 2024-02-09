@@ -15,5 +15,5 @@ STM.asUnit
 **Signature**
 
 ```ts
-export declare const asUnit: <R, E, A>(self: STM<R, E, A>) => STM<R, E, void>
+export declare const asUnit: <A, E, R>(self: STM<A, E, R>) => STM<void, E, R>
 ```

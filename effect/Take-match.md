@@ -19,9 +19,9 @@ export declare const match: {
     readonly onEnd: () => Z
     readonly onFailure: (cause: Cause.Cause<E>) => Z2
     readonly onSuccess: (chunk: Chunk.Chunk<A>) => Z3
-  }): (self: Take<E, A>) => Z | Z2 | Z3
-  <Z, E, Z2, A, Z3>(
-    self: Take<E, A>,
+  }): (self: Take<A, E>) => Z | Z2 | Z3
+  <A, E, Z, Z2, Z3>(
+    self: Take<A, E>,
     options: {
       readonly onEnd: () => Z
       readonly onFailure: (cause: Cause.Cause<E>) => Z2

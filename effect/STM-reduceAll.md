@@ -15,13 +15,13 @@ STM.reduceAll
 ```ts
 export declare const reduceAll: {
   <R2, E2, A>(
-    initial: STM<R2, E2, A>,
+    initial: STM<A, E2, R2>,
     f: (x: A, y: A) => A
-  ): <R, E>(iterable: Iterable<STM<R, E, A>>) => STM<R2 | R, E2 | E, A>
+  ): <R, E>(iterable: Iterable<STM<A, E, R>>) => STM<A, E2 | E, R2 | R>
   <R, E, R2, E2, A>(
-    iterable: Iterable<STM<R, E, A>>,
-    initial: STM<R2, E2, A>,
+    iterable: Iterable<STM<A, E, R>>,
+    initial: STM<A, E2, R2>,
     f: (x: A, y: A) => A
-  ): STM<R | R2, E | E2, A>
+  ): STM<A, E | E2, R | R2>
 }
 ```

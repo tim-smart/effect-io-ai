@@ -15,5 +15,5 @@ Fiber.joinAll
 **Signature**
 
 ```ts
-export declare const joinAll: <E, A>(fibers: Iterable<Fiber<E, A>>) => Effect.Effect<never, E, void>
+export declare const joinAll: <A, E>(fibers: Iterable<Fiber<A, E>>) => Effect.Effect<void, E, never>
 ```

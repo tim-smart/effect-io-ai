@@ -14,7 +14,7 @@ TestServices.annotationsWith
 **Signature**
 
 ```ts
-export declare const annotationsWith: <R, E, A>(
-  f: (annotations: Annotations.TestAnnotations) => Effect.Effect<R, E, A>
-) => Effect.Effect<R, E, A>
+export declare const annotationsWith: <A, E, R>(
+  f: (annotations: Annotations.TestAnnotations) => Effect.Effect<A, E, R>
+) => Effect.Effect<A, E, R>
 ```

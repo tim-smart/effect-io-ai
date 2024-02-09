@@ -13,5 +13,5 @@ Take.die
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Take<never, never>
+export declare const die: (defect: unknown) => Take<never>
 ```

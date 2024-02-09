@@ -13,5 +13,5 @@ TestServices.retries
 **Signature**
 
 ```ts
-export declare const retries: Effect.Effect<never, never, number>
+export declare const retries: Effect.Effect<number, never, never>
 ```

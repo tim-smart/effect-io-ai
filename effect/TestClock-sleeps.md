@@ -14,5 +14,5 @@ TestClock.sleeps
 **Signature**
 
 ```ts
-export declare const sleeps: () => Effect.Effect<never, never, Chunk.Chunk<number>>
+export declare const sleeps: () => Effect.Effect<Chunk.Chunk<number>>
 ```

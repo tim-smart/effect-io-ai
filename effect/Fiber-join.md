@@ -17,5 +17,5 @@ Fiber.join
 **Signature**
 
 ```ts
-export declare const join: <E, A>(self: Fiber<E, A>) => Effect.Effect<never, E, A>
+export declare const join: <A, E>(self: Fiber<A, E>) => Effect.Effect<A, E, never>
 ```

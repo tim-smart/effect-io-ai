@@ -14,5 +14,5 @@ Queue.take
 **Signature**
 
 ```ts
-export declare const take: <A>(self: Dequeue<A>) => Effect.Effect<never, never, A>
+export declare const take: <A>(self: Dequeue<A>) => Effect.Effect<A, never, never>
 ```

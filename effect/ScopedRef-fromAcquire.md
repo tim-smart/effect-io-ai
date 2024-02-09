@@ -14,7 +14,7 @@ ScopedRef.fromAcquire
 **Signature**
 
 ```ts
-export declare const fromAcquire: <R, E, A>(
-  acquire: Effect.Effect<R, E, A>
-) => Effect.Effect<Scope.Scope | R, E, ScopedRef<A>>
+export declare const fromAcquire: <A, E, R>(
+  acquire: Effect.Effect<A, E, R>
+) => Effect.Effect<ScopedRef<A>, E, Scope.Scope | R>
 ```

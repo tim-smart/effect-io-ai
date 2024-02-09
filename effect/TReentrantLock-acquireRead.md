@@ -15,5 +15,5 @@ TReentrantLock.acquireRead
 **Signature**
 
 ```ts
-export declare const acquireRead: (self: TReentrantLock) => STM.STM<never, never, number>
+export declare const acquireRead: (self: TReentrantLock) => STM.STM<number>
 ```

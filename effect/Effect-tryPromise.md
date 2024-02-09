@@ -21,7 +21,7 @@ export declare const tryPromise: {
   <A, E>(options: {
     readonly try: (signal: AbortSignal) => Promise<A>
     readonly catch: (error: unknown) => E
-  }): Effect<never, E, A>
-  <A>(try_: (signal: AbortSignal) => Promise<A>): Effect<never, Cause.UnknownException, A>
+  }): Effect<A, E, never>
+  <A>(try_: (signal: AbortSignal) => Promise<A>): Effect<A, Cause.UnknownException, never>
 }
 ```

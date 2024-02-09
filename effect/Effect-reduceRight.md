@@ -14,7 +14,7 @@ Effect.reduceRight
 
 ```ts
 export declare const reduceRight: {
-  <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<R, E, Z>): (elements: Iterable<A>) => Effect<R, E, Z>
-  <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<R, E, Z>): Effect<R, E, Z>
+  <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>
+  <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>
 }
 ```

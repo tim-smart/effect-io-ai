@@ -16,11 +16,11 @@ Stream.runForEachScoped
 ```ts
 export declare const runForEachScoped: {
   <A, R2, E2, _>(
-    f: (a: A) => Effect.Effect<R2, E2, _>
-  ): <R, E>(self: Stream<R, E, A>) => Effect.Effect<Scope.Scope | R2 | R, E2 | E, void>
+    f: (a: A) => Effect.Effect<_, E2, R2>
+  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<void, E2 | E, Scope.Scope | R2 | R>
   <R, E, A, R2, E2, _>(
-    self: Stream<R, E, A>,
-    f: (a: A) => Effect.Effect<R2, E2, _>
-  ): Effect.Effect<Scope.Scope | R | R2, E | E2, void>
+    self: Stream<A, E, R>,
+    f: (a: A) => Effect.Effect<_, E2, R2>
+  ): Effect.Effect<void, E | E2, Scope.Scope | R | R2>
 }
 ```

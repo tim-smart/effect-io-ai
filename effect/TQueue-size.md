@@ -15,5 +15,5 @@ TQueue.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: TQueue<A>) => STM.STM<never, never, number>
+export declare const size: <A>(self: TQueue<A>) => STM.STM<number>
 ```

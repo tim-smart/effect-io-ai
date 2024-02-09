@@ -13,5 +13,5 @@ Stream.make
 **Signature**
 
 ```ts
-export declare const make: <As extends any[]>(...as: As) => Stream<never, never, As[number]>
+export declare const make: <As extends any[]>(...as: As) => Stream<As[number], never, never>
 ```

@@ -13,5 +13,5 @@ Fiber.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Fiber<E, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Fiber<never, E>
 ```

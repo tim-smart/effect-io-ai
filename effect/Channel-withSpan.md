@@ -16,26 +16,30 @@ Channel.withSpan
 export declare const withSpan: {
   (
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
-  <Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>(
-    self: Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>,
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Tracer.ParentSpan>>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
+    self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
     name: string,
-    options?: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    }
-  ): Channel<Env, InErr, InElem, InDone, OutErr, OutElem, OutDone>
+    options?:
+      | {
+          readonly attributes?: Record<string, unknown> | undefined
+          readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+          readonly parent?: Tracer.ParentSpan | undefined
+          readonly root?: boolean | undefined
+          readonly context?: Context.Context<never> | undefined
+        }
+      | undefined
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Tracer.ParentSpan>>
 }
 ```

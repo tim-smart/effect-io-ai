@@ -18,5 +18,5 @@ Runtime.runPromise
 **Signature**
 
 ```ts
-export declare const runPromise: <R>(runtime: Runtime<R>) => <E, A>(effect: Effect.Effect<R, E, A>) => Promise<A>
+export declare const runPromise: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => Promise<A>
 ```

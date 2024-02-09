@@ -13,5 +13,5 @@ Stream.fromIterableEffect
 **Signature**
 
 ```ts
-export declare const fromIterableEffect: <R, E, A>(effect: Effect.Effect<R, E, Iterable<A>>) => Stream<R, E, A>
+export declare const fromIterableEffect: <A, E, R>(effect: Effect.Effect<Iterable<A>, E, R>) => Stream<A, E, R>
 ```

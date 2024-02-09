@@ -15,5 +15,5 @@ Channel.sync
 ```ts
 export declare const sync: <OutDone>(
   evaluate: LazyArg<OutDone>
-) => Channel<never, unknown, unknown, unknown, never, never, OutDone>
+) => Channel<never, unknown, never, unknown, OutDone, unknown, never>
 ```

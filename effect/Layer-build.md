@@ -14,6 +14,6 @@ Layer.build
 
 ```ts
 export declare const build: <RIn, E, ROut>(
-  self: Layer<RIn, E, ROut>
-) => Effect.Effect<Scope.Scope | RIn, E, Context.Context<ROut>>
+  self: Layer<ROut, E, RIn>
+) => Effect.Effect<Context.Context<ROut>, E, Scope.Scope | RIn>
 ```

@@ -13,5 +13,5 @@ TMap.toHashMap
 **Signature**
 
 ```ts
-export declare const toHashMap: <K, V>(self: TMap<K, V>) => STM.STM<never, never, HashMap.HashMap<K, V>>
+export declare const toHashMap: <K, V>(self: TMap<K, V>) => STM.STM<HashMap.HashMap<K, V>, never, never>
 ```

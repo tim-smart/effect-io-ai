@@ -14,5 +14,5 @@ Effect.runPromise
 **Signature**
 
 ```ts
-export declare const runPromise: <E, A>(effect: Effect<never, E, A>) => Promise<A>
+export declare const runPromise: <A, E>(effect: Effect<A, E, never>) => Promise<A>
 ```

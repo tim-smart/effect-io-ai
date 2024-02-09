@@ -14,31 +14,31 @@ Channel.concatAllWith
 
 ```ts
 export declare const concatAllWith: <
-  Env,
-  InErr,
-  InElem,
-  InDone,
-  OutErr,
   OutElem,
-  OutDone,
-  OutDone2,
-  OutDone3,
-  Env2,
-  InErr2,
   InElem2,
+  OutErr2,
+  InErr2,
+  OutDone,
   InDone2,
-  OutErr2
+  Env2,
+  InElem,
+  OutErr,
+  InErr,
+  OutDone2,
+  InDone,
+  Env,
+  OutDone3
 >(
   channels: Channel<
-    Env,
-    InErr,
+    Channel<OutElem, InElem2, OutErr2, InErr2, OutDone, InDone2, Env2>,
     InElem,
-    InDone,
     OutErr,
-    Channel<Env2, InErr2, InElem2, InDone2, OutErr2, OutElem, OutDone>,
-    OutDone2
+    InErr,
+    OutDone2,
+    InDone,
+    Env
   >,
   f: (o: OutDone, o1: OutDone) => OutDone,
   g: (o: OutDone, o2: OutDone2) => OutDone3
-) => Channel<Env | Env2, InErr & InErr2, InElem & InElem2, InDone & InDone2, OutErr | OutErr2, OutElem, OutDone3>
+) => Channel<OutElem, InElem & InElem2, OutErr2 | OutErr, InErr & InErr2, OutDone3, InDone & InDone2, Env2 | Env>
 ```

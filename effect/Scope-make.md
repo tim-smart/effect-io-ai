@@ -15,7 +15,5 @@ Scope.make
 **Signature**
 
 ```ts
-export declare const make: (
-  executionStrategy?: ExecutionStrategy.ExecutionStrategy
-) => Effect.Effect<never, never, CloseableScope>
+export declare const make: (executionStrategy?: ExecutionStrategy.ExecutionStrategy) => Effect.Effect<CloseableScope>
 ```

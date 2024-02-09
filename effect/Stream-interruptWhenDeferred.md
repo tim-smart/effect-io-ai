@@ -18,7 +18,7 @@ Stream.interruptWhenDeferred
 
 ```ts
 export declare const interruptWhenDeferred: {
-  <E2, _>(deferred: Deferred.Deferred<E2, _>): <R, E, A>(self: Stream<R, E, A>) => Stream<R, E2 | E, A>
-  <R, E, A, E2, _>(self: Stream<R, E, A>, deferred: Deferred.Deferred<E2, _>): Stream<R, E | E2, A>
+  <E2, _>(deferred: Deferred.Deferred<_, E2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R>
+  <R, E, A, E2, _>(self: Stream<A, E, R>, deferred: Deferred.Deferred<_, E2>): Stream<A, E | E2, R>
 }
 ```

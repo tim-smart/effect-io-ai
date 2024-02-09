@@ -13,5 +13,5 @@ TSet.toChunk
 **Signature**
 
 ```ts
-export declare const toChunk: <A>(self: TSet<A>) => STM.STM<never, never, Chunk.Chunk<A>>
+export declare const toChunk: <A>(self: TSet<A>) => STM.STM<Chunk.Chunk<A>, never, never>
 ```

@@ -15,6 +15,6 @@ Schedule.collectUntilEffect
 
 ```ts
 export declare const collectUntilEffect: <Env, A>(
-  f: (a: A) => Effect.Effect<Env, never, boolean>
+  f: (a: A) => Effect.Effect<boolean, never, Env>
 ) => Schedule<Env, A, Chunk.Chunk<A>>
 ```

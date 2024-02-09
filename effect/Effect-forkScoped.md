@@ -13,7 +13,7 @@ Effect.forkScoped
 **Signature**
 
 ```ts
-export declare const forkScoped: <R, E, A>(
-  self: Effect<R, E, A>
-) => Effect<Scope.Scope | R, never, Fiber.RuntimeFiber<E, A>>
+export declare const forkScoped: <A, E, R>(
+  self: Effect<A, E, R>
+) => Effect<Fiber.RuntimeFiber<A, E>, never, Scope.Scope | R>
 ```

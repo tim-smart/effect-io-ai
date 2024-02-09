@@ -1,7 +1,7 @@
 # async
 
 Imports an asynchronous side-effect into a pure `Effect` value.
-The callback function `Effect<R, E, A> => void` must be called at most once.
+The callback function `Effect<A, E, R> => void` must be called at most once.
 
 If an Effect is returned by the registration function, it will be executed
 if the fiber executing the effect is interrupted.
@@ -23,8 +23,8 @@ Effect.async
 **Signature**
 
 ```ts
-export declare const async: <R, E, A>(
-  register: (callback: (_: Effect<R, E, A>) => void, signal: AbortSignal) => void | Effect<R, never, void>,
+export declare const async: <A, E = never, R = never>(
+  register: (callback: (_: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>,
   blockingOn?: FiberId.FiberId
-) => Effect<R, E, A>
+) => Effect<A, E, R>
 ```

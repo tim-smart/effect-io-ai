@@ -16,10 +16,10 @@ Layer.effect
 export declare const effect: {
   <T extends Context.Tag<any, any>>(
     tag: T
-  ): <R, E>(effect: Effect.Effect<R, E, Context.Tag.Service<T>>) => Layer<R, E, Context.Tag.Identifier<T>>
-  <T extends Context.Tag<any, any>, R, E>(
+  ): <E, R>(effect: Effect.Effect<Context.Tag.Service<T>, E, R>) => Layer<Context.Tag.Identifier<T>, E, R>
+  <T extends Context.Tag<any, any>, E, R>(
     tag: T,
-    effect: Effect.Effect<R, E, Context.Tag.Service<T>>
-  ): Layer<R, E, Context.Tag.Identifier<T>>
+    effect: Effect.Effect<Context.Tag.Service<T>, E, R>
+  ): Layer<Context.Tag.Identifier<T>, E, R>
 }
 ```

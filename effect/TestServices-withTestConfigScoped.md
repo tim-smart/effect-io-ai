@@ -14,5 +14,5 @@ TestServices.withTestConfigScoped
 **Signature**
 
 ```ts
-export declare const withTestConfigScoped: (config: TestConfig.TestConfig) => Effect.Effect<Scope.Scope, never, void>
+export declare const withTestConfigScoped: (config: TestConfig.TestConfig) => Effect.Effect<void, never, Scope.Scope>
 ```

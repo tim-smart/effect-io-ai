@@ -13,5 +13,5 @@ Effect.negate
 **Signature**
 
 ```ts
-export declare const negate: <R, E>(self: Effect<R, E, boolean>) => Effect<R, E, boolean>
+export declare const negate: <R, E>(self: Effect<boolean, E, R>) => Effect<boolean, E, R>
 ```

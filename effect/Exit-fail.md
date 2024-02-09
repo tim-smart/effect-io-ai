@@ -14,5 +14,5 @@ Exit.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Exit<E, never>
+export declare const fail: <E>(error: E) => Exit<never, E>
 ```

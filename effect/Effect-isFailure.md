@@ -13,5 +13,5 @@ Effect.isFailure
 **Signature**
 
 ```ts
-export declare const isFailure: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, boolean>
+export declare const isFailure: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```

@@ -15,5 +15,5 @@ Channel.writeChunk
 ```ts
 export declare const writeChunk: <OutElem>(
   outs: Chunk.Chunk<OutElem>
-) => Channel<never, unknown, unknown, unknown, never, OutElem, void>
+) => Channel<OutElem, unknown, never, unknown, void, unknown, never>
 ```

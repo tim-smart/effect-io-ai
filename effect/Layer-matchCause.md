@@ -17,15 +17,15 @@ Layer.matchCause
 ```ts
 export declare const matchCause: {
   <E, A, R2, E2, A2, R3, E3, A3>(options: {
-    readonly onFailure: (cause: Cause.Cause<E>) => Layer<R2, E2, A2>
-    readonly onSuccess: (context: Context.Context<A>) => Layer<R3, E3, A3>
-  }): <R>(self: Layer<R, E, A>) => Layer<R2 | R3 | R, E2 | E3, A2 & A3>
+    readonly onFailure: (cause: Cause.Cause<E>) => Layer<A2, E2, R2>
+    readonly onSuccess: (context: Context.Context<A>) => Layer<A3, E3, R3>
+  }): <R>(self: Layer<A, E, R>) => Layer<A2 & A3, E2 | E3, R2 | R3 | R>
   <R, E, A, R2, E2, A2, R3, E3, A3>(
-    self: Layer<R, E, A>,
+    self: Layer<A, E, R>,
     options: {
-      readonly onFailure: (cause: Cause.Cause<E>) => Layer<R2, E2, A2>
-      readonly onSuccess: (context: Context.Context<A>) => Layer<R3, E3, A3>
+      readonly onFailure: (cause: Cause.Cause<E>) => Layer<A2, E2, R2>
+      readonly onSuccess: (context: Context.Context<A>) => Layer<A3, E3, R3>
     }
-  ): Layer<R | R2 | R3, E2 | E3, A2 & A3>
+  ): Layer<A2 & A3, E2 | E3, R | R2 | R3>
 }
 ```

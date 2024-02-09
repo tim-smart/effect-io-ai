@@ -15,7 +15,7 @@ STM.replicateSTMDiscard
 
 ```ts
 export declare const replicateSTMDiscard: {
-  (n: number): <R, E, A>(self: STM<R, E, A>) => STM<R, E, void>
-  <R, E, A>(self: STM<R, E, A>, n: number): STM<R, E, void>
+  (n: number): <A, E, R>(self: STM<A, E, R>) => STM<void, E, R>
+  <A, E, R>(self: STM<A, E, R>, n: number): STM<void, E, R>
 }
 ```

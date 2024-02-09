@@ -4,7 +4,7 @@ Imports an asynchronous effect into a pure `Effect` value, possibly returning
 the value synchronously.
 
 If the register function returns a value synchronously, then the callback
-function `Effect<R, E, A> => void` must not be called. Otherwise the callback
+function `Effect<A, E, R> => void` must not be called. Otherwise the callback
 function must be called at most once.
 
 The `FiberId` of the fiber that may complete the async callback may be
@@ -21,8 +21,8 @@ Effect.asyncOption
 **Signature**
 
 ```ts
-export declare const asyncOption: <R, E, A>(
-  register: (callback: (_: Effect<R, E, A>) => void) => Option.Option<Effect<R, E, A>>,
+export declare const asyncOption: <A, E = never, R = never>(
+  register: (callback: (_: Effect<A, E, R>) => void) => Option.Option<Effect<A, E, R>>,
   blockingOn?: FiberId.FiberId
-) => Effect<R, E, A>
+) => Effect<A, E, R>
 ```

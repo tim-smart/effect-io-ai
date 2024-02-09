@@ -20,5 +20,5 @@ STM.firstSuccessOf
 **Signature**
 
 ```ts
-export declare const firstSuccessOf: <R, E, A>(effects: Iterable<STM<R, E, A>>) => STM<R, E, A>
+export declare const firstSuccessOf: <A, E, R>(effects: Iterable<STM<A, E, R>>) => STM<A, E, R>
 ```

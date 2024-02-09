@@ -13,5 +13,5 @@ Effect.console
 **Signature**
 
 ```ts
-export declare const console: Effect<never, never, Console>
+export declare const console: Effect<Console, never, never>
 ```

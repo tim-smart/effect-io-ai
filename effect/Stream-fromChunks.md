@@ -13,5 +13,5 @@ Stream.fromChunks
 **Signature**
 
 ```ts
-export declare const fromChunks: <A>(...chunks: Chunk.Chunk<A>[]) => Stream<never, never, A>
+export declare const fromChunks: <A>(...chunks: Chunk.Chunk<A>[]) => Stream<A, never, never>
 ```

@@ -14,7 +14,7 @@ Stream.decodeText
 
 ```ts
 export declare const decodeText: {
-  (encoding?: string): <R, E>(self: Stream<R, E, Uint8Array>) => Stream<R, E, string>
-  <R, E>(self: Stream<R, E, Uint8Array>, encoding?: string): Stream<R, E, string>
+  (encoding?: string | undefined): <R, E>(self: Stream<Uint8Array, E, R>) => Stream<string, E, R>
+  <R, E>(self: Stream<Uint8Array, E, R>, encoding?: string | undefined): Stream<string, E, R>
 }
 ```

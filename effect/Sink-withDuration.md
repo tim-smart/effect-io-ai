@@ -13,7 +13,7 @@ Sink.withDuration
 **Signature**
 
 ```ts
-export declare const withDuration: <R, E, In, L, Z>(
-  self: Sink<R, E, In, L, Z>
-) => Sink<R, E, In, L, [Z, Duration.Duration]>
+export declare const withDuration: <A, In, L, E, R>(
+  self: Sink<A, In, L, E, R>
+) => Sink<[A, Duration.Duration], In, L, E, R>
 ```

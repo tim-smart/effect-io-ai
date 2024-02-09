@@ -19,5 +19,5 @@ Runtime.runPromiseExit
 ```ts
 export declare const runPromiseExit: <R>(
   runtime: Runtime<R>
-) => <E, A>(effect: Effect.Effect<R, E, A>) => Promise<Exit.Exit<E, A>>
+) => <A, E>(effect: Effect.Effect<A, E, R>) => Promise<Exit.Exit<A, E>>
 ```

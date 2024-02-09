@@ -27,5 +27,5 @@ export declare const transformLiterals: <
   const A extends readonly (readonly [from: AST.LiteralValue, to: AST.LiteralValue])[]
 >(
   ...pairs: A
-) => Schema<never, A[number][0], A[number][1]>
+) => Schema<A[number][1], A[number][0], never>
 ```

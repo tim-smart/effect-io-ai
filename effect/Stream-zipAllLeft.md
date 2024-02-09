@@ -18,7 +18,7 @@ Stream.zipAllLeft
 
 ```ts
 export declare const zipAllLeft: {
-  <R2, E2, A2, A>(that: Stream<R2, E2, A2>, defaultLeft: A): <R, E>(self: Stream<R, E, A>) => Stream<R2 | R, E2 | E, A>
-  <R, E, R2, E2, A2, A>(self: Stream<R, E, A>, that: Stream<R2, E2, A2>, defaultLeft: A): Stream<R | R2, E | E2, A>
+  <R2, E2, A2, A>(that: Stream<A2, E2, R2>, defaultLeft: A): <R, E>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
+  <R, E, R2, E2, A2, A>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>, defaultLeft: A): Stream<A, E | E2, R | R2>
 }
 ```

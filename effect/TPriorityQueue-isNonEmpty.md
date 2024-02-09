@@ -13,5 +13,5 @@ TPriorityQueue.isNonEmpty
 **Signature**
 
 ```ts
-export declare const isNonEmpty: <A>(self: TPriorityQueue<A>) => STM.STM<never, never, boolean>
+export declare const isNonEmpty: <A>(self: TPriorityQueue<A>) => STM.STM<boolean>
 ```

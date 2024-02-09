@@ -15,5 +15,5 @@ TPubSub.size
 **Signature**
 
 ```ts
-export declare const size: <A>(self: TPubSub<A>) => STM.STM<never, never, number>
+export declare const size: <A>(self: TPubSub<A>) => STM.STM<number>
 ```

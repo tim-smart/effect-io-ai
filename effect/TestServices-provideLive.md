@@ -13,5 +13,5 @@ TestServices.provideLive
 **Signature**
 
 ```ts
-export declare const provideLive: <R, E, A>(effect: Effect.Effect<R, E, A>) => Effect.Effect<R, E, A>
+export declare const provideLive: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```

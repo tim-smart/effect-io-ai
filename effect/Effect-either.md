@@ -20,5 +20,5 @@ Effect.either
 **Signature**
 
 ```ts
-export declare const either: <R, E, A>(self: Effect<R, E, A>) => Effect<R, never, Either.Either<E, A>>
+export declare const either: <A, E, R>(self: Effect<A, E, R>) => Effect<Either.Either<E, A>, never, R>
 ```

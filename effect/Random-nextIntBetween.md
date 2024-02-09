@@ -14,5 +14,5 @@ Random.nextIntBetween
 **Signature**
 
 ```ts
-export declare const nextIntBetween: (min: number, max: number) => Effect.Effect<never, never, number>
+export declare const nextIntBetween: (min: number, max: number) => Effect.Effect<number>
 ```

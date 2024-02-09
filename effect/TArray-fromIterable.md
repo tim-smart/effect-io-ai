@@ -13,5 +13,5 @@ TArray.fromIterable
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<never, never, TArray<A>>
+export declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<TArray<A>, never, never>
 ```

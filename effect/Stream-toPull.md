@@ -16,7 +16,7 @@ Stream.toPull
 **Signature**
 
 ```ts
-export declare const toPull: <R, E, A>(
-  self: Stream<R, E, A>
-) => Effect.Effect<Scope.Scope | R, never, Effect.Effect<R, Option.Option<E>, Chunk.Chunk<A>>>
+export declare const toPull: <A, E, R>(
+  self: Stream<A, E, R>
+) => Effect.Effect<Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>, never, Scope.Scope | R>
 ```

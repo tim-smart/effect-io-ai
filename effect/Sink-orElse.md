@@ -14,12 +14,12 @@ Sink.orElse
 
 ```ts
 export declare const orElse: {
-  <R2, E2, In2, L2, Z2>(
-    that: LazyArg<Sink<R2, E2, In2, L2, Z2>>
-  ): <R, E, In, L, Z>(self: Sink<R, E, In, L, Z>) => Sink<R2 | R, E2 | E, In & In2, L2 | L, Z2 | Z>
-  <R, E, In, L, Z, R2, E2, In2, L2, Z2>(
-    self: Sink<R, E, In, L, Z>,
-    that: LazyArg<Sink<R2, E2, In2, L2, Z2>>
-  ): Sink<R | R2, E | E2, In & In2, L | L2, Z | Z2>
+  <A2, In2, L2, E2, R2>(
+    that: LazyArg<Sink<A2, In2, L2, E2, R2>>
+  ): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A2 | A, In & In2, L2 | L, E2 | E, R2 | R>
+  <A, In, L, E, R, A2, In2, L2, E2, R2>(
+    self: Sink<A, In, L, E, R>,
+    that: LazyArg<Sink<A2, In2, L2, E2, R2>>
+  ): Sink<A | A2, In & In2, L | L2, E | E2, R | R2>
 }
 ```

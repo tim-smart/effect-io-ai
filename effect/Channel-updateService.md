@@ -17,13 +17,13 @@ export declare const updateService: {
   <T extends Context.Tag<any, any>>(
     tag: T,
     f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): <R, InErr, InDone, OutElem, OutErr, OutDone>(
-    self: Channel<R, InErr, unknown, InDone, OutErr, OutElem, OutDone>
-  ) => Channel<T | R, InErr, unknown, InDone, OutErr, OutElem, OutDone>
-  <R, InErr, InDone, OutElem, OutErr, OutDone, T extends Context.Tag<any, any>>(
-    self: Channel<R, InErr, unknown, InDone, OutErr, OutElem, OutDone>,
+  ): <OutElem, OutErr, InErr, OutDone, InDone, R>(
+    self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R>
+  ) => Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, T | R>
+  <OutElem, OutErr, InErr, OutDone, InDone, R, T extends Context.Tag<any, any>>(
+    self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R>,
     tag: T,
     f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): Channel<R | T, InErr, unknown, InDone, OutErr, OutElem, OutDone>
+  ): Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R | T>
 }
 ```

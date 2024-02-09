@@ -15,7 +15,7 @@ Primitive.validate
 
 ```ts
 export declare const validate: {
-  (value: Option<string>, config: CliConfig): <A>(self: Primitive<A>) => Effect<FileSystem, string, A>
-  <A>(self: Primitive<A>, value: Option<string>, config: CliConfig): Effect<FileSystem, string, A>
+  (value: Option<string>, config: CliConfig): <A>(self: Primitive<A>) => Effect<A, string, FileSystem>
+  <A>(self: Primitive<A>, value: Option<string>, config: CliConfig): Effect<A, string, FileSystem>
 }
 ```

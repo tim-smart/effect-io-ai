@@ -15,7 +15,7 @@ PubSub.publishAll
 
 ```ts
 export declare const publishAll: {
-  <A>(elements: Iterable<A>): (self: PubSub<A>) => Effect.Effect<never, never, boolean>
-  <A>(self: PubSub<A>, elements: Iterable<A>): Effect.Effect<never, never, boolean>
+  <A>(elements: Iterable<A>): (self: PubSub<A>) => Effect.Effect<boolean>
+  <A>(self: PubSub<A>, elements: Iterable<A>): Effect.Effect<boolean>
 }
 ```

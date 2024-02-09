@@ -13,8 +13,8 @@ Stream.fromAsyncIterable
 **Signature**
 
 ```ts
-export declare const fromAsyncIterable: <E, A>(
+export declare const fromAsyncIterable: <A, E>(
   iterable: AsyncIterable<A>,
   onError: (e: unknown) => E
-) => Stream<never, E, A>
+) => Stream<A, E, never>
 ```

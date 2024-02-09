@@ -13,5 +13,5 @@ Queue.isShutdown
 **Signature**
 
 ```ts
-export declare const isShutdown: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<never, never, boolean>
+export declare const isShutdown: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<boolean>
 ```

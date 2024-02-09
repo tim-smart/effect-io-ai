@@ -15,14 +15,14 @@ Sink.collectAllWhileWith
 
 ```ts
 export declare const collectAllWhileWith: {
-  <Z, S>(options: {
+  <A, S>(options: {
     readonly initial: S
-    readonly while: Predicate<Z>
-    readonly body: (s: S, z: Z) => S
-  }): <R, E, In, L extends In>(self: Sink<R, E, In, L, Z>) => Sink<R, E, In, L, S>
-  <R, E, In, L extends In, Z, S>(
-    self: Sink<R, E, In, L, Z>,
-    options: { readonly initial: S; readonly while: Predicate<Z>; readonly body: (s: S, z: Z) => S }
-  ): Sink<R, E, In, L, S>
+    readonly while: Predicate<A>
+    readonly body: (s: S, a: A) => S
+  }): <In, L extends In, E, R>(self: Sink<A, In, L, E, R>) => Sink<S, In, L, E, R>
+  <A, In, L extends In, E, R, S>(
+    self: Sink<A, In, L, E, R>,
+    options: { readonly initial: S; readonly while: Predicate<A>; readonly body: (s: S, a: A) => S }
+  ): Sink<S, In, L, E, R>
 }
 ```

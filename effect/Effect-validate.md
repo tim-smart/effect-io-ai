@@ -15,14 +15,18 @@ Effect.validate
 
 ```ts
 export declare const validate: {
-  <R1, E1, B>(
-    that: Effect<R1, E1, B>,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): <R, E, A>(self: Effect<R, E, A>) => Effect<R1 | R, E1 | E, [A, B]>
-  <R, E, A, R1, E1, B>(
-    self: Effect<R, E, A>,
-    that: Effect<R1, E1, B>,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<R | R1, E | E1, [A, B]>
+  <B, E1, R1>(
+    that: Effect<B, E1, R1>,
+    options?:
+      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, B], E1 | E, R1 | R>
+  <A, E, R, B, E1, R1>(
+    self: Effect<A, E, R>,
+    that: Effect<B, E1, R1>,
+    options?:
+      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<[A, B], E | E1, R | R1>
 }
 ```
