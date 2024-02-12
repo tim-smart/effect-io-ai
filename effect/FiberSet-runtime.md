@@ -39,7 +39,7 @@ Effect.gen(function* (_) {
 **Signature**
 
 ```ts
-export declare const runtime: <A, E = never>(
+export declare const runtime: <A, E>(
   self: FiberSet<A, E>
 ) => <R = never>() => Effect.Effect<
   <XE extends E, XA extends A>(

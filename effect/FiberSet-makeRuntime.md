@@ -13,7 +13,7 @@ FiberSet.makeRuntime
 **Signature**
 
 ```ts
-export declare const makeRuntime: <A, E = never, R = never>() => Effect.Effect<
+export declare const makeRuntime: <R = never, A = unknown, E = unknown>() => Effect.Effect<
   <XE extends E, XA extends A>(
     effect: Effect.Effect<XA, XE, R>,
     options?: Runtime.RunForkOptions | undefined
