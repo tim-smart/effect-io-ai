@@ -15,16 +15,16 @@ FiberRefs.updateManyAs
 ```ts
 export declare const updateManyAs: {
   (options: {
-    readonly forkAs?: FiberId.Runtime | undefined
+    readonly forkAs?: FiberId.Single | undefined
     readonly entries: readonly [
       readonly [
         FiberRef.FiberRef<any>,
-        readonly [readonly [FiberId.Runtime, any], ...Array<readonly [FiberId.Runtime, any]>]
+        readonly [readonly [FiberId.Single, any], ...Array<readonly [FiberId.Single, any]>]
       ],
       ...Array<
         readonly [
           FiberRef.FiberRef<any>,
-          readonly [readonly [FiberId.Runtime, any], ...Array<readonly [FiberId.Runtime, any]>]
+          readonly [readonly [FiberId.Single, any], ...Array<readonly [FiberId.Single, any]>]
         ]
       >
     ]
@@ -32,16 +32,16 @@ export declare const updateManyAs: {
   (
     self: FiberRefs,
     options: {
-      readonly forkAs?: FiberId.Runtime | undefined
+      readonly forkAs?: FiberId.Single | undefined
       readonly entries: readonly [
         readonly [
           FiberRef.FiberRef<any>,
-          readonly [readonly [FiberId.Runtime, any], ...Array<readonly [FiberId.Runtime, any]>]
+          readonly [readonly [FiberId.Single, any], ...Array<readonly [FiberId.Single, any]>]
         ],
         ...Array<
           readonly [
             FiberRef.FiberRef<any>,
-            readonly [readonly [FiberId.Runtime, any], ...Array<readonly [FiberId.Runtime, any]>]
+            readonly [readonly [FiberId.Single, any], ...Array<readonly [FiberId.Single, any]>]
           ]
         >
       ]

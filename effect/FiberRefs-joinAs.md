@@ -16,7 +16,7 @@ FiberRefs.joinAs
 
 ```ts
 export declare const joinAs: {
-  (fiberId: FiberId.Runtime, that: FiberRefs): (self: FiberRefs) => FiberRefs
-  (self: FiberRefs, fiberId: FiberId.Runtime, that: FiberRefs): FiberRefs
+  (fiberId: FiberId.Single, that: FiberRefs): (self: FiberRefs) => FiberRefs
+  (self: FiberRefs, fiberId: FiberId.Single, that: FiberRefs): FiberRefs
 }
 ```

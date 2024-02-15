@@ -13,5 +13,5 @@ AST.partial
 **Signature**
 
 ```ts
-export declare const partial: (ast: AST) => AST
+export declare const partial: (ast: AST, options?: { readonly exact: true }) => AST
 ```

@@ -15,13 +15,13 @@ FiberRefs.updateAs
 ```ts
 export declare const updateAs: {
   <A>(options: {
-    readonly fiberId: FiberId.Runtime
+    readonly fiberId: FiberId.Single
     readonly fiberRef: FiberRef.FiberRef<A>
     readonly value: A
   }): (self: FiberRefs) => FiberRefs
   <A>(
     self: FiberRefs,
-    options: { readonly fiberId: FiberId.Runtime; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A }
+    options: { readonly fiberId: FiberId.Single; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A }
   ): FiberRefs
 }
 ```

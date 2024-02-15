@@ -15,7 +15,7 @@ Effect.withClock
 
 ```ts
 export declare const withClock: {
-  <A extends Clock.Clock>(value: A): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
-  <R, E, A extends Clock.Clock>(effect: Effect<A, E, R>, value: A): Effect<A, E, R>
+  <X extends Clock.Clock>(value: X): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <X extends Clock.Clock, A, E, R>(effect: Effect<A, E, R>, value: X): Effect<A, E, R>
 }
 ```

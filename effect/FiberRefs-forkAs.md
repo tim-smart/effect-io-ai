@@ -16,7 +16,7 @@ FiberRefs.forkAs
 
 ```ts
 export declare const forkAs: {
-  (childId: FiberId.Runtime): (self: FiberRefs) => FiberRefs
-  (self: FiberRefs, childId: FiberId.Runtime): FiberRefs
+  (childId: FiberId.Single): (self: FiberRefs) => FiberRefs
+  (self: FiberRefs, childId: FiberId.Single): FiberRefs
 }
 ```

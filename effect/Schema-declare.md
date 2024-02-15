@@ -19,14 +19,22 @@ export declare const declare: {
     is: (input: unknown) => input is A,
     annotations?: DeclareAnnotations<readonly [], A> | undefined
   ): Schema<A, A, never>
-  <const P extends readonly Schema<any, any, any>[], R extends Schema.Context<P[number]>, I, A>(
+  <const P extends readonly Schema<any, any, any>[], I, A>(
     typeParameters: P,
     decodeUnknown: (
-      ...typeParameters: P
-    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<A, ParseResult.ParseIssue, R>,
+      ...typeParameters: { readonly [K in keyof P]: Schema<Schema.To<P[K]>, Schema.From<P[K]>, never> }
+    ) => (
+      input: unknown,
+      options: ParseOptions,
+      ast: AST.Declaration
+    ) => Effect.Effect<A, ParseResult.ParseIssue, never>,
     encodeUnknown: (
-      ...typeParameters: P
-    ) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<I, ParseResult.ParseIssue, R>,
+      ...typeParameters: { readonly [K in keyof P]: Schema<Schema.To<P[K]>, Schema.From<P[K]>, never> }
+    ) => (
+      input: unknown,
+      options: ParseOptions,
+      ast: AST.Declaration
+    ) => Effect.Effect<I, ParseResult.ParseIssue, never>,
     annotations?: DeclareAnnotations<{ readonly [K in keyof P]: Schema.To<P[K]> }, A> | undefined
   ): Schema<A, I, Schema.Context<P[number]>>
 }
