@@ -19,9 +19,9 @@ export declare const unsafeSet: {
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>,
     interruptAs?: FiberId.FiberId
-  ): (self: FiberMap.FiberMap<K, A, E>) => void
+  ): (self: FiberMap<K, A, E>) => void
   <K, A, E, XE extends E, XA extends A>(
-    self: FiberMap.FiberMap<K, A, E>,
+    self: FiberMap<K, A, E>,
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>,
     interruptAs?: FiberId.FiberId

@@ -47,7 +47,7 @@ Effect.gen(function* (_) {
 
 ```ts
 export declare const runtime: <K, A, E>(
-  self: FiberMap.FiberMap<K, A, E>
+  self: FiberMap<K, A, E>
 ) => <R = never>() => Effect.Effect<
   <XE extends E, XA extends A>(
     key: K,

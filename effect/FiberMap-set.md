@@ -18,9 +18,9 @@ export declare const set: {
   <K, A, E, XE extends E, XA extends A>(
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>
-  ): (self: FiberMap.FiberMap<K, A, E>) => Effect.Effect<void>
+  ): (self: FiberMap<K, A, E>) => Effect.Effect<void>
   <K, A, E, XE extends E, XA extends A>(
-    self: FiberMap.FiberMap<K, A, E>,
+    self: FiberMap<K, A, E>,
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>
   ): Effect.Effect<void>

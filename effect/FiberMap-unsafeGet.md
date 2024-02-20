@@ -14,7 +14,7 @@ FiberMap.unsafeGet
 
 ```ts
 export declare const unsafeGet: {
-  <K>(key: K): <A, E>(self: FiberMap.FiberMap<K, A, E>) => Option.Option<Fiber.RuntimeFiber<A, E>>
-  <K, A, E>(self: FiberMap.FiberMap<K, A, E>, key: K): Option.Option<Fiber.RuntimeFiber<A, E>>
+  <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Option.Option<Fiber.RuntimeFiber<A, E>>
+  <K, A, E>(self: FiberMap<K, A, E>, key: K): Option.Option<Fiber.RuntimeFiber<A, E>>
 }
 ```
