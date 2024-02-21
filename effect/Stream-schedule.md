@@ -14,9 +14,9 @@ Stream.schedule
 
 ```ts
 export declare const schedule: {
-  <R2, A, A0 extends A, _>(
-    schedule: Schedule.Schedule<R2, A0, _>
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, E, R2, A, A0 extends A, _>(self: Stream<A, E, R>, schedule: Schedule.Schedule<R2, A0, _>): Stream<A, E, R | R2>
+  <X, A0 extends A, R2, A>(
+    schedule: Schedule.Schedule<X, A0, R2>
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, X, A0 extends A, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<X, A0, R2>): Stream<A, E, R | R2>
 }
 ```

@@ -15,7 +15,7 @@ STM.refineOrDieWith
 
 ```ts
 export declare const refineOrDieWith: {
-  <E, E2>(pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): <R, A>(self: STM<A, E, R>) => STM<A, E2, R>
-  <R, A, E, E2>(self: STM<A, E, R>, pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): STM<A, E2, R>
+  <E, E2>(pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): <A, R>(self: STM<A, E, R>) => STM<A, E2, R>
+  <A, E, R, E2>(self: STM<A, E, R>, pf: (error: E) => Option.Option<E2>, f: (error: E) => unknown): STM<A, E2, R>
 }
 ```

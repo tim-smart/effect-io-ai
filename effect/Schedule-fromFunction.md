@@ -14,5 +14,5 @@ Schedule.fromFunction
 **Signature**
 
 ```ts
-export declare const fromFunction: <A, B>(f: (a: A) => B) => Schedule<never, A, B>
+export declare const fromFunction: <A, B>(f: (a: A) => B) => Schedule<B, A, never>
 ```

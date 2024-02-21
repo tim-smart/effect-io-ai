@@ -13,5 +13,5 @@ Schedule.count
 **Signature**
 
 ```ts
-export declare const count: Schedule<never, unknown, number>
+export declare const count: Schedule<number, unknown, never>
 ```

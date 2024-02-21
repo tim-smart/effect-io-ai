@@ -22,5 +22,5 @@ assert.deepStrictEqual(getRights([right(1), left("err"), right(2)]), [1, 2])
 **Signature**
 
 ```ts
-export declare const getRights: <E, A>(self: Iterable<Either<E, A>>) => A[]
+export declare const getRights: <R, L>(self: Iterable<Either<R, L>>) => R[]
 ```

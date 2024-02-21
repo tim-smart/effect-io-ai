@@ -26,7 +26,12 @@ assert.deepStrictEqual(filterMap(x, f), { c: 6 })
 
 ```ts
 export declare const filterMap: {
-  <K extends string, A, B>(f: (a: A, key: K) => Option.Option<B>): (self: Record<K, A>) => Record<string, B>
-  <K extends string, A, B>(self: Record<K, A>, f: (a: A, key: K) => Option.Option<B>): Record<string, B>
+  <K extends string, A, B>(
+    f: (a: A, key: K) => Option.Option<B>
+  ): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  <K extends string, A, B>(
+    self: ReadonlyRecord<K, A>,
+    f: (a: A, key: K) => Option.Option<B>
+  ): Record<ReadonlyRecord.NonLiteralKey<K>, B>
 }
 ```

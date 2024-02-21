@@ -14,14 +14,14 @@ Schedule.zipWith
 
 ```ts
 export declare const zipWith: {
-  <Env2, In2, Out2, Out, Out3>(
-    that: Schedule<Env2, In2, Out2>,
+  <Out2, In2, R2, Out, Out3>(
+    that: Schedule<Out2, In2, R2>,
     f: (out: Out, out2: Out2) => Out3
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In & In2, Out3>
-  <Env, In, Out, Env2, In2, Out2, Out3>(
-    self: Schedule<Env, In, Out>,
-    that: Schedule<Env2, In2, Out2>,
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out3, In & In2, R2 | R>
+  <Out, In, R, Out2, In2, R2, Out3>(
+    self: Schedule<Out, In, R>,
+    that: Schedule<Out2, In2, R2>,
     f: (out: Out, out2: Out2) => Out3
-  ): Schedule<Env | Env2, In & In2, Out3>
+  ): Schedule<Out3, In & In2, R | R2>
 }
 ```

@@ -15,6 +15,6 @@ Stream.as
 ```ts
 export declare const as: {
   <B>(value: B): <A, E, R>(self: Stream<A, E, R>) => Stream<B, E, R>
-  <R, E, A, B>(self: Stream<A, E, R>, value: B): Stream<B, E, R>
+  <A, E, R, B>(self: Stream<A, E, R>, value: B): Stream<B, E, R>
 }
 ```

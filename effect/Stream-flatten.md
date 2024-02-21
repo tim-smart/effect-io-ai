@@ -19,12 +19,12 @@ export declare const flatten: {
     options?:
       | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
       | undefined
-  ): <R, E, R2, E2, A>(self: Stream<Stream<A, E2, R2>, E, R>) => Stream<A, E | E2, R | R2>
-  <R, E, R2, E2, A>(
+  ): <A, E2, R2, E, R>(self: Stream<Stream<A, E2, R2>, E, R>) => Stream<A, E2 | E, R2 | R>
+  <A, E2, R2, E, R>(
     self: Stream<Stream<A, E2, R2>, E, R>,
     options?:
       | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
       | undefined
-  ): Stream<A, E | E2, R | R2>
+  ): Stream<A, E2 | E, R2 | R>
 }
 ```

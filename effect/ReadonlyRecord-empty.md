@@ -13,5 +13,8 @@ ReadonlyRecord.empty
 **Signature**
 
 ```ts
-export declare const empty: <A>() => Record<string, A>
+export declare const empty: <K extends string | symbol = never, V = never>() => Record<
+  ReadonlyRecord.NonLiteralKey<K>,
+  V
+>
 ```

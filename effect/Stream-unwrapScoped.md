@@ -13,7 +13,7 @@ Stream.unwrapScoped
 **Signature**
 
 ```ts
-export declare const unwrapScoped: <R, E, R2, E2, A>(
+export declare const unwrapScoped: <A, E2, R2, E, R>(
   effect: Effect.Effect<Stream<A, E2, R2>, E, R>
-) => Stream<A, E | E2, R2 | Exclude<R, Scope.Scope>>
+) => Stream<A, E2 | E, R2 | Exclude<R, Scope.Scope>>
 ```

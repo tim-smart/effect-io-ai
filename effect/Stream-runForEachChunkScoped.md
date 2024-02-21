@@ -15,12 +15,12 @@ Stream.runForEachChunkScoped
 
 ```ts
 export declare const runForEachChunkScoped: {
-  <A, R2, E2, _>(
-    f: (a: Chunk.Chunk<A>) => Effect.Effect<_, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<void, E2 | E, Scope.Scope | R2 | R>
-  <R, E, A, R2, E2, _>(
+  <A, X, E2, R2>(
+    f: (a: Chunk.Chunk<A>) => Effect.Effect<X, E2, R2>
+  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<void, E2 | E, Scope.Scope | R2 | R>
+  <A, E, R, X, E2, R2>(
     self: Stream<A, E, R>,
-    f: (a: Chunk.Chunk<A>) => Effect.Effect<_, E2, R2>
+    f: (a: Chunk.Chunk<A>) => Effect.Effect<X, E2, R2>
   ): Effect.Effect<void, E | E2, Scope.Scope | R | R2>
 }
 ```

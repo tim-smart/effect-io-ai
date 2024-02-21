@@ -14,7 +14,7 @@ STM.mergeAll
 
 ```ts
 export declare const mergeAll: {
-  <A2, A>(zero: A2, f: (a2: A2, a: A) => A2): <R, E>(iterable: Iterable<STM<A, E, R>>) => STM<A2, E, R>
-  <R, E, A2, A>(iterable: Iterable<STM<A, E, R>>, zero: A2, f: (a2: A2, a: A) => A2): STM<A2, E, R>
+  <A2, A>(zero: A2, f: (a2: A2, a: A) => A2): <E, R>(iterable: Iterable<STM<A, E, R>>) => STM<A2, E, R>
+  <A, E, R, A2>(iterable: Iterable<STM<A, E, R>>, zero: A2, f: (a2: A2, a: A) => A2): STM<A2, E, R>
 }
 ```

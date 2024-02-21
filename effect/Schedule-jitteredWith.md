@@ -18,7 +18,13 @@ Schedule.jitteredWith
 
 ```ts
 export declare const jitteredWith: {
-  (options: { min?: number; max?: number }): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
-  <Env, In, Out>(self: Schedule<Env, In, Out>, options: { min?: number; max?: number }): Schedule<Env, In, Out>
+  (options: {
+    min?: number | undefined
+    max?: number | undefined
+  }): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
+  <Out, In, R>(
+    self: Schedule<Out, In, R>,
+    options: { min?: number | undefined; max?: number | undefined }
+  ): Schedule<Out, In, R>
 }
 ```

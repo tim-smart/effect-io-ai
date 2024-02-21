@@ -28,7 +28,12 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const fromIterableWith: {
-  <A, B>(f: (a: A) => readonly [string, B]): (self: Iterable<A>) => Record<string, B>
-  <A, B>(self: Iterable<A>, f: (a: A) => readonly [string, B]): Record<string, B>
+  <A, K extends string | symbol, B>(
+    f: (a: A) => readonly [K, B]
+  ): (self: Iterable<A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  <A, K extends string | symbol, B>(
+    self: Iterable<A>,
+    f: (a: A) => readonly [K, B]
+  ): Record<ReadonlyRecord.NonLiteralKey<K>, B>
 }
 ```

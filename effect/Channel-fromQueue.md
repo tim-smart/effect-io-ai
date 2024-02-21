@@ -14,6 +14,6 @@ Channel.fromQueue
 
 ```ts
 export declare const fromQueue: <Done, Err, Elem>(
-  queue: Queue.Dequeue<Either.Either<Exit.Exit<Done, Err>, Elem>>
+  queue: Queue.Dequeue<Either.Either<Elem, Exit.Exit<Done, Err>>>
 ) => Channel<Elem, unknown, Err, unknown, Done, unknown, never>
 ```

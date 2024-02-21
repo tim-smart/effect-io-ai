@@ -14,7 +14,7 @@ Stream.unfoldChunkEffect
 **Signature**
 
 ```ts
-export declare const unfoldChunkEffect: <R, E, A, S>(
+export declare const unfoldChunkEffect: <S, A, E, R>(
   s: S,
   f: (s: S) => Effect.Effect<Option.Option<readonly [Chunk.Chunk<A>, S]>, E, R>
 ) => Stream<A, E, R>

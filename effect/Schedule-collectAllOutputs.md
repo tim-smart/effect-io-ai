@@ -13,7 +13,5 @@ Schedule.collectAllOutputs
 **Signature**
 
 ```ts
-export declare const collectAllOutputs: <Env, In, Out>(
-  self: Schedule<Env, In, Out>
-) => Schedule<Env, In, Chunk.Chunk<Out>>
+export declare const collectAllOutputs: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Chunk.Chunk<Out>, In, R>
 ```

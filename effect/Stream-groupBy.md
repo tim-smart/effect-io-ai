@@ -14,14 +14,14 @@ Stream.groupBy
 
 ```ts
 export declare const groupBy: {
-  <A, R2, E2, K, V>(
+  <A, K, V, E2, R2>(
     f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
-  ): <R, E>(self: Stream<A, E, R>) => GroupBy.GroupBy<R2 | R, E2 | E, K, V>
-  <R, E, A, R2, E2, K, V>(
+  ): <E, R>(self: Stream<A, E, R>) => GroupBy.GroupBy<K, V, E2 | E, R2 | R>
+  <A, E, R, K, V, E2, R2>(
     self: Stream<A, E, R>,
     f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
-  ): GroupBy.GroupBy<R | R2, E | E2, K, V>
+  ): GroupBy.GroupBy<K, V, E | E2, R | R2>
 }
 ```

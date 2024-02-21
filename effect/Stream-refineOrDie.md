@@ -14,7 +14,7 @@ Stream.refineOrDie
 
 ```ts
 export declare const refineOrDie: {
-  <E, E2>(pf: (error: E) => Option.Option<E2>): <R, A>(self: Stream<A, E, R>) => Stream<A, E2, R>
-  <R, A, E, E2>(self: Stream<A, E, R>, pf: (error: E) => Option.Option<E2>): Stream<A, E2, R>
+  <E, E2>(pf: (error: E) => Option.Option<E2>): <A, R>(self: Stream<A, E, R>) => Stream<A, E2, R>
+  <A, E, R, E2>(self: Stream<A, E, R>, pf: (error: E) => Option.Option<E2>): Stream<A, E2, R>
 }
 ```

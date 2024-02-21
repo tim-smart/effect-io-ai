@@ -20,14 +20,14 @@ import { some, none } from "effect/Option"
 const f = (x: number) => x * 2
 
 assert.deepStrictEqual(modify({ a: 3 }, "a", f), { a: 6 })
-assert.deepStrictEqual(modify({ a: 3 }, "b", f), { a: 3 })
+assert.deepStrictEqual(modify({ a: 3 } as Record<string, number>, "b", f), { a: 3 })
 ```
 
 **Signature**
 
 ```ts
 export declare const modify: {
-  <A, B>(key: string, f: (a: A) => B): (self: ReadonlyRecord<A>) => Record<string, A | B>
-  <A, B>(self: ReadonlyRecord<A>, key: string, f: (a: A) => B): Record<string, A | B>
+  <K extends string | symbol, A, B>(key: NoInfer<K>, f: (a: A) => B): (self: ReadonlyRecord<K, A>) => Record<K, A | B>
+  <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, f: (a: A) => B): Record<K, A | B>
 }
 ```

@@ -14,14 +14,14 @@ Schedule.reduceEffect
 
 ```ts
 export declare const reduceEffect: {
-  <Out, Env1, Z>(
+  <Z, Out, R2>(
     zero: Z,
-    f: (z: Z, out: Out) => Effect.Effect<Z, never, Env1>
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env1 | Env, In, Z>
-  <Env, In, Out, Env1, Z>(
-    self: Schedule<Env, In, Out>,
+    f: (z: Z, out: Out) => Effect.Effect<Z, never, R2>
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Z, In, R2 | R>
+  <Out, In, R, Z, R2>(
+    self: Schedule<Out, In, R>,
     zero: Z,
-    f: (z: Z, out: Out) => Effect.Effect<Z, never, Env1>
-  ): Schedule<Env | Env1, In, Z>
+    f: (z: Z, out: Out) => Effect.Effect<Z, never, R2>
+  ): Schedule<Z, In, R | R2>
 }
 ```

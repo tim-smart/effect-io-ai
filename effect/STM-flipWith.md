@@ -15,7 +15,7 @@ STM.flipWith
 
 ```ts
 export declare const flipWith: {
-  <R, A, E, R2, A2, E2>(f: (stm: STM<E, A, R>) => STM<E2, A2, R2>): (self: STM<A, E, R>) => STM<A | A2, E | E2, R | R2>
-  <R, A, E, R2, A2, E2>(self: STM<A, E, R>, f: (stm: STM<E, A, R>) => STM<E2, A2, R2>): STM<A | A2, E | E2, R | R2>
+  <E, A, R, E2, A2, R2>(f: (stm: STM<E, A, R>) => STM<E2, A2, R2>): (self: STM<A, E, R>) => STM<A | A2, E | E2, R | R2>
+  <A, E, R, E2, A2, R2>(self: STM<A, E, R>, f: (stm: STM<E, A, R>) => STM<E2, A2, R2>): STM<A | A2, E | E2, R | R2>
 }
 ```

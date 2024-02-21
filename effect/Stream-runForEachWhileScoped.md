@@ -15,10 +15,10 @@ Stream.runForEachWhileScoped
 
 ```ts
 export declare const runForEachWhileScoped: {
-  <A, R2, E2>(
+  <A, E2, R2>(
     f: (a: A) => Effect.Effect<boolean, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<void, E2 | E, Scope.Scope | R2 | R>
-  <R, E, A, R2, E2>(
+  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<void, E2 | E, Scope.Scope | R2 | R>
+  <A, E, R, E2, R2>(
     self: Stream<A, E, R>,
     f: (a: A) => Effect.Effect<boolean, E2, R2>
   ): Effect.Effect<void, E | E2, Scope.Scope | R | R2>

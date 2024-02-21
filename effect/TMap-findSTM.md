@@ -15,10 +15,10 @@ TMap.findSTM
 
 ```ts
 export declare const findSTM: {
-  <K, V, R, E, A>(
+  <K, V, A, E, R>(
     f: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>
   ): (self: TMap<K, V>) => STM.STM<Option.Option<A>, E, R>
-  <K, V, R, E, A>(
+  <K, V, A, E, R>(
     self: TMap<K, V>,
     f: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>
   ): STM.STM<Option.Option<A>, E, R>

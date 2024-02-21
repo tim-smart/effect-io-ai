@@ -14,13 +14,13 @@ Either.andThen
 
 ```ts
 export declare const andThen: {
-  <A, E2, B>(f: (a: A) => Either<E2, B>): <E1>(self: Either<E1, A>) => Either<E2 | E1, B>
-  <E2, B>(f: Either<E2, B>): <E1, A>(self: Either<E1, A>) => Either<E2 | E1, B>
-  <A, B>(f: (a: A) => B): <E1>(self: Either<E1, A>) => Either<E1, B>
-  <B>(b: B): <A, E1>(self: Either<E1, A>) => Either<E1, B>
-  <E1, A, E2, B>(self: Either<E1, A>, f: (a: A) => Either<E2, B>): Either<E1 | E2, B>
-  <E1, A, E2, B>(self: Either<E1, A>, f: Either<E2, B>): Either<E1 | E2, B>
-  <E1, A, B>(self: Either<E1, A>, f: (a: A) => B): Either<E1, B>
-  <E1, A, B>(self: Either<E1, A>, f: B): Either<E1, B>
+  <R, R2, L2>(f: (right: R) => Either<R2, L2>): <L>(self: Either<R, L>) => Either<R2, L2 | L>
+  <R2, L2>(f: Either<R2, L2>): <L, R1>(self: Either<R1, L>) => Either<R2, L2 | L>
+  <R, R2>(f: (right: R) => R2): <L>(self: Either<R, L>) => Either<R2, L>
+  <R2>(right: R2): <R1, L>(self: Either<R1, L>) => Either<R2, L>
+  <R, L, R2, L2>(self: Either<R, L>, f: (right: R) => Either<R2, L2>): Either<R2, L | L2>
+  <R, L, R2, L2>(self: Either<R, L>, f: Either<R2, L2>): Either<R2, L | L2>
+  <R, L, R2>(self: Either<R, L>, f: (right: R) => R2): Either<R2, L>
+  <R, L, R2>(self: Either<R, L>, f: R2): Either<R2, L>
 }
 ```

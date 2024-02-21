@@ -13,5 +13,5 @@ Encoding.decodeHexString
 **Signature**
 
 ```ts
-export declare const decodeHexString: (str: string) => Either.Either<DecodeException, string>
+export declare const decodeHexString: (str: string) => Either.Either<string, DecodeException>
 ```

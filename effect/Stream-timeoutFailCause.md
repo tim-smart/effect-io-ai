@@ -19,7 +19,7 @@ export declare const timeoutFailCause: {
     cause: LazyArg<Cause.Cause<E2>>,
     duration: Duration.DurationInput
   ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R>
-  <R, E, A, E2>(
+  <A, E, R, E2>(
     self: Stream<A, E, R>,
     cause: LazyArg<Cause.Cause<E2>>,
     duration: Duration.DurationInput

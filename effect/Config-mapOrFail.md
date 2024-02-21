@@ -16,7 +16,7 @@ Config.mapOrFail
 
 ```ts
 export declare const mapOrFail: {
-  <A, B>(f: (a: A) => Either.Either<ConfigError.ConfigError, B>): (self: Config<A>) => Config<B>
-  <A, B>(self: Config<A>, f: (a: A) => Either.Either<ConfigError.ConfigError, B>): Config<B>
+  <A, B>(f: (a: A) => Either.Either<B, ConfigError.ConfigError>): (self: Config<A>) => Config<B>
+  <A, B>(self: Config<A>, f: (a: A) => Either.Either<B, ConfigError.ConfigError>): Config<B>
 }
 ```

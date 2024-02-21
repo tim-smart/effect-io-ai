@@ -15,12 +15,12 @@ Effect.scheduleForked
 
 ```ts
 export declare const scheduleForked: {
-  <R2, Out>(
-    schedule: Schedule.Schedule<R2, unknown, Out>
+  <Out, R2>(
+    schedule: Schedule.Schedule<Out, unknown, R2>
   ): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R2 | R>
-  <R, E, A, R2, Out>(
+  <A, E, R, Out, R2>(
     self: Effect<A, E, R>,
-    schedule: Schedule.Schedule<R2, unknown, Out>
+    schedule: Schedule.Schedule<Out, unknown, R2>
   ): Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R | R2>
 }
 ```

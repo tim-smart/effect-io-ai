@@ -16,10 +16,10 @@ Stream.catchSomeCause
 
 ```ts
 export declare const catchSomeCause: {
-  <E, R2, E2, A2>(
+  <E, A2, E2, R2>(
     pf: (cause: Cause.Cause<E>) => Option.Option<Stream<A2, E2, R2>>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A2 | A, E | E2, R2 | R>
-  <R, A, E, R2, E2, A2>(
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A2 | A, E | E2, R2 | R>
+  <A, E, R, A2, E2, R2>(
     self: Stream<A, E, R>,
     pf: (cause: Cause.Cause<E>) => Option.Option<Stream<A2, E2, R2>>
   ): Stream<A | A2, E | E2, R | R2>

@@ -18,5 +18,5 @@ Schedule.dayOfMonth
 **Signature**
 
 ```ts
-export declare const dayOfMonth: (day: number) => Schedule<never, unknown, number>
+export declare const dayOfMonth: (day: number) => Schedule<number>
 ```

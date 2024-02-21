@@ -15,10 +15,10 @@ STM.zipWith
 
 ```ts
 export declare const zipWith: {
-  <R1, E1, A1, A, A2>(
+  <A1, E1, R1, A, A2>(
     that: STM<A1, E1, R1>,
     f: (a: A, b: A1) => A2
-  ): <R, E>(self: STM<A, E, R>) => STM<A2, E1 | E, R1 | R>
-  <R, E, R1, E1, A1, A, A2>(self: STM<A, E, R>, that: STM<A1, E1, R1>, f: (a: A, b: A1) => A2): STM<A2, E | E1, R | R1>
+  ): <E, R>(self: STM<A, E, R>) => STM<A2, E1 | E, R1 | R>
+  <A, E, R, A1, E1, R1, A2>(self: STM<A, E, R>, that: STM<A1, E1, R1>, f: (a: A, b: A1) => A2): STM<A2, E | E1, R | R1>
 }
 ```

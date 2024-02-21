@@ -14,5 +14,5 @@ Schedule.elapsed
 **Signature**
 
 ```ts
-export declare const elapsed: Schedule<never, unknown, Duration.Duration>
+export declare const elapsed: Schedule<Duration.Duration, unknown, never>
 ```

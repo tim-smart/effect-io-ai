@@ -14,7 +14,7 @@ STM.collectSTM
 
 ```ts
 export declare const collectSTM: {
-  <A, R2, E2, A2>(pf: (a: A) => Option.Option<STM<A2, E2, R2>>): <R, E>(self: STM<A, E, R>) => STM<A2, E2 | E, R2 | R>
-  <R, E, A, R2, E2, A2>(self: STM<A, E, R>, pf: (a: A) => Option.Option<STM<A2, E2, R2>>): STM<A2, E | E2, R | R2>
+  <A, A2, E2, R2>(pf: (a: A) => Option.Option<STM<A2, E2, R2>>): <E, R>(self: STM<A, E, R>) => STM<A2, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2>(self: STM<A, E, R>, pf: (a: A) => Option.Option<STM<A2, E2, R2>>): STM<A2, E | E2, R | R2>
 }
 ```

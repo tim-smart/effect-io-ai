@@ -23,7 +23,14 @@ assert.deepStrictEqual(set("c", 5)({ a: 1, b: 2 }), { a: 1, b: 2, c: 5 })
 
 ```ts
 export declare const set: {
-  <B>(key: string, value: B): <A>(self: ReadonlyRecord<A>) => Record<string, B | A>
-  <A, B>(self: ReadonlyRecord<A>, key: string, value: B): Record<string, A | B>
+  <K extends string | symbol, K1 extends string | symbol | K, B>(
+    key: K1,
+    value: B
+  ): <A>(self: ReadonlyRecord<K, A>) => Record<K | K1, B | A>
+  <K extends string | symbol, A, K1 extends string | symbol | K, B>(
+    self: ReadonlyRecord<K, A>,
+    key: K1,
+    value: B
+  ): Record<K | K1, A | B>
 }
 ```

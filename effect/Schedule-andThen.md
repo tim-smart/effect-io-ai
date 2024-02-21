@@ -14,12 +14,12 @@ Schedule.andThen
 
 ```ts
 export declare const andThen: {
-  <Env1, In1, Out2>(
-    that: Schedule<Env1, In1, Out2>
-  ): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env1 | Env, In & In1, Out2 | Out>
-  <Env, In, Out, Env1, In1, Out2>(
-    self: Schedule<Env, In, Out>,
-    that: Schedule<Env1, In1, Out2>
-  ): Schedule<Env | Env1, In & In1, Out | Out2>
+  <Out2, In2, R2>(
+    that: Schedule<Out2, In2, R2>
+  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out2 | Out, In & In2, R2 | R>
+  <Out, In, R, Out2, In2, R2>(
+    self: Schedule<Out, In, R>,
+    that: Schedule<Out2, In2, R2>
+  ): Schedule<Out | Out2, In & In2, R | R2>
 }
 ```

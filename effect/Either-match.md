@@ -32,10 +32,13 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const match: {
-  <E, B, A, C = B>(options: {
-    readonly onLeft: (e: E) => B
-    readonly onRight: (a: A) => C
-  }): (self: Either<E, A>) => B | C
-  <E, A, B, C = B>(self: Either<E, A>, options: { readonly onLeft: (e: E) => B; readonly onRight: (a: A) => C }): B | C
+  <L, B, R, C = B>(options: {
+    readonly onLeft: (left: L) => B
+    readonly onRight: (right: R) => C
+  }): (self: Either<R, L>) => B | C
+  <R, L, B, C = B>(
+    self: Either<R, L>,
+    options: { readonly onLeft: (left: L) => B; readonly onRight: (right: R) => C }
+  ): B | C
 }
 ```

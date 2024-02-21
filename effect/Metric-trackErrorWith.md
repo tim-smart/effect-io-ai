@@ -19,8 +19,8 @@ export declare const trackErrorWith: {
   <Type, In, Out, In2>(
     metric: Metric<Type, In, Out>,
     f: (error: In2) => In
-  ): <R, E extends In2, A>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
-  <R, E extends In2, A, Type, In, Out, In2>(
+  ): <A, E extends In2, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
+  <A, E extends In2, R, Type, In, Out, In2>(
     self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>,
     f: (error: In2) => In

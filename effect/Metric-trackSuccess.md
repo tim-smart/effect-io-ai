@@ -17,8 +17,8 @@ Metric.trackSuccess
 export declare const trackSuccess: {
   <Type, In, Out>(
     metric: Metric<Type, In, Out>
-  ): <R, E, A extends In>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
-  <R, E, A extends In, Type, In, Out>(
+  ): <A extends In, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
+  <A extends In, E, R, Type, In, Out>(
     self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>
   ): Effect.Effect<A, E, R>

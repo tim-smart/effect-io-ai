@@ -29,5 +29,7 @@ assert.deepStrictEqual(fromEntries(input), { a: 1, b: 2 })
 **Signature**
 
 ```ts
-export declare const fromEntries: <A>(self: Iterable<readonly [string, A]>) => Record<string, A>
+export declare const fromEntries: <Entry extends readonly [string | symbol, any]>(
+  entries: Iterable<Entry>
+) => Record<ReadonlyRecord.NonLiteralKey<Entry[0]>, Entry[1]>
 ```

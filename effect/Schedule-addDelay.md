@@ -15,7 +15,7 @@ Schedule.addDelay
 
 ```ts
 export declare const addDelay: {
-  <Out>(f: (out: Out) => Duration.DurationInput): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
-  <Env, In, Out>(self: Schedule<Env, In, Out>, f: (out: Out) => Duration.DurationInput): Schedule<Env, In, Out>
+  <Out>(f: (out: Out) => Duration.DurationInput): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
+  <Out, In, R>(self: Schedule<Out, In, R>, f: (out: Out) => Duration.DurationInput): Schedule<Out, In, R>
 }
 ```

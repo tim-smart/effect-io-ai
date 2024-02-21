@@ -17,7 +17,7 @@ Sink.race
 export declare const race: {
   <R1, E1, In1, L1, A1>(
     that: Sink<A1, In1, L1, E1, R1>
-  ): <R, E, In, L, A>(self: Sink<A, In, L, E, R>) => Sink<A1 | A, In & In1, L1 | L, E1 | E, R1 | R>
+  ): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A1 | A, In & In1, L1 | L, E1 | E, R1 | R>
   <A, In, L, E, R, A1, In1, L1, E1, R1>(
     self: Sink<A, In, L, E, R>,
     that: Sink<A1, In1, L1, E1, R1>

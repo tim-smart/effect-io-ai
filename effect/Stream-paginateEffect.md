@@ -15,7 +15,7 @@ Stream.paginateEffect
 **Signature**
 
 ```ts
-export declare const paginateEffect: <S, R, E, A>(
+export declare const paginateEffect: <S, A, E, R>(
   s: S,
   f: (s: S) => Effect.Effect<readonly [A, Option.Option<S>], E, R>
 ) => Stream<A, E, R>

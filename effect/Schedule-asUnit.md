@@ -13,5 +13,5 @@ Schedule.asUnit
 **Signature**
 
 ```ts
-export declare const asUnit: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, void>
+export declare const asUnit: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<void, In, R>
 ```

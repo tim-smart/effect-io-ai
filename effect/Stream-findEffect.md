@@ -15,10 +15,10 @@ Stream.findEffect
 
 ```ts
 export declare const findEffect: {
-  <A, R2, E2>(
+  <A, E2, R2>(
     predicate: (a: NoInfer<A>) => Effect.Effect<boolean, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <R, E, A, R2, E2>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
+  <A, E, R, E2, R2>(
     self: Stream<A, E, R>,
     predicate: (a: NoInfer<A>) => Effect.Effect<boolean, E2, R2>
   ): Stream<A, E | E2, R | R2>

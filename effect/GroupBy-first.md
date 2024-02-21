@@ -14,7 +14,7 @@ GroupBy.first
 
 ```ts
 export declare const first: {
-  (n: number): <R, E, K, V>(self: GroupBy<R, E, K, V>) => GroupBy<R, E, K, V>
-  <R, E, K, V>(self: GroupBy<R, E, K, V>, n: number): GroupBy<R, E, K, V>
+  (n: number): <K, V, E, R>(self: GroupBy<K, V, E, R>) => GroupBy<K, V, E, R>
+  <K, V, E, R>(self: GroupBy<K, V, E, R>, n: number): GroupBy<K, V, E, R>
 }
 ```

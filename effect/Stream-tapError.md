@@ -14,9 +14,9 @@ Stream.tapError
 
 ```ts
 export declare const tapError: {
-  <E, R2, E2, _>(
-    f: (error: NoInfer<E>) => Effect.Effect<_, E2, R2>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>
-  <R, A, E, R2, E2, _>(self: Stream<A, E, R>, f: (error: E) => Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>
+  <E, X, E2, R2>(
+    f: (error: NoInfer<E>) => Effect.Effect<X, E2, R2>
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>
+  <A, E, R, X, E2, R2>(self: Stream<A, E, R>, f: (error: E) => Effect.Effect<X, E2, R2>): Stream<A, E | E2, R | R2>
 }
 ```

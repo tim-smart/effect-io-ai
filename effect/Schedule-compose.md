@@ -17,12 +17,7 @@ Schedule.compose
 
 ```ts
 export declare const compose: {
-  <Env2, Out, Out2>(
-    that: Schedule<Env2, Out, Out2>
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out2>
-  <Env, In, Out, Env2, Out2>(
-    self: Schedule<Env, In, Out>,
-    that: Schedule<Env2, Out, Out2>
-  ): Schedule<Env | Env2, In, Out2>
+  <Out2, Out, R2>(that: Schedule<Out2, Out, R2>): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out2, In, R2 | R>
+  <Out, In, R, Out2, R2>(self: Schedule<Out, In, R>, that: Schedule<Out2, Out, R2>): Schedule<Out2, In, R | R2>
 }
 ```

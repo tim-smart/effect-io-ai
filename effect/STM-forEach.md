@@ -15,19 +15,19 @@ STM.forEach
 
 ```ts
 export declare const forEach: {
-  <A, R, E, A2>(
+  <A, A2, E, R>(
     f: (a: A) => STM<A2, E, R>,
-    options?: { readonly discard?: false | undefined }
+    options?: { readonly discard?: false | undefined } | undefined
   ): (elements: Iterable<A>) => STM<A2[], E, R>
-  <A, R, E, A2>(
+  <A, A2, E, R>(
     f: (a: A) => STM<A2, E, R>,
     options: { readonly discard: true }
   ): (elements: Iterable<A>) => STM<void, E, R>
-  <A, R, E, A2>(
+  <A, A2, E, R>(
     elements: Iterable<A>,
     f: (a: A) => STM<A2, E, R>,
-    options?: { readonly discard?: false | undefined }
+    options?: { readonly discard?: false | undefined } | undefined
   ): STM<A2[], E, R>
-  <A, R, E, A2>(elements: Iterable<A>, f: (a: A) => STM<A2, E, R>, options: { readonly discard: true }): STM<void, E, R>
+  <A, A2, E, R>(elements: Iterable<A>, f: (a: A) => STM<A2, E, R>, options: { readonly discard: true }): STM<void, E, R>
 }
 ```

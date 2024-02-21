@@ -16,6 +16,6 @@ Metric.trackDefect
 ```ts
 export declare const trackDefect: {
   <Type, Out>(metric: Metric<Type, unknown, Out>): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
-  <R, E, A, Type, Out>(self: Effect.Effect<A, E, R>, metric: Metric<Type, unknown, Out>): Effect.Effect<A, E, R>
+  <A, E, R, Type, Out>(self: Effect.Effect<A, E, R>, metric: Metric<Type, unknown, Out>): Effect.Effect<A, E, R>
 }
 ```

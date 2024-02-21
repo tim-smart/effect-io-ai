@@ -34,5 +34,5 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const parse: (cron: string) => Either.Either<ParseError, Cron>
+export declare const parse: (cron: string) => Either.Either<Cron, ParseError>
 ```

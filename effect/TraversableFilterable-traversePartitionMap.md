@@ -19,6 +19,6 @@ export declare const traversePartitionMap: <T extends TypeLambda>(
   F: Applicative<F>
 ) => <TR, TO, TE, A, R, O, E, B, C>(
   self: Kind<T, TR, TO, TE, A>,
-  f: (a: A) => Kind<F, R, O, E, Either<B, C>>
+  f: (a: A) => Kind<F, R, O, E, Either<C, B>>
 ) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>
 ```

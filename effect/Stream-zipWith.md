@@ -17,11 +17,11 @@ Stream.zipWith
 
 ```ts
 export declare const zipWith: {
-  <R2, E2, A2, A, A3>(
+  <A2, E2, R2, A, A3>(
     that: Stream<A2, E2, R2>,
     f: (a: A, a2: A2) => A3
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
-  <R, E, R2, E2, A2, A, A3>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2, A3>(
     self: Stream<A, E, R>,
     that: Stream<A2, E2, R2>,
     f: (a: A, a2: A2) => A3

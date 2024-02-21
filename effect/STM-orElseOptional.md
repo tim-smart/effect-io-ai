@@ -16,10 +16,10 @@ STM.orElseOptional
 
 ```ts
 export declare const orElseOptional: {
-  <R2, E2, A2>(
+  <A2, E2, R2>(
     that: LazyArg<STM<A2, Option.Option<E2>, R2>>
   ): <A, E, R>(self: STM<A, Option.Option<E>, R>) => STM<A2 | A, Option.Option<E2 | E>, R2 | R>
-  <R, E, A, R2, E2, A2>(
+  <A, E, R, A2, E2, R2>(
     self: STM<A, Option.Option<E>, R>,
     that: LazyArg<STM<A2, Option.Option<E2>, R2>>
   ): STM<A | A2, Option.Option<E | E2>, R | R2>

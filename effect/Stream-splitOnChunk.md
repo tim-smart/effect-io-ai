@@ -14,7 +14,7 @@ Stream.splitOnChunk
 
 ```ts
 export declare const splitOnChunk: {
-  <A>(delimiter: Chunk.Chunk<A>): <R, E>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>
+  <A>(delimiter: Chunk.Chunk<A>): <E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>
   <A, E, R>(self: Stream<A, E, R>, delimiter: Chunk.Chunk<A>): Stream<Chunk.Chunk<A>, E, R>
 }
 ```

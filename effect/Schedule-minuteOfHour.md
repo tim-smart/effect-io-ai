@@ -16,5 +16,5 @@ Schedule.minuteOfHour
 **Signature**
 
 ```ts
-export declare const minuteOfHour: (minute: number) => Schedule<never, unknown, number>
+export declare const minuteOfHour: (minute: number) => Schedule<number>
 ```

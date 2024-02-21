@@ -15,7 +15,7 @@ STM.validateFirst
 
 ```ts
 export declare const validateFirst: {
-  <R, E, A, B>(f: (a: A) => STM<B, E, R>): (elements: Iterable<A>) => STM<B, E[], R>
-  <R, E, A, B>(elements: Iterable<A>, f: (a: A) => STM<B, E, R>): STM<B, E[], R>
+  <A, B, E, R>(f: (a: A) => STM<B, E, R>): (elements: Iterable<A>) => STM<B, E[], R>
+  <A, B, E, R>(elements: Iterable<A>, f: (a: A) => STM<B, E, R>): STM<B, E[], R>
 }
 ```

@@ -19,7 +19,7 @@ export declare const match: {
     readonly onFailure: (error: E) => A2
     readonly onSuccess: (value: A) => A3
   }): <R>(self: STM<A, E, R>) => STM<A2 | A3, never, R>
-  <R, E, A2, A, A3>(
+  <A, E, R, A2, A3>(
     self: STM<A, E, R>,
     options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }
   ): STM<A2 | A3, never, R>

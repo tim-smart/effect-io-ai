@@ -16,11 +16,11 @@ Layer.match
 
 ```ts
 export declare const match: {
-  <E, R2, E2, A2, A, R3, E3, A3>(options: {
+  <E, A2, E2, R2, A, A3, E3, R3>(options: {
     readonly onFailure: (error: E) => Layer<A2, E2, R2>
     readonly onSuccess: (context: Context.Context<A>) => Layer<A3, E3, R3>
   }): <R>(self: Layer<A, E, R>) => Layer<A2 & A3, E2 | E3, R2 | R3 | R>
-  <R, E, A, R2, E2, A2, R3, E3, A3>(
+  <A, E, R, A2, E2, R2, A3, E3, R3>(
     self: Layer<A, E, R>,
     options: {
       readonly onFailure: (error: E) => Layer<A2, E2, R2>

@@ -14,9 +14,9 @@ Stream.tap
 
 ```ts
 export declare const tap: {
-  <A, R2, E2, _>(
-    f: (a: NoInfer<A>) => Effect.Effect<_, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <R, E, A, R2, E2, _>(self: Stream<A, E, R>, f: (a: NoInfer<A>) => Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>
+  <A, X, E2, R2>(
+    f: (a: NoInfer<A>) => Effect.Effect<X, E2, R2>
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
+  <A, E, R, X, E2, R2>(self: Stream<A, E, R>, f: (a: NoInfer<A>) => Effect.Effect<X, E2, R2>): Stream<A, E | E2, R | R2>
 }
 ```

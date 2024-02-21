@@ -24,5 +24,5 @@ assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, omit("c")), { a: "a", b: 
 ```ts
 export declare const omit: <Keys extends PropertyKey[]>(
   ...keys: Keys
-) => <S extends Record<Keys[number], any>>(s: S) => Simplify<Omit<S, Keys[number]>>
+) => <S extends { [K in Keys[number]]?: any }>(s: S) => Simplify<Omit<S, Keys[number]>>
 ```

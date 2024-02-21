@@ -13,5 +13,5 @@ Schedule.delays
 **Signature**
 
 ```ts
-export declare const delays: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Duration.Duration>
+export declare const delays: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Duration.Duration, In, R>
 ```

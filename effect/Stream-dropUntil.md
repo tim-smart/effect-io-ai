@@ -15,7 +15,7 @@ Stream.dropUntil
 
 ```ts
 export declare const dropUntil: {
-  <A>(predicate: Predicate<NoInfer<A>>): <R, E>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A>(predicate: Predicate<NoInfer<A>>): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
   <A, E, R>(self: Stream<A, E, R>, predicate: Predicate<A>): Stream<A, E, R>
 }
 ```

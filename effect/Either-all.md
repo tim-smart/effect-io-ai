@@ -20,8 +20,11 @@ Either.all
 import * as Either from "effect/Either"
 
 assert.deepStrictEqual(Either.all([Either.right(1), Either.right(2)]), Either.right([1, 2]))
-assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.right("hello") }), Either.right({ a: 1, b: "hello" }))
-assert.deepStrictEqual(Either.all({ a: Either.right(1), b: Either.left("error") }), Either.left("error"))
+assert.deepStrictEqual(
+  Either.all({ right: Either.right(1), b: Either.right("hello") }),
+  Either.right({ right: 1, b: "hello" })
+)
+assert.deepStrictEqual(Either.all({ right: Either.right(1), b: Either.left("error") }), Either.left("error"))
 ```
 
 **Signature**
@@ -31,13 +34,13 @@ export declare const all: <const I extends Iterable<Either<any, any>> | Record<s
   input: I
 ) => [I] extends [readonly Either<any, any>[]]
   ? Either<
-      I[number] extends never ? never : [I[number]] extends [Either<infer E, any>] ? E : never,
-      { -readonly [K in keyof I]: [I[K]] extends [Either<any, infer A>] ? A : never }
+      { -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never },
+      I[number] extends never ? never : [I[number]] extends [Either<any, infer L>] ? L : never
     >
-  : [I] extends [Iterable<Either<infer E, infer A>>]
-    ? Either<E, A[]>
+  : [I] extends [Iterable<Either<infer R, infer L>>]
+    ? Either<R[], L>
     : Either<
-        I[keyof I] extends never ? never : [I[keyof I]] extends [Either<infer E, any>] ? E : never,
-        { -readonly [K in keyof I]: [I[K]] extends [Either<any, infer A>] ? A : never }
+        { -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never },
+        I[keyof I] extends never ? never : [I[keyof I]] extends [Either<any, infer L>] ? L : never
       >
 ```

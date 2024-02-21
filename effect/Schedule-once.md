@@ -13,5 +13,5 @@ Schedule.once
 **Signature**
 
 ```ts
-export declare const once: Schedule<never, unknown, void>
+export declare const once: Schedule<void, unknown, never>
 ```

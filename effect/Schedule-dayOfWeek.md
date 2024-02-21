@@ -17,5 +17,5 @@ Schedule.dayOfWeek
 **Signature**
 
 ```ts
-export declare const dayOfWeek: (day: number) => Schedule<never, unknown, number>
+export declare const dayOfWeek: (day: number) => Schedule<number>
 ```

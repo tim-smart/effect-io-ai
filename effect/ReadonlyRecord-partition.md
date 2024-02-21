@@ -27,17 +27,27 @@ assert.deepStrictEqual(
 export declare const partition: {
   <K extends string, A, B extends A>(
     refinement: (a: NoInfer<A>, key: K) => a is B
-  ): (self: Record<K, A>) => [excluded: Record<string, Exclude<A, B>>, satisfying: Record<string, B>]
+  ): (
+    self: ReadonlyRecord<K, A>
+  ) => [
+    excluded: Record<ReadonlyRecord.NonLiteralKey<K>, Exclude<A, B>>,
+    satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  ]
   <K extends string, A>(
     predicate: (a: NoInfer<A>, key: K) => boolean
-  ): (self: Record<K, A>) => [excluded: Record<string, A>, satisfying: Record<string, A>]
+  ): (
+    self: ReadonlyRecord<K, A>
+  ) => [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, A>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, A>]
   <K extends string, A, B extends A>(
-    self: Record<K, A>,
+    self: ReadonlyRecord<K, A>,
     refinement: (a: A, key: K) => a is B
-  ): [excluded: Record<string, Exclude<A, B>>, satisfying: Record<string, B>]
+  ): [
+    excluded: Record<ReadonlyRecord.NonLiteralKey<K>, Exclude<A, B>>,
+    satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  ]
   <K extends string, A>(
-    self: Record<K, A>,
+    self: ReadonlyRecord<K, A>,
     predicate: (a: A, key: K) => boolean
-  ): [excluded: Record<string, A>, satisfying: Record<string, A>]
+  ): [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, A>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, A>]
 }
 ```

@@ -15,12 +15,12 @@ Stream.tapErrorCause
 
 ```ts
 export declare const tapErrorCause: {
-  <E, R2, E2, _>(
-    f: (cause: Cause.Cause<NoInfer<E>>) => Effect.Effect<_, E2, R2>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>
-  <R, A, E, R2, E2, _>(
+  <E, X, E2, R2>(
+    f: (cause: Cause.Cause<NoInfer<E>>) => Effect.Effect<X, E2, R2>
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>
+  <A, E, R, X, E2, R2>(
     self: Stream<A, E, R>,
-    f: (cause: Cause.Cause<E>) => Effect.Effect<_, E2, R2>
+    f: (cause: Cause.Cause<E>) => Effect.Effect<X, E2, R2>
   ): Stream<A, E | E2, R | R2>
 }
 ```

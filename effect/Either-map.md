@@ -14,7 +14,7 @@ Either.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): <E>(self: Either<E, A>) => Either<E, B>
-  <E, A, B>(self: Either<E, A>, f: (a: A) => B): Either<E, B>
+  <R, R2>(f: (right: R) => R2): <L>(self: Either<R, L>) => Either<R2, L>
+  <R, L, R2>(self: Either<R, L>, f: (right: R) => R2): Either<R2, L>
 }
 ```

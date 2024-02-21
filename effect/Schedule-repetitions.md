@@ -13,5 +13,5 @@ Schedule.repetitions
 **Signature**
 
 ```ts
-export declare const repetitions: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, number>
+export declare const repetitions: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<number, In, R>
 ```

@@ -15,12 +15,12 @@ Stream.runFoldWhileEffect
 
 ```ts
 export declare const runFoldWhileEffect: {
-  <S, A, R2, E2>(
+  <S, A, E2, R2>(
     s: S,
     cont: Predicate<S>,
     f: (s: S, a: A) => Effect.Effect<S, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, R2 | R>
-  <R, E, S, A, R2, E2>(
+  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, R2 | R>
+  <A, E, R, S, E2, R2>(
     self: Stream<A, E, R>,
     s: S,
     cont: Predicate<S>,

@@ -17,5 +17,5 @@ Schedule.secondOfMinute
 **Signature**
 
 ```ts
-export declare const secondOfMinute: (second: number) => Schedule<never, unknown, number>
+export declare const secondOfMinute: (second: number) => Schedule<number>
 ```

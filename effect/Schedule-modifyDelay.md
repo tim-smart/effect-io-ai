@@ -17,10 +17,10 @@ Schedule.modifyDelay
 export declare const modifyDelay: {
   <Out>(
     f: (out: Out, duration: Duration.Duration) => Duration.DurationInput
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
-  <Env, In, Out>(
-    self: Schedule<Env, In, Out>,
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
+  <Out, In, R>(
+    self: Schedule<Out, In, R>,
     f: (out: Out, duration: Duration.Duration) => Duration.DurationInput
-  ): Schedule<Env, In, Out>
+  ): Schedule<Out, In, R>
 }
 ```

@@ -29,7 +29,7 @@ assert.deepStrictEqual(O.tap(O.some(1.14), getInteger), O.none())
 
 ```ts
 export declare const tap: {
-  <A, _>(f: (a: A) => Option<_>): (self: Option<A>) => Option<A>
-  <A, _>(self: Option<A>, f: (a: A) => Option<_>): Option<A>
+  <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>
+  <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>
 }
 ```

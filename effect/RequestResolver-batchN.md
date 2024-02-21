@@ -14,7 +14,7 @@ RequestResolver.batchN
 
 ```ts
 export declare const batchN: {
-  (n: number): <R, A>(self: RequestResolver<A, R>) => RequestResolver<A, R>
-  <R, A>(self: RequestResolver<A, R>, n: number): RequestResolver<A, R>
+  (n: number): <A, R>(self: RequestResolver<A, R>) => RequestResolver<A, R>
+  <A, R>(self: RequestResolver<A, R>, n: number): RequestResolver<A, R>
 }
 ```

@@ -21,12 +21,12 @@ Stream.zipAllSortedByKeyRight
 
 ```ts
 export declare const zipAllSortedByKeyRight: {
-  <R2, E2, A2, K>(options: {
+  <K, A2, E2, R2>(options: {
     readonly other: Stream<readonly [K, A2], E2, R2>
     readonly defaultOther: A2
     readonly order: Order.Order<K>
   }): <A, E, R>(self: Stream<readonly [K, A], E, R>) => Stream<[K, A2], E2 | E, R2 | R>
-  <R, E, A, R2, E2, A2, K>(
+  <A, E, R, K, A2, E2, R2>(
     self: Stream<readonly [K, A], E, R>,
     options: {
       readonly other: Stream<readonly [K, A2], E2, R2>

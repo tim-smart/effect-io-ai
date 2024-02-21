@@ -15,14 +15,14 @@ Channel.provideSomeLayer
 
 ```ts
 export declare const provideSomeLayer: {
-  <Env2, OutErr2, Env0>(
-    layer: Layer.Layer<Env2, OutErr2, Env0>
+  <R2, OutErr2, Env0>(
+    layer: Layer.Layer<R2, OutErr2, Env0>
   ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, R>(
     self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>
-  ) => Channel<OutElem, InElem, OutErr2 | OutErr, InErr, OutDone, InDone, Env0 | Exclude<R, Env2>>
-  <OutElem, InElem, OutErr, InErr, OutDone, InDone, R, Env2, OutErr2, Env0>(
+  ) => Channel<OutElem, InElem, OutErr2 | OutErr, InErr, OutDone, InDone, Env0 | Exclude<R, R2>>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, R, R2, OutErr2, Env0>(
     self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>,
-    layer: Layer.Layer<Env2, OutErr2, Env0>
-  ): Channel<OutElem, InElem, OutErr | OutErr2, InErr, OutDone, InDone, Env0 | Exclude<R, Env2>>
+    layer: Layer.Layer<R2, OutErr2, Env0>
+  ): Channel<OutElem, InElem, OutErr | OutErr2, InErr, OutDone, InDone, Env0 | Exclude<R, R2>>
 }
 ```

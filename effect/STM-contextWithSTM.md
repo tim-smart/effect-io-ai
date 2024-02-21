@@ -13,7 +13,7 @@ STM.contextWithSTM
 **Signature**
 
 ```ts
-export declare const contextWithSTM: <R0, R, E, A>(
+export declare const contextWithSTM: <R0, A, E, R>(
   f: (environment: Context.Context<R0>) => STM<A, E, R>
 ) => STM<A, E, R0 | R>
 ```

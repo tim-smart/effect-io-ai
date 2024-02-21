@@ -20,16 +20,16 @@ export declare const partition: {
   <C extends A, B extends A, A = C>(
     refinement: Refinement<NoInfer<A>, B>,
     options?: { bufferSize?: number | undefined } | undefined
-  ): <R, E>(
+  ): <E, R>(
     self: Stream<C, E, R>
   ) => Effect.Effect<[excluded: Stream<Exclude<C, B>, E, never>, satisfying: Stream<B, E, never>], E, Scope.Scope | R>
   <A>(
     predicate: Predicate<A>,
     options?: { bufferSize?: number | undefined } | undefined
-  ): <R, E>(
+  ): <E, R>(
     self: Stream<A, E, R>
   ) => Effect.Effect<[excluded: Stream<A, E, never>, satisfying: Stream<A, E, never>], E, Scope.Scope | R>
-  <R, E, C extends A, B extends A, A = C>(
+  <C extends A, E, R, B extends A, A = C>(
     self: Stream<C, E, R>,
     refinement: Refinement<A, B>,
     options?: { bufferSize?: number | undefined } | undefined

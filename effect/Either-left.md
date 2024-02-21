@@ -14,5 +14,5 @@ Either.left
 **Signature**
 
 ```ts
-export declare const left: <E>(e: E) => Either<E, never>
+export declare const left: <L>(left: L) => Either<never, L>
 ```

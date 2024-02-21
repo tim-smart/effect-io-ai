@@ -48,11 +48,11 @@ export declare const groupByKey: {
   <A, K>(
     f: (a: A) => K,
     options?: { readonly bufferSize?: number | undefined }
-  ): <R, E>(self: Stream<A, E, R>) => GroupBy.GroupBy<R, E, K, A>
-  <R, E, A, K>(
+  ): <E, R>(self: Stream<A, E, R>) => GroupBy.GroupBy<K, A, E, R>
+  <A, E, R, K>(
     self: Stream<A, E, R>,
     f: (a: A) => K,
     options?: { readonly bufferSize?: number | undefined }
-  ): GroupBy.GroupBy<R, E, K, A>
+  ): GroupBy.GroupBy<K, A, E, R>
 }
 ```

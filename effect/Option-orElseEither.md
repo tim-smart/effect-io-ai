@@ -17,7 +17,7 @@ Option.orElseEither
 
 ```ts
 export declare const orElseEither: {
-  <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Either<A, B>>
-  <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Either<A, B>>
+  <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Either<B, A>>
+  <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Either<B, A>>
 }
 ```

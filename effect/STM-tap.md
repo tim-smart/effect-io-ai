@@ -14,7 +14,7 @@ STM.tap
 
 ```ts
 export declare const tap: {
-  <A, R2, E2, _>(f: (a: A) => STM<_, E2, R2>): <R, E>(self: STM<A, E, R>) => STM<A, E2 | E, R2 | R>
-  <R, E, A, R2, E2, _>(self: STM<A, E, R>, f: (a: A) => STM<_, E2, R2>): STM<A, E | E2, R | R2>
+  <A, X, E2, R2>(f: (a: A) => STM<X, E2, R2>): <E, R>(self: STM<A, E, R>) => STM<A, E2 | E, R2 | R>
+  <A, E, R, X, E2, R2>(self: STM<A, E, R>, f: (a: A) => STM<X, E2, R2>): STM<A, E | E2, R | R2>
 }
 ```

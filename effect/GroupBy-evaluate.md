@@ -15,12 +15,12 @@ GroupBy.evaluate
 
 ```ts
 export declare const evaluate: {
-  <K, E, V, R2, E2, A>(
+  <K, V, E, A, E2, R2>(
     f: (key: K, stream: Stream.Stream<V, E, never>) => Stream.Stream<A, E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
-  ): <R>(self: GroupBy<R, E, K, V>) => Stream.Stream<A, E | E2, R2 | R>
-  <R, K, E, V, R2, E2, A>(
-    self: GroupBy<R, E, K, V>,
+  ): <R>(self: GroupBy<K, V, E, R>) => Stream.Stream<A, E | E2, R2 | R>
+  <K, V, E, R, A, E2, R2>(
+    self: GroupBy<K, V, E, R>,
     f: (key: K, stream: Stream.Stream<V, E, never>) => Stream.Stream<A, E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
   ): Stream.Stream<A, E | E2, R | R2>

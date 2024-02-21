@@ -20,10 +20,10 @@ export declare const distributedWith: {
     readonly size: N
     readonly maximumLag: number
     readonly decide: (a: A) => Effect.Effect<Predicate<number>>
-  }): <R, E>(
+  }): <E, R>(
     self: Stream<A, E, R>
   ) => Effect.Effect<Stream.DynamicTuple<Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>, N>, never, Scope.Scope | R>
-  <R, E, N extends number, A>(
+  <A, E, R, N extends number>(
     self: Stream<A, E, R>,
     options: {
       readonly size: N

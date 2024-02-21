@@ -13,7 +13,7 @@ Stream.contextWithEffect
 **Signature**
 
 ```ts
-export declare const contextWithEffect: <R0, R, E, A>(
+export declare const contextWithEffect: <R0, A, E, R>(
   f: (env: Context.Context<R0>) => Effect.Effect<A, E, R>
 ) => Stream<A, E, R0 | R>
 ```

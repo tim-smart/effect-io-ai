@@ -19,7 +19,7 @@ Stream.flattenExitOption
 **Signature**
 
 ```ts
-export declare const flattenExitOption: <R, E, E2, A>(
+export declare const flattenExitOption: <A, E2, E, R>(
   self: Stream<Exit.Exit<A, Option.Option<E2>>, E, R>
-) => Stream<A, E | E2, R>
+) => Stream<A, E2 | E, R>
 ```

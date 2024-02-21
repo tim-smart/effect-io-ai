@@ -13,7 +13,7 @@ Stream.unwrap
 **Signature**
 
 ```ts
-export declare const unwrap: <R, E, R2, E2, A>(
+export declare const unwrap: <A, E2, R2, E, R>(
   effect: Effect.Effect<Stream<A, E2, R2>, E, R>
-) => Stream<A, E | E2, R | R2>
+) => Stream<A, E2 | E, R2 | R>
 ```

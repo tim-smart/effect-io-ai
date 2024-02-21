@@ -15,10 +15,10 @@ Stream.filterMapWhileEffect
 
 ```ts
 export declare const filterMapWhileEffect: {
-  <A, R2, E2, A2>(
+  <A, A2, E2, R2>(
     pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
-  <R, E, A, R2, E2, A2>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2>(
     self: Stream<A, E, R>,
     pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>
   ): Stream<A2, E | E2, R | R2>

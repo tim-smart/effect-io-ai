@@ -14,7 +14,7 @@ TMap.forEach
 
 ```ts
 export declare const forEach: {
-  <K, V, R, E, _>(f: (key: K, value: V) => STM.STM<_, E, R>): (self: TMap<K, V>) => STM.STM<void, E, R>
-  <K, V, R, E, _>(self: TMap<K, V>, f: (key: K, value: V) => STM.STM<_, E, R>): STM.STM<void, E, R>
+  <K, V, X, E, R>(f: (key: K, value: V) => STM.STM<X, E, R>): (self: TMap<K, V>) => STM.STM<void, E, R>
+  <K, V, X, E, R>(self: TMap<K, V>, f: (key: K, value: V) => STM.STM<X, E, R>): STM.STM<void, E, R>
 }
 ```

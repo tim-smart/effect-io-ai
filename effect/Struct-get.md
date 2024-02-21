@@ -26,5 +26,5 @@ assert.deepStrictEqual(value, 1)
 ```ts
 export declare const get: <K extends PropertyKey>(
   key: K
-) => <S extends Record<K, any>>(s: S) => MatchRecord<S, S[K] | undefined, S[K]>
+) => <S extends { [P in K]?: any }>(s: S) => MatchRecord<S, S[K] | undefined, S[K]>
 ```

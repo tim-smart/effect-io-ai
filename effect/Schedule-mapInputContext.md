@@ -15,12 +15,12 @@ Schedule.mapInputContext
 
 ```ts
 export declare const mapInputContext: {
-  <Env0, Env>(
-    f: (env0: Context.Context<Env0>) => Context.Context<Env>
-  ): <In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env0, In, Out>
-  <Env0, Env, In, Out>(
-    self: Schedule<Env, In, Out>,
-    f: (env0: Context.Context<Env0>) => Context.Context<Env>
-  ): Schedule<Env0, In, Out>
+  <R0, R>(
+    f: (env0: Context.Context<R0>) => Context.Context<R>
+  ): <Out, In>(self: Schedule<Out, In, R>) => Schedule<Out, In, R0>
+  <Out, In, R, R0>(
+    self: Schedule<Out, In, R>,
+    f: (env0: Context.Context<R0>) => Context.Context<R>
+  ): Schedule<Out, In, R0>
 }
 ```

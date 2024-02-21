@@ -27,19 +27,19 @@ STM.loop
 
 ```ts
 export declare const loop: {
-  <Z, R, E, A>(
+  <Z, A, E, R>(
     initial: Z,
     options: {
-      readonly while: Predicate<Z>
+      readonly while: (z: Z) => boolean
       readonly step: (z: Z) => Z
       readonly body: (z: Z) => STM<A, E, R>
       readonly discard?: false | undefined
     }
   ): STM<A[], E, R>
-  <Z, R, E, A>(
+  <Z, A, E, R>(
     initial: Z,
     options: {
-      readonly while: Predicate<Z>
+      readonly while: (z: Z) => boolean
       readonly step: (z: Z) => Z
       readonly body: (z: Z) => STM<A, E, R>
       readonly discard: true

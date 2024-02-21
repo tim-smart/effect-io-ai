@@ -15,12 +15,12 @@ Schedule.untilOutputEffect
 
 ```ts
 export declare const untilOutputEffect: {
-  <Out, Env2>(
-    f: (out: Out) => Effect.Effect<boolean, never, Env2>
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
-  <Env, In, Out, Env2>(
-    self: Schedule<Env, In, Out>,
-    f: (out: Out) => Effect.Effect<boolean, never, Env2>
-  ): Schedule<Env | Env2, In, Out>
+  <Out, R2>(
+    f: (out: Out) => Effect.Effect<boolean, never, R2>
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>
+  <Out, In, R, R2>(
+    self: Schedule<Out, In, R>,
+    f: (out: Out) => Effect.Effect<boolean, never, R2>
+  ): Schedule<Out, In, R | R2>
 }
 ```

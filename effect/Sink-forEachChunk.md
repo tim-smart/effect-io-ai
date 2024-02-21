@@ -14,7 +14,7 @@ Sink.forEachChunk
 **Signature**
 
 ```ts
-export declare const forEachChunk: <In, _, E, R>(
-  f: (input: Chunk.Chunk<In>) => Effect.Effect<_, E, R>
+export declare const forEachChunk: <In, X, E, R>(
+  f: (input: Chunk.Chunk<In>) => Effect.Effect<X, E, R>
 ) => Sink<void, In, never, E, R>
 ```

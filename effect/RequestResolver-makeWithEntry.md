@@ -14,7 +14,7 @@ RequestResolver.makeWithEntry
 **Signature**
 
 ```ts
-export declare const makeWithEntry: <R, A>(
+export declare const makeWithEntry: <A, R>(
   runAll: (requests: Request.Entry<A>[][]) => Effect.Effect<void, never, R>
 ) => RequestResolver<A, R>
 ```

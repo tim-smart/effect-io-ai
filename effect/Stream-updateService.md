@@ -13,13 +13,15 @@ Stream.updateService
 **Signature**
 
 ```ts
-export declare const updateService: (<T extends Context.Tag<any, any>>(
-  tag: T,
-  f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-) => <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, T | R>) &
-  (<R, E, A, T extends Context.Tag<any, any>>(
+export declare const updateService: {
+  <T extends Context.Tag<any, any>>(
+    tag: T,
+    f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, T | R>
+  <A, E, R, T extends Context.Tag<any, any>>(
     self: Stream<A, E, R>,
     tag: T,
     f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ) => Stream<A, E, R | T>)
+  ): Stream<A, E, R | T>
+}
 ```

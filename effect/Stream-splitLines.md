@@ -14,5 +14,5 @@ Stream.splitLines
 **Signature**
 
 ```ts
-export declare const splitLines: <R, E>(self: Stream<string, E, R>) => Stream<string, E, R>
+export declare const splitLines: <E, R>(self: Stream<string, E, R>) => Stream<string, E, R>
 ```

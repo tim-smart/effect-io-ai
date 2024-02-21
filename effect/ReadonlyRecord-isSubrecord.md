@@ -15,7 +15,7 @@ ReadonlyRecord.isSubrecord
 
 ```ts
 export declare const isSubrecord: {
-  <A>(that: ReadonlyRecord<A>): (self: ReadonlyRecord<A>) => boolean
-  <A>(self: ReadonlyRecord<A>, that: ReadonlyRecord<A>): boolean
+  <K extends string, A>(that: ReadonlyRecord<K, A>): (self: ReadonlyRecord<K, A>) => boolean
+  <K extends string, A>(self: ReadonlyRecord<K, A>, that: ReadonlyRecord<K, A>): boolean
 }
 ```

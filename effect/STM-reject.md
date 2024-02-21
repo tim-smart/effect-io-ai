@@ -15,7 +15,7 @@ STM.reject
 
 ```ts
 export declare const reject: {
-  <A, E2>(pf: (a: A) => Option.Option<E2>): <R, E>(self: STM<A, E, R>) => STM<A, E2 | E, R>
-  <R, E, A, E2>(self: STM<A, E, R>, pf: (a: A) => Option.Option<E2>): STM<A, E | E2, R>
+  <A, E2>(pf: (a: A) => Option.Option<E2>): <E, R>(self: STM<A, E, R>) => STM<A, E2 | E, R>
+  <A, E, R, E2>(self: STM<A, E, R>, pf: (a: A) => Option.Option<E2>): STM<A, E | E2, R>
 }
 ```

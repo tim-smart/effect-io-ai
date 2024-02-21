@@ -22,5 +22,5 @@ assert.deepStrictEqual(isLeft(left("a")), true)
 **Signature**
 
 ```ts
-export declare const isLeft: <E, A>(self: Either<E, A>) => self is Left<E, A>
+export declare const isLeft: <R, L>(self: Either<R, L>) => self is Left<L, R>
 ```

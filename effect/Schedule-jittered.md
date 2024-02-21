@@ -19,5 +19,5 @@ Schedule.jittered
 **Signature**
 
 ```ts
-export declare const jittered: <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
+export declare const jittered: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
 ```

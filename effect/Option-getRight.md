@@ -25,5 +25,5 @@ assert.deepStrictEqual(O.getRight(E.left("err")), O.none())
 **Signature**
 
 ```ts
-export declare const getRight: <E, A>(self: Either<E, A>) => Option<A>
+export declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
 ```

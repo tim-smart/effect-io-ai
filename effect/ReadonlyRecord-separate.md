@@ -23,5 +23,7 @@ assert.deepStrictEqual(separate({ a: left("e"), b: right(1) }), [{ a: "e" }, { b
 **Signature**
 
 ```ts
-export declare const separate: <A, B>(self: ReadonlyRecord<Either<A, B>>) => [Record<string, A>, Record<string, B>]
+export declare const separate: <K extends string, A, B>(
+  self: ReadonlyRecord<K, Either<B, A>>
+) => [Record<ReadonlyRecord.NonLiteralKey<K>, A>, Record<ReadonlyRecord.NonLiteralKey<K>, B>]
 ```

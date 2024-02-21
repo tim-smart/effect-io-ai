@@ -13,18 +13,21 @@ ReadonlyRecord.replaceOption
 **Example**
 
 ```ts
-import { replaceOption } from "effect/ReadonlyRecord"
+import { empty, replaceOption } from "effect/ReadonlyRecord"
 import { some, none } from "effect/Option"
 
 assert.deepStrictEqual(replaceOption({ a: 1, b: 2, c: 3 }, "a", 10), some({ a: 10, b: 2, c: 3 }))
-assert.deepStrictEqual(replaceOption({}, "a", 10), none())
+assert.deepStrictEqual(replaceOption(empty<string>(), "a", 10), none())
 ```
 
 **Signature**
 
 ```ts
 export declare const replaceOption: {
-  <B>(key: string, b: B): <A>(self: ReadonlyRecord<A>) => Option.Option<Record<string, B | A>>
-  <A, B>(self: ReadonlyRecord<A>, key: string, b: B): Option.Option<Record<string, A | B>>
+  <K extends string | symbol, B>(
+    key: NoInfer<K>,
+    b: B
+  ): <A>(self: ReadonlyRecord<K, A>) => Option.Option<Record<K, B | A>>
+  <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, b: B): Option.Option<Record<K, A | B>>
 }
 ```

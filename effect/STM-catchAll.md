@@ -14,7 +14,7 @@ STM.catchAll
 
 ```ts
 export declare const catchAll: {
-  <E, R1, E1, B>(f: (e: E) => STM<B, E1, R1>): <R, A>(self: STM<A, E, R>) => STM<B | A, E1, R1 | R>
-  <R, A, E, R1, E1, B>(self: STM<A, E, R>, f: (e: E) => STM<B, E1, R1>): STM<A | B, E1, R | R1>
+  <E, B, E1, R1>(f: (e: E) => STM<B, E1, R1>): <A, R>(self: STM<A, E, R>) => STM<B | A, E1, R1 | R>
+  <A, E, R, B, E1, R1>(self: STM<A, E, R>, f: (e: E) => STM<B, E1, R1>): STM<A | B, E1, R | R1>
 }
 ```

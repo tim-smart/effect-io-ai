@@ -15,11 +15,11 @@ Effect.reduceWhile
 
 ```ts
 export declare const reduceWhile: {
-  <A, R, E, Z>(
+  <Z, A, E, R>(
     zero: Z,
     options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R> }
   ): (elements: Iterable<A>) => Effect<Z, E, R>
-  <A, R, E, Z>(
+  <A, Z, E, R>(
     elements: Iterable<A>,
     zero: Z,
     options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R> }

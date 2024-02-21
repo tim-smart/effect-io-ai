@@ -13,7 +13,5 @@ Schedule.passthrough
 **Signature**
 
 ```ts
-export declare const passthrough: <Env, Input, Output>(
-  self: Schedule<Env, Input, Output>
-) => Schedule<Env, Input, Input>
+export declare const passthrough: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<In, In, R>
 ```

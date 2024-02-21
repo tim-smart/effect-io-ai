@@ -19,7 +19,7 @@ export declare const mapBoth: {
     readonly onFailure: (e: E) => E2
     readonly onSuccess: (a: A) => A2
   }): <R>(self: Stream<A, E, R>) => Stream<A2, E2, R>
-  <R, E, E2, A, A2>(
+  <A, E, R, E2, A2>(
     self: Stream<A, E, R>,
     options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2 }
   ): Stream<A2, E2, R>

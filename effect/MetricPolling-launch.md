@@ -15,14 +15,14 @@ MetricPolling.launch
 
 ```ts
 export declare const launch: {
-  <R2, A2>(
-    schedule: Schedule.Schedule<R2, unknown, A2>
+  <A2, R2>(
+    schedule: Schedule.Schedule<A2, unknown, R2>
   ): <Type, In, R, E, Out>(
     self: MetricPolling<Type, In, R, E, Out>
   ) => Effect.Effect<Fiber.Fiber<A2, E>, never, Scope.Scope | R2 | R>
-  <Type, In, R, E, Out, R2, A2>(
+  <Type, In, R, E, Out, A2, R2>(
     self: MetricPolling<Type, In, R, E, Out>,
-    schedule: Schedule.Schedule<R2, unknown, A2>
+    schedule: Schedule.Schedule<A2, unknown, R2>
   ): Effect.Effect<Fiber.Fiber<A2, E>, never, Scope.Scope | R | R2>
 }
 ```

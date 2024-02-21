@@ -13,7 +13,7 @@ Stream.contextWithStream
 **Signature**
 
 ```ts
-export declare const contextWithStream: <R0, R, E, A>(
+export declare const contextWithStream: <R0, A, E, R>(
   f: (env: Context.Context<R0>) => Stream<A, E, R>
 ) => Stream<A, E, R0 | R>
 ```

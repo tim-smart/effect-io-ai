@@ -16,12 +16,12 @@ Schedule.onDecision
 
 ```ts
 export declare const onDecision: {
-  <Out, Env2, X>(
-    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, Env2>
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
-  <Env, In, Out, Env2, X>(
-    self: Schedule<Env, In, Out>,
-    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, Env2>
-  ): Schedule<Env | Env2, In, Out>
+  <Out, X, R2>(
+    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, R2>
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>
+  <Out, In, R, X, R2>(
+    self: Schedule<Out, In, R>,
+    f: (out: Out, decision: ScheduleDecision.ScheduleDecision) => Effect.Effect<X, never, R2>
+  ): Schedule<Out, In, R | R2>
 }
 ```

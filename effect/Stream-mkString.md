@@ -14,5 +14,5 @@ Stream.mkString
 **Signature**
 
 ```ts
-export declare const mkString: <R, E>(self: Stream<string, E, R>) => Effect.Effect<string, E, R>
+export declare const mkString: <E, R>(self: Stream<string, E, R>) => Effect.Effect<string, E, R>
 ```

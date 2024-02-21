@@ -14,7 +14,7 @@ RequestResolver.makeBatched
 **Signature**
 
 ```ts
-export declare const makeBatched: <R, A extends Request.Request<any, any>>(
+export declare const makeBatched: <A extends Request.Request<any, any>, R>(
   run: (requests: A[]) => Effect.Effect<void, never, R>
 ) => RequestResolver<A, R>
 ```

@@ -15,7 +15,7 @@ Stream.mapConcat
 
 ```ts
 export declare const mapConcat: {
-  <A, A2>(f: (a: A) => Iterable<A2>): <R, E>(self: Stream<A, E, R>) => Stream<A2, E, R>
-  <R, E, A, A2>(self: Stream<A, E, R>, f: (a: A) => Iterable<A2>): Stream<A2, E, R>
+  <A, A2>(f: (a: A) => Iterable<A2>): <E, R>(self: Stream<A, E, R>) => Stream<A2, E, R>
+  <A, E, R, A2>(self: Stream<A, E, R>, f: (a: A) => Iterable<A2>): Stream<A2, E, R>
 }
 ```

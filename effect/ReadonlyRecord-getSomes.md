@@ -22,5 +22,7 @@ assert.deepStrictEqual(getSomes({ a: some(1), b: none(), c: some(2) }), { a: 1, 
 **Signature**
 
 ```ts
-export declare const getSomes: <A>(self: ReadonlyRecord<Option.Option<A>>) => Record<string, A>
+export declare const getSomes: <K extends string, A>(
+  self: ReadonlyRecord<K, Option.Option<A>>
+) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```

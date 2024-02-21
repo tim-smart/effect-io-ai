@@ -13,7 +13,7 @@ GroupBy.make
 **Signature**
 
 ```ts
-export declare const make: <R, E, K, V>(
+export declare const make: <K, V, E, R>(
   grouped: Stream.Stream<readonly [K, Queue.Dequeue<Take.Take<V, E>>], E, R>
-) => GroupBy<R, E, K, V>
+) => GroupBy<K, V, E, R>
 ```

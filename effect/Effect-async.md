@@ -1,16 +1,19 @@
 # async
 
-Imports an asynchronous side-effect into a pure `Effect` value.
-The callback function `Effect<A, E, R> => void` must be called at most once.
+Imports an asynchronous side-effect into a pure `Effect` value. The callback
+function `Effect<A, E, R> => void` **MUST** be called at most once.
 
-If an Effect is returned by the registration function, it will be executed
-if the fiber executing the effect is interrupted.
+The registration function can optionally return an Effect, which will be
+executed if the `Fiber` executing this Effect is interrupted.
 
 The registration function can also receive an `AbortSignal` if required for
 interruption.
 
-The `FiberId` of the fiber that may complete the async callback may be
-provided to allow for better diagnostics.
+The `FiberId` of the fiber that may complete the async callback may also be
+specified. This is called the "blocking fiber" because it suspends the fiber
+executing the `async` Effect (i.e. semantically blocks the fiber from making
+progress). Specifying this fiber id in cases where it is known will improve
+diagnostics, but not affect the behavior of the returned effect.
 
 To import and use `async` from the "Effect" module:
 

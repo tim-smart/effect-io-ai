@@ -13,5 +13,7 @@ ReadonlyRecord.getEquivalence
 **Signature**
 
 ```ts
-export declare const getEquivalence: <A>(equivalence: Equivalence<A>) => Equivalence<ReadonlyRecord<A>>
+export declare const getEquivalence: <K extends string, A>(
+  equivalence: Equivalence<A>
+) => Equivalence<ReadonlyRecord<K, A>>
 ```

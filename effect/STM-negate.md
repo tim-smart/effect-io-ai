@@ -13,5 +13,5 @@ STM.negate
 **Signature**
 
 ```ts
-export declare const negate: <R, E>(self: STM<boolean, E, R>) => STM<boolean, E, R>
+export declare const negate: <E, R>(self: STM<boolean, E, R>) => STM<boolean, E, R>
 ```

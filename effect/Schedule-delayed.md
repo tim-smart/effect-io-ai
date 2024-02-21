@@ -17,10 +17,10 @@ Schedule.delayed
 export declare const delayed: {
   (
     f: (duration: Duration.Duration) => Duration.DurationInput
-  ): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env, In, Out>
-  <Env, In, Out>(
-    self: Schedule<Env, In, Out>,
+  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
+  <Out, In, R>(
+    self: Schedule<Out, In, R>,
     f: (duration: Duration.Duration) => Duration.DurationInput
-  ): Schedule<Env, In, Out>
+  ): Schedule<Out, In, R>
 }
 ```

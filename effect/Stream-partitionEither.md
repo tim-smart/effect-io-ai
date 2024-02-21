@@ -15,15 +15,15 @@ Stream.partitionEither
 
 ```ts
 export declare const partitionEither: {
-  <A, R2, E2, A2, A3>(
-    predicate: (a: NoInfer<A>) => Effect.Effect<Either.Either<A2, A3>, E2, R2>,
+  <A, A3, A2, E2, R2>(
+    predicate: (a: NoInfer<A>) => Effect.Effect<Either.Either<A3, A2>, E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
-  ): <R, E>(
+  ): <E, R>(
     self: Stream<A, E, R>
   ) => Effect.Effect<[left: Stream<A2, E2 | E, never>, right: Stream<A3, E2 | E, never>], E2 | E, Scope.Scope | R2 | R>
-  <R, E, A, R2, E2, A2, A3>(
+  <A, E, R, A3, A2, E2, R2>(
     self: Stream<A, E, R>,
-    predicate: (a: A) => Effect.Effect<Either.Either<A2, A3>, E2, R2>,
+    predicate: (a: A) => Effect.Effect<Either.Either<A3, A2>, E2, R2>,
     options?: { readonly bufferSize?: number | undefined } | undefined
   ): Effect.Effect<[left: Stream<A2, E | E2, never>, right: Stream<A3, E | E2, never>], E | E2, Scope.Scope | R | R2>
 }

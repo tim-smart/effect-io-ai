@@ -14,7 +14,7 @@ Stream.onDone
 
 ```ts
 export declare const onDone: {
-  <R2, _>(cleanup: () => Effect.Effect<_, never, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, E, A, R2, _>(self: Stream<A, E, R>, cleanup: () => Effect.Effect<_, never, R2>): Stream<A, E, R | R2>
+  <X, R2>(cleanup: () => Effect.Effect<X, never, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, X, R2>(self: Stream<A, E, R>, cleanup: () => Effect.Effect<X, never, R2>): Stream<A, E, R | R2>
 }
 ```

@@ -14,13 +14,13 @@ Schedule.mapBoth
 
 ```ts
 export declare const mapBoth: {
-  <In, Out, In2, Out2>(options: {
+  <In2, In, Out, Out2>(options: {
     readonly onInput: (in2: In2) => In
     readonly onOutput: (out: Out) => Out2
-  }): <Env>(self: Schedule<Env, In, Out>) => Schedule<Env, In2, Out2>
-  <Env, In, Out, In2, Out2>(
-    self: Schedule<Env, In, Out>,
+  }): <R>(self: Schedule<Out, In, R>) => Schedule<Out2, In2, R>
+  <Out, In, R, In2, Out2>(
+    self: Schedule<Out, In, R>,
     options: { readonly onInput: (in2: In2) => In; readonly onOutput: (out: Out) => Out2 }
-  ): Schedule<Env, In2, Out2>
+  ): Schedule<Out2, In2, R>
 }
 ```

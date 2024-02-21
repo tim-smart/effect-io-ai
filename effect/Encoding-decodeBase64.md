@@ -13,5 +13,5 @@ Encoding.decodeBase64
 **Signature**
 
 ```ts
-export declare const decodeBase64: (str: string) => Either.Either<DecodeException, Uint8Array>
+export declare const decodeBase64: (str: string) => Either.Either<Uint8Array, DecodeException>
 ```

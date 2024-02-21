@@ -30,7 +30,7 @@ export declare const throttle: {
     readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
     readonly strategy?: "enforce" | "shape" | undefined
-  }): <R, E>(self: Stream<A, E, R>) => Stream<A, E, R>
+  }): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
   <A, E, R>(
     self: Stream<A, E, R>,
     options: {

@@ -22,5 +22,7 @@ assert.deepStrictEqual(getLefts({ a: right(1), b: left("err"), c: right(2) }), {
 **Signature**
 
 ```ts
-export declare const getLefts: <E, A>(self: ReadonlyRecord<Either<E, A>>) => Record<string, E>
+export declare const getLefts: <K extends string, R, L>(
+  self: ReadonlyRecord<K, Either<R, L>>
+) => Record<ReadonlyRecord.NonLiteralKey<K>, L>
 ```

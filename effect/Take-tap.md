@@ -14,12 +14,12 @@ Take.tap
 
 ```ts
 export declare const tap: {
-  <A, _, E2, R>(
-    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<_, E2, R>
+  <A, X, E2, R>(
+    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<X, E2, R>
   ): <E>(self: Take<A, E>) => Effect.Effect<void, E2 | E, R>
-  <A, E, _, E2, R>(
+  <A, E, X, E2, R>(
     self: Take<A, E>,
-    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<_, E2, R>
+    f: (chunk: Chunk.Chunk<A>) => Effect.Effect<X, E2, R>
   ): Effect.Effect<void, E | E2, R>
 }
 ```

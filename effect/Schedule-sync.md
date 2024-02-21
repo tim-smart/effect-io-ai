@@ -14,5 +14,5 @@ Schedule.sync
 **Signature**
 
 ```ts
-export declare const sync: <A>(evaluate: LazyArg<A>) => Schedule<never, unknown, A>
+export declare const sync: <A>(evaluate: LazyArg<A>) => Schedule<A, unknown, never>
 ```

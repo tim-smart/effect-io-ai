@@ -14,7 +14,7 @@ ReadonlyRecord.some
 
 ```ts
 export declare const some: {
-  <A, K extends string>(predicate: (value: A, key: K) => boolean): (self: Record<K, A>) => boolean
-  <K extends string, A>(self: Record<K, A>, predicate: (value: A, key: K) => boolean): boolean
+  <A, K extends string>(predicate: (value: A, key: K) => boolean): (self: ReadonlyRecord<K, A>) => boolean
+  <K extends string, A>(self: ReadonlyRecord<K, A>, predicate: (value: A, key: K) => boolean): boolean
 }
 ```

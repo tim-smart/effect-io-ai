@@ -32,5 +32,8 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const fromIterableBy: <A>(items: Iterable<A>, f: (a: A) => string) => Record<string, A>
+export declare const fromIterableBy: <A, K extends string | symbol>(
+  items: Iterable<A>,
+  f: (a: A) => K
+) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```

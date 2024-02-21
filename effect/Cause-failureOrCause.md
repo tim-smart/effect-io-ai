@@ -15,5 +15,5 @@ Cause.failureOrCause
 **Signature**
 
 ```ts
-export declare const failureOrCause: <E>(self: Cause<E>) => Either.Either<E, Cause<never>>
+export declare const failureOrCause: <E>(self: Cause<E>) => Either.Either<Cause<never>, E>
 ```

@@ -13,5 +13,5 @@ Schedule.stop
 **Signature**
 
 ```ts
-export declare const stop: Schedule<never, unknown, void>
+export declare const stop: Schedule<void, unknown, never>
 ```

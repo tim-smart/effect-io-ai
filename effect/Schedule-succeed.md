@@ -14,5 +14,5 @@ Schedule.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Schedule<never, unknown, A>
+export declare const succeed: <A>(value: A) => Schedule<A, unknown, never>
 ```

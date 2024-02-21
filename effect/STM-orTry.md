@@ -15,7 +15,7 @@ STM.orTry
 
 ```ts
 export declare const orTry: {
-  <R1, E1, A1>(that: LazyArg<STM<A1, E1, R1>>): <A, E, R>(self: STM<A, E, R>) => STM<A1 | A, E1 | E, R1 | R>
-  <R, E, A, R1, E1, A1>(self: STM<A, E, R>, that: LazyArg<STM<A1, E1, R1>>): STM<A | A1, E | E1, R | R1>
+  <A1, E1, R1>(that: LazyArg<STM<A1, E1, R1>>): <A, E, R>(self: STM<A, E, R>) => STM<A1 | A, E1 | E, R1 | R>
+  <A, E, R, A1, E1, R1>(self: STM<A, E, R>, that: LazyArg<STM<A1, E1, R1>>): STM<A | A1, E | E1, R | R1>
 }
 ```

@@ -18,6 +18,6 @@ export declare const partitionMapComposition: <F extends TypeLambda, G extends T
   G: Filterable<G>
 ) => <FR, FO, FE, GR, GO, GE, A, B, C>(
   self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>,
-  f: (a: A) => Either.Either<B, C>
+  f: (a: A) => Either.Either<C, B>
 ) => [Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>, Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, C>>]
 ```

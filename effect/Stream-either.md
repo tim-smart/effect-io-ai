@@ -15,5 +15,5 @@ Stream.either
 **Signature**
 
 ```ts
-export declare const either: <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<E, A>, never, R>
+export declare const either: <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<A, E>, never, R>
 ```

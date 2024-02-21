@@ -15,12 +15,12 @@ Schedule.delayedEffect
 
 ```ts
 export declare const delayedEffect: {
-  <Env2>(
-    f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, Env2>
-  ): <Env, In, Out>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out>
-  <Env, In, Out, Env2>(
-    self: Schedule<Env, In, Out>,
-    f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, Env2>
-  ): Schedule<Env | Env2, In, Out>
+  <R2>(
+    f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, R2>
+  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>
+  <Out, In, R, R2>(
+    self: Schedule<Out, In, R>,
+    f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, R2>
+  ): Schedule<Out, In, R | R2>
 }
 ```

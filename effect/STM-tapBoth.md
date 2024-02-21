@@ -14,11 +14,11 @@ STM.tapBoth
 
 ```ts
 export declare const tapBoth: {
-  <E, XE extends E, R2, E2, A2, A, XA extends A, R3, E3, A3>(options: {
+  <XE extends E, A2, E2, R2, XA extends A, A3, E3, R3, A, E>(options: {
     readonly onFailure: (error: XE) => STM<A2, E2, R2>
     readonly onSuccess: (value: XA) => STM<A3, E3, R3>
-  }): <R>(self: STM<A, E, R>) => STM<A, E | E2 | E3, R2 | R3 | R>
-  <R, E, XE extends E, R2, E2, A2, A, XA extends A, R3, E3, A3>(
+  }): <R>(self: STM<A, E, R>) => STM<A, E2 | E3 | E, R2 | R3 | R>
+  <A, E, R, XE extends E, A2, E2, R2, XA extends A, A3, E3, R3>(
     self: STM<A, E, R>,
     options: { readonly onFailure: (error: XE) => STM<A2, E2, R2>; readonly onSuccess: (value: XA) => STM<A3, E3, R3> }
   ): STM<A, E | E2 | E3, R | R2 | R3>

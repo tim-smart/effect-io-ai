@@ -13,5 +13,5 @@ Schedule.recurUpTo
 **Signature**
 
 ```ts
-export declare const recurUpTo: (duration: Duration.DurationInput) => Schedule<never, unknown, Duration.Duration>
+export declare const recurUpTo: (duration: Duration.DurationInput) => Schedule<Duration.Duration>
 ```

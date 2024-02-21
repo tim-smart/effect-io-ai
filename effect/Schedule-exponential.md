@@ -15,8 +15,5 @@ Schedule.exponential
 **Signature**
 
 ```ts
-export declare const exponential: (
-  base: Duration.DurationInput,
-  factor?: number
-) => Schedule<never, unknown, Duration.Duration>
+export declare const exponential: (base: Duration.DurationInput, factor?: number) => Schedule<Duration.Duration>
 ```

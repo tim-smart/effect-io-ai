@@ -14,8 +14,8 @@ Stream.repeatEffectWithSchedule
 **Signature**
 
 ```ts
-export declare const repeatEffectWithSchedule: <R, E, A, A0 extends A, R2, _>(
+export declare const repeatEffectWithSchedule: <A, E, R, X, A0 extends A, R2>(
   effect: Effect.Effect<A, E, R>,
-  schedule: Schedule.Schedule<R2, A0, _>
+  schedule: Schedule.Schedule<X, A0, R2>
 ) => Stream<A, E, R | R2>
 ```

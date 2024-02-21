@@ -28,9 +28,17 @@ assert.deepStrictEqual(
 export declare const filter: {
   <K extends string, A, B extends A>(
     refinement: (a: NoInfer<A>, key: K) => a is B
-  ): (self: Record<K, A>) => Record<string, B>
-  <K extends string, A>(predicate: (A: NoInfer<A>, key: K) => boolean): (self: Record<K, A>) => Record<string, A>
-  <K extends string, A, B extends A>(self: Record<K, A>, refinement: (a: A, key: K) => a is B): Record<string, B>
-  <K extends string, A>(self: Record<K, A>, predicate: (a: A, key: K) => boolean): Record<string, A>
+  ): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  <K extends string, A>(
+    predicate: (A: NoInfer<A>, key: K) => boolean
+  ): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
+  <K extends string, A, B extends A>(
+    self: ReadonlyRecord<K, A>,
+    refinement: (a: A, key: K) => a is B
+  ): Record<ReadonlyRecord.NonLiteralKey<K>, B>
+  <K extends string, A>(
+    self: ReadonlyRecord<K, A>,
+    predicate: (a: A, key: K) => boolean
+  ): Record<ReadonlyRecord.NonLiteralKey<K>, A>
 }
 ```

@@ -15,7 +15,7 @@ Stream.paginateChunkEffect
 **Signature**
 
 ```ts
-export declare const paginateChunkEffect: <S, R, E, A>(
+export declare const paginateChunkEffect: <S, A, E, R>(
   s: S,
   f: (s: S) => Effect.Effect<readonly [Chunk.Chunk<A>, Option.Option<S>], E, R>
 ) => Stream<A, E, R>

@@ -13,5 +13,5 @@ STM.flatten
 **Signature**
 
 ```ts
-export declare const flatten: <R, E, R2, E2, A>(self: STM<STM<A, E2, R2>, E, R>) => STM<A, E | E2, R | R2>
+export declare const flatten: <A, E2, R2, E, R>(self: STM<STM<A, E2, R2>, E, R>) => STM<A, E2 | E, R2 | R>
 ```

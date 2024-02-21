@@ -18,5 +18,5 @@ Channel.toPull
 ```ts
 export declare const toPull: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
   self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
-) => Effect.Effect<Effect.Effect<Either.Either<OutDone, OutElem>, OutErr, Env>, never, Scope.Scope | Env>
+) => Effect.Effect<Effect.Effect<Either.Either<OutElem, OutDone>, OutErr, Env>, never, Scope.Scope | Env>
 ```

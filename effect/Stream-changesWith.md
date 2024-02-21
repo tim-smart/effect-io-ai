@@ -16,7 +16,7 @@ Stream.changesWith
 
 ```ts
 export declare const changesWith: {
-  <A>(f: (x: A, y: A) => boolean): <R, E>(self: Stream<A, E, R>) => Stream<A, E, R>
+  <A>(f: (x: A, y: A) => boolean): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
   <A, E, R>(self: Stream<A, E, R>, f: (x: A, y: A) => boolean): Stream<A, E, R>
 }
 ```

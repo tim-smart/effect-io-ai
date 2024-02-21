@@ -1,6 +1,6 @@
 # Schedule
 
-A `Schedule<Env, In, Out>` defines a recurring schedule, which consumes
+A `Schedule<Out, In, R>` defines a recurring schedule, which consumes
 values of type `In`, and which returns values of type `Out`.
 
 Schedules are defined as a possibly infinite set of intervals spread out over

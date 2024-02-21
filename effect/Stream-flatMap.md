@@ -15,7 +15,7 @@ Stream.flatMap
 
 ```ts
 export declare const flatMap: {
-  <A, R2, E2, A2>(
+  <A, A2, E2, R2>(
     f: (a: A) => Stream<A2, E2, R2>,
     options?:
       | {
@@ -24,8 +24,8 @@ export declare const flatMap: {
           readonly switch?: boolean | undefined
         }
       | undefined
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
-  <R, E, A, R2, E2, A2>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2>(
     self: Stream<A, E, R>,
     f: (a: A) => Stream<A2, E2, R2>,
     options?:

@@ -14,5 +14,5 @@ Schedule.recurs
 **Signature**
 
 ```ts
-export declare const recurs: (n: number) => Schedule<never, unknown, number>
+export declare const recurs: (n: number) => Schedule<number>
 ```

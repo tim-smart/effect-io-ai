@@ -24,7 +24,7 @@ STM.iterate
 **Signature**
 
 ```ts
-export declare const iterate: <R, E, Z>(
+export declare const iterate: <Z, E, R>(
   initial: Z,
   options: { readonly while: Predicate<Z>; readonly body: (z: Z) => STM<Z, E, R> }
 ) => STM<Z, E, R>

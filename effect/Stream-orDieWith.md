@@ -15,7 +15,7 @@ Stream.orDieWith
 
 ```ts
 export declare const orDieWith: {
-  <E>(f: (e: E) => unknown): <R, A>(self: Stream<A, E, R>) => Stream<A, never, R>
-  <R, A, E>(self: Stream<A, E, R>, f: (e: E) => unknown): Stream<A, never, R>
+  <E>(f: (e: E) => unknown): <A, R>(self: Stream<A, E, R>) => Stream<A, never, R>
+  <A, E, R>(self: Stream<A, E, R>, f: (e: E) => unknown): Stream<A, never, R>
 }
 ```

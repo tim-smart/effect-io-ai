@@ -21,5 +21,5 @@ assert.deepStrictEqual(size({ a: "a", b: 1, c: true }), 3)
 **Signature**
 
 ```ts
-export declare const size: <A>(self: ReadonlyRecord<A>) => number
+export declare const size: <K extends string, A>(self: ReadonlyRecord<K, A>) => number
 ```

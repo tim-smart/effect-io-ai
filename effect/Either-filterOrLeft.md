@@ -39,15 +39,19 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const filterOrLeft: {
-  <A, B extends A, E2>(
-    refinement: Refinement<NoInfer<A>, B>,
-    orLeftWith: (a: NoInfer<A>) => E2
-  ): <E>(self: Either<E, A>) => Either<E2 | E, B>
-  <A, E2>(
-    predicate: Predicate<NoInfer<A>>,
-    orLeftWith: (a: NoInfer<A>) => E2
-  ): <E>(self: Either<E, A>) => Either<E2 | E, A>
-  <E, A, B extends A, E2>(self: Either<E, A>, refinement: Refinement<A, B>, orLeftWith: (a: A) => E2): Either<E | E2, B>
-  <E, A, E2>(self: Either<E, A>, predicate: Predicate<A>, orLeftWith: (a: A) => E2): Either<E | E2, A>
+  <R, B extends R, L2>(
+    refinement: Refinement<NoInfer<R>, B>,
+    orLeftWith: (right: NoInfer<R>) => L2
+  ): <L>(self: Either<R, L>) => Either<B, L2 | L>
+  <R, L2>(
+    predicate: Predicate<NoInfer<R>>,
+    orLeftWith: (right: NoInfer<R>) => L2
+  ): <L>(self: Either<R, L>) => Either<R, L2 | L>
+  <R, L, B extends R, L2>(
+    self: Either<R, L>,
+    refinement: Refinement<R, B>,
+    orLeftWith: (right: R) => L2
+  ): Either<B, L | L2>
+  <R, L, E2>(self: Either<R, L>, predicate: Predicate<R>, orLeftWith: (right: R) => E2): Either<R, L | E2>
 }
 ```

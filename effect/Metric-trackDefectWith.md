@@ -20,7 +20,7 @@ export declare const trackDefectWith: {
     metric: Metric<Type, In, Out>,
     f: (defect: unknown) => In
   ): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
-  <R, E, A, Type, In, Out>(
+  <A, E, R, Type, In, Out>(
     self: Effect.Effect<A, E, R>,
     metric: Metric<Type, In, Out>,
     f: (defect: unknown) => In

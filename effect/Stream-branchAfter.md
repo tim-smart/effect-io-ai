@@ -19,8 +19,8 @@ export declare const branchAfter: {
   <A, A2, E2, R2>(
     n: number,
     f: (input: Chunk.Chunk<A>) => Stream<A2, E2, R2>
-  ): <R, E>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
-  <A, E, R, R2, E2, A2>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2>(
     self: Stream<A, E, R>,
     n: number,
     f: (input: Chunk.Chunk<A>) => Stream<A2, E2, R2>

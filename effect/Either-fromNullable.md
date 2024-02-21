@@ -30,7 +30,7 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const fromNullable: {
-  <A, E>(onNullable: (a: A) => E): (self: A) => Either<E, NonNullable<A>>
-  <A, E>(self: A, onNullable: (a: A) => E): Either<E, NonNullable<A>>
+  <R, L>(onNullable: (right: R) => L): (self: R) => Either<NonNullable<R>, L>
+  <R, L>(self: R, onNullable: (right: R) => L): Either<NonNullable<R>, L>
 }
 ```

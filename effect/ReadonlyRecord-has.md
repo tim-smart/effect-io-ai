@@ -13,17 +13,17 @@ ReadonlyRecord.has
 **Example**
 
 ```ts
-import { has } from "effect/ReadonlyRecord"
+import { empty, has } from "effect/ReadonlyRecord"
 
 assert.deepStrictEqual(has({ a: 1, b: 2 }, "a"), true)
-assert.deepStrictEqual(has({ a: 1, b: 2 }, "c"), false)
+assert.deepStrictEqual(has(empty<string>(), "c"), false)
 ```
 
 **Signature**
 
 ```ts
 export declare const has: {
-  (key: string): <A>(self: ReadonlyRecord<A>) => boolean
-  <A>(self: ReadonlyRecord<A>, key: string): boolean
+  <K extends string | symbol>(key: NoInfer<K>): <A>(self: ReadonlyRecord<K, A>) => boolean
+  <K extends string | symbol, A>(self: ReadonlyRecord<K, A>, key: NoInfer<K>): boolean
 }
 ```

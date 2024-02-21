@@ -14,7 +14,7 @@ STM.map
 
 ```ts
 export declare const map: {
-  <A, B>(f: (a: A) => B): <R, E>(self: STM<A, E, R>) => STM<B, E, R>
-  <R, E, A, B>(self: STM<A, E, R>, f: (a: A) => B): STM<B, E, R>
+  <A, B>(f: (a: A) => B): <E, R>(self: STM<A, E, R>) => STM<B, E, R>
+  <A, E, R, B>(self: STM<A, E, R>, f: (a: A) => B): STM<B, E, R>
 }
 ```

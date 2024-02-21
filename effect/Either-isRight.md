@@ -22,5 +22,5 @@ assert.deepStrictEqual(isRight(left("a")), false)
 **Signature**
 
 ```ts
-export declare const isRight: <E, A>(self: Either<E, A>) => self is Right<E, A>
+export declare const isRight: <R, L>(self: Either<R, L>) => self is Right<L, R>
 ```

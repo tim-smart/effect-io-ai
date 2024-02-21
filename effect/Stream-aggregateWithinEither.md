@@ -23,14 +23,14 @@ Stream.aggregateWithinEither
 
 ```ts
 export declare const aggregateWithinEither: {
-  <B, A, A2, E2, R2, R3, C>(
+  <B, A, A2, E2, R2, C, R3>(
     sink: Sink.Sink<B, A | A2, A2, E2, R2>,
-    schedule: Schedule.Schedule<R3, Option.Option<B>, C>
-  ): <E, R>(self: Stream<A, E, R>) => Stream<Either.Either<C, B>, E2 | E, R2 | R3 | R>
-  <A, E, R, B, A2, E2, R2, R3, C>(
+    schedule: Schedule.Schedule<C, Option.Option<B>, R3>
+  ): <E, R>(self: Stream<A, E, R>) => Stream<Either.Either<B, C>, E2 | E, R2 | R3 | R>
+  <A, E, R, B, A2, E2, R2, C, R3>(
     self: Stream<A, E, R>,
     sink: Sink.Sink<B, A | A2, A2, E2, R2>,
-    schedule: Schedule.Schedule<R3, Option.Option<B>, C>
-  ): Stream<Either.Either<C, B>, E | E2, R | R2 | R3>
+    schedule: Schedule.Schedule<C, Option.Option<B>, R3>
+  ): Stream<Either.Either<B, C>, E | E2, R | R2 | R3>
 }
 ```

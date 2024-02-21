@@ -24,14 +24,14 @@ Stream.throttleEffect
 
 ```ts
 export declare const throttleEffect: {
-  <A, R2, E2>(options: {
+  <A, E2, R2>(options: {
     readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>
     readonly units: number
     readonly duration: Duration.DurationInput
     readonly burst?: number | undefined
     readonly strategy?: "enforce" | "shape" | undefined
-  }): <R, E>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <R, E, A, R2, E2>(
+  }): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
+  <A, E, R, E2, R2>(
     self: Stream<A, E, R>,
     options: {
       readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>

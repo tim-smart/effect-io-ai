@@ -14,7 +14,7 @@ Stream.unfoldEffect
 **Signature**
 
 ```ts
-export declare const unfoldEffect: <S, R, E, A>(
+export declare const unfoldEffect: <S, A, E, R>(
   s: S,
   f: (s: S) => Effect.Effect<Option.Option<readonly [A, S]>, E, R>
 ) => Stream<A, E, R>

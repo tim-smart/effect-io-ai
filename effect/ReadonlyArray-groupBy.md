@@ -15,7 +15,12 @@ ReadonlyArray.groupBy
 
 ```ts
 export declare const groupBy: {
-  <A>(f: (a: A) => string): (self: Iterable<A>) => Record<string, [A, ...A[]]>
-  <A>(self: Iterable<A>, f: (a: A) => string): Record<string, [A, ...A[]]>
+  <A, K extends string | symbol>(
+    f: (a: A) => K
+  ): (self: Iterable<A>) => Record<ReadonlyRecord.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
+  <A, K extends string | symbol>(
+    self: Iterable<A>,
+    f: (a: A) => K
+  ): Record<ReadonlyRecord.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
 }
 ```

@@ -19,7 +19,7 @@ export declare const catchTags: {
     Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => STM<any, any, any>) | undefined }
   >(
     cases: Cases
-  ): <R, A>(
+  ): <A, R>(
     self: STM<A, E, R>
   ) => STM<
     | A

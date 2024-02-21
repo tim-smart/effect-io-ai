@@ -16,7 +16,7 @@ List.partitionMap
 
 ```ts
 export declare const partitionMap: {
-  <A, B, C>(f: (a: A) => Either.Either<B, C>): (self: List<A>) => [left: List<B>, right: List<C>]
-  <A, B, C>(self: List<A>, f: (a: A) => Either.Either<B, C>): [left: List<B>, right: List<C>]
+  <A, B, C>(f: (a: A) => Either.Either<C, B>): (self: List<A>) => [left: List<B>, right: List<C>]
+  <A, B, C>(self: List<A>, f: (a: A) => Either.Either<C, B>): [left: List<B>, right: List<C>]
 }
 ```

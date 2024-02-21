@@ -14,7 +14,12 @@ ReadonlyRecord.difference
 
 ```ts
 export declare const difference: {
-  <A>(that: ReadonlyRecord<A>): (self: ReadonlyRecord<A>) => Record<string, A>
-  <A>(self: ReadonlyRecord<A>, that: ReadonlyRecord<A>): Record<string, A>
+  <K1 extends string, B>(
+    that: ReadonlyRecord<K1, B>
+  ): <K0 extends string, A>(self: ReadonlyRecord<K0, A>) => Record<K1 | K0, B | A>
+  <K0 extends string, A, K1 extends string, B>(
+    self: ReadonlyRecord<K0, A>,
+    that: ReadonlyRecord<K1, B>
+  ): Record<K0 | K1, A | B>
 }
 ```

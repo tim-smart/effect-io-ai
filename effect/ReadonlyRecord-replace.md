@@ -1,6 +1,7 @@
 # replace
 
 Replace a key's value in a record and return the updated record.
+If the key does not exist in the record, a copy of the original record is returned.
 
 To import and use `replace` from the "ReadonlyRecord" module:
 
@@ -24,7 +25,7 @@ assert.deepStrictEqual(replace("c", 3)({ a: 1, b: 2 }), { a: 1, b: 2 })
 
 ```ts
 export declare const replace: {
-  <B>(key: string, value: B): <A>(self: ReadonlyRecord<A>) => Record<string, B | A>
-  <A, B>(self: ReadonlyRecord<A>, key: string, value: B): Record<string, A | B>
+  <K extends string | symbol, B>(key: NoInfer<K>, value: B): <A>(self: ReadonlyRecord<K, A>) => Record<K, B | A>
+  <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, value: B): Record<K, A | B>
 }
 ```

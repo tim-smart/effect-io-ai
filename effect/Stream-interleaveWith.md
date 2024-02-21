@@ -20,11 +20,11 @@ Stream.interleaveWith
 
 ```ts
 export declare const interleaveWith: {
-  <R2, E2, A2, R3, E3>(
+  <A2, E2, R2, E3, R3>(
     that: Stream<A2, E2, R2>,
     decider: Stream<boolean, E3, R3>
   ): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E2 | E3 | E, R2 | R3 | R>
-  <R, E, A, R2, E2, A2, R3, E3>(
+  <A, E, R, A2, E2, R2, E3, R3>(
     self: Stream<A, E, R>,
     that: Stream<A2, E2, R2>,
     decider: Stream<boolean, E3, R3>

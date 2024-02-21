@@ -20,9 +20,9 @@ Stream.retry
 
 ```ts
 export declare const retry: {
-  <R2, E, E0 extends E, _>(
-    schedule: Schedule.Schedule<R2, E0, _>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, A, R2, E, E0 extends E, _>(self: Stream<A, E, R>, schedule: Schedule.Schedule<R2, E0, _>): Stream<A, E, R | R2>
+  <E0 extends E, R2, E, X>(
+    schedule: Schedule.Schedule<X, E0, R2>
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, X, E0 extends E, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<X, E0, R2>): Stream<A, E, R | R2>
 }
 ```

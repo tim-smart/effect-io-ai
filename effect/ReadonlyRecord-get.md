@@ -16,7 +16,7 @@ ReadonlyRecord.get
 import { get } from "effect/ReadonlyRecord"
 import { some, none } from "effect/Option"
 
-const person = { name: "John Doe", age: 35 }
+const person: Record<string, unknown> = { name: "John Doe", age: 35 }
 
 assert.deepStrictEqual(get(person, "name"), some("John Doe"))
 assert.deepStrictEqual(get(person, "email"), none())
@@ -26,7 +26,7 @@ assert.deepStrictEqual(get(person, "email"), none())
 
 ```ts
 export declare const get: {
-  (key: string): <A>(self: ReadonlyRecord<A>) => Option.Option<A>
-  <A>(self: ReadonlyRecord<A>, key: string): Option.Option<A>
+  <K extends string | symbol>(key: NoInfer<K>): <A>(self: ReadonlyRecord<K, A>) => Option.Option<A>
+  <K extends string | symbol, A>(self: ReadonlyRecord<K, A>, key: NoInfer<K>): Option.Option<A>
 }
 ```

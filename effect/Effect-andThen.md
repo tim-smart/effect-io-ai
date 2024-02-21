@@ -59,7 +59,7 @@ export declare const andThen: {
     : [X] extends [Promise<infer A1>]
       ? Effect<A1, Cause.UnknownException | E, R>
       : Effect<X, E, R>
-  <A, R, E, X>(
+  <A, E, R, X>(
     self: Effect<A, E, R>,
     f: (a: NoInfer<A>) => X
   ): [X] extends [Effect<infer A1, infer E1, infer R1>]
@@ -67,7 +67,7 @@ export declare const andThen: {
     : [X] extends [Promise<infer A1>]
       ? Effect<A1, Cause.UnknownException | E, R>
       : Effect<X, E, R>
-  <A, R, E, X>(
+  <A, E, R, X>(
     self: Effect<A, E, R>,
     f: X
   ): [X] extends [Effect<infer A1, infer E1, infer R1>]

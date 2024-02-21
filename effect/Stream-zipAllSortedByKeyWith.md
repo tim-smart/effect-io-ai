@@ -22,14 +22,14 @@ Stream.zipAllSortedByKeyWith
 
 ```ts
 export declare const zipAllSortedByKeyWith: {
-  <R2, E2, A, A3, A2, K>(options: {
+  <K, A2, E2, R2, A, A3>(options: {
     readonly other: Stream<readonly [K, A2], E2, R2>
     readonly onSelf: (a: A) => A3
     readonly onOther: (a2: A2) => A3
     readonly onBoth: (a: A, a2: A2) => A3
     readonly order: Order.Order<K>
-  }): <R, E>(self: Stream<readonly [K, A], E, R>) => Stream<[K, A3], E2 | E, R2 | R>
-  <R, E, R2, E2, A, A3, A2, K>(
+  }): <E, R>(self: Stream<readonly [K, A], E, R>) => Stream<[K, A3], E2 | E, R2 | R>
+  <K, A, E, R, A2, E2, R2, A3>(
     self: Stream<readonly [K, A], E, R>,
     options: {
       readonly other: Stream<readonly [K, A2], E2, R2>

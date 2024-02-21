@@ -16,8 +16,8 @@ Stream.ensuringWith
 export declare const ensuringWith: {
   <E, R2>(
     finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, E, A, R2>(
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, R2>(
     self: Stream<A, E, R>,
     finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>
   ): Stream<A, E, R | R2>

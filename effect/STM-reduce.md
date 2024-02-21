@@ -15,7 +15,7 @@ STM.reduce
 
 ```ts
 export declare const reduce: {
-  <S, A, R, E>(zero: S, f: (s: S, a: A) => STM<S, E, R>): (iterable: Iterable<A>) => STM<S, E, R>
-  <S, A, R, E>(iterable: Iterable<A>, zero: S, f: (s: S, a: A) => STM<S, E, R>): STM<S, E, R>
+  <S, A, E, R>(zero: S, f: (s: S, a: A) => STM<S, E, R>): (iterable: Iterable<A>) => STM<S, E, R>
+  <S, A, E, R>(iterable: Iterable<A>, zero: S, f: (s: S, a: A) => STM<S, E, R>): STM<S, E, R>
 }
 ```

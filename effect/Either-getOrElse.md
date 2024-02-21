@@ -29,7 +29,7 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const getOrElse: {
-  <E, B>(onLeft: (e: E) => B): <A>(self: Either<E, A>) => B | A
-  <E, A, B>(self: Either<E, A>, onLeft: (e: E) => B): A | B
+  <L, R2>(onLeft: (left: L) => R2): <R>(self: Either<R, L>) => R2 | R
+  <R, L, R2>(self: Either<R, L>, onLeft: (left: L) => R2): R | R2
 }
 ```

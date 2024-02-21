@@ -19,14 +19,19 @@ import { pop } from "effect/ReadonlyRecord"
 import { some, none } from "effect/Option"
 
 assert.deepStrictEqual(pop({ a: 1, b: 2 }, "a"), some([1, { b: 2 }]))
-assert.deepStrictEqual(pop({ a: 1, b: 2 }, "c"), none())
+assert.deepStrictEqual(pop({ a: 1, b: 2 } as Record<string, number>, "c"), none())
 ```
 
 **Signature**
 
 ```ts
 export declare const pop: {
-  (key: string): <A>(self: ReadonlyRecord<A>) => Option.Option<[A, Record<string, A>]>
-  <A>(self: ReadonlyRecord<A>, key: string): Option.Option<[A, Record<string, A>]>
+  <K extends string | symbol, X extends K>(
+    key: X
+  ): <A>(self: ReadonlyRecord<K, A>) => Option.Option<[A, Record<Exclude<K, X>, A>]>
+  <K extends string | symbol, A, X extends K>(
+    self: ReadonlyRecord<K, A>,
+    key: X
+  ): Option.Option<[A, Record<Exclude<K, X>, A>]>
 }
 ```

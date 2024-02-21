@@ -19,7 +19,7 @@ export declare const provideService: {
     tag: T,
     resource: Context.Tag.Service<T>
   ): <A, E, R>(self: STM<A, E, R>) => STM<A, E, Exclude<R, Context.Tag.Identifier<T>>>
-  <R, E, A, T extends Context.Tag<any, any>>(
+  <A, E, R, T extends Context.Tag<any, any>>(
     self: STM<A, E, R>,
     tag: T,
     resource: Context.Tag.Service<T>

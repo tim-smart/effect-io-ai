@@ -13,5 +13,5 @@ Schedule.identity
 **Signature**
 
 ```ts
-export declare const identity: <A>() => Schedule<never, A, A>
+export declare const identity: <A>() => Schedule<A, A, never>
 ```

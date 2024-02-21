@@ -15,5 +15,5 @@ Schedule.linear
 **Signature**
 
 ```ts
-export declare const linear: (base: Duration.DurationInput) => Schedule<never, unknown, Duration.Duration>
+export declare const linear: (base: Duration.DurationInput) => Schedule<Duration.Duration>
 ```

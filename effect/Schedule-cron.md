@@ -17,5 +17,5 @@ Schedule.cron
 **Signature**
 
 ```ts
-export declare const cron: (expression: string | Cron.Cron) => Schedule<never, unknown, [number, number]>
+export declare const cron: (expression: string | Cron.Cron) => Schedule<[number, number]>
 ```

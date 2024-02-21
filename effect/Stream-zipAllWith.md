@@ -18,13 +18,13 @@ Stream.zipAllWith
 
 ```ts
 export declare const zipAllWith: {
-  <R2, E2, A2, A, A3>(options: {
+  <A2, E2, R2, A, A3>(options: {
     readonly other: Stream<A2, E2, R2>
     readonly onSelf: (a: A) => A3
     readonly onOther: (a2: A2) => A3
     readonly onBoth: (a: A, a2: A2) => A3
-  }): <R, E>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
-  <R, E, R2, E2, A2, A, A3>(
+  }): <E, R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
+  <A, E, R, A2, E2, R2, A3>(
     self: Stream<A, E, R>,
     options: {
       readonly other: Stream<A2, E2, R2>

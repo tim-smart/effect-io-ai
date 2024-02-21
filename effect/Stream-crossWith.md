@@ -18,11 +18,11 @@ Stream.crossWith
 
 ```ts
 export declare const crossWith: {
-  <R2, E2, B, A, C>(
+  <B, E2, R2, A, C>(
     that: Stream<B, E2, R2>,
     f: (a: A, b: B) => C
-  ): <R, E>(self: Stream<A, E, R>) => Stream<C, E2 | E, R2 | R>
-  <R, E, R2, E2, B, A, C>(
+  ): <E, R>(self: Stream<A, E, R>) => Stream<C, E2 | E, R2 | R>
+  <A, E, R, B, E2, R2, C>(
     self: Stream<A, E, R>,
     that: Stream<B, E2, R2>,
     f: (a: A, b: B) => C

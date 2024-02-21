@@ -15,7 +15,7 @@ STM.flatMap
 
 ```ts
 export declare const flatMap: {
-  <A, R1, E1, A2>(f: (a: A) => STM<A2, E1, R1>): <R, E>(self: STM<A, E, R>) => STM<A2, E1 | E, R1 | R>
-  <R, E, A, R1, E1, A2>(self: STM<A, E, R>, f: (a: A) => STM<A2, E1, R1>): STM<A2, E | E1, R | R1>
+  <A, A2, E1, R1>(f: (a: A) => STM<A2, E1, R1>): <E, R>(self: STM<A, E, R>) => STM<A2, E1 | E, R1 | R>
+  <A, E, R, A2, E1, R1>(self: STM<A, E, R>, f: (a: A) => STM<A2, E1, R1>): STM<A2, E | E1, R | R1>
 }
 ```

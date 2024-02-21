@@ -14,7 +14,7 @@ Schedule.collectWhileEffect
 **Signature**
 
 ```ts
-export declare const collectWhileEffect: <Env, A>(
-  f: (a: A) => Effect.Effect<boolean, never, Env>
-) => Schedule<Env, A, Chunk.Chunk<A>>
+export declare const collectWhileEffect: <A, R>(
+  f: (a: A) => Effect.Effect<boolean, never, R>
+) => Schedule<Chunk.Chunk<A>, A, R>
 ```

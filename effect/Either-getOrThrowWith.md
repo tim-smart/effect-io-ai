@@ -28,7 +28,7 @@ assert.throws(() => E.getOrThrowWith(E.left("error"), () => new Error("Unexpecte
 
 ```ts
 export declare const getOrThrowWith: {
-  <E>(onLeft: (e: E) => unknown): <A>(self: Either<E, A>) => A
-  <E, A>(self: Either<E, A>, onLeft: (e: E) => unknown): A
+  <L>(onLeft: (left: L) => unknown): <A>(self: Either<A, L>) => A
+  <R, L>(self: Either<R, L>, onLeft: (left: L) => unknown): R
 }
 ```

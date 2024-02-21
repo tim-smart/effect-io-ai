@@ -22,5 +22,5 @@ assert.deepStrictEqual(isEmptyRecord({ a: 3 }), false)
 **Signature**
 
 ```ts
-export declare const isEmptyRecord: <A>(self: Record<string, A>) => self is Record<string, never>
+export declare const isEmptyRecord: <K extends string, A>(self: Record<K, A>) => self is Record<K, never>
 ```

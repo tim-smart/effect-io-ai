@@ -18,7 +18,7 @@ Stream.combineChunks
 
 ```ts
 export declare const combineChunks: {
-  <R2, E2, A2, S, R3, E, A, R4, R5, A3>(
+  <A2, E2, R2, S, R3, E, A, R4, R5, A3>(
     that: Stream<A2, E2, R2>,
     s: S,
     f: (
@@ -27,7 +27,7 @@ export declare const combineChunks: {
       pullRight: Effect.Effect<Chunk.Chunk<A2>, Option.Option<E2>, R4>
     ) => Effect.Effect<Exit.Exit<readonly [Chunk.Chunk<A3>, S], Option.Option<E2 | E>>, never, R5>
   ): <R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R3 | R4 | R5 | R>
-  <R, R2, E2, A2, S, R3, E, A, R4, R5, A3>(
+  <R, A2, E2, R2, S, R3, E, A, R4, R5, A3>(
     self: Stream<A, E, R>,
     that: Stream<A2, E2, R2>,
     s: S,

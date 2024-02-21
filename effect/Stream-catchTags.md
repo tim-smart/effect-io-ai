@@ -20,7 +20,7 @@ export declare const catchTags: {
     Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
   >(
     cases: Cases
-  ): <R, A>(
+  ): <A, R>(
     self: Stream<A, E, R>
   ) => Stream<
     | A
@@ -43,9 +43,9 @@ export declare const catchTags: {
       }[keyof Cases]
   >
   <
-    R,
-    E extends { _tag: string },
     A,
+    E extends { _tag: string },
+    R,
     Cases extends { [K in E["_tag"]]+?: ((error: Extract<E, { _tag: K }>) => Stream<any, any, any>) | undefined }
   >(
     self: Stream<A, E, R>,

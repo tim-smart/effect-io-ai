@@ -15,12 +15,12 @@ Schedule.mapEffect
 
 ```ts
 export declare const mapEffect: {
-  <Out, Env2, Out2>(
-    f: (out: Out) => Effect.Effect<Out2, never, Env2>
-  ): <Env, In>(self: Schedule<Env, In, Out>) => Schedule<Env2 | Env, In, Out2>
-  <Env, In, Out, Env2, Out2>(
-    self: Schedule<Env, In, Out>,
-    f: (out: Out) => Effect.Effect<Out2, never, Env2>
-  ): Schedule<Env | Env2, In, Out2>
+  <Out, Out2, R2>(
+    f: (out: Out) => Effect.Effect<Out2, never, R2>
+  ): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out2, In, R2 | R>
+  <Out, In, R, Out2, R2>(
+    self: Schedule<Out, In, R>,
+    f: (out: Out) => Effect.Effect<Out2, never, R2>
+  ): Schedule<Out2, In, R | R2>
 }
 ```

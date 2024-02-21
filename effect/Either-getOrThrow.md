@@ -24,5 +24,5 @@ assert.throws(() => E.getOrThrow(E.left("error")))
 **Signature**
 
 ```ts
-export declare const getOrThrow: <E, A>(self: Either<E, A>) => A
+export declare const getOrThrow: <R, L>(self: Either<R, L>) => R
 ```

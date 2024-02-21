@@ -14,7 +14,7 @@ Stream.whenCase
 **Signature**
 
 ```ts
-export declare const whenCase: <A, R, E, A2>(
+export declare const whenCase: <A, A2, E, R>(
   evaluate: LazyArg<A>,
   pf: (a: A) => Option.Option<Stream<A2, E, R>>
 ) => Stream<A2, E, R>

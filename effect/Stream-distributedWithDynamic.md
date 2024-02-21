@@ -19,19 +19,19 @@ Stream.distributedWithDynamic
 
 ```ts
 export declare const distributedWithDynamic: {
-  <E, A, _>(options: {
+  <A>(options: {
     readonly maximumLag: number
-    readonly decide: (a: A) => Effect.Effect<Predicate<number>>
-  }): <R>(
+    readonly decide: (a: A) => Effect.Effect<Predicate<number>, never, never>
+  }): <E, R>(
     self: Stream<A, E, R>
   ) => Effect.Effect<
     Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>,
     never,
     Scope.Scope | R
   >
-  <R, E, A, _>(
+  <A, E, R>(
     self: Stream<A, E, R>,
-    options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<Predicate<number>> }
+    options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<Predicate<number>, never, never> }
   ): Effect.Effect<
     Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>,
     never,

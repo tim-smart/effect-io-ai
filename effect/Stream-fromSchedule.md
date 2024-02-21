@@ -15,5 +15,5 @@ Stream.fromSchedule
 **Signature**
 
 ```ts
-export declare const fromSchedule: <R, A>(schedule: Schedule.Schedule<R, unknown, A>) => Stream<A, never, R>
+export declare const fromSchedule: <A, R>(schedule: Schedule.Schedule<A, unknown, R>) => Stream<A, never, R>
 ```

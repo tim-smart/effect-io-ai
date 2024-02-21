@@ -13,5 +13,5 @@ Layer.effectDiscard
 **Signature**
 
 ```ts
-export declare const effectDiscard: <_, E, R>(effect: Effect.Effect<_, E, R>) => Layer<never, E, R>
+export declare const effectDiscard: <X, E, R>(effect: Effect.Effect<X, E, R>) => Layer<never, E, R>
 ```

@@ -14,7 +14,7 @@ GroupBy.filter
 
 ```ts
 export declare const filter: {
-  <K>(predicate: Predicate<NoInfer<K>>): <R, E, V>(self: GroupBy<R, E, K, V>) => GroupBy<R, E, K, V>
-  <R, E, V, K>(self: GroupBy<R, E, K, V>, predicate: Predicate<K>): GroupBy<R, E, K, V>
+  <K>(predicate: Predicate<NoInfer<K>>): <V, E, R>(self: GroupBy<K, V, E, R>) => GroupBy<K, V, E, R>
+  <K, V, E, R>(self: GroupBy<K, V, E, R>, predicate: Predicate<K>): GroupBy<K, V, E, R>
 }
 ```

@@ -25,7 +25,9 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const mapEntries: {
-  <A>(f: (a: A, key: string) => [string, A]): (self: ReadonlyRecord<A>) => Record<string, A>
-  <A>(self: ReadonlyRecord<A>, f: (a: A, key: string) => [string, A]): Record<string, A>
+  <K extends string, A, K2 extends string, B>(
+    f: (a: A, key: K) => readonly [K2, B]
+  ): (self: ReadonlyRecord<K, A>) => Record<K2, B>
+  <K extends string, A, K2 extends string, B>(self: ReadonlyRecord<K, A>, f: (a: A, key: K) => [K2, B]): Record<K2, B>
 }
 ```

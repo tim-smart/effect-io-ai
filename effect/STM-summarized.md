@@ -16,11 +16,11 @@ STM.summarized
 
 ```ts
 export declare const summarized: {
-  <R2, E2, A2, A3>(
+  <A2, E2, R2, A3>(
     summary: STM<A2, E2, R2>,
     f: (before: A2, after: A2) => A3
   ): <A, E, R>(self: STM<A, E, R>) => STM<[A3, A], E2 | E, R2 | R>
-  <R, E, A, R2, E2, A2, A3>(
+  <A, E, R, A2, E2, R2, A3>(
     self: STM<A, E, R>,
     summary: STM<A2, E2, R2>,
     f: (before: A2, after: A2) => A3

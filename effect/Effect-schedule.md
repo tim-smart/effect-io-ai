@@ -17,7 +17,7 @@ Effect.schedule
 
 ```ts
 export declare const schedule: {
-  <R2, Out>(schedule: Schedule.Schedule<R2, unknown, Out>): <A, E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>
-  <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<R2, unknown, Out>): Effect<Out, E, R | R2>
+  <R2, Out>(schedule: Schedule.Schedule<Out, unknown, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>
+  <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, unknown, R2>): Effect<Out, E, R | R2>
 }
 ```

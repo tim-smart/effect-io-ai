@@ -13,5 +13,5 @@ Schedule.recurUntilEffect
 **Signature**
 
 ```ts
-export declare const recurUntilEffect: <Env, A>(f: (a: A) => Effect.Effect<boolean, never, Env>) => Schedule<Env, A, A>
+export declare const recurUntilEffect: <A, R>(f: (a: A) => Effect.Effect<boolean, never, R>) => Schedule<A, A, R>
 ```

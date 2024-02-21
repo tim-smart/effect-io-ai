@@ -14,12 +14,12 @@ Schedule.makeWithState
 **Signature**
 
 ```ts
-export declare const makeWithState: <S, Env, In, Out>(
+export declare const makeWithState: <S, In, Out, R = never>(
   initial: S,
   step: (
     now: number,
     input: In,
     state: S
-  ) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, Env>
-) => Schedule<Env, In, Out>
+  ) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, R>
+) => Schedule<Out, In, R>
 ```

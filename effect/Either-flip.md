@@ -14,5 +14,5 @@ Either.flip
 **Signature**
 
 ```ts
-export declare const flip: <E, A>(self: Either<E, A>) => Either<A, E>
+export declare const flip: <R, L>(self: Either<R, L>) => Either<L, R>
 ```

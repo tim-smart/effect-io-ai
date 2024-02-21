@@ -13,7 +13,7 @@ Layer.scopedDiscard
 **Signature**
 
 ```ts
-export declare const scopedDiscard: <_, E, R>(
-  effect: Effect.Effect<_, E, R>
+export declare const scopedDiscard: <X, E, R>(
+  effect: Effect.Effect<X, E, R>
 ) => Layer<never, E, Exclude<R, Scope.Scope>>
 ```

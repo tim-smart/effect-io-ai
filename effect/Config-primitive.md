@@ -15,6 +15,6 @@ Config.primitive
 ```ts
 export declare const primitive: <A>(
   description: string,
-  parse: (text: string) => Either.Either<ConfigError.ConfigError, A>
+  parse: (text: string) => Either.Either<A, ConfigError.ConfigError>
 ) => Config<A>
 ```

@@ -14,7 +14,7 @@ Schedule.delayedSchedule
 **Signature**
 
 ```ts
-export declare const delayedSchedule: <Env, In>(
-  schedule: Schedule<Env, In, Duration.Duration>
-) => Schedule<Env, In, Duration.Duration>
+export declare const delayedSchedule: <In, R>(
+  schedule: Schedule<Duration.Duration, In, R>
+) => Schedule<Duration.Duration, In, R>
 ```

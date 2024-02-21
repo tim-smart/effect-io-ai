@@ -13,5 +13,5 @@ ReadonlyRecord.singleton
 **Signature**
 
 ```ts
-export declare const singleton: <K extends string, A>(key: K, value: A) => Record<K, A>
+export declare const singleton: <K extends string | symbol, A>(key: K, value: A) => Record<K, A>
 ```

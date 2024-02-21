@@ -18,7 +18,7 @@ Stream.repeatElements
 
 ```ts
 export declare const repeatElements: {
-  <R2, B>(schedule: Schedule.Schedule<R2, unknown, B>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, E, A, R2, B>(self: Stream<A, E, R>, schedule: Schedule.Schedule<R2, unknown, B>): Stream<A, E, R | R2>
+  <B, R2>(schedule: Schedule.Schedule<B, unknown, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, B, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<B, unknown, R2>): Stream<A, E, R | R2>
 }
 ```

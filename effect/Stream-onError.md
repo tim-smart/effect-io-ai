@@ -18,12 +18,12 @@ Stream.onError
 
 ```ts
 export declare const onError: {
-  <E, R2, _>(
-    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<_, never, R2>
-  ): <R, A>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
-  <R, A, E, R2, _>(
+  <E, X, R2>(
+    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<X, never, R2>
+  ): <A, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>
+  <A, E, R, X, R2>(
     self: Stream<A, E, R>,
-    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<_, never, R2>
+    cleanup: (cause: Cause.Cause<E>) => Effect.Effect<X, never, R2>
   ): Stream<A, E, R | R2>
 }
 ```

@@ -14,11 +14,11 @@ STM.matchSTM
 
 ```ts
 export declare const matchSTM: {
-  <E, R1, E1, A1, A, R2, E2, A2>(options: {
+  <E, A1, E1, R1, A, A2, E2, R2>(options: {
     readonly onFailure: (e: E) => STM<A1, E1, R1>
     readonly onSuccess: (a: A) => STM<A2, E2, R2>
   }): <R>(self: STM<A, E, R>) => STM<A1 | A2, E1 | E2, R1 | R2 | R>
-  <R, E, R1, E1, A1, A, R2, E2, A2>(
+  <A, E, R, A1, E1, R1, A2, E2, R2>(
     self: STM<A, E, R>,
     options: { readonly onFailure: (e: E) => STM<A1, E1, R1>; readonly onSuccess: (a: A) => STM<A2, E2, R2> }
   ): STM<A1 | A2, E1 | E2, R | R1 | R2>

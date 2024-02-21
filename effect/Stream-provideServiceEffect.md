@@ -15,11 +15,11 @@ Stream.provideServiceEffect
 
 ```ts
 export declare const provideServiceEffect: {
-  <T extends Context.Tag<any, any>, R2, E2>(
+  <T extends Context.Tag<any, any>, E2, R2>(
     tag: T,
     effect: Effect.Effect<Context.Tag.Service<T>, E2, R2>
   ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | Exclude<R, Context.Tag.Identifier<T>>>
-  <R, E, A, T extends Context.Tag<any, any>, R2, E2>(
+  <A, E, R, T extends Context.Tag<any, any>, E2, R2>(
     self: Stream<A, E, R>,
     tag: T,
     effect: Effect.Effect<Context.Tag.Service<T>, E2, R2>

@@ -16,14 +16,14 @@ Schedule.provideService
 
 ```ts
 export declare const provideService: {
-  <T, T1 extends T>(
-    tag: any,
-    service: T1
-  ): <Env, In, Out>(self: Schedule<T | Env, In, Out>) => Schedule<Exclude<Env, T>, In, Out>
-  <Env, T, In, Out, T1 extends T>(
-    self: Schedule<Env | T, In, Out>,
-    tag: any,
-    service: T1
-  ): Schedule<Exclude<Env, T>, In, Out>
+  <T extends Context.Tag<any, any>>(
+    tag: T,
+    service: Context.Tag.Service<T>
+  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, Exclude<R, Context.Tag.Identifier<T>>>
+  <Out, In, R, T extends Context.Tag<any, any>>(
+    self: Schedule<Out, In, R>,
+    tag: T,
+    service: Context.Tag.Service<T>
+  ): Schedule<Out, In, Exclude<R, Context.Tag.Identifier<T>>>
 }
 ```

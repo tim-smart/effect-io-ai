@@ -14,7 +14,7 @@ Layer.mapError
 
 ```ts
 export declare const mapError: {
-  <E, E2>(f: (error: E) => E2): <R, A>(self: Layer<A, E, R>) => Layer<A, E2, R>
-  <R, E, A, E2>(self: Layer<A, E, R>, f: (error: E) => E2): Layer<A, E2, R>
+  <E, E2>(f: (error: E) => E2): <A, R>(self: Layer<A, E, R>) => Layer<A, E2, R>
+  <A, E, R, E2>(self: Layer<A, E, R>, f: (error: E) => E2): Layer<A, E2, R>
 }
 ```

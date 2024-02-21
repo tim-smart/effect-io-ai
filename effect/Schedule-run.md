@@ -17,11 +17,7 @@ export declare const run: {
   <In>(
     now: number,
     input: Iterable<In>
-  ): <Env, Out>(self: Schedule<Env, In, Out>) => Effect.Effect<Chunk.Chunk<Out>, never, Env>
-  <Env, In, Out>(
-    self: Schedule<Env, In, Out>,
-    now: number,
-    input: Iterable<In>
-  ): Effect.Effect<Chunk.Chunk<Out>, never, Env>
+  ): <Out, R>(self: Schedule<Out, In, R>) => Effect.Effect<Chunk.Chunk<Out>, never, R>
+  <Out, In, R>(self: Schedule<Out, In, R>, now: number, input: Iterable<In>): Effect.Effect<Chunk.Chunk<Out>, never, R>
 }
 ```

@@ -16,7 +16,7 @@ Effect.asyncEffect
 **Signature**
 
 ```ts
-export declare const asyncEffect: <A, E, R, X, E2, R2>(
-  register: (callback: (_: Effect<A, E, R>) => void) => Effect<X, E2, R2>
-) => Effect<A, E | E2, R | R2>
+export declare const asyncEffect: <A, E, R, R3, E2, R2>(
+  register: (callback: (_: Effect<A, E, R>) => void) => Effect<void | Effect<void, never, R3>, E2, R2>
+) => Effect<A, E | E2, R | R3 | R2>
 ```

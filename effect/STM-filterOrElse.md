@@ -14,20 +14,20 @@ STM.filterOrElse
 
 ```ts
 export declare const filterOrElse: {
-  <A, B extends A, R2, E2, C>(
+  <A, B extends A, C, E2, R2>(
     refinement: Refinement<NoInfer<A>, B>,
     orElse: (a: NoInfer<A>) => STM<C, E2, R2>
-  ): <R, E>(self: STM<A, E, R>) => STM<B | C, E2 | E, R2 | R>
-  <A, R2, E2, B>(
+  ): <E, R>(self: STM<A, E, R>) => STM<B | C, E2 | E, R2 | R>
+  <A, B, E2, R2>(
     predicate: Predicate<NoInfer<A>>,
     orElse: (a: NoInfer<A>) => STM<B, E2, R2>
-  ): <R, E>(self: STM<A, E, R>) => STM<A | B, E2 | E, R2 | R>
-  <R, E, A, B extends A, R2, E2, C>(
+  ): <E, R>(self: STM<A, E, R>) => STM<A | B, E2 | E, R2 | R>
+  <A, E, R, B extends A, C, E2, R2>(
     self: STM<A, E, R>,
     refinement: Refinement<A, B>,
     orElse: (a: A) => STM<C, E2, R2>
   ): STM<B | C, E | E2, R | R2>
-  <R, E, A, R2, E2, B>(
+  <A, E, R, B, E2, R2>(
     self: STM<A, E, R>,
     predicate: Predicate<A>,
     orElse: (a: A) => STM<B, E2, R2>
