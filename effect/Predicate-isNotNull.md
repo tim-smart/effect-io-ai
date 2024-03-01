@@ -1,6 +1,6 @@
 # isNotNull
 
-Tests if a value is not `undefined`.
+Tests if a value is not `null`.
 
 To import and use `isNotNull` from the "Predicate" module:
 

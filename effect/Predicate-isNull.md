@@ -1,6 +1,6 @@
 # isNull
 
-Tests if a value is `undefined`.
+Tests if a value is `null`.
 
 To import and use `isNull` from the "Predicate" module:
 
