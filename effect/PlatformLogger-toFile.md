@@ -17,7 +17,7 @@ import { PlatformLogger } from "@effect/platform"
 import { NodeFileSystem, NodeRuntime } from "@effect/platform-node"
 import { Effect, Layer, Logger } from "effect"
 
-const fileLogger = Logger.logfmtLogger.pipe(PlatformLogger.toFile("log.txt"))
+const fileLogger = Logger.logfmtLogger.pipe(PlatformLogger.toFile("/tmp/log.txt"))
 const LoggerLive = Logger.replaceScoped(Logger.defaultLogger, fileLogger).pipe(Layer.provide(NodeFileSystem.layer))
 
 Effect.log("a").pipe(
