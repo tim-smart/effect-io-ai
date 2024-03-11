@@ -51,7 +51,7 @@ export declare const andThen: {
       ? Effect<A1, Cause.UnknownException | E, R>
       : Effect<X, E, R>
   <X>(
-    f: X
+    f: NotFunction<X>
   ): <A, E, R>(
     self: Effect<A, E, R>
   ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
@@ -69,7 +69,7 @@ export declare const andThen: {
       : Effect<X, E, R>
   <A, E, R, X>(
     self: Effect<A, E, R>,
-    f: X
+    f: NotFunction<X>
   ): [X] extends [Effect<infer A1, infer E1, infer R1>]
     ? Effect<A1, E | E1, R | R1>
     : [X] extends [Promise<infer A1>]
