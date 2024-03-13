@@ -17,5 +17,5 @@ Schema.NumberFromString
 **Signature**
 
 ```ts
-export declare const NumberFromString: Schema<number, string, never>
+export declare const NumberFromString: NumberFromString
 ```

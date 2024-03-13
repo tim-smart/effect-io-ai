@@ -14,5 +14,8 @@ Effect.runPromiseExit
 **Signature**
 
 ```ts
-export declare const runPromiseExit: <A, E>(effect: Effect<A, E, never>) => Promise<Exit.Exit<A, E>>
+export declare const runPromiseExit: <A, E>(
+  effect: Effect<A, E, never>,
+  options?: { readonly signal?: AbortSignal } | undefined
+) => Promise<Exit.Exit<A, E>>
 ```

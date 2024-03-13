@@ -20,12 +20,12 @@ Effect.tryMapPromise
 ```ts
 export declare const tryMapPromise: {
   <A, B, E1>(options: {
-    readonly try: (a: A, signal: AbortSignal) => Promise<B>
+    readonly try: (a: A, signal: AbortSignal) => PromiseLike<B>
     readonly catch: (error: unknown) => E1
   }): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R>
   <A, E, R, B, E1>(
     self: Effect<A, E, R>,
-    options: { readonly try: (a: A, signal: AbortSignal) => Promise<B>; readonly catch: (error: unknown) => E1 }
+    options: { readonly try: (a: A, signal: AbortSignal) => PromiseLike<B>; readonly catch: (error: unknown) => E1 }
   ): Effect<B, E | E1, R>
 }
 ```

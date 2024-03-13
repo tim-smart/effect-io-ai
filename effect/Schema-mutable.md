@@ -13,7 +13,5 @@ Schema.mutable
 **Signature**
 
 ```ts
-export declare const mutable: <A, I, R>(
-  schema: Schema<A, I, R>
-) => Schema<Simplify<Mutable<A>>, Simplify<Mutable<I>>, R>
+export declare const mutable: <S extends Schema.Any>(schema: S) => mutable<S>
 ```

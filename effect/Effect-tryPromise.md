@@ -19,9 +19,9 @@ Effect.tryPromise
 ```ts
 export declare const tryPromise: {
   <A, E>(options: {
-    readonly try: (signal: AbortSignal) => Promise<A>
+    readonly try: (signal: AbortSignal) => PromiseLike<A>
     readonly catch: (error: unknown) => E
   }): Effect<A, E, never>
-  <A>(try_: (signal: AbortSignal) => Promise<A>): Effect<A, Cause.UnknownException, never>
+  <A>(try_: (signal: AbortSignal) => PromiseLike<A>): Effect<A, Cause.UnknownException, never>
 }
 ```

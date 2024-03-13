@@ -13,5 +13,5 @@ Schema.Uppercase
 **Signature**
 
 ```ts
-export declare const Uppercase: Schema<string, string, never>
+export declare const Uppercase: Uppercase
 ```

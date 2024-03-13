@@ -15,29 +15,29 @@ Schema.transform
 
 ```ts
 export declare const transform: {
-  <ToA, ToI, ToR, FromA>(
-    to: Schema<ToA, ToI, ToR>,
-    decode: (fromA: FromA) => ToI,
-    encode: (toI: ToI) => FromA
-  ): <FromI, FromR>(from: Schema<FromA, FromI, FromR>) => Schema<ToA, FromI, ToR | FromR>
-  <ToA, ToI, ToR, FromA>(
-    to: Schema<ToA, ToI, ToR>,
-    decode: (fromA: FromA) => unknown,
-    encode: (toI: ToI) => unknown,
+  <To extends Schema.Any, From extends Schema.Any>(
+    to: To,
+    decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>,
+    encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
+  ): (from: From) => transform<From, To>
+  <To extends Schema.Any, From extends Schema.Any>(
+    to: To,
+    decode: (fromA: Schema.Type<From>) => unknown,
+    encode: (toI: Schema.Encoded<To>) => unknown,
     options: { strict: false }
-  ): <FromI, FromR>(from: Schema<FromA, FromI, FromR>) => Schema<ToA, FromI, ToR | FromR>
-  <FromA, FromI, FromR, ToA, ToI, ToR>(
-    from: Schema<FromA, FromI, FromR>,
-    to: Schema<ToA, ToI, ToR>,
-    decode: (fromA: FromA) => ToI,
-    encode: (toI: ToI) => FromA
-  ): Schema<ToA, FromI, FromR | ToR>
-  <FromA, FromI, FromR, ToA, ToI, ToR>(
-    from: Schema<FromA, FromI, FromR>,
-    to: Schema<ToA, ToI, ToR>,
-    decode: (fromA: FromA) => unknown,
-    encode: (toI: ToI) => unknown,
+  ): (from: From) => transform<From, To>
+  <To extends Schema.Any, From extends Schema.Any>(
+    from: From,
+    to: To,
+    decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>,
+    encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
+  ): transform<From, To>
+  <To extends Schema.Any, From extends Schema.Any>(
+    from: From,
+    to: To,
+    decode: (fromA: Schema.Type<From>) => unknown,
+    encode: (toI: Schema.Encoded<To>) => unknown,
     options: { strict: false }
-  ): Schema<ToA, FromI, FromR | ToR>
+  ): transform<From, To>
 }
 ```

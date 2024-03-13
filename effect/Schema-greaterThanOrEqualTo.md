@@ -15,6 +15,6 @@ Schema.greaterThanOrEqualTo
 ```ts
 export declare const greaterThanOrEqualTo: <A extends number>(
   min: number,
-  options?: FilterAnnotations<A> | undefined
+  annotations?: Annotations.Filter<A> | undefined
 ) => <I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

@@ -14,6 +14,6 @@ Schema.uppercased
 
 ```ts
 export declare const uppercased: <A extends string>(
-  options?: FilterAnnotations<A> | undefined
+  annotations?: Annotations.Filter<A> | undefined
 ) => <I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

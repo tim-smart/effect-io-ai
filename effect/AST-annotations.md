@@ -1,17 +1,17 @@
-# mergeAnnotations
+# annotations
 
 Adds a group of annotations, potentially overwriting existing annotations.
 
-To import and use `mergeAnnotations` from the "AST" module:
+To import and use `annotations` from the "AST" module:
 
 ```ts
 import * as AST from "@effect/schema/AST"
 // Can be accessed like this
-AST.mergeAnnotations
+AST.annotations
 ```
 
 **Signature**
 
 ```ts
-export declare const mergeAnnotations: (ast: AST, annotations: Annotations) => AST
+export declare const annotations: (ast: AST, annotations: Annotations) => AST
 ```

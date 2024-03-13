@@ -18,5 +18,7 @@ Runtime.runPromise
 **Signature**
 
 ```ts
-export declare const runPromise: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => Promise<A>
+export declare const runPromise: <R>(
+  runtime: Runtime<R>
+) => <A, E>(effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal } | undefined) => Promise<A>
 ```

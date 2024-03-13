@@ -1,6 +1,6 @@
 # Forbidden
 
-The `Forbidden` variant of the `ParseIssue` type represents an error that occurs when an Effect is encounter but disallowed from execution.
+The `Forbidden` variant of the `ParseIssue` type represents a forbidden operation, such as when encountering an Effect that is not allowed to execute (e.g., using `runSync`).
 
 To import and use `Forbidden` from the "ParseResult" module:
 

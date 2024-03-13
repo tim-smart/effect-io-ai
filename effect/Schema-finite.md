@@ -16,6 +16,6 @@ Schema.finite
 
 ```ts
 export declare const finite: <A extends number>(
-  options?: FilterAnnotations<A> | undefined
+  annotations?: Annotations.Filter<A> | undefined
 ) => <I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```

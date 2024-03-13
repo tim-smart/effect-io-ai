@@ -14,6 +14,6 @@ Schema.validDate
 
 ```ts
 export declare const validDate: (
-  options?: FilterAnnotations<Date>
+  annotations?: Annotations.Filter<Date>
 ) => <I, R>(self: Schema<Date, I, R>) => Schema<Date, I, R>
 ```

@@ -26,7 +26,7 @@ assert.strictEqual(Either.isLeft(S.decodeUnknownEither(schema)("c")), true)
 **Signature**
 
 ```ts
-export declare const pickLiteral: <A extends AST.LiteralValue, L extends readonly A[]>(
+export declare const pickLiteral: <A extends AST.LiteralValue, L extends readonly [A, ...A[]]>(
   ...literals: L
-) => <I, R>(_schema: Schema<A, I, R>) => Schema<L[number], L[number], never>
+) => <I, R>(_schema: Schema<A, I, R>) => literal<[...L]>
 ```

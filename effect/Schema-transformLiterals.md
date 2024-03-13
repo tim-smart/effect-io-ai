@@ -23,9 +23,13 @@ assert.deepStrictEqual(S.decodeSync(Animal)(1), "dog")
 **Signature**
 
 ```ts
-export declare const transformLiterals: <
-  const A extends readonly (readonly [from: AST.LiteralValue, to: AST.LiteralValue])[]
->(
-  ...pairs: A
-) => Schema<A[number][1], A[number][0], never>
+export declare function transformLiterals<
+  const A extends AST.Members<readonly [from: AST.LiteralValue, to: AST.LiteralValue]>
+>(...pairs: A): union<{ -readonly [I in keyof A]: transformLiteral<A[I][1], A[I][0]> }>
+export declare function transformLiterals<Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(
+  pairs: [Encoded, Type]
+): transformLiteral<Type, Encoded>
+export declare function transformLiterals<
+  const A extends ReadonlyArray<readonly [from: AST.LiteralValue, to: AST.LiteralValue]>
+>(...pairs: A): Schema<A[number][1], A[number][0]>
 ```

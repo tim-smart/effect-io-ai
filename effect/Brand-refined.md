@@ -33,8 +33,11 @@ assert.throws(() => Int(1.1))
 **Signature**
 
 ```ts
-export declare const refined: <A extends Brand<any>>(
+export declare function refined<A extends Brand<any>>(
+  f: (unbranded: Brand.Unbranded<A>) => Option.Option<Brand.BrandErrors>
+): Brand.Constructor<A>
+export declare function refined<A extends Brand<any>>(
   refinement: Predicate<Brand.Unbranded<A>>,
-  onFailure: (a: Brand.Unbranded<A>) => Brand.BrandErrors
-) => Brand.Constructor<A>
+  onFailure: (unbranded: Brand.Unbranded<A>) => Brand.BrandErrors
+): Brand.Constructor<A>
 ```

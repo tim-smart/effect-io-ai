@@ -16,5 +16,5 @@ Effect.promise
 **Signature**
 
 ```ts
-export declare const promise: <A>(evaluate: (signal: AbortSignal) => Promise<A>) => Effect<A, never, never>
+export declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A, never, never>
 ```

@@ -20,14 +20,14 @@ Schema.brand
 import * as Schema from "@effect/schema/Schema"
 
 const Int = Schema.number.pipe(Schema.int(), Schema.brand("Int"))
-type Int = Schema.Schema.To<typeof Int> // number & Brand<"Int">
+type Int = Schema.Schema.Type<typeof Int> // number & Brand<"Int">
 ```
 
 **Signature**
 
 ```ts
-export declare const brand: <B extends string | symbol, A>(
+export declare const brand: <S extends Schema.AnyNoContext, B extends string | symbol>(
   brand: B,
-  options?: DocAnnotations
-) => <I>(self: Schema<A, I, never>) => BrandSchema<A & Brand.Brand<B>, I, never>
+  annotations?: Annotations.Schema<Schema.Type<S> & Brand.Brand<B>, readonly []> | undefined
+) => (self: S) => brand<S, B>
 ```

@@ -15,5 +15,5 @@ Schema.bigint
 **Signature**
 
 ```ts
-export declare const bigint: Schema<bigint, string, never>
+export declare const bigint: $bigint
 ```

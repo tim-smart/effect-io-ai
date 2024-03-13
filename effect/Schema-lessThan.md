@@ -15,6 +15,6 @@ Schema.lessThan
 ```ts
 export declare const lessThan: <A extends number>(
   max: number,
-  options?: FilterAnnotations<A> | undefined
+  annotations?: Annotations.Filter<A> | undefined
 ) => <I, R>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```
