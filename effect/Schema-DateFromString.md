@@ -13,5 +13,5 @@ Schema.DateFromString
 **Signature**
 
 ```ts
-export declare const DateFromString: Schema<Date, string, never>
+export declare const DateFromString: DateFromString
 ```

@@ -13,5 +13,5 @@ AST.omit
 **Signature**
 
 ```ts
-export declare const omit: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral
+export declare const omit: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```

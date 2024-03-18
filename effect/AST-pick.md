@@ -13,5 +13,5 @@ AST.pick
 **Signature**
 
 ```ts
-export declare const pick: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral
+export declare const pick: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```
