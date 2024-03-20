@@ -13,12 +13,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.Simplify
 ```
-
-**Example**
-
-```ts
-import type { Simplify } from "effect/Types"
-
-// $ExpectType { readonly [x: string]: number; }
-type Test = Simplify<{ readonly [x: string]: number }>
-```

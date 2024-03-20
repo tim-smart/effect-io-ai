@@ -38,25 +38,13 @@ export declare const attachPropertySignature: {
   <K extends PropertyKey, V extends symbol | AST.LiteralValue, A extends object>(
     key: K,
     value: V,
-    annotations?:
-      | Annotations.Schema<
-          { readonly [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] },
-          readonly []
-        >
-      | undefined
-  ): <I, R>(
-    schema: Schema<A, I, R>
-  ) => Schema<{ readonly [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] }, I, R>
+    annotations?: Annotations.Schema<Types.Simplify<A & { readonly [k in K]: V }>, readonly []> | undefined
+  ): <I, R>(schema: Schema<A, I, R>) => Schema<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
   <A, I, R, K extends PropertyKey, V extends symbol | AST.LiteralValue>(
     schema: Schema<A, I, R>,
     key: K,
     value: V,
-    annotations?:
-      | Annotations.Schema<
-          { readonly [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] },
-          readonly []
-        >
-      | undefined
-  ): Schema<{ readonly [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] }, I, R>
+    annotations?: Annotations.Schema<Types.Simplify<A & { readonly [k in K]: V }>, readonly []> | undefined
+  ): Schema<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
 }
 ```

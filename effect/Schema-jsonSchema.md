@@ -17,5 +17,5 @@ Schema.jsonSchema
 ```ts
 export declare const jsonSchema: (
   jsonSchema: AST.JSONSchemaAnnotation
-) => <S extends Annotable.Any>(self: S) => ReturnType<S["annotations"]>
+) => <S extends Annotable.All>(self: S) => ReturnType<S["annotations"]>
 ```
