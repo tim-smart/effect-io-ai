@@ -1,19 +1,19 @@
-# appendAll
+# setAllCookie
 
 Add multiple cookies to a Cookies object
 
-To import and use `appendAll` from the "Cookies" module:
+To import and use `setAllCookie` from the "Cookies" module:
 
 ```ts
 import * as Cookies from "@effect/platform/Http/Cookies"
 // Can be accessed like this
-Cookies.appendAll
+Cookies.setAllCookie
 ```
 
 **Signature**
 
 ```ts
-export declare const appendAll: {
+export declare const setAllCookie: {
   (cookies: Iterable<Cookie>): (self: Cookies) => Cookies
   (self: Cookies, cookies: Iterable<Cookie>): Cookies
 }
