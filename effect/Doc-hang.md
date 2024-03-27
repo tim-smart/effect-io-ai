@@ -20,14 +20,16 @@ Doc.hang
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
 const doc = Doc.hsep([Doc.text("prefix"), pipe(Doc.reflow("Indenting these words with hang"), Doc.hang(4))])
 
 assert.strictEqual(
-  Render.pretty(doc, { lineWidth: 24 }),
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 24 }
+  }),
   String.stripMargin(
     `|prefix Indenting these
      |           words with

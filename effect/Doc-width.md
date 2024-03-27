@@ -15,7 +15,6 @@ Doc.width
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -35,7 +34,7 @@ const docs = [
 const doc = Doc.align(Doc.vsep(docs.map(annotate)))
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|[---] <- width: 5
      |[------] <- width: 8

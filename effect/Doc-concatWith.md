@@ -15,7 +15,6 @@ Doc.concatWith
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 
 const doc: Doc.Doc<never> = pipe(
@@ -23,7 +22,7 @@ const doc: Doc.Doc<never> = pipe(
   Doc.concatWith((x, y) => Doc.catWithSpace(y)(x))
 )
 
-assert.strictEqual(Render.prettyDefault(doc), "a b")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "a b")
 ```
 
 **Signature**

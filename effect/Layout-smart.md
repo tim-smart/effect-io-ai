@@ -19,7 +19,6 @@ import * as Doc from "@effect/printer/Doc"
 import type * as DocStream from "@effect/printer/DocStream"
 import * as Layout from "@effect/printer/Layout"
 import * as PageWidth from "@effect/printer/PageWidth"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -41,7 +40,7 @@ const hr = Doc.hcat([Doc.vbar, dashes, Doc.vbar])
 const render =
   <A>(doc: Doc.Doc<A>) =>
   (layoutAlgorithm: (options: Layout.Layout.Options) => (doc: Doc.Doc<A>) => DocStream.DocStream<A>): string =>
-    pipe(Doc.vsep([hr, doc, hr]), layoutAlgorithm(layoutOptions), Render.render)
+    pipe(Doc.vsep([hr, doc, hr]), layoutAlgorithm(layoutOptions), Doc.renderStream)
 
 // If rendered using `Layout.pretty`, with a page width of `26` characters per line,
 // all the calls to `fun` will fit into the first line. However, this exceeds the

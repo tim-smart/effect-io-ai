@@ -18,13 +18,12 @@ Doc.vcat
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = Doc.vcat(Doc.words("lorem ipsum dolor"))
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|lorem
      |ipsum

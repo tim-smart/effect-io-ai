@@ -17,16 +17,18 @@ Doc.seps
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = Doc.hsep([Doc.text("prefix"), Doc.seps(Doc.words("text to lay out"))])
 
-assert.strictEqual(Render.prettyDefault(doc), "prefix text to lay out")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "prefix text to lay out")
 
 // If the page width is too narrow, documents are separated by newlines
 assert.strictEqual(
-  Render.pretty(doc, { lineWidth: 20 }),
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 20 }
+  }),
   String.stripMargin(
     `|prefix text
      |to

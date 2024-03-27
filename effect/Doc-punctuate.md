@@ -17,18 +17,17 @@ Doc.punctuate
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
 const docs = pipe(Doc.words("lorem ipsum dolor sit amet"), Doc.punctuate(Doc.comma))
 
-assert.strictEqual(Render.prettyDefault(Doc.hsep(docs)), "lorem, ipsum, dolor, sit, amet")
+assert.strictEqual(Doc.render(Doc.hsep(docs), { style: "pretty" }), "lorem, ipsum, dolor, sit, amet")
 
 // The separators are put at the end of the entries, which can be better
 // visualzied if the documents are rendered vertically
 assert.strictEqual(
-  Render.prettyDefault(Doc.vsep(docs)),
+  Doc.render(Doc.vsep(docs), { style: "pretty" }),
   String.stripMargin(
     `|lorem,
      |ipsum,

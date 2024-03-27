@@ -15,12 +15,11 @@ Doc.catWithSpace
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 
 const doc: Doc.Doc<never> = pipe(Doc.char("a"), Doc.catWithSpace(Doc.char("b")))
 
-assert.strictEqual(Render.prettyDefault(doc), "a b")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "a b")
 ```
 
 **Signature**

@@ -14,13 +14,12 @@ Doc.column
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 // Example 1:
 const example1 = Doc.column((l) => Doc.hsep([Doc.text("Columns are"), Doc.text(`${l}-based`)]))
 
-assert.strictEqual(Render.prettyDefault(example1), "Columns are 0-based")
+assert.strictEqual(Doc.render(example1, { style: "pretty" }), "Columns are 0-based")
 
 // Example 2:
 const doc = Doc.hsep([Doc.text("prefix"), Doc.column((l) => Doc.text(`| <- column ${l}`))])
@@ -28,7 +27,7 @@ const doc = Doc.hsep([Doc.text("prefix"), Doc.column((l) => Doc.text(`| <- colum
 const example2 = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))
 
 assert.strictEqual(
-  Render.prettyDefault(example2),
+  Doc.render(example2, { style: "pretty" }),
   String.stripMargin(
     `|prefix | <- column 7
      |    prefix | <- column 11

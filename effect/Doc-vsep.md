@@ -20,13 +20,12 @@ Doc.vsep
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const unaligned = Doc.hsep([Doc.text("prefix"), Doc.vsep(Doc.words("text to lay out"))])
 
 assert.strictEqual(
-  Render.prettyDefault(unaligned),
+  Doc.render(unaligned, { style: "pretty" }),
   String.stripMargin(
     `|prefix text
      |to
@@ -40,7 +39,7 @@ assert.strictEqual(
 const aligned = Doc.hsep([Doc.text("prefix"), Doc.align(Doc.vsep(Doc.words("text to lay out")))])
 
 assert.strictEqual(
-  Render.prettyDefault(aligned),
+  Doc.render(aligned, { style: "pretty" }),
   String.stripMargin(
     `|prefix text
      |       to

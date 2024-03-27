@@ -15,7 +15,6 @@ Doc.align
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 // As an example, the documents below will be placed one above the other
@@ -26,7 +25,7 @@ import * as String from "effect/String"
 const unaligned = Doc.hsep([Doc.text("lorem"), Doc.vsep([Doc.text("ipsum"), Doc.text("dolor")])])
 
 assert.strictEqual(
-  Render.prettyDefault(unaligned),
+  Doc.render(unaligned, { style: "pretty" }),
   String.stripMargin(
     `|lorem ipsum
      |dolor`
@@ -37,7 +36,7 @@ assert.strictEqual(
 const aligned = Doc.hsep([Doc.text("lorem"), Doc.align(Doc.vsep([Doc.text("ipsum"), Doc.text("dolor")]))])
 
 assert.strictEqual(
-  Render.prettyDefault(aligned),
+  Doc.render(aligned, { style: "pretty" }),
   String.stripMargin(
     `|lorem ipsum
      |      dolor`

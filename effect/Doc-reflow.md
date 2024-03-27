@@ -17,7 +17,6 @@ Doc.reflow
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc = Doc.reflow(
@@ -26,7 +25,10 @@ const doc = Doc.reflow(
 )
 
 assert.strictEqual(
-  Render.pretty(doc, { lineWidth: 32 }),
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 32 }
+  }),
   String.stripMargin(
     `|Lorem ipsum dolor sit amet,
      |consectetur adipisicing elit,

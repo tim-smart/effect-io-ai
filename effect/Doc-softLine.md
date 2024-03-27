@@ -15,18 +15,26 @@ Doc.softLine
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = Doc.hcat([Doc.text("lorem ipsum"), Doc.softLine, Doc.text("dolor sit amet")])
 
 // Here we have enough space to put everything onto one line
-assert.strictEqual(Render.pretty(doc, { lineWidth: 80 }), "lorem ipsum dolor sit amet")
+assert.strictEqual(
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 80 }
+  }),
+  "lorem ipsum dolor sit amet"
+)
 
 // If the page width is narrowed to `10`, the layout algorithm will
 // introduce a line break
 assert.strictEqual(
-  Render.pretty(Doc.group(doc), { lineWidth: 10 }),
+  Doc.render(Doc.group(doc), {
+    style: "pretty",
+    options: { lineWidth: 10 }
+  }),
   String.stripMargin(
     `|lorem ipsum
      |dolor sit amet`

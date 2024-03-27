@@ -15,7 +15,6 @@ Doc.nesting
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc = Doc.hsep([Doc.text("prefix"), Doc.nesting((l) => Doc.squareBracketed(Doc.text(`Nested: ${l}`)))])
@@ -23,7 +22,7 @@ const doc = Doc.hsep([Doc.text("prefix"), Doc.nesting((l) => Doc.squareBracketed
 const example = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))
 
 assert.strictEqual(
-  Render.prettyDefault(example),
+  Doc.render(example, { style: "pretty" }),
   String.stripMargin(
     `|prefix [Nested: 0]
      |    prefix [Nested: 4]

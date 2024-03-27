@@ -26,14 +26,13 @@ Doc.nest
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
 const doc = Doc.vsep([pipe(Doc.vsep(Doc.words("lorem ipsum dolor")), Doc.nest(4)), Doc.text("sit"), Doc.text("amet")])
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|lorem
      |    ipsum

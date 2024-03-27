@@ -15,12 +15,11 @@ Doc.hcat
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = Doc.hcat(Doc.words("lorem ipsum dolor"))
 
-assert.strictEqual(Render.prettyDefault(doc), "loremipsumdolor")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "loremipsumdolor")
 ```
 
 **Signature**

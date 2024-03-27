@@ -19,7 +19,6 @@ Doc.empty
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc = Doc.vsep([
@@ -33,7 +32,7 @@ const expected = `|hello
                   |()
                   |world`
 
-assert.strictEqual(Render.prettyDefault(doc), String.stripMargin(expected))
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), String.stripMargin(expected))
 ```
 
 **Signature**

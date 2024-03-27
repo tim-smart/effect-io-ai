@@ -14,7 +14,6 @@ Doc.pageWidth
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc = Doc.hsep([
@@ -35,7 +34,10 @@ const doc = Doc.hsep([
 const example = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))
 
 assert.strictEqual(
-  Render.pretty(example, { lineWidth: 32 }),
+  Doc.render(example, {
+    style: "pretty",
+    options: { lineWidth: 32 }
+  }),
   String.stripMargin(
     `|prefix [Width: 32, Ribbon Fraction: 1]
      |    prefix [Width: 32, Ribbon Fraction: 1]

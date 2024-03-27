@@ -15,11 +15,10 @@ Doc.spaces
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 
 const doc = Doc.squareBracketed(Doc.doubleQuoted(Doc.spaces(5)))
 
-assert.strictEqual(Render.prettyDefault(doc), '["     "]')
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), '["     "]')
 ```
 
 **Signature**

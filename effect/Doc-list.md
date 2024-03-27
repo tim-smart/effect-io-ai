@@ -15,11 +15,10 @@ Doc.list
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 
 const doc = Doc.list(["1", "20", "300", "4000"].map((n) => (n.length === 1 ? Doc.char(n) : Doc.text(n))))
 
-assert.strictEqual(Render.prettyDefault(doc), "[1, 20, 300, 4000]")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "[1, 20, 300, 4000]")
 ```
 
 **Signature**

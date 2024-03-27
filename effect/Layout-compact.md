@@ -19,7 +19,6 @@ Layout.compact
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -29,7 +28,7 @@ const doc = pipe(
 )
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|lorem
      |    ipsum
@@ -39,7 +38,7 @@ assert.strictEqual(
 )
 
 assert.strictEqual(
-  Render.compact(doc),
+  Doc.render(doc, { style: "compact" }),
   String.stripMargin(
     `|lorem
      |ipsum

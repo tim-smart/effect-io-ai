@@ -15,14 +15,13 @@ Doc.catWithLine
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = pipe(Doc.char("a"), Doc.catWithLine(Doc.char("b")))
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|a
      |b`

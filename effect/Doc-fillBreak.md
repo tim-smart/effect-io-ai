@@ -17,7 +17,6 @@ Doc.fillBreak
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -35,7 +34,7 @@ const prettySignature = <A>([name, type]: Signature): Doc.Doc<A> =>
 const doc = Doc.hsep([Doc.text("let"), Doc.align(Doc.vcat(signatures.map(prettySignature)))])
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|let empty :: Doc
      |    nest  :: Int -> Doc -> Doc

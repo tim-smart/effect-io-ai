@@ -20,7 +20,6 @@ Doc.encloseSep
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -35,11 +34,14 @@ const doc = Doc.hsep([
 ])
 
 // The documents are laid out horizontally if the document fits the page
-assert.strictEqual(Render.prettyDefault(doc), "list [1,20,300,4000]")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "list [1,20,300,4000]")
 
 // Otherwise they are laid out vertically, with separators put in the front
 assert.strictEqual(
-  Render.pretty(doc, { lineWidth: 10 }),
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 10 }
+  }),
   String.stripMargin(
     `|list [1
      |     ,20

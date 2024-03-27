@@ -16,19 +16,18 @@ Doc.line
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = Doc.hcat([Doc.text("lorem ipsum"), Doc.line, Doc.text("dolor sit amet")])
 
 assert.strictEqual(
-  Render.prettyDefault(doc),
+  Doc.render(doc, { style: "pretty" }),
   String.stripMargin(
     `|lorem ipsum
      |dolor sit amet`
   )
 )
-assert.strictEqual(Render.prettyDefault(Doc.group(doc)), "lorem ipsum dolor sit amet")
+assert.strictEqual(Doc.render(Doc.group(doc), { style: "pretty" }), "lorem ipsum dolor sit amet")
 ```
 
 **Signature**

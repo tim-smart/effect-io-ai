@@ -15,11 +15,10 @@ Doc.words
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 
 const doc = Doc.tupled(Doc.words("lorem ipsum dolor"))
 
-assert.strictEqual(Render.prettyDefault(doc), "(lorem, ipsum, dolor)")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "(lorem, ipsum, dolor)")
 ```
 
 **Signature**

@@ -21,7 +21,6 @@ Doc.flatAlt
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
@@ -41,13 +40,25 @@ const statements = [
 
 // If it fits, then the content is put onto a single line with the `{;}` style
 assert.strictEqual(
-  pipe(prettyDo(statements), Render.pretty({ lineWidth: 80 })),
+  pipe(
+    prettyDo(statements),
+    Doc.render({
+      style: "pretty",
+      options: { lineWidth: 80 }
+    })
+  ),
   'do { name:_ <- getArgs; let greet = "Hello, " <> name; putStrLn greet }'
 )
 
 // When there is not enough space, the content is broken up onto multiple lines
 assert.strictEqual(
-  pipe(prettyDo(statements), Render.pretty({ lineWidth: 10 })),
+  pipe(
+    prettyDo(statements),
+    Doc.render({
+      style: "pretty",
+      options: { lineWidth: 10 }
+    })
+  ),
   String.stripMargin(
     `|do name:_ <- getArgs
      |   let greet = "Hello, " <> name

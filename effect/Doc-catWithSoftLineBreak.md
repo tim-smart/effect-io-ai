@@ -15,16 +15,18 @@ Doc.catWithSoftLineBreak
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
 
 const doc: Doc.Doc<never> = pipe(Doc.char("a"), Doc.catWithSoftLineBreak(Doc.char("b")))
 
-assert.strictEqual(Render.prettyDefault(doc), "ab")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "ab")
 
 assert.strictEqual(
-  Render.pretty(doc, { lineWidth: 1 }),
+  Doc.render(doc, {
+    style: "pretty",
+    options: { lineWidth: 1 }
+  }),
   String.stripMargin(
     `|a
      |b`

@@ -15,12 +15,11 @@ Doc.surround
 
 ```ts
 import * as Doc from "@effect/printer/Doc"
-import * as Render from "@effect/printer/Render"
 import { pipe } from "effect/Function"
 
 const doc = pipe(Doc.char("-"), Doc.surround(Doc.char("A"), Doc.char("Z")))
 
-assert.strictEqual(Render.prettyDefault(doc), "A-Z")
+assert.strictEqual(Doc.render(doc, { style: "pretty" }), "A-Z")
 ```
 
 **Signature**
