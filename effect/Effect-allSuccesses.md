@@ -14,10 +14,10 @@ Effect.allSuccesses
 **Signature**
 
 ```ts
-export declare const allSuccesses: <A, E, R>(
-  elements: Iterable<Effect<A, E, R>>,
+export declare const allSuccesses: <X extends Effect<any, any, any>>(
+  elements: Iterable<X>,
   options?:
     | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
     | undefined
-) => Effect<A[], never, R>
+) => Effect<Effect.Success<X>[], never, Effect.Context<X>>
 ```

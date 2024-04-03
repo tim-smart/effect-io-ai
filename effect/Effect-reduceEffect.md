@@ -14,16 +14,20 @@ Effect.reduceEffect
 
 ```ts
 export declare const reduceEffect: {
-  <A, E, R>(
-    zero: Effect<A, E, R>,
-    f: (acc: NoInfer<A>, a: NoInfer<A>, i: number) => A,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): (elements: Iterable<Effect<A, E, R>>) => Effect<A, E, R>
-  <A, E, R>(
-    elements: Iterable<Effect<A, E, R>>,
-    zero: Effect<A, E, R>,
-    f: (acc: NoInfer<A>, a: NoInfer<A>, i: number) => A,
-    options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<A, E, R>
+  <Z, E, R, Eff extends Effect<any, any, any>>(
+    zero: Effect<Z, E, R>,
+    f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
+  <Eff extends Effect<any, any, any>, Z, E, R>(
+    elements: Iterable<Eff>,
+    zero: Effect<Z, E, R>,
+    f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
+    options?:
+      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | undefined
+  ): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
 }
 ```

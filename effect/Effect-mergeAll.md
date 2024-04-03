@@ -15,20 +15,20 @@ Effect.mergeAll
 
 ```ts
 export declare const mergeAll: {
-  <Z, A>(
+  <Z, Eff extends Effect<any, any, any>>(
     zero: Z,
-    f: (z: Z, a: A, i: number) => Z,
+    f: (z: Z, a: Effect.Success<Eff>, i: number) => Z,
     options?:
       | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
       | undefined
-  ): <E, R>(elements: Iterable<Effect<A, E, R>>) => Effect<Z, E, R>
-  <A, E, R, Z>(
-    elements: Iterable<Effect<A, E, R>>,
+  ): (elements: Iterable<Eff>) => Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>
+  <Eff extends Effect<any, any, any>, Z>(
+    elements: Iterable<Eff>,
     zero: Z,
-    f: (z: Z, a: A, i: number) => Z,
+    f: (z: Z, a: Effect.Success<Eff>, i: number) => Z,
     options?:
       | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
       | undefined
-  ): Effect<Z, E, R>
+  ): Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>
 }
 ```

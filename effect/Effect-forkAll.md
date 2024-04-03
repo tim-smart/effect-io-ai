@@ -15,14 +15,21 @@ Effect.forkAll
 
 ```ts
 export declare const forkAll: {
-  (options?: {
-    readonly discard?: false | undefined
-  }): <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<Fiber.Fiber<A[], E>, never, R>
-  (options: { readonly discard: true }): <A, E, R>(effects: Iterable<Effect<A, E, R>>) => Effect<void, never, R>
-  <A, E, R>(
-    effects: Iterable<Effect<A, E, R>>,
-    options?: { readonly discard?: false | undefined }
-  ): Effect<Fiber.Fiber<A[], E>, never, R>
-  <A, E, R>(effects: Iterable<Effect<A, E, R>>, options: { readonly discard: true }): Effect<void, never, R>
+  (
+    options?: { readonly discard?: false | undefined } | undefined
+  ): <Eff extends Effect<any, any, any>>(
+    effects: Iterable<Eff>
+  ) => Effect<Fiber.Fiber<Effect.Success<Eff>[], Effect.Error<Eff>>, never, Effect.Context<Eff>>
+  (options: {
+    readonly discard: true
+  }): <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<void, never, Effect.Context<Eff>>
+  <Eff extends Effect<any, any, any>>(
+    effects: Iterable<Eff>,
+    options?: { readonly discard?: false | undefined } | undefined
+  ): Effect<Fiber.Fiber<Effect.Success<Eff>[], Effect.Error<Eff>>, never, Effect.Context<Eff>>
+  <Eff extends Effect<any, any, any>>(
+    effects: Iterable<Eff>,
+    options: { readonly discard: true }
+  ): Effect<void, never, Effect.Context<Eff>>
 }
 ```
