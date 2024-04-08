@@ -13,7 +13,7 @@ Schema.negateBigDecimal
 **Signature**
 
 ```ts
-export declare const negateBigDecimal: <R, I, A extends _bigDecimal.BigDecimal>(
+export declare const negateBigDecimal: <R, I, A extends bigDecimal_.BigDecimal>(
   self: Schema<A, I, R>
 ) => Schema<A, I, R>
 ```

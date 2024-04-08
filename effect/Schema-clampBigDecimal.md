@@ -14,7 +14,7 @@ Schema.clampBigDecimal
 
 ```ts
 export declare const clampBigDecimal: (
-  minimum: _bigDecimal.BigDecimal,
-  maximum: _bigDecimal.BigDecimal
-) => <R, I, A extends _bigDecimal.BigDecimal>(self: Schema<A, I, R>) => Schema<A, I, R>
+  minimum: bigDecimal_.BigDecimal,
+  maximum: bigDecimal_.BigDecimal
+) => <R, I, A extends bigDecimal_.BigDecimal>(self: Schema<A, I, R>) => Schema<A, I, R>
 ```
