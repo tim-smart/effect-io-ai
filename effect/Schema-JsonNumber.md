@@ -28,5 +28,5 @@ assert.deepStrictEqual(is(Number.NEGATIVE_INFINITY), false)
 **Signature**
 
 ```ts
-export declare const JsonNumber: $number
+export declare const JsonNumber: $Number
 ```

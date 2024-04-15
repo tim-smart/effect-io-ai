@@ -13,5 +13,5 @@ Arbitrary.make
 **Signature**
 
 ```ts
-export declare const make: <A, I, R>(schema: Schema.Schema<A, I, R>) => Arbitrary<A>
+export declare const make: <A, I, R>(schema: Schema.Schema<A, I, R>) => FastCheck.Arbitrary<A>
 ```

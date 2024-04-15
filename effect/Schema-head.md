@@ -13,5 +13,5 @@ Schema.head
 **Signature**
 
 ```ts
-export declare const head: <A, I, R>(self: Schema<readonly A[], I, R>) => Schema<Option.Option<A>, I, R>
+export declare const head: <A, I, R>(self: Schema<readonly A[], I, R>) => Schema<option_.Option<A>, I, R>
 ```

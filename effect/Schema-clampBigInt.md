@@ -1,19 +1,19 @@
-# clampBigint
+# clampBigInt
 
 Clamps a bigint between a minimum and a maximum value.
 
-To import and use `clampBigint` from the "Schema" module:
+To import and use `clampBigInt` from the "Schema" module:
 
 ```ts
 import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
-Schema.clampBigint
+Schema.clampBigInt
 ```
 
 **Signature**
 
 ```ts
-export declare const clampBigint: (
+export declare const clampBigInt: (
   minimum: bigint,
   maximum: bigint
 ) => <R, I, A extends bigint>(self: Schema<A, I, R>) => Schema<A, I, R>

@@ -17,27 +17,32 @@ Schema.transform
 export declare const transform: {
   <To extends Schema.Any, From extends Schema.Any>(
     to: To,
-    decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>,
-    encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
-  ): (from: From) => transform<From, To>
-  <To extends Schema.Any, From extends Schema.Any>(
-    to: To,
-    decode: (fromA: Schema.Type<From>) => unknown,
-    encode: (toI: Schema.Encoded<To>) => unknown,
-    options: { strict: false }
+    options:
+      | {
+          readonly decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>
+          readonly encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
+          readonly strict?: true | undefined
+        }
+      | {
+          readonly decode: (fromA: Schema.Type<From>) => unknown
+          readonly encode: (toI: Schema.Encoded<To>) => unknown
+          readonly strict: false
+        }
   ): (from: From) => transform<From, To>
   <To extends Schema.Any, From extends Schema.Any>(
     from: From,
     to: To,
-    decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>,
-    encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
-  ): transform<From, To>
-  <To extends Schema.Any, From extends Schema.Any>(
-    from: From,
-    to: To,
-    decode: (fromA: Schema.Type<From>) => unknown,
-    encode: (toI: Schema.Encoded<To>) => unknown,
-    options: { strict: false }
+    options:
+      | {
+          readonly decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>
+          readonly encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
+          readonly strict?: true | undefined
+        }
+      | {
+          readonly decode: (fromA: Schema.Type<From>) => unknown
+          readonly encode: (toI: Schema.Encoded<To>) => unknown
+          readonly strict: false
+        }
   ): transform<From, To>
 }
 ```

@@ -15,5 +15,5 @@ Schema.UUID
 **Signature**
 
 ```ts
-export declare const UUID: $string
+export declare const UUID: $String
 ```

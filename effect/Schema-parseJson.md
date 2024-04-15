@@ -1,6 +1,6 @@
 # parseJson
 
-The `parseJson` combinator provides a method to convert JSON strings into the `unknown` type using the underlying
+The `ParseJson` combinator provides a method to convert JSON strings into the `unknown` type using the underlying
 functionality of `JSON.parse`. It also utilizes `JSON.stringify` for encoding.
 
 You can optionally provide a `ParseJsonOptions` to configure both `JSON.parse` and `JSON.stringify` executions.
@@ -21,7 +21,7 @@ Schema.parseJson
 import * as S from "@effect/schema/Schema"
 
 assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson())(`{"a":"1"}`), { a: "1" })
-assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson(S.struct({ a: S.NumberFromString })))(`{"a":"1"}`), { a: 1 })
+assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson(S.Struct({ a: S.NumberFromString })))(`{"a":"1"}`), { a: 1 })
 ```
 
 **Signature**

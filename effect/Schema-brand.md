@@ -19,7 +19,7 @@ Schema.brand
 ```ts
 import * as Schema from "@effect/schema/Schema"
 
-const Int = Schema.number.pipe(Schema.int(), Schema.brand("Int"))
+const Int = Schema.Number.pipe(Schema.int(), Schema.brand("Int"))
 type Int = Schema.Schema.Type<typeof Int> // number & Brand<"Int">
 ```
 
@@ -28,6 +28,6 @@ type Int = Schema.Schema.Type<typeof Int> // number & Brand<"Int">
 ```ts
 export declare const brand: <S extends Schema.AnyNoContext, B extends string | symbol>(
   brand: B,
-  annotations?: Annotations.Schema<Schema.Type<S> & Brand.Brand<B>, readonly []> | undefined
+  annotations?: Annotations.Schema<Schema.Type<S> & brand_.Brand<B>, readonly []> | undefined
 ) => (self: S) => brand<S, B>
 ```

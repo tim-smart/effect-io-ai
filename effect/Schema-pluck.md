@@ -21,9 +21,9 @@ import * as S from "@effect/schema/Schema"
 // struct through a transformation
 // ---------------------------------------------
 
-const mytable = S.struct({
+const mytable = S.Struct({
   column1: S.NumberFromString,
-  column2: S.number
+  column2: S.Number
 })
 
 // const pullOutColumn: S.Schema<number, {
@@ -32,7 +32,7 @@ const mytable = S.struct({
 const pullOutColumn = mytable.pipe(S.pluck("column1"))
 
 console.log(
-  S.decodeUnknownEither(S.array(pullOutColumn))([
+  S.decodeUnknownEither(S.Array(pullOutColumn))([
     { column1: "1", column2: 100 },
     { column1: "2", column2: 300 }
   ])
@@ -44,12 +44,9 @@ console.log(
 
 ```ts
 export declare const pluck: {
-  <A, K extends keyof A>(
+  <A, I, K extends keyof A & keyof I>(
     key: K
-  ): <I extends { [P in K]?: any }, R>(schema: Schema<A, I, R>) => Schema<A[K], { readonly [P in K]: I[P] }, R>
-  <A, I extends { [P in K]?: any }, R, K extends keyof A>(
-    schema: Schema<A, I, R>,
-    key: K
-  ): Schema<A[K], { readonly [P in K]: I[P] }, R>
+  ): <R>(schema: Schema<A, I, R>) => Schema<A[K], { readonly [P in K]: I[P] }, R>
+  <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], { readonly [P in K]: I[P] }, R>
 }
 ```

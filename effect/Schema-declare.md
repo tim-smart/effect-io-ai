@@ -21,20 +21,22 @@ export declare const declare: {
   ): Schema<A, A, never>
   <const P extends readonly Schema.Any[], I, A>(
     typeParameters: P,
-    decodeUnknown: (
-      ...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never> }
-    ) => (
-      input: unknown,
-      options: ParseOptions,
-      ast: AST.Declaration
-    ) => Effect.Effect<A, ParseResult.ParseIssue, never>,
-    encodeUnknown: (
-      ...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never> }
-    ) => (
-      input: unknown,
-      options: ParseOptions,
-      ast: AST.Declaration
-    ) => Effect.Effect<I, ParseResult.ParseIssue, never>,
+    options: {
+      readonly decode: (
+        ...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never> }
+      ) => (
+        input: unknown,
+        options: ParseOptions,
+        ast: AST.Declaration
+      ) => Effect.Effect<A, ParseResult.ParseIssue, never>
+      readonly encode: (
+        ...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never> }
+      ) => (
+        input: unknown,
+        options: ParseOptions,
+        ast: AST.Declaration
+      ) => Effect.Effect<I, ParseResult.ParseIssue, never>
+    },
     annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]> }> | undefined
   ): Schema<A, I, Schema.Context<P[number]>>
 }

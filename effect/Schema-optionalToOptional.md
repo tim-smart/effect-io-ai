@@ -21,7 +21,9 @@ Schema.optionalToOptional
 export declare const optionalToOptional: <FA, FI, FR, TA, TI, TR>(
   from: Schema<FA, FI, FR>,
   to: Schema<TA, TI, TR>,
-  decode: (o: Option.Option<FA>) => Option.Option<TI>,
-  encode: (o: Option.Option<TI>) => Option.Option<FA>
+  options: {
+    readonly decode: (o: option_.Option<FA>) => option_.Option<TI>
+    readonly encode: (o: option_.Option<TI>) => option_.Option<FA>
+  }
 ) => PropertySignature<"?:", TA, never, "?:", FI, FR | TR>
 ```

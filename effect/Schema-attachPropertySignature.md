@@ -18,9 +18,9 @@ Schema.attachPropertySignature
 import * as S from "@effect/schema/Schema"
 import { pipe } from "effect/Function"
 
-const Circle = S.struct({ radius: S.number })
-const Square = S.struct({ sideLength: S.number })
-const Shape = S.union(
+const Circle = S.Struct({ radius: S.Number })
+const Square = S.Struct({ sideLength: S.Number })
+const Shape = S.Union(
   Circle.pipe(S.attachPropertySignature("kind", "circle")),
   Square.pipe(S.attachPropertySignature("kind", "square"))
 )
