@@ -14,9 +14,9 @@ Cache.make
 **Signature**
 
 ```ts
-export declare const make: <Key, Environment, Error, Value>(options: {
+export declare const make: <Key, Value, Error = never, Environment = never>(options: {
   readonly capacity: number
   readonly timeToLive: Duration.DurationInput
-  readonly lookup: Lookup<Key, Environment, Error, Value>
-}) => Effect.Effect<Cache<Key, Error, Value>, never, Environment>
+  readonly lookup: Lookup<Key, Value, Error, Environment>
+}) => Effect.Effect<Cache<Key, Value, Error>, never, Environment>
 ```

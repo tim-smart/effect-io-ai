@@ -16,11 +16,18 @@ Metric.frequency
 ```ts
 import * as Metric from "effect/Metric"
 
-const errorFrequency = Metric.frequency("error_frequency", "Counts the occurrences of errors.")
+const errorFrequency = Metric.frequency("error_frequency", {
+  description: "Counts the occurrences of errors."
+})
 ```
 
 **Signature**
 
 ```ts
-export declare const frequency: (name: string, description?: string) => Metric.Frequency<string>
+export declare const frequency: (
+  name: string,
+  options?:
+    | { readonly description?: string | undefined; readonly preregisteredWords?: ReadonlyArray<string> | undefined }
+    | undefined
+) => Metric.Frequency<string>
 ```

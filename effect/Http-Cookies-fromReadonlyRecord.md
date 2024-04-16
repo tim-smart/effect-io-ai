@@ -13,5 +13,5 @@ Cookies.fromReadonlyRecord
 **Signature**
 
 ```ts
-export declare const fromReadonlyRecord: (cookies: ReadonlyRecord.ReadonlyRecord<string, Cookie>) => Cookies
+export declare const fromReadonlyRecord: (cookies: Record.ReadonlyRecord<string, Cookie>) => Cookies
 ```

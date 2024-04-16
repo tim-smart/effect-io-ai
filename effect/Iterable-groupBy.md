@@ -17,10 +17,10 @@ Iterable.groupBy
 export declare const groupBy: {
   <A, K extends string | symbol>(
     f: (a: A) => K
-  ): (self: Iterable<A>) => Record<ReadonlyRecord.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
+  ): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
   <A, K extends string | symbol>(
     self: Iterable<A>,
     f: (a: A) => K
-  ): Record<ReadonlyRecord.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
+  ): Record<Record.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
 }
 ```

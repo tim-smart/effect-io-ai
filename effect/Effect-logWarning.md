@@ -13,8 +13,5 @@ Effect.logWarning
 **Signature**
 
 ```ts
-export declare const logWarning: <A>(
-  messageOrCause: A,
-  supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<void>
+export declare const logWarning: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```

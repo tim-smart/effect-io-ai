@@ -17,14 +17,16 @@ FiberMap.run
 export declare const run: {
   <K, A, E>(
     self: FiberMap<K, A, E>,
-    key: K
+    key: K,
+    options?: { readonly onlyIfMissing?: boolean | undefined } | undefined
   ): <R, XE extends E, XA extends A>(
     effect: Effect.Effect<XA, XE, R>
   ) => Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
   <K, A, E, R, XE extends E, XA extends A>(
     self: FiberMap<K, A, E>,
     key: K,
-    effect: Effect.Effect<XA, XE, R>
+    effect: Effect.Effect<XA, XE, R>,
+    options?: { readonly onlyIfMissing?: boolean | undefined } | undefined
   ): Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
 }
 ```

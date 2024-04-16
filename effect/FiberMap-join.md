@@ -28,5 +28,5 @@ Effect.gen(function* (_) {
 **Signature**
 
 ```ts
-export declare const join: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<never, E>
+export declare const join: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```

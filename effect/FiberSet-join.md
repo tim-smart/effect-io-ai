@@ -28,5 +28,5 @@ Effect.gen(function* (_) {
 **Signature**
 
 ```ts
-export declare const join: <A, E>(self: FiberSet<A, E>) => Effect.Effect<never, E>
+export declare const join: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void, E>
 ```

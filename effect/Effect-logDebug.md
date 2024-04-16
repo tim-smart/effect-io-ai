@@ -13,8 +13,5 @@ Effect.logDebug
 **Signature**
 
 ```ts
-export declare const logDebug: <A>(
-  messageOrCause: A,
-  supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<void>
+export declare const logDebug: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```

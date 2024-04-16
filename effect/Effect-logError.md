@@ -13,8 +13,5 @@ Effect.logError
 **Signature**
 
 ```ts
-export declare const logError: <A>(
-  messageOrCause: A,
-  supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<void>
+export declare const logError: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```

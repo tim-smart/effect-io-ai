@@ -17,12 +17,14 @@ FiberMap.set
 export declare const set: {
   <K, A, E, XE extends E, XA extends A>(
     key: K,
-    fiber: Fiber.RuntimeFiber<XA, XE>
+    fiber: Fiber.RuntimeFiber<XA, XE>,
+    options?: { readonly onlyIfMissing?: boolean | undefined } | undefined
   ): (self: FiberMap<K, A, E>) => Effect.Effect<void>
   <K, A, E, XE extends E, XA extends A>(
     self: FiberMap<K, A, E>,
     key: K,
-    fiber: Fiber.RuntimeFiber<XA, XE>
+    fiber: Fiber.RuntimeFiber<XA, XE>,
+    options?: { readonly onlyIfMissing?: boolean | undefined } | undefined
   ): Effect.Effect<void>
 }
 ```

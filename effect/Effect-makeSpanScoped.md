@@ -19,12 +19,14 @@ Effect.makeSpanScoped
 ```ts
 export declare const makeSpanScoped: (
   name: string,
-  options?: {
-    readonly attributes?: Record<string, unknown> | undefined
-    readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-    readonly parent?: Tracer.ParentSpan | undefined
-    readonly root?: boolean | undefined
-    readonly context?: Context.Context<never> | undefined
-  }
+  options?:
+    | {
+        readonly attributes?: Record<string, unknown> | undefined
+        readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+        readonly parent?: Tracer.AnySpan | undefined
+        readonly root?: boolean | undefined
+        readonly context?: Context.Context<never> | undefined
+      }
+    | undefined
 ) => Effect<Tracer.Span, never, Scope.Scope>
 ```

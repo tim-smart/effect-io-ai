@@ -1,6 +1,6 @@
 # tick
 
-A stream that emits Unit values spaced by the specified duration.
+A stream that emits void values spaced by the specified duration.
 
 To import and use `tick` from the "Stream" module:
 

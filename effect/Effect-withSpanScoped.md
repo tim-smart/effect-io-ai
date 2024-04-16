@@ -21,7 +21,7 @@ export declare const withSpanScoped: {
     options?: {
       readonly attributes?: Record<string, unknown> | undefined
       readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
+      readonly parent?: Tracer.AnySpan | undefined
       readonly root?: boolean | undefined
       readonly context?: Context.Context<never> | undefined
     }
@@ -32,7 +32,7 @@ export declare const withSpanScoped: {
     options?: {
       readonly attributes?: Record<string, unknown> | undefined
       readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.ParentSpan | undefined
+      readonly parent?: Tracer.AnySpan | undefined
       readonly root?: boolean | undefined
       readonly context?: Context.Context<never> | undefined
     }

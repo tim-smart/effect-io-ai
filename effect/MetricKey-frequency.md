@@ -14,5 +14,10 @@ MetricKey.frequency
 **Signature**
 
 ```ts
-export declare const frequency: (name: string, description?: string) => MetricKey.Frequency
+export declare const frequency: (
+  name: string,
+  options?:
+    | { readonly description?: string | undefined; readonly preregisteredWords?: ReadonlyArray<string> | undefined }
+    | undefined
+) => MetricKey.Frequency
 ```

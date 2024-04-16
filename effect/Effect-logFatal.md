@@ -13,8 +13,5 @@ Effect.logFatal
 **Signature**
 
 ```ts
-export declare const logFatal: <A>(
-  messageOrCause: A,
-  supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<void>
+export declare const logFatal: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```

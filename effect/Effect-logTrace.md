@@ -13,8 +13,5 @@ Effect.logTrace
 **Signature**
 
 ```ts
-export declare const logTrace: <A>(
-  messageOrCause: A,
-  supplementary?: (A extends Cause.Cause<any> ? unknown : Cause.Cause<unknown>) | undefined
-) => Effect<void>
+export declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
