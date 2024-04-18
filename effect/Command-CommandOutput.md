@@ -3,6 +3,8 @@
 Configures the pipes that are established between the parent and child
 processes `stderr` and `stdout` streams.
 
+Defaults to "pipe"
+
 To import and use `CommandOutput` from the "Command" module:
 
 ```ts

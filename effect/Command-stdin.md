@@ -14,7 +14,7 @@ Command.stdin
 
 ```ts
 export declare const stdin: {
-  (stdin: CommandInput): (self: Command) => Command
-  (self: Command, stdin: CommandInput): Command
+  (stdin: Command.Input): (self: Command) => Command
+  (self: Command, stdin: Command.Input): Command
 }
 ```
