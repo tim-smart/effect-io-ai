@@ -1,7 +1,7 @@
 # BooleanFromUnknown
 
-Convers an arbitrary value to a `boolean` by testing whether it is truthy.
-Uses `!!val` to convert the value to a `boolean`.
+Converts an arbitrary value to a `boolean` by testing whether it is truthy.
+Uses `!!val` to coerce the value to a `boolean`.
 
 To import and use `BooleanFromUnknown` from the "Schema" module:
 

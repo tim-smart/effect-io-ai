@@ -1,6 +1,6 @@
 # split
 
-Returns a achema that allows splitting a string into an array of strings.
+Returns a schema that allows splitting a string into an array of strings.
 
 To import and use `split` from the "Schema" module:
 
