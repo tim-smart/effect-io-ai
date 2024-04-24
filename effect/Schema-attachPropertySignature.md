@@ -35,7 +35,7 @@ assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {
 
 ```ts
 export declare const attachPropertySignature: {
-  <K extends PropertyKey, V extends symbol | AST.LiteralValue, A extends object>(
+  <K extends PropertyKey, V extends symbol | AST.LiteralValue, A>(
     key: K,
     value: V,
     annotations?: Annotations.Schema<Types.Simplify<A & { readonly [k in K]: V }>, readonly []> | undefined
