@@ -16,6 +16,6 @@ RequestResolver.fromFunctionBatched
 
 ```ts
 export declare const fromFunctionBatched: <A extends Request.Request<any, never>>(
-  f: (chunk: A[]) => Iterable<Request.Request.Success<A>>
+  f: (chunk: [A, ...A[]]) => Iterable<Request.Request.Success<A>>
 ) => RequestResolver<A, never>
 ```

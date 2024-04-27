@@ -24,13 +24,13 @@ export declare const ordered: <T extends string, I, II, RI, A, IA, _, E, RA = ne
     | {
         readonly Request: Schema.Schema<I, II, RI>
         readonly Result: Schema.Schema<A, IA, never>
-        readonly execute: (requests: NoInfer<II>[]) => Effect.Effect<readonly _[], E, never>
+        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly _[], E, never>
         readonly withContext?: false | undefined
       }
     | {
         readonly Request: Schema.Schema<I, II, RI>
         readonly Result: Schema.Schema<A, IA, RA>
-        readonly execute: (requests: NoInfer<II>[]) => Effect.Effect<readonly _[], E, R>
+        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly _[], E, R>
         readonly withContext: true
       }
 ) => Effect.Effect<SqlResolver<T, I, A, E | ResultLengthMismatch, RI>, never, RA | R>

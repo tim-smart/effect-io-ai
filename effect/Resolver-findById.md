@@ -19,15 +19,15 @@ export declare const findById: <T extends string, I, II, RI, A, IA, Row, E, RA =
     | {
         readonly Id: Schema.Schema<I, II, RI>
         readonly Result: Schema.Schema<A, IA, never>
-        readonly ResultId: (result: NoInfer<A>, row: NoInfer<Row>) => II
-        readonly execute: (requests: NoInfer<II>[]) => Effect.Effect<readonly Row[], E, never>
+        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => II
+        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, never>
         readonly withContext?: false | undefined
       }
     | {
         readonly Id: Schema.Schema<I, II, RI>
         readonly Result: Schema.Schema<A, IA, RA>
-        readonly ResultId: (result: NoInfer<A>, row: NoInfer<Row>) => II
-        readonly execute: (requests: NoInfer<II>[]) => Effect.Effect<readonly Row[], E, R>
+        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => II
+        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, R>
         readonly withContext: true
       }
 ) => Effect.Effect<SqlResolver<T, I, Option.Option<A>, E, RI>, never, RA | R>
