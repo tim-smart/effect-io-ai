@@ -83,8 +83,11 @@ export declare const taggedEnum: {
       >
     ) => Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
   }
-  <A extends { readonly _tag: string }>(): {
-    readonly [Tag in A["_tag"]]: Case.Constructor<Extract<A, { readonly _tag: Tag }>, "_tag">
-  }
+  <A extends { readonly _tag: string }>(): Types.Simplify<
+    { readonly [Tag in A["_tag"]]: Case.Constructor<Extract<A, { readonly _tag: Tag }>, "_tag"> } & {
+      readonly $is: <Tag>(tag: Tag) => (u: unknown) => u is Extract<A, { readonly _tag: Tag }>
+      readonly $match: <Cases>(cases: Cases) => (value: A) => ReturnType<Cases[A["_tag"]]>
+    }
+  >
 }
 ```

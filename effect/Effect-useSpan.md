@@ -21,13 +21,7 @@ export declare const useSpan: {
   <A, E, R>(name: string, evaluate: (span: Tracer.Span) => Effect<A, E, R>): Effect<A, E, R>
   <A, E, R>(
     name: string,
-    options: {
-      readonly attributes?: Record<string, unknown> | undefined
-      readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
-      readonly parent?: Tracer.AnySpan | undefined
-      readonly root?: boolean | undefined
-      readonly context?: Context.Context<never> | undefined
-    },
+    options: Tracer.SpanOptions,
     evaluate: (span: Tracer.Span) => Effect<A, E, R>
   ): Effect<A, E, R>
 }
