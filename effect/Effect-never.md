@@ -1,6 +1,6 @@
 # never
 
-Returns a effect that will never produce anything. The moral equivalent of
+Returns an effect that will never produce anything. The moral equivalent of
 `while(true) {}`, only without the wasted CPU cycles.
 
 To import and use `never` from the "Effect" module:
