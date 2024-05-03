@@ -15,11 +15,10 @@ Record.pop
 **Example**
 
 ```ts
-import { pop } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record as R, Option } from "effect"
 
-assert.deepStrictEqual(pop({ a: 1, b: 2 }, "a"), some([1, { b: 2 }]))
-assert.deepStrictEqual(pop({ a: 1, b: 2 } as Record<string, number>, "c"), none())
+assert.deepStrictEqual(R.pop({ a: 1, b: 2 }, "a"), Option.some([1, { b: 2 }]))
+assert.deepStrictEqual(R.pop({ a: 1, b: 2 } as Record<string, number>, "c"), Option.none())
 ```
 
 **Signature**

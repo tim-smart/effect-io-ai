@@ -13,20 +13,19 @@ Option.getOrElse
 **Example**
 
 ```ts
-import { some, none, getOrElse } from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
 assert.deepStrictEqual(
   pipe(
-    some(1),
-    getOrElse(() => 0)
+    Option.some(1),
+    Option.getOrElse(() => 0)
   ),
   1
 )
 assert.deepStrictEqual(
   pipe(
-    none(),
-    getOrElse(() => 0)
+    Option.none(),
+    Option.getOrElse(() => 0)
   ),
   0
 )

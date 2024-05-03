@@ -14,7 +14,7 @@ Array.prependAll
 **Example**
 
 ```ts
-import * as Array from "effect/Array"
+import { Array } from "effect"
 
 assert.deepStrictEqual(Array.prependAll([1, 2], ["a", "b"]), ["a", "b", 1, 2])
 ```

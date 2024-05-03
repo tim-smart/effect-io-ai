@@ -13,12 +13,11 @@ BigDecimal.fromString
 **Example**
 
 ```ts
-import { fromString, make } from "effect/BigDecimal"
-import { some, none } from "effect/Option"
+import { BigDecimal, Option } from "effect"
 
-assert.deepStrictEqual(fromString("123"), some(make(123n, 0)))
-assert.deepStrictEqual(fromString("123.456"), some(make(123456n, 3)))
-assert.deepStrictEqual(fromString("123.abc"), none())
+assert.deepStrictEqual(BigDecimal.fromString("123"), Option.some(BigDecimal.make(123n, 0)))
+assert.deepStrictEqual(BigDecimal.fromString("123.456"), Option.some(BigDecimal.make(123456n, 3)))
+assert.deepStrictEqual(BigDecimal.fromString("123.abc"), Option.none())
 ```
 
 **Signature**

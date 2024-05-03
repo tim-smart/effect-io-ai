@@ -13,7 +13,7 @@ Types.Has
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res1 = Types.Has<{ a: number }, "a" | "b"> // true
 type Res2 = Types.Has<{ c: number }, "a" | "b"> // false

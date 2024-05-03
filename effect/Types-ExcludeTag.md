@@ -13,7 +13,7 @@ Types.ExcludeTag
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res = Types.ExcludeTag<string | { _tag: "a" } | { _tag: "b" }, "a"> // string | { _tag: "b" }
 ```

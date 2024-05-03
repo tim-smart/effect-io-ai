@@ -14,8 +14,7 @@ Trie.longestPrefixOf
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
-import * as Option from "effect/Option"
+import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(Trie.insert("shells", 0), Trie.insert("sells", 1), Trie.insert("she", 2))
 

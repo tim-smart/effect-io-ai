@@ -14,13 +14,12 @@ Record.modify
 **Example**
 
 ```ts
-import { modify } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record as R } from "effect"
 
 const f = (x: number) => x * 2
 
-assert.deepStrictEqual(modify({ a: 3 }, "a", f), { a: 6 })
-assert.deepStrictEqual(modify({ a: 3 } as Record<string, number>, "b", f), { a: 3 })
+assert.deepStrictEqual(R.modify({ a: 3 }, "a", f), { a: 6 })
+assert.deepStrictEqual(R.modify({ a: 3 } as Record<string, number>, "b", f), { a: 3 })
 ```
 
 **Signature**

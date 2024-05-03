@@ -13,10 +13,10 @@ Ordering.match
 **Example**
 
 ```ts
-import { match } from "effect/Ordering"
+import { Ordering } from "effect"
 import { constant } from "effect/Function"
 
-const toMessage = match({
+const toMessage = Ordering.match({
   onLessThan: constant("less than"),
   onEqual: constant("equal"),
   onGreaterThan: constant("greater than")

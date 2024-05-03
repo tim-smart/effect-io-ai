@@ -16,7 +16,7 @@ Brand.nominal
 **Example**
 
 ```ts
-import * as Brand from "effect/Brand"
+import { Brand } from "effect"
 
 type UserId = number & Brand.Brand<"UserId">
 

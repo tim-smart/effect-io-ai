@@ -13,7 +13,7 @@ Number.between
 **Example**
 
 ```ts
-import * as Number from "effect/Number"
+import { Number } from "effect"
 
 const between = Number.between({ minimum: 0, maximum: 5 })
 

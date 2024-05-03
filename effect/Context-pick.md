@@ -13,9 +13,7 @@ Context.pick
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
-import { pipe } from "effect/Function"
-import * as O from "effect/Option"
+import { pipe, Context, Option } from "effect"
 
 const Port = Context.GenericTag<{ PORT: number }>("Port")
 const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
@@ -24,8 +22,8 @@ const someContext = pipe(Context.make(Port, { PORT: 8080 }), Context.add(Timeout
 
 const Services = pipe(someContext, Context.pick(Port))
 
-assert.deepStrictEqual(Context.getOption(Services, Port), O.some({ PORT: 8080 }))
-assert.deepStrictEqual(Context.getOption(Services, Timeout), O.none())
+assert.deepStrictEqual(Context.getOption(Services, Port), Option.some({ PORT: 8080 }))
+assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 ```
 
 **Signature**

@@ -15,21 +15,21 @@ Option.filter
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
 // predicate
 const isEven = (n: number) => n % 2 === 0
 
-assert.deepStrictEqual(O.filter(O.none(), isEven), O.none())
-assert.deepStrictEqual(O.filter(O.some(3), isEven), O.none())
-assert.deepStrictEqual(O.filter(O.some(2), isEven), O.some(2))
+assert.deepStrictEqual(Option.filter(Option.none(), isEven), Option.none())
+assert.deepStrictEqual(Option.filter(Option.some(3), isEven), Option.none())
+assert.deepStrictEqual(Option.filter(Option.some(2), isEven), Option.some(2))
 
 // refinement
 const isNumber = (v: unknown): v is number => typeof v === "number"
 
-assert.deepStrictEqual(O.filter(O.none(), isNumber), O.none())
-assert.deepStrictEqual(O.filter(O.some("hello"), isNumber), O.none())
-assert.deepStrictEqual(O.filter(O.some(2), isNumber), O.some(2))
+assert.deepStrictEqual(Option.filter(Option.none(), isNumber), Option.none())
+assert.deepStrictEqual(Option.filter(Option.some("hello"), isNumber), Option.none())
+assert.deepStrictEqual(Option.filter(Option.some(2), isNumber), Option.some(2))
 ```
 
 **Signature**

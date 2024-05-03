@@ -13,7 +13,7 @@ Types.Mutable
 **Example**
 
 ```ts
-import type * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type MutableStruct = Types.Mutable<{ readonly a: string; readonly b: number }> // { a: string; b: number; }
 

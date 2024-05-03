@@ -14,7 +14,7 @@ Trie.toEntriesWithPrefix
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("shells", 0),

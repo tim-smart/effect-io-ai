@@ -13,7 +13,7 @@ BigInt.between
 **Example**
 
 ```ts
-import * as BigInt from "effect/BigInt"
+import { BigInt } from "effect"
 
 const between = BigInt.between({ minimum: 0n, maximum: 5n })
 

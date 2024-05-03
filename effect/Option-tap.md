@@ -16,13 +16,13 @@ Option.tap
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-const getInteger = (n: number) => (Number.isInteger(n) ? O.some(n) : O.none())
+const getInteger = (n: number) => (Number.isInteger(n) ? Option.some(n) : Option.none())
 
-assert.deepStrictEqual(O.tap(O.none(), getInteger), O.none())
-assert.deepStrictEqual(O.tap(O.some(1), getInteger), O.some(1))
-assert.deepStrictEqual(O.tap(O.some(1.14), getInteger), O.none())
+assert.deepStrictEqual(Option.tap(Option.none(), getInteger), Option.none())
+assert.deepStrictEqual(Option.tap(Option.some(1), getInteger), Option.some(1))
+assert.deepStrictEqual(Option.tap(Option.some(1.14), getInteger), Option.none())
 ```
 
 **Signature**

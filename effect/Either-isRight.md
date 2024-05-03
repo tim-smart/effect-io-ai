@@ -13,10 +13,10 @@ Either.isRight
 **Example**
 
 ```ts
-import { isRight, left, right } from "effect/Either"
+import { Either } from "effect"
 
-assert.deepStrictEqual(isRight(right(1)), true)
-assert.deepStrictEqual(isRight(left("a")), false)
+assert.deepStrictEqual(Either.isRight(Either.right(1)), true)
+assert.deepStrictEqual(Either.isRight(Either.left("a")), false)
 ```
 
 **Signature**

@@ -14,16 +14,15 @@ Option.match
 **Example**
 
 ```ts
-import { some, none, match } from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
 assert.deepStrictEqual(
-  pipe(some(1), match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
+  pipe(Option.some(1), Option.match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
   "a some containing 1"
 )
 
 assert.deepStrictEqual(
-  pipe(none(), match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
+  pipe(Option.none(), Option.match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
   "a none"
 )
 ```

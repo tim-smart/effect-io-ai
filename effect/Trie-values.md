@@ -15,7 +15,7 @@ Trie.values
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(Trie.insert("call", 0), Trie.insert("me", 1), Trie.insert("and", 2))
 

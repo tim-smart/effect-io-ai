@@ -14,8 +14,7 @@ Metric.histogram
 **Example**
 
 ```ts
-import * as Metric from "effect/Metric"
-import * as MetricBoundaries from "effect/MetricBoundaries"
+import { Metric, MetricBoundaries } from "effect"
 
 const latencyHistogram = Metric.histogram(
   "latency_histogram",

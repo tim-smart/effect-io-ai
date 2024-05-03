@@ -13,7 +13,7 @@ Context.isTag
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
+import { Context } from "effect"
 
 assert.strictEqual(Context.isTag(Context.GenericTag("Tag")), true)
 ```

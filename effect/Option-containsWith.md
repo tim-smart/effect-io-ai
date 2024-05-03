@@ -13,13 +13,11 @@ Option.containsWith
 **Example**
 
 ```ts
-import { some, none, containsWith } from "effect/Option"
-import { Equivalence } from "effect/Number"
-import { pipe } from "effect/Function"
+import { pipe, Option, Number } from "effect"
 
-assert.deepStrictEqual(pipe(some(2), containsWith(Equivalence)(2)), true)
-assert.deepStrictEqual(pipe(some(1), containsWith(Equivalence)(2)), false)
-assert.deepStrictEqual(pipe(none(), containsWith(Equivalence)(2)), false)
+assert.deepStrictEqual(pipe(Option.some(2), Option.containsWith(Number.Equivalence)(2)), true)
+assert.deepStrictEqual(pipe(Option.some(1), Option.containsWith(Number.Equivalence)(2)), false)
+assert.deepStrictEqual(pipe(Option.none(), Option.containsWith(Number.Equivalence)(2)), false)
 ```
 
 **Signature**

@@ -14,24 +14,23 @@ Either.filterOrLeft
 **Example**
 
 ```ts
-import * as E from "effect/Either"
-import { pipe } from "effect/Function"
+import { pipe, Either } from "effect"
 
 const isPositive = (n: number): boolean => n > 0
 
 assert.deepStrictEqual(
   pipe(
-    E.right(1),
-    E.filterOrLeft(isPositive, (n) => `${n} is not positive`)
+    Either.right(1),
+    Either.filterOrLeft(isPositive, (n) => `${n} is not positive`)
   ),
-  E.right(1)
+  Either.right(1)
 )
 assert.deepStrictEqual(
   pipe(
-    E.right(0),
-    E.filterOrLeft(isPositive, (n) => `${n} is not positive`)
+    Either.right(0),
+    Either.filterOrLeft(isPositive, (n) => `${n} is not positive`)
   ),
-  E.left("0 is not positive")
+  Either.left("0 is not positive")
 )
 ```
 

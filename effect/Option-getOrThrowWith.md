@@ -15,13 +15,13 @@ Option.getOrThrowWith
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
 assert.deepStrictEqual(
-  O.getOrThrowWith(O.some(1), () => new Error("Unexpected None")),
+  Option.getOrThrowWith(Option.some(1), () => new Error("Unexpected None")),
   1
 )
-assert.throws(() => O.getOrThrowWith(O.none(), () => new Error("Unexpected None")))
+assert.throws(() => Option.getOrThrowWith(Option.none(), () => new Error("Unexpected None")))
 ```
 
 **Signature**

@@ -13,8 +13,7 @@ Data.Class
 **Example**
 
 ```ts
-import * as Data from "effect/Data"
-import * as Equal from "effect/Equal"
+import { Data, Equal } from "effect"
 
 class Person extends Data.Class<{ readonly name: string }> {}
 

@@ -14,7 +14,7 @@ Metric.frequency
 **Example**
 
 ```ts
-import * as Metric from "effect/Metric"
+import { Metric } from "effect"
 
 const errorFrequency = Metric.frequency("error_frequency", {
   description: "Counts the occurrences of errors."

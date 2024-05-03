@@ -17,7 +17,7 @@ BigDecimal.clamp
 **Example**
 
 ```ts
-import * as BigDecimal from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 
 const clamp = BigDecimal.clamp({
   minimum: BigDecimal.unsafeFromString("1"),

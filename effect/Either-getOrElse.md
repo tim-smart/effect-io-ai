@@ -13,7 +13,7 @@ Either.getOrElse
 **Example**
 
 ```ts
-import * as Either from "effect/Either"
+import { Either } from "effect"
 
 assert.deepStrictEqual(
   Either.getOrElse(Either.right(1), (error) => error + "!"),

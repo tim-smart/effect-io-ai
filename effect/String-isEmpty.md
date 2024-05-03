@@ -13,10 +13,10 @@ String.isEmpty
 **Example**
 
 ```ts
-import * as S from "effect/String"
+import { String } from "effect"
 
-assert.deepStrictEqual(S.isEmpty(""), true)
-assert.deepStrictEqual(S.isEmpty("a"), false)
+assert.deepStrictEqual(String.isEmpty(""), true)
+assert.deepStrictEqual(String.isEmpty("a"), false)
 ```
 
 **Signature**

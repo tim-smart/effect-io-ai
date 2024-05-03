@@ -13,10 +13,10 @@ Option.isNone
 **Example**
 
 ```ts
-import { some, none, isNone } from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(isNone(some(1)), false)
-assert.deepStrictEqual(isNone(none()), true)
+assert.deepStrictEqual(Option.isNone(Option.some(1)), false)
+assert.deepStrictEqual(Option.isNone(Option.none()), true)
 ```
 
 **Signature**

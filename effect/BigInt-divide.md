@@ -18,11 +18,10 @@ BigInt.divide
 **Example**
 
 ```ts
-import { divide } from "effect/BigInt"
-import { some, none } from "effect/Option"
+import { BigInt, Option } from "effect"
 
-assert.deepStrictEqual(divide(6n, 3n), some(2n))
-assert.deepStrictEqual(divide(6n, 0n), none())
+assert.deepStrictEqual(BigInt.divide(6n, 3n), Option.some(2n))
+assert.deepStrictEqual(BigInt.divide(6n, 0n), Option.none())
 ```
 
 **Signature**

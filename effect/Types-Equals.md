@@ -13,7 +13,7 @@ Types.Equals
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res1 = Types.Equals<{ a: number }, { a: number }> // true
 type Res2 = Types.Equals<{ a: number }, { b: number }> // false

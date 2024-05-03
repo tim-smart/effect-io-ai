@@ -13,7 +13,7 @@ Types.Simplify
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res = Types.Simplify<{ a: number } & { b: number }> // { a: number; b: number; }
 ```

@@ -13,8 +13,7 @@ Option.flatMapNullable
 **Example**
 
 ```ts
-import { some, none, flatMapNullable } from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
 interface Employee {
   company?: {
@@ -30,20 +29,20 @@ const employee1: Employee = { company: { address: { street: { name: "high street
 
 assert.deepStrictEqual(
   pipe(
-    some(employee1),
-    flatMapNullable((employee) => employee.company?.address?.street?.name)
+    Option.some(employee1),
+    Option.flatMapNullable((employee) => employee.company?.address?.street?.name)
   ),
-  some("high street")
+  Option.some("high street")
 )
 
 const employee2: Employee = { company: { address: { street: {} } } }
 
 assert.deepStrictEqual(
   pipe(
-    some(employee2),
-    flatMapNullable((employee) => employee.company?.address?.street?.name)
+    Option.some(employee2),
+    Option.flatMapNullable((employee) => employee.company?.address?.street?.name)
   ),
-  none()
+  Option.none()
 )
 ```
 

@@ -14,8 +14,7 @@ Metric.summary
 **Example**
 
 ```ts
-import * as Metric from "effect/Metric"
-import * as Chunk from "effect/Chunk"
+import { Metric, Chunk } from "effect"
 
 const responseTimesSummary = Metric.summary({
   name: "response_times_summary",

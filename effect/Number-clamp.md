@@ -17,7 +17,7 @@ Number.clamp
 **Example**
 
 ```ts
-import * as Number from "effect/Number"
+import { Number } from "effect"
 
 const clamp = Number.clamp({ minimum: 1, maximum: 5 })
 

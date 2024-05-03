@@ -13,10 +13,9 @@ Array.getRights
 **Example**
 
 ```ts
-import { getRights } from "effect/Array"
-import { right, left } from "effect/Either"
+import { Array, Either } from "effect"
 
-assert.deepStrictEqual(getRights([right(1), left("err"), right(2)]), [1, 2])
+assert.deepStrictEqual(Array.getRights([Either.right(1), Either.left("err"), Either.right(2)]), [1, 2])
 ```
 
 **Signature**

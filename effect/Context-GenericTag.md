@@ -13,7 +13,7 @@ Context.GenericTag
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
+import { Context } from "effect"
 
 assert.strictEqual(Context.GenericTag("PORT").key === Context.GenericTag("PORT").key, true)
 ```

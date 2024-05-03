@@ -14,11 +14,11 @@ Option.fromNullable
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.fromNullable(undefined), O.none())
-assert.deepStrictEqual(O.fromNullable(null), O.none())
-assert.deepStrictEqual(O.fromNullable(1), O.some(1))
+assert.deepStrictEqual(Option.fromNullable(undefined), Option.none())
+assert.deepStrictEqual(Option.fromNullable(null), Option.none())
+assert.deepStrictEqual(Option.fromNullable(1), Option.some(1))
 ```
 
 **Signature**

@@ -16,7 +16,7 @@ Data.taggedEnum
 **Example**
 
 ```ts
-import * as Data from "effect/Data"
+import { Data } from "effect"
 
 const { BadRequest, NotFound } = Data.taggedEnum<
   | { readonly _tag: "BadRequest"; readonly status: 400; readonly message: string }
@@ -29,7 +29,7 @@ const notFound = NotFound({ status: 404, message: "Not Found" })
 **Example**
 
 ```ts
-import * as Data from "effect/Data"
+import { Data } from "effect"
 
 type MyResult<E, A> = Data.TaggedEnum<{
   Failure: { readonly error: E }

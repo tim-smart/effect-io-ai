@@ -13,10 +13,10 @@ Option.getOrUndefined
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.getOrUndefined(O.some(1)), 1)
-assert.deepStrictEqual(O.getOrUndefined(O.none()), undefined)
+assert.deepStrictEqual(Option.getOrUndefined(Option.some(1)), 1)
+assert.deepStrictEqual(Option.getOrUndefined(Option.none()), undefined)
 ```
 
 **Signature**

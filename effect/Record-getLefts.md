@@ -13,10 +13,9 @@ Record.getLefts
 **Example**
 
 ```ts
-import { getLefts } from "effect/Record"
-import { right, left } from "effect/Either"
+import { Record, Either } from "effect"
 
-assert.deepStrictEqual(getLefts({ a: right(1), b: left("err"), c: right(2) }), { b: "err" })
+assert.deepStrictEqual(Record.getLefts({ a: Either.right(1), b: Either.left("err"), c: Either.right(2) }), { b: "err" })
 ```
 
 **Signature**

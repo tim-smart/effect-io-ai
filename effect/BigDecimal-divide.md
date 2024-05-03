@@ -18,12 +18,20 @@ BigDecimal.divide
 **Example**
 
 ```ts
-import { divide, unsafeFromString } from "effect/BigDecimal"
-import { some, none } from "effect/Option"
+import { BigDecimal, Option } from "effect"
 
-assert.deepStrictEqual(divide(unsafeFromString("6"), unsafeFromString("3")), some(unsafeFromString("2")))
-assert.deepStrictEqual(divide(unsafeFromString("6"), unsafeFromString("4")), some(unsafeFromString("1.5")))
-assert.deepStrictEqual(divide(unsafeFromString("6"), unsafeFromString("0")), none())
+assert.deepStrictEqual(
+  BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("3")),
+  Option.some(BigDecimal.unsafeFromString("2"))
+)
+assert.deepStrictEqual(
+  BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("4")),
+  Option.some(BigDecimal.unsafeFromString("1.5"))
+)
+assert.deepStrictEqual(
+  BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("0")),
+  Option.none()
+)
 ```
 
 **Signature**

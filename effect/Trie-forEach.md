@@ -13,7 +13,7 @@ Trie.forEach
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 let value = 0
 

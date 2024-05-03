@@ -13,9 +13,9 @@ String.length
 **Example**
 
 ```ts
-import * as S from "effect/String"
+import { String } from "effect"
 
-assert.deepStrictEqual(S.length("abc"), 3)
+assert.deepStrictEqual(String.length("abc"), 3)
 ```
 
 **Signature**

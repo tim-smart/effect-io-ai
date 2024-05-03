@@ -13,7 +13,7 @@ Trie.reduce
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(Trie.insert("shells", 0), Trie.insert("sells", 1), Trie.insert("she", 2))
 

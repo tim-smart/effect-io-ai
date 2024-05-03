@@ -13,11 +13,10 @@ Struct.pick
 **Example**
 
 ```ts
-import { pick } from "effect/Struct"
-import { pipe } from "effect/Function"
+import { pipe, Struct } from "effect"
 
-assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, pick("a", "b")), { a: "a", b: 1 })
-assert.deepStrictEqual(pick({ a: "a", b: 1, c: true }, "a", "b"), { a: "a", b: 1 })
+assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, Struct.pick("a", "b")), { a: "a", b: 1 })
+assert.deepStrictEqual(Struct.pick({ a: "a", b: 1, c: true }, "a", "b"), { a: "a", b: 1 })
 ```
 
 **Signature**

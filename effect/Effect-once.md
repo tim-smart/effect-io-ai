@@ -14,8 +14,7 @@ Effect.once
 **Example**
 
 ```ts
-import * as Effect from "effect/Effect"
-import * as Console from "effect/Console"
+import { Effect, Console } from "effect"
 
 const program = Effect.gen(function* (_) {
   const twice = Console.log("twice")

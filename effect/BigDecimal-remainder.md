@@ -15,12 +15,20 @@ BigDecimal.remainder
 **Example**
 
 ```ts
-import { remainder, unsafeFromString } from "effect/BigDecimal"
-import { some } from "effect/Option"
+import { BigDecimal, Option } from "effect"
 
-assert.deepStrictEqual(remainder(unsafeFromString("2"), unsafeFromString("2")), some(unsafeFromString("0")))
-assert.deepStrictEqual(remainder(unsafeFromString("3"), unsafeFromString("2")), some(unsafeFromString("1")))
-assert.deepStrictEqual(remainder(unsafeFromString("-4"), unsafeFromString("2")), some(unsafeFromString("0")))
+assert.deepStrictEqual(
+  BigDecimal.remainder(BigDecimal.unsafeFromString("2"), BigDecimal.unsafeFromString("2")),
+  Option.some(BigDecimal.unsafeFromString("0"))
+)
+assert.deepStrictEqual(
+  BigDecimal.remainder(BigDecimal.unsafeFromString("3"), BigDecimal.unsafeFromString("2")),
+  Option.some(BigDecimal.unsafeFromString("1"))
+)
+assert.deepStrictEqual(
+  BigDecimal.remainder(BigDecimal.unsafeFromString("-4"), BigDecimal.unsafeFromString("2")),
+  Option.some(BigDecimal.unsafeFromString("0"))
+)
 ```
 
 **Signature**

@@ -13,10 +13,9 @@ Iterable.getLefts
 **Example**
 
 ```ts
-import { getLefts } from "effect/Iterable"
-import { right, left } from "effect/Either"
+import { Iterable, Either } from "effect"
 
-assert.deepStrictEqual(Array.from(getLefts([right(1), left("err"), right(2)])), ["err"])
+assert.deepStrictEqual(Array.from(Iterable.getLefts([Either.right(1), Either.left("err"), Either.right(2)])), ["err"])
 ```
 
 **Signature**

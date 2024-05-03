@@ -22,7 +22,7 @@ Effect.andThen
 **Example**
 
 ```ts
-import * as Effect from "effect/Effect"
+import { Effect } from "effect"
 
 assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen(1))), 1)
 assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen((s) => s.length))), 2)

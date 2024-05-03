@@ -13,8 +13,7 @@ Data.case
 **Example**
 
 ```ts
-import * as Data from "effect/Data"
-import * as Equal from "effect/Equal"
+import { Data, Equal } from "effect"
 
 interface Person {
   readonly name: string

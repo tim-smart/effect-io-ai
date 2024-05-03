@@ -14,12 +14,12 @@ Option.liftPredicate
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-const getOption = O.liftPredicate((n: number) => n >= 0)
+const getOption = Option.liftPredicate((n: number) => n >= 0)
 
-assert.deepStrictEqual(getOption(-1), O.none())
-assert.deepStrictEqual(getOption(1), O.some(1))
+assert.deepStrictEqual(getOption(-1), Option.none())
+assert.deepStrictEqual(getOption(1), Option.some(1))
 ```
 
 **Signature**

@@ -14,7 +14,7 @@ Metric.gauge
 **Example**
 
 ```ts
-import * as Metric from "effect/Metric"
+import { Metric } from "effect"
 
 const numberGauge = Metric.gauge("memory_usage", {
   description: "A gauge for memory usage"

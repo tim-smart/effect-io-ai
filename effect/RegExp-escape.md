@@ -13,7 +13,7 @@ RegExp.escape
 **Example**
 
 ```ts
-import * as RegExp from "effect/RegExp"
+import { RegExp } from "effect"
 
 assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
 ```

@@ -13,9 +13,9 @@ Option.firstSomeOf
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.firstSomeOf([O.none(), O.some(1), O.some(2)]), O.some(1))
+assert.deepStrictEqual(Option.firstSomeOf([Option.none(), Option.some(1), Option.some(2)]), Option.some(1))
 ```
 
 **Signature**

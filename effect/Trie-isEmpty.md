@@ -13,7 +13,7 @@ Trie.isEmpty
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>()
 const trie1 = trie.pipe(Trie.insert("ma", 0))

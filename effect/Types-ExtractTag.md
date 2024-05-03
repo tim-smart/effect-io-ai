@@ -13,7 +13,7 @@ Types.ExtractTag
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res = Types.ExtractTag<{ _tag: "a"; a: number } | { _tag: "b"; b: number }, "b"> // { _tag: "b", b: number }
 ```

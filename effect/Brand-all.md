@@ -14,7 +14,7 @@ Brand.all
 **Example**
 
 ```ts
-import * as Brand from "effect/Brand"
+import { Brand } from "effect"
 
 type Int = number & Brand.Brand<"Int">
 const Int = Brand.refined<Int>(

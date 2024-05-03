@@ -15,10 +15,10 @@ Either.getOrThrow
 **Example**
 
 ```ts
-import * as E from "effect/Either"
+import { Either } from "effect"
 
-assert.deepStrictEqual(E.getOrThrow(E.right(1)), 1)
-assert.throws(() => E.getOrThrow(E.left("error")))
+assert.deepStrictEqual(Either.getOrThrow(Either.right(1)), 1)
+assert.throws(() => Either.getOrThrow(Either.left("error")))
 ```
 
 **Signature**

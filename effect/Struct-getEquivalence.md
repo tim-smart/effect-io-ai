@@ -16,13 +16,11 @@ Struct.getEquivalence
 **Example**
 
 ```ts
-import { getEquivalence } from "effect/Struct"
-import * as S from "effect/String"
-import * as N from "effect/Number"
+import { Struct, String, Number } from "effect"
 
-const PersonEquivalence = getEquivalence({
-  name: S.Equivalence,
-  age: N.Equivalence
+const PersonEquivalence = Struct.getEquivalence({
+  name: String.Equivalence,
+  age: Number.Equivalence
 })
 
 assert.deepStrictEqual(PersonEquivalence({ name: "John", age: 25 }, { name: "John", age: 25 }), true)

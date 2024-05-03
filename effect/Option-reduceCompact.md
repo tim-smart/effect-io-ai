@@ -13,14 +13,13 @@ Option.reduceCompact
 **Example**
 
 ```ts
-import { some, none, reduceCompact } from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
-const iterable = [some(1), none(), some(2), none()]
+const iterable = [Option.some(1), Option.none(), Option.some(2), Option.none()]
 assert.deepStrictEqual(
   pipe(
     iterable,
-    reduceCompact(0, (b, a) => b + a)
+    Option.reduceCompact(0, (b, a) => b + a)
   ),
   3
 )

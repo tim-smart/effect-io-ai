@@ -13,9 +13,7 @@ Trie.compact
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
-import * as Equal from "effect/Equal"
-import * as Option from "effect/Option"
+import { Trie, Equal, Option } from "effect"
 
 const trie = Trie.empty<Option.Option<number>>().pipe(
   Trie.insert("shells", Option.some(0)),

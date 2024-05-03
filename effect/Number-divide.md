@@ -13,11 +13,10 @@ Number.divide
 **Example**
 
 ```ts
-import { divide } from "effect/Number"
-import { some, none } from "effect/Option"
+import { Number, Option } from "effect"
 
-assert.deepStrictEqual(divide(6, 3), some(2))
-assert.deepStrictEqual(divide(6, 0), none())
+assert.deepStrictEqual(Number.divide(6, 3), Option.some(2))
+assert.deepStrictEqual(Number.divide(6, 0), Option.none())
 ```
 
 **Signature**

@@ -15,8 +15,7 @@ Cron.next
 **Example**
 
 ```ts
-import * as Cron from "effect/Cron"
-import * as Either from "effect/Either"
+import { Cron, Either } from "effect"
 
 const after = new Date("2021-01-01 00:00:00")
 const cron = Either.getOrThrow(Cron.parse("0 4 8-14 * *"))

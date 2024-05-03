@@ -13,7 +13,7 @@ Data.tagged
 **Example**
 
 ```ts
-import * as Data from "effect/Data"
+import { Data } from "effect"
 
 interface Person {
   readonly _tag: "Person" // the tag

@@ -14,7 +14,7 @@ List.appendAll
 **Example**
 
 ```ts
-import * as List from "effect/List"
+import { List } from "effect"
 
 assert.deepStrictEqual(List.make(1, 2).pipe(List.appendAll(List.make("a", "b")), List.toArray), [1, 2, "a", "b"])
 ```

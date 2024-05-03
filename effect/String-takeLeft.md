@@ -20,9 +20,9 @@ String.takeLeft
 **Example**
 
 ```ts
-import * as S from "effect/String"
+import { String } from "effect"
 
-assert.deepStrictEqual(S.takeLeft("Hello World", 5), "Hello")
+assert.deepStrictEqual(String.takeLeft("Hello World", 5), "Hello")
 ```
 
 **Signature**

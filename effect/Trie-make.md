@@ -13,8 +13,7 @@ Trie.make
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
-import * as Equal from "effect/Equal"
+import { Trie, Equal } from "effect"
 
 const trie = Trie.make(["ca", 0], ["me", 1])
 

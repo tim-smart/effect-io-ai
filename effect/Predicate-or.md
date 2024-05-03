@@ -13,10 +13,9 @@ Predicate.or
 **Example**
 
 ```ts
-import * as P from "effect/Predicate"
-import * as N from "effect/Number"
+import { Predicate, Number } from "effect"
 
-const nonZero = P.or(N.lessThan(0), N.greaterThan(0))
+const nonZero = Predicate.or(Number.lessThan(0), Number.greaterThan(0))
 
 assert.deepStrictEqual(nonZero(-1), true)
 assert.deepStrictEqual(nonZero(0), false)

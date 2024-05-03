@@ -13,7 +13,7 @@ Trie.insert
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie1 = Trie.empty<number>().pipe(Trie.insert("call", 0))
 const trie2 = trie1.pipe(Trie.insert("me", 1))

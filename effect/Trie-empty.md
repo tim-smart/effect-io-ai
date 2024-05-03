@@ -13,8 +13,7 @@ Trie.empty
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
-import * as Equal from "effect/Equal"
+import { Trie, Equal } from "effect"
 
 const trie = Trie.empty<string>()
 

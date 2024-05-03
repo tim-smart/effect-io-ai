@@ -13,8 +13,7 @@ Cron.parse
 **Example**
 
 ```ts
-import * as Cron from "effect/Cron"
-import * as Either from "effect/Either"
+import { Cron, Either } from "effect"
 
 // At 04:00 on every day-of-month from 8 through 14.
 assert.deepStrictEqual(

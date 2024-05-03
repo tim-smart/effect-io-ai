@@ -13,8 +13,7 @@ Struct.get
 **Example**
 
 ```ts
-import * as Struct from "effect/Struct"
-import { pipe } from "effect/Function"
+import { pipe, Struct } from "effect"
 
 const value = pipe({ a: 1, b: 2 }, Struct.get("a"))
 

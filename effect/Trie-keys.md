@@ -15,7 +15,7 @@ Trie.keys
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(Trie.insert("cab", 0), Trie.insert("abc", 1), Trie.insert("bca", 2))
 

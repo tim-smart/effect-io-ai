@@ -13,10 +13,9 @@ Predicate.mapInput
 **Example**
 
 ```ts
-import * as P from "effect/Predicate"
-import * as N from "effect/Number"
+import { Predicate, Number } from "effect"
 
-const minLength3 = P.mapInput(N.greaterThan(2), (s: string) => s.length)
+const minLength3 = Predicate.mapInput(Number.greaterThan(2), (s: string) => s.length)
 
 assert.deepStrictEqual(minLength3("a"), false)
 assert.deepStrictEqual(minLength3("aa"), false)

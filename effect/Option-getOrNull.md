@@ -13,10 +13,10 @@ Option.getOrNull
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.getOrNull(O.some(1)), 1)
-assert.deepStrictEqual(O.getOrNull(O.none()), null)
+assert.deepStrictEqual(Option.getOrNull(Option.some(1)), 1)
+assert.deepStrictEqual(Option.getOrNull(Option.none()), null)
 ```
 
 **Signature**

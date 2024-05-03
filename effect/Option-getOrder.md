@@ -17,16 +17,14 @@ Option.getOrder
 **Example**
 
 ```ts
-import { none, some, getOrder } from "effect/Option"
-import * as N from "effect/Number"
-import { pipe } from "effect/Function"
+import { pipe, Option, Number } from "effect"
 
-const O = getOrder(N.Order)
-assert.deepStrictEqual(O(none(), none()), 0)
-assert.deepStrictEqual(O(none(), some(1)), -1)
-assert.deepStrictEqual(O(some(1), none()), 1)
-assert.deepStrictEqual(O(some(1), some(2)), -1)
-assert.deepStrictEqual(O(some(1), some(1)), 0)
+const O = Option.getOrder(Number.Order)
+assert.deepStrictEqual(O(Option.none(), Option.none()), 0)
+assert.deepStrictEqual(O(Option.none(), Option.some(1)), -1)
+assert.deepStrictEqual(O(Option.some(1), Option.none()), 1)
+assert.deepStrictEqual(O(Option.some(1), Option.some(2)), -1)
+assert.deepStrictEqual(O(Option.some(1), Option.some(1)), 0)
 ```
 
 **Signature**

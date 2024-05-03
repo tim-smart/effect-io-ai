@@ -14,11 +14,11 @@ Option.toRefinement
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-const parsePositive = (n: number): O.Option<number> => (n > 0 ? O.some(n) : O.none())
+const parsePositive = (n: number): Option.Option<number> => (n > 0 ? Option.some(n) : Option.none())
 
-const isPositive = O.toRefinement(parsePositive)
+const isPositive = Option.toRefinement(parsePositive)
 
 assert.deepStrictEqual(isPositive(1), true)
 assert.deepStrictEqual(isPositive(-1), false)

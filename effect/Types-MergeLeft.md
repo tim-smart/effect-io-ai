@@ -13,6 +13,6 @@ Types.MergeLeft
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 type MergeLeft = Types.MergeLeft<{ a: number; b: number }, { a: string }> // { a: number; b: number; }
 ```

@@ -20,6 +20,8 @@ Function.pipe
 
 ```ts
 import { pipe } from "effect/Function"
+// Alternatively, you can use the following import syntax, as `pipe` is also conveniently exported from the `effect` entry point:
+// import { pipe } from "effect"
 
 const length = (s: string): number => s.length
 const double = (n: number): number => n * 2

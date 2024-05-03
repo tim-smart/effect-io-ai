@@ -14,7 +14,7 @@ Metric.counter
 **Example**
 
 ```ts
-import * as Metric from "effect/Metric"
+import { Metric } from "effect"
 
 const numberCounter = Metric.counter("count", {
   description: "A number counter"

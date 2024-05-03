@@ -13,7 +13,7 @@ Iterable.prependAll
 **Example**
 
 ```ts
-import * as Iterable from "effect/Iterable"
+import { Iterable } from "effect"
 
 assert.deepStrictEqual(Array.from(Iterable.prependAll([1, 2], ["a", "b"])), ["a", "b", 1, 2])
 ```

@@ -15,10 +15,10 @@ Option.toArray
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.toArray(O.some(1)), [1])
-assert.deepStrictEqual(O.toArray(O.none()), [])
+assert.deepStrictEqual(Option.toArray(Option.some(1)), [1])
+assert.deepStrictEqual(Option.toArray(Option.none()), [])
 ```
 
 **Signature**

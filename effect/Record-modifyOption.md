@@ -14,13 +14,12 @@ Record.modifyOption
 **Example**
 
 ```ts
-import { modifyOption } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record as R, Option } from "effect"
 
 const f = (x: number) => x * 2
 
-assert.deepStrictEqual(modifyOption({ a: 3 }, "a", f), some({ a: 6 }))
-assert.deepStrictEqual(modifyOption({ a: 3 } as Record<string, number>, "b", f), none())
+assert.deepStrictEqual(R.modifyOption({ a: 3 }, "a", f), Option.some({ a: 6 }))
+assert.deepStrictEqual(R.modifyOption({ a: 3 } as Record<string, number>, "b", f), Option.none())
 ```
 
 **Signature**

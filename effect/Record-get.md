@@ -13,13 +13,12 @@ Record.get
 **Example**
 
 ```ts
-import { get } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record as R, Option } from "effect"
 
 const person: Record<string, unknown> = { name: "John Doe", age: 35 }
 
-assert.deepStrictEqual(get(person, "name"), some("John Doe"))
-assert.deepStrictEqual(get(person, "email"), none())
+assert.deepStrictEqual(R.get(person, "name"), Option.some("John Doe"))
+assert.deepStrictEqual(R.get(person, "email"), Option.none())
 ```
 
 **Signature**

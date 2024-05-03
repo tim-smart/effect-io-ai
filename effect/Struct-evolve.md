@@ -14,13 +14,12 @@ Struct.evolve
 **Example**
 
 ```ts
-import { evolve } from "effect/Struct"
-import { pipe } from "effect/Function"
+import { pipe, Struct } from "effect"
 
 assert.deepStrictEqual(
   pipe(
     { a: "a", b: 1, c: 3 },
-    evolve({
+    Struct.evolve({
       a: (a) => a.length,
       b: (b) => b * 2
     })

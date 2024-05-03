@@ -13,17 +13,17 @@ Option.liftNullable
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
 const parse = (s: string): number | undefined => {
   const n = parseFloat(s)
   return isNaN(n) ? undefined : n
 }
 
-const parseOption = O.liftNullable(parse)
+const parseOption = Option.liftNullable(parse)
 
-assert.deepStrictEqual(parseOption("1"), O.some(1))
-assert.deepStrictEqual(parseOption("not a number"), O.none())
+assert.deepStrictEqual(parseOption("1"), Option.some(1))
+assert.deepStrictEqual(parseOption("not a number"), Option.none())
 ```
 
 **Signature**

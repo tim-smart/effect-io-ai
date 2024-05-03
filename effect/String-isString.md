@@ -13,10 +13,10 @@ String.isString
 **Example**
 
 ```ts
-import { isString } from "effect/String"
+import { String } from "effect"
 
-assert.deepStrictEqual(isString("a"), true)
-assert.deepStrictEqual(isString(1), false)
+assert.deepStrictEqual(String.isString("a"), true)
+assert.deepStrictEqual(String.isString(1), false)
 ```
 
 **Signature**

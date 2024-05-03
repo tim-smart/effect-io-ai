@@ -14,9 +14,9 @@ Boolean.match
 **Example**
 
 ```ts
-import * as B from "effect/Boolean"
+import { Boolean } from "effect"
 
-assert.deepStrictEqual(B.match(true, { onFalse: () => "It's false!", onTrue: () => "It's true!" }), "It's true!")
+assert.deepStrictEqual(Boolean.match(true, { onFalse: () => "It's false!", onTrue: () => "It's true!" }), "It's true!")
 ```
 
 **Signature**

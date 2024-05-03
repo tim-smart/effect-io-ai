@@ -17,7 +17,7 @@ Either.all
 **Example**
 
 ```ts
-import * as Either from "effect/Either"
+import { Either } from "effect"
 
 assert.deepStrictEqual(Either.all([Either.right(1), Either.right(2)]), Either.right([1, 2]))
 assert.deepStrictEqual(

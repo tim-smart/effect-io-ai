@@ -13,7 +13,7 @@ Request.TaggedClass
 **Example**
 
 ```ts
-import * as Request from "effect/Request"
+import { Request } from "effect"
 
 type Success = string
 type Error = never

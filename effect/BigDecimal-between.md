@@ -13,7 +13,7 @@ BigDecimal.between
 **Example**
 
 ```ts
-import * as BigDecimal from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 
 const between = BigDecimal.between({
   minimum: BigDecimal.unsafeFromString("1"),

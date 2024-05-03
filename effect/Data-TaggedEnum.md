@@ -3,7 +3,7 @@
 Create a tagged enum data type, which is a union of `Data` structs.
 
 ```ts
-import * as Data from "effect/Data"
+import { Data } from "effect"
 
 type HttpError = Data.TaggedEnum<{
   BadRequest: { readonly status: 400; readonly message: string }

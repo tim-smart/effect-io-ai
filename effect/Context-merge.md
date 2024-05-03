@@ -13,7 +13,7 @@ Context.merge
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
+import { Context } from "effect"
 
 const Port = Context.GenericTag<{ PORT: number }>("Port")
 const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")

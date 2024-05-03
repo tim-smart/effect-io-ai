@@ -14,12 +14,11 @@ Record.filterMap
 **Example**
 
 ```ts
-import { filterMap } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record, Option } from "effect"
 
 const x = { a: 1, b: 2, c: 3 }
-const f = (a: number, key: string) => (a > 2 ? some(a * 2) : none())
-assert.deepStrictEqual(filterMap(x, f), { c: 6 })
+const f = (a: number, key: string) => (a > 2 ? Option.some(a * 2) : Option.none())
+assert.deepStrictEqual(Record.filterMap(x, f), { c: 6 })
 ```
 
 **Signature**

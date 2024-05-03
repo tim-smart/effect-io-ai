@@ -15,13 +15,13 @@ Either.getOrThrowWith
 **Example**
 
 ```ts
-import * as E from "effect/Either"
+import { Either } from "effect"
 
 assert.deepStrictEqual(
-  E.getOrThrowWith(E.right(1), () => new Error("Unexpected Left")),
+  Either.getOrThrowWith(Either.right(1), () => new Error("Unexpected Left")),
   1
 )
-assert.throws(() => E.getOrThrowWith(E.left("error"), () => new Error("Unexpected Left")))
+assert.throws(() => Either.getOrThrowWith(Either.left("error"), () => new Error("Unexpected Left")))
 ```
 
 **Signature**

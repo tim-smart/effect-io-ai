@@ -13,14 +13,13 @@ Option.exists
 **Example**
 
 ```ts
-import { some, none, exists } from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
 const isEven = (n: number) => n % 2 === 0
 
-assert.deepStrictEqual(pipe(some(2), exists(isEven)), true)
-assert.deepStrictEqual(pipe(some(1), exists(isEven)), false)
-assert.deepStrictEqual(pipe(none(), exists(isEven)), false)
+assert.deepStrictEqual(pipe(Option.some(2), Option.exists(isEven)), true)
+assert.deepStrictEqual(pipe(Option.some(1), Option.exists(isEven)), false)
+assert.deepStrictEqual(pipe(Option.none(), Option.exists(isEven)), false)
 ```
 
 **Signature**

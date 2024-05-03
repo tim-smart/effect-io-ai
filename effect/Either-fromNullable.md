@@ -14,7 +14,7 @@ Either.fromNullable
 **Example**
 
 ```ts
-import * as Either from "effect/Either"
+import { Either } from "effect"
 
 assert.deepStrictEqual(
   Either.fromNullable(1, () => "fallback"),

@@ -13,7 +13,7 @@ Trie.size
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(Trie.insert("a", 0), Trie.insert("b", 1))
 

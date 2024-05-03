@@ -13,8 +13,7 @@ Order.clamp
 **Example**
 
 ```ts
-import * as Order from "effect/Order"
-import * as Number from "effect/Number"
+import { Order, Number } from "effect"
 
 const clamp = Order.clamp(Number.Order)({ minimum: 1, maximum: 5 })
 

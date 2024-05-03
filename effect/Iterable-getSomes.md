@@ -13,10 +13,9 @@ Iterable.getSomes
 **Example**
 
 ```ts
-import { getSomes } from "effect/Iterable"
-import { some, none } from "effect/Option"
+import { Iterable, Option } from "effect"
 
-assert.deepStrictEqual(Array.from(getSomes([some(1), none(), some(2)])), [1, 2])
+assert.deepStrictEqual(Array.from(Iterable.getSomes([Option.some(1), Option.none(), Option.some(2)])), [1, 2])
 ```
 
 **Signature**

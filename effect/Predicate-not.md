@@ -13,10 +13,9 @@ Predicate.not
 **Example**
 
 ```ts
-import * as P from "effect/Predicate"
-import * as N from "effect/Number"
+import { Predicate, Number } from "effect"
 
-const isPositive = P.not(N.lessThan(0))
+const isPositive = Predicate.not(Number.lessThan(0))
 
 assert.deepStrictEqual(isPositive(-1), false)
 assert.deepStrictEqual(isPositive(0), true)

@@ -16,12 +16,12 @@ Option.liftThrowable
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-const parse = O.liftThrowable(JSON.parse)
+const parse = Option.liftThrowable(JSON.parse)
 
-assert.deepStrictEqual(parse("1"), O.some(1))
-assert.deepStrictEqual(parse(""), O.none())
+assert.deepStrictEqual(parse("1"), Option.some(1))
+assert.deepStrictEqual(parse(""), Option.none())
 ```
 
 **Signature**

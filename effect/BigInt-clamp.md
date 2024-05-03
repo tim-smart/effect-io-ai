@@ -17,7 +17,7 @@ BigInt.clamp
 **Example**
 
 ```ts
-import * as BigInt from "effect/BigInt"
+import { BigInt } from "effect"
 
 const clamp = BigInt.clamp({ minimum: 1n, maximum: 5n })
 

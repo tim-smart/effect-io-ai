@@ -15,7 +15,7 @@ Effect.custom
 **Example**
 
 ```ts
-import * as Effect from "effect/Effect"
+import { Effect } from "effect"
 
 const throwingFunction = () => {
   throw new Error()

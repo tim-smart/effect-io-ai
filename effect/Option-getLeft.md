@@ -13,11 +13,10 @@ Option.getLeft
 **Example**
 
 ```ts
-import * as O from "effect/Option"
-import * as E from "effect/Either"
+import { Option, Either } from "effect"
 
-assert.deepStrictEqual(O.getLeft(E.right("ok")), O.none())
-assert.deepStrictEqual(O.getLeft(E.left("a")), O.some("a"))
+assert.deepStrictEqual(Option.getLeft(Either.right("ok")), Option.none())
+assert.deepStrictEqual(Option.getLeft(Either.left("a")), Option.some("a"))
 ```
 
 **Signature**

@@ -14,7 +14,7 @@ Chunk.map
 **Example**
 
 ```ts
-import * as Chunk from "effect/Chunk"
+import { Chunk } from "effect"
 
 assert.deepStrictEqual(
   Chunk.map(Chunk.make(1, 2), (n) => n + 1),

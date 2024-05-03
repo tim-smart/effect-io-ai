@@ -17,12 +17,11 @@ BigInt.toNumber
 **Example**
 
 ```ts
-import { toNumber } from "effect/BigInt"
-import { Option } from "effect"
+import { BigInt as BI, Option } from "effect"
 
-assert.deepStrictEqual(toNumber(BigInt(42)), Option.some(42))
-assert.deepStrictEqual(toNumber(BigInt(Number.MAX_SAFE_INTEGER) + BigInt(1)), Option.none())
-assert.deepStrictEqual(toNumber(BigInt(Number.MIN_SAFE_INTEGER) - BigInt(1)), Option.none())
+assert.deepStrictEqual(BI.toNumber(BigInt(42)), Option.some(42))
+assert.deepStrictEqual(BI.toNumber(BigInt(Number.MAX_SAFE_INTEGER) + BigInt(1)), Option.none())
+assert.deepStrictEqual(BI.toNumber(BigInt(Number.MIN_SAFE_INTEGER) - BigInt(1)), Option.none())
 ```
 
 **Signature**

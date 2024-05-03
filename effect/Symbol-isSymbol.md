@@ -13,10 +13,10 @@ Symbol.isSymbol
 **Example**
 
 ```ts
-import { isSymbol } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.deepStrictEqual(isSymbol(Symbol.for("a")), true)
-assert.deepStrictEqual(isSymbol("a"), false)
+assert.deepStrictEqual(Predicate.isSymbol(Symbol.for("a")), true)
+assert.deepStrictEqual(Predicate.isSymbol("a"), false)
 ```
 
 **Signature**

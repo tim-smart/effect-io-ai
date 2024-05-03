@@ -13,11 +13,10 @@ Struct.omit
 **Example**
 
 ```ts
-import { omit } from "effect/Struct"
-import { pipe } from "effect/Function"
+import { pipe, Struct } from "effect"
 
-assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, omit("c")), { a: "a", b: 1 })
-assert.deepStrictEqual(omit({ a: "a", b: 1, c: true }, "c"), { a: "a", b: 1 })
+assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, Struct.omit("c")), { a: "a", b: 1 })
+assert.deepStrictEqual(Struct.omit({ a: "a", b: 1, c: true }, "c"), { a: "a", b: 1 })
 ```
 
 **Signature**

@@ -13,7 +13,7 @@ Types.Tags
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type Res = Types.Tags<string | { _tag: "a" } | { _tag: "b" }> // "a" | "b"
 ```

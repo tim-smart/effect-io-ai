@@ -13,22 +13,21 @@ Option.orElseSome
 **Example**
 
 ```ts
-import * as O from "effect/Option"
-import { pipe } from "effect/Function"
+import { pipe, Option } from "effect"
 
 assert.deepStrictEqual(
   pipe(
-    O.none(),
-    O.orElseSome(() => "b")
+    Option.none(),
+    Option.orElseSome(() => "b")
   ),
-  O.some("b")
+  Option.some("b")
 )
 assert.deepStrictEqual(
   pipe(
-    O.some("a"),
-    O.orElseSome(() => "b")
+    Option.some("a"),
+    Option.orElseSome(() => "b")
   ),
-  O.some("a")
+  Option.some("a")
 )
 ```
 

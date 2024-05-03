@@ -14,7 +14,7 @@ Chunk.appendAll
 **Example**
 
 ```ts
-import * as Chunk from "effect/Chunk"
+import { Chunk } from "effect"
 
 assert.deepStrictEqual(Chunk.make(1, 2).pipe(Chunk.appendAll(Chunk.make("a", "b")), Chunk.toArray), [1, 2, "a", "b"])
 ```

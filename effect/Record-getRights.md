@@ -13,10 +13,12 @@ Record.getRights
 **Example**
 
 ```ts
-import { getRights } from "effect/Record"
-import { right, left } from "effect/Either"
+import { Record, Either } from "effect"
 
-assert.deepStrictEqual(getRights({ a: right(1), b: left("err"), c: right(2) }), { a: 1, c: 2 })
+assert.deepStrictEqual(Record.getRights({ a: Either.right(1), b: Either.left("err"), c: Either.right(2) }), {
+  a: 1,
+  c: 2
+})
 ```
 
 **Signature**

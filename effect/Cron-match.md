@@ -13,8 +13,7 @@ Cron.match
 **Example**
 
 ```ts
-import * as Cron from "effect/Cron"
-import * as Either from "effect/Either"
+import { Cron, Either } from "effect"
 
 const cron = Either.getOrThrow(Cron.parse("0 4 8-14 * *"))
 assert.deepStrictEqual(Cron.match(cron, new Date("2021-01-08 04:00:00")), true)

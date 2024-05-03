@@ -14,10 +14,9 @@ Record.separate
 **Example**
 
 ```ts
-import { separate } from "effect/Record"
-import { left, right } from "effect/Either"
+import { Record, Either } from "effect"
 
-assert.deepStrictEqual(separate({ a: left("e"), b: right(1) }), [{ a: "e" }, { b: 1 }])
+assert.deepStrictEqual(Record.separate({ a: Either.left("e"), b: Either.right(1) }), [{ a: "e" }, { b: 1 }])
 ```
 
 **Signature**

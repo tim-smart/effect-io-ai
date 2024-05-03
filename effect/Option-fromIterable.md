@@ -14,10 +14,10 @@ Option.fromIterable
 **Example**
 
 ```ts
-import { fromIterable, some, none } from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(fromIterable([1, 2, 3]), some(1))
-assert.deepStrictEqual(fromIterable([]), none())
+assert.deepStrictEqual(Option.fromIterable([1, 2, 3]), Option.some(1))
+assert.deepStrictEqual(Option.fromIterable([]), Option.none())
 ```
 
 **Signature**

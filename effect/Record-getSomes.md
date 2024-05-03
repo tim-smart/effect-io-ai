@@ -13,10 +13,9 @@ Record.getSomes
 **Example**
 
 ```ts
-import { getSomes } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record, Option } from "effect"
 
-assert.deepStrictEqual(getSomes({ a: some(1), b: none(), c: some(2) }), { a: 1, c: 2 })
+assert.deepStrictEqual(Record.getSomes({ a: Option.some(1), b: Option.none(), c: Option.some(2) }), { a: 1, c: 2 })
 ```
 
 **Signature**

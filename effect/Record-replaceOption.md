@@ -13,11 +13,10 @@ Record.replaceOption
 **Example**
 
 ```ts
-import { empty, replaceOption } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record, Option } from "effect"
 
-assert.deepStrictEqual(replaceOption({ a: 1, b: 2, c: 3 }, "a", 10), some({ a: 10, b: 2, c: 3 }))
-assert.deepStrictEqual(replaceOption(empty<string>(), "a", 10), none())
+assert.deepStrictEqual(Record.replaceOption({ a: 1, b: 2, c: 3 }, "a", 10), Option.some({ a: 10, b: 2, c: 3 }))
+assert.deepStrictEqual(Record.replaceOption(Record.empty<string>(), "a", 10), Option.none())
 ```
 
 **Signature**

@@ -16,12 +16,11 @@ BigInt.fromString
 **Example**
 
 ```ts
-import { fromString } from "effect/BigInt"
-import { Option } from "effect"
+import { BigInt as BI, Option } from "effect"
 
-assert.deepStrictEqual(fromString("42"), Option.some(BigInt(42)))
-assert.deepStrictEqual(fromString(" "), Option.none())
-assert.deepStrictEqual(fromString("a"), Option.none())
+assert.deepStrictEqual(BI.fromString("42"), Option.some(BigInt(42)))
+assert.deepStrictEqual(BI.fromString(" "), Option.none())
+assert.deepStrictEqual(BI.fromString("a"), Option.none())
 ```
 
 **Signature**

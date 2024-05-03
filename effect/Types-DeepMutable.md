@@ -13,7 +13,7 @@ Types.DeepMutable
 **Example**
 
 ```ts
-import type * as Types from "effect/Types"
+import type { Types } from "effect"
 
 type DeepMutableStruct = Types.DeepMutable<{
   readonly a: string

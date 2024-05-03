@@ -13,12 +13,12 @@ Predicate.and
 **Example**
 
 ```ts
-import * as P from "effect/Predicate"
+import { Predicate } from "effect"
 
 const minLength = (n: number) => (s: string) => s.length >= n
 const maxLength = (n: number) => (s: string) => s.length <= n
 
-const length = (n: number) => P.and(minLength(n), maxLength(n))
+const length = (n: number) => Predicate.and(minLength(n), maxLength(n))
 
 assert.deepStrictEqual(length(2)("aa"), true)
 assert.deepStrictEqual(length(2)("a"), false)

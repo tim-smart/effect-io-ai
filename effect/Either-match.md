@@ -14,16 +14,15 @@ Either.match
 **Example**
 
 ```ts
-import * as E from "effect/Either"
-import { pipe } from "effect/Function"
+import { pipe, Either } from "effect"
 
 const onLeft = (strings: ReadonlyArray<string>): string => `strings: ${strings.join(", ")}`
 
 const onRight = (value: number): string => `Ok: ${value}`
 
-assert.deepStrictEqual(pipe(E.right(1), E.match({ onLeft, onRight })), "Ok: 1")
+assert.deepStrictEqual(pipe(Either.right(1), Either.match({ onLeft, onRight })), "Ok: 1")
 assert.deepStrictEqual(
-  pipe(E.left(["string 1", "string 2"]), E.match({ onLeft, onRight })),
+  pipe(Either.left(["string 1", "string 2"]), Either.match({ onLeft, onRight })),
   "strings: string 1, string 2"
 )
 ```

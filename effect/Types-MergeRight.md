@@ -13,6 +13,6 @@ Types.MergeRight
 **Example**
 
 ```ts
-import * as Types from "effect/Types"
+import type { Types } from "effect"
 type MergeRight = Types.MergeRight<{ a: number; b: number }, { a: string }> // { a: string; b: number; }
 ```

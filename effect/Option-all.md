@@ -17,11 +17,11 @@ Option.all
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.all([O.some(1), O.some(2)]), O.some([1, 2]))
-assert.deepStrictEqual(O.all({ a: O.some(1), b: O.some("hello") }), O.some({ a: 1, b: "hello" }))
-assert.deepStrictEqual(O.all({ a: O.some(1), b: O.none() }), O.none())
+assert.deepStrictEqual(Option.all([Option.some(1), Option.some(2)]), Option.some([1, 2]))
+assert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.some("hello") }), Option.some({ a: 1, b: "hello" }))
+assert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.none() }), Option.none())
 ```
 
 **Signature**

@@ -14,7 +14,7 @@ Chunk.prependAll
 **Example**
 
 ```ts
-import * as Chunk from "effect/Chunk"
+import { Chunk } from "effect"
 
 assert.deepStrictEqual(Chunk.make(1, 2).pipe(Chunk.prependAll(Chunk.make("a", "b")), Chunk.toArray), ["a", "b", 1, 2])
 ```

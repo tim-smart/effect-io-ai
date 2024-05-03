@@ -13,7 +13,7 @@ Context.isContext
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
+import { Context } from "effect"
 
 assert.strictEqual(Context.isContext(Context.empty()), true)
 ```

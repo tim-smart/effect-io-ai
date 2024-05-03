@@ -13,8 +13,7 @@ Trie.fromIterable
 **Example**
 
 ```ts
-import * as Trie from "effect/Trie"
-import * as Equal from "effect/Equal"
+import { Trie, Equal } from "effect"
 
 const iterable: Array<readonly [string, number]> = [
   ["call", 0],

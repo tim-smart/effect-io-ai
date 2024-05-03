@@ -14,11 +14,10 @@ Record.replace
 **Example**
 
 ```ts
-import { replace } from "effect/Record"
-import { some, none } from "effect/Option"
+import { Record } from "effect"
 
-assert.deepStrictEqual(replace("a", 3)({ a: 1, b: 2 }), { a: 3, b: 2 })
-assert.deepStrictEqual(replace("c", 3)({ a: 1, b: 2 }), { a: 1, b: 2 })
+assert.deepStrictEqual(Record.replace("a", 3)({ a: 1, b: 2 }), { a: 3, b: 2 })
+assert.deepStrictEqual(Record.replace("c", 3)({ a: 1, b: 2 }), { a: 1, b: 2 })
 ```
 
 **Signature**

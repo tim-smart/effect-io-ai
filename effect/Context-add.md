@@ -13,8 +13,7 @@ Context.add
 **Example**
 
 ```ts
-import * as Context from "effect/Context"
-import { pipe } from "effect/Function"
+import { Context, pipe } from "effect"
 
 const Port = Context.GenericTag<{ PORT: number }>("Port")
 const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")

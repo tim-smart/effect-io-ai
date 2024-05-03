@@ -15,13 +15,13 @@ Option.filterMap
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-const evenNumber = (n: number) => (n % 2 === 0 ? O.some(n) : O.none())
+const evenNumber = (n: number) => (n % 2 === 0 ? Option.some(n) : Option.none())
 
-assert.deepStrictEqual(O.filterMap(O.none(), evenNumber), O.none())
-assert.deepStrictEqual(O.filterMap(O.some(3), evenNumber), O.none())
-assert.deepStrictEqual(O.filterMap(O.some(2), evenNumber), O.some(2))
+assert.deepStrictEqual(Option.filterMap(Option.none(), evenNumber), Option.none())
+assert.deepStrictEqual(Option.filterMap(Option.some(3), evenNumber), Option.none())
+assert.deepStrictEqual(Option.filterMap(Option.some(2), evenNumber), Option.some(2))
 ```
 
 **Signature**

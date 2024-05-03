@@ -13,11 +13,11 @@ Option.isOption
 **Example**
 
 ```ts
-import { some, none, isOption } from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(isOption(some(1)), true)
-assert.deepStrictEqual(isOption(none()), true)
-assert.deepStrictEqual(isOption({}), false)
+assert.deepStrictEqual(Option.isOption(Option.some(1)), true)
+assert.deepStrictEqual(Option.isOption(Option.none()), true)
+assert.deepStrictEqual(Option.isOption({}), false)
 ```
 
 **Signature**

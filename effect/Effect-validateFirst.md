@@ -16,8 +16,7 @@ Effect.validateFirst
 **Example**
 
 ```ts
-import * as Effect from "effect/Effect"
-import * as Exit from "effect/Exit"
+import { Effect, Exit } from "effect"
 
 const f = (n: number) => (n > 0 ? Effect.succeed(n) : Effect.fail(`${n} is negative`))
 

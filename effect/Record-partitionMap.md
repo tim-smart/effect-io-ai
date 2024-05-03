@@ -13,12 +13,11 @@ Record.partitionMap
 **Example**
 
 ```ts
-import { partitionMap } from "effect/Record"
-import { left, right } from "effect/Either"
+import { Record, Either } from "effect"
 
 const x = { a: 1, b: 2, c: 3 }
-const f = (n: number) => (n % 2 === 0 ? right(n) : left(n))
-assert.deepStrictEqual(partitionMap(x, f), [{ a: 1, c: 3 }, { b: 2 }])
+const f = (n: number) => (n % 2 === 0 ? Either.right(n) : Either.left(n))
+assert.deepStrictEqual(Record.partitionMap(x, f), [{ a: 1, c: 3 }, { b: 2 }])
 ```
 
 **Signature**

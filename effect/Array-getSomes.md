@@ -13,10 +13,9 @@ Array.getSomes
 **Example**
 
 ```ts
-import { getSomes } from "effect/Array"
-import { some, none } from "effect/Option"
+import { Array, Option } from "effect"
 
-assert.deepStrictEqual(getSomes([some(1), none(), some(2)]), [1, 2])
+assert.deepStrictEqual(Array.getSomes([Option.some(1), Option.none(), Option.some(2)]), [1, 2])
 ```
 
 **Signature**

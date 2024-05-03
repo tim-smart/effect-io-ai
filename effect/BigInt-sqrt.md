@@ -13,13 +13,12 @@ BigInt.sqrt
 **Example**
 
 ```ts
-import { sqrt } from "effect/BigInt"
-import * as Option from "effect/Option"
+import { BigInt, Option } from "effect"
 
-assert.deepStrictEqual(sqrt(4n), Option.some(2n))
-assert.deepStrictEqual(sqrt(9n), Option.some(3n))
-assert.deepStrictEqual(sqrt(16n), Option.some(4n))
-assert.deepStrictEqual(sqrt(-1n), Option.none())
+assert.deepStrictEqual(BigInt.sqrt(4n), Option.some(2n))
+assert.deepStrictEqual(BigInt.sqrt(9n), Option.some(3n))
+assert.deepStrictEqual(BigInt.sqrt(16n), Option.some(4n))
+assert.deepStrictEqual(BigInt.sqrt(-1n), Option.none())
 ```
 
 **Signature**

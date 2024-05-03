@@ -15,10 +15,10 @@ Option.getOrThrow
 **Example**
 
 ```ts
-import * as O from "effect/Option"
+import { Option } from "effect"
 
-assert.deepStrictEqual(O.getOrThrow(O.some(1)), 1)
-assert.throws(() => O.getOrThrow(O.none()))
+assert.deepStrictEqual(Option.getOrThrow(Option.some(1)), 1)
+assert.throws(() => Option.getOrThrow(Option.none()))
 ```
 
 **Signature**

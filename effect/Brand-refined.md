@@ -17,7 +17,7 @@ Brand.refined
 **Example**
 
 ```ts
-import * as Brand from "effect/Brand"
+import { Brand } from "effect"
 
 type Int = number & Brand.Brand<"Int">
 
