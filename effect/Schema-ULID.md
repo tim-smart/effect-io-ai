@@ -12,9 +12,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.ULID
 ```
-
-**Signature**
-
-```ts
-export declare const ULID: $String
-```

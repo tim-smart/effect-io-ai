@@ -10,9 +10,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.BooleanFromUnknown
 ```
-
-**Signature**
-
-```ts
-export declare const BooleanFromUnknown: BooleanFromUnknown
-```

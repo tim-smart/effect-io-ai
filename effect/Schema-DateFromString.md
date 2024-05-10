@@ -9,9 +9,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.DateFromString
 ```
-
-**Signature**
-
-```ts
-export declare const DateFromString: DateFromString
-```

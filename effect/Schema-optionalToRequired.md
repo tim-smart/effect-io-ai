@@ -1,7 +1,9 @@
 # optionalToRequired
 
-- `decode`: `none` as argument means: the value is missing in the input
-- `encode`: `none` as return value means: the value will be missing in the output
+Converts an optional property to a required one through a transformation `Option -> Option`.
+
+- `decode`: `none` as argument means the value is missing in the input.
+- `encode`: `none` as return value means the value will be missing in the output.
 
 To import and use `optionalToRequired` from the "Schema" module:
 
@@ -18,5 +20,5 @@ export declare const optionalToRequired: <FA, FI, FR, TA, TI, TR>(
   from: Schema<FA, FI, FR>,
   to: Schema<TA, TI, TR>,
   options: { readonly decode: (o: option_.Option<FA>) => TI; readonly encode: (ti: TI) => option_.Option<FA> }
-) => PropertySignature<":", TA, never, "?:", FI, FR | TR>
+) => PropertySignature<":", TA, never, "?:", FI, false, FR | TR>
 ```

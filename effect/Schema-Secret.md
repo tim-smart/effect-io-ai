@@ -9,9 +9,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.Secret
 ```
-
-**Signature**
-
-```ts
-export declare const Secret: Secret
-```

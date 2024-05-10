@@ -1,6 +1,6 @@
 # NumberFromString
 
-This schema transforms a `string` into a `number` by parsing the string using the `Number` function.
+This schema transforms a `string` into a `number` by parsing the string using the `parse` function of the `effect/Number` module.
 
 It returns an error if the value can't be converted (for example when non-numeric characters are provided).
 
@@ -12,10 +12,4 @@ To import and use `NumberFromString` from the "Schema" module:
 import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.NumberFromString
-```
-
-**Signature**
-
-```ts
-export declare const NumberFromString: NumberFromString
 ```

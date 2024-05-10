@@ -18,7 +18,7 @@ export declare const declare: {
   <A>(
     is: (input: unknown) => input is A,
     annotations?: Annotations.Schema<A, readonly []> | undefined
-  ): Schema<A, A, never>
+  ): SchemaClass<A, A, never>
   <const P extends readonly Schema.Any[], I, A>(
     typeParameters: P,
     options: {
@@ -38,6 +38,6 @@ export declare const declare: {
       ) => Effect.Effect<I, ParseResult.ParseIssue, never>
     },
     annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]> }> | undefined
-  ): Schema<A, I, Schema.Context<P[number]>>
+  ): SchemaClass<A, I, Schema.Context<P[number]>>
 }
 ```

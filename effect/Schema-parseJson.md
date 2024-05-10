@@ -28,7 +28,7 @@ assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson(S.Struct({ a: S.NumberFro
 
 ```ts
 export declare const parseJson: {
-  <A, I, R>(schema: Schema<A, I, R>, options?: ParseJsonOptions): Schema<A, string, R>
-  (options?: ParseJsonOptions): Schema<unknown, string>
+  <A, I, R>(schema: Schema<A, I, R>, options?: ParseJsonOptions): SchemaClass<A, string, R>
+  (options?: ParseJsonOptions): SchemaClass<unknown, string>
 }
 ```

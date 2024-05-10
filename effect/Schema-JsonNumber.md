@@ -24,9 +24,3 @@ assert.deepStrictEqual(is(Number.NaN), false)
 assert.deepStrictEqual(is(Number.POSITIVE_INFINITY), false)
 assert.deepStrictEqual(is(Number.NEGATIVE_INFINITY), false)
 ```
-
-**Signature**
-
-```ts
-export declare const JsonNumber: $Number
-```

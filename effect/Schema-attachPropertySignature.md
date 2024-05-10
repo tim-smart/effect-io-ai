@@ -39,12 +39,12 @@ export declare const attachPropertySignature: {
     key: K,
     value: V,
     annotations?: Annotations.Schema<Types.Simplify<A & { readonly [k in K]: V }>, readonly []> | undefined
-  ): <I, R>(schema: Schema<A, I, R>) => Schema<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
+  ): <I, R>(schema: SchemaClass<A, I, R>) => Schema<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
   <A, I, R, K extends PropertyKey, V extends symbol | AST.LiteralValue>(
     schema: Schema<A, I, R>,
     key: K,
     value: V,
     annotations?: Annotations.Schema<Types.Simplify<A & { readonly [k in K]: V }>, readonly []> | undefined
-  ): Schema<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
+  ): SchemaClass<Types.Simplify<A & { readonly [k in K]: V }>, I, R>
 }
 ```

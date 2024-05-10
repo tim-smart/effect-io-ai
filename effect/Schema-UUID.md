@@ -11,9 +11,3 @@ import * as Schema from "@effect/schema/Schema"
 // Can be accessed like this
 Schema.UUID
 ```
-
-**Signature**
-
-```ts
-export declare const UUID: $String
-```
