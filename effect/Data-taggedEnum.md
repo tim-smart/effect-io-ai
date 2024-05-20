@@ -47,46 +47,57 @@ const success = Success({ value: 1 })
 
 ```ts
 export declare const taggedEnum: {
-  <Z extends TaggedEnum.WithGenerics<1>>(): {
-    readonly [Tag in Z["taggedEnum"]["_tag"]]: <A>(
-      args: TaggedEnum.Args<
-        TaggedEnum.Kind<Z, A, unknown, unknown, unknown>,
-        Tag,
-        Extract<TaggedEnum.Kind<Z, A, unknown, unknown, unknown>, { readonly _tag: Tag }>
-      >
-    ) => Extract<TaggedEnum.Kind<Z, A, unknown, unknown, unknown>, { readonly _tag: Tag }>
-  }
-  <Z extends TaggedEnum.WithGenerics<2>>(): {
-    readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B>(
-      args: TaggedEnum.Args<
-        TaggedEnum.Kind<Z, A, B, unknown, unknown>,
-        Tag,
-        Extract<TaggedEnum.Kind<Z, A, B, unknown, unknown>, { readonly _tag: Tag }>
-      >
-    ) => Extract<TaggedEnum.Kind<Z, A, B, unknown, unknown>, { readonly _tag: Tag }>
-  }
-  <Z extends TaggedEnum.WithGenerics<3>>(): {
-    readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C>(
-      args: TaggedEnum.Args<
-        TaggedEnum.Kind<Z, A, B, C, unknown>,
-        Tag,
-        Extract<TaggedEnum.Kind<Z, A, B, C, unknown>, { readonly _tag: Tag }>
-      >
-    ) => Extract<TaggedEnum.Kind<Z, A, B, C, unknown>, { readonly _tag: Tag }>
-  }
-  <Z extends TaggedEnum.WithGenerics<4>>(): {
-    readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C, D>(
-      args: TaggedEnum.Args<
-        TaggedEnum.Kind<Z, A, B, C, D>,
-        Tag,
-        Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
-      >
-    ) => Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
-  }
+  <Z extends TaggedEnum.WithGenerics<1>>(): Types.Simplify<
+    {
+      readonly [Tag in Z["taggedEnum"]["_tag"]]: <A>(
+        args: TaggedEnum.Args<
+          TaggedEnum.Kind<Z, A, unknown, unknown, unknown>,
+          Tag,
+          Extract<TaggedEnum.Kind<Z, A, unknown, unknown, unknown>, { readonly _tag: Tag }>
+        >
+      ) => Extract<TaggedEnum.Kind<Z, A, unknown, unknown, unknown>, { readonly _tag: Tag }>
+    } & TaggedEnum.GenericMatchers<Z>
+  >
+  <Z extends TaggedEnum.WithGenerics<2>>(): Types.Simplify<
+    {
+      readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B>(
+        args: TaggedEnum.Args<
+          TaggedEnum.Kind<Z, A, B, unknown, unknown>,
+          Tag,
+          Extract<TaggedEnum.Kind<Z, A, B, unknown, unknown>, { readonly _tag: Tag }>
+        >
+      ) => Extract<TaggedEnum.Kind<Z, A, B, unknown, unknown>, { readonly _tag: Tag }>
+    } & TaggedEnum.GenericMatchers<Z>
+  >
+  <Z extends TaggedEnum.WithGenerics<3>>(): Types.Simplify<
+    {
+      readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C>(
+        args: TaggedEnum.Args<
+          TaggedEnum.Kind<Z, A, B, C, unknown>,
+          Tag,
+          Extract<TaggedEnum.Kind<Z, A, B, C, unknown>, { readonly _tag: Tag }>
+        >
+      ) => Extract<TaggedEnum.Kind<Z, A, B, C, unknown>, { readonly _tag: Tag }>
+    } & TaggedEnum.GenericMatchers<Z>
+  >
+  <Z extends TaggedEnum.WithGenerics<4>>(): Types.Simplify<
+    {
+      readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C, D>(
+        args: TaggedEnum.Args<
+          TaggedEnum.Kind<Z, A, B, C, D>,
+          Tag,
+          Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
+        >
+      ) => Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag }>
+    } & TaggedEnum.GenericMatchers<Z>
+  >
   <A extends { readonly _tag: string }>(): Types.Simplify<
     { readonly [Tag in A["_tag"]]: Case.Constructor<Extract<A, { readonly _tag: Tag }>, "_tag"> } & {
       readonly $is: <Tag>(tag: Tag) => (u: unknown) => u is Extract<A, { readonly _tag: Tag }>
-      readonly $match: <Cases>(cases: Cases) => (value: A) => ReturnType<Cases[A["_tag"]]>
+      readonly $match: {
+        <Cases>(cases: Cases): (value: A) => Unify<ReturnType<Cases[A["_tag"]]>>
+        <Cases>(value: A, cases: Cases): Unify<ReturnType<Cases[A["_tag"]]>>
+      }
     }
   >
 }

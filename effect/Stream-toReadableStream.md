@@ -15,5 +15,5 @@ Stream.toReadableStream
 **Signature**
 
 ```ts
-export declare const toReadableStream: <A, E>(source: Stream<A, E, never>) => ReadableStream<A>
+export declare const toReadableStream: <A, E>(self: Stream<A, E, never>) => ReadableStream<A>
 ```
