@@ -1,10 +1,10 @@
 # repeat
 
-Returns a new effect that repeats this effect according to the specified
-schedule or until the first failure. Scheduled recurrences are in addition
-to the first execution, so that `io.repeat(Schedule.once)` yields an effect
-that executes `io`, and then if that succeeds, executes `io` an additional
-time.
+The `repeat` function returns a new effect that repeats the given effect
+according to a specified schedule or until the first failure. The scheduled
+recurrences are in addition to the initial execution, so `Effect.repeat(action,
+Schedule.once)` executes `action` once initially, and if it succeeds, repeats it
+an additional time.
 
 To import and use `repeat` from the "Effect" module:
 
@@ -12,6 +12,45 @@ To import and use `repeat` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.repeat
+```
+
+**Example**
+
+```ts
+// Success Example
+import { Effect, Schedule, Console } from "effect"
+
+const action = Console.log("success")
+const policy = Schedule.addDelay(Schedule.recurs(2), () => "100 millis")
+const program = Effect.repeat(action, policy)
+
+Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
+```
+
+**Example**
+
+```ts
+// Failure Example
+import { Effect, Schedule } from "effect"
+
+let count = 0
+
+// Define an async effect that simulates an action with possible failures
+const action = Effect.async<string, string>((resume) => {
+  if (count > 1) {
+    console.log("failure")
+    resume(Effect.fail("Uh oh!"))
+  } else {
+    count++
+    console.log("success")
+    resume(Effect.succeed("yay!"))
+  }
+})
+
+const policy = Schedule.addDelay(Schedule.recurs(2), () => "100 millis")
+const program = Effect.repeat(action, policy)
+
+Effect.runPromiseExit(program).then(console.log)
 ```
 
 **Signature**

@@ -1,12 +1,11 @@
 # repeatOrElse
 
-Returns a new effect that repeats this effect according to the specified
-schedule or until the first failure, at which point, the failure value and
-schedule output are passed to the specified handler.
-
-Scheduled recurrences are in addition to the first execution, so that
-`pipe(effect, Effect.repeat(Schedule.once()))` yields an effect that executes
-`effect`, and then if that succeeds, executes `effect` an additional time.
+The `repeatOrElse` function returns a new effect that repeats the specified
+effect according to the given schedule or until the first failure. When a
+failure occurs, the failure value and schedule output are passed to a
+specified handler. Scheduled recurrences are in addition to the initial
+execution, so `Effect.repeat(action, Schedule.once)` executes `action` once
+initially and then repeats it an additional time if it succeeds.
 
 To import and use `repeatOrElse` from the "Effect" module:
 
@@ -14,6 +13,40 @@ To import and use `repeatOrElse` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.repeatOrElse
+```
+
+**Example**
+
+```ts
+import { Effect, Schedule } from "effect"
+
+let count = 0
+
+// Define an async effect that simulates an action with possible failures
+const action = Effect.async<string, string>((resume) => {
+  if (count > 1) {
+    console.log("failure")
+    resume(Effect.fail("Uh oh!"))
+  } else {
+    count++
+    console.log("success")
+    resume(Effect.succeed("yay!"))
+  }
+})
+
+const policy = Schedule.addDelay(
+  Schedule.recurs(2), // Repeat for a maximum of 2 times
+  () => "100 millis" // Add a delay of 100 milliseconds between repetitions
+)
+
+const program = Effect.repeatOrElse(action, policy, () =>
+  Effect.sync(() => {
+    console.log("orElse")
+    return count - 1
+  })
+)
+
+Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
 ```
 
 **Signature**
