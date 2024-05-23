@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.intersperse
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3]
+const result = Array.intersperse(numbers, 0)
+assert.deepStrictEqual(result, [1, 0, 2, 0, 3])
+```
+
 **Signature**
 
 ```ts

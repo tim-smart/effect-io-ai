@@ -11,6 +11,26 @@ import * as Array from "effect/Array"
 Array.groupBy
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const people = [
+  { name: "Alice", group: "A" },
+  { name: "Bob", group: "B" },
+  { name: "Charlie", group: "A" }
+]
+const result = Array.groupBy(people, (person) => person.group)
+assert.deepStrictEqual(result, {
+  A: [
+    { name: "Alice", group: "A" },
+    { name: "Charlie", group: "A" }
+  ],
+  B: [{ name: "Bob", group: "B" }]
+})
+```
+
 **Signature**
 
 ```ts

@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.unappend
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.unappend([1, 2, 3, 4])
+assert.deepStrictEqual(result, [[1, 2, 3], 4])
+```
+
 **Signature**
 
 ```ts

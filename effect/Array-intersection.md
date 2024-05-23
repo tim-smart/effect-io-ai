@@ -11,6 +11,17 @@ import * as Array from "effect/Array"
 Array.intersection
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [1, 2, 3]
+const array2 = [3, 4, 1]
+const result = Array.intersection(array1, array2)
+assert.deepStrictEqual(result, [1, 3])
+```
+
 **Signature**
 
 ```ts

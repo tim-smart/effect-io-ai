@@ -10,6 +10,17 @@ import * as Array from "effect/Array"
 Array.cartesianWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [1, 2]
+const array2 = ["a", "b"]
+const product = Array.cartesianWith(array1, array2, (a, b) => `${a}-${b}`)
+assert.deepStrictEqual(product, ["1-a", "1-b", "2-a", "2-b"])
+```
+
 **Signature**
 
 ```ts

@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.findFirst
 ```
 
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.findFirst(numbers, (x) => x > 3)
+assert.deepStrictEqual(result, Option.some(4))
+```
+
 **Signature**
 
 ```ts

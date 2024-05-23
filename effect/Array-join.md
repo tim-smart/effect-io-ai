@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.join
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const strings = ["a", "b", "c"]
+const joined = Array.join(strings, "-")
+assert.deepStrictEqual(joined, "a-b-c")
+```
+
 **Signature**
 
 ```ts

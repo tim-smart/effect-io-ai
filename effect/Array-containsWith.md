@@ -10,6 +10,18 @@ import * as Array from "effect/Array"
 Array.containsWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4]
+const isEquivalent = (a: number, b: number) => a === b
+const containsNumber = Array.containsWith(isEquivalent)
+const result = containsNumber(3)(numbers)
+assert.deepStrictEqual(result, true)
+```
+
 **Signature**
 
 ```ts

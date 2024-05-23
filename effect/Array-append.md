@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.append
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const original = [1, 2, 3]
+const result = Array.append(original, 4)
+assert.deepStrictEqual(result, [1, 2, 3, 4])
+```
+
 **Signature**
 
 ```ts

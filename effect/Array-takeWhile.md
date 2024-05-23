@@ -10,6 +10,22 @@ import * as Array from "effect/Array"
 Array.takeWhile
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 3, 2, 4, 1, 2]
+const result = Array.takeWhile(numbers, (x) => x < 4)
+assert.deepStrictEqual(result, [1, 3, 2])
+
+// Explanation:
+// - The function starts with the first element (`1`), which is less than `4`, so it adds `1` to the result.
+// - The next element (`3`) is also less than `4`, so it adds `3`.
+// - The next element (`2`) is again less than `4`, so it adds `2`.
+// - The function then encounters `4`, which is not less than `4`. At this point, it stops checking further elements and finalizes the result.
+```
+
 **Signature**
 
 ```ts

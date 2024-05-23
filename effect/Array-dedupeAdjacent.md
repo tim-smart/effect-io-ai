@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.dedupeAdjacent
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 1, 2, 2, 3, 3]
+const unique = Array.dedupeAdjacent(numbers)
+assert.deepStrictEqual(unique, [1, 2, 3])
+```
+
 **Signature**
 
 ```ts

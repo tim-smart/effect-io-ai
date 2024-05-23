@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.group
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.group([1, 1, 2, 2, 2, 3, 1])
+assert.deepStrictEqual(result, [[1, 1], [2, 2, 2], [3], [1]])
+```
+
 **Signature**
 
 ```ts

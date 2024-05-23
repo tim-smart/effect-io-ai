@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.findFirstIndex
 ```
 
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const numbers = [5, 3, 8, 9]
+const result = Array.findFirstIndex(numbers, (x) => x > 5)
+assert.deepStrictEqual(result, Option.some(2))
+```
+
 **Signature**
 
 ```ts

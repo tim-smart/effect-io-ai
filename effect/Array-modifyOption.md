@@ -11,6 +11,19 @@ import * as Array from "effect/Array"
 Array.modifyOption
 ```
 
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const numbers = [1, 2, 3, 4]
+const result = Array.modifyOption(numbers, 2, (n) => n * 2)
+assert.deepStrictEqual(result, Option.some([1, 2, 6, 4]))
+
+const outOfBoundsResult = Array.modifyOption(numbers, 5, (n) => n * 2)
+assert.deepStrictEqual(outOfBoundsResult, Option.none())
+```
+
 **Signature**
 
 ```ts

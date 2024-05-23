@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.replace
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const letters = ["a", "b", "c", "d"]
+const result = Array.replace(1, "z")(letters)
+assert.deepStrictEqual(result, ["a", "z", "c", "d"])
+```
+
 **Signature**
 
 ```ts

@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.modify
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4]
+const result = Array.modify(numbers, 2, (n) => n * 2)
+assert.deepStrictEqual(result, [1, 2, 6, 4])
+```
+
 **Signature**
 
 ```ts

@@ -12,6 +12,21 @@ import * as Array from "effect/Array"
 Array.chop
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.chop(numbers, (as): [number, Array<number>] => [as[0] * 2, as.slice(1)])
+assert.deepStrictEqual(result, [2, 4, 6, 8, 10])
+
+// Explanation:
+// The `chopFunction` takes the first element of the array, doubles it, and then returns it along with the rest of the array.
+// The `chop` function applies this `chopFunction` recursively to the input array `[1, 2, 3, 4, 5]`,
+// resulting in a new array `[2, 4, 6, 8, 10]`.
+```
+
 **Signature**
 
 ```ts

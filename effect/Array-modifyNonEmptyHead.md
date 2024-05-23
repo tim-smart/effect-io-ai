@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.modifyNonEmptyHead
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.modifyNonEmptyHead([1, 2, 3], (n) => n * 10)
+assert.deepStrictEqual(result, [10, 2, 3])
+```
+
 **Signature**
 
 ```ts

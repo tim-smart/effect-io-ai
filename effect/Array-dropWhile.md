@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.dropWhile
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.dropWhile(numbers, (x) => x < 4)
+assert.deepStrictEqual(result, [4, 5])
+```
+
 **Signature**
 
 ```ts

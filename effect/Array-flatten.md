@@ -1,6 +1,8 @@
 # flatten
 
-Flattens an array of arrays into a single array by concatenating all arrays.
+Combines multiple arrays into a single array by concatenating all elements
+from each nested array. This function ensures that the structure of nested
+arrays is collapsed into a single, flat array.
 
 To import and use `flatten` from the "Array" module:
 
@@ -8,6 +10,17 @@ To import and use `flatten` from the "Array" module:
 import * as Array from "effect/Array"
 // Can be accessed like this
 Array.flatten
+```
+
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const nestedArrays = [[1, 2], [], [3, 4], [], [5, 6]]
+const result = Array.flatten(nestedArrays)
+
+assert.deepStrictEqual(result, [1, 2, 3, 4, 5, 6])
 ```
 
 **Signature**

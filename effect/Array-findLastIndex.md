@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.findLastIndex
 ```
 
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const numbers = [1, 3, 8, 9]
+const result = Array.findLastIndex(numbers, (x) => x < 5)
+assert.deepStrictEqual(result, Option.some(1))
+```
+
 **Signature**
 
 ```ts

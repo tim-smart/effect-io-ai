@@ -15,9 +15,9 @@ Array.replicate
 **Example**
 
 ```ts
-import { replicate } from "effect/Array"
+import { Array } from "effect"
 
-assert.deepStrictEqual(replicate("a", 3), ["a", "a", "a"])
+assert.deepStrictEqual(Array.replicate("a", 3), ["a", "a", "a"])
 ```
 
 **Signature**

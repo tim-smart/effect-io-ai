@@ -13,10 +13,10 @@ Array.fromRecord
 **Example**
 
 ```ts
-import { fromRecord } from "effect/Array"
+import { Array } from "effect"
 
 const x = { a: 1, b: 2, c: 3 }
-assert.deepStrictEqual(fromRecord(x), [
+assert.deepStrictEqual(Array.fromRecord(x), [
   ["a", 1],
   ["b", 2],
   ["c", 3]

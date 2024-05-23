@@ -12,6 +12,16 @@ import * as Array from "effect/Array"
 Array.drop
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.drop(numbers, 2)
+assert.deepStrictEqual(result, [3, 4, 5])
+```
+
 **Signature**
 
 ```ts

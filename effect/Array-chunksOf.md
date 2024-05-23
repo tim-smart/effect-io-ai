@@ -18,6 +18,22 @@ import * as Array from "effect/Array"
 Array.chunksOf
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.chunksOf(numbers, 2)
+assert.deepStrictEqual(result, [[1, 2], [3, 4], [5]])
+
+// Explanation:
+// The `chunksOf` function takes an array of numbers `[1, 2, 3, 4, 5]` and a number `2`.
+// It splits the array into chunks of length 2. Since the array length is not evenly divisible by 2,
+// the last chunk contains the remaining elements.
+// The result is `[[1, 2], [3, 4], [5]]`.
+```
+
 **Signature**
 
 ```ts

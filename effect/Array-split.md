@@ -10,6 +10,20 @@ import * as Array from "effect/Array"
 Array.split
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+const result = Array.split(numbers, 3)
+assert.deepStrictEqual(result, [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8]
+])
+```
+
 **Signature**
 
 ```ts

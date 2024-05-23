@@ -1,6 +1,6 @@
 # forEach
 
-Iterate over the `Iterable` applying `f`.
+Performs a side-effect for each element of the `Iterable`.
 
 To import and use `forEach` from the "Array" module:
 
@@ -8,6 +8,15 @@ To import and use `forEach` from the "Array" module:
 import * as Array from "effect/Array"
 // Can be accessed like this
 Array.forEach
+```
+
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3]
+Array.forEach(numbers, (n) => console.log(n)) // 1, 2, 3
 ```
 
 **Signature**

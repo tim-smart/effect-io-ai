@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.make
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.make(1, 2, 3)
+assert.deepStrictEqual(result, [1, 2, 3])
+```
+
 **Signature**
 
 ```ts

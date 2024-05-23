@@ -12,6 +12,20 @@ import * as Array from "effect/Array"
 Array.zip
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [1, 2, 3]
+const array2 = ["a", "b"]
+const result = Array.zip(array1, array2)
+assert.deepStrictEqual(result, [
+  [1, "a"],
+  [2, "b"]
+])
+```
+
 **Signature**
 
 ```ts

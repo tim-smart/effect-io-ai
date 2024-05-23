@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.allocate
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.allocate<number>(3)
+assert.deepStrictEqual(result.length, 3)
+```
+
 **Signature**
 
 ```ts

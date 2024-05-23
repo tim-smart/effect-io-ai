@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.setNonEmptyHead
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.setNonEmptyHead([1, 2, 3], 10)
+assert.deepStrictEqual(result, [10, 2, 3])
+```
+
 **Signature**
 
 ```ts

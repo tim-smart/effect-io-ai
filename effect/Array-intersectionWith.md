@@ -11,6 +11,18 @@ import * as Array from "effect/Array"
 Array.intersectionWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [{ id: 1 }, { id: 2 }, { id: 3 }]
+const array2 = [{ id: 3 }, { id: 4 }, { id: 1 }]
+const isEquivalent = (a: { id: number }, b: { id: number }) => a.id === b.id
+const result = Array.intersectionWith(isEquivalent)(array2)(array1)
+assert.deepStrictEqual(result, [{ id: 1 }, { id: 3 }])
+```
+
 **Signature**
 
 ```ts

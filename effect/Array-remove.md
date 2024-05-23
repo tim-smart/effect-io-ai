@@ -11,6 +11,19 @@ import * as Array from "effect/Array"
 Array.remove
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4]
+const result = Array.remove(numbers, 2)
+assert.deepStrictEqual(result, [1, 2, 4])
+
+const outOfBoundsResult = Array.remove(numbers, 5)
+assert.deepStrictEqual(outOfBoundsResult, [1, 2, 3, 4])
+```
+
 **Signature**
 
 ```ts

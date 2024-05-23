@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.contains
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const letters = ["a", "b", "c", "d"]
+const result = Array.contains("c")(letters)
+assert.deepStrictEqual(result, true)
+```
+
 **Signature**
 
 ```ts

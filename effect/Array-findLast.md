@@ -1,6 +1,7 @@
 # findLast
 
-Find the last element for which a predicate holds.
+Finds the last element in an iterable collection that satisfies the given predicate or refinement.
+Returns an `Option` containing the found element, or `Option.none` if no element matches.
 
 To import and use `findLast` from the "Array" module:
 
@@ -8,6 +9,16 @@ To import and use `findLast` from the "Array" module:
 import * as Array from "effect/Array"
 // Can be accessed like this
 Array.findLast
+```
+
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.findLast(numbers, (n) => n % 2 === 0)
+assert.deepStrictEqual(result, Option.some(4))
 ```
 
 **Signature**

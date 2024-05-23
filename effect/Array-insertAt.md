@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.insertAt
 ```
 
+**Example**
+
+```ts
+import { Array, Option } from "effect"
+
+const letters = ["a", "b", "c", "e"]
+const result = Array.insertAt(letters, 3, "d")
+assert.deepStrictEqual(result, Option.some(["a", "b", "c", "d", "e"]))
+```
+
 **Signature**
 
 ```ts

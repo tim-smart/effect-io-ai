@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.setNonEmptyLast
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.setNonEmptyLast([1, 2, 3], 4)
+assert.deepStrictEqual(result, [1, 2, 4])
+```
+
 **Signature**
 
 ```ts

@@ -11,6 +11,19 @@ import * as Array from "effect/Array"
 Array.splitWhere
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const result = Array.splitWhere(numbers, (n) => n > 3)
+assert.deepStrictEqual(result, [
+  [1, 2, 3],
+  [4, 5]
+])
+```
+
 **Signature**
 
 ```ts

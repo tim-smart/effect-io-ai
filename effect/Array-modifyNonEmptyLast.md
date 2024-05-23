@@ -10,6 +10,15 @@ import * as Array from "effect/Array"
 Array.modifyNonEmptyLast
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.modifyNonEmptyLast([1, 2, 3], (n) => n * 2)
+assert.deepStrictEqual(result, [1, 2, 6])
+```
+
 **Signature**
 
 ```ts

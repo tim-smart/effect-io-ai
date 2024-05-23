@@ -11,6 +11,17 @@ import * as Array from "effect/Array"
 Array.differenceWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [1, 2, 3]
+const array2 = [2, 3, 4]
+const difference = Array.differenceWith<number>((a, b) => a === b)(array1, array2)
+assert.deepStrictEqual(difference, [1])
+```
+
 **Signature**
 
 ```ts

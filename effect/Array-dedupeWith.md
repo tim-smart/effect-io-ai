@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.dedupeWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 2, 3, 3, 3]
+const unique = Array.dedupeWith(numbers, (a, b) => a === b)
+assert.deepStrictEqual(unique, [1, 2, 3])
+```
+
 **Signature**
 
 ```ts

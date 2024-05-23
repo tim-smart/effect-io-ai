@@ -11,6 +11,18 @@ import * as Array from "effect/Array"
 Array.splitNonEmptyAt
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.splitNonEmptyAt(["a", "b", "c", "d", "e"], 3)
+assert.deepStrictEqual(result, [
+  ["a", "b", "c"],
+  ["d", "e"]
+])
+```
+
 **Signature**
 
 ```ts

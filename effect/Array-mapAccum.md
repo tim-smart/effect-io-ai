@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.mapAccum
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3]
+const result = Array.mapAccum(numbers, 0, (acc, n) => [acc + n, acc + n])
+assert.deepStrictEqual(result, [6, [1, 3, 6]])
+```
+
 **Signature**
 
 ```ts

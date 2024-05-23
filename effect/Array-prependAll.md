@@ -16,7 +16,10 @@ Array.prependAll
 ```ts
 import { Array } from "effect"
 
-assert.deepStrictEqual(Array.prependAll([1, 2], ["a", "b"]), ["a", "b", 1, 2])
+const prefix = [0, 1]
+const array = [2, 3]
+const result = Array.prependAll(array, prefix)
+assert.deepStrictEqual(result, [0, 1, 2, 3])
 ```
 
 **Signature**

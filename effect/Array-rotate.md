@@ -11,6 +11,16 @@ import * as Array from "effect/Array"
 Array.rotate
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const letters = ["a", "b", "c", "d"]
+const result = Array.rotate(letters, 2)
+assert.deepStrictEqual(result, ["c", "d", "a", "b"])
+```
+
 **Signature**
 
 ```ts

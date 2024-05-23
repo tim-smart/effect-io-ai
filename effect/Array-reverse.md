@@ -10,6 +10,16 @@ import * as Array from "effect/Array"
 Array.reverse
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4]
+const result = Array.reverse(numbers)
+assert.deepStrictEqual(result, [4, 3, 2, 1])
+```
+
 **Signature**
 
 ```ts

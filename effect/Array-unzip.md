@@ -10,6 +10,22 @@ import * as Array from "effect/Array"
 Array.unzip
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const result = Array.unzip([
+  [1, "a"],
+  [2, "b"],
+  [3, "c"]
+])
+assert.deepStrictEqual(result, [
+  [1, 2, 3],
+  ["a", "b", "c"]
+])
+```
+
 **Signature**
 
 ```ts

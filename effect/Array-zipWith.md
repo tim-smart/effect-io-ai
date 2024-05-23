@@ -11,6 +11,17 @@ import * as Array from "effect/Array"
 Array.zipWith
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const array1 = [1, 2, 3]
+const array2 = [4, 5, 6]
+const result = Array.zipWith(array1, array2, (a, b) => a + b)
+assert.deepStrictEqual(result, [5, 7, 9])
+```
+
 **Signature**
 
 ```ts
