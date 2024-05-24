@@ -25,7 +25,7 @@ assert.deepStrictEqual(unique, [1, 2, 3])
 
 ```ts
 export declare const dedupeWith: {
-  <S extends readonly any[] | Iterable<any>>(
+  <S extends Iterable<any>>(
     isEquivalent: (self: ReadonlyArray.Infer<S>, that: ReadonlyArray.Infer<S>) => boolean
   ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
   <A>(self: readonly [A, ...A[]], isEquivalent: (self: A, that: A) => boolean): [A, ...A[]]

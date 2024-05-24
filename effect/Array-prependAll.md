@@ -26,7 +26,7 @@ assert.deepStrictEqual(result, [0, 1, 2, 3])
 
 ```ts
 export declare const prependAll: {
-  <S extends readonly any[] | Iterable<any>, T extends readonly any[] | Iterable<any>>(
+  <S extends Iterable<any>, T extends Iterable<any>>(
     that: T
   ): (self: S) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>
   <A, B>(self: Iterable<A>, that: readonly [B, ...B[]]): [A | B, ...(A | B)[]]

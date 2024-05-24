@@ -25,9 +25,9 @@ assert.deepStrictEqual(result, [1, 2, 3])
 
 ```ts
 export declare const union: {
-  <T extends readonly any[] | Iterable<any>>(
+  <T extends Iterable<any>>(
     that: T
-  ): <S extends readonly any[] | Iterable<any>>(
+  ): <S extends Iterable<any>>(
     self: S
   ) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>
   <A, B>(self: readonly [A, ...A[]], that: readonly B[]): [A | B, ...(A | B)[]]

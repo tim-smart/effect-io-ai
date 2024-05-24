@@ -31,7 +31,7 @@ assert.deepStrictEqual(result, [2, 4, 6, 8, 10])
 
 ```ts
 export declare const chop: {
-  <S extends readonly any[] | Iterable<any>, B>(
+  <S extends Iterable<any>, B>(
     f: (
       as: readonly [ReadonlyArray.Infer<S>, ...ReadonlyArray.Infer<S>[]]
     ) => readonly [B, readonly ReadonlyArray.Infer<S>[]]

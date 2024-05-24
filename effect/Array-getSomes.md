@@ -21,5 +21,7 @@ assert.deepStrictEqual(Array.getSomes([Option.some(1), Option.none(), Option.som
 **Signature**
 
 ```ts
-export declare const getSomes: <A>(self: Iterable<Option<A>>) => A[]
+export declare const getSomes: <T extends Iterable<Option<X>>, X = any>(
+  self: T
+) => Option.Value<ReadonlyArray.Infer<T>>[]
 ```
