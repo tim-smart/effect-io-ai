@@ -1,7 +1,10 @@
 # DateFromNumber
 
-Represents a schema that converts a `number` into a (potentially invalid) `Date` (e.g., `NaN`, `Infinity` and `-Infinity` are not rejected).
-Encoding will return `NaN` for invalid dates.
+Defines a schema that converts a `number` into a `Date` object using the `new
+Date` constructor. This schema does not validate the numerical input,
+allowing potentially invalid values such as `NaN`, `Infinity`, and
+`-Infinity` to be converted into `Date` objects. During the encoding process,
+any invalid `Date` object will be encoded to `NaN`.
 
 To import and use `DateFromNumber` from the "Schema" module:
 

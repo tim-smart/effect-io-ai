@@ -1,6 +1,8 @@
 # toReadonlyArray
 
-Converts the specified `Chunk` to a `ReadonlyArray`.
+Converts a `Chunk` into a `ReadonlyArray`. If the provided `Chunk` is
+non-empty (`NonEmptyChunk`), the function will return a
+`NonEmptyReadonlyArray`, ensuring the non-empty property is preserved.
 
 To import and use `toReadonlyArray` from the "Chunk" module:
 
@@ -13,5 +15,7 @@ Chunk.toReadonlyArray
 **Signature**
 
 ```ts
-export declare const toReadonlyArray: <A>(self: Chunk<A>) => readonly A[]
+export declare const toReadonlyArray: <S extends Chunk<any>>(
+  self: S
+) => S extends NonEmptyChunk<any> ? readonly [Chunk.Infer<S>, ...Chunk.Infer<S>[]] : readonly Chunk.Infer<S>[]
 ```

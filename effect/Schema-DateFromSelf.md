@@ -1,6 +1,7 @@
 # DateFromSelf
 
-Represents a schema for handling potentially **invalid** `Date` instances (e.g., `new Date("Invalid Date")` is not rejected).
+Describes a schema that accommodates potentially invalid `Date` instances,
+such as `new Date("Invalid Date")`, without rejection.
 
 To import and use `DateFromSelf` from the "Schema" module:
 

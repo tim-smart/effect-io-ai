@@ -15,5 +15,13 @@ Stream.toReadableStream
 **Signature**
 
 ```ts
-export declare const toReadableStream: <A, E>(self: Stream<A, E, never>) => ReadableStream<A>
+export declare const toReadableStream: {
+  <A>(
+    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
+  ): <E>(self: Stream<A, E, never>) => ReadableStream<A>
+  <A, E>(
+    self: Stream<A, E, never>,
+    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
+  ): ReadableStream<A>
+}
 ```

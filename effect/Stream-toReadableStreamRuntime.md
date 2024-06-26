@@ -16,7 +16,14 @@ Stream.toReadableStreamRuntime
 
 ```ts
 export declare const toReadableStreamRuntime: {
-  <XR>(runtime: Runtime<XR>): <A, E, R extends XR>(self: Stream<A, E, R>) => ReadableStream<A>
-  <A, E, XR, R extends XR>(self: Stream<A, E, R>, runtime: Runtime<XR>): ReadableStream<A>
+  <A, XR>(
+    runtime: Runtime<XR>,
+    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
+  ): <E, R extends XR>(self: Stream<A, E, R>) => ReadableStream<A>
+  <A, E, XR, R extends XR>(
+    self: Stream<A, E, R>,
+    runtime: Runtime<XR>,
+    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
+  ): ReadableStream<A>
 }
 ```

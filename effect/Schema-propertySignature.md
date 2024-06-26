@@ -13,7 +13,5 @@ Schema.propertySignature
 **Signature**
 
 ```ts
-export declare const propertySignature: <A, I, R>(
-  self: Schema<A, I, R>
-) => PropertySignature<":", A, never, ":", I, false, R>
+export declare const propertySignature: <S extends Schema.All>(self: S) => propertySignature<S>
 ```

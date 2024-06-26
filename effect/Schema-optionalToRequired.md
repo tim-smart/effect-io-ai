@@ -1,6 +1,6 @@
 # optionalToRequired
 
-Converts an optional property to a required one through a transformation `Option -> Option`.
+Converts an optional property to a required one through a transformation `Option -> Type`.
 
 - `decode`: `none` as argument means the value is missing in the input.
 - `encode`: `none` as return value means the value will be missing in the output.

@@ -1,7 +1,6 @@
 # makeBatched
 
-Constructs a data source from a function taking a collection of requests
-and returning a `RequestCompletionMap`.
+Constructs a data source from a function taking a collection of requests.
 
 To import and use `makeBatched` from the "RequestResolver" module:
 

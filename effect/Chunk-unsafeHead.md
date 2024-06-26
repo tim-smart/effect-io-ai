@@ -2,6 +2,8 @@
 
 Returns the first element of this chunk.
 
+It will throw an error if the chunk is empty.
+
 To import and use `unsafeHead` from the "Chunk" module:
 
 ```ts

@@ -1,6 +1,6 @@
 # scoped
 
-Scopes all resources uses in this workflow to the lifetime of the workflow,
+Scopes all resources used in this workflow to the lifetime of the workflow,
 ensuring that their finalizers are run as soon as this workflow completes
 execution, whether by success, failure, or interruption.
 

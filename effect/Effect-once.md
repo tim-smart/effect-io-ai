@@ -1,7 +1,7 @@
 # once
 
-Returns an effect that will be executed at most once, even if it is
-evaluated multiple times.
+Returns an effect that executes only once, regardless of how many times it's
+called.
 
 To import and use `once` from the "Effect" module:
 
@@ -16,18 +16,19 @@ Effect.once
 ```ts
 import { Effect, Console } from "effect"
 
-const program = Effect.gen(function* (_) {
-  const twice = Console.log("twice")
-  yield* _(twice, Effect.repeatN(1))
-  const once = yield* _(Console.log("once"), Effect.once)
-  yield* _(once, Effect.repeatN(1))
+const program = Effect.gen(function* () {
+  const task1 = Console.log("task1")
+  yield* Effect.repeatN(task1, 2)
+  const task2 = yield* Effect.once(Console.log("task2"))
+  yield* Effect.repeatN(task2, 2)
 })
 
 Effect.runFork(program)
 // Output:
-// twice
-// twice
-// once
+// task1
+// task1
+// task1
+// task2
 ```
 
 **Signature**

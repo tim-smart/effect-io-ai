@@ -1,6 +1,6 @@
 # whileInputEffect
 
-Returns a new schedule that continues for as long the specified effectful
+Returns a new schedule that continues for as long as the specified effectful
 predicate on the input evaluates to true.
 
 To import and use `whileInputEffect` from the "Schedule" module:

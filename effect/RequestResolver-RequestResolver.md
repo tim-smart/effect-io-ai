@@ -1,24 +1,23 @@
 # RequestResolver
 
-A `RequestResolver<A, R>` requires an environment `R` and is capable of executing
-requests of type `A`.
+The `RequestResolver<A, R>` interface requires an environment `R` and handles
+the execution of requests of type `A`.
 
-Data sources must implement the method `runAll` which takes a collection of
-requests and returns an effect with a `RequestCompletionMap` containing a
-mapping from requests to results. The type of the collection of requests is
-a `Chunk<Chunk<A>>`. The outer `Chunk` represents batches of requests that
-must be performed sequentially. The inner `Chunk` represents a batch of
-requests that can be performed in parallel. This allows data sources to
-introspect on all the requests being executed and optimize the query.
+Implementations must provide a `runAll` method, which processes a collection
+of requests and produces an effect that fulfills these requests. Requests are
+organized into a `Array<Array<A>>`, where the outer `Array` groups requests
+into batches that are executed sequentially, and each inner `Array` contains
+requests that can be executed in parallel. This structure allows
+implementations to analyze all incoming requests collectively and optimize
+query execution accordingly.
 
-Data sources will typically be parameterized on a subtype of `Request<A>`,
-though that is not strictly necessarily as long as the data source can map
-the request type to a `Request<A>`. Data sources can then pattern match on
-the collection of requests to determine the information requested, execute
-the query, and place the results into the `RequestCompletionMap` using
-`RequestCompletionMap.empty` and `RequestCompletionMap.insert`. Data
-sources must provide results for all requests received. Failure to do so
-will cause a query to die with a `QueryFailure` when run.
+Implementations are typically specialized for a subtype of `Request<A, E>`.
+However, they are not strictly limited to these subtypes as long as they can
+map any given request type to `Request<A, E>`. Implementations should inspect
+the collection of requests to identify the needed information and execute the
+corresponding queries. It is imperative that implementations resolve all the
+requests they receive. Failing to do so will lead to a `QueryFailure` error
+during query execution.
 
 To import and use `RequestResolver` from the "RequestResolver" module:
 

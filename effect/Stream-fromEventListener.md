@@ -13,9 +13,9 @@ Stream.fromEventListener
 **Signature**
 
 ```ts
-export declare const fromEventListener: <A = Event>(
-  target: EventTarget,
+export declare const fromEventListener: <A = unknown>(
+  target: EventListener<A>,
   type: string,
-  options?: boolean | Omit<AddEventListenerOptions, "signal">
+  options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean } | undefined
 ) => Stream<A, never, never>
 ```

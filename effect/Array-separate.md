@@ -26,7 +26,7 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const separate: <T extends Iterable<Either<any, any>>>(
+export declare const separate: <T extends Iterable<array_<any, any>>>(
   self: T
-) => [Either.Left<ReadonlyArray.Infer<T>>[], Either.Right<ReadonlyArray.Infer<T>>[]]
+) => [array_.Left<ReadonlyArray.Infer<T>>[], array_.Right<ReadonlyArray.Infer<T>>[]]
 ```

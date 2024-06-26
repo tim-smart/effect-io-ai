@@ -1,6 +1,9 @@
 # validDate
 
-A filter that **excludes invalid** dates (e.g., `new Date("Invalid Date")` is rejected).
+Defines a filter that specifically rejects invalid dates, such as `new
+Date("Invalid Date")`. This filter ensures that only properly formatted and
+valid date objects are accepted, enhancing data integrity by preventing
+erroneous date values from being processed.
 
 To import and use `validDate` from the "Schema" module:
 
