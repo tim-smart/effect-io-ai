@@ -22,7 +22,7 @@ export declare const zip: {
   <A, E, R, A2, E2, R2>(
     self: Micro<A, E, R>,
     that: Micro<A2, E2, R2>,
-    options?: { readonly concurrent?: boolean | undefined } | undefined
+    options?: { readonly concurrent?: boolean | undefined }
   ): Micro<[A, A2], E | E2, R | R2>
 }
 ```

@@ -1,7 +1,7 @@
 # fromOption
 
-Converts an `Option` into a `Micro` effect, that will fail with a
-`Option.None` if the option is `None`. Otherwise, it will succeed with the
+Converts an `Option` into a `Micro` effect, that will fail with
+`NoSuchElementException` if the option is `None`. Otherwise, it will succeed with the
 value of the option.
 
 To import and use `fromOption` from the "Micro" module:
@@ -15,5 +15,5 @@ Micro.fromOption
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(option: Option.Option<A>) => Micro<A, Option.None<never>, never>
+export declare const fromOption: <A>(option: Option.Option<A>) => Micro<A, NoSuchElementException, never>
 ```
