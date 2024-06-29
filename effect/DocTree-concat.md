@@ -1,0 +1,17 @@
+# concat
+
+Horizontally concatenates multiple `DocTree`s.
+
+To import and use `concat` from the "DocTree" module:
+
+```ts
+import * as DocTree from "@effect/printer/DocTree"
+// Can be accessed like this
+DocTree.concat
+```
+
+**Signature**
+
+```ts
+export declare const concat: <A>(trees: readonly DocTree<A>[]) => DocTree<A>
+```

@@ -1,0 +1,18 @@
+# yieldNow
+
+Pause the execution of the current `Micro` effect, and resume it on the next
+iteration of the event loop.
+
+To import and use `yieldNow` from the "Micro" module:
+
+```ts
+import * as Micro from "effect/Micro"
+// Can be accessed like this
+Micro.yieldNow
+```
+
+**Signature**
+
+```ts
+export declare const yieldNow: Micro<void, never, never>
+```
