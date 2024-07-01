@@ -1,6 +1,6 @@
 # sandbox
 
-Replace the error type of the given `Micro` with the full `Failure` object.
+Replace the error type of the given `Micro` with the full `MicroCause` object.
 
 To import and use `sandbox` from the "Micro" module:
 
@@ -13,5 +13,5 @@ Micro.sandbox
 **Signature**
 
 ```ts
-export declare const sandbox: <A, E, R>(self: Micro<A, E, R>) => Micro<A, Failure<E>, R>
+export declare const sandbox: <A, E, R>(self: Micro<A, E, R>) => Micro<A, MicroCause<E>, R>
 ```

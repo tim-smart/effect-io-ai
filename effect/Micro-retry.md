@@ -15,11 +15,15 @@ Micro.retry
 ```ts
 export declare const retry: {
   <A, E>(
-    options?: { while?: Predicate<E> | undefined; times?: number | undefined; delay?: DelayFn | undefined } | undefined
+    options?:
+      | { while?: Predicate<E> | undefined; times?: number | undefined; schedule?: MicroSchedule | undefined }
+      | undefined
   ): <R>(self: Micro<A, E, R>) => Micro<A, E, R>
   <A, E, R>(
     self: Micro<A, E, R>,
-    options?: { while?: Predicate<E> | undefined; times?: number | undefined; delay?: DelayFn | undefined } | undefined
+    options?:
+      | { while?: Predicate<E> | undefined; times?: number | undefined; schedule?: MicroSchedule | undefined }
+      | undefined
   ): Micro<A, E, R>
 }
 ```

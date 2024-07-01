@@ -14,7 +14,7 @@ Micro.mapError
 
 ```ts
 export declare const mapError: {
-  <E, E2>(f: (a: E) => E2): <A, R>(self: Micro<A, E, R>) => Micro<A, E2, R>
-  <A, E, R, E2>(self: Micro<A, E, R>, f: (a: E) => E2): Micro<A, E2, R>
+  <E, E2>(f: (e: E) => E2): <A, R>(self: Micro<A, E, R>) => Micro<A, E2, R>
+  <A, E, R, E2>(self: Micro<A, E, R>, f: (e: E) => E2): Micro<A, E2, R>
 }
 ```

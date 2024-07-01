@@ -1,7 +1,7 @@
 # promise
 
 Wrap a `Promise` into a `Micro` effect. Any errors will result in a
-`FailureUnexpected`.
+`CauseDie`.
 
 To import and use `promise` from the "Micro" module:
 

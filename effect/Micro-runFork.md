@@ -21,8 +21,8 @@ import * as Micro from "effect/Micro"
 
 const handle = Micro.succeed(42).pipe(Micro.delay(1000), Micro.runFork)
 
-handle.addObserver((result) => {
-  console.log(result)
+handle.addObserver((exit) => {
+  console.log(exit)
 })
 ```
 

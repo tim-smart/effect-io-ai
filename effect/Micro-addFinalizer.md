@@ -14,6 +14,6 @@ Micro.addFinalizer
 
 ```ts
 export declare const addFinalizer: (
-  finalizer: (result: Result<unknown, unknown>) => Micro<void>
+  finalizer: (exit: MicroExit<unknown, unknown>) => Micro<void>
 ) => Micro<void, never, MicroScope>
 ```

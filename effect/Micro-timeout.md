@@ -1,8 +1,8 @@
 # timeout
 
-Returns an effect that will timeout this effect, succeeding with a `None`
-if the timeout elapses before the effect has produced a value; and `Some` of
-the produced value otherwise.
+Returns an effect that will timeout this effect, that will fail with a
+`TimeoutException` if the timeout elapses before the effect has produced a
+value.
 
 If the timeout elapses, the running effect will be safely interrupted.
 
@@ -18,7 +18,7 @@ Micro.timeout
 
 ```ts
 export declare const timeout: {
-  (millis: number): <A, E, R>(self: Micro<A, E, R>) => Micro<Option.Option<A>, E, R>
-  <A, E, R>(self: Micro<A, E, R>, millis: number): Micro<Option.Option<A>, E, R>
+  (millis: number): <A, E, R>(self: Micro<A, E, R>) => Micro<A, E | TimeoutException, R>
+  <A, E, R>(self: Micro<A, E, R>, millis: number): Micro<A, E | TimeoutException, R>
 }
 ```

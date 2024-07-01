@@ -2,7 +2,7 @@
 
 Creates a `Micro` effect that will fail with the lazily evaluated error.
 
-This will result in a `FailureExpected`, where the error is tracked at the
+This will result in a `CauseFail`, where the error is tracked at the
 type level.
 
 To import and use `failSync` from the "Micro" module:

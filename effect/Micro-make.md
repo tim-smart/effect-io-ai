@@ -15,7 +15,7 @@ Micro.make
 **Signature**
 
 ```ts
-export declare const make: <A, E, R>(
-  run: (env: Env<R>, onResult: (result: Result<A, E>) => void) => void
+export declare const make: <R, A, E>(
+  run: (env: Env<R>, onExit: (exit: MicroExit<A, E>) => void) => void
 ) => Micro<A, E, R>
 ```

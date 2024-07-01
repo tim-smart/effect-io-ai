@@ -2,7 +2,7 @@
 
 Creates a `Micro` effect that will die with the specified error.
 
-This will result in a `FailureUnexpected`, where the error is not tracked at
+This will result in a `CauseDie`, where the error is not tracked at
 the type level.
 
 To import and use `die` from the "Micro" module:

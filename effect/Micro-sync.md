@@ -3,7 +3,7 @@
 Creates a `Micro` effect that will succeed with the lazily evaluated value.
 
 If the evaluation of the value throws an error, the effect will fail with
-`FailureUnexpected`.
+`CauseDie`.
 
 To import and use `sync` from the "Micro" module:
 

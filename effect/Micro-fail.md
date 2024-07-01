@@ -2,7 +2,7 @@
 
 Creates a `Micro` effect that will fail with the specified error.
 
-This will result in a `FailureExpected`, where the error is tracked at the
+This will result in a `CauseFail`, where the error is tracked at the
 type level.
 
 To import and use `fail` from the "Micro" module:
