@@ -35,7 +35,7 @@ export declare const loop: {
       readonly body: (z: Z) => STM<A, E, R>
       readonly discard?: false | undefined
     }
-  ): STM<A[], E, R>
+  ): STM<Array<A>, E, R>
   <Z, A, E, R>(
     initial: Z,
     options: {

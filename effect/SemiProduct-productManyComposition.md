@@ -19,5 +19,5 @@ export declare const productManyComposition: <F extends TypeLambda, G extends Ty
 ) => <FR, FO, FE, GR, GO, GE, A>(
   self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>,
   collection: Iterable<Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>>
-) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, [A, ...A[]]>>
+) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, [A, ...Array<A>]>>
 ```

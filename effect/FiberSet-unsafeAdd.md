@@ -16,12 +16,16 @@ FiberSet.unsafeAdd
 export declare const unsafeAdd: {
   <A, E, XE extends E, XA extends A>(
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly interruptAs?: FiberId.FiberId | undefined } | undefined
+    options?:
+      | { readonly interruptAs?: FiberId.FiberId | undefined; readonly propagateInterruption?: boolean | undefined }
+      | undefined
   ): (self: FiberSet<A, E>) => void
   <A, E, XE extends E, XA extends A>(
     self: FiberSet<A, E>,
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly interruptAs?: FiberId.FiberId | undefined } | undefined
+    options?:
+      | { readonly interruptAs?: FiberId.FiberId | undefined; readonly propagateInterruption?: boolean | undefined }
+      | undefined
   ): void
 }
 ```

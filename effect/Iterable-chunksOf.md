@@ -15,7 +15,7 @@ Iterable.chunksOf
 
 ```ts
 export declare const chunksOf: {
-  (n: number): <A>(self: Iterable<A>) => Iterable<A[]>
-  <A>(self: Iterable<A>, n: number): Iterable<A[]>
+  (n: number): <A>(self: Iterable<A>) => Iterable<Array<A>>
+  <A>(self: Iterable<A>, n: number): Iterable<Array<A>>
 }
 ```

@@ -13,5 +13,5 @@ Schedule.recurWhile
 **Signature**
 
 ```ts
-export declare const recurWhile: <A>(f: Predicate<A>) => Schedule<A, A, never>
+export declare const recurWhile: <A>(f: Predicate<A>) => Schedule<A, A>
 ```

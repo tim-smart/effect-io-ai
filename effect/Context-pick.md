@@ -29,7 +29,7 @@ assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 **Signature**
 
 ```ts
-export declare const pick: <Services, S extends ValidTagsById<Services>[]>(
+export declare const pick: <Services, S extends Array<ValidTagsById<Services>>>(
   ...tags: S
 ) => (self: Context<Services>) => Context<{ [k in keyof S]: Tag.Identifier<S[k]> }[number]>
 ```

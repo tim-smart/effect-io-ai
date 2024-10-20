@@ -18,16 +18,16 @@ export declare const findById: <T extends string, I, II, RI, A, IA, Row, E, RA =
   options:
     | {
         readonly Id: Schema.Schema<I, II, RI>
-        readonly Result: Schema.Schema<A, IA, never>
-        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => II
-        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, never>
-        readonly withContext?: false | undefined
+        readonly Result: Schema.Schema<A, IA>
+        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I
+        readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>
+        readonly withContext?: false
       }
     | {
         readonly Id: Schema.Schema<I, II, RI>
         readonly Result: Schema.Schema<A, IA, RA>
-        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => II
-        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, R>
+        readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I
+        readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>
         readonly withContext: true
       }
 ) => Effect.Effect<SqlResolver<T, I, Option.Option<A>, E, RI>, never, RA | R>

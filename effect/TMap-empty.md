@@ -13,5 +13,5 @@ TMap.empty
 **Signature**
 
 ```ts
-export declare const empty: <K, V>() => STM.STM<TMap<K, V>, never, never>
+export declare const empty: <K, V>() => STM.STM<TMap<K, V>>
 ```

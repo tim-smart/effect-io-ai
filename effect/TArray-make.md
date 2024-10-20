@@ -13,7 +13,7 @@ TArray.make
 **Signature**
 
 ```ts
-export declare const make: <Elements extends [any, ...any[]]>(
+export declare const make: <Elements extends [any, ...Array<any>]>(
   ...elements: Elements
-) => STM.STM<TArray<Elements[number]>, never, never>
+) => STM.STM<TArray<Elements[number]>>
 ```

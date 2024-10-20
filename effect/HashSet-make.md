@@ -13,5 +13,5 @@ HashSet.make
 **Signature**
 
 ```ts
-export declare const make: <As extends readonly any[]>(...elements: As) => HashSet<As[number]>
+export declare const make: <As extends ReadonlyArray<any>>(...elements: As) => HashSet<As[number]>
 ```

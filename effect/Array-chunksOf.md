@@ -38,10 +38,8 @@ assert.deepStrictEqual(result, [[1, 2], [3, 4], [5]])
 
 ```ts
 export declare const chunksOf: {
-  (
-    n: number
-  ): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, [ReadonlyArray.Infer<S>, ...ReadonlyArray.Infer<S>[]]>
-  <A>(self: readonly [A, ...A[]], n: number): [[A, ...A[]], ...[A, ...A[]][]]
-  <A>(self: Iterable<A>, n: number): [A, ...A[]][]
+  (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, NonEmptyArray<ReadonlyArray.Infer<S>>>
+  <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<NonEmptyArray<A>>
+  <A>(self: Iterable<A>, n: number): Array<NonEmptyArray<A>>
 }
 ```

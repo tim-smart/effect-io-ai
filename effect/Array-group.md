@@ -22,5 +22,5 @@ assert.deepStrictEqual(result, [[1, 1], [2, 2, 2], [3], [1]])
 **Signature**
 
 ```ts
-export declare const group: <A>(self: readonly [A, ...A[]]) => [[A, ...A[]], ...[A, ...A[]][]]
+export declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```

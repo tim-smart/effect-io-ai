@@ -15,7 +15,7 @@ List.prependAllReversed
 
 ```ts
 export declare const prependAllReversed: {
-  <B>(prefix: List<B>): <A>(self: List<A>) => List<B | A>
+  <B>(prefix: List<B>): <A>(self: List<A>) => List<A | B>
   <A, B>(self: List<A>, prefix: List<B>): List<A | B>
 }
 ```

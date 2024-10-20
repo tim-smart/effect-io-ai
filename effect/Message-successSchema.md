@@ -13,7 +13,5 @@ Message.successSchema
 **Signature**
 
 ```ts
-export declare const successSchema: <A extends Message.Any>(
-  message: A
-) => Schema.Schema<Message.Success<A>, unknown, never>
+export declare const successSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Success<A>, unknown>
 ```

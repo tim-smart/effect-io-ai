@@ -26,7 +26,7 @@ assert.deepStrictEqual(result, ["c", "d", "a", "b"])
 ```ts
 export declare const rotate: {
   (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
-  <A>(self: readonly [A, ...A[]], n: number): [A, ...A[]]
-  <A>(self: Iterable<A>, n: number): A[]
+  <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<A>
+  <A>(self: Iterable<A>, n: number): Array<A>
 }
 ```

@@ -18,10 +18,10 @@ export declare const appendElement: <F extends TypeLambda>(
 ) => {
   <R2, O2, E2, B>(
     that: Kind<F, R2, O2, E2, B>
-  ): <R1, O1, E1, A extends readonly any[]>(
+  ): <R1, O1, E1, A extends ReadonlyArray<any>>(
     self: Kind<F, R1, O1, E1, A>
   ) => Kind<F, R1 & R2, O2 | O1, E2 | E1, [...A, B]>
-  <R1, O1, E1, A extends readonly any[], R2, O2, E2, B>(
+  <R1, O1, E1, A extends ReadonlyArray<any>, R2, O2, E2, B>(
     self: Kind<F, R1, O1, E1, A>,
     that: Kind<F, R2, O2, E2, B>
   ): Kind<F, R1 & R2, O1 | O2, E1 | E2, [...A, B]>

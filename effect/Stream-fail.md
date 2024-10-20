@@ -10,8 +10,23 @@ import * as Stream from "effect/Stream"
 Stream.fail
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.fail("Uh oh!")
+
+Effect.runPromiseExit(Stream.runCollect(stream)).then(console.log)
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: { _id: 'Cause', _tag: 'Fail', failure: 'Uh oh!' }
+// }
+```
+
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Stream<never, E, never>
+export declare const fail: <E>(error: E) => Stream<never, E>
 ```

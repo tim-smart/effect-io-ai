@@ -10,8 +10,20 @@ import * as Stream from "effect/Stream"
 Stream.fromChunk
 ```
 
+**Example**
+
+```ts
+import { Chunk, Effect, Stream } from "effect"
+
+// Creating a stream with values from a single Chunk
+const stream = Stream.fromChunk(Chunk.make(1, 2, 3))
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 1, 2, 3 ] }
+```
+
 **Signature**
 
 ```ts
-export declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Stream<A, never, never>
+export declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Stream<A>
 ```

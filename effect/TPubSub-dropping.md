@@ -14,5 +14,5 @@ TPubSub.dropping
 **Signature**
 
 ```ts
-export declare const dropping: <A>(requestedCapacity: number) => STM.STM<TPubSub<A>, never, never>
+export declare const dropping: <A>(requestedCapacity: number) => STM.STM<TPubSub<A>>
 ```

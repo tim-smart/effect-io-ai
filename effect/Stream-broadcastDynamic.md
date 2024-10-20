@@ -16,7 +16,26 @@ Stream.broadcastDynamic
 
 ```ts
 export declare const broadcastDynamic: {
-  (maximumLag: number): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Stream<A, E, never>, never, Scope.Scope | R>
-  <A, E, R>(self: Stream<A, E, R>, maximumLag: number): Effect.Effect<Stream<A, E, never>, never, Scope.Scope | R>
+  (
+    maximumLag:
+      | number
+      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
+      | {
+          readonly capacity: number
+          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
+          readonly replay?: number | undefined
+        }
+  ): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Stream<A, E>, never, Scope.Scope | R>
+  <A, E, R>(
+    self: Stream<A, E, R>,
+    maximumLag:
+      | number
+      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
+      | {
+          readonly capacity: number
+          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
+          readonly replay?: number | undefined
+        }
+  ): Effect.Effect<Stream<A, E>, never, Scope.Scope | R>
 }
 ```

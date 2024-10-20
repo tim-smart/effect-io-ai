@@ -13,7 +13,5 @@ TPriorityQueue.fromIterable
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(
-  order: Order.Order<A>
-) => (iterable: Iterable<A>) => STM.STM<TPriorityQueue<A>, never, never>
+export declare const fromIterable: <A>(order: Order.Order<A>) => (iterable: Iterable<A>) => STM.STM<TPriorityQueue<A>>
 ```

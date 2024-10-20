@@ -15,5 +15,5 @@ Stream.unwrapScoped
 ```ts
 export declare const unwrapScoped: <A, E2, R2, E, R>(
   effect: Effect.Effect<Stream<A, E2, R2>, E, R>
-) => Stream<A, E2 | E, R2 | Exclude<R, Scope.Scope>>
+) => Stream<A, E | E2, R2 | Exclude<R, Scope.Scope>>
 ```

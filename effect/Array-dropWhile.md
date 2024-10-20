@@ -24,7 +24,7 @@ assert.deepStrictEqual(result, [4, 5])
 
 ```ts
 export declare const dropWhile: {
-  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => A[]
-  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): A[]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>
 }
 ```

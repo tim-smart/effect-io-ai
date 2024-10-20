@@ -13,7 +13,7 @@ Layer.mergeAll
 **Signature**
 
 ```ts
-export declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Layer<never, any, any>[]]>(
+export declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(
   ...layers: Layers
 ) => Layer<
   { [k in keyof Layers]: Layer.Success<Layers[k]> }[number],

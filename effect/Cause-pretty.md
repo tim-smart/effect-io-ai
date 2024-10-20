@@ -13,5 +13,8 @@ Cause.pretty
 **Signature**
 
 ```ts
-export declare const pretty: <E>(cause: Cause<E>) => string
+export declare const pretty: <E>(
+  cause: Cause<E>,
+  options?: { readonly renderErrorCause?: boolean | undefined }
+) => string
 ```

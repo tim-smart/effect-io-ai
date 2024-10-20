@@ -13,5 +13,5 @@ TMap.toMap
 **Signature**
 
 ```ts
-export declare const toMap: <K, V>(self: TMap<K, V>) => STM.STM<ReadonlyMap<K, V>, never, never>
+export declare const toMap: <K, V>(self: TMap<K, V>) => STM.STM<ReadonlyMap<K, V>>
 ```

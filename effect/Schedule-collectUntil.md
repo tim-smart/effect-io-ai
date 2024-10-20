@@ -14,5 +14,5 @@ Schedule.collectUntil
 **Signature**
 
 ```ts
-export declare const collectUntil: <A>(f: Predicate<A>) => Schedule<Chunk.Chunk<A>, A, never>
+export declare const collectUntil: <A>(f: Predicate<A>) => Schedule<Chunk.Chunk<A>, A>
 ```

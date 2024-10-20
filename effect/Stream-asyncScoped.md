@@ -17,7 +17,11 @@ Stream.asyncScoped
 
 ```ts
 export declare const asyncScoped: <A, E = never, R = never>(
-  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, Scope.Scope | R>,
-  outputBuffer?: number
+  register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, R | Scope.Scope>,
+  bufferSize?:
+    | number
+    | "unbounded"
+    | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
+    | undefined
 ) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```

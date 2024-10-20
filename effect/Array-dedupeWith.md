@@ -28,7 +28,7 @@ export declare const dedupeWith: {
   <S extends Iterable<any>>(
     isEquivalent: (self: ReadonlyArray.Infer<S>, that: ReadonlyArray.Infer<S>) => boolean
   ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
-  <A>(self: readonly [A, ...A[]], isEquivalent: (self: A, that: A) => boolean): [A, ...A[]]
-  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): A[]
+  <A>(self: NonEmptyReadonlyArray<A>, isEquivalent: (self: A, that: A) => boolean): NonEmptyArray<A>
+  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Array<A>
 }
 ```

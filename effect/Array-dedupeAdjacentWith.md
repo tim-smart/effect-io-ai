@@ -24,7 +24,7 @@ assert.deepStrictEqual(unique, [1, 2, 3])
 
 ```ts
 export declare const dedupeAdjacentWith: {
-  <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => A[]
-  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): A[]
+  <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Array<A>
+  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Array<A>
 }
 ```

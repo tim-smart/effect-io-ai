@@ -21,5 +21,7 @@ assert.deepStrictEqual(Option.firstSomeOf([Option.none(), Option.some(1), Option
 **Signature**
 
 ```ts
-export declare const firstSomeOf: <A>(collection: Iterable<Option<A>>) => Option<A>
+export declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(
+  collection: C
+) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```

@@ -14,5 +14,5 @@ Resource.refresh
 **Signature**
 
 ```ts
-export declare const refresh: <A, E>(self: Resource<A, E>) => Effect.Effect<void, E, never>
+export declare const refresh: <A, E>(self: Resource<A, E>) => Effect.Effect<void, E>
 ```

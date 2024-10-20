@@ -23,7 +23,7 @@ assert.deepStrictEqual(result, [1, 2, 4])
 
 ```ts
 export declare const setNonEmptyLast: {
-  <B>(b: B): <A>(self: readonly [A, ...A[]]) => [B | A, ...(B | A)[]]
-  <A, B>(self: readonly [A, ...A[]], b: B): [A | B, ...(A | B)[]]
+  <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>
+  <A, B>(self: NonEmptyReadonlyArray<A>, b: B): NonEmptyArray<A | B>
 }
 ```

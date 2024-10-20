@@ -16,7 +16,7 @@ Queue.takeN
 
 ```ts
 export declare const takeN: {
-  (n: number): <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>, never, never>
-  <A>(self: Dequeue<A>, n: number): Effect.Effect<Chunk.Chunk<A>, never, never>
+  (n: number): <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>>
+  <A>(self: Dequeue<A>, n: number): Effect.Effect<Chunk.Chunk<A>>
 }
 ```

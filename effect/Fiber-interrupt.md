@@ -15,5 +15,5 @@ Fiber.interrupt
 **Signature**
 
 ```ts
-export declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect.Effect<Exit.Exit<A, E>, never, never>
+export declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect.Effect<Exit.Exit<A, E>>
 ```

@@ -13,5 +13,5 @@ Micro.fromExit
 **Signature**
 
 ```ts
-export declare const fromExit: <A, E>(self: MicroExit<A, E>) => Micro<A, E, never>
+export declare const fromExit: <A, E>(self: MicroExit<A, E>) => Micro<A, E>
 ```

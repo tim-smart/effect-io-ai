@@ -13,5 +13,5 @@ Sink.dropUntil
 **Signature**
 
 ```ts
-export declare const dropUntil: <In>(predicate: Predicate<In>) => Sink<unknown, In, In, never, never>
+export declare const dropUntil: <In>(predicate: Predicate<In>) => Sink<unknown, In, In>
 ```

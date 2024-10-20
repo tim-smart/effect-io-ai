@@ -23,5 +23,8 @@ assert.deepStrictEqual(copy, [1, 2, 3])
 **Signature**
 
 ```ts
-export declare const copy: { <A>(self: readonly [A, ...A[]]): [A, ...A[]]; <A>(self: readonly A[]): A[] }
+export declare const copy: {
+  <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>
+  <A>(self: ReadonlyArray<A>): Array<A>
+}
 ```

@@ -15,7 +15,7 @@ STM.replicate
 
 ```ts
 export declare const replicate: {
-  (n: number): <A, E, R>(self: STM<A, E, R>) => STM<A, E, R>[]
-  <A, E, R>(self: STM<A, E, R>, n: number): STM<A, E, R>[]
+  (n: number): <A, E, R>(self: STM<A, E, R>) => Array<STM<A, E, R>>
+  <A, E, R>(self: STM<A, E, R>, n: number): Array<STM<A, E, R>>
 }
 ```

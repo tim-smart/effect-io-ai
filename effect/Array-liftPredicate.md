@@ -25,7 +25,7 @@ assert.deepStrictEqual(to(2), [2])
 
 ```ts
 export declare const liftPredicate: {
-  <A, B extends A>(refinement: Refinement<A, B>): (a: A) => B[]
-  <A>(predicate: Predicate<A>): <B extends A>(b: B) => B[]
+  <A, B extends A>(refinement: Refinement<A, B>): (a: A) => Array<B>
+  <A>(predicate: Predicate<A>): <B extends A>(b: B) => Array<B>
 }
 ```

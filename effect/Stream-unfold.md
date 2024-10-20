@@ -10,8 +10,19 @@ import * as Stream from "effect/Stream"
 Stream.unfold
 ```
 
+**Example**
+
+```ts
+import { Effect, Option, Stream } from "effect"
+
+const stream = Stream.unfold(1, (n) => Option.some([n, n + 1]))
+
+// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+// { _id: 'Chunk', values: [ 1, 2, 3, 4, 5 ] }
+```
+
 **Signature**
 
 ```ts
-export declare const unfold: <S, A>(s: S, f: (s: S) => Option.Option<readonly [A, S]>) => Stream<A, never, never>
+export declare const unfold: <S, A>(s: S, f: (s: S) => Option.Option<readonly [A, S]>) => Stream<A>
 ```

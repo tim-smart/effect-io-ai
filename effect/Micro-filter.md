@@ -19,5 +19,5 @@ export declare const filter: <A, E, R>(
   iterable: Iterable<A>,
   f: (a: NoInfer<A>) => Micro<boolean, E, R>,
   options?: { readonly concurrency?: Concurrency | undefined; readonly negate?: boolean | undefined }
-) => Micro<A[], E, R>
+) => Micro<Array<A>, E, R>
 ```

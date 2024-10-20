@@ -14,7 +14,7 @@ Array.get
 
 ```ts
 export declare const get: {
-  (index: number): <A>(self: readonly A[]) => Option<A>
-  <A>(self: readonly A[], index: number): Option<A>
+  (index: number): <A>(self: ReadonlyArray<A>) => Option<A>
+  <A>(self: ReadonlyArray<A>, index: number): Option<A>
 }
 ```

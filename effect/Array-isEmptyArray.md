@@ -22,5 +22,5 @@ assert.deepStrictEqual(isEmptyArray([1, 2, 3]), false)
 **Signature**
 
 ```ts
-export declare const isEmptyArray: <A>(self: A[]) => self is []
+export declare const isEmptyArray: <A>(self: Array<A>) => self is []
 ```

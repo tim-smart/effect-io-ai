@@ -13,5 +13,5 @@ Sink.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(e: E) => Sink<never, unknown, never, E, never>
+export declare const fail: <E>(e: E) => Sink<never, unknown, never, E>
 ```

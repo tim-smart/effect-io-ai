@@ -19,5 +19,5 @@ Queue.bounded
 **Signature**
 
 ```ts
-export declare const bounded: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>, never, never>
+export declare const bounded: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
 ```

@@ -32,7 +32,7 @@ if (isTupleOf(arr, 3)) {
 
 ```ts
 export declare const isTupleOf: {
-  <N extends number>(n: N): <T>(self: readonly T[]) => self is TupleOf<N, T>
-  <T, N extends number>(self: readonly T[], n: N): self is TupleOf<N, T>
+  <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>
+  <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>
 }
 ```

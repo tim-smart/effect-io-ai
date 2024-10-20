@@ -14,5 +14,5 @@ TQueue.take
 **Signature**
 
 ```ts
-export declare const take: <A>(self: TDequeue<A>) => STM.STM<A, never, never>
+export declare const take: <A>(self: TDequeue<A>) => STM.STM<A>
 ```

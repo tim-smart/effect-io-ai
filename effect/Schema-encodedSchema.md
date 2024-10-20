@@ -16,5 +16,5 @@ Schema.encodedSchema
 **Signature**
 
 ```ts
-export declare const encodedSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<I, I, never>
+export declare const encodedSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<I>
 ```

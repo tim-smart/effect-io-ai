@@ -16,5 +16,5 @@ Sink.fromQueue
 export declare const fromQueue: <In>(
   queue: Queue.Enqueue<In>,
   options?: { readonly shutdown?: boolean | undefined }
-) => Sink<void, In, never, never, never>
+) => Sink<void, In>
 ```

@@ -14,5 +14,5 @@ TQueue.poll
 **Signature**
 
 ```ts
-export declare const poll: <A>(self: TDequeue<A>) => STM.STM<Option.Option<A>, never, never>
+export declare const poll: <A>(self: TDequeue<A>) => STM.STM<Option.Option<A>>
 ```

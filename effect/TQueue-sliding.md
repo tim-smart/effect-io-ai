@@ -16,5 +16,5 @@ TQueue.sliding
 **Signature**
 
 ```ts
-export declare const sliding: <A>(requestedCapacity: number) => STM.STM<TQueue<A>, never, never>
+export declare const sliding: <A>(requestedCapacity: number) => STM.STM<TQueue<A>>
 ```

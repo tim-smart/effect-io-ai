@@ -13,18 +13,30 @@ import * as Stream from "effect/Stream"
 Stream.zipWith
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+// We create two streams and zip them with custom logic.
+const stream = Stream.zipWith(Stream.make(1, 2, 3, 4, 5, 6), Stream.make("a", "b", "c"), (n, s) => [n - s.length, s])
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ [ 0, 'a' ], [ 1, 'b' ], [ 2, 'c' ] ] }
+```
+
 **Signature**
 
 ```ts
 export declare const zipWith: {
-  <A2, E2, R2, A, A3>(
-    that: Stream<A2, E2, R2>,
-    f: (a: A, a2: A2) => A3
-  ): <E, R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2, A3>(
-    self: Stream<A, E, R>,
-    that: Stream<A2, E2, R2>,
-    f: (a: A, a2: A2) => A3
-  ): Stream<A3, E | E2, R | R2>
+  <AR, ER, RR, AL, A>(
+    right: Stream<AR, ER, RR>,
+    f: (left: AL, right: AR) => A
+  ): <EL, RL>(left: Stream<AL, EL, RL>) => Stream<A, EL | ER, RL | RR>
+  <AL, EL, RL, AR, ER, RR, A>(
+    left: Stream<AL, EL, RL>,
+    right: Stream<AR, ER, RR>,
+    f: (left: AL, right: AR) => A
+  ): Stream<A, EL | ER, RL | RR>
 }
 ```

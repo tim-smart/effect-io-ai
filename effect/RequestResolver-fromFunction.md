@@ -13,7 +13,7 @@ RequestResolver.fromFunction
 **Signature**
 
 ```ts
-export declare const fromFunction: <A extends Request.Request<any, never>>(
+export declare const fromFunction: <A extends Request.Request<any>>(
   f: (request: A) => Request.Request.Success<A>
-) => RequestResolver<A, never>
+) => RequestResolver<A>
 ```

@@ -13,5 +13,5 @@ TArray.headOption
 **Signature**
 
 ```ts
-export declare const headOption: <A>(self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
+export declare const headOption: <A>(self: TArray<A>) => STM.STM<Option.Option<A>>
 ```

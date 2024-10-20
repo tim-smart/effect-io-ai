@@ -17,5 +17,5 @@ Chunk.toReadonlyArray
 ```ts
 export declare const toReadonlyArray: <S extends Chunk<any>>(
   self: S
-) => S extends NonEmptyChunk<any> ? readonly [Chunk.Infer<S>, ...Chunk.Infer<S>[]] : readonly Chunk.Infer<S>[]
+) => S extends NonEmptyChunk<any> ? RA.NonEmptyReadonlyArray<Chunk.Infer<S>> : ReadonlyArray<Chunk.Infer<S>>
 ```

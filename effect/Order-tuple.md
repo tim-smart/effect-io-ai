@@ -22,7 +22,7 @@ Order.tuple
 **Signature**
 
 ```ts
-export declare const tuple: <T extends readonly Order<any>[]>(
+export declare const tuple: <T extends ReadonlyArray<Order<any>>>(
   ...elements: T
 ) => Order<Readonly<{ [I in keyof T]: [T[I]] extends [Order<infer A>] ? A : never }>>
 ```

@@ -13,5 +13,5 @@ Array.length
 **Signature**
 
 ```ts
-export declare const length: <A>(self: readonly A[]) => number
+export declare const length: <A>(self: ReadonlyArray<A>) => number
 ```

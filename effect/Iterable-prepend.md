@@ -14,7 +14,7 @@ Iterable.prepend
 
 ```ts
 export declare const prepend: {
-  <B>(head: B): <A>(self: Iterable<A>) => Iterable<B | A>
+  <B>(head: B): <A>(self: Iterable<A>) => Iterable<A | B>
   <A, B>(self: Iterable<A>, head: B): Iterable<A | B>
 }
 ```

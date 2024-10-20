@@ -15,5 +15,5 @@ Channel.fromPubSubScoped
 ```ts
 export declare const fromPubSubScoped: <Done, Err, Elem>(
   pubsub: PubSub.PubSub<Either.Either<Elem, Exit.Exit<Done, Err>>>
-) => Effect.Effect<Channel<Elem, unknown, Err, unknown, Done, unknown, never>, never, Scope.Scope>
+) => Effect.Effect<Channel<Elem, unknown, Err, unknown, Done, unknown>, never, Scope.Scope>
 ```

@@ -11,6 +11,31 @@ import * as Stream from "effect/Stream"
 Stream.acquireRelease
 ```
 
+**Example**
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+// Simulating File operations
+const open = (filename: string) =>
+  Effect.gen(function* () {
+    yield* Console.log(`Opening ${filename}`)
+    return {
+      getLines: Effect.succeed(["Line 1", "Line 2", "Line 3"]),
+      close: Console.log(`Closing ${filename}`)
+    }
+  })
+
+const stream = Stream.acquireRelease(open("file.txt"), (file) => file.close).pipe(
+  Stream.flatMap((file) => file.getLines)
+)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// Opening file.txt
+// Closing file.txt
+// { _id: 'Chunk', values: [ [ 'Line 1', 'Line 2', 'Line 3' ] ] }
+```
+
 **Signature**
 
 ```ts

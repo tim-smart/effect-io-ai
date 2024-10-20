@@ -22,5 +22,7 @@ assert.deepStrictEqual(result, [[1, 2, 3], 4])
 **Signature**
 
 ```ts
-export declare const unappend: <A>(self: readonly [A, ...A[]]) => [arrayWithoutLastElement: A[], lastElement: A]
+export declare const unappend: <A>(
+  self: NonEmptyReadonlyArray<A>
+) => [arrayWithoutLastElement: Array<A>, lastElement: A]
 ```

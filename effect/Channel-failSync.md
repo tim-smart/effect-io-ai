@@ -14,5 +14,5 @@ Channel.failSync
 **Signature**
 
 ```ts
-export declare const failSync: <E>(evaluate: LazyArg<E>) => Channel<never, unknown, E, unknown, never, unknown, never>
+export declare const failSync: <E>(evaluate: LazyArg<E>) => Channel<never, unknown, E, unknown, never, unknown>
 ```

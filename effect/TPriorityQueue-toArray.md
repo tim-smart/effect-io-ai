@@ -13,5 +13,5 @@ TPriorityQueue.toArray
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: TPriorityQueue<A>) => STM.STM<A[], never, never>
+export declare const toArray: <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
 ```

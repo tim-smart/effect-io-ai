@@ -22,5 +22,8 @@ assert.deepStrictEqual(isArray([1, 2, 3]), true)
 **Signature**
 
 ```ts
-export declare const isArray: { (self: unknown): self is unknown[]; <T>(self: T): self is Extract<T, readonly any[]> }
+export declare const isArray: {
+  (self: unknown): self is Array<unknown>
+  <T>(self: T): self is Extract<T, ReadonlyArray<any>>
+}
 ```

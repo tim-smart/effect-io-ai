@@ -14,5 +14,5 @@ Sink.leftover
 **Signature**
 
 ```ts
-export declare const leftover: <L>(chunk: Chunk.Chunk<L>) => Sink<void, unknown, L, never, never>
+export declare const leftover: <L>(chunk: Chunk.Chunk<L>) => Sink<void, unknown, L>
 ```

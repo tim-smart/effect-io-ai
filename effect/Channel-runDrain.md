@@ -15,5 +15,5 @@ Channel.runDrain
 ```ts
 export declare const runDrain: <OutElem, OutErr, InErr, OutDone, InDone, Env>(
   self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, Env>
-) => Effect.Effect<OutDone, OutErr, Env>
+) => Effect.Effect<OutDone, OutErr, Exclude<Env, Scope.Scope>>
 ```

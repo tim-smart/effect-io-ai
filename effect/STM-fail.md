@@ -13,5 +13,5 @@ STM.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => STM<never, E, never>
+export declare const fail: <E>(error: E) => STM<never, E>
 ```

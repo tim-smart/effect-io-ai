@@ -17,7 +17,7 @@ Array.replace
 import { Array } from "effect"
 
 const letters = ["a", "b", "c", "d"]
-const result = Array.replace(1, "z")(letters)
+const result = Array.replace(letters, 1, "z")
 assert.deepStrictEqual(result, ["a", "z", "c", "d"])
 ```
 
@@ -25,7 +25,14 @@ assert.deepStrictEqual(result, ["a", "z", "c", "d"])
 
 ```ts
 export declare const replace: {
-  <B>(i: number, b: B): <A>(self: Iterable<A>) => (B | A)[]
-  <A, B>(self: Iterable<A>, i: number, b: B): (A | B)[]
+  <B>(
+    i: number,
+    b: B
+  ): <A, S extends Iterable<A> = Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    self: S,
+    i: number,
+    b: B
+  ): ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>
 }
 ```

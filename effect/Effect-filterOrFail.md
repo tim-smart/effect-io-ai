@@ -65,7 +65,7 @@ export declare const filterOrFail: {
   <A, E, R, B extends A>(
     self: Effect<A, E, R>,
     refinement: Refinement<A, B>
-  ): Effect<B, Cause.NoSuchElementException | E, R>
-  <A, E, R>(self: Effect<A, E, R>, predicate: Predicate<A>): Effect<A, Cause.NoSuchElementException | E, R>
+  ): Effect<B, E | Cause.NoSuchElementException, R>
+  <A, E, R>(self: Effect<A, E, R>, predicate: Predicate<A>): Effect<A, E | Cause.NoSuchElementException, R>
 }
 ```

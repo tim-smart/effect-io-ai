@@ -14,5 +14,5 @@ Layer.syncContext
 **Signature**
 
 ```ts
-export declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A, never, never>
+export declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A>
 ```

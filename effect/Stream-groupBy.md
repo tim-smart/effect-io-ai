@@ -10,6 +10,33 @@ import * as Stream from "effect/Stream"
 Stream.groupBy
 ```
 
+**Example**
+
+```ts
+import { Chunk, Effect, GroupBy, Stream } from "effect"
+
+const groupByKeyResult = Stream.fromIterable([
+  "Mary",
+  "James",
+  "Robert",
+  "Patricia",
+  "John",
+  "Jennifer",
+  "Rebecca",
+  "Peter"
+]).pipe(Stream.groupBy((name) => Effect.succeed([name.substring(0, 1), name])))
+
+const stream = GroupBy.evaluate(groupByKeyResult, (key, stream) =>
+  Stream.fromEffect(Stream.runCollect(stream).pipe(Effect.andThen((chunk) => [key, Chunk.size(chunk)] as const)))
+)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// {
+//   _id: 'Chunk',
+//   values: [ [ 'M', 1 ], [ 'J', 3 ], [ 'R', 2 ], [ 'P', 2 ] ]
+// }
+```
+
 **Signature**
 
 ```ts

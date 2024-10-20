@@ -17,5 +17,5 @@ Micro.acquireRelease
 export declare const acquireRelease: <A, E, R>(
   acquire: Micro<A, E, R>,
   release: (a: A, exit: MicroExit<unknown, unknown>) => Micro<void>
-) => Micro<A, E, MicroScope | R>
+) => Micro<A, E, R | MicroScope>
 ```

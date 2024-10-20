@@ -16,5 +16,7 @@ PubSub.sliding
 **Signature**
 
 ```ts
-export declare const sliding: <A>(requestedCapacity: number) => Effect.Effect<PubSub<A>, never, never>
+export declare const sliding: <A>(
+  capacity: number | { readonly capacity: number; readonly replay?: number | undefined }
+) => Effect.Effect<PubSub<A>>
 ```

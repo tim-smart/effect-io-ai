@@ -14,5 +14,5 @@ Micro.promise
 **Signature**
 
 ```ts
-export declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Micro<A, never, never>
+export declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Micro<A>
 ```

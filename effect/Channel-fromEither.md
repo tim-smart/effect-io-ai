@@ -13,7 +13,5 @@ Channel.fromEither
 **Signature**
 
 ```ts
-export declare const fromEither: <R, L>(
-  either: Either.Either<R, L>
-) => Channel<never, unknown, L, unknown, R, unknown, never>
+export declare const fromEither: <R, L>(either: Either.Either<R, L>) => Channel<never, unknown, L, unknown, R, unknown>
 ```

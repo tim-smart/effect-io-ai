@@ -16,5 +16,5 @@ Order.array
 **Signature**
 
 ```ts
-export declare const array: <A>(O: Order<A>) => Order<readonly A[]>
+export declare const array: <A>(O: Order<A>) => Order<ReadonlyArray<A>>
 ```

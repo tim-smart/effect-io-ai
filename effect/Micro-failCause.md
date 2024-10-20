@@ -13,5 +13,5 @@ Micro.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: MicroCause<E>) => Micro<never, E, never>
+export declare const failCause: <E>(cause: MicroCause<E>) => Micro<never, E>
 ```

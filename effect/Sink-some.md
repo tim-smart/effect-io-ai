@@ -13,5 +13,5 @@ Sink.some
 **Signature**
 
 ```ts
-export declare const some: <In>(predicate: Predicate<In>) => Sink<boolean, In, In, never, never>
+export declare const some: <In>(predicate: Predicate<In>) => Sink<boolean, In, In>
 ```

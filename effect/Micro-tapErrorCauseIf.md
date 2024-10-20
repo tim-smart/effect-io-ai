@@ -18,11 +18,11 @@ export declare const tapErrorCauseIf: {
   <E, B, E2, R2, EB extends MicroCause<E>>(
     refinement: Refinement<MicroCause<E>, EB>,
     f: (a: EB) => Micro<B, E2, R2>
-  ): <A, R>(self: Micro<A, E, R>) => Micro<A, E | E2, R2 | R>
+  ): <A, R>(self: Micro<A, E, R>) => Micro<A, E | E2, R | R2>
   <E, B, E2, R2>(
-    predicate: (cause: MicroCause<E>) => boolean,
-    f: (a: MicroCause<E>) => Micro<B, E2, R2>
-  ): <A, R>(self: Micro<A, E, R>) => Micro<A, E | E2, R2 | R>
+    predicate: (cause: NoInfer<MicroCause<E>>) => boolean,
+    f: (a: NoInfer<MicroCause<E>>) => Micro<B, E2, R2>
+  ): <A, R>(self: Micro<A, E, R>) => Micro<A, E | E2, R | R2>
   <A, E, R, B, E2, R2, EB extends MicroCause<E>>(
     self: Micro<A, E, R>,
     refinement: Refinement<MicroCause<E>, EB>,
@@ -30,8 +30,8 @@ export declare const tapErrorCauseIf: {
   ): Micro<A, E | E2, R | R2>
   <A, E, R, B, E2, R2>(
     self: Micro<A, E, R>,
-    predicate: (cause: MicroCause<E>) => boolean,
-    f: (a: MicroCause<E>) => Micro<B, E2, R2>
+    predicate: (cause: NoInfer<MicroCause<E>>) => boolean,
+    f: (a: NoInfer<MicroCause<E>>) => Micro<B, E2, R2>
   ): Micro<A, E | E2, R | R2>
 }
 ```

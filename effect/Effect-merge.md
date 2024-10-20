@@ -14,5 +14,5 @@ Effect.merge
 **Signature**
 
 ```ts
-export declare const merge: <A, E, R>(self: Effect<A, E, R>) => Effect<A | E, never, R>
+export declare const merge: <A, E, R>(self: Effect<A, E, R>) => Effect<E | A, never, R>
 ```

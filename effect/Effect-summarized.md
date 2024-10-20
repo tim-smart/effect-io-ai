@@ -24,6 +24,6 @@ export declare const summarized: {
     self: Effect<A, E, R>,
     summary: Effect<B, E2, R2>,
     f: (start: B, end: B) => C
-  ): Effect<[C, A], E | E2, R | R2>
+  ): Effect<[C, A], E2 | E, R2 | R>
 }
 ```

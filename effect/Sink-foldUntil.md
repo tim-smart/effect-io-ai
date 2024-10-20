@@ -16,5 +16,5 @@ Sink.foldUntil
 **Signature**
 
 ```ts
-export declare const foldUntil: <In, S>(s: S, max: number, f: (s: S, input: In) => S) => Sink<S, In, In, never, never>
+export declare const foldUntil: <In, S>(s: S, max: number, f: (s: S, input: In) => S) => Sink<S, In, In>
 ```

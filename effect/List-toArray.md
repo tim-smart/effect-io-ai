@@ -13,5 +13,5 @@ List.toArray
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: List<A>) => A[]
+export declare const toArray: <A>(self: List<A>) => Array<A>
 ```

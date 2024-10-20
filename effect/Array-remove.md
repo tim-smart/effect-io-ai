@@ -27,5 +27,8 @@ assert.deepStrictEqual(outOfBoundsResult, [1, 2, 3, 4])
 **Signature**
 
 ```ts
-export declare const remove: { (i: number): <A>(self: Iterable<A>) => A[]; <A>(self: Iterable<A>, i: number): A[] }
+export declare const remove: {
+  (i: number): <A>(self: Iterable<A>) => Array<A>
+  <A>(self: Iterable<A>, i: number): Array<A>
+}
 ```

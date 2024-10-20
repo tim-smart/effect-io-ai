@@ -29,5 +29,5 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const toEntries: <V>(self: Trie<V>) => [string, V][]
+export declare const toEntries: <V>(self: Trie<V>) => Array<[string, V]>
 ```

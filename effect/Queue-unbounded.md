@@ -13,5 +13,5 @@ Queue.unbounded
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => Effect.Effect<Queue<A>, never, never>
+export declare const unbounded: <A>() => Effect.Effect<Queue<A>>
 ```

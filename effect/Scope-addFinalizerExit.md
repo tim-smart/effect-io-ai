@@ -1,7 +1,8 @@
 # addFinalizerExit
 
-A simplified version of `addFinalizerWith` when the `finalizer` does not
-depend on the `Exit` value that the scope is closed with.
+Adds a finalizer to this scope. The finalizer receives the `Exit` value
+when the scope is closed, allowing it to perform different actions based
+on the exit status.
 
 To import and use `addFinalizerExit` from the "Scope" module:
 

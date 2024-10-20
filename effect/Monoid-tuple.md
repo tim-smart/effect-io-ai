@@ -24,7 +24,7 @@ Monoid.tuple
 **Signature**
 
 ```ts
-export declare const tuple: <T extends readonly Monoid<any>[]>(
+export declare const tuple: <T extends ReadonlyArray<Monoid<any>>>(
   ...elements: T
 ) => Monoid<{ readonly [I in keyof T]: [T[I]] extends [Monoid<infer A>] ? A : never }>
 ```

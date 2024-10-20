@@ -1,6 +1,6 @@
 # Uint8Array
 
-A schema that transforms a `number` array into a `Uint8Array`.
+A schema that transforms an array of numbers into a `Uint8Array`.
 
 To import and use `Uint8Array` from the "Schema" module:
 

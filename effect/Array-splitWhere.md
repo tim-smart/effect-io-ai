@@ -28,7 +28,9 @@ assert.deepStrictEqual(result, [
 
 ```ts
 export declare const splitWhere: {
-  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [beforeMatch: A[], fromMatch: A[]]
-  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [beforeMatch: A[], fromMatch: A[]]
+  <A>(
+    predicate: (a: NoInfer<A>, i: number) => boolean
+  ): (self: Iterable<A>) => [beforeMatch: Array<A>, fromMatch: Array<A>]
+  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [beforeMatch: Array<A>, fromMatch: Array<A>]
 }
 ```

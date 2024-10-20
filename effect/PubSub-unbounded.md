@@ -13,5 +13,5 @@ PubSub.unbounded
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => Effect.Effect<PubSub<A>, never, never>
+export declare const unbounded: <A>(options?: { readonly replay?: number | undefined }) => Effect.Effect<PubSub<A>>
 ```

@@ -17,9 +17,7 @@ export declare const catchTags: {
   <
     E,
     Cases extends {
-      [K in Extract<E, { _tag: string }>["_tag"]]+?:
-        | ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>)
-        | undefined
+      [K in Extract<E, { _tag: string }>["_tag"]]+?: (error: Extract<E, { _tag: K }>) => Effect<any, any, any>
     } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string }>["_tag"]>]: never })
   >(
     cases: Cases
@@ -44,9 +42,7 @@ export declare const catchTags: {
     E,
     A,
     Cases extends {
-      [K in Extract<E, { _tag: string }>["_tag"]]+?:
-        | ((error: Extract<E, { _tag: K }>) => Effect<any, any, any>)
-        | undefined
+      [K in Extract<E, { _tag: string }>["_tag"]]+?: (error: Extract<E, { _tag: K }>) => Effect<any, any, any>
     } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string }>["_tag"]>]: never })
   >(
     self: Effect<A, E, R>,

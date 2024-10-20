@@ -26,5 +26,5 @@ assert.deepStrictEqual(result, [1, 2, 3, 4, 5, 6])
 **Signature**
 
 ```ts
-export declare const flatten: <S extends readonly (readonly any[])[]>(self: S) => ReadonlyArray.Flatten<S>
+export declare const flatten: <S extends ReadonlyArray<ReadonlyArray<any>>>(self: S) => ReadonlyArray.Flatten<S>
 ```

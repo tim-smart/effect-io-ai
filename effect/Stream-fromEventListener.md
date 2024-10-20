@@ -16,6 +16,14 @@ Stream.fromEventListener
 export declare const fromEventListener: <A = unknown>(
   target: EventListener<A>,
   type: string,
-  options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean } | undefined
-) => Stream<A, never, never>
+  options?:
+    | boolean
+    | {
+        readonly capture?: boolean
+        readonly passive?: boolean
+        readonly once?: boolean
+        readonly bufferSize?: number | "unbounded" | undefined
+      }
+    | undefined
+) => Stream<A>
 ```

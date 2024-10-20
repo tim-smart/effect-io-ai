@@ -25,17 +25,19 @@ export declare const validateAll: {
           readonly concurrency?: Concurrency | undefined
           readonly batching?: boolean | "inherit" | undefined
           readonly discard?: false | undefined
+          readonly concurrentFinalizers?: boolean | undefined
         }
       | undefined
-  ): (elements: Iterable<A>) => Effect<B[], E[], R>
+  ): (elements: Iterable<A>) => Effect<Array<B>, Array<E>, R>
   <A, B, E, R>(
     f: (a: A, i: number) => Effect<B, E, R>,
     options: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
+      readonly concurrentFinalizers?: boolean | undefined
     }
-  ): (elements: Iterable<A>) => Effect<void, E[], R>
+  ): (elements: Iterable<A>) => Effect<void, Array<E>, R>
   <A, B, E, R>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<B, E, R>,
@@ -44,9 +46,10 @@ export declare const validateAll: {
           readonly concurrency?: Concurrency | undefined
           readonly batching?: boolean | "inherit" | undefined
           readonly discard?: false | undefined
+          readonly concurrentFinalizers?: boolean | undefined
         }
       | undefined
-  ): Effect<B[], E[], R>
+  ): Effect<Array<B>, Array<E>, R>
   <A, B, E, R>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<B, E, R>,
@@ -54,7 +57,8 @@ export declare const validateAll: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
+      readonly concurrentFinalizers?: boolean | undefined
     }
-  ): Effect<void, E[], R>
+  ): Effect<void, Array<E>, R>
 }
 ```

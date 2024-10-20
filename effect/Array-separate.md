@@ -28,5 +28,5 @@ assert.deepStrictEqual(result, [
 ```ts
 export declare const separate: <T extends Iterable<array_<any, any>>>(
   self: T
-) => [array_.Left<ReadonlyArray.Infer<T>>[], array_.Right<ReadonlyArray.Infer<T>>[]]
+) => [Array<array_.Left<ReadonlyArray.Infer<T>>>, Array<array_.Right<ReadonlyArray.Infer<T>>>]
 ```

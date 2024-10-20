@@ -15,6 +15,6 @@ Schema.greaterThan
 ```ts
 export declare const greaterThan: <A extends number>(
   min: number,
-  annotations?: Annotations.Filter<A, A> | undefined
+  annotations?: Annotations.Filter<A>
 ) => <I, R>(self: Schema<A, I, R>) => filter<Schema<A, I, R>>
 ```

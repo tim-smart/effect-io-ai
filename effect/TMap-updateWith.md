@@ -18,14 +18,7 @@ TMap.updateWith
 
 ```ts
 export declare const updateWith: {
-  <K, V>(
-    key: K,
-    f: (value: Option.Option<V>) => Option.Option<V>
-  ): (self: TMap<K, V>) => STM.STM<Option.Option<V>, never, never>
-  <K, V>(
-    self: TMap<K, V>,
-    key: K,
-    f: (value: Option.Option<V>) => Option.Option<V>
-  ): STM.STM<Option.Option<V>, never, never>
+  <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: TMap<K, V>) => STM.STM<Option.Option<V>>
+  <K, V>(self: TMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): STM.STM<Option.Option<V>>
 }
 ```

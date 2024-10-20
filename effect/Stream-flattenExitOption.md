@@ -21,5 +21,5 @@ Stream.flattenExitOption
 ```ts
 export declare const flattenExitOption: <A, E2, E, R>(
   self: Stream<Exit.Exit<A, Option.Option<E2>>, E, R>
-) => Stream<A, E2 | E, R>
+) => Stream<A, E | E2, R>
 ```

@@ -23,5 +23,5 @@ assert.deepStrictEqual(Array.getSomes([Option.some(1), Option.none(), Option.som
 ```ts
 export declare const getSomes: <T extends Iterable<Option<X>>, X = any>(
   self: T
-) => Option.Value<ReadonlyArray.Infer<T>>[]
+) => Array<Option.Value<ReadonlyArray.Infer<T>>>
 ```

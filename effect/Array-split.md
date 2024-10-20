@@ -27,5 +27,8 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const split: { (n: number): <A>(self: Iterable<A>) => A[][]; <A>(self: Iterable<A>, n: number): A[][] }
+export declare const split: {
+  (n: number): <A>(self: Iterable<A>) => Array<Array<A>>
+  <A>(self: Iterable<A>, n: number): Array<Array<A>>
+}
 ```

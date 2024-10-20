@@ -13,8 +13,5 @@ Utils.structuralRegion
 **Signature**
 
 ```ts
-export declare const structuralRegion: <A>(
-  body: () => A,
-  tester?: ((a: unknown, b: unknown) => boolean) | undefined
-) => A
+export declare const structuralRegion: <A>(body: () => A, tester?: (a: unknown, b: unknown) => boolean) => A
 ```

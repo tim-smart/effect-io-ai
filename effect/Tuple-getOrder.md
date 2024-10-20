@@ -16,7 +16,7 @@ Tuple.getOrder
 **Signature**
 
 ```ts
-export declare const getOrder: <T extends readonly order.Order<any>[]>(
+export declare const getOrder: <T extends ReadonlyArray<order.Order<any>>>(
   ...elements: T
 ) => order.Order<{ [I in keyof T]: [T[I]] extends [order.Order<infer A>] ? A : never }>
 ```

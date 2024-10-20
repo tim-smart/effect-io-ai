@@ -22,7 +22,7 @@ Semigroup.tuple
 **Signature**
 
 ```ts
-export declare const tuple: <T extends readonly Semigroup<any>[]>(
+export declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(
   ...elements: T
 ) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never }>
 ```

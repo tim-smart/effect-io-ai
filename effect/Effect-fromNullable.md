@@ -14,5 +14,5 @@ Effect.fromNullable
 **Signature**
 
 ```ts
-export declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException, never>
+export declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>
 ```

@@ -16,5 +16,8 @@ BigDecimal.scale
 **Signature**
 
 ```ts
-export declare const scale: (self: BigDecimal, scale: number) => BigDecimal
+export declare const scale: {
+  (scale: number): (self: BigDecimal) => BigDecimal
+  (self: BigDecimal, scale: number): BigDecimal
+}
 ```

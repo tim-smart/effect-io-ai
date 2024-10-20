@@ -13,5 +13,5 @@ Sink.collectAll
 **Signature**
 
 ```ts
-export declare const collectAll: <In>() => Sink<Chunk.Chunk<In>, In, never, never, never>
+export declare const collectAll: <In>() => Sink<Chunk.Chunk<In>, In>
 ```

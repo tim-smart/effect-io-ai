@@ -15,5 +15,5 @@ Effect.none
 ```ts
 export declare const none: <A, E, R>(
   self: Effect<Option.Option<A>, E, R>
-) => Effect<void, Cause.NoSuchElementException | E, R>
+) => Effect<void, E | Cause.NoSuchElementException, R>
 ```

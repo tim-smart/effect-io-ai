@@ -13,5 +13,5 @@ TPriorityQueue.make
 **Signature**
 
 ```ts
-export declare const make: <A>(order: Order.Order<A>) => (...elements: A[]) => STM.STM<TPriorityQueue<A>, never, never>
+export declare const make: <A>(order: Order.Order<A>) => (...elements: Array<A>) => STM.STM<TPriorityQueue<A>>
 ```

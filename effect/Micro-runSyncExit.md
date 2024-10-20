@@ -16,5 +16,5 @@ Micro.runSyncExit
 **Signature**
 
 ```ts
-export declare const runSyncExit: <A, E>(effect: Micro<A, E, never>) => MicroExit<A, E>
+export declare const runSyncExit: <A, E>(effect: Micro<A, E>) => MicroExit<A, E>
 ```

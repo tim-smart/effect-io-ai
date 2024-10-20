@@ -13,5 +13,5 @@ Sink.last
 **Signature**
 
 ```ts
-export declare const last: <In>() => Sink<Option.Option<In>, In, In, never, never>
+export declare const last: <In>() => Sink<Option.Option<In>, In, In>
 ```

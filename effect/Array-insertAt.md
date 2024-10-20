@@ -25,7 +25,7 @@ assert.deepStrictEqual(result, Option.some(["a", "b", "c", "d", "e"]))
 
 ```ts
 export declare const insertAt: {
-  <B>(i: number, b: B): <A>(self: Iterable<A>) => Option<[B | A, ...(B | A)[]]>
-  <A, B>(self: Iterable<A>, i: number, b: B): Option<[A | B, ...(A | B)[]]>
+  <B>(i: number, b: B): <A>(self: Iterable<A>) => Option<NonEmptyArray<A | B>>
+  <A, B>(self: Iterable<A>, i: number, b: B): Option<NonEmptyArray<A | B>>
 }
 ```

@@ -14,7 +14,7 @@ TSet.takeSome
 
 ```ts
 export declare const takeSome: {
-  <A, B>(pf: (a: A) => Option.Option<B>): (self: TSet<A>) => STM.STM<[B, ...B[]], never, never>
-  <A, B>(self: TSet<A>, pf: (a: A) => Option.Option<B>): STM.STM<[B, ...B[]], never, never>
+  <A, B>(pf: (a: A) => Option.Option<B>): (self: TSet<A>) => STM.STM<[B, ...Array<B>]>
+  <A, B>(self: TSet<A>, pf: (a: A) => Option.Option<B>): STM.STM<[B, ...Array<B>]>
 }
 ```

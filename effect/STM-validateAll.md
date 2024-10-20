@@ -18,7 +18,7 @@ STM.validateAll
 
 ```ts
 export declare const validateAll: {
-  <A, B, E, R>(f: (a: A) => STM<B, E, R>): (elements: Iterable<A>) => STM<B[], [E, ...E[]], R>
-  <A, B, E, R>(elements: Iterable<A>, f: (a: A) => STM<B, E, R>): STM<B[], [E, ...E[]], R>
+  <A, B, E, R>(f: (a: A) => STM<B, E, R>): (elements: Iterable<A>) => STM<Array<B>, [E, ...Array<E>], R>
+  <A, B, E, R>(elements: Iterable<A>, f: (a: A) => STM<B, E, R>): STM<Array<B>, [E, ...Array<E>], R>
 }
 ```

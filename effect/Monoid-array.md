@@ -15,5 +15,5 @@ Monoid.array
 **Signature**
 
 ```ts
-export declare const array: <A>() => Monoid<readonly A[]>
+export declare const array: <A>() => Monoid<ReadonlyArray<A>>
 ```

@@ -15,6 +15,14 @@ BrowserStream.fromEventListenerWindow
 ```ts
 export declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(
   type: K,
-  options?: boolean | Omit<AddEventListenerOptions, "signal">
+  options?:
+    | boolean
+    | {
+        readonly capture?: boolean
+        readonly passive?: boolean
+        readonly once?: boolean
+        readonly bufferSize?: number | "unbounded" | undefined
+      }
+    | undefined
 ) => Stream.Stream<WindowEventMap[K], never, never>
 ```

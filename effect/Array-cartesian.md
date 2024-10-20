@@ -30,7 +30,7 @@ assert.deepStrictEqual(product, [
 
 ```ts
 export declare const cartesian: {
-  <B>(that: readonly B[]): <A>(self: readonly A[]) => [A, B][]
-  <A, B>(self: readonly A[], that: readonly B[]): [A, B][]
+  <B>(that: ReadonlyArray<B>): <A>(self: ReadonlyArray<A>) => Array<[A, B]>
+  <A, B>(self: ReadonlyArray<A>, that: ReadonlyArray<B>): Array<[A, B]>
 }
 ```

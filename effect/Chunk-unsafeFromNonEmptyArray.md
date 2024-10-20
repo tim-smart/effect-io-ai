@@ -13,5 +13,5 @@ Chunk.unsafeFromNonEmptyArray
 **Signature**
 
 ```ts
-export declare const unsafeFromNonEmptyArray: <A>(self: readonly [A, ...A[]]) => NonEmptyChunk<A>
+export declare const unsafeFromNonEmptyArray: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyChunk<A>
 ```

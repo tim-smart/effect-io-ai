@@ -28,7 +28,7 @@ assert.deepStrictEqual(result, [
 
 ```ts
 export declare const splitAt: {
-  (n: number): <A>(self: Iterable<A>) => [beforeIndex: A[], fromIndex: A[]]
-  <A>(self: Iterable<A>, n: number): [beforeIndex: A[], fromIndex: A[]]
+  (n: number): <A>(self: Iterable<A>) => [beforeIndex: Array<A>, fromIndex: Array<A>]
+  <A>(self: Iterable<A>, n: number): [beforeIndex: Array<A>, fromIndex: Array<A>]
 }
 ```

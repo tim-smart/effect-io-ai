@@ -13,5 +13,5 @@ STM.fromEither
 **Signature**
 
 ```ts
-export declare const fromEither: <A, E>(either: Either.Either<A, E>) => STM<A, E, never>
+export declare const fromEither: <A, E>(either: Either.Either<A, E>) => STM<A, E>
 ```

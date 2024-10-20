@@ -21,7 +21,7 @@ export declare const fromPubSub: {
       readonly maxChunkSize?: number | undefined
       readonly shutdown?: boolean | undefined
     }
-  ): Effect.Effect<Stream<A, never, never>, never, Scope.Scope>
+  ): Effect.Effect<Stream<A>, never, Scope.Scope>
   <A>(
     pubsub: PubSub.PubSub<A>,
     options?:
@@ -31,6 +31,6 @@ export declare const fromPubSub: {
           readonly shutdown?: boolean | undefined
         }
       | undefined
-  ): Stream<A, never, never>
+  ): Stream<A>
 }
 ```

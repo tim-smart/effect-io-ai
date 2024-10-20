@@ -22,5 +22,5 @@ assert.deepStrictEqual(result.length, 3)
 **Signature**
 
 ```ts
-export declare const allocate: <A = never>(n: number) => (A | undefined)[]
+export declare const allocate: <A = never>(n: number) => Array<A | undefined>
 ```

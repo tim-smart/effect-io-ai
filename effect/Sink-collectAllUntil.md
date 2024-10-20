@@ -14,5 +14,5 @@ Sink.collectAllUntil
 **Signature**
 
 ```ts
-export declare const collectAllUntil: <In>(p: Predicate<In>) => Sink<Chunk.Chunk<In>, In, In, never, never>
+export declare const collectAllUntil: <In>(p: Predicate<In>) => Sink<Chunk.Chunk<In>, In, In>
 ```

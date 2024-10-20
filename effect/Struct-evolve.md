@@ -32,14 +32,7 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const evolve: {
-  <O, T>(
-    t: PartialTransform<O, T>
-  ): (obj: O) => {
-    [K in keyof O]: K extends keyof T ? (T[K] extends (...a: any) => any ? ReturnType<T[K]> : O[K]) : O[K]
-  }
-  <O, T>(
-    obj: O,
-    t: PartialTransform<O, T>
-  ): { [K in keyof O]: K extends keyof T ? (T[K] extends (...a: any) => any ? ReturnType<T[K]> : O[K]) : O[K] }
+  <O, T>(t: PartialTransform<O, T>): (obj: O) => Transformed<O, T>
+  <O, T>(obj: O, t: PartialTransform<O, T>): Transformed<O, T>
 }
 ```

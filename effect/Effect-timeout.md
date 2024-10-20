@@ -27,6 +27,6 @@ Effect.timeout
 ```ts
 export declare const timeout: {
   (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutException, R>
-  <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, E | Cause.TimeoutException, R>
+  <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, Cause.TimeoutException | E, R>
 }
 ```

@@ -17,12 +17,20 @@ FiberHandle.unsafeSet
 export declare const unsafeSet: {
   <A, E, XE extends E, XA extends A>(
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly interruptAs?: FiberId.FiberId | undefined; readonly onlyIfMissing?: boolean | undefined }
+    options?: {
+      readonly interruptAs?: FiberId.FiberId | undefined
+      readonly onlyIfMissing?: boolean | undefined
+      readonly propagateInterruption?: boolean | undefined
+    }
   ): (self: FiberHandle<A, E>) => void
   <A, E, XE extends E, XA extends A>(
     self: FiberHandle<A, E>,
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly interruptAs?: FiberId.FiberId | undefined; readonly onlyIfMissing?: boolean | undefined }
+    options?: {
+      readonly interruptAs?: FiberId.FiberId | undefined
+      readonly onlyIfMissing?: boolean | undefined
+      readonly propagateInterruption?: boolean | undefined
+    }
   ): void
 }
 ```

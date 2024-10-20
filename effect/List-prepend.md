@@ -14,7 +14,7 @@ List.prepend
 
 ```ts
 export declare const prepend: {
-  <B>(element: B): <A>(self: List<A>) => Cons<B | A>
+  <B>(element: B): <A>(self: List<A>) => Cons<A | B>
   <A, B>(self: List<A>, element: B): Cons<A | B>
 }
 ```

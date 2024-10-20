@@ -13,5 +13,5 @@ Prompt.run
 **Signature**
 
 ```ts
-export declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Terminal>
+export declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Prompt.Environment>
 ```

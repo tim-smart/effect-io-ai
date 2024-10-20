@@ -21,5 +21,5 @@ assert.deepStrictEqual(range(1, 3), [1, 2, 3])
 **Signature**
 
 ```ts
-export declare const range: (start: number, end: number) => [number, ...number[]]
+export declare const range: (start: number, end: number) => NonEmptyArray<number>
 ```

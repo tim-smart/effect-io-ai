@@ -14,7 +14,7 @@ Iterable.append
 
 ```ts
 export declare const append: {
-  <B>(last: B): <A>(self: Iterable<A>) => Iterable<B | A>
+  <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>
   <A, B>(self: Iterable<A>, last: B): Iterable<A | B>
 }
 ```

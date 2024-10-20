@@ -16,7 +16,7 @@ Args.fileSchema
 
 ```ts
 export declare const fileSchema: <I, A>(
-  schema: Schema<A, I, Terminal | FileSystem | Path>,
+  schema: Schema<A, I, FileSystem | Path | Terminal>,
   config?: Args.FormatArgsConfig | undefined
 ) => Args<A>
 ```

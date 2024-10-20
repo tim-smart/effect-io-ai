@@ -12,8 +12,19 @@ import * as Stream from "effect/Stream"
 Stream.paginate
 ```
 
+**Example**
+
+```ts
+import { Effect, Option, Stream } from "effect"
+
+const stream = Stream.paginate(0, (n) => [n, n < 3 ? Option.some(n + 1) : Option.none()])
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 0, 1, 2, 3 ] }
+```
+
 **Signature**
 
 ```ts
-export declare const paginate: <S, A>(s: S, f: (s: S) => readonly [A, Option.Option<S>]) => Stream<A, never, never>
+export declare const paginate: <S, A>(s: S, f: (s: S) => readonly [A, Option.Option<S>]) => Stream<A>
 ```

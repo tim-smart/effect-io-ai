@@ -15,7 +15,7 @@ STM.provideContext
 
 ```ts
 export declare const provideContext: {
-  <R>(env: Context.Context<R>): <A, E>(self: STM<A, E, R>) => STM<A, E, never>
-  <A, E, R>(self: STM<A, E, R>, env: Context.Context<R>): STM<A, E, never>
+  <R>(env: Context.Context<R>): <A, E>(self: STM<A, E, R>) => STM<A, E>
+  <A, E, R>(self: STM<A, E, R>, env: Context.Context<R>): STM<A, E>
 }
 ```

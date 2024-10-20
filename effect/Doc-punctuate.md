@@ -42,7 +42,7 @@ assert.strictEqual(
 
 ```ts
 export declare const punctuate: {
-  <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => readonly Doc<A | B>[]
-  <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): readonly Doc<A | B>[]
+  <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>
+  <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>
 }
 ```

@@ -28,7 +28,14 @@ assert.deepStrictEqual(outOfBoundsResult, Option.none())
 
 ```ts
 export declare const modifyOption: {
-  <A, B>(i: number, f: (a: A) => B): (self: Iterable<A>) => Option<(A | B)[]>
-  <A, B>(self: Iterable<A>, i: number, f: (a: A) => B): Option<(A | B)[]>
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    i: number,
+    f: (a: ReadonlyArray.Infer<S>) => B
+  ): (self: S) => Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    self: S,
+    i: number,
+    f: (a: ReadonlyArray.Infer<S>) => B
+  ): Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>
 }
 ```

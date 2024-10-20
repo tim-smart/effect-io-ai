@@ -13,5 +13,5 @@ Chunk.make
 **Signature**
 
 ```ts
-export declare const make: <As extends readonly [any, ...any[]]>(...as: As) => NonEmptyChunk<As[number]>
+export declare const make: <As extends readonly [any, ...ReadonlyArray<any>]>(...as: As) => NonEmptyChunk<As[number]>
 ```

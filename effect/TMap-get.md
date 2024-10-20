@@ -14,7 +14,7 @@ TMap.get
 
 ```ts
 export declare const get: {
-  <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<Option.Option<V>, never, never>
-  <K, V>(self: TMap<K, V>, key: K): STM.STM<Option.Option<V>, never, never>
+  <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<Option.Option<V>>
+  <K, V>(self: TMap<K, V>, key: K): STM.STM<Option.Option<V>>
 }
 ```

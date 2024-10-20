@@ -18,7 +18,7 @@ export declare const makeFlat: (options: {
     path: ReadonlyArray<string>,
     config: Config.Config.Primitive<A>,
     split: boolean
-  ) => Effect.Effect<readonly A[], ConfigError.ConfigError, never>
+  ) => Effect.Effect<Array<A>, ConfigError.ConfigError>
   readonly enumerateChildren: (
     path: ReadonlyArray<string>
   ) => Effect.Effect<HashSet.HashSet<string>, ConfigError.ConfigError>

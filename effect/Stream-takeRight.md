@@ -10,6 +10,17 @@ import * as Stream from "effect/Stream"
 Stream.takeRight
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.takeRight(Stream.make(1, 2, 3, 4, 5, 6), 3)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 4, 5, 6 ] }
+```
+
 **Signature**
 
 ```ts

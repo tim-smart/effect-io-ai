@@ -13,5 +13,5 @@ TArray.lastOption
 **Signature**
 
 ```ts
-export declare const lastOption: <A>(self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
+export declare const lastOption: <A>(self: TArray<A>) => STM.STM<Option.Option<A>>
 ```

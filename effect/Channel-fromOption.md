@@ -15,5 +15,5 @@ Channel.fromOption
 ```ts
 export declare const fromOption: <A>(
   option: Option.Option<A>
-) => Channel<never, unknown, Option.Option<never>, unknown, A, unknown, never>
+) => Channel<never, unknown, Option.Option<never>, unknown, A, unknown>
 ```

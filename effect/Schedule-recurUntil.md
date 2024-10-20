@@ -13,5 +13,5 @@ Schedule.recurUntil
 **Signature**
 
 ```ts
-export declare const recurUntil: <A>(f: Predicate<A>) => Schedule<A, A, never>
+export declare const recurUntil: <A>(f: Predicate<A>) => Schedule<A, A>
 ```

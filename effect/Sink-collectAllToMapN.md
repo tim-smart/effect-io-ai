@@ -19,5 +19,5 @@ export declare const collectAllToMapN: <In, K>(
   n: number,
   key: (input: In) => K,
   merge: (x: In, y: In) => In
-) => Sink<HashMap.HashMap<K, In>, In, In, never, never>
+) => Sink<HashMap.HashMap<K, In>, In, In>
 ```

@@ -1,6 +1,10 @@
 # logDebug
 
-Logs the specified message or cause at the Debug log level.
+Logs the specified messages at the DEBUG log level.
+DEBUG messages are not shown by default.
+
+To view DEBUG messages, adjust the logging settings using
+`Logger.withMinimumLogLevel` and set the log level to `LogLevel.Debug`.
 
 To import and use `logDebug` from the "Effect" module:
 
@@ -8,6 +12,17 @@ To import and use `logDebug` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.logDebug
+```
+
+**Example**
+
+```ts
+import { Effect, Logger, LogLevel } from "effect"
+
+const program = Effect.logDebug("message1").pipe(Logger.withMinimumLogLevel(LogLevel.Debug))
+
+// Effect.runFork(program)
+// timestamp=... level=DEBUG fiber=#0 message=message1
 ```
 
 **Signature**

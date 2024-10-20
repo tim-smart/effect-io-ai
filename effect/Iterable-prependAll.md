@@ -22,7 +22,7 @@ assert.deepStrictEqual(Array.from(Iterable.prependAll([1, 2], ["a", "b"])), ["a"
 
 ```ts
 export declare const prependAll: {
-  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<B | A>
+  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<A | B>
   <A, B>(self: Iterable<A>, that: Iterable<B>): Iterable<A | B>
 }
 ```

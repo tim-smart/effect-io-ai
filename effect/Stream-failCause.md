@@ -13,5 +13,5 @@ Stream.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Stream<never, E, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Stream<never, E>
 ```

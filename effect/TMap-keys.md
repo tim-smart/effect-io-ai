@@ -13,5 +13,5 @@ TMap.keys
 **Signature**
 
 ```ts
-export declare const keys: <K, V>(self: TMap<K, V>) => STM.STM<K[], never, never>
+export declare const keys: <K, V>(self: TMap<K, V>) => STM.STM<Array<K>>
 ```

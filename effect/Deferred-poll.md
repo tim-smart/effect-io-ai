@@ -14,7 +14,5 @@ Deferred.poll
 **Signature**
 
 ```ts
-export declare const poll: <A, E>(
-  self: Deferred<A, E>
-) => Effect.Effect<Option.Option<Effect.Effect<A, E, never>>, never, never>
+export declare const poll: <A, E>(self: Deferred<A, E>) => Effect.Effect<Option.Option<Effect.Effect<A, E>>>
 ```

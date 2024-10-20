@@ -22,25 +22,29 @@ export declare const transformOrFail: {
           readonly decode: (
             fromA: Schema.Type<From>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            fromI: Schema.Encoded<From>
           ) => Effect.Effect<Schema.Encoded<To>, ParseResult.ParseIssue, RD>
           readonly encode: (
             toI: Schema.Encoded<To>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            toA: Schema.Type<To>
           ) => Effect.Effect<Schema.Type<From>, ParseResult.ParseIssue, RE>
-          readonly strict?: true | undefined
+          readonly strict?: true
         }
       | {
           readonly decode: (
             fromA: Schema.Type<From>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            fromI: Schema.Encoded<From>
           ) => Effect.Effect<unknown, ParseResult.ParseIssue, RD>
           readonly encode: (
             toI: Schema.Encoded<To>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            toA: Schema.Type<To>
           ) => Effect.Effect<unknown, ParseResult.ParseIssue, RE>
           readonly strict: false
         }
@@ -53,25 +57,29 @@ export declare const transformOrFail: {
           readonly decode: (
             fromA: Schema.Type<From>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            fromI: Schema.Encoded<From>
           ) => Effect.Effect<Schema.Encoded<To>, ParseResult.ParseIssue, RD>
           readonly encode: (
             toI: Schema.Encoded<To>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            toA: Schema.Type<To>
           ) => Effect.Effect<Schema.Type<From>, ParseResult.ParseIssue, RE>
-          readonly strict?: true | undefined
+          readonly strict?: true
         }
       | {
           readonly decode: (
             fromA: Schema.Type<From>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            fromI: Schema.Encoded<From>
           ) => Effect.Effect<unknown, ParseResult.ParseIssue, RD>
           readonly encode: (
             toI: Schema.Encoded<To>,
             options: ParseOptions,
-            ast: AST.Transformation
+            ast: AST.Transformation,
+            toA: Schema.Type<To>
           ) => Effect.Effect<unknown, ParseResult.ParseIssue, RE>
           readonly strict: false
         }

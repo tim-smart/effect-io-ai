@@ -13,5 +13,5 @@ Array.of
 **Signature**
 
 ```ts
-export declare const of: <A>(a: A) => [A, ...A[]]
+export declare const of: <A>(a: A) => NonEmptyArray<A>
 ```

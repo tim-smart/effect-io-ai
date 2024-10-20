@@ -13,5 +13,5 @@ Sink.take
 **Signature**
 
 ```ts
-export declare const take: <In>(n: number) => Sink<Chunk.Chunk<In>, In, In, never, never>
+export declare const take: <In>(n: number) => Sink<Chunk.Chunk<In>, In, In>
 ```

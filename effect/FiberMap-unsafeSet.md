@@ -19,7 +19,11 @@ export declare const unsafeSet: {
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>,
     options?:
-      | { readonly interruptAs?: FiberId.FiberId | undefined; readonly onlyIfMissing?: boolean | undefined }
+      | {
+          readonly interruptAs?: FiberId.FiberId | undefined
+          readonly onlyIfMissing?: boolean | undefined
+          readonly propagateInterruption?: boolean | undefined
+        }
       | undefined
   ): (self: FiberMap<K, A, E>) => void
   <K, A, E, XE extends E, XA extends A>(
@@ -27,7 +31,11 @@ export declare const unsafeSet: {
     key: K,
     fiber: Fiber.RuntimeFiber<XA, XE>,
     options?:
-      | { readonly interruptAs?: FiberId.FiberId | undefined; readonly onlyIfMissing?: boolean | undefined }
+      | {
+          readonly interruptAs?: FiberId.FiberId | undefined
+          readonly onlyIfMissing?: boolean | undefined
+          readonly propagateInterruption?: boolean | undefined
+        }
       | undefined
   ): void
 }

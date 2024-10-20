@@ -22,7 +22,7 @@ assert.deepStrictEqual(Tuple.at([1, "hello", true], 1), "hello")
 
 ```ts
 export declare const at: {
-  <N extends number>(index: N): <A extends readonly unknown[]>(self: A) => A[N]
-  <A extends readonly unknown[], N extends number>(self: A, index: N): A[N]
+  <N extends number>(index: N): <A extends ReadonlyArray<unknown>>(self: A) => A[N]
+  <A extends ReadonlyArray<unknown>, N extends number>(self: A, index: N): A[N]
 }
 ```

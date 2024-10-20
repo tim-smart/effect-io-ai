@@ -16,10 +16,7 @@ RequestResolver.provideContext
 export declare const provideContext: {
   <R>(
     context: Context.Context<R>
-  ): <A extends Request.Request<any, any>>(self: RequestResolver<A, R>) => RequestResolver<A, never>
-  <R, A extends Request.Request<any, any>>(
-    self: RequestResolver<A, R>,
-    context: Context.Context<R>
-  ): RequestResolver<A, never>
+  ): <A extends Request.Request<any, any>>(self: RequestResolver<A, R>) => RequestResolver<A>
+  <R, A extends Request.Request<any, any>>(self: RequestResolver<A, R>, context: Context.Context<R>): RequestResolver<A>
 }
 ```

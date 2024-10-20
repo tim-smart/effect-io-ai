@@ -25,7 +25,7 @@ assert.deepStrictEqual(product, ["1-a", "1-b", "2-a", "2-b"])
 
 ```ts
 export declare const cartesianWith: {
-  <A, B, C>(that: readonly B[], f: (a: A, b: B) => C): (self: readonly A[]) => C[]
-  <A, B, C>(self: readonly A[], that: readonly B[], f: (a: A, b: B) => C): C[]
+  <A, B, C>(that: ReadonlyArray<B>, f: (a: A, b: B) => C): (self: ReadonlyArray<A>) => Array<C>
+  <A, B, C>(self: ReadonlyArray<A>, that: ReadonlyArray<B>, f: (a: A, b: B) => C): Array<C>
 }
 ```

@@ -26,5 +26,5 @@ assert.deepStrictEqual(eq(numbers1, numbers2), true)
 ```ts
 export declare const getEquivalence: <A>(
   isEquivalent: Equivalence.Equivalence<A>
-) => Equivalence.Equivalence<readonly A[]>
+) => Equivalence.Equivalence<ReadonlyArray<A>>
 ```

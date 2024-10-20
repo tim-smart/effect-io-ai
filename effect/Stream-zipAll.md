@@ -14,6 +14,21 @@ import * as Stream from "effect/Stream"
 Stream.zipAll
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.zipAll(Stream.make(1, 2, 3, 4, 5, 6), {
+  other: Stream.make("a", "b", "c"),
+  defaultSelf: 0,
+  defaultOther: "x"
+})
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: "Chunk", values: [ [ 1, "a" ], [ 2, "b" ], [ 3, "c" ], [ 4, "x" ], [ 5, "x" ], [ 6, "x" ] ] }
+```
+
 **Signature**
 
 ```ts

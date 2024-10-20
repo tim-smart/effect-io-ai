@@ -30,8 +30,8 @@ export declare const union: {
   ): <S extends Iterable<any>>(
     self: S
   ) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>
-  <A, B>(self: readonly [A, ...A[]], that: readonly B[]): [A | B, ...(A | B)[]]
-  <A, B>(self: readonly A[], that: readonly [B, ...B[]]): [A | B, ...(A | B)[]]
-  <A, B>(self: Iterable<A>, that: Iterable<B>): (A | B)[]
+  <A, B>(self: NonEmptyReadonlyArray<A>, that: ReadonlyArray<B>): NonEmptyArray<A | B>
+  <A, B>(self: ReadonlyArray<A>, that: NonEmptyReadonlyArray<B>): NonEmptyArray<A | B>
+  <A, B>(self: Iterable<A>, that: Iterable<B>): Array<A | B>
 }
 ```

@@ -36,7 +36,7 @@ assert.throws(() => PositiveInt(1.1))
 **Signature**
 
 ```ts
-export declare const all: <Brands extends readonly [Brand.Constructor<any>, ...Brand.Constructor<any>[]]>(
+export declare const all: <Brands extends readonly [Brand.Constructor<any>, ...Array<Brand.Constructor<any>>]>(
   ...brands: Brand.EnsureCommonBase<Brands>
 ) => Brand.Constructor<
   Types.UnionToIntersection<{ [B in keyof Brands]: Brand.FromConstructor<Brands[B]> }[number]> extends infer X extends

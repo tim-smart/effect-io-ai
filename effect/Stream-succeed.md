@@ -10,8 +10,20 @@ import * as Stream from "effect/Stream"
 Stream.succeed
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+// A Stream with a single number
+const stream = Stream.succeed(3)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 3 ] }
+```
+
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Stream<A, never, never>
+export declare const succeed: <A>(value: A) => Stream<A>
 ```

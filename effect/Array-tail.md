@@ -13,5 +13,5 @@ Array.tail
 **Signature**
 
 ```ts
-export declare const tail: <A>(self: Iterable<A>) => Option<A[]>
+export declare const tail: <A>(self: Iterable<A>) => Option<Array<A>>
 ```

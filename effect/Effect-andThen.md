@@ -48,7 +48,7 @@ export declare const andThen: {
   ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
     ? Effect<A1, E | E1, R | R1>
     : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, Cause.UnknownException | E, R>
+      ? Effect<A1, E | Cause.UnknownException, R>
       : Effect<X, E, R>
   <X>(
     f: NotFunction<X>
@@ -57,7 +57,7 @@ export declare const andThen: {
   ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
     ? Effect<A1, E | E1, R | R1>
     : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, Cause.UnknownException | E, R>
+      ? Effect<A1, E | Cause.UnknownException, R>
       : Effect<X, E, R>
   <A, E, R, X>(
     self: Effect<A, E, R>,
@@ -65,7 +65,7 @@ export declare const andThen: {
   ): [X] extends [Effect<infer A1, infer E1, infer R1>]
     ? Effect<A1, E | E1, R | R1>
     : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, Cause.UnknownException | E, R>
+      ? Effect<A1, E | Cause.UnknownException, R>
       : Effect<X, E, R>
   <A, E, R, X>(
     self: Effect<A, E, R>,
@@ -73,7 +73,7 @@ export declare const andThen: {
   ): [X] extends [Effect<infer A1, infer E1, infer R1>]
     ? Effect<A1, E | E1, R | R1>
     : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, Cause.UnknownException | E, R>
+      ? Effect<A1, E | Cause.UnknownException, R>
       : Effect<X, E, R>
 }
 ```

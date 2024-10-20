@@ -14,7 +14,7 @@ Array.some
 
 ```ts
 export declare const some: {
-  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: readonly A[]) => self is readonly [A, ...A[]]
-  <A>(self: readonly A[], predicate: (a: A, i: number) => boolean): self is readonly [A, ...A[]]
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: ReadonlyArray<A>) => self is NonEmptyReadonlyArray<A>
+  <A>(self: ReadonlyArray<A>, predicate: (a: A, i: number) => boolean): self is NonEmptyReadonlyArray<A>
 }
 ```

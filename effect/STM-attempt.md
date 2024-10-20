@@ -13,5 +13,5 @@ STM.attempt
 **Signature**
 
 ```ts
-export declare const attempt: <A>(evaluate: LazyArg<A>) => STM<A, unknown, never>
+export declare const attempt: <A>(evaluate: LazyArg<A>) => STM<A, unknown>
 ```

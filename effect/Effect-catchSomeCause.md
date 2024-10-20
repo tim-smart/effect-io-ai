@@ -20,6 +20,6 @@ export declare const catchSomeCause: {
   <A, E, R, A2, E2, R2>(
     self: Effect<A, E, R>,
     f: (cause: Cause.Cause<NoInfer<E>>) => Option.Option<Effect<A2, E2, R2>>
-  ): Effect<A | A2, E | E2, R | R2>
+  ): Effect<A2 | A, E | E2, R2 | R>
 }
 ```

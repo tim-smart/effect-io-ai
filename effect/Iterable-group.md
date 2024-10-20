@@ -13,5 +13,5 @@ Iterable.group
 **Signature**
 
 ```ts
-export declare const group: <A>(self: Iterable<A>) => Iterable<[A, ...A[]]>
+export declare const group: <A>(self: Iterable<A>) => Iterable<NonEmptyArray<A>>
 ```

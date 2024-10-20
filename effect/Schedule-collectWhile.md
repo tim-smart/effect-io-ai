@@ -14,5 +14,5 @@ Schedule.collectWhile
 **Signature**
 
 ```ts
-export declare const collectWhile: <A>(f: Predicate<A>) => Schedule<Chunk.Chunk<A>, A, never>
+export declare const collectWhile: <A>(f: Predicate<A>) => Schedule<Chunk.Chunk<A>, A>
 ```

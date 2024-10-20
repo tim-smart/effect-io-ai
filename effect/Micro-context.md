@@ -13,5 +13,5 @@ Micro.context
 **Signature**
 
 ```ts
-export declare const context: <R>() => Micro<Context.Context<R>, never, never>
+export declare const context: <R>() => Micro<Context.Context<R>>
 ```

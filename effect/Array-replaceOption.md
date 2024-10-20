@@ -24,7 +24,14 @@ assert.deepStrictEqual(result, Option.some([1, 4, 3]))
 
 ```ts
 export declare const replaceOption: {
-  <B>(i: number, b: B): <A>(self: Iterable<A>) => Option<(B | A)[]>
-  <A, B>(self: Iterable<A>, i: number, b: B): Option<(A | B)[]>
+  <B>(
+    i: number,
+    b: B
+  ): <A, S extends Iterable<A> = Iterable<A>>(self: S) => Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    self: S,
+    i: number,
+    b: B
+  ): Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>
 }
 ```

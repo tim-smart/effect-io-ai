@@ -26,7 +26,7 @@ export declare const replaceOption: {
   <K extends string | symbol, B>(
     key: NoInfer<K>,
     b: B
-  ): <A>(self: ReadonlyRecord<K, A>) => Option.Option<Record<K, B | A>>
+  ): <A>(self: ReadonlyRecord<K, A>) => Option.Option<Record<K, A | B>>
   <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, b: B): Option.Option<Record<K, A | B>>
 }
 ```

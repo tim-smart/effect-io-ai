@@ -22,5 +22,5 @@ assert.deepStrictEqual(isEmptyReadonlyArray([1, 2, 3]), false)
 **Signature**
 
 ```ts
-export declare const isEmptyReadonlyArray: <A>(self: readonly A[]) => self is readonly []
+export declare const isEmptyReadonlyArray: <A>(self: ReadonlyArray<A>) => self is readonly []
 ```

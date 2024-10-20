@@ -14,7 +14,7 @@ Tuple.getEquivalence
 **Signature**
 
 ```ts
-export declare const getEquivalence: <T extends readonly Equivalence.Equivalence<any>[]>(
+export declare const getEquivalence: <T extends ReadonlyArray<Equivalence.Equivalence<any>>>(
   ...isEquivalents: T
 ) => Equivalence.Equivalence<
   Readonly<{ [I in keyof T]: [T[I]] extends [Equivalence.Equivalence<infer A>] ? A : never }>

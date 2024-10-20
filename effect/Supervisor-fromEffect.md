@@ -13,5 +13,5 @@ Supervisor.fromEffect
 **Signature**
 
 ```ts
-export declare const fromEffect: <A>(effect: Effect.Effect<A, never, never>) => Supervisor<A>
+export declare const fromEffect: <A>(effect: Effect.Effect<A>) => Supervisor<A>
 ```

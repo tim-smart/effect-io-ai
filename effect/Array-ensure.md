@@ -23,5 +23,5 @@ assert.deepStrictEqual(Array.ensure(["a", "b", "c"]), ["a", "b", "c"])
 **Signature**
 
 ```ts
-export declare const ensure: <A>(self: A | readonly A[]) => A[]
+export declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```

@@ -29,9 +29,9 @@ assert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.none() }), Opti
 ```ts
 export declare const all: <const I extends Iterable<Option<any>> | Record<string, Option<any>>>(
   input: I
-) => [I] extends [readonly Option<any>[]]
+) => [I] extends [ReadonlyArray<Option<any>>]
   ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
   : [I] extends [Iterable<Option<infer A>>]
-    ? Option<A[]>
+    ? Option<Array<A>>
     : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
 ```

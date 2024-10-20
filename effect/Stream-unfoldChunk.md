@@ -13,8 +13,5 @@ Stream.unfoldChunk
 **Signature**
 
 ```ts
-export declare const unfoldChunk: <S, A>(
-  s: S,
-  f: (s: S) => Option.Option<readonly [Chunk.Chunk<A>, S]>
-) => Stream<A, never, never>
+export declare const unfoldChunk: <S, A>(s: S, f: (s: S) => Option.Option<readonly [Chunk.Chunk<A>, S]>) => Stream<A>
 ```

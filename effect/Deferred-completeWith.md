@@ -15,7 +15,7 @@ Deferred.completeWith
 
 ```ts
 export declare const completeWith: {
-  <A, E>(effect: Effect.Effect<A, E, never>): (self: Deferred<A, E>) => Effect.Effect<boolean>
-  <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E, never>): Effect.Effect<boolean>
+  <A, E>(effect: Effect.Effect<A, E>): (self: Deferred<A, E>) => Effect.Effect<boolean>
+  <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E>): Effect.Effect<boolean>
 }
 ```

@@ -13,5 +13,5 @@ HashMap.toEntries
 **Signature**
 
 ```ts
-export declare const toEntries: <K, V>(self: HashMap<K, V>) => [K, V][]
+export declare const toEntries: <K, V>(self: HashMap<K, V>) => Array<[K, V]>
 ```

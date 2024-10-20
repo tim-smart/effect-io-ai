@@ -11,6 +11,25 @@ import * as Stream from "effect/Stream"
 Stream.repeatEffectOption
 ```
 
+**Example**
+
+```ts
+// In this example, we're draining an Iterator to create a stream from it
+import { Stream, Effect, Option } from "effect"
+
+const drainIterator = <A>(it: Iterator<A>): Stream.Stream<A> =>
+  Stream.repeatEffectOption(
+    Effect.sync(() => it.next()).pipe(
+      Effect.andThen((res) => {
+        if (res.done) {
+          return Effect.fail(Option.none())
+        }
+        return Effect.succeed(res.value)
+      })
+    )
+  )
+```
+
 **Signature**
 
 ```ts

@@ -14,7 +14,7 @@ TPriorityQueue.takeUpTo
 
 ```ts
 export declare const takeUpTo: {
-  (n: number): <A>(self: TPriorityQueue<A>) => STM.STM<A[], never, never>
-  <A>(self: TPriorityQueue<A>, n: number): STM.STM<A[], never, never>
+  (n: number): <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
+  <A>(self: TPriorityQueue<A>, n: number): STM.STM<Array<A>>
 }
 ```

@@ -25,7 +25,14 @@ assert.deepStrictEqual(result, [1, 2, 6, 4])
 
 ```ts
 export declare const modify: {
-  <A, B>(i: number, f: (a: A) => B): (self: Iterable<A>) => (A | B)[]
-  <A, B>(self: Iterable<A>, i: number, f: (a: A) => B): (A | B)[]
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    i: number,
+    f: (a: ReadonlyArray.Infer<S>) => B
+  ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>
+  <A, B, S extends Iterable<A> = Iterable<A>>(
+    self: S,
+    i: number,
+    f: (a: ReadonlyArray.Infer<S>) => B
+  ): ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>
 }
 ```

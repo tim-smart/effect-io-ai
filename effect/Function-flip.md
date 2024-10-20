@@ -23,7 +23,7 @@ assert.deepStrictEqual(flip(f)("aaa")(2), -1)
 **Signature**
 
 ```ts
-export declare const flip: <A extends unknown[], B extends unknown[], C>(
+export declare const flip: <A extends Array<unknown>, B extends Array<unknown>, C>(
   f: (...a: A) => (...b: B) => C
 ) => (...b: B) => (...a: A) => C
 ```

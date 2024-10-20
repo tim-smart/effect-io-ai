@@ -11,6 +11,28 @@ import * as Stream from "effect/Stream"
 Stream.partitionEither
 ```
 
+**Example**
+
+```ts
+import { Effect, Either, Stream } from "effect"
+
+const partition = Stream.range(1, 9).pipe(
+  Stream.partitionEither((n) => Effect.succeed(n % 2 === 0 ? Either.left(n) : Either.right(n)), { bufferSize: 5 })
+)
+
+const program = Effect.scoped(
+  Effect.gen(function* () {
+    const [evens, odds] = yield* partition
+    console.log(yield* Stream.runCollect(evens))
+    console.log(yield* Stream.runCollect(odds))
+  })
+)
+
+// Effect.runPromise(program)
+// { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
+// { _id: 'Chunk', values: [ 1, 3, 5, 7, 9 ] }
+```
+
 **Signature**
 
 ```ts

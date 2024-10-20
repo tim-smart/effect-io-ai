@@ -14,5 +14,7 @@ RequestResolver.make
 **Signature**
 
 ```ts
-export declare const make: <A, R>(runAll: (requests: A[][]) => Effect.Effect<void, never, R>) => RequestResolver<A, R>
+export declare const make: <A, R>(
+  runAll: (requests: Array<Array<A>>) => Effect.Effect<void, never, R>
+) => RequestResolver<A, R>
 ```

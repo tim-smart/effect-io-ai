@@ -14,5 +14,5 @@ Schedule.unfold
 **Signature**
 
 ```ts
-export declare const unfold: <A>(initial: A, f: (a: A) => A) => Schedule<A, unknown, never>
+export declare const unfold: <A>(initial: A, f: (a: A) => A) => Schedule<A>
 ```

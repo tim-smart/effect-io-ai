@@ -1,8 +1,8 @@
 # crossLeft
 
 Composes this stream with the specified stream to create a cartesian
-product of elements, but keeps only elements from this stream. The `that`
-stream would be run multiple times, for every element in the `this` stream.
+product of elements, but keeps only elements from `left` stream. The `right`
+stream would be run multiple times, for every element in the `left` stream.
 
 See also `Stream.zipLeft` for the more common point-wise variant.
 
@@ -18,7 +18,7 @@ Stream.crossLeft
 
 ```ts
 export declare const crossLeft: {
-  <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<A, E | E2, R | R2>
+  <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL, EL | ER, RL | RR>
+  <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL, EL | ER, RL | RR>
 }
 ```

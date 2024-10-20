@@ -15,8 +15,5 @@ Stream.paginateChunk
 **Signature**
 
 ```ts
-export declare const paginateChunk: <S, A>(
-  s: S,
-  f: (s: S) => readonly [Chunk.Chunk<A>, Option.Option<S>]
-) => Stream<A, never, never>
+export declare const paginateChunk: <S, A>(s: S, f: (s: S) => readonly [Chunk.Chunk<A>, Option.Option<S>]) => Stream<A>
 ```

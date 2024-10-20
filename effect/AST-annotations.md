@@ -1,6 +1,7 @@
 # annotations
 
-Adds a group of annotations, potentially overwriting existing annotations.
+Merges a set of new annotations with existing ones, potentially overwriting
+any duplicates.
 
 To import and use `annotations` from the "AST" module:
 

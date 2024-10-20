@@ -13,7 +13,5 @@ TSet.make
 **Signature**
 
 ```ts
-export declare const make: <Elements extends any[]>(
-  ...elements: Elements
-) => STM.STM<TSet<Elements[number]>, never, never>
+export declare const make: <Elements extends Array<any>>(...elements: Elements) => STM.STM<TSet<Elements[number]>>
 ```

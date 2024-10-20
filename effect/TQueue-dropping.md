@@ -16,5 +16,5 @@ TQueue.dropping
 **Signature**
 
 ```ts
-export declare const dropping: <A>(requestedCapacity: number) => STM.STM<TQueue<A>, never, never>
+export declare const dropping: <A>(requestedCapacity: number) => STM.STM<TQueue<A>>
 ```

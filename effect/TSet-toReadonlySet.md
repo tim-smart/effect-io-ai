@@ -13,5 +13,5 @@ TSet.toReadonlySet
 **Signature**
 
 ```ts
-export declare const toReadonlySet: <A>(self: TSet<A>) => STM.STM<ReadonlySet<A>, never, never>
+export declare const toReadonlySet: <A>(self: TSet<A>) => STM.STM<ReadonlySet<A>>
 ```

@@ -13,5 +13,5 @@ DocTree.concat
 **Signature**
 
 ```ts
-export declare const concat: <A>(trees: readonly DocTree<A>[]) => DocTree<A>
+export declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>
 ```

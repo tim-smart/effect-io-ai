@@ -3,7 +3,6 @@
 set -e
 
 cwd="$(pwd)"
-tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
 tarballjs="$cwd/tarball.js"
 
 SHORT_SHA=`git rev-parse --short HEAD`
@@ -41,7 +40,7 @@ for repo in ${repos[@]}; do
 
   pnpm install
   pnpm rm @effect/docgen
-  pnpm add -Dw ../vendor/effect-docgen-0.3.4.tgz
+  pnpm add -Dw ../vendor/effect-docgen-0.4.5.tgz
   pnpm run build
   pnpm run docs || pnpm docgen
 

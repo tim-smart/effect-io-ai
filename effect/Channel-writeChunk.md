@@ -13,7 +13,5 @@ Channel.writeChunk
 **Signature**
 
 ```ts
-export declare const writeChunk: <OutElem>(
-  outs: Chunk.Chunk<OutElem>
-) => Channel<OutElem, unknown, never, unknown, void, unknown, never>
+export declare const writeChunk: <OutElem>(outs: Chunk.Chunk<OutElem>) => Channel<OutElem>
 ```

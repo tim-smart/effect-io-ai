@@ -13,6 +13,35 @@ import * as Stream from "effect/Stream"
 Stream.toPull
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+// Simulate a chunked stream
+const stream = Stream.fromIterable([1, 2, 3, 4, 5]).pipe(Stream.rechunk(2))
+
+const program = Effect.gen(function* () {
+  // Create an effect to get data chunks from the stream
+  const getChunk = yield* Stream.toPull(stream)
+
+  // Continuously fetch and process chunks
+  while (true) {
+    const chunk = yield* getChunk
+    console.log(chunk)
+  }
+})
+
+// Effect.runPromise(Effect.scoped(program)).then(console.log, console.error)
+// { _id: 'Chunk', values: [ 1, 2 ] }
+// { _id: 'Chunk', values: [ 3, 4 ] }
+// { _id: 'Chunk', values: [ 5 ] }
+// (FiberFailure) Error: {
+//   "_id": "Option",
+//   "_tag": "None"
+// }
+```
+
 **Signature**
 
 ```ts

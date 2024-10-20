@@ -16,10 +16,10 @@ Effect.filterMap
 export declare const filterMap: {
   <Eff extends Effect<any, any, any>, B>(
     pf: (a: Effect.Success<Eff>) => Option.Option<B>
-  ): (elements: Iterable<Eff>) => Effect<B[], Effect.Error<Eff>, Effect.Context<Eff>>
+  ): (elements: Iterable<Eff>) => Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>
   <Eff extends Effect<any, any, any>, B>(
     elements: Iterable<Eff>,
     pf: (a: Effect.Success<Eff>) => Option.Option<B>
-  ): Effect<B[], Effect.Error<Eff>, Effect.Context<Eff>>
+  ): Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>
 }
 ```

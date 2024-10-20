@@ -16,7 +16,7 @@ TQueue.seek
 
 ```ts
 export declare const seek: {
-  <A>(predicate: Predicate<A>): (self: TDequeue<A>) => STM.STM<A, never, never>
-  <A>(self: TDequeue<A>, predicate: Predicate<A>): STM.STM<A, never, never>
+  <A>(predicate: Predicate<A>): (self: TDequeue<A>) => STM.STM<A>
+  <A>(self: TDequeue<A>, predicate: Predicate<A>): STM.STM<A>
 }
 ```

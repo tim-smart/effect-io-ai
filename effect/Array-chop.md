@@ -32,11 +32,12 @@ assert.deepStrictEqual(result, [2, 4, 6, 8, 10])
 ```ts
 export declare const chop: {
   <S extends Iterable<any>, B>(
-    f: (
-      as: readonly [ReadonlyArray.Infer<S>, ...ReadonlyArray.Infer<S>[]]
-    ) => readonly [B, readonly ReadonlyArray.Infer<S>[]]
+    f: (as: NonEmptyReadonlyArray<ReadonlyArray.Infer<S>>) => readonly [B, ReadonlyArray<ReadonlyArray.Infer<S>>]
   ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
-  <A, B>(self: readonly [A, ...A[]], f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]): [B, ...B[]]
-  <A, B>(self: Iterable<A>, f: (as: readonly [A, ...A[]]) => readonly [B, readonly A[]]): B[]
+  <A, B>(
+    self: NonEmptyReadonlyArray<A>,
+    f: (as: NonEmptyReadonlyArray<A>) => readonly [B, ReadonlyArray<A>]
+  ): NonEmptyArray<B>
+  <A, B>(self: Iterable<A>, f: (as: NonEmptyReadonlyArray<A>) => readonly [B, ReadonlyArray<A>]): Array<B>
 }
 ```

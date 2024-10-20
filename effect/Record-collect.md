@@ -30,7 +30,7 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const collect: {
-  <K extends string, A, B>(f: (key: K, a: A) => B): (self: ReadonlyRecord<K, A>) => B[]
-  <K extends string, A, B>(self: ReadonlyRecord<K, A>, f: (key: K, a: A) => B): B[]
+  <K extends string, A, B>(f: (key: K, a: A) => B): (self: ReadonlyRecord<K, A>) => Array<B>
+  <K extends string, A, B>(self: ReadonlyRecord<K, A>, f: (key: K, a: A) => B): Array<B>
 }
 ```

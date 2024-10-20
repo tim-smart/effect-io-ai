@@ -15,5 +15,5 @@ Channel.fromPubSub
 ```ts
 export declare const fromPubSub: <Done, Err, Elem>(
   pubsub: PubSub.PubSub<Either.Either<Elem, Exit.Exit<Done, Err>>>
-) => Channel<Elem, unknown, Err, unknown, Done, unknown, never>
+) => Channel<Elem, unknown, Err, unknown, Done, unknown>
 ```

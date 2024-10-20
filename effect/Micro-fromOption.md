@@ -15,5 +15,5 @@ Micro.fromOption
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(option: Option.Option<A>) => Micro<A, NoSuchElementException, never>
+export declare const fromOption: <A>(option: Option.Option<A>) => Micro<A, NoSuchElementException>
 ```

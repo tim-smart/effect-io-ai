@@ -1,8 +1,9 @@
 # log
 
-Logs the specified message or cause at the current log level.
+Logs one or more messages or error causes at the current log level, which is INFO by default.
+This function allows logging multiple items at once and can include detailed error information using `Cause` instances.
 
-You can set the current log level using `FiberRef.currentLogLevel`.
+To adjust the log level, use the `Logger.withMinimumLogLevel` function.
 
 To import and use `log` from the "Effect" module:
 
@@ -10,6 +11,19 @@ To import and use `log` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.log
+```
+
+**Example**
+
+```ts
+import { Cause, Effect } from "effect"
+
+const program = Effect.log("message1", "message2", Cause.die("Oh no!"), Cause.die("Oh uh!"))
+
+// Effect.runFork(program)
+// Output:
+// timestamp=... level=INFO fiber=#0 message=message1 message=message2 cause="Error: Oh no!
+// Error: Oh uh!"
 ```
 
 **Signature**

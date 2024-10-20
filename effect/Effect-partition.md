@@ -18,15 +18,23 @@ export declare const partition: {
   <A, B, E, R>(
     f: (a: A, i: number) => Effect<B, E, R>,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
-  ): (elements: Iterable<A>) => Effect<[excluded: E[], satisfying: B[]], never, R>
+  ): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>
   <A, B, E, R>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<B, E, R>,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
-  ): Effect<[excluded: E[], satisfying: B[]], never, R>
+  ): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>
 }
 ```

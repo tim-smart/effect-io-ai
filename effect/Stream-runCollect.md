@@ -13,5 +13,7 @@ Stream.runCollect
 **Signature**
 
 ```ts
-export declare const runCollect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Chunk.Chunk<A>, E, R>
+export declare const runCollect: <A, E, R>(
+  self: Stream<A, E, R>
+) => Effect.Effect<Chunk.Chunk<A>, E, Exclude<R, Scope.Scope>>
 ```

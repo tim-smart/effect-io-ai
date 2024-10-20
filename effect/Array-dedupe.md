@@ -14,7 +14,7 @@ Array.dedupe
 **Signature**
 
 ```ts
-export declare const dedupe: <S extends readonly [any, ...any[]] | Iterable<any>>(
+export declare const dedupe: <S extends Iterable<any> | NonEmptyReadonlyArray<any>>(
   self: S
-) => S extends readonly [infer A, ...(infer A)[]] ? [A, ...A[]] : S extends Iterable<infer A> ? A[] : never
+) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```

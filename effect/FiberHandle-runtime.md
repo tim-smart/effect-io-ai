@@ -47,7 +47,12 @@ export declare const runtime: <A, E>(
 ) => <R = never>() => Effect.Effect<
   <XE extends E, XA extends A>(
     effect: Effect.Effect<XA, XE, R>,
-    options?: (Runtime.RunForkOptions & { readonly onlyIfMissing?: boolean | undefined }) | undefined
+    options?:
+      | (Runtime.RunForkOptions & {
+          readonly onlyIfMissing?: boolean | undefined
+          readonly propagateInterruption?: boolean | undefined
+        })
+      | undefined
   ) => Fiber.RuntimeFiber<XA, XE>,
   never,
   R

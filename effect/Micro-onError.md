@@ -17,7 +17,7 @@ Micro.onError
 export declare const onError: {
   <A, E, XE, XR>(
     f: (cause: MicroCause<NoInfer<E>>) => Micro<void, XE, XR>
-  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, XR | R>
+  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, R | XR>
   <A, E, R, XE, XR>(
     self: Micro<A, E, R>,
     f: (cause: MicroCause<NoInfer<E>>) => Micro<void, XE, XR>

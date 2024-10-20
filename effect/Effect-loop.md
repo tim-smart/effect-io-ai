@@ -42,7 +42,7 @@ export declare const loop: {
       readonly body: (b: B) => Effect<C, E, R>
       readonly discard?: false | undefined
     }
-  ): Effect<C[], E, R>
+  ): Effect<Array<C>, E, R>
   <A, C, E, R>(
     initial: A,
     options: {
@@ -51,7 +51,7 @@ export declare const loop: {
       readonly body: (a: A) => Effect<C, E, R>
       readonly discard?: false | undefined
     }
-  ): Effect<C[], E, R>
+  ): Effect<Array<C>, E, R>
   <A, B extends A, C, E, R>(
     initial: A,
     options: {

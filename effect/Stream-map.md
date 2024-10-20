@@ -10,6 +10,17 @@ import * as Stream from "effect/Stream"
 Stream.map
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3).pipe(Stream.map((n) => n + 1))
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 2, 3, 4 ] }
+```
+
 **Signature**
 
 ```ts

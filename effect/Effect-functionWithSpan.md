@@ -27,7 +27,7 @@ const getTodo = Effect.functionWithSpan({
 **Signature**
 
 ```ts
-export declare const functionWithSpan: <Args extends any[], Ret extends Effect<any, any, any>>(options: {
+export declare const functionWithSpan: <Args extends Array<any>, Ret extends Effect<any, any, any>>(options: {
   readonly body: (...args: Args) => Ret
   readonly options: FunctionWithSpanOptions | ((...args: Args) => FunctionWithSpanOptions)
   readonly captureStackTrace?: boolean | undefined

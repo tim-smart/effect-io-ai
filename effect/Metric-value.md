@@ -13,5 +13,5 @@ Metric.value
 **Signature**
 
 ```ts
-export declare const value: <Type, In, Out>(self: Metric<Type, In, Out>) => Effect.Effect<Out, never, never>
+export declare const value: <Type, In, Out>(self: Metric<Type, In, Out>) => Effect.Effect<Out>
 ```

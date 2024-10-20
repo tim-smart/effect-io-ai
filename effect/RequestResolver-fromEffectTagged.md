@@ -20,7 +20,7 @@ export declare const fromEffectTagged: <A extends Request.Request<any, any> & { 
   Fns extends {
     readonly [Tag in A["_tag"]]: [Extract<A, { readonly _tag: Tag }>] extends [infer Req]
       ? Req extends Request.Request<infer ReqA, infer ReqE>
-        ? (requests: Req[]) => Effect.Effect<Iterable<ReqA>, ReqE, any>
+        ? (requests: Array<Req>) => Effect.Effect<Iterable<ReqA>, ReqE, any>
         : never
       : never
   }

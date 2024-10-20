@@ -10,6 +10,22 @@ import * as Stream from "effect/Stream"
 Stream.zipWithNext
 ```
 
+**Example**
+
+```ts
+import { Chunk, Effect, Stream } from "effect"
+
+const stream = Stream.zipWithNext(Stream.make(1, 2, 3, 4))
+
+// Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.toArray(chunk)))
+// [
+//   [ 1, { _id: 'Option', _tag: 'Some', value: 2 } ],
+//   [ 2, { _id: 'Option', _tag: 'Some', value: 3 } ],
+//   [ 3, { _id: 'Option', _tag: 'Some', value: 4 } ],
+//   [ 4, { _id: 'Option', _tag: 'None' } ]
+// ]
+```
+
 **Signature**
 
 ```ts

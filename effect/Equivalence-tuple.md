@@ -20,7 +20,7 @@ Equivalence.tuple
 **Signature**
 
 ```ts
-export declare const tuple: <T extends readonly Equivalence<any>[]>(
+export declare const tuple: <T extends ReadonlyArray<Equivalence<any>>>(
   ...elements: T
 ) => Equivalence<Readonly<{ [I in keyof T]: [T[I]] extends [Equivalence<infer A>] ? A : never }>>
 ```

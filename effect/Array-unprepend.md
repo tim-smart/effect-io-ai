@@ -22,5 +22,5 @@ assert.deepStrictEqual(result, [1, [2, 3, 4]])
 **Signature**
 
 ```ts
-export declare const unprepend: <A>(self: readonly [A, ...A[]]) => [firstElement: A, remainingElements: A[]]
+export declare const unprepend: <A>(self: NonEmptyReadonlyArray<A>) => [firstElement: A, remainingElements: Array<A>]
 ```

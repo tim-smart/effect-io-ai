@@ -13,5 +13,5 @@ Sink.dropWhile
 **Signature**
 
 ```ts
-export declare const dropWhile: <In>(predicate: Predicate<In>) => Sink<unknown, In, In, never, never>
+export declare const dropWhile: <In>(predicate: Predicate<In>) => Sink<unknown, In, In>
 ```

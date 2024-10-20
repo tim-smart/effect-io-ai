@@ -24,7 +24,14 @@ assert.deepStrictEqual(result, [6, [1, 3, 6]])
 
 ```ts
 export declare const mapAccum: {
-  <S, A, B>(s: S, f: (s: S, a: A, i: number) => readonly [S, B]): (self: Iterable<A>) => [state: S, mappedArray: B[]]
-  <S, A, B>(self: Iterable<A>, s: S, f: (s: S, a: A, i: number) => readonly [S, B]): [state: S, mappedArray: B[]]
+  <S, A, B, I extends Iterable<A> = Iterable<A>>(
+    s: S,
+    f: (s: S, a: ReadonlyArray.Infer<I>, i: number) => readonly [S, B]
+  ): (self: I) => [state: S, mappedArray: ReadonlyArray.With<I, B>]
+  <S, A, B, I extends Iterable<A> = Iterable<A>>(
+    self: I,
+    s: S,
+    f: (s: S, a: ReadonlyArray.Infer<I>, i: number) => readonly [S, B]
+  ): [state: S, mappedArray: ReadonlyArray.With<I, B>]
 }
 ```

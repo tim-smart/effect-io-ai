@@ -13,5 +13,5 @@ STM.failSync
 **Signature**
 
 ```ts
-export declare const failSync: <E>(evaluate: LazyArg<E>) => STM<never, E, never>
+export declare const failSync: <E>(evaluate: LazyArg<E>) => STM<never, E>
 ```

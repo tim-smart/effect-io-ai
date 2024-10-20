@@ -18,11 +18,11 @@ export declare const onExitIf: {
   <A, E, XE, XR, B extends MicroExit<A, E>>(
     refinement: Refinement<MicroExit<A, E>, B>,
     f: (exit: B) => Micro<void, XE, XR>
-  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, XR | R>
+  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, R | XR>
   <A, E, XE, XR>(
     predicate: Predicate<MicroExit<NoInfer<A>, NoInfer<E>>>,
     f: (exit: MicroExit<NoInfer<A>, NoInfer<E>>) => Micro<void, XE, XR>
-  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, XR | R>
+  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, R | XR>
   <A, E, R, XE, XR, B extends MicroExit<A, E>>(
     self: Micro<A, E, R>,
     refinement: Refinement<MicroExit<A, E>, B>,

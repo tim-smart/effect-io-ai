@@ -1,6 +1,6 @@
 # bind
 
-The "do simulation" in allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
+The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 
 Here's how the do simulation works:
 
@@ -37,7 +37,7 @@ assert.deepStrictEqual(Effect.runSync(Stream.runCollect(result)), Chunk.of({ x: 
 export declare const bind: {
   <N extends string, A, B, E2, R2>(
     tag: Exclude<N, keyof A>,
-    f: (_: A) => Stream<B, E2, R2>,
+    f: (_: NoInfer<A>) => Stream<B, E2, R2>,
     options?:
       | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
       | undefined
@@ -45,7 +45,7 @@ export declare const bind: {
   <A, E, R, N extends string, B, E2, R2>(
     self: Stream<A, E, R>,
     tag: Exclude<N, keyof A>,
-    f: (_: A) => Stream<B, E2, R2>,
+    f: (_: NoInfer<A>) => Stream<B, E2, R2>,
     options?:
       | { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined }
       | undefined

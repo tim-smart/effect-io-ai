@@ -14,7 +14,7 @@ String.concat
 
 ```ts
 export declare const concat: {
-  <B extends string>(that: B): <A extends string>(self: A) => `${A}${B}`
-  <A extends string, B extends string>(self: A, that: B): `${A}${B}`
+  <B extends string>(that: B): <A extends string>(self: A) => Concat<A, B>
+  <A extends string, B extends string>(self: A, that: B): Concat<A, B>
 }
 ```

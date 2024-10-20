@@ -13,5 +13,5 @@ Take.chunk
 **Signature**
 
 ```ts
-export declare const chunk: <A>(chunk: Chunk.Chunk<A>) => Take<A, never>
+export declare const chunk: <A>(chunk: Chunk.Chunk<A>) => Take<A>
 ```

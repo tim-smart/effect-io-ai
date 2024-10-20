@@ -13,5 +13,5 @@ Metric.snapshot
 **Signature**
 
 ```ts
-export declare const snapshot: Effect.Effect<readonly MetricPair.MetricPair.Untyped[], never, never>
+export declare const snapshot: Effect.Effect<MetricPair.MetricPair.Untyped[], never, never>
 ```

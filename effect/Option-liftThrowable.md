@@ -27,5 +27,5 @@ assert.deepStrictEqual(parse(""), Option.none())
 **Signature**
 
 ```ts
-export declare const liftThrowable: <A extends readonly unknown[], B>(f: (...a: A) => B) => (...a: A) => Option<B>
+export declare const liftThrowable: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<B>
 ```

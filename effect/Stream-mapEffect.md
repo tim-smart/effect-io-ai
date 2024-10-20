@@ -10,6 +10,17 @@ import * as Stream from "effect/Stream"
 Stream.mapEffect
 ```
 
+**Example**
+
+```ts
+import { Effect, Random, Stream } from "effect"
+
+const stream = Stream.make(10, 20, 30).pipe(Stream.mapEffect((n) => Random.nextIntBetween(0, n)))
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// Example Output: { _id: 'Chunk', values: [ 7, 19, 8 ] }
+```
+
 **Signature**
 
 ```ts

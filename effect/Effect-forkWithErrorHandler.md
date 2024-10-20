@@ -14,12 +14,7 @@ Effect.forkWithErrorHandler
 
 ```ts
 export declare const forkWithErrorHandler: {
-  <E, X>(
-    handler: (e: E) => Effect<X, never, never>
-  ): <A, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
-  <A, E, R, X>(
-    self: Effect<A, E, R>,
-    handler: (e: E) => Effect<X, never, never>
-  ): Effect<Fiber.RuntimeFiber<A, E>, never, R>
+  <E, X>(handler: (e: E) => Effect<X>): <A, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
+  <A, E, R, X>(self: Effect<A, E, R>, handler: (e: E) => Effect<X>): Effect<Fiber.RuntimeFiber<A, E>, never, R>
 }
 ```

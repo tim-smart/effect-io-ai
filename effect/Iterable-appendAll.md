@@ -14,7 +14,7 @@ Iterable.appendAll
 
 ```ts
 export declare const appendAll: {
-  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<B | A>
+  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<A | B>
   <A, B>(self: Iterable<A>, that: Iterable<B>): Iterable<A | B>
 }
 ```

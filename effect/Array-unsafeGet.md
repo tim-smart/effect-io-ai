@@ -14,7 +14,7 @@ Array.unsafeGet
 
 ```ts
 export declare const unsafeGet: {
-  (index: number): <A>(self: readonly A[]) => A
-  <A>(self: readonly A[], index: number): A
+  (index: number): <A>(self: ReadonlyArray<A>) => A
+  <A>(self: ReadonlyArray<A>, index: number): A
 }
 ```

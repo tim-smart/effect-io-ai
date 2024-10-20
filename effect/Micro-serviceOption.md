@@ -17,5 +17,5 @@ Micro.serviceOption
 **Signature**
 
 ```ts
-export declare const serviceOption: <I, S>(tag: Context.Tag<I, S>) => Micro<Option.Option<S>, never, never>
+export declare const serviceOption: <I, S>(tag: Context.Tag<I, S>) => Micro<Option.Option<S>>
 ```

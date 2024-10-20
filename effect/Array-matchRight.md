@@ -29,11 +29,11 @@ assert.deepStrictEqual(matchRight([1, 2, 3]), "init: 2, last: 3")
 export declare const matchRight: {
   <B, A, C = B>(options: {
     readonly onEmpty: LazyArg<B>
-    readonly onNonEmpty: (init: A[], last: A) => C
-  }): (self: readonly A[]) => B | C
+    readonly onNonEmpty: (init: Array<A>, last: A) => C
+  }): (self: ReadonlyArray<A>) => B | C
   <A, B, C = B>(
-    self: readonly A[],
-    options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (init: A[], last: A) => C }
+    self: ReadonlyArray<A>,
+    options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (init: Array<A>, last: A) => C }
   ): B | C
 }
 ```

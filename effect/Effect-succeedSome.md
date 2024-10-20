@@ -13,5 +13,5 @@ Effect.succeedSome
 **Signature**
 
 ```ts
-export declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>, never, never>
+export declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>>
 ```

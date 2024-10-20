@@ -20,6 +20,6 @@ export declare const all: <
   O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined }
 >(
   arg: Arg,
-  options?: O | undefined
+  options?: O
 ) => All.Return<Arg, O>
 ```

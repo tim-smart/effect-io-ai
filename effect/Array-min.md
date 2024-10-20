@@ -23,7 +23,7 @@ assert.deepStrictEqual(min, 1)
 
 ```ts
 export declare const min: {
-  <A>(O: Order.Order<A>): (self: readonly [A, ...A[]]) => A
-  <A>(self: readonly [A, ...A[]], O: Order.Order<A>): A
+  <A>(O: Order.Order<A>): (self: NonEmptyReadonlyArray<A>) => A
+  <A>(self: NonEmptyReadonlyArray<A>, O: Order.Order<A>): A
 }
 ```

@@ -13,5 +13,5 @@ TSet.empty
 **Signature**
 
 ```ts
-export declare const empty: <A>() => STM.STM<TSet<A>, never, never>
+export declare const empty: <A>() => STM.STM<TSet<A>>
 ```

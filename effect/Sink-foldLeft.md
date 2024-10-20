@@ -13,5 +13,5 @@ Sink.foldLeft
 **Signature**
 
 ```ts
-export declare const foldLeft: <S, In>(s: S, f: (s: S, input: In) => S) => Sink<S, In, never, never, never>
+export declare const foldLeft: <S, In>(s: S, f: (s: S, input: In) => S) => Sink<S, In>
 ```

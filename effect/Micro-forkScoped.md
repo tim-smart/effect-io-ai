@@ -16,5 +16,5 @@ Micro.forkScoped
 **Signature**
 
 ```ts
-export declare const forkScoped: <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, MicroScope | R>
+export declare const forkScoped: <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, R | MicroScope>
 ```

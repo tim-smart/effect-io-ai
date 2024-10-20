@@ -14,7 +14,7 @@ Iterable.groupWith
 
 ```ts
 export declare const groupWith: {
-  <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<[A, ...A[]]>
-  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<[A, ...A[]]>
+  <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<NonEmptyArray<A>>
+  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<NonEmptyArray<A>>
 }
 ```

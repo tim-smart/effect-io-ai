@@ -14,7 +14,5 @@ Schedule.driver
 **Signature**
 
 ```ts
-export declare const driver: <Out, In, R>(
-  self: Schedule<Out, In, R>
-) => Effect.Effect<ScheduleDriver<Out, In, R>, never, never>
+export declare const driver: <Out, In, R>(self: Schedule<Out, In, R>) => Effect.Effect<ScheduleDriver<Out, In, R>>
 ```

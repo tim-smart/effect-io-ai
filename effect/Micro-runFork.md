@@ -30,7 +30,7 @@ handle.addObserver((exit) => {
 
 ```ts
 export declare const runFork: <A, E>(
-  effect: Micro<A, E, never>,
-  options?: { readonly signal?: AbortSignal | undefined } | undefined
+  effect: Micro<A, E>,
+  options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined } | undefined
 ) => Handle<A, E>
 ```

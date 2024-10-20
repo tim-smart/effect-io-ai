@@ -21,9 +21,10 @@ export declare const filter: {
           readonly concurrency?: Concurrency | undefined
           readonly batching?: boolean | "inherit" | undefined
           readonly negate?: boolean | undefined
+          readonly concurrentFinalizers?: boolean | undefined
         }
       | undefined
-  ): (elements: Iterable<A>) => Effect<A[], E, R>
+  ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
   <A, E, R>(
     elements: Iterable<A>,
     f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
@@ -32,8 +33,9 @@ export declare const filter: {
           readonly concurrency?: Concurrency | undefined
           readonly batching?: boolean | "inherit" | undefined
           readonly negate?: boolean | undefined
+          readonly concurrentFinalizers?: boolean | undefined
         }
       | undefined
-  ): Effect<A[], E, R>
+  ): Effect<Array<A>, E, R>
 }
 ```

@@ -13,5 +13,5 @@ Take.done
 **Signature**
 
 ```ts
-export declare const done: <A, E>(self: Take<A, E>) => Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, never>
+export declare const done: <A, E>(self: Take<A, E>) => Effect.Effect<Chunk.Chunk<A>, Option.Option<E>>
 ```

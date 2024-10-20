@@ -13,5 +13,5 @@ TPubSub.unbounded
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => STM.STM<TPubSub<A>, never, never>
+export declare const unbounded: <A>() => STM.STM<TPubSub<A>>
 ```

@@ -14,5 +14,5 @@ Config.repeat
 **Signature**
 
 ```ts
-export declare const repeat: <A>(self: Config<A>) => Config<A[]>
+export declare const repeat: <A>(self: Config<A>) => Config<Array<A>>
 ```

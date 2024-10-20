@@ -50,10 +50,7 @@ Effect.runFork(program)
 export declare const cachedInvalidateWithTTL: {
   (
     timeToLive: Duration.DurationInput
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E, never>, Effect<void, never, never>], never, R>
-  <A, E, R>(
-    self: Effect<A, E, R>,
-    timeToLive: Duration.DurationInput
-  ): Effect<[Effect<A, E, never>, Effect<void, never, never>], never, R>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E>, Effect<void>], never, R>
+  <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<[Effect<A, E>, Effect<void>], never, R>
 }
 ```

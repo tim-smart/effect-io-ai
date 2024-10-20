@@ -13,5 +13,5 @@ Layer.failCause
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Layer<unknown, E, never>
+export declare const failCause: <E>(cause: Cause.Cause<E>) => Layer<unknown, E>
 ```

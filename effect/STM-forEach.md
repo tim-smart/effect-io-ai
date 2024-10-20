@@ -18,7 +18,7 @@ export declare const forEach: {
   <A, A2, E, R>(
     f: (a: A) => STM<A2, E, R>,
     options?: { readonly discard?: false | undefined } | undefined
-  ): (elements: Iterable<A>) => STM<A2[], E, R>
+  ): (elements: Iterable<A>) => STM<Array<A2>, E, R>
   <A, A2, E, R>(
     f: (a: A) => STM<A2, E, R>,
     options: { readonly discard: true }
@@ -27,7 +27,7 @@ export declare const forEach: {
     elements: Iterable<A>,
     f: (a: A) => STM<A2, E, R>,
     options?: { readonly discard?: false | undefined } | undefined
-  ): STM<A2[], E, R>
+  ): STM<Array<A2>, E, R>
   <A, A2, E, R>(elements: Iterable<A>, f: (a: A) => STM<A2, E, R>, options: { readonly discard: true }): STM<void, E, R>
 }
 ```

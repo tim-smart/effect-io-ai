@@ -15,11 +15,8 @@ Schema.declare
 
 ```ts
 export declare const declare: {
-  <A>(
-    is: (input: unknown) => input is A,
-    annotations?: Annotations.Schema<A, readonly []> | undefined
-  ): SchemaClass<A, A, never>
-  <const P extends readonly Schema.Any[], I, A>(
+  <A>(is: (input: unknown) => input is A, annotations?: Annotations.Schema<A>): SchemaClass<A>
+  <const P extends ReadonlyArray<Schema.All>, I, A>(
     typeParameters: P,
     options: {
       readonly decode: (
@@ -37,7 +34,7 @@ export declare const declare: {
         ast: AST.Declaration
       ) => Effect.Effect<I, ParseResult.ParseIssue, never>
     },
-    annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]> }> | undefined
+    annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]> }>
   ): SchemaClass<A, I, Schema.Context<P[number]>>
 }
 ```

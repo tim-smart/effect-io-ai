@@ -22,5 +22,8 @@ export const animal: Options.Options<"dog" | "cat"> = Options.choice("animal", [
 **Signature**
 
 ```ts
-export declare const choice: <A extends string, C extends readonly A[]>(name: string, choices: C) => Options<C[number]>
+export declare const choice: <A extends string, C extends ReadonlyArray<A>>(
+  name: string,
+  choices: C
+) => Options<C[number]>
 ```

@@ -24,7 +24,7 @@ export declare const forEach: {
     iterable: Iterable<A>,
     f: (a: A, index: number) => Micro<B, E, R>,
     options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined }
-  ): Micro<B[], E, R>
+  ): Micro<Array<B>, E, R>
   <A, B, E, R>(
     iterable: Iterable<A>,
     f: (a: A, index: number) => Micro<B, E, R>,

@@ -20,6 +20,6 @@ export declare const makeRuntime: <R, K, E = unknown, A = unknown>() => Effect.E
     options?: (Runtime.RunForkOptions & { readonly onlyIfMissing?: boolean | undefined }) | undefined
   ) => Fiber.RuntimeFiber<XA, XE>,
   never,
-  any
+  Scope.Scope | R
 >
 ```

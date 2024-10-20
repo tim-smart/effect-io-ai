@@ -15,7 +15,7 @@ TMap.getOrElse
 
 ```ts
 export declare const getOrElse: {
-  <K, V>(key: K, fallback: LazyArg<V>): (self: TMap<K, V>) => STM.STM<V, never, never>
-  <K, V>(self: TMap<K, V>, key: K, fallback: LazyArg<V>): STM.STM<V, never, never>
+  <K, V>(key: K, fallback: LazyArg<V>): (self: TMap<K, V>) => STM.STM<V>
+  <K, V>(self: TMap<K, V>, key: K, fallback: LazyArg<V>): STM.STM<V>
 }
 ```

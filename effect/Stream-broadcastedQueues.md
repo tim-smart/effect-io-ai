@@ -20,14 +20,28 @@ Stream.broadcastedQueues
 export declare const broadcastedQueues: {
   <N extends number>(
     n: N,
-    maximumLag: number
+    maximumLag:
+      | number
+      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
+      | {
+          readonly capacity: number
+          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
+          readonly replay?: number | undefined
+        }
   ): <A, E, R>(
     self: Stream<A, E, R>
-  ) => Effect.Effect<Stream.DynamicTuple<Queue.Dequeue<Take.Take<A, E>>, N>, never, Scope.Scope | R>
+  ) => Effect.Effect<TupleOf<N, Queue.Dequeue<Take.Take<A, E>>>, never, Scope.Scope | R>
   <A, E, R, N extends number>(
     self: Stream<A, E, R>,
     n: N,
-    maximumLag: number
-  ): Effect.Effect<Stream.DynamicTuple<Queue.Dequeue<Take.Take<A, E>>, N>, never, Scope.Scope | R>
+    maximumLag:
+      | number
+      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
+      | {
+          readonly capacity: number
+          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
+          readonly replay?: number | undefined
+        }
+  ): Effect.Effect<TupleOf<N, Queue.Dequeue<Take.Take<A, E>>>, never, Scope.Scope | R>
 }
 ```

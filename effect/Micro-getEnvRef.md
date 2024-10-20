@@ -13,5 +13,5 @@ Micro.getEnvRef
 **Signature**
 
 ```ts
-export declare const getEnvRef: <A>(envRef: EnvRef<A>) => Micro<A, never, never>
+export declare const getEnvRef: <A>(envRef: EnvRef<A>) => Micro<A>
 ```

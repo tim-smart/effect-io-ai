@@ -13,5 +13,5 @@ Stream.failSync
 **Signature**
 
 ```ts
-export declare const failSync: <E>(evaluate: LazyArg<E>) => Stream<never, E, never>
+export declare const failSync: <E>(evaluate: LazyArg<E>) => Stream<never, E>
 ```

@@ -15,5 +15,5 @@ Stream.unwrap
 ```ts
 export declare const unwrap: <A, E2, R2, E, R>(
   effect: Effect.Effect<Stream<A, E2, R2>, E, R>
-) => Stream<A, E2 | E, R2 | R>
+) => Stream<A, E | E2, R | R2>
 ```

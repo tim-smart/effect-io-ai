@@ -37,5 +37,5 @@ assert.deepStrictEqual(result2, [])
 **Signature**
 
 ```ts
-export declare const liftEither: <A extends unknown[], E, B>(f: (...a: A) => array_<B, E>) => (...a: A) => B[]
+export declare const liftEither: <A extends Array<unknown>, E, B>(f: (...a: A) => array_<B, E>) => (...a: A) => Array<B>
 ```

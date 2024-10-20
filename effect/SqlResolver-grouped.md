@@ -20,19 +20,19 @@ export declare const grouped: <T extends string, I, II, K, RI, A, IA, Row, E, RA
   options:
     | {
         readonly Request: Schema.Schema<I, II, RI>
-        readonly RequestGroupKey: (request: Types.NoInfer<II>) => K
-        readonly Result: Schema.Schema<A, IA, never>
+        readonly RequestGroupKey: (request: Types.NoInfer<I>) => K
+        readonly Result: Schema.Schema<A, IA>
         readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K
-        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, never>
-        readonly withContext?: false | undefined
+        readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>
+        readonly withContext?: false
       }
     | {
         readonly Request: Schema.Schema<I, II, RI>
-        readonly RequestGroupKey: (request: Types.NoInfer<II>) => K
+        readonly RequestGroupKey: (request: Types.NoInfer<I>) => K
         readonly Result: Schema.Schema<A, IA, RA>
         readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K
-        readonly execute: (requests: Types.NoInfer<II>[]) => Effect.Effect<readonly Row[], E, R>
+        readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>
         readonly withContext: true
       }
-) => Effect.Effect<SqlResolver<T, I, A[], E, RI>, never, RA | R>
+) => Effect.Effect<SqlResolver<T, I, Array<A>, E, RI>, never, RA | R>
 ```

@@ -58,7 +58,7 @@ for (let i = 0; i < x.length; i++) {
 
 ```ts
 export declare const bindTo: {
-  <N extends string>(tag: N): <A>(self: readonly A[]) => { [K in N]: A }[]
-  <A, N extends string>(self: readonly A[], tag: N): { [K in N]: A }[]
+  <N extends string>(tag: N): <A>(self: ReadonlyArray<A>) => Array<{ [K in N]: A }>
+  <A, N extends string>(self: ReadonlyArray<A>, tag: N): Array<{ [K in N]: A }>
 }
 ```

@@ -21,5 +21,5 @@ assert.deepStrictEqual(make(1, "hello", true), [1, "hello", true])
 **Signature**
 
 ```ts
-export declare const make: <A extends readonly any[]>(...elements: A) => A
+export declare const make: <A extends ReadonlyArray<any>>(...elements: A) => A
 ```

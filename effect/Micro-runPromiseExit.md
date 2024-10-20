@@ -15,7 +15,7 @@ Micro.runPromiseExit
 
 ```ts
 export declare const runPromiseExit: <A, E>(
-  effect: Micro<A, E, never>,
-  options?: { readonly signal?: AbortSignal | undefined } | undefined
+  effect: Micro<A, E>,
+  options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined } | undefined
 ) => Promise<MicroExit<A, E>>
 ```

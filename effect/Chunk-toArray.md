@@ -17,5 +17,5 @@ Chunk.toArray
 ```ts
 export declare const toArray: <S extends Chunk<any>>(
   self: S
-) => S extends NonEmptyChunk<any> ? [Chunk.Infer<S>, ...Chunk.Infer<S>[]] : Chunk.Infer<S>[]
+) => S extends NonEmptyChunk<any> ? RA.NonEmptyArray<Chunk.Infer<S>> : Array<Chunk.Infer<S>>
 ```

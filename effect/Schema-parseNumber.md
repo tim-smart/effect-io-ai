@@ -19,5 +19,5 @@ Schema.parseNumber
 ```ts
 export declare const parseNumber: <A extends string, I, R>(
   self: Schema<A, I, R>
-) => transformOrFail<Schema<A, I, R>, typeof Number$, never>
+) => transformOrFail<Schema<A, I, R>, typeof Number$>
 ```

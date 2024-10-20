@@ -13,5 +13,5 @@ Array.init
 **Signature**
 
 ```ts
-export declare const init: <A>(self: Iterable<A>) => Option<A[]>
+export declare const init: <A>(self: Iterable<A>) => Option<Array<A>>
 ```

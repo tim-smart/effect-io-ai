@@ -13,5 +13,5 @@ Array.last
 **Signature**
 
 ```ts
-export declare const last: <A>(self: readonly A[]) => Option<A>
+export declare const last: <A>(self: ReadonlyArray<A>) => Option<A>
 ```

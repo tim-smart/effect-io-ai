@@ -13,8 +13,5 @@ Stream.fromIteratorSucceed
 **Signature**
 
 ```ts
-export declare const fromIteratorSucceed: <A>(
-  iterator: IterableIterator<A>,
-  maxChunkSize?: number
-) => Stream<A, never, never>
+export declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
 ```

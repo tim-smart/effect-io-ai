@@ -19,11 +19,11 @@ export declare const withSpanScoped: {
   (
     name: string,
     options?: Tracer.SpanOptions
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Scope.Scope | Exclude<R, Tracer.ParentSpan>>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>
   <A, E, R>(
     self: Effect<A, E, R>,
     name: string,
     options?: Tracer.SpanOptions
-  ): Effect<A, E, Scope.Scope | Exclude<R, Tracer.ParentSpan>>
+  ): Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>
 }
 ```

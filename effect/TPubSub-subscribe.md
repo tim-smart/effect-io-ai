@@ -16,5 +16,5 @@ TPubSub.subscribe
 **Signature**
 
 ```ts
-export declare const subscribe: <A>(self: TPubSub<A>) => STM.STM<TQueue.TDequeue<A>, never, never>
+export declare const subscribe: <A>(self: TPubSub<A>) => STM.STM<TQueue.TDequeue<A>>
 ```

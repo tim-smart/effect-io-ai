@@ -19,14 +19,14 @@ export declare const forkAll: {
     options?: { readonly discard?: false | undefined } | undefined
   ): <Eff extends Effect<any, any, any>>(
     effects: Iterable<Eff>
-  ) => Effect<Fiber.Fiber<Effect.Success<Eff>[], Effect.Error<Eff>>, never, Effect.Context<Eff>>
+  ) => Effect<Fiber.Fiber<Array<Effect.Success<Eff>>, Effect.Error<Eff>>, never, Effect.Context<Eff>>
   (options: {
     readonly discard: true
   }): <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<void, never, Effect.Context<Eff>>
   <Eff extends Effect<any, any, any>>(
     effects: Iterable<Eff>,
     options?: { readonly discard?: false | undefined } | undefined
-  ): Effect<Fiber.Fiber<Effect.Success<Eff>[], Effect.Error<Eff>>, never, Effect.Context<Eff>>
+  ): Effect<Fiber.Fiber<Array<Effect.Success<Eff>>, Effect.Error<Eff>>, never, Effect.Context<Eff>>
   <Eff extends Effect<any, any, any>>(
     effects: Iterable<Eff>,
     options: { readonly discard: true }

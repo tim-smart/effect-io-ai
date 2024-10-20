@@ -13,7 +13,7 @@ HashMap.make
 **Signature**
 
 ```ts
-export declare const make: <Entries extends readonly (readonly [any, any])[]>(
+export declare const make: <Entries extends ReadonlyArray<readonly [any, any]>>(
   ...entries: Entries
 ) => HashMap<
   Entries[number] extends readonly [infer K, any] ? K : never,

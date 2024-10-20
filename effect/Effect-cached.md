@@ -53,5 +53,5 @@ Effect.runFork(program)
 **Signature**
 
 ```ts
-export declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>, never, never>
+export declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```

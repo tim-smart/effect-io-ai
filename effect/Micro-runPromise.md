@@ -15,7 +15,7 @@ Micro.runPromise
 
 ```ts
 export declare const runPromise: <A, E>(
-  effect: Micro<A, E, never>,
-  options?: { readonly signal?: AbortSignal | undefined } | undefined
+  effect: Micro<A, E>,
+  options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined } | undefined
 ) => Promise<A>
 ```

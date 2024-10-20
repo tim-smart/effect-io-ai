@@ -17,7 +17,11 @@ Effect.allSuccesses
 export declare const allSuccesses: <X extends Effect<any, any, any>>(
   elements: Iterable<X>,
   options?:
-    | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+    | {
+        readonly concurrency?: Concurrency | undefined
+        readonly batching?: boolean | "inherit" | undefined
+        readonly concurrentFinalizers?: boolean | undefined
+      }
     | undefined
-) => Effect<Effect.Success<X>[], never, Effect.Context<X>>
+) => Effect<Array<Effect.Success<X>>, never, Effect.Context<X>>
 ```

@@ -16,5 +16,5 @@ Schema.typeSchema
 **Signature**
 
 ```ts
-export declare const typeSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<A, A, never>
+export declare const typeSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<A>
 ```

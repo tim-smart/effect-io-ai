@@ -14,9 +14,5 @@ Sink.fold
 **Signature**
 
 ```ts
-export declare const fold: <S, In>(
-  s: S,
-  contFn: Predicate<S>,
-  f: (s: S, input: In) => S
-) => Sink<S, In, In, never, never>
+export declare const fold: <S, In>(s: S, contFn: Predicate<S>, f: (s: S, input: In) => S) => Sink<S, In, In>
 ```

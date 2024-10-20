@@ -14,7 +14,7 @@ Micro.orElseSucceed
 
 ```ts
 export declare const orElseSucceed: {
-  <B>(f: LazyArg<B>): <A, E, R>(self: Micro<A, E, R>) => Micro<B | A, never, R>
+  <B>(f: LazyArg<B>): <A, E, R>(self: Micro<A, E, R>) => Micro<A | B, never, R>
   <A, E, R, B>(self: Micro<A, E, R>, f: LazyArg<B>): Micro<A | B, never, R>
 }
 ```

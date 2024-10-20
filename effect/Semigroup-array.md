@@ -14,5 +14,5 @@ Semigroup.array
 **Signature**
 
 ```ts
-export declare const array: <A>() => Semigroup<readonly A[]>
+export declare const array: <A>() => Semigroup<ReadonlyArray<A>>
 ```

@@ -17,5 +17,5 @@ Options.repeated
 **Signature**
 
 ```ts
-export declare const repeated: <A>(self: Options<A>) => Options<A[]>
+export declare const repeated: <A>(self: Options<A>) => Options<Array<A>>
 ```

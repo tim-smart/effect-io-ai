@@ -13,5 +13,5 @@ Channel.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Channel<never, unknown, never, unknown, A, unknown, never>
+export declare const succeed: <A>(value: A) => Channel<never, unknown, never, unknown, A, unknown>
 ```

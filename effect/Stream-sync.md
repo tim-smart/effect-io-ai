@@ -13,5 +13,5 @@ Stream.sync
 **Signature**
 
 ```ts
-export declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A, never, never>
+export declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```

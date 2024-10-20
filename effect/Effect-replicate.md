@@ -14,7 +14,7 @@ Effect.replicate
 
 ```ts
 export declare const replicate: {
-  (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>[]
-  <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>[]
+  (n: number): <A, E, R>(self: Effect<A, E, R>) => Array<Effect<A, E, R>>
+  <A, E, R>(self: Effect<A, E, R>, n: number): Array<Effect<A, E, R>>
 }
 ```

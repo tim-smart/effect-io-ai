@@ -16,5 +16,5 @@ Micro.sync
 **Signature**
 
 ```ts
-export declare const sync: <A>(evaluate: LazyArg<A>) => Micro<A, never, never>
+export declare const sync: <A>(evaluate: LazyArg<A>) => Micro<A>
 ```

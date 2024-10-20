@@ -11,6 +11,18 @@ import * as Stream from "effect/Stream"
 Stream.drain
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+// We create a stream and immediately drain it.
+const stream = Stream.range(1, 6).pipe(Stream.drain)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [] }
+```
+
 **Signature**
 
 ```ts

@@ -22,7 +22,7 @@ assert.deepStrictEqual(result, [1, 2, 3])
 **Signature**
 
 ```ts
-export declare const make: <Elements extends [any, ...any[]]>(
+export declare const make: <Elements extends NonEmptyArray<any>>(
   ...elements: Elements
-) => [Elements[number], ...Elements[number][]]
+) => NonEmptyArray<Elements[number]>
 ```

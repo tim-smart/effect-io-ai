@@ -17,11 +17,11 @@ export declare const runFoldEffect: {
   <S, A, E2, R2>(
     s: S,
     f: (s: S, a: A) => Effect.Effect<S, E2, R2>
-  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, R2 | R>
+  ): <E, R>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, Exclude<R | R2, Scope.Scope>>
   <A, E, R, S, E2, R2>(
     self: Stream<A, E, R>,
     s: S,
     f: (s: S, a: A) => Effect.Effect<S, E2, R2>
-  ): Effect.Effect<S, E | E2, R | R2>
+  ): Effect.Effect<S, E | E2, Exclude<R | R2, Scope.Scope>>
 }
 ```

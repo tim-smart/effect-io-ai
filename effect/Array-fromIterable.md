@@ -25,5 +25,5 @@ assert.deepStrictEqual(result, [1, 2, 3])
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(collection: Iterable<A>) => A[]
+export declare const fromIterable: <A>(collection: Iterable<A>) => Array<A>
 ```

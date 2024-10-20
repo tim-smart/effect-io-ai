@@ -21,14 +21,16 @@ export declare const replicateEffect: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard?: false | undefined
+      readonly concurrentFinalizers?: boolean | undefined
     }
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A[], E, R>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>
   (
     n: number,
     options: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
+      readonly concurrentFinalizers?: boolean | undefined
     }
   ): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
   <A, E, R>(
@@ -38,8 +40,9 @@ export declare const replicateEffect: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard?: false | undefined
+      readonly concurrentFinalizers?: boolean | undefined
     }
-  ): Effect<A[], E, R>
+  ): Effect<Array<A>, E, R>
   <A, E, R>(
     self: Effect<A, E, R>,
     n: number,
@@ -47,6 +50,7 @@ export declare const replicateEffect: {
       readonly concurrency?: Concurrency | undefined
       readonly batching?: boolean | "inherit" | undefined
       readonly discard: true
+      readonly concurrentFinalizers?: boolean | undefined
     }
   ): Effect<void, E, R>
 }

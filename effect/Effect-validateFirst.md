@@ -37,15 +37,23 @@ export declare const validateFirst: {
   <A, B, E, R>(
     f: (a: A, i: number) => Effect<B, E, R>,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
-  ): (elements: Iterable<A>) => Effect<B, E[], R>
+  ): (elements: Iterable<A>) => Effect<B, Array<E>, R>
   <A, B, E, R>(
     elements: Iterable<A>,
     f: (a: A, i: number) => Effect<B, E, R>,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
-  ): Effect<B, E[], R>
+  ): Effect<B, Array<E>, R>
 }
 ```

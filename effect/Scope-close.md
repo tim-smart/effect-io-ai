@@ -1,6 +1,6 @@
 # close
 
-Closes a scope with the specified exit value, running all finalizers that
+Closes this scope with the specified exit value, running all finalizers that
 have been added to the scope.
 
 To import and use `close` from the "Scope" module:

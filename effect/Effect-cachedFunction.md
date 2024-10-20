@@ -44,6 +44,6 @@ Effect.runFork(program)
 ```ts
 export declare const cachedFunction: <A, B, E, R>(
   f: (a: A) => Effect<B, E, R>,
-  eq?: Equivalence<A> | undefined
-) => Effect<(a: A) => Effect<B, E, R>, never, never>
+  eq?: Equivalence<A>
+) => Effect<(a: A) => Effect<B, E, R>>
 ```

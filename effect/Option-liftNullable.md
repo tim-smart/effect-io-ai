@@ -29,7 +29,7 @@ assert.deepStrictEqual(parseOption("not a number"), Option.none())
 **Signature**
 
 ```ts
-export declare const liftNullable: <A extends readonly unknown[], B>(
+export declare const liftNullable: <A extends ReadonlyArray<unknown>, B>(
   f: (...a: A) => B | null | undefined
 ) => (...a: A) => Option<NonNullable<B>>
 ```

@@ -21,6 +21,6 @@ export declare const onError: {
   <A, E, R, X, R2>(
     self: Effect<A, E, R>,
     cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>
-  ): Effect<A, E, R | R2>
+  ): Effect<A, E, R2 | R>
 }
 ```

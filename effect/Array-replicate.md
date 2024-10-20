@@ -23,5 +23,5 @@ assert.deepStrictEqual(Array.replicate("a", 3), ["a", "a", "a"])
 **Signature**
 
 ```ts
-export declare const replicate: { (n: number): <A>(a: A) => [A, ...A[]]; <A>(a: A, n: number): [A, ...A[]] }
+export declare const replicate: { (n: number): <A>(a: A) => NonEmptyArray<A>; <A>(a: A, n: number): NonEmptyArray<A> }
 ```

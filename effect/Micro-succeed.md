@@ -13,5 +13,5 @@ Micro.succeed
 **Signature**
 
 ```ts
-export declare const succeed: <A>(a: A) => Micro<A, never, never>
+export declare const succeed: <A>(a: A) => Micro<A>
 ```

@@ -10,6 +10,22 @@ import * as Stream from "effect/Stream"
 Stream.zipWithIndex
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.make("Mary", "James", "Robert", "Patricia")
+
+const indexedStream = Stream.zipWithIndex(stream)
+
+// Effect.runPromise(Stream.runCollect(indexedStream)).then(console.log)
+// {
+//   _id: 'Chunk',
+//   values: [ [ 'Mary', 0 ], [ 'James', 1 ], [ 'Robert', 2 ], [ 'Patricia', 3 ] ]
+// }
+```
+
 **Signature**
 
 ```ts

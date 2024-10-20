@@ -10,8 +10,19 @@ import * as Stream from "effect/Stream"
 Stream.make
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 1, 2, 3 ] }
+```
+
 **Signature**
 
 ```ts
-export declare const make: <As extends any[]>(...as: As) => Stream<As[number], never, never>
+export declare const make: <As extends Array<any>>(...as: As) => Stream<As[number]>
 ```

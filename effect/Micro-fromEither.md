@@ -15,5 +15,5 @@ Micro.fromEither
 **Signature**
 
 ```ts
-export declare const fromEither: <R, L>(either: Either.Either<R, L>) => Micro<R, L, never>
+export declare const fromEither: <R, L>(either: Either.Either<R, L>) => Micro<R, L>
 ```

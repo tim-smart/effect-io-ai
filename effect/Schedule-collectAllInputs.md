@@ -13,5 +13,5 @@ Schedule.collectAllInputs
 **Signature**
 
 ```ts
-export declare const collectAllInputs: <A>() => Schedule<Chunk.Chunk<A>, A, never>
+export declare const collectAllInputs: <A>() => Schedule<Chunk.Chunk<A>, A>
 ```

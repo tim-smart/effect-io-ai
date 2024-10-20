@@ -23,7 +23,7 @@ assert.deepStrictEqual(max, 3)
 
 ```ts
 export declare const max: {
-  <A>(O: Order.Order<A>): (self: readonly [A, ...A[]]) => A
-  <A>(self: readonly [A, ...A[]], O: Order.Order<A>): A
+  <A>(O: Order.Order<A>): (self: NonEmptyReadonlyArray<A>) => A
+  <A>(self: NonEmptyReadonlyArray<A>, O: Order.Order<A>): A
 }
 ```

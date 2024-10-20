@@ -26,7 +26,7 @@ const stream = Stream.zipLatestAll(
   Stream.fromSchedule(Schedule.spaced("4 millis"))
 ).pipe(Stream.take(6), Stream.tap(Console.log))
 
-Effect.runPromise(Stream.runDrain(stream))
+// Effect.runPromise(Stream.runDrain(stream))
 // Output:
 // [ 0, 0, 0 ]
 // [ 1, 0, 0 ]
@@ -40,7 +40,7 @@ Effect.runPromise(Stream.runDrain(stream))
 **Signature**
 
 ```ts
-export declare const zipLatestAll: <T extends readonly Stream<any, any, any>[]>(
+export declare const zipLatestAll: <T extends ReadonlyArray<Stream<any, any, any>>>(
   ...streams: T
 ) => Stream<
   [T[number]] extends [never]

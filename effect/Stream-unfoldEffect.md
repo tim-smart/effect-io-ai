@@ -11,6 +11,19 @@ import * as Stream from "effect/Stream"
 Stream.unfoldEffect
 ```
 
+**Example**
+
+```ts
+import { Effect, Option, Random, Stream } from "effect"
+
+const stream = Stream.unfoldEffect(1, (n) =>
+  Random.nextBoolean.pipe(Effect.map((b) => (b ? Option.some([n, -n]) : Option.some([n, n]))))
+)
+
+// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+// { _id: 'Chunk', values: [ 1, -1, -1, -1, -1 ] }
+```
+
 **Signature**
 
 ```ts

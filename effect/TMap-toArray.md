@@ -13,5 +13,5 @@ TMap.toArray
 **Signature**
 
 ```ts
-export declare const toArray: <K, V>(self: TMap<K, V>) => STM.STM<[K, V][], never, never>
+export declare const toArray: <K, V>(self: TMap<K, V>) => STM.STM<Array<[K, V]>>
 ```

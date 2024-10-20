@@ -60,12 +60,12 @@ for (let i = 0; i < x.length; i++) {
 export declare const bind: {
   <A extends object, N extends string, B>(
     tag: Exclude<N, keyof A>,
-    f: (a: A) => readonly B[]
-  ): (self: readonly A[]) => { [K in N | keyof A]: K extends keyof A ? A[K] : B }[]
+    f: (a: NoInfer<A>) => ReadonlyArray<B>
+  ): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B }>
   <A extends object, N extends string, B>(
-    self: readonly A[],
+    self: ReadonlyArray<A>,
     tag: Exclude<N, keyof A>,
-    f: (a: A) => readonly B[]
-  ): { [K in N | keyof A]: K extends keyof A ? A[K] : B }[]
+    f: (a: NoInfer<A>) => ReadonlyArray<B>
+  ): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B }>
 }
 ```

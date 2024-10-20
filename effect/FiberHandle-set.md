@@ -17,12 +17,12 @@ FiberHandle.set
 export declare const set: {
   <A, E, XE extends E, XA extends A>(
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly onlyIfMissing?: boolean }
+    options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined }
   ): (self: FiberHandle<A, E>) => Effect.Effect<void>
   <A, E, XE extends E, XA extends A>(
     self: FiberHandle<A, E>,
     fiber: Fiber.RuntimeFiber<XA, XE>,
-    options?: { readonly onlyIfMissing?: boolean }
+    options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined }
   ): Effect.Effect<void>
 }
 ```

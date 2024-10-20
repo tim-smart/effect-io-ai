@@ -23,9 +23,10 @@ export declare const allWith: <
     readonly batching?: boolean | "inherit" | undefined
     readonly discard?: boolean | undefined
     readonly mode?: "default" | "validate" | "either" | undefined
+    readonly concurrentFinalizers?: boolean | undefined
   }
 >(
-  options?: O | undefined
+  options?: O
 ) => <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>>(
   arg: Arg
 ) => All.Return<Arg, O>

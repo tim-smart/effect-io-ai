@@ -32,7 +32,7 @@ if (isTupleOfAtLeast(arr, 3)) {
 
 ```ts
 export declare const isTupleOfAtLeast: {
-  <N extends number>(n: N): <T>(self: readonly T[]) => self is [...TupleOf<N, T>, ...T[]]
-  <T, N extends number>(self: readonly T[], n: N): self is [...TupleOf<N, T>, ...T[]]
+  <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>
+  <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>
 }
 ```

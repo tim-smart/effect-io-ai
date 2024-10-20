@@ -14,7 +14,7 @@ TArray.minOption
 
 ```ts
 export declare const minOption: {
-  <A>(order: Order.Order<A>): (self: TArray<A>) => STM.STM<Option.Option<A>, never, never>
-  <A>(self: TArray<A>, order: Order.Order<A>): STM.STM<Option.Option<A>, never, never>
+  <A>(order: Order.Order<A>): (self: TArray<A>) => STM.STM<Option.Option<A>>
+  <A>(self: TArray<A>, order: Order.Order<A>): STM.STM<Option.Option<A>>
 }
 ```

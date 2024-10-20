@@ -26,5 +26,5 @@ assert.deepStrictEqual(Array.fromRecord(x), [
 **Signature**
 
 ```ts
-export declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => [K, A][]
+export declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => Array<[K, A]>
 ```

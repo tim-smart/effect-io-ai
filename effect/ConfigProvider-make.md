@@ -14,7 +14,7 @@ ConfigProvider.make
 
 ```ts
 export declare const make: (options: {
-  readonly load: <A>(config: Config.Config<A>) => Effect.Effect<A, ConfigError.ConfigError, never>
+  readonly load: <A>(config: Config.Config<A>) => Effect.Effect<A, ConfigError.ConfigError>
   readonly flattened: ConfigProvider.Flat
 }) => ConfigProvider
 ```

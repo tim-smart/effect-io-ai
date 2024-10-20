@@ -19,6 +19,6 @@ export declare const makeRuntime: <R = never, A = unknown, E = unknown>() => Eff
     options?: Runtime.RunForkOptions | undefined
   ) => Fiber.RuntimeFiber<XA, XE>,
   never,
-  any
+  Scope.Scope | R
 >
 ```

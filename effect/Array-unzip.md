@@ -29,13 +29,11 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const unzip: <
-  S extends Iterable<readonly [any, any]> | readonly [readonly [any, any], ...(readonly [any, any])[]]
->(
+export declare const unzip: <S extends Iterable<readonly [any, any]> | NonEmptyReadonlyArray<readonly [any, any]>>(
   self: S
-) => S extends readonly [readonly [infer A, infer B], ...(readonly [infer A, infer B])[]]
-  ? [[A, ...A[]], [B, ...B[]]]
+) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]>
+  ? [NonEmptyArray<A>, NonEmptyArray<B>]
   : S extends Iterable<readonly [infer A, infer B]>
-    ? [A[], B[]]
+    ? [Array<A>, Array<B>]
     : never
 ```

@@ -13,5 +13,5 @@ Record.keys
 **Signature**
 
 ```ts
-export declare const keys: <K extends string, A>(self: ReadonlyRecord<K, A>) => K[]
+export declare const keys: <K extends string | symbol, A>(self: ReadonlyRecord<K, A>) => Array<K & string>
 ```

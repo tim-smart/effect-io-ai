@@ -16,7 +16,5 @@ Schema.clampDuration
 export declare const clampDuration: (
   minimum: duration_.DurationInput,
   maximum: duration_.DurationInput
-) => <A extends duration_.Duration, I, R>(
-  self: Schema<A, I, R>
-) => transform<Schema<A, I, R>, filter<Schema<A, A, never>>>
+) => <A extends duration_.Duration, I, R>(self: Schema<A, I, R>) => transform<Schema<A, I, R>, filter<Schema<A>>>
 ```

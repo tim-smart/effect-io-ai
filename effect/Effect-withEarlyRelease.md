@@ -14,7 +14,5 @@ Effect.withEarlyRelease
 **Signature**
 
 ```ts
-export declare const withEarlyRelease: <A, E, R>(
-  self: Effect<A, E, R>
-) => Effect<[Effect<void, never, never>, A], E, Scope.Scope | R>
+export declare const withEarlyRelease: <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<void>, A], E, R | Scope.Scope>
 ```

@@ -35,28 +35,16 @@ assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {
 
 ```ts
 export declare const attachPropertySignature: {
-  <K extends PropertyKey, V extends symbol | AST.LiteralValue, A>(
+  <K extends PropertyKey, V extends AST.LiteralValue | symbol, A>(
     key: K,
     value: V,
-    annotations?:
-      | Annotations.Schema<
-          { [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] },
-          readonly []
-        >
-      | undefined
-  ): <I, R>(
-    schema: SchemaClass<A, I, R>
-  ) => Schema<{ [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] }, I, R>
-  <A, I, R, K extends PropertyKey, V extends symbol | AST.LiteralValue>(
+    annotations?: Annotations.Schema<Simplify<A & { readonly [k in K]: V }>>
+  ): <I, R>(schema: SchemaClass<A, I, R>) => SchemaClass<Simplify<A & { readonly [k in K]: V }>, I, R>
+  <A, I, R, K extends PropertyKey, V extends AST.LiteralValue | symbol>(
     schema: Schema<A, I, R>,
     key: K,
     value: V,
-    annotations?:
-      | Annotations.Schema<
-          { [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] },
-          readonly []
-        >
-      | undefined
-  ): SchemaClass<{ [K in keyof (A & { readonly [k in K]: V })]: (A & { readonly [k in K]: V })[K] }, I, R>
+    annotations?: Annotations.Schema<Simplify<A & { readonly [k in K]: V }>>
+  ): SchemaClass<Simplify<A & { readonly [k in K]: V }>, I, R>
 }
 ```

@@ -27,7 +27,5 @@ assert.deepStrictEqual(isReadonlyRecord(undefined), false)
 **Signature**
 
 ```ts
-export declare const isReadonlyRecord: (
-  input: unknown
-) => input is { readonly [x: string]: unknown; readonly [x: symbol]: unknown }
+export declare const isReadonlyRecord: (input: unknown) => input is { readonly [x: string | symbol]: unknown }
 ```

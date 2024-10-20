@@ -28,5 +28,5 @@ Micro.tryPromise({
 export declare const tryPromise: <A, E>(options: {
   readonly try: (signal: AbortSignal) => PromiseLike<A>
   readonly catch: (error: unknown) => E
-}) => Micro<A, E, never>
+}) => Micro<A, E>
 ```

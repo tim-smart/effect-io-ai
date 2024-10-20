@@ -1,7 +1,7 @@
 # fork
 
-Forks a new scope that is a child of this scope. The child scope will
-automatically be closed when this scope is closed.
+Forks a new child scope with the specified execution strategy. The child scope
+will automatically be closed when this scope is closed.
 
 To import and use `fork` from the "Scope" module:
 

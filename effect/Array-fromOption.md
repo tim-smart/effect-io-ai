@@ -22,5 +22,5 @@ assert.deepStrictEqual(Array.fromOption(Option.none()), [])
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(self: Option<A>) => A[]
+export declare const fromOption: <A>(self: Option<A>) => Array<A>
 ```

@@ -29,7 +29,7 @@ assert.deepStrictEqual(result, [1, 3])
 
 ```ts
 export declare const flatMapNullable: {
-  <A, B>(f: (a: A) => B | null | undefined): (self: readonly A[]) => NonNullable<B>[]
-  <A, B>(self: readonly A[], f: (a: A) => B | null | undefined): NonNullable<B>[]
+  <A, B>(f: (a: A) => B | null | undefined): (self: ReadonlyArray<A>) => Array<NonNullable<B>>
+  <A, B>(self: ReadonlyArray<A>, f: (a: A) => B | null | undefined): Array<NonNullable<B>>
 }
 ```

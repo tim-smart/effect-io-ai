@@ -26,6 +26,6 @@ export declare const zipWith: {
     that: Micro<A2, E2, R2>,
     f: (a: A, b: A2) => B,
     options?: { readonly concurrent?: boolean | undefined }
-  ): Micro<B, E | E2, R | R2>
+  ): Micro<B, E2 | E, R2 | R>
 }
 ```

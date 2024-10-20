@@ -14,12 +14,7 @@ Layer.succeed
 
 ```ts
 export declare const succeed: {
-  <T extends Context.Tag<any, any>>(
-    tag: T
-  ): (resource: Context.Tag.Service<T>) => Layer<Context.Tag.Identifier<T>, never, never>
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    resource: Context.Tag.Service<T>
-  ): Layer<Context.Tag.Identifier<T>, never, never>
+  <T extends Context.Tag<any, any>>(tag: T): (resource: Context.Tag.Service<T>) => Layer<Context.Tag.Identifier<T>>
+  <T extends Context.Tag<any, any>>(tag: T, resource: Context.Tag.Service<T>): Layer<Context.Tag.Identifier<T>>
 }
 ```

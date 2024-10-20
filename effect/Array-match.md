@@ -29,11 +29,11 @@ assert.deepStrictEqual(match([1, 2, 3]), "head: 1, tail: 2")
 export declare const match: {
   <B, A, C = B>(options: {
     readonly onEmpty: LazyArg<B>
-    readonly onNonEmpty: (self: readonly [A, ...A[]]) => C
-  }): (self: readonly A[]) => B | C
+    readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C
+  }): (self: ReadonlyArray<A>) => B | C
   <A, B, C = B>(
-    self: readonly A[],
-    options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: readonly [A, ...A[]]) => C }
+    self: ReadonlyArray<A>,
+    options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C }
   ): B | C
 }
 ```

@@ -19,13 +19,13 @@ export declare const transform: {
     to: To,
     options:
       | {
-          readonly decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>
-          readonly encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
-          readonly strict?: true | undefined
+          readonly decode: (fromA: Schema.Type<From>, fromI: Schema.Encoded<From>) => Schema.Encoded<To>
+          readonly encode: (toI: Schema.Encoded<To>, toA: Schema.Type<To>) => Schema.Type<From>
+          readonly strict?: true
         }
       | {
-          readonly decode: (fromA: Schema.Type<From>) => unknown
-          readonly encode: (toI: Schema.Encoded<To>) => unknown
+          readonly decode: (fromA: Schema.Type<From>, fromI: Schema.Encoded<From>) => unknown
+          readonly encode: (toI: Schema.Encoded<To>, toA: Schema.Type<To>) => unknown
           readonly strict: false
         }
   ): (from: From) => transform<From, To>
@@ -34,13 +34,13 @@ export declare const transform: {
     to: To,
     options:
       | {
-          readonly decode: (fromA: Schema.Type<From>) => Schema.Encoded<To>
-          readonly encode: (toI: Schema.Encoded<To>) => Schema.Type<From>
-          readonly strict?: true | undefined
+          readonly decode: (fromA: Schema.Type<From>, fromI: Schema.Encoded<From>) => Schema.Encoded<To>
+          readonly encode: (toI: Schema.Encoded<To>, toA: Schema.Type<To>) => Schema.Type<From>
+          readonly strict?: true
         }
       | {
-          readonly decode: (fromA: Schema.Type<From>) => unknown
-          readonly encode: (toI: Schema.Encoded<To>) => unknown
+          readonly decode: (fromA: Schema.Type<From>, fromI: Schema.Encoded<From>) => unknown
+          readonly encode: (toI: Schema.Encoded<To>, toA: Schema.Type<To>) => unknown
           readonly strict: false
         }
   ): transform<From, To>

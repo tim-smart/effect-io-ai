@@ -18,6 +18,10 @@ Stream.asyncEffect
 ```ts
 export declare const asyncEffect: <A, E = never, R = never>(
   register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, R>,
-  outputBuffer?: number
+  bufferSize?:
+    | number
+    | "unbounded"
+    | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined }
+    | undefined
 ) => Stream<A, E, R>
 ```

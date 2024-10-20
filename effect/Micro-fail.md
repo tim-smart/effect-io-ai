@@ -16,5 +16,5 @@ Micro.fail
 **Signature**
 
 ```ts
-export declare const fail: <E>(e: E) => Micro<never, E, never>
+export declare const fail: <E>(e: E) => Micro<never, E>
 ```

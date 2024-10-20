@@ -24,7 +24,7 @@ assert.deepStrictEqual(result, [1, 2, 3, 4])
 
 ```ts
 export declare const prepend: {
-  <B>(head: B): <A>(self: Iterable<A>) => [B | A, ...(B | A)[]]
-  <A, B>(self: Iterable<A>, head: B): [A | B, ...(A | B)[]]
+  <B>(head: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>
+  <A, B>(self: Iterable<A>, head: B): NonEmptyArray<A | B>
 }
 ```

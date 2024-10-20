@@ -30,15 +30,15 @@ export declare const unionWith: {
     isEquivalent: (self: ReadonlyArray.Infer<S>, that: ReadonlyArray.Infer<T>) => boolean
   ): (self: S) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>
   <A, B>(
-    self: readonly [A, ...A[]],
+    self: NonEmptyReadonlyArray<A>,
     that: Iterable<B>,
     isEquivalent: (self: A, that: B) => boolean
-  ): [A | B, ...(A | B)[]]
+  ): NonEmptyArray<A | B>
   <A, B>(
     self: Iterable<A>,
-    that: readonly [B, ...B[]],
+    that: NonEmptyReadonlyArray<B>,
     isEquivalent: (self: A, that: B) => boolean
-  ): [A | B, ...(A | B)[]]
-  <A, B>(self: Iterable<A>, that: Iterable<B>, isEquivalent: (self: A, that: B) => boolean): (A | B)[]
+  ): NonEmptyArray<A | B>
+  <A, B>(self: Iterable<A>, that: Iterable<B>, isEquivalent: (self: A, that: B) => boolean): Array<A | B>
 }
 ```

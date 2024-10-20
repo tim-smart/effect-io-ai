@@ -17,5 +17,5 @@ Exit.all
 export declare const all: <A, E>(
   exits: Iterable<Exit<A, E>>,
   options?: { readonly parallel?: boolean | undefined } | undefined
-) => Option.Option<Exit<A[], E>>
+) => Option.Option<Exit<Array<A>, E>>
 ```

@@ -28,6 +28,6 @@ type Int = Schema.Schema.Type<typeof Int> // number & Brand<"Int">
 ```ts
 export declare const brand: <S extends Schema.AnyNoContext, B extends string | symbol>(
   brand: B,
-  annotations?: Annotations.Schema<Schema.Type<S> & Brand<B>, readonly []> | undefined
+  annotations?: Annotations.Schema<Schema.Type<S> & Brand<B>>
 ) => (self: S) => brand<S, B>
 ```

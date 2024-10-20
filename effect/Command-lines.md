@@ -17,5 +17,5 @@ Command.lines
 export declare const lines: (
   command: Command,
   encoding?: string
-) => Effect<ReadonlyArray<string>, PlatformError, CommandExecutor>
+) => Effect<Array<string>, PlatformError, CommandExecutor>
 ```

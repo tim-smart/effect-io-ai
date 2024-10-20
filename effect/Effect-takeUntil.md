@@ -16,7 +16,10 @@ Effect.takeUntil
 export declare const takeUntil: {
   <A, R, E>(
     predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
-  ): (elements: Iterable<A>) => Effect<A[], E, R>
-  <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<A[], E, R>
+  ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
+  <A, E, R>(
+    elements: Iterable<A>,
+    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
+  ): Effect<Array<A>, E, R>
 }
 ```

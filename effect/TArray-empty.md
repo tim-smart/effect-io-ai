@@ -13,5 +13,5 @@ TArray.empty
 **Signature**
 
 ```ts
-export declare const empty: <A>() => STM.STM<TArray<A>, never, never>
+export declare const empty: <A>() => STM.STM<TArray<A>>
 ```

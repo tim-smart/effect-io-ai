@@ -16,7 +16,7 @@ PodsRpc.podsRpc
 export declare function podsRpc<R>(
   buildClient: (
     podAddress: PodAddress.PodAddress
-  ) => Resolver.Client<
+  ) => RpcResolver.Client<
     RequestResolver.RequestResolver<Rpc.Request<ShardingServiceRpc.ShardingServiceRpcRequest>, never>
   >
 ): Layer.Layer<Pods.Pods, never, R>

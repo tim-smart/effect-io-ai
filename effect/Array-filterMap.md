@@ -27,7 +27,7 @@ assert.deepStrictEqual(result, [4, 16])
 
 ```ts
 export declare const filterMap: {
-  <A, B>(f: (a: A, i: number) => Option<B>): (self: Iterable<A>) => B[]
-  <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option<B>): B[]
+  <A, B>(f: (a: A, i: number) => Option<B>): (self: Iterable<A>) => Array<B>
+  <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option<B>): Array<B>
 }
 ```

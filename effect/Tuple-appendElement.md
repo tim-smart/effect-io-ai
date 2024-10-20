@@ -14,7 +14,7 @@ Tuple.appendElement
 
 ```ts
 export declare const appendElement: {
-  <B>(that: B): <A extends readonly unknown[]>(self: A) => [...A, B]
-  <A extends readonly unknown[], B>(self: A, that: B): [...A, B]
+  <B>(that: B): <A extends ReadonlyArray<unknown>>(self: A) => [...A, B]
+  <A extends ReadonlyArray<unknown>, B>(self: A, that: B): [...A, B]
 }
 ```

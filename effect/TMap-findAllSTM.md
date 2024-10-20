@@ -15,7 +15,9 @@ TMap.findAllSTM
 
 ```ts
 export declare const findAllSTM: {
-  <K, V, A, E, R>(pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>): (self: TMap<K, V>) => STM.STM<A[], E, R>
-  <K, V, A, E, R>(self: TMap<K, V>, pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>): STM.STM<A[], E, R>
+  <K, V, A, E, R>(
+    pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>
+  ): (self: TMap<K, V>) => STM.STM<Array<A>, E, R>
+  <K, V, A, E, R>(self: TMap<K, V>, pf: (key: K, value: V) => STM.STM<A, Option.Option<E>, R>): STM.STM<Array<A>, E, R>
 }
 ```

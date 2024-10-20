@@ -30,12 +30,20 @@ assert.deepStrictEqual(Effect.runSync(effect), 42)
 export declare const zipRight: {
   <A2, E2, R2>(
     that: Effect<A2, E2, R2>,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+    options?: {
+      readonly concurrent?: boolean | undefined
+      readonly batching?: boolean | "inherit" | undefined
+      readonly concurrentFinalizers?: boolean | undefined
+    }
   ): <A, E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R>
   <A, E, R, A2, E2, R2>(
     self: Effect<A, E, R>,
     that: Effect<A2, E2, R2>,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<A2, E | E2, R | R2>
+    options?: {
+      readonly concurrent?: boolean | undefined
+      readonly batching?: boolean | "inherit" | undefined
+      readonly concurrentFinalizers?: boolean | undefined
+    }
+  ): Effect<A2, E2 | E, R2 | R>
 }
 ```

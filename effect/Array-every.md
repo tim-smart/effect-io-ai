@@ -14,9 +14,11 @@ Array.every
 
 ```ts
 export declare const every: {
-  <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: readonly A[]) => self is readonly B[]
-  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: readonly A[]) => boolean
-  <A, B extends A>(self: readonly A[], refinement: (a: A, i: number) => a is B): self is readonly B[]
-  <A>(self: readonly A[], predicate: (a: A, i: number) => boolean): boolean
+  <A, B extends A>(
+    refinement: (a: NoInfer<A>, i: number) => a is B
+  ): (self: ReadonlyArray<A>) => self is ReadonlyArray<B>
+  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: ReadonlyArray<A>) => boolean
+  <A, B extends A>(self: ReadonlyArray<A>, refinement: (a: A, i: number) => a is B): self is ReadonlyArray<B>
+  <A>(self: ReadonlyArray<A>, predicate: (a: A, i: number) => boolean): boolean
 }
 ```

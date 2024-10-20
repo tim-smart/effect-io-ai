@@ -26,7 +26,7 @@ assert.deepStrictEqual(difference, [1])
 
 ```ts
 export declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => {
-  (that: Iterable<A>): (self: Iterable<A>) => A[]
-  (self: Iterable<A>, that: Iterable<A>): A[]
+  (that: Iterable<A>): (self: Iterable<A>) => Array<A>
+  (self: Iterable<A>, that: Iterable<A>): Array<A>
 }
 ```

@@ -19,7 +19,11 @@ export declare const validateWith: {
     that: Effect<B, E1, R1>,
     f: (a: A, b: B) => C,
     options?:
-      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrent?: boolean | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
   ): <E, R>(self: Effect<A, E, R>) => Effect<C, E1 | E, R1 | R>
   <A, E, R, B, E1, R1, C>(
@@ -27,7 +31,11 @@ export declare const validateWith: {
     that: Effect<B, E1, R1>,
     f: (a: A, b: B) => C,
     options?:
-      | { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrent?: boolean | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
   ): Effect<C, E | E1, R | R1>
 }

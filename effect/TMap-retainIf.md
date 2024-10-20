@@ -22,12 +22,12 @@ export declare const retainIf: {
   <K, V>(
     predicate: (key: K, value: V) => boolean,
     options?: { readonly discard: false }
-  ): (self: TMap<K, V>) => STM.STM<[K, V][], never, never>
+  ): (self: TMap<K, V>) => STM.STM<Array<[K, V]>>
   <K, V>(self: TMap<K, V>, predicate: (key: K, value: V) => boolean, options: { readonly discard: true }): STM.STM<void>
   <K, V>(
     self: TMap<K, V>,
     predicate: (key: K, value: V) => boolean,
     options?: { readonly discard: false }
-  ): STM.STM<[K, V][], never, never>
+  ): STM.STM<Array<[K, V]>>
 }
 ```

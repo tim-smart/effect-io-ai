@@ -15,7 +15,12 @@ STM.partition
 
 ```ts
 export declare const partition: {
-  <A, A2, E, R>(f: (a: A) => STM<A2, E, R>): (elements: Iterable<A>) => STM<[excluded: E[], satisfying: A2[]], never, R>
-  <A, A2, E, R>(elements: Iterable<A>, f: (a: A) => STM<A2, E, R>): STM<[excluded: E[], satisfying: A2[]], never, R>
+  <A, A2, E, R>(
+    f: (a: A) => STM<A2, E, R>
+  ): (elements: Iterable<A>) => STM<[excluded: Array<E>, satisfying: Array<A2>], never, R>
+  <A, A2, E, R>(
+    elements: Iterable<A>,
+    f: (a: A) => STM<A2, E, R>
+  ): STM<[excluded: Array<E>, satisfying: Array<A2>], never, R>
 }
 ```

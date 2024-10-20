@@ -37,10 +37,10 @@ assert.deepStrictEqual(result, {
 export declare const groupBy: {
   <A, K extends string | symbol>(
     f: (a: A) => K
-  ): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
+  ): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>
   <A, K extends string | symbol>(
     self: Iterable<A>,
     f: (a: A) => K
-  ): Record<Record.ReadonlyRecord.NonLiteralKey<K>, [A, ...A[]]>
+  ): Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>
 }
 ```

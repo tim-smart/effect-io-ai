@@ -36,7 +36,7 @@ assert.equal(
 **Signature**
 
 ```ts
-export declare const make: <Entries extends (readonly [string, any])[]>(
+export declare const make: <Entries extends Array<readonly [string, any]>>(
   ...entries: Entries
 ) => Trie<Entries[number] extends readonly [any, infer V] ? V : never>
 ```

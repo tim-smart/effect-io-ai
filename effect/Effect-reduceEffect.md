@@ -18,7 +18,11 @@ export declare const reduceEffect: {
     zero: Effect<Z, E, R>,
     f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
   ): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
   <Eff extends Effect<any, any, any>, Z, E, R>(
@@ -26,7 +30,11 @@ export declare const reduceEffect: {
     zero: Effect<Z, E, R>,
     f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
     options?:
-      | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined }
+      | {
+          readonly concurrency?: Concurrency | undefined
+          readonly batching?: boolean | "inherit" | undefined
+          readonly concurrentFinalizers?: boolean | undefined
+        }
       | undefined
   ): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
 }

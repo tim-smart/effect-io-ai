@@ -16,12 +16,7 @@ Stream.toReadableStream
 
 ```ts
 export declare const toReadableStream: {
-  <A>(
-    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
-  ): <E>(self: Stream<A, E, never>) => ReadableStream<A>
-  <A, E>(
-    self: Stream<A, E, never>,
-    options?: { readonly strategy?: QueuingStrategy<A> | undefined } | undefined
-  ): ReadableStream<A>
+  <A>(options?: { readonly strategy?: QueuingStrategy<A> | undefined }): <E>(self: Stream<A, E>) => ReadableStream<A>
+  <A, E>(self: Stream<A, E>, options?: { readonly strategy?: QueuingStrategy<A> | undefined }): ReadableStream<A>
 }
 ```

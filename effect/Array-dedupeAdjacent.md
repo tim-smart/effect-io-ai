@@ -23,5 +23,5 @@ assert.deepStrictEqual(unique, [1, 2, 3])
 **Signature**
 
 ```ts
-export declare const dedupeAdjacent: <A>(self: Iterable<A>) => A[]
+export declare const dedupeAdjacent: <A>(self: Iterable<A>) => Array<A>
 ```

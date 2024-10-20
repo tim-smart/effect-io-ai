@@ -14,5 +14,5 @@ Micro.runSync
 **Signature**
 
 ```ts
-export declare const runSync: <A, E>(effect: Micro<A, E, never>) => A
+export declare const runSync: <A, E>(effect: Micro<A, E>) => A
 ```

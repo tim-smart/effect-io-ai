@@ -1,8 +1,8 @@
 # make
 
-Creates a Scope where Finalizers will run according to the `ExecutionStrategy`.
-
-If an ExecutionStrategy is not provided `sequential` will be used.
+Creates a new closeable scope where finalizers will run according to the
+specified `ExecutionStrategy`. If no execution strategy is provided, `sequential`
+will be used by default.
 
 To import and use `make` from the "Scope" module:
 

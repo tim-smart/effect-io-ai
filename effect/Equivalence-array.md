@@ -13,5 +13,5 @@ Equivalence.array
 **Signature**
 
 ```ts
-export declare const array: <A>(item: Equivalence<A>) => Equivalence<readonly A[]>
+export declare const array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
 ```

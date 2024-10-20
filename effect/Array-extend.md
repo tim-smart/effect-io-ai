@@ -30,7 +30,7 @@ assert.deepStrictEqual(result, [3, 2, 1])
 
 ```ts
 export declare const extend: {
-  <A, B>(f: (as: readonly A[]) => B): (self: readonly A[]) => B[]
-  <A, B>(self: readonly A[], f: (as: readonly A[]) => B): B[]
+  <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>
+  <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>
 }
 ```

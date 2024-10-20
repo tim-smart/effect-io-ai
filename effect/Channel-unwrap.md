@@ -15,5 +15,5 @@ Channel.unwrap
 ```ts
 export declare const unwrap: <OutElem, InElem, OutErr, InErr, OutDone, InDone, R2, E, R>(
   channel: Effect.Effect<Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>, E, R>
-) => Channel<OutElem, InElem, OutErr | E, InErr, OutDone, InDone, R2 | R>
+) => Channel<OutElem, InElem, E | OutErr, InErr, OutDone, InDone, R | R2>
 ```

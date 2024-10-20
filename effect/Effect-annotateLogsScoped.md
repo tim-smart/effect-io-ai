@@ -1,6 +1,9 @@
 # annotateLogsScoped
 
-Annotates each log with the specified log annotation(s), until the Scope is closed.
+Applies log annotations with a limited scope, restricting their appearance to
+specific sections of your effect computations. Use
+`Effect.annotateLogsScoped` to add metadata to logs that only appear within a
+defined `Scope`, making it easier to manage context-specific logging.
 
 To import and use `annotateLogsScoped` from the "Effect" module:
 
@@ -15,11 +18,18 @@ Effect.annotateLogsScoped
 ```ts
 import { Effect } from "effect"
 
-Effect.gen(function* () {
+const program = Effect.gen(function* () {
   yield* Effect.log("no annotations")
-  yield* Effect.annotateLogsScoped({ foo: "bar" })
-  yield* Effect.log("annotated with foo=bar")
+  yield* Effect.annotateLogsScoped({ key: "value" })
+  yield* Effect.log("message1") // Annotation is applied to this log
+  yield* Effect.log("message2") // Annotation is applied to this log
 }).pipe(Effect.scoped, Effect.andThen(Effect.log("no annotations again")))
+
+// Effect.runFork(program)
+// timestamp=... level=INFO fiber=#0 message="no annotations"
+// timestamp=... level=INFO fiber=#0 message=message1 key=value
+// timestamp=... level=INFO fiber=#0 message=message2 key=value
+// timestamp=... level=INFO fiber=#0 message="no annotations again"
 ```
 
 **Signature**

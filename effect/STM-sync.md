@@ -14,5 +14,5 @@ STM.sync
 **Signature**
 
 ```ts
-export declare const sync: <A>(evaluate: () => A) => STM<A, never, never>
+export declare const sync: <A>(evaluate: () => A) => STM<A>
 ```

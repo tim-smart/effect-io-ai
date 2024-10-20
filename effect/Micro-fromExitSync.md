@@ -13,5 +13,5 @@ Micro.fromExitSync
 **Signature**
 
 ```ts
-export declare const fromExitSync: <A, E>(self: LazyArg<MicroExit<A, E>>) => Micro<A, E, never>
+export declare const fromExitSync: <A, E>(self: LazyArg<MicroExit<A, E>>) => Micro<A, E>
 ```

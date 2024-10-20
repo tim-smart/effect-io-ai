@@ -16,13 +16,15 @@ FiberSet.run
 ```ts
 export declare const run: {
   <A, E>(
-    self: FiberSet<A, E>
+    self: FiberSet<A, E>,
+    options?: { readonly propagateInterruption?: boolean | undefined } | undefined
   ): <R, XE extends E, XA extends A>(
     effect: Effect.Effect<XA, XE, R>
   ) => Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
   <A, E, R, XE extends E, XA extends A>(
     self: FiberSet<A, E>,
-    effect: Effect.Effect<XA, XE, R>
+    effect: Effect.Effect<XA, XE, R>,
+    options?: { readonly propagateInterruption?: boolean | undefined } | undefined
   ): Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
 }
 ```

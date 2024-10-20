@@ -13,5 +13,5 @@ ScopedRef.get
 **Signature**
 
 ```ts
-export declare const get: <A>(self: ScopedRef<A>) => Effect.Effect<A, never, never>
+export declare const get: <A>(self: ScopedRef<A>) => Effect.Effect<A>
 ```

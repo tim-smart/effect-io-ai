@@ -13,5 +13,5 @@ Sink.collectAllToSetN
 **Signature**
 
 ```ts
-export declare const collectAllToSetN: <In>(n: number) => Sink<HashSet.HashSet<In>, In, In, never, never>
+export declare const collectAllToSetN: <In>(n: number) => Sink<HashSet.HashSet<In>, In, In>
 ```

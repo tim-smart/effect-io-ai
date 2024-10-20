@@ -14,7 +14,7 @@ TraversableFilterable.traverseFilterMap
 
 ```ts
 export declare const traverseFilterMap: <T extends TypeLambda>(
-  T: Traversable<T> & filterable.Filterable<T>
+  T: Traversable<T> & Filterable<T>
 ) => <F extends TypeLambda>(
   F: Applicative<F>
 ) => <TR, TO, TE, A, R, O, E, B>(

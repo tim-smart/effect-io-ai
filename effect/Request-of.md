@@ -13,5 +13,5 @@ Request.of
 **Signature**
 
 ```ts
-export declare const of: <R extends Request<any, any>>() => Request.Constructor<R, never>
+export declare const of: <R extends Request<any, any>>() => Request.Constructor<R>
 ```

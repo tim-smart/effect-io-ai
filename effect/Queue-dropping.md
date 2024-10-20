@@ -20,5 +20,5 @@ Queue.dropping
 **Signature**
 
 ```ts
-export declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>, never, never>
+export declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
 ```

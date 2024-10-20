@@ -1,8 +1,8 @@
 # extend
 
-Extends the scope of an `Effect` workflow that needs a scope into this
-scope by providing it to the workflow but not closing the scope when the
-workflow completes execution. This allows extending a scoped value into a
+Extends the scope of an `Effect` that requires a scope into this scope.
+It provides this scope to the effect but does not close the scope when the
+effect completes execution. This allows extending a scoped value into a
 larger scope.
 
 To import and use `extend` from the "Scope" module:

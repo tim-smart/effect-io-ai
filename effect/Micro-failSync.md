@@ -16,5 +16,5 @@ Micro.failSync
 **Signature**
 
 ```ts
-export declare const failSync: <E>(e: LazyArg<E>) => Micro<never, E, never>
+export declare const failSync: <E>(e: LazyArg<E>) => Micro<never, E>
 ```

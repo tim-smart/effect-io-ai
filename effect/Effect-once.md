@@ -34,5 +34,5 @@ Effect.runFork(program)
 **Signature**
 
 ```ts
-export declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>, never, never>
+export declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>>
 ```

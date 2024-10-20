@@ -15,5 +15,5 @@ Effect.contextWithEffect
 ```ts
 export declare const contextWithEffect: <R0, A, E, R>(
   f: (context: Context.Context<R0>) => Effect<A, E, R>
-) => Effect<A, E, R0 | R>
+) => Effect<A, E, R | R0>
 ```

@@ -13,5 +13,5 @@ Message.exitSchema
 **Signature**
 
 ```ts
-export declare const exitSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Exit<A>, unknown, never>
+export declare const exitSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Exit<A>, unknown>
 ```

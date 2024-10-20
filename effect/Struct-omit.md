@@ -23,9 +23,9 @@ assert.deepStrictEqual(Struct.omit({ a: "a", b: 1, c: true }, "c"), { a: "a", b:
 
 ```ts
 export declare const omit: {
-  <Keys extends PropertyKey[]>(
+  <Keys extends Array<PropertyKey>>(
     ...keys: Keys
   ): <S extends { [K in Keys[number]]?: any }>(s: S) => Simplify<Omit<S, Keys[number]>>
-  <S extends object, Keys extends (keyof S)[]>(s: S, ...keys: Keys): Simplify<Omit<S, Keys[number]>>
+  <S extends object, Keys extends Array<keyof S>>(s: S, ...keys: Keys): Simplify<Omit<S, Keys[number]>>
 }
 ```

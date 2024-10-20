@@ -17,5 +17,5 @@ TQueue.bounded
 **Signature**
 
 ```ts
-export declare const bounded: <A>(requestedCapacity: number) => STM.STM<TQueue<A>, never, never>
+export declare const bounded: <A>(requestedCapacity: number) => STM.STM<TQueue<A>>
 ```

@@ -42,7 +42,9 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const sortBy: <S extends readonly [any, ...any[]] | Iterable<any>>(
-  ...orders: readonly Order.Order<ReadonlyArray.Infer<S>>[]
-) => (self: S) => S extends readonly [infer A, ...(infer A)[]] ? [A, ...A[]] : S extends Iterable<infer A> ? A[] : never
+export declare const sortBy: <S extends Iterable<any> | NonEmptyReadonlyArray<any>>(
+  ...orders: ReadonlyArray<Order.Order<ReadonlyArray.Infer<S>>>
+) => (
+  self: S
+) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```

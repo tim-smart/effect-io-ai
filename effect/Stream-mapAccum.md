@@ -10,6 +10,21 @@ import * as Stream from "effect/Stream"
 Stream.mapAccum
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const runningTotal = (stream: Stream.Stream<number>): Stream.Stream<number> =>
+  stream.pipe(Stream.mapAccum(0, (s, a) => [s + a, s + a]))
+
+// input:  0, 1, 2, 3, 4, 5, 6
+// Effect.runPromise(Stream.runCollect(runningTotal(Stream.range(0, 6)))).then(
+//   console.log
+// )
+// { _id: "Chunk", values: [ 0, 1, 3, 6, 10, 15, 21 ] }
+```
+
 **Signature**
 
 ```ts

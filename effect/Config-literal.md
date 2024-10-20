@@ -21,7 +21,7 @@ const config = Config.literal("http", "https")("PROTOCOL")
 **Signature**
 
 ```ts
-export declare const literal: <Literals extends readonly LiteralValue[]>(
+export declare const literal: <Literals extends ReadonlyArray<LiteralValue>>(
   ...literals: Literals
 ) => (name?: string) => Config<Literals[number]>
 ```

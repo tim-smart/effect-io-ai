@@ -10,6 +10,30 @@ import * as Stream from "effect/Stream"
 Stream.intersperseAffixes
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3, 4, 5).pipe(
+  Stream.intersperseAffixes({
+    start: "[",
+    middle: "-",
+    end: "]"
+  })
+)
+
+// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// {
+//   _id: 'Chunk',
+//   values: [
+//     '[', 1,   '-', 2,   '-',
+//     3,   '-', 4,   '-', 5,
+//     ']'
+//   ]
+// }
+```
+
 **Signature**
 
 ```ts

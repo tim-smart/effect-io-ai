@@ -13,5 +13,5 @@ MutableList.make
 **Signature**
 
 ```ts
-export declare const make: <A>(...elements: readonly A[]) => MutableList<A>
+export declare const make: <A>(...elements: ReadonlyArray<A>) => MutableList<A>
 ```

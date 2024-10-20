@@ -13,7 +13,5 @@ Channel.writeAll
 **Signature**
 
 ```ts
-export declare const writeAll: <OutElems extends any[]>(
-  ...outs: OutElems
-) => Channel<OutElems[number], unknown, never, unknown, void, unknown, never>
+export declare const writeAll: <OutElems extends Array<any>>(...outs: OutElems) => Channel<OutElems[number]>
 ```

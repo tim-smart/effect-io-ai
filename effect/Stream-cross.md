@@ -1,8 +1,8 @@
 # cross
 
 Composes this stream with the specified stream to create a cartesian
-product of elements. The `that` stream would be run multiple times, for
-every element in the `this` stream.
+product of elements. The `right` stream would be run multiple times, for
+every element in the `left` stream.
 
 See also `Stream.zip` for the more common point-wise variant.
 
@@ -14,11 +14,30 @@ import * as Stream from "effect/Stream"
 Stream.cross
 ```
 
+**Example**
+
+```ts
+import { Effect, Stream } from "effect"
+
+const s1 = Stream.make(1, 2, 3)
+const s2 = Stream.make("a", "b")
+
+const product = Stream.cross(s1, s2)
+
+// Effect.runPromise(Stream.runCollect(product)).then(console.log)
+// {
+//   _id: "Chunk",
+//   values: [
+//     [ 1, "a" ], [ 1, "b" ], [ 2, "a" ], [ 2, "b" ], [ 3, "a" ], [ 3, "b" ]
+//   ]
+// }
+```
+
 **Signature**
 
 ```ts
 export declare const cross: {
-  <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<[A, A2], E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<[A, A2], E | E2, R | R2>
+  <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<[AL, AR], EL | ER, RL | RR>
+  <AL, ER, RR, AR, EL, RL>(left: Stream<AL, ER, RR>, right: Stream<AR, EL, RL>): Stream<[AL, AR], EL | ER, RL | RR>
 }
 ```

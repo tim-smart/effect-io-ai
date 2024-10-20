@@ -23,14 +23,14 @@ assert.deepStrictEqual(Struct.pick({ a: "a", b: 1, c: true }, "a", "b"), { a: "a
 
 ```ts
 export declare const pick: {
-  <Keys extends PropertyKey[]>(
+  <Keys extends Array<PropertyKey>>(
     ...keys: Keys
   ): <S extends { [K in Keys[number]]?: any }>(
     s: S
-  ) => MatchRecord<S, { [K in Keys[number]]?: S[K] | undefined }, Simplify<Pick<S, Keys[number]>>>
-  <S extends object, Keys extends (keyof S)[]>(
+  ) => MatchRecord<S, { [K in Keys[number]]?: S[K] }, Simplify<Pick<S, Keys[number]>>>
+  <S extends object, Keys extends Array<keyof S>>(
     s: S,
     ...keys: Keys
-  ): MatchRecord<S, { [K in Keys[number]]?: S[K] | undefined }, Simplify<Pick<S, Keys[number]>>>
+  ): MatchRecord<S, { [K in Keys[number]]?: S[K] }, Simplify<Pick<S, Keys[number]>>>
 }
 ```

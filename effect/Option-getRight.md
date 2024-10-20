@@ -2,8 +2,6 @@
 
 Converts a `Either` to an `Option` discarding the error.
 
-Alias of {@link fromEither}.
-
 To import and use `getRight` from the "Option" module:
 
 ```ts

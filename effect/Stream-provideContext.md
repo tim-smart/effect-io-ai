@@ -15,7 +15,7 @@ Stream.provideContext
 
 ```ts
 export declare const provideContext: {
-  <R>(context: Context.Context<R>): <A, E>(self: Stream<A, E, R>) => Stream<A, E, never>
-  <A, E, R>(self: Stream<A, E, R>, context: Context.Context<R>): Stream<A, E, never>
+  <R>(context: Context.Context<R>): <A, E>(self: Stream<A, E, R>) => Stream<A, E>
+  <A, E, R>(self: Stream<A, E, R>, context: Context.Context<R>): Stream<A, E>
 }
 ```

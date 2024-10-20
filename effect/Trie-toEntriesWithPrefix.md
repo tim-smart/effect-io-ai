@@ -34,7 +34,7 @@ assert.deepStrictEqual(result, [
 
 ```ts
 export declare const toEntriesWithPrefix: {
-  (prefix: string): <V>(self: Trie<V>) => [string, V][]
-  <V>(self: Trie<V>, prefix: string): [string, V][]
+  (prefix: string): <V>(self: Trie<V>) => Array<[string, V]>
+  <V>(self: Trie<V>, prefix: string): Array<[string, V]>
 }
 ```

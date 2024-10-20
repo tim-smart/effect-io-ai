@@ -13,5 +13,5 @@ Array.head
 **Signature**
 
 ```ts
-export declare const head: <A>(self: readonly A[]) => Option<A>
+export declare const head: <A>(self: ReadonlyArray<A>) => Option<A>
 ```

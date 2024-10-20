@@ -22,9 +22,10 @@ export declare const all: <
     readonly batching?: boolean | "inherit" | undefined
     readonly discard?: boolean | undefined
     readonly mode?: "default" | "validate" | "either" | undefined
+    readonly concurrentFinalizers?: boolean | undefined
   }
 >(
   arg: Arg,
-  options?: O | undefined
+  options?: O
 ) => All.Return<Arg, O>
 ```

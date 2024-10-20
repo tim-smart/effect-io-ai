@@ -14,10 +14,10 @@ Array.flatMap
 
 ```ts
 export declare const flatMap: {
-  <S extends readonly any[], T extends readonly any[]>(
+  <S extends ReadonlyArray<any>, T extends ReadonlyArray<any>>(
     f: (a: ReadonlyArray.Infer<S>, i: number) => T
   ): (self: S) => ReadonlyArray.AndNonEmpty<S, T, ReadonlyArray.Infer<T>>
-  <A, B>(self: readonly [A, ...A[]], f: (a: A, i: number) => readonly [B, ...B[]]): [B, ...B[]]
-  <A, B>(self: readonly A[], f: (a: A, i: number) => readonly B[]): B[]
+  <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A, i: number) => NonEmptyReadonlyArray<B>): NonEmptyArray<B>
+  <A, B>(self: ReadonlyArray<A>, f: (a: A, i: number) => ReadonlyArray<B>): Array<B>
 }
 ```

@@ -13,5 +13,5 @@ Chunk.unsafeFromArray
 **Signature**
 
 ```ts
-export declare const unsafeFromArray: <A>(self: readonly A[]) => Chunk<A>
+export declare const unsafeFromArray: <A>(self: ReadonlyArray<A>) => Chunk<A>
 ```

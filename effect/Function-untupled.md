@@ -23,5 +23,5 @@ assert.deepStrictEqual(getFirst(1, 2), 1)
 **Signature**
 
 ```ts
-export declare const untupled: <A extends readonly unknown[], B>(f: (a: A) => B) => (...a: A) => B
+export declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
 ```

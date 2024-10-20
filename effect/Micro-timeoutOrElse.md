@@ -20,7 +20,7 @@ export declare const timeoutOrElse: {
   <A2, E2, R2>(options: {
     readonly duration: number
     readonly onTimeout: LazyArg<Micro<A2, E2, R2>>
-  }): <A, E, R>(self: Micro<A, E, R>) => Micro<A2 | A, E2 | E, R2 | R>
+  }): <A, E, R>(self: Micro<A, E, R>) => Micro<A | A2, E | E2, R | R2>
   <A, E, R, A2, E2, R2>(
     self: Micro<A, E, R>,
     options: { readonly duration: number; readonly onTimeout: LazyArg<Micro<A2, E2, R2>> }

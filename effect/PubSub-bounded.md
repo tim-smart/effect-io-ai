@@ -17,5 +17,7 @@ PubSub.bounded
 **Signature**
 
 ```ts
-export declare const bounded: <A>(requestedCapacity: number) => Effect.Effect<PubSub<A>, never, never>
+export declare const bounded: <A>(
+  capacity: number | { readonly capacity: number; readonly replay?: number | undefined }
+) => Effect.Effect<PubSub<A>>
 ```

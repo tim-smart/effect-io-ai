@@ -17,10 +17,8 @@ Layer.span
 ```ts
 export declare const span: (
   name: string,
-  options?:
-    | (Tracer.SpanOptions & {
-        readonly onEnd?: ((span: Tracer.Span, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>) | undefined
-      })
-    | undefined
+  options?: Tracer.SpanOptions & {
+    readonly onEnd?: ((span: Tracer.Span, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>) | undefined
+  }
 ) => Layer<Tracer.ParentSpan>
 ```

@@ -16,6 +16,6 @@ Chunk.replace
 ```ts
 export declare const replace: {
   <B>(i: number, b: B): <A>(self: Chunk<A>) => Chunk<B | A>
-  <A, B>(self: Chunk<A>, i: number, b: B): Chunk<A | B>
+  <A, B>(self: Chunk<A>, i: number, b: B): Chunk<B | A>
 }
 ```

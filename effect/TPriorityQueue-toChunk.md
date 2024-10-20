@@ -13,5 +13,5 @@ TPriorityQueue.toChunk
 **Signature**
 
 ```ts
-export declare const toChunk: <A>(self: TPriorityQueue<A>) => STM.STM<Chunk.Chunk<A>, never, never>
+export declare const toChunk: <A>(self: TPriorityQueue<A>) => STM.STM<Chunk.Chunk<A>>
 ```

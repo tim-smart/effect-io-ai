@@ -23,5 +23,5 @@ assert.deepStrictEqual(sumTupled([1, 2]), 3)
 **Signature**
 
 ```ts
-export declare const tupled: <A extends readonly unknown[], B>(f: (...a: A) => B) => (a: A) => B
+export declare const tupled: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (a: A) => B
 ```

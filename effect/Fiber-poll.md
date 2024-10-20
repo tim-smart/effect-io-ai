@@ -14,5 +14,5 @@ Fiber.poll
 **Signature**
 
 ```ts
-export declare const poll: <A, E>(self: Fiber<A, E>) => Effect.Effect<Option.Option<Exit.Exit<A, E>>, never, never>
+export declare const poll: <A, E>(self: Fiber<A, E>) => Effect.Effect<Option.Option<Exit.Exit<A, E>>>
 ```

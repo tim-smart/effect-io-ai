@@ -37,13 +37,21 @@ export declare const zipWith: {
   <A2, E2, R2, A, B>(
     that: Effect<A2, E2, R2>,
     f: (a: A, b: A2) => B,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
+    options?: {
+      readonly concurrent?: boolean | undefined
+      readonly batching?: boolean | "inherit" | undefined
+      readonly concurrentFinalizers?: boolean | undefined
+    }
   ): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>
   <A, E, R, A2, E2, R2, B>(
     self: Effect<A, E, R>,
     that: Effect<A2, E2, R2>,
     f: (a: A, b: A2) => B,
-    options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined }
-  ): Effect<B, E | E2, R | R2>
+    options?: {
+      readonly concurrent?: boolean | undefined
+      readonly batching?: boolean | "inherit" | undefined
+      readonly concurrentFinalizers?: boolean | undefined
+    }
+  ): Effect<B, E2 | E, R2 | R>
 }
 ```

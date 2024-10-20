@@ -23,5 +23,5 @@ assert.deepStrictEqual(Array.getRights([Either.right(1), Either.left("err"), Eit
 ```ts
 export declare const getRights: <T extends Iterable<array_<any, any>>>(
   self: T
-) => array_.Right<ReadonlyArray.Infer<T>>[]
+) => Array<array_.Right<ReadonlyArray.Infer<T>>>
 ```

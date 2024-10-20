@@ -25,5 +25,8 @@ assert.deepStrictEqual(result, [3, 4, 5])
 **Signature**
 
 ```ts
-export declare const takeRight: { (n: number): <A>(self: Iterable<A>) => A[]; <A>(self: Iterable<A>, n: number): A[] }
+export declare const takeRight: {
+  (n: number): <A>(self: Iterable<A>) => Array<A>
+  <A>(self: Iterable<A>, n: number): Array<A>
+}
 ```

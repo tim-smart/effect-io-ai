@@ -13,5 +13,5 @@ Take.of
 **Signature**
 
 ```ts
-export declare const of: <A>(value: A) => Take<A, never>
+export declare const of: <A>(value: A) => Take<A>
 ```

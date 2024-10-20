@@ -1,10 +1,19 @@
 # extend
 
-Extends a schema by adding additional fields or index signatures.
+Extends a schema with another schema.
 
-1. It only supports **structs**, refinements of structs, unions of structs, suspensions of structs
-   (informally `Supported = Struct | Refinement of Supported | Union of Supported | suspend(() => Supported)`)
-2. The arguments must represent disjoint types (e.g., `extend(Struct({ a: String }), Struct({ a: String })))` raises an error)
+Not all extensions are supported, and their support depends on the nature of the involved schemas.
+
+Possible extensions include:
+
+- `Schema.String` with another `Schema.String` refinement or a string literal
+- `Schema.Number` with another `Schema.Number` refinement or a number literal
+- `Schema.Boolean` with another `Schema.Boolean` refinement or a boolean literal
+- A struct with another struct where overlapping fields support extension
+- A struct with in index signature
+- A struct with a union of supported schemas
+- A refinement of a struct with a supported schema
+- A suspend of a struct with a supported schema
 
 To import and use `extend` from the "Schema" module:
 
@@ -24,16 +33,20 @@ const schema = Schema.Struct({
   b: Schema.String
 })
 
-// const extended: S.Schema<{
-//     readonly [x: string]: string;
-//     readonly a: string;
-//     readonly b: string;
-//     readonly c: string;
-// }>
+// const extended: Schema.Schema<
+//   {
+//     readonly a: string
+//     readonly b: string
+//   } & {
+//     readonly c: string
+//   } & {
+//     readonly [x: string]: string
+//   }
+// >
 const extended = Schema.asSchema(
   schema.pipe(
     Schema.extend(Schema.Struct({ c: Schema.String })), // <= you can add more fields
-    Schema.extend(Schema.Record(Schema.String, Schema.String)) // <= you can add index signatures
+    Schema.extend(Schema.Record({ key: Schema.String, value: Schema.String })) // <= you can add index signatures
   )
 )
 ```

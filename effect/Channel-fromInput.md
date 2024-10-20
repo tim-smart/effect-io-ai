@@ -15,5 +15,5 @@ Channel.fromInput
 ```ts
 export declare const fromInput: <Err, Elem, Done>(
   input: SingleProducerAsyncInput.AsyncInputConsumer<Err, Elem, Done>
-) => Channel<Elem, unknown, Err, unknown, Done, unknown, never>
+) => Channel<Elem, unknown, Err, unknown, Done, unknown>
 ```

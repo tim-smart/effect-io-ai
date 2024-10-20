@@ -31,5 +31,5 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const isRecord: (input: unknown) => input is { [x: string]: unknown; [x: symbol]: unknown }
+export declare const isRecord: (input: unknown) => input is { [x: string | symbol]: unknown }
 ```

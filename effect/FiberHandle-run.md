@@ -17,14 +17,14 @@ FiberHandle.run
 export declare const run: {
   <A, E>(
     self: FiberHandle<A, E>,
-    options?: { readonly onlyIfMissing?: boolean }
+    options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined }
   ): <R, XE extends E, XA extends A>(
     effect: Effect.Effect<XA, XE, R>
   ) => Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
   <A, E, R, XE extends E, XA extends A>(
     self: FiberHandle<A, E>,
     effect: Effect.Effect<XA, XE, R>,
-    options?: { readonly onlyIfMissing?: boolean }
+    options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined }
   ): Effect.Effect<Fiber.RuntimeFiber<XA, XE>, never, R>
 }
 ```

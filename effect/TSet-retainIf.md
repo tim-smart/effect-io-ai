@@ -16,8 +16,8 @@ TSet.retainIf
 ```ts
 export declare const retainIf: {
   <A>(predicate: Predicate<A>, options: { readonly discard: true }): (self: TSet<A>) => STM.STM<void>
-  <A>(predicate: Predicate<A>, options?: { readonly discard: false }): (self: TSet<A>) => STM.STM<A[], never, never>
+  <A>(predicate: Predicate<A>, options?: { readonly discard: false }): (self: TSet<A>) => STM.STM<Array<A>>
   <A>(self: TSet<A>, predicate: Predicate<A>, options: { readonly discard: true }): STM.STM<void>
-  <A>(self: TSet<A>, predicate: Predicate<A>, options?: { readonly discard: false }): STM.STM<A[], never, never>
+  <A>(self: TSet<A>, predicate: Predicate<A>, options?: { readonly discard: false }): STM.STM<Array<A>>
 }
 ```

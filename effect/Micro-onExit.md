@@ -17,7 +17,7 @@ Micro.onExit
 export declare const onExit: {
   <A, E, XE, XR>(
     f: (exit: MicroExit<A, E>) => Micro<void, XE, XR>
-  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, XR | R>
+  ): <R>(self: Micro<A, E, R>) => Micro<A, E | XE, R | XR>
   <A, E, R, XE, XR>(self: Micro<A, E, R>, f: (exit: MicroExit<A, E>) => Micro<void, XE, XR>): Micro<A, E | XE, R | XR>
 }
 ```

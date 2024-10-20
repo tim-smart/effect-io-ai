@@ -15,7 +15,7 @@ RedBlackTree.make
 ```ts
 export declare const make: <K>(
   ord: Order<K>
-) => <Entries extends (readonly [K, any])[]>(
+) => <Entries extends Array<readonly [K, any]>>(
   ...entries: Entries
 ) => RedBlackTree<K, Entries[number] extends readonly [any, infer V] ? V : never>
 ```

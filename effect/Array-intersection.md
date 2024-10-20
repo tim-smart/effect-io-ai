@@ -26,7 +26,7 @@ assert.deepStrictEqual(result, [1, 3])
 
 ```ts
 export declare const intersection: {
-  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => (A & B)[]
-  <A, B>(self: Iterable<A>, that: Iterable<B>): (A & B)[]
+  <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Array<A & B>
+  <A, B>(self: Iterable<A>, that: Iterable<B>): Array<A & B>
 }
 ```

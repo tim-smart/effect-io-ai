@@ -14,5 +14,5 @@ Schedule.recurUntilOption
 **Signature**
 
 ```ts
-export declare const recurUntilOption: <A, B>(pf: (a: A) => Option.Option<B>) => Schedule<Option.Option<B>, A, never>
+export declare const recurUntilOption: <A, B>(pf: (a: A) => Option.Option<B>) => Schedule<Option.Option<B>, A>
 ```

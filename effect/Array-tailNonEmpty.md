@@ -22,5 +22,5 @@ assert.deepStrictEqual(result, [2, 3, 4])
 **Signature**
 
 ```ts
-export declare const tailNonEmpty: <A>(self: readonly [A, ...A[]]) => A[]
+export declare const tailNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```

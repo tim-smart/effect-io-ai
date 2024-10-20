@@ -18,8 +18,8 @@ export declare const appendAll: {
   <S extends Iterable<any>, T extends Iterable<any>>(
     that: T
   ): (self: S) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>
-  <A, B>(self: Iterable<A>, that: readonly [B, ...B[]]): [A | B, ...(A | B)[]]
-  <A, B>(self: readonly [A, ...A[]], that: Iterable<B>): [A | B, ...(A | B)[]]
-  <A, B>(self: Iterable<A>, that: Iterable<B>): (A | B)[]
+  <A, B>(self: Iterable<A>, that: NonEmptyReadonlyArray<B>): NonEmptyArray<A | B>
+  <A, B>(self: NonEmptyReadonlyArray<A>, that: Iterable<B>): NonEmptyArray<A | B>
+  <A, B>(self: Iterable<A>, that: Iterable<B>): Array<A | B>
 }
 ```

@@ -13,5 +13,5 @@ TRandom.shuffle
 **Signature**
 
 ```ts
-export declare const shuffle: <A>(elements: Iterable<A>) => STM.STM<A[], never, TRandom>
+export declare const shuffle: <A>(elements: Iterable<A>) => STM.STM<Array<A>, never, TRandom>
 ```

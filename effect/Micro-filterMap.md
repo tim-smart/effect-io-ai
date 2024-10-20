@@ -19,5 +19,5 @@ export declare const filterMap: <A, B, E, R>(
   iterable: Iterable<A>,
   f: (a: NoInfer<A>) => Micro<Option.Option<B>, E, R>,
   options?: { readonly concurrency?: Concurrency | undefined }
-) => Micro<B[], E, R>
+) => Micro<Array<B>, E, R>
 ```

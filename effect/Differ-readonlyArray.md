@@ -15,5 +15,5 @@ Differ.readonlyArray
 ```ts
 export declare const readonlyArray: <Value, Patch>(
   differ: Differ<Value, Patch>
-) => Differ<readonly Value[], Differ.ReadonlyArray.Patch<Value, Patch>>
+) => Differ<ReadonlyArray<Value>, Differ.ReadonlyArray.Patch<Value, Patch>>
 ```

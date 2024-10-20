@@ -16,5 +16,5 @@ Array.getOrder
 **Signature**
 
 ```ts
-export declare const getOrder: <A>(O: Order.Order<A>) => Order.Order<readonly A[]>
+export declare const getOrder: <A>(O: Order.Order<A>) => Order.Order<ReadonlyArray<A>>
 ```
