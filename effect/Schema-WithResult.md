@@ -5,10 +5,10 @@ operation, distinguishing between success and failure cases. Each case is
 associated with a schema that defines the structure and types of the success
 or failure data.
 
-To import and use `WithResult` from the "Serializable" module:
+To import and use `WithResult` from the "Schema" module:
 
 ```ts
-import * as Serializable from "@effect/schema/Serializable"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
-Serializable.WithResult
+Schema.WithResult
 ```

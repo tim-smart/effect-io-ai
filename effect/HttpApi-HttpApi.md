@@ -1,7 +1,9 @@
 # HttpApi
 
-An `HttpApi` represents a collection of `HttpApiGroup`s. You can use an `HttpApi` to
-represent your entire domain.
+An `HttpApi` is a collection of `HttpApiEndpoint`s. You can use an `HttpApi` to
+represent a portion of your domain.
+
+The endpoints can be implemented later using the `HttpApiBuilder.make` api.
 
 To import and use `HttpApi` from the "HttpApi" module:
 

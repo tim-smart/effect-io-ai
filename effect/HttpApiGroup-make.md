@@ -16,5 +16,8 @@ HttpApiGroup.make
 **Signature**
 
 ```ts
-export declare const make: <Name extends string>(identifier: Name) => HttpApiGroup<Name>
+export declare const make: <const Id extends string, const TopLevel extends true | false = false>(
+  identifier: Id,
+  options?: { readonly topLevel?: TopLevel | undefined }
+) => HttpApiGroup<Id, never, never, never, TopLevel>
 ```

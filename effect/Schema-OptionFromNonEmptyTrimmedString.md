@@ -7,7 +7,7 @@ whitespace-only strings by trimming them and checking their length. Returns
 To import and use `OptionFromNonEmptyTrimmedString` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.OptionFromNonEmptyTrimmedString
 ```
@@ -15,7 +15,7 @@ Schema.OptionFromNonEmptyTrimmedString
 **Example**
 
 ```ts
-import { Schema } from "@effect/schema"
+import { Schema } from "effect"
 
 console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)("")) // Option.none()
 console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(" a ")) // Option.some("a")

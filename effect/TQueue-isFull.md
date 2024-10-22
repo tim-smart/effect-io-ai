@@ -14,5 +14,5 @@ TQueue.isFull
 **Signature**
 
 ```ts
-export declare const isFull: <A>(self: TQueue<A>) => STM.STM<boolean>
+export declare const isFull: <A>(self: TDequeue<A> | TEnqueue<A>) => STM.STM<boolean>
 ```

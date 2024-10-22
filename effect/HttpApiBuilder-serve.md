@@ -17,17 +17,14 @@ HttpApiBuilder.serve
 **Signature**
 
 ```ts
-export declare const serve: {
-  (): Layer.Layer<never, never, HttpServer.HttpServer | HttpApi.HttpApi.Service | HttpRouter.HttpRouter.DefaultServices>
-  <R>(
-    middleware: (httpApp: HttpApp.Default) => HttpApp.Default<never, R>
-  ): Layer.Layer<
-    never,
-    never,
-    | HttpServer.HttpServer
-    | HttpRouter.HttpRouter.DefaultServices
-    | Exclude<R, Scope | HttpServerRequest.HttpServerRequest>
-    | HttpApi.HttpApi.Service
-  >
-}
+export declare const serve: <R = never>(
+  middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, R>
+) => Layer.Layer<
+  never,
+  never,
+  | HttpServer.HttpServer
+  | HttpRouter.HttpRouter.DefaultServices
+  | Exclude<R, Scope | HttpServerRequest.HttpServerRequest>
+  | HttpApi.Api
+>
 ```

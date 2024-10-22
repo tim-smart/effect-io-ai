@@ -5,7 +5,7 @@ A schema that transforms any type `A` into a `Redacted<A>`.
 To import and use `Redacted` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.Redacted
 ```

@@ -6,7 +6,7 @@ the refinements up to the first transformation point in the original schema.
 To import and use `encodedBoundSchema` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.encodedBoundSchema
 ```

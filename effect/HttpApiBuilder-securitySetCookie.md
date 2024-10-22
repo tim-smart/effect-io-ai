@@ -5,7 +5,7 @@ Set a cookie from an `HttpApiSecurity.HttpApiKey` instance.
 You can use this api before returning a response from an endpoint handler.
 
 ```ts
-ApiBuilder.handle("authenticate", (_) => ApiBuilder.securitySetCookie(security, "secret123"))
+handlers.handle("authenticate", (_) => HttpApiBuilder.securitySetCookie(security, "secret123"))
 ```
 
 To import and use `securitySetCookie` from the "HttpApiBuilder" module:

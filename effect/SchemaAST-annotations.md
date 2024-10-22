@@ -3,12 +3,12 @@
 Merges a set of new annotations with existing ones, potentially overwriting
 any duplicates.
 
-To import and use `annotations` from the "AST" module:
+To import and use `annotations` from the "SchemaAST" module:
 
 ```ts
-import * as AST from "@effect/schema/AST"
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
-AST.annotations
+SchemaAST.annotations
 ```
 
 **Signature**

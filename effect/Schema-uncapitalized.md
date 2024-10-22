@@ -5,7 +5,7 @@ Verifies that a string is uncapitalized.
 To import and use `uncapitalized` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.uncapitalized
 ```

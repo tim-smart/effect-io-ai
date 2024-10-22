@@ -8,7 +8,7 @@ processes.
 To import and use `typeSchema` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.typeSchema
 ```

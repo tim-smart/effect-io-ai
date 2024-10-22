@@ -1,11 +1,6 @@
 # api
 
-Build a root level `Layer` from an `HttpApi` instance.
-
-The `Layer` will provide the `HttpApi` service, and will require the
-implementation for all the `HttpApiGroup`'s contained in the `HttpApi`.
-
-The resulting `Layer` can be provided to the `HttpApiBuilder.serve` layer.
+Create a top-level `HttpApi` layer.
 
 To import and use `api` from the "HttpApiBuilder" module:
 
@@ -18,7 +13,11 @@ HttpApiBuilder.api
 **Signature**
 
 ```ts
-export declare const api: <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR>(
-  self: HttpApi.HttpApi<Groups, Error, ErrorR>
-) => Layer.Layer<HttpApi.HttpApi.Service, never, HttpApiGroup.HttpApiGroup.ToService<Groups> | ErrorR>
+export declare const api: <Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(
+  api: HttpApi.HttpApi<Groups, E, R>
+) => Layer.Layer<
+  HttpApi.Api,
+  never,
+  HttpApiGroup.HttpApiGroup.ToService<Groups> | R | HttpApiGroup.HttpApiGroup.ErrorContext<Groups>
+>
 ```

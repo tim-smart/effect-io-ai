@@ -5,7 +5,7 @@ Returns `true` if the value is a `Composite`.
 To import and use `isComposite` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from "@effect/schema/ParseResult"
+import * as ParseResult from "effect/ParseResult"
 // Can be accessed like this
 ParseResult.isComposite
 ```
@@ -13,5 +13,5 @@ ParseResult.isComposite
 **Signature**
 
 ```ts
-export declare const isComposite: (u: unknown) => u is Composite
+export declare const isComposite: (issue: ParseIssue) => issue is Extract<ParseIssue, { _tag: "Composite" }>
 ```

@@ -6,7 +6,7 @@ leading or trailing whitespace.
 To import and use `NonEmptyTrimmedString` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.NonEmptyTrimmedString
 ```
@@ -14,7 +14,7 @@ Schema.NonEmptyTrimmedString
 **Example**
 
 ```ts
-import { Schema } from "@effect/schema"
+import { Schema } from "effect"
 
 console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)("")) // Option.none()
 console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)(" a ")) // Option.none()

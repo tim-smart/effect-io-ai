@@ -5,7 +5,7 @@ By default the option `exact` is set to `true`.
 To import and use `asserts` from the "ParseResult" module:
 
 ```ts
-import * as ParseResult from "@effect/schema/ParseResult"
+import * as ParseResult from "effect/ParseResult"
 // Can be accessed like this
 ParseResult.asserts
 ```

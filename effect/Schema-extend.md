@@ -18,7 +18,7 @@ Possible extensions include:
 To import and use `extend` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.extend
 ```
@@ -26,14 +26,14 @@ Schema.extend
 **Example**
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 
 const schema = Schema.Struct({
   a: Schema.String,
   b: Schema.String
 })
 
-// const extended: Schema.Schema<
+// const extended: Schema<
 //   {
 //     readonly a: string
 //     readonly b: string

@@ -2,12 +2,12 @@
 
 Creates a new AST with shallow mutability applied to its properties.
 
-To import and use `mutable` from the "AST" module:
+To import and use `mutable` from the "SchemaAST" module:
 
 ```ts
-import * as AST from "@effect/schema/AST"
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
-AST.mutable
+SchemaAST.mutable
 ```
 
 **Signature**

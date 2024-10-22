@@ -1,8 +1,9 @@
 # empty
 
-An empty `HttpApi`. You can use this to start building your `HttpApi`.
+An `HttpApi` is a collection of `HttpApiEndpoint`s. You can use an `HttpApi` to
+represent a portion of your domain.
 
-You can add groups to this `HttpApi` using the `addGroup` function.
+The endpoints can be implemented later using the `HttpApiBuilder.make` api.
 
 To import and use `empty` from the "HttpApi" module:
 
@@ -15,5 +16,5 @@ HttpApi.empty
 **Signature**
 
 ```ts
-export declare const empty: HttpApi<never, never, never>
+export declare const empty: HttpApi<never, HttpApiDecodeError, never>
 ```

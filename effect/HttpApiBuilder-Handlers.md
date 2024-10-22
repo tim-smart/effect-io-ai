@@ -1,6 +1,6 @@
 # Handlers
 
-Represents a handled, or partially handled, `HttpApiGroup`.
+Represents a handled `HttpApi`.
 
 To import and use `Handlers` from the "HttpApiBuilder" module:
 

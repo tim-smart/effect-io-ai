@@ -15,7 +15,7 @@ Model.Class
 **Example**
 
 ```ts
-import { Schema } from "@effect/schema"
+import { Schema } from "effect"
 import { Model } from "@effect/sql"
 
 export const GroupId = Schema.Number.pipe(Schema.brand("GroupId"))

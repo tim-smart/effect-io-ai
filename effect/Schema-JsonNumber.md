@@ -7,7 +7,7 @@ format.
 To import and use `JsonNumber` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.JsonNumber
 ```
@@ -15,9 +15,9 @@ Schema.JsonNumber
 **Example**
 
 ```ts
-import * as S from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 
-const is = S.is(S.JsonNumber)
+const is = Schema.is(S.JsonNumber)
 
 assert.deepStrictEqual(is(42), true)
 assert.deepStrictEqual(is(Number.NaN), false)

@@ -2,12 +2,12 @@
 
 Equivalent at runtime to the built-in TypeScript utility type `Pick`.
 
-To import and use `pick` from the "AST" module:
+To import and use `pick` from the "SchemaAST" module:
 
 ```ts
-import * as AST from "@effect/schema/AST"
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
-AST.pick
+SchemaAST.pick
 ```
 
 **Signature**

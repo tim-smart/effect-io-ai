@@ -13,29 +13,33 @@ HttpApiBuilder.toWebHandler
 **Example**
 
 ```ts
-import { HttpApi } from "@effect/platform"
-import { Etag, HttpApiBuilder, HttpMiddleware, HttpPlatform } from "@effect/platform"
-import { NodeContext } from "@effect/platform-node"
-import { Layer, ManagedRuntime } from "effect"
+import { HttpApi, HttpApiBuilder, HttpServer } from "@effect/platform"
+import { Layer } from "effect"
 
-const ApiLive = HttpApiBuilder.api(HttpApi.empty)
+class MyApi extends HttpApi.empty {}
 
-const runtime = ManagedRuntime.make(
-  Layer.mergeAll(ApiLive, HttpApiBuilder.Router.Live, HttpPlatform.layer, Etag.layerWeak).pipe(
-    Layer.provideMerge(NodeContext.layer)
+const MyApiLive = HttpApiBuilder.api(MyApi)
+
+const { dispose, handler } = HttpApiBuilder.toWebHandler(
+  Layer.mergeAll(
+    MyApiLive,
+    // you could also use NodeHttpServer.layerContext, depending on your
+    // server's platform
+    HttpServer.layerContext
   )
 )
-
-const handler = HttpApiBuilder.toWebHandler(runtime, HttpMiddleware.logger)
 ```
 
 **Signature**
 
 ```ts
-export declare const toWebHandler: <R, ER>(
-  runtime: ManagedRuntime<R | HttpApi.HttpApi.Service | Router | HttpRouter.HttpRouter.DefaultServices, ER>,
-  middleware?: (
-    httpApp: HttpApp.Default
-  ) => HttpApp.Default<never, R | HttpApi.HttpApi.Service | Router | HttpRouter.HttpRouter.DefaultServices>
-) => (request: Request) => Promise<Response>
+export declare const toWebHandler: <LA, LE>(
+  layer: Layer.Layer<LA | HttpApi.Api | HttpRouter.HttpRouter.DefaultServices, LE>,
+  options?: {
+    readonly middleware?: (
+      httpApp: HttpApp.Default
+    ) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>
+    readonly memoMap?: Layer.MemoMap
+  }
+) => { readonly handler: (request: Request) => Promise<Response>; readonly dispose: () => Promise<void> }
 ```

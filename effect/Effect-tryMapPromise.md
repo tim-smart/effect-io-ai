@@ -5,7 +5,7 @@ Returns an effect whose success is mapped by the specified side effecting
 via the `catch` function.
 
 An optional `AbortSignal` can be provided to allow for interruption of the
-wrapped Promise api.
+wrapped `Promise` API.
 
 To import and use `tryMapPromise` from the "Effect" module:
 

@@ -6,7 +6,7 @@ When encoding, this Schema will produce incorrect results if the BigDecimal exce
 To import and use `BigDecimalFromNumber` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.BigDecimalFromNumber
 ```

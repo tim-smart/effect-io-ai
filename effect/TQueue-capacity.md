@@ -13,5 +13,5 @@ TQueue.capacity
 **Signature**
 
 ```ts
-export declare const capacity: <A>(self: TQueue<A>) => number
+export declare const capacity: <A>(self: TDequeue<A> | TEnqueue<A>) => number
 ```

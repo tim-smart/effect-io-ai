@@ -15,8 +15,12 @@ Stream.fromReadableStream
 **Signature**
 
 ```ts
-export declare const fromReadableStream: <A, E>(
-  evaluate: LazyArg<ReadableStream<A>>,
-  onError: (error: unknown) => E
-) => Stream<A, E>
+export declare const fromReadableStream: {
+  <A, E>(options: {
+    readonly evaluate: LazyArg<ReadableStream<A>>
+    readonly onError: (error: unknown) => E
+    readonly releaseLockOnEnd?: boolean | undefined
+  }): Stream<A, E>
+  <A, E>(evaluate: LazyArg<ReadableStream<A>>, onError: (error: unknown) => E): Stream<A, E>
+}
 ```

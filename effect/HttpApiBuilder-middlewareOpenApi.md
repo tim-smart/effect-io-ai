@@ -15,5 +15,5 @@ HttpApiBuilder.middlewareOpenApi
 ```ts
 export declare const middlewareOpenApi: (
   options?: { readonly path?: HttpRouter.PathInput | undefined } | undefined
-) => Layer.Layer<never, never, HttpApi.HttpApi.Service>
+) => Layer.Layer<never, never, HttpApi.Api>
 ```

@@ -1,11 +1,11 @@
 # group
 
-Create a `Layer` that will implement all the endpoints in an `HttpApiGroup`.
+Create a `Layer` that will implement all the endpoints in an `HttpApi`.
 
 An unimplemented `Handlers` instance is passed to the `build` function, which
 you can use to add handlers to the group.
 
-You can implement endpoints using the `HttpApiBuilder.handle` api.
+You can implement endpoints using the `handlers.handle` api.
 
 To import and use `group` from the "HttpApiBuilder" module:
 
@@ -21,22 +21,18 @@ HttpApiBuilder.group
 export declare const group: <
   Groups extends HttpApiGroup.HttpApiGroup.Any,
   ApiError,
-  ApiErrorR,
-  const Name extends Groups["identifier"],
-  RH,
-  EX = never,
-  RX = never
+  ApiR,
+  const Name extends HttpApiGroup.HttpApiGroup.Name<Groups>,
+  Return
 >(
-  api: HttpApi.HttpApi<Groups, ApiError, ApiErrorR>,
+  api: HttpApi.HttpApi<Groups, ApiError, ApiR>,
   groupName: Name,
   build: (
-    handlers: Handlers<never, never, HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, Name>>
-  ) =>
-    | Handlers<NoInfer<ApiError> | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, Name>, RH>
-    | Effect.Effect<Handlers<NoInfer<ApiError> | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, Name>, RH>, EX, RX>
+    handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>
+  ) => Handlers.ValidateReturn<Return>
 ) => Layer.Layer<
-  HttpApiGroup.HttpApiGroup.Service<Name>,
-  EX,
-  RX | RH | HttpApiGroup.HttpApiGroup.ContextWithName<Groups, Name> | ApiErrorR
+  HttpApiGroup.Group<Name>,
+  Handlers.Error<Return>,
+  Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.ContextWithName<Groups, Name>
 >
 ```

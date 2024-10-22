@@ -7,7 +7,7 @@ It returns an error if the value can't be safely encoded as a `number` due to be
 To import and use `BigIntFromNumber` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.BigIntFromNumber
 ```

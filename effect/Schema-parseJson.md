@@ -10,7 +10,7 @@ Optionally, you can pass a schema `Schema<A, I, R>` to obtain an `A` type instea
 To import and use `parseJson` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.parseJson
 ```
@@ -18,10 +18,13 @@ Schema.parseJson
 **Example**
 
 ```ts
-import * as S from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 
-assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson())(`{"a":"1"}`), { a: "1" })
-assert.deepStrictEqual(S.decodeUnknownSync(S.parseJson(S.Struct({ a: S.NumberFromString })))(`{"a":"1"}`), { a: 1 })
+assert.deepStrictEqual(Schema.decodeUnknownSync(Schema.parseJson())(`{"a":"1"}`), { a: "1" })
+assert.deepStrictEqual(
+  Schema.decodeUnknownSync(Schema.parseJson(Schema.Struct({ a: Schema.NumberFromString })))(`{"a":"1"}`),
+  { a: 1 }
+)
 ```
 
 **Signature**

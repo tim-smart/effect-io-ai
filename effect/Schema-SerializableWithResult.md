@@ -8,10 +8,10 @@ This trait combines functionality from both the `Serializable` and `WithResult`
 traits to handle data serialization and the bifurcation of operation results
 into success or failure categories.
 
-To import and use `SerializableWithResult` from the "Serializable" module:
+To import and use `SerializableWithResult` from the "Schema" module:
 
 ```ts
-import * as Serializable from "@effect/schema/Serializable"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
-Serializable.SerializableWithResult
+Schema.SerializableWithResult
 ```

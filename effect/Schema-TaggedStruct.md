@@ -7,7 +7,7 @@ The tag is optional when using the `make` method.
 To import and use `TaggedStruct` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.TaggedStruct
 ```
@@ -15,7 +15,7 @@ Schema.TaggedStruct
 **Example**
 
 ```ts
-import { Schema } from "@effect/schema"
+import { Schema } from "effect"
 
 const User = Schema.TaggedStruct("User", {
   name: Schema.String,

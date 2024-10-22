@@ -5,7 +5,7 @@ Creates a new `Schema` which maps between corresponding literal values.
 To import and use `transformLiterals` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.transformLiterals
 ```
@@ -13,7 +13,7 @@ Schema.transformLiterals
 **Example**
 
 ```ts
-import * as S from "@effect/schema/Schema"
+import * as S from "effect/Schema"
 
 const Animal = S.transformLiterals([0, "cat"], [1, "dog"], [2, "cow"])
 

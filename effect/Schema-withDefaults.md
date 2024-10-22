@@ -5,7 +5,7 @@ Enhances a property signature with a default decoding value and a default constr
 To import and use `withDefaults` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.withDefaults
 ```

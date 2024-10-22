@@ -13,5 +13,5 @@ TQueue.isEmpty
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: TQueue<A>) => STM.STM<boolean>
+export declare const isEmpty: <A>(self: TDequeue<A> | TEnqueue<A>) => STM.STM<boolean>
 ```

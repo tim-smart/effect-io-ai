@@ -2,12 +2,12 @@
 
 Equivalent at runtime to the TypeScript type-level `keyof` operator.
 
-To import and use `keyof` from the "AST" module:
+To import and use `keyof` from the "SchemaAST" module:
 
 ```ts
-import * as AST from "@effect/schema/AST"
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
-AST.keyof
+SchemaAST.keyof
 ```
 
 **Signature**

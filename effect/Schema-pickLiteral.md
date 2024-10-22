@@ -5,7 +5,7 @@ Creates a new `Schema` from a literal schema.
 To import and use `pickLiteral` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.pickLiteral
 ```
@@ -13,14 +13,14 @@ Schema.pickLiteral
 **Example**
 
 ```ts
-import * as S from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 import { Either } from "effect"
 
-const schema = S.Literal("a", "b", "c").pipe(S.pickLiteral("a", "b"))
+const schema = Schema.Literal("a", "b", "c").pipe(Schema.pickLiteral("a", "b"))
 
-assert.deepStrictEqual(S.decodeSync(schema)("a"), "a")
-assert.deepStrictEqual(S.decodeSync(schema)("b"), "b")
-assert.strictEqual(Either.isLeft(S.decodeUnknownEither(schema)("c")), true)
+assert.deepStrictEqual(Schema.decodeSync(schema)("a"), "a")
+assert.deepStrictEqual(Schema.decodeSync(schema)("b"), "b")
+assert.strictEqual(Either.isLeft(Schema.decodeUnknownEither(schema)("c")), true)
 ```
 
 **Signature**

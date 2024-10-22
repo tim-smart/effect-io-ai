@@ -16,20 +16,19 @@ HttpApi.reflect
 **Signature**
 
 ```ts
-export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR>(
-  self: HttpApi<Groups, Error, ErrorR>,
+export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, R>(
+  self: HttpApi<Groups, Error, R>,
   options: {
     readonly onGroup: (options: {
-      readonly group: HttpApiGroup.HttpApiGroup<string, any>
+      readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps
       readonly mergedAnnotations: Context.Context<never>
     }) => void
     readonly onEndpoint: (options: {
-      readonly group: HttpApiGroup.HttpApiGroup<string, any>
+      readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps
       readonly endpoint: HttpApiEndpoint.HttpApiEndpoint<string, HttpMethod>
       readonly mergedAnnotations: Context.Context<never>
-      readonly successAST: Option.Option<AST.AST>
-      readonly successStatus: number
-      readonly successEncoding: HttpApiSchema.Encoding
+      readonly middleware: HashSet.HashSet<HttpApiMiddleware.TagClassAny>
+      readonly successes: ReadonlyMap<number, Option.Option<AST.AST>>
       readonly errors: ReadonlyMap<number, Option.Option<AST.AST>>
     }) => void
   }

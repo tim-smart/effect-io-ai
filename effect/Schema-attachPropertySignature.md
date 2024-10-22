@@ -7,7 +7,7 @@ but rather maps to another schema, for example when you want to add a discrimina
 To import and use `attachPropertySignature` from the "Schema" module:
 
 ```ts
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.attachPropertySignature
 ```
@@ -15,7 +15,7 @@ Schema.attachPropertySignature
 **Example**
 
 ```ts
-import * as S from "@effect/schema/Schema"
+import * as S from "effect/Schema"
 import { pipe } from "effect/Function"
 
 const Circle = S.Struct({ radius: S.Number })
