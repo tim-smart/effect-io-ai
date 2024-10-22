@@ -4,6 +4,7 @@ set -e
 
 cwd="$(pwd)"
 tarballjs="$cwd/tarball.js"
+indexjs="$cwd/index.js"
 
 SHORT_SHA=`git rev-parse --short HEAD`
 
@@ -51,3 +52,5 @@ for repo in ${repos[@]}; do
 
   cd ..
 done
+
+node $indexjs > index.html
