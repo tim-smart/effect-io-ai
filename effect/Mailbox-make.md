@@ -42,5 +42,7 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const make: <A, E = never>(capacity?: number | undefined) => Effect<Mailbox<A, E>>
+export declare const make: <A, E = never>(
+  capacity?: number | { readonly capacity?: number; readonly strategy?: "suspend" | "dropping" | "sliding" } | undefined
+) => Effect<Mailbox<A, E>>
 ```
