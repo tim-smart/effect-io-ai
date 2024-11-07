@@ -27,7 +27,7 @@ export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Err
       readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps
       readonly endpoint: HttpApiEndpoint.HttpApiEndpoint<string, HttpMethod>
       readonly mergedAnnotations: Context.Context<never>
-      readonly middleware: HashSet.HashSet<HttpApiMiddleware.TagClassAny>
+      readonly middleware: ReadonlySet<HttpApiMiddleware.TagClassAny>
       readonly successes: ReadonlyMap<number, Option.Option<AST.AST>>
       readonly errors: ReadonlyMap<number, Option.Option<AST.AST>>
     }) => void
