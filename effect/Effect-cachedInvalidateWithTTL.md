@@ -1,7 +1,7 @@
 # cachedInvalidateWithTTL
 
-Similar to {@link cachedWithTTL}, this function caches an effect's result for a
-specified duration. It also includes an additional effect for manually
+Similar to {@link cachedWithTTL}, this function caches an effect's result for
+a specified duration. It also includes an additional effect for manually
 invalidating the cached value before it naturally expires.
 
 To import and use `cachedInvalidateWithTTL` from the "Effect" module:

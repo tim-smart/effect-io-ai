@@ -1,7 +1,16 @@
 # orDie
 
-Translates effect failure into death of the fiber, making all failures
-unchecked and not a part of the type of the effect.
+Converts an effect's failure into a fiber termination, removing the error from the effect's type.
+
+\*_When to Use_
+
+Use `orDie` when failures should be treated as unrecoverable defects and no error handling is required.
+
+**Details**
+
+The `orDie` function is used when you encounter errors that you do not want to handle or recover from.
+It removes the error type from the effect and ensures that any failure will terminate the fiber.
+This is useful for propagating failures as defects, signaling that they should not be handled within the effect.
 
 To import and use `orDie` from the "Effect" module:
 
@@ -9,6 +18,25 @@ To import and use `orDie` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orDie
+```
+
+**Example**
+
+```ts
+// Title: Propagating an Error as a Defect
+import { Effect } from "effect"
+
+const divide = (a: number, b: number) =>
+  b === 0 ? Effect.fail(new Error("Cannot divide by zero")) : Effect.succeed(a / b)
+
+//      ┌─── Effect<number, never, never>
+//      ▼
+const program = Effect.orDie(divide(1, 0))
+
+Effect.runPromise(program).catch(console.error)
+// Output:
+// (FiberFailure) Error: Cannot divide by zero
+//   ...stack trace...
 ```
 
 **Signature**

@@ -1,6 +1,14 @@
 # catchIf
 
-Recovers from errors that match the given predicate.
+Recovers from specific errors based on a predicate.
+
+**When to Use**
+
+`catchIf` works similarly to {@link catchSome}, but it allows you to
+recover from errors by providing a predicate function. If the predicate
+matches the error, the recovery effect is applied. This function doesn't
+alter the error type, so the resulting effect still carries the original
+error type unless a user-defined type guard is used to narrow the type.
 
 To import and use `catchIf` from the "Effect" module:
 
@@ -8,6 +16,45 @@ To import and use `catchIf` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchIf
+```
+
+**Example**
+
+```ts
+// Title: Catching Specific Errors with a Predicate
+import { Effect, Random } from "effect"
+
+class HttpError {
+  readonly _tag = "HttpError"
+}
+
+class ValidationError {
+  readonly _tag = "ValidationError"
+}
+
+//      ┌─── Effect<string, HttpError | ValidationError, never>
+//      ▼
+const program = Effect.gen(function* () {
+  const n1 = yield* Random.next
+  const n2 = yield* Random.next
+  if (n1 < 0.5) {
+    yield* Effect.fail(new HttpError())
+  }
+  if (n2 < 0.5) {
+    yield* Effect.fail(new ValidationError())
+  }
+  return "some result"
+})
+
+//      ┌─── Effect<string, ValidationError, never>
+//      ▼
+const recovered = program.pipe(
+  Effect.catchIf(
+    // Only handle HttpError errors
+    (error) => error._tag === "HttpError",
+    () => Effect.succeed("Recovering from HttpError")
+  )
+)
 ```
 
 **Signature**

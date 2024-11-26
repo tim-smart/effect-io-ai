@@ -1,11 +1,26 @@
 # catchAllDefect
 
-Recovers from all defects with provided function.
+Recovers from all defects using a provided recovery function.
 
-**WARNING**: There is no sensible way to recover from defects. This
-method should be used only at the boundary between Effect and an external
-system, to transmit information on a defect for diagnostic or explanatory
-purposes.
+**When to Use**
+
+There is no sensible way to recover from defects. This method should be used
+only at the boundary between Effect and an external system, to transmit
+information on a defect for diagnostic or explanatory purposes.
+
+**Details**
+
+`catchAllDefect` allows you to handle defects, which are unexpected errors
+that usually cause the program to terminate. This function lets you recover
+from these defects by providing a function that handles the error. However,
+it does not handle expected errors (like those from {@link fail}) or
+execution interruptions (like those from {@link interrupt}).
+
+**When to Recover from Defects**
+
+Defects are unexpected errors that typically shouldn't be recovered from, as
+they often indicate serious issues. However, in some cases, such as
+dynamically loaded plugins, controlled recovery might be needed.
 
 To import and use `catchAllDefect` from the "Effect" module:
 
@@ -13,6 +28,33 @@ To import and use `catchAllDefect` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchAllDefect
+```
+
+**Example**
+
+```ts
+// Title: Handling All Defects
+import { Effect, Cause, Console } from "effect"
+
+// Simulating a runtime error
+const task = Effect.dieMessage("Boom!")
+
+const program = Effect.catchAllDefect(task, (defect) => {
+  if (Cause.isRuntimeException(defect)) {
+    return Console.log(`RuntimeException defect caught: ${defect.message}`)
+  }
+  return Console.log("Unknown defect caught.")
+})
+
+// We get an Exit.Success because we caught all defects
+Effect.runPromiseExit(program).then(console.log)
+// Output:
+// RuntimeException defect caught: Boom!
+// {
+//   _id: "Exit",
+//   _tag: "Success",
+//   value: undefined
+// }
 ```
 
 **Signature**

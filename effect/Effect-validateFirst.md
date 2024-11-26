@@ -1,9 +1,15 @@
 # validateFirst
 
-Feeds elements of type `A` to `f` until it succeeds. Returns first success
-or the accumulation of all errors.
+The `validateFirst` function is similar to {@link validateAll} but
+with a key difference: it returns the first successful result or all errors
+if none of the operations succeed.
 
-If `elements` is empty then `Effect.fail([])` is returned.
+This function processes a collection of elements and applies an effectful
+operation to each. Unlike `validateAll`, which accumulates both
+successes and failures, `validateFirst` stops and returns the first
+success it encounters. If no success occurs, it returns all accumulated
+errors. This can be useful when you are interested in the first successful
+result and want to avoid processing further once a valid result is found.
 
 To import and use `validateFirst` from the "Effect" module:
 
@@ -16,18 +22,22 @@ Effect.validateFirst
 **Example**
 
 ```ts
-import { Effect, Exit } from "effect"
+import { Effect, Console } from "effect"
 
-const f = (n: number) => (n > 0 ? Effect.succeed(n) : Effect.fail(`${n} is negative`))
+//      ┌─── Effect<number, string[], never>
+//      ▼
+const program = Effect.validateFirst([1, 2, 3, 4, 5], (n) => {
+  if (n < 4) {
+    return Effect.fail(`${n} is not less that 4`)
+  } else {
+    return Console.log(`item ${n}`).pipe(Effect.as(n))
+  }
+})
 
-assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([], f)), Exit.fail([]))
-assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([1, 2], f)), Exit.succeed(1))
-assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([1, -1], f)), Exit.succeed(1))
-assert.deepStrictEqual(Effect.runSyncExit(Effect.validateFirst([-1, 2], f)), Exit.succeed(2))
-assert.deepStrictEqual(
-  Effect.runSyncExit(Effect.validateFirst([-1, -2], f)),
-  Exit.fail(["-1 is negative", "-2 is negative"])
-)
+Effect.runPromise(program).then(console.log, console.error)
+// Output:
+// item 4
+// 4
 ```
 
 **Signature**

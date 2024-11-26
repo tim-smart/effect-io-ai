@@ -1,7 +1,33 @@
 # flatMap
 
-This function is a pipeable operator that maps over an `Effect` value,
-flattening the result of the mapping function into a new `Effect` value.
+Chains effects to produce new `Effect` instances, useful for combining
+operations that depend on previous results.
+
+**Syntax**
+
+```ts
+const flatMappedEffect = pipe(myEffect, Effect.flatMap(transformation))
+// or
+const flatMappedEffect = Effect.flatMap(myEffect, transformation)
+// or
+const flatMappedEffect = myEffect.pipe(Effect.flatMap(transformation))
+```
+
+**When to Use**
+
+Use `flatMap` when you need to chain multiple effects, ensuring that each
+step produces a new `Effect` while flattening any nested effects that may
+occur.
+
+**Details**
+
+`flatMap` lets you sequence effects so that the result of one effect can be
+used in the next step. It is similar to `flatMap` used with arrays but works
+specifically with `Effect` instances, allowing you to avoid deeply nested
+effect structures.
+
+Since effects are immutable, `flatMap` always returns a new effect instead of
+changing the original one.
 
 To import and use `flatMap` from the "Effect" module:
 
@@ -9,6 +35,30 @@ To import and use `flatMap` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.flatMap
+```
+
+**Example**
+
+```ts
+import { pipe, Effect } from "effect"
+
+// Function to apply a discount safely to a transaction amount
+const applyDiscount = (total: number, discountRate: number): Effect.Effect<number, Error> =>
+  discountRate === 0
+    ? Effect.fail(new Error("Discount rate cannot be zero"))
+    : Effect.succeed(total - (total * discountRate) / 100)
+
+// Simulated asynchronous task to fetch a transaction amount from database
+const fetchTransactionAmount = Effect.promise(() => Promise.resolve(100))
+
+// Chaining the fetch and discount application using `flatMap`
+const finalAmount = pipe(
+  fetchTransactionAmount,
+  Effect.flatMap((amount) => applyDiscount(amount, 5))
+)
+
+Effect.runPromise(finalAmount).then(console.log)
+// Output: 95
 ```
 
 **Signature**

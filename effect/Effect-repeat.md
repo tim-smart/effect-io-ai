@@ -2,7 +2,7 @@
 
 The `repeat` function returns a new effect that repeats the given effect
 according to a specified schedule or until the first failure. The scheduled
-recurrences are in addition to the initial execution, so `Effect.repeat(action,
+recurrences are in addition to the initial execution, so `repeat(action,
 Schedule.once)` executes `action` once initially, and if it succeeds, repeats it
 an additional time.
 

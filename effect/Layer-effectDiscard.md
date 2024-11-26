@@ -1,6 +1,6 @@
 # effectDiscard
 
-Constructs a layer from the specified effect discarding it's output.
+Constructs a layer from the specified effect, discarding its output.
 
 To import and use `effectDiscard` from the "Layer" module:
 

@@ -1,7 +1,9 @@
 # as
 
-This function maps the success value of an `Effect` value to a specified
-constant value.
+Replaces the value inside an effect with a constant value.
+
+`as` allows you to ignore the original value inside an effect and
+replace it with a new constant value.
 
 To import and use `as` from the "Effect" module:
 
@@ -9,6 +11,19 @@ To import and use `as` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.as
+```
+
+**Example**
+
+```ts
+// Title: Replacing a Value
+import { pipe, Effect } from "effect"
+
+// Replaces the value 5 with the constant "new value"
+const program = pipe(Effect.succeed(5), Effect.as("new value"))
+
+Effect.runPromise(program).then(console.log)
+// Output: "new value"
 ```
 
 **Signature**

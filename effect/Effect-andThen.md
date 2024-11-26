@@ -1,15 +1,37 @@
 # andThen
 
-Executes a sequence of two actions, typically two `Effect`s, where the second action can depend on the result of the first action.
+Chains two actions, where the second action can depend on the result of the
+first.
 
-The `that` action can take various forms:
+**Syntax**
 
-- a value
-- a function returning a value
-- a promise
-- a function returning a promise
-- an effect
-- a function returning an effect
+```ts
+const transformedEffect = pipe(myEffect, Effect.andThen(anotherEffect))
+// or
+const transformedEffect = Effect.andThen(myEffect, anotherEffect)
+// or
+const transformedEffect = myEffect.pipe(Effect.andThen(anotherEffect))
+```
+
+**When to Use**
+
+Use `andThen` when you need to run multiple actions in sequence, with the
+second action depending on the result of the first. This is useful for
+combining effects or handling computations that must happen in order.
+
+**Details**
+
+The second action can be:
+
+- A constant value (similar to {@link as})
+- A function returning a value (similar to {@link map})
+- A `Promise`
+- A function returning a `Promise`
+- An `Effect`
+- A function returning an `Effect` (similar to {@link flatMap})
+
+**Note:** `andThen` works well with both `Option` and `Either` types,
+treating them as effects.
 
 To import and use `andThen` from the "Effect" module:
 
@@ -22,19 +44,37 @@ Effect.andThen
 **Example**
 
 ```ts
-import { Effect } from "effect"
+// Title: Applying a Discount Based on Fetched Amount
+import { pipe, Effect } from "effect"
 
-assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen(1))), 1)
-assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen((s) => s.length))), 2)
+// Function to apply a discount safely to a transaction amount
+const applyDiscount = (total: number, discountRate: number): Effect.Effect<number, Error> =>
+  discountRate === 0
+    ? Effect.fail(new Error("Discount rate cannot be zero"))
+    : Effect.succeed(total - (total * discountRate) / 100)
 
-assert.deepStrictEqual(await Effect.runPromise(Effect.succeed("aa").pipe(Effect.andThen(Promise.resolve(1)))), 1)
-assert.deepStrictEqual(
-  await Effect.runPromise(Effect.succeed("aa").pipe(Effect.andThen((s) => Promise.resolve(s.length)))),
-  2
+// Simulated asynchronous task to fetch a transaction amount from database
+const fetchTransactionAmount = Effect.promise(() => Promise.resolve(100))
+
+// Using Effect.map and Effect.flatMap
+const result1 = pipe(
+  fetchTransactionAmount,
+  Effect.map((amount) => amount * 2),
+  Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen(Effect.succeed(1)))), 1)
-assert.deepStrictEqual(Effect.runSync(Effect.succeed("aa").pipe(Effect.andThen((s) => Effect.succeed(s.length)))), 2)
+Effect.runPromise(result1).then(console.log)
+// Output: 190
+
+// Using Effect.andThen
+const result2 = pipe(
+  fetchTransactionAmount,
+  Effect.andThen((amount) => amount * 2),
+  Effect.andThen((amount) => applyDiscount(amount, 5))
+)
+
+Effect.runPromise(result2).then(console.log)
+// Output: 190
 ```
 
 **Signature**

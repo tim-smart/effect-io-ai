@@ -2,7 +2,7 @@
 
 Applies log annotations with a limited scope, restricting their appearance to
 specific sections of your effect computations. Use
-`Effect.annotateLogsScoped` to add metadata to logs that only appear within a
+`annotateLogsScoped` to add metadata to logs that only appear within a
 defined `Scope`, making it easier to manage context-specific logging.
 
 To import and use `annotateLogsScoped` from the "Effect" module:

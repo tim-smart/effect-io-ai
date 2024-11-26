@@ -1,18 +1,13 @@
 # timeout
 
-Returns an effect that will timeout this effect, failing with a `Cause.TimeoutException`
-if the timeout elapses before the effect has produced a value.
+Adds a time limit to an effect, triggering a timeout if the effect exceeds
+the duration.
 
-If the timeout elapses without producing a value, the running effect will
-be safely interrupted.
-
-WARNING: The effect returned by this method will not itself return until
-the underlying effect is actually interrupted. This leads to more
-predictable resource utilization. If early return is desired, then instead
-of using `effect.timeout(d)`, use `effect.disconnect.timeout(d)`, which
-first disconnects the effect's interruption signal before performing the
-timeout, resulting in earliest possible return, before an underlying effect
-has been successfully interrupted.
+The `timeout` function allows you to specify a time limit for an
+effect's execution. If the effect does not complete within the given time, a
+`TimeoutException` is raised. This can be useful for controlling how long
+your program waits for a task to finish, ensuring that it doesn't hang
+indefinitely if the task takes too long.
 
 To import and use `timeout` from the "Effect" module:
 
@@ -20,6 +15,36 @@ To import and use `timeout` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.timeout
+```
+
+**Example**
+
+```ts
+import { Effect } from "effect"
+
+const task = Effect.gen(function* () {
+  console.log("Start processing...")
+  yield* Effect.sleep("2 seconds") // Simulates a delay in processing
+  console.log("Processing complete.")
+  return "Result"
+})
+
+// Output will show a TimeoutException as the task takes longer
+// than the specified timeout duration
+const timedEffect = task.pipe(Effect.timeout("1 second"))
+
+Effect.runPromiseExit(timedEffect).then(console.log)
+// Output:
+// Start processing...
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: {
+//     _id: 'Cause',
+//     _tag: 'Fail',
+//     failure: { _tag: 'TimeoutException' }
+//   }
+// }
 ```
 
 **Signature**

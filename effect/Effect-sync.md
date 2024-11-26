@@ -2,8 +2,19 @@
 
 Creates an `Effect` that represents a synchronous side-effectful computation.
 
-The provided function (`thunk`) should not throw errors; if it does, the error is treated as a defect.
-Use `Effect.sync` when you are certain the operation will not fail.
+**When to Use**
+
+Use `sync` when you are sure the operation will not fail.
+
+**Details**
+
+The provided function (`thunk`) must not throw errors; if it does, the error
+will be treated as a "defect".
+
+This defect is not a standard error but indicates a flaw in the logic that
+was expected to be error-free. You can think of it similar to an unexpected
+crash in the program, which can be further managed or logged using tools like
+{@link catchAllDefect}.
 
 To import and use `sync` from the "Effect" module:
 
@@ -16,14 +27,16 @@ Effect.sync
 **Example**
 
 ```ts
+// Title: Logging a Message
 import { Effect } from "effect"
 
-// Creating an effect that logs a message
 const log = (message: string) =>
   Effect.sync(() => {
     console.log(message) // side effect
   })
 
+//      ┌─── Effect<void, never, never>
+//      ▼
 const program = log("Hello, World!")
 ```
 

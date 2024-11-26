@@ -1,6 +1,12 @@
 # tapErrorTag
 
-Specifically inspects a failure with a particular tag, allowing focused error handling.
+The `tapErrorTag` function allows you to inspect errors that match a
+specific tag, helping you handle different error types more precisely.
+
+This function is useful when you want to target and act on specific error
+types within an effect. You can use it to handle errors more granularly based
+on their tags (e.g., inspecting only `NetworkError` or `ValidationError`),
+without modifying the error or the overall result of the effect.
 
 To import and use `tapErrorTag` from the "Effect" module:
 
@@ -19,16 +25,16 @@ class NetworkError {
   readonly _tag = "NetworkError"
   constructor(readonly statusCode: number) {}
 }
+
 class ValidationError {
   readonly _tag = "ValidationError"
   constructor(readonly field: string) {}
 }
 
-// Create an effect that is designed to fail, simulating an occurrence of a network error
+// Create a task that fails with a NetworkError
 const task: Effect.Effect<number, NetworkError | ValidationError> = Effect.fail(new NetworkError(504))
 
-// Apply an error handling function only to errors tagged as "NetworkError",
-// and log the corresponding status code of the error.
+// Use tapErrorTag to inspect only NetworkError types and log the status code
 const tapping = Effect.tapErrorTag(task, "NetworkError", (error) => Console.log(`expected error: ${error.statusCode}`))
 
 Effect.runFork(tapping)

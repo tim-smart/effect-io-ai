@@ -1,10 +1,12 @@
 # allWith
 
-Data-last variant of `Effect.all`.
+A data-last version of {@link all}, designed for use in pipelines.
 
-Runs all the provided effects in sequence respecting the structure provided in input.
+**When to Use**
 
-Supports multiple arguments, a single argument tuple / array or record / struct.
+The `allWith` function enables you to combine multiple effects and customize execution options
+such as concurrency levels. This version is useful in functional pipelines where you first define
+your data and then apply operations to it.
 
 To import and use `allWith` from the "Effect" module:
 
@@ -12,6 +14,28 @@ To import and use `allWith` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.allWith
+```
+
+**Example**
+
+```ts
+import { Effect, pipe } from "effect"
+
+const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
+
+const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
+
+const program = pipe(
+  [task1, task2],
+  // Run both effects concurrently using the concurrent option
+  Effect.allWith({ concurrency: 2 })
+)
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// timestamp=... level=INFO fiber=#3 message="task2 done"
+// timestamp=... level=INFO fiber=#2 message="task1 done"
+// [ 1, 'hello' ]
 ```
 
 **Signature**

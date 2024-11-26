@@ -4,7 +4,7 @@ The `repeatOrElse` function returns a new effect that repeats the specified
 effect according to the given schedule or until the first failure. When a
 failure occurs, the failure value and schedule output are passed to a
 specified handler. Scheduled recurrences are in addition to the initial
-execution, so `Effect.repeat(action, Schedule.once)` executes `action` once
+execution, so `repeat(action, Schedule.once)` executes `action` once
 initially and then repeats it an additional time if it succeeds.
 
 To import and use `repeatOrElse` from the "Effect" module:

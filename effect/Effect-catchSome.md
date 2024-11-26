@@ -1,6 +1,15 @@
 # catchSome
 
-Recovers from some or all of the error cases.
+Catches and recovers from specific types of errors, allowing you to attempt
+recovery only for certain errors.
+
+**Details**
+
+`catchSome` lets you selectively catch and handle errors of certain
+types by providing a recovery effect for specific errors. If the error
+matches a condition, recovery is attempted; if not, it doesn't affect the
+program. This function doesn't alter the error type, meaning the error type
+remains the same as in the original effect.
 
 To import and use `catchSome` from the "Effect" module:
 
@@ -8,6 +17,48 @@ To import and use `catchSome` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchSome
+```
+
+**Example**
+
+```ts
+// Title: Handling Specific Errors with Effect.catchSome
+import { Effect, Random, Option } from "effect"
+
+class HttpError {
+  readonly _tag = "HttpError"
+}
+
+class ValidationError {
+  readonly _tag = "ValidationError"
+}
+
+//      ┌─── Effect<string, HttpError | ValidationError, never>
+//      ▼
+const program = Effect.gen(function* () {
+  const n1 = yield* Random.next
+  const n2 = yield* Random.next
+  if (n1 < 0.5) {
+    yield* Effect.fail(new HttpError())
+  }
+  if (n2 < 0.5) {
+    yield* Effect.fail(new ValidationError())
+  }
+  return "some result"
+})
+
+//      ┌─── Effect<string, HttpError | ValidationError, never>
+//      ▼
+const recovered = program.pipe(
+  Effect.catchSome((error) => {
+    // Only handle HttpError errors
+    if (error._tag === "HttpError") {
+      return Option.some(Effect.succeed("Recovering from HttpError"))
+    } else {
+      return Option.none()
+    }
+  })
+)
 ```
 
 **Signature**

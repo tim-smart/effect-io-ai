@@ -1,9 +1,6 @@
 # asyncEffect
 
-Converts an asynchronous, callback-style API into an `Effect`, which will
-be executed asynchronously.
-
-With this variant, the registration function may return a an `Effect`.
+A variant of {@link async} where the registration function may return an `Effect`.
 
 To import and use `asyncEffect` from the "Effect" module:
 

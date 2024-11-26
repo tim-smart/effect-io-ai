@@ -19,6 +19,10 @@ HttpApi.reflect
 export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, R>(
   self: HttpApi<Groups, Error, R>,
   options: {
+    readonly predicate?: Predicate.Predicate<{
+      readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.AnyWithProps
+      readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps
+    }>
     readonly onGroup: (options: {
       readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps
       readonly mergedAnnotations: Context.Context<never>

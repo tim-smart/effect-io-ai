@@ -1,6 +1,6 @@
 # unless
 
-The moral equivalent of `if (!p) exp`.
+Executes an effect only if the condition is `false`.
 
 To import and use `unless` from the "Effect" module:
 

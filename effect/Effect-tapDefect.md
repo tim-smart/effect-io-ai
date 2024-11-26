@@ -1,6 +1,13 @@
 # tapDefect
 
-Specifically inspects non-recoverable failures or defects in an effect (i.e., one or more `Die` causes).
+The `tapDefect` function specifically inspects non-recoverable
+failures or defects (i.e., one or more `Die` causes) in an effect.
+
+This function is designed to catch severe errors in your program that
+represent critical issues, like system failures or unexpected errors
+(defects). It helps you log or handle these defects without altering the main
+result of the effect, allowing for efficient debugging or monitoring of
+severe errors.
 
 To import and use `tapDefect` from the "Effect" module:
 
@@ -15,19 +22,19 @@ Effect.tapDefect
 ```ts
 import { Effect, Console } from "effect"
 
-// Create an effect that is designed to fail, simulating an occurrence of a network error
+// Simulate a task that fails with a recoverable error
 const task1: Effect.Effect<number, string> = Effect.fail("NetworkError")
 
-// this won't log anything because is not a defect
+// tapDefect won't log anything because NetworkError is not a defect
 const tapping1 = Effect.tapDefect(task1, (cause) => Console.log(`defect: ${cause}`))
 
 Effect.runFork(tapping1)
 // No Output
 
-// Simulate a severe failure in the system by causing a defect with a specific message.
+// Simulate a severe failure in the system
 const task2: Effect.Effect<number, string> = Effect.dieMessage("Something went wrong")
 
-// This will only log defects, not errors
+// Log the defect using tapDefect
 const tapping2 = Effect.tapDefect(task2, (cause) => Console.log(`defect: ${cause}`))
 
 Effect.runFork(tapping2)

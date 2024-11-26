@@ -1,12 +1,11 @@
 # iterate
 
-The `Effect.iterate` function allows you to iterate with an effectful operation. It uses an effectful `body` operation to change the state during each iteration and continues the iteration as long as the `while` function evaluates to `true`:
+Repeatedly updates a state through an effectful operation, running the `body`
+effect to update the state in each iteration. It continues iterating as long
+as the `while` condition evaluates to `true`.
 
-```ts
-Effect.iterate(initial, options: { while, body })
-```
-
-We can think of `Effect.iterate` as equivalent to a `while` loop in JavaScript:
+This function works like a `while` loop in JavaScript but with effectful
+operations:
 
 ```ts
 let result = initial
@@ -24,6 +23,27 @@ To import and use `iterate` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.iterate
+```
+
+**Example**
+
+```ts
+// Title: Effectful Iteration
+import { Effect } from "effect"
+
+const result = Effect.iterate(
+  // Initial result
+  1,
+  {
+    // Condition to continue iterating
+    while: (result) => result <= 5,
+    // Operation to change the result
+    body: (result) => Effect.succeed(result + 1)
+  }
+)
+
+Effect.runPromise(result).then(console.log)
+// Output: 6
 ```
 
 **Signature**
