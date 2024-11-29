@@ -4,11 +4,11 @@ The same as `intersect` but ignores the left output.
 
 To import and use `zipRight` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.zipRight
-```
+undefined
 
 **Signature**
 

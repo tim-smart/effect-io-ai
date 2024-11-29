@@ -4,11 +4,11 @@ Test whether a value is between a minimum and a maximum (inclusive).
 
 To import and use `between` from the "Order" module:
 
-```ts
-import * as Order from "effect/Order"
+ts
+import \* as Order from "effect/Order"
 // Can be accessed like this
 Order.between
-```
+undefined
 
 **Signature**
 

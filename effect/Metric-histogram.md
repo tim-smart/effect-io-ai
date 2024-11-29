@@ -5,11 +5,11 @@ Histogram metrics are useful for measuring the distribution of values within a r
 
 To import and use `histogram` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.histogram
-```
+undefined
 
 **Example**
 

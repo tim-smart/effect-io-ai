@@ -8,11 +8,11 @@ Restricts the given `number` to be within the range specified by the `minimum` a
 
 To import and use `clamp` from the "Number" module:
 
-```ts
-import * as Number from "effect/Number"
+ts
+import \* as Number from "effect/Number"
 // Can be accessed like this
 Number.clamp
-```
+undefined
 
 **Example**
 

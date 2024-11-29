@@ -5,11 +5,11 @@ If the key does not exist in the record, a copy of the original record is return
 
 To import and use `replace` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.replace
-```
+undefined
 
 **Example**
 

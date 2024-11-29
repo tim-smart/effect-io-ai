@@ -6,11 +6,11 @@ this metric.
 
 To import and use `mapInput` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.mapInput
-```
+undefined
 
 **Signature**
 

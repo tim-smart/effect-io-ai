@@ -4,11 +4,11 @@ Folds an `MergeStrategy` into a value of type `A`.
 
 To import and use `match` from the "MergeStrategy" module:
 
-```ts
-import * as MergeStrategy from "effect/MergeStrategy"
+ts
+import \* as MergeStrategy from "effect/MergeStrategy"
 // Can be accessed like this
 MergeStrategy.match
-```
+undefined
 
 **Signature**
 

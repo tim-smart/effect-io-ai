@@ -4,11 +4,11 @@ A thunk that returns always `undefined`.
 
 To import and use `constUndefined` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.constUndefined
-```
+undefined
 
 **Example**
 

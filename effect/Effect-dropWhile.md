@@ -4,11 +4,11 @@ Drops all elements so long as the predicate returns true.
 
 To import and use `dropWhile` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.dropWhile
-```
+undefined
 
 **Signature**
 

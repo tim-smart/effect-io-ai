@@ -6,11 +6,11 @@ If the `Either` is a right, it returns an array with the right value.
 
 To import and use `liftEither` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.liftEither
-```
+undefined
 
 **Example**
 

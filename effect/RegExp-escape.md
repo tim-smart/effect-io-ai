@@ -4,11 +4,11 @@ Escapes special characters in a regular expression pattern.
 
 To import and use `escape` from the "RegExp" module:
 
-```ts
-import * as RegExp from "effect/RegExp"
+ts
+import \* as RegExp from "effect/RegExp"
 // Can be accessed like this
 RegExp.escape
-```
+undefined
 
 **Example**
 

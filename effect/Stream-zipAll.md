@@ -8,11 +8,11 @@ have different lengths and one of the streams has ended before the other.
 
 To import and use `zipAll` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipAll
-```
+undefined
 
 **Example**
 

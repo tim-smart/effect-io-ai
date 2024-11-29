@@ -4,11 +4,11 @@ Returns a default `map` implementation.
 
 To import and use `map` from the "Bicovariant" module:
 
-```ts
-import * as Bicovariant from "@effect/typeclass/Bicovariant"
+ts
+import \* as Bicovariant from "@effect/typeclass/Bicovariant"
 // Can be accessed like this
 Bicovariant.map
-```
+undefined
 
 **Signature**
 

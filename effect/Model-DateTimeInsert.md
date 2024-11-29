@@ -7,11 +7,11 @@ It is omitted from updates and is available for selection.
 
 To import and use `DateTimeInsert` from the "Model" module:
 
-```ts
-import * as Model from "@effect/sql/Model"
+ts
+import \* as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.DateTimeInsert
-```
+undefined
 
 **Signature**
 

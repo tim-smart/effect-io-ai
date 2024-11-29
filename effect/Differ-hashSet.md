@@ -4,11 +4,11 @@ Constructs a differ that knows how to diff a `HashSet` of values.
 
 To import and use `hashSet` from the "Differ" module:
 
-```ts
-import * as Differ from "effect/Differ"
+ts
+import \* as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.hashSet
-```
+undefined
 
 **Signature**
 

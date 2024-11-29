@@ -7,11 +7,11 @@ If the time zone is invalid, it will fail with an `IllegalArgumentException`.
 
 To import and use `withCurrentZoneNamed` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.withCurrentZoneNamed
-```
+undefined
 
 **Example**
 

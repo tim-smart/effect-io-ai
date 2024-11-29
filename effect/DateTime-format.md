@@ -9,11 +9,11 @@ Note: On Node versions < 22, fixed "Offset" zones will set the time zone to
 
 To import and use `format` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.format
-```
+undefined
 
 **Signature**
 

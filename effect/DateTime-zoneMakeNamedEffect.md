@@ -5,11 +5,11 @@ is invalid, it will fail with an `IllegalArgumentException`.
 
 To import and use `zoneMakeNamedEffect` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.zoneMakeNamedEffect
-```
+undefined
 
 **Signature**
 

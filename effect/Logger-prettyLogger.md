@@ -7,11 +7,11 @@ development and debugging processes.
 
 To import and use `prettyLogger` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.prettyLogger
-```
+undefined
 
 **Example**
 

@@ -10,11 +10,11 @@ your data and then apply operations to it.
 
 To import and use `allWith` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.allWith
-```
+undefined
 
 **Example**
 

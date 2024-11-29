@@ -4,11 +4,11 @@ Tests whether or not map contains a key.
 
 To import and use `has` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.has
-```
+undefined
 
 **Signature**
 

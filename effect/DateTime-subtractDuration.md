@@ -4,11 +4,11 @@ Subtract the given `Duration` from a `DateTime`.
 
 To import and use `subtractDuration` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.subtractDuration
-```
+undefined
 
 **Example**
 

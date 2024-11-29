@@ -4,11 +4,11 @@ Determines the sign of a given `BigDecimal`.
 
 To import and use `sign` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.sign
-```
+undefined
 
 **Example**
 

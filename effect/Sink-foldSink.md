@@ -4,11 +4,11 @@ Folds over the result of the sink
 
 To import and use `foldSink` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldSink
-```
+undefined
 
 **Signature**
 

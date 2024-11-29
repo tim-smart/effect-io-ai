@@ -5,11 +5,11 @@ If the function returns `Some`, the key-value pair is included in the output rec
 
 To import and use `filterMap` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.filterMap
-```
+undefined
 
 **Example**
 

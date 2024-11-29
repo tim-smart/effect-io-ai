@@ -4,11 +4,11 @@ Normalizes a given `BigDecimal` by removing trailing zeros.
 
 To import and use `normalize` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.normalize
-```
+undefined
 
 **Example**
 

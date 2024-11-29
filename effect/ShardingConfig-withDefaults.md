@@ -4,11 +4,11 @@ Provides the ShardingConfig, values that are omitted will be read from the defau
 
 To import and use `withDefaults` from the "ShardingConfig" module:
 
-```ts
-import * as ShardingConfig from "@effect/cluster/ShardingConfig"
+ts
+import \* as ShardingConfig from "@effect/cluster/ShardingConfig"
 // Can be accessed like this
 ShardingConfig.withDefaults
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ console service.
 
 To import and use `withConsole` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withConsole
-```
+undefined
 
 **Signature**
 

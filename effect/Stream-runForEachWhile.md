@@ -5,11 +5,11 @@ and terminating consumption when the callback returns `false`.
 
 To import and use `runForEachWhile` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runForEachWhile
-```
+undefined
 
 **Signature**
 

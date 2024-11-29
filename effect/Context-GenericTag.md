@@ -4,11 +4,11 @@ Creates a new `Tag` instance with an optional key parameter.
 
 To import and use `GenericTag` from the "Context" module:
 
-```ts
-import * as Context from "effect/Context"
+ts
+import \* as Context from "effect/Context"
 // Can be accessed like this
 Context.GenericTag
-```
+undefined
 
 **Example**
 

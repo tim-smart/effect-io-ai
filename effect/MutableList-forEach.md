@@ -4,11 +4,11 @@ Executes the specified function `f` for each element in the list.
 
 To import and use `forEach` from the "MutableList" module:
 
-```ts
-import * as MutableList from "effect/MutableList"
+ts
+import \* as MutableList from "effect/MutableList"
 // Can be accessed like this
 MutableList.forEach
-```
+undefined
 
 **Signature**
 

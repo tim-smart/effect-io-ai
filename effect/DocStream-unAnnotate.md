@@ -4,11 +4,11 @@ Remove all annotations from a document.
 
 To import and use `unAnnotate` from the "DocStream" module:
 
-```ts
-import * as DocStream from "@effect/printer/DocStream"
+ts
+import \* as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.unAnnotate
-```
+undefined
 
 **Signature**
 

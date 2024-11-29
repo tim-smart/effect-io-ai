@@ -4,11 +4,11 @@ Reduces an array from the right.
 
 To import and use `reduceRight` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.reduceRight
-```
+undefined
 
 **Example**
 

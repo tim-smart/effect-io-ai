@@ -4,8 +4,8 @@ A lightweight alternative to the `Effect` data type, with a subset of the functi
 
 To import and use `Micro` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.Micro
-```
+undefined

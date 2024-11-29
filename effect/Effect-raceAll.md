@@ -6,11 +6,11 @@ the race will be interrupted immediately
 
 To import and use `raceAll` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.raceAll
-```
+undefined
 
 **Signature**
 

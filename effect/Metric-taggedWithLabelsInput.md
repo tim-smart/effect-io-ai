@@ -7,11 +7,11 @@ dynamic nature of the added tags.
 
 To import and use `taggedWithLabelsInput` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.taggedWithLabelsInput
-```
+undefined
 
 **Signature**
 

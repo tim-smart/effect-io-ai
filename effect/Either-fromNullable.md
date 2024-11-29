@@ -5,11 +5,11 @@ the provided default as a `Left`.
 
 To import and use `fromNullable` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.fromNullable
-```
+undefined
 
 **Example**
 

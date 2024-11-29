@@ -6,11 +6,11 @@ See also `Stream.catchAll`.
 
 To import and use `orElse` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.orElse
-```
+undefined
 
 **Signature**
 

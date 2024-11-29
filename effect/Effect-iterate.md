@@ -19,11 +19,11 @@ return result
 
 To import and use `iterate` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.iterate
-```
+undefined
 
 **Example**
 

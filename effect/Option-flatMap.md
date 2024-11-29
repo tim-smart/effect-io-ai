@@ -4,11 +4,11 @@ Applies a function to the value of an `Option` and flattens the result, if the i
 
 To import and use `flatMap` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.flatMap
-```
+undefined
 
 **Signature**
 

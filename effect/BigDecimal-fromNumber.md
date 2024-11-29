@@ -7,11 +7,11 @@ as the floating point representation may be unexpected.
 
 To import and use `fromNumber` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.fromNumber
-```
+undefined
 
 **Example**
 

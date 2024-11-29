@@ -5,8 +5,8 @@ about this specific entity, like the entityId or the recipientType.
 
 To import and use `RecipientBehaviourContext` from the "RecipientBehaviourContext" module:
 
-```ts
-import * as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
+ts
+import \* as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
 // Can be accessed like this
 RecipientBehaviourContext.RecipientBehaviourContext
-```
+undefined

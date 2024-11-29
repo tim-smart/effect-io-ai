@@ -4,11 +4,11 @@ Returns a new data source with a localized FiberRef
 
 To import and use `locally` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.locally
-```
+undefined
 
 **Signature**
 

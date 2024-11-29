@@ -4,11 +4,11 @@ Constructs a layer dynamically based on the output of this layer.
 
 To import and use `flatMap` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.flatMap
-```
+undefined
 
 **Signature**
 

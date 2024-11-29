@@ -4,11 +4,11 @@
 
 To import and use `SemigroupSum` from the "Number" module:
 
-```ts
-import * as Number from "@effect/typeclass/data/Number"
+ts
+import \* as Number from "@effect/typeclass/data/Number"
 // Can be accessed like this
 Number.SemigroupSum
-```
+undefined
 
 **Example**
 

@@ -8,8 +8,8 @@ nested examples.
 
 To import and use `Flatten` from the "Flatten" module:
 
-```ts
-import * as Flatten from "@effect/printer/Flatten"
+ts
+import \* as Flatten from "@effect/printer/Flatten"
 // Can be accessed like this
 Flatten.Flatten
-```
+undefined

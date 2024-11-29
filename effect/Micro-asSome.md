@@ -4,11 +4,11 @@ Wrap the success value of this `Micro` effect in an `Option.Some`.
 
 To import and use `asSome` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.asSome
-```
+undefined
 
 **Signature**
 

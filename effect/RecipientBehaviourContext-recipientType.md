@@ -4,11 +4,11 @@ Gets the current recipientType
 
 To import and use `recipientType` from the "RecipientBehaviourContext" module:
 
-```ts
-import * as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
+ts
+import \* as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
 // Can be accessed like this
 RecipientBehaviourContext.recipientType
-```
+undefined
 
 **Signature**
 

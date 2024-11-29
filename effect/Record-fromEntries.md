@@ -7,11 +7,11 @@ previous ones. So the resulting record will only have the value of the last occu
 
 To import and use `fromEntries` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.fromEntries
-```
+undefined
 
 **Example**
 

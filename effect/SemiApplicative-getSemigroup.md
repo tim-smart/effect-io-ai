@@ -4,11 +4,11 @@ Lift a `Semigroup` into 'F', the inner values are combined using the provided `S
 
 To import and use `getSemigroup` from the "SemiApplicative" module:
 
-```ts
-import * as SemiApplicative from "@effect/typeclass/SemiApplicative"
+ts
+import \* as SemiApplicative from "@effect/typeclass/SemiApplicative"
 // Can be accessed like this
 SemiApplicative.getSemigroup
-```
+undefined
 
 **Signature**
 

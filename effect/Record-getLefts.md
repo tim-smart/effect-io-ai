@@ -4,11 +4,11 @@ Given a record with `Either` values, returns a new record containing only the `L
 
 To import and use `getLefts` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.getLefts
-```
+undefined
 
 **Example**
 

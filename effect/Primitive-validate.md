@@ -5,11 +5,11 @@ type.
 
 To import and use `validate` from the "Primitive" module:
 
-```ts
-import * as Primitive from "@effect/cli/Primitive"
+ts
+import \* as Primitive from "@effect/cli/Primitive"
 // Can be accessed like this
 Primitive.validate
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Given a function that resolves an RPC client, constructs a Pods service that use
 
 To import and use `podsRpc` from the "PodsRpc" module:
 
-```ts
-import * as PodsRpc from "@effect/cluster-node/PodsRpc"
+ts
+import \* as PodsRpc from "@effect/cluster-node/PodsRpc"
 // Can be accessed like this
 PodsRpc.podsRpc
-```
+undefined
 
 **Signature**
 

@@ -7,11 +7,11 @@ To adjust the log level, use the `Logger.withMinimumLogLevel` function.
 
 To import and use `log` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.log
-```
+undefined
 
 **Example**
 

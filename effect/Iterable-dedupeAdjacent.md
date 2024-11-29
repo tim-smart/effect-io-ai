@@ -4,11 +4,11 @@ Deduplicates adjacent elements that are identical.
 
 To import and use `dedupeAdjacent` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.dedupeAdjacent
-```
+undefined
 
 **Signature**
 

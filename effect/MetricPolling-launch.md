@@ -5,11 +5,11 @@ fiber, using the specified schedule.
 
 To import and use `launch` from the "MetricPolling" module:
 
-```ts
-import * as MetricPolling from "effect/MetricPolling"
+ts
+import \* as MetricPolling from "effect/MetricPolling"
 // Can be accessed like this
 MetricPolling.launch
-```
+undefined
 
 **Signature**
 

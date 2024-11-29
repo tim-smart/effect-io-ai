@@ -5,11 +5,11 @@ function.
 
 To import and use `map` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.map
-```
+undefined
 
 **Signature**
 

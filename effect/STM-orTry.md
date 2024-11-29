@@ -5,11 +5,11 @@ effect. This is an equivalent of Haskell's orElse.
 
 To import and use `orTry` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.orTry
-```
+undefined
 
 **Signature**
 

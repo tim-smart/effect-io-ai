@@ -6,11 +6,11 @@ second order if the first comparison is equal, and so on.
 
 To import and use `sortBy` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.sortBy
-```
+undefined
 
 **Example**
 

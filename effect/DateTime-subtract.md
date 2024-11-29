@@ -4,11 +4,11 @@ Subtract the given `amount` of `unit`'s from a `DateTime`.
 
 To import and use `subtract` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.subtract
-```
+undefined
 
 **Example**
 

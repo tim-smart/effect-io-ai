@@ -9,8 +9,8 @@ Represents a document containing a string of text.
 
 To import and use `Text` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.Text
-```
+undefined

@@ -4,11 +4,11 @@ Effectfully transform the <A> type of the MessageState<A>.
 
 To import and use `mapEffect` from the "MessageState" module:
 
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
+ts
+import \* as MessageState from "@effect/cluster/MessageState"
 // Can be accessed like this
 MessageState.mapEffect
-```
+undefined
 
 **Signature**
 

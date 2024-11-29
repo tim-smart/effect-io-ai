@@ -8,11 +8,11 @@ If the date time input or time zone is invalid, `None` will be returned.
 
 To import and use `makeZoned` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.makeZoned
-```
+undefined
 
 **Example**
 

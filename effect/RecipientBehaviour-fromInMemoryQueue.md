@@ -6,11 +6,11 @@ A PoisonPill is provided to request interruption of the entity behaviour.
 
 To import and use `fromInMemoryQueue` from the "RecipientBehaviour" module:
 
-```ts
-import * as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
+ts
+import \* as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
 // Can be accessed like this
 RecipientBehaviour.fromInMemoryQueue
-```
+undefined
 
 **Signature**
 

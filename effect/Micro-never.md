@@ -5,11 +5,11 @@ the Javascript runtime from exiting.
 
 To import and use `never` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.never
-```
+undefined
 
 **Signature**
 

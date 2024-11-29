@@ -6,11 +6,11 @@ result of the effect.
 
 To import and use `make` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.make
-```
+undefined
 
 **Signature**
 

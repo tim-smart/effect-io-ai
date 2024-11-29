@@ -4,11 +4,11 @@ Returns the value of the `Option` if it is `Some`, otherwise returns `onNone`
 
 To import and use `getOrElse` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrElse
-```
+undefined
 
 **Example**
 

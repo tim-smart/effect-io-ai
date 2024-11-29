@@ -7,11 +7,11 @@ effect depends on is closed.
 
 To import and use `extendScope` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.extendScope
-```
+undefined
 
 **Signature**
 

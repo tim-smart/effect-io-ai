@@ -22,11 +22,11 @@ collected, and the final result of the operation is `void`.
 
 To import and use `forEach` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.forEach
-```
+undefined
 
 **Example**
 

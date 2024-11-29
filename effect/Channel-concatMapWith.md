@@ -9,11 +9,11 @@ the returned channel.
 
 To import and use `concatMapWith` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.concatMapWith
-```
+undefined
 
 **Signature**
 

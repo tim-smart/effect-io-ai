@@ -6,11 +6,11 @@ shutdown, the `STM` will resume right away.
 
 To import and use `awaitShutdown` from the "TQueue" module:
 
-```ts
-import * as TQueue from "effect/TQueue"
+ts
+import \* as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.awaitShutdown
-```
+undefined
 
 **Signature**
 

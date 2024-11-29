@@ -4,11 +4,11 @@ Reduce an `Iterable` from the left, keeping all intermediate results instead of 
 
 To import and use `scan` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.scan
-```
+undefined
 
 **Signature**
 

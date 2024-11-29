@@ -5,11 +5,11 @@ attached to the current scope.
 
 To import and use `scheduleForked` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.scheduleForked
-```
+undefined
 
 **Signature**
 

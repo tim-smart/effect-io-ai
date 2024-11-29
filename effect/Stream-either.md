@@ -6,11 +6,11 @@ exposed as part of the `Either` success case.
 
 To import and use `either` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.either
-```
+undefined
 
 **Signature**
 

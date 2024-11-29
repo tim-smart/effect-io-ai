@@ -4,11 +4,11 @@ Recover from all errors by succeeding with the given value.
 
 To import and use `orElseSucceed` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.orElseSucceed
-```
+undefined
 
 **Signature**
 

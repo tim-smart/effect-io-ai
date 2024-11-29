@@ -6,11 +6,11 @@ than eagerly.
 
 To import and use `invalidate` from the "Pool" module:
 
-```ts
-import * as Pool from "effect/Pool"
+ts
+import \* as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.invalidate
-```
+undefined
 
 **Signature**
 

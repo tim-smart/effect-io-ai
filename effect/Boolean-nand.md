@@ -4,11 +4,11 @@ Combines two boolean using NAND: `!(self && that)`.
 
 To import and use `nand` from the "Boolean" module:
 
-```ts
-import * as Boolean from "effect/Boolean"
+ts
+import \* as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.nand
-```
+undefined
 
 **Example**
 

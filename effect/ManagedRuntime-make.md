@@ -5,11 +5,11 @@ your services.
 
 To import and use `make` from the "ManagedRuntime" module:
 
-```ts
-import * as ManagedRuntime from "effect/ManagedRuntime"
+ts
+import \* as ManagedRuntime from "effect/ManagedRuntime"
 // Can be accessed like this
 ManagedRuntime.make
-```
+undefined
 
 **Example**
 

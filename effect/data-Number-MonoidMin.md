@@ -6,11 +6,11 @@ The `empty` value is `-Infinity`.
 
 To import and use `MonoidMin` from the "Number" module:
 
-```ts
-import * as Number from "@effect/typeclass/data/Number"
+ts
+import \* as Number from "@effect/typeclass/data/Number"
 // Can be accessed like this
 Number.MonoidMin
-```
+undefined
 
 **Example**
 

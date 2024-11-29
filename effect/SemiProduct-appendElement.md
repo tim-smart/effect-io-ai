@@ -4,11 +4,11 @@ Appends an element to the end of a tuple.
 
 To import and use `appendElement` from the "SemiProduct" module:
 
-```ts
-import * as SemiProduct from "@effect/typeclass/SemiProduct"
+ts
+import \* as SemiProduct from "@effect/typeclass/SemiProduct"
 // Can be accessed like this
 SemiProduct.appendElement
-```
+undefined
 
 **Signature**
 

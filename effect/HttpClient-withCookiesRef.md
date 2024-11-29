@@ -4,11 +4,11 @@ Associates a `Ref` of cookies with the client for handling cookies across reques
 
 To import and use `withCookiesRef` from the "HttpClient" module:
 
-```ts
-import * as HttpClient from "@effect/platform/HttpClient"
+ts
+import \* as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.withCookiesRef
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Removes binding for given key.
 
 To import and use `remove` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.remove
-```
+undefined
 
 **Signature**
 

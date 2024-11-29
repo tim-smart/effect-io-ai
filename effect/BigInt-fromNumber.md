@@ -8,11 +8,11 @@ convert the number to a `bigint` and returns `Option.some(bigint)`.
 
 To import and use `fromNumber` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.fromNumber
-```
+undefined
 
 **Example**
 

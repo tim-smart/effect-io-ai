@@ -5,11 +5,11 @@ zone. It will return a `DateTime.Utc` only containing the date.
 
 To import and use `removeTime` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.removeTime
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Maps the `Some` side of an `Option` value to a new `Option` value.
 
 To import and use `map` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.map
-```
+undefined
 
 **Signature**
 

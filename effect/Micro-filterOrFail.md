@@ -8,11 +8,11 @@ refine and narrow down the type of the success channel by providing a
 
 To import and use `filterOrFail` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.filterOrFail
-```
+undefined
 
 **Signature**
 

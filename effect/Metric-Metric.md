@@ -18,8 +18,8 @@ There are five primitive metric types supported by Effect:
 
 To import and use `Metric` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.Metric
-```
+undefined

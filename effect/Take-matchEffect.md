@@ -7,11 +7,11 @@ yield an effect.
 
 To import and use `matchEffect` from the "Take" module:
 
-```ts
-import * as Take from "effect/Take"
+ts
+import \* as Take from "effect/Take"
 // Can be accessed like this
 Take.matchEffect
-```
+undefined
 
 **Signature**
 

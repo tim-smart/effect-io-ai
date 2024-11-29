@@ -5,8 +5,8 @@ receive a `TDequeue<A>` of the current value and all committed changes to the va
 
 To import and use `TSubscriptionRef` from the "TSubscriptionRef" module:
 
-```ts
-import * as TSubscriptionRef from "effect/TSubscriptionRef"
+ts
+import \* as TSubscriptionRef from "effect/TSubscriptionRef"
 // Can be accessed like this
 TSubscriptionRef.TSubscriptionRef
-```
+undefined

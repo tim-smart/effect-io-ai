@@ -4,11 +4,11 @@ Provides a Tagged constructor for a Request Class.
 
 To import and use `TaggedClass` from the "Request" module:
 
-```ts
-import * as Request from "effect/Request"
+ts
+import \* as Request from "effect/Request"
 // Can be accessed like this
 Request.TaggedClass
-```
+undefined
 
 **Example**
 

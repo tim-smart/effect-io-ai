@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isBool` from the "Options" module:
 
-```ts
-import * as Options from "@effect/cli/Options"
+ts
+import \* as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.isBool
-```
+undefined
 
 **Signature**
 

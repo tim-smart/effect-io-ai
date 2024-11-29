@@ -5,11 +5,11 @@ current context.
 
 To import and use `provideServiceEffect` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.provideServiceEffect
-```
+undefined
 
 **Signature**
 

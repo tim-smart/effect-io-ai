@@ -4,11 +4,11 @@ Returns a function that checks if an `Iterable` contains a given value using a p
 
 To import and use `containsWith` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.containsWith
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ streams produced by passing each element of this stream to `f0`
 
 To import and use `flatMap` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.flatMap
-```
+undefined
 
 **Signature**
 

@@ -11,11 +11,11 @@ If `n` is a float, it will be rounded down to the nearest integer.
 
 To import and use `takeLeft` from the "String" module:
 
-```ts
-import * as String from "effect/String"
+ts
+import \* as String from "effect/String"
 // Can be accessed like this
 String.takeLeft
-```
+undefined
 
 **Example**
 

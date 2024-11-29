@@ -4,11 +4,11 @@ Returns the number rounded with the given precision.
 
 To import and use `round` from the "Number" module:
 
-```ts
-import * as Number from "effect/Number"
+ts
+import \* as Number from "effect/Number"
 // Can be accessed like this
 Number.round
-```
+undefined
 
 **Example**
 

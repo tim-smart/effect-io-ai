@@ -4,11 +4,11 @@ Zips this Iterable crosswise with the specified Iterable.
 
 To import and use `cartesian` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.cartesian
-```
+undefined
 
 **Signature**
 

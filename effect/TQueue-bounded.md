@@ -8,11 +8,11 @@ For best performance use capacities that are powers of two.
 
 To import and use `bounded` from the "TQueue" module:
 
-```ts
-import * as TQueue from "effect/TQueue"
+ts
+import \* as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.bounded
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ returned by this schedule.
 
 To import and use `scheduleAddDelay` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.scheduleAddDelay
-```
+undefined
 
 **Signature**
 

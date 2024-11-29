@@ -4,11 +4,11 @@ Replaces this sink's result with the provided value.
 
 To import and use `as` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.as
-```
+undefined
 
 **Signature**
 

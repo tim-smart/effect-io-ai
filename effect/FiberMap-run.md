@@ -5,11 +5,11 @@ When the fiber completes, it will be removed from the FiberMap.
 
 To import and use `run` from the "FiberMap" module:
 
-```ts
-import * as FiberMap from "effect/FiberMap"
+ts
+import \* as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.run
-```
+undefined
 
 **Signature**
 

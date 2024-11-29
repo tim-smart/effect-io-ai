@@ -6,11 +6,11 @@ If the key is not present, returns `O.none`.
 
 To import and use `pop` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.pop
-```
+undefined
 
 **Example**
 

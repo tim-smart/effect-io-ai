@@ -6,11 +6,11 @@ The offset is formatted as "±HH:MM".
 
 To import and use `zonedOffsetIso` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.zonedOffsetIso
-```
+undefined
 
 **Signature**
 

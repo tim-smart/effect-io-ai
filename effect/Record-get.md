@@ -4,11 +4,11 @@ Retrieve a value at a particular key from a record, returning it wrapped in an `
 
 To import and use `get` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.get
-```
+undefined
 
 **Example**
 

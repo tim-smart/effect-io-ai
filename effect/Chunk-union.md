@@ -4,11 +4,11 @@ Creates a Chunks of unique values, in order, from all given Chunks.
 
 To import and use `union` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.union
-```
+undefined
 
 **Signature**
 

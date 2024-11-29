@@ -8,8 +8,8 @@ preserving ordering guarantees.
 
 To import and use `RequestBlock` from the "RequestBlock" module:
 
-```ts
-import * as RequestBlock from "effect/RequestBlock"
+ts
+import \* as RequestBlock from "effect/RequestBlock"
 // Can be accessed like this
 RequestBlock.RequestBlock
-```
+undefined

@@ -22,11 +22,11 @@ resolved synchronously.
 
 To import and use `runSyncExit` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.runSyncExit
-```
+undefined
 
 **Example**
 

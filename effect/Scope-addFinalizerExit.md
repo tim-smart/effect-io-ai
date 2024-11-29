@@ -6,11 +6,11 @@ on the exit status.
 
 To import and use `addFinalizerExit` from the "Scope" module:
 
-```ts
-import * as Scope from "effect/Scope"
+ts
+import \* as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.addFinalizerExit
-```
+undefined
 
 **Signature**
 

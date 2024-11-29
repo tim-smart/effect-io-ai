@@ -6,8 +6,8 @@ This allows to override the setting for a specific entity.
 
 To import and use `EntityBehaviourOptions` from the "RecipientBehaviour" module:
 
-```ts
-import * as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
+ts
+import \* as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
 // Can be accessed like this
 RecipientBehaviour.EntityBehaviourOptions
-```
+undefined

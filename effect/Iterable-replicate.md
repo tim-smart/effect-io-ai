@@ -6,11 +6,11 @@ Return a `Iterable` containing a value repeated the specified number of times.
 
 To import and use `replicate` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.replicate
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Flattens any nested `Micro` effects, merging the error and requirement types.
 
 To import and use `flatten` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.flatten
-```
+undefined
 
 **Signature**
 

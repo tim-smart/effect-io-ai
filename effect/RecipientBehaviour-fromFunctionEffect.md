@@ -7,11 +7,11 @@ if the message has just arrived and will be later processed or it has been proce
 
 To import and use `fromFunctionEffect` from the "RecipientBehaviour" module:
 
-```ts
-import * as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
+ts
+import \* as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
 // Can be accessed like this
 RecipientBehaviour.fromFunctionEffect
-```
+undefined
 
 **Signature**
 

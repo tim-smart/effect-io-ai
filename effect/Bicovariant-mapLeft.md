@@ -4,11 +4,11 @@ Returns a default `mapLeft` implementation.
 
 To import and use `mapLeft` from the "Bicovariant" module:
 
-```ts
-import * as Bicovariant from "@effect/typeclass/Bicovariant"
+ts
+import \* as Bicovariant from "@effect/typeclass/Bicovariant"
 // Can be accessed like this
 Bicovariant.mapLeft
-```
+undefined
 
 **Signature**
 

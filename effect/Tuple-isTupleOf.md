@@ -6,11 +6,11 @@ An `Array` is considered to be a `TupleOf` if its length is exactly `N`.
 
 To import and use `isTupleOf` from the "Tuple" module:
 
-```ts
-import * as Tuple from "effect/Tuple"
+ts
+import \* as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.isTupleOf
-```
+undefined
 
 **Example**
 

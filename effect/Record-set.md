@@ -4,11 +4,11 @@ Add a new key-value pair or update an existing key's value in a record.
 
 To import and use `set` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.set
-```
+undefined
 
 **Example**
 

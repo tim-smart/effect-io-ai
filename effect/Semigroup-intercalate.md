@@ -11,11 +11,11 @@ which is required for the `Monoid` interface, cannot exist.
 
 To import and use `intercalate` from the "Semigroup" module:
 
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
+ts
+import \* as Semigroup from "@effect/typeclass/Semigroup"
 // Can be accessed like this
 Semigroup.intercalate
-```
+undefined
 
 **Signature**
 

@@ -17,11 +17,11 @@ A `targetUtilization` of 0.5 will create new pool items when the existing items 
 
 To import and use `make` from the "Pool" module:
 
-```ts
-import * as Pool from "effect/Pool"
+ts
+import \* as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.make
-```
+undefined
 
 **Signature**
 

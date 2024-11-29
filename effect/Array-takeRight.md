@@ -6,11 +6,11 @@ Keep only a max number of elements from the end of an `Iterable`, creating a new
 
 To import and use `takeRight` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.takeRight
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ Execute the `Micro` effect and return a `Promise` that resolves with the
 
 To import and use `runPromiseExit` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.runPromiseExit
-```
+undefined
 
 **Signature**
 

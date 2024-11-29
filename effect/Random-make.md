@@ -11,11 +11,11 @@ Example uses:
 
 To import and use `make` from the "Random" module:
 
-```ts
-import * as Random from "effect/Random"
+ts
+import \* as Random from "effect/Random"
 // Can be accessed like this
 Random.make
-```
+undefined
 
 **Example**
 

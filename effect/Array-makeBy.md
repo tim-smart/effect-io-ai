@@ -6,11 +6,11 @@ Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.
 
 To import and use `makeBy` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.makeBy
-```
+undefined
 
 **Example**
 

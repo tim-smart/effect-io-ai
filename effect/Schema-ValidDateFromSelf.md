@@ -8,8 +8,8 @@ represent real dates.
 
 To import and use `ValidDateFromSelf` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.ValidDateFromSelf
-```
+undefined

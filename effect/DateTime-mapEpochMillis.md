@@ -5,11 +5,11 @@ since the Unix epoch.
 
 To import and use `mapEpochMillis` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.mapEpochMillis
-```
+undefined
 
 **Example**
 

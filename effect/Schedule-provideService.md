@@ -6,11 +6,11 @@ instead.
 
 To import and use `provideService` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.provideService
-```
+undefined
 
 **Signature**
 

@@ -6,8 +6,8 @@ or moved around, we always move all the entities with the same shard id.
 
 To import and use `ShardId` from the "ShardId" module:
 
-```ts
-import * as ShardId from "@effect/cluster/ShardId"
+ts
+import \* as ShardId from "@effect/cluster/ShardId"
 // Can be accessed like this
 ShardId.ShardId
-```
+undefined

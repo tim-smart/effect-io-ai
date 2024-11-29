@@ -6,11 +6,11 @@ If `end` is omitted, the range will not have an upper bound.
 
 To import and use `range` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.range
-```
+undefined
 
 **Example**
 

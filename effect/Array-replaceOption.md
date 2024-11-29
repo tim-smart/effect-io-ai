@@ -4,11 +4,11 @@ Replaces an element in an array with the given value, returning an option of the
 
 To import and use `replaceOption` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.replaceOption
-```
+undefined
 
 **Example**
 

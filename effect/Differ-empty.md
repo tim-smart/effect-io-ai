@@ -4,11 +4,11 @@ An empty patch that describes no changes.
 
 To import and use `empty` from the "Differ" module:
 
-```ts
-import * as Differ from "effect/Differ"
+ts
+import \* as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.empty
-```
+undefined
 
 **Signature**
 

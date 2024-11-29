@@ -7,11 +7,11 @@ This function is useful for discarding the first argument passed to it and retur
 
 To import and use `SK` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.SK
-```
+undefined
 
 **Example**
 

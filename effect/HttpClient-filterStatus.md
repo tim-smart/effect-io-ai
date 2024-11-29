@@ -4,11 +4,11 @@ Filters responses by HTTP status code.
 
 To import and use `filterStatus` from the "HttpClient" module:
 
-```ts
-import * as HttpClient from "@effect/platform/HttpClient"
+ts
+import \* as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.filterStatus
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ iteration of the event loop.
 
 To import and use `yieldNow` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.yieldNow
-```
+undefined
 
 **Signature**
 

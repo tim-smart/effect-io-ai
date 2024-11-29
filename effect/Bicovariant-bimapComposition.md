@@ -4,11 +4,11 @@ Returns a default ternary `bimap` composition.
 
 To import and use `bimapComposition` from the "Bicovariant" module:
 
-```ts
-import * as Bicovariant from "@effect/typeclass/Bicovariant"
+ts
+import \* as Bicovariant from "@effect/typeclass/Bicovariant"
 // Can be accessed like this
 Bicovariant.bimapComposition
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ finished executing.
 
 To import and use `scoped` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.scoped
-```
+undefined
 
 **Signature**
 

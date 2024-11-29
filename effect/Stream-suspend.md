@@ -4,11 +4,11 @@ Returns a lazily constructed stream.
 
 To import and use `suspend` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.suspend
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Lifts a binary function into `F`.
 
 To import and use `lift2` from the "SemiApplicative" module:
 
-```ts
-import * as SemiApplicative from "@effect/typeclass/SemiApplicative"
+ts
+import \* as SemiApplicative from "@effect/typeclass/SemiApplicative"
 // Can be accessed like this
 SemiApplicative.lift2
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ Returns `true` if the start of this `Intervals` is before the start of that
 
 To import and use `lessThan` from the "ScheduleIntervals" module:
 
-```ts
-import * as ScheduleIntervals from "effect/ScheduleIntervals"
+ts
+import \* as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.lessThan
-```
+undefined
 
 **Signature**
 

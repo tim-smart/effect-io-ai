@@ -5,11 +5,11 @@ if the value is a `Right`the inner value is applied to the`onRight` function.
 
 To import and use `match` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.match
-```
+undefined
 
 **Example**
 

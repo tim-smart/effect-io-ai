@@ -4,11 +4,11 @@ A guard that always succeeds.
 
 To import and use `isUnknown` from the "Predicate" module:
 
-```ts
-import * as Predicate from "effect/Predicate"
+ts
+import \* as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isUnknown
-```
+undefined
 
 **Example**
 

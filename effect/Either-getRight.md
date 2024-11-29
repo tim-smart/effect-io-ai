@@ -2,15 +2,13 @@
 
 Converts a `Either` to an `Option` discarding the `Left`.
 
-Alias of {@link toOption}.
-
 To import and use `getRight` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.getRight
-```
+undefined
 
 **Example**
 

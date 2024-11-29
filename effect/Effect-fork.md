@@ -22,11 +22,11 @@ behavior is not desired, you may use the `forkDaemon` or `forkIn` methods.
 
 To import and use `fork` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.fork
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Specify the standard error stream for a command.
 
 To import and use `stderr` from the "Command" module:
 
-```ts
-import * as Command from "@effect/platform/Command"
+ts
+import \* as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.stderr
-```
+undefined
 
 **Signature**
 

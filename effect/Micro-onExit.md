@@ -5,11 +5,11 @@ When the `Micro` effect is completed, run the given finalizer effect with the
 
 To import and use `onExit` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.onExit
-```
+undefined
 
 **Signature**
 

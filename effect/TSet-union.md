@@ -5,11 +5,11 @@ set.
 
 To import and use `union` from the "TSet" module:
 
-```ts
-import * as TSet from "effect/TSet"
+ts
+import \* as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.union
-```
+undefined
 
 **Signature**
 

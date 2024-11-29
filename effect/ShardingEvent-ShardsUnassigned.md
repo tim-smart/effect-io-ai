@@ -4,11 +4,11 @@ Constructs the event that occurs when shards are unassigned to a Pod
 
 To import and use `ShardsUnassigned` from the "ShardingEvent" module:
 
-```ts
-import * as ShardingEvent from "@effect/cluster/ShardingEvent"
+ts
+import \* as ShardingEvent from "@effect/cluster/ShardingEvent"
 // Can be accessed like this
 ShardingEvent.ShardsUnassigned
-```
+undefined
 
 **Signature**
 

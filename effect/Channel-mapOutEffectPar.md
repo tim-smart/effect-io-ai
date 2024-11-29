@@ -6,11 +6,11 @@ mapping them in parallel.
 
 To import and use `mapOutEffectPar` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapOutEffectPar
-```
+undefined
 
 **Signature**
 

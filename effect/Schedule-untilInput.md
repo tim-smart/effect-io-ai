@@ -5,11 +5,11 @@ input evaluates to true.
 
 To import and use `untilInput` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.untilInput
-```
+undefined
 
 **Signature**
 

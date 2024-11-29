@@ -6,11 +6,11 @@ The `empty` value is `0n`.
 
 To import and use `MonoidSum` from the "BigInt" module:
 
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
+ts
+import \* as BigInt from "@effect/typeclass/data/BigInt"
 // Can be accessed like this
 BigInt.MonoidSum
-```
+undefined
 
 **Example**
 

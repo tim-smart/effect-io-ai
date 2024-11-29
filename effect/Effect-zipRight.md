@@ -16,11 +16,11 @@ use the `{ concurrent: true }` option.
 
 To import and use `zipRight` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.zipRight
-```
+undefined
 
 **Example**
 

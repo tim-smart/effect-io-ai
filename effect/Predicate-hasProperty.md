@@ -4,11 +4,11 @@ Checks whether a value is an `object` containing a specified property key.
 
 To import and use `hasProperty` from the "Predicate" module:
 
-```ts
-import * as Predicate from "effect/Predicate"
+ts
+import \* as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.hasProperty
-```
+undefined
 
 **Signature**
 

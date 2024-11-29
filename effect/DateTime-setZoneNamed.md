@@ -5,11 +5,11 @@ time zone is invalid, `None` will be returned.
 
 To import and use `setZoneNamed` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.setZoneNamed
-```
+undefined
 
 **Example**
 

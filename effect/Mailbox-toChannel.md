@@ -4,11 +4,11 @@ Create a `Channel` from a `Mailbox`.
 
 To import and use `toChannel` from the "Mailbox" module:
 
-```ts
-import * as Mailbox from "effect/Mailbox"
+ts
+import \* as Mailbox from "effect/Mailbox"
 // Can be accessed like this
 Mailbox.toChannel
-```
+undefined
 
 **Signature**
 

@@ -10,11 +10,11 @@ function for this use case.
 
 To import and use `vsep` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.vsep
-```
+undefined
 
 **Example**
 

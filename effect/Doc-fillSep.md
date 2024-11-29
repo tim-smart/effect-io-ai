@@ -11,11 +11,11 @@ want a `space`.
 
 To import and use `fillSep` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.fillSep
-```
+undefined
 
 **Signature**
 

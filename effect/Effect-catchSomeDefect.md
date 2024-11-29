@@ -28,11 +28,11 @@ The function provided to `catchSomeDefect` acts as a filter and a handler for de
 
 To import and use `catchSomeDefect` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchSomeDefect
-```
+undefined
 
 **Example**
 

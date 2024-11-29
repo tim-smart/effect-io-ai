@@ -4,11 +4,11 @@ Finds the maximum element in an array based on a comparator.
 
 To import and use `max` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.max
-```
+undefined
 
 **Example**
 

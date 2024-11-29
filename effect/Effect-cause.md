@@ -12,11 +12,11 @@ interruptions, etc.).
 
 To import and use `cause` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.cause
-```
+undefined
 
 **Example**
 

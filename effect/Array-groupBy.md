@@ -5,11 +5,11 @@ function on each element, and grouping the results according to values returned
 
 To import and use `groupBy` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.groupBy
-```
+undefined
 
 **Example**
 

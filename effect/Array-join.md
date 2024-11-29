@@ -4,11 +4,11 @@ Joins the elements together with "sep" in the middle.
 
 To import and use `join` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.join
-```
+undefined
 
 **Example**
 

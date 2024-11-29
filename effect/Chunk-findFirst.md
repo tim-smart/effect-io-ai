@@ -5,11 +5,11 @@ predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.findFirst
-```
+undefined
 
 **Signature**
 

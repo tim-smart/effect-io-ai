@@ -15,11 +15,11 @@ retries are exhausted and the effect still fails, the failure is propagated.
 
 To import and use `retry` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.retry
-```
+undefined
 
 **Example**
 

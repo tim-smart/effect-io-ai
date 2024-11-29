@@ -13,11 +13,11 @@ and execution will stop where the failure or async operation occurs.
 
 To import and use `runSync` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.runSync
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Converts a `Duration` to a human readable string.
 
 To import and use `format` from the "Duration" module:
 
-```ts
-import * as Duration from "effect/Duration"
+ts
+import \* as Duration from "effect/Duration"
 // Can be accessed like this
 Duration.format
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ already been completed, `None` otherwise.
 
 To import and use `poll` from the "Deferred" module:
 
-```ts
-import * as Deferred from "effect/Deferred"
+ts
+import \* as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.poll
-```
+undefined
 
 **Signature**
 

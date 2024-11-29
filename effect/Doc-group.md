@@ -9,11 +9,11 @@ The `group` function is key to layouts that adapt to available space nicely.
 
 To import and use `group` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.group
-```
+undefined
 
 **Signature**
 

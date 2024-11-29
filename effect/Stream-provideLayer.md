@@ -4,11 +4,11 @@ Provides a `Layer` to the stream, which translates it to another level.
 
 To import and use `provideLayer` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.provideLayer
-```
+undefined
 
 **Signature**
 

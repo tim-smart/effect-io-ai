@@ -4,11 +4,11 @@ Maps from one error type to another.
 
 To import and use `mapError` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.mapError
-```
+undefined
 
 **Signature**
 

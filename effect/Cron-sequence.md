@@ -4,11 +4,11 @@ Returns an `IterableIterator` which yields the sequence of `Date`s that match th
 
 To import and use `sequence` from the "Cron" module:
 
-```ts
-import * as Cron from "effect/Cron"
+ts
+import \* as Cron from "effect/Cron"
 // Can be accessed like this
 Cron.sequence
-```
+undefined
 
 **Signature**
 

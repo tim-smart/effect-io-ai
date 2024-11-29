@@ -6,8 +6,8 @@ they affect the behavior and performance of application code.
 
 To import and use `RuntimeFlags` from the "RuntimeFlags" module:
 
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
+ts
+import \* as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.RuntimeFlags
-```
+undefined

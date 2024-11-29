@@ -4,11 +4,11 @@ Disables tracing for specific requests based on a provided predicate.
 
 To import and use `withTracerDisabledWhen` from the "HttpClient" module:
 
-```ts
-import * as HttpClient from "@effect/platform/HttpClient"
+ts
+import \* as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.withTracerDisabledWhen
-```
+undefined
 
 **Signature**
 

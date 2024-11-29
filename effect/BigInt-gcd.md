@@ -4,11 +4,11 @@ Determines the greatest common divisor of two `bigint`s.
 
 To import and use `gcd` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.gcd
-```
+undefined
 
 **Example**
 

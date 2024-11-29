@@ -8,11 +8,11 @@ NOTE: `expression` parameter is validated lazily. Must be a valid cron expressio
 
 To import and use `cron` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.cron
-```
+undefined
 
 **Signature**
 

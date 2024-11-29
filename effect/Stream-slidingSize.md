@@ -4,11 +4,11 @@ Like `sliding`, but with a configurable `stepSize` parameter.
 
 To import and use `slidingSize` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.slidingSize
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "HashMap" module:
 
-```ts
-import * as HashMap from "effect/HashMap"
+ts
+import \* as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.findFirst
-```
+undefined
 
 **Signature**
 

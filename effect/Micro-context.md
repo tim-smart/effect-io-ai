@@ -4,11 +4,11 @@ Access the current `Context` from the environment.
 
 To import and use `context` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.context
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ using the specified combiner function.
 
 To import and use `zipWith` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.zipWith
-```
+undefined
 
 **Signature**
 

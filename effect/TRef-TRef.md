@@ -10,8 +10,8 @@ reference, the value inside the `TRef` should be immutable.
 
 To import and use `TRef` from the "TRef" module:
 
-```ts
-import * as TRef from "effect/TRef"
+ts
+import \* as TRef from "effect/TRef"
 // Can be accessed like this
 TRef.TRef
-```
+undefined

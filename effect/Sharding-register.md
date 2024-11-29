@@ -4,11 +4,11 @@ Notify the shard manager that shards can now be assigned to this pod.
 
 To import and use `register` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.register
-```
+undefined
 
 **Signature**
 

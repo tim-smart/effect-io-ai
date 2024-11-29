@@ -4,11 +4,11 @@ Wraps the stream with a new span for tracing.
 
 To import and use `withSpan` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.withSpan
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ A variant of `flatMap` that ignores the value produced by this effect.
 
 To import and use `zipRight` from the "FlatMap" module:
 
-```ts
-import * as FlatMap from "@effect/typeclass/FlatMap"
+ts
+import \* as FlatMap from "@effect/typeclass/FlatMap"
 // Can be accessed like this
 FlatMap.zipRight
-```
+undefined
 
 **Signature**
 

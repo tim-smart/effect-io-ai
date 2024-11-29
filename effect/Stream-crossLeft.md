@@ -8,11 +8,11 @@ See also `Stream.zipLeft` for the more common point-wise variant.
 
 To import and use `crossLeft` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.crossLeft
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Negates the given boolean: `!self`
 
 To import and use `not` from the "Boolean" module:
 
-```ts
-import * as Boolean from "effect/Boolean"
+ts
+import \* as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.not
-```
+undefined
 
 **Example**
 

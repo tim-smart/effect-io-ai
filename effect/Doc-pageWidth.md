@@ -4,11 +4,11 @@ Lays out a document according to the document"s`PageWidth`.
 
 To import and use `pageWidth` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.pageWidth
-```
+undefined
 
 **Example**
 

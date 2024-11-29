@@ -5,11 +5,11 @@ When the fiber completes, it will be removed from the FiberHandle.
 
 To import and use `run` from the "FiberHandle" module:
 
-```ts
-import * as FiberHandle from "effect/FiberHandle"
+ts
+import \* as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.run
-```
+undefined
 
 **Signature**
 

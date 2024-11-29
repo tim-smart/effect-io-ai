@@ -7,11 +7,11 @@ If you also want to perform some validation, see {@link refined}.
 
 To import and use `nominal` from the "Brand" module:
 
-```ts
-import * as Brand from "effect/Brand"
+ts
+import \* as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.nominal
-```
+undefined
 
 **Example**
 

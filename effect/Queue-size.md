@@ -6,11 +6,11 @@ elements to be added to the queue.
 
 To import and use `size` from the "Queue" module:
 
-```ts
-import * as Queue from "effect/Queue"
+ts
+import \* as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.size
-```
+undefined
 
 **Signature**
 

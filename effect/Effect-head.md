@@ -5,11 +5,11 @@ is non-empty, or fails with the error `None` if the collection is empty.
 
 To import and use `head` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.head
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ Partitions the stream with the specified `chunkSize` or until the specified
 
 To import and use `groupedWithin` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.groupedWithin
-```
+undefined
 
 **Example**
 

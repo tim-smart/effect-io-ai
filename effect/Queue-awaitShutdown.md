@@ -6,11 +6,11 @@ shutdown, the `Effect` will resume right away.
 
 To import and use `awaitShutdown` from the "Queue" module:
 
-```ts
-import * as Queue from "effect/Queue"
+ts
+import \* as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.awaitShutdown
-```
+undefined
 
 **Signature**
 

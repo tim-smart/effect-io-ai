@@ -4,11 +4,11 @@ Set the different parts of a `DateTime` as an object.
 
 To import and use `setPartsUtc` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.setPartsUtc
-```
+undefined
 
 **Signature**
 

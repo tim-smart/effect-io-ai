@@ -4,11 +4,11 @@ Folds over the result of this channel including any cause of termination.
 
 To import and use `foldCauseChannel` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.foldCauseChannel
-```
+undefined
 
 **Signature**
 

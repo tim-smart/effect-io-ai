@@ -7,11 +7,11 @@ pulled.
 
 To import and use `interleave` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.interleave
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Executes this workflow when the value of the `Ref` satisfies the predicate.
 
 To import and use `whenRef` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.whenRef
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Transforms the values of a record into an `Array` with a custom mapping function
 
 To import and use `collect` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.collect
-```
+undefined
 
 **Example**
 

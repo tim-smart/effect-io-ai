@@ -7,11 +7,11 @@ documents will be separated by newlines. This is what differentiates it from
 
 To import and use `seps` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.seps
-```
+undefined
 
 **Example**
 

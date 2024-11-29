@@ -5,11 +5,11 @@ be used to execute effects.
 
 To import and use `toRuntimeWithMemoMap` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.toRuntimeWithMemoMap
-```
+undefined
 
 **Signature**
 

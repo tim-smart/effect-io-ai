@@ -4,11 +4,11 @@ Splits the specified list into two lists at the specified index.
 
 To import and use `splitAt` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.splitAt
-```
+undefined
 
 **Signature**
 

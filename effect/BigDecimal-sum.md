@@ -4,11 +4,11 @@ Provides an addition operation on `BigDecimal`s.
 
 To import and use `sum` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.sum
-```
+undefined
 
 **Example**
 

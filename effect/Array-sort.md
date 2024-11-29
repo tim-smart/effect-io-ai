@@ -5,11 +5,11 @@ If the input is a `NonEmptyReadonlyArray`, the output will also be a `NonEmptyRe
 
 To import and use `sort` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.sort
-```
+undefined
 
 **Signature**
 

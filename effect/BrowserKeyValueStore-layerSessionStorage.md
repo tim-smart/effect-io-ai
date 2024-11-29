@@ -4,11 +4,11 @@ Creates a KeyValueStore layer that uses the browser's sessionStorage api. Values
 
 To import and use `layerSessionStorage` from the "BrowserKeyValueStore" module:
 
-```ts
-import * as BrowserKeyValueStore from "@effect/platform-browser/BrowserKeyValueStore"
+ts
+import \* as BrowserKeyValueStore from "@effect/platform-browser/BrowserKeyValueStore"
 // Can be accessed like this
 BrowserKeyValueStore.layerSessionStorage
-```
+undefined
 
 **Signature**
 

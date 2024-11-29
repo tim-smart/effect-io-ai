@@ -4,11 +4,11 @@ Tests if a value is a `RegExp`.
 
 To import and use `isRegExp` from the "RegExp" module:
 
-```ts
-import * as RegExp from "effect/RegExp"
+ts
+import \* as RegExp from "effect/RegExp"
 // Can be accessed like this
 RegExp.isRegExp
-```
+undefined
 
 **Example**
 

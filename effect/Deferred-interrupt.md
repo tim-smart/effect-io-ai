@@ -6,11 +6,11 @@ calling this method.
 
 To import and use `interrupt` from the "Deferred" module:
 
-```ts
-import * as Deferred from "effect/Deferred"
+ts
+import \* as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.interrupt
-```
+undefined
 
 **Signature**
 

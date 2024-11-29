@@ -4,11 +4,11 @@ Replace the error type of the given `Micro` with the full `MicroCause` object.
 
 To import and use `sandbox` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.sandbox
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ A `ReadonlyArray` is considered to be a `NonEmptyReadonlyArray` if it contains a
 
 To import and use `isNonEmptyReadonlyArray` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.isNonEmptyReadonlyArray
-```
+undefined
 
 **Example**
 

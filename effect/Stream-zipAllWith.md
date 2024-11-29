@@ -8,11 +8,11 @@ lengths and one of the streams has ended before the other.
 
 To import and use `zipAllWith` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipAllWith
-```
+undefined
 
 **Example**
 

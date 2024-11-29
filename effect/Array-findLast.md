@@ -5,11 +5,11 @@ Returns an `Option` containing the found element, or `Option.none` if no element
 
 To import and use `findLast` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.findLast
-```
+undefined
 
 **Example**
 

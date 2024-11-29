@@ -4,11 +4,11 @@ Determine if the array contains a value satisfying a predicate.
 
 To import and use `some` from the "TArray" module:
 
-```ts
-import * as TArray from "effect/TArray"
+ts
+import \* as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.some
-```
+undefined
 
 **Signature**
 

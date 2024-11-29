@@ -13,11 +13,11 @@ It is useful when you need to combine two tuples of the same type and you have a
 
 To import and use `tuple` from the "Semigroup" module:
 
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
+ts
+import \* as Semigroup from "@effect/typeclass/Semigroup"
 // Can be accessed like this
 Semigroup.tuple
-```
+undefined
 
 **Signature**
 

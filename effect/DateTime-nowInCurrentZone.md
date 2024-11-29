@@ -4,11 +4,11 @@ Get the current time as a `DateTime.Zoned`, using the `CurrentTimeZone`.
 
 To import and use `nowInCurrentZone` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.nowInCurrentZone
-```
+undefined
 
 **Example**
 

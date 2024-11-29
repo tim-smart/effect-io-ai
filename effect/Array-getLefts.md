@@ -4,11 +4,11 @@ Retrieves the `Left` values from an `Iterable` of `Either`s, collecting them int
 
 To import and use `getLefts` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.getLefts
-```
+undefined
 
 **Example**
 

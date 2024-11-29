@@ -4,11 +4,11 @@ Start running the command and return a handle to the running process.
 
 To import and use `start` from the "Command" module:
 
-```ts
-import * as Command from "@effect/platform/Command"
+ts
+import \* as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.start
-```
+undefined
 
 **Signature**
 

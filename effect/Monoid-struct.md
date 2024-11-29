@@ -9,11 +9,11 @@ It is useful when you need to combine two structs of the same type and you have 
 
 To import and use `struct` from the "Monoid" module:
 
-```ts
-import * as Monoid from "@effect/typeclass/Monoid"
+ts
+import \* as Monoid from "@effect/typeclass/Monoid"
 // Can be accessed like this
 Monoid.struct
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Equivalent at runtime to the built-in TypeScript utility type `Omit`.
 
 To import and use `omit` from the "SchemaAST" module:
 
-```ts
-import * as SchemaAST from "effect/SchemaAST"
+ts
+import \* as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
 SchemaAST.omit
-```
+undefined
 
 **Signature**
 

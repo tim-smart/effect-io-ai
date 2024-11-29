@@ -5,11 +5,11 @@ during development or in a production console.
 
 To import and use `logfmtLogger` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.logfmtLogger
-```
+undefined
 
 **Example**
 

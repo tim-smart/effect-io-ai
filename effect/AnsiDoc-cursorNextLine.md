@@ -5,11 +5,11 @@ Moves cursor to beginning of the line the specified number of rows down
 
 To import and use `cursorNextLine` from the "AnsiDoc" module:
 
-```ts
-import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+ts
+import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorNextLine
-```
+undefined
 
 **Signature**
 

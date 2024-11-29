@@ -8,11 +8,11 @@ already in the time zone.
 
 To import and use `unsafeMakeZoned` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.unsafeMakeZoned
-```
+undefined
 
 **Example**
 

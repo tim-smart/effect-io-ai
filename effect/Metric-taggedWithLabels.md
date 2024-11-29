@@ -5,11 +5,11 @@ the specified tags have been added to the tags of this metric.
 
 To import and use `taggedWithLabels` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.taggedWithLabels
-```
+undefined
 
 **Signature**
 

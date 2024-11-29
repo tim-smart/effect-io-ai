@@ -5,11 +5,11 @@ or return `None` if the key doesn't exist.
 
 To import and use `modifyOption` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.modifyOption
-```
+undefined
 
 **Example**
 

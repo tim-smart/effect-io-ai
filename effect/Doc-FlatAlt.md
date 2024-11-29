@@ -9,8 +9,8 @@ is less wide than the flattened second alternative.
 
 To import and use `FlatAlt` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.FlatAlt
-```
+undefined

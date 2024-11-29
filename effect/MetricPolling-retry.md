@@ -5,11 +5,11 @@ specified retry policy.
 
 To import and use `retry` from the "MetricPolling" module:
 
-```ts
-import * as MetricPolling from "effect/MetricPolling"
+ts
+import \* as MetricPolling from "effect/MetricPolling"
 // Can be accessed like this
 MetricPolling.retry
-```
+undefined
 
 **Signature**
 

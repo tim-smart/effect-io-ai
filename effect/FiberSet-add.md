@@ -4,11 +4,11 @@ Add a fiber to the FiberSet. When the fiber completes, it will be removed.
 
 To import and use `add` from the "FiberSet" module:
 
-```ts
-import * as FiberSet from "effect/FiberSet"
+ts
+import \* as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.add
-```
+undefined
 
 **Signature**
 

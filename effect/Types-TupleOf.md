@@ -6,11 +6,11 @@ This type constructs a tuple that has exactly `N` elements of type `T`.
 
 To import and use `TupleOf` from the "Types" module:
 
-```ts
-import * as Types from "effect/Types"
+ts
+import \* as Types from "effect/Types"
 // Can be accessed like this
 Types.TupleOf
-```
+undefined
 
 **Example**
 

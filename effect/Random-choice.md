@@ -4,11 +4,11 @@ Get a random element from an iterable.
 
 To import and use `choice` from the "Random" module:
 
-```ts
-import * as Random from "effect/Random"
+ts
+import \* as Random from "effect/Random"
 // Can be accessed like this
 Random.choice
-```
+undefined
 
 **Example**
 

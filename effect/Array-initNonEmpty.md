@@ -4,11 +4,11 @@ Get all but the last element of a non empty array, creating a new array.
 
 To import and use `initNonEmpty` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.initNonEmpty
-```
+undefined
 
 **Example**
 

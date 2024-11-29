@@ -4,11 +4,11 @@ Applies the specified function to the entries of the `Trie`.
 
 To import and use `forEach` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.forEach
-```
+undefined
 
 **Example**
 

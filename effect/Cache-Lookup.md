@@ -6,8 +6,8 @@ with an error of type `Error` using an environment of type `Environment`.
 
 To import and use `Lookup` from the "Cache" module:
 
-```ts
-import * as Cache from "effect/Cache"
+ts
+import \* as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.Lookup
-```
+undefined

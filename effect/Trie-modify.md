@@ -4,11 +4,11 @@ Updates the value of the specified key within the `Trie` if it exists.
 
 To import and use `modify` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.modify
-```
+undefined
 
 **Example**
 

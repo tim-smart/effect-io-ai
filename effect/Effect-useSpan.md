@@ -8,11 +8,11 @@ created for it.
 
 To import and use `useSpan` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.useSpan
-```
+undefined
 
 **Signature**
 

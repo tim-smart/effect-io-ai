@@ -6,11 +6,11 @@ The `empty` value is `''`.
 
 To import and use `Monoid` from the "String" module:
 
-```ts
-import * as String from "@effect/typeclass/data/String"
+ts
+import \* as String from "@effect/typeclass/data/String"
 // Can be accessed like this
 String.Monoid
-```
+undefined
 
 **Signature**
 

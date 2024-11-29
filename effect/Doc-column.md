@@ -4,11 +4,11 @@ Lays out a document depending upon the column at which the document starts.
 
 To import and use `column` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.column
-```
+undefined
 
 **Example**
 

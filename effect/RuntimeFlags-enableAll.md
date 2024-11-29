@@ -4,11 +4,11 @@ Enables all of the `RuntimeFlag`s in the specified set of `RuntimeFlags`.
 
 To import and use `enableAll` from the "RuntimeFlags" module:
 
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
+ts
+import \* as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.enableAll
-```
+undefined
 
 **Signature**
 

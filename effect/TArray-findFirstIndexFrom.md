@@ -5,11 +5,11 @@ specified index.
 
 To import and use `findFirstIndexFrom` from the "TArray" module:
 
-```ts
-import * as TArray from "effect/TArray"
+ts
+import \* as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstIndexFrom
-```
+undefined
 
 **Signature**
 

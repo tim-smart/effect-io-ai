@@ -5,11 +5,11 @@ Returns an effect that will never produce anything. The moral equivalent of
 
 To import and use `never` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.never
-```
+undefined
 
 **Signature**
 

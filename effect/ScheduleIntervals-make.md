@@ -4,11 +4,11 @@ Creates a new `Intervals` from a `List` of `Interval`s.
 
 To import and use `make` from the "ScheduleIntervals" module:
 
-```ts
-import * as ScheduleIntervals from "effect/ScheduleIntervals"
+ts
+import \* as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.make
-```
+undefined
 
 **Signature**
 

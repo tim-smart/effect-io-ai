@@ -5,11 +5,11 @@ the returned Effect will terminate with the first failure that occurred.
 
 To import and use `join` from the "FiberHandle" module:
 
-```ts
-import * as FiberHandle from "effect/FiberHandle"
+ts
+import \* as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.join
-```
+undefined
 
 **Example**
 

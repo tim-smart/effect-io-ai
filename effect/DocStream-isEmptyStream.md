@@ -4,11 +4,11 @@ Returns `true` if the specified `DocStream` is a `EmptyStream`, `false` otherwis
 
 To import and use `isEmptyStream` from the "DocStream" module:
 
-```ts
-import * as DocStream from "@effect/printer/DocStream"
+ts
+import \* as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.isEmptyStream
-```
+undefined
 
 **Signature**
 

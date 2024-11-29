@@ -7,11 +7,11 @@ The error is provided as a lazy argument, meaning it will only be evaluated when
 
 To import and use `dieSync` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.dieSync
-```
+undefined
 
 **Signature**
 

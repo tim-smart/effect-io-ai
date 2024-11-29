@@ -4,11 +4,11 @@ Returns a default `map` composition.
 
 To import and use `mapComposition` from the "Covariant" module:
 
-```ts
-import * as Covariant from "@effect/typeclass/Covariant"
+ts
+import \* as Covariant from "@effect/typeclass/Covariant"
 // Can be accessed like this
 Covariant.mapComposition
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Swap the error and success types of the `Micro` effect.
 
 To import and use `flip` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.flip
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ from the previous save, if any, otherwise resets these all to their defaults.
 
 To import and use `cursorRestorePosition` from the "AnsiDoc" module:
 
-```ts
-import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+ts
+import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorRestorePosition
-```
+undefined
 
 **Signature**
 

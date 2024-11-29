@@ -5,11 +5,11 @@ provided functions.
 
 To import and use `mapBoth` from the "Exit" module:
 
-```ts
-import * as Exit from "effect/Exit"
+ts
+import \* as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.mapBoth
-```
+undefined
 
 **Signature**
 

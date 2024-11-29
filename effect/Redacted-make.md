@@ -5,11 +5,11 @@ securely hiding its content.
 
 To import and use `make` from the "Redacted" module:
 
-```ts
-import * as Redacted from "effect/Redacted"
+ts
+import \* as Redacted from "effect/Redacted"
 // Can be accessed like this
 Redacted.make
-```
+undefined
 
 **Example**
 

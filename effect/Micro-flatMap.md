@@ -5,11 +5,11 @@ flatten the result.
 
 To import and use `flatMap` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.flatMap
-```
+undefined
 
 **Signature**
 

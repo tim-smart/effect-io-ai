@@ -6,11 +6,11 @@ analysis and troubleshooting.
 
 To import and use `structuredLogger` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.structuredLogger
-```
+undefined
 
 **Example**
 

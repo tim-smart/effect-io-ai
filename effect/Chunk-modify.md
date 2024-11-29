@@ -5,11 +5,11 @@ or returning the input if the index is out of bounds.
 
 To import and use `modify` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.modify
-```
+undefined
 
 **Signature**
 

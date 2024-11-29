@@ -6,11 +6,11 @@ into typed failed effects.
 
 To import and use `mapAttempt` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.mapAttempt
-```
+undefined
 
 **Signature**
 

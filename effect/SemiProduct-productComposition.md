@@ -4,11 +4,11 @@ Returns a default `product` composition.
 
 To import and use `productComposition` from the "SemiProduct" module:
 
-```ts
-import * as SemiProduct from "@effect/typeclass/SemiProduct"
+ts
+import \* as SemiProduct from "@effect/typeclass/SemiProduct"
 // Can be accessed like this
 SemiProduct.productComposition
-```
+undefined
 
 **Signature**
 

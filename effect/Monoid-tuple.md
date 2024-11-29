@@ -15,11 +15,11 @@ It is useful when you need to combine two tuples of the same type and you have a
 
 To import and use `tuple` from the "Monoid" module:
 
-```ts
-import * as Monoid from "@effect/typeclass/Monoid"
+ts
+import \* as Monoid from "@effect/typeclass/Monoid"
 // Can be accessed like this
 Monoid.tuple
-```
+undefined
 
 **Signature**
 

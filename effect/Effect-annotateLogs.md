@@ -6,11 +6,11 @@ to log messages, making them more informative and easier to trace.
 
 To import and use `annotateLogs` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.annotateLogs
-```
+undefined
 
 **Example**
 

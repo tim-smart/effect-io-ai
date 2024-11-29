@@ -8,11 +8,11 @@ Complex keys can extend `Equal` and `Hash` to allow lookups by value.
 
 To import and use `make` from the "RcMap" module:
 
-```ts
-import * as RcMap from "effect/RcMap"
+ts
+import \* as RcMap from "effect/RcMap"
 // Can be accessed like this
 RcMap.make
-```
+undefined
 
 **Example**
 

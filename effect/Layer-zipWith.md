@@ -5,11 +5,11 @@ combined output types using the provided function.
 
 To import and use `zipWith` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.zipWith
-```
+undefined
 
 **Signature**
 

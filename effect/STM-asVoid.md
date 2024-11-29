@@ -6,11 +6,11 @@ fails, the returned `STM` will fail with the same error.
 
 To import and use `asVoid` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.asVoid
-```
+undefined
 
 **Signature**
 

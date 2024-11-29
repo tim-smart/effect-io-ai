@@ -5,11 +5,11 @@ Each pod should call `registerSingleton` but only a single pod will actually run
 
 To import and use `registerSingleton` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.registerSingleton
-```
+undefined
 
 **Signature**
 

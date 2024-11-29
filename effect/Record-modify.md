@@ -5,11 +5,11 @@ If the key does not exist, the record is returned unchanged.
 
 To import and use `modify` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.modify
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ is successful, or the refresh operation fails.
 
 To import and use `refresh` from the "Resource" module:
 
-```ts
-import * as Resource from "effect/Resource"
+ts
+import \* as Resource from "effect/Resource"
 // Can be accessed like this
 Resource.refresh
-```
+undefined
 
 **Signature**
 

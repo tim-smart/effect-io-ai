@@ -5,8 +5,8 @@ and scheduling.
 
 To import and use `Clock` from the "Clock" module:
 
-```ts
-import * as Clock from "effect/Clock"
+ts
+import \* as Clock from "effect/Clock"
 // Can be accessed like this
 Clock.Clock
-```
+undefined

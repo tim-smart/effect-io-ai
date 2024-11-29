@@ -6,11 +6,11 @@ This forces the time zone to be UTC.
 
 To import and use `formatUtc` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.formatUtc
-```
+undefined
 
 **Signature**
 

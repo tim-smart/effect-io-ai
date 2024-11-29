@@ -4,11 +4,11 @@ Filters the result of a response, or runs an alternative effect if the predicate
 
 To import and use `filterOrElse` from the "HttpClient" module:
 
-```ts
-import * as HttpClient from "@effect/platform/HttpClient"
+ts
+import \* as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.filterOrElse
-```
+undefined
 
 **Signature**
 

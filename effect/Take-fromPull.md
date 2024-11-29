@@ -6,11 +6,11 @@ to `Take.failCause`, and the end-of-stream is converted to `Take.end`.
 
 To import and use `fromPull` from the "Take" module:
 
-```ts
-import * as Take from "effect/Take"
+ts
+import \* as Take from "effect/Take"
 // Can be accessed like this
 Take.fromPull
-```
+undefined
 
 **Signature**
 

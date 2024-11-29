@@ -6,11 +6,11 @@ Adapted from https://github.com/fastify/fastify-cookie under MIT License
 
 To import and use `parseHeader` from the "Cookies" module:
 
-```ts
-import * as Cookies from "@effect/platform/Cookies"
+ts
+import \* as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.parseHeader
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ value.
 
 To import and use `succeed` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.succeed
-```
+undefined
 
 **Signature**
 

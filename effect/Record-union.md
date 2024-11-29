@@ -4,11 +4,11 @@ Merge two records, preserving entries that exist in either of the records.
 
 To import and use `union` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.union
-```
+undefined
 
 **Signature**
 

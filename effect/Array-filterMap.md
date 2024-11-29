@@ -5,11 +5,11 @@ This method combines filtering and mapping functionalities, allowing transformat
 
 To import and use `filterMap` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.filterMap
-```
+undefined
 
 **Example**
 

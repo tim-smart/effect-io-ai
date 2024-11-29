@@ -5,8 +5,8 @@ point in time.
 
 To import and use `CacheStats` from the "Cache" module:
 
-```ts
-import * as Cache from "effect/Cache"
+ts
+import \* as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.CacheStats
-```
+undefined

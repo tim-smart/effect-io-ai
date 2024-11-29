@@ -4,11 +4,11 @@ Construct an `HttpApp` from an `HttpApi` instance.
 
 To import and use `httpApp` from the "HttpApiBuilder" module:
 
-```ts
-import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+ts
+import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.httpApp
-```
+undefined
 
 **Signature**
 

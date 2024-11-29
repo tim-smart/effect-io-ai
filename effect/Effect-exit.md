@@ -14,11 +14,11 @@ the effect is structured to never fail directly.
 
 To import and use `exit` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.exit
-```
+undefined
 
 **Example**
 

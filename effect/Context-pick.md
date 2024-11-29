@@ -4,11 +4,11 @@ Returns a new `Context` that contains only the specified services.
 
 To import and use `pick` from the "Context" module:
 
-```ts
-import * as Context from "effect/Context"
+ts
+import \* as Context from "effect/Context"
 // Can be accessed like this
 Context.pick
-```
+undefined
 
 **Example**
 

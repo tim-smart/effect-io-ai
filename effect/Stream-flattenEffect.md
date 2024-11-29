@@ -5,11 +5,11 @@ information about the effect.
 
 To import and use `flattenEffect` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.flattenEffect
-```
+undefined
 
 **Signature**
 

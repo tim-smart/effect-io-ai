@@ -5,11 +5,11 @@ break is undone by `group` (instead of `space`).
 
 To import and use `lineBreak` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.lineBreak
-```
+undefined
 
 **Example**
 

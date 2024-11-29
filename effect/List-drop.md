@@ -4,11 +4,11 @@ Drops the first `n` elements from the specified list.
 
 To import and use `drop` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.drop
-```
+undefined
 
 **Signature**
 

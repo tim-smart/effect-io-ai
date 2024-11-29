@@ -4,11 +4,11 @@ Same as `register`, but will automatically call `unregister` when the `Scope` is
 
 To import and use `registerScoped` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.registerScoped
-```
+undefined
 
 **Signature**
 

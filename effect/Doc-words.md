@@ -5,11 +5,11 @@ specified `char` to split on (defaults to `" "`).
 
 To import and use `words` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.words
-```
+undefined
 
 **Example**
 

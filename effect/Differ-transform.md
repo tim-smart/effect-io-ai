@@ -5,11 +5,11 @@ the specified functions that map the new and old value types to each other.
 
 To import and use `transform` from the "Differ" module:
 
-```ts
-import * as Differ from "effect/Differ"
+ts
+import \* as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.transform
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Tests if a value is a `boolean`.
 
 To import and use `isBoolean` from the "Boolean" module:
 
-```ts
-import * as Boolean from "effect/Boolean"
+ts
+import \* as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.isBoolean
-```
+undefined
 
 **Example**
 

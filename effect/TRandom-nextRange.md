@@ -5,11 +5,11 @@ generator.
 
 To import and use `nextRange` from the "TRandom" module:
 
-```ts
-import * as TRandom from "effect/TRandom"
+ts
+import \* as TRandom from "effect/TRandom"
 // Can be accessed like this
 TRandom.nextRange
-```
+undefined
 
 **Signature**
 

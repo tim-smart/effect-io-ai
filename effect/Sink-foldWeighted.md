@@ -6,11 +6,11 @@ folded.
 
 To import and use `foldWeighted` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldWeighted
-```
+undefined
 
 **Signature**
 

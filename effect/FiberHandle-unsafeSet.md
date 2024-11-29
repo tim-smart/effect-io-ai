@@ -5,11 +5,11 @@ If a fiber is already running, it will be interrupted unless `options.onlyIfMiss
 
 To import and use `unsafeSet` from the "FiberHandle" module:
 
-```ts
-import * as FiberHandle from "effect/FiberHandle"
+ts
+import \* as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.unsafeSet
-```
+undefined
 
 **Signature**
 

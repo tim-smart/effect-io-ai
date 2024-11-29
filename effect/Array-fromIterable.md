@@ -6,11 +6,11 @@ Otherwise, it converts the iterable collection to an array.
 
 To import and use `fromIterable` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.fromIterable
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ Returns `true` if the specified `UpstreamPullRequest` is a `NoUpstream`,
 
 To import and use `isNoUpstream` from the "UpstreamPullRequest" module:
 
-```ts
-import * as UpstreamPullRequest from "effect/UpstreamPullRequest"
+ts
+import \* as UpstreamPullRequest from "effect/UpstreamPullRequest"
 // Can be accessed like this
 UpstreamPullRequest.isNoUpstream
-```
+undefined
 
 **Signature**
 

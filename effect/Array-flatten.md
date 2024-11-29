@@ -6,11 +6,11 @@ arrays is collapsed into a single, flat array.
 
 To import and use `flatten` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.flatten
-```
+undefined
 
 **Example**
 

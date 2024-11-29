@@ -5,11 +5,11 @@ specified effectful function.
 
 To import and use `mapEffect` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.mapEffect
-```
+undefined
 
 **Signature**
 

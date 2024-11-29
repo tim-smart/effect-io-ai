@@ -8,8 +8,8 @@ results will be of the type requested.
 
 To import and use `Entry` from the "Request" module:
 
-```ts
-import * as Request from "effect/Request"
+ts
+import \* as Request from "effect/Request"
 // Can be accessed like this
 Request.Entry
-```
+undefined

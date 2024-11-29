@@ -8,11 +8,11 @@ effect will not be interrupted.
 
 To import and use `onError` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.onError
-```
+undefined
 
 **Signature**
 

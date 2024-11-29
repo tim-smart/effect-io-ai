@@ -7,11 +7,11 @@ This function is useful for performing additional computations on the value of t
 
 To import and use `tap` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.tap
-```
+undefined
 
 **Example**
 

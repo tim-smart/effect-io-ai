@@ -5,11 +5,11 @@ Wrap a `Promise` into a `Micro` effect. Any errors will result in a
 
 To import and use `promise` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.promise
-```
+undefined
 
 **Signature**
 

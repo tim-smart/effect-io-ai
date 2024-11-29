@@ -4,11 +4,11 @@ Returns the wrapped value if it's a `Right` or a default value if is a `Left`.
 
 To import and use `getOrElse` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrElse
-```
+undefined
 
 **Example**
 

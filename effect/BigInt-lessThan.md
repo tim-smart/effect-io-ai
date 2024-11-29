@@ -4,11 +4,11 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 
 To import and use `lessThan` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.lessThan
-```
+undefined
 
 **Example**
 

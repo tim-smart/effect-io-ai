@@ -5,11 +5,11 @@ Removes entries from a `TMap` that satisfy the specified predicate and returns t
 
 To import and use `removeIf` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.removeIf
-```
+undefined
 
 **Signature**
 

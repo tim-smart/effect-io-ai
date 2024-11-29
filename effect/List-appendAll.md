@@ -5,11 +5,11 @@ If either list is non-empty, the result is also a non-empty list.
 
 To import and use `appendAll` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.appendAll
-```
+undefined
 
 **Example**
 

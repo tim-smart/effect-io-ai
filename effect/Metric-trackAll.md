@@ -6,11 +6,11 @@ that effect fails or succeeds.
 
 To import and use `trackAll` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackAll
-```
+undefined
 
 **Signature**
 

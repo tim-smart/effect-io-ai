@@ -4,11 +4,11 @@ Returns `true` if the specified cause is empty, `false` otherwise.
 
 To import and use `isEmpty` from the "Cause" module:
 
-```ts
-import * as Cause from "effect/Cause"
+ts
+import \* as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.isEmpty
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ including interruption if the stream is uninterruptible.
 
 To import and use `catchSomeCause` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.catchSomeCause
-```
+undefined
 
 **Signature**
 

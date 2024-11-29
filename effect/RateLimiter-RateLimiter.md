@@ -7,8 +7,8 @@ of concurrent executions is not bounded.
 
 To import and use `RateLimiter` from the "RateLimiter" module:
 
-```ts
-import * as RateLimiter from "effect/RateLimiter"
+ts
+import \* as RateLimiter from "effect/RateLimiter"
 // Can be accessed like this
 RateLimiter.RateLimiter
-```
+undefined

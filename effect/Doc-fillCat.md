@@ -11,11 +11,11 @@ be separated with `empty` instead of newlines. See `fillSep` if you want a
 
 To import and use `fillCat` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.fillCat
-```
+undefined
 
 **Signature**
 

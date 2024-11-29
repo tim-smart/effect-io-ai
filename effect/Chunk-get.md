@@ -4,11 +4,11 @@ This function provides a safe way to read a value at a particular index from a `
 
 To import and use `get` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.get
-```
+undefined
 
 **Signature**
 

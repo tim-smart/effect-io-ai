@@ -7,11 +7,11 @@ no termination strategy is specified.
 
 To import and use `merge` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.merge
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ The same as `andThenEither`, but merges the output.
 
 To import and use `andThen` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.andThen
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Takes a record and returns an array of tuples containing its keys and values.
 
 To import and use `fromRecord` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.fromRecord
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ maxSize, error, and quantiles.
 
 To import and use `summary` from the "MetricKey" module:
 
-```ts
-import * as MetricKey from "effect/MetricKey"
+ts
+import \* as MetricKey from "effect/MetricKey"
 // Can be accessed like this
 MetricKey.summary
-```
+undefined
 
 **Signature**
 

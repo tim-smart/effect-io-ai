@@ -5,8 +5,8 @@ identity and a trace.
 
 To import and use `RuntimeFiber` from the "Fiber" module:
 
-```ts
-import * as Fiber from "effect/Fiber"
+ts
+import \* as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.RuntimeFiber
-```
+undefined

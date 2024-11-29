@@ -4,11 +4,11 @@ Constructs a new `Trie` from the specified entries (`[string, V]`).
 
 To import and use `make` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.make
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ provided functions.
 
 To import and use `dimapEffect` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.dimapEffect
-```
+undefined
 
 **Signature**
 

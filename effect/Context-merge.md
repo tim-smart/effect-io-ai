@@ -4,11 +4,11 @@ Merges two `Context`s, returning a new `Context` containing the services of both
 
 To import and use `merge` from the "Context" module:
 
-```ts
-import * as Context from "effect/Context"
+ts
+import \* as Context from "effect/Context"
 // Can be accessed like this
 Context.merge
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Filters a list using the specified predicate.
 
 To import and use `filter` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.filter
-```
+undefined
 
 **Signature**
 

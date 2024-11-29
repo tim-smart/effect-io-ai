@@ -4,11 +4,11 @@ Updates the service with the required service entry.
 
 To import and use `updateService` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.updateService
-```
+undefined
 
 **Signature**
 

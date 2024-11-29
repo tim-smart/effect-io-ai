@@ -11,11 +11,11 @@ indefinitely if the task takes too long.
 
 To import and use `timeout` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.timeout
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ The value of `n` must be `>= 1`.
 
 To import and use `splitNonEmptyAt` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.splitNonEmptyAt
-```
+undefined
 
 **Example**
 

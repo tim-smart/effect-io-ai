@@ -11,11 +11,11 @@ Notes
 
 To import and use `make` from the "RateLimiter" module:
 
-```ts
-import * as RateLimiter from "effect/RateLimiter"
+ts
+import \* as RateLimiter from "effect/RateLimiter"
 // Can be accessed like this
 RateLimiter.make
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Splits this chunk into `n` equally sized chunks.
 
 To import and use `split` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.split
-```
+undefined
 
 **Signature**
 

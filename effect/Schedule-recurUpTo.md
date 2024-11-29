@@ -4,11 +4,11 @@ A schedule that recurs during the given duration.
 
 To import and use `recurUpTo` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.recurUpTo
-```
+undefined
 
 **Signature**
 

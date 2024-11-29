@@ -7,11 +7,11 @@ See the `OpenApi` & `HttpApiClient` modules for examples of how to use this func
 
 To import and use `reflect` from the "HttpApi" module:
 
-```ts
-import * as HttpApi from "@effect/platform/HttpApi"
+ts
+import \* as HttpApi from "@effect/platform/HttpApi"
 // Can be accessed like this
 HttpApi.reflect
-```
+undefined
 
 **Signature**
 

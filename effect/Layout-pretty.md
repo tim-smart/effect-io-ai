@@ -13,11 +13,11 @@ line breaks.
 
 To import and use `pretty` from the "Layout" module:
 
-```ts
-import * as Layout from "@effect/printer/Layout"
+ts
+import \* as Layout from "@effect/printer/Layout"
 // Can be accessed like this
 Layout.pretty
-```
+undefined
 
 **Signature**
 

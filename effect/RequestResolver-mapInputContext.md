@@ -4,11 +4,11 @@ Provides this data source with part of its required context.
 
 To import and use `mapInputContext` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.mapInputContext
-```
+undefined
 
 **Signature**
 

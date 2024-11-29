@@ -4,11 +4,11 @@ Returns a new list with the elements of the specified list in reverse order.
 
 To import and use `reverse` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.reverse
-```
+undefined
 
 **Signature**
 

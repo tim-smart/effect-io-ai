@@ -18,8 +18,8 @@ Features the following semantics:
 
 To import and use `SingleProducerAsyncInput` from the "SingleProducerAsyncInput" module:
 
-```ts
-import * as SingleProducerAsyncInput from "effect/SingleProducerAsyncInput"
+ts
+import \* as SingleProducerAsyncInput from "effect/SingleProducerAsyncInput"
 // Can be accessed like this
 SingleProducerAsyncInput.SingleProducerAsyncInput
-```
+undefined

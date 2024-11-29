@@ -4,11 +4,11 @@ Create a dotenv ConfigProvider.
 
 To import and use `fromDotEnv` from the "PlatformConfigProvider" module:
 
-```ts
-import * as PlatformConfigProvider from "@effect/platform/PlatformConfigProvider"
+ts
+import \* as PlatformConfigProvider from "@effect/platform/PlatformConfigProvider"
 // Can be accessed like this
 PlatformConfigProvider.fromDotEnv
-```
+undefined
 
 **Signature**
 

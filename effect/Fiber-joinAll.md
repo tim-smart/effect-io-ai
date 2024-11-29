@@ -6,11 +6,11 @@ error does not result from interruption.
 
 To import and use `joinAll` from the "Fiber" module:
 
-```ts
-import * as Fiber from "effect/Fiber"
+ts
+import \* as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.joinAll
-```
+undefined
 
 **Signature**
 

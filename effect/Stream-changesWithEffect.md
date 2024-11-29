@@ -6,11 +6,11 @@ determine whether two elements are equal.
 
 To import and use `changesWithEffect` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.changesWithEffect
-```
+undefined
 
 **Signature**
 

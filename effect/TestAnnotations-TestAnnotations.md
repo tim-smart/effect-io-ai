@@ -9,8 +9,8 @@ monad effect.
 
 To import and use `TestAnnotations` from the "TestAnnotations" module:
 
-```ts
-import * as TestAnnotations from "effect/TestAnnotations"
+ts
+import \* as TestAnnotations from "effect/TestAnnotations"
 // Can be accessed like this
 TestAnnotations.TestAnnotations
-```
+undefined

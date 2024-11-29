@@ -4,11 +4,11 @@ Lifts an `Either` into a `STM`.
 
 To import and use `fromEither` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.fromEither
-```
+undefined
 
 **Signature**
 

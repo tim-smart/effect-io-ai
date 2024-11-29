@@ -4,11 +4,11 @@ Constructs a new tuple from the provided values.
 
 To import and use `make` from the "Tuple" module:
 
-```ts
-import * as Tuple from "effect/Tuple"
+ts
+import \* as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.make
-```
+undefined
 
 **Example**
 

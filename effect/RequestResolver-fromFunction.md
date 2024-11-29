@@ -4,11 +4,11 @@ Constructs a data source from a pure function.
 
 To import and use `fromFunction` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.fromFunction
-```
+undefined
 
 **Signature**
 

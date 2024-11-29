@@ -5,11 +5,11 @@ shell.
 
 To import and use `runInShell` from the "Command" module:
 
-```ts
-import * as Command from "@effect/platform/Command"
+ts
+import \* as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.runInShell
-```
+undefined
 
 **Signature**
 

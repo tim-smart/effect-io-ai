@@ -8,11 +8,11 @@ the type the `Option` contains.
 
 To import and use `getOrder` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrder
-```
+undefined
 
 **Example**
 

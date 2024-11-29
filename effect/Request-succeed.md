@@ -4,11 +4,11 @@ Complete a `Request` with the specified value.
 
 To import and use `succeed` from the "Request" module:
 
-```ts
-import * as Request from "effect/Request"
+ts
+import \* as Request from "effect/Request"
 // Can be accessed like this
 Request.succeed
-```
+undefined
 
 **Signature**
 

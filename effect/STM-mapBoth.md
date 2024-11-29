@@ -5,11 +5,11 @@ by the specified pair of functions, `f` and `g`.
 
 To import and use `mapBoth` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.mapBoth
-```
+undefined
 
 **Signature**
 

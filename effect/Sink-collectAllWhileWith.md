@@ -5,11 +5,11 @@ Repeatedly runs the sink for as long as its results satisfy the predicate
 
 To import and use `collectAllWhileWith` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.collectAllWhileWith
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Mutates the `HashMap` within the context of the provided function.
 
 To import and use `mutate` from the "HashMap" module:
 
-```ts
-import * as HashMap from "effect/HashMap"
+ts
+import \* as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.mutate
-```
+undefined
 
 **Signature**
 

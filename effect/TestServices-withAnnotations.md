@@ -5,11 +5,11 @@ annotations service.
 
 To import and use `withAnnotations` from the "TestServices" module:
 
-```ts
-import * as TestServices from "effect/TestServices"
+ts
+import \* as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.withAnnotations
-```
+undefined
 
 **Signature**
 

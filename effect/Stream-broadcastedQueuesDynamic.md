@@ -8,11 +8,11 @@ Queues can unsubscribe from upstream by shutting down.
 
 To import and use `broadcastedQueuesDynamic` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.broadcastedQueuesDynamic
-```
+undefined
 
 **Signature**
 

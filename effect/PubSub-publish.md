@@ -5,11 +5,11 @@ to the `PubSub`.
 
 To import and use `publish` from the "PubSub" module:
 
-```ts
-import * as PubSub from "effect/PubSub"
+ts
+import \* as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.publish
-```
+undefined
 
 **Signature**
 

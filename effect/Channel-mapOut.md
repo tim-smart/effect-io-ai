@@ -4,11 +4,11 @@ Maps the output of this channel using the specified function.
 
 To import and use `mapOut` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapOut
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Create a Cookies object from a set of Set-Cookie headers
 
 To import and use `fromSetCookie` from the "Cookies" module:
 
-```ts
-import * as Cookies from "@effect/platform/Cookies"
+ts
+import \* as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.fromSetCookie
-```
+undefined
 
 **Signature**
 

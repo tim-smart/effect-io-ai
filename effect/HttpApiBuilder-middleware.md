@@ -4,11 +4,11 @@ Create an `HttpApi` level middleware `Layer`.
 
 To import and use `middleware` from the "HttpApiBuilder" module:
 
-```ts
-import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+ts
+import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.middleware
-```
+undefined
 
 **Signature**
 

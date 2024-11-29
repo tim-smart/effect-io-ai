@@ -8,11 +8,11 @@ additional movement will have no effect.
 
 To import and use `cursorMove` from the "AnsiDoc" module:
 
-```ts
-import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+ts
+import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorMove
-```
+undefined
 
 **Signature**
 

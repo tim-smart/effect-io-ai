@@ -4,11 +4,11 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 
 To import and use `greaterThan` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.greaterThan
-```
+undefined
 
 **Example**
 

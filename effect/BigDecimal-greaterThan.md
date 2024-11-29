@@ -4,11 +4,11 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 
 To import and use `greaterThan` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.greaterThan
-```
+undefined
 
 **Example**
 

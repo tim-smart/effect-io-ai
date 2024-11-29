@@ -6,11 +6,11 @@ the scope is closed. Use this when the finalizer does not need to know the
 
 To import and use `addFinalizer` from the "Scope" module:
 
-```ts
-import * as Scope from "effect/Scope"
+ts
+import \* as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.addFinalizer
-```
+undefined
 
 **Signature**
 

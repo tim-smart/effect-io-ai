@@ -5,11 +5,11 @@ predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.findFirst
-```
+undefined
 
 **Example**
 

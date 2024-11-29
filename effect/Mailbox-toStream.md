@@ -4,11 +4,11 @@ Create a `Stream` from a `Mailbox`.
 
 To import and use `toStream` from the "Mailbox" module:
 
-```ts
-import * as Mailbox from "effect/Mailbox"
+ts
+import \* as Mailbox from "effect/Mailbox"
 // Can be accessed like this
 Mailbox.toStream
-```
+undefined
 
 **Signature**
 

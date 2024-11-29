@@ -4,11 +4,11 @@ Sequentially zips this value with the specified one.
 
 To import and use `zip` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.zip
-```
+undefined
 
 **Signature**
 

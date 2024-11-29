@@ -4,11 +4,11 @@ Reverses the order of arguments for a curried function.
 
 To import and use `flip` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.flip
-```
+undefined
 
 **Example**
 

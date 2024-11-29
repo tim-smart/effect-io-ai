@@ -5,11 +5,11 @@ effectual function to the input channel's done value.
 
 To import and use `mapInputEffect` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapInputEffect
-```
+undefined
 
 **Signature**
 

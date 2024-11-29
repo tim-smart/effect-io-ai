@@ -7,11 +7,11 @@ For automatic line breaks, consider using `fillSep`.
 
 To import and use `hsep` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.hsep
-```
+undefined
 
 **Example**
 

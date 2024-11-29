@@ -5,11 +5,11 @@ If the predicate fails, set the left value with the result of the provided funct
 
 To import and use `filterOrLeft` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.filterOrLeft
-```
+undefined
 
 **Example**
 

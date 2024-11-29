@@ -5,11 +5,11 @@ If either array is non-empty, the result is also a non-empty array.
 
 To import and use `prependAll` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.prependAll
-```
+undefined
 
 **Example**
 

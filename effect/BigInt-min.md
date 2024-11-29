@@ -4,11 +4,11 @@ Returns the minimum between two `bigint`s.
 
 To import and use `min` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.min
-```
+undefined
 
 **Example**
 

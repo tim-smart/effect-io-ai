@@ -5,11 +5,11 @@ but do not care about the details.
 
 To import and use `defaultOptions` from the "Layout" module:
 
-```ts
-import * as Layout from "@effect/printer/Layout"
+ts
+import \* as Layout from "@effect/printer/Layout"
 // Can be accessed like this
 Layout.defaultOptions
-```
+undefined
 
 **Signature**
 

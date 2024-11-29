@@ -6,11 +6,11 @@ the inputs of this layer, and the error or outputs of the specified layer.
 
 To import and use `match` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.match
-```
+undefined
 
 **Signature**
 

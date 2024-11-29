@@ -7,11 +7,11 @@ initially and then repeats it one additional time if it succeeds.
 
 To import and use `repeatN` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.repeatN
-```
+undefined
 
 **Example**
 

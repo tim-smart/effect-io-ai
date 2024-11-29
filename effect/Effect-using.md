@@ -5,11 +5,11 @@ without effecting the scope of any resources acquired by `use`.
 
 To import and use `using` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.using
-```
+undefined
 
 **Signature**
 

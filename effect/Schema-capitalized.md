@@ -4,11 +4,11 @@ Verifies that a string is capitalized.
 
 To import and use `capitalized` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.capitalized
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ none at all.
 
 To import and use `alterAnnotations` from the "DocStream" module:
 
-```ts
-import * as DocStream from "@effect/printer/DocStream"
+ts
+import \* as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.alterAnnotations
-```
+undefined
 
 **Signature**
 

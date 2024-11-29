@@ -7,11 +7,11 @@ If `n` is less than or equal to 0, the returned array will be an empty array.
 
 To import and use `pad` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.pad
-```
+undefined
 
 **Example**
 

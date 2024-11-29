@@ -4,11 +4,11 @@
 
 To import and use `Semigroup` from the "String" module:
 
-```ts
-import * as String from "@effect/typeclass/data/String"
+ts
+import \* as String from "@effect/typeclass/data/String"
 // Can be accessed like this
 String.Semigroup
-```
+undefined
 
 **Signature**
 

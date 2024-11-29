@@ -12,11 +12,11 @@ Here's how the do simulation works:
 
 To import and use `let` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.let
-```
+undefined
 
 **Example**
 

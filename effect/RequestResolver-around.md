@@ -5,11 +5,11 @@ and `after`, where the result of `before` can be used by `after`.
 
 To import and use `around` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.around
-```
+undefined
 
 **Signature**
 

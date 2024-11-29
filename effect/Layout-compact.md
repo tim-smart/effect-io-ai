@@ -9,11 +9,11 @@ can be used for output that is read by other programs.
 
 To import and use `compact` from the "Layout" module:
 
-```ts
-import * as Layout from "@effect/printer/Layout"
+ts
+import \* as Layout from "@effect/printer/Layout"
 // Can be accessed like this
 Layout.compact
-```
+undefined
 
 **Example**
 

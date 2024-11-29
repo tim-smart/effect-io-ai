@@ -6,11 +6,11 @@ The parts will be in UTC.
 
 To import and use `toPartsUtc` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.toPartsUtc
-```
+undefined
 
 **Signature**
 

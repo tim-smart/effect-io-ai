@@ -4,11 +4,11 @@ Matches the elements of an array from the left, applying functions to cases of e
 
 To import and use `matchLeft` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.matchLeft
-```
+undefined
 
 **Example**
 

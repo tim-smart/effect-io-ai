@@ -5,8 +5,8 @@ of type `A`.
 
 To import and use `Success` from the "Exit" module:
 
-```ts
-import * as Exit from "effect/Exit"
+ts
+import \* as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.Success
-```
+undefined

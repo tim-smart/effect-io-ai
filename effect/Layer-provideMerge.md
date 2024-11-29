@@ -6,11 +6,11 @@ outputs of both layers.
 
 To import and use `provideMerge` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.provideMerge
-```
+undefined
 
 **Signature**
 

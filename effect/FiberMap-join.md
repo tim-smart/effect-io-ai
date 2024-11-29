@@ -5,11 +5,11 @@ the returned Effect will terminate with the first failure that occurred.
 
 To import and use `join` from the "FiberMap" module:
 
-```ts
-import * as FiberMap from "effect/FiberMap"
+ts
+import \* as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.join
-```
+undefined
 
 **Example**
 

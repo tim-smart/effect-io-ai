@@ -4,11 +4,11 @@ Collects all bindings into a `HashMap`.
 
 To import and use `toHashMap` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.toHashMap
-```
+undefined
 
 **Signature**
 

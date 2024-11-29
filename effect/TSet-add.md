@@ -4,11 +4,11 @@ Stores new element in the set.
 
 To import and use `add` from the "TSet" module:
 
-```ts
-import * as TSet from "effect/TSet"
+ts
+import \* as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.add
-```
+undefined
 
 **Signature**
 

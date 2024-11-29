@@ -7,11 +7,11 @@ returned by the provided function.
 
 To import and use `traverseTap` from the "Traversable" module:
 
-```ts
-import * as Traversable from "@effect/typeclass/Traversable"
+ts
+import \* as Traversable from "@effect/typeclass/Traversable"
 // Can be accessed like this
 Traversable.traverseTap
-```
+undefined
 
 **Signature**
 

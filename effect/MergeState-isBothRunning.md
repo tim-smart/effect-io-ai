@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isBothRunning` from the "MergeState" module:
 
-```ts
-import * as MergeState from "effect/MergeState"
+ts
+import \* as MergeState from "effect/MergeState"
 // Can be accessed like this
 MergeState.isBothRunning
-```
+undefined
 
 **Signature**
 

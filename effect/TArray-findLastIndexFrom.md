@@ -5,11 +5,11 @@ specific index.
 
 To import and use `findLastIndexFrom` from the "TArray" module:
 
-```ts
-import * as TArray from "effect/TArray"
+ts
+import \* as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findLastIndexFrom
-```
+undefined
 
 **Signature**
 

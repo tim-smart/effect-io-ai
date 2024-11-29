@@ -4,11 +4,11 @@ Creates an empty `HashSet`.
 
 To import and use `empty` from the "HashSet" module:
 
-```ts
-import * as HashSet from "effect/HashSet"
+ts
+import \* as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.empty
-```
+undefined
 
 **Signature**
 

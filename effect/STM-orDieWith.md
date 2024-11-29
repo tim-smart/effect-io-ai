@@ -5,11 +5,11 @@ with them, using the specified function to convert the `E` into a defect.
 
 To import and use `orDieWith` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.orDieWith
-```
+undefined
 
 **Signature**
 

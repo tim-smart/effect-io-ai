@@ -4,11 +4,11 @@ Merges a struct of streams into a single stream of tagged values.
 
 To import and use `mergeWithTag` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mergeWithTag
-```
+undefined
 
 **Example**
 

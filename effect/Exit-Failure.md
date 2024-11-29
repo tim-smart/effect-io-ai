@@ -5,8 +5,8 @@ of type `E`.
 
 To import and use `Failure` from the "Exit" module:
 
-```ts
-import * as Exit from "effect/Exit"
+ts
+import \* as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.Failure
-```
+undefined

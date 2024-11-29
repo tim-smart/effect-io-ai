@@ -5,11 +5,11 @@ any duplicates.
 
 To import and use `annotations` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.annotations
-```
+undefined
 
 **Signature**
 

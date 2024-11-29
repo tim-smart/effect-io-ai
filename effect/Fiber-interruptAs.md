@@ -6,11 +6,11 @@ Otherwise, the effect will resume when the fiber exits.
 
 To import and use `interruptAs` from the "Fiber" module:
 
-```ts
-import * as Fiber from "effect/Fiber"
+ts
+import \* as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.interruptAs
-```
+undefined
 
 **Signature**
 

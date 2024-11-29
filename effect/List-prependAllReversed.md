@@ -5,11 +5,11 @@ specified list.
 
 To import and use `prependAllReversed` from the "List" module:
 
-```ts
-import * as List from "effect/List"
+ts
+import \* as List from "effect/List"
 // Can be accessed like this
 List.prependAllReversed
-```
+undefined
 
 **Signature**
 

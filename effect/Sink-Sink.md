@@ -8,8 +8,8 @@ type `L` (i.e. any leftovers).
 
 To import and use `Sink` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.Sink
-```
+undefined

@@ -4,11 +4,11 @@ Drops all elements until the effectful predicate returns true.
 
 To import and use `dropUntil` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.dropUntil
-```
+undefined
 
 **Signature**
 

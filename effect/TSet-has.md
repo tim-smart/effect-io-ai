@@ -4,11 +4,11 @@ Tests whether or not set contains an element.
 
 To import and use `has` from the "TSet" module:
 
-```ts
-import * as TSet from "effect/TSet"
+ts
+import \* as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.has
-```
+undefined
 
 **Signature**
 

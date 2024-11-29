@@ -6,11 +6,11 @@ form a union.
 
 To import and use `union` from the "ScheduleInterval" module:
 
-```ts
-import * as ScheduleInterval from "effect/ScheduleInterval"
+ts
+import \* as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.union
-```
+undefined
 
 **Signature**
 

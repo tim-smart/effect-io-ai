@@ -6,11 +6,11 @@ The keys are returned in alphabetical order, regardless of insertion order.
 
 To import and use `keys` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.keys
-```
+undefined
 
 **Example**
 

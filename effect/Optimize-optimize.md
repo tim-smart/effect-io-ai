@@ -13,11 +13,11 @@ strings that are used many times.
 
 To import and use `optimize` from the "Optimize" module:
 
-```ts
-import * as Optimize from "@effect/printer/Optimize"
+ts
+import \* as Optimize from "@effect/printer/Optimize"
 // Can be accessed like this
 Optimize.optimize
-```
+undefined
 
 **Example**
 

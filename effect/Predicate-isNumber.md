@@ -4,11 +4,11 @@ Tests if a value is a `number`.
 
 To import and use `isNumber` from the "Predicate" module:
 
-```ts
-import * as Predicate from "effect/Predicate"
+ts
+import \* as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isNumber
-```
+undefined
 
 **Example**
 

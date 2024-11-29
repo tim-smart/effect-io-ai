@@ -8,11 +8,11 @@ be automatically removed from the FiberMap when they complete.
 
 To import and use `make` from the "FiberMap" module:
 
-```ts
-import * as FiberMap from "effect/FiberMap"
+ts
+import \* as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.make
-```
+undefined
 
 **Example**
 

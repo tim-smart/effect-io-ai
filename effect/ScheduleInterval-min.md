@@ -4,11 +4,11 @@ Returns the minimum of two `Interval`s.
 
 To import and use `min` from the "ScheduleInterval" module:
 
-```ts
-import * as ScheduleInterval from "effect/ScheduleInterval"
+ts
+import \* as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.min
-```
+undefined
 
 **Signature**
 

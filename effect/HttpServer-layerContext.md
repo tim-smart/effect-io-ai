@@ -8,11 +8,11 @@ useful for platforms that have no file system.
 
 To import and use `layerContext` from the "HttpServer" module:
 
-```ts
-import * as HttpServer from "@effect/platform/HttpServer"
+ts
+import \* as HttpServer from "@effect/platform/HttpServer"
 // Can be accessed like this
 HttpServer.layerContext
-```
+undefined
 
 **Signature**
 

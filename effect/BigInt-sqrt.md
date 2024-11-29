@@ -4,11 +4,11 @@ Determines the square root of a given `bigint` safely. Returns `none` if the giv
 
 To import and use `sqrt` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.sqrt
-```
+undefined
 
 **Example**
 

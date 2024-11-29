@@ -4,11 +4,11 @@ Runs the specified effect if this stream ends.
 
 To import and use `onDone` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.onDone
-```
+undefined
 
 **Signature**
 

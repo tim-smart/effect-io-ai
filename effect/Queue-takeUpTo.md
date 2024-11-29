@@ -4,11 +4,11 @@ Takes up to max number of values from the queue.
 
 To import and use `takeUpTo` from the "Queue" module:
 
-```ts
-import * as Queue from "effect/Queue"
+ts
+import \* as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.takeUpTo
-```
+undefined
 
 **Signature**
 

@@ -15,11 +15,11 @@ return s
 
 To import and use `iterate` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.iterate
-```
+undefined
 
 **Signature**
 

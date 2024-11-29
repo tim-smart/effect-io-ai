@@ -21,8 +21,8 @@ during query execution.
 
 To import and use `RequestResolver` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.RequestResolver
-```
+undefined

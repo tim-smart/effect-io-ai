@@ -4,11 +4,11 @@ A variant of {@link async} where the registration function may return an `Effect
 
 To import and use `asyncEffect` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.asyncEffect
-```
+undefined
 
 **Signature**
 

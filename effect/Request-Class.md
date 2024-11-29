@@ -4,11 +4,11 @@ Provides a constructor for a Request Class.
 
 To import and use `Class` from the "Request" module:
 
-```ts
-import * as Request from "effect/Request"
+ts
+import \* as Request from "effect/Request"
 // Can be accessed like this
 Request.Class
-```
+undefined
 
 **Example**
 

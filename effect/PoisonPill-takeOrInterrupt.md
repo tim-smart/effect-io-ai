@@ -5,11 +5,11 @@ If the result is a PoisonPill, it will interrupt the effect.
 
 To import and use `takeOrInterrupt` from the "PoisonPill" module:
 
-```ts
-import * as PoisonPill from "@effect/cluster/PoisonPill"
+ts
+import \* as PoisonPill from "@effect/cluster/PoisonPill"
 // Can be accessed like this
 PoisonPill.takeOrInterrupt
-```
+undefined
 
 **Signature**
 

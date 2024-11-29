@@ -6,11 +6,11 @@ The span is ended when the Scope is finalized.
 
 To import and use `withSpanScoped` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withSpanScoped
-```
+undefined
 
 **Signature**
 

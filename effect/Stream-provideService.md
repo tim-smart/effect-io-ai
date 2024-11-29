@@ -5,11 +5,11 @@ requires more than one service use `Stream.provideContext` instead.
 
 To import and use `provideService` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.provideService
-```
+undefined
 
 **Signature**
 

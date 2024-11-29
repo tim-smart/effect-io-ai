@@ -5,11 +5,11 @@ data is missing from configuration, and `Some` otherwise.
 
 To import and use `option` from the "Config" module:
 
-```ts
-import * as Config from "effect/Config"
+ts
+import \* as Config from "effect/Config"
 // Can be accessed like this
 Config.option
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ Results are grouped by a common key extracted from the request and result.
 
 To import and use `grouped` from the "SqlResolver" module:
 
-```ts
-import * as SqlResolver from "@effect/sql/SqlResolver"
+ts
+import \* as SqlResolver from "@effect/sql/SqlResolver"
 // Can be accessed like this
 SqlResolver.grouped
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@
 
 To import and use `max` from the "Bounded" module:
 
-```ts
-import * as Bounded from "@effect/typeclass/Bounded"
+ts
+import \* as Bounded from "@effect/typeclass/Bounded"
 // Can be accessed like this
 Bounded.max
-```
+undefined
 
 **Signature**
 

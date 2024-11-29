@@ -9,11 +9,11 @@ layout using `reAnnotateS`.
 
 To import and use `reAnnotate` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.reAnnotate
-```
+undefined
 
 **Signature**
 

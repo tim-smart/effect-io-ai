@@ -7,11 +7,11 @@ For best performance use capacities that are powers of two.
 
 To import and use `sliding` from the "PubSub" module:
 
-```ts
-import * as PubSub from "effect/PubSub"
+ts
+import \* as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.sliding
-```
+undefined
 
 **Signature**
 

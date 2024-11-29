@@ -5,11 +5,11 @@ specified function to convert the `OutErr` into a defect.
 
 To import and use `orDieWith` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.orDieWith
-```
+undefined
 
 **Signature**
 

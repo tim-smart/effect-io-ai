@@ -4,11 +4,11 @@ Creates a channel from a `Stream`.
 
 To import and use `toChannel` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toChannel
-```
+undefined
 
 **Signature**
 

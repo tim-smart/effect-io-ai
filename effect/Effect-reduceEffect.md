@@ -4,11 +4,11 @@ Reduces an `Iterable<Effect<A, E, R>>` to a single effect.
 
 To import and use `reduceEffect` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.reduceEffect
-```
+undefined
 
 **Signature**
 

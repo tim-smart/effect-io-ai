@@ -5,11 +5,11 @@ matches the specified predicate.
 
 To import and use `onExitIf` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.onExitIf
-```
+undefined
 
 **Signature**
 

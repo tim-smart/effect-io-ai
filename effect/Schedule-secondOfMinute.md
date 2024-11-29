@@ -8,11 +8,11 @@ NOTE: `second` parameter is validated lazily. Must be in range 0...59.
 
 To import and use `secondOfMinute` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.secondOfMinute
-```
+undefined
 
 **Signature**
 

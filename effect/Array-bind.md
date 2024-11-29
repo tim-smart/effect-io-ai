@@ -15,11 +15,11 @@ Here's how the do simulation works:
 
 To import and use `bind` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.bind
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Constructs a Pods service from its implementation
 
 To import and use `make` from the "Pods" module:
 
-```ts
-import * as Pods from "@effect/cluster/Pods"
+ts
+import \* as Pods from "@effect/cluster/Pods"
 // Can be accessed like this
 Pods.make
-```
+undefined
 
 **Signature**
 

@@ -5,8 +5,8 @@ Inside the Envelope, you have the encoded messages, plus some informations on wh
 
 To import and use `SerializedEnvelope` from the "SerializedEnvelope" module:
 
-```ts
-import * as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
+ts
+import \* as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
 // Can be accessed like this
 SerializedEnvelope.SerializedEnvelope
-```
+undefined

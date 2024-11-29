@@ -5,8 +5,8 @@ This state tells the sender that the receiver has received the message and will 
 
 To import and use `MessageStateAcknowledged` from the "MessageState" module:
 
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
+ts
+import \* as MessageState from "@effect/cluster/MessageState"
 // Can be accessed like this
 MessageState.MessageStateAcknowledged
-```
+undefined

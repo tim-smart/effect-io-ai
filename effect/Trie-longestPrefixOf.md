@@ -5,11 +5,11 @@ that is a prefix of that `key` if it exists, `None` otherwise.
 
 To import and use `longestPrefixOf` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.longestPrefixOf
-```
+undefined
 
 **Example**
 

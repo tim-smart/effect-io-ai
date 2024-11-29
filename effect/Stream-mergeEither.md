@@ -5,11 +5,11 @@ eithers.
 
 To import and use `mergeEither` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mergeEither
-```
+undefined
 
 **Signature**
 

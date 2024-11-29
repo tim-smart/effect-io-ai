@@ -5,11 +5,11 @@ Creates a `RuntimeFlagsPatch` which describes exclusion of the specified
 
 To import and use `exclude` from the "RuntimeFlagsPatch" module:
 
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
+ts
+import \* as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.exclude
-```
+undefined
 
 **Signature**
 

@@ -13,11 +13,11 @@ while the successes are processed normally.
 
 To import and use `partition` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.partition
-```
+undefined
 
 **Example**
 

@@ -13,11 +13,11 @@ representing that the effect was skipped.
 
 To import and use `when` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.when
-```
+undefined
 
 **Example**
 

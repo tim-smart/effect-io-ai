@@ -19,11 +19,11 @@ reannotate a document **after** producing the layout by using
 
 To import and use `alterAnnotations` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.alterAnnotations
-```
+undefined
 
 **Signature**
 

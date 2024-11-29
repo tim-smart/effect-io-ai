@@ -4,11 +4,11 @@ Atomically updates all values using a pure function.
 
 To import and use `transformValues` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.transformValues
-```
+undefined
 
 **Signature**
 

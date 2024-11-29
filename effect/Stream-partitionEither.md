@@ -5,11 +5,11 @@ up to buffer elements further than the slower one.
 
 To import and use `partitionEither` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.partitionEither
-```
+undefined
 
 **Example**
 

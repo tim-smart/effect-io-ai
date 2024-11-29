@@ -5,8 +5,8 @@ unable to be found.
 
 To import and use `NoSuchElementException` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.NoSuchElementException
-```
+undefined

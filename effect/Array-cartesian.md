@@ -4,11 +4,11 @@ Zips this chunk crosswise with the specified chunk.
 
 To import and use `cartesian` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.cartesian
-```
+undefined
 
 **Example**
 

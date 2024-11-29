@@ -4,11 +4,11 @@ Create a Logger from another string Logger that writes to the specified file.
 
 To import and use `toFile` from the "PlatformLogger" module:
 
-```ts
-import * as PlatformLogger from "@effect/platform/PlatformLogger"
+ts
+import \* as PlatformLogger from "@effect/platform/PlatformLogger"
 // Can be accessed like this
 PlatformLogger.toFile
-```
+undefined
 
 **Example**
 

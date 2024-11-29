@@ -4,11 +4,11 @@ Lifts a predicate into an array.
 
 To import and use `liftPredicate` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.liftPredicate
-```
+undefined
 
 **Example**
 

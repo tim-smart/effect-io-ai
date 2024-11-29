@@ -7,11 +7,11 @@ This is useful when it's important to know whether the value was retrieved from 
 
 To import and use `orElseEither` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.orElseEither
-```
+undefined
 
 **Signature**
 

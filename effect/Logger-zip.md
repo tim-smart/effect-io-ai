@@ -5,11 +5,11 @@ logs to both this logger and that logger.
 
 To import and use `zip` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.zip
-```
+undefined
 
 **Signature**
 

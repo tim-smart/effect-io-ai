@@ -5,11 +5,11 @@ with prepended url of the running http server.
 
 To import and use `layerTest` from the "BunHttpServer" module:
 
-```ts
-import * as BunHttpServer from "@effect/platform-bun/BunHttpServer"
+ts
+import \* as BunHttpServer from "@effect/platform-bun/BunHttpServer"
 // Can be accessed like this
 BunHttpServer.layerTest
-```
+undefined
 
 **Signature**
 

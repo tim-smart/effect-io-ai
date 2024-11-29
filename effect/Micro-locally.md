@@ -4,11 +4,11 @@ Set the value of the given `EnvRef` for the duration of the effect.
 
 To import and use `locally` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.locally
-```
+undefined
 
 **Signature**
 

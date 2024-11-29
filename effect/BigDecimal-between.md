@@ -4,11 +4,11 @@ Checks if a `BigDecimal` is between a `minimum` and `maximum` value (inclusive).
 
 To import and use `between` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.between
-```
+undefined
 
 **Example**
 

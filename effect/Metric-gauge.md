@@ -5,11 +5,11 @@ Gauges are suitable for metrics that represent instantaneous values, such as mem
 
 To import and use `gauge` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.gauge
-```
+undefined
 
 **Example**
 

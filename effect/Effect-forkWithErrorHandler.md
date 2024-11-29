@@ -4,11 +4,11 @@ Like fork but handles an error with the provided handler.
 
 To import and use `forkWithErrorHandler` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.forkWithErrorHandler
-```
+undefined
 
 **Signature**
 

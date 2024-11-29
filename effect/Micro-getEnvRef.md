@@ -4,11 +4,11 @@ Retrieve the current value of the given `EnvRef`.
 
 To import and use `getEnvRef` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.getEnvRef
-```
+undefined
 
 **Signature**
 

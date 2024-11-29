@@ -5,11 +5,11 @@ producing a new schema that represents a transformation from the `{ readonly [ke
 
 To import and use `pluck` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.pluck
-```
+undefined
 
 **Example**
 

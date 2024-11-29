@@ -35,8 +35,8 @@ synchronization of Fibers and transactional data-types can be quite useful.
 
 To import and use `STM` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.STM
-```
+undefined

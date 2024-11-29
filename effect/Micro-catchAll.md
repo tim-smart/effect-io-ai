@@ -6,11 +6,11 @@ It only catches expected (`MicroCause.Fail`) errors.
 
 To import and use `catchAll` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.catchAll
-```
+undefined
 
 **Signature**
 

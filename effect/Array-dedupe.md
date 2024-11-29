@@ -5,11 +5,11 @@ The equivalence used to compare elements is provided by `Equal.equivalence()` fr
 
 To import and use `dedupe` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.dedupe
-```
+undefined
 
 **Signature**
 

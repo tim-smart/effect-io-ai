@@ -4,11 +4,11 @@ Maps over elements of the stream with the specified effectful function.
 
 To import and use `mapEffect` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mapEffect
-```
+undefined
 
 **Example**
 

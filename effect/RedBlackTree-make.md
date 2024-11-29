@@ -4,11 +4,11 @@ Constructs a new `RedBlackTree` from the specified entries.
 
 To import and use `make` from the "RedBlackTree" module:
 
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
+ts
+import \* as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.make
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ A `Semigroup` that uses the maximum between two values.
 
 To import and use `SemigroupMax` from the "BigInt" module:
 
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
+ts
+import \* as BigInt from "@effect/typeclass/data/BigInt"
 // Can be accessed like this
 BigInt.SemigroupMax
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isUpstreamPullRequest` from the "UpstreamPullRequest" module:
 
-```ts
-import * as UpstreamPullRequest from "effect/UpstreamPullRequest"
+ts
+import \* as UpstreamPullRequest from "effect/UpstreamPullRequest"
 // Can be accessed like this
 UpstreamPullRequest.isUpstreamPullRequest
-```
+undefined
 
 **Signature**
 

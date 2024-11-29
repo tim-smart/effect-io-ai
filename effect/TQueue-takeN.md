@@ -6,11 +6,11 @@ become available.
 
 To import and use `takeN` from the "TQueue" module:
 
-```ts
-import * as TQueue from "effect/TQueue"
+ts
+import \* as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.takeN
-```
+undefined
 
 **Signature**
 

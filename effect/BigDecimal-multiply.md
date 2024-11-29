@@ -4,11 +4,11 @@ Provides a multiplication operation on `BigDecimal`s.
 
 To import and use `multiply` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.multiply
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ predicate on the input evaluates to true.
 
 To import and use `untilInputEffect` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.untilInputEffect
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Creates a `Cron` instance from.
 
 To import and use `make` from the "Cron" module:
 
-```ts
-import * as Cron from "effect/Cron"
+ts
+import \* as Cron from "effect/Cron"
 // Can be accessed like this
 Cron.make
-```
+undefined
 
 **Signature**
 

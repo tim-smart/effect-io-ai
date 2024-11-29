@@ -6,11 +6,11 @@ It is useful when we want to chain multiple operations, but only care about the 
 
 To import and use `zipLeft` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.zipLeft
-```
+undefined
 
 **Signature**
 

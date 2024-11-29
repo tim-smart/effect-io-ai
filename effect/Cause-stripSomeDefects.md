@@ -6,11 +6,11 @@ remaining causes.
 
 To import and use `stripSomeDefects` from the "Cause" module:
 
-```ts
-import * as Cause from "effect/Cause"
+ts
+import \* as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.stripSomeDefects
-```
+undefined
 
 **Signature**
 

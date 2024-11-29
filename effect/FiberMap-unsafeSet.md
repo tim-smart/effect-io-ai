@@ -5,11 +5,11 @@ If the key already exists in the FiberMap, the previous fiber will be interrupte
 
 To import and use `unsafeSet` from the "FiberMap" module:
 
-```ts
-import * as FiberMap from "effect/FiberMap"
+ts
+import \* as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.unsafeSet
-```
+undefined
 
 **Signature**
 

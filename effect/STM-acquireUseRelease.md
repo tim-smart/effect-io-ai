@@ -7,11 +7,11 @@ executed uninterruptibly as soon as the `use` workflow completes execution.
 
 To import and use `acquireUseRelease` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.acquireUseRelease
-```
+undefined
 
 **Signature**
 

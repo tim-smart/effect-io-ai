@@ -4,11 +4,11 @@ Clamp a value between a minimum and a maximum.
 
 To import and use `clamp` from the "Order" module:
 
-```ts
-import * as Order from "effect/Order"
+ts
+import \* as Order from "effect/Order"
 // Can be accessed like this
 Order.clamp
-```
+undefined
 
 **Example**
 

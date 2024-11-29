@@ -5,11 +5,11 @@ The projection function maps each value of the iterable to a tuple of a key and 
 
 To import and use `fromIterableWith` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.fromIterableWith
-```
+undefined
 
 **Example**
 

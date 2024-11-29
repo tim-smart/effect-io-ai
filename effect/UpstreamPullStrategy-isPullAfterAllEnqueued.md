@@ -5,11 +5,11 @@ Returns `true` if the specified `UpstreamPullStrategy` is a
 
 To import and use `isPullAfterAllEnqueued` from the "UpstreamPullStrategy" module:
 
-```ts
-import * as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
+ts
+import \* as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
 // Can be accessed like this
 UpstreamPullStrategy.isPullAfterAllEnqueued
-```
+undefined
 
 **Signature**
 

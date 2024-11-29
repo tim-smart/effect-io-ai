@@ -4,11 +4,11 @@ Adds an annotation to each span in this effect.
 
 To import and use `annotateSpans` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.annotateSpans
-```
+undefined
 
 **Signature**
 

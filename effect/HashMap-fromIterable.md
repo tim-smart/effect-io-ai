@@ -4,11 +4,11 @@ Creates a new `HashMap` from an iterable collection of key/value pairs.
 
 To import and use `fromIterable` from the "HashMap" module:
 
-```ts
-import * as HashMap from "effect/HashMap"
+ts
+import \* as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.fromIterable
-```
+undefined
 
 **Signature**
 

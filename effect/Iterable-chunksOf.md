@@ -5,11 +5,11 @@ the `Iterable`.
 
 To import and use `chunksOf` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.chunksOf
-```
+undefined
 
 **Signature**
 

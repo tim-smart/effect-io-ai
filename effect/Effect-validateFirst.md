@@ -13,11 +13,11 @@ result and want to avoid processing further once a valid result is found.
 
 To import and use `validateFirst` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.validateFirst
-```
+undefined
 
 **Example**
 

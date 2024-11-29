@@ -4,11 +4,11 @@ Completes the `Deferred` with the specified lazily evaluated value.
 
 To import and use `sync` from the "Deferred" module:
 
-```ts
-import * as Deferred from "effect/Deferred"
+ts
+import \* as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.sync
-```
+undefined
 
 **Signature**
 

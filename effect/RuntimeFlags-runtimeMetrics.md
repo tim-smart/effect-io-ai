@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `runtimeMetrics` from the "RuntimeFlags" module:
 
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
+ts
+import \* as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.runtimeMetrics
-```
+undefined
 
 **Signature**
 

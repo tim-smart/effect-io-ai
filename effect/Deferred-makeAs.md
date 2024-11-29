@@ -4,11 +4,11 @@ Creates a new `Deferred` from the specified `FiberId`.
 
 To import and use `makeAs` from the "Deferred" module:
 
-```ts
-import * as Deferred from "effect/Deferred"
+ts
+import \* as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.makeAs
-```
+undefined
 
 **Signature**
 

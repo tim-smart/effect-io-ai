@@ -5,11 +5,11 @@ or failing with specified error if the predicate fails
 
 To import and use `liftPredicate` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.liftPredicate
-```
+undefined
 
 **Example**
 

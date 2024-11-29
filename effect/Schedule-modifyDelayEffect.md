@@ -5,11 +5,11 @@ effectual function.
 
 To import and use `modifyDelayEffect` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.modifyDelayEffect
-```
+undefined
 
 **Signature**
 

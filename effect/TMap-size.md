@@ -4,11 +4,11 @@ Returns the number of bindings.
 
 To import and use `size` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.size
-```
+undefined
 
 **Signature**
 

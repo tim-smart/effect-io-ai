@@ -4,11 +4,11 @@ Executes a sequence of two `Either`s. The second `Either` can be dependent on th
 
 To import and use `andThen` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.andThen
-```
+undefined
 
 **Signature**
 

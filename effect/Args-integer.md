@@ -6,11 +6,11 @@ Can optionally provide a custom argument name (defaults to `"integer"`).
 
 To import and use `integer` from the "Args" module:
 
-```ts
-import * as Args from "@effect/cli/Args"
+ts
+import \* as Args from "@effect/cli/Args"
 // Can be accessed like this
 Args.integer
-```
+undefined
 
 **Signature**
 

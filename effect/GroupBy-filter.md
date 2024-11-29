@@ -4,11 +4,11 @@ Filter the groups to be processed.
 
 To import and use `filter` from the "GroupBy" module:
 
-```ts
-import * as GroupBy from "effect/GroupBy"
+ts
+import \* as GroupBy from "effect/GroupBy"
 // Can be accessed like this
 GroupBy.filter
-```
+undefined
 
 **Signature**
 

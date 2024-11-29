@@ -4,11 +4,11 @@
 
 To import and use `SemigroupSum` from the "BigInt" module:
 
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
+ts
+import \* as BigInt from "@effect/typeclass/data/BigInt"
 // Can be accessed like this
 BigInt.SemigroupSum
-```
+undefined
 
 **Example**
 

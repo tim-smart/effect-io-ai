@@ -4,11 +4,11 @@ Takes the last specified number of elements from this stream.
 
 To import and use `takeRight` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.takeRight
-```
+undefined
 
 **Example**
 

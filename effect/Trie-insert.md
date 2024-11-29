@@ -4,11 +4,11 @@ Insert a new entry in the `Trie`.
 
 To import and use `insert` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.insert
-```
+undefined
 
 **Example**
 

@@ -16,11 +16,11 @@ the `Either` type.
 
 To import and use `either` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.either
-```
+undefined
 
 **Example**
 

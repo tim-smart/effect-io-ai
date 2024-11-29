@@ -10,11 +10,11 @@ alternative action after repeated failures.
 
 To import and use `retryOrElse` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.retryOrElse
-```
+undefined
 
 **Example**
 

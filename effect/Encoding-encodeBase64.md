@@ -4,11 +4,11 @@ Encodes the given value into a base64 (RFC4648) `string`.
 
 To import and use `encodeBase64` from the "Encoding" module:
 
-```ts
-import * as Encoding from "effect/Encoding"
+ts
+import \* as Encoding from "effect/Encoding"
 // Can be accessed like this
 Encoding.encodeBase64
-```
+undefined
 
 **Signature**
 

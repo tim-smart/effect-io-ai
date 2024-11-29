@@ -4,11 +4,11 @@ Determine if `unknown` is an Array.
 
 To import and use `isArray` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.isArray
-```
+undefined
 
 **Example**
 

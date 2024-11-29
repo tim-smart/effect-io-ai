@@ -5,11 +5,11 @@ recover from any kind of cause.
 
 To import and use `catchAllCause` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.catchAllCause
-```
+undefined
 
 **Signature**
 

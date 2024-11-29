@@ -5,11 +5,11 @@ disabled by the specified `RuntimeFlagsPatch`.
 
 To import and use `disabledSet` from the "RuntimeFlagsPatch" module:
 
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
+ts
+import \* as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.disabledSet
-```
+undefined
 
 **Signature**
 

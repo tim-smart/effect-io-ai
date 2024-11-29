@@ -4,11 +4,11 @@ Visit each node of the tree in order with key greater then or equal to max.
 
 To import and use `forEachGreaterThanEqual` from the "RedBlackTree" module:
 
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
+ts
+import \* as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.forEachGreaterThanEqual
-```
+undefined
 
 **Signature**
 

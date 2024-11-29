@@ -6,11 +6,11 @@ provided schedule.
 
 To import and use `auto` from the "Reloadable" module:
 
-```ts
-import * as Reloadable from "effect/Reloadable"
+ts
+import \* as Reloadable from "effect/Reloadable"
 // Can be accessed like this
 Reloadable.auto
-```
+undefined
 
 **Signature**
 

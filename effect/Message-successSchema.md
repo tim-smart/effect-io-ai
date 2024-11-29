@@ -4,11 +4,11 @@ Extracts the success schema from a Message. This schema will be used to encode t
 
 To import and use `successSchema` from the "Message" module:
 
-```ts
-import * as Message from "@effect/cluster/Message"
+ts
+import \* as Message from "@effect/cluster/Message"
 // Can be accessed like this
 Message.successSchema
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Retrieves the number of acquired read locks for this fiber.
 
 To import and use `fiberReadLocks` from the "TReentrantLock" module:
 
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
+ts
+import \* as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.fiberReadLocks
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Updates the value of the specified `FiberRef` using the provided `FiberId`
 
 To import and use `updateAs` from the "FiberRefs" module:
 
-```ts
-import * as FiberRefs from "effect/FiberRefs"
+ts
+import \* as FiberRefs from "effect/FiberRefs"
 // Can be accessed like this
 FiberRefs.updateAs
-```
+undefined
 
 **Signature**
 

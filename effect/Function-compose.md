@@ -5,11 +5,11 @@ The result is obtained by first applying the `ab` function to `a` and then apply
 
 To import and use `compose` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.compose
-```
+undefined
 
 **Example**
 

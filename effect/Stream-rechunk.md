@@ -5,11 +5,11 @@ last chunk might contain less than `n` elements.
 
 To import and use `rechunk` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.rechunk
-```
+undefined
 
 **Signature**
 

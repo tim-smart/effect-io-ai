@@ -8,11 +8,11 @@ Takes a structure of `Option`s and returns an `Option` of values with the same s
 
 To import and use `all` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.all
-```
+undefined
 
 **Example**
 

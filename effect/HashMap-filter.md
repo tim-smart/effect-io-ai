@@ -4,11 +4,11 @@ Filters entries out of a `HashMap` using the specified predicate.
 
 To import and use `filter` from the "HashMap" module:
 
-```ts
-import * as HashMap from "effect/HashMap"
+ts
+import \* as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.filter
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ flipping back.
 
 To import and use `flip` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.flip
-```
+undefined
 
 **Signature**
 

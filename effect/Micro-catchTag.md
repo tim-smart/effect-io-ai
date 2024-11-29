@@ -4,11 +4,11 @@ Recovers from the specified tagged error.
 
 To import and use `catchTag` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.catchTag
-```
+undefined
 
 **Signature**
 

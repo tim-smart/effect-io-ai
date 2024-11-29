@@ -5,11 +5,11 @@ f(f(f(a))), ...
 
 To import and use `iterate` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.iterate
-```
+undefined
 
 **Example**
 

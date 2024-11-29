@@ -7,8 +7,8 @@ workflow.
 
 To import and use `FiberRefsPatch` from the "FiberRefsPatch" module:
 
-```ts
-import * as FiberRefsPatch from "effect/FiberRefsPatch"
+ts
+import \* as FiberRefsPatch from "effect/FiberRefsPatch"
 // Can be accessed like this
 FiberRefsPatch.FiberRefsPatch
-```
+undefined

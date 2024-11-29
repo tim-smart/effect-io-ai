@@ -8,11 +8,11 @@ is executed. If it is `false`, the `onFalse` effect is executed instead.
 
 To import and use `if` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.if
-```
+undefined
 
 **Example**
 

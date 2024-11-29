@@ -7,11 +7,11 @@ If an encoding is not specified, the encoding will default to `utf-8`.
 
 To import and use `string` from the "Command" module:
 
-```ts
-import * as Command from "@effect/platform/Command"
+ts
+import \* as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.string
-```
+undefined
 
 **Signature**
 

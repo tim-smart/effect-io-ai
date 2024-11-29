@@ -4,11 +4,11 @@ Reduces an `Iterable<STM>` to a single `STM`, working sequentially.
 
 To import and use `reduceAll` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.reduceAll
-```
+undefined
 
 **Signature**
 

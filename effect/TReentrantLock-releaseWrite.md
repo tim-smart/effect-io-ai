@@ -5,11 +5,11 @@ number of write locks held by this fiber.
 
 To import and use `releaseWrite` from the "TReentrantLock" module:
 
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
+ts
+import \* as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.releaseWrite
-```
+undefined
 
 **Signature**
 

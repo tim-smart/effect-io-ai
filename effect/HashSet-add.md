@@ -4,11 +4,11 @@ Adds a value to the `HashSet`.
 
 To import and use `add` from the "HashSet" module:
 
-```ts
-import * as HashSet from "effect/HashSet"
+ts
+import \* as HashSet from "effect/HashSet"
 // Can be accessed like this
 HashSet.add
-```
+undefined
 
 **Signature**
 

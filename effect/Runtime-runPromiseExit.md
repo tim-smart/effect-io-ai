@@ -8,11 +8,11 @@ program.
 
 To import and use `runPromiseExit` from the "Runtime" module:
 
-```ts
-import * as Runtime from "effect/Runtime"
+ts
+import \* as Runtime from "effect/Runtime"
 // Can be accessed like this
 Runtime.runPromiseExit
-```
+undefined
 
 **Signature**
 

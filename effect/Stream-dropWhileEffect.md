@@ -5,11 +5,11 @@ produces an effect that evalutates to `true`
 
 To import and use `dropWhileEffect` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.dropWhileEffect
-```
+undefined
 
 **Signature**
 

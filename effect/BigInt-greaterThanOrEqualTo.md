@@ -4,11 +4,11 @@ Returns a function that checks if a given `bigint` is greater than or equal to t
 
 To import and use `greaterThanOrEqualTo` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.greaterThanOrEqualTo
-```
+undefined
 
 **Example**
 

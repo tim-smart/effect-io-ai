@@ -4,11 +4,11 @@ Takes an `Iterable` of `bigint`s and returns their multiplication as a single `n
 
 To import and use `multiplyAll` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.multiplyAll
-```
+undefined
 
 **Example**
 

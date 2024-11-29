@@ -4,11 +4,11 @@ Constructs a config for a sequence of values.
 
 To import and use `hashMap` from the "Config" module:
 
-```ts
-import * as Config from "effect/Config"
+ts
+import \* as Config from "effect/Config"
 // Can be accessed like this
 Config.hashMap
-```
+undefined
 
 **Signature**
 

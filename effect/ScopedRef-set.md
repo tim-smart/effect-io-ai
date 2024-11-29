@@ -9,11 +9,11 @@ to acquire a new value fails.
 
 To import and use `set` from the "ScopedRef" module:
 
-```ts
-import * as ScopedRef from "effect/ScopedRef"
+ts
+import \* as ScopedRef from "effect/ScopedRef"
 // Can be accessed like this
 ScopedRef.set
-```
+undefined
 
 **Signature**
 

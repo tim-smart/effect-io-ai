@@ -4,11 +4,11 @@ Provide the `CurrentTimeZone` to an effect, using a offset.
 
 To import and use `withCurrentZoneOffset` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.withCurrentZoneOffset
-```
+undefined
 
 **Example**
 

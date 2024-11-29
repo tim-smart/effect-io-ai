@@ -4,11 +4,11 @@ Retrieve the fiber from the FiberHandle.
 
 To import and use `unsafeGet` from the "FiberHandle" module:
 
-```ts
-import * as FiberHandle from "effect/FiberHandle"
+ts
+import \* as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.unsafeGet
-```
+undefined
 
 **Signature**
 

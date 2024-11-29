@@ -7,11 +7,11 @@ to the naming convention of a config provider.
 
 To import and use `upperCase` from the "ConfigProvider" module:
 
-```ts
-import * as ConfigProvider from "effect/ConfigProvider"
+ts
+import \* as ConfigProvider from "effect/ConfigProvider"
 // Can be accessed like this
 ConfigProvider.upperCase
-```
+undefined
 
 **Signature**
 

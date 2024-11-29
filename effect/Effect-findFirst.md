@@ -4,11 +4,11 @@ Returns the first element that satisfies the effectful predicate.
 
 To import and use `findFirst` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.findFirst
-```
+undefined
 
 **Signature**
 

@@ -8,11 +8,11 @@ be automatically removed from the FiberHandle when it completes.
 
 To import and use `make` from the "FiberHandle" module:
 
-```ts
-import * as FiberHandle from "effect/FiberHandle"
+ts
+import \* as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.make
-```
+undefined
 
 **Example**
 

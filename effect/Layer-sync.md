@@ -4,11 +4,11 @@ Lazily constructs a layer from the specified value.
 
 To import and use `sync` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.sync
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ Equivalent to `Array.from(Trie.entries(trie))`.
 
 To import and use `toEntries` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.toEntries
-```
+undefined
 
 **Example**
 

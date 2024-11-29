@@ -4,11 +4,11 @@ Returns `true` if the specified `Doc` is a `Column`, `false` otherwise.
 
 To import and use `isColumn` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.isColumn
-```
+undefined
 
 **Signature**
 

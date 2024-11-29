@@ -5,11 +5,11 @@ elements. Useful for sequencing effects using streams:
 
 To import and use `drain` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.drain
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Produces the specified element if this stream is empty.
 
 To import and use `orElseIfEmpty` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.orElseIfEmpty
-```
+undefined
 
 **Signature**
 

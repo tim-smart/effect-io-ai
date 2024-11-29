@@ -5,11 +5,11 @@ Importantly, if the input chunk is a `NonEmptyChunk`, the reversed chunk will al
 
 To import and use `reverse` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.reverse
-```
+undefined
 
 **Example**
 

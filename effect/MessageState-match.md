@@ -4,11 +4,11 @@ Match over the possible states of a MessageState
 
 To import and use `match` from the "MessageState" module:
 
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
+ts
+import \* as MessageState from "@effect/cluster/MessageState"
 // Can be accessed like this
 MessageState.match
-```
+undefined
 
 **Signature**
 

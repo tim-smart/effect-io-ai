@@ -4,11 +4,11 @@ Applies a function to each element in an array and returns a new array containin
 
 To import and use `flatMap` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.flatMap
-```
+undefined
 
 **Signature**
 

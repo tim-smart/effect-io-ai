@@ -4,11 +4,11 @@ Constructs a layer from the specified effect.
 
 To import and use `effect` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.effect
-```
+undefined
 
 **Signature**
 

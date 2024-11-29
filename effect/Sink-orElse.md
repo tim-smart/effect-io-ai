@@ -4,11 +4,11 @@ Switch to another sink in case of failure
 
 To import and use `orElse` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.orElse
-```
+undefined
 
 **Signature**
 

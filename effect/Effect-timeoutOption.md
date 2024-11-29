@@ -15,11 +15,11 @@ take too long but want to continue executing other tasks.
 
 To import and use `timeoutOption` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.timeoutOption
-```
+undefined
 
 **Example**
 

@@ -6,11 +6,11 @@ fiber.
 
 To import and use `acquireRead` from the "TReentrantLock" module:
 
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
+ts
+import \* as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.acquireRead
-```
+undefined
 
 **Signature**
 

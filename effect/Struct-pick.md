@@ -4,11 +4,11 @@ Create a new object by picking properties of an existing object.
 
 To import and use `pick` from the "Struct" module:
 
-```ts
-import * as Struct from "effect/Struct"
+ts
+import \* as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.pick
-```
+undefined
 
 **Example**
 

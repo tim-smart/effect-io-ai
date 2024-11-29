@@ -4,11 +4,11 @@ Removes a single element from the set.
 
 To import and use `remove` from the "TSet" module:
 
-```ts
-import * as TSet from "effect/TSet"
+ts
+import \* as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.remove
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ element of the tuple.
 
 To import and use `zipLeft` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.zipLeft
-```
+undefined
 
 **Signature**
 

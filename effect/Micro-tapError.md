@@ -4,11 +4,11 @@ Perform a side effect from expected errors of the given `Micro`.
 
 To import and use `tapError` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.tapError
-```
+undefined
 
 **Signature**
 

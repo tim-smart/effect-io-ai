@@ -6,11 +6,11 @@ The "json" variants will use the object schema directly.
 
 To import and use `JsonFromString` from the "Model" module:
 
-```ts
-import * as Model from "@effect/sql/Model"
+ts
+import \* as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.JsonFromString
-```
+undefined
 
 **Signature**
 

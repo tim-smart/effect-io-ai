@@ -4,11 +4,11 @@ Provides a multiplication operation on `bigint`s.
 
 To import and use `multiply` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.multiply
-```
+undefined
 
 **Example**
 

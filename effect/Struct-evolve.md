@@ -5,11 +5,11 @@ If no transformation function is provided for a key, it will return the origiona
 
 To import and use `evolve` from the "Struct" module:
 
-```ts
-import * as Struct from "effect/Struct"
+ts
+import \* as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.evolve
-```
+undefined
 
 **Example**
 

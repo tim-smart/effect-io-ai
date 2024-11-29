@@ -8,11 +8,11 @@ returned as the value for said option.
 
 To import and use `repeated` from the "Options" module:
 
-```ts
-import * as Options from "@effect/cli/Options"
+ts
+import \* as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.repeated
-```
+undefined
 
 **Signature**
 

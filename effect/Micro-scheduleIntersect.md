@@ -5,11 +5,11 @@ recur, using the maximum of the two durations between recurrences.
 
 To import and use `scheduleIntersect` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.scheduleIntersect
-```
+undefined
 
 **Signature**
 

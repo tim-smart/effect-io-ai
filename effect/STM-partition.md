@@ -5,11 +5,11 @@ Collects all successes and failures in a tupled fashion.
 
 To import and use `partition` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.partition
-```
+undefined
 
 **Signature**
 

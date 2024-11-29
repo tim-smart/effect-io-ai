@@ -4,11 +4,11 @@ This utility function is used to check if all the elements in a collection of bo
 
 To import and use `every` from the "Boolean" module:
 
-```ts
-import * as Boolean from "effect/Boolean"
+ts
+import \* as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.every
-```
+undefined
 
 **Example**
 

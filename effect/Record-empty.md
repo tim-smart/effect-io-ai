@@ -4,11 +4,11 @@ Creates a new, empty record.
 
 To import and use `empty` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.empty
-```
+undefined
 
 **Signature**
 

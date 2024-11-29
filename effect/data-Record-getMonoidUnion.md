@@ -9,11 +9,11 @@ The `empty` value for this `Monoid` is an empty record `{}`.
 
 To import and use `getMonoidUnion` from the "Record" module:
 
-```ts
-import * as Record from "@effect/typeclass/data/Record"
+ts
+import \* as Record from "@effect/typeclass/data/Record"
 // Can be accessed like this
 Record.getMonoidUnion
-```
+undefined
 
 **Example**
 

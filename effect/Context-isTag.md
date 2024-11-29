@@ -4,11 +4,11 @@ Checks if the provided argument is a `Tag`.
 
 To import and use `isTag` from the "Context" module:
 
-```ts
-import * as Context from "effect/Context"
+ts
+import \* as Context from "effect/Context"
 // Can be accessed like this
 Context.isTag
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Register a new entity type, allowing pods to send messages to entities of this t
 
 To import and use `registerEntity` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.registerEntity
-```
+undefined
 
 **Signature**
 

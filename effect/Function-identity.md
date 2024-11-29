@@ -4,11 +4,11 @@ The identity function, i.e. A function that returns its input argument.
 
 To import and use `identity` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.identity
-```
+undefined
 
 **Example**
 

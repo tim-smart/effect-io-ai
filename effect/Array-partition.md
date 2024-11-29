@@ -4,11 +4,11 @@ Separate elements based on a predicate that also exposes the index of the elemen
 
 To import and use `partition` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.partition
-```
+undefined
 
 **Signature**
 

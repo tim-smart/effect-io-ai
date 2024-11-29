@@ -4,11 +4,11 @@ Constructs a new `CacheStats` from the specified values.
 
 To import and use `makeCacheStats` from the "Cache" module:
 
-```ts
-import * as Cache from "effect/Cache"
+ts
+import \* as Cache from "effect/Cache"
 // Can be accessed like this
 Cache.makeCacheStats
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ effect requires more than one service use `provideEnvironment` instead.
 
 To import and use `provideService` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.provideService
-```
+undefined
 
 **Signature**
 

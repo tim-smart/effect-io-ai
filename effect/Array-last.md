@@ -4,11 +4,11 @@ Get the last element in a `ReadonlyArray`, or `None` if the `ReadonlyArray` is e
 
 To import and use `last` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.last
-```
+undefined
 
 **Signature**
 

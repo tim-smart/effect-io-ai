@@ -4,11 +4,11 @@ Enables or disables tracing propagation for the request.
 
 To import and use `withTracerPropagation` from the "HttpClient" module:
 
-```ts
-import * as HttpClient from "@effect/platform/HttpClient"
+ts
+import \* as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.withTracerPropagation
-```
+undefined
 
 **Signature**
 

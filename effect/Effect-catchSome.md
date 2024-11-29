@@ -13,11 +13,11 @@ remains the same as in the original effect.
 
 To import and use `catchSome` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchSome
-```
+undefined
 
 **Example**
 

@@ -6,11 +6,11 @@ applied to.
 
 To import and use `trackErrorWith` from the "Metric" module:
 
-```ts
-import * as Metric from "effect/Metric"
+ts
+import \* as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackErrorWith
-```
+undefined
 
 **Signature**
 

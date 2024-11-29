@@ -5,11 +5,11 @@ or return a copy of the input if the index is out of bounds.
 
 To import and use `modify` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.modify
-```
+undefined
 
 **Example**
 

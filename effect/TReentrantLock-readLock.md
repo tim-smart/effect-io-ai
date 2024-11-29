@@ -4,11 +4,11 @@ Obtains a read lock in a scoped context.
 
 To import and use `readLock` from the "TReentrantLock" module:
 
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
+ts
+import \* as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.readLock
-```
+undefined
 
 **Signature**
 

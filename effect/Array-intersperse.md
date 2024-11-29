@@ -5,11 +5,11 @@ If the input is a non-empty array, the result is also a non-empty array.
 
 To import and use `intersperse` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.intersperse
-```
+undefined
 
 **Example**
 

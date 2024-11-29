@@ -6,11 +6,11 @@ onto one line.
 
 To import and use `smart` from the "Layout" module:
 
-```ts
-import * as Layout from "@effect/printer/Layout"
+ts
+import \* as Layout from "@effect/printer/Layout"
 // Can be accessed like this
 Layout.smart
-```
+undefined
 
 **Example**
 

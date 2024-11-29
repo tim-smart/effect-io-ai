@@ -7,11 +7,11 @@ If any asynchronous effects are encountered, the function will return a
 
 To import and use `runSyncExit` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.runSyncExit
-```
+undefined
 
 **Signature**
 

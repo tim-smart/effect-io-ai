@@ -6,11 +6,11 @@ Note: The function is reverse of `zip`.
 
 To import and use `unzip` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.unzip
-```
+undefined
 
 **Signature**
 

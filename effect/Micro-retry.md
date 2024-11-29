@@ -4,11 +4,11 @@ Retry the given `Micro` effect using the provided options.
 
 To import and use `retry` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.retry
-```
+undefined
 
 **Signature**
 

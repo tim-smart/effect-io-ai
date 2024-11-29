@@ -18,11 +18,11 @@ dynamically loaded plugins, controlled recovery might be needed.
 
 To import and use `catchAllCause` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchAllCause
-```
+undefined
 
 **Example**
 

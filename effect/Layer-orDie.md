@@ -5,11 +5,11 @@ unchecked and not a part of the type of the layer.
 
 To import and use `orDie` from the "Layer" module:
 
-```ts
-import * as Layer from "effect/Layer"
+ts
+import \* as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.orDie
-```
+undefined
 
 **Signature**
 

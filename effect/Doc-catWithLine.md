@@ -5,11 +5,11 @@ document between them.
 
 To import and use `catWithLine` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.catWithLine
-```
+undefined
 
 **Example**
 

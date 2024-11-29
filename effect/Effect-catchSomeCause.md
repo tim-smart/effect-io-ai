@@ -4,11 +4,11 @@ Recovers from some or all of the error cases with provided cause.
 
 To import and use `catchSomeCause` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchSomeCause
-```
+undefined
 
 **Signature**
 

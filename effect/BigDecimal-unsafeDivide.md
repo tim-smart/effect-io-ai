@@ -9,11 +9,11 @@ Throws a `RangeError` if the divisor is `0`.
 
 To import and use `unsafeDivide` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.unsafeDivide
-```
+undefined
 
 **Example**
 

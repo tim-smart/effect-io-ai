@@ -5,11 +5,11 @@ nodes found in the `Cause` semiring structure.
 
 To import and use `size` from the "Cause" module:
 
-```ts
-import * as Cause from "effect/Cause"
+ts
+import \* as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.size
-```
+undefined
 
 **Signature**
 

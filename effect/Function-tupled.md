@@ -4,11 +4,11 @@ Creates a tupled version of this function: instead of `n` arguments, it accepts 
 
 To import and use `tupled` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.tupled
-```
+undefined
 
 **Example**
 

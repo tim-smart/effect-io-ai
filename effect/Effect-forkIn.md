@@ -5,11 +5,11 @@ when the scope is closed.
 
 To import and use `forkIn` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.forkIn
-```
+undefined
 
 **Signature**
 

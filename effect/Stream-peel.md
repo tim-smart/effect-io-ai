@@ -7,11 +7,11 @@ valid only within the scope.
 
 To import and use `peel` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.peel
-```
+undefined
 
 **Signature**
 

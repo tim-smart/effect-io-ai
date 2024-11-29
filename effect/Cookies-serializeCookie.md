@@ -6,11 +6,11 @@ Adapted from https://github.com/fastify/fastify-cookie under MIT License
 
 To import and use `serializeCookie` from the "Cookies" module:
 
-```ts
-import * as Cookies from "@effect/platform/Cookies"
+ts
+import \* as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.serializeCookie
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Maps the keys of a `ReadonlyRecord` while preserving the corresponding values.
 
 To import and use `mapKeys` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.mapKeys
-```
+undefined
 
 **Example**
 

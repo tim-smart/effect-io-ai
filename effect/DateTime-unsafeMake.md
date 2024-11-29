@@ -10,11 +10,11 @@ Create a `DateTime` from one of the following:
 
 To import and use `unsafeMake` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.unsafeMake
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Retrieves the `Right` values from an `Iterable` of `Either`s, collecting them in
 
 To import and use `getRights` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.getRights
-```
+undefined
 
 **Example**
 

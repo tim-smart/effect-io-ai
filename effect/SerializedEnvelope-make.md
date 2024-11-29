@@ -4,11 +4,11 @@ Construct a new `SerializedEnvelope`
 
 To import and use `make` from the "SerializedEnvelope" module:
 
-```ts
-import * as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
+ts
+import \* as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
 // Can be accessed like this
 SerializedEnvelope.make
-```
+undefined
 
 **Signature**
 

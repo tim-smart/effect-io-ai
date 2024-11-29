@@ -4,11 +4,11 @@ Extracts the exit schema from a Message. This schema will be used to encode the 
 
 To import and use `exitSchema` from the "Message" module:
 
-```ts
-import * as Message from "@effect/cluster/Message"
+ts
+import \* as Message from "@effect/cluster/Message"
 // Can be accessed like this
 Message.exitSchema
-```
+undefined
 
 **Signature**
 

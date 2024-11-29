@@ -5,11 +5,11 @@ amount of time.
 
 To import and use `scheduleWithMaxElapsed` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.scheduleWithMaxElapsed
-```
+undefined
 
 **Signature**
 

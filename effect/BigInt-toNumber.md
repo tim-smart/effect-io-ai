@@ -8,11 +8,11 @@ to a number and returns `Option.some(number)`.
 
 To import and use `toNumber` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.toNumber
-```
+undefined
 
 **Example**
 

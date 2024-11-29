@@ -5,11 +5,11 @@ with linear increasing values.
 
 To import and use `linear` from the "MetricBoundaries" module:
 
-```ts
-import * as MetricBoundaries from "effect/MetricBoundaries"
+ts
+import \* as MetricBoundaries from "effect/MetricBoundaries"
 // Can be accessed like this
 MetricBoundaries.linear
-```
+undefined
 
 **Signature**
 

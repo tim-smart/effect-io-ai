@@ -5,11 +5,11 @@ times that effects are scheduled to run.
 
 To import and use `sleeps` from the "TestClock" module:
 
-```ts
-import * as TestClock from "effect/TestClock"
+ts
+import \* as TestClock from "effect/TestClock"
 // Can be accessed like this
 TestClock.sleeps
-```
+undefined
 
 **Signature**
 

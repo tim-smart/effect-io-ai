@@ -4,11 +4,11 @@ Remove the longest initial subarray for which all element satisfy the specified 
 
 To import and use `dropWhile` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.dropWhile
-```
+undefined
 
 **Example**
 

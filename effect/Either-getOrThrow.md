@@ -6,11 +6,11 @@ The thrown error is a default error. To configure the error thrown, see {@link g
 
 To import and use `getOrThrow` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrThrow
-```
+undefined
 
 **Example**
 

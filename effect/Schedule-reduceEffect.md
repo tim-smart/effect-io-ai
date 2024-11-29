@@ -4,11 +4,11 @@ Returns a new schedule that effectfully folds over the outputs of this one.
 
 To import and use `reduceEffect` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.reduceEffect
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Tests if a value is an `object` with a property `_tag` that matches the given ta
 
 To import and use `isTagged` from the "Predicate" module:
 
-```ts
-import * as Predicate from "effect/Predicate"
+ts
+import \* as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isTagged
-```
+undefined
 
 **Example**
 

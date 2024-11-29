@@ -5,11 +5,11 @@ and filters out `None` values.
 
 To import and use `filterMap` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.filterMap
-```
+undefined
 
 **Example**
 

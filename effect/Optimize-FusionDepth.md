@@ -5,8 +5,8 @@ optimizer should traverse the document tree.
 
 To import and use `FusionDepth` from the "Optimize" module:
 
-```ts
-import * as Optimize from "@effect/printer/Optimize"
+ts
+import \* as Optimize from "@effect/printer/Optimize"
 // Can be accessed like this
 Optimize.FusionDepth
-```
+undefined

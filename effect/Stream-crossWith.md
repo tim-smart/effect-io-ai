@@ -8,11 +8,11 @@ See also `Stream.zipWith` for the more common point-wise variant.
 
 To import and use `crossWith` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.crossWith
-```
+undefined
 
 **Signature**
 

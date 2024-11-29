@@ -4,11 +4,11 @@ Return a tuple containing a copy of the `NonEmptyReadonlyArray` without its last
 
 To import and use `unappend` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.unappend
-```
+undefined
 
 **Example**
 

@@ -7,11 +7,11 @@ fall `MicroExit` of the effect to determine if the repetition should continue.
 
 To import and use `repeatExit` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.repeatExit
-```
+undefined
 
 **Signature**
 

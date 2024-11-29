@@ -6,8 +6,8 @@ This is also used by pods for internal communication (forward messages to each o
 
 To import and use `Pods` from the "Pods" module:
 
-```ts
-import * as Pods from "@effect/cluster/Pods"
+ts
+import \* as Pods from "@effect/cluster/Pods"
 // Can be accessed like this
 Pods.Pods
-```
+undefined

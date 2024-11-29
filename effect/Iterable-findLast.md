@@ -4,11 +4,11 @@ Find the last element for which a predicate holds.
 
 To import and use `findLast` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.findLast
-```
+undefined
 
 **Signature**
 

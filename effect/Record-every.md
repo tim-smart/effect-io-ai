@@ -4,11 +4,11 @@ Check if all entries in a record meet a specific condition.
 
 To import and use `every` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.every
-```
+undefined
 
 **Signature**
 

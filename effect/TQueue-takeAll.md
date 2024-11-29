@@ -5,11 +5,11 @@ empty returns an empty collection.
 
 To import and use `takeAll` from the "TQueue" module:
 
-```ts
-import * as TQueue from "effect/TQueue"
+ts
+import \* as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.takeAll
-```
+undefined
 
 **Signature**
 

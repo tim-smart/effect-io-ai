@@ -5,11 +5,11 @@ early when the condition is not fulfilled. Example:
 
 To import and use `runFoldWhile` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runFoldWhile
-```
+undefined
 
 **Signature**
 

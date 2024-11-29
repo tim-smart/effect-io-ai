@@ -6,11 +6,11 @@ preservation of maximum information from both child and parent refs.
 
 To import and use `joinAs` from the "FiberRefs" module:
 
-```ts
-import * as FiberRefs from "effect/FiberRefs"
+ts
+import \* as FiberRefs from "effect/FiberRefs"
 // Can be accessed like this
 FiberRefs.joinAs
-```
+undefined
 
 **Signature**
 

@@ -8,11 +8,11 @@
 
 To import and use `struct` from the "Predicate" module:
 
-```ts
-import * as Predicate from "effect/Predicate"
+ts
+import \* as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.struct
-```
+undefined
 
 **Signature**
 

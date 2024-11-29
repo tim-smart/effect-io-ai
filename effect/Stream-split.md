@@ -16,11 +16,11 @@ pipe(
 
 To import and use `split` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.split
-```
+undefined
 
 **Signature**
 

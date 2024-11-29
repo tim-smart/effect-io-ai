@@ -15,11 +15,11 @@ the `onTimeout` function will be executed to generate the custom error.
 
 To import and use `timeoutFail` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.timeoutFail
-```
+undefined
 
 **Example**
 

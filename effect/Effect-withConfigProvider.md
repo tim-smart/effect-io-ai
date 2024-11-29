@@ -4,11 +4,11 @@ Executes the specified workflow with the specified configuration provider.
 
 To import and use `withConfigProvider` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withConfigProvider
-```
+undefined
 
 **Signature**
 

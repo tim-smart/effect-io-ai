@@ -4,11 +4,11 @@ Returns a new schedule that outputs the delay between each occurence.
 
 To import and use `delays` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.delays
-```
+undefined
 
 **Signature**
 

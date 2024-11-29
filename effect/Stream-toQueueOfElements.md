@@ -7,11 +7,11 @@ Defaults to a capacity of 2.
 
 To import and use `toQueueOfElements` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toQueueOfElements
-```
+undefined
 
 **Signature**
 

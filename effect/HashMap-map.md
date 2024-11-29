@@ -4,11 +4,11 @@ Maps over the entries of the `HashMap` using the specified function.
 
 To import and use `map` from the "HashMap" module:
 
-```ts
-import * as HashMap from "effect/HashMap"
+ts
+import \* as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.map
-```
+undefined
 
 **Signature**
 

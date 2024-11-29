@@ -5,11 +5,11 @@ number of times before it terminates.
 
 To import and use `recurs` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.recurs
-```
+undefined
 
 **Signature**
 

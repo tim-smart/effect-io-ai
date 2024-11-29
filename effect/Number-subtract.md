@@ -4,11 +4,11 @@ Provides a subtraction operation on `number`s.
 
 To import and use `subtract` from the "Number" module:
 
-```ts
-import * as Number from "effect/Number"
+ts
+import \* as Number from "effect/Number"
 // Can be accessed like this
 Number.subtract
-```
+undefined
 
 **Example**
 

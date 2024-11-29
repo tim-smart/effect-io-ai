@@ -5,8 +5,8 @@ thrown exceptions into typed failed eithers creating with `Either.left`.
 
 To import and use `try` from the "Either" module:
 
-```ts
-import * as Either from "effect/Either"
+ts
+import \* as Either from "effect/Either"
 // Can be accessed like this
 Either.try
-```
+undefined

@@ -5,11 +5,11 @@ current column.
 
 To import and use `align` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.align
-```
+undefined
 
 **Example**
 

@@ -5,11 +5,11 @@ or is interrupted.
 
 To import and use `onExit` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.onExit
-```
+undefined
 
 **Signature**
 

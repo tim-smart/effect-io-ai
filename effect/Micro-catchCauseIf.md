@@ -5,11 +5,11 @@ using the provided predicate to determine if the failure should be caught.
 
 To import and use `catchCauseIf` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.catchCauseIf
-```
+undefined
 
 **Signature**
 

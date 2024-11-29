@@ -26,11 +26,11 @@ behavior of the returned effect.
 
 To import and use `async` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.async
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Parses a numerical `string` into a `BigDecimal`.
 
 To import and use `unsafeFromString` from the "BigDecimal" module:
 
-```ts
-import * as BigDecimal from "effect/BigDecimal"
+ts
+import \* as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.unsafeFromString
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Recovers from some or all of the error cases.
 
 To import and use `catchSome` from the "STM" module:
 
-```ts
-import * as STM from "effect/STM"
+ts
+import \* as STM from "effect/STM"
 // Can be accessed like this
 STM.catchSome
-```
+undefined
 
 **Signature**
 

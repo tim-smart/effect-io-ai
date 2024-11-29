@@ -8,11 +8,11 @@ useful for platforms that have no file system.
 
 To import and use `layerContext` from the "NodeHttpServer" module:
 
-```ts
-import * as NodeHttpServer from "@effect/platform-node/NodeHttpServer"
+ts
+import \* as NodeHttpServer from "@effect/platform-node/NodeHttpServer"
 // Can be accessed like this
 NodeHttpServer.layerContext
-```
+undefined
 
 **Signature**
 

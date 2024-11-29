@@ -6,11 +6,11 @@ Drop a max number of elements from the start of an `Iterable`
 
 To import and use `drop` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.drop
-```
+undefined
 
 **Signature**
 

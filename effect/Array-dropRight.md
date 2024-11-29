@@ -6,11 +6,11 @@ Drop a max number of elements from the end of an `Iterable`, creating a new `Arr
 
 To import and use `dropRight` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.dropRight
-```
+undefined
 
 **Example**
 

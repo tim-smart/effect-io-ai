@@ -4,11 +4,11 @@ Transforms all elements of the chunk for as long as the specified function retur
 
 To import and use `filterMapWhile` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.filterMapWhile
-```
+undefined
 
 **Signature**
 

@@ -8,11 +8,11 @@ constructor.
 
 To import and use `manual` from the "Resource" module:
 
-```ts
-import * as Resource from "effect/Resource"
+ts
+import \* as Resource from "effect/Resource"
 // Can be accessed like this
 Resource.manual
-```
+undefined
 
 **Signature**
 

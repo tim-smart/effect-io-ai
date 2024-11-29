@@ -14,11 +14,11 @@ This is useful for propagating failures as defects, signaling that they should n
 
 To import and use `orDie` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orDie
-```
+undefined
 
 **Example**
 

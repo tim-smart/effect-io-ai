@@ -5,11 +5,11 @@ effect to succeed. Losers of the race will be interrupted immediately
 
 To import and use `race` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.race
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Constructs the event that occurs when new shards are assigned to Pod.
 
 To import and use `ShardsAssigned` from the "ShardingEvent" module:
 
-```ts
-import * as ShardingEvent from "@effect/cluster/ShardingEvent"
+ts
+import \* as ShardingEvent from "@effect/cluster/ShardingEvent"
 // Can be accessed like this
 ShardingEvent.ShardsAssigned
-```
+undefined
 
 **Signature**
 

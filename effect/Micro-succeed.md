@@ -4,11 +4,11 @@ Creates a `Micro` effect that will succeed with the specified constant value.
 
 To import and use `succeed` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.succeed
-```
+undefined
 
 **Signature**
 

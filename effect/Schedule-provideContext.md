@@ -5,11 +5,11 @@ resulting schedule does not require any context.
 
 To import and use `provideContext` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.provideContext
-```
+undefined
 
 **Signature**
 

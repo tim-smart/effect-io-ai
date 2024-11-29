@@ -4,11 +4,11 @@ Atomically folds using a transactional function.
 
 To import and use `reduceSTM` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.reduceSTM
-```
+undefined
 
 **Signature**
 

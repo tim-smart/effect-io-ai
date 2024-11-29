@@ -4,11 +4,11 @@ Prepend an element to the front of an `Iterable`, creating a new `Iterable`.
 
 To import and use `prepend` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.prepend
-```
+undefined
 
 **Signature**
 

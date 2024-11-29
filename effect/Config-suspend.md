@@ -4,11 +4,11 @@ Lazily constructs a config.
 
 To import and use `suspend` from the "Config" module:
 
-```ts
-import * as Config from "effect/Config"
+ts
+import \* as Config from "effect/Config"
 // Can be accessed like this
 Config.suspend
-```
+undefined
 
 **Signature**
 

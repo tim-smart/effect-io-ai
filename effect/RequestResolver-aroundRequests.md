@@ -7,11 +7,11 @@ The `before` and `after` effects are provided with the requests being executed.
 
 To import and use `aroundRequests` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.aroundRequests
-```
+undefined
 
 **Example**
 

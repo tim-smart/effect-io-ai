@@ -4,11 +4,11 @@ Creates a new record from an iterable, utilizing the provided function to determ
 
 To import and use `fromIterableBy` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.fromIterableBy
-```
+undefined
 
 **Example**
 

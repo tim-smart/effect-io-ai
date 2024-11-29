@@ -4,11 +4,11 @@ Takes two `Iterable`s and returns an `Iterable` of corresponding pairs.
 
 To import and use `zip` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.zip
-```
+undefined
 
 **Signature**
 

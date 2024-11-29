@@ -4,11 +4,11 @@ Returns `true` if the specified `DocStream` is a `PushAnnotationStream`, `false`
 
 To import and use `isPushAnnotationStream` from the "DocStream" module:
 
-```ts
-import * as DocStream from "@effect/printer/DocStream"
+ts
+import \* as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.isPushAnnotationStream
-```
+undefined
 
 **Signature**
 

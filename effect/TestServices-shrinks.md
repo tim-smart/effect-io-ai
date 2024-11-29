@@ -4,11 +4,11 @@ The maximum number of shrinkings to minimize large failures.
 
 To import and use `shrinks` from the "TestServices" module:
 
-```ts
-import * as TestServices from "effect/TestServices"
+ts
+import \* as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.shrinks
-```
+undefined
 
 **Signature**
 

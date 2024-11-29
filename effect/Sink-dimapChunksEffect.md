@@ -5,11 +5,11 @@ provided functions. `f` and `g` must preserve chunking-invariance.
 
 To import and use `dimapChunksEffect` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.dimapChunksEffect
-```
+undefined
 
 **Signature**
 

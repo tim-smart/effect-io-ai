@@ -10,11 +10,11 @@ To set the correct cookie in a handler, you can use
 
 To import and use `apiKey` from the "HttpApiSecurity" module:
 
-```ts
-import * as HttpApiSecurity from "@effect/platform/HttpApiSecurity"
+ts
+import \* as HttpApiSecurity from "@effect/platform/HttpApiSecurity"
 // Can be accessed like this
 HttpApiSecurity.apiKey
-```
+undefined
 
 **Signature**
 

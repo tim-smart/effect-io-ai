@@ -5,11 +5,11 @@ iterator.
 
 To import and use `unfold` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.unfold
-```
+undefined
 
 **Signature**
 

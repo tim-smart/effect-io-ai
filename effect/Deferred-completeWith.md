@@ -5,11 +5,11 @@ deferred has already been completed, the method will produce false.
 
 To import and use `completeWith` from the "Deferred" module:
 
-```ts
-import * as Deferred from "effect/Deferred"
+ts
+import \* as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.completeWith
-```
+undefined
 
 **Signature**
 

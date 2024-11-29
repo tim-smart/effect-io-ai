@@ -4,11 +4,11 @@ Reduce a state over the entries of the `Trie`.
 
 To import and use `reduce` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.reduce
-```
+undefined
 
 **Example**
 

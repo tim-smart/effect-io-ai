@@ -5,11 +5,11 @@ function on each element, and grouping the results according to values returned
 
 To import and use `groupBy` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.groupBy
-```
+undefined
 
 **Signature**
 

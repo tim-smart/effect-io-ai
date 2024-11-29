@@ -6,11 +6,11 @@ See also [`pipe`](#pipe).
 
 To import and use `flow` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.flow
-```
+undefined
 
 **Example**
 

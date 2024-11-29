@@ -4,11 +4,11 @@ Joins the elements together with "sep" in the middle.
 
 To import and use `join` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.join
-```
+undefined
 
 **Signature**
 

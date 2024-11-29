@@ -4,11 +4,11 @@ Constructs a stream from a range of integers, including both endpoints.
 
 To import and use `range` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.range
-```
+undefined
 
 **Example**
 

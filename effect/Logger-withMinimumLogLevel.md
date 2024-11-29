@@ -5,11 +5,11 @@ control over which log messages are displayed based on their severity.
 
 To import and use `withMinimumLogLevel` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.withMinimumLogLevel
-```
+undefined
 
 **Example**
 

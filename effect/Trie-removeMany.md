@@ -4,11 +4,11 @@ Removes all entries in the `Trie` which have the specified keys.
 
 To import and use `removeMany` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.removeMany
-```
+undefined
 
 **Example**
 

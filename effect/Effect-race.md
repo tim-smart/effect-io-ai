@@ -7,11 +7,11 @@ effect will fail with some error.
 
 To import and use `race` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.race
-```
+undefined
 
 **Signature**
 

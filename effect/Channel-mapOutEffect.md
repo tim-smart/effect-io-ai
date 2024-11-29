@@ -5,11 +5,11 @@ gets applied to each emitted output element.
 
 To import and use `mapOutEffect` from the "Channel" module:
 
-```ts
-import * as Channel from "effect/Channel"
+ts
+import \* as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapOutEffect
-```
+undefined
 
 **Signature**
 

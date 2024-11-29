@@ -4,11 +4,11 @@ The default Effect test services.
 
 To import and use `liveServices` from the "TestServices" module:
 
-```ts
-import * as TestServices from "effect/TestServices"
+ts
+import \* as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.liveServices
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ The `empty` value is the `maxBound` value.
 
 To import and use `min` from the "Monoid" module:
 
-```ts
-import * as Monoid from "@effect/typeclass/Monoid"
+ts
+import \* as Monoid from "@effect/typeclass/Monoid"
 // Can be accessed like this
 Monoid.min
-```
+undefined
 
 **Signature**
 

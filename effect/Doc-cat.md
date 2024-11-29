@@ -4,11 +4,11 @@ The `cat` combinator lays out two documents separated by nothing.
 
 To import and use `cat` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.cat
-```
+undefined
 
 **Signature**
 

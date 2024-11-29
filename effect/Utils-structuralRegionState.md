@@ -4,11 +4,11 @@ Note: this is an experimental feature made available to allow custom matchers in
 
 To import and use `structuralRegionState` from the "Utils" module:
 
-```ts
-import * as Utils from "effect/Utils"
+ts
+import \* as Utils from "effect/Utils"
 // Can be accessed like this
 Utils.structuralRegionState
-```
+undefined
 
 **Signature**
 

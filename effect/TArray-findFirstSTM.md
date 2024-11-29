@@ -4,11 +4,11 @@ Find the first element in the array matching a transactional predicate.
 
 To import and use `findFirstSTM` from the "TArray" module:
 
-```ts
-import * as TArray from "effect/TArray"
+ts
+import \* as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstSTM
-```
+undefined
 
 **Signature**
 

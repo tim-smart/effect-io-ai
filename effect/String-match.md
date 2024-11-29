@@ -4,11 +4,11 @@ It is the `pipe`-able version of the native `match` method.
 
 To import and use `match` from the "String" module:
 
-```ts
-import * as String from "effect/String"
+ts
+import \* as String from "effect/String"
 // Can be accessed like this
 String.match
-```
+undefined
 
 **Signature**
 

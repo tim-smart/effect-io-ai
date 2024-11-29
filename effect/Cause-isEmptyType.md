@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isEmptyType` from the "Cause" module:
 
-```ts
-import * as Cause from "effect/Cause"
+ts
+import \* as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.isEmptyType
-```
+undefined
 
 **Signature**
 

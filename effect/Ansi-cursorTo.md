@@ -8,11 +8,11 @@ based values.
 
 To import and use `cursorTo` from the "Ansi" module:
 
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
+ts
+import \* as Ansi from "@effect/printer-ansi/Ansi"
 // Can be accessed like this
 Ansi.cursorTo
-```
+undefined
 
 **Signature**
 

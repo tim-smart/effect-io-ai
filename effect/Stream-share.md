@@ -6,11 +6,11 @@ When all consumers have exited, the upstream will be finalized.
 
 To import and use `share` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.share
-```
+undefined
 
 **Signature**
 

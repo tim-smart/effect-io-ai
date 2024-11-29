@@ -7,11 +7,11 @@ It is useful when you need to combine two structs of the same type and you have 
 
 To import and use `struct` from the "Semigroup" module:
 
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
+ts
+import \* as Semigroup from "@effect/typeclass/Semigroup"
 // Can be accessed like this
 Semigroup.struct
-```
+undefined
 
 **Signature**
 

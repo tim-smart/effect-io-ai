@@ -5,11 +5,11 @@ error from the one that finishes first.
 
 To import and use `race` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.race
-```
+undefined
 
 **Signature**
 

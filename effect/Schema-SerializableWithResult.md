@@ -10,8 +10,8 @@ into success or failure categories.
 
 To import and use `SerializableWithResult` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.SerializableWithResult
-```
+undefined

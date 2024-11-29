@@ -5,11 +5,11 @@ specified layer and leaving the remainder `R0`.
 
 To import and use `provideSomeLayer` from the "Stream" module:
 
-```ts
-import * as Stream from "effect/Stream"
+ts
+import \* as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.provideSomeLayer
-```
+undefined
 
 **Signature**
 

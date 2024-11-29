@@ -4,11 +4,11 @@ Accesses the context of the sink in the context of an effect.
 
 To import and use `contextWithEffect` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.contextWithEffect
-```
+undefined
 
 **Signature**
 

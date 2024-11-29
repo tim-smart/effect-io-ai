@@ -4,11 +4,11 @@ Get the first index of a specific value in the array.
 
 To import and use `findFirstIndex` from the "TArray" module:
 
-```ts
-import * as TArray from "effect/TArray"
+ts
+import \* as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstIndex
-```
+undefined
 
 **Signature**
 

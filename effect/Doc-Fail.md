@@ -6,8 +6,8 @@ a more suitable rendering.
 
 To import and use `Fail` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.Fail
-```
+undefined

@@ -16,11 +16,11 @@ effects and return the final result at the end.
 
 To import and use `gen` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.gen
-```
+undefined
 
 **Example**
 

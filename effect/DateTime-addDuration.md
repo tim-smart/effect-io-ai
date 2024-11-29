@@ -4,11 +4,11 @@ Add the given `Duration` to a `DateTime`.
 
 To import and use `addDuration` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.addDuration
-```
+undefined
 
 **Example**
 

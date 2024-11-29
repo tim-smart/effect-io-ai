@@ -4,11 +4,11 @@ Applies a function to each element in an Iterable and returns a new Iterable con
 
 To import and use `flatMap` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.flatMap
-```
+undefined
 
 **Signature**
 

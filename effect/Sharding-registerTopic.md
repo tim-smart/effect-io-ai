@@ -4,11 +4,11 @@ Register a new topic type, allowing pods to broadcast messages to subscribers.
 
 To import and use `registerTopic` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.registerTopic
-```
+undefined
 
 **Signature**
 

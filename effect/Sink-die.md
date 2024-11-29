@@ -4,11 +4,11 @@ Creates a sink halting with the specified defect.
 
 To import and use `die` from the "Sink" module:
 
-```ts
-import * as Sink from "effect/Sink"
+ts
+import \* as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.die
-```
+undefined
 
 **Signature**
 

@@ -5,11 +5,11 @@ arbitrary order.
 
 To import and use `evaluate` from the "GroupBy" module:
 
-```ts
-import * as GroupBy from "effect/GroupBy"
+ts
+import \* as GroupBy from "effect/GroupBy"
 // Can be accessed like this
 GroupBy.evaluate
-```
+undefined
 
 **Signature**
 

@@ -4,11 +4,11 @@ Returns `true` if the specified `RuntimeFlag` is enabled, `false` otherwise.
 
 To import and use `isEnabled` from the "RuntimeFlags" module:
 
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
+ts
+import \* as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.isEnabled
-```
+undefined
 
 **Signature**
 

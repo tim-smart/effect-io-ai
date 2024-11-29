@@ -9,11 +9,11 @@ Returns `None` if the divisor is `0n`.
 
 To import and use `divide` from the "BigInt" module:
 
-```ts
-import * as BigInt from "effect/BigInt"
+ts
+import \* as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.divide
-```
+undefined
 
 **Example**
 

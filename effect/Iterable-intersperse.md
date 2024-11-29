@@ -5,11 +5,11 @@ If the input is a non-empty array, the result is also a non-empty array.
 
 To import and use `intersperse` from the "Iterable" module:
 
-```ts
-import * as Iterable from "effect/Iterable"
+ts
+import \* as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.intersperse
-```
+undefined
 
 **Signature**
 

@@ -14,11 +14,11 @@ const makeConfig = (config: Config.Wrap<Options>): Config<Options> => unwrap(con
 
 To import and use `unwrap` from the "Config" module:
 
-```ts
-import * as Config from "effect/Config"
+ts
+import \* as Config from "effect/Config"
 // Can be accessed like this
 Config.unwrap
-```
+undefined
 
 **Signature**
 

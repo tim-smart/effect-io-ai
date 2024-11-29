@@ -8,11 +8,11 @@ aborted.
 
 To import and use `async` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.async
-```
+undefined
 
 **Signature**
 

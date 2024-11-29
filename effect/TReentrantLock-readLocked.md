@@ -4,11 +4,11 @@ Determines if any fiber has a read lock.
 
 To import and use `readLocked` from the "TReentrantLock" module:
 
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
+ts
+import \* as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.readLocked
-```
+undefined
 
 **Signature**
 

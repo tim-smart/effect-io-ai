@@ -4,11 +4,11 @@ Add the file tree ConfigProvider to the environment, as a fallback to the curren
 
 To import and use `layerFileTreeAdd` from the "PlatformConfigProvider" module:
 
-```ts
-import * as PlatformConfigProvider from "@effect/platform/PlatformConfigProvider"
+ts
+import \* as PlatformConfigProvider from "@effect/platform/PlatformConfigProvider"
 // Can be accessed like this
 PlatformConfigProvider.layerFileTreeAdd
-```
+undefined
 
 **Signature**
 

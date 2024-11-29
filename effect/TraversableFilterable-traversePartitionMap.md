@@ -4,11 +4,11 @@ Returns a default binary `traversePartitionMap` implementation.
 
 To import and use `traversePartitionMap` from the "TraversableFilterable" module:
 
-```ts
-import * as TraversableFilterable from "@effect/typeclass/TraversableFilterable"
+ts
+import \* as TraversableFilterable from "@effect/typeclass/TraversableFilterable"
 // Can be accessed like this
 TraversableFilterable.traversePartitionMap
-```
+undefined
 
 **Signature**
 

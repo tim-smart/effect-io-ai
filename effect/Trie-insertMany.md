@@ -4,11 +4,11 @@ Insert multiple entries in the `Trie` at once.
 
 To import and use `insertMany` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.insertMany
-```
+undefined
 
 **Example**
 

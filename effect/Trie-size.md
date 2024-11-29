@@ -4,11 +4,11 @@ Returns the size of the `Trie` (number of entries in the `Trie`).
 
 To import and use `size` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.size
-```
+undefined
 
 **Example**
 

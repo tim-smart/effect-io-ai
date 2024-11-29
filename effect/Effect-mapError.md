@@ -10,11 +10,11 @@ operates on the error channel and leaves the success channel unchanged.
 
 To import and use `mapError` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.mapError
-```
+undefined
 
 **Example**
 

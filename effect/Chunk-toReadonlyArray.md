@@ -6,11 +6,11 @@ non-empty (`NonEmptyChunk`), the function will return a
 
 To import and use `toReadonlyArray` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.toReadonlyArray
-```
+undefined
 
 **Signature**
 

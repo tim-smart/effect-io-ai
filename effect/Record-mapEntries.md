@@ -4,11 +4,11 @@ Maps entries of a `ReadonlyRecord` using the provided function, allowing modific
 
 To import and use `mapEntries` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.mapEntries
-```
+undefined
 
 **Example**
 

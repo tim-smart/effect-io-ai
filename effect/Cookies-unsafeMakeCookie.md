@@ -4,11 +4,11 @@ Create a new cookie, throwing an error if invalid
 
 To import and use `unsafeMakeCookie` from the "Cookies" module:
 
-```ts
-import * as Cookies from "@effect/platform/Cookies"
+ts
+import \* as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.unsafeMakeCookie
-```
+undefined
 
 **Signature**
 

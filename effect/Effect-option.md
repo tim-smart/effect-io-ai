@@ -15,11 +15,11 @@ The resulting effect cannot fail directly, as the error type is set to
 
 To import and use `option` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.option
-```
+undefined
 
 **Example**
 

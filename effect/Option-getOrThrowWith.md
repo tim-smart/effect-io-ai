@@ -6,11 +6,11 @@ If a default error is sufficient for your use case and you don't need to configu
 
 To import and use `getOrThrowWith` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrThrowWith
-```
+undefined
 
 **Example**
 

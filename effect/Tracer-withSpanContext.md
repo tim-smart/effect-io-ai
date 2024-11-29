@@ -7,11 +7,11 @@ attach to a parent span.
 
 To import and use `withSpanContext` from the "Tracer" module:
 
-```ts
-import * as Tracer from "@effect/opentelemetry/Tracer"
+ts
+import \* as Tracer from "@effect/opentelemetry/Tracer"
 // Can be accessed like this
 Tracer.withSpanContext
-```
+undefined
 
 **Signature**
 

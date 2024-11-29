@@ -4,11 +4,11 @@ Get the current time using the `Clock` service and convert it to a `DateTime`.
 
 To import and use `now` from the "DateTime" module:
 
-```ts
-import * as DateTime from "effect/DateTime"
+ts
+import \* as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.now
-```
+undefined
 
 **Example**
 

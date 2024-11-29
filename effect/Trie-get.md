@@ -4,11 +4,11 @@ Safely lookup the value for the specified key in the `Trie`.
 
 To import and use `get` from the "Trie" module:
 
-```ts
-import * as Trie from "effect/Trie"
+ts
+import \* as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.get
-```
+undefined
 
 **Example**
 

@@ -4,11 +4,11 @@ Returns a data source that executes at most `n` requests in parallel.
 
 To import and use `batchN` from the "RequestResolver" module:
 
-```ts
-import * as RequestResolver from "effect/RequestResolver"
+ts
+import \* as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.batchN
-```
+undefined
 
 **Signature**
 

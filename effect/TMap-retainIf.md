@@ -5,11 +5,11 @@ Retains entries in a `TMap` that satisfy the specified predicate and returns the
 
 To import and use `retainIf` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.retainIf
-```
+undefined
 
 **Signature**
 

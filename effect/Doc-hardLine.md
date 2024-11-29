@@ -5,11 +5,11 @@ space or whether or not the document was `group`"ed.
 
 To import and use `hardLine` from the "Doc" module:
 
-```ts
-import * as Doc from "@effect/printer/Doc"
+ts
+import \* as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.hardLine
-```
+undefined
 
 **Example**
 

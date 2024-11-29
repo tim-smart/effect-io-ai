@@ -4,11 +4,11 @@ Given a record with `Option` values, returns a new record containing only the `S
 
 To import and use `getSomes` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.getSomes
-```
+undefined
 
 **Example**
 

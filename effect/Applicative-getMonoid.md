@@ -7,11 +7,11 @@ Lift a `Monoid` into `F`, combining the inner values using the provided `Monoid`
 
 To import and use `getMonoid` from the "Applicative" module:
 
-```ts
-import * as Applicative from "@effect/typeclass/Applicative"
+ts
+import \* as Applicative from "@effect/typeclass/Applicative"
 // Can be accessed like this
 Applicative.getMonoid
-```
+undefined
 
 **Signature**
 

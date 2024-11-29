@@ -4,11 +4,11 @@ Add a finalizer to the current `MicroScope`.
 
 To import and use `addFinalizer` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.addFinalizer
-```
+undefined
 
 **Signature**
 

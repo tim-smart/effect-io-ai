@@ -4,11 +4,11 @@ Takes an `Iterable` of `number`s and returns their sum as a single `number`.
 
 To import and use `sumAll` from the "Number" module:
 
-```ts
-import * as Number from "effect/Number"
+ts
+import \* as Number from "effect/Number"
 // Can be accessed like this
 Number.sumAll
-```
+undefined
 
 **Example**
 

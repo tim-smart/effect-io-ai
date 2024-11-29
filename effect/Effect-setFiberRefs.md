@@ -5,11 +5,11 @@ in the specified collection of `FiberRef` values.
 
 To import and use `setFiberRefs` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.setFiberRefs
-```
+undefined
 
 **Signature**
 

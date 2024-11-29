@@ -5,11 +5,11 @@ provided set.
 
 To import and use `intersection` from the "TSet" module:
 
-```ts
-import * as TSet from "effect/TSet"
+ts
+import \* as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.intersection
-```
+undefined
 
 **Signature**
 

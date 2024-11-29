@@ -5,11 +5,11 @@ provided `zero` value.
 
 To import and use `reduce` from the "Cause" module:
 
-```ts
-import * as Cause from "effect/Cause"
+ts
+import \* as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.reduce
-```
+undefined
 
 **Signature**
 

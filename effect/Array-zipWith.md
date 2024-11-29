@@ -5,11 +5,11 @@ input `Iterable` is short, excess elements of the longer `Iterable` are discarde
 
 To import and use `zipWith` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.zipWith
-```
+undefined
 
 **Example**
 

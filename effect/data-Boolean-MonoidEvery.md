@@ -6,11 +6,11 @@ The `empty` value is `true`.
 
 To import and use `MonoidEvery` from the "Boolean" module:
 
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
+ts
+import \* as Boolean from "@effect/typeclass/data/Boolean"
 // Can be accessed like this
 Boolean.MonoidEvery
-```
+undefined
 
 **Signature**
 

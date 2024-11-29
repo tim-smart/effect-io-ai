@@ -5,11 +5,11 @@ The order and references of result values are determined by the first `Chunk`.
 
 To import and use `difference` from the "Chunk" module:
 
-```ts
-import * as Chunk from "effect/Chunk"
+ts
+import \* as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.difference
-```
+undefined
 
 **Signature**
 

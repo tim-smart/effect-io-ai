@@ -13,8 +13,8 @@ A `DocTree` is therefore much more suitable for this use case.
 
 To import and use `DocTree` from the "DocTree" module:
 
-```ts
-import * as DocTree from "@effect/printer/DocTree"
+ts
+import \* as DocTree from "@effect/printer/DocTree"
 // Can be accessed like this
 DocTree.DocTree
-```
+undefined

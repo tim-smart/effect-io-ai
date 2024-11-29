@@ -5,11 +5,11 @@ yield a value.
 
 To import and use `match` from the "Take" module:
 
-```ts
-import * as Take from "effect/Take"
+ts
+import \* as Take from "effect/Take"
 // Can be accessed like this
 Take.match
-```
+undefined
 
 **Signature**
 

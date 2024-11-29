@@ -4,11 +4,11 @@ Returns the provided `Option` `that` if `self` is `None`, otherwise returns `sel
 
 To import and use `orElse` from the "Option" module:
 
-```ts
-import * as Option from "effect/Option"
+ts
+import \* as Option from "effect/Option"
 // Can be accessed like this
 Option.orElse
-```
+undefined
 
 **Example**
 

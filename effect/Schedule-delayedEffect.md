@@ -5,11 +5,11 @@ before the start of each interval produced by this schedule.
 
 To import and use `delayedEffect` from the "Schedule" module:
 
-```ts
-import * as Schedule from "effect/Schedule"
+ts
+import \* as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.delayedEffect
-```
+undefined
 
 **Signature**
 

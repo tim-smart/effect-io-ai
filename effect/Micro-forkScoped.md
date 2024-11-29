@@ -7,11 +7,11 @@ The lifetime of the handle will be attached to the current `MicroScope`.
 
 To import and use `forkScoped` from the "Micro" module:
 
-```ts
-import * as Micro from "effect/Micro"
+ts
+import \* as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.forkScoped
-```
+undefined
 
 **Signature**
 

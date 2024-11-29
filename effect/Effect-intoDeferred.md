@@ -11,11 +11,11 @@ failure. Additionally, if the effect is interrupted, the `Deferred` will also be
 
 To import and use `intoDeferred` from the "Effect" module:
 
-```ts
-import * as Effect from "effect/Effect"
+ts
+import \* as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.intoDeferred
-```
+undefined
 
 **Example**
 

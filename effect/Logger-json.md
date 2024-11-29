@@ -5,11 +5,11 @@ integrate with logging systems that consume JSON data.
 
 To import and use `json` from the "Logger" module:
 
-```ts
-import * as Logger from "effect/Logger"
+ts
+import \* as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.json
-```
+undefined
 
 **Example**
 

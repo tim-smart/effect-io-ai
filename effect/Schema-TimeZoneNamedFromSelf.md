@@ -4,8 +4,8 @@ Describes a schema that represents a `TimeZone.Named` instance.
 
 To import and use `TimeZoneNamedFromSelf` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.TimeZoneNamedFromSelf
-```
+undefined

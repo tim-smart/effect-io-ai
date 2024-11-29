@@ -5,11 +5,11 @@ You can provide a custom send timeout to override the one globally defined.
 
 To import and use `broadcaster` from the "Sharding" module:
 
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
+ts
+import \* as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.broadcaster
-```
+undefined
 
 **Signature**
 

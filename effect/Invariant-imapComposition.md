@@ -4,11 +4,11 @@ Returns a default ternary `imap` composition.
 
 To import and use `imapComposition` from the "Invariant" module:
 
-```ts
-import * as Invariant from "@effect/typeclass/Invariant"
+ts
+import \* as Invariant from "@effect/typeclass/Invariant"
 // Can be accessed like this
 Invariant.imapComposition
-```
+undefined
 
 **Signature**
 

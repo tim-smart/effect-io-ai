@@ -4,11 +4,11 @@ Retrieve the values of a given record as an array.
 
 To import and use `values` from the "Record" module:
 
-```ts
-import * as Record from "effect/Record"
+ts
+import \* as Record from "effect/Record"
 // Can be accessed like this
 Record.values
-```
+undefined
 
 **Signature**
 

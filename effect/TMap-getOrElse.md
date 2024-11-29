@@ -5,11 +5,11 @@ isn't present.
 
 To import and use `getOrElse` from the "TMap" module:
 
-```ts
-import * as TMap from "effect/TMap"
+ts
+import \* as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.getOrElse
-```
+undefined
 
 **Signature**
 

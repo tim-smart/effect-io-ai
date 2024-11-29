@@ -5,11 +5,11 @@ preserving the order of the first occurrence of each element.
 
 To import and use `dedupeWith` from the "Array" module:
 
-```ts
-import * as Array from "effect/Array"
+ts
+import \* as Array from "effect/Array"
 // Can be accessed like this
 Array.dedupeWith
-```
+undefined
 
 **Example**
 

@@ -6,11 +6,11 @@ Retries if no elements satisfy the predicate.
 
 To import and use `seek` from the "TQueue" module:
 
-```ts
-import * as TQueue from "effect/TQueue"
+ts
+import \* as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.seek
-```
+undefined
 
 **Signature**
 

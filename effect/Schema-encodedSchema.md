@@ -7,11 +7,11 @@ were applied previously.
 
 To import and use `encodedSchema` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.encodedSchema
-```
+undefined
 
 **Signature**
 

@@ -6,11 +6,11 @@ The tag is optional when using the `make` method.
 
 To import and use `tag` from the "Schema" module:
 
-```ts
-import * as Schema from "effect/Schema"
+ts
+import \* as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.tag
-```
+undefined
 
 **Example**
 

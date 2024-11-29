@@ -7,11 +7,11 @@ This function is particularly when it's necessary to specify that certain cases 
 
 To import and use `absurd` from the "Function" module:
 
-```ts
-import * as Function from "effect/Function"
+ts
+import \* as Function from "effect/Function"
 // Can be accessed like this
 Function.absurd
-```
+undefined
 
 **Signature**
 

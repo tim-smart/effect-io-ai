@@ -6,11 +6,11 @@ will be used by default.
 
 To import and use `make` from the "Scope" module:
 
-```ts
-import * as Scope from "effect/Scope"
+ts
+import \* as Scope from "effect/Scope"
 // Can be accessed like this
 Scope.make
-```
+undefined
 
 **Signature**
 
