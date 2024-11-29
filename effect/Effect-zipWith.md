@@ -1,9 +1,18 @@
 # zipWith
 
-The `Effect.zipWith` function operates similarly to {@link zip} by combining
-two effects. However, instead of returning a tuple, it allows you to apply a
-function to the results of the combined effects, transforming them into a
-single value
+Combines two effects sequentially and applies a function to their results to
+produce a single value.
+
+**When to Use**
+
+The `zipWith` function is similar to {@link zip}, but instead of returning a
+tuple of results, it applies a provided function to the results of the two
+effects, combining them into a single value.
+
+**Concurrency**
+
+By default, the effects are run sequentially. To execute them concurrently,
+use the `{ concurrent: true }` option.
 
 To import and use `zipWith` from the "Effect" module:
 
@@ -16,12 +25,18 @@ Effect.zipWith
 **Example**
 
 ```ts
+// Title: Combining Effects with a Custom Function
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
 const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
 
-const task3 = Effect.zipWith(task1, task2, (number, string) => number + string.length)
+const task3 = Effect.zipWith(
+  task1,
+  task2,
+  // Combines results into a single value
+  (number, string) => number + string.length
+)
 
 Effect.runPromise(task3).then(console.log)
 // Output:

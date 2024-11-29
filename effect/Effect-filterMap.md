@@ -1,6 +1,11 @@
 # filterMap
 
-Performs a filter and map in a single step.
+Filters and maps elements sequentially in one operation.
+
+This function processes each element one by one. It applies a function that
+returns an `Option` to each element. If the function returns `Some`, the
+element is kept; if it returns `None`, the element is removed. The operation
+is done sequentially for each element.
 
 To import and use `filterMap` from the "Effect" module:
 
@@ -8,6 +13,27 @@ To import and use `filterMap` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.filterMap
+```
+
+**Example**
+
+```ts
+import { Console, Effect, Option } from "effect"
+
+const task = (n: number) =>
+  Effect.succeed(n).pipe(Effect.delay(1000 - n * 100), Effect.tap(Console.log(`task${n} done`)))
+
+const program = Effect.filterMap([task(1), task(2), task(3), task(4)], (n) =>
+  n % 2 === 0 ? Option.some(n) : Option.none()
+)
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// task1 done
+// task2 done
+// task3 done
+// task4 done
+// [ 2, 4 ]
 ```
 
 **Signature**

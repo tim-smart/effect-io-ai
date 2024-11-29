@@ -27,6 +27,9 @@ DateTime.makeZoned(new Date(), { timeZone: "Europe/London" })
 ```ts
 export declare const makeZoned: (
   input: DateTime.Input,
-  options: { readonly timeZone: number | string | TimeZone; readonly adjustForTimeZone?: boolean | undefined }
+  options?: {
+    readonly timeZone?: number | string | TimeZone | undefined
+    readonly adjustForTimeZone?: boolean | undefined
+  }
 ) => Option.Option<Zoned>
 ```

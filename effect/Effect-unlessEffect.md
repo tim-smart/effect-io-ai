@@ -1,6 +1,6 @@
 # unlessEffect
 
-The moral equivalent of `if (!p) exp` when `p` has side-effects.
+Conditionally execute an effect based on the result of another effect.
 
 To import and use `unlessEffect` from the "Effect" module:
 

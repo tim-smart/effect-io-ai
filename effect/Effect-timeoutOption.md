@@ -1,19 +1,17 @@
 # timeoutOption
 
-Returns an effect that will timeout this effect, returning `None` if the
-timeout elapses before the effect has produced a value; and returning
-`Some` of the produced value otherwise.
+Handles timeouts by returning an `Option` that represents either the result
+or a timeout.
 
-If the timeout elapses without producing a value, the running effect will
-be safely interrupted.
+The `timeoutOption` function provides a way to gracefully handle
+timeouts by wrapping the outcome of an effect in an `Option` type. If the
+effect completes within the specified time, it returns a `Some` containing
+the result. If the effect times out, it returns a `None`, allowing you to
+treat the timeout as a regular result instead of throwing an error.
 
-WARNING: The effect returned by this method will not itself return until
-the underlying effect is actually interrupted. This leads to more
-predictable resource utilization. If early return is desired, then instead
-of using `effect.timeout(d)`, use `effect.disconnect.timeout(d)`, which
-first disconnects the effect's interruption signal before performing the
-timeout, resulting in earliest possible return, before an underlying effect
-has been successfully interrupted.
+This is useful when you want to handle timeouts without causing the program
+to fail, making it easier to manage situations where you expect tasks might
+take too long but want to continue executing other tasks.
 
 To import and use `timeoutOption` from the "Effect" module:
 
@@ -21,6 +19,34 @@ To import and use `timeoutOption` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.timeoutOption
+```
+
+**Example**
+
+```ts
+import { Effect } from "effect"
+
+const task = Effect.gen(function* () {
+  console.log("Start processing...")
+  yield* Effect.sleep("2 seconds") // Simulates a delay in processing
+  console.log("Processing complete.")
+  return "Result"
+})
+
+const timedOutEffect = Effect.all([
+  task.pipe(Effect.timeoutOption("3 seconds")),
+  task.pipe(Effect.timeoutOption("1 second"))
+])
+
+Effect.runPromise(timedOutEffect).then(console.log)
+// Output:
+// Start processing...
+// Processing complete.
+// Start processing...
+// [
+//   { _id: 'Option', _tag: 'Some', value: 'Result' },
+//   { _id: 'Option', _tag: 'None' }
+// ]
 ```
 
 **Signature**

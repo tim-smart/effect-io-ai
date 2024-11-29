@@ -1,11 +1,12 @@
 # filterOrFail
 
-Filter the specified effect with the provided function, failing with specified
-error if the predicate fails.
+Filter the specified effect with the provided function, failing with
+specified error if the predicate fails.
 
-In addition to the filtering capabilities discussed earlier, you have the option to further
-refine and narrow down the type of the success channel by providing a
-[user-defined type guard](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates).
+In addition to the filtering capabilities discussed earlier, you have the
+option to further refine and narrow down the type of the success channel by
+providing a [user-defined type
+guard](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates).
 Let's explore this concept through an example:
 
 To import and use `filterOrFail` from the "Effect" module:
@@ -26,17 +27,18 @@ interface User {
   readonly name: string
 }
 
-// Assume an asynchronous authentication function
+// Simulate an asynchronous authentication function
 declare const auth: () => Promise<User | null>
 
 const program = pipe(
   Effect.promise(() => auth()),
+  // Use filterOrFail with a custom type guard to ensure user is not null
   Effect.filterOrFail(
-    // Define a guard to narrow down the type
-    (user): user is User => user !== null,
+    (user): user is User => user !== null, // Type guard
     () => new Error("Unauthorized")
   ),
-  Effect.map((user) => user.name) // The 'user' here has type `User`, not `User | null`
+  // 'user' now has the type `User` (not `User | null`)
+  Effect.andThen((user) => user.name)
 )
 ```
 

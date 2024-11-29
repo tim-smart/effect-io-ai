@@ -1,9 +1,23 @@
 # promise
 
-Creates an `Effect` that represents an asynchronous computation guaranteed to succeed.
+Creates an `Effect` that represents an asynchronous computation guaranteed to
+succeed.
 
-The provided function (`thunk`) returns a `Promise` that should never reject.
-If the `Promise` does reject, the rejection is treated as a defect.
+**When to Use**
+
+Use `promise` when you are sure the operation will not reject.
+
+**Details**
+
+The provided function (`thunk`) returns a `Promise` that should never reject; if it does, the error
+will be treated as a "defect".
+
+This defect is not a standard error but indicates a flaw in the logic that
+was expected to be error-free. You can think of it similar to an unexpected
+crash in the program, which can be further managed or logged using tools like
+{@link catchAllDefect}.
+
+**Interruptions**
 
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
@@ -19,17 +33,21 @@ Effect.promise
 **Example**
 
 ```ts
+// Title: Delayed Message
 import { Effect } from "effect"
 
-// Creating an effect that resolves after a delay
 const delay = (message: string) =>
-  Effect.promise(
+  Effect.promise<string>(
     () =>
       new Promise((resolve) => {
-        setTimeout(() => resolve(message), 2000)
+        setTimeout(() => {
+          resolve(message)
+        }, 2000)
       })
   )
 
+//      ┌─── Effect<string, never, never>
+//      ▼
 const program = delay("Async operation completed successfully!")
 ```
 

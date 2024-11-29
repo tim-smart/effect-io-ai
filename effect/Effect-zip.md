@@ -1,13 +1,14 @@
 # zip
 
-The `Effect.zip` function allows you to combine two effects into a single
-effect. This combined effect yields a tuple containing the results of both
-input effects once they succeed.
+Combines two effects into a single effect, producing a tuple with the results of both effects.
 
-Note that `Effect.zip` processes effects sequentially: it first completes the
-effect on the left and then the effect on the right.
+The `zip` function executes the first effect (left) and then the second effect (right).
+Once both effects succeed, their results are combined into a tuple.
 
-If you want to run the effects concurrently, you can use the `concurrent` option.
+**Concurrency**
+
+By default, `zip` processes the effects sequentially. To execute the effects concurrently,
+use the `{ concurrent: true }` option.
 
 To import and use `zip` from the "Effect" module:
 
@@ -20,14 +21,19 @@ Effect.zip
 **Example**
 
 ```ts
+// Title: Combining Two Effects Sequentially
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
 const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
 
-const task3 = Effect.zip(task1, task2)
+// Combine the two effects together
+//
+//      ┌─── Effect<[number, string], never, never>
+//      ▼
+const program = Effect.zip(task1, task2)
 
-Effect.runPromise(task3).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task1 done"
 // timestamp=... level=INFO fiber=#0 message="task2 done"
@@ -37,14 +43,16 @@ Effect.runPromise(task3).then(console.log)
 **Example**
 
 ```ts
+// Title: Combining Two Effects Concurrently
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
 const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
 
-const task3 = Effect.zip(task1, task2, { concurrent: true })
+// Run both effects concurrently using the concurrent option
+const program = Effect.zip(task1, task2, { concurrent: true })
 
-Effect.runPromise(task3).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task2 done"
 // timestamp=... level=INFO fiber=#0 message="task1 done"

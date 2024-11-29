@@ -1,6 +1,12 @@
 # mapError
 
-Returns an effect with its error channel mapped using the specified function.
+The `mapError` function is used to transform or modify the error
+produced by an effect, without affecting its success value.
+
+This function is helpful when you want to enhance the error with additional
+information, change the error type, or apply custom error handling while
+keeping the original behavior of the effect's success values intact. It only
+operates on the error channel and leaves the success channel unchanged.
 
 To import and use `mapError` from the "Effect" module:
 
@@ -8,6 +14,20 @@ To import and use `mapError` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.mapError
+```
+
+**Example**
+
+```ts
+import { Effect } from "effect"
+
+//      ┌─── Effect<number, string, never>
+//      ▼
+const simulatedTask = Effect.fail("Oh no!").pipe(Effect.as(1))
+
+//      ┌─── Effect<number, Error, never>
+//      ▼
+const mapped = Effect.mapError(simulatedTask, (message) => new Error(message))
 ```
 
 **Signature**

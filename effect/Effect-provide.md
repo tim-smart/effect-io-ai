@@ -1,7 +1,10 @@
 # provide
 
-Splits the context into two parts, providing one part using the
-specified layer/context/runtime and leaving the remainder `R0`
+Provides the necessary `Layer`s to an effect, removing its dependency on the
+environment.
+
+You can pass multiple layers, a `Context`, `Runtime`, or `ManagedRuntime` to
+the effect.
 
 To import and use `provide` from the "Effect" module:
 
@@ -9,6 +12,39 @@ To import and use `provide` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.provide
+```
+
+**Example**
+
+```ts
+import { Context, Effect, Layer } from "effect"
+
+class Database extends Context.Tag("Database")<
+  Database,
+  { readonly query: (sql: string) => Effect.Effect<Array<unknown>> }
+>() {}
+
+const DatabaseLive = Layer.succeed(Database, {
+  // Simulate a database query
+  query: (sql: string) => Effect.log(`Executing query: ${sql}`).pipe(Effect.as([]))
+})
+
+//      ┌─── Effect<unknown[], never, Database>
+//      ▼
+const program = Effect.gen(function* () {
+  const database = yield* Database
+  const result = yield* database.query("SELECT * FROM users")
+  return result
+})
+
+//      ┌─── Effect<unknown[], never, never>
+//      ▼
+const runnable = Effect.provide(program, DatabaseLive)
+
+Effect.runPromise(runnable).then(console.log)
+// Output:
+// timestamp=... level=INFO fiber=#0 message="Executing query: SELECT * FROM users"
+// []
 ```
 
 **Signature**

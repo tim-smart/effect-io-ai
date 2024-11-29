@@ -1,9 +1,16 @@
 # runFork
 
-Executes an effect and returns a `RuntimeFiber` that represents the running computation.
+The foundational function for running effects, returning a "fiber" that can
+be observed or interrupted.
 
-Use `runFork` when you want to start an effect without blocking the current execution flow.
-It returns a fiber that you can observe, interrupt, or join as needed.
+**When to Use**
+
+`runFork` is used to run an effect in the background by creating a
+fiber. It is the base function for all other run functions. It starts a fiber
+that can be observed or interrupted.
+
+Unless you specifically need a `Promise` or synchronous operation,
+`runFork` is a good default choice.
 
 To import and use `runFork` from the "Effect" module:
 
@@ -16,15 +23,17 @@ Effect.runFork
 **Example**
 
 ```ts
+// Title: Running an Effect in the Background
 import { Effect, Console, Schedule, Fiber } from "effect"
 
-// Define an effect that repeats a message every 200 milliseconds
+//      ┌─── Effect<number, never, never>
+//      ▼
 const program = Effect.repeat(Console.log("running..."), Schedule.spaced("200 millis"))
 
-// Start the effect without blocking
+//      ┌─── RuntimeFiber<number, never>
+//      ▼
 const fiber = Effect.runFork(program)
 
-// Interrupt the fiber after 500 milliseconds
 setTimeout(() => {
   Effect.runFork(Fiber.interrupt(fiber))
 }, 500)

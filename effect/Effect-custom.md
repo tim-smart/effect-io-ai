@@ -2,7 +2,8 @@
 
 Low level constructor that enables for custom stack tracing cutpoints.
 
-It is meant to be called with a bag of instructions that become available in the "this" of the effect.
+It is meant to be called with a bag of instructions that become available in
+the "this" of the effect.
 
 To import and use `custom` from the "Effect" module:
 

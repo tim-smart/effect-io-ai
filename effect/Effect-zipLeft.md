@@ -1,10 +1,18 @@
 # zipLeft
 
-Sequentially run this effect with the specified effect, _discarding_ the result
-of the second effect (`that`) in the chain.
+Runs two effects sequentially, returning the result of the first effect and
+discarding the result of the second.
 
-`{ concurrent: true }` can be passed to the options to make it a concurrent execution
-of both effects instead of sequential.
+**When to Use**
+
+Use `zipLeft` when you need to execute two effects in order but are only
+interested in the result of the first one. The second effect will still
+execute, but its result is ignored.
+
+**Concurrency**
+
+By default, the effects are run sequentially. To run them concurrently, use
+the `{ concurrent: true }` option.
 
 To import and use `zipLeft` from the "Effect" module:
 
@@ -19,9 +27,16 @@ Effect.zipLeft
 ```ts
 import { Effect } from "effect"
 
-const effect = Effect.succeed("a message").pipe(Effect.zipLeft(Effect.succeed(42)))
+const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
+const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
 
-assert.deepStrictEqual(Effect.runSync(effect), "a message")
+const program = Effect.zipLeft(task1, task2)
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// timestamp=... level=INFO fiber=#0 message="task1 done"
+// timestamp=... level=INFO fiber=#0 message="task2 done"
+// 1
 ```
 
 **Signature**

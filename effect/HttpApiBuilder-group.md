@@ -31,8 +31,8 @@ export declare const group: <
     handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>
   ) => Handlers.ValidateReturn<Return>
 ) => Layer.Layer<
-  HttpApiGroup.Group<Name>,
+  HttpApiGroup.ApiGroup<Name>,
   Handlers.Error<Return>,
-  Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.ContextWithName<Groups, Name>
+  Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>
 >
 ```

@@ -16,6 +16,6 @@ HttpApiBuilder.httpApp
 export declare const httpApp: Effect.Effect<
   HttpApp.Default<never, HttpRouter.HttpRouter.DefaultServices>,
   never,
-  HttpApi.Api | Router
+  HttpApi.Api | Router | Middleware
 >
 ```

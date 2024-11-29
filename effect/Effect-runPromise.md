@@ -1,9 +1,15 @@
 # runPromise
 
-Executes an effect and returns a `Promise` that resolves with the result.
+Executes an effect and returns the result as a `Promise`.
 
-Use `runPromise` when working with asynchronous effects and you need to integrate with code that uses Promises.
-If the effect fails, the returned Promise will be rejected with the error.
+**When to Use**
+
+Use `runPromise` when you need to execute an effect and work with the
+result using `Promise` syntax, typically for compatibility with other
+promise-based code.
+
+If the effect succeeds, the promise will resolve with the result. If the
+effect fails, the promise will reject with an error.
 
 To import and use `runPromise` from the "Effect" module:
 
@@ -16,15 +22,22 @@ Effect.runPromise
 **Example**
 
 ```ts
+// Title: Running a Successful Effect as a Promise
 import { Effect } from "effect"
 
-// Execute an effect and handle the result with a Promise
-Effect.runPromise(Effect.succeed(1)).then(console.log) // Output: 1
+Effect.runPromise(Effect.succeed(1)).then(console.log)
+// Output: 1
+```
 
-// Execute a failing effect and handle the rejection
-Effect.runPromise(Effect.fail("my error")).catch((error) => {
-  console.error("Effect failed with error:", error)
-})
+**Example**
+
+```ts
+//Example: Handling a Failing Effect as a Rejected Promise
+import { Effect } from "effect"
+
+Effect.runPromise(Effect.fail("my error")).catch(console.error)
+// Output:
+// (FiberFailure) Error: my error
 ```
 
 **Signature**

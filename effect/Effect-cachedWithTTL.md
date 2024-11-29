@@ -1,8 +1,8 @@
 # cachedWithTTL
 
 Returns an effect that caches its result for a specified duration, known as
-the `timeToLive`. When the cache expires after the duration, the effect will be
-recomputed upon next evaluation.
+the `timeToLive`. When the cache expires after the duration, the effect will
+be recomputed upon next evaluation.
 
 To import and use `cachedWithTTL` from the "Effect" module:
 

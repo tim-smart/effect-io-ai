@@ -1,9 +1,11 @@
 # succeed
 
-Creates an `Effect` that succeeds with the provided value.
+Creates an `Effect` that always succeeds with a given value.
 
-Use this function to represent a successful computation that yields a value of type `A`.
-The effect does not fail and does not require any environmental context.
+**When to Use**
+
+Use this function when you need an effect that completes successfully with a
+specific value without any errors or external dependencies.
 
 To import and use `succeed` from the "Effect" module:
 
@@ -16,9 +18,13 @@ Effect.succeed
 **Example**
 
 ```ts
+// Title: Creating a Successful Effect
 import { Effect } from "effect"
 
-// Creating an effect that succeeds with the number 42
+// Creating an effect that represents a successful scenario
+//
+//      ┌─── Effect<number, never, never>
+//      ▼
 const success = Effect.succeed(42)
 ```
 

@@ -1,9 +1,20 @@
 # runPromiseExit
 
-Executes an effect and returns a `Promise` that resolves with an `Exit` describing the result.
+Runs an effect and returns a `Promise` that resolves to an `Exit`, which
+represents the outcome (success or failure) of the effect.
 
-Use `runPromiseExit` when you need detailed information about the outcome of the effect, including success or failure,
-and you want to work with Promises.
+**When to Use**
+
+Use `runPromiseExit` when you need to determine if an effect succeeded
+or failed, including any defects, and you want to work with a `Promise`.
+
+**Details**
+
+The `Exit` type represents the result of the effect:
+
+- If the effect succeeds, the result is wrapped in a `Success`.
+- If it fails, the failure information is provided as a `Failure` containing
+  a `Cause` type.
 
 To import and use `runPromiseExit` from the "Effect" module:
 
@@ -16,6 +27,7 @@ Effect.runPromiseExit
 **Example**
 
 ```ts
+// Title: Handling Results as Exit
 import { Effect } from "effect"
 
 // Execute a successful effect and get the Exit result as a Promise
