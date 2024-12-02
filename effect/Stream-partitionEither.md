@@ -1,7 +1,17 @@
 # partitionEither
 
-Split a stream by an effectful predicate. The faster stream may advance by
-up to buffer elements further than the slower one.
+Splits a stream into two substreams based on an effectful condition.
+
+**Details**
+
+The `Stream.partitionEither` function is used to divide a stream into two
+parts: one for elements that satisfy a condition producing `Either.left`
+values, and another for those that produce `Either.right` values. This
+function applies an effectful predicate to each element in the stream to
+determine which substream it belongs to.
+
+The faster stream may advance up to `bufferSize` elements ahead of the slower
+one.
 
 To import and use `partitionEither` from the "Stream" module:
 
@@ -14,10 +24,11 @@ undefined
 **Example**
 
 ```ts
+// Title: Partitioning a Stream with an Effectful Predicate
 import { Effect, Either, Stream } from "effect"
 
 const partition = Stream.range(1, 9).pipe(
-  Stream.partitionEither((n) => Effect.succeed(n % 2 === 0 ? Either.left(n) : Either.right(n)), { bufferSize: 5 })
+  Stream.partitionEither((n) => Effect.succeed(n % 2 === 0 ? Either.right(n) : Either.left(n)), { bufferSize: 5 })
 )
 
 const program = Effect.scoped(
@@ -29,8 +40,8 @@ const program = Effect.scoped(
 )
 
 // Effect.runPromise(program)
-// { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
 // { _id: 'Chunk', values: [ 1, 3, 5, 7, 9 ] }
+// { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
 ```
 
 **Signature**
