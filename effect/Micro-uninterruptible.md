@@ -1,7 +1,7 @@
 # uninterruptible
 
-Wrap the given `Micro` effect in an uninterruptible region, preventing the
-effect from being aborted.
+Flag the effect as uninterruptible, which means that when the effect is
+interrupted, it will be allowed to continue running until completion.
 
 To import and use `uninterruptible` from the "Micro" module:
 

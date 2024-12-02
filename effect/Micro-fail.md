@@ -16,5 +16,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const fail: <E>(e: E) => Micro<never, E>
+export declare const fail: <E>(error: E) => Micro<never, E>
 ```

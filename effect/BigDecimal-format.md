@@ -2,6 +2,9 @@
 
 Formats a given `BigDecimal` as a `string`.
 
+If the scale of the `BigDecimal` is greater than or equal to 16, the `BigDecimal` will
+be formatted in scientific notation.
+
 To import and use `format` from the "BigDecimal" module:
 
 ts

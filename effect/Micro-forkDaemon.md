@@ -16,5 +16,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const forkDaemon: <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, R>
+export declare const forkDaemon: <A, E, R>(self: Micro<A, E, R>) => Micro<Fiber<A, E>, never, R>
 ```

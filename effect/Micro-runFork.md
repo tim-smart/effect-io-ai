@@ -32,5 +32,5 @@ handle.addObserver((exit) => {
 export declare const runFork: <A, E>(
   effect: Micro<A, E>,
   options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined } | undefined
-) => Handle<A, E>
+) => FiberImpl<A, E>
 ```

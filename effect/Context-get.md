@@ -27,7 +27,9 @@ assert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })
 
 ```ts
 export declare const get: {
+  <I, S>(tag: Reference<I, S>): <Services>(self: Context<Services>) => S
   <Services, T extends ValidTagsById<Services>>(tag: T): (self: Context<Services>) => Tag.Service<T>
+  <Services, I, S>(self: Context<Services>, tag: Reference<I, S>): S
   <Services, T extends ValidTagsById<Services>>(self: Context<Services>, tag: T): Tag.Service<T>
 }
 ```

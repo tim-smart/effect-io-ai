@@ -1,6 +1,6 @@
 # make
 
-Creates a `Cron` instance from.
+Creates a `Cron` instance.
 
 To import and use `make` from the "Cron" module:
 
@@ -18,6 +18,7 @@ export declare const make: ({
   hours,
   minutes,
   months,
+  tz,
   weekdays
 }: {
   readonly minutes: Iterable<number>
@@ -25,5 +26,6 @@ export declare const make: ({
   readonly days: Iterable<number>
   readonly months: Iterable<number>
   readonly weekdays: Iterable<number>
+  readonly tz?: DateTime.TimeZone | undefined
 }) => Cron
 ```

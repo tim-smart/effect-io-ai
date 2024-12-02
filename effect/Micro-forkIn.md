@@ -17,7 +17,7 @@ undefined
 
 ```ts
 export declare const forkIn: {
-  (scope: MicroScope): <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, R>
-  <A, E, R>(self: Micro<A, E, R>, scope: MicroScope): Micro<Handle<A, E>, never, R>
+  (scope: MicroScope): <A, E, R>(self: Micro<A, E, R>) => Micro<Fiber<A, E>, never, R>
+  <A, E, R>(self: Micro<A, E, R>, scope: MicroScope): Micro<Fiber<A, E>, never, R>
 }
 ```

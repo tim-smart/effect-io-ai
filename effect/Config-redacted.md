@@ -13,5 +13,8 @@ undefined
 **Signature**
 
 ```ts
-export declare const redacted: (name?: string) => Config<Redacted.Redacted>
+export declare const redacted: {
+  (name?: string): Config<Redacted.Redacted>
+  <A>(config: Config<A>): Config<Redacted.Redacted<A>>
+}
 ```

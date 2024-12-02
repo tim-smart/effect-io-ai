@@ -1,6 +1,7 @@
 # unwrapScoped
 
-Makes a channel from a managed that returns a channel in case of success.
+Constructs a `Channel` from a scoped effect that will result in a
+`Channel` if successful.
 
 To import and use `unwrapScoped` from the "Channel" module:
 

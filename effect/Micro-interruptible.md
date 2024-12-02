@@ -1,7 +1,7 @@
 # interruptible
 
-Wrap the given `Micro` effect in an interruptible region, allowing the effect
-to be aborted.
+Flag the effect as interruptible, which means that when the effect is
+interrupted, it will be interrupted immediately.
 
 To import and use `interruptible` from the "Micro" module:
 

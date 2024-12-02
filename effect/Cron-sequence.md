@@ -13,5 +13,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const sequence: (cron: Cron, now?: Date) => IterableIterator<Date>
+export declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```

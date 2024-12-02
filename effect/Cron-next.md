@@ -25,5 +25,5 @@ assert.deepStrictEqual(Cron.next(cron, after), new Date("2021-01-08 04:00:00"))
 **Signature**
 
 ```ts
-export declare const next: (cron: Cron, now?: Date) => Date
+export declare const next: (cron: Cron, now?: DateTime.DateTime.Input) => Date
 ```
