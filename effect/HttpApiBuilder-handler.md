@@ -4,11 +4,11 @@ Create a `Handler` for a single endpoint.
 
 To import and use `handler` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.handler
-undefined
+```
 
 **Signature**
 

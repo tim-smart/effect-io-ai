@@ -15,11 +15,11 @@ contains either a hard `Line` or a `Fail`.
 
 To import and use `changesUponFlattening` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.changesUponFlattening
-undefined
+```
 
 **Signature**
 

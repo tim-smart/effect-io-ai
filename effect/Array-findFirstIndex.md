@@ -4,11 +4,11 @@ Return the first index for which a predicate holds.
 
 To import and use `findFirstIndex` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.findFirstIndex
-undefined
+```
 
 **Example**
 

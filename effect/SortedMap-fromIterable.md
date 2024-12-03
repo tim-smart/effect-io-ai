@@ -4,11 +4,11 @@ Creates a new `SortedMap` from an iterable collection of key/value pairs.
 
 To import and use `fromIterable` from the "SortedMap" module:
 
-ts
-import \* as SortedMap from "effect/SortedMap"
+```ts
+import * as SortedMap from "effect/SortedMap"
 // Can be accessed like this
 SortedMap.fromIterable
-undefined
+```
 
 **Signature**
 

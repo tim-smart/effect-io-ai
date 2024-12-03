@@ -4,11 +4,11 @@ Retains only elements from the queue matching the specified predicate.
 
 To import and use `retainIf` from the "TPriorityQueue" module:
 
-ts
-import \* as TPriorityQueue from "effect/TPriorityQueue"
+```ts
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.retainIf
-undefined
+```
 
 **Signature**
 

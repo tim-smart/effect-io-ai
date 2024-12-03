@@ -5,11 +5,11 @@ to extract information from it.
 
 To import and use `find` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.find
-undefined
+```
 
 **Signature**
 

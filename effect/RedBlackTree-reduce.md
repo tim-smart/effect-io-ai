@@ -4,11 +4,11 @@ Reduce a state over the entries of the tree.
 
 To import and use `reduce` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.reduce
-undefined
+```
 
 **Signature**
 

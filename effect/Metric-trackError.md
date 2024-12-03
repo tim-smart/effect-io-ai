@@ -5,11 +5,11 @@ the effects that it is applied to.
 
 To import and use `trackError` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackError
-undefined
+```
 
 **Signature**
 

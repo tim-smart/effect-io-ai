@@ -8,11 +8,11 @@ updated value or `None` if the value was removed from the map.
 
 To import and use `updateWith` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.updateWith
-undefined
+```
 
 **Signature**
 

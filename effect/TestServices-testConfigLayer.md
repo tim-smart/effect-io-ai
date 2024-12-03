@@ -4,11 +4,11 @@ Constructs a new `TestConfig` service with the specified settings.
 
 To import and use `testConfigLayer` from the "TestServices" module:
 
-ts
-import \* as TestServices from "effect/TestServices"
+```ts
+import * as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.testConfigLayer
-undefined
+```
 
 **Signature**
 

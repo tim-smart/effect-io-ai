@@ -4,11 +4,11 @@ Prepends the specified element to the beginning of the list.
 
 To import and use `prepend` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.prepend
-undefined
+```
 
 **Signature**
 

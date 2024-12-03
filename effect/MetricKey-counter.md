@@ -4,11 +4,11 @@ Creates a metric key for a counter, with the specified name.
 
 To import and use `counter` from the "MetricKey" module:
 
-ts
-import \* as MetricKey from "effect/MetricKey"
+```ts
+import * as MetricKey from "effect/MetricKey"
 // Can be accessed like this
 MetricKey.counter
-undefined
+```
 
 **Signature**
 

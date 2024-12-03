@@ -6,11 +6,11 @@ a value through a series of transformations.
 
 To import and use `scanRight` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.scanRight
-undefined
+```
 
 **Example**
 

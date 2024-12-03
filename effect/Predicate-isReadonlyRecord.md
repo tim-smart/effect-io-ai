@@ -4,11 +4,11 @@ A guard that succeeds when the input is a readonly record.
 
 To import and use `isReadonlyRecord` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isReadonlyRecord
-undefined
+```
 
 **Example**
 

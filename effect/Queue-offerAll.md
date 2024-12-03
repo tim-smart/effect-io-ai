@@ -16,11 +16,11 @@ queue but if there is no room it will not enqueue them and return false.
 
 To import and use `offerAll` from the "Queue" module:
 
-ts
-import \* as Queue from "effect/Queue"
+```ts
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.offerAll
-undefined
+```
 
 **Signature**
 

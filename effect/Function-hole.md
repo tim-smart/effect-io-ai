@@ -4,11 +4,11 @@ Type hole simulation.
 
 To import and use `hole` from the "Function" module:
 
-ts
-import \* as Function from "effect/Function"
+```ts
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.hole
-undefined
+```
 
 **Signature**
 

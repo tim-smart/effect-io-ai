@@ -5,11 +5,11 @@ parallel cause contains a linear sequence of failures.
 
 To import and use `linearize` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.linearize
-undefined
+```
 
 **Signature**
 

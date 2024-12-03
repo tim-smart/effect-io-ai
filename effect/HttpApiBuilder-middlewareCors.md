@@ -4,11 +4,11 @@ A CORS middleware layer that can be provided to the `HttpApiBuilder.serve` layer
 
 To import and use `middlewareCors` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.middlewareCors
-undefined
+```
 
 **Signature**
 

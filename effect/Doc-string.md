@@ -7,11 +7,11 @@ disregarded (i.e. not rendered) in the output document.
 
 To import and use `string` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.string
-undefined
+```
 
 **Signature**
 

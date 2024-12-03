@@ -6,11 +6,11 @@ The function can be created both using a generator function that can yield effec
 
 To import and use `fn` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.fn
-undefined
+```
 
 **Example**
 

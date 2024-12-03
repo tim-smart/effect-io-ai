@@ -5,11 +5,11 @@ workflow.
 
 To import and use `liveWith` from the "TestServices" module:
 
-ts
-import \* as TestServices from "effect/TestServices"
+```ts
+import * as TestServices from "effect/TestServices"
 // Can be accessed like this
 TestServices.liveWith
-undefined
+```
 
 **Signature**
 

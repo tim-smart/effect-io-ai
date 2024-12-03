@@ -7,11 +7,11 @@ If the cursor is already at the edge of the screen, this has no effect.
 
 To import and use `cursorBackward` from the "AnsiDoc" module:
 
-ts
-import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+```ts
+import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorBackward
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Creates a channel which repeatedly runs this channel.
 
 To import and use `repeated` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.repeated
-undefined
+```
 
 **Signature**
 

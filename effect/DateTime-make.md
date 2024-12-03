@@ -12,11 +12,11 @@ If the input is invalid, `None` will be returned.
 
 To import and use `make` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.make
-undefined
+```
 
 **Example**
 

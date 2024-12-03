@@ -10,11 +10,11 @@ combinator.
 
 To import and use `encloseSep` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.encloseSep
-undefined
+```
 
 **Example**
 

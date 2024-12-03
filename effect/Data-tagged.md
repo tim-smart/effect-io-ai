@@ -4,11 +4,11 @@ Provides a tagged constructor for the specified `Case`.
 
 To import and use `tagged` from the "Data" module:
 
-ts
-import \* as Data from "effect/Data"
+```ts
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.tagged
-undefined
+```
 
 **Example**
 

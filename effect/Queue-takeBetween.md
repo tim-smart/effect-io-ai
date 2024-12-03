@@ -6,11 +6,11 @@ suspends until at least the minimum number of elements have been collected.
 
 To import and use `takeBetween` from the "Queue" module:
 
-ts
-import \* as Queue from "effect/Queue"
+```ts
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.takeBetween
-undefined
+```
 
 **Signature**
 

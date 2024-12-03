@@ -4,11 +4,11 @@ Constructs a config from a tuple / struct / arguments of configs.
 
 To import and use `all` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.all
-undefined
+```
 
 **Signature**
 

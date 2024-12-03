@@ -12,8 +12,8 @@ A `HelpDoc` can be converted into plaintext, JSON, and HTML.
 
 To import and use `HelpDoc` from the "HelpDoc" module:
 
-ts
-import \* as HelpDoc from "@effect/cli/HelpDoc"
+```ts
+import * as HelpDoc from "@effect/cli/HelpDoc"
 // Can be accessed like this
 HelpDoc.HelpDoc
-undefined
+```

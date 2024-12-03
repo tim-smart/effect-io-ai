@@ -6,11 +6,11 @@ The `empty` value is `false`.
 
 To import and use `MonoidSome` from the "Boolean" module:
 
-ts
-import \* as Boolean from "@effect/typeclass/data/Boolean"
+```ts
+import * as Boolean from "@effect/typeclass/data/Boolean"
 // Can be accessed like this
 Boolean.MonoidSome
-undefined
+```
 
 **Signature**
 

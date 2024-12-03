@@ -4,11 +4,11 @@ Constructs a `Take`.
 
 To import and use `make` from the "Take" module:
 
-ts
-import \* as Take from "effect/Take"
+```ts
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.make
-undefined
+```
 
 **Signature**
 

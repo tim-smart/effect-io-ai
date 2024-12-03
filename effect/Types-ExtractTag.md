@@ -4,11 +4,11 @@ Extracts the type of the given tag.
 
 To import and use `ExtractTag` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.ExtractTag
-undefined
+```
 
 **Example**
 

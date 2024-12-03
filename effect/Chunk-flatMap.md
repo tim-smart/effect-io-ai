@@ -4,11 +4,11 @@ Applies a function to each element in a chunk and returns a new chunk containing
 
 To import and use `flatMap` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.flatMap
-undefined
+```
 
 **Signature**
 

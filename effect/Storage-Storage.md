@@ -5,8 +5,8 @@ The storage is expected to be shared among all pods, so it works also as communi
 
 To import and use `Storage` from the "Storage" module:
 
-ts
-import \* as Storage from "@effect/cluster/Storage"
+```ts
+import * as Storage from "@effect/cluster/Storage"
 // Can be accessed like this
 Storage.Storage
-undefined
+```

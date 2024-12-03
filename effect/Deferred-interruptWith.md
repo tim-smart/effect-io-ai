@@ -5,11 +5,11 @@ waiting on the value of the `Deferred` with the specified `FiberId`.
 
 To import and use `interruptWith` from the "Deferred" module:
 
-ts
-import \* as Deferred from "effect/Deferred"
+```ts
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.interruptWith
-undefined
+```
 
 **Signature**
 

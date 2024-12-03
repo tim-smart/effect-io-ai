@@ -4,11 +4,11 @@ Concatenates two iterables, combining their elements.
 
 To import and use `appendAll` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.appendAll
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Finds all values in the tree associated with the specified key.
 
 To import and use `findAll` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.findAll
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Retries constructing this layer according to the specified schedule.
 
 To import and use `retry` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.retry
-undefined
+```
 
 **Signature**
 

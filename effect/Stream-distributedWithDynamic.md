@@ -9,11 +9,11 @@ will continue but no longer backpressure on them.
 
 To import and use `distributedWithDynamic` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.distributedWithDynamic
-undefined
+```
 
 **Signature**
 

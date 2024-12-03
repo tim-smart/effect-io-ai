@@ -4,11 +4,11 @@ Returns the value of the `Option` if it is a `Some`, otherwise returns `undefine
 
 To import and use `getOrUndefined` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrUndefined
-undefined
+```
 
 **Example**
 

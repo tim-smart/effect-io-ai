@@ -14,11 +14,11 @@ to return to the original error handling behavior.
 
 To import and use `sandbox` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.sandbox
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Extends an array with a function that maps each subarray to a value.
 
 To import and use `extend` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.extend
-undefined
+```
 
 **Example**
 

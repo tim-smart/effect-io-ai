@@ -4,11 +4,11 @@ Creates a new `Option` that wraps the given value.
 
 To import and use `some` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.some
-undefined
+```
 
 **Signature**
 

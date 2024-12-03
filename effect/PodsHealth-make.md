@@ -4,11 +4,11 @@ Constructs a PodsHealth from its implementation
 
 To import and use `make` from the "PodsHealth" module:
 
-ts
-import \* as PodsHealth from "@effect/cluster/PodsHealth"
+```ts
+import * as PodsHealth from "@effect/cluster/PodsHealth"
 // Can be accessed like this
 PodsHealth.make
-undefined
+```
 
 **Signature**
 

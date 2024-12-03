@@ -6,11 +6,11 @@ the `Take<A, E>`. Error from stream when pulling is converted to
 
 To import and use `fromEffect` from the "Take" module:
 
-ts
-import \* as Take from "effect/Take"
+```ts
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.fromEffect
-undefined
+```
 
 **Signature**
 

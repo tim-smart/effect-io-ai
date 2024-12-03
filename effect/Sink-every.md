@@ -4,11 +4,11 @@ A sink that returns whether all elements satisfy the specified predicate.
 
 To import and use `every` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.every
-undefined
+```
 
 **Signature**
 

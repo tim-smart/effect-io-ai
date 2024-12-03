@@ -7,11 +7,11 @@ Split an `Iterable` into two parts:
 
 To import and use `span` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.span
-undefined
+```
 
 **Signature**
 

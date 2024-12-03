@@ -4,11 +4,11 @@
 
 To import and use `SemigroupXor` from the "Boolean" module:
 
-ts
-import \* as Boolean from "@effect/typeclass/data/Boolean"
+```ts
+import * as Boolean from "@effect/typeclass/data/Boolean"
 // Can be accessed like this
 Boolean.SemigroupXor
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Capture a Runtime and use it to fork Effect's, adding the forked fibers to the F
 
 To import and use `runtime` from the "FiberMap" module:
 
-ts
-import \* as FiberMap from "effect/FiberMap"
+```ts
+import * as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.runtime
-undefined
+```
 
 **Example**
 

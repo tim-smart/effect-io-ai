@@ -4,11 +4,11 @@ Returns a default `imap` implementation.
 
 To import and use `imap` from the "Contravariant" module:
 
-ts
-import \* as Contravariant from "@effect/typeclass/Contravariant"
+```ts
+import * as Contravariant from "@effect/typeclass/Contravariant"
 // Can be accessed like this
 Contravariant.imap
-undefined
+```
 
 **Signature**
 

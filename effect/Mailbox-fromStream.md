@@ -4,11 +4,11 @@ Create a `ReadonlyMailbox` from a `Stream`.
 
 To import and use `fromStream` from the "Mailbox" module:
 
-ts
-import \* as Mailbox from "effect/Mailbox"
+```ts
+import * as Mailbox from "effect/Mailbox"
 // Can be accessed like this
 Mailbox.fromStream
-undefined
+```
 
 **Signature**
 

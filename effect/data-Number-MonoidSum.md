@@ -6,11 +6,11 @@ The `empty` value is `0`.
 
 To import and use `MonoidSum` from the "Number" module:
 
-ts
-import \* as Number from "@effect/typeclass/data/Number"
+```ts
+import * as Number from "@effect/typeclass/data/Number"
 // Can be accessed like this
 Number.MonoidSum
-undefined
+```
 
 **Example**
 

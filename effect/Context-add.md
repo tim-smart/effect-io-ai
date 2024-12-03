@@ -4,11 +4,11 @@ Adds a service to a given `Context`.
 
 To import and use `add` from the "Context" module:
 
-ts
-import \* as Context from "effect/Context"
+```ts
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.add
-undefined
+```
 
 **Example**
 

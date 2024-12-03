@@ -5,11 +5,11 @@ empty.
 
 To import and use `head` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.head
-undefined
+```
 
 **Signature**
 

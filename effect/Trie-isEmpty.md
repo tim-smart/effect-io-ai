@@ -4,11 +4,11 @@ Checks if the `Trie` contains any entries.
 
 To import and use `isEmpty` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.isEmpty
-undefined
+```
 
 **Example**
 

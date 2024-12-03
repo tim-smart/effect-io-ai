@@ -5,11 +5,11 @@ patch or `that` patch.
 
 To import and use `either` from the "RuntimeFlagsPatch" module:
 
-ts
-import \* as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
+```ts
+import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.either
-undefined
+```
 
 **Signature**
 

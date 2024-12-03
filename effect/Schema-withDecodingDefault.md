@@ -4,11 +4,11 @@ Enhances a property signature with a default decoding value.
 
 To import and use `withDecodingDefault` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.withDecodingDefault
-undefined
+```
 
 **Signature**
 

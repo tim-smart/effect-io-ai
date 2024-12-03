@@ -5,11 +5,11 @@ a transactional effect that produces a new `Chunk<A2>`.
 
 To import and use `forEach` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.forEach
-undefined
+```
 
 **Signature**
 

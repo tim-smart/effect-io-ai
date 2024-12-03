@@ -4,11 +4,11 @@ Modify a `DateTime` by applying a function to a cloned UTC `Date` instance.
 
 To import and use `mutateUtc` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.mutateUtc
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ without any spacing.
 
 To import and use `hcat` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.hcat
-undefined
+```
 
 **Example**
 

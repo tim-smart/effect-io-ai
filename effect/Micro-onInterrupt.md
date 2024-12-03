@@ -4,11 +4,11 @@ If this `Micro` effect is aborted, run the finalizer effect.
 
 To import and use `onInterrupt` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.onInterrupt
-undefined
+```
 
 **Signature**
 

@@ -6,11 +6,11 @@ will be the result of the returned effect, if successful.
 
 To import and use `unwrapScopedWith` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.unwrapScopedWith
-undefined
+```
 
 **Signature**
 

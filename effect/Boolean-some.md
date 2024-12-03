@@ -4,11 +4,11 @@ This utility function is used to check if at least one of the elements in a coll
 
 To import and use `some` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.some
-undefined
+```
 
 **Example**
 

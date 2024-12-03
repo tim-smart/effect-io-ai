@@ -6,11 +6,11 @@ Keep only a max number of elements from the start of an `Iterable`, creating a n
 
 To import and use `take` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.take
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Combines two booleans using XOR: `(!self && that) || (self && !that)`.
 
 To import and use `xor` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.xor
-undefined
+```
 
 **Example**
 

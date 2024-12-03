@@ -10,11 +10,11 @@ function that expects an `Effect` value.
 
 To import and use `isEffect` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.isEffect
-undefined
+```
 
 **Signature**
 

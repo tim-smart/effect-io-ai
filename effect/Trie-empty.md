@@ -4,11 +4,11 @@ Creates an empty `Trie`.
 
 To import and use `empty` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.empty
-undefined
+```
 
 **Example**
 

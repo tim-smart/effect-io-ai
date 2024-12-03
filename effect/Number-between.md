@@ -4,11 +4,11 @@ Checks if a `number` is between a `minimum` and `maximum` value (inclusive).
 
 To import and use `between` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.between
-undefined
+```
 
 **Example**
 

@@ -5,11 +5,11 @@ If either chunk is non-empty, the result is also a non-empty chunk.
 
 To import and use `prependAll` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.prependAll
-undefined
+```
 
 **Example**
 

@@ -5,11 +5,11 @@ functions.
 
 To import and use `dimapChunks` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.dimapChunks
-undefined
+```
 
 **Signature**
 

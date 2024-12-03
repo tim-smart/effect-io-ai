@@ -7,11 +7,11 @@ tree.
 
 To import and use `at` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.at
-undefined
+```
 
 **Signature**
 

@@ -6,11 +6,11 @@ source to complete and safely interrupting the loser.
 
 To import and use `race` from the "RequestResolver" module:
 
-ts
-import \* as RequestResolver from "effect/RequestResolver"
+```ts
+import * as RequestResolver from "effect/RequestResolver"
 // Can be accessed like this
 RequestResolver.race
-undefined
+```
 
 **Signature**
 

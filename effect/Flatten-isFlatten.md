@@ -4,11 +4,11 @@ Returns `true` if the specified value is a `Flatten`, `false` otherwise.
 
 To import and use `isFlatten` from the "Flatten" module:
 
-ts
-import \* as Flatten from "@effect/printer/Flatten"
+```ts
+import * as Flatten from "@effect/printer/Flatten"
 // Can be accessed like this
 Flatten.isFlatten
-undefined
+```
 
 **Signature**
 

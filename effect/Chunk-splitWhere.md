@@ -5,11 +5,11 @@ Returns a tuple containing two chunks: the first one is before the match, and th
 
 To import and use `splitWhere` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.splitWhere
-undefined
+```
 
 **Signature**
 

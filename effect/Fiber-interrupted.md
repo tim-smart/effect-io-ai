@@ -4,11 +4,11 @@ Constructrs a `Fiber` that is already interrupted.
 
 To import and use `interrupted` from the "Fiber" module:
 
-ts
-import \* as Fiber from "effect/Fiber"
+```ts
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.interrupted
-undefined
+```
 
 **Signature**
 

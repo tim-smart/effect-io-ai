@@ -4,11 +4,11 @@ Merges this layer with the specified layer concurrently, producing a new layer w
 
 To import and use `merge` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.merge
-undefined
+```
 
 **Signature**
 

@@ -11,11 +11,11 @@ it easier to manage and respond to errors from multiple operations at once.
 
 To import and use `parallelErrors` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.parallelErrors
-undefined
+```
 
 **Example**
 

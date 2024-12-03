@@ -4,11 +4,11 @@ Zips two `F` values together using a provided function, returning a new `F` of t
 
 To import and use `zipWith` from the "SemiApplicative" module:
 
-ts
-import \* as SemiApplicative from "@effect/typeclass/SemiApplicative"
+```ts
+import * as SemiApplicative from "@effect/typeclass/SemiApplicative"
 // Can be accessed like this
 SemiApplicative.zipWith
-undefined
+```
 
 **Signature**
 

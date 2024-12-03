@@ -4,11 +4,11 @@ Folds an `UpstreamPullRequest<A>` into a value of type `Z`.
 
 To import and use `match` from the "UpstreamPullRequest" module:
 
-ts
-import \* as UpstreamPullRequest from "effect/UpstreamPullRequest"
+```ts
+import * as UpstreamPullRequest from "effect/UpstreamPullRequest"
 // Can be accessed like this
 UpstreamPullRequest.match
-undefined
+```
 
 **Signature**
 

@@ -8,11 +8,11 @@ replaced by spaces.
 
 To import and use `vcat` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.vcat
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Catch any unexpected errors of the given `Micro` effect, allowing you to recover
 
 To import and use `catchAllDefect` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.catchAllDefect
-undefined
+```
 
 **Signature**
 

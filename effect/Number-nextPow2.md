@@ -4,11 +4,11 @@ Returns the next power of 2 from the given number.
 
 To import and use `nextPow2` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.nextPow2
-undefined
+```
 
 **Example**
 

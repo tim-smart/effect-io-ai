@@ -5,11 +5,11 @@ composite fiber that produces a list of their results, in order.
 
 To import and use `forkAll` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.forkAll
-undefined
+```
 
 **Signature**
 

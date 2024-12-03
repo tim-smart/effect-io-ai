@@ -5,11 +5,11 @@ values if it exists or `None` otherwise.
 
 To import and use `get` from the "FiberRefs" module:
 
-ts
-import \* as FiberRefs from "effect/FiberRefs"
+```ts
+import * as FiberRefs from "effect/FiberRefs"
 // Can be accessed like this
 FiberRefs.get
-undefined
+```
 
 **Signature**
 

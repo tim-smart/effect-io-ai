@@ -4,11 +4,11 @@ Excludes the tagged object from the type.
 
 To import and use `ExcludeTag` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.ExcludeTag
-undefined
+```
 
 **Example**
 

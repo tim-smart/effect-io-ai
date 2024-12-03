@@ -4,11 +4,11 @@ Obtains a write lock in a scoped context.
 
 To import and use `writeLock` from the "TReentrantLock" module:
 
-ts
-import \* as TReentrantLock from "effect/TReentrantLock"
+```ts
+import * as TReentrantLock from "effect/TReentrantLock"
 // Can be accessed like this
 TReentrantLock.writeLock
-undefined
+```
 
 **Signature**
 

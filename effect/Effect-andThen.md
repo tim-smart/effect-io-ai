@@ -35,11 +35,11 @@ treating them as effects.
 
 To import and use `andThen` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.andThen
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ schedule, which is extracted from the input to the layer.
 
 To import and use `autoFromConfig` from the "Reloadable" module:
 
-ts
-import \* as Reloadable from "effect/Reloadable"
+```ts
+import * as Reloadable from "effect/Reloadable"
 // Can be accessed like this
 Reloadable.autoFromConfig
-undefined
+```
 
 **Signature**
 

@@ -5,8 +5,8 @@ value.
 
 To import and use `PathPatch` from the "ConfigProviderPathPatch" module:
 
-ts
-import \* as ConfigProviderPathPatch from "effect/ConfigProviderPathPatch"
+```ts
+import * as ConfigProviderPathPatch from "effect/ConfigProviderPathPatch"
 // Can be accessed like this
 ConfigProviderPathPatch.PathPatch
-undefined
+```

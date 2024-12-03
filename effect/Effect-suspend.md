@@ -16,11 +16,11 @@ Use `suspend` when you need to defer the evaluation of an effect until it is req
 
 To import and use `suspend` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.suspend
-undefined
+```
 
 **Example**
 

@@ -5,11 +5,11 @@ is empty.
 
 To import and use `poll` from the "Queue" module:
 
-ts
-import \* as Queue from "effect/Queue"
+```ts
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.poll
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Filters out `None` values from a `Trie` of `Options`s.
 
 To import and use `compact` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.compact
-undefined
+```
 
 **Example**
 

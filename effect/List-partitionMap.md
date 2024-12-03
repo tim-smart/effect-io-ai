@@ -6,11 +6,11 @@ contains all elements for which the specified function returned a `Right`.
 
 To import and use `partitionMap` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.partitionMap
-undefined
+```
 
 **Signature**
 

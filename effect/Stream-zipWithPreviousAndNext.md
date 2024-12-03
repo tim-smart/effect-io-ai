@@ -4,11 +4,11 @@ Zips each element with both the previous and next element.
 
 To import and use `zipWithPreviousAndNext` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipWithPreviousAndNext
-undefined
+```
 
 **Example**
 

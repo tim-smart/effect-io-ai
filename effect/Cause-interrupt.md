@@ -4,11 +4,11 @@ Constructs a new `Interrupt` cause from the specified `fiberId`.
 
 To import and use `interrupt` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.interrupt
-undefined
+```
 
 **Signature**
 

@@ -10,11 +10,11 @@ altering the error or the overall result of the effect.
 
 To import and use `tapErrorCause` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tapErrorCause
-undefined
+```
 
 **Example**
 

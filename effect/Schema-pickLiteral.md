@@ -4,11 +4,11 @@ Creates a new `Schema` from a literal schema.
 
 To import and use `pickLiteral` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.pickLiteral
-undefined
+```
 
 **Example**
 

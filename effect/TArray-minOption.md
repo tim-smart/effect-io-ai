@@ -4,11 +4,11 @@ Atomically compute the least element in the array, if it exists.
 
 To import and use `minOption` from the "TArray" module:
 
-ts
-import \* as TArray from "effect/TArray"
+```ts
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.minOption
-undefined
+```
 
 **Signature**
 

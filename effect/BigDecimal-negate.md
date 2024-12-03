@@ -4,11 +4,11 @@ Provides a negate operation on `BigDecimal`s.
 
 To import and use `negate` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.negate
-undefined
+```
 
 **Example**
 

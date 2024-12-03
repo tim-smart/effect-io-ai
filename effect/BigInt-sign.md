@@ -4,11 +4,11 @@ Determines the sign of a given `bigint`.
 
 To import and use `sign` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.sign
-undefined
+```
 
 **Example**
 

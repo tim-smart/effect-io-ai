@@ -7,11 +7,11 @@ acquisition attempt.
 
 To import and use `get` from the "KeyedPool" module:
 
-ts
-import \* as KeyedPool from "effect/KeyedPool"
+```ts
+import * as KeyedPool from "effect/KeyedPool"
 // Can be accessed like this
 KeyedPool.get
-undefined
+```
 
 **Signature**
 

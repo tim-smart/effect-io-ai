@@ -4,11 +4,11 @@ Combines two booleans using an implication: `(!self || that)`.
 
 To import and use `implies` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.implies
-undefined
+```
 
 **Example**
 

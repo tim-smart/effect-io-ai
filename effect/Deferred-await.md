@@ -5,8 +5,8 @@ workflow until the result is available.
 
 To import and use `await` from the "Deferred" module:
 
-ts
-import \* as Deferred from "effect/Deferred"
+```ts
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.await
-undefined
+```

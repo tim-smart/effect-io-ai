@@ -5,11 +5,11 @@ returns the value wrapped in a `Some`.
 
 To import and use `fromNullable` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.fromNullable
-undefined
+```
 
 **Example**
 

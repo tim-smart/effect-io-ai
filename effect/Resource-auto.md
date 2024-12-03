@@ -8,11 +8,11 @@ constructor.
 
 To import and use `auto` from the "Resource" module:
 
-ts
-import \* as Resource from "effect/Resource"
+```ts
+import * as Resource from "effect/Resource"
 // Can be accessed like this
 Resource.auto
-undefined
+```
 
 **Signature**
 

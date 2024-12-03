@@ -14,8 +14,8 @@ The semantic of `encode` is:
 
 To import and use `PropertySignatureTransformation` from the "SchemaAST" module:
 
-ts
-import \* as SchemaAST from "effect/SchemaAST"
+```ts
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
 SchemaAST.PropertySignatureTransformation
-undefined
+```

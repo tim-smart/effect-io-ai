@@ -5,11 +5,11 @@ Counters can be incremented and decremented and provide a running total of chang
 
 To import and use `counter` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.counter
-undefined
+```
 
 **Example**
 

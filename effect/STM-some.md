@@ -4,11 +4,11 @@ Converts an option on values into an option on errors.
 
 To import and use `some` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.some
-undefined
+```
 
 **Signature**
 

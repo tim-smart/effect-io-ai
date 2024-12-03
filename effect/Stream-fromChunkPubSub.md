@@ -4,11 +4,11 @@ Creates a stream from a subscription to a `PubSub`.
 
 To import and use `fromChunkPubSub` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromChunkPubSub
-undefined
+```
 
 **Signature**
 

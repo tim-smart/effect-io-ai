@@ -7,11 +7,11 @@ workflow.
 
 To import and use `scope` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.scope
-undefined
+```
 
 **Signature**
 

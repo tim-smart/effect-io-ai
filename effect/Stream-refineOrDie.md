@@ -4,11 +4,11 @@ Keeps some of the errors, and terminates the fiber with the rest
 
 To import and use `refineOrDie` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.refineOrDie
-undefined
+```
 
 **Signature**
 

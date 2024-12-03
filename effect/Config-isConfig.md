@@ -10,11 +10,11 @@ argument to a function that expects an `Config` value.
 
 To import and use `isConfig` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.isConfig
-undefined
+```
 
 **Signature**
 

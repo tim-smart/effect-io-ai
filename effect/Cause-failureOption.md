@@ -5,11 +5,11 @@ exists.
 
 To import and use `failureOption` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.failureOption
-undefined
+```
 
 **Signature**
 

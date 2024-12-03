@@ -4,11 +4,11 @@ Creates a `Micro` effect that will succeed with the value wrapped in `Some`.
 
 To import and use `succeedSome` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.succeedSome
-undefined
+```
 
 **Signature**
 

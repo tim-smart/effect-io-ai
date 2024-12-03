@@ -4,11 +4,11 @@ Returns the maximum between two `bigint`s.
 
 To import and use `max` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.max
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ Use the `concurrency` option to control how many elements are processed in paral
 
 To import and use `filter` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.filter
-undefined
+```
 
 **Signature**
 

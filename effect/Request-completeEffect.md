@@ -6,11 +6,11 @@ the request with the value of the effect workflow if it succeeds.
 
 To import and use `completeEffect` from the "Request" module:
 
-ts
-import \* as Request from "effect/Request"
+```ts
+import * as Request from "effect/Request"
 // Can be accessed like this
 Request.completeEffect
-undefined
+```
 
 **Signature**
 

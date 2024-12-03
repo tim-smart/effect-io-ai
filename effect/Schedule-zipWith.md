@@ -4,11 +4,11 @@ Equivalent to `intersect` followed by `map`.
 
 To import and use `zipWith` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.zipWith
-undefined
+```
 
 **Signature**
 

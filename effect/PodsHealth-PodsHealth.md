@@ -8,8 +8,8 @@ A typical implementation for this is using k8s to check if the pod still exists.
 
 To import and use `PodsHealth` from the "PodsHealth" module:
 
-ts
-import \* as PodsHealth from "@effect/cluster/PodsHealth"
+```ts
+import * as PodsHealth from "@effect/cluster/PodsHealth"
 // Can be accessed like this
 PodsHealth.PodsHealth
-undefined
+```

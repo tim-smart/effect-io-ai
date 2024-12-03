@@ -6,11 +6,11 @@ Uses the current time as a starting point if no value is provided for `now`.
 
 To import and use `next` from the "Cron" module:
 
-ts
-import \* as Cron from "effect/Cron"
+```ts
+import * as Cron from "effect/Cron"
 // Can be accessed like this
 Cron.next
-undefined
+```
 
 **Example**
 

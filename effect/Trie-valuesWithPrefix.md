@@ -5,11 +5,11 @@ that have `prefix` as prefix (`prefix` included if it exists).
 
 To import and use `valuesWithPrefix` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.valuesWithPrefix
-undefined
+```
 
 **Example**
 

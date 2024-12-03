@@ -6,11 +6,11 @@ returned effect terminates, the forked fiber will continue running.
 
 To import and use `forkDaemon` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.forkDaemon
-undefined
+```
 
 **Signature**
 

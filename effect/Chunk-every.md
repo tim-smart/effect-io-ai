@@ -4,11 +4,11 @@ Check if a predicate holds true for every `Chunk` element.
 
 To import and use `every` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.every
-undefined
+```
 
 **Signature**
 

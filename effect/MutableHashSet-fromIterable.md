@@ -4,11 +4,11 @@ Creates a new `MutableHashSet` from an iterable collection of values.
 
 To import and use `fromIterable` from the "MutableHashSet" module:
 
-ts
-import \* as MutableHashSet from "effect/MutableHashSet"
+```ts
+import * as MutableHashSet from "effect/MutableHashSet"
 // Can be accessed like this
 MutableHashSet.fromIterable
-undefined
+```
 
 **Signature**
 

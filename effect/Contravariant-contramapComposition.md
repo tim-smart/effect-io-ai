@@ -6,11 +6,11 @@ Returns a default binary `map` composition.
 
 To import and use `contramapComposition` from the "Contravariant" module:
 
-ts
-import \* as Contravariant from "@effect/typeclass/Contravariant"
+```ts
+import * as Contravariant from "@effect/typeclass/Contravariant"
 // Can be accessed like this
 Contravariant.contramapComposition
-undefined
+```
 
 **Signature**
 

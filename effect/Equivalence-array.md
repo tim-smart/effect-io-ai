@@ -4,11 +4,11 @@ Creates a new `Equivalence` for an array of values based on a given `Equivalence
 
 To import and use `array` from the "Equivalence" module:
 
-ts
-import \* as Equivalence from "effect/Equivalence"
+```ts
+import * as Equivalence from "effect/Equivalence"
 // Can be accessed like this
 Equivalence.array
-undefined
+```
 
 **Signature**
 

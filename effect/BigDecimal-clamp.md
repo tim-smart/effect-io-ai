@@ -8,11 +8,11 @@ Restricts the given `BigDecimal` to be within the range specified by the `minimu
 
 To import and use `clamp` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.clamp
-undefined
+```
 
 **Example**
 

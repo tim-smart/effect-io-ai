@@ -4,11 +4,11 @@ Appends the specified element to the end of the `List`, creating a new `Cons`.
 
 To import and use `append` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.append
-undefined
+```
 
 **Signature**
 

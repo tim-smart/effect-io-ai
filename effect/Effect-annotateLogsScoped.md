@@ -7,11 +7,11 @@ defined `Scope`, making it easier to manage context-specific logging.
 
 To import and use `annotateLogsScoped` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.annotateLogsScoped
-undefined
+```
 
 **Example**
 

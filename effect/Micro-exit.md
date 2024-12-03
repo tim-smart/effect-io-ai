@@ -4,11 +4,11 @@ Access the `MicroExit` of the given `Micro` effect.
 
 To import and use `exit` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.exit
-undefined
+```
 
 **Signature**
 

@@ -18,11 +18,11 @@ already succeeds, it will remain unchanged.
 
 To import and use `orElseSucceed` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orElseSucceed
-undefined
+```
 
 **Example**
 

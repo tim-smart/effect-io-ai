@@ -5,11 +5,11 @@ leading or trailing whitespace.
 
 To import and use `NonEmptyTrimmedString` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.NonEmptyTrimmedString
-undefined
+```
 
 **Example**
 

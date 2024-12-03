@@ -9,11 +9,11 @@ Throws a `RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infin
 
 To import and use `unsafeFromNumber` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.unsafeFromNumber
-undefined
+```
 
 **Example**
 

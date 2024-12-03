@@ -4,11 +4,11 @@ Constructs a new `Differ`.
 
 To import and use `make` from the "Differ" module:
 
-ts
-import \* as Differ from "effect/Differ"
+```ts
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.make
-undefined
+```
 
 **Signature**
 

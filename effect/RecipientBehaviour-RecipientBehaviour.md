@@ -14,8 +14,8 @@ The offer effect is used by the EntityManager to give messages to the RecipientB
 
 To import and use `RecipientBehaviour` from the "RecipientBehaviour" module:
 
-ts
-import \* as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
+```ts
+import * as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
 // Can be accessed like this
 RecipientBehaviour.RecipientBehaviour
-undefined
+```

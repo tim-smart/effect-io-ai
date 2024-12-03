@@ -4,11 +4,11 @@ Adds an effect to be executed at the start of the stream.
 
 To import and use `onStart` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.onStart
-undefined
+```
 
 **Example**
 

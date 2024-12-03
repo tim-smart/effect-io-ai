@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isUnbounded` from the "PageWidth" module:
 
-ts
-import \* as PageWidth from "@effect/printer/PageWidth"
+```ts
+import * as PageWidth from "@effect/printer/PageWidth"
 // Can be accessed like this
 PageWidth.isUnbounded
-undefined
+```
 
 **Signature**
 

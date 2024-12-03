@@ -8,8 +8,8 @@ Version is used during the rebalance phase to give priority to newer application
 
 To import and use `Pod` from the "Pod" module:
 
-ts
-import \* as Pod from "@effect/cluster/Pod"
+```ts
+import * as Pod from "@effect/cluster/Pod"
 // Can be accessed like this
 Pod.Pod
-undefined
+```

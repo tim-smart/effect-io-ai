@@ -4,11 +4,11 @@ Tests if a value is a `RegExp`.
 
 To import and use `isRegExp` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isRegExp
-undefined
+```
 
 **Example**
 

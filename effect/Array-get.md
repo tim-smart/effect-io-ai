@@ -4,11 +4,11 @@ This function provides a safe way to read a value at a particular index from a `
 
 To import and use `get` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.get
-undefined
+```
 
 **Signature**
 

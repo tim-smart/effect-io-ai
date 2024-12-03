@@ -7,11 +7,11 @@ converted back to a `DateTime` within the same time zone.
 
 To import and use `mutate` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.mutate
-undefined
+```
 
 **Signature**
 

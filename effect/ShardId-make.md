@@ -5,11 +5,11 @@ The shard id is currently built up by making the hash of the entity id, and then
 
 To import and use `make` from the "ShardId" module:
 
-ts
-import \* as ShardId from "@effect/cluster/ShardId"
+```ts
+import * as ShardId from "@effect/cluster/ShardId"
 // Can be accessed like this
 ShardId.make
-undefined
+```
 
 **Signature**
 

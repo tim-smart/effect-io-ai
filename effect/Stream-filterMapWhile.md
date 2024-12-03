@@ -5,11 +5,11 @@ function is defined.
 
 To import and use `filterMapWhile` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.filterMapWhile
-undefined
+```
 
 **Signature**
 

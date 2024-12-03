@@ -4,11 +4,11 @@ Zips this chunk pointwise with the specified chunk.
 
 To import and use `zip` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.zip
-undefined
+```
 
 **Signature**
 

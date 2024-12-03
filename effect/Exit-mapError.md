@@ -5,11 +5,11 @@ the provided function.
 
 To import and use `mapError` from the "Exit" module:
 
-ts
-import \* as Exit from "effect/Exit"
+```ts
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.mapError
-undefined
+```
 
 **Signature**
 

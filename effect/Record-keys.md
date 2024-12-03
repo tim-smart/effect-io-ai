@@ -4,11 +4,11 @@ Retrieve the keys of a given record as an array.
 
 To import and use `keys` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.keys
-undefined
+```
 
 **Signature**
 

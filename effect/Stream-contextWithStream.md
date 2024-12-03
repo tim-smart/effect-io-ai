@@ -4,11 +4,11 @@ Accesses the context of the stream in the context of a stream.
 
 To import and use `contextWithStream` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.contextWithStream
-undefined
+```
 
 **Signature**
 

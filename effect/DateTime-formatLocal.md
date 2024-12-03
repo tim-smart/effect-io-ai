@@ -6,11 +6,11 @@ It will use the system's local time zone & locale.
 
 To import and use `formatLocal` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.formatLocal
-undefined
+```
 
 **Signature**
 

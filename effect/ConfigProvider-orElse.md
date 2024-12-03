@@ -6,11 +6,11 @@ if there are any issues loading the configuration from this provider.
 
 To import and use `orElse` from the "ConfigProvider" module:
 
-ts
-import \* as ConfigProvider from "effect/ConfigProvider"
+```ts
+import * as ConfigProvider from "effect/ConfigProvider"
 // Can be accessed like this
 ConfigProvider.orElse
-undefined
+```
 
 **Signature**
 

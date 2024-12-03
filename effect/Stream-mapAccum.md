@@ -4,11 +4,11 @@ Statefully maps over the elements of this stream to produce new elements.
 
 To import and use `mapAccum` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mapAccum
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ into a single value.
 
 To import and use `zipWith` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.zipWith
-undefined
+```
 
 **Signature**
 

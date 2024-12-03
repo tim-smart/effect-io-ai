@@ -4,11 +4,11 @@ Takes an `Iterable` of `number`s and returns their multiplication as a single `n
 
 To import and use `multiplyAll` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.multiplyAll
-undefined
+```
 
 **Example**
 

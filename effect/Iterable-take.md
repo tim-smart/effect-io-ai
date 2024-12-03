@@ -6,11 +6,11 @@ Keep only a max number of elements from the start of an `Iterable`, creating a n
 
 To import and use `take` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.take
-undefined
+```
 
 **Signature**
 

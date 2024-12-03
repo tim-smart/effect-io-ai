@@ -4,11 +4,11 @@ Takes the first matching value, or retries until there is one.
 
 To import and use `takeFirst` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.takeFirst
-undefined
+```
 
 **Signature**
 

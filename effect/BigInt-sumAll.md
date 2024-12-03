@@ -4,11 +4,11 @@ Takes an `Iterable` of `bigint`s and returns their sum as a single `bigint
 
 To import and use `sumAll` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.sumAll
-undefined
+```
 
 **Example**
 

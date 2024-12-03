@@ -5,11 +5,11 @@ name.
 
 To import and use `frequency` from the "MetricKey" module:
 
-ts
-import \* as MetricKey from "effect/MetricKey"
+```ts
+import * as MetricKey from "effect/MetricKey"
 // Can be accessed like this
 MetricKey.frequency
-undefined
+```
 
 **Signature**
 

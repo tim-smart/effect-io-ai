@@ -12,11 +12,11 @@ error type unless a user-defined type guard is used to narrow the type.
 
 To import and use `catchIf` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchIf
-undefined
+```
 
 **Example**
 

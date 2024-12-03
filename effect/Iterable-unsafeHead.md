@@ -4,11 +4,11 @@ Get the first element of a `Iterable`, or throw an error if the `Iterable` is em
 
 To import and use `unsafeHead` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.unsafeHead
-undefined
+```
 
 **Signature**
 

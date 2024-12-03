@@ -4,11 +4,11 @@ Regardless of the result of the this `Micro` effect, run the finalizer effect.
 
 To import and use `ensuring` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.ensuring
-undefined
+```
 
 **Signature**
 

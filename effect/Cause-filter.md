@@ -4,11 +4,11 @@ Filters causes which match the provided predicate out of the specified cause.
 
 To import and use `filter` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.filter
-undefined
+```
 
 **Signature**
 

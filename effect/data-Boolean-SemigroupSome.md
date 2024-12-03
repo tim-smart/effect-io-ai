@@ -4,11 +4,11 @@
 
 To import and use `SemigroupSome` from the "Boolean" module:
 
-ts
-import \* as Boolean from "@effect/typeclass/data/Boolean"
+```ts
+import * as Boolean from "@effect/typeclass/data/Boolean"
 // Can be accessed like this
 Boolean.SemigroupSome
-undefined
+```
 
 **Example**
 

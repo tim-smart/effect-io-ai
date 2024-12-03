@@ -8,11 +8,11 @@ If the promise completes with a failure, the stream will emit that failure.
 
 To import and use `interruptWhenDeferred` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.interruptWhenDeferred
-undefined
+```
 
 **Signature**
 

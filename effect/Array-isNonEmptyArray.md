@@ -6,11 +6,11 @@ An `Array` is considered to be a `NonEmptyArray` if it contains at least one ele
 
 To import and use `isNonEmptyArray` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.isNonEmptyArray
-undefined
+```
 
 **Example**
 

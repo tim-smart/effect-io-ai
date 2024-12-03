@@ -4,11 +4,11 @@ Executes a sequence of two `Cause`s. The second `Cause` can be dependent on the 
 
 To import and use `andThen` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.andThen
-undefined
+```
 
 **Signature**
 

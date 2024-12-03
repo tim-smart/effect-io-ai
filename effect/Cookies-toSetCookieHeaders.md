@@ -4,11 +4,11 @@ Serialize a Cookies object into Headers object containing one or more Set-Cookie
 
 To import and use `toSetCookieHeaders` from the "Cookies" module:
 
-ts
-import \* as Cookies from "@effect/platform/Cookies"
+```ts
+import * as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.toSetCookieHeaders
-undefined
+```
 
 **Signature**
 

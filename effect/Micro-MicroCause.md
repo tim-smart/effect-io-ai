@@ -12,8 +12,8 @@ A `MicroCause` is a data type that represents the different ways a `Micro` can f
 
 To import and use `MicroCause` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.MicroCause
-undefined
+```

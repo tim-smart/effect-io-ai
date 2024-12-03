@@ -4,11 +4,11 @@ Takes all matching values, or retries until there is at least one.
 
 To import and use `takeSome` from the "TSet" module:
 
-ts
-import \* as TSet from "effect/TSet"
+```ts
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.takeSome
-undefined
+```
 
 **Signature**
 

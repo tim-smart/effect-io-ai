@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isRunning` from the "FiberStatus" module:
 
-ts
-import \* as FiberStatus from "effect/FiberStatus"
+```ts
+import * as FiberStatus from "effect/FiberStatus"
 // Can be accessed like this
 FiberStatus.isRunning
-undefined
+```
 
 **Signature**
 

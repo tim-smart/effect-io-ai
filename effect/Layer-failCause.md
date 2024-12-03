@@ -4,11 +4,11 @@ Constructs a layer that fails with the specified cause.
 
 To import and use `failCause` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.failCause
-undefined
+```
 
 **Signature**
 

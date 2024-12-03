@@ -4,11 +4,11 @@ Given an `Iterable` collection of `Option`s, returns the first `Some` found in t
 
 To import and use `firstSomeOf` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.firstSomeOf
-undefined
+```
 
 **Example**
 

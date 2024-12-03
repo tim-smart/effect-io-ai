@@ -7,8 +7,8 @@ Defaults to "pipe"
 
 To import and use `CommandOutput` from the "Command" module:
 
-ts
-import \* as Command from "@effect/platform/Command"
+```ts
+import * as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.CommandOutput
-undefined
+```

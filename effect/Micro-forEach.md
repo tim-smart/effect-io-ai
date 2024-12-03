@@ -10,11 +10,11 @@ parallel. By default, the effects are run sequentially.
 
 To import and use `forEach` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.forEach
-undefined
+```
 
 **Signature**
 

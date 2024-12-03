@@ -4,11 +4,11 @@ Merge two records, preserving only the entries that are unique to each record.
 
 To import and use `difference` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.difference
-undefined
+```
 
 **Signature**
 

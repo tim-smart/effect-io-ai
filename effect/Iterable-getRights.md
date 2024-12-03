@@ -4,11 +4,11 @@ Retrieves the `Right` values from an `Iterable` of `Either`s.
 
 To import and use `getRights` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.getRights
-undefined
+```
 
 **Example**
 

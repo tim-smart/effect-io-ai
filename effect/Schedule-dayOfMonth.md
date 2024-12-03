@@ -9,11 +9,11 @@ NOTE: `day` parameter is validated lazily. Must be in range 1...31.
 
 To import and use `dayOfMonth` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.dayOfMonth
-undefined
+```
 
 **Signature**
 

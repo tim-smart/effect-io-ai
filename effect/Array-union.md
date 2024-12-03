@@ -4,11 +4,11 @@ Creates a union of two arrays, removing duplicates.
 
 To import and use `union` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.union
-undefined
+```
 
 **Example**
 

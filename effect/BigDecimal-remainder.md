@@ -6,11 +6,11 @@ If the divisor is `0`, the result will be `None`.
 
 To import and use `remainder` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.remainder
-undefined
+```
 
 **Example**
 

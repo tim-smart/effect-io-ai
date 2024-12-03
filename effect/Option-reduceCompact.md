@@ -4,11 +4,11 @@ Reduces an `Iterable` of `Option<A>` to a single value of type `B`, elements tha
 
 To import and use `reduceCompact` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.reduceCompact
-undefined
+```
 
 **Example**
 

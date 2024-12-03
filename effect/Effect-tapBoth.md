@@ -12,11 +12,11 @@ altering the result.
 
 To import and use `tapBoth` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tapBoth
-undefined
+```
 
 **Example**
 

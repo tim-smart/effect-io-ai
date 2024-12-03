@@ -4,11 +4,11 @@ Determines the absolute value of a given `BigDecimal`.
 
 To import and use `abs` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.abs
-undefined
+```
 
 **Example**
 

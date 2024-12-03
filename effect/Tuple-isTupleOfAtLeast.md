@@ -6,11 +6,11 @@ An `Array` is considered to be a `TupleOfAtLeast` if its length is at least `N`.
 
 To import and use `isTupleOfAtLeast` from the "Tuple" module:
 
-ts
-import \* as Tuple from "effect/Tuple"
+```ts
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.isTupleOfAtLeast
-undefined
+```
 
 **Example**
 

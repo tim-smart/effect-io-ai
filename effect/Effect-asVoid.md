@@ -7,11 +7,11 @@ will fail with the same error.
 
 To import and use `asVoid` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.asVoid
-undefined
+```
 
 **Signature**
 

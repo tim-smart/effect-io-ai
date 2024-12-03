@@ -4,11 +4,11 @@ Inverts the ordering of the input `Ordering`.
 
 To import and use `reverse` from the "Ordering" module:
 
-ts
-import \* as Ordering from "effect/Ordering"
+```ts
+import * as Ordering from "effect/Ordering"
 // Can be accessed like this
 Ordering.reverse
-undefined
+```
 
 **Example**
 

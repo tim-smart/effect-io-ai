@@ -4,11 +4,11 @@ Takes all elements so long as the effectual predicate returns true.
 
 To import and use `takeWhile` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.takeWhile
-undefined
+```
 
 **Signature**
 

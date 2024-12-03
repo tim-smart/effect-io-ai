@@ -17,8 +17,8 @@ values for arbitrarily complex data types compositionally.
 
 To import and use `Differ` from the "Differ" module:
 
-ts
-import \* as Differ from "effect/Differ"
+```ts
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.Differ
-undefined
+```

@@ -10,11 +10,11 @@ the last reference is released.
 
 To import and use `make` from the "RcRef" module:
 
-ts
-import \* as RcRef from "effect/RcRef"
+```ts
+import * as RcRef from "effect/RcRef"
 // Can be accessed like this
 RcRef.make
-undefined
+```
 
 **Example**
 

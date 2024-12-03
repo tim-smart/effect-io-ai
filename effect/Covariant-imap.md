@@ -4,11 +4,11 @@ Returns a default `imap` implementation.
 
 To import and use `imap` from the "Covariant" module:
 
-ts
-import \* as Covariant from "@effect/typeclass/Covariant"
+```ts
+import * as Covariant from "@effect/typeclass/Covariant"
 // Can be accessed like this
 Covariant.imap
-undefined
+```
 
 **Signature**
 

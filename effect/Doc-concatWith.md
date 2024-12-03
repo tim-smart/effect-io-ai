@@ -5,11 +5,11 @@ element-wise with the specified binary function.
 
 To import and use `concatWith` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.concatWith
-undefined
+```
 
 **Example**
 

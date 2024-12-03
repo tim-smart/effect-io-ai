@@ -5,11 +5,11 @@ effects that it is applied to.
 
 To import and use `trackDefect` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackDefect
-undefined
+```
 
 **Signature**
 

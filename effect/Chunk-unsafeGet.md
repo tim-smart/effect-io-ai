@@ -4,11 +4,11 @@ Gets an element unsafely, will throw on out of bounds
 
 To import and use `unsafeGet` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.unsafeGet
-undefined
+```
 
 **Signature**
 

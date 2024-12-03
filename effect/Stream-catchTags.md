@@ -5,11 +5,11 @@ case this one fails with an error matching one of the given `_tag`'s.
 
 To import and use `catchTags` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.catchTags
-undefined
+```
 
 **Signature**
 

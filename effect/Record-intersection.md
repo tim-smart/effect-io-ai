@@ -4,11 +4,11 @@ Merge two records, retaining only the entries that exist in both records.
 
 To import and use `intersection` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.intersection
-undefined
+```
 
 **Signature**
 

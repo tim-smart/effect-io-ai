@@ -4,11 +4,11 @@ Get the first element of a `ReadonlyArray`, or `None` if the `ReadonlyArray` is 
 
 To import and use `head` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.head
-undefined
+```
 
 **Signature**
 

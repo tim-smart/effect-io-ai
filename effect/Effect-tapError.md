@@ -10,11 +10,11 @@ while the operation you provide can inspect or act on it.
 
 To import and use `tapError` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.tapError
-undefined
+```
 
 **Example**
 

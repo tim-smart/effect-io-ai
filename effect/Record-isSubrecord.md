@@ -5,11 +5,11 @@ This comparison uses default equality checks (`Equal.equivalence()`).
 
 To import and use `isSubrecord` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.isSubrecord
-undefined
+```
 
 **Signature**
 

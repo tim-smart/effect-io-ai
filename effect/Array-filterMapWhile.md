@@ -6,11 +6,11 @@ This is useful when you need to transform an array but only up to the point wher
 
 To import and use `filterMapWhile` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.filterMapWhile
-undefined
+```
 
 **Example**
 

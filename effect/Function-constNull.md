@@ -4,11 +4,11 @@ A thunk that returns always `null`.
 
 To import and use `constNull` from the "Function" module:
 
-ts
-import \* as Function from "effect/Function"
+```ts
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.constNull
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Make all properties in `T` mutable. Supports arrays, tuples, and records as well
 
 To import and use `Mutable` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.Mutable
-undefined
+```
 
 **Example**
 

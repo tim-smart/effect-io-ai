@@ -5,11 +5,11 @@ the returned Effect will terminate with the first failure that occurred.
 
 To import and use `join` from the "FiberSet" module:
 
-ts
-import \* as FiberSet from "effect/FiberSet"
+```ts
+import * as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.join
-undefined
+```
 
 **Example**
 

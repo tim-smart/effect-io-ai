@@ -4,11 +4,11 @@ Performs the specified effect if this layer succeeds.
 
 To import and use `tap` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.tap
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Filters responses that return a 2xx status code.
 
 To import and use `filterStatusOk` from the "HttpClient" module:
 
-ts
-import \* as HttpClient from "@effect/platform/HttpClient"
+```ts
+import * as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.filterStatusOk
-undefined
+```
 
 **Signature**
 

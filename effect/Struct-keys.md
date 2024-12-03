@@ -4,11 +4,11 @@ Retrieves the object keys that are strings in a typed manner
 
 To import and use `keys` from the "Struct" module:
 
-ts
-import \* as Struct from "effect/Struct"
+```ts
+import * as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.keys
-undefined
+```
 
 **Example**
 

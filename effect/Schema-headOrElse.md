@@ -6,11 +6,11 @@ If the array is empty, it returns the `fallback` argument if provided; otherwise
 
 To import and use `headOrElse` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.headOrElse
-undefined
+```
 
 **Signature**
 

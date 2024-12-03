@@ -12,11 +12,11 @@ the command-line symbol `--`) corresponding to options.
 
 To import and use `processCommandLine` from the "Options" module:
 
-ts
-import \* as Options from "@effect/cli/Options"
+```ts
+import * as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.processCommandLine
-undefined
+```
 
 **Signature**
 

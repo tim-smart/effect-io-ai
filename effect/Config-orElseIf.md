@@ -6,11 +6,11 @@ fails with an error satisfying the specified predicate.
 
 To import and use `orElseIf` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.orElseIf
-undefined
+```
 
 **Signature**
 

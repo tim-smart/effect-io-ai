@@ -4,11 +4,11 @@ Like `Types.Mutable`, but works recursively.
 
 To import and use `DeepMutable` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.DeepMutable
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Tests if a value is a `function`.
 
 To import and use `isFunction` from the "Function" module:
 
-ts
-import \* as Function from "effect/Function"
+```ts
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.isFunction
-undefined
+```
 
 **Example**
 

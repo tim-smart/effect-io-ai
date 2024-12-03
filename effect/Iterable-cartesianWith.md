@@ -4,11 +4,11 @@ Zips this Iterable crosswise with the specified Iterable using the specified com
 
 To import and use `cartesianWith` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.cartesianWith
-undefined
+```
 
 **Signature**
 

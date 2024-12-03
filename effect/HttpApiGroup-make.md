@@ -7,11 +7,11 @@ The endpoints can be implemented later using the `HttpApiBuilder.group` api.
 
 To import and use `make` from the "HttpApiGroup" module:
 
-ts
-import \* as HttpApiGroup from "@effect/platform/HttpApiGroup"
+```ts
+import * as HttpApiGroup from "@effect/platform/HttpApiGroup"
 // Can be accessed like this
 HttpApiGroup.make
-undefined
+```
 
 **Signature**
 

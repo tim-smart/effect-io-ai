@@ -4,11 +4,11 @@ Partitions the elements of a record into two groups: those that match a predicat
 
 To import and use `partitionMap` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.partitionMap
-undefined
+```
 
 **Example**
 

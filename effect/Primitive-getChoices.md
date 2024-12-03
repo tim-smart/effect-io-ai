@@ -5,11 +5,11 @@ any.
 
 To import and use `getChoices` from the "Primitive" module:
 
-ts
-import \* as Primitive from "@effect/cli/Primitive"
+```ts
+import * as Primitive from "@effect/cli/Primitive"
 // Can be accessed like this
 Primitive.getChoices
-undefined
+```
 
 **Signature**
 

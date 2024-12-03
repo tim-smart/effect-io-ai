@@ -4,11 +4,11 @@ Check if all the keys and values in one record are also found in another record.
 
 To import and use `isSubrecordBy` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.isSubrecordBy
-undefined
+```
 
 **Signature**
 

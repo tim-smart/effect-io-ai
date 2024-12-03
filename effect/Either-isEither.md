@@ -4,11 +4,11 @@ Tests if a value is a `Either`.
 
 To import and use `isEither` from the "Either" module:
 
-ts
-import \* as Either from "effect/Either"
+```ts
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.isEither
-undefined
+```
 
 **Example**
 

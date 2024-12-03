@@ -7,8 +7,8 @@ The endpoints can be implemented later using the `HttpApiBuilder.group` api.
 
 To import and use `HttpApiGroup` from the "HttpApiGroup" module:
 
-ts
-import \* as HttpApiGroup from "@effect/platform/HttpApiGroup"
+```ts
+import * as HttpApiGroup from "@effect/platform/HttpApiGroup"
 // Can be accessed like this
 HttpApiGroup.HttpApiGroup
-undefined
+```

@@ -4,11 +4,11 @@ The empty stream.
 
 To import and use `empty` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.empty
-undefined
+```
 
 **Example**
 

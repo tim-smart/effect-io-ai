@@ -6,11 +6,11 @@ See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
 
 To import and use `toReadableStreamRuntime` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toReadableStreamRuntime
-undefined
+```
 
 **Signature**
 

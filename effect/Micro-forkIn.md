@@ -7,11 +7,11 @@ The lifetime of the handle will be attached to the provided `MicroScope`.
 
 To import and use `forkIn` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.forkIn
-undefined
+```
 
 **Signature**
 

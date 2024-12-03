@@ -4,11 +4,11 @@ Retrieves the element at a specified index from a tuple.
 
 To import and use `at` from the "Tuple" module:
 
-ts
-import \* as Tuple from "effect/Tuple"
+```ts
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.at
-undefined
+```
 
 **Example**
 

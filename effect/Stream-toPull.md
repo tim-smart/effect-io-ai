@@ -7,11 +7,11 @@ the stream's output.
 
 To import and use `toPull` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toPull
-undefined
+```
 
 **Example**
 

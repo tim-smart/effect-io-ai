@@ -5,11 +5,11 @@ one with the `Left` values and one with the `Right` values.
 
 To import and use `separate` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.separate
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Create a `Micro` effect using the current `MicroFiber`.
 
 To import and use `withMicroFiber` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.withMicroFiber
-undefined
+```
 
 **Signature**
 

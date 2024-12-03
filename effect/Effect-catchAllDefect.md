@@ -24,11 +24,11 @@ dynamically loaded plugins, controlled recovery might be needed.
 
 To import and use `catchAllDefect` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchAllDefect
-undefined
+```
 
 **Example**
 

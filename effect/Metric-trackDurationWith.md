@@ -6,11 +6,11 @@ that can convert the `Duration` to the input type of this metric.
 
 To import and use `trackDurationWith` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackDurationWith
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ Returns a tuple containing two arrays: the first one is before the match, and th
 
 To import and use `splitWhere` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.splitWhere
-undefined
+```
 
 **Example**
 

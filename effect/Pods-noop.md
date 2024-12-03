@@ -5,11 +5,11 @@ Useful for testing ShardManager or when using Sharding.local.
 
 To import and use `noop` from the "Pods" module:
 
-ts
-import \* as Pods from "@effect/cluster/Pods"
+```ts
+import * as Pods from "@effect/cluster/Pods"
 // Can be accessed like this
 Pods.noop
-undefined
+```
 
 **Signature**
 

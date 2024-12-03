@@ -4,11 +4,11 @@ Returns a new schedule that maps both the input and output.
 
 To import and use `mapBothEffect` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.mapBothEffect
-undefined
+```
 
 **Signature**
 

@@ -18,11 +18,11 @@ error.
 
 To import and use `firstSuccessOf` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.firstSuccessOf
-undefined
+```
 
 **Example**
 

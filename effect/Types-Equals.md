@@ -4,11 +4,11 @@ Determines if two types are equal.
 
 To import and use `Equals` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.Equals
-undefined
+```
 
 **Example**
 

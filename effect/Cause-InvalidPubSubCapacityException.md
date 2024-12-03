@@ -5,8 +5,8 @@ Represents a checked exception which occurs when attempting to construct a
 
 To import and use `InvalidPubSubCapacityException` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.InvalidPubSubCapacityException
-undefined
+```

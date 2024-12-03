@@ -4,11 +4,11 @@ Returns `true` if the specified `DocTree` is an `LineTree`, `false` otherwise.
 
 To import and use `isLineTree` from the "DocTree" module:
 
-ts
-import \* as DocTree from "@effect/printer/DocTree"
+```ts
+import * as DocTree from "@effect/printer/DocTree"
 // Can be accessed like this
 DocTree.isLineTree
-undefined
+```
 
 **Signature**
 

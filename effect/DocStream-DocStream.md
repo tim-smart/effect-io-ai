@@ -11,8 +11,8 @@ formats, such as plaintext or terminal output.
 
 To import and use `DocStream` from the "DocStream" module:
 
-ts
-import \* as DocStream from "@effect/printer/DocStream"
+```ts
+import * as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.DocStream
-undefined
+```

@@ -4,11 +4,11 @@ Construct a `Channel` from a `Queue`.
 
 To import and use `fromQueue` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.fromQueue
-undefined
+```
 
 **Signature**
 

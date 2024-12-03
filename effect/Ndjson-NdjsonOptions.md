@@ -5,8 +5,8 @@ delimited JSON is handled.
 
 To import and use `NdjsonOptions` from the "Ndjson" module:
 
-ts
-import \* as Ndjson from "@effect/experimental/Ndjson"
+```ts
+import * as Ndjson from "@effect/experimental/Ndjson"
 // Can be accessed like this
 Ndjson.NdjsonOptions
-undefined
+```

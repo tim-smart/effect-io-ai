@@ -6,11 +6,11 @@ Drop a max number of elements from the start of an `Iterable`, creating a new `A
 
 To import and use `drop` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.drop
-undefined
+```
 
 **Example**
 

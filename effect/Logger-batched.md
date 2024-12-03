@@ -5,11 +5,11 @@ in intervals.
 
 To import and use `batched` from the "Logger" module:
 
-ts
-import \* as Logger from "effect/Logger"
+```ts
+import * as Logger from "effect/Logger"
 // Can be accessed like this
 Logger.batched
-undefined
+```
 
 **Example**
 

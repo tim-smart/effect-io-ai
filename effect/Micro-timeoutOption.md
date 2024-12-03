@@ -8,11 +8,11 @@ If the timeout elapses, the running effect will be safely interrupted.
 
 To import and use `timeoutOption` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.timeoutOption
-undefined
+```
 
 **Signature**
 

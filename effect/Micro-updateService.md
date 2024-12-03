@@ -4,11 +4,11 @@ Update the service for the given `Context.Tag` in the environment.
 
 To import and use `updateService` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.updateService
-undefined
+```
 
 **Signature**
 

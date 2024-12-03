@@ -6,11 +6,11 @@ well as any leftover inputs, and the outputs of the specified builder.
 
 To import and use `provide` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.provide
-undefined
+```
 
 **Signature**
 

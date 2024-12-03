@@ -11,11 +11,11 @@ This is useful for serializing and deserializing errors across network boundarie
 
 To import and use `Defect` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.Defect
-undefined
+```
 
 **Signature**
 

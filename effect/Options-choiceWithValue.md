@@ -5,11 +5,11 @@ inputs. The input will be mapped to it's associated value during parsing.
 
 To import and use `choiceWithValue` from the "Options" module:
 
-ts
-import \* as Options from "@effect/cli/Options"
+```ts
+import * as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.choiceWithValue
-undefined
+```
 
 **Example**
 

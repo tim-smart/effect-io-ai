@@ -6,11 +6,11 @@ It is similar to the `andThen` api, but the success value is ignored.
 
 To import and use `tap` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.tap
-undefined
+```
 
 **Signature**
 

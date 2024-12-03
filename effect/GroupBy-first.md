@@ -4,11 +4,11 @@ Only consider the first `n` groups found in the `Stream`.
 
 To import and use `first` from the "GroupBy" module:
 
-ts
-import \* as GroupBy from "effect/GroupBy"
+```ts
+import * as GroupBy from "effect/GroupBy"
 // Can be accessed like this
 GroupBy.first
-undefined
+```
 
 **Signature**
 

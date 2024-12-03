@@ -5,11 +5,11 @@ values for `n` count as `0` spaces.
 
 To import and use `spaces` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.spaces
-undefined
+```
 
 **Example**
 

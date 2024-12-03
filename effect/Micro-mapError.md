@@ -4,11 +4,11 @@ Transform any expected errors of the given `Micro` effect.
 
 To import and use `mapError` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.mapError
-undefined
+```
 
 **Signature**
 

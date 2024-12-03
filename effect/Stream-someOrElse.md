@@ -4,11 +4,11 @@ Extracts the optional value, or returns the given 'default'.
 
 To import and use `someOrElse` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.someOrElse
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Create a sink which publishes each element to the specified `PubSub`.
 
 To import and use `fromPubSub` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.fromPubSub
-undefined
+```
 
 **Signature**
 

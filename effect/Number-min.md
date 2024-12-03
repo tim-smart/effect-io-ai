@@ -4,11 +4,11 @@ Returns the minimum between two `number`s.
 
 To import and use `min` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.min
-undefined
+```
 
 **Example**
 

@@ -7,8 +7,8 @@ type `E`.
 
 To import and use `Die` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.Die
-undefined
+```

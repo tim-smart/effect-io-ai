@@ -4,11 +4,11 @@ Partitions a record into two separate records based on the result of a predicate
 
 To import and use `partition` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.partition
-undefined
+```
 
 **Example**
 

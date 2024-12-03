@@ -5,11 +5,11 @@ knows how to diff the product of their values.
 
 To import and use `zip` from the "Differ" module:
 
-ts
-import \* as Differ from "effect/Differ"
+```ts
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.zip
-undefined
+```
 
 **Signature**
 

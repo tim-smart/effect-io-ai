@@ -8,11 +8,11 @@ attached to the channel will be added to the current scope as a finalizer.
 
 To import and use `runScoped` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.runScoped
-undefined
+```
 
 **Signature**
 

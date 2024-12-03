@@ -5,11 +5,11 @@ eventually succeeds.
 
 To import and use `eventually` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.eventually
-undefined
+```
 
 **Signature**
 

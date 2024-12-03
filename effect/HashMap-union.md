@@ -4,11 +4,11 @@ Performs a union of this `HashMap` and that `HashMap`.
 
 To import and use `union` from the "HashMap" module:
 
-ts
-import \* as HashMap from "effect/HashMap"
+```ts
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.union
-undefined
+```
 
 **Signature**
 

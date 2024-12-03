@@ -5,11 +5,11 @@ This API is useful when you want to validate that the input data passes multiple
 
 To import and use `all` from the "Brand" module:
 
-ts
-import \* as Brand from "effect/Brand"
+```ts
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.all
-undefined
+```
 
 **Example**
 

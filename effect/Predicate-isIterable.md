@@ -4,11 +4,11 @@ A guard that succeeds when the input is an `Iterable`.
 
 To import and use `isIterable` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isIterable
-undefined
+```
 
 **Example**
 

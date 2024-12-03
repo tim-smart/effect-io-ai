@@ -6,11 +6,11 @@ merging the next intervals according to the specified merge function.
 
 To import and use `unionWith` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.unionWith
-undefined
+```
 
 **Signature**
 

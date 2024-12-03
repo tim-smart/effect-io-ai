@@ -4,11 +4,11 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 
 To import and use `lessThan` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.lessThan
-undefined
+```
 
 **Example**
 

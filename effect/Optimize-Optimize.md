@@ -5,8 +5,8 @@ document nodes.
 
 To import and use `Optimize` from the "Optimize" module:
 
-ts
-import \* as Optimize from "@effect/printer/Optimize"
+```ts
+import * as Optimize from "@effect/printer/Optimize"
 // Can be accessed like this
 Optimize.Optimize
-undefined
+```

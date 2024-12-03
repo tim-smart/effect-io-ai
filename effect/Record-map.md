@@ -4,11 +4,11 @@ Maps a record into another record by applying a transformation function to each 
 
 To import and use `map` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.map
-undefined
+```
 
 **Example**
 

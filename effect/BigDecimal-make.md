@@ -4,11 +4,11 @@ Creates a `BigDecimal` from a `bigint` value and a scale.
 
 To import and use `make` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.make
-undefined
+```
 
 **Signature**
 

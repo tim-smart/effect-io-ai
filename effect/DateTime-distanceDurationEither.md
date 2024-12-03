@@ -10,11 +10,11 @@ If the `other` DateTime is after `self`, the result will be a positive
 
 To import and use `distanceDurationEither` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.distanceDurationEither
-undefined
+```
 
 **Example**
 

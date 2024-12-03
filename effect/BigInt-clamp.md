@@ -8,11 +8,11 @@ Restricts the given `bigint` to be within the range specified by the `minimum` a
 
 To import and use `clamp` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.clamp
-undefined
+```
 
 **Example**
 

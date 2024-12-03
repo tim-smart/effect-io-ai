@@ -6,11 +6,11 @@ the following elements through that.
 
 To import and use `branchAfter` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.branchAfter
-undefined
+```
 
 **Signature**
 

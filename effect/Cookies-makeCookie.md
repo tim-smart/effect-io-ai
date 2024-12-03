@@ -4,11 +4,11 @@ Create a new cookie
 
 To import and use `makeCookie` from the "Cookies" module:
 
-ts
-import \* as Cookies from "@effect/platform/Cookies"
+```ts
+import * as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.makeCookie
-undefined
+```
 
 **Signature**
 

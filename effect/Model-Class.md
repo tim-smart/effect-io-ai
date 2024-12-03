@@ -6,11 +6,11 @@ It supports common variants for database and JSON apis.
 
 To import and use `Class` from the "Model" module:
 
-ts
-import \* as Model from "@effect/sql/Model"
+```ts
+import * as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.Class
-undefined
+```
 
 **Example**
 

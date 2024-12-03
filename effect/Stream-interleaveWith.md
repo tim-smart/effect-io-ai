@@ -10,11 +10,11 @@ ignored.
 
 To import and use `interleaveWith` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.interleaveWith
-undefined
+```
 
 **Example**
 

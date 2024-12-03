@@ -6,11 +6,11 @@ terminal value of that channel.
 
 To import and use `zipRight` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.zipRight
-undefined
+```
 
 **Signature**
 

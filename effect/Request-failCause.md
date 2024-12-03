@@ -4,11 +4,11 @@ Complete a `Request` with the specified cause.
 
 To import and use `failCause` from the "Request" module:
 
-ts
-import \* as Request from "effect/Request"
+```ts
+import * as Request from "effect/Request"
 // Can be accessed like this
 Request.failCause
-undefined
+```
 
 **Signature**
 

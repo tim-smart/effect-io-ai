@@ -4,11 +4,11 @@ Take the maximum of two values. If they are considered equal, the first argument
 
 To import and use `max` from the "Order" module:
 
-ts
-import \* as Order from "effect/Order"
+```ts
+import * as Order from "effect/Order"
 // Can be accessed like this
 Order.max
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Constructs a new primitive config.
 
 To import and use `primitive` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.primitive
-undefined
+```
 
 **Signature**
 

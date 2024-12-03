@@ -4,11 +4,11 @@ Format a `TimeZone` as a string.
 
 To import and use `zoneToString` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.zoneToString
-undefined
+```
 
 **Example**
 

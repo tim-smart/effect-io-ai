@@ -8,11 +8,11 @@ If the `length` is not specified, the `Iterable` will be infinite.
 
 To import and use `makeBy` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.makeBy
-undefined
+```
 
 **Example**
 

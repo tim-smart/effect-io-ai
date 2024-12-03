@@ -4,11 +4,11 @@ The moral equivalent of `if (p) exp`.
 
 To import and use `when` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.when
-undefined
+```
 
 **Signature**
 

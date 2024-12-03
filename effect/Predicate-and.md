@@ -4,11 +4,11 @@ Combines two predicates into a new predicate that returns `true` if both of the 
 
 To import and use `and` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.and
-undefined
+```
 
 **Example**
 

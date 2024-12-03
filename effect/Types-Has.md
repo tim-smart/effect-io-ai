@@ -4,11 +4,11 @@ Determines if a record contains any of the given keys.
 
 To import and use `Has` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.Has
-undefined
+```
 
 **Example**
 

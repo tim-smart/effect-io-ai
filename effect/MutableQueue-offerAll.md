@@ -6,11 +6,11 @@ Returns a `Chunk` of the values that were **not** able to be enqueued.
 
 To import and use `offerAll` from the "MutableQueue" module:
 
-ts
-import \* as MutableQueue from "effect/MutableQueue"
+```ts
+import * as MutableQueue from "effect/MutableQueue"
 // Can be accessed like this
 MutableQueue.offerAll
-undefined
+```
 
 **Signature**
 

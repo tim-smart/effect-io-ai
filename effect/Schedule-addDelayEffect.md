@@ -5,11 +5,11 @@ every interval defined by this schedule.
 
 To import and use `addDelayEffect` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.addDelayEffect
-undefined
+```
 
 **Signature**
 

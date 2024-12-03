@@ -7,11 +7,11 @@ tree.
 
 To import and use `atReversed` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.atReversed
-undefined
+```
 
 **Signature**
 

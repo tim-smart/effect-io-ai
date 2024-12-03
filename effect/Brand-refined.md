@@ -8,11 +8,11 @@ see {@link nominal}.
 
 To import and use `refined` from the "Brand" module:
 
-ts
-import \* as Brand from "effect/Brand"
+```ts
+import * as Brand from "effect/Brand"
 // Can be accessed like this
 Brand.refined
-undefined
+```
 
 **Example**
 

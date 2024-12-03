@@ -5,11 +5,11 @@ fails the mailbox.
 
 To import and use `into` from the "Mailbox" module:
 
-ts
-import \* as Mailbox from "effect/Mailbox"
+```ts
+import * as Mailbox from "effect/Mailbox"
 // Can be accessed like this
 Mailbox.into
-undefined
+```
 
 **Signature**
 

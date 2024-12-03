@@ -4,11 +4,11 @@ Remove the entry for the specified key in the `Trie`.
 
 To import and use `remove` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.remove
-undefined
+```
 
 **Example**
 

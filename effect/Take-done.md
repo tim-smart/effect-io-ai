@@ -4,11 +4,11 @@ Transforms a `Take<A, E>` to an `Effect<A, E>`.
 
 To import and use `done` from the "Take" module:
 
-ts
-import \* as Take from "effect/Take"
+```ts
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.done
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Provide a `MicroScope` to an effect.
 
 To import and use `provideScope` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.provideScope
-undefined
+```
 
 **Signature**
 

@@ -6,11 +6,11 @@ Can optionally provide a custom argument name (defaults to `"choice"`).
 
 To import and use `choice` from the "Args" module:
 
-ts
-import \* as Args from "@effect/cli/Args"
+```ts
+import * as Args from "@effect/cli/Args"
 // Can be accessed like this
 Args.choice
-undefined
+```
 
 **Signature**
 

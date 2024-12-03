@@ -5,11 +5,11 @@ and initial state. `f` must preserve chunking-invariance.
 
 To import and use `foldLeftChunksEffect` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldLeftChunksEffect
-undefined
+```
 
 **Signature**
 

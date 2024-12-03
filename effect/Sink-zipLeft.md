@@ -4,11 +4,11 @@ Like `Sink.zip` but keeps only the result from this sink.
 
 To import and use `zipLeft` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.zipLeft
-undefined
+```
 
 **Signature**
 

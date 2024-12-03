@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isMergeStrategy` from the "MergeStrategy" module:
 
-ts
-import \* as MergeStrategy from "effect/MergeStrategy"
+```ts
+import * as MergeStrategy from "effect/MergeStrategy"
 // Can be accessed like this
 MergeStrategy.isMergeStrategy
-undefined
+```
 
 **Signature**
 

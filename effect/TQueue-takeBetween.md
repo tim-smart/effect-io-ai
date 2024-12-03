@@ -6,11 +6,11 @@ retries until at least the minimum number of elements have been collected.
 
 To import and use `takeBetween` from the "TQueue" module:
 
-ts
-import \* as TQueue from "effect/TQueue"
+```ts
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.takeBetween
-undefined
+```
 
 **Signature**
 

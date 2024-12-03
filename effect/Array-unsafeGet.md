@@ -4,11 +4,11 @@ Gets an element unsafely, will throw on out of bounds.
 
 To import and use `unsafeGet` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.unsafeGet
-undefined
+```
 
 **Signature**
 

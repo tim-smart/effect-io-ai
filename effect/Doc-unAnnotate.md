@@ -8,11 +8,11 @@ layout using `unAnnotateS`.
 
 To import and use `unAnnotate` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.unAnnotate
-undefined
+```
 
 **Signature**
 

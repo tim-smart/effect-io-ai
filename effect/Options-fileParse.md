@@ -4,11 +4,11 @@ Creates a parameter expecting path to a file and parse its contents.
 
 To import and use `fileParse` from the "Options" module:
 
-ts
-import \* as Options from "@effect/cli/Options"
+```ts
+import * as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.fileParse
-undefined
+```
 
 **Signature**
 

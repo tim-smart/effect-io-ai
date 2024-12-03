@@ -7,11 +7,11 @@ Any upstream failures will cause the returned stream to fail.
 
 To import and use `race` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.race
-undefined
+```
 
 **Example**
 

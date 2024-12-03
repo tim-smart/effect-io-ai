@@ -4,11 +4,11 @@ Parses a cron expression into a `Cron` instance.
 
 To import and use `parse` from the "Cron" module:
 
-ts
-import \* as Cron from "effect/Cron"
+```ts
+import * as Cron from "effect/Cron"
 // Can be accessed like this
 Cron.parse
-undefined
+```
 
 **Example**
 

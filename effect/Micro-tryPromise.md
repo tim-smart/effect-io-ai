@@ -5,11 +5,11 @@ converted into a specific error type.
 
 To import and use `tryPromise` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.tryPromise
-undefined
+```
 
 **Example**
 

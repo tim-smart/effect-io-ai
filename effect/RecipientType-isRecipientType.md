@@ -4,11 +4,11 @@ Ensure that given value is a RecipientType
 
 To import and use `isRecipientType` from the "RecipientType" module:
 
-ts
-import \* as RecipientType from "@effect/cluster/RecipientType"
+```ts
+import * as RecipientType from "@effect/cluster/RecipientType"
 // Can be accessed like this
 RecipientType.isRecipientType
-undefined
+```
 
 **Signature**
 

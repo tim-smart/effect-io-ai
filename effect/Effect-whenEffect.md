@@ -15,11 +15,11 @@ representing that the effect was skipped.
 
 To import and use `whenEffect` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.whenEffect
-undefined
+```
 
 **Example**
 

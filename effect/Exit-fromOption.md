@@ -4,11 +4,11 @@ Converts an `Option<A>` into an `Exit<void, A>`.
 
 To import and use `fromOption` from the "Exit" module:
 
-ts
-import \* as Exit from "effect/Exit"
+```ts
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.fromOption
-undefined
+```
 
 **Signature**
 

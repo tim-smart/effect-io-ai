@@ -9,8 +9,8 @@ returns `None`, the repetition will stop.
 
 To import and use `MicroSchedule` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.MicroSchedule
-undefined
+```

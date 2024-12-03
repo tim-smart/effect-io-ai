@@ -4,11 +4,11 @@ Creates a new `MutableList` from an iterable collection of values.
 
 To import and use `fromIterable` from the "MutableList" module:
 
-ts
-import \* as MutableList from "effect/MutableList"
+```ts
+import * as MutableList from "effect/MutableList"
 // Can be accessed like this
 MutableList.fromIterable
-undefined
+```
 
 **Signature**
 

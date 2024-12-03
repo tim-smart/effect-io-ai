@@ -18,11 +18,11 @@ crash in the program, which can be further managed or logged using tools like
 
 To import and use `sync` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.sync
-undefined
+```
 
 **Example**
 

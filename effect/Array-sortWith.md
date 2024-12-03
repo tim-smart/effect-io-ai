@@ -6,11 +6,11 @@ order defines how those values should be sorted.
 
 To import and use `sortWith` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.sortWith
-undefined
+```
 
 **Example**
 

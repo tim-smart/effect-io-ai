@@ -8,11 +8,11 @@ useful for platforms that have no file system.
 
 To import and use `layerContext` from the "BunHttpServer" module:
 
-ts
-import \* as BunHttpServer from "@effect/platform-bun/BunHttpServer"
+```ts
+import * as BunHttpServer from "@effect/platform-bun/BunHttpServer"
 // Can be accessed like this
 BunHttpServer.layerContext
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ Scheduler if not provided
 
 To import and use `runFork` from the "Runtime" module:
 
-ts
-import \* as Runtime from "effect/Runtime"
+```ts
+import * as Runtime from "effect/Runtime"
 // Can be accessed like this
 Runtime.runFork
-undefined
+```
 
 **Signature**
 

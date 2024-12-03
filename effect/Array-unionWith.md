@@ -4,11 +4,11 @@ Calculates the union of two arrays using the provided equivalence relation.
 
 To import and use `unionWith` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.unionWith
-undefined
+```
 
 **Example**
 

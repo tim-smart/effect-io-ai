@@ -6,11 +6,11 @@ value of the option.
 
 To import and use `fromOption` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.fromOption
-undefined
+```
 
 **Signature**
 

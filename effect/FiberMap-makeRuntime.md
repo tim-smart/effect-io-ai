@@ -4,11 +4,11 @@ Create an Effect run function that is backed by a FiberMap.
 
 To import and use `makeRuntime` from the "FiberMap" module:
 
-ts
-import \* as FiberMap from "effect/FiberMap"
+```ts
+import * as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.makeRuntime
-undefined
+```
 
 **Signature**
 

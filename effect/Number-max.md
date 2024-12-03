@@ -4,11 +4,11 @@ Returns the maximum between two `number`s.
 
 To import and use `max` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.max
-undefined
+```
 
 **Example**
 

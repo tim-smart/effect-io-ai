@@ -10,8 +10,8 @@ and parallel composition of errors in a fully lossless fashion.
 
 To import and use `Cause` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.Cause
-undefined
+```

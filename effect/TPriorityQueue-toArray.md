@@ -4,11 +4,11 @@ Collects all values into an array.
 
 To import and use `toArray` from the "TPriorityQueue" module:
 
-ts
-import \* as TPriorityQueue from "effect/TPriorityQueue"
+```ts
+import * as TPriorityQueue from "effect/TPriorityQueue"
 // Can be accessed like this
 TPriorityQueue.toArray
-undefined
+```
 
 **Signature**
 

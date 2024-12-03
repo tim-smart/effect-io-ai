@@ -7,11 +7,11 @@ replace it with a new constant value.
 
 To import and use `as` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.as
-undefined
+```
 
 **Example**
 

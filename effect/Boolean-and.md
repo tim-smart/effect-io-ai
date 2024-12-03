@@ -4,11 +4,11 @@ Combines two boolean using AND: `self && that`.
 
 To import and use `and` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.and
-undefined
+```
 
 **Example**
 

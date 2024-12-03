@@ -4,11 +4,11 @@ Deduplicates adjacent elements that are identical using the provided `isEquivale
 
 To import and use `dedupeAdjacentWith` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.dedupeAdjacentWith
-undefined
+```
 
 **Example**
 

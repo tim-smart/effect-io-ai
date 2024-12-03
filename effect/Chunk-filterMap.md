@@ -4,11 +4,11 @@ Returns a filtered and mapped subset of the elements.
 
 To import and use `filterMap` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.filterMap
-undefined
+```
 
 **Signature**
 

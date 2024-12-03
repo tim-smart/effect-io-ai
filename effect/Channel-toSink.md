@@ -4,11 +4,11 @@ Converts this channel to a `Sink`.
 
 To import and use `toSink` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.toSink
-undefined
+```
 
 **Signature**
 

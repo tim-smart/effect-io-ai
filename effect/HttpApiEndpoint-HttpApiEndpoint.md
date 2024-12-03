@@ -5,8 +5,8 @@ the underlying `HttpRouter`.
 
 To import and use `HttpApiEndpoint` from the "HttpApiEndpoint" module:
 
-ts
-import \* as HttpApiEndpoint from "@effect/platform/HttpApiEndpoint"
+```ts
+import * as HttpApiEndpoint from "@effect/platform/HttpApiEndpoint"
 // Can be accessed like this
 HttpApiEndpoint.HttpApiEndpoint
-undefined
+```

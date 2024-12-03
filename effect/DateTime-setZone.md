@@ -4,11 +4,11 @@ Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
 
 To import and use `setZone` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.setZone
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Folds an `UpstreamPullStrategy<A>` into a value of type `Z`.
 
 To import and use `match` from the "UpstreamPullStrategy" module:
 
-ts
-import \* as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
+```ts
+import * as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
 // Can be accessed like this
 UpstreamPullStrategy.match
-undefined
+```
 
 **Signature**
 

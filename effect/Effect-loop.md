@@ -27,11 +27,11 @@ discarded, and the final result will be `void`.
 
 To import and use `loop` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.loop
-undefined
+```
 
 **Example**
 

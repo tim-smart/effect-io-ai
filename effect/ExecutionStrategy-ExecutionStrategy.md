@@ -8,8 +8,8 @@ There are 3 possible execution strategies: `Sequential`, `Parallel`,
 
 To import and use `ExecutionStrategy` from the "ExecutionStrategy" module:
 
-ts
-import \* as ExecutionStrategy from "effect/ExecutionStrategy"
+```ts
+import * as ExecutionStrategy from "effect/ExecutionStrategy"
 // Can be accessed like this
 ExecutionStrategy.ExecutionStrategy
-undefined
+```

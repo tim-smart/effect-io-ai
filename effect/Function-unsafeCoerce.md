@@ -4,11 +4,11 @@ Casts the result to the specified type.
 
 To import and use `unsafeCoerce` from the "Function" module:
 
-ts
-import \* as Function from "effect/Function"
+```ts
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.unsafeCoerce
-undefined
+```
 
 **Example**
 

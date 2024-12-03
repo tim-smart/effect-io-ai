@@ -6,11 +6,11 @@ This schema filters out non-finite numeric values, allowing only finite numbers 
 
 To import and use `finite` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.finite
-undefined
+```
 
 **Signature**
 

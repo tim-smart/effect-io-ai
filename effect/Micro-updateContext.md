@@ -4,11 +4,11 @@ Update the Context with the given mapping function.
 
 To import and use `updateContext` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.updateContext
-undefined
+```
 
 **Signature**
 

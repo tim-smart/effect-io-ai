@@ -4,11 +4,11 @@
 
 To import and use `Semigroup` from the "Ordering" module:
 
-ts
-import \* as Ordering from "@effect/typeclass/data/Ordering"
+```ts
+import * as Ordering from "@effect/typeclass/data/Ordering"
 // Can be accessed like this
 Ordering.Semigroup
-undefined
+```
 
 **Example**
 

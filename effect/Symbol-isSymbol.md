@@ -4,11 +4,11 @@ Tests if a value is a `symbol`.
 
 To import and use `isSymbol` from the "Symbol" module:
 
-ts
-import \* as Symbol from "effect/Symbol"
+```ts
+import * as Symbol from "effect/Symbol"
 // Can be accessed like this
 Symbol.isSymbol
-undefined
+```
 
 **Example**
 

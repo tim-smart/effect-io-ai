@@ -4,11 +4,11 @@ Retrieve a fiber from the FiberMap.
 
 To import and use `unsafeGet` from the "FiberMap" module:
 
-ts
-import \* as FiberMap from "effect/FiberMap"
+```ts
+import * as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.unsafeGet
-undefined
+```
 
 **Signature**
 

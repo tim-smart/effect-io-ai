@@ -4,11 +4,11 @@ Apply a function to the head, creating a new `NonEmptyReadonlyArray`.
 
 To import and use `modifyNonEmptyHead` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.modifyNonEmptyHead
-undefined
+```
 
 **Example**
 

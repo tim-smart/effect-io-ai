@@ -4,11 +4,11 @@ Returns an effect that effectfully "peeks" at the success of this effect.
 
 To import and use `tap` from the "Chainable" module:
 
-ts
-import \* as Chainable from "@effect/typeclass/Chainable"
+```ts
+import * as Chainable from "@effect/typeclass/Chainable"
 // Can be accessed like this
 Chainable.tap
-undefined
+```
 
 **Signature**
 

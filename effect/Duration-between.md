@@ -4,11 +4,11 @@ Checks if a `Duration` is between a `minimum` and `maximum` value.
 
 To import and use `between` from the "Duration" module:
 
-ts
-import \* as Duration from "effect/Duration"
+```ts
+import * as Duration from "effect/Duration"
 // Can be accessed like this
 Duration.between
-undefined
+```
 
 **Signature**
 

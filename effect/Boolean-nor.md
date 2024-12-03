@@ -4,11 +4,11 @@ Combines two booleans using NOR: `!(self || that)`.
 
 To import and use `nor` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.nor
-undefined
+```
 
 **Example**
 

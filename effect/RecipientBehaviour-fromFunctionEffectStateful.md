@@ -6,11 +6,11 @@ Everything here is just stored in memory, so eventual persistence of the state i
 
 To import and use `fromFunctionEffectStateful` from the "RecipientBehaviour" module:
 
-ts
-import \* as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
+```ts
+import * as RecipientBehaviour from "@effect/cluster/RecipientBehaviour"
 // Can be accessed like this
 RecipientBehaviour.fromFunctionEffectStateful
-undefined
+```
 
 **Signature**
 

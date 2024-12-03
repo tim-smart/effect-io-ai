@@ -7,11 +7,11 @@ single configuration value.
 
 To import and use `nested` from the "ConfigProvider" module:
 
-ts
-import \* as ConfigProvider from "effect/ConfigProvider"
+```ts
+import * as ConfigProvider from "effect/ConfigProvider"
 // Can be accessed like this
 ConfigProvider.nested
-undefined
+```
 
 **Signature**
 

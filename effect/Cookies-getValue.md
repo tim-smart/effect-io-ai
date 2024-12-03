@@ -4,11 +4,11 @@ Get a cookie from a Cookies object
 
 To import and use `getValue` from the "Cookies" module:
 
-ts
-import \* as Cookies from "@effect/platform/Cookies"
+```ts
+import * as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.getValue
-undefined
+```
 
 **Signature**
 

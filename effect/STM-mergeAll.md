@@ -4,11 +4,11 @@ Merges an `Iterable<STM>` to a single `STM`, working sequentially.
 
 To import and use `mergeAll` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.mergeAll
-undefined
+```
 
 **Signature**
 

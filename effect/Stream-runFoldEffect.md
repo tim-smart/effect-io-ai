@@ -4,11 +4,11 @@ Executes an effectful fold over the stream of values.
 
 To import and use `runFoldEffect` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runFoldEffect
-undefined
+```
 
 **Signature**
 

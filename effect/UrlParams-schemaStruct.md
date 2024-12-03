@@ -4,11 +4,11 @@ Extract schema from all key-value pairs in the given `UrlParams`.
 
 To import and use `schemaStruct` from the "UrlParams" module:
 
-ts
-import \* as UrlParams from "@effect/platform/UrlParams"
+```ts
+import * as UrlParams from "@effect/platform/UrlParams"
 // Can be accessed like this
 UrlParams.schemaStruct
-undefined
+```
 
 **Example**
 

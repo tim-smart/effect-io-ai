@@ -5,11 +5,11 @@ If a fiber already exists in the FiberHandle, it will be interrupted unless `opt
 
 To import and use `set` from the "FiberHandle" module:
 
-ts
-import \* as FiberHandle from "effect/FiberHandle"
+```ts
+import * as FiberHandle from "effect/FiberHandle"
 // Can be accessed like this
 FiberHandle.set
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Effectfully filter the input of this sink using the specified predicate.
 
 To import and use `filterInputEffect` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.filterInputEffect
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Replicates the given effect `n` times.
 
 To import and use `replicate` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.replicate
-undefined
+```
 
 **Signature**
 

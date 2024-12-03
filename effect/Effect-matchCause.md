@@ -10,11 +10,11 @@ failure type based on the cause.
 
 To import and use `matchCause` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.matchCause
-undefined
+```
 
 **Signature**
 

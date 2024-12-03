@@ -4,11 +4,11 @@ Matches the elements of an array, applying functions to cases of empty and non-e
 
 To import and use `match` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.match
-undefined
+```
 
 **Example**
 

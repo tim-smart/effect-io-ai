@@ -8,11 +8,11 @@ For best performance use capacities that are powers of two.
 
 To import and use `bounded` from the "PubSub" module:
 
-ts
-import \* as PubSub from "effect/PubSub"
+```ts
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.bounded
-undefined
+```
 
 **Signature**
 

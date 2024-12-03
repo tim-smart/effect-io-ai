@@ -6,11 +6,11 @@ same elements as this stream. The driver stream will only ever advance the
 
 To import and use `broadcastDynamic` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.broadcastDynamic
-undefined
+```
 
 **Signature**
 

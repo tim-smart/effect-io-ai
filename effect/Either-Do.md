@@ -11,11 +11,11 @@ Here's how the do simulation works:
 
 To import and use `Do` from the "Either" module:
 
-ts
-import \* as Either from "effect/Either"
+```ts
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.Do
-undefined
+```
 
 **Example**
 

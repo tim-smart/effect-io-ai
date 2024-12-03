@@ -13,11 +13,11 @@ at the first error.
 
 To import and use `validate` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.validate
-undefined
+```
 
 **Example**
 

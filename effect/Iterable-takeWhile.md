@@ -4,11 +4,11 @@ Calculate the longest initial Iterable for which all element satisfy the specifi
 
 To import and use `takeWhile` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.takeWhile
-undefined
+```
 
 **Signature**
 

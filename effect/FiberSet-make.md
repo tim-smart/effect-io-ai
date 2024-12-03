@@ -8,11 +8,11 @@ be automatically removed from the FiberSet when they complete.
 
 To import and use `make` from the "FiberSet" module:
 
-ts
-import \* as FiberSet from "effect/FiberSet"
+```ts
+import * as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.make
-undefined
+```
 
 **Example**
 

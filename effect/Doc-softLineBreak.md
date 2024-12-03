@@ -6,11 +6,11 @@ The `softLineBreak` document is similar to `softLine`, but behaves like
 
 To import and use `softLineBreak` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.softLineBreak
-undefined
+```
 
 **Example**
 

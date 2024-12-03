@@ -5,11 +5,11 @@ effectful value, otherwise returns an empty stream.
 
 To import and use `whenCaseEffect` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.whenCaseEffect
-undefined
+```
 
 **Signature**
 

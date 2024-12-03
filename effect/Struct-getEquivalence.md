@@ -7,11 +7,11 @@ Alias of {@link Equivalence.struct}.
 
 To import and use `getEquivalence` from the "Struct" module:
 
-ts
-import \* as Struct from "effect/Struct"
+```ts
+import * as Struct from "effect/Struct"
 // Can be accessed like this
 Struct.getEquivalence
-undefined
+```
 
 **Example**
 

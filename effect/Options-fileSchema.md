@@ -5,11 +5,11 @@ it with a Schema.
 
 To import and use `fileSchema` from the "Options" module:
 
-ts
-import \* as Options from "@effect/cli/Options"
+```ts
+import * as Options from "@effect/cli/Options"
 // Can be accessed like this
 Options.fileSchema
-undefined
+```
 
 **Signature**
 

@@ -8,11 +8,11 @@ See `sandbox`, `catchAllCause` for other functions for dealing with defects.
 
 To import and use `mapErrorCause` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.mapErrorCause
-undefined
+```
 
 **Signature**
 

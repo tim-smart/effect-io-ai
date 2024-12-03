@@ -4,11 +4,11 @@ Converts a `Either` to an `Option` discarding the value.
 
 To import and use `getLeft` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getLeft
-undefined
+```
 
 **Example**
 

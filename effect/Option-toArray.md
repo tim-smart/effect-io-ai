@@ -6,11 +6,11 @@ If the input is `Some`, the value is wrapped in an array.
 
 To import and use `toArray` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.toArray
-undefined
+```
 
 **Example**
 

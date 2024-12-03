@@ -4,11 +4,11 @@ Bind the success value of this `Micro` effect to the provided name.
 
 To import and use `bindTo` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.bindTo
-undefined
+```
 
 **Signature**
 

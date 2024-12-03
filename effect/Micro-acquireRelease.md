@@ -5,11 +5,11 @@ executed when the `MicroScope` is closed.
 
 To import and use `acquireRelease` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.acquireRelease
-undefined
+```
 
 **Signature**
 

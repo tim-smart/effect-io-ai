@@ -15,11 +15,11 @@ field is used to identify and match errors.
 
 To import and use `catchTag` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.catchTag
-undefined
+```
 
 **Example**
 

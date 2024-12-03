@@ -8,11 +8,11 @@ available for selection.
 
 To import and use `DateTimeUpdateFromNumber` from the "Model" module:
 
-ts
-import \* as Model from "@effect/sql/Model"
+```ts
+import * as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.DateTimeUpdateFromNumber
-undefined
+```
 
 **Signature**
 

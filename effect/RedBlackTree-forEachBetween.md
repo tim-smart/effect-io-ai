@@ -5,11 +5,11 @@ than or equal to min.
 
 To import and use `forEachBetween` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.forEachBetween
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Applies a function to each element in a list and returns a new list containing t
 
 To import and use `flatMap` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.flatMap
-undefined
+```
 
 **Signature**
 

@@ -8,11 +8,11 @@ interval size`.
 
 To import and use `jitteredWith` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.jitteredWith
-undefined
+```
 
 **Signature**
 

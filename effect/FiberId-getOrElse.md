@@ -4,11 +4,11 @@ Returns this `FiberId` if it is not `None`, otherwise returns that `FiberId`.
 
 To import and use `getOrElse` from the "FiberId" module:
 
-ts
-import \* as FiberId from "effect/FiberId"
+```ts
+import * as FiberId from "effect/FiberId"
 // Can be accessed like this
 FiberId.getOrElse
-undefined
+```
 
 **Signature**
 

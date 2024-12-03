@@ -4,11 +4,11 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 
 To import and use `lessThan` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.lessThan
-undefined
+```
 
 **Example**
 

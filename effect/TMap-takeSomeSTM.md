@@ -4,11 +4,11 @@ Takes all matching values, or retries until there is at least one.
 
 To import and use `takeSomeSTM` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.takeSomeSTM
-undefined
+```
 
 **Signature**
 

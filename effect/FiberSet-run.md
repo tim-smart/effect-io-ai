@@ -5,11 +5,11 @@ When the fiber completes, it will be removed from the FiberSet.
 
 To import and use `run` from the "FiberSet" module:
 
-ts
-import \* as FiberSet from "effect/FiberSet"
+```ts
+import * as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.run
-undefined
+```
 
 **Signature**
 

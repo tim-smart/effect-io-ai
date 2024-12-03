@@ -6,11 +6,11 @@ store the result.
 
 To import and use `merge` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.merge
-undefined
+```
 
 **Signature**
 

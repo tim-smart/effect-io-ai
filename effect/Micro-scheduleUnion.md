@@ -5,11 +5,11 @@ recur, using the minimum of the two durations between recurrences.
 
 To import and use `scheduleUnion` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.scheduleUnion
-undefined
+```
 
 **Signature**
 

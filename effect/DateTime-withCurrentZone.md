@@ -4,11 +4,11 @@ Provide the `CurrentTimeZone` to an effect.
 
 To import and use `withCurrentZone` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.withCurrentZone
-undefined
+```
 
 **Example**
 

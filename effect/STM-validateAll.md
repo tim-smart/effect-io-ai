@@ -8,11 +8,11 @@ will be lost. To retain all information please use `STM.partition`.
 
 To import and use `validateAll` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.validateAll
-undefined
+```
 
 **Signature**
 

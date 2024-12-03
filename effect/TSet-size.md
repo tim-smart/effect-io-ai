@@ -4,11 +4,11 @@ Returns the set's cardinality.
 
 To import and use `size` from the "TSet" module:
 
-ts
-import \* as TSet from "effect/TSet"
+```ts
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.size
-undefined
+```
 
 **Signature**
 

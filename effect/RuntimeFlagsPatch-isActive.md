@@ -5,11 +5,11 @@ Returns `true` if the `RuntimeFlagsPatch` describes the specified
 
 To import and use `isActive` from the "RuntimeFlagsPatch" module:
 
-ts
-import \* as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
+```ts
+import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
 // Can be accessed like this
 RuntimeFlagsPatch.isActive
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ specified index does not exist.
 
 To import and use `getAt` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.getAt
-undefined
+```
 
 **Signature**
 

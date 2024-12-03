@@ -5,11 +5,11 @@ order can be controlled.
 
 To import and use `runForEachScoped` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runForEachScoped
-undefined
+```
 
 **Signature**
 

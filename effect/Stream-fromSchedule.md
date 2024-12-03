@@ -6,11 +6,11 @@ schedule, continuing for as long as the schedule continues.
 
 To import and use `fromSchedule` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromSchedule
-undefined
+```
 
 **Example**
 

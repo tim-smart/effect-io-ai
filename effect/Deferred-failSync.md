@@ -5,11 +5,11 @@ all fibers waiting on the value of the `Deferred`.
 
 To import and use `failSync` from the "Deferred" module:
 
-ts
-import \* as Deferred from "effect/Deferred"
+```ts
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.failSync
-undefined
+```
 
 **Signature**
 

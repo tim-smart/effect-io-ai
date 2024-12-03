@@ -5,11 +5,11 @@ the `Fiber` running an `Effect` workflow was terminated due to interruption.
 
 To import and use `interrupt` from the "Exit" module:
 
-ts
-import \* as Exit from "effect/Exit"
+```ts
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.interrupt
-undefined
+```
 
 **Signature**
 

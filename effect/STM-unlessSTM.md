@@ -4,11 +4,11 @@ The moral equivalent of `if (!p) exp` when `p` has side-effects
 
 To import and use `unlessSTM` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.unlessSTM
-undefined
+```
 
 **Signature**
 

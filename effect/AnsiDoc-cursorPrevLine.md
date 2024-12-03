@@ -5,11 +5,11 @@ Moves cursor to beginning of the line the specified number of rows up
 
 To import and use `cursorPrevLine` from the "AnsiDoc" module:
 
-ts
-import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+```ts
+import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorPrevLine
-undefined
+```
 
 **Signature**
 

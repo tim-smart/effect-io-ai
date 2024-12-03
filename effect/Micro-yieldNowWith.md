@@ -5,11 +5,11 @@ scheduler tick.
 
 To import and use `yieldNowWith` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.yieldNowWith
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ Accumulates incoming elements into a chunk as long as they verify predicate
 
 To import and use `collectAllWhile` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.collectAllWhile
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Returns the maximum between two `BigDecimal`s.
 
 To import and use `max` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.max
-undefined
+```
 
 **Example**
 

@@ -7,11 +7,11 @@ Converts an optional property to a required one through a transformation `Type -
 
 To import and use `requiredToOptional` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.requiredToOptional
-undefined
+```
 
 **Signature**
 

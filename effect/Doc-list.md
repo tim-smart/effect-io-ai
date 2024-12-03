@@ -5,11 +5,11 @@ and braces as the enclosure for a collection of documents.
 
 To import and use `list` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.list
-undefined
+```
 
 **Example**
 

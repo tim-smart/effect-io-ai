@@ -4,11 +4,11 @@ Replaces a value in the record with the new value passed as parameter.
 
 To import and use `replaceOption` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.replaceOption
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Wraps the channel with a new span for tracing.
 
 To import and use `withSpan` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.withSpan
-undefined
+```
 
 **Signature**
 

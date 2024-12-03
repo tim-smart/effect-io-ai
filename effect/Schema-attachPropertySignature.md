@@ -6,11 +6,11 @@ but rather maps to another schema, for example when you want to add a discrimina
 
 To import and use `attachPropertySignature` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.attachPropertySignature
-undefined
+```
 
 **Example**
 

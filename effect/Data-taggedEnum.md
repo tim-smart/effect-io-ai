@@ -7,11 +7,11 @@ the constructor.
 
 To import and use `taggedEnum` from the "Data" module:
 
-ts
-import \* as Data from "effect/Data"
+```ts
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.taggedEnum
-undefined
+```
 
 **Example**
 

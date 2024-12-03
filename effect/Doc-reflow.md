@@ -7,11 +7,11 @@ be broken into multiple lines.
 
 To import and use `reflow` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.reflow
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Create a non empty `Chunk` containing a range of integers, including both endpoi
 
 To import and use `range` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.range
-undefined
+```
 
 **Signature**
 

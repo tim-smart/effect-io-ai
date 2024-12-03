@@ -7,11 +7,11 @@ followed by any number (including zero) of additional elements of the same type 
 
 To import and use `TupleOfAtLeast` from the "Types" module:
 
-ts
-import \* as Types from "effect/Types"
+```ts
+import * as Types from "effect/Types"
 // Can be accessed like this
 Types.TupleOfAtLeast
-undefined
+```
 
 **Example**
 

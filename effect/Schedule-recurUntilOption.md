@@ -5,11 +5,11 @@ partial function and then map that value with given function.
 
 To import and use `recurUntilOption` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.recurUntilOption
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Builds a `NonEmptyArray` from an non-empty collection of elements.
 
 To import and use `make` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.make
-undefined
+```
 
 **Example**
 

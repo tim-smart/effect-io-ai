@@ -4,11 +4,11 @@ Create an `Equivalence` for records using the provided `Equivalence` for values.
 
 To import and use `getEquivalence` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.getEquivalence
-undefined
+```
 
 **Signature**
 

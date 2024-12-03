@@ -4,11 +4,11 @@ Schedules the output of the stream using the provided `schedule`.
 
 To import and use `schedule` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.schedule
-undefined
+```
 
 **Signature**
 

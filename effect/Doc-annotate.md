@@ -8,11 +8,11 @@ and is not relevant for basic pretty printing.
 
 To import and use `annotate` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.annotate
-undefined
+```
 
 **Signature**
 

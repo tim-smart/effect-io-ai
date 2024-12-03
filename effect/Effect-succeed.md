@@ -9,11 +9,11 @@ specific value without any errors or external dependencies.
 
 To import and use `succeed` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.succeed
-undefined
+```
 
 **Example**
 

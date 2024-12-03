@@ -4,11 +4,11 @@ Follows HTTP redirects up to a specified number of times.
 
 To import and use `followRedirects` from the "HttpClient" module:
 
-ts
-import \* as HttpClient from "@effect/platform/HttpClient"
+```ts
+import * as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.followRedirects
-undefined
+```
 
 **Signature**
 

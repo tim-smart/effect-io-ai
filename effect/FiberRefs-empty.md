@@ -4,11 +4,11 @@ The empty collection of `FiberRef` values.
 
 To import and use `empty` from the "FiberRefs" module:
 
-ts
-import \* as FiberRefs from "effect/FiberRefs"
+```ts
+import * as FiberRefs from "effect/FiberRefs"
 // Can be accessed like this
 FiberRefs.empty
-undefined
+```
 
 **Signature**
 

@@ -6,11 +6,11 @@ aspect is applied to.
 
 To import and use `trackDefectWith` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.trackDefectWith
-undefined
+```
 
 **Signature**
 

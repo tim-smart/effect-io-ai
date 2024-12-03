@@ -4,11 +4,11 @@ Creates a stream from a `Queue` of values.
 
 To import and use `fromChunkQueue` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromChunkQueue
-undefined
+```
 
 **Signature**
 

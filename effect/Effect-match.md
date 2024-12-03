@@ -11,11 +11,11 @@ to success or failure without triggering side effects.
 
 To import and use `match` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.match
-undefined
+```
 
 **Example**
 

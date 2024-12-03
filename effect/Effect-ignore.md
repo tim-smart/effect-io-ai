@@ -8,11 +8,11 @@ side effects of the effect and do not need to handle or process its outcome.
 
 To import and use `ignore` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.ignore
-undefined
+```
 
 **Example**
 

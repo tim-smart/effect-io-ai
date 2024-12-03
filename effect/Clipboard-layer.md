@@ -4,11 +4,11 @@ A layer that directly interfaces with the navigator.clipboard api
 
 To import and use `layer` from the "Clipboard" module:
 
-ts
-import \* as Clipboard from "@effect/platform-browser/Clipboard"
+```ts
+import * as Clipboard from "@effect/platform-browser/Clipboard"
 // Can be accessed like this
 Clipboard.layer
-undefined
+```
 
 **Signature**
 

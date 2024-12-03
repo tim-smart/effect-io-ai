@@ -4,11 +4,11 @@ Reduce a record to a single value by combining its entries with a specified func
 
 To import and use `reduce` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.reduce
-undefined
+```
 
 **Signature**
 

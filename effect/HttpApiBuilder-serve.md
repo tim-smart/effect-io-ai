@@ -8,11 +8,11 @@ the `HttpApp` before serving.
 
 To import and use `serve` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.serve
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Create an Effect run function that is backed by a FiberSet.
 
 To import and use `makeRuntime` from the "FiberSet" module:
 
-ts
-import \* as FiberSet from "effect/FiberSet"
+```ts
+import * as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.makeRuntime
-undefined
+```
 
 **Signature**
 

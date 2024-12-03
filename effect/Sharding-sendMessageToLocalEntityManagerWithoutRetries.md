@@ -5,11 +5,11 @@ Those are up to the caller.
 
 To import and use `sendMessageToLocalEntityManagerWithoutRetries` from the "Sharding" module:
 
-ts
-import \* as Sharding from "@effect/cluster/Sharding"
+```ts
+import * as Sharding from "@effect/cluster/Sharding"
 // Can be accessed like this
 Sharding.sendMessageToLocalEntityManagerWithoutRetries
-undefined
+```
 
 **Signature**
 

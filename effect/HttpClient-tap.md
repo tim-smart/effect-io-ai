@@ -4,11 +4,11 @@ Performs an additional effect after a successful request.
 
 To import and use `tap` from the "HttpClient" module:
 
-ts
-import \* as HttpClient from "@effect/platform/HttpClient"
+```ts
+import * as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.tap
-undefined
+```
 
 **Signature**
 

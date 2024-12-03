@@ -6,11 +6,11 @@ Values are ordered based on their key in alphabetical order, regardless of inser
 
 To import and use `values` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.values
-undefined
+```
 
 **Example**
 

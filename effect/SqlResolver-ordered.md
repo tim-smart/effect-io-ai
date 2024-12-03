@@ -9,11 +9,11 @@ Results are mapped to the requests in order, so the length of the results must m
 
 To import and use `ordered` from the "SqlResolver" module:
 
-ts
-import \* as SqlResolver from "@effect/sql/SqlResolver"
+```ts
+import * as SqlResolver from "@effect/sql/SqlResolver"
 // Can be accessed like this
 SqlResolver.ordered
-undefined
+```
 
 **Signature**
 

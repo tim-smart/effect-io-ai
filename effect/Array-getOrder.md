@@ -7,11 +7,11 @@ It is useful when you need to compare two arrays of the same type and you have a
 
 To import and use `getOrder` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.getOrder
-undefined
+```
 
 **Signature**
 

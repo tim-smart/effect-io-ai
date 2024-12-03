@@ -6,11 +6,11 @@ It will throw an error if the chunk is empty.
 
 To import and use `unsafeHead` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.unsafeHead
-undefined
+```
 
 **Signature**
 

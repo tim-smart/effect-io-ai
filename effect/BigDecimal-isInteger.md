@@ -4,11 +4,11 @@ Checks if a given `BigDecimal` is an integer.
 
 To import and use `isInteger` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.isInteger
-undefined
+```
 
 **Example**
 

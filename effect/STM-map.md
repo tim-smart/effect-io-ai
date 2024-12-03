@@ -4,11 +4,11 @@ Maps the value produced by the effect.
 
 To import and use `map` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.map
-undefined
+```
 
 **Signature**
 

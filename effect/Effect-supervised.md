@@ -5,11 +5,11 @@ forked in the effect are reported to the specified supervisor.
 
 To import and use `supervised` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.supervised
-undefined
+```
 
 **Signature**
 

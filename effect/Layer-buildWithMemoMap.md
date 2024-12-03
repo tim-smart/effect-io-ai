@@ -5,11 +5,11 @@ the layer construction.
 
 To import and use `buildWithMemoMap` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.buildWithMemoMap
-undefined
+```
 
 **Signature**
 

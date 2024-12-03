@@ -4,11 +4,11 @@ Checks if a given `BigDecimal` is positive.
 
 To import and use `isPositive` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.isPositive
-undefined
+```
 
 **Example**
 

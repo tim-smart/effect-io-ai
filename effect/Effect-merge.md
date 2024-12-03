@@ -11,11 +11,11 @@ errors as part of the outcome.
 
 To import and use `merge` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.merge
-undefined
+```
 
 **Example**
 

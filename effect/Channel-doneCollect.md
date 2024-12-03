@@ -10,11 +10,11 @@ channels that output a large or unbounded number of values.
 
 To import and use `doneCollect` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.doneCollect
-undefined
+```
 
 **Signature**
 

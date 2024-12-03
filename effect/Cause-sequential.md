@@ -5,11 +5,11 @@ Constructs a new `Sequential` cause from the specified pecified `left` and
 
 To import and use `sequential` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.sequential
-undefined
+```
 
 **Signature**
 

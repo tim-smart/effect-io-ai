@@ -9,11 +9,11 @@ Optionally, you can pass a schema `Schema<A, I, R>` to obtain an `A` type instea
 
 To import and use `parseJson` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.parseJson
-undefined
+```
 
 **Example**
 

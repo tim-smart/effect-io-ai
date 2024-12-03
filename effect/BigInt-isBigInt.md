@@ -4,11 +4,11 @@ Tests if a value is a `bigint`.
 
 To import and use `isBigInt` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.isBigInt
-undefined
+```
 
 **Example**
 

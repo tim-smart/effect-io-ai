@@ -7,11 +7,11 @@ NOTE: `hour` parameter is validated lazily. Must be in range 0...23.
 
 To import and use `hourOfDay` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.hourOfDay
-undefined
+```
 
 **Signature**
 

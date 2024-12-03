@@ -4,11 +4,11 @@ Returns `true` if the specified value is a `PageWidth`, `false` otherwise.
 
 To import and use `isPageWidth` from the "PageWidth" module:
 
-ts
-import \* as PageWidth from "@effect/printer/PageWidth"
+```ts
+import * as PageWidth from "@effect/printer/PageWidth"
 // Can be accessed like this
 PageWidth.isPageWidth
-undefined
+```
 
 **Signature**
 

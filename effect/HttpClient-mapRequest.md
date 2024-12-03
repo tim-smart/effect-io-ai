@@ -4,11 +4,11 @@ Appends a transformation of the request object before sending it.
 
 To import and use `mapRequest` from the "HttpClient" module:
 
-ts
-import \* as HttpClient from "@effect/platform/HttpClient"
+```ts
+import * as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.mapRequest
-undefined
+```
 
 **Signature**
 

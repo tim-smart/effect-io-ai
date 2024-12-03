@@ -5,11 +5,11 @@ that `Interval`.
 
 To import and use `intersect` from the "ScheduleInterval" module:
 
-ts
-import \* as ScheduleInterval from "effect/ScheduleInterval"
+```ts
+import * as ScheduleInterval from "effect/ScheduleInterval"
 // Can be accessed like this
 ScheduleInterval.intersect
-undefined
+```
 
 **Signature**
 

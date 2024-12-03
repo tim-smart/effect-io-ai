@@ -6,8 +6,8 @@ This will also tell the sender the result for this message.
 
 To import and use `MessageStateProcessed` from the "MessageState" module:
 
-ts
-import \* as MessageState from "@effect/cluster/MessageState"
+```ts
+import * as MessageState from "@effect/cluster/MessageState"
 // Can be accessed like this
 MessageState.MessageStateProcessed
-undefined
+```

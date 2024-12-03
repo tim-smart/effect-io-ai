@@ -6,11 +6,11 @@ Return a `NonEmptyArray` containing a value repeated the specified number of tim
 
 To import and use `replicate` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.replicate
-undefined
+```
 
 **Example**
 

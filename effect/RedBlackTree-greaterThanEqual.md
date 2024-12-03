@@ -5,11 +5,11 @@ equal to the specified key.
 
 To import and use `greaterThanEqual` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.greaterThanEqual
-undefined
+```
 
 **Signature**
 

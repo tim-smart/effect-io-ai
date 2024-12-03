@@ -6,11 +6,11 @@ This is useful when the value of the `Option` is not needed, but the presence or
 
 To import and use `asVoid` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.asVoid
-undefined
+```
 
 **Signature**
 

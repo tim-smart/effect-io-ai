@@ -5,11 +5,11 @@ to `offer*` and `take*` will be interrupted immediately.
 
 To import and use `shutdown` from the "TPubSub" module:
 
-ts
-import \* as TPubSub from "effect/TPubSub"
+```ts
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.shutdown
-undefined
+```
 
 **Signature**
 

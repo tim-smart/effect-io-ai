@@ -5,8 +5,8 @@ next substream
 
 To import and use `Close` from the "ChildExecutorDecision" module:
 
-ts
-import \* as ChildExecutorDecision from "effect/ChildExecutorDecision"
+```ts
+import * as ChildExecutorDecision from "effect/ChildExecutorDecision"
 // Can be accessed like this
 ChildExecutorDecision.Close
-undefined
+```

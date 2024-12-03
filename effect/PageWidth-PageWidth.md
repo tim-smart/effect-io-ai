@@ -6,8 +6,8 @@ limit by inserting line breaks where appropriate (e.g., via `softLine`).
 
 To import and use `PageWidth` from the "PageWidth" module:
 
-ts
-import \* as PageWidth from "@effect/printer/PageWidth"
+```ts
+import * as PageWidth from "@effect/printer/PageWidth"
 // Can be accessed like this
 PageWidth.PageWidth
-undefined
+```

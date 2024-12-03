@@ -4,11 +4,11 @@ Filters the sink's input with the given predicate.
 
 To import and use `filterInput` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.filterInput
-undefined
+```
 
 **Signature**
 

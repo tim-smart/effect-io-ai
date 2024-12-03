@@ -4,11 +4,11 @@ Statefully maps over the chunk, producing new elements of type `B`.
 
 To import and use `mapAccum` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.mapAccum
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ If you need to change the type of the `Option` in addition to filtering, see `fi
 
 To import and use `filter` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.filter
-undefined
+```
 
 **Example**
 

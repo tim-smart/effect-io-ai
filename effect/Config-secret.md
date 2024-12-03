@@ -4,11 +4,11 @@ Constructs a config for a secret value.
 
 To import and use `secret` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.secret
-undefined
+```
 
 **Signature**
 

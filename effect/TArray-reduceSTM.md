@@ -4,11 +4,11 @@ Atomically folds using a transactional function.
 
 To import and use `reduceSTM` from the "TArray" module:
 
-ts
-import \* as TArray from "effect/TArray"
+```ts
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.reduceSTM
-undefined
+```
 
 **Signature**
 

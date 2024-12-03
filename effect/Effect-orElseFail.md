@@ -11,11 +11,11 @@ succeeds, it will remain unaffected.
 
 To import and use `orElseFail` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.orElseFail
-undefined
+```
 
 **Example**
 

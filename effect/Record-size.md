@@ -4,11 +4,11 @@ Returns the number of key/value pairs in a record.
 
 To import and use `size` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.size
-undefined
+```
 
 **Example**
 

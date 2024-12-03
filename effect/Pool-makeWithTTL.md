@@ -45,11 +45,11 @@ const connectionPool = Effect.flatMap(
 
 To import and use `makeWithTTL` from the "Pool" module:
 
-ts
-import \* as Pool from "effect/Pool"
+```ts
+import * as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.makeWithTTL
-undefined
+```
 
 **Signature**
 

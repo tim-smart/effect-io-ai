@@ -8,11 +8,11 @@ as an argument.
 
 To import and use `all` from the "Prompt" module:
 
-ts
-import \* as Prompt from "@effect/cli/Prompt"
+```ts
+import * as Prompt from "@effect/cli/Prompt"
 // Can be accessed like this
 Prompt.all
-undefined
+```
 
 **Example**
 

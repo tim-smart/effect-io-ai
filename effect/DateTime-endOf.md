@@ -7,11 +7,11 @@ day of the week that the week starts on. The default is 0 (Sunday).
 
 To import and use `endOf` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.endOf
-undefined
+```
 
 **Example**
 

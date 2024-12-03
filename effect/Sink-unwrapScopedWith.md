@@ -5,11 +5,11 @@ an effect that will result in a `Sink` if successful.
 
 To import and use `unwrapScopedWith` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.unwrapScopedWith
-undefined
+```
 
 **Signature**
 

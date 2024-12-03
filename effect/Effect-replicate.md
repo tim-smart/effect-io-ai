@@ -4,11 +4,11 @@ Replicates the given effect `n` times.
 
 To import and use `replicate` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.replicate
-undefined
+```
 
 **Signature**
 

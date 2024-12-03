@@ -6,11 +6,11 @@ be recomputed upon next evaluation.
 
 To import and use `cachedWithTTL` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.cachedWithTTL
-undefined
+```
 
 **Example**
 

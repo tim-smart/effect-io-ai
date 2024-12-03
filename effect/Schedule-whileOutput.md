@@ -5,11 +5,11 @@ on the output evaluates to true.
 
 To import and use `whileOutput` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.whileOutput
-undefined
+```
 
 **Signature**
 

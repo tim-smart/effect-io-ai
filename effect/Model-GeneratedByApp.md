@@ -6,11 +6,11 @@ It is required by the database, but not by the JSON variants.
 
 To import and use `GeneratedByApp` from the "Model" module:
 
-ts
-import \* as Model from "@effect/sql/Model"
+```ts
+import * as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.GeneratedByApp
-undefined
+```
 
 **Signature**
 

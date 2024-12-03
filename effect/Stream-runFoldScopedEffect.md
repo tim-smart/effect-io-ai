@@ -5,11 +5,11 @@ value that represents the scope of the stream.
 
 To import and use `runFoldScopedEffect` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runFoldScopedEffect
-undefined
+```
 
 **Signature**
 

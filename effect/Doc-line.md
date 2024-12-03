@@ -6,11 +6,11 @@ undone by `group`.
 
 To import and use `line` from the "Doc" module:
 
-ts
-import \* as Doc from "@effect/printer/Doc"
+```ts
+import * as Doc from "@effect/printer/Doc"
 // Can be accessed like this
 Doc.line
-undefined
+```
 
 **Example**
 

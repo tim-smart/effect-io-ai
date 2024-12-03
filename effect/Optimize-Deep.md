@@ -13,8 +13,8 @@ This value should only be utilized if profiling demonstrates that it is
 
 To import and use `Deep` from the "Optimize" module:
 
-ts
-import \* as Optimize from "@effect/printer/Optimize"
+```ts
+import * as Optimize from "@effect/printer/Optimize"
 // Can be accessed like this
 Optimize.Deep
-undefined
+```

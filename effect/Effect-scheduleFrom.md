@@ -5,11 +5,11 @@ specified input value.
 
 To import and use `scheduleFrom` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.scheduleFrom
-undefined
+```
 
 **Signature**
 

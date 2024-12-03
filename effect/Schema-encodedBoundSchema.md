@@ -5,11 +5,11 @@ the refinements up to the first transformation point in the original schema.
 
 To import and use `encodedBoundSchema` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.encodedBoundSchema
-undefined
+```
 
 **Signature**
 

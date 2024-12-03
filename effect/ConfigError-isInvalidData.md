@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isInvalidData` from the "ConfigError" module:
 
-ts
-import \* as ConfigError from "effect/ConfigError"
+```ts
+import * as ConfigError from "effect/ConfigError"
 // Can be accessed like this
 ConfigError.isInvalidData
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Retrieves the `Some` values from an `Iterable` of `Option`s, collecting them int
 
 To import and use `getSomes` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.getSomes
-undefined
+```
 
 **Example**
 

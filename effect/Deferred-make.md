@@ -4,11 +4,11 @@ Creates a new `Deferred`.
 
 To import and use `make` from the "Deferred" module:
 
-ts
-import \* as Deferred from "effect/Deferred"
+```ts
+import * as Deferred from "effect/Deferred"
 // Can be accessed like this
 Deferred.make
-undefined
+```
 
 **Signature**
 

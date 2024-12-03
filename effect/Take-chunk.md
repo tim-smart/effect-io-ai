@@ -4,11 +4,11 @@ Creates a `Take` with the specified chunk.
 
 To import and use `chunk` from the "Take" module:
 
-ts
-import \* as Take from "effect/Take"
+```ts
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.chunk
-undefined
+```
 
 **Signature**
 

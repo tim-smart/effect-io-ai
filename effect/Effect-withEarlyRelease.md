@@ -5,11 +5,11 @@ well as a finalizer that can be run to close the scope of this workflow.
 
 To import and use `withEarlyRelease` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.withEarlyRelease
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ to the previous `LogLevel` after the `Effect` workflow completes.
 
 To import and use `locally` from the "LogLevel" module:
 
-ts
-import \* as LogLevel from "effect/LogLevel"
+```ts
+import * as LogLevel from "effect/LogLevel"
 // Can be accessed like this
 LogLevel.locally
-undefined
+```
 
 **Signature**
 

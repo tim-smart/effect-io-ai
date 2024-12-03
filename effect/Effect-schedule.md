@@ -7,11 +7,11 @@ depend on the result of this effect.
 
 To import and use `schedule` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.schedule
-undefined
+```
 
 **Signature**
 

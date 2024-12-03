@@ -4,11 +4,11 @@ Adds an effect to consumption of every element of the stream.
 
 To import and use `tap` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.tap
-undefined
+```
 
 **Example**
 

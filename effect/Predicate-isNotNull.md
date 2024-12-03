@@ -4,11 +4,11 @@ Tests if a value is not `null`.
 
 To import and use `isNotNull` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isNotNull
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Remove a fiber from the FiberMap, interrupting it if it exists.
 
 To import and use `remove` from the "FiberMap" module:
 
-ts
-import \* as FiberMap from "effect/FiberMap"
+```ts
+import * as FiberMap from "effect/FiberMap"
 // Can be accessed like this
 FiberMap.remove
-undefined
+```
 
 **Signature**
 

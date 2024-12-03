@@ -8,11 +8,11 @@ Schema<A> + B -> Schema<A & Brand<B>>
 
 To import and use `brand` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.brand
-undefined
+```
 
 **Example**
 

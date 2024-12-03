@@ -4,11 +4,11 @@ Transforms each element of tuple using the given function, treating tuple homomo
 
 To import and use `map` from the "Tuple" module:
 
-ts
-import \* as Tuple from "effect/Tuple"
+```ts
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.map
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ results in a Do notation pipeline.
 
 To import and use `bindAll` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.bindAll
-undefined
+```
 
 **Example**
 

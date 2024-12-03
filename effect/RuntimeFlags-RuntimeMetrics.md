@@ -8,11 +8,11 @@ Prometheus or other tools via Effect Metrics.
 
 To import and use `RuntimeMetrics` from the "RuntimeFlags" module:
 
-ts
-import \* as RuntimeFlags from "effect/RuntimeFlags"
+```ts
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.RuntimeMetrics
-undefined
+```
 
 **Signature**
 

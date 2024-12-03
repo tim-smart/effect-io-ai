@@ -5,11 +5,11 @@ requires more than one service use `provide` instead.
 
 To import and use `provideServiceEffect` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.provideServiceEffect
-undefined
+```
 
 **Signature**
 

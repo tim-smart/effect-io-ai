@@ -4,8 +4,8 @@
 
 To import and use `Data` from the "TestClock" module:
 
-ts
-import \* as TestClock from "effect/TestClock"
+```ts
+import * as TestClock from "effect/TestClock"
 // Can be accessed like this
 TestClock.Data
-undefined
+```

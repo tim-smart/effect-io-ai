@@ -6,11 +6,11 @@ An `Array` is considered to be a `TupleOfAtLeast` if its length is at least `N`.
 
 To import and use `isTupleOfAtLeast` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isTupleOfAtLeast
-undefined
+```
 
 **Example**
 

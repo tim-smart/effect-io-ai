@@ -6,11 +6,11 @@ depend on the `Exit` value that the scope is closed with.
 
 To import and use `addFinalizer` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.addFinalizer
-undefined
+```
 
 **Signature**
 

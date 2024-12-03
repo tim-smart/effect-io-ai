@@ -4,11 +4,11 @@ Append an element to the end of an `Iterable`, creating a new `Iterable`.
 
 To import and use `append` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.append
-undefined
+```
 
 **Signature**
 

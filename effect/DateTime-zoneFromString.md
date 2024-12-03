@@ -4,11 +4,11 @@ Try parse a TimeZone from a string
 
 To import and use `zoneFromString` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.zoneFromString
-undefined
+```
 
 **Signature**
 

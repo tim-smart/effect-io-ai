@@ -4,11 +4,11 @@ Start running the command and return the output as a `Stream`.
 
 To import and use `stream` from the "Command" module:
 
-ts
-import \* as Command from "@effect/platform/Command"
+```ts
+import * as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.stream
-undefined
+```
 
 **Signature**
 

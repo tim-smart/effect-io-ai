@@ -5,11 +5,11 @@ resulting in an error type of `never`.
 
 To import and use `orDie` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.orDie
-undefined
+```
 
 **Signature**
 

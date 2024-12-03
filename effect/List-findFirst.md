@@ -5,11 +5,11 @@ predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.findFirst
-undefined
+```
 
 **Signature**
 

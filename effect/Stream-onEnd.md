@@ -4,11 +4,11 @@ Adds an effect to be executed at the end of the stream.
 
 To import and use `onEnd` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.onEnd
-undefined
+```
 
 **Example**
 

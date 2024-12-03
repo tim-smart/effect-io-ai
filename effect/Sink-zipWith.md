@@ -6,11 +6,11 @@ results with `f`.
 
 To import and use `zipWith` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.zipWith
-undefined
+```
 
 **Signature**
 

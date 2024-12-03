@@ -4,11 +4,11 @@ Combines all the provided layers concurrently, creating a new layer with merged 
 
 To import and use `mergeAll` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.mergeAll
-undefined
+```
 
 **Signature**
 

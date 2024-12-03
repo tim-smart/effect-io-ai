@@ -5,11 +5,11 @@ to allow for scope composition.
 
 To import and use `runIntoQueueScoped` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runIntoQueueScoped
-undefined
+```
 
 **Signature**
 

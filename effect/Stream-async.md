@@ -9,11 +9,11 @@ executed if the `Fiber` executing this Effect is interrupted.
 
 To import and use `async` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.async
-undefined
+```
 
 **Example**
 

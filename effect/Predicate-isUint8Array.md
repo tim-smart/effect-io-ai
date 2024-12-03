@@ -4,11 +4,11 @@ A guard that succeeds when the input is a `Uint8Array`.
 
 To import and use `isUint8Array` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isUint8Array
-undefined
+```
 
 **Example**
 

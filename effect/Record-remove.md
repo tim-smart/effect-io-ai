@@ -5,11 +5,11 @@ otherwise returns a copy of the original record.
 
 To import and use `remove` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.remove
-undefined
+```
 
 **Example**
 

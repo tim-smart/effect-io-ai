@@ -8,8 +8,8 @@ commands.
 
 To import and use `Command` from the "CommandDescriptor" module:
 
-ts
-import \* as CommandDescriptor from "@effect/cli/CommandDescriptor"
+```ts
+import * as CommandDescriptor from "@effect/cli/CommandDescriptor"
 // Can be accessed like this
 CommandDescriptor.Command
-undefined
+```

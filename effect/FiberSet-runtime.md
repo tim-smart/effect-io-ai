@@ -4,11 +4,11 @@ Capture a Runtime and use it to fork Effect's, adding the forked fibers to the F
 
 To import and use `runtime` from the "FiberSet" module:
 
-ts
-import \* as FiberSet from "effect/FiberSet"
+```ts
+import * as FiberSet from "effect/FiberSet"
 // Can be accessed like this
 FiberSet.runtime
-undefined
+```
 
 **Example**
 

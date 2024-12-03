@@ -5,11 +5,11 @@ primitive type.
 
 To import and use `wizard` from the "Primitive" module:
 
-ts
-import \* as Primitive from "@effect/cli/Primitive"
+```ts
+import * as Primitive from "@effect/cli/Primitive"
 // Can be accessed like this
 Primitive.wizard
-undefined
+```
 
 **Signature**
 

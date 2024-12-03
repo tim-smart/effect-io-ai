@@ -5,11 +5,11 @@ their results.
 
 To import and use `zip` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.zip
-undefined
+```
 
 **Signature**
 

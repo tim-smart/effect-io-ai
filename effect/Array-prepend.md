@@ -4,11 +4,11 @@ Prepend an element to the front of an `Iterable`, creating a new `NonEmptyArray`
 
 To import and use `prepend` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.prepend
-undefined
+```
 
 **Example**
 

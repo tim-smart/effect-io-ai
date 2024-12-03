@@ -5,11 +5,11 @@ function when passed the `Option`'s value.
 
 To import and use `match` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.match
-undefined
+```
 
 **Example**
 

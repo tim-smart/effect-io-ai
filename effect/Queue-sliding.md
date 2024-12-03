@@ -11,11 +11,11 @@ better performance by utilising an optimised version of the underlying
 
 To import and use `sliding` from the "Queue" module:
 
-ts
-import \* as Queue from "effect/Queue"
+```ts
+import * as Queue from "effect/Queue"
 // Can be accessed like this
 Queue.sliding
-undefined
+```
 
 **Signature**
 

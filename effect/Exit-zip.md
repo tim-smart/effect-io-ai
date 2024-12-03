@@ -5,11 +5,11 @@ the failed `Cause<E | E2>`.
 
 To import and use `zip` from the "Exit" module:
 
-ts
-import \* as Exit from "effect/Exit"
+```ts
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.zip
-undefined
+```
 
 **Signature**
 

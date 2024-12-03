@@ -4,11 +4,11 @@ Retrieves value associated with given key.
 
 To import and use `get` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.get
-undefined
+```
 
 **Signature**
 

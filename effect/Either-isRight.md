@@ -4,11 +4,11 @@ Determine if a `Either` is a `Right`.
 
 To import and use `isRight` from the "Either" module:
 
-ts
-import \* as Either from "effect/Either"
+```ts
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.isRight
-undefined
+```
 
 **Example**
 

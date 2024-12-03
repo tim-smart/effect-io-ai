@@ -4,11 +4,11 @@ Shows the cursor.
 
 To import and use `cursorShow` from the "AnsiDoc" module:
 
-ts
-import \* as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
+```ts
+import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
 // Can be accessed like this
 AnsiDoc.cursorShow
-undefined
+```
 
 **Signature**
 

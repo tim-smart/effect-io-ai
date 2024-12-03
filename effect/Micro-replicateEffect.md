@@ -5,11 +5,11 @@ results.
 
 To import and use `replicateEffect` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.replicateEffect
-undefined
+```
 
 **Signature**
 

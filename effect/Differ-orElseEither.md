@@ -5,11 +5,11 @@ knows how to diff the sum of their values.
 
 To import and use `orElseEither` from the "Differ" module:
 
-ts
-import \* as Differ from "effect/Differ"
+```ts
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.orElseEither
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Filters the result of a response, or throws an error if the predicate fails.
 
 To import and use `filterOrFail` from the "HttpClient" module:
 
-ts
-import \* as HttpClient from "@effect/platform/HttpClient"
+```ts
+import * as HttpClient from "@effect/platform/HttpClient"
 // Can be accessed like this
 HttpClient.filterOrFail
-undefined
+```
 
 **Signature**
 

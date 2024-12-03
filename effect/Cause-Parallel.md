@@ -11,8 +11,8 @@ occurred in parallel. In these cases, the errors can be represented by the
 
 To import and use `Parallel` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.Parallel
-undefined
+```

@@ -4,11 +4,11 @@ Intersperse the specified element, also adding a prefix and a suffix.
 
 To import and use `intersperseAffixes` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.intersperseAffixes
-undefined
+```
 
 **Example**
 

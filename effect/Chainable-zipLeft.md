@@ -5,11 +5,11 @@ produced by the effect.
 
 To import and use `zipLeft` from the "Chainable" module:
 
-ts
-import \* as Chainable from "@effect/typeclass/Chainable"
+```ts
+import * as Chainable from "@effect/typeclass/Chainable"
 // Can be accessed like this
 Chainable.zipLeft
-undefined
+```
 
 **Signature**
 

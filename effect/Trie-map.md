@@ -4,11 +4,11 @@ Maps over the entries of the `Trie` using the specified function.
 
 To import and use `map` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.map
-undefined
+```
 
 **Example**
 

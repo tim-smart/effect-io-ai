@@ -6,11 +6,11 @@ It is available for selection and update, but not for insertion.
 
 To import and use `Generated` from the "Model" module:
 
-ts
-import \* as Model from "@effect/sql/Model"
+```ts
+import * as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.Generated
-undefined
+```
 
 **Signature**
 

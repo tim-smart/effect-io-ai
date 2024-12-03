@@ -5,11 +5,11 @@ with caution, as it exposes the sensitive data.
 
 To import and use `value` from the "Redacted" module:
 
-ts
-import \* as Redacted from "effect/Redacted"
+```ts
+import * as Redacted from "effect/Redacted"
 // Can be accessed like this
 Redacted.value
-undefined
+```
 
 **Example**
 

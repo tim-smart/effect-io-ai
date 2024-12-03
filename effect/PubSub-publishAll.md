@@ -5,11 +5,11 @@ were published to the `PubSub`.
 
 To import and use `publishAll` from the "PubSub" module:
 
-ts
-import \* as PubSub from "effect/PubSub"
+```ts
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.publishAll
-undefined
+```
 
 **Signature**
 

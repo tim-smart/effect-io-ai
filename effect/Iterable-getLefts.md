@@ -4,11 +4,11 @@ Retrieves the `Left` values from an `Iterable` of `Either`s.
 
 To import and use `getLefts` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.getLefts
-undefined
+```
 
 **Example**
 

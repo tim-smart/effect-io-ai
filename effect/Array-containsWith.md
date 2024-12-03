@@ -4,11 +4,11 @@ Returns a function that checks if a `ReadonlyArray` contains a given value using
 
 To import and use `containsWith` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.containsWith
-undefined
+```
 
 **Example**
 

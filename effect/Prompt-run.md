@@ -4,11 +4,11 @@ Executes the specified `Prompt`.
 
 To import and use `run` from the "Prompt" module:
 
-ts
-import \* as Prompt from "@effect/cli/Prompt"
+```ts
+import * as Prompt from "@effect/cli/Prompt"
 // Can be accessed like this
 Prompt.run
-undefined
+```
 
 **Signature**
 

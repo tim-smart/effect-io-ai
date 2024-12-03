@@ -4,11 +4,11 @@ Folds over the specified `HaltStrategy` using the provided case functions.
 
 To import and use `match` from the "StreamHaltStrategy" module:
 
-ts
-import \* as StreamHaltStrategy from "effect/StreamHaltStrategy"
+```ts
+import * as StreamHaltStrategy from "effect/StreamHaltStrategy"
 // Can be accessed like this
 StreamHaltStrategy.match
-undefined
+```
 
 **Signature**
 

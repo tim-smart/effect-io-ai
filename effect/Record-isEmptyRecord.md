@@ -4,11 +4,11 @@ Determine if a record is empty.
 
 To import and use `isEmptyRecord` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.isEmptyRecord
-undefined
+```
 
 **Example**
 

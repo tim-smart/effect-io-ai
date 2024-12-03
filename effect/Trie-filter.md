@@ -4,11 +4,11 @@ Filters entries out of a `Trie` using the specified predicate.
 
 To import and use `filter` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.filter
-undefined
+```
 
 **Example**
 

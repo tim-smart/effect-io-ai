@@ -5,11 +5,11 @@ the `PubSub` will never again produce values and should be discarded.
 
 To import and use `toPubSub` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toPubSub
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ The value of `n` can be `0`.
 
 To import and use `splitAt` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.splitAt
-undefined
+```
 
 **Example**
 

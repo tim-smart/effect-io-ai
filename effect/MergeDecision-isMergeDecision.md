@@ -5,11 +5,11 @@ otherwise.
 
 To import and use `isMergeDecision` from the "MergeDecision" module:
 
-ts
-import \* as MergeDecision from "effect/MergeDecision"
+```ts
+import * as MergeDecision from "effect/MergeDecision"
 // Can be accessed like this
 MergeDecision.isMergeDecision
-undefined
+```
 
 **Signature**
 

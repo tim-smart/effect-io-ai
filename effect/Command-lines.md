@@ -5,11 +5,11 @@ encoding.
 
 To import and use `lines` from the "Command" module:
 
-ts
-import \* as Command from "@effect/platform/Command"
+```ts
+import * as Command from "@effect/platform/Command"
 // Can be accessed like this
 Command.lines
-undefined
+```
 
 **Signature**
 

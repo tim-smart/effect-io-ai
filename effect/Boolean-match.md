@@ -5,11 +5,11 @@ It is useful when you have to run one of two functions depending on the boolean 
 
 To import and use `match` from the "Boolean" module:
 
-ts
-import \* as Boolean from "effect/Boolean"
+```ts
+import * as Boolean from "effect/Boolean"
 // Can be accessed like this
 Boolean.match
-undefined
+```
 
 **Example**
 

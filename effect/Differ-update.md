@@ -7,11 +7,11 @@ there is no compositional way to update them.
 
 To import and use `update` from the "Differ" module:
 
-ts
-import \* as Differ from "effect/Differ"
+```ts
+import * as Differ from "effect/Differ"
 // Can be accessed like this
 Differ.update
-undefined
+```
 
 **Signature**
 

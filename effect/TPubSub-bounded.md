@@ -6,11 +6,11 @@ pressure to publishers if the `TPubSub` is at capacity.
 
 To import and use `bounded` from the "TPubSub" module:
 
-ts
-import \* as TPubSub from "effect/TPubSub"
+```ts
+import * as TPubSub from "effect/TPubSub"
 // Can be accessed like this
 TPubSub.bounded
-undefined
+```
 
 **Signature**
 

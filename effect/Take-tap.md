@@ -4,11 +4,11 @@ Returns an effect that effectfully "peeks" at the success of this take.
 
 To import and use `tap` from the "Take" module:
 
-ts
-import \* as Take from "effect/Take"
+```ts
+import * as Take from "effect/Take"
 // Can be accessed like this
 Take.tap
-undefined
+```
 
 **Signature**
 

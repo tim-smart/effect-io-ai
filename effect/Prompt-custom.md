@@ -25,11 +25,11 @@ the following occurs:
 
 To import and use `custom` from the "Prompt" module:
 
-ts
-import \* as Prompt from "@effect/cli/Prompt"
+```ts
+import * as Prompt from "@effect/cli/Prompt"
 // Can be accessed like this
 Prompt.custom
-undefined
+```
 
 **Signature**
 

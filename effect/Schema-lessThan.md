@@ -4,11 +4,11 @@ This filter checks whether the provided number is less than the specified maximu
 
 To import and use `lessThan` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.lessThan
-undefined
+```
 
 **Signature**
 

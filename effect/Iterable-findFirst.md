@@ -5,11 +5,11 @@ predicate, or `None` if no such element exists.
 
 To import and use `findFirst` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.findFirst
-undefined
+```
 
 **Signature**
 

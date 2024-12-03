@@ -7,11 +7,11 @@ It will not be aborted when the parent `Micro` finishes.
 
 To import and use `forkDaemon` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.forkDaemon
-undefined
+```
 
 **Signature**
 

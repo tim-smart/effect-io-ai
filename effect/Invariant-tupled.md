@@ -4,11 +4,11 @@ Convert a value in a singleton array in a given effect.
 
 To import and use `tupled` from the "Invariant" module:
 
-ts
-import \* as Invariant from "@effect/typeclass/Invariant"
+```ts
+import * as Invariant from "@effect/typeclass/Invariant"
 // Can be accessed like this
 Invariant.tupled
-undefined
+```
 
 **Signature**
 

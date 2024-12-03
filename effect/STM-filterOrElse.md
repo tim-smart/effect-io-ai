@@ -4,11 +4,11 @@ Supplies `orElse` if the predicate fails.
 
 To import and use `filterOrElse` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.filterOrElse
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ queue is empty.
 
 To import and use `peek` from the "TQueue" module:
 
-ts
-import \* as TQueue from "effect/TQueue"
+```ts
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.peek
-undefined
+```
 
 **Signature**
 

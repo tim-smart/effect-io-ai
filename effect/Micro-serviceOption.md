@@ -8,11 +8,11 @@ available in the environment or not.
 
 To import and use `serviceOption` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.serviceOption
-undefined
+```
 
 **Signature**
 

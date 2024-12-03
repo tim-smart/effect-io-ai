@@ -4,11 +4,11 @@ Effectfully filters the elements emitted by this stream.
 
 To import and use `filterEffect` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.filterEffect
-undefined
+```
 
 **Signature**
 

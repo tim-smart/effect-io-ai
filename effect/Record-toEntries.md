@@ -4,11 +4,11 @@ Takes a record and returns an array of tuples containing its keys and values.
 
 To import and use `toEntries` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.toEntries
-undefined
+```
 
 **Example**
 

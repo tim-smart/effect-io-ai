@@ -6,11 +6,11 @@ Return a Chunk of length n with element i initialized with f(i).
 
 To import and use `makeBy` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.makeBy
-undefined
+```
 
 **Signature**
 

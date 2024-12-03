@@ -7,8 +7,8 @@ verbosity of log output.
 
 To import and use `LogLevel` from the "LogLevel" module:
 
-ts
-import \* as LogLevel from "effect/LogLevel"
+```ts
+import * as LogLevel from "effect/LogLevel"
 // Can be accessed like this
 LogLevel.LogLevel
-undefined
+```

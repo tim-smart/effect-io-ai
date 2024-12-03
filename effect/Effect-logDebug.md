@@ -8,11 +8,11 @@ To view DEBUG messages, adjust the logging settings using
 
 To import and use `logDebug` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.logDebug
-undefined
+```
 
 **Example**
 

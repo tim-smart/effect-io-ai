@@ -4,11 +4,11 @@ Reverse an `Iterable`, creating a new `Array`.
 
 To import and use `reverse` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.reverse
-undefined
+```
 
 **Example**
 

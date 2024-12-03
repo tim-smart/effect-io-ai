@@ -4,11 +4,11 @@ A guard that always fails.
 
 To import and use `isNever` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isNever
-undefined
+```
 
 **Example**
 

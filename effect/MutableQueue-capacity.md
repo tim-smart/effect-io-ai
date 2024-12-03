@@ -7,11 +7,11 @@ The **maximum** number of elements that a queue can hold.
 
 To import and use `capacity` from the "MutableQueue" module:
 
-ts
-import \* as MutableQueue from "effect/MutableQueue"
+```ts
+import * as MutableQueue from "effect/MutableQueue"
 // Can be accessed like this
 MutableQueue.capacity
-undefined
+```
 
 **Signature**
 

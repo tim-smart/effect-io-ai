@@ -4,11 +4,11 @@ Returns a function that checks if a given `number` is less than or equal to the 
 
 To import and use `lessThanOrEqualTo` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.lessThanOrEqualTo
-undefined
+```
 
 **Example**
 

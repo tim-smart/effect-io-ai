@@ -5,11 +5,11 @@ then executes the specified schedule to completion.
 
 To import and use `andThenEither` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.andThenEither
-undefined
+```
 
 **Signature**
 

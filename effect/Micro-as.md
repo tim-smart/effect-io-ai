@@ -5,11 +5,11 @@ effect.
 
 To import and use `as` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.as
-undefined
+```
 
 **Signature**
 

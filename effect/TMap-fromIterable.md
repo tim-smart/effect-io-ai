@@ -4,11 +4,11 @@ Creates a new `TMap` from an iterable collection of key/value pairs.
 
 To import and use `fromIterable` from the "TMap" module:
 
-ts
-import \* as TMap from "effect/TMap"
+```ts
+import * as TMap from "effect/TMap"
 // Can be accessed like this
 TMap.fromIterable
-undefined
+```
 
 **Signature**
 

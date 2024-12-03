@@ -4,8 +4,8 @@ Defines a schema that attempts to convert a `number` to a `DateTime.Utc` instanc
 
 To import and use `DateTimeUtcFromNumber` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.DateTimeUtcFromNumber
-undefined
+```

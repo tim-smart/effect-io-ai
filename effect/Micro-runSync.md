@@ -5,11 +5,11 @@ value.
 
 To import and use `runSync` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.runSync
-undefined
+```
 
 **Signature**
 

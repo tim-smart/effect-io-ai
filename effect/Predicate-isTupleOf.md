@@ -6,11 +6,11 @@ An `Array` is considered to be a `TupleOf` if its length is exactly `N`.
 
 To import and use `isTupleOf` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isTupleOf
-undefined
+```
 
 **Example**
 

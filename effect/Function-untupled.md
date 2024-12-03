@@ -4,11 +4,11 @@ Inverse function of `tupled`
 
 To import and use `untupled` from the "Function" module:
 
-ts
-import \* as Function from "effect/Function"
+```ts
+import * as Function from "effect/Function"
 // Can be accessed like this
 Function.untupled
-undefined
+```
 
 **Example**
 

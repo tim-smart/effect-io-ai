@@ -4,11 +4,11 @@ This filter checks whether the provided number is greater than the specified min
 
 To import and use `greaterThan` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.greaterThan
-undefined
+```
 
 **Signature**
 

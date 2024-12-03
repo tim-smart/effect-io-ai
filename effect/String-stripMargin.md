@@ -5,11 +5,11 @@ or control characters followed by the `"|"` character from the line.
 
 To import and use `stripMargin` from the "String" module:
 
-ts
-import \* as String from "effect/String"
+```ts
+import * as String from "effect/String"
 // Can be accessed like this
 String.stripMargin
-undefined
+```
 
 **Signature**
 

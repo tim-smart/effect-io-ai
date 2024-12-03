@@ -4,11 +4,11 @@ Creates a new flat config provider.
 
 To import and use `makeFlat` from the "ConfigProvider" module:
 
-ts
-import \* as ConfigProvider from "effect/ConfigProvider"
+```ts
+import * as ConfigProvider from "effect/ConfigProvider"
 // Can be accessed like this
 ConfigProvider.makeFlat
-undefined
+```
 
 **Signature**
 

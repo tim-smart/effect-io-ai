@@ -13,11 +13,11 @@ of the tuple.
 
 To import and use `tuple` from the "Order" module:
 
-ts
-import \* as Order from "effect/Order"
+```ts
+import * as Order from "effect/Order"
 // Can be accessed like this
 Order.tuple
-undefined
+```
 
 **Signature**
 

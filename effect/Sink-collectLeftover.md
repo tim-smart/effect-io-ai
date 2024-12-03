@@ -5,11 +5,11 @@ them as part of the sink's result.
 
 To import and use `collectLeftover` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.collectLeftover
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ If the input chunk is non-empty, the resulting chunk will also be non-empty.
 
 To import and use `map` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.map
-undefined
+```
 
 **Example**
 

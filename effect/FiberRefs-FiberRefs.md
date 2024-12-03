@@ -7,8 +7,8 @@ example between an asynchronous producer and consumer.
 
 To import and use `FiberRefs` from the "FiberRefs" module:
 
-ts
-import \* as FiberRefs from "effect/FiberRefs"
+```ts
+import * as FiberRefs from "effect/FiberRefs"
 // Can be accessed like this
 FiberRefs.FiberRefs
-undefined
+```

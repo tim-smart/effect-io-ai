@@ -6,11 +6,11 @@ memory longer than necessary.
 
 To import and use `unsafeWipe` from the "Redacted" module:
 
-ts
-import \* as Redacted from "effect/Redacted"
+```ts
+import * as Redacted from "effect/Redacted"
 // Can be accessed like this
 Redacted.unsafeWipe
-undefined
+```
 
 **Example**
 

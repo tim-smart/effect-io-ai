@@ -5,11 +5,11 @@ any duplicates.
 
 To import and use `annotations` from the "SchemaAST" module:
 
-ts
-import \* as SchemaAST from "effect/SchemaAST"
+```ts
+import * as SchemaAST from "effect/SchemaAST"
 // Can be accessed like this
 SchemaAST.annotations
-undefined
+```
 
 **Signature**
 

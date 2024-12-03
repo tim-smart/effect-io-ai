@@ -4,11 +4,11 @@ A WebSocket constructor that uses globalThis.WebSocket.
 
 To import and use `layerWebSocketConstructor` from the "BrowserSocket" module:
 
-ts
-import \* as BrowserSocket from "@effect/platform-browser/BrowserSocket"
+```ts
+import * as BrowserSocket from "@effect/platform-browser/BrowserSocket"
 // Can be accessed like this
 BrowserSocket.layerWebSocketConstructor
-undefined
+```
 
 **Signature**
 

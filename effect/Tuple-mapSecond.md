@@ -4,11 +4,11 @@ Transforms the second component of a tuple using a given function.
 
 To import and use `mapSecond` from the "Tuple" module:
 
-ts
-import \* as Tuple from "effect/Tuple"
+```ts
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.mapSecond
-undefined
+```
 
 **Example**
 

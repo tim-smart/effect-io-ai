@@ -5,8 +5,8 @@ the state of that message over that entity is either Acknoledged (not yet proces
 
 To import and use `MessageState` from the "MessageState" module:
 
-ts
-import \* as MessageState from "@effect/cluster/MessageState"
+```ts
+import * as MessageState from "@effect/cluster/MessageState"
 // Can be accessed like this
 MessageState.MessageState
-undefined
+```

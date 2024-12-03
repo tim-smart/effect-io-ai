@@ -4,11 +4,11 @@ Create a resolver that resolves results by id.
 
 To import and use `findById` from the "SqlResolver" module:
 
-ts
-import \* as SqlResolver from "@effect/sql/SqlResolver"
+```ts
+import * as SqlResolver from "@effect/sql/SqlResolver"
 // Can be accessed like this
 SqlResolver.findById
-undefined
+```
 
 **Signature**
 

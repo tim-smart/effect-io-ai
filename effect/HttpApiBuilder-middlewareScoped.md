@@ -5,11 +5,11 @@ the constructor.
 
 To import and use `middlewareScoped` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.middlewareScoped
-undefined
+```
 
 **Signature**
 

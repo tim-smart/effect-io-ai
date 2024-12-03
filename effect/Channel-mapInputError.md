@@ -5,11 +5,11 @@ function to the input channel's error value.
 
 To import and use `mapInputError` from the "Channel" module:
 
-ts
-import \* as Channel from "effect/Channel"
+```ts
+import * as Channel from "effect/Channel"
 // Can be accessed like this
 Channel.mapInputError
-undefined
+```
 
 **Signature**
 

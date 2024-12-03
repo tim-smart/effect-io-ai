@@ -4,11 +4,11 @@ Runs the sink on the stream to produce either the sink's result or an error.
 
 To import and use `run` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.run
-undefined
+```
 
 **Signature**
 

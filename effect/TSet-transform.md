@@ -4,11 +4,11 @@ Atomically updates all elements using a pure function.
 
 To import and use `transform` from the "TSet" module:
 
-ts
-import \* as TSet from "effect/TSet"
+```ts
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.transform
-undefined
+```
 
 **Signature**
 

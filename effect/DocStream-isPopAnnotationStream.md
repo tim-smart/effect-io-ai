@@ -4,11 +4,11 @@ Returns `true` if the specified `DocStream` is a `PopAnnotationStream`, `false` 
 
 To import and use `isPopAnnotationStream` from the "DocStream" module:
 
-ts
-import \* as DocStream from "@effect/printer/DocStream"
+```ts
+import * as DocStream from "@effect/printer/DocStream"
 // Can be accessed like this
 DocStream.isPopAnnotationStream
-undefined
+```
 
 **Signature**
 

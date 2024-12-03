@@ -5,11 +5,11 @@ combiner function. Combines the causes in case both effect fail.
 
 To import and use `validateWith` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.validateWith
-undefined
+```
 
 **Signature**
 

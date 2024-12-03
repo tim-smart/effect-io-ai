@@ -4,11 +4,11 @@ Runs a schedule using the provided inputs, and collects all outputs.
 
 To import and use `run` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.run
-undefined
+```
 
 **Signature**
 

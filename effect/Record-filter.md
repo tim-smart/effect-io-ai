@@ -4,11 +4,11 @@ Selects properties from a record whose values match the given predicate.
 
 To import and use `filter` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.filter
-undefined
+```
 
 **Example**
 

@@ -4,8 +4,8 @@ Re-exports all named exports from the "fast-check" module.
 
 To import and use `From "fast-check"` from the "FastCheck" module:
 
-ts
-import \* as FastCheck from "effect/FastCheck"
-// Can be accessed like this
-FastCheck.From "fast-check"
-undefined
+```ts
+import * as FastCheck from "effect/FastCheck"
+    // Can be accessed like this
+    FastCheck.From "fast-check"
+```

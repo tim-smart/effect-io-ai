@@ -6,11 +6,11 @@ If a default error is sufficient for your use case and you don't need to configu
 
 To import and use `getOrThrowWith` from the "Either" module:
 
-ts
-import \* as Either from "effect/Either"
+```ts
+import * as Either from "effect/Either"
 // Can be accessed like this
 Either.getOrThrowWith
-undefined
+```
 
 **Example**
 

@@ -6,11 +6,11 @@ for comparing `Redacted` instances without exposing their contents.
 
 To import and use `getEquivalence` from the "Redacted" module:
 
-ts
-import \* as Redacted from "effect/Redacted"
+```ts
+import * as Redacted from "effect/Redacted"
 // Can be accessed like this
 Redacted.getEquivalence
-undefined
+```
 
 **Example**
 

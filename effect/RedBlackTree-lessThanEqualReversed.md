@@ -5,11 +5,11 @@ than or equal to the specified key.
 
 To import and use `lessThanEqualReversed` from the "RedBlackTree" module:
 
-ts
-import \* as RedBlackTree from "effect/RedBlackTree"
+```ts
+import * as RedBlackTree from "effect/RedBlackTree"
 // Can be accessed like this
 RedBlackTree.lessThanEqualReversed
-undefined
+```
 
 **Signature**
 

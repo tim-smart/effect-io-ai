@@ -10,11 +10,11 @@ handlers.handle("authenticate", (_) => HttpApiBuilder.securitySetCookie(security
 
 To import and use `securitySetCookie` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.securitySetCookie
-undefined
+```
 
 **Signature**
 

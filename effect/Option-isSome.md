@@ -4,11 +4,11 @@ Determine if a `Option` is a `Some`.
 
 To import and use `isSome` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.isSome
-undefined
+```
 
 **Example**
 

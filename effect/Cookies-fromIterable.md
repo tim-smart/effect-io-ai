@@ -4,11 +4,11 @@ Create a Cookies object from an Iterable
 
 To import and use `fromIterable` from the "Cookies" module:
 
-ts
-import \* as Cookies from "@effect/platform/Cookies"
+```ts
+import * as Cookies from "@effect/platform/Cookies"
 // Can be accessed like this
 Cookies.fromIterable
-undefined
+```
 
 **Signature**
 

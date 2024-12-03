@@ -5,8 +5,8 @@ A Message also has a PrimaryKey so that the receiver is eventually able to detec
 
 To import and use `Message` from the "Message" module:
 
-ts
-import \* as Message from "@effect/cluster/Message"
+```ts
+import * as Message from "@effect/cluster/Message"
 // Can be accessed like this
 Message.Message
-undefined
+```

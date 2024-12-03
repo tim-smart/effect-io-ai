@@ -7,11 +7,11 @@ Note that this allows for interruption to occur in uninterruptible regions.
 
 To import and use `allowInterrupt` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.allowInterrupt
-undefined
+```
 
 **Signature**
 

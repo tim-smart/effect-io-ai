@@ -4,11 +4,11 @@ Returns a function that checks if a `Chunk` contains a given value using the def
 
 To import and use `contains` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.contains
-undefined
+```
 
 **Signature**
 

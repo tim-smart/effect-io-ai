@@ -6,11 +6,11 @@ The offset is in milliseconds.
 
 To import and use `setZoneOffset` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.setZoneOffset
-undefined
+```
 
 **Example**
 

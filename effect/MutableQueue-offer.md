@@ -6,11 +6,11 @@ Returns whether the enqueue was successful or not.
 
 To import and use `offer` from the "MutableQueue" module:
 
-ts
-import \* as MutableQueue from "effect/MutableQueue"
+```ts
+import * as MutableQueue from "effect/MutableQueue"
 // Can be accessed like this
 MutableQueue.offer
-undefined
+```
 
 **Signature**
 

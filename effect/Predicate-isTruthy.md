@@ -4,11 +4,11 @@ Tests if a value is `truthy`.
 
 To import and use `isTruthy` from the "Predicate" module:
 
-ts
-import \* as Predicate from "effect/Predicate"
+```ts
+import * as Predicate from "effect/Predicate"
 // Can be accessed like this
 Predicate.isTruthy
-undefined
+```
 
 **Example**
 

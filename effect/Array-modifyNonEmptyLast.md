@@ -4,11 +4,11 @@ Apply a function to the last element, creating a new `NonEmptyReadonlyArray`.
 
 To import and use `modifyNonEmptyLast` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.modifyNonEmptyLast
-undefined
+```
 
 **Example**
 

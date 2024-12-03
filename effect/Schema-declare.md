@@ -5,11 +5,11 @@ This ensures that when you call `Schema.to` or `Schema.from`, you receive a sche
 
 To import and use `declare` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.declare
-undefined
+```
 
 **Signature**
 

@@ -8,11 +8,11 @@ Queues can unsubscribe from upstream by shutting down.
 
 To import and use `broadcastedQueues` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.broadcastedQueues
-undefined
+```
 
 **Signature**
 

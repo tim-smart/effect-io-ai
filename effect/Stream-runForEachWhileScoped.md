@@ -5,11 +5,11 @@ finalization order can be controlled.
 
 To import and use `runForEachWhileScoped` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.runForEachWhileScoped
-undefined
+```
 
 **Signature**
 

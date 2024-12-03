@@ -4,11 +4,11 @@ Finds the minimum element in an array based on a comparator.
 
 To import and use `min` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.min
-undefined
+```
 
 **Example**
 

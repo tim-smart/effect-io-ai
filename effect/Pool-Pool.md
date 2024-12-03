@@ -6,8 +6,8 @@ an item `A` from a pool may fail with an error of type `E`.
 
 To import and use `Pool` from the "Pool" module:
 
-ts
-import \* as Pool from "effect/Pool"
+```ts
+import * as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.Pool
-undefined
+```

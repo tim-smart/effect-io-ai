@@ -4,11 +4,11 @@ Maps the success value of this effect to the specified constant value.
 
 To import and use `as` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.as
-undefined
+```
 
 **Signature**
 

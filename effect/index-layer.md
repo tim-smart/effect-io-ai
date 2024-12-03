@@ -5,11 +5,11 @@ the tests in a `describe` block if a name is provided.
 
 To import and use `layer` from the "index" module:
 
-ts
-import \* as index from "@effect/vitest/index"
+```ts
+import * as index from "@effect/vitest/index"
 // Can be accessed like this
 index.layer
-undefined
+```
 
 **Signature**
 

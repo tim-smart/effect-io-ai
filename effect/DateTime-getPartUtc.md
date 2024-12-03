@@ -6,11 +6,11 @@ The part will be in the UTC time zone.
 
 To import and use `getPartUtc` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.getPartUtc
-undefined
+```
 
 **Example**
 

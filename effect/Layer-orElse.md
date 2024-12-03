@@ -5,11 +5,11 @@ executes the specified layer.
 
 To import and use `orElse` from the "Layer" module:
 
-ts
-import \* as Layer from "effect/Layer"
+```ts
+import * as Layer from "effect/Layer"
 // Can be accessed like this
 Layer.orElse
-undefined
+```
 
 **Signature**
 

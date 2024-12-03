@@ -5,11 +5,11 @@ with the fiber that it returns.
 
 To import and use `mapFiber` from the "Fiber" module:
 
-ts
-import \* as Fiber from "effect/Fiber"
+```ts
+import * as Fiber from "effect/Fiber"
 // Can be accessed like this
 Fiber.mapFiber
-undefined
+```
 
 **Signature**
 

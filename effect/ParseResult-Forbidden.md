@@ -4,8 +4,8 @@ The `Forbidden` variant of the `ParseIssue` type represents a forbidden operatio
 
 To import and use `Forbidden` from the "ParseResult" module:
 
-ts
-import \* as ParseResult from "effect/ParseResult"
+```ts
+import * as ParseResult from "effect/ParseResult"
 // Can be accessed like this
 ParseResult.Forbidden
-undefined
+```

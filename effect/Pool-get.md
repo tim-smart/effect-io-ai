@@ -6,11 +6,11 @@ Retrying a failed acquisition attempt will repeat the acquisition attempt.
 
 To import and use `get` from the "Pool" module:
 
-ts
-import \* as Pool from "effect/Pool"
+```ts
+import * as Pool from "effect/Pool"
 // Can be accessed like this
 Pool.get
-undefined
+```
 
 **Signature**
 

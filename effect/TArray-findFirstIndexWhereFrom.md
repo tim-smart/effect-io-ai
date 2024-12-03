@@ -5,11 +5,11 @@ index, matching a predicate.
 
 To import and use `findFirstIndexWhereFrom` from the "TArray" module:
 
-ts
-import \* as TArray from "effect/TArray"
+```ts
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstIndexWhereFrom
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Provides a Tagged constructor for a Case Class.
 
 To import and use `TaggedClass` from the "Data" module:
 
-ts
-import \* as Data from "effect/Data"
+```ts
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.TaggedClass
-undefined
+```
 
 **Example**
 

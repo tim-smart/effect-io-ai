@@ -7,11 +7,11 @@ described by the second schedule.
 
 To import and use `compose` from the "Schedule" module:
 
-ts
-import \* as Schedule from "effect/Schedule"
+```ts
+import * as Schedule from "effect/Schedule"
 // Can be accessed like this
 Schedule.compose
-undefined
+```
 
 **Signature**
 

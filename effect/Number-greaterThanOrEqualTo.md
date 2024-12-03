@@ -4,11 +4,11 @@ Returns a function that checks if a given `number` is greater than or equal to t
 
 To import and use `greaterThanOrEqualTo` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.greaterThanOrEqualTo
-undefined
+```
 
 **Example**
 

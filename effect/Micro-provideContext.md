@@ -4,11 +4,11 @@ Merge the given `Context` with the current context.
 
 To import and use `provideContext` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.provideContext
-undefined
+```
 
 **Signature**
 

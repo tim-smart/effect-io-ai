@@ -5,11 +5,11 @@ Returns a new workflow that executes this one and captures the changes in
 
 To import and use `diffFiberRefs` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.diffFiberRefs
-undefined
+```
 
 **Signature**
 

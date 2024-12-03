@@ -4,11 +4,11 @@ Check if a predicate holds true for some `ReadonlyArray` element.
 
 To import and use `some` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.some
-undefined
+```
 
 **Signature**
 

@@ -5,11 +5,11 @@ found, the `Option` object will be `None`.
 
 To import and use `getOption` from the "Context" module:
 
-ts
-import \* as Context from "effect/Context"
+```ts
+import * as Context from "effect/Context"
 // Can be accessed like this
 Context.getOption
-undefined
+```
 
 **Example**
 

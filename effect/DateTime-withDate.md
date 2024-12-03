@@ -5,11 +5,11 @@ return the result.
 
 To import and use `withDate` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.withDate
-undefined
+```
 
 **Example**
 

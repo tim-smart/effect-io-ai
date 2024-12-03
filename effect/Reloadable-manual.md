@@ -5,11 +5,11 @@ of a static service.
 
 To import and use `manual` from the "Reloadable" module:
 
-ts
-import \* as Reloadable from "effect/Reloadable"
+```ts
+import * as Reloadable from "effect/Reloadable"
 // Can be accessed like this
 Reloadable.manual
-undefined
+```
 
 **Signature**
 

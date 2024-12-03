@@ -4,11 +4,11 @@ Returns a default binary `filterMap` composition.
 
 To import and use `filterMapComposition` from the "Filterable" module:
 
-ts
-import \* as Filterable from "@effect/typeclass/Filterable"
+```ts
+import * as Filterable from "@effect/typeclass/Filterable"
 // Can be accessed like this
 Filterable.filterMapComposition
-undefined
+```
 
 **Signature**
 

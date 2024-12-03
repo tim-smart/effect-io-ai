@@ -6,11 +6,11 @@ See `Stream.toPull` for reference.
 
 To import and use `fromPull` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.fromPull
-undefined
+```
 
 **Signature**
 

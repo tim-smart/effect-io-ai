@@ -4,11 +4,11 @@ Checks if a given `Date` falls within an active `Cron` time window.
 
 To import and use `match` from the "Cron" module:
 
-ts
-import \* as Cron from "effect/Cron"
+```ts
+import * as Cron from "effect/Cron"
 // Can be accessed like this
 Cron.match
-undefined
+```
 
 **Example**
 

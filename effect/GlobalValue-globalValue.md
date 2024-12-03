@@ -10,11 +10,11 @@ thereafter.
 
 To import and use `globalValue` from the "GlobalValue" module:
 
-ts
-import \* as GlobalValue from "effect/GlobalValue"
+```ts
+import * as GlobalValue from "effect/GlobalValue"
 // Can be accessed like this
 GlobalValue.globalValue
-undefined
+```
 
 **Example**
 

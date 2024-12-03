@@ -10,11 +10,11 @@ For example, when using the `MonoidSum`, values for matching keys will be summed
 
 To import and use `getSemigroupUnion` from the "Record" module:
 
-ts
-import \* as Record from "@effect/typeclass/data/Record"
+```ts
+import * as Record from "@effect/typeclass/data/Record"
 // Can be accessed like this
 Record.getSemigroupUnion
-undefined
+```
 
 **Example**
 

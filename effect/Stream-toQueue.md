@@ -7,11 +7,11 @@ Defaults to the "suspend" back pressure strategy with a capacity of 2.
 
 To import and use `toQueue` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.toQueue
-undefined
+```
 
 **Signature**
 

@@ -9,11 +9,11 @@ Returns `None` if the number is not finite (`NaN`, `+Infinity` or `-Infinity`).
 
 To import and use `safeFromNumber` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.safeFromNumber
-undefined
+```
 
 **Example**
 

@@ -7,11 +7,11 @@ get a value from the `Trie`.
 
 To import and use `unsafeGet` from the "Trie" module:
 
-ts
-import \* as Trie from "effect/Trie"
+```ts
+import * as Trie from "effect/Trie"
 // Can be accessed like this
 Trie.unsafeGet
-undefined
+```
 
 **Example**
 

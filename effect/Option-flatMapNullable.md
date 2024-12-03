@@ -4,11 +4,11 @@ This is `flatMap` + `fromNullable`, useful when working with optional values.
 
 To import and use `flatMapNullable` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.flatMapNullable
-undefined
+```
 
 **Example**
 

@@ -5,11 +5,11 @@ api to control the concurrency of that `Micro` when it is run.
 
 To import and use `withConcurrency` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.withConcurrency
-undefined
+```
 
 **Example**
 

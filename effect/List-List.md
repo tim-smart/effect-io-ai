@@ -8,8 +8,8 @@ consider using a collection more suited for that other than `List`.
 
 To import and use `List` from the "List" module:
 
-ts
-import \* as List from "effect/List"
+```ts
+import * as List from "effect/List"
 // Can be accessed like this
 List.List
-undefined
+```

@@ -26,8 +26,8 @@ type HttpErrorPlain =
 
 To import and use `TaggedEnum` from the "Data" module:
 
-ts
-import \* as Data from "effect/Data"
+```ts
+import * as Data from "effect/Data"
 // Can be accessed like this
 Data.TaggedEnum
-undefined
+```

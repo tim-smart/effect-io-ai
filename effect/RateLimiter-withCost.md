@@ -8,11 +8,11 @@ Eg: 1000 credits / hour, where a query costs 1 credit and a mutation costs 5 cre
 
 To import and use `withCost` from the "RateLimiter" module:
 
-ts
-import \* as RateLimiter from "effect/RateLimiter"
+```ts
+import * as RateLimiter from "effect/RateLimiter"
 // Can be accessed like this
 RateLimiter.withCost
-undefined
+```
 
 **Example**
 

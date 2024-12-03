@@ -4,11 +4,11 @@ Run a sql query with a request schema and a result schema and return the first r
 
 To import and use `findOne` from the "SqlSchema" module:
 
-ts
-import \* as SqlSchema from "@effect/sql/SqlSchema"
+```ts
+import * as SqlSchema from "@effect/sql/SqlSchema"
 // Can be accessed like this
 SqlSchema.findOne
-undefined
+```
 
 **Signature**
 

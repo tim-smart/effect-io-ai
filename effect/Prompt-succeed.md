@@ -7,11 +7,11 @@ anything to the screen.
 
 To import and use `succeed` from the "Prompt" module:
 
-ts
-import \* as Prompt from "@effect/cli/Prompt"
+```ts
+import * as Prompt from "@effect/cli/Prompt"
 // Can be accessed like this
 Prompt.succeed
-undefined
+```
 
 **Signature**
 

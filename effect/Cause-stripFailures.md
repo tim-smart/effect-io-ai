@@ -5,11 +5,11 @@ a cause containing only `Die` cause/finalizer defects.
 
 To import and use `stripFailures` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.stripFailures
-undefined
+```
 
 **Signature**
 

@@ -5,8 +5,8 @@ been exceeded.
 
 To import and use `ExceededCapacityException` from the "Cause" module:
 
-ts
-import \* as Cause from "effect/Cause"
+```ts
+import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.ExceededCapacityException
-undefined
+```

@@ -4,11 +4,11 @@ Construct an http web handler from an `HttpApi` instance.
 
 To import and use `toWebHandler` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.toWebHandler
-undefined
+```
 
 **Example**
 

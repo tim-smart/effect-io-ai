@@ -6,11 +6,11 @@ buffered by this operator.
 
 To import and use `mergeAll` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.mergeAll
-undefined
+```
 
 **Signature**
 

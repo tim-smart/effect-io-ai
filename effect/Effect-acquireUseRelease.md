@@ -24,11 +24,11 @@ and ignored.
 
 To import and use `acquireUseRelease` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.acquireUseRelease
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Provides an addition operation on `bigint`s.
 
 To import and use `sum` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.sum
-undefined
+```
 
 **Example**
 

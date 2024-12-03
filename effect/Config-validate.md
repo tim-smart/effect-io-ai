@@ -5,11 +5,11 @@ performs validation during loading.
 
 To import and use `validate` from the "Config" module:
 
-ts
-import \* as Config from "effect/Config"
+```ts
+import * as Config from "effect/Config"
 // Can be accessed like this
 Config.validate
-undefined
+```
 
 **Signature**
 

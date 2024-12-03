@@ -5,11 +5,11 @@ Zips each element with the previous element. Initially accompanied by
 
 To import and use `zipWithPrevious` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.zipWithPrevious
-undefined
+```
 
 **Example**
 

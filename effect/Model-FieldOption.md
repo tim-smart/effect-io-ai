@@ -7,8 +7,8 @@ For the JSON variants, it will also accept missing keys.
 
 To import and use `FieldOption` from the "Model" module:
 
-ts
-import \* as Model from "@effect/sql/Model"
+```ts
+import * as Model from "@effect/sql/Model"
 // Can be accessed like this
 Model.FieldOption
-undefined
+```

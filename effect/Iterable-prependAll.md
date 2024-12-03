@@ -4,11 +4,11 @@ Prepends the specified prefix iterable to the beginning of the specified iterabl
 
 To import and use `prependAll` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.prependAll
-undefined
+```
 
 **Example**
 

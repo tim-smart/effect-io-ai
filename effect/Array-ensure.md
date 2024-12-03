@@ -4,11 +4,11 @@ Creates a new `Array` from a value that might not be an iterable.
 
 To import and use `ensure` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.ensure
-undefined
+```
 
 **Example**
 

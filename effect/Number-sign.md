@@ -4,11 +4,11 @@ Determines the sign of a given `number`.
 
 To import and use `sign` from the "Number" module:
 
-ts
-import \* as Number from "effect/Number"
+```ts
+import * as Number from "effect/Number"
 // Can be accessed like this
 Number.sign
-undefined
+```
 
 **Example**
 

@@ -4,11 +4,11 @@ Format a `DateTime` as a string using the `DateTimeFormat` API.
 
 To import and use `formatIntl` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.formatIntl
-undefined
+```
 
 **Signature**
 

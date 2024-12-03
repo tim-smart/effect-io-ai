@@ -4,11 +4,11 @@ Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s using t
 
 To import and use `groupWith` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.groupWith
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Tests if a value is a `Option`.
 
 To import and use `isOption` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.isOption
-undefined
+```
 
 **Example**
 

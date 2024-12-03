@@ -4,11 +4,11 @@ Takes up to max number of values from the queue.
 
 To import and use `takeUpTo` from the "TQueue" module:
 
-ts
-import \* as TQueue from "effect/TQueue"
+```ts
+import * as TQueue from "effect/TQueue"
 // Can be accessed like this
 TQueue.takeUpTo
-undefined
+```
 
 **Signature**
 

@@ -4,11 +4,11 @@ Appends the specified element to the end of the `Chunk`.
 
 To import and use `append` from the "Chunk" module:
 
-ts
-import \* as Chunk from "effect/Chunk"
+```ts
+import * as Chunk from "effect/Chunk"
 // Can be accessed like this
 Chunk.append
-undefined
+```
 
 **Signature**
 

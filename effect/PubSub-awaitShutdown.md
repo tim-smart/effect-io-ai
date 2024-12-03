@@ -6,11 +6,11 @@ shutdown, the `Effect` will resume right away.
 
 To import and use `awaitShutdown` from the "PubSub" module:
 
-ts
-import \* as PubSub from "effect/PubSub"
+```ts
+import * as PubSub from "effect/PubSub"
 // Can be accessed like this
 PubSub.awaitShutdown
-undefined
+```
 
 **Signature**
 

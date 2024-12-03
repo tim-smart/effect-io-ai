@@ -4,11 +4,11 @@ Check if a given `key` exists in a record.
 
 To import and use `has` from the "Record" module:
 
-ts
-import \* as Record from "effect/Record"
+```ts
+import * as Record from "effect/Record"
 // Can be accessed like this
 Record.has
-undefined
+```
 
 **Example**
 

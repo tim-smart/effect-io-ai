@@ -4,11 +4,11 @@ Constructs a differ that knows how to diff `RuntimeFlags` values.
 
 To import and use `differ` from the "RuntimeFlags" module:
 
-ts
-import \* as RuntimeFlags from "effect/RuntimeFlags"
+```ts
+import * as RuntimeFlags from "effect/RuntimeFlags"
 // Can be accessed like this
 RuntimeFlags.differ
-undefined
+```
 
 **Signature**
 

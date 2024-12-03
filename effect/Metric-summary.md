@@ -5,11 +5,11 @@ Summary metrics provide statistical information about a set of values, including
 
 To import and use `summary` from the "Metric" module:
 
-ts
-import \* as Metric from "effect/Metric"
+```ts
+import * as Metric from "effect/Metric"
 // Can be accessed like this
 Metric.summary
-undefined
+```
 
 **Example**
 

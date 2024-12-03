@@ -5,11 +5,11 @@ The order and references of result values are determined by the first `Iterable`
 
 To import and use `intersectionWith` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.intersectionWith
-undefined
+```
 
 **Example**
 

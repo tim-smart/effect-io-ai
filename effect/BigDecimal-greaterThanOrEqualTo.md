@@ -4,11 +4,11 @@ Checks if a given `BigDecimal` is greater than or equal to the provided one.
 
 To import and use `greaterThanOrEqualTo` from the "BigDecimal" module:
 
-ts
-import \* as BigDecimal from "effect/BigDecimal"
+```ts
+import * as BigDecimal from "effect/BigDecimal"
 // Can be accessed like this
 BigDecimal.greaterThanOrEqualTo
-undefined
+```
 
 **Example**
 

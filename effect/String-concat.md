@@ -4,11 +4,11 @@ Concatenates two strings at runtime.
 
 To import and use `concat` from the "String" module:
 
-ts
-import \* as String from "effect/String"
+```ts
+import * as String from "effect/String"
 // Can be accessed like this
 String.concat
-undefined
+```
 
 **Signature**
 

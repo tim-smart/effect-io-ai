@@ -9,11 +9,11 @@ You can implement endpoints using the `handlers.handle` api.
 
 To import and use `group` from the "HttpApiBuilder" module:
 
-ts
-import \* as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
+```ts
+import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
 // Can be accessed like this
 HttpApiBuilder.group
-undefined
+```
 
 **Signature**
 

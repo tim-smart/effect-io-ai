@@ -4,11 +4,11 @@ Creates `Intervals` from the specified `Iterable<Interval>`.
 
 To import and use `fromIterable` from the "ScheduleIntervals" module:
 
-ts
-import \* as ScheduleIntervals from "effect/ScheduleIntervals"
+```ts
+import * as ScheduleIntervals from "effect/ScheduleIntervals"
 // Can be accessed like this
 ScheduleIntervals.fromIterable
-undefined
+```
 
 **Signature**
 

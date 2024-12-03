@@ -4,11 +4,11 @@ Create a no-op file system that can be used for testing.
 
 To import and use `layerNoop` from the "FileSystem" module:
 
-ts
-import \* as FileSystem from "@effect/platform/FileSystem"
+```ts
+import * as FileSystem from "@effect/platform/FileSystem"
 // Can be accessed like this
 FileSystem.layerNoop
-undefined
+```
 
 **Signature**
 

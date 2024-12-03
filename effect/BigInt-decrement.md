@@ -4,11 +4,11 @@ Decrements a number by `1n`.
 
 To import and use `decrement` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.decrement
-undefined
+```
 
 **Example**
 

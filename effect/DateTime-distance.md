@@ -7,11 +7,11 @@ If `other` is _after_ `self`, the result will be a positive number.
 
 To import and use `distance` from the "DateTime" module:
 
-ts
-import \* as DateTime from "effect/DateTime"
+```ts
+import * as DateTime from "effect/DateTime"
 // Can be accessed like this
 DateTime.distance
-undefined
+```
 
 **Example**
 

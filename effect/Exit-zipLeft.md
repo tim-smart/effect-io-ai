@@ -5,11 +5,11 @@ second element of the tuple or else returns the failed `Cause<E | E2>`.
 
 To import and use `zipLeft` from the "Exit" module:
 
-ts
-import \* as Exit from "effect/Exit"
+```ts
+import * as Exit from "effect/Exit"
 // Can be accessed like this
 Exit.zipLeft
-undefined
+```
 
 **Signature**
 

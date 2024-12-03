@@ -7,11 +7,11 @@ The values for matching keys are combined using the provided `Semigroup` instanc
 
 To import and use `getSemigroupIntersection` from the "Record" module:
 
-ts
-import \* as Record from "@effect/typeclass/data/Record"
+```ts
+import * as Record from "@effect/typeclass/data/Record"
 // Can be accessed like this
 Record.getSemigroupIntersection
-undefined
+```
 
 **Example**
 

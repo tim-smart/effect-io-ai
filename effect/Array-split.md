@@ -4,11 +4,11 @@ Splits this iterable into `n` equally sized arrays.
 
 To import and use `split` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.split
-undefined
+```
 
 **Example**
 

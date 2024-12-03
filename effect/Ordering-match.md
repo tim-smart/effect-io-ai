@@ -4,11 +4,11 @@ Depending on the `Ordering` parameter given to it, returns a value produced by o
 
 To import and use `match` from the "Ordering" module:
 
-ts
-import \* as Ordering from "effect/Ordering"
+```ts
+import * as Ordering from "effect/Ordering"
 // Can be accessed like this
 Ordering.match
-undefined
+```
 
 **Example**
 

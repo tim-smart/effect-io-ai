@@ -4,11 +4,11 @@ Returns a default `of` composition.
 
 To import and use `ofComposition` from the "Of" module:
 
-ts
-import \* as Of from "@effect/typeclass/Of"
+```ts
+import * as Of from "@effect/typeclass/Of"
 // Can be accessed like this
 Of.ofComposition
-undefined
+```
 
 **Signature**
 

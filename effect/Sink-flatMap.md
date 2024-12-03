@@ -8,11 +8,11 @@ This function essentially runs sinks in sequence.
 
 To import and use `flatMap` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.flatMap
-undefined
+```
 
 **Signature**
 

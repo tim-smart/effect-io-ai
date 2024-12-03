@@ -5,11 +5,11 @@ input `Iterable` is short, excess elements of the longer `Iterable` are discarde
 
 To import and use `zipWith` from the "Iterable" module:
 
-ts
-import \* as Iterable from "effect/Iterable"
+```ts
+import * as Iterable from "effect/Iterable"
 // Can be accessed like this
 Iterable.zipWith
-undefined
+```
 
 **Signature**
 

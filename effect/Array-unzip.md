@@ -4,11 +4,11 @@ This function is the inverse of `zip`. Takes an `Iterable` of pairs and return t
 
 To import and use `unzip` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.unzip
-undefined
+```
 
 **Example**
 

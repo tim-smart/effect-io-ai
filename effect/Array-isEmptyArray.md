@@ -4,11 +4,11 @@ Determine if an `Array` is empty narrowing down the type to `[]`.
 
 To import and use `isEmptyArray` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.isEmptyArray
-undefined
+```
 
 **Example**
 

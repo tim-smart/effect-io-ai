@@ -5,11 +5,11 @@ will be invoked, whether or not this effect succeeds.
 
 To import and use `ensuringChildren` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.ensuringChildren
-undefined
+```
 
 **Signature**
 

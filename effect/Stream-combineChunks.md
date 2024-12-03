@@ -8,11 +8,11 @@ being specified by `s`.
 
 To import and use `combineChunks` from the "Stream" module:
 
-ts
-import \* as Stream from "effect/Stream"
+```ts
+import * as Stream from "effect/Stream"
 // Can be accessed like this
 Stream.combineChunks
-undefined
+```
 
 **Signature**
 

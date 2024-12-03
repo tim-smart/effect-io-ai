@@ -4,11 +4,11 @@ Returns a default `sequence` implementation.
 
 To import and use `sequence` from the "Traversable" module:
 
-ts
-import \* as Traversable from "@effect/typeclass/Traversable"
+```ts
+import * as Traversable from "@effect/typeclass/Traversable"
 // Can be accessed like this
 Traversable.sequence
-undefined
+```
 
 **Signature**
 

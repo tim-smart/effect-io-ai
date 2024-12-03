@@ -7,11 +7,11 @@ for the initial value and at the end of processing of each chunk. `f` and
 
 To import and use `foldChunksEffect` from the "Sink" module:
 
-ts
-import \* as Sink from "effect/Sink"
+```ts
+import * as Sink from "effect/Sink"
 // Can be accessed like this
 Sink.foldChunksEffect
-undefined
+```
 
 **Signature**
 

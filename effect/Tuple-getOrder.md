@@ -7,11 +7,11 @@ of the tuple.
 
 To import and use `getOrder` from the "Tuple" module:
 
-ts
-import \* as Tuple from "effect/Tuple"
+```ts
+import * as Tuple from "effect/Tuple"
 // Can be accessed like this
 Tuple.getOrder
-undefined
+```
 
 **Signature**
 

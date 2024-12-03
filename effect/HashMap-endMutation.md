@@ -4,11 +4,11 @@ Marks the `HashMap` as immutable.
 
 To import and use `endMutation` from the "HashMap" module:
 
-ts
-import \* as HashMap from "effect/HashMap"
+```ts
+import * as HashMap from "effect/HashMap"
 // Can be accessed like this
 HashMap.endMutation
-undefined
+```
 
 **Signature**
 

@@ -6,11 +6,11 @@ Supports multiple arguments, a single argument tuple / array or record / struct.
 
 To import and use `all` from the "Micro" module:
 
-ts
-import \* as Micro from "effect/Micro"
+```ts
+import * as Micro from "effect/Micro"
 // Can be accessed like this
 Micro.all
-undefined
+```
 
 **Signature**
 

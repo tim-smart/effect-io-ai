@@ -6,11 +6,11 @@ as `string` (if only one value for a key) or a `NonEmptyArray<string>`
 
 To import and use `toRecord` from the "UrlParams" module:
 
-ts
-import \* as UrlParams from "@effect/platform/UrlParams"
+```ts
+import * as UrlParams from "@effect/platform/UrlParams"
 // Can be accessed like this
 UrlParams.toRecord
-undefined
+```
 
 **Example**
 

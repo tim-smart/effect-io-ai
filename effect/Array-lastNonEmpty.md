@@ -4,11 +4,11 @@ Get the last element of a non empty array.
 
 To import and use `lastNonEmpty` from the "Array" module:
 
-ts
-import \* as Array from "effect/Array"
+```ts
+import * as Array from "effect/Array"
 // Can be accessed like this
 Array.lastNonEmpty
-undefined
+```
 
 **Example**
 

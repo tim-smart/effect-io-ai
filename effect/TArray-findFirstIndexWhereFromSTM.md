@@ -5,11 +5,11 @@ transactional predicate.
 
 To import and use `findFirstIndexWhereFromSTM` from the "TArray" module:
 
-ts
-import \* as TArray from "effect/TArray"
+```ts
+import * as TArray from "effect/TArray"
 // Can be accessed like this
 TArray.findFirstIndexWhereFromSTM
-undefined
+```
 
 **Signature**
 

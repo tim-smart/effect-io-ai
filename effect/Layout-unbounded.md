@@ -5,11 +5,11 @@ page width.
 
 To import and use `unbounded` from the "Layout" module:
 
-ts
-import \* as Layout from "@effect/printer/Layout"
+```ts
+import * as Layout from "@effect/printer/Layout"
 // Can be accessed like this
 Layout.unbounded
-undefined
+```
 
 **Signature**
 

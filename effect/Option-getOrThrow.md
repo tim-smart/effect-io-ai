@@ -6,11 +6,11 @@ The thrown error is a default error. To configure the error thrown, see {@link g
 
 To import and use `getOrThrow` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.getOrThrow
-undefined
+```
 
 **Example**
 

@@ -5,11 +5,11 @@ Removes entries from a `TSet` that satisfy the specified predicate and returns t
 
 To import and use `removeIf` from the "TSet" module:
 
-ts
-import \* as TSet from "effect/TSet"
+```ts
+import * as TSet from "effect/TSet"
 // Can be accessed like this
 TSet.removeIf
-undefined
+```
 
 **Signature**
 

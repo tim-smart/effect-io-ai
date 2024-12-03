@@ -7,11 +7,11 @@ it returns `Option.none()`, otherwise, it returns `Option.some(bigint)`.
 
 To import and use `fromString` from the "BigInt" module:
 
-ts
-import \* as BigInt from "effect/BigInt"
+```ts
+import * as BigInt from "effect/BigInt"
 // Can be accessed like this
 BigInt.fromString
-undefined
+```
 
 **Example**
 

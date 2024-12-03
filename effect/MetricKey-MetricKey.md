@@ -8,8 +8,8 @@ impossible to ever create different metrics with conflicting keys.
 
 To import and use `MetricKey` from the "MetricKey" module:
 
-ts
-import \* as MetricKey from "effect/MetricKey"
+```ts
+import * as MetricKey from "effect/MetricKey"
 // Can be accessed like this
 MetricKey.MetricKey
-undefined
+```

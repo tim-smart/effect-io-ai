@@ -17,11 +17,11 @@ Possible extensions include:
 
 To import and use `extend` from the "Schema" module:
 
-ts
-import \* as Schema from "effect/Schema"
+```ts
+import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.extend
-undefined
+```
 
 **Example**
 

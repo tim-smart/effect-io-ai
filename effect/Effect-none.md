@@ -4,11 +4,11 @@ Requires the option produced by this value to be `None`.
 
 To import and use `none` from the "Effect" module:
 
-ts
-import \* as Effect from "effect/Effect"
+```ts
+import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.none
-undefined
+```
 
 **Signature**
 

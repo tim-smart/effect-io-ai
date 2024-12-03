@@ -4,11 +4,11 @@ Returns a default binary `traverse` composition.
 
 To import and use `traverseComposition` from the "Traversable" module:
 
-ts
-import \* as Traversable from "@effect/typeclass/Traversable"
+```ts
+import * as Traversable from "@effect/typeclass/Traversable"
 // Can be accessed like this
 Traversable.traverseComposition
-undefined
+```
 
 **Signature**
 

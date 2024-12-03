@@ -5,11 +5,11 @@ specified layer and leaving the remainder `R0`.
 
 To import and use `provideSomeContext` from the "STM" module:
 
-ts
-import \* as STM from "effect/STM"
+```ts
+import * as STM from "effect/STM"
 // Can be accessed like this
 STM.provideSomeContext
-undefined
+```
 
 **Signature**
 

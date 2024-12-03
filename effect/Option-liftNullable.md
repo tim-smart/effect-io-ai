@@ -4,11 +4,11 @@ This API is useful for lifting a function that returns `null` or `undefined` int
 
 To import and use `liftNullable` from the "Option" module:
 
-ts
-import \* as Option from "effect/Option"
+```ts
+import * as Option from "effect/Option"
 // Can be accessed like this
 Option.liftNullable
-undefined
+```
 
 **Example**
 

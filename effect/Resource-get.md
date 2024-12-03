@@ -4,11 +4,11 @@ Retrieves the current value stored in the cache.
 
 To import and use `get` from the "Resource" module:
 
-ts
-import \* as Resource from "effect/Resource"
+```ts
+import * as Resource from "effect/Resource"
 // Can be accessed like this
 Resource.get
-undefined
+```
 
 **Signature**
 
