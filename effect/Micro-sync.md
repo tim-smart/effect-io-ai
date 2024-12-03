@@ -1,9 +1,9 @@
 # sync
 
-Creates a `Micro` effect that will succeed with the lazily evaluated value.
+Creates a `Micro` effect that succeeds with a lazily evaluated value.
 
-If the evaluation of the value throws an error, the effect will fail with
-`CauseDie`.
+If the evaluation of the value throws an error, the effect will fail with a
+`Die` variant of the `MicroCause` type.
 
 To import and use `sync` from the "Micro" module:
 

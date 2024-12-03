@@ -1,9 +1,9 @@
 # fail
 
-Creates a `Micro` effect that will fail with the specified error.
+Creates a `Micro` effect that fails with the given error.
 
-This will result in a `CauseFail`, where the error is tracked at the
-type level.
+This results in a `Fail` variant of the `MicroCause` type, where the error is
+tracked at the type level.
 
 To import and use `fail` from the "Micro" module:
 

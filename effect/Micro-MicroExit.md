@@ -1,9 +1,8 @@
 # MicroExit
 
-The MicroExit type is a data type that represents the result of a Micro
-computation.
-
-It uses the `Either` data type to represent the success and failure cases.
+The `MicroExit` type is used to represent the result of a `Micro` computation. It
+can either be successful, containing a value of type `A`, or it can fail,
+containing an error of type `E` wrapped in a `MicroCause`.
 
 To import and use `MicroExit` from the "Micro" module:
 

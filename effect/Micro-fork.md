@@ -1,6 +1,6 @@
 # fork
 
-Run the `Micro` effect in a new `Handle` that can be awaited, joined, or
+Run the `Micro` effect in a new `MicroFiber` that can be awaited, joined, or
 aborted.
 
 When the parent `Micro` finishes, this `Micro` will be aborted.
@@ -16,5 +16,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const fork: <A, E, R>(self: Micro<A, E, R>) => Micro<Fiber<A, E>, never, R>
+export declare const fork: <A, E, R>(self: Micro<A, E, R>) => Micro<MicroFiber<A, E>, never, R>
 ```

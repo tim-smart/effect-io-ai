@@ -1,7 +1,7 @@
 # raceFirst
 
 Returns an effect that races two effects, yielding the value of the first
-effect to succeed _or_ fail. Losers of the race will be interrupted immediately
+effect to succeed _or_ fail. Losers of the race will be interrupted immediately.
 
 To import and use `raceFirst` from the "Micro" module:
 

@@ -2,8 +2,8 @@
 
 Creates a `Micro` effect that will die with the specified error.
 
-This will result in a `CauseDie`, where the error is not tracked at
-the type level.
+This results in a `Die` variant of the `MicroCause` type, where the error is
+not tracked at the type level.
 
 To import and use `die` from the "Micro" module:
 
