@@ -1,10 +1,10 @@
 # andThen
 
-A more flexible version of `flatMap`, that combines `map` and `flatMap` into
-a single api.
+A more flexible version of `flatMap` that combines `map` and `flatMap` into a
+single API.
 
-It also allows you to pass in a `Micro` effect directly, which will be
-executed after the current effect.
+It also lets you directly pass a `Micro` effect, which will be executed after
+the current effect.
 
 To import and use `andThen` from the "Micro" module:
 

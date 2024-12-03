@@ -1,7 +1,7 @@
 # yieldNow
 
 Pause the execution of the current `Micro` effect, and resume it on the next
-iteration of the event loop.
+scheduler tick.
 
 To import and use `yieldNow` from the "Micro" module:
 

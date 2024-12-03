@@ -13,5 +13,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const failCauseSync: <E>(cause: LazyArg<MicroCause<E>>) => Micro<never, E>
+export declare const failCauseSync: <E>(evaluate: LazyArg<MicroCause<E>>) => Micro<never, E>
 ```

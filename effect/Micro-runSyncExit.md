@@ -3,7 +3,7 @@
 Attempt to execute the `Micro` effect synchronously and return the `MicroExit`.
 
 If any asynchronous effects are encountered, the function will return a
-`CauseDie` containing the `Handle`.
+`CauseDie` containing the `MicroFiber`.
 
 To import and use `runSyncExit` from the "Micro" module:
 

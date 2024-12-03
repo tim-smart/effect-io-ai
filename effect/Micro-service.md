@@ -13,5 +13,8 @@ undefined
 **Signature**
 
 ```ts
-export declare const service: <I, S>(tag: Context.Tag<I, S>) => Micro<S, never, I>
+export declare const service: {
+  <I, S>(tag: Context.Reference<I, S>): Micro<S>
+  <I, S>(tag: Context.Tag<I, S>): Micro<S, never, I>
+}
 ```

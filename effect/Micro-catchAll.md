@@ -2,7 +2,7 @@
 
 Catch the error of the given `Micro` effect, allowing you to recover from it.
 
-It only catches expected (`MicroCause.Fail`) errors.
+It only catches expected errors.
 
 To import and use `catchAll` from the "Micro" module:
 

@@ -1,6 +1,7 @@
 # unwrap
 
-Makes a channel from an effect that returns a channel in case of success.
+Constructs a `Channel` from an effect that will result in a `Channel` if
+successful.
 
 To import and use `unwrap` from the "Channel" module:
 

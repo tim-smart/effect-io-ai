@@ -13,5 +13,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const succeed: <A>(a: A) => Micro<A>
+export declare const succeed: <A>(value: A) => Micro<A>
 ```

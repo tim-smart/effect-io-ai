@@ -1,6 +1,6 @@
 # asSome
 
-Wrap the success value of this `Micro` effect in an `Option.Some`.
+Wrap the success value of this `Micro` effect in a `Some`.
 
 To import and use `asSome` from the "Micro" module:
 

@@ -1,6 +1,6 @@
 # forkScoped
 
-Run the `Micro` effect in a new `Handle` that can be awaited, joined, or
+Run the `Micro` effect in a new `MicroFiber` that can be awaited, joined, or
 aborted.
 
 The lifetime of the handle will be attached to the current `MicroScope`.
@@ -16,5 +16,5 @@ undefined
 **Signature**
 
 ```ts
-export declare const forkScoped: <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, R | MicroScope>
+export declare const forkScoped: <A, E, R>(self: Micro<A, E, R>) => Micro<MicroFiber<A, E>, never, R | MicroScope>
 ```

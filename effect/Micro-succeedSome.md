@@ -1,6 +1,6 @@
 # succeedSome
 
-Creates a `Micro` effect that will succeed with `Option.Some` of the value.
+Creates a `Micro` effect that will succeed with the value wrapped in `Some`.
 
 To import and use `succeedSome` from the "Micro" module:
 

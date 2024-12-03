@@ -1,6 +1,6 @@
 # succeedNone
 
-Creates a `Micro` effect that will succeed with `Option.None`.
+Creates a `Micro` effect that succeeds with `None`.
 
 To import and use `succeedNone` from the "Micro" module:
 

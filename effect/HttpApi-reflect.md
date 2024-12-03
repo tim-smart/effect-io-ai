@@ -32,8 +32,15 @@ export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Err
       readonly endpoint: HttpApiEndpoint.HttpApiEndpoint<string, HttpMethod>
       readonly mergedAnnotations: Context.Context<never>
       readonly middleware: ReadonlySet<HttpApiMiddleware.TagClassAny>
-      readonly successes: ReadonlyMap<number, Option.Option<AST.AST>>
-      readonly errors: ReadonlyMap<number, Option.Option<AST.AST>>
+      readonly payloads: ReadonlyMap<string, { readonly encoding: HttpApiSchema.Encoding; readonly ast: AST.AST }>
+      readonly successes: ReadonlyMap<
+        number,
+        { readonly ast: Option.Option<AST.AST>; readonly description: Option.Option<string> }
+      >
+      readonly errors: ReadonlyMap<
+        number,
+        { readonly ast: Option.Option<AST.AST>; readonly description: Option.Option<string> }
+      >
     }) => void
   }
 ) => void

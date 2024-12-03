@@ -18,5 +18,5 @@ undefined
 ```ts
 export declare const runCollect: <OutElem, OutErr, InErr, OutDone, InDone, Env>(
   self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, Env>
-) => Effect.Effect<[Chunk.Chunk<OutElem>, OutDone], OutErr, Exclude<Env, Scope.Scope>>
+) => Effect.Effect<[Chunk.Chunk<OutElem>, OutDone], OutErr, Env>
 ```

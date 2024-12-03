@@ -15,5 +15,5 @@ undefined
 ```ts
 export declare const run: <OutErr, InErr, OutDone, InDone, Env>(
   self: Channel<never, unknown, OutErr, InErr, OutDone, InDone, Env>
-) => Effect.Effect<OutDone, OutErr, Exclude<Env, Scope.Scope>>
+) => Effect.Effect<OutDone, OutErr, Env>
 ```

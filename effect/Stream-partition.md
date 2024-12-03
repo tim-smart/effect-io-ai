@@ -1,9 +1,15 @@
 # partition
 
-Partition a stream using a predicate. The first stream will contain all
-element evaluated to true and the second one will contain all element
-evaluated to false. The faster stream may advance by up to buffer elements
-further than the slower one.
+Splits a stream into two substreams based on a predicate.
+
+**Details**
+
+The `Stream.partition` function splits a stream into two parts: one for
+elements that satisfy the predicate (evaluated to `true`) and another for
+those that do not (evaluated to `false`).
+
+The faster stream may advance up to `bufferSize` elements ahead of the slower
+one.
 
 To import and use `partition` from the "Stream" module:
 
@@ -16,21 +22,22 @@ undefined
 **Example**
 
 ```ts
+// Title: Partitioning a Stream into Even and Odd Numbers
 import { Effect, Stream } from "effect"
 
-const partition = Stream.range(1, 10).pipe(Stream.partition((n) => n % 2 === 0, { bufferSize: 5 }))
+const partition = Stream.range(1, 9).pipe(Stream.partition((n) => n % 2 === 0, { bufferSize: 5 }))
 
 const program = Effect.scoped(
   Effect.gen(function* () {
-    const [evens, odds] = yield* partition
-    console.log(yield* Stream.runCollect(evens))
+    const [odds, evens] = yield* partition
     console.log(yield* Stream.runCollect(odds))
+    console.log(yield* Stream.runCollect(evens))
   })
 )
 
 // Effect.runPromise(program)
-// { _id: 'Chunk', values: [ 2, 4, 6, 8, 10 ] }
 // { _id: 'Chunk', values: [ 1, 3, 5, 7, 9 ] }
+// { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
 ```
 
 **Signature**

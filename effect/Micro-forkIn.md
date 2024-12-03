@@ -1,6 +1,6 @@
 # forkIn
 
-Run the `Micro` effect in a new `Handle` that can be awaited, joined, or
+Run the `Micro` effect in a new `MicroFiber` that can be awaited, joined, or
 aborted.
 
 The lifetime of the handle will be attached to the provided `MicroScope`.
@@ -17,7 +17,7 @@ undefined
 
 ```ts
 export declare const forkIn: {
-  (scope: MicroScope): <A, E, R>(self: Micro<A, E, R>) => Micro<Handle<A, E>, never, R>
-  <A, E, R>(self: Micro<A, E, R>, scope: MicroScope): Micro<Handle<A, E>, never, R>
+  (scope: MicroScope): <A, E, R>(self: Micro<A, E, R>) => Micro<MicroFiber<A, E>, never, R>
+  <A, E, R>(self: Micro<A, E, R>, scope: MicroScope): Micro<MicroFiber<A, E>, never, R>
 }
 ```

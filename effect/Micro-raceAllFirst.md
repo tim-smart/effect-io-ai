@@ -2,7 +2,7 @@
 
 Returns an effect that races all the specified effects,
 yielding the value of the first effect to succeed or fail. Losers of
-the race will be interrupted immediately
+the race will be interrupted immediately.
 
 To import and use `raceAllFirst` from the "Micro" module:
 
