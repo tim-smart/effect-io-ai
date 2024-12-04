@@ -2,7 +2,8 @@
 
 Effectfully filter the elements of the provided iterable.
 
-Use the `concurrency` option to control how many elements are processed in parallel.
+Use the `concurrency` option to control how many elements are processed
+concurrently.
 
 To import and use `filterMap` from the "Micro" module:
 
