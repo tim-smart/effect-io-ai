@@ -13,14 +13,7 @@ Cron.make
 **Signature**
 
 ```ts
-export declare const make: ({
-  days,
-  hours,
-  minutes,
-  months,
-  tz,
-  weekdays
-}: {
+export declare const make: (values: {
   readonly minutes: Iterable<number>
   readonly hours: Iterable<number>
   readonly days: Iterable<number>
