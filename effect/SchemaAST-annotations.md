@@ -14,5 +14,5 @@ SchemaAST.annotations
 **Signature**
 
 ```ts
-export declare const annotations: (ast: AST, annotations: Annotations) => AST
+export declare const annotations: (ast: AST, a: Annotations) => AST
 ```
