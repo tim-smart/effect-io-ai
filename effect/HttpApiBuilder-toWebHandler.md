@@ -41,5 +41,8 @@ export declare const toWebHandler: <LA, LE>(
     ) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>
     readonly memoMap?: Layer.MemoMap
   }
-) => { readonly handler: (request: Request) => Promise<Response>; readonly dispose: () => Promise<void> }
+) => {
+  readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>
+  readonly dispose: () => Promise<void>
+}
 ```
