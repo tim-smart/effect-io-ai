@@ -22,13 +22,13 @@ export declare const middleware: {
     middleware: MiddlewareFn<never, R> | Effect.Effect<MiddlewareFn<never, R>, EX, RX>,
     options: { readonly withContext: true }
   ): Layer.Layer<never, EX, HttpRouter.HttpRouter.ExcludeProvided<R> | RX>
-  <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX = never, RX = never>(
-    api: HttpApi.HttpApi<Groups, Error, ErrorR>,
+  <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX = never, RX = never>(
+    api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>,
     middleware: MiddlewareFn<NoInfer<Error>> | Effect.Effect<MiddlewareFn<NoInfer<Error>>, EX, RX>,
     options?: { readonly withContext?: false | undefined }
   ): Layer.Layer<never, EX, RX>
-  <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX = never, RX = never>(
-    api: HttpApi.HttpApi<Groups, Error, ErrorR>,
+  <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX = never, RX = never>(
+    api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>,
     middleware: MiddlewareFn<NoInfer<Error>, R> | Effect.Effect<MiddlewareFn<NoInfer<Error>, R>, EX, RX>,
     options: { readonly withContext: true }
   ): Layer.Layer<never, EX, HttpRouter.HttpRouter.ExcludeProvided<R> | RX>

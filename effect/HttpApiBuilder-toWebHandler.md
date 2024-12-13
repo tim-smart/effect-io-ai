@@ -16,7 +16,7 @@ HttpApiBuilder.toWebHandler
 import { HttpApi, HttpApiBuilder, HttpServer } from "@effect/platform"
 import { Layer } from "effect"
 
-class MyApi extends HttpApi.empty {}
+class MyApi extends HttpApi.make("api") {}
 
 const MyApiLive = HttpApiBuilder.api(MyApi)
 

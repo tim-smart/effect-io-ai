@@ -16,8 +16,8 @@ HttpApi.reflect
 **Signature**
 
 ```ts
-export declare const reflect: <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, R>(
-  self: HttpApi<Groups, Error, R>,
+export declare const reflect: <Id extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, R>(
+  self: HttpApi<Id, Groups, Error, R>,
   options: {
     readonly predicate?: Predicate.Predicate<{
       readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.AnyWithProps

@@ -19,19 +19,20 @@ HttpApiBuilder.group
 
 ```ts
 export declare const group: <
+  ApiId extends string,
   Groups extends HttpApiGroup.HttpApiGroup.Any,
   ApiError,
   ApiR,
   const Name extends HttpApiGroup.HttpApiGroup.Name<Groups>,
   Return
 >(
-  api: HttpApi.HttpApi<Groups, ApiError, ApiR>,
+  api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>,
   groupName: Name,
   build: (
     handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>
   ) => Handlers.ValidateReturn<Return>
 ) => Layer.Layer<
-  HttpApiGroup.ApiGroup<Name>,
+  HttpApiGroup.ApiGroup<ApiId, Name>,
   Handlers.Error<Return>,
   Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>
 >

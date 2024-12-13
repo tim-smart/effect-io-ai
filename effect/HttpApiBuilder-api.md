@@ -13,11 +13,11 @@ HttpApiBuilder.api
 **Signature**
 
 ```ts
-export declare const api: <Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(
-  api: HttpApi.HttpApi<Groups, E, R>
+export declare const api: <Id extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(
+  api: HttpApi.HttpApi<Id, Groups, E, R>
 ) => Layer.Layer<
   HttpApi.Api,
   never,
-  HttpApiGroup.HttpApiGroup.ToService<Groups> | R | HttpApiGroup.HttpApiGroup.ErrorContext<Groups>
+  HttpApiGroup.HttpApiGroup.ToService<Id, Groups> | R | HttpApiGroup.HttpApiGroup.ErrorContext<Groups>
 >
 ```

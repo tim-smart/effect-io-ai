@@ -23,13 +23,13 @@ export declare const middlewareScoped: {
     middleware: Effect.Effect<MiddlewareFn<never, R>, EX, RX>,
     options: { readonly withContext: true }
   ): Layer.Layer<never, EX, HttpRouter.HttpRouter.ExcludeProvided<R> | Exclude<RX, Scope>>
-  <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX, RX>(
-    api: HttpApi.HttpApi<Groups, Error, ErrorR>,
+  <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX, RX>(
+    api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>,
     middleware: Effect.Effect<MiddlewareFn<NoInfer<Error>>, EX, RX>,
     options?: { readonly withContext?: false | undefined }
   ): Layer.Layer<never, EX, Exclude<RX, Scope>>
-  <Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX, RX>(
-    api: HttpApi.HttpApi<Groups, Error, ErrorR>,
+  <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX, RX>(
+    api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>,
     middleware: Effect.Effect<MiddlewareFn<NoInfer<Error>, R>, EX, RX>,
     options: { readonly withContext: true }
   ): Layer.Layer<never, EX, HttpRouter.HttpRouter.ExcludeProvided<R> | Exclude<RX, Scope>>

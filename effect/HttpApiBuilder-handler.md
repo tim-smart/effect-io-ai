@@ -14,6 +14,7 @@ HttpApiBuilder.handler
 
 ```ts
 export declare const handler: <
+  ApiId extends string,
   Groups extends HttpApiGroup.HttpApiGroup.Any,
   ApiError,
   ApiR,
@@ -21,7 +22,7 @@ export declare const handler: <
   const Name extends HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>["name"],
   R
 >(
-  _api: HttpApi.HttpApi<Groups, ApiError, ApiR>,
+  _api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>,
   _groupName: GroupName,
   _name: Name,
   f: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<
