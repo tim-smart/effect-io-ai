@@ -22,7 +22,7 @@ OpenApiJsonSchema.makeWithDefs
 export declare const makeWithDefs: <A, I, R>(
   schema: Schema.Schema<A, I, R>,
   options: {
-    readonly defs: Record<string, JsonSchema>
+    readonly defs: Record<string, any>
     readonly defsPath?: string
     readonly topLevelReferenceStrategy?: "skip" | "keep"
   }
