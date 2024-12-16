@@ -1,0 +1,3975 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "encodeUnknown",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const encodeUnknown: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<A>, IE | ParseError, IE, Done, Done, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "decodeUnknown",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const decodeUnknown: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<any>, ParseError | IE, IE, Done, Done, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplex",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplex: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<OI>, Chunk.Chunk<II>, OutErr, ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<OI>, Chunk.Chunk<II>, OutErr, ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplexUnknown",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplexUnknown: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<any>, OutErr, ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<any>, OutErr, ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "encode",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ChannelSchema",
+      "path": [
+        "src",
+        "ChannelSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "decode",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DevTools",
+      "path": [
+        "src",
+        "DevTools.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerSocket: Layer.Layer<never, never, Socket.Socket>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DevTools",
+      "path": [
+        "src",
+        "DevTools.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DevTools",
+      "path": [
+        "src",
+        "DevTools.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Client",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const Client: Context.Tag<Client, ClientImpl>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect.Effect<ClientImpl, never, Scope.Scope | Socket.Socket>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Client, never, Socket.Socket>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const makeTracer: Effect.Effect<Tracer.Tracer, never, Client>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerTracer: Layer.Layer<never, never, Socket.Socket>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Client",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Client {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Client",
+      "path": [
+        "src",
+        "DevTools",
+        "Client.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ClientImpl",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ClientImpl {\n  readonly unsafeAddSpan: (_: Domain.Span | Domain.SpanEvent) => void\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanStatusStarted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const SpanStatusStarted: Schema.Struct<{ _tag: Schema.Literal<[\"Started\"]>; startTime: typeof Schema.BigInt; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanStatusEnded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const SpanStatusEnded: Schema.Struct<{ _tag: Schema.Literal<[\"Ended\"]>; startTime: typeof Schema.BigInt; endTime: typeof Schema.BigInt; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanStatus",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const SpanStatus: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Started\"]>; startTime: typeof Schema.BigInt; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Ended\"]>; startTime: typeof Schema.BigInt; endTime: typeof Schema.BigInt; }>]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ExternalSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const ExternalSpan: Schema.Struct<{ _tag: Schema.Literal<[\"ExternalSpan\"]>; spanId: typeof Schema.String; traceId: typeof Schema.String; sampled: typeof Schema.Boolean; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Span",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Span: Schema.Schema<Span, SpanFrom, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const SpanEvent: Schema.Schema<SpanEvent, { readonly _tag: \"SpanEvent\"; readonly spanId: string; readonly traceId: string; readonly name: string; readonly attributes: { readonly [x: string]: unknown; }; readonly startTime: string; }, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ParentSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const ParentSpan: Schema.Union<[Schema.Schema<Span, SpanFrom, never>, Schema.Struct<{ _tag: Schema.Literal<[\"ExternalSpan\"]>; spanId: typeof Schema.String; traceId: typeof Schema.String; sampled: typeof Schema.Boolean; }>]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Ping",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Ping: Schema.Struct<{ _tag: Schema.Literal<[\"Ping\"]>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Pong",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Pong: Schema.Struct<{ _tag: Schema.Literal<[\"Pong\"]>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricsRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const MetricsRequest: Schema.Struct<{ _tag: Schema.Literal<[\"MetricsRequest\"]>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricLabel",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const MetricLabel: Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Counter",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Counter: Schema.Struct<{ _tag: Schema.Literal<[\"Counter\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number | bigint; }, { readonly count: string | number; }, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Frequency",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Frequency: Schema.Struct<{ _tag: Schema.Literal<[\"Frequency\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly occurrences: { readonly [x: string]: number; }; }, { readonly occurrences: { readonly [x: string]: number; }; }, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Gauge",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Gauge: Schema.Struct<{ _tag: Schema.Literal<[\"Gauge\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly value: number | bigint; }, { readonly value: string | number; }, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Histogram",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Histogram: Schema.Struct<{ _tag: Schema.Literal<[\"Histogram\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number; readonly buckets: readonly (readonly [number, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, { readonly count: number; readonly buckets: readonly (readonly [number | null, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Summary",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Summary: Schema.Struct<{ _tag: Schema.Literal<[\"Summary\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Option<number>])[]; }, { readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Schema.OptionEncoded<number>])[]; }, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Metric",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Metric: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Counter\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number | bigint; }, { readonly count: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Frequency\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly occurrences: { readonly [x: string]: number; }; }, { readonly occurrences: { readonly [x: string]: number; }; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Gauge\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly value: number | bigint; }, { readonly value: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Histogram\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number; readonly buckets: readonly (readonly [number, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, { readonly count: number; readonly buckets: readonly (readonly [number | null, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Summary\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Option<number>])[]; }, { readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Schema.OptionEncoded<number>])[]; }, never>; }>]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricsSnapshot",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const MetricsSnapshot: Schema.Struct<{ _tag: Schema.Literal<[\"MetricsSnapshot\"]>; metrics: Schema.Array$<Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Counter\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number | bigint; }, { readonly count: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Frequency\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly occurrences: { readonly [x: string]: number; }; }, { readonly occurrences: { readonly [x: string]: number; }; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Gauge\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly value: number | bigint; }, { readonly value: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Histogram\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number; readonly buckets: readonly (readonly [number, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, { readonly count: number; readonly buckets: readonly (readonly [number | null, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Summary\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Option<number>])[]; }, { readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Schema.OptionEncoded<number>])[]; }, never>; }>]>>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Request",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Request: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Ping\"]>; }>, Schema.Schema<Span, SpanFrom, never>, Schema.Schema<SpanEvent, { readonly _tag: \"SpanEvent\"; readonly spanId: string; readonly traceId: string; readonly name: string; readonly attributes: { readonly [x: string]: unknown; }; readonly startTime: string; }, never>, Schema.Struct<{ _tag: Schema.Literal<[\"MetricsSnapshot\"]>; metrics: Schema.Array$<Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Counter\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number | bigint; }, { readonly count: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Frequency\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly occurrences: { readonly [x: string]: number; }; }, { readonly occurrences: { readonly [x: string]: number; }; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Gauge\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly value: number | bigint; }, { readonly value: string | number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Histogram\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly count: number; readonly buckets: readonly (readonly [number, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, { readonly count: number; readonly buckets: readonly (readonly [number | null, number])[]; readonly min: number; readonly max: number; readonly sum: number; }, never>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Summary\"]>; name: typeof Schema.String; description: Schema.optionalWith<typeof Schema.String, { as: \"Option\"; }>; tags: Schema.Array$<Schema.Struct<{ key: typeof Schema.String; value: typeof Schema.String; }>>; state: Schema.Schema<{ readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Option<number>])[]; }, { readonly error: number; readonly count: number; readonly min: number; readonly max: number; readonly sum: number; readonly quantiles: readonly (readonly [number, Schema.OptionEncoded<number>])[]; }, never>; }>]>>; }>]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Response",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const Response: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Pong\"]>; }>, Schema.Struct<{ _tag: Schema.Literal<[\"MetricsRequest\"]>; }>]>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "metric",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ExternalSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface ExternalSpan extends Schema.Schema.Type<typeof ExternalSpan> {}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ExternalSpanFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface ExternalSpanFrom extends Schema.Schema.Encoded<typeof ExternalSpan> {}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Span",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface Span {\n  readonly _tag: \"Span\"\n  readonly spanId: string\n  readonly traceId: string\n  readonly name: string\n  readonly sampled: boolean\n  readonly attributes: ReadonlyMap<string, unknown>\n  readonly parent: Option<ParentSpan>\n  readonly status: {\n    readonly _tag: \"Started\"\n    readonly startTime: bigint\n  } | {\n    readonly _tag: \"Ended\"\n    readonly startTime: bigint\n    readonly endTime: bigint\n  }\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface SpanEvent {\n  readonly _tag: \"SpanEvent\"\n  readonly spanId: string\n  readonly traceId: string\n  readonly name: string\n  readonly attributes: { readonly [x: string]: unknown }\n  readonly startTime: bigint\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SpanFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface SpanFrom {\n  readonly _tag: \"Span\"\n  readonly spanId: string\n  readonly traceId: string\n  readonly name: string\n  readonly sampled: boolean\n  readonly attributes: ReadonlyArray<readonly [string, unknown]>\n  readonly parent: Schema.OptionEncoded<ParentSpanFrom>\n  readonly status: {\n    readonly _tag: \"Started\"\n    readonly startTime: string\n  } | {\n    readonly _tag: \"Ended\"\n    readonly startTime: string\n    readonly endTime: string\n  }\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Metric",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type Metric = Schema.Schema.Type<typeof Metric>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type MetricFrom = Schema.Schema.Encoded<typeof Metric>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricsSnapshot",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type MetricsSnapshot = Schema.Schema.Type<typeof MetricsSnapshot>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MetricsSnapshotFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type MetricsSnapshotFrom = Schema.Schema.Encoded<typeof MetricsSnapshot>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ParentSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type ParentSpan = Span | ExternalSpan"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ParentSpanFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type ParentSpanFrom = SpanFrom | ExternalSpanFrom"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Request",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type Request = Schema.Schema.Type<typeof Request>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Domain",
+      "path": [
+        "src",
+        "DevTools",
+        "Domain.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Response",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export type Response = Schema.Schema.Type<typeof Response>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Server",
+      "path": [
+        "src",
+        "DevTools",
+        "Server.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Server",
+      "path": [
+        "src",
+        "DevTools",
+        "Server.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Client",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Client {\n  readonly queue: Mailbox.ReadonlyMailbox<Domain.Request.WithoutPing>\n  readonly request: (_: Domain.Response.WithoutPong) => Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./ChannelSchema.js\"",
+    "description": "Re-exports all named exports from the \"./ChannelSchema.js\" module as `ChannelSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ChannelSchema from \"./ChannelSchema.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./DevTools.js\"",
+    "description": "Re-exports all named exports from the \"./DevTools.js\" module as `DevTools`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DevTools from \"./DevTools.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Machine.js\"",
+    "description": "Re-exports all named exports from the \"./Machine.js\" module as `Machine`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Machine from \"./Machine.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./MsgPack.js\"",
+    "description": "Re-exports all named exports from the \"./MsgPack.js\" module as `MsgPack`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as MsgPack from \"./MsgPack.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Ndjson.js\"",
+    "description": "Re-exports all named exports from the \"./Ndjson.js\" module as `Ndjson`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Ndjson from \"./Ndjson.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./PersistedCache.js\"",
+    "description": "Re-exports all named exports from the \"./PersistedCache.js\" module as `PersistedCache`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PersistedCache from \"./PersistedCache.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Persistence.js\"",
+    "description": "Re-exports all named exports from the \"./Persistence.js\" module as `Persistence`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Persistence from \"./Persistence.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Reactivity.js\"",
+    "description": "Re-exports all named exports from the \"./Reactivity.js\" module as `Reactivity`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Reactivity from \"./Reactivity.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./RequestResolver.js\"",
+    "description": "Re-exports all named exports from the \"./RequestResolver.js\" module as `RequestResolver`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as RequestResolver from \"./RequestResolver.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./SocketServer.js\"",
+    "description": "Re-exports all named exports from the \"./SocketServer.js\" module as `SocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SocketServer from \"./SocketServer.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Sse.js\"",
+    "description": "Re-exports all named exports from the \"./Sse.js\" module as `Sse`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Sse from \"./Sse.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./VariantSchema.js\"",
+    "description": "Re-exports all named exports from the \"./VariantSchema.js\" module as `VariantSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as VariantSchema from \"./VariantSchema.js\""
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MachineContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class MachineContext"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MachineDefect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class MachineDefect"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const SerializableTypeId: typeof SerializableTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ActorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ActorTypeId: typeof ActorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "retry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const retry: { <M extends Machine.Any, Out, In extends Machine.InitError<M> | MachineDefect, R>(policy: Schedule.Schedule<Out, In, R>): (self: M) => Machine.AddContext<M, R>; <M extends Machine.Any, Out, In extends Machine.InitError<M> | MachineDefect, R>(self: M, policy: Schedule.Schedule<Out, In, R>): Machine.AddContext<M, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "currentTracingEnabled",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tracing",
+    "signature": "export declare const currentTracingEnabled: FiberRef.FiberRef<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "withTracingEnabled",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tracing",
+    "signature": "export declare const withTracingEnabled: { (enabled: boolean): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, enabled: boolean): Effect.Effect<A, E, R>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Machine/ProcedureList.js\"",
+    "description": "Re-exports all named exports from the \"./Machine/ProcedureList.js\" module as `procedures`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "procedures",
+    "signature": "export * as procedures from \"./Machine/ProcedureList.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Machine/SerializableProcedureList.js\"",
+    "description": "Re-exports all named exports from the \"./Machine/SerializableProcedureList.js\" module as `serializable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "procedures",
+    "signature": "export * as serializable from \"./Machine/SerializableProcedureList.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NoReply",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const NoReply: typeof Procedure.NoReply"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeWith",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeSerializable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "boot",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "runtime",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "snapshot",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "runtime",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "restore",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "runtime",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Actor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Actor<M extends Machine.Any> extends Subscribable.Subscribable<Machine.State<M>> {\n  readonly [ActorTypeId]: ActorTypeId\n  readonly machine: M\n  readonly input: Machine.Input<M>\n  readonly send: <Req extends Machine.Public<M>>(request: Req) => Effect.Effect<\n    Request.Success<Req>,\n    Request.Error<Req>\n  >\n  readonly join: Effect.Effect<never, Machine.InitError<M> | MachineDefect>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Machine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Machine<\n  State,\n  Public extends Procedure.TaggedRequest.Any,\n  Private extends Procedure.TaggedRequest.Any,\n  Input,\n  InitErr,\n  R\n> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly initialize: Machine.Initialize<Input, State, Public, Private, InitErr, R, R>\n  readonly retryPolicy: Schedule.Schedule<unknown, InitErr | MachineDefect, R> | undefined\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableActor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SerializableActor<M extends Machine.Any> extends Actor<M> {\n  readonly sendUnknown: (request: unknown) => Effect.Effect<\n    Schema.ExitEncoded<unknown, unknown, unknown>,\n    ParseResult.ParseError\n  >\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableMachine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SerializableMachine<\n  State,\n  Public extends Schema.TaggedRequest.All,\n  Private extends Schema.TaggedRequest.All,\n  Input,\n  InitErr,\n  R,\n  SR\n> extends\n  Machine<\n    State,\n    Public,\n    Private,\n    Input,\n    InitErr,\n    R\n  >\n{\n  readonly [SerializableTypeId]: SerializableTypeId\n  readonly schemaInput: Schema.Schema<Input, unknown, SR>\n  readonly schemaState: Schema.Schema<State, unknown, SR>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ActorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ActorTypeId = typeof ActorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type SerializableTypeId = typeof SerializableTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Machine",
+      "path": [
+        "src",
+        "Machine.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const SerializableTypeId: typeof SerializableTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NoReply",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const NoReply: typeof NoReply"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isSerializable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeSerializable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Procedure",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Procedure<Request extends TaggedRequest.Any, State, R> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly tag: Request[\"_tag\"]\n  readonly handler: Handler<Request, State, any, R>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableProcedure",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SerializableProcedure<Request extends Schema.TaggedRequest.All, State, R>\n  extends Procedure<Request, State, R>\n{\n  readonly [SerializableTypeId]: SerializableTypeId\n  readonly schema: Schema.Schema<Request, unknown>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TaggedRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface TaggedRequest<Tag extends string, A, E> extends Request<A, E> {\n  readonly _tag: Tag\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Handler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Handler<\n  Request extends TaggedRequest.Any,\n  State,\n  Requests extends TaggedRequest.Any,\n  R\n> = (\n  context: Procedure.Context<Requests | Request, Request, State>\n) => Effect.Effect<\n  readonly [response: Request.Success<Request> | NoReply, state: State],\n  Request.Error<Request>,\n  R\n>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NoReply",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type NoReply = typeof NoReply"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type SerializableTypeId = typeof SerializableTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Procedure",
+      "path": [
+        "src",
+        "Machine",
+        "Procedure.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "addProcedure",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const addProcedure: { <Req extends Procedure.TaggedRequest.Any, State, R2>(procedure: Procedure.Procedure<Req, State, R2>): <Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R>(self: ProcedureList<State, Public, Private, R>) => ProcedureList<State, Req | Public, Private, R | R2>; <State, Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R, Req extends Procedure.TaggedRequest.Any, R2>(self: ProcedureList<State, Public, Private, R>, procedure: Procedure.Procedure<Req, State, R2>): ProcedureList<State, Req | Public, Private, R | R2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "addProcedurePrivate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const addProcedurePrivate: { <Req extends Procedure.TaggedRequest.Any, State, R2>(procedure: Procedure.Procedure<Req, State, R2>): <Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R>(self: ProcedureList<State, Public, Private, R>) => ProcedureList<State, Public, Private | Req, R | R2>; <State, Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R, Req extends Procedure.TaggedRequest.Any, R2>(self: ProcedureList<State, Public, Private, R>, procedure: Procedure.Procedure<Req, State, R2>): ProcedureList<State, Public, Private | Req, R | R2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "withInitialState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withInitialState: { <State>(initialState: Types.NoInfer<State>): <Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R>(self: ProcedureList<State, Public, Private, R>) => ProcedureList<State, Public, Private, R>; <State, Public extends Procedure.TaggedRequest.Any, Private extends Procedure.TaggedRequest.Any, R>(self: ProcedureList<State, Public, Private, R>, initialState: Types.NoInfer<State>): ProcedureList<State, Public, Private, R>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "add",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "addPrivate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ProcedureList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ProcedureList<\n  State,\n  Public extends Procedure.TaggedRequest.Any,\n  Private extends Procedure.TaggedRequest.Any,\n  R\n> extends Effect.Effect<ProcedureList<State, Public, Private, R>> {\n  readonly [TypeId]: TypeId\n  readonly initialState: State\n  readonly public: ReadonlyArray<Procedure.Procedure<Public, State, R>>\n  readonly private: ReadonlyArray<Procedure.Procedure<Private, State, R>>\n  readonly identifier: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "ProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializableProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "SerializableProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: <State>(initialState: State, options?: { readonly identifier?: string; }) => SerializableProcedureList<State, never, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializableProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "SerializableProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "add",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const add: { <Req extends Schema.TaggedRequest.All, I, ReqR, State, Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R2>(schema: Schema.Schema<Req, I, ReqR> & { readonly _tag: Req[\"_tag\"]; }, handler: Procedure.Handler<Req, Types.NoInfer<State>, Types.NoInfer<Public> | Types.NoInfer<Private>, R2>): <R>(self: SerializableProcedureList<State, Public, Private, R>) => SerializableProcedureList<State, Req | Public, Private, R | R2 | Schema.SerializableWithResult.Context<Req>>; <State, Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R, Req extends Schema.TaggedRequest.All, I, ReqR, R2>(self: SerializableProcedureList<State, Public, Private, R>, schema: Schema.Schema<Req, I, ReqR> & { readonly _tag: Req[\"_tag\"]; }, handler: Procedure.Handler<Req, Types.NoInfer<State>, Types.NoInfer<Public> | Types.NoInfer<Private>, R2>): SerializableProcedureList<State, Req | Public, Private, R | R2 | Schema.SerializableWithResult.Context<Req>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializableProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "SerializableProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "addPrivate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const addPrivate: { <Req extends Schema.TaggedRequest.All, I, ReqR, State, Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R2>(schema: Schema.Schema<Req, I, ReqR> & { readonly _tag: Req[\"_tag\"]; }, handler: Procedure.Handler<Req, Types.NoInfer<State>, Types.NoInfer<Public> | Types.NoInfer<Private>, R2>): <R>(self: SerializableProcedureList<State, Public, Private, R>) => SerializableProcedureList<State, Public, Private | Req, R | R2 | Schema.SerializableWithResult.Context<Req>>; <State, Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R, Req extends Schema.TaggedRequest.All, I, ReqR, R2>(self: SerializableProcedureList<State, Public, Private, R>, schema: Schema.Schema<Req, I, ReqR> & { readonly _tag: Req[\"_tag\"]; }, handler: Procedure.Handler<Req, Types.NoInfer<State>, Types.NoInfer<Public> | Types.NoInfer<Private>, R2>): SerializableProcedureList<State, Public, Private | Req, R | R2 | Schema.SerializableWithResult.Context<Req>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializableProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "SerializableProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "withInitialState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withInitialState: { <State>(initialState: Types.NoInfer<State>): <Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R>(self: SerializableProcedureList<State, Public, Private, R>) => SerializableProcedureList<State, Public, Private, R>; <State, Public extends Schema.TaggedRequest.All, Private extends Schema.TaggedRequest.All, R>(self: SerializableProcedureList<State, Public, Private, R>, initialState: Types.NoInfer<State>): SerializableProcedureList<State, Public, Private, R>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SerializableProcedureList",
+      "path": [
+        "src",
+        "Machine",
+        "SerializableProcedureList.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SerializableProcedureList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SerializableProcedureList<\n  State,\n  Public extends Schema.TaggedRequest.All,\n  Private extends Schema.TaggedRequest.All,\n  R\n> extends Effect.Effect<SerializableProcedureList<State, Public, Private, R>> {\n  readonly [ProcedureList.TypeId]: ProcedureList.TypeId\n  readonly initialState: State\n  readonly public: ReadonlyArray<Procedure.SerializableProcedure<Public, State, R>>\n  readonly private: ReadonlyArray<Procedure.SerializableProcedure<Private, State, R>>\n  readonly identifier: string\n}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "MsgPackError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class MsgPackError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplexSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplexSchema: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, IR | OR | R>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "pack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "packSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpackSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplex",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NdjsonError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class NdjsonError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NdjsonErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const NdjsonErrorTypeId: typeof NdjsonErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplex",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplex: { (options?: NdjsonOptions): <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | NdjsonError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | NdjsonError, OutDone, InDone, R>, options?: NdjsonOptions): Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplexString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplexString: { (options?: NdjsonOptions): <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OE, IE | NdjsonError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OE, IE | NdjsonError, OutDone, InDone, R>, options?: NdjsonOptions): Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplexSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplexSchema: { <IA, II, IR, OA, OI, OR>(options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>, options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "duplexSchemaString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const duplexSchemaString: { <IA, II, IR, OA, OI, OR>(options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>, options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "packString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "pack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "packSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "packSchemaString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpackString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpackSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unpackSchemaString",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NdjsonOptions",
+    "description": "Represents a set of options which can be used to control how the newline\ndelimited JSON is handled.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface NdjsonOptions {\n  /**\n   * Whether or not the newline delimited JSON parser should ignore empty lines.\n   *\n   * Defaults to `false`.\n   *\n   * From the [newline delimited JSON spec](https://github.com/ndjson/ndjson-spec):\n   * ```text\n   * The parser MAY silently ignore empty lines, e.g. \\n\\n. This behavior MUST\n   * be documented and SHOULD be configurable by the user of the parser.\n   * ```\n   *\n   * @since 1.0.0\n   */\n  readonly ignoreEmptyLines?: boolean\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Ndjson",
+      "path": [
+        "src",
+        "Ndjson.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "NdjsonErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type NdjsonErrorTypeId = typeof NdjsonErrorTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PersistedCache",
+      "path": [
+        "src",
+        "PersistedCache.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PersistedCache",
+      "path": [
+        "src",
+        "PersistedCache.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistedCache",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PersistedCache<K extends Persistence.ResultPersistence.KeyAny> {\n  readonly get: (\n    key: K\n  ) => Effect.Effect<\n    Schema.WithResult.Success<K>,\n    Schema.WithResult.Failure<K> | Persistence.PersistenceError\n  >\n  readonly invalidate: (key: K) => Effect.Effect<void, Persistence.PersistenceError>\n}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistenceBackingError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class PersistenceBackingError"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistenceParseError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class PersistenceParseError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ErrorTypeId: typeof ErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "BackingPersistenceTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const BackingPersistenceTypeId: typeof BackingPersistenceTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "BackingPersistence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const BackingPersistence: Context.Tag<BackingPersistence, BackingPersistence>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ResultPersistenceTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ResultPersistenceTypeId: typeof ResultPersistenceTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ResultPersistence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const ResultPersistence: Context.Tag<ResultPersistence, ResultPersistence>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResult",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerResult: Layer.Layer<ResultPersistence, never, BackingPersistence>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerMemory: Layer.Layer<BackingPersistence, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerKeyValueStore",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerKeyValueStore: Layer.Layer<BackingPersistence, never, KeyValueStore.KeyValueStore>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResultMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerResultMemory: Layer.Layer<ResultPersistence, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResultKeyValueStore",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerResultKeyValueStore: Layer.Layer<ResultPersistence, never, KeyValueStore.KeyValueStore>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "unsafeTtlToExpires",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "BackingPersistence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface BackingPersistence {\n  readonly [BackingPersistenceTypeId]: BackingPersistenceTypeId\n  readonly make: (storeId: string) => Effect.Effect<BackingPersistenceStore, never, Scope.Scope>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "BackingPersistenceStore",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface BackingPersistenceStore {\n  readonly get: (key: string) => Effect.Effect<Option.Option<unknown>, PersistenceError>\n  readonly getMany: (key: Array<string>) => Effect.Effect<Array<Option.Option<unknown>>, PersistenceError>\n  readonly set: (\n    key: string,\n    value: unknown,\n    ttl: Option.Option<Duration.Duration>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly remove: (key: string) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ResultPersistence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ResultPersistence {\n  readonly [ResultPersistenceTypeId]: ResultPersistenceTypeId\n  readonly make: (options: {\n    readonly storeId: string\n    readonly timeToLive?: (key: ResultPersistence.KeyAny, exit: Exit.Exit<unknown, unknown>) => Duration.DurationInput\n  }) => Effect.Effect<ResultPersistenceStore, never, Scope.Scope>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ResultPersistenceStore",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ResultPersistenceStore {\n  readonly get: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<Option.Option<Exit.Exit<A, E>>, PersistenceError, R>\n  readonly getMany: <R, IE, E, IA, A>(\n    key: ReadonlyArray<ResultPersistence.Key<R, IE, E, IA, A>>\n  ) => Effect.Effect<Array<Option.Option<Exit.Exit<A, E>>>, PersistenceError, R>\n  readonly set: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>,\n    value: Exit.Exit<A, E>\n  ) => Effect.Effect<void, PersistenceError, R>\n  readonly remove: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "BackingPersistenceTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type BackingPersistenceTypeId = typeof BackingPersistenceTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ErrorTypeId = typeof ErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistenceError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export type PersistenceError = PersistenceParseError | PersistenceBackingError"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Persistence",
+      "path": [
+        "src",
+        "Persistence.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ResultPersistenceTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ResultPersistenceTypeId = typeof ResultPersistenceTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Lmdb",
+      "path": [
+        "src",
+        "Persistence",
+        "Lmdb.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Lmdb",
+      "path": [
+        "src",
+        "Persistence",
+        "Lmdb.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Lmdb",
+      "path": [
+        "src",
+        "Persistence",
+        "Lmdb.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResult",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis",
+      "path": [
+        "src",
+        "Persistence",
+        "Redis.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis",
+      "path": [
+        "src",
+        "Persistence",
+        "Redis.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis",
+      "path": [
+        "src",
+        "Persistence",
+        "Redis.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis",
+      "path": [
+        "src",
+        "Persistence",
+        "Redis.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResult",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis",
+      "path": [
+        "src",
+        "Persistence",
+        "Redis.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerResultConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Reactivity",
+      "path": [
+        "src",
+        "Reactivity.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Reactivity",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class Reactivity"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Reactivity",
+      "path": [
+        "src",
+        "Reactivity.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect.Effect<Reactivity.Service, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Reactivity",
+      "path": [
+        "src",
+        "Reactivity.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Reactivity, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RequestResolver",
+      "path": [
+        "src",
+        "RequestResolver.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "dataLoader",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const dataLoader: ((options: { readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => <A extends Request.Request<any, any>>(self: RequestResolver.RequestResolver<A, never>) => Effect.Effect<RequestResolver.RequestResolver<A, never>, never, Scope.Scope>) & (<A extends Request.Request<any, any>>(self: RequestResolver.RequestResolver<A, never>, options: { readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<RequestResolver.RequestResolver<A, never>, never, Scope.Scope>)"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RequestResolver",
+      "path": [
+        "src",
+        "RequestResolver.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "persisted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const persisted: { <Req extends PersistedRequest.Any>(options: { readonly storeId: string; readonly timeToLive: (...args: Persistence.ResultPersistence.TimeToLiveArgs<Req>) => Duration.DurationInput; }): (self: RequestResolver.RequestResolver<Req, never>) => Effect.Effect<RequestResolver.RequestResolver<Req, Schema.WithResult.Context<Req>>, never, Persistence.ResultPersistence | Scope.Scope>; <Req extends PersistedRequest.Any>(self: RequestResolver.RequestResolver<Req, never>, options: { readonly storeId: string; readonly timeToLive: (...args: Persistence.ResultPersistence.TimeToLiveArgs<Req>) => Duration.DurationInput; }): Effect.Effect<RequestResolver.RequestResolver<Req, Schema.WithResult.Context<Req>>, never, Persistence.ResultPersistence | Scope.Scope>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RequestResolver",
+      "path": [
+        "src",
+        "RequestResolver.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistedRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface PersistedRequest<R, IE, E, IA, A> extends Request.Request<A, E>, Schema.WithResult<A, IA, E, IE, R> {}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SocketServerError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class SocketServerError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SocketServerTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const SocketServerTypeId: typeof SocketServerTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SocketServer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const SocketServer: Context.Tag<SocketServer, SocketServer>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SocketServer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SocketServer {\n  readonly [SocketServerTypeId]: SocketServerTypeId\n  readonly address: Address\n  readonly run: <R, E, _>(\n    handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>\n  ) => Effect.Effect<never, SocketServerError, R>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TcpAddress",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface TcpAddress {\n  readonly _tag: \"TcpAddress\"\n  readonly hostname: string\n  readonly port: number\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "UnixAddress",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UnixAddress {\n  readonly _tag: \"UnixAddress\"\n  readonly path: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Address",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Address = UnixAddress | TcpAddress"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SocketServer",
+      "path": [
+        "src",
+        "SocketServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SocketServerTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type SocketServerTypeId = typeof SocketServerTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "IncomingMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const IncomingMessage: Context.Tag<IncomingMessage, Http.IncomingMessage>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"../SocketServer.js\"",
+    "description": "Re-exports all named exports from the \"../SocketServer.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"../SocketServer.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "SocketServer",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "IncomingMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export interface IncomingMessage {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Retry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class Retry"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RetryTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const RetryTypeId: typeof RetryTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeParser",
+    "description": "Create a SSE parser.\n\nAdapted from https://github.com/rexxars/eventsource-parser under MIT license.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeChannel",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Event",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Event {\n  readonly _tag: \"Event\"\n  readonly event: string\n  readonly id: string | undefined\n  readonly data: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Parser",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Parser {\n  feed(chunk: string): void\n  reset(): void\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "AnyEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type AnyEvent = Event | Retry"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Sse",
+      "path": [
+        "src",
+        "Sse.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RetryTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type RetryTypeId = typeof RetryTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "FieldTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const FieldTypeId: typeof FieldTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isStruct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "guards",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isField",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "guards",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "fields",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Override",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "overrideable",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Overrideable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "overrideable",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Class",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Class<\n  Self,\n  Fields extends Struct.Fields,\n  SchemaFields extends Schema.Struct.Fields,\n  A,\n  I,\n  R,\n  C\n> extends Schema.Schema<Self, Schema.Simplify<I>, R>, Struct<Fields> {\n  new(\n    props: RequiredKeys<C> extends never ? void | Schema.Simplify<C>\n      : Schema.Simplify<C>,\n    options?: {\n      readonly disableValidation?: boolean\n    }\n  ): A\n\n  readonly ast: AST.Transformation\n\n  make<Args extends Array<any>, X>(\n    this: { new(...args: Args): X },\n    ...args: Args\n  ): X\n\n  annotations(\n    annotations: Schema.Annotations.Schema<Self>\n  ): Schema.SchemaClass<Self, Schema.Simplify<I>, R>\n\n  readonly identifier: string\n  readonly fields: SchemaFields\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Field",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Field<in out A extends Field.Config> extends Pipeable {\n  readonly [FieldTypeId]: FieldTypeId\n  readonly schemas: A\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Overrideable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "overrideable",
+    "signature": "export interface Overrideable<To, From, R = never>\n  extends Schema.PropertySignature<\":\", (To & Brand<\"Override\">) | undefined, never, \":\", From, true, R>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Struct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Struct<in out A extends Field.Fields> extends Pipeable {\n  readonly [TypeId]: A\n  /** @internal */\n  [cacheSymbol]?: Record<string, Schema.Schema.All>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Union",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Union<Members extends ReadonlyArray<Struct<any>>> extends\n  Schema.Union<\n    {\n      readonly [K in keyof Members]: [Members[K]] extends [Schema.Schema.All] ? Members[K] : never\n    }\n  >\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "fromKey",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface fromKey<S extends Schema.Schema.All, Key extends string> extends\n  Schema.PropertySignature<\n    \":\",\n    Schema.Schema.Type<S>,\n    Key,\n    \":\",\n    Schema.Schema.Encoded<S>,\n    false,\n    Schema.Schema.Context<S>\n  >\n{}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Extract",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "extractors",
+    "signature": "export type Extract<V extends string, A extends Struct<any>, IsDefault = false> = [A] extends [\n  Struct<infer Fields>\n] ?\n  IsDefault extends true\n    ? [A] extends [Schema.Schema.Any] ? A : Schema.Struct<Schema.Simplify<ExtractFields<V, Fields>>>\n  : Schema.Struct<Schema.Simplify<ExtractFields<V, Fields>>>\n  : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ExtractFields",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "extractors",
+    "signature": "export type ExtractFields<V extends string, Fields extends Struct.Fields, IsDefault = false> = {\n  readonly [\n    K in keyof Fields as [Fields[K]] extends [Field<infer Config>] ? V extends keyof Config ? K\n      : never\n      : K\n  ]: [Fields[K]] extends [Struct<infer _>] ? Extract<V, Fields[K], IsDefault>\n    : [Fields[K]] extends [Field<infer Config>]\n      ? [Config[V]] extends [Schema.Schema.All | Schema.PropertySignature.All] ? Config[V]\n      : never\n    : [Fields[K]] extends [Schema.Schema.All | Schema.PropertySignature.All] ? Fields[K]\n    : never\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "FieldTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type FieldTypeId = typeof FieldTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "VariantSchema",
+      "path": [
+        "src",
+        "VariantSchema.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "From \"./OpfsWorker.js\"",
+    "description": "Re-exports all named exports from the \"./OpfsWorker.js\" module as `OpfsWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpfsWorker from \"./OpfsWorker.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "From \"./SqliteClient.js\"",
+    "description": "Re-exports all named exports from the \"./SqliteClient.js\" module as `SqliteClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SqliteClient from \"./SqliteClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "From \"./SqliteMigrator.js\"",
+    "description": "Re-exports all named exports from the \"./SqliteMigrator.js\" module as `SqliteMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SqliteMigrator from \"./SqliteMigrator.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpfsWorker",
+      "path": [
+        "src",
+        "OpfsWorker.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpfsWorker",
+      "path": [
+        "src",
+        "OpfsWorker.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "OpfsWorkerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface OpfsWorkerConfig {\n  readonly port: EventTarget & Pick<MessagePort, \"postMessage\" | \"close\">\n  readonly dbName: string\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const SqliteClient: Context.Tag<SqliteClient, SqliteClient>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "currentTransferables",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tranferables",
+    "signature": "export declare const currentTransferables: FiberRef.FiberRef<readonly Transferable[]>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "makeMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "withTransferables",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tranferables",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "layerMemoryConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "layerMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientMemoryConfig\n  readonly export: Effect.Effect<Uint8Array, SqlError>\n  readonly import: (data: Uint8Array) => Effect.Effect<void, SqlError>\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteClientConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SqliteClientConfig {\n  readonly worker: Effect.Effect<Worker | SharedWorker | MessagePort, never, Scope.Scope>\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteClientMemoryConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SqliteClientMemoryConfig {\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SqliteClient",
+      "path": [
+        "src",
+        "SqliteClient.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteMigrator",
+      "path": [
+        "src",
+        "SqliteMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "export declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqliteMigrator",
+      "path": [
+        "src",
+        "SqliteMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "From \"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteMigrator",
+      "path": [
+        "src",
+        "SqliteMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  }
+]

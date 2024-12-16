@@ -1,0 +1,5862 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ArgsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ArgsTypeId: typeof ArgsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isArgs",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isArgs: (u: unknown) => u is Args<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "all",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const all: <const Arg extends Iterable<Args<any>> | Record<string, Args<any>>>(arg: Arg) => All.Return<Arg>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "atLeast",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const atLeast: { (times: 0): <A>(self: Args<A>) => Args<Array<A>>; (times: number): <A>(self: Args<A>) => Args<NonEmptyArray<A>>; <A>(self: Args<A>, times: 0): Args<Array<A>>; <A>(self: Args<A>, times: number): Args<NonEmptyArray<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "atMost",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const atMost: { (times: number): <A>(self: Args<A>) => Args<Array<A>>; <A>(self: Args<A>, times: number): Args<Array<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "between",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const between: { (min: 0, max: number): <A>(self: Args<A>) => Args<Array<A>>; (min: number, max: number): <A>(self: Args<A>) => Args<NonEmptyArray<A>>; <A>(self: Args<A>, min: 0, max: number): Args<Array<A>>; <A>(self: Args<A>, min: number, max: number): Args<NonEmptyArray<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "boolean",
+    "description": "Creates a boolean argument.\n\nCan optionally provide a custom argument name (defaults to `\"boolean\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const boolean: (options?: Args.BaseArgsConfig) => Args<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "choice",
+    "description": "Creates a choice argument.\n\nCan optionally provide a custom argument name (defaults to `\"choice\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const choice: <A>(choices: ReadonlyArray<[string, A]>, config?: Args.BaseArgsConfig) => Args<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "date",
+    "description": "Creates a date argument.\n\nCan optionally provide a custom argument name (defaults to `\"date\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const date: (config?: Args.BaseArgsConfig) => Args<globalThis.Date>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "directory",
+    "description": "Creates a directory argument.\n\nCan optionally provide a custom argument name (defaults to `\"directory\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const directory: (config?: Args.PathArgsConfig) => Args<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "file",
+    "description": "Creates a file argument.\n\nCan optionally provide a custom argument name (defaults to `\"file\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const file: (config?: Args.PathArgsConfig) => Args<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileContent",
+    "description": "Creates a file argument that reads its contents.\n\nCan optionally provide a custom argument name (defaults to `\"file\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileContent: (config?: Args.BaseArgsConfig | undefined) => Args<readonly [path: string, content: Uint8Array]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileParse",
+    "description": "Creates a file argument that reads and parses its contents.\n\nCan optionally provide a custom argument name (defaults to `\"file\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileParse: (config?: Args.FormatArgsConfig | undefined) => Args<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileSchema",
+    "description": "Creates a file argument that reads, parses and validates its contents.\n\nCan optionally provide a custom argument name (defaults to `\"file\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileSchema: <I, A>(schema: Schema<A, I, FileSystem | Path | Terminal>, config?: Args.FormatArgsConfig | undefined) => Args<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileText",
+    "description": "Creates a file argument that reads it's contents.\n\nCan optionally provide a custom argument name (defaults to `\"file\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileText: (config?: Args.BaseArgsConfig | undefined) => Args<readonly [path: string, content: string]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "float",
+    "description": "Creates a floating point number argument.\n\nCan optionally provide a custom argument name (defaults to `\"float\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const float: (config?: Args.BaseArgsConfig) => Args<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getHelp: <A>(self: Args<A>) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getIdentifier",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getIdentifier: <A>(self: Args<A>) => Option<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getMinSize",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getMinSize: <A>(self: Args<A>) => number"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getMaxSize",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getMaxSize: <A>(self: Args<A>) => number"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getUsage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getUsage: <A>(self: Args<A>) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "integer",
+    "description": "Creates an integer argument.\n\nCan optionally provide a custom argument name (defaults to `\"integer\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const integer: (config?: Args.BaseArgsConfig) => Args<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Args<A>) => Args<B>; <A, B>(self: Args<A>, f: (a: A) => B): Args<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapEffect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const mapEffect: { <A, B>(f: (a: A) => Effect<B, HelpDoc, FileSystem | Path | Terminal>): (self: Args<A>) => Args<B>; <A, B>(self: Args<A>, f: (a: A) => Effect<B, HelpDoc, FileSystem | Path | Terminal>): Args<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapTryCatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (e: unknown) => HelpDoc): (self: Args<A>) => Args<B>; <A, B>(self: Args<A>, f: (a: A) => B, onError: (e: unknown) => HelpDoc): Args<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "optional",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const optional: <A>(self: Args<A>) => Args<Option<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "none",
+    "description": "Creates an empty argument.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const none: Args<void>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "path",
+    "description": "Creates a path argument.\n\nCan optionally provide a custom argument name (defaults to `\"path\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const path: (config?: Args.PathArgsConfig) => Args<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "repeated",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const repeated: <A>(self: Args<A>) => Args<Array<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "redacted",
+    "description": "Creates a text argument.\n\nCan optionally provide a custom argument name (defaults to `\"redacted\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const redacted: (config?: Args.BaseArgsConfig) => Args<Redacted>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "secret",
+    "description": "Creates a text argument.\n\nCan optionally provide a custom argument name (defaults to `\"secret\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const secret: (config?: Args.BaseArgsConfig) => Args<Secret>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "text",
+    "description": "Creates a text argument.\n\nCan optionally provide a custom argument name (defaults to `\"text\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (config?: Args.BaseArgsConfig) => Args<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "validate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const validate: { (args: ReadonlyArray<string>, config: CliConfig): <A>(self: Args<A>) => Effect<[Array<string>, A], ValidationError, FileSystem | Path | Terminal>; <A>(self: Args<A>, args: ReadonlyArray<string>, config: CliConfig): Effect<[Array<string>, A], ValidationError, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDefault",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDefault: { <const B>(fallback: B): <A>(self: Args<A>) => Args<B | A>; <A, const B>(self: Args<A>, fallback: B): Args<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withFallbackConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withFallbackConfig: { <B>(config: Config<B>): <A>(self: Args<A>) => Args<B | A>; <A, B>(self: Args<A>, config: Config<B>): Args<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDescription",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDescription: { (description: string): <A>(self: Args<A>) => Args<A>; <A>(self: Args<A>, description: string): Args<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withSchema: { <A, I extends A, B>(schema: Schema<B, I, FileSystem | Path | Terminal>): (self: Args<A>) => Args<B>; <A, I extends A, B>(self: Args<A>, schema: Schema<B, I, FileSystem | Path | Terminal>): Args<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "wizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const wizard: { (config: CliConfig): <A>(self: Args<A>) => Effect<Array<string>, ValidationError | QuitException, FileSystem | Path | Terminal>; <A>(self: Args<A>, config: CliConfig): Effect<Array<string>, ValidationError | QuitException, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Args",
+    "description": "Represents arguments that can be passed to a command-line application.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Args<A> extends Args.Variance<A>, Pipeable {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Args",
+      "path": [
+        "src",
+        "Args.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ArgsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ArgsTypeId = typeof ArgsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AutoCorrect",
+      "path": [
+        "src",
+        "AutoCorrect.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "levensteinDistance",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const levensteinDistance: (first: string, second: string, config: CliConfig) => number"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "builtInOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "options",
+    "signature": "export declare const builtInOptions: <A>(command: Command<A>, usage: Usage, helpDoc: HelpDoc) => Options<Option<BuiltInOptions>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isShowCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isShowCompletions: (self: BuiltInOptions) => self is ShowCompletions"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isShowHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isShowHelp: (self: BuiltInOptions) => self is ShowHelp"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isShowWizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isShowWizard: (self: BuiltInOptions) => self is ShowWizard"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isShowVersion",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isShowVersion: (self: BuiltInOptions) => self is ShowVersion"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "showCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const showCompletions: (shellType: BuiltInOptions.ShellType) => BuiltInOptions"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "showHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const showHelp: (usage: Usage, helpDoc: HelpDoc) => BuiltInOptions"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "showWizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const showWizard: (command: Command<unknown>) => BuiltInOptions"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "showVersion",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const showVersion: BuiltInOptions"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "SetLogLevel",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SetLogLevel {\n  readonly _tag: \"SetLogLevel\"\n  readonly level: LogLevel\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ShowCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShowCompletions {\n  readonly _tag: \"ShowCompletions\"\n  readonly shellType: BuiltInOptions.ShellType\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ShowHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShowHelp {\n  readonly _tag: \"ShowHelp\"\n  readonly usage: Usage\n  readonly helpDoc: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ShowVersion",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShowVersion {\n  readonly _tag: \"ShowVersion\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ShowWizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShowWizard {\n  readonly _tag: \"ShowWizard\"\n  readonly command: Command<unknown>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "BuiltInOptions",
+      "path": [
+        "src",
+        "BuiltInOptions.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "BuiltInOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type BuiltInOptions =\n  | SetLogLevel\n  | ShowHelp\n  | ShowCompletions\n  | ShowWizard\n  | ShowVersion"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliApp",
+      "path": [
+        "src",
+        "CliApp.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: <A>(config: CliApp.ConstructorArgs<A>) => CliApp<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliApp",
+      "path": [
+        "src",
+        "CliApp.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "execution",
+    "signature": "export declare const run: { <R, E, A>(args: ReadonlyArray<string>, execute: (a: A) => Effect<void, E, R>): (self: CliApp<A>) => Effect<void | E, CliApp.Environment | R, ValidationError>; <R, E, A>(self: CliApp<A>, args: ReadonlyArray<string>, execute: (a: A) => Effect<void, E, R>): Effect<void | E, CliApp.Environment | R, ValidationError>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CliApp",
+      "path": [
+        "src",
+        "CliApp.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CliApp",
+    "description": "A `CliApp<A>` is a complete description of a command-line application.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface CliApp<A> extends Pipeable {\n  readonly name: string\n  readonly version: string\n  readonly executable: string\n  readonly command: Command<A>\n  readonly summary: Span\n  readonly footer: HelpDoc\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CliConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const CliConfig: Context.Tag<CliConfig, CliConfig>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "defaultConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const defaultConfig: CliConfig"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "defaultLayer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const defaultLayer: Layer.Layer<CliConfig, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const layer: (config?: Partial<CliConfig>) => Layer.Layer<CliConfig>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (params: Partial<CliConfig>) => CliConfig"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "normalizeCase",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const normalizeCase: { (text: string): (self: CliConfig) => string; (self: CliConfig, text: string): string; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CliConfig",
+      "path": [
+        "src",
+        "CliConfig.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CliConfig",
+    "description": "Represents how arguments from the command-line are to be parsed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface CliConfig {\n  /**\n   * Whether or not the argument parser should be case sensitive.\n   *\n   * Defaults to `false`.\n   */\n  readonly isCaseSensitive: boolean\n  /**\n   * Levenstein distance threshold for when to show auto correct suggestions.\n   *\n   * Defaults to `2`.\n   */\n  readonly autoCorrectLimit: number\n  /**\n   * Whether or not to perform a final check of the command-line arguments for\n   * a built-in option, even if the provided command is not valid.\n   *\n   * Defaults to `false`.\n   */\n  readonly finalCheckBuiltIn: boolean\n  /**\n   * Whether or not to display all the names of an option in the usage of a\n   * particular command.\n   *\n   * Defaults to `true`.\n   */\n  readonly showAllNames: boolean\n  /**\n   * Whether or not to display built-in options in the help documentation\n   * generated for a `Command`.\n   *\n   * Defaults to `true`.\n   */\n  readonly showBuiltIns: boolean\n  /**\n   * Whether or not to display the type of an option in the usage of a\n   * particular command.\n   *\n   * Defaults to `true`.\n   */\n  readonly showTypes: boolean\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fromDescriptor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fromDescriptor: { (): <A extends { readonly name: string; }>(command: Descriptor.Command<A>) => Command<A[\"name\"], never, never, A>; <A extends { readonly name: string; }, R, E>(handler: (_: A) => Effect<void, E, R>): (command: Descriptor.Command<A>) => Command<A[\"name\"], R, E, A>; <A extends { readonly name: string; }>(descriptor: Descriptor.Command<A>): Command<A[\"name\"], never, never, A>; <A extends { readonly name: string; }, R, E>(descriptor: Descriptor.Command<A>, handler: (_: A) => Effect<void, E, R>): Command<A[\"name\"], R, E, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getHelp: <Name extends string, R, E, A>(self: Command<Name, R, E, A>, config: CliConfig) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getNames",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getNames: <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => HashSet<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getBashCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getBashCompletions: <Name extends string, R, E, A>(self: Command<Name, R, E, A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getFishCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getFishCompletions: <Name extends string, R, E, A>(self: Command<Name, R, E, A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getZshCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getZshCompletions: <Name extends string, R, E, A>(self: Command<Name, R, E, A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getSubcommands",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getSubcommands: <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => HashMap<string, Descriptor.Command<unknown>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getUsage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const getUsage: <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: { <Name extends string>(name: Name): Command<Name, never, never, {}>; <Name extends string, const Config extends Command.Config>(name: Name, config: Config): Command<Name, never, never, Types.Simplify<Command.ParseConfig<Config>>>; <Name extends string, const Config extends Command.Config, R, E>(name: Name, config: Config, handler: (_: Types.Simplify<Command.ParseConfig<Config>>) => Effect<void, E, R>): Command<Name, R, E, Types.Simplify<Command.ParseConfig<Config>>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "prompt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const prompt: <Name extends string, A, R, E>(name: Name, prompt: Prompt<A>, handler: (_: A) => Effect<void, E, R>) => Command<string, R, E, A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "provide",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const provide: { <A, LR, LE, LA>(layer: Layer<LA, LE, LR> | ((_: A) => Layer<LA, LE, LR>)): <Name extends string, R, E>(self: Command<Name, R, E, A>) => Command<Name, LR | Exclude<R, LA>, LE | E, A>; <Name extends string, R, E, A, LR, LE, LA>(self: Command<Name, R, E, A>, layer: Layer<LA, LE, LR> | ((_: A) => Layer<LA, LE, LR>)): Command<Name, LR | Exclude<R, LA>, E | LE, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "provideEffect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const provideEffect: { <I, S, A, R2, E2>(tag: Tag<I, S>, effect: Effect<S, E2, R2> | ((_: A) => Effect<S, E2, R2>)): <Name extends string, R, E>(self: Command<Name, R, E, A>) => Command<Name, R2 | Exclude<R, I>, E2 | E, A>; <Name extends string, R, E, A, I, S, R2, E2>(self: Command<Name, R, E, A>, tag: Tag<I, S>, effect: Effect<S, E2, R2> | ((_: A) => Effect<S, E2, R2>)): Command<Name, R2 | Exclude<R, I>, E | E2, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "provideEffectDiscard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const provideEffectDiscard: { <A, R2, E2, _>(effect: Effect<_, E2, R2> | ((_: A) => Effect<_, E2, R2>)): <Name extends string, R, E>(self: Command<Name, R, E, A>) => Command<Name, R2 | R, E2 | E, A>; <Name extends string, R, E, A, R2, E2, _>(self: Command<Name, R, E, A>, effect: Effect<_, E2, R2> | ((_: A) => Effect<_, E2, R2>)): Command<Name, R | R2, E | E2, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "provideSync",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const provideSync: { <I, S, A>(tag: Tag<I, S>, service: S | ((_: A) => S)): <Name extends string, R, E>(self: Command<Name, R, E, A>) => Command<Name, Exclude<R, I>, E, A>; <Name extends string, R, E, A, I, S>(self: Command<Name, R, E, A>, tag: Tag<I, S>, service: S | ((_: A) => S)): Command<Name, Exclude<R, I>, E, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "transformHandler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const transformHandler: { <R, E, A, R2, E2>(f: (effect: Effect<void, E, R>, config: A) => Effect<void, E2, R2>): <Name extends string>(self: Command<Name, R, E, A>) => Command<Name, R | R2, E | E2, A>; <Name extends string, R, E, A, R2, E2>(self: Command<Name, R, E, A>, f: (effect: Effect<void, E, R>, config: A) => Effect<void, E2, R2>): Command<Name, R | R2, E | E2, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDescription",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDescription: { (help: string | HelpDoc): <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => Command<Name, R, E, A>; <Name extends string, R, E, A>(self: Command<Name, R, E, A>, help: string | HelpDoc): Command<Name, R, E, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withHandler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withHandler: { <A, R, E>(handler: (_: A) => Effect<void, E, R>): <Name extends string, XR, XE>(self: Command<Name, XR, XE, A>) => Command<Name, R, E, A>; <Name extends string, XR, XE, A, R, E>(self: Command<Name, XR, XE, A>, handler: (_: A) => Effect<void, E, R>): Command<Name, R, E, A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withSubcommands",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withSubcommands: { <Subcommand extends readonly [Command<any, any, any, any>, ...Array<Command<any, any, any, any>>]>(subcommands: Subcommand): <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => Command<Name, R | Exclude<Effect.Context<ReturnType<Subcommand[number][\"handler\"]>>, Command.Context<Name>>, E | Effect.Error<ReturnType<Subcommand[number][\"handler\"]>>, Descriptor.Command.ComputeParsedType<A & Readonly<{ subcommand: Option<Descriptor.Command.GetParsedType<Subcommand[number][\"descriptor\"]>>; }>>>; <Name extends string, R, E, A, Subcommand extends readonly [Command<any, any, any, any>, ...Array<Command<any, any, any, any>>]>(self: Command<Name, R, E, A>, subcommands: Subcommand): Command<Name, R | Exclude<Effect.Context<ReturnType<Subcommand[number][\"handler\"]>>, Command.Context<Name>>, E | Effect.Error<ReturnType<Subcommand[number][\"handler\"]>>, Descriptor.Command.ComputeParsedType<A & Readonly<{ subcommand: Option<Descriptor.Command.GetParsedType<Subcommand[number][\"descriptor\"]>>; }>>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "wizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const wizard: { (prefix: ReadonlyArray<string>, config: CliConfig): <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => Effect<Array<string>, QuitException | ValidationError, FileSystem | Path | Terminal>; <Name extends string, R, E, A>(self: Command<Name, R, E, A>, prefix: ReadonlyArray<string>, config: CliConfig): Effect<Array<string>, QuitException | ValidationError, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "export declare const run: { (config: Omit<CliApp.ConstructorArgs<never>, \"command\">): <Name extends string, R, E, A>(self: Command<Name, R, E, A>) => (args: ReadonlyArray<string>) => Effect<void, E | ValidationError, R | CliApp.Environment>; <Name extends string, R, E, A>(self: Command<Name, R, E, A>, config: Omit<CliApp.ConstructorArgs<never>, \"command\">): (args: ReadonlyArray<string>) => Effect<void, E | ValidationError, R | CliApp.Environment>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Command",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Command<Name extends string, R, E, A> extends Pipeable, Effect<A, never, Command.Context<Name>> {\n  readonly [TypeId]: TypeId\n  readonly descriptor: Descriptor.Command<A>\n  readonly handler: (_: A) => Effect<void, E, R>\n  readonly tag: Tag<Command.Context<Name>, A>\n  readonly transform: Command.Transform<R, E, A>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Command",
+      "path": [
+        "src",
+        "Command.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getHelp: <A>(self: Command<A>, config: CliConfig) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getBashCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getBashCompletions: <A>(self: Command<A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getFishCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getFishCompletions: <A>(self: Command<A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getZshCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getZshCompletions: <A>(self: Command<A>, programName: string) => Effect<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getNames",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getNames: <A>(self: Command<A>) => HashSet<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getSubcommands",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getSubcommands: <A>(self: Command<A>) => HashMap<string, Command<unknown>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getUsage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getUsage: <A>(self: Command<A>) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Command<A>) => Command<B>; <A, B>(self: Command<A>, f: (a: A) => B): Command<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapEffect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const mapEffect: { <A, B>(f: (a: A) => Effect<B, ValidationError, FileSystem | Path | Terminal>): (self: Command<A>) => Command<B>; <A, B>(self: Command<A>, f: (a: A) => Effect<B, ValidationError, FileSystem | Path | Terminal>): Command<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "parse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const parse: { (args: ReadonlyArray<string>, config: CliConfig): <A>(self: Command<A>) => Effect<CommandDirective<A>, ValidationError, FileSystem | Path | Terminal>; <A>(self: Command<A>, args: ReadonlyArray<string>, config: CliConfig): Effect<CommandDirective<A>, ValidationError, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "prompt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const prompt: <Name extends string, A>(name: Name, prompt: Prompt<A>) => Command<{ readonly name: Name; readonly value: A; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: <Name extends string, OptionsType = void, ArgsType = void>(name: Name, options?: Options<OptionsType>, args?: Args<ArgsType>) => Command<{ readonly name: Name; readonly options: OptionsType; readonly args: ArgsType; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDescription",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDescription: { (description: string | HelpDoc): <A>(self: Command<A>) => Command<A>; <A>(self: Command<A>, description: string | HelpDoc): Command<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withSubcommands",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withSubcommands: { <const Subcommands extends readonly [readonly [id: unknown, command: Command<any>], ...Array<readonly [id: unknown, command: Command<any>]>]>(subcommands: [...Subcommands]): <A>(self: Command<A>) => Command<Command.ComputeParsedType<A & Readonly<{ subcommand: Option<Command.Subcommands<Subcommands>>; }>>>; <A, const Subcommands extends readonly [readonly [id: unknown, command: Command<any>], ...Array<readonly [id: unknown, command: Command<any>]>]>(self: Command<A>, subcommands: [...Subcommands]): Command<Command.ComputeParsedType<A & Readonly<{ subcommand: Option<Command.Subcommands<Subcommands>>; }>>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "wizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const wizard: { (prefix: ReadonlyArray<string>, config: CliConfig): <A>(self: Command<A>) => Effect<Array<string>, ValidationError | QuitException, FileSystem | Path | Terminal>; <A>(self: Command<A>, prefix: ReadonlyArray<string>, config: CliConfig): Effect<Array<string>, ValidationError | QuitException, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Command",
+    "description": "A `Command` represents a command in a command-line application.\n\nEvery command-line application will have at least one command: the\napplication itself. Other command-line applications may support multiple\ncommands.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Command<A> extends Command.Variance<A>, Pipeable {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "CommandDescriptor",
+      "path": [
+        "src",
+        "CommandDescriptor.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "builtIn",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const builtIn: (option: BuiltInOptions) => CommandDirective<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isBuiltIn",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isBuiltIn: <A>(self: CommandDirective<A>) => self is BuiltIn"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isUserDefined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUserDefined: <A>(self: CommandDirective<A>) => self is UserDefined<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: CommandDirective<A>) => CommandDirective<B>; <A, B>(self: CommandDirective<A>, f: (a: A) => B): CommandDirective<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "userDefined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const userDefined: <A>(leftover: ReadonlyArray<string>, value: A) => CommandDirective<A>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "BuiltIn",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface BuiltIn {\n  readonly _tag: \"BuiltIn\"\n  readonly option: BuiltInOptions\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "UserDefined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UserDefined<A> {\n  readonly _tag: \"UserDefined\"\n  readonly leftover: ReadonlyArray<string>\n  readonly value: A\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "CommandDirective",
+      "path": [
+        "src",
+        "CommandDirective.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CommandDirective",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type CommandDirective<A> = BuiltIn | UserDefined<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ConfigErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "errors",
+    "signature": "export declare const ConfigErrorTypeId: typeof ConfigErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ConfigFileError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "errors",
+    "signature": "export declare const ConfigFileError: (message: string) => ConfigFileError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "makeProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "constructors",
+    "signature": "export declare const makeProvider: (fileName: string, options?: { readonly formats?: ReadonlyArray<Kind>; readonly searchPaths?: ReadonlyArray<string>; } | undefined) => Effect<ConfigProvider, ConfigFileError, Path | FileSystem>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: (fileName: string, options?: { readonly formats?: ReadonlyArray<Kind>; readonly searchPaths?: ReadonlyArray<string>; } | undefined) => Layer<never, ConfigFileError, Path | FileSystem>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ConfigFileError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "errors",
+    "signature": "export interface ConfigFileError extends YieldableError {\n  readonly [ConfigErrorTypeId]: ConfigErrorTypeId\n  readonly _tag: \"ConfigFileError\"\n  readonly message: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ConfigErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "errors",
+    "signature": "export type ConfigErrorTypeId = typeof ConfigErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ConfigFile",
+      "path": [
+        "src",
+        "ConfigFile.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Kind",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "models",
+    "signature": "export type Kind = \"json\" | \"yaml\" | \"ini\" | \"toml\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isEmpty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEmpty: (helpDoc: HelpDoc) => helpDoc is Empty"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isHeader",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isHeader: (helpDoc: HelpDoc) => helpDoc is Header"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isParagraph",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isParagraph: (helpDoc: HelpDoc) => helpDoc is Paragraph"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isDescriptionList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isDescriptionList: (helpDoc: HelpDoc) => helpDoc is DescriptionList"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isEnumeration",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEnumeration: (helpDoc: HelpDoc) => helpDoc is Enumeration"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isSequence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isSequence: (helpDoc: HelpDoc) => helpDoc is Sequence"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "blocks",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const blocks: (helpDocs: Iterable<HelpDoc>) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "h1",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const h1: (value: string | Span) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "h2",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const h2: (value: string | Span) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "h3",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const h3: (value: string | Span) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "p",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const p: (value: string | Span) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "descriptionList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const descriptionList: (definitions: NonEmptyReadonlyArray<[Span, HelpDoc]>) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "enumeration",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const enumeration: (elements: NonEmptyReadonlyArray<HelpDoc>) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "getters",
+    "signature": "export declare const getSpan: (self: HelpDoc) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "sequence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const sequence: { (that: HelpDoc): (self: HelpDoc) => HelpDoc; (self: HelpDoc, that: HelpDoc): HelpDoc; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "orElse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const orElse: { (that: HelpDoc): (self: HelpDoc) => HelpDoc; (self: HelpDoc, that: HelpDoc): HelpDoc; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapDescriptionList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const mapDescriptionList: { (f: (span: Span, helpDoc: HelpDoc) => [Span, HelpDoc]): (self: HelpDoc) => HelpDoc; (self: HelpDoc, f: (span: Span, helpDoc: HelpDoc) => [Span, HelpDoc]): HelpDoc; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "toAnsiDoc",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "rendering",
+    "signature": "export declare const toAnsiDoc: (self: HelpDoc) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "toAnsiText",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "rendering",
+    "signature": "export declare const toAnsiText: (self: HelpDoc) => string"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "DescriptionList",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface DescriptionList {\n  readonly _tag: \"DescriptionList\"\n  readonly definitions: NonEmptyReadonlyArray<readonly [Span, HelpDoc]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Empty {\n  readonly _tag: \"Empty\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Enumeration",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Enumeration {\n  readonly _tag: \"Enumeration\"\n  readonly elements: NonEmptyReadonlyArray<HelpDoc>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Header",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Header {\n  readonly _tag: \"Header\"\n  readonly value: Span\n  readonly level: number\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Paragraph",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Paragraph {\n  readonly _tag: \"Paragraph\"\n  readonly value: Span\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Sequence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Sequence {\n  readonly _tag: \"Sequence\"\n  readonly left: HelpDoc\n  readonly right: HelpDoc\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "HelpDoc",
+      "path": [
+        "src",
+        "HelpDoc.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "HelpDoc",
+    "description": "A `HelpDoc` models the full documentation for a command-line application.\n\n`HelpDoc` is composed of optional header and footers, and in-between, a\nlist of HelpDoc-level content items.\n\nHelpDoc-level content items, in turn, can be headers, paragraphs, description\nlists, and enumerations.\n\nA `HelpDoc` can be converted into plaintext, JSON, and HTML.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type HelpDoc = Empty | Header | Paragraph | DescriptionList | Enumeration | Sequence"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isSequence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isSequence: (self: Span) => self is Sequence"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isStrong",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isStrong: (self: Span) => self is Strong"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isText",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isText: (self: Span) => self is Text"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isUri",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUri: (self: Span) => self is URI"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isWeak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isWeak: (self: Span) => self is Weak"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "space",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const space: Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (value: string) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "code",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const code: (value: string | Span) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "error",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const error: (value: string | Span) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "weak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const weak: (value: string | Span) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "strong",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const strong: (value: string | Span) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "uri",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const uri: (value: string) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "concat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const concat: { (that: Span): (self: Span) => Span; (self: Span, that: Span): Span; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "spans",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const spans: (spans: Iterable<Span>) => Span"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Highlight",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Highlight {\n  readonly _tag: \"Highlight\"\n  readonly value: Span\n  readonly color: Color\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Sequence",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Sequence {\n  readonly _tag: \"Sequence\"\n  readonly left: Span\n  readonly right: Span\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Strong",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Strong {\n  readonly _tag: \"Strong\"\n  readonly value: Span\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Text {\n  readonly _tag: \"Text\"\n  readonly value: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "URI",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface URI {\n  readonly _tag: \"URI\"\n  readonly value: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Weak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Weak {\n  readonly _tag: \"Weak\"\n  readonly value: Span\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Span",
+      "path": [
+        "src",
+        "HelpDoc",
+        "Span.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Span",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Span = Highlight | Sequence | Strong | Text | URI | Weak"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Args.js\"",
+    "description": "Re-exports all named exports from the \"./Args.js\" module as `Args`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Args from \"./Args.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./AutoCorrect.js\"",
+    "description": "Re-exports all named exports from the \"./AutoCorrect.js\" module as `AutoCorrect`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as AutoCorrect from \"./AutoCorrect.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./BuiltInOptions.js\"",
+    "description": "Re-exports all named exports from the \"./BuiltInOptions.js\" module as `BuiltInOptions`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BuiltInOptions from \"./BuiltInOptions.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./CliApp.js\"",
+    "description": "Re-exports all named exports from the \"./CliApp.js\" module as `CliApp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as CliApp from \"./CliApp.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./CliConfig.js\"",
+    "description": "Re-exports all named exports from the \"./CliConfig.js\" module as `CliConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as CliConfig from \"./CliConfig.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Command.js\"",
+    "description": "Re-exports all named exports from the \"./Command.js\" module as `Command`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Command from \"./Command.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./CommandDescriptor.js\"",
+    "description": "Re-exports all named exports from the \"./CommandDescriptor.js\" module as `CommandDescriptor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as CommandDescriptor from \"./CommandDescriptor.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./CommandDirective.js\"",
+    "description": "Re-exports all named exports from the \"./CommandDirective.js\" module as `CommandDirective`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as CommandDirective from \"./CommandDirective.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./ConfigFile.js\"",
+    "description": "Re-exports all named exports from the \"./ConfigFile.js\" module as `ConfigFile`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "exports",
+    "signature": "export * as ConfigFile from \"./ConfigFile.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./HelpDoc.js\"",
+    "description": "Re-exports all named exports from the \"./HelpDoc.js\" module as `HelpDoc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as HelpDoc from \"./HelpDoc.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./HelpDoc/Span.js\"",
+    "description": "Re-exports all named exports from the \"./HelpDoc/Span.js\" module as `Span`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Span from \"./HelpDoc/Span.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Options.js\"",
+    "description": "Re-exports all named exports from the \"./Options.js\" module as `Options`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Options from \"./Options.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Primitive.js\"",
+    "description": "Re-exports all named exports from the \"./Primitive.js\" module as `Primitive`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Primitive from \"./Primitive.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Prompt.js\"",
+    "description": "Re-exports all named exports from the \"./Prompt.js\" module as `Prompt`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Prompt from \"./Prompt.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./Usage.js\"",
+    "description": "Re-exports all named exports from the \"./Usage.js\" module as `Usage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Usage from \"./Usage.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "From \"./ValidationError.js\"",
+    "description": "Re-exports all named exports from the \"./ValidationError.js\" module as `ValidationError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ValidationError from \"./ValidationError.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "OptionsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const OptionsTypeId: typeof OptionsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isOptions: (u: unknown) => u is Options<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "all",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const all: <const Arg extends Iterable<Options<any>> | Record<string, Options<any>>>(arg: Arg) => All.Return<Arg>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "boolean",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const boolean: (name: string, options?: Options.BooleanOptionsConfig) => Options<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "choice",
+    "description": "Constructs command-line `Options` that represent a choice between several\ninputs. The input will be mapped to it's associated value during parsing.",
+    "deprecated": false,
+    "examples": [
+      "import * as Options from \"@effect/cli/Options\"\n\nexport const animal: Options.Options<\"dog\" | \"cat\"> = Options.choice(\n  \"animal\",\n  [\"dog\", \"cat\"]\n)"
+    ],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const choice: <A extends string, C extends ReadonlyArray<A>>(name: string, choices: C) => Options<C[number]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "choiceWithValue",
+    "description": "Constructs command-line `Options` that represent a choice between several\ninputs. The input will be mapped to it's associated value during parsing.",
+    "deprecated": false,
+    "examples": [
+      "import * as Options from \"@effect/cli/Options\"\nimport * as Data from \"effect/Data\"\n\nexport type Animal = Dog | Cat\n\nexport interface Dog {\n  readonly _tag: \"Dog\"\n}\n\nexport const Dog = Data.tagged<Dog>(\"Dog\")\n\nexport interface Cat {\n  readonly _tag: \"Cat\"\n}\n\nexport const Cat = Data.tagged<Cat>(\"Cat\")\n\nexport const animal: Options.Options<Animal> = Options.choiceWithValue(\"animal\", [\n  [\"dog\", Dog()],\n  [\"cat\", Cat()],\n])"
+    ],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const choiceWithValue: <C extends ReadonlyArray<[string, any]>>(name: string, choices: C) => Options<C[number][1]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "date",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const date: (name: string) => Options<globalThis.Date>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "directory",
+    "description": "Creates a parameter expecting path to a directory.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const directory: (name: string, config?: Options.PathOptionsConfig) => Options<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "file",
+    "description": "Creates a parameter expecting path to a file.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const file: (name: string, config?: Options.PathOptionsConfig) => Options<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileContent",
+    "description": "Creates a parameter expecting path to a file and reads its contents.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileContent: (name: string) => Options<readonly [path: string, content: Uint8Array]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileParse",
+    "description": "Creates a parameter expecting path to a file and parse its contents.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileParse: (name: string, format?: \"json\" | \"yaml\" | \"ini\" | \"toml\" | undefined) => Options<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileSchema",
+    "description": "Creates a parameter expecting path to a file, parse its contents and validate\nit with a Schema.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileSchema: <I, A>(name: string, schema: Schema<A, I, FileSystem | Path | Terminal>, format?: \"json\" | \"yaml\" | \"ini\" | \"toml\" | undefined) => Options<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "fileText",
+    "description": "Creates a parameter expecting path to a file and reads its contents.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fileText: (name: string) => Options<readonly [path: string, content: string]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "float",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const float: (name: string) => Options<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getHelp: <A>(self: Options<A>) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getIdentifier",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getIdentifier: <A>(self: Options<A>) => Option<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getUsage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getUsage: <A>(self: Options<A>) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "integer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const integer: (name: string) => Options<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "keyValueMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const keyValueMap: (option: string | Options<string>) => Options<HashMap<string, string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "none",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const none: Options<void>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "redacted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const redacted: (name: string) => Options<Redacted>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "secret",
+    "description": null,
+    "deprecated": true,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const secret: (name: string) => Options<Secret>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (name: string) => Options<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "atMost",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const atMost: { (times: number): <A>(self: Options<A>) => Options<Array<A>>; <A>(self: Options<A>, times: number): Options<Array<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "atLeast",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const atLeast: { (times: 0): <A>(self: Options<A>) => Options<Array<A>>; (times: number): <A>(self: Options<A>) => Options<NonEmptyArray<A>>; <A>(self: Options<A>, times: 0): Options<Array<A>>; <A>(self: Options<A>, times: number): Options<NonEmptyArray<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "between",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const between: { (min: 0, max: number): <A>(self: Options<A>) => Options<Array<A>>; (min: number, max: number): <A>(self: Options<A>) => Options<NonEmptyArray<A>>; <A>(self: Options<A>, min: 0, max: number): Options<Array<A>>; <A>(self: Options<A>, min: number, max: number): Options<NonEmptyArray<A>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "filterMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const filterMap: { <A, B>(f: (a: A) => Option<B>, message: string): (self: Options<A>) => Options<B>; <A, B>(self: Options<A>, f: (a: A) => Option<B>, message: string): Options<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isBool",
+    "description": "Returns `true` if the specified `Options` is a boolean flag, `false`\notherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const isBool: <A>(self: Options<A>) => boolean"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Options<A>) => Options<B>; <A, B>(self: Options<A>, f: (a: A) => B): Options<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapEffect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const mapEffect: { <A, B>(f: (a: A) => Effect<B, ValidationError, FileSystem | Path | Terminal>): (self: Options<A>) => Options<B>; <A, B>(self: Options<A>, f: (a: A) => Effect<B, ValidationError, FileSystem | Path | Terminal>): Options<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mapTryCatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (e: unknown) => HelpDoc): (self: Options<A>) => Options<B>; <A, B>(self: Options<A>, f: (a: A) => B, onError: (e: unknown) => HelpDoc): Options<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "optional",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const optional: <A>(self: Options<A>) => Options<Option<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "orElse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const orElse: { <A>(that: Options<A>): <B>(self: Options<B>) => Options<A | B>; <A, B>(self: Options<A>, that: Options<B>): Options<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "orElseEither",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const orElseEither: { <A>(that: Options<A>): <B>(self: Options<B>) => Options<Either<A, B>>; <A, B>(self: Options<A>, that: Options<B>): Options<Either<A, B>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "parse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const parse: { (args: HashMap<string, ReadonlyArray<string>>, config: CliConfig): <A>(self: Options<A>) => Effect<A, ValidationError, FileSystem>; <A>(self: Options<A>, args: HashMap<string, ReadonlyArray<string>>, config: CliConfig): Effect<A, ValidationError, FileSystem>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "repeated",
+    "description": "Indicates that the specified command-line option can be repeated `0` or more\ntimes.\n\n**NOTE**: if the command-line option is not provided, and empty array will be\nreturned as the value for said option.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const repeated: <A>(self: Options<A>) => Options<Array<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "processCommandLine",
+    "description": "Processes the provided command-line arguments, searching for the specified\n`Options`.\n\nReturns an `Option<ValidationError>`, any leftover arguments, and the\nconstructed value of type `A`. The possible error inside\n`Option<ValidationError>` would only be triggered if there is an error when\nparsing the command-line arguments. This is because `ValidationError`s are\nalso used internally to control the end of the command-line arguments (i.e.\nthe command-line symbol `--`) corresponding to options.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const processCommandLine: { (args: ReadonlyArray<string>, config: CliConfig): <A>(self: Options<A>) => Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>; <A>(self: Options<A>, args: ReadonlyArray<string>, config: CliConfig): Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withAlias",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withAlias: { (alias: string): <A>(self: Options<A>) => Options<A>; <A>(self: Options<A>, alias: string): Options<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDefault",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDefault: { <const B>(fallback: B): <A>(self: Options<A>) => Options<B | A>; <A, const B>(self: Options<A>, fallback: B): Options<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withFallbackConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withFallbackConfig: { <B>(config: Config<B>): <A>(self: Options<A>) => Options<B | A>; <A, B>(self: Options<A>, config: Config<B>): Options<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withFallbackPrompt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withFallbackPrompt: { <B>(prompt: Prompt<B>): <A>(self: Options<A>) => Options<B | A>; <A, B>(self: Options<A>, prompt: Prompt<B>): Options<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withDescription",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withDescription: { (description: string): <A>(self: Options<A>) => Options<A>; <A>(self: Options<A>, description: string): Options<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withPseudoName",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withPseudoName: { (pseudoName: string): <A>(self: Options<A>) => Options<A>; <A>(self: Options<A>, pseudoName: string): Options<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "withSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const withSchema: { <A, I extends A, B>(schema: Schema<B, I, FileSystem | Path | Terminal>): (self: Options<A>) => Options<B>; <A, I extends A, B>(self: Options<A>, schema: Schema<B, I, FileSystem | Path | Terminal>): Options<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "wizard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const wizard: { (config: CliConfig): <A>(self: Options<A>) => Effect<Array<string>, QuitException | ValidationError, FileSystem | Path | Terminal>; <A>(self: Options<A>, config: CliConfig): Effect<Array<string>, QuitException | ValidationError, FileSystem | Path | Terminal>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Options",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Options<A> extends Options.Variance<A>, Pipeable {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Options",
+      "path": [
+        "src",
+        "Options.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "OptionsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type OptionsTypeId = typeof OptionsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "PrimitiveTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const PrimitiveTypeId: typeof PrimitiveTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isBool",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Predicates",
+    "signature": "export declare const isBool: <A>(self: Primitive<A>) => boolean"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "boolean",
+    "description": "Represents a boolean value.\n\nTrue values can be passed as one of: `[\"true\", \"1\", \"y\", \"yes\" or \"on\"]`.\nFalse value can be passed as one of: `[\"false\", \"o\", \"n\", \"no\" or \"off\"]`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const boolean: (defaultValue: Option<boolean>) => Primitive<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "choice",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const choice: <A>(alternatives: ReadonlyArray<[string, A]>) => Primitive<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "date",
+    "description": "Represents a date in ISO-8601 format, such as `2007-12-03T10:15:30`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const date: Primitive<Date>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "float",
+    "description": "Represents a floating point number.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const float: Primitive<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getChoices",
+    "description": "Returns a text representation of the valid choices for a primitive type, if\nany.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getChoices: <A>(self: Primitive<A>) => Option<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": "Returns help documentation for a primitive type.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getHelp: <A>(self: Primitive<A>) => Span"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getTypeName",
+    "description": "Returns a string representation of the primitive type.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getTypeName: <A>(self: Primitive<A>) => string"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "integer",
+    "description": "Represents an integer.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const integer: Primitive<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "text",
+    "description": "Represents a user-defined piece of text.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: Primitive<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "validate",
+    "description": "Validates that the specified value, if any, matches the specified primitive\ntype.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const validate: { (value: Option<string>, config: CliConfig): <A>(self: Primitive<A>) => Effect<A, string, FileSystem>; <A>(self: Primitive<A>, value: Option<string>, config: CliConfig): Effect<A, string, FileSystem>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "wizard",
+    "description": "Runs a wizard that will prompt the user for input matching the specified\nprimitive type.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const wizard: { (help: HelpDoc): <A>(self: Primitive<A>) => Prompt<A>; <A>(self: Primitive<A>, help: HelpDoc): Prompt<A>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Primitive",
+    "description": "A `Primitive` represents the primitive types supported by Effect CLI.\n\nEach primitive type has a way to parse and validate from a string.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Primitive<A> extends Primitive.Variance<A> {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Primitive",
+      "path": [
+        "src",
+        "Primitive.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "PrimitiveTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type PrimitiveTypeId = typeof PrimitiveTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "PromptTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PromptTypeId: typeof PromptTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "all",
+    "description": "Runs all the provided prompts in sequence respecting the structure provided\nin input.\n\nSupports either a tuple / iterable of prompts or a record / struct of prompts\nas an argument.",
+    "deprecated": false,
+    "examples": [
+      "import * as Prompt from \"@effect/cli/Prompt\"\nimport * as NodeContext from \"@effect/platform-node/NodeContext\"\nimport * as Runtime from \"@effect/platform-node/NodeRuntime\"\nimport * as Effect from \"effect/Effect\"\n\nconst username = Prompt.text({\n  message: \"Enter your username: \"\n})\n\nconst password = Prompt.password({\n  message: \"Enter your password: \",\n  validate: (value) =>\n    value.length === 0\n      ? Effect.fail(\"Password cannot be empty\")\n      : Effect.succeed(value)\n})\n\nconst allWithTuple = Prompt.all([username, password])\n\nconst allWithRecord = Prompt.all({ username, password })"
+    ],
+    "since": "1.0.0",
+    "category": "collecting & elements",
+    "signature": "export declare const all: <const Arg extends Iterable<Prompt<any>> | Record<string, Prompt<any>>>(arg: Arg) => All.Return<Arg>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "confirm",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const confirm: (options: Prompt.ConfirmOptions) => Prompt<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "custom",
+    "description": "Creates a custom `Prompt` from the specified initial state and handlers.\n\nThe initial state can either be a pure value or an `Effect`. This is\nparticularly useful when the initial state of the `Prompt` must be computed\nby performing some effectful computation, such as reading data from the file\nsystem.\n\nA `Prompt` is essentially a render loop where user input triggers a new frame\nto be rendered to the `Terminal`. The `handlers` of a custom prompt are used\nto control what is rendered to the `Terminal` each frame. During each frame,\nthe following occurs:\n\n  1. The `render` handler is called with this frame's prompt state and prompt\n     action and returns an ANSI escape string to be rendered to the\n     `Terminal`\n  2. The `Terminal` obtains input from the user\n  3. The `process` handler is called with the input obtained from the user\n     and this frame's prompt state and returns the next prompt action that\n     should be performed\n  4. The `clear` handler is called with this frame's prompt state and prompt\n     action and returns an ANSI escape string used to clear the screen of\n     the `Terminal`",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const custom: <State, Output>(initialState: State | Effect<State, never, Prompt.Environment>, handlers: Prompt.Handlers<State, Output>) => Prompt<Output>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "date",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const date: (options: Prompt.DateOptions) => Prompt<Date>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "file",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const file: (options?: Prompt.FileOptions) => Prompt<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "flatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const flatMap: { <Output, Output2>(f: (output: Output) => Prompt<Output2>): (self: Prompt<Output>) => Prompt<Output2>; <Output, Output2>(self: Prompt<Output>, f: (output: Output) => Prompt<Output2>): Prompt<Output2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "float",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const float: (options: Prompt.FloatOptions) => Prompt<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "hidden",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const hidden: (options: Prompt.TextOptions) => Prompt<Redacted>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "integer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const integer: (options: Prompt.IntegerOptions) => Prompt<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "list",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const list: (options: Prompt.ListOptions) => Prompt<Array<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const map: { <Output, Output2>(f: (output: Output) => Output2): (self: Prompt<Output>) => Prompt<Output2>; <Output, Output2>(self: Prompt<Output>, f: (output: Output) => Output2): Prompt<Output2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "password",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const password: (options: Prompt.TextOptions) => Prompt<Redacted>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "run",
+    "description": "Executes the specified `Prompt`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "execution",
+    "signature": "export declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Prompt.Environment>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "select",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const select: <A>(options: Prompt.SelectOptions<A>) => Prompt<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "multiSelect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const multiSelect: <A>(options: Prompt.SelectOptions<A> & Prompt.MultiSelectOptions) => Prompt<Array<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "succeed",
+    "description": "Creates a `Prompt` which immediately succeeds with the specified value.\n\n**NOTE**: This method will not attempt to obtain user input or render\nanything to the screen.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const succeed: <A>(value: A) => Prompt<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (options: Prompt.TextOptions) => Prompt<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "toggle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const toggle: (options: Prompt.ToggleOptions) => Prompt<boolean>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Prompt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Prompt<Output> extends Prompt.Variance<Output>, Pipeable, Effect<Output, QuitException, Terminal> {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Prompt",
+      "path": [
+        "src",
+        "Prompt.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "PromptTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PromptTypeId = typeof PromptTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "alternation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const alternation: { (that: Usage): (self: Usage) => Usage; (self: Usage, that: Usage): Usage; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "concat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const concat: { (that: Usage): (self: Usage) => Usage; (self: Usage, that: Usage): Usage; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "enumerate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const enumerate: { (config: CliConfig): (self: Usage) => Array<Span>; (self: Usage, config: CliConfig): Array<Span>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "getHelp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const getHelp: (self: Usage) => HelpDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "mixed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const mixed: Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "named",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const named: (names: ReadonlyArray<string>, acceptedValues: Option<string>) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "optional",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const optional: (self: Usage) => Usage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "repeated",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const repeated: (self: Usage) => Usage"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Alternation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Alternation {\n  readonly _tag: \"Alternation\"\n  readonly left: Usage\n  readonly right: Usage\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Concat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Concat {\n  readonly _tag: \"Concat\"\n  readonly left: Usage\n  readonly right: Usage\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Empty {\n  readonly _tag: \"Empty\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Mixed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Mixed {\n  readonly _tag: \"Mixed\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Named",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Named {\n  readonly _tag: \"Named\"\n  readonly names: ReadonlyArray<string>\n  readonly acceptedValues: Option<string>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Optional",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Optional {\n  readonly _tag: \"Optional\"\n  readonly usage: Usage\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Repeated",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Repeated {\n  readonly _tag: \"Repeated\"\n  readonly usage: Usage\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Usage",
+      "path": [
+        "src",
+        "Usage.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "Usage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Usage = Empty | Mixed | Named | Optional | Repeated | Alternation | Concat"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ValidationErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ValidationErrorTypeId: typeof ValidationErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isValidationError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isValidationError: (u: unknown) => u is ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isCommandMismatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCommandMismatch: (self: ValidationError) => self is CommandMismatch"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isCorrectedFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCorrectedFlag: (self: ValidationError) => self is CorrectedFlag"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isHelpRequested",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isHelpRequested: (self: ValidationError) => self is HelpRequested"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isInvalidArgument",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isInvalidArgument: (self: ValidationError) => self is InvalidArgument"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isInvalidValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isInvalidValue: (self: ValidationError) => self is InvalidValue"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isMultipleValuesDetected",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isMultipleValuesDetected: (self: ValidationError) => self is MultipleValuesDetected"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isMissingFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isMissingFlag: (self: ValidationError) => self is MissingFlag"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isMissingValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isMissingValue: (self: ValidationError) => self is MissingValue"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isMissingSubcommand",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isMissingSubcommand: (self: ValidationError) => self is MissingSubcommand"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isNoBuiltInMatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNoBuiltInMatch: (self: ValidationError) => self is NoBuiltInMatch"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "isUnclusteredFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUnclusteredFlag: (self: ValidationError) => self is UnclusteredFlag"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "commandMismatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const commandMismatch: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "correctedFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const correctedFlag: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "helpRequested",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const helpRequested: <A>(command: Command<A>) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "invalidArgument",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const invalidArgument: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "invalidValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const invalidValue: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "keyValuesDetected",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const keyValuesDetected: (error: HelpDoc, keyValues: ReadonlyArray<string>) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "missingFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const missingFlag: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "missingValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const missingValue: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "missingSubcommand",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const missingSubcommand: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "noBuiltInMatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const noBuiltInMatch: (error: HelpDoc) => ValidationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "unclusteredFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const unclusteredFlag: (error: HelpDoc, unclustered: ReadonlyArray<string>, rest: ReadonlyArray<string>) => ValidationError"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CommandMismatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface CommandMismatch extends ValidationError.Proto {\n  readonly _tag: \"CommandMismatch\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "CorrectedFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface CorrectedFlag extends ValidationError.Proto {\n  readonly _tag: \"CorrectedFlag\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "HelpRequested",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface HelpRequested extends ValidationError.Proto {\n  readonly _tag: \"HelpRequested\"\n  readonly error: HelpDoc\n  readonly command: CommandDescriptor.Command<unknown>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "InvalidArgument",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface InvalidArgument extends ValidationError.Proto {\n  readonly _tag: \"InvalidArgument\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "InvalidValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface InvalidValue extends ValidationError.Proto {\n  readonly _tag: \"InvalidValue\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "MissingFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MissingFlag extends ValidationError.Proto {\n  readonly _tag: \"MissingFlag\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "MissingSubcommand",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MissingSubcommand extends ValidationError.Proto {\n  readonly _tag: \"MissingSubcommand\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "MissingValue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MissingValue extends ValidationError.Proto {\n  readonly _tag: \"MissingValue\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "MultipleValuesDetected",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MultipleValuesDetected extends ValidationError.Proto {\n  readonly _tag: \"MultipleValuesDetected\"\n  readonly error: HelpDoc\n  readonly values: ReadonlyArray<string>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "NoBuiltInMatch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface NoBuiltInMatch extends ValidationError.Proto {\n  readonly _tag: \"NoBuiltInMatch\"\n  readonly error: HelpDoc\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "UnclusteredFlag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UnclusteredFlag extends ValidationError.Proto {\n  readonly _tag: \"UnclusteredFlag\"\n  readonly error: HelpDoc\n  readonly unclustered: ReadonlyArray<string>\n  readonly rest: ReadonlyArray<string>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ValidationError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type ValidationError =\n  | CommandMismatch\n  | CorrectedFlag\n  | HelpRequested\n  | InvalidArgument\n  | InvalidValue\n  | MissingValue\n  | MissingFlag\n  | MultipleValuesDetected\n  | MissingSubcommand\n  | NoBuiltInMatch\n  | UnclusteredFlag"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ValidationError",
+      "path": [
+        "src",
+        "ValidationError.ts"
+      ]
+    },
+    "project": "@effect/cli",
+    "name": "ValidationErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ValidationErrorTypeId = typeof ValidationErrorTypeId"
+  }
+]

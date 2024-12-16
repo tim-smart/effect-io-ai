@@ -1,0 +1,956 @@
+[
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "BrowserHttpClient",
+      "path": [
+        "src",
+        "BrowserHttpClient.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "XMLHttpRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class XMLHttpRequest"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserHttpClient",
+      "path": [
+        "src",
+        "BrowserHttpClient.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerXMLHttpRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient<HttpClientError, Scope>, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserHttpClient",
+      "path": [
+        "src",
+        "BrowserHttpClient.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "currentXHRResponseType",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fiber refs",
+    "signature": "export declare const currentXHRResponseType: FiberRef.FiberRef<\"text\" | \"arraybuffer\">"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserHttpClient",
+      "path": [
+        "src",
+        "BrowserHttpClient.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "withXHRArrayBuffer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fiber refs",
+    "signature": "export declare const withXHRArrayBuffer: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserKeyValueStore",
+      "path": [
+        "src",
+        "BrowserKeyValueStore.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerLocalStorage",
+    "description": "Creates a KeyValueStore layer that uses the browser's localStorage api. Values are stored between sessions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserKeyValueStore",
+      "path": [
+        "src",
+        "BrowserKeyValueStore.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerSessionStorage",
+    "description": "Creates a KeyValueStore layer that uses the browser's sessionStorage api. Values are stored only for the current session.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserRuntime",
+      "path": [
+        "src",
+        "BrowserRuntime.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "runMain",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "runtime",
+    "signature": "export declare const runMain: RunMain"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserSocket",
+      "path": [
+        "src",
+        "BrowserSocket.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerWebSocketConstructor",
+    "description": "A WebSocket constructor that uses globalThis.WebSocket.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "BrowserSocket",
+      "path": [
+        "src",
+        "BrowserSocket.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserStream",
+      "path": [
+        "src",
+        "BrowserStream.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "fromEventListenerWindow",
+    "description": "Creates a `Stream` from window.addEventListener.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserStream",
+      "path": [
+        "src",
+        "BrowserStream.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "fromEventListenerDocument",
+    "description": "Creates a `Stream` from document.addEventListener.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorker",
+      "path": [
+        "src",
+        "BrowserWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerManager",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorker",
+      "path": [
+        "src",
+        "BrowserWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerWorker",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorker",
+      "path": [
+        "src",
+        "BrowserWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorkerRunner",
+      "path": [
+        "src",
+        "BrowserWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (self: MessagePort | Window) => Runner.PlatformRunner"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorkerRunner",
+      "path": [
+        "src",
+        "BrowserWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorkerRunner",
+      "path": [
+        "src",
+        "BrowserWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerMessagePort",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<Runner.PlatformRunner>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ClipboardError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class ClipboardError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ErrorTypeId: typeof ErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Clipboard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tag",
+    "signature": "export declare const Clipboard: Context.Tag<Clipboard, Clipboard>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layer",
+    "description": "A layer that directly interfaces with the navigator.clipboard api",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Clipboard, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Clipboard",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "interface",
+    "signature": "export interface Clipboard {\n  readonly [TypeId]: TypeId\n\n  readonly read: Effect.Effect<ClipboardItems, ClipboardError>\n  readonly readString: Effect.Effect<string, ClipboardError>\n  readonly write: (items: ClipboardItems) => Effect.Effect<void, ClipboardError>\n  readonly writeString: (text: string) => Effect.Effect<void, ClipboardError>\n  readonly writeBlob: (blob: Blob) => Effect.Effect<void, ClipboardError>\n  readonly clear: Effect.Effect<void, ClipboardError>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ErrorTypeId = typeof ErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Clipboard",
+      "path": [
+        "src",
+        "Clipboard.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "GeolocationError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class GeolocationError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Geolocation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const Geolocation: Context.Tag<Geolocation, Geolocation>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ErrorTypeId: typeof ErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Geolocation, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "watchPosition",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Geolocation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Geolocation {\n  readonly [TypeId]: TypeId\n  readonly getCurrentPosition: (\n    options?: PositionOptions | undefined\n  ) => Effect.Effect<GeolocationPosition, GeolocationError>\n  readonly watchPosition: (\n    options?:\n      | PositionOptions & {\n        readonly bufferSize?: number | undefined\n      }\n      | undefined\n  ) => Stream.Stream<GeolocationPosition, GeolocationError>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ErrorTypeId = typeof ErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Geolocation",
+      "path": [
+        "src",
+        "Geolocation.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserHttpClient.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserHttpClient.js\" module as `BrowserHttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserHttpClient from \"./BrowserHttpClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserKeyValueStore.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserKeyValueStore.js\" module as `BrowserKeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserKeyValueStore from \"./BrowserKeyValueStore.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserRuntime.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserRuntime.js\" module as `BrowserRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserRuntime from \"./BrowserRuntime.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserSocket.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserSocket.js\" module as `BrowserSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserSocket from \"./BrowserSocket.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserStream.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserStream.js\" module as `BrowserStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserStream from \"./BrowserStream.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserWorker.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserWorker.js\" module as `BrowserWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserWorker from \"./BrowserWorker.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./BrowserWorkerRunner.js\"",
+    "description": "Re-exports all named exports from the \"./BrowserWorkerRunner.js\" module as `BrowserWorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BrowserWorkerRunner from \"./BrowserWorkerRunner.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./Clipboard.js\"",
+    "description": "Re-exports all named exports from the \"./Clipboard.js\" module as `Clipboard`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Clipboard from \"./Clipboard.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./Geolocation.js\"",
+    "description": "Re-exports all named exports from the \"./Geolocation.js\" module as `Geolocation`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Geolocation from \"./Geolocation.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "From \"./Permissions.js\"",
+    "description": "Re-exports all named exports from the \"./Permissions.js\" module as `Permissions`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Permissions from \"./Permissions.js\""
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "PermissionsError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class PermissionsError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const ErrorTypeId: typeof ErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Permissions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const Permissions: Context.Tag<Permissions, Permissions>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "layer",
+    "description": "A layer that directly interfaces with the `navigator.permissions` api",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Permissions, never, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "Permissions",
+    "description": "Wrapper on the Permission API (`navigator.permissions`)\nwith methods for querying status of permissions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "interface",
+    "signature": "export interface Permissions {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Returns the state of a user permission on the global scope.\n   */\n  readonly query: <Name extends PermissionName>(\n    name: Name\n  ) => Effect.Effect<\n    // `name` is identical to the name passed to Permissions.query\n    // https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus\n    Omit<PermissionStatus, \"name\"> & { name: Name },\n    PermissionsError\n  >\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type ErrorTypeId = typeof ErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Permissions",
+      "path": [
+        "src",
+        "Permissions.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  }
+]

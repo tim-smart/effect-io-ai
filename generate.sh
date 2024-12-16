@@ -47,10 +47,16 @@ for repo in ${repos[@]}; do
 
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
+  mkdir -p "../json"
   cp -r docs/ai/*.md "../$repo_name" || true
+  cp -r docs/*.json "../json" || true
   cp -r packages/*/docs/ai/*.md "../$repo_name" || true
+  cp -r packages/*/docs/*.json "../json" || true
 
   cd ..
 done
+
+rm -f json/_all.json
+jq -s '[ inputs ] | add' json/*.json > json/_all.json
 
 node $indexjs > index.html

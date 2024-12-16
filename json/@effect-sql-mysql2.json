@@ -1,0 +1,272 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "From \"./MysqlClient.js\"",
+    "description": "Re-exports all named exports from the \"./MysqlClient.js\" module as `MysqlClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as MysqlClient from \"./MysqlClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "From \"./MysqlMigrator.js\"",
+    "description": "Re-exports all named exports from the \"./MysqlMigrator.js\" module as `MysqlMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as MysqlMigrator from \"./MysqlMigrator.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "MysqlClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const MysqlClient: Context.Tag<MysqlClient, MysqlClient>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "makeCompiler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "compiler",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "MysqlClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MysqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: MysqlClientConfig\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "MysqlClientConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MysqlClientConfig {\n  /**\n   * Connection URI. Setting this will override the other connection options\n   */\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly poolConfig?: Mysql.PoolOptions | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "MysqlClient",
+      "path": [
+        "src",
+        "MysqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MysqlMigrator",
+      "path": [
+        "src",
+        "MysqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "export declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | MysqlClient | Client.SqlClient | CommandExecutor | R2>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "MysqlMigrator",
+      "path": [
+        "src",
+        "MysqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "From \"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "MysqlMigrator",
+      "path": [
+        "src",
+        "MysqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "From \"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MysqlMigrator",
+      "path": [
+        "src",
+        "MysqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  }
+]

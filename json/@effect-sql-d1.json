@@ -1,0 +1,164 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "D1Client",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const D1Client: Context.Tag<D1Client, D1Client>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "D1Client",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface D1Client extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: D1ClientConfig\n\n  /** Not supported in d1 */\n  readonly updateValues: never\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "D1ClientConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface D1ClientConfig {\n  readonly db: D1Database\n  readonly prepareCacheSize?: number | undefined\n  readonly prepareCacheTTL?: Duration.DurationInput | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "D1Client",
+      "path": [
+        "src",
+        "D1Client.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-d1",
+    "name": "From \"./D1Client.js\"",
+    "description": "Re-exports all named exports from the \"./D1Client.js\" module as `D1Client`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as D1Client from \"./D1Client.js\""
+  }
+]

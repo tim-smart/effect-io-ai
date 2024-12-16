@@ -1,0 +1,3854 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AtLeastOnce",
+      "path": [
+        "src",
+        "AtLeastOnce.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "atLeastOnceRecipientBehaviour",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const atLeastOnceRecipientBehaviour: <Msg, R>(fa: RecipientBehaviour.RecipientBehaviour<Msg, R>) => RecipientBehaviour.RecipientBehaviour<Msg, R | AtLeastOnceStorage.AtLeastOnceStorage>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AtLeastOnce",
+      "path": [
+        "src",
+        "AtLeastOnce.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "runPendingMessageSweeperScoped",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const runPendingMessageSweeperScoped: (interval: Duration.Duration) => Effect.Effect<void, never, AtLeastOnceStorage.AtLeastOnceStorage | Sharding.Sharding | Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AtLeastOnceStorage",
+      "path": [
+        "src",
+        "AtLeastOnceStorage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AtLeastOnceStorage",
+      "path": [
+        "src",
+        "AtLeastOnceStorage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "AtLeastOnceStorage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const AtLeastOnceStorage: Tag<AtLeastOnceStorage, AtLeastOnceStorage>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AtLeastOnceStorage",
+      "path": [
+        "src",
+        "AtLeastOnceStorage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const layer: (options: AtLeastOnceStorage.MakeOptions) => Layer<AtLeastOnceStorage, SqlError, SqlClient | Serialization>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AtLeastOnceStorage",
+      "path": [
+        "src",
+        "AtLeastOnceStorage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "AtLeastOnceStorage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface AtLeastOnceStorage extends AtLeastOnceStorage.Proto {\n  /**\n   * Upserts a message into the storage, eventually returning the already\n   * existing message state as result in the storage.\n   */\n  upsert<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Marks the specified message as processed to prevent additional attempts to\n   * send the message.\n   */\n  markAsProcessed<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Returns a stream of messages that will be sent to the local pod as a second\n   * attempt.\n   */\n  sweepPending(shardIds: Iterable<ShardId>): Stream<SerializedEnvelope>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AtLeastOnceStorage",
+      "path": [
+        "src",
+        "AtLeastOnceStorage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Broadcaster",
+      "path": [
+        "src",
+        "Broadcaster.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Broadcaster",
+    "description": "An interface to communicate with a remote broadcast receiver",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Broadcaster<Msg extends Message.Message.Any> {\n  /**\n   * Broadcast a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely.\n   * @since 1.0.0\n   */\n  readonly broadcastDiscard: (\n    topicId: string\n  ) => (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Broadcast a message and wait for a response from each consumer\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   * @since 1.0.0\n   */\n  readonly broadcast: (\n    topicId: string\n  ) => <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    HashMap.HashMap<\n      PodAddress.PodAddress,\n      Either.Either<\n        ShardingException.ShardingException | Message.Message.Error<A>,\n        Message.Message.Success<A>\n      >\n    >,\n    ShardingException.ShardingException\n  >\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./AtLeastOnce.js\"",
+    "description": "Re-exports all named exports from the \"./AtLeastOnce.js\" module as `AtLeastOnce`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as AtLeastOnce from \"./AtLeastOnce.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./AtLeastOnceStorage.js\"",
+    "description": "Re-exports all named exports from the \"./AtLeastOnceStorage.js\" module as `AtLeastOnceStorage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as AtLeastOnceStorage from \"./AtLeastOnceStorage.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Broadcaster.js\"",
+    "description": "Re-exports all named exports from the \"./Broadcaster.js\" module as `Broadcaster`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Broadcaster from \"./Broadcaster.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ManagerConfig.js\"",
+    "description": "Re-exports all named exports from the \"./ManagerConfig.js\" module as `ManagerConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ManagerConfig from \"./ManagerConfig.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Message.js\"",
+    "description": "Re-exports all named exports from the \"./Message.js\" module as `Message`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Message from \"./Message.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./MessageState.js\"",
+    "description": "Re-exports all named exports from the \"./MessageState.js\" module as `MessageState`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as MessageState from \"./MessageState.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Messenger.js\"",
+    "description": "Re-exports all named exports from the \"./Messenger.js\" module as `Messenger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Messenger from \"./Messenger.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Pod.js\"",
+    "description": "Re-exports all named exports from the \"./Pod.js\" module as `Pod`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Pod from \"./Pod.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./PodAddress.js\"",
+    "description": "Re-exports all named exports from the \"./PodAddress.js\" module as `PodAddress`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PodAddress from \"./PodAddress.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Pods.js\"",
+    "description": "Re-exports all named exports from the \"./Pods.js\" module as `Pods`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Pods from \"./Pods.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./PodsHealth.js\"",
+    "description": "Re-exports all named exports from the \"./PodsHealth.js\" module as `PodsHealth`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PodsHealth from \"./PodsHealth.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./PoisonPill.js\"",
+    "description": "Re-exports all named exports from the \"./PoisonPill.js\" module as `PoisonPill`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PoisonPill from \"./PoisonPill.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./RecipientAddress.js\"",
+    "description": "Re-exports all named exports from the \"./RecipientAddress.js\" module as `RecipientAddress`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as RecipientAddress from \"./RecipientAddress.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./RecipientBehaviour.js\"",
+    "description": "Re-exports all named exports from the \"./RecipientBehaviour.js\" module as `RecipientBehaviour`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as RecipientBehaviour from \"./RecipientBehaviour.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./RecipientBehaviourContext.js\"",
+    "description": "Re-exports all named exports from the \"./RecipientBehaviourContext.js\" module as `RecipientBehaviourContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as RecipientBehaviourContext from \"./RecipientBehaviourContext.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./RecipientType.js\"",
+    "description": "Re-exports all named exports from the \"./RecipientType.js\" module as `RecipientType`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as RecipientType from \"./RecipientType.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Serialization.js\"",
+    "description": "Re-exports all named exports from the \"./Serialization.js\" module as `Serialization`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Serialization from \"./Serialization.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./SerializedEnvelope.js\"",
+    "description": "Re-exports all named exports from the \"./SerializedEnvelope.js\" module as `SerializedEnvelope`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SerializedEnvelope from \"./SerializedEnvelope.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./SerializedMessage.js\"",
+    "description": "Re-exports all named exports from the \"./SerializedMessage.js\" module as `SerializedMessage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SerializedMessage from \"./SerializedMessage.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardId.js\"",
+    "description": "Re-exports all named exports from the \"./ShardId.js\" module as `ShardId`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardId from \"./ShardId.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardManager.js\"",
+    "description": "Re-exports all named exports from the \"./ShardManager.js\" module as `ShardManager`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardManager from \"./ShardManager.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardManagerClient.js\"",
+    "description": "Re-exports all named exports from the \"./ShardManagerClient.js\" module as `ShardManagerClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardManagerClient from \"./ShardManagerClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Sharding.js\"",
+    "description": "Re-exports all named exports from the \"./Sharding.js\" module as `Sharding`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Sharding from \"./Sharding.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardingConfig.js\"",
+    "description": "Re-exports all named exports from the \"./ShardingConfig.js\" module as `ShardingConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardingConfig from \"./ShardingConfig.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardingEvent.js\"",
+    "description": "Re-exports all named exports from the \"./ShardingEvent.js\" module as `ShardingEvent`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardingEvent from \"./ShardingEvent.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardingException.js\"",
+    "description": "Re-exports all named exports from the \"./ShardingException.js\" module as `ShardingException`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardingException from \"./ShardingException.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./ShardingRegistrationEvent.js\"",
+    "description": "Re-exports all named exports from the \"./ShardingRegistrationEvent.js\" module as `ShardingRegistrationEvent`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ShardingRegistrationEvent from \"./ShardingRegistrationEvent.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "From \"./Storage.js\"",
+    "description": "Re-exports all named exports from the \"./Storage.js\" module as `Storage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Storage from \"./Storage.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ManagerConfigTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ManagerConfigTypeId: typeof ManagerConfigTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ManagerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const ManagerConfig: Context.Tag<ManagerConfig, ManagerConfig>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "defaults",
+    "description": "Uses the default as ManagerConfig.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const defaults: Layer.Layer<ManagerConfig, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "fromConfig",
+    "description": "Reads the ManagerConfig from the provided Config.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const fromConfig: Layer.Layer<ManagerConfig, ConfigError.ConfigError, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ManagerConfig",
+    "description": "This is the Shard Manager configuration.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ManagerConfig {\n  readonly numberOfShards: number\n  readonly apiPort: number\n  readonly rebalanceInterval: Duration.Duration\n  readonly rebalanceRetryInterval: Duration.Duration\n  readonly pingTimeout: Duration.Duration\n  readonly persistRetryInterval: Duration.Duration\n  readonly persistRetryCount: number\n  readonly rebalanceRate: number\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ManagerConfig",
+      "path": [
+        "src",
+        "ManagerConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ManagerConfigTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ManagerConfigTypeId = typeof ManagerConfigTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TaggedMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare const TaggedMessage: <Self>() => <Tag extends string, E, IE, A, IA, Fields extends Schema.Struct.Fields>(tag: Tag, failure: Schema.Schema<E, IE, never>, success: Schema.Schema<A, IA, never>, fields: Fields, messageToId: (message: Schema.Struct.Encoded<Fields>) => string) => TaggedMessageConstructor<Tag, Self, Schema.Schema.Context<Fields[keyof Fields]>, Types.Simplify<Schema.Struct.Encoded<Fields>>, Types.Simplify<Schema.Struct.Type<Fields>>, IE, E, IA, A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isMessageWithResult",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isMessageWithResult: (value: unknown) => value is Message<unknown, unknown, unknown, unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "exitSchema",
+    "description": "Extracts the exit schema from a Message. This schema will be used to encode the remote exit of the Message processor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const exitSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Exit<A>, unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "failureSchema",
+    "description": "Extracts the failure schema from a Message. This schema will be used to encode remote failures of the Message processor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const failureSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Error<A>, unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "successSchema",
+    "description": "Extracts the success schema from a Message. This schema will be used to encode the remote success of the Message processor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const successSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Success<A>, unknown>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Message",
+    "description": "A Message is a request for an entity that will process it.\nA Message also has a PrimaryKey so that the receiver is eventually able to detect duplicated messages.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Message<A, AI, E, EI>\n  extends Schema.SerializableWithResult<any, any, never, A, AI, E, EI, never>, PrimaryKey.PrimaryKey\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Message",
+      "path": [
+        "src",
+        "Message.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TaggedMessageConstructor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface TaggedMessageConstructor<Tag extends string, Self, R, IS, S, IE, E, IA, A>\n  extends Schema.Schema<Self, Types.Simplify<IS & { readonly _tag: Tag }>, R>\n{\n  new(\n    props: Types.Equals<S, {}> extends true ? void : S,\n    disableValidation?: boolean\n  ):\n    & Schema.TaggedRequest<Tag, S, IS & { readonly _tag: Tag }, never, A, IA, E, IE, never>\n    & S\n    & PrimaryKey.PrimaryKey\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "MessageStateTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const MessageStateTypeId: typeof MessageStateTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isMessageState",
+    "description": "Ensures that the given value is a MessageState",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isMessageState: typeof internal.isMessageState"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "match",
+    "description": "Match over the possible states of a MessageState",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const match: typeof internal.match"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Acknowledged",
+    "description": "Constructs an AcknowledgedMessageState.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const Acknowledged: MessageStateAcknowledged"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Processed",
+    "description": "Constructs a ProcessedMessageState from the result of the message being processed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const Processed: <A>(result: A) => MessageStateProcessed<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "mapEffect",
+    "description": "Effectfully transform the <A> type of the MessageState<A>.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const mapEffect: <A, B, R, E>(value: MessageState<A>, fn: (value: A) => Effect.Effect<B, E, R>) => Effect.Effect<MessageState<B>, E, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: <A, I>(result: Schema.Schema<A, I>) => Schema.Schema<MessageState<A>, MessageState.Encoded<I>>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "MessageStateAcknowledged",
+    "description": "A message state given to just acknowledged messages.\nThis state tells the sender that the receiver has received the message and will eventually process it later.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MessageStateAcknowledged {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Acknowledged\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "MessageStateProcessed",
+    "description": "A message state given to processed messages.\nThis state tells the sender that the receiver has already received and processed the message.\nThis will also tell the sender the result for this message.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MessageStateProcessed<A> {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Processed\"\n  readonly result: A\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "MessageState",
+    "description": "Once a Message is sent to an entity to be processed,\nthe state of that message over that entity is either Acknoledged (not yet processed) or Processed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type MessageState<A> = MessageStateAcknowledged | MessageStateProcessed<A>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "MessageState",
+      "path": [
+        "src",
+        "MessageState.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "MessageStateTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type MessageStateTypeId = typeof MessageStateTypeId"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Messenger",
+      "path": [
+        "src",
+        "Messenger.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Messenger",
+    "description": "An interface to communicate with a remote entity.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Messenger<Msg extends Message.Message.Any> {\n  /**\n   * Send a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  sendDiscard(entityId: string): (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Send a message and wait for a response.\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  send(\n    entityId: string\n  ): <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    Message.Message.Success<A>,\n    ShardingException.ShardingException | Message.Message.Error<A>\n  >\n}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Pod",
+    "description": "A pod is an application server that is able to run entities. A pod can run multiple entities,\nbut a single entity will live on a given pod at a time.\nSince this is an application server, it needs to have an unique identifier where it's addressed (PodAddress),\nand has a version of the application that's running on it.\nVersion is used during the rebalance phase to give priority to newer application servers and slowly kill older ones.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class Pod"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PodTypeId: typeof PodTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<Pod, Pod.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isPod",
+    "description": "Given a value, ensures that it's a valid Pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a Pod from it's identifing PodAddress and application server version.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Pod",
+      "path": [
+        "src",
+        "Pod.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PodTypeId = typeof PodTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodAddress",
+    "description": "A PodAddress is a unique identifier of a Pod (application server).\nIt is conventially built by using an address and a port, so that messaging implementations may use directly the\nPodAddress to know how to connect to the specific Pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class PodAddress"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodAddressTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PodAddressTypeId: typeof PodAddressTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": "This is the schema for a PodAddress.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<PodAddress, PodAddress.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a PodAddress from an host and a port.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isPodAddress",
+    "description": "Ensures that the given value is a valid PodAddress.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PodAddress",
+      "path": [
+        "src",
+        "PodAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodAddressTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PodAddressTypeId = typeof PodAddressTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PodsTypeId: typeof PodsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Pods",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const Pods: Context.Tag<Pods, Pods>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a Pods service from its implementation",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const make: (args: Omit<Pods, typeof PodsTypeId>) => Pods"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "noop",
+    "description": "A layer that creates a service that does nothing when called.\nUseful for testing ShardManager or when using Sharding.local.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const noop: Layer.Layer<Pods, never, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Pods",
+    "description": "An interface to communicate with remote pods.\nThis is used by the Shard Manager for assigning and unassigning shards.\nThis is also used by pods for internal communication (forward messages to each other).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Pods {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsTypeId]: PodsTypeId\n\n  /**\n   * Notify a pod that it was assigned a list of shards\n   * @since 1.0.0\n   */\n  readonly assignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Notify a pod that it was unassigned a list of shards\n   * @since 1.0.0\n   */\n  readonly unassignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Check that a pod is responsive\n   * @since 1.0.0\n   */\n  readonly ping: (pod: PodAddress.PodAddress) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Send a message to a pod and receive its message state\n   * @since 1.0.0\n   */\n  readonly sendAndGetState: (\n    pod: PodAddress.PodAddress,\n    envelope: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Pods",
+      "path": [
+        "src",
+        "Pods.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PodsTypeId = typeof PodsTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsHealthTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PodsHealthTypeId: typeof PodsHealthTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a PodsHealth from its implementation",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (args: Omit<PodsHealth, typeof PodsHealthTypeId>) => PodsHealth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsHealth",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const PodsHealth: Context.Tag<PodsHealth, PodsHealth>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "noop",
+    "description": "A layer that considers pods as always alive.\nThis is useful for testing only.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const noop: Layer.Layer<PodsHealth, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "local",
+    "description": "A layer that pings the pod directly to check if it's alive.\nThis is useful for developing and testing but not reliable in production.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const local: Layer.Layer<PodsHealth, never, Pods.Pods>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsHealth",
+    "description": "An interface to check a pod's health.\nThis is used when a pod is unresponsive, to check if it should be unassigned all its shards or not.\nIf the pod is alive, shards will not be unassigned because the pods might still be processing messages and might be responsive again.\nIf the pod is not alive, shards can be safely reassigned somewhere else.\nA typical implementation for this is using k8s to check if the pod still exists.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PodsHealth {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsHealthTypeId]: PodsHealthTypeId\n\n  /**\n   * Check if a pod is still alive.\n   * @since 1.0.0\n   */\n  readonly isAlive: (podAddress: PodAddress.PodAddress) => Effect.Effect<boolean>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PodsHealth",
+      "path": [
+        "src",
+        "PodsHealth.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodsHealthTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PodsHealthTypeId = typeof PodsHealthTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PoisonPill",
+    "description": "A PoisonPill is a special value that tells a behaviour entity to shut itself down.\nPoisonPill is handled only when you are using a Queue-based RecipientBehaviour.\nOther RecipientBehaviour such as fromFunctionEffect would not care about PoisonPill.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class PoisonPill"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PoisonPillTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const PoisonPillTypeId: typeof PoisonPillTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a new PosionPill",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect.Effect<PoisonPill, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": "This is the schema for a PoisonPill that is used to encode the value over the wire.\nThis is useful if you want a behavior that can be shut down from an external message.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<PoisonPill, PoisonPill.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isPoisonPill",
+    "description": "Checks if the given value is a PoisonPill.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "takeOrInterrupt",
+    "description": "Attempts to take a message from the queue in the same way Queue.take does.\nIf the result is a PoisonPill, it will interrupt the effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PoisonPill",
+      "path": [
+        "src",
+        "PoisonPill.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PoisonPillTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type PoisonPillTypeId = typeof PoisonPillTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RecipientAddress",
+      "path": [
+        "src",
+        "RecipientAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientAddress",
+    "description": "A RecipientAddress uniquely identifies a RecipientType + EntityId instance.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class RecipientAddress"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientAddress",
+      "path": [
+        "src",
+        "RecipientAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientAddressTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const RecipientAddressTypeId: typeof RecipientAddressTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RecipientAddress",
+      "path": [
+        "src",
+        "RecipientAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isRecipientAddress",
+    "description": "Ensure that given value is a RecipientAddress",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RecipientAddress",
+      "path": [
+        "src",
+        "RecipientAddress.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "makeRecipientAddress",
+    "description": "Given a name and a schema for the protocol, constructs an EntityType.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviour",
+      "path": [
+        "src",
+        "RecipientBehaviour.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "fromFunctionEffect",
+    "description": "This is the simplest behaviour you can have.\nYou provide a function that given the entityId and the message, it will immediatly process it.\nYou are then required to return a MessageState to tell the caller\nif the message has just arrived and will be later processed or it has been processed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const fromFunctionEffect: <Msg extends Message.Message.Any, R>(handler: (entityId: string, message: Msg) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R>) => RecipientBehaviour<Msg, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviour",
+      "path": [
+        "src",
+        "RecipientBehaviour.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "fromFunctionEffectStateful",
+    "description": "This is a stateful version of fromFunctionEffect.\nYou can provide a function to get the initialState, and then it will be passed as Ref.\nEverything here is just stored in memory, so eventual persistence of the state is up to you!",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const fromFunctionEffectStateful: <S, R, Msg extends Message.Message.Any, R2>(initialState: (entityId: string) => Effect.Effect<S, never, R>, handler: (entityId: string, message: Msg, stateRef: Ref.Ref<S>) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R2>) => RecipientBehaviour<Msg, R | R2>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviour",
+      "path": [
+        "src",
+        "RecipientBehaviour.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "fromInMemoryQueue",
+    "description": "This behaviour uses a Queue where the entity will accumulate messages to be processed,\nand then you can use the Dequeue to take messages and process them.\nA PoisonPill is provided to request interruption of the entity behaviour.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const fromInMemoryQueue: <Msg extends Message.Message.Any, R>(handler: (entityId: string, dequeue: Queue.Dequeue<Msg | PoisonPill.PoisonPill>, processed: <A extends Msg>(message: A, value: Option.Option<Message.Message.Exit<A>>) => Effect.Effect<void, never, never>) => Effect.Effect<void, never, R>) => RecipientBehaviour<Msg, R>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RecipientBehaviour",
+      "path": [
+        "src",
+        "RecipientBehaviour.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientBehaviour",
+    "description": "A RecipientBehaviour describes how a specific RecipientType should behave.\nThis is the actual implementation of what an entity should do upon receiving a Msg,\nthis could require additional context.\n\nThe scope provided in the context is controlled by the cluster EntityManager,\nand is used to request the shoutdown of the entity,\nso you can safely scope whatever resource you want to use for your behaviour\n and the EntityManager will close the scope for you when the entity is shoutdown.\n\nThe function returned by the RecipientBehaviour effect is what we call \"offer\" effect.\nThe offer effect is used by the EntityManager to give messages to the RecipientBehaviour.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RecipientBehaviour<Msg, R> extends\n  Effect.Effect<\n    <A extends Msg>(\n      message: A\n    ) => Effect.Effect<\n      MessageState.MessageState<Message.Message.Exit<A>>,\n      ShardingException.ExceptionWhileOfferingMessageException\n    >,\n    never,\n    R | RecipientBehaviourContext.RecipientBehaviourContext | Scope.Scope\n  >\n{}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RecipientBehaviour",
+      "path": [
+        "src",
+        "RecipientBehaviour.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "EntityBehaviourOptions",
+    "description": "This are the options for an EntityBehaviour. This controls the entityMaxIdleTime,\ncheck out more on that over the ShardingConfig.\nThis allows to override the setting for a specific entity.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export type EntityBehaviourOptions = {\n  entityMaxIdleTime?: Option.Option<Duration.Duration>\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientBehaviourContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const RecipientBehaviourContextTypeId: typeof RecipientBehaviourContextTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientBehaviourContext",
+    "description": "A tag to access current RecipientBehaviourContext",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const RecipientBehaviourContext: Context.Tag<RecipientBehaviourContext, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Creates a new RecipientBehaviourContext",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (args: Omit<RecipientBehaviourContext, typeof RecipientBehaviourContextTypeId>) => RecipientBehaviourContext"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "entityId",
+    "description": "Gets the current entityId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const entityId: Effect.Effect<string, never, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "recipientAddress",
+    "description": "Gets the current entityId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const recipientAddress: Effect.Effect<RecipientAddress.RecipientAddress, never, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "shardId",
+    "description": "Gets the current shardId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const shardId: Effect.Effect<ShardId.ShardId, never, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "recipientType",
+    "description": "Gets the current recipientType",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const recipientType: Effect.Effect<RecipientType.RecipientType<Message.Message.Any>, never, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "forkShutdown",
+    "description": "Forks the shutdown of the current recipient behaviour as soon as possible.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const forkShutdown: Effect.Effect<void, never, RecipientBehaviourContext>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientBehaviourContext",
+    "description": "This is the context information that is available to the RecipientBehaviour and has general informations\nabout this specific entity, like the entityId or the recipientType.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RecipientBehaviourContext {\n  readonly [RecipientBehaviourContextTypeId]: RecipientBehaviourContextTypeId\n  readonly recipientAddress: RecipientAddress.RecipientAddress\n  readonly shardId: ShardId.ShardId\n  readonly recipientType: RecipientType.RecipientType<Message.Message.Any>\n  readonly forkShutdown: Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RecipientBehaviourContext",
+      "path": [
+        "src",
+        "RecipientBehaviourContext.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientBehaviourContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type RecipientBehaviourContextTypeId = typeof RecipientBehaviourContextTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "EntityType",
+    "description": "An EntityType is a RecipientType that is ensured to be alive only on a single Pod at a time.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class EntityType<Msg>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TopicType",
+    "description": "A TopicType can live on multiple Pods at the same time.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class TopicType<Msg>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientTypeTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const RecipientTypeTypeId: typeof RecipientTypeTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isRecipientType",
+    "description": "Ensure that given value is a RecipientType",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "makeEntityType",
+    "description": "Given a name and a schema for the protocol, constructs an EntityType.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "makeTopicType",
+    "description": "Given a name and a schema for the protocol, constructs an TopicType.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RecipientType",
+      "path": [
+        "src",
+        "RecipientType.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "RecipientType",
+    "description": "A RecipientType is basically a pointer to a logical grouping of multiple enties having the same RecipientBehaviour.\nThis value is required to be able to message with an entity/topic since it holds the Schema for the messages over the wire.\nWithout the schema, you cannot ensure that the messages sent are what the receiver expects.\nIdeally, you can share this definition between the caller and the receiver.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type RecipientType<Msg extends Message.Message.Any> = EntityType<Msg> | TopicType<Msg>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializationTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const SerializationTypeId: typeof SerializationTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Serialization",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const Serialization: Context.Tag<Serialization, Serialization>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (args: Omit<Serialization, typeof SerializationTypeId>) => Serialization"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "json",
+    "description": "A layer that uses JSON serialization for encoding and decoding messages.\nThis is useful for testing and not recommended to use in production.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const json: Layer.Layer<Serialization, never, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Serialization",
+    "description": "An interface to serialize user messages that will be sent between pods.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Serialization {\n  /**\n   * @since 1.0.0\n   */\n  readonly [SerializationTypeId]: SerializationTypeId\n\n  /**\n   * Transforms the given message into binary\n   * @since 1.0.0\n   */\n  readonly encode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    message: A\n  ) => Effect.Effect<SerializedMessage.SerializedMessage, ShardingException.SerializationException>\n\n  /**\n   * Transform binary back into the given type\n   * @since 1.0.0\n   */\n  readonly decode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    bytes: SerializedMessage.SerializedMessage\n  ) => Effect.Effect<A, ShardingException.SerializationException>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Serialization",
+      "path": [
+        "src",
+        "Serialization.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializationTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type SerializationTypeId = typeof SerializationTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedEnvelope",
+    "description": "A SerializedEnvelope is the message that goes over the wire between pods.\nInside the Envelope, you have the encoded messages, plus some informations on where it should be routed to.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class SerializedEnvelope"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedEnvelopeTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const SerializedEnvelopeTypeId: typeof SerializedEnvelopeTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": "This is the schema for a value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<SerializedEnvelope, SerializedEnvelope.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Construct a new `SerializedEnvelope`",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isSerializedEnvelope",
+    "description": "Ensures that the given value is a SerializedEnvelope.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SerializedEnvelope",
+      "path": [
+        "src",
+        "SerializedEnvelope.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedEnvelopeTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type SerializedEnvelopeTypeId = typeof SerializedEnvelopeTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedMessage",
+    "description": "Represents a Message that has been serialized.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class SerializedMessage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedMessageTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const SerializedMessageTypeId: typeof SerializedMessageTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": "This is the schema for a value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<SerializedMessage, SerializedMessage.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Construct a new `SerializedMessage` from its internal string value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isSerializedMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SerializedMessage",
+      "path": [
+        "src",
+        "SerializedMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializedMessageTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type SerializedMessageTypeId = typeof SerializedMessageTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardId",
+      "path": [
+        "src",
+        "ShardId.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardId",
+    "description": "A shard is a logical grouping of multiple entities. There could be thousands of entities in your system,\nso instead of managing every single entity id, the shard manager group them by shard id, and when they are assigned\nor moved around, we always move all the entities with the same shard id.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class ShardId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardId",
+      "path": [
+        "src",
+        "ShardId.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardIdTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ShardIdTypeId: typeof ShardIdTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardId",
+      "path": [
+        "src",
+        "ShardId.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": "This is the schema for a ShardId.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Schema<ShardId, ShardId.Encoded, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardId",
+      "path": [
+        "src",
+        "ShardId.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "Constructs a shard id from its numerical value.\nThe shard id is currently built up by making the hash of the entity id, and then modulo the max amount of shards configured in ManagerConfig.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardId",
+      "path": [
+        "src",
+        "ShardId.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardIdTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ShardIdTypeId = typeof ShardIdTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ShardingTypeId: typeof ShardingTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Tag",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const Tag: Tag<Sharding, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "live",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const live: Layer<Sharding, never, Storage | ShardingConfig | Pods | ShardManagerClient | Serialization>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "register",
+    "description": "Notify the shard manager that shards can now be assigned to this pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const register: Effect.Effect<void, never, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "unregister",
+    "description": "Notify the shard manager that shards must be unassigned from this pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const unregister: Effect.Effect<void, never, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "registerScoped",
+    "description": "Same as `register`, but will automatically call `unregister` when the `Scope` is terminated.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const registerScoped: Effect.Effect<void, never, Sharding | Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "registerSingleton",
+    "description": "Start a computation that is guaranteed to run only on a single pod.\nEach pod should call `registerSingleton` but only a single pod will actually run it at any given time.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, Sharding | R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "registerEntity",
+    "description": "Register a new entity type, allowing pods to send messages to entities of this type.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const registerEntity: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "registerTopic",
+    "description": "Register a new topic type, allowing pods to broadcast messages to subscribers.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const registerTopic: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "messenger",
+    "description": "Get an object that allows sending messages to a given entity type.\nYou can provide a custom send timeout to override the one globally defined.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const messenger: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => Effect.Effect<Messenger<Msg>, never, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "broadcaster",
+    "description": "Get an object that allows broadcasting messages to a given topic type.\nYou can provide a custom send timeout to override the one globally defined.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const broadcaster: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => Effect.Effect<Broadcaster<Msg>, never, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "getPods",
+    "description": "Get the list of pods currently registered to the Shard Manager",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>, never, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "sendMessageToLocalEntityManagerWithoutRetries",
+    "description": "Sends a raw message to the local entity manager without performing reties.\nThose are up to the caller.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const sendMessageToLocalEntityManagerWithoutRetries: (message: SerializedEnvelope.SerializedEnvelope) => Effect.Effect<MessageState.MessageState<SerializedMessage.SerializedMessage>, ShardingException.ShardingException, Sharding>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "getAssignedShardIds",
+    "description": "Gets the list of shardIds assigned to the current Pod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>, never, Sharding>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Sharding",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Sharding {\n  readonly [ShardingTypeId]: ShardingTypeId\n  readonly register: Effect.Effect<void>\n  readonly unregister: Effect.Effect<void>\n  readonly messenger: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => Messenger<Msg>\n  readonly broadcaster: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => Broadcaster<Msg>\n  readonly isEntityOnLocalShards: (\n    recipientAddress: RecipientAddress.RecipientAddress\n  ) => Effect.Effect<boolean>\n  readonly isShuttingDown: Effect.Effect<boolean>\n\n  readonly registerScoped: Effect.Effect<void, never, Scope.Scope>\n  readonly registerEntity: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly registerTopic: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly getShardingRegistrationEvents: Stream.Stream<ShardingRegistrationEvent.ShardingRegistrationEvent>\n  readonly registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, R>\n  readonly assign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly unassign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly sendMessageToLocalEntityManagerWithoutRetries: (\n    message: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n  readonly getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>>\n  readonly getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>>\n  /** @internal */\n  readonly refreshAssignments: Effect.Effect<void, never, Scope.Scope>\n  /** @internal */\n  readonly getShardId: (recipientAddress: RecipientAddress.RecipientAddress) => ShardId.ShardId\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Sharding",
+      "path": [
+        "src",
+        "Sharding.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ShardingTypeId = typeof ShardingTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingConfigTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ShardingConfigTypeId: typeof ShardingConfigTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const ShardingConfig: Context.Tag<ShardingConfig, ShardingConfig>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "defaults",
+    "description": "Provides the default values for the ShardingConfig.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const defaults: Layer.Layer<ShardingConfig, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "withDefaults",
+    "description": "Provides the ShardingConfig, values that are omitted will be read from the defaults",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const withDefaults: (customs: Partial<ShardingConfig>) => Layer.Layer<ShardingConfig>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "fromConfig",
+    "description": "Reads the ShardingConfig from the effect/ConfigProvider",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const fromConfig: Layer.Layer<ShardingConfig, ConfigError.ConfigError, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingConfig",
+    "description": "Sharding configuration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShardingConfig {\n  readonly numberOfShards: number\n  readonly selfHost: string\n  readonly shardingPort: number\n  readonly shardManagerUri: string\n  readonly serverVersion: string\n  readonly entityMaxIdleTime: Duration.Duration\n  readonly entityTerminationTimeout: Duration.Duration\n  readonly refreshAssignmentsRetryInterval: Duration.Duration\n  readonly unhealthyPodReportInterval: Duration.Duration\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardingConfig",
+      "path": [
+        "src",
+        "ShardingConfig.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingConfigTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ShardingConfigTypeId = typeof ShardingConfigTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardsAssigned",
+    "description": "Constructs the event that occurs when new shards are assigned to Pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardsUnassigned",
+    "description": "Constructs the event that occurs when shards are unassigned to a Pod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodHealthChecked",
+    "description": "Constructs the event that occurs when the health of a Pod has been checked",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodRegistered",
+    "description": "Constructs the event that occurs when a new Pod has registered",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodUnregistered",
+    "description": "Constructs the event that occurs when a pod has unregistered",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodHealthChecked",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PodHealthChecked {\n  readonly _tag: \"PodHealthChecked\"\n  readonly pod: PodAddress.PodAddress\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodRegistered",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PodRegistered {\n  readonly _tag: \"PodRegistered\"\n  readonly pod: PodAddress.PodAddress\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodUnregistered",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PodUnregistered {\n  readonly _tag: \"PodUnregistered\"\n  readonly pod: PodAddress.PodAddress\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardsAssigned",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShardsAssigned {\n  readonly _tag: \"ShardsAssigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardsUnassigned",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShardsUnassigned {\n  readonly _tag: \"ShardsUnassigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardingEvent",
+      "path": [
+        "src",
+        "ShardingEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingEvent",
+    "description": "This are the events that may occur over the ShardManager during its lifetime.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type ShardingEvent =\n  | ShardsAssigned\n  | ShardsUnassigned\n  | PodHealthChecked\n  | PodRegistered\n  | PodUnregistered"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "EntityNotManagedByThisPodException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class EntityNotManagedByThisPodException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "EntityTypeNotRegisteredException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class EntityTypeNotRegisteredException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ExceptionWhileOfferingMessageException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class ExceptionWhileOfferingMessageException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "NoResultInProcessedMessageStateException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class NoResultInProcessedMessageStateException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodNoLongerRegisteredException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class PodNoLongerRegisteredException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "PodUnavailableException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class PodUnavailableException"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SerializationException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class SerializationException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isEntityNotManagedByThisPodException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isEntityNotManagedByThisPodException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityNotManagedByThisPodException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isEntityTypeNotRegisteredException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isEntityTypeNotRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityTypeNotRegisteredException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isNoResultInProcessedMessageStateException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isNoResultInProcessedMessageStateException: (u: unknown, overrideOptions?: ParseOptions | number) => u is NoResultInProcessedMessageStateException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isPodNoLongerRegisteredException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isPodNoLongerRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodNoLongerRegisteredException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isPodUnavailableException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isPodUnavailableException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodUnavailableException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isSerializationException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isSerializationException: (u: unknown, overrideOptions?: ParseOptions | number) => u is SerializationException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "isExceptionWhileOfferingMessageException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "export declare const isExceptionWhileOfferingMessageException: (u: unknown, overrideOptions?: ParseOptions | number) => u is ExceptionWhileOfferingMessageException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const schema: Schema.Union<[typeof SerializationException, typeof EntityNotManagedByThisPodException, typeof EntityTypeNotRegisteredException, typeof PodNoLongerRegisteredException, typeof PodUnavailableException, typeof NoResultInProcessedMessageStateException, typeof ExceptionWhileOfferingMessageException]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardingException",
+      "path": [
+        "src",
+        "ShardingException.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingException",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type ShardingException = Schema.Schema.Type<typeof schema>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingRegistrationEvent",
+      "path": [
+        "src",
+        "ShardingRegistrationEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "EntityRegistered",
+    "description": "Constructs and event that occurs when a new EntityType gets registered.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingRegistrationEvent",
+      "path": [
+        "src",
+        "ShardingRegistrationEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "SingletonRegistered",
+    "description": "Constructs a new event that occurs when a new Singleton is registered.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ShardingRegistrationEvent",
+      "path": [
+        "src",
+        "ShardingRegistrationEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "TopicRegistered",
+    "description": "Constructs a new event that occurs when a topic is Registered.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardingRegistrationEvent",
+      "path": [
+        "src",
+        "ShardingRegistrationEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingRegistrationEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type ShardingRegistrationEvent =\n  | EntityRegistered<any>\n  | SingletonRegistered\n  | TopicRegistered<any>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManager",
+      "path": [
+        "src",
+        "ShardManager.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ShardManagerTypeId: typeof ShardManagerTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManager",
+      "path": [
+        "src",
+        "ShardManager.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManager",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const ShardManager: Tag<ShardManager, ShardManager>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManager",
+      "path": [
+        "src",
+        "ShardManager.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "live",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const live: Layer<ShardManager, never, Storage | Pods | ManagerConfig | PodsHealth>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardManager",
+      "path": [
+        "src",
+        "ShardManager.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManager",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShardManager {\n  readonly getShardingEvents: Stream.Stream<ShardingEvent.ShardingEvent>\n  readonly register: (pod: Pod.Pod) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly checkAllPodsHealth: Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n  /* @internal */\n  readonly rebalance: (rebalanceImmediately: boolean) => Effect.Effect<void>\n  /* @internal */\n  readonly persistPods: Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardManager",
+      "path": [
+        "src",
+        "ShardManager.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ShardManagerTypeId = typeof ShardManagerTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerClientTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ShardManagerClientTypeId: typeof ShardManagerClientTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (args: Omit<ShardManagerClient, typeof ShardManagerClientTypeId>) => ShardManagerClient"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const ShardManagerClient: Context.Tag<ShardManagerClient, ShardManagerClient>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "local",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const local: Layer.Layer<ShardManagerClient, never, ShardingConfig.ShardingConfig>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerClient",
+    "description": "ShardManagerClient provides the methods exposed by the ShardManager and called by the Pod.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ShardManagerClient {\n  readonly [ShardManagerClientTypeId]: ShardManagerClientTypeId\n  readonly register: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ShardManagerClient",
+      "path": [
+        "src",
+        "ShardManagerClient.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManagerClientTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type ShardManagerClientTypeId = typeof ShardManagerClientTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "StorageTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const StorageTypeId: typeof StorageTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (args: Omit<Storage, typeof StorageTypeId>) => Storage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Storage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "export declare const Storage: Context.Tag<Storage, Storage>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "memory",
+    "description": "A layer that stores data in-memory.\nThis is useful for testing with a single pod only.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const memory: Layer.Layer<Storage, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "noop",
+    "description": "A layer that does nothing, useful for testing.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const noop: Layer.Layer<Storage, never, never>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "Storage",
+    "description": "The storage Service is responsible of persisting assignments and registered pods.\nThe storage is expected to be shared among all pods, so it works also as communication of assignments between Pods.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Storage {\n  readonly [StorageTypeId]: StorageTypeId\n\n  /**\n   * Get the current state of shard assignments to pods\n   */\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Save the current state of shard assignments to pods\n   */\n  readonly saveAssignments: (\n    assignments: HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>\n  ) => Effect.Effect<void>\n\n  /**\n   * A stream that will emit the state of shard assignments whenever it changes\n   */\n  readonly assignmentsStream: Stream.Stream<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Get the list of existing pods\n   */\n  readonly getPods: Effect.Effect<HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>>\n\n  /**\n   * Save the list of existing pods\n   */\n  readonly savePods: (pods: HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>) => Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Storage",
+      "path": [
+        "src",
+        "Storage.ts"
+      ]
+    },
+    "project": "@effect/cluster",
+    "name": "StorageTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type StorageTypeId = typeof StorageTypeId"
+  }
+]

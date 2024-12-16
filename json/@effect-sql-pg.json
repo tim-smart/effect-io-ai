@@ -1,0 +1,290 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "From \"./PgClient.js\"",
+    "description": "Re-exports all named exports from the \"./PgClient.js\" module as `PgClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PgClient from \"./PgClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "From \"./PgMigrator.js\"",
+    "description": "Re-exports all named exports from the \"./PgMigrator.js\" module as `PgMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PgMigrator from \"./PgMigrator.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const PgClient: Context.Tag<PgClient, PgClient>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "makeCompiler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface PgClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: PgClientConfig\n  readonly json: (_: unknown) => Fragment\n  readonly array: (_: ReadonlyArray<Primitive>) => Fragment\n  readonly listen: (channel: string) => Stream.Stream<string, SqlError>\n  readonly notify: (channel: string, payload: string) => Effect.Effect<void, SqlError>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgClientConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export interface PgClientConfig {\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly path?: string | undefined\n  readonly ssl?: boolean | ConnectionOptions | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  /**\n   * A function returning a custom socket to use. This parameter is not documented\n   * in the postgres.js's type signature. See their\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details) instead.\n   *\n   * @example\n   * ```ts\n   * import { AuthTypes, Connector } from \"@google-cloud/cloud-sql-connector\";\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Effect, Layer } from \"effect\"\n   *\n   * const layer = Effect.gen(function*() {\n   *   const connector = new Connector();\n   *   const clientOpts = yield* Effect.promise(() => connector.getOptions({\n   *     instanceConnectionName: \"project:region:instance\",\n   *     authType: AuthTypes.IAM,\n   *   }));\n   *   return PgClient.layer({ socket: clientOpts.stream, username: \"iam-user\" });\n   * }).pipe(Layer.unwrapEffect)\n   * ```\n   */\n  readonly socket?: (() => NodeStream.Duplex) | undefined\n\n  readonly idleTimeout?: Duration.DurationInput | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly applicationName?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n  readonly transformJson?: boolean | undefined\n  readonly fetchTypes?: boolean | undefined\n  readonly prepare?: boolean | undefined\n  /**\n   * A callback when postgres has a notice, see\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details).\n   * By default, postgres.js logs these with console.log.\n   * To silence notices, see the following example:\n   * @example\n   * ```ts\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Layer } from \"effect\"\n   *\n   * const layer = PgClient.layer({ onnotice: Config.succeed(() => {}) })\n   * ```\n   */\n  readonly onnotice?: (notice: postgres.Notice) => void\n  readonly types?: Record<string, postgres.PostgresType> | undefined\n\n  readonly debug?: postgres.Options<{}>[\"debug\"] | undefined\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgCustom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "custom types",
+    "signature": "export type PgCustom = PgJson | PgArray"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PgClient",
+      "path": [
+        "src",
+        "PgClient.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PgMigrator",
+      "path": [
+        "src",
+        "PgMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "export declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | PgClient | Client.SqlClient | CommandExecutor | R2>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "PgMigrator",
+      "path": [
+        "src",
+        "PgMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "From \"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "PgMigrator",
+      "path": [
+        "src",
+        "PgMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "From \"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "PgMigrator",
+      "path": [
+        "src",
+        "PgMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-pg",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  }
+]

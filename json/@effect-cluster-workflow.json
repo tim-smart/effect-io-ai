@@ -1,0 +1,1388 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Activity",
+      "path": [
+        "src",
+        "Activity.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "currentAttempt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const currentAttempt: Effect.Effect<number, never, ActivityContext.ActivityContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Activity",
+      "path": [
+        "src",
+        "Activity.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "persistenceId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const persistenceId: Effect.Effect<string, never, ActivityContext.ActivityContext>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Activity",
+      "path": [
+        "src",
+        "Activity.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ActivityContext",
+      "path": [
+        "src",
+        "ActivityContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "ActivityContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const ActivityContextTypeId: typeof ActivityContextTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ActivityContext",
+      "path": [
+        "src",
+        "ActivityContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "ActivityContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const ActivityContext: Context.Tag<ActivityContext, ActivityContext>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ActivityContext",
+      "path": [
+        "src",
+        "ActivityContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "ActivityContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface ActivityContext {\n  persistenceId: string\n  currentAttempt: number\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ActivityContext",
+      "path": [
+        "src",
+        "ActivityContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "ActivityContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type ActivityContextTypeId = typeof ActivityContextTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "CrashableRuntimeCrashedError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class CrashableRuntimeCrashedError"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "CrashableRuntimeScheduler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class CrashableRuntimeScheduler { constructor(readonly baseScheduler: Scheduler.Scheduler) }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const make: Effect.Effect<CrashableRuntime, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "isCrashableRuntimeCrashedError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "retryWhileCrashes",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "runWithCrash",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "CrashableRuntime",
+      "path": [
+        "src",
+        "CrashableRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "CrashableRuntime",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface CrashableRuntime {\n  /**\n   * @since 1.0.0\n   */\n  crash: Effect.Effect<void>\n\n  /**\n   * @since 1.0.0\n   */\n  run: <A, E, R>(\n    fn: (restore: <A2, E2, R2>(fa: Effect.Effect<A2, E2, R2>) => Effect.Effect<A2, E2, R2>) => Effect.Effect<A, E, R>\n  ) => Effect.Effect<A, E | CrashableRuntimeCrashedError, R>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Attempted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Completed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "KillRequested",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Forked",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Joined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Attempted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Attempted {\n  _tag: typeof ATTEMPTED\n  sequence: number\n  version: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Completed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Completed<A, E> {\n  _tag: typeof COMPLETED\n  sequence: number\n  exit: Exit.Exit<A, E>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Forked",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Forked {\n  _tag: typeof FORKED\n  sequence: number\n  persistenceId: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "InterruptionRequested",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface InterruptionRequested {\n  _tag: typeof INTERRUPTION_REQUESTED\n  sequence: number\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Joined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Joined {\n  _tag: typeof JOINED\n  sequence: number\n  persistenceId: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export type DurableExecutionEvent<A, E> =\n  | Attempted\n  | InterruptionRequested\n  | Completed<A, E>\n  | Forked\n  | Joined"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DurableExecutionEvent",
+      "path": [
+        "src",
+        "DurableExecutionEvent.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionEventFrom",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export type DurableExecutionEventFrom<IE, IA> = {\n  readonly _tag: typeof ATTEMPTED\n  readonly sequence: number\n  readonly version: string\n} | {\n  readonly _tag: typeof INTERRUPTION_REQUESTED\n  readonly sequence: number\n} | {\n  readonly _tag: typeof COMPLETED\n  readonly sequence: number\n  readonly exit: Schema.ExitEncoded<IE, IA, unknown>\n} | {\n  readonly _tag: typeof FORKED\n  readonly sequence: number\n  readonly persistenceId: string\n} | {\n  readonly _tag: typeof JOINED\n  readonly sequence: number\n  readonly persistenceId: string\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionJournalTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const DurableExecutionJournalTypeId: typeof DurableExecutionJournalTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionJournal",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const DurableExecutionJournal: Context.Tag<DurableExecutionJournal, DurableExecutionJournal>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionJournal",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface DurableExecutionJournal {\n  readonly [DurableExecutionJournalTypeId]: DurableExecutionJournalTypeId\n  read<A, IA, E, IE>(\n    persistenceId: string,\n    success: Schema.Schema<A, IA>,\n    failure: Schema.Schema<E, IE>,\n    fromSequence: number,\n    keepReading: boolean\n  ): Stream.Stream<DurableExecutionEvent.DurableExecutionEvent<A, E>>\n  append<A, IA, E, IE>(\n    persistenceId: string,\n    success: Schema.Schema<A, IA>,\n    failure: Schema.Schema<E, IE>,\n    event: DurableExecutionEvent.DurableExecutionEvent<A, E>\n  ): Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DurableExecutionJournal",
+      "path": [
+        "src",
+        "DurableExecutionJournal.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "DurableExecutionJournalTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type DurableExecutionJournalTypeId = typeof DurableExecutionJournalTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableExecutionJournalInMemory",
+      "path": [
+        "src",
+        "DurableExecutionJournalInMemory.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "activityJournalInMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const activityJournalInMemory: Layer.Layer<DurableExecutionJournal.DurableExecutionJournal, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./Activity.js\"",
+    "description": "Re-exports all named exports from the \"./Activity.js\" module as `Activity`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Activity from \"./Activity.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./ActivityContext.js\"",
+    "description": "Re-exports all named exports from the \"./ActivityContext.js\" module as `ActivityContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as ActivityContext from \"./ActivityContext.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./CrashableRuntime.js\"",
+    "description": "Re-exports all named exports from the \"./CrashableRuntime.js\" module as `CrashableRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as CrashableRuntime from \"./CrashableRuntime.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./DurableExecutionEvent.js\"",
+    "description": "Re-exports all named exports from the \"./DurableExecutionEvent.js\" module as `DurableExecutionEvent`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DurableExecutionEvent from \"./DurableExecutionEvent.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./DurableExecutionJournal.js\"",
+    "description": "Re-exports all named exports from the \"./DurableExecutionJournal.js\" module as `DurableExecutionJournal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DurableExecutionJournal from \"./DurableExecutionJournal.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./DurableExecutionJournalInMemory.js\"",
+    "description": "Re-exports all named exports from the \"./DurableExecutionJournalInMemory.js\" module as `DurableExecutionJournalInMemory`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DurableExecutionJournalInMemory from \"./DurableExecutionJournalInMemory.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./Workflow.js\"",
+    "description": "Re-exports all named exports from the \"./Workflow.js\" module as `Workflow`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Workflow from \"./Workflow.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./WorkflowContext.js\"",
+    "description": "Re-exports all named exports from the \"./WorkflowContext.js\" module as `WorkflowContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WorkflowContext from \"./WorkflowContext.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./WorkflowEngine.js\"",
+    "description": "Re-exports all named exports from the \"./WorkflowEngine.js\" module as `WorkflowEngine`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WorkflowEngine from \"./WorkflowEngine.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./WorkflowRuntime.js\"",
+    "description": "Re-exports all named exports from the \"./WorkflowRuntime.js\" module as `WorkflowRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WorkflowRuntime from \"./WorkflowRuntime.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./WorkflowRuntimeMessage.js\"",
+    "description": "Re-exports all named exports from the \"./WorkflowRuntimeMessage.js\" module as `WorkflowRuntimeMessage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WorkflowRuntimeMessage from \"./WorkflowRuntimeMessage.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "From \"./WorkflowRuntimeState.js\"",
+    "description": "Re-exports all named exports from the \"./WorkflowRuntimeState.js\" module as `WorkflowRuntimeState`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WorkflowRuntimeState from \"./WorkflowRuntimeState.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "yieldExecution",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const yieldExecution: Effect.Effect<never, never, WorkflowContext.WorkflowContext>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "union",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "sleep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "timeout",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Workflow",
+      "path": [
+        "src",
+        "Workflow.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Workflow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Workflow<T extends Message.Message.Any, R> {\n  schema: Schema.Schema<T, unknown>\n  execute: (\n    input: T\n  ) => Effect.Effect<Message.Message.Success<T>, Message.Message.Error<T>, R | WorkflowContext.WorkflowContext>\n  version: (input: T) => string\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export declare const WorkflowContextTypeId: typeof WorkflowContextTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const WorkflowContext: Context.Tag<WorkflowContext, WorkflowContext>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "appendToPersistenceId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface WorkflowContext {\n  makePersistenceId: (localId: string) => string\n  durableExecutionJournal: DurableExecutionJournal.DurableExecutionJournal\n  isYielding: Effect.Effect<boolean>\n  yieldExecution: Effect.Effect<never>\n  forkAndJoin: <A, E, R>(persistenceId: string, effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n  version: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "WorkflowContext",
+      "path": [
+        "src",
+        "WorkflowContext.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowContextTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "export type WorkflowContextTypeId = typeof WorkflowContextTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowEngine",
+      "path": [
+        "src",
+        "WorkflowEngine.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "makeScoped",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "WorkflowEngine",
+      "path": [
+        "src",
+        "WorkflowEngine.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowEngine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface WorkflowEngine<T extends Message.Message.Any> {\n  sendDiscard: (request: T) => Effect.Effect<void>\n  send: <A extends T>(request: A) => Effect.Effect<Message.Message.Success<A>, Message.Message.Error<A>>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowRuntime",
+      "path": [
+        "src",
+        "WorkflowRuntime.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "attempt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "CheckStatus",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class CheckStatus<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "RequestComplete",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class RequestComplete<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "RequestFork",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class RequestFork"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "RequestJoin",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class RequestJoin"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "RequestYield",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class RequestYield"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "WorkflowRuntimeMessage",
+      "path": [
+        "src",
+        "WorkflowRuntimeMessage.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowRuntimeMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export type WorkflowRuntimeMessage<A, E> =\n  | RequestJoin\n  | RequestFork\n  | RequestYield\n  | RequestComplete<A, E>\n  | CheckStatus<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Completed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class Completed<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "NotStarted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class NotStarted"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Replay",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class Replay<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Running",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class Running<A, E>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "Yielding",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare class Yielding<A, E>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "initialState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "WorkflowRuntimeState",
+      "path": [
+        "src",
+        "WorkflowRuntimeState.ts"
+      ]
+    },
+    "project": "@effect/cluster-workflow",
+    "name": "WorkflowRuntimeState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export type WorkflowRuntimeState<A, E> =\n  | NotStarted\n  | Replay<A, E>\n  | Running<A, E>\n  | Yielding<A, E>\n  | Completed<A, E>"
+  }
+]

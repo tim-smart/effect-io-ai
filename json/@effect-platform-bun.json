@@ -1,0 +1,867 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunCommandExecutor",
+      "path": [
+        "src",
+        "BunCommandExecutor.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer<CommandExecutor, never, FileSystem>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunContext",
+      "path": [
+        "src",
+        "BunContext.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer.Layer<BunContext, never, never>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "BunContext",
+      "path": [
+        "src",
+        "BunContext.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunContext",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type BunContext =\n  | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunFileSystem",
+      "path": [
+        "src",
+        "BunFileSystem.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer<FileSystem, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ParcelWatcher",
+      "path": [
+        "src",
+        "BunFileSystem",
+        "ParcelWatcher.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer<WatchBackend, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpPlatform",
+      "path": [
+        "src",
+        "BunHttpPlatform.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect.Effect<Platform.HttpPlatform, never, FileSystem.FileSystem | Etag.Generator>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpPlatform",
+      "path": [
+        "src",
+        "BunHttpPlatform.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Effect.Effect<Server.HttpServer, never, Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerServer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerServer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerTest",
+    "description": "Layer starting a server on a random port and producing an `HttpClient`\nwith prepended url of the running http server.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient<HttpClientError, Scope.Scope>, HttpServerError.ServeError, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerConfig: (options: Config.Config.Wrap<Omit<ServeOptions, \"fetch\" | \"error\">>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServer",
+      "path": [
+        "src",
+        "BunHttpServer.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerContext",
+    "description": "A Layer providing the `HttpPlatform`, `FileSystem`, `Etag.Generator`, and `Path`\nservices.\n\nThe `FileSystem` service is a no-op implementation, so this layer is only\nuseful for platforms that have no file system.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunHttpServerRequest",
+      "path": [
+        "src",
+        "BunHttpServerRequest.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "toRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "export declare const toRequest: (self: ServerRequest.HttpServerRequest) => Request"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunKeyValueStore",
+      "path": [
+        "src",
+        "BunKeyValueStore.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerFileSystem",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunMultipart",
+      "path": [
+        "src",
+        "BunMultipart.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "stream",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const stream: (source: Request) => Stream.Stream<Multipart.Part, Multipart.MultipartError>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunMultipart",
+      "path": [
+        "src",
+        "BunMultipart.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "persisted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const persisted: (source: Request) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunPath",
+      "path": [
+        "src",
+        "BunPath.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer<Path, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunPath",
+      "path": [
+        "src",
+        "BunPath.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerPosix",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layerPosix: Layer<Path, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunPath",
+      "path": [
+        "src",
+        "BunPath.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerWin32",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layerWin32: Layer<Path, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunRuntime",
+      "path": [
+        "src",
+        "BunRuntime.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "runMain",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "runtime",
+    "signature": "export declare const runMain: RunMain"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunSink",
+      "path": [
+        "src",
+        "BunSink.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"@effect/platform-node-shared/NodeSink\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSink\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/platform-node-shared/NodeSink\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunSocket",
+      "path": [
+        "src",
+        "BunSocket.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerWebSocketConstructor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunSocket",
+      "path": [
+        "src",
+        "BunSocket.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"@effect/platform-node-shared/NodeSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/platform-node-shared/NodeSocket\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "BunSocket",
+      "path": [
+        "src",
+        "BunSocket.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunStream",
+      "path": [
+        "src",
+        "BunStream.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"@effect/platform-node-shared/NodeStream\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeStream\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/platform-node-shared/NodeStream\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunTerminal",
+      "path": [
+        "src",
+        "BunTerminal.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunTerminal",
+      "path": [
+        "src",
+        "BunTerminal.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": "export declare const layer: Layer<Terminal, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunWorker",
+      "path": [
+        "src",
+        "BunWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerManager",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunWorker",
+      "path": [
+        "src",
+        "BunWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerWorker",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunWorker",
+      "path": [
+        "src",
+        "BunWorker.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: (spawn: (id: number) => Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunWorkerRunner",
+      "path": [
+        "src",
+        "BunWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunCommandExecutor.js\"",
+    "description": "Re-exports all named exports from the \"./BunCommandExecutor.js\" module as `BunCommandExecutor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunCommandExecutor from \"./BunCommandExecutor.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunContext.js\"",
+    "description": "Re-exports all named exports from the \"./BunContext.js\" module as `BunContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunContext from \"./BunContext.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunFileSystem.js\"",
+    "description": "Re-exports all named exports from the \"./BunFileSystem.js\" module as `BunFileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunFileSystem from \"./BunFileSystem.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunHttpPlatform.js\"",
+    "description": "Re-exports all named exports from the \"./BunHttpPlatform.js\" module as `BunHttpPlatform`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunHttpPlatform from \"./BunHttpPlatform.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunHttpServer.js\"",
+    "description": "Re-exports all named exports from the \"./BunHttpServer.js\" module as `BunHttpServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunHttpServer from \"./BunHttpServer.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunHttpServerRequest.js\"",
+    "description": "Re-exports all named exports from the \"./BunHttpServerRequest.js\" module as `BunHttpServerRequest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunHttpServerRequest from \"./BunHttpServerRequest.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunKeyValueStore.js\"",
+    "description": "Re-exports all named exports from the \"./BunKeyValueStore.js\" module as `BunKeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunKeyValueStore from \"./BunKeyValueStore.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunMultipart.js\"",
+    "description": "Re-exports all named exports from the \"./BunMultipart.js\" module as `BunMultipart`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunMultipart from \"./BunMultipart.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunPath.js\"",
+    "description": "Re-exports all named exports from the \"./BunPath.js\" module as `BunPath`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunPath from \"./BunPath.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunRuntime.js\"",
+    "description": "Re-exports all named exports from the \"./BunRuntime.js\" module as `BunRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunRuntime from \"./BunRuntime.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunSink.js\"",
+    "description": "Re-exports all named exports from the \"./BunSink.js\" module as `BunSink`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunSink from \"./BunSink.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunSocket.js\"",
+    "description": "Re-exports all named exports from the \"./BunSocket.js\" module as `BunSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunSocket from \"./BunSocket.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunStream.js\"",
+    "description": "Re-exports all named exports from the \"./BunStream.js\" module as `BunStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunStream from \"./BunStream.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunTerminal.js\"",
+    "description": "Re-exports all named exports from the \"./BunTerminal.js\" module as `BunTerminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunTerminal from \"./BunTerminal.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunWorker.js\"",
+    "description": "Re-exports all named exports from the \"./BunWorker.js\" module as `BunWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunWorker from \"./BunWorker.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "From \"./BunWorkerRunner.js\"",
+    "description": "Re-exports all named exports from the \"./BunWorkerRunner.js\" module as `BunWorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as BunWorkerRunner from \"./BunWorkerRunner.js\""
+  }
+]

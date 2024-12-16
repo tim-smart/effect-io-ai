@@ -1,0 +1,668 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "From \"./Metrics.js\"",
+    "description": "Re-exports all named exports from the \"./Metrics.js\" module as `Metrics`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Metrics from \"./Metrics.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "From \"./NodeSdk.js\"",
+    "description": "Re-exports all named exports from the \"./NodeSdk.js\" module as `NodeSdk`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as NodeSdk from \"./NodeSdk.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "From \"./Resource.js\"",
+    "description": "Re-exports all named exports from the \"./Resource.js\" module as `Resource`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Resource from \"./Resource.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "From \"./Tracer.js\"",
+    "description": "Re-exports all named exports from the \"./Tracer.js\" module as `Tracer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Tracer from \"./Tracer.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "From \"./WebSdk.js\"",
+    "description": "Re-exports all named exports from the \"./WebSdk.js\" module as `WebSdk`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as WebSdk from \"./WebSdk.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Metrics",
+      "path": [
+        "src",
+        "Metrics.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "makeProducer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "producer",
+    "signature": "export declare const makeProducer: Effect.Effect<MetricProducer, never, Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Metrics",
+      "path": [
+        "src",
+        "Metrics.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "registerProducer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "producer",
+    "signature": "export declare const registerProducer: (self: MetricProducer, metricReader: LazyArg<MetricReader | NonEmptyReadonlyArray<MetricReader>>) => Effect.Effect<Array<any>, never, Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Metrics",
+      "path": [
+        "src",
+        "Metrics.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: (evaluate: LazyArg<MetricReader | NonEmptyReadonlyArray<MetricReader>>) => Layer<never, never, Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSdk",
+      "path": [
+        "src",
+        "NodeSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerEmpty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "layer",
+    "signature": "export declare const layerEmpty: Layer.Layer<Resource.Resource, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSdk",
+      "path": [
+        "src",
+        "NodeSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerTracerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSdk",
+      "path": [
+        "src",
+        "NodeSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "NodeSdk",
+      "path": [
+        "src",
+        "NodeSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Configuration",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  } | undefined\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Resource",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tag",
+    "signature": "export declare const Resource: Tag<Resource, Resources.Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerEmpty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "layer",
+    "signature": "export declare const layerEmpty: Layer.Layer<Resource, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerFromEnv",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Resource",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "identifier",
+    "signature": "export interface Resource {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect<EffectTracer, never, OtelTracer>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "makeExternalSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const makeExternalSpan: (options: { readonly traceId: string; readonly spanId: string; readonly traceFlags?: number | undefined; readonly traceState?: string | Otel.TraceState | undefined; }) => ExternalSpan"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "currentOtelSpan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "export declare const currentOtelSpan: Effect<Otel.Span, NoSuchElementException, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerWithoutOtelTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerWithoutOtelTracer: Layer<never, never, OtelTracer>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layer: Layer<OtelTracer, never, OtelTracerProvider | Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerGlobal",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerGlobal: Layer<OtelTracer, never, Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerTracer: Layer<OtelTracer, never, OtelTracerProvider | Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerGlobalTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerGlobalTracer: Layer<OtelTracer, never, Resource>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTracerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const OtelTracerProvider: Tag<OtelTracerProvider, Otel.TracerProvider>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const OtelTracer: Tag<OtelTracer, Otel.Tracer>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTraceFlags",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const OtelTraceFlags: Tag<OtelTraceFlags, Otel.TraceFlags>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTraceState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const OtelTraceState: Tag<OtelTraceState, Otel.TraceState>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "withSpanContext",
+    "description": "Set the effect's parent span from the given opentelemetry `SpanContext`.\n\nThis is handy when you set up OpenTelemetry outside of Effect and want to\nattach to a parent span.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "propagation",
+    "signature": "export declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, ParentSpan>>; <A, E, R>(effect: Effect<A, E, R>, spanContext: Otel.SpanContext): Effect<A, E, Exclude<R, ParentSpan>>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTraceFlags",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export interface OtelTraceFlags {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTraceState",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export interface OtelTraceState {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTracer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export interface OtelTracer {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelTracerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export interface OtelTracerProvider {\n  readonly _: unique symbol\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WebSdk",
+      "path": [
+        "src",
+        "WebSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerTracerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "WebSdk",
+      "path": [
+        "src",
+        "WebSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layer",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "WebSdk",
+      "path": [
+        "src",
+        "WebSdk.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Configuration",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  }\n}"
+  }
+]

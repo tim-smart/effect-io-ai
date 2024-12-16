@@ -1,0 +1,4296 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const DocTypeId: typeof DocTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isDoc",
+    "description": "Returns `true` if the specified value is a `Doc`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isDoc: (u: unknown) => u is Doc<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isFail",
+    "description": "Returns `true` if the specified `Doc` is a `Fail`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFail: <A>(self: Doc<A>) => self is Fail<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isEmpty",
+    "description": "Returns `true` if the specified `Doc` is an `Empty`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isChar",
+    "description": "Returns `true` if the specified `Doc` is a `Char`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isChar: <A>(self: Doc<A>) => self is Char<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isText",
+    "description": "Returns `true` if the specified `Doc` is a `Text`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isText: <A>(self: Doc<A>) => self is Text<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isLine",
+    "description": "Returns `true` if the specified `Doc` is a `Line`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isLine: <A>(self: Doc<A>) => self is Line<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isFlatAlt",
+    "description": "Returns `true` if the specified `Doc` is a `FlatAlt`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isCat",
+    "description": "Returns `true` if the specified `Doc` is a `Cat`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCat: <A>(self: Doc<A>) => self is Cat<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isNest",
+    "description": "Returns `true` if the specified `Doc` is a `Nest`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNest: <A>(self: Doc<A>) => self is Nest<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isUnion",
+    "description": "Returns `true` if the specified `Doc` is a `Union`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUnion: <A>(self: Doc<A>) => self is Union<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isColumn",
+    "description": "Returns `true` if the specified `Doc` is a `Column`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isColumn: <A>(self: Doc<A>) => self is Column<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isWithPageWidth",
+    "description": "Returns `true` if the specified `Doc` is a `WithPageWidth`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isWithPageWidth: <A>(self: Doc<A>) => self is WithPageWidth<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isNesting",
+    "description": "Returns `true` if the specified `Doc` is a `Nesting`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isAnnotated",
+    "description": "Returns `true` if the specified `Doc` is a `Annotated`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "char",
+    "description": "A document containing a single character.\n\n**Invariants**\n- Cannot be the newline (`\"\\n\"`) character",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const char: (char: string) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "text",
+    "description": "A document containing a string of text.\n\n**Invariants**\n- Text cannot be less than two characters long\n- Text cannot contain a newline (`\"\\n\"`) character",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (text: string) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "string",
+    "description": "Constructs a document containing a string of text.\n\n**Note**: newline characters (`\\n`) contained in the provided string will be\ndisregarded (i.e. not rendered) in the output document.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const string: (str: string) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "empty",
+    "description": "The `empty` document behaves like a document containing the empty string\n(`\"\"`), so it has a height of `1`.\n\nThis may lead to surprising behavior if the empty document is expected to\nbear no weight inside certain layout functions, such as`vcat`, where it will\nrender an empty line of output.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.vsep([\n  Doc.text(\"hello\"),\n  // `parentheses` for visibility purposes only\n  Doc.parenthesized(Doc.empty),\n  Doc.text(\"world\")\n])\n\nconst expected = `|hello\n                  |()\n                  |world`\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(expected)\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const empty: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "fail",
+    "description": "The `fail` document is a document that cannot be rendered.\n\nGenerally occurs when flattening a line. The layout algorithms will reject\nthis document and choose a more suitable rendering.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const fail: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "line",
+    "description": "The `line` document advances to the next line and indents to the current\nnesting level. However, `line` will behave like `space` if the line break is\nundone by `group`.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat([\n  Doc.text(\"lorem ipsum\"),\n  Doc.line,\n  Doc.text(\"dolor sit amet\")\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem ipsum\n     |dolor sit amet`\n  )\n)\nassert.strictEqual(\n  Doc.render(Doc.group(doc), { style: \"pretty\" }),\n  \"lorem ipsum dolor sit amet\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const line: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "lineBreak",
+    "description": "The `lineBreak` document is like `line` but behaves like `empty` if the line\nbreak is undone by `group` (instead of `space`).",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat([\n  Doc.text(\"lorem ipsum\"),\n  Doc.lineBreak,\n  Doc.text(\"dolor sit amet\")\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem ipsum\n     |dolor sit amet`\n  )\n)\nassert.strictEqual(\n  Doc.render(Doc.group(doc), { style: \"pretty\" }),\n  \"lorem ipsumdolor sit amet\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lineBreak: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "softLine",
+    "description": "The `softLine` document behaves like `space` if the resulting output fits\nonto the page, otherwise it behaves like `line`.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat([\n  Doc.text(\"lorem ipsum\"),\n  Doc.softLine,\n  Doc.text(\"dolor sit amet\")\n])\n\n// Here we have enough space to put everything onto one line\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 80 }\n  }),\n  \"lorem ipsum dolor sit amet\"\n)\n\n// If the page width is narrowed to `10`, the layout algorithm will\n// introduce a line break\nassert.strictEqual(\n  Doc.render(Doc.group(doc), {\n    style: \"pretty\",\n    options: { lineWidth: 10 }\n  }),\n  String.stripMargin(\n    `|lorem ipsum\n     |dolor sit amet`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const softLine: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "softLineBreak",
+    "description": "The `softLineBreak` document is similar to `softLine`, but behaves like\n`empty` if the resulting output does not fit onto the page (instead of\n`space`).",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat([\n  Doc.text(\"ThisText\"),\n  Doc.softLineBreak,\n  Doc.text(\"IsWayTooLong\")\n])\n\n// With enough space, we get direct concatenation of documents:\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 80 }\n  }),\n  \"ThisTextIsWayTooLong\"\n)\n\n// If the page width is narrowed to `10`, the layout algorithm will\n// introduce a line break\nassert.strictEqual(\n  Doc.render(Doc.group(doc), {\n    style: \"pretty\",\n    options: { lineWidth: 10 }\n  }),\n  String.stripMargin(\n    `|ThisText\n     |IsWayTooLong`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const softLineBreak: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "hardLine",
+    "description": "The `hardLine` document is always laid out as a line break, regardless of\nspace or whether or not the document was `group`\"ed.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat([\n  Doc.text(\"lorem ipsum\"),\n  Doc.hardLine,\n  Doc.text(\"dolor sit amet\")\n])\n\n// Even with enough space, a line break is introduced\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 1000 }\n  }),\n  String.stripMargin(\n    `|lorem ipsum\n     |dolor sit amet`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const hardLine: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "backslash",
+    "description": "A document containing a single `\\` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const backslash: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "colon",
+    "description": "A document containing a single `:` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const colon: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "comma",
+    "description": "A document containing a single `,` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const comma: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "dot",
+    "description": "A document containing a single `.` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const dot: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "dquote",
+    "description": "A document containing a single `\"` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const dquote: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "equalSign",
+    "description": "A document containing a single `=` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const equalSign: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "langle",
+    "description": "A document containing a single `<` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const langle: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "lbrace",
+    "description": "A document containing a single `{` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lbrace: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "lbracket",
+    "description": "A document containing a single `[` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lbracket: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "lparen",
+    "description": "A document containing a single `(` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lparen: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "rangle",
+    "description": "A document containing a single `>` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rangle: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "rbrace",
+    "description": "A document containing a single `}` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rbrace: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "rbracket",
+    "description": "A document containing a single `]` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rbracket: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "rparen",
+    "description": "A document containing a single `)` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rparen: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "semi",
+    "description": "A document containing a single `;` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const semi: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "slash",
+    "description": "A document containing a single `/` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const slash: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "squote",
+    "description": "A document containing a single `\"` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const squote: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "space",
+    "description": "A document containing a single ` ` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const space: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "vbar",
+    "description": "A document containing a single `|` character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const vbar: Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "cat",
+    "description": "The `cat` combinator lays out two documents separated by nothing.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "cats",
+    "description": "The `cats` combinator will attempt to lay out a collection of documents\nseparated by nothing. If the output does not fit the page, then the documents\nwill be separated by newlines. This is what differentiates it from `vcat`,\nwhich always lays out documents beneath one another.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hsep([\n  Doc.text(\"Docs:\"),\n  Doc.cats(Doc.words(\"lorem ipsum dolor\"))\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"Docs: loremipsumdolor\"\n)\n\n// If the document exceeds the width of the page, the documents are rendered\n// one above another\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 10 }\n  }),\n  String.stripMargin(\n    `|Docs: lorem\n     |ipsum\n     |dolor`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "catWithLine",
+    "description": "The `catWithLine` combinator concatenates two documents by placing a `line`\ndocument between them.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = pipe(\n  Doc.char(\"a\"),\n  Doc.catWithLine(Doc.char(\"b\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|a\n     |b`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "catWithLineBreak",
+    "description": "The `catWithLineBreak` combinator concatenates two documents by placing a\n`lineBreak` document between them.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = pipe(\n  Doc.char(\"a\"),\n  Doc.catWithLineBreak(Doc.char(\"b\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|a\n     |b`\n  )\n)\n\nassert.strictEqual(\n  Doc.render(Doc.group(doc), { style: \"pretty\" }),\n  \"ab\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "catWithSoftLine",
+    "description": "The `catWithSoftLine` combinator concatenates two documents by placing a\n`softLine` document between them.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = pipe(\n  Doc.char(\"a\"),\n  Doc.catWithSoftLine(Doc.char(\"b\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"a b\"\n)\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 1 }\n  }),\n  String.stripMargin(\n    `|a\n     |b`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "catWithSoftLineBreak",
+    "description": "The `catWithSoftLineBreak` combinator concatenates two documents by\nplacing a `softLineBreak` document between them.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = pipe(\n  Doc.char(\"a\"),\n  Doc.catWithSoftLineBreak(Doc.char(\"b\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"ab\"\n)\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 1 }\n  }),\n  String.stripMargin(\n    `|a\n     |b`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "catWithSpace",
+    "description": "The `catWithSpace` combinator concatenates two documents by placing a\n`space` document between them.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\n\nconst doc: Doc.Doc<never> = pipe(\n  Doc.char(\"a\"),\n  Doc.catWithSpace(Doc.char(\"b\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"a b\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "concatWith",
+    "description": "The `concatWith` combinator concatenates all documents in a collection\nelement-wise with the specified binary function.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\n\nconst doc: Doc.Doc<never> = pipe(\n  [Doc.char(\"a\"), Doc.char(\"b\")],\n  Doc.concatWith((x, y) => Doc.catWithSpace(y)(x))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"a b\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "vcat",
+    "description": "The `vcat` combinator concatenates all documents in a collection vertically.\nIf the output is grouped then the line breaks are removed.\n\nIn other words `vcat` is like `vsep`, with newlines removed instead of\nreplaced by spaces.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.vcat(Doc.words(\"lorem ipsum dolor\"))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem\n     |ipsum\n     |dolor`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "hcat",
+    "description": "The `hcat` combinator concatenates all documents in a collection horizontally\nwithout any spacing.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hcat(Doc.words(\"lorem ipsum dolor\"))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"loremipsumdolor\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "fillCat",
+    "description": "The `fillCat` combinator concatenates all documents in a collection\nhorizontally by placing a `empty` between each pair of documents as long as\nthey fit the page. Once the page width is exceeded, a `lineBreak` is inserted\nand the process is repeated for all documents in the collection.\n\n**Note**: the use of `lineBreak` means that if `group`ed, the documents will\nbe separated with `empty` instead of newlines. See `fillSep` if you want a\n`space` instead.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "hsep",
+    "description": "The `hsep` combinator concatenates all documents in a collection horizontally\nby placing a `space` between each pair of documents.\n\nFor automatic line breaks, consider using `fillSep`.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\n\nconst doc: Doc.Doc<never> = Doc.hsep(Doc.words(\"lorem ipsum dolor sit amet\"))\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 80 }\n  }),\n  \"lorem ipsum dolor sit amet\"\n)\n\n// The `hsep` combinator will not introduce line breaks on its own, even when\n// the page is too narrow\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 5 }\n  }),\n  \"lorem ipsum dolor sit amet\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "vsep",
+    "description": "The `vsep` combinator concatenates all documents in a collection vertically.\nIf a `group` undoes the line breaks inserted by `vsep`, the documents are\nseparated with a space instead.\n\nWhen a `vsep` is `group`ed, the documents are separated with a `space` if the\nlayoutfits the page, otherwise nothing is done. See the `sep` convenience\nfunction for this use case.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst unaligned = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.vsep(Doc.words(\"text to lay out\"))\n])\n\nassert.strictEqual(\n  Doc.render(unaligned, { style: \"pretty\" }),\n  String.stripMargin(\n    `|prefix text\n     |to\n     |lay\n     |out`\n  )\n)\n\n// The `align` function can be used to align the documents under their first\n// element\nconst aligned = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.align(Doc.vsep(Doc.words(\"text to lay out\")))\n])\n\nassert.strictEqual(\n  Doc.render(aligned, { style: \"pretty\" }),\n  String.stripMargin(\n    `|prefix text\n     |       to\n     |       lay\n     |       out`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "fillSep",
+    "description": "The `fillSep` combinator concatenates all documents in a collection\nhorizontally by placing a `space` between each pair of documents as long as\nthey fit the page. Once the page width is exceeded, a `line` is inserted and\nthe process is repeated for all documents in the collection.\n\n**Note**: the use of `line` means that if `group`ed, the documents will be\nseparated with a `space` instead of newlines. See `fillCat` if you do not\nwant a `space`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "seps",
+    "description": "The `seps` combinator will attempt to lay out a collection of documents\nseparated by `space`s. If the output does not fit the page, then the\ndocuments will be separated by newlines. This is what differentiates it from\n`vsep`, which always lays out documents beneath one another.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc: Doc.Doc<never> = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.seps(Doc.words(\"text to lay out\"))\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"prefix text to lay out\"\n)\n\n// If the page width is too narrow, documents are separated by newlines\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 20 }\n  }),\n  String.stripMargin(\n    `|prefix text\n     |to\n     |lay\n     |out`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "flatAlt",
+    "description": "The `flatAlt` document will render `left` by default. However, when\n`group`ed, `y` will be preferred with `left` as the fallback for cases where\n`y` does not fit onto the page.\n\n**NOTE**:\nUsers should be careful to ensure that `left` is less wide than `right`.\nOtherwise, if `right` ends up not fitting the page, then the layout\nalgorithms will fall back to an even wider layout.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst open = pipe(Doc.empty, Doc.flatAlt(Doc.text(\"{ \")))\nconst close = pipe(Doc.empty, Doc.flatAlt(Doc.text(\" }\")))\nconst separator = pipe(Doc.empty, Doc.flatAlt(Doc.text(\"; \")))\n\nconst prettyDo = <A>(documents: Array<Doc.Doc<A>>): Doc.Doc<A> => {\n  return pipe(\n    Doc.hsep([\n      Doc.text(\"do\"),\n      pipe(\n        documents,\n        Doc.encloseSep(open, close, separator),\n        Doc.align\n      )\n    ]),\n    Doc.group\n  )\n}\n\nconst statements = [\n  Doc.text(\"name:_ <- getArgs\"),\n  Doc.text(\"let greet = \\\"Hello, \\\" <> name\"),\n  Doc.text(\"putStrLn greet\")\n]\n\n// If it fits, then the content is put onto a single line with the `{;}` style\nassert.strictEqual(\n  pipe(\n    prettyDo(statements),\n    Doc.render({\n      style: \"pretty\",\n      options: { lineWidth: 80 }\n    })\n  ),\n  \"do { name:_ <- getArgs; let greet = \\\"Hello, \\\" <> name; putStrLn greet }\"\n)\n\n// When there is not enough space, the content is broken up onto multiple lines\nassert.strictEqual(\n  pipe(\n    prettyDo(statements),\n    Doc.render({\n      style: \"pretty\",\n      options: { lineWidth: 10 }\n    })\n  ),\n  String.stripMargin(\n    `|do name:_ <- getArgs\n     |   let greet = \"Hello, \" <> name\n     |   putStrLn greet`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "union",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "group",
+    "description": "The `group` combinator attempts to lay out a document onto a single line by\nremoving the contained line breaks. If the result does not fit the page, or\nif a `hardLine` prevents flattening the document, `x` is laid out without\nany changes.\n\nThe `group` function is key to layouts that adapt to available space nicely.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const group: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "column",
+    "description": "Lays out a document depending upon the column at which the document starts.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\n// Example 1:\nconst example1 = Doc.column((l) =>\n  Doc.hsep([Doc.text(\"Columns are\"), Doc.text(`${l}-based`)])\n)\n\nassert.strictEqual(\n  Doc.render(example1, { style: \"pretty\" }),\n  \"Columns are 0-based\"\n)\n\n// Example 2:\nconst doc = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.column((l) => Doc.text(`| <- column ${l}`))\n])\n\nconst example2 = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))\n\nassert.strictEqual(\n  Doc.render(example2, { style: \"pretty\" }),\n  String.stripMargin(\n    `|prefix | <- column 7\n     |    prefix | <- column 11\n     |        prefix | <- column 15`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "nesting",
+    "description": "Lays out a document depending upon the current nesting level (i.e., the\ncurrent indentation of the document).",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.nesting((l) => Doc.squareBracketed(Doc.text(`Nested: ${l}`)))\n])\n\nconst example = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))\n\nassert.strictEqual(\n  Doc.render(example, { style: \"pretty\" }),\n  String.stripMargin(\n    `|prefix [Nested: 0]\n     |    prefix [Nested: 4]\n     |        prefix [Nested: 8]`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "width",
+    "description": "The `width` combinator makes the column width of a document available to the\ndocument while rendering.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst annotate = <A>(doc: Doc.Doc<A>): Doc.Doc<A> =>\n  pipe(\n    Doc.squareBracketed(doc),\n    Doc.width((w) => Doc.text(` <- width: ${w}`))\n  )\n\nconst docs = [\n  Doc.text(\"---\"),\n  Doc.text(\"------\"),\n  Doc.indent(Doc.text(\"---\"), 3),\n  Doc.vsep([Doc.text(\"---\"), Doc.indent(Doc.text(\"---\"), 4)])\n]\n\nconst doc = Doc.align(Doc.vsep(docs.map(annotate)))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|[---] <- width: 5\n     |[------] <- width: 8\n     |[   ---] <- width: 8\n     |[---\n     |    ---] <- width: 8`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "pageWidth",
+    "description": "Lays out a document according to the document\"s`PageWidth`.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.hsep([\n  Doc.text(\"prefix\"),\n  Doc.pageWidth((pageWidth) => {\n    switch (pageWidth._tag) {\n      case \"AvailablePerLine\": {\n        const { lineWidth, ribbonFraction } = pageWidth\n        return Doc.squareBracketed(\n          Doc.text(`Width: ${lineWidth}, Ribbon Fraction: ${ribbonFraction}`)\n        )\n      }\n      case \"Unbounded\": {\n        return Doc.empty\n      }\n    }\n  })\n])\n\nconst example = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))\n\nassert.strictEqual(\n  Doc.render(example, {\n    style: \"pretty\",\n    options: { lineWidth: 32 }\n  }),\n  String.stripMargin(\n    `|prefix [Width: 32, Ribbon Fraction: 1]\n     |    prefix [Width: 32, Ribbon Fraction: 1]\n     |        prefix [Width: 32, Ribbon Fraction: 1]`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "nest",
+    "description": "Lays out a document with the current nesting level (indentation\nof the following lines) increased by the specified `indent`.\nNegative values are allowed and will decrease the nesting level\naccordingly.\n\nSee also:\n* `hang`: nest a document relative to the current cursor\nposition instead of the current nesting level\n* `align`: set the nesting level to the current cursor\nposition\n* `indent`: increase the indentation on the spot, padding\nany empty space with spaces",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.vsep([\n  pipe(Doc.vsep(Doc.words(\"lorem ipsum dolor\")), Doc.nest(4)),\n  Doc.text(\"sit\"),\n  Doc.text(\"amet\")\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem\n     |    ipsum\n     |    dolor\n     |sit\n     |amet`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "align",
+    "description": "The `align` combinator lays out a document with the nesting level set to the\ncurrent column.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\n// As an example, the documents below will be placed one above the other\n// regardless of the current nesting level\n\n// Without `align`ment, the second line is simply placed below everything\n// that has been laid out so far\nconst unaligned = Doc.hsep([\n  Doc.text(\"lorem\"),\n  Doc.vsep([Doc.text(\"ipsum\"), Doc.text(\"dolor\")])\n])\n\nassert.strictEqual(\n  Doc.render(unaligned, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem ipsum\n     |dolor`\n  )\n)\n\n// With `align`ment, the `vsep`ed documents all start at the same column\nconst aligned = Doc.hsep([\n  Doc.text(\"lorem\"),\n  Doc.align(Doc.vsep([Doc.text(\"ipsum\"), Doc.text(\"dolor\")]))\n])\n\nassert.strictEqual(\n  Doc.render(aligned, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem ipsum\n     |      dolor`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const align: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "hang",
+    "description": "The `hang` combinator lays out a document with the nesting level set to\nthe *current column* plus the specified `indent`. Negative values for\n`indent` are allowed and decrease the nesting level accordingly.\n\nThis differs from the `nest` combinator, which is based on the *current\nnesting level* plus the specified `indent`. When you\"re not sure, try the\nmore efficient combinator (`nest`) first.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.hsep([\n  Doc.text(\"prefix\"),\n  pipe(Doc.reflow(\"Indenting these words with hang\"), Doc.hang(4))\n])\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 24 }\n  }),\n  String.stripMargin(\n    `|prefix Indenting these\n     |           words with\n     |           hang`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "indent",
+    "description": "The `indent` combinator indents a document by the specified `indent`\nbeginning from the current cursor position.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.hcat([\n  Doc.text(\"prefix\"),\n  pipe(Doc.reflow(\"The indent function indents these words!\"), Doc.indent(4))\n])\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 24 }\n  }),\n  String.stripMargin(\n    `|prefix    The indent\n     |          function\n     |          indents these\n     |          words!`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "encloseSep",
+    "description": "The `encloseSep` combinator concatenates a collection of documents,\nseparating each document in the collection using the specified `sep`\ndocument. After concatenation, the resulting document is enclosed by the\nspecified `left` and `right` documents.\n\nTo place the `sep` document at the end of each entry, see the `punctuate`\ncombinator.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.hsep([\n  Doc.text(\"list\"),\n  Doc.align(\n    pipe(\n      [\"1\", \"20\", \"300\", \"4000\"].map(\n        (n) => n.length === 1 ? Doc.char(n) : Doc.text(n)\n      ),\n      Doc.encloseSep(Doc.lbracket, Doc.rbracket, Doc.comma)\n    )\n  )\n])\n\n// The documents are laid out horizontally if the document fits the page\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"list [1,20,300,4000]\"\n)\n\n// Otherwise they are laid out vertically, with separators put in the front\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 10 }\n  }),\n  String.stripMargin(\n    `|list [1\n     |     ,20\n     |     ,300\n     |     ,4000]`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "list",
+    "description": "A Haskell-inspired variant of `encloseSep` that uses a comma as the separator\nand braces as the enclosure for a collection of documents.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\n\nconst doc = Doc.list(\n  [\"1\", \"20\", \"300\", \"4000\"].map(\n    (n) => (n.length === 1 ? Doc.char(n) : Doc.text(n))\n  )\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"[1, 20, 300, 4000]\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "tupled",
+    "description": "A Haskell-inspired variant of `encloseSep` that uses a comma as the separator\nand parentheses as the enclosure for a collection of documents.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\n\nconst doc = Doc.tupled(\n  [\"1\", \"20\", \"300\", \"4000\"].map(\n    (n) => (n.length === 1 ? Doc.char(n) : Doc.text(n))\n  )\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"(1, 20, 300, 4000)\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "fill",
+    "description": "The `fill` combinator first lays out the document `x` and then appends\n`space`s until the width of the document is equal to the specified `width`.\nIf the width of `x` is already larger than the specified `width`, nothing is\nappended.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\ntype Signature = [name: string, type: string]\n\nconst signatures: Array<Signature> = [\n  [\"empty\", \"Doc\"],\n  [\"nest\", \"Int -> Doc -> Doc\"],\n  [\"fillSep\", \"[Doc] -> Doc\"]\n]\n\nconst prettySignature = <A>([name, type]: Signature): Doc.Doc<A> =>\n  Doc.hsep([\n    pipe(Doc.text(name), Doc.fill(5)),\n    Doc.text(\"::\"),\n    Doc.text(type)\n  ])\n\nconst doc = Doc.hsep([\n  Doc.text(\"let\"),\n  Doc.align(Doc.vcat(signatures.map(prettySignature)))\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|let empty :: Doc\n     |    nest  :: Int -> Doc -> Doc\n     |    fillSep :: [Doc] -> Doc`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "fillBreak",
+    "description": "The `fillBreak` combinator first lays out the document `x` and then appends\n`space`s until the width of the document is equal to the specified `width`.\nIf the width of `x` is already larger than the specified `width`, the nesting\nlevel is increased by the specified `width` and a `line` is appended.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\ntype Signature = [name: string, type: string]\n\nconst signatures: Array<Signature> = [\n  [\"empty\", \"Doc\"],\n  [\"nest\", \"Int -> Doc -> Doc\"],\n  [\"fillSep\", \"[Doc] -> Doc\"]\n]\n\nconst prettySignature = <A>([name, type]: Signature): Doc.Doc<A> =>\n  Doc.hsep([\n    pipe(Doc.text(name), Doc.fillBreak(5)),\n    Doc.text(\"::\"),\n    Doc.text(type)\n  ])\n\nconst doc = Doc.hsep([\n  Doc.text(\"let\"),\n  Doc.align(Doc.vcat(signatures.map(prettySignature)))\n])\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|let empty :: Doc\n     |    nest  :: Int -> Doc -> Doc\n     |    fillSep\n     |          :: [Doc] -> Doc`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "flatten",
+    "description": "Flattens a document but does not report changes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "export declare const flatten: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "changesUponFlattening",
+    "description": "Select the first element of each `Union` and discard the first element of\neach `FlatAlt` to produce a \"flattened\" version of the input document.\n\nThe result is `Flattened` if the element might change depending on the chosen\nlayout algorithm (i.e., the resulting document contains sub-documents that\nmay be rendered differently).\n\nThe result is `AlreadyFlat` if the document is static (i.e., the resulting\ndocument contains only a plain `Empty` node).\n\n`NeverFlat` is returned when the document cannot be flattened because it\ncontains either a hard `Line` or a `Fail`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "export declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "annotate",
+    "description": "Adds an annotation to a `Doc`. The annotation can then be used by the rendering\nalgorithm to, for example, add color to certain parts of the output.\n\n**Note** This function is relevant only for custom formats with their own annotations,\nand is not relevant for basic pretty printing.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "alterAnnotations",
+    "description": "Change the annotations of a document. Individual annotations can be removed,\nchanged, or replaced by multiple ones.\n\nThis is a general function that combines `unAnnotate` and `reAnnotate`, and\nis useful for mapping semantic annotations (such as »this is a keyword«) to\ndisplay annotations (such as »this is red and underlined«) because some\nbackends may not care about certain annotations while others may.\n\nAnnotations earlier in the new list will be applied earlier, so returning\n`[Bold, Green]` will result in a bold document that contains green text, and\nnot vice versa.\n\nSince this traverses the entire document tree, including the parts that are\nnot rendered (due to other layouts having better fit), it is preferable to\nreannotate a document **after** producing the layout by using\n`alterAnnotations` from the `SimpleDocStream` module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "reAnnotate",
+    "description": "Changes the annotation of a document. Useful for modifying documents embedded\nwith one form of annotation with a more general annotation.\n\n**Note** that with each invocation, the entire document tree is traversed.\nIf possible, it is preferable to reannotate a document after producing the\nlayout using `reAnnotateS`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "unAnnotate",
+    "description": "Removes all annotations from a document.\n\n**Note**: with each invocation, the entire document tree is traversed.\nIf possible, it is preferable to unannotate a document after producing the\nlayout using `unAnnotateS`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "folding",
+    "signature": "export declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "render",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "rendering",
+    "signature": "export declare const render: { (config: Doc.RenderConfig): <A>(self: Doc<A>) => string; <A>(self: Doc<A>, config: Doc.RenderConfig): string; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "renderStream",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "rendering",
+    "signature": "export declare const renderStream: <A>(self: DocStream<A>) => string"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "getSemigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const getSemigroup: <A>(_: void) => Semigroup<Doc<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "getMonoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const getMonoid: <A>(_: void) => Monoid<Doc<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<DocTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<DocTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "surround",
+    "description": "The `surround` combinator encloses a document in between `left` and `right`\ndocuments.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\n\nconst doc = pipe(\n  Doc.char(\"-\"),\n  Doc.surround(Doc.char(\"A\"), Doc.char(\"Z\"))\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"A-Z\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "singleQuoted",
+    "description": "Encloses the input document in single quotes (`\"\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "doubleQuoted",
+    "description": "Encloses the input document in double quotes (`\"\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "parenthesized",
+    "description": "Encloses the input document in parentheses (`()`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const parenthesized: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "angleBracketed",
+    "description": "Encloses the input document in angle brackets (`<>`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "squareBracketed",
+    "description": "Encloses the input document in square brackets (`[]`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "curlyBraced",
+    "description": "Encloses the input document in curly braces (`{}`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "spaces",
+    "description": "The `spaces` combinator lays out a document containing `n` spaces. Negative\nvalues for `n` count as `0` spaces.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\n\nconst doc = Doc.squareBracketed(Doc.doubleQuoted(Doc.spaces(5)))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"[\\\"     \\\"]\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const spaces: (n: number) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "textSpaces",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const textSpaces: (n: number) => string"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "words",
+    "description": "Splits a string of words into individual `Text` documents using the\nspecified `char` to split on (defaults to `\" \"`).",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\n\nconst doc = Doc.tupled(Doc.words(\"lorem ipsum dolor\"))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"(lorem, ipsum, dolor)\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "reflow",
+    "description": "Splits a string of words into individual `Text` documents using the specified\n`char` to split on (defaults to `\" \"`). In addition, a `softLine` is inserted\nin between each word so that if the text exceeds the available width it will\nbe broken into multiple lines.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as String from \"effect/String\"\n\nconst doc = Doc.reflow(\n  \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, \" +\n    \"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"\n)\n\nassert.strictEqual(\n  Doc.render(doc, {\n    style: \"pretty\",\n    options: { lineWidth: 32 }\n  }),\n  String.stripMargin(\n    `|Lorem ipsum dolor sit amet,\n     |consectetur adipisicing elit,\n     |sed do eiusmod tempor incididunt\n     |ut labore et dolore magna\n     |aliqua.`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const reflow: (s: string, char?: string) => Doc<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "punctuate",
+    "description": "The `punctuate` combinator appends the `punctuator` document to all but the\nlast document in a collection of documents. The separators are places after\nthe document entries, which can be observed if the result is oriented\nvertically.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst docs = pipe(\n  Doc.words(\"lorem ipsum dolor sit amet\"),\n  Doc.punctuate(Doc.comma)\n)\n\nassert.strictEqual(\n  Doc.render(Doc.hsep(docs), { style: \"pretty\" }),\n  \"lorem, ipsum, dolor, sit, amet\"\n)\n\n// The separators are put at the end of the entries, which can be better\n// visualzied if the documents are rendered vertically\nassert.strictEqual(\n  Doc.render(Doc.vsep(docs), { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem,\n     |ipsum,\n     |dolor,\n     |sit,\n     |amet`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Annotated",
+    "description": "Represents a document with an associated annotation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Annotated<A> extends Doc.Variance<A> {\n  readonly _tag: \"Annotated\"\n  readonly annotation: A\n  readonly doc: Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Cat",
+    "description": "Represents the concatenation of two documents.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Cat<A> extends Doc.Variance<A> {\n  readonly _tag: \"Cat\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Char",
+    "description": "Represents a document containing a single character.\n\n**Invariants**\n- Cannot be the newline (`\"\\n\"`) character",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Char<A> extends Doc.Variance<A> {\n  readonly _tag: \"Char\"\n  readonly char: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Column",
+    "description": "Represents a document that reacts to the current cursor position.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Column<A> extends Doc.Variance<A> {\n  readonly _tag: \"Column\"\n  readonly react: (position: number) => Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface DocTypeLambda extends TypeLambda {\n  readonly type: Doc<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Empty",
+    "description": "Represents the empty document.\n\nConceptually, the `Empty` document can be thought of as the unit of `Cat`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Empty<A> extends Doc.Variance<A> {\n  readonly _tag: \"Empty\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Fail",
+    "description": "Represents a document that cannot be rendered. Generally occurs when\nflattening a line. The layout algorithms will reject this document and choose\na more suitable rendering.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Fail<A> extends Doc.Variance<A> {\n  readonly _tag: \"Fail\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FlatAlt",
+    "description": "Represents a flattened alternative of two documents. The layout algorithms\nwill choose the first document, but when flattened (via `group`) the second\ndocument will be preferreinternal.\n\nThe layout algorithms operate under the assumption that the first alternative\nis less wide than the flattened second alternative.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface FlatAlt<A> extends Doc.Variance<A> {\n  readonly _tag: \"FlatAlt\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Line",
+    "description": "Represents a document that contains a hard line break.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Line<A> extends Doc.Variance<A> {\n  readonly _tag: \"Line\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Nest",
+    "description": "Represents a document that is indented by a certain number of columns.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Nest<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nest\"\n  readonly indent: number\n  readonly doc: Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Nesting",
+    "description": "Represents a document that reacts to the current nesting level.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Nesting<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nesting\"\n  readonly react: (level: number) => Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Text",
+    "description": "Represents a document containing a string of text.\n\n**Invariants**\n- Text cannot be less than two characters long\n- Text cannot contain a newline (`\"\\n\"`) character",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Text<A> extends Doc.Variance<A> {\n  readonly _tag: \"Text\"\n  readonly text: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Union",
+    "description": "Represents the union of two documents. Used to implement layout alternatives\nfor `group`.\n\n**Invariants**\n- The first lines of the first document should be longer than the first lines\n  of the second document so that the layout algorithm can pick the document\n  with the best fit.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Union<A> extends Doc.Variance<A> {\n  readonly _tag: \"Union\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "WithPageWidth",
+    "description": "Represents a document that reacts to the current page width.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "WithPageWidth",
+    "description": "Represents a document that reacts to the current page width.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Doc",
+    "description": "Represents a prettified document that has been annotated with data of type\n`A`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type Doc<A> =\n  | Fail<A>\n  | Empty<A>\n  | Char<A>\n  | Text<A>\n  | Line<A>\n  | FlatAlt<A>\n  | Cat<A>\n  | Nest<A>\n  | Union<A>\n  | Column<A>\n  | WithPageWidth<A>\n  | Nesting<A>\n  | Annotated<A>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Doc",
+      "path": [
+        "src",
+        "Doc.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type DocTypeId = typeof DocTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocStreamTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const DocStreamTypeId: typeof DocStreamTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isDocStream",
+    "description": "Returns `true` if the specified value is a `DocStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isDocStream: (u: unknown) => u is DocStream<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isFailedStream",
+    "description": "Returns `true` if the specified `DocStream` is a `FailedStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFailedStream: <A>(self: DocStream<A>) => self is FailedStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isEmptyStream",
+    "description": "Returns `true` if the specified `DocStream` is a `EmptyStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEmptyStream: <A>(self: DocStream<A>) => self is EmptyStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isCharStream",
+    "description": "Returns `true` if the specified `DocStream` is a `CharStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCharStream: <A>(self: DocStream<A>) => self is CharStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isTextStream",
+    "description": "Returns `true` if the specified `DocStream` is a `TextStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isTextStream: <A>(self: DocStream<A>) => self is TextStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isLineStream",
+    "description": "Returns `true` if the specified `DocStream` is a `LineStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isLineStream: <A>(self: DocStream<A>) => self is LineStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isPushAnnotationStream",
+    "description": "Returns `true` if the specified `DocStream` is a `PushAnnotationStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isPushAnnotationStream: <A>(self: DocStream<A>) => self is PushAnnotationStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isPopAnnotationStream",
+    "description": "Returns `true` if the specified `DocStream` is a `PopAnnotationStream`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isPopAnnotationStream: <A>(self: DocStream<A>) => self is PopAnnotationStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "failed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const failed: DocStream<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: DocStream<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "char",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const char: { (char: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, char: string): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: { (text: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, text: string): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "line",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const line: { (indentation: number): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, indentation: number): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "pushAnnotation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const pushAnnotation: { <B>(annotation: B): <A>(self: DocStream<A>) => DocStream<B | A>; <A, B>(self: DocStream<A>, annotation: B): DocStream<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "popAnnotation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const popAnnotation: <A>(stream: DocStream<A>) => DocStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "alterAnnotations",
+    "description": "Changes the annotation of a document to a different annotation, or to\nnone at all.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const alterAnnotations: { <A, B>(f: (a: A) => Option<B>): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => Option<B>): DocStream<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "reAnnotate",
+    "description": "Modify the annotations of a document.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "unAnnotate",
+    "description": "Remove all annotations from a document.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const unAnnotate: <A>(self: DocStream<A>) => DocStream<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "foldMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "folding",
+    "signature": "export declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocStream<A>) => M; <A, M>(self: DocStream<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "folding",
+    "signature": "export declare const match: { <A, R>(patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): (self: DocStream<A>) => R; <A, R>(self: DocStream<A>, patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): R; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Functor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Functor: covariant.Covariant<DocStreamTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<DocStreamTypeLambda>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "CharStream",
+    "description": "Represents a `Doc` containing a single character.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface CharStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"CharStream\"\n  readonly char: string\n  readonly stream: DocStream<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocStreamTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface DocStreamTypeLambda extends TypeLambda {\n  readonly type: DocStream<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "EmptyStream",
+    "description": "Represents the an empty `Doc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface EmptyStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"EmptyStream\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FailedStream",
+    "description": "Represents a `Doc` that failed to be laid out.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface FailedStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"FailedStream\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "LineStream",
+    "description": "Represents a `Doc` containing a single line. The `indentation`\nrepresents the indentation level for the subsequent line in the\n`Doc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface LineStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"LineStream\"\n  readonly indentation: number\n  readonly stream: DocStream<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "PopAnnotationStream",
+    "description": "Represents the removal of a previously pushed annotation from a `Doc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface PopAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PopAnnotationStream\"\n  readonly stream: DocStream<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "PushAnnotationStream",
+    "description": "Represents the addition of an annotation of type `A` to a `Doc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface PushAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PushAnnotationStream\"\n  readonly annotation: A\n  readonly stream: DocStream<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "TextStream",
+    "description": "Represents a `Doc` containing a string of text.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface TextStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"TextStream\"\n  readonly text: string\n  readonly stream: DocStream<A>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocStream",
+    "description": "Represents a document that has been laid out and can be processed used by the\nrendering algorithms.\n\nA simplified view is that a `Doc` is equivalent to an array of `DocStream`,\nand the layout algorithms simply pick a `DocStream` based upon which instance\nbest fits the layout constraints. Therefore, a `DocStream` has all complexity\ncontained in a `Doc` resolved, making it very easy to convert to other\nformats, such as plaintext or terminal output.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type DocStream<A> =\n  | FailedStream<A>\n  | EmptyStream<A>\n  | CharStream<A>\n  | TextStream<A>\n  | LineStream<A>\n  | PushAnnotationStream<A>\n  | PopAnnotationStream<A>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DocStream",
+      "path": [
+        "src",
+        "DocStream.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocStreamTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type DocStreamTypeId = typeof DocStreamTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTreeTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const DocTreeTypeId: typeof DocTreeTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isDocTree",
+    "description": "Returns `true` if the specified value is a `DocTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isDocTree: (u: unknown) => u is DocTree<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isEmptyTree",
+    "description": "Returns `true` if the specified `DocTree` is an `EmptyTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEmptyTree: <A>(self: DocTree<A>) => self is EmptyTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isCharTree",
+    "description": "Returns `true` if the specified `DocTree` is an `CharTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCharTree: <A>(self: DocTree<A>) => self is CharTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isTextTree",
+    "description": "Returns `true` if the specified `DocTree` is an `TextTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isTextTree: <A>(self: DocTree<A>) => self is TextTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isLineTree",
+    "description": "Returns `true` if the specified `DocTree` is an `LineTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isLineTree: <A>(self: DocTree<A>) => self is LineTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isAnnotationTree",
+    "description": "Returns `true` if the specified `DocTree` is an `AnnotationTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isAnnotationTree: <A>(self: DocTree<A>) => self is AnnotationTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isConcatTree",
+    "description": "Returns `true` if the specified `DocTree` is an `ConcatTree`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isConcatTree: <A>(self: DocTree<A>) => self is ConcatTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: DocTree<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "char",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const char: <A>(char: string) => DocTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: <A>(text: string) => DocTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "line",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const line: <A>(indentation: number) => DocTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "annotation",
+    "description": "Annotate the specified `DocTree` with an annotation of type `A`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const annotation: { <A>(annotation: A): <B>(self: DocTree<B>) => DocTree<A | B>; <A, B>(self: DocTree<A>, annotation: B): DocTree<A | B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "concat",
+    "description": "Horizontally concatenates multiple `DocTree`s.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "alterAnnotations",
+    "description": "Change the annotation of a document to a different annotation, or none at\nall.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => Iterable<B>): DocTree<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "reAnnotate",
+    "description": "Change the annotation of a `DocTree`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => B): DocTree<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "unAnnotate",
+    "description": "Remove all annotations from a `DocTree`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const unAnnotate: <A>(self: DocTree<A>) => DocTree<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "foldMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "folding",
+    "signature": "export declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "renderSimplyDecorated",
+    "description": "The simplest possible tree-based renderer.\n\nFor example, here is a document annotated with `void` and thee behavior is\nto surround annotated regions with »>>>« and »<<<«.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as DocTree from \"@effect/printer/DocTree\"\nimport * as Layout from \"@effect/printer/Layout\"\nimport { identity, pipe } from \"effect/Function\"\nimport * as String from \"@effect/typeclass/data/String\"\n\nconst doc: Doc.Doc<void> = Doc.hsep([\n  Doc.text(\"hello\"),\n  pipe(\n    Doc.text(\"world\"),\n    Doc.annotate(undefined),\n    Doc.cat(Doc.char(\"!\"))\n  )\n])\n\nconst tree = DocTree.treeForm(Layout.pretty(Layout.defaultOptions)(doc))\n\nconst rendered = pipe(\n  tree,\n  DocTree.renderSimplyDecorated(String.Monoid, identity, (_, x) => `>>>${x}<<<`)\n)\n\nassert.strictEqual(\n  rendered,\n  \"hello >>>world<<<!\"\n)"
+    ],
+    "since": "1.0.0",
+    "category": "rendering",
+    "signature": "export declare const renderSimplyDecorated: { <A, M>(M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): M; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "treeForm",
+    "description": "Converts a `DocStream<A>` into a `DocTree<A>`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "export declare const treeForm: <A>(stream: DocStream.DocStream<A>) => DocTree<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "getSemigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const getSemigroup: <A>(_: void) => semigroup.Semigroup<DocTree<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "getMonoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const getMonoid: <A>(_: void) => monoid.Monoid<DocTree<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<DocTreeTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<DocTreeTypeLambda>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "AnnotationTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface AnnotationTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"AnnotationTree\"\n  readonly annotation: A\n  readonly tree: DocTree<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "CharTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface CharTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"CharTree\"\n  readonly char: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "ConcatTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface ConcatTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"ConcatTree\"\n  readonly trees: ReadonlyArray<DocTree<A>>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTreeTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface DocTreeTypeLambda extends TypeLambda {\n  readonly type: DocTree<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "EmptyTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface EmptyTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"EmptyTree\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "LineTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface LineTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"LineTree\"\n  readonly indentation: number\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "TextTree",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface TextTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"TextTree\"\n  readonly text: string\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTree",
+    "description": "Represents a document that has been laid out into a tree-like structure.\n\nA `DocStream` is a linked list of different annotated cons cells (i.e.\n`TextStream` and then some further `DocStream`, `LineStream` and then some\nfurther `DocStream`, etc.). The `DocStream` format is quite suitable as a\ntarget for a layout engine, but is not suitable for rendering to a more\nstructured format, such as HTML, where we do not want to perform a lookahead\nuntil the end of some pre-defined markup. These formats would benefit more\nfrom a tree-like structure that explicitly marks its contents as annotated.\nA `DocTree` is therefore much more suitable for this use case.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type DocTree<A> =\n  | EmptyTree<A>\n  | CharTree<A>\n  | TextTree<A>\n  | LineTree<A>\n  | AnnotationTree<A>\n  | ConcatTree<A>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DocTree",
+      "path": [
+        "src",
+        "DocTree.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "DocTreeTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type DocTreeTypeId = typeof DocTreeTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FlattenTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const FlattenTypeId: typeof FlattenTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isFlatten",
+    "description": "Returns `true` if the specified value is a `Flatten`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFlatten: (u: unknown) => u is Flatten<unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isFlattened",
+    "description": "Returns `true` if the specified `Flatten` is a `Flattened`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFlattened: <A>(a: Flatten<A>) => a is Flattened<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isAlreadyFlat",
+    "description": "Returns `true` if the specified `Flatten` is an `AlreadyFlat`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isAlreadyFlat: <A>(a: Flatten<A>) => a is AlreadyFlat<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isNeverFlat",
+    "description": "Returns `true` if the specified `Flatten` is a `NeverFlat`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNeverFlat: <A>(a: Flatten<A>) => a is NeverFlat<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "flattened",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const flattened: <A>(value: A) => Flatten<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "alreadyFlat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const alreadyFlat: Flatten<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "neverFlat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const neverFlat: Flatten<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Flatten<A>) => Flatten<B>; <A, B>(self: Flatten<A>, f: (a: A) => B): Flatten<B>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "AlreadyFlat",
+    "description": "Represents a `FlattenResult` where the input was already flat.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface AlreadyFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"AlreadyFlat\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FlattenTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface FlattenTypeLambda extends TypeLambda {\n  readonly type: Flatten<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Flattened",
+    "description": "Represents a `FlattenResult` where `A` is likely flatter than the input.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Flattened<A> extends Flatten.Variance<A> {\n  readonly _tag: \"Flattened\"\n  readonly value: A\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "NeverFlat",
+    "description": "Represents a `FlattenResult` where the input cannot be flattened.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface NeverFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"NeverFlat\"\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Flatten",
+    "description": "Because certain documents do not change after removal of newlines, etc, there\nis no point in creating a `Union` of the flattened and unflattened versions.\nAll this leads to is the introduction of two possible branches for a layout\nalgorithm to take, resulting in potentially exponential behavior on deeply\nnested examples.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type Flatten<A> = Flattened<A> | AlreadyFlat<A> | NeverFlat<A>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Flatten",
+      "path": [
+        "src",
+        "Flatten.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FlattenTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type FlattenTypeId = typeof FlattenTypeId"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./Doc.js\"",
+    "description": "The abstract data type `Doc<A>` represents prettified documents that have\nbeen annotated with data of type `A`.\n\nMore specifically, a value of type `Doc` represents a non-empty set of\npossible layouts for a given document. The layout algorithms select one of\nthese possibilities, taking into account variables such as the width of the\ndocument.\n\nThe annotation is an arbitrary piece of data associated with (part of) a\ndocument. Annotations may be used by rendering algorithms to display\ndocuments differently by providing information such as:\n- color information (e.g., when rendering to the terminal)\n- mouseover text (e.g., when rendering to rich HTML)\n- whether to show something or not (to allow simple or detailed versions)",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Doc from \"./Doc.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./DocStream.js\"",
+    "description": "Re-exports all named exports from the \"./DocStream.js\" module as `DocStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DocStream from \"./DocStream.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./DocTree.js\"",
+    "description": "Re-exports all named exports from the \"./DocTree.js\" module as `DocTree`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as DocTree from \"./DocTree.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./Flatten.js\"",
+    "description": "Re-exports all named exports from the \"./Flatten.js\" module as `Flatten`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Flatten from \"./Flatten.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./Layout.js\"",
+    "description": "Re-exports all named exports from the \"./Layout.js\" module as `Layout`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Layout from \"./Layout.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./Optimize.js\"",
+    "description": "Re-exports all named exports from the \"./Optimize.js\" module as `Optimize`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Optimize from \"./Optimize.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "From \"./PageWidth.js\"",
+    "description": "Re-exports all named exports from the \"./PageWidth.js\" module as `PageWidth`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as PageWidth from \"./PageWidth.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "options",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const options: (pageWidth: PageWidth) => Layout.Options"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "defaultOptions",
+    "description": "The default layout options, which are suitable when you want to obtain output\nbut do not care about the details.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const defaultOptions: Layout.Options"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "wadlerLeijen",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layout algorithms",
+    "signature": "export declare const wadlerLeijen: { <A>(fits: Layout.FittingPredicate<A>, options: Layout.Options): (self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, fits: Layout.FittingPredicate<A>, options: Layout.Options): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "compact",
+    "description": "A layout algorithm which will lay out a document without adding any\nindentation and without preserving annotations.\n\nSince no pretty-printing is involved, this layout algorithm is very fast. The\nresulting output contains fewer characters than a pretty-printed version and\ncan be used for output that is read by other programs.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\nconst doc = pipe(\n  Doc.vsep([\n    Doc.text(\"lorem\"),\n    Doc.text(\"ipsum\"),\n    pipe(\n      Doc.vsep([Doc.text(\"dolor\"), Doc.text(\"sit\")]),\n      Doc.hang(4)\n    )\n  ]),\n  Doc.hang(4)\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  String.stripMargin(\n    `|lorem\n     |    ipsum\n     |    dolor\n     |        sit`\n  )\n)\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"compact\" }),\n  String.stripMargin(\n    `|lorem\n     |ipsum\n     |dolor\n     |sit`\n  )\n)"
+    ],
+    "since": "1.0.0",
+    "category": "layout algorithms",
+    "signature": "export declare const compact: <A>(self: Doc<A>) => DocStream<A>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "pretty",
+    "description": "The `pretty` layout algorithm is the default algorithm for rendering\ndocuments.\n\n`pretty` commits to rendering something in a certain way if the next\nelement fits the layout constrants. In other words, it has one `DocStream`\nelement lookahead when rendering.\n\nConsider using the smarter, but slightly less performant `smart`\nalgorithm if the results seem to run off to the right before having lots of\nline breaks.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layout algorithms",
+    "signature": "export declare const pretty: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "smart",
+    "description": "A layout algorithm with more look ahead than `pretty`, which will introduce\nline breaks into a document earlier if the content does not, or will not, fit\nonto one line.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport type * as DocStream from \"@effect/printer/DocStream\"\nimport * as Layout from \"@effect/printer/Layout\"\nimport * as PageWidth from \"@effect/printer/PageWidth\"\nimport { pipe } from \"effect/Function\"\nimport * as String from \"effect/String\"\n\n// Consider the following python-ish document:\nconst fun = <A>(doc: Doc.Doc<A>): Doc.Doc<A> =>\n  Doc.hcat([\n    pipe(\n      Doc.hcat([Doc.text(\"fun(\"), Doc.softLineBreak, doc]),\n      Doc.hang(2)\n    ),\n    Doc.text(\")\")\n  ])\n\nconst funs = <A>(doc: Doc.Doc<A>): Doc.Doc<A> =>\n  pipe(doc, fun, fun, fun, fun, fun)\n\nconst doc = funs(Doc.align(Doc.list(Doc.words(\"abcdef ghijklm\"))))\n\n// The document will be rendered using the following pipeline, where the choice\n// of layout algorithm has been left open:\nconst pageWidth = PageWidth.availablePerLine(26, 1)\nconst layoutOptions = Layout.options(pageWidth)\nconst dashes = Doc.text(Array.from({ length: 26 - 2 }, () => \"-\").join(\"\"))\nconst hr = Doc.hcat([Doc.vbar, dashes, Doc.vbar])\n\nconst render = <A>(\n  doc: Doc.Doc<A>\n) =>\n  (\n    layoutAlgorithm: (options: Layout.Layout.Options) => (doc: Doc.Doc<A>) => DocStream.DocStream<A>\n  ): string => pipe(Doc.vsep([hr, doc, hr]), layoutAlgorithm(layoutOptions), Doc.renderStream)\n\n// If rendered using `Layout.pretty`, with a page width of `26` characters per line,\n// all the calls to `fun` will fit into the first line. However, this exceeds the\n// desired `26` character page width.\nassert.strictEqual(\n  render(doc)(Layout.pretty),\n  String.stripMargin(\n    `||------------------------|\n     |fun(fun(fun(fun(fun(\n     |                  [ abcdef\n     |                  , ghijklm ])))))\n     ||------------------------|`\n  )\n)\n\n// The same document, rendered with `Layout.smart`, fits the layout contstraints:\nassert.strictEqual(\n  render(doc)(Layout.smart),\n  String.stripMargin(\n    `||------------------------|\n     |fun(\n     |  fun(\n     |    fun(\n     |      fun(\n     |        fun(\n     |          [ abcdef\n     |          , ghijklm ])))))\n     ||------------------------|`\n  )\n)\n\n// The key difference between `Layout.pretty` and `Layout.smart` is that the\n// latter will check the potential document until it encounters a line with the\n// same indentation or less than the start of the document. Any line encountered\n// earlier is assumed to belong to the same syntactic structure. In contrast,\n// `Layout.pretty` checks only the first line.\n\n// Consider for example the question of whether the `A`s fit into the document\n// below:\n// > 1 A\n// > 2   A\n// > 3  A\n// > 4 B\n// > 5   B\n\n// `pretty` will check only the first line, ignoring whether the second line\n// may already be too wide. In contrast, `Layout.smart` stops only once it reaches\n// the fourth line 4, where the `B` has the same indentation as the first `A`."
+    ],
+    "since": "1.0.0",
+    "category": "layout algorithms",
+    "signature": "export declare const smart: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "unbounded",
+    "description": "The `unbounded` layout algorithm will lay out a document an `Unbounded`\npage width.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layout algorithms",
+    "signature": "export declare const unbounded: <A>(self: Doc<A>) => DocStream<A>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Layout",
+      "path": [
+        "src",
+        "Layout.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Layout",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Layout<A> {\n  (options: Layout.Options): DocStream<A>\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Shallow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Shallow: FusionDepth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Deep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Deep: FusionDepth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "optimize",
+    "description": "The `optimize` function will combine text nodes so that they can be rendered\nmore efficiently. An optimized document is always laid out in an identical\nmanner to its un-optimized counterpart.\n\nWhen laying a `Doc` out to a `SimpleDocStream`, every component of the input\ndocument is translated directly to the simpler output format. This sometimes\nyields undesirable chunking when many pieces have been concatenated together.\n\nIt is therefore a good idea to run `fuse` on concatenations of lots of small\nstrings that are used many times.",
+    "deprecated": false,
+    "examples": [
+      "import * as Doc from \"@effect/printer/Doc\"\nimport * as Optimize from \"@effect/printer/Optimize\"\n\n// The document below contains a chain of four entries in the output `DocStream`\nconst inefficient = Doc.hsep([\n  Doc.char(\"a\"),\n  Doc.char(\"b\"),\n  Doc.char(\"c\"),\n  Doc.char(\"d\")\n])\n\n// However, the above document is fully equivalent to the tightly packed\n// document below which is only a single entry in the output `DocStream` and\n// can be processed much more efficiently.\nconst efficient = Doc.text(\"abcd\")\n\n// We can optimize the `inefficient` document using `Optimize`\nOptimize.optimize(Optimize.Deep)(inefficient)"
+    ],
+    "since": "1.0.0",
+    "category": "optimization",
+    "signature": "export declare const optimize: { (depth: FusionDepth): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, depth: FusionDepth): Doc<A>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Deep",
+    "description": "Instructs the document fusion optimizer to recurse into all leaves of the\ndocument tree, including different layout alternatives and all\nlocation-sensitive values (i.e. those created by `nesting`), which cannot be\nfused before, but only during, the layout process. As a result, the\nperformance cost of using deep document fusion optimization is often hard to\npredict and depends on the interplay between page layout and the document\nthat is to be pretty printed.\n\nThis value should only be utilized if profiling demonstrates that it is\n**significantly** faster than using `Shallow`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Deep {\n  readonly _tag: \"Deep\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Optimize",
+    "description": "Represents optimization of a given document tree through fusion of redundant\ndocument nodes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Optimize<A> {\n  (depth: Optimize.Depth): Doc<A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Shallow",
+    "description": "Instructs the document fusion optimizer to avoid diving deeply into nested\ndocuments, fusing mostly concatenations of text nodes together.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Shallow {\n  readonly _tag: \"Shallow\"\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Optimize",
+      "path": [
+        "src",
+        "Optimize.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "FusionDepth",
+    "description": "Represents an instruction that determines how deeply the document fusion\noptimizer should traverse the document tree.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type FusionDepth = Shallow | Deep"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "PageWidthTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const PageWidthTypeId: typeof PageWidthTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isPageWidth",
+    "description": "Returns `true` if the specified value is a `PageWidth`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isPageWidth: (u: unknown) => u is PageWidth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isAvailablePerLine",
+    "description": "Returns `true` if the specified `PageWidth` is an `AvailablePerLine`, `false`\notherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isAvailablePerLine: (self: PageWidth) => self is AvailablePerLine"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "isUnbounded",
+    "description": "Returns `true` if the specified `PageWidth` is an `Unbounded`, `false`\notherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUnbounded: (self: PageWidth) => self is Unbounded"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "availablePerLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const availablePerLine: (lineWidth: number, ribbonFraction: number) => PageWidth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "unbounded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const unbounded: PageWidth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "defaultPageWidth",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const defaultPageWidth: PageWidth"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "remainingWidth",
+    "description": "Calculates the remaining width on the current line.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const remainingWidth: (lineLength: number, ribbonFraction: number, lineIndent: number, currentColumn: number) => number"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "AvailablePerLine",
+    "description": "Represents a `PageWidth` setting that informs the layout algorithms to avoid\nexceeding the specified space per line.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface AvailablePerLine extends PageWidth.Proto {\n  readonly _tag: \"AvailablePerLine\"\n  /**\n   * The number of characters, including whitespace, that can fit on a single\n   * line.\n   */\n  readonly lineWidth: number\n  /**\n   * The fraction of the total page width that can be printed on. This allows\n   * limiting the length of printable text per line. Values must be between\n   * `0` and `1` (`0.4` to `1` is typical).\n   */\n  readonly ribbonFraction: number\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "Unbounded",
+    "description": "Represents a `PageWidth` setting that informs the layout algorithms to avoid\nintroducing line breaks into a document.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Unbounded extends PageWidth.Proto {\n  readonly _tag: \"Unbounded\"\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "PageWidth",
+    "description": "Represents the maximum number of characters that fit onto a single line in a\ndocument. The layout algorithms will try to avoid exceeding the set character\nlimit by inserting line breaks where appropriate (e.g., via `softLine`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type PageWidth = AvailablePerLine | Unbounded"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PageWidth",
+      "path": [
+        "src",
+        "PageWidth.ts"
+      ]
+    },
+    "project": "@effect/printer",
+    "name": "PageWidthTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type PageWidthTypeId = typeof PageWidthTypeId"
+  }
+]

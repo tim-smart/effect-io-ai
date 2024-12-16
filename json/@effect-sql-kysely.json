@@ -1,0 +1,200 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Kysely",
+      "path": [
+        "src",
+        "Kysely.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: <DB>(config: KyselyConfig) => Kysely<DB>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Kysely",
+      "path": [
+        "src",
+        "Kysely.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "From \"./patch.types.js\"",
+    "description": "Re-exports all named exports from the \"./patch.types.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export * from \"./patch.types.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Mssql",
+      "path": [
+        "src",
+        "Mssql.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "From \"./patch.types.js\"",
+    "description": "Re-exports all named exports from the \"./patch.types.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export * from \"./patch.types.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Mssql",
+      "path": [
+        "src",
+        "Mssql.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Mysql",
+      "path": [
+        "src",
+        "Mysql.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "From \"./patch.types.js\"",
+    "description": "Re-exports all named exports from the \"./patch.types.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export * from \"./patch.types.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Mysql",
+      "path": [
+        "src",
+        "Mysql.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "patch.types",
+      "path": [
+        "src",
+        "patch.types.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "EffectKysely",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export interface EffectKysely<DB> extends Omit<Kysely<DB>, \"transaction\"> {\n  withTransaction: <R, E, A>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E | SqlError, R>\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Pg",
+      "path": [
+        "src",
+        "Pg.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "From \"./patch.types.js\"",
+    "description": "Re-exports all named exports from the \"./patch.types.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export * from \"./patch.types.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Pg",
+      "path": [
+        "src",
+        "Pg.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Sqlite",
+      "path": [
+        "src",
+        "Sqlite.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "From \"./patch.types.js\"",
+    "description": "Re-exports all named exports from the \"./patch.types.js\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "types",
+    "signature": "export * from \"./patch.types.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Sqlite",
+      "path": [
+        "src",
+        "Sqlite.ts"
+      ]
+    },
+    "project": "@effect/sql-kysely",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  }
+]

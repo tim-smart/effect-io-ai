@@ -1,0 +1,254 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "From \"./LibsqlClient.js\"",
+    "description": "Re-exports all named exports from the \"./LibsqlClient.js\" module as `LibsqlClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as LibsqlClient from \"./LibsqlClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "From \"./LibsqlMigrator.js\"",
+    "description": "Re-exports all named exports from the \"./LibsqlMigrator.js\" module as `LibsqlMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as LibsqlMigrator from \"./LibsqlMigrator.js\""
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "LibsqlClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare const LibsqlClient: Context.Tag<LibsqlClient, LibsqlClient>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "LibsqlClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface LibsqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: LibsqlClientConfig\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "LibsqlClientConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type LibsqlClientConfig = LibsqlClientConfig.Full | LibsqlClientConfig.Live"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "LibsqlClient",
+      "path": [
+        "src",
+        "LibsqlClient.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "LibsqlMigrator",
+      "path": [
+        "src",
+        "LibsqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "run",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "export declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "LibsqlMigrator",
+      "path": [
+        "src",
+        "LibsqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "From \"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "LibsqlMigrator",
+      "path": [
+        "src",
+        "LibsqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "From \"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "LibsqlMigrator",
+      "path": [
+        "src",
+        "LibsqlMigrator.ts"
+      ]
+    },
+    "project": "@effect/sql-libsql",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": null
+  }
+]

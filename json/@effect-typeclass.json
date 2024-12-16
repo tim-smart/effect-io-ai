@@ -1,0 +1,5459 @@
+[
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Alternative",
+      "path": [
+        "src",
+        "Alternative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Alternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Alternative<F extends TypeLambda> extends SemiAlternative<F>, Coproduct<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Applicative",
+      "path": [
+        "src",
+        "Applicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoid",
+    "description": "Lift a `Monoid` into `F`, combining the inner values using the provided `Monoid`:\n\n- `combine` is provided by {@link semiApplicative.getSemigroup}.\n- `empty` is `F.of(M.empty)`",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Applicative",
+      "path": [
+        "src",
+        "Applicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Applicative<F extends TypeLambda> extends SemiApplicative<F>, Product<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bicovariant",
+      "path": [
+        "src",
+        "Bicovariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "bimapComposition",
+    "description": "Returns a default ternary `bimap` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bicovariant",
+      "path": [
+        "src",
+        "Bicovariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "mapLeft",
+    "description": "Returns a default `mapLeft` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bicovariant",
+      "path": [
+        "src",
+        "Bicovariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "map",
+    "description": "Returns a default `map` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Bicovariant",
+      "path": [
+        "src",
+        "Bicovariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bicovariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Bicovariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly bimap: {\n    <E1, E2, A, B>(\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): <R, O>(self: Kind<F, R, O, E1, A>) => Kind<F, R, O, E2, B>\n    <R, O, E1, A, E2, B>(\n      self: Kind<F, R, O, E1, A>,\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): Kind<F, R, O, E2, B>\n  }\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "min",
+    "description": "`Monoid` that returns last minimum of elements.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "max",
+    "description": "`Monoid` that returns last maximum of elements.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "between",
+    "description": "Checks if a value is between the lower and upper limit of a bound.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "predicates",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "clamp",
+    "description": "Clamp a value between `minBound` and `maxBound` values.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "reverse",
+    "description": "Reverses the `Order` of a `Bounded` and flips `maxBound` and `minBound` values.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "utils",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bounded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Bounded<A> {\n  readonly compare: Order<A>\n  readonly maxBound: A\n  readonly minBound: A\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Bounded",
+      "path": [
+        "src",
+        "Bounded.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "BoundedTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type lambdas",
+    "signature": "export interface BoundedTypeLambda extends TypeLambda {\n  readonly type: Bounded<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Chainable",
+      "path": [
+        "src",
+        "Chainable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "zipLeft",
+    "description": "Sequences the specified effect after this effect, but ignores the value\nproduced by the effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combining",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Chainable",
+      "path": [
+        "src",
+        "Chainable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "tap",
+    "description": "Returns an effect that effectfully \"peeks\" at the success of this effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Chainable",
+      "path": [
+        "src",
+        "Chainable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "bind",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Chainable",
+      "path": [
+        "src",
+        "Chainable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Chainable<F extends TypeLambda> extends FlatMap<F>, Covariant<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Contravariant",
+      "path": [
+        "src",
+        "Contravariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "contramapComposition",
+    "description": "Composing two contravariant functors yields a Covariant functor.\n\nReturns a default binary `map` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Contravariant",
+      "path": [
+        "src",
+        "Contravariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "imap",
+    "description": "Returns a default `imap` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Contravariant",
+      "path": [
+        "src",
+        "Contravariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Contravariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Contravariant<F extends TypeLambda> extends Invariant<F> {\n  readonly contramap: {\n    <B, A>(f: (b: B) => A): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (b: B) => A): Kind<F, R, O, E, B>\n  }\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Coproduct",
+      "path": [
+        "src",
+        "Coproduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Coproduct",
+      "path": [
+        "src",
+        "Coproduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Coproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Coproduct<F extends TypeLambda> extends SemiCoproduct<F> {\n  readonly zero: <A>() => Kind<F, unknown, never, never, A>\n\n  readonly coproductAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "let",
+    "description": null,
+    "deprecated": false,
+    "examples": [
+      "import * as covariant from \"@effect/typeclass/Covariant\"\nimport type { HKT } from \"effect\"\nimport { dual, pipe } from \"effect/Function\"\n\ninterface MyData<A> {\n  readonly value: A\n}\n\ninterface MyDataTypeLambda extends HKT.TypeLambda {\n  readonly type: MyData<this[\"Target\"]>\n}\n\nconst map: covariant.Covariant<MyDataTypeLambda>[\"map\"] = dual(\n  2,\n  <A, B>(self: MyData<A>, f: (a: A) => B): MyData<B> => ({ value: f(self.value) })\n)\n\nconst Covariant: covariant.Covariant<MyDataTypeLambda> = { imap: covariant.imap<MyDataTypeLambda>(map), map }\n\nconst notation = {\n  Do: { value: {} } as MyData<{}>,\n  let: covariant.let(Covariant)\n}\n\nassert.deepStrictEqual(pipe(notation.Do, notation.let(\"foo\", () => \"bar\")), { value: { foo: \"bar\" } })\n"
+    ],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": "export declare const let: <F extends TypeLambda>(F: Covariant<F>) => { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R, O, E, A extends object, N extends string, B>(self: Kind<F, R, O, E, A>, name: Exclude<N, keyof A>, f: (a: A) => B): Kind<F, R, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "mapComposition",
+    "description": "Returns a default `map` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "imap",
+    "description": "Returns a default `imap` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "flap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "mapping",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "as",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "mapping",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "asVoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "mapping",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Covariant",
+      "path": [
+        "src",
+        "Covariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Covariant<F extends TypeLambda> extends Invariant<F> {\n  readonly map: {\n    <A, B>(f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B): Kind<F, R, O, E, B>\n  }\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Filterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Filterable: filterable.Filterable<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Traversable: traversable.Traversable<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiApplicative: semiApplicative.SemiApplicative<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Applicative: applicative.Applicative<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Foldable: foldable.Foldable<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "TraversableFilterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const TraversableFilterable: traversableFilterable.TraversableFilterable<ArrayInstances.ReadonlyArrayTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const getSemigroup: <A>() => Semigroup<ReadonlyArray<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "data",
+        "Array.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const getMonoid: <A>() => Monoid<ReadonlyArray<A>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupSum",
+    "description": "`bigint` semigroup under addition.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupSum } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupSum.combine(2n, 3n), 5n)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupSum: semigroup.Semigroup<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMultiply",
+    "description": "`bigint` semigroup under multiplication.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMultiply: semigroup.Semigroup<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMin",
+    "description": "A `Semigroup` that uses the minimum between two values.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupMin } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupMin.combine(2n, 3n), 2n)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMin: semigroup.Semigroup<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMax",
+    "description": "A `Semigroup` that uses the maximum between two values.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupMax } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupMax.combine(2n, 3n), 3n)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMax: semigroup.Semigroup<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidSum",
+    "description": "`bigint` monoid under addition.\n\nThe `empty` value is `0n`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidSum } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(MonoidSum.combine(2n, 3n), 5n)\nassert.deepStrictEqual(MonoidSum.combine(2n, MonoidSum.empty), 2n)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidSum: monoid.Monoid<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BigInt",
+      "path": [
+        "src",
+        "data",
+        "BigInt.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMultiply",
+    "description": "`bigint` monoid under multiplication.\n\nThe `empty` value is `1n`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidMultiply } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(MonoidMultiply.combine(2n, 3n), 6n)\nassert.deepStrictEqual(MonoidMultiply.combine(2n, MonoidMultiply.empty), 2n)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMultiply: monoid.Monoid<bigint>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupEvery",
+    "description": "`boolean` semigroup under conjunction.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupEvery } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupEvery.combine(true, true), true)\nassert.deepStrictEqual(SemigroupEvery.combine(true, false), false)\nassert.deepStrictEqual(SemigroupEvery.combine(false, true), false)\nassert.deepStrictEqual(SemigroupEvery.combine(false, false), false)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupEvery: semigroup.Semigroup<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupSome",
+    "description": "`boolean` semigroup under disjunction.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupSome } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupSome.combine(true, true), true)\nassert.deepStrictEqual(SemigroupSome.combine(true, false), true)\nassert.deepStrictEqual(SemigroupSome.combine(false, true), true)\nassert.deepStrictEqual(SemigroupSome.combine(false, false), false)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupSome: semigroup.Semigroup<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupXor",
+    "description": "`boolean` semigroup under exclusive disjunction.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupXor } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupXor.combine(true, true), false)\nassert.deepStrictEqual(SemigroupXor.combine(true, false), true)\nassert.deepStrictEqual(SemigroupXor.combine(false, true), true)\nassert.deepStrictEqual(SemigroupXor.combine(false, false), false)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupXor: semigroup.Semigroup<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupEqv",
+    "description": "`boolean` semigroup under equivalence.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupEqv } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupEqv.combine(true, true), true)\nassert.deepStrictEqual(SemigroupEqv.combine(true, false), false)\nassert.deepStrictEqual(SemigroupEqv.combine(false, true), false)\nassert.deepStrictEqual(SemigroupEqv.combine(false, false), true)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupEqv: semigroup.Semigroup<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidEvery",
+    "description": "`boolean` monoid under conjunction, see also {@link SemigroupEvery}.\n\nThe `empty` value is `true`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidEvery: monoid.Monoid<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidSome",
+    "description": "`boolean` monoid under disjunction, see also {@link SemigroupSome}.\n\nThe `empty` value is `false`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidSome: monoid.Monoid<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidXor",
+    "description": "`boolean` monoid under exclusive disjunction, see also {@link SemigroupXor}.\n\nThe `empty` value is `false`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidXor: monoid.Monoid<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Boolean",
+      "path": [
+        "src",
+        "data",
+        "Boolean.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidEqv",
+    "description": "`boolean` monoid under equivalence.\n\nThe `empty` value is `true`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidEqv: monoid.Monoid<boolean>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bounded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Bounded: bounded.Bounded<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupSum",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupSum: semigroup.Semigroup<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidSum",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidSum: monoid.Monoid<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMax",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMax: semigroup.Semigroup<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMax",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMax: monoid.Monoid<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMin",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMin: semigroup.Semigroup<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Duration",
+      "path": [
+        "src",
+        "data",
+        "Duration.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMin",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMin: monoid.Monoid<Duration.Duration>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<Effect.EffectTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "data",
+        "Effect.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "ConcurrencyOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n  readonly batching?: boolean | \"inherit\" | undefined\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bicovariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Bicovariant: bicovariant.Bicovariant<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiApplicative: semiApplicative.SemiApplicative<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Applicative: applicative.Applicative<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiCoproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiAlternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiAlternative: semiAlternative.SemiAlternative<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Foldable: foldable.Foldable<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Either",
+      "path": [
+        "src",
+        "data",
+        "Either.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Traversable: traversable.Traversable<Either.EitherTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiApplicative: semiApplicative.SemiApplicative<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Applicative: applicative.Applicative<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Foldable: foldable.Foldable<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Traversable: traversable.Traversable<IdentityTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiCoproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiAlternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "IdentityTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type lambdas",
+    "signature": "export interface IdentityTypeLambda extends TypeLambda {\n  readonly type: Identity<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "IdentityTypeLambdaFix",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type lambdas",
+    "signature": "export interface IdentityTypeLambdaFix<A> extends TypeLambda {\n  readonly type: Identity<A>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Identity",
+      "path": [
+        "src",
+        "data",
+        "Identity.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Identity",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "models",
+    "signature": "export type Identity<A> = A"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<Micro.MicroTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Micro",
+      "path": [
+        "src",
+        "data",
+        "Micro.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "ConcurrencyOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.40",
+    "category": "instances",
+    "signature": "export type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n  readonly batching?: boolean | \"inherit\" | undefined\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bounded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Bounded: bounded.Bounded<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupSum",
+    "description": "`number` semigroup under addition.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupSum } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupSum.combine(2, 3), 5)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupSum: semigroup.Semigroup<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMultiply",
+    "description": "`number` semigroup under multiplication.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupMultiply } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMultiply.combine(2, 3), 6)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMultiply: semigroup.Semigroup<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMin",
+    "description": "A `Semigroup` that uses the minimum between two values.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupMin } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMin.combine(2, 3), 2)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMin: semigroup.Semigroup<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupMax",
+    "description": "A `Semigroup` that uses the maximum between two values.",
+    "deprecated": false,
+    "examples": [
+      "import { SemigroupMax } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMax.combine(2, 3), 3)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemigroupMax: semigroup.Semigroup<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidSum",
+    "description": "`number` monoid under addition.\n\nThe `empty` value is `0`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidSum } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidSum.combine(2, 3), 5)\nassert.deepStrictEqual(MonoidSum.combine(2, MonoidSum.empty), 2)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidSum: monoid.Monoid<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMultiply",
+    "description": "`number` monoid under multiplication.\n\nThe `empty` value is `1`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidMultiply } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMultiply.combine(2, 3), 6)\nassert.deepStrictEqual(MonoidMultiply.combine(2, MonoidMultiply.empty), 2)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMultiply: monoid.Monoid<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMin",
+    "description": "A `Monoid` that uses the minimum between two values.\n\nThe `empty` value is `-Infinity`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidMin } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMin.combine(2, 3), 2)\nassert.deepStrictEqual(MonoidMin.combine(2, MonoidMin.empty), 2)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMin: monoid.Monoid<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number",
+      "path": [
+        "src",
+        "data",
+        "Number.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "MonoidMax",
+    "description": "A `Monoid` that uses the maximum between two values.\n\nThe `empty` value is `Infinity`.",
+    "deprecated": false,
+    "examples": [
+      "import { MonoidMax } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMax.combine(2, 3), 3)\nassert.deepStrictEqual(MonoidMax.combine(2, MonoidMax.empty), 2)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const MonoidMax: monoid.Monoid<number>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Pointed: pointed.Pointed<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const FlatMap: flatMap_.FlatMap<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Chainable: chainable.Chainable<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monad: monad.Monad<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiApplicative: semiApplicative.SemiApplicative<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Applicative: applicative.Applicative<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiCoproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Coproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Coproduct: coproduct_.Coproduct<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiAlternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiAlternative: semiAlternative.SemiAlternative<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Alternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Alternative: alternative.Alternative<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Foldable: foldable.Foldable<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Filterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Filterable: filterable.Filterable<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Traversable: traversable.Traversable<Option.OptionTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "data",
+        "Option.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getOptionalMonoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ordering",
+      "path": [
+        "src",
+        "data",
+        "Ordering.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Semigroup",
+    "description": "`Semigroup` instance for `Ordering`, returns the left-most non-zero `Ordering`.",
+    "deprecated": false,
+    "examples": [
+      "import { Semigroup } from \"@effect/typeclass/data/Ordering\"\n\nassert.deepStrictEqual(Semigroup.combine(0, -1), -1)\nassert.deepStrictEqual(Semigroup.combine(0, 1), 1)\nassert.deepStrictEqual(Semigroup.combine(1, -1), 1)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Semigroup: semigroup.Semigroup<Ordering>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ordering",
+      "path": [
+        "src",
+        "data",
+        "Ordering.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monoid",
+    "description": "`Monoid` instance for `Ordering`, returns the left-most non-zero `Ordering`.\n\nThe `empty` value is `0`.",
+    "deprecated": false,
+    "examples": [
+      "import { Monoid } from \"@effect/typeclass/data/Ordering\"\n\nassert.deepStrictEqual(Monoid.combine(Monoid.empty, -1), -1)\nassert.deepStrictEqual(Monoid.combine(Monoid.empty, 1), 1)\nassert.deepStrictEqual(Monoid.combine(1, -1), 1)"
+    ],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monoid: monoid.Monoid<Ordering>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Contravariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Contravariant: contravariant.Contravariant<Predicate.PredicateTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Predicate.PredicateTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Of: of_.Of<Predicate.PredicateTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<Predicate.PredicateTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<Predicate.PredicateTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupEqv",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoidEqv",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupXor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoidXor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupSome",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoidSome",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupEvery",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Predicate",
+      "path": [
+        "src",
+        "data",
+        "Predicate.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoidEvery",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Covariant: covariant.Covariant<Record.ReadonlyRecordTypeLambda<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<Record.ReadonlyRecordTypeLambda<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Filterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Filterable: filterable.Filterable<Record.ReadonlyRecordTypeLambda<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Traversable: traversable.Traversable<Record.ReadonlyRecordTypeLambda<string>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "TraversableFilterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const TraversableFilterable: traversableFilterable.TraversableFilterable<Record.ReadonlyRecordTypeLambda<string>>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getCovariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getInvariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getFilterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getTraversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getTraversableFilterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupUnion",
+    "description": "A `Semigroup` that creates a union of two records.\n\nThis `Semigroup` takes two records and combines them into a single record.\nIf a key exists in both records, the provided `Semigroup` instance is used to combine the values for that key.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nFor example, when using the `MonoidSum`, values for matching keys will be summed.",
+    "deprecated": false,
+    "examples": [
+      "import * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupUnion } from \"@effect/typeclass/data/Record\"\n\nassert.deepStrictEqual(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })"
+    ],
+    "since": "0.29.4",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getMonoidUnion",
+    "description": "A `Monoid` that creates a union of two records.\n\nIt allows combining two records where values for matching keys are combined using the provided `Monoid` instance.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nThe `empty` value for this `Monoid` is an empty record `{}`.",
+    "deprecated": false,
+    "examples": [
+      "import * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getMonoidUnion } from \"@effect/typeclass/data/Record\"\n\nconst monoid = getMonoidUnion(NumberInstances.MonoidSum)\n\nassert.deepStrictEqual(monoid.combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })\nassert.deepStrictEqual(monoid.combine({ a: 1 }, monoid.empty), { a: 1 })"
+    ],
+    "since": "0.29.4",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Record",
+      "path": [
+        "src",
+        "data",
+        "Record.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroupIntersection",
+    "description": "A `Semigroup` that creates an intersection of two records.\n\nThis `Semigroup` takes two records and combines them into a new record containing only the keys that are present in both records.\nThe values for matching keys are combined using the provided `Semigroup` instance.",
+    "deprecated": false,
+    "examples": [
+      "import * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupIntersection } from \"@effect/typeclass/data/Record\"\n\nassert.deepStrictEqual(getSemigroupIntersection(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2 })"
+    ],
+    "since": "0.29.4",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "String",
+      "path": [
+        "src",
+        "data",
+        "String.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Semigroup",
+    "description": "`string` semigroup under concatenation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Semigroup: semigroup.Semigroup<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "String",
+      "path": [
+        "src",
+        "data",
+        "String.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monoid",
+    "description": "`string` monoid under concatenation.\n\nThe `empty` value is `''`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Monoid: monoid.Monoid<string>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tuple",
+      "path": [
+        "src",
+        "data",
+        "Tuple.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Bicovariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Bicovariant: bicovariant.Bicovariant<Tuple.TupleTypeLambda>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "partitionMapComposition",
+    "description": "Returns a default binary `partitionMap` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "filterMapComposition",
+    "description": "Returns a default binary `filterMap` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "compact",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "separate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "filter",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "partition",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Filterable",
+      "path": [
+        "src",
+        "Filterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Filterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "models",
+    "signature": "export interface Filterable<F extends TypeLambda> extends TypeClass<F> {\n  readonly partitionMap: {\n    <A, B, C>(\n      f: (a: A) => Either.Either<C, B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n    <R, O, E, A, B, C>(\n      self: Kind<F, R, O, E, A>,\n      f: (a: A) => Either.Either<C, B>\n    ): [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n  }\n\n  readonly filterMap: {\n    <A, B>(\n      f: (a: A) => Option.Option<B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => Option.Option<B>): Kind<F, R, O, E, B>\n  }\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "FlatMap",
+      "path": [
+        "src",
+        "FlatMap.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "flatten",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "FlatMap",
+      "path": [
+        "src",
+        "FlatMap.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "zipRight",
+    "description": "A variant of `flatMap` that ignores the value produced by this effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "FlatMap",
+      "path": [
+        "src",
+        "FlatMap.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "composeK",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "FlatMap",
+      "path": [
+        "src",
+        "FlatMap.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface FlatMap<F extends TypeLambda> extends TypeClass<F> {\n  readonly flatMap: {\n    <A, R2, O2, E2, B>(\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n    <R1, O1, E1, A, R2, O2, E2, B>(\n      self: Kind<F, R1, O1, E1, A>,\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n  }\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "reduceComposition",
+    "description": "Returns a default ternary `reduce` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "toArrayMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "toArray",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "combineMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "reduceKind",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "coproductMapKind",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Foldable",
+      "path": [
+        "src",
+        "Foldable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Foldable<F extends TypeLambda> extends TypeClass<F> {\n  readonly reduce: {\n    <A, B>(b: B, f: (b: B, a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => B\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, b: B, f: (b: B, a: A) => B): B\n  }\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Alternative.js\"",
+    "description": "Re-exports all named exports from the \"./Alternative.js\" module as `Alternative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Alternative from \"./Alternative.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Applicative.js\"",
+    "description": "Re-exports all named exports from the \"./Applicative.js\" module as `Applicative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Applicative from \"./Applicative.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Bicovariant.js\"",
+    "description": "Re-exports all named exports from the \"./Bicovariant.js\" module as `Bicovariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Bicovariant from \"./Bicovariant.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Bounded.js\"",
+    "description": "Re-exports all named exports from the \"./Bounded.js\" module as `Bounded`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Bounded from \"./Bounded.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Chainable.js\"",
+    "description": "Re-exports all named exports from the \"./Chainable.js\" module as `Chainable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Chainable from \"./Chainable.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Contravariant.js\"",
+    "description": "Re-exports all named exports from the \"./Contravariant.js\" module as `Contravariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Contravariant from \"./Contravariant.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Coproduct.js\"",
+    "description": "Re-exports all named exports from the \"./Coproduct.js\" module as `Coproduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Coproduct from \"./Coproduct.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Covariant.js\"",
+    "description": "Re-exports all named exports from the \"./Covariant.js\" module as `Covariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Covariant from \"./Covariant.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Filterable.js\"",
+    "description": "`Filterable` represents data structures which can be _partitioned_/_filtered_.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Filterable from \"./Filterable.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./FlatMap.js\"",
+    "description": "Re-exports all named exports from the \"./FlatMap.js\" module as `FlatMap`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as FlatMap from \"./FlatMap.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Foldable.js\"",
+    "description": "Re-exports all named exports from the \"./Foldable.js\" module as `Foldable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Foldable from \"./Foldable.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Invariant.js\"",
+    "description": "The `Invariant` typeclass is a higher-order abstraction over types that allow mapping the contents of a type in both directions.\nIt is similar to the `Covariant` typeclass but provides an `imap` opration, which allows transforming a value in both directions.\nThis typeclass is useful when dealing with data types that can be converted to and from some other types.\nThe `imap` operation provides a way to convert such data types to other types that they can interact with while preserving their invariants.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Invariant from \"./Invariant.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Monad.js\"",
+    "description": "Re-exports all named exports from the \"./Monad.js\" module as `Monad`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Monad from \"./Monad.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Monoid.js\"",
+    "description": "Re-exports all named exports from the \"./Monoid.js\" module as `Monoid`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Monoid from \"./Monoid.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Of.js\"",
+    "description": "Re-exports all named exports from the \"./Of.js\" module as `Of`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Of from \"./Of.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Pointed.js\"",
+    "description": "Re-exports all named exports from the \"./Pointed.js\" module as `Pointed`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Pointed from \"./Pointed.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Product.js\"",
+    "description": "Re-exports all named exports from the \"./Product.js\" module as `Product`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Product from \"./Product.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./SemiAlternative.js\"",
+    "description": "Re-exports all named exports from the \"./SemiAlternative.js\" module as `SemiAlternative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as SemiAlternative from \"./SemiAlternative.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./SemiApplicative.js\"",
+    "description": "Re-exports all named exports from the \"./SemiApplicative.js\" module as `SemiApplicative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as SemiApplicative from \"./SemiApplicative.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./SemiCoproduct.js\"",
+    "description": "Re-exports all named exports from the \"./SemiCoproduct.js\" module as `SemiCoproduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as SemiCoproduct from \"./SemiCoproduct.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./SemiProduct.js\"",
+    "description": "Re-exports all named exports from the \"./SemiProduct.js\" module as `SemiProduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as SemiProduct from \"./SemiProduct.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Semigroup.js\"",
+    "description": "Re-exports all named exports from the \"./Semigroup.js\" module as `Semigroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Semigroup from \"./Semigroup.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./Traversable.js\"",
+    "description": "Re-exports all named exports from the \"./Traversable.js\" module as `Traversable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as Traversable from \"./Traversable.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "From \"./TraversableFilterable.js\"",
+    "description": "`TraversableFilterable` represents data structures which can be _partitioned_ with effects in some `Applicative` functor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "exports",
+    "signature": "export * as TraversableFilterable from \"./TraversableFilterable.js\""
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Invariant",
+      "path": [
+        "src",
+        "Invariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "imapComposition",
+    "description": "Returns a default ternary `imap` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Invariant",
+      "path": [
+        "src",
+        "Invariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "bindTo",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Invariant",
+      "path": [
+        "src",
+        "Invariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "tupled",
+    "description": "Convert a value in a singleton array in a given effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Invariant",
+      "path": [
+        "src",
+        "Invariant.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Invariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly imap: {\n    <A, B>(\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(\n      self: Kind<F, R, O, E, A>,\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): Kind<F, R, O, E, B>\n  }\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Monad",
+      "path": [
+        "src",
+        "Monad.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Monad<F extends TypeLambda> extends FlatMap<F>, Pointed<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "fromSemigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "min",
+    "description": "Get a monoid where `combine` will return the minimum, based on the provided bounded order.\n\nThe `empty` value is the `maxBound` value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "max",
+    "description": "Get a monoid where `combine` will return the maximum, based on the provided bounded order.\n\nThe `empty` value is the `minimum` value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "reverse",
+    "description": "The dual of a `Monoid`, obtained by swapping the arguments of `combine`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "tuple",
+    "description": "Similar to `Promise.all` but operates on `Monoid`s.\n\n```\n[Monoid<A>, Monoid<B>, ...] -> Monoid<[A, B, ...]>\n```\n\nThis function creates and returns a new `Monoid` for a tuple of values based on the given `Monoid`s for each element in the tuple.\nThe returned `Monoid` combines two tuples of the same type by applying the corresponding `Monoid` passed as arguments to each element in the tuple.\n\nThe `empty` value of the returned `Monoid` is the tuple of `empty` values of the input `Monoid`s.\n\nIt is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "array",
+    "description": "Given a type `A`, this function creates and returns a `Semigroup` for `ReadonlyArray<A>`.\n\nThe `empty` value is the empty array.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "struct",
+    "description": "This function creates and returns a new `Monoid` for a struct of values based on the given `Monoid`s for each property in the struct.\nThe returned `Monoid` combines two structs of the same type by applying the corresponding `Monoid` passed as arguments to each property in the struct.\n\nThe `empty` value of the returned `Monoid` is a struct where each property is the `empty` value of the corresponding `Monoid` in the input `monoids` object.\n\nIt is useful when you need to combine two structs of the same type and you have a specific way of combining each property of the struct.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Monoid",
+      "path": [
+        "src",
+        "Monoid.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Monoid",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Monoid<A> extends Semigroup<A> {\n  readonly empty: A\n  readonly combineAll: (collection: Iterable<A>) => A\n}"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Of",
+      "path": [
+        "src",
+        "Of.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "void",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export declare const void: <F extends TypeLambda>(F: Of<F>) => <R = unknown, O = never, E = never>() => Kind<F, R, O, E, void>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Of",
+      "path": [
+        "src",
+        "Of.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "ofComposition",
+    "description": "Returns a default `of` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Of",
+      "path": [
+        "src",
+        "Of.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Do",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Of",
+      "path": [
+        "src",
+        "Of.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Of<F extends TypeLambda> extends TypeClass<F> {\n  readonly of: <A>(a: A) => Kind<F, unknown, never, never, A>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Pointed",
+      "path": [
+        "src",
+        "Pointed.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Pointed<F extends TypeLambda> extends Covariant<F>, Of<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Product",
+      "path": [
+        "src",
+        "Product.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "tuple",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Product",
+      "path": [
+        "src",
+        "Product.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "struct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Product",
+      "path": [
+        "src",
+        "Product.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Product<F extends TypeLambda> extends SemiProduct<F>, Of<F> {\n  readonly productAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, Array<A>>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SemiAlternative",
+      "path": [
+        "src",
+        "SemiAlternative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiAlternative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface SemiAlternative<F extends TypeLambda> extends SemiCoproduct<F>, Covariant<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroup",
+    "description": "Lift a `Semigroup` into 'F', the inner values are combined using the provided `Semigroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "lifting",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "zipWith",
+    "description": "Zips two `F` values together using a provided function, returning a new `F` of the result.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "ap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "zipLeft",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "zipRight",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "lift2",
+    "description": "Lifts a binary function into `F`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "lifting",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SemiApplicative",
+      "path": [
+        "src",
+        "SemiApplicative.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface SemiApplicative<F extends TypeLambda> extends SemiProduct<F>, Covariant<F> {}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiCoproduct",
+      "path": [
+        "src",
+        "SemiCoproduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "getSemigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SemiCoproduct",
+      "path": [
+        "src",
+        "SemiCoproduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiCoproduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface SemiCoproduct<F extends TypeLambda> extends Invariant<F> {\n  readonly coproduct: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, A | B>\n\n  readonly coproductMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "intercalate",
+    "description": "The `intercalate` API returns a function that takes a `Semigroup` instance and a separator value, and returns a new\n`Semigroup` instance that combines values with the given separator.\n\nThis API is useful when you want to combine values with a specific separator. For example, when you want to concatenate\nan array of strings with a separator string in between.\n\nIt is interesting to note that there is no equivalent API in the `Monoid` module. This is because the value `empty`,\nwhich is required for the `Monoid` interface, cannot exist.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export declare const intercalate: { <A>(separator: A): (S: Semigroup<A>) => Semigroup<A>; <A>(S: Semigroup<A>, separator: A): Semigroup<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "imap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export declare const imap: { <A, B>(to: (a: A) => B, from: (b: B) => A): (self: Semigroup<A>) => Semigroup<B>; <A, B>(self: Semigroup<A>, to: (a: A) => B, from: (b: B) => A): Semigroup<B>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: invariant.Invariant<SemigroupTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const SemiProduct: semiProduct.SemiProduct<SemigroupTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": "export declare const Product: product_.Product<SemigroupTypeLambda>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "tuple",
+    "description": "Similar to `Promise.all` but operates on `Semigroup`s.\n\n```\n[Semigroup<A>, Semigroup<B>, ...] -> Semigroup<[A, B, ...]>\n```\n\nThis function creates and returns a new `Semigroup` for a tuple of values based on the given `Semigroup`s for each element in the tuple.\nThe returned `Semigroup` combines two tuples of the same type by applying the corresponding `Semigroup` passed as arguments to each element in the tuple.\n\nIt is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": "export declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(...elements: T) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "struct",
+    "description": "This function creates and returns a new `Semigroup` for a struct of values based on the given `Semigroup`s for each property in the struct.\nThe returned `Semigroup` combines two structs of the same type by applying the corresponding `Semigroup` passed as arguments to each property in the struct.\n\nIt is useful when you need to combine two structs of the same type and you have a specific way of combining each property of the struct.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": "export declare const struct: <R extends { readonly [x: string]: Semigroup<any>; }>(fields: R) => Semigroup<{ readonly [K in keyof R]: [R[K]] extends [Semigroup<infer A>] ? A : never; }>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "min",
+    "description": "`Semigroup` that returns last minimum of elements.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "max",
+    "description": "`Semigroup` that returns last maximum of elements.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "constant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "reverse",
+    "description": "The dual of a `Semigroup`, obtained by flipping the arguments of `combine`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "first",
+    "description": "Always return the first argument.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "last",
+    "description": "Always return the last argument.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "instances",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "array",
+    "description": "Given a type `A`, this function creates and returns a `Semigroup` for `ReadonlyArray<A>`.\nThe returned `Semigroup` combines two arrays by concatenating them.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "combinators",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Semigroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Semigroup<A> {\n  readonly combine: (self: A, that: A) => A\n  readonly combineMany: (self: A, collection: Iterable<A>) => A\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Semigroup",
+      "path": [
+        "src",
+        "Semigroup.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemigroupTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type lambdas",
+    "signature": "export interface SemigroupTypeLambda extends TypeLambda {\n  readonly type: Semigroup<this[\"Target\"]>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "productMany",
+    "description": "Returns a default `productMany` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "productComposition",
+    "description": "Returns a default `product` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "productManyComposition",
+    "description": "Returns a default `productMany` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "andThenBind",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "appendElement",
+    "description": "Appends an element to the end of a tuple.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "nonEmptyTuple",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "nonEmptyStruct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SemiProduct",
+      "path": [
+        "src",
+        "SemiProduct.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface SemiProduct<F extends TypeLambda> extends Invariant<F> {\n  readonly product: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, [A, B]>\n\n  readonly productMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, [A, ...Array<A>]>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Traversable",
+      "path": [
+        "src",
+        "Traversable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traverseComposition",
+    "description": "Returns a default binary `traverse` composition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Traversable",
+      "path": [
+        "src",
+        "Traversable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "sequence",
+    "description": "Returns a default `sequence` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Traversable",
+      "path": [
+        "src",
+        "Traversable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traverseTap",
+    "description": "Given a function which returns a `F` effect, thread this effect\nthrough the running of this function on all the values in `T`,\nreturning an `T<A>` in a `F` context, ignoring the values\nreturned by the provided function.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Traversable",
+      "path": [
+        "src",
+        "Traversable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "type class",
+    "signature": "export interface Traversable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traverse: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "TraversableFilterable",
+      "path": [
+        "src",
+        "TraversableFilterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traversePartitionMap",
+    "description": "Returns a default binary `traversePartitionMap` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "TraversableFilterable",
+      "path": [
+        "src",
+        "TraversableFilterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traverseFilterMap",
+    "description": "Returns a default binary `traverseFilterMap` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "TraversableFilterable",
+      "path": [
+        "src",
+        "TraversableFilterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traverseFilter",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "TraversableFilterable",
+      "path": [
+        "src",
+        "TraversableFilterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "traversePartition",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "TraversableFilterable",
+      "path": [
+        "src",
+        "TraversableFilterable.ts"
+      ]
+    },
+    "project": "@effect/typeclass",
+    "name": "TraversableFilterable",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "models",
+    "signature": "export interface TraversableFilterable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traversePartitionMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B, C>(\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): <TR, TO, TE>(\n      self: Kind<T, TR, TO, TE, A>\n    ) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n    <TR, TO, TE, A, R, O, E, B, C>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n  }\n\n  readonly traverseFilterMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}"
+  }
+]

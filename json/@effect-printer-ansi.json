@@ -1,0 +1,4070 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AnsiTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export declare const AnsiTypeId: typeof AnsiTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bold",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const bold: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "italicized",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const italicized: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "strikethrough",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const strikethrough: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "underlined",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const underlined: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "color",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const color: (color: Color) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "brightColor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const brightColor: (color: Color) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgColor",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const bgColor: (color: Color) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgColorBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const bgColorBright: (color: Color) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "black",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const black: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "red",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const red: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "green",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const green: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "yellow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const yellow: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "blue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const blue: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "magenta",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const magenta: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cyan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const cyan: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "white",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const white: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "blackBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const blackBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "redBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const redBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "greenBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const greenBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "yellowBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const yellowBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "blueBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const blueBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "magentaBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const magentaBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cyanBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const cyanBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "whiteBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const whiteBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgBlack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgBlack: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgRed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgRed: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgGreen",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgGreen: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgYellow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgYellow: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgBlue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgBlue: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgMagenta",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgMagenta: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgCyan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgCyan: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgWhite",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgWhite: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgBlackBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgBlackBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgRedBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgRedBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgGreenBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgGreenBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgYellowBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgYellowBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgBlueBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgBlueBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgMagentaBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgMagentaBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgCyanBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgCyanBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "bgWhiteBright",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "colors",
+    "signature": "export declare const bgWhiteBright: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "beep",
+    "description": "Play a beeping sound.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const beep: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorTo",
+    "description": "Moves the cursor to the specified `row` and `column`.\n\nThough the ANSI Control Sequence for Cursor Position is `1`-based, this\nmethod takes row and column values starting from `0` and adjusts them to `1`-\nbased values.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorTo: (column: number, row?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorMove",
+    "description": "Move the cursor position the specified number of `rows` and `columns`\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen in either direction, then\nadditional movement will have no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorMove: (column: number, row?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorUp",
+    "description": "Moves the cursor up by the specified number of `lines` (default `1`) relative\nto the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorUp: (lines?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorDown",
+    "description": "Moves the cursor down by the specified number of `lines` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorDown: (lines?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorForward",
+    "description": "Moves the cursor forward by the specified number of `columns` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorForward: (columns?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorBackward",
+    "description": "Moves the cursor backward by the specified number of `columns` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorBackward: (columns?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorLeft",
+    "description": "Moves the cursor to the first column of the current row.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorLeft: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorSavePosition",
+    "description": "Saves the cursor position, encoding shift state and formatting attributes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorSavePosition: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorRestorePosition",
+    "description": "Restores the cursor position, encoding shift state and formatting attributes\nfrom the previous save, if any, otherwise resets these all to their defaults.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorRestorePosition: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorNextLine",
+    "description": "Moves cursor to beginning of the line the specified number of rows down\n(default `1`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorNextLine: (rows?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorPrevLine",
+    "description": "Moves cursor to beginning of the line the specified number of rows up\n(default `1`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorPrevLine: (rows?: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorHide",
+    "description": "Hides the cursor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorHide: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorShow",
+    "description": "Shows the cursor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorShow: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseLines",
+    "description": "Erase from the current cursor position up the specified amount of rows.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseLines: (rows: number) => Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseEndLine",
+    "description": "Clears from the current cursor position to the end of the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseEndLine: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseStartLine",
+    "description": "Clears from the current cursor position to the start of the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseStartLine: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseLine",
+    "description": "Clears the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseLine: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseDown",
+    "description": "Clears from the current cursor position to the end of the screen.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseDown: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseUp",
+    "description": "Clears from the current cursor position to the beginning of the screen.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseUp: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseScreen",
+    "description": "Clears the entire screen and move the cursor to the upper left.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseScreen: Ansi"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "stringify",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "destructors",
+    "signature": "export declare const stringify: (self: Ansi) => string"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "combine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const combine: { (that: Ansi): (self: Ansi) => Ansi; (self: Ansi, that: Ansi): Ansi; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Ansi",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Ansi extends Ansi.Proto {}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Ansi",
+      "path": [
+        "src",
+        "Ansi.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AnsiTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbol",
+    "signature": "export type AnsiTypeId = typeof AnsiTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "beep",
+    "description": "Play a beeping sound.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const beep: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorTo",
+    "description": "Moves the cursor to the specified `row` and `column`.\n\nThough the ANSI Control Sequence for Cursor Position is `1`-based, this\nmethod takes row and column values starting from `0` and adjusts them to `1`-\nbased values.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const cursorTo: (column: number, row?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorMove",
+    "description": "Move the cursor position the specified number of `rows` and `columns`\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen in either direction, then\nadditional movement will have no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const cursorMove: (column: number, row?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorUp",
+    "description": "Moves the cursor up by the specified number of `lines` (default `1`) relative\nto the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorUp: (lines?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorDown",
+    "description": "Moves the cursor down by the specified number of `lines` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorDown: (lines?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorForward",
+    "description": "Moves the cursor forward by the specified number of `columns` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorForward: (columns?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorBackward",
+    "description": "Moves the cursor backward by the specified number of `columns` (default `1`)\nrelative to the current cursor position.\n\nIf the cursor is already at the edge of the screen, this has no effect.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorBackward: (columns?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorLeft",
+    "description": "Moves the cursor to the first column of the current row.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorLeft: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorSavePosition",
+    "description": "Saves the cursor position, encoding shift state and formatting attributes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorSavePosition: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorRestorePosition",
+    "description": "Restores the cursor position, encoding shift state and formatting attributes\nfrom the previous save, if any, otherwise resets these all to their defaults.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorRestorePosition: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorNextLine",
+    "description": "Moves cursor to beginning of the line the specified number of rows down\n(default `1`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorNextLine: (rows?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorPrevLine",
+    "description": "Moves cursor to beginning of the line the specified number of rows up\n(default `1`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorPrevLine: (rows?: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorHide",
+    "description": "Hides the cursor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorHide: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cursorShow",
+    "description": "Shows the cursor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const cursorShow: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseLines",
+    "description": "Erase from the current cursor position up the specified amount of rows.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseLines: (rows: number) => AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseEndLine",
+    "description": "Clears from the current cursor position to the end of the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseEndLine: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseStartLine",
+    "description": "Clears from the current cursor position to the start of the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseStartLine: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseLine",
+    "description": "Clears the current line.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseLine: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseDown",
+    "description": "Clears from the current cursor position to the end of the screen.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseDown: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseUp",
+    "description": "Clears from the current cursor position to the beginning of the screen.\n\nThe current cursor position does not change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseUp: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "eraseScreen",
+    "description": "Clears the entire screen and move the cursor to the upper left.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "commands",
+    "signature": "export declare const eraseScreen: AnsiDoc"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "render",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "destructors",
+    "signature": "export declare const render: { (config: AnsiDoc.RenderConfig): (self: AnsiDoc) => string; (self: AnsiDoc, config: AnsiDoc.RenderConfig): string; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Annotated",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Annotated: Annotated<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Cat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Cat: Cat<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Char",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Char: Char<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Column",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Column: Column<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Covariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Covariant: any"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Doc",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Doc: Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "DocTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const DocTypeId: typeof DocTypeId"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "DocTypeLambda",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const DocTypeLambda: DocTypeLambda"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Empty: Empty<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Fail",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Fail: Fail<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "FlatAlt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const FlatAlt: FlatAlt<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Line",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Line: Line<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Nest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Nest: Nest<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Nesting",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Nesting: Nesting<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Text: Text<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Union",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Union: Union<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "WithPageWidth",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const WithPageWidth: WithPageWidth<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AlreadyFlat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const AlreadyFlat: AlreadyFlat<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Flatten",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Flatten: Flatten<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Flattened",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const Flattened: Flattened<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "NeverFlat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export declare const NeverFlat: NeverFlat<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "align",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const align: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "alterAnnotations",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "angleBracketed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "annotate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "backslash",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const backslash: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cats",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithLineBreak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSoftLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSoftLineBreak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSpace",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "changesUponFlattening",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "export declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "char",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const char: (char: string) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "colon",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const colon: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "column",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "comma",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const comma: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "concatWith",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "curlyBraced",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "dot",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const dot: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "doubleQuoted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "dquote",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const dquote: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "empty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const empty: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "encloseSep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "equalSign",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const equalSign: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fail",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const fail: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fill",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillBreak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillCat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillSep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "export declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "flatAlt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "flatten",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "export declare const flatten: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "group",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const group: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hang",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hardLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const hardLine: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hcat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hsep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "indent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Invariant",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "export declare const Invariant: Invariant<DocTypeLambda>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isAnnotated",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isCat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isCat: <A>(self: Doc<A>) => self is Cat<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isChar",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isChar: <A>(self: Doc<A>) => self is Char<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isColumn",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isColumn: <A>(self: Doc<A>) => self is Column<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isDoc",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isDoc: (u: unknown) => u is Doc<unknown>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isEmpty",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isFail",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFail: <A>(self: Doc<A>) => self is Fail<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isFlatAlt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isLine: <A>(self: Doc<A>) => self is Line<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isNest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNest: <A>(self: Doc<A>) => self is Nest<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isNesting",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isText",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isText: <A>(self: Doc<A>) => self is Text<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isUnion",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isUnion: <A>(self: Doc<A>) => self is Union<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isWithPageWidth",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "export declare const isWithPageWidth: <A>(self: Doc<A>) => self is WithPageWidth<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "langle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const langle: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lbrace",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lbrace: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lbracket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lbracket: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "line",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const line: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lineBreak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lineBreak: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "list",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lparen",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const lparen: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "map",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "match",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "matching",
+    "signature": "export declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "nest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "nesting",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "pageWidth",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "parenthesized",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const parenthesized: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "punctuate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rangle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rangle: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rbrace",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rbrace: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rbracket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rbracket: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "reAnnotate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "reflow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const reflow: (s: string, char?: string) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rparen",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const rparen: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "semi",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const semi: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "seps",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "singleQuoted",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "slash",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const slash: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "softLine",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const softLine: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "softLineBreak",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const softLineBreak: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "space",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const space: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "spaces",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const spaces: (n: number) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "squareBracketed",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "squote",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const squote: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "string",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const string: (str: string) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "surround",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "text",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const text: (text: string) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "textSpaces",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const textSpaces: (n: number) => string"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "tupled",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "export declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "unAnnotate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "export declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "union",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "export declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vbar",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "export declare const vbar: Doc<never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vcat",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "export declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vsep",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "export declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "width",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "export declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "words",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "export declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnsiDoc",
+      "path": [
+        "src",
+        "AnsiDoc.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AnsiDoc",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type AnsiDoc = Doc<Ansi>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "black",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const black: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "red",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const red: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "green",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const green: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "yellow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const yellow: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "blue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const blue: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "magenta",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const magenta: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cyan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const cyan: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "white",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const white: Color"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "toCode",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "destructors",
+    "signature": "export declare const toCode: (color: Color) => number"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Black",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Black {\n  readonly _tag: \"Black\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Blue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Blue {\n  readonly _tag: \"Blue\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Cyan",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Cyan {\n  readonly _tag: \"Cyan\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Green",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Green {\n  readonly _tag: \"Green\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Magenta",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Magenta {\n  readonly _tag: \"Magenta\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Red",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Red {\n  readonly _tag: \"Red\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "White",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface White {\n  readonly _tag: \"White\"\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Yellow",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Yellow {\n  readonly _tag: \"Yellow\"\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Color",
+      "path": [
+        "src",
+        "Color.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Color",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export type Color = Black | Red | Green | Yellow | Blue | Magenta | Cyan | White"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "From \"./Ansi.js\"",
+    "description": "Re-exports all named exports from the \"./Ansi.js\" module as `Ansi`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Ansi from \"./Ansi.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "From \"./AnsiDoc.js\"",
+    "description": "Re-exports all named exports from the \"./AnsiDoc.js\" module as `AnsiDoc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as AnsiDoc from \"./AnsiDoc.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/printer-ansi",
+    "name": "From \"./Color.js\"",
+    "description": "Re-exports all named exports from the \"./Color.js\" module as `Color`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Color from \"./Color.js\""
+  }
+]
