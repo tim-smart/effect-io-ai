@@ -51,7 +51,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "annotations",
-    "signature": "export interface ArbitraryGenerationContext {\n  readonly maxDepth: number\n  readonly depthIdentifier?: string\n  readonly constraints?: StringConstraints | NumberConstraints | BigIntConstraints | ArrayConstraints\n}"
+    "signature": "export interface ArbitraryGenerationContext {\n  readonly maxDepth: number\n  readonly depthIdentifier?: string\n  readonly constraints?: StringConstraints | NumberConstraints | BigIntConstraints | DateConstraints | ArrayConstraints\n}"
   },
   {
     "_tag": "Interface",
@@ -66859,6 +66859,24 @@
       ]
     },
     "project": "effect",
+    "name": "DateFromSelfSchemaId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.8",
+    "category": "schema id",
+    "signature": "export declare const DateFromSelfSchemaId: typeof DateFromSelfSchemaId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "TimeZoneFromSelf",
     "description": null,
     "deprecated": false,
@@ -72436,6 +72454,24 @@
     "since": "3.10.0",
     "category": "Cause utils",
     "signature": "export type CauseEncoded<E, D> =\n  | {\n    readonly _tag: \"Empty\"\n  }\n  | {\n    readonly _tag: \"Fail\"\n    readonly error: E\n  }\n  | {\n    readonly _tag: \"Die\"\n    readonly defect: D\n  }\n  | {\n    readonly _tag: \"Interrupt\"\n    readonly fiberId: FiberIdEncoded\n  }\n  | {\n    readonly _tag: \"Sequential\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }\n  | {\n    readonly _tag: \"Parallel\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "DateFromSelfSchemaId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.8",
+    "category": "schema id",
+    "signature": "export type DateFromSelfSchemaId = typeof DateFromSelfSchemaId"
   },
   {
     "_tag": "TypeAlias",

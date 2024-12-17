@@ -14,8 +14,8 @@ Schema.between
 
 ```ts
 export declare const between: <A extends number>(
-  min: number,
-  max: number,
+  minimum: number,
+  maximum: number,
   annotations?: Annotations.Filter<A>
 ) => <I, R>(self: Schema<A, I, R>) => filter<Schema<A, I, R>>
 ```

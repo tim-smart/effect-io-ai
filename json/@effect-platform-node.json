@@ -306,6 +306,24 @@
     "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.js\""
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform-node",
+    "name": "From \"./Undici.js\"",
+    "description": "Re-exports all named exports from the \"./Undici.js\" module as `Undici`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Undici from \"./Undici.js\""
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeCommandExecutor",
@@ -1243,5 +1261,23 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Undici",
+      "path": [
+        "src",
+        "Undici.ts"
+      ]
+    },
+    "project": "@effect/platform-node",
+    "name": "From \"undici\"",
+    "description": "Re-exports all named exports from the \"undici\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * from \"undici\""
   }
 ]

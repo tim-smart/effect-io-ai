@@ -10253,6 +10253,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "redirect",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const redirect: (location: string, options?: Options.WithContentType | undefined) => HttpServerResponse"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpServerResponse",
+      "path": [
+        "src",
+        "HttpServerResponse.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "uint8Array",
     "description": null,
     "deprecated": false,
@@ -10727,7 +10745,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Options {\n  readonly status?: number | undefined\n  readonly statusText?: string | undefined\n  readonly headers?: Headers.Headers | undefined\n  readonly cookies?: Cookies | undefined\n  readonly contentType?: string | undefined\n  readonly contentLength?: number | undefined\n}"
+    "signature": "export interface Options {\n  readonly status?: number | undefined\n  readonly statusText?: string | undefined\n  readonly headers?: Headers.Input | undefined\n  readonly cookies?: Cookies | undefined\n  readonly contentType?: string | undefined\n  readonly contentLength?: number | undefined\n}"
   },
   {
     "_tag": "TypeAlias",
