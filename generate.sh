@@ -57,6 +57,6 @@ for repo in ${repos[@]}; do
 done
 
 rm -f json/_all.json
-jq -s '[ inputs ] | add' json/*.json > json/_all.json
+jq -s '. | flatten' json/*.json > json/_all.json
 
 node $indexjs > index.html
