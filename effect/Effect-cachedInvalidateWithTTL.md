@@ -1,8 +1,30 @@
 # cachedInvalidateWithTTL
 
-Similar to {@link cachedWithTTL}, this function caches an effect's result for
-a specified duration. It also includes an additional effect for manually
-invalidating the cached value before it naturally expires.
+Caches an effect's result for a specified duration and allows manual
+invalidation before expiration.
+
+**Details**
+
+This function behaves similarly to {@link cachedWithTTL} by caching the
+result of an effect for a specified period of time. However, it introduces an
+additional feature: it provides an effect that allows you to manually
+invalidate the cached result before it naturally expires.
+
+This gives you more control over the cache, allowing you to refresh the
+result when needed, even if the original cache has not yet expired.
+
+Once the cache is invalidated, the next time the effect is evaluated, the
+result will be recomputed, and the cache will be refreshed.
+
+**When to Use**
+
+Use this function when you have an effect whose result needs to be cached for
+a certain period, but you also want the option to refresh the cache manually
+before the expiration time.
+
+This is useful when you need to ensure that the cached data remains valid for
+a certain period but still want to invalidate it if the underlying data
+changes or if you want to force a recomputation.
 
 To import and use `cachedInvalidateWithTTL` from the "Effect" module:
 

@@ -2,10 +2,6 @@
 
 Creates an `Effect` that represents a synchronous side-effectful computation.
 
-**When to Use**
-
-Use `sync` when you are sure the operation will not fail.
-
 **Details**
 
 The provided function (`thunk`) must not throw errors; if it does, the error
@@ -15,6 +11,10 @@ This defect is not a standard error but indicates a flaw in the logic that
 was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
 {@link catchAllDefect}.
+
+**When to Use**
+
+Use this function when you are sure the operation will not fail.
 
 To import and use `sync` from the "Effect" module:
 

@@ -1,6 +1,6 @@
 # reduceRight
 
-Folds an `Iterable<A>` using an effectual function f, working sequentially from left to right.
+Reduces an `Iterable<A>` using an effectual function `f`, working sequentially from right to left.
 
 To import and use `reduceRight` from the "Effect" module:
 

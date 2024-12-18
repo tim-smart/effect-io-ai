@@ -1,12 +1,12 @@
 # validateFirst
 
-The `validateFirst` function is similar to {@link validateAll} but
-with a key difference: it returns the first successful result or all errors
-if none of the operations succeed.
+This function is similar to {@link validateAll} but with a key difference: it
+returns the first successful result or all errors if none of the operations
+succeed.
 
 This function processes a collection of elements and applies an effectful
-operation to each. Unlike `validateAll`, which accumulates both
-successes and failures, `validateFirst` stops and returns the first
+operation to each. Unlike {@link validateAll}, which accumulates both
+successes and failures, `Effect.validateFirst` stops and returns the first
 success it encounters. If no success occurs, it returns all accumulated
 errors. This can be useful when you are interested in the first successful
 result and want to avoid processing further once a valid result is found.

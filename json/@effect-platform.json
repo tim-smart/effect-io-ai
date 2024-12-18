@@ -10259,7 +10259,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const redirect: (location: string, options?: Options.WithContentType | undefined) => HttpServerResponse"
+    "signature": "export declare const redirect: (location: string | URL, options?: Options.WithContentType | undefined) => HttpServerResponse"
   },
   {
     "_tag": "Constant",

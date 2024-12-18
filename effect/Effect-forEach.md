@@ -4,8 +4,8 @@ Executes an effectful operation for each element in an `Iterable`.
 
 **Details**
 
-The `forEach` function applies a provided operation to each element in the
-iterable, producing a new effect that returns an array of results.
+This function applies a provided operation to each element in the iterable,
+producing a new effect that returns an array of results.
 
 If any effect fails, the iteration stops immediately (short-circuiting), and
 the error is propagated.

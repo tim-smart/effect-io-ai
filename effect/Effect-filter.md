@@ -1,6 +1,27 @@
 # filter
 
-Filters the collection using the specified effectful predicate.
+Filters an iterable using the specified effectful predicate.
+
+**Details**
+
+This function filters a collection (an iterable) by applying an effectful
+predicate.
+
+The predicate is a function that takes an element and its index, and it
+returns an effect that evaluates to a boolean.
+
+The function processes each element in the collection and keeps only those
+that satisfy the condition defined by the predicate.
+
+**Options**
+
+You can also adjust the behavior with options such as concurrency, batching,
+or whether to negate the condition.
+
+**When to Use**
+
+This function allows you to selectively keep or remove elements based on a
+condition that may involve asynchronous or side-effect-causing operations.
 
 To import and use `filter` from the "Effect" module:
 
@@ -10,12 +31,29 @@ import * as Effect from "effect/Effect"
 Effect.filter
 ```
 
+**Example**
+
+```ts
+import { Effect } from "effect"
+
+const numbers = [1, 2, 3, 4, 5]
+const predicate = (n: number, i: number) => Effect.succeed(n % 2 === 0)
+
+const program = Effect.gen(function* () {
+  const result = yield* Effect.filter(numbers, predicate)
+  console.log(result)
+})
+
+Effect.runFork(program)
+// Output: [2, 4]
+```
+
 **Signature**
 
 ```ts
 export declare const filter: {
   <A, E, R>(
-    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
+    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
     options?:
       | {
           readonly concurrency?: Concurrency | undefined
@@ -27,7 +65,7 @@ export declare const filter: {
   ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
   <A, E, R>(
     elements: Iterable<A>,
-    f: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
+    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
     options?:
       | {
           readonly concurrency?: Concurrency | undefined

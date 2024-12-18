@@ -3,6 +3,20 @@
 Returns an effect that executes only once, regardless of how many times it's
 called.
 
+**Details**
+
+This function ensures that a specific effect is executed only a single time,
+no matter how many times it is invoked. The result of the effect will be
+cached, and subsequent calls to the effect will immediately return the cached
+result without re-executing the original logic.
+
+**When to Use**
+
+Use this function when you need to perform a task only once, regardless of
+how many times the effect is triggered. It's particularly useful when you
+have initialization tasks, logging, or other one-time actions that should not
+be repeated. This can help optimize performance and avoid redundant actions.
+
 To import and use `once` from the "Effect" module:
 
 ```ts

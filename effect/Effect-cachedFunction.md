@@ -1,8 +1,29 @@
 # cachedFunction
 
-Returns a memoized version of a function with effects. Memoization ensures
-that results are stored and reused for the same inputs, reducing the need to
-recompute them.
+Returns a memoized version of a function with effects, reusing results for
+the same inputs.
+
+**Details**
+
+This function creates a memoized version of a given function that performs an
+effect. Memoization ensures that once a result is computed for a specific
+input, it is stored and reused for subsequent calls with the same input,
+reducing the need to recompute the result.
+
+The function can optionally take an {@link Equivalence} parameter to
+determine how inputs are compared for caching purposes.
+
+**When to Use**
+
+Use this function when you have a function that performs an effect and you
+want to avoid recomputing the result for the same input multiple times.
+
+It's ideal for functions that produce deterministic results based on their
+inputs, and you want to improve performance by caching the output.
+
+This is particularly useful in scenarios where the function involves
+expensive calculations or operations that should be avoided after the first
+execution with the same parameters.
 
 To import and use `cachedFunction` from the "Effect" module:
 

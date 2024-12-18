@@ -2,11 +2,6 @@
 
 Creates an `Effect` from a callback-based asynchronous function.
 
-**When to Use**
-
-Use `async` when dealing with APIs that use callback-style instead of
-`async/await` or `Promise`.
-
 **Details**
 
 The `resume` function:
@@ -23,6 +18,11 @@ fiber" because it suspends the fiber executing the `async` effect (i.e.
 semantically blocks the fiber from making progress). Specifying this fiber id
 in cases where it is known will improve diagnostics, but not affect the
 behavior of the returned effect.
+
+**When to Use**
+
+Use `Effect.async` when dealing with APIs that use callback-style instead of
+`async/await` or `Promise`.
 
 To import and use `async` from the "Effect" module:
 

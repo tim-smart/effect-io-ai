@@ -3,10 +3,6 @@
 Creates an `Effect` that represents an asynchronous computation guaranteed to
 succeed.
 
-**When to Use**
-
-Use `promise` when you are sure the operation will not reject.
-
 **Details**
 
 The provided function (`thunk`) returns a `Promise` that should never reject; if it does, the error
@@ -21,6 +17,10 @@ crash in the program, which can be further managed or logged using tools like
 
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
+
+**When to Use**
+
+Use this function when you are sure the operation will not reject.
 
 To import and use `promise` from the "Effect" module:
 

@@ -1,6 +1,6 @@
 # isOption
 
-Tests if a value is a `Option`.
+Checks if a given value is an `Option` value.
 
 To import and use `isOption` from the "Option" module:
 

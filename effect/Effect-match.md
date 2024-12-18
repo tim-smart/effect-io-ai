@@ -3,11 +3,17 @@
 Handles both success and failure cases of an effect without performing side
 effects.
 
+**Details**
+
 `match` lets you define custom handlers for both success and failure
 scenarios. You provide separate functions to handle each case, allowing you
 to process the result if the effect succeeds, or handle the error if the
-effect fails. This is useful for structuring your code to respond differently
-to success or failure without triggering side effects.
+effect fails.
+
+**When to Use**
+
+This is useful for structuring your code to respond differently to success or
+failure without triggering side effects.
 
 To import and use `match` from the "Effect" module:
 
@@ -20,6 +26,7 @@ Effect.match
 **Example**
 
 ```ts
+// Title: Handling Both Success and Failure Cases
 import { Effect } from "effect"
 
 const success: Effect.Effect<number, Error> = Effect.succeed(42)

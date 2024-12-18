@@ -1,7 +1,22 @@
 # reduce
 
-Folds an `Iterable<A>` using an effectual function f, working sequentially
-from left to right.
+Combines an `Iterable<A>` using an effectual function `f`, working
+sequentially from left to right.
+
+**Details**
+
+This function takes an iterable and applies a function `f` to each element in
+the iterable. The function works sequentially, starting with an initial value
+`zero` and then combining it with each element in the collection. The
+provided function `f` is called for each element in the iterable, allowing
+you to accumulate a result based on the current value and the element being
+processed.
+
+**When to Use**
+
+The function is often used for operations like summing a collection of
+numbers or combining results from multiple tasks. It ensures that operations
+are performed one after the other, maintaining the order of the elements.
 
 To import and use `reduce` from the "Effect" module:
 
@@ -9,6 +24,26 @@ To import and use `reduce` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.reduce
+```
+
+**Example**
+
+```ts
+import { Console, Effect } from "effect"
+
+const processOrder = (id: number) =>
+  Effect.succeed(`Order ${id} processed`).pipe(Effect.tap(Console.log), Effect.delay(500 - id * 100))
+
+const program = Effect.reduce([1, 2, 3, 4], [], (acc: Array<string>, id: number, i: number) =>
+  processOrder(id).pipe(Effect.map((order) => [...acc, order]))
+)
+
+Effect.runFork(program)
+// Output:
+// Order 1 processed
+// Order 2 processed
+// Order 3 processed
+// Order 4 processed
 ```
 
 **Signature**

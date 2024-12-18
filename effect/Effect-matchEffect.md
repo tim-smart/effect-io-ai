@@ -3,11 +3,15 @@
 Handles both success and failure cases of an effect, allowing for additional
 side effects.
 
-The `matchEffect` function is similar to {@link match}, but it
-enables you to perform side effects in the handlers for both success and
-failure outcomes. This is useful when you need to execute additional actions,
-like logging or notifying users, based on whether an effect succeeds or
-fails.
+**Details**
+
+The `matchEffect` function is similar to {@link match}, but it enables you to
+perform side effects in the handlers for both success and failure outcomes.
+
+**When to Use**
+
+This is useful when you need to execute additional actions, like logging or
+notifying users, based on whether an effect succeeds or fails.
 
 To import and use `matchEffect` from the "Effect" module:
 
@@ -15,6 +19,36 @@ To import and use `matchEffect` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.matchEffect
+```
+
+**Example**
+
+```ts
+// Title: Handling Both Success and Failure Cases with Side Effects
+import { Effect } from "effect"
+
+const success: Effect.Effect<number, Error> = Effect.succeed(42)
+const failure: Effect.Effect<number, Error> = Effect.fail(new Error("Uh oh!"))
+
+const program1 = Effect.matchEffect(success, {
+  onFailure: (error) => Effect.succeed(`failure: ${error.message}`).pipe(Effect.tap(Effect.log)),
+  onSuccess: (value) => Effect.succeed(`success: ${value}`).pipe(Effect.tap(Effect.log))
+})
+
+console.log(Effect.runSync(program1))
+// Output:
+// timestamp=... level=INFO fiber=#0 message="success: 42"
+// success: 42
+
+const program2 = Effect.matchEffect(failure, {
+  onFailure: (error) => Effect.succeed(`failure: ${error.message}`).pipe(Effect.tap(Effect.log)),
+  onSuccess: (value) => Effect.succeed(`success: ${value}`).pipe(Effect.tap(Effect.log))
+})
+
+console.log(Effect.runSync(program2))
+// Output:
+// timestamp=... level=INFO fiber=#1 message="failure: Uh oh!"
+// failure: Uh oh!
 ```
 
 **Signature**

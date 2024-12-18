@@ -1,12 +1,13 @@
 # isEffect
 
-This function returns `true` if the specified value is an `Effect` value,
-`false` otherwise.
+Checks if a given value is an `Effect` value.
+
+**When to Use**
 
 This function can be useful for checking the type of a value before
 attempting to operate on it as an `Effect` value. For example, you could use
-`isEffect` to check the type of a value before using it as an argument to a
-function that expects an `Effect` value.
+`Effect.isEffect` to check the type of a value before using it as an argument
+to a function that expects an `Effect` value.
 
 To import and use `isEffect` from the "Effect" module:
 

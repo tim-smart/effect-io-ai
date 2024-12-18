@@ -4,9 +4,9 @@ A data-last version of {@link all}, designed for use in pipelines.
 
 **When to Use**
 
-The `allWith` function enables you to combine multiple effects and customize execution options
-such as concurrency levels. This version is useful in functional pipelines where you first define
-your data and then apply operations to it.
+This function enables you to combine multiple effects and customize execution
+options such as concurrency levels. This version is useful in functional
+pipelines where you first define your data and then apply operations to it.
 
 To import and use `allWith` from the "Effect" module:
 

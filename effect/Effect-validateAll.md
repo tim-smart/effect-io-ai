@@ -1,16 +1,25 @@
 # validateAll
 
-The `validateAll` function allows you to apply an effectful operation
-to each element of a collection, while collecting both the successes and
-failures. Unlike {@link forEach}, which would stop at the first error,
-`validateAll` continues processing all elements, accumulating both
-successes and failures.
+Applies an effectful operation to each element in a collection while
+collecting both successes and failures.
 
-This function transforms all elements of the collection using the provided
-effectful operation. If any elements fail, the errors are captured and
-included in the result, alongside the successful results. However, if there
-are any errors, all successes are lost in the final result, which is an
-important consideration when using this function.
+**Details**
+
+This function allows you to apply an effectful operation to every item in a
+collection.
+
+Unlike {@link forEach}, which would stop at the first error, this function
+continues processing all elements, accumulating both successes and failures.
+
+**When to Use**
+
+Use this function when you want to process every item in a collection, even
+if some items fail. This is particularly useful when you need to perform
+operations on all elements without halting due to an error.
+
+Keep in mind that if there are any failures, **all successes will be lost**,
+so this function is not suitable when you need to keep the successful results
+in case of errors.
 
 To import and use `validateAll` from the "Effect" module:
 

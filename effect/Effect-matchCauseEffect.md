@@ -2,12 +2,14 @@
 
 Handles failures with access to the cause and allows performing side effects.
 
-The `matchCauseEffect` function works similarly to {@link matchCause},
-but it also allows you to perform additional side effects based on the
-failure cause. This function provides access to the complete cause of the
-failure, making it possible to differentiate between various failure types,
-and allows you to respond accordingly while performing side effects (like
-logging or other operations).
+**Details**
+
+The `matchCauseEffect` function works similarly to {@link matchCause}, but it
+also allows you to perform additional side effects based on the failure
+cause. This function provides access to the complete cause of the failure,
+making it possible to differentiate between various failure types, and allows
+you to respond accordingly while performing side effects (like logging or
+other operations).
 
 To import and use `matchCauseEffect` from the "Effect" module:
 
@@ -20,6 +22,7 @@ Effect.matchCauseEffect
 **Example**
 
 ```ts
+// Title: Handling Different Failure Causes with Side Effects
 import { Effect, Console } from "effect"
 
 const task: Effect.Effect<number, Error> = Effect.die("Uh oh!")
@@ -45,7 +48,7 @@ const program = Effect.matchCauseEffect(task, {
     Console.log(`succeeded with ${value} value`)
 })
 
-Effect.runSync(program)
+Effect.runPromise(program)
 // Output: "Die: Uh oh!"
 ```
 

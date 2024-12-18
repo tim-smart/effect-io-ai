@@ -1,7 +1,22 @@
 # mergeAll
 
-Merges an `Iterable<Effect<A, E, R>>` to a single effect, working
-sequentially.
+Merges an `Iterable<Effect<A, E, R>>` to a single effect.
+
+**Details**
+
+This function takes an iterable of effects and combines them into a single
+effect. It does this by iterating over each effect in the collection and
+applying a function that accumulates results into a "zero" value, which
+starts with an initial value and is updated with each effect's success.
+
+The provided function `f` is called for each element in the iterable,
+allowing you to specify how to combine the results.
+
+**Options**
+
+The function also allows for some configuration options such as concurrency
+and batching behavior, providing flexibility in how the effects are
+processed.
 
 To import and use `mergeAll` from the "Effect" module:
 
@@ -9,6 +24,24 @@ To import and use `mergeAll` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.mergeAll
+```
+
+**Example**
+
+```ts
+import { Effect } from "effect"
+
+const numbers = [Effect.succeed(1), Effect.succeed(2), Effect.succeed(3)]
+const add = (sum: number, value: number, i: number) => sum + value
+const zero = 0
+
+const program = Effect.gen(function* () {
+  const total = yield* Effect.mergeAll(numbers, zero, add)
+  console.log(total)
+})
+
+Effect.runFork(program)
+// Output: 6
 ```
 
 **Signature**

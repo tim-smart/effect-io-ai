@@ -1,15 +1,27 @@
 # partition
 
-The `partition` function processes an iterable and applies an
-effectful function to each element, categorizing the results into successes
-and failures.
+Processes an iterable and applies an effectful function to each element,
+categorizing the results into successes and failures.
 
-This function returns a tuple where the first part contains all the failures
-and the second part contains all the successes. It's useful when you need to
-separate successful outcomes from failures, allowing you to handle them
-differently. The function allows the entire collection to be processed
-without halting on failures, and failures are collected in a separate list
-while the successes are processed normally.
+**Details**
+
+This function processes each element in the provided iterable by applying an
+effectful function to it. The results are then categorized into two separate
+lists: one for failures and another for successes. This separation allows you
+to handle the two categories differently. Failures are collected in a list
+without interrupting the processing of the remaining elements, so the
+operation continues even if some elements fail. This is particularly useful
+when you need to handle both successful and failed results separately,
+without stopping the entire process on encountering a failure.
+
+**When to Use**
+
+Use this function when you want to process a collection of items and handle
+errors or failures without interrupting the processing of other items. It's
+useful when you need to distinguish between successful and failed results and
+process them separately, for example, when logging errors while continuing to
+work with valid data. The function ensures that failures are captured, while
+successes are processed normally.
 
 To import and use `partition` from the "Effect" module:
 
