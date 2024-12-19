@@ -14,9 +14,10 @@ allowing you to specify how to combine the results.
 
 **Options**
 
-The function also allows for some configuration options such as concurrency
-and batching behavior, providing flexibility in how the effects are
-processed.
+The function also allows you to customize how the effects are handled by
+specifying options such as concurrency, batching, and how finalizers behave.
+These options provide flexibility in running the effects concurrently or
+adjusting other execution details.
 
 To import and use `mergeAll` from the "Effect" module:
 

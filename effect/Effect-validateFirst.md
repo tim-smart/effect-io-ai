@@ -4,6 +4,8 @@ This function is similar to {@link validateAll} but with a key difference: it
 returns the first successful result or all errors if none of the operations
 succeed.
 
+**Details**
+
 This function processes a collection of elements and applies an effectful
 operation to each. Unlike {@link validateAll}, which accumulates both
 successes and failures, `Effect.validateFirst` stops and returns the first

@@ -2,6 +2,8 @@
 
 Creates an effect that dies with the specified error, evaluated lazily.
 
+**Details**
+
 This function allows you to create an effect that will terminate with a fatal error.
 The error is provided as a lazy argument, meaning it will only be evaluated when the effect runs.
 

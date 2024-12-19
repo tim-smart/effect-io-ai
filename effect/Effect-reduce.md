@@ -1,6 +1,6 @@
 # reduce
 
-Combines an `Iterable<A>` using an effectual function `f`, working
+Reduces an `Iterable<A>` using an effectual function `f`, working
 sequentially from left to right.
 
 **Details**
@@ -32,18 +32,22 @@ Effect.reduce
 import { Console, Effect } from "effect"
 
 const processOrder = (id: number) =>
-  Effect.succeed(`Order ${id} processed`).pipe(Effect.tap(Console.log), Effect.delay(500 - id * 100))
+  Effect.succeed({ id, price: 100 * id }).pipe(
+    Effect.tap(() => Console.log(`Order ${id} processed`)),
+    Effect.delay(500 - id * 100)
+  )
 
-const program = Effect.reduce([1, 2, 3, 4], [], (acc: Array<string>, id: number, i: number) =>
-  processOrder(id).pipe(Effect.map((order) => [...acc, order]))
+const program = Effect.reduce([1, 2, 3, 4], 0, (acc, id, i) =>
+  processOrder(id).pipe(Effect.map((order) => acc + order.price))
 )
 
-Effect.runFork(program)
+Effect.runPromise(program).then(console.log)
 // Output:
 // Order 1 processed
 // Order 2 processed
 // Order 3 processed
 // Order 4 processed
+// 1000
 ```
 
 **Signature**

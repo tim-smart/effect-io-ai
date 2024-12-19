@@ -17534,7 +17534,7 @@
     },
     "project": "effect",
     "name": "cachedWithTTL",
-    "description": "Returns an effect that caches its result for a specified {@link Duration},\nknown as \"timeToLive\" (TTL).\n\n**Details**\n\nThis function is used to cache the result of an effect for a specified amount\nof time. This means that the first time the effect is evaluated, its result\nis computed and stored.\n\nIf the effect is evaluated again within the specified `timeToLive`, the\ncached result will be used, avoiding recomputation.\n\nAfter the specified duration has passed, the cache expires, and the effect\nwill be recomputed upon the next evaluation.\n\n**When to Use**\n\nUse this function when you have an effect that involves costly operations or\ncomputations, and you want to avoid repeating them within a short time frame.\n\nIt's ideal for scenarios where the result of an effect doesn't change\nfrequently and can be reused for a specified duration.\n\nBy caching the result, you can improve efficiency and reduce unnecessary\ncomputations, especially in performance-critical applications.",
+    "description": "Returns an effect that caches its result for a specified `Duration`,\nknown as \"timeToLive\" (TTL).\n\n**Details**\n\nThis function is used to cache the result of an effect for a specified amount\nof time. This means that the first time the effect is evaluated, its result\nis computed and stored.\n\nIf the effect is evaluated again within the specified `timeToLive`, the\ncached result will be used, avoiding recomputation.\n\nAfter the specified duration has passed, the cache expires, and the effect\nwill be recomputed upon the next evaluation.\n\n**When to Use**\n\nUse this function when you have an effect that involves costly operations or\ncomputations, and you want to avoid repeating them within a short time frame.\n\nIt's ideal for scenarios where the result of an effect doesn't change\nfrequently and can be reused for a specified duration.\n\nBy caching the result, you can improve efficiency and reduce unnecessary\ncomputations, especially in performance-critical applications.",
     "deprecated": false,
     "examples": [
       "import { Effect, Console } from \"effect\"\n\nlet i = 1\nconst expensiveTask = Effect.promise<string>(() => {\n  console.log(\"expensive task...\")\n  return new Promise((resolve) => {\n    setTimeout(() => {\n      resolve(`result ${i++}`)\n    }, 100)\n  })\n})\n\nconst program = Effect.gen(function* () {\n  const cached = yield* Effect.cachedWithTTL(expensiveTask, \"150 millis\")\n  yield* cached.pipe(Effect.andThen(Console.log))\n  yield* cached.pipe(Effect.andThen(Console.log))\n  yield* Effect.sleep(\"100 millis\")\n  yield* cached.pipe(Effect.andThen(Console.log))\n})\n\nEffect.runFork(program)\n// Output:\n// expensive task...\n// result 1\n// result 1\n// expensive task...\n// result 2"
@@ -17594,7 +17594,7 @@
     },
     "project": "effect",
     "name": "cachedFunction",
-    "description": "Returns a memoized version of a function with effects, reusing results for\nthe same inputs.\n\n**Details**\n\nThis function creates a memoized version of a given function that performs an\neffect. Memoization ensures that once a result is computed for a specific\ninput, it is stored and reused for subsequent calls with the same input,\nreducing the need to recompute the result.\n\nThe function can optionally take an {@link Equivalence} parameter to\ndetermine how inputs are compared for caching purposes.\n\n**When to Use**\n\nUse this function when you have a function that performs an effect and you\nwant to avoid recomputing the result for the same input multiple times.\n\nIt's ideal for functions that produce deterministic results based on their\ninputs, and you want to improve performance by caching the output.\n\nThis is particularly useful in scenarios where the function involves\nexpensive calculations or operations that should be avoided after the first\nexecution with the same parameters.",
+    "description": "Returns a memoized version of a function with effects, reusing results for\nthe same inputs.\n\n**Details**\n\nThis function creates a memoized version of a given function that performs an\neffect. Memoization ensures that once a result is computed for a specific\ninput, it is stored and reused for subsequent calls with the same input,\nreducing the need to recompute the result.\n\nThe function can optionally take an `Equivalence` parameter to\ndetermine how inputs are compared for caching purposes.\n\n**When to Use**\n\nUse this function when you have a function that performs an effect and you\nwant to avoid recomputing the result for the same input multiple times.\n\nIt's ideal for functions that produce deterministic results based on their\ninputs, and you want to improve performance by caching the output.\n\nThis is particularly useful in scenarios where the function involves\nexpensive calculations or operations that should be avoided after the first\nexecution with the same parameters.",
     "deprecated": false,
     "examples": [
       "import { Effect, Random } from \"effect\"\n\nconst program = Effect.gen(function* () {\n  const randomNumber = (n: number) => Random.nextIntBetween(1, n)\n  console.log(\"non-memoized version:\")\n  console.log(yield* randomNumber(10))\n  console.log(yield* randomNumber(10))\n\n  console.log(\"memoized version:\")\n  const memoized = yield* Effect.cachedFunction(randomNumber)\n  console.log(yield* memoized(10))\n  console.log(yield* memoized(10))\n})\n\nEffect.runFork(program)\n// Example Output:\n// non-memoized version:\n// 2\n// 8\n// memoized version:\n// 5\n// 5"
@@ -17680,7 +17680,7 @@
     },
     "project": "effect",
     "name": "allSuccesses",
-    "description": "Evaluates and runs each effect in the iterable, collecting only the\nsuccessful results while discarding failures.\n\n**Details**\n\nThis function function processes an iterable of effects and runs each one. If\nan effect is successful, its result is collected; if it fails, the result is\ndiscarded. This ensures that only successful outcomes are kept.\n\n**Options**\n\nThe function also allows you to customize how the effects are handled by\nspecifying options such as concurrency, batching, and how finalizers behave.\nThese options provide flexibility in running the effects in parallel or\nadjusting other execution details.",
+    "description": "Evaluates and runs each effect in the iterable, collecting only the\nsuccessful results while discarding failures.\n\n**Details**\n\nThis function function processes an iterable of effects and runs each one. If\nan effect is successful, its result is collected; if it fails, the result is\ndiscarded. This ensures that only successful outcomes are kept.\n\n**Options**\n\nThe function also allows you to customize how the effects are handled by\nspecifying options such as concurrency, batching, and how finalizers behave.\nThese options provide flexibility in running the effects concurrently or\nadjusting other execution details.",
     "deprecated": false,
     "examples": [
       "import { Effect } from \"effect\"\n\nconst tasks = [\n  Effect.succeed(1),\n  Effect.fail(\"Error 1\"),\n  Effect.succeed(2),\n  Effect.fail(\"Error 2\")\n]\n\nconst program = Effect.gen(function*() {\n  const successfulResults = yield* Effect.allSuccesses(tasks)\n  console.log(successfulResults)\n})\n\nEffect.runFork(program)\n// Output: [1, 2]\n"
@@ -17700,7 +17700,7 @@
     },
     "project": "effect",
     "name": "dropUntil",
-    "description": "Drops all elements until the effectful predicate returns `true`.\n\n**Details**\n\nThis function processes a collection of elements and uses an effectful\npredicate to determine when to stop dropping elements. It drops elements from\nthe beginning of the collection until the predicate returns `true`.\n\nThe predicate is a function that takes an element and its index in the\ncollection and returns an effect that evaluates to a boolean.\n\nOnce the predicate returns `true`, the remaining elements of the collection\nare returned.\n\n**Note**: The first element for which the predicate returns `true` is also\ndropped.\n\n**When to Use**\n\nThis function allows you to conditionally skip over a part of the collection\nbased on some criteria defined in the predicate.",
+    "description": "Drops elements until the effectful predicate returns `true`.\n\n**Details**\n\nThis function processes a collection of elements and uses an effectful\npredicate to determine when to stop dropping elements. It drops elements from\nthe beginning of the collection until the predicate returns `true`.\n\nThe predicate is a function that takes an element and its index in the\ncollection and returns an effect that evaluates to a boolean.\n\nOnce the predicate returns `true`, the remaining elements of the collection\nare returned.\n\n**Note**: The first element for which the predicate returns `true` is also\ndropped.\n\n**When to Use**\n\nThis function allows you to conditionally skip over a part of the collection\nbased on some criteria defined in the predicate.",
     "deprecated": false,
     "examples": [
       "import { Effect } from \"effect\"\n\nconst numbers = [1, 2, 3, 4, 5, 6]\nconst predicate = (n: number, i: number) => Effect.succeed(n > 3)\n\nconst program = Effect.gen(function*() {\n  const result = yield* Effect.dropUntil(numbers, predicate)\n  console.log(result)\n})\n\nEffect.runFork(program)\n// Output: [5, 6]"
@@ -17720,7 +17720,7 @@
     },
     "project": "effect",
     "name": "dropWhile",
-    "description": "Drops all elements as long as the predicate returns `true`.\n\n**Details**\n\nThis function processes a collection of elements and uses a predicate to\ndecide whether to drop an element.\n\nThe predicate is a function that takes an element and its index, and it\nreturns an effect that evaluates to a boolean.\n\nAs long as the predicate returns `true`, elements will continue to be dropped\nfrom the collection.\n\nOnce the predicate returns `false`, the remaining elements are kept.\n\n**When to Use**\n\nThis function allows you to discard elements from the start of a collection\nbased on a condition, and only keep the rest when the condition no longer\nholds.",
+    "description": "Drops elements as long as the predicate returns `true`.\n\n**Details**\n\nThis function processes a collection of elements and uses a predicate to\ndecide whether to drop an element.\n\nThe predicate is a function that takes an element and its index, and it\nreturns an effect that evaluates to a boolean.\n\nAs long as the predicate returns `true`, elements will continue to be dropped\nfrom the collection.\n\nOnce the predicate returns `false`, the remaining elements are kept.\n\n**When to Use**\n\nThis function allows you to discard elements from the start of a collection\nbased on a condition, and only keep the rest when the condition no longer\nholds.",
     "deprecated": false,
     "examples": [
       "import { Effect } from \"effect\"\n\nconst numbers = [1, 2, 3, 4, 5, 6]\nconst predicate = (n: number, i: number) => Effect.succeed(n <= 3)\n\nconst program = Effect.gen(function*() {\n  const result = yield* Effect.dropWhile(numbers, predicate)\n  console.log(result)\n})\n\nEffect.runFork(program)\n// Output: [4, 5, 6]"
@@ -17728,6 +17728,46 @@
     "since": "2.0.0",
     "category": "Collecting",
     "signature": "export declare const dropWhile: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "Effect.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "takeUntil",
+    "description": "Takes elements from a collection until the effectful predicate returns\n`true`.\n\n**Details**\n\nThis function processes a collection of elements and uses an effectful\npredicate to decide when to stop taking elements. The elements are taken from\nthe beginning of the collection until the predicate returns `true`.\n\nThe predicate is a function that takes an element and its index in the\ncollection, and returns an effect that resolves to a boolean.\n\nOnce the predicate returns `true`, the remaining elements of the collection\nare discarded, and the function stops taking more elements.\n\n**Note**: The first element for which the predicate returns `true` is also\nincluded in the result.\n\n**When to Use**\n\nUse this function when you want to conditionally take elements from a\ncollection based on a dynamic condition. For example, you may want to collect\nnumbers from a list until a certain threshold is reached, or gather items\nuntil a specific condition is met.",
+    "deprecated": false,
+    "examples": [
+      "import { Effect } from \"effect\"\n\nconst numbers = [1, 2, 3, 4, 5, 6]\nconst predicate = (n: number, i: number) => Effect.succeed(n > 3)\n\nconst program = Effect.gen(function*() {\n  const result = yield* Effect.takeUntil(numbers, predicate)\n  console.log(result)\n})\n\nEffect.runFork(program)\n// Output: [ 1, 2, 3, 4 ]"
+    ],
+    "since": "2.0.0",
+    "category": "Collecting",
+    "signature": "export declare const takeUntil: { <A, R, E>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "Effect.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "takeWhile",
+    "description": "Takes elements as long as the predicate returns `true`.\n\n**Details**\n\nThis function processes a collection of elements and uses a predicate to\ndecide whether to take an element.\n\nThe predicate is a function that takes an element and its index, and it\nreturns an effect that evaluates to a boolean.\n\nAs long as the predicate returns `true`, elements will continue to be taken\nfrom the collection.\n\nOnce the predicate returns `false`, the remaining elements are discarded.",
+    "deprecated": false,
+    "examples": [
+      "import { Effect } from \"effect\"\n\nconst numbers = [1, 2, 3, 4, 5, 6]\nconst predicate = (n: number, i: number) => Effect.succeed(n <= 3)\n\nconst program = Effect.gen(function*() {\n  const result = yield* Effect.takeWhile(numbers, predicate)\n  console.log(result)\n})\n\nEffect.runFork(program)\n// Output: [1, 2, 3]"
+    ],
+    "since": "2.0.0",
+    "category": "Collecting",
+    "signature": "export declare const takeWhile: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -17881,7 +17921,7 @@
     },
     "project": "effect",
     "name": "mergeAll",
-    "description": "Merges an `Iterable<Effect<A, E, R>>` to a single effect.\n\n**Details**\n\nThis function takes an iterable of effects and combines them into a single\neffect. It does this by iterating over each effect in the collection and\napplying a function that accumulates results into a \"zero\" value, which\nstarts with an initial value and is updated with each effect's success.\n\nThe provided function `f` is called for each element in the iterable,\nallowing you to specify how to combine the results.\n\n**Options**\n\nThe function also allows for some configuration options such as concurrency\nand batching behavior, providing flexibility in how the effects are\nprocessed.",
+    "description": "Merges an `Iterable<Effect<A, E, R>>` to a single effect.\n\n**Details**\n\nThis function takes an iterable of effects and combines them into a single\neffect. It does this by iterating over each effect in the collection and\napplying a function that accumulates results into a \"zero\" value, which\nstarts with an initial value and is updated with each effect's success.\n\nThe provided function `f` is called for each element in the iterable,\nallowing you to specify how to combine the results.\n\n**Options**\n\nThe function also allows you to customize how the effects are handled by\nspecifying options such as concurrency, batching, and how finalizers behave.\nThese options provide flexibility in running the effects concurrently or\nadjusting other execution details.",
     "deprecated": false,
     "examples": [
       "import { Effect } from \"effect\"\n\nconst numbers = [Effect.succeed(1), Effect.succeed(2), Effect.succeed(3)]\nconst add = (sum: number, value: number, i: number) => sum + value\nconst zero = 0\n\nconst program = Effect.gen(function*() {\n  const total = yield* Effect.mergeAll(numbers, zero, add)\n  console.log(total)\n})\n\nEffect.runFork(program)\n// Output: 6"
@@ -17921,10 +17961,10 @@
     },
     "project": "effect",
     "name": "reduce",
-    "description": "Combines an `Iterable<A>` using an effectual function `f`, working\nsequentially from left to right.\n\n**Details**\n\nThis function takes an iterable and applies a function `f` to each element in\nthe iterable. The function works sequentially, starting with an initial value\n`zero` and then combining it with each element in the collection. The\nprovided function `f` is called for each element in the iterable, allowing\nyou to accumulate a result based on the current value and the element being\nprocessed.\n\n**When to Use**\n\nThe function is often used for operations like summing a collection of\nnumbers or combining results from multiple tasks. It ensures that operations\nare performed one after the other, maintaining the order of the elements.",
+    "description": "Reduces an `Iterable<A>` using an effectual function `f`, working\nsequentially from left to right.\n\n**Details**\n\nThis function takes an iterable and applies a function `f` to each element in\nthe iterable. The function works sequentially, starting with an initial value\n`zero` and then combining it with each element in the collection. The\nprovided function `f` is called for each element in the iterable, allowing\nyou to accumulate a result based on the current value and the element being\nprocessed.\n\n**When to Use**\n\nThe function is often used for operations like summing a collection of\nnumbers or combining results from multiple tasks. It ensures that operations\nare performed one after the other, maintaining the order of the elements.",
     "deprecated": false,
     "examples": [
-      "import { Console, Effect } from \"effect\"\n\nconst processOrder = (id: number) =>\n  Effect.succeed(`Order ${id} processed`)\n    .pipe(Effect.tap(Console.log), Effect.delay(500 - (id * 100)))\n\nconst program = Effect.reduce(\n  [1, 2, 3, 4],\n  [],\n  (acc: Array<string>, id: number, i: number) =>\n    processOrder(id)\n      .pipe(Effect.map((order) => [...acc, order]))\n)\n\nEffect.runFork(program)\n// Output:\n// Order 1 processed\n// Order 2 processed\n// Order 3 processed\n// Order 4 processed"
+      "import { Console, Effect } from \"effect\"\n\nconst processOrder = (id: number) =>\n  Effect.succeed({ id, price: 100 * id })\n    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))\n\nconst program = Effect.reduce(\n  [1, 2, 3, 4],\n  0,\n  (acc, id, i) =>\n    processOrder(id)\n      .pipe(Effect.map((order) => acc + order.price))\n)\n\nEffect.runPromise(program).then(console.log)\n// Output:\n// Order 1 processed\n// Order 2 processed\n// Order 3 processed\n// Order 4 processed\n// 1000"
     ],
     "since": "2.0.0",
     "category": "Collecting",
@@ -17940,46 +17980,12 @@
       ]
     },
     "project": "effect",
-    "name": "reduceEffect",
-    "description": "Reduces an `Iterable<Effect<A, E, R>>` to a single effect.",
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "Collecting",
-    "signature": "export declare const reduceEffect: { <Z, E, R, Eff extends Effect<any, any, any>>(zero: Effect<Z, E, R>, f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z, E, R>(elements: Iterable<Eff>, zero: Effect<Z, E, R>, f: (acc: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Effect",
-      "path": [
-        "src",
-        "Effect.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "reduceRight",
-    "description": "Reduces an `Iterable<A>` using an effectual function `f`, working sequentially from right to left.",
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "Collecting",
-    "signature": "export declare const reduceRight: { <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Effect",
-      "path": [
-        "src",
-        "Effect.ts"
-      ]
-    },
-    "project": "effect",
     "name": "reduceWhile",
-    "description": "Folds over the elements in this chunk from the left, stopping the fold early\nwhen the predicate is not satisfied.",
+    "description": "Reduces an `Iterable<A>` using an effectual function `body`, working\nsequentially from left to right, stopping the process early when the\npredicate `while` is not satisfied.\n\n**Details**\n\nThis function processes a collection of elements, applying a function `body`\nto reduce them to a single value, starting from the first element. It checks\nthe value of the accumulator against a predicate (`while`). If at any point\nthe predicate returns `false`, the reduction stops, and the accumulated\nresult is returned.\n\n**When to Use**\n\nUse this function when you need to reduce a collection of elements, but only\ncontinue the process as long as a certain condition holds true. For example,\nif you want to sum values in a list but stop as soon as the sum exceeds a\ncertain threshold, you can use this function.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nconst processOrder = (id: number) =>\n  Effect.succeed({ id, price: 100 * id })\n    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))\n\nconst program = Effect.reduceWhile(\n  [1, 2, 3, 4],\n  0,\n  {\n    body: (acc, id, i) =>\n      processOrder(id)\n        .pipe(Effect.map((order) => acc + order.price)),\n    while: (acc) => acc < 500\n  }\n)\n\nEffect.runPromise(program).then(console.log)\n// Output:\n// Order 1 processed\n// Order 2 processed\n// Order 3 processed\n// 600"
+    ],
     "since": "2.0.0",
     "category": "Collecting",
     "signature": "export declare const reduceWhile: { <Z, A, E, R>(zero: Z, options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R>; }): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, E, R>(elements: Iterable<A>, zero: Z, options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R>; }): Effect<Z, E, R>; }"
@@ -17994,10 +18000,52 @@
       ]
     },
     "project": "effect",
-    "name": "replicate",
-    "description": "Replicates the given effect `n` times.",
+    "name": "reduceRight",
+    "description": "Reduces an `Iterable<A>` using an effectual function `f`, working\nsequentially from right to left.\n\n**Details**\n\nThis function takes an iterable and applies a function `f` to each element in\nthe iterable. The function works sequentially, starting with an initial value\n`zero` and then combining it with each element in the collection. The\nprovided function `f` is called for each element in the iterable, allowing\nyou to accumulate a result based on the current value and the element being\nprocessed.\n\n**When to Use**\n\nThe function is often used for operations like summing a collection of\nnumbers or combining results from multiple tasks. It ensures that operations\nare performed one after the other, maintaining the order of the elements.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nconst processOrder = (id: number) =>\n  Effect.succeed({ id, price: 100 * id })\n    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))\n\nconst program = Effect.reduceRight(\n  [1, 2, 3, 4],\n  0,\n  (id, acc, i) =>\n    processOrder(id)\n      .pipe(Effect.map((order) => acc + order.price))\n)\n\nEffect.runPromise(program).then(console.log)\n// Output:\n// Order 4 processed\n// Order 3 processed\n// Order 2 processed\n// Order 1 processed\n// 1000"
+    ],
+    "since": "2.0.0",
+    "category": "Collecting",
+    "signature": "export declare const reduceRight: { <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "Effect.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "reduceEffect",
+    "description": "Reduces an `Iterable<Effect<A, E, R>>` to a single effect.\n\n**Details**\n\nThis function processes a collection of effects and combines them into one\nsingle effect. It starts with an initial effect (`zero`) and applies a\nfunction `f` to each element in the collection.\n\n**Options**\n\nThe function also allows you to customize how the effects are handled by\nspecifying options such as concurrency, batching, and how finalizers behave.\nThese options provide flexibility in running the effects concurrently or\nadjusting other execution details.",
+    "deprecated": false,
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nconst processOrder = (id: number) =>\n  Effect.succeed({ id, price: 100 * id })\n    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))\n\nconst program = Effect.reduceEffect(\n  [processOrder(1), processOrder(2), processOrder(3), processOrder(4)],\n  Effect.succeed(0),\n  (acc, order, i) => acc + order.price\n)\n\nEffect.runPromise(program).then(console.log)\n// Output:\n// Order 1 processed\n// Order 2 processed\n// Order 3 processed\n// Order 4 processed\n// 1000"
+    ],
+    "since": "2.0.0",
+    "category": "Collecting",
+    "signature": "export declare const reduceEffect: { <Z, E, R, Eff extends Effect<any, any, any>>(zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z, E, R>(elements: Iterable<Eff>, zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "Effect.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "replicate",
+    "description": "Replicates the given effect `n` times.\n\n**Details**\n\nThis function takes an effect and replicates it a specified number of times\n(`n`). The result is an array of `n` effects, each of which is identical to\nthe original effect.",
+    "deprecated": false,
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nconst task = Effect.succeed(\"Hello, World!\").pipe(\n  Effect.tap(Console.log)\n)\n\nconst program = Effect.gen(function*() {\n  // Replicate the task 3 times\n  const tasks = Effect.replicate(task, 3)\n  for (const t of tasks) {\n    // Run each task\n    yield* t\n  }\n})\n\nEffect.runFork(program)\n// Output:\n// Hello, World!\n// Hello, World!\n// Hello, World!"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "export declare const replicate: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Array<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, n: number): Array<Effect<A, E, R>>; }"
@@ -18013,48 +18061,14 @@
     },
     "project": "effect",
     "name": "replicateEffect",
-    "description": "Performs this effect the specified number of times and collects the\nresults.",
+    "description": "Performs this effect the specified number of times and collects the results.\n\n**Details**\n\nThis function repeats an effect multiple times and collects the results into\nan array. You specify how many times to execute the effect, and it runs that\nmany times, either in sequence or concurrently depending on the provided\noptions.\n\n**Options**\n\nIf the `discard` option is set to `true`, the intermediate results are not\ncollected, and the final result of the operation is `void`.\n\nThe function also allows you to customize how the effects are handled by\nspecifying options such as concurrency, batching, and how finalizers behave.\nThese options provide flexibility in running the effects concurrently or\nadjusting other execution details.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nlet counter = 0\n\nconst task = Effect.sync(() => ++counter).pipe(\n  Effect.tap(() => Console.log(`Task completed`))\n)\n\nconst program = Effect.gen(function*() {\n  // Replicate the task 3 times and collect the results\n  const results = yield* Effect.replicateEffect(task, 3)\n  yield* Console.log(`Results: ${results.join(\", \")}`)\n})\n\nEffect.runFork(program)\n// Output:\n// Task completed\n// Task completed\n// Task completed\n// Results: 1, 2, 3"
+    ],
     "since": "2.0.0",
     "category": "Collecting",
     "signature": "export declare const replicateEffect: { (n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>; (n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<Array<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): Effect<void, E, R>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Effect",
-      "path": [
-        "src",
-        "Effect.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "takeUntil",
-    "description": "Takes elements until the effectual predicate returns true.",
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "Collecting",
-    "signature": "export declare const takeUntil: { <A, R, E>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Effect",
-      "path": [
-        "src",
-        "Effect.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "takeWhile",
-    "description": "Takes all elements so long as the effectual predicate returns true.",
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "Collecting",
-    "signature": "export declare const takeWhile: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -18087,7 +18101,7 @@
     },
     "project": "effect",
     "name": "validateFirst",
-    "description": "This function is similar to {@link validateAll} but with a key difference: it\nreturns the first successful result or all errors if none of the operations\nsucceed.\n\nThis function processes a collection of elements and applies an effectful\noperation to each. Unlike {@link validateAll}, which accumulates both\nsuccesses and failures, `Effect.validateFirst` stops and returns the first\nsuccess it encounters. If no success occurs, it returns all accumulated\nerrors. This can be useful when you are interested in the first successful\nresult and want to avoid processing further once a valid result is found.",
+    "description": "This function is similar to {@link validateAll} but with a key difference: it\nreturns the first successful result or all errors if none of the operations\nsucceed.\n\n**Details**\n\nThis function processes a collection of elements and applies an effectful\noperation to each. Unlike {@link validateAll}, which accumulates both\nsuccesses and failures, `Effect.validateFirst` stops and returns the first\nsuccess it encounters. If no success occurs, it returns all accumulated\nerrors. This can be useful when you are interested in the first successful\nresult and want to avoid processing further once a valid result is found.",
     "deprecated": false,
     "examples": [
       "import { Effect, Console } from \"effect\"\n\n//      ┌─── Effect<number, string[], never>\n//      ▼\nconst program = Effect.validateFirst([1, 2, 3, 4, 5], (n) => {\n  if (n < 4) {\n    return Effect.fail(`${n} is not less that 4`)\n  } else {\n    return Console.log(`item ${n}`).pipe(Effect.as(n))\n  }\n})\n\nEffect.runPromise(program).then(console.log, console.error)\n// Output:\n// item 4\n// 4"
@@ -18205,7 +18219,7 @@
     },
     "project": "effect",
     "name": "failSync",
-    "description": null,
+    "description": "Creates an `Effect` that fails with the specified error, evaluated lazily.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -18223,7 +18237,7 @@
     },
     "project": "effect",
     "name": "failCause",
-    "description": null,
+    "description": "Creates an `Effect` that fails with the specified `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -18241,7 +18255,7 @@
     },
     "project": "effect",
     "name": "failCauseSync",
-    "description": null,
+    "description": "Creates an `Effect` that fails with the specified `Cause`, evaluated lazily.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -18299,7 +18313,7 @@
     },
     "project": "effect",
     "name": "dieSync",
-    "description": "Creates an effect that dies with the specified error, evaluated lazily.\n\nThis function allows you to create an effect that will terminate with a fatal error.\nThe error is provided as a lazy argument, meaning it will only be evaluated when the effect runs.",
+    "description": "Creates an effect that dies with the specified error, evaluated lazily.\n\n**Details**\n\nThis function allows you to create an effect that will terminate with a fatal error.\nThe error is provided as a lazy argument, meaning it will only be evaluated when the effect runs.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -18337,7 +18351,7 @@
     },
     "project": "effect",
     "name": "never",
-    "description": "Returns an effect that will never produce anything. The moral equivalent of\n`while(true) {}`, only without the wasted CPU cycles.",
+    "description": "An effect that that runs indefinitely and never produces any result. The\nmoral equivalent of `while(true) {}`, only without the wasted CPU cycles.\n\n**When to Use**\n\nIt could be useful for long-running background tasks or to simulate waiting\nbehavior without actually consuming resources. This effect is ideal for cases\nwhere you want to keep the program alive or in a certain state without\nperforming any active work.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -18355,11 +18369,11 @@
     },
     "project": "effect",
     "name": "none",
-    "description": "Requires the option produced by this value to be `None`.",
+    "description": "Ensures the `Option` is `None`, returning `void`. Otherwise, raises a\n`NoSuchElementException`.\n\n**Details**\n\nThis function checks if the provided `Option` is `None`. If it is, it returns\nan effect that produces no result (i.e., `void`). If the `Option` is not\n`None` (i.e., it contains a value), the function will raise a\n`NoSuchElementException` error.\n\n**When to Use**\n\nThis is useful when you want to ensure that a certain value is absent (i.e.,\n`None`) before continuing execution, and to handle cases where the value is\nunexpectedly present.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "Creating Effects",
+    "category": null,
     "signature": "export declare const none: <A, E, R>(self: Effect<Option.Option<A>, E, R>) => Effect<void, E | Cause.NoSuchElementException, R>"
   },
   {
@@ -18413,7 +18427,7 @@
     },
     "project": "effect",
     "name": "succeedNone",
-    "description": "Returns an effect which succeeds with `None`.",
+    "description": "Returns an effect which succeeds with `None`.\n\n**When to Use**\n\nUse this function when you need to represent the absence of a value in your\ncode, especially when working with optional data. This can be helpful when\nyou want to indicate that no result is available without throwing an error or\nperforming additional logic.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -21120,7 +21134,7 @@
     },
     "project": "effect",
     "name": "race",
-    "description": "Races two effects and returns the result of the first successful one.\n\n**Details**\n\nThis function takes two effects and runs them concurrently. The first effect\nthat successfully completes will determine the result of the race, and the\nother effect will be interrupted.\n\nIf neither effect succeeds, the function will fail with a {@link Cause}\ncontaining all the errors.\n\n**When to Use**\n\nThis is useful when you want to run two effects concurrently, but only care\nabout the first one to succeed. It is commonly used in cases like timeouts,\nretries, or when you want to optimize for the faster response without\nworrying about the other effect.\n\n**Handling Success or Failure with Either**\n\nIf you want to handle the result of whichever task completes first, whether\nit succeeds or fails, you can use the `Effect.either` function. This function\nwraps the result in an {@link Either} type, allowing you to see if the result\nwas a success (`Right`) or a failure (`Left`).",
+    "description": "Races two effects and returns the result of the first successful one.\n\n**Details**\n\nThis function takes two effects and runs them concurrently. The first effect\nthat successfully completes will determine the result of the race, and the\nother effect will be interrupted.\n\nIf neither effect succeeds, the function will fail with a `Cause`\ncontaining all the errors.\n\n**When to Use**\n\nThis is useful when you want to run two effects concurrently, but only care\nabout the first one to succeed. It is commonly used in cases like timeouts,\nretries, or when you want to optimize for the faster response without\nworrying about the other effect.\n\n**Handling Success or Failure with Either**\n\nIf you want to handle the result of whichever task completes first, whether\nit succeeds or fails, you can use the `Effect.either` function. This function\nwraps the result in an `Either` type, allowing you to see if the result\nwas a success (`Right`) or a failure (`Left`).",
     "deprecated": false,
     "examples": [
       "// Title: Both Tasks Succeed\nimport { Effect, Console } from \"effect\"\n\nconst task1 = Effect.succeed(\"task1\").pipe(\n  Effect.delay(\"200 millis\"),\n  Effect.tap(Console.log(\"task1 done\")),\n  Effect.onInterrupt(() => Console.log(\"task1 interrupted\"))\n)\nconst task2 = Effect.succeed(\"task2\").pipe(\n  Effect.delay(\"100 millis\"),\n  Effect.tap(Console.log(\"task2 done\")),\n  Effect.onInterrupt(() => Console.log(\"task2 interrupted\"))\n)\n\nconst program = Effect.race(task1, task2)\n\nEffect.runFork(program)\n// Output:\n// task1 done\n// task2 interrupted",
@@ -23331,7 +23345,7 @@
     },
     "project": "effect",
     "name": "void",
-    "description": null,
+    "description": "Represents an effect that does nothing and produces no value.\n\n**When to Use**\n\nUse this effect when you need to represent an effect that does nothing.\nThis is useful in scenarios where you need to satisfy an effect-based\ninterface or control program flow without performing any operations. For\nexample, it can be used in situations where you want to return an effect\nfrom a function but do not need to compute or return any result.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -23349,9 +23363,11 @@
     },
     "project": "effect",
     "name": "catch",
-    "description": "Recovers from specified error.",
+    "description": "Recovers from a specified error by catching it and handling it with a provided function.\n\n**Details**\n\nThis function allows you to recover from specific errors that occur during\nthe execution of an effect. It works by catching a specific type of error\n(identified by a discriminator) and then handling it using a provided\nhandler function. The handler can return a new effect that helps recover\nfrom the error, allowing the program to continue. If the error doesn't\nmatch the specified type, the function allows the original effect to\ncontinue as it was.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Console, Effect } from \"effect\"\n\nclass NetworkError {\n  readonly _tag = \"NetworkError\"\n}\nclass ValidationError {\n  readonly _tag = \"ValidationError\"\n}\n\n// Simulate an effect that may fail\nconst task: Effect.Effect<never, NetworkError | ValidationError, never> = Effect.fail(new NetworkError())\n\nconst program = Effect.gen(function*() {\n  const result = yield* Effect.catch(task, \"_tag\", {\n    failure: \"NetworkError\",\n    onFailure: (error) => Effect.succeed(`recovered from error: ${error._tag}`)\n  })\n  console.log(`Result: ${result}`)\n})\n\nEffect.runFork(program)\n// Output: Result: recovered from error: NetworkError"
+    ],
     "since": "2.0.0",
     "category": "Error handling",
     "signature": "export declare const catch: { <N extends keyof E, K extends E[N] & string, E, A1, E1, R1>(discriminator: N, options: { readonly failure: K; readonly onFailure: (error: Extract<E, { [n in N]: K; }>) => Effect<A1, E1, R1>; }): <A, R>(self: Effect<A, E, R>) => Effect<A1 | A, E1 | Exclude<E, { [n in N]: K; }>, R1 | R>; <A, E, R, N extends keyof E, K extends E[N] & string, A1, E1, R1>(self: Effect<A, E, R>, discriminator: N, options: { readonly failure: K; readonly onFailure: (error: Extract<E, { [n in N]: K; }>) => Effect<A1, E1, R1>; }): Effect<A | A1, E1 | Exclude<E, { [n in N]: K; }>, R | R1>; }"
@@ -75189,7 +75205,7 @@
     },
     "project": "effect",
     "name": "getTemplateLiteralRegExp",
-    "description": null,
+    "description": "Generates a regular expression from a `TemplateLiteral` AST node.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -75207,7 +75223,7 @@
     },
     "project": "effect",
     "name": "getTemplateLiteralCapturingRegExp",
-    "description": null,
+    "description": "Generates a regular expression that captures the pattern defined by the given `TemplateLiteral` AST.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",

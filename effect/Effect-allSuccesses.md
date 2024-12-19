@@ -13,7 +13,7 @@ discarded. This ensures that only successful outcomes are kept.
 
 The function also allows you to customize how the effects are handled by
 specifying options such as concurrency, batching, and how finalizers behave.
-These options provide flexibility in running the effects in parallel or
+These options provide flexibility in running the effects concurrently or
 adjusting other execution details.
 
 To import and use `allSuccesses` from the "Effect" module:

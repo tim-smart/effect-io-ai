@@ -10,7 +10,7 @@ effect. Memoization ensures that once a result is computed for a specific
 input, it is stored and reused for subsequent calls with the same input,
 reducing the need to recompute the result.
 
-The function can optionally take an {@link Equivalence} parameter to
+The function can optionally take an `Equivalence` parameter to
 determine how inputs are compared for caching purposes.
 
 **When to Use**

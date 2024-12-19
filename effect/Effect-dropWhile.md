@@ -1,6 +1,6 @@
 # dropWhile
 
-Drops all elements as long as the predicate returns `true`.
+Drops elements as long as the predicate returns `true`.
 
 **Details**
 

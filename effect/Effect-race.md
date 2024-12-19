@@ -8,7 +8,7 @@ This function takes two effects and runs them concurrently. The first effect
 that successfully completes will determine the result of the race, and the
 other effect will be interrupted.
 
-If neither effect succeeds, the function will fail with a {@link Cause}
+If neither effect succeeds, the function will fail with a `Cause`
 containing all the errors.
 
 **When to Use**
@@ -22,7 +22,7 @@ worrying about the other effect.
 
 If you want to handle the result of whichever task completes first, whether
 it succeeds or fails, you can use the `Effect.either` function. This function
-wraps the result in an {@link Either} type, allowing you to see if the result
+wraps the result in an `Either` type, allowing you to see if the result
 was a success (`Right`) or a failure (`Left`).
 
 To import and use `race` from the "Effect" module:

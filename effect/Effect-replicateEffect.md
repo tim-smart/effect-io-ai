@@ -1,7 +1,23 @@
 # replicateEffect
 
-Performs this effect the specified number of times and collects the
-results.
+Performs this effect the specified number of times and collects the results.
+
+**Details**
+
+This function repeats an effect multiple times and collects the results into
+an array. You specify how many times to execute the effect, and it runs that
+many times, either in sequence or concurrently depending on the provided
+options.
+
+**Options**
+
+If the `discard` option is set to `true`, the intermediate results are not
+collected, and the final result of the operation is `void`.
+
+The function also allows you to customize how the effects are handled by
+specifying options such as concurrency, batching, and how finalizers behave.
+These options provide flexibility in running the effects concurrently or
+adjusting other execution details.
 
 To import and use `replicateEffect` from the "Effect" module:
 
@@ -9,6 +25,29 @@ To import and use `replicateEffect` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.replicateEffect
+```
+
+**Example**
+
+```ts
+import { Console, Effect } from "effect"
+
+let counter = 0
+
+const task = Effect.sync(() => ++counter).pipe(Effect.tap(() => Console.log(`Task completed`)))
+
+const program = Effect.gen(function* () {
+  // Replicate the task 3 times and collect the results
+  const results = yield* Effect.replicateEffect(task, 3)
+  yield* Console.log(`Results: ${results.join(", ")}`)
+})
+
+Effect.runFork(program)
+// Output:
+// Task completed
+// Task completed
+// Task completed
+// Results: 1, 2, 3
 ```
 
 **Signature**

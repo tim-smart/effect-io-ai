@@ -1,6 +1,6 @@
 # cachedWithTTL
 
-Returns an effect that caches its result for a specified {@link Duration},
+Returns an effect that caches its result for a specified `Duration`,
 known as "timeToLive" (TTL).
 
 **Details**

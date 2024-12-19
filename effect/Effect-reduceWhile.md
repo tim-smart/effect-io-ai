@@ -1,7 +1,23 @@
 # reduceWhile
 
-Folds over the elements in this chunk from the left, stopping the fold early
-when the predicate is not satisfied.
+Reduces an `Iterable<A>` using an effectual function `body`, working
+sequentially from left to right, stopping the process early when the
+predicate `while` is not satisfied.
+
+**Details**
+
+This function processes a collection of elements, applying a function `body`
+to reduce them to a single value, starting from the first element. It checks
+the value of the accumulator against a predicate (`while`). If at any point
+the predicate returns `false`, the reduction stops, and the accumulated
+result is returned.
+
+**When to Use**
+
+Use this function when you need to reduce a collection of elements, but only
+continue the process as long as a certain condition holds true. For example,
+if you want to sum values in a list but stop as soon as the sum exceeds a
+certain threshold, you can use this function.
 
 To import and use `reduceWhile` from the "Effect" module:
 
@@ -9,6 +25,30 @@ To import and use `reduceWhile` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.reduceWhile
+```
+
+**Example**
+
+```ts
+import { Console, Effect } from "effect"
+
+const processOrder = (id: number) =>
+  Effect.succeed({ id, price: 100 * id }).pipe(
+    Effect.tap(() => Console.log(`Order ${id} processed`)),
+    Effect.delay(500 - id * 100)
+  )
+
+const program = Effect.reduceWhile([1, 2, 3, 4], 0, {
+  body: (acc, id, i) => processOrder(id).pipe(Effect.map((order) => acc + order.price)),
+  while: (acc) => acc < 500
+})
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// Order 1 processed
+// Order 2 processed
+// Order 3 processed
+// 600
 ```
 
 **Signature**

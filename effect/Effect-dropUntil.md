@@ -1,6 +1,6 @@
 # dropUntil
 
-Drops all elements until the effectful predicate returns `true`.
+Drops elements until the effectful predicate returns `true`.
 
 **Details**
 
