@@ -1,8 +1,8 @@
 # cron
 
-Cron schedule that recurs every `minute` that matches the schedule.
+Cron schedule that recurs every interval that matches the schedule.
 
-It triggers at zero second of the minute. Producing the timestamps of the cron window.
+It triggers at the beginning of each cron interval, producing the timestamps of the cron window.
 
 NOTE: `expression` parameter is validated lazily. Must be a valid cron expression.
 
@@ -17,5 +17,8 @@ Schedule.cron
 **Signature**
 
 ```ts
-export declare const cron: (expression: string | Cron.Cron) => Schedule<[number, number]>
+export declare const cron: {
+  (cron: Cron.Cron): Schedule<[number, number]>
+  (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>
+}
 ```

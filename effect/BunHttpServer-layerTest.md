@@ -15,11 +15,7 @@ BunHttpServer.layerTest
 
 ```ts
 export declare const layerTest: Layer.Layer<
-  | Server.HttpServer
-  | Platform.HttpPlatform
-  | Etag.Generator
-  | BunContext.BunContext
-  | HttpClient.HttpClient<HttpClientError, Scope.Scope>,
+  Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient,
   HttpServerError.ServeError,
   never
 >

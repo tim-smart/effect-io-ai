@@ -16,10 +16,10 @@ HttpClient.mapRequest
 export declare const mapRequest: {
   (
     f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest
-  ): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>
+  ): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>
   <E, R>(
-    self: HttpClient<E, R>,
+    self: HttpClient.With<E, R>,
     f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest
-  ): HttpClient<E, R>
+  ): HttpClient.With<E, R>
 }
 ```

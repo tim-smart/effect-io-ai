@@ -1,8 +1,6 @@
 # finite
 
-Ensures that the provided value is a finite number.
-
-This schema filters out non-finite numeric values, allowing only finite numbers to pass through.
+Ensures that the provided value is a finite number (excluding NaN, +Infinity, and -Infinity).
 
 To import and use `finite` from the "Schema" module:
 

@@ -14,7 +14,7 @@ HttpClient.withCookiesRef
 
 ```ts
 export declare const withCookiesRef: {
-  (ref: Ref<Cookies>): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>
-  <E, R>(self: HttpClient<E, R>, ref: Ref<Cookies>): HttpClient<E, R>
+  (ref: Ref<Cookies>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>
+  <E, R>(self: HttpClient.With<E, R>, ref: Ref<Cookies>): HttpClient.With<E, R>
 }
 ```

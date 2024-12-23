@@ -33,7 +33,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient<HttpClientError, Scope>, never, never>"
+    "signature": "export declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>"
   },
   {
     "_tag": "Constant",

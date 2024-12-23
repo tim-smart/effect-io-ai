@@ -141,7 +141,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const prop: <const S extends Vitest.SchemaObj>(name: string, schemas: S, self: (schemas: { [K in keyof S]: Schema.Schema.Type<S[K]>; }, ctx: V.TaskContext<V.RunnerTestCase<{}>> & V.TestContext) => void, timeout?: number | V.TestOptions) => void"
+    "signature": "export declare const prop: <const Arbs extends Vitest.Arbitraries>(name: string, arbitraries: Arbs, self: (properties: { [K in keyof Arbs]: K extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }, ctx: V.TaskContext<V.RunnerTestCase<{}>> & V.TestContext) => void, timeout?: number | (V.TestOptions & { fastCheck?: FC.Parameters<{ [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }>; })) => void"
   },
   {
     "_tag": "Constant",

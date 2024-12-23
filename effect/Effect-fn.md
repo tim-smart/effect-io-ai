@@ -52,5 +52,5 @@ const logExample = Effect.fn("example")(
 **Signature**
 
 ```ts
-export declare const fn: (name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen
+export declare const fn: fn.Gen & fn.NonGen & ((name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen)
 ```

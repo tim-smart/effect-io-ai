@@ -14,7 +14,7 @@ HttpClient.filterStatus
 
 ```ts
 export declare const filterStatus: {
-  (f: (status: number) => boolean): <E, R>(self: HttpClient<E, R>) => HttpClient<E | Error.ResponseError, R>
-  <E, R>(self: HttpClient<E, R>, f: (status: number) => boolean): HttpClient<E | Error.ResponseError, R>
+  (f: (status: number) => boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>
+  <E, R>(self: HttpClient.With<E, R>, f: (status: number) => boolean): HttpClient.With<E | Error.ResponseError, R>
 }
 ```

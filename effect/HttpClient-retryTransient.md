@@ -25,9 +25,9 @@ export declare const retryTransient: {
           readonly times?: number
         }
       | Schedule.Schedule<B, NoInfer<E>, R1>
-  ): <R>(self: HttpClient<E, R>) => HttpClient<E, R1 | R>
+  ): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>
   <E, R, B, R1 = never>(
-    self: HttpClient<E, R>,
+    self: HttpClient.With<E, R>,
     options:
       | {
           readonly while?: Predicate.Predicate<NoInfer<E>>
@@ -35,6 +35,6 @@ export declare const retryTransient: {
           readonly times?: number
         }
       | Schedule.Schedule<B, NoInfer<E>, R1>
-  ): HttpClient<E, R1 | R>
+  ): HttpClient.With<E, R1 | R>
 }
 ```

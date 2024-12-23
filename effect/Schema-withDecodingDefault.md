@@ -15,13 +15,13 @@ Schema.withDecodingDefault
 ```ts
 export declare const withDecodingDefault: {
   <Type>(
-    defaultValue: () => Types.NoInfer<Type>
-  ): <Key extends PropertyKey, Encoded, HasDefault extends boolean, R>(
-    self: PropertySignature<"?:", Type, Key, "?:", Encoded, HasDefault, R>
-  ) => PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, HasDefault, R>
-  <Type, Key extends PropertyKey, Encoded, HasDefault extends boolean, R>(
-    self: PropertySignature<"?:", Type, Key, "?:", Encoded, HasDefault, R>,
-    defaultValue: () => Types.NoInfer<Type>
-  ): PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, HasDefault, R>
+    defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>
+  ): <Key extends PropertyKey, Encoded, R>(
+    self: PropertySignature<"?:", Type, Key, "?:", Encoded, false, R>
+  ) => PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, false, R>
+  <Type, Key extends PropertyKey, Encoded, R>(
+    self: PropertySignature<"?:", Type, Key, "?:", Encoded, false, R>,
+    defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>
+  ): PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, false, R>
 }
 ```

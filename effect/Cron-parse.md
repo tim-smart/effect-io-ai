@@ -17,9 +17,10 @@ import { Cron, Either } from "effect"
 
 // At 04:00 on every day-of-month from 8 through 14.
 assert.deepStrictEqual(
-  Cron.parse("0 4 8-14 * *"),
+  Cron.parse("0 0 4 8-14 * *"),
   Either.right(
     Cron.make({
+      seconds: [0],
       minutes: [0],
       hours: [4],
       days: [8, 9, 10, 11, 12, 13, 14],
@@ -33,5 +34,5 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const parse: (cron: string, tz?: DateTime.TimeZone) => Either.Either<Cron, ParseError>
+export declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Either.Either<Cron, ParseError>
 ```

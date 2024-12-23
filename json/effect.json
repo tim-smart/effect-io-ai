@@ -13171,6 +13171,26 @@
       ]
     },
     "project": "effect",
+    "name": "mergeAll",
+    "description": "Merges any number of `Context`s, returning a new `Context` containing the services of all.",
+    "deprecated": false,
+    "examples": [
+      "import { Context } from \"effect\"\n\nconst Port = Context.GenericTag<{ PORT: number }>(\"Port\")\nconst Timeout = Context.GenericTag<{ TIMEOUT: number }>(\"Timeout\")\nconst Host = Context.GenericTag<{ HOST: string }>(\"Host\")\n\nconst firstContext = Context.make(Port, { PORT: 8080 })\nconst secondContext = Context.make(Timeout, { TIMEOUT: 5000 })\nconst thirdContext = Context.make(Host, { HOST: \"localhost\" })\n\nconst Services = Context.mergeAll(firstContext, secondContext, thirdContext)\n\nassert.deepStrictEqual(Context.get(Services, Port), { PORT: 8080 })\nassert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })\nassert.deepStrictEqual(Context.get(Services, Host), { HOST: \"localhost\" })"
+    ],
+    "since": "3.12.0",
+    "category": null,
+    "signature": "export declare const mergeAll: <T extends Array<unknown>>(...ctxs_0: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Context",
+      "path": [
+        "src",
+        "Context.ts"
+      ]
+    },
+    "project": "effect",
     "name": "pick",
     "description": "Returns a new `Context` that contains only the specified services.",
     "deprecated": false,
@@ -13614,7 +13634,27 @@
     "description": "Parses a cron expression into a `Cron` instance.",
     "deprecated": false,
     "examples": [
-      "import { Cron, Either } from \"effect\"\n\n// At 04:00 on every day-of-month from 8 through 14.\nassert.deepStrictEqual(Cron.parse(\"0 4 8-14 * *\"), Either.right(Cron.make({\n  minutes: [0],\n  hours: [4],\n  days: [8, 9, 10, 11, 12, 13, 14],\n  months: [],\n  weekdays: []\n})))"
+      "import { Cron, Either } from \"effect\"\n\n// At 04:00 on every day-of-month from 8 through 14.\nassert.deepStrictEqual(Cron.parse(\"0 0 4 8-14 * *\"), Either.right(Cron.make({\n  seconds: [0],\n  minutes: [0],\n  hours: [4],\n  days: [8, 9, 10, 11, 12, 13, 14],\n  months: [],\n  weekdays: []\n})))"
+    ],
+    "since": "2.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Cron",
+      "path": [
+        "src",
+        "Cron.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "unsafeParse",
+    "description": "Parses a cron expression into a `Cron` instance.\n\nThrows on failure.",
+    "deprecated": false,
+    "examples": [
+      "import { Cron } from \"effect\"\n\n// At 04:00 on every day-of-month from 8 through 14.\nassert.deepStrictEqual(Cron.unsafeParse(\"0 4 8-14 * *\"), Cron.make({\n  minutes: [0],\n  hours: [4],\n  days: [8, 9, 10, 11, 12, 13, 14],\n  months: [],\n  weekdays: []\n}))"
     ],
     "since": "2.0.0",
     "category": "constructors",
@@ -13676,7 +13716,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export interface Cron extends Pipeable, Equal.Equal, Inspectable {\n  readonly [TypeId]: TypeId\n  readonly tz: Option.Option<DateTime.TimeZone>\n  readonly minutes: ReadonlySet<number>\n  readonly hours: ReadonlySet<number>\n  readonly days: ReadonlySet<number>\n  readonly months: ReadonlySet<number>\n  readonly weekdays: ReadonlySet<number>\n  /** @internal */\n  readonly first: {\n    readonly minute: number\n    readonly hour: number\n    readonly day: number\n    readonly month: number\n    readonly weekday: number\n  }\n  /** @internal */\n  readonly next: {\n    readonly minute: ReadonlyArray<number | undefined>\n    readonly hour: ReadonlyArray<number | undefined>\n    readonly day: ReadonlyArray<number | undefined>\n    readonly month: ReadonlyArray<number | undefined>\n    readonly weekday: ReadonlyArray<number | undefined>\n  }\n}"
+    "signature": "export interface Cron extends Pipeable, Equal.Equal, Inspectable {\n  readonly [TypeId]: TypeId\n  readonly tz: Option.Option<DateTime.TimeZone>\n  readonly seconds: ReadonlySet<number>\n  readonly minutes: ReadonlySet<number>\n  readonly hours: ReadonlySet<number>\n  readonly days: ReadonlySet<number>\n  readonly months: ReadonlySet<number>\n  readonly weekdays: ReadonlySet<number>\n  /** @internal */\n  readonly first: {\n    readonly second: number\n    readonly minute: number\n    readonly hour: number\n    readonly day: number\n    readonly month: number\n    readonly weekday: number\n  }\n  /** @internal */\n  readonly next: {\n    readonly second: ReadonlyArray<number | undefined>\n    readonly minute: ReadonlyArray<number | undefined>\n    readonly hour: ReadonlyArray<number | undefined>\n    readonly day: ReadonlyArray<number | undefined>\n    readonly month: ReadonlyArray<number | undefined>\n    readonly weekday: ReadonlyArray<number | undefined>\n  }\n}"
   },
   {
     "_tag": "Interface",
@@ -23335,6 +23375,27 @@
     "signature": "export declare const Service: <Self>() => { <const Key extends string, const Make extends { readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; }>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; }"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "Effect",
+      "path": [
+        "src",
+        "Effect.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "fn",
+    "description": "Creates a function that returns an Effect which is automatically traced with a span pointing to the call site.\n\nThe function can be created both using a generator function that can yield effects or using a normal function.\n\n`Effect.fn` also acts as a `pipe` function, allowing you to create a pipeline after the function definition.",
+    "deprecated": false,
+    "examples": [
+      "// Title: Creating a traced function with a generator function\nimport { Effect } from \"effect\"\n\nconst logExample = Effect.fn(\"logExample\")(\n  function*<N extends number>(n: N) {\n    yield* Effect.annotateCurrentSpan(\"n\", n)\n    yield* Effect.logInfo(`got: ${n}`)\n    yield* Effect.fail(new Error())\n  }\n)\n\nEffect.runFork(\n  // This location is printed in the stack trace of the following `Effect.logError`\n  logExample(100).pipe(\n    Effect.catchAllCause(Effect.logError)\n  )\n)",
+      "// Title: Creating a traced function with a pipeline\nimport { Effect } from \"effect\"\n\nconst logExample = Effect.fn(\"example\")(\n  function* <N extends number>(n: N) {\n    yield* Effect.annotateCurrentSpan(\"n\", n)\n    yield* Effect.logInfo(`got: ${n}`)\n    yield* Effect.fail(new Error())\n  },\n  // Add a delay to the effect\n  Effect.delay(\"1 second\")\n)"
+    ],
+    "since": "3.11.0",
+    "category": "function",
+    "signature": "export declare const fn: fn.Gen & fn.NonGen & ((name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen)"
+  },
+  {
     "_tag": "Export",
     "module": {
       "name": "Effect",
@@ -23481,14 +23542,13 @@
       ]
     },
     "project": "effect",
-    "name": "fn",
-    "description": "Creates a function that returns an Effect which is automatically traced with a span pointing to the call site.\n\nThe function can be created both using a generator function that can yield effects or using a normal function.\n\n`Effect.fn` also acts as a `pipe` function, allowing you to create a pipeline after the function definition.",
+    "name": "fnUntraced",
+    "description": "Creates a function that returns an Effect.\n\nThe function can be created using a generator function that can yield\neffects.\n\n`Effect.fnUntraced` also acts as a `pipe` function, allowing you to create a pipeline after the function definition.",
     "deprecated": false,
     "examples": [
-      "// Title: Creating a traced function with a generator function\nimport { Effect } from \"effect\"\n\nconst logExample = Effect.fn(\"logExample\")(\n  function*<N extends number>(n: N) {\n    yield* Effect.annotateCurrentSpan(\"n\", n)\n    yield* Effect.logInfo(`got: ${n}`)\n    yield* Effect.fail(new Error())\n  }\n)\n\nEffect.runFork(\n  // This location is printed in the stack trace of the following `Effect.logError`\n  logExample(100).pipe(\n    Effect.catchAllCause(Effect.logError)\n  )\n)",
-      "// Title: Creating a traced function with a pipeline\nimport { Effect } from \"effect\"\n\nconst logExample = Effect.fn(\"example\")(\n  function* <N extends number>(n: N) {\n    yield* Effect.annotateCurrentSpan(\"n\", n)\n    yield* Effect.logInfo(`got: ${n}`)\n    yield* Effect.fail(new Error())\n  },\n  // Add a delay to the effect\n  Effect.delay(\"1 second\")\n)"
+      "// Title: Creating a traced function with a generator function\nimport { Effect } from \"effect\"\n\nconst logExample = Effect.fnUntraced(function*<N extends number>(n: N) {\n  yield* Effect.annotateCurrentSpan(\"n\", n)\n  yield* Effect.logInfo(`got: ${n}`)\n  yield* Effect.fail(new Error())\n})\n\nEffect.runFork(logExample(100))"
     ],
-    "since": "3.11.0",
+    "since": "3.12.0",
     "category": "function",
     "signature": null
   },
@@ -24865,6 +24925,60 @@
     "signature": "export declare const isDecodeException: (u: unknown) => u is DecodeException"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "EncodeExceptionTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "symbols",
+    "signature": "export declare const EncodeExceptionTypeId: typeof EncodeExceptionTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "EncodeException",
+    "description": "Creates a checked exception which occurs when encoding fails.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "errors",
+    "signature": "export declare const EncodeException: (input: string, message?: string) => EncodeException"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "isEncodeException",
+    "description": "Returns `true` if the specified value is an `Exception`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "refinements",
+    "signature": "export declare const isEncodeException: (u: unknown) => u is EncodeException"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "Encoding",
@@ -25027,6 +25141,42 @@
     "signature": null
   },
   {
+    "_tag": "Function",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "encodeUriComponent",
+    "description": "Encodes a UTF-8 `string` into a URI component `string`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "encoding",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "decodeUriComponent",
+    "description": "Decodes a URI component `string` into a UTF-8 `string`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "decoding",
+    "signature": null
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "Encoding",
@@ -25045,6 +25195,24 @@
     "signature": "export interface DecodeException {\n  readonly _tag: \"DecodeException\"\n  readonly [DecodeExceptionTypeId]: DecodeExceptionTypeId\n  readonly input: string\n  readonly message?: string\n}"
   },
   {
+    "_tag": "Interface",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "EncodeException",
+    "description": "Represents a checked exception which occurs when encoding fails.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "models",
+    "signature": "export interface EncodeException {\n  readonly _tag: \"EncodeException\"\n  readonly [EncodeExceptionTypeId]: EncodeExceptionTypeId\n  readonly input: string\n  readonly message?: string\n}"
+  },
+  {
     "_tag": "TypeAlias",
     "module": {
       "name": "Encoding",
@@ -25061,6 +25229,24 @@
     "since": "2.0.0",
     "category": "symbols",
     "signature": "export type DecodeExceptionTypeId = typeof DecodeExceptionTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Encoding",
+      "path": [
+        "src",
+        "Encoding.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "EncodeExceptionTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "symbols",
+    "signature": "export type EncodeExceptionTypeId = typeof EncodeExceptionTypeId"
   },
   {
     "_tag": "Constant",
@@ -61885,12 +62071,12 @@
     },
     "project": "effect",
     "name": "cron",
-    "description": "Cron schedule that recurs every `minute` that matches the schedule.\n\nIt triggers at zero second of the minute. Producing the timestamps of the cron window.\n\nNOTE: `expression` parameter is validated lazily. Must be a valid cron expression.",
+    "description": "Cron schedule that recurs every interval that matches the schedule.\n\nIt triggers at the beginning of each cron interval, producing the timestamps of the cron window.\n\nNOTE: `expression` parameter is validated lazily. Must be a valid cron expression.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
-    "signature": "export declare const cron: (expression: string | Cron.Cron) => Schedule<[number, number]>"
+    "signature": "export declare const cron: { (cron: Cron.Cron): Schedule<[number, number]>; (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>; }"
   },
   {
     "_tag": "Constant",
@@ -64476,6 +64662,24 @@
       ]
     },
     "project": "effect",
+    "name": "DateTimeUtcFromDate",
+    "description": "Defines a schema that attempts to convert a `Date` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "DateTime.Utc transformations",
+    "signature": "export declare class DateTimeUtcFromDate"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "DateTimeUtcFromNumber",
     "description": "Defines a schema that attempts to convert a `number` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.",
     "deprecated": false,
@@ -65584,7 +65788,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "PropertySignature",
-    "signature": "export declare const withDecodingDefault: { <Type>(defaultValue: () => Types.NoInfer<Type>): <Key extends PropertyKey, Encoded, HasDefault extends boolean, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, HasDefault, R>) => PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, HasDefault, R>; <Type, Key extends PropertyKey, Encoded, HasDefault extends boolean, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, HasDefault, R>, defaultValue: () => Types.NoInfer<Type>): PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, HasDefault, R>; }"
+    "signature": "export declare const withDecodingDefault: { <Type>(defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>): <Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, false, R>) => PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, false, R>; <Type, Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, false, R>, defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>): PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, false, R>; }"
   },
   {
     "_tag": "Constant",
@@ -65602,7 +65806,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "PropertySignature",
-    "signature": "export declare const withDefaults: { <Type>(defaults: { constructor: () => Types.NoInfer<Exclude<Type, undefined>>; decoding: () => Types.NoInfer<Type>; }): <Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, boolean, R>) => PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, true, R>; <Type, Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, boolean, R>, defaults: { constructor: () => Types.NoInfer<Exclude<Type, undefined>>; decoding: () => Types.NoInfer<Type>; }): PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, true, R>; }"
+    "signature": "export declare const withDefaults: { <Type>(defaults: { constructor: () => Types.NoInfer<Exclude<Type, undefined>>; decoding: () => Types.NoInfer<Exclude<Type, undefined>>; }): <Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, boolean, R>) => PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, true, R>; <Type, Key extends PropertyKey, Encoded, R>(self: PropertySignature<\"?:\", Type, Key, \"?:\", Encoded, boolean, R>, defaults: { constructor: () => Types.NoInfer<Exclude<Type, undefined>>; decoding: () => Types.NoInfer<Exclude<Type, undefined>>; }): PropertySignature<\":\", Exclude<Type, undefined>, Key, \"?:\", Encoded, true, R>; }"
   },
   {
     "_tag": "Constant",
@@ -66520,6 +66724,24 @@
       ]
     },
     "project": "effect",
+    "name": "NonNegativeInt",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.10",
+    "category": "number constructors",
+    "signature": "export declare const NonNegativeInt: refine<number, Schema<number, number, never>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "LessThanDurationSchemaId",
     "description": null,
     "deprecated": false,
@@ -66628,6 +66850,24 @@
       ]
     },
     "project": "effect",
+    "name": "Uint8",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.10",
+    "category": "number constructors",
+    "signature": "export declare const Uint8: filter<Schema<number, number, never>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Uint8ArrayFromBase64",
     "description": "Decodes a base64 (RFC4648) encoded string into a `Uint8Array`.",
     "deprecated": false,
@@ -66725,6 +66965,26 @@
     "since": "3.10.0",
     "category": "string transformations",
     "signature": "export declare const StringFromHex: Schema<string, string, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "StringFromUriComponent",
+    "description": "Decodes a URI component encoded string into a UTF-8 string.\nCan be used to store data in a URL.",
+    "deprecated": false,
+    "examples": [
+      "import { Schema } from \"effect\"\n\nconst PaginationSchema = Schema.Struct({\n  maxItemPerPage: Schema.Number,\n  page: Schema.Number\n})\n\nconst UrlSchema = Schema.compose(Schema.StringFromUriComponent, Schema.parseJson(PaginationSchema))\n\nconsole.log(Schema.encodeSync(UrlSchema)({ maxItemPerPage: 10, page: 1 }))\n// Output: %7B%22maxItemPerPage%22%3A10%2C%22page%22%3A1%7D"
+    ],
+    "since": "3.12.0",
+    "category": "string transformations",
+    "signature": "export declare const StringFromUriComponent: transformOrFail<SchemaClass<string, string, never>, typeof String$, never>"
   },
   {
     "_tag": "Constant",
@@ -69111,7 +69371,7 @@
     },
     "project": "effect",
     "name": "finite",
-    "description": "Ensures that the provided value is a finite number.\n\nThis schema filters out non-finite numeric values, allowing only finite numbers to pass through.",
+    "description": "Ensures that the provided value is a finite number (excluding NaN, +Infinity, and -Infinity).",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -69183,7 +69443,7 @@
     },
     "project": "effect",
     "name": "int",
-    "description": null,
+    "description": "Ensures that the provided value is an integer number (excluding NaN, +Infinity, and -Infinity).",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -69782,6 +70042,24 @@
     "examples": [],
     "since": "3.10.0",
     "category": "ReadonlyArray transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "headNonEmpty",
+    "description": "Get the first element of a `NonEmptyReadonlyArray`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "NonEmptyReadonlyArray transformations",
     "signature": null
   },
   {
@@ -85824,7 +86102,7 @@
     "description": "Creates a single-valued stream from a scoped resource.",
     "deprecated": false,
     "examples": [
-      "import { Console, Effect, Stream } from \"effect\"\n\n// Creating a single-valued stream from a scoped resource\nconst stream = Stream.scoped(\n  Effect.acquireUseRelease(\n    Console.log(\"acquire\"),\n    () => Console.log(\"use\"),\n    () => Console.log(\"release\")\n  )\n)\n\n// Effect.runPromise(Stream.runCollect(stream)).then(console.log)\n// acquire\n// use\n// release\n// { _id: 'Chunk', values: [ undefined ] }"
+      "import { Console, Effect, Stream } from \"effect\"\n\n// Creating a single-valued stream from a scoped resource\nconst stream = Stream.scoped(\n Effect.acquireRelease(\n   Console.log(\"acquire\"),\n   () => Console.log(\"release\")\n )\n).pipe(\n Stream.flatMap(() => Console.log(\"use\"))\n)\n\n// Effect.runPromise(Stream.runCollect(stream)).then(console.log)\n// acquire\n// use\n// release\n// { _id: 'Chunk', values: [ undefined ] }"
     ],
     "since": "2.0.0",
     "category": "constructors",
@@ -95445,6 +95723,42 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "export declare const tracerWith: <A, E, R>(f: (tracer: Tracer) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "DisablePropagation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "annotations",
+    "signature": "export declare const DisablePropagation: Context.Reference<DisablePropagation, boolean>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tracer",
+      "path": [
+        "src",
+        "Tracer.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "DisablePropagation",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "annotations",
+    "signature": "export interface DisablePropagation {\n  readonly _: unique symbol\n}"
   },
   {
     "_tag": "Interface",

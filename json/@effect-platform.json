@@ -1707,7 +1707,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<HttpClient<HttpClientError, Scope>, never, never>"
+    "signature": "export declare const layer: Layer.Layer<HttpClient, never, never>"
   },
   {
     "_tag": "Class",
@@ -5813,7 +5813,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const HttpClient: Context.Tag<HttpClient<Error.HttpClientError, Scope.Scope>, HttpClient<Error.HttpClientError, Scope.Scope>>"
+    "signature": "export declare const HttpClient: Context.Tag<HttpClient, HttpClient>"
   },
   {
     "_tag": "Constant",
@@ -5975,7 +5975,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const catchAll: { <E, E2, R2>(f: (e: E) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <R>(self: HttpClient<E, R>) => HttpClient<E2, R2 | R>; <E, R, A2, E2, R2>(self: HttpClient<E, R>, f: (e: E) => Effect.Effect<A2, E2, R2>): HttpClient<E2, R | R2>; }"
+    "signature": "export declare const catchAll: { <E, E2, R2>(f: (e: E) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E2, R2 | R>; <E, R, A2, E2, R2>(self: HttpClient.With<E, R>, f: (e: E) => Effect.Effect<A2, E2, R2>): HttpClient.With<E2, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -5993,7 +5993,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const catchTag: { <K extends E extends { _tag: string; } ? E[\"_tag\"] : never, E, E1, R1>(tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): <R>(self: HttpClient<E, R>) => HttpClient<E1 | Exclude<E, { _tag: K; }>, R1 | R>; <R, E, K extends E extends { _tag: string; } ? E[\"_tag\"] : never, R1, E1>(self: HttpClient<E, R>, tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient<E1 | Exclude<E, { _tag: K; }>, R1 | R>; }"
+    "signature": "export declare const catchTag: { <K extends E extends { _tag: string; } ? E[\"_tag\"] : never, E, E1, R1>(tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E1 | Exclude<E, { _tag: K; }>, R1 | R>; <R, E, K extends E extends { _tag: string; } ? E[\"_tag\"] : never, R1, E1>(self: HttpClient.With<E, R>, tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E1 | Exclude<E, { _tag: K; }>, R1 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -6011,7 +6011,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const catchTags: { <E, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(cases: Cases): <R>(self: HttpClient<E, R>) => HttpClient<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; <E extends { _tag: string; }, R, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(self: HttpClient<E, R>, cases: Cases): HttpClient<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; }"
+    "signature": "export declare const catchTags: { <E, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(cases: Cases): <R>(self: HttpClient.With<E, R>) => HttpClient.With<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; <E extends { _tag: string; }, R, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(self: HttpClient.With<E, R>, cases: Cases): HttpClient.With<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; }"
   },
   {
     "_tag": "Constant",
@@ -6029,7 +6029,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "filters",
-    "signature": "export declare const filterOrElse: { <E2, R2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <E, R>(self: HttpClient<E, R>) => HttpClient<E2 | E, R2 | R>; <E, R, E2, R2>(self: HttpClient<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): HttpClient<E2 | E, R2 | R>; }"
+    "signature": "export declare const filterOrElse: { <E2, R2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R2 | R>; <E, R, E2, R2>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): HttpClient.With<E2 | E, R2 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -6047,7 +6047,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "filters",
-    "signature": "export declare const filterOrFail: { <E2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): <E, R>(self: HttpClient<E, R>) => HttpClient<E2 | E, R>; <E, R, E2>(self: HttpClient<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): HttpClient<E2 | E, R>; }"
+    "signature": "export declare const filterOrFail: { <E2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R>; <E, R, E2>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): HttpClient.With<E2 | E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6065,7 +6065,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "filters",
-    "signature": "export declare const filterStatus: { (f: (status: number) => boolean): <E, R>(self: HttpClient<E, R>) => HttpClient<E | Error.ResponseError, R>; <E, R>(self: HttpClient<E, R>, f: (status: number) => boolean): HttpClient<E | Error.ResponseError, R>; }"
+    "signature": "export declare const filterStatus: { (f: (status: number) => boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>; <E, R>(self: HttpClient.With<E, R>, f: (status: number) => boolean): HttpClient.With<E | Error.ResponseError, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6083,7 +6083,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "filters",
-    "signature": "export declare const filterStatusOk: <E, R>(self: HttpClient<E, R>) => HttpClient<E | Error.ResponseError, R>"
+    "signature": "export declare const filterStatusOk: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>"
   },
   {
     "_tag": "Constant",
@@ -6101,7 +6101,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const makeWith: <E2, R2, E, R>(postprocess: (request: Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>, preprocess: HttpClient.Preprocess<E2, R2>) => HttpClient<E, R>"
+    "signature": "export declare const makeWith: <E2, R2, E, R>(postprocess: (request: Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>, preprocess: HttpClient.Preprocess<E2, R2>) => HttpClient.With<E, R>"
   },
   {
     "_tag": "Constant",
@@ -6137,7 +6137,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const transform: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient<E, R>) => HttpClient<E | E1, R | R1>; <E, R, E1, R1>(self: HttpClient<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient<E | E1, R | R1>; }"
+    "signature": "export declare const transform: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient.With<E, R>) => HttpClient.With<E | E1, R | R1>; <E, R, E1, R1>(self: HttpClient.With<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E | E1, R | R1>; }"
   },
   {
     "_tag": "Constant",
@@ -6155,7 +6155,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const transformResponse: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient<E, R>) => HttpClient<E1, R1>; <E, R, E1, R1>(self: HttpClient<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient<E1, R1>; }"
+    "signature": "export declare const transformResponse: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient.With<E, R>) => HttpClient.With<E1, R1>; <E, R, E1, R1>(self: HttpClient.With<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E1, R1>; }"
   },
   {
     "_tag": "Constant",
@@ -6173,7 +6173,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const mapRequest: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>; <E, R>(self: HttpClient<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient<E, R>; }"
+    "signature": "export declare const mapRequest: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient.With<E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6191,7 +6191,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const mapRequestEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient<E, R>) => HttpClient<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient<E | E2, R | R2>; }"
+    "signature": "export declare const mapRequestEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient.With<E | E2, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -6209,7 +6209,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const mapRequestInput: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>; <E, R>(self: HttpClient<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient<E, R>; }"
+    "signature": "export declare const mapRequestInput: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient.With<E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6227,7 +6227,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const mapRequestInputEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient<E, R>) => HttpClient<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient<E | E2, R | R2>; }"
+    "signature": "export declare const mapRequestInputEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient.With<E | E2, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -6245,7 +6245,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const retry: { <E, O extends Effect.Retry.Options<E>>(options: O): <R>(self: HttpClient<E, R>) => Retry.Return<R, E, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient<E, R>) => HttpClient<E, R1 | R>; <E, R, O extends Effect.Retry.Options<E>>(self: HttpClient<E, R>, options: O): Retry.Return<R, E, O>; <E, R, B, R1>(self: HttpClient<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient<E, R1 | R>; }"
+    "signature": "export declare const retry: { <E, O extends Effect.Retry.Options<E>>(options: O): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, O extends Effect.Retry.Options<E>>(self: HttpClient.With<E, R>, options: O): Retry.Return<R, E, O>; <E, R, B, R1>(self: HttpClient.With<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient.With<E, R1 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -6263,7 +6263,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const retryTransient: { <B, E, R1 = never>(options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient<E, R>) => HttpClient<E, R1 | R>; <E, R, B, R1 = never>(self: HttpClient<E, R>, options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): HttpClient<E, R1 | R>; }"
+    "signature": "export declare const retryTransient: { <B, E, R1 = never>(options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never>(self: HttpClient.With<E, R>, options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): HttpClient.With<E, R1 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -6281,7 +6281,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const tap: { <_, E2, R2>(f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient<E, R>) => HttpClient<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient<E, R>, f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): HttpClient<E | E2, R | R2>; }"
+    "signature": "export declare const tap: { <_, E2, R2>(f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -6299,7 +6299,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping & sequencing",
-    "signature": "export declare const tapRequest: { <_, E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient<E, R>) => HttpClient<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): HttpClient<E | E2, R | R2>; }"
+    "signature": "export declare const tapRequest: { <_, E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -6317,7 +6317,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "cookies",
-    "signature": "export declare const withCookiesRef: { (ref: Ref<Cookies>): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>; <E, R>(self: HttpClient<E, R>, ref: Ref<Cookies>): HttpClient<E, R>; }"
+    "signature": "export declare const withCookiesRef: { (ref: Ref<Cookies>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, ref: Ref<Cookies>): HttpClient.With<E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6335,7 +6335,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "redirects",
-    "signature": "export declare const followRedirects: { (maxRedirects?: number | undefined): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>; <E, R>(self: HttpClient<E, R>, maxRedirects?: number | undefined): HttpClient<E, R>; }"
+    "signature": "export declare const followRedirects: { (maxRedirects?: number | undefined): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, maxRedirects?: number | undefined): HttpClient.With<E, R>; }"
   },
   {
     "_tag": "Constant",
@@ -6443,7 +6443,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface HttpClient<E = Error.HttpClientError, R = Scope.Scope> extends Pipeable, Inspectable {\n  readonly [TypeId]: TypeId\n  readonly execute: (request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n\n  readonly get: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoBody\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly head: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoBody\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly post: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoUrl\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly patch: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoUrl\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly put: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoUrl\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly del: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoUrl\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  readonly options: (\n    url: string | URL,\n    options?: ClientRequest.Options.NoUrl\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n}"
+    "signature": "export interface HttpClient extends HttpClient.With<Error.HttpClientError, Scope.Scope> {}"
   },
   {
     "_tag": "TypeAlias",
@@ -9377,7 +9377,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerTestClient: Layer.Layer<Client.HttpClient<HttpClientError, Scope.Scope>, never, HttpServer | Client.HttpClient<HttpClientError, Scope.Scope>>"
+    "signature": "export declare const layerTestClient: Layer.Layer<Client.HttpClient, never, HttpServer | Client.HttpClient>"
   },
   {
     "_tag": "Constant",

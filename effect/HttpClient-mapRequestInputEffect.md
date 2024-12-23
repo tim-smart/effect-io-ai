@@ -16,10 +16,10 @@ HttpClient.mapRequestInputEffect
 export declare const mapRequestInputEffect: {
   <E2, R2>(
     f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>
-  ): <E, R>(self: HttpClient<E, R>) => HttpClient<E | E2, R | R2>
+  ): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>
   <E, R, E2, R2>(
-    self: HttpClient<E, R>,
+    self: HttpClient.With<E, R>,
     f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>
-  ): HttpClient<E | E2, R | R2>
+  ): HttpClient.With<E | E2, R | R2>
 }
 ```

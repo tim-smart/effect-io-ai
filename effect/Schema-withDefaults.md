@@ -16,13 +16,16 @@ Schema.withDefaults
 export declare const withDefaults: {
   <Type>(defaults: {
     constructor: () => Types.NoInfer<Exclude<Type, undefined>>
-    decoding: () => Types.NoInfer<Type>
+    decoding: () => Types.NoInfer<Exclude<Type, undefined>>
   }): <Key extends PropertyKey, Encoded, R>(
     self: PropertySignature<"?:", Type, Key, "?:", Encoded, boolean, R>
   ) => PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, true, R>
   <Type, Key extends PropertyKey, Encoded, R>(
     self: PropertySignature<"?:", Type, Key, "?:", Encoded, boolean, R>,
-    defaults: { constructor: () => Types.NoInfer<Exclude<Type, undefined>>; decoding: () => Types.NoInfer<Type> }
+    defaults: {
+      constructor: () => Types.NoInfer<Exclude<Type, undefined>>
+      decoding: () => Types.NoInfer<Exclude<Type, undefined>>
+    }
   ): PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, true, R>
 }
 ```
