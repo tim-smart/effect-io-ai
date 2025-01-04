@@ -50,7 +50,7 @@ const program = Effect.matchCause(task, {
     `succeeded with ${value} value`
 })
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output: "Die: Uh oh!"
 ```
 

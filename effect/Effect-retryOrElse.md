@@ -54,7 +54,7 @@ const repeated = Effect.retryOrElse(
   () => Console.log("orElse").pipe(Effect.as("default value"))
 )
 
-Effect.runPromise(repeated).then(console.log)
+// Effect.runPromise(repeated).then(console.log)
 // Output:
 // failure
 // failure

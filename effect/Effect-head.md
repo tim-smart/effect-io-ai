@@ -30,7 +30,7 @@ const program = Effect.gen(function* () {
   console.log(firstElement)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: 1
 ```
 

@@ -1,11 +1,12 @@
 # iterate
 
-Repeatedly updates a state through an effectful operation, running the `body`
-effect to update the state in each iteration. It continues iterating as long
-as the `while` condition evaluates to `true`.
+Repeatedly updates a state through an effectful operation until a condition
+is no longer met.
 
-This function works like a `while` loop in JavaScript but with effectful
-operations:
+**Details**
+
+This function provides a way to implement effectful loops, similar to a
+`while` loop in JavaScript.
 
 ```ts
 let result = initial
@@ -16,6 +17,21 @@ while (options.while(result)) {
 
 return result
 ```
+
+It starts with an initial state, checks a
+condition (`while`), and executes a body operation to update the state if the
+condition evaluates to `true`. The process repeats until the condition
+returns `false`.
+
+The state is passed between iterations, allowing the body operation to modify
+it dynamically. The final state after the loop ends is returned as the result
+of the effect.
+
+**When to Use**
+
+This is particularly useful for scenarios where looping logic involves
+asynchronous or side-effectful operations, such as polling or iterative
+computations that depend on external factors.
 
 To import and use `iterate` from the "Effect" module:
 
@@ -42,7 +58,7 @@ const result = Effect.iterate(
   }
 )
 
-Effect.runPromise(result).then(console.log)
+// Effect.runPromise(result).then(console.log)
 // Output: 6
 ```
 

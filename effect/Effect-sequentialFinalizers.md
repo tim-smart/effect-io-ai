@@ -1,10 +1,15 @@
 # sequentialFinalizers
 
-Returns a new scoped workflow that runs finalizers added to the scope of
-this workflow sequentially in the reverse of the order in which they were
-added. Note that finalizers are run sequentially by default so this only
-has meaning if used within a scope where finalizers are being run in
-parallel.
+Ensures that finalizers are run sequentially in reverse order of their
+addition.
+
+**Details**
+
+This function modifies the behavior of finalizers within a scoped workflow to
+ensure they are run sequentially in reverse order when the scope is closed.
+
+By default, finalizers are executed sequentially, so this only changes the
+behavior if the scope is configured to run finalizers concurrently.
 
 To import and use `sequentialFinalizers` from the "Effect" module:
 

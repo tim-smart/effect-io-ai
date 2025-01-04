@@ -1,6 +1,13 @@
 # labelMetrics
 
-Tags each metric in this effect with the specific tag.
+Adds labels to metrics within an effect using `MetricLabel` objects.
+
+**Details**
+
+This function allows you to label metrics using `MetricLabel` objects. Labels
+help add structured metadata to metrics for categorization and filtering in
+monitoring systems. The provided labels will apply to all metrics within the
+effect's execution.
 
 To import and use `labelMetrics` from the "Effect" module:
 

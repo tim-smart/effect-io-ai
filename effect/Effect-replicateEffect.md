@@ -42,7 +42,7 @@ const program = Effect.gen(function* () {
   yield* Console.log(`Results: ${results.join(", ")}`)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // Task completed
 // Task completed

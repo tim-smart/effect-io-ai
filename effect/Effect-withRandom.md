@@ -1,7 +1,7 @@
 # withRandom
 
-Executes the specified workflow with the specified implementation of the
-random service.
+Executes the specified effect with the specified implementation of the
+`Random` service.
 
 To import and use `withRandom` from the "Effect" module:
 

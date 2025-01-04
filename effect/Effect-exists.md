@@ -42,7 +42,7 @@ const program = Effect.gen(function* () {
   console.log(hasLargeNumber)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: true
 ```
 

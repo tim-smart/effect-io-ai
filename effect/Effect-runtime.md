@@ -1,8 +1,12 @@
 # runtime
 
-Returns an effect that accesses the runtime, which can be used to
-(unsafely) execute tasks. This is useful for integration with legacy code
-that must call back into Effect code.
+Returns an effect that accesses the runtime, which can be used to (unsafely)
+execute tasks.
+
+**When to Use**
+
+This is useful for integration with legacy code that must call back into
+Effect code.
 
 To import and use `runtime` from the "Effect" module:
 

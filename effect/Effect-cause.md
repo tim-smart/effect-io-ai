@@ -1,8 +1,14 @@
 # cause
 
-The `cause` function allows you to expose the detailed cause of an
-effect, which includes a more precise representation of failures, such as
-error messages and defects.
+Retrieves the cause of a failure in an effect.
+
+**Details**
+
+This function allows you to expose the detailed cause of an effect, which
+includes a more precise representation of failures, such as error messages
+and defects.
+
+**When to Use**
 
 This function is helpful when you need to inspect the cause of a failure in
 an effect, giving you more information than just the error message. It can be

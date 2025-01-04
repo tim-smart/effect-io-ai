@@ -51,7 +51,7 @@ const task3 = Effect.succeed("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task1 done
 // task2 interrupted
@@ -83,7 +83,7 @@ const task3 = Effect.succeed("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task3 done
 // task2 interrupted
@@ -114,7 +114,7 @@ const task3 = Effect.fail("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',

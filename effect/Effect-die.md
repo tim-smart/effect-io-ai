@@ -38,7 +38,7 @@ const divide = (a: number, b: number) =>
 //      ▼
 const program = divide(1, 0)
 
-Effect.runPromise(program).catch(console.error)
+// Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) Error: Cannot divide by zero
 //   ...stack trace...

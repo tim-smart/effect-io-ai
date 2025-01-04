@@ -3,11 +3,19 @@
 Adds a time limit to an effect, triggering a timeout if the effect exceeds
 the duration.
 
-The `timeout` function allows you to specify a time limit for an
-effect's execution. If the effect does not complete within the given time, a
-`TimeoutException` is raised. This can be useful for controlling how long
-your program waits for a task to finish, ensuring that it doesn't hang
-indefinitely if the task takes too long.
+**Details**
+
+This function allows you to enforce a time limit on the execution of an
+effect. If the effect does not complete within the given duration, it fails
+with a `TimeoutException`. This is useful for preventing tasks from hanging
+indefinitely, especially in scenarios where responsiveness or resource limits
+are critical.
+
+The returned effect will either:
+
+- Succeed with the original effect's result if it completes within the
+  specified duration.
+- Fail with a `TimeoutException` if the time limit is exceeded.
 
 To import and use `timeout` from the "Effect" module:
 
@@ -33,7 +41,7 @@ const task = Effect.gen(function* () {
 // than the specified timeout duration
 const timedEffect = task.pipe(Effect.timeout("1 second"))
 
-Effect.runPromiseExit(timedEffect).then(console.log)
+// Effect.runPromiseExit(timedEffect).then(console.log)
 // Output:
 // Start processing...
 // {

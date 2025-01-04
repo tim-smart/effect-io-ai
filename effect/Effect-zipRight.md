@@ -1,18 +1,24 @@
 # zipRight
 
-Runs two effects sequentially, returning the result of the second effect
-while discarding the result of the first.
+Executes two effects sequentially, returning the result of the second effect
+while ignoring the result of the first.
+
+**Details**
+
+This function allows you to run two effects in sequence, keeping the result
+of the second effect and discarding the result of the first. By default, the
+two effects are executed sequentially. If you need them to run concurrently,
+you can pass the `{ concurrent: true }` option.
+
+The first effect will always be executed, even though its result is ignored.
+This makes it useful for scenarios where the first effect is needed for its
+side effects, but only the result of the second effect is important.
 
 **When to Use**
 
-Use `zipRight` when you need to execute two effects in sequence and only care
-about the result of the second effect. The first effect will still execute
-but its result will be ignored.
-
-**Concurrency**
-
-By default, the effects are run sequentially. To execute them concurrently,
-use the `{ concurrent: true }` option.
+Use this function when you are only interested in the result of the second
+effect but still need to run the first effect for its side effects, such as
+initialization or setup tasks.
 
 To import and use `zipRight` from the "Effect" module:
 
@@ -32,7 +38,7 @@ const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.ta
 
 const program = Effect.zipRight(task1, task2)
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task1 done"
 // timestamp=... level=INFO fiber=#0 message="task2 done"

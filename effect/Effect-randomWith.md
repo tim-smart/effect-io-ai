@@ -1,7 +1,7 @@
 # randomWith
 
-Retreives the `Random` service from the context and uses it to run the
-specified workflow.
+Retrieves the `Random` service from the context and uses it to run the
+specified effect.
 
 To import and use `randomWith` from the "Effect" module:
 

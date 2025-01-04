@@ -48,7 +48,7 @@ const program = Effect.matchCauseEffect(task, {
     Console.log(`succeeded with ${value} value`)
 })
 
-Effect.runPromise(program)
+// Effect.runPromise(program)
 // Output: "Die: Uh oh!"
 ```
 

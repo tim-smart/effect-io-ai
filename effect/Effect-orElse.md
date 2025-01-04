@@ -1,11 +1,17 @@
 # orElse
 
-Tries one effect, and if it fails, attempts another effect as a fallback.
+Attempts one effect, and if it fails, falls back to another effect.
 
-`orElse` allows you to attempt to run an effect, and if it fails, you
-can provide a fallback effect to run instead. This is useful for handling
-failures gracefully by defining an alternative effect to execute if the first
-one encounters an error.
+**Details**
+
+This function allows you to try executing an effect, and if it fails
+(produces an error), a fallback effect is executed instead. The fallback
+effect is defined as a lazy argument, meaning it will only be evaluated if
+the first effect fails. This provides a way to recover from errors by
+specifying an alternative path of execution.
+
+The error type of the resulting effect will be that of the fallback effect,
+as the first effect's error is replaced when the fallback is executed.
 
 To import and use `orElse` from the "Effect" module:
 

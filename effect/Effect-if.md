@@ -25,5 +25,5 @@ const flipTheCoin = Effect.if(Random.nextBoolean, {
   onFalse: () => Console.log("Tail") // Runs if the predicate is false
 })
 
-Effect.runFork(flipTheCoin)
+// Effect.runFork(flipTheCoin)
 ```

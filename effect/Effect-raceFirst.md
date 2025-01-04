@@ -59,7 +59,7 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.raceFirst(task1, task2).pipe(Effect.tap(Console.log("more work...")))
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task1 done
 // task2 interrupted
@@ -86,7 +86,7 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.raceFirst(task1, task2).pipe(Effect.tap(Console.log("more work...")))
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task2 interrupted
 // {
@@ -118,7 +118,7 @@ const program = Effect.raceFirst(Effect.disconnect(task1), Effect.disconnect(tas
   Effect.tap(Console.log("more work..."))
 )
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task1 done
 // more work...

@@ -1,9 +1,17 @@
 # allowInterrupt
 
-This function checks if any fibers are attempting to interrupt the current
-fiber, and if so, performs self-interruption.
+Allows interruption of the current fiber, even in uninterruptible regions.
 
-Note that this allows for interruption to occur in uninterruptible regions.
+**Details**
+
+This effect checks whether any other fibers are attempting to interrupt the
+current fiber. If so, it allows the current fiber to perform a
+self-interruption.
+
+**When to Use**
+
+This is useful in situations where you want to allow interruption to happen
+even in regions of the code that are normally uninterruptible.
 
 To import and use `allowInterrupt` from the "Effect" module:
 

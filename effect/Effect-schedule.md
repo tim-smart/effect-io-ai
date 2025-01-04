@@ -1,9 +1,19 @@
 # schedule
 
-Runs this effect according to the specified schedule.
+Repeats an effect based on a specified schedule.
 
-See `scheduleFrom` for a variant that allows the schedule's decision to
-depend on the result of this effect.
+**Details**
+
+This function allows you to execute an effect repeatedly according to a given
+schedule. The schedule determines the timing and number of repetitions. Each
+repetition can also depend on the decision of the schedule, providing
+flexibility for complex workflows. This function does not modify the effect's
+success or failure; it only controls its repetition.
+
+For example, you can use a schedule that recurs a specific number of times,
+adds delays between repetitions, or customizes repetition behavior based on
+external inputs. The effect runs initially and is repeated according to the
+schedule.
 
 To import and use `schedule` from the "Effect" module:
 

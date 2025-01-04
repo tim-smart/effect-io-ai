@@ -42,7 +42,7 @@ const program = Effect.gen(function* () {
   console.log(result)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: { _id: 'Option', _tag: 'Some', value: 4 }
 ```
 

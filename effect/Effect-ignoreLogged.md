@@ -1,8 +1,19 @@
 # ignoreLogged
 
-Returns a new effect that ignores the success or failure of this effect,
-but which also logs failures at the Debug level, just in case the failure
-turns out to be important.
+Ignores the result of an effect but logs any failures.
+
+**Details**
+
+This function takes an effect and returns a new effect that ignores whether
+the original effect succeeds or fails. However, if the effect fails, it will
+log the failure at the Debug level, so you can keep track of any issues that
+arise.
+
+**When to Use**
+
+This is useful in scenarios where you want to continue with your program
+regardless of the result of the effect, but you still want to be aware of
+potential failures that may need attention later.
 
 To import and use `ignoreLogged` from the "Effect" module:
 

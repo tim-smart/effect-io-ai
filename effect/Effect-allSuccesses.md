@@ -36,7 +36,7 @@ const program = Effect.gen(function* () {
   console.log(successfulResults)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: [1, 2]
 ```
 

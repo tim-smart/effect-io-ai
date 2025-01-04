@@ -46,7 +46,7 @@ const program = Effect.partition([0, 1, 2, 3, 4], (n) => {
   }
 })
 
-Effect.runPromise(program).then(console.log, console.error)
+// Effect.runPromise(program).then(console.log, console.error)
 // Output:
 // [ [ '1 is not even', '3 is not even' ], [ 0, 2, 4 ] ]
 ```

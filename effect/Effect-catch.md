@@ -43,6 +43,6 @@ const program = Effect.gen(function* () {
   console.log(`Result: ${result}`)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: Result: recovered from error: NetworkError
 ```

@@ -31,7 +31,7 @@ const program = pipe(
   Effect.allWith({ concurrency: 2 })
 )
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#3 message="task2 done"
 // timestamp=... level=INFO fiber=#2 message="task1 done"

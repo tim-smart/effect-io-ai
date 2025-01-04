@@ -40,7 +40,7 @@ const program = Effect.reduceEffect(
   (acc, order, i) => acc + order.price
 )
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // Order 1 processed
 // Order 2 processed

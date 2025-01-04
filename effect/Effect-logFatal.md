@@ -1,6 +1,13 @@
 # logFatal
 
-Logs the specified message or cause at the Fatal log level.
+Logs messages at the FATAL log level.
+
+**Details**
+
+This function logs messages at the FATAL level, suitable for reporting
+critical errors that cause the application to terminate or stop functioning.
+These logs are typically used for unrecoverable errors that require immediate
+attention.
 
 To import and use `logFatal` from the "Effect" module:
 

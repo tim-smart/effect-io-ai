@@ -41,7 +41,7 @@ const program = Effect.reduceRight([1, 2, 3, 4], 0, (id, acc, i) =>
   processOrder(id).pipe(Effect.map((order) => acc + order.price))
 )
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // Order 4 processed
 // Order 3 processed

@@ -1,6 +1,6 @@
 # catchSomeCause
 
-Recovers from some or all of the error cases with provided cause.
+Recovers from specific causes using a provided partial function.
 
 To import and use `catchSomeCause` from the "Effect" module:
 

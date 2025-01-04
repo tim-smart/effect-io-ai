@@ -93,7 +93,7 @@ const program = Effect.gen(function* () {
 })
 
 // Run the program
-Effect.runPromise(program)
+// Effect.runPromise(program)
 // Output:
 // Cleaning up example.txt
 ```
@@ -127,7 +127,7 @@ const program = Effect.gen(function* () {
 })
 
 // Run the program
-Effect.runPromise(program)
+// Effect.runPromise(program)
 // Output:
 // Abort signal received
 ```

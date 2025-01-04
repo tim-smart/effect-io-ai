@@ -3,13 +3,32 @@
 Executes an effect synchronously, running it immediately and returning the
 result.
 
+**Details**
+
+This function evaluates the provided effect synchronously, returning its
+result directly. It is ideal for effects that do not fail or include
+asynchronous operations. If the effect does fail or involves async tasks, it
+will throw an error. Execution stops at the point of failure or asynchronous
+operation, making it unsuitable for effects that require asynchronous
+handling.
+
+**Important**: Attempting to run effects that involve asynchronous operations
+or failures will result in exceptions being thrown, so use this function with
+care for purely synchronous and error-free effects.
+
 **When to Use**
 
-Use `runSync` to run an effect that does not fail and does not include
-any asynchronous operations.
+Use this function when:
 
-If the effect fails or involves asynchronous work, it will throw an error,
-and execution will stop where the failure or async operation occurs.
+- You are sure that the effect will not fail or involve asynchronous
+  operations.
+- You need a direct, synchronous result from the effect.
+- You are working within a context where asynchronous effects are not
+  allowed.
+
+Avoid using this function for effects that can fail or require asynchronous
+handling. For such cases, consider using {@link runPromise} or
+{@link runSyncExit}.
 
 To import and use `runSync` from the "Effect" module:
 

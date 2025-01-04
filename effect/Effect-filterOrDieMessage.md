@@ -1,7 +1,12 @@
 # filterOrDieMessage
 
-Filter the specified effect with the provided function, dying with specified
-message if the predicate fails.
+Filters an effect, dying with a custom message if the predicate fails.
+
+**Details**
+
+This function works like {@link filterOrDie} but allows you to specify a
+custom error message to describe the reason for the failure. The message is
+included in the defect when the predicate evaluates to `false`.
 
 To import and use `filterOrDieMessage` from the "Effect" module:
 

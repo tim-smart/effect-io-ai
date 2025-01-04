@@ -52,7 +52,7 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task1 done
 // task2 interrupted
@@ -77,7 +77,7 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task2 done
 ```
@@ -101,7 +101,7 @@ const task2 = Effect.fail("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -136,7 +136,7 @@ const task2 = Effect.succeed("task2").pipe(
 // in Either to capture success or failure
 const program = Effect.race(Effect.either(task1), Effect.either(task2))
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // task2 interrupted
 // { _id: 'Either', _tag: 'Left', left: 'task1' }

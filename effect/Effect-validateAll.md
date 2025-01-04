@@ -44,7 +44,7 @@ const program = Effect.validateAll([1, 2, 3, 4, 5], (n) => {
   }
 })
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // item 1
 // item 2

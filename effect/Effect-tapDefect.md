@@ -1,13 +1,19 @@
 # tapDefect
 
-The `tapDefect` function specifically inspects non-recoverable
-failures or defects (i.e., one or more `Die` causes) in an effect.
+Inspect severe errors or defects (non-recoverable failures) in an effect.
 
-This function is designed to catch severe errors in your program that
-represent critical issues, like system failures or unexpected errors
-(defects). It helps you log or handle these defects without altering the main
-result of the effect, allowing for efficient debugging or monitoring of
-severe errors.
+**Details**
+
+This function is specifically designed to handle and inspect defects, which
+are critical failures in your program, such as unexpected runtime exceptions
+or system-level errors. Unlike normal recoverable errors, defects typically
+indicate serious issues that cannot be addressed through standard error
+handling.
+
+When a defect occurs in an effect, the function you provide to this function
+will be executed, allowing you to log, monitor, or handle the defect in some
+way. Importantly, this does not alter the main result of the effect. If no
+defect occurs, the effect behaves as if this function was not used.
 
 To import and use `tapDefect` from the "Effect" module:
 
@@ -28,7 +34,7 @@ const task1: Effect.Effect<number, string> = Effect.fail("NetworkError")
 // tapDefect won't log anything because NetworkError is not a defect
 const tapping1 = Effect.tapDefect(task1, (cause) => Console.log(`defect: ${cause}`))
 
-Effect.runFork(tapping1)
+// Effect.runFork(tapping1)
 // No Output
 
 // Simulate a severe failure in the system
@@ -37,7 +43,7 @@ const task2: Effect.Effect<number, string> = Effect.dieMessage("Something went w
 // Log the defect using tapDefect
 const tapping2 = Effect.tapDefect(task2, (cause) => Console.log(`defect: ${cause}`))
 
-Effect.runFork(tapping2)
+// Effect.runFork(tapping2)
 // Output:
 // defect: RuntimeException: Something went wrong
 //   ... stack trace ...

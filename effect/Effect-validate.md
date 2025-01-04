@@ -1,15 +1,18 @@
 # validate
 
-The `validate` function allows you to combine multiple effects,
-continuing the combination even if some of the effects fail. It accumulates
-both successes and failures, allowing you to proceed through all effects
-regardless of individual failures.
+Combines multiple effects and accumulates both successes and failures.
 
-This function is similar to {@link zip}, but with `validate`, errors
-do not stop the execution of subsequent effects. Instead, errors are
-accumulated in a `Cause` and reported in the final result. This is useful
-when you want to collect all results, including failures, instead of stopping
-at the first error.
+**Details**
+
+This function allows you to combine multiple effects, continuing through all
+effects even if some of them fail. Unlike other functions that stop execution
+upon encountering an error, this function collects all errors into a `Cause`.
+The final result includes all successes and the accumulated failures.
+
+By default, effects are executed sequentially, but you can control
+concurrency and batching behavior using the `options` parameter. This
+provides flexibility in scenarios where you want to maximize performance or
+ensure specific ordering.
 
 To import and use `validate` from the "Effect" module:
 
@@ -31,7 +34,7 @@ const task4 = Effect.fail("Oh no!").pipe(Effect.as(4))
 
 const program = task1.pipe(Effect.validate(task2), Effect.validate(task3), Effect.validate(task4))
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task1
 // task2

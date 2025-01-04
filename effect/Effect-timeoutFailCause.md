@@ -1,16 +1,26 @@
 # timeoutFailCause
 
-The `timeoutFailCause` function allows you to specify a custom defect
-to be thrown when a timeout occurs during the execution of an effect.
+Specifies a custom defect to be thrown when a timeout occurs.
 
-This function helps in handling timeouts as exceptional cases in your program
-by generating a custom defect when the operation exceeds the specified time
-limit. You can define a `duration` and a `onTimeout` function that produces a
-defect (typically using `Cause.die`) which will be thrown instead of a
-default timeout error.
+**Details**
 
-This is particularly useful when you need to treat timeouts as critical
-failures in your application, allowing for more precise error handling.
+This function allows you to handle timeouts as exceptional cases by
+generating a custom defect when an effect exceeds the specified duration. You
+provide:
+
+- A `duration`: The time limit for the effect.
+- An `onTimeout` function: A lazy evaluation function that generates the
+  custom defect (typically created using `Cause.die`).
+
+If the effect completes within the time limit, its result is returned
+normally. Otherwise, the custom defect is triggered, and the effect fails
+with that defect.
+
+**When to Use**
+
+This is especially useful when you need to treat timeouts as critical
+failures in your application and wish to include meaningful information in
+the defect.
 
 To import and use `timeoutFailCause` from the "Effect" module:
 
@@ -39,7 +49,7 @@ const program = task.pipe(
   })
 )
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Start processing...
 // {

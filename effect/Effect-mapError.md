@@ -1,7 +1,9 @@
 # mapError
 
-The `mapError` function is used to transform or modify the error
-produced by an effect, without affecting its success value.
+Transforms or modifies the error produced by an effect without affecting its
+success value.
+
+**When to Use**
 
 This function is helpful when you want to enhance the error with additional
 information, change the error type, or apply custom error handling while

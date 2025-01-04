@@ -1,6 +1,16 @@
 # whenRef
 
-Executes this workflow when the value of the `Ref` satisfies the predicate.
+Executes an effect conditionally based on the value of a `Ref` that satisfies
+a predicate.
+
+**Details**
+
+This function allows you to execute an effect only when the value of a
+specified `Ref` meets a condition defined by a predicate. If the value
+satisfies the predicate, the effect is executed, and the result is wrapped in
+an `Option.some`. If the predicate is not satisfied, the effect is skipped,
+and the result is `Option.none`. In both cases, the current value of the
+`Ref` is included in the result.
 
 To import and use `whenRef` from the "Effect" module:
 

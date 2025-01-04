@@ -1,13 +1,18 @@
 # merge
 
-The `merge` function combines both the error and success channels of
-an effect, creating a new effect that never fails.
+Combines both success and error channels of an effect into a single outcome.
+
+**Details**
 
 This function transforms an effect that may fail into one that always returns
 a value, where both success and failure outcomes are handled as values in the
-success channel. This can be useful when you want to continue execution
-regardless of the error type and still capture both successful results and
-errors as part of the outcome.
+success channel.
+
+**When to Use**
+
+This can be useful when you want to continue execution regardless of the
+error type and still capture both successful results and errors as part of
+the outcome.
 
 To import and use `merge` from the "Effect" module:
 

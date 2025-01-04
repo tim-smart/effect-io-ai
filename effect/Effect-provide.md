@@ -1,10 +1,18 @@
 # provide
 
-Provides the necessary `Layer`s to an effect, removing its dependency on the
-environment.
+Provides necessary dependencies to an effect, removing its environmental
+requirements.
 
-You can pass multiple layers, a `Context`, `Runtime`, or `ManagedRuntime` to
-the effect.
+**Details**
+
+This function allows you to supply the required environment for an effect.
+The environment can be provided in the form of one or more `Layer`s, a
+`Context`, a `Runtime`, or a `ManagedRuntime`. Once the environment is
+provided, the effect can run without requiring external dependencies.
+
+You can compose layers to create a modular and reusable way of setting up the
+environment for effects. For example, layers can be used to configure
+databases, logging services, or any other required dependencies.
 
 To import and use `provide` from the "Effect" module:
 
@@ -41,7 +49,7 @@ const program = Effect.gen(function* () {
 //      ▼
 const runnable = Effect.provide(program, DatabaseLive)
 
-Effect.runPromise(runnable).then(console.log)
+// Effect.runPromise(runnable).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="Executing query: SELECT * FROM users"
 // []

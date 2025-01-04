@@ -1,13 +1,19 @@
 # provideService
 
-The `provideService` function is used to provide an actual
-implementation for a service in the context of an effect.
+Provides an implementation for a service in the context of an effect.
 
-This function allows you to associate a service with its implementation so
-that it can be used in your program. You define the service (e.g., a random
-number generator), and then you use `provideService` to link that
-service to its implementation. Once the implementation is provided, the
-effect can be run successfully without further requirements.
+**Details**
+
+This function allows you to supply a specific implementation for a service
+required by an effect. Services are typically defined using `Context.Tag`,
+which acts as a unique identifier for the service. By using this function,
+you link the service to its concrete implementation, enabling the effect to
+execute successfully without additional requirements.
+
+For example, you can use this function to provide a random number generator,
+a logger, or any other service your effect depends on. Once the service is
+provided, all parts of the effect that rely on the service will automatically
+use the implementation you supplied.
 
 To import and use `provideService` from the "Effect" module:
 
@@ -41,7 +47,7 @@ const runnable = Effect.provideService(program, Random, {
 })
 
 // Run successfully
-Effect.runPromise(runnable)
+// Effect.runPromise(runnable)
 // Example Output:
 // random number: 0.8241872233134417
 ```

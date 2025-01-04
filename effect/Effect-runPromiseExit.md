@@ -1,20 +1,29 @@
 # runPromiseExit
 
-Runs an effect and returns a `Promise` that resolves to an `Exit`, which
-represents the outcome (success or failure) of the effect.
-
-**When to Use**
-
-Use `runPromiseExit` when you need to determine if an effect succeeded
-or failed, including any defects, and you want to work with a `Promise`.
+Runs an effect and returns a `Promise` that resolves to an `Exit`,
+representing the outcome.
 
 **Details**
 
-The `Exit` type represents the result of the effect:
+This function executes an effect and resolves to an `Exit` object. The `Exit`
+type provides detailed information about the result of the effect:
 
-- If the effect succeeds, the result is wrapped in a `Success`.
-- If it fails, the failure information is provided as a `Failure` containing
-  a `Cause` type.
+- If the effect succeeds, the `Exit` will be of type `Success` and include
+  the value produced by the effect.
+- If the effect fails, the `Exit` will be of type `Failure` and contain a
+  `Cause` object, detailing the failure.
+
+Using this function allows you to examine both successful results and failure
+cases in a unified way, while still leveraging `Promise` for handling the
+asynchronous behavior of the effect.
+
+**When to Use**
+
+Use this function when you need to understand the outcome of an effect,
+whether it succeeded or failed, and want to work with this result using
+`Promise` syntax. This is particularly useful when integrating with systems
+that rely on promises but need more detailed error handling than a simple
+rejection.
 
 To import and use `runPromiseExit` from the "Effect" module:
 
@@ -31,7 +40,7 @@ Effect.runPromiseExit
 import { Effect } from "effect"
 
 // Execute a successful effect and get the Exit result as a Promise
-Effect.runPromiseExit(Effect.succeed(1)).then(console.log)
+// Effect.runPromiseExit(Effect.succeed(1)).then(console.log)
 // Output:
 // {
 //   _id: "Exit",
@@ -40,7 +49,7 @@ Effect.runPromiseExit(Effect.succeed(1)).then(console.log)
 // }
 
 // Execute a failing effect and get the Exit result as a Promise
-Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
+// Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 // Output:
 // {
 //   _id: "Exit",

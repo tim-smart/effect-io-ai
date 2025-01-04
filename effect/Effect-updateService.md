@@ -1,6 +1,18 @@
 # updateService
 
-Updates the service with the required service entry.
+Updates a service in the context with a new implementation.
+
+**Details**
+
+This function modifies the existing implementation of a service in the
+context. It retrieves the current service, applies the provided
+transformation function `f`, and replaces the old service with the
+transformed one.
+
+**When to Use**
+
+This is useful for adapting or extending a service's behavior during the
+execution of an effect.
 
 To import and use `updateService` from the "Effect" module:
 

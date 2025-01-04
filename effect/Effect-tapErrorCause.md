@@ -1,12 +1,18 @@
 # tapErrorCause
 
-The `tapErrorCause` function allows you to inspect the complete cause
-of an error, including failures and defects.
+Inspect the complete cause of an error, including failures and defects.
 
-This function is helpful when you need to log, monitor, or handle specific
-error causes in your effects. It gives you access to the full error cause,
-whether it’s a failure, defect, or other exceptional conditions, without
-altering the error or the overall result of the effect.
+**Details**
+
+This function provides access to the full cause of an error, including both
+recoverable failures and irrecoverable defects. It allows you to handle, log,
+or monitor specific error causes without modifying the result of the effect.
+The full `Cause` object encapsulates the error and its contextual
+information, making it useful for debugging and understanding failure
+scenarios in complex workflows.
+
+The effect itself is not modified, and any errors or defects remain in the
+error channel of the original effect.
 
 To import and use `tapErrorCause` from the "Effect" module:
 
@@ -26,7 +32,7 @@ const task1: Effect.Effect<number, string> = Effect.fail("NetworkError")
 
 const tapping1 = Effect.tapErrorCause(task1, (cause) => Console.log(`error cause: ${cause}`))
 
-Effect.runFork(tapping1)
+// Effect.runFork(tapping1)
 // Output:
 // error cause: Error: NetworkError
 
@@ -35,7 +41,7 @@ const task2: Effect.Effect<number, string> = Effect.dieMessage("Something went w
 
 const tapping2 = Effect.tapErrorCause(task2, (cause) => Console.log(`error cause: ${cause}`))
 
-Effect.runFork(tapping2)
+// Effect.runFork(tapping2)
 // Output:
 // error cause: RuntimeException: Something went wrong
 //   ... stack trace ...

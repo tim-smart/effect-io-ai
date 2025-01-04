@@ -3,16 +3,13 @@
 Combines two effects sequentially and applies a function to their results to
 produce a single value.
 
-**When to Use**
+**Details**
 
-The `zipWith` function is similar to {@link zip}, but instead of returning a
-tuple of results, it applies a provided function to the results of the two
-effects, combining them into a single value.
-
-**Concurrency**
-
-By default, the effects are run sequentially. To execute them concurrently,
-use the `{ concurrent: true }` option.
+This function runs two effects in sequence (or concurrently, if the `{
+concurrent: true }` option is provided) and combines their results using a
+provided function. Unlike {@link zip}, which returns a tuple of the results,
+this function processes the results with a custom function to produce a
+single output.
 
 To import and use `zipWith` from the "Effect" module:
 
@@ -38,7 +35,7 @@ const task3 = Effect.zipWith(
   (number, string) => number + string.length
 )
 
-Effect.runPromise(task3).then(console.log)
+// Effect.runPromise(task3).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#3 message="task1 done"
 // timestamp=... level=INFO fiber=#2 message="task2 done"

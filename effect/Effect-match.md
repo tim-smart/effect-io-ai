@@ -37,7 +37,7 @@ const program1 = Effect.match(success, {
 })
 
 // Run and log the result of the successful effect
-Effect.runPromise(program1).then(console.log)
+// Effect.runPromise(program1).then(console.log)
 // Output: "success: 42"
 
 const failure: Effect.Effect<number, Error> = Effect.fail(new Error("Uh oh!"))
@@ -48,7 +48,7 @@ const program2 = Effect.match(failure, {
 })
 
 // Run and log the result of the failed effect
-Effect.runPromise(program2).then(console.log)
+// Effect.runPromise(program2).then(console.log)
 // Output: "failure: Uh oh!"
 ```
 

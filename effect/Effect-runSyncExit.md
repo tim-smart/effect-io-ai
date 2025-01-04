@@ -1,24 +1,30 @@
 # runSyncExit
 
-Runs an effect synchronously and returns the result as an `Exit` type, which
-represents the outcome (success or failure) of the effect.
-
-**When to Use**
-
-Use `runSyncExit` to find out whether an effect succeeded or failed,
-including any defects, without dealing with asynchronous operations.
+Runs an effect synchronously and returns the result as an `Exit` type.
 
 **Details**
 
-The `Exit` type represents the result of the effect:
+This function executes the provided effect synchronously and returns an `Exit`
+type that encapsulates the outcome of the effect:
 
 - If the effect succeeds, the result is wrapped in a `Success`.
-- If it fails, the failure information is provided as a `Failure` containing
-  a `Cause` type.
+- If the effect fails, it returns a `Failure` containing a `Cause` that explains
+  the failure.
 
-If the effect contains asynchronous operations, `runSyncExit` will
-return an `Failure` with a `Die` cause, indicating that the effect cannot be
-resolved synchronously.
+If the effect involves asynchronous operations, this function will return a `Failure`
+with a `Die` cause, indicating that it cannot resolve the effect synchronously.
+This makes the function suitable for use only with effects that are synchronous
+in nature.
+
+**When to Use**
+
+Use this function when:
+
+- You want to handle both success and failure outcomes in a structured way using the `Exit` type.
+- You are working with effects that are purely synchronous and do not involve asynchronous operations.
+- You need to debug or inspect failures, including their causes, in a detailed manner.
+
+Avoid using this function for effects that involve asynchronous operations, as it will fail with a `Die` cause.
 
 To import and use `runSyncExit` from the "Effect" module:
 

@@ -1,6 +1,6 @@
 # unsafeMakeSemaphore
 
-Unsafely creates a new Semaphore
+Unsafely creates a new Semaphore.
 
 To import and use `unsafeMakeSemaphore` from the "Effect" module:
 

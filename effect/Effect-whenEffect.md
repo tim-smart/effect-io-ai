@@ -1,17 +1,20 @@
 # whenEffect
 
-Executes an effect conditionally, based on the result of another effect.
+Conditionally executes an effect based on the result of another effect.
 
-Use `whenEffect` when the condition to determine whether to execute the effect
-depends on the outcome of another effect that produces a boolean value.
+**Details**
 
-If the condition effect evaluates to `true`, the specified effect is executed.
-If it evaluates to `false`, no effect is executed.
+This function allows you to run an effect only if a conditional effect
+evaluating to a boolean resolves to `true`. If the conditional effect
+evaluates to `true`, the specified effect is executed, and its result is
+wrapped in `Option.some`. If the conditional effect evaluates to `false`, the
+effect is skipped, and the result is `Option.none`.
 
-The result of the effect is wrapped in an `Option<A>` to indicate whether the
-effect was executed. If the condition is `true`, the result of the effect is
-wrapped in a `Some`. If the condition is `false`, the result is `None`,
-representing that the effect was skipped.
+**When to Use**
+
+This function is particularly useful when the decision to execute an effect
+depends on the result of another effect, such as a random value, a
+user-provided input, or a network request result.
 
 To import and use `whenEffect` from the "Effect" module:
 

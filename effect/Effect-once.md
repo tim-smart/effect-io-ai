@@ -37,7 +37,7 @@ const program = Effect.gen(function* () {
   yield* Effect.repeatN(task2, 2)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task1
 // task1

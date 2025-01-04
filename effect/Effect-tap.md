@@ -3,18 +3,19 @@
 Runs a side effect with the result of an effect without changing the original
 value.
 
-**When to Use**
-
-Use `tap` when you want to perform a side effect, like logging or tracking,
-without modifying the main value. This is useful when you need to observe or
-record an action but want the original value to be passed to the next step.
-
 **Details**
 
-`tap` works similarly to `flatMap`, but it ignores the result of the function
-passed to it. The value from the previous effect remains available for the
-next part of the chain. Note that if the side effect fails, the entire chain
-will fail too.
+This function works similarly to `flatMap`, but it ignores the result of the
+function passed to it. The value from the previous effect remains available
+for the next part of the chain. Note that if the side effect fails, the
+entire chain will fail too.
+
+**When to Use**
+
+Use this function when you want to perform a side effect, like logging or
+tracking, without modifying the main value. This is useful when you need to
+observe or record an action but want the original value to be passed to the
+next step.
 
 To import and use `tap` from the "Effect" module:
 
@@ -47,7 +48,7 @@ const finalAmount = pipe(
   Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-Effect.runPromise(finalAmount).then(console.log)
+// Effect.runPromise(finalAmount).then(console.log)
 // Output:
 // Apply a discount to: 100
 // 95

@@ -934,6 +934,10 @@
 <li><a href="effect/Effect-Do">Effect-Do</a></li>
 <li><a href="effect/Effect-Effect">Effect-Effect</a></li>
 <li><a href="effect/Effect-FunctionWithSpanOptions">Effect-FunctionWithSpanOptions</a></li>
+<li><a href="effect/Effect-Latch">Effect-Latch</a></li>
+<li><a href="effect/Effect-Semaphore">Effect-Semaphore</a></li>
+<li><a href="effect/Effect-Service">Effect-Service</a></li>
+<li><a href="effect/Effect-Tag">Effect-Tag</a></li>
 <li><a href="effect/Effect-acquireRelease">Effect-acquireRelease</a></li>
 <li><a href="effect/Effect-acquireReleaseInterruptible">Effect-acquireReleaseInterruptible</a></li>
 <li><a href="effect/Effect-acquireUseRelease">Effect-acquireUseRelease</a></li>
@@ -947,6 +951,7 @@
 <li><a href="effect/Effect-annotateLogs">Effect-annotateLogs</a></li>
 <li><a href="effect/Effect-annotateLogsScoped">Effect-annotateLogsScoped</a></li>
 <li><a href="effect/Effect-annotateSpans">Effect-annotateSpans</a></li>
+<li><a href="effect/Effect-ap">Effect-ap</a></li>
 <li><a href="effect/Effect-as">Effect-as</a></li>
 <li><a href="effect/Effect-asSome">Effect-asSome</a></li>
 <li><a href="effect/Effect-asSomeError">Effect-asSomeError</a></li>
@@ -978,6 +983,7 @@
 <li><a href="effect/Effect-configProviderWith">Effect-configProviderWith</a></li>
 <li><a href="effect/Effect-console">Effect-console</a></li>
 <li><a href="effect/Effect-consoleWith">Effect-consoleWith</a></li>
+<li><a href="effect/Effect-context">Effect-context</a></li>
 <li><a href="effect/Effect-contextWith">Effect-contextWith</a></li>
 <li><a href="effect/Effect-contextWithEffect">Effect-contextWithEffect</a></li>
 <li><a href="effect/Effect-custom">Effect-custom</a></li>
@@ -1010,6 +1016,7 @@
 <li><a href="effect/Effect-filterOrDieMessage">Effect-filterOrDieMessage</a></li>
 <li><a href="effect/Effect-filterOrElse">Effect-filterOrElse</a></li>
 <li><a href="effect/Effect-filterOrFail">Effect-filterOrFail</a></li>
+<li><a href="effect/Effect-finalizersMask">Effect-finalizersMask</a></li>
 <li><a href="effect/Effect-findFirst">Effect-findFirst</a></li>
 <li><a href="effect/Effect-firstSuccessOf">Effect-firstSuccessOf</a></li>
 <li><a href="effect/Effect-flatMap">Effect-flatMap</a></li>
@@ -1037,6 +1044,9 @@
 <li><a href="effect/Effect-ignore">Effect-ignore</a></li>
 <li><a href="effect/Effect-ignoreLogged">Effect-ignoreLogged</a></li>
 <li><a href="effect/Effect-inheritFiberRefs">Effect-inheritFiberRefs</a></li>
+<li><a href="effect/Effect-interrupt">Effect-interrupt</a></li>
+<li><a href="effect/Effect-interruptible">Effect-interruptible</a></li>
+<li><a href="effect/Effect-interruptibleMask">Effect-interruptibleMask</a></li>
 <li><a href="effect/Effect-intoDeferred">Effect-intoDeferred</a></li>
 <li><a href="effect/Effect-isEffect">Effect-isEffect</a></li>
 <li><a href="effect/Effect-isFailure">Effect-isFailure</a></li>
@@ -1057,6 +1067,7 @@
 <li><a href="effect/Effect-logWarning">Effect-logWarning</a></li>
 <li><a href="effect/Effect-logWithLevel">Effect-logWithLevel</a></li>
 <li><a href="effect/Effect-loop">Effect-loop</a></li>
+<li><a href="effect/Effect-makeLatch">Effect-makeLatch</a></li>
 <li><a href="effect/Effect-makeSemaphore">Effect-makeSemaphore</a></li>
 <li><a href="effect/Effect-makeSpan">Effect-makeSpan</a></li>
 <li><a href="effect/Effect-makeSpanScoped">Effect-makeSpanScoped</a></li>
@@ -1078,6 +1089,7 @@
 <li><a href="effect/Effect-none">Effect-none</a></li>
 <li><a href="effect/Effect-onError">Effect-onError</a></li>
 <li><a href="effect/Effect-onExit">Effect-onExit</a></li>
+<li><a href="effect/Effect-onInterrupt">Effect-onInterrupt</a></li>
 <li><a href="effect/Effect-once">Effect-once</a></li>
 <li><a href="effect/Effect-option">Effect-option</a></li>
 <li><a href="effect/Effect-optionFromOptional">Effect-optionFromOptional</a></li>
@@ -1087,6 +1099,7 @@
 <li><a href="effect/Effect-orElseFail">Effect-orElseFail</a></li>
 <li><a href="effect/Effect-orElseSucceed">Effect-orElseSucceed</a></li>
 <li><a href="effect/Effect-parallelErrors">Effect-parallelErrors</a></li>
+<li><a href="effect/Effect-parallelFinalizers">Effect-parallelFinalizers</a></li>
 <li><a href="effect/Effect-partition">Effect-partition</a></li>
 <li><a href="effect/Effect-patchFiberRefs">Effect-patchFiberRefs</a></li>
 <li><a href="effect/Effect-promise">Effect-promise</a></li>
@@ -1110,6 +1123,7 @@
 <li><a href="effect/Effect-replicateEffect">Effect-replicateEffect</a></li>
 <li><a href="effect/Effect-retry">Effect-retry</a></li>
 <li><a href="effect/Effect-retryOrElse">Effect-retryOrElse</a></li>
+<li><a href="effect/Effect-runCallback">Effect-runCallback</a></li>
 <li><a href="effect/Effect-runFork">Effect-runFork</a></li>
 <li><a href="effect/Effect-runPromise">Effect-runPromise</a></li>
 <li><a href="effect/Effect-runPromiseExit">Effect-runPromiseExit</a></li>
@@ -1120,10 +1134,15 @@
 <li><a href="effect/Effect-schedule">Effect-schedule</a></li>
 <li><a href="effect/Effect-scheduleForked">Effect-scheduleForked</a></li>
 <li><a href="effect/Effect-scheduleFrom">Effect-scheduleFrom</a></li>
+<li><a href="effect/Effect-scope">Effect-scope</a></li>
 <li><a href="effect/Effect-scopeWith">Effect-scopeWith</a></li>
 <li><a href="effect/Effect-scoped">Effect-scoped</a></li>
 <li><a href="effect/Effect-scopedWith">Effect-scopedWith</a></li>
 <li><a href="effect/Effect-sequentialFinalizers">Effect-sequentialFinalizers</a></li>
+<li><a href="effect/Effect-serviceFunction">Effect-serviceFunction</a></li>
+<li><a href="effect/Effect-serviceFunctionEffect">Effect-serviceFunctionEffect</a></li>
+<li><a href="effect/Effect-serviceOption">Effect-serviceOption</a></li>
+<li><a href="effect/Effect-serviceOptional">Effect-serviceOptional</a></li>
 <li><a href="effect/Effect-setFiberRefs">Effect-setFiberRefs</a></li>
 <li><a href="effect/Effect-sleep">Effect-sleep</a></li>
 <li><a href="effect/Effect-succeed">Effect-succeed</a></li>
@@ -1155,6 +1174,8 @@
 <li><a href="effect/Effect-tryMap">Effect-tryMap</a></li>
 <li><a href="effect/Effect-tryMapPromise">Effect-tryMapPromise</a></li>
 <li><a href="effect/Effect-tryPromise">Effect-tryPromise</a></li>
+<li><a href="effect/Effect-uninterruptible">Effect-uninterruptible</a></li>
+<li><a href="effect/Effect-uninterruptibleMask">Effect-uninterruptibleMask</a></li>
 <li><a href="effect/Effect-unless">Effect-unless</a></li>
 <li><a href="effect/Effect-unlessEffect">Effect-unlessEffect</a></li>
 <li><a href="effect/Effect-unsafeMakeSemaphore">Effect-unsafeMakeSemaphore</a></li>
@@ -1181,6 +1202,7 @@
 <li><a href="effect/Effect-withEarlyRelease">Effect-withEarlyRelease</a></li>
 <li><a href="effect/Effect-withLogSpan">Effect-withLogSpan</a></li>
 <li><a href="effect/Effect-withMaxOpsBeforeYield">Effect-withMaxOpsBeforeYield</a></li>
+<li><a href="effect/Effect-withMetric">Effect-withMetric</a></li>
 <li><a href="effect/Effect-withParentSpan">Effect-withParentSpan</a></li>
 <li><a href="effect/Effect-withRandom">Effect-withRandom</a></li>
 <li><a href="effect/Effect-withRandomScoped">Effect-withRandomScoped</a></li>

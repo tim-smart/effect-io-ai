@@ -36,7 +36,7 @@ const program = Effect.validateFirst([1, 2, 3, 4, 5], (n) => {
   }
 })
 
-Effect.runPromise(program).then(console.log, console.error)
+// Effect.runPromise(program).then(console.log, console.error)
 // Output:
 // item 4
 // 4

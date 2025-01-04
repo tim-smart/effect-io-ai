@@ -43,7 +43,7 @@ const program = Effect.reduceWhile([1, 2, 3, 4], 0, {
   while: (acc) => acc < 500
 })
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // Order 1 processed
 // Order 2 processed

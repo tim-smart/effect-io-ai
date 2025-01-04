@@ -1,11 +1,20 @@
 # repeatOrElse
 
-The `repeatOrElse` function returns a new effect that repeats the specified
-effect according to the given schedule or until the first failure. When a
-failure occurs, the failure value and schedule output are passed to a
-specified handler. Scheduled recurrences are in addition to the initial
-execution, so `repeat(action, Schedule.once)` executes `action` once
-initially and then repeats it an additional time if it succeeds.
+Repeats an effect with a schedule, handling failures using a custom handler.
+
+**Details**
+
+This function allows you to execute an effect repeatedly based on a specified
+schedule. If the effect fails at any point, a custom failure handler is
+invoked. The handler is provided with both the failure value and the output
+of the schedule at the time of failure. This enables advanced error recovery
+or alternative fallback logic while maintaining flexibility in how
+repetitions are handled.
+
+For example, using a schedule with `recurs(2)` will allow for two additional
+repetitions after the initial execution, provided the effect succeeds. If a
+failure occurs during any iteration, the failure handler is invoked to handle
+the situation.
 
 To import and use `repeatOrElse` from the "Effect" module:
 
@@ -46,7 +55,7 @@ const program = Effect.repeatOrElse(action, policy, () =>
   })
 )
 
-Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
+// Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
 ```
 
 **Signature**

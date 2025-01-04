@@ -1,6 +1,12 @@
 # logInfo
 
-Logs the specified message or cause at the Info log level.
+Logs messages at the INFO log level.
+
+**Details**
+
+This function logs messages at the INFO level, suitable for general
+application events or operational messages. INFO logs are shown by default
+and are commonly used for highlighting normal, non-error operations.
 
 To import and use `logInfo` from the "Effect" module:
 

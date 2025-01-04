@@ -1,7 +1,18 @@
 # scheduleFrom
 
-Runs this effect according to the specified schedule starting from the
-specified input value.
+Runs an effect repeatedly according to a schedule, starting from a specified
+input value.
+
+**Details**
+
+This function allows you to repeatedly execute an effect based on a schedule.
+The schedule starts with the given `initial` input value, which is passed to
+the first execution. Subsequent executions of the effect are controlled by
+the schedule's rules, using the output of the previous iteration as the input
+for the next one.
+
+The returned effect will complete when the schedule ends or the effect fails,
+propagating the error.
 
 To import and use `scheduleFrom` from the "Effect" module:
 

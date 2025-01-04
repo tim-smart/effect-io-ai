@@ -1,7 +1,7 @@
 # withClock
 
 Executes the specified workflow with the specified implementation of the
-clock service.
+`Clock` service.
 
 To import and use `withClock` from the "Effect" module:
 
@@ -15,7 +15,7 @@ Effect.withClock
 
 ```ts
 export declare const withClock: {
-  <X extends Clock.Clock>(value: X): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
-  <X extends Clock.Clock, A, E, R>(effect: Effect<A, E, R>, value: X): Effect<A, E, R>
+  <C extends Clock.Clock>(clock: C): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
+  <C extends Clock.Clock, A, E, R>(effect: Effect<A, E, R>, clock: C): Effect<A, E, R>
 }
 ```

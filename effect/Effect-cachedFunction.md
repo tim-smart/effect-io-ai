@@ -50,7 +50,7 @@ const program = Effect.gen(function* () {
   console.log(yield* memoized(10))
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Example Output:
 // non-memoized version:
 // 2

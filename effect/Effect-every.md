@@ -41,7 +41,7 @@ const program = Effect.gen(function* () {
   console.log(allEven)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: true
 ```
 

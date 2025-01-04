@@ -41,7 +41,7 @@ const program = Effect.gen(function* () {
   console.log(total)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output: 6
 ```
 

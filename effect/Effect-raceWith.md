@@ -50,7 +50,7 @@ const program = Effect.raceWith(task1, task2, {
   onOtherDone: (exit) => Console.log(`task2 exited with ${exit}`)
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // task1 done
 // task1 exited with {

@@ -1,6 +1,6 @@
 # withRandomScoped
 
-Sets the implementation of the random service to the specified value and
+Sets the implementation of the `Random` service to the specified value and
 restores it to its original value when the scope is closed.
 
 To import and use `withRandomScoped` from the "Effect" module:

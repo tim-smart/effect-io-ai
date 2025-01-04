@@ -1,14 +1,18 @@
 # zip
 
-Combines two effects into a single effect, producing a tuple with the results of both effects.
+Combines two effects into a single effect, producing a tuple of their
+results.
 
-The `zip` function executes the first effect (left) and then the second effect (right).
-Once both effects succeed, their results are combined into a tuple.
+**Details**
 
-**Concurrency**
+This function combines two effects, `self` and `that`, into one. It executes
+the first effect (`self`) and then the second effect (`that`), collecting
+their results into a tuple. Both effects must succeed for the resulting
+effect to succeed. If either effect fails, the entire operation fails.
 
-By default, `zip` processes the effects sequentially. To execute the effects concurrently,
-use the `{ concurrent: true }` option.
+By default, the effects are executed sequentially. If the `concurrent` option
+is set to `true`, the effects will run concurrently, potentially improving
+performance for independent operations.
 
 To import and use `zip` from the "Effect" module:
 
@@ -33,7 +37,7 @@ const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.ta
 //      ▼
 const program = Effect.zip(task1, task2)
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task1 done"
 // timestamp=... level=INFO fiber=#0 message="task2 done"
@@ -52,7 +56,7 @@ const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.ta
 // Run both effects concurrently using the concurrent option
 const program = Effect.zip(task1, task2, { concurrent: true })
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task2 done"
 // timestamp=... level=INFO fiber=#0 message="task1 done"

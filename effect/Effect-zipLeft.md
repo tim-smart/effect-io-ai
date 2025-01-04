@@ -1,18 +1,24 @@
 # zipLeft
 
-Runs two effects sequentially, returning the result of the first effect and
-discarding the result of the second.
+Executes two effects sequentially, returning the result of the first effect
+and ignoring the result of the second.
+
+**Details**
+
+This function allows you to run two effects in sequence, where the result of
+the first effect is preserved, and the result of the second effect is
+discarded. By default, the two effects are executed sequentially. If you need
+them to run concurrently, you can pass the `{ concurrent: true }` option.
+
+The second effect will always be executed, even though its result is ignored.
+This makes it useful for cases where you want to execute an effect for its
+side effects while keeping the result of another effect.
 
 **When to Use**
 
-Use `zipLeft` when you need to execute two effects in order but are only
-interested in the result of the first one. The second effect will still
-execute, but its result is ignored.
-
-**Concurrency**
-
-By default, the effects are run sequentially. To run them concurrently, use
-the `{ concurrent: true }` option.
+Use this function when you are only interested in the result of the first
+effect but still need to run the second effect for its side effects, such as
+logging or performing a cleanup action.
 
 To import and use `zipLeft` from the "Effect" module:
 
@@ -32,7 +38,7 @@ const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.ta
 
 const program = Effect.zipLeft(task1, task2)
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task1 done"
 // timestamp=... level=INFO fiber=#0 message="task2 done"

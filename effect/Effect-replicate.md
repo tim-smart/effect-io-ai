@@ -32,7 +32,7 @@ const program = Effect.gen(function* () {
   }
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // Hello, World!
 // Hello, World!

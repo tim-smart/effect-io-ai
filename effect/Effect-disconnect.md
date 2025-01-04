@@ -4,6 +4,8 @@ Provides a way to handle timeouts in uninterruptible effects, allowing them
 to continue in the background while the main control flow proceeds with the
 timeout error.
 
+**Details**
+
 The `disconnect` function allows an uninterruptible effect to continue
 running in the background, while enabling the main control flow to
 immediately recognize a timeout condition. This is useful when you want to
@@ -47,7 +49,7 @@ const timedEffect = longRunningTask.pipe(
   Effect.timeout("1 second")
 )
 
-Effect.runPromiseExit(timedEffect).then(console.log)
+// Effect.runPromiseExit(timedEffect).then(console.log)
 // Output:
 // Start heavy processing...
 // {

@@ -57,7 +57,7 @@ const program = Effect.gen(function* () {
   yield* cached.pipe(Effect.andThen(Console.log))
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // expensive task...
 // result 1
