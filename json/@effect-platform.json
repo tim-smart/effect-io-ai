@@ -2710,7 +2710,7 @@
     },
     "project": "@effect/platform",
     "name": "AdditionalSchemas",
-    "description": null,
+    "description": "Adds additional schemas to components/schemas.\nThe provided schemas must have a `identifier` annotation.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -4980,7 +4980,7 @@
     },
     "project": "@effect/platform",
     "name": "apiKey",
-    "description": "Create an API key security scheme.\n\nYou can implement some api middleware for this security scheme using\n`HttpApiBuilder.middlewareSecurity`.\n\nTo set the correct cookie in a handler, you can use\n`HttpApiBuilder.securitySetCookie`.",
+    "description": "Create an API key security scheme.\n\nYou can implement some api middleware for this security scheme using\n`HttpApiBuilder.middlewareSecurity`.\n\nTo set the correct cookie in a handler, you can use\n`HttpApiBuilder.securitySetCookie`.\n\nThe default value for `in` is \"header\".",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -12905,7 +12905,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "export declare const annotations: (options: { readonly identifier?: string | undefined; readonly title?: string | undefined; readonly version?: string | undefined; readonly description?: string | undefined; readonly license?: OpenAPISpecLicense | undefined; readonly summary?: string | undefined; readonly externalDocs?: OpenAPISpecExternalDocs | undefined; readonly servers?: ReadonlyArray<OpenAPISpecServer> | undefined; readonly format?: string | undefined; readonly override?: Record<string, unknown> | undefined; readonly exclude?: boolean | undefined; readonly transform?: ((openApiSpec: Record<string, any>) => Record<string, any>) | undefined; }) => Context.Context<never>"
+    "signature": "export declare const annotations: (options: { readonly identifier?: string | undefined; readonly title?: string | undefined; readonly version?: string | undefined; readonly description?: string | undefined; readonly license?: OpenAPISpecLicense | undefined; readonly summary?: string | undefined; readonly deprecated?: boolean | undefined; readonly externalDocs?: OpenAPISpecExternalDocs | undefined; readonly servers?: ReadonlyArray<OpenAPISpecServer> | undefined; readonly format?: string | undefined; readonly override?: Record<string, unknown> | undefined; readonly exclude?: boolean | undefined; readonly transform?: ((openApiSpec: Record<string, any>) => Record<string, any>) | undefined; }) => Context.Context<never>"
   },
   {
     "_tag": "Function",
@@ -13409,7 +13409,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenApiSpecContentType = \"application/json\" | \"application/xml\" | \"multipart/form-data\" | \"text/plain\""
+    "signature": "export type OpenApiSpecContentType =\n  | \"application/json\"\n  | \"application/xml\"\n  | \"application/x-www-form-urlencoded\"\n  | \"multipart/form-data\"\n  | \"text/plain\""
   },
   {
     "_tag": "TypeAlias",

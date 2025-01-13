@@ -8,6 +8,8 @@ You can implement some api middleware for this security scheme using
 To set the correct cookie in a handler, you can use
 `HttpApiBuilder.securitySetCookie`.
 
+The default value for `in` is "header".
+
 To import and use `apiKey` from the "HttpApiSecurity" module:
 
 ```ts

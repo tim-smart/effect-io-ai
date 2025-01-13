@@ -18,10 +18,10 @@ BigDecimal.unsafeFromNumber
 **Example**
 
 ```ts
-import { fromNumber, make } from "effect/BigDecimal"
+import { unsafeFromNumber, make } from "effect/BigDecimal"
 
-assert.deepStrictEqual(fromNumber(123), make(123n, 0))
-assert.deepStrictEqual(fromNumber(123.456), make(123456n, 3))
+assert.deepStrictEqual(unsafeFromNumber(123), make(123n, 0))
+assert.deepStrictEqual(unsafeFromNumber(123.456), make(123456n, 3))
 ```
 
 **Signature**
