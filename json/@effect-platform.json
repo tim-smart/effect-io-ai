@@ -2823,7 +2823,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface HttpApi<\n  out Id extends string,\n  out Groups extends HttpApiGroup.HttpApiGroup.Any = never,\n  in out E = never,\n  out R = never\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: TypeId\n  readonly identifier: Id\n  readonly groups: Record.ReadonlyRecord<string, Groups>\n  readonly annotations: Context.Context<never>\n  readonly errorSchema: Schema.Schema<E, unknown, R>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add a `HttpApiGroup` to the `HttpApi`.\n   */\n  add<A extends HttpApiGroup.HttpApiGroup.Any>(group: A): HttpApi<Id, Groups | A, E, R>\n  /**\n   * Add another `HttpApi` to the `HttpApi`.\n   */\n  addHttpApi<Id2 extends string, Groups2 extends HttpApiGroup.HttpApiGroup.Any, E2, R2>(\n    api: HttpApi<Id2, Groups2, E2, R2>\n  ): HttpApi<\n    Id,\n    Groups | HttpApiGroup.HttpApiGroup.AddContext<Groups2, R2>,\n    E | E2,\n    R\n  >\n  /**\n   * Add an global error to the `HttpApi`.\n   */\n  addError<A, I, RX>(\n    schema: Schema.Schema<A, I, RX>,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApi<Id, Groups, E | A, R | RX>\n  /**\n   * Prefix all endpoints in the `HttpApi`.\n   */\n  prefix(prefix: PathInput): HttpApi<Id, Groups, E, R>\n  /**\n   * Add a middleware to a `HttpApi`. It will be applied to all endpoints in the\n   * `HttpApi`.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(\n    middleware: Context.Tag<I, S>\n  ): HttpApi<\n    Id,\n    Groups,\n    E | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>\n  >\n  /**\n   * Annotate the `HttpApi`.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): HttpApi<Id, Groups, E, R>\n  /**\n   * Annotate the `HttpApi` with a Context.\n   */\n  annotateContext<I>(context: Context.Context<I>): HttpApi<Id, Groups, E, R>\n}"
+    "signature": "export interface HttpApi<\n  out Id extends string,\n  out Groups extends HttpApiGroup.HttpApiGroup.Any = never,\n  in out E = never,\n  out R = never\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: TypeId\n  readonly identifier: Id\n  readonly groups: Record.ReadonlyRecord<string, Groups>\n  readonly annotations: Context.Context<never>\n  readonly errorSchema: Schema.Schema<E, unknown, R>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add a `HttpApiGroup` to the `HttpApi`.\n   */\n  add<A extends HttpApiGroup.HttpApiGroup.Any>(group: A): HttpApi<Id, Groups | A, E, R>\n  /**\n   * Add another `HttpApi` to the `HttpApi`.\n   */\n  addHttpApi<Id2 extends string, Groups2 extends HttpApiGroup.HttpApiGroup.Any, E2, R2>(\n    api: HttpApi<Id2, Groups2, E2, R2>\n  ): HttpApi<\n    Id,\n    Groups | HttpApiGroup.HttpApiGroup.AddContext<Groups2, R2>,\n    E | E2,\n    R\n  >\n  /**\n   * Add an global error to the `HttpApi`.\n   */\n  addError<A, I, RX>(\n    schema: Schema.Schema<A, I, RX>,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApi<Id, Groups, E | A, R | RX>\n  /**\n   * Prefix all endpoints in the `HttpApi`.\n   */\n  prefix(prefix: HttpApiEndpoint.PathSegment): HttpApi<Id, Groups, E, R>\n  /**\n   * Add a middleware to a `HttpApi`. It will be applied to all endpoints in the\n   * `HttpApi`.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(\n    middleware: Context.Tag<I, S>\n  ): HttpApi<\n    Id,\n    Groups,\n    E | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>\n  >\n  /**\n   * Annotate the `HttpApi`.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): HttpApi<Id, Groups, E, R>\n  /**\n   * Annotate the `HttpApi` with a Context.\n   */\n  annotateContext<I>(context: Context.Context<I>): HttpApi<Id, Groups, E, R>\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -3275,7 +3275,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const get: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"GET\">; <const Name extends string>(name: Name, path: HttpRouter.PathInput): HttpApiEndpoint<Name, \"GET\">; }"
+    "signature": "export declare const get: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"GET\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"GET\">; }"
   },
   {
     "_tag": "Constant",
@@ -3293,7 +3293,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const post: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"POST\">; <const Name extends string>(name: Name, path: HttpRouter.PathInput): HttpApiEndpoint<Name, \"POST\">; }"
+    "signature": "export declare const post: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"POST\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"POST\">; }"
   },
   {
     "_tag": "Constant",
@@ -3311,7 +3311,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const put: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"PUT\">; <const Name extends string>(name: Name, path: HttpRouter.PathInput): HttpApiEndpoint<Name, \"PUT\">; }"
+    "signature": "export declare const put: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"PUT\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"PUT\">; }"
   },
   {
     "_tag": "Constant",
@@ -3329,7 +3329,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const patch: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"PATCH\">; <const Name extends string>(name: Name, path: HttpRouter.PathInput): HttpApiEndpoint<Name, \"PATCH\">; }"
+    "signature": "export declare const patch: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"PATCH\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"PATCH\">; }"
   },
   {
     "_tag": "Constant",
@@ -3347,7 +3347,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const del: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"DELETE\">; <const Name extends string>(name: Name, path: HttpRouter.PathInput): HttpApiEndpoint<Name, \"DELETE\">; }"
+    "signature": "export declare const del: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"DELETE\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"DELETE\">; }"
   },
   {
     "_tag": "Function",
@@ -3401,7 +3401,25 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface HttpApiEndpoint<\n  out Name extends string,\n  out Method extends HttpMethod,\n  in out Path = never,\n  in out UrlParams = never,\n  in out Payload = never,\n  in out Headers = never,\n  in out Success = void,\n  in out Error = never,\n  out R = never,\n  out RE = never\n> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly name: Name\n  readonly path: HttpRouter.PathInput\n  readonly method: Method\n  readonly pathSchema: Option.Option<Schema.Schema<Path, unknown, R>>\n  readonly urlParamsSchema: Option.Option<Schema.Schema<UrlParams, unknown, R>>\n  readonly payloadSchema: Option.Option<Schema.Schema<Payload, unknown, R>>\n  readonly headersSchema: Option.Option<Schema.Schema<Headers, unknown, R>>\n  readonly successSchema: Schema.Schema<Success, unknown, R>\n  readonly errorSchema: Schema.Schema<Error, unknown, RE>\n  readonly annotations: Context.Context<never>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add a schema for the success response of the endpoint. The status code\n   * will be inferred from the schema, otherwise it will default to 200.\n   */\n  addSuccess<S extends Schema.Schema.Any>(\n    schema: S,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Exclude<Success, void> | Schema.Schema.Type<S>,\n    Error,\n    R | Schema.Schema.Context<S>,\n    RE\n  >\n\n  /**\n   * Add an error response schema to the endpoint. The status code\n   * will be inferred from the schema, otherwise it will default to 500.\n   */\n  addError<E extends Schema.Schema.Any>(\n    schema: E,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error | Schema.Schema.Type<E>,\n    R,\n    RE | Schema.Schema.Context<E>\n  >\n\n  /**\n   * Set the schema for the request body of the endpoint. The schema will be\n   * used to validate the request body before the handler is called.\n   *\n   * For endpoints with no request body, the payload will use the url search\n   * parameters.\n   *\n   * You can set a multipart schema to handle file uploads by using the\n   * `HttpApiSchema.Multipart` combinator.\n   */\n  setPayload<P extends Schema.Schema.Any>(\n    schema: P & HttpApiEndpoint.ValidatePayload<Method, P>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Schema.Schema.Type<P>,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<P>,\n    RE\n  >\n\n  /**\n   * Set the schema for the path parameters of the endpoint. The schema will be\n   * used to validate the path parameters before the handler is called.\n   */\n  setPath<Path extends Schema.Schema.Any>(\n    schema: Path & HttpApiEndpoint.ValidatePath<Path>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Schema.Schema.Type<Path>,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<Path>,\n    RE\n  >\n\n  /**\n   * Set the schema for the url search parameters of the endpoint.\n   */\n  setUrlParams<UrlParams extends Schema.Schema.Any>(\n    schema: UrlParams & HttpApiEndpoint.ValidateUrlParams<UrlParams>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    Schema.Schema.Type<UrlParams>,\n    Payload,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<Path>,\n    RE\n  >\n\n  /**\n   * Set the schema for the headers of the endpoint. The schema will be\n   * used to validate the headers before the handler is called.\n   */\n  setHeaders<H extends Schema.Schema.Any>(\n    schema: H & HttpApiEndpoint.ValidateHeaders<H>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Schema.Schema.Type<H>,\n    Success,\n    Error,\n    R | Schema.Schema.Context<H>,\n    RE\n  >\n\n  /**\n   * Add a prefix to the path of the endpoint.\n   */\n  prefix(\n    prefix: HttpRouter.PathInput\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n\n  /**\n   * Add an `HttpApiMiddleware` to the endpoint.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(middleware: Context.Tag<I, S>): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I,\n    RE | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>\n  >\n\n  /**\n   * Add an annotation on the endpoint.\n   */\n  annotate<I, S>(\n    tag: Context.Tag<I, S>,\n    value: S\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n\n  /**\n   * Merge the annotations of the endpoint with the provided context.\n   */\n  annotateContext<I>(\n    context: Context.Context<I>\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n}"
+    "signature": "export interface HttpApiEndpoint<\n  out Name extends string,\n  out Method extends HttpMethod,\n  in out Path = never,\n  in out UrlParams = never,\n  in out Payload = never,\n  in out Headers = never,\n  in out Success = void,\n  in out Error = never,\n  out R = never,\n  out RE = never\n> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly name: Name\n  readonly path: PathSegment\n  readonly method: Method\n  readonly pathSchema: Option.Option<Schema.Schema<Path, unknown, R>>\n  readonly urlParamsSchema: Option.Option<Schema.Schema<UrlParams, unknown, R>>\n  readonly payloadSchema: Option.Option<Schema.Schema<Payload, unknown, R>>\n  readonly headersSchema: Option.Option<Schema.Schema<Headers, unknown, R>>\n  readonly successSchema: Schema.Schema<Success, unknown, R>\n  readonly errorSchema: Schema.Schema<Error, unknown, RE>\n  readonly annotations: Context.Context<never>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add a schema for the success response of the endpoint. The status code\n   * will be inferred from the schema, otherwise it will default to 200.\n   */\n  addSuccess<S extends Schema.Schema.Any>(\n    schema: S,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Exclude<Success, void> | Schema.Schema.Type<S>,\n    Error,\n    R | Schema.Schema.Context<S>,\n    RE\n  >\n\n  /**\n   * Add an error response schema to the endpoint. The status code\n   * will be inferred from the schema, otherwise it will default to 500.\n   */\n  addError<E extends Schema.Schema.Any>(\n    schema: E,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error | Schema.Schema.Type<E>,\n    R,\n    RE | Schema.Schema.Context<E>\n  >\n\n  /**\n   * Set the schema for the request body of the endpoint. The schema will be\n   * used to validate the request body before the handler is called.\n   *\n   * For endpoints with no request body, the payload will use the url search\n   * parameters.\n   *\n   * You can set a multipart schema to handle file uploads by using the\n   * `HttpApiSchema.Multipart` combinator.\n   */\n  setPayload<P extends Schema.Schema.Any>(\n    schema: P & HttpApiEndpoint.ValidatePayload<Method, P>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Schema.Schema.Type<P>,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<P>,\n    RE\n  >\n\n  /**\n   * Set the schema for the path parameters of the endpoint. The schema will be\n   * used to validate the path parameters before the handler is called.\n   */\n  setPath<Path extends Schema.Schema.Any>(\n    schema: Path & HttpApiEndpoint.ValidatePath<Path>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Schema.Schema.Type<Path>,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<Path>,\n    RE\n  >\n\n  /**\n   * Set the schema for the url search parameters of the endpoint.\n   */\n  setUrlParams<UrlParams extends Schema.Schema.Any>(\n    schema: UrlParams & HttpApiEndpoint.ValidateUrlParams<UrlParams>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    Schema.Schema.Type<UrlParams>,\n    Payload,\n    Headers,\n    Success,\n    Error,\n    R | Schema.Schema.Context<Path>,\n    RE\n  >\n\n  /**\n   * Set the schema for the headers of the endpoint. The schema will be\n   * used to validate the headers before the handler is called.\n   */\n  setHeaders<H extends Schema.Schema.Any>(\n    schema: H & HttpApiEndpoint.ValidateHeaders<H>\n  ): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Schema.Schema.Type<H>,\n    Success,\n    Error,\n    R | Schema.Schema.Context<H>,\n    RE\n  >\n\n  /**\n   * Add a prefix to the path of the endpoint.\n   */\n  prefix(\n    prefix: PathSegment\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n\n  /**\n   * Add an `HttpApiMiddleware` to the endpoint.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(middleware: Context.Tag<I, S>): HttpApiEndpoint<\n    Name,\n    Method,\n    Path,\n    UrlParams,\n    Payload,\n    Headers,\n    Success,\n    Error | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I,\n    RE | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>\n  >\n\n  /**\n   * Add an annotation on the endpoint.\n   */\n  annotate<I, S>(\n    tag: Context.Tag<I, S>,\n    value: S\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n\n  /**\n   * Merge the annotations of the endpoint with the provided context.\n   */\n  annotateContext<I>(\n    context: Context.Context<I>\n  ): HttpApiEndpoint<Name, Method, Path, UrlParams, Payload, Headers, Success, Error, R, RE>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "HttpApiEndpoint",
+      "path": [
+        "src",
+        "HttpApiEndpoint.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "PathSegment",
+    "description": "Represents a path segment. A path segment is a string that represents a\nsegment of a URL path.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type PathSegment = `/${string}`"
   },
   {
     "_tag": "TypeAlias",
@@ -3851,7 +3869,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface HttpApiGroup<\n  out Id extends string,\n  out Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never,\n  in out Error = HttpApiDecodeError,\n  out R = never,\n  out TopLevel extends (true | false) = false\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: TypeId\n  readonly identifier: Id\n  readonly topLevel: TopLevel\n  readonly endpoints: Record.ReadonlyRecord<string, Endpoints>\n  readonly errorSchema: Schema.Schema<Error, unknown, R>\n  readonly annotations: Context.Context<never>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add an `HttpApiEndpoint` to an `HttpApiGroup`.\n   */\n  add<A extends HttpApiEndpoint.HttpApiEndpoint.Any>(\n    endpoint: A\n  ): HttpApiGroup<Id, Endpoints | A, Error, R, TopLevel>\n\n  /**\n   * Add an error schema to an `HttpApiGroup`, which is shared by all endpoints in the\n   * group.\n   */\n  addError<A, I, RX>(\n    schema: Schema.Schema<A, I, RX>,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiGroup<Id, Endpoints, Error | A, R | RX, TopLevel>\n\n  /**\n   * Add a path prefix to all endpoints in an `HttpApiGroup`. Note that this will only\n   * add the prefix to the endpoints before this api is called.\n   */\n  prefix(prefix: PathInput): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * Add an `HttpApiMiddleware` to the `HttpApiGroup`.\n   *\n   * It will be applied to all endpoints in the group.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(middleware: Context.Tag<I, S>): HttpApiGroup<\n    Id,\n    Endpoints,\n    Error | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>,\n    TopLevel\n  >\n\n  /**\n   * Add an `HttpApiMiddleware` to each endpoint in the `HttpApiGroup`.\n   *\n   * Endpoints added after this api is called will not have the middleware\n   * applied.\n   */\n  middlewareEndpoints<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(\n    middleware: Context.Tag<I, S>\n  ): HttpApiGroup<\n    Id,\n    HttpApiEndpoint.HttpApiEndpoint.AddContext<Endpoints, I>,\n    Error,\n    R,\n    TopLevel\n  >\n\n  /**\n   * Merge the annotations of an `HttpApiGroup` with a new context.\n   */\n  annotateContext<I>(context: Context.Context<I>): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * Add an annotation to an `HttpApiGroup`.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * For each endpoint in an `HttpApiGroup`, update the annotations with a new\n   * context.\n   *\n   * Note that this will only update the annotations before this api is called.\n   */\n  annotateEndpointsContext<I>(context: Context.Context<I>): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * For each endpoint in an `HttpApiGroup`, add an annotation.\n   *\n   * Note that this will only add the annotation to the endpoints before this api\n   * is called.\n   */\n  annotateEndpoints<I, S>(tag: Context.Tag<I, S>, value: S): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n}"
+    "signature": "export interface HttpApiGroup<\n  out Id extends string,\n  out Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never,\n  in out Error = HttpApiDecodeError,\n  out R = never,\n  out TopLevel extends (true | false) = false\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: TypeId\n  readonly identifier: Id\n  readonly topLevel: TopLevel\n  readonly endpoints: Record.ReadonlyRecord<string, Endpoints>\n  readonly errorSchema: Schema.Schema<Error, unknown, R>\n  readonly annotations: Context.Context<never>\n  readonly middlewares: ReadonlySet<HttpApiMiddleware.TagClassAny>\n\n  /**\n   * Add an `HttpApiEndpoint` to an `HttpApiGroup`.\n   */\n  add<A extends HttpApiEndpoint.HttpApiEndpoint.Any>(\n    endpoint: A\n  ): HttpApiGroup<Id, Endpoints | A, Error, R, TopLevel>\n\n  /**\n   * Add an error schema to an `HttpApiGroup`, which is shared by all endpoints in the\n   * group.\n   */\n  addError<A, I, RX>(\n    schema: Schema.Schema<A, I, RX>,\n    annotations?: {\n      readonly status?: number | undefined\n    }\n  ): HttpApiGroup<Id, Endpoints, Error | A, R | RX, TopLevel>\n\n  /**\n   * Add a path prefix to all endpoints in an `HttpApiGroup`. Note that this will only\n   * add the prefix to the endpoints before this api is called.\n   */\n  prefix(prefix: HttpApiEndpoint.PathSegment): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * Add an `HttpApiMiddleware` to the `HttpApiGroup`.\n   *\n   * It will be applied to all endpoints in the group.\n   */\n  middleware<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(middleware: Context.Tag<I, S>): HttpApiGroup<\n    Id,\n    Endpoints,\n    Error | HttpApiMiddleware.HttpApiMiddleware.Error<I>,\n    R | I | HttpApiMiddleware.HttpApiMiddleware.ErrorContext<I>,\n    TopLevel\n  >\n\n  /**\n   * Add an `HttpApiMiddleware` to each endpoint in the `HttpApiGroup`.\n   *\n   * Endpoints added after this api is called will not have the middleware\n   * applied.\n   */\n  middlewareEndpoints<I extends HttpApiMiddleware.HttpApiMiddleware.AnyId, S>(\n    middleware: Context.Tag<I, S>\n  ): HttpApiGroup<\n    Id,\n    HttpApiEndpoint.HttpApiEndpoint.AddContext<Endpoints, I>,\n    Error,\n    R,\n    TopLevel\n  >\n\n  /**\n   * Merge the annotations of an `HttpApiGroup` with a new context.\n   */\n  annotateContext<I>(context: Context.Context<I>): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * Add an annotation to an `HttpApiGroup`.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * For each endpoint in an `HttpApiGroup`, update the annotations with a new\n   * context.\n   *\n   * Note that this will only update the annotations before this api is called.\n   */\n  annotateEndpointsContext<I>(context: Context.Context<I>): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n\n  /**\n   * For each endpoint in an `HttpApiGroup`, add an annotation.\n   *\n   * Note that this will only add the annotation to the endpoints before this api\n   * is called.\n   */\n  annotateEndpoints<I, S>(tag: Context.Tag<I, S>, value: S): HttpApiGroup<Id, Endpoints, Error, R, TopLevel>\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -11783,6 +11801,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "From \"./Url.js\"",
+    "description": "Re-exports all named exports from the \"./Url.js\" module as `Url`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Url from \"./Url.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "From \"./UrlParams.js\"",
     "description": "Re-exports all named exports from the \"./UrlParams.js\" module as `UrlParams`.",
     "deprecated": false,
@@ -12918,9 +12954,11 @@
     },
     "project": "@effect/platform",
     "name": "fromApi",
-    "description": null,
+    "description": "Converts an `HttpApi` instance into an OpenAPI Specification object.\n\n**Details**\n\nThis function takes an `HttpApi` instance, which defines a structured API,\nand generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec\nadheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as\npaths, operations, security schemes, and components. The function processes\nthe API's annotations, middleware, groups, and endpoints to build a complete\nand accurate representation of the API in OpenAPI format.\n\nThe function also deduplicates schemas, applies transformations, and\nintegrates annotations like descriptions, summaries, external documentation,\nand overrides. Cached results are used for better performance when the same\n`HttpApi` instance is processed multiple times.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from \"@effect/platform\"\nimport { Schema } from \"effect\"\n\nconst api = HttpApi.make(\"api\").add(\n  HttpApiGroup.make(\"group\").add(\n    HttpApiEndpoint.get(\"get\", \"/items\")\n      .addSuccess(Schema.Array(Schema.String))\n  )\n)\n\nconst spec = OpenApi.fromApi(api)\n\n// console.log(JSON.stringify(spec, null, 2))\n// Output: OpenAPI specification in JSON format"
+    ],
     "since": "1.0.0",
     "category": "constructors",
     "signature": null
@@ -12941,7 +12979,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPIApiKeySecurityScheme {\n  readonly type: \"apiKey\"\n  readonly description?: string\n  readonly name: string\n  readonly in: \"query\" | \"header\" | \"cookie\"\n}"
+    "signature": "export interface OpenAPIApiKeySecurityScheme {\n  readonly type: \"apiKey\"\n  name: string\n  in: \"query\" | \"header\" | \"cookie\"\n  description?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -12959,7 +12997,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPIComponents {\n  readonly schemas?: ReadonlyRecord<string, JsonSchema.JsonSchema>\n  readonly securitySchemes?: ReadonlyRecord<string, OpenAPISecurityScheme>\n}"
+    "signature": "export interface OpenAPIComponents {\n  schemas: Record<string, JsonSchema.JsonSchema>\n  securitySchemes: Record<string, OpenAPISecurityScheme>\n}"
   },
   {
     "_tag": "Interface",
@@ -12977,61 +13015,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPIHTTPSecurityScheme {\n  readonly type: \"http\"\n  readonly description?: string\n  readonly scheme: \"bearer\" | \"basic\" | string\n  /* only for scheme: 'bearer' */\n  readonly bearerFormat?: string\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "OpenApi",
-      "path": [
-        "src",
-        "OpenApi.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "OpenAPIMutualTLSSecurityScheme",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface OpenAPIMutualTLSSecurityScheme {\n  readonly type: \"mutualTLS\"\n  readonly description?: string\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "OpenApi",
-      "path": [
-        "src",
-        "OpenApi.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "OpenAPIOAuth2SecurityScheme",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface OpenAPIOAuth2SecurityScheme {\n  readonly type: \"oauth2\"\n  readonly description?: string\n  readonly flows: ReadonlyRecord<\n    \"implicit\" | \"password\" | \"clientCredentials\" | \"authorizationCode\",\n    ReadonlyRecord<string, unknown>\n  >\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "OpenApi",
-      "path": [
-        "src",
-        "OpenApi.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "OpenAPIOpenIdConnectSecurityScheme",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface OpenAPIOpenIdConnectSecurityScheme {\n  readonly type: \"openIdConnect\"\n  readonly description?: string\n  readonly openIdConnectUrl: string\n}"
+    "signature": "export interface OpenAPIHTTPSecurityScheme {\n  readonly type: \"http\"\n  scheme: \"bearer\" | \"basic\" | string\n  description?: string\n  /* only for scheme: 'bearer' */\n  bearerFormat?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13044,12 +13028,12 @@
     },
     "project": "@effect/platform",
     "name": "OpenAPISpec",
-    "description": null,
+    "description": "This model describes the OpenAPI specification (version 3.1.0) returned by\n{@link fromApi}. It is not intended to describe the entire OpenAPI\nspecification, only the output of `fromApi`.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpec {\n  readonly openapi: \"3.1.0\"\n  readonly info: OpenAPISpecInfo\n  readonly servers?: Array<OpenAPISpecServer>\n  readonly paths: OpenAPISpecPaths\n  readonly components?: OpenAPIComponents\n  readonly security?: Array<OpenAPISecurityRequirement>\n  readonly tags?: Array<OpenAPISpecTag>\n  readonly externalDocs?: OpenAPISpecExternalDocs\n}"
+    "signature": "export interface OpenAPISpec {\n  openapi: \"3.1.0\"\n  info: OpenAPISpecInfo\n  paths: OpenAPISpecPaths\n  components: OpenAPIComponents\n  security: Array<OpenAPISecurityRequirement>\n  tags: Array<OpenAPISpecTag>\n  servers?: Array<OpenAPISpecServer>\n}"
   },
   {
     "_tag": "Interface",
@@ -13067,7 +13051,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecExternalDocs {\n  readonly url: string\n  readonly description?: string\n}"
+    "signature": "export interface OpenAPISpecExternalDocs {\n  url: string\n  description?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13085,7 +13069,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecInfo {\n  readonly title: string\n  readonly version: string\n  readonly description?: string\n  readonly license?: OpenAPISpecLicense\n  readonly summary?: string\n}"
+    "signature": "export interface OpenAPISpecInfo {\n  title: string\n  version: string\n  description?: string\n  license?: OpenAPISpecLicense\n  summary?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13103,7 +13087,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecLicense {\n  readonly name: string\n  readonly url?: string\n}"
+    "signature": "export interface OpenAPISpecLicense {\n  name: string\n  url?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13121,7 +13105,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecOperation {\n  readonly requestBody?: OpenAPISpecRequestBody\n  readonly responses?: OpenAPISpecResponses\n  readonly operationId?: string\n  readonly description?: string\n  readonly parameters?: Array<OpenAPISpecParameter>\n  readonly summary?: string\n  readonly deprecated?: boolean\n  readonly tags?: Array<string>\n  readonly security?: Array<OpenAPISecurityRequirement>\n  readonly externalDocs?: OpenAPISpecExternalDocs\n}"
+    "signature": "export interface OpenAPISpecOperation {\n  operationId: string\n  parameters: Array<OpenAPISpecParameter>\n  responses: OpenAPISpecResponses\n  /** Always contains at least the title annotation or the group identifier */\n  tags: NonEmptyArray<string>\n  security: Array<OpenAPISecurityRequirement>\n  requestBody?: OpenAPISpecRequestBody\n  description?: string\n  summary?: string\n  deprecated?: boolean\n  externalDocs?: OpenAPISpecExternalDocs\n}"
   },
   {
     "_tag": "Interface",
@@ -13139,7 +13123,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecParameter {\n  readonly name: string\n  readonly in: \"query\" | \"header\" | \"path\" | \"cookie\"\n  readonly schema: JsonSchema.JsonSchema\n  readonly description?: string\n  readonly required?: boolean\n  readonly deprecated?: boolean\n  readonly allowEmptyValue?: boolean\n}"
+    "signature": "export interface OpenAPISpecParameter {\n  name: string\n  in: \"query\" | \"header\" | \"path\" | \"cookie\"\n  schema: JsonSchema.JsonSchema\n  required: boolean\n  description?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13157,7 +13141,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecRequestBody {\n  readonly content: OpenApiSpecContent\n  readonly description?: string\n  readonly required?: boolean\n}"
+    "signature": "export interface OpenAPISpecRequestBody {\n  content: OpenApiSpecContent\n  required: true\n}"
   },
   {
     "_tag": "Interface",
@@ -13175,7 +13159,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecServer {\n  readonly url: string\n  readonly description?: string\n  readonly variables?: Record<string, OpenAPISpecServerVariable>\n}"
+    "signature": "export interface OpenAPISpecServer {\n  url: string\n  description?: string\n  variables?: Record<string, OpenAPISpecServerVariable>\n}"
   },
   {
     "_tag": "Interface",
@@ -13193,7 +13177,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecServerVariable {\n  readonly default: string\n  readonly enum?: [string, ...Array<string>]\n  readonly description?: string\n}"
+    "signature": "export interface OpenAPISpecServerVariable {\n  default: string\n  enum?: NonEmptyArray<string>\n  description?: string\n}"
   },
   {
     "_tag": "Interface",
@@ -13211,7 +13195,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenAPISpecTag {\n  readonly name: string\n  readonly description?: string\n  readonly externalDocs?: OpenAPISpecExternalDocs\n}"
+    "signature": "export interface OpenAPISpecTag {\n  name: string\n  description?: string\n  externalDocs?: OpenAPISpecExternalDocs\n}"
   },
   {
     "_tag": "Interface",
@@ -13229,7 +13213,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenApiSpecMediaType {\n  readonly schema?: JsonSchema.JsonSchema\n  readonly example?: object\n  readonly description?: string\n}"
+    "signature": "export interface OpenApiSpecMediaType {\n  schema: JsonSchema.JsonSchema\n}"
   },
   {
     "_tag": "Interface",
@@ -13247,25 +13231,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OpenApiSpecResponse {\n  readonly content?: OpenApiSpecContent\n  readonly headers?: OpenApiSpecResponseHeaders\n  readonly description: string\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "OpenApi",
-      "path": [
-        "src",
-        "OpenApi.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "OpenApiSpecResponseHeader",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface OpenApiSpecResponseHeader {\n  readonly description?: string\n  readonly schema: JsonSchema.JsonSchema\n}"
+    "signature": "export interface OpenApiSpecResponse {\n  description: string\n  content?: OpenApiSpecContent\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -13283,7 +13249,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenAPISecurityRequirement = ReadonlyRecord<string, Array<string>>"
+    "signature": "export type OpenAPISecurityRequirement = Record<string, Array<string>>"
   },
   {
     "_tag": "TypeAlias",
@@ -13301,7 +13267,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenAPISecurityScheme =\n  | OpenAPIHTTPSecurityScheme\n  | OpenAPIApiKeySecurityScheme\n  | OpenAPIMutualTLSSecurityScheme\n  | OpenAPIOAuth2SecurityScheme\n  | OpenAPIOpenIdConnectSecurityScheme"
+    "signature": "export type OpenAPISecurityScheme =\n  | OpenAPIHTTPSecurityScheme\n  | OpenAPIApiKeySecurityScheme"
   },
   {
     "_tag": "TypeAlias",
@@ -13337,7 +13303,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenAPISpecPathItem =\n  & {\n    readonly [K in OpenAPISpecMethodName]?: OpenAPISpecOperation\n  }\n  & {\n    readonly summary?: string\n    readonly description?: string\n    readonly parameters?: Array<OpenAPISpecParameter>\n  }"
+    "signature": "export type OpenAPISpecPathItem = {\n  [K in OpenAPISpecMethodName]?: OpenAPISpecOperation\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -13355,7 +13321,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenAPISpecPaths = ReadonlyRecord<\n  string,\n  OpenAPISpecPathItem\n>"
+    "signature": "export type OpenAPISpecPaths = Record<string, OpenAPISpecPathItem>"
   },
   {
     "_tag": "TypeAlias",
@@ -13391,7 +13357,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type OpenApiSpecContent = {\n  readonly [K in OpenApiSpecContentType]?: OpenApiSpecMediaType\n}"
+    "signature": "export type OpenApiSpecContent = {\n  [K in OpenApiSpecContentType]?: OpenApiSpecMediaType\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -13410,24 +13376,6 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export type OpenApiSpecContentType =\n  | \"application/json\"\n  | \"application/xml\"\n  | \"application/x-www-form-urlencoded\"\n  | \"multipart/form-data\"\n  | \"text/plain\""
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "OpenApi",
-      "path": [
-        "src",
-        "OpenApi.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "OpenApiSpecResponseHeaders",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export type OpenApiSpecResponseHeaders = ReadonlyRecord<\n  string,\n  OpenApiSpecResponseHeader\n>"
   },
   {
     "_tag": "Function",
@@ -14095,7 +14043,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface RunMain {\n  (\n    options?: {\n      readonly disableErrorReporting?: boolean | undefined\n      readonly disablePrettyLogger?: boolean | undefined\n      readonly teardown?: Teardown | undefined\n    }\n  ): <E, A>(effect: Effect.Effect<A, E>) => void\n  <E, A>(\n    effect: Effect.Effect<A, E>,\n    options?: {\n      readonly disableErrorReporting?: boolean | undefined\n      readonly disablePrettyLogger?: boolean | undefined\n      readonly teardown?: Teardown | undefined\n    }\n  ): void\n}"
+    "signature": "export interface RunMain {\n  /**\n   * Helps you run a main effect with built-in error handling, logging, and signal management.\n   *\n   * **Details**\n   *\n   * This function launches an Effect as the main entry point, setting exit codes\n   * based on success or failure, handling interrupts (e.g., Ctrl+C), and optionally\n   * logging errors. By default, it logs errors and uses a \"pretty\" format, but both\n   * behaviors can be turned off. You can also provide custom teardown logic to\n   * finalize resources or produce different exit codes.\n   *\n   * **Options**\n   *\n   * An optional object that can include:\n   * - `disableErrorReporting`: Turn off automatic error logging.\n   * - `disablePrettyLogger`: Avoid adding the pretty logger.\n   * - `teardown`: Provide custom finalization logic.\n   *\n   * **When to Use**\n   *\n   * Use this function to run an Effect as your application’s main program, especially\n   * when you need structured error handling, log management, interrupt support,\n   * or advanced teardown capabilities.\n   */\n  (\n    options?: {\n      readonly disableErrorReporting?: boolean | undefined\n      readonly disablePrettyLogger?: boolean | undefined\n      readonly teardown?: Teardown | undefined\n    }\n  ): <E, A>(effect: Effect.Effect<A, E>) => void\n  /**\n   * Helps you run a main effect with built-in error handling, logging, and signal management.\n   *\n   * **Details**\n   *\n   * This function launches an Effect as the main entry point, setting exit codes\n   * based on success or failure, handling interrupts (e.g., Ctrl+C), and optionally\n   * logging errors. By default, it logs errors and uses a \"pretty\" format, but both\n   * behaviors can be turned off. You can also provide custom teardown logic to\n   * finalize resources or produce different exit codes.\n   *\n   * **Options**\n   *\n   * An optional object that can include:\n   * - `disableErrorReporting`: Turn off automatic error logging.\n   * - `disablePrettyLogger`: Avoid adding the pretty logger.\n   * - `teardown`: Provide custom finalization logic.\n   *\n   * **When to Use**\n   *\n   * Use this function to run an Effect as your application’s main program, especially\n   * when you need structured error handling, log management, interrupt support,\n   * or advanced teardown capabilities.\n   */\n  <E, A>(\n    effect: Effect.Effect<A, E>,\n    options?: {\n      readonly disableErrorReporting?: boolean | undefined\n      readonly disablePrettyLogger?: boolean | undefined\n      readonly teardown?: Teardown | undefined\n    }\n  ): void\n}"
   },
   {
     "_tag": "Interface",
@@ -15068,6 +15016,286 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface CollectorService {\n  readonly addAll: (_: Iterable<globalThis.Transferable>) => Effect.Effect<void>\n  readonly unsafeAddAll: (_: Iterable<globalThis.Transferable>) => void\n  readonly read: Effect.Effect<Array<globalThis.Transferable>>\n  readonly unsafeRead: () => Array<globalThis.Transferable>\n  readonly unsafeClear: () => void\n  readonly clear: Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "mutate",
+    "description": "This function clones the original `URL` object and applies a callback to the\nclone, allowing multiple updates at once.",
+    "deprecated": false,
+    "examples": [
+      "import { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com\")\n\nconst mutatedUrl = Url.mutate(myUrl, (url) => {\n  url.username = \"user\"\n  url.password = \"pass\"\n})\n\nconsole.log(\"Mutated:\", mutatedUrl.toString())\n// Output: Mutated: https://user:pass@example.com/"
+    ],
+    "since": "1.0.0",
+    "category": "Modifiers",
+    "signature": "export declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setHash",
+    "description": "Updates the hash fragment of the URL.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setHash: { (hash: string): (url: URL) => URL; (url: URL, hash: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setHost",
+    "description": "Updates the host (domain and port) of the URL.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setHost: { (host: string): (url: URL) => URL; (url: URL, host: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setHostname",
+    "description": "Updates the domain of the URL without modifying the port.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setHostname: { (hostname: string): (url: URL) => URL; (url: URL, hostname: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setHref",
+    "description": "Replaces the entire URL string.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setHref: { (href: string): (url: URL) => URL; (url: URL, href: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setPassword",
+    "description": "Updates the password used for authentication.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setPassword: { (password: string): (url: URL) => URL; (url: URL, password: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setPathname",
+    "description": "Updates the path of the URL.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setPathname: { (pathname: string): (url: URL) => URL; (url: URL, pathname: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setPort",
+    "description": "Updates the port of the URL.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setPort: { (port: string): (url: URL) => URL; (url: URL, port: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setProtocol",
+    "description": "Updates the protocol (e.g., `http`, `https`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setProtocol: { (protocol: string): (url: URL) => URL; (url: URL, protocol: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setSearch",
+    "description": "Updates the query string of the URL.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setSearch: { (search: string): (url: URL) => URL; (url: URL, search: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setUsername",
+    "description": "Updates the username used for authentication.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setUsername: { (username: string): (url: URL) => URL; (url: URL, username: string): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "setUrlParams",
+    "description": "Updates the query parameters of a URL.\n\n**Details**\n\nThis function allows you to set or replace the query parameters of a `URL`\nobject using the provided `UrlParams`. It creates a new `URL` object with the\nupdated parameters, leaving the original object unchanged.",
+    "deprecated": false,
+    "examples": [
+      "import { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Write parameters\nconst updatedUrl = Url.setUrlParams(\n  myUrl,\n  UrlParams.fromInput([[\"key\", \"value\"]])\n)\n\nconsole.log(updatedUrl.toString())\n// Output: https://example.com/?key=value"
+    ],
+    "since": "1.0.0",
+    "category": "Setters",
+    "signature": "export declare const setUrlParams: { (urlParams: UrlParams.UrlParams): (url: URL) => URL; (url: URL, urlParams: UrlParams.UrlParams): URL; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "modifyUrlParams",
+    "description": "Reads, modifies, and updates the query parameters of a URL.\n\n**Details**\n\nThis function provides a functional way to interact with query parameters by\nreading the current parameters, applying a transformation function, and then\nwriting the updated parameters back to the URL. It returns a new `URL` object\nwith the modified parameters, ensuring immutability.",
+    "deprecated": false,
+    "examples": [
+      "import { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\nconst changedUrl = Url.modifyUrlParams(myUrl, UrlParams.append(\"key\", \"value\"))\n\nconsole.log(changedUrl.toString())\n// Output: https://example.com/?foo=bar&key=value"
+    ],
+    "since": "1.0.0",
+    "category": "Modifiers",
+    "signature": "export declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "fromString",
+    "description": "Parses a URL string into a `URL` object, returning an `Either` type for safe\nerror handling.\n\n**Details**\n\nThis function converts a string into a `URL` object, enabling safe URL\nparsing with built-in error handling. If the string is invalid or fails to\nparse, this function does not throw an error; instead, it wraps the error in\na `IllegalArgumentException` and returns it as the `Left` value of an\n`Either`. The `Right` value contains the successfully parsed `URL`.\n\nAn optional `base` parameter can be provided to resolve relative URLs. If\nspecified, the function interprets the input `url` as relative to this\n`base`. This is especially useful when dealing with URLs that might not be\nfully qualified.",
+    "deprecated": false,
+    "examples": [
+      "import { Url } from \"@effect/platform\"\nimport { Either } from \"effect\"\n\n// Parse an absolute URL\n//\n//      ┌─── Either<URL, IllegalArgumentException>\n//      ▼\nconst parsed = Url.fromString(\"https://example.com/path\")\n\nif (Either.isRight(parsed)) {\n  console.log(\"Parsed URL:\", parsed.right.toString())\n} else {\n  console.log(\"Error:\", parsed.left.message)\n}\n// Output: Parsed URL: https://example.com/path\n\n// Parse a relative URL with a base\nconst relativeParsed = Url.fromString(\"/relative-path\", \"https://example.com\")\n\nif (Either.isRight(relativeParsed)) {\n  console.log(\"Parsed relative URL:\", relativeParsed.right.toString())\n} else {\n  console.log(\"Error:\", relativeParsed.left.message)\n}\n// Output: Parsed relative URL: https://example.com/relative-path"
+    ],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Url",
+      "path": [
+        "src",
+        "Url.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "urlParams",
+    "description": "Retrieves the query parameters from a URL.\n\n**Details**\n\nThis function extracts the query parameters from a `URL` object and returns\nthem as `UrlParams`. The resulting structure can be easily manipulated or\ninspected.",
+    "deprecated": false,
+    "examples": [
+      "import { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Read parameters\nconst params = Url.urlParams(myUrl)\n\nconsole.log(params)\n// Output: [ [ 'foo', 'bar' ] ]"
+    ],
+    "since": "1.0.0",
+    "category": "Getters",
+    "signature": null
   },
   {
     "_tag": "Constant",
