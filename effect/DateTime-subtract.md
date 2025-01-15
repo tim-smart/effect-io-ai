@@ -23,7 +23,7 @@ DateTime.unsafeMake(0).pipe(DateTime.subtract({ minutes: 5 }))
 
 ```ts
 export declare const subtract: {
-  (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
-  <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): DateTime.PreserveZone<A>
+  (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => A
+  <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): A
 }
 ```

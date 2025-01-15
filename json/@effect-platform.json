@@ -6311,6 +6311,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "tapError",
+    "description": "Performs an additional effect after an unsuccessful request.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "mapping & sequencing",
+    "signature": "export declare const tapError: { <_, E, E2, R2>(f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClient",
+      "path": [
+        "src",
+        "HttpClient.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "tapRequest",
     "description": "Performs an additional effect on the request before sending it.",
     "deprecated": false,
@@ -7724,6 +7742,24 @@
     "signature": "export type TypeId = typeof TypeId"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpMethod",
+      "path": [
+        "src",
+        "HttpMethod.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "all",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const all: ReadonlySet<HttpMethod>"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "HttpMethod",
@@ -7739,6 +7775,26 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpMethod",
+      "path": [
+        "src",
+        "HttpMethod.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "isHttpMethod",
+    "description": "Tests if a value is a `HttpMethod`.",
+    "deprecated": false,
+    "examples": [
+      "import { HttpMethod } from \"@effect/platform\"\n\nassert.deepStrictEqual(HttpMethod.isHttpMethod(\"GET\"), true)\nassert.deepStrictEqual(HttpMethod.isHttpMethod(\"get\"), false)\nassert.deepStrictEqual(HttpMethod.isHttpMethod(1), false)"
+    ],
+    "since": "1.0.0",
+    "category": "refinements",
     "signature": null
   },
   {

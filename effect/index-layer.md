@@ -17,5 +17,8 @@ index.layer
 export declare const layer: <R, E>(
   layer_: Layer.Layer<R, E>,
   options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput }
-) => { (f: (it: Vitest.Methods<R>) => void): void; (name: string, f: (it: Vitest.Methods<R>) => void): void }
+) => {
+  (f: (it: Vitest.MethodsNonLive<R>) => void): void
+  (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void
+}
 ```

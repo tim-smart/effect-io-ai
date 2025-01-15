@@ -14255,7 +14255,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": null,
-    "signature": "export declare const clamp: { (options: { minimum: DateTime; maximum: DateTime; }): (self: DateTime) => DateTime; (self: DateTime, options: { minimum: DateTime; maximum: DateTime; }): DateTime; }"
+    "signature": "export declare const clamp: { <Min extends DateTime, Max extends DateTime>(options: { readonly minimum: Min; readonly maximum: Max; }): <A extends DateTime>(self: A) => A | Min | Max; <A extends DateTime, Min extends DateTime, Max extends DateTime>(self: A, options: { readonly minimum: Min; readonly maximum: Max; }): A | Min | Max; }"
   },
   {
     "_tag": "Constant",
@@ -14695,7 +14695,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "comparisons",
-    "signature": "export declare const min: { (that: DateTime): (self: DateTime) => DateTime; (self: DateTime, that: DateTime): DateTime; }"
+    "signature": "export declare const min: { <That extends DateTime>(that: That): <Self extends DateTime>(self: Self) => Self | That; <Self extends DateTime, That extends DateTime>(self: Self, that: That): Self | That; }"
   },
   {
     "_tag": "Constant",
@@ -14713,7 +14713,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "comparisons",
-    "signature": "export declare const max: { (that: DateTime): (self: DateTime) => DateTime; (self: DateTime, that: DateTime): DateTime; }"
+    "signature": "export declare const max: { <That extends DateTime>(that: That): <Self extends DateTime>(self: Self) => Self | That; <Self extends DateTime, That extends DateTime>(self: Self, that: That): Self | That; }"
   },
   {
     "_tag": "Constant",
@@ -15079,7 +15079,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "parts",
-    "signature": "export declare const setParts: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const setParts: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): A; }"
   },
   {
     "_tag": "Constant",
@@ -15097,7 +15097,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "parts",
-    "signature": "export declare const setPartsUtc: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const setPartsUtc: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): A; }"
   },
   {
     "_tag": "Constant",
@@ -15195,7 +15195,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "mapping",
-    "signature": "export declare const mutate: { (f: (date: Date) => void): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, f: (date: Date) => void): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const mutate: { (f: (date: Date) => void): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void): A; }"
   },
   {
     "_tag": "Constant",
@@ -15213,7 +15213,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "mapping",
-    "signature": "export declare const mutateUtc: { (f: (date: Date) => void): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, f: (date: Date) => void): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const mutateUtc: { (f: (date: Date) => void): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void): A; }"
   },
   {
     "_tag": "Constant",
@@ -15233,7 +15233,7 @@
     ],
     "since": "3.6.0",
     "category": "mapping",
-    "signature": "export declare const mapEpochMillis: { (f: (millis: number) => number): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, f: (millis: number) => number): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const mapEpochMillis: { (f: (millis: number) => number): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (millis: number) => number): A; }"
   },
   {
     "_tag": "Constant",
@@ -15311,7 +15311,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const addDuration: { (duration: Duration.DurationInput): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, duration: Duration.DurationInput): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const addDuration: { (duration: Duration.DurationInput): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, duration: Duration.DurationInput): A; }"
   },
   {
     "_tag": "Constant",
@@ -15331,7 +15331,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const subtractDuration: { (duration: Duration.DurationInput): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, duration: Duration.DurationInput): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const subtractDuration: { (duration: Duration.DurationInput): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, duration: Duration.DurationInput): A; }"
   },
   {
     "_tag": "Constant",
@@ -15351,7 +15351,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const add: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const add: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): A; }"
   },
   {
     "_tag": "Constant",
@@ -15371,7 +15371,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const subtract: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const subtract: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): A; }"
   },
   {
     "_tag": "Constant",
@@ -15391,7 +15391,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const startOf: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const startOf: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): A; }"
   },
   {
     "_tag": "Constant",
@@ -15411,7 +15411,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const endOf: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const endOf: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): A; }"
   },
   {
     "_tag": "Constant",
@@ -15431,7 +15431,7 @@
     ],
     "since": "3.6.0",
     "category": "math",
-    "signature": "export declare const nearest: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): DateTime.PreserveZone<A>; }"
+    "signature": "export declare const nearest: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): A; }"
   },
   {
     "_tag": "Constant",
@@ -15723,7 +15723,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "models",
-    "signature": "export interface Utc extends DateTime.Proto {\n  readonly _tag: \"Utc\"\n  readonly epochMillis: number\n  /** @internal */\n  partsUtc: DateTime.PartsWithWeekday\n}"
+    "signature": "export interface Utc extends DateTime.Proto {\n  readonly _tag: \"Utc\"\n  readonly epochMillis: number\n  partsUtc: DateTime.PartsWithWeekday | undefined\n}"
   },
   {
     "_tag": "Interface",
@@ -15741,7 +15741,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "models",
-    "signature": "export interface Zoned extends DateTime.Proto {\n  readonly _tag: \"Zoned\"\n  readonly epochMillis: number\n  readonly zone: TimeZone\n  /** @internal */\n  adjustedEpochMillis?: number\n  /** @internal */\n  partsAdjusted?: DateTime.PartsWithWeekday\n  /** @internal */\n  partsUtc?: DateTime.PartsWithWeekday\n}"
+    "signature": "export interface Zoned extends DateTime.Proto {\n  readonly _tag: \"Zoned\"\n  readonly epochMillis: number\n  readonly zone: TimeZone\n  adjustedEpochMillis: number | undefined\n  partsAdjusted: DateTime.PartsWithWeekday | undefined\n  partsUtc: DateTime.PartsWithWeekday | undefined\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -38185,7 +38185,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "retrying",
-    "signature": "export declare const retry: { <X, E, RIn2>(schedule: Schedule.Schedule<X, E, RIn2>): <ROut, RIn>(self: Layer<ROut, E, RIn>) => Layer<ROut, E, RIn2 | RIn>; <ROut, E, RIn, X, RIn2>(self: Layer<ROut, E, RIn>, schedule: Schedule.Schedule<X, E, RIn2>): Layer<ROut, E, RIn | RIn2>; }"
+    "signature": "export declare const retry: { <X, E, RIn2>(schedule: Schedule.Schedule<X, NoInfer<E>, RIn2>): <ROut, RIn>(self: Layer<ROut, E, RIn>) => Layer<ROut, E, RIn2 | RIn>; <ROut, E, RIn, X, RIn2>(self: Layer<ROut, E, RIn>, schedule: Schedule.Schedule<X, E, RIn2>): Layer<ROut, E, RIn | RIn2>; }"
   },
   {
     "_tag": "Constant",
@@ -45033,7 +45033,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
-    "signature": "export declare const retry: { <X, E, R2>(policy: Schedule.Schedule<X, E, R2>): <Type, In, R, Out>(self: MetricPolling<Type, In, R, E, Out>) => MetricPolling<Type, In, R2 | R, E, Out>; <Type, In, R, E, Out, X, R2>(self: MetricPolling<Type, In, R, E, Out>, policy: Schedule.Schedule<X, E, R2>): MetricPolling<Type, In, R | R2, E, Out>; }"
+    "signature": "export declare const retry: { <X, E, R2>(policy: Schedule.Schedule<X, NoInfer<E>, R2>): <Type, In, R, Out>(self: MetricPolling<Type, In, R, E, Out>) => MetricPolling<Type, In, R2 | R, E, Out>; <Type, In, R, E, Out, X, R2>(self: MetricPolling<Type, In, R, E, Out>, policy: Schedule.Schedule<X, E, R2>): MetricPolling<Type, In, R | R2, E, Out>; }"
   },
   {
     "_tag": "Constant",

@@ -105,7 +105,7 @@
     "examples": [],
     "since": "1.0.0\n\n```ts\nimport { expect, layer } from \"@effect/vitest\"\nimport { Context, Effect, Layer } from \"effect\"\n\nclass Foo extends Context.Tag(\"Foo\")<Foo, \"foo\">() {\n  static Live = Layer.succeed(Foo, \"foo\")\n}\n\nclass Bar extends Context.Tag(\"Bar\")<Bar, \"bar\">() {\n  static Live = Layer.effect(\n    Bar,\n    Effect.map(Foo, () => \"bar\" as const)\n  )\n}\n\nlayer(Foo.Live)(\"layer\", (it) => {\n  it.effect(\"adds context\", () =>\n    Effect.gen(function* () {\n      const foo = yield* Foo\n      expect(foo).toEqual(\"foo\")\n    })\n  )\n\n  it.layer(Bar.Live)(\"nested\", (it) => {\n    it.effect(\"adds context\", () =>\n      Effect.gen(function* () {\n        const foo = yield* Foo\n        const bar = yield* Bar\n        expect(foo).toEqual(\"foo\")\n        expect(bar).toEqual(\"bar\")\n      })\n    )\n  })\n})\n```",
     "category": null,
-    "signature": "export declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; }) => { (f: (it: Vitest.Methods<R>) => void): void; (name: string, f: (it: Vitest.Methods<R>) => void): void; }"
+    "signature": "export declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }"
   },
   {
     "_tag": "Constant",
@@ -160,6 +160,42 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export declare const it: Vitest.Methods<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/vitest",
+    "name": "makeMethods",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const makeMethods: (it: V.TestAPI) => Vitest.Methods"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/vitest",
+    "name": "describeWrapped",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const describeWrapped: (name: string, f: (it: Vitest.Methods) => void) => V.SuiteCollector"
   },
   {
     "_tag": "Export",

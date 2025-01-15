@@ -16,7 +16,7 @@ DateTime.setParts
 
 ```ts
 export declare const setParts: {
-  (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
-  <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): DateTime.PreserveZone<A>
+  (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => A
+  <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): A
 }
 ```
