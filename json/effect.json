@@ -53584,12 +53584,12 @@
     },
     "project": "effect",
     "name": "ArrayFormatterIssue",
-    "description": null,
+    "description": "Represents an issue returned by the {@link ArrayFormatter} formatter.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
     "category": "model",
-    "signature": "export interface ArrayFormatterIssue {\n  readonly _tag: ParseIssue[\"_tag\"]\n  readonly path: ReadonlyArray<PropertyKey>\n  readonly message: string\n}"
+    "signature": "export interface ArrayFormatterIssue {\n  /**\n   * The tag identifying the type of parse issue.\n   */\n  readonly _tag: ParseIssue[\"_tag\"]\n\n  /**\n   * The path to the property where the issue occurred.\n   */\n  readonly path: ReadonlyArray<PropertyKey>\n\n  /**\n   * A descriptive message explaining the issue.\n   */\n  readonly message: string\n}"
   },
   {
     "_tag": "Interface",
@@ -64471,6 +64471,24 @@
       ]
     },
     "project": "effect",
+    "name": "ArrayFormatterIssue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.5",
+    "category": "ArrayFormatter",
+    "signature": "export declare class ArrayFormatterIssue"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "BigDecimal",
     "description": null,
     "deprecated": false,
@@ -65292,6 +65310,24 @@
     "since": "3.10.0",
     "category": "TimeZone transformations",
     "signature": "export declare class TimeZone"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "TimeZoneFromSelf",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "TimeZone constructors",
+    "signature": "export declare class TimeZoneFromSelf"
   },
   {
     "_tag": "Class",
@@ -67255,24 +67291,6 @@
       ]
     },
     "project": "effect",
-    "name": "TimeZoneFromSelf",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "TimeZone constructors",
-    "signature": "export declare const TimeZoneFromSelf: TimeZoneFromSelf"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "OptionFromNonEmptyTrimmedString",
     "description": "Transforms strings into an Option type, effectively filtering out empty or\nwhitespace-only strings by trimming them and checking their length. Returns\n`none` for invalid inputs and `some` for valid non-empty strings.",
     "deprecated": false,
@@ -68032,7 +68050,7 @@
     },
     "project": "effect",
     "name": "Symbol",
-    "description": "This schema transforms a `string` into a `symbol`.",
+    "description": "Converts a string key into a globally shared symbol.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -68128,6 +68146,24 @@
     "since": "3.10.0",
     "category": "Set transformations",
     "signature": "export declare const Set: <Value extends Schema.Any>(value: Value) => Set$<Value>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "PropertyKey",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.5",
+    "category": null,
+    "signature": "export declare const PropertyKey: typeof PropertyKey$"
   },
   {
     "_tag": "Function",
@@ -72400,24 +72436,6 @@
     "since": "3.10.0",
     "category": "API interface",
     "signature": "export interface TemplateLiteralParser<Params extends array_.NonEmptyReadonlyArray<TemplateLiteralParserParameters>>\n  extends\n    Schema<\n      GetTemplateLiteralParserType<Params>,\n      GetTemplateLiteralParserEncoded<Params>,\n      Schema.Context<Params[number]>\n    >\n{\n  readonly params: Params\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "TimeZoneFromSelf",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "api interface",
-    "signature": "export interface TimeZoneFromSelf extends Union<[typeof TimeZoneOffsetFromSelf, typeof TimeZoneNamedFromSelf]> {\n  annotations(annotations: Annotations.Schema<dateTime.TimeZone>): TimeZoneFromSelf\n}"
   },
   {
     "_tag": "Interface",

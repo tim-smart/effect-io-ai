@@ -3557,6 +3557,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "Issue",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export declare class Issue"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "HttpApiError",
+      "path": [
+        "src",
+        "HttpApiError.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "MethodNotAllowed",
     "description": null,
     "deprecated": false,
@@ -3690,78 +3708,6 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "export declare const TypeId: typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "HttpApiError",
-      "path": [
-        "src",
-        "HttpApiError.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "PropertyKeysNoSymbol",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export declare const PropertyKeysNoSymbol: PropertyKeysNoSymbol"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "HttpApiError",
-      "path": [
-        "src",
-        "HttpApiError.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "Issue",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export declare const Issue: Issue"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "HttpApiError",
-      "path": [
-        "src",
-        "HttpApiError.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "Issue",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export interface Issue extends\n  Schema.Struct<\n    {\n      _tag: Schema.Literal<\n        [\"Pointer\", \"Unexpected\", \"Missing\", \"Composite\", \"Refinement\", \"Transformation\", \"Type\", \"Forbidden\"]\n      >\n      path: PropertyKeysNoSymbol\n      message: typeof Schema.String\n    }\n  >\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "HttpApiError",
-      "path": [
-        "src",
-        "HttpApiError.ts"
-      ]
-    },
-    "project": "@effect/platform",
-    "name": "PropertyKeysNoSymbol",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export interface PropertyKeysNoSymbol extends\n  Schema.transform<\n    Schema.Array$<Schema.Union<[typeof Schema.String, typeof Schema.Number]>>,\n    Schema.Array$<Schema.Union<[typeof Schema.SymbolFromSelf, typeof Schema.String, typeof Schema.Number]>>\n  >\n{}"
   },
   {
     "_tag": "TypeAlias",
