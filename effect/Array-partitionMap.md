@@ -32,7 +32,7 @@ assert.deepStrictEqual(partitioned, [
 
 ```ts
 export declare const partitionMap: {
-  <A, B, C>(f: (a: A, i: number) => array_<C, B>): (self: Iterable<A>) => [left: Array<B>, right: Array<C>]
-  <A, B, C>(self: Iterable<A>, f: (a: A, i: number) => array_<C, B>): [left: Array<B>, right: Array<C>]
+  <A, B, C>(f: (a: A, i: number) => Either<C, B>): (self: Iterable<A>) => [left: Array<B>, right: Array<C>]
+  <A, B, C>(self: Iterable<A>, f: (a: A, i: number) => Either<C, B>): [left: Array<B>, right: Array<C>]
 }
 ```

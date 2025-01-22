@@ -6,15 +6,21 @@ Encapsulates both success and failure of an `Effect` into an `Either` type.
 
 This function converts an effect that may fail into an effect that always
 succeeds, wrapping the outcome in an `Either` type. The result will be
-`Either.Left` if the effect fails, containing the error, or `Either.Right` if
-it succeeds, containing the result.
+`Either.Left` if the effect fails, containing the recoverable error, or
+`Either.Right` if it succeeds, containing the result.
 
-Using this function, you can handle errors explicitly without causing the
-effect to fail. This can be especially useful in scenarios where you want to
-chain effects and deal with success and failure in the same logical flow.
+Using this function, you can handle recoverable errors explicitly without
+causing the effect to fail. This is particularly useful in scenarios where
+you want to chain effects and manage both success and failure in the same
+logical flow.
 
-The resulting effect cannot fail directly because failures are represented
-inside the `Either` type.
+It's important to note that unrecoverable errors, often referred to as
+"defects," are still thrown and not captured within the `Either` type. Only
+failures that are explicitly represented as recoverable errors in the effect
+are encapsulated.
+
+The resulting effect cannot fail directly because all recoverable failures
+are represented inside the `Either` type.
 
 To import and use `either` from the "Effect" module:
 

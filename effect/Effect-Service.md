@@ -52,93 +52,95 @@ class Logger extends Effect.Service<Logger>()("Logger", {
 **Signature**
 
 ```ts
-export declare const Service: <Self>() => {
-  <
-    const Key extends string,
-    const Make extends
-      | {
-          readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>
-          readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-          readonly accessors?: boolean
-          readonly ಠ_ಠ: never
-        }
-      | {
-          readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>
-          readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-          readonly accessors?: boolean
-          readonly ಠ_ಠ: never
-        }
-      | {
-          readonly sync: LazyArg<Service.AllowedType<Key, Make>>
-          readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-          readonly accessors?: boolean
-          readonly ಠ_ಠ: never
-        }
-      | {
-          readonly succeed: Service.AllowedType<Key, Make>
-          readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-          readonly accessors?: boolean
-          readonly ಠ_ಠ: never
-        }
-  >(
-    key: Key,
-    make: Make
-  ): Service.Class<Self, Key, Make>
-  <
-    const Key extends string,
-    const Make extends NoExcessProperties<
-      {
-        readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>
-        readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-        readonly accessors?: boolean
-      },
-      Make
-    >
-  >(
-    key: Key,
-    make: Make
-  ): Service.Class<Self, Key, Make>
-  <
-    const Key extends string,
-    const Make extends NoExcessProperties<
-      {
-        readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>
-        readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-        readonly accessors?: boolean
-      },
-      Make
-    >
-  >(
-    key: Key,
-    make: Make
-  ): Service.Class<Self, Key, Make>
-  <
-    const Key extends string,
-    const Make extends NoExcessProperties<
-      {
-        readonly sync: LazyArg<Service.AllowedType<Key, Make>>
-        readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-        readonly accessors?: boolean
-      },
-      Make
-    >
-  >(
-    key: Key,
-    make: Make
-  ): Service.Class<Self, Key, Make>
-  <
-    const Key extends string,
-    const Make extends NoExcessProperties<
-      {
-        readonly succeed: Service.AllowedType<Key, Make>
-        readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
-        readonly accessors?: boolean
-      },
-      Make
-    >
-  >(
-    key: Key,
-    make: Make
-  ): Service.Class<Self, Key, Make>
-}
+export declare const Service: <Self = never>() => [Self] extends [never]
+  ? MissingSelfGeneric
+  : {
+      <
+        const Key extends string,
+        const Make extends
+          | {
+              readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>
+              readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+              readonly accessors?: boolean
+              readonly ಠ_ಠ: never
+            }
+          | {
+              readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>
+              readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+              readonly accessors?: boolean
+              readonly ಠ_ಠ: never
+            }
+          | {
+              readonly sync: LazyArg<Service.AllowedType<Key, Make>>
+              readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+              readonly accessors?: boolean
+              readonly ಠ_ಠ: never
+            }
+          | {
+              readonly succeed: Service.AllowedType<Key, Make>
+              readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+              readonly accessors?: boolean
+              readonly ಠ_ಠ: never
+            }
+      >(
+        key: Key,
+        make: Make
+      ): Service.Class<Self, Key, Make>
+      <
+        const Key extends string,
+        const Make extends NoExcessProperties<
+          {
+            readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>
+            readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+            readonly accessors?: boolean
+          },
+          Make
+        >
+      >(
+        key: Key,
+        make: Make
+      ): Service.Class<Self, Key, Make>
+      <
+        const Key extends string,
+        const Make extends NoExcessProperties<
+          {
+            readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>
+            readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+            readonly accessors?: boolean
+          },
+          Make
+        >
+      >(
+        key: Key,
+        make: Make
+      ): Service.Class<Self, Key, Make>
+      <
+        const Key extends string,
+        const Make extends NoExcessProperties<
+          {
+            readonly sync: LazyArg<Service.AllowedType<Key, Make>>
+            readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+            readonly accessors?: boolean
+          },
+          Make
+        >
+      >(
+        key: Key,
+        make: Make
+      ): Service.Class<Self, Key, Make>
+      <
+        const Key extends string,
+        const Make extends NoExcessProperties<
+          {
+            readonly succeed: Service.AllowedType<Key, Make>
+            readonly dependencies?: ReadonlyArray<Layer.Layer.Any>
+            readonly accessors?: boolean
+          },
+          Make
+        >
+      >(
+        key: Key,
+        make: Make
+      ): Service.Class<Self, Key, Make>
+    }
 ```

@@ -19,14 +19,14 @@ FiberMap.make
 ```ts
 import { Effect, FiberMap } from "effect"
 
-Effect.gen(function* (_) {
-  const map = yield* _(FiberMap.make<string>())
+Effect.gen(function* () {
+  const map = yield* FiberMap.make<string>()
 
   // run some effects and add the fibers to the map
-  yield* _(FiberMap.run(map, "fiber a", Effect.never))
-  yield* _(FiberMap.run(map, "fiber b", Effect.never))
+  yield* FiberMap.run(map, "fiber a", Effect.never)
+  yield* FiberMap.run(map, "fiber b", Effect.never)
 
-  yield* _(Effect.sleep(1000))
+  yield* Effect.sleep(1000)
 }).pipe(
   Effect.scoped // The fibers will be interrupted when the scope is closed
 )

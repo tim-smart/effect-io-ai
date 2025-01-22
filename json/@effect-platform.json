@@ -3035,24 +3035,6 @@
       ]
     },
     "project": "@effect/platform",
-    "name": "middlewareScoped",
-    "description": "Create an `HttpApi` level middleware `Layer`, that has a `Scope` provided to\nthe constructor.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "middleware",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "HttpApiBuilder",
-      "path": [
-        "src",
-        "HttpApiBuilder.ts"
-      ]
-    },
-    "project": "@effect/platform",
     "name": "middlewareCors",
     "description": "A CORS middleware layer that can be provided to the `HttpApiBuilder.serve` layer.",
     "deprecated": false,

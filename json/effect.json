@@ -1471,7 +1471,7 @@
     ],
     "since": "2.0.0",
     "category": "filtering",
-    "signature": "export declare const partitionMap: { <A, B, C>(f: (a: A, i: number) => array_<C, B>): (self: Iterable<A>) => [left: Array<B>, right: Array<C>]; <A, B, C>(self: Iterable<A>, f: (a: A, i: number) => array_<C, B>): [left: Array<B>, right: Array<C>]; }"
+    "signature": "export declare const partitionMap: { <A, B, C>(f: (a: A, i: number) => Either<C, B>): (self: Iterable<A>) => [left: Array<B>, right: Array<C>]; <A, B, C>(self: Iterable<A>, f: (a: A, i: number) => Either<C, B>): [left: Array<B>, right: Array<C>]; }"
   },
   {
     "_tag": "Constant",
@@ -1524,7 +1524,9 @@
     "name": "partition",
     "description": "Separate elements based on a predicate that also exposes the index of the element.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Array } from \"effect\"\n\nconst numbers = [1, 2, 3, 4]\n\nconst result = Array.partition(numbers, n => n % 2 === 0)\n\nassert.deepStrictEqual(result, [[1, 3], [2, 4]])"
+    ],
     "since": "2.0.0",
     "category": "filtering",
     "signature": "export declare const partition: { <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => [excluded: Array<Exclude<A, B>>, satisfying: Array<B>]; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [excluded: Array<A>, satisfying: Array<A>]; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): [excluded: Array<Exclude<A, B>>, satisfying: Array<B>]; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [excluded: Array<A>, satisfying: Array<A>]; }"
@@ -1542,12 +1544,10 @@
     "name": "separate",
     "description": "Separates an `Iterable` into two arrays based on a predicate.",
     "deprecated": false,
-    "examples": [
-      "import { Array } from \"effect\"\n\nconst numbers = [1, 2, 3, 4]\nconst result = Array.partition(numbers, n => n % 2 === 0)\nassert.deepStrictEqual(result, [[1, 3], [2, 4]])"
-    ],
+    "examples": [],
     "since": "2.0.0",
     "category": "filtering",
-    "signature": "export declare const separate: <T extends Iterable<array_<any, any>>>(self: T) => [Array<array_.Left<ReadonlyArray.Infer<T>>>, Array<array_.Right<ReadonlyArray.Infer<T>>>]"
+    "signature": "export declare const separate: <T extends Iterable<Either<any, any>>>(self: T) => [Array<Either.Left<ReadonlyArray.Infer<T>>>, Array<Either.Right<ReadonlyArray.Infer<T>>>]"
   },
   {
     "_tag": "Constant",
@@ -5047,7 +5047,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "refinements",
-    "signature": "export declare const isCause: (u: unknown) => u is Cause<never>"
+    "signature": "export declare const isCause: (u: unknown) => u is Cause<unknown>"
   },
   {
     "_tag": "Constant",
@@ -5888,7 +5888,7 @@
     },
     "project": "effect",
     "name": "UnknownException",
-    "description": "Represents a checked exception which occurs when an unknown error is thrown, such as\nfrom a rejected promise.",
+    "description": "Creates an instance of `UnknownException`, an error object used to handle\nunknown errors such as those from rejected promises.\n\n**Details**\n\nThis function constructs an `UnknownException` with flexible behavior for\nmanaging the error message and cause.\n\nThe required `error` argument is passed as the `cause` to the global `Error`\nconstructor, ensuring that the original cause is preserved in the error chain\nfor debugging purposes. This ensures that the origin stack trace is\npreserved.\n\nThe `error` argument is always stored in the `error` property of the\n`UnknownException` instance for reference, regardless of its type.\n\nAdditionally, if you provide a `message` argument, it is used as the error\nmessage. If no `message` is provided, the error message defaults to `\"An\nunknown error occurred\"`.\n\n**When to Use**\n\nUse this function when you need to handle unexpected or unknown errors in\nyour application, particularly when the source of the error might not provide\na clear message. This is useful for wrapping generic errors thrown from\npromises or external APIs.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -13477,6 +13477,24 @@
     "signature": "export type ValidTagsById<R> = R extends infer S ? Tag<S, any> : never"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "Cron",
+      "path": [
+        "src",
+        "Cron.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "ParseError",
+    "description": "Represents a checked exception which occurs when decoding fails.",
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "models",
+    "signature": "export declare class ParseError"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Cron",
@@ -13717,24 +13735,6 @@
     "since": "2.0.0",
     "category": "models",
     "signature": "export interface Cron extends Pipeable, Equal.Equal, Inspectable {\n  readonly [TypeId]: TypeId\n  readonly tz: Option.Option<DateTime.TimeZone>\n  readonly seconds: ReadonlySet<number>\n  readonly minutes: ReadonlySet<number>\n  readonly hours: ReadonlySet<number>\n  readonly days: ReadonlySet<number>\n  readonly months: ReadonlySet<number>\n  readonly weekdays: ReadonlySet<number>\n  /** @internal */\n  readonly first: {\n    readonly second: number\n    readonly minute: number\n    readonly hour: number\n    readonly day: number\n    readonly month: number\n    readonly weekday: number\n  }\n  /** @internal */\n  readonly next: {\n    readonly second: ReadonlyArray<number | undefined>\n    readonly minute: ReadonlyArray<number | undefined>\n    readonly hour: ReadonlyArray<number | undefined>\n    readonly day: ReadonlyArray<number | undefined>\n    readonly month: ReadonlyArray<number | undefined>\n    readonly weekday: ReadonlyArray<number | undefined>\n  }\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Cron",
-      "path": [
-        "src",
-        "Cron.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "ParseError",
-    "description": "Represents a checked exception which occurs when decoding fails.",
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "models",
-    "signature": "export interface ParseError {\n  readonly _tag: \"ParseError\"\n  readonly [ParseErrorTypeId]: ParseErrorTypeId\n  readonly message: string\n  readonly input?: string\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -17489,7 +17489,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export type DurationValue =\n  | { _tag: \"Millis\"; millis: number }\n  | { _tag: \"Nanos\"; nanos: bigint }\n  | { _tag: \"Infinity\" }"
+    "signature": "export type DurationValue =\n  | {\n    readonly _tag: \"Millis\"\n    readonly millis: number\n  }\n  | {\n    readonly _tag: \"Nanos\"\n    readonly nanos: bigint\n  }\n  | {\n    readonly _tag: \"Infinity\"\n  }"
   },
   {
     "_tag": "TypeAlias",
@@ -20902,7 +20902,7 @@
     },
     "project": "effect",
     "name": "option",
-    "description": "Encapsulates the result of an effect in an `Option`.\n\n**Details**\n\nThis function wraps the outcome of an effect in an `Option` type. If the\noriginal effect succeeds, the success value is wrapped in `Option.some`. If\nthe effect fails, the failure is converted to `Option.none`.\n\nThis is useful for handling cases where you want to explicitly represent the\nabsence of a value due to a failure, while preventing direct failure of the\nresulting effect (its error type is `never`). Note that fatal errors, such as\ndefects, are not wrapped and will still result in failure.",
+    "description": "Encapsulates the result of an effect in an `Option`.\n\n**Details**\n\nThis function wraps the outcome of an effect in an `Option` type. If the\noriginal effect succeeds, the success value is wrapped in `Option.some`. If\nthe effect fails, the failure is converted to `Option.none`.\n\nThis is particularly useful for scenarios where you want to represent the\nabsence of a value explicitly, without causing the resulting effect to fail.\nThe resulting effect has an error type of `never`, meaning it cannot fail\ndirectly. However, unrecoverable errors, also referred to as defects, are\nnot captured and will still result in failure.",
     "deprecated": false,
     "examples": [
       "// Title: Using Effect.option to Handle Errors\nimport { Effect } from \"effect\"\n\nconst maybe1 = Effect.option(Effect.succeed(1))\n\n// Effect.runPromiseExit(maybe1).then(console.log)\n// Output:\n// {\n//   _id: 'Exit',\n//   _tag: 'Success',\n//   value: { _id: 'Option', _tag: 'Some', value: 1 }\n// }\n\nconst maybe2 = Effect.option(Effect.fail(\"Uh oh!\"))\n\n// Effect.runPromiseExit(maybe2).then(console.log)\n// Output:\n// {\n//   _id: 'Exit',\n//   _tag: 'Success',\n//   value: { _id: 'Option', _tag: 'None' }\n// }\n\nconst maybe3 = Effect.option(Effect.die(\"Boom!\"))\n\n// Effect.runPromiseExit(maybe3).then(console.log)\n// Output:\n// {\n//   _id: 'Exit',\n//   _tag: 'Failure',\n//   cause: { _id: 'Cause', _tag: 'Die', defect: 'Boom!' }\n// }"
@@ -20922,7 +20922,7 @@
     },
     "project": "effect",
     "name": "either",
-    "description": "Encapsulates both success and failure of an `Effect` into an `Either` type.\n\n**Details**\n\nThis function converts an effect that may fail into an effect that always\nsucceeds, wrapping the outcome in an `Either` type. The result will be\n`Either.Left` if the effect fails, containing the error, or `Either.Right` if\nit succeeds, containing the result.\n\nUsing this function, you can handle errors explicitly without causing the\neffect to fail. This can be especially useful in scenarios where you want to\nchain effects and deal with success and failure in the same logical flow.\n\nThe resulting effect cannot fail directly because failures are represented\ninside the `Either` type.",
+    "description": "Encapsulates both success and failure of an `Effect` into an `Either` type.\n\n**Details**\n\nThis function converts an effect that may fail into an effect that always\nsucceeds, wrapping the outcome in an `Either` type. The result will be\n`Either.Left` if the effect fails, containing the recoverable error, or\n`Either.Right` if it succeeds, containing the result.\n\nUsing this function, you can handle recoverable errors explicitly without\ncausing the effect to fail. This is particularly useful in scenarios where\nyou want to chain effects and manage both success and failure in the same\nlogical flow.\n\nIt's important to note that unrecoverable errors, often referred to as\n\"defects,\" are still thrown and not captured within the `Either` type. Only\nfailures that are explicitly represented as recoverable errors in the effect\nare encapsulated.\n\nThe resulting effect cannot fail directly because all recoverable failures\nare represented inside the `Either` type.",
     "deprecated": false,
     "examples": [
       "import { Effect, Either, Random } from \"effect\"\n\nclass HttpError {\n  readonly _tag = \"HttpError\"\n}\n\nclass ValidationError {\n  readonly _tag = \"ValidationError\"\n}\n\n//      ┌─── Effect<string, HttpError | ValidationError, never>\n//      ▼\nconst program = Effect.gen(function* () {\n  const n1 = yield* Random.next\n  const n2 = yield* Random.next\n  if (n1 < 0.5) {\n    yield* Effect.fail(new HttpError())\n  }\n  if (n2 < 0.5) {\n    yield* Effect.fail(new ValidationError())\n  }\n  return \"some result\"\n})\n\n//      ┌─── Effect<string, never, never>\n//      ▼\nconst recovered = Effect.gen(function* () {\n  //      ┌─── Either<string, HttpError | ValidationError>\n  //      ▼\n  const failureOrSuccess = yield* Effect.either(program)\n  return Either.match(failureOrSuccess, {\n    onLeft: (error) => `Recovering from ${error._tag}`,\n    onRight: (value) => value // Do nothing in case of success\n  })\n})"
@@ -20942,7 +20942,7 @@
     },
     "project": "effect",
     "name": "exit",
-    "description": "Encapsulates both success and failure of an `Effect` using the `Exit` type.\n\n**Details**\n\nThis function converts an effect into one that always succeeds, wrapping its\noutcome in the `Exit` type. The `Exit` type allows explicit handling of both\nsuccess (`Exit.Success`) and failure (`Exit.Failure`) cases.\n\nThe failure is no longer propagated directly but encapsulated inside the\n`Exit.Failure` type. This makes the resulting effect robust and incapable of\ndirect failure (the error type is set to `never`).\n\nThis function is useful for managing and reasoning about effects with complex\noutcomes, as it allows for detailed introspection of errors, including\ndefects and unexpected failures.",
+    "description": "Encapsulates both success and failure of an `Effect` using the `Exit` type.\n\n**Details**\n\nThis function converts an effect into one that always succeeds, wrapping its\noutcome in the `Exit` type. The `Exit` type provides explicit handling of\nboth success (`Exit.Success`) and failure (`Exit.Failure`) cases, including\ndefects (unrecoverable errors).\n\nUnlike {@link either} or {@link option}, this function also encapsulates\ndefects, which are typically unrecoverable and would otherwise terminate the\neffect. With the `Exit` type, defects are represented in `Exit.Failure`,\nallowing for detailed introspection and structured error handling.\n\nThis makes the resulting effect robust and incapable of direct failure (its\nerror type is `never`). It is particularly useful for workflows where all\noutcomes, including unexpected defects, must be managed and analyzed.",
     "deprecated": false,
     "examples": [
       "import { Effect, Cause, Console, Exit } from \"effect\"\n\n// Simulating a runtime error\nconst task = Effect.dieMessage(\"Boom!\")\n\nconst program = Effect.gen(function* () {\n  const exit = yield* Effect.exit(task)\n  if (Exit.isFailure(exit)) {\n    const cause = exit.cause\n    if (\n      Cause.isDieType(cause) &&\n      Cause.isRuntimeException(cause.defect)\n    ) {\n      yield* Console.log(\n        `RuntimeException defect caught: ${cause.defect.message}`\n      )\n    } else {\n      yield* Console.log(\"Unknown failure caught.\")\n    }\n  }\n})\n\n// We get an Exit.Success because we caught all failures\n// Effect.runPromiseExit(program).then(console.log)\n// Output:\n// RuntimeException defect caught: Boom!\n// {\n//   _id: \"Exit\",\n//   _tag: \"Success\",\n//   value: undefined\n// }"
@@ -23432,7 +23432,7 @@
     ],
     "since": "3.9.0",
     "category": "Context",
-    "signature": "export declare const Service: <Self>() => { <const Key extends string, const Make extends { readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; }>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; }"
+    "signature": "export declare const Service: <Self = never>() => [Self] extends [never] ? MissingSelfGeneric : { <const Key extends string, const Make extends { readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; }>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly effect: Effect<Service.AllowedType<Key, Make>, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; }"
   },
   {
     "_tag": "Constant",
@@ -27771,7 +27771,7 @@
     "description": "A FiberHandle can be used to store a single fiber.\nWhen the associated Scope is closed, the contained fiber will be interrupted.\n\nYou can add a fiber to the handle using `FiberHandle.run`, and the fiber will\nbe automatically removed from the FiberHandle when it completes.",
     "deprecated": false,
     "examples": [
-      "import { Effect, FiberHandle } from \"effect\"\n\nEffect.gen(function*(_) {\n  const handle = yield* _(FiberHandle.make())\n\n  // run some effects\n  yield* _(FiberHandle.run(handle, Effect.never))\n  // this will interrupt the previous fiber\n  yield* _(FiberHandle.run(handle, Effect.never))\n\n  yield* _(Effect.sleep(1000))\n}).pipe(\n  Effect.scoped // The fiber will be interrupted when the scope is closed\n)"
+      "import { Effect, FiberHandle } from \"effect\"\n\nEffect.gen(function*() {\n  const handle = yield* FiberHandle.make()\n\n  // run some effects\n  yield* FiberHandle.run(handle, Effect.never)\n  // this will interrupt the previous fiber\n  yield* FiberHandle.run(handle, Effect.never)\n\n  yield* Effect.sleep(1000)\n}).pipe(\n  Effect.scoped // The fiber will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -27863,7 +27863,7 @@
     "description": "Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberHandle.",
     "deprecated": false,
     "examples": [
-      "import { Context, Effect, FiberHandle } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*(_) {\n  const handle = yield* _(FiberHandle.make())\n  const run = yield* _(FiberHandle.runtime(handle)<Users>())\n\n  // run an effect and set the fiber in the handle\n  run(Effect.andThen(Users, _ => _.getAll))\n\n  // this will interrupt the previous fiber\n  run(Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fiber will be interrupted when the scope is closed\n)"
+      "import { Context, Effect, FiberHandle } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*() {\n  const handle = yield* FiberHandle.make()\n  const run = yield* FiberHandle.runtime(handle)<Users>()\n\n  // run an effect and set the fiber in the handle\n  run(Effect.andThen(Users, _ => _.getAll))\n\n  // this will interrupt the previous fiber\n  run(Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fiber will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -28533,7 +28533,7 @@
     "description": "A FiberMap can be used to store a collection of fibers, indexed by some key.\nWhen the associated Scope is closed, all fibers in the map will be interrupted.\n\nYou can add fibers to the map using `FiberMap.set` or `FiberMap.run`, and the fibers will\nbe automatically removed from the FiberMap when they complete.",
     "deprecated": false,
     "examples": [
-      "import { Effect, FiberMap } from \"effect\"\n\nEffect.gen(function*(_) {\n  const map = yield* _(FiberMap.make<string>())\n\n  // run some effects and add the fibers to the map\n  yield* _(FiberMap.run(map, \"fiber a\", Effect.never))\n  yield* _(FiberMap.run(map, \"fiber b\", Effect.never))\n\n  yield* _(Effect.sleep(1000))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
+      "import { Effect, FiberMap } from \"effect\"\n\nEffect.gen(function*() {\n  const map = yield* FiberMap.make<string>()\n\n  // run some effects and add the fibers to the map\n  yield* FiberMap.run(map, \"fiber a\", Effect.never)\n  yield* FiberMap.run(map, \"fiber b\", Effect.never)\n\n  yield* Effect.sleep(1000)\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -28589,7 +28589,7 @@
     "description": "Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberMap.",
     "deprecated": false,
     "examples": [
-      "import { Context, Effect, FiberMap } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*(_) {\n  const map = yield* _(FiberMap.make<string>())\n  const run = yield* _(FiberMap.runtime(map)<Users>())\n\n  // run some effects and add the fibers to the map\n  run(\"effect-a\", Effect.andThen(Users, _ => _.getAll))\n  run(\"effect-b\", Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
+      "import { Context, Effect, FiberMap } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*() {\n  const map = yield* FiberMap.make<string>()\n  const run = yield* FiberMap.runtime(map)<Users>()\n\n  // run some effects and add the fibers to the map\n  run(\"effect-a\", Effect.andThen(Users, _ => _.getAll))\n  run(\"effect-b\", Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -30123,7 +30123,7 @@
     "description": "A FiberSet can be used to store a collection of fibers.\nWhen the associated Scope is closed, all fibers in the set will be interrupted.\n\nYou can add fibers to the set using `FiberSet.add` or `FiberSet.run`, and the fibers will\nbe automatically removed from the FiberSet when they complete.",
     "deprecated": false,
     "examples": [
-      "import { Effect, FiberSet } from \"effect\"\n\nEffect.gen(function*(_) {\n  const set = yield* _(FiberSet.make())\n\n  // run some effects and add the fibers to the set\n  yield* _(FiberSet.run(set, Effect.never))\n  yield* _(FiberSet.run(set, Effect.never))\n\n  yield* _(Effect.sleep(1000))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
+      "import { Effect, FiberSet } from \"effect\"\n\nEffect.gen(function*() {\n  const set = yield* FiberSet.make()\n\n  // run some effects and add the fibers to the set\n  yield* FiberSet.run(set, Effect.never)\n  yield* FiberSet.run(set, Effect.never)\n\n  yield* Effect.sleep(1000)\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -30179,7 +30179,7 @@
     "description": "Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.",
     "deprecated": false,
     "examples": [
-      "import { Context, Effect, FiberSet } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*(_) {\n  const set = yield* _(FiberSet.make())\n  const run = yield* _(FiberSet.runtime(set)<Users>())\n\n  // run some effects and add the fibers to the set\n  run(Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
+      "import { Context, Effect, FiberSet } from \"effect\"\n\ninterface Users {\n  readonly _: unique symbol\n}\nconst Users = Context.GenericTag<Users, {\n   getAll: Effect.Effect<Array<unknown>>\n}>(\"Users\")\n\nEffect.gen(function*() {\n  const set = yield* FiberSet.make()\n  const run = yield* FiberSet.runtime(set)<Users>()\n\n  // run some effects and add the fibers to the set\n  run(Effect.andThen(Users, _ => _.getAll))\n}).pipe(\n  Effect.scoped // The fibers will be interrupted when the scope is closed\n)"
     ],
     "since": "2.0.0",
     "category": null,
@@ -40730,9 +40730,11 @@
     },
     "project": "effect",
     "name": "locally",
-    "description": "Locally applies the specified `LogLevel` to an `Effect` workflow, reverting\nto the previous `LogLevel` after the `Effect` workflow completes.",
+    "description": "Temporarily sets a `LogLevel` for an `Effect` workflow.\n\n**Details**\n\nThis function allows you to apply a specific `LogLevel` locally to an\n`Effect` workflow. Once the workflow completes, the `LogLevel` reverts to its\nprevious state.\n\n**When to Use**\n\nThis is particularly useful when you want to adjust the verbosity of logging\nfor specific parts of your program without affecting the global log level.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Effect, LogLevel } from \"effect\"\n\nconst program = Effect.gen(function*() {\n  yield* Effect.log(\"message1\")\n  yield* Effect.gen(function*() {\n    yield* Effect.log(\"message2\")\n    yield* Effect.log(\"message3\")\n  }).pipe(LogLevel.locally(LogLevel.Warning))\n})\n\n// Effect.runFork(program)\n// timestamp=... level=INFO fiber=#0 message=message1\n// timestamp=... level=WARN fiber=#0 message=message2\n// timestamp=... level=WARN fiber=#0 message=message3"
+    ],
     "since": "2.0.0",
     "category": "utils",
     "signature": "export declare const locally: { (self: LogLevel): <A, E, R>(use: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(use: Effect.Effect<A, E, R>, self: LogLevel): Effect.Effect<A, E, R>; }"
@@ -64832,7 +64834,7 @@
     },
     "project": "effect",
     "name": "Duration",
-    "description": "A schema that transforms a `[number, number]` tuple into a `Duration`.",
+    "description": "A schema that transforms a `[number, number]` tuple into a `Duration`.\n\nInfinite durations are encoded as `[-1, 0]`.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -64850,7 +64852,7 @@
     },
     "project": "effect",
     "name": "DurationFromMillis",
-    "description": "A schema that transforms a `number` tuple into a `Duration`.\nTreats the value as the number of milliseconds.",
+    "description": "A schema that transforms a (possibly Infinite) non negative number into a\n`Duration`. Treats the value as the number of milliseconds.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -64868,7 +64870,7 @@
     },
     "project": "effect",
     "name": "DurationFromNanos",
-    "description": "A schema that transforms a `bigint` tuple into a `Duration`.\nTreats the value as the number of nanoseconds.",
+    "description": "A schema that transforms a non negative `bigint` into a `Duration`. Treats\nthe value as the number of nanoseconds.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -65959,7 +65961,7 @@
     ],
     "since": "3.10.0",
     "category": "struct transformations",
-    "signature": "export declare const pluck: { <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => Schema<A[K], { readonly [P in K]: I[P]; }, R>; <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], { readonly [P in K]: I[P]; }, R>; }"
+    "signature": "export declare const pluck: { <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => Schema<A[K], Simplify<Pick<I, K>>, R>; <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], Simplify<Pick<I, K>>, R>; }"
   },
   {
     "_tag": "Constant",
@@ -66822,7 +66824,7 @@
     },
     "project": "effect",
     "name": "NonNegativeInt",
-    "description": null,
+    "description": "A non-negative integer. +Infinity is excluded.",
     "deprecated": false,
     "examples": [],
     "since": "3.11.10",
@@ -72723,7 +72725,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface refine<A, From extends Schema.Any>\n  extends AnnotableClass<refine<A, From>, A, Schema.Encoded<From>, Schema.Context<From>>\n{\n  readonly [RefineSchemaId]: From // required for `type HasFields = ...`\n  readonly from: From\n  readonly filter: (\n    a: Schema.Type<From>,\n    options: ParseOptions,\n    self: AST.Refinement\n  ) => option_.Option<ParseResult.ParseIssue>\n  make(a: Schema.Type<From>, options?: MakeOptions): A\n}"
+    "signature": "export interface refine<A, From extends Schema.Any>\n  extends AnnotableClass<refine<A, From>, A, Schema.Encoded<From>, Schema.Context<From>>\n{\n  /** The following is required for {@link HasFields} to work */\n  readonly [RefineSchemaId]: From\n  readonly from: From\n  readonly filter: (\n    a: Schema.Type<From>,\n    options: ParseOptions,\n    self: AST.Refinement\n  ) => option_.Option<ParseResult.ParseIssue>\n  make(a: Schema.Type<From>, options?: MakeOptions): A\n}"
   },
   {
     "_tag": "Interface",

@@ -25,9 +25,9 @@ const Users = Context.GenericTag<
   }
 >("Users")
 
-Effect.gen(function* (_) {
-  const set = yield* _(FiberSet.make())
-  const run = yield* _(FiberSet.runtime(set)<Users>())
+Effect.gen(function* () {
+  const set = yield* FiberSet.make()
+  const run = yield* FiberSet.runtime(set)<Users>()
 
   // run some effects and add the fibers to the set
   run(Effect.andThen(Users, (_) => _.getAll))

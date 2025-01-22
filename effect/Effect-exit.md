@@ -5,16 +5,18 @@ Encapsulates both success and failure of an `Effect` using the `Exit` type.
 **Details**
 
 This function converts an effect into one that always succeeds, wrapping its
-outcome in the `Exit` type. The `Exit` type allows explicit handling of both
-success (`Exit.Success`) and failure (`Exit.Failure`) cases.
+outcome in the `Exit` type. The `Exit` type provides explicit handling of
+both success (`Exit.Success`) and failure (`Exit.Failure`) cases, including
+defects (unrecoverable errors).
 
-The failure is no longer propagated directly but encapsulated inside the
-`Exit.Failure` type. This makes the resulting effect robust and incapable of
-direct failure (the error type is set to `never`).
+Unlike {@link either} or {@link option}, this function also encapsulates
+defects, which are typically unrecoverable and would otherwise terminate the
+effect. With the `Exit` type, defects are represented in `Exit.Failure`,
+allowing for detailed introspection and structured error handling.
 
-This function is useful for managing and reasoning about effects with complex
-outcomes, as it allows for detailed introspection of errors, including
-defects and unexpected failures.
+This makes the resulting effect robust and incapable of direct failure (its
+error type is `never`). It is particularly useful for workflows where all
+outcomes, including unexpected defects, must be managed and analyzed.
 
 To import and use `exit` from the "Effect" module:
 

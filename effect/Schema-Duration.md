@@ -2,6 +2,8 @@
 
 A schema that transforms a `[number, number]` tuple into a `Duration`.
 
+Infinite durations are encoded as `[-1, 0]`.
+
 To import and use `Duration` from the "Schema" module:
 
 ```ts

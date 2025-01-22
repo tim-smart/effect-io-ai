@@ -8,10 +8,11 @@ This function wraps the outcome of an effect in an `Option` type. If the
 original effect succeeds, the success value is wrapped in `Option.some`. If
 the effect fails, the failure is converted to `Option.none`.
 
-This is useful for handling cases where you want to explicitly represent the
-absence of a value due to a failure, while preventing direct failure of the
-resulting effect (its error type is `never`). Note that fatal errors, such as
-defects, are not wrapped and will still result in failure.
+This is particularly useful for scenarios where you want to represent the
+absence of a value explicitly, without causing the resulting effect to fail.
+The resulting effect has an error type of `never`, meaning it cannot fail
+directly. However, unrecoverable errors, also referred to as defects, are
+not captured and will still result in failure.
 
 To import and use `option` from the "Effect" module:
 

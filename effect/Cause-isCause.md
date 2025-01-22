@@ -13,5 +13,5 @@ Cause.isCause
 **Signature**
 
 ```ts
-export declare const isCause: (u: unknown) => u is Cause<never>
+export declare const isCause: (u: unknown) => u is Cause<unknown>
 ```

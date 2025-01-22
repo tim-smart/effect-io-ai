@@ -25,9 +25,9 @@ const Users = Context.GenericTag<
   }
 >("Users")
 
-Effect.gen(function* (_) {
-  const handle = yield* _(FiberHandle.make())
-  const run = yield* _(FiberHandle.runtime(handle)<Users>())
+Effect.gen(function* () {
+  const handle = yield* FiberHandle.make()
+  const run = yield* FiberHandle.runtime(handle)<Users>()
 
   // run an effect and set the fiber in the handle
   run(Effect.andThen(Users, (_) => _.getAll))
