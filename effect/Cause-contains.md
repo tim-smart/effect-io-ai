@@ -1,7 +1,12 @@
 # contains
 
-Returns `true` if the `self` cause contains or is equal to `that` cause,
-`false` otherwise.
+Checks if the current `Cause` contains or is equal to another `Cause`.
+
+**Details**
+
+This function returns `true` if `that` cause is part of or the same as
+the current `Cause`. It's useful when you need to check for specific
+error patterns or deduplicate repeated failures.
 
 To import and use `contains` from the "Cause" module:
 

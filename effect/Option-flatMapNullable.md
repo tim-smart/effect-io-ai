@@ -1,6 +1,19 @@
 # flatMapNullable
 
-This is `flatMap` + `fromNullable`, useful when working with optional values.
+Combines `flatMap` and `fromNullable`, transforming the value inside a `Some`
+using a function that may return `null` or `undefined`.
+
+**Details**
+
+This function applies a transformation function `f` to the value inside a
+`Some`. The function `f` may return a value, `null`, or `undefined`. If `f`
+returns a value, it is wrapped in a `Some`. If `f` returns `null` or
+`undefined`, the result is `None`. If the input `Option` is `None`, the
+function is not applied, and `None` is returned.
+
+This utility is particularly useful when working with deeply nested optional
+values or chaining computations that may result in `null` or `undefined` at
+some point.
 
 To import and use `flatMapNullable` from the "Option" module:
 
@@ -13,7 +26,7 @@ Option.flatMapNullable
 **Example**
 
 ```ts
-import { pipe, Option } from "effect"
+import { Option } from "effect"
 
 interface Employee {
   company?: {
@@ -27,23 +40,15 @@ interface Employee {
 
 const employee1: Employee = { company: { address: { street: { name: "high street" } } } }
 
-assert.deepStrictEqual(
-  pipe(
-    Option.some(employee1),
-    Option.flatMapNullable((employee) => employee.company?.address?.street?.name)
-  ),
-  Option.some("high street")
-)
+// Extracting a deeply nested property
+console.log(Option.some(employee1).pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name)))
+// Output: { _id: 'Option', _tag: 'Some', value: 'high street' }
 
 const employee2: Employee = { company: { address: { street: {} } } }
 
-assert.deepStrictEqual(
-  pipe(
-    Option.some(employee2),
-    Option.flatMapNullable((employee) => employee.company?.address?.street?.name)
-  ),
-  Option.none()
-)
+// Property does not exist
+console.log(Option.some(employee2).pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name)))
+// Output: { _id: 'Option', _tag: 'None' }
 ```
 
 **Signature**

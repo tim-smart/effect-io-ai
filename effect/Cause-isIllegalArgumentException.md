@@ -1,7 +1,6 @@
 # isIllegalArgumentException
 
-Returns `true` if the specified value is an `IllegalArgumentException`, `false`
-otherwise.
+Checks if a given unknown value is an `IllegalArgumentException`.
 
 To import and use `isIllegalArgumentException` from the "Cause" module:
 

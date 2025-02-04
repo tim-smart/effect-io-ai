@@ -1,7 +1,6 @@
 # ExceededCapacityException
 
-Represents a checked exception which occurs when a resources capacity has
-been exceeded.
+An error that occurs when resource capacity is exceeded.
 
 To import and use `ExceededCapacityException` from the "Cause" module:
 

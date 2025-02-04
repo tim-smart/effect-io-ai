@@ -1,8 +1,14 @@
 # stripSomeDefects
 
-Remove all `Die` causes that the specified partial function is defined at,
-returning `Some` with the remaining causes or `None` if there are no
-remaining causes.
+Removes matching defects from a `Cause` using a partial function, returning
+the remainder.
+
+**Details**
+
+This function applies a user-defined extraction function to each defect
+(`Die`). If the function matches the defect, that defect is removed. If all
+defects match, the result is `None`. Otherwise, you get a `Cause` with the
+unmatched defects.
 
 To import and use `stripSomeDefects` from the "Cause" module:
 

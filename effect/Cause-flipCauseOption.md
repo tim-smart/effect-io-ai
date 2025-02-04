@@ -1,7 +1,13 @@
 # flipCauseOption
 
-Converts the specified `Cause<Option<E>>` to an `Option<Cause<E>>` by
-recursively stripping out any failures with the error `None`.
+Strips out failures with an error of `None` from a `Cause<Option<E>>`.
+
+**Details**
+
+This function turns a `Cause<Option<E>>` into an `Option<Cause<E>>`. If the
+cause only contains failures of `None`, it becomes `None`; otherwise, it
+returns a `Cause` of the remaining errors. It's helpful when working with
+optional errors and filtering out certain error paths.
 
 To import and use `flipCauseOption` from the "Cause" module:
 

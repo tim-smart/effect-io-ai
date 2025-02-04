@@ -1,7 +1,12 @@
 # sequential
 
-Constructs a new `Sequential` cause from the specified pecified `left` and
-`right` causes.
+Combines two `Cause`s sequentially.
+
+**Details**
+
+This function merges two errors that occurred in sequence, such as a main
+error followed by a finalization error. It preserves both errors for complete
+failure information.
 
 To import and use `sequential` from the "Cause" module:
 

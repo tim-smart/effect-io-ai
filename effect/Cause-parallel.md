@@ -1,7 +1,12 @@
 # parallel
 
-Constructs a new `Parallel` cause from the specified `left` and `right`
-causes.
+Combines two `Cause`s in parallel.
+
+**Details**
+
+This function merges two errors that occurred simultaneously. Instead of
+discarding one error, both are retained, allowing for richer error reporting
+and debugging.
 
 To import and use `parallel` from the "Cause" module:
 

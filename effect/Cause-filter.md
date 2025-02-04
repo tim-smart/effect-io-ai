@@ -1,6 +1,22 @@
 # filter
 
-Filters causes which match the provided predicate out of the specified cause.
+Preserves parts of a `Cause` that match a given predicate.
+
+**Details**
+
+This function allows you to retain only the parts of a `Cause` structure that
+match a specified predicate or refinement. Any parts of the `Cause` that do
+not match the provided condition are excluded from the result.
+
+You can use this function in two ways:
+
+- With a `Predicate`: A function that evaluates whether a `Cause` should be
+  retained based on its value.
+- With a `Refinement`: A more specific predicate that can refine the type of
+  the `Cause`.
+
+This is useful when you need to extract specific types of errors, defects, or
+interruptions from a `Cause` while discarding unrelated parts.
 
 To import and use `filter` from the "Cause" module:
 

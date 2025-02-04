@@ -1,6 +1,16 @@
 # getOrNull
 
-Returns the value of the `Option` if it is a `Some`, otherwise returns `null`.
+Returns the value contained in the `Option` if it is `Some`; otherwise,
+returns `null`.
+
+**Details**
+
+This function provides a way to extract the value of an `Option` while
+falling back to `null` if the `Option` is `None`.
+
+It is particularly useful in scenarios where `null` is an acceptable
+placeholder for the absence of a value, such as when interacting with APIs or
+systems that use `null` as a default for missing values.
 
 To import and use `getOrNull` from the "Option" module:
 
@@ -15,8 +25,11 @@ Option.getOrNull
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.getOrNull(Option.some(1)), 1)
-assert.deepStrictEqual(Option.getOrNull(Option.none()), null)
+console.log(Option.getOrNull(Option.some(1)))
+// Output: 1
+
+console.log(Option.getOrNull(Option.none()))
+// Output: null
 ```
 
 **Signature**

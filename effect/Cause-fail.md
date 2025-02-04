@@ -1,6 +1,12 @@
 # fail
 
-Constructs a new `Fail` cause from the specified `error`.
+Creates a `Fail` cause from an expected error.
+
+**Details**
+
+This function constructs a `Cause` carrying an error of type `E`. It's used
+when you want to represent a known or anticipated failure in your effectful
+computations.
 
 To import and use `fail` from the "Cause" module:
 

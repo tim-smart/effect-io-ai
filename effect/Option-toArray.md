@@ -1,8 +1,8 @@
 # toArray
 
-Transforms an `Option` into an `Array`.
+Converts an `Option` into an `Array`.
 If the input is `None`, an empty array is returned.
-If the input is `Some`, the value is wrapped in an array.
+If the input is `Some`, its value is wrapped in a single-element array.
 
 To import and use `toArray` from the "Option" module:
 
@@ -17,8 +17,11 @@ Option.toArray
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.toArray(Option.some(1)), [1])
-assert.deepStrictEqual(Option.toArray(Option.none()), [])
+console.log(Option.toArray(Option.some(1)))
+// Output: [1]
+
+console.log(Option.toArray(Option.none()))
+// Output: []
 ```
 
 **Signature**

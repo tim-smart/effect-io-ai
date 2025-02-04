@@ -1,6 +1,6 @@
 # isCause
 
-Returns `true` if the specified value is a `Cause`, `false` otherwise.
+Checks if a value is a `Cause`.
 
 To import and use `isCause` from the "Cause" module:
 

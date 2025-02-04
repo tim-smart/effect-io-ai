@@ -1,8 +1,13 @@
 # failureOrCause
 
-Returns the first checked error on the `Left` if available, if there are
-no checked errors return the rest of the `Cause` that is known to contain
-only `Die` or `Interrupt` causes.
+Splits a `Cause` into either its first `Fail` error or the rest of the cause
+(which might only contain `Die` or `Interrupt`).
+
+**Details**
+
+This function either returns the checked error (`E`) or the remaining
+`Cause<never>` with defects/interruptions. It helps you decide if there's a
+recoverable path or if only unhandled issues remain.
 
 To import and use `failureOrCause` from the "Cause" module:
 

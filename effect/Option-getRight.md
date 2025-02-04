@@ -1,6 +1,21 @@
 # getRight
 
-Converts a `Either` to an `Option` discarding the error.
+Converts an `Either` into an `Option` by discarding the error and extracting
+the right value.
+
+**Details**
+
+This function takes an `Either` and returns an `Option` based on its value:
+
+- If the `Either` is a `Right`, its value is wrapped in a `Some` and
+  returned.
+- If the `Either` is a `Left`, the error is discarded, and `None` is
+  returned.
+
+This is particularly useful when you only care about the success case
+(`Right`) of an `Either` and want to handle the result using `Option`. By
+using this function, you can convert `Either` into a simpler structure for
+cases where error handling is not required.
 
 To import and use `getRight` from the "Option" module:
 
@@ -13,10 +28,13 @@ Option.getRight
 **Example**
 
 ```ts
-import { Option, Either } from "effect"
+import { Either, Option } from "effect"
 
-assert.deepStrictEqual(Option.getRight(Either.right("ok")), Option.some("ok"))
-assert.deepStrictEqual(Option.getRight(Either.left("err")), Option.none())
+console.log(Option.getRight(Either.right("ok")))
+// Output: { _id: 'Option', _tag: 'Some', value: 'ok' }
+
+console.log(Option.getRight(Either.left("err")))
+// Output: { _id: 'Option', _tag: 'None' }
 ```
 
 **Signature**

@@ -1,8 +1,6 @@
 # Duration
 
-A schema that transforms a `[number, number]` tuple into a `Duration`.
-
-Infinite durations are encoded as `[-1, 0]`.
+A schema that converts a JSON-compatible tagged union into a `Duration`.
 
 To import and use `Duration` from the "Schema" module:
 

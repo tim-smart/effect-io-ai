@@ -4754,11 +4754,11 @@
     },
     "project": "effect",
     "name": "CauseTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `Cause` type.\n\n**Details**\n\nThis provides a symbol that helps identify instances of the `Cause` data\ntype. This can be used for advanced operations such as refining types or\nbuilding internal utilities that check whether an unknown value is a `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const CauseTypeId: typeof CauseTypeId"
   },
   {
@@ -4772,11 +4772,11 @@
     },
     "project": "effect",
     "name": "RuntimeExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `RuntimeException` type.\n\n**Details**\n\nThis provides a symbol that identifies a `RuntimeException`. This is\ntypically used internally by the library to recognize checked exceptions that\noccur during runtime.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const RuntimeExceptionTypeId: typeof RuntimeExceptionTypeId"
   },
   {
@@ -4790,11 +4790,11 @@
     },
     "project": "effect",
     "name": "InterruptedExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `InterruptedException` type.\n\n**Details**\n\nThis provides a symbol that identifies an `InterruptedException`. This is\ntypically used internally to recognize when a fiber has been interrupted,\nhelping the framework handle interruption logic correctly.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const InterruptedExceptionTypeId: typeof InterruptedExceptionTypeId"
   },
   {
@@ -4808,11 +4808,11 @@
     },
     "project": "effect",
     "name": "IllegalArgumentExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `IllegalArgumentException` type.\n\n**Details**\n\nThis provides a symbol that identifies an `IllegalArgumentException`. This is\noften used in scenarios where invalid arguments are supplied to methods that\nexpect specific input.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const IllegalArgumentExceptionTypeId: typeof IllegalArgumentExceptionTypeId"
   },
   {
@@ -4826,11 +4826,11 @@
     },
     "project": "effect",
     "name": "NoSuchElementExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `NoSuchElementException` type.\n\n**Details**\n\nThis provides a symbol that identifies a `NoSuchElementException`. It helps\ndifferentiate cases where a required element is missing within a data\nstructure.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const NoSuchElementExceptionTypeId: typeof NoSuchElementExceptionTypeId"
   },
   {
@@ -4844,11 +4844,11 @@
     },
     "project": "effect",
     "name": "InvalidPubSubCapacityExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `InvalidPubSubCapacityException` type.\n\n**Details**\n\nThis provides a symbol that identifies an `InvalidPubSubCapacityException`.\nIt indicates an error related to an invalid capacity passed to a `PubSub`\nstructure.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const InvalidPubSubCapacityExceptionTypeId: typeof InvalidPubSubCapacityExceptionTypeId"
   },
   {
@@ -4862,11 +4862,11 @@
     },
     "project": "effect",
     "name": "ExceededCapacityExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `ExceededCapacityException` type.\n\n**Details**\n\nThis provides a symbol that identifies an `ExceededCapacityException`. It\ndenotes situations where a resource has exceeded its configured capacity\nlimit.",
     "deprecated": false,
     "examples": [],
     "since": "3.5.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const ExceededCapacityExceptionTypeId: typeof ExceededCapacityExceptionTypeId"
   },
   {
@@ -4880,11 +4880,11 @@
     },
     "project": "effect",
     "name": "TimeoutExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `TimeoutException` type.\n\n**Details**\n\nThis provides a symbol that identifies a `TimeoutException`. It helps the\nframework recognize errors related to operations that fail to complete within\na given timeframe.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const TimeoutExceptionTypeId: typeof TimeoutExceptionTypeId"
   },
   {
@@ -4898,11 +4898,11 @@
     },
     "project": "effect",
     "name": "UnknownExceptionTypeId",
-    "description": null,
+    "description": "A unique symbol identifying the `UnknownException` type.\n\n**Details**\n\nThis provides a symbol that identifies an `UnknownException`. It is typically\nused for generic or unexpected errors that do not fit other specific\nexception categories.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const UnknownExceptionTypeId: typeof UnknownExceptionTypeId"
   },
   {
@@ -4916,11 +4916,11 @@
     },
     "project": "effect",
     "name": "YieldableError",
-    "description": "Represents a generic checked exception which occurs at runtime.",
+    "description": "Creates an error that occurs at runtime, extendable for other exception\ntypes.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const YieldableError: new (message?: string | undefined) => YieldableError"
   },
   {
@@ -4934,11 +4934,11 @@
     },
     "project": "effect",
     "name": "empty",
-    "description": "Constructs a new `Empty` cause.",
+    "description": "Creates an `Empty` cause.\n\n**Details**\n\nThis function returns a cause that signifies \"no error.\" It's commonly used\nto represent an absence of failure conditions.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const empty: Cause<never>"
   },
   {
@@ -4952,11 +4952,11 @@
     },
     "project": "effect",
     "name": "fail",
-    "description": "Constructs a new `Fail` cause from the specified `error`.",
+    "description": "Creates a `Fail` cause from an expected error.\n\n**Details**\n\nThis function constructs a `Cause` carrying an error of type `E`. It's used\nwhen you want to represent a known or anticipated failure in your effectful\ncomputations.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const fail: <E>(error: E) => Cause<E>"
   },
   {
@@ -4970,11 +4970,11 @@
     },
     "project": "effect",
     "name": "die",
-    "description": "Constructs a new `Die` cause from the specified `defect`.",
+    "description": "Creates a `Die` cause from an unexpected error.\n\n**Details**\n\nThis function wraps an unhandled or unknown defect (like a runtime crash)\ninto a `Cause`. It's useful for capturing unforeseen issues in a structured\nway.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const die: (defect: unknown) => Cause<never>"
   },
   {
@@ -4988,11 +4988,11 @@
     },
     "project": "effect",
     "name": "interrupt",
-    "description": "Constructs a new `Interrupt` cause from the specified `fiberId`.",
+    "description": "Creates an `Interrupt` cause from a `FiberId`.\n\n**Details**\n\nThis function represents a fiber that has been interrupted. It stores the\nidentifier of the interrupted fiber, enabling precise tracking of concurrent\ncancellations.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>"
   },
   {
@@ -5006,11 +5006,11 @@
     },
     "project": "effect",
     "name": "parallel",
-    "description": "Constructs a new `Parallel` cause from the specified `left` and `right`\ncauses.",
+    "description": "Combines two `Cause`s in parallel.\n\n**Details**\n\nThis function merges two errors that occurred simultaneously. Instead of\ndiscarding one error, both are retained, allowing for richer error reporting\nand debugging.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const parallel: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>"
   },
   {
@@ -5024,11 +5024,11 @@
     },
     "project": "effect",
     "name": "sequential",
-    "description": "Constructs a new `Sequential` cause from the specified pecified `left` and\n`right` causes.",
+    "description": "Combines two `Cause`s sequentially.\n\n**Details**\n\nThis function merges two errors that occurred in sequence, such as a main\nerror followed by a finalization error. It preserves both errors for complete\nfailure information.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const sequential: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>"
   },
   {
@@ -5042,11 +5042,11 @@
     },
     "project": "effect",
     "name": "isCause",
-    "description": "Returns `true` if the specified value is a `Cause`, `false` otherwise.",
+    "description": "Checks if a value is a `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isCause: (u: unknown) => u is Cause<unknown>"
   },
   {
@@ -5060,11 +5060,11 @@
     },
     "project": "effect",
     "name": "isEmptyType",
-    "description": "Returns `true` if the specified `Cause` is an `Empty` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is an `Empty` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isEmptyType: <E>(self: Cause<E>) => self is Empty"
   },
   {
@@ -5078,11 +5078,11 @@
     },
     "project": "effect",
     "name": "isFailType",
-    "description": "Returns `true` if the specified `Cause` is a `Fail` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is a `Fail` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isFailType: <E>(self: Cause<E>) => self is Fail<E>"
   },
   {
@@ -5096,11 +5096,11 @@
     },
     "project": "effect",
     "name": "isDieType",
-    "description": "Returns `true` if the specified `Cause` is a `Die` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is a `Die` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isDieType: <E>(self: Cause<E>) => self is Die"
   },
   {
@@ -5114,11 +5114,11 @@
     },
     "project": "effect",
     "name": "isInterruptType",
-    "description": "Returns `true` if the specified `Cause` is an `Interrupt` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is an `Interrupt` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isInterruptType: <E>(self: Cause<E>) => self is Interrupt"
   },
   {
@@ -5132,11 +5132,11 @@
     },
     "project": "effect",
     "name": "isSequentialType",
-    "description": "Returns `true` if the specified `Cause` is a `Sequential` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is a `Sequential` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isSequentialType: <E>(self: Cause<E>) => self is Sequential<E>"
   },
   {
@@ -5150,11 +5150,11 @@
     },
     "project": "effect",
     "name": "isParallelType",
-    "description": "Returns `true` if the specified `Cause` is a `Parallel` type, `false`\notherwise.",
+    "description": "Checks if a `Cause` is a `Parallel` type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isParallelType: <E>(self: Cause<E>) => self is Parallel<E>"
   },
   {
@@ -5168,11 +5168,11 @@
     },
     "project": "effect",
     "name": "size",
-    "description": "Returns the size of the cause, calculated as the number of individual `Cause`\nnodes found in the `Cause` semiring structure.",
+    "description": "Calculates the size of a `Cause`.\n\n**Details**\n\nThis function returns the total number of `Cause` nodes in the semiring\nstructure, reflecting how many individual error elements are recorded.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const size: <E>(self: Cause<E>) => number"
   },
   {
@@ -5186,11 +5186,11 @@
     },
     "project": "effect",
     "name": "isEmpty",
-    "description": "Returns `true` if the specified cause is empty, `false` otherwise.",
+    "description": "Checks if a `Cause` is entirely empty.\n\n**Details**\n\nThis function returns `true` if the `Cause` contains no errors, defects, or\ninterruptions. It's helpful for verifying if a computation truly had no\nfailures.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const isEmpty: <E>(self: Cause<E>) => boolean"
   },
   {
@@ -5204,11 +5204,11 @@
     },
     "project": "effect",
     "name": "isFailure",
-    "description": "Returns `true` if the specified cause contains a failure, `false` otherwise.",
+    "description": "Checks if a `Cause` contains a failure.\n\n**Details**\n\nThis function returns `true` if the `Cause` includes any `Fail` error. It's\ncommonly used to confirm whether a workflow encountered an anticipated error\nversus just defects or interruptions.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const isFailure: <E>(self: Cause<E>) => boolean"
   },
   {
@@ -5222,11 +5222,11 @@
     },
     "project": "effect",
     "name": "isDie",
-    "description": "Returns `true` if the specified cause contains a defect, `false` otherwise.",
+    "description": "Checks if a `Cause` contains a defect.\n\n**Details**\n\nThis function returns `true` if the `Cause` includes any unexpected or\nunhandled errors (`Die`). It's useful for differentiating known failures from\nunexpected ones.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const isDie: <E>(self: Cause<E>) => boolean"
   },
   {
@@ -5240,11 +5240,11 @@
     },
     "project": "effect",
     "name": "isInterrupted",
-    "description": "Returns `true` if the specified cause contains an interruption, `false`\notherwise.",
+    "description": "Checks if a `Cause` contains an interruption.\n\n**Details**\n\nThis function returns `true` if the `Cause` includes any fiber interruptions.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const isInterrupted: <E>(self: Cause<E>) => boolean"
   },
   {
@@ -5258,11 +5258,11 @@
     },
     "project": "effect",
     "name": "isInterruptedOnly",
-    "description": "Returns `true` if the specified cause contains only interruptions (without\nany `Die` or `Fail` causes), `false` otherwise.",
+    "description": "Checks if a `Cause` contains only interruptions.\n\n**Details**\n\nThis function returns `true` if the `Cause` has been interrupted but does not\ncontain any other failures, such as `Fail` or `Die`. It's helpful for\nverifying purely \"cancellation\" scenarios.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const isInterruptedOnly: <E>(self: Cause<E>) => boolean"
   },
   {
@@ -5276,11 +5276,11 @@
     },
     "project": "effect",
     "name": "failures",
-    "description": "Returns a `List` of all recoverable errors of type `E` in the specified\ncause.",
+    "description": "Extracts all recoverable errors of type `E` from a `Cause`.\n\n**Details**\n\nThis function returns a chunk of errors, providing a list of all `Fail`\nvalues found in the cause. It's useful for collecting all known failures for\nlogging or combined error handling.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const failures: <E>(self: Cause<E>) => Chunk.Chunk<E>"
   },
   {
@@ -5294,11 +5294,11 @@
     },
     "project": "effect",
     "name": "defects",
-    "description": "Returns a `List` of all unrecoverable defects in the specified cause.",
+    "description": "Extracts all unrecoverable defects from a `Cause`.\n\n**Details**\n\nThis function returns a chunk of values representing unexpected errors\n(`Die`). It's handy for capturing or logging unanticipated failures that\nmight need special handling, such as bug reports.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const defects: <E>(self: Cause<E>) => Chunk.Chunk<unknown>"
   },
   {
@@ -5312,11 +5312,11 @@
     },
     "project": "effect",
     "name": "interruptors",
-    "description": "Returns a `HashSet` of `FiberId`s for all fibers that interrupted the fiber\ndescribed by the specified cause.",
+    "description": "Collects all `FiberId`s responsible for interrupting a fiber.\n\n**Details**\n\nThis function returns a set of IDs indicating which fibers caused\ninterruptions within this `Cause`. It's useful for debugging concurrency\nissues or tracing cancellations.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const interruptors: <E>(self: Cause<E>) => HashSet.HashSet<FiberId.FiberId>"
   },
   {
@@ -5330,11 +5330,11 @@
     },
     "project": "effect",
     "name": "failureOption",
-    "description": "Returns the `E` associated with the first `Fail` in this `Cause`, if one\nexists.",
+    "description": "Retrieves the first `Fail` error in a `Cause`, if present.\n\n**Details**\n\nThis function returns an `Option` containing the first recoverable error\n(`E`) from the cause. It's often used to quickly check if there's a primary\nerror to handle or display.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const failureOption: <E>(self: Cause<E>) => Option.Option<E>"
   },
   {
@@ -5348,11 +5348,11 @@
     },
     "project": "effect",
     "name": "failureOrCause",
-    "description": "Returns the first checked error on the `Left` if available, if there are\nno checked errors return the rest of the `Cause` that is known to contain\nonly `Die` or `Interrupt` causes.",
+    "description": "Splits a `Cause` into either its first `Fail` error or the rest of the cause\n(which might only contain `Die` or `Interrupt`).\n\n**Details**\n\nThis function either returns the checked error (`E`) or the remaining\n`Cause<never>` with defects/interruptions. It helps you decide if there's a\nrecoverable path or if only unhandled issues remain.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const failureOrCause: <E>(self: Cause<E>) => Either.Either<Cause<never>, E>"
   },
   {
@@ -5366,11 +5366,11 @@
     },
     "project": "effect",
     "name": "flipCauseOption",
-    "description": "Converts the specified `Cause<Option<E>>` to an `Option<Cause<E>>` by\nrecursively stripping out any failures with the error `None`.",
+    "description": "Strips out failures with an error of `None` from a `Cause<Option<E>>`.\n\n**Details**\n\nThis function turns a `Cause<Option<E>>` into an `Option<Cause<E>>`. If the\ncause only contains failures of `None`, it becomes `None`; otherwise, it\nreturns a `Cause` of the remaining errors. It's helpful when working with\noptional errors and filtering out certain error paths.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const flipCauseOption: <E>(self: Cause<Option.Option<E>>) => Option.Option<Cause<E>>"
   },
   {
@@ -5384,11 +5384,11 @@
     },
     "project": "effect",
     "name": "dieOption",
-    "description": "Returns the defect associated with the first `Die` in this `Cause`, if one\nexists.",
+    "description": "Retrieves the first `Die` defect in a `Cause`, if present.\n\n**Details**\n\nThis function returns an `Option` containing the first unexpected failure\n(`Die`) discovered. It's helpful for diagnosing the primary defect in a chain\nof errors.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const dieOption: <E>(self: Cause<E>) => Option.Option<unknown>"
   },
   {
@@ -5402,11 +5402,11 @@
     },
     "project": "effect",
     "name": "interruptOption",
-    "description": "Returns the `FiberId` associated with the first `Interrupt` in the specified\ncause, if one exists.",
+    "description": "Retrieves the first `Interrupt` in a `Cause`, if present.\n\n**Details**\n\nThis function returns an `Option` with the first fiber interruption\ndiscovered. This is particularly useful for concurrency analysis or debugging\ncancellations.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const interruptOption: <E>(self: Cause<E>) => Option.Option<FiberId.FiberId>"
   },
   {
@@ -5420,11 +5420,11 @@
     },
     "project": "effect",
     "name": "keepDefects",
-    "description": "Remove all `Fail` and `Interrupt` nodes from the specified cause, and return\na cause containing only `Die` cause/finalizer defects.",
+    "description": "Removes all `Fail` and `Interrupt` nodes, keeping only defects (`Die`) in a\n`Cause`.\n\n**Details**\n\nThis function strips a cause of recoverable errors and interruptions, leaving\nonly unexpected failures. If no defects remain, it returns `None`. It's\nvaluable for focusing only on unanticipated problems when both known errors\nand defects could occur.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const keepDefects: <E>(self: Cause<E>) => Option.Option<Cause<never>>"
   },
   {
@@ -5438,11 +5438,11 @@
     },
     "project": "effect",
     "name": "linearize",
-    "description": "Linearizes the specified cause into a `HashSet` of parallel causes where each\nparallel cause contains a linear sequence of failures.",
+    "description": "Linearizes a `Cause` into a set of parallel causes, each containing a\nsequential chain of failures.\n\n**Details**\n\nThis function reorganizes the cause structure so that you can analyze each\nparallel branch separately, even if they have multiple sequential errors.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const linearize: <E>(self: Cause<E>) => HashSet.HashSet<Cause<E>>"
   },
   {
@@ -5456,11 +5456,11 @@
     },
     "project": "effect",
     "name": "stripFailures",
-    "description": "Remove all `Fail` and `Interrupt` nodes from the specified cause, and return\na cause containing only `Die` cause/finalizer defects.",
+    "description": "Removes `Fail` and `Interrupt` nodes from a `Cause`, keeping only defects\n(`Die`).\n\n**Details**\n\nThis function is similar to `keepDefects` but returns a `Cause<never>`\ndirectly, which can still store `Die` or finalizer-related defects. It's\nhelpful for analyzing only the irrecoverable portion of the error.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const stripFailures: <E>(self: Cause<E>) => Cause<never>"
   },
   {
@@ -5474,11 +5474,11 @@
     },
     "project": "effect",
     "name": "stripSomeDefects",
-    "description": "Remove all `Die` causes that the specified partial function is defined at,\nreturning `Some` with the remaining causes or `None` if there are no\nremaining causes.",
+    "description": "Removes matching defects from a `Cause` using a partial function, returning\nthe remainder.\n\n**Details**\n\nThis function applies a user-defined extraction function to each defect\n(`Die`). If the function matches the defect, that defect is removed. If all\ndefects match, the result is `None`. Otherwise, you get a `Cause` with the\nunmatched defects.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const stripSomeDefects: { (pf: (defect: unknown) => Option.Option<unknown>): <E>(self: Cause<E>) => Option.Option<Cause<E>>; <E>(self: Cause<E>, pf: (defect: unknown) => Option.Option<unknown>): Option.Option<Cause<E>>; }"
   },
   {
@@ -5492,11 +5492,11 @@
     },
     "project": "effect",
     "name": "as",
-    "description": null,
+    "description": "Replaces any errors in a `Cause` with a provided constant error.\n\n**Details**\n\nThis function transforms all `Fail` errors into the specified error value,\npreserving the structure of the `Cause`. It's useful when you no longer need\nthe original error details but still want to keep the cause shape.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "mapping",
+    "category": "Mapping",
     "signature": "export declare const as: { <E2>(error: E2): <E>(self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, error: E2): Cause<E2>; }"
   },
   {
@@ -5510,11 +5510,11 @@
     },
     "project": "effect",
     "name": "map",
-    "description": null,
+    "description": "Transforms the errors in a `Cause` using a user-provided function.\n\n**Details**\n\nThis function applies `f` to each `Fail` error while leaving defects (`Die`)\nand interruptions untouched. It's useful for changing or simplifying error\ntypes in your effectful workflows.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "mapping",
+    "category": "Mapping",
     "signature": "export declare const map: { <E, E2>(f: (e: E) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => E2): Cause<E2>; }"
   },
   {
@@ -5528,11 +5528,11 @@
     },
     "project": "effect",
     "name": "flatMap",
-    "description": null,
+    "description": "Transforms errors in a `Cause` into new causes.\n\n**Details**\n\nThis function applies a function `f` to each `Fail` error, converting it into\na new `Cause`. This is especially powerful for merging or restructuring error\ntypes while preserving or combining cause information.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const flatMap: { <E, E2>(f: (e: E) => Cause<E2>): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => Cause<E2>): Cause<E2>; }"
   },
   {
@@ -5546,11 +5546,11 @@
     },
     "project": "effect",
     "name": "andThen",
-    "description": "Executes a sequence of two `Cause`s. The second `Cause` can be dependent on the result of the first `Cause`.",
+    "description": "Sequences two `Cause`s. The second `Cause` can be dependent on the result of\nthe first `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const andThen: { <E, E2>(f: (e: E) => Cause<E2>): (self: Cause<E>) => Cause<E2>; <E2>(f: Cause<E2>): <E>(self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => Cause<E2>): Cause<E2>; <E, E2>(self: Cause<E>, f: Cause<E2>): Cause<E2>; }"
   },
   {
@@ -5564,11 +5564,11 @@
     },
     "project": "effect",
     "name": "flatten",
-    "description": null,
+    "description": "Flattens a nested `Cause` structure.\n\n**Details**\n\nThis function takes a `Cause<Cause<E>>` and merges the layers into a single\n`Cause<E>`. It's useful for eliminating additional nesting created by\nrepeated transformations or compositions.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const flatten: <E>(self: Cause<Cause<E>>) => Cause<E>"
   },
   {
@@ -5582,11 +5582,11 @@
     },
     "project": "effect",
     "name": "contains",
-    "description": "Returns `true` if the `self` cause contains or is equal to `that` cause,\n`false` otherwise.",
+    "description": "Checks if the current `Cause` contains or is equal to another `Cause`.\n\n**Details**\n\nThis function returns `true` if `that` cause is part of or the same as\nthe current `Cause`. It's useful when you need to check for specific\nerror patterns or deduplicate repeated failures.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "elements",
+    "category": "Elements",
     "signature": "export declare const contains: { <E2>(that: Cause<E2>): <E>(self: Cause<E>) => boolean; <E, E2>(self: Cause<E>, that: Cause<E2>): boolean; }"
   },
   {
@@ -5600,11 +5600,11 @@
     },
     "project": "effect",
     "name": "squash",
-    "description": "Squashes a `Cause` down to a single defect, chosen to be the \"most important\"\ndefect.",
+    "description": "Extracts the most \"important\" defect from a `Cause`.\n\n**Details**\n\nThis function reduces a `Cause` to a single, prioritized defect. It evaluates\nthe `Cause` in the following order of priority:\n\n1. If the `Cause` contains a failure (e.g., from `Effect.fail`), it returns\n   the raw error value.\n2. If there is no failure, it looks for the first defect (e.g., from\n   `Effect.die`).\n3. If neither of the above is present, and the `Cause` stems from an\n   interruption, it creates and returns an `InterruptedException`.\n\nThis function ensures you can always extract a meaningful representation of\nthe primary issue from a potentially complex `Cause` structure.\n\n**When to Use**\n\nUse this function when you need to extract the most relevant error or defect\nfrom a `Cause`, especially in scenarios where multiple errors or defects may\nbe present. It's particularly useful for simplifying error reporting or\nlogging.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "destructors",
+    "category": "Destructors",
     "signature": "export declare const squash: <E>(self: Cause<E>) => unknown"
   },
   {
@@ -5618,11 +5618,11 @@
     },
     "project": "effect",
     "name": "squashWith",
-    "description": "Squashes a `Cause` down to a single defect, chosen to be the \"most important\"\ndefect. If a recoverable error is found, the provided function will be used\nto map the error a defect, and the resulting value will be returned.",
+    "description": "Extracts the most \"important\" defect from a `Cause`, transforming failures\ninto defects using a provided function.\n\n**Details**\n\nThis function reduces a `Cause` to a single, prioritized defect, while\nallowing you to transform recoverable failures into defects through a custom\nfunction. It processes the `Cause` in the following order:\n\n1. If the `Cause` contains a failure (e.g., from `Effect.fail`), it applies\n   the provided function `f` to the error to transform it into a defect.\n2. If there is no failure, it looks for the first defect (e.g., from\n   `Effect.die`) and returns it.\n3. If neither is present and the `Cause` stems from an interruption, it\n   returns an `InterruptedException`.\n\nThis function is particularly useful when you need custom handling or\ntransformation of errors while processing a `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "destructors",
+    "category": "Destructors",
     "signature": "export declare const squashWith: { <E>(f: (error: E) => unknown): (self: Cause<E>) => unknown; <E>(self: Cause<E>, f: (error: E) => unknown): unknown; }"
   },
   {
@@ -5636,11 +5636,11 @@
     },
     "project": "effect",
     "name": "find",
-    "description": "Uses the provided partial function to search the specified cause and attempt\nto extract information from it.",
+    "description": "Searches a `Cause` using a partial function to extract information.\n\n**Details**\n\nThis function allows you to search through a `Cause` using a custom partial\nfunction. The partial function is applied to the `Cause`, and if it matches,\nthe result is returned wrapped in a `Some`. If no match is found, the result\nis `None`.\n\nThis is particularly useful when you are only interested in specific types of\nerrors, defects, or interruption causes within a potentially complex `Cause`\nstructure. By leveraging a partial function, you can focus on extracting only\nthe relevant information you care about.\n\nThe partial function should return an `Option` indicating whether it matched\nand the value it extracted.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "elements",
+    "category": "Elements",
     "signature": "export declare const find: { <E, Z>(pf: (cause: Cause<E>) => Option.Option<Z>): (self: Cause<E>) => Option.Option<Z>; <E, Z>(self: Cause<E>, pf: (cause: Cause<E>) => Option.Option<Z>): Option.Option<Z>; }"
   },
   {
@@ -5654,11 +5654,11 @@
     },
     "project": "effect",
     "name": "filter",
-    "description": "Filters causes which match the provided predicate out of the specified cause.",
+    "description": "Preserves parts of a `Cause` that match a given predicate.\n\n**Details**\n\nThis function allows you to retain only the parts of a `Cause` structure that\nmatch a specified predicate or refinement. Any parts of the `Cause` that do\nnot match the provided condition are excluded from the result.\n\nYou can use this function in two ways:\n- With a `Predicate`: A function that evaluates whether a `Cause` should be\n  retained based on its value.\n- With a `Refinement`: A more specific predicate that can refine the type of\n  the `Cause`.\n\nThis is useful when you need to extract specific types of errors, defects, or\ninterruptions from a `Cause` while discarding unrelated parts.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "filtering",
+    "category": "Filtering",
     "signature": "export declare const filter: { <E, EB extends E>(refinement: Refinement<Cause<NoInfer<E>>, Cause<EB>>): (self: Cause<E>) => Cause<EB>; <E>(predicate: Predicate<Cause<NoInfer<E>>>): (self: Cause<E>) => Cause<E>; <E, EB extends E>(self: Cause<E>, refinement: Refinement<Cause<E>, Cause<EB>>): Cause<EB>; <E>(self: Cause<E>, predicate: Predicate<Cause<E>>): Cause<E>; }"
   },
   {
@@ -5672,11 +5672,11 @@
     },
     "project": "effect",
     "name": "match",
-    "description": "Folds the specified cause into a value of type `Z`.",
+    "description": "Transforms a `Cause` into a single value using custom handlers for each\npossible case.\n\n**Details**\n\nThis function processes a `Cause` by applying a set of custom handlers to\neach possible type of cause: `Empty`, `Fail`, `Die`, `Interrupt`,\n`Sequential`, and `Parallel`. The result of this function is a single value\nof type `Z`. This function allows you to define exactly how to handle each\npart of a `Cause`, whether it's a failure, defect, interruption, or a\ncombination of these.\n\nThe options parameter provides handlers for:\n- `onEmpty`: Handles the case where the cause is `Empty`, meaning no errors\n  occurred.\n- `onFail`: Processes a failure with an error of type `E`.\n- `onDie`: Processes a defect (unexpected error).\n- `onInterrupt`: Handles a fiber interruption, providing the `FiberId` of the\n  interruption.\n- `onSequential`: Combines two sequential causes into a single value of type\n  `Z`.\n- `onParallel`: Combines two parallel causes into a single value of type `Z`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "folding",
+    "category": "Matching",
     "signature": "export declare const match: { <Z, E>(options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): (self: Cause<E>) => Z; <Z, E>(self: Cause<E>, options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): Z; }"
   },
   {
@@ -5690,11 +5690,11 @@
     },
     "project": "effect",
     "name": "reduce",
-    "description": "Reduces the specified cause into a value of type `Z`, beginning with the\nprovided `zero` value.",
+    "description": "Combines all parts of a `Cause` into a single value by starting with an\ninitial value.\n\n**Details**\n\nThis function processes a `Cause` by starting with an initial value (`zero`)\nand applying a custom function (`pf`) to combine all elements of the `Cause`\ninto a single result of type `Z`. The custom function determines how each\npart of the `Cause` contributes to the final result. The function can return\nan `Option` to either continue combining values or skip specific parts of the\n`Cause`.\n\nThis function is useful for tasks such as:\n- Aggregating error messages from a `Cause` into a single string.\n- Summarizing the structure of a `Cause` into a simplified result.\n- Filtering or processing only specific parts of a `Cause`.\n\nThe reduction proceeds in a top-down manner, visiting all nodes in the\n`Cause` structure. This gives you complete control over how each part of the\n`Cause` contributes to the final result.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "folding",
+    "category": "Reducing",
     "signature": "export declare const reduce: { <Z, E>(zero: Z, pf: (accumulator: Z, cause: Cause<E>) => Option.Option<Z>): (self: Cause<E>) => Z; <Z, E>(self: Cause<E>, zero: Z, pf: (accumulator: Z, cause: Cause<E>) => Option.Option<Z>): Z; }"
   },
   {
@@ -5708,11 +5708,11 @@
     },
     "project": "effect",
     "name": "reduceWithContext",
-    "description": "Reduces the specified cause into a value of type `Z` using a `Cause.Reducer`.\nAlso allows for accessing the provided context during reduction.",
+    "description": "Combines all parts of a `Cause` into a single value using a custom reducer\nand a context.\n\n**Details**\n\nThis function allows you to reduce a `Cause` into a single value of type `Z`\nusing a custom `CauseReducer`. A `CauseReducer` provides methods to handle\nspecific parts of the `Cause`, such as failures, defects, or interruptions.\nAdditionally, this function provides access to a `context` value, which can\nbe used to carry information or maintain state during the reduction process.\n\nThis is particularly useful when the reduction process needs additional\ncontext or configuration, such as:\n- Aggregating error details with dynamic formatting.\n- Collecting logs or statistics about the `Cause`.\n- Performing stateful transformations based on the `context`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "folding",
+    "category": "Reducing",
     "signature": "export declare const reduceWithContext: { <C, E, Z>(context: C, reducer: CauseReducer<C, E, Z>): (self: Cause<E>) => Z; <C, E, Z>(self: Cause<E>, context: C, reducer: CauseReducer<C, E, Z>): Z; }"
   },
   {
@@ -5726,11 +5726,11 @@
     },
     "project": "effect",
     "name": "InterruptedException",
-    "description": "Represents a checked exception which occurs when a `Fiber` is interrupted.",
+    "description": "Creates an error that indicates a `Fiber` was interrupted.\n\n**Details**\n\nThis function constructs an `InterruptedException` recognized by the Effect\nruntime. It is usually thrown or returned when a fiber's execution is\ninterrupted by external events or by another fiber. This is particularly\nhelpful in concurrent programs where fibers may halt each other before\ncompletion.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const InterruptedException: new (message?: string | undefined) => InterruptedException"
   },
   {
@@ -5744,11 +5744,11 @@
     },
     "project": "effect",
     "name": "isInterruptedException",
-    "description": "Returns `true` if the specified value is an `InterruptedException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is an `InterruptedException`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isInterruptedException: (u: unknown) => u is InterruptedException"
   },
   {
@@ -5762,11 +5762,11 @@
     },
     "project": "effect",
     "name": "IllegalArgumentException",
-    "description": "Represents a checked exception which occurs when an invalid argument is\nprovided to a method.",
+    "description": "Creates an error indicating an invalid method argument.\n\n**Details**\n\nThis function constructs an `IllegalArgumentException`. It is typically\nthrown or returned when an operation receives improper inputs, such as\nout-of-range values or invalid object states.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const IllegalArgumentException: new (message?: string | undefined) => IllegalArgumentException"
   },
   {
@@ -5780,11 +5780,11 @@
     },
     "project": "effect",
     "name": "isIllegalArgumentException",
-    "description": "Returns `true` if the specified value is an `IllegalArgumentException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is an `IllegalArgumentException`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isIllegalArgumentException: (u: unknown) => u is IllegalArgumentException"
   },
   {
@@ -5798,11 +5798,11 @@
     },
     "project": "effect",
     "name": "NoSuchElementException",
-    "description": "Represents a checked exception which occurs when an expected element was\nunable to be found.",
+    "description": "Creates an error indicating a missing element.\n\n**Details**\n\nThis function constructs a `NoSuchElementException`. It helps you clearly\ncommunicate that a required element is unavailable.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const NoSuchElementException: new (message?: string | undefined) => NoSuchElementException"
   },
   {
@@ -5816,11 +5816,11 @@
     },
     "project": "effect",
     "name": "isNoSuchElementException",
-    "description": "Returns `true` if the specified value is an `NoSuchElementException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is a `NoSuchElementException`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isNoSuchElementException: (u: unknown) => u is NoSuchElementException"
   },
   {
@@ -5834,11 +5834,11 @@
     },
     "project": "effect",
     "name": "RuntimeException",
-    "description": "Represents a generic checked exception which occurs at runtime.",
+    "description": "Creates an error for general runtime errors.\n\n**Details**\n\nThis function constructs a `RuntimeException`, for errors that occur at\nruntime but are not specifically typed or categorized as interruptions,\nmissing elements, or invalid arguments. It helps unify a wide range of\nunexpected conditions under a single, recognizable error type.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const RuntimeException: new (message?: string | undefined) => RuntimeException"
   },
   {
@@ -5852,11 +5852,11 @@
     },
     "project": "effect",
     "name": "isRuntimeException",
-    "description": "Returns `true` if the specified value is an `RuntimeException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is a `RuntimeException`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isRuntimeException: (u: unknown) => u is RuntimeException"
   },
   {
@@ -5870,11 +5870,11 @@
     },
     "project": "effect",
     "name": "TimeoutException",
-    "description": "Represents a checked exception which occurs when a computation doesn't\nfinish on schedule.",
+    "description": "Creates an error for operations that exceed their expected time.\n\n**Details**\n\nThis function constructs a `TimeoutException`. It is typically used to signal\nthat an operation or fiber did not complete within a designated time limit,\nallowing you to handle slow or hanging processes.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const TimeoutException: new (message?: string | undefined) => TimeoutException"
   },
   {
@@ -5892,7 +5892,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const UnknownException: new (error: unknown, message?: string | undefined) => UnknownException"
   },
   {
@@ -5906,11 +5906,11 @@
     },
     "project": "effect",
     "name": "isUnknownException",
-    "description": "Returns `true` if the specified value is an `UnknownException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is an `UnknownException`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isUnknownException: (u: unknown) => u is UnknownException"
   },
   {
@@ -5924,11 +5924,11 @@
     },
     "project": "effect",
     "name": "ExceededCapacityException",
-    "description": "Represents a checked exception which occurs when a resources capacity has\nbeen exceeded.",
+    "description": "Creates an error indicating resource capacity has been exceeded.\n\n**Details**\n\nThis function constructs an `ExceededCapacityException`, signifying that an\noperation or resource usage surpassed established limits. This can be\nessential for concurrency or resource management situations, ensuring your\napplication doesn't go beyond acceptable thresholds.",
     "deprecated": false,
     "examples": [],
     "since": "3.5.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const ExceededCapacityException: new (message?: string | undefined) => ExceededCapacityException"
   },
   {
@@ -5942,11 +5942,11 @@
     },
     "project": "effect",
     "name": "isExceededCapacityException",
-    "description": "Returns `true` if the specified value is an `ExceededCapacityException`, `false`\notherwise.",
+    "description": "Checks if a given unknown value is an `ExceededCapacityException`.",
     "deprecated": false,
     "examples": [],
     "since": "3.5.0",
-    "category": "refinements",
+    "category": "Guards",
     "signature": "export declare const isExceededCapacityException: (u: unknown) => u is ExceededCapacityException"
   },
   {
@@ -5960,11 +5960,11 @@
     },
     "project": "effect",
     "name": "pretty",
-    "description": "Returns the specified `Cause` as a pretty-printed string.",
+    "description": "Converts a `Cause` into a human-readable string.\n\n**Details**\n\nThis function pretty-prints the entire `Cause`, including any failures,\ndefects, and interruptions. It can be especially helpful for logging,\ndebugging, or displaying structured errors to users.\n\nYou can optionally pass `options` to configure how the error cause is\nrendered. By default, it includes essential details of all errors in the\n`Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "rendering",
+    "category": "Formatting",
     "signature": "export declare const pretty: <E>(cause: Cause<E>, options?: { readonly renderErrorCause?: boolean | undefined; }) => string"
   },
   {
@@ -5978,11 +5978,11 @@
     },
     "project": "effect",
     "name": "prettyErrors",
-    "description": "Returns the specified `Cause` as a pretty-printed string.",
+    "description": "Returns a list of prettified errors (`PrettyError`) from a `Cause`.\n\n**Details**\n\nThis function inspects the entire `Cause` and produces an array of\n`PrettyError` objects. Each object may include additional metadata, such as a\n`Span`, to provide deeper insights into where and how the error occurred.",
     "deprecated": false,
     "examples": [],
     "since": "3.2.0",
-    "category": "rendering",
+    "category": "Formatting",
     "signature": "export declare const prettyErrors: <E>(cause: Cause<E>) => Array<PrettyError>"
   },
   {
@@ -5996,11 +5996,11 @@
     },
     "project": "effect",
     "name": "originalError",
-    "description": "Returns the original, unproxied, instance of a thrown error",
+    "description": "Retrieves the original, unproxied error instance from an error object.\n\n**Details**\n\nThis function returns the underlying error object without any\nlibrary-specific wrapping or proxying that might occur during error handling.\nThis can be essential if you need direct access to the error's native\nproperties, such as stack traces or custom data fields, for detailed\ndebugging or integration with external systems.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "errors",
+    "category": "Errors",
     "signature": "export declare const originalError: <E>(obj: E) => E"
   },
   {
@@ -6014,11 +6014,11 @@
     },
     "project": "effect",
     "name": "CauseReducer",
-    "description": "Represents a set of methods that can be used to reduce a `Cause<E>` to a\nspecified value of type `Z` with access to a context of type `C`.",
+    "description": "Describes methods for reducing a `Cause<E>` into a value of type `Z` with\naccess to contextual information.\n\n**Details**\n\nThis interface is meant for advanced transformations of `Cause`. By\nimplementing each method, you can define how different parts of the `Cause`\nstructure (like `Fail`, `Die`, or `Interrupt`) should be transformed into a\nfinal type `Z`. The `context` parameter carries additional data needed during\nthis reduction.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface CauseReducer<in C, in E, in out Z> {\n  emptyCase(context: C): Z\n  failCase(context: C, error: E): Z\n  dieCase(context: C, defect: unknown): Z\n  interruptCase(context: C, fiberId: FiberId.FiberId): Z\n  sequentialCase(context: C, left: Z, right: Z): Z\n  parallelCase(context: C, left: Z, right: Z): Z\n}"
   },
   {
@@ -6032,11 +6032,11 @@
     },
     "project": "effect",
     "name": "Die",
-    "description": "The `Die` cause represents a `Cause` which failed as a result of a defect, or\nin other words, an unexpected error.\n\ntype `E`.",
+    "description": "Represents an unexpected defect within a `Cause`.\n\n**Details**\n\nThis interface models a `Cause` for errors that are typically unrecoverable or\nunanticipated—like runtime exceptions or bugs. When code \"dies,\" it indicates a\nsevere failure that wasn't accounted for.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Die extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Die\"\n  readonly defect: unknown\n}"
   },
   {
@@ -6050,11 +6050,11 @@
     },
     "project": "effect",
     "name": "Empty",
-    "description": "The `Empty` cause represents a lack of errors.",
+    "description": "Represents a lack of errors within a `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Empty extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Empty\"\n}"
   },
   {
@@ -6068,11 +6068,11 @@
     },
     "project": "effect",
     "name": "ExceededCapacityException",
-    "description": "Represents a checked exception which occurs when a resources capacity has\nbeen exceeded.",
+    "description": "An error that occurs when resource capacity is exceeded.",
     "deprecated": false,
     "examples": [],
     "since": "3.5.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface ExceededCapacityException extends YieldableError {\n  readonly _tag: \"ExceededCapacityException\"\n  readonly [ExceededCapacityExceptionTypeId]: ExceededCapacityExceptionTypeId\n}"
   },
   {
@@ -6086,11 +6086,11 @@
     },
     "project": "effect",
     "name": "Fail",
-    "description": "The `Fail` cause represents a `Cause` which failed with an expected error of\ntype `E`.",
+    "description": "Represents an expected error within a `Cause`.\n\n**Details**\n\nThis interface models a `Cause` that carries an expected or known error of\ntype `E`. For example, if you validate user input and find it invalid, you\nmight store that error within a `Fail`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Fail<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Fail\"\n  readonly error: E\n}"
   },
   {
@@ -6104,11 +6104,11 @@
     },
     "project": "effect",
     "name": "IllegalArgumentException",
-    "description": "Represents a checked exception which occurs when an invalid argument is\nprovided to a method.",
+    "description": "An error representing an invalid argument passed to a method.\n\n**Details**\n\nThis interface is used for signaling that a function or method received an\nargument that does not meet its preconditions.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface IllegalArgumentException extends YieldableError {\n  readonly _tag: \"IllegalArgumentException\"\n  readonly [IllegalArgumentExceptionTypeId]: IllegalArgumentExceptionTypeId\n}"
   },
   {
@@ -6122,11 +6122,11 @@
     },
     "project": "effect",
     "name": "Interrupt",
-    "description": "The `Interrupt` cause represents failure due to `Fiber` interruption, which\ncontains the `FiberId` of the interrupted `Fiber`.",
+    "description": "Represents fiber interruption within a `Cause`.\n\n**Details**\n\nThis interface models a scenario where an effect was halted by an external\nsignal, carrying a `FiberId` that identifies which fiber was interrupted.\nInterruption is a normal part of concurrency, used for cancellation or\nresource cleanup.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Interrupt extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Interrupt\"\n  readonly fiberId: FiberId.FiberId\n}"
   },
   {
@@ -6140,11 +6140,11 @@
     },
     "project": "effect",
     "name": "InterruptedException",
-    "description": "Represents a checked exception which occurs when a `Fiber` is interrupted.",
+    "description": "An error representing fiber interruption.\n\n**Details**\n\nThis interface represents errors that occur when a fiber is forcefully\ninterrupted. Interruption can happen for various reasons, including\ncancellations or system directives to halt operations. Code that deals with\nconcurrency might need to catch or handle these to ensure proper cleanup.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface InterruptedException extends YieldableError {\n  readonly _tag: \"InterruptedException\"\n  readonly [InterruptedExceptionTypeId]: InterruptedExceptionTypeId\n}"
   },
   {
@@ -6158,11 +6158,11 @@
     },
     "project": "effect",
     "name": "InvalidPubSubCapacityException",
-    "description": "Represents a checked exception which occurs when attempting to construct a\n`PubSub` with an invalid capacity.",
+    "description": "An error indicating invalid capacity for a `PubSub`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface InvalidPubSubCapacityException extends YieldableError {\n  readonly _tag: \"InvalidPubSubCapacityException\"\n  readonly [InvalidPubSubCapacityExceptionTypeId]: InvalidPubSubCapacityExceptionTypeId\n}"
   },
   {
@@ -6176,11 +6176,11 @@
     },
     "project": "effect",
     "name": "NoSuchElementException",
-    "description": "Represents a checked exception which occurs when an expected element was\nunable to be found.",
+    "description": "An error that occurs when an expected element is missing.\n\n**Details**\n\nThis interface indicates scenarios like looking up an item in a collection\nor searching for data that should be present but isn't. It helps your code\nsignal a more specific issue rather than a general error.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface NoSuchElementException extends YieldableError {\n  readonly _tag: \"NoSuchElementException\"\n  readonly [NoSuchElementExceptionTypeId]: NoSuchElementExceptionTypeId\n}"
   },
   {
@@ -6194,11 +6194,11 @@
     },
     "project": "effect",
     "name": "Parallel",
-    "description": "The `Parallel` cause represents the composition of two causes which occurred\nin parallel.\n\nIn Effect-TS programs, it is possible that two operations may be performed in\nparallel. In these cases, the `Effect` workflow can fail for more than one\nreason. If both computations fail, then there are actually two errors which\noccurred in parallel. In these cases, the errors can be represented by the\n`Parallel` cause.",
+    "description": "Represents parallel composition of two `Cause`s.\n\n**Details**\n\nThis interface captures failures that happen simultaneously. In scenarios\nwith concurrency, more than one operation can fail in parallel. Instead of\nlosing information, this structure stores both errors together.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Parallel<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Parallel\"\n  readonly left: Cause<E>\n  readonly right: Cause<E>\n}"
   },
   {
@@ -6212,11 +6212,11 @@
     },
     "project": "effect",
     "name": "PrettyError",
-    "description": null,
+    "description": "A shape for prettified errors, optionally including a source span.",
     "deprecated": false,
     "examples": [],
     "since": "3.2.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface PrettyError extends Error {\n  readonly span: Span | undefined\n}"
   },
   {
@@ -6230,11 +6230,11 @@
     },
     "project": "effect",
     "name": "RuntimeException",
-    "description": "Represents a generic checked exception which occurs at runtime.",
+    "description": "An error representing a runtime error.\n\n**Details**\n\nThis interface is used for errors that occur at runtime but are still\nconsidered recoverable or typed.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface RuntimeException extends YieldableError {\n  readonly _tag: \"RuntimeException\"\n  readonly [RuntimeExceptionTypeId]: RuntimeExceptionTypeId\n}"
   },
   {
@@ -6248,11 +6248,11 @@
     },
     "project": "effect",
     "name": "Sequential",
-    "description": "The `Sequential` cause represents the composition of two causes which occurred\nsequentially.\n\nFor example, if we perform Effect-TS's analog of `try-finally` (i.e.\n`Effect.ensuring`), and both the `try` and `finally` blocks fail, we have two\nerrors which occurred sequentially. In these cases, the errors can be\nrepresented by the `Sequential` cause.",
+    "description": "Represents sequential composition of two `Cause`s.\n\n**Details**\n\nThis interface models the scenario where one error follows another in\nsequence, such as when a main effect fails and then a finalizer also fails.\nIt ensures both errors are retained in the final `Cause`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Sequential<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, Inspectable {\n  readonly _tag: \"Sequential\"\n  readonly left: Cause<E>\n  readonly right: Cause<E>\n}"
   },
   {
@@ -6266,11 +6266,11 @@
     },
     "project": "effect",
     "name": "TimeoutException",
-    "description": "Represents a checked exception which occurs when a computation doesn't\nfinish on schedule.",
+    "description": "An error representing a computation that timed out.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface TimeoutException extends YieldableError {\n  readonly _tag: \"TimeoutException\"\n  readonly [TimeoutExceptionTypeId]: TimeoutExceptionTypeId\n}"
   },
   {
@@ -6284,11 +6284,11 @@
     },
     "project": "effect",
     "name": "UnknownException",
-    "description": "Represents a checked exception which occurs when an unknown error is thrown, such as\nfrom a rejected promise.",
+    "description": "A checked exception for handling unknown or unexpected errors.\n\n**Details**\n\nThis interface captures errors that don't fall under known categories. It is\nespecially helpful for wrapping low-level or third-party library errors that\nmight provide little or no context, such as from a rejected promise.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface UnknownException extends YieldableError {\n  readonly _tag: \"UnknownException\"\n  readonly [UnknownExceptionTypeId]: UnknownExceptionTypeId\n  readonly error: unknown\n}"
   },
   {
@@ -6302,11 +6302,11 @@
     },
     "project": "effect",
     "name": "YieldableError",
-    "description": null,
+    "description": "Represents an error object that can be yielded in `Effect.gen`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface YieldableError extends Pipeable, Inspectable, Readonly<Error> {\n  readonly [Effect.EffectTypeId]: Effect.Effect.VarianceStruct<never, this, never>\n  readonly [Stream.StreamTypeId]: Stream.Stream.VarianceStruct<never, this, never>\n  readonly [Sink.SinkTypeId]: Sink.Sink.VarianceStruct<never, unknown, never, this, never>\n  readonly [Channel.ChannelTypeId]: Channel.Channel.VarianceStruct<never, unknown, this, unknown, never, unknown, never>\n  [Symbol.iterator](): Effect.EffectGenerator<Effect.Effect<never, this, never>>\n}"
   },
   {
@@ -6320,11 +6320,11 @@
     },
     "project": "effect",
     "name": "Cause",
-    "description": "A `Cause` represents the full history of a failure resulting from running an\n`Effect` workflow.\n\nEffect-TS uses a data structure from functional programming called a semiring\nto represent the `Cause` data type. This allows us to take a base type `E`\n(which represents the error type of an `Effect`) and capture the sequential\nand parallel composition of errors in a fully lossless fashion.",
+    "description": "Represents the full history of a failure within an `Effect`.\n\n**Details**\n\nThis type is a data structure that captures all information about why and how\nan effect has failed, including parallel errors, sequential errors, defects,\nand interruptions. It enables a \"lossless\" error model: no error-related\ninformation is discarded, which helps in debugging and understanding the root\ncause of failures.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export type Cause<E> =\n  | Empty\n  | Fail<E>\n  | Die\n  | Interrupt\n  | Sequential<E>\n  | Parallel<E>"
   },
   {
@@ -6342,7 +6342,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type CauseTypeId = typeof CauseTypeId"
   },
   {
@@ -6360,7 +6360,7 @@
     "deprecated": false,
     "examples": [],
     "since": "3.5.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type ExceededCapacityExceptionTypeId = typeof ExceededCapacityExceptionTypeId"
   },
   {
@@ -6378,7 +6378,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type IllegalArgumentExceptionTypeId = typeof IllegalArgumentExceptionTypeId"
   },
   {
@@ -6396,7 +6396,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type InterruptedExceptionTypeId = typeof InterruptedExceptionTypeId"
   },
   {
@@ -6414,7 +6414,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type InvalidPubSubCapacityExceptionTypeId = typeof InvalidPubSubCapacityExceptionTypeId"
   },
   {
@@ -6432,7 +6432,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type NoSuchElementExceptionTypeId = typeof NoSuchElementExceptionTypeId"
   },
   {
@@ -6450,7 +6450,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type RuntimeExceptionTypeId = typeof RuntimeExceptionTypeId"
   },
   {
@@ -6468,7 +6468,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type TimeoutExceptionTypeId = typeof TimeoutExceptionTypeId"
   },
   {
@@ -6486,7 +6486,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type UnknownExceptionTypeId = typeof UnknownExceptionTypeId"
   },
   {
@@ -9604,7 +9604,7 @@
     },
     "project": "effect",
     "name": "remove",
-    "description": "Delete the element at the specified index, creating a new `Chunk`,\nor returning the input if the index is out of bounds.",
+    "description": "Delete the element at the specified index, creating a new `Chunk`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -13669,10 +13669,10 @@
     },
     "project": "effect",
     "name": "unsafeParse",
-    "description": "Parses a cron expression into a `Cron` instance.\n\nThrows on failure.",
+    "description": "Parses a cron expression into a `Cron` instance.\n\n**Details**\n\nThis function takes a cron expression as a string and attempts to parse it\ninto a `Cron` instance. If the expression is valid, the resulting `Cron`\ninstance will represent the schedule defined by the cron expression.\n\nIf the expression is invalid, the function throws a `ParseError`.\n\nYou can optionally provide a time zone (`tz`) to interpret the cron\nexpression in a specific time zone. If no time zone is provided, the cron\nexpression will use the default time zone.",
     "deprecated": false,
     "examples": [
-      "import { Cron } from \"effect\"\n\n// At 04:00 on every day-of-month from 8 through 14.\nassert.deepStrictEqual(Cron.unsafeParse(\"0 4 8-14 * *\"), Cron.make({\n  minutes: [0],\n  hours: [4],\n  days: [8, 9, 10, 11, 12, 13, 14],\n  months: [],\n  weekdays: []\n}))"
+      "import { Cron } from \"effect\"\n\n// At 04:00 on every day-of-month from 8 through 14.\nconsole.log(Cron.unsafeParse(\"0 4 8-14 * *\"))\n// Output:\n// {\n//   _id: 'Cron',\n//   tz: { _id: 'Option', _tag: 'None' },\n//   seconds: [ 0 ],\n//   minutes: [ 0 ],\n//   hours: [ 4 ],\n//   days: [\n//      8,  9, 10, 11,\n//     12, 13, 14\n//   ],\n//   months: [],\n//   weekdays: []\n// }"
     ],
     "since": "2.0.0",
     "category": "constructors",
@@ -17471,7 +17471,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export type DurationInput =\n  | Duration\n  | number // millis\n  | bigint // nanos\n  | [seconds: number, nanos: number]\n  | `${number} ${Unit}`"
+    "signature": "export type DurationInput =\n  | Duration\n  | number // millis\n  | bigint // nanos\n  | readonly [seconds: number, nanos: number]\n  | `${number} ${Unit}`"
   },
   {
     "_tag": "TypeAlias",
@@ -21576,7 +21576,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "Repetition / Recursion",
-    "signature": "export declare const schedule: { <R2, Out>(schedule: Schedule.Schedule<Out, unknown, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>; <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, unknown, R2>): Effect<Out, E, R | R2>; }"
+    "signature": "export declare const schedule: { <A, R2, Out>(schedule: Schedule.Schedule<Out, NoInfer<A> | undefined, R2>): <E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>; <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, A | undefined, R2>): Effect<Out, E, R | R2>; }"
   },
   {
     "_tag": "Constant",
@@ -23845,7 +23845,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "Semaphore",
-    "signature": "export interface Semaphore {\n  /**\n   * Runs an effect with the given number of permits and releases the permits\n   * when the effect completes.\n   *\n   * **Details**\n   *\n   * This function acquires the specified number of permits before executing\n   * the provided effect. Once the effect finishes, the permits are released.\n   * If insufficient permits are available, the function will wait until they\n   * are released by other tasks.\n   */\n  withPermits(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>\n\n  /**\n   * Runs an effect only if the specified number of permits are immediately\n   * available.\n   *\n   * **Details**\n   *\n   * This function attempts to acquire the specified number of permits. If they\n   * are available, it runs the effect and releases the permits after the effect\n   * completes. If permits are not available, the effect does not execute, and\n   * the result is `Option.none`.\n   */\n  withPermitsIfAvailable(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>\n\n  /**\n   * Acquires the specified number of permits and returns the resulting\n   * available permits, suspending the task if they are not yet available.\n   */\n  take(permits: number): Effect<number>\n\n  /**\n   * Releases the specified number of permits and returns the resulting\n   * available permits.\n   */\n  release(permits: number): Effect<number>\n\n  /**\n   * Releases all permits held by this semaphore and returns the resulting available permits.\n   */\n  releaseAll: Effect<number>\n}"
+    "signature": "export interface Semaphore {\n  /**\n   * Runs an effect with the given number of permits and releases the permits\n   * when the effect completes.\n   *\n   * **Details**\n   *\n   * This function acquires the specified number of permits before executing\n   * the provided effect. Once the effect finishes, the permits are released.\n   * If insufficient permits are available, the function will wait until they\n   * are released by other tasks.\n   */\n  withPermits(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>\n\n  /**\n   * Runs an effect only if the specified number of permits are immediately\n   * available.\n   *\n   * **Details**\n   *\n   * This function attempts to acquire the specified number of permits. If they\n   * are available, it runs the effect and releases the permits after the effect\n   * completes. If permits are not available, the effect does not execute, and\n   * the result is `Option.none`.\n   */\n  withPermitsIfAvailable(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>\n\n  /**\n   * Acquires the specified number of permits and returns the resulting\n   * available permits, suspending the task if they are not yet available.\n   * Concurrent pending `take` calls are processed in a first-in, first-out manner.\n   */\n  take(permits: number): Effect<number>\n\n  /**\n   * Releases the specified number of permits and returns the resulting\n   * available permits.\n   */\n  release(permits: number): Effect<number>\n\n  /**\n   * Releases all permits held by this semaphore and returns the resulting available permits.\n   */\n  releaseAll: Effect<number>\n}"
   },
   {
     "_tag": "TypeAlias",
@@ -38203,7 +38203,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
-    "signature": "export declare const scope: Layer<Scope.CloseableScope, never, never>"
+    "signature": "export declare const scope: Layer<Scope.Scope, never, never>"
   },
   {
     "_tag": "Constant",
@@ -50812,7 +50812,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export declare const TypeId: typeof TypeId"
   },
   {
@@ -50826,11 +50826,13 @@
     },
     "project": "effect",
     "name": "some",
-    "description": "Creates a new `Option` that wraps the given value.",
+    "description": "Wraps the given value into an `Option` to represent its presence.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "// Title: Creating an Option with a Value\nimport { Option } from \"effect\"\n\n// An Option holding the number 1\n//\n//      ┌─── Option<number>\n//      ▼\nconst value = Option.some(1)\n\nconsole.log(value)\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }"
+    ],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": "export declare const some: <A>(value: A) => Option<A>"
   },
   {
@@ -50844,13 +50846,13 @@
     },
     "project": "effect",
     "name": "isOption",
-    "description": "Checks if a given value is an `Option` value.",
+    "description": "Determines whether the given value is an `Option`.\n\n**Details**\n\nThis function checks if a value is an instance of `Option`. It returns `true`\nif the value is either `Option.some` or `Option.none`, and `false` otherwise.\nThis is particularly useful when working with unknown values or when you need\nto ensure type safety in your code.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.isOption(Option.some(1)), true)\nassert.deepStrictEqual(Option.isOption(Option.none()), true)\nassert.deepStrictEqual(Option.isOption({}), false)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.isOption(Option.some(1)))\n// Output: true\n\nconsole.log(Option.isOption(Option.none()))\n// Output: true\n\nconsole.log(Option.isOption({}))\n// Output: false"
     ],
     "since": "2.0.0",
-    "category": "guards",
+    "category": "Guards",
     "signature": "export declare const isOption: (input: unknown) => input is Option<unknown>"
   },
   {
@@ -50864,13 +50866,13 @@
     },
     "project": "effect",
     "name": "isNone",
-    "description": "Determine if a `Option` is a `None`.",
+    "description": "Checks whether an `Option` represents the absence of a value (`None`).",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.isNone(Option.some(1)), false)\nassert.deepStrictEqual(Option.isNone(Option.none()), true)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.isNone(Option.some(1)))\n// Output: false\n\nconsole.log(Option.isNone(Option.none()))\n// Output: true"
     ],
     "since": "2.0.0",
-    "category": "guards",
+    "category": "Guards",
     "signature": "export declare const isNone: <A>(self: Option<A>) => self is None<A>"
   },
   {
@@ -50884,13 +50886,13 @@
     },
     "project": "effect",
     "name": "isSome",
-    "description": "Determine if a `Option` is a `Some`.",
+    "description": "Checks whether an `Option` contains a value (`Some`).",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.isSome(Option.some(1)), true)\nassert.deepStrictEqual(Option.isSome(Option.none()), false)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.isSome(Option.some(1)))\n// Output: true\n\nconsole.log(Option.isSome(Option.none()))\n// Output: false"
     ],
     "since": "2.0.0",
-    "category": "guards",
+    "category": "Guards",
     "signature": "export declare const isSome: <A>(self: Option<A>) => self is Some<A>"
   },
   {
@@ -50904,13 +50906,13 @@
     },
     "project": "effect",
     "name": "match",
-    "description": "Matches the given `Option` and returns either the provided `onNone` value or the result of the provided `onSome`\nfunction when passed the `Option`'s value.",
+    "description": "Performs pattern matching on an `Option` to handle both `Some` and `None`\ncases.\n\n**Details**\n\nThis function allows you to match against an `Option` and handle both\nscenarios: when the `Option` is `None` (i.e., contains no value), and when\nthe `Option` is `Some` (i.e., contains a value). It executes one of the\nprovided functions based on the case:\n\n- If the `Option` is `None`, the `onNone` function is executed and its result\n  is returned.\n- If the `Option` is `Some`, the `onSome` function is executed with the\n  contained value, and its result is returned.\n\nThis function provides a concise and functional way to handle optional values\nwithout resorting to `if` or manual checks, making your code more declarative\nand readable.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nassert.deepStrictEqual(\n  pipe(Option.some(1), Option.match({ onNone: () => 'a none', onSome: (a) => `a some containing ${a}` })),\n  'a some containing 1'\n)\n\nassert.deepStrictEqual(\n  pipe(Option.none(), Option.match({ onNone: () => 'a none', onSome: (a) => `a some containing ${a}` })),\n  'a none'\n)"
+      "// Title: Pattern Matching with Option\nimport { Option } from \"effect\"\n\nconst foo = Option.some(1)\n\nconst message = Option.match(foo, {\n  onNone: () => \"Option is empty\",\n  onSome: (value) => `Option has a value: ${value}`\n})\n\nconsole.log(message)\n// Output: \"Option has a value: 1\""
     ],
     "since": "2.0.0",
-    "category": "pattern matching",
+    "category": "Pattern matching",
     "signature": "export declare const match: { <B, A, C = B>(options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): (self: Option<A>) => B | C; <A, B, C = B>(self: Option<A>, options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): B | C; }"
   },
   {
@@ -50924,13 +50926,13 @@
     },
     "project": "effect",
     "name": "getRight",
-    "description": "Converts a `Either` to an `Option` discarding the error.",
+    "description": "Converts an `Either` into an `Option` by discarding the error and extracting\nthe right value.\n\n**Details**\n\nThis function takes an `Either` and returns an `Option` based on its value:\n\n- If the `Either` is a `Right`, its value is wrapped in a `Some` and\n  returned.\n- If the `Either` is a `Left`, the error is discarded, and `None` is\n  returned.\n\nThis is particularly useful when you only care about the success case\n(`Right`) of an `Either` and want to handle the result using `Option`. By\nusing this function, you can convert `Either` into a simpler structure for\ncases where error handling is not required.",
     "deprecated": false,
     "examples": [
-      "import { Option, Either } from \"effect\"\n\nassert.deepStrictEqual(Option.getRight(Either.right('ok')), Option.some('ok'))\nassert.deepStrictEqual(Option.getRight(Either.left('err')), Option.none())"
+      "import { Either, Option } from \"effect\"\n\nconsole.log(Option.getRight(Either.right(\"ok\")))\n// Output: { _id: 'Option', _tag: 'Some', value: 'ok' }\n\nconsole.log(Option.getRight(Either.left(\"err\")))\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": "export declare const getRight: <R, L>(self: Either<R, L>) => Option<R>"
   },
   {
@@ -50944,13 +50946,13 @@
     },
     "project": "effect",
     "name": "getLeft",
-    "description": "Converts a `Either` to an `Option` discarding the value.",
+    "description": "Converts an `Either` into an `Option` by discarding the right value and\nextracting the left value.\n\n**Details**\n\nThis function transforms an `Either` into an `Option` as follows:\n\n- If the `Either` is a `Left`, its value is wrapped in a `Some` and returned.\n- If the `Either` is a `Right`, the value is discarded, and `None` is\n  returned.\n\nThis utility is useful when you only care about the error case (`Left`) of an\n`Either` and want to handle it as an `Option`. By discarding the right value,\nit simplifies error-focused workflows.",
     "deprecated": false,
     "examples": [
-      "import { Option, Either } from \"effect\"\n\nassert.deepStrictEqual(Option.getLeft(Either.right(\"ok\")), Option.none())\nassert.deepStrictEqual(Option.getLeft(Either.left(\"a\")), Option.some(\"a\"))"
+      "import { Either, Option } from \"effect\"\n\nconsole.log(Option.getLeft(Either.right(\"ok\")))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(Option.getLeft(Either.left(\"err\")))\n// Output: { _id: 'Option', _tag: 'Some', value: 'err' }"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": "export declare const getLeft: <R, L>(self: Either<R, L>) => Option<L>"
   },
   {
@@ -50964,13 +50966,13 @@
     },
     "project": "effect",
     "name": "getOrElse",
-    "description": "Returns the value of the `Option` if it is `Some`, otherwise returns `onNone`",
+    "description": "Returns the value contained in the `Option` if it is `Some`, otherwise\nevaluates and returns the result of `onNone`.\n\n**Details**\n\nThis function allows you to provide a fallback value or computation for when\nan `Option` is `None`. If the `Option` contains a value (`Some`), that value\nis returned. If it is empty (`None`), the `onNone` function is executed, and\nits result is returned instead.\n\nThis utility is helpful for safely handling `Option` values by ensuring you\nalways receive a meaningful result, whether or not the `Option` contains a\nvalue. It is particularly useful for providing default values or alternative\nlogic when working with optional values.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nassert.deepStrictEqual(pipe(Option.some(1), Option.getOrElse(() => 0)), 1)\nassert.deepStrictEqual(pipe(Option.none(), Option.getOrElse(() => 0)), 0)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.some(1).pipe(Option.getOrElse(() => 0)))\n// Output: 1\n\nconsole.log(Option.none().pipe(Option.getOrElse(() => 0)))\n// Output: 0"
     ],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const getOrElse: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A; <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B; }"
   },
   {
@@ -50984,13 +50986,13 @@
     },
     "project": "effect",
     "name": "orElse",
-    "description": "Returns the provided `Option` `that` if `self` is `None`, otherwise returns `self`.",
+    "description": "Returns the provided `Option` `that` if the current `Option` (`self`) is\n`None`; otherwise, it returns `self`.\n\n**Details**\n\nThis function provides a fallback mechanism for `Option` values. If the\ncurrent `Option` is `None` (i.e., it contains no value), the `that` function\nis evaluated, and its resulting `Option` is returned. If the current `Option`\nis `Some` (i.e., it contains a value), the original `Option` is returned\nunchanged.\n\nThis is particularly useful for chaining fallback values or computations,\nallowing you to provide alternative `Option` values when the first one is\nempty.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nassert.deepStrictEqual(\n  pipe(\n    Option.none(),\n    Option.orElse(() => Option.none())\n  ),\n  Option.none()\n)\nassert.deepStrictEqual(\n  pipe(\n    Option.some('a'),\n    Option.orElse(() => Option.none())\n  ),\n  Option.some('a')\n)\nassert.deepStrictEqual(\n  pipe(\n    Option.none(),\n    Option.orElse(() => Option.some('b'))\n  ),\n  Option.some('b')\n)\nassert.deepStrictEqual(\n  pipe(\n    Option.some('a'),\n    Option.orElse(() => Option.some('b'))\n  ),\n  Option.some('a')\n)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.none().pipe(Option.orElse(() => Option.none())))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(Option.some(\"a\").pipe(Option.orElse(() => Option.none())))\n// Output: { _id: 'Option', _tag: 'Some', value: 'a' }\n\nconsole.log(Option.none().pipe(Option.orElse(() => Option.some(\"b\"))))\n// Output: { _id: 'Option', _tag: 'Some', value: 'b' }\n\nconsole.log(Option.some(\"a\").pipe(Option.orElse(() => Option.some(\"b\"))))\n// Output: { _id: 'Option', _tag: 'Some', value: 'a' }"
     ],
     "since": "2.0.0",
-    "category": "error handling",
+    "category": "Error handling",
     "signature": "export declare const orElse: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<A | B>; }"
   },
   {
@@ -51004,13 +51006,13 @@
     },
     "project": "effect",
     "name": "orElseSome",
-    "description": "Returns the provided default value as `Some` if `self` is `None`, otherwise returns `self`.",
+    "description": "Returns the provided default value wrapped in `Some` if the current `Option`\n(`self`) is `None`; otherwise, returns `self`.\n\n**Details**\n\nThis function provides a way to supply a default value for cases where an\n`Option` is `None`. If the current `Option` is empty (`None`), the `onNone`\nfunction is executed to compute the default value, which is then wrapped in a\n`Some`. If the current `Option` contains a value (`Some`), it is returned as\nis.\n\nThis is particularly useful for handling optional values where a fallback\ndefault needs to be provided explicitly in case of absence.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nassert.deepStrictEqual(\n  pipe(\n    Option.none(),\n    Option.orElseSome(() => 'b')\n  ),\n  Option.some('b')\n)\nassert.deepStrictEqual(\n  pipe(\n    Option.some('a'),\n    Option.orElseSome(() => 'b')\n  ),\n  Option.some('a')\n)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.none().pipe(Option.orElseSome(() => \"b\")))\n// Output: { _id: 'Option', _tag: 'Some', value: 'b' }\n\nconsole.log(Option.some(\"a\").pipe(Option.orElseSome(() => \"b\")))\n// Output: { _id: 'Option', _tag: 'Some', value: 'a' }"
     ],
     "since": "2.0.0",
-    "category": "error handling",
+    "category": "Error handling",
     "signature": "export declare const orElseSome: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, onNone: LazyArg<B>): Option<A | B>; }"
   },
   {
@@ -51024,11 +51026,11 @@
     },
     "project": "effect",
     "name": "orElseEither",
-    "description": "Similar to `orElse`, but instead of returning a simple union, it returns an `Either` object,\nwhich contains information about which of the two `Option`s has been chosen.\n\nThis is useful when it's important to know whether the value was retrieved from the first `Option` or the second option.",
+    "description": "Similar to {@link orElse}, but returns an `Either` wrapped in an `Option` to\nindicate the source of the value.\n\n**Details**\n\nThis function allows you to provide a fallback `Option` in case the current\n`Option` (`self`) is `None`. However, unlike `orElse`, it returns the value\nwrapped in an `Either` object, providing additional information about where\nthe value came from:\n\n- If the value is from the fallback `Option` (`that`), it is wrapped in an\n  `Either.right`.\n- If the value is from the original `Option` (`self`), it is wrapped in an\n  `Either.left`.\n\nThis is especially useful when you need to differentiate between values\noriginating from the primary `Option` and those coming from the fallback,\nwhile still maintaining the `Option`-style handling.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "error handling",
+    "category": "Error handling",
     "signature": "export declare const orElseEither: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Either<B, A>>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Either<B, A>>; }"
   },
   {
@@ -51042,13 +51044,13 @@
     },
     "project": "effect",
     "name": "getOrNull",
-    "description": "Returns the value of the `Option` if it is a `Some`, otherwise returns `null`.",
+    "description": "Returns the value contained in the `Option` if it is `Some`; otherwise,\nreturns `null`.\n\n**Details**\n\nThis function provides a way to extract the value of an `Option` while\nfalling back to `null` if the `Option` is `None`.\n\nIt is particularly useful in scenarios where `null` is an acceptable\nplaceholder for the absence of a value, such as when interacting with APIs or\nsystems that use `null` as a default for missing values.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.getOrNull(Option.some(1)), 1)\nassert.deepStrictEqual(Option.getOrNull(Option.none()), null)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.getOrNull(Option.some(1)))\n// Output: 1\n\nconsole.log(Option.getOrNull(Option.none()))\n// Output: null"
     ],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const getOrNull: <A>(self: Option<A>) => A | null"
   },
   {
@@ -51062,13 +51064,13 @@
     },
     "project": "effect",
     "name": "getOrUndefined",
-    "description": "Returns the value of the `Option` if it is a `Some`, otherwise returns `undefined`.",
+    "description": "Returns the value contained in the `Option` if it is `Some`; otherwise,\nreturns `undefined`.\n\n**Details**\n\nThis function provides a way to extract the value of an `Option` while\nfalling back to `undefined` if the `Option` is `None`.\n\nIt is particularly useful in scenarios where `undefined` is an acceptable\nplaceholder for the absence of a value, such as when interacting with APIs or\nsystems that use `undefined` as a default for missing values.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.getOrUndefined(Option.some(1)), 1)\nassert.deepStrictEqual(Option.getOrUndefined(Option.none()), undefined)"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.getOrUndefined(Option.some(1)))\n// Output: 1\n\nconsole.log(Option.getOrUndefined(Option.none()))\n// Output: undefined"
     ],
     "since": "2.0.0",
-    "category": "getters",
+    "category": "Getters",
     "signature": "export declare const getOrUndefined: <A>(self: Option<A>) => A | undefined"
   },
   {
@@ -51082,13 +51084,13 @@
     },
     "project": "effect",
     "name": "getOrThrowWith",
-    "description": "Extracts the value of an `Option` or throws if the `Option` is `None`.\n\nIf a default error is sufficient for your use case and you don't need to configure the thrown error, see {@link getOrThrow}.",
+    "description": "Extracts the value of an `Option` or throws an error if the `Option` is\n`None`, using a custom error factory.\n\n**Details**\n\nThis function allows you to extract the value of an `Option` when it is\n`Some`. If the `Option` is `None`, it throws an error generated by the\nprovided `onNone` function. This utility is particularly useful when you need\na fail-fast behavior for empty `Option` values and want to provide a custom\nerror message or object.",
     "deprecated": false,
     "examples": [
       "import { Option } from \"effect\"\n\nassert.deepStrictEqual(\n  Option.getOrThrowWith(Option.some(1), () => new Error('Unexpected None')),\n  1\n)\nassert.throws(() => Option.getOrThrowWith(Option.none(), () => new Error('Unexpected None')))"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": "export declare const getOrThrowWith: { (onNone: () => unknown): <A>(self: Option<A>) => A; <A>(self: Option<A>, onNone: () => unknown): A; }"
   },
   {
@@ -51102,13 +51104,13 @@
     },
     "project": "effect",
     "name": "getOrThrow",
-    "description": "Extracts the value of an `Option` or throws if the `Option` is `None`.\n\nThe thrown error is a default error. To configure the error thrown, see  {@link getOrThrowWith}.",
+    "description": "Extracts the value of an `Option` or throws a default error if the `Option`\nis `None`.\n\n**Details**\n\nThis function extracts the value from an `Option` if it is `Some`. If the\n`Option` is `None`, it throws a default error. It is useful for fail-fast\nscenarios where the absence of a value is treated as an exceptional case and\na default error is sufficient.",
     "deprecated": false,
     "examples": [
       "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.getOrThrow(Option.some(1)), 1)\nassert.throws(() => Option.getOrThrow(Option.none()))"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": "export declare const getOrThrow: <A>(self: Option<A>) => A"
   },
   {
@@ -51122,11 +51124,13 @@
     },
     "project": "effect",
     "name": "map",
-    "description": "Maps the `Some` side of an `Option` value to a new `Option` value.",
+    "description": "Transforms the value inside a `Some` to a new value using the provided\nfunction, while leaving `None` unchanged.\n\n**Details**\n\nThis function applies a mapping function `f` to the value inside an `Option`\nif it is a `Some`. If the `Option` is `None`, it remains unchanged. The\nresult is a new `Option` with the transformed value (if it was a `Some`) or\nstill `None`.\n\nThis utility is particularly useful for chaining transformations in a\nfunctional way without needing to manually handle `None` cases.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Option } from \"effect\"\n\n// Mapping over a `Some`\nconst someValue = Option.some(2)\n\nconsole.log(Option.map(someValue, (n) => n * 2))\n// Output: { _id: 'Option', _tag: 'Some', value: 4 }\n\n// Mapping over a `None`\nconst noneValue = Option.none<number>()\n\nconsole.log(Option.map(noneValue, (n) => n * 2))\n// Output: { _id: 'Option', _tag: 'None' }"
+    ],
     "since": "2.0.0",
-    "category": "mapping",
+    "category": "Mapping",
     "signature": "export declare const map: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; }"
   },
   {
@@ -51140,12 +51144,14 @@
     },
     "project": "effect",
     "name": "as",
-    "description": "Maps the `Some` value of this `Option` to the specified constant value.",
+    "description": "Replaces the value inside a `Some` with the specified constant value, leaving\n`None` unchanged.\n\n**Details**\n\nThis function transforms an `Option` by replacing the value inside a `Some`\nwith the given constant value `b`. If the `Option` is `None`, it remains\nunchanged.\n\nThis is useful when you want to preserve the presence of a value (`Some`) but\nreplace its content with a fixed value.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Option } from \"effect\"\n\n// Replacing the value of a `Some`\nconst someValue = Option.some(42)\n\nconsole.log(Option.as(someValue, \"new value\"))\n// Output: { _id: 'Option', _tag: 'Some', value: 'new value' }\n\n// Replacing a `None` (no effect)\nconst noneValue = Option.none<number>()\n\nconsole.log(Option.as(noneValue, \"new value\"))\n// Output: { _id: 'Option', _tag: 'None' }"
+    ],
     "since": "2.0.0",
-    "category": "mapping",
-    "signature": "export declare const as: <B>(b: B) => <X>(self: Option<X>) => Option<B>"
+    "category": "Mapping",
+    "signature": "export declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B>; }"
   },
   {
     "_tag": "Constant",
@@ -51158,11 +51164,11 @@
     },
     "project": "effect",
     "name": "asVoid",
-    "description": "Maps the `Some` value of this `Option` to the `void` constant value.\n\nThis is useful when the value of the `Option` is not needed, but the presence or absence of the value is important.",
+    "description": "Replaces the value inside a `Some` with the constant value `void`, leaving\n`None` unchanged.\n\n**Details**\n\nThis function transforms an `Option` by replacing the value inside a `Some`\nwith `void`. If the `Option` is `None`, it remains unchanged.\n\nThis is particularly useful in scenarios where the presence or absence of a\nvalue is significant, but the actual content of the value is irrelevant.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "mapping",
+    "category": "Mapping",
     "signature": "export declare const asVoid: <_>(self: Option<_>) => Option<void>"
   },
   {
@@ -51176,11 +51182,13 @@
     },
     "project": "effect",
     "name": "flatMap",
-    "description": "Applies a function to the value of an `Option` and flattens the result, if the input is `Some`.",
+    "description": "Applies a function to the value of a `Some` and flattens the resulting\n`Option`. If the input is `None`, it remains `None`.\n\n**Details**\n\nThis function allows you to chain computations that return `Option` values.\nIf the input `Option` is `Some`, the provided function `f` is applied to the\ncontained value, and the resulting `Option` is returned. If the input is\n`None`, the function is not applied, and the result remains `None`.\n\nThis utility is particularly useful for sequencing operations that may fail\nor produce optional results, enabling clean and concise workflows for\nhandling such cases.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Option } from \"effect\"\n\ninterface Address {\n  readonly city: string\n  readonly street: Option.Option<string>\n}\n\ninterface User {\n  readonly id: number\n  readonly username: string\n  readonly email: Option.Option<string>\n  readonly address: Option.Option<Address>\n}\n\nconst user: User = {\n  id: 1,\n  username: \"john_doe\",\n  email: Option.some(\"john.doe@example.com\"),\n  address: Option.some({\n    city: \"New York\",\n    street: Option.some(\"123 Main St\")\n  })\n}\n\n// Use flatMap to extract the street value\nconst street = user.address.pipe(\n  Option.flatMap((address) => address.street)\n)\n\nconsole.log(street)\n// Output: { _id: 'Option', _tag: 'Some', value: '123 Main St' }"
+    ],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }"
   },
   {
@@ -51194,11 +51202,11 @@
     },
     "project": "effect",
     "name": "andThen",
-    "description": "Executes a sequence of two `Option`s. The second `Option` can be dependent on the result of the first `Option`.",
+    "description": "Chains two `Option`s together. The second `Option` can either be a static\nvalue or depend on the result of the first `Option`.\n\n**Details**\n\nThis function enables sequencing of two `Option` computations. If the first\n`Option` is `Some`, the second `Option` is evaluated. The second `Option` can\neither:\n\n- Be a static `Option` value.\n- Be a function that produces an `Option`, optionally based on the value of\n  the first `Option`.\n\nIf the first `Option` is `None`, the function skips the evaluation of the\nsecond `Option` and directly returns `None`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const andThen: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>; <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; <A, B>(self: Option<A>, f: Option<B>): Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>; }"
   },
   {
@@ -51212,13 +51220,13 @@
     },
     "project": "effect",
     "name": "flatMapNullable",
-    "description": "This is `flatMap` + `fromNullable`, useful when working with optional values.",
+    "description": "Combines `flatMap` and `fromNullable`, transforming the value inside a `Some`\nusing a function that may return `null` or `undefined`.\n\n**Details**\n\nThis function applies a transformation function `f` to the value inside a\n`Some`. The function `f` may return a value, `null`, or `undefined`. If `f`\nreturns a value, it is wrapped in a `Some`. If `f` returns `null` or\n`undefined`, the result is `None`. If the input `Option` is `None`, the\nfunction is not applied, and `None` is returned.\n\nThis utility is particularly useful when working with deeply nested optional\nvalues or chaining computations that may result in `null` or `undefined` at\nsome point.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\ninterface Employee {\n  company?: {\n    address?: {\n      street?: {\n        name?: string\n      }\n    }\n  }\n}\n\nconst employee1: Employee = { company: { address: { street: { name: 'high street' } } } }\n\nassert.deepStrictEqual(\n  pipe(\n    Option.some(employee1),\n    Option.flatMapNullable(employee => employee.company?.address?.street?.name),\n  ),\n  Option.some('high street')\n)\n\nconst employee2: Employee = { company: { address: { street: {} } } }\n\nassert.deepStrictEqual(\n  pipe(\n    Option.some(employee2),\n    Option.flatMapNullable(employee => employee.company?.address?.street?.name),\n  ),\n  Option.none()\n)"
+      "import { Option } from \"effect\"\n\ninterface Employee {\n  company?: {\n    address?: {\n      street?: {\n        name?: string\n      }\n    }\n  }\n}\n\nconst employee1: Employee = { company: { address: { street: { name: \"high street\" } } } }\n\n// Extracting a deeply nested property\nconsole.log(\n  Option.some(employee1)\n    .pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name))\n)\n// Output: { _id: 'Option', _tag: 'Some', value: 'high street' }\n\nconst employee2: Employee = { company: { address: { street: {} } } }\n\n// Property does not exist\nconsole.log(\n  Option.some(employee2)\n    .pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name))\n)\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const flatMapNullable: { <A, B>(f: (a: A) => B | null | undefined): (self: Option<A>) => Option<NonNullable<B>>; <A, B>(self: Option<A>, f: (a: A) => B | null | undefined): Option<NonNullable<B>>; }"
   },
   {
@@ -51232,11 +51240,11 @@
     },
     "project": "effect",
     "name": "flatten",
-    "description": null,
+    "description": "Flattens an `Option` of `Option` into a single `Option`.\n\n**Details**\n\nThis function takes an `Option` that wraps another `Option` and flattens it\ninto a single `Option`. If the outer `Option` is `Some`, the function\nextracts the inner `Option`. If the outer `Option` is `None`, the result\nremains `None`.\n\nThis is useful for simplifying nested `Option` structures that may arise\nduring functional operations.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
     "signature": "export declare const flatten: <A>(self: Option<Option<A>>) => Option<A>"
   },
   {
@@ -51250,11 +51258,11 @@
     },
     "project": "effect",
     "name": "zipRight",
-    "description": null,
+    "description": "Combines two `Option`s, keeping the value from the second `Option` if both\nare `Some`.\n\n**Details**\n\nThis function takes two `Option`s and returns the second one if the first is\n`Some`. If the first `Option` is `None`, the result will also be `None`,\nregardless of the second `Option`. It effectively \"zips\" the two `Option`s\nwhile discarding the value from the first `Option`.\n\nThis is particularly useful when sequencing computations where the result of\nthe first computation is not needed, and you only care about the result of\nthe second computation.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "zipping",
+    "category": "Zipping",
     "signature": "export declare const zipRight: { <B>(that: Option<B>): <_>(self: Option<_>) => Option<B>; <X, B>(self: Option<X>, that: Option<B>): Option<B>; }"
   },
   {
@@ -51267,30 +51275,12 @@
       ]
     },
     "project": "effect",
-    "name": "composeK",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "2.0.0",
-    "category": "sequencing",
-    "signature": "export declare const composeK: { <B, C>(bfc: (b: B) => Option<C>): <A>(afb: (a: A) => Option<B>) => (a: A) => Option<C>; <A, B, C>(afb: (a: A) => Option<B>, bfc: (b: B) => Option<C>): (a: A) => Option<C>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Option",
-      "path": [
-        "src",
-        "Option.ts"
-      ]
-    },
-    "project": "effect",
     "name": "zipLeft",
-    "description": "Sequences the specified `that` `Option` but ignores its value.\n\nIt is useful when we want to chain multiple operations, but only care about the result of `self`.",
+    "description": "Combines two `Option`s, keeping the value from the first `Option` if both are\n`Some`.\n\n**Details**\n\nThis function takes two `Option`s and returns the first one if it is `Some`.\nIf either the first `Option` or the second `Option` is `None`, the result\nwill be `None`. This operation \"zips\" the two `Option`s while discarding the\nvalue from the second `Option`.\n\nThis is useful when sequencing computations where the second `Option`\nrepresents a dependency or condition that must hold, but its value is\nirrelevant.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "zipping",
+    "category": "Zipping",
     "signature": "export declare const zipLeft: { <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>; <A, X>(self: Option<A>, that: Option<X>): Option<A>; }"
   },
   {
@@ -51303,14 +51293,34 @@
       ]
     },
     "project": "effect",
-    "name": "tap",
-    "description": "Applies the provided function `f` to the value of the `Option` if it is `Some` and returns the original `Option`\nunless `f` returns `None`, in which case it returns `None`.\n\nThis function is useful for performing additional computations on the value of the input `Option` without affecting its value.",
+    "name": "composeK",
+    "description": "Composes two functions that return `Option` values, creating a new function\nthat chains them together.\n\n**Details**\n\nThis function allows you to compose two computations, each represented by a\nfunction that returns an `Option`. The result of the first function is passed\nto the second function if it is `Some`. If the first function returns `None`,\nthe composed function short-circuits and returns `None` without invoking the\nsecond function.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst getInteger = (n: number) => Number.isInteger(n) ? Option.some(n) : Option.none()\n\nassert.deepStrictEqual(Option.tap(Option.none(), getInteger), Option.none())\nassert.deepStrictEqual(Option.tap(Option.some(1), getInteger), Option.some(1))\nassert.deepStrictEqual(Option.tap(Option.some(1.14), getInteger), Option.none())"
+      "import { Option } from \"effect\"\n\nconst parse = (s: string): Option.Option<number> => isNaN(Number(s)) ? Option.none() : Option.some(Number(s))\n\nconst double = (n: number): Option.Option<number> => n > 0 ? Option.some(n * 2) : Option.none()\n\nconst parseAndDouble = Option.composeK(parse, double)\n\nconsole.log(parseAndDouble(\"42\"))\n// Output: { _id: 'Option', _tag: 'Some', value: 84 }\n\nconsole.log(parseAndDouble(\"not a number\"))\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "sequencing",
+    "category": "Sequencing",
+    "signature": "export declare const composeK: { <B, C>(bfc: (b: B) => Option<C>): <A>(afb: (a: A) => Option<B>) => (a: A) => Option<C>; <A, B, C>(afb: (a: A) => Option<B>, bfc: (b: B) => Option<C>): (a: A) => Option<C>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Option",
+      "path": [
+        "src",
+        "Option.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "tap",
+    "description": "Applies the provided function `f` to the value of the `Option` if it is\n`Some` and returns the original `Option`, unless `f` returns `None`, in which\ncase it returns `None`.\n\n**Details**\n\nThis function allows you to perform additional computations on the value of\nan `Option` without modifying its original value. If the `Option` is `Some`,\nthe provided function `f` is executed with the value, and its result\ndetermines whether the original `Option` is returned (`Some`) or the result\nis `None` if `f` returns `None`. If the input `Option` is `None`, the\nfunction is not executed, and `None` is returned.\n\nThis is particularly useful for applying side conditions or performing\nvalidation checks while retaining the original `Option`'s value.",
+    "deprecated": false,
+    "examples": [
+      "import { Option } from \"effect\"\n\nconst getInteger = (n: number) => Number.isInteger(n) ? Option.some(n) : Option.none()\n\nconsole.log(Option.tap(Option.none(), getInteger))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(Option.tap(Option.some(1), getInteger))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }\n\nconsole.log(Option.tap(Option.some(1.14), getInteger))\n// Output: { _id: 'Option', _tag: 'None' }"
+    ],
+    "since": "2.0.0",
+    "category": "Sequencing",
     "signature": "export declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }"
   },
   {
@@ -51324,13 +51334,13 @@
     },
     "project": "effect",
     "name": "zipWith",
-    "description": "Zips two `Option` values together using a provided function, returning a new `Option` of the result.",
+    "description": "Combines two `Option` values into a new `Option` by applying a provided\nfunction to their values.\n\n**Details**\n\nThis function takes two `Option` values (`self` and `that`) and a combining\nfunction `f`. If both `Option` values are `Some`, the function `f` is applied\nto their values, and the result is wrapped in a new `Some`. If either\n`Option` is `None`, the result is `None`.\n\nThis utility is useful for combining two optional computations into a single\nresult while maintaining type safety and avoiding explicit checks for `None`.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\ntype Complex = [real: number, imaginary: number]\n\nconst complex = (real: number, imaginary: number): Complex => [real, imaginary]\n\nassert.deepStrictEqual(Option.zipWith(Option.none(), Option.none(), complex), Option.none())\nassert.deepStrictEqual(Option.zipWith(Option.some(1), Option.none(), complex), Option.none())\nassert.deepStrictEqual(Option.zipWith(Option.none(), Option.some(1), complex), Option.none())\nassert.deepStrictEqual(Option.zipWith(Option.some(1), Option.some(2), complex), Option.some([1, 2]))\n\nassert.deepStrictEqual(Option.zipWith(Option.some(1), complex)(Option.some(2)), Option.some([2, 1]))"
+      "import { Option } from \"effect\"\n\nconst maybeName: Option.Option<string> = Option.some(\"John\")\nconst maybeAge: Option.Option<number> = Option.some(25)\n\n// Combine the name and age into a person object\nconst person = Option.zipWith(maybeName, maybeAge, (name, age) => ({\n  name: name.toUpperCase(),\n  age\n}))\n\nconsole.log(person)\n// Output:\n// { _id: 'Option', _tag: 'Some', value: { name: 'JOHN', age: 25 } }"
     ],
     "since": "2.0.0",
-    "category": "zipping",
+    "category": "Zipping",
     "signature": "export declare const zipWith: { <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>; <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>; }"
   },
   {
@@ -51344,11 +51354,11 @@
     },
     "project": "effect",
     "name": "ap",
-    "description": null,
+    "description": "Applies a function inside a `Some` to a value inside another `Some`,\ncombining them into a new `Option`.\n\n**Details**\n\nThis function allows you to apply a function wrapped in an `Option` (`self`)\nto a value wrapped in another `Option` (`that`). If both `Option`s are\n`Some`, the function is applied to the value, and the result is wrapped in a\nnew `Some`. If either `Option` is `None`, the result is `None`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "combining",
+    "category": "Combining",
     "signature": "export declare const ap: { <A>(that: Option<A>): <B>(self: Option<(a: A) => B>) => Option<B>; <A, B>(self: Option<(a: A) => B>, that: Option<A>): Option<B>; }"
   },
   {
@@ -51362,13 +51372,13 @@
     },
     "project": "effect",
     "name": "reduceCompact",
-    "description": "Reduces an `Iterable` of `Option<A>` to a single value of type `B`, elements that are `None` are ignored.",
+    "description": "Reduces an `Iterable` of `Option<A>` to a single value of type `B`, ignoring\nelements that are `None`.\n\n**Details**\n\nThis function takes an initial value of type `B` and a reducing function `f`\nthat combines the accumulator with values of type `A`. It processes an\niterable of `Option<A>`, applying `f` only to the `Some` values while\nignoring the `None` values. The result is a single value of type `B`.\n\nThis utility is particularly useful for aggregating values from an iterable\nof `Option`s while skipping the absent (`None`) values.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nconst iterable = [Option.some(1), Option.none(), Option.some(2), Option.none()]\nassert.deepStrictEqual(pipe(iterable, Option.reduceCompact(0, (b, a) => b + a)), 3)"
+      "import { Option, pipe } from \"effect\"\n\nconst iterable = [Option.some(1), Option.none(), Option.some(2), Option.none()]\n\nconsole.log(pipe(iterable, Option.reduceCompact(0, (b, a) => b + a)))\n// Output: 3"
     ],
     "since": "2.0.0",
-    "category": "folding",
+    "category": "Reducing",
     "signature": "export declare const reduceCompact: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<Option<A>>) => B; <A, B>(self: Iterable<Option<A>>, b: B, f: (b: B, a: A) => B): B; }"
   },
   {
@@ -51382,11 +51392,11 @@
     },
     "project": "effect",
     "name": "partitionMap",
-    "description": null,
+    "description": "Splits an `Option` into two `Option`s based on the result of a mapping\nfunction that produces an `Either`.\n\n**Details**\n\nThis function takes an `Option` and a mapping function `f` that converts its\nvalue into an `Either`. It returns a tuple of two `Option`s:\n\n- The first `Option` (`left`) contains the value from the `Left` side of the\n  `Either` if it exists, otherwise `None`.\n- The second `Option` (`right`) contains the value from the `Right` side of\n  the `Either` if it exists, otherwise `None`.\n\nIf the input `Option` is `None`, both returned `Option`s are `None`.\n\nThis utility is useful for filtering and categorizing the contents of an\n`Option` based on a bifurcating computation.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "filtering",
+    "category": "Filtering",
     "signature": "export declare const partitionMap: { <A, B, C>(f: (a: A) => Either<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]; <A, B, C>(self: Option<A>, f: (a: A) => Either<C, B>): [left: Option<B>, right: Option<C>]; }"
   },
   {
@@ -51400,13 +51410,13 @@
     },
     "project": "effect",
     "name": "filterMap",
-    "description": "Maps over the value of an `Option` and filters out `None`s.\n\nUseful when in addition to filtering you also want to change the type of the `Option`.",
+    "description": "Maps over the value of an `Option` with a function that may return `None`,\neffectively filtering and transforming the value.\n\n**Details**\n\nThis function allows you to both transform the value of a `Some` and filter\nit at the same time. The mapping function `f` can either return a new\n`Option` (to transform the value) or return `None` to filter it out. If the\ninput `Option` is `None`, the function is not applied, and the result remains\n`None`.\n\nThis utility is particularly useful when you want to apply a transformation\nto the value of an `Option` while conditionally removing invalid or unwanted\nresults.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst evenNumber = (n: number) => n % 2 === 0 ? Option.some(n) : Option.none()\n\nassert.deepStrictEqual(Option.filterMap(Option.none(), evenNumber), Option.none())\nassert.deepStrictEqual(Option.filterMap(Option.some(3), evenNumber), Option.none())\nassert.deepStrictEqual(Option.filterMap(Option.some(2), evenNumber), Option.some(2))"
+      "import { Option } from \"effect\"\n\n// Transform and filter numbers\nconst transformEven = (n: Option.Option<number>): Option.Option<string> =>\n  Option.flatMap(n, (n) => (n % 2 === 0 ? Option.some(`Even: ${n}`) : Option.none()))\n\nconsole.log(transformEven(Option.none()))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(transformEven(Option.some(1)))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(transformEven(Option.some(2)))\n// Output: { _id: 'Option', _tag: 'Some', value: 'Even: 2' }"
     ],
     "since": "2.0.0",
-    "category": "filtering",
+    "category": "Filtering",
     "signature": "export declare const filterMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }"
   },
   {
@@ -51423,10 +51433,10 @@
     "description": "Filters an `Option` using a predicate. If the predicate is not satisfied or the `Option` is `None` returns `None`.\n\nIf you need to change the type of the `Option` in addition to filtering, see `filterMap`.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\n// predicate\nconst isEven = (n: number) => n % 2 === 0\n\nassert.deepStrictEqual(Option.filter(Option.none(), isEven), Option.none())\nassert.deepStrictEqual(Option.filter(Option.some(3), isEven), Option.none())\nassert.deepStrictEqual(Option.filter(Option.some(2), isEven), Option.some(2))\n\n// refinement\nconst isNumber = (v: unknown): v is number => typeof v === \"number\"\n\nassert.deepStrictEqual(Option.filter(Option.none(), isNumber), Option.none())\nassert.deepStrictEqual(Option.filter(Option.some('hello'), isNumber), Option.none())\nassert.deepStrictEqual(Option.filter(Option.some(2), isNumber), Option.some(2))"
+      "import { Option } from \"effect\"\n\nconst removeEmptyString = (input: Option.Option<string>) =>\n  Option.filter(input, (value) => value !== \"\")\n\nconsole.log(removeEmptyString(Option.none()))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(removeEmptyString(Option.some(\"\")))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(removeEmptyString(Option.some(\"a\")))\n// Output: { _id: 'Option', _tag: 'Some', value: 'a' }"
     ],
     "since": "2.0.0",
-    "category": "filtering",
+    "category": "Filtering",
     "signature": "export declare const filter: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Option<A>) => Option<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: Option<A>) => Option<A>; <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): Option<B>; <A>(self: Option<A>, predicate: Predicate<A>): Option<A>; }"
   },
   {
@@ -51440,13 +51450,13 @@
     },
     "project": "effect",
     "name": "liftPredicate",
-    "description": "Transforms a `Predicate` function into a `Some` of the input value if the predicate returns `true` or `None`\nif the predicate returns `false`.",
+    "description": "Lifts a `Predicate` or `Refinement` into the `Option` context, returning a\n`Some` of the input value if the predicate is satisfied, or `None` otherwise.\n\n**Details**\n\nThis function transforms a `Predicate` (or a more specific `Refinement`) into\na function that produces an `Option`. If the predicate evaluates to `true`,\nthe input value is wrapped in a `Some`. If the predicate evaluates to\n`false`, the result is `None`.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst getOption = Option.liftPredicate((n: number) => n >= 0)\n\nassert.deepStrictEqual(getOption(-1), Option.none())\nassert.deepStrictEqual(getOption(1), Option.some(1))"
+      "import { Option } from \"effect\"\n\n// Check if a number is positive\nconst isPositive = (n: number) => n > 0\n\n//      ┌─── (b: number) => Option<number>\n//      ▼\nconst parsePositive = Option.liftPredicate(isPositive)\n\nconsole.log(parsePositive(1))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }\n\nconsole.log(parsePositive(-1))\n// OUtput: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "lifting",
+    "category": "Lifting",
     "signature": "export declare const liftPredicate: { <A, B extends A>(refinement: Refinement<A, B>): (a: A) => Option<B>; <B extends A, A = B>(predicate: Predicate<A>): (b: B) => Option<B>; <A, B extends A>(self: A, refinement: Refinement<A, B>): Option<B>; <B extends A, A = B>(self: B, predicate: Predicate<A>): Option<B>; }"
   },
   {
@@ -51460,11 +51470,13 @@
     },
     "project": "effect",
     "name": "contains",
-    "description": "Returns a function that checks if an `Option` contains a given value using the default `Equivalence`.",
+    "description": "Returns a function that checks if an `Option` contains a specified value\nusing the default `Equivalence`.\n\n**Details**\n\nThis function allows you to check whether an `Option` contains a specific\nvalue. It uses the default `Equivalence` for equality comparison. If the\n`Option` is `Some` and its value is equivalent to the provided value, the\nresult is `true`. If the `Option` is `None` or the values are not equivalent,\nthe result is `false`.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Option } from \"effect\"\n\nconsole.log(Option.some(2).pipe(Option.contains(2)))\n// Output: true\n\nconsole.log(Option.some(1).pipe(Option.contains(2)))\n// Output: false\n\nconsole.log(Option.none().pipe(Option.contains(2)))\n// Output: false"
+    ],
     "since": "2.0.0",
-    "category": "elements",
+    "category": "Elements",
     "signature": "export declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }"
   },
   {
@@ -51478,13 +51490,13 @@
     },
     "project": "effect",
     "name": "exists",
-    "description": "Check if a value in an `Option` type meets a certain predicate.",
+    "description": "Checks if a value in an `Option` satisfies a given predicate or refinement.\n\n**Details**\n\nThis function allows you to check if a value inside a `Some` meets a\nspecified condition. If the `Option` is `None`, the result is `false`. If the\n`Option` is `Some`, the provided predicate or refinement is applied to the\nvalue:\n\n- If the condition is met, the result is `true`.\n- If the condition is not met, the result is `false`.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option } from \"effect\"\n\nconst isEven = (n: number) => n % 2 === 0\n\nassert.deepStrictEqual(pipe(Option.some(2), Option.exists(isEven)), true)\nassert.deepStrictEqual(pipe(Option.some(1), Option.exists(isEven)), false)\nassert.deepStrictEqual(pipe(Option.none(), Option.exists(isEven)), false)"
+      "import { Option } from \"effect\"\n\nconst isEven = (n: number) => n % 2 === 0\n\nconsole.log(Option.some(2).pipe(Option.exists(isEven)))\n// Output: true\n\nconsole.log(Option.some(1).pipe(Option.exists(isEven)))\n// Output: false\n\nconsole.log(Option.none().pipe(Option.exists(isEven)))\n// Output: false"
     ],
     "since": "2.0.0",
-    "category": null,
+    "category": "Elements",
     "signature": "export declare const exists: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Option<A>) => self is Option<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: Option<A>) => boolean; <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): self is Option<B>; <A>(self: Option<A>, predicate: Predicate<A>): boolean; }"
   },
   {
@@ -51504,7 +51516,7 @@
       "import { Option, pipe } from \"effect\"\n\nconst result = pipe(\n  Option.Do,\n  Option.bind(\"x\", () => Option.some(2)),\n  Option.bind(\"y\", () => Option.some(3)),\n  Option.let(\"sum\", ({ x, y }) => x + y),\n  Option.filter(({ x, y }) => x * y > 5)\n)\nassert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))"
     ],
     "since": "2.0.0",
-    "category": "do notation",
+    "category": "Do notation",
     "signature": "export declare const bindTo: { <N extends string>(name: N): <A>(self: Option<A>) => Option<{ [K in N]: A; }>; <A, N extends string>(self: Option<A>, name: N): Option<{ [K in N]: A; }>; }"
   },
   {
@@ -51524,7 +51536,7 @@
       "import { Option, pipe } from \"effect\"\n\nconst result = pipe(\n  Option.Do,\n  Option.bind(\"x\", () => Option.some(2)),\n  Option.bind(\"y\", () => Option.some(3)),\n  Option.let(\"sum\", ({ x, y }) => x + y),\n  Option.filter(({ x, y }) => x * y > 5)\n)\nassert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))"
     ],
     "since": "2.0.0",
-    "category": "do notation",
+    "category": "Do notation",
     "signature": "export declare const bind: { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Option<B>): (self: Option<A>) => Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: Option<A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Option<B>): Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }"
   },
   {
@@ -51544,7 +51556,7 @@
       "import { Option, pipe } from \"effect\"\n\nconst result = pipe(\n  Option.Do,\n  Option.bind(\"x\", () => Option.some(2)),\n  Option.bind(\"y\", () => Option.some(3)),\n  Option.let(\"sum\", ({ x, y }) => x + y),\n  Option.filter(({ x, y }) => x * y > 5)\n)\nassert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))"
     ],
     "since": "2.0.0",
-    "category": "do notation",
+    "category": "Do notation",
     "signature": "export declare const Do: Option<{}>"
   },
   {
@@ -51582,7 +51594,7 @@
       "import { Option, pipe } from \"effect\"\n\nconst result = pipe(\n  Option.Do,\n  Option.bind(\"x\", () => Option.some(2)),\n  Option.bind(\"y\", () => Option.some(3)),\n  Option.let(\"sum\", ({ x, y }) => x + y),\n  Option.filter(({ x, y }) => x * y > 5)\n)\nassert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))\n"
     ],
     "since": "2.0.0",
-    "category": "do notation",
+    "category": "Do notation",
     "signature": "export declare const let: { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: Option<A>) => Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: Option<A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }"
   },
   {
@@ -51596,11 +51608,13 @@
     },
     "project": "effect",
     "name": "none",
-    "description": "Creates a new `Option` that represents the absence of a value.",
+    "description": "Represents the absence of a value by creating an empty `Option`.\n\n`Option.none` returns an `Option<never>`, which is a subtype of `Option<A>`.\nThis means you can use it in place of any `Option<A>` regardless of the type\n`A`.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "// Title: Creating an Option with No Value\nimport { Option } from \"effect\"\n\n// An Option holding no value\n//\n//      ┌─── Option<never>\n//      ▼\nconst noValue = Option.none()\n\nconsole.log(noValue)\n// Output: { _id: 'Option', _tag: 'None' }"
+    ],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": null
   },
   {
@@ -51614,13 +51628,13 @@
     },
     "project": "effect",
     "name": "toRefinement",
-    "description": "Returns a type guard from a `Option` returning function.\nThis function ensures that a type guard definition is type-safe.",
+    "description": "Converts an `Option`-returning function into a type guard.\n\n**Details**\n\nThis function transforms a function that returns an `Option` into a type\nguard, ensuring type safety when validating or narrowing types. The returned\ntype guard function checks whether the input satisfies the condition defined\nin the original `Option`-returning function.\n\nIf the original function returns `Option.some`, the type guard evaluates to\n`true`, confirming the input is of the desired type. If the function returns\n`Option.none`, the type guard evaluates to `false`.\n\nThis utility is especially useful for validating types in union types,\nfiltering arrays, or ensuring safe handling of specific subtypes.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst parsePositive = (n: number): Option.Option<number> =>\n  n > 0 ? Option.some(n) : Option.none()\n\nconst isPositive = Option.toRefinement(parsePositive)\n\nassert.deepStrictEqual(isPositive(1), true)\nassert.deepStrictEqual(isPositive(-1), false)"
+      "import { Option } from \"effect\"\n\ntype MyData = string | number\n\nconst parseString = (data: MyData): Option.Option<string> =>\n  typeof data === \"string\" ? Option.some(data) : Option.none()\n\n//      ┌─── (a: MyData) => a is string\n//      ▼\nconst isString = Option.toRefinement(parseString)\n\nconsole.log(isString(\"a\"))\n// Output: true\n\nconsole.log(isString(1))\n// Output: false"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": null
   },
   {
@@ -51634,13 +51648,13 @@
     },
     "project": "effect",
     "name": "fromIterable",
-    "description": "Converts an `Iterable` of values into an `Option`. Returns the first value of the `Iterable` wrapped in a `Some`\nif the `Iterable` is not empty, otherwise returns `None`.",
+    "description": "Converts an `Iterable` into an `Option`, wrapping the first element if it\nexists.\n\n**Details**\n\nThis function takes an `Iterable` (e.g., an array, a generator, or any object\nimplementing the `Iterable` interface) and returns an `Option` based on its\ncontent:\n\n- If the `Iterable` contains at least one element, the first element is\n  wrapped in a `Some` and returned.\n- If the `Iterable` is empty, `None` is returned, representing the absence of\n  a value.\n\nThis utility is useful for safely handling collections that might be empty,\nensuring you explicitly handle both cases where a value exists or doesn't.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.fromIterable([1, 2, 3]), Option.some(1))\nassert.deepStrictEqual(Option.fromIterable([]), Option.none())"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.fromIterable([1, 2, 3]))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }\n\nconsole.log(Option.fromIterable([]))\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "constructors",
+    "category": "Constructors",
     "signature": null
   },
   {
@@ -51654,13 +51668,13 @@
     },
     "project": "effect",
     "name": "firstSomeOf",
-    "description": "Given an `Iterable` collection of `Option`s, returns the first `Some` found in the collection.",
+    "description": "Returns the first `Some` value found in an `Iterable` collection of\n`Option`s, or `None` if no `Some` is found.\n\n**Details**\n\nThis function iterates over a collection of `Option` values and returns the\nfirst `Some` it encounters. If the collection contains only `None` values,\nthe result will also be `None`. This utility is useful for efficiently\nfinding the first valid value in a sequence of potentially empty or invalid\noptions.\n\nThe iteration stops as soon as a `Some` is found, making this function\nefficient for large collections.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.firstSomeOf([Option.none(), Option.some(1), Option.some(2)]), Option.some(1))"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.firstSomeOf([\n  Option.none(),\n  Option.some(1),\n  Option.some(2)\n]))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }"
     ],
     "since": "2.0.0",
-    "category": "error handling",
+    "category": "Error handling",
     "signature": null
   },
   {
@@ -51674,13 +51688,13 @@
     },
     "project": "effect",
     "name": "fromNullable",
-    "description": "Constructs a new `Option` from a nullable type. If the value is `null` or `undefined`, returns `None`, otherwise\nreturns the value wrapped in a `Some`.",
+    "description": "Converts a nullable value into an `Option`. Returns `None` if the value is\n`null` or `undefined`, otherwise wraps the value in a `Some`.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.fromNullable(undefined), Option.none())\nassert.deepStrictEqual(Option.fromNullable(null), Option.none())\nassert.deepStrictEqual(Option.fromNullable(1), Option.some(1))"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.fromNullable(undefined))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(Option.fromNullable(null))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(Option.fromNullable(1))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": null
   },
   {
@@ -51694,13 +51708,13 @@
     },
     "project": "effect",
     "name": "liftNullable",
-    "description": "This API is useful for lifting a function that returns `null` or `undefined` into the `Option` context.",
+    "description": "Lifts a function that returns `null` or `undefined` into the `Option`\ncontext.\n\n**Details**\n\nThis function takes a function `f` that might return `null` or `undefined`\nand transforms it into a function that returns an `Option`. The resulting\nfunction will return:\n- `Some` if the original function produces a non-null, non-undefined value.\n- `None` if the original function produces `null` or `undefined`.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst parse = (s: string): number | undefined => {\n  const n = parseFloat(s)\n  return isNaN(n) ? undefined : n\n}\n\nconst parseOption = Option.liftNullable(parse)\n\nassert.deepStrictEqual(parseOption('1'), Option.some(1))\nassert.deepStrictEqual(parseOption('not a number'), Option.none())"
+      "import { Option } from \"effect\"\n\nconst parse = (s: string): number | undefined => {\n  const n = parseFloat(s)\n  return isNaN(n) ? undefined : n\n}\n\nconst parseOption = Option.liftNullable(parse)\n\nconsole.log(parseOption(\"1\"))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }\n\nconsole.log(parseOption(\"not a number\"))\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": null
   },
   {
@@ -51714,13 +51728,13 @@
     },
     "project": "effect",
     "name": "liftThrowable",
-    "description": "A utility function that lifts a function that throws exceptions into a function that returns an `Option`.\n\nThis function is useful for any function that might throw an exception, allowing the developer to handle\nthe exception in a more functional way.",
+    "description": "Lifts a function that throws exceptions into a function that returns an\n`Option`.\n\n**Details**\n\nThis utility function takes a function `f` that might throw an exception and\ntransforms it into a safer function that returns an `Option`. If the original\nfunction executes successfully, the result is wrapped in a `Some`. If an\nexception is thrown, the result is `None`, allowing the developer to handle\nerrors in a functional, type-safe way.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nconst parse = Option.liftThrowable(JSON.parse)\n\nassert.deepStrictEqual(parse(\"1\"), Option.some(1))\nassert.deepStrictEqual(parse(\"\"), Option.none())"
+      "import { Option } from \"effect\"\n\nconst parse = Option.liftThrowable(JSON.parse)\n\nconsole.log(parse(\"1\"))\n// Output: { _id: 'Option', _tag: 'Some', value: 1 }\n\nconsole.log(parse(\"\"))\n// Output: { _id: 'Option', _tag: 'None' }"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": null
   },
   {
@@ -51734,11 +51748,11 @@
     },
     "project": "effect",
     "name": "product",
-    "description": null,
+    "description": "Combines two `Option` values into a single `Option` containing a tuple of\ntheir values if both are `Some`.\n\n**Details**\n\nThis function takes two `Option`s and combines their values into a tuple `[A,\nB]` if both are `Some`. If either of the `Option`s is `None`, the result is\n`None`. This is particularly useful for combining multiple `Option` values\ninto a single one, ensuring both contain valid values.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "combining",
+    "category": "Combining",
     "signature": null
   },
   {
@@ -51752,11 +51766,11 @@
     },
     "project": "effect",
     "name": "productMany",
-    "description": null,
+    "description": "Combines an `Option` with a collection of `Option`s into a single `Option`\ncontaining a tuple of their values if all are `Some`.\n\n**Details**\n\nThis function takes a primary `Option` and a collection of `Option`s and\ncombines their values into a tuple `[A, ...Array<A>]` if all are `Some`. If\nthe primary `Option` or any `Option` in the collection is `None`, the result\nis `None`.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "combining",
+    "category": "Combining",
     "signature": null
   },
   {
@@ -51770,13 +51784,13 @@
     },
     "project": "effect",
     "name": "all",
-    "description": "Takes a structure of `Option`s and returns an `Option` of values with the same structure.\n\n- If a tuple is supplied, then the returned `Option` will contain a tuple with the same length.\n- If a struct is supplied, then the returned `Option` will contain a struct with the same keys.\n- If an iterable is supplied, then the returned `Option` will contain an array.",
+    "description": "Combines a structure of `Option`s into a single `Option` containing the\nvalues with the same structure.\n\n**Details**\n\nThis function takes a structure of `Option`s (a tuple, struct, or iterable)\nand produces a single `Option` that contains the values from the input\nstructure if all `Option`s are `Some`. If any `Option` in the input is\n`None`, the result is `None`. The structure of the input is preserved in the\noutput.\n\n- If the input is a tuple (e.g., an array), the result will be an `Option`\n  containing a tuple with the same length.\n- If the input is a struct (e.g., an object), the result will be an `Option`\n  containing a struct with the same keys.\n- If the input is an iterable, the result will be an `Option` containing an\n  array.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.all([Option.some(1), Option.some(2)]), Option.some([1, 2]))\nassert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.some(\"hello\") }), Option.some({ a: 1, b: \"hello\" }))\nassert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.none() }), Option.none())"
+      "import { Option } from \"effect\"\n\nconst maybeName: Option.Option<string> = Option.some(\"John\")\nconst maybeAge: Option.Option<number> = Option.some(25)\n\n//      ┌─── Option<[string, number]>\n//      ▼\nconst tuple = Option.all([maybeName, maybeAge])\nconsole.log(tuple)\n// Output:\n// { _id: 'Option', _tag: 'Some', value: [ 'John', 25 ] }\n\n//      ┌─── Option<{ name: string; age: number; }>\n//      ▼\nconst struct = Option.all({ name: maybeName, age: maybeAge })\nconsole.log(struct)\n// Output:\n// { _id: 'Option', _tag: 'Some', value: { name: 'John', age: 25 } }"
     ],
     "since": "2.0.0",
-    "category": "combining",
+    "category": "Combining",
     "signature": null
   },
   {
@@ -51790,13 +51804,13 @@
     },
     "project": "effect",
     "name": "toArray",
-    "description": "Transforms an `Option` into an `Array`.\nIf the input is `None`, an empty array is returned.\nIf the input is `Some`, the value is wrapped in an array.",
+    "description": "Converts an `Option` into an `Array`.\nIf the input is `None`, an empty array is returned.\nIf the input is `Some`, its value is wrapped in a single-element array.",
     "deprecated": false,
     "examples": [
-      "import { Option } from \"effect\"\n\nassert.deepStrictEqual(Option.toArray(Option.some(1)), [1])\nassert.deepStrictEqual(Option.toArray(Option.none()), [])"
+      "import { Option } from \"effect\"\n\nconsole.log(Option.toArray(Option.some(1)))\n// Output: [1]\n\nconsole.log(Option.toArray(Option.none()))\n// Output: []"
     ],
     "since": "2.0.0",
-    "category": "conversions",
+    "category": "Conversions",
     "signature": null
   },
   {
@@ -51810,13 +51824,13 @@
     },
     "project": "effect",
     "name": "getEquivalence",
-    "description": null,
+    "description": "Creates an `Equivalence` instance for comparing `Option` values, using a\nprovided `Equivalence` for the inner type.\n\n**Details**\n\nThis function takes an `Equivalence` instance for a specific type `A` and\nproduces an `Equivalence` instance for `Option<A>`. The resulting\n`Equivalence` determines whether two `Option` values are equivalent:\n\n- Two `None`s are considered equivalent.\n- A `Some` and a `None` are not equivalent.\n- Two `Some` values are equivalent if their inner values are equivalent\n  according to the provided `Equivalence`.",
     "deprecated": false,
     "examples": [
-      "import { Option, Number } from \"effect\"\n\nconst isEquivalent = Option.getEquivalence(Number.Equivalence)\nassert.deepStrictEqual(isEquivalent(Option.none(), Option.none()), true)\nassert.deepStrictEqual(isEquivalent(Option.none(), Option.some(1)), false)\nassert.deepStrictEqual(isEquivalent(Option.some(1), Option.none()), false)\nassert.deepStrictEqual(isEquivalent(Option.some(1), Option.some(2)), false)\nassert.deepStrictEqual(isEquivalent(Option.some(1), Option.some(1)), true)"
+      "// Title: Comparing Optional Numbers for Equivalence\nimport { Number, Option } from \"effect\"\n\nconst isEquivalent = Option.getEquivalence(Number.Equivalence)\n\nconsole.log(isEquivalent(Option.none(), Option.none()))\n// Output: true\n\nconsole.log(isEquivalent(Option.none(), Option.some(1)))\n// Output: false\n\nconsole.log(isEquivalent(Option.some(1), Option.none()))\n// Output: false\n\nconsole.log(isEquivalent(Option.some(1), Option.some(2)))\n// Output: false\n\nconsole.log(isEquivalent(Option.some(1), Option.some(1)))\n// Output: true"
     ],
     "since": "2.0.0",
-    "category": "equivalence",
+    "category": "Equivalence",
     "signature": null
   },
   {
@@ -51830,13 +51844,13 @@
     },
     "project": "effect",
     "name": "getOrder",
-    "description": "The `Order` instance allows `Option` values to be compared with\n`compare`, whenever there is an `Order` instance for\nthe type the `Option` contains.\n\n`None` is considered to be less than any `Some` value.",
+    "description": "Creates an `Order` instance for comparing `Option` values, using a provided\n`Order` for the inner type.\n\n**Details**\n\nThis function produces an `Order` instance for `Option<A>`, allowing `Option`\nvalues to be compared:\n\n- `None` is always considered less than any `Some` value.\n- If both are `Some`, their inner values are compared using the provided\n  `Order` instance.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option, Number } from \"effect\"\n\nconst O = Option.getOrder(Number.Order)\nassert.deepStrictEqual(O(Option.none(), Option.none()), 0)\nassert.deepStrictEqual(O(Option.none(), Option.some(1)), -1)\nassert.deepStrictEqual(O(Option.some(1), Option.none()), 1)\nassert.deepStrictEqual(O(Option.some(1), Option.some(2)), -1)\nassert.deepStrictEqual(O(Option.some(1), Option.some(1)), 0)"
+      "import { Number, Option } from \"effect\"\n\nconst order = Option.getOrder(Number.Order)\n\nconsole.log(order(Option.none(), Option.none()))\n// Output: 0\n\nconsole.log(order(Option.none(), Option.some(1)))\n// Output: -1\n\nconsole.log(order(Option.some(1), Option.none()))\n// Output: 1\n\nconsole.log(order(Option.some(1), Option.some(2)))\n// Output: -1\n\nconsole.log(order(Option.some(1), Option.some(1)))\n// Output: 0"
     ],
     "since": "2.0.0",
-    "category": "sorting",
+    "category": "Sorting",
     "signature": null
   },
   {
@@ -51850,11 +51864,13 @@
     },
     "project": "effect",
     "name": "lift2",
-    "description": "Lifts a binary function into `Option`.",
+    "description": "Lifts a binary function to work with `Option` values, allowing the function\nto operate on two `Option`s.\n\n**Details**\n\nThis function takes a binary function `f` and returns a new function that\napplies `f` to the values of two `Option`s (`self` and `that`). If both\n`Option`s are `Some`, the binary function `f` is applied to their values, and\nthe result is wrapped in a new `Some`. If either `Option` is `None`, the\nresult is `None`.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "import { Option } from \"effect\"\n\n// A binary function to add two numbers\nconst add = (a: number, b: number): number => a + b\n\n// Lift the `add` function to work with `Option` values\nconst addOptions = Option.lift2(add)\n\n// Both `Option`s are `Some`\nconsole.log(addOptions(Option.some(2), Option.some(3)))\n// Output: { _id: 'Option', _tag: 'Some', value: 5 }\n\n// One `Option` is `None`\nconsole.log(addOptions(Option.some(2), Option.none()))\n// Output: { _id: 'Option', _tag: 'None' }"
+    ],
     "since": "2.0.0",
-    "category": "lifting",
+    "category": "Lifting",
     "signature": null
   },
   {
@@ -51868,13 +51884,13 @@
     },
     "project": "effect",
     "name": "containsWith",
-    "description": "Returns a function that checks if a `Option` contains a given value using a provided `isEquivalent` function.",
+    "description": "Returns a function that checks if an `Option` contains a specified value,\nusing a provided equivalence function.\n\n**Details**\n\nThis function allows you to check whether an `Option` contains a specific\nvalue. It uses an equivalence function `isEquivalent` to compare the value\ninside the `Option` to the provided value. If the `Option` is `Some` and the\nequivalence function returns `true`, the result is `true`. If the `Option` is\n`None` or the values are not equivalent, the result is `false`.",
     "deprecated": false,
     "examples": [
-      "import { pipe, Option, Number } from \"effect\"\n\nassert.deepStrictEqual(pipe(Option.some(2), Option.containsWith(Number.Equivalence)(2)), true)\nassert.deepStrictEqual(pipe(Option.some(1), Option.containsWith(Number.Equivalence)(2)), false)\nassert.deepStrictEqual(pipe(Option.none(), Option.containsWith(Number.Equivalence)(2)), false)"
+      "import { Number, Option } from \"effect\"\n\nconst contains = Option.containsWith(Number.Equivalence)\n\nconsole.log(Option.some(2).pipe(contains(2)))\n// Output: true\n\nconsole.log(Option.some(1).pipe(contains(2)))\n// Output: false\n\nconsole.log(Option.none().pipe(contains(2)))\n// Output: false"
     ],
     "since": "2.0.0",
-    "category": "elements",
+    "category": "Elements",
     "signature": null
   },
   {
@@ -51888,11 +51904,13 @@
     },
     "project": "effect",
     "name": "gen",
-    "description": null,
+    "description": "Similar to `Effect.gen`, `Option.gen` provides a more readable,\ngenerator-based syntax for working with `Option` values, making code that\ninvolves `Option` easier to write and understand. This approach is similar to\nusing `async/await` but tailored for `Option`.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "// Title: Using Option.gen to Create a Combined Value\nimport { Option } from \"effect\"\n\nconst maybeName: Option.Option<string> = Option.some(\"John\")\nconst maybeAge: Option.Option<number> = Option.some(25)\n\nconst person = Option.gen(function* () {\n  const name = (yield* maybeName).toUpperCase()\n  const age = yield* maybeAge\n  return { name, age }\n})\n\nconsole.log(person)\n// Output:\n// { _id: 'Option', _tag: 'Some', value: { name: 'JOHN', age: 25 } }"
+    ],
     "since": "2.0.0",
-    "category": "generators",
+    "category": "Generators",
     "signature": null
   },
   {
@@ -51910,7 +51928,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface None<out A> extends Pipeable, Inspectable {\n  readonly _tag: \"None\"\n  readonly _op: \"None\"\n  readonly [TypeId]: {\n    readonly _A: Covariant<A>\n  }\n  [Unify.typeSymbol]?: unknown\n  [Unify.unifySymbol]?: OptionUnify<this>\n  [Unify.ignoreSymbol]?: OptionUnifyIgnore\n}"
   },
   {
@@ -51928,7 +51946,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "type lambdas",
+    "category": "Type Lambdas",
     "signature": "export interface OptionTypeLambda extends TypeLambda {\n  readonly type: Option<this[\"Target\"]>\n}"
   },
   {
@@ -51946,7 +51964,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface OptionUnify<A extends { [Unify.typeSymbol]?: any }> {\n  Option?: () => A[Unify.typeSymbol] extends Option<infer A0> | infer _ ? Option<A0> : never\n}"
   },
   {
@@ -51964,7 +51982,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface OptionUnifyIgnore {}"
   },
   {
@@ -51982,7 +52000,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export interface Some<out A> extends Pipeable, Inspectable {\n  readonly _tag: \"Some\"\n  readonly _op: \"Some\"\n  readonly value: A\n  readonly [TypeId]: {\n    readonly _A: Covariant<A>\n  }\n  [Unify.typeSymbol]?: unknown\n  [Unify.unifySymbol]?: OptionUnify<this>\n  [Unify.ignoreSymbol]?: OptionUnifyIgnore\n}"
   },
   {
@@ -51996,11 +52014,11 @@
     },
     "project": "effect",
     "name": "Option",
-    "description": null,
+    "description": "The `Option` data type represents optional values. An `Option<A>` can either\nbe `Some<A>`, containing a value of type `A`, or `None`, representing the\nabsence of a value.\n\n**When to Use**\n\nYou can use `Option` in scenarios like:\n\n- Using it for initial values\n- Returning values from functions that are not defined for all possible\n  inputs (referred to as “partial functions”)\n- Managing optional fields in data structures\n- Handling optional function arguments",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "models",
+    "category": "Models",
     "signature": "export type Option<A> = None<A> | Some<A>"
   },
   {
@@ -52018,7 +52036,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "symbols",
+    "category": "Symbols",
     "signature": "export type TypeId = typeof TypeId"
   },
   {
@@ -53717,7 +53735,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "model",
-    "signature": "export type SingleOrNonEmpty<A> = A | array_.NonEmptyReadonlyArray<A>"
+    "signature": "export type SingleOrNonEmpty<A> = A | Arr.NonEmptyReadonlyArray<A>"
   },
   {
     "_tag": "Function",
@@ -61773,6 +61791,24 @@
       ]
     },
     "project": "effect",
+    "name": "isSchedule",
+    "description": "Returns `true` if the specified value is a `Schedule`, `false` otherwise.",
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": "guards",
+    "signature": "export declare const isSchedule: (u: unknown) => u is Schedule<unknown, never, unknown>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schedule",
+      "path": [
+        "src",
+        "Schedule.ts"
+      ]
+    },
+    "project": "effect",
     "name": "addDelay",
     "description": "Returns a new schedule with the given delay added to every interval defined\nby this schedule.",
     "deprecated": false,
@@ -64834,7 +64870,7 @@
     },
     "project": "effect",
     "name": "Duration",
-    "description": "A schema that transforms a `[number, number]` tuple into a `Duration`.\n\nInfinite durations are encoded as `[-1, 0]`.",
+    "description": "A schema that converts a JSON-compatible tagged union into a `Duration`.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -72888,6 +72924,24 @@
     "since": "3.11.8",
     "category": "schema id",
     "signature": "export type DateFromSelfSchemaId = typeof DateFromSelfSchemaId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "DurationEncoded",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.8",
+    "category": "Duration utils",
+    "signature": "export type DurationEncoded =\n  | {\n    readonly _tag: \"Millis\"\n    readonly millis: number\n  }\n  | {\n    readonly _tag: \"Nanos\"\n    readonly nanos: string\n  }\n  | {\n    readonly _tag: \"Infinity\"\n  }"
   },
   {
     "_tag": "TypeAlias",

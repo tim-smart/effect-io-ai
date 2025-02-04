@@ -1,6 +1,12 @@
 # isEmpty
 
-Returns `true` if the specified cause is empty, `false` otherwise.
+Checks if a `Cause` is entirely empty.
+
+**Details**
+
+This function returns `true` if the `Cause` contains no errors, defects, or
+interruptions. It's helpful for verifying if a computation truly had no
+failures.
 
 To import and use `isEmpty` from the "Cause" module:
 

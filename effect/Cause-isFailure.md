@@ -1,6 +1,12 @@
 # isFailure
 
-Returns `true` if the specified cause contains a failure, `false` otherwise.
+Checks if a `Cause` contains a failure.
+
+**Details**
+
+This function returns `true` if the `Cause` includes any `Fail` error. It's
+commonly used to confirm whether a workflow encountered an anticipated error
+versus just defects or interruptions.
 
 To import and use `isFailure` from the "Cause" module:
 

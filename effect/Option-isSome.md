@@ -1,6 +1,6 @@
 # isSome
 
-Determine if a `Option` is a `Some`.
+Checks whether an `Option` contains a value (`Some`).
 
 To import and use `isSome` from the "Option" module:
 
@@ -15,8 +15,11 @@ Option.isSome
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.isSome(Option.some(1)), true)
-assert.deepStrictEqual(Option.isSome(Option.none()), false)
+console.log(Option.isSome(Option.some(1)))
+// Output: true
+
+console.log(Option.isSome(Option.none()))
+// Output: false
 ```
 
 **Signature**

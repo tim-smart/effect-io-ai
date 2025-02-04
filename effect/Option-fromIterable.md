@@ -1,7 +1,21 @@
 # fromIterable
 
-Converts an `Iterable` of values into an `Option`. Returns the first value of the `Iterable` wrapped in a `Some`
-if the `Iterable` is not empty, otherwise returns `None`.
+Converts an `Iterable` into an `Option`, wrapping the first element if it
+exists.
+
+**Details**
+
+This function takes an `Iterable` (e.g., an array, a generator, or any object
+implementing the `Iterable` interface) and returns an `Option` based on its
+content:
+
+- If the `Iterable` contains at least one element, the first element is
+  wrapped in a `Some` and returned.
+- If the `Iterable` is empty, `None` is returned, representing the absence of
+  a value.
+
+This utility is useful for safely handling collections that might be empty,
+ensuring you explicitly handle both cases where a value exists or doesn't.
 
 To import and use `fromIterable` from the "Option" module:
 
@@ -16,8 +30,11 @@ Option.fromIterable
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.fromIterable([1, 2, 3]), Option.some(1))
-assert.deepStrictEqual(Option.fromIterable([]), Option.none())
+console.log(Option.fromIterable([1, 2, 3]))
+// Output: { _id: 'Option', _tag: 'Some', value: 1 }
+
+console.log(Option.fromIterable([]))
+// Output: { _id: 'Option', _tag: 'None' }
 ```
 
 **Signature**

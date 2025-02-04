@@ -1,7 +1,6 @@
 # isNoSuchElementException
 
-Returns `true` if the specified value is an `NoSuchElementException`, `false`
-otherwise.
+Checks if a given unknown value is a `NoSuchElementException`.
 
 To import and use `isNoSuchElementException` from the "Cause" module:
 

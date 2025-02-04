@@ -1,10 +1,22 @@
 # all
 
-Takes a structure of `Option`s and returns an `Option` of values with the same structure.
+Combines a structure of `Option`s into a single `Option` containing the
+values with the same structure.
 
-- If a tuple is supplied, then the returned `Option` will contain a tuple with the same length.
-- If a struct is supplied, then the returned `Option` will contain a struct with the same keys.
-- If an iterable is supplied, then the returned `Option` will contain an array.
+**Details**
+
+This function takes a structure of `Option`s (a tuple, struct, or iterable)
+and produces a single `Option` that contains the values from the input
+structure if all `Option`s are `Some`. If any `Option` in the input is
+`None`, the result is `None`. The structure of the input is preserved in the
+output.
+
+- If the input is a tuple (e.g., an array), the result will be an `Option`
+  containing a tuple with the same length.
+- If the input is a struct (e.g., an object), the result will be an `Option`
+  containing a struct with the same keys.
+- If the input is an iterable, the result will be an `Option` containing an
+  array.
 
 To import and use `all` from the "Option" module:
 
@@ -19,9 +31,22 @@ Option.all
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.all([Option.some(1), Option.some(2)]), Option.some([1, 2]))
-assert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.some("hello") }), Option.some({ a: 1, b: "hello" }))
-assert.deepStrictEqual(Option.all({ a: Option.some(1), b: Option.none() }), Option.none())
+const maybeName: Option.Option<string> = Option.some("John")
+const maybeAge: Option.Option<number> = Option.some(25)
+
+//      ┌─── Option<[string, number]>
+//      ▼
+const tuple = Option.all([maybeName, maybeAge])
+console.log(tuple)
+// Output:
+// { _id: 'Option', _tag: 'Some', value: [ 'John', 25 ] }
+
+//      ┌─── Option<{ name: string; age: number; }>
+//      ▼
+const struct = Option.all({ name: maybeName, age: maybeAge })
+console.log(struct)
+// Output:
+// { _id: 'Option', _tag: 'Some', value: { name: 'John', age: 25 } }
 ```
 
 **Signature**

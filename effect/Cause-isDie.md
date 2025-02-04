@@ -1,6 +1,12 @@
 # isDie
 
-Returns `true` if the specified cause contains a defect, `false` otherwise.
+Checks if a `Cause` contains a defect.
+
+**Details**
+
+This function returns `true` if the `Cause` includes any unexpected or
+unhandled errors (`Die`). It's useful for differentiating known failures from
+unexpected ones.
 
 To import and use `isDie` from the "Cause" module:
 

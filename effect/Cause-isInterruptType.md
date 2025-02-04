@@ -1,7 +1,6 @@
 # isInterruptType
 
-Returns `true` if the specified `Cause` is an `Interrupt` type, `false`
-otherwise.
+Checks if a `Cause` is an `Interrupt` type.
 
 To import and use `isInterruptType` from the "Cause" module:
 

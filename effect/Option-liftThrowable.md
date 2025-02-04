@@ -1,9 +1,15 @@
 # liftThrowable
 
-A utility function that lifts a function that throws exceptions into a function that returns an `Option`.
+Lifts a function that throws exceptions into a function that returns an
+`Option`.
 
-This function is useful for any function that might throw an exception, allowing the developer to handle
-the exception in a more functional way.
+**Details**
+
+This utility function takes a function `f` that might throw an exception and
+transforms it into a safer function that returns an `Option`. If the original
+function executes successfully, the result is wrapped in a `Some`. If an
+exception is thrown, the result is `None`, allowing the developer to handle
+errors in a functional, type-safe way.
 
 To import and use `liftThrowable` from the "Option" module:
 
@@ -20,8 +26,11 @@ import { Option } from "effect"
 
 const parse = Option.liftThrowable(JSON.parse)
 
-assert.deepStrictEqual(parse("1"), Option.some(1))
-assert.deepStrictEqual(parse(""), Option.none())
+console.log(parse("1"))
+// Output: { _id: 'Option', _tag: 'Some', value: 1 }
+
+console.log(parse(""))
+// Output: { _id: 'Option', _tag: 'None' }
 ```
 
 **Signature**

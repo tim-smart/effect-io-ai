@@ -1,7 +1,12 @@
 # failures
 
-Returns a `List` of all recoverable errors of type `E` in the specified
-cause.
+Extracts all recoverable errors of type `E` from a `Cause`.
+
+**Details**
+
+This function returns a chunk of errors, providing a list of all `Fail`
+values found in the cause. It's useful for collecting all known failures for
+logging or combined error handling.
 
 To import and use `failures` from the "Cause" module:
 

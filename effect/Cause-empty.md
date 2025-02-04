@@ -1,6 +1,11 @@
 # empty
 
-Constructs a new `Empty` cause.
+Creates an `Empty` cause.
+
+**Details**
+
+This function returns a cause that signifies "no error." It's commonly used
+to represent an absence of failure conditions.
 
 To import and use `empty` from the "Cause" module:
 

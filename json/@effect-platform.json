@@ -2067,7 +2067,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface File {\n  readonly [FileTypeId]: FileTypeId\n  readonly fd: File.Descriptor\n  readonly stat: Effect.Effect<File.Info, PlatformError>\n  readonly seek: (offset: SizeInput, from: SeekMode) => Effect.Effect<void>\n  readonly read: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly readAlloc: (size: SizeInput) => Effect.Effect<Option<Uint8Array>, PlatformError>\n  readonly truncate: (length?: SizeInput) => Effect.Effect<void, PlatformError>\n  readonly write: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly writeAll: (buffer: Uint8Array) => Effect.Effect<void, PlatformError>\n}"
+    "signature": "export interface File {\n  readonly [FileTypeId]: FileTypeId\n  readonly fd: File.Descriptor\n  readonly stat: Effect.Effect<File.Info, PlatformError>\n  readonly seek: (offset: SizeInput, from: SeekMode) => Effect.Effect<void>\n  readonly sync: Effect.Effect<void, PlatformError>\n  readonly read: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly readAlloc: (size: SizeInput) => Effect.Effect<Option<Uint8Array>, PlatformError>\n  readonly truncate: (length?: SizeInput) => Effect.Effect<void, PlatformError>\n  readonly write: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly writeAll: (buffer: Uint8Array) => Effect.Effect<void, PlatformError>\n}"
   },
   {
     "_tag": "Interface",

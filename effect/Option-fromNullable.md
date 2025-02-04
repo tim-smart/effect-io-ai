@@ -1,7 +1,7 @@
 # fromNullable
 
-Constructs a new `Option` from a nullable type. If the value is `null` or `undefined`, returns `None`, otherwise
-returns the value wrapped in a `Some`.
+Converts a nullable value into an `Option`. Returns `None` if the value is
+`null` or `undefined`, otherwise wraps the value in a `Some`.
 
 To import and use `fromNullable` from the "Option" module:
 
@@ -16,9 +16,14 @@ Option.fromNullable
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.fromNullable(undefined), Option.none())
-assert.deepStrictEqual(Option.fromNullable(null), Option.none())
-assert.deepStrictEqual(Option.fromNullable(1), Option.some(1))
+console.log(Option.fromNullable(undefined))
+// Output: { _id: 'Option', _tag: 'None' }
+
+console.log(Option.fromNullable(null))
+// Output: { _id: 'Option', _tag: 'None' }
+
+console.log(Option.fromNullable(1))
+// Output: { _id: 'Option', _tag: 'Some', value: 1 }
 ```
 
 **Signature**

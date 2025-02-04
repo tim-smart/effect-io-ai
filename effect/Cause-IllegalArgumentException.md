@@ -1,7 +1,11 @@
 # IllegalArgumentException
 
-Represents a checked exception which occurs when an invalid argument is
-provided to a method.
+An error representing an invalid argument passed to a method.
+
+**Details**
+
+This interface is used for signaling that a function or method received an
+argument that does not meet its preconditions.
 
 To import and use `IllegalArgumentException` from the "Cause" module:
 
