@@ -9,6 +9,24 @@
       ]
     },
     "project": "@effect/opentelemetry",
+    "name": "From \"./Logger.js\"",
+    "description": "Re-exports all named exports from the \"./Logger.js\" module as `Logger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Logger from \"./Logger.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
     "name": "From \"./Metrics.js\"",
     "description": "Re-exports all named exports from the \"./Metrics.js\" module as `Metrics`.",
     "deprecated": false,
@@ -88,6 +106,96 @@
     "since": "1.0.0",
     "category": "exports",
     "signature": "export * as WebSdk from \"./WebSdk.js\""
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Logger",
+      "path": [
+        "src",
+        "Logger.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtelLoggerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class OtelLoggerProvider"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Logger",
+      "path": [
+        "src",
+        "Logger.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Logger",
+      "path": [
+        "src",
+        "Logger.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerLoggerAdd",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerLoggerAdd: Layer.Layer<never, never, OtelLoggerProvider>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Logger",
+      "path": [
+        "src",
+        "Logger.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerLoggerReplace",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerLoggerReplace: Layer.Layer<never, never, OtelLoggerProvider>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Logger",
+      "path": [
+        "src",
+        "Logger.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layerLoggerProvider",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
   },
   {
     "_tag": "Constant",
@@ -213,7 +321,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  } | undefined\n}"
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  } | undefined\n}"
   },
   {
     "_tag": "Constant",
@@ -267,6 +375,24 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Resource",
+      "path": [
+        "src",
+        "Resource.ts"
+      ]
+    },
+    "project": "@effect/opentelemetry",
+    "name": "configToAttributes",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "config",
     "signature": null
   },
   {
@@ -663,6 +789,6 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  }\n}"
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  }\n}"
   }
 ]

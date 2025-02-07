@@ -26,5 +26,8 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const makeBy: <A>(n: number, f: (i: number) => A) => NonEmptyArray<A>
+export declare const makeBy: {
+  <A>(f: (i: number) => A): (n: number) => NonEmptyArray<A>
+  <A>(n: number, f: (i: number) => A): NonEmptyArray<A>
+}
 ```

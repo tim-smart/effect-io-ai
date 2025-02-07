@@ -10633,6 +10633,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "mergeCookies",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "export declare const mergeCookies: { (cookies: Cookies): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, cookies: Cookies): HttpServerResponse; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpServerResponse",
+      "path": [
+        "src",
+        "HttpServerResponse.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "setCookies",
     "description": null,
     "deprecated": false,

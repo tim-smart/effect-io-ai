@@ -99,6 +99,26 @@
       ]
     },
     "project": "effect",
+    "name": "makeBy",
+    "description": "Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.\n\n**Note**. `n` is normalized to an integer >= 1.",
+    "deprecated": false,
+    "examples": [
+      "import { makeBy } from \"effect/Array\"\n\nassert.deepStrictEqual(makeBy(5, n => n * 2), [0, 2, 4, 6, 8])"
+    ],
+    "since": "2.0.0",
+    "category": "constructors",
+    "signature": "export declare const makeBy: { <A>(f: (i: number) => A): (n: number) => NonEmptyArray<A>; <A>(n: number, f: (i: number) => A): NonEmptyArray<A>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Array",
+      "path": [
+        "src",
+        "Array.ts"
+      ]
+    },
+    "project": "effect",
     "name": "replicate",
     "description": "Return a `NonEmptyArray` containing a value repeated the specified number of times.\n\n**Note**. `n` is normalized to an integer >= 1.",
     "deprecated": false,
@@ -2018,26 +2038,6 @@
     "deprecated": false,
     "examples": [
       "import { Array } from \"effect\"\n\nconst result = Array.allocate<number>(3)\nassert.deepStrictEqual(result.length, 3)"
-    ],
-    "since": "2.0.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Array",
-      "path": [
-        "src",
-        "Array.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "makeBy",
-    "description": "Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.\n\n**Note**. `n` is normalized to an integer >= 1.",
-    "deprecated": false,
-    "examples": [
-      "import { makeBy } from \"effect/Array\"\n\nassert.deepStrictEqual(makeBy(5, n => n * 2), [0, 2, 4, 6, 8])"
     ],
     "since": "2.0.0",
     "category": "constructors",
@@ -13312,7 +13312,7 @@
     "examples": [],
     "since": "3.11.0",
     "category": "models",
-    "signature": "export interface ReferenceClass<Self, Id, Type> extends Reference<Self, Type> {\n  new(_: never): TagClassShape<Id, Type>\n}"
+    "signature": "export interface ReferenceClass<Self, Id extends string, Type> extends Reference<Self, Type> {\n  new(_: never): TagClassShape<Id, Type>\n  readonly key: Id\n}"
   },
   {
     "_tag": "Interface",
@@ -13348,7 +13348,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export interface TagClass<Self, Id, Type> extends Tag<Self, Type> {\n  new(_: never): TagClassShape<Id, Type>\n}"
+    "signature": "export interface TagClass<Self, Id extends string, Type> extends Tag<Self, Type> {\n  new(_: never): TagClassShape<Id, Type>\n  readonly key: Id\n}"
   },
   {
     "_tag": "Interface",
@@ -82031,7 +82031,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export interface STMUnify<A extends { [Unify.typeSymbol]?: any }> extends Effect.EffectUnify<A> {\n  STM?: () => A[Unify.typeSymbol] extends STM<infer A0, infer E0, infer R0> | infer _ ? STM<R0, E0, A0> : never\n}"
+    "signature": "export interface STMUnify<A extends { [Unify.typeSymbol]?: any }> extends Effect.EffectUnify<A> {\n  STM?: () => A[Unify.typeSymbol] extends STM<infer A0, infer E0, infer R0> | infer _ ? STM<A0, E0, R0> : never\n}"
   },
   {
     "_tag": "Interface",
