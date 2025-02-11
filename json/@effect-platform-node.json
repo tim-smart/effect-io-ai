@@ -1265,6 +1265,24 @@
   {
     "_tag": "Export",
     "module": {
+      "name": "NodeWorkerRunner",
+      "path": [
+        "src",
+        "NodeWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-node",
+    "name": "launch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
       "name": "Undici",
       "path": [
         "src",

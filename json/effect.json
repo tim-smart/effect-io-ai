@@ -9206,12 +9206,12 @@
     },
     "project": "effect",
     "name": "forEach",
-    "description": "Applies the specified function to each element of the `List`.",
+    "description": "Iterates over each element of a `Chunk` and applies a function to it.\n\n**Details**\n\nThis function processes every element of the given `Chunk`, calling the\nprovided function `f` on each element. It does not return a new value;\ninstead, it is primarily used for side effects, such as logging or\naccumulating data in an external variable.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "combinators",
-    "signature": "export declare const forEach: { <A, B>(f: (a: A) => B): (self: Chunk<A>) => void; <A, B>(self: Chunk<A>, f: (a: A) => B): void; }"
+    "signature": "export declare const forEach: { <A, B>(f: (a: A, index: number) => B): (self: Chunk<A>) => void; <A, B>(self: Chunk<A>, f: (a: A, index: number) => B): void; }"
   },
   {
     "_tag": "Constant",

@@ -16231,13 +16231,31 @@
       ]
     },
     "project": "@effect/platform",
-    "name": "run",
+    "name": "CloseLatch",
+    "description": "The worker close latch is used by platform runners to signal that the worker\nhas been closed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "CloseLatch",
+    "signature": "export declare const CloseLatch: Context.Reference<CloseLatch, Deferred.Deferred<void, WorkerError>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "WorkerRunner",
+      "path": [
+        "src",
+        "WorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "layerCloseLatch",
     "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const run: <I, E, R, O>(process: (request: I) => Stream.Stream<O, E, R> | Effect.Effect<O, E, R>, options?: Runner.Options<I, O, E>) => Effect.Effect<never, WorkerError, PlatformRunner | R>"
+    "category": "CloseLatch",
+    "signature": "export declare const layerCloseLatch: Layer.Layer<CloseLatch, never, never>"
   },
   {
     "_tag": "Constant",
@@ -16312,6 +16330,24 @@
     "signature": "export declare const layerSerialized: <R, I, A extends Schema.TaggedRequest.All, const Handlers extends SerializedRunner.Handlers<A>>(schema: Schema.Schema<A, I, R>, handlers: Handlers) => Layer.Layer<never, WorkerError, PlatformRunner | R | SerializedRunner.HandlersContext<Handlers>>"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "WorkerRunner",
+      "path": [
+        "src",
+        "WorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "launch",
+    "description": "Launch the specified layer, interrupting the fiber when the CloseLatch is\ntriggered.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Execution",
+    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect.Effect<void, E | WorkerError, R>"
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "WorkerRunner",
@@ -16327,7 +16363,25 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface BackingRunner<I, O> {\n  readonly run: <A, E, R>(\n    handler: (portId: number, message: I) => Effect.Effect<A, E, R>\n  ) => Effect.Effect<never, E | WorkerError, R>\n  readonly send: (\n    portId: number,\n    message: O,\n    transfers?: ReadonlyArray<unknown>\n  ) => Effect.Effect<void>\n}"
+    "signature": "export interface BackingRunner<I, O> {\n  readonly run: <A, E, R>(\n    handler: (portId: number, message: I) => Effect.Effect<A, E, R>\n  ) => Effect.Effect<void, never, Scope.Scope | R>\n  readonly send: (\n    portId: number,\n    message: O,\n    transfers?: ReadonlyArray<unknown>\n  ) => Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "WorkerRunner",
+      "path": [
+        "src",
+        "WorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform",
+    "name": "CloseLatch",
+    "description": "The worker close latch is used by platform runners to signal that the worker\nhas been closed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "CloseLatch",
+    "signature": "export interface CloseLatch {\n  readonly _: unique symbol\n}"
   },
   {
     "_tag": "Interface",
@@ -16345,7 +16399,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PlatformRunner {\n  readonly [PlatformRunnerTypeId]: PlatformRunnerTypeId\n  readonly start: <I, O>() => Effect.Effect<BackingRunner<I, O>, WorkerError>\n}"
+    "signature": "export interface PlatformRunner {\n  readonly [PlatformRunnerTypeId]: PlatformRunnerTypeId\n  readonly start: <I, O>(closeLatch: typeof CloseLatch.Service) => Effect.Effect<BackingRunner<I, O>, WorkerError>\n}"
   },
   {
     "_tag": "TypeAlias",

@@ -306,6 +306,24 @@
     "signature": "export declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<Runner.PlatformRunner>"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "BrowserWorkerRunner",
+      "path": [
+        "src",
+        "BrowserWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-browser",
+    "name": "launch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Clipboard",
