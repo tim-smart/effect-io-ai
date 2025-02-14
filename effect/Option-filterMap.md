@@ -30,7 +30,7 @@ import { Option } from "effect"
 
 // Transform and filter numbers
 const transformEven = (n: Option.Option<number>): Option.Option<string> =>
-  Option.flatMap(n, (n) => (n % 2 === 0 ? Option.some(`Even: ${n}`) : Option.none()))
+  Option.filterMap(n, (n) => (n % 2 === 0 ? Option.some(`Even: ${n}`) : Option.none()))
 
 console.log(transformEven(Option.none()))
 // Output: { _id: 'Option', _tag: 'None' }
