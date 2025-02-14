@@ -1,7 +1,12 @@
 # resetAfter
 
-Return a new schedule that automatically resets the schedule to its initial
-state after some time of inactivity defined by `duration`.
+Returns a new schedule that automatically resets to its initial state after a
+period of inactivity defined by `duration`.
+
+**Details**
+
+This function modifies a schedule so that if no inputs are received for the
+specified `duration`, the schedule resets as if it were new.
 
 To import and use `resetAfter` from the "Schedule" module:
 

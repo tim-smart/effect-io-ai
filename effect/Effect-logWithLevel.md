@@ -32,5 +32,5 @@ const program = Effect.logWithLevel(LogLevel.Error, "Critical error encountered"
 **Signature**
 
 ```ts
-export declare const logWithLevel: (level: LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
+export declare const logWithLevel: (level: LogLevel.LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
 ```

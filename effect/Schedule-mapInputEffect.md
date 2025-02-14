@@ -1,7 +1,16 @@
 # mapInputEffect
 
-Returns a new schedule that deals with a narrower class of inputs than this
-schedule.
+Transforms the input type of a schedule using an effectful function.
+
+**Details**
+
+This function modifies a schedule by applying an effectful transformation to
+its inputs. Instead of directly receiving values of type `In`, the schedule
+will now accept values of type `In2`, which are converted to `In` via an
+effectful function `f`.
+
+This is useful when the input transformation involves external dependencies,
+such as API calls, database lookups, or other asynchronous computations.
 
 To import and use `mapInputEffect` from the "Schedule" module:
 

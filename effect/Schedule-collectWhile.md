@@ -1,7 +1,12 @@
 # collectWhile
 
-A schedule that recurs as long as the condition f holds, collecting all
-inputs into a list.
+Collects all inputs into a `Chunk` while a condition holds.
+
+**Details**
+
+This function creates a schedule that continuously collects inputs into a
+`Chunk` while the given predicate function `f` evaluates to `true`. As soon
+as the condition fails, the schedule stops.
 
 To import and use `collectWhile` from the "Schedule" module:
 

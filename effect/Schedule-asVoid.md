@@ -1,6 +1,16 @@
 # asVoid
 
-Returns a new schedule that maps the output of this schedule to unit.
+Transforms a schedule to always return `void` instead of its output.
+
+**Details**
+
+This function modifies a given schedule so that it no longer returns
+meaningful output—each execution produces `void`. This is useful when the
+schedule is used only for timing purposes and the actual output of the
+schedule is irrelevant.
+
+The schedule still determines when executions should occur, but the results
+are discarded.
 
 To import and use `asVoid` from the "Schedule" module:
 

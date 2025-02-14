@@ -1,6 +1,6 @@
 # isSchedule
 
-Returns `true` if the specified value is a `Schedule`, `false` otherwise.
+Checks whether a given value is a `Schedule`.
 
 To import and use `isSchedule` from the "Schedule" module:
 

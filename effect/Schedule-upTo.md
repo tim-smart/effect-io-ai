@@ -1,6 +1,12 @@
 # upTo
 
-A schedule that recurs during the given duration.
+Returns a new schedule that limits execution to a fixed duration.
+
+**Details**
+
+This function modifies an existing schedule to stop execution after a
+specified duration has passed. The schedule continues as normal until the
+duration is reached, at which point it stops automatically.
 
 To import and use `upTo` from the "Schedule" module:
 

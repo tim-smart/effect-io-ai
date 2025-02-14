@@ -32,7 +32,7 @@ assert.equal(Equal.equals(trie.pipe(Trie.modify("me", (v) => v)), trie), true)
 
 ```ts
 export declare const modify: {
-  <V>(key: string, f: (v: V) => V): (self: Trie<V>) => Trie<V>
-  <V>(self: Trie<V>, key: string, f: (v: V) => V): Trie<V>
+  <V1, V>(key: string, f: (v: V) => V1): (self: Trie<V>) => Trie<V1 | V>
+  <V1, V>(self: Trie<V>, key: string, f: (v: V) => V1): Trie<V | V1>
 }
 ```

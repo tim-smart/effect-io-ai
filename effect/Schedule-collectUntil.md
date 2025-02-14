@@ -1,7 +1,12 @@
 # collectUntil
 
-A schedule that recurs until the condition f fails, collecting all inputs
-into a list.
+Collects all inputs into a `Chunk` until a condition fails.
+
+**Details**
+
+This function creates a schedule that continuously collects inputs into a
+`Chunk` until the given predicate function `f` evaluates to `false`. Once the
+condition fails, the schedule stops.
 
 To import and use `collectUntil` from the "Schedule" module:
 

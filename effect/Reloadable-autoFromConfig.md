@@ -15,11 +15,11 @@ Reloadable.autoFromConfig
 **Signature**
 
 ```ts
-export declare const autoFromConfig: <Out extends Context.Tag<any, any>, E, In, R>(
-  tag: Out,
+export declare const autoFromConfig: <I, S, E, In, R>(
+  tag: Context.Tag<I, S>,
   options: {
-    readonly layer: Layer.Layer<Context.Tag.Identifier<Out>, E, In>
+    readonly layer: Layer.Layer<I, E, In>
     readonly scheduleFromConfig: (context: Context.Context<In>) => Schedule.Schedule<unknown, unknown, R>
   }
-) => Layer.Layer<Reloadable<Context.Tag.Identifier<Out>>, E, In | R>
+) => Layer.Layer<Reloadable<I>, E, R | In>
 ```

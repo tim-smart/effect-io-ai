@@ -1,6 +1,12 @@
 # passthrough
 
-Returns a new schedule that passes through the inputs of this schedule.
+Transforms a schedule to pass through its inputs as outputs.
+
+**Details**
+
+This function modifies an existing schedule so that it returns its input
+values instead of its original output values. The schedule's timing remains
+unchanged, but its outputs are replaced with whatever inputs it receives.
 
 To import and use `passthrough` from the "Schedule" module:
 

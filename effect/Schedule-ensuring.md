@@ -1,10 +1,18 @@
 # ensuring
 
-Returns a new schedule that will run the specified finalizer as soon as the
-schedule is complete. Note that unlike `Effect.ensuring`, this method does not
-guarantee the finalizer will be run. The `Schedule` may not initialize or
-the driver of the schedule may not run to completion. However, if the
-`Schedule` ever decides not to continue, then the finalizer will be run.
+Attaches a finalizer to a schedule that runs when the schedule completes.
+
+**Details**
+
+This function returns a new schedule that executes a given finalizer when the
+schedule reaches completion. Unlike `Effect.ensuring`, this method does not
+guarantee the finalizer will run in all cases. If the schedule never
+initializes or is not driven to completion, the finalizer may not execute.
+However, if the schedule decides not to continue, the finalizer will be
+invoked.
+
+This is useful for cleaning up resources, logging, or executing other side
+effects when a schedule completes.
 
 To import and use `ensuring` from the "Schedule" module:
 

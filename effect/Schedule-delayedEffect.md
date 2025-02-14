@@ -1,7 +1,17 @@
 # delayedEffect
 
-Returns a new schedule with the specified effectfully computed delay added
-before the start of each interval produced by this schedule.
+Modifies a schedule by adding an effectfully computed delay before each
+execution.
+
+**Details**
+
+This function adjusts an existing schedule by introducing a delay that is
+computed via an effect. Instead of using a fixed delay, each interval is
+dynamically adjusted based on an effectful function `f`, which takes the
+current delay and returns a new delay wrapped in an `Effect`.
+
+This is useful for adaptive scheduling where delays depend on external
+factors, such as API calls, database queries, or dynamic system conditions.
 
 To import and use `delayedEffect` from the "Schedule" module:
 

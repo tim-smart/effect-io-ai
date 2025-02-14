@@ -1,7 +1,7 @@
 # sync
 
-Returns a schedule that repeats one time, producing the specified constant
-value.
+Returns a schedule that recurs indefinitely, evaluating the given function to
+produce a constant value.
 
 To import and use `sync` from the "Schedule" module:
 

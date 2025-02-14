@@ -1,10 +1,16 @@
 # dayOfWeek
 
-Cron-like schedule that recurs every specified `day` of each week. It
-triggers at zero hour of the week. Producing a count of repeats: 0, 1, 2.
+Creates a schedule that recurs on a specific day of the week.
 
-NOTE: `day` parameter is validated lazily. Must be in range 1 (Monday)...7
-(Sunday).
+**Details**
+
+This schedule triggers at midnight on the specified day of the week. The
+`day` parameter follows the standard convention where `Monday = 1` and
+`Sunday = 7`. The schedule produces a count of executions, starting at 0 and
+incrementing with each recurrence.
+
+The `day` parameter is validated lazily, meaning errors may only be detected
+when the schedule is executed.
 
 To import and use `dayOfWeek` from the "Schedule" module:
 

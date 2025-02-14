@@ -1,7 +1,16 @@
 # delayed
 
-Returns a new schedule with the specified effectfully computed delay added
-before the start of each interval produced by this schedule.
+Modifies a schedule by adding a computed delay before each execution.
+
+**Details**
+
+This function adjusts an existing schedule by applying a transformation to
+its delays. Instead of using the default interval, each delay is modified
+using the provided function `f`, which takes the current delay and returns a
+new delay.
+
+This is useful for dynamically adjusting wait times between executions, such
+as introducing jitter, exponential backoff, or custom delay logic.
 
 To import and use `delayed` from the "Schedule" module:
 

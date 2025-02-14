@@ -43,7 +43,7 @@ const program = Effect.gen(function* () {
 
 ```ts
 export declare const withUnhandledErrorLogLevel: {
-  (level: Option.Option<LogLevel>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(self: Effect<A, E, R>, level: Option.Option<LogLevel>): Effect<A, E, R>
+  (level: Option.Option<LogLevel.LogLevel>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+  <A, E, R>(self: Effect<A, E, R>, level: Option.Option<LogLevel.LogLevel>): Effect<A, E, R>
 }
 ```

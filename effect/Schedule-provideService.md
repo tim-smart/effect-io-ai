@@ -1,8 +1,16 @@
 # provideService
 
-Returns a new schedule with the single service it requires provided to it.
-If the schedule requires multiple services use `provideContext`
-instead.
+Returns a new schedule with a single required service provided, eliminating
+the need for external dependencies.
+
+**Details**
+
+This function supplies a single service dependency to a schedule, allowing it
+to run without requiring that service externally. If a schedule depends on
+multiple services, consider using `provideContext` instead.
+
+This is useful when working with schedules that require a specific service,
+such as logging, metrics, or configuration retrieval.
 
 To import and use `provideService` from the "Schedule" module:
 
@@ -16,14 +24,14 @@ Schedule.provideService
 
 ```ts
 export declare const provideService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    service: Context.Tag.Service<T>
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, Exclude<R, Context.Tag.Identifier<T>>>
-  <Out, In, R, T extends Context.Tag<any, any>>(
+  <I, S>(
+    tag: Context.Tag<I, S>,
+    service: Types.NoInfer<S>
+  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, Exclude<R, I>>
+  <Out, In, R, I, S>(
     self: Schedule<Out, In, R>,
-    tag: T,
-    service: Context.Tag.Service<T>
-  ): Schedule<Out, In, Exclude<R, Context.Tag.Identifier<T>>>
+    tag: Context.Tag<I, S>,
+    service: Types.NoInfer<S>
+  ): Schedule<Out, In, Exclude<R, I>>
 }
 ```

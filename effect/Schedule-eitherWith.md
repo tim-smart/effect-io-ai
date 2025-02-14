@@ -1,6 +1,6 @@
 # eitherWith
 
-The same as `either` followed by `map`.
+Alias of {@link unionWith}.
 
 To import and use `eitherWith` from the "Schedule" module:
 

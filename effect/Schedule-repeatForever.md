@@ -1,7 +1,6 @@
 # repeatForever
 
-Returns a new schedule that loops this one continuously, resetting the
-state when this schedule is done.
+Alias of {@link forever}.
 
 To import and use `repeatForever` from the "Schedule" module:
 

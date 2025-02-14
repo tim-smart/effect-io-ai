@@ -1,7 +1,14 @@
 # untilInputEffect
 
-Returns a new schedule that continues until the specified effectful
-predicate on the input evaluates to true.
+Returns a new schedule that stops execution when the given effectful
+predicate on the input evaluates to `true`.
+
+**Details**
+
+This function modifies an existing schedule so that it continues executing
+only while the provided effectful predicate returns `false` for incoming
+inputs. The predicate is an `Effect`, meaning it can involve asynchronous
+computations or dependency-based logic.
 
 To import and use `untilInputEffect` from the "Schedule" module:
 

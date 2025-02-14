@@ -1,7 +1,13 @@
 # whileInputEffect
 
-Returns a new schedule that continues for as long as the specified effectful
-predicate on the input evaluates to true.
+Returns a new schedule that continues execution for as long as the given
+effectful predicate on the input evaluates to `true`.
+
+**Details**
+
+This function modifies an existing schedule so that it only continues
+execution while an effectful predicate holds true for its input. If the
+predicate evaluates to `false` at any step, the schedule stops.
 
 To import and use `whileInputEffect` from the "Schedule" module:
 

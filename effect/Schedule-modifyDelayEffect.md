@@ -1,7 +1,14 @@
 # modifyDelayEffect
 
-Returns a new schedule that modifies the delay using the specified
-effectual function.
+Returns a new schedule that modifies the delay before execution using an
+effectful function.
+
+**Details**
+
+This function takes an existing schedule and applies an effectful function
+`f` to dynamically adjust the delay before each execution. The function
+receives both the schedule's output (`out`) and the originally computed delay
+(`duration`), returning a new adjusted delay wrapped in an `Effect`.
 
 To import and use `modifyDelayEffect` from the "Schedule" module:
 

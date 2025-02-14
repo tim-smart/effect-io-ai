@@ -15,16 +15,16 @@ Channel.provideService
 
 ```ts
 export declare const provideService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    service: Context.Tag.Service<T>
+  <I, S>(
+    tag: Context.Tag<I, S>,
+    service: Types.NoInfer<S>
   ): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(
     self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
-  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Context.Tag.Identifier<T>>>
-  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, T extends Context.Tag<any, any>>(
+  ) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, I>>
+  <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, I, S>(
     self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>,
-    tag: T,
-    service: Context.Tag.Service<T>
-  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Context.Tag.Identifier<T>>>
+    tag: Context.Tag<I, S>,
+    service: Types.NoInfer<S>
+  ): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, I>>
 }
 ```

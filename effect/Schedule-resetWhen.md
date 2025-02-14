@@ -1,7 +1,12 @@
 # resetWhen
 
 Resets the schedule when the specified predicate on the schedule output
-evaluates to true.
+evaluates to `true`.
+
+**Details**
+
+This function modifies a schedule so that it resets to its initial state
+whenever the provided predicate `f` returns `true` for an output value.
 
 To import and use `resetWhen` from the "Schedule" module:
 

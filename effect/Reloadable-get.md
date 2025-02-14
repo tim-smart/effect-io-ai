@@ -13,7 +13,5 @@ Reloadable.get
 **Signature**
 
 ```ts
-export declare const get: <T extends Context.Tag<any, any>>(
-  tag: T
-) => Effect.Effect<Context.Tag.Service<T>, never, Reloadable<Context.Tag.Identifier<T>>>
+export declare const get: <I, S>(tag: Context.Tag<I, S>) => Effect.Effect<S, never, Reloadable<I>>
 ```

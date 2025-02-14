@@ -2,6 +2,16 @@
 
 Returns a new schedule that effectfully folds over the outputs of this one.
 
+**Details**
+
+This schedule accumulates outputs over time using an effectful reducer
+function `f`. It starts with an initial value `zero` and updates it
+asynchronously or based on external dependencies.
+
+This is useful for asynchronous state tracking, logging, external metrics
+aggregation, or any scenario where accumulation needs to involve an effectful
+computation.
+
 To import and use `reduceEffect` from the "Schedule" module:
 
 ```ts

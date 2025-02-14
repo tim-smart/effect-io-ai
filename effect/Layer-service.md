@@ -14,7 +14,5 @@ Layer.service
 **Signature**
 
 ```ts
-export declare const service: <T extends Context.Tag<any, any>>(
-  tag: T
-) => Layer<Context.Tag.Identifier<T>, never, Context.Tag.Identifier<T>>
+export declare const service: <I, S>(tag: Context.Tag<I, S>) => Layer<I, never, I>
 ```

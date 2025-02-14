@@ -1,7 +1,13 @@
 # tapInput
 
-Returns a new schedule that effectfully processes every input to this
-schedule.
+Returns a new schedule that runs the given effectful function for each input
+before continuing execution.
+
+**Details**
+
+This function allows side effects to be performed on each input processed by
+the schedule. It does not modify the schedule’s behavior but ensures that the
+provided function `f` runs before each step.
 
 To import and use `tapInput` from the "Schedule" module:
 

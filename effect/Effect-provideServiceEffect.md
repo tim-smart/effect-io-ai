@@ -26,14 +26,14 @@ Effect.provideServiceEffect
 
 ```ts
 export declare const provideServiceEffect: {
-  <T extends Context.Tag<any, any>, E1, R1>(
-    tag: T,
-    effect: Effect<Context.Tag.Service<T>, E1, R1>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E1 | E, R1 | Exclude<R, Context.Tag.Identifier<T>>>
-  <A, E, R, T extends Context.Tag<any, any>, E1, R1>(
+  <I, S, E1, R1>(
+    tag: Context.Tag<I, S>,
+    effect: Effect<NoInfer<S>, E1, R1>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | Exclude<R, I>>
+  <A, E, R, I, S, E1, R1>(
     self: Effect<A, E, R>,
-    tag: T,
-    effect: Effect<Context.Tag.Service<T>, E1, R1>
-  ): Effect<A, E | E1, R1 | Exclude<R, Context.Tag.Identifier<T>>>
+    tag: Context.Tag<I, S>,
+    effect: Effect<NoInfer<S>, E1, R1>
+  ): Effect<A, E | E1, R1 | Exclude<R, I>>
 }
 ```

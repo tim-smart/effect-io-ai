@@ -14,9 +14,7 @@ Layer.sync
 
 ```ts
 export declare const sync: {
-  <T extends Context.Tag<any, any>>(
-    tag: T
-  ): (evaluate: LazyArg<Context.Tag.Service<T>>) => Layer<Context.Tag.Identifier<T>>
-  <T extends Context.Tag<any, any>>(tag: T, evaluate: LazyArg<Context.Tag.Service<T>>): Layer<Context.Tag.Identifier<T>>
+  <I, S>(tag: Context.Tag<I, S>): (evaluate: LazyArg<Types.NoInfer<S>>) => Layer<I>
+  <I, S>(tag: Context.Tag<I, S>, evaluate: LazyArg<Types.NoInfer<S>>): Layer<I>
 }
 ```

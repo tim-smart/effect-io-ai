@@ -1,6 +1,15 @@
 # run
 
-Runs a schedule using the provided inputs, and collects all outputs.
+Runs a schedule using the provided inputs and collects all outputs.
+
+**Details**
+
+This function executes a given schedule with a sequence of input values and
+accumulates all outputs into a `Chunk`. The schedule starts execution at the
+specified `now` timestamp and proceeds according to its defined behavior.
+
+This is useful for batch processing, simulating execution, or testing
+schedules with predefined input sequences.
 
 To import and use `run` from the "Schedule" module:
 

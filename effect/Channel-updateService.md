@@ -14,16 +14,16 @@ Channel.updateService
 
 ```ts
 export declare const updateService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>
+  <I, S>(
+    tag: Context.Tag<I, S>,
+    f: (resource: Types.NoInfer<S>) => Types.NoInfer<S>
   ): <OutElem, OutErr, InErr, OutDone, InDone, R>(
     self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R>
-  ) => Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, T | R>
-  <OutElem, OutErr, InErr, OutDone, InDone, R, T extends Context.Tag<any, any>>(
+  ) => Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, I | R>
+  <OutElem, OutErr, InErr, OutDone, InDone, R, I, S>(
     self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R>,
-    tag: T,
-    f: (resource: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, R | T>
+    tag: Context.Tag<I, S>,
+    f: (resource: Types.NoInfer<S>) => Types.NoInfer<S>
+  ): Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, I | R>
 }
 ```

@@ -1,6 +1,15 @@
 # mapBothEffect
 
-Returns a new schedule that maps both the input and output.
+Transforms both the input and output of a schedule using effectful
+computations.
+
+**Details**
+
+This function modifies an existing schedule by applying effectful
+transformations to both its input values and its output values. The provided
+effectful functions `onInput` and `onOutput` allow you to transform inputs
+and outputs using computations that may involve additional logic, resource
+access, or side effects.
 
 To import and use `mapBothEffect` from the "Schedule" module:
 

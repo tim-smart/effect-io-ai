@@ -1,7 +1,12 @@
 # addDelay
 
-Returns a new schedule with the given delay added to every interval defined
-by this schedule.
+Adds a delay to every interval in a schedule.
+
+**Details**
+
+This function modifies a given schedule by applying an additional delay to
+every interval it defines. The delay is determined by the provided function,
+which takes the schedule's output and returns a delay duration.
 
 To import and use `addDelay` from the "Schedule" module:
 

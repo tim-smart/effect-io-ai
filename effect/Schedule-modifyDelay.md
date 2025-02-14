@@ -1,7 +1,14 @@
 # modifyDelay
 
-Returns a new schedule that modifies the delay using the specified
-function.
+Returns a new schedule that modifies the delay between executions using a
+custom function.
+
+**Details**
+
+This function transforms an existing schedule by applying `f` to modify the
+delay before each execution. The function receives both the schedule's output
+(`out`) and the originally computed delay (`duration`), and returns a new
+adjusted delay.
 
 To import and use `modifyDelay` from the "Schedule" module:
 

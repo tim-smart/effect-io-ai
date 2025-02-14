@@ -1,8 +1,15 @@
 # checkEffect
 
-Returns a new schedule that passes each input and output of this schedule
-to the specified function, and then determines whether or not to continue
-based on the return value of the function.
+Conditionally filters schedule executions using an effectful function.
+
+**Details**
+
+This function modifies a schedule by applying a custom effectful test
+function to each input-output pair. The test function determines whether the
+schedule should continue (`true`) or stop (`false`).
+
+This is useful when the decision to continue depends on external factors such
+as database lookups, API calls, or other asynchronous computations.
 
 To import and use `checkEffect` from the "Schedule" module:
 

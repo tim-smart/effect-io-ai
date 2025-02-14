@@ -1,7 +1,17 @@
 # bothInOut
 
-Returns a new schedule that has both the inputs and outputs of this and the
-specified schedule.
+Combines two schedules, preserving both their inputs and outputs.
+
+**Details**
+
+This function merges two schedules so that both their input types and output
+types are retained. When executed, the resulting schedule will take inputs
+from both original schedules and produce a tuple containing both outputs.
+
+It recurs if either schedule wants to continue, using the shorter delay.
+
+This is useful when you want to track multiple schedules simultaneously,
+ensuring that both receive the same inputs and produce combined results.
 
 To import and use `bothInOut` from the "Schedule" module:
 

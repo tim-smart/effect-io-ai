@@ -1,10 +1,15 @@
 # cron
 
-Cron schedule that recurs every interval that matches the schedule.
+Creates a schedule that recurs based on a cron expression.
 
-It triggers at the beginning of each cron interval, producing the timestamps of the cron window.
+**Details**
 
-NOTE: `expression` parameter is validated lazily. Must be a valid cron expression.
+This schedule automatically executes at intervals defined by a cron
+expression. It triggers at the beginning of each matched interval and
+produces timestamps representing the start and end of the cron window.
+
+The cron `expression` is validated lazily, meaning errors may only be
+detected when the schedule is executed.
 
 To import and use `cron` from the "Schedule" module:
 

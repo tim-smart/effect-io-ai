@@ -13,7 +13,5 @@ Reloadable.reloadFork
 **Signature**
 
 ```ts
-export declare const reloadFork: <T extends Context.Tag<any, any>>(
-  tag: T
-) => Effect.Effect<void, unknown, Reloadable<Context.Tag.Identifier<T>>>
+export declare const reloadFork: <I, S>(tag: Context.Tag<I, S>) => Effect.Effect<void, unknown, Reloadable<I>>
 ```

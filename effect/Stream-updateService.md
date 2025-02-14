@@ -14,14 +14,14 @@ Stream.updateService
 
 ```ts
 export declare const updateService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, T | R>
-  <A, E, R, T extends Context.Tag<any, any>>(
+  <I, S>(
+    tag: Context.Tag<I, S>,
+    f: (service: NoInfer<S>) => NoInfer<S>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, I | R>
+  <A, E, R, I, S>(
     self: Stream<A, E, R>,
-    tag: T,
-    f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): Stream<A, E, R | T>
+    tag: Context.Tag<I, S>,
+    f: (service: NoInfer<S>) => NoInfer<S>
+  ): Stream<A, E, I | R>
 }
 ```

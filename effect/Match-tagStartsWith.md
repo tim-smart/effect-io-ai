@@ -1,0 +1,53 @@
+# tagStartsWith
+
+Matches values where the `_tag` field starts with a given prefix.
+
+**Details**
+
+This function allows you to match on values in a **discriminated union**
+based on whether the `_tag` field starts with a specified prefix. It is
+useful for handling hierarchical or namespaced tags, where multiple related
+cases share a common prefix.
+
+To import and use `tagStartsWith` from the "Match" module:
+
+```ts
+import * as Match from "effect/Match"
+// Can be accessed like this
+Match.tagStartsWith
+```
+
+**Example**
+
+```ts
+import { Match, pipe } from "effect"
+
+const match = pipe(
+  Match.type<{ _tag: "A" } | { _tag: "B" } | { _tag: "A.A" } | {}>(),
+  Match.tagStartsWith("A", (_) => 1 as const),
+  Match.tagStartsWith("B", (_) => 2 as const),
+  Match.orElse((_) => 3 as const)
+)
+
+console.log(match({ _tag: "A" })) // 1
+console.log(match({ _tag: "B" })) // 2
+console.log(match({ _tag: "A.A" })) // 1
+```
+
+**Signature**
+
+```ts
+export declare const tagStartsWith: <R, P extends string, Ret, B extends Ret>(
+  pattern: P,
+  f: (_: Extract<T.NoInfer<R>, Record<"_tag", `${P}${string}`>>) => B
+) => <I, F, A, Pr>(
+  self: Matcher<I, F, R, A, Pr, Ret>
+) => Matcher<
+  I,
+  Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>,
+  Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>>,
+  B | A,
+  Pr,
+  Ret
+>
+```

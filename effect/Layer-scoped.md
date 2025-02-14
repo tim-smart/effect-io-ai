@@ -14,14 +14,12 @@ Layer.scoped
 
 ```ts
 export declare const scoped: {
-  <T extends Context.Tag<any, any>>(
-    tag: T
-  ): <E, R>(
-    effect: Effect.Effect<Context.Tag.Service<T>, E, R>
-  ) => Layer<Context.Tag.Identifier<T>, E, Exclude<R, Scope.Scope>>
-  <T extends Context.Tag<any, any>, E, R>(
-    tag: T,
-    effect: Effect.Effect<Context.Tag.Service<T>, E, R>
-  ): Layer<Context.Tag.Identifier<T>, E, Exclude<R, Scope.Scope>>
+  <I, S>(
+    tag: Context.Tag<I, S>
+  ): <E, R>(effect: Effect.Effect<Types.NoInfer<S>, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>
+  <I, S, E, R>(
+    tag: Context.Tag<I, S>,
+    effect: Effect.Effect<Types.NoInfer<S>, E, R>
+  ): Layer<I, E, Exclude<R, Scope.Scope>>
 }
 ```

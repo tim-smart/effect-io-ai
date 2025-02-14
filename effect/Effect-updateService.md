@@ -26,14 +26,14 @@ Effect.updateService
 
 ```ts
 export declare const updateService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R | Context.Tag.Identifier<T>>
-  <A, E, R, T extends Context.Tag<any, any>>(
+  <I, S>(
+    tag: Context.Tag<I, S>,
+    f: (service: NoInfer<S>) => NoInfer<S>
+  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R | I>
+  <A, E, R, I, S>(
     self: Effect<A, E, R>,
-    tag: T,
-    f: (service: Context.Tag.Service<T>) => Context.Tag.Service<T>
-  ): Effect<A, E, R | Context.Tag.Identifier<T>>
+    tag: Context.Tag<I, S>,
+    f: (service: NoInfer<S>) => NoInfer<S>
+  ): Effect<A, E, R | I>
 }
 ```

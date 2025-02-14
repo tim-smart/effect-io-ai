@@ -56,14 +56,7 @@ const runnable = Effect.provideService(program, Random, {
 
 ```ts
 export declare const provideService: {
-  <T extends Context.Tag<any, any>>(
-    tag: T,
-    service: Context.Tag.Service<T>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Context.Tag.Identifier<T>>>
-  <A, E, R, T extends Context.Tag<any, any>>(
-    self: Effect<A, E, R>,
-    tag: T,
-    service: Context.Tag.Service<T>
-  ): Effect<A, E, Exclude<R, Context.Tag.Identifier<T>>>
+  <I, S>(tag: Context.Tag<I, S>, service: NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>
+  <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, service: NoInfer<S>): Effect<A, E, Exclude<R, I>>
 }
 ```

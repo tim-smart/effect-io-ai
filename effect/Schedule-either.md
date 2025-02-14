@@ -1,7 +1,6 @@
 # either
 
-Returns a new schedule that performs a geometric union on the intervals
-defined by both schedules.
+Alias of {@link union}.
 
 To import and use `either` from the "Schedule" module:
 

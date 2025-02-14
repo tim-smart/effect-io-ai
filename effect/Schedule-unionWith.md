@@ -1,8 +1,22 @@
 # unionWith
 
-Returns a new schedule that combines this schedule with the specified
-schedule, continuing as long as either schedule wants to continue and
-merging the next intervals according to the specified merge function.
+Combines two schedules, continuing execution as long as at least one of them
+wants to continue, merging their intervals using a custom merge function.
+
+**Details**
+
+This function allows you to combine two schedules while defining how their
+intervals should be merged. Unlike {@link union}, which simply selects the
+shorter delay, this function lets you specify a custom merging strategy for
+the schedules’ intervals.
+
+The merged schedule continues execution as long as at least one of the input
+schedules allows it. The next interval is determined by applying the provided
+merge function to the intervals of both schedules.
+
+The output of the resulting schedule is a tuple containing the outputs of
+both schedules. The input type is the intersection of both schedules' input
+types.
 
 To import and use `unionWith` from the "Schedule" module:
 

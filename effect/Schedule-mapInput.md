@@ -1,7 +1,16 @@
 # mapInput
 
-Returns a new schedule that deals with a narrower class of inputs than this
-schedule.
+Transforms the input type of a schedule.
+
+**Details**
+
+This function modifies a given schedule by applying a transformation function
+to its inputs. Instead of directly receiving values of type `In`, the
+schedule will now accept values of type `In2`, which are converted to `In`
+using the provided mapping function `f`.
+
+This is useful when you have a schedule that expects a specific input type
+but you need to adapt it to work with a different type.
 
 To import and use `mapInput` from the "Schedule" module:
 

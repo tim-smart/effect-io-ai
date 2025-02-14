@@ -1,8 +1,16 @@
 # check
 
-Returns a new schedule that passes each input and output of this schedule
-to the specified function, and then determines whether or not to continue
-based on the return value of the function.
+Filters schedule executions based on a custom condition.
+
+**Details**
+
+This function modifies a schedule by applying a custom test function to each
+input-output pair. The test function determines whether the schedule should
+continue or stop. If the function returns `true`, the schedule proceeds as
+usual; if it returns `false`, the schedule terminates.
+
+This is useful for conditional retries, custom stop conditions, or
+dynamically controlling execution based on observed inputs and outputs.
 
 To import and use `check` from the "Schedule" module:
 

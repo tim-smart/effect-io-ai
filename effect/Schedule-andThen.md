@@ -1,6 +1,17 @@
 # andThen
 
-The same as `andThenEither`, but merges the output.
+Runs two schedules sequentially, merging their outputs.
+
+**Details**
+
+This function executes two schedules one after the other. The first schedule
+runs to completion, and then the second schedule begins execution. Unlike
+{@link andThenEither}, this function merges the outputs instead of wrapping
+them in `Either`, allowing both schedules to contribute their results
+directly.
+
+This is useful when a workflow consists of two phases where the second phase
+should start only after the first one has fully completed.
 
 To import and use `andThen` from the "Schedule" module:
 

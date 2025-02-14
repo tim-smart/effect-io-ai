@@ -32,7 +32,7 @@ assert.equal(Equal.equals(trie, trieInsert), true)
 
 ```ts
 export declare const insertMany: {
-  <V>(iter: Iterable<[string, V]>): (self: Trie<V>) => Trie<V>
-  <V>(self: Trie<V>, iter: Iterable<[string, V]>): Trie<V>
+  <V1>(iter: Iterable<[string, V1]>): <V>(self: Trie<V>) => Trie<V | V1>
+  <V1, V>(self: Trie<V>, iter: Iterable<[string, V1]>): Trie<V | V1>
 }
 ```

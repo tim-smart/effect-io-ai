@@ -1,6 +1,17 @@
 # recurUntilEffect
 
-A schedule that recurs for until the predicate evaluates to true.
+A schedule that recurs until the given effectful predicate evaluates to true.
+
+**Details**
+
+This schedule continues executing as long as the provided effectful predicate
+`f` returns `false`. Once `f` evaluates to `true`, the schedule stops
+recurring. Unlike {@link recurUntil}, this function allows the stopping
+condition to be computed asynchronously or based on external dependencies.
+
+This is useful when the stopping condition depends on an effectful
+computation, such as checking a database, making an API call, or retrieving
+system state dynamically.
 
 To import and use `recurUntilEffect` from the "Schedule" module:
 

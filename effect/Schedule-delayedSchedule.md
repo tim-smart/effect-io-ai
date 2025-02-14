@@ -1,7 +1,12 @@
 # delayedSchedule
 
-Takes a schedule that produces a delay, and returns a new schedule that
-uses this delay to further delay intervals in the resulting schedule.
+Uses the delays produced by a schedule to further delay its intervals.
+
+**Details**
+
+This function modifies a schedule by using its own output delays to control
+its execution timing. Instead of executing immediately at each interval, the
+schedule will be delayed by the duration it produces.
 
 To import and use `delayedSchedule` from the "Schedule" module:
 
