@@ -1,7 +1,14 @@
 # using
 
-Scopes all resources acquired by `resource` to the lifetime of `use`
-without effecting the scope of any resources acquired by `use`.
+Scopes all resources acquired by one effect to the lifetime of another
+effect.
+
+**Details**
+
+This function allows you to scope the resources acquired by one effect
+(`self`) to the lifetime of another effect (`use`). This ensures that the
+resources are cleaned up as soon as the `use` effect completes, regardless of
+how the `use` effect ends (success, failure, or interruption).
 
 To import and use `using` from the "Effect" module:
 
@@ -9,6 +16,26 @@ To import and use `using` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.using
+```
+
+**Example**
+
+```ts
+import { Console, Effect } from "effect"
+
+const acquire = Console.log("Acquiring resource").pipe(
+  Effect.as(1),
+  Effect.tap(Effect.addFinalizer(() => Console.log("Releasing resource")))
+)
+const use = (resource: number) => Console.log(`Using resource: ${resource}`)
+
+const program = acquire.pipe(Effect.using(use))
+
+// Effect.runFork(program)
+// Output:
+// Acquiring resource
+// Using resource: 1
+// Releasing resource
 ```
 
 **Signature**

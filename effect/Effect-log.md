@@ -1,9 +1,19 @@
 # log
 
-Logs one or more messages or error causes at the current log level, which is INFO by default.
-This function allows logging multiple items at once and can include detailed error information using `Cause` instances.
+Logs one or more messages or error causes at the current log level.
 
-To adjust the log level, use the `Logger.withMinimumLogLevel` function.
+**Details**
+
+This function provides a simple way to log messages or error causes during
+the execution of your effects. By default, logs are recorded at the `INFO`
+level, but this can be adjusted using other logging utilities
+(`Logger.withMinimumLogLevel`). Multiple items, including `Cause` instances,
+can be logged in a single call. When logging `Cause` instances, detailed
+error information is included in the log output.
+
+The log output includes useful metadata like the current timestamp, log
+level, and fiber ID, making it suitable for debugging and tracking purposes.
+This function does not interrupt or alter the effect's execution flow.
 
 To import and use `log` from the "Effect" module:
 

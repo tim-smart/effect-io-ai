@@ -1,12 +1,18 @@
 # tapError
 
-The `tapError` function executes an effectful operation to inspect the
-failure of an effect without modifying it.
+Execute a side effect on failure without modifying the original effect.
 
-This function is useful when you want to perform some side effect (like
-logging or tracking) on the failure of an effect, but without changing the
-result of the effect itself. The error remains in the effect's error channel,
-while the operation you provide can inspect or act on it.
+**Details**
+
+This function allows you to inspect and react to the failure of an effect by
+executing an additional effect. The failure value is passed to the provided
+function, enabling you to log it, track it, or perform any other operation.
+Importantly, the original failure remains intact and is re-propagated, so the
+effect's behavior is unchanged.
+
+The side effect you provide is only executed when the effect fails. If the
+effect succeeds, the function is ignored, and the success value is propagated
+as usual.
 
 To import and use `tapError` from the "Effect" module:
 
@@ -27,7 +33,7 @@ const task: Effect.Effect<number, string> = Effect.fail("NetworkError")
 // Use tapError to log the error message when the task fails
 const tapping = Effect.tapError(task, (error) => Console.log(`expected error: ${error}`))
 
-Effect.runFork(tapping)
+// Effect.runFork(tapping)
 // Output:
 // expected error: NetworkError
 ```

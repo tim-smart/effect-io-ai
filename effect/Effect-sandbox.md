@@ -1,16 +1,20 @@
 # sandbox
 
-The `sandbox` function transforms an effect by exposing the full cause
-of any error, defect, or fiber interruption that might occur during its
-execution. It changes the error channel of the effect to include detailed
-information about the cause, which is wrapped in a `Cause<E>` type.
+Transforms an effect to expose detailed error causes.
 
-This function is useful when you need access to the complete underlying cause
-of failures, defects, or interruptions, enabling more detailed error
-handling. Once you apply `sandbox`, you can use operators like
-{@link catchAll} and {@link catchTags} to handle specific error conditions.
-If necessary, you can revert the sandboxing operation with {@link unsandbox}
-to return to the original error handling behavior.
+**Details**
+
+This function enhances an effect by providing detailed information about any
+error, defect, or interruption that may occur during its execution. It
+modifies the error channel of the effect so that it includes a full cause of
+the failure, wrapped in a `Cause<E>` type.
+
+After applying this function, you can use operators like {@link catchAll} and
+{@link catchTags} to handle specific types of errors.
+
+If you no longer need the detailed cause information, you can revert the
+changes using {@link unsandbox} to return to the original error-handling
+behavior.
 
 To import and use `sandbox` from the "Effect" module:
 
@@ -43,7 +47,7 @@ const program = Effect.catchTags(sandboxed, {
 // Restore the original error handling with unsandbox
 const main = Effect.unsandbox(program)
 
-Effect.runPromise(main).then(console.log)
+// Effect.runPromise(main).then(console.log)
 // Output:
 // Caught a defect: Oh uh!
 // fallback result on failure

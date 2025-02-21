@@ -1,7 +1,6 @@
 # InvalidPubSubCapacityException
 
-Represents a checked exception which occurs when attempting to construct a
-`PubSub` with an invalid capacity.
+An error indicating invalid capacity for a `PubSub`.
 
 To import and use `InvalidPubSubCapacityException` from the "Cause" module:
 

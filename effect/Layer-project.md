@@ -15,16 +15,16 @@ Layer.project
 
 ```ts
 export declare const project: {
-  <A extends Context.Tag<any, any>, B extends Context.Tag<any, any>>(
-    tagA: A,
-    tagB: B,
-    f: (a: Context.Tag.Service<A>) => Context.Tag.Service<B>
-  ): <RIn, E>(self: Layer<Context.Tag.Identifier<A>, E, RIn>) => Layer<Context.Tag.Identifier<B>, E, RIn>
-  <RIn, E, A extends Context.Tag<any, any>, B extends Context.Tag<any, any>>(
-    self: Layer<Context.Tag.Identifier<A>, E, RIn>,
-    tagA: A,
-    tagB: B,
-    f: (a: Context.Tag.Service<A>) => Context.Tag.Service<B>
-  ): Layer<Context.Tag.Identifier<B>, E, RIn>
+  <I1, S1, I2, S2>(
+    tagA: Context.Tag<I1, S1>,
+    tagB: Context.Tag<I2, S2>,
+    f: (a: Types.NoInfer<S1>) => Types.NoInfer<S2>
+  ): <RIn, E>(self: Layer<I1, E, RIn>) => Layer<I2, E, RIn>
+  <RIn, E, I1, S1, I2, S2>(
+    self: Layer<I1, E, RIn>,
+    tagA: Context.Tag<I1, S1>,
+    tagB: Context.Tag<I2, S2>,
+    f: (a: Types.NoInfer<S1>) => Types.NoInfer<S2>
+  ): Layer<I2, E, RIn>
 }
 ```

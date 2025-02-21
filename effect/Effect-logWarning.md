@@ -1,6 +1,13 @@
 # logWarning
 
-Logs the specified message or cause at the Warning log level.
+Logs messages at the WARNING log level.
+
+**Details**
+
+This function logs messages at the WARNING level, suitable for highlighting
+potential issues that are not errors but may require attention. These
+messages indicate that something unexpected occurred or might lead to errors
+in the future.
 
 To import and use `logWarning` from the "Effect" module:
 

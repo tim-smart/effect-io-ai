@@ -1,6 +1,16 @@
 # pretty
 
-Returns the specified `Cause` as a pretty-printed string.
+Converts a `Cause` into a human-readable string.
+
+**Details**
+
+This function pretty-prints the entire `Cause`, including any failures,
+defects, and interruptions. It can be especially helpful for logging,
+debugging, or displaying structured errors to users.
+
+You can optionally pass `options` to configure how the error cause is
+rendered. By default, it includes essential details of all errors in the
+`Cause`.
 
 To import and use `pretty` from the "Cause" module:
 

@@ -1,6 +1,14 @@
 # tagMetrics
 
-Tags each metric in this effect with the specific tag.
+Tags each metric in an effect with specific key-value pairs.
+
+**Details**
+
+This function allows you to tag all metrics in an effect with a set of
+key-value pairs or a single key-value pair. Tags help you add metadata to
+metrics, making it easier to filter and categorize them in monitoring
+systems. The provided tags will apply to all metrics generated within the
+effect's scope.
 
 To import and use `tagMetrics` from the "Effect" module:
 

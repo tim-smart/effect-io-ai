@@ -14,7 +14,7 @@ DateTime.mutateUtc
 
 ```ts
 export declare const mutateUtc: {
-  (f: (date: Date) => void): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
-  <A extends DateTime>(self: A, f: (date: Date) => void): DateTime.PreserveZone<A>
+  (f: (date: Date) => void): <A extends DateTime>(self: A) => A
+  <A extends DateTime>(self: A, f: (date: Date) => void): A
 }
 ```

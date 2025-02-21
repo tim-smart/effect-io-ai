@@ -1,6 +1,11 @@
 # once
 
-A schedule that recurs one time.
+A schedule that executes only once and then stops.
+
+**Details**
+
+This schedule triggers a single execution and then terminates. It does not
+repeat or apply any additional logic.
 
 To import and use `once` from the "Schedule" module:
 

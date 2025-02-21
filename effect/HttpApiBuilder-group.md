@@ -34,6 +34,6 @@ export declare const group: <
 ) => Layer.Layer<
   HttpApiGroup.ApiGroup<ApiId, Name>,
   Handlers.Error<Return>,
-  Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>
+  Exclude<Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>, Scope>
 >
 ```

@@ -1,10 +1,25 @@
 # repeat
 
-The `repeat` function returns a new effect that repeats the given effect
-according to a specified schedule or until the first failure. The scheduled
-recurrences are in addition to the initial execution, so `repeat(action,
-Schedule.once)` executes `action` once initially, and if it succeeds, repeats it
-an additional time.
+Repeats an effect based on a specified schedule or until the first failure.
+
+**Details**
+
+This function executes an effect repeatedly according to the given schedule.
+Each repetition occurs after the initial execution of the effect, meaning
+that the schedule determines the number of additional repetitions. For
+example, using `Schedule.once` will result in the effect being executed twice
+(once initially and once as part of the repetition).
+
+If the effect succeeds, it is repeated according to the schedule. If it
+fails, the repetition stops immediately, and the failure is returned.
+
+The schedule can also specify delays between repetitions, making it useful
+for tasks like retrying operations with backoff, periodic execution, or
+performing a series of dependent actions.
+
+You can combine schedules for more advanced repetition logic, such as adding
+delays, limiting recursions, or dynamically adjusting based on the outcome of
+each execution.
 
 To import and use `repeat` from the "Effect" module:
 
@@ -24,7 +39,7 @@ const action = Console.log("success")
 const policy = Schedule.addDelay(Schedule.recurs(2), () => "100 millis")
 const program = Effect.repeat(action, policy)
 
-Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
+// Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
 ```
 
 **Example**
@@ -50,7 +65,7 @@ const action = Effect.async<string, string>((resume) => {
 const policy = Schedule.addDelay(Schedule.recurs(2), () => "100 millis")
 const program = Effect.repeat(action, policy)
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 ```
 
 **Signature**

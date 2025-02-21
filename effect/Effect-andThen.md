@@ -63,7 +63,7 @@ const result1 = pipe(
   Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-Effect.runPromise(result1).then(console.log)
+// Effect.runPromise(result1).then(console.log)
 // Output: 190
 
 // Using Effect.andThen
@@ -73,7 +73,7 @@ const result2 = pipe(
   Effect.andThen((amount) => applyDiscount(amount, 5))
 )
 
-Effect.runPromise(result2).then(console.log)
+// Effect.runPromise(result2).then(console.log)
 // Output: 190
 ```
 

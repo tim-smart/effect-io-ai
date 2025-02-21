@@ -1,6 +1,6 @@
 # zipRight
 
-The same as `intersect` but ignores the left output.
+The same as {@link intersect} but ignores the left output.
 
 To import and use `zipRight` from the "Schedule" module:
 

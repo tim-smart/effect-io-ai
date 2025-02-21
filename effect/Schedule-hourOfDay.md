@@ -1,9 +1,19 @@
 # hourOfDay
 
-Cron-like schedule that recurs every specified `hour` of each day. It
-triggers at zero minute of the hour. Producing a count of repeats: 0, 1, 2.
+Creates a schedule that recurs at a specific hour of each day.
 
-NOTE: `hour` parameter is validated lazily. Must be in range 0...23.
+**Details**
+
+This schedule triggers once per day at the specified `hour`, starting at zero
+minutes of that hour. The schedule produces a count of executions (`0, 1, 2,
+...`), indicating how many times it has been triggered.
+
+The `hour` parameter must be between `0` (midnight) and `23` (11 PM). It is
+validated lazily, meaning an invalid value will cause errors only when the
+schedule is executed.
+
+This is useful for scheduling daily recurring tasks at a fixed time, such as
+running batch jobs or refreshing data.
 
 To import and use `hourOfDay` from the "Schedule" module:
 

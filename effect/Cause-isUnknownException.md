@@ -1,7 +1,6 @@
 # isUnknownException
 
-Returns `true` if the specified value is an `UnknownException`, `false`
-otherwise.
+Checks if a given unknown value is an `UnknownException`.
 
 To import and use `isUnknownException` from the "Cause" module:
 

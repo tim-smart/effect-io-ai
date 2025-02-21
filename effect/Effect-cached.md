@@ -1,8 +1,21 @@
 # cached
 
-Returns an effect that computes a result lazily and caches it. Subsequent
-evaluations of this effect will return the cached result without re-executing
-the logic.
+Returns an effect that lazily computes a result and caches it for subsequent
+evaluations.
+
+**Details**
+
+This function wraps an effect and ensures that its result is computed only
+once. Once the result is computed, it is cached, meaning that subsequent
+evaluations of the same effect will return the cached result without
+re-executing the logic.
+
+**When to Use**
+
+Use this function when you have an expensive or time-consuming operation that
+you want to avoid repeating. The first evaluation will compute the result,
+and all following evaluations will immediately return the cached value,
+improving performance and reducing unnecessary work.
 
 To import and use `cached` from the "Effect" module:
 
@@ -37,7 +50,7 @@ const program = Effect.gen(function* () {
   yield* cached.pipe(Effect.andThen(Console.log))
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // non-cached version:
 // expensive task...

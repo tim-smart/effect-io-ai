@@ -14,7 +14,7 @@ HttpClient.followRedirects
 
 ```ts
 export declare const followRedirects: {
-  (maxRedirects?: number | undefined): <E, R>(self: HttpClient<E, R>) => HttpClient<E, R>
-  <E, R>(self: HttpClient<E, R>, maxRedirects?: number | undefined): HttpClient<E, R>
+  (maxRedirects?: number | undefined): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>
+  <E, R>(self: HttpClient.With<E, R>, maxRedirects?: number | undefined): HttpClient.With<E, R>
 }
 ```

@@ -1,20 +1,25 @@
 # timeoutTo
 
-The `timeoutTo` function provides more flexibility than
-`timeout` by allowing you to define different outcomes for both
-successful and timed-out operations.
+Provides custom behavior for successful and timed-out operations.
 
-This function is useful when you want to handle the results of an effect
-differently depending on whether the operation completes within the given
-time frame or not. It lets you specify `onSuccess` and `onTimeout` handlers,
-where the success handler processes the result if the effect completes on
-time, and the timeout handler handles the scenario where the effect exceeds
-the specified duration.
+**Details**
 
-`timeoutTo` can be used to customize the result of an effect,
-particularly when you need to handle success and timeouts in distinct ways,
-such as using the `Either` data type to distinguish between successful
-results and timeouts.
+This function allows you to define distinct outcomes for an effect depending
+on whether it completes within a specified time frame or exceeds the timeout
+duration. You can provide:
+
+- `onSuccess`: A handler for processing the result of the effect if it
+  completes successfully within the time limit.
+- `onTimeout`: A handler for generating a result when the effect times out.
+- `duration`: The maximum allowed time for the effect to complete.
+
+**When to Use**
+
+Unlike {@link timeout}, which raises an exception for timeouts, this function
+gives you full control over the behavior for both success and timeout
+scenarios. It is particularly useful when you want to encapsulate timeouts
+and successes into a specific data structure, like an `Either` type, to
+represent these outcomes in a meaningful way.
 
 To import and use `timeoutTo` from the "Effect" module:
 
@@ -44,7 +49,7 @@ const program = task.pipe(
   })
 )
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // Start processing...
 // {

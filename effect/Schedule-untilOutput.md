@@ -1,7 +1,16 @@
 # untilOutput
 
-Returns a new schedule that continues until the specified predicate on the
-output evaluates to true.
+Returns a new schedule that stops execution when the given predicate on the
+output evaluates to `true`.
+
+**Details**
+
+This function modifies an existing schedule so that it only continues
+executing while the given predicate returns false for its output values. Once
+the predicate evaluates to `true`, execution stops.
+
+The output of the resulting schedule remains the same, but its duration is
+now constrained by a stopping condition based on its own output.
 
 To import and use `untilOutput` from the "Schedule" module:
 

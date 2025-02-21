@@ -2,6 +2,13 @@
 
 Returns an effect which succeeds with `None`.
 
+**When to Use**
+
+Use this function when you need to represent the absence of a value in your
+code, especially when working with optional data. This can be helpful when
+you want to indicate that no result is available without throwing an error or
+performing additional logic.
+
 To import and use `succeedNone` from the "Effect" module:
 
 ```ts

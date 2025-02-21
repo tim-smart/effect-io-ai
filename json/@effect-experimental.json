@@ -979,6 +979,1520 @@
     "signature": "export interface Client {\n  readonly queue: Mailbox.ReadonlyMailbox<Domain.Request.WithoutPing>\n  readonly request: (_: Domain.Response.WithoutPong) => Effect.Effect<void>\n}"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isEvent",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "guards",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Event",
+    "description": "Represents an event in an EventLog.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Event<\n  out Tag extends string,\n  in out Payload extends Schema.Schema.Any = typeof Schema.Void,\n  in out Success extends Schema.Schema.Any = typeof Schema.Void,\n  in out Error extends Schema.Schema.All = typeof Schema.Never\n> {\n  readonly [TypeId]: TypeId\n  readonly tag: Tag\n  readonly primaryKey: (payload: Schema.Schema.Type<Payload>) => string\n  readonly payload: Payload\n  readonly payloadMsgPack: MsgPack.schema<Payload>\n  readonly success: Success\n  readonly error: Error\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventHandler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EventHandler<in out Tag extends string> {\n  readonly _: unique symbol\n  readonly tag: Tag\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Event",
+      "path": [
+        "src",
+        "Event.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventGroup",
+      "path": [
+        "src",
+        "EventGroup.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export declare const TypeId: typeof TypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventGroup",
+      "path": [
+        "src",
+        "EventGroup.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "empty",
+    "description": "An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to\nrepresent a portion of your domain.\n\nThe events can be implemented later using the `EventLog.group` api.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const empty: EventGroup<never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventGroup",
+      "path": [
+        "src",
+        "EventGroup.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isEventGroup",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "guards",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EventGroup",
+      "path": [
+        "src",
+        "EventGroup.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventGroup",
+    "description": "An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to\nrepresent a portion of your domain.\n\nThe events can be implemented later using the `EventLogBuilder.group` api.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EventGroup<\n  out Events extends Event.Any = never\n> extends Pipeable {\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n  readonly events: Record.ReadonlyRecord<string, Events>\n\n  /**\n   * Add an `Event` to the `EventGroup`.\n   */\n  add<\n    Tag extends string,\n    Payload extends Schema.Schema.Any = typeof Schema.Void,\n    Success extends Schema.Schema.Any = typeof Schema.Void,\n    Error extends Schema.Schema.All = typeof Schema.Never\n  >(options: {\n    readonly tag: Tag\n    readonly primaryKey: (payload: Schema.Schema.Type<Payload>) => string\n    readonly payload?: Payload\n    readonly success?: Success\n    readonly error?: Error\n  }): EventGroup<Events | Event<Tag, Payload, Success, Error>>\n\n  /**\n   * Add an error schema to all the events in the `EventGroup`.\n   */\n  addError<Error extends Schema.Schema.Any>(error: Error): EventGroup<Event.AddError<Events, Error>>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventGroup",
+      "path": [
+        "src",
+        "EventGroup.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "export type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Entry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": "export declare class Entry"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventJournal",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class EventJournal"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventJournalError",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare class EventJournalError"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RemoteEntry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": "export declare class RemoteEntry"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export declare const ErrorTypeId: typeof ErrorTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RemoteIdTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "remote",
+    "signature": "export declare const RemoteIdTypeId: typeof RemoteIdTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RemoteId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "remote",
+    "signature": "export declare const RemoteId: Schema.brand<Schema.Schema<Uint8Array, Uint8Array, never>, typeof RemoteIdTypeId>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EntryIdTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": "export declare const EntryIdTypeId: typeof EntryIdTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EntryId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": "export declare const EntryId: Schema.brand<Schema.Schema<Uint8Array, Uint8Array, never>, typeof EntryIdTypeId>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "memory",
+    "signature": "export declare const makeMemory: Effect.Effect<{ readonly entries: Effect.Effect<ReadonlyArray<Entry>, EventJournalError>; readonly write: <A, E, R>(options: { readonly event: string; readonly primaryKey: string; readonly payload: Uint8Array; readonly effect: (entry: Entry) => Effect.Effect<A, E, R>; }) => Effect.Effect<A, EventJournalError | E, R>; readonly writeFromRemote: (options: { readonly remoteId: RemoteId; readonly entries: ReadonlyArray<RemoteEntry>; readonly compact?: ((uncommitted: ReadonlyArray<RemoteEntry>) => Effect.Effect<ReadonlyArray<[compacted: ReadonlyArray<Entry>, remoteEntries: ReadonlyArray<RemoteEntry>]>, EventJournalError>) | undefined; readonly effect: (options: { readonly entry: Entry; readonly conflicts: ReadonlyArray<Entry>; }) => Effect.Effect<void, EventJournalError>; }) => Effect.Effect<void, EventJournalError>; readonly withRemoteUncommited: <A, E, R>(remoteId: RemoteId, f: (entries: ReadonlyArray<Entry>) => Effect.Effect<A, E, R>) => Effect.Effect<A, EventJournalError | E, R>; readonly nextRemoteSequence: (remoteId: RemoteId) => Effect.Effect<number, EventJournalError>; readonly changes: Effect.Effect<Queue.Dequeue<Entry>, never, Scope>; readonly destroy: Effect.Effect<void, EventJournalError>; }, never, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "memory",
+    "signature": "export declare const layerMemory: Layer.Layer<EventJournal, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeRemoteId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "remote",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeEntryId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "entryIdMillis",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeIndexedDb",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "indexed db",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerIndexedDb",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "indexed db",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EntryId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "entry",
+    "signature": "export type EntryId = typeof EntryId.Type"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "export type ErrorTypeId = typeof ErrorTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventJournal",
+      "path": [
+        "src",
+        "EventJournal.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RemoteId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "remote",
+    "signature": "export type RemoteId = typeof RemoteId.Type"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventLog",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class EventLog"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Identity",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class Identity"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Registry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare class Registry"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SchemaTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export declare const SchemaTypeId: typeof SchemaTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "HandlersTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": "export declare const HandlersTypeId: typeof HandlersTypeId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerEventLog",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "export declare const layerEventLog: Layer.Layer<EventLog, never, Identity | EventJournal>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "isEventLogSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "group",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "groupCompaction",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "compaction",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "groupReactivity",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactivity",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "client",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export interface EventLogSchema<Groups extends EventGroup.Any> {\n  new(_: never): {}\n  readonly [SchemaTypeId]: SchemaTypeId\n  readonly groups: ReadonlyArray<Groups>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Handlers",
+    "description": "Represents a handled `EventGroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": "export interface Handlers<\n  R,\n  Events extends Event.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Events>\n  }\n  readonly group: EventGroup.AnyWithProps\n  readonly handlers: Record.ReadonlyRecord<string, Handlers.Item<R>>\n  readonly context: Context.Context<any>\n\n  /**\n   * Add the implementation for an `Event` to a `Handlers` group.\n   */\n  handle<Tag extends Events[\"tag\"], R1>(\n    name: Tag,\n    handler: (\n      options: {\n        readonly payload: Event.PayloadWithTag<Events, Tag>\n        readonly entry: Entry\n        readonly conflicts: Array<{\n          readonly entry: Entry\n          readonly payload: Event.PayloadWithTag<Events, Tag>\n        }>\n      }\n    ) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>\n  ): Handlers<\n    R | R1,\n    Event.ExcludeTag<Events, Tag>\n  >\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "HandlersTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": "export type HandlersTypeId = typeof HandlersTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EventLog",
+      "path": [
+        "src",
+        "EventLog.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "SchemaTypeId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "export type SchemaTypeId = typeof SchemaTypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogEncryption",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "encrytion",
+    "signature": "export declare class EventLogEncryption"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EncryptedEntry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare const EncryptedEntry: Schema.Struct<{ entryId: Schema.brand<Schema.Schema<Uint8Array, Uint8Array, never>, typeof EntryIdTypeId>; encryptedEntry: Schema.Schema<Uint8Array, Uint8Array, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EncryptedRemoteEntry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare const EncryptedRemoteEntry: Schema.Struct<{ sequence: typeof Schema.Number; iv: Schema.Schema<Uint8Array, Uint8Array, never>; entryId: Schema.brand<Schema.Schema<Uint8Array, Uint8Array, never>, typeof EntryIdTypeId>; encryptedEntry: Schema.Schema<Uint8Array, Uint8Array, never>; }>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerSubtle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "encrytion",
+    "signature": "export declare const layerSubtle: Layer.Layer<EventLogEncryption, never, never>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeEncryptionSubtle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "encrytion",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EventLogEncryption",
+      "path": [
+        "src",
+        "EventLogEncryption.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EncryptedRemoteEntry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EncryptedRemoteEntry extends Schema.Schema.Type<typeof EncryptedRemoteEntry> {}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Ack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class Ack"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Changes",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class Changes"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ChunkedMessage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class ChunkedMessage"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Hello",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class Hello"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Ping",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class Ping"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Pong",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class Pong"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RemoteAdditions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "change",
+    "signature": "export declare class RemoteAdditions"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "RequestChanges",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class RequestChanges"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "StopChanges",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class StopChanges"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "WriteEntries",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare class WriteEntries"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ProtocolRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const ProtocolRequest: Schema.Union<[typeof WriteEntries, typeof RequestChanges, typeof StopChanges, typeof ChunkedMessage, typeof Ping]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ProtocolRequestMsgPack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const ProtocolRequestMsgPack: MsgPack.schema<Schema.Union<[typeof WriteEntries, typeof RequestChanges, typeof StopChanges, typeof ChunkedMessage, typeof Ping]>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "decodeRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const decodeRequest: (i: Uint8Array, overrideOptions?: ParseOptions) => WriteEntries | RequestChanges | StopChanges | ChunkedMessage | Ping"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "encodeRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const encodeRequest: (a: WriteEntries | RequestChanges | StopChanges | ChunkedMessage | Ping, overrideOptions?: ParseOptions) => Uint8Array"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ProtocolResponse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const ProtocolResponse: Schema.Union<[typeof Hello, typeof Ack, typeof Changes, typeof ChunkedMessage, typeof Pong]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "ProtocolResponseMsgPack",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const ProtocolResponseMsgPack: MsgPack.schema<Schema.Union<[typeof Hello, typeof Ack, typeof Changes, typeof ChunkedMessage, typeof Pong]>>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "decodeResponse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const decodeResponse: (i: Uint8Array, overrideOptions?: ParseOptions) => ChunkedMessage | Hello | Ack | Changes | Pong"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "encodeResponse",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "protocol",
+    "signature": "export declare const encodeResponse: (a: ChunkedMessage | Hello | Ack | Changes | Pong, overrideOptions?: ParseOptions) => Uint8Array"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "fromSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "construtors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "fromWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "construtors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerWebSocketBrowser",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EventLogRemote",
+      "path": [
+        "src",
+        "EventLogRemote.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogRemote",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EventLogRemote {\n  readonly id: RemoteId\n  readonly changes: (\n    identity: typeof Identity.Service,\n    startSequence: number\n  ) => Effect.Effect<Mailbox.ReadonlyMailbox<RemoteEntry>, never, Scope.Scope>\n  readonly write: (identity: typeof Identity.Service, entries: ReadonlyArray<Entry>) => Effect.Effect<void>\n}"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Node",
+      "path": [
+        "src",
+        "EventLogRemote",
+        "Node.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerWebSocket",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "PersistedEntry",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "storage",
+    "signature": "export declare class PersistedEntry"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "Storage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "storage",
+    "signature": "export declare class Storage"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeHandler",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export declare const makeHandler: Effect.Effect<(socket: Socket.Socket) => Effect.Effect<void, Socket.SocketError, Scope.Scope>, never, Storage>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeHandlerHttp",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "websockets",
+    "signature": "export declare const makeHandlerHttp: Effect.Effect<Effect.Effect<HttpServerResponse.HttpServerResponse, Socket.SocketError | HttpServerError.RequestError, Scope.Scope | HttpServerRequest.HttpServerRequest>, never, Storage>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "makeStorageMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "storage",
+    "signature": "export declare const makeStorageMemory: Effect.Effect<{ readonly getId: Effect.Effect<RemoteId>; readonly write: (publicKey: string, entries: ReadonlyArray<PersistedEntry>) => Effect.Effect<ReadonlyArray<EncryptedRemoteEntry>>; readonly entries: (publicKey: string, startSequence: number) => Effect.Effect<ReadonlyArray<EncryptedRemoteEntry>>; readonly changes: (publicKey: string, startSequence: number) => Effect.Effect<Mailbox.ReadonlyMailbox<EncryptedRemoteEntry>, never, Scope.Scope>; }, never, Scope.Scope>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EventLogServer",
+      "path": [
+        "src",
+        "EventLogServer.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "layerStorageMemory",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "storage",
+    "signature": "export declare const layerStorageMemory: Layer.Layer<Storage, never, never>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Cloudflare",
+      "path": [
+        "src",
+        "EventLogServer",
+        "Cloudflare.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogDurableObject",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "DurableObject",
+    "signature": "export declare class EventLogDurableObject { constructor(options: {\n    readonly ctx: DurableObjectState\n    readonly env: unknown\n    readonly storageLayer: Layer.Layer<EventLogServer.Storage>\n  }) }"
+  },
+  {
     "_tag": "Export",
     "module": {
       "name": "index",
@@ -1013,6 +2527,132 @@
     "since": "1.0.0",
     "category": "exports",
     "signature": "export * as DevTools from \"./DevTools.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./Event.js\"",
+    "description": "Re-exports all named exports from the \"./Event.js\" module as `Event`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Event from \"./Event.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventGroup.js\"",
+    "description": "Re-exports all named exports from the \"./EventGroup.js\" module as `EventGroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventGroup from \"./EventGroup.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventJournal.js\"",
+    "description": "Re-exports all named exports from the \"./EventJournal.js\" module as `EventJournal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventJournal from \"./EventJournal.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventLog.js\"",
+    "description": "Re-exports all named exports from the \"./EventLog.js\" module as `EventLog`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventLog from \"./EventLog.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventLogEncryption.js\"",
+    "description": "Re-exports all named exports from the \"./EventLogEncryption.js\" module as `EventLogEncryption`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventLogEncryption from \"./EventLogEncryption.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventLogRemote.js\"",
+    "description": "Re-exports all named exports from the \"./EventLogRemote.js\" module as `EventLogRemote`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventLogRemote from \"./EventLogRemote.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "From \"./EventLogServer.js\"",
+    "description": "Re-exports all named exports from the \"./EventLogServer.js\" module as `EventLogServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as EventLogServer from \"./EventLogServer.js\""
   },
   {
     "_tag": "Export",
@@ -2264,6 +3904,42 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MsgPack",
+      "path": [
+        "src",
+        "MsgPack.ts"
+      ]
+    },
+    "project": "@effect/experimental",
+    "name": "schema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface schema<S extends Schema.Schema.Any> extends Schema.transformOrFail<Schema.Schema<Uint8Array>, S> {}"
   },
   {
     "_tag": "Class",

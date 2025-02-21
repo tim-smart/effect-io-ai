@@ -1,7 +1,13 @@
 # addDelayEffect
 
-Returns a new schedule with the given effectfully computed delay added to
-every interval defined by this schedule.
+Adds an effectfully computed delay to every interval in a schedule.
+
+**Details**
+
+This function modifies a given schedule by applying an additional delay to
+each interval, where the delay is determined by an effectful function. The
+function takes the schedule’s output and returns an effect that produces a
+delay duration.
 
 To import and use `addDelayEffect` from the "Schedule" module:
 

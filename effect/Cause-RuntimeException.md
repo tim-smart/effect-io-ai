@@ -1,6 +1,11 @@
 # RuntimeException
 
-Represents a generic checked exception which occurs at runtime.
+An error representing a runtime error.
+
+**Details**
+
+This interface is used for errors that occur at runtime but are still
+considered recoverable or typed.
 
 To import and use `RuntimeException` from the "Cause" module:
 

@@ -1,7 +1,12 @@
 # interruptOption
 
-Returns the `FiberId` associated with the first `Interrupt` in the specified
-cause, if one exists.
+Retrieves the first `Interrupt` in a `Cause`, if present.
+
+**Details**
+
+This function returns an `Option` with the first fiber interruption
+discovered. This is particularly useful for concurrency analysis or debugging
+cancellations.
 
 To import and use `interruptOption` from the "Cause" module:
 

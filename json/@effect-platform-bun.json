@@ -196,7 +196,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient<HttpClientError, Scope.Scope>, HttpServerError.ServeError, never>"
+    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>"
   },
   {
     "_tag": "Constant",
@@ -575,6 +575,24 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunWorkerRunner",
+      "path": [
+        "src",
+        "BunWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-bun",
+    "name": "launch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>"
   },
   {
     "_tag": "Export",

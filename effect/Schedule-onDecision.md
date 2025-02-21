@@ -1,8 +1,15 @@
 # onDecision
 
-Returns a new schedule that applies the current one but runs the specified
-effect for every decision of this schedule. This can be used to create
-schedules that log failures, decisions, or computed values.
+Returns a new schedule that executes an effect every time the schedule makes
+a decision.
+
+**Details**
+
+This function enhances an existing schedule by running an effectful function
+`f` whenever a scheduling decision is made. The function receives the current
+schedule output (`out`) and the decision (`ScheduleDecision`), allowing
+additional logic to be executed, such as logging, monitoring, or side
+effects.
 
 To import and use `onDecision` from the "Schedule" module:
 

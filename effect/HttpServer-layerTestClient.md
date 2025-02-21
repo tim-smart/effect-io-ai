@@ -13,9 +13,5 @@ HttpServer.layerTestClient
 **Signature**
 
 ```ts
-export declare const layerTestClient: Layer.Layer<
-  Client.HttpClient<HttpClientError, Scope.Scope>,
-  never,
-  HttpServer | Client.HttpClient<HttpClientError, Scope.Scope>
->
+export declare const layerTestClient: Layer.Layer<Client.HttpClient, never, HttpServer | Client.HttpClient>
 ```

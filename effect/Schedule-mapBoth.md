@@ -1,6 +1,13 @@
 # mapBoth
 
-Returns a new schedule that maps both the input and output.
+Transforms both the input and output of a schedule.
+
+**Details**
+
+This function modifies an existing schedule by applying a transformation to
+both its input values and its output values. The provided transformation
+functions `onInput` and `onOutput` allow you to map the schedule to work with
+a different input type while modifying its outputs as well.
 
 To import and use `mapBoth` from the "Schedule" module:
 

@@ -1,6 +1,16 @@
 # getOrUndefined
 
-Returns the value of the `Option` if it is a `Some`, otherwise returns `undefined`.
+Returns the value contained in the `Option` if it is `Some`; otherwise,
+returns `undefined`.
+
+**Details**
+
+This function provides a way to extract the value of an `Option` while
+falling back to `undefined` if the `Option` is `None`.
+
+It is particularly useful in scenarios where `undefined` is an acceptable
+placeholder for the absence of a value, such as when interacting with APIs or
+systems that use `undefined` as a default for missing values.
 
 To import and use `getOrUndefined` from the "Option" module:
 
@@ -15,8 +25,11 @@ Option.getOrUndefined
 ```ts
 import { Option } from "effect"
 
-assert.deepStrictEqual(Option.getOrUndefined(Option.some(1)), 1)
-assert.deepStrictEqual(Option.getOrUndefined(Option.none()), undefined)
+console.log(Option.getOrUndefined(Option.some(1)))
+// Output: 1
+
+console.log(Option.getOrUndefined(Option.none()))
+// Output: undefined
 ```
 
 **Signature**

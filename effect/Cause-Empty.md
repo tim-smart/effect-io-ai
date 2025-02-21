@@ -1,6 +1,6 @@
 # Empty
 
-The `Empty` cause represents a lack of errors.
+Represents a lack of errors within a `Cause`.
 
 To import and use `Empty` from the "Cause" module:
 

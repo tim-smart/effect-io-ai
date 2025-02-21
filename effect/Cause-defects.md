@@ -1,6 +1,12 @@
 # defects
 
-Returns a `List` of all unrecoverable defects in the specified cause.
+Extracts all unrecoverable defects from a `Cause`.
+
+**Details**
+
+This function returns a chunk of values representing unexpected errors
+(`Die`). It's handy for capturing or logging unanticipated failures that
+might need special handling, such as bug reports.
 
 To import and use `defects` from the "Cause" module:
 

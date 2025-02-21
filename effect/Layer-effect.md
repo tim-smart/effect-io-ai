@@ -14,12 +14,7 @@ Layer.effect
 
 ```ts
 export declare const effect: {
-  <T extends Context.Tag<any, any>>(
-    tag: T
-  ): <E, R>(effect: Effect.Effect<Context.Tag.Service<T>, E, R>) => Layer<Context.Tag.Identifier<T>, E, R>
-  <T extends Context.Tag<any, any>, E, R>(
-    tag: T,
-    effect: Effect.Effect<Context.Tag.Service<T>, E, R>
-  ): Layer<Context.Tag.Identifier<T>, E, R>
+  <I, S>(tag: Context.Tag<I, S>): <E, R>(effect: Effect.Effect<Types.NoInfer<S>, E, R>) => Layer<I, E, R>
+  <I, S, E, R>(tag: Context.Tag<I, S>, effect: Effect.Effect<Types.NoInfer<S>, E, R>): Layer<I, E, R>
 }
 ```

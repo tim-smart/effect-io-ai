@@ -1,9 +1,23 @@
 # orElseEither
 
-Similar to `orElse`, but instead of returning a simple union, it returns an `Either` object,
-which contains information about which of the two `Option`s has been chosen.
+Similar to {@link orElse}, but returns an `Either` wrapped in an `Option` to
+indicate the source of the value.
 
-This is useful when it's important to know whether the value was retrieved from the first `Option` or the second option.
+**Details**
+
+This function allows you to provide a fallback `Option` in case the current
+`Option` (`self`) is `None`. However, unlike `orElse`, it returns the value
+wrapped in an `Either` object, providing additional information about where
+the value came from:
+
+- If the value is from the fallback `Option` (`that`), it is wrapped in an
+  `Either.right`.
+- If the value is from the original `Option` (`self`), it is wrapped in an
+  `Either.left`.
+
+This is especially useful when you need to differentiate between values
+originating from the primary `Option` and those coming from the fallback,
+while still maintaining the `Option`-style handling.
 
 To import and use `orElseEither` from the "Option" module:
 

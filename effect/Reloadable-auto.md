@@ -15,11 +15,8 @@ Reloadable.auto
 **Signature**
 
 ```ts
-export declare const auto: <Out extends Context.Tag<any, any>, E, In, R>(
-  tag: Out,
-  options: {
-    readonly layer: Layer.Layer<Context.Tag.Identifier<Out>, E, In>
-    readonly schedule: Schedule.Schedule<unknown, unknown, R>
-  }
-) => Layer.Layer<Reloadable<Context.Tag.Identifier<Out>>, E, In | R>
+export declare const auto: <I, S, E, In, R>(
+  tag: Context.Tag<I, S>,
+  options: { readonly layer: Layer.Layer<I, E, In>; readonly schedule: Schedule.Schedule<unknown, unknown, R> }
+) => Layer.Layer<Reloadable<I>, E, R | In>
 ```

@@ -23,7 +23,7 @@ DateTime.unsafeMake(0).pipe(DateTime.subtractDuration("5 minutes"))
 
 ```ts
 export declare const subtractDuration: {
-  (duration: Duration.DurationInput): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
-  <A extends DateTime>(self: A, duration: Duration.DurationInput): DateTime.PreserveZone<A>
+  (duration: Duration.DurationInput): <A extends DateTime>(self: A) => A
+  <A extends DateTime>(self: A, duration: Duration.DurationInput): A
 }
 ```

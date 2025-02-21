@@ -17,19 +17,16 @@ Option.filter
 ```ts
 import { Option } from "effect"
 
-// predicate
-const isEven = (n: number) => n % 2 === 0
+const removeEmptyString = (input: Option.Option<string>) => Option.filter(input, (value) => value !== "")
 
-assert.deepStrictEqual(Option.filter(Option.none(), isEven), Option.none())
-assert.deepStrictEqual(Option.filter(Option.some(3), isEven), Option.none())
-assert.deepStrictEqual(Option.filter(Option.some(2), isEven), Option.some(2))
+console.log(removeEmptyString(Option.none()))
+// Output: { _id: 'Option', _tag: 'None' }
 
-// refinement
-const isNumber = (v: unknown): v is number => typeof v === "number"
+console.log(removeEmptyString(Option.some("")))
+// Output: { _id: 'Option', _tag: 'None' }
 
-assert.deepStrictEqual(Option.filter(Option.none(), isNumber), Option.none())
-assert.deepStrictEqual(Option.filter(Option.some("hello"), isNumber), Option.none())
-assert.deepStrictEqual(Option.filter(Option.some(2), isNumber), Option.some(2))
+console.log(removeEmptyString(Option.some("a")))
+// Output: { _id: 'Option', _tag: 'Some', value: 'a' }
 ```
 
 **Signature**

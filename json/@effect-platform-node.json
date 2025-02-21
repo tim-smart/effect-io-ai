@@ -538,7 +538,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: Effect.Effect<Client.HttpClient<HttpClientError, Scope.Scope>, never, HttpAgent>"
+    "signature": "export declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>"
   },
   {
     "_tag": "Constant",
@@ -556,7 +556,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<Client.HttpClient<HttpClientError, Scope.Scope>, never, never>"
+    "signature": "export declare const layer: Layer.Layer<Client.HttpClient, never, never>"
   },
   {
     "_tag": "Constant",
@@ -574,7 +574,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerWithoutAgent: Layer.Layer<Client.HttpClient<HttpClientError, Scope.Scope>, never, HttpAgent>"
+    "signature": "export declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>"
   },
   {
     "_tag": "Constant",
@@ -682,7 +682,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerUndici: Layer.Layer<Client.HttpClient<HttpClientError, Scope.Scope>, never, never>"
+    "signature": "export declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>"
   },
   {
     "_tag": "Constant",
@@ -700,7 +700,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient<HttpClientError, Scope.Scope>, never, Dispatcher>"
+    "signature": "export declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>"
   },
   {
     "_tag": "Interface",
@@ -900,7 +900,7 @@
     ],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient<HttpClientError, Scope.Scope>, ServeError, never>"
+    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>"
   },
   {
     "_tag": "Constant",
@@ -1261,6 +1261,24 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeWorkerRunner",
+      "path": [
+        "src",
+        "NodeWorkerRunner.ts"
+      ]
+    },
+    "project": "@effect/platform-node",
+    "name": "launch",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>"
   },
   {
     "_tag": "Export",

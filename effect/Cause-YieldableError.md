@@ -1,6 +1,6 @@
 # YieldableError
 
-Represents a generic checked exception which occurs at runtime.
+Represents an error object that can be yielded in `Effect.gen`.
 
 To import and use `YieldableError` from the "Cause" module:
 
@@ -8,10 +8,4 @@ To import and use `YieldableError` from the "Cause" module:
 import * as Cause from "effect/Cause"
 // Can be accessed like this
 Cause.YieldableError
-```
-
-**Signature**
-
-```ts
-export declare const YieldableError: new (message?: string | undefined) => YieldableError
 ```

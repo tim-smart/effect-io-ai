@@ -14,6 +14,7 @@ Cron.make
 
 ```ts
 export declare const make: (values: {
+  readonly seconds?: Iterable<number> | undefined
   readonly minutes: Iterable<number>
   readonly hours: Iterable<number>
   readonly days: Iterable<number>

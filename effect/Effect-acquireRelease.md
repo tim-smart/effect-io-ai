@@ -1,16 +1,38 @@
 # acquireRelease
 
-This function constructs a scoped resource from an `acquire` and `release`
-`Effect` value.
+Creates a scoped resource using an `acquire` and `release` effect.
 
-If the `acquire` `Effect` value successfully completes execution, then the
-`release` `Effect` value will be added to the finalizers associated with the
-scope of this `Effect` value, and it is guaranteed to be run when the scope
-is closed.
+**Details**
 
-The `acquire` and `release` `Effect` values will be run uninterruptibly.
-Additionally, the `release` `Effect` value may depend on the `Exit` value
-specified when the scope is closed.
+This function helps manage resources by combining two `Effect` values: one
+for acquiring the resource and one for releasing it.
+
+`acquireRelease` does the following:
+
+1. Ensures that the effect that acquires the resource will not be
+   interrupted. Note that acquisition may still fail due to internal
+   reasons (such as an uncaught exception).
+2. Ensures that the `release` effect will not be interrupted, and will be
+   executed as long as the acquisition effect successfully acquires the
+   resource.
+
+If the `acquire` function succeeds, the `release` function is added to the
+list of finalizers for the scope. This ensures that the release will happen
+automatically when the scope is closed.
+
+Both `acquire` and `release` run uninterruptibly, meaning they cannot be
+interrupted while they are executing.
+
+Additionally, the `release` function can be influenced by the exit value when
+the scope closes, allowing for custom handling of how the resource is
+released based on the execution outcome.
+
+**When to Use**
+
+This function is used to ensure that an effect that represents the
+acquisition of a resource (for example, opening a file, launching a thread,
+etc.) will not be interrupted, and that the resource will always be released
+when the `Effect` completes execution.
 
 To import and use `acquireRelease` from the "Effect" module:
 
@@ -18,6 +40,49 @@ To import and use `acquireRelease` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.acquireRelease
+```
+
+**Example**
+
+```ts
+// Title: Defining a Simple Resource
+import { Effect } from "effect"
+
+// Define an interface for a resource
+interface MyResource {
+  readonly contents: string
+  readonly close: () => Promise<void>
+}
+
+// Simulate resource acquisition
+const getMyResource = (): Promise<MyResource> =>
+  Promise.resolve({
+    contents: "lorem ipsum",
+    close: () =>
+      new Promise((resolve) => {
+        console.log("Resource released")
+        resolve()
+      })
+  })
+
+// Define how the resource is acquired
+const acquire = Effect.tryPromise({
+  try: () =>
+    getMyResource().then((res) => {
+      console.log("Resource acquired")
+      return res
+    }),
+  catch: () => new Error("getMyResourceError")
+})
+
+// Define how the resource is released
+const release = (res: MyResource) => Effect.promise(() => res.close())
+
+// Create the resource management workflow
+//
+//      ┌─── Effect<MyResource, Error, Scope>
+//      ▼
+const resource = Effect.acquireRelease(acquire, release)
 ```
 
 **Signature**

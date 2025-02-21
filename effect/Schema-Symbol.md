@@ -1,6 +1,6 @@
 # Symbol
 
-This schema transforms a `string` into a `symbol`.
+Converts a string key into a globally shared symbol.
 
 To import and use `Symbol` from the "Schema" module:
 

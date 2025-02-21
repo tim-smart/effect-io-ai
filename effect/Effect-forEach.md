@@ -4,8 +4,8 @@ Executes an effectful operation for each element in an `Iterable`.
 
 **Details**
 
-The `forEach` function applies a provided operation to each element in the
-iterable, producing a new effect that returns an array of results.
+This function applies a provided operation to each element in the iterable,
+producing a new effect that returns an array of results.
 
 If any effect fails, the iteration stops immediately (short-circuiting), and
 the error is propagated.
@@ -38,7 +38,7 @@ const result = Effect.forEach([1, 2, 3, 4, 5], (n, index) =>
   Console.log(`Currently at index ${index}`).pipe(Effect.as(n * 2))
 )
 
-Effect.runPromise(result).then(console.log)
+// Effect.runPromise(result).then(console.log)
 // Output:
 // Currently at index 0
 // Currently at index 1
@@ -61,7 +61,7 @@ const result = Effect.forEach(
   { discard: true }
 )
 
-Effect.runPromise(result).then(console.log)
+// Effect.runPromise(result).then(console.log)
 // Output:
 // Currently at index 0
 // Currently at index 1

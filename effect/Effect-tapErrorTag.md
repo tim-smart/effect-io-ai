@@ -1,12 +1,17 @@
 # tapErrorTag
 
-The `tapErrorTag` function allows you to inspect errors that match a
-specific tag, helping you handle different error types more precisely.
+Inspect errors matching a specific tag without altering the original effect.
 
-This function is useful when you want to target and act on specific error
-types within an effect. You can use it to handle errors more granularly based
-on their tags (e.g., inspecting only `NetworkError` or `ValidationError`),
-without modifying the error or the overall result of the effect.
+**Details**
+
+This function allows you to inspect and handle specific error types based on
+their `_tag` property. It is particularly useful in applications where errors
+are modeled with tagged types (e.g., union types with discriminating tags).
+By targeting errors with a specific `_tag`, you can log or perform actions on
+them while leaving the error channel and overall effect unchanged.
+
+If the error doesn't match the specified tag, this function does nothing, and
+the effect proceeds as usual.
 
 To import and use `tapErrorTag` from the "Effect" module:
 
@@ -37,7 +42,7 @@ const task: Effect.Effect<number, NetworkError | ValidationError> = Effect.fail(
 // Use tapErrorTag to inspect only NetworkError types and log the status code
 const tapping = Effect.tapErrorTag(task, "NetworkError", (error) => Console.log(`expected error: ${error.statusCode}`))
 
-Effect.runFork(tapping)
+// Effect.runFork(tapping)
 // Output:
 // expected error: 504
 ```

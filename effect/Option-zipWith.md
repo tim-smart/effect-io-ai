@@ -1,6 +1,17 @@
 # zipWith
 
-Zips two `Option` values together using a provided function, returning a new `Option` of the result.
+Combines two `Option` values into a new `Option` by applying a provided
+function to their values.
+
+**Details**
+
+This function takes two `Option` values (`self` and `that`) and a combining
+function `f`. If both `Option` values are `Some`, the function `f` is applied
+to their values, and the result is wrapped in a new `Some`. If either
+`Option` is `None`, the result is `None`.
+
+This utility is useful for combining two optional computations into a single
+result while maintaining type safety and avoiding explicit checks for `None`.
 
 To import and use `zipWith` from the "Option" module:
 
@@ -15,16 +26,18 @@ Option.zipWith
 ```ts
 import { Option } from "effect"
 
-type Complex = [real: number, imaginary: number]
+const maybeName: Option.Option<string> = Option.some("John")
+const maybeAge: Option.Option<number> = Option.some(25)
 
-const complex = (real: number, imaginary: number): Complex => [real, imaginary]
+// Combine the name and age into a person object
+const person = Option.zipWith(maybeName, maybeAge, (name, age) => ({
+  name: name.toUpperCase(),
+  age
+}))
 
-assert.deepStrictEqual(Option.zipWith(Option.none(), Option.none(), complex), Option.none())
-assert.deepStrictEqual(Option.zipWith(Option.some(1), Option.none(), complex), Option.none())
-assert.deepStrictEqual(Option.zipWith(Option.none(), Option.some(1), complex), Option.none())
-assert.deepStrictEqual(Option.zipWith(Option.some(1), Option.some(2), complex), Option.some([1, 2]))
-
-assert.deepStrictEqual(Option.zipWith(Option.some(1), complex)(Option.some(2)), Option.some([2, 1]))
+console.log(person)
+// Output:
+// { _id: 'Option', _tag: 'Some', value: { name: 'JOHN', age: 25 } }
 ```
 
 **Signature**

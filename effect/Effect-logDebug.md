@@ -1,10 +1,13 @@
 # logDebug
 
-Logs the specified messages at the DEBUG log level.
-DEBUG messages are not shown by default.
+Logs messages at the DEBUG log level.
 
-To view DEBUG messages, adjust the logging settings using
-`Logger.withMinimumLogLevel` and set the log level to `LogLevel.Debug`.
+**Details**
+
+This function logs messages at the DEBUG level, which is typically used for
+diagnosing application behavior during development. DEBUG messages provide
+less detailed information than TRACE logs but are still not shown by default.
+To view these logs, adjust the log level using `Logger.withMinimumLogLevel`.
 
 To import and use `logDebug` from the "Effect" module:
 

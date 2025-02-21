@@ -1,12 +1,13 @@
 # loop
 
-Repeatedly updates a state using a `step` function until a condition, defined
-by the `while` function, becomes `false`. It collects the intermediate states
-in an array and returns them as the final result. The loop executes effectful
-operations at each iteration.
+Repeatedly executes a loop with a state, collecting results or discarding
+them based on configuration.
 
-This function is similar to a `while` loop in JavaScript, with the addition
-of effectful computations:
+**Details**
+
+This function performs an effectful loop, starting with an initial state and
+iterating as long as the `while` condition evaluates to `true`, similar to a
+`while` loop in JavaScript.
 
 ```ts
 let state = initial
@@ -20,10 +21,24 @@ while (options.while(state)) {
 return result
 ```
 
+During each iteration, the `step` function updates the state, and the `body`
+effect is executed.
+
+The results of the body effect can be collected in an array or discarded
+based on the `discard` option.
+
 **Discarding Intermediate Results**
 
-If the `discard` option is set to `true`, the intermediate results are
-discarded, and the final result will be `void`.
+- If `discard` is `false` or not provided, the intermediate results are
+  collected into an array and returned as the final result.
+- If `discard` is `true`, the intermediate results are ignored, and the
+  effect returns `void`.
+
+**When to Use**
+
+This is useful for implementing loops where you need to perform effectful
+computations repeatedly, such as processing items in a list, generating
+values, or performing iterative updates.
 
 To import and use `loop` from the "Effect" module:
 
@@ -53,7 +68,7 @@ const result = Effect.loop(
   }
 )
 
-Effect.runPromise(result).then(console.log)
+// Effect.runPromise(result).then(console.log)
 // Output: [1, 2, 3, 4, 5]
 ```
 
@@ -78,7 +93,7 @@ const result = Effect.loop(
   }
 )
 
-Effect.runPromise(result).then(console.log)
+// Effect.runPromise(result).then(console.log)
 // Output:
 // Currently at state 1
 // Currently at state 2

@@ -1,7 +1,18 @@
 # onError
 
-Runs the specified effect if this effect fails, providing the error to the
-effect if it exists. The provided effect will not be interrupted.
+Ensures a cleanup effect runs whenever the calling effect fails, providing
+the failure cause to the cleanup effect.
+
+**Details**
+
+This function allows you to attach a cleanup effect that runs whenever the
+calling effect fails. The cleanup effect receives the cause of the failure,
+allowing you to perform actions such as logging, releasing resources, or
+executing additional recovery logic based on the error. The cleanup effect
+will execute even if the failure is due to interruption.
+
+Importantly, the cleanup effect itself is uninterruptible, ensuring that it
+completes regardless of external interruptions.
 
 To import and use `onError` from the "Effect" module:
 
@@ -9,6 +20,35 @@ To import and use `onError` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.onError
+```
+
+**Example**
+
+```ts
+import { Console, Effect } from "effect"
+
+// This handler logs the failure cause when the effect fails
+const handler = Effect.onError((cause) => Console.log(`Cleanup completed: ${cause}`))
+
+const success = Console.log("Task completed").pipe(Effect.as("some result"), handler)
+
+// Effect.runFork(success)
+// Output:
+// Task completed
+
+const failure = Console.log("Task failed").pipe(Effect.andThen(Effect.fail("some error")), handler)
+
+// Effect.runFork(failure)
+// Output:
+// Task failed
+// Cleanup completed: Error: some error
+
+const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.interrupt), handler)
+
+// Effect.runFork(interruption)
+// Output:
+// Task interrupted
+// Cleanup completed: All fibers interrupted without errors.
 ```
 
 **Signature**

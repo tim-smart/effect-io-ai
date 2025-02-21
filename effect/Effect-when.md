@@ -2,14 +2,18 @@
 
 Conditionally executes an effect based on a boolean condition.
 
-`when` allows you to conditionally execute an effect, similar to using an `if
-(condition)` expression, but with the added benefit of handling effects. If
-the condition is `true`, the effect is executed; otherwise, it does nothing.
+**Details**
 
-The result of the effect is wrapped in an `Option<A>` to indicate whether the
-effect was executed. If the condition is `true`, the result of the effect is
-wrapped in a `Some`. If the condition is `false`, the result is `None`,
-representing that the effect was skipped.
+This function allows you to run an effect only if a given condition evaluates
+to `true`. If the condition is `true`, the effect is executed, and its result
+is wrapped in an `Option.some`. If the condition is `false`, the effect is
+skipped, and the result is `Option.none`.
+
+**When to Use**
+
+This function is useful for scenarios where you need to dynamically decide
+whether to execute an effect based on runtime logic, while also representing
+the skipped case explicitly.
 
 To import and use `when` from the "Effect" module:
 
@@ -30,7 +34,7 @@ const validateWeightOption = (weight: number): Effect.Effect<Option.Option<numbe
   Effect.succeed(weight).pipe(Effect.when(() => weight >= 0))
 
 // Run with a valid weight
-Effect.runPromise(validateWeightOption(100)).then(console.log)
+// Effect.runPromise(validateWeightOption(100)).then(console.log)
 // Output:
 // {
 //   _id: "Option",
@@ -39,7 +43,7 @@ Effect.runPromise(validateWeightOption(100)).then(console.log)
 // }
 
 // Run with an invalid weight
-Effect.runPromise(validateWeightOption(-5)).then(console.log)
+// Effect.runPromise(validateWeightOption(-5)).then(console.log)
 // Output:
 // {
 //   _id: "Option",

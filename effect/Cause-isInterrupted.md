@@ -1,7 +1,10 @@
 # isInterrupted
 
-Returns `true` if the specified cause contains an interruption, `false`
-otherwise.
+Checks if a `Cause` contains an interruption.
+
+**Details**
+
+This function returns `true` if the `Cause` includes any fiber interruptions.
 
 To import and use `isInterrupted` from the "Cause" module:
 

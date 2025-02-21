@@ -13,5 +13,5 @@ HttpClient.filterStatusOk
 **Signature**
 
 ```ts
-export declare const filterStatusOk: <E, R>(self: HttpClient<E, R>) => HttpClient<E | Error.ResponseError, R>
+export declare const filterStatusOk: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>
 ```

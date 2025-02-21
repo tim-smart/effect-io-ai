@@ -1,7 +1,12 @@
 # dieOption
 
-Returns the defect associated with the first `Die` in this `Cause`, if one
-exists.
+Retrieves the first `Die` defect in a `Cause`, if present.
+
+**Details**
+
+This function returns an `Option` containing the first unexpected failure
+(`Die`) discovered. It's helpful for diagnosing the primary defect in a chain
+of errors.
 
 To import and use `dieOption` from the "Cause" module:
 

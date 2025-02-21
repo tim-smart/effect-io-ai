@@ -25,9 +25,9 @@ const Users = Context.GenericTag<
   }
 >("Users")
 
-Effect.gen(function* (_) {
-  const map = yield* _(FiberMap.make<string>())
-  const run = yield* _(FiberMap.runtime(map)<Users>())
+Effect.gen(function* () {
+  const map = yield* FiberMap.make<string>()
+  const run = yield* FiberMap.runtime(map)<Users>()
 
   // run some effects and add the fibers to the map
   run(

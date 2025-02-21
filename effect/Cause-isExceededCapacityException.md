@@ -1,7 +1,6 @@
 # isExceededCapacityException
 
-Returns `true` if the specified value is an `ExceededCapacityException`, `false`
-otherwise.
+Checks if a given unknown value is an `ExceededCapacityException`.
 
 To import and use `isExceededCapacityException` from the "Cause" module:
 

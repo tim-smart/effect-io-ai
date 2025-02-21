@@ -1,20 +1,28 @@
 # firstSuccessOf
 
-Runs a series of effects and returns the result of the first successful one.
-If none of the effects succeed, it fails with the error from the last effect.
+Runs a sequence of effects and returns the result of the first successful
+one.
 
-`firstSuccessOf` allows you to try multiple effects in sequence, and
-as soon as one of them succeeds, it returns that result. If all effects fail,
-it returns the error of the last effect in the list. This is useful when you
-have several potential alternatives and want to use the first one that works.
+**Details**
 
-This function is sequential, meaning that the `Effect` values in the iterable
-will be executed in sequence, and the first one that succeeds will determine
-the outcome of the resulting `Effect` value.
+This function allows you to execute a collection of effects in sequence,
+stopping at the first success. If an effect succeeds, its result is
+immediately returned, and no further effects in the sequence are executed.
+However, if all the effects fail, the function will return the error of the
+last effect.
 
-**Important**: If the collection of effects provided to
-`firstSuccessOf` is empty, it will throw an `IllegalArgumentException`
-error.
+The execution is sequential, meaning that effects are evaluated one at a time
+in the order they are provided. This ensures predictable behavior and avoids
+unnecessary computations.
+
+If the collection of effects is empty, an `IllegalArgumentException` is
+thrown, indicating that the operation is invalid without any effects to try.
+
+**When to Use**
+
+This is particularly useful when you have multiple fallback strategies or
+alternative sources to obtain a result, such as attempting multiple APIs,
+retrieving configurations, or accessing resources in a prioritized manner.
 
 To import and use `firstSuccessOf` from the "Effect" module:
 

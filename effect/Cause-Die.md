@@ -1,9 +1,12 @@
 # Die
 
-The `Die` cause represents a `Cause` which failed as a result of a defect, or
-in other words, an unexpected error.
+Represents an unexpected defect within a `Cause`.
 
-type `E`.
+**Details**
+
+This interface models a `Cause` for errors that are typically unrecoverable or
+unanticipated—like runtime exceptions or bugs. When code "dies," it indicates a
+severe failure that wasn't accounted for.
 
 To import and use `Die` from the "Cause" module:
 

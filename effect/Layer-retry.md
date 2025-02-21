@@ -15,7 +15,7 @@ Layer.retry
 ```ts
 export declare const retry: {
   <X, E, RIn2>(
-    schedule: Schedule.Schedule<X, E, RIn2>
+    schedule: Schedule.Schedule<X, NoInfer<E>, RIn2>
   ): <ROut, RIn>(self: Layer<ROut, E, RIn>) => Layer<ROut, E, RIn2 | RIn>
   <ROut, E, RIn, X, RIn2>(
     self: Layer<ROut, E, RIn>,

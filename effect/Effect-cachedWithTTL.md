@@ -1,8 +1,30 @@
 # cachedWithTTL
 
-Returns an effect that caches its result for a specified duration, known as
-the `timeToLive`. When the cache expires after the duration, the effect will
-be recomputed upon next evaluation.
+Returns an effect that caches its result for a specified `Duration`,
+known as "timeToLive" (TTL).
+
+**Details**
+
+This function is used to cache the result of an effect for a specified amount
+of time. This means that the first time the effect is evaluated, its result
+is computed and stored.
+
+If the effect is evaluated again within the specified `timeToLive`, the
+cached result will be used, avoiding recomputation.
+
+After the specified duration has passed, the cache expires, and the effect
+will be recomputed upon the next evaluation.
+
+**When to Use**
+
+Use this function when you have an effect that involves costly operations or
+computations, and you want to avoid repeating them within a short time frame.
+
+It's ideal for scenarios where the result of an effect doesn't change
+frequently and can be reused for a specified duration.
+
+By caching the result, you can improve efficiency and reduce unnecessary
+computations, especially in performance-critical applications.
 
 To import and use `cachedWithTTL` from the "Effect" module:
 
@@ -35,7 +57,7 @@ const program = Effect.gen(function* () {
   yield* cached.pipe(Effect.andThen(Console.log))
 })
 
-Effect.runFork(program)
+// Effect.runFork(program)
 // Output:
 // expensive task...
 // result 1

@@ -1,10 +1,15 @@
 # cron
 
-Cron schedule that recurs every `minute` that matches the schedule.
+Creates a schedule that recurs based on a cron expression.
 
-It triggers at zero second of the minute. Producing the timestamps of the cron window.
+**Details**
 
-NOTE: `expression` parameter is validated lazily. Must be a valid cron expression.
+This schedule automatically executes at intervals defined by a cron
+expression. It triggers at the beginning of each matched interval and
+produces timestamps representing the start and end of the cron window.
+
+The cron `expression` is validated lazily, meaning errors may only be
+detected when the schedule is executed.
 
 To import and use `cron` from the "Schedule" module:
 
@@ -17,5 +22,8 @@ Schedule.cron
 **Signature**
 
 ```ts
-export declare const cron: (expression: string | Cron.Cron) => Schedule<[number, number]>
+export declare const cron: {
+  (cron: Cron.Cron): Schedule<[number, number]>
+  (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>
+}
 ```

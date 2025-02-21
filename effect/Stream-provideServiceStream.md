@@ -15,14 +15,14 @@ Stream.provideServiceStream
 
 ```ts
 export declare const provideServiceStream: {
-  <T extends Context.Tag<any, any>, E2, R2>(
-    tag: T,
-    stream: Stream<Context.Tag.Service<T>, E2, R2>
-  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | Exclude<R, Context.Tag.Identifier<T>>>
-  <A, E, R, T extends Context.Tag<any, any>, E2, R2>(
+  <I, S, E2, R2>(
+    tag: Context.Tag<I, S>,
+    stream: Stream<NoInfer<S>, E2, R2>
+  ): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | Exclude<R, I>>
+  <A, E, R, I, S, E2, R2>(
     self: Stream<A, E, R>,
-    tag: T,
-    stream: Stream<Context.Tag.Service<T>, E2, R2>
-  ): Stream<A, E | E2, R2 | Exclude<R, Context.Tag.Identifier<T>>>
+    tag: Context.Tag<I, S>,
+    stream: Stream<NoInfer<S>, E2, R2>
+  ): Stream<A, E2 | E, R2 | Exclude<R, I>>
 }
 ```

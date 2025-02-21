@@ -24,7 +24,7 @@ DateTime.unsafeMake(0).pipe(DateTime.mapEpochMillis((millis) => millis + 10))
 
 ```ts
 export declare const mapEpochMillis: {
-  (f: (millis: number) => number): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
-  <A extends DateTime>(self: A, f: (millis: number) => number): DateTime.PreserveZone<A>
+  (f: (millis: number) => number): <A extends DateTime>(self: A) => A
+  <A extends DateTime>(self: A, f: (millis: number) => number): A
 }
 ```

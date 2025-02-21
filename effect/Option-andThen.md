@@ -1,6 +1,20 @@
 # andThen
 
-Executes a sequence of two `Option`s. The second `Option` can be dependent on the result of the first `Option`.
+Chains two `Option`s together. The second `Option` can either be a static
+value or depend on the result of the first `Option`.
+
+**Details**
+
+This function enables sequencing of two `Option` computations. If the first
+`Option` is `Some`, the second `Option` is evaluated. The second `Option` can
+either:
+
+- Be a static `Option` value.
+- Be a function that produces an `Option`, optionally based on the value of
+  the first `Option`.
+
+If the first `Option` is `None`, the function skips the evaluation of the
+second `Option` and directly returns `None`.
 
 To import and use `andThen` from the "Option" module:
 

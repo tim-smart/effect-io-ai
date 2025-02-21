@@ -47,7 +47,7 @@ const program = Effect.catchAllDefect(task, (defect) => {
 })
 
 // We get an Exit.Success because we caught all defects
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // RuntimeException defect caught: Boom!
 // {

@@ -44,9 +44,7 @@ console.log(
 
 ```ts
 export declare const pluck: {
-  <A, I, K extends keyof A & keyof I>(
-    key: K
-  ): <R>(schema: Schema<A, I, R>) => Schema<A[K], { readonly [P in K]: I[P] }, R>
-  <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], { readonly [P in K]: I[P] }, R>
+  <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => Schema<A[K], Simplify<Pick<I, K>>, R>
+  <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], Simplify<Pick<I, K>>, R>
 }
 ```

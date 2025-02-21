@@ -1,7 +1,19 @@
 # validateWith
 
-Sequentially zips this effect with the specified effect using the specified
-combiner function. Combines the causes in case both effect fail.
+Sequentially combines two effects using a specified combiner function while
+accumulating errors.
+
+**Details**
+
+This function combines two effects, `self` and `that`, into a single effect
+by applying the provided combiner function to their results. If both effects
+succeed, the combiner function is applied to their results to produce the
+final value. If either effect fails, the failures are accumulated into a
+combined `Cause`.
+
+By default, effects are executed sequentially. However, the execution mode
+can be controlled using the `options` parameter to enable concurrency,
+batching, or customized finalizer behavior.
 
 To import and use `validateWith` from the "Effect" module:
 

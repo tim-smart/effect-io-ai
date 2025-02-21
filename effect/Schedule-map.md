@@ -1,7 +1,17 @@
 # map
 
-Returns a new schedule that maps the output of this schedule through the
-specified function.
+Returns a new schedule that transforms its output using the specified
+function.
+
+**Details**
+
+This function modifies an existing schedule so that its outputs are
+transformed by the provided function `f`. The timing and recurrence behavior
+of the schedule remain unchanged, but the values it produces are mapped to
+new values.
+
+This is useful when composing schedules where you need to adjust the output
+format or apply additional processing.
 
 To import and use `map` from the "Schedule" module:
 

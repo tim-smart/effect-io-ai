@@ -2,9 +2,11 @@
 
 Discards both the success and failure values of an effect.
 
-`ignore` allows you to run an effect without caring about its result,
-whether it succeeds or fails. This is useful when you only care about the
-side effects of the effect and do not need to handle or process its outcome.
+**When to Use**
+
+`ignore` allows you to run an effect without caring about its result, whether
+it succeeds or fails. This is useful when you only care about the side
+effects of the effect and do not need to handle or process its outcome.
 
 To import and use `ignore` from the "Effect" module:
 
@@ -17,6 +19,7 @@ Effect.ignore
 **Example**
 
 ```ts
+// Title: Using Effect.ignore to Discard Values
 import { Effect } from "effect"
 
 //      ┌─── Effect<number, string, never>

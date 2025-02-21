@@ -1,7 +1,14 @@
 # windowed
 
-A schedule that divides the timeline to `interval`-long windows, and sleeps
-until the nearest window boundary every time it recurs.
+Creates a schedule that divides time into fixed `interval`-long windows,
+triggering execution at the start of each new window.
+
+**Details**
+
+This function produces a schedule that waits until the next time window
+boundary before executing. Each window spans a fixed duration specified by
+`interval`. If an action completes midway through a window, the schedule
+waits until the next full window starts before proceeding.
 
 For example, `windowed(Duration.seconds(10))` would produce a schedule as
 follows:

@@ -1,6 +1,12 @@
 # identity
 
-A schedule that always recurs, which returns inputs as outputs.
+Creates a schedule that always recurs, passing inputs directly as outputs.
+
+**Details**
+
+This schedule runs indefinitely, returning each input value as its output
+without modification. It effectively acts as a pass-through that simply
+echoes its input values at each step.
 
 To import and use `identity` from the "Schedule" module:
 

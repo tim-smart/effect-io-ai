@@ -1,7 +1,8 @@
 # mapBoth
 
-The `mapBoth` function allows you to apply transformations to both the
-error and success channels of an effect.
+Applies transformations to both the success and error channels of an effect.
+
+**Details**
 
 This function takes two map functions as arguments: one for the error channel
 and one for the success channel. You can use it when you want to modify both

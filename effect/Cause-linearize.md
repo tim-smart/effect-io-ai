@@ -1,7 +1,12 @@
 # linearize
 
-Linearizes the specified cause into a `HashSet` of parallel causes where each
-parallel cause contains a linear sequence of failures.
+Linearizes a `Cause` into a set of parallel causes, each containing a
+sequential chain of failures.
+
+**Details**
+
+This function reorganizes the cause structure so that you can analyze each
+parallel branch separately, even if they have multiple sequential errors.
 
 To import and use `linearize` from the "Cause" module:
 

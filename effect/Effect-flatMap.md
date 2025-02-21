@@ -13,12 +13,6 @@ const flatMappedEffect = Effect.flatMap(myEffect, transformation)
 const flatMappedEffect = myEffect.pipe(Effect.flatMap(transformation))
 ```
 
-**When to Use**
-
-Use `flatMap` when you need to chain multiple effects, ensuring that each
-step produces a new `Effect` while flattening any nested effects that may
-occur.
-
 **Details**
 
 `flatMap` lets you sequence effects so that the result of one effect can be
@@ -28,6 +22,12 @@ effect structures.
 
 Since effects are immutable, `flatMap` always returns a new effect instead of
 changing the original one.
+
+**When to Use**
+
+Use `flatMap` when you need to chain multiple effects, ensuring that each
+step produces a new `Effect` while flattening any nested effects that may
+occur.
 
 To import and use `flatMap` from the "Effect" module:
 
@@ -57,7 +57,7 @@ const finalAmount = pipe(
   Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-Effect.runPromise(finalAmount).then(console.log)
+// Effect.runPromise(finalAmount).then(console.log)
 // Output: 95
 ```
 

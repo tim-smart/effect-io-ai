@@ -1,7 +1,12 @@
 # Fail
 
-The `Fail` cause represents a `Cause` which failed with an expected error of
-type `E`.
+Represents an expected error within a `Cause`.
+
+**Details**
+
+This interface models a `Cause` that carries an expected or known error of
+type `E`. For example, if you validate user input and find it invalid, you
+might store that error within a `Fail`.
 
 To import and use `Fail` from the "Cause" module:
 

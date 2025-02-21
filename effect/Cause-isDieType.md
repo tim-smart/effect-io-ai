@@ -1,7 +1,6 @@
 # isDieType
 
-Returns `true` if the specified `Cause` is a `Die` type, `false`
-otherwise.
+Checks if a `Cause` is a `Die` type.
 
 To import and use `isDieType` from the "Cause" module:
 

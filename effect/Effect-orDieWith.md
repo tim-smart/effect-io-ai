@@ -2,17 +2,17 @@
 
 Converts an effect's failure into a fiber termination with a custom error.
 
-**When to Use**
-
-Use `orDieWith` when failures should terminate the fiber as defects, and you want to customize
-the error for clarity or debugging purposes.
-
 **Details**
 
 The `orDieWith` function behaves like {@link orDie}, but it allows you to provide a mapping
 function to transform the error before terminating the fiber. This is useful for cases where
 you want to include a more detailed or user-friendly error when the failure is propagated
 as a defect.
+
+**When to Use**
+
+Use `orDieWith` when failures should terminate the fiber as defects, and you want to customize
+the error for clarity or debugging purposes.
 
 To import and use `orDieWith` from the "Effect" module:
 
@@ -35,7 +35,7 @@ const divide = (a: number, b: number) =>
 //      ▼
 const program = Effect.orDieWith(divide(1, 0), (error) => new Error(`defect: ${error.message}`))
 
-Effect.runPromise(program).catch(console.error)
+// Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) Error: defect: Cannot divide by zero
 //   ...stack trace...

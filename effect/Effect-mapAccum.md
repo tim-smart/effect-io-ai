@@ -40,10 +40,10 @@ const transformation = (state: number, element: string) =>
 // Apply mapAccum to transform an array of strings
 const program = Effect.mapAccum(["a", "bb", "ccc"], initialState, transformation)
 
-Effect.runPromise(program).then(([finalState, transformedCollection]) => {
-  console.log(finalState)
-  console.log(transformedCollection)
-})
+// Effect.runPromise(program).then(([finalState, transformedCollection]) => {
+//   console.log(finalState)
+//   console.log(transformedCollection)
+// })
 // Output:
 // 6
 // [ 'A', 'BB', 'CCC' ]

@@ -1,7 +1,11 @@
 # size
 
-Returns the size of the cause, calculated as the number of individual `Cause`
-nodes found in the `Cause` semiring structure.
+Calculates the size of a `Cause`.
+
+**Details**
+
+This function returns the total number of `Cause` nodes in the semiring
+structure, reflecting how many individual error elements are recorded.
 
 To import and use `size` from the "Cause" module:
 

@@ -1,6 +1,11 @@
 # delays
 
-Returns a new schedule that outputs the delay between each occurence.
+Transforms a schedule to output the delay between each occurrence.
+
+**Details**
+
+This function modifies an existing schedule so that instead of producing its
+original output, it now returns the delay between each scheduled execution.
 
 To import and use `delays` from the "Schedule" module:
 

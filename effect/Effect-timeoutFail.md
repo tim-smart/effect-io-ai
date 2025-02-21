@@ -1,17 +1,24 @@
 # timeoutFail
 
-The `timeoutFail` function allows you to specify a custom error to be
-produced when a timeout occurs during the execution of an effect.
+Specifies a custom error to be produced when a timeout occurs.
 
-This function enables you to handle timeouts by triggering a specific error,
-providing more control over the behavior of your program when time limits are
-exceeded. Instead of using a default timeout error, you can define your own
-error type and use it to represent the timeout situation in a more meaningful
-way.
+**Details**
 
-When you apply `timeoutFail`, you define a duration after which the
-effect will timeout. If the effect does not complete in the specified time,
-the `onTimeout` function will be executed to generate the custom error.
+This function allows you to handle timeouts in a customized way by defining a
+specific error to be raised when an effect exceeds the given duration. Unlike
+default timeout behaviors that use generic exceptions, this function gives
+you the flexibility to specify a meaningful error type that aligns with your
+application's needs.
+
+When you apply this function, you provide:
+
+- A `duration`: The time limit for the effect.
+- An `onTimeout` function: A lazy evaluation function that generates the
+  custom error if the timeout occurs.
+
+If the effect completes within the time limit, its result is returned
+normally. Otherwise, the `onTimeout` function is triggered, and its output is
+used as the error for the effect.
 
 To import and use `timeoutFail` from the "Effect" module:
 
@@ -44,7 +51,7 @@ const program = task.pipe(
   })
 )
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Start processing...
 // {

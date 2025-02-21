@@ -1,12 +1,14 @@
 # Cause
 
-A `Cause` represents the full history of a failure resulting from running an
-`Effect` workflow.
+Represents the full history of a failure within an `Effect`.
 
-Effect-TS uses a data structure from functional programming called a semiring
-to represent the `Cause` data type. This allows us to take a base type `E`
-(which represents the error type of an `Effect`) and capture the sequential
-and parallel composition of errors in a fully lossless fashion.
+**Details**
+
+This type is a data structure that captures all information about why and how
+an effect has failed, including parallel errors, sequential errors, defects,
+and interruptions. It enables a "lossless" error model: no error-related
+information is discarded, which helps in debugging and understanding the root
+cause of failures.
 
 To import and use `Cause` from the "Cause" module:
 

@@ -29,11 +29,11 @@ export declare const startOf: {
   (
     part: DateTime.UnitSingular,
     options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined }
-  ): <A extends DateTime>(self: A) => DateTime.PreserveZone<A>
+  ): <A extends DateTime>(self: A) => A
   <A extends DateTime>(
     self: A,
     part: DateTime.UnitSingular,
     options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined }
-  ): DateTime.PreserveZone<A>
+  ): A
 }
 ```

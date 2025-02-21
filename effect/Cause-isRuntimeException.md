@@ -1,7 +1,6 @@
 # isRuntimeException
 
-Returns `true` if the specified value is an `RuntimeException`, `false`
-otherwise.
+Checks if a given unknown value is a `RuntimeException`.
 
 To import and use `isRuntimeException` from the "Cause" module:
 

@@ -41,7 +41,7 @@ const fetchTransactionAmount = Effect.promise(() => Promise.resolve(100))
 
 const finalAmount = pipe(fetchTransactionAmount, Effect.map(addServiceCharge))
 
-Effect.runPromise(finalAmount).then(console.log)
+// Effect.runPromise(finalAmount).then(console.log)
 // Output: 101
 ```
 

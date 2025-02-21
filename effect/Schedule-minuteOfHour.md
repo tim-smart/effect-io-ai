@@ -1,9 +1,16 @@
 # minuteOfHour
 
-Cron-like schedule that recurs every specified `minute` of each hour. It
-triggers at zero second of the minute. Producing a count of repeats: 0, 1, 2.
+Creates a schedule that recurs every specified minute of each hour.
 
-NOTE: `minute` parameter is validated lazily. Must be in range 0...59.
+**Details**
+
+This schedule triggers once per hour at the specified `minute`, starting
+exactly at `minute:00` (zero seconds). The schedule produces a count of
+executions (`0, 1, 2, ...`), representing how many times it has run.
+
+The `minute` parameter must be between `0` and `59`. It is validated lazily,
+meaning an invalid value will cause errors only when the schedule is
+executed.
 
 To import and use `minuteOfHour` from the "Schedule" module:
 

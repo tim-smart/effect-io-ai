@@ -1,14 +1,22 @@
 # tapBoth
 
-The `tapBoth` function allows you to inspect both the success and
-failure outcomes of an effect, performing different actions based on the
-result.
+Allows you to inspect both success and failure outcomes of an effect and
+perform side effects for each.
 
-This function is useful when you need to handle both successful results and
-failures separately, allowing for side effects such as logging, metrics
-collection, or conditional actions based on whether the effect succeeded or
-failed. It provides a way to react to the outcome of an effect without
-altering the result.
+**Details**
+
+This function enables you to handle both success and failure cases
+separately, without modifying the main effect's result. It is particularly
+useful for scenarios where you need to log, monitor, or perform additional
+actions depending on whether the effect succeeded or failed.
+
+When the effect succeeds, the `onSuccess` handler is executed with the
+success value. When the effect fails, the `onFailure` handler is executed
+with the failure value. Both handlers can include side effects such as
+logging or analytics, and neither modifies the original effect's output.
+
+If either the success or failure handler fails, the overall effect will also
+fail.
 
 To import and use `tapBoth` from the "Effect" module:
 
@@ -36,7 +44,7 @@ const tapping = Effect.tapBoth(task, {
   onSuccess: (randomNumber) => Console.log(`random number: ${randomNumber}`)
 })
 
-Effect.runFork(tapping)
+// Effect.runFork(tapping)
 // Example Output:
 // failure: random number is negative
 ```

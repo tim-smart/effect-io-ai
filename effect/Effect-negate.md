@@ -1,6 +1,6 @@
 # negate
 
-Returns a new effect where boolean value of this effect is negated.
+Returns a new effect with the boolean value of this effect negated.
 
 To import and use `negate` from the "Effect" module:
 

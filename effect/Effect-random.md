@@ -1,6 +1,6 @@
 # random
 
-Retreives the `Random` service from the context.
+Retrieves the `Random` service from the context.
 
 To import and use `random` from the "Effect" module:
 

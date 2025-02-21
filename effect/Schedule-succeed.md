@@ -1,7 +1,7 @@
 # succeed
 
-Returns a schedule that repeats one time, producing the specified constant
-value.
+Returns a schedule that recurs indefinitely, always producing the specified
+constant value.
 
 To import and use `succeed` from the "Schedule" module:
 

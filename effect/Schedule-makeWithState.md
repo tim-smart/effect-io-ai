@@ -1,7 +1,18 @@
 # makeWithState
 
-Constructs a new `Schedule` with the specified `initial` state and the
-specified `step` function.
+Creates a new schedule with a custom state and step function.
+
+**Details**
+
+This function constructs a `Schedule` by defining its initial state and a
+step function, which determines how the schedule progresses over time. The
+step function is called on each iteration with the current time, an input
+value, and the schedule's current state. It returns the next state, an output
+value, and a decision on whether the schedule should continue or stop.
+
+This function is useful for creating custom scheduling logic that goes beyond
+predefined schedules like fixed intervals or exponential backoff. It allows
+full control over how the schedule behaves at each step.
 
 To import and use `makeWithState` from the "Schedule" module:
 

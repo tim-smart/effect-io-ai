@@ -1,6 +1,18 @@
 # orElseSome
 
-Returns the provided default value as `Some` if `self` is `None`, otherwise returns `self`.
+Returns the provided default value wrapped in `Some` if the current `Option`
+(`self`) is `None`; otherwise, returns `self`.
+
+**Details**
+
+This function provides a way to supply a default value for cases where an
+`Option` is `None`. If the current `Option` is empty (`None`), the `onNone`
+function is executed to compute the default value, which is then wrapped in a
+`Some`. If the current `Option` contains a value (`Some`), it is returned as
+is.
+
+This is particularly useful for handling optional values where a fallback
+default needs to be provided explicitly in case of absence.
 
 To import and use `orElseSome` from the "Option" module:
 
@@ -13,22 +25,13 @@ Option.orElseSome
 **Example**
 
 ```ts
-import { pipe, Option } from "effect"
+import { Option } from "effect"
 
-assert.deepStrictEqual(
-  pipe(
-    Option.none(),
-    Option.orElseSome(() => "b")
-  ),
-  Option.some("b")
-)
-assert.deepStrictEqual(
-  pipe(
-    Option.some("a"),
-    Option.orElseSome(() => "b")
-  ),
-  Option.some("a")
-)
+console.log(Option.none().pipe(Option.orElseSome(() => "b")))
+// Output: { _id: 'Option', _tag: 'Some', value: 'b' }
+
+console.log(Option.some("a").pipe(Option.orElseSome(() => "b")))
+// Output: { _id: 'Option', _tag: 'Some', value: 'a' }
 ```
 
 **Signature**

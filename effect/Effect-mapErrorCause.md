@@ -1,10 +1,6 @@
 # mapErrorCause
 
-Returns an effect with its full cause of failure mapped using the specified
-function. This can be used to transform errors while preserving the original
-structure of `Cause`.
-
-See `sandbox`, `catchAllCause` for other functions for dealing with defects.
+Maps the cause of failure of an effect using a specified function.
 
 To import and use `mapErrorCause` from the "Effect" module:
 

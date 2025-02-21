@@ -1,6 +1,6 @@
 # stop
 
-A schedule that does not recur, it just stops.
+A schedule that does not recur and stops immediately.
 
 To import and use `stop` from the "Schedule" module:
 

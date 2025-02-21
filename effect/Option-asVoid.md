@@ -1,8 +1,15 @@
 # asVoid
 
-Maps the `Some` value of this `Option` to the `void` constant value.
+Replaces the value inside a `Some` with the constant value `void`, leaving
+`None` unchanged.
 
-This is useful when the value of the `Option` is not needed, but the presence or absence of the value is important.
+**Details**
+
+This function transforms an `Option` by replacing the value inside a `Some`
+with `void`. If the `Option` is `None`, it remains unchanged.
+
+This is particularly useful in scenarios where the presence or absence of a
+value is significant, but the actual content of the value is irrelevant.
 
 To import and use `asVoid` from the "Option" module:
 

@@ -1,9 +1,19 @@
 # annotateLogsScoped
 
-Applies log annotations with a limited scope, restricting their appearance to
-specific sections of your effect computations. Use
-`annotateLogsScoped` to add metadata to logs that only appear within a
-defined `Scope`, making it easier to manage context-specific logging.
+Adds log annotations with a limited scope to enhance contextual logging.
+
+**Details**
+
+This function allows you to apply key-value annotations to log entries
+generated within a specific scope of your effect computations. The
+annotations are restricted to the defined `Scope`, ensuring that they are
+only applied to logs produced during that scope. Once the scope ends, the
+annotations are automatically removed, making it easier to manage
+context-specific logging without affecting other parts of your application.
+
+The annotations can be provided as a single key-value pair or as a record of
+multiple key-value pairs. This flexibility enables fine-grained control over
+the additional metadata included in logs for specific tasks or operations.
 
 To import and use `annotateLogsScoped` from the "Effect" module:
 

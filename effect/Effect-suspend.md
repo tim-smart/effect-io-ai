@@ -2,17 +2,29 @@
 
 Delays the creation of an `Effect` until it is actually needed.
 
-**When to Use**
-
-Use `suspend` when you need to defer the evaluation of an effect until it is required. This is particularly useful for optimizing expensive computations, managing circular dependencies, or resolving type inference issues.
-
 **Details**
 
-`suspend` takes a thunk that represents the effect and wraps it in a suspended effect. This means the effect will not be created until it is explicitly needed, which is helpful in various scenarios:
+The `Effect.suspend` function takes a thunk that represents the effect and
+wraps it in a suspended effect. This means the effect will not be created
+until it is explicitly needed, which is helpful in various scenarios:
 
-- **Lazy Evaluation**: Helps optimize performance by deferring computations, especially when the effect might not be needed, or when its computation is expensive. This also ensures that any side effects or scoped captures are re-executed on each invocation.
-- **Handling Circular Dependencies**: Useful in managing circular dependencies, such as recursive functions that need to avoid eager evaluation to prevent stack overflow.
-- **Unifying Return Types**: Can help TypeScript unify return types in situations where multiple branches of logic return different effects, simplifying type inference.
+- **Lazy Evaluation**: Helps optimize performance by deferring computations,
+  especially when the effect might not be needed, or when its computation is
+  expensive. This also ensures that any side effects or scoped captures are
+  re-executed on each invocation.
+- **Handling Circular Dependencies**: Useful in managing circular
+  dependencies, such as recursive functions that need to avoid eager
+  evaluation to prevent stack overflow.
+- **Unifying Return Types**: Can help TypeScript unify return types in
+  situations where multiple branches of logic return different effects,
+  simplifying type inference.
+
+**When to Use**
+
+Use this function when you need to defer the evaluation of an effect until it
+is required. This is particularly useful for optimizing expensive
+computations, managing circular dependencies, or resolving type inference
+issues.
 
 To import and use `suspend` from the "Effect" module:
 

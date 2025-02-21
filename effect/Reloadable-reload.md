@@ -13,7 +13,5 @@ Reloadable.reload
 **Signature**
 
 ```ts
-export declare const reload: <T extends Context.Tag<any, any>>(
-  tag: T
-) => Effect.Effect<void, unknown, Reloadable<Context.Tag.Identifier<T>>>
+export declare const reload: <I, S>(tag: Context.Tag<I, S>) => Effect.Effect<void, unknown, Reloadable<I>>
 ```

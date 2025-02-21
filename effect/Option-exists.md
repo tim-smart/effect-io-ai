@@ -1,6 +1,16 @@
 # exists
 
-Check if a value in an `Option` type meets a certain predicate.
+Checks if a value in an `Option` satisfies a given predicate or refinement.
+
+**Details**
+
+This function allows you to check if a value inside a `Some` meets a
+specified condition. If the `Option` is `None`, the result is `false`. If the
+`Option` is `Some`, the provided predicate or refinement is applied to the
+value:
+
+- If the condition is met, the result is `true`.
+- If the condition is not met, the result is `false`.
 
 To import and use `exists` from the "Option" module:
 
@@ -13,13 +23,18 @@ Option.exists
 **Example**
 
 ```ts
-import { pipe, Option } from "effect"
+import { Option } from "effect"
 
 const isEven = (n: number) => n % 2 === 0
 
-assert.deepStrictEqual(pipe(Option.some(2), Option.exists(isEven)), true)
-assert.deepStrictEqual(pipe(Option.some(1), Option.exists(isEven)), false)
-assert.deepStrictEqual(pipe(Option.none(), Option.exists(isEven)), false)
+console.log(Option.some(2).pipe(Option.exists(isEven)))
+// Output: true
+
+console.log(Option.some(1).pipe(Option.exists(isEven)))
+// Output: false
+
+console.log(Option.none().pipe(Option.exists(isEven)))
+// Output: false
 ```
 
 **Signature**

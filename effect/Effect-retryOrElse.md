@@ -2,11 +2,18 @@
 
 Retries a failing effect and runs a fallback effect if retries are exhausted.
 
-The `retryOrElse` function attempts to retry a failing effect multiple
-times according to a defined retry policy. If the retries are exhausted and
-the effect still fails, it runs a fallback effect instead. This function is
-useful when you want to handle failures gracefully by specifying an
-alternative action after repeated failures.
+**Details**
+
+The `Effect.retryOrElse` function attempts to retry a failing effect multiple
+times according to a defined {@link Schedule} policy.
+
+If the retries are exhausted and the effect still fails, it runs a fallback
+effect instead.
+
+**When to Use**
+
+This function is useful when you want to handle failures gracefully by
+specifying an alternative action after repeated failures.
 
 To import and use `retryOrElse` from the "Effect" module:
 
@@ -19,6 +26,7 @@ Effect.retryOrElse
 **Example**
 
 ```ts
+// Title: Retrying with Fallback
 import { Effect, Schedule, Console } from "effect"
 
 let count = 0
@@ -39,9 +47,14 @@ const task = Effect.async<string, Error>((resume) => {
 const policy = Schedule.addDelay(Schedule.recurs(2), () => "100 millis")
 
 // If all retries fail, run the fallback effect
-const repeated = Effect.retryOrElse(task, policy, () => Console.log("orElse").pipe(Effect.as("default value")))
+const repeated = Effect.retryOrElse(
+  task,
+  policy,
+  // fallback
+  () => Console.log("orElse").pipe(Effect.as("default value"))
+)
 
-Effect.runPromise(repeated).then(console.log)
+// Effect.runPromise(repeated).then(console.log)
 // Output:
 // failure
 // failure

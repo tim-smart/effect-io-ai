@@ -1,10 +1,13 @@
 # secondOfMinute
 
-Cron-like schedule that recurs every specified `second` of each minute. It
-triggers at zero nanosecond of the second. Producing a count of repeats: 0,
-1, 2.
+Cron-like schedule that recurs at a specific second of each minute.
 
-NOTE: `second` parameter is validated lazily. Must be in range 0...59.
+**Details**
+
+This schedule triggers at the specified `second` of each minute,
+starting at zero nanoseconds. It produces a count of executions
+(0, 1, 2, ...). The `second` parameter is validated lazily, meaning
+invalid values will only be caught at runtime.
 
 To import and use `secondOfMinute` from the "Schedule" module:
 

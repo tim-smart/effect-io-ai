@@ -1,6 +1,12 @@
 # logError
 
-Logs the specified message or cause at the Error log level.
+Logs messages at the ERROR log level.
+
+**Details**
+
+This function logs messages at the ERROR level, suitable for reporting
+application errors or failures. These logs are typically used for unexpected
+issues that need immediate attention.
 
 To import and use `logError` from the "Effect" module:
 

@@ -1,8 +1,18 @@
 # zipLeft
 
-Sequences the specified `that` `Option` but ignores its value.
+Combines two `Option`s, keeping the value from the first `Option` if both are
+`Some`.
 
-It is useful when we want to chain multiple operations, but only care about the result of `self`.
+**Details**
+
+This function takes two `Option`s and returns the first one if it is `Some`.
+If either the first `Option` or the second `Option` is `None`, the result
+will be `None`. This operation "zips" the two `Option`s while discarding the
+value from the second `Option`.
+
+This is useful when sequencing computations where the second `Option`
+represents a dependency or condition that must hold, but its value is
+irrelevant.
 
 To import and use `zipLeft` from the "Option" module:
 

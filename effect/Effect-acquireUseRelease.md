@@ -1,26 +1,18 @@
 # acquireUseRelease
 
-This function is used to ensure that an `Effect` value that represents the
-acquisition of a resource (for example, opening a file, launching a thread,
-etc.) will not be interrupted, and that the resource will always be released
-when the `Effect` value completes execution.
+Creates a scoped resource and automatically handles the use effect during the
+scope.
 
-`acquireUseRelease` does the following:
+**Details**
 
-1. Ensures that the `Effect` value that acquires the resource will not be
-   interrupted. Note that acquisition may still fail due to internal
-   reasons (such as an uncaught exception).
-2. Ensures that the `release` `Effect` value will not be interrupted,
-   and will be executed as long as the acquisition `Effect` value
-   successfully acquires the resource.
+This function is similar to {@link acquireRelease}, but it introduces an
+additional `use` effect. This allows you to automatically execute the `use`
+effect while the resource is acquired, and it also ensures that the `release`
+effect is performed when the scope is closed.
 
-During the time period between the acquisition and release of the resource,
-the `use` `Effect` value will be executed.
-
-If the `release` `Effect` value fails, then the entire `Effect` value will
-fail, even if the `use` `Effect` value succeeds. If this fail-fast behavior
-is not desired, errors produced by the `release` `Effect` value can be caught
-and ignored.
+The `acquire` effect is used to obtain the resource, the `use` effect
+operates while the resource is in use, and the `release` effect cleans up the
+resource when the scope ends.
 
 To import and use `acquireUseRelease` from the "Effect" module:
 
@@ -28,6 +20,55 @@ To import and use `acquireUseRelease` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.acquireUseRelease
+```
+
+**Example**
+
+```ts
+// Title: Automatically Managing Resource Lifetime
+import { Effect, Console } from "effect"
+
+// Define an interface for a resource
+interface MyResource {
+  readonly contents: string
+  readonly close: () => Promise<void>
+}
+
+// Simulate resource acquisition
+const getMyResource = (): Promise<MyResource> =>
+  Promise.resolve({
+    contents: "lorem ipsum",
+    close: () =>
+      new Promise((resolve) => {
+        console.log("Resource released")
+        resolve()
+      })
+  })
+
+// Define how the resource is acquired
+const acquire = Effect.tryPromise({
+  try: () =>
+    getMyResource().then((res) => {
+      console.log("Resource acquired")
+      return res
+    }),
+  catch: () => new Error("getMyResourceError")
+})
+
+// Define how the resource is released
+const release = (res: MyResource) => Effect.promise(() => res.close())
+
+const use = (res: MyResource) => Console.log(`content is ${res.contents}`)
+
+//      ┌─── Effect<void, Error, never>
+//      ▼
+const program = Effect.acquireUseRelease(acquire, use, release)
+
+// Effect.runPromise(program)
+// Output:
+// Resource acquired
+// content is lorem ipsum
+// Resource released
 ```
 
 **Signature**

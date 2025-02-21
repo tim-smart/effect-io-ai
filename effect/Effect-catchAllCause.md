@@ -42,7 +42,7 @@ const recovered = program.pipe(
   )
 )
 
-Effect.runPromise(recovered).then(console.log)
+// Effect.runPromise(recovered).then(console.log)
 // Output: "Recovered from a regular error"
 ```
 

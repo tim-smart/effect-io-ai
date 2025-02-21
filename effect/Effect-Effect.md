@@ -1,17 +1,22 @@
 # Effect
 
-The `Effect` interface defines a value that lazily describes a workflow or
-job. The workflow requires some context `R`, and may fail with an error of
-type `E`, or succeed with a value of type `A`.
+The `Effect` interface defines a value that describes a workflow or job,
+which can succeed or fail.
 
-`Effect` values model resourceful interaction with the outside world,
-including synchronous, asynchronous, concurrent, and parallel interaction.
-They use a fiber-based concurrency model, with built-in support for
-scheduling, fine-grained interruption, structured concurrency, and high
-scalability.
+**Details**
 
-To run an `Effect` value, you need a `Runtime`, which is a type that is
-capable of executing `Effect` values.
+The `Effect` interface represents a computation that can model a workflow
+involving various types of operations, such as synchronous, asynchronous,
+concurrent, and parallel interactions. It operates within a context of type
+`R`, and the result can either be a success with a value of type `A` or a
+failure with an error of type `E`. The `Effect` is designed to handle complex
+interactions with external resources, offering advanced features such as
+fiber-based concurrency, scheduling, interruption handling, and scalability.
+This makes it suitable for tasks that require fine-grained control over
+concurrency and error management.
+
+To execute an `Effect` value, you need a `Runtime`, which provides the
+environment necessary to run and manage the computation.
 
 To import and use `Effect` from the "Effect" module:
 

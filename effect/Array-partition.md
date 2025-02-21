@@ -10,6 +10,21 @@ import * as Array from "effect/Array"
 Array.partition
 ```
 
+**Example**
+
+```ts
+import { Array } from "effect"
+
+const numbers = [1, 2, 3, 4]
+
+const result = Array.partition(numbers, (n) => n % 2 === 0)
+
+assert.deepStrictEqual(result, [
+  [1, 3],
+  [2, 4]
+])
+```
+
 **Signature**
 
 ```ts

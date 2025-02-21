@@ -5,7 +5,7 @@ control flow and error handling.
 
 **When to Use**
 
-`gen` allows you to write code that looks and behaves like synchronous
+`Effect.gen` allows you to write code that looks and behaves like synchronous
 code, but it can handle asynchronous tasks, errors, and complex control flow
 (like loops and conditions). It helps make asynchronous code more readable
 and easier to manage.

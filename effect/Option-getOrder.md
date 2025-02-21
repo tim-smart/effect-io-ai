@@ -1,10 +1,16 @@
 # getOrder
 
-The `Order` instance allows `Option` values to be compared with
-`compare`, whenever there is an `Order` instance for
-the type the `Option` contains.
+Creates an `Order` instance for comparing `Option` values, using a provided
+`Order` for the inner type.
 
-`None` is considered to be less than any `Some` value.
+**Details**
+
+This function produces an `Order` instance for `Option<A>`, allowing `Option`
+values to be compared:
+
+- `None` is always considered less than any `Some` value.
+- If both are `Some`, their inner values are compared using the provided
+  `Order` instance.
 
 To import and use `getOrder` from the "Option" module:
 
@@ -17,14 +23,24 @@ Option.getOrder
 **Example**
 
 ```ts
-import { pipe, Option, Number } from "effect"
+import { Number, Option } from "effect"
 
-const O = Option.getOrder(Number.Order)
-assert.deepStrictEqual(O(Option.none(), Option.none()), 0)
-assert.deepStrictEqual(O(Option.none(), Option.some(1)), -1)
-assert.deepStrictEqual(O(Option.some(1), Option.none()), 1)
-assert.deepStrictEqual(O(Option.some(1), Option.some(2)), -1)
-assert.deepStrictEqual(O(Option.some(1), Option.some(1)), 0)
+const order = Option.getOrder(Number.Order)
+
+console.log(order(Option.none(), Option.none()))
+// Output: 0
+
+console.log(order(Option.none(), Option.some(1)))
+// Output: -1
+
+console.log(order(Option.some(1), Option.none()))
+// Output: 1
+
+console.log(order(Option.some(1), Option.some(2)))
+// Output: -1
+
+console.log(order(Option.some(1), Option.some(1)))
+// Output: 0
 ```
 
 **Signature**

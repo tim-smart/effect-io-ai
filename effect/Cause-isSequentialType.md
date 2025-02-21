@@ -1,7 +1,6 @@
 # isSequentialType
 
-Returns `true` if the specified `Cause` is a `Sequential` type, `false`
-otherwise.
+Checks if a `Cause` is a `Sequential` type.
 
 To import and use `isSequentialType` from the "Cause" module:
 

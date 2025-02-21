@@ -1,18 +1,13 @@
 # acquireReleaseInterruptible
 
-This function constructs a scoped resource from an `acquire` and `release`
-`Effect` value.
+Creates a scoped resource with an interruptible acquire action.
 
-If the `acquire` `Effect` value successfully completes execution, then the
-`release` `Effect` value will be added to the finalizers associated with the
-scope of this `Effect` value, and it is guaranteed to be run when the scope
-is closed.
+**Details**
 
-The `acquire` `Effect` values will be run interruptibly.
-The `release` `Effect` values will be run uninterruptibly.
-
-Additionally, the `release` `Effect` value may depend on the `Exit` value
-specified when the scope is closed.
+This function is similar to {@link acquireRelease}, but it allows the
+acquisition of the resource to be interrupted. The `acquire` effect, which
+represents the process of obtaining the resource, can be interrupted if
+necessary.
 
 To import and use `acquireReleaseInterruptible` from the "Effect" module:
 

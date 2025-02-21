@@ -1,6 +1,7 @@
 # andThen
 
-Executes a sequence of two `Cause`s. The second `Cause` can be dependent on the result of the first `Cause`.
+Sequences two `Cause`s. The second `Cause` can be dependent on the result of
+the first `Cause`.
 
 To import and use `andThen` from the "Cause" module:
 

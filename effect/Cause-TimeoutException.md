@@ -1,7 +1,6 @@
 # TimeoutException
 
-Represents a checked exception which occurs when a computation doesn't
-finish on schedule.
+An error representing a computation that timed out.
 
 To import and use `TimeoutException` from the "Cause" module:
 

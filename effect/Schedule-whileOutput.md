@@ -1,7 +1,13 @@
 # whileOutput
 
-Returns a new schedule that continues for as long the specified predicate
-on the output evaluates to true.
+Returns a new schedule that continues execution for as long as the given
+predicate on the output evaluates to `true`.
+
+**Details**
+
+This function modifies an existing schedule so that it only continues
+execution while a provided condition holds true for its output. If the
+predicate returns `false`, the schedule stops.
 
 To import and use `whileOutput` from the "Schedule" module:
 

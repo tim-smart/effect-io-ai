@@ -17,11 +17,11 @@ export declare const filterOrElse: {
   <E2, R2>(
     predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>,
     orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>
-  ): <E, R>(self: HttpClient<E, R>) => HttpClient<E2 | E, R2 | R>
+  ): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R2 | R>
   <E, R, E2, R2>(
-    self: HttpClient<E, R>,
+    self: HttpClient.With<E, R>,
     predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>,
     orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>
-  ): HttpClient<E2 | E, R2 | R>
+  ): HttpClient.With<E2 | E, R2 | R>
 }
 ```

@@ -1,7 +1,23 @@
 # match
 
-Matches the given `Option` and returns either the provided `onNone` value or the result of the provided `onSome`
-function when passed the `Option`'s value.
+Performs pattern matching on an `Option` to handle both `Some` and `None`
+cases.
+
+**Details**
+
+This function allows you to match against an `Option` and handle both
+scenarios: when the `Option` is `None` (i.e., contains no value), and when
+the `Option` is `Some` (i.e., contains a value). It executes one of the
+provided functions based on the case:
+
+- If the `Option` is `None`, the `onNone` function is executed and its result
+  is returned.
+- If the `Option` is `Some`, the `onSome` function is executed with the
+  contained value, and its result is returned.
+
+This function provides a concise and functional way to handle optional values
+without resorting to `if` or manual checks, making your code more declarative
+and readable.
 
 To import and use `match` from the "Option" module:
 
@@ -14,17 +30,18 @@ Option.match
 **Example**
 
 ```ts
-import { pipe, Option } from "effect"
+// Title: Pattern Matching with Option
+import { Option } from "effect"
 
-assert.deepStrictEqual(
-  pipe(Option.some(1), Option.match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
-  "a some containing 1"
-)
+const foo = Option.some(1)
 
-assert.deepStrictEqual(
-  pipe(Option.none(), Option.match({ onNone: () => "a none", onSome: (a) => `a some containing ${a}` })),
-  "a none"
-)
+const message = Option.match(foo, {
+  onNone: () => "Option is empty",
+  onSome: (value) => `Option has a value: ${value}`
+})
+
+console.log(message)
+// Output: "Option has a value: 1"
 ```
 
 **Signature**

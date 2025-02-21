@@ -1,7 +1,6 @@
 # isFailType
 
-Returns `true` if the specified `Cause` is a `Fail` type, `false`
-otherwise.
+Checks if a `Cause` is a `Fail` type.
 
 To import and use `isFailType` from the "Cause" module:
 

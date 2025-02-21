@@ -1,8 +1,18 @@
 # withLogSpan
 
-Adds a log span to your effects, which tracks and logs the duration of
-operations or tasks. This is useful for performance monitoring and debugging
-time-sensitive processes.
+Adds a log span to an effect for tracking and logging its execution duration.
+
+**Details**
+
+This function wraps an effect with a log span, providing performance
+monitoring and debugging capabilities. The log span tracks the duration of
+the wrapped effect and logs it with the specified label. This is particularly
+useful when analyzing time-sensitive operations or understanding the
+execution time of specific tasks in your application.
+
+The logged output will include the label and the total time taken for the
+operation. The span information is included in the log metadata, making it
+easy to trace performance metrics in logs.
 
 To import and use `withLogSpan` from the "Effect" module:
 

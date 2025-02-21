@@ -1,6 +1,6 @@
 # forkWithErrorHandler
 
-Like fork but handles an error with the provided handler.
+Like {@link fork} but handles an error with the provided handler.
 
 To import and use `forkWithErrorHandler` from the "Effect" module:
 

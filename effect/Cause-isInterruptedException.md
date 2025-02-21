@@ -1,7 +1,6 @@
 # isInterruptedException
 
-Returns `true` if the specified value is an `InterruptedException`, `false`
-otherwise.
+Checks if a given unknown value is an `InterruptedException`.
 
 To import and use `isInterruptedException` from the "Cause" module:
 

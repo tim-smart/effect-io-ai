@@ -1,7 +1,7 @@
 # fromFiberEffect
 
-Creates an `Effect` value that represents the exit value of the specified
-fiber.
+Creates an `Effect` value that represents the exit value of a fiber obtained
+from an effect.
 
 To import and use `fromFiberEffect` from the "Effect" module:
 

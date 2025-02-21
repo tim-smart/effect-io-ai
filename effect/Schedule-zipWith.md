@@ -1,6 +1,6 @@
 # zipWith
 
-Equivalent to `intersect` followed by `map`.
+Equivalent to {@link intersect} followed by {@link map}.
 
 To import and use `zipWith` from the "Schedule" module:
 

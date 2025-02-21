@@ -1,6 +1,12 @@
 # contextWith
 
-Accesses the context of the effect.
+Accesses the context and applies a transformation function.
+
+**Details**
+
+This function retrieves the context of the effect and applies a pure
+transformation function to it. The result of the transformation is then
+returned within the effect.
 
 To import and use `contextWith` from the "Effect" module:
 

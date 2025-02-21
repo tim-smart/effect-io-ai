@@ -1,7 +1,12 @@
 # interruptors
 
-Returns a `HashSet` of `FiberId`s for all fibers that interrupted the fiber
-described by the specified cause.
+Collects all `FiberId`s responsible for interrupting a fiber.
+
+**Details**
+
+This function returns a set of IDs indicating which fibers caused
+interruptions within this `Cause`. It's useful for debugging concurrency
+issues or tracing cancellations.
 
 To import and use `interruptors` from the "Cause" module:
 

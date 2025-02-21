@@ -27,7 +27,7 @@ const program = Effect.filterMap([task(1), task(2), task(3), task(4)], (n) =>
   n % 2 === 0 ? Option.some(n) : Option.none()
 )
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // task1 done
 // task2 done

@@ -1,8 +1,8 @@
 # scopedWith
 
-Creates a `Scope`, passes it to the specified effectful function, and then
-closes the scope as soon as the effect is complete (whether through success,
-failure, or interruption).
+Creates a `Scope`, passes it to the specified effectful function, and closes
+the scope when the effect completes (whether through success, failure, or
+interruption).
 
 To import and use `scopedWith` from the "Effect" module:
 

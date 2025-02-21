@@ -1,6 +1,6 @@
 # Duration
 
-A schema that transforms a `[number, number]` tuple into a `Duration`.
+A schema that converts a JSON-compatible tagged union into a `Duration`.
 
 To import and use `Duration` from the "Schema" module:
 

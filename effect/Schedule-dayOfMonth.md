@@ -1,11 +1,19 @@
 # dayOfMonth
 
-Cron-like schedule that recurs every specified `day` of month. Won't recur
-on months containing less days than specified in `day` param.
+Creates a schedule that recurs on a specific day of the month.
 
-It triggers at zero hour of the day. Producing a count of repeats: 0, 1, 2.
+**Details**
 
-NOTE: `day` parameter is validated lazily. Must be in range 1...31.
+This schedule triggers at midnight on the specified day of each month. It
+will not execute in months that have fewer days than the given day. For
+example, if the schedule is set to run on the 31st, it will not execute in
+months with only 30 days.
+
+The schedule produces a count of executions, starting at 0 and incrementing
+with each recurrence.
+
+The `day` parameter is validated lazily, meaning errors may only be detected
+when the schedule is executed.
 
 To import and use `dayOfMonth` from the "Schedule" module:
 

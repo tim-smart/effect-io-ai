@@ -1,7 +1,20 @@
 # toRefinement
 
-Returns a type guard from a `Option` returning function.
-This function ensures that a type guard definition is type-safe.
+Converts an `Option`-returning function into a type guard.
+
+**Details**
+
+This function transforms a function that returns an `Option` into a type
+guard, ensuring type safety when validating or narrowing types. The returned
+type guard function checks whether the input satisfies the condition defined
+in the original `Option`-returning function.
+
+If the original function returns `Option.some`, the type guard evaluates to
+`true`, confirming the input is of the desired type. If the function returns
+`Option.none`, the type guard evaluates to `false`.
+
+This utility is especially useful for validating types in union types,
+filtering arrays, or ensuring safe handling of specific subtypes.
 
 To import and use `toRefinement` from the "Option" module:
 
@@ -16,12 +29,20 @@ Option.toRefinement
 ```ts
 import { Option } from "effect"
 
-const parsePositive = (n: number): Option.Option<number> => (n > 0 ? Option.some(n) : Option.none())
+type MyData = string | number
 
-const isPositive = Option.toRefinement(parsePositive)
+const parseString = (data: MyData): Option.Option<string> =>
+  typeof data === "string" ? Option.some(data) : Option.none()
 
-assert.deepStrictEqual(isPositive(1), true)
-assert.deepStrictEqual(isPositive(-1), false)
+//      ┌─── (a: MyData) => a is string
+//      ▼
+const isString = Option.toRefinement(parseString)
+
+console.log(isString("a"))
+// Output: true
+
+console.log(isString(1))
+// Output: false
 ```
 
 **Signature**

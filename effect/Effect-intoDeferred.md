@@ -39,7 +39,7 @@ const program = Effect.gen(function* () {
   return isCompleted
 })
 
-Effect.runPromise(program).then(console.log)
+// Effect.runPromise(program).then(console.log)
 // Output:
 // 42
 // true

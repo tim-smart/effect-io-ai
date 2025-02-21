@@ -1,7 +1,13 @@
 # filterOrElse
 
-Filters the specified effect with the provided function returning the value
-of the effect if it is successful, otherwise returns the value of `orElse`.
+Filters an effect, providing an alternative effect if the predicate fails.
+
+**Details**
+
+This function applies a predicate to the result of an effect. If the
+predicate evaluates to `false`, it executes the `orElse` effect instead. The
+`orElse` effect can produce an alternative value or perform additional
+computations.
 
 To import and use `filterOrElse` from the "Effect" module:
 

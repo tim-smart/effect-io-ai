@@ -1,7 +1,7 @@
 # DurationFromNanos
 
-A schema that transforms a `bigint` tuple into a `Duration`.
-Treats the value as the number of nanoseconds.
+A schema that transforms a non negative `bigint` into a `Duration`. Treats
+the value as the number of nanoseconds.
 
 To import and use `DurationFromNanos` from the "Schema" module:
 

@@ -1,8 +1,13 @@
 # configProviderWith
 
-Retrieves the default config provider, and passes it to the specified
-function, which may return an effect that uses the provider to perform some
-work or compute some value.
+Allows working with the default configuration provider.
+
+**Details**
+
+This function retrieves the default configuration provider and passes it to
+the provided function, which can use it to perform computations or retrieve
+configuration values. The function can return an effect that leverages the
+configuration provider for its operations.
 
 To import and use `configProviderWith` from the "Effect" module:
 
@@ -15,7 +20,5 @@ Effect.configProviderWith
 **Signature**
 
 ```ts
-export declare const configProviderWith: <A, E, R>(
-  f: (configProvider: ConfigProvider) => Effect<A, E, R>
-) => Effect<A, E, R>
+export declare const configProviderWith: <A, E, R>(f: (provider: ConfigProvider) => Effect<A, E, R>) => Effect<A, E, R>
 ```

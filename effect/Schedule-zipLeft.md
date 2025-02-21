@@ -1,6 +1,6 @@
 # zipLeft
 
-The same as `intersect` but ignores the right output.
+The same as {@link intersect} but ignores the right output.
 
 To import and use `zipLeft` from the "Schedule" module:
 

@@ -1,7 +1,24 @@
 # raceWith
 
-Returns an effect that races this effect with the specified effect, calling
-the specified finisher as soon as one result or the other has been computed.
+Races two effects and calls a finisher when the first one completes.
+
+**Details**
+
+This function runs two effects concurrently and calls a specified “finisher”
+function once one of the effects completes, regardless of whether it succeeds
+or fails.
+
+The finisher functions for each effect allow you to handle the results of
+each effect as soon as they complete.
+
+The function takes two finisher callbacks, one for each effect, and allows
+you to specify how to handle the result of the race.
+
+**When to Use**
+
+This function is useful when you need to react to the completion of either
+effect without waiting for both to finish. It can be used whenever you want
+to take action based on the first available result.
 
 To import and use `raceWith` from the "Effect" module:
 
@@ -9,6 +26,39 @@ To import and use `raceWith` from the "Effect" module:
 import * as Effect from "effect/Effect"
 // Can be accessed like this
 Effect.raceWith
+```
+
+**Example**
+
+```ts
+// Title: Handling Results of Concurrent Tasks
+import { Effect, Console } from "effect"
+
+const task1 = Effect.succeed("task1").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Console.log("task1 done")),
+  Effect.onInterrupt(() => Console.log("task1 interrupted").pipe(Effect.delay("100 millis")))
+)
+const task2 = Effect.succeed("task2").pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Console.log("task2 done")),
+  Effect.onInterrupt(() => Console.log("task2 interrupted").pipe(Effect.delay("100 millis")))
+)
+
+const program = Effect.raceWith(task1, task2, {
+  onSelfDone: (exit) => Console.log(`task1 exited with ${exit}`),
+  onOtherDone: (exit) => Console.log(`task2 exited with ${exit}`)
+})
+
+// Effect.runFork(program)
+// Output:
+// task1 done
+// task1 exited with {
+//   "_id": "Exit",
+//   "_tag": "Success",
+//   "value": "task1"
+// }
+// task2 interrupted
 ```
 
 **Signature**

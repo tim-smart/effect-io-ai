@@ -52,7 +52,7 @@ const program = Effect.catchSomeDefect(task, (defect) => {
 
 // Since we are only catching IllegalArgumentException
 // we will get an Exit.Failure because we simulated a runtime error.
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',

@@ -1,12 +1,18 @@
 # jittered
 
-Returns a new schedule that randomly modifies the size of the intervals of
-this schedule.
+Returns a new schedule that randomly adjusts the interval size within a
+range.
 
-Defaults `min` to `0.8` and `max` to `1.2`.
+**Details**
 
-The new interval size is between `min * old interval size` and `max * old
-interval size`.
+This function modifies a schedule so that its delay between executions is
+randomly varied within a range. By default, the delay is adjusted between
+`80%` (`0.8 * interval`) and `120%` (`1.2 * interval`) of the original
+interval size.
+
+This is useful for adding randomness to repeated executions, reducing
+contention in distributed systems, and avoiding synchronized execution
+patterns that can cause bottlenecks.
 
 To import and use `jittered` from the "Schedule" module:
 

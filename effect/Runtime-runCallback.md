@@ -19,8 +19,5 @@ Runtime.runCallback
 ```ts
 export declare const runCallback: <R>(
   runtime: Runtime<R>
-) => <A, E>(
-  effect: Effect.Effect<A, E, R>,
-  options?: RunCallbackOptions<A, E> | undefined
-) => (fiberId?: FiberId.FiberId | undefined, options?: RunCallbackOptions<A, E> | undefined) => void
+) => <A, E>(effect: Effect.Effect<A, E, R>, options?: RunCallbackOptions<A, E> | undefined) => Cancel<A, E>
 ```

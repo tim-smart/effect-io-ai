@@ -99,6 +99,42 @@
       ]
     },
     "project": "@effect/sql",
+    "name": "From \"./SqlEventJournal.js\"",
+    "description": "Re-exports all named exports from the \"./SqlEventJournal.js\" module as `SqlEventJournal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SqlEventJournal from \"./SqlEventJournal.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "From \"./SqlEventLogServer.js\"",
+    "description": "Re-exports all named exports from the \"./SqlEventLogServer.js\" module as `SqlEventLogServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as SqlEventLogServer from \"./SqlEventLogServer.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/sql",
     "name": "From \"./SqlResolver.js\"",
     "description": "Re-exports all named exports from the \"./SqlResolver.js\" module as `SqlResolver`.",
     "deprecated": false,
@@ -323,6 +359,24 @@
     "since": "1.0.0",
     "category": "loaders",
     "signature": null
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Model",
+      "path": [
+        "src",
+        "Model.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "BooleanFromNumber",
+    "description": "A boolean parsed from 0 or 1",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "uuid",
+    "signature": "export declare class BooleanFromNumber"
   },
   {
     "_tag": "Constant",
@@ -840,6 +894,42 @@
       ]
     },
     "project": "@effect/sql",
+    "name": "UuidV4WithGenerate",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "uuid",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Model",
+      "path": [
+        "src",
+        "Model.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "UuidV4Insert",
+    "description": "A field that represents a binary UUID v4 that is generated on inserts.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "uuid",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Model",
+      "path": [
+        "src",
+        "Model.ts"
+      ]
+    },
+    "project": "@effect/sql",
     "name": "makeRepository",
     "description": "Create a simple CRUD repository from a model.",
     "deprecated": false,
@@ -1099,6 +1189,24 @@
     "since": "1.0.0",
     "category": "sensitive",
     "signature": "export interface Sensitive<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly insert: S\n    readonly update: S\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model",
+      "path": [
+        "src",
+        "Model.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "UuidV4Insert",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "uuid",
+    "signature": "export interface UuidV4Insert<B extends string | symbol> extends\n  VariantSchema.Field<{\n    readonly select: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly insert: VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>\n    readonly update: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly json: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n  }>\n{}"
   },
   {
     "_tag": "TypeAlias",
@@ -1441,6 +1549,96 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export type SqlErrorTypeId = typeof SqlErrorTypeId"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlEventJournal",
+      "path": [
+        "src",
+        "SqlEventJournal.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlEventJournal",
+      "path": [
+        "src",
+        "SqlEventJournal.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlEventLogServer",
+      "path": [
+        "src",
+        "SqlEventLogServer.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "makeStorage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlEventLogServer",
+      "path": [
+        "src",
+        "SqlEventLogServer.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "layerStorage",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlEventLogServer",
+      "path": [
+        "src",
+        "SqlEventLogServer.ts"
+      ]
+    },
+    "project": "@effect/sql",
+    "name": "layerStorageSubtle",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
   },
   {
     "_tag": "Export",

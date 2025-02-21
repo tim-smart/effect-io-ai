@@ -1,13 +1,21 @@
 # orElseFail
 
-Replaces the original failure with a new failure value.
+Replaces the failure of an effect with a custom failure value.
 
-`orElseFail` allows you to replace the failure from one effect with a
-custom failure value. If the effect fails, you can provide a new failure to
-be returned instead of the original one.
+**Details**
 
-**Important**: This function only applies to failed effects. If the effect
-succeeds, it will remain unaffected.
+This function allows you to handle the failure of an effect by replacing it
+with a predefined failure value. If the effect fails, the new failure value
+provided by the `evaluate` function will be returned instead of the original
+failure. If the effect succeeds, the original success value is returned
+unchanged.
+
+**When to Use**
+
+This is particularly useful when you want to standardize error handling or
+provide a consistent failure value for specific operations. It simplifies
+error management by ensuring that all failures are replaced with a controlled
+alternative.
 
 To import and use `orElseFail` from the "Effect" module:
 

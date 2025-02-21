@@ -1,7 +1,12 @@
 # UnknownException
 
-Represents a checked exception which occurs when an unknown error is thrown, such as
-from a rejected promise.
+A checked exception for handling unknown or unexpected errors.
+
+**Details**
+
+This interface captures errors that don't fall under known categories. It is
+especially helpful for wrapping low-level or third-party library errors that
+might provide little or no context, such as from a rejected promise.
 
 To import and use `UnknownException` from the "Cause" module:
 

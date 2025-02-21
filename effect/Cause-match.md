@@ -1,6 +1,28 @@
 # match
 
-Folds the specified cause into a value of type `Z`.
+Transforms a `Cause` into a single value using custom handlers for each
+possible case.
+
+**Details**
+
+This function processes a `Cause` by applying a set of custom handlers to
+each possible type of cause: `Empty`, `Fail`, `Die`, `Interrupt`,
+`Sequential`, and `Parallel`. The result of this function is a single value
+of type `Z`. This function allows you to define exactly how to handle each
+part of a `Cause`, whether it's a failure, defect, interruption, or a
+combination of these.
+
+The options parameter provides handlers for:
+
+- `onEmpty`: Handles the case where the cause is `Empty`, meaning no errors
+  occurred.
+- `onFail`: Processes a failure with an error of type `E`.
+- `onDie`: Processes a defect (unexpected error).
+- `onInterrupt`: Handles a fiber interruption, providing the `FiberId` of the
+  interruption.
+- `onSequential`: Combines two sequential causes into a single value of type
+  `Z`.
+- `onParallel`: Combines two parallel causes into a single value of type `Z`.
 
 To import and use `match` from the "Cause" module:
 

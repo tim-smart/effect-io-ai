@@ -1,6 +1,15 @@
 # collectAllOutputs
 
-Returns a new schedule that collects the outputs of this one into a chunk.
+Collects all outputs of a schedule into a `Chunk`.
+
+**Details**
+
+This function modifies a given schedule so that instead of returning
+individual outputs, it accumulates them into a `Chunk`. The schedule
+continues to run, appending each output to the collected list.
+
+This is useful when you need to track all results over time, such as logging
+outputs, aggregating data, or keeping a history of previous values.
 
 To import and use `collectAllOutputs` from the "Schedule" module:
 

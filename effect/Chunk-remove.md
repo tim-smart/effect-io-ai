@@ -1,7 +1,6 @@
 # remove
 
-Delete the element at the specified index, creating a new `Chunk`,
-or returning the input if the index is out of bounds.
+Delete the element at the specified index, creating a new `Chunk`.
 
 To import and use `remove` from the "Chunk" module:
 

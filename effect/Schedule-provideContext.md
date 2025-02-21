@@ -1,7 +1,18 @@
 # provideContext
 
-Returns a new schedule with its context provided to it, so the
-resulting schedule does not require any context.
+Returns a new schedule with a provided context, eliminating the need for
+external dependencies.
+
+**Details**
+
+This function supplies a required `context` to a schedule, allowing it to run
+without requiring external dependencies. After calling this function, the
+schedule can be used freely without needing to pass a context at execution
+time.
+
+This is useful when working with schedules that rely on contextual
+information, such as logging services, database connections, or configuration
+settings.
 
 To import and use `provideContext` from the "Schedule" module:
 

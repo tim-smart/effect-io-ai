@@ -1,7 +1,16 @@
 # whenFiberRef
 
-Executes this workflow when value of the specified `FiberRef` satisfies the
-predicate.
+Executes an effect conditionally based on the value of a `FiberRef` that
+satisfies a predicate.
+
+**Details**
+
+This function enables you to execute an effect only when the value of a
+specified `FiberRef` meets a certain condition defined by a predicate. If the
+value satisfies the predicate, the effect is executed, and the result is
+wrapped in an `Option.some`. If the predicate is not satisfied, the effect is
+skipped, and the result is `Option.none`. In both cases, the current value of
+the `FiberRef` is included in the result.
 
 To import and use `whenFiberRef` from the "Effect" module:
 

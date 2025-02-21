@@ -1,7 +1,11 @@
 # withConfigProviderScoped
 
-Sets the configuration provider to the specified value and restores it to its original value
-when the scope is closed.
+Sets a configuration provider within a scope.
+
+**Details**
+
+This function sets the configuration provider to a specified value and
+ensures that it is restored to its original value when the scope is closed.
 
 To import and use `withConfigProviderScoped` from the "Effect" module:
 
@@ -14,5 +18,5 @@ Effect.withConfigProviderScoped
 **Signature**
 
 ```ts
-export declare const withConfigProviderScoped: (value: ConfigProvider) => Effect<void, never, Scope.Scope>
+export declare const withConfigProviderScoped: (provider: ConfigProvider) => Effect<void, never, Scope.Scope>
 ```

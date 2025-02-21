@@ -1,8 +1,19 @@
 # intersectWith
 
-Returns a new schedule that combines this schedule with the specified
-schedule, continuing as long as both schedules want to continue and merging
-the next intervals according to the specified merge function.
+Combines two schedules, continuing only if both want to continue, merging
+intervals using a custom function.
+
+**Details**
+
+This function takes two schedules and creates a new schedule that only
+continues execution if both schedules allow it. Instead of automatically
+using the longer delay (like {@link intersect}), this function applies a
+user-provided merge function `f` to determine the next interval between
+executions.
+
+The output of the resulting schedule is a tuple containing the outputs of
+both schedules, and the input type is the intersection of both schedules'
+input types.
 
 To import and use `intersectWith` from the "Schedule" module:
 

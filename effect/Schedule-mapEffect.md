@@ -1,7 +1,17 @@
 # mapEffect
 
-Returns a new schedule that maps the output of this schedule through the
-specified effectful function.
+Returns a new schedule that applies an effectful transformation to its
+output.
+
+**Details**
+
+This function modifies an existing schedule by applying an effectful function
+`f` to its output values. The timing and recurrence behavior of the schedule
+remain unchanged, but each output is mapped to a new value within an
+`Effect`.
+
+This is useful when you need to perform side effects or asynchronous
+transformations before passing the output forward.
 
 To import and use `mapEffect` from the "Schedule" module:
 

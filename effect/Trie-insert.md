@@ -42,7 +42,7 @@ assert.deepStrictEqual(Array.from(trie4), [
 
 ```ts
 export declare const insert: {
-  <V>(key: string, value: V): (self: Trie<V>) => Trie<V>
-  <V>(self: Trie<V>, key: string, value: V): Trie<V>
+  <V1>(key: string, value: V1): <V>(self: Trie<V>) => Trie<V | V1>
+  <V1, V>(self: Trie<V>, key: string, value: V1): Trie<V | V1>
 }
 ```

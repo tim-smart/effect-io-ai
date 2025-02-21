@@ -1,7 +1,6 @@
 # isEmptyType
 
-Returns `true` if the specified `Cause` is an `Empty` type, `false`
-otherwise.
+Checks if a `Cause` is an `Empty` type.
 
 To import and use `isEmptyType` from the "Cause" module:
 

@@ -1,7 +1,20 @@
 # union
 
-Returns a new schedule that performs a geometric union on the intervals
-defined by both schedules.
+Combines two schedules, continuing execution as long as at least one of them
+allows it, using the shorter delay.
+
+**Details**
+
+This function combines two schedules into a single schedule that executes in
+parallel. If either schedule allows continuation, the merged schedule
+continues. When both schedules produce delays, the schedule selects the
+shorter delay to determine the next step.
+
+The output of the new schedule is a tuple containing the outputs of both
+schedules. The input type is the intersection of both schedules' input types.
+
+This is useful for scenarios where multiple scheduling conditions should be
+considered, ensuring execution proceeds if at least one schedule permits it.
 
 To import and use `union` from the "Schedule" module:
 

@@ -3,9 +3,9 @@
 Combines multiple effects into one, returning results based on the input
 structure.
 
-**When to Use**
+**Details**
 
-Use `Effect.all` when you need to run multiple effects and combine their
+Use this function when you need to run multiple effects and combine their
 results into a single output. It supports tuples, iterables, structs, and
 records, making it flexible for different input types.
 
@@ -28,8 +28,8 @@ the `concurrency` option.
 
 **Short-Circuiting Behavior**
 
-The `Effect.all` function stops execution on the first error it encounters,
-this is called "short-circuiting". If any effect in the collection fails, the
+This function stops execution on the first error it encounters, this is
+called "short-circuiting". If any effect in the collection fails, the
 remaining effects will not run, and the error will be propagated. To change
 this behavior, you can use the `mode` option, which allows all effects to run
 and collect results as `Either` or `Option`.
@@ -69,7 +69,7 @@ const tupleOfEffects = [
 //      ▼
 const resultsAsTuple = Effect.all(tupleOfEffects)
 
-Effect.runPromise(resultsAsTuple).then(console.log)
+// Effect.runPromise(resultsAsTuple).then(console.log)
 // Output:
 // 42
 // Hello
@@ -90,7 +90,7 @@ const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map((n) =>
 //      ▼
 const resultsAsArray = Effect.all(iterableOfEffects)
 
-Effect.runPromise(resultsAsArray).then(console.log)
+// Effect.runPromise(resultsAsArray).then(console.log)
 // Output:
 // 1
 // 2
@@ -113,7 +113,7 @@ const structOfEffects = {
 //      ▼
 const resultsAsStruct = Effect.all(structOfEffects)
 
-Effect.runPromise(resultsAsStruct).then(console.log)
+// Effect.runPromise(resultsAsStruct).then(console.log)
 // Output:
 // 42
 // Hello
@@ -135,7 +135,7 @@ const recordOfEffects: Record<string, Effect.Effect<number>> = {
 //      ▼
 const resultsAsRecord = Effect.all(recordOfEffects)
 
-Effect.runPromise(resultsAsRecord).then(console.log)
+// Effect.runPromise(resultsAsRecord).then(console.log)
 // Output:
 // 1
 // 2
@@ -155,7 +155,7 @@ const program = Effect.all([
   Effect.succeed("Task3").pipe(Effect.tap(Console.log))
 ])
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Task1
 // {
@@ -179,7 +179,7 @@ const effects = [
 
 const program = Effect.all(effects, { mode: "either" })
 
-Effect.runPromiseExit(program).then(console.log)
+// Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Task1
 // Task3
@@ -208,7 +208,7 @@ const effects = [
 
 const program = Effect.all(effects, { mode: "validate" })
 
-Effect.runPromiseExit(program).then((result) => console.log("%o", result))
+// Effect.runPromiseExit(program).then((result) => console.log("%o", result))
 // Output:
 // Task1
 // Task3

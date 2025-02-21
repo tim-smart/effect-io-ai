@@ -1,20 +1,22 @@
 # orElseSucceed
 
-Replaces the original failure with a success value, ensuring the effect
-cannot fail.
+Ensures the effect always succeeds by replacing failures with a default
+success value.
 
-`orElseSucceed` allows you to replace the failure of an effect with a
-success value. If the effect fails, it will instead succeed with the provided
-value, ensuring the effect always completes successfully. This is useful when
-you want to guarantee a successful result regardless of whether the original
-effect failed.
+**Details**
 
-The function ensures that any failure is effectively "swallowed" and replaced
-by a successful value, which can be helpful for providing default values in
-case of failure.
+This function transforms an effect that may fail into one that cannot fail by
+replacing any failure with a provided success value. If the original effect
+fails, the failure is "swallowed," and the specified success value is
+returned instead. If the original effect succeeds, its value remains
+unchanged.
 
-**Important**: This function only applies to failed effects. If the effect
-already succeeds, it will remain unchanged.
+**When to Use**
+
+This is especially useful for providing default values in case of failure,
+ensuring that an effect always completes successfully. By using this
+function, you can avoid the need for complex error handling and guarantee a
+fallback result.
 
 To import and use `orElseSucceed` from the "Effect" module:
 

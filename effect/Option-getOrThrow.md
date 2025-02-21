@@ -1,8 +1,14 @@
 # getOrThrow
 
-Extracts the value of an `Option` or throws if the `Option` is `None`.
+Extracts the value of an `Option` or throws a default error if the `Option`
+is `None`.
 
-The thrown error is a default error. To configure the error thrown, see {@link getOrThrowWith}.
+**Details**
+
+This function extracts the value from an `Option` if it is `Some`. If the
+`Option` is `None`, it throws a default error. It is useful for fail-fast
+scenarios where the absence of a value is treated as an exceptional case and
+a default error is sufficient.
 
 To import and use `getOrThrow` from the "Option" module:
 
