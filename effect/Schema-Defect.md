@@ -16,9 +16,3 @@ import * as Schema from "effect/Schema"
 // Can be accessed like this
 Schema.Defect
 ```
-
-**Signature**
-
-```ts
-export declare const Defect: Defect
-```

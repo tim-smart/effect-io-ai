@@ -13,5 +13,5 @@ Schema.split
 **Signature**
 
 ```ts
-export declare const split: (separator: string) => transform<typeof String$, Array$<typeof String$>>
+export declare const split: (separator: string) => transform<SchemaClass<string>, Array$<typeof String$>>
 ```

@@ -23,8 +23,8 @@ assert.deepStrictEqual(S.decodeSync(schema)(0), "a")
 **Signature**
 
 ```ts
-export declare const transformLiteral: <Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(
+export declare function transformLiteral<Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(
   from: Encoded,
   to: Type
-) => transformLiteral<Type, Encoded>
+): transformLiteral<Type, Encoded>
 ```

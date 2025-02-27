@@ -16,5 +16,7 @@ Schema.clamp
 export declare const clamp: (
   minimum: number,
   maximum: number
-) => <A extends number, I, R>(self: Schema<A, I, R>) => transform<Schema<A, I, R>, filter<Schema<A>>>
+) => <S extends Schema.Any, A extends number>(
+  self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>
+) => transform<S, filter<SchemaClass<A>>>
 ```

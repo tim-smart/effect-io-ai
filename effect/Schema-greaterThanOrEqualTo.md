@@ -13,8 +13,8 @@ Schema.greaterThanOrEqualTo
 **Signature**
 
 ```ts
-export declare const greaterThanOrEqualTo: <A extends number>(
+export declare const greaterThanOrEqualTo: <S extends Schema.Any>(
   minimum: number,
-  annotations?: Annotations.Filter<A>
-) => <I, R>(self: Schema<A, I, R>) => filter<Schema<A, I, R>>
+  annotations?: Annotations.Filter<Schema.Type<S>>
+) => <A extends number>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```

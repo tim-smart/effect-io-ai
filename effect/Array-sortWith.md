@@ -31,7 +31,7 @@ assert.deepStrictEqual(result, ["b", "cc", "aaa"])
 
 ```ts
 export declare const sortWith: {
-  <S extends Iterable<any> | NonEmptyReadonlyArray<any>, B>(
+  <S extends Iterable<any>, B>(
     f: (a: ReadonlyArray.Infer<S>) => B,
     order: Order.Order<B>
   ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>

@@ -23,7 +23,7 @@ assert.deepStrictEqual(result, [4, 3, 2, 1])
 **Signature**
 
 ```ts
-export declare const reverse: <S extends Iterable<any> | NonEmptyReadonlyArray<any>>(
+export declare const reverse: <S extends Iterable<any>>(
   self: S
 ) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```

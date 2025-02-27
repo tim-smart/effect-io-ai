@@ -31,7 +31,7 @@ assert.deepStrictEqual(
 
 ```ts
 export declare const parseJson: {
-  <A, I, R>(schema: Schema<A, I, R>, options?: ParseJsonOptions): SchemaClass<A, string, R>
+  <S extends Schema.Any>(schema: S, options?: ParseJsonOptions): transform<SchemaClass<unknown, string>, S>
   (options?: ParseJsonOptions): SchemaClass<unknown, string>
 }
 ```

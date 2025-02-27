@@ -855,7 +855,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "sorting",
-    "signature": "export declare const sort: { <B>(O: Order.Order<B>): <A extends B, S extends ReadonlyArray<A> | Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A extends B, B>(self: NonEmptyReadonlyArray<A>, O: Order.Order<B>): NonEmptyArray<A>; <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): Array<A>; }"
+    "signature": "export declare const sort: { <B>(O: Order.Order<B>): <A extends B, S extends Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A extends B, B>(self: NonEmptyReadonlyArray<A>, O: Order.Order<B>): NonEmptyArray<A>; <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): Array<A>; }"
   },
   {
     "_tag": "Constant",
@@ -875,7 +875,7 @@
     ],
     "since": "2.0.0",
     "category": "elements",
-    "signature": "export declare const sortWith: { <S extends Iterable<any> | NonEmptyReadonlyArray<any>, B>(f: (a: ReadonlyArray.Infer<S>) => B, order: Order.Order<B>): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B, O: Order.Order<B>): NonEmptyArray<A>; <A, B>(self: Iterable<A>, f: (a: A) => B, order: Order.Order<B>): Array<A>; }"
+    "signature": "export declare const sortWith: { <S extends Iterable<any>, B>(f: (a: ReadonlyArray.Infer<S>) => B, order: Order.Order<B>): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B, O: Order.Order<B>): NonEmptyArray<A>; <A, B>(self: Iterable<A>, f: (a: A) => B, order: Order.Order<B>): Array<A>; }"
   },
   {
     "_tag": "Constant",
@@ -935,7 +935,7 @@
     ],
     "since": "2.0.0",
     "category": null,
-    "signature": "export declare const unzip: <S extends Iterable<readonly [any, any]> | NonEmptyReadonlyArray<readonly [any, any]>>(self: S) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]> ? [NonEmptyArray<A>, NonEmptyArray<B>] : S extends Iterable<readonly [infer A, infer B]> ? [Array<A>, Array<B>] : never"
+    "signature": "export declare const unzip: <S extends Iterable<readonly [any, any]>>(self: S) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]> ? [NonEmptyArray<A>, NonEmptyArray<B>] : S extends Iterable<readonly [infer A, infer B]> ? [Array<A>, Array<B>] : never"
   },
   {
     "_tag": "Constant",
@@ -13384,7 +13384,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export interface TagUnify<A extends { [Unify.typeSymbol]?: any }> {\n  Tag?: () => A[Unify.typeSymbol] extends Tag<infer I0, infer S0> | infer _ ? Tag<I0, S0> : never\n}"
+    "signature": "export interface TagUnify<A extends { [Unify.typeSymbol]?: any }> {\n  Tag?: () => Extract<A[Unify.typeSymbol], Tag<any, any>>\n}"
   },
   {
     "_tag": "Interface",
@@ -51862,7 +51862,7 @@
     },
     "project": "effect",
     "name": "filterMap",
-    "description": "Maps over the value of an `Option` with a function that may return `None`,\neffectively filtering and transforming the value.\n\n**Details**\n\nThis function allows you to both transform the value of a `Some` and filter\nit at the same time. The mapping function `f` can either return a new\n`Option` (to transform the value) or return `None` to filter it out. If the\ninput `Option` is `None`, the function is not applied, and the result remains\n`None`.\n\nThis utility is particularly useful when you want to apply a transformation\nto the value of an `Option` while conditionally removing invalid or unwanted\nresults.",
+    "description": "Alias of {@link flatMap}.",
     "deprecated": false,
     "examples": [
       "import { Option } from \"effect\"\n\n// Transform and filter numbers\nconst transformEven = (n: Option.Option<number>): Option.Option<string> =>\n  Option.filterMap(n, (n) => (n % 2 === 0 ? Option.some(`Even: ${n}`) : Option.none()))\n\nconsole.log(transformEven(Option.none()))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(transformEven(Option.some(1)))\n// Output: { _id: 'Option', _tag: 'None' }\n\nconsole.log(transformEven(Option.some(2)))\n// Output: { _id: 'Option', _tag: 'Some', value: 'Even: 2' }"
@@ -65357,6 +65357,24 @@
       ]
     },
     "project": "effect",
+    "name": "Defect",
+    "description": "Defines a schema for handling JavaScript errors (`Error` instances) and other types of defects.\nIt decodes objects into Error instances if they match the expected structure (i.e., have a `message` and optionally a `name` and `stack`),\nor converts other values to their string representations.\n\nWhen encoding, it converts `Error` instances back into plain objects containing only the error's name and message,\nor other values into their string forms.\n\nThis is useful for serializing and deserializing errors across network boundaries where error objects do not natively serialize.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "defect",
+    "signature": "export declare class Defect"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Duration",
     "description": "A schema that converts a JSON-compatible tagged union into a `Duration`.",
     "deprecated": false,
@@ -65757,6 +65775,26 @@
       ]
     },
     "project": "effect",
+    "name": "OptionFromNonEmptyTrimmedString",
+    "description": "Transforms strings into an Option type, effectively filtering out empty or\nwhitespace-only strings by trimming them and checking their length. Returns\n`none` for invalid inputs and `some` for valid non-empty strings.",
+    "deprecated": false,
+    "examples": [
+      "import { Schema } from \"effect\"\n\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\"\")) // Option.none()\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\" a \")) // Option.some(\"a\")\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\"a\")) // Option.some(\"a\")"
+    ],
+    "since": "3.10.0",
+    "category": "Option transformations",
+    "signature": "export declare class OptionFromNonEmptyTrimmedString"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Positive",
     "description": null,
     "deprecated": false,
@@ -66045,6 +66083,42 @@
       ]
     },
     "project": "effect",
+    "name": "Uint8",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.10",
+    "category": "number constructors",
+    "signature": "export declare class Uint8"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "Uint8ArrayFromSelf",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Uint8Array constructors",
+    "signature": "export declare class Uint8ArrayFromSelf"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Uncapitalize",
     "description": "This schema converts a string to uncapitalized one.",
     "deprecated": false,
@@ -66321,7 +66395,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "constructors",
-    "signature": "export declare const declare: { <A>(is: (input: unknown) => input is A, annotations?: Annotations.Schema<A>): SchemaClass<A>; <const P extends ReadonlyArray<Schema.All>, I, A>(typeParameters: P, options: { readonly decode: (...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never>; }) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<A, ParseResult.ParseIssue, never>; readonly encode: (...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never>; }) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<I, ParseResult.ParseIssue, never>; }, annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]>; }>): SchemaClass<A, I, Schema.Context<P[number]>>; }"
+    "signature": "export declare const declare: { <A>(is: (input: unknown) => input is A, annotations?: Annotations.Schema<A>): declare<A>; <A, I, const P extends ReadonlyArray<Schema.All>>(typeParameters: P, options: { readonly decode: (...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never>; }) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<A, ParseResult.ParseIssue, never>; readonly encode: (...typeParameters: { readonly [K in keyof P]: Schema<Schema.Type<P[K]>, Schema.Encoded<P[K]>, never>; }) => (input: unknown, options: ParseOptions, ast: AST.Declaration) => Effect.Effect<I, ParseResult.ParseIssue, never>; }, annotations?: Annotations.Schema<A, { readonly [K in keyof P]: Schema.Type<P[K]>; }>): declare<A, I, P>; }"
   },
   {
     "_tag": "Constant",
@@ -66485,7 +66559,7 @@
     ],
     "since": "3.10.0",
     "category": "struct transformations",
-    "signature": "export declare const pluck: { <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => Schema<A[K], Simplify<Pick<I, K>>, R>; <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): Schema<A[K], Simplify<Pick<I, K>>, R>; }"
+    "signature": "export declare const pluck: { <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => SchemaClass<A[K], Simplify<Pick<I, K>>, R>; <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): SchemaClass<A[K], Simplify<Pick<I, K>>, R>; }"
   },
   {
     "_tag": "Constant",
@@ -66541,7 +66615,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "combinators",
-    "signature": "export declare const compose: { <D, C extends B, R2, B>(to: Schema<D, C, R2>): <A, R1>(from: Schema<B, A, R1>) => SchemaClass<D, A, R1 | R2>; <D, C, R2>(to: Schema<D, C, R2>): <B extends C, A, R1>(from: Schema<B, A, R1>) => SchemaClass<D, A, R1 | R2>; <C, B, R2>(to: Schema<C, B, R2>, options?: { readonly strict: true; }): <A, R1>(from: Schema<B, A, R1>) => SchemaClass<C, A, R1 | R2>; <D, C, R2>(to: Schema<D, C, R2>, options: { readonly strict: false; }): <B, A, R1>(from: Schema<B, A, R1>) => SchemaClass<D, A, R1 | R2>; <B, A, R1, D, C extends B, R2>(from: Schema<B, A, R1>, to: Schema<D, C, R2>): SchemaClass<D, A, R1 | R2>; <B extends C, A, R1, D, C, R2>(from: Schema<B, A, R1>, to: Schema<D, C, R2>): SchemaClass<D, A, R1 | R2>; <B, A, R1, C, R2>(from: Schema<B, A, R1>, to: Schema<C, B, R2>, options?: { readonly strict: true; }): SchemaClass<C, A, R1 | R2>; <B, A, R1, D, C, R2>(from: Schema<B, A, R1>, to: Schema<D, C, R2>, options: { readonly strict: false; }): SchemaClass<D, A, R1 | R2>; }"
+    "signature": "export declare const compose: { <To extends Schema.Any, From extends Schema.Any, C extends Schema.Type<From>>(to: To & Schema<Schema.Type<To>, C, Schema.Context<To>>): (from: From) => transform<From, To>; <To extends Schema.Any>(to: To): <From extends Schema.Any, B extends Schema.Encoded<To>>(from: From & Schema<B, Schema.Encoded<From>, Schema.Context<From>>) => transform<From, To>; <To extends Schema.Any>(to: To, options?: { readonly strict: true; }): <From extends Schema.Any>(from: From & Schema<Schema.Encoded<To>, Schema.Encoded<From>, Schema.Context<From>>) => transform<From, To>; <To extends Schema.Any>(to: To, options: { readonly strict: false; }): <From extends Schema.Any>(from: From) => transform<From, To>; <From extends Schema.Any, To extends Schema.Any, C extends Schema.Type<From>>(from: From, to: To & Schema<Schema.Type<To>, C, Schema.Context<To>>): transform<From, To>; <From extends Schema.Any, B extends Schema.Encoded<To>, To extends Schema.Any>(from: From & Schema<B, Schema.Encoded<From>, Schema.Context<From>>, to: To): transform<From, To>; <From extends Schema.Any, To extends Schema.Any>(from: From & Schema<Schema.Encoded<To>, Schema.Encoded<From>, Schema.Context<From>>, to: To, options?: { readonly strict: true; }): transform<From, To>; <From extends Schema.Any, To extends Schema.Any>(from: From, to: To, options: { readonly strict: false; }): transform<From, To>; }"
   },
   {
     "_tag": "Constant",
@@ -66735,6 +66809,24 @@
       ]
     },
     "project": "effect",
+    "name": "LengthSchemaId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "schema id",
+    "signature": "export declare const LengthSchemaId: typeof LengthSchemaId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "PatternSchemaId",
     "description": null,
     "deprecated": false,
@@ -66825,6 +66917,24 @@
       ]
     },
     "project": "effect",
+    "name": "UppercasedSchemaId",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "schema id",
+    "signature": "export declare const UppercasedSchemaId: typeof UppercasedSchemaId"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "CapitalizedSchemaId",
     "description": null,
     "deprecated": false,
@@ -66850,42 +66960,6 @@
     "since": "3.10.0",
     "category": "schema id",
     "signature": "export declare const UncapitalizedSchemaId: typeof UncapitalizedSchemaId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "UppercasedSchemaId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "schema id",
-    "signature": "export declare const UppercasedSchemaId: typeof UppercasedSchemaId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "LengthSchemaId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "schema id",
-    "signature": "export declare const LengthSchemaId: typeof LengthSchemaId"
   },
   {
     "_tag": "Constant",
@@ -67353,7 +67427,7 @@
     "examples": [],
     "since": "3.11.10",
     "category": "number constructors",
-    "signature": "export declare const NonNegativeInt: refine<number, Schema<number, number, never>>"
+    "signature": "export declare const NonNegativeInt: refine<number, typeof NonNegative>"
   },
   {
     "_tag": "Constant",
@@ -67444,42 +67518,6 @@
     "since": "3.10.0",
     "category": "schema id",
     "signature": "export declare const BetweenDurationSchemaId: typeof BetweenDurationSchemaId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "Uint8ArrayFromSelf",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Uint8Array constructors",
-    "signature": "export declare const Uint8ArrayFromSelf: Schema<Uint8Array, Uint8Array, never>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "Uint8",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.11.10",
-    "category": "number constructors",
-    "signature": "export declare const Uint8: filter<Schema<number, number, never>>"
   },
   {
     "_tag": "Constant",
@@ -67679,7 +67717,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "ReadonlyArray transformations",
-    "signature": "export declare const headOrElse: { <A>(fallback?: LazyArg<A>): <I, R>(self: Schema<ReadonlyArray<A>, I, R>) => SchemaClass<A, I, R>; <A, I, R>(self: Schema<ReadonlyArray<A>, I, R>, fallback?: LazyArg<A>): SchemaClass<A, I, R>; }"
+    "signature": "export declare const headOrElse: { <S extends Schema.Any, A extends ReadonlyArray<unknown>>(fallback?: LazyArg<A[number]>): (self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => transform<S, SchemaClass<A[number]>>; <S extends Schema.Any, A extends ReadonlyArray<unknown>>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>, fallback?: LazyArg<A[number]>): transform<S, SchemaClass<A[number]>>; }"
   },
   {
     "_tag": "Constant",
@@ -67806,26 +67844,6 @@
     "since": "3.11.8",
     "category": "schema id",
     "signature": "export declare const DateFromSelfSchemaId: typeof DateFromSelfSchemaId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "OptionFromNonEmptyTrimmedString",
-    "description": "Transforms strings into an Option type, effectively filtering out empty or\nwhitespace-only strings by trimming them and checking their length. Returns\n`none` for invalid inputs and `some` for valid non-empty strings.",
-    "deprecated": false,
-    "examples": [
-      "import { Schema } from \"effect\"\n\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\"\")) // Option.none()\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\" a \")) // Option.some(\"a\")\nconsole.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(\"a\")) // Option.some(\"a\")"
-    ],
-    "since": "3.10.0",
-    "category": "Option transformations",
-    "signature": "export declare const OptionFromNonEmptyTrimmedString: transform<typeof String$, OptionFromSelf<typeof NonEmptyTrimmedString>>"
   },
   {
     "_tag": "Constant",
@@ -68060,24 +68078,6 @@
     "since": "3.10.0",
     "category": "schema id",
     "signature": "export declare const BetweenBigDecimalSchemaId: typeof BetweenBigDecimalSchemaId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "Defect",
-    "description": "Defines a schema for handling JavaScript errors (`Error` instances) and other types of defects.\nIt decodes objects into Error instances if they match the expected structure (i.e., have a `message` and optionally a `name` and `stack`),\nor converts other values to their string representations.\n\nWhen encoding, it converts `Error` instances back into plain objects containing only the error's name and message,\nor other values into their string forms.\n\nThis is useful for serializing and deserializing errors across network boundaries where error objects do not natively serialize.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "defect",
-    "signature": "export declare const Defect: Defect"
   },
   {
     "_tag": "Constant",
@@ -68617,7 +68617,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "Uint8Array transformations",
-    "signature": "export declare const Uint8Array: Schema<Uint8Array, readonly number[], never>"
+    "signature": "export declare const Uint8Array: typeof Uint8Array$"
   },
   {
     "_tag": "Export",
@@ -68653,7 +68653,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "Map transformations",
-    "signature": "export declare const Map: <K extends Schema.Any, V extends Schema.Any>({ key, value }: { readonly key: K; readonly value: V; }) => Map$<K, V>"
+    "signature": "export declare const Map: typeof map"
   },
   {
     "_tag": "Export",
@@ -68671,7 +68671,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "Set transformations",
-    "signature": "export declare const Set: <Value extends Schema.Any>(value: Value) => Set$<Value>"
+    "signature": "export declare const Set: typeof set"
   },
   {
     "_tag": "Export",
@@ -68690,6 +68690,42 @@
     "since": "3.12.5",
     "category": null,
     "signature": "export declare const PropertyKey: typeof PropertyKey$"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "asSchema",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": null,
+    "signature": null
   },
   {
     "_tag": "Function",
@@ -68755,6 +68791,42 @@
       ]
     },
     "project": "effect",
+    "name": "ArrayEnsure",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "NonEmptyArrayEnsure",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Struct",
     "description": null,
     "deprecated": false,
@@ -68791,6 +68863,26 @@
       ]
     },
     "project": "effect",
+    "name": "transformLiteral",
+    "description": "Creates a new `Schema` which transforms literal values.",
+    "deprecated": false,
+    "examples": [
+      "import * as S from \"effect/Schema\"\n\nconst schema = S.transformLiteral(0, \"a\")\n\nassert.deepStrictEqual(S.decodeSync(schema)(0), \"a\")"
+    ],
+    "since": "3.10.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "transformLiterals",
     "description": "Creates a new `Schema` which maps between corresponding literal values.",
     "deprecated": false,
@@ -68811,12 +68903,264 @@
       ]
     },
     "project": "effect",
-    "name": "make",
+    "name": "parseNumber",
+    "description": "Transforms a `string` into a `number` by parsing the string using the `parse`\nfunction of the `effect/Number` module.\n\nIt returns an error if the value can't be converted (for example when\nnon-numeric characters are provided).\n\nThe following special string values are supported: \"NaN\", \"Infinity\",\n\"-Infinity\".",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "number transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "Redacted",
+    "description": "A transformation that transform a `Schema<A, I, R>` into a\n`RedactedFromSelf<A>`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Redacted transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "head",
+    "description": "Get the first element of a `ReadonlyArray`, or `None` if the array is empty.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "ReadonlyArray transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "headNonEmpty",
+    "description": "Get the first element of a `NonEmptyReadonlyArray`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.12.0",
+    "category": "NonEmptyReadonlyArray transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "Option",
     "description": null,
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
-    "category": "constructors",
+    "category": "Option transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "OptionFromNullOr",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Option transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "OptionFromNullishOr",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Option transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "OptionFromUndefinedOr",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Option transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "ReadonlyMap",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "ReadonlyMap transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "ReadonlySet",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "ReadonlySet transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "Chunk",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Chunk transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "NonEmptyChunk",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "Chunk transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "HashSet",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "HashSet transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "List",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "List transformations",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "SortedSet",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "SortedSet transformations",
     "signature": null
   },
   {
@@ -68837,24 +69181,6 @@
     ],
     "since": "3.13.0",
     "category": "Standard Schema",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "asSchema",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": null,
     "signature": null
   },
   {
@@ -69373,42 +69699,6 @@
       ]
     },
     "project": "effect",
-    "name": "ArrayEnsure",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "NonEmptyArrayEnsure",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "isPropertySignature",
     "description": null,
     "deprecated": false,
@@ -69721,26 +70011,6 @@
       ]
     },
     "project": "effect",
-    "name": "transformLiteral",
-    "description": "Creates a new `Schema` which transforms literal values.",
-    "deprecated": false,
-    "examples": [
-      "import * as S from \"effect/Schema\"\n\nconst schema = S.transformLiteral(0, \"a\")\n\nassert.deepStrictEqual(S.decodeSync(schema)(0), \"a\")"
-    ],
-    "since": "3.10.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "trimmed",
     "description": "Verifies that a string contains no leading or trailing whitespaces.\n\nNote. This combinator does not make any transformations, it only validates.\nIf what you were looking for was a combinator to trim strings, then check out the `trim` combinator.",
     "deprecated": false,
@@ -69778,6 +70048,24 @@
     },
     "project": "effect",
     "name": "minLength",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "string filters",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "length",
     "description": null,
     "deprecated": false,
     "examples": [],
@@ -69885,6 +70173,24 @@
       ]
     },
     "project": "effect",
+    "name": "uppercased",
+    "description": "Verifies that a string is uppercased.",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.10.0",
+    "category": "string filters",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "capitalized",
     "description": "Verifies that a string is capitalized.",
     "deprecated": false,
@@ -69905,42 +70211,6 @@
     "project": "effect",
     "name": "uncapitalized",
     "description": "Verifies that a string is uncapitalized.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "string filters",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "uppercased",
-    "description": "Verifies that a string is uppercased.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "string filters",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "length",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -70265,24 +70535,6 @@
       ]
     },
     "project": "effect",
-    "name": "parseNumber",
-    "description": "Transforms a `string` into a `number` by parsing the string using the `parse` function of the `effect/Number` module.\n\nIt returns an error if the value can't be converted (for example when non-numeric characters are provided).\n\nThe following special string values are supported: \"NaN\", \"Infinity\", \"-Infinity\".",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "number transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "greaterThanBigInt",
     "description": null,
     "deprecated": false,
@@ -70481,24 +70733,6 @@
       ]
     },
     "project": "effect",
-    "name": "Redacted",
-    "description": "A schema that transforms any type `A` into a `Redacted<A>`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Redacted transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "clampDuration",
     "description": "Clamps a `Duration` between a minimum and a maximum value.",
     "deprecated": false,
@@ -70679,42 +70913,6 @@
       ]
     },
     "project": "effect",
-    "name": "head",
-    "description": "Get the first element of a `ReadonlyArray`, or `None` if the array is empty.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "ReadonlyArray transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "headNonEmpty",
-    "description": "Get the first element of a `NonEmptyReadonlyArray`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "3.12.0",
-    "category": "NonEmptyReadonlyArray transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "validDate",
     "description": "Defines a filter that specifically rejects invalid dates, such as `new\nDate(\"Invalid Date\")`. This filter ensures that only properly formatted and\nvalid date objects are accepted, enhancing data integrity by preventing\nerroneous date values from being processed.",
     "deprecated": false,
@@ -70841,78 +71039,6 @@
       ]
     },
     "project": "effect",
-    "name": "Option",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Option transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "OptionFromNullOr",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Option transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "OptionFromNullishOr",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Option transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "OptionFromUndefinedOr",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Option transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "EitherFromSelf",
     "description": null,
     "deprecated": false,
@@ -71005,24 +71131,6 @@
       ]
     },
     "project": "effect",
-    "name": "ReadonlyMap",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "ReadonlyMap transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "ReadonlyMapFromRecord",
     "description": null,
     "deprecated": false,
@@ -71083,24 +71191,6 @@
     "examples": [],
     "since": "3.10.0",
     "category": "Set",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "ReadonlySet",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "ReadonlySet transformations",
     "signature": null
   },
   {
@@ -71311,24 +71401,6 @@
       ]
     },
     "project": "effect",
-    "name": "Chunk",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Chunk transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "NonEmptyChunkFromSelf",
     "description": null,
     "deprecated": false,
@@ -71347,26 +71419,8 @@
       ]
     },
     "project": "effect",
-    "name": "NonEmptyChunk",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "Chunk transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "DataFromSelf",
-    "description": null,
+    "description": "Type and Encoded must extend `Readonly<Record<string, any>> |\nReadonlyArray<any>` to be compatible with this API.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -71384,7 +71438,7 @@
     },
     "project": "effect",
     "name": "Data",
-    "description": null,
+    "description": "Type and Encoded must extend `Readonly<Record<string, any>> |\nReadonlyArray<any>` to be compatible with this API.",
     "deprecated": false,
     "examples": [],
     "since": "3.10.0",
@@ -71551,24 +71605,6 @@
       ]
     },
     "project": "effect",
-    "name": "HashSet",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "HashSet transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "HashMapFromSelf",
     "description": null,
     "deprecated": false,
@@ -71623,43 +71659,7 @@
       ]
     },
     "project": "effect",
-    "name": "List",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "List transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
     "name": "SortedSetFromSelf",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "3.10.0",
-    "category": "SortedSet transformations",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Schema",
-      "path": [
-        "src",
-        "Schema.ts"
-      ]
-    },
-    "project": "effect",
-    "name": "SortedSet",
     "description": null,
     "deprecated": false,
     "examples": [],
@@ -71913,6 +71913,24 @@
       ]
     },
     "project": "effect",
+    "name": "AnnotableDeclare",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.13.3",
+    "category": "api interface",
+    "signature": "export interface AnnotableDeclare<\n  Self extends declare<A, I, P, R>,\n  A,\n  I = A,\n  P extends ReadonlyArray<Schema.All> = readonly [],\n  R = Schema.Context<P[number]>\n> extends declare<A, I, P, R> {\n  annotations(annotations: Annotations.Schema<A>): Self\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "Array$",
     "description": null,
     "deprecated": false,
@@ -71937,7 +71955,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ArrayEnsure<Value extends Schema.Any> extends\n  AnnotableClass<\n    ArrayEnsure<Value>,\n    ReadonlyArray<Schema.Type<Value>>,\n    Schema.Encoded<Value> | ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface ArrayEnsure<Value extends Schema.Any>\n  extends transform<Union<[Value, Array$<Value>]>, Array$<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -71973,7 +71991,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Cause<E extends Schema.All, D extends Schema.All> extends\n  AnnotableClass<\n    Cause<E, D>,\n    cause_.Cause<Schema.Type<E>>,\n    CauseEncoded<Schema.Encoded<E>, Schema.Encoded<D>>,\n    Schema.Context<E> | Schema.Context<D>\n  >\n{}"
+    "signature": "export interface Cause<E extends Schema.All, D extends Schema.All> extends\n  transform<\n    SchemaClass<\n      CauseEncoded<Schema.Type<E>, Schema.Type<Defect>>,\n      CauseEncoded<Schema.Encoded<E>, Schema.Encoded<Defect>>,\n      Schema.Context<E> | Schema.Context<D>\n    >,\n    CauseFromSelf<SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -71991,7 +72009,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface CauseFromSelf<E extends Schema.All, D extends Schema.All> extends\n  AnnotableClass<\n    CauseFromSelf<E, D>,\n    cause_.Cause<Schema.Type<E>>,\n    cause_.Cause<Schema.Encoded<E>>,\n    Schema.Context<E> | Schema.Context<D>\n  >\n{}"
+    "signature": "export interface CauseFromSelf<E extends Schema.All, D extends Schema.All> extends\n  AnnotableDeclare<\n    CauseFromSelf<E, D>,\n    cause_.Cause<Schema.Type<E>>,\n    cause_.Cause<Schema.Encoded<E>>,\n    [E, D]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72009,7 +72027,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Chunk<Value extends Schema.Any> extends\n  AnnotableClass<\n    Chunk<Value>,\n    chunk_.Chunk<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface Chunk<Value extends Schema.Any>\n  extends transform<Array$<Value>, ChunkFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72027,7 +72045,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ChunkFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    ChunkFromSelf<Value>,\n    chunk_.Chunk<Schema.Type<Value>>,\n    chunk_.Chunk<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface ChunkFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    ChunkFromSelf<Value>,\n    chunk_.Chunk<Schema.Type<Value>>,\n    chunk_.Chunk<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72045,7 +72063,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make<Args extends Array<any>, X>(this: { new(...args: Args): X }, ...args: Args): X\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Struct.Type<Fields & NewFields>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Struct.Type<Fields & NewFields>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Struct.Type<Fields & NewFields>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}"
+    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make<Args extends Array<any>, X>(this: { new(...args: Args): X }, ...args: Args): X\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}"
   },
   {
     "_tag": "Interface",
@@ -72057,13 +72075,31 @@
       ]
     },
     "project": "effect",
-    "name": "Defect",
+    "name": "Data",
     "description": null,
     "deprecated": false,
     "examples": [],
-    "since": "3.10.0",
+    "since": "3.13.3",
     "category": "api interface",
-    "signature": "export interface Defect extends transform<typeof Unknown, typeof Unknown> {}"
+    "signature": "export interface Data<Value extends Schema.Any>\n  extends transform<Value, DataFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "DataFromSelf",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.13.3",
+    "category": "api interface",
+    "signature": "export interface DataFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    DataFromSelf<Value>,\n    Schema.Type<Value>,\n    Schema.Encoded<Value>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72081,7 +72117,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Either<R extends Schema.All, L extends Schema.All> extends\n  AnnotableClass<\n    Either<R, L>,\n    either_.Either<Schema.Type<R>, Schema.Type<L>>,\n    EitherEncoded<Schema.Encoded<R>, Schema.Encoded<L>>,\n    Schema.Context<R> | Schema.Context<L>\n  >\n{}"
+    "signature": "export interface Either<Right extends Schema.All, Left extends Schema.All> extends\n  transform<\n    Union<[\n      Struct<{\n        _tag: Literal<[\"Right\"]>\n        right: Right\n      }>,\n      Struct<{\n        _tag: Literal<[\"Left\"]>\n        left: Left\n      }>\n    ]>,\n    EitherFromSelf<SchemaClass<Schema.Type<Right>>, SchemaClass<Schema.Type<Left>>>\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72099,7 +72135,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface EitherFromSelf<R extends Schema.All, L extends Schema.All> extends\n  AnnotableClass<\n    EitherFromSelf<R, L>,\n    either_.Either<Schema.Type<R>, Schema.Type<L>>,\n    either_.Either<Schema.Encoded<R>, Schema.Encoded<L>>,\n    Schema.Context<R> | Schema.Context<L>\n  >\n{}"
+    "signature": "export interface EitherFromSelf<R extends Schema.All, L extends Schema.All> extends\n  AnnotableDeclare<\n    EitherFromSelf<R, L>,\n    either_.Either<Schema.Type<R>, Schema.Type<L>>,\n    either_.Either<Schema.Encoded<R>, Schema.Encoded<L>>,\n    [R, L]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72117,7 +72153,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface EitherFromUnion<R extends Schema.All, L extends Schema.All> extends\n  AnnotableClass<\n    EitherFromUnion<R, L>,\n    either_.Either<Schema.Type<R>, Schema.Type<L>>,\n    Schema.Encoded<R> | Schema.Encoded<L>,\n    Schema.Context<R> | Schema.Context<L>\n  >\n{}"
+    "signature": "export interface EitherFromUnion<Right extends Schema.All, Left extends Schema.All> extends\n  transform<\n    Union<[\n      transform<Right, Struct<{ _tag: Literal<[\"Right\"]>; right: SchemaClass<Schema.Type<Right>> }>>,\n      transform<Left, Struct<{ _tag: Literal<[\"Left\"]>; right: SchemaClass<Schema.Type<Left>> }>>\n    ]>,\n    EitherFromSelf<SchemaClass<Schema.Type<Right>>, SchemaClass<Schema.Type<Left>>>\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72171,7 +72207,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Exit<A extends Schema.All, E extends Schema.All, D extends Schema.All> extends\n  AnnotableClass<\n    Exit<A, E, D>,\n    exit_.Exit<Schema.Type<A>, Schema.Type<E>>,\n    ExitEncoded<Schema.Encoded<A>, Schema.Encoded<E>, Schema.Encoded<D>>,\n    Schema.Context<A> | Schema.Context<E> | Schema.Context<D>\n  >\n{}"
+    "signature": "export interface Exit<A extends Schema.All, E extends Schema.All, D extends Schema.All> extends\n  transform<\n    Union<[\n      Struct<{\n        _tag: Literal<[\"Failure\"]>\n        cause: SchemaClass<\n          CauseEncoded<Schema.Type<E>, Schema.Type<D>>,\n          CauseEncoded<Schema.Encoded<E>, Schema.Encoded<D>>,\n          Schema.Context<E> | Schema.Context<D>\n        >\n      }>,\n      Struct<{\n        _tag: Literal<[\"Success\"]>\n        value: A\n      }>\n    ]>,\n    ExitFromSelf<SchemaClass<Schema.Type<A>>, SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72189,7 +72225,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ExitFromSelf<A extends Schema.All, E extends Schema.All, D extends Schema.All> extends\n  AnnotableClass<\n    ExitFromSelf<A, E, D>,\n    exit_.Exit<Schema.Type<A>, Schema.Type<E>>,\n    exit_.Exit<Schema.Encoded<A>, Schema.Encoded<E>>,\n    Schema.Context<A> | Schema.Context<E> | Schema.Context<D>\n  >\n{}"
+    "signature": "export interface ExitFromSelf<A extends Schema.All, E extends Schema.All, D extends Schema.All>\n  extends\n    AnnotableDeclare<\n      ExitFromSelf<A, E, D>,\n      exit_.Exit<Schema.Type<A>, Schema.Type<E>>,\n      exit_.Exit<Schema.Encoded<A>, Schema.Encoded<E>>,\n      [A, E, D]\n    >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72225,7 +72261,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface HashMap<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    HashMap<K, V>,\n    hashMap_.HashMap<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyArray<readonly [Schema.Encoded<K>, Schema.Encoded<V>]>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface HashMap<K extends Schema.Any, V extends Schema.Any>\n  extends transform<Array$<Tuple2<K, V>>, HashMapFromSelf<SchemaClass<Schema.Type<K>>, SchemaClass<Schema.Type<V>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72243,7 +72279,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface HashMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    HashMapFromSelf<K, V>,\n    hashMap_.HashMap<Schema.Type<K>, Schema.Type<V>>,\n    hashMap_.HashMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface HashMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableDeclare<\n    HashMapFromSelf<K, V>,\n    hashMap_.HashMap<Schema.Type<K>, Schema.Type<V>>,\n    hashMap_.HashMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    [K, V]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72261,7 +72297,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface HashSet<Value extends Schema.Any> extends\n  AnnotableClass<\n    HashSet<Value>,\n    hashSet_.HashSet<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface HashSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, HashSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72279,7 +72315,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface HashSetFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    HashSetFromSelf<Value>,\n    hashSet_.HashSet<Schema.Type<Value>>,\n    hashSet_.HashSet<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface HashSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    HashSetFromSelf<Value>,\n    hashSet_.HashSet<Schema.Type<Value>>,\n    hashSet_.HashSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72297,7 +72333,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface List<Value extends Schema.Any> extends\n  AnnotableClass<\n    List<Value>,\n    list_.List<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface List<Value extends Schema.Any>\n  extends transform<Array$<Value>, ListFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72315,7 +72351,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ListFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    ListFromSelf<Value>,\n    list_.List<Schema.Type<Value>>,\n    list_.List<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface ListFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    ListFromSelf<Value>,\n    list_.List<Schema.Type<Value>>,\n    list_.List<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72351,7 +72387,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Map$<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    Map$<K, V>,\n    Map<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyArray<readonly [Schema.Encoded<K>, Schema.Encoded<V>]>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface Map$<K extends Schema.Any, V extends Schema.Any>\n  extends transform<Array$<Tuple2<K, V>>, MapFromSelf<SchemaClass<Schema.Type<K>>, SchemaClass<Schema.Type<V>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72369,7 +72405,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface MapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    MapFromSelf<K, V>,\n    Map<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface MapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableDeclare<\n    MapFromSelf<K, V>,\n    Map<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    [K, V]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72387,7 +72423,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface NonEmptyArray<Value extends Schema.Any> extends TupleType<[Value], [Value]> {\n  readonly value: Value\n  annotations(annotations: Annotations.Schema<TupleType.Type<[Value], [Value]>>): NonEmptyArray<Value>\n}"
+    "signature": "export interface NonEmptyArray<Value extends Schema.Any> extends\n  AnnotableClass<\n    NonEmptyArray<Value>,\n    array_.NonEmptyReadonlyArray<Schema.Type<Value>>,\n    array_.NonEmptyReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{\n  readonly elements: readonly [Value]\n  readonly rest: readonly [Value]\n  readonly value: Value\n}"
   },
   {
     "_tag": "Interface",
@@ -72405,7 +72441,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface NonEmptyArrayEnsure<Value extends Schema.Any> extends\n  AnnotableClass<\n    NonEmptyArrayEnsure<Value>,\n    array_.NonEmptyReadonlyArray<Schema.Type<Value>>,\n    Schema.Encoded<Value> | array_.NonEmptyReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface NonEmptyArrayEnsure<Value extends Schema.Any>\n  extends transform<Union<[Value, NonEmptyArray<Value>]>, NonEmptyArray<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72423,7 +72459,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface NonEmptyChunk<Value extends Schema.Any> extends\n  AnnotableClass<\n    NonEmptyChunk<Value>,\n    chunk_.NonEmptyChunk<Schema.Type<Value>>,\n    array_.NonEmptyReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface NonEmptyChunk<Value extends Schema.Any>\n  extends transform<NonEmptyArray<Value>, NonEmptyChunkFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72441,7 +72477,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface NonEmptyChunkFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    NonEmptyChunkFromSelf<Value>,\n    chunk_.NonEmptyChunk<Schema.Type<Value>>,\n    chunk_.NonEmptyChunk<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface NonEmptyChunkFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    NonEmptyChunkFromSelf<Value>,\n    chunk_.NonEmptyChunk<Schema.Type<Value>>,\n    chunk_.NonEmptyChunk<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72495,7 +72531,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Option<Value extends Schema.Any> extends\n  AnnotableClass<\n    Option<Value>,\n    option_.Option<Schema.Type<Value>>,\n    OptionEncoded<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface Option<Value extends Schema.Any> extends\n  transform<\n    Union<[\n      Struct<{ _tag: Literal<[\"None\"]> }>,\n      Struct<{ _tag: Literal<[\"Some\"]>; value: Value }>\n    ]>,\n    OptionFromSelf<SchemaClass<Schema.Type<Value>>>\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72513,7 +72549,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface OptionFromNullOr<Value extends Schema.Any> extends\n  AnnotableClass<\n    OptionFromNullOr<Value>,\n    option_.Option<Schema.Type<Value>>,\n    Schema.Encoded<Value> | null,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface OptionFromNullOr<Value extends Schema.Any>\n  extends transform<NullOr<Value>, OptionFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72531,7 +72567,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface OptionFromNullishOr<Value extends Schema.Any> extends\n  AnnotableClass<\n    OptionFromNullishOr<Value>,\n    option_.Option<Schema.Type<Value>>,\n    Schema.Encoded<Value> | null | undefined,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface OptionFromNullishOr<Value extends Schema.Any>\n  extends transform<NullishOr<Value>, OptionFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72549,7 +72585,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface OptionFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    OptionFromSelf<Value>,\n    option_.Option<Schema.Type<Value>>,\n    option_.Option<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface OptionFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    OptionFromSelf<Value>,\n    option_.Option<Schema.Type<Value>>,\n    option_.Option<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72567,7 +72603,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface OptionFromUndefinedOr<Value extends Schema.Any> extends\n  AnnotableClass<\n    OptionFromUndefinedOr<Value>,\n    option_.Option<Schema.Type<Value>>,\n    Schema.Encoded<Value> | undefined,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface OptionFromUndefinedOr<Value extends Schema.Any>\n  extends transform<UndefinedOr<Value>, OptionFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72603,7 +72639,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ReadonlyMap$<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    ReadonlyMap$<K, V>,\n    ReadonlyMap<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyArray<readonly [Schema.Encoded<K>, Schema.Encoded<V>]>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface ReadonlyMap$<K extends Schema.Any, V extends Schema.Any>\n  extends transform<Array$<Tuple2<K, V>>, ReadonlyMapFromSelf<SchemaClass<Schema.Type<K>>, SchemaClass<Schema.Type<V>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72621,7 +72657,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ReadonlyMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableClass<\n    ReadonlyMapFromSelf<K, V>,\n    ReadonlyMap<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    Schema.Context<K> | Schema.Context<V>\n  >\n{}"
+    "signature": "export interface ReadonlyMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableDeclare<\n    ReadonlyMapFromSelf<K, V>,\n    ReadonlyMap<Schema.Type<K>, Schema.Type<V>>,\n    ReadonlyMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    [K, V]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72639,7 +72675,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ReadonlySet$<Value extends Schema.Any> extends\n  AnnotableClass<\n    ReadonlySet$<Value>,\n    ReadonlySet<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface ReadonlySet$<Value extends Schema.Any>\n  extends transform<Array$<Value>, ReadonlySetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72657,7 +72693,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface ReadonlySetFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    ReadonlySetFromSelf<Value>,\n    ReadonlySet<Schema.Type<Value>>,\n    ReadonlySet<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface ReadonlySetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    ReadonlySetFromSelf<Value>,\n    ReadonlySet<Schema.Type<Value>>,\n    ReadonlySet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72693,7 +72729,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Redacted<Value extends Schema.Any> extends\n  AnnotableClass<\n    Redacted<Value>,\n    redacted_.Redacted<Schema.Type<Value>>,\n    Schema.Encoded<Value>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface Redacted<Value extends Schema.Any>\n  extends transform<Value, RedactedFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72711,7 +72747,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface RedactedFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    RedactedFromSelf<Value>,\n    redacted_.Redacted<Schema.Type<Value>>,\n    redacted_.Redacted<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface RedactedFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    RedactedFromSelf<Value>,\n    redacted_.Redacted<Schema.Type<Value>>,\n    redacted_.Redacted<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72801,7 +72837,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Set$<Value extends Schema.Any> extends\n  AnnotableClass<\n    Set$<Value>,\n    Set<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface Set$<Value extends Schema.Any>\n  extends transform<Array$<Value>, SetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72819,7 +72855,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface SetFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    SetFromSelf<Value>,\n    Set<Schema.Type<Value>>,\n    ReadonlySet<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface SetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    SetFromSelf<Value>,\n    Set<Schema.Type<Value>>,\n    ReadonlySet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -72837,7 +72873,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface SortedSet<Value extends Schema.Any> extends\n  AnnotableClass<\n    SortedSet<Value>,\n    sortedSet_.SortedSet<Schema.Type<Value>>,\n    ReadonlyArray<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface SortedSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, SortedSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}"
   },
   {
     "_tag": "Interface",
@@ -72855,7 +72891,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface SortedSetFromSelf<Value extends Schema.Any> extends\n  AnnotableClass<\n    SortedSetFromSelf<Value>,\n    sortedSet_.SortedSet<Schema.Type<Value>>,\n    sortedSet_.SortedSet<Schema.Encoded<Value>>,\n    Schema.Context<Value>\n  >\n{}"
+    "signature": "export interface SortedSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    SortedSetFromSelf<Value>,\n    sortedSet_.SortedSet<Schema.Type<Value>>,\n    sortedSet_.SortedSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}"
   },
   {
     "_tag": "Interface",
@@ -73011,6 +73047,24 @@
       ]
     },
     "project": "effect",
+    "name": "Tuple2",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.13.3",
+    "category": "api interface",
+    "signature": "export interface Tuple2<Fst extends Schema.Any, Snd extends Schema.Any> extends\n  AnnotableClass<\n    Tuple2<Fst, Snd>,\n    readonly [Schema.Type<Fst>, Schema.Type<Snd>],\n    readonly [Schema.Encoded<Fst>, Schema.Encoded<Snd>],\n    Schema.Context<Fst> | Schema.Context<Snd>\n  >\n{\n  readonly elements: readonly [Fst, Snd]\n  readonly rest: readonly []\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "TupleType",
     "description": null,
     "deprecated": false,
@@ -73071,7 +73125,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Union<Members extends ReadonlyArray<Schema.All>> extends\n  AnnotableClass<\n    Union<Members>,\n    Schema.Type<Members[number]>,\n    Schema.Encoded<Members[number]>,\n    Schema.Context<Members[number]>\n  >\n{\n  readonly members: Readonly<Members>\n  annotations(annotations: Annotations.Schema<Schema.Type<Members[number]>>): Union<Members>\n}"
+    "signature": "export interface Union<Members extends ReadonlyArray<Schema.All>> extends\n  AnnotableClass<\n    Union<Members>,\n    Schema.Type<Members[number]>,\n    Schema.Encoded<Members[number]>,\n    Schema.Context<Members[number]>\n  >\n{\n  readonly members: Readonly<Members>\n}"
   },
   {
     "_tag": "Interface",
@@ -73107,7 +73161,25 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface brand<S extends Schema.Any, B extends string | symbol>\n  extends BrandSchema<Schema.Type<S> & Brand<B>, Schema.Encoded<S>, Schema.Context<S>>\n{\n  annotations(annotations: Annotations.Schema<Schema.Type<S> & Brand<B>>): brand<S, B>\n}"
+    "signature": "export interface brand<S extends Schema.Any, B extends string | symbol>\n  extends BrandSchema<Schema.Type<S> & Brand<B>, Schema.Encoded<S>, Schema.Context<S>>\n{\n  readonly from: S\n  annotations(annotations: Annotations.Schema<Schema.Type<S> & Brand<B>>): brand<S, B>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
+    "name": "declare",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.13.3",
+    "category": "api interface",
+    "signature": "export interface declare<\n  A,\n  I = A,\n  P extends ReadonlyArray<Schema.All> = readonly [],\n  R = Schema.Context<P[number]>\n> extends AnnotableClass<declare<A, I, P, R>, A, I, R> {\n  readonly typeParameters: Readonly<P>\n}"
   },
   {
     "_tag": "Interface",
@@ -73179,7 +73251,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface instanceOf<A> extends AnnotableClass<instanceOf<A>, A> {}"
+    "signature": "export interface instanceOf<A> extends AnnotableDeclare<instanceOf<A>, A> {}"
   },
   {
     "_tag": "Interface",
@@ -73323,7 +73395,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface transform<From extends Schema.Any, To extends Schema.Any> extends transformOrFail<From, To> {\n  annotations(annotations: Annotations.Schema<Schema.Type<To>>): transform<From, To>\n}"
+    "signature": "export interface transform<From extends Schema.All, To extends Schema.All> extends transformOrFail<From, To> {\n  annotations(annotations: Annotations.Schema<Schema.Type<To>>): transform<From, To>\n}"
   },
   {
     "_tag": "Interface",
@@ -73341,7 +73413,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface transformLiteral<Type, Encoded> extends Annotable<transformLiteral<Type, Encoded>, Type, Encoded> {}"
+    "signature": "export interface transformLiteral<Type extends AST.LiteralValue, Encoded extends AST.LiteralValue>\n  extends transform<Literal<[Encoded]>, Literal<[Type]>>\n{\n  annotations(annotations: Annotations.Schema<Type>): transformLiteral<Type, Encoded>\n}"
   },
   {
     "_tag": "Interface",
@@ -73359,7 +73431,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface transformOrFail<From extends Schema.Any, To extends Schema.Any, R = never> extends\n  AnnotableClass<\n    transformOrFail<From, To, R>,\n    Schema.Type<To>,\n    Schema.Encoded<From>,\n    Schema.Context<From> | Schema.Context<To> | R\n  >\n{\n  readonly from: From\n  readonly to: To\n}"
+    "signature": "export interface transformOrFail<From extends Schema.All, To extends Schema.All, R = never> extends\n  AnnotableClass<\n    transformOrFail<From, To, R>,\n    Schema.Type<To>,\n    Schema.Encoded<From>,\n    Schema.Context<From> | Schema.Context<To> | R\n  >\n{\n  readonly from: From\n  readonly to: To\n}"
   },
   {
     "_tag": "TypeAlias",

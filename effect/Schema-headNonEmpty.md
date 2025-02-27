@@ -13,7 +13,7 @@ Schema.headNonEmpty
 **Signature**
 
 ```ts
-export declare const headNonEmpty: <A, I, R>(
-  self: Schema<array_.NonEmptyReadonlyArray<A>, I, R>
-) => SchemaClass<A, I, R>
+export declare function headNonEmpty<S extends Schema.Any, A extends array_.NonEmptyReadonlyArray<unknown>>(
+  self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>
+): transform<S, SchemaClass<A[number]>>
 ```
