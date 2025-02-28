@@ -73875,6 +73875,24 @@
       ]
     },
     "project": "effect",
+    "name": "MakeOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "3.13.4",
+    "category": "Constructor utils",
+    "signature": "export type MakeOptions = boolean | {\n  readonly disableValidation?: boolean | undefined\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Schema",
+      "path": [
+        "src",
+        "Schema.ts"
+      ]
+    },
+    "project": "effect",
     "name": "MaxItemsSchemaId",
     "description": null,
     "deprecated": false,
