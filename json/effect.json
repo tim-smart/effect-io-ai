@@ -42049,7 +42049,7 @@
     ],
     "since": "1.0.0",
     "category": "Defining patterns",
-    "signature": "export declare const discriminator: <D extends string>(field: D) => <R, P extends Types.Tags<D, R> & string, Ret, B extends Ret>(...pattern: [first: P, ...values: Array<P>, f: (_: Extract<R, Record<D, P>>) => B]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, P>>>>, B | A, Pr, Ret>"
+    "signature": "export declare const discriminator: <D extends string>(field: D) => <R, P extends Types.Tags<D, R> & string, Ret, Fn extends (_: Extract<R, Record<D, P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, P>>>>, A | ReturnType<Fn>, Pr, Ret>"
   },
   {
     "_tag": "Constant",
@@ -42069,7 +42069,7 @@
     ],
     "since": "1.0.0",
     "category": "Defining patterns",
-    "signature": "export declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, B extends Ret>(pattern: P, f: (_: Extract<R, Record<D, `${P}${string}`>>) => B) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, B | A, Pr, Ret>"
+    "signature": "export declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>"
   },
   {
     "_tag": "Constant",
@@ -42129,7 +42129,7 @@
     ],
     "since": "1.0.0",
     "category": "Defining patterns",
-    "signature": "export declare const tag: <R, P extends Types.Tags<\"_tag\", R> & string, Ret, B extends Ret>(...pattern: [first: P, ...values: Array<P>, f: (_: Extract<T.NoInfer<R>, Record<\"_tag\", P>>) => B]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", P>>>>, B | A, Pr, Ret>"
+    "signature": "export declare const tag: <R, P extends Types.Tags<\"_tag\", R> & string, Ret, Fn extends (_: Extract<R, Record<\"_tag\", P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", P>>>>, ReturnType<Fn> | A, Pr, Ret>"
   },
   {
     "_tag": "Constant",
@@ -42149,7 +42149,7 @@
     ],
     "since": "1.0.0",
     "category": "Defining patterns",
-    "signature": "export declare const tagStartsWith: <R, P extends string, Ret, B extends Ret>(pattern: P, f: (_: Extract<T.NoInfer<R>, Record<\"_tag\", `${P}${string}`>>) => B) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", `${P}${string}`>>>>, B | A, Pr, Ret>"
+    "signature": "export declare const tagStartsWith: <R, P extends string, Ret, Fn extends (_: Extract<R, Record<\"_tag\", `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<\"_tag\", `${P}${string}`>>>>, ReturnType<Fn> | A, Pr, Ret>"
   },
   {
     "_tag": "Constant",
@@ -99631,7 +99631,7 @@
     ],
     "since": "3.1.0",
     "category": "types",
-    "signature": "export type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<K>, DeepMutable<V>>\n  : T extends ReadonlySet<infer V> ? Set<DeepMutable<V>>\n  : [keyof T] extends [never] ? T\n  : { -readonly [K in keyof T]: DeepMutable<T[K]> }"
+    "signature": "export type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<K>, DeepMutable<V>>\n  : T extends ReadonlySet<infer V> ? Set<DeepMutable<V>>\n  : T extends string | number | boolean | bigint | symbol ? T\n  : { -readonly [K in keyof T]: DeepMutable<T[K]> }"
   },
   {
     "_tag": "TypeAlias",
