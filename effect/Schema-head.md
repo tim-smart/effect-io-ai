@@ -13,5 +13,7 @@ Schema.head
 **Signature**
 
 ```ts
-export declare const head: <A, I, R>(self: Schema<ReadonlyArray<A>, I, R>) => SchemaClass<option_.Option<A>, I, R>
+export declare function head<S extends Schema.Any, A extends ReadonlyArray<unknown>>(
+  self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>
+): transform<S, OptionFromSelf<SchemaClass<A[number]>>>
 ```

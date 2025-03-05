@@ -13,7 +13,7 @@ Schema.int
 **Signature**
 
 ```ts
-export declare const int: <A extends number>(
-  annotations?: Annotations.Filter<A>
-) => <I, R>(self: Schema<A, I, R>) => filter<Schema<A, I, R>>
+export declare const int: <S extends Schema.Any>(
+  annotations?: Annotations.Filter<Schema.Type<S>>
+) => <A extends number>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```

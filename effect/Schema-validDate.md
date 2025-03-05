@@ -16,7 +16,7 @@ Schema.validDate
 **Signature**
 
 ```ts
-export declare const validDate: (
-  annotations?: Annotations.Filter<Date>
-) => <I, R>(self: Schema<Date, I, R>) => filter<Schema<Date, I, R>>
+export declare const validDate: <S extends Schema.Any>(
+  annotations?: Annotations.Filter<Schema.Type<S>>
+) => <A extends Date>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```

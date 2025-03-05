@@ -44,16 +44,16 @@ console.log(match({ type: "A.A" })) // 1
 ```ts
 export declare const discriminatorStartsWith: <D extends string>(
   field: D
-) => <R, P extends string, Ret, B extends Ret>(
+) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(
   pattern: P,
-  f: (_: Extract<R, Record<D, `${P}${string}`>>) => B
+  f: Fn
 ) => <I, F, A, Pr>(
   self: Matcher<I, F, R, A, Pr, Ret>
 ) => Matcher<
   I,
   Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>,
   Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>,
-  B | A,
+  A | ReturnType<Fn>,
   Pr,
   Ret
 >

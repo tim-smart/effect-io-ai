@@ -51,15 +51,20 @@ console.log(match({ _tag: "error", error: new Error("Oops!") }))
 **Signature**
 
 ```ts
-export declare const tag: <R, P extends Types.Tags<"_tag", R> & string, Ret, B extends Ret>(
-  ...pattern: [first: P, ...values: Array<P>, f: (_: Extract<T.NoInfer<R>, Record<"_tag", P>>) => B]
+export declare const tag: <
+  R,
+  P extends Types.Tags<"_tag", R> & string,
+  Ret,
+  Fn extends (_: Extract<R, Record<"_tag", P>>) => Ret
+>(
+  ...pattern: [first: P, ...values: Array<P>, f: Fn]
 ) => <I, F, A, Pr>(
   self: Matcher<I, F, R, A, Pr, Ret>
 ) => Matcher<
   I,
   Types.AddWithout<F, Extract<R, Record<"_tag", P>>>,
   Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>>,
-  B | A,
+  ReturnType<Fn> | A,
   Pr,
   Ret
 >

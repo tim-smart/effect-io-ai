@@ -1,0 +1,650 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./Generated.js\"",
+    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as Generated from \"./Generated.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiClient.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiClient.js\" module as `OpenAiClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiClient from \"./OpenAiClient.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiCompletions.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiCompletions.js\" module as `OpenAiCompletions`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiCompletions from \"./OpenAiCompletions.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiConfig.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiConfig.js\" module as `OpenAiConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiConfig from \"./OpenAiConfig.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiEmbeddings.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiEmbeddings.js\" module as `OpenAiEmbeddings`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiEmbeddings from \"./OpenAiEmbeddings.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiTelemetry.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiTelemetry.js\" module as `OpenAiTelemetry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiTelemetry from \"./OpenAiTelemetry.js\""
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index",
+      "path": [
+        "src",
+        "index.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "From \"./OpenAiTokenizer.js\"",
+    "description": "Re-exports all named exports from the \"./OpenAiTokenizer.js\" module as `OpenAiTokenizer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "exports",
+    "signature": "export * as OpenAiTokenizer from \"./OpenAiTokenizer.js\""
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiClient",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class OpenAiClient"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "StreamChunk",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export declare class StreamChunk"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layerConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "ContentPart",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ContentPart {\n  readonly _tag: \"Content\"\n  readonly name?: string\n  readonly content: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "ToolCallPart",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ToolCallPart {\n  readonly _tag: \"ToolCall\"\n  readonly id: string\n  readonly name: string\n  readonly arguments: unknown\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "UsagePart",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UsagePart {\n  readonly _tag: \"Usage\"\n  readonly id: string\n  readonly model: string\n  readonly inputTokens: number\n  readonly outputTokens: number\n  readonly finishReasons: ReadonlyArray<string>\n  readonly systemFingerprint: string\n  readonly serviceTier: string | null\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "StreamChunkPart",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type StreamChunkPart = ContentPart | ToolCallPart | UsagePart"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient",
+      "path": [
+        "src",
+        "OpenAiClient.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "StreamCompletionRequest",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type StreamCompletionRequest = Omit<typeof Generated.CreateChatCompletionRequest.Encoded, \"stream\">"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "Config",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class Config"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "withConfigOverride",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "export declare const withConfigOverride: { (overrides: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: Config.Service): Effect.Effect<A, E, R>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "model",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "ai models",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layerCompletions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiCompletions",
+      "path": [
+        "src",
+        "OpenAiCompletions.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "Model",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Model = typeof Generated.CreateChatCompletionRequestModelEnum.Encoded"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiConfig",
+      "path": [
+        "src",
+        "OpenAiConfig.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiConfig",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class OpenAiConfig"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiConfig",
+      "path": [
+        "src",
+        "OpenAiConfig.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "withClientTransform",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "export declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "Config",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "export declare class Config"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "withConfigOverride",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "export declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "model",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "ai models",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layerDataLoader",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiEmbeddings",
+      "path": [
+        "src",
+        "OpenAiEmbeddings.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "Model",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type Model = typeof Generated.CreateEmbeddingRequestModelEnum.Encoded"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiTelemetry",
+      "path": [
+        "src",
+        "OpenAiTelemetry.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "addGenAIAnnotations",
+    "description": "Applies the specified OpenAi GenAI telemetry attributes to the provided\n`Span`.\n\n**NOTE**: This method will mutate the `Span` **in-place**.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export declare const addGenAIAnnotations: ((options: OpenAiTelemetryAttributeOptions) => (span: Span) => void) & ((span: Span, options: OpenAiTelemetryAttributeOptions) => void)"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry",
+      "path": [
+        "src",
+        "OpenAiTelemetry.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiTelemetryAttributeOptions",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export type OpenAiTelemetryAttributeOptions = AiTelemetry.GenAITelemetryAttributeOptions & {\n  openai?: {\n    request?: OpenAiTelemetry.RequestAttributes | undefined\n    response?: OpenAiTelemetry.ResponseAttributes | undefined\n  } | undefined\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry",
+      "path": [
+        "src",
+        "OpenAiTelemetry.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiTelemetryAttributes",
+    "description": "The attributes used to describe telemetry in the context of Generative\nArtificial Intelligence (GenAI) Models requests and responses.\n\n{@see https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/}",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type OpenAiTelemetryAttributes = Simplify<\n  & AiTelemetry.GenAITelemetryAttributes\n  & AiTelemetry.GenAI.AttributesWithPrefix<OpenAiTelemetry.RequestAttributes, \"gen_ai.openai.request\">\n  & AiTelemetry.GenAI.AttributesWithPrefix<OpenAiTelemetry.ResponseAttributes, \"gen_ai.openai.request\">\n>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiTokenizer",
+      "path": [
+        "src",
+        "OpenAiTokenizer.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "make",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": null
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiTokenizer",
+      "path": [
+        "src",
+        "OpenAiTokenizer.ts"
+      ]
+    },
+    "project": "@effect/ai-openai",
+    "name": "layer",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": null
+  }
+]

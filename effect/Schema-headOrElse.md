@@ -16,7 +16,12 @@ Schema.headOrElse
 
 ```ts
 export declare const headOrElse: {
-  <A>(fallback?: LazyArg<A>): <I, R>(self: Schema<ReadonlyArray<A>, I, R>) => SchemaClass<A, I, R>
-  <A, I, R>(self: Schema<ReadonlyArray<A>, I, R>, fallback?: LazyArg<A>): SchemaClass<A, I, R>
+  <S extends Schema.Any, A extends ReadonlyArray<unknown>>(
+    fallback?: LazyArg<A[number]>
+  ): (self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => transform<S, SchemaClass<A[number]>>
+  <S extends Schema.Any, A extends ReadonlyArray<unknown>>(
+    self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>,
+    fallback?: LazyArg<A[number]>
+  ): transform<S, SchemaClass<A[number]>>
 }
 ```

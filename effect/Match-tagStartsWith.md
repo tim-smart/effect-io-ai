@@ -37,16 +37,21 @@ console.log(match({ _tag: "A.A" })) // 1
 **Signature**
 
 ```ts
-export declare const tagStartsWith: <R, P extends string, Ret, B extends Ret>(
+export declare const tagStartsWith: <
+  R,
+  P extends string,
+  Ret,
+  Fn extends (_: Extract<R, Record<"_tag", `${P}${string}`>>) => Ret
+>(
   pattern: P,
-  f: (_: Extract<T.NoInfer<R>, Record<"_tag", `${P}${string}`>>) => B
+  f: Fn
 ) => <I, F, A, Pr>(
   self: Matcher<I, F, R, A, Pr, Ret>
 ) => Matcher<
   I,
   Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>,
   Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>>,
-  B | A,
+  ReturnType<Fn> | A,
   Pr,
   Ret
 >

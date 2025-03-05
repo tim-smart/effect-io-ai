@@ -29,7 +29,7 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const unzip: <S extends Iterable<readonly [any, any]> | NonEmptyReadonlyArray<readonly [any, any]>>(
+export declare const unzip: <S extends Iterable<readonly [any, any]>>(
   self: S
 ) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]>
   ? [NonEmptyArray<A>, NonEmptyArray<B>]

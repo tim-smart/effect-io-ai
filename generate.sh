@@ -48,10 +48,10 @@ for repo in ${repos[@]}; do
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
   mkdir -p "../json"
-  cp -r docs/ai/*.md "../$repo_name" || true
-  cp -r docs/*.json "../json" || true
   cp -r packages/*/docs/ai/*.md "../$repo_name" || true
   cp -r packages/*/docs/*.json "../json" || true
+  cp -r packages/ai/*/docs/ai/*.md "../$repo_name" || true
+  cp -r packages/ai/*/docs/*.json "../json" || true
 
   cd ..
 done

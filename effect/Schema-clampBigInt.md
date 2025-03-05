@@ -16,5 +16,7 @@ Schema.clampBigInt
 export declare const clampBigInt: (
   minimum: bigint,
   maximum: bigint
-) => <A extends bigint, I, R>(self: Schema<A, I, R>) => transform<Schema<A, I, R>, filter<Schema<A>>>
+) => <S extends Schema.Any, A extends bigint>(
+  self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>
+) => transform<S, filter<SchemaClass<A>>>
 ```

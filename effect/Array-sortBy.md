@@ -42,7 +42,7 @@ assert.deepStrictEqual(result, [
 **Signature**
 
 ```ts
-export declare const sortBy: <S extends Iterable<any> | NonEmptyReadonlyArray<any>>(
+export declare const sortBy: <S extends Iterable<any>>(
   ...orders: ReadonlyArray<Order.Order<ReadonlyArray.Infer<S>>>
 ) => (
   self: S

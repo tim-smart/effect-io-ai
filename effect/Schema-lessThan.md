@@ -13,8 +13,8 @@ Schema.lessThan
 **Signature**
 
 ```ts
-export declare const lessThan: <A extends number>(
+export declare const lessThan: <S extends Schema.Any>(
   exclusiveMaximum: number,
-  annotations?: Annotations.Filter<A>
-) => <I, R>(self: Schema<A, I, R>) => filter<Schema<A, I, R>>
+  annotations?: Annotations.Filter<Schema.Type<S>>
+) => <A extends number>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```

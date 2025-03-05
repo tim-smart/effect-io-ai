@@ -13,5 +13,5 @@ Schema.NonNegativeInt
 **Signature**
 
 ```ts
-export declare const NonNegativeInt: refine<number, Schema<number, number, never>>
+export declare const NonNegativeInt: refine<number, typeof NonNegative>
 ```

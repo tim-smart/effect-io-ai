@@ -1,6 +1,7 @@
 # Redacted
 
-A schema that transforms any type `A` into a `Redacted<A>`.
+A transformation that transform a `Schema<A, I, R>` into a
+`RedactedFromSelf<A>`.
 
 To import and use `Redacted` from the "Schema" module:
 
@@ -13,5 +14,5 @@ Schema.Redacted
 **Signature**
 
 ```ts
-export declare const Redacted: <Value extends Schema.Any>(value: Value) => Redacted<Value>
+export declare function Redacted<Value extends Schema.Any>(value: Value): Redacted<Value>
 ```

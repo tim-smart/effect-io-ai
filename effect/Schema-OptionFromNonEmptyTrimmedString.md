@@ -21,12 +21,3 @@ console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)("")) // Op
 console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)(" a ")) // Option.some("a")
 console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)("a")) // Option.some("a")
 ```
-
-**Signature**
-
-```ts
-export declare const OptionFromNonEmptyTrimmedString: transform<
-  typeof String$,
-  OptionFromSelf<typeof NonEmptyTrimmedString>
->
-```
