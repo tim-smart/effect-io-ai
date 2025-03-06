@@ -232,13 +232,16 @@ const program = Effect.all(effects, { mode: "validate" })
 ```ts
 export declare const all: <
   const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>,
-  O extends {
-    readonly concurrency?: Concurrency | undefined
-    readonly batching?: boolean | "inherit" | undefined
-    readonly discard?: boolean | undefined
-    readonly mode?: "default" | "validate" | "either" | undefined
-    readonly concurrentFinalizers?: boolean | undefined
-  }
+  O extends NoExcessProperties<
+    {
+      readonly concurrency?: Concurrency | undefined
+      readonly batching?: boolean | "inherit" | undefined
+      readonly discard?: boolean | undefined
+      readonly mode?: "default" | "validate" | "either" | undefined
+      readonly concurrentFinalizers?: boolean | undefined
+    },
+    O
+  >
 >(
   arg: Arg,
   options?: O

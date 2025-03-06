@@ -1,7 +1,11 @@
 # fromEnv
 
-A config provider that loads configuration from context variables,
-using the default System service.
+A config provider that loads configuration from context variables
+
+**Options**:
+
+- `pathDelim`: The delimiter for the path segments (default: `"_"`).
+- `seqDelim`: The delimiter for the sequence of values (default: `","`).
 
 To import and use `fromEnv` from the "ConfigProvider" module:
 
@@ -14,5 +18,5 @@ ConfigProvider.fromEnv
 **Signature**
 
 ```ts
-export declare const fromEnv: (config?: ConfigProvider.FromEnvConfig) => ConfigProvider
+export declare const fromEnv: (options?: Partial<ConfigProvider.FromEnvConfig>) => ConfigProvider
 ```

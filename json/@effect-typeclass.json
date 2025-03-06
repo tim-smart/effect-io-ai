@@ -2381,7 +2381,7 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "export type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n  readonly batching?: boolean | \"inherit\" | undefined\n}"
+    "signature": "export type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n}"
   },
   {
     "_tag": "Constant",

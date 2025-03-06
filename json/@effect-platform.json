@@ -6191,7 +6191,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "export declare const retry: { <E, O extends Effect.Retry.Options<E>>(options: O): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, O extends Effect.Retry.Options<E>>(self: HttpClient.With<E, R>, options: O): Retry.Return<R, E, O>; <E, R, B, R1>(self: HttpClient.With<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient.With<E, R1 | R>; }"
+    "signature": "export declare const retry: { <E, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(options: O): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(self: HttpClient.With<E, R>, options: O): Retry.Return<R, E, O>; <E, R, B, R1>(self: HttpClient.With<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient.With<E, R1 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -12956,7 +12956,7 @@
     },
     "project": "@effect/platform",
     "name": "fromApi",
-    "description": "Converts an `HttpApi` instance into an OpenAPI Specification object.\n\n**Details**\n\nThis function takes an `HttpApi` instance, which defines a structured API,\nand generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec\nadheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as\npaths, operations, security schemes, and components. The function processes\nthe API's annotations, middleware, groups, and endpoints to build a complete\nand accurate representation of the API in OpenAPI format.\n\nThe function also deduplicates schemas, applies transformations, and\nintegrates annotations like descriptions, summaries, external documentation,\nand overrides. Cached results are used for better performance when the same\n`HttpApi` instance is processed multiple times.",
+    "description": "Converts an `HttpApi` instance into an OpenAPI Specification object.\n\n**Details**\n\nThis function takes an `HttpApi` instance, which defines a structured API,\nand generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec\nadheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as\npaths, operations, security schemes, and components. The function processes\nthe API's annotations, middleware, groups, and endpoints to build a complete\nand accurate representation of the API in OpenAPI format.\n\nThe function also deduplicates schemas, applies transformations, and\nintegrates annotations like descriptions, summaries, external documentation,\nand overrides. Cached results are used for better performance when the same\n`HttpApi` instance is processed multiple times.\n\n**Options**\n\n- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:\n  - `\"strict\"`: Disallow additional properties (default behavior).\n  - `\"allow\"`: Allow additional properties.",
     "deprecated": false,
     "examples": [
       "import { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from \"@effect/platform\"\nimport { Schema } from \"effect\"\n\nconst api = HttpApi.make(\"api\").add(\n  HttpApiGroup.make(\"group\").add(\n    HttpApiEndpoint.get(\"get\", \"/items\")\n      .addSuccess(Schema.Array(Schema.String))\n  )\n)\n\nconst spec = OpenApi.fromApi(api)\n\n// console.log(JSON.stringify(spec, null, 2))\n// Output: OpenAPI specification in JSON format"
@@ -13245,6 +13245,24 @@
       ]
     },
     "project": "@effect/platform",
+    "name": "AdditionalPropertiesStrategy",
+    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export type AdditionalPropertiesStrategy = \"allow\" | \"strict\""
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenApi",
+      "path": [
+        "src",
+        "OpenApi.ts"
+      ]
+    },
+    "project": "@effect/platform",
     "name": "OpenAPISecurityRequirement",
     "description": null,
     "deprecated": false,
@@ -13408,7 +13426,7 @@
     },
     "project": "@effect/platform",
     "name": "makeWithDefs",
-    "description": "Creates a schema with additional options and definitions.\n\n- `defs`: A record of definitions that are included in the schema.\n- `defsPath`: The path to the definitions within the schema (defaults to \"#/$defs/\").\n- `topLevelReferenceStrategy`: Controls the handling of the top-level reference. Possible values are:\n  - `\"keep\"`: Keep the top-level reference (default behavior).\n  - `\"skip\"`: Skip the top-level reference.",
+    "description": "Creates a schema with additional options and definitions.\n\n**Options**\n\n- `defs`: A record of definitions that are included in the schema.\n- `defsPath`: The path to the definitions within the schema (defaults to \"#/$defs/\").\n- `topLevelReferenceStrategy`: Controls the handling of the top-level reference. Possible values are:\n  - `\"keep\"`: Keep the top-level reference (default behavior).\n  - `\"skip\"`: Skip the top-level reference.\n- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:\n  - `\"strict\"`: Disallow additional properties (default behavior).\n  - `\"allow\"`: Allow additional properties.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
