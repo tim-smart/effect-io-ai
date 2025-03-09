@@ -36,5 +36,8 @@ const standardSchema = Schema.standardSchemaV1(schema)
 **Signature**
 
 ```ts
-export declare const standardSchemaV1: <A, I>(schema: Schema<A, I, never>) => StandardSchemaV1<I, A>
+export declare const standardSchemaV1: <A, I>(
+  schema: Schema<A, I, never>,
+  overrideOptions?: AST.ParseOptions
+) => StandardSchemaV1<I, A>
 ```
