@@ -1,17 +1,13 @@
-# toArray
+## toArray
 
 Collects all elements into a `Array`.
-
-To import and use `toArray` from the "TSet" module:
-
-```ts
-import * as TSet from "effect/TSet"
-// Can be accessed like this
-TSet.toArray
-```
 
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: TSet<A>) => STM.STM<Array<A>>
+declare const toArray: <A>(self: TSet<A>) => STM.STM<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TSet.ts#L323)
+
+Since v2.0.0

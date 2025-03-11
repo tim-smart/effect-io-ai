@@ -1,24 +1,14 @@
-# sendMessageToLocalEntityManagerWithoutRetries
+## sendMessageToLocalEntityManagerWithoutRetries
 
 Sends a raw message to the local entity manager without performing reties.
 Those are up to the caller.
 
-To import and use `sendMessageToLocalEntityManagerWithoutRetries` from the "Sharding" module:
-
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
-// Can be accessed like this
-Sharding.sendMessageToLocalEntityManagerWithoutRetries
-```
-
 **Signature**
 
 ```ts
-export declare const sendMessageToLocalEntityManagerWithoutRetries: (
-  message: SerializedEnvelope.SerializedEnvelope
-) => Effect.Effect<
-  MessageState.MessageState<SerializedMessage.SerializedMessage>,
-  ShardingException.ShardingException,
-  Sharding
->
+declare const sendMessageToLocalEntityManagerWithoutRetries: (message: SerializedEnvelope.SerializedEnvelope) => Effect.Effect<MessageState.MessageState<SerializedMessage.SerializedMessage>, ShardingException.ShardingException, Sharding>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L199)
+
+Since v1.0.0

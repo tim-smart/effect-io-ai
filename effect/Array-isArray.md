@@ -1,29 +1,22 @@
-# isArray
+## isArray
 
 Determine if `unknown` is an Array.
-
-To import and use `isArray` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.isArray
-```
 
 **Example**
 
 ```ts
-import { isArray } from "effect/Array"
+import { Array } from "effect"
 
-assert.deepStrictEqual(isArray(null), false)
-assert.deepStrictEqual(isArray([1, 2, 3]), true)
+console.log(Array.isArray(null)) // false
+console.log(Array.isArray([1, 2, 3])) // true
 ```
 
 **Signature**
 
 ```ts
-export declare const isArray: {
-  (self: unknown): self is Array<unknown>
-  <T>(self: T): self is Extract<T, ReadonlyArray<any>>
-}
+declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L517)
+
+Since v2.0.0

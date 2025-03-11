@@ -1,17 +1,13 @@
-# testClock
+## testClock
 
 Retrieves the `TestClock` service for this test.
-
-To import and use `testClock` from the "TestClock" module:
-
-```ts
-import * as TestClock from "effect/TestClock"
-// Can be accessed like this
-TestClock.testClock
-```
 
 **Signature**
 
 ```ts
-export declare const testClock: () => Effect.Effect<TestClock>
+declare const testClock: () => Effect.Effect<TestClock>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L529)
+
+Since v2.0.0

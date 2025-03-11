@@ -1,12 +1,17 @@
-# Close
+## Close
 
 Close the current substream with a given value and pass execution to the
 next substream
 
-To import and use `Close` from the "ChildExecutorDecision" module:
+**Signature**
 
 ```ts
-import * as ChildExecutorDecision from "effect/ChildExecutorDecision"
-// Can be accessed like this
-ChildExecutorDecision.Close
+export interface Close extends ChildExecutorDecision.Proto {
+  readonly _tag: "Close"
+  readonly value: unknown
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ChildExecutorDecision.ts#L54)
+
+Since v2.0.0

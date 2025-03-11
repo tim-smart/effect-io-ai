@@ -1,18 +1,14 @@
-# isSequential
+## isSequential
 
 Returns `true` if the specified `ExecutionStrategy` is an instance of
 `Sequential`, `false` otherwise.
 
-To import and use `isSequential` from the "ExecutionStrategy" module:
-
-```ts
-import * as ExecutionStrategy from "effect/ExecutionStrategy"
-// Can be accessed like this
-ExecutionStrategy.isSequential
-```
-
 **Signature**
 
 ```ts
-export declare const isSequential: (self: ExecutionStrategy) => self is Sequential
+declare const isSequential: (self: ExecutionStrategy) => self is Sequential
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ExecutionStrategy.ts#L81)
+
+Since v2.0.0

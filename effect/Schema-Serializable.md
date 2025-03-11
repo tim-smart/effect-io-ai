@@ -1,12 +1,16 @@
-# Serializable
+## Serializable
 
 The `Serializable` trait allows objects to define their own schema for
 serialization.
 
-To import and use `Serializable` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.Serializable
+export interface Serializable<A, I, R> {
+  readonly [symbolSerializable]: Schema<A, I, R>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10087)
+
+Since v3.10.0

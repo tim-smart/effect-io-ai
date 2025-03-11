@@ -1,17 +1,13 @@
-# keyof
+## keyof
 
 Equivalent at runtime to the TypeScript type-level `keyof` operator.
-
-To import and use `keyof` from the "SchemaAST" module:
-
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.keyof
-```
 
 **Signature**
 
 ```ts
-export declare const keyof: (ast: AST) => AST
+declare const keyof: (ast: AST) => AST
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2093)
+
+Since v3.10.0

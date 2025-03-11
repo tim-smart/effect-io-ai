@@ -1,17 +1,13 @@
-# slash
+## slash
 
 A document containing a single `/` character.
-
-To import and use `slash` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.slash
-```
 
 **Signature**
 
 ```ts
-export declare const slash: Doc<never>
+declare const slash: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L831)
+
+Since v1.0.0

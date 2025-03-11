@@ -1,4 +1,4 @@
-# disconnect
+## disconnect
 
 Provides a way to handle timeouts in uninterruptible effects, allowing them
 to continue in the background while the main control flow proceeds with the
@@ -21,14 +21,6 @@ With `disconnect`, the uninterruptible effect proceeds in the
 background while the main program flow can immediately handle the timeout
 error or trigger alternative logic. This enables faster timeout handling
 without waiting for the completion of the long-running task.
-
-To import and use `disconnect` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.disconnect
-```
 
 **Example**
 
@@ -64,8 +56,17 @@ const timedEffect = longRunningTask.pipe(
 // Heavy processing done.
 ```
 
+**See**
+
+- `timeout` for a version that interrupts the effect.
+- `uninterruptible` for creating an uninterruptible effect.
+
 **Signature**
 
 ```ts
-export declare const disconnect: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+declare const disconnect: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4742)
+
+Since v2.0.0

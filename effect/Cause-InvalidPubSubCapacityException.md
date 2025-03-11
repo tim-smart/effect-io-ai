@@ -1,11 +1,16 @@
-# InvalidPubSubCapacityException
+## InvalidPubSubCapacityException
 
 An error indicating invalid capacity for a `PubSub`.
 
-To import and use `InvalidPubSubCapacityException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.InvalidPubSubCapacityException
+export interface InvalidPubSubCapacityException extends YieldableError {
+  readonly _tag: "InvalidPubSubCapacityException"
+  readonly [InvalidPubSubCapacityExceptionTypeId]: InvalidPubSubCapacityExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L400)
+
+Since v2.0.0

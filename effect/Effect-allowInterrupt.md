@@ -1,4 +1,4 @@
-# allowInterrupt
+## allowInterrupt
 
 Allows interruption of the current fiber, even in uninterruptible regions.
 
@@ -13,16 +13,12 @@ self-interruption.
 This is useful in situations where you want to allow interruption to happen
 even in regions of the code that are normally uninterruptible.
 
-To import and use `allowInterrupt` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.allowInterrupt
-```
-
 **Signature**
 
 ```ts
-export declare const allowInterrupt: Effect<void, never, never>
+declare const allowInterrupt: Effect<void, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4635)
+
+Since v2.0.0

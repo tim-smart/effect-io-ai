@@ -1,17 +1,13 @@
-# doubleQuoted
+## doubleQuoted
 
 Encloses the input document in double quotes (`""`).
-
-To import and use `doubleQuoted` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.doubleQuoted
-```
 
 **Signature**
 
 ```ts
-export declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>
+declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2272)
+
+Since v1.0.0

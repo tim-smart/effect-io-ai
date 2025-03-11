@@ -1,17 +1,13 @@
-# last
+## last
 
 Creates a sink containing the last value.
-
-To import and use `last` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.last
-```
 
 **Signature**
 
 ```ts
-export declare const last: <In>() => Sink<Option.Option<In>, In, In>
+declare const last: <In>() => Sink<Option.Option<In>, In, In>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1064)
+
+Since v2.0.0

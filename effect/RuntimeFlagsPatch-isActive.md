@@ -1,21 +1,14 @@
-# isActive
+## isActive
 
 Returns `true` if the `RuntimeFlagsPatch` describes the specified
 `RuntimeFlag` as active.
 
-To import and use `isActive` from the "RuntimeFlagsPatch" module:
-
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
-// Can be accessed like this
-RuntimeFlagsPatch.isActive
-```
-
 **Signature**
 
 ```ts
-export declare const isActive: {
-  (flag: RuntimeFlagsPatch): (self: RuntimeFlagsPatch) => boolean
-  (self: RuntimeFlagsPatch, flag: RuntimeFlagsPatch): boolean
-}
+declare const isActive: { (flag: RuntimeFlagsPatch): (self: RuntimeFlagsPatch) => boolean; (self: RuntimeFlagsPatch, flag: RuntimeFlagsPatch): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlagsPatch.ts#L61)
+
+Since v2.0.0

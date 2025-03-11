@@ -1,11 +1,13 @@
-# RecipientAddress
+## RecipientAddress
 
 A RecipientAddress uniquely identifies a RecipientType + EntityId instance.
 
-To import and use `RecipientAddress` from the "RecipientAddress" module:
+**Signature**
 
 ```ts
-import * as RecipientAddress from "@effect/cluster/RecipientAddress"
-// Can be accessed like this
-RecipientAddress.RecipientAddress
+declare class RecipientAddress
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L26)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# implies
+## implies
 
 Represents the logical implication combinator for predicates. In formal
 logic, the implication operator `->` denotes that if the first proposition
@@ -20,17 +20,10 @@ The example below illustrates the transitive property of order using the
 `implies` function. In simple terms, if `a <= b` and `b <= c`, then `a <= c`
 must be true.
 
-To import and use `implies` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.implies
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Predicate } from "effect"
 
 type Triple = {
@@ -54,8 +47,9 @@ assert.equal(transitivity({ a: 1, b: 0, c: 0 }), true)
 **Signature**
 
 ```ts
-export declare const implies: {
-  <A>(consequent: Predicate<A>): (antecedent: Predicate<A>) => Predicate<A>
-  <A>(antecedent: Predicate<A>, consequent: Predicate<A>): Predicate<A>
-}
+declare const implies: { <A>(consequent: Predicate<A>): (antecedent: Predicate<A>) => Predicate<A>; <A>(antecedent: Predicate<A>, consequent: Predicate<A>): Predicate<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L954)
+
+Since v2.0.0

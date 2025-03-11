@@ -1,28 +1,29 @@
-# column
+## column
 
 Lays out a document depending upon the column at which the document starts.
-
-To import and use `column` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.column
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import * as String from "effect/String"
 
 // Example 1:
-const example1 = Doc.column((l) => Doc.hsep([Doc.text("Columns are"), Doc.text(`${l}-based`)]))
+const example1 = Doc.column((l) =>
+  Doc.hsep([Doc.text("Columns are"), Doc.text(`${l}-based`)])
+)
 
-assert.strictEqual(Doc.render(example1, { style: "pretty" }), "Columns are 0-based")
+assert.strictEqual(
+  Doc.render(example1, { style: "pretty" }),
+  "Columns are 0-based"
+)
 
 // Example 2:
-const doc = Doc.hsep([Doc.text("prefix"), Doc.column((l) => Doc.text(`| <- column ${l}`))])
+const doc = Doc.hsep([
+  Doc.text("prefix"),
+  Doc.column((l) => Doc.text(`| <- column ${l}`))
+])
 
 const example2 = Doc.vsep([0, 4, 8].map((n) => Doc.indent(n)(doc)))
 
@@ -39,5 +40,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>
+declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1492)
+
+Since v1.0.0

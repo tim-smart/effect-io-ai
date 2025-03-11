@@ -1,21 +1,13 @@
-# histogram
+## histogram
 
 Creates a metric key for a histogram, with the specified name and boundaries.
-
-To import and use `histogram` from the "MetricKey" module:
-
-```ts
-import * as MetricKey from "effect/MetricKey"
-// Can be accessed like this
-MetricKey.histogram
-```
 
 **Signature**
 
 ```ts
-export declare const histogram: (
-  name: string,
-  boundaries: MetricBoundaries.MetricBoundaries,
-  description?: string
-) => MetricKey.Histogram
+declare const histogram: (name: string, boundaries: MetricBoundaries.MetricBoundaries, description?: string) => MetricKey.Histogram
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MetricKey.ts#L168)
+
+Since v2.0.0

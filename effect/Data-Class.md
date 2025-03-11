@@ -1,18 +1,11 @@
-# Class
+## Class
 
 Provides a constructor for a Case Class.
-
-To import and use `Class` from the "Data" module:
-
-```ts
-import * as Data from "effect/Data"
-// Can be accessed like this
-Data.Class
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Data, Equal } from "effect"
 
 class Person extends Data.Class<{ readonly name: string }> {}
@@ -30,7 +23,9 @@ assert.deepStrictEqual(Equal.equals(mike1, john), false)
 **Signature**
 
 ```ts
-export declare const Class: new <A extends Record<string, any> = {}>(
-  args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A]: A[P] }
-) => Readonly<A>
+declare const Class: new <A extends Record<string, any> = {}>(args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A]: A[P]; }) => Readonly<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L204)
+
+Since v2.0.0

@@ -1,18 +1,14 @@
-# isYield
+## isYield
 
 Returns `true` if the specified `ChildExecutorDecision` is a `Yield`, `false`
 otherwise.
 
-To import and use `isYield` from the "ChildExecutorDecision" module:
-
-```ts
-import * as ChildExecutorDecision from "effect/ChildExecutorDecision"
-// Can be accessed like this
-ChildExecutorDecision.isYield
-```
-
 **Signature**
 
 ```ts
-export declare const isYield: (self: ChildExecutorDecision) => self is Yield
+declare const isYield: (self: ChildExecutorDecision) => self is Yield
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ChildExecutorDecision.ts#L122)
+
+Since v2.0.0

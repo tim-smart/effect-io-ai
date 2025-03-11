@@ -1,18 +1,11 @@
-# isDate
+## isDate
 
 A guard that succeeds when the input is a `Date`.
-
-To import and use `isDate` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isDate
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isDate } from "effect/Predicate"
 
 assert.deepStrictEqual(isDate(new Date()), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isDate({}), false)
 **Signature**
 
 ```ts
-export declare const isDate: (input: unknown) => input is Date
+declare const isDate: (input: unknown) => input is Date
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L594)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# runCount
+## runCount
 
 Runs the stream and emits the number of elements processed
-
-To import and use `runCount` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.runCount
-```
 
 **Signature**
 
 ```ts
-export declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
+declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4102)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isComposite
+## isComposite
 
 Returns `true` if the value is a `Composite`.
-
-To import and use `isComposite` from the "ParseResult" module:
-
-```ts
-import * as ParseResult from "effect/ParseResult"
-// Can be accessed like this
-ParseResult.isComposite
-```
 
 **Signature**
 
 ```ts
-export declare const isComposite: (issue: ParseIssue) => issue is Extract<ParseIssue, { _tag: "Composite" }>
+declare const isComposite: (issue: ParseIssue) => issue is Composite
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L1833)
+
+Since v3.10.0

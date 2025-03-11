@@ -1,18 +1,14 @@
-# isBackPressure
+## isBackPressure
 
 Returns `true` if the specified `MergeStrategy` is a `BackPressure`, `false`
 otherwise.
 
-To import and use `isBackPressure` from the "MergeStrategy" module:
-
-```ts
-import * as MergeStrategy from "effect/MergeStrategy"
-// Can be accessed like this
-MergeStrategy.isBackPressure
-```
-
 **Signature**
 
 ```ts
-export declare const isBackPressure: (self: MergeStrategy) => self is BackPressure
+declare const isBackPressure: (self: MergeStrategy) => self is BackPressure
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MergeStrategy.ts#L81)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# DateTimeUtcFromNumber
+## DateTimeUtcFromNumber
 
 Defines a schema that attempts to convert a `number` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
 
-To import and use `DateTimeUtcFromNumber` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateTimeUtcFromNumber
+declare class DateTimeUtcFromNumber
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6855)
+
+Since v3.10.0

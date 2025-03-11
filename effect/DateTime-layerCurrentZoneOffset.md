@@ -1,17 +1,13 @@
-# layerCurrentZoneOffset
+## layerCurrentZoneOffset
 
 Create a Layer from the given time zone offset.
-
-To import and use `layerCurrentZoneOffset` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.layerCurrentZoneOffset
-```
 
 **Signature**
 
 ```ts
-export declare const layerCurrentZoneOffset: (offset: number) => Layer.Layer<CurrentTimeZone>
+declare const layerCurrentZoneOffset: (offset: number) => Layer.Layer<CurrentTimeZone>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1565)
+
+Since v3.6.0

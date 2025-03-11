@@ -1,12 +1,16 @@
-# Unbounded
+## Unbounded
 
 Represents a `PageWidth` setting that informs the layout algorithms to avoid
 introducing line breaks into a document.
 
-To import and use `Unbounded` from the "PageWidth" module:
+**Signature**
 
 ```ts
-import * as PageWidth from "@effect/printer/PageWidth"
-// Can be accessed like this
-PageWidth.Unbounded
+export interface Unbounded extends PageWidth.Proto {
+  readonly _tag: "Unbounded"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L76)
+
+Since v1.0.0

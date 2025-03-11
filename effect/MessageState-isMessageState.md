@@ -1,17 +1,13 @@
-# isMessageState
+## isMessageState
 
 Ensures that the given value is a MessageState
-
-To import and use `isMessageState` from the "MessageState" module:
-
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
-// Can be accessed like this
-MessageState.isMessageState
-```
 
 **Signature**
 
 ```ts
-export declare const isMessageState: typeof internal.isMessageState
+declare const isMessageState: (value: unknown) => value is MessageState<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L80)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# mapBothEffect
+## mapBothEffect
 
 Transforms both the input and output of a schedule using effectful
 computations.
@@ -11,28 +11,16 @@ effectful functions `onInput` and `onOutput` allow you to transform inputs
 and outputs using computations that may involve additional logic, resource
 access, or side effects.
 
-To import and use `mapBothEffect` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.mapBothEffect
-```
+- `mapBoth` If you need to use pure transformation functions.
 
 **Signature**
 
 ```ts
-export declare const mapBothEffect: {
-  <In2, In, R2, Out, R3, Out2>(options: {
-    readonly onInput: (input: In2) => Effect.Effect<In, never, R2>
-    readonly onOutput: (out: Out) => Effect.Effect<Out2, never, R3>
-  }): <R>(self: Schedule<Out, In, R>) => Schedule<Out2, In2, R2 | R3 | R>
-  <Out, In, R, In2, R2, Out2, R3>(
-    self: Schedule<Out, In, R>,
-    options: {
-      readonly onInput: (input: In2) => Effect.Effect<In, never, R2>
-      readonly onOutput: (out: Out) => Effect.Effect<Out2, never, R3>
-    }
-  ): Schedule<Out2, In2, R | R2 | R3>
-}
+declare const mapBothEffect: { <In2, In, R2, Out, R3, Out2>(options: { readonly onInput: (input: In2) => Effect.Effect<In, never, R2>; readonly onOutput: (out: Out) => Effect.Effect<Out2, never, R3>; }): <R>(self: Schedule<Out, In, R>) => Schedule<Out2, In2, R2 | R3 | R>; <Out, In, R, In2, R2, Out2, R3>(self: Schedule<Out, In, R>, options: { readonly onInput: (input: In2) => Effect.Effect<In, never, R2>; readonly onOutput: (out: Out) => Effect.Effect<Out2, never, R3>; }): Schedule<Out2, In2, R | R2 | R3>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L865)
+
+Since v2.0.0

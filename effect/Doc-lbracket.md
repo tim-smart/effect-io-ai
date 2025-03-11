@@ -1,17 +1,13 @@
-# lbracket
+## lbracket
 
 A document containing a single `[` character.
-
-To import and use `lbracket` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.lbracket
-```
 
 **Signature**
 
 ```ts
-export declare const lbracket: Doc<never>
+declare const lbracket: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L775)
+
+Since v1.0.0

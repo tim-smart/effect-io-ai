@@ -1,27 +1,13 @@
-# updateAs
+## updateAs
 
 Updates the value of the specified `FiberRef` using the provided `FiberId`
-
-To import and use `updateAs` from the "FiberRefs" module:
-
-```ts
-import * as FiberRefs from "effect/FiberRefs"
-// Can be accessed like this
-FiberRefs.updateAs
-```
 
 **Signature**
 
 ```ts
-export declare const updateAs: {
-  <A>(options: {
-    readonly fiberId: FiberId.Single
-    readonly fiberRef: FiberRef.FiberRef<A>
-    readonly value: A
-  }): (self: FiberRefs) => FiberRefs
-  <A>(
-    self: FiberRefs,
-    options: { readonly fiberId: FiberId.Single; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A }
-  ): FiberRefs
-}
+declare const updateAs: { <A>(options: { readonly fiberId: FiberId.Single; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A; }): (self: FiberRefs) => FiberRefs; <A>(self: FiberRefs, options: { readonly fiberId: FiberId.Single; readonly fiberRef: FiberRef.FiberRef<A>; readonly value: A; }): FiberRefs; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberRefs.ts#L126)
+
+Since v2.0.0

@@ -1,20 +1,13 @@
-# batchN
+## batchN
 
 Returns a data source that executes at most `n` requests in parallel.
-
-To import and use `batchN` from the "RequestResolver" module:
-
-```ts
-import * as RequestResolver from "effect/RequestResolver"
-// Can be accessed like this
-RequestResolver.batchN
-```
 
 **Signature**
 
 ```ts
-export declare const batchN: {
-  (n: number): <A, R>(self: RequestResolver<A, R>) => RequestResolver<A, R>
-  <A, R>(self: RequestResolver<A, R>, n: number): RequestResolver<A, R>
-}
+declare const batchN: { (n: number): <A, R>(self: RequestResolver<A, R>) => RequestResolver<A, R>; <A, R>(self: RequestResolver<A, R>, n: number): RequestResolver<A, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L207)
+
+Since v2.0.0

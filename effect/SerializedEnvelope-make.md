@@ -1,21 +1,13 @@
-# make
+## make
 
 Construct a new `SerializedEnvelope`
-
-To import and use `make` from the "SerializedEnvelope" module:
-
-```ts
-import * as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
-// Can be accessed like this
-SerializedEnvelope.make
-```
 
 **Signature**
 
 ```ts
-export declare function make(
-  recipientAddress: RecipientAddress.RecipientAddress,
-  messageId: string,
-  body: SerializedMessage.SerializedMessage
-): SerializedEnvelope
+declare const make: (recipientAddress: RecipientAddress.RecipientAddress, messageId: string, body: SerializedMessage.SerializedMessage) => SerializedEnvelope
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L72)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# readLocked
+## readLocked
 
 Determines if any fiber has a read lock.
-
-To import and use `readLocked` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.readLocked
-```
 
 **Signature**
 
 ```ts
-export declare const readLocked: (self: TReentrantLock) => STM.STM<boolean>
+declare const readLocked: (self: TReentrantLock) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L149)
+
+Since v2.0.0

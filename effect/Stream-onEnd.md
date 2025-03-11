@@ -1,14 +1,6 @@
-# onEnd
+## onEnd
 
 Adds an effect to be executed at the end of the stream.
-
-To import and use `onEnd` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.onEnd
-```
 
 **Example**
 
@@ -32,8 +24,9 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 **Signature**
 
 ```ts
-export declare const onEnd: {
-  <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>
-}
+declare const onEnd: { <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3174)
+
+Since v3.6.0

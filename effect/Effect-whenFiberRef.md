@@ -1,4 +1,4 @@
-# whenFiberRef
+## whenFiberRef
 
 Executes an effect conditionally based on the value of a `FiberRef` that
 satisfies a predicate.
@@ -12,26 +12,12 @@ wrapped in an `Option.some`. If the predicate is not satisfied, the effect is
 skipped, and the result is `Option.none`. In both cases, the current value of
 the `FiberRef` is included in the result.
 
-To import and use `whenFiberRef` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.whenFiberRef
-```
-
 **Signature**
 
 ```ts
-export declare const whenFiberRef: {
-  <S>(
-    fiberRef: FiberRef.FiberRef<S>,
-    predicate: Predicate<S>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[S, Option.Option<A>], E, R>
-  <A, E, R, S>(
-    self: Effect<A, E, R>,
-    fiberRef: FiberRef.FiberRef<S>,
-    predicate: Predicate<S>
-  ): Effect<[S, Option.Option<A>], E, R>
-}
+declare const whenFiberRef: { <S>(fiberRef: FiberRef.FiberRef<S>, predicate: Predicate<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<[S, Option.Option<A>], E, R>; <A, E, R, S>(self: Effect<A, E, R>, fiberRef: FiberRef.FiberRef<S>, predicate: Predicate<S>): Effect<[S, Option.Option<A>], E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8569)
+
+Since v2.0.0

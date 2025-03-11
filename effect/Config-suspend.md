@@ -1,17 +1,13 @@
-# suspend
+## suspend
 
 Lazily constructs a config.
-
-To import and use `suspend` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.suspend
-```
 
 **Signature**
 
 ```ts
-export declare const suspend: <A>(config: LazyArg<Config<A>>) => Config<A>
+declare const suspend: <A>(config: LazyArg<Config<A>>) => Config<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L400)
+
+Since v2.0.0

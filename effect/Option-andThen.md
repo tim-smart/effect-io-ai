@@ -1,4 +1,4 @@
-# andThen
+## andThen
 
 Chains two `Option`s together. The second `Option` can either be a static
 value or depend on the result of the first `Option`.
@@ -16,25 +16,12 @@ either:
 If the first `Option` is `None`, the function skips the evaluation of the
 second `Option` and directly returns `None`.
 
-To import and use `andThen` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.andThen
-```
-
 **Signature**
 
 ```ts
-export declare const andThen: {
-  <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>
-  <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>
-  <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>
-  <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>
-  <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>
-  <A, B>(self: Option<A>, f: Option<B>): Option<B>
-  <A, B>(self: Option<A>, f: (a: A) => B): Option<B>
-  <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>
-}
+declare const andThen: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>; <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; <A, B>(self: Option<A>, f: Option<B>): Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1075)
+
+Since v2.0.0

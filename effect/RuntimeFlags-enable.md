@@ -1,20 +1,13 @@
-# enable
+## enable
 
 Enables the specified `RuntimeFlag`.
-
-To import and use `enable` from the "RuntimeFlags" module:
-
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.enable
-```
 
 **Signature**
 
 ```ts
-export declare const enable: {
-  (flag: RuntimeFlag): (self: RuntimeFlags) => RuntimeFlags
-  (self: RuntimeFlags, flag: RuntimeFlag): RuntimeFlags
-}
+declare const enable: { (flag: RuntimeFlag): (self: RuntimeFlags) => RuntimeFlags; (self: RuntimeFlags, flag: RuntimeFlag): RuntimeFlags; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L181)
+
+Since v2.0.0

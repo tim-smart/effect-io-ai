@@ -1,20 +1,13 @@
-# some
+## some
 
 Determine if the array contains a value satisfying a predicate.
-
-To import and use `some` from the "TArray" module:
-
-```ts
-import * as TArray from "effect/TArray"
-// Can be accessed like this
-TArray.some
-```
 
 **Signature**
 
 ```ts
-export declare const some: {
-  <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<boolean>
-  <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<boolean>
-}
+declare const some: { <A>(predicate: Predicate<A>): (self: TArray<A>) => STM.STM<boolean>; <A>(self: TArray<A>, predicate: Predicate<A>): STM.STM<boolean>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TArray.ts#L427)
+
+Since v2.0.0

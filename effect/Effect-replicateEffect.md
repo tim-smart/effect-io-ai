@@ -1,4 +1,4 @@
-# replicateEffect
+## replicateEffect
 
 Performs this effect the specified number of times and collects the results.
 
@@ -19,14 +19,6 @@ specifying options such as concurrency, batching, and how finalizers behave.
 These options provide flexibility in running the effects concurrently or
 adjusting other execution details.
 
-To import and use `replicateEffect` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.replicateEffect
-```
-
 **Example**
 
 ```ts
@@ -34,9 +26,11 @@ import { Console, Effect } from "effect"
 
 let counter = 0
 
-const task = Effect.sync(() => ++counter).pipe(Effect.tap(() => Console.log(`Task completed`)))
+const task = Effect.sync(() => ++counter).pipe(
+  Effect.tap(() => Console.log(`Task completed`))
+)
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   // Replicate the task 3 times and collect the results
   const results = yield* Effect.replicateEffect(task, 3)
   yield* Console.log(`Results: ${results.join(", ")}`)
@@ -53,44 +47,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const replicateEffect: {
-  (
-    n: number,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard?: false | undefined
-      readonly concurrentFinalizers?: boolean | undefined
-    }
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>
-  (
-    n: number,
-    options: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard: true
-      readonly concurrentFinalizers?: boolean | undefined
-    }
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
-  <A, E, R>(
-    self: Effect<A, E, R>,
-    n: number,
-    options?: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard?: false | undefined
-      readonly concurrentFinalizers?: boolean | undefined
-    }
-  ): Effect<Array<A>, E, R>
-  <A, E, R>(
-    self: Effect<A, E, R>,
-    n: number,
-    options: {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard: true
-      readonly concurrentFinalizers?: boolean | undefined
-    }
-  ): Effect<void, E, R>
-}
+declare const replicateEffect: { (n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>; (n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<Array<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): Effect<void, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2096)
+
+Since v2.0.0

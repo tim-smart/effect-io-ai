@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Returns `true` if the specified `Doc` is an `Empty`, `false` otherwise.
-
-To import and use `isEmpty` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>
+declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L334)
+
+Since v1.0.0

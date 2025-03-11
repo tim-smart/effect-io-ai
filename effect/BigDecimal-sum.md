@@ -1,18 +1,11 @@
-# sum
+## sum
 
 Provides an addition operation on `BigDecimal`s.
-
-To import and use `sum` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.sum
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { sum, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("5"))
@@ -21,8 +14,9 @@ assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafe
 **Signature**
 
 ```ts
-export declare const sum: {
-  (that: BigDecimal): (self: BigDecimal) => BigDecimal
-  (self: BigDecimal, that: BigDecimal): BigDecimal
-}
+declare const sum: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L210)
+
+Since v2.0.0

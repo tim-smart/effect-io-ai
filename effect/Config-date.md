@@ -1,17 +1,13 @@
-# date
+## date
 
 Constructs a config for a date value.
-
-To import and use `date` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.date
-```
 
 **Signature**
 
 ```ts
-export declare const date: (name?: string) => Config<Date>
+declare const date: (name?: string) => Config<Date>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L153)
+
+Since v2.0.0

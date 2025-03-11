@@ -1,22 +1,14 @@
-# minimumLogLevel
+## minimumLogLevel
 
 Sets the minimum log level for logging operations, allowing control over
 which log messages are displayed based on their severity.
-
-To import and use `minimumLogLevel` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.minimumLogLevel
-```
 
 **Example**
 
 ```ts
 import { Effect, Logger, LogLevel } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.log("Executing task...")
   yield* Effect.sleep("100 millis")
   console.log("task done")
@@ -30,5 +22,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const minimumLogLevel: (level: LogLevel.LogLevel) => Layer.Layer<never>
+declare const minimumLogLevel: (level: LogLevel.LogLevel) => Layer.Layer<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L694)
+
+Since v2.0.0

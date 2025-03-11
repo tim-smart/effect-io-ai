@@ -1,17 +1,13 @@
-# mutable
+## mutable
 
 Creates a new AST with shallow mutability applied to its properties.
-
-To import and use `mutable` from the "SchemaAST" module:
-
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.mutable
-```
 
 **Signature**
 
 ```ts
-export declare const mutable: (ast: AST) => AST
+declare const mutable: (ast: AST) => AST
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2518)
+
+Since v3.10.0

@@ -1,17 +1,13 @@
-# of
+## of
 
 Creates a `Take` with a single value chunk.
-
-To import and use `of` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.of
-```
 
 **Signature**
 
 ```ts
-export declare const of: <A>(value: A) => Take<A>
+declare const of: <A>(value: A) => Take<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L242)
+
+Since v2.0.0

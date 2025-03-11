@@ -1,19 +1,13 @@
-# addFinalizer
+## addFinalizer
 
 Add a finalizer to the current `MicroScope`.
-
-To import and use `addFinalizer` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.addFinalizer
-```
 
 **Signature**
 
 ```ts
-export declare const addFinalizer: (
-  finalizer: (exit: MicroExit<unknown, unknown>) => Micro<void>
-) => Micro<void, never, MicroScope>
+declare const addFinalizer: (finalizer: (exit: MicroExit<unknown, unknown>) => Micro<void>) => Micro<void, never, MicroScope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3457)
+
+Since v3.4.0

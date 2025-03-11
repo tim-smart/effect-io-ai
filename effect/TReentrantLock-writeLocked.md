@@ -1,17 +1,13 @@
-# writeLocked
+## writeLocked
 
 Determines if a write lock is held by some fiber.
-
-To import and use `writeLocked` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.writeLocked
-```
 
 **Signature**
 
 ```ts
-export declare const writeLocked: (self: TReentrantLock) => STM.STM<boolean>
+declare const writeLocked: (self: TReentrantLock) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L216)
+
+Since v2.0.0

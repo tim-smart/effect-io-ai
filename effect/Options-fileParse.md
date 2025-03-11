@@ -1,20 +1,13 @@
-# fileParse
+## fileParse
 
 Creates a parameter expecting path to a file and parse its contents.
-
-To import and use `fileParse` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.fileParse
-```
 
 **Signature**
 
 ```ts
-export declare const fileParse: (
-  name: string,
-  format?: "json" | "yaml" | "ini" | "toml" | undefined
-) => Options<unknown>
+declare const fileParse: (name: string, format?: "json" | "yaml" | "ini" | "toml" | undefined) => Options<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L251)
+
+Since v1.0.0

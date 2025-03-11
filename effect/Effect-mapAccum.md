@@ -1,4 +1,4 @@
-# mapAccum
+## mapAccum
 
 Applies a stateful transformation to each element of a collection, producing
 new elements along with an updated state.
@@ -17,14 +17,6 @@ transformed collection.
 
 If the input collection is a non-empty array, the return type will match the
 input collection type.
-
-To import and use `mapAccum` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.mapAccum
-```
 
 **Example**
 
@@ -52,15 +44,9 @@ const program = Effect.mapAccum(["a", "bb", "ccc"], initialState, transformation
 **Signature**
 
 ```ts
-export declare const mapAccum: {
-  <S, A, B, E, R, I extends Iterable<A> = Iterable<A>>(
-    initial: S,
-    f: (state: S, a: RA.ReadonlyArray.Infer<I>, i: number) => Effect<readonly [S, B], E, R>
-  ): (elements: I) => Effect<[S, RA.ReadonlyArray.With<I, B>], E, R>
-  <A, S, B, E, R, I extends Iterable<A> = Iterable<A>>(
-    elements: I,
-    initial: S,
-    f: (state: S, a: RA.ReadonlyArray.Infer<I>, i: number) => Effect<readonly [S, B], E, R>
-  ): Effect<[S, RA.ReadonlyArray.With<I, B>], E, R>
-}
+declare const mapAccum: { <S, A, B, E, R, I extends Iterable<A> = Iterable<A>>(initial: S, f: (state: S, a: RA.ReadonlyArray.Infer<I>, i: number) => Effect<readonly [S, B], E, R>): (elements: I) => Effect<[S, RA.ReadonlyArray.With<I, B>], E, R>; <A, S, B, E, R, I extends Iterable<A> = Iterable<A>>(elements: I, initial: S, f: (state: S, a: RA.ReadonlyArray.Infer<I>, i: number) => Effect<readonly [S, B], E, R>): Effect<[S, RA.ReadonlyArray.With<I, B>], E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5122)
+
+Since v2.0.0

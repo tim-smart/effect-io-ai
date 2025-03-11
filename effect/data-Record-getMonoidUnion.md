@@ -1,4 +1,4 @@
-# getMonoidUnion
+## getMonoidUnion
 
 A `Monoid` that creates a union of two records.
 
@@ -7,17 +7,10 @@ If a key exists in only one of the records, that key-value pair is included as i
 
 The `empty` value for this `Monoid` is an empty record `{}`.
 
-To import and use `getMonoidUnion` from the "Record" module:
-
-```ts
-import * as Record from "@effect/typeclass/data/Record"
-// Can be accessed like this
-Record.getMonoidUnion
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getMonoidUnion } from "@effect/typeclass/data/Record"
 
@@ -30,5 +23,9 @@ assert.deepStrictEqual(monoid.combine({ a: 1 }, monoid.empty), { a: 1 })
 **Signature**
 
 ```ts
-export declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>
+declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L256)
+
+Since v0.29.4

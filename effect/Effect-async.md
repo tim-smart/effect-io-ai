@@ -1,11 +1,10 @@
-# async
+## async
 
 Creates an `Effect` from a callback-based asynchronous function.
 
 **Details**
 
 The `resume` function:
-
 - Must be called exactly once. Any additional calls will be ignored.
 - Can return an optional `Effect` that will be run if the `Fiber` executing
   this `Effect` is interrupted. This can be useful in scenarios where you
@@ -23,14 +22,6 @@ behavior of the returned effect.
 
 Use `Effect.async` when dealing with APIs that use callback-style instead of
 `async/await` or `Promise`.
-
-To import and use `async` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.async
-```
 
 **Example**
 
@@ -86,7 +77,9 @@ const writeFileWithCleanup = (filename: string, data: string) =>
   })
 
 const program = Effect.gen(function* () {
-  const fiber = yield* Effect.fork(writeFileWithCleanup("example.txt", "Some long data..."))
+  const fiber = yield* Effect.fork(
+    writeFileWithCleanup("example.txt", "Some long data...")
+  )
   // Simulate interrupting the fiber after 1 second
   yield* Effect.sleep("1 second")
   yield* Fiber.interrupt(fiber) // This will trigger the cleanup
@@ -135,8 +128,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const async: <A, E = never, R = never>(
-  resume: (callback: (_: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>,
-  blockingOn?: FiberId.FiberId
-) => Effect<A, E, R>
+declare const async: <A, E = never, R = never>(resume: (callback: (_: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>, blockingOn?: FiberId.FiberId) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2424)
+
+Since v2.0.0

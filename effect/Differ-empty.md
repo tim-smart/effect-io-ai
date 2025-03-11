@@ -1,17 +1,13 @@
-# empty
+## empty
 
 An empty patch that describes no changes.
-
-To import and use `empty` from the "Differ" module:
-
-```ts
-import * as Differ from "effect/Differ"
-// Can be accessed like this
-Differ.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: <Value, Patch>(self: Differ<Value, Patch>) => Patch
+declare const empty: <Value, Patch>(self: Differ<Value, Patch>) => Patch
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Differ.ts#L224)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# DateTimeUtcFromSelf
+## DateTimeUtcFromSelf
 
 Describes a schema that represents a `DateTime.Utc` instance.
 
-To import and use `DateTimeUtcFromSelf` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateTimeUtcFromSelf
+declare class DateTimeUtcFromSelf
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6831)
+
+Since v3.10.0

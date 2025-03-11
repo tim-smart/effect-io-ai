@@ -1,17 +1,13 @@
-# fail
+## fail
 
 A sink that always fails with the specified error.
-
-To import and use `fail` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.fail
-```
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(e: E) => Sink<never, unknown, never, E>
+declare const fail: <E>(e: E) => Sink<never, unknown, never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L572)
+
+Since v2.0.0

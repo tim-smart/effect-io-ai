@@ -1,21 +1,14 @@
-# validate
+## validate
 
 Validates that the specified value, if any, matches the specified primitive
 type.
 
-To import and use `validate` from the "Primitive" module:
-
-```ts
-import * as Primitive from "@effect/cli/Primitive"
-// Can be accessed like this
-Primitive.validate
-```
-
 **Signature**
 
 ```ts
-export declare const validate: {
-  (value: Option<string>, config: CliConfig): <A>(self: Primitive<A>) => Effect<A, string, FileSystem>
-  <A>(self: Primitive<A>, value: Option<string>, config: CliConfig): Effect<A, string, FileSystem>
-}
+declare const validate: { (value: Option<string>, config: CliConfig): <A>(self: Primitive<A>) => Effect<A, string, FileSystem>; <A>(self: Primitive<A>, value: Option<string>, config: CliConfig): Effect<A, string, FileSystem>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Primitive.ts#L161)
+
+Since v1.0.0

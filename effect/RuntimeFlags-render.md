@@ -1,17 +1,13 @@
-# render
+## render
 
 Converts the provided `RuntimeFlags` into a `string`.
-
-To import and use `render` from the "RuntimeFlags" module:
-
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.render
-```
 
 **Signature**
 
 ```ts
-export declare const render: (self: RuntimeFlags) => string
+declare const render: (self: RuntimeFlags) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L310)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# cons
+## cons
 
 Constructs a new `List.Cons<A>` from the specified `head` and `tail` values.
-
-To import and use `cons` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.cons
-```
 
 **Signature**
 
 ```ts
-export declare const cons: <A>(head: A, tail: List<A>) => Cons<A>
+declare const cons: <A>(head: A, tail: List<A>) => Cons<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L259)
+
+Since v2.0.0

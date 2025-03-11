@@ -1,4 +1,4 @@
-# fail
+## fail
 
 Creates a `Fail` cause from an expected error.
 
@@ -8,16 +8,16 @@ This function constructs a `Cause` carrying an error of type `E`. It's used
 when you want to represent a known or anticipated failure in your effectful
 computations.
 
-To import and use `fail` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.fail
-```
+- `isFailure` Check if a `Cause` contains a failure
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Cause<E>
+declare const fail: <E>(error: E) => Cause<E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L590)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# DateTimeZoned
+## DateTimeZoned
 
 Defines a schema that attempts to convert a `string` to a `DateTime.Zoned` instance.
 
-To import and use `DateTimeZoned` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateTimeZoned
+declare class DateTimeZoned
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7035)
+
+Since v3.10.0

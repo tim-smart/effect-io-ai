@@ -1,4 +1,4 @@
-# isEffect
+## isEffect
 
 Checks if a given value is an `Effect` value.
 
@@ -9,16 +9,12 @@ attempting to operate on it as an `Effect` value. For example, you could use
 `Effect.isEffect` to check the type of a value before using it as an argument
 to a function that expects an `Effect` value.
 
-To import and use `isEffect` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.isEffect
-```
-
 **Signature**
 
 ```ts
-export declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
+declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L263)
+
+Since v2.0.0

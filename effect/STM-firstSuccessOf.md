@@ -1,4 +1,4 @@
-# firstSuccessOf
+## firstSuccessOf
 
 This function takes an iterable of `STM` values and returns a new
 `STM` value that represents the first `STM` value in the iterable
@@ -9,16 +9,16 @@ This function is sequential, meaning that the `STM` values in the
 iterable will be executed in sequence, and the first one that succeeds
 will determine the outcome of the resulting `STM` value.
 
-To import and use `firstSuccessOf` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.firstSuccessOf
-```
+Returns a new `STM` value that represents the first successful
+`STM` value in the iterable, or a failed `STM` value if all of the
+`STM` values in the iterable fail.
 
 **Signature**
 
 ```ts
-export declare const firstSuccessOf: <A, E, R>(effects: Iterable<STM<A, E, R>>) => STM<A, E, R>
+declare const firstSuccessOf: <A, E, R>(effects: Iterable<STM<A, E, R>>) => STM<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1983)
+
+Since v2.0.0

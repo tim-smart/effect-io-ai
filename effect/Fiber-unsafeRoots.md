@@ -1,17 +1,13 @@
-# unsafeRoots
+## unsafeRoots
 
 Returns a chunk containing all root fibers.
-
-To import and use `unsafeRoots` from the "Fiber" module:
-
-```ts
-import * as Fiber from "effect/Fiber"
-// Can be accessed like this
-Fiber.unsafeRoots
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeRoots: (_: void) => Array<RuntimeFiber<any, any>>
+declare const unsafeRoots: (_: void) => Array<RuntimeFiber<any, any>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L660)
+
+Since v2.0.0

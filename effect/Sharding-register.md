@@ -1,17 +1,13 @@
-# register
+## register
 
 Notify the shard manager that shards can now be assigned to this pod.
-
-To import and use `register` from the "Sharding" module:
-
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
-// Can be accessed like this
-Sharding.register
-```
 
 **Signature**
 
 ```ts
-export declare const register: Effect.Effect<void, never, Sharding>
+declare const register: Effect.Effect<void, never, Sharding>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L104)
+
+Since v1.0.0

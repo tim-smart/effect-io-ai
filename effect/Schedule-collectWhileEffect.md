@@ -1,4 +1,4 @@
-# collectWhileEffect
+## collectWhileEffect
 
 Collects all inputs into a `Chunk` while an effectful condition holds.
 
@@ -13,18 +13,12 @@ As soon as the effectful condition returns `false`, the schedule stops. This
 is useful for dynamically controlled data collection, where stopping depends
 on an external or asynchronous factor.
 
-To import and use `collectWhileEffect` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.collectWhileEffect
-```
-
 **Signature**
 
 ```ts
-export declare const collectWhileEffect: <A, R>(
-  f: (a: A) => Effect.Effect<boolean, never, R>
-) => Schedule<Chunk.Chunk<A>, A, R>
+declare const collectWhileEffect: <A, R>(f: (a: A) => Effect.Effect<boolean, never, R>) => Schedule<Chunk.Chunk<A>, A, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L507)
+
+Since v2.0.0

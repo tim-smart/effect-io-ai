@@ -1,19 +1,13 @@
-# lowercased
+## lowercased
 
 Verifies that a string is lowercased.
-
-To import and use `lowercased` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.lowercased
-```
 
 **Signature**
 
 ```ts
-export declare const lowercased: <S extends Schema.Any>(
-  annotations?: Annotations.Filter<Schema.Type<S>>
-) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
+declare const lowercased: <S extends Schema.Any>(annotations?: Annotations.Filter<Schema.Type<S>>) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4481)
+
+Since v3.10.0

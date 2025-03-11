@@ -1,20 +1,13 @@
-# remove
+## remove
 
 Removes a single element from the set.
-
-To import and use `remove` from the "TSet" module:
-
-```ts
-import * as TSet from "effect/TSet"
-// Can be accessed like this
-TSet.remove
-```
 
 **Signature**
 
 ```ts
-export declare const remove: {
-  <A>(value: A): (self: TSet<A>) => STM.STM<void>
-  <A>(self: TSet<A>, value: A): STM.STM<void>
-}
+declare const remove: { <A>(value: A): (self: TSet<A>) => STM.STM<void>; <A>(self: TSet<A>, value: A): STM.STM<void>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TSet.ts#L175)
+
+Since v2.0.0

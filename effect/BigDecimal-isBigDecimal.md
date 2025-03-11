@@ -1,17 +1,13 @@
-# isBigDecimal
+## isBigDecimal
 
 Checks if a given value is a `BigDecimal`.
-
-To import and use `isBigDecimal` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.isBigDecimal
-```
 
 **Signature**
 
 ```ts
-export declare const isBigDecimal: (u: unknown) => u is BigDecimal
+declare const isBigDecimal: (u: unknown) => u is BigDecimal
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L92)
+
+Since v2.0.0

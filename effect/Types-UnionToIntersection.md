@@ -1,11 +1,14 @@
-# UnionToIntersection
+## UnionToIntersection
 
 A utility type that transforms a union type `T` into an intersection type.
 
-To import and use `UnionToIntersection` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.UnionToIntersection
+type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (x: infer R) => any ? R
+  : never
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L108)
+
+Since v2.0.0

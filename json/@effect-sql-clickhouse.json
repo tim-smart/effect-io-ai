@@ -2,177 +2,137 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "ClickhouseClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const ClickhouseClient: Context.Tag<ClickhouseClient, ClickhouseClient>"
+    "signature": "declare const ClickhouseClient: Context.Tag<ClickhouseClient, ClickhouseClient>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "currentClientMethod",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "export declare const currentClientMethod: FiberRef.FiberRef<\"query\" | \"command\" | \"insert\">"
+    "signature": "declare const currentClientMethod: FiberRef.FiberRef<\"query\" | \"command\" | \"insert\">"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "currentQueryId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "export declare const currentQueryId: FiberRef.FiberRef<string | undefined>"
+    "signature": "declare const currentQueryId: FiberRef.FiberRef<string | undefined>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "currentClickhouseSettings",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "export declare const currentClickhouseSettings: FiberRef.FiberRef<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>"
+    "signature": "declare const currentClickhouseSettings: FiberRef.FiberRef<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: ClickhouseClientConfig) => Effect.Effect<ClickhouseClient, SqlError, Scope.Scope | Reactivity.Reactivity>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<ClickhouseClientConfig>) => Layer.Layer<ClickhouseClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (config: ClickhouseClientConfig) => Layer.Layer<ClickhouseClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "makeCompiler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": null
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "ClickhouseClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -182,15 +142,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "ClickhouseClientConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -200,145 +156,57 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
-    },
-    "project": "@effect/sql-clickhouse",
-    "name": "ClickhouseCustom",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "custom types",
-    "signature": "export type ClickhouseCustom = ClickhouseParam"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "ClickhouseClient",
-      "path": [
-        "src",
-        "ClickhouseClient.ts"
-      ]
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseCustom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "custom types",
+    "signature": "type ClickhouseCustom = ClickhouseParam"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ClickhouseMigrator",
-      "path": [
-        "src",
-        "ClickhouseMigrator.ts"
-      ]
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "run",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const run: <R2 = never>({ loader, schemaDirectory, table }: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "ClickhouseMigrator",
-      "path": [
-        "src",
-        "ClickhouseMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-clickhouse",
-    "name": "From \"@effect/sql/Migrator\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "ClickhouseMigrator",
-      "path": [
-        "src",
-        "ClickhouseMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-clickhouse",
-    "name": "From \"@effect/sql/Migrator/FileSystem\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+    "signature": "declare const run: <R2 = never>({ loader, schemaDirectory, table }: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ClickhouseMigrator",
-      "path": [
-        "src",
-        "ClickhouseMigrator.ts"
-      ]
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
     },
     "project": "@effect/sql-clickhouse",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-clickhouse",
-    "name": "From \"./ClickhouseClient.js\"",
-    "description": "Re-exports all named exports from the \"./ClickhouseClient.js\" module as `ClickhouseClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ClickhouseClient from \"./ClickhouseClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-clickhouse",
-    "name": "From \"./ClickhouseMigrator.js\"",
-    "description": "Re-exports all named exports from the \"./ClickhouseMigrator.js\" module as `ClickhouseMigrator`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ClickhouseMigrator from \"./ClickhouseMigrator.js\""
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>"
   }
 ]

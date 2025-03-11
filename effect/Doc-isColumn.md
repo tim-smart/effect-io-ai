@@ -1,17 +1,13 @@
-# isColumn
+## isColumn
 
 Returns `true` if the specified `Doc` is a `Column`, `false` otherwise.
-
-To import and use `isColumn` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isColumn
-```
 
 **Signature**
 
 ```ts
-export declare const isColumn: <A>(self: Doc<A>) => self is Column<A>
+declare const isColumn: <A>(self: Doc<A>) => self is Column<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L398)
+
+Since v1.0.0

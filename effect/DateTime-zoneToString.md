@@ -1,14 +1,6 @@
-# zoneToString
+## zoneToString
 
 Format a `TimeZone` as a string.
-
-To import and use `zoneToString` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.zoneToString
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ DateTime.zoneToString(DateTime.zoneUnsafeMakeNamed("Europe/London"))
 **Signature**
 
 ```ts
-export declare const zoneToString: (self: TimeZone) => string
+declare const zoneToString: (self: TimeZone) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L581)
+
+Since v3.6.0

@@ -1,12 +1,26 @@
-# Doc
+## Doc
 
 Represents a prettified document that has been annotated with data of type
 `A`.
 
-To import and use `Doc` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Doc
+type Doc<A> = | Fail<A>
+  | Empty<A>
+  | Char<A>
+  | Text<A>
+  | Line<A>
+  | FlatAlt<A>
+  | Cat<A>
+  | Nest<A>
+  | Union<A>
+  | Column<A>
+  | WithPageWidth<A>
+  | Nesting<A>
+  | Annotated<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L56)
+
+Since v1.0.0

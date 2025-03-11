@@ -1,4 +1,4 @@
-# fromAST
+## fromAST
 
 Returns a JSON Schema with additional options and definitions.
 
@@ -23,25 +23,12 @@ This function is experimental and subject to change.
   - `"strict"`: Disallow additional properties (default behavior).
   - `"allow"`: Allow additional properties.
 
-To import and use `fromAST` from the "JSONSchema" module:
-
-```ts
-import * as JSONSchema from "effect/JSONSchema"
-// Can be accessed like this
-JSONSchema.fromAST
-```
-
 **Signature**
 
 ```ts
-export declare const fromAST: (
-  ast: AST.AST,
-  options: {
-    readonly definitions: Record<string, JsonSchema7>
-    readonly definitionPath?: string | undefined
-    readonly target?: Target | undefined
-    readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy | undefined
-    readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined
-  }
-) => JsonSchema7
+declare const fromAST: (ast: AST.AST, options: { readonly definitions: Record<string, JsonSchema7>; readonly definitionPath?: string | undefined; readonly target?: Target | undefined; readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy | undefined; readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined; }) => JsonSchema7
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JSONSchema.ts#L304)
+
+Since v3.11.5

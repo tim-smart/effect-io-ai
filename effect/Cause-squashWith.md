@@ -1,4 +1,4 @@
-# squashWith
+## squashWith
 
 Extracts the most "important" defect from a `Cause`, transforming failures
 into defects using a provided function.
@@ -19,19 +19,16 @@ function. It processes the `Cause` in the following order:
 This function is particularly useful when you need custom handling or
 transformation of errors while processing a `Cause`.
 
-To import and use `squashWith` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.squashWith
-```
+- `squash` Extracts the most "important" defect without transforming failures.
 
 **Signature**
 
 ```ts
-export declare const squashWith: {
-  <E>(f: (error: E) => unknown): (self: Cause<E>) => unknown
-  <E>(self: Cause<E>, f: (error: E) => unknown): unknown
-}
+declare const squashWith: { <E>(f: (error: E) => unknown): (self: Cause<E>) => unknown; <E>(self: Cause<E>, f: (error: E) => unknown): unknown; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1145)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# dropping
+## dropping
 
 Makes a new bounded `Queue` with the dropping strategy.
 
@@ -9,16 +9,12 @@ old elements will remain.
 better performance by utilising an optimised version of the underlying
 `RingBuffer`.
 
-To import and use `dropping` from the "Queue" module:
-
-```ts
-import * as Queue from "effect/Queue"
-// Can be accessed like this
-Queue.dropping
-```
-
 **Signature**
 
 ```ts
-export declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
+declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L450)
+
+Since v2.0.0

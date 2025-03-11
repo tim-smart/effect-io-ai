@@ -1,20 +1,13 @@
-# MonoidMultiply
+## MonoidMultiply
 
 `bigint` monoid under multiplication.
 
 The `empty` value is `1n`.
 
-To import and use `MonoidMultiply` from the "BigInt" module:
-
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
-// Can be accessed like this
-BigInt.MonoidMultiply
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { MonoidMultiply } from "@effect/typeclass/data/BigInt"
 
 assert.deepStrictEqual(MonoidMultiply.combine(2n, 3n), 6n)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(MonoidMultiply.combine(2n, MonoidMultiply.empty), 2n)
 **Signature**
 
 ```ts
-export declare const MonoidMultiply: monoid.Monoid<bigint>
+declare const MonoidMultiply: monoid.Monoid<bigint>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L121)
+
+Since v0.24.0

@@ -1,17 +1,13 @@
-# Acknowledged
+## Acknowledged
 
 Constructs an AcknowledgedMessageState.
-
-To import and use `Acknowledged` from the "MessageState" module:
-
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
-// Can be accessed like this
-MessageState.Acknowledged
-```
 
 **Signature**
 
 ```ts
-export declare const Acknowledged: MessageStateAcknowledged
+declare const Acknowledged: MessageStateAcknowledged
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L96)
+
+Since v1.0.0

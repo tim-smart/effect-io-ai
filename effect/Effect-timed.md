@@ -1,4 +1,4 @@
-# timed
+## timed
 
 Executes an effect and measures the time it takes to complete.
 
@@ -15,27 +15,19 @@ The original effect's behavior (success, failure, or interruption) remains
 unchanged, and the timing information is provided alongside the result in a
 tuple.
 
-To import and use `timed` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.timed
-```
-
 **Example**
 
 ```ts
 import { Duration, Effect } from "effect"
 
-const task = Effect.gen(function* () {
+const task = Effect.gen(function*() {
   yield* Effect.sleep("2 seconds") // Simulates some work
   return "some result"
 })
 
 const timedTask = task.pipe(Effect.timed)
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const [duration, result] = yield* timedTask
   console.log(`Task completed in ${Duration.toMillis(duration)} ms with result: ${result}`)
 })
@@ -47,5 +39,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
+declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6786)
+
+Since v2.0.0

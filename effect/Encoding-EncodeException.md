@@ -1,11 +1,18 @@
-# EncodeException
+## EncodeException
 
 Represents a checked exception which occurs when encoding fails.
 
-To import and use `EncodeException` from the "Encoding" module:
+**Signature**
 
 ```ts
-import * as Encoding from "effect/Encoding"
-// Can be accessed like this
-Encoding.EncodeException
+export interface EncodeException {
+  readonly _tag: "EncodeException"
+  readonly [EncodeExceptionTypeId]: EncodeExceptionTypeId
+  readonly input: string
+  readonly message?: string
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L174)
+
+Since v3.12.0

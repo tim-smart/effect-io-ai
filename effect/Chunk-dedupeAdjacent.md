@@ -1,17 +1,13 @@
-# dedupeAdjacent
+## dedupeAdjacent
 
 Deduplicates adjacent elements that are identical.
-
-To import and use `dedupeAdjacent` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.dedupeAdjacent
-```
 
 **Signature**
 
 ```ts
-export declare const dedupeAdjacent: <A>(self: Chunk<A>) => Chunk<A>
+declare const dedupeAdjacent: <A>(self: Chunk<A>) => Chunk<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1185)
+
+Since v2.0.0

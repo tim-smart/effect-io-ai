@@ -1,17 +1,13 @@
-# mkString
+## mkString
 
 Creates a sink which transforms it's inputs into a string.
-
-To import and use `mkString` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.mkString
-```
 
 **Signature**
 
 ```ts
-export declare const mkString: Sink<string, unknown, never, never, never>
+declare const mkString: Sink<string, unknown, never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1130)
+
+Since v2.0.0

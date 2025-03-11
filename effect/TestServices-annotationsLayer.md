@@ -1,17 +1,13 @@
-# annotationsLayer
+## annotationsLayer
 
 Constructs a new `Annotations` service wrapped in a layer.
-
-To import and use `annotationsLayer` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.annotationsLayer
-```
 
 **Signature**
 
 ```ts
-export declare const annotationsLayer: () => Layer.Layer<Annotations.TestAnnotations>
+declare const annotationsLayer: () => Layer.Layer<Annotations.TestAnnotations>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L108)
+
+Since v2.0.0

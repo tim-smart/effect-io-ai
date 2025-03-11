@@ -1,4 +1,4 @@
-# asVoid
+## asVoid
 
 Transforms a schedule to always return `void` instead of its output.
 
@@ -12,16 +12,12 @@ schedule is irrelevant.
 The schedule still determines when executions should occur, but the results
 are discarded.
 
-To import and use `asVoid` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.asVoid
-```
-
 **Signature**
 
 ```ts
-export declare const asVoid: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<void, In, R>
+declare const asVoid: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<void, In, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L323)
+
+Since v2.0.0

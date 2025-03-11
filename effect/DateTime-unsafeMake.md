@@ -1,4 +1,4 @@
-# unsafeMake
+## unsafeMake
 
 Create a `DateTime` from one of the following:
 
@@ -7,14 +7,6 @@ Create a `DateTime` from one of the following:
 - The `number` of milliseconds since the Unix epoch
 - An object with the parts of a date
 - A `string` that can be parsed by `Date.parse`
-
-To import and use `unsafeMake` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.unsafeMake
-```
 
 **Example**
 
@@ -34,5 +26,9 @@ DateTime.unsafeMake("2024-01-01")
 **Signature**
 
 ```ts
-export declare const unsafeMake: <A extends DateTime.Input>(input: A) => DateTime.PreserveZone<A>
+declare const unsafeMake: <A extends DateTime.Input>(input: A) => DateTime.PreserveZone<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L326)
+
+Since v3.6.0

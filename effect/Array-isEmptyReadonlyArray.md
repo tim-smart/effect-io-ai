@@ -1,26 +1,22 @@
-# isEmptyReadonlyArray
+## isEmptyReadonlyArray
 
 Determine if a `ReadonlyArray` is empty narrowing down the type to `readonly []`.
-
-To import and use `isEmptyReadonlyArray` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.isEmptyReadonlyArray
-```
 
 **Example**
 
 ```ts
-import { isEmptyReadonlyArray } from "effect/Array"
+import { Array } from "effect"
 
-assert.deepStrictEqual(isEmptyReadonlyArray([]), true)
-assert.deepStrictEqual(isEmptyReadonlyArray([1, 2, 3]), false)
+console.log(Array.isEmptyReadonlyArray([])) // true
+console.log(Array.isEmptyReadonlyArray([1, 2, 3])) // false
 ```
 
 **Signature**
 
 ```ts
-export declare const isEmptyReadonlyArray: <A>(self: ReadonlyArray<A>) => self is readonly []
+declare const isEmptyReadonlyArray: <A>(self: ReadonlyArray<A>) => self is readonly []
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L554)
+
+Since v2.0.0

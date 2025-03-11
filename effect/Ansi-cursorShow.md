@@ -1,17 +1,13 @@
-# cursorShow
+## cursorShow
 
 Shows the cursor.
-
-To import and use `cursorShow` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.cursorShow
-```
 
 **Signature**
 
 ```ts
-export declare const cursorShow: Ansi
+declare const cursorShow: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L427)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# asVoid
+## asVoid
 
 Replace the success value of the `Micro` effect with `void`.
-
-To import and use `asVoid` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.asVoid
-```
 
 **Signature**
 
 ```ts
-export declare const asVoid: <A, E, R>(self: Micro<A, E, R>) => Micro<void, E, R>
+declare const asVoid: <A, E, R>(self: Micro<A, E, R>) => Micro<void, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1377)
+
+Since v3.4.0

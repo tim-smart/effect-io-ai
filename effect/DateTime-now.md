@@ -1,14 +1,6 @@
-# now
+## now
 
 Get the current time using the `Clock` service and convert it to a `DateTime`.
-
-To import and use `now` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.now
-```
 
 **Example**
 
@@ -23,5 +15,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const now: Effect.Effect<Utc, never, never>
+declare const now: Effect.Effect<Utc, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L426)
+
+Since v3.6.0

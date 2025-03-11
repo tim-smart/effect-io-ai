@@ -1,17 +1,13 @@
-# fail
+## fail
 
 Fails the transactional effect with the specified error.
-
-To import and use `fail` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.fail
-```
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => STM<never, E>
+declare const fail: <E>(error: E) => STM<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L567)
+
+Since v2.0.0

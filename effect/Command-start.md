@@ -1,17 +1,13 @@
-# start
+## start
 
 Start running the command and return a handle to the running process.
-
-To import and use `start` from the "Command" module:
-
-```ts
-import * as Command from "@effect/platform/Command"
-// Can be accessed like this
-Command.start
-```
 
 **Signature**
 
 ```ts
-export declare const start: (command: Command) => Effect<Process, PlatformError, CommandExecutor | Scope>
+declare const start: (command: Command) => Effect<Process, PlatformError, CommandExecutor | Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L219)
+
+Since v1.0.0

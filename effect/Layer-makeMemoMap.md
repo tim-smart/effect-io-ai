@@ -1,17 +1,13 @@
-# makeMemoMap
+## makeMemoMap
 
 Constructs a `MemoMap` that can be used to build additional layers.
-
-To import and use `makeMemoMap` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.makeMemoMap
-```
 
 **Signature**
 
 ```ts
-export declare const makeMemoMap: Effect.Effect<MemoMap, never, never>
+declare const makeMemoMap: Effect.Effect<MemoMap, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1082)
+
+Since v2.0.0

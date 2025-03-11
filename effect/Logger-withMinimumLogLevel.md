@@ -1,15 +1,7 @@
-# withMinimumLogLevel
+## withMinimumLogLevel
 
 Sets the minimum log level for subsequent logging operations, allowing
 control over which log messages are displayed based on their severity.
-
-To import and use `withMinimumLogLevel` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.withMinimumLogLevel
-```
 
 **Example**
 
@@ -25,8 +17,9 @@ const program = Effect.logDebug("message1").pipe(Logger.withMinimumLogLevel(LogL
 **Signature**
 
 ```ts
-export declare const withMinimumLogLevel: {
-  (level: LogLevel.LogLevel): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(self: Effect<A, E, R>, level: LogLevel.LogLevel): Effect<A, E, R>
-}
+declare const withMinimumLogLevel: { (level: LogLevel.LogLevel): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, level: LogLevel.LogLevel): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L363)
+
+Since v2.0.0

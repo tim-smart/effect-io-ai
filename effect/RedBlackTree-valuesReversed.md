@@ -1,17 +1,13 @@
-# valuesReversed
+## valuesReversed
 
 Get all values present in the tree in reverse order.
-
-To import and use `valuesReversed` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.valuesReversed
-```
 
 **Signature**
 
 ```ts
-export declare const valuesReversed: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<V>
+declare const valuesReversed: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<V>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L421)
+
+Since v2.0.0

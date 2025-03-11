@@ -1,4 +1,4 @@
-# provideService
+## provideService
 
 Provides an implementation for a service in the context of an effect.
 
@@ -15,21 +15,16 @@ a logger, or any other service your effect depends on. Once the service is
 provided, all parts of the effect that rely on the service will automatically
 use the implementation you supplied.
 
-To import and use `provideService` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.provideService
-```
-
 **Example**
 
 ```ts
 import { Effect, Context } from "effect"
 
 // Declaring a tag for a service that generates random numbers
-class Random extends Context.Tag("MyRandomService")<Random, { readonly next: Effect.Effect<number> }>() {}
+class Random extends Context.Tag("MyRandomService")<
+  Random,
+  { readonly next: Effect.Effect<number> }
+>() {}
 
 // Using the service
 const program = Effect.gen(function* () {
@@ -52,11 +47,16 @@ const runnable = Effect.provideService(program, Random, {
 // random number: 0.8241872233134417
 ```
 
+**See**
+
+- `provide` for providing multiple layers to an effect.
+
 **Signature**
 
 ```ts
-export declare const provideService: {
-  <I, S>(tag: Context.Tag<I, S>, service: NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>
-  <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, service: NoInfer<S>): Effect<A, E, Exclude<R, I>>
-}
+declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, service: NoInfer<S>): Effect<A, E, Exclude<R, I>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7468)
+
+Since v2.0.0

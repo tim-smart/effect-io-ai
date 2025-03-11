@@ -2,105 +2,81 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "D1Client",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const D1Client: Context.Tag<D1Client, D1Client>"
+    "signature": "declare const D1Client: Context.Tag<D1Client, D1Client>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const make: (options: D1ClientConfig) => Effect.Effect<D1Client, never, Scope.Scope | Reactivity.Reactivity>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<D1ClientConfig>) => Layer.Layer<D1Client | Client.SqlClient, ConfigError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (config: D1ClientConfig) => Layer.Layer<D1Client | Client.SqlClient, ConfigError>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "D1Client",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -110,15 +86,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "D1ClientConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -128,37 +100,15 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "D1Client",
-      "path": [
-        "src",
-        "D1Client.ts"
-      ]
+      "name": "D1Client.ts",
+      "path": "src/D1Client.ts"
     },
     "project": "@effect/sql-d1",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-d1",
-    "name": "From \"./D1Client.js\"",
-    "description": "Re-exports all named exports from the \"./D1Client.js\" module as `D1Client`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as D1Client from \"./D1Client.js\""
+    "signature": "type TypeId = typeof TypeId"
   }
 ]

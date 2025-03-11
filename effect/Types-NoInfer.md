@@ -1,11 +1,13 @@
-# NoInfer
+## NoInfer
 
 Avoid inference on a specific parameter
 
-To import and use `NoInfer` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.NoInfer
+type NoInfer<A> = [A][A extends any ? 0 : never]
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L263)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# collectAllInputs
+## collectAllInputs
 
 A schedule that collects all inputs into a `Chunk`.
 
@@ -12,16 +12,17 @@ This is useful when you need to track all received inputs over time, such as
 logging user actions, recording retry attempts, or accumulating data for
 later processing.
 
-To import and use `collectAllInputs` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.collectAllInputs
-```
+- `collectAllOutputs` If you need to collect outputs instead of
+inputs.
 
 **Signature**
 
 ```ts
-export declare const collectAllInputs: <A>() => Schedule<Chunk.Chunk<A>, A>
+declare const collectAllInputs: <A>() => Schedule<Chunk.Chunk<A>, A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L422)
+
+Since v2.0.0

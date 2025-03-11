@@ -1,15 +1,7 @@
-# unsafeSetZoneNamed
+## unsafeSetZoneNamed
 
 Set the time zone of a `DateTime` from an IANA time zone identifier. If the
 time zone is invalid, an `IllegalArgumentException` will be thrown.
-
-To import and use `unsafeSetZoneNamed` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.unsafeSetZoneNamed
-```
 
 **Example**
 
@@ -26,8 +18,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const unsafeSetZoneNamed: {
-  (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined }): (self: DateTime) => Zoned
-  (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined }): Zoned
-}
+declare const unsafeSetZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): Zoned; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L626)
+
+Since v3.6.0

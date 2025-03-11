@@ -1,17 +1,13 @@
-# toChunk
+## toChunk
 
 Collects all values into a `Chunk`.
-
-To import and use `toChunk` from the "TPriorityQueue" module:
-
-```ts
-import * as TPriorityQueue from "effect/TPriorityQueue"
-// Can be accessed like this
-TPriorityQueue.toChunk
-```
 
 **Signature**
 
 ```ts
-export declare const toChunk: <A>(self: TPriorityQueue<A>) => STM.STM<Chunk.Chunk<A>>
+declare const toChunk: <A>(self: TPriorityQueue<A>) => STM.STM<Chunk.Chunk<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPriorityQueue.ts#L215)
+
+Since v2.0.0

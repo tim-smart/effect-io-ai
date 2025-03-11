@@ -1,20 +1,13 @@
-# join
+## join
 
 Joins the elements together with "sep" in the middle.
-
-To import and use `join` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.join
-```
 
 **Signature**
 
 ```ts
-export declare const join: {
-  (sep: string): (self: Chunk<string>) => string
-  (self: Chunk<string>, sep: string): string
-}
+declare const join: { (sep: string): (self: Chunk<string>) => string; (self: Chunk<string>, sep: string): string; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1423)
+
+Since v2.0.0

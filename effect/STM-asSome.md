@@ -1,17 +1,13 @@
-# asSome
+## asSome
 
 Maps the success value of this effect to an optional value.
-
-To import and use `asSome` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.asSome
-```
 
 **Signature**
 
 ```ts
-export declare const asSome: <A, E, R>(self: STM<A, E, R>) => STM<Option.Option<A>, E, R>
+declare const asSome: <A, E, R>(self: STM<A, E, R>) => STM<Option.Option<A>, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L275)
+
+Since v2.0.0

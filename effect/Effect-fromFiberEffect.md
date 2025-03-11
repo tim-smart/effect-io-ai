@@ -1,18 +1,18 @@
-# fromFiberEffect
+## fromFiberEffect
 
 Creates an `Effect` value that represents the exit value of a fiber obtained
 from an effect.
 
-To import and use `fromFiberEffect` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.fromFiberEffect
-```
+- `fromFiber` for creating an effect from a fiber.
 
 **Signature**
 
 ```ts
-export declare const fromFiberEffect: <A, E, R>(fiber: Effect<Fiber.Fiber<A, E>, E, R>) => Effect<A, E, R>
+declare const fromFiberEffect: <A, E, R>(fiber: Effect<Fiber.Fiber<A, E>, E, R>) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6391)
+
+Since v2.0.0

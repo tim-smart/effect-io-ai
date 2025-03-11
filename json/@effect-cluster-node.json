@@ -1,138 +1,9 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./PodsRpc.js\"",
-    "description": "Re-exports all named exports from the \"./PodsRpc.js\" module as `PodsRpc`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as PodsRpc from \"./PodsRpc.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./ShardManagerClientRpc.js\"",
-    "description": "Re-exports all named exports from the \"./ShardManagerClientRpc.js\" module as `ShardManagerClientRpc`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ShardManagerClientRpc from \"./ShardManagerClientRpc.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./ShardManagerProtocol.js\"",
-    "description": "Re-exports all named exports from the \"./ShardManagerProtocol.js\" module as `ShardManagerProtocol`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ShardManagerProtocol from \"./ShardManagerProtocol.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./ShardManagerServiceRpc.js\"",
-    "description": "Re-exports all named exports from the \"./ShardManagerServiceRpc.js\" module as `ShardManagerServiceRpc`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ShardManagerServiceRpc from \"./ShardManagerServiceRpc.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./ShardingProtocol.js\"",
-    "description": "Re-exports all named exports from the \"./ShardingProtocol.js\" module as `ShardingProtocol`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ShardingProtocol from \"./ShardingProtocol.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./ShardingServiceRpc.js\"",
-    "description": "Re-exports all named exports from the \"./ShardingServiceRpc.js\" module as `ShardingServiceRpc`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as ShardingServiceRpc from \"./ShardingServiceRpc.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "From \"./StorageFile.js\"",
-    "description": "Re-exports all named exports from the \"./StorageFile.js\" module as `StorageFile`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as StorageFile from \"./StorageFile.js\""
-  },
-  {
     "_tag": "Function",
     "module": {
-      "name": "PodsRpc",
-      "path": [
-        "src",
-        "PodsRpc.ts"
-      ]
+      "name": "PodsRpc.ts",
+      "path": "src/PodsRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "podsRpc",
@@ -141,294 +12,230 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const podsRpc: <R>(buildClient: (podAddress: PodAddress.PodAddress) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardingServiceRpc.ShardingServiceRpcRequest>, never>>) => Layer.Layer<Pods.Pods, never, R>"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "ShardingProtocol",
-      "path": [
-        "src",
-        "ShardingProtocol.ts"
-      ]
+      "name": "ShardingProtocol.ts",
+      "path": "src/ShardingProtocol.ts"
     },
     "project": "@effect/cluster-node",
     "name": "AssignShards",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "export declare class AssignShards"
+    "signature": "declare class AssignShards"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "ShardingProtocol",
-      "path": [
-        "src",
-        "ShardingProtocol.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "PingShard",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schema",
-    "signature": "export declare class PingShard"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "ShardingProtocol",
-      "path": [
-        "src",
-        "ShardingProtocol.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "Send",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schema",
-    "signature": "export declare class Send"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "ShardingProtocol",
-      "path": [
-        "src",
-        "ShardingProtocol.ts"
-      ]
+      "name": "ShardingProtocol.ts",
+      "path": "src/ShardingProtocol.ts"
     },
     "project": "@effect/cluster-node",
     "name": "UnassignShards",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "export declare class UnassignShards"
+    "signature": "declare class UnassignShards"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingProtocol.ts",
+      "path": "src/ShardingProtocol.ts"
+    },
+    "project": "@effect/cluster-node",
+    "name": "Send",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare class Send"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardingProtocol.ts",
+      "path": "src/ShardingProtocol.ts"
+    },
+    "project": "@effect/cluster-node",
+    "name": "PingShard",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare class PingShard"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ShardingServiceRpc",
-      "path": [
-        "src",
-        "ShardingServiceRpc.ts"
-      ]
+      "name": "ShardingServiceRpc.ts",
+      "path": "src/ShardingServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "router",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "rpc",
-    "signature": "export declare const router: RpcRouter.RpcRouter<ShardingProtocol.AssignShards | ShardingProtocol.UnassignShards | ShardingProtocol.PingShard | ShardingProtocol.Send, Sharding.Sharding>"
+    "signature": "declare const router: RpcRouter.RpcRouter<ShardingProtocol.AssignShards | ShardingProtocol.UnassignShards | ShardingProtocol.PingShard | ShardingProtocol.Send, Sharding.Sharding>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "ShardingServiceRpc",
-      "path": [
-        "src",
-        "ShardingServiceRpc.ts"
-      ]
+      "name": "ShardingServiceRpc.ts",
+      "path": "src/ShardingServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "ShardingServiceRpc",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type ShardingServiceRpc = typeof router"
+    "signature": "type ShardingServiceRpc = typeof router"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "ShardingServiceRpc",
-      "path": [
-        "src",
-        "ShardingServiceRpc.ts"
-      ]
+      "name": "ShardingServiceRpc.ts",
+      "path": "src/ShardingServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "ShardingServiceRpcRequest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type ShardingServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
+    "signature": "type ShardingServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "ShardManagerClientRpc",
-      "path": [
-        "src",
-        "ShardManagerClientRpc.ts"
-      ]
+      "name": "ShardManagerClientRpc.ts",
+      "path": "src/ShardManagerClientRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "shardManagerClientRpc",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": null
+    "signature": "declare const shardManagerClientRpc: (makeClient: (shardManagerUri: string) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardManagerServiceRpc.ShardManagerServiceRpcRequest>, never>>) => Layer.Layer<ShardManagerClient.ShardManagerClient, never, ShardingConfig.ShardingConfig>"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "ShardManagerProtocol",
-      "path": [
-        "src",
-        "ShardManagerProtocol.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "GetAssignements",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schema",
-    "signature": "export declare class GetAssignements"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "ShardManagerProtocol",
-      "path": [
-        "src",
-        "ShardManagerProtocol.ts"
-      ]
-    },
-    "project": "@effect/cluster-node",
-    "name": "NotifyUnhealthyPod",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schema",
-    "signature": "export declare class NotifyUnhealthyPod"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "ShardManagerProtocol",
-      "path": [
-        "src",
-        "ShardManagerProtocol.ts"
-      ]
+      "name": "ShardManagerProtocol.ts",
+      "path": "src/ShardManagerProtocol.ts"
     },
     "project": "@effect/cluster-node",
     "name": "Register",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "export declare class Register"
+    "signature": "declare class Register"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "ShardManagerProtocol",
-      "path": [
-        "src",
-        "ShardManagerProtocol.ts"
-      ]
+      "name": "ShardManagerProtocol.ts",
+      "path": "src/ShardManagerProtocol.ts"
     },
     "project": "@effect/cluster-node",
     "name": "Unregister",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "export declare class Unregister"
+    "signature": "declare class Unregister"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardManagerProtocol.ts",
+      "path": "src/ShardManagerProtocol.ts"
+    },
+    "project": "@effect/cluster-node",
+    "name": "NotifyUnhealthyPod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare class NotifyUnhealthyPod"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ShardManagerProtocol.ts",
+      "path": "src/ShardManagerProtocol.ts"
+    },
+    "project": "@effect/cluster-node",
+    "name": "GetAssignements",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare class GetAssignements"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ShardManagerServiceRpc",
-      "path": [
-        "src",
-        "ShardManagerServiceRpc.ts"
-      ]
+      "name": "ShardManagerServiceRpc.ts",
+      "path": "src/ShardManagerServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "router",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "rpc",
-    "signature": "export declare const router: RpcRouter.RpcRouter<ShardManagerProtocolHttp.Register | ShardManagerProtocolHttp.Unregister | ShardManagerProtocolHttp.NotifyUnhealthyPod | ShardManagerProtocolHttp.GetAssignements, ShardManager.ShardManager>"
+    "signature": "declare const router: RpcRouter.RpcRouter<ShardManagerProtocolHttp.Register | ShardManagerProtocolHttp.Unregister | ShardManagerProtocolHttp.NotifyUnhealthyPod | ShardManagerProtocolHttp.GetAssignements, ShardManager.ShardManager>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "ShardManagerServiceRpc",
-      "path": [
-        "src",
-        "ShardManagerServiceRpc.ts"
-      ]
+      "name": "ShardManagerServiceRpc.ts",
+      "path": "src/ShardManagerServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "ShardManagerServiceRpc",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type ShardManagerServiceRpc = typeof router"
+    "signature": "type ShardManagerServiceRpc = typeof router"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "ShardManagerServiceRpc",
-      "path": [
-        "src",
-        "ShardManagerServiceRpc.ts"
-      ]
+      "name": "ShardManagerServiceRpc.ts",
+      "path": "src/ShardManagerServiceRpc.ts"
     },
     "project": "@effect/cluster-node",
     "name": "ShardManagerServiceRpcRequest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type ShardManagerServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
+    "signature": "type ShardManagerServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "StorageFile",
-      "path": [
-        "src",
-        "StorageFile.ts"
-      ]
+      "name": "StorageFile.ts",
+      "path": "src/StorageFile.ts"
     },
     "project": "@effect/cluster-node",
     "name": "storageFile",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const storageFile: Layer.Layer<Storage.Storage, never, never>"
+    "signature": "declare const storageFile: Layer.Layer<Storage.Storage, never, never>"
   }
 ]

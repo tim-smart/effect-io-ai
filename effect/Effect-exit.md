@@ -1,4 +1,4 @@
-# exit
+## exit
 
 Encapsulates both success and failure of an `Effect` using the `Exit` type.
 
@@ -9,7 +9,7 @@ outcome in the `Exit` type. The `Exit` type provides explicit handling of
 both success (`Exit.Success`) and failure (`Exit.Failure`) cases, including
 defects (unrecoverable errors).
 
-Unlike {@link either} or {@link option}, this function also encapsulates
+Unlike `either` or `option`, this function also encapsulates
 defects, which are typically unrecoverable and would otherwise terminate the
 effect. With the `Exit` type, defects are represented in `Exit.Failure`,
 allowing for detailed introspection and structured error handling.
@@ -17,14 +17,6 @@ allowing for detailed introspection and structured error handling.
 This makes the resulting effect robust and incapable of direct failure (its
 error type is `never`). It is particularly useful for workflows where all
 outcomes, including unexpected defects, must be managed and analyzed.
-
-To import and use `exit` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.exit
-```
 
 **Example**
 
@@ -38,8 +30,13 @@ const program = Effect.gen(function* () {
   const exit = yield* Effect.exit(task)
   if (Exit.isFailure(exit)) {
     const cause = exit.cause
-    if (Cause.isDieType(cause) && Cause.isRuntimeException(cause.defect)) {
-      yield* Console.log(`RuntimeException defect caught: ${cause.defect.message}`)
+    if (
+      Cause.isDieType(cause) &&
+      Cause.isRuntimeException(cause.defect)
+    ) {
+      yield* Console.log(
+        `RuntimeException defect caught: ${cause.defect.message}`
+      )
     } else {
       yield* Console.log("Unknown failure caught.")
     }
@@ -57,8 +54,17 @@ const program = Effect.gen(function* () {
 // }
 ```
 
+**See**
+
+- `option` for a version that uses `Option` instead.
+- `either` for a version that uses `Either` instead.
+
 **Signature**
 
 ```ts
-export declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
+declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8067)
+
+Since v2.0.0

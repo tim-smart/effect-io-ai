@@ -1,14 +1,6 @@
-# concatAll
+## concatAll
 
 Concatenates all of the streams in the chunk to one stream.
-
-To import and use `concatAll` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.concatAll
-```
 
 **Example**
 
@@ -34,5 +26,9 @@ const stream = Stream.concatAll(Chunk.make(s1, s2, s3))
 **Signature**
 
 ```ts
-export declare const concatAll: <A, E, R>(streams: Chunk.Chunk<Stream<A, E, R>>) => Stream<A, E, R>
+declare const concatAll: <A, E, R>(streams: Chunk.Chunk<Stream<A, E, R>>) => Stream<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1095)
+
+Since v2.0.0

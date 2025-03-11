@@ -1,17 +1,13 @@
-# toChannel
+## toChannel
 
 Create a `Channel` from a `Mailbox`.
-
-To import and use `toChannel` from the "Mailbox" module:
-
-```ts
-import * as Mailbox from "effect/Mailbox"
-// Can be accessed like this
-Mailbox.toChannel
-```
 
 **Signature**
 
 ```ts
-export declare const toChannel: <A, E>(self: ReadonlyMailbox<A, E>) => Channel<Chunk<A>, unknown, E>
+declare const toChannel: <A, E>(self: ReadonlyMailbox<A, E>) => Channel<Chunk<A>, unknown, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Mailbox.ts#L236)
+
+Since v3.8.0

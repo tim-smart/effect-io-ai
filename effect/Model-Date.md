@@ -1,18 +1,14 @@
-# Date
+## Date
 
 A schema for a `DateTime.Utc` that is serialized as a date string in the
 format `YYYY-MM-DD`.
 
-To import and use `Date` from the "Model" module:
-
-```ts
-import * as Model from "@effect/sql/Model"
-// Can be accessed like this
-Model.Date
-```
-
 **Signature**
 
 ```ts
-export declare const Date: Date
+declare const Date: Date
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L346)
+
+Since v1.0.0

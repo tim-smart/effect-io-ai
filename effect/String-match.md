@@ -1,17 +1,13 @@
-# match
+## match
 
 It is the `pipe`-able version of the native `match` method.
-
-To import and use `match` from the "String" module:
-
-```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.match
-```
 
 **Signature**
 
 ```ts
-export declare const match: (regexp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
+declare const match: (regexp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L432)
+
+Since v2.0.0

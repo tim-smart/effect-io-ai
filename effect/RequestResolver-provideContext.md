@@ -1,22 +1,13 @@
-# provideContext
+## provideContext
 
 Provides this data source with its required context.
-
-To import and use `provideContext` from the "RequestResolver" module:
-
-```ts
-import * as RequestResolver from "effect/RequestResolver"
-// Can be accessed like this
-RequestResolver.provideContext
-```
 
 **Signature**
 
 ```ts
-export declare const provideContext: {
-  <R>(
-    context: Context.Context<R>
-  ): <A extends Request.Request<any, any>>(self: RequestResolver<A, R>) => RequestResolver<A>
-  <R, A extends Request.Request<any, any>>(self: RequestResolver<A, R>, context: Context.Context<R>): RequestResolver<A>
-}
+declare const provideContext: { <R>(context: Context.Context<R>): <A extends Request.Request<any, any>>(self: RequestResolver<A, R>) => RequestResolver<A>; <R, A extends Request.Request<any, any>>(self: RequestResolver<A, R>, context: Context.Context<R>): RequestResolver<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L322)
+
+Since v2.0.0

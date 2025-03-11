@@ -1,19 +1,13 @@
-# tagged
+## tagged
 
 Constructs a new `Request`.
-
-To import and use `tagged` from the "Request" module:
-
-```ts
-import * as Request from "effect/Request"
-// Can be accessed like this
-Request.tagged
-```
 
 **Signature**
 
 ```ts
-export declare const tagged: <R extends Request<any, any> & { _tag: string }>(
-  tag: R["_tag"]
-) => Request.Constructor<R, "_tag">
+declare const tagged: <R extends Request<any, any> & { _tag: string; }>(tag: R["_tag"]) => Request.Constructor<R, "_tag">
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L120)
+
+Since v2.0.0

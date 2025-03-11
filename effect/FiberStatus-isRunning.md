@@ -1,18 +1,14 @@
-# isRunning
+## isRunning
 
 Returns `true` if the specified `FiberStatus` is `Running`, `false`
 otherwise.
 
-To import and use `isRunning` from the "FiberStatus" module:
-
-```ts
-import * as FiberStatus from "effect/FiberStatus"
-// Can be accessed like this
-FiberStatus.isRunning
-```
-
 **Signature**
 
 ```ts
-export declare const isRunning: (self: FiberStatus) => self is Running
+declare const isRunning: (self: FiberStatus) => self is Running
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberStatus.ts#L99)
+
+Since v2.0.0

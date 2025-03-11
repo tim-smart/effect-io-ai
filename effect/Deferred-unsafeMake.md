@@ -1,17 +1,13 @@
-# unsafeMake
+## unsafeMake
 
 Unsafely creates a new `Deferred` from the specified `FiberId`.
-
-To import and use `unsafeMake` from the "Deferred" module:
-
-```ts
-import * as Deferred from "effect/Deferred"
-// Can be accessed like this
-Deferred.unsafeMake
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeMake: <A, E = never>(fiberId: FiberId.FiberId) => Deferred<A, E>
+declare const unsafeMake: <A, E = never>(fiberId: FiberId.FiberId) => Deferred<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L292)
+
+Since v2.0.0

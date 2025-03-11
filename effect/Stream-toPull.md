@@ -1,17 +1,9 @@
-# toPull
+## toPull
 
 Returns in a scope a ZIO effect that can be used to repeatedly pull chunks
 from the stream. The pull effect fails with None when the stream is
 finished, or with Some error if it fails, otherwise it returns a chunk of
 the stream's output.
-
-To import and use `toPull` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.toPull
-```
 
 **Example**
 
@@ -21,7 +13,7 @@ import { Effect, Stream } from "effect"
 // Simulate a chunked stream
 const stream = Stream.fromIterable([1, 2, 3, 4, 5]).pipe(Stream.rechunk(2))
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   // Create an effect to get data chunks from the stream
   const getChunk = yield* Stream.toPull(stream)
 
@@ -45,7 +37,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const toPull: <A, E, R>(
-  self: Stream<A, E, R>
-) => Effect.Effect<Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>, never, Scope.Scope | R>
+declare const toPull: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5225)
+
+Since v2.0.0

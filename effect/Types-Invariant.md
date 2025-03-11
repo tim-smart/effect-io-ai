@@ -1,11 +1,13 @@
-# Invariant
+## Invariant
 
 Invariant helper.
 
-To import and use `Invariant` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Invariant
+type Invariant<A> = (_: A) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L271)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# either
+## either
 
 Wraps the match result in an `Either`, distinguishing matched and unmatched
 cases.
@@ -13,14 +13,6 @@ value)`).
 This approach is particularly useful when handling optional values or when an
 unmatched case should be explicitly handled rather than returning a default
 value or throwing an error.
-
-To import and use `either` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.either
-```
 
 **Example**
 
@@ -47,7 +39,9 @@ console.log(getRole({ role: "viewer" }))
 **Signature**
 
 ```ts
-export declare const either: <I, F, R, A, Pr, Ret>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => [Pr] extends [never] ? (input: I) => Either.Either<Unify<A>, R> : Either.Either<Unify<A>, R>
+declare const either: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Either.Either<Unify<A>, R> : Either.Either<Unify<A>, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1157)
+
+Since v1.0.0

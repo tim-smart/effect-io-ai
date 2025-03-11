@@ -1,15 +1,7 @@
-# jsonLogger
+## jsonLogger
 
 The `jsonLogger` logger formats log entries as JSON objects, making them easy to
 integrate with logging systems that consume JSON data.
-
-To import and use `jsonLogger` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.jsonLogger
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const jsonLogger: Logger<unknown, string>
+declare const jsonLogger: Logger<unknown, string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L446)
+
+Since v2.0.0

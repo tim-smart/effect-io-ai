@@ -1,14 +1,16 @@
-# ULID
+## ULID
 
 Represents a Universally Unique Lexicographically Sortable Identifier (ULID).
 
 ULIDs are designed to be compact, URL-safe, and ordered, making them suitable for use as identifiers.
 This schema ensures that the provided string adheres to the standard ULID format.
 
-To import and use `ULID` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.ULID
+declare class ULID
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4862)
+
+Since v3.10.0

@@ -1,4 +1,4 @@
-# runPromiseExit
+## runPromiseExit
 
 Runs an effect and returns a `Promise` that resolves to an `Exit`,
 representing the outcome.
@@ -7,7 +7,6 @@ representing the outcome.
 
 This function executes an effect and resolves to an `Exit` object. The `Exit`
 type provides detailed information about the result of the effect:
-
 - If the effect succeeds, the `Exit` will be of type `Success` and include
   the value produced by the effect.
 - If the effect fails, the `Exit` will be of type `Failure` and contain a
@@ -24,14 +23,6 @@ whether it succeeded or failed, and want to work with this result using
 `Promise` syntax. This is particularly useful when integrating with systems
 that rely on promises but need more detailed error handling than a simple
 rejection.
-
-To import and use `runPromiseExit` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.runPromiseExit
-```
 
 **Example**
 
@@ -65,8 +56,9 @@ import { Effect } from "effect"
 **Signature**
 
 ```ts
-export declare const runPromiseExit: <A, E>(
-  effect: Effect<A, E, never>,
-  options?: { readonly signal?: AbortSignal } | undefined
-) => Promise<Exit.Exit<A, E>>
+declare const runPromiseExit: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11946)
+
+Since v2.0.0

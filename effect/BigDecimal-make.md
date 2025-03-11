@@ -1,17 +1,13 @@
-# make
+## make
 
 Creates a `BigDecimal` from a `bigint` value and a scale.
-
-To import and use `make` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: (value: bigint, scale: number) => BigDecimal
+declare const make: (value: bigint, scale: number) => BigDecimal
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L100)
+
+Since v2.0.0

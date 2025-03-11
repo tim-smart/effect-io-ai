@@ -1,17 +1,13 @@
-# interrupt
+## interrupt
 
 Interrupts the fiber running the effect.
-
-To import and use `interrupt` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.interrupt
-```
 
 **Signature**
 
 ```ts
-export declare const interrupt: STM<never, never, never>
+declare const interrupt: STM<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1139)
+
+Since v2.0.0

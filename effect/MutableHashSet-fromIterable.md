@@ -1,17 +1,13 @@
-# fromIterable
+## fromIterable
 
 Creates a new `MutableHashSet` from an iterable collection of values.
-
-To import and use `fromIterable` from the "MutableHashSet" module:
-
-```ts
-import * as MutableHashSet from "effect/MutableHashSet"
-// Can be accessed like this
-MutableHashSet.fromIterable
-```
 
 **Signature**
 
 ```ts
-export declare const fromIterable: <K = never>(keys: Iterable<K>) => MutableHashSet<K>
+declare const fromIterable: <K = never>(keys: Iterable<K>) => MutableHashSet<K>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L69)
+
+Since v2.0.0

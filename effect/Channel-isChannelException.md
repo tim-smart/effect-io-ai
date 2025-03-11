@@ -1,18 +1,14 @@
-# isChannelException
+## isChannelException
 
 Returns `true` if the specified value is an `ChannelException`, `false`
 otherwise.
 
-To import and use `isChannelException` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.isChannelException
-```
-
 **Signature**
 
 ```ts
-export declare const isChannelException: (u: unknown) => u is ChannelException<unknown>
+declare const isChannelException: (u: unknown) => u is ChannelException<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2355)
+
+Since v2.0.0

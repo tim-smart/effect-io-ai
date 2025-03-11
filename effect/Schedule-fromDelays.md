@@ -1,4 +1,4 @@
-# fromDelays
+## fromDelays
 
 Creates a schedule that recurs once for each specified duration, applying the
 given delays sequentially.
@@ -13,19 +13,12 @@ all delays have been used, the schedule stops executing.
 This is useful for defining a custom delay sequence that does not follow a
 fixed pattern like exponential or Fibonacci backoff.
 
-To import and use `fromDelays` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.fromDelays
-```
-
 **Signature**
 
 ```ts
-export declare const fromDelays: (
-  delay: Duration.DurationInput,
-  ...delays: Array<Duration.DurationInput>
-) => Schedule<Duration.Duration>
+declare const fromDelays: (delay: Duration.DurationInput, ...delays: Array<Duration.DurationInput>) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1096)
+
+Since v2.0.0

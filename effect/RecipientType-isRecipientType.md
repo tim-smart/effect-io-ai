@@ -1,17 +1,13 @@
-# isRecipientType
+## isRecipientType
 
 Ensure that given value is a RecipientType
-
-To import and use `isRecipientType` from the "RecipientType" module:
-
-```ts
-import * as RecipientType from "@effect/cluster/RecipientType"
-// Can be accessed like this
-RecipientType.isRecipientType
-```
 
 **Signature**
 
 ```ts
-export declare function isRecipientType<A extends Message.Message.Any>(value: unknown): value is RecipientType<A>
+declare const isRecipientType: <A extends Message.Message.Any>(value: unknown) => value is RecipientType<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L101)
+
+Since v1.0.0

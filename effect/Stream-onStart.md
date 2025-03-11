@@ -1,14 +1,6 @@
-# onStart
+## onStart
 
 Adds an effect to be executed at the start of the stream.
-
-To import and use `onStart` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.onStart
-```
 
 **Example**
 
@@ -32,8 +24,9 @@ const stream = Stream.make(1, 2, 3).pipe(
 **Signature**
 
 ```ts
-export declare const onStart: {
-  <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>
-}
+declare const onStart: { <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3239)
+
+Since v3.6.0

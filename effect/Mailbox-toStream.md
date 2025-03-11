@@ -1,17 +1,13 @@
-# toStream
+## toStream
 
 Create a `Stream` from a `Mailbox`.
-
-To import and use `toStream` from the "Mailbox" module:
-
-```ts
-import * as Mailbox from "effect/Mailbox"
-// Can be accessed like this
-Mailbox.toStream
-```
 
 **Signature**
 
 ```ts
-export declare const toStream: <A, E>(self: ReadonlyMailbox<A, E>) => Stream<A, E>
+declare const toStream: <A, E>(self: ReadonlyMailbox<A, E>) => Stream<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Mailbox.ts#L245)
+
+Since v3.8.0

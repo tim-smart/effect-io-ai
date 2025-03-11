@@ -1,4 +1,4 @@
-# custom
+## custom
 
 Creates a custom `Prompt` from the specified initial state and handlers.
 
@@ -12,30 +12,23 @@ to be rendered to the `Terminal`. The `handlers` of a custom prompt are used
 to control what is rendered to the `Terminal` each frame. During each frame,
 the following occurs:
 
-1. The `render` handler is called with this frame's prompt state and prompt
-   action and returns an ANSI escape string to be rendered to the
-   `Terminal`
-2. The `Terminal` obtains input from the user
-3. The `process` handler is called with the input obtained from the user
-   and this frame's prompt state and returns the next prompt action that
-   should be performed
-4. The `clear` handler is called with this frame's prompt state and prompt
-   action and returns an ANSI escape string used to clear the screen of
-   the `Terminal`
-
-To import and use `custom` from the "Prompt" module:
-
-```ts
-import * as Prompt from "@effect/cli/Prompt"
-// Can be accessed like this
-Prompt.custom
-```
+  1. The `render` handler is called with this frame's prompt state and prompt
+     action and returns an ANSI escape string to be rendered to the
+     `Terminal`
+  2. The `Terminal` obtains input from the user
+  3. The `process` handler is called with the input obtained from the user
+     and this frame's prompt state and returns the next prompt action that
+     should be performed
+  4. The `clear` handler is called with this frame's prompt state and prompt
+     action and returns an ANSI escape string used to clear the screen of
+     the `Terminal`
 
 **Signature**
 
 ```ts
-export declare const custom: <State, Output>(
-  initialState: State | Effect<State, never, Prompt.Environment>,
-  handlers: Prompt.Handlers<State, Output>
-) => Prompt<Output>
+declare const custom: <State, Output>(initialState: State | Effect<State, never, Prompt.Environment>, handlers: Prompt.Handlers<State, Output>) => Prompt<Output>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L581)
+
+Since v1.0.0

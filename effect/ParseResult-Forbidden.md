@@ -1,11 +1,17 @@
-# Forbidden
+## Forbidden
 
 The `Forbidden` variant of the `ParseIssue` type represents a forbidden operation, such as when encountering an Effect that is not allowed to execute (e.g., using `runSync`).
 
-To import and use `Forbidden` from the "ParseResult" module:
+**Signature**
 
 ```ts
-import * as ParseResult from "effect/ParseResult"
-// Can be accessed like this
-ParseResult.Forbidden
+declare class Forbidden { constructor(
+    readonly ast: AST.AST,
+    readonly actual: unknown,
+    readonly message?: string
+  ) }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L198)
+
+Since v3.10.0

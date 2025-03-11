@@ -1,17 +1,13 @@
-# keys
+## keys
 
 Collects all keys stored in map.
-
-To import and use `keys` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.keys
-```
 
 **Signature**
 
 ```ts
-export declare const keys: <K, V>(self: TMap<K, V>) => STM.STM<Array<K>>
+declare const keys: <K, V>(self: TMap<K, V>) => STM.STM<Array<K>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L193)
+
+Since v2.0.0

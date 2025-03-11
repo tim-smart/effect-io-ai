@@ -1,21 +1,14 @@
-# hsep
+## hsep
 
 The `hsep` combinator concatenates all documents in a collection horizontally
 by placing a `space` between each pair of documents.
 
 For automatic line breaks, consider using `fillSep`.
 
-To import and use `hsep` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.hsep
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 
 const doc: Doc.Doc<never> = Doc.hsep(Doc.words("lorem ipsum dolor sit amet"))
@@ -42,5 +35,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>
+declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1232)
+
+Since v1.0.0

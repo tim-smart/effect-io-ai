@@ -1,4 +1,4 @@
-# withReturnType
+## withReturnType
 
 Ensures that all branches of a matcher return a specific type.
 
@@ -10,14 +10,6 @@ matching condition produces a value of the expected type.
 
 **Important:** This function must be the first step in the matcher pipeline.
 If used later, TypeScript will not enforce type consistency correctly.
-
-To import and use `withReturnType` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.withReturnType
-```
 
 **Example**
 
@@ -40,9 +32,9 @@ const match = Match.type<{ a: number } | { b: string }>().pipe(
 **Signature**
 
 ```ts
-export declare const withReturnType: <Ret>() => <I, F, R, A, Pr, _>(
-  self: Matcher<I, F, R, A, Pr, _>
-) => [Ret] extends [[A] extends [never] ? any : A]
-  ? Matcher<I, F, R, A, Pr, Ret>
-  : "withReturnType constraint does not extend Result type"
+declare const withReturnType: <Ret>() => <I, F, R, A, Pr, _>(self: Matcher<I, F, R, A, Pr, _>) => [Ret] extends [[A] extends [never] ? any : A] ? Matcher<I, F, R, A, Pr, Ret> : "withReturnType constraint does not extend Result type"
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L299)
+
+Since v1.0.0

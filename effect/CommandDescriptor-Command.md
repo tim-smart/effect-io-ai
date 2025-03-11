@@ -1,4 +1,4 @@
-# Command
+## Command
 
 A `Command` represents a command in a command-line application.
 
@@ -6,10 +6,12 @@ Every command-line application will have at least one command: the
 application itself. Other command-line applications may support multiple
 commands.
 
-To import and use `Command` from the "CommandDescriptor" module:
+**Signature**
 
 ```ts
-import * as CommandDescriptor from "@effect/cli/CommandDescriptor"
-// Can be accessed like this
-CommandDescriptor.Command
+export interface Command<A> extends Command.Variance<A>, Pipeable {}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/CommandDescriptor.ts#L45)
+
+Since v1.0.0

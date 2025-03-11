@@ -1,12 +1,14 @@
-# DateFromSelf
+## DateFromSelf
 
 Describes a schema that accommodates potentially invalid `Date` instances,
 such as `new Date("Invalid Date")`, without rejection.
 
-To import and use `DateFromSelf` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateFromSelf
+declare class DateFromSelf
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6738)
+
+Since v3.10.0

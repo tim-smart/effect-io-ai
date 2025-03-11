@@ -1,4 +1,4 @@
-# type
+## type
 
 Creates a matcher for a specific type.
 
@@ -6,16 +6,8 @@ Creates a matcher for a specific type.
 
 This function defines a `Matcher` that operates on a given type, allowing you
 to specify conditions for handling different cases. Once the matcher is
-created, you can use pattern-matching functions like {@link when} to define
+created, you can use pattern-matching functions like `when` to define
 how different values should be processed.
-
-To import and use `type` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.type
-```
 
 **Example**
 
@@ -43,8 +35,16 @@ console.log(match("hello"))
 // Output: "string: hello"
 ```
 
+**See**
+
+- `value` for creating a matcher from a specific value.
+
 **Signature**
 
 ```ts
-export declare const type: <I>() => Matcher<I, Types.Without<never>, I, never, never>
+declare const type: <I>() => Matcher<I, Types.Without<never>, I, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L193)
+
+Since v1.0.0

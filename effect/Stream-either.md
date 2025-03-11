@@ -1,19 +1,15 @@
-# either
+## either
 
 Returns a stream whose failures and successes have been lifted into an
 `Either`. The resulting stream cannot fail, because the failures have been
 exposed as part of the `Either` success case.
 
-To import and use `either` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.either
-```
-
 **Signature**
 
 ```ts
-export declare const either: <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<A, E>, never, R>
+declare const either: <A, E, R>(self: Stream<A, E, R>) => Stream<Either.Either<A, E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1451)
+
+Since v2.0.0

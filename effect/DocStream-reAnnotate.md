@@ -1,20 +1,13 @@
-# reAnnotate
+## reAnnotate
 
 Modify the annotations of a document.
-
-To import and use `reAnnotate` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.reAnnotate
-```
 
 **Signature**
 
 ```ts
-export declare const reAnnotate: {
-  <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>
-  <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>
-}
+declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L313)
+
+Since v1.0.0

@@ -1,18 +1,14 @@
-# withConsoleScoped
+## withConsoleScoped
 
 Sets the implementation of the console service to the specified value and
 restores it to its original value when the scope is closed.
 
-To import and use `withConsoleScoped` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.withConsoleScoped
-```
-
 **Signature**
 
 ```ts
-export declare const withConsoleScoped: <A extends Console>(console: A) => Effect<void, never, Scope.Scope>
+declare const withConsoleScoped: <A extends Console>(console: A) => Effect<void, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6658)
+
+Since v2.0.0

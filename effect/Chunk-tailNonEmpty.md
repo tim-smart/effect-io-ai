@@ -1,17 +1,13 @@
-# tailNonEmpty
+## tailNonEmpty
 
 Returns every elements after the first.
-
-To import and use `tailNonEmpty` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.tailNonEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const tailNonEmpty: <A>(self: NonEmptyChunk<A>) => Chunk<A>
+declare const tailNonEmpty: <A>(self: NonEmptyChunk<A>) => Chunk<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1121)
+
+Since v2.0.0

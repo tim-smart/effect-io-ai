@@ -1,4 +1,4 @@
-# sequentialFinalizers
+## sequentialFinalizers
 
 Ensures that finalizers are run sequentially in reverse order of their
 addition.
@@ -11,16 +11,16 @@ ensure they are run sequentially in reverse order when the scope is closed.
 By default, finalizers are executed sequentially, so this only changes the
 behavior if the scope is configured to run finalizers concurrently.
 
-To import and use `sequentialFinalizers` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.sequentialFinalizers
-```
+- `parallelFinalizers` for a version that ensures finalizers are run concurrently.
 
 **Signature**
 
 ```ts
-export declare const sequentialFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+declare const sequentialFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5833)
+
+Since v2.0.0

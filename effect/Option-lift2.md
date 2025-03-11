@@ -1,4 +1,4 @@
-# lift2
+## lift2
 
 Lifts a binary function to work with `Option` values, allowing the function
 to operate on two `Option`s.
@@ -10,14 +10,6 @@ applies `f` to the values of two `Option`s (`self` and `that`). If both
 `Option`s are `Some`, the binary function `f` is applied to their values, and
 the result is wrapped in a new `Some`. If either `Option` is `None`, the
 result is `None`.
-
-To import and use `lift2` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.lift2
-```
 
 **Example**
 
@@ -42,7 +34,9 @@ console.log(addOptions(Option.some(2), Option.none()))
 **Signature**
 
 ```ts
-export declare const lift2: <A, B, C>(
-  f: (a: A, b: B) => C
-) => { (that: Option<B>): (self: Option<A>) => Option<C>; (self: Option<A>, that: Option<B>): Option<C> }
+declare const lift2: <A, B, C>(f: (a: A, b: B) => C) => { (that: Option<B>): (self: Option<A>) => Option<C>; (self: Option<A>, that: Option<B>): Option<C>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1768)
+
+Since v2.0.0

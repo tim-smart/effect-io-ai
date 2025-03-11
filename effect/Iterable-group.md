@@ -1,17 +1,13 @@
-# group
+## group
 
 Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s.
-
-To import and use `group` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.group
-```
 
 **Signature**
 
 ```ts
-export declare const group: <A>(self: Iterable<A>) => Iterable<NonEmptyArray<A>>
+declare const group: <A>(self: Iterable<A>) => Iterable<NonEmptyArray<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L645)
+
+Since v2.0.0

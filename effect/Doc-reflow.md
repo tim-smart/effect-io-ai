@@ -1,21 +1,14 @@
-# reflow
+## reflow
 
 Splits a string of words into individual `Text` documents using the specified
 `char` to split on (defaults to `" "`). In addition, a `softLine` is inserted
 in between each word so that if the text exceeds the available width it will
 be broken into multiple lines.
 
-To import and use `reflow` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.reflow
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import * as String from "effect/String"
 
@@ -42,5 +35,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const reflow: (s: string, char?: string) => Doc<never>
+declare const reflow: (s: string, char?: string) => Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2391)
+
+Since v1.0.0

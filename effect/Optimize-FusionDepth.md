@@ -1,12 +1,14 @@
-# FusionDepth
+## FusionDepth
 
 Represents an instruction that determines how deeply the document fusion
 optimizer should traverse the document tree.
 
-To import and use `FusionDepth` from the "Optimize" module:
+**Signature**
 
 ```ts
-import * as Optimize from "@effect/printer/Optimize"
-// Can be accessed like this
-Optimize.FusionDepth
+type FusionDepth = Shallow | Deep
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L40)
+
+Since v1.0.0

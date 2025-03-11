@@ -1,11 +1,20 @@
-# CliApp
+## CliApp
 
 A `CliApp<A>` is a complete description of a command-line application.
 
-To import and use `CliApp` from the "CliApp" module:
+**Signature**
 
 ```ts
-import * as CliApp from "@effect/cli/CliApp"
-// Can be accessed like this
-CliApp.CliApp
+export interface CliApp<A> extends Pipeable {
+  readonly name: string
+  readonly version: string
+  readonly executable: string
+  readonly command: Command<A>
+  readonly summary: Span
+  readonly footer: HelpDoc
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/CliApp.ts#L21)
+
+Since v1.0.0

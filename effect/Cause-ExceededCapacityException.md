@@ -1,11 +1,16 @@
-# ExceededCapacityException
+## ExceededCapacityException
 
 An error that occurs when resource capacity is exceeded.
 
-To import and use `ExceededCapacityException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.ExceededCapacityException
+export interface ExceededCapacityException extends YieldableError {
+  readonly _tag: "ExceededCapacityException"
+  readonly [ExceededCapacityExceptionTypeId]: ExceededCapacityExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L411)
+
+Since v3.5.0

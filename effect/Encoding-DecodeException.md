@@ -1,11 +1,18 @@
-# DecodeException
+## DecodeException
 
 Represents a checked exception which occurs when decoding fails.
 
-To import and use `DecodeException` from the "Encoding" module:
+**Signature**
 
 ```ts
-import * as Encoding from "effect/Encoding"
-// Can be accessed like this
-Encoding.DecodeException
+export interface DecodeException {
+  readonly _tag: "DecodeException"
+  readonly [DecodeExceptionTypeId]: DecodeExceptionTypeId
+  readonly input: string
+  readonly message?: string
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L133)
+
+Since v2.0.0

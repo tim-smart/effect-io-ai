@@ -1,17 +1,13 @@
-# empty
+## empty
 
 Makes an empty `TMap`.
-
-To import and use `empty` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: <K, V>() => STM.STM<TMap<K, V>>
+declare const empty: <K, V>() => STM.STM<TMap<K, V>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L67)
+
+Since v2.0.0

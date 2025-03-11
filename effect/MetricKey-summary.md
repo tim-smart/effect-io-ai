@@ -1,25 +1,14 @@
-# summary
+## summary
 
 Creates a metric key for a summary, with the specified name, maxAge,
 maxSize, error, and quantiles.
 
-To import and use `summary` from the "MetricKey" module:
-
-```ts
-import * as MetricKey from "effect/MetricKey"
-// Can be accessed like this
-MetricKey.summary
-```
-
 **Signature**
 
 ```ts
-export declare const summary: (options: {
-  readonly name: string
-  readonly maxAge: Duration.DurationInput
-  readonly maxSize: number
-  readonly error: number
-  readonly quantiles: ReadonlyArray<number>
-  readonly description?: string | undefined
-}) => MetricKey.Summary
+declare const summary: (options: { readonly name: string; readonly maxAge: Duration.DurationInput; readonly maxSize: number; readonly error: number; readonly quantiles: ReadonlyArray<number>; readonly description?: string | undefined; }) => MetricKey.Summary
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MetricKey.ts#L181)
+
+Since v2.0.0

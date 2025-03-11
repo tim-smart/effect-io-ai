@@ -2,105 +2,81 @@
   {
     "_tag": "Class",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "AnthropicClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class AnthropicClient"
+    "signature": "declare class AnthropicClient"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "StreamChunk",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export declare class StreamChunk"
+    "signature": "declare class StreamChunk"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Effect.Effect<AnthropicClient.Service, never, HttpClient.HttpClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AiModels.AiModels | AnthropicClient, never, HttpClient.HttpClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "ContentPart",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -110,15 +86,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "ToolCallPart",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -128,15 +100,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "UsagePart",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -146,307 +114,211 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
-    "name": "StreamChunkPart",
-    "description": null,
+    "name": "StreamCompletionRequest",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type StreamChunkPart = ContentPart | ToolCallPart | UsagePart"
+    "signature": "type StreamCompletionRequest = Omit<\n  typeof Generated.CreateMessageParams.Encoded,\n  \"stream\"\n>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AnthropicClient",
-      "path": [
-        "src",
-        "AnthropicClient.ts"
-      ]
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
     },
     "project": "@effect/ai-anthropic",
-    "name": "StreamCompletionRequest",
-    "description": null,
+    "name": "StreamChunkPart",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type StreamCompletionRequest = Omit<\n  typeof Generated.CreateMessageParams.Encoded,\n  \"stream\"\n>"
+    "signature": "type StreamChunkPart = ContentPart | ToolCallPart | UsagePart"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicClient.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly client: Generated.Client\n    readonly streamRequest: <A>(\n      request: HttpClientRequest.HttpClientRequest\n    ) => Stream.Stream<A, HttpClientError.HttpClientError>\n    readonly stream: (\n      request: StreamCompletionRequest\n    ) => Stream.Stream<StreamChunk, HttpClientError.HttpClientError>\n  }"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "Config",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class Config"
+    "signature": "declare class Config"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "withConfigOverride",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "configuration",
-    "signature": "export declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }"
+    "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "model",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "ai models",
-    "signature": null
+    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.AiModel<Completions.Completions | Tokenizer.Tokenizer, AnthropicClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "layerCompletions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerCompletions: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions, never, AnthropicClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions | Tokenizer.Tokenizer, never, AnthropicClient>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AnthropicCompletions",
-      "path": [
-        "src",
-        "AnthropicCompletions.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "Model",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type Model = typeof Generated.ModelEnum.Encoded"
+    "signature": "type Model = typeof Generated.ModelEnum.Encoded"
   },
   {
-    "_tag": "Class",
+    "_tag": "Interface",
     "module": {
-      "name": "AnthropicConfig",
-      "path": [
-        "src",
-        "AnthropicConfig.ts"
-      ]
+      "name": "AnthropicCompletions.ts",
+      "path": "src/AnthropicCompletions.ts"
     },
     "project": "@effect/ai-anthropic",
-    "name": "AnthropicConfig",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "tags",
-    "signature": "export declare class AnthropicConfig"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AnthropicConfig",
-      "path": [
-        "src",
-        "AnthropicConfig.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "withClientTransform",
-    "description": null,
+    "name": "Config.Service",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "configuration",
-    "signature": "export declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }"
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateMessageParams.Encoded,\n          \"messages\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class AnthropicConfig"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AnthropicTokenizer",
-      "path": [
-        "src",
-        "AnthropicTokenizer.ts"
-      ]
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "withClientTransform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTokenizer.ts",
+      "path": "src/AnthropicTokenizer.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: Tokenizer.Tokenizer.Service"
+    "signature": "declare const make: Tokenizer.Tokenizer.Service"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AnthropicTokenizer",
-      "path": [
-        "src",
-        "AnthropicTokenizer.ts"
-      ]
+      "name": "AnthropicTokenizer.ts",
+      "path": "src/AnthropicTokenizer.ts"
     },
     "project": "@effect/ai-anthropic",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<Tokenizer.Tokenizer, never, never>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "From \"./AnthropicClient.js\"",
-    "description": "Re-exports all named exports from the \"./AnthropicClient.js\" module as `AnthropicClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AnthropicClient from \"./AnthropicClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "From \"./AnthropicCompletions.js\"",
-    "description": "Re-exports all named exports from the \"./AnthropicCompletions.js\" module as `AnthropicCompletions`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AnthropicCompletions from \"./AnthropicCompletions.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "From \"./AnthropicConfig.js\"",
-    "description": "Re-exports all named exports from the \"./AnthropicConfig.js\" module as `AnthropicConfig`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AnthropicConfig from \"./AnthropicConfig.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "From \"./AnthropicTokenizer.js\"",
-    "description": "Re-exports all named exports from the \"./AnthropicTokenizer.js\" module as `AnthropicTokenizer`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AnthropicTokenizer from \"./AnthropicTokenizer.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai-anthropic",
-    "name": "From \"./Generated.js\"",
-    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Generated from \"./Generated.js\""
+    "signature": "declare const layer: Layer.Layer<Tokenizer.Tokenizer, never, never>"
   }
 ]

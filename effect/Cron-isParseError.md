@@ -1,17 +1,13 @@
-# isParseError
+## isParseError
 
 Returns `true` if the specified value is an `ParseError`, `false` otherwise.
-
-To import and use `isParseError` from the "Cron" module:
-
-```ts
-import * as Cron from "effect/Cron"
-// Can be accessed like this
-Cron.isParseError
-```
 
 **Signature**
 
 ```ts
-export declare const isParseError: (u: unknown) => u is ParseError
+declare const isParseError: (u: unknown) => u is ParseError
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L218)
+
+Since v2.0.0

@@ -1,12 +1,16 @@
-# RuntimeFlag
+## RuntimeFlag
 
 Represents a flag that can be set to enable or disable a particular feature
 of the Effect runtime.
 
-To import and use `RuntimeFlag` from the "RuntimeFlags" module:
+**Signature**
 
 ```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.RuntimeFlag
+type RuntimeFlag = number & {
+  readonly RuntimeFlag: unique symbol
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L30)
+
+Since v2.0.0

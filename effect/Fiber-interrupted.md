@@ -1,17 +1,13 @@
-# interrupted
+## interrupted
 
 Constructrs a `Fiber` that is already interrupted.
-
-To import and use `interrupted` from the "Fiber" module:
-
-```ts
-import * as Fiber from "effect/Fiber"
-// Can be accessed like this
-Fiber.interrupted
-```
 
 **Signature**
 
 ```ts
-export declare const interrupted: (fiberId: FiberId.FiberId) => Fiber<never>
+declare const interrupted: (fiberId: FiberId.FiberId) => Fiber<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L459)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# random
+## random
 
 Retrieves the `Random` service from the context.
-
-To import and use `random` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.random
-```
 
 **Signature**
 
 ```ts
-export declare const random: Effect<Random.Random, never, never>
+declare const random: Effect<Random.Random, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11346)
+
+Since v2.0.0

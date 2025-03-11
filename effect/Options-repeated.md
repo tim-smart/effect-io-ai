@@ -1,4 +1,4 @@
-# repeated
+## repeated
 
 Indicates that the specified command-line option can be repeated `0` or more
 times.
@@ -6,16 +6,12 @@ times.
 **NOTE**: if the command-line option is not provided, and empty array will be
 returned as the value for said option.
 
-To import and use `repeated` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.repeated
-```
-
 **Signature**
 
 ```ts
-export declare const repeated: <A>(self: Options<A>) => Options<Array<A>>
+declare const repeated: <A>(self: Options<A>) => Options<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L467)
+
+Since v1.0.0

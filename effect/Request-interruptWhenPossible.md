@@ -1,20 +1,13 @@
-# interruptWhenPossible
+## interruptWhenPossible
 
 Interrupts the child effect when requests are no longer needed
-
-To import and use `interruptWhenPossible` from the "Request" module:
-
-```ts
-import * as Request from "effect/Request"
-// Can be accessed like this
-Request.interruptWhenPossible
-```
 
 **Signature**
 
 ```ts
-export declare const interruptWhenPossible: {
-  (all: Iterable<Request<any, any>>): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<void, E, R>
-  <A, E, R>(self: Effect.Effect<A, E, R>, all: Iterable<Request<any, any>>): Effect.Effect<void, E, R>
-}
+declare const interruptWhenPossible: { (all: Iterable<Request<any, any>>): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<void, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, all: Iterable<Request<any, any>>): Effect.Effect<void, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L189)
+
+Since v2.0.0

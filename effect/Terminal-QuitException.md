@@ -1,12 +1,14 @@
-# QuitException
+## QuitException
 
 A `QuitException` represents an exception that occurs when a user attempts to
 quit out of a `Terminal` prompt for input (usually by entering `ctrl`+`c`).
 
-To import and use `QuitException` from the "Terminal" module:
+**Signature**
 
 ```ts
-import * as Terminal from "@effect/platform/Terminal"
-// Can be accessed like this
-Terminal.QuitException
+declare class QuitException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L82)
+
+Since v1.0.0

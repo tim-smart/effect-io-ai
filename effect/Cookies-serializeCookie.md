@@ -1,19 +1,15 @@
-# serializeCookie
+## serializeCookie
 
 Serialize a cookie into a string
 
 Adapted from https://github.com/fastify/fastify-cookie under MIT License
 
-To import and use `serializeCookie` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.serializeCookie
-```
-
 **Signature**
 
 ```ts
-export declare function serializeCookie(self: Cookie): string
+declare const serializeCookie: (self: Cookie) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L593)
+
+Since v1.0.0

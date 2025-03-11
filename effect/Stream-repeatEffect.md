@@ -1,15 +1,7 @@
-# repeatEffect
+## repeatEffect
 
 Creates a stream from an effect producing a value of type `A` which repeats
 forever.
-
-To import and use `repeatEffect` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.repeatEffect
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ const stream = Stream.repeatEffect(Random.nextInt)
 **Signature**
 
 ```ts
-export declare const repeatEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
+declare const repeatEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3891)
+
+Since v2.0.0

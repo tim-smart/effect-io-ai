@@ -1,22 +1,13 @@
-# testConfigLayer
+## testConfigLayer
 
 Constructs a new `TestConfig` service with the specified settings.
-
-To import and use `testConfigLayer` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.testConfigLayer
-```
 
 **Signature**
 
 ```ts
-export declare const testConfigLayer: (params: {
-  readonly repeats: number
-  readonly retries: number
-  readonly samples: number
-  readonly shrinks: number
-}) => Layer.Layer<TestConfig.TestConfig>
+declare const testConfigLayer: (params: { readonly repeats: number; readonly retries: number; readonly samples: number; readonly shrinks: number; }) => Layer.Layer<TestConfig.TestConfig>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L347)
+
+Since v2.0.0

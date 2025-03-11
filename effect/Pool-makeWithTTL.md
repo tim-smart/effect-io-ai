@@ -1,4 +1,4 @@
-# makeWithTTL
+## makeWithTTL
 
 Makes a new pool with the specified minimum and maximum sizes and time to
 live before a pool whose excess items are not being used will be shrunk
@@ -24,16 +24,16 @@ to "usage", then items are invalidated based on pool usage.
 By default, the `timeToLiveStrategy` is set to "usage".
 
 ```ts
-import { createConnection } from "mysql2"
+import { createConnection } from "mysql2";
 import { Duration, Effect, Pool } from "effect"
 
 const acquireDBConnection = Effect.acquireRelease(
-  Effect.sync(() => createConnection("mysql://...")),
-  (connection) => Effect.sync(() => connection.end(() => {}))
+  Effect.sync(() => createConnection('mysql://...')),
+  (connection) => Effect.sync(() => connection.end(() => {})),
 )
 
 const connectionPool = Effect.flatMap(
-  Pool.makeWithTTL({
+ Pool.makeWithTTL({
     acquire: acquireDBConnection,
     min: 10,
     max: 20,
@@ -43,24 +43,12 @@ const connectionPool = Effect.flatMap(
 )
 ```
 
-To import and use `makeWithTTL` from the "Pool" module:
-
-```ts
-import * as Pool from "effect/Pool"
-// Can be accessed like this
-Pool.makeWithTTL
-```
-
 **Signature**
 
 ```ts
-export declare const makeWithTTL: <A, E, R>(options: {
-  readonly acquire: Effect.Effect<A, E, R>
-  readonly min: number
-  readonly max: number
-  readonly concurrency?: number | undefined
-  readonly targetUtilization?: number | undefined
-  readonly timeToLive: Duration.DurationInput
-  readonly timeToLiveStrategy?: "creation" | "usage" | undefined
-}) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
+declare const makeWithTTL: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly min: number; readonly max: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.DurationInput; readonly timeToLiveStrategy?: "creation" | "usage" | undefined; }) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L171)
+
+Since v2.0.0

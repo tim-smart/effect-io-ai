@@ -1,17 +1,13 @@
-# isNone
+## isNone
 
 Returns `true` if the `FiberId` is a `None`, `false` otherwise.
-
-To import and use `isNone` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.isNone
-```
 
 **Signature**
 
 ```ts
-export declare const isNone: (self: FiberId) => self is None
+declare const isNone: (self: FiberId) => self is None
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L100)
+
+Since v2.0.0

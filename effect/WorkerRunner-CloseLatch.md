@@ -1,12 +1,16 @@
-# CloseLatch
+## CloseLatch
 
 The worker close latch is used by platform runners to signal that the worker
 has been closed.
 
-To import and use `CloseLatch` from the "WorkerRunner" module:
+**Signature**
 
 ```ts
-import * as WorkerRunner from "@effect/platform/WorkerRunner"
-// Can be accessed like this
-WorkerRunner.CloseLatch
+export interface CloseLatch {
+  readonly _: unique symbol
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L75)
+
+Since v1.0.0

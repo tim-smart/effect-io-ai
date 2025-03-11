@@ -1,17 +1,13 @@
-# unsafeTrack
+## unsafeTrack
 
 Unsafely creates a new supervisor that tracks children in a set.
-
-To import and use `unsafeTrack` from the "Supervisor" module:
-
-```ts
-import * as Supervisor from "effect/Supervisor"
-// Can be accessed like this
-Supervisor.unsafeTrack
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeTrack: () => Supervisor<Array<Fiber.RuntimeFiber<any, any>>>
+declare const unsafeTrack: () => Supervisor<Array<Fiber.RuntimeFiber<any, any>>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Supervisor.ts#L149)
+
+Since v2.0.0

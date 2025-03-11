@@ -1,17 +1,13 @@
-# repeatForever
+## repeatForever
 
-Alias of {@link forever}.
-
-To import and use `repeatForever` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.repeatForever
-```
+Alias of `forever`.
 
 **Signature**
 
 ```ts
-export declare const repeatForever: Schedule<number, unknown, never>
+declare const repeatForever: Schedule<number, unknown, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1663)
+
+Since v2.0.0

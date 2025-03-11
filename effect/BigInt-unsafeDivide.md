@@ -1,4 +1,4 @@
-# unsafeDivide
+## unsafeDivide
 
 Provides a division operation on `bigint`s.
 
@@ -7,17 +7,10 @@ which represents the integer division rounded down to the nearest integer.
 
 Throws a `RangeError` if the divisor is `0n`.
 
-To import and use `unsafeDivide` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.unsafeDivide
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { unsafeDivide } from "effect/BigInt"
 
 assert.deepStrictEqual(unsafeDivide(6n, 3n), 2n)
@@ -27,5 +20,9 @@ assert.deepStrictEqual(unsafeDivide(6n, 4n), 1n)
 **Signature**
 
 ```ts
-export declare const unsafeDivide: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint }
+declare const unsafeDivide: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L142)
+
+Since v2.0.0

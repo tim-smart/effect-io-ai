@@ -1,4 +1,4 @@
-# reduce
+## reduce
 
 Reduces an `Iterable<A>` using an effectual function `f`, working
 sequentially from left to right.
@@ -18,27 +18,21 @@ The function is often used for operations like summing a collection of
 numbers or combining results from multiple tasks. It ensures that operations
 are performed one after the other, maintaining the order of the elements.
 
-To import and use `reduce` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.reduce
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
 const processOrder = (id: number) =>
-  Effect.succeed({ id, price: 100 * id }).pipe(
-    Effect.tap(() => Console.log(`Order ${id} processed`)),
-    Effect.delay(500 - id * 100)
-  )
+  Effect.succeed({ id, price: 100 * id })
+    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))
 
-const program = Effect.reduce([1, 2, 3, 4], 0, (acc, id, i) =>
-  processOrder(id).pipe(Effect.map((order) => acc + order.price))
+const program = Effect.reduce(
+  [1, 2, 3, 4],
+  0,
+  (acc, id, i) =>
+    processOrder(id)
+      .pipe(Effect.map((order) => acc + order.price))
 )
 
 // Effect.runPromise(program).then(console.log)
@@ -50,11 +44,17 @@ const program = Effect.reduce([1, 2, 3, 4], 0, (acc, id, i) =>
 // 1000
 ```
 
+**See**
+
+- `reduceWhile` for a similar function that stops the process based on a predicate.
+- `reduceRight` for a similar function that works from right to left.
+
 **Signature**
 
 ```ts
-export declare const reduce: {
-  <Z, A, E, R>(zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>
-  <A, Z, E, R>(elements: Iterable<A>, zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): Effect<Z, E, R>
-}
+declare const reduce: { <Z, A, E, R>(zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, E, R>(elements: Iterable<A>, zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1820)
+
+Since v2.0.0

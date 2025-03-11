@@ -1,17 +1,13 @@
-# match
+## match
 
 Match over the possible states of a MessageState
-
-To import and use `match` from the "MessageState" module:
-
-```ts
-import * as MessageState from "@effect/cluster/MessageState"
-// Can be accessed like this
-MessageState.match
-```
 
 **Signature**
 
 ```ts
-export declare const match: typeof internal.match
+declare const match: <A, B, C = B>(cases: { onAcknowledged: (value: MessageStateAcknowledged) => B; onProcessed: (exit: MessageStateProcessed<A>) => C; }) => (value: MessageState<A>) => B | C
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L88)
+
+Since v1.0.0

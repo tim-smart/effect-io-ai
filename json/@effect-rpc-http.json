@@ -2,181 +2,85 @@
   {
     "_tag": "Function",
     "module": {
-      "name": "HttpRpcResolver",
-      "path": [
-        "src",
-        "HttpRpcResolver.ts"
-      ]
+      "name": "HttpRpcResolver.ts",
+      "path": "src/HttpRpcResolver.ts"
     },
     "project": "@effect/rpc-http",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: <R extends Router.RpcRouter<any, any>>(client: Client.HttpClient) => RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>>>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "HttpRpcResolver",
-      "path": [
-        "src",
-        "HttpRpcResolver.ts"
-      ]
+      "name": "HttpRpcResolver.ts",
+      "path": "src/HttpRpcResolver.ts"
     },
     "project": "@effect/rpc-http",
     "name": "makeClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeClient: <R extends Router.RpcRouter<any, any>>(baseUrl: string) => Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>> extends never ? Effect.Effect<Resolver.Client<RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>>>, never, Client.HttpClient> : \"request context is not `never`\""
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "HttpRpcResolverNoStream",
-      "path": [
-        "src",
-        "HttpRpcResolverNoStream.ts"
-      ]
+      "name": "HttpRpcResolverNoStream.ts",
+      "path": "src/HttpRpcResolverNoStream.ts"
     },
     "project": "@effect/rpc-http",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: <R extends Router.RpcRouter<any, any>>(client: Client.HttpClient) => RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>>>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "HttpRpcResolverNoStream",
-      "path": [
-        "src",
-        "HttpRpcResolverNoStream.ts"
-      ]
+      "name": "HttpRpcResolverNoStream.ts",
+      "path": "src/HttpRpcResolverNoStream.ts"
     },
     "project": "@effect/rpc-http",
     "name": "makeClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeClient: <R extends Router.RpcRouter<any, any>>(baseUrl: string) => Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>> extends never ? Effect.Effect<Resolver.Client<RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>>>, never, Client.HttpClient> : \"request context is not `never`\""
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "HttpRpcRouter",
-      "path": [
-        "src",
-        "HttpRpcRouter.ts"
-      ]
+      "name": "HttpRpcRouter.ts",
+      "path": "src/HttpRpcRouter.ts"
     },
     "project": "@effect/rpc-http",
     "name": "toHttpApp",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toHttpApp: { (options?: { readonly spanPrefix?: string; }): <R extends Router.RpcRouter<any, any>>(self: R) => App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; <R extends Router.RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; }"
+    "signature": "declare const toHttpApp: { (options?: { readonly spanPrefix?: string; }): <R extends Router.RpcRouter<any, any>>(self: R) => App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; <R extends Router.RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "HttpRpcRouterNoStream",
-      "path": [
-        "src",
-        "HttpRpcRouterNoStream.ts"
-      ]
+      "name": "HttpRpcRouterNoStream.ts",
+      "path": "src/HttpRpcRouterNoStream.ts"
     },
     "project": "@effect/rpc-http",
     "name": "toHttpApp",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toHttpApp: { (options?: { readonly spanPrefix?: string; }): <R extends Router.RpcRouter<any, any>>(self: R) => App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; <R extends Router.RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc-http",
-    "name": "From \"./HttpRpcResolver.js\"",
-    "description": "Re-exports all named exports from the \"./HttpRpcResolver.js\" module as `HttpRpcResolver`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as HttpRpcResolver from \"./HttpRpcResolver.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc-http",
-    "name": "From \"./HttpRpcResolverNoStream.js\"",
-    "description": "Re-exports all named exports from the \"./HttpRpcResolverNoStream.js\" module as `HttpRpcResolverNoStream`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as HttpRpcResolverNoStream from \"./HttpRpcResolverNoStream.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc-http",
-    "name": "From \"./HttpRpcRouter.js\"",
-    "description": "Re-exports all named exports from the \"./HttpRpcRouter.js\" module as `HttpRpcRouter`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as HttpRpcRouter from \"./HttpRpcRouter.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc-http",
-    "name": "From \"./HttpRpcRouterNoStream.js\"",
-    "description": "Re-exports all named exports from the \"./HttpRpcRouterNoStream.js\" module as `HttpRpcRouterNoStream`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as HttpRpcRouterNoStream from \"./HttpRpcRouterNoStream.js\""
+    "signature": "declare const toHttpApp: { (options?: { readonly spanPrefix?: string; }): <R extends Router.RpcRouter<any, any>>(self: R) => App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; <R extends Router.RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): App.Default<ServerError.RequestError, Router.RpcRouter.Context<R>>; }"
   }
 ]

@@ -1,19 +1,15 @@
-# zonedOffsetIso
+## zonedOffsetIso
 
 Calculate the time zone offset of a `DateTime` in milliseconds.
 
 The offset is formatted as "±HH:MM".
 
-To import and use `zonedOffsetIso` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.zonedOffsetIso
-```
-
 **Signature**
 
 ```ts
-export declare const zonedOffsetIso: (self: Zoned) => string
+declare const zonedOffsetIso: (self: Zoned) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L843)
+
+Since v3.6.0

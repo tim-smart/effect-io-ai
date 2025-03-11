@@ -1,18 +1,11 @@
-# mergeAll
+## mergeAll
 
 Merges any number of `Context`s, returning a new `Context` containing the services of all.
-
-To import and use `mergeAll` from the "Context" module:
-
-```ts
-import * as Context from "effect/Context"
-// Can be accessed like this
-Context.mergeAll
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Context } from "effect"
 
 const Port = Context.GenericTag<{ PORT: number }>("Port")
@@ -33,7 +26,9 @@ assert.deepStrictEqual(Context.get(Services, Host), { HOST: "localhost" })
 **Signature**
 
 ```ts
-export declare const mergeAll: <T extends Array<unknown>>(
-  ...ctxs_0: { [K in keyof T]: Context<T[K]> }
-) => Context<T[number]>
+declare const mergeAll: <T extends Array<unknown>>(...ctxs: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L451)
+
+Since v3.12.0

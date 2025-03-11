@@ -1,4 +1,4 @@
-# race
+## race
 
 Races two effects and returns the result of the first successful one.
 
@@ -24,14 +24,6 @@ If you want to handle the result of whichever task completes first, whether
 it succeeds or fails, you can use the `Effect.either` function. This function
 wraps the result in an `Either` type, allowing you to see if the result
 was a success (`Right`) or a failure (`Left`).
-
-To import and use `race` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.race
-```
 
 **Example**
 
@@ -142,11 +134,17 @@ const program = Effect.race(Effect.either(task1), Effect.either(task2))
 // { _id: 'Either', _tag: 'Left', left: 'task1' }
 ```
 
+**See**
+
+- `raceAll` for a version that handles multiple effects.
+- `raceFirst` for a version that returns the result of the first effect to complete.
+
 **Signature**
 
 ```ts
-export declare const race: {
-  <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>
-}
+declare const race: { <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8916)
+
+Since v2.0.0

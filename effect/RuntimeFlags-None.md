@@ -1,17 +1,13 @@
-# None
+## None
 
 No runtime flags.
-
-To import and use `None` from the "RuntimeFlags" module:
-
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.None
-```
 
 **Signature**
 
 ```ts
-export declare const None: RuntimeFlag
+declare const None: RuntimeFlag
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L40)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# subtract
+## subtract
 
 Provides a subtraction operation on `BigDecimal`s.
-
-To import and use `subtract` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.subtract
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { subtract, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(subtract(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("-1"))
@@ -21,8 +14,9 @@ assert.deepStrictEqual(subtract(unsafeFromString("2"), unsafeFromString("3")), u
 **Signature**
 
 ```ts
-export declare const subtract: {
-  (that: BigDecimal): (self: BigDecimal) => BigDecimal
-  (self: BigDecimal, that: BigDecimal): BigDecimal
-}
+declare const subtract: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L272)
+
+Since v2.0.0

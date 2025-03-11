@@ -1,4 +1,4 @@
-# unsafeFormatIso
+## unsafeFormatIso
 
 Formats a Duration into an ISO8601 duration string.
 
@@ -6,13 +6,9 @@ Months are assumed to be 30 days and years are assumed to be 365 days.
 
 Milliseconds and nanoseconds are expressed as fractional seconds.
 
-To import and use `unsafeFormatIso` from the "Duration" module:
+**Throws**
 
-```ts
-import * as Duration from "effect/Duration"
-// Can be accessed like this
-Duration.unsafeFormatIso
-```
+`RangeError` If the duration is not finite.
 
 **Example**
 
@@ -27,5 +23,9 @@ Duration.unsafeFormatIso(Duration.millis(1500)) // => "PT1.5S"
 **Signature**
 
 ```ts
-export declare const unsafeFormatIso: (self: DurationInput) => string
+declare const unsafeFormatIso: (self: DurationInput) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L878)
+
+Since v3.13.0

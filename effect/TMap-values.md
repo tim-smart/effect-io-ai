@@ -1,17 +1,13 @@
-# values
+## values
 
 Collects all values stored in map.
-
-To import and use `values` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.values
-```
 
 **Signature**
 
 ```ts
-export declare const values: <K, V>(self: TMap<K, V>) => STM.STM<Array<V>>
+declare const values: <K, V>(self: TMap<K, V>) => STM.STM<Array<V>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L515)
+
+Since v2.0.0

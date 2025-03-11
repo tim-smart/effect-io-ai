@@ -1,19 +1,15 @@
-# formatIsoZoned
+## formatIsoZoned
 
 Format a `DateTime.Zoned` as a string.
 
 It uses the format: `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]`.
 
-To import and use `formatIsoZoned` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.formatIsoZoned
-```
-
 **Signature**
 
 ```ts
-export declare const formatIsoZoned: (self: Zoned) => string
+declare const formatIsoZoned: (self: Zoned) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1549)
+
+Since v3.6.0

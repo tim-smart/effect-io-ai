@@ -1,18 +1,14 @@
-# currentTimeMillis
+## currentTimeMillis
 
 Accesses the current time of a `TestClock` instance in the context in
 milliseconds.
 
-To import and use `currentTimeMillis` from the "TestClock" module:
-
-```ts
-import * as TestClock from "effect/TestClock"
-// Can be accessed like this
-TestClock.currentTimeMillis
-```
-
 **Signature**
 
 ```ts
-export declare const currentTimeMillis: Effect.Effect<number, never, never>
+declare const currentTimeMillis: Effect.Effect<number, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L549)
+
+Since v2.0.0

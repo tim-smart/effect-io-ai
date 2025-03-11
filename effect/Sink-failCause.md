@@ -1,17 +1,13 @@
-# failCause
+## failCause
 
 Creates a sink halting with a specified `Cause`.
-
-To import and use `failCause` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.failCause
-```
 
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Sink<never, unknown, never, E>
+declare const failCause: <E>(cause: Cause.Cause<E>) => Sink<never, unknown, never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L588)
+
+Since v2.0.0

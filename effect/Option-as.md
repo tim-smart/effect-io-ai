@@ -1,4 +1,4 @@
-# as
+## as
 
 Replaces the value inside a `Some` with the specified constant value, leaving
 `None` unchanged.
@@ -11,14 +11,6 @@ unchanged.
 
 This is useful when you want to preserve the presence of a value (`Some`) but
 replace its content with a fixed value.
-
-To import and use `as` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.as
-```
 
 **Example**
 
@@ -41,5 +33,9 @@ console.log(Option.as(noneValue, "new value"))
 **Signature**
 
 ```ts
-export declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B> }
+declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L964)
+
+Since v2.0.0

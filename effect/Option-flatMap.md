@@ -1,4 +1,4 @@
-# flatMap
+## flatMap
 
 Applies a function to the value of a `Some` and flattens the resulting
 `Option`. If the input is `None`, it remains `None`.
@@ -13,14 +13,6 @@ contained value, and the resulting `Option` is returned. If the input is
 This utility is particularly useful for sequencing operations that may fail
 or produce optional results, enabling clean and concise workflows for
 handling such cases.
-
-To import and use `flatMap` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.flatMap
-```
 
 **Example**
 
@@ -50,7 +42,9 @@ const user: User = {
 }
 
 // Use flatMap to extract the street value
-const street = user.address.pipe(Option.flatMap((address) => address.street))
+const street = user.address.pipe(
+  Option.flatMap((address) => address.street)
+)
 
 console.log(street)
 // Output: { _id: 'Option', _tag: 'Some', value: '123 Main St' }
@@ -59,8 +53,9 @@ console.log(street)
 **Signature**
 
 ```ts
-export declare const flatMap: {
-  <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>
-  <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>
-}
+declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1047)
+
+Since v2.0.0

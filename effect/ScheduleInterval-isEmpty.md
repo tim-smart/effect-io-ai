@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Returns `true` if the specified `Interval` is empty, `false` otherwise.
-
-To import and use `isEmpty` from the "ScheduleInterval" module:
-
-```ts
-import * as ScheduleInterval from "effect/ScheduleInterval"
-// Can be accessed like this
-ScheduleInterval.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: (self: Interval) => boolean
+declare const isEmpty: (self: Interval) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScheduleInterval.ts#L91)
+
+Since v2.0.0

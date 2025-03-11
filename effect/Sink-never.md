@@ -1,17 +1,13 @@
-# never
+## never
 
 Creates a sink which never terminates.
-
-To import and use `never` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.never
-```
 
 **Signature**
 
 ```ts
-export declare const never: Sink<never, unknown, never, never, never>
+declare const never: Sink<never, unknown, never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1138)
+
+Since v2.0.0

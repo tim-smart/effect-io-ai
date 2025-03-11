@@ -1,4 +1,4 @@
-# tapErrorTag
+## tapErrorTag
 
 Inspect errors matching a specific tag without altering the original effect.
 
@@ -12,14 +12,6 @@ them while leaving the error channel and overall effect unchanged.
 
 If the error doesn't match the specified tag, this function does nothing, and
 the effect proceeds as usual.
-
-To import and use `tapErrorTag` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.tapErrorTag
-```
 
 **Example**
 
@@ -37,10 +29,13 @@ class ValidationError {
 }
 
 // Create a task that fails with a NetworkError
-const task: Effect.Effect<number, NetworkError | ValidationError> = Effect.fail(new NetworkError(504))
+const task: Effect.Effect<number, NetworkError | ValidationError> =
+  Effect.fail(new NetworkError(504))
 
 // Use tapErrorTag to inspect only NetworkError types and log the status code
-const tapping = Effect.tapErrorTag(task, "NetworkError", (error) => Console.log(`expected error: ${error.statusCode}`))
+const tapping = Effect.tapErrorTag(task, "NetworkError", (error) =>
+  Console.log(`expected error: ${error.statusCode}`)
+)
 
 // Effect.runFork(tapping)
 // Output:
@@ -50,15 +45,9 @@ const tapping = Effect.tapErrorTag(task, "NetworkError", (error) => Console.log(
 **Signature**
 
 ```ts
-export declare const tapErrorTag: {
-  <K extends E extends { _tag: string } ? E["_tag"] : never, E, A1, E1, R1>(
-    k: K,
-    f: (e: NoInfer<Extract<E, { _tag: K }>>) => Effect<A1, E1, R1>
-  ): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>
-  <A, E, R, K extends E extends { _tag: string } ? E["_tag"] : never, A1, E1, R1>(
-    self: Effect<A, E, R>,
-    k: K,
-    f: (e: Extract<E, { _tag: K }>) => Effect<A1, E1, R1>
-  ): Effect<A, E | E1, R | R1>
-}
+declare const tapErrorTag: { <K extends E extends { _tag: string; } ? E["_tag"] : never, E, A1, E1, R1>(k: K, f: (e: NoInfer<Extract<E, { _tag: K; }>>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>; <A, E, R, K extends E extends { _tag: string; } ? E["_tag"] : never, A1, E1, R1>(self: Effect<A, E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Effect<A1, E1, R1>): Effect<A, E | E1, R | R1>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9595)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# length
+## length
 
 Returns the length of the list.
-
-To import and use `length` from the "MutableList" module:
-
-```ts
-import * as MutableList from "effect/MutableList"
-// Can be accessed like this
-MutableList.length
-```
 
 **Signature**
 
 ```ts
-export declare const length: <A>(self: MutableList<A>) => number
+declare const length: <A>(self: MutableList<A>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L144)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# changesUponFlattening
+## changesUponFlattening
 
 Select the first element of each `Union` and discard the first element of
 each `FlatAlt` to produce a "flattened" version of the input document.
@@ -13,16 +13,12 @@ document contains only a plain `Empty` node).
 `NeverFlat` is returned when the document cannot be flattened because it
 contains either a hard `Line` or a `Fail`.
 
-To import and use `changesUponFlattening` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.changesUponFlattening
-```
-
 **Signature**
 
 ```ts
-export declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>
+declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2046)
+
+Since v1.0.0

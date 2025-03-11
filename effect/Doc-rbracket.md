@@ -1,17 +1,13 @@
-# rbracket
+## rbracket
 
 A document containing a single `]` character.
-
-To import and use `rbracket` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.rbracket
-```
 
 **Signature**
 
 ```ts
-export declare const rbracket: Doc<never>
+declare const rbracket: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L807)
+
+Since v1.0.0

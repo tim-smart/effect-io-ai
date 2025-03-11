@@ -1,4 +1,4 @@
-# merge
+## merge
 
 Combines both success and error channels of an effect into a single outcome.
 
@@ -13,14 +13,6 @@ success channel.
 This can be useful when you want to continue execution regardless of the
 error type and still capture both successful results and errors as part of
 the outcome.
-
-To import and use `merge` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.merge
-```
 
 **Example**
 
@@ -39,5 +31,9 @@ const recovered = Effect.merge(program)
 **Signature**
 
 ```ts
-export declare const merge: <A, E, R>(self: Effect<A, E, R>) => Effect<E | A, never, R>
+declare const merge: <A, E, R>(self: Effect<A, E, R>) => Effect<E | A, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5260)
+
+Since v2.0.0

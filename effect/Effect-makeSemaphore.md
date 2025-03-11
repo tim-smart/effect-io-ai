@@ -1,4 +1,4 @@
-# makeSemaphore
+## makeSemaphore
 
 Creates a new semaphore with the specified number of permits.
 
@@ -7,14 +7,6 @@ Creates a new semaphore with the specified number of permits.
 This function initializes a semaphore that controls concurrent access to a
 shared resource. The number of permits determines how many tasks can access
 the resource concurrently.
-
-To import and use `makeSemaphore` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.makeSemaphore
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ const mutex = Effect.makeSemaphore(3)
 **Signature**
 
 ```ts
-export declare const makeSemaphore: (permits: number) => Effect<Semaphore>
+declare const makeSemaphore: (permits: number) => Effect<Semaphore>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11614)
+
+Since v2.0.0

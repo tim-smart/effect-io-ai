@@ -1,17 +1,13 @@
-# SemigroupMultiply
+## SemigroupMultiply
 
 `bigint` semigroup under multiplication.
-
-To import and use `SemigroupMultiply` from the "BigInt" module:
-
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
-// Can be accessed like this
-BigInt.SemigroupMultiply
-```
 
 **Signature**
 
 ```ts
-export declare const SemigroupMultiply: semigroup.Semigroup<bigint>
+declare const SemigroupMultiply: semigroup.Semigroup<bigint>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L33)
+
+Since v0.24.0

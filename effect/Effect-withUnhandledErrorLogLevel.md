@@ -1,4 +1,4 @@
-# withUnhandledErrorLogLevel
+## withUnhandledErrorLogLevel
 
 Configures whether child fibers will log unhandled errors and at what log
 level.
@@ -16,20 +16,12 @@ changes only apply to the child fibers created within that effect's context.
 It is especially useful when you want to reduce noise in logs or prioritize
 certain types of errors.
 
-To import and use `withUnhandledErrorLogLevel` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.withUnhandledErrorLogLevel
-```
-
 **Example**
 
 ```ts
 import { Effect, Fiber, LogLevel, Option } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const fiber = yield* Effect.fork(Effect.fail("Unhandled error!"))
   yield* Fiber.join(fiber)
 })
@@ -42,8 +34,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const withUnhandledErrorLogLevel: {
-  (level: Option.Option<LogLevel.LogLevel>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(self: Effect<A, E, R>, level: Option.Option<LogLevel.LogLevel>): Effect<A, E, R>
-}
+declare const withUnhandledErrorLogLevel: { (level: Option.Option<LogLevel.LogLevel>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, level: Option.Option<LogLevel.LogLevel>): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10981)
+
+Since v2.0.0

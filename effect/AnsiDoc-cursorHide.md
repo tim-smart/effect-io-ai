@@ -1,17 +1,13 @@
-# cursorHide
+## cursorHide
 
 Hides the cursor.
-
-To import and use `cursorHide` from the "AnsiDoc" module:
-
-```ts
-import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
-// Can be accessed like this
-AnsiDoc.cursorHide
-```
 
 **Signature**
 
 ```ts
-export declare const cursorHide: AnsiDoc
+declare const cursorHide: AnsiDoc
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L186)
+
+Since v1.0.0

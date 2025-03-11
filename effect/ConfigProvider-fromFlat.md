@@ -1,18 +1,14 @@
-# fromFlat
+## fromFlat
 
 Constructs a new `ConfigProvider` from a key/value (flat) provider, where
 nesting is embedded into the string keys.
 
-To import and use `fromFlat` from the "ConfigProvider" module:
-
-```ts
-import * as ConfigProvider from "effect/ConfigProvider"
-// Can be accessed like this
-ConfigProvider.fromFlat
-```
-
 **Signature**
 
 ```ts
-export declare const fromFlat: (flat: ConfigProvider.Flat) => ConfigProvider
+declare const fromFlat: (flat: ConfigProvider.Flat) => ConfigProvider
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L192)
+
+Since v2.0.0

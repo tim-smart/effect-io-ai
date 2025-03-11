@@ -1,12 +1,16 @@
-# Shallow
+## Shallow
 
 Instructs the document fusion optimizer to avoid diving deeply into nested
 documents, fusing mostly concatenations of text nodes together.
 
-To import and use `Shallow` from the "Optimize" module:
+**Signature**
 
 ```ts
-import * as Optimize from "@effect/printer/Optimize"
-// Can be accessed like this
-Optimize.Shallow
+export interface Shallow {
+  readonly _tag: "Shallow"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L49)
+
+Since v1.0.0

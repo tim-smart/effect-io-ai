@@ -1,4 +1,4 @@
-# eventually
+## eventually
 
 Runs an effect repeatedly until it succeeds, ignoring errors.
 
@@ -17,14 +17,6 @@ Use this function when you want to retry an operation multiple times until it
 succeeds. It is helpful in cases where the operation may fail temporarily
 (e.g., a network request), and you want to keep trying without handling or
 worrying about the errors.
-
-To import and use `eventually` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.eventually
-```
 
 **Example**
 
@@ -57,5 +49,9 @@ const program = Effect.eventually(effect)
 **Signature**
 
 ```ts
-export declare const eventually: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
+declare const eventually: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4016)
+
+Since v2.0.0

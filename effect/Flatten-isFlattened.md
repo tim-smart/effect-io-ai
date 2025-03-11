@@ -1,17 +1,13 @@
-# isFlattened
+## isFlattened
 
 Returns `true` if the specified `Flatten` is a `Flattened`, `false` otherwise.
-
-To import and use `isFlattened` from the "Flatten" module:
-
-```ts
-import * as Flatten from "@effect/printer/Flatten"
-// Can be accessed like this
-Flatten.isFlattened
-```
 
 **Signature**
 
 ```ts
-export declare const isFlattened: <A>(a: Flatten<A>) => a is Flattened<A>
+declare const isFlattened: <A>(a: Flatten<A>) => a is Flattened<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L111)
+
+Since v1.0.0

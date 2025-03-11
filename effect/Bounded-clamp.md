@@ -1,17 +1,13 @@
-# clamp
+## clamp
 
 Clamp a value between `minBound` and `maxBound` values.
-
-To import and use `clamp` from the "Bounded" module:
-
-```ts
-import * as Bounded from "@effect/typeclass/Bounded"
-// Can be accessed like this
-Bounded.clamp
-```
 
 **Signature**
 
 ```ts
-export declare const clamp: <A>(B: Bounded<A>) => (a: A) => A
+declare const clamp: <A>(B: Bounded<A>) => (a: A) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L60)
+
+Since v0.24.0

@@ -1,19 +1,13 @@
-# fibersIn
+## fibersIn
 
 Creates a new supervisor that tracks children in a set.
-
-To import and use `fibersIn` from the "Supervisor" module:
-
-```ts
-import * as Supervisor from "effect/Supervisor"
-// Can be accessed like this
-Supervisor.fibersIn
-```
 
 **Signature**
 
 ```ts
-export declare const fibersIn: (
-  ref: MutableRef.MutableRef<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>
-) => Effect.Effect<Supervisor<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>>
+declare const fibersIn: (ref: MutableRef.MutableRef<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>) => Effect.Effect<Supervisor<SortedSet.SortedSet<Fiber.RuntimeFiber<any, any>>>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Supervisor.ts#L115)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# implies
+## implies
 
 Combines two booleans using an implication: `(!self || that)`.
-
-To import and use `implies` from the "Boolean" module:
-
-```ts
-import * as Boolean from "effect/Boolean"
-// Can be accessed like this
-Boolean.implies
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { implies } from "effect/Boolean"
 
 assert.deepStrictEqual(implies(true, true), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(implies(false, false), true)
 **Signature**
 
 ```ts
-export declare const implies: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean }
+declare const implies: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L238)
+
+Since v2.0.0

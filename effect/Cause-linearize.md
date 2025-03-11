@@ -1,4 +1,4 @@
-# linearize
+## linearize
 
 Linearizes a `Cause` into a set of parallel causes, each containing a
 sequential chain of failures.
@@ -8,16 +8,12 @@ sequential chain of failures.
 This function reorganizes the cause structure so that you can analyze each
 parallel branch separately, even if they have multiple sequential errors.
 
-To import and use `linearize` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.linearize
-```
-
 **Signature**
 
 ```ts
-export declare const linearize: <E>(self: Cause<E>) => HashSet.HashSet<Cause<E>>
+declare const linearize: <E>(self: Cause<E>) => HashSet.HashSet<Cause<E>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L948)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# once
+## once
 
 Returns an effect that executes only once, regardless of how many times it's
 called.
@@ -16,14 +16,6 @@ Use this function when you need to perform a task only once, regardless of
 how many times the effect is triggered. It's particularly useful when you
 have initialization tasks, logging, or other one-time actions that should not
 be repeated. This can help optimize performance and avoid redundant actions.
-
-To import and use `once` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.once
-```
 
 **Example**
 
@@ -48,5 +40,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>>
+declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L580)
+
+Since v2.0.0

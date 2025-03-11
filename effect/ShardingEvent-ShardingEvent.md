@@ -1,11 +1,17 @@
-# ShardingEvent
+## ShardingEvent
 
 This are the events that may occur over the ShardManager during its lifetime.
 
-To import and use `ShardingEvent` from the "ShardingEvent" module:
+**Signature**
 
 ```ts
-import * as ShardingEvent from "@effect/cluster/ShardingEvent"
-// Can be accessed like this
-ShardingEvent.ShardingEvent
+type ShardingEvent = | ShardsAssigned
+  | ShardsUnassigned
+  | PodHealthChecked
+  | PodRegistered
+  | PodUnregistered
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L116)
+
+Since v1.0.0

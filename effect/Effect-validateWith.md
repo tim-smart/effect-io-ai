@@ -1,4 +1,4 @@
-# validateWith
+## validateWith
 
 Sequentially combines two effects using a specified combiner function while
 accumulating errors.
@@ -15,40 +15,12 @@ By default, effects are executed sequentially. However, the execution mode
 can be controlled using the `options` parameter to enable concurrency,
 batching, or customized finalizer behavior.
 
-To import and use `validateWith` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.validateWith
-```
-
 **Signature**
 
 ```ts
-export declare const validateWith: {
-  <B, E1, R1, A, C>(
-    that: Effect<B, E1, R1>,
-    f: (a: A, b: B) => C,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): <E, R>(self: Effect<A, E, R>) => Effect<C, E1 | E, R1 | R>
-  <A, E, R, B, E1, R1, C>(
-    self: Effect<A, E, R>,
-    that: Effect<B, E1, R1>,
-    f: (a: A, b: B) => C,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<C, E | E1, R | R1>
-}
+declare const validateWith: { <B, E1, R1, A, C>(that: Effect<B, E1, R1>, f: (a: A, b: B) => C, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <E, R>(self: Effect<A, E, R>) => Effect<C, E1 | E, R1 | R>; <A, E, R, B, E1, R1, C>(self: Effect<A, E, R>, that: Effect<B, E1, R1>, f: (a: A, b: B) => C, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<C, E | E1, R | R1>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12196)
+
+Since v2.0.0

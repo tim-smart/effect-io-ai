@@ -1,4 +1,4 @@
-# getOrElse
+## getOrElse
 
 Returns the value contained in the `Option` if it is `Some`, otherwise
 evaluates and returns the result of `onNone`.
@@ -15,14 +15,6 @@ always receive a meaningful result, whether or not the `Option` contains a
 value. It is particularly useful for providing default values or alternative
 logic when working with optional values.
 
-To import and use `getOrElse` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getOrElse
-```
-
 **Example**
 
 ```ts
@@ -35,11 +27,17 @@ console.log(Option.none().pipe(Option.getOrElse(() => 0)))
 // Output: 0
 ```
 
+**See**
+
+- `getOrNull` for a version that returns `null` instead of executing a function.
+- `getOrUndefined` for a version that returns `undefined` instead of executing a function.
+
 **Signature**
 
 ```ts
-export declare const getOrElse: {
-  <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A
-  <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B
-}
+declare const getOrElse: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A; <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L500)
+
+Since v2.0.0

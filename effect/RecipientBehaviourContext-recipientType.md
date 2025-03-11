@@ -1,21 +1,13 @@
-# recipientType
+## recipientType
 
 Gets the current recipientType
-
-To import and use `recipientType` from the "RecipientBehaviourContext" module:
-
-```ts
-import * as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
-// Can be accessed like this
-RecipientBehaviourContext.recipientType
-```
 
 **Signature**
 
 ```ts
-export declare const recipientType: Effect.Effect<
-  RecipientType.RecipientType<Message.Message.Any>,
-  never,
-  RecipientBehaviourContext
->
+declare const recipientType: Effect.Effect<RecipientType.RecipientType<Message.Message.Any>, never, RecipientBehaviourContext>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L89)
+
+Since v1.0.0

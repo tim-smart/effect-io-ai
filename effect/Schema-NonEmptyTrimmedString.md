@@ -1,15 +1,7 @@
-# NonEmptyTrimmedString
+## NonEmptyTrimmedString
 
 Useful for validating strings that must contain meaningful characters without
 leading or trailing whitespace.
-
-To import and use `NonEmptyTrimmedString` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.NonEmptyTrimmedString
-```
 
 **Example**
 
@@ -20,3 +12,13 @@ console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)("")) // Option.non
 console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)(" a ")) // Option.none()
 console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)("a")) // Option.some("a")
 ```
+
+**Signature**
+
+```ts
+declare class NonEmptyTrimmedString
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4710)
+
+Since v3.10.0

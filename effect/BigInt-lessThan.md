@@ -1,18 +1,11 @@
-# lessThan
+## lessThan
 
 Returns `true` if the first argument is less than the second, otherwise `false`.
-
-To import and use `lessThan` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.lessThan
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { lessThan } from "effect/BigInt"
 
 assert.deepStrictEqual(lessThan(2n, 3n), true)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(lessThan(4n, 3n), false)
 **Signature**
 
 ```ts
-export declare const lessThan: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean }
+declare const lessThan: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L207)
+
+Since v2.0.0

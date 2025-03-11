@@ -1,18 +1,11 @@
-# multiplyAll
+## multiplyAll
 
 Takes an `Iterable` of `number`s and returns their multiplication as a single `number`.
-
-To import and use `multiplyAll` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.multiplyAll
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { multiplyAll } from "effect/Number"
 
 assert.deepStrictEqual(multiplyAll([2, 3, 4]), 24)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(multiplyAll([2, 3, 4]), 24)
 **Signature**
 
 ```ts
-export declare const multiplyAll: (collection: Iterable<number>) => number
+declare const multiplyAll: (collection: Iterable<number>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L413)
+
+Since v2.0.0

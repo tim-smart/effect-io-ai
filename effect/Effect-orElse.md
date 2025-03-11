@@ -1,4 +1,4 @@
-# orElse
+## orElse
 
 Attempts one effect, and if it fails, falls back to another effect.
 
@@ -12,14 +12,6 @@ specifying an alternative path of execution.
 
 The error type of the resulting effect will be that of the fallback effect,
 as the first effect's error is replaced when the fallback is executed.
-
-To import and use `orElse` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.orElse
-```
 
 **Example**
 
@@ -41,11 +33,16 @@ console.log(Effect.runSync(program2))
 // Output: "fallback"
 ```
 
+**See**
+
+- `catchAll` if you need to access the error in the fallback effect.
+
 **Signature**
 
 ```ts
-export declare const orElse: {
-  <A2, E2, R2>(that: LazyArg<Effect<A2, E2, R2>>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: LazyArg<Effect<A2, E2, R2>>): Effect<A2 | A, E2, R2 | R>
-}
+declare const orElse: { <A2, E2, R2>(that: LazyArg<Effect<A2, E2, R2>>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: LazyArg<Effect<A2, E2, R2>>): Effect<A2 | A, E2, R2 | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11152)
+
+Since v2.0.0

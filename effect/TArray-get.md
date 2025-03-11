@@ -1,20 +1,13 @@
-# get
+## get
 
 Extracts value from ref in array.
-
-To import and use `get` from the "TArray" module:
-
-```ts
-import * as TArray from "effect/TArray"
-// Can be accessed like this
-TArray.get
-```
 
 **Signature**
 
 ```ts
-export declare const get: {
-  (index: number): <A>(self: TArray<A>) => STM.STM<A>
-  <A>(self: TArray<A>, index: number): STM.STM<A>
-}
+declare const get: { (index: number): <A>(self: TArray<A>) => STM.STM<A>; <A>(self: TArray<A>, index: number): STM.STM<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TArray.ts#L314)
+
+Since v2.0.0

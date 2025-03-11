@@ -1,4 +1,4 @@
-# ensuring
+## ensuring
 
 Guarantees the execution of a finalizer when an effect starts execution.
 
@@ -17,17 +17,9 @@ necessary logging.
 While this function provides strong guarantees about executing the finalizer,
 it is considered a low-level tool, which may not be ideal for more complex
 resource management. For higher-level resource management with automatic
-acquisition and release, see the {@link acquireRelease} family of functions.
+acquisition and release, see the `acquireRelease` family of functions.
 For use cases where you need access to the result of an effect, consider
-using {@link onExit}.
-
-To import and use `ensuring` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.ensuring
-```
+using `onExit`.
 
 **Example**
 
@@ -58,11 +50,17 @@ const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.
 // Cleanup completed
 ```
 
+**See**
+
+- `onExit` for a version that provides access to the result of an
+effect.
+
 **Signature**
 
 ```ts
-export declare const ensuring: {
-  <X, R1>(finalizer: Effect<X, never, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>
-  <A, E, R, X, R1>(self: Effect<A, E, R>, finalizer: Effect<X, never, R1>): Effect<A, E, R1 | R>
-}
+declare const ensuring: { <X, R1>(finalizer: Effect<X, never, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, X, R1>(self: Effect<A, E, R>, finalizer: Effect<X, never, R1>): Effect<A, E, R1 | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5642)
+
+Since v2.0.0

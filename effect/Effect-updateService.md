@@ -1,4 +1,4 @@
-# updateService
+## updateService
 
 Updates a service in the context with a new implementation.
 
@@ -14,26 +14,12 @@ transformed one.
 This is useful for adapting or extending a service's behavior during the
 execution of an effect.
 
-To import and use `updateService` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.updateService
-```
-
 **Signature**
 
 ```ts
-export declare const updateService: {
-  <I, S>(
-    tag: Context.Tag<I, S>,
-    f: (service: NoInfer<S>) => NoInfer<S>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R | I>
-  <A, E, R, I, S>(
-    self: Effect<A, E, R>,
-    tag: Context.Tag<I, S>,
-    f: (service: NoInfer<S>) => NoInfer<S>
-  ): Effect<A, E, R | I>
-}
+declare const updateService: { <I, S>(tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R | I>; <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): Effect<A, E, R | I>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7632)
+
+Since v2.0.0

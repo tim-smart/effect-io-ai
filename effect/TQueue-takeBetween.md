@@ -1,22 +1,15 @@
-# takeBetween
+## takeBetween
 
 Takes a number of elements from the queue between the specified minimum and
 maximum. If there are fewer than the minimum number of elements available,
 retries until at least the minimum number of elements have been collected.
 
-To import and use `takeBetween` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.takeBetween
-```
-
 **Signature**
 
 ```ts
-export declare const takeBetween: {
-  (min: number, max: number): <A>(self: TDequeue<A>) => STM.STM<Array<A>>
-  <A>(self: TDequeue<A>, min: number, max: number): STM.STM<Array<A>>
-}
+declare const takeBetween: { (min: number, max: number): <A>(self: TDequeue<A>) => STM.STM<Array<A>>; <A>(self: TDequeue<A>, min: number, max: number): STM.STM<Array<A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L397)
+
+Since v2.0.0

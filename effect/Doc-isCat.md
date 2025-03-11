@@ -1,17 +1,13 @@
-# isCat
+## isCat
 
 Returns `true` if the specified `Doc` is a `Cat`, `false` otherwise.
-
-To import and use `isCat` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isCat
-```
 
 **Signature**
 
 ```ts
-export declare const isCat: <A>(self: Doc<A>) => self is Cat<A>
+declare const isCat: <A>(self: Doc<A>) => self is Cat<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L374)
+
+Since v1.0.0

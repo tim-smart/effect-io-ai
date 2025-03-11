@@ -1,17 +1,13 @@
-# singleQuoted
+## singleQuoted
 
 Encloses the input document in single quotes (`""`).
-
-To import and use `singleQuoted` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.singleQuoted
-```
 
 **Signature**
 
 ```ts
-export declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>
+declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2264)
+
+Since v1.0.0

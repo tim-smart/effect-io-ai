@@ -1,17 +1,13 @@
-# context
+## context
 
 Accesses the whole context of the stream.
-
-To import and use `context` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.context
-```
 
 **Signature**
 
 ```ts
-export declare const context: <R>() => Stream<Context.Context<R>, never, R>
+declare const context: <R>() => Stream<Context.Context<R>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1522)
+
+Since v2.0.0

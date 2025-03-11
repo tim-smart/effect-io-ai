@@ -1,18 +1,14 @@
-# shutdown
+## shutdown
 
 Interrupts any fibers that are suspended on `offer` or `take`. Future calls
 to `offer*` and `take*` will be interrupted immediately.
 
-To import and use `shutdown` from the "TPubSub" module:
-
-```ts
-import * as TPubSub from "effect/TPubSub"
-// Can be accessed like this
-TPubSub.shutdown
-```
-
 **Signature**
 
 ```ts
-export declare const shutdown: <A>(self: TPubSub<A>) => STM.STM<void>
+declare const shutdown: <A>(self: TPubSub<A>) => STM.STM<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPubSub.ts#L117)
+
+Since v2.0.0

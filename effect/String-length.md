@@ -1,25 +1,22 @@
-# length
+## length
 
 Calculate the number of characters in a `string`.
-
-To import and use `length` from the "String" module:
-
-```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.length
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { String } from "effect"
 
-assert.deepStrictEqual(String.length("abc"), 3)
+assert.deepStrictEqual(String.length('abc'), 3)
 ```
 
 **Signature**
 
 ```ts
-export declare const length: (self: string) => number
+declare const length: (self: string) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L250)
+
+Since v2.0.0

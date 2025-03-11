@@ -1,20 +1,16 @@
-# capacity
+## capacity
 
 The **maximum** number of elements that a queue can hold.
 
 **Note**: unbounded queues can still implement this interface with
 `capacity = Infinity`.
 
-To import and use `capacity` from the "MutableQueue" module:
-
-```ts
-import * as MutableQueue from "effect/MutableQueue"
-// Can be accessed like this
-MutableQueue.capacity
-```
-
 **Signature**
 
 ```ts
-export declare const capacity: <A>(self: MutableQueue<A>) => number
+declare const capacity: <A>(self: MutableQueue<A>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableQueue.ts#L127)
+
+Since v2.0.0

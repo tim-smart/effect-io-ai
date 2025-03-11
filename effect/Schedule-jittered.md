@@ -1,4 +1,4 @@
-# jittered
+## jittered
 
 Returns a new schedule that randomly adjusts the interval size within a
 range.
@@ -14,16 +14,16 @@ This is useful for adding randomness to repeated executions, reducing
 contention in distributed systems, and avoiding synchronized execution
 patterns that can cause bottlenecks.
 
-To import and use `jittered` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.jittered
-```
+- `jitteredWith` If you need to specify custom min/max values.
 
 **Signature**
 
 ```ts
-export declare const jittered: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
+declare const jittered: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1230)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# exponential
+## exponential
 
 Creates a schedule that recurs indefinitely with exponentially increasing
 delays.
@@ -11,16 +11,12 @@ exponentially on each repetition using the formula `base * factor^n`, where
 is provided, it defaults to `2`, causing the delay to double after each
 execution.
 
-To import and use `exponential` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.exponential
-```
-
 **Signature**
 
 ```ts
-export declare const exponential: (base: Duration.DurationInput, factor?: number) => Schedule<Duration.Duration>
+declare const exponential: (base: Duration.DurationInput, factor?: number) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1001)
+
+Since v2.0.0

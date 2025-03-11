@@ -1,18 +1,10 @@
-# formatIso
+## formatIso
 
 Formats a Duration into an ISO8601 duration string.
 
 Months are assumed to be 30 days and years are assumed to be 365 days.
 
 Returns `Option.none()` if the duration is infinite.
-
-To import and use `formatIso` from the "Duration" module:
-
-```ts
-import * as Duration from "effect/Duration"
-// Can be accessed like this
-Duration.formatIso
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ Duration.formatIso(Duration.infinity) // => Option.none()
 **Signature**
 
 ```ts
-export declare const formatIso: (self: DurationInput) => Option.Option<string>
+declare const formatIso: (self: DurationInput) => Option.Option<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L958)
+
+Since v3.13.0

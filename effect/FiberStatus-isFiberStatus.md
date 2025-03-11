@@ -1,17 +1,13 @@
-# isFiberStatus
+## isFiberStatus
 
 Returns `true` if the specified value is a `FiberStatus`, `false` otherwise.
-
-To import and use `isFiberStatus` from the "FiberStatus" module:
-
-```ts
-import * as FiberStatus from "effect/FiberStatus"
-// Can be accessed like this
-FiberStatus.isFiberStatus
-```
 
 **Signature**
 
 ```ts
-export declare const isFiberStatus: (u: unknown) => u is FiberStatus
+declare const isFiberStatus: (u: unknown) => u is FiberStatus
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberStatus.ts#L82)
+
+Since v2.0.0

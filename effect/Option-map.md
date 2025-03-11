@@ -1,4 +1,4 @@
-# map
+## map
 
 Transforms the value inside a `Some` to a new value using the provided
 function, while leaving `None` unchanged.
@@ -12,14 +12,6 @@ still `None`.
 
 This utility is particularly useful for chaining transformations in a
 functional way without needing to manually handle `None` cases.
-
-To import and use `map` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.map
-```
 
 **Example**
 
@@ -42,8 +34,9 @@ console.log(Option.map(noneValue, (n) => n * 2))
 **Signature**
 
 ```ts
-export declare const map: {
-  <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>
-  <A, B>(self: Option<A>, f: (a: A) => B): Option<B>
-}
+declare const map: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L923)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# Size
+## Size
 
 Represents a size in bytes.
 
-To import and use `Size` from the "FileSystem" module:
+**Signature**
 
 ```ts
-import * as FileSystem from "@effect/platform/FileSystem"
-// Can be accessed like this
-FileSystem.Size
+type Size = Brand.Branded<bigint, "Size">
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L260)
+
+Since v1.0.0

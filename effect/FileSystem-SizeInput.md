@@ -1,11 +1,13 @@
-# SizeInput
+## SizeInput
 
 Represents a size in bytes.
 
-To import and use `SizeInput` from the "FileSystem" module:
+**Signature**
 
 ```ts
-import * as FileSystem from "@effect/platform/FileSystem"
-// Can be accessed like this
-FileSystem.SizeInput
+type SizeInput = bigint | number | Size
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L268)
+
+Since v1.0.0

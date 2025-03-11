@@ -1,11 +1,13 @@
-# TimeZoneNamedFromSelf
+## TimeZoneNamedFromSelf
 
 Describes a schema that represents a `TimeZone.Named` instance.
 
-To import and use `TimeZoneNamedFromSelf` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.TimeZoneNamedFromSelf
+declare class TimeZoneNamedFromSelf
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6941)
+
+Since v3.10.0

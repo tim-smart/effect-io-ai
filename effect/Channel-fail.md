@@ -1,17 +1,13 @@
-# fail
+## fail
 
 Constructs a channel that fails immediately with the specified error.
-
-To import and use `fail` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.fail
-```
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Channel<never, unknown, E, unknown, never, unknown>
+declare const fail: <E>(error: E) => Channel<never, unknown, E, unknown, never, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L805)
+
+Since v2.0.0

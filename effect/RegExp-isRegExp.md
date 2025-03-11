@@ -1,18 +1,11 @@
-# isRegExp
+## isRegExp
 
 Tests if a value is a `RegExp`.
-
-To import and use `isRegExp` from the "RegExp" module:
-
-```ts
-import * as RegExp from "effect/RegExp"
-// Can be accessed like this
-RegExp.isRegExp
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { RegExp } from "effect"
 
 assert.deepStrictEqual(RegExp.isRegExp(/a/), true)
@@ -22,5 +15,9 @@ assert.deepStrictEqual(RegExp.isRegExp("a"), false)
 **Signature**
 
 ```ts
-export declare const isRegExp: (input: unknown) => input is RegExp
+declare const isRegExp: (input: unknown) => input is RegExp
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L23)
+
+Since v3.9.0

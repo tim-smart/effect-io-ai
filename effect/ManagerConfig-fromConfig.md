@@ -1,17 +1,13 @@
-# fromConfig
+## fromConfig
 
 Reads the ManagerConfig from the provided Config.
-
-To import and use `fromConfig` from the "ManagerConfig" module:
-
-```ts
-import * as ManagerConfig from "@effect/cluster/ManagerConfig"
-// Can be accessed like this
-ManagerConfig.fromConfig
-```
 
 **Signature**
 
 ```ts
-export declare const fromConfig: Layer.Layer<ManagerConfig, ConfigError.ConfigError, never>
+declare const fromConfig: Layer.Layer<ManagerConfig, ConfigError.ConfigError, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L67)
+
+Since v1.0.0

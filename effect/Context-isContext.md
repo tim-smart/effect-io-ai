@@ -1,18 +1,11 @@
-# isContext
+## isContext
 
 Checks if the provided argument is a `Context`.
-
-To import and use `isContext` from the "Context" module:
-
-```ts
-import * as Context from "effect/Context"
-// Can be accessed like this
-Context.isContext
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Context } from "effect"
 
 assert.strictEqual(Context.isContext(Context.empty()), true)
@@ -21,5 +14,9 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 **Signature**
 
 ```ts
-export declare const isContext: (input: unknown) => input is Context<never>
+declare const isContext: (input: unknown) => input is Context<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L204)
+
+Since v2.0.0

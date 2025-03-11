@@ -1,4 +1,4 @@
-# mergeAll
+## mergeAll
 
 Merges an `Iterable<Effect<A, E, R>>` to a single effect.
 
@@ -19,14 +19,6 @@ specifying options such as concurrency, batching, and how finalizers behave.
 These options provide flexibility in running the effects concurrently or
 adjusting other execution details.
 
-To import and use `mergeAll` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.mergeAll
-```
-
 **Example**
 
 ```ts
@@ -36,7 +28,7 @@ const numbers = [Effect.succeed(1), Effect.succeed(2), Effect.succeed(3)]
 const add = (sum: number, value: number, i: number) => sum + value
 const zero = 0
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const total = yield* Effect.mergeAll(numbers, zero, add)
   console.log(total)
 })
@@ -48,29 +40,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const mergeAll: {
-  <Z, Eff extends Effect<any, any, any>>(
-    zero: Z,
-    f: (z: Z, a: Effect.Success<Eff>, i: number) => Z,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): (elements: Iterable<Eff>) => Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>
-  <Eff extends Effect<any, any, any>, Z>(
-    elements: Iterable<Eff>,
-    zero: Z,
-    f: (z: Z, a: Effect.Success<Eff>, i: number) => Z,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>
-}
+declare const mergeAll: { <Z, Eff extends Effect<any, any, any>>(zero: Z, f: (z: Z, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z>(elements: Iterable<Eff>, zero: Z, f: (z: Z, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1671)
+
+Since v2.0.0

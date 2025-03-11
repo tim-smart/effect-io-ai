@@ -1,4 +1,4 @@
-# Deferred
+## Deferred
 
 A `Deferred` represents an asynchronous variable that can be set exactly
 once, with the ability for an arbitrary number of fibers to suspend (by
@@ -8,10 +8,20 @@ calling `Deferred.await`) and automatically resume when the variable is set.
 require the coordinated action of multiple fibers, and for building
 higher-level concurrent or asynchronous structures.
 
-To import and use `Deferred` from the "Deferred" module:
+**Signature**
 
 ```ts
-import * as Deferred from "effect/Deferred"
-// Can be accessed like this
-Deferred.Deferred
+export interface Deferred<in out A, in out E = never> extends Effect.Effect<A, E>, Deferred.Variance<A, E> {
+  /** @internal */
+  readonly state: MutableRef.MutableRef<internal.State<A, E>>
+  /** @internal */
+  readonly blockingOn: FiberId.FiberId
+  readonly [Unify.typeSymbol]?: unknown
+  readonly [Unify.unifySymbol]?: DeferredUnify<this>
+  readonly [Unify.ignoreSymbol]?: DeferredUnifyIgnore
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L40)
+
+Since v2.0.0

@@ -1,21 +1,13 @@
-# make
+## make
 
 Constructs a new `RedBlackTree` from the specified entries.
-
-To import and use `make` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <K>(
-  ord: Order<K>
-) => <Entries extends Array<readonly [K, any]>>(
-  ...entries: Entries
-) => RedBlackTree<K, Entries[number] extends readonly [any, infer V] ? V : never>
+declare const make: <K>(ord: Order<K>) => <Entries extends Array<readonly [K, any]>>(...entries: Entries) => RedBlackTree<K, Entries[number] extends readonly [any, infer V] ? V : never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L87)
+
+Since v2.0.0

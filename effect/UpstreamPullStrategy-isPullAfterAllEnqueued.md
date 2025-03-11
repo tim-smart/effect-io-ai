@@ -1,18 +1,14 @@
-# isPullAfterAllEnqueued
+## isPullAfterAllEnqueued
 
 Returns `true` if the specified `UpstreamPullStrategy` is a
 `PullAfterAllEnqueued`, `false` otherwise.
 
-To import and use `isPullAfterAllEnqueued` from the "UpstreamPullStrategy" module:
-
-```ts
-import * as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
-// Can be accessed like this
-UpstreamPullStrategy.isPullAfterAllEnqueued
-```
-
 **Signature**
 
 ```ts
-export declare const isPullAfterAllEnqueued: <A>(self: UpstreamPullStrategy<A>) => self is PullAfterAllEnqueued<A>
+declare const isPullAfterAllEnqueued: <A>(self: UpstreamPullStrategy<A>) => self is PullAfterAllEnqueued<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UpstreamPullStrategy.ts#L98)
+
+Since v2.0.0

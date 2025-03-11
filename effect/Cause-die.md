@@ -1,4 +1,4 @@
-# die
+## die
 
 Creates a `Die` cause from an unexpected error.
 
@@ -8,16 +8,16 @@ This function wraps an unhandled or unknown defect (like a runtime crash)
 into a `Cause`. It's useful for capturing unforeseen issues in a structured
 way.
 
-To import and use `die` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.die
-```
+- `isDie` Check if a `Cause` contains a defect
 
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Cause<never>
+declare const die: (defect: unknown) => Cause<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L606)
+
+Since v2.0.0

@@ -1,11 +1,17 @@
-# Nest
+## Nest
 
 Represents a document that is indented by a certain number of columns.
 
-To import and use `Nest` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Nest
+export interface Nest<A> extends Doc.Variance<A> {
+  readonly _tag: "Nest"
+  readonly indent: number
+  readonly doc: Doc<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L228)
+
+Since v1.0.0

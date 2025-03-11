@@ -1,24 +1,20 @@
-# foldWeighted
+## foldWeighted
 
-Creates a sink that folds elements of type `In` into a structure of type
-`S`, until `max` worth of elements (determined by the `costFn`) have been
-folded.
+Creates a sink that folds elements of type `In` into a structure of type `S`,
+until `max` worth of elements (determined by the `costFn`) have been folded.
 
-To import and use `foldWeighted` from the "Sink" module:
+**Note**
 
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.foldWeighted
-```
+Elements that have an individual cost larger than `max` will force the sink
+to cross the `max` cost. See `Sink.foldWeightedDecompose` for a variant
+that can handle these cases.
 
 **Signature**
 
 ```ts
-export declare const foldWeighted: <S, In>(options: {
-  readonly initial: S
-  readonly maxCost: number
-  readonly cost: (s: S, input: In) => number
-  readonly body: (s: S, input: In) => S
-}) => Sink<S, In, In>
+declare const foldWeighted: <S, In>(options: { readonly initial: S; readonly maxCost: number; readonly cost: (s: S, input: In) => number; readonly body: (s: S, input: In) => S; }) => Sink<S, In, In>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L799)
+
+Since v2.0.0

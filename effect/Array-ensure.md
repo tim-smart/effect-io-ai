@@ -1,27 +1,23 @@
-# ensure
+## ensure
 
 Creates a new `Array` from a value that might not be an iterable.
-
-To import and use `ensure` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.ensure
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-assert.deepStrictEqual(Array.ensure("a"), ["a"])
-assert.deepStrictEqual(Array.ensure(["a"]), ["a"])
-assert.deepStrictEqual(Array.ensure(["a", "b", "c"]), ["a", "b", "c"])
+console.log(Array.ensure("a")) // ["a"]
+console.log(Array.ensure(["a"])) // ["a"]
+console.log(Array.ensure(["a", "b", "c"])) // ["a", "b", "c"]
 ```
 
 **Signature**
 
 ```ts
-export declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
+declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L187)
+
+Since v3.3.0

@@ -1,30 +1,14 @@
-# flattenEffect
+## flattenEffect
 
 Flattens `Effect` values into the stream's structure, preserving all
 information about the effect.
 
-To import and use `flattenEffect` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.flattenEffect
-```
-
 **Signature**
 
 ```ts
-export declare const flattenEffect: {
-  (
-    options?:
-      | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined }
-      | undefined
-  ): <A, E2, R2, E, R>(self: Stream<Effect.Effect<A, E2, R2>, E, R>) => Stream<A, E2 | E, R2 | R>
-  <A, E2, R2, E, R>(
-    self: Stream<Effect.Effect<A, E2, R2>, E, R>,
-    options?:
-      | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined }
-      | undefined
-  ): Stream<A, E2 | E, R2 | R>
-}
+declare const flattenEffect: { (options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): <A, E2, R2, E, R>(self: Stream<Effect.Effect<A, E2, R2>, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E2, R2, E, R>(self: Stream<Effect.Effect<A, E2, R2>, E, R>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): Stream<A, E2 | E, R2 | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1827)
+
+Since v2.0.0

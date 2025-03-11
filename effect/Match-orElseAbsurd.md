@@ -1,4 +1,4 @@
-# orElseAbsurd
+## orElseAbsurd
 
 Throws an error if no pattern matches.
 
@@ -12,18 +12,12 @@ value.
 When used, this function removes the need for an explicit fallback case and
 ensures that an unmatched value is never silently ignored.
 
-To import and use `orElseAbsurd` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.orElseAbsurd
-```
-
 **Signature**
 
 ```ts
-export declare const orElseAbsurd: <I, R, RA, A, Pr, Ret>(
-  self: Matcher<I, R, RA, A, Pr, Ret>
-) => [Pr] extends [never] ? (input: I) => Unify<A> : Unify<A>
+declare const orElseAbsurd: <I, R, RA, A, Pr, Ret>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<A> : Unify<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1114)
+
+Since v1.0.0

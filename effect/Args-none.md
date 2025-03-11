@@ -1,17 +1,13 @@
-# none
+## none
 
 Creates an empty argument.
-
-To import and use `none` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.none
-```
 
 **Signature**
 
 ```ts
-export declare const none: Args<void>
+declare const none: Args<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L362)
+
+Since v1.0.0

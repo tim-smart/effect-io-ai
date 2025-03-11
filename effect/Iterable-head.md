@@ -1,17 +1,13 @@
-# head
+## head
 
 Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
-
-To import and use `head` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.head
-```
 
 **Signature**
 
 ```ts
-export declare const head: <A>(self: Iterable<A>) => Option<A>
+declare const head: <A>(self: Iterable<A>) => Option<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L278)
+
+Since v2.0.0

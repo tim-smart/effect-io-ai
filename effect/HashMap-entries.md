@@ -1,17 +1,13 @@
-# entries
+## entries
 
 Returns an `IterableIterator` of the entries within the `HashMap`.
-
-To import and use `entries` from the "HashMap" module:
-
-```ts
-import * as HashMap from "effect/HashMap"
-// Can be accessed like this
-HashMap.entries
-```
 
 **Signature**
 
 ```ts
-export declare const entries: <K, V>(self: HashMap<K, V>) => IterableIterator<[K, V]>
+declare const entries: <K, V>(self: HashMap<K, V>) => IterableIterator<[K, V]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L246)
+
+Since v2.0.0

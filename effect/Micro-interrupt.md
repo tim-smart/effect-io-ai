@@ -1,17 +1,13 @@
-# interrupt
+## interrupt
 
 Abort the current `Micro` effect.
-
-To import and use `interrupt` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.interrupt
-```
 
 **Signature**
 
 ```ts
-export declare const interrupt: Micro<never, never, never>
+declare const interrupt: Micro<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3627)
+
+Since v3.4.6

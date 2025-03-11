@@ -1,4 +1,4 @@
-# Die
+## Die
 
 Represents an unexpected defect within a `Cause`.
 
@@ -8,10 +8,20 @@ This interface models a `Cause` for errors that are typically unrecoverable or
 unanticipated—like runtime exceptions or bugs. When code "dies," it indicates a
 severe failure that wasn't accounted for.
 
-To import and use `Die` from the "Cause" module:
+**See**
+
+- `die` Construct a `Die` cause
+- `isDieType` Check if a `Cause` is a `Die`
+
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.Die
+export interface Die extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {
+  readonly _tag: "Die"
+  readonly defect: unknown
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L493)
+
+Since v2.0.0

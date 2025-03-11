@@ -1,17 +1,13 @@
-# omit
+## omit
 
 Equivalent at runtime to the built-in TypeScript utility type `Omit`.
-
-To import and use `omit` from the "SchemaAST" module:
-
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.omit
-```
 
 **Signature**
 
 ```ts
-export declare const omit: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
+declare const omit: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2425)
+
+Since v3.10.0

@@ -1,14 +1,6 @@
-# fromChunk
+## fromChunk
 
 Creates a stream from a `Chunk` of values.
-
-To import and use `fromChunk` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromChunk
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ const stream = Stream.fromChunk(Chunk.make(1, 2, 3))
 **Signature**
 
 ```ts
-export declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Stream<A>
+declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1942)
+
+Since v2.0.0

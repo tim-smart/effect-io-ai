@@ -1,19 +1,15 @@
-# path
+## path
 
 Creates a path argument.
 
 Can optionally provide a custom argument name (defaults to `"path"`).
 
-To import and use `path` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.path
-```
-
 **Signature**
 
 ```ts
-export declare const path: (config?: Args.PathArgsConfig) => Args<string>
+declare const path: (config?: Args.PathArgsConfig) => Args<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L372)
+
+Since v1.0.0

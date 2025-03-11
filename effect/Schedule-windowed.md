@@ -1,4 +1,4 @@
-# windowed
+## windowed
 
 Creates a schedule that divides time into fixed `interval`-long windows,
 triggering execution at the start of each new window.
@@ -13,22 +13,18 @@ waits until the next full window starts before proceeding.
 For example, `windowed(Duration.seconds(10))` would produce a schedule as
 follows:
 
-```
+```text
      10s        10s        10s       10s
 |----------|----------|----------|----------|
 |action------|sleep---|act|-sleep|action----|
 ```
 
-To import and use `windowed` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.windowed
-```
-
 **Signature**
 
 ```ts
-export declare const windowed: (interval: Duration.DurationInput) => Schedule<number>
+declare const windowed: (interval: Duration.DurationInput) => Schedule<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2136)
+
+Since v2.0.0

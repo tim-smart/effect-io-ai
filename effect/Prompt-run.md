@@ -1,17 +1,13 @@
-# run
+## run
 
 Executes the specified `Prompt`.
-
-To import and use `run` from the "Prompt" module:
-
-```ts
-import * as Prompt from "@effect/cli/Prompt"
-// Can be accessed like this
-Prompt.run
-```
 
 **Signature**
 
 ```ts
-export declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Prompt.Environment>
+declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Prompt.Environment>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L654)
+
+Since v1.0.0

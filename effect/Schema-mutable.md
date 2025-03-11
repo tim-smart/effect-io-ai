@@ -1,17 +1,13 @@
-# mutable
+## mutable
 
 Creates a new schema with shallow mutability applied to its properties.
-
-To import and use `mutable` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.mutable
-```
 
 **Signature**
 
 ```ts
-export declare const mutable: <S extends Schema.Any>(schema: S) => mutable<S>
+declare const mutable: <S extends Schema.Any>(schema: S) => mutable<S>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3226)
+
+Since v3.10.0

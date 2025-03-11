@@ -1,18 +1,14 @@
-# sync
+## sync
 
 Returns a schedule that recurs indefinitely, evaluating the given function to
 produce a constant value.
 
-To import and use `sync` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.sync
-```
-
 **Signature**
 
 ```ts
-export declare const sync: <A>(evaluate: LazyArg<A>) => Schedule<A>
+declare const sync: <A>(evaluate: LazyArg<A>) => Schedule<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1781)
+
+Since v2.0.0

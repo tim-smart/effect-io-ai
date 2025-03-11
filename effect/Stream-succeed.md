@@ -1,14 +1,6 @@
-# succeed
+## succeed
 
 Creates a single-valued pure stream.
-
-To import and use `succeed` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.succeed
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ const stream = Stream.succeed(3)
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Stream<A>
+declare const succeed: <A>(value: A) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4735)
+
+Since v2.0.0

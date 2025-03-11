@@ -1,21 +1,13 @@
-# makeCacheStats
+## makeCacheStats
 
 Constructs a new `CacheStats` from the specified values.
-
-To import and use `makeCacheStats` from the "Cache" module:
-
-```ts
-import * as Cache from "effect/Cache"
-// Can be accessed like this
-Cache.makeCacheStats
-```
 
 **Signature**
 
 ```ts
-export declare const makeCacheStats: (options: {
-  readonly hits: number
-  readonly misses: number
-  readonly size: number
-}) => CacheStats
+declare const makeCacheStats: (options: { readonly hits: number; readonly misses: number; readonly size: number; }) => CacheStats
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L245)
+
+Since v2.0.0

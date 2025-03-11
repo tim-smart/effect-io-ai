@@ -1,4 +1,4 @@
-# makeLatch
+## makeLatch
 
 Creates a new `Latch`, starting in the specified state.
 
@@ -7,25 +7,20 @@ Creates a new `Latch`, starting in the specified state.
 This function initializes a `Latch` safely, ensuring proper runtime
 guarantees. By default, the latch starts in the closed state.
 
-To import and use `makeLatch` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.makeLatch
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   // Create a latch, starting in the closed state
   const latch = yield* Effect.makeLatch(false)
 
   // Fork a fiber that logs "open sesame" when the latch is opened
-  const fiber = yield* Console.log("open sesame").pipe(latch.whenOpen, Effect.fork)
+  const fiber = yield* Console.log("open sesame").pipe(
+    latch.whenOpen,
+    Effect.fork
+  )
 
   yield* Effect.sleep("1 second")
 
@@ -41,5 +36,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const makeLatch: (open?: boolean | undefined) => Effect<Latch, never, never>
+declare const makeLatch: (open?: boolean | undefined) => Effect<Latch, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11759)
+
+Since v3.8.0

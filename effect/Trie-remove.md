@@ -1,18 +1,11 @@
-# remove
+## remove
 
 Remove the entry for the specified key in the `Trie`.
-
-To import and use `remove` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.remove
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(
@@ -33,5 +26,9 @@ assert.deepStrictEqual(Trie.get(trie2, "call"), Option.none())
 **Signature**
 
 ```ts
-export declare const remove: { (key: string): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string): Trie<V> }
+declare const remove: { (key: string): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string): Trie<V>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L534)
+
+Since v2.0.0

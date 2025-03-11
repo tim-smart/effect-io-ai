@@ -1,14 +1,19 @@
-# FiberRefs
+## FiberRefs
 
 `FiberRefs` is a data type that represents a collection of `FiberRef` values.
 
 This allows safely propagating `FiberRef` values across fiber boundaries, for
 example between an asynchronous producer and consumer.
 
-To import and use `FiberRefs` from the "FiberRefs" module:
+**Signature**
 
 ```ts
-import * as FiberRefs from "effect/FiberRefs"
-// Can be accessed like this
-FiberRefs.FiberRefs
+export interface FiberRefs extends Pipeable {
+  readonly [FiberRefsSym]: FiberRefsSym
+  readonly locals: Map<FiberRef.FiberRef<any>, Arr.NonEmptyReadonlyArray<readonly [FiberId.Single, any]>>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberRefs.ts#L34)
+
+Since v2.0.0

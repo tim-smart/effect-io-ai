@@ -1,17 +1,13 @@
-# required
+## required
 
 Equivalent at runtime to the built-in TypeScript utility type `Required`.
-
-To import and use `required` from the "SchemaAST" module:
-
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.required
-```
 
 **Signature**
 
 ```ts
-export declare const required: (ast: AST) => AST
+declare const required: (ast: AST) => AST
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2480)
+
+Since v3.10.0

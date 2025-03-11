@@ -1,4 +1,4 @@
-# getOrThrowWith
+## getOrThrowWith
 
 Extracts the value of an `Option` or throws an error if the `Option` is
 `None`, using a custom error factory.
@@ -11,31 +11,29 @@ provided `onNone` function. This utility is particularly useful when you need
 a fail-fast behavior for empty `Option` values and want to provide a custom
 error message or object.
 
-To import and use `getOrThrowWith` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getOrThrowWith
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Option } from "effect"
 
 assert.deepStrictEqual(
-  Option.getOrThrowWith(Option.some(1), () => new Error("Unexpected None")),
+  Option.getOrThrowWith(Option.some(1), () => new Error('Unexpected None')),
   1
 )
-assert.throws(() => Option.getOrThrowWith(Option.none(), () => new Error("Unexpected None")))
+assert.throws(() => Option.getOrThrowWith(Option.none(), () => new Error('Unexpected None')))
 ```
+
+**See**
+
+- `getOrThrow` for a version that throws a default error.
 
 **Signature**
 
 ```ts
-export declare const getOrThrowWith: {
-  (onNone: () => unknown): <A>(self: Option<A>) => A
-  <A>(self: Option<A>, onNone: () => unknown): A
-}
+declare const getOrThrowWith: { (onNone: () => unknown): <A>(self: Option<A>) => A; <A>(self: Option<A>, onNone: () => unknown): A; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L852)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# sign
+## sign
 
 Determines the sign of a given `number`.
-
-To import and use `sign` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.sign
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { sign } from "effect/Number"
 
 assert.deepStrictEqual(sign(-5), -1)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(sign(5), 1)
 **Signature**
 
 ```ts
-export declare const sign: (n: number) => Ordering
+declare const sign: (n: number) => Ordering
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L375)
+
+Since v2.0.0

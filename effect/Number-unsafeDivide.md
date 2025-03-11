@@ -1,20 +1,13 @@
-# unsafeDivide
+## unsafeDivide
 
 Provides a division operation on `number`s.
 
 Throws a `RangeError` if the divisor is `0`.
 
-To import and use `unsafeDivide` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.unsafeDivide
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { unsafeDivide } from "effect/Number"
 
 assert.deepStrictEqual(unsafeDivide(6, 3), 2)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(unsafeDivide(6, 3), 2)
 **Signature**
 
 ```ts
-export declare const unsafeDivide: { (that: number): (self: number) => number; (self: number, that: number): number }
+declare const unsafeDivide: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L129)
+
+Since v2.0.0

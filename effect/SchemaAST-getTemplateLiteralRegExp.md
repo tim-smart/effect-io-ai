@@ -1,17 +1,17 @@
-# getTemplateLiteralRegExp
+## getTemplateLiteralRegExp
 
 Generates a regular expression from a `TemplateLiteral` AST node.
 
-To import and use `getTemplateLiteralRegExp` from the "SchemaAST" module:
+**See**
 
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.getTemplateLiteralRegExp
-```
+- `getTemplateLiteralCapturingRegExp` for a variant that captures the pattern.
 
 **Signature**
 
 ```ts
-export declare const getTemplateLiteralRegExp: (ast: TemplateLiteral) => RegExp
+declare const getTemplateLiteralRegExp: (ast: TemplateLiteral) => RegExp
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2155)
+
+Since v3.10.0

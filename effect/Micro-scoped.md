@@ -1,18 +1,14 @@
-# scoped
+## scoped
 
 Provide a `MicroScope` to the given effect, closing it after the effect has
 finished executing.
 
-To import and use `scoped` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.scoped
-```
-
 **Signature**
 
 ```ts
-export declare const scoped: <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, Exclude<R, MicroScope>>
+declare const scoped: <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, Exclude<R, MicroScope>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3427)
+
+Since v3.4.0

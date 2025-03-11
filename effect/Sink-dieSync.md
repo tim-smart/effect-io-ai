@@ -1,17 +1,13 @@
-# dieSync
+## dieSync
 
 Creates a sink halting with the specified defect.
-
-To import and use `dieSync` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.dieSync
-```
 
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Sink<never, unknown>
+declare const dieSync: (evaluate: LazyArg<unknown>) => Sink<never, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L354)
+
+Since v2.0.0

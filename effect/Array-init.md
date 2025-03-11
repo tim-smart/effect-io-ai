@@ -1,17 +1,13 @@
-# init
+## init
 
 Get all but the last element of an `Iterable`, creating a new `Array`, or `None` if the `Iterable` is empty.
-
-To import and use `init` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.init
-```
 
 **Signature**
 
 ```ts
-export declare const init: <A>(self: Iterable<A>) => Option<Array<A>>
+declare const init: <A>(self: Iterable<A>) => Option<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L761)
+
+Since v2.0.0

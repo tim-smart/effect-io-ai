@@ -1,4 +1,4 @@
-# all
+## all
 
 Combines multiple effects into one, returning results based on the input
 structure.
@@ -46,14 +46,6 @@ Similarly, the `{ mode: "validate" }` option uses `Option` to indicate
 success or failure. Each effect returns `None` for success and `Some` with
 the error for failure.
 
-To import and use `all` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.all
-```
-
 **Example**
 
 ```ts
@@ -82,8 +74,8 @@ const resultsAsTuple = Effect.all(tupleOfEffects)
 // Title: Combining Effects in Iterables
 import { Effect, Console } from "effect"
 
-const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map((n) =>
-  Effect.succeed(n).pipe(Effect.tap(Console.log))
+const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map(
+  (n) => Effect.succeed(n).pipe(Effect.tap(Console.log))
 )
 
 //      ┌─── Effect<number[], never, never>
@@ -227,23 +219,17 @@ const program = Effect.all(effects, { mode: "validate" })
 // }
 ```
 
+**See**
+
+- `forEach` for iterating over elements and applying an effect.
+- `allWith` for a data-last version of this function.
+
 **Signature**
 
 ```ts
-export declare const all: <
-  const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>,
-  O extends NoExcessProperties<
-    {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly discard?: boolean | undefined
-      readonly mode?: "default" | "validate" | "either" | undefined
-      readonly concurrentFinalizers?: boolean | undefined
-    },
-    O
-  >
->(
-  arg: Arg,
-  options?: O
-) => All.Return<Arg, O>
+declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L789)
+
+Since v2.0.0

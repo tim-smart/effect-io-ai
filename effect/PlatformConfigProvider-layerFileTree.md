@@ -1,19 +1,13 @@
-# layerFileTree
+## layerFileTree
 
 Add the file tree ConfigProvider to the environment, replacing the current ConfigProvider.
-
-To import and use `layerFileTree` from the "PlatformConfigProvider" module:
-
-```ts
-import * as PlatformConfigProvider from "@effect/platform/PlatformConfigProvider"
-// Can be accessed like this
-PlatformConfigProvider.layerFileTree
-```
 
 **Signature**
 
 ```ts
-export declare const layerFileTree: (options?: {
-  readonly rootDirectory?: string
-}) => Layer.Layer<never, never, Path.Path | FileSystem.FileSystem>
+declare const layerFileTree: (options?: { readonly rootDirectory?: string; }) => Layer.Layer<never, never, Path.Path | FileSystem.FileSystem>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/PlatformConfigProvider.ts#L108)
+
+Since v1.0.0

@@ -1,26 +1,22 @@
-# isEmptyArray
+## isEmptyArray
 
 Determine if an `Array` is empty narrowing down the type to `[]`.
-
-To import and use `isEmptyArray` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.isEmptyArray
-```
 
 **Example**
 
 ```ts
-import { isEmptyArray } from "effect/Array"
+import { Array } from "effect"
 
-assert.deepStrictEqual(isEmptyArray([]), true)
-assert.deepStrictEqual(isEmptyArray([1, 2, 3]), false)
+console.log(Array.isEmptyArray([])) // true
+console.log(Array.isEmptyArray([1, 2, 3])) // false
 ```
 
 **Signature**
 
 ```ts
-export declare const isEmptyArray: <A>(self: Array<A>) => self is []
+declare const isEmptyArray: <A>(self: Array<A>) => self is []
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L537)
+
+Since v2.0.0

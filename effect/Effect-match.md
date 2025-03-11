@@ -1,4 +1,4 @@
-# match
+## match
 
 Handles both success and failure cases of an effect without performing side
 effects.
@@ -14,14 +14,6 @@ effect fails.
 
 This is useful for structuring your code to respond differently to success or
 failure without triggering side effects.
-
-To import and use `match` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.match
-```
 
 **Example**
 
@@ -40,7 +32,9 @@ const program1 = Effect.match(success, {
 // Effect.runPromise(program1).then(console.log)
 // Output: "success: 42"
 
-const failure: Effect.Effect<number, Error> = Effect.fail(new Error("Uh oh!"))
+const failure: Effect.Effect<number, Error> = Effect.fail(
+  new Error("Uh oh!")
+)
 
 const program2 = Effect.match(failure, {
   onFailure: (error) => `failure: ${error.message}`,
@@ -52,17 +46,16 @@ const program2 = Effect.match(failure, {
 // Output: "failure: Uh oh!"
 ```
 
+**See**
+
+- `matchEffect` if you need to perform side effects in the handlers.
+
 **Signature**
 
 ```ts
-export declare const match: {
-  <E, A2, A, A3>(options: {
-    readonly onFailure: (error: E) => A2
-    readonly onSuccess: (value: A) => A3
-  }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>
-  <A, E, R, A2, A3>(
-    self: Effect<A, E, R>,
-    options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3 }
-  ): Effect<A2 | A3, never, R>
-}
+declare const match: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10394)
+
+Since v2.0.0

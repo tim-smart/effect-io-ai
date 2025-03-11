@@ -1,20 +1,13 @@
-# between
+## between
 
 Test whether a value is between a minimum and a maximum (inclusive).
-
-To import and use `between` from the "Order" module:
-
-```ts
-import * as Order from "effect/Order"
-// Can be accessed like this
-Order.between
-```
 
 **Signature**
 
 ```ts
-export declare const between: <A>(O: Order<A>) => {
-  (options: { minimum: A; maximum: A }): (self: A) => boolean
-  (self: A, options: { minimum: A; maximum: A }): boolean
-}
+declare const between: <A>(O: Order<A>) => { (options: { minimum: A; maximum: A; }): (self: A) => boolean; (self: A, options: { minimum: A; maximum: A; }): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Order.ts#L357)
+
+Since v2.0.0

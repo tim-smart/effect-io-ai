@@ -1,22 +1,16 @@
-# sliding
+## sliding
 
 Creates a bounded `PubSub` with the sliding strategy. The `PubSub` will add new
 messages and drop old messages if the `PubSub` is at capacity.
 
 For best performance use capacities that are powers of two.
 
-To import and use `sliding` from the "PubSub" module:
-
-```ts
-import * as PubSub from "effect/PubSub"
-// Can be accessed like this
-PubSub.sliding
-```
-
 **Signature**
 
 ```ts
-export declare const sliding: <A>(
-  capacity: number | { readonly capacity: number; readonly replay?: number | undefined }
-) => Effect.Effect<PubSub<A>>
+declare const sliding: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L75)
+
+Since v2.0.0

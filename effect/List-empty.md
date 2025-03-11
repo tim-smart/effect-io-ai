@@ -1,19 +1,15 @@
-# empty
+## empty
 
 Constructs a new empty `List<A>`.
 
-Alias of {@link nil}.
-
-To import and use `empty` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.empty
-```
+Alias of `nil`.
 
 **Signature**
 
 ```ts
-export declare const empty: <A = never>() => List<A>
+declare const empty: <A = never>() => List<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L269)
+
+Since v2.0.0

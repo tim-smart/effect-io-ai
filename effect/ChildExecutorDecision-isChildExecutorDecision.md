@@ -1,18 +1,14 @@
-# isChildExecutorDecision
+## isChildExecutorDecision
 
 Returns `true` if the specified value is a `ChildExecutorDecision`, `false`
 otherwise.
 
-To import and use `isChildExecutorDecision` from the "ChildExecutorDecision" module:
-
-```ts
-import * as ChildExecutorDecision from "effect/ChildExecutorDecision"
-// Can be accessed like this
-ChildExecutorDecision.isChildExecutorDecision
-```
-
 **Signature**
 
 ```ts
-export declare const isChildExecutorDecision: (u: unknown) => u is ChildExecutorDecision
+declare const isChildExecutorDecision: (u: unknown) => u is ChildExecutorDecision
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ChildExecutorDecision.ts#L95)
+
+Since v2.0.0

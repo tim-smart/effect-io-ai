@@ -1,14 +1,6 @@
-# headNonEmpty
+## headNonEmpty
 
 Get the first element of a non empty array.
-
-To import and use `headNonEmpty` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.headNonEmpty
-```
 
 **Example**
 
@@ -16,11 +8,15 @@ Array.headNonEmpty
 import { Array } from "effect"
 
 const result = Array.headNonEmpty([1, 2, 3, 4])
-assert.deepStrictEqual(result, 1)
+console.log(result) // 1
 ```
 
 **Signature**
 
 ```ts
-export declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
+declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L699)
+
+Since v2.0.0

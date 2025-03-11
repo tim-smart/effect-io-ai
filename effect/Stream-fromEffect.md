@@ -1,15 +1,7 @@
-# fromEffect
+## fromEffect
 
 Either emits the success value of this effect or terminates the stream
 with the failure value of this effect.
-
-To import and use `fromEffect` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromEffect
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ const stream = Stream.fromEffect(Random.nextInt)
 **Signature**
 
 ```ts
-export declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
+declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2018)
+
+Since v2.0.0

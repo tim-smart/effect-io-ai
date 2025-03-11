@@ -1,4 +1,4 @@
-# TimeoutExceptionTypeId
+## TimeoutExceptionTypeId
 
 A unique symbol identifying the `TimeoutException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies a `TimeoutException`. It helps the
 framework recognize errors related to operations that fail to complete within
 a given timeframe.
 
-To import and use `TimeoutExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.TimeoutExceptionTypeId
-```
+- `TimeoutException` Create or work with a `TimeoutException`
 
 **Signature**
 
 ```ts
-export declare const TimeoutExceptionTypeId: typeof TimeoutExceptionTypeId
+declare const TimeoutExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L209)
+
+Since v2.0.0

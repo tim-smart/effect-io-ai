@@ -1,17 +1,13 @@
-# range
+## range
 
 Create a non empty `Chunk` containing a range of integers, including both endpoints.
-
-To import and use `range` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.range
-```
 
 **Signature**
 
 ```ts
-export declare const range: (start: number, end: number) => NonEmptyChunk<number>
+declare const range: (start: number, end: number) => NonEmptyChunk<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1306)
+
+Since v2.0.0

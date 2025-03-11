@@ -1,17 +1,13 @@
-# isPopAnnotationStream
+## isPopAnnotationStream
 
 Returns `true` if the specified `DocStream` is a `PopAnnotationStream`, `false` otherwise.
-
-To import and use `isPopAnnotationStream` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.isPopAnnotationStream
-```
 
 **Signature**
 
 ```ts
-export declare const isPopAnnotationStream: <A>(self: DocStream<A>) => self is PopAnnotationStream<A>
+declare const isPopAnnotationStream: <A>(self: DocStream<A>) => self is PopAnnotationStream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L229)
+
+Since v1.0.0

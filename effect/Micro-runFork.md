@@ -1,4 +1,4 @@
-# runFork
+## runFork
 
 Execute the `Micro` effect and return a `MicroFiber` that can be awaited, joined,
 or aborted.
@@ -6,20 +6,15 @@ or aborted.
 You can listen for the result by adding an observer using the handle's
 `addObserver` method.
 
-To import and use `runFork` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.runFork
-```
-
 **Example**
 
 ```ts
 import * as Micro from "effect/Micro"
 
-const handle = Micro.succeed(42).pipe(Micro.delay(1000), Micro.runFork)
+const handle = Micro.succeed(42).pipe(
+  Micro.delay(1000),
+  Micro.runFork
+)
 
 handle.addObserver((exit) => {
   console.log(exit)
@@ -29,8 +24,9 @@ handle.addObserver((exit) => {
 **Signature**
 
 ```ts
-export declare const runFork: <A, E>(
-  effect: Micro<A, E>,
-  options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined } | undefined
-) => MicroFiberImpl<A, E>
+declare const runFork: <A, E>(effect: Micro<A, E>, options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: MicroScheduler | undefined; } | undefined) => MicroFiberImpl<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4214)
+
+Since v3.4.0

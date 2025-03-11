@@ -1,17 +1,13 @@
-# makeNoop
+## makeNoop
 
 Create a no-op file system that can be used for testing.
-
-To import and use `makeNoop` from the "FileSystem" module:
-
-```ts
-import * as FileSystem from "@effect/platform/FileSystem"
-// Can be accessed like this
-FileSystem.makeNoop
-```
 
 **Signature**
 
 ```ts
-export declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem
+declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L455)
+
+Since v1.0.0

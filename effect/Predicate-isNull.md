@@ -1,18 +1,11 @@
-# isNull
+## isNull
 
 Tests if a value is `null`.
-
-To import and use `isNull` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isNull
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isNull } from "effect/Predicate"
 
 assert.deepStrictEqual(isNull(null), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isNull("null"), false)
 **Signature**
 
 ```ts
-export declare const isNull: (input: unknown) => input is null
+declare const isNull: (input: unknown) => input is null
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L373)
+
+Since v2.0.0

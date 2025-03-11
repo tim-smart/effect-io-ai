@@ -1,17 +1,13 @@
-# isNesting
+## isNesting
 
 Returns `true` if the specified `Doc` is a `Nesting`, `false` otherwise.
-
-To import and use `isNesting` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isNesting
-```
 
 **Signature**
 
 ```ts
-export declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>
+declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L414)
+
+Since v1.0.0

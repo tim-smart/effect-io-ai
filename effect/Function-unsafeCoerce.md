@@ -1,18 +1,11 @@
-# unsafeCoerce
+## unsafeCoerce
 
 Casts the result to the specified type.
-
-To import and use `unsafeCoerce` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.unsafeCoerce
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { unsafeCoerce, identity } from "effect/Function"
 
 assert.deepStrictEqual(unsafeCoerce, identity)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(unsafeCoerce, identity)
 **Signature**
 
 ```ts
-export declare const unsafeCoerce: <A, B>(a: A) => B
+declare const unsafeCoerce: <A, B>(a: A) => B
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L250)
+
+Since v2.0.0

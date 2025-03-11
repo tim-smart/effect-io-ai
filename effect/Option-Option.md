@@ -1,4 +1,4 @@
-# Option
+## Option
 
 The `Option` data type represents optional values. An `Option<A>` can either
 be `Some<A>`, containing a value of type `A`, or `None`, representing the
@@ -14,10 +14,12 @@ You can use `Option` in scenarios like:
 - Managing optional fields in data structures
 - Handling optional function arguments
 
-To import and use `Option` from the "Option" module:
+**Signature**
 
 ```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.Option
+type Option<A> = None<A> | Some<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L40)
+
+Since v2.0.0

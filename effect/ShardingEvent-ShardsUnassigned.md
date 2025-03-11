@@ -1,20 +1,13 @@
-# ShardsUnassigned
+## ShardsUnassigned
 
 Constructs the event that occurs when shards are unassigned to a Pod
-
-To import and use `ShardsUnassigned` from the "ShardingEvent" module:
-
-```ts
-import * as ShardingEvent from "@effect/cluster/ShardingEvent"
-// Can be accessed like this
-ShardingEvent.ShardsUnassigned
-```
 
 **Signature**
 
 ```ts
-export declare function ShardsUnassigned(
-  pod: PodAddress.PodAddress,
-  shards: HashSet.HashSet<ShardId.ShardId>
-): ShardsUnassigned
+declare const ShardsUnassigned: (pod: PodAddress.PodAddress, shards: HashSet.HashSet<ShardId.ShardId>) => ShardsUnassigned
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L46)
+
+Since v1.0.0

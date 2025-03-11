@@ -1,19 +1,15 @@
-# file
+## file
 
 Creates a file argument.
 
 Can optionally provide a custom argument name (defaults to `"file"`).
 
-To import and use `file` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.file
-```
-
 **Signature**
 
 ```ts
-export declare const file: (config?: Args.PathArgsConfig) => Args<string>
+declare const file: (config?: Args.PathArgsConfig) => Args<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L224)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# apiKey
+## apiKey
 
 Create an API key security scheme.
 
@@ -10,19 +10,12 @@ To set the correct cookie in a handler, you can use
 
 The default value for `in` is "header".
 
-To import and use `apiKey` from the "HttpApiSecurity" module:
-
-```ts
-import * as HttpApiSecurity from "@effect/platform/HttpApiSecurity"
-// Can be accessed like this
-HttpApiSecurity.apiKey
-```
-
 **Signature**
 
 ```ts
-export declare const apiKey: (options: {
-  readonly key: string
-  readonly in?: "header" | "query" | "cookie" | undefined
-}) => ApiKey
+declare const apiKey: (options: { readonly key: string; readonly in?: "header" | "query" | "cookie" | undefined; }) => ApiKey
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSecurity.ts#L121)
+
+Since v1.0.0

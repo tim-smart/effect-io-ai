@@ -1,17 +1,13 @@
-# map
+## map
 
 Returns a default `map` implementation.
-
-To import and use `map` from the "Bicovariant" module:
-
-```ts
-import * as Bicovariant from "@effect/typeclass/Bicovariant"
-// Can be accessed like this
-Bicovariant.map
-```
 
 **Signature**
 
 ```ts
-export declare const map: <F extends TypeLambda>(F: Bicovariant<F>) => Covariant<F>["map"]
+declare const map: <F extends TypeLambda>(F: Bicovariant<F>) => Covariant<F>["map"]
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bicovariant.ts#L62)
+
+Since v0.24.0

@@ -1,4 +1,4 @@
-# match
+## match
 
 Transforms a `Cause` into a single value using custom handlers for each
 possible case.
@@ -13,7 +13,6 @@ part of a `Cause`, whether it's a failure, defect, interruption, or a
 combination of these.
 
 The options parameter provides handlers for:
-
 - `onEmpty`: Handles the case where the cause is `Empty`, meaning no errors
   occurred.
 - `onFail`: Processes a failure with an error of type `E`.
@@ -24,36 +23,12 @@ The options parameter provides handlers for:
   `Z`.
 - `onParallel`: Combines two parallel causes into a single value of type `Z`.
 
-To import and use `match` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.match
-```
-
 **Signature**
 
 ```ts
-export declare const match: {
-  <Z, E>(options: {
-    readonly onEmpty: Z
-    readonly onFail: (error: E) => Z
-    readonly onDie: (defect: unknown) => Z
-    readonly onInterrupt: (fiberId: FiberId.FiberId) => Z
-    readonly onSequential: (left: Z, right: Z) => Z
-    readonly onParallel: (left: Z, right: Z) => Z
-  }): (self: Cause<E>) => Z
-  <Z, E>(
-    self: Cause<E>,
-    options: {
-      readonly onEmpty: Z
-      readonly onFail: (error: E) => Z
-      readonly onDie: (defect: unknown) => Z
-      readonly onInterrupt: (fiberId: FiberId.FiberId) => Z
-      readonly onSequential: (left: Z, right: Z) => Z
-      readonly onParallel: (left: Z, right: Z) => Z
-    }
-  ): Z
-}
+declare const match: { <Z, E>(options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): (self: Cause<E>) => Z; <Z, E>(self: Cause<E>, options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): Z; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1231)
+
+Since v2.0.0

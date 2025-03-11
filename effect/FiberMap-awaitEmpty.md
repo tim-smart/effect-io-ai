@@ -1,17 +1,13 @@
-# awaitEmpty
+## awaitEmpty
 
 Wait for the FiberMap to be empty.
-
-To import and use `awaitEmpty` from the "FiberMap" module:
-
-```ts
-import * as FiberMap from "effect/FiberMap"
-// Can be accessed like this
-FiberMap.awaitEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const awaitEmpty: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
+declare const awaitEmpty: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L647)
+
+Since v3.13.0

@@ -1,4 +1,4 @@
-# zipLeft
+## zipLeft
 
 Combines two `Option`s, keeping the value from the first `Option` if both are
 `Some`.
@@ -14,19 +14,12 @@ This is useful when sequencing computations where the second `Option`
 represents a dependency or condition that must hold, but its value is
 irrelevant.
 
-To import and use `zipLeft` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.zipLeft
-```
-
 **Signature**
 
 ```ts
-export declare const zipLeft: {
-  <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>
-  <A, X>(self: Option<A>, that: Option<X>): Option<A>
-}
+declare const zipLeft: { <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>; <A, X>(self: Option<A>, that: Option<X>): Option<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1213)
+
+Since v2.0.0

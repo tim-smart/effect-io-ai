@@ -1,17 +1,13 @@
-# readLocks
+## readLocks
 
 Retrieves the total number of acquired read locks.
-
-To import and use `readLocks` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.readLocks
-```
 
 **Signature**
 
 ```ts
-export declare const readLocks: (self: TReentrantLock) => STM.STM<number>
+declare const readLocks: (self: TReentrantLock) => STM.STM<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L141)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# Channel
+## Channel
 
 A `Channel` is a nexus of I/O operations, which supports both reading and
 writing. A channel may read values of type `InElem` and write values of type
@@ -13,19 +13,44 @@ it may be useful to use channels directly.
 
 Channels compose in a variety of ways:
 
-- **Piping**: One channel can be piped to another channel, assuming the
-  input type of the second is the same as the output type of the first.
-- **Sequencing**: The terminal value of one channel can be used to create
-  another channel, and both the first channel and the function that makes
-  the second channel can be composed into a channel.
-- **Concatenating**: The output of one channel can be used to create other
-  channels, which are all concatenated together. The first channel and the
-  function that makes the other channels can be composed into a channel.
+ - **Piping**: One channel can be piped to another channel, assuming the
+   input type of the second is the same as the output type of the first.
+ - **Sequencing**: The terminal value of one channel can be used to create
+   another channel, and both the first channel and the function that makes
+   the second channel can be composed into a channel.
+ - **Concatenating**: The output of one channel can be used to create other
+   channels, which are all concatenated together. The first channel and the
+   function that makes the other channels can be composed into a channel.
 
-To import and use `Channel` from the "Channel" module:
+**Signature**
 
 ```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.Channel
+export interface Channel<
+  out OutElem,
+  in InElem = unknown,
+  out OutErr = never,
+  in InErr = unknown,
+  out OutDone = void,
+  in InDone = unknown,
+  out Env = never
+> extends
+  Channel.Variance<
+    OutElem,
+    InElem,
+    OutErr,
+    InErr,
+    OutDone,
+    InDone,
+    Env
+  >,
+  Pipeable
+{
+  [Unify.typeSymbol]?: unknown
+  [Unify.unifySymbol]?: ChannelUnify<this>
+  [Unify.ignoreSymbol]?: ChannelUnifyIgnore
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L75)
+
+Since v2.0.0

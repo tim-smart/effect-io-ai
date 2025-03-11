@@ -1,11 +1,15 @@
-# Continue
+## Continue
 
 Continue executing the current substream
 
-To import and use `Continue` from the "ChildExecutorDecision" module:
+**Signature**
 
 ```ts
-import * as ChildExecutorDecision from "effect/ChildExecutorDecision"
-// Can be accessed like this
-ChildExecutorDecision.Continue
+export interface Continue extends ChildExecutorDecision.Proto {
+  readonly _tag: "Continue"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ChildExecutorDecision.ts#L43)
+
+Since v2.0.0

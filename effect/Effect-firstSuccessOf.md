@@ -1,4 +1,4 @@
-# firstSuccessOf
+## firstSuccessOf
 
 Runs a sequence of effects and returns the result of the first successful
 one.
@@ -23,14 +23,6 @@ thrown, indicating that the operation is invalid without any effects to try.
 This is particularly useful when you have multiple fallback strategies or
 alternative sources to obtain a result, such as attempting multiple APIs,
 retrieving configurations, or accessing resources in a prioritized manner.
-
-To import and use `firstSuccessOf` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.firstSuccessOf
-```
 
 **Example**
 
@@ -86,7 +78,9 @@ console.log(result)
 **Signature**
 
 ```ts
-export declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(
-  effects: Iterable<Eff>
-) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
+declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11336)
+
+Since v2.0.0

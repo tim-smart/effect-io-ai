@@ -1,15 +1,7 @@
-# json
+## json
 
 The `json` logger formats log entries as JSON objects, making them easy to
 integrate with logging systems that consume JSON data.
-
-To import and use `json` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.json
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const json: Layer.Layer<never, never, never>
+declare const json: Layer.Layer<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L588)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# make
+## make
 
 Constructs a new PosionPill
-
-To import and use `make` from the "PoisonPill" module:
-
-```ts
-import * as PoisonPill from "@effect/cluster/PoisonPill"
-// Can be accessed like this
-PoisonPill.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: Effect.Effect<PoisonPill, never, never>
+declare const make: Effect.Effect<PoisonPill, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L60)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# SingletonRegistered
+## SingletonRegistered
 
 Constructs a new event that occurs when a new Singleton is registered.
-
-To import and use `SingletonRegistered` from the "ShardingRegistrationEvent" module:
-
-```ts
-import * as ShardingRegistrationEvent from "@effect/cluster/ShardingRegistrationEvent"
-// Can be accessed like this
-ShardingRegistrationEvent.SingletonRegistered
-```
 
 **Signature**
 
 ```ts
-export declare function SingletonRegistered(name: string): ShardingRegistrationEvent
+declare const SingletonRegistered: (name: string) => ShardingRegistrationEvent
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L35)
+
+Since v1.0.0

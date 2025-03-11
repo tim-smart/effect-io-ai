@@ -1,4 +1,4 @@
-# dieMessage
+## dieMessage
 
 Creates an effect that terminates a fiber with a `RuntimeException`
 containing the specified message.
@@ -17,21 +17,16 @@ not handle or recover from the error.
 Use this function when you want to terminate a fiber due to an unrecoverable
 defect and include a clear explanation in the message.
 
-To import and use `dieMessage` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.dieMessage
-```
-
 **Example**
 
 ```ts
 // Title: Terminating on Division by Zero with a Specified Message
 import { Effect } from "effect"
 
-const divide = (a: number, b: number) => (b === 0 ? Effect.dieMessage("Cannot divide by zero") : Effect.succeed(a / b))
+const divide = (a: number, b: number) =>
+  b === 0
+    ? Effect.dieMessage("Cannot divide by zero")
+    : Effect.succeed(a / b)
 
 //      ┌─── Effect<number, never, never>
 //      ▼
@@ -43,8 +38,18 @@ const program = divide(1, 0)
 //   ...stack trace...
 ```
 
+**See**
+
+- `die` for a variant that throws a specified error.
+- `dieSync` for a variant that throws a specified error, evaluated
+lazily.
+
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Effect<never>
+declare const dieMessage: (message: string) => Effect<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2629)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# reduceWhile
+## reduceWhile
 
 Reduces an `Iterable<A>` using an effectual function `body`, working
 sequentially from left to right, stopping the process early when the
@@ -19,29 +19,25 @@ continue the process as long as a certain condition holds true. For example,
 if you want to sum values in a list but stop as soon as the sum exceeds a
 certain threshold, you can use this function.
 
-To import and use `reduceWhile` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.reduceWhile
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
 const processOrder = (id: number) =>
-  Effect.succeed({ id, price: 100 * id }).pipe(
-    Effect.tap(() => Console.log(`Order ${id} processed`)),
-    Effect.delay(500 - id * 100)
-  )
+  Effect.succeed({ id, price: 100 * id })
+    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))
 
-const program = Effect.reduceWhile([1, 2, 3, 4], 0, {
-  body: (acc, id, i) => processOrder(id).pipe(Effect.map((order) => acc + order.price)),
-  while: (acc) => acc < 500
-})
+const program = Effect.reduceWhile(
+  [1, 2, 3, 4],
+  0,
+  {
+    body: (acc, id, i) =>
+      processOrder(id)
+        .pipe(Effect.map((order) => acc + order.price)),
+    while: (acc) => acc < 500
+  }
+)
 
 // Effect.runPromise(program).then(console.log)
 // Output:
@@ -54,15 +50,9 @@ const program = Effect.reduceWhile([1, 2, 3, 4], 0, {
 **Signature**
 
 ```ts
-export declare const reduceWhile: {
-  <Z, A, E, R>(
-    zero: Z,
-    options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R> }
-  ): (elements: Iterable<A>) => Effect<Z, E, R>
-  <A, Z, E, R>(
-    elements: Iterable<A>,
-    zero: Z,
-    options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R> }
-  ): Effect<Z, E, R>
-}
+declare const reduceWhile: { <Z, A, E, R>(zero: Z, options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R>; }): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, E, R>(elements: Iterable<A>, zero: Z, options: { readonly while: Predicate<Z>; readonly body: (s: Z, a: A, i: number) => Effect<Z, E, R>; }): Effect<Z, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1875)
+
+Since v2.0.0

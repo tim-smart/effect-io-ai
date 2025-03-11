@@ -1,4 +1,4 @@
-# makeWithState
+## makeWithState
 
 Creates a new schedule with a custom state and step function.
 
@@ -14,23 +14,12 @@ This function is useful for creating custom scheduling logic that goes beyond
 predefined schedules like fixed intervals or exponential backoff. It allows
 full control over how the schedule behaves at each step.
 
-To import and use `makeWithState` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.makeWithState
-```
-
 **Signature**
 
 ```ts
-export declare const makeWithState: <S, In, Out, R = never>(
-  initial: S,
-  step: (
-    now: number,
-    input: In,
-    state: S
-  ) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, R>
-) => Schedule<Out, In, R>
+declare const makeWithState: <S, In, Out, R = never>(initial: S, step: (now: number, input: In, state: S) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, R>) => Schedule<Out, In, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L166)
+
+Since v2.0.0

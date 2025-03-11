@@ -1,4 +1,4 @@
-# HelpDoc
+## HelpDoc
 
 A `HelpDoc` models the full documentation for a command-line application.
 
@@ -10,10 +10,12 @@ lists, and enumerations.
 
 A `HelpDoc` can be converted into plaintext, JSON, and HTML.
 
-To import and use `HelpDoc` from the "HelpDoc" module:
+**Signature**
 
 ```ts
-import * as HelpDoc from "@effect/cli/HelpDoc"
-// Can be accessed like this
-HelpDoc.HelpDoc
+type HelpDoc = Empty | Header | Paragraph | DescriptionList | Enumeration | Sequence
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/HelpDoc.ts#L23)
+
+Since v1.0.0

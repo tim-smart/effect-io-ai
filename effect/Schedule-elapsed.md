@@ -1,4 +1,4 @@
-# elapsed
+## elapsed
 
 Creates a schedule that tracks the total elapsed duration since it started.
 
@@ -11,16 +11,12 @@ step, providing a way to measure elapsed time.
 This is useful for tracking execution time, monitoring delays, or
 implementing logic based on how long a process has been running.
 
-To import and use `elapsed` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.elapsed
-```
-
 **Signature**
 
 ```ts
-export declare const elapsed: Schedule<Duration.Duration, unknown, never>
+declare const elapsed: Schedule<Duration.Duration, unknown, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L961)
+
+Since v2.0.0

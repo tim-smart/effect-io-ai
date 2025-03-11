@@ -1,17 +1,13 @@
-# liveLayer
+## liveLayer
 
 Constructs a new `Live` service wrapped in a layer.
-
-To import and use `liveLayer` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.liveLayer
-```
 
 **Signature**
 
 ```ts
-export declare const liveLayer: () => Layer.Layer<Live.TestLive, never, DefaultServices.DefaultServices>
+declare const liveLayer: () => Layer.Layer<Live.TestLive, never, DefaultServices.DefaultServices>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L190)
+
+Since v2.0.0

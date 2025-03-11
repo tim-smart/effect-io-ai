@@ -1,17 +1,13 @@
-# ignore
+## ignore
 
 Returns a new effect that ignores the success or failure of this effect.
-
-To import and use `ignore` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.ignore
-```
 
 **Signature**
 
 ```ts
-export declare const ignore: <A, E, R>(self: STM<A, E, R>) => STM<void, never, R>
+declare const ignore: <A, E, R>(self: STM<A, E, R>) => STM<void, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1131)
+
+Since v2.0.0

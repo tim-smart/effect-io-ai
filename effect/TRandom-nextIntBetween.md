@@ -1,18 +1,14 @@
-# nextIntBetween
+## nextIntBetween
 
 Returns the next integer in the specified range from the pseudo-random number
 generator.
 
-To import and use `nextIntBetween` from the "TRandom" module:
-
-```ts
-import * as TRandom from "effect/TRandom"
-// Can be accessed like this
-TRandom.nextIntBetween
-```
-
 **Signature**
 
 ```ts
-export declare const nextIntBetween: (low: number, high: number) => STM.STM<number, never, TRandom>
+declare const nextIntBetween: (low: number, high: number) => STM.STM<number, never, TRandom>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TRandom.ts#L112)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isNest
+## isNest
 
 Returns `true` if the specified `Doc` is a `Nest`, `false` otherwise.
-
-To import and use `isNest` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isNest
-```
 
 **Signature**
 
 ```ts
-export declare const isNest: <A>(self: Doc<A>) => self is Nest<A>
+declare const isNest: <A>(self: Doc<A>) => self is Nest<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L382)
+
+Since v1.0.0

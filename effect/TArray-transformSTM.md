@@ -1,20 +1,13 @@
-# transformSTM
+## transformSTM
 
 Atomically updates all elements using a transactional effect.
-
-To import and use `transformSTM` from the "TArray" module:
-
-```ts
-import * as TArray from "effect/TArray"
-// Can be accessed like this
-TArray.transformSTM
-```
 
 **Signature**
 
 ```ts
-export declare const transformSTM: {
-  <A, R, E>(f: (value: A) => STM.STM<A, E, R>): (self: TArray<A>) => STM.STM<void, E, R>
-  <A, R, E>(self: TArray<A>, f: (value: A) => STM.STM<A, E, R>): STM.STM<void, E, R>
-}
+declare const transformSTM: { <A, R, E>(f: (value: A) => STM.STM<A, E, R>): (self: TArray<A>) => STM.STM<void, E, R>; <A, R, E>(self: TArray<A>, f: (value: A) => STM.STM<A, E, R>): STM.STM<void, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TArray.ts#L470)
+
+Since v2.0.0

@@ -1,14 +1,6 @@
-# nowInCurrentZone
+## nowInCurrentZone
 
 Get the current time as a `DateTime.Zoned`, using the `CurrentTimeZone`.
-
-To import and use `nowInCurrentZone` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.nowInCurrentZone
-```
 
 **Example**
 
@@ -24,5 +16,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const nowInCurrentZone: Effect.Effect<Zoned, never, CurrentTimeZone>
+declare const nowInCurrentZone: Effect.Effect<Zoned, never, CurrentTimeZone>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1124)
+
+Since v3.6.0

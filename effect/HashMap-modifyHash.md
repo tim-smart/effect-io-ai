@@ -1,4 +1,4 @@
-# modifyHash
+## modifyHash
 
 Alter the value of the specified key in the `HashMap` using the specified
 update function. The value of the specified key will be computed using the
@@ -9,19 +9,12 @@ exists, or `None` if no such value exists.
 
 This function will always either update or insert a value into the `HashMap`.
 
-To import and use `modifyHash` from the "HashMap" module:
-
-```ts
-import * as HashMap from "effect/HashMap"
-// Can be accessed like this
-HashMap.modifyHash
-```
-
 **Signature**
 
 ```ts
-export declare const modifyHash: {
-  <K, V>(key: K, hash: number, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>
-  <K, V>(self: HashMap<K, V>, key: K, hash: number, f: HashMap.UpdateFn<V>): HashMap<K, V>
-}
+declare const modifyHash: { <K, V>(key: K, hash: number, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, hash: number, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L315)
+
+Since v2.0.0

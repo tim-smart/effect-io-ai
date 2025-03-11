@@ -1,17 +1,13 @@
-# failCause
+## failCause
 
 Constructs a new `Exit.Failure` from the specified `Cause` of type `E`.
-
-To import and use `failCause` from the "Exit" module:
-
-```ts
-import * as Exit from "effect/Exit"
-// Can be accessed like this
-Exit.failCause
-```
 
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
+declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L191)
+
+Since v2.0.0

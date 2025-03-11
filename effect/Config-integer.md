@@ -1,17 +1,13 @@
-# integer
+## integer
 
 Constructs a config for a integer value.
-
-To import and use `integer` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.integer
-```
 
 **Signature**
 
 ```ts
-export declare const integer: (name?: string) => Config<number>
+declare const integer: (name?: string) => Config<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L177)
+
+Since v2.0.0

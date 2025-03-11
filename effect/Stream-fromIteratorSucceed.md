@@ -1,17 +1,13 @@
-# fromIteratorSucceed
+## fromIteratorSucceed
 
 Creates a stream from an iterator
-
-To import and use `fromIteratorSucceed` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromIteratorSucceed
-```
 
 **Signature**
 
 ```ts
-export declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
+declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2121)
+
+Since v2.0.0

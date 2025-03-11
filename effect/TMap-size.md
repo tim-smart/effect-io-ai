@@ -1,17 +1,13 @@
-# size
+## size
 
 Returns the number of bindings.
-
-To import and use `size` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.size
-```
 
 **Signature**
 
 ```ts
-export declare const size: <K, V>(self: TMap<K, V>) => STM.STM<number>
+declare const size: <K, V>(self: TMap<K, V>) => STM.STM<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L360)
+
+Since v2.0.0

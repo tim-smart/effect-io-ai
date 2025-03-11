@@ -1,17 +1,13 @@
-# isEmptyStream
+## isEmptyStream
 
 Returns `true` if the specified `DocStream` is a `EmptyStream`, `false` otherwise.
-
-To import and use `isEmptyStream` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.isEmptyStream
-```
 
 **Signature**
 
 ```ts
-export declare const isEmptyStream: <A>(self: DocStream<A>) => self is EmptyStream<A>
+declare const isEmptyStream: <A>(self: DocStream<A>) => self is EmptyStream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L187)
+
+Since v1.0.0

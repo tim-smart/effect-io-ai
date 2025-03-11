@@ -1,18 +1,11 @@
-# or
+## or
 
 Combines two boolean using OR: `self || that`.
-
-To import and use `or` from the "Boolean" module:
-
-```ts
-import * as Boolean from "effect/Boolean"
-// Can be accessed like this
-Boolean.or
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { or } from "effect/Boolean"
 
 assert.deepStrictEqual(or(true, true), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(or(false, false), false)
 **Signature**
 
 ```ts
-export declare const or: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean }
+declare const or: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L150)
+
+Since v2.0.0

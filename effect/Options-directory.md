@@ -1,17 +1,13 @@
-# directory
+## directory
 
 Creates a parameter expecting path to a directory.
-
-To import and use `directory` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.directory
-```
 
 **Signature**
 
 ```ts
-export declare const directory: (name: string, config?: Options.PathOptionsConfig) => Options<string>
+declare const directory: (name: string, config?: Options.PathOptionsConfig) => Options<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L225)
+
+Since v1.0.0

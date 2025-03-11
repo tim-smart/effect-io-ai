@@ -1,18 +1,11 @@
-# SemigroupEqv
+## SemigroupEqv
 
 `boolean` semigroup under equivalence.
-
-To import and use `SemigroupEqv` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.SemigroupEqv
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { SemigroupEqv } from "@effect/typeclass/data/Boolean"
 
 assert.deepStrictEqual(SemigroupEqv.combine(true, true), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(SemigroupEqv.combine(false, false), true)
 **Signature**
 
 ```ts
-export declare const SemigroupEqv: semigroup.Semigroup<boolean>
+declare const SemigroupEqv: semigroup.Semigroup<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L107)
+
+Since v0.24.0

@@ -1,19 +1,13 @@
-# make
+## make
 
 Constructs a new `List<A>` from the specified values.
-
-To import and use `make` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <Elements extends readonly [any, ...Array<any>]>(
-  ...elements: Elements
-) => Cons<Elements[number]>
+declare const make: <Elements extends readonly [any, ...Array<any>]>(...elements: Elements) => Cons<Elements[number]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L308)
+
+Since v2.0.0

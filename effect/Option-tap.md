@@ -1,4 +1,4 @@
-# tap
+## tap
 
 Applies the provided function `f` to the value of the `Option` if it is
 `Some` and returns the original `Option`, unless `f` returns `None`, in which
@@ -16,20 +16,12 @@ function is not executed, and `None` is returned.
 This is particularly useful for applying side conditions or performing
 validation checks while retaining the original `Option`'s value.
 
-To import and use `tap` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.tap
-```
-
 **Example**
 
 ```ts
 import { Option } from "effect"
 
-const getInteger = (n: number) => (Number.isInteger(n) ? Option.some(n) : Option.none())
+const getInteger = (n: number) => Number.isInteger(n) ? Option.some(n) : Option.none()
 
 console.log(Option.tap(Option.none(), getInteger))
 // Output: { _id: 'Option', _tag: 'None' }
@@ -44,8 +36,9 @@ console.log(Option.tap(Option.some(1.14), getInteger))
 **Signature**
 
 ```ts
-export declare const tap: {
-  <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>
-  <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>
-}
+declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1291)
+
+Since v2.0.0

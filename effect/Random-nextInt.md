@@ -1,17 +1,13 @@
-# nextInt
+## nextInt
 
 Returns the next integer value from the pseudo-random number generator.
-
-To import and use `nextInt` from the "Random" module:
-
-```ts
-import * as Random from "effect/Random"
-// Can be accessed like this
-Random.nextInt
-```
 
 **Signature**
 
 ```ts
-export declare const nextInt: Effect.Effect<number, never, never>
+declare const nextInt: Effect.Effect<number, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Random.ts#L73)
+
+Since v2.0.0

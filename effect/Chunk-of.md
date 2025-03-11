@@ -1,17 +1,13 @@
-# of
+## of
 
 Builds a `NonEmptyChunk` from a single element.
-
-To import and use `of` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.of
-```
 
 **Signature**
 
 ```ts
-export declare const of: <A>(a: A) => NonEmptyChunk<A>
+declare const of: <A>(a: A) => NonEmptyChunk<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L242)
+
+Since v2.0.0

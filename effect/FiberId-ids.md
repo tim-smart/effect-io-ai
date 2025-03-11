@@ -1,17 +1,13 @@
-# ids
+## ids
 
 Get the set of identifiers for this `FiberId`.
-
-To import and use `ids` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.ids
-```
 
 **Signature**
 
 ```ts
-export declare const ids: (self: FiberId) => HashSet.HashSet<number>
+declare const ids: (self: FiberId) => HashSet.HashSet<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L154)
+
+Since v2.0.0

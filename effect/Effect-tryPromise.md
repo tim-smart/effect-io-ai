@@ -1,4 +1,4 @@
-# tryPromise
+## tryPromise
 
 Creates an `Effect` that represents an asynchronous computation that might
 fail.
@@ -25,14 +25,6 @@ There are two ways to handle errors with `tryPromise`:
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
 
-To import and use `tryPromise` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.tryPromise
-```
-
 **Example**
 
 ```ts
@@ -41,7 +33,9 @@ import { Effect } from "effect"
 
 const getTodo = (id: number) =>
   // Will catch any errors and propagate them as UnknownException
-  Effect.tryPromise(() => fetch(`https://jsonplaceholder.typicode.com/todos/${id}`))
+  Effect.tryPromise(() =>
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+  )
 
 //      ┌─── Effect<Response, UnknownException, never>
 //      ▼
@@ -66,14 +60,16 @@ const getTodo = (id: number) =>
 const program = getTodo(1)
 ```
 
+**See**
+
+- `promise` if the effectful computation is asynchronous and does not throw errors.
+
 **Signature**
 
 ```ts
-export declare const tryPromise: {
-  <A, E>(options: {
-    readonly try: (signal: AbortSignal) => PromiseLike<A>
-    readonly catch: (error: unknown) => E
-  }): Effect<A, E>
-  <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>): Effect<A, Cause.UnknownException>
-}
+declare const tryPromise: { <A, E>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; }): Effect<A, E>; <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>): Effect<A, Cause.UnknownException>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4588)
+
+Since v2.0.0

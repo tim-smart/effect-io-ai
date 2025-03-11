@@ -1,4 +1,4 @@
-# intersect
+## intersect
 
 Combines two schedules, continuing only if both schedules want to continue,
 using the longer delay.
@@ -16,24 +16,16 @@ types.
 This is useful when coordinating multiple scheduling conditions where
 execution should proceed only when both schedules permit it.
 
-To import and use `intersect` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.intersect
-```
+- `intersectWith` If you need to use a custom merge function.
 
 **Signature**
 
 ```ts
-export declare const intersect: {
-  <Out2, In2, R2>(
-    that: Schedule<Out2, In2, R2>
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<[Out, Out2], In & In2, R2 | R>
-  <Out, In, R, Out2, In2, R2>(
-    self: Schedule<Out, In, R>,
-    that: Schedule<Out2, In2, R2>
-  ): Schedule<[Out, Out2], In & In2, R | R2>
-}
+declare const intersect: { <Out2, In2, R2>(that: Schedule<Out2, In2, R2>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<[Out, Out2], In & In2, R2 | R>; <Out, In, R, Out2, In2, R2>(self: Schedule<Out, In, R>, that: Schedule<Out2, In2, R2>): Schedule<[Out, Out2], In & In2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1169)
+
+Since v2.0.0

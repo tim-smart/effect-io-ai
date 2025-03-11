@@ -1,20 +1,13 @@
-# disable
+## disable
 
 Disables the specified `RuntimeFlag`.
-
-To import and use `disable` from the "RuntimeFlags" module:
-
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.disable
-```
 
 **Signature**
 
 ```ts
-export declare const disable: {
-  (flag: RuntimeFlag): (self: RuntimeFlags) => RuntimeFlags
-  (self: RuntimeFlags, flag: RuntimeFlag): RuntimeFlags
-}
+declare const disable: { (flag: RuntimeFlag): (self: RuntimeFlags) => RuntimeFlags; (self: RuntimeFlags, flag: RuntimeFlag): RuntimeFlags; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L129)
+
+Since v2.0.0

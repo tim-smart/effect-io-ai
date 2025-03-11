@@ -1,18 +1,11 @@
-# isIterable
+## isIterable
 
 A guard that succeeds when the input is an `Iterable`.
-
-To import and use `isIterable` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isIterable
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isIterable } from "effect/Predicate"
 
 assert.deepStrictEqual(isIterable([]), true)
@@ -25,5 +18,9 @@ assert.deepStrictEqual(isIterable({}), false)
 **Signature**
 
 ```ts
-export declare const isIterable: (input: unknown) => input is Iterable<unknown>
+declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L614)
+
+Since v2.0.0

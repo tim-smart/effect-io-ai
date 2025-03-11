@@ -1,17 +1,13 @@
-# min
+## min
 
 `Semigroup` that returns last minimum of elements.
-
-To import and use `min` from the "Semigroup" module:
-
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
-// Can be accessed like this
-Semigroup.min
-```
 
 **Signature**
 
 ```ts
-export declare const min: <A>(O: Order<A>) => Semigroup<A>
+declare const min: <A>(O: Order<A>) => Semigroup<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L51)
+
+Since v0.24.0

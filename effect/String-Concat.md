@@ -1,11 +1,13 @@
-# Concat
+## Concat
 
 Concatenates two strings at the type level.
 
-To import and use `Concat` from the "String" module:
+**Signature**
 
 ```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.Concat
+type `${A}${B}` = `${A}${B}`
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L61)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# Covariant
+## Covariant
 
 Covariant helper.
 
-To import and use `Covariant` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Covariant
+type Covariant<A> = (_: never) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L291)
+
+Since v2.0.0

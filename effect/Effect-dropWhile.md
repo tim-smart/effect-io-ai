@@ -1,4 +1,4 @@
-# dropWhile
+## dropWhile
 
 Drops elements as long as the predicate returns `true`.
 
@@ -21,14 +21,6 @@ This function allows you to discard elements from the start of a collection
 based on a condition, and only keep the rest when the condition no longer
 holds.
 
-To import and use `dropWhile` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.dropWhile
-```
-
 **Example**
 
 ```ts
@@ -37,7 +29,7 @@ import { Effect } from "effect"
 const numbers = [1, 2, 3, 4, 5, 6]
 const predicate = (n: number, i: number) => Effect.succeed(n <= 3)
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const result = yield* Effect.dropWhile(numbers, predicate)
   console.log(result)
 })
@@ -46,13 +38,17 @@ const program = Effect.gen(function* () {
 // Output: [4, 5, 6]
 ```
 
+**See**
+
+- `dropUntil` for a similar function that drops elements until the
+predicate returns `true`.
+
 **Signature**
 
 ```ts
-export declare const dropWhile: {
-  <A, E, R>(
-    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
-  ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
-  <A, E, R>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>
-}
+declare const dropWhile: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1101)
+
+Since v2.0.0

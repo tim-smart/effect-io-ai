@@ -1,17 +1,13 @@
-# compact
+## compact
 
 Filter out optional values
-
-To import and use `compact` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.compact
-```
 
 **Signature**
 
 ```ts
-export declare const compact: <A>(self: Chunk<Option<A>>) => Chunk<A>
+declare const compact: <A>(self: Chunk<Option<A>>) => Chunk<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L717)
+
+Since v2.0.0

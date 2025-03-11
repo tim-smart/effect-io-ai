@@ -1,4 +1,4 @@
-# not
+## not
 
 Excludes a specific value from matching while allowing all others.
 
@@ -9,14 +9,6 @@ more specific cases**. Instead of listing all possible matches manually, this
 function simplifies the logic by allowing you to specify values to exclude.
 Any excluded value will bypass the provided function and continue matching
 through other cases.
-
-To import and use `not` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.not
-```
 
 **Example**
 
@@ -42,22 +34,9 @@ console.log(match("hi"))
 **Signature**
 
 ```ts
-export declare const not: <
-  R,
-  const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>,
-  Ret,
-  Fn extends (_: Exclude<R, Types.ExtractMatch<R, Types.PForExclude<P>>>) => Ret
->(
-  pattern: P,
-  f: Fn
-) => <I, F, A, Pr>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => Matcher<
-  I,
-  Types.AddOnly<F, Types.WhenMatch<R, P>>,
-  Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>,
-  A | ReturnType<Fn>,
-  Pr,
-  Ret
->
+declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Exclude<R, Types.ExtractMatch<R, Types.PForExclude<P>>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L909)
+
+Since v1.0.0

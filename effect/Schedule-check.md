@@ -1,4 +1,4 @@
-# check
+## check
 
 Filters schedule executions based on a custom condition.
 
@@ -12,19 +12,16 @@ usual; if it returns `false`, the schedule terminates.
 This is useful for conditional retries, custom stop conditions, or
 dynamically controlling execution based on observed inputs and outputs.
 
-To import and use `check` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.check
-```
+- `checkEffect` If you need to use an effectful test function.
 
 **Signature**
 
 ```ts
-export declare const check: {
-  <In, Out>(test: (input: In, output: Out) => boolean): <R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
-  <Out, In, R>(self: Schedule<Out, In, R>, test: (input: In, output: Out) => boolean): Schedule<Out, In, R>
-}
+declare const check: { <In, Out>(test: (input: In, output: Out) => boolean): <R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>; <Out, In, R>(self: Schedule<Out, In, R>, test: (input: In, output: Out) => boolean): Schedule<Out, In, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L371)
+
+Since v2.0.0

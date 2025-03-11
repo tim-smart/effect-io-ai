@@ -1,18 +1,11 @@
-# SemigroupXor
+## SemigroupXor
 
 `boolean` semigroup under exclusive disjunction.
-
-To import and use `SemigroupXor` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.SemigroupXor
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { SemigroupXor } from "@effect/typeclass/data/Boolean"
 
 assert.deepStrictEqual(SemigroupXor.combine(true, true), false)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(SemigroupXor.combine(false, false), false)
 **Signature**
 
 ```ts
-export declare const SemigroupXor: semigroup.Semigroup<boolean>
+declare const SemigroupXor: semigroup.Semigroup<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L88)
+
+Since v0.24.0

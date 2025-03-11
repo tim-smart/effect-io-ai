@@ -1,30 +1,22 @@
-# copy
+## copy
 
 Copies an array.
-
-To import and use `copy` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.copy
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers = [1, 2, 3]
-const copy = Array.copy(numbers)
-assert.deepStrictEqual(copy, [1, 2, 3])
+const result = Array.copy([1, 2, 3])
+console.log(result) // [1, 2, 3]
 ```
 
 **Signature**
 
 ```ts
-export declare const copy: {
-  <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>
-  <A>(self: ReadonlyArray<A>): Array<A>
-}
+declare const copy: { <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>; <A>(self: ReadonlyArray<A>): Array<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1910)
+
+Since v2.0.0

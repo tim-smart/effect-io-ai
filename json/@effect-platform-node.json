@@ -1,737 +1,306 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeCommandExecutor.js\"",
-    "description": "Re-exports all named exports from the \"./NodeCommandExecutor.js\" module as `NodeCommandExecutor`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeCommandExecutor from \"./NodeCommandExecutor.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeContext.js\"",
-    "description": "Re-exports all named exports from the \"./NodeContext.js\" module as `NodeContext`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeContext from \"./NodeContext.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeFileSystem.js\"",
-    "description": "Re-exports all named exports from the \"./NodeFileSystem.js\" module as `NodeFileSystem`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeHttpClient.js\"",
-    "description": "Re-exports all named exports from the \"./NodeHttpClient.js\" module as `NodeHttpClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeHttpClient from \"./NodeHttpClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeHttpPlatform.js\"",
-    "description": "Re-exports all named exports from the \"./NodeHttpPlatform.js\" module as `NodeHttpPlatform`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeHttpServer.js\"",
-    "description": "Re-exports all named exports from the \"./NodeHttpServer.js\" module as `NodeHttpServer`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeHttpServer from \"./NodeHttpServer.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeHttpServerRequest.js\"",
-    "description": "Re-exports all named exports from the \"./NodeHttpServerRequest.js\" module as `NodeHttpServerRequest`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeKeyValueStore.js\"",
-    "description": "Re-exports all named exports from the \"./NodeKeyValueStore.js\" module as `NodeKeyValueStore`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeKeyValueStore from \"./NodeKeyValueStore.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeMultipart.js\"",
-    "description": "Re-exports all named exports from the \"./NodeMultipart.js\" module as `NodeMultipart`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeMultipart from \"./NodeMultipart.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodePath.js\"",
-    "description": "Re-exports all named exports from the \"./NodePath.js\" module as `NodePath`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodePath from \"./NodePath.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeRuntime.js\"",
-    "description": "Re-exports all named exports from the \"./NodeRuntime.js\" module as `NodeRuntime`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeRuntime from \"./NodeRuntime.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeSink.js\"",
-    "description": "Re-exports all named exports from the \"./NodeSink.js\" module as `NodeSink`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeSink from \"./NodeSink.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeSocket.js\"",
-    "description": "Re-exports all named exports from the \"./NodeSocket.js\" module as `NodeSocket`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeSocket from \"./NodeSocket.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeStream.js\"",
-    "description": "Re-exports all named exports from the \"./NodeStream.js\" module as `NodeStream`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeStream from \"./NodeStream.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeTerminal.js\"",
-    "description": "Re-exports all named exports from the \"./NodeTerminal.js\" module as `NodeTerminal`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeTerminal from \"./NodeTerminal.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeWorker.js\"",
-    "description": "Re-exports all named exports from the \"./NodeWorker.js\" module as `NodeWorker`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeWorker from \"./NodeWorker.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./NodeWorkerRunner.js\"",
-    "description": "Re-exports all named exports from the \"./NodeWorkerRunner.js\" module as `NodeWorkerRunner`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"./Undici.js\"",
-    "description": "Re-exports all named exports from the \"./Undici.js\" module as `Undici`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Undici from \"./Undici.js\""
-  },
-  {
     "_tag": "Constant",
     "module": {
-      "name": "NodeCommandExecutor",
-      "path": [
-        "src",
-        "NodeCommandExecutor.ts"
-      ]
+      "name": "NodeCommandExecutor.ts",
+      "path": "src/NodeCommandExecutor.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<CommandExecutor, never, FileSystem>"
+    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeContext",
-      "path": [
-        "src",
-        "NodeContext.ts"
-      ]
+      "name": "NodeContext.ts",
+      "path": "src/NodeContext.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer.Layer<NodeContext, never, never>"
+    "signature": "declare const layer: Layer.Layer<NodeContext, never, never>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "NodeContext",
-      "path": [
-        "src",
-        "NodeContext.ts"
-      ]
+      "name": "NodeContext.ts",
+      "path": "src/NodeContext.ts"
     },
     "project": "@effect/platform-node",
     "name": "NodeContext",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type NodeContext =\n  | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager"
+    "signature": "type NodeContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeFileSystem",
-      "path": [
-        "src",
-        "NodeFileSystem.ts"
-      ]
+      "name": "NodeFileSystem.ts",
+      "path": "src/NodeFileSystem.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<FileSystem, never, never>"
+    "signature": "declare const layer: Layer<FileSystem, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ParcelWatcher",
-      "path": [
-        "src",
-        "NodeFileSystem",
-        "ParcelWatcher.ts"
-      ]
+      "name": "ParcelWatcher.ts",
+      "path": "src/NodeFileSystem/ParcelWatcher.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<WatchBackend, never, never>"
+    "signature": "declare const layer: Layer<WatchBackend, never, never>"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "UndiciRequestOptions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export declare class UndiciRequestOptions"
+    "signature": "declare class UndiciRequestOptions"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "HttpAgentTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export declare const HttpAgentTypeId: typeof HttpAgentTypeId"
+    "signature": "declare const HttpAgentTypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "HttpAgent",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export declare const HttpAgent: Context.Tag<HttpAgent, HttpAgent>"
+    "signature": "declare const HttpAgent: Context.Tag<HttpAgent, HttpAgent>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "makeAgent",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent, never, Scope.Scope>"
+    "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent, never, Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "agentLayer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export declare const agentLayer: Layer.Layer<HttpAgent, never, never>"
+    "signature": "declare const agentLayer: Layer.Layer<HttpAgent, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "makeAgentLayer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export declare const makeAgentLayer: (options?: Https.AgentOptions) => Layer.Layer<HttpAgent>"
+    "signature": "declare const makeAgentLayer: (options?: Https.AgentOptions) => Layer.Layer<HttpAgent>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>"
+    "signature": "declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<Client.HttpClient, never, never>"
+    "signature": "declare const layer: Layer.Layer<Client.HttpClient, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWithoutAgent",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>"
+    "signature": "declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "Dispatcher",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export declare const Dispatcher: Context.Tag<Dispatcher, Undici.Dispatcher>"
+    "signature": "declare const Dispatcher: Context.Tag<Dispatcher, Undici.Dispatcher>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "makeDispatcher",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>"
+    "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "dispatcherLayer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export declare const dispatcherLayer: Layer.Layer<Dispatcher, never, never>"
+    "signature": "declare const dispatcherLayer: Layer.Layer<Dispatcher, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "dispatcherLayerGlobal",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>"
+    "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "makeUndici",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const makeUndici: (dispatcher: Undici.Dispatcher) => Client.HttpClient"
+    "signature": "declare const makeUndici: (dispatcher: Undici.Dispatcher) => Client.HttpClient"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerUndici",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>"
+    "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerUndiciWithoutDispatcher",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>"
+    "signature": "declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "Dispatcher",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "export interface Dispatcher {\n  readonly _: unique symbol\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "HttpAgent",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -739,177 +308,153 @@
     "signature": "export interface HttpAgent {\n  readonly [HttpAgentTypeId]: typeof HttpAgentTypeId\n  readonly http: Http.Agent\n  readonly https: Https.Agent\n}"
   },
   {
+    "_tag": "Interface",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "Dispatcher",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "undici",
+    "signature": "export interface Dispatcher {\n  readonly _: unique symbol\n}"
+  },
+  {
     "_tag": "TypeAlias",
     "module": {
-      "name": "NodeHttpClient",
-      "path": [
-        "src",
-        "NodeHttpClient.ts"
-      ]
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "HttpAgentTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export type HttpAgentTypeId = typeof HttpAgentTypeId"
+    "signature": "type HttpAgentTypeId = typeof HttpAgentTypeId"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpPlatform",
-      "path": [
-        "src",
-        "NodeHttpPlatform.ts"
-      ]
+      "name": "NodeHttpPlatform.ts",
+      "path": "src/NodeHttpPlatform.ts"
     },
     "project": "@effect/platform-node",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: Effect.Effect<Platform.HttpPlatform, never, Etag.Generator | FileSystem.FileSystem>"
+    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, Etag.Generator | FileSystem.FileSystem>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpPlatform",
-      "path": [
-        "src",
-        "NodeHttpPlatform.ts"
-      ]
+      "name": "NodeHttpPlatform.ts",
+      "path": "src/NodeHttpPlatform.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>"
+    "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<Server.HttpServer, ServeError, Scope.Scope>"
+    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<Server.HttpServer, ServeError, Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "makeHandler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const makeHandler: { <R, E>(httpApp: App.Default<E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>>; <R, E, App extends App.Default<any, any>>(httpApp: App.Default<E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Effect.Context<App>, ServerRequest.HttpServerRequest | Scope.Scope>>; }"
+    "signature": "declare const makeHandler: { <R, E>(httpApp: App.Default<E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>>; <R, E, App extends App.Default<any, any>>(httpApp: App.Default<E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Effect.Context<App>, ServerRequest.HttpServerRequest | Scope.Scope>>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerServer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerServer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<Server.HttpServer, ServeError>"
+    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<Server.HttpServer, ServeError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ServeError>"
+    "signature": "declare const layer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ServeError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerConfig: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Config.Config.Wrap<Net.ListenOptions>) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ConfigError.ConfigError | ServeError>"
+    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Config.Config.Wrap<Net.ListenOptions>) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ConfigError.ConfigError | ServeError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerTest",
     "description": "Layer starting a server on a random port and producing an `HttpClient`\nwith prepended url of the running http server.",
     "deprecated": false,
     "examples": [
-      "import { HttpClient, HttpRouter, HttpServer } from \"@effect/platform\"\nimport { NodeHttpServer } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  yield* HttpServer.serveEffect(HttpRouter.empty)\n  const response = yield* HttpClient.get(\"/\")\n  assert.strictEqual(response.status, 404)\n}).pipe(Effect.provide(NodeHttpServer.layerTest))"
+      "```ts\nimport * as assert from \"node:assert\"\nimport { HttpClient, HttpRouter, HttpServer } from \"@effect/platform\"\nimport { NodeHttpServer } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  yield* HttpServer.serveEffect(HttpRouter.empty)\n  const response = yield* HttpClient.get(\"/\")\n  assert.strictEqual(response.status, 404)\n}).pipe(Effect.provide(NodeHttpServer.layerTest))\n```"
     ],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>"
+    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServer",
-      "path": [
-        "src",
-        "NodeHttpServer.ts"
-      ]
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerContext",
@@ -918,384 +463,216 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>"
+    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServerRequest",
-      "path": [
-        "src",
-        "NodeHttpServerRequest.ts"
-      ]
+      "name": "NodeHttpServerRequest.ts",
+      "path": "src/NodeHttpServerRequest.ts"
     },
     "project": "@effect/platform-node",
     "name": "toIncomingMessage",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toIncomingMessage: (self: ServerRequest.HttpServerRequest) => Http.IncomingMessage"
+    "signature": "declare const toIncomingMessage: (self: ServerRequest.HttpServerRequest) => Http.IncomingMessage"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeHttpServerRequest",
-      "path": [
-        "src",
-        "NodeHttpServerRequest.ts"
-      ]
+      "name": "NodeHttpServerRequest.ts",
+      "path": "src/NodeHttpServerRequest.ts"
     },
     "project": "@effect/platform-node",
     "name": "toServerResponse",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toServerResponse: (self: ServerRequest.HttpServerRequest) => Http.ServerResponse"
+    "signature": "declare const toServerResponse: (self: ServerRequest.HttpServerRequest) => Http.ServerResponse"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeKeyValueStore",
-      "path": [
-        "src",
-        "NodeKeyValueStore.ts"
-      ]
+      "name": "NodeKeyValueStore.ts",
+      "path": "src/NodeKeyValueStore.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerFileSystem",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeMultipart",
-      "path": [
-        "src",
-        "NodeMultipart.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"@effect/platform-node-shared/NodeMultipart\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeMultipart\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/platform-node-shared/NodeMultipart\""
+    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<Path, never, never>"
+    "signature": "declare const layer: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerPosix",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layerPosix: Layer<Path, never, never>"
+    "signature": "declare const layerPosix: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWin32",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layerWin32: Layer<Path, never, never>"
+    "signature": "declare const layerWin32: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeRuntime",
-      "path": [
-        "src",
-        "NodeRuntime.ts"
-      ]
+      "name": "NodeRuntime.ts",
+      "path": "src/NodeRuntime.ts"
     },
     "project": "@effect/platform-node",
     "name": "runMain",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "runtime",
-    "signature": "export declare const runMain: RunMain"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeSink",
-      "path": [
-        "src",
-        "NodeSink.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"@effect/platform-node-shared/NodeSink\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSink\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/platform-node-shared/NodeSink\""
+    "signature": "declare const runMain: RunMain"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWebSocketConstructor",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"@effect/platform-node-shared/NodeSocket\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocket\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/platform-node-shared/NodeSocket\""
+    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWebSocket",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"@effect/platform-node-shared/NodeStream\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeStream\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/platform-node-shared/NodeStream\""
+    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeTerminal",
-      "path": [
-        "src",
-        "NodeTerminal.ts"
-      ]
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
     },
     "project": "@effect/platform-node",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
+    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeTerminal",
-      "path": [
-        "src",
-        "NodeTerminal.ts"
-      ]
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<Terminal, never, never>"
+    "signature": "declare const layer: Layer<Terminal, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeWorker",
-      "path": [
-        "src",
-        "NodeWorker.ts"
-      ]
+      "name": "NodeWorker.ts",
+      "path": "src/NodeWorker.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerManager",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeWorker",
-      "path": [
-        "src",
-        "NodeWorker.ts"
-      ]
+      "name": "NodeWorker.ts",
+      "path": "src/NodeWorker.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWorker",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeWorker",
-      "path": [
-        "src",
-        "NodeWorker.ts"
-      ]
+      "name": "NodeWorker.ts",
+      "path": "src/NodeWorker.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeWorkerRunner",
-      "path": [
-        "src",
-        "NodeWorkerRunner.ts"
-      ]
+      "name": "NodeWorkerRunner.ts",
+      "path": "src/NodeWorkerRunner.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeWorkerRunner",
-      "path": [
-        "src",
-        "NodeWorkerRunner.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "launch",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "re-exports",
-    "signature": "export declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Undici",
-      "path": [
-        "src",
-        "Undici.ts"
-      ]
-    },
-    "project": "@effect/platform-node",
-    "name": "From \"undici\"",
-    "description": "Re-exports all named exports from the \"undici\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"undici\""
+    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
   }
 ]

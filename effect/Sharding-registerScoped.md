@@ -1,17 +1,13 @@
-# registerScoped
+## registerScoped
 
 Same as `register`, but will automatically call `unregister` when the `Scope` is terminated.
-
-To import and use `registerScoped` from the "Sharding" module:
-
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
-// Can be accessed like this
-Sharding.registerScoped
-```
 
 **Signature**
 
 ```ts
-export declare const registerScoped: Effect.Effect<void, never, Sharding | Scope.Scope>
+declare const registerScoped: Effect.Effect<void, never, Sharding | Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L120)
+
+Since v1.0.0

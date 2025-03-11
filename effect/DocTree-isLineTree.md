@@ -1,17 +1,13 @@
-# isLineTree
+## isLineTree
 
 Returns `true` if the specified `DocTree` is an `LineTree`, `false` otherwise.
-
-To import and use `isLineTree` from the "DocTree" module:
-
-```ts
-import * as DocTree from "@effect/printer/DocTree"
-// Can be accessed like this
-DocTree.isLineTree
-```
 
 **Signature**
 
 ```ts
-export declare const isLineTree: <A>(self: DocTree<A>) => self is LineTree<A>
+declare const isLineTree: <A>(self: DocTree<A>) => self is LineTree<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L175)
+
+Since v1.0.0

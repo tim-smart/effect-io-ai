@@ -1,17 +1,13 @@
-# vbar
+## vbar
 
 A document containing a single `|` character.
-
-To import and use `vbar` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.vbar
-```
 
 **Signature**
 
 ```ts
-export declare const vbar: Doc<never>
+declare const vbar: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L855)
+
+Since v1.0.0

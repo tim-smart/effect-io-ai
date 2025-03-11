@@ -1,21 +1,14 @@
-# nested
+## nested
 
 Returns a config that has this configuration nested as a property of the
 specified name.
 
-To import and use `nested` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.nested
-```
-
 **Signature**
 
 ```ts
-export declare const nested: {
-  (name: string): <A>(self: Config<A>) => Config<A>
-  <A>(self: Config<A>, name: string): Config<A>
-}
+declare const nested: { (name: string): <A>(self: Config<A>) => Config<A>; <A>(self: Config<A>, name: string): Config<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L271)
+
+Since v2.0.0

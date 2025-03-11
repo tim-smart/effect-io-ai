@@ -1,19 +1,12 @@
-# width
+## width
 
 The `width` combinator makes the column width of a document available to the
 document while rendering.
 
-To import and use `width` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.width
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
@@ -48,8 +41,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const width: {
-  <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>
-  <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>
-}
+declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1567)
+
+Since v1.0.0

@@ -1,10 +1,10 @@
-# orDieWith
+## orDieWith
 
 Converts an effect's failure into a fiber termination with a custom error.
 
 **Details**
 
-The `orDieWith` function behaves like {@link orDie}, but it allows you to provide a mapping
+The `orDieWith` function behaves like `orDie`, but it allows you to provide a mapping
 function to transform the error before terminating the fiber. This is useful for cases where
 you want to include a more detailed or user-friendly error when the failure is propagated
 as a defect.
@@ -14,14 +14,6 @@ as a defect.
 Use `orDieWith` when failures should terminate the fiber as defects, and you want to customize
 the error for clarity or debugging purposes.
 
-To import and use `orDieWith` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.orDieWith
-```
-
 **Example**
 
 ```ts
@@ -29,11 +21,16 @@ Effect.orDieWith
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
-  b === 0 ? Effect.fail(new Error("Cannot divide by zero")) : Effect.succeed(a / b)
+  b === 0
+    ? Effect.fail(new Error("Cannot divide by zero"))
+    : Effect.succeed(a / b)
 
 //      ┌─── Effect<number, never, never>
 //      ▼
-const program = Effect.orDieWith(divide(1, 0), (error) => new Error(`defect: ${error.message}`))
+const program = Effect.orDieWith(
+  divide(1, 0),
+  (error) => new Error(`defect: ${error.message}`)
+)
 
 // Effect.runPromise(program).catch(console.error)
 // Output:
@@ -41,11 +38,16 @@ const program = Effect.orDieWith(divide(1, 0), (error) => new Error(`defect: ${e
 //   ...stack trace...
 ```
 
+**See**
+
+- `orDie` if you don't need to customize the error.
+
 **Signature**
 
 ```ts
-export declare const orDieWith: {
-  <E>(f: (error: E) => unknown): <A, R>(self: Effect<A, E, R>) => Effect<A, never, R>
-  <A, E, R>(self: Effect<A, E, R>, f: (error: E) => unknown): Effect<A, never, R>
-}
+declare const orDieWith: { <E>(f: (error: E) => unknown): <A, R>(self: Effect<A, E, R>) => Effect<A, never, R>; <A, E, R>(self: Effect<A, E, R>, f: (error: E) => unknown): Effect<A, never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11109)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# max
+## max
 
 Returns the maximum between two `bigint`s.
-
-To import and use `max` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.max
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { max } from "effect/BigInt"
 
 assert.deepStrictEqual(max(2n, 3n), 3n)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(max(2n, 3n), 3n)
 **Signature**
 
 ```ts
-export declare const max: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint }
+declare const max: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L367)
+
+Since v2.0.0

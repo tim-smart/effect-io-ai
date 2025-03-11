@@ -1,18 +1,11 @@
-# keys
+## keys
 
 Retrieves the object keys that are strings in a typed manner
-
-To import and use `keys` from the "Struct" module:
-
-```ts
-import * as Struct from "effect/Struct"
-// Can be accessed like this
-Struct.keys
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Struct } from "effect"
 
 const symbol: unique symbol = Symbol()
@@ -31,5 +24,9 @@ assert.deepStrictEqual(keys, ["a", "b"])
 **Signature**
 
 ```ts
-export declare const keys: <T extends {}>(o: T) => Array<keyof T & string>
+declare const keys: <T extends {}>(o: T) => Array<(keyof T) & string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L221)
+
+Since v3.6.0

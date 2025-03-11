@@ -1,4 +1,4 @@
-# containsWith
+## containsWith
 
 Returns a function that checks if an `Option` contains a specified value,
 using a provided equivalence function.
@@ -10,14 +10,6 @@ value. It uses an equivalence function `isEquivalent` to compare the value
 inside the `Option` to the provided value. If the `Option` is `Some` and the
 equivalence function returns `true`, the result is `true`. If the `Option` is
 `None` or the values are not equivalent, the result is `false`.
-
-To import and use `containsWith` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.containsWith
-```
 
 **Example**
 
@@ -36,11 +28,16 @@ console.log(Option.none().pipe(contains(2)))
 // Output: false
 ```
 
+**See**
+
+- `contains` for a version that uses the default `Equivalence`.
+
 **Signature**
 
 ```ts
-export declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => {
-  (a: A): (self: Option<A>) => boolean
-  (self: Option<A>, a: A): boolean
-}
+declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Option<A>) => boolean; (self: Option<A>, a: A): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1854)
+
+Since v2.0.0

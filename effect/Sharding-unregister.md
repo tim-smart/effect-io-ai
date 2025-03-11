@@ -1,17 +1,13 @@
-# unregister
+## unregister
 
 Notify the shard manager that shards must be unassigned from this pod.
-
-To import and use `unregister` from the "Sharding" module:
-
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
-// Can be accessed like this
-Sharding.unregister
-```
 
 **Signature**
 
 ```ts
-export declare const unregister: Effect.Effect<void, never, Sharding>
+declare const unregister: Effect.Effect<void, never, Sharding>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L112)
+
+Since v1.0.0

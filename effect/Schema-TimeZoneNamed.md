@@ -1,11 +1,13 @@
-# TimeZoneNamed
+## TimeZoneNamed
 
 Defines a schema that attempts to convert a `string` to a `TimeZone.Named` instance using the `DateTime.zoneUnsafeMakeNamed` constructor.
 
-To import and use `TimeZoneNamed` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.TimeZoneNamed
+declare class TimeZoneNamed
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6957)
+
+Since v3.10.0

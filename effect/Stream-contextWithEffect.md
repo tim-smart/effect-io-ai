@@ -1,19 +1,13 @@
-# contextWithEffect
+## contextWithEffect
 
 Accesses the context of the stream in the context of an effect.
-
-To import and use `contextWithEffect` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.contextWithEffect
-```
 
 **Signature**
 
 ```ts
-export declare const contextWithEffect: <R0, A, E, R>(
-  f: (env: Context.Context<R0>) => Effect.Effect<A, E, R>
-) => Stream<A, E, R0 | R>
+declare const contextWithEffect: <R0, A, E, R>(f: (env: Context.Context<R0>) => Effect.Effect<A, E, R>) => Stream<A, E, R0 | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1538)
+
+Since v2.0.0

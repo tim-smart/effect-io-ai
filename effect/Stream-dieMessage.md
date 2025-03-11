@@ -1,17 +1,13 @@
-# dieMessage
+## dieMessage
 
 The stream that dies with an exception described by `message`.
-
-To import and use `dieMessage` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.dieMessage
-```
 
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Stream<never>
+declare const dieMessage: (message: string) => Stream<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1265)
+
+Since v2.0.0

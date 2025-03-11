@@ -1,4 +1,4 @@
-# RuntimeException
+## RuntimeException
 
 An error representing a runtime error.
 
@@ -7,10 +7,15 @@ An error representing a runtime error.
 This interface is used for errors that occur at runtime but are still
 considered recoverable or typed.
 
-To import and use `RuntimeException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.RuntimeException
+export interface RuntimeException extends YieldableError {
+  readonly _tag: "RuntimeException"
+  readonly [RuntimeExceptionTypeId]: RuntimeExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L338)
+
+Since v2.0.0

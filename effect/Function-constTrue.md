@@ -1,18 +1,11 @@
-# constTrue
+## constTrue
 
 A thunk that returns always `true`.
-
-To import and use `constTrue` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.constTrue
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { constTrue } from "effect/Function"
 
 assert.deepStrictEqual(constTrue(), true)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(constTrue(), true)
 **Signature**
 
 ```ts
-export declare const constTrue: LazyArg<boolean>
+declare const constTrue: LazyArg<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L286)
+
+Since v2.0.0

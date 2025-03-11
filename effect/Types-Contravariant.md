@@ -1,11 +1,13 @@
-# Contravariant
+## Contravariant
 
 Contravariant helper.
 
-To import and use `Contravariant` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Contravariant
+type Contravariant<A> = (_: A) => void
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L311)
+
+Since v2.0.0

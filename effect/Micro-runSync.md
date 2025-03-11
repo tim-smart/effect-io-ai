@@ -1,18 +1,14 @@
-# runSync
+## runSync
 
 Attempt to execute the `Micro` effect synchronously and return the success
 value.
 
-To import and use `runSync` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.runSync
-```
-
 **Signature**
 
 ```ts
-export declare const runSync: <A, E>(effect: Micro<A, E>) => A
+declare const runSync: <A, E>(effect: Micro<A, E>) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4304)
+
+Since v3.4.0

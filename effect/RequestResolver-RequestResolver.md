@@ -1,4 +1,4 @@
-# RequestResolver
+## RequestResolver
 
 The `RequestResolver<A, R>` interface requires an environment `R` and handles
 the execution of requests of type `A`.
@@ -19,10 +19,24 @@ corresponding queries. It is imperative that implementations resolve all the
 requests they receive. Failing to do so will lead to a `QueryFailure` error
 during query execution.
 
-To import and use `RequestResolver` from the "RequestResolver" module:
+**Signature**
 
 ```ts
-import * as RequestResolver from "effect/RequestResolver"
-// Can be accessed like this
-RequestResolver.RequestResolver
+export interface RequestResolver<in A, out R = never> extends RequestResolver.Variance<A, R>, Equal.Equal, Pipeable {
+  /**
+   * Execute a collection of requests. The outer `Array` represents batches
+   * of requests that must be performed sequentially. The inner `Array`
+   * represents a batch of requests that can be performed in parallel.
+   */
+  runAll(requests: Array<Array<Request.Entry<A>>>): Effect.Effect<void, never, R>
+
+  /**
+   * Identify the data source using the specific identifier
+   */
+  identified(...identifiers: Array<unknown>): RequestResolver<A, R>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L52)
+
+Since v2.0.0

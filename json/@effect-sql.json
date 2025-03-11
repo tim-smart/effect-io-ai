@@ -1,304 +1,68 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./Migrator.js\"",
-    "description": "Re-exports all named exports from the \"./Migrator.js\" module as `Migrator`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Migrator from \"./Migrator.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./Model.js\"",
-    "description": "Re-exports all named exports from the \"./Model.js\" module as `Model`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Model from \"./Model.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlClient.js\"",
-    "description": "Re-exports all named exports from the \"./SqlClient.js\" module as `SqlClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlClient from \"./SqlClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlConnection.js\"",
-    "description": "Re-exports all named exports from the \"./SqlConnection.js\" module as `SqlConnection`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlConnection from \"./SqlConnection.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlError.js\"",
-    "description": "Re-exports all named exports from the \"./SqlError.js\" module as `SqlError`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlError from \"./SqlError.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlEventJournal.js\"",
-    "description": "Re-exports all named exports from the \"./SqlEventJournal.js\" module as `SqlEventJournal`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlEventJournal from \"./SqlEventJournal.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlEventLogServer.js\"",
-    "description": "Re-exports all named exports from the \"./SqlEventLogServer.js\" module as `SqlEventLogServer`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlEventLogServer from \"./SqlEventLogServer.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlResolver.js\"",
-    "description": "Re-exports all named exports from the \"./SqlResolver.js\" module as `SqlResolver`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlResolver from \"./SqlResolver.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlSchema.js\"",
-    "description": "Re-exports all named exports from the \"./SqlSchema.js\" module as `SqlSchema`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlSchema from \"./SqlSchema.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./SqlStream.js\"",
-    "description": "Re-exports all named exports from the \"./SqlStream.js\" module as `SqlStream`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as SqlStream from \"./SqlStream.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "From \"./Statement.js\"",
-    "description": "Re-exports all named exports from the \"./Statement.js\" module as `Statement`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Statement from \"./Statement.js\""
-  },
-  {
     "_tag": "Class",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
     "name": "MigrationError",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "export declare class MigrationError"
+    "signature": "declare class MigrationError"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const make: <RD = never>({ dumpSchema }: { dumpSchema?: (path: string, migrationsTable: string) => Effect.Effect<void, MigrationError, RD>; }) => <R2 = never>({ loader, schemaDirectory, table }: MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, MigrationError | SqlError, Client.SqlClient | RD | R2>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
     "name": "fromGlob",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": null
+    "signature": "declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
     "name": "fromBabelGlob",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": null
+    "signature": "declare const fromBabelGlob: (migrations: Record<string, any>) => Loader"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Migration",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export interface Migration {\n  readonly id: number\n  readonly name: string\n  readonly createdAt: Date\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
     "name": "MigratorOptions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -306,68 +70,66 @@
     "signature": "export interface MigratorOptions<R = never> {\n  readonly loader: Loader<R>\n  readonly schemaDirectory?: string\n  readonly table?: string\n}"
   },
   {
-    "_tag": "TypeAlias",
+    "_tag": "Interface",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
-    "name": "Loader",
-    "description": null,
+    "name": "Migration",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type Loader<R = never> = Effect.Effect<\n  ReadonlyArray<ResolvedMigration>,\n  MigrationError,\n  R\n>"
+    "signature": "export interface Migration {\n  readonly id: number\n  readonly name: string\n  readonly createdAt: Date\n}"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Migrator",
-      "path": [
-        "src",
-        "Migrator.ts"
-      ]
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
     },
     "project": "@effect/sql",
-    "name": "ResolvedMigration",
-    "description": null,
+    "name": "Loader",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type ResolvedMigration = readonly [\n  id: number,\n  name: string,\n  load: Effect.Effect<any>\n]"
+    "signature": "type Loader<R> = Effect.Effect<\n  ReadonlyArray<ResolvedMigration>,\n  MigrationError,\n  R\n>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Migrator.ts",
+      "path": "src/Migrator.ts"
+    },
+    "project": "@effect/sql",
+    "name": "ResolvedMigration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type ResolvedMigration = readonly [\n  id: number,\n  name: string,\n  load: Effect.Effect<any>\n]"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "FileSystem",
-      "path": [
-        "src",
-        "Migrator",
-        "FileSystem.ts"
-      ]
+      "name": "FileSystem.ts",
+      "path": "src/Migrator/FileSystem.ts"
     },
     "project": "@effect/sql",
     "name": "fromFileSystem",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": null
+    "signature": "declare const fromFileSystem: (directory: string) => Loader<FileSystem>"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "BooleanFromNumber",
@@ -376,52 +138,41 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": "export declare class BooleanFromNumber"
+    "signature": "declare class BooleanFromNumber"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "fields",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "fields",
-    "signature": "export declare const fields: <A extends VariantSchema.Struct<any>>(self: A) => A[VariantSchema.TypeId]"
+    "signature": "declare const fields: <A extends VariantSchema.Struct<any>>(self: A) => A[VariantSchema.TypeId]"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "Override",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "overrideable",
-    "signature": "export declare const Override: <A>(value: A) => A & Brand<\"Override\">"
+    "signature": "declare const Override: <A>(value: A) => A & Brand<\"Override\">"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "FieldOption",
@@ -430,34 +181,27 @@
     "examples": [],
     "since": "1.0.0",
     "category": "optional",
-    "signature": "export declare const FieldOption: <Field extends VariantSchema.Field<any> | Schema.Schema.Any>(self: Field) => Field extends Schema.Schema.Any ? FieldOption<Field> : Field extends VariantSchema.Field<infer S> ? VariantSchema.Field<{ readonly [K in keyof S]: S[K] extends Schema.Schema.Any ? K extends VariantsDatabase ? Schema.OptionFromNullOr<S[K]> : Schema.optionalWith<S[K], { as: \"Option\"; nullable: true; }> : never; }> : never"
+    "signature": "declare const FieldOption: <Field extends VariantSchema.Field<any> | Schema.Schema.Any>(self: Field) => Field extends Schema.Schema.Any ? FieldOption<Field> : Field extends VariantSchema.Field<infer S> ? VariantSchema.Field<{ readonly [K in keyof S]: S[K] extends Schema.Schema.Any ? K extends VariantsDatabase ? Schema.OptionFromNullOr<S[K]> : Schema.optionalWith<S[K], { as: \"Option\"; nullable: true; }> : never; }> : never"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeFromDate",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeFromDate: DateTimeFromDate"
+    "signature": "declare const DateTimeFromDate: DateTimeFromDate"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "Date",
@@ -466,88 +210,69 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const Date: Date"
+    "signature": "declare const Date: Date"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateWithNow",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
+    "signature": "declare const DateWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeWithNow",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
+    "signature": "declare const DateTimeWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeFromDateWithNow",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeFromDateWithNow: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date, never>"
+    "signature": "declare const DateTimeFromDateWithNow: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeFromNumberWithNow",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeFromNumberWithNow: VariantSchema.Overrideable<DateTime.Utc, number, never>"
+    "signature": "declare const DateTimeFromNumberWithNow: VariantSchema.Overrideable<DateTime.Utc, number, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeInsert",
@@ -556,16 +281,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeInsert: DateTimeInsert"
+    "signature": "declare const DateTimeInsert: DateTimeInsert"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeInsertFromDate",
@@ -574,16 +296,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeInsertFromDate: DateTimeInsertFromDate"
+    "signature": "declare const DateTimeInsertFromDate: DateTimeInsertFromDate"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeInsertFromNumber",
@@ -592,16 +311,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber"
+    "signature": "declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeUpdate",
@@ -610,16 +326,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeUpdate: DateTimeUpdate"
+    "signature": "declare const DateTimeUpdate: DateTimeUpdate"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeUpdateFromDate",
@@ -628,16 +341,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeUpdateFromDate: DateTimeUpdateFromDate"
+    "signature": "declare const DateTimeUpdateFromDate: DateTimeUpdateFromDate"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "DateTimeUpdateFromNumber",
@@ -646,180 +356,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Class",
-    "description": "A base class used for creating domain model schemas.\n\nIt supports common variants for database and JSON apis.",
-    "deprecated": false,
-    "examples": [
-      "import { Schema } from \"effect\"\nimport { Model } from \"@effect/sql\"\n\nexport const GroupId = Schema.Number.pipe(Schema.brand(\"GroupId\"))\n\nexport class Group extends Model.Class<Group>(\"Group\")({\n  id: Model.Generated(GroupId),\n  name: Schema.NonEmptyTrimmedString,\n  createdAt: Model.DateTimeInsertFromDate,\n  updatedAt: Model.DateTimeUpdateFromDate\n}) {}\n\n// schema used for selects\nGroup\n\n// schema used for inserts\nGroup.insert\n\n// schema used for updates\nGroup.update\n\n// schema used for json api\nGroup.json\nGroup.jsonCreate\nGroup.jsonUpdate\n\n// you can also turn them into classes\nclass GroupJson extends Schema.Class<GroupJson>(\"GroupJson\")(Group.json) {\n  get upperName() {\n    return this.name.toUpperCase()\n  }\n}"
-    ],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const Class: <Self>(identifier: string) => <const Fields extends VariantSchema.Struct.Fields>(fields: Fields & VariantSchema.Struct.Validate<Fields, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">, annotations?: Schema.Annotations.Schema<Self>) => [Self] extends [never] ? \"Missing `Self` generic - use `class Self extends Class<Self>()({ ... })`\" : VariantSchema.Class<Self, Fields, { [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }, Schema.Struct.Type<{ [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }>, Schema.Struct.Encoded<{ [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }>, Schema.Schema.Context<{ [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }[keyof VariantSchema.ExtractFields<\"select\", Fields, true>]>, Schema.Struct.Constructor<{ [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }>> & { readonly [V in \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\"]: VariantSchema.Extract<V, VariantSchema.Struct<Fields>>; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "extract",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "extraction",
-    "signature": "export declare const extract: { <V>(variant: V): <A extends VariantSchema.Struct<any>>(self: A) => VariantSchema.Extract<V, A, V extends \"select\" ? true : false>; <V, A>(self: A, variant: V): VariantSchema.Extract<V, A, V extends \"select\" ? true : false>; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Field",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "fields",
-    "signature": "export declare const Field: <A>(config: A & { readonly [K in Exclude<keyof A, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">]: never; }) => VariantSchema.Field<A>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "fieldEvolve",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "fields",
-    "signature": "export declare const fieldEvolve: { <Self, Mapping>(f: Mapping): (self: Self) => VariantSchema.Field<Self extends VariantSchema.Field<infer S> ? { readonly [K in keyof S]: K extends keyof Mapping ? Mapping[K] extends (arg: any) => any ? ReturnType<Mapping[K]> : S[K] : S[K]; } : { readonly [K in \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\"]: K extends keyof Mapping ? Mapping[K] extends (arg: any) => any ? ReturnType<Mapping[K]> : Self : Self; }>; <Self, Mapping_1>(self: Self, f: Mapping_1): VariantSchema.Field<Self extends VariantSchema.Field<infer S> ? { readonly [K in keyof S]: K extends keyof Mapping_1 ? Mapping_1[K] extends (arg: any) => any ? ReturnType<Mapping_1[K]> : S[K] : S[K]; } : { readonly [K in \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\"]: K extends keyof Mapping_1 ? Mapping_1[K] extends (arg: any) => any ? ReturnType<Mapping_1[K]> : Self : Self; }>; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "FieldExcept",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "fields",
-    "signature": "export declare const FieldExcept: <Keys>(...keys: Keys) => <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => VariantSchema.Field<{ readonly [K in Exclude<\"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\", Keys[number]>]: S; }>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "fieldFromKey",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "fields",
-    "signature": "export declare const fieldFromKey: { <Self, Mapping_2>(mapping: Mapping_2): (self: Self) => VariantSchema.Field<Self extends VariantSchema.Field<infer S> ? { readonly [K in keyof S]: K extends keyof Mapping_2 ? Mapping_2[K] extends string ? VariantSchema.fromKey.Rename<S[K], Mapping_2[K]> : S[K] : S[K]; } : { readonly [K in \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\"]: K extends keyof Mapping_2 ? Mapping_2[K] extends string ? VariantSchema.fromKey.Rename<Self, Mapping_2[K]> : Self : Self; }>; <Self, Mapping_3>(self: Self, mapping: Mapping_3): VariantSchema.Field<Self extends VariantSchema.Field<infer S> ? { readonly [K in keyof S]: K extends keyof Mapping_3 ? Mapping_3[K] extends string ? VariantSchema.fromKey.Rename<S[K], Mapping_3[K]> : S[K] : S[K]; } : { readonly [K in \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\"]: K extends keyof Mapping_3 ? Mapping_3[K] extends string ? VariantSchema.fromKey.Rename<Self, Mapping_3[K]> : Self : Self; }>; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "FieldOnly",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "fields",
-    "signature": "export declare const FieldOnly: <Keys>(...keys: Keys) => <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => VariantSchema.Field<{ readonly [K in Keys[number]]: S; }>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Struct",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const Struct: <A>(fields: A & VariantSchema.Struct.Validate<A, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">) => VariantSchema.Struct<A>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Union",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const Union: <Members>(...members: Members) => VariantSchema.Union<Members> & VariantSchema.Union.Variants<Members, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">"
+    "signature": "declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "Generated",
@@ -828,16 +371,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": null
+    "signature": "declare const Generated: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Generated<S>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "GeneratedByApp",
@@ -846,16 +386,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": null
+    "signature": "declare const GeneratedByApp: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => GeneratedByApp<S>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "Sensitive",
@@ -864,16 +401,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "sensitive",
-    "signature": null
+    "signature": "declare const Sensitive: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Sensitive<S>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "JsonFromString",
@@ -882,34 +416,27 @@
     "examples": [],
     "since": "1.0.0",
     "category": "json",
-    "signature": null
+    "signature": "declare const JsonFromString: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => JsonFromString<S>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "UuidV4WithGenerate",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": null
+    "signature": "declare const UuidV4WithGenerate: <B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "UuidV4Insert",
@@ -918,16 +445,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": null
+    "signature": "declare const UuidV4Insert: <const B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => UuidV4Insert<B>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "makeRepository",
@@ -936,16 +460,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "repository",
-    "signature": null
+    "signature": "declare const makeRepository: <S extends Any, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly update: (update: S[\"update\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly updateVoid: (update: S[\"update\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>, never, S[\"Context\"] | Schema.Schema.Context<S[\"fields\"][Id]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void, never, Schema.Schema.Context<S[\"fields\"][Id]>>; }, never, SqlClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "makeDataLoaders",
@@ -954,160 +475,55 @@
     "examples": [],
     "since": "1.0.0",
     "category": "repository",
-    "signature": null
+    "signature": "declare const makeDataLoaders: <S extends AnyNoContext, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; readonly window: DurationInput; readonly maxBatchSize?: number | undefined; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void>; }, never, SqlClient | Scope>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
-    "name": "Date",
-    "description": null,
+    "name": "Generated",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface Date extends Schema.transformOrFail<typeof Schema.String, typeof Schema.DateTimeUtcFromSelf> {}"
+    "category": "generated",
+    "signature": "export interface Generated<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly update: S\n    readonly json: S\n  }>\n{}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
-    "name": "DateTimeFromDate",
-    "description": null,
+    "name": "GeneratedByApp",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeFromDate extends\n  Schema.transform<\n    typeof Schema.ValidDateFromSelf,\n    typeof Schema.DateTimeUtcFromSelf\n  >\n{}"
+    "category": "generated",
+    "signature": "export interface GeneratedByApp<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: S\n      readonly insert: S\n      readonly update: S\n      readonly json: S\n    }>\n{}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
-    "name": "DateTimeInsert",
-    "description": null,
+    "name": "Sensitive",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeInsert extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+    "category": "sensitive",
+    "signature": "export interface Sensitive<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly insert: S\n    readonly update: S\n  }>\n{}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "DateTimeInsertFromDate",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeInsertFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "DateTimeInsertFromNumber",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeInsertFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "DateTimeUpdate",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeUpdate extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "DateTimeUpdateFromDate",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeUpdateFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "DateTimeUpdateFromNumber",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "date & time",
-    "signature": "export interface DateTimeUpdateFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "FieldOption",
@@ -1121,51 +537,123 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
-    "name": "Generated",
-    "description": null,
+    "name": "DateTimeFromDate",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "generated",
-    "signature": "export interface Generated<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly update: S\n    readonly json: S\n  }>\n{}"
+    "category": "date & time",
+    "signature": "export interface DateTimeFromDate extends\n  Schema.transform<\n    typeof Schema.ValidDateFromSelf,\n    typeof Schema.DateTimeUtcFromSelf\n  >\n{}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
-    "name": "GeneratedByApp",
-    "description": null,
+    "name": "Date",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "generated",
-    "signature": "export interface GeneratedByApp<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: S\n      readonly insert: S\n      readonly update: S\n      readonly json: S\n    }>\n{}"
+    "category": "date & time",
+    "signature": "export interface Date extends Schema.transformOrFail<typeof Schema.String, typeof Schema.DateTimeUtcFromSelf> {}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeInsert",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeInsert extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeInsertFromDate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeInsertFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeInsertFromNumber",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeInsertFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeUpdate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeUpdate extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeUpdateFromDate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeUpdateFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "DateTimeUpdateFromNumber",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "date & time",
+    "signature": "export interface DateTimeUpdateFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "JsonFromString",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1175,33 +663,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Sensitive",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "sensitive",
-    "signature": "export interface Sensitive<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly insert: S\n    readonly update: S\n  }>\n{}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "UuidV4Insert",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1211,177 +677,137 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "Any",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type Any = Schema.Schema.Any & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.Any\n  readonly update: Schema.Schema.Any\n  readonly json: Schema.Schema.Any\n  readonly jsonCreate: Schema.Schema.Any\n  readonly jsonUpdate: Schema.Schema.Any\n}"
+    "signature": "type Any = Schema.Schema.Any & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.Any\n  readonly update: Schema.Schema.Any\n  readonly json: Schema.Schema.Any\n  readonly jsonCreate: Schema.Schema.Any\n  readonly jsonUpdate: Schema.Schema.Any\n}"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "AnyNoContext",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type AnyNoContext = Schema.Schema.AnyNoContext & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.AnyNoContext\n  readonly update: Schema.Schema.AnyNoContext\n  readonly json: Schema.Schema.AnyNoContext\n  readonly jsonCreate: Schema.Schema.AnyNoContext\n  readonly jsonUpdate: Schema.Schema.AnyNoContext\n}"
+    "signature": "type AnyNoContext = Schema.Schema.AnyNoContext & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.AnyNoContext\n  readonly update: Schema.Schema.AnyNoContext\n  readonly json: Schema.Schema.AnyNoContext\n  readonly jsonCreate: Schema.Schema.AnyNoContext\n  readonly jsonUpdate: Schema.Schema.AnyNoContext\n}"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "VariantsDatabase",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type VariantsDatabase = \"select\" | \"insert\" | \"update\""
+    "signature": "type VariantsDatabase = \"select\" | \"insert\" | \"update\""
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Model",
-      "path": [
-        "src",
-        "Model.ts"
-      ]
+      "name": "Model.ts",
+      "path": "src/Model.ts"
     },
     "project": "@effect/sql",
     "name": "VariantsJson",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type VariantsJson = \"json\" | \"jsonCreate\" | \"jsonUpdate\""
+    "signature": "type VariantsJson = \"json\" | \"jsonCreate\" | \"jsonUpdate\""
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "SqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export declare const SqlClient: Tag<SqlClient, SqlClient>"
+    "signature": "declare const SqlClient: Tag<SqlClient, SqlClient>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: (options: SqlClient.MakeOptions) => Effect<SqlClient, never, Reactivity>"
+    "signature": "declare const make: (options: SqlClient.MakeOptions) => Effect<SqlClient, never, Reactivity>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "makeWithTransaction",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "transactions",
-    "signature": "export declare const makeWithTransaction: <I, S>(options: { readonly transactionTag: Tag<I, readonly [conn: S, counter: number]>; readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>; readonly acquireConnection: Effect<readonly [CloseableScope | undefined, S], SqlError>; readonly begin: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly savepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; readonly commit: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollback: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollbackSavepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; }) => <R, E, A>(effect: Effect<A, E, R>) => Effect<A, E | SqlError, R>"
+    "signature": "declare const makeWithTransaction: <I, S>(options: { readonly transactionTag: Tag<I, readonly [conn: S, counter: number]>; readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>; readonly acquireConnection: Effect<readonly [CloseableScope | undefined, S], SqlError>; readonly begin: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly savepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; readonly commit: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollback: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollbackSavepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; }) => <R, E, A>(effect: Effect<A, E, R>) => Effect<A, E | SqlError, R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "TransactionConnection",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const TransactionConnection: Tag<TransactionConnection, readonly [conn: Connection, depth: number]>"
+    "signature": "declare const TransactionConnection: Tag<TransactionConnection, readonly [conn: Connection, depth: number]>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "SqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1391,15 +817,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "TransactionConnection",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1409,51 +831,53 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "SqlClient",
-      "path": [
-        "src",
-        "SqlClient.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
     },
     "project": "@effect/sql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "SqlConnection",
-      "path": [
-        "src",
-        "SqlConnection.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Connection",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "tag",
-    "signature": "export declare const Connection: Context.Tag<Connection, Connection>"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "SqlConnection",
-      "path": [
-        "src",
-        "SqlConnection.ts"
-      ]
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlClient.MakeOptions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface MakeOptions {\n    readonly acquirer: Connection.Acquirer\n    readonly compiler: Compiler\n    readonly transactionAcquirer?: Connection.Acquirer\n    readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>\n    readonly beginTransaction?: string | undefined\n    readonly rollback?: string | undefined\n    readonly commit?: string | undefined\n    readonly savepoint?: ((name: string) => string) | undefined\n    readonly rollbackSavepoint?: ((name: string) => string) | undefined\n    readonly transformRows?: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n    readonly reactiveMailbox?: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect<A, E, R>\n    ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n  }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqlConnection.ts",
+      "path": "src/SqlConnection.ts"
     },
     "project": "@effect/sql",
     "name": "Connection",
-    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tag",
+    "signature": "declare const Connection: Context.Tag<Connection, Connection>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqlConnection.ts",
+      "path": "src/SqlConnection.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Connection",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1463,209 +887,162 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "SqlConnection",
-      "path": [
-        "src",
-        "SqlConnection.ts"
-      ]
+      "name": "SqlConnection.ts",
+      "path": "src/SqlConnection.ts"
     },
     "project": "@effect/sql",
     "name": "Row",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type Row = { readonly [column: string]: Primitive }"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "SqlError",
-      "path": [
-        "src",
-        "SqlError.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "ResultLengthMismatch",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export declare class ResultLengthMismatch"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "SqlError",
-      "path": [
-        "src",
-        "SqlError.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "SqlError",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export declare class SqlError"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "SqlError",
-      "path": [
-        "src",
-        "SqlError.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "SqlErrorTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export declare const SqlErrorTypeId: typeof SqlErrorTypeId"
+    "signature": "type Row = { readonly [column: string]: Primitive }"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "SqlError",
-      "path": [
-        "src",
-        "SqlError.ts"
-      ]
+      "name": "SqlConnection.ts",
+      "path": "src/SqlConnection.ts"
     },
     "project": "@effect/sql",
-    "name": "SqlErrorTypeId",
-    "description": null,
+    "name": "Connection.Acquirer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type Acquirer = Effect<Connection, SqlError, Scope>"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SqlError.ts",
+      "path": "src/SqlError.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlError",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export type SqlErrorTypeId = typeof SqlErrorTypeId"
+    "signature": "declare class SqlError"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SqlError.ts",
+      "path": "src/SqlError.ts"
+    },
+    "project": "@effect/sql",
+    "name": "ResultLengthMismatch",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare class ResultLengthMismatch"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqlError.ts",
+      "path": "src/SqlError.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const SqlErrorTypeId: unique symbol"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SqlError.ts",
+      "path": "src/SqlError.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type SqlErrorTypeId = typeof SqlErrorTypeId"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlEventJournal",
-      "path": [
-        "src",
-        "SqlEventJournal.ts"
-      ]
+      "name": "SqlEventJournal.ts",
+      "path": "src/SqlEventJournal.ts"
     },
     "project": "@effect/sql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options?: { readonly entryTable?: string; readonly remotesTable?: string; }) => Effect.Effect<typeof EventJournal.EventJournal.Service, SqlError, SqlClient.SqlClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlEventJournal",
-      "path": [
-        "src",
-        "SqlEventJournal.ts"
-      ]
+      "name": "SqlEventJournal.ts",
+      "path": "src/SqlEventJournal.ts"
     },
     "project": "@effect/sql",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (options?: { readonly eventLogTable?: string; readonly remotesTable?: string; }) => Layer.Layer<EventJournal.EventJournal, SqlError, SqlClient.SqlClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlEventLogServer",
-      "path": [
-        "src",
-        "SqlEventLogServer.ts"
-      ]
+      "name": "SqlEventLogServer.ts",
+      "path": "src/SqlEventLogServer.ts"
     },
     "project": "@effect/sql",
     "name": "makeStorage",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Effect.Effect<typeof EventLogServer.Storage.Service, SqlError, SqlClient.SqlClient | EventLogEncryption | Scope>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlEventLogServer",
-      "path": [
-        "src",
-        "SqlEventLogServer.ts"
-      ]
+      "name": "SqlEventLogServer.ts",
+      "path": "src/SqlEventLogServer.ts"
     },
     "project": "@effect/sql",
     "name": "layerStorage",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient | EventLogEncryption>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlEventLogServer",
-      "path": [
-        "src",
-        "SqlEventLogServer.ts"
-      ]
+      "name": "SqlEventLogServer.ts",
+      "path": "src/SqlEventLogServer.ts"
     },
     "project": "@effect/sql",
     "name": "layerStorageSubtle",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "void",
-    "description": "Create a resolver that performs side effects.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "resolvers",
-    "signature": "export declare const void: <T extends string, I, II, RI, E, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, void, E, RI>, never, R>"
+    "signature": "declare const layerStorageSubtle: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
     },
     "project": "@effect/sql",
     "name": "ordered",
@@ -1674,16 +1051,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": null
+    "signature": "declare const ordered: <T extends string, I, II, RI, A, IA, _, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, A, E | ResultLengthMismatch, RI>, never, RA | R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
     },
     "project": "@effect/sql",
     "name": "grouped",
@@ -1692,16 +1066,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": null
+    "signature": "declare const grouped: <T extends string, I, II, K, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Array<A>, E, RI>, never, RA | R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
     },
     "project": "@effect/sql",
     "name": "findById",
@@ -1710,20 +1081,16 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": null
+    "signature": "declare const findById: <T extends string, I, II, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Option.Option<A>, E, RI>, never, RA | R>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
     },
     "project": "@effect/sql",
     "name": "SqlRequest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1733,15 +1100,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "SqlResolver",
-      "path": [
-        "src",
-        "SqlResolver.ts"
-      ]
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
     },
     "project": "@effect/sql",
     "name": "SqlResolver",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1749,31 +1112,10 @@
     "signature": "export interface SqlResolver<T extends string, I, A, E, R>\n  extends RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n{\n  readonly execute: (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly makeExecute: (\n    resolver: RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n  ) => (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly cachePopulate: (\n    id: I,\n    result: A\n  ) => Effect.Effect<void>\n  readonly cacheInvalidate: (id: I) => Effect.Effect<void>\n  readonly request: (input: I) => Effect.Effect<SqlRequest<T, A, E>, ParseError, R>\n}"
   },
   {
-    "_tag": "Export",
-    "module": {
-      "name": "SqlSchema",
-      "path": [
-        "src",
-        "SqlSchema.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "void",
-    "description": "Run a sql query with a request schema and discard the result.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructor",
-    "signature": "export declare const void: <IR, II, IA, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<void, E | ParseError, R | IR>"
-  },
-  {
     "_tag": "Function",
     "module": {
-      "name": "SqlSchema",
-      "path": [
-        "src",
-        "SqlSchema.ts"
-      ]
+      "name": "SqlSchema.ts",
+      "path": "src/SqlSchema.ts"
     },
     "project": "@effect/sql",
     "name": "findAll",
@@ -1782,16 +1124,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const findAll: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<ReadonlyArray<A>, E | ParseError, R | IR | AR>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlSchema",
-      "path": [
-        "src",
-        "SqlSchema.ts"
-      ]
+      "name": "SqlSchema.ts",
+      "path": "src/SqlSchema.ts"
     },
     "project": "@effect/sql",
     "name": "findOne",
@@ -1800,16 +1139,13 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const findOne: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<Option.Option<A>, E | ParseError, R | IR | AR>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlSchema",
-      "path": [
-        "src",
-        "SqlSchema.ts"
-      ]
+      "name": "SqlSchema.ts",
+      "path": "src/SqlSchema.ts"
     },
     "project": "@effect/sql",
     "name": "single",
@@ -1818,452 +1154,296 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const single: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<A, E | ParseError | Cause.NoSuchElementException, R | IR | AR>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "SqlStream",
-      "path": [
-        "src",
-        "SqlStream.ts"
-      ]
+      "name": "SqlStream.ts",
+      "path": "src/SqlStream.ts"
     },
     "project": "@effect/sql",
     "name": "asyncPauseResume",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": null
+    "signature": "declare const asyncPauseResume: <A, E = never, R = never>(register: (emit: { readonly single: (item: A) => void; readonly chunk: (chunk: Chunk.Chunk<A>) => void; readonly array: (chunk: ReadonlyArray<A>) => void; readonly fail: (error: E) => void; readonly end: () => void; }) => { readonly onInterrupt: Effect.Effect<void, never, R>; readonly onPause: Effect.Effect<void>; readonly onResume: Effect.Effect<void>; }, bufferSize?: number) => Stream.Stream<A, E, R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "FragmentId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export declare const FragmentId: typeof FragmentId"
+    "signature": "declare const FragmentId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "currentTransformer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "export declare const currentTransformer: FiberRef.FiberRef<Option.Option<Statement.Transformer>>"
+    "signature": "declare const currentTransformer: FiberRef.FiberRef<Option.Option<Statement.Transformer>>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "withTransformer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "export declare const withTransformer: { (f: Statement.Transformer): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, f: Statement.Transformer): Effect<A, E, R>; }"
+    "signature": "declare const withTransformer: { (f: Statement.Transformer): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, f: Statement.Transformer): Effect<A, E, R>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "withTransformerDisabled",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "export declare const withTransformerDisabled: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>"
+    "signature": "declare const withTransformerDisabled: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "setTransformer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "export declare const setTransformer: (f: Statement.Transformer) => Layer.Layer<never, never, never>"
+    "signature": "declare const setTransformer: (f: Statement.Transformer) => Layer.Layer<never, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "isFragment",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "guard",
-    "signature": "export declare const isFragment: (u: unknown) => u is Fragment"
+    "signature": "declare const isFragment: (u: unknown) => u is Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "isCustom",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "guard",
-    "signature": "export declare const isCustom: <A extends Custom<any, any, any, any>>(kind: A[\"kind\"]) => (u: unknown) => u is A"
+    "signature": "declare const isCustom: <A extends Custom<any, any, any, any>>(kind: A[\"kind\"]) => (u: unknown) => u is A"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "custom",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const custom: <C extends Custom<any, any, any, any>>(kind: C[\"kind\"]) => (i0: C[\"i0\"], i1: C[\"i1\"], i2: C[\"i2\"]) => Fragment"
+    "signature": "declare const custom: <C extends Custom<any, any, any, any>>(kind: C[\"kind\"]) => (i0: C[\"i0\"], i1: C[\"i1\"], i2: C[\"i2\"]) => Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const make: (acquirer: Connection.Acquirer, compiler: Compiler, spanAttributes: ReadonlyArray<readonly [string, unknown]>, transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined) => Constructor"
+    "signature": "declare const make: (acquirer: Connection.Acquirer, compiler: Compiler, spanAttributes: ReadonlyArray<readonly [string, unknown]>, transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined) => Constructor"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "unsafeFragment",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const unsafeFragment: (sql: string, params?: ReadonlyArray<Primitive> | undefined) => Fragment"
+    "signature": "declare const unsafeFragment: (sql: string, params?: ReadonlyArray<Primitive> | undefined) => Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "and",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const and: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const and: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "or",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const or: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const or: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "csv",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const csv: { (values: ReadonlyArray<string | Fragment>): Fragment; (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment; }"
+    "signature": "declare const csv: { (values: ReadonlyArray<string | Fragment>): Fragment; (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "join",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const join: (literal: string, addParens?: boolean, fallback?: string) => (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const join: (literal: string, addParens?: boolean, fallback?: string) => (clauses: ReadonlyArray<string | Fragment>) => Fragment"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "makeCompiler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "export declare const makeCompiler: <C extends Custom<any, any, any, any> = any>(options: { readonly dialect: Dialect; readonly placeholder: (index: number, value: unknown) => string; readonly onIdentifier: (value: string, withoutTransform: boolean) => string; readonly onRecordUpdate: (placeholders: string, alias: string, columns: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onCustom: (type: C, placeholder: (u: unknown) => string, withoutTransform: boolean) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onInsert?: (columns: ReadonlyArray<string>, placeholders: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, binds: ReadonlyArray<Primitive>]; readonly onRecordUpdateSingle?: (columns: ReadonlyArray<string>, values: ReadonlyArray<Primitive>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; }) => Compiler"
+    "signature": "declare const makeCompiler: <C extends Custom<any, any, any, any> = any>(options: { readonly dialect: Dialect; readonly placeholder: (index: number, value: unknown) => string; readonly onIdentifier: (value: string, withoutTransform: boolean) => string; readonly onRecordUpdate: (placeholders: string, alias: string, columns: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onCustom: (type: C, placeholder: (u: unknown) => string, withoutTransform: boolean) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onInsert?: (columns: ReadonlyArray<string>, placeholders: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, binds: ReadonlyArray<Primitive>]; readonly onRecordUpdateSingle?: (columns: ReadonlyArray<string>, values: ReadonlyArray<Primitive>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; }) => Compiler"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "makeCompilerSqlite",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "export declare const makeCompilerSqlite: (transform?: ((_: string) => string) | undefined) => Compiler"
+    "signature": "declare const makeCompilerSqlite: (transform?: ((_: string) => string) | undefined) => Compiler"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "defaultEscape",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const defaultEscape: (c: string) => (str: string) => string"
+    "signature": "declare const defaultEscape: (c: string) => (str: string) => string"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "primitiveKind",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const primitiveKind: (value: Primitive) => PrimitiveKind"
+    "signature": "declare const primitiveKind: (value: Primitive) => PrimitiveKind"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "defaultTransforms",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const defaultTransforms: (transformer: (str: string) => string, nested?: boolean) => { readonly value: (value: any) => any; readonly object: (obj: Record<string, any>) => any; readonly array: <A extends object>(rows: ReadonlyArray<A>) => ReadonlyArray<A>; }"
+    "signature": "declare const defaultTransforms: (transformer: (str: string) => string, nested?: boolean) => { readonly value: (value: any) => any; readonly object: (obj: Record<string, any>) => any; readonly array: <A extends object>(rows: ReadonlyArray<A>) => ReadonlyArray<A>; }"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "ArrayHelper",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export interface ArrayHelper {\n  readonly _tag: \"ArrayHelper\"\n  readonly value: ReadonlyArray<Primitive | Fragment>\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Compiler",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "compiler",
-    "signature": "export interface Compiler {\n  readonly dialect: Dialect\n  readonly compile: (\n    statement: Fragment,\n    withoutTransform: boolean\n  ) => readonly [sql: string, params: ReadonlyArray<Primitive>]\n  readonly withoutTransform: this\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Constructor",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export interface Constructor {\n  <A extends object = Row>(\n    strings: TemplateStringsArray,\n    ...args: Array<Argument>\n  ): Statement<A>\n\n  (value: string): Identifier\n\n  /**\n   * Create unsafe SQL query\n   */\n  readonly unsafe: <A extends object>(\n    sql: string,\n    params?: ReadonlyArray<Primitive> | undefined\n  ) => Statement<A>\n\n  readonly literal: (sql: string) => Fragment\n\n  readonly in: {\n    (value: ReadonlyArray<Primitive>): ArrayHelper\n    (column: string, value: ReadonlyArray<Primitive>): Fragment\n  }\n\n  readonly insert: {\n    (\n      value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n    ): RecordInsertHelper\n    (value: Record<string, Primitive | Fragment | undefined>): RecordInsertHelper\n  }\n\n  /** Update a single row */\n  readonly update: <A extends Record<string, Primitive | Fragment | undefined>>(\n    value: A,\n    omit?: ReadonlyArray<keyof A>\n  ) => RecordUpdateHelperSingle\n\n  /**\n   * Update multiple rows\n   *\n   * **Note:** Not supported in sqlite\n   */\n  readonly updateValues: (\n    value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>,\n    alias: string\n  ) => RecordUpdateHelper\n\n  /**\n   * Create an `AND` chain for a where clause\n   */\n  readonly and: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create an `OR` chain for a where clause\n   */\n  readonly or: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create comma seperated values, with an optional prefix\n   *\n   * Useful for `ORDER BY` and `GROUP BY` clauses\n   */\n  readonly csv: {\n    (values: ReadonlyArray<string | Fragment>): Fragment\n    (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment\n  }\n\n  readonly join: (\n    literal: string,\n    addParens?: boolean,\n    fallback?: string\n  ) => (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  readonly onDialect: <A, B, C, D, E>(options: {\n    readonly sqlite: () => A\n    readonly pg: () => B\n    readonly mysql: () => C\n    readonly mssql: () => D\n    readonly clickhouse: () => E\n  }) => A | B | C | D | E\n\n  readonly onDialectOrElse: <A, B = never, C = never, D = never, E = never, F = never>(options: {\n    readonly orElse: () => A\n    readonly sqlite?: () => B\n    readonly pg?: () => C\n    readonly mysql?: () => D\n    readonly mssql?: () => E\n    readonly clickhouse?: () => F\n  }) => A | B | C | D | E | F\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Custom",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export interface Custom<\n  T extends string = string,\n  A = void,\n  B = void,\n  C = void\n> {\n  readonly _tag: \"Custom\"\n  readonly kind: T\n  readonly i0: A\n  readonly i1: B\n  readonly i2: C\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "Fragment",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2273,33 +1453,25 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
-    "name": "Identifier",
-    "description": null,
+    "name": "Statement",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Identifier {\n  readonly _tag: \"Identifier\"\n  readonly value: string\n}"
+    "signature": "export interface Statement<A> extends Fragment, Effect<ReadonlyArray<A>, SqlError>, Pipeable {\n  readonly raw: Effect<unknown, SqlError>\n  readonly withoutTransform: Effect<ReadonlyArray<A>, SqlError>\n  readonly stream: Stream.Stream<A, SqlError>\n  readonly values: Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n  readonly unprepared: Effect<ReadonlyArray<A>, SqlError>\n  readonly compile: (withoutTransform?: boolean | undefined) => readonly [\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ]\n}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "Literal",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2309,15 +1481,25 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Identifier",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Identifier {\n  readonly _tag: \"Identifier\"\n  readonly value: string\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "Parameter",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2327,15 +1509,25 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "ArrayHelper",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface ArrayHelper {\n  readonly _tag: \"ArrayHelper\"\n  readonly value: ReadonlyArray<Primitive | Fragment>\n}"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "RecordInsertHelper",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2345,15 +1537,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "RecordUpdateHelper",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2363,15 +1551,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "RecordUpdateHelperSingle",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -2381,145 +1565,155 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
-    "name": "Statement",
-    "description": null,
+    "name": "Custom",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Statement<A> extends Fragment, Effect<ReadonlyArray<A>, SqlError>, Pipeable {\n  readonly raw: Effect<unknown, SqlError>\n  readonly withoutTransform: Effect<ReadonlyArray<A>, SqlError>\n  readonly stream: Stream.Stream<A, SqlError>\n  readonly values: Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n  readonly unprepared: Effect<ReadonlyArray<A>, SqlError>\n  readonly compile: (withoutTransform?: boolean | undefined) => readonly [\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ]\n}"
+    "signature": "export interface Custom<\n  T extends string = string,\n  A = void,\n  B = void,\n  C = void\n> {\n  readonly _tag: \"Custom\"\n  readonly kind: T\n  readonly i0: A\n  readonly i1: B\n  readonly i2: C\n}"
   },
   {
-    "_tag": "TypeAlias",
+    "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
-    "name": "Argument",
-    "description": null,
+    "name": "Constructor",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type Argument = Primitive | Helper | Fragment"
+    "signature": "export interface Constructor {\n  <A extends object = Row>(\n    strings: TemplateStringsArray,\n    ...args: Array<Argument>\n  ): Statement<A>\n\n  (value: string): Identifier\n\n  /**\n   * Create unsafe SQL query\n   */\n  readonly unsafe: <A extends object>(\n    sql: string,\n    params?: ReadonlyArray<Primitive> | undefined\n  ) => Statement<A>\n\n  readonly literal: (sql: string) => Fragment\n\n  readonly in: {\n    (value: ReadonlyArray<Primitive>): ArrayHelper\n    (column: string, value: ReadonlyArray<Primitive>): Fragment\n  }\n\n  readonly insert: {\n    (\n      value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n    ): RecordInsertHelper\n    (value: Record<string, Primitive | Fragment | undefined>): RecordInsertHelper\n  }\n\n  /** Update a single row */\n  readonly update: <A extends Record<string, Primitive | Fragment | undefined>>(\n    value: A,\n    omit?: ReadonlyArray<keyof A>\n  ) => RecordUpdateHelperSingle\n\n  /**\n   * Update multiple rows\n   *\n   * **Note:** Not supported in sqlite\n   */\n  readonly updateValues: (\n    value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>,\n    alias: string\n  ) => RecordUpdateHelper\n\n  /**\n   * Create an `AND` chain for a where clause\n   */\n  readonly and: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create an `OR` chain for a where clause\n   */\n  readonly or: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create comma seperated values, with an optional prefix\n   *\n   * Useful for `ORDER BY` and `GROUP BY` clauses\n   */\n  readonly csv: {\n    (values: ReadonlyArray<string | Fragment>): Fragment\n    (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment\n  }\n\n  readonly join: (\n    literal: string,\n    addParens?: boolean,\n    fallback?: string\n  ) => (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  readonly onDialect: <A, B, C, D, E>(options: {\n    readonly sqlite: () => A\n    readonly pg: () => B\n    readonly mysql: () => C\n    readonly mssql: () => D\n    readonly clickhouse: () => E\n  }) => A | B | C | D | E\n\n  readonly onDialectOrElse: <A, B = never, C = never, D = never, E = never, F = never>(options: {\n    readonly orElse: () => A\n    readonly sqlite?: () => B\n    readonly pg?: () => C\n    readonly mysql?: () => D\n    readonly mssql?: () => E\n    readonly clickhouse?: () => F\n  }) => A | B | C | D | E | F\n}"
   },
   {
-    "_tag": "TypeAlias",
+    "_tag": "Interface",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
-    "name": "Dialect",
-    "description": null,
+    "name": "Compiler",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "model",
-    "signature": "export type Dialect = \"sqlite\" | \"pg\" | \"mysql\" | \"mssql\" | \"clickhouse\""
+    "category": "compiler",
+    "signature": "export interface Compiler {\n  readonly dialect: Dialect\n  readonly compile: (\n    statement: Fragment,\n    withoutTransform: boolean\n  ) => readonly [sql: string, params: ReadonlyArray<Primitive>]\n  readonly withoutTransform: this\n}"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "FragmentId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export type FragmentId = typeof FragmentId"
+    "signature": "type FragmentId = typeof FragmentId"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
-    "name": "Helper",
-    "description": null,
+    "name": "Dialect",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type Helper =\n  | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Identifier\n  | Custom"
+    "signature": "type Dialect = \"sqlite\" | \"pg\" | \"mysql\" | \"mssql\" | \"clickhouse\""
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "Primitive",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export type Primitive =\n  | string\n  | number\n  | bigint\n  | boolean\n  | Date\n  | null\n  | Int8Array\n  | Uint8Array"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
-    },
-    "project": "@effect/sql",
-    "name": "PrimitiveKind",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export type PrimitiveKind =\n  | \"string\"\n  | \"number\"\n  | \"bigint\"\n  | \"boolean\"\n  | \"Date\"\n  | \"null\"\n  | \"Int8Array\"\n  | \"Uint8Array\""
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "Statement",
-      "path": [
-        "src",
-        "Statement.ts"
-      ]
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
     },
     "project": "@effect/sql",
     "name": "Segment",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export type Segment =\n  | Literal\n  | Identifier\n  | Parameter\n  | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Custom"
+    "signature": "type Segment = | Literal\n  | Identifier\n  | Parameter\n  | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Custom"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Primitive",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type Primitive = | string\n  | number\n  | bigint\n  | boolean\n  | Date\n  | null\n  | Int8Array\n  | Uint8Array"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "PrimitiveKind",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type PrimitiveKind = | \"string\"\n  | \"number\"\n  | \"bigint\"\n  | \"boolean\"\n  | \"Date\"\n  | \"null\"\n  | \"Int8Array\"\n  | \"Uint8Array\""
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Helper",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type Helper = | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Identifier\n  | Custom"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Argument",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type Argument = Primitive | Helper | Fragment"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Statement.ts",
+      "path": "src/Statement.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Statement.Transformer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "type Transformer = (\n    self: Statement<unknown>,\n    sql: Constructor,\n    context: FiberRefs.FiberRefs,\n    span: Tracer.Span\n  ) => Effect<Statement<unknown>>"
   }
 ]

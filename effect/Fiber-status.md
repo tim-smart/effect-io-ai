@@ -1,17 +1,13 @@
-# status
+## status
 
 Returns the `FiberStatus` of a `RuntimeFiber`.
-
-To import and use `status` from the "Fiber" module:
-
-```ts
-import * as Fiber from "effect/Fiber"
-// Can be accessed like this
-Fiber.status
-```
 
 **Signature**
 
 ```ts
-export declare const status: <A, E>(self: RuntimeFiber<A, E>) => Effect.Effect<FiberStatus.FiberStatus>
+declare const status: <A, E>(self: RuntimeFiber<A, E>) => Effect.Effect<FiberStatus.FiberStatus>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L678)
+
+Since v2.0.0

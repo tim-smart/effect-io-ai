@@ -1,21 +1,14 @@
-# completeWith
+## completeWith
 
 Completes the deferred with the result of the specified effect. If the
 deferred has already been completed, the method will produce false.
 
-To import and use `completeWith` from the "Deferred" module:
-
-```ts
-import * as Deferred from "effect/Deferred"
-// Can be accessed like this
-Deferred.completeWith
-```
-
 **Signature**
 
 ```ts
-export declare const completeWith: {
-  <A, E>(effect: Effect.Effect<A, E>): (self: Deferred<A, E>) => Effect.Effect<boolean>
-  <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E>): Effect.Effect<boolean>
-}
+declare const completeWith: { <A, E>(effect: Effect.Effect<A, E>): (self: Deferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E>): Effect.Effect<boolean>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L133)
+
+Since v2.0.0

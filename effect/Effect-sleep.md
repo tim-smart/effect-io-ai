@@ -1,4 +1,4 @@
-# sleep
+## sleep
 
 Suspends the execution of an effect for a specified `Duration`.
 
@@ -13,20 +13,12 @@ The duration can be specified using various formats supported by the
 `Duration` module, such as a string (`"2 seconds"`) or numeric value
 representing milliseconds.
 
-To import and use `sleep` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.sleep
-```
-
 **Example**
 
 ```ts
 import { Effect } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   console.log("Starting task...")
   yield* Effect.sleep("3 seconds") // Waits for 3 seconds
   console.log("Task completed!")
@@ -41,5 +33,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const sleep: (duration: Duration.DurationInput) => Effect<void>
+declare const sleep: (duration: Duration.DurationInput) => Effect<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6745)
+
+Since v2.0.0

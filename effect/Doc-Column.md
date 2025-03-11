@@ -1,11 +1,16 @@
-# Column
+## Column
 
 Represents a document that reacts to the current cursor position.
 
-To import and use `Column` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Column
+export interface Column<A> extends Doc.Variance<A> {
+  readonly _tag: "Column"
+  readonly react: (position: number) => Doc<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L258)
+
+Since v1.0.0

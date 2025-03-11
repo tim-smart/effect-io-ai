@@ -1,19 +1,15 @@
-# boolean
+## boolean
 
 Creates a boolean argument.
 
 Can optionally provide a custom argument name (defaults to `"boolean"`).
 
-To import and use `boolean` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.boolean
-```
-
 **Signature**
 
 ```ts
-export declare const boolean: (options?: Args.BaseArgsConfig) => Args<boolean>
+declare const boolean: (options?: Args.BaseArgsConfig) => Args<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L181)
+
+Since v1.0.0

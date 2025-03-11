@@ -1,4 +1,4 @@
-# cachedFunction
+## cachedFunction
 
 Returns a memoized version of a function with effects, reusing results for
 the same inputs.
@@ -24,14 +24,6 @@ inputs, and you want to improve performance by caching the output.
 This is particularly useful in scenarios where the function involves
 expensive calculations or operations that should be avoided after the first
 execution with the same parameters.
-
-To import and use `cachedFunction` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.cachedFunction
-```
 
 **Example**
 
@@ -63,8 +55,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const cachedFunction: <A, B, E, R>(
-  f: (a: A) => Effect<B, E, R>,
-  eq?: Equivalence<A>
-) => Effect<(a: A) => Effect<B, E, R>>
+declare const cachedFunction: <A, B, E, R>(f: (a: A) => Effect<B, E, R>, eq?: Equivalence<A>) => Effect<(a: A) => Effect<B, E, R>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L535)
+
+Since v2.0.0

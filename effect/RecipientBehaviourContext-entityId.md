@@ -1,17 +1,13 @@
-# entityId
+## entityId
 
 Gets the current entityId
-
-To import and use `entityId` from the "RecipientBehaviourContext" module:
-
-```ts
-import * as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
-// Can be accessed like this
-RecipientBehaviourContext.entityId
-```
 
 **Signature**
 
 ```ts
-export declare const entityId: Effect.Effect<string, never, RecipientBehaviourContext>
+declare const entityId: Effect.Effect<string, never, RecipientBehaviourContext>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L64)
+
+Since v1.0.0

@@ -1,18 +1,14 @@
-# yieldNow
+## yieldNow
 
 Pause the execution of the current `Micro` effect, and resume it on the next
 scheduler tick.
 
-To import and use `yieldNow` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.yieldNow
-```
-
 **Signature**
 
 ```ts
-export declare const yieldNow: Micro<void, never, never>
+declare const yieldNow: Micro<void, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L930)
+
+Since v3.4.0

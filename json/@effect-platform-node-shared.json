@@ -2,48 +2,36 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeCommandExecutor",
-      "path": [
-        "src",
-        "NodeCommandExecutor.ts"
-      ]
+      "name": "NodeCommandExecutor.ts",
+      "path": "src/NodeCommandExecutor.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<CommandExecutor, never, FileSystem>"
+    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeFileSystem",
-      "path": [
-        "src",
-        "NodeFileSystem.ts"
-      ]
+      "name": "NodeFileSystem.ts",
+      "path": "src/NodeFileSystem.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<FileSystem, never, never>"
+    "signature": "declare const layer: Layer<FileSystem, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "ParcelWatcher",
-      "path": [
-        "src",
-        "NodeFileSystem",
-        "ParcelWatcher.ts"
-      ]
+      "name": "ParcelWatcher.ts",
+      "path": "src/NodeFileSystem/ParcelWatcher.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
@@ -52,290 +40,226 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<WatchBackend, never, never>"
+    "signature": "declare const layer: Layer<WatchBackend, never, never>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeKeyValueStore",
-      "path": [
-        "src",
-        "NodeKeyValueStore.ts"
-      ]
+      "name": "NodeKeyValueStore.ts",
+      "path": "src/NodeKeyValueStore.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerFileSystem",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeMultipart",
-      "path": [
-        "src",
-        "NodeMultipart.ts"
-      ]
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "stream",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>"
+    "signature": "declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeMultipart",
-      "path": [
-        "src",
-        "NodeMultipart.ts"
-      ]
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "persisted",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const persisted: (source: Readable, headers: IncomingHttpHeaders) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>"
+    "signature": "declare const persisted: (source: Readable, headers: IncomingHttpHeaders) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeMultipart",
-      "path": [
-        "src",
-        "NodeMultipart.ts"
-      ]
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fileToReadable",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const fileToReadable: (file: Multipart.File) => Readable"
+    "signature": "declare const fileToReadable: (file: Multipart.File) => Readable"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<Path, never, never>"
+    "signature": "declare const layer: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerPosix",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layerPosix: Layer<Path, never, never>"
+    "signature": "declare const layerPosix: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodePath",
-      "path": [
-        "src",
-        "NodePath.ts"
-      ]
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerWin32",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layerWin32: Layer<Path, never, never>"
+    "signature": "declare const layerWin32: Layer<Path, never, never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeRuntime",
-      "path": [
-        "src",
-        "NodeRuntime.ts"
-      ]
+      "name": "NodeRuntime.ts",
+      "path": "src/NodeRuntime.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "runMain",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "runtime",
-    "signature": "export declare const runMain: RunMain"
+    "signature": "declare const runMain: RunMain"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeSink",
-      "path": [
-        "src",
-        "NodeSink.ts"
-      ]
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromWritable",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const fromWritable: <E, A = string | Uint8Array>(evaluate: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => E, options?: FromWritableOptions) => Sink<void, A, never, E>"
+    "signature": "declare const fromWritable: <E, A = string | Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => E, options?: FromWritableOptions) => Sink<void, A, never, E>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeSink",
-      "path": [
-        "src",
-        "NodeSink.ts"
-      ]
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromWritableChannel",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const fromWritableChannel: <IE, OE, A>(writable: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => OE, options?: FromWritableOptions) => Channel<Chunk<never>, Chunk<A>, IE | OE, IE, void, unknown>"
+    "signature": "declare const fromWritableChannel: <IE, OE, A>(writable: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => OE, options?: FromWritableOptions) => Channel<Chunk<never>, Chunk<A>, IE | OE, IE, void, unknown>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "NetSocket",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const NetSocket: Context.Tag<NetSocket, Net.Socket>"
+    "signature": "declare const NetSocket: Context.Tag<NetSocket, Net.Socket>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "makeNet",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeNet: (options: Net.NetConnectOpts) => Effect.Effect<Socket.Socket, Socket.SocketError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromDuplex",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "makeNetChannel",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerNet",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "NodeSocket",
-      "path": [
-        "src",
-        "NodeSocket.ts"
-      ]
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "NetSocket",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -345,177 +269,137 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromReadable",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const fromReadable: <E, A = Uint8Array>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, { chunkSize }?: FromReadableOptions) => Stream<A, E>"
+    "signature": "declare const fromReadable: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, { chunkSize }?: FromReadableOptions) => Stream<A, E>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromReadableChannel",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const fromReadableChannel: <E, A = Uint8Array>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, chunkSize: number | undefined) => Channel<Chunk<A>, unknown, E, unknown, void, unknown>"
+    "signature": "declare const fromReadableChannel: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, chunkSize: number | undefined) => Channel<Chunk<A>, unknown, E, unknown, void, unknown>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromDuplex",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const fromDuplex: <IE, E, I = Uint8Array, O = Uint8Array>(evaluate: LazyArg<Duplex>, onError: (error: unknown) => E, options?: FromReadableOptions & FromWritableOptions) => Channel<Chunk<O>, Chunk<I>, IE | E, IE, void, unknown>"
+    "signature": "declare const fromDuplex: <IE, E, I = Uint8Array<ArrayBufferLike>, O = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Duplex>, onError: (error: unknown) => E, options?: FromReadableOptions & FromWritableOptions) => Channel<Chunk<O>, Chunk<I>, IE | E, IE, void, unknown>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "pipeThroughDuplex",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
-    "signature": "export declare const pipeThroughDuplex: { <E2, B = Uint8Array>(duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): <R, E, A>(self: Stream<A, E, R>) => Stream<B, E2 | E, R>; <R, E, A, E2, B = Uint8Array>(self: Stream<A, E, R>, duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): Stream<B, E | E2, R>; }"
+    "signature": "declare const pipeThroughDuplex: { <E2, B = Uint8Array<ArrayBufferLike>>(duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): <R, E, A>(self: Stream<A, E, R>) => Stream<B, E2 | E, R>; <R, E, A, E2, B = Uint8Array<ArrayBufferLike>>(self: Stream<A, E, R>, duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): Stream<B, E | E2, R>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "pipeThroughSimple",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
-    "signature": "export declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream<string | Uint8Array, E, R>) => Stream<Uint8Array, E | PlatformError, R>; <R, E>(self: Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream<Uint8Array, PlatformError | E, R>; }"
+    "signature": "declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream<string | Uint8Array, E, R>) => Stream<Uint8Array, E | PlatformError, R>; <R, E>(self: Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream<Uint8Array, PlatformError | E, R>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toReadable",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toReadable: <E, R>(stream: Stream<string | Uint8Array, E, R>) => Effect<Readable, never, R>"
+    "signature": "declare const toReadable: <E, R>(stream: Stream<string | Uint8Array, E, R>) => Effect<Readable, never, R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toReadableNever",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toReadableNever: <E>(stream: Stream<string | Uint8Array, E, never>) => Readable"
+    "signature": "declare const toReadableNever: <E>(stream: Stream<string | Uint8Array, E, never>) => Readable"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toString",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toString: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect<string, E>"
+    "signature": "declare const toString: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect<string, E>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toUint8Array",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "export declare const toUint8Array: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect<Uint8Array, E>"
+    "signature": "declare const toUint8Array: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect<Uint8Array, E>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "FromReadableOptions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -525,15 +409,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "NodeStream",
-      "path": [
-        "src",
-        "NodeStream.ts"
-      ]
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "FromWritableOptions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -543,37 +423,29 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeTerminal",
-      "path": [
-        "src",
-        "NodeTerminal.ts"
-      ]
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
+    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeTerminal",
-      "path": [
-        "src",
-        "NodeTerminal.ts"
-      ]
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "export declare const layer: Layer<Terminal, never, never>"
+    "signature": "declare const layer: Layer<Terminal, never, never>"
   }
 ]

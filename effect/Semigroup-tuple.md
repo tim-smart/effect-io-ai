@@ -1,4 +1,4 @@
-# tuple
+## tuple
 
 Similar to `Promise.all` but operates on `Semigroup`s.
 
@@ -11,18 +11,12 @@ The returned `Semigroup` combines two tuples of the same type by applying the co
 
 It is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.
 
-To import and use `tuple` from the "Semigroup" module:
-
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
-// Can be accessed like this
-Semigroup.tuple
-```
-
 **Signature**
 
 ```ts
-export declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(
-  ...elements: T
-) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never }>
+declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(...elements: T) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never; }>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L214)
+
+Since v0.24.0

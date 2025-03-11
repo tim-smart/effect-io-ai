@@ -1,4 +1,4 @@
-# withLogSpan
+## withLogSpan
 
 Adds a log span to an effect for tracking and logging its execution duration.
 
@@ -14,20 +14,12 @@ The logged output will include the label and the total time taken for the
 operation. The span information is included in the log metadata, making it
 easy to trace performance metrics in logs.
 
-To import and use `withLogSpan` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.withLogSpan
-```
-
 **Example**
 
 ```ts
 import { Effect } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.sleep("1 second")
   yield* Effect.log("The job is finished!")
 }).pipe(Effect.withLogSpan("myspan"))
@@ -39,8 +31,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const withLogSpan: {
-  (label: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(effect: Effect<A, E, R>, label: string): Effect<A, E, R>
-}
+declare const withLogSpan: { (label: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, label: string): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10832)
+
+Since v2.0.0

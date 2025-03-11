@@ -1,4 +1,4 @@
-# CauseReducer
+## CauseReducer
 
 Describes methods for reducing a `Cause<E>` into a value of type `Z` with
 access to contextual information.
@@ -11,10 +11,23 @@ structure (like `Fail`, `Die`, or `Interrupt`) should be transformed into a
 final type `Z`. The `context` parameter carries additional data needed during
 this reduction.
 
-To import and use `CauseReducer` from the "Cause" module:
+**See**
+
+- `reduceWithContext` Apply a `CauseReducer` to transform a `Cause`
+
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.CauseReducer
+export interface CauseReducer<in C, in E, in out Z> {
+  emptyCase(context: C): Z
+  failCase(context: C, error: E): Z
+  dieCase(context: C, defect: unknown): Z
+  interruptCase(context: C, fiberId: FiberId.FiberId): Z
+  sequentialCase(context: C, left: Z, right: Z): Z
+  parallelCase(context: C, left: Z, right: Z): Z
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L295)
+
+Since v2.0.0

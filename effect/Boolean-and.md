@@ -1,18 +1,11 @@
-# and
+## and
 
 Combines two boolean using AND: `self && that`.
-
-To import and use `and` from the "Boolean" module:
-
-```ts
-import * as Boolean from "effect/Boolean"
-// Can be accessed like this
-Boolean.and
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { and } from "effect/Boolean"
 
 assert.deepStrictEqual(and(true, true), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(and(false, false), false)
 **Signature**
 
 ```ts
-export declare const and: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean }
+declare const and: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L106)
+
+Since v2.0.0

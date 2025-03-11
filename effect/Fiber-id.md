@@ -1,17 +1,13 @@
-# id
+## id
 
 The identity of the fiber.
-
-To import and use `id` from the "Fiber" module:
-
-```ts
-import * as Fiber from "effect/Fiber"
-// Can be accessed like this
-Fiber.id
-```
 
 **Signature**
 
 ```ts
-export declare const id: <A, E>(self: Fiber<A, E>) => FiberId.FiberId
+declare const id: <A, E>(self: Fiber<A, E>) => FiberId.FiberId
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L333)
+
+Since v2.0.0

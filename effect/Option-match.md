@@ -1,4 +1,4 @@
-# match
+## match
 
 Performs pattern matching on an `Option` to handle both `Some` and `None`
 cases.
@@ -18,14 +18,6 @@ provided functions based on the case:
 This function provides a concise and functional way to handle optional values
 without resorting to `if` or manual checks, making your code more declarative
 and readable.
-
-To import and use `match` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.match
-```
 
 **Example**
 
@@ -47,8 +39,9 @@ console.log(message)
 **Signature**
 
 ```ts
-export declare const match: {
-  <B, A, C = B>(options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C }): (self: Option<A>) => B | C
-  <A, B, C = B>(self: Option<A>, options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C }): B | C
-}
+declare const match: { <B, A, C = B>(options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): (self: Option<A>) => B | C; <A, B, C = B>(self: Option<A>, options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): B | C; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L299)
+
+Since v2.0.0

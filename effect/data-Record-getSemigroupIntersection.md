@@ -1,21 +1,14 @@
-# getSemigroupIntersection
+## getSemigroupIntersection
 
 A `Semigroup` that creates an intersection of two records.
 
 This `Semigroup` takes two records and combines them into a new record containing only the keys that are present in both records.
 The values for matching keys are combined using the provided `Semigroup` instance.
 
-To import and use `getSemigroupIntersection` from the "Record" module:
-
-```ts
-import * as Record from "@effect/typeclass/data/Record"
-// Can be accessed like this
-Record.getSemigroupIntersection
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getSemigroupIntersection } from "@effect/typeclass/data/Record"
 
@@ -25,7 +18,9 @@ assert.deepStrictEqual(getSemigroupIntersection(NumberInstances.MonoidSum).combi
 **Signature**
 
 ```ts
-export declare const getSemigroupIntersection: <A>(
-  value: semigroup.Semigroup<A>
-) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
+declare const getSemigroupIntersection: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L279)
+
+Since v0.29.4

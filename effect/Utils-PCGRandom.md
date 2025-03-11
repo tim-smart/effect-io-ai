@@ -1,13 +1,20 @@
-# PCGRandom
+## PCGRandom
 
 PCG is a family of simple fast space-efficient statistically good algorithms
 for random number generation. Unlike many general-purpose RNGs, they are also
 hard to predict.
 
-To import and use `PCGRandom` from the "Utils" module:
+**Signature**
 
 ```ts
-import * as Utils from "effect/Utils"
-// Can be accessed like this
-Utils.PCGRandom
+declare class PCGRandom { constructor(
+    seedHi?: OptionalNumber,
+    seedLo?: OptionalNumber,
+    incHi?: OptionalNumber,
+    incLo?: OptionalNumber
+  ) }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L516)
+
+Since v2.0.0

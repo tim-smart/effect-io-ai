@@ -1,27 +1,22 @@
-# getSomes
+## getSomes
 
 Retrieves the `Some` values from an `Iterable` of `Option`s, collecting them into an array.
-
-To import and use `getSomes` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.getSomes
-```
 
 **Example**
 
 ```ts
 import { Array, Option } from "effect"
 
-assert.deepStrictEqual(Array.getSomes([Option.some(1), Option.none(), Option.some(2)]), [1, 2])
+const result = Array.getSomes([Option.some(1), Option.none(), Option.some(2)])
+console.log(result) // [1, 2]
 ```
 
 **Signature**
 
 ```ts
-export declare const getSomes: <T extends Iterable<Option<X>>, X = any>(
-  self: T
-) => Array<Option.Value<ReadonlyArray.Infer<T>>>
+declare const getSomes: <T extends Iterable<Option<X>>, X = any>(self: T) => Array<Option.Value<ReadonlyArray.Infer<T>>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2525)
+
+Since v2.0.0

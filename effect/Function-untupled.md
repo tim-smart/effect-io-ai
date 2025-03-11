@@ -1,18 +1,11 @@
-# untupled
+## untupled
 
 Inverse function of `tupled`
-
-To import and use `untupled` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.untupled
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { untupled } from "effect/Function"
 
 const getFirst = untupled(<A, B>(tuple: [A, B]): A => tuple[0])
@@ -23,5 +16,9 @@ assert.deepStrictEqual(getFirst(1, 2), 1)
 **Signature**
 
 ```ts
-export declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
+declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L435)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# getOrUndefined
+## getOrUndefined
 
 Returns the value contained in the `Option` if it is `Some`; otherwise,
 returns `undefined`.
@@ -11,14 +11,6 @@ falling back to `undefined` if the `Option` is `None`.
 It is particularly useful in scenarios where `undefined` is an acceptable
 placeholder for the absence of a value, such as when interacting with APIs or
 systems that use `undefined` as a default for missing values.
-
-To import and use `getOrUndefined` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getOrUndefined
-```
 
 **Example**
 
@@ -35,5 +27,9 @@ console.log(Option.getOrUndefined(Option.none()))
 **Signature**
 
 ```ts
-export declare const getOrUndefined: <A>(self: Option<A>) => A | undefined
+declare const getOrUndefined: <A>(self: Option<A>) => A | undefined
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L782)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# using
+## using
 
 Scopes all resources acquired by one effect to the lifetime of another
 effect.
@@ -9,14 +9,6 @@ This function allows you to scope the resources acquired by one effect
 (`self`) to the lifetime of another effect (`use`). This ensures that the
 resources are cleaned up as soon as the `use` effect completes, regardless of
 how the `use` effect ends (success, failure, or interruption).
-
-To import and use `using` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.using
-```
 
 **Example**
 
@@ -38,16 +30,16 @@ const program = acquire.pipe(Effect.using(use))
 // Releasing resource
 ```
 
+**See**
+
+- `scopedWith` Manage scoped operations with a temporary scope.
+
 **Signature**
 
 ```ts
-export declare const using: {
-  <A, A2, E2, R2>(
-    use: (a: A) => Effect<A2, E2, R2>
-  ): <E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | Exclude<R, Scope.Scope>>
-  <A, E, R, A2, E2, R2>(
-    self: Effect<A, E, R>,
-    use: (a: A) => Effect<A2, E2, R2>
-  ): Effect<A2, E | E2, R2 | Exclude<R, Scope.Scope>>
-}
+declare const using: { <A, A2, E2, R2>(use: (a: A) => Effect<A2, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | Exclude<R, Scope.Scope>>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, use: (a: A) => Effect<A2, E2, R2>): Effect<A2, E | E2, R2 | Exclude<R, Scope.Scope>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5936)
+
+Since v2.0.0

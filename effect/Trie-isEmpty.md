@@ -1,18 +1,11 @@
-# isEmpty
+## isEmpty
 
 Checks if the `Trie` contains any entries.
-
-To import and use `isEmpty` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.isEmpty
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie } from "effect"
 
 const trie = Trie.empty<number>()
@@ -25,5 +18,9 @@ assert.equal(Trie.isEmpty(trie1), false)
 **Signature**
 
 ```ts
-export declare const isEmpty: <V>(self: Trie<V>) => boolean
+declare const isEmpty: <V>(self: Trie<V>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L479)
+
+Since v2.0.0

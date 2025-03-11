@@ -1,18 +1,11 @@
-# get
+## get
 
 Safely lookup the value for the specified key in the `Trie`.
-
-To import and use `get` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.get
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(
@@ -35,5 +28,9 @@ assert.deepStrictEqual(Trie.get(trie, "mea"), Option.none())
 **Signature**
 
 ```ts
-export declare const get: { (key: string): <V>(self: Trie<V>) => Option<V>; <V>(self: Trie<V>, key: string): Option<V> }
+declare const get: { (key: string): <V>(self: Trie<V>) => Option<V>; <V>(self: Trie<V>, key: string): Option<V>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L423)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isFlatAlt
+## isFlatAlt
 
 Returns `true` if the specified `Doc` is a `FlatAlt`, `false` otherwise.
-
-To import and use `isFlatAlt` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isFlatAlt
-```
 
 **Signature**
 
 ```ts
-export declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>
+declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L366)
+
+Since v1.0.0

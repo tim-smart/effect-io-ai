@@ -1,17 +1,13 @@
-# make
+## make
 
 Constructs a PodsHealth from its implementation
-
-To import and use `make` from the "PodsHealth" module:
-
-```ts
-import * as PodsHealth from "@effect/cluster/PodsHealth"
-// Can be accessed like this
-PodsHealth.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: (args: Omit<PodsHealth, typeof PodsHealthTypeId>) => PodsHealth
+declare const make: (args: Omit<PodsHealth, typeof PodsHealthTypeId>) => PodsHealth
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L52)
+
+Since v1.0.0

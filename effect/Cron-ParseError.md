@@ -1,11 +1,13 @@
-# ParseError
+## ParseError
 
 Represents a checked exception which occurs when decoding fails.
 
-To import and use `ParseError` from the "Cron" module:
+**Signature**
 
 ```ts
-import * as Cron from "effect/Cron"
-// Can be accessed like this
-Cron.ParseError
+declare class ParseError
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L202)
+
+Since v2.0.0

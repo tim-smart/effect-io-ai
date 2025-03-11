@@ -1,18 +1,11 @@
-# tagged
+## tagged
 
 Provides a tagged constructor for the specified `Case`.
-
-To import and use `tagged` from the "Data" module:
-
-```ts
-import * as Data from "effect/Data"
-// Can be accessed like this
-Data.tagged
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Data } from "effect"
 
 interface Person {
@@ -30,5 +23,9 @@ assert.deepEqual(mike, { _tag: "Person", name: "Mike" })
 **Signature**
 
 ```ts
-export declare const tagged: <A extends { readonly _tag: string }>(tag: A["_tag"]) => Case.Constructor<A, "_tag">
+declare const tagged: <A extends { readonly _tag: string; }>(tag: A["_tag"]) => Case.Constructor<A, "_tag">
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L172)
+
+Since v2.0.0

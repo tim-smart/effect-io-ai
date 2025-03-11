@@ -1,4 +1,4 @@
-# collectAllOutputs
+## collectAllOutputs
 
 Collects all outputs of a schedule into a `Chunk`.
 
@@ -11,16 +11,17 @@ continues to run, appending each output to the collected list.
 This is useful when you need to track all results over time, such as logging
 outputs, aggregating data, or keeping a history of previous values.
 
-To import and use `collectAllOutputs` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.collectAllOutputs
-```
+- `collectAllInputs` If you need to collect inputs instead of
+outputs.
 
 **Signature**
 
 ```ts
-export declare const collectAllOutputs: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Chunk.Chunk<Out>, In, R>
+declare const collectAllOutputs: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Chunk.Chunk<Out>, In, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L442)
+
+Since v2.0.0

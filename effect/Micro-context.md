@@ -1,17 +1,13 @@
-# context
+## context
 
 Access the current `Context` from the environment.
-
-To import and use `context` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.context
-```
 
 **Signature**
 
 ```ts
-export declare const context: <R>() => Micro<Context.Context<R>>
+declare const context: <R>() => Micro<Context.Context<R>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1941)
+
+Since v3.4.0

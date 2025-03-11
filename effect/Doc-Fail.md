@@ -1,13 +1,17 @@
-# Fail
+## Fail
 
 Represents a document that cannot be rendered. Generally occurs when
 flattening a line. The layout algorithms will reject this document and choose
 a more suitable rendering.
 
-To import and use `Fail` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Fail
+export interface Fail<A> extends Doc.Variance<A> {
+  readonly _tag: "Fail"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L138)
+
+Since v1.0.0

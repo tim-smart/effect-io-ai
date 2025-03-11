@@ -1,4 +1,4 @@
-# partition
+## partition
 
 Processes an iterable and applies an effectful function to each element,
 categorizing the results into successes and failures.
@@ -23,14 +23,6 @@ process them separately, for example, when logging errors while continuing to
 work with valid data. The function ensures that failures are captured, while
 successes are processed normally.
 
-To import and use `partition` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.partition
-```
-
 **Example**
 
 ```ts
@@ -51,30 +43,17 @@ const program = Effect.partition([0, 1, 2, 3, 4], (n) => {
 // [ [ '1 is not even', '3 is not even' ], [ 0, 2, 4 ] ]
 ```
 
+**See**
+
+- `validateAll` for a function that either collects all failures or all successes.
+- `validateFirst` for a function that stops at the first success.
+
 **Signature**
 
 ```ts
-export declare const partition: {
-  <A, B, E, R>(
-    f: (a: A, i: number) => Effect<B, E, R>,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>
-  <A, B, E, R>(
-    elements: Iterable<A>,
-    f: (a: A, i: number) => Effect<B, E, R>,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>
-}
+declare const partition: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1746)
+
+Since v2.0.0

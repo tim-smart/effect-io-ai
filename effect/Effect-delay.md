@@ -1,8 +1,8 @@
-# delay
+## delay
 
 Delays the execution of an effect by a specified `Duration`.
 
-\*\*Details
+**Details
 
 This function postpones the execution of the provided effect by the specified
 duration. The duration can be provided in various formats supported by the
@@ -10,14 +10,6 @@ duration. The duration can be provided in various formats supported by the
 
 Internally, this function does not block the thread; instead, it uses an
 efficient, non-blocking mechanism to introduce the delay.
-
-To import and use `delay` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.delay
-```
 
 **Example**
 
@@ -42,8 +34,9 @@ const program = Console.log("start").pipe(
 **Signature**
 
 ```ts
-export declare const delay: {
-  (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, E, R>
-}
+declare const delay: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6707)
+
+Since v2.0.0

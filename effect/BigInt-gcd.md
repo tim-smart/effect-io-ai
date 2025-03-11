@@ -1,18 +1,11 @@
-# gcd
+## gcd
 
 Determines the greatest common divisor of two `bigint`s.
-
-To import and use `gcd` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.gcd
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { gcd } from "effect/BigInt"
 
 assert.deepStrictEqual(gcd(2n, 3n), 1n)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(gcd(16n, 24n), 8n)
 **Signature**
 
 ```ts
-export declare const gcd: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint }
+declare const gcd: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L424)
+
+Since v2.0.0

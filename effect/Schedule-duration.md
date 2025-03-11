@@ -1,17 +1,13 @@
-# duration
+## duration
 
-Alias of {@link fromDelay}.
-
-To import and use `duration` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.duration
-```
+Alias of `fromDelay`.
 
 **Signature**
 
 ```ts
-export declare const duration: (duration: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const duration: (duration: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L908)
+
+Since v2.0.0

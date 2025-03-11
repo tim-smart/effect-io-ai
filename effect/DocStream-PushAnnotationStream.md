@@ -1,11 +1,17 @@
-# PushAnnotationStream
+## PushAnnotationStream
 
 Represents the addition of an annotation of type `A` to a `Doc`.
 
-To import and use `PushAnnotationStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.PushAnnotationStream
+export interface PushAnnotationStream<A> extends DocStream.Variance<A> {
+  readonly _tag: "PushAnnotationStream"
+  readonly annotation: A
+  readonly stream: DocStream<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L144)
+
+Since v1.0.0

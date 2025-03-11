@@ -1,14 +1,6 @@
-# Simplify
+## Simplify
 
 Simplifies the type signature of a type.
-
-To import and use `Simplify` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Simplify
-```
 
 **Example**
 
@@ -17,3 +9,15 @@ import type { Types } from "effect"
 
 type Res = Types.Simplify<{ a: number } & { b: number }> // { a: number; b: number; }
 ```
+
+**Signature**
+
+```ts
+type Simplify<A> = {
+  [K in keyof A]: A[K]
+} extends infer B ? B : never
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L124)
+
+Since v2.0.0

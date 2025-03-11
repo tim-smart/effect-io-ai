@@ -1,4 +1,4 @@
-# runPromise
+## runPromise
 
 Executes an effect and returns the result as a `Promise`.
 
@@ -17,14 +17,6 @@ cancellation, enabling more fine-grained control over asynchronous tasks.
 Use this function when you need to execute an effect and work with its result
 in a promise-based system, such as when integrating with third-party
 libraries that expect `Promise` results.
-
-To import and use `runPromise` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.runPromise
-```
 
 **Example**
 
@@ -47,11 +39,17 @@ import { Effect } from "effect"
 // (FiberFailure) Error: my error
 ```
 
+**See**
+
+- `runPromiseExit` for a version that returns an `Exit` type instead
+of rejecting.
+
 **Signature**
 
 ```ts
-export declare const runPromise: <A, E>(
-  effect: Effect<A, E, never>,
-  options?: { readonly signal?: AbortSignal } | undefined
-) => Promise<A>
+declare const runPromise: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11885)
+
+Since v2.0.0

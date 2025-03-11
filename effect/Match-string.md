@@ -1,17 +1,13 @@
-# string
+## string
 
 Matches values of type `string`.
-
-To import and use `string` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.string
-```
 
 **Signature**
 
 ```ts
-export declare const string: Predicate.Refinement<unknown, string>
+declare const string: Predicate.Refinement<unknown, string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L952)
+
+Since v1.0.0

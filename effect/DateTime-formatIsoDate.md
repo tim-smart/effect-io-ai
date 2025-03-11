@@ -1,17 +1,13 @@
-# formatIsoDate
+## formatIsoDate
 
 Format a `DateTime` as a time zone adjusted ISO date string.
-
-To import and use `formatIsoDate` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.formatIsoDate
-```
 
 **Signature**
 
 ```ts
-export declare const formatIsoDate: (self: DateTime) => string
+declare const formatIsoDate: (self: DateTime) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1523)
+
+Since v3.6.0

@@ -1,4 +1,4 @@
-# cause
+## cause
 
 Retrieves the cause of a failure in an effect.
 
@@ -15,14 +15,6 @@ an effect, giving you more information than just the error message. It can be
 used to log, handle, or analyze failures in more detail, including
 distinguishing between different types of defects (e.g., runtime exceptions,
 interruptions, etc.).
-
-To import and use `cause` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.cause
-```
 
 **Example**
 
@@ -44,5 +36,9 @@ const recovered = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const cause: <A, E, R>(self: Effect<A, E, R>) => Effect<Cause.Cause<E>, never, R>
+declare const cause: <A, E, R>(self: Effect<A, E, R>) => Effect<Cause.Cause<E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3965)
+
+Since v2.0.0

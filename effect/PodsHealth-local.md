@@ -1,18 +1,14 @@
-# local
+## local
 
 A layer that pings the pod directly to check if it's alive.
 This is useful for developing and testing but not reliable in production.
 
-To import and use `local` from the "PodsHealth" module:
-
-```ts
-import * as PodsHealth from "@effect/cluster/PodsHealth"
-// Can be accessed like this
-PodsHealth.local
-```
-
 **Signature**
 
 ```ts
-export declare const local: Layer.Layer<PodsHealth, never, Pods.Pods>
+declare const local: Layer.Layer<PodsHealth, never, Pods.Pods>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L74)
+
+Since v1.0.0

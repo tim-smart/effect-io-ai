@@ -1,19 +1,15 @@
-# Monoid
+## Monoid
 
 `string` monoid under concatenation.
 
 The `empty` value is `''`.
 
-To import and use `Monoid` from the "String" module:
-
-```ts
-import * as String from "@effect/typeclass/data/String"
-// Can be accessed like this
-String.Monoid
-```
-
 **Signature**
 
 ```ts
-export declare const Monoid: monoid.Monoid<string>
+declare const Monoid: monoid.Monoid<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/String.ts#L23)
+
+Since v0.24.0

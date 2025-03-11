@@ -1,17 +1,13 @@
-# chunk
+## chunk
 
 Creates a `Take` with the specified chunk.
-
-To import and use `chunk` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.chunk
-```
 
 **Signature**
 
 ```ts
-export declare const chunk: <A>(chunk: Chunk.Chunk<A>) => Take<A>
+declare const chunk: <A>(chunk: Chunk.Chunk<A>) => Take<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L60)
+
+Since v2.0.0

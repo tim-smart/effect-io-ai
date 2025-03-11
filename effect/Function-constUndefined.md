@@ -1,18 +1,11 @@
-# constUndefined
+## constUndefined
 
 A thunk that returns always `undefined`.
-
-To import and use `constUndefined` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.constUndefined
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { constUndefined } from "effect/Function"
 
 assert.deepStrictEqual(constUndefined(), undefined)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(constUndefined(), undefined)
 **Signature**
 
 ```ts
-export declare const constUndefined: LazyArg<undefined>
+declare const constUndefined: LazyArg<undefined>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L331)
+
+Since v2.0.0

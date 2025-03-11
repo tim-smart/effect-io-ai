@@ -1,12 +1,14 @@
-# BooleanFromString
+## BooleanFromString
 
 Converts an `string` value into its corresponding `boolean`
 ("true" as `true` and "false" as `false`).
 
-To import and use `BooleanFromString` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.BooleanFromString
+declare class BooleanFromString
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10043)
+
+Since v3.11.0

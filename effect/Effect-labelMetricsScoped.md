@@ -1,4 +1,4 @@
-# labelMetricsScoped
+## labelMetricsScoped
 
 Adds labels to metrics within a scope using `MetricLabel` objects.
 
@@ -11,18 +11,12 @@ filtering, or monitoring purposes. The labels are scoped and will be removed
 automatically once the scope is closed, ensuring they are only applied
 temporarily within the defined context.
 
-To import and use `labelMetricsScoped` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.labelMetricsScoped
-```
-
 **Signature**
 
 ```ts
-export declare const labelMetricsScoped: (
-  labels: ReadonlyArray<MetricLabel.MetricLabel>
-) => Effect<void, never, Scope.Scope>
+declare const labelMetricsScoped: (labels: ReadonlyArray<MetricLabel.MetricLabel>) => Effect<void, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11496)
+
+Since v2.0.0

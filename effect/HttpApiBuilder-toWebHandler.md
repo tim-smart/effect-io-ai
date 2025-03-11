@@ -1,14 +1,6 @@
-# toWebHandler
+## toWebHandler
 
 Construct an http web handler from an `HttpApi` instance.
-
-To import and use `toWebHandler` from the "HttpApiBuilder" module:
-
-```ts
-import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
-// Can be accessed like this
-HttpApiBuilder.toWebHandler
-```
 
 **Example**
 
@@ -33,16 +25,9 @@ const { dispose, handler } = HttpApiBuilder.toWebHandler(
 **Signature**
 
 ```ts
-export declare const toWebHandler: <LA, LE>(
-  layer: Layer.Layer<LA | HttpApi.Api | HttpRouter.HttpRouter.DefaultServices, LE>,
-  options?: {
-    readonly middleware?: (
-      httpApp: HttpApp.Default
-    ) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>
-    readonly memoMap?: Layer.MemoMap
-  }
-) => {
-  readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>
-  readonly dispose: () => Promise<void>
-}
+declare const toWebHandler: <LA, LE>(layer: Layer.Layer<LA | HttpApi.Api | HttpRouter.HttpRouter.DefaultServices, LE>, options?: { readonly middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>; readonly memoMap?: Layer.MemoMap; }) => { readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; readonly dispose: () => Promise<void>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L149)
+
+Since v1.0.0

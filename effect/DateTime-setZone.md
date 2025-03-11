@@ -1,14 +1,6 @@
-# setZone
+## setZone
 
 Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
-
-To import and use `setZone` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.setZone
-```
 
 **Example**
 
@@ -27,8 +19,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const setZone: {
-  (zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined }): (self: DateTime) => Zoned
-  (self: DateTime, zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined }): Zoned
-}
+declare const setZone: { (zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; }): Zoned; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L475)
+
+Since v3.6.0

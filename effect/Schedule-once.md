@@ -1,4 +1,4 @@
-# once
+## once
 
 A schedule that executes only once and then stops.
 
@@ -7,16 +7,12 @@ A schedule that executes only once and then stops.
 This schedule triggers a single execution and then terminates. It does not
 repeat or apply any additional logic.
 
-To import and use `once` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.once
-```
-
 **Signature**
 
 ```ts
-export declare const once: Schedule<void, unknown, never>
+declare const once: Schedule<void, unknown, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1425)
+
+Since v2.0.0

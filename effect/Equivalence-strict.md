@@ -1,17 +1,13 @@
-# strict
+## strict
 
 Return an `Equivalence` that uses strict equality (===) to compare values.
-
-To import and use `strict` from the "Equivalence" module:
-
-```ts
-import * as Equivalence from "effect/Equivalence"
-// Can be accessed like this
-Equivalence.strict
-```
 
 **Signature**
 
 ```ts
-export declare const strict: <A>() => Equivalence<A>
+declare const strict: <A>() => Equivalence<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equivalence.ts#L42)
+
+Since v2.0.0

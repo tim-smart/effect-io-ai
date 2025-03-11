@@ -1,14 +1,6 @@
-# lastNonEmpty
+## lastNonEmpty
 
 Get the last element of a non empty array.
-
-To import and use `lastNonEmpty` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.lastNonEmpty
-```
 
 **Example**
 
@@ -16,11 +8,15 @@ Array.lastNonEmpty
 import { Array } from "effect"
 
 const result = Array.lastNonEmpty([1, 2, 3, 4])
-assert.deepStrictEqual(result, 4)
+console.log(result) // 4
 ```
 
 **Signature**
 
 ```ts
-export declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
+declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L725)
+
+Since v2.0.0

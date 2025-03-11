@@ -1,18 +1,14 @@
-# poll
+## poll
 
 Takes a single element from the queue, returning `None` if the queue is
 empty.
 
-To import and use `poll` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.poll
-```
-
 **Signature**
 
 ```ts
-export declare const poll: <A>(self: TDequeue<A>) => STM.STM<Option.Option<A>>
+declare const poll: <A>(self: TDequeue<A>) => STM.STM<Option.Option<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L326)
+
+Since v2.0.0

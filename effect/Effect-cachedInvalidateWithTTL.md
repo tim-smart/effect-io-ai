@@ -1,11 +1,11 @@
-# cachedInvalidateWithTTL
+## cachedInvalidateWithTTL
 
 Caches an effect's result for a specified duration and allows manual
 invalidation before expiration.
 
 **Details**
 
-This function behaves similarly to {@link cachedWithTTL} by caching the
+This function behaves similarly to `cachedWithTTL` by caching the
 result of an effect for a specified period of time. However, it introduces an
 additional feature: it provides an effect that allows you to manually
 invalidate the cached result before it naturally expires.
@@ -26,14 +26,6 @@ This is useful when you need to ensure that the cached data remains valid for
 a certain period but still want to invalidate it if the underlying data
 changes or if you want to force a recomputation.
 
-To import and use `cachedInvalidateWithTTL` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.cachedInvalidateWithTTL
-```
-
 **Example**
 
 ```ts
@@ -50,7 +42,10 @@ const expensiveTask = Effect.promise<string>(() => {
 })
 
 const program = Effect.gen(function* () {
-  const [cached, invalidate] = yield* Effect.cachedInvalidateWithTTL(expensiveTask, "1 hour")
+  const [cached, invalidate] = yield* Effect.cachedInvalidateWithTTL(
+    expensiveTask,
+    "1 hour"
+  )
   yield* cached.pipe(Effect.andThen(Console.log))
   yield* cached.pipe(Effect.andThen(Console.log))
   yield* invalidate
@@ -66,13 +61,19 @@ const program = Effect.gen(function* () {
 // result 2
 ```
 
+**See**
+
+- `cached` for a similar function that caches the result
+indefinitely.
+- `cachedWithTTL` for a similar function that caches the result for
+a specified duration but does not include an effect for manual invalidation.
+
 **Signature**
 
 ```ts
-export declare const cachedInvalidateWithTTL: {
-  (
-    timeToLive: Duration.DurationInput
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E>, Effect<void>], never, R>
-  <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<[Effect<A, E>, Effect<void>], never, R>
-}
+declare const cachedInvalidateWithTTL: { (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E>, Effect<void>], never, R>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<[Effect<A, E>, Effect<void>], never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L405)
+
+Since v2.0.0

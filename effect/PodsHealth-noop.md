@@ -1,18 +1,14 @@
-# noop
+## noop
 
 A layer that considers pods as always alive.
 This is useful for testing only.
 
-To import and use `noop` from the "PodsHealth" module:
-
-```ts
-import * as PodsHealth from "@effect/cluster/PodsHealth"
-// Can be accessed like this
-PodsHealth.noop
-```
-
 **Signature**
 
 ```ts
-export declare const noop: Layer.Layer<PodsHealth, never, never>
+declare const noop: Layer.Layer<PodsHealth, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L66)
+
+Since v1.0.0

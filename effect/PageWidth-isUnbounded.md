@@ -1,18 +1,14 @@
-# isUnbounded
+## isUnbounded
 
 Returns `true` if the specified `PageWidth` is an `Unbounded`, `false`
 otherwise.
 
-To import and use `isUnbounded` from the "PageWidth" module:
-
-```ts
-import * as PageWidth from "@effect/printer/PageWidth"
-// Can be accessed like this
-PageWidth.isUnbounded
-```
-
 **Signature**
 
 ```ts
-export declare const isUnbounded: (self: PageWidth) => self is Unbounded
+declare const isUnbounded: (self: PageWidth) => self is Unbounded
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L108)
+
+Since v1.0.0

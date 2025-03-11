@@ -1,20 +1,13 @@
-# groupWith
+## groupWith
 
 Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s using the provided `isEquivalent` function.
-
-To import and use `groupWith` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.groupWith
-```
 
 **Signature**
 
 ```ts
-export declare const groupWith: {
-  <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<NonEmptyArray<A>>
-  <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<NonEmptyArray<A>>
-}
+declare const groupWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<NonEmptyArray<A>>; <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<NonEmptyArray<A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L599)
+
+Since v2.0.0

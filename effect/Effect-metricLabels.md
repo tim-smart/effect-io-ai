@@ -1,17 +1,13 @@
-# metricLabels
+## metricLabels
 
 Retrieves the metric labels associated with the current scope.
-
-To import and use `metricLabels` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.metricLabels
-```
 
 **Signature**
 
 ```ts
-export declare const metricLabels: Effect<readonly MetricLabel.MetricLabel[], never, never>
+declare const metricLabels: Effect<ReadonlyArray<MetricLabel.MetricLabel>, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11506)
+
+Since v2.0.0

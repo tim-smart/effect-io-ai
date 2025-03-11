@@ -1,376 +1,208 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "From \"./Rpc.js\"",
-    "description": "Re-exports all named exports from the \"./Rpc.js\" module as `Rpc`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Rpc from \"./Rpc.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "From \"./RpcResolver.js\"",
-    "description": "Re-exports all named exports from the \"./RpcResolver.js\" module as `RpcResolver`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as RpcResolver from \"./RpcResolver.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "From \"./RpcResolverNoStream.js\"",
-    "description": "Re-exports all named exports from the \"./RpcResolverNoStream.js\" module as `RpcResolverNoStream`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as RpcResolverNoStream from \"./RpcResolverNoStream.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "From \"./RpcRouter.js\"",
-    "description": "Re-exports all named exports from the \"./RpcRouter.js\" module as `RpcRouter`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as RpcRouter from \"./RpcRouter.js\""
-  },
-  {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "StreamRequestTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const StreamRequestTypeId: typeof StreamRequestTypeId"
+    "signature": "declare const StreamRequestTypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "currentHeaders",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "headers",
-    "signature": "export declare const currentHeaders: FiberRef.FiberRef<Headers.Headers>"
+    "signature": "declare const currentHeaders: FiberRef.FiberRef<Headers.Headers>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "annotateHeaders",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "headers",
-    "signature": "export declare const annotateHeaders: { (headers: Headers.Input): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, headers: Headers.Input): Effect.Effect<A, E, R>; }"
+    "signature": "declare const annotateHeaders: { (headers: Headers.Input): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, headers: Headers.Input): Effect.Effect<A, E, R>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "provideServiceEffect",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "export declare const provideServiceEffect: { <I, S, E, R2>(tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): <Req extends Schema.TaggedRequest.All, R>(self: Rpc<Req, R>) => Rpc<Req, Exclude<R, I> | R2>; <Req extends Schema.TaggedRequest.All, R, I, S, E, R2>(self: Rpc<Req, R>, tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): Rpc<Req, Exclude<R, I> | R2>; }"
+    "signature": "declare const provideServiceEffect: { <I, S, E, R2>(tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): <Req extends Schema.TaggedRequest.All, R>(self: Rpc<Req, R>) => Rpc<Req, Exclude<R, I> | R2>; <Req extends Schema.TaggedRequest.All, R, I, S, E, R2>(self: Rpc<Req, R>, tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): Rpc<Req, Exclude<R, I> | R2>; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "provideService",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "export declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: S): <Req extends Schema.TaggedRequest.All, R>(self: Rpc<Req, R>) => Rpc<Req, Exclude<R, I>>; <Req extends Schema.TaggedRequest.All, R, I, S>(self: Rpc<Req, R>, tag: Context.Tag<I, S>, service: S): Rpc<Req, Exclude<R, I>>; }"
+    "signature": "declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: S): <Req extends Schema.TaggedRequest.All, R>(self: Rpc<Req, R>) => Rpc<Req, Exclude<R, I>>; <Req extends Schema.TaggedRequest.All, R, I, S>(self: Rpc<Req, R>, tag: Context.Tag<I, S>, service: S): Rpc<Req, Exclude<R, I>>; }"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "isRpc",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": null
+    "signature": "declare const isRpc: (u: unknown) => u is Rpc<any, any>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "effect",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const effect: <Req extends Schema.TaggedRequest.All, R>(schema: Schema.Schema<Req, any, unknown>, handler: (request: Req) => Effect.Effect<EffectRequest.Request.Success<Req>, EffectRequest.Request.Error<Req>, R>) => Rpc<Req, R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "StreamRequest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": null
+    "signature": "declare const StreamRequest: <Self>() => <Tag extends string, E, IE, RE, A, IA, RA, Payload extends Schema.Struct.Fields>(tag: Tag, options: { readonly failure: Schema.Schema<E, IE, RE>; readonly success: Schema.Schema<A, IA, RA>; readonly payload: Payload; }) => StreamRequestConstructor<Tag, Self, Schema.Schema.Context<Payload[keyof Payload]>, Types.Simplify<Schema.Struct.Encoded<Payload>>, Types.Simplify<Schema.Struct.Type<Payload>>, RE | RA, IE, E, IA, A>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "stream",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const stream: <Req extends StreamRequest.Any, R>(schema: Schema.Schema<Req, any, unknown>, handler: (request: Req) => Stream.Stream<Req extends Schema.WithResult<infer A, infer _I, infer _E, infer _EI, infer _R> ? A : never, Req extends Schema.WithResult<infer _A, infer _I, infer E, infer _EI, infer _R> ? E : never, R>) => Rpc<Req, R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "RequestSchema",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": null
+    "signature": "declare const RequestSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => Schema.Schema<RequestFrom<A>, RequestFrom<I>, R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "schemaHeaders",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "headers",
-    "signature": null
+    "signature": "declare const schemaHeaders: <R, I extends Record.ReadonlyRecord<string, string | undefined>, A>(schema: Schema.Schema<R, I, A>) => Effect.Effect<R, ParseResult.ParseError, A>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "request",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "requests",
-    "signature": null
+    "signature": "declare const request: <A extends Schema.TaggedRequest.All>(request: A, options?: { readonly spanPrefix?: string; }) => Effect.Effect<Request<A>, never, Scope>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "call",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "requests",
-    "signature": null
+    "signature": "declare const call: <A extends Schema.TaggedRequest.All, R extends RequestResolver.RequestResolver<Request<A>> | Effect.Effect<RequestResolver.RequestResolver<Request<A>>, never, any>>(req: A, resolver: R, options?: { readonly spanPrefix?: string; }) => R extends Effect.Effect<infer _A, infer _E, infer R> ? Rpc.Result<A, R> : Rpc.Result<A>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "Request",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface Request<A extends Schema.TaggedRequest.All> extends\n  EffectRequest.Request<\n    EffectRequest.Request.Success<A>,\n    EffectRequest.Request.Error<A>\n  >,\n  PrimaryKey.PrimaryKey,\n  Schema.WithResult<\n    Schema.WithResult.Context<A>,\n    Schema.Schema.Encoded<A[typeof Schema.symbolWithResult][\"failure\"]>,\n    Schema.Schema.Type<A[typeof Schema.symbolWithResult][\"failure\"]>,\n    Schema.Schema.Encoded<A[typeof Schema.symbolWithResult][\"success\"]>,\n    Schema.Schema.Type<A[typeof Schema.symbolWithResult][\"success\"]>\n  >\n{\n  readonly request: A\n  readonly traceId: string\n  readonly spanId: string\n  readonly sampled: boolean\n  readonly headers: Headers.Headers\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "RequestFrom",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface RequestFrom<A> {\n  readonly request: A\n  readonly traceId: string\n  readonly spanId: string\n  readonly sampled: boolean\n  readonly headers: Record<string, string>\n}"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "RpcEffect",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -380,15 +212,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "RpcStream",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -398,15 +226,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "StreamRequest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -416,15 +240,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
     "name": "StreamRequestConstructor",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -432,341 +252,377 @@
     "signature": "export interface StreamRequestConstructor<Tag extends string, Self, R, IS, S, RR, IE, E, IA, A>\n  extends Schema.Schema<Self, Types.Simplify<IS & { readonly _tag: Tag }>, R>\n{\n  new(\n    props: Types.Equals<S, {}> extends true ? void : S,\n    disableValidation?: boolean\n  ): StreamRequest<Tag, R, IS & { readonly _tag: Tag }, Self, RR, IE, E, IA, A> & S\n}"
   },
   {
-    "_tag": "TypeAlias",
+    "_tag": "Interface",
     "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
     },
     "project": "@effect/rpc",
-    "name": "Rpc",
-    "description": null,
+    "name": "Request",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type Rpc<Req extends Schema.TaggedRequest.All, R> = RpcEffect<Req, R> | RpcStream<Req, R>"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "StreamRequestTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export type StreamRequestTypeId = typeof StreamRequestTypeId"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "Rpc",
-      "path": [
-        "src",
-        "Rpc.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcResolver",
-      "path": [
-        "src",
-        "RpcResolver.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "annotateHeaders",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": "export declare const annotateHeaders: { (headers: Headers.Input): <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>) => RequestResolver.RequestResolver<Rpc.Request<Req>, R>; <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>, headers: Headers.Input): RequestResolver.RequestResolver<Rpc.Request<Req>, R>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcResolver",
-      "path": [
-        "src",
-        "RpcResolver.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "annotateHeadersEffect",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": "export declare const annotateHeadersEffect: { <E, R2>(headers: Effect.Effect<Headers.Input, E, R2>): <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>) => RequestResolver.RequestResolver<Rpc.Request<Req>, R | R2>; <Req extends Schema.TaggedRequest.All, R, E, R2>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>, headers: Effect.Effect<Headers.Input, E, R2>): RequestResolver.RequestResolver<Rpc.Request<Req>, R | R2>; }"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcResolver",
-      "path": [
-        "src",
-        "RpcResolver.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "make",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcResolver",
-      "path": [
-        "src",
-        "RpcResolver.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "toClient",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": null
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "RpcResolver",
-      "path": [
-        "src",
-        "RpcResolver.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "Client",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export type Client<\n  R extends\n    | RequestResolver.RequestResolver<Rpc.Request<any>, never>\n    | Effect.Effect<RequestResolver.RequestResolver<Rpc.Request<any>, never>, never, any>\n> = R extends Effect.Effect<RequestResolver.RequestResolver<Rpc.Request<infer RReq>>, infer _E, infer R> ?\n  (<Req extends RReq>(request: Req) => Rpc.Rpc.Result<Req, R>)\n  : R extends RequestResolver.RequestResolver<Rpc.Request<infer RReq>, never> ?\n    (<Req extends RReq>(request: Req) => Rpc.Rpc.Result<Req>)\n  : never"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcResolverNoStream",
-      "path": [
-        "src",
-        "RpcResolverNoStream.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "make",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "provideServiceEffect",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "context",
-    "signature": "export declare const provideServiceEffect: { <I, S, E, R2>(tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): <Reqs extends Schema.TaggedRequest.All, R>(self: RpcRouter<Reqs, R>) => RpcRouter<Reqs, Exclude<R, I> | R2>; <Reqs extends Schema.TaggedRequest.All, R, I, S, E, R2>(self: RpcRouter<Reqs, R>, tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): RpcRouter<Reqs, Exclude<R, I> | R2>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "provideService",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "context",
-    "signature": "export declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: S): <Reqs extends Schema.TaggedRequest.All, R>(self: RpcRouter<Reqs, R>) => RpcRouter<Reqs, Exclude<R, I>>; <Reqs extends Schema.TaggedRequest.All, R, I, S>(self: RpcRouter<Reqs, R>, tag: Context.Tag<I, S>, service: S): RpcRouter<Reqs, Exclude<R, I>>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "toHandler",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": "export declare const toHandler: { (options?: { readonly spanPrefix?: string; }): <R extends RpcRouter<any, any>>(self: R) => (u: unknown) => Stream.Stream<RpcRouter.Response, ParseError, RpcRouter.Context<R>>; <R extends RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): (u: unknown) => Stream.Stream<RpcRouter.Response, ParseError, RpcRouter.Context<R>>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "toHandlerNoStream",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": "export declare const toHandlerNoStream: { (options?: { readonly spanPrefix?: string; }): <R extends RpcRouter<any, any>>(self: R) => (u: unknown) => Effect.Effect<RpcRouter.ResponseEffect, ParseError, RpcRouter.Context<R>>; <R extends RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): (u: unknown) => Effect.Effect<RpcRouter.ResponseEffect, ParseError, RpcRouter.Context<R>>; }"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "isRpcRouter",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "refinements",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "make",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "toHandlerRaw",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
-    },
-    "project": "@effect/rpc",
-    "name": "toHandlerUndecoded",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combinators",
-    "signature": null
+    "signature": "export interface Request<A extends Schema.TaggedRequest.All> extends\n  EffectRequest.Request<\n    EffectRequest.Request.Success<A>,\n    EffectRequest.Request.Error<A>\n  >,\n  PrimaryKey.PrimaryKey,\n  Schema.WithResult<\n    Schema.WithResult.Context<A>,\n    Schema.Schema.Encoded<A[typeof Schema.symbolWithResult][\"failure\"]>,\n    Schema.Schema.Type<A[typeof Schema.symbolWithResult][\"failure\"]>,\n    Schema.Schema.Encoded<A[typeof Schema.symbolWithResult][\"success\"]>,\n    Schema.Schema.Type<A[typeof Schema.symbolWithResult][\"success\"]>\n  >\n{\n  readonly request: A\n  readonly traceId: string\n  readonly spanId: string\n  readonly sampled: boolean\n  readonly headers: Headers.Headers\n}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RequestFrom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RequestFrom<A> {\n  readonly request: A\n  readonly traceId: string\n  readonly spanId: string\n  readonly sampled: boolean\n  readonly headers: Record<string, string>\n}"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Rpc<Req, R> = RpcEffect<Req, R> | RpcStream<Req, R>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "StreamRequestTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type StreamRequestTypeId = typeof StreamRequestTypeId"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc.Proto",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Proto<Req extends Schema.TaggedRequest.All> extends Pipeable {\n    readonly [TypeId]: TypeId\n    readonly _tag: string\n    readonly schema: Schema.Schema<Req, any, unknown>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc.Context",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Context<A> = A extends Rpc<infer Req, infer R>\n    ? R | Schema.SerializableWithResult.Context<Req>\n    : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc.Request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Request<A> = Schema.Schema.Type<A[\"schema\"]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc.Result",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Result<A, R> = StreamRequestTypeId extends keyof A ?\n    EffectRequest.Request.Success<A> :\n    Effect.Effect<EffectRequest.Request.Success<A>, EffectRequest.Request.Error<A>, R>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc.ResultUndecoded",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type ResultUndecoded<A, R> = A extends\n    Schema.WithResult<infer _A, infer I, infer E, infer _EI, infer _R>\n    ? StreamRequestTypeId extends keyof A ? Stream.Stream<I, E, R>\n    : Effect.Effect<I, E, R>\n    : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Rpc.ts",
+      "path": "src/Rpc.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "StreamRequest.Any",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "type Any = | StreamRequest<string, any, any, any, any, any, any, any, any>\n    | StreamRequest<string, any, any, any, any, never, never, any, any>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcResolver.ts",
+      "path": "src/RpcResolver.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "annotateHeaders",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const annotateHeaders: { (headers: Headers.Input): <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>) => RequestResolver.RequestResolver<Rpc.Request<Req>, R>; <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>, headers: Headers.Input): RequestResolver.RequestResolver<Rpc.Request<Req>, R>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcResolver.ts",
+      "path": "src/RpcResolver.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "annotateHeadersEffect",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const annotateHeadersEffect: { <E, R2>(headers: Effect.Effect<Headers.Input, E, R2>): <Req extends Schema.TaggedRequest.All, R>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>) => RequestResolver.RequestResolver<Rpc.Request<Req>, R | R2>; <Req extends Schema.TaggedRequest.All, R, E, R2>(self: RequestResolver.RequestResolver<Rpc.Request<Req>, R>, headers: Effect.Effect<Headers.Input, E, R2>): RequestResolver.RequestResolver<Rpc.Request<Req>, R | R2>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcResolver.ts",
+      "path": "src/RpcResolver.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <HR, E>(handler: (u: ReadonlyArray<unknown>) => Stream.Stream<unknown, E, HR>) => <R extends Router.RpcRouter<any, any>>() => RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>> | HR>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcResolver.ts",
+      "path": "src/RpcResolver.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "toClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toClient: <R extends RequestResolver.RequestResolver<Rpc.Request<any>, never> | Effect.Effect<RequestResolver.RequestResolver<Rpc.Request<any>, never>, never, any>>(resolver: R, options?: { readonly spanPrefix?: string; }) => Client<R>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcResolver.ts",
+      "path": "src/RpcResolver.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Client",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Client<R> = R extends Effect.Effect<RequestResolver.RequestResolver<Rpc.Request<infer RReq>>, infer _E, infer R> ?\n  (<Req extends RReq>(request: Req) => Rpc.Rpc.Result<Req, R>)\n  : R extends RequestResolver.RequestResolver<Rpc.Request<infer RReq>, never> ?\n    (<Req extends RReq>(request: Req) => Rpc.Rpc.Result<Req>)\n  : never"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcResolverNoStream.ts",
+      "path": "src/RpcResolverNoStream.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <HR, E>(handler: (u: ReadonlyArray<unknown>) => Effect.Effect<unknown, E, HR>) => <R extends Router.RpcRouter<any, any>>() => RequestResolver.RequestResolver<Rpc.Request<Router.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<Router.RpcRouter.Request<R>> | HR>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: unique symbol"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "provideServiceEffect",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const provideServiceEffect: { <I, S, E, R2>(tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): <Reqs extends Schema.TaggedRequest.All, R>(self: RpcRouter<Reqs, R>) => RpcRouter<Reqs, Exclude<R, I> | R2>; <Reqs extends Schema.TaggedRequest.All, R, I, S, E, R2>(self: RpcRouter<Reqs, R>, tag: Context.Tag<I, S>, effect: Effect.Effect<S, E, R2>): RpcRouter<Reqs, Exclude<R, I> | R2>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "provideService",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: S): <Reqs extends Schema.TaggedRequest.All, R>(self: RpcRouter<Reqs, R>) => RpcRouter<Reqs, Exclude<R, I>>; <Reqs extends Schema.TaggedRequest.All, R, I, S>(self: RpcRouter<Reqs, R>, tag: Context.Tag<I, S>, service: S): RpcRouter<Reqs, Exclude<R, I>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "toHandler",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toHandler: { (options?: { readonly spanPrefix?: string; }): <R extends RpcRouter<any, any>>(self: R) => (u: unknown) => Stream.Stream<RpcRouter.Response, ParseError, RpcRouter.Context<R>>; <R extends RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): (u: unknown) => Stream.Stream<RpcRouter.Response, ParseError, RpcRouter.Context<R>>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "toHandlerNoStream",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toHandlerNoStream: { (options?: { readonly spanPrefix?: string; }): <R extends RpcRouter<any, any>>(self: R) => (u: unknown) => Effect.Effect<RpcRouter.ResponseEffect, ParseError, RpcRouter.Context<R>>; <R extends RpcRouter<any, any>>(self: R, options?: { readonly spanPrefix?: string; }): (u: unknown) => Effect.Effect<RpcRouter.ResponseEffect, ParseError, RpcRouter.Context<R>>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "isRpcRouter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isRpcRouter: (u: unknown) => u is RpcRouter<any, any>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <Rpcs extends ReadonlyArray<Rpc.Rpc<any, any> | RpcRouter<any, any>>>(...rpcs: Rpcs) => RpcRouter<Rpc.Rpc.Request<Extract<Rpcs[number], { readonly [Rpc.TypeId]: Rpc.TypeId; }>> | RpcRouter.Request<Extract<Rpcs[number], { readonly [TypeId]: TypeId; }>>, Rpc.Rpc.Context<Extract<Rpcs[number], { readonly [Rpc.TypeId]: Rpc.TypeId; }>> | RpcRouter.Context<Extract<Rpcs[number], { readonly [TypeId]: TypeId; }>>>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "toHandlerRaw",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toHandlerRaw: <R extends RpcRouter<any, any>>(router: R) => <Req extends RpcRouter.Request<R>>(request: Req) => Rpc.Rpc.Result<Req, RpcRouter.ContextRaw<R>>"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "toHandlerUndecoded",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toHandlerUndecoded: <R extends RpcRouter<any, any>>(router: R) => <Req extends RpcRouter.Request<R>>(request: Req) => Rpc.Rpc.ResultUndecoded<Req, RpcRouter.Context<R>>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
     },
     "project": "@effect/rpc",
     "name": "RpcRouter",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -776,19 +632,85 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "RpcRouter",
-      "path": [
-        "src",
-        "RpcRouter.ts"
-      ]
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
     },
     "project": "@effect/rpc",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcRouter.Context",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Context<A> = A extends RpcRouter<infer Req, infer R>\n    ? R | Schema.SerializableWithResult.Context<Req>\n    : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcRouter.ContextRaw",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type ContextRaw<A> = A extends RpcRouter<infer Req, infer R>\n    ? R | Schema.Serializable.Context<Req>\n    : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcRouter.Request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Request<A> = A extends RpcRouter<infer Req, infer _R> ? Req\n    : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcRouter.Response",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Response = [\n    index: number,\n    response: Schema.ExitEncoded<any, any, unknown> | ReadonlyArray<Schema.ExitEncoded<any, any, unknown>>\n  ]"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcRouter.ts",
+      "path": "src/RpcRouter.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcRouter.ResponseEffect",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type ResponseEffect = | Schema.ExitEncoded<any, any, unknown>\n    | ReadonlyArray<Schema.ExitEncoded<any, any, unknown>>"
   }
 ]

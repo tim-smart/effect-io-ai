@@ -1,17 +1,17 @@
-# layerStorage
+## layerStorage
 
 Creates an KeyValueStorage from an instance of the `Storage` api.
 
-To import and use `layerStorage` from the "KeyValueStore" module:
+**See**
 
-```ts
-import * as KeyValueStore from "@effect/platform/KeyValueStore"
-// Can be accessed like this
-KeyValueStore.layerStorage
-```
+- https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 
 **Signature**
 
 ```ts
-export declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
+declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L240)
+
+Since v1.0.0

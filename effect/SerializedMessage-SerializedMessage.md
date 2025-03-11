@@ -1,11 +1,13 @@
-# SerializedMessage
+## SerializedMessage
 
 Represents a Message that has been serialized.
 
-To import and use `SerializedMessage` from the "SerializedMessage" module:
+**Signature**
 
 ```ts
-import * as SerializedMessage from "@effect/cluster/SerializedMessage"
-// Can be accessed like this
-SerializedMessage.SerializedMessage
+declare class SerializedMessage
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L31)
+
+Since v1.0.0

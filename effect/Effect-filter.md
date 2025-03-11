@@ -1,4 +1,4 @@
-# filter
+## filter
 
 Filters an iterable using the specified effectful predicate.
 
@@ -23,14 +23,6 @@ or whether to negate the condition.
 This function allows you to selectively keep or remove elements based on a
 condition that may involve asynchronous or side-effect-causing operations.
 
-To import and use `filter` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.filter
-```
-
 **Example**
 
 ```ts
@@ -39,7 +31,7 @@ import { Effect } from "effect"
 const numbers = [1, 2, 3, 4, 5]
 const predicate = (n: number, i: number) => Effect.succeed(n % 2 === 0)
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const result = yield* Effect.filter(numbers, predicate)
   console.log(result)
 })
@@ -51,29 +43,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const filter: {
-  <A, E, R>(
-    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly negate?: boolean | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
-  <A, E, R>(
-    elements: Iterable<A>,
-    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly negate?: boolean | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<Array<A>, E, R>
-}
+declare const filter: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly negate?: boolean | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly negate?: boolean | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Array<A>, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1372)
+
+Since v2.0.0

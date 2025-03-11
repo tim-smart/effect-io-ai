@@ -1,4 +1,4 @@
-# flatMapNullable
+## flatMapNullable
 
 Combines `flatMap` and `fromNullable`, transforming the value inside a `Some`
 using a function that may return `null` or `undefined`.
@@ -14,14 +14,6 @@ function is not applied, and `None` is returned.
 This utility is particularly useful when working with deeply nested optional
 values or chaining computations that may result in `null` or `undefined` at
 some point.
-
-To import and use `flatMapNullable` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.flatMapNullable
-```
 
 **Example**
 
@@ -41,21 +33,28 @@ interface Employee {
 const employee1: Employee = { company: { address: { street: { name: "high street" } } } }
 
 // Extracting a deeply nested property
-console.log(Option.some(employee1).pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name)))
+console.log(
+  Option.some(employee1)
+    .pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name))
+)
 // Output: { _id: 'Option', _tag: 'Some', value: 'high street' }
 
 const employee2: Employee = { company: { address: { street: {} } } }
 
 // Property does not exist
-console.log(Option.some(employee2).pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name)))
+console.log(
+  Option.some(employee2)
+    .pipe(Option.flatMapNullable((employee) => employee.company?.address?.street?.name))
+)
 // Output: { _id: 'Option', _tag: 'None' }
 ```
 
 **Signature**
 
 ```ts
-export declare const flatMapNullable: {
-  <A, B>(f: (a: A) => B | null | undefined): (self: Option<A>) => Option<NonNullable<B>>
-  <A, B>(self: Option<A>, f: (a: A) => B | null | undefined): Option<NonNullable<B>>
-}
+declare const flatMapNullable: { <A, B>(f: (a: A) => B | null | undefined): (self: Option<A>) => Option<NonNullable<B>>; <A, B>(self: Option<A>, f: (a: A) => B | null | undefined): Option<NonNullable<B>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1145)
+
+Since v2.0.0

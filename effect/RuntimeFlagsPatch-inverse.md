@@ -1,18 +1,14 @@
-# inverse
+## inverse
 
 Creates a `RuntimeFlagsPatch` which describes the inverse of the patch
 specified by the provided `RuntimeFlagsPatch`.
 
-To import and use `inverse` from the "RuntimeFlagsPatch" module:
-
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
-// Can be accessed like this
-RuntimeFlagsPatch.inverse
-```
-
 **Signature**
 
 ```ts
-export declare const inverse: (patch: RuntimeFlagsPatch) => RuntimeFlagsPatch
+declare const inverse: (patch: RuntimeFlagsPatch) => RuntimeFlagsPatch
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlagsPatch.ts#L157)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# reverse
+## reverse
 
 The dual of a `Semigroup`, obtained by flipping the arguments of `combine`.
-
-To import and use `reverse` from the "Semigroup" module:
-
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
-// Can be accessed like this
-Semigroup.reverse
-```
 
 **Signature**
 
 ```ts
-export declare const reverse: <A>(S: Semigroup<A>) => Semigroup<A>
+declare const reverse: <A>(S: Semigroup<A>) => Semigroup<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L72)
+
+Since v0.24.0

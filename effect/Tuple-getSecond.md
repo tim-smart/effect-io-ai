@@ -1,18 +1,11 @@
-# getSecond
+## getSecond
 
 Return the second element of a tuple.
-
-To import and use `getSecond` from the "Tuple" module:
-
-```ts
-import * as Tuple from "effect/Tuple"
-// Can be accessed like this
-Tuple.getSecond
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { getSecond } from "effect/Tuple"
 
 assert.deepStrictEqual(getSecond(["hello", 42]), 42)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(getSecond(["hello", 42]), 42)
 **Signature**
 
 ```ts
-export declare const getSecond: <L, R>(self: readonly [L, R]) => R
+declare const getSecond: <L, R>(self: readonly [L, R]) => R
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L66)
+
+Since v2.0.0

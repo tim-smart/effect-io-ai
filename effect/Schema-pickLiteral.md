@@ -1,20 +1,12 @@
-# pickLiteral
+## pickLiteral
 
 Creates a new `Schema` from a literal schema.
-
-To import and use `pickLiteral` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.pickLiteral
-```
 
 **Example**
 
 ```ts
-import * as Schema from "effect/Schema"
-import { Either } from "effect"
+import * as assert from "node:assert"
+import { Either, Schema } from "effect"
 
 const schema = Schema.Literal("a", "b", "c").pipe(Schema.pickLiteral("a", "b"))
 
@@ -26,7 +18,9 @@ assert.strictEqual(Either.isLeft(Schema.decodeUnknownEither(schema)("c")), true)
 **Signature**
 
 ```ts
-export declare const pickLiteral: <A extends AST.LiteralValue, L extends array_.NonEmptyReadonlyArray<A>>(
-  ...literals: L
-) => <I, R>(_schema: Schema<A, I, R>) => Literal<[...L]>
+declare const pickLiteral: <A extends AST.LiteralValue, L extends array_.NonEmptyReadonlyArray<A>>(...literals: L) => <I, R>(_schema: Schema<A, I, R>) => Literal<[...L]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L732)
+
+Since v3.10.0

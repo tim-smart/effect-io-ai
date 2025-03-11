@@ -1,12 +1,18 @@
-# BooleanFromUnknown
+## BooleanFromUnknown
 
 Converts an arbitrary value to a `boolean` by testing whether it is truthy.
 Uses `!!val` to coerce the value to a `boolean`.
 
-To import and use `BooleanFromUnknown` from the "Schema" module:
+**See**
+
+- https://developer.mozilla.org/docs/Glossary/Truthy
+
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.BooleanFromUnknown
+declare class BooleanFromUnknown
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10026)
+
+Since v3.10.0

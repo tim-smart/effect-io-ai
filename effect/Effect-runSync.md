@@ -1,4 +1,4 @@
-# runSync
+## runSync
 
 Executes an effect synchronously, running it immediately and returning the
 result.
@@ -19,7 +19,6 @@ care for purely synchronous and error-free effects.
 **When to Use**
 
 Use this function when:
-
 - You are sure that the effect will not fail or involve asynchronous
   operations.
 - You need a direct, synchronous result from the effect.
@@ -27,16 +26,8 @@ Use this function when:
   allowed.
 
 Avoid using this function for effects that can fail or require asynchronous
-handling. For such cases, consider using {@link runPromise} or
-{@link runSyncExit}.
-
-To import and use `runSync` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.runSync
-```
+handling. For such cases, consider using `runPromise` or
+`runSyncExit`.
 
 **Example**
 
@@ -81,8 +72,17 @@ try {
 // (FiberFailure) AsyncFiberException: Fiber #0 cannot be resolved synchronously. This is caused by using runSync on an effect that performs async work
 ```
 
+**See**
+
+- `runSyncExit` for a version that returns an `Exit` type instead of
+throwing an error.
+
 **Signature**
 
 ```ts
-export declare const runSync: <A, E>(effect: Effect<A, E>) => A
+declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12026)
+
+Since v2.0.0

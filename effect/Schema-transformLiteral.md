@@ -1,18 +1,11 @@
-# transformLiteral
+## transformLiteral
 
 Creates a new `Schema` which transforms literal values.
-
-To import and use `transformLiteral` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.transformLiteral
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as S from "effect/Schema"
 
 const schema = S.transformLiteral(0, "a")
@@ -23,8 +16,9 @@ assert.deepStrictEqual(S.decodeSync(schema)(0), "a")
 **Signature**
 
 ```ts
-export declare function transformLiteral<Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(
-  from: Encoded,
-  to: Type
-): transformLiteral<Type, Encoded>
+declare const transformLiteral: <Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(from: Encoded, to: Type) => transformLiteral<Type, Encoded>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3970)
+
+Since v3.10.0

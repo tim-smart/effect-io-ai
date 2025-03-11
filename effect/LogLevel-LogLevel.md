@@ -1,14 +1,16 @@
-# LogLevel
+## LogLevel
 
 A `LogLevel` represents the log level associated with an individual logging
 operation. Log levels are used both to describe the granularity (or
 importance) of individual log statements, as well as to enable tuning
 verbosity of log output.
 
-To import and use `LogLevel` from the "LogLevel" module:
+**Signature**
 
 ```ts
-import * as LogLevel from "effect/LogLevel"
-// Can be accessed like this
-LogLevel.LogLevel
+type LogLevel = All | Fatal | Error | Warning | Info | Debug | Trace | None
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LogLevel.ts#L23)
+
+Since v2.0.0

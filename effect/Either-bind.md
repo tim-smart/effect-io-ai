@@ -1,4 +1,4 @@
-# bind
+## bind
 
 The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 
@@ -9,17 +9,10 @@ Here's how the do simulation works:
 3. You can accumulate multiple `bind` statements to define multiple variables within the scope
 4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
 
-To import and use `bind` from the "Either" module:
-
-```ts
-import * as Either from "effect/Either"
-// Can be accessed like this
-Either.bind
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Either, pipe } from "effect"
 
 const result = pipe(
@@ -31,18 +24,18 @@ const result = pipe(
 assert.deepStrictEqual(result, Either.right({ x: 2, y: 3, sum: 5 }))
 ```
 
+**See**
+
+- `Do`
+- `bindTo`
+- `let`
+
 **Signature**
 
 ```ts
-export declare const bind: {
-  <N extends string, A extends object, B, L2>(
-    name: Exclude<N, keyof A>,
-    f: (a: NoInfer<A>) => Either<B, L2>
-  ): <L1>(self: Either<A, L1>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B }, L1 | L2>
-  <A extends object, L1, N extends string, B, L2>(
-    self: Either<A, L1>,
-    name: Exclude<N, keyof A>,
-    f: (a: NoInfer<A>) => Either<B, L2>
-  ): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B }, L1 | L2>
-}
+declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): <L1>(self: Either<A, L1>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Either<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L872)
+
+Since v2.0.0

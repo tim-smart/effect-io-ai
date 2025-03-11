@@ -1,18 +1,14 @@
-# peek
+## peek
 
 Views the next element in the queue without removing it, retrying if the
 queue is empty.
 
-To import and use `peek` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.peek
-```
-
 **Signature**
 
 ```ts
-export declare const peek: <A>(self: TDequeue<A>) => STM.STM<A>
+declare const peek: <A>(self: TDequeue<A>) => STM.STM<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L308)
+
+Since v2.0.0

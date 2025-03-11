@@ -1,16 +1,8 @@
-# liftEither
+## liftEither
 
 Lifts a function that returns an `Either` into a function that returns an array.
 If the `Either` is a left, it returns an empty array.
 If the `Either` is a right, it returns an array with the right value.
-
-To import and use `liftEither` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.liftEither
-```
 
 **Example**
 
@@ -23,10 +15,10 @@ const parseNumber = (s: string): Either.Either<number, Error> =>
 const liftedParseNumber = Array.liftEither(parseNumber)
 
 const result1 = liftedParseNumber("42")
-assert.deepStrictEqual(result1, [42])
+console.log(result1) // [42]
 
 const result2 = liftedParseNumber("not a number")
-assert.deepStrictEqual(result2, [])
+console.log(result2) // []
 
 // Explanation:
 // The function parseNumber is lifted to return an array.
@@ -37,5 +29,9 @@ assert.deepStrictEqual(result2, [])
 **Signature**
 
 ```ts
-export declare const liftEither: <A extends Array<unknown>, E, B>(f: (...a: A) => Either<B, E>) => (...a: A) => Array<B>
+declare const liftEither: <A extends Array<unknown>, E, B>(f: (...a: A) => Either<B, E>) => (...a: A) => Array<B>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2815)
+
+Since v2.0.0

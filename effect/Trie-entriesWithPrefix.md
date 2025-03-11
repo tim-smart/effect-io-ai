@@ -1,19 +1,12 @@
-# entriesWithPrefix
+## entriesWithPrefix
 
 Returns an `IterableIterator` of the entries within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).
 
-To import and use `entriesWithPrefix` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.entriesWithPrefix
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(
@@ -24,17 +17,15 @@ const trie = Trie.empty<number>().pipe(
 )
 
 const result = Array.from(Trie.entriesWithPrefix(trie, "she"))
-assert.deepStrictEqual(result, [
-  ["she", 0],
-  ["shells", 1]
-])
+assert.deepStrictEqual(result, [["she", 0], ["shells", 1]])
 ```
 
 **Signature**
 
 ```ts
-export declare const entriesWithPrefix: {
-  (prefix: string): <V>(self: Trie<V>) => IterableIterator<[string, V]>
-  <V>(self: Trie<V>, prefix: string): IterableIterator<[string, V]>
-}
+declare const entriesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<[string, V]>; <V>(self: Trie<V>, prefix: string): IterableIterator<[string, V]>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L312)
+
+Since v2.0.0

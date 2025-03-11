@@ -1,18 +1,11 @@
-# isNotNull
+## isNotNull
 
 Tests if a value is not `null`.
-
-To import and use `isNotNull` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isNotNull
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isNotNull } from "effect/Predicate"
 
 assert.deepStrictEqual(isNotNull(undefined), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isNotNull(null), false)
 **Signature**
 
 ```ts
-export declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
+declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L392)
+
+Since v2.0.0

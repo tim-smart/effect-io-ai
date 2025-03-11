@@ -1,17 +1,13 @@
-# shardId
+## shardId
 
 Gets the current shardId
-
-To import and use `shardId` from the "RecipientBehaviourContext" module:
-
-```ts
-import * as RecipientBehaviourContext from "@effect/cluster/RecipientBehaviourContext"
-// Can be accessed like this
-RecipientBehaviourContext.shardId
-```
 
 **Signature**
 
 ```ts
-export declare const shardId: Effect.Effect<ShardId.ShardId, never, RecipientBehaviourContext>
+declare const shardId: Effect.Effect<ShardId.ShardId, never, RecipientBehaviourContext>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L81)
+
+Since v1.0.0

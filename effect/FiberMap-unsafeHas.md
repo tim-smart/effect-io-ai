@@ -1,20 +1,13 @@
-# unsafeHas
+## unsafeHas
 
 Check if a key exists in the FiberMap.
-
-To import and use `unsafeHas` from the "FiberMap" module:
-
-```ts
-import * as FiberMap from "effect/FiberMap"
-// Can be accessed like this
-FiberMap.unsafeHas
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeHas: {
-  <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => boolean
-  <K, A, E>(self: FiberMap<K, A, E>, key: K): boolean
-}
+declare const unsafeHas: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => boolean; <K, A, E>(self: FiberMap<K, A, E>, key: K): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L363)
+
+Since v2.0.0

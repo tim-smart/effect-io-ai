@@ -1,17 +1,13 @@
-# last
+## last
 
 Get the last element in a `ReadonlyArray`, or `None` if the `ReadonlyArray` is empty.
-
-To import and use `last` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.last
-```
 
 **Signature**
 
 ```ts
-export declare const last: <A>(self: ReadonlyArray<A>) => Option<A>
+declare const last: <A>(self: ReadonlyArray<A>) => Option<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L707)
+
+Since v2.0.0

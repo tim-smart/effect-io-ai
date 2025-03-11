@@ -1,19 +1,13 @@
-# make
+## make
 
 Makes a new `TArray` that is initialized with specified values.
-
-To import and use `make` from the "TArray" module:
-
-```ts
-import * as TArray from "effect/TArray"
-// Can be accessed like this
-TArray.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <Elements extends [any, ...Array<any>]>(
-  ...elements: Elements
-) => STM.STM<TArray<Elements[number]>>
+declare const make: <Elements extends [any, ...Array<any>]>(...elements: Elements) => STM.STM<TArray<Elements[number]>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TArray.ts#L341)
+
+Since v2.0.0

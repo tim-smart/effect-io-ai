@@ -1,4 +1,4 @@
-# Reference
+## Reference
 
 Creates a context tag with a default value.
 
@@ -9,21 +9,17 @@ provide a default value for the service, which will automatically be used
 when the context is accessed, or override it with a custom implementation
 when needed.
 
-To import and use `Reference` from the "Context" module:
-
-```ts
-import * as Context from "effect/Context"
-// Can be accessed like this
-Context.Reference
-```
-
 **Example**
 
 ```ts
 // Title: Declaring a Tag with a default value
+import * as assert from "node:assert"
 import { Context, Effect } from "effect"
 
-class SpecialNumber extends Context.Reference<SpecialNumber>()("SpecialNumber", { defaultValue: () => 2048 }) {}
+class SpecialNumber extends Context.Reference<SpecialNumber>()(
+  "SpecialNumber",
+  { defaultValue: () => 2048 }
+) {}
 
 //      ┌─── Effect<void, never, never>
 //      ▼
@@ -43,7 +39,10 @@ Effect.runPromise(program)
 // Title: Overriding the default value
 import { Context, Effect } from "effect"
 
-class SpecialNumber extends Context.Reference<SpecialNumber>()("SpecialNumber", { defaultValue: () => 2048 }) {}
+class SpecialNumber extends Context.Reference<SpecialNumber>()(
+  "SpecialNumber",
+  { defaultValue: () => 2048 }
+) {}
 
 const program = Effect.gen(function* () {
   const specialNumber = yield* SpecialNumber
@@ -57,8 +56,9 @@ Effect.runPromise(program.pipe(Effect.provideService(SpecialNumber, -1)))
 **Signature**
 
 ```ts
-export declare const Reference: <Self>() => <const Id extends string, Service>(
-  id: Id,
-  options: { readonly defaultValue: () => Service }
-) => ReferenceClass<Self, Id, Service>
+declare const Reference: <Self>() => <const Id extends string, Service>(id: Id, options: { readonly defaultValue: () => Service; }) => ReferenceClass<Self, Id, Service>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L566)
+
+Since v3.11.0

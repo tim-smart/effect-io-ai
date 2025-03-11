@@ -1,4 +1,4 @@
-# makeWithTTL
+## makeWithTTL
 
 Makes a new pool with the specified minimum and maximum sizes and time to
 live before a pool whose excess items are not being used will be shrunk
@@ -9,21 +9,12 @@ unspecified order.
 
 The size of the underlying pools can be configured per key.
 
-To import and use `makeWithTTL` from the "KeyedPool" module:
-
-```ts
-import * as KeyedPool from "effect/KeyedPool"
-// Can be accessed like this
-KeyedPool.makeWithTTL
-```
-
 **Signature**
 
 ```ts
-export declare const makeWithTTL: <K, A, E, R>(options: {
-  readonly acquire: (key: K) => Effect.Effect<A, E, R>
-  readonly min: (key: K) => number
-  readonly max: (key: K) => number
-  readonly timeToLive: Duration.DurationInput
-}) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
+declare const makeWithTTL: <K, A, E, R>(options: { readonly acquire: (key: K) => Effect.Effect<A, E, R>; readonly min: (key: K) => number; readonly max: (key: K) => number; readonly timeToLive: Duration.DurationInput; }) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/KeyedPool.ts#L111)
+
+Since v2.0.0

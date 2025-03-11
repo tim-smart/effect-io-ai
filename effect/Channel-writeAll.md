@@ -1,17 +1,13 @@
-# writeAll
+## writeAll
 
 Writes a sequence of values to the channel.
-
-To import and use `writeAll` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.writeAll
-```
 
 **Signature**
 
 ```ts
-export declare const writeAll: <OutElems extends Array<any>>(...outs: OutElems) => Channel<OutElems[number]>
+declare const writeAll: <OutElems extends Array<any>>(...outs: OutElems) => Channel<OutElems[number]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2207)
+
+Since v2.0.0

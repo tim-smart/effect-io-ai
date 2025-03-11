@@ -1,4 +1,4 @@
-# forkScoped
+## forkScoped
 
 Forks a fiber in a local scope, ensuring it outlives its parent.
 
@@ -12,17 +12,9 @@ parent fiber, but still want it to be terminated when the scope ends.
 
 Fibers created with this function are isolated from the parent fiber’s
 termination, so they can run for a longer period. This behavior is different
-from fibers created with {@link fork}, which are terminated when the parent fiber
+from fibers created with `fork`, which are terminated when the parent fiber
 terminates. With `forkScoped`, the child fiber will keep running until the
 local scope ends, regardless of the state of the parent fiber.
-
-To import and use `forkScoped` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.forkScoped
-```
 
 **Example**
 
@@ -36,7 +28,10 @@ Effect.forkScoped
 import { Effect, Console, Schedule } from "effect"
 
 // Child fiber that logs a message repeatedly every second
-const child = Effect.repeat(Console.log("child: still running!"), Schedule.fixed("1 second"))
+const child = Effect.repeat(
+  Console.log("child: still running!"),
+  Schedule.fixed("1 second")
+)
 
 //      ┌─── Effect<void, never, Scope>
 //      ▼
@@ -75,7 +70,9 @@ const program = Effect.scoped(
 **Signature**
 
 ```ts
-export declare const forkScoped: <A, E, R>(
-  self: Effect<A, E, R>
-) => Effect<Fiber.RuntimeFiber<A, E>, never, Scope.Scope | R>
+declare const forkScoped: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6352)
+
+Since v2.0.0

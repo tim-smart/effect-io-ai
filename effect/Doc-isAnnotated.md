@@ -1,17 +1,13 @@
-# isAnnotated
+## isAnnotated
 
 Returns `true` if the specified `Doc` is a `Annotated`, `false` otherwise.
-
-To import and use `isAnnotated` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isAnnotated
-```
 
 **Signature**
 
 ```ts
-export declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>
+declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L422)
+
+Since v1.0.0

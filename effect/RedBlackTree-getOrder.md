@@ -1,17 +1,13 @@
-# getOrder
+## getOrder
 
 Gets the `Order<K>` that the `RedBlackTree<K, V>` is using.
-
-To import and use `getOrder` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.getOrder
-```
 
 **Signature**
 
 ```ts
-export declare const getOrder: <K, V>(self: RedBlackTree<K, V>) => Order<K>
+declare const getOrder: <K, V>(self: RedBlackTree<K, V>) => Order<K>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L169)
+
+Since v2.0.0

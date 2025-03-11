@@ -1,4 +1,4 @@
-# timeout
+## timeout
 
 Adds a time limit to an effect, triggering a timeout if the effect exceeds
 the duration.
@@ -12,18 +12,9 @@ indefinitely, especially in scenarios where responsiveness or resource limits
 are critical.
 
 The returned effect will either:
-
 - Succeed with the original effect's result if it completes within the
   specified duration.
 - Fail with a `TimeoutException` if the time limit is exceeded.
-
-To import and use `timeout` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.timeout
-```
 
 **Example**
 
@@ -55,11 +46,19 @@ const timedEffect = task.pipe(Effect.timeout("1 second"))
 // }
 ```
 
+**See**
+
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutFailCause` for a version that raises a custom defect.
+- `timeoutTo` for a version that allows specifying both success and
+timeout handlers.
+
 **Signature**
 
 ```ts
-export declare const timeout: {
-  (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutException, R>
-  <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, Cause.TimeoutException | E, R>
-}
+declare const timeout: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutException, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, Cause.TimeoutException | E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6867)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# map
+## map
 
 Transforms the errors in a `Cause` using a user-provided function.
 
@@ -8,19 +8,16 @@ This function applies `f` to each `Fail` error while leaving defects (`Die`)
 and interruptions untouched. It's useful for changing or simplifying error
 types in your effectful workflows.
 
-To import and use `map` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.map
-```
+- `as` Replace errors with a single constant
 
 **Signature**
 
 ```ts
-export declare const map: {
-  <E, E2>(f: (e: E) => E2): (self: Cause<E>) => Cause<E2>
-  <E, E2>(self: Cause<E>, f: (e: E) => E2): Cause<E2>
-}
+declare const map: { <E, E2>(f: (e: E) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => E2): Cause<E2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1017)
+
+Since v2.0.0

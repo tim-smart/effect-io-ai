@@ -1,11 +1,11 @@
-# retryOrElse
+## retryOrElse
 
 Retries a failing effect and runs a fallback effect if retries are exhausted.
 
 **Details**
 
 The `Effect.retryOrElse` function attempts to retry a failing effect multiple
-times according to a defined {@link Schedule} policy.
+times according to a defined `Schedule` policy.
 
 If the retries are exhausted and the effect still fails, it runs a fallback
 effect instead.
@@ -14,14 +14,6 @@ effect instead.
 
 This function is useful when you want to handle failures gracefully by
 specifying an alternative action after repeated failures.
-
-To import and use `retryOrElse` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.retryOrElse
-```
 
 **Example**
 
@@ -63,18 +55,16 @@ const repeated = Effect.retryOrElse(
 // default value
 ```
 
+**See**
+
+- `retry` for a version that does not run a fallback effect.
+
 **Signature**
 
 ```ts
-export declare const retryOrElse: {
-  <A1, E, R1, A2, E2, R2>(
-    policy: Schedule.Schedule<A1, NoInfer<E>, R1>,
-    orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>
-  ): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R1 | R2 | R>
-  <A, E, R, A1, R1, A2, E2, R2>(
-    self: Effect<A, E, R>,
-    policy: Schedule.Schedule<A1, NoInfer<E>, R1>,
-    orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>
-  ): Effect<A | A2, E2, R | R1 | R2>
-}
+declare const retryOrElse: { <A1, E, R1, A2, E2, R2>(policy: Schedule.Schedule<A1, NoInfer<E>, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R1 | R2 | R>; <A, E, R, A1, R1, A2, E2, R2>(self: Effect<A, E, R>, policy: Schedule.Schedule<A1, NoInfer<E>, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): Effect<A | A2, E2, R | R1 | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4406)
+
+Since v2.0.0

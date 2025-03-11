@@ -1,4 +1,4 @@
-# supervised
+## supervised
 
 Supervises child fibers by reporting them to a specified supervisor.
 
@@ -8,14 +8,6 @@ This function takes a supervisor as an argument and returns an effect where
 all child fibers forked within it are supervised by the provided supervisor.
 This enables you to capture detailed information about these child fibers,
 such as their status, through the supervisor.
-
-To import and use `supervised` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.supervised
-```
 
 **Example**
 
@@ -61,7 +53,9 @@ const program = Effect.gen(function* () {
 })
 
 // Function to monitor and log the number of active fibers
-const monitorFibers = (supervisor: Supervisor.Supervisor<Array<Fiber.RuntimeFiber<any, any>>>): Effect.Effect<void> =>
+const monitorFibers = (
+  supervisor: Supervisor.Supervisor<Array<Fiber.RuntimeFiber<any, any>>>
+): Effect.Effect<void> =>
   Effect.gen(function* () {
     const fibers = yield* supervisor.value // Get the current set of fibers
     console.log(`number of fibers: ${fibers.length}`)
@@ -114,8 +108,9 @@ const fib = (n: number): Effect.Effect<number> =>
 **Signature**
 
 ```ts
-export declare const supervised: {
-  <X>(supervisor: Supervisor.Supervisor<X>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R, X>(self: Effect<A, E, R>, supervisor: Supervisor.Supervisor<X>): Effect<A, E, R>
-}
+declare const supervised: { <X>(supervisor: Supervisor.Supervisor<X>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, X>(self: Effect<A, E, R>, supervisor: Supervisor.Supervisor<X>): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6502)
+
+Since v2.0.0

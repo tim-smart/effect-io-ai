@@ -1,13 +1,15 @@
-# BigIntFromNumber
+## BigIntFromNumber
 
 This schema transforms a `number` into a `bigint` by parsing the number using the `BigInt` function.
 
 It returns an error if the value can't be safely encoded as a `number` due to being out of range.
 
-To import and use `BigIntFromNumber` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.BigIntFromNumber
+declare class BigIntFromNumber
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5745)
+
+Since v3.10.0

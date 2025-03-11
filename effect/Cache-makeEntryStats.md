@@ -1,17 +1,13 @@
-# makeEntryStats
+## makeEntryStats
 
 Constructs a new `EntryStats` from the specified values.
-
-To import and use `makeEntryStats` from the "Cache" module:
-
-```ts
-import * as Cache from "effect/Cache"
-// Can be accessed like this
-Cache.makeEntryStats
-```
 
 **Signature**
 
 ```ts
-export declare const makeEntryStats: (loadedMillis: number) => EntryStats
+declare const makeEntryStats: (loadedMillis: number) => EntryStats
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L269)
+
+Since v2.0.0

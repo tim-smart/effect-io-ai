@@ -1,4 +1,4 @@
-# timeoutFailCause
+## timeoutFailCause
 
 Specifies a custom defect to be thrown when a timeout occurs.
 
@@ -7,7 +7,6 @@ Specifies a custom defect to be thrown when a timeout occurs.
 This function allows you to handle timeouts as exceptional cases by
 generating a custom defect when an effect exceeds the specified duration. You
 provide:
-
 - A `duration`: The time limit for the effect.
 - An `onTimeout` function: A lazy evaluation function that generates the
   custom defect (typically created using `Cause.die`).
@@ -21,14 +20,6 @@ with that defect.
 This is especially useful when you need to treat timeouts as critical
 failures in your application and wish to include meaningful information in
 the defect.
-
-To import and use `timeoutFailCause` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.timeoutFailCause
-```
 
 **Example**
 
@@ -59,17 +50,19 @@ const program = task.pipe(
 // }
 ```
 
+**See**
+
+- `timeout` for a version that raises a `TimeoutException`.
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutTo` for a version that allows specifying both success and
+timeout handlers.
+
 **Signature**
 
 ```ts
-export declare const timeoutFailCause: {
-  <E1>(options: {
-    readonly onTimeout: LazyArg<Cause.Cause<E1>>
-    readonly duration: Duration.DurationInput
-  }): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E1 | E, R>
-  <A, E, R, E1>(
-    self: Effect<A, E, R>,
-    options: { readonly onTimeout: LazyArg<Cause.Cause<E1>>; readonly duration: Duration.DurationInput }
-  ): Effect<A, E | E1, R>
-}
+declare const timeoutFailCause: { <E1>(options: { readonly onTimeout: LazyArg<Cause.Cause<E1>>; readonly duration: Duration.DurationInput; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E1 | E, R>; <A, E, R, E1>(self: Effect<A, E, R>, options: { readonly onTimeout: LazyArg<Cause.Cause<E1>>; readonly duration: Duration.DurationInput; }): Effect<A, E | E1, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7064)
+
+Since v2.0.0

@@ -1,12 +1,14 @@
-# AdditionalSchemas
+## AdditionalSchemas
 
 Adds additional schemas to components/schemas.
 The provided schemas must have a `identifier` annotation.
 
-To import and use `AdditionalSchemas` from the "HttpApi" module:
+**Signature**
 
 ```ts
-import * as HttpApi from "@effect/platform/HttpApi"
-// Can be accessed like this
-HttpApi.AdditionalSchemas
+declare class AdditionalSchemas
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApi.ts#L450)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# error
+## error
 
 Returns a `BrandErrors` that contains a single `RefinementError`.
-
-To import and use `error` from the "Brand" module:
-
-```ts
-import * as Brand from "effect/Brand"
-// Can be accessed like this
-Brand.error
-```
 
 **Signature**
 
 ```ts
-export declare const error: (message: string, meta?: unknown) => Brand.BrandErrors
+declare const error: (message: string, meta?: unknown) => Brand.BrandErrors
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L173)
+
+Since v2.0.0

@@ -1,15 +1,7 @@
-# withCurrentZoneLocal
+## withCurrentZoneLocal
 
 Provide the `CurrentTimeZone` to an effect, using the system's local time
 zone.
-
-To import and use `withCurrentZoneLocal` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.withCurrentZoneLocal
-```
 
 **Example**
 
@@ -25,7 +17,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const withCurrentZoneLocal: <A, E, R>(
-  effect: Effect.Effect<A, E, R>
-) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>
+declare const withCurrentZoneLocal: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1043)
+
+Since v3.6.0

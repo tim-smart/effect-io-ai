@@ -1,17 +1,13 @@
-# failCause
+## failCause
 
 Creates an `Effect` that fails with the specified `Cause`.
-
-To import and use `failCause` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.failCause
-```
 
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
+declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2526)
+
+Since v2.0.0

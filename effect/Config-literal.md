@@ -1,14 +1,6 @@
-# literal
+## literal
 
 Constructs a config for a literal value.
-
-To import and use `literal` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.literal
-```
 
 **Example**
 
@@ -21,7 +13,9 @@ const config = Config.literal("http", "https")("PROTOCOL")
 **Signature**
 
 ```ts
-export declare const literal: <Literals extends ReadonlyArray<LiteralValue>>(
-  ...literals: Literals
-) => (name?: string) => Config<Literals[number]>
+declare const literal: <Literals extends ReadonlyArray<LiteralValue>>(...literals: Literals) => (name?: string) => Config<Literals[number]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L192)
+
+Since v2.0.0

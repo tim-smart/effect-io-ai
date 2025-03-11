@@ -1,4 +1,4 @@
-# make
+## make
 
 A FiberHandle can be used to store a single fiber.
 When the associated Scope is closed, the contained fiber will be interrupted.
@@ -6,20 +6,12 @@ When the associated Scope is closed, the contained fiber will be interrupted.
 You can add a fiber to the handle using `FiberHandle.run`, and the fiber will
 be automatically removed from the FiberHandle when it completes.
 
-To import and use `make` from the "FiberHandle" module:
-
-```ts
-import * as FiberHandle from "effect/FiberHandle"
-// Can be accessed like this
-FiberHandle.make
-```
-
 **Example**
 
 ```ts
 import { Effect, FiberHandle } from "effect"
 
-Effect.gen(function* () {
+Effect.gen(function*() {
   const handle = yield* FiberHandle.make()
 
   // run some effects
@@ -36,5 +28,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const make: <A = unknown, E = unknown>() => Effect.Effect<FiberHandle<A, E>, never, Scope.Scope>
+declare const make: <A = unknown, E = unknown>() => Effect.Effect<FiberHandle<A, E>, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L110)
+
+Since v2.0.0

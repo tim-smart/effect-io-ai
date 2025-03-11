@@ -1,17 +1,13 @@
-# toArray
+## toArray
 
 Collects all values into an array.
-
-To import and use `toArray` from the "TPriorityQueue" module:
-
-```ts
-import * as TPriorityQueue from "effect/TPriorityQueue"
-// Can be accessed like this
-TPriorityQueue.toArray
-```
 
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
+declare const toArray: <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPriorityQueue.ts#L223)
+
+Since v2.0.0

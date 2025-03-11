@@ -1,18 +1,11 @@
-# normalize
+## normalize
 
 Normalizes a given `BigDecimal` by removing trailing zeros.
-
-To import and use `normalize` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.normalize
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { normalize, make, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(normalize(unsafeFromString("123.00000")), normalize(make(123n, 0)))
@@ -22,5 +15,9 @@ assert.deepStrictEqual(normalize(unsafeFromString("12300000")), normalize(make(1
 **Signature**
 
 ```ts
-export declare const normalize: (self: BigDecimal) => BigDecimal
+declare const normalize: (self: BigDecimal) => BigDecimal
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L143)
+
+Since v2.0.0

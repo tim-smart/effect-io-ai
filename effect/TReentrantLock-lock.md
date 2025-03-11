@@ -1,20 +1,16 @@
-# lock
+## lock
 
 Just a convenience method for applications that only need reentrant locks,
 without needing a distinction between readers / writers.
 
 See `TReentrantLock.writeLock`.
 
-To import and use `lock` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.lock
-```
-
 **Signature**
 
 ```ts
-export declare const lock: (self: TReentrantLock) => Effect.Effect<number, never, Scope.Scope>
+declare const lock: (self: TReentrantLock) => Effect.Effect<number, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L109)
+
+Since v2.0.0

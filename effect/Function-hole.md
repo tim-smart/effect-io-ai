@@ -1,17 +1,13 @@
-# hole
+## hole
 
 Type hole simulation.
-
-To import and use `hole` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.hole
-```
 
 **Signature**
 
 ```ts
-export declare const hole: <T>() => T
+declare const hole: <T>() => T
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1183)
+
+Since v2.0.0

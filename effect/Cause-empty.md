@@ -1,4 +1,4 @@
-# empty
+## empty
 
 Creates an `Empty` cause.
 
@@ -7,16 +7,16 @@ Creates an `Empty` cause.
 This function returns a cause that signifies "no error." It's commonly used
 to represent an absence of failure conditions.
 
-To import and use `empty` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.empty
-```
+- `isEmpty` Check if a `Cause` is empty
 
 **Signature**
 
 ```ts
-export declare const empty: Cause<never>
+declare const empty: Cause<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L574)
+
+Since v2.0.0

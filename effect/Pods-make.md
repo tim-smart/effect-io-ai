@@ -1,17 +1,13 @@
-# make
+## make
 
 Constructs a Pods service from its implementation
-
-To import and use `make` from the "Pods" module:
-
-```ts
-import * as Pods from "@effect/cluster/Pods"
-// Can be accessed like this
-Pods.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: (args: Omit<Pods, typeof PodsTypeId>) => Pods
+declare const make: (args: Omit<Pods, typeof PodsTypeId>) => Pods
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L91)
+
+Since v1.0.0

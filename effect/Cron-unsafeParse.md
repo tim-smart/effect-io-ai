@@ -1,4 +1,4 @@
-# unsafeParse
+## unsafeParse
 
 Parses a cron expression into a `Cron` instance.
 
@@ -13,14 +13,6 @@ If the expression is invalid, the function throws a `ParseError`.
 You can optionally provide a time zone (`tz`) to interpret the cron
 expression in a specific time zone. If no time zone is provided, the cron
 expression will use the default time zone.
-
-To import and use `unsafeParse` from the "Cron" module:
-
-```ts
-import * as Cron from "effect/Cron"
-// Can be accessed like this
-Cron.unsafeParse
-```
 
 **Example**
 
@@ -48,5 +40,9 @@ console.log(Cron.unsafeParse("0 4 8-14 * *"))
 **Signature**
 
 ```ts
-export declare const unsafeParse: (cron: string, tz?: DateTime.TimeZone | string) => Cron
+declare const unsafeParse: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L317)
+
+Since v2.0.0

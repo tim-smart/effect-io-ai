@@ -1,17 +1,17 @@
-# isEmptyType
+## isEmptyType
 
 Checks if a `Cause` is an `Empty` type.
 
-To import and use `isEmptyType` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isEmptyType
-```
+- `empty` Create a new `Empty` cause
 
 **Signature**
 
 ```ts
-export declare const isEmptyType: <E>(self: Cause<E>) => self is Empty
+declare const isEmptyType: <E>(self: Cause<E>) => self is Empty
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L672)
+
+Since v2.0.0

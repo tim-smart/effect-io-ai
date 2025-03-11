@@ -1,17 +1,13 @@
-# awaitEmpty
+## awaitEmpty
 
 Wait until the fiber set is empty.
-
-To import and use `awaitEmpty` from the "FiberSet" module:
-
-```ts
-import * as FiberSet from "effect/FiberSet"
-// Can be accessed like this
-FiberSet.awaitEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const awaitEmpty: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
+declare const awaitEmpty: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L473)
+
+Since v3.13.0

@@ -1,17 +1,13 @@
-# layer
+## layer
 
 A layer that directly interfaces with the navigator.clipboard api
-
-To import and use `layer` from the "Clipboard" module:
-
-```ts
-import * as Clipboard from "@effect/platform-browser/Clipboard"
-// Can be accessed like this
-Clipboard.layer
-```
 
 **Signature**
 
 ```ts
-export declare const layer: Layer.Layer<Clipboard, never, never>
+declare const layer: Layer.Layer<Clipboard, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L85)
+
+Since v1.0.0

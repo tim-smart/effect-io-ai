@@ -1,19 +1,13 @@
-# instanceOf
+## instanceOf
 
 Matches instances of a given class.
-
-To import and use `instanceOf` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.instanceOf
-```
 
 **Signature**
 
 ```ts
-export declare const instanceOf: <A extends abstract new (...args: any) => any>(
-  constructor: A
-) => SafeRefinement<InstanceType<A>, never>
+declare const instanceOf: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1046)
+
+Since v1.0.0

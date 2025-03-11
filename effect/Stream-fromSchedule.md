@@ -1,16 +1,8 @@
-# fromSchedule
+## fromSchedule
 
 Creates a stream from a `Schedule` that does not require any further
 input. The stream will emit an element for each value output from the
 schedule, continuing for as long as the schedule continues.
-
-To import and use `fromSchedule` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromSchedule
-```
 
 **Example**
 
@@ -18,7 +10,9 @@ Stream.fromSchedule
 import { Effect, Schedule, Stream } from "effect"
 
 // Emits values every 1 second for a total of 5 emissions
-const schedule = Schedule.spaced("1 second").pipe(Schedule.compose(Schedule.recurs(5)))
+const schedule = Schedule.spaced("1 second").pipe(
+  Schedule.compose(Schedule.recurs(5))
+)
 
 const stream = Stream.fromSchedule(schedule)
 
@@ -29,5 +23,9 @@ const stream = Stream.fromSchedule(schedule)
 **Signature**
 
 ```ts
-export declare const fromSchedule: <A, R>(schedule: Schedule.Schedule<A, unknown, R>) => Stream<A, never, R>
+declare const fromSchedule: <A, R>(schedule: Schedule.Schedule<A, unknown, R>) => Stream<A, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2230)
+
+Since v2.0.0

@@ -1,11 +1,13 @@
-# Concurrency
+## Concurrency
 
 Describes the concurrency to use when executing multiple Effect's.
 
-To import and use `Concurrency` from the "Types" module:
+**Signature**
 
 ```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Concurrency
+type Concurrency = number | "unbounded" | "inherit"
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L210)
+
+Since v2.0.0

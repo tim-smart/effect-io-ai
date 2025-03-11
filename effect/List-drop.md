@@ -1,17 +1,13 @@
-# drop
+## drop
 
 Drops the first `n` elements from the specified list.
-
-To import and use `drop` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.drop
-```
 
 **Signature**
 
 ```ts
-export declare const drop: { (n: number): <A>(self: List<A>) => List<A>; <A>(self: List<A>, n: number): List<A> }
+declare const drop: { (n: number): <A>(self: List<A>) => List<A>; <A>(self: List<A>, n: number): List<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L427)
+
+Since v2.0.0

@@ -1,11 +1,16 @@
-# Data
+## Data
 
 `Data` represents the state of the `TestClock`, including the clock time.
 
-To import and use `Data` from the "TestClock" module:
+**Signature**
 
 ```ts
-import * as TestClock from "effect/TestClock"
-// Can be accessed like this
-TestClock.Data
+export interface Data {
+  readonly instant: number
+  readonly sleeps: Chunk.Chunk<readonly [number, Deferred.Deferred<void>]>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L88)
+
+Since v2.0.1

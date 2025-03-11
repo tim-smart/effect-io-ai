@@ -1,4 +1,4 @@
-# chunksOf
+## chunksOf
 
 Splits an `Iterable` into length-`n` pieces. The last piece will be shorter if `n` does not evenly divide the length of
 the `Iterable`. Note that `chunksOf(n)([])` is `[]`, not `[[]]`. This is intentional, and is consistent with a recursive
@@ -10,22 +10,13 @@ chunksOf(n)(xs).concat(chunksOf(n)(ys)) == chunksOf(n)(xs.concat(ys)))
 
 whenever `n` evenly divides the length of `self`.
 
-To import and use `chunksOf` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.chunksOf
-```
-
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers = [1, 2, 3, 4, 5]
-const result = Array.chunksOf(numbers, 2)
-assert.deepStrictEqual(result, [[1, 2], [3, 4], [5]])
+const result = Array.chunksOf([1, 2, 3, 4, 5], 2)
+console.log(result) // [[1, 2], [3, 4], [5]]
 
 // Explanation:
 // The `chunksOf` function takes an array of numbers `[1, 2, 3, 4, 5]` and a number `2`.
@@ -37,9 +28,9 @@ assert.deepStrictEqual(result, [[1, 2], [3, 4], [5]])
 **Signature**
 
 ```ts
-export declare const chunksOf: {
-  (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, NonEmptyArray<ReadonlyArray.Infer<S>>>
-  <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<NonEmptyArray<A>>
-  <A>(self: Iterable<A>, n: number): Array<NonEmptyArray<A>>
-}
+declare const chunksOf: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, NonEmptyArray<ReadonlyArray.Infer<S>>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<NonEmptyArray<A>>; <A>(self: Iterable<A>, n: number): Array<NonEmptyArray<A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1979)
+
+Since v2.0.0

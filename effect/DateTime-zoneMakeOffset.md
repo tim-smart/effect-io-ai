@@ -1,17 +1,13 @@
-# zoneMakeOffset
+## zoneMakeOffset
 
 Create a fixed offset time zone.
-
-To import and use `zoneMakeOffset` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.zoneMakeOffset
-```
 
 **Signature**
 
 ```ts
-export declare const zoneMakeOffset: (offset: number) => TimeZone.Offset
+declare const zoneMakeOffset: (offset: number) => TimeZone.Offset
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L528)
+
+Since v3.6.0

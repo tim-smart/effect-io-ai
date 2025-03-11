@@ -1,17 +1,13 @@
-# contextWith
+## contextWith
 
 Accesses the context of the sink.
-
-To import and use `contextWith` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.contextWith
-```
 
 **Signature**
 
 ```ts
-export declare const contextWith: <R, Z>(f: (context: Context.Context<R>) => Z) => Sink<Z, unknown, never, never, R>
+declare const contextWith: <R, Z>(f: (context: Context.Context<R>) => Z) => Sink<Z, unknown, never, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L535)
+
+Since v2.0.0

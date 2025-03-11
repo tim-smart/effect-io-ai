@@ -1,17 +1,13 @@
-# keysReversed
+## keysReversed
 
 Get all the keys present in the tree in reverse order.
-
-To import and use `keysReversed` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.keysReversed
-```
 
 **Signature**
 
 ```ts
-export declare const keysReversed: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<K>
+declare const keysReversed: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<K>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L254)
+
+Since v2.0.0

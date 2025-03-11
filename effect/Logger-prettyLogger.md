@@ -1,17 +1,9 @@
-# prettyLogger
+## prettyLogger
 
 The pretty logger utilizes the capabilities of the console API to generate
 visually engaging and color-enhanced log outputs. This feature is
 particularly useful for improving the readability of log messages during
 development and debugging processes.
-
-To import and use `prettyLogger` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.prettyLogger
-```
 
 **Example**
 
@@ -35,10 +27,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const prettyLogger: (options?: {
-  readonly colors?: "auto" | boolean | undefined
-  readonly stderr?: boolean | undefined
-  readonly formatDate?: ((date: Date) => string) | undefined
-  readonly mode?: "browser" | "tty" | "auto" | undefined
-}) => Logger<unknown, void>
+declare const prettyLogger: (options?: { readonly colors?: "auto" | boolean | undefined; readonly stderr?: boolean | undefined; readonly formatDate?: ((date: Date) => string) | undefined; readonly mode?: "browser" | "tty" | "auto" | undefined; }) => Logger<unknown, void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L503)
+
+Since v3.5.0

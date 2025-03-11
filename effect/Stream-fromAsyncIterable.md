@@ -1,21 +1,13 @@
-# fromAsyncIterable
+## fromAsyncIterable
 
 Creates a stream from an `AsyncIterable`.
-
-To import and use `fromAsyncIterable` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromAsyncIterable
-```
 
 **Example**
 
 ```ts
 import { Effect, Stream } from "effect"
 
-const myAsyncIterable = async function* () {
+const myAsyncIterable = async function*() {
   yield 1
   yield 2
 }
@@ -32,5 +24,9 @@ const stream = Stream.fromAsyncIterable(
 **Signature**
 
 ```ts
-export declare const fromAsyncIterable: <A, E>(iterable: AsyncIterable<A>, onError: (e: unknown) => E) => Stream<A, E>
+declare const fromAsyncIterable: <A, E>(iterable: AsyncIterable<A>, onError: (e: unknown) => E) => Stream<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1902)
+
+Since v2.0.0

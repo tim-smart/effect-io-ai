@@ -1,4 +1,4 @@
-# isFailure
+## isFailure
 
 Checks if an effect has failed.
 
@@ -10,14 +10,6 @@ effect failed and `false` otherwise.
 
 The resulting effect cannot fail (`never` in the error channel) but retains
 the context of the original effect.
-
-To import and use `isFailure` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.isFailure
-```
 
 **Example**
 
@@ -38,5 +30,9 @@ const defect = Effect.dieMessage("BOOM!")
 **Signature**
 
 ```ts
-export declare const isFailure: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
+declare const isFailure: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10324)
+
+Since v2.0.0

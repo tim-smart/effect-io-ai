@@ -1,19 +1,12 @@
-# all
+## all
 
 Combines two or more brands together to form a single branded type.
 This API is useful when you want to validate that the input data passes multiple brand validators.
 
-To import and use `all` from the "Brand" module:
-
-```ts
-import * as Brand from "effect/Brand"
-// Can be accessed like this
-Brand.all
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Brand } from "effect"
 
 type Int = number & Brand.Brand<"Int">
@@ -36,12 +29,9 @@ assert.throws(() => PositiveInt(1.1))
 **Signature**
 
 ```ts
-export declare const all: <Brands extends readonly [Brand.Constructor<any>, ...Array<Brand.Constructor<any>>]>(
-  ...brands: Brand.EnsureCommonBase<Brands>
-) => Brand.Constructor<
-  Types.UnionToIntersection<{ [B in keyof Brands]: Brand.FromConstructor<Brands[B]> }[number]> extends infer X extends
-    Brand<any>
-    ? X
-    : Brand<any>
->
+declare const all: <Brands extends readonly [Brand.Constructor<any>, ...Array<Brand.Constructor<any>>]>(...brands: Brand.EnsureCommonBase<Brands>) => Brand.Constructor<Types.UnionToIntersection<{ [B in keyof Brands]: Brand.FromConstructor<Brands[B]>; }[number]> extends infer X extends Brand<any> ? X : Brand<any>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L305)
+
+Since v2.0.0

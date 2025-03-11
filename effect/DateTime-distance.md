@@ -1,17 +1,9 @@
-# distance
+## distance
 
 Calulate the difference between two `DateTime` values, returning the number
 of milliseconds the `other` DateTime is from `self`.
 
-If `other` is _after_ `self`, the result will be a positive number.
-
-To import and use `distance` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.distance
-```
+If `other` is *after* `self`, the result will be a positive number.
 
 **Example**
 
@@ -30,8 +22,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const distance: {
-  (other: DateTime): (self: DateTime) => number
-  (self: DateTime, other: DateTime): number
-}
+declare const distance: { (other: DateTime): (self: DateTime) => number; (self: DateTime, other: DateTime): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L660)
+
+Since v3.6.0

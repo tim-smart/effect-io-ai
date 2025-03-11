@@ -1,18 +1,11 @@
-# fromString
+## fromString
 
 Parses a numerical `string` into a `BigDecimal`.
-
-To import and use `fromString` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.fromString
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { BigDecimal, Option } from "effect"
 
 assert.deepStrictEqual(BigDecimal.fromString("123"), Option.some(BigDecimal.make(123n, 0)))
@@ -23,5 +16,9 @@ assert.deepStrictEqual(BigDecimal.fromString("123.abc"), Option.none())
 **Signature**
 
 ```ts
-export declare const fromString: (s: string) => Option.Option<BigDecimal>
+declare const fromString: (s: string) => Option.Option<BigDecimal>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L891)
+
+Since v2.0.0

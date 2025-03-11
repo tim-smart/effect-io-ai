@@ -1,17 +1,13 @@
-# toMap
+## toMap
 
 Collects all bindings into a `Map`.
-
-To import and use `toMap` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.toMap
-```
 
 **Signature**
 
 ```ts
-export declare const toMap: <K, V>(self: TMap<K, V>) => STM.STM<ReadonlyMap<K, V>>
+declare const toMap: <K, V>(self: TMap<K, V>) => STM.STM<ReadonlyMap<K, V>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L441)
+
+Since v2.0.0

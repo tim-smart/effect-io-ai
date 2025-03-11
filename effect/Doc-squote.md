@@ -1,17 +1,13 @@
-# squote
+## squote
 
 A document containing a single `"` character.
-
-To import and use `squote` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.squote
-```
 
 **Signature**
 
 ```ts
-export declare const squote: Doc<never>
+declare const squote: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L839)
+
+Since v1.0.0

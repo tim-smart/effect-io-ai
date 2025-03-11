@@ -1,20 +1,13 @@
-# some
+## some
 
 Check if a predicate holds true for some `Iterable` element.
-
-To import and use `some` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.some
-```
 
 **Signature**
 
 ```ts
-export declare const some: {
-  <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => boolean
-  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): boolean
-}
+declare const some: { <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L944)
+
+Since v2.0.0

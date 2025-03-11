@@ -1,11 +1,17 @@
-# Brand
+## Brand
 
 A generic interface that defines a branded type.
 
-To import and use `Brand` from the "Brand" module:
+**Signature**
 
 ```ts
-import * as Brand from "effect/Brand"
-// Can be accessed like this
-Brand.Brand
+export interface Brand<in out K extends string | symbol> {
+  readonly [BrandTypeId]: {
+    readonly [k in K]: K
+  }
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L56)
+
+Since v2.0.0

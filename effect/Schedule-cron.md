@@ -1,4 +1,4 @@
-# cron
+## cron
 
 Creates a schedule that recurs based on a cron expression.
 
@@ -11,19 +11,12 @@ produces timestamps representing the start and end of the cron window.
 The cron `expression` is validated lazily, meaning errors may only be
 detected when the schedule is executed.
 
-To import and use `cron` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.cron
-```
-
 **Signature**
 
 ```ts
-export declare const cron: {
-  (cron: Cron.Cron): Schedule<[number, number]>
-  (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>
-}
+declare const cron: { (cron: Cron.Cron): Schedule<[number, number]>; (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L639)
+
+Since v2.0.0

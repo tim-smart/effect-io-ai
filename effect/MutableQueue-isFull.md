@@ -1,17 +1,13 @@
-# isFull
+## isFull
 
 Returns `true` if the queue is full, `false` otherwise.
-
-To import and use `isFull` from the "MutableQueue" module:
-
-```ts
-import * as MutableQueue from "effect/MutableQueue"
-// Can be accessed like this
-MutableQueue.isFull
-```
 
 **Signature**
 
 ```ts
-export declare const isFull: <A>(self: MutableQueue<A>) => boolean
+declare const isFull: <A>(self: MutableQueue<A>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableQueue.ts#L115)
+
+Since v2.0.0

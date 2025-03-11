@@ -1,4 +1,4 @@
-# Do
+## Do
 
 The "do simulation" for array allows you to sequentially apply operations to the elements of arrays, just as nested loops allow you to go through all combinations of elements in an arrays.
 
@@ -13,49 +13,44 @@ Here's how the do simulation works:
 4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
 5. Regular `Option` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
 
-To import and use `Do` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.Do
-```
-
 **Example**
 
 ```ts
-import { Array as Arr, pipe } from "effect"
+import { Array, pipe } from "effect"
+
 const doResult = pipe(
-  Arr.Do,
-  Arr.bind("x", () => [1, 3, 5]),
-  Arr.bind("y", () => [2, 4, 6]),
-  Arr.filter(({ x, y }) => x < y), // condition
-  Arr.map(({ x, y }) => [x, y] as const) // transformation
+  Array.Do,
+  Array.bind("x", () => [1, 3, 5]),
+  Array.bind("y", () => [2, 4, 6]),
+  Array.filter(({ x, y }) => x < y), // condition
+  Array.map(({ x, y }) => [x, y] as const) // transformation
 )
-assert.deepStrictEqual(doResult, [
-  [1, 2],
-  [1, 4],
-  [1, 6],
-  [3, 4],
-  [3, 6],
-  [5, 6]
-])
+console.log(doResult) // [[1, 2], [1, 4], [1, 6], [3, 4], [3, 6], [5, 6]]
 
 // equivalent
 const x = [1, 3, 5],
-  y = [2, 4, 6],
-  result = []
-for (let i = 0; i < x.length; i++) {
-  for (let j = 0; j < y.length; j++) {
-    const _x = x[i],
-      _y = y[j]
-    if (_x < _y) result.push([_x, _y] as const)
+      y = [2, 4, 6],
+      result = [];
+for(let i = 0; i < x.length; i++) {
+  for(let j = 0; j < y.length; j++) {
+    const _x = x[i], _y = y[j];
+    if(_x < _y) result.push([_x, _y] as const)
   }
 }
 ```
 
+**See**
+
+- `bindTo`
+- `bind`
+- `let`
+
 **Signature**
 
 ```ts
-export declare const Do: readonly {}[]
+declare const Do: ReadonlyArray<{}>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3244)
+
+Since v3.2.0

@@ -1,17 +1,13 @@
-# tail
+## tail
 
 Returns every elements after the first.
-
-To import and use `tail` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.tail
-```
 
 **Signature**
 
 ```ts
-export declare const tail: <A>(self: Chunk<A>) => Option<Chunk<A>>
+declare const tail: <A>(self: Chunk<A>) => Option<Chunk<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1113)
+
+Since v2.0.0

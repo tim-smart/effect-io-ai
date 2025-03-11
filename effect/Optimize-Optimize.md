@@ -1,12 +1,16 @@
-# Optimize
+## Optimize
 
 Represents optimization of a given document tree through fusion of redundant
 document nodes.
 
-To import and use `Optimize` from the "Optimize" module:
+**Signature**
 
 ```ts
-import * as Optimize from "@effect/printer/Optimize"
-// Can be accessed like this
-Optimize.Optimize
+export interface Optimize<A> {
+  (depth: Optimize.Depth): Doc<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L19)
+
+Since v1.0.0

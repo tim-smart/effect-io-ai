@@ -1,15 +1,7 @@
-# StringFromUriComponent
+## StringFromUriComponent
 
 Decodes a URI component encoded string into a UTF-8 string.
 Can be used to store data in a URL.
-
-To import and use `StringFromUriComponent` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.StringFromUriComponent
-```
 
 **Example**
 
@@ -30,5 +22,9 @@ console.log(Schema.encodeSync(UrlSchema)({ maxItemPerPage: 10, page: 1 }))
 **Signature**
 
 ```ts
-export declare const StringFromUriComponent: transformOrFail<SchemaClass<string, string, never>, typeof String$, never>
+declare const StringFromUriComponent: transformOrFail<SchemaClass<string, string, never>, typeof String$, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6329)
+
+Since v3.12.0

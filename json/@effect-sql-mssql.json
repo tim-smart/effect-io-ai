@@ -1,232 +1,110 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "MssqlTypes",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export declare const MssqlTypes: { TinyInt: DataType; Bit: DataType; SmallInt: DataType; Int: DataType; SmallDateTime: DataType; Real: DataType; Money: DataType; DateTime: DataType; Float: DataType; Decimal: DataType & { resolvePrecision: (parameter: Parameter) => number; resolveScale: (parameter: Parameter) => number; }; Numeric: DataType & { resolveScale: (parameter: Parameter) => number; resolvePrecision: (parameter: Parameter) => number; }; SmallMoney: DataType; BigInt: DataType; Image: DataType; Text: DataType; UniqueIdentifier: DataType; NText: DataType; VarBinary: { maximumLength: number; } & DataType; VarChar: { maximumLength: number; } & DataType; Binary: { maximumLength: number; } & DataType; Char: { maximumLength: number; } & DataType; NVarChar: { maximumLength: number; } & DataType; NChar: DataType & { maximumLength: number; }; Xml: DataType; Time: DataType; Date: DataType; DateTime2: DataType & { resolveScale: (parameter: Parameter) => number; }; DateTimeOffset: DataType & { resolveScale: (parameter: Parameter) => number; }; UDT: DataType; TVP: DataType; Variant: DataType; }"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"./MssqlClient.js\"",
-    "description": "Re-exports all named exports from the \"./MssqlClient.js\" module as `MssqlClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as MssqlClient from \"./MssqlClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"./MssqlMigrator.js\"",
-    "description": "Re-exports all named exports from the \"./MssqlMigrator.js\" module as `MssqlMigrator`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as MssqlMigrator from \"./MssqlMigrator.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"./Parameter.js\"",
-    "description": "Re-exports all named exports from the \"./Parameter.js\" module as `Parameter`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Parameter from \"./Parameter.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"./Procedure.js\"",
-    "description": "Re-exports all named exports from the \"./Procedure.js\" module as `Procedure`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Procedure from \"./Procedure.js\""
-  },
-  {
     "_tag": "Constant",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "MssqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const MssqlClient: Context.Tag<MssqlClient, MssqlClient>"
+    "signature": "declare const MssqlClient: Context.Tag<MssqlClient, MssqlClient>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "defaultParameterTypes",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>"
+    "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "makeCompiler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": null
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "MssqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -236,15 +114,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "MssqlClientConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -254,141 +128,81 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "MssqlClient",
-      "path": [
-        "src",
-        "MssqlClient.ts"
-      ]
+      "name": "MssqlClient.ts",
+      "path": "src/MssqlClient.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "MssqlMigrator",
-      "path": [
-        "src",
-        "MssqlMigrator.ts"
-      ]
+      "name": "MssqlMigrator.ts",
+      "path": "src/MssqlMigrator.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "run",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "MssqlMigrator",
-      "path": [
-        "src",
-        "MssqlMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"@effect/sql/Migrator\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "MssqlMigrator",
-      "path": [
-        "src",
-        "MssqlMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-mssql",
-    "name": "From \"@effect/sql/Migrator/FileSystem\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+    "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MssqlMigrator",
-      "path": [
-        "src",
-        "MssqlMigrator.ts"
-      ]
+      "name": "MssqlMigrator.ts",
+      "path": "src/MssqlMigrator.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Parameter",
-      "path": [
-        "src",
-        "Parameter.ts"
-      ]
+      "name": "Parameter.ts",
+      "path": "src/Parameter.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "ParameterId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export declare const ParameterId: typeof ParameterId"
+    "signature": "declare const ParameterId: unique symbol"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Parameter",
-      "path": [
-        "src",
-        "Parameter.ts"
-      ]
+      "name": "Parameter.ts",
+      "path": "src/Parameter.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const make: <A>(name: string, type: DataType, options?: ParameterOptions) => Parameter<A>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Parameter",
-      "path": [
-        "src",
-        "Parameter.ts"
-      ]
+      "name": "Parameter.ts",
+      "path": "src/Parameter.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "Parameter",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -398,141 +212,109 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Parameter",
-      "path": [
-        "src",
-        "Parameter.ts"
-      ]
+      "name": "Parameter.ts",
+      "path": "src/Parameter.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "ParameterId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export type ParameterId = typeof ParameterId"
+    "signature": "type ParameterId = typeof ParameterId"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const make: (name: string) => Procedure<{}, {}>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "param",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": null
+    "signature": "declare const param: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<Simplify<I & { [K in N]: Parameter.Parameter<A>; }>, O>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "outputParam",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": null
+    "signature": "declare const outputParam: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, Simplify<O & { [K in N]: Parameter.Parameter<A>; }>>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "withRows",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": null
+    "signature": "declare const withRows: <A extends object = Row>() => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, O, A>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "compile",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": null
+    "signature": "declare const compile: <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>, A>(self: Procedure<I, O, A>) => (input: Procedure.ParametersRecord<I>) => ProcedureWithValues<I, O, A>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "Procedure",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -542,15 +324,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "ProcedureWithValues",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -560,19 +338,43 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "Procedure",
-      "path": [
-        "src",
-        "Procedure.ts"
-      ]
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
     },
     "project": "@effect/sql-mssql",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
+    },
+    "project": "@effect/sql-mssql",
+    "name": "Procedure.Result",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "export interface Result<\n    O extends Record<string, Parameter.Parameter<any>>,\n    A\n  > {\n    readonly output: ParametersRecord<O>\n    readonly rows: ReadonlyArray<A>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Procedure.ts",
+      "path": "src/Procedure.ts"
+    },
+    "project": "@effect/sql-mssql",
+    "name": "Procedure.ParametersRecord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type { readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T : never; } = & {\n      readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T\n        : never\n    }\n    & {}"
   }
 ]

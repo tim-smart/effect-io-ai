@@ -1,17 +1,13 @@
-# some
+## some
 
 Converts an option on values into an option on errors.
-
-To import and use `some` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.some
-```
 
 **Signature**
 
 ```ts
-export declare const some: <A, E, R>(self: Stream<Option.Option<A>, E, R>) => Stream<A, Option.Option<E>, R>
+declare const some: <A, E, R>(self: Stream<Option.Option<A>, E, R>) => Stream<A, Option.Option<E>, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4648)
+
+Since v2.0.0

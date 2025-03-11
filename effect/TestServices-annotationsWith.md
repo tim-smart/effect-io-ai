@@ -1,20 +1,14 @@
-# annotationsWith
+## annotationsWith
 
 Retrieves the `Annotations` service for this test and uses it to run the
 specified workflow.
 
-To import and use `annotationsWith` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.annotationsWith
-```
-
 **Signature**
 
 ```ts
-export declare const annotationsWith: <A, E, R>(
-  f: (annotations: Annotations.TestAnnotations) => Effect.Effect<A, E, R>
-) => Effect.Effect<A, E, R>
+declare const annotationsWith: <A, E, R>(f: (annotations: Annotations.TestAnnotations) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L66)
+
+Since v2.0.0

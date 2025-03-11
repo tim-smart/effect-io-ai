@@ -1,20 +1,17 @@
-# serviceFunction
+## serviceFunction
 
 Creates a function that uses a service from the context to produce a value.
 
-To import and use `serviceFunction` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.serviceFunction
-```
+- `serviceFunctionEffect` for a version that returns an effect.
 
 **Signature**
 
 ```ts
-export declare const serviceFunction: <T extends Effect<any, any, any>, Args extends Array<any>, A>(
-  getService: T,
-  f: (_: Effect.Success<T>) => (...args: Args) => A
-) => (...args: Args) => Effect<A, Effect.Error<T>, Effect.Context<T>>
+declare const serviceFunction: <T extends Effect<any, any, any>, Args extends Array<any>, A>(getService: T, f: (_: Effect.Success<T>) => (...args: Args) => A) => (...args: Args) => Effect<A, Effect.Error<T>, Effect.Context<T>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7511)
+
+Since v2.0.0

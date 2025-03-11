@@ -1,18 +1,11 @@
-# max
+## max
 
 Returns the maximum between two `BigDecimal`s.
-
-To import and use `max` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.max
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { max, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(max(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("3"))
@@ -21,8 +14,9 @@ assert.deepStrictEqual(max(unsafeFromString("2"), unsafeFromString("3")), unsafe
 **Signature**
 
 ```ts
-export declare const max: {
-  (that: BigDecimal): (self: BigDecimal) => BigDecimal
-  (self: BigDecimal, that: BigDecimal): BigDecimal
-}
+declare const max: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L649)
+
+Since v2.0.0

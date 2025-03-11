@@ -1,4 +1,4 @@
-# alterAnnotations
+## alterAnnotations
 
 Change the annotations of a document. Individual annotations can be removed,
 changed, or replaced by multiple ones.
@@ -17,19 +17,12 @@ not rendered (due to other layouts having better fit), it is preferable to
 reannotate a document **after** producing the layout by using
 `alterAnnotations` from the `SimpleDocStream` module.
 
-To import and use `alterAnnotations` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.alterAnnotations
-```
-
 **Signature**
 
 ```ts
-export declare const alterAnnotations: {
-  <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>
-  <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>
-}
+declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2088)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# date
+## date
 
 Matches values that are instances of `Date`.
-
-To import and use `date` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.date
-```
 
 **Signature**
 
 ```ts
-export declare const date: Predicate.Refinement<unknown, Date>
+declare const date: Predicate.Refinement<unknown, Date>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1030)
+
+Since v1.0.0

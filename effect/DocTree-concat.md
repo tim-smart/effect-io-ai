@@ -1,17 +1,13 @@
-# concat
+## concat
 
 Horizontally concatenates multiple `DocTree`s.
-
-To import and use `concat` from the "DocTree" module:
-
-```ts
-import * as DocTree from "@effect/printer/DocTree"
-// Can be accessed like this
-DocTree.concat
-```
 
 **Signature**
 
 ```ts
-export declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>
+declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L238)
+
+Since v1.0.0

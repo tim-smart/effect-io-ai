@@ -1,17 +1,13 @@
-# dieMessage
+## dieMessage
 
 Creates a failing `Take` with the specified error message.
-
-To import and use `dieMessage` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.dieMessage
-```
 
 **Signature**
 
 ```ts
-export declare const dieMessage: (message: string) => Take<never>
+declare const dieMessage: (message: string) => Take<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L76)
+
+Since v2.0.0

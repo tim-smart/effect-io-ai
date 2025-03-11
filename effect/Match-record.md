@@ -1,17 +1,13 @@
-# record
+## record
 
 Matches objects where keys are `string` or `symbol` and values are `unknown`.
-
-To import and use `record` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.record
-```
 
 **Signature**
 
 ```ts
-export declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: symbol]: unknown }>
+declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: symbol]: unknown; }>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1038)
+
+Since v1.0.0

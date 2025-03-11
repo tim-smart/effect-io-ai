@@ -1,6 +1,6 @@
-# orElseEither
+## orElseEither
 
-Similar to {@link orElse}, but returns an `Either` wrapped in an `Option` to
+Similar to `orElse`, but returns an `Either` wrapped in an `Option` to
 indicate the source of the value.
 
 **Details**
@@ -19,19 +19,12 @@ This is especially useful when you need to differentiate between values
 originating from the primary `Option` and those coming from the fallback,
 while still maintaining the `Option`-style handling.
 
-To import and use `orElseEither` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.orElseEither
-```
-
 **Signature**
 
 ```ts
-export declare const orElseEither: {
-  <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Either<B, A>>
-  <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Either<B, A>>
-}
+declare const orElseEither: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Either<B, A>>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Either<B, A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L612)
+
+Since v2.0.0

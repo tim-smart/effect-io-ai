@@ -1,17 +1,13 @@
-# pick
+## pick
 
 Equivalent at runtime to the built-in TypeScript utility type `Pick`.
-
-To import and use `pick` from the "SchemaAST" module:
-
-```ts
-import * as SchemaAST from "effect/SchemaAST"
-// Can be accessed like this
-SchemaAST.pick
-```
 
 **Signature**
 
 ```ts
-export declare const pick: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
+declare const pick: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2355)
+
+Since v3.10.0

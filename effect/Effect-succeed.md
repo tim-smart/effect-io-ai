@@ -1,4 +1,4 @@
-# succeed
+## succeed
 
 Creates an `Effect` that always succeeds with a given value.
 
@@ -6,14 +6,6 @@ Creates an `Effect` that always succeeds with a given value.
 
 Use this function when you need an effect that completes successfully with a
 specific value without any errors or external dependencies.
-
-To import and use `succeed` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.succeed
-```
 
 **Example**
 
@@ -28,8 +20,16 @@ import { Effect } from "effect"
 const success = Effect.succeed(42)
 ```
 
+**See**
+
+- `fail` to create an effect that represents a failure.
+
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Effect<A>
+declare const succeed: <A>(value: A) => Effect<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3094)
+
+Since v2.0.0

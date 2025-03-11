@@ -1,4 +1,4 @@
-# contextWith
+## contextWith
 
 Accesses the context and applies a transformation function.
 
@@ -8,16 +8,16 @@ This function retrieves the context of the effect and applies a pure
 transformation function to it. The result of the transformation is then
 returned within the effect.
 
-To import and use `contextWith` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.contextWith
-```
+- `contextWithEffect` for a version that allows effectful transformations.
 
 **Signature**
 
 ```ts
-export declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<A, never, R>
+declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<A, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7252)
+
+Since v2.0.0

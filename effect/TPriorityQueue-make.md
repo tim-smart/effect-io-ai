@@ -1,17 +1,13 @@
-# make
+## make
 
 Makes a new `TPriorityQueue` that is initialized with specified values.
-
-To import and use `make` from the "TPriorityQueue" module:
-
-```ts
-import * as TPriorityQueue from "effect/TPriorityQueue"
-// Can be accessed like this
-TPriorityQueue.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <A>(order: Order.Order<A>) => (...elements: Array<A>) => STM.STM<TPriorityQueue<A>>
+declare const make: <A>(order: Order.Order<A>) => (...elements: Array<A>) => STM.STM<TPriorityQueue<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPriorityQueue.ts#L101)
+
+Since v2.0.0

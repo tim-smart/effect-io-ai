@@ -1,17 +1,13 @@
-# suspend
+## suspend
 
 Suspends creation of the specified transaction lazily.
-
-To import and use `suspend` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.suspend
-```
 
 **Signature**
 
 ```ts
-export declare const suspend: <A, E, R>(evaluate: LazyArg<STM<A, E, R>>) => STM<A, E, R>
+declare const suspend: <A, E, R>(evaluate: LazyArg<STM<A, E, R>>) => STM<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1758)
+
+Since v2.0.0

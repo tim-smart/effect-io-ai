@@ -1,11 +1,17 @@
-# Annotated
+## Annotated
 
 Represents a document with an associated annotation.
 
-To import and use `Annotated` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Annotated
+export interface Annotated<A> extends Doc.Variance<A> {
+  readonly _tag: "Annotated"
+  readonly annotation: A
+  readonly doc: Doc<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L302)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# make
+## make
 
 Create a `DateTime` from one of the following:
 
@@ -9,14 +9,6 @@ Create a `DateTime` from one of the following:
 - A `string` that can be parsed by `Date.parse`
 
 If the input is invalid, `None` will be returned.
-
-To import and use `make` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.make
-```
 
 **Example**
 
@@ -36,5 +28,9 @@ DateTime.make("2024-01-01")
 **Signature**
 
 ```ts
-export declare const make: <A extends DateTime.Input>(input: A) => Option.Option<DateTime.PreserveZone<A>>
+declare const make: <A extends DateTime.Input>(input: A) => Option.Option<DateTime.PreserveZone<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L400)
+
+Since v3.6.0

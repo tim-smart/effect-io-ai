@@ -1,12 +1,14 @@
-# PathPatch
+## PathPatch
 
 Represents a description of how to modify the path to a configuration
 value.
 
-To import and use `PathPatch` from the "ConfigProviderPathPatch" module:
+**Signature**
 
 ```ts
-import * as ConfigProviderPathPatch from "effect/ConfigProviderPathPatch"
-// Can be accessed like this
-ConfigProviderPathPatch.PathPatch
+type PathPatch = Empty | AndThen | MapName | Nested | Unnested
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProviderPathPatch.ts#L13)
+
+Since v2.0.0

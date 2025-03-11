@@ -1,21 +1,14 @@
-# make
+## make
 
 A `Mailbox` is a queue that can be signaled to be done or failed.
-
-To import and use `make` from the "Mailbox" module:
-
-```ts
-import * as Mailbox from "effect/Mailbox"
-// Can be accessed like this
-Mailbox.make
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Effect, Mailbox } from "effect"
 
-Effect.gen(function* () {
+Effect.gen(function*() {
   const mailbox = yield* Mailbox.make<number, string>()
 
   // add messages to the mailbox
@@ -42,7 +35,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const make: <A, E = never>(
-  capacity?: number | { readonly capacity?: number; readonly strategy?: "suspend" | "dropping" | "sliding" } | undefined
-) => Effect<Mailbox<A, E>>
+declare const make: <A, E = never>(capacity?: number | { readonly capacity?: number; readonly strategy?: "suspend" | "dropping" | "sliding"; } | undefined) => Effect<Mailbox<A, E>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Mailbox.ts#L209)
+
+Since v3.8.0

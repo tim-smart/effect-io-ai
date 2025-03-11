@@ -1,4 +1,4 @@
-# InvalidPubSubCapacityExceptionTypeId
+## InvalidPubSubCapacityExceptionTypeId
 
 A unique symbol identifying the `InvalidPubSubCapacityException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies an `InvalidPubSubCapacityException`.
 It indicates an error related to an invalid capacity passed to a `PubSub`
 structure.
 
-To import and use `InvalidPubSubCapacityExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.InvalidPubSubCapacityExceptionTypeId
-```
+- `InvalidPubSubCapacityException` Create or work with an `InvalidPubSubCapacityException`
 
 **Signature**
 
 ```ts
-export declare const InvalidPubSubCapacityExceptionTypeId: typeof InvalidPubSubCapacityExceptionTypeId
+declare const InvalidPubSubCapacityExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L165)
+
+Since v2.0.0

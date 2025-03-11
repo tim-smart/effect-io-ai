@@ -1,18 +1,11 @@
-# toExponential
+## toExponential
 
 Formats a given `BigDecimal` as a `string` in scientific notation.
-
-To import and use `toExponential` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.toExponential
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { toExponential, make } from "effect/BigDecimal"
 
 assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
@@ -21,5 +14,9 @@ assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
 **Signature**
 
 ```ts
-export declare const toExponential: (n: BigDecimal) => string
+declare const toExponential: (n: BigDecimal) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1019)
+
+Since v3.11.0

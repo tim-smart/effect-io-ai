@@ -1,17 +1,13 @@
-# isNeverFlat
+## isNeverFlat
 
 Returns `true` if the specified `Flatten` is a `NeverFlat`, `false` otherwise.
-
-To import and use `isNeverFlat` from the "Flatten" module:
-
-```ts
-import * as Flatten from "@effect/printer/Flatten"
-// Can be accessed like this
-Flatten.isNeverFlat
-```
 
 **Signature**
 
 ```ts
-export declare const isNeverFlat: <A>(a: Flatten<A>) => a is NeverFlat<A>
+declare const isNeverFlat: <A>(a: Flatten<A>) => a is NeverFlat<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L127)
+
+Since v1.0.0

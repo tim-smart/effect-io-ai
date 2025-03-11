@@ -1,4 +1,4 @@
-# getRight
+## getRight
 
 Converts an `Either` into an `Option` by discarding the error and extracting
 the right value.
@@ -17,14 +17,6 @@ This is particularly useful when you only care about the success case
 using this function, you can convert `Either` into a simpler structure for
 cases where error handling is not required.
 
-To import and use `getRight` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getRight
-```
-
 **Example**
 
 ```ts
@@ -37,8 +29,16 @@ console.log(Option.getRight(Either.left("err")))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
 
+**See**
+
+- `getLeft` for the opposite operation.
+
 **Signature**
 
 ```ts
-export declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
+declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L431)
+
+Since v2.0.0

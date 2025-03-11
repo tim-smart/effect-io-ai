@@ -1,4 +1,4 @@
-# squash
+## squash
 
 Extracts the most "important" defect from a `Cause`.
 
@@ -24,16 +24,16 @@ from a `Cause`, especially in scenarios where multiple errors or defects may
 be present. It's particularly useful for simplifying error reporting or
 logging.
 
-To import and use `squash` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.squash
-```
+- `squashWith` Allows transforming failures into defects when squashing.
 
 **Signature**
 
 ```ts
-export declare const squash: <E>(self: Cause<E>) => unknown
+declare const squash: <E>(self: Cause<E>) => unknown
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1118)
+
+Since v2.0.0

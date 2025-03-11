@@ -1,17 +1,13 @@
-# isShutdown
+## isShutdown
 
 Returns `true` if `shutdown` has been called, otherwise returns `false`.
-
-To import and use `isShutdown` from the "TPubSub" module:
-
-```ts
-import * as TPubSub from "effect/TPubSub"
-// Can be accessed like this
-TPubSub.isShutdown
-```
 
 **Signature**
 
 ```ts
-export declare const isShutdown: <A>(self: TPubSub<A>) => STM.STM<boolean>
+declare const isShutdown: <A>(self: TPubSub<A>) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPubSub.ts#L125)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# fromNullable
+## fromNullable
 
 Safely handles nullable values by creating an effect that fails for `null` or
 `undefined`.
@@ -21,14 +21,6 @@ predictable code.
 Use this function when working with values that may be `null` or `undefined`
 and you want to ensure that only non-null values are processed. It helps
 enforce null-safety and makes error handling more explicit.
-
-To import and use `fromNullable` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.fromNullable
-```
 
 **Example**
 
@@ -63,5 +55,9 @@ const maybe2 = Effect.fromNullable(null as number | null)
 **Signature**
 
 ```ts
-export declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>
+declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12966)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# recurUntil
+## recurUntil
 
 A schedule that recurs until the given predicate evaluates to true.
 
@@ -12,16 +12,16 @@ This is useful for defining schedules that should stop when a certain
 condition is met, such as detecting a success state, reaching a threshold, or
 avoiding unnecessary retries.
 
-To import and use `recurUntil` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.recurUntil
-```
+- `recurUntilEffect` If you need to use an effectful predicate.
 
 **Signature**
 
 ```ts
-export declare const recurUntil: <A>(f: Predicate<A>) => Schedule<A, A>
+declare const recurUntil: <A>(f: Predicate<A>) => Schedule<A, A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1496)
+
+Since v2.0.0

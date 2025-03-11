@@ -1,20 +1,13 @@
-# filter
+## filter
 
 Filter the groups to be processed.
-
-To import and use `filter` from the "GroupBy" module:
-
-```ts
-import * as GroupBy from "effect/GroupBy"
-// Can be accessed like this
-GroupBy.filter
-```
 
 **Signature**
 
 ```ts
-export declare const filter: {
-  <K>(predicate: Predicate<NoInfer<K>>): <V, E, R>(self: GroupBy<K, V, E, R>) => GroupBy<K, V, E, R>
-  <K, V, E, R>(self: GroupBy<K, V, E, R>, predicate: Predicate<K>): GroupBy<K, V, E, R>
-}
+declare const filter: { <K>(predicate: Predicate<NoInfer<K>>): <V, E, R>(self: GroupBy<K, V, E, R>) => GroupBy<K, V, E, R>; <K, V, E, R>(self: GroupBy<K, V, E, R>, predicate: Predicate<K>): GroupBy<K, V, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/GroupBy.ts#L79)
+
+Since v2.0.0

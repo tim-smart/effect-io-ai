@@ -1,17 +1,13 @@
-# isLineStream
+## isLineStream
 
 Returns `true` if the specified `DocStream` is a `LineStream`, `false` otherwise.
-
-To import and use `isLineStream` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.isLineStream
-```
 
 **Signature**
 
 ```ts
-export declare const isLineStream: <A>(self: DocStream<A>) => self is LineStream<A>
+declare const isLineStream: <A>(self: DocStream<A>) => self is LineStream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L211)
+
+Since v1.0.0

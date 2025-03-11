@@ -1,17 +1,13 @@
-# takeAll
+## takeAll
 
 Takes all values from the queue.
-
-To import and use `takeAll` from the "TPriorityQueue" module:
-
-```ts
-import * as TPriorityQueue from "effect/TPriorityQueue"
-// Can be accessed like this
-TPriorityQueue.takeAll
-```
 
 **Signature**
 
 ```ts
-export declare const takeAll: <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
+declare const takeAll: <A>(self: TPriorityQueue<A>) => STM.STM<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPriorityQueue.ts#L187)
+
+Since v2.0.0

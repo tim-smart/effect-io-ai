@@ -1,20 +1,13 @@
-# empty
+## empty
 
 Creates a new, empty record.
-
-To import and use `empty` from the "Record" module:
-
-```ts
-import * as Record from "effect/Record"
-// Can be accessed like this
-Record.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: <K extends string | symbol = never, V = never>() => Record<
-  ReadonlyRecord.NonLiteralKey<K>,
-  V
->
+declare const empty: <K extends string | symbol = never, V = never>() => Record<ReadonlyRecord.NonLiteralKey<K>, V>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L61)
+
+Since v2.0.0

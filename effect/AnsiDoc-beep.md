@@ -1,17 +1,13 @@
-# beep
+## beep
 
 Play a beeping sound.
-
-To import and use `beep` from the "AnsiDoc" module:
-
-```ts
-import * as AnsiDoc from "@effect/printer-ansi/AnsiDoc"
-// Can be accessed like this
-AnsiDoc.beep
-```
 
 **Signature**
 
 ```ts
-export declare const beep: AnsiDoc
+declare const beep: AnsiDoc
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L67)
+
+Since v1.0.0

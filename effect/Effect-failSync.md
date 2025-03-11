@@ -1,17 +1,13 @@
-# failSync
+## failSync
 
 Creates an `Effect` that fails with the specified error, evaluated lazily.
-
-To import and use `failSync` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.failSync
-```
 
 **Signature**
 
 ```ts
-export declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
+declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2518)
+
+Since v2.0.0

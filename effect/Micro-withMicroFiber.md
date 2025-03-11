@@ -1,19 +1,13 @@
-# withMicroFiber
+## withMicroFiber
 
 Create a `Micro` effect using the current `MicroFiber`.
-
-To import and use `withMicroFiber` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.withMicroFiber
-```
 
 **Signature**
 
 ```ts
-export declare const withMicroFiber: <A, E = never, R = never>(
-  evaluate: (fiber: MicroFiberImpl<A, E>) => Micro<A, E, R>
-) => Micro<A, E, R>
+declare const withMicroFiber: <A, E = never, R = never>(evaluate: (fiber: MicroFiberImpl<A, E>) => Micro<A, E, R>) => Micro<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1111)
+
+Since v3.4.0

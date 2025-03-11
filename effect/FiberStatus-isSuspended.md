@@ -1,18 +1,14 @@
-# isSuspended
+## isSuspended
 
 Returns `true` if the specified `FiberStatus` is `Suspended`, `false`
 otherwise.
 
-To import and use `isSuspended` from the "FiberStatus" module:
-
-```ts
-import * as FiberStatus from "effect/FiberStatus"
-// Can be accessed like this
-FiberStatus.isSuspended
-```
-
 **Signature**
 
 ```ts
-export declare const isSuspended: (self: FiberStatus) => self is Suspended
+declare const isSuspended: (self: FiberStatus) => self is Suspended
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberStatus.ts#L108)
+
+Since v2.0.0

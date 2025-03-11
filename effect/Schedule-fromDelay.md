@@ -1,4 +1,4 @@
-# fromDelay
+## fromDelay
 
 Creates a schedule that recurs once after a specified duration.
 
@@ -7,16 +7,16 @@ Creates a schedule that recurs once after a specified duration.
 This schedule executes a single time after waiting for the given duration.
 Once it has executed, it does not repeat.
 
-To import and use `fromDelay` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.fromDelay
-```
+- `fromDelays` If you need to create a schedule with multiple delays.
 
 **Signature**
 
 ```ts
-export declare const fromDelay: (delay: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const fromDelay: (delay: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1077)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# colon
+## colon
 
 A document containing a single `:` character.
-
-To import and use `colon` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.colon
-```
 
 **Signature**
 
 ```ts
-export declare const colon: Doc<never>
+declare const colon: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L719)
+
+Since v1.0.0

@@ -1,17 +1,9 @@
-# pretty
+## pretty
 
 The pretty logger utilizes the capabilities of the console API to generate
 visually engaging and color-enhanced log outputs. This feature is
 particularly useful for improving the readability of log messages during
 development and debugging processes.
-
-To import and use `pretty` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.pretty
-```
 
 **Example**
 
@@ -35,5 +27,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const pretty: Layer.Layer<never, never, never>
+declare const pretty: Layer.Layer<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L639)
+
+Since v3.5.0

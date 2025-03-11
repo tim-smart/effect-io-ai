@@ -1,19 +1,15 @@
-# min
+## min
 
 Get a monoid where `combine` will return the minimum, based on the provided bounded order.
 
 The `empty` value is the `maxBound` value.
 
-To import and use `min` from the "Monoid" module:
-
-```ts
-import * as Monoid from "@effect/typeclass/Monoid"
-// Can be accessed like this
-Monoid.min
-```
-
 **Signature**
 
 ```ts
-export declare const min: <A>(B: Bounded<A>) => Monoid<A>
+declare const min: <A>(B: Bounded<A>) => Monoid<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L36)
+
+Since v0.24.0

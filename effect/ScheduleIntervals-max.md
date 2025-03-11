@@ -1,20 +1,13 @@
-# max
+## max
 
 Returns the maximum of the two `Intervals` (i.e. which has the latest start).
-
-To import and use `max` from the "ScheduleIntervals" module:
-
-```ts
-import * as ScheduleIntervals from "effect/ScheduleIntervals"
-// Can be accessed like this
-ScheduleIntervals.max
-```
 
 **Signature**
 
 ```ts
-export declare const max: {
-  (that: Intervals): (self: Intervals) => Intervals
-  (self: Intervals, that: Intervals): Intervals
-}
+declare const max: { (that: Intervals): (self: Intervals) => Intervals; (self: Intervals, that: Intervals): Intervals; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScheduleIntervals.ts#L119)
+
+Since v2.0.0

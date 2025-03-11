@@ -1,4 +1,4 @@
-# onInterrupt
+## onInterrupt
 
 Registers a cleanup effect to run when an effect is interrupted.
 
@@ -7,14 +7,6 @@ Registers a cleanup effect to run when an effect is interrupted.
 This function allows you to specify an effect to run when the fiber is
 interrupted. This effect will be executed when the fiber is interrupted,
 allowing you to perform cleanup or other actions.
-
-To import and use `onInterrupt` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.onInterrupt
-```
 
 **Example**
 
@@ -48,13 +40,9 @@ const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.
 **Signature**
 
 ```ts
-export declare const onInterrupt: {
-  <X, R2>(
-    cleanup: (interruptors: HashSet.HashSet<FiberId.FiberId>) => Effect<X, never, R2>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>
-  <A, E, R, X, R2>(
-    self: Effect<A, E, R>,
-    cleanup: (interruptors: HashSet.HashSet<FiberId.FiberId>) => Effect<X, never, R2>
-  ): Effect<A, E, R | R2>
-}
+declare const onInterrupt: { <X, R2>(cleanup: (interruptors: HashSet.HashSet<FiberId.FiberId>) => Effect<X, never, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>; <A, E, R, X, R2>(self: Effect<A, E, R>, cleanup: (interruptors: HashSet.HashSet<FiberId.FiberId>) => Effect<X, never, R2>): Effect<A, E, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4857)
+
+Since v2.0.0

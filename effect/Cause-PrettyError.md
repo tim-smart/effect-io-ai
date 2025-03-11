@@ -1,11 +1,15 @@
-# PrettyError
+## PrettyError
 
 A shape for prettified errors, optionally including a source span.
 
-To import and use `PrettyError` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.PrettyError
+export interface PrettyError extends Error {
+  readonly span: Span | undefined
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1514)
+
+Since v3.2.0

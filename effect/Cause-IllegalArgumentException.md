@@ -1,4 +1,4 @@
-# IllegalArgumentException
+## IllegalArgumentException
 
 An error representing an invalid argument passed to a method.
 
@@ -7,10 +7,15 @@ An error representing an invalid argument passed to a method.
 This interface is used for signaling that a function or method received an
 argument that does not meet its preconditions.
 
-To import and use `IllegalArgumentException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.IllegalArgumentException
+export interface IllegalArgumentException extends YieldableError {
+  readonly _tag: "IllegalArgumentException"
+  readonly [IllegalArgumentExceptionTypeId]: IllegalArgumentExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L372)
+
+Since v2.0.0

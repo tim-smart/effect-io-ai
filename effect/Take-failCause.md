@@ -1,17 +1,13 @@
-# failCause
+## failCause
 
 Creates a failing `Take` with the specified cause.
-
-To import and use `failCause` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.failCause
-```
 
 **Signature**
 
 ```ts
-export declare const failCause: <E>(cause: Cause.Cause<E>) => Take<never, E>
+declare const failCause: <E>(cause: Cause.Cause<E>) => Take<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L108)
+
+Since v2.0.0

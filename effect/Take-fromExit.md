@@ -1,17 +1,13 @@
-# fromExit
+## fromExit
 
 Creates a `Take` from an `Exit`.
-
-To import and use `fromExit` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.fromExit
-```
 
 **Signature**
 
 ```ts
-export declare const fromExit: <A, E>(exit: Exit.Exit<A, E>) => Take<A, E>
+declare const fromExit: <A, E>(exit: Exit.Exit<A, E>) => Take<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L127)
+
+Since v2.0.0

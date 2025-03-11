@@ -1,15 +1,7 @@
-# tryPromise
+## tryPromise
 
 Wrap a `Promise` into a `Micro` effect. Any errors will be caught and
 converted into a specific error type.
-
-To import and use `tryPromise` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.tryPromise
-```
 
 **Example**
 
@@ -25,8 +17,9 @@ Micro.tryPromise({
 **Signature**
 
 ```ts
-export declare const tryPromise: <A, E>(options: {
-  readonly try: (signal: AbortSignal) => PromiseLike<A>
-  readonly catch: (error: unknown) => E
-}) => Micro<A, E>
+declare const tryPromise: <A, E>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; }) => Micro<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1089)
+
+Since v3.4.0

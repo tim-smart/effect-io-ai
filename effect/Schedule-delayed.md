@@ -1,4 +1,4 @@
-# delayed
+## delayed
 
 Modifies a schedule by adding a computed delay before each execution.
 
@@ -12,24 +12,16 @@ new delay.
 This is useful for dynamically adjusting wait times between executions, such
 as introducing jitter, exponential backoff, or custom delay logic.
 
-To import and use `delayed` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.delayed
-```
+- `delayedEffect` If you need to compute the delay using an effectful function.
 
 **Signature**
 
 ```ts
-export declare const delayed: {
-  (
-    f: (duration: Duration.Duration) => Duration.DurationInput
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
-  <Out, In, R>(
-    self: Schedule<Out, In, R>,
-    f: (duration: Duration.Duration) => Duration.DurationInput
-  ): Schedule<Out, In, R>
-}
+declare const delayed: { (f: (duration: Duration.Duration) => Duration.DurationInput): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>; <Out, In, R>(self: Schedule<Out, In, R>, f: (duration: Duration.Duration) => Duration.DurationInput): Schedule<Out, In, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L755)
+
+Since v2.0.0

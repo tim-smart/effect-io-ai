@@ -1,16 +1,8 @@
-# broadcast
+## broadcast
 
 Fan out the stream, producing a list of streams that have the same elements
 as this stream. The driver stream will only ever advance the `maximumLag`
 chunks before the slowest downstream stream.
-
-To import and use `broadcast` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.broadcast
-```
 
 **Example**
 
@@ -22,7 +14,7 @@ const numbers = Effect.scoped(
     Stream.tap((n) => Console.log(`Emit ${n} element before broadcasting`)),
     Stream.broadcast(2, 5),
     Stream.flatMap(([first, second]) =>
-      Effect.gen(function* () {
+      Effect.gen(function*() {
         const fiber1 = yield* Stream.runFold(first, 0, (acc, e) => Math.max(acc, e)).pipe(
           Effect.andThen((max) => Console.log(`Maximum: ${max}`)),
           Effect.fork
@@ -32,7 +24,9 @@ const numbers = Effect.scoped(
           Stream.runForEach((n) => Console.log(`Logging to the Console: ${n}`)),
           Effect.fork
         )
-        yield* Fiber.join(fiber1).pipe(Effect.zip(Fiber.join(fiber2), { concurrent: true }))
+        yield* Fiber.join(fiber1).pipe(
+          Effect.zip(Fiber.join(fiber2), { concurrent: true })
+        )
       })
     ),
     Stream.runCollect
@@ -87,29 +81,9 @@ const numbers = Effect.scoped(
 **Signature**
 
 ```ts
-export declare const broadcast: {
-  <N extends number>(
-    n: N,
-    maximumLag:
-      | number
-      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
-      | {
-          readonly capacity: number
-          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
-          readonly replay?: number | undefined
-        }
-  ): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>
-  <A, E, R, N extends number>(
-    self: Stream<A, E, R>,
-    n: N,
-    maximumLag:
-      | number
-      | { readonly capacity: "unbounded"; readonly replay?: number | undefined }
-      | {
-          readonly capacity: number
-          readonly strategy?: "sliding" | "dropping" | "suspend" | undefined
-          readonly replay?: number | undefined
-        }
-  ): Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>
-}
+declare const broadcast: { <N extends number>(n: N, maximumLag: number | { readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>; <A, E, R, N extends number>(self: Stream<A, E, R>, n: N, maximumLag: number | { readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L540)
+
+Since v2.0.0

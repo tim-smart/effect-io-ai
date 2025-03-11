@@ -1,11 +1,16 @@
-# TimeoutException
+## TimeoutException
 
 An error representing a computation that timed out.
 
-To import and use `TimeoutException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.TimeoutException
+export interface TimeoutException extends YieldableError {
+  readonly _tag: "TimeoutException"
+  readonly [TimeoutExceptionTypeId]: TimeoutExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L422)
+
+Since v2.0.0

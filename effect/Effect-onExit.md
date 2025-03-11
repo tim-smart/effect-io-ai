@@ -1,4 +1,4 @@
-# onExit
+## onExit
 
 Guarantees that a cleanup function runs regardless of whether the effect
 succeeds, fails, or is interrupted.
@@ -9,21 +9,12 @@ This function ensures that a provided cleanup function is executed after the
 effect completes, regardless of the outcome. The cleanup function is given
 the `Exit` value of the effect, which provides detailed information about the
 result:
-
 - If the effect succeeds, the `Exit` contains the success value.
 - If the effect fails, the `Exit` contains the error or failure cause.
 - If the effect is interrupted, the `Exit` reflects the interruption.
 
 The cleanup function is guaranteed to run uninterruptibly, ensuring reliable
 resource management even in complex or high-concurrency scenarios.
-
-To import and use `onExit` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.onExit
-```
 
 **Example**
 
@@ -58,13 +49,9 @@ const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.
 **Signature**
 
 ```ts
-export declare const onExit: {
-  <A, E, X, R2>(
-    cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>
-  ): <R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>
-  <A, E, R, X, R2>(
-    self: Effect<A, E, R>,
-    cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>
-  ): Effect<A, E, R | R2>
-}
+declare const onExit: { <A, E, X, R2>(cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>): <R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>; <A, E, R, X, R2>(self: Effect<A, E, R>, cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>): Effect<A, E, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5755)
+
+Since v2.0.0

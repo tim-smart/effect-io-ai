@@ -1,11 +1,13 @@
-# Lowercase
+## Lowercase
 
 This schema converts a string to lowercase.
 
-To import and use `Lowercase` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.Lowercase
+declare class Lowercase
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4628)
+
+Since v3.10.0

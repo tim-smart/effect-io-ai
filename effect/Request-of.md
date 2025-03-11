@@ -1,17 +1,13 @@
-# of
+## of
 
 Constructs a new `Request`.
-
-To import and use `of` from the "Request" module:
-
-```ts
-import * as Request from "effect/Request"
-// Can be accessed like this
-Request.of
-```
 
 **Signature**
 
 ```ts
-export declare const of: <R extends Request<any, any>>() => Request.Constructor<R>
+declare const of: <R extends Request<any, any>>() => Request.Constructor<R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L112)
+
+Since v2.0.0

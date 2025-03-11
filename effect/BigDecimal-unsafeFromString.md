@@ -1,18 +1,11 @@
-# unsafeFromString
+## unsafeFromString
 
 Parses a numerical `string` into a `BigDecimal`.
-
-To import and use `unsafeFromString` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.unsafeFromString
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { unsafeFromString, make } from "effect/BigDecimal"
 
 assert.deepStrictEqual(unsafeFromString("123"), make(123n, 0))
@@ -23,5 +16,9 @@ assert.throws(() => unsafeFromString("123.abc"))
 **Signature**
 
 ```ts
-export declare const unsafeFromString: (s: string) => BigDecimal
+declare const unsafeFromString: (s: string) => BigDecimal
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L952)
+
+Since v2.0.0

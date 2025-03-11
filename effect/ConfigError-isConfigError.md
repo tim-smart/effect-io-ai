@@ -1,17 +1,13 @@
-# isConfigError
+## isConfigError
 
 Returns `true` if the specified value is a `ConfigError`, `false` otherwise.
-
-To import and use `isConfigError` from the "ConfigError" module:
-
-```ts
-import * as ConfigError from "effect/ConfigError"
-// Can be accessed like this
-ConfigError.isConfigError
-```
 
 **Signature**
 
 ```ts
-export declare const isConfigError: (u: unknown) => u is ConfigError
+declare const isConfigError: (u: unknown) => u is ConfigError
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L190)
+
+Since v2.0.0

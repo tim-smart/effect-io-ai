@@ -1,17 +1,13 @@
-# length
+## length
 
 Return the number of elements in a `ReadonlyArray`.
-
-To import and use `length` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.length
-```
 
 **Signature**
 
 ```ts
-export declare const length: <A>(self: ReadonlyArray<A>) => number
+declare const length: <A>(self: ReadonlyArray<A>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L601)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# succeed
+## succeed
 
 Constructs a new `Exit.Success` containing the specified value of type `A`.
-
-To import and use `succeed` from the "Exit" module:
-
-```ts
-import * as Exit from "effect/Exit"
-// Can be accessed like this
-Exit.succeed
-```
 
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Exit<A>
+declare const succeed: <A>(value: A) => Exit<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L359)
+
+Since v2.0.0

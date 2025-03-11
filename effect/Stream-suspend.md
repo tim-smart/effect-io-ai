@@ -1,17 +1,13 @@
-# suspend
+## suspend
 
 Returns a lazily constructed stream.
-
-To import and use `suspend` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.suspend
-```
 
 **Signature**
 
 ```ts
-export declare const suspend: <A, E, R>(stream: LazyArg<Stream<A, E, R>>) => Stream<A, E, R>
+declare const suspend: <A, E, R>(stream: LazyArg<Stream<A, E, R>>) => Stream<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4751)
+
+Since v2.0.0

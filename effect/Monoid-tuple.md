@@ -1,4 +1,4 @@
-# tuple
+## tuple
 
 Similar to `Promise.all` but operates on `Monoid`s.
 
@@ -13,18 +13,12 @@ The `empty` value of the returned `Monoid` is the tuple of `empty` values of the
 
 It is useful when you need to combine two tuples of the same type and you have a specific way of combining each element of the tuple.
 
-To import and use `tuple` from the "Monoid" module:
-
-```ts
-import * as Monoid from "@effect/typeclass/Monoid"
-// Can be accessed like this
-Monoid.tuple
-```
-
 **Signature**
 
 ```ts
-export declare const tuple: <T extends ReadonlyArray<Monoid<any>>>(
-  ...elements: T
-) => Monoid<{ readonly [I in keyof T]: [T[I]] extends [Monoid<infer A>] ? A : never }>
+declare const tuple: <T extends ReadonlyArray<Monoid<any>>>(...elements: T) => Monoid<{ readonly [I in keyof T]: [T[I]] extends [Monoid<infer A>] ? A : never; }>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L73)
+
+Since v0.24.0

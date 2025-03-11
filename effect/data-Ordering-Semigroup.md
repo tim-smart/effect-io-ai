@@ -1,18 +1,11 @@
-# Semigroup
+## Semigroup
 
 `Semigroup` instance for `Ordering`, returns the left-most non-zero `Ordering`.
-
-To import and use `Semigroup` from the "Ordering" module:
-
-```ts
-import * as Ordering from "@effect/typeclass/data/Ordering"
-// Can be accessed like this
-Ordering.Semigroup
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Semigroup } from "@effect/typeclass/data/Ordering"
 
 assert.deepStrictEqual(Semigroup.combine(0, -1), -1)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(Semigroup.combine(1, -1), 1)
 **Signature**
 
 ```ts
-export declare const Semigroup: semigroup.Semigroup<Ordering>
+declare const Semigroup: semigroup.Semigroup<Ordering>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L24)
+
+Since v0.24.0

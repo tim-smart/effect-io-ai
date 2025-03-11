@@ -1,19 +1,12 @@
-# valuesWithPrefix
+## valuesWithPrefix
 
 Returns an `IterableIterator` of the values within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).
 
-To import and use `valuesWithPrefix` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.valuesWithPrefix
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(
@@ -32,8 +25,9 @@ assert.deepStrictEqual(result, [0, 1])
 **Signature**
 
 ```ts
-export declare const valuesWithPrefix: {
-  (prefix: string): <V>(self: Trie<V>) => IterableIterator<V>
-  <V>(self: Trie<V>, prefix: string): IterableIterator<V>
-}
+declare const valuesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<V>; <V>(self: Trie<V>, prefix: string): IterableIterator<V>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L284)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isTDequeue
+## isTDequeue
 
 Returns `true` if the specified value is a `TDequeue`, `false` otherwise.
-
-To import and use `isTDequeue` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.isTDequeue
-```
 
 **Signature**
 
 ```ts
-export declare const isTDequeue: (u: unknown) => u is TDequeue<unknown>
+declare const isTDequeue: (u: unknown) => u is TDequeue<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L191)
+
+Since v2.0.0

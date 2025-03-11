@@ -1,4 +1,4 @@
-# serviceOption
+## serviceOption
 
 Retrieves an optional service from the context as an `Option`.
 
@@ -13,21 +13,20 @@ causing an error.
 **When to Use**
 
 Use this function when:
-
 - You need to access a service that may or may not be present in the context.
 - You want to handle the absence of a service using the `Option` type instead
   of throwing an error.
 
-To import and use `serviceOption` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.serviceOption
-```
+- `serviceOptional` for a version that throws an error if the service is missing.
 
 **Signature**
 
 ```ts
-export declare const serviceOption: <I, S>(tag: Context.Tag<I, S>) => Effect<Option.Option<S>>
+declare const serviceOption: <I, S>(tag: Context.Tag<I, S>) => Effect<Option.Option<S>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7593)
+
+Since v2.0.0

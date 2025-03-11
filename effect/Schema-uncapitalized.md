@@ -1,19 +1,13 @@
-# uncapitalized
+## uncapitalized
 
 Verifies that a string is uncapitalized.
-
-To import and use `uncapitalized` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.uncapitalized
-```
 
 **Signature**
 
 ```ts
-export declare const uncapitalized: <S extends Schema.Any>(
-  annotations?: Annotations.Filter<Schema.Type<S>>
-) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
+declare const uncapitalized: <S extends Schema.Any>(annotations?: Annotations.Filter<Schema.Type<S>>) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4580)
+
+Since v3.10.0

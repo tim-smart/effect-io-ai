@@ -1,14 +1,6 @@
-# zipWithIndex
+## zipWithIndex
 
 Zips this stream together with the index of elements.
-
-To import and use `zipWithIndex` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.zipWithIndex
-```
 
 **Example**
 
@@ -29,5 +21,9 @@ const indexedStream = Stream.zipWithIndex(stream)
 **Signature**
 
 ```ts
-export declare const zipWithIndex: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, number], E, R>
+declare const zipWithIndex: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, number], E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6145)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# empty
+## empty
 
 Creates an empty `RedBlackTree`.
-
-To import and use `empty` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: <K, V = never>(ord: Order<K>) => RedBlackTree<K, V>
+declare const empty: <K, V = never>(ord: Order<K>) => RedBlackTree<K, V>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L68)
+
+Since v2.0.0

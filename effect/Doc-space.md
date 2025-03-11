@@ -1,17 +1,13 @@
-# space
+## space
 
 A document containing a single ` ` character.
-
-To import and use `space` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.space
-```
 
 **Signature**
 
 ```ts
-export declare const space: Doc<never>
+declare const space: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L847)
+
+Since v1.0.0

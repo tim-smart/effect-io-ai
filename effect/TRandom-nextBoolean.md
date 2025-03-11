@@ -1,17 +1,13 @@
-# nextBoolean
+## nextBoolean
 
 Returns the next boolean value from the pseudo-random number generator.
-
-To import and use `nextBoolean` from the "TRandom" module:
-
-```ts
-import * as TRandom from "effect/TRandom"
-// Can be accessed like this
-TRandom.nextBoolean
-```
 
 **Signature**
 
 ```ts
-export declare const nextBoolean: STM.STM<boolean, never, TRandom>
+declare const nextBoolean: STM.STM<boolean, never, TRandom>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TRandom.ts#L95)
+
+Since v2.0.0

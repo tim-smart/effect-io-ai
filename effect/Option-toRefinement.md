@@ -1,4 +1,4 @@
-# toRefinement
+## toRefinement
 
 Converts an `Option`-returning function into a type guard.
 
@@ -15,14 +15,6 @@ If the original function returns `Option.some`, the type guard evaluates to
 
 This utility is especially useful for validating types in union types,
 filtering arrays, or ensuring safe handling of specific subtypes.
-
-To import and use `toRefinement` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.toRefinement
-```
 
 **Example**
 
@@ -48,5 +40,9 @@ console.log(isString(1))
 **Signature**
 
 ```ts
-export declare const toRefinement: <A, B extends A>(f: (a: A) => Option<B>) => (a: A) => a is B
+declare const toRefinement: <A, B extends A>(f: (a: A) => Option<B>) => (a: A) => a is B
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L356)
+
+Since v2.0.0

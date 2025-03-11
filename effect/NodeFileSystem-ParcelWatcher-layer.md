@@ -1,17 +1,13 @@
-# layer
+## layer
 
 You can provide this Layer to use `@parcel/watcher` as the backend for watching files.
-
-To import and use `layer` from the "ParcelWatcher" module:
-
-```ts
-import * as ParcelWatcher from "@effect/platform-node-shared/NodeFileSystem/ParcelWatcher"
-// Can be accessed like this
-ParcelWatcher.layer
-```
 
 **Signature**
 
 ```ts
-export declare const layer: Layer<WatchBackend, never, never>
+declare const layer: Layer<WatchBackend, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/ParcelWatcher.ts#L15)
+
+Since v1.0.0

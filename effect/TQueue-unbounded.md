@@ -1,17 +1,13 @@
-# unbounded
+## unbounded
 
 Creates an unbounded queue.
-
-To import and use `unbounded` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.unbounded
-```
 
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => STM.STM<TQueue<A>>
+declare const unbounded: <A>() => STM.STM<TQueue<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L432)
+
+Since v2.0.0

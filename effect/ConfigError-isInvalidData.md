@@ -1,18 +1,14 @@
-# isInvalidData
+## isInvalidData
 
 Returns `true` if the specified `ConfigError` is an `InvalidData`, `false`
 otherwise.
 
-To import and use `isInvalidData` from the "ConfigError" module:
-
-```ts
-import * as ConfigError from "effect/ConfigError"
-// Can be accessed like this
-ConfigError.isInvalidData
-```
-
 **Signature**
 
 ```ts
-export declare const isInvalidData: (self: ConfigError) => self is InvalidData
+declare const isInvalidData: (self: ConfigError) => self is InvalidData
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L215)
+
+Since v2.0.0

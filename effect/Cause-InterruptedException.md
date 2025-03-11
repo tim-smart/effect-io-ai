@@ -1,4 +1,4 @@
-# InterruptedException
+## InterruptedException
 
 An error representing fiber interruption.
 
@@ -9,10 +9,15 @@ interrupted. Interruption can happen for various reasons, including
 cancellations or system directives to halt operations. Code that deals with
 concurrency might need to catch or handle these to ensure proper cleanup.
 
-To import and use `InterruptedException` from the "Cause" module:
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.InterruptedException
+export interface InterruptedException extends YieldableError {
+  readonly _tag: "InterruptedException"
+  readonly [InterruptedExceptionTypeId]: InterruptedExceptionTypeId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L356)
+
+Since v2.0.0

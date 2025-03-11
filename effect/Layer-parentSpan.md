@@ -1,17 +1,13 @@
-# parentSpan
+## parentSpan
 
 Adds the provided span to the span stack.
-
-To import and use `parentSpan` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.parentSpan
-```
 
 **Signature**
 
 ```ts
-export declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
+declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L932)
+
+Since v2.0.0

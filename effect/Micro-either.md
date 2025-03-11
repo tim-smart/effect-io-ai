@@ -1,19 +1,15 @@
-# either
+## either
 
 Replace the success value of the given `Micro` effect with an `Either`,
 wrapping the success value in `Right` and wrapping any expected errors with
 a `Left`.
 
-To import and use `either` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.either
-```
-
 **Signature**
 
 ```ts
-export declare const either: <A, E, R>(self: Micro<A, E, R>) => Micro<Either.Either<A, E>, never, R>
+declare const either: <A, E, R>(self: Micro<A, E, R>) => Micro<Either.Either<A, E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L2934)
+
+Since v3.4.0

@@ -1,4 +1,4 @@
-# timeoutOption
+## timeoutOption
 
 Gracefully handles timeouts by returning an `Option` that represents either
 the result or a timeout.
@@ -17,14 +17,6 @@ the logic for handling delays.
 This is useful when you want to handle timeouts without causing the program
 to fail, making it easier to manage situations where you expect tasks might
 take too long but want to continue executing other tasks.
-
-To import and use `timeoutOption` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.timeoutOption
-```
 
 **Example**
 
@@ -54,11 +46,20 @@ const timedOutEffect = Effect.all([
 // ]
 ```
 
+**See**
+
+- `timeout` for a version that raises a `TimeoutException`.
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutFailCause` for a version that raises a custom defect.
+- `timeoutTo` for a version that allows specifying both success and
+timeout handlers.
+
 **Signature**
 
 ```ts
-export declare const timeoutOption: {
-  (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>
-  <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<Option.Option<A>, E, R>
-}
+declare const timeoutOption: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<Option.Option<A>, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6927)
+
+Since v3.1.0

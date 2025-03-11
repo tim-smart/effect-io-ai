@@ -1,4 +1,4 @@
-# isInterrupted
+## isInterrupted
 
 Checks if a `Cause` contains an interruption.
 
@@ -6,16 +6,12 @@ Checks if a `Cause` contains an interruption.
 
 This function returns `true` if the `Cause` includes any fiber interruptions.
 
-To import and use `isInterrupted` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isInterrupted
-```
-
 **Signature**
 
 ```ts
-export declare const isInterrupted: <E>(self: Cause<E>) => boolean
+declare const isInterrupted: <E>(self: Cause<E>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L789)
+
+Since v2.0.0

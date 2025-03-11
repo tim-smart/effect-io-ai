@@ -1,4 +1,4 @@
-# optionFromOptional
+## optionFromOptional
 
 Converts an effect that may fail with a `NoSuchElementException` into an
 effect that succeeds with an `Option`.
@@ -21,14 +21,6 @@ Use this function when you need to handle missing values as `Option.none`
 rather than throwing or propagating errors like `NoSuchElementException`.
 It’s ideal for scenarios where you want to explicitly represent optionality
 in a type-safe way while retaining other failure information.
-
-To import and use `optionFromOptional` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.optionFromOptional
-```
 
 **Example**
 
@@ -61,7 +53,9 @@ const option2 = Effect.optionFromOptional(maybe2)
 **Signature**
 
 ```ts
-export declare const optionFromOptional: <A, E, R>(
-  self: Effect<A, E, R>
-) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>
+declare const optionFromOptional: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13021)
+
+Since v2.0.0

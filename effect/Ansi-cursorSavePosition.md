@@ -1,17 +1,13 @@
-# cursorSavePosition
+## cursorSavePosition
 
 Saves the cursor position, encoding shift state and formatting attributes.
-
-To import and use `cursorSavePosition` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.cursorSavePosition
-```
 
 **Signature**
 
 ```ts
-export declare const cursorSavePosition: Ansi
+declare const cursorSavePosition: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L384)
+
+Since v1.0.0

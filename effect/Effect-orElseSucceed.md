@@ -1,4 +1,4 @@
-# orElseSucceed
+## orElseSucceed
 
 Ensures the effect always succeeds by replacing failures with a default
 success value.
@@ -17,14 +17,6 @@ This is especially useful for providing default values in case of failure,
 ensuring that an effect always completes successfully. By using this
 function, you can avoid the need for complex error handling and guarantee a
 fallback result.
-
-To import and use `orElseSucceed` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.orElseSucceed
-```
 
 **Example**
 
@@ -51,8 +43,9 @@ console.log(Effect.runSyncExit(program))
 **Signature**
 
 ```ts
-export declare const orElseSucceed: {
-  <A2>(evaluate: LazyArg<A2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, never, R>
-  <A, E, R, A2>(self: Effect<A, E, R>, evaluate: LazyArg<A2>): Effect<A | A2, never, R>
-}
+declare const orElseSucceed: { <A2>(evaluate: LazyArg<A2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, never, R>; <A, E, R, A2>(self: Effect<A, E, R>, evaluate: LazyArg<A2>): Effect<A | A2, never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11253)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# fiberId
+## fiberId
 
 Returns the fiber id of the fiber committing the transaction.
-
-To import and use `fiberId` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.fiberId
-```
 
 **Signature**
 
 ```ts
-export declare const fiberId: STM<FiberId.FiberId, never, never>
+declare const fiberId: STM<FiberId.FiberId, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L583)
+
+Since v2.0.0

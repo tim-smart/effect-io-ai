@@ -1,18 +1,11 @@
-# max
+## max
 
 Returns the maximum between two `number`s.
-
-To import and use `max` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.max
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { max } from "effect/Number"
 
 assert.deepStrictEqual(max(2, 3), 3)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(max(2, 3), 3)
 **Signature**
 
 ```ts
-export declare const max: { (that: number): (self: number) => number; (self: number, that: number): number }
+declare const max: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L354)
+
+Since v2.0.0

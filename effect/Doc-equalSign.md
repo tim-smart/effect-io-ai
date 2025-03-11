@@ -1,17 +1,13 @@
-# equalSign
+## equalSign
 
 A document containing a single `=` character.
-
-To import and use `equalSign` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.equalSign
-```
 
 **Signature**
 
 ```ts
-export declare const equalSign: Doc<never>
+declare const equalSign: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L751)
+
+Since v1.0.0

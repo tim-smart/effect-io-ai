@@ -1,18 +1,11 @@
-# min
+## min
 
 Returns the minimum between two `BigDecimal`s.
-
-To import and use `min` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.min
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { min, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(min(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("2"))
@@ -21,8 +14,9 @@ assert.deepStrictEqual(min(unsafeFromString("2"), unsafeFromString("3")), unsafe
 **Signature**
 
 ```ts
-export declare const min: {
-  (that: BigDecimal): (self: BigDecimal) => BigDecimal
-  (self: BigDecimal, that: BigDecimal): BigDecimal
-}
+declare const min: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L630)
+
+Since v2.0.0

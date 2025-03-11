@@ -1,4 +1,4 @@
-# logTrace
+## logTrace
 
 Logs messages at the TRACE log level.
 
@@ -9,14 +9,6 @@ typically used for very detailed diagnostic information. These messages are
 not displayed by default. To view them, you must adjust the logging
 configuration by setting the minimum log level to `LogLevel.Trace` using
 `Logger.withMinimumLogLevel`.
-
-To import and use `logTrace` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.logTrace
-```
 
 **Example**
 
@@ -32,5 +24,9 @@ const program = Effect.logTrace("message1").pipe(Logger.withMinimumLogLevel(LogL
 **Signature**
 
 ```ts
-export declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
+declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10716)
+
+Since v2.0.0

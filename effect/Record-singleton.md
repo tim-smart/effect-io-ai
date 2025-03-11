@@ -1,17 +1,13 @@
-# singleton
+## singleton
 
 Create a non-empty record from a single element.
-
-To import and use `singleton` from the "Record" module:
-
-```ts
-import * as Record from "effect/Record"
-// Can be accessed like this
-Record.singleton
-```
 
 **Signature**
 
 ```ts
-export declare const singleton: <K extends string | symbol, A>(key: K, value: A) => Record<K, A>
+declare const singleton: <K extends string | symbol, A>(key: K, value: A) => Record<K, A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1227)
+
+Since v2.0.0

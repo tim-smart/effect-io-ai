@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Returns `true` if the `TPubSub` contains zero elements, `false` otherwise.
-
-To import and use `isEmpty` from the "TPubSub" module:
-
-```ts
-import * as TPubSub from "effect/TPubSub"
-// Can be accessed like this
-TPubSub.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: TPubSub<A>) => STM.STM<boolean>
+declare const isEmpty: <A>(self: TPubSub<A>) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPubSub.ts#L99)
+
+Since v2.0.0

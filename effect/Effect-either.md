@@ -1,4 +1,4 @@
-# either
+## either
 
 Encapsulates both success and failure of an `Effect` into an `Either` type.
 
@@ -21,14 +21,6 @@ are encapsulated.
 
 The resulting effect cannot fail directly because all recoverable failures
 are represented inside the `Either` type.
-
-To import and use `either` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.either
-```
 
 **Example**
 
@@ -70,8 +62,17 @@ const recovered = Effect.gen(function* () {
 })
 ```
 
+**See**
+
+- `option` for a version that uses `Option` instead.
+- `exit` for a version that encapsulates both recoverable errors and defects in an `Exit`.
+
 **Signature**
 
 ```ts
-export declare const either: <A, E, R>(self: Effect<A, E, R>) => Effect<Either.Either<A, E>, never, R>
+declare const either: <A, E, R>(self: Effect<A, E, R>) => Effect<Either.Either<A, E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8005)
+
+Since v2.0.0

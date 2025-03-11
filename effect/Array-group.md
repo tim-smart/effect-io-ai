@@ -1,14 +1,6 @@
-# group
+## group
 
 Group equal, consecutive elements of a `NonEmptyReadonlyArray` into `NonEmptyArray`s.
-
-To import and use `group` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.group
-```
 
 **Example**
 
@@ -16,11 +8,15 @@ Array.group
 import { Array } from "effect"
 
 const result = Array.group([1, 1, 2, 2, 2, 3, 1])
-assert.deepStrictEqual(result, [[1, 1], [2, 2, 2], [3], [1]])
+console.log(result) // [[1, 1], [2, 2, 2], [3], [1]]
 ```
 
 **Signature**
 
 ```ts
-export declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
+declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2047)
+
+Since v2.0.0

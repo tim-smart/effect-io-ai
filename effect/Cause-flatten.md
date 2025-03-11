@@ -1,4 +1,4 @@
-# flatten
+## flatten
 
 Flattens a nested `Cause` structure.
 
@@ -8,16 +8,16 @@ This function takes a `Cause<Cause<E>>` and merges the layers into a single
 `Cause<E>`. It's useful for eliminating additional nesting created by
 repeated transformations or compositions.
 
-To import and use `flatten` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.flatten
-```
+- `flatMap` Compose nested causes
 
 **Signature**
 
 ```ts
-export declare const flatten: <E>(self: Cause<Cause<E>>) => Cause<E>
+declare const flatten: <E>(self: Cause<Cause<E>>) => Cause<E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1069)
+
+Since v2.0.0

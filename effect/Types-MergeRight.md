@@ -1,18 +1,25 @@
-# MergeRight
+## MergeRight
 
 Merges two object where the keys of the right object take precedence in the case of a conflict.
-
-To import and use `MergeRight` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.MergeRight
-```
 
 **Example**
 
 ```ts
 import type { Types } from "effect"
-type MergeRight = Types.MergeRight<{ a: number; b: number }, { a: string }> // { a: string; b: number; }
+type MergeRight = Types.MergeRight<{ a: number, b: number; }, { a: string }> // { a: string; b: number; }
 ```
+
+**Signature**
+
+```ts
+type MergeRight<Target, Source> = Simplify<
+  & Source
+  & {
+    [Key in keyof Target as Key extends keyof Source ? never : Key]: Target[Key]
+  }
+>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L191)
+
+Since v2.0.0

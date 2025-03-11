@@ -1,14 +1,6 @@
-# Mutable
+## Mutable
 
 Make all properties in `T` mutable. Supports arrays, tuples, and records as well.
-
-To import and use `Mutable` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Mutable
-```
 
 **Example**
 
@@ -23,3 +15,15 @@ type MutableTuple = Types.Mutable<readonly [string, number]> // [string, number]
 
 type MutableRecord = Types.Mutable<{ readonly [_: string]: number }> // { [x: string]: number; }
 ```
+
+**Signature**
+
+```ts
+type Mutable<T> = {
+  -readonly [P in keyof T]: T[P]
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L231)
+
+Since v2.0.0

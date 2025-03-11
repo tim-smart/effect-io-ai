@@ -1,14 +1,6 @@
-# tick
+## tick
 
 A stream that emits void values spaced by the specified duration.
-
-To import and use `tick` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.tick
-```
 
 **Example**
 
@@ -37,5 +29,9 @@ const stream = Stream.tick("1 seconds").pipe(Stream.tap(() => log("tick")))
 **Signature**
 
 ```ts
-export declare const tick: (interval: Duration.DurationInput) => Stream<void>
+declare const tick: (interval: Duration.DurationInput) => Stream<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5100)
+
+Since v2.0.0

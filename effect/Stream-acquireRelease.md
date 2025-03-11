@@ -1,15 +1,7 @@
-# acquireRelease
+## acquireRelease
 
 Creates a stream from a single value that will get cleaned up after the
 stream is consumed.
-
-To import and use `acquireRelease` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.acquireRelease
-```
 
 **Example**
 
@@ -18,7 +10,7 @@ import { Console, Effect, Stream } from "effect"
 
 // Simulating File operations
 const open = (filename: string) =>
-  Effect.gen(function* () {
+  Effect.gen(function*() {
     yield* Console.log(`Opening ${filename}`)
     return {
       getLines: Effect.succeed(["Line 1", "Line 2", "Line 3"]),
@@ -26,9 +18,10 @@ const open = (filename: string) =>
     }
   })
 
-const stream = Stream.acquireRelease(open("file.txt"), (file) => file.close).pipe(
-  Stream.flatMap((file) => file.getLines)
-)
+const stream = Stream.acquireRelease(
+  open("file.txt"),
+  (file) => file.close
+).pipe(Stream.flatMap((file) => file.getLines))
 
 // Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Opening file.txt
@@ -39,8 +32,9 @@ const stream = Stream.acquireRelease(open("file.txt"), (file) => file.close).pip
 **Signature**
 
 ```ts
-export declare const acquireRelease: <A, E, R, R2, X>(
-  acquire: Effect.Effect<A, E, R>,
-  release: (resource: A, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<X, never, R2>
-) => Stream<A, E, R | R2>
+declare const acquireRelease: <A, E, R, R2, X>(acquire: Effect.Effect<A, E, R>, release: (resource: A, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<X, never, R2>) => Stream<A, E, R | R2>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L223)
+
+Since v2.0.0

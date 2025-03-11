@@ -1,11 +1,18 @@
-# Composite
+## Composite
 
 Error that contains multiple issues.
 
-To import and use `Composite` from the "ParseResult" module:
+**Signature**
 
 ```ts
-import * as ParseResult from "effect/ParseResult"
-// Can be accessed like this
-ParseResult.Composite
+declare class Composite { constructor(
+    readonly ast: AST.AST,
+    readonly actual: unknown,
+    readonly issues: SingleOrNonEmpty<ParseIssue>,
+    readonly output?: unknown
+  ) }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L122)
+
+Since v3.10.0

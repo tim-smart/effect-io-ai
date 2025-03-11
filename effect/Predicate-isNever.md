@@ -1,18 +1,11 @@
-# isNever
+## isNever
 
 A guard that always fails.
-
-To import and use `isNever` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isNever
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isNever } from "effect/Predicate"
 
 assert.deepStrictEqual(isNever(null), false)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isNever([]), false)
 **Signature**
 
 ```ts
-export declare const isNever: (input: unknown) => input is never
+declare const isNever: (input: unknown) => input is never
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L411)
+
+Since v2.0.0

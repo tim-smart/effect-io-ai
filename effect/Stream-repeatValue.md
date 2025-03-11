@@ -1,14 +1,6 @@
-# repeatValue
+## repeatValue
 
 Repeats the provided value infinitely.
-
-To import and use `repeatValue` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.repeatValue
-```
 
 **Example**
 
@@ -24,5 +16,9 @@ const stream = Stream.repeatValue(0)
 **Signature**
 
 ```ts
-export declare const repeatValue: <A>(value: A) => Stream<A>
+declare const repeatValue: <A>(value: A) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4030)
+
+Since v2.0.0

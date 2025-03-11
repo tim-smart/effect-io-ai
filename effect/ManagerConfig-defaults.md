@@ -1,17 +1,13 @@
-# defaults
+## defaults
 
 Uses the default as ManagerConfig.
-
-To import and use `defaults` from the "ManagerConfig" module:
-
-```ts
-import * as ManagerConfig from "@effect/cluster/ManagerConfig"
-// Can be accessed like this
-ManagerConfig.defaults
-```
 
 **Signature**
 
 ```ts
-export declare const defaults: Layer.Layer<ManagerConfig, never, never>
+declare const defaults: Layer.Layer<ManagerConfig, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L59)
+
+Since v1.0.0

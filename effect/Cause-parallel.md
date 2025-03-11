@@ -1,4 +1,4 @@
-# parallel
+## parallel
 
 Combines two `Cause`s in parallel.
 
@@ -8,16 +8,16 @@ This function merges two errors that occurred simultaneously. Instead of
 discarding one error, both are retained, allowing for richer error reporting
 and debugging.
 
-To import and use `parallel` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.parallel
-```
+- `isParallelType` Check if a `Cause` is a `Parallel`
 
 **Signature**
 
 ```ts
-export declare const parallel: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
+declare const parallel: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L638)
+
+Since v2.0.0

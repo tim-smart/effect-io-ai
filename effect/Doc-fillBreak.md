@@ -1,21 +1,14 @@
-# fillBreak
+## fillBreak
 
 The `fillBreak` combinator first lays out the document `x` and then appends
 `space`s until the width of the document is equal to the specified `width`.
 If the width of `x` is already larger than the specified `width`, the nesting
 level is increased by the specified `width` and a `line` is appended.
 
-To import and use `fillBreak` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.fillBreak
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
@@ -29,9 +22,16 @@ const signatures: Array<Signature> = [
 ]
 
 const prettySignature = <A>([name, type]: Signature): Doc.Doc<A> =>
-  Doc.hsep([pipe(Doc.text(name), Doc.fillBreak(5)), Doc.text("::"), Doc.text(type)])
+  Doc.hsep([
+    pipe(Doc.text(name), Doc.fillBreak(5)),
+    Doc.text("::"),
+    Doc.text(type)
+  ])
 
-const doc = Doc.hsep([Doc.text("let"), Doc.align(Doc.vcat(signatures.map(prettySignature)))])
+const doc = Doc.hsep([
+  Doc.text("let"),
+  Doc.align(Doc.vcat(signatures.map(prettySignature)))
+])
 
 assert.strictEqual(
   Doc.render(doc, { style: "pretty" }),
@@ -47,5 +47,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A> }
+declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2012)
+
+Since v1.0.0

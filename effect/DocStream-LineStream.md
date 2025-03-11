@@ -1,13 +1,19 @@
-# LineStream
+## LineStream
 
 Represents a `Doc` containing a single line. The `indentation`
 represents the indentation level for the subsequent line in the
 `Doc`.
 
-To import and use `LineStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.LineStream
+export interface LineStream<A> extends DocStream.Variance<A> {
+  readonly _tag: "LineStream"
+  readonly indentation: number
+  readonly stream: DocStream<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L132)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# foldWeightedDecomposeEffect
+## foldWeightedDecomposeEffect
 
 Creates a sink that effectfully folds elements of type `In` into a
 structure of type `S`, until `max` worth of elements (determined by the
@@ -13,22 +13,12 @@ than to yield a value that will cross the threshold.
 
 See `Sink.foldWeightedDecompose` for an example.
 
-To import and use `foldWeightedDecomposeEffect` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.foldWeightedDecomposeEffect
-```
-
 **Signature**
 
 ```ts
-export declare const foldWeightedDecomposeEffect: <S, In, E, R, E2, R2, E3, R3>(options: {
-  readonly initial: S
-  readonly maxCost: number
-  readonly cost: (s: S, input: In) => Effect.Effect<number, E, R>
-  readonly decompose: (input: In) => Effect.Effect<Chunk.Chunk<In>, E2, R2>
-  readonly body: (s: S, input: In) => Effect.Effect<S, E3, R3>
-}) => Sink<S, In, In, E | E2 | E3, R | R2 | R3>
+declare const foldWeightedDecomposeEffect: <S, In, E, R, E2, R2, E3, R3>(options: { readonly initial: S; readonly maxCost: number; readonly cost: (s: S, input: In) => Effect.Effect<number, E, R>; readonly decompose: (input: In) => Effect.Effect<Chunk.Chunk<In>, E2, R2>; readonly body: (s: S, input: In) => Effect.Effect<S, E3, R3>; }) => Sink<S, In, In, E | E2 | E3, R | R2 | R3>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L872)
+
+Since v2.0.0

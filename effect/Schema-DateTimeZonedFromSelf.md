@@ -1,11 +1,13 @@
-# DateTimeZonedFromSelf
+## DateTimeZonedFromSelf
 
 Describes a schema that represents a `DateTime.Zoned` instance.
 
-To import and use `DateTimeZonedFromSelf` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateTimeZonedFromSelf
+declare class DateTimeZonedFromSelf
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7010)
+
+Since v3.10.0

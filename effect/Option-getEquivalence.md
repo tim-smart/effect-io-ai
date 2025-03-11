@@ -1,4 +1,4 @@
-# getEquivalence
+## getEquivalence
 
 Creates an `Equivalence` instance for comparing `Option` values, using a
 provided `Equivalence` for the inner type.
@@ -13,14 +13,6 @@ produces an `Equivalence` instance for `Option<A>`. The resulting
 - A `Some` and a `None` are not equivalent.
 - Two `Some` values are equivalent if their inner values are equivalent
   according to the provided `Equivalence`.
-
-To import and use `getEquivalence` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getEquivalence
-```
 
 **Example**
 
@@ -49,5 +41,9 @@ console.log(isEquivalent(Option.some(1), Option.some(1)))
 **Signature**
 
 ```ts
-export declare const getEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Option<A>>
+declare const getEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Option<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1690)
+
+Since v2.0.0

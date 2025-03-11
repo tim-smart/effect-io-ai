@@ -1,17 +1,13 @@
-# reloadFork
+## reloadFork
 
 Forks the reload of the service in the background, ignoring any errors.
-
-To import and use `reloadFork` from the "Reloadable" module:
-
-```ts
-import * as Reloadable from "effect/Reloadable"
-// Can be accessed like this
-Reloadable.reloadFork
-```
 
 **Signature**
 
 ```ts
-export declare const reloadFork: <I, S>(tag: Context.Tag<I, S>) => Effect.Effect<void, unknown, Reloadable<I>>
+declare const reloadFork: <I, S>(tag: Context.Tag<I, S>) => Effect.Effect<void, unknown, Reloadable<I>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Reloadable.ts#L126)
+
+Since v2.0.0

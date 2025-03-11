@@ -1,17 +1,13 @@
-# live
+## live
 
 Retrieves the `Live` service for this test.
-
-To import and use `live` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.live
-```
 
 **Signature**
 
 ```ts
-export declare const live: Effect.Effect<Live.TestLive, never, never>
+declare const live: Effect.Effect<Live.TestLive, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L159)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isExceededCapacityException
+## isExceededCapacityException
 
 Checks if a given unknown value is an `ExceededCapacityException`.
-
-To import and use `isExceededCapacityException` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isExceededCapacityException
-```
 
 **Signature**
 
 ```ts
-export declare const isExceededCapacityException: (u: unknown) => u is ExceededCapacityException
+declare const isExceededCapacityException: (u: unknown) => u is ExceededCapacityException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1483)
+
+Since v3.5.0

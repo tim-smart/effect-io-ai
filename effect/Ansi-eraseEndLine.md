@@ -1,19 +1,15 @@
-# eraseEndLine
+## eraseEndLine
 
 Clears from the current cursor position to the end of the current line.
 
 The current cursor position does not change.
 
-To import and use `eraseEndLine` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.eraseEndLine
-```
-
 **Signature**
 
 ```ts
-export declare const eraseEndLine: Ansi
+declare const eraseEndLine: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L445)
+
+Since v1.0.0

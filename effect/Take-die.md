@@ -1,17 +1,13 @@
-# die
+## die
 
 Creates a failing `Take` with the specified defect.
-
-To import and use `die` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.die
-```
 
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Take<never>
+declare const die: (defect: unknown) => Take<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L68)
+
+Since v2.0.0

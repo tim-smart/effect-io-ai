@@ -1,17 +1,13 @@
-# isEncodeException
+## isEncodeException
 
-Returns `true` if the specified value is an `Exception`, `false` otherwise.
-
-To import and use `isEncodeException` from the "Encoding" module:
-
-```ts
-import * as Encoding from "effect/Encoding"
-// Can be accessed like this
-Encoding.isEncodeException
-```
+Returns `true` if the specified value is an `EncodeException`, `false` otherwise.
 
 **Signature**
 
 ```ts
-export declare const isEncodeException: (u: unknown) => u is EncodeException
+declare const isEncodeException: (u: unknown) => u is EncodeException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L195)
+
+Since v3.12.0

@@ -1,21 +1,14 @@
-# fromMap
+## fromMap
 
 Constructs a ConfigProvider using a map and the specified delimiter string,
 which determines how to split the keys in the map into path segments.
 
-To import and use `fromMap` from the "ConfigProvider" module:
-
-```ts
-import * as ConfigProvider from "effect/ConfigProvider"
-// Can be accessed like this
-ConfigProvider.fromMap
-```
-
 **Signature**
 
 ```ts
-export declare const fromMap: (
-  map: Map<string, string>,
-  config?: Partial<ConfigProvider.FromMapConfig>
-) => ConfigProvider
+declare const fromMap: (map: Map<string, string>, config?: Partial<ConfigProvider.FromMapConfig>) => ConfigProvider
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L210)
+
+Since v2.0.0

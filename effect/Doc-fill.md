@@ -1,21 +1,14 @@
-# fill
+## fill
 
 The `fill` combinator first lays out the document `x` and then appends
 `space`s until the width of the document is equal to the specified `width`.
 If the width of `x` is already larger than the specified `width`, nothing is
 appended.
 
-To import and use `fill` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.fill
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import { pipe } from "effect/Function"
 import * as String from "effect/String"
@@ -29,9 +22,16 @@ const signatures: Array<Signature> = [
 ]
 
 const prettySignature = <A>([name, type]: Signature): Doc.Doc<A> =>
-  Doc.hsep([pipe(Doc.text(name), Doc.fill(5)), Doc.text("::"), Doc.text(type)])
+  Doc.hsep([
+    pipe(Doc.text(name), Doc.fill(5)),
+    Doc.text("::"),
+    Doc.text(type)
+  ])
 
-const doc = Doc.hsep([Doc.text("let"), Doc.align(Doc.vcat(signatures.map(prettySignature)))])
+const doc = Doc.hsep([
+  Doc.text("let"),
+  Doc.align(Doc.vcat(signatures.map(prettySignature)))
+])
 
 assert.strictEqual(
   Doc.render(doc, { style: "pretty" }),
@@ -46,5 +46,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A> }
+declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1960)
+
+Since v1.0.0

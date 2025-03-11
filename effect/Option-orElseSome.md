@@ -1,4 +1,4 @@
-# orElseSome
+## orElseSome
 
 Returns the provided default value wrapped in `Some` if the current `Option`
 (`self`) is `None`; otherwise, returns `self`.
@@ -13,14 +13,6 @@ is.
 
 This is particularly useful for handling optional values where a fallback
 default needs to be provided explicitly in case of absence.
-
-To import and use `orElseSome` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.orElseSome
-```
 
 **Example**
 
@@ -37,8 +29,9 @@ console.log(Option.some("a").pipe(Option.orElseSome(() => "b")))
 **Signature**
 
 ```ts
-export declare const orElseSome: {
-  <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => Option<B | A>
-  <A, B>(self: Option<A>, onNone: LazyArg<B>): Option<A | B>
-}
+declare const orElseSome: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, onNone: LazyArg<B>): Option<A | B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L581)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# linear
+## linear
 
 Creates a schedule that recurs indefinitely, increasing the delay linearly.
 
@@ -15,16 +15,12 @@ results in increasing intervals between executions.
 This is useful for implementing linear backoff strategies where the wait time
 between retries increases at a steady rate.
 
-To import and use `linear` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.linear
-```
-
 **Signature**
 
 ```ts
-export declare const linear: (base: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const linear: (base: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1282)
+
+Since v2.0.0

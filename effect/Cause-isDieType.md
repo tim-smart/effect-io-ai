@@ -1,17 +1,17 @@
-# isDieType
+## isDieType
 
 Checks if a `Cause` is a `Die` type.
 
-To import and use `isDieType` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isDieType
-```
+- `die` Create a new `Die` cause
 
 **Signature**
 
 ```ts
-export declare const isDieType: <E>(self: Cause<E>) => self is Die
+declare const isDieType: <E>(self: Cause<E>) => self is Die
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L692)
+
+Since v2.0.0

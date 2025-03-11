@@ -1,11 +1,15 @@
-# NeverFlat
+## NeverFlat
 
 Represents a `FlattenResult` where the input cannot be flattened.
 
-To import and use `NeverFlat` from the "Flatten" module:
+**Signature**
 
 ```ts
-import * as Flatten from "@effect/printer/Flatten"
-// Can be accessed like this
-Flatten.NeverFlat
+export interface NeverFlat<A> extends Flatten.Variance<A> {
+  readonly _tag: "NeverFlat"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L89)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# find
+## find
 
 Searches a `Cause` using a partial function to extract information.
 
@@ -17,19 +17,12 @@ the relevant information you care about.
 The partial function should return an `Option` indicating whether it matched
 and the value it extracted.
 
-To import and use `find` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.find
-```
-
 **Signature**
 
 ```ts
-export declare const find: {
-  <E, Z>(pf: (cause: Cause<E>) => Option.Option<Z>): (self: Cause<E>) => Option.Option<Z>
-  <E, Z>(self: Cause<E>, pf: (cause: Cause<E>) => Option.Option<Z>): Option.Option<Z>
-}
+declare const find: { <E, Z>(pf: (cause: Cause<E>) => Option.Option<Z>): (self: Cause<E>) => Option.Option<Z>; <E, Z>(self: Cause<E>, pf: (cause: Cause<E>) => Option.Option<Z>): Option.Option<Z>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1171)
+
+Since v2.0.0

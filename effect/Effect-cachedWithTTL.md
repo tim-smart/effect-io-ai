@@ -1,4 +1,4 @@
-# cachedWithTTL
+## cachedWithTTL
 
 Returns an effect that caches its result for a specified `Duration`,
 known as "timeToLive" (TTL).
@@ -25,14 +25,6 @@ frequently and can be reused for a specified duration.
 
 By caching the result, you can improve efficiency and reduce unnecessary
 computations, especially in performance-critical applications.
-
-To import and use `cachedWithTTL` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.cachedWithTTL
-```
 
 **Example**
 
@@ -66,11 +58,19 @@ const program = Effect.gen(function* () {
 // result 2
 ```
 
+**See**
+
+- `cached` for a similar function that caches the result
+indefinitely.
+- `cachedInvalidateWithTTL` for a similar function that includes an
+additional effect for manually invalidating the cached value.
+
 **Signature**
 
 ```ts
-export declare const cachedWithTTL: {
-  (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E>, never, R>
-  <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<Effect<A, E>, never, R>
-}
+declare const cachedWithTTL: { (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<Effect<A, E>, never, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L331)
+
+Since v2.0.0

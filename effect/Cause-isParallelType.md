@@ -1,17 +1,17 @@
-# isParallelType
+## isParallelType
 
 Checks if a `Cause` is a `Parallel` type.
 
-To import and use `isParallelType` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isParallelType
-```
+- `parallel` Combine two `Cause`s in parallel
 
 **Signature**
 
 ```ts
-export declare const isParallelType: <E>(self: Cause<E>) => self is Parallel<E>
+declare const isParallelType: <E>(self: Cause<E>) => self is Parallel<E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L722)
+
+Since v2.0.0

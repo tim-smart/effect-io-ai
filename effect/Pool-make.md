@@ -1,4 +1,4 @@
-# make
+## make
 
 Makes a new pool of the specified fixed size. The pool is returned in a
 `Scope`, which governs the lifetime of the pool. When the pool is shutdown
@@ -15,21 +15,12 @@ items are fully utilized.
 A `targetUtilization` of 0.5 will create new pool items when the existing items are
 50% utilized.
 
-To import and use `make` from the "Pool" module:
-
-```ts
-import * as Pool from "effect/Pool"
-// Can be accessed like this
-Pool.make
-```
-
 **Signature**
 
 ```ts
-export declare const make: <A, E, R>(options: {
-  readonly acquire: Effect.Effect<A, E, R>
-  readonly size: number
-  readonly concurrency?: number | undefined
-  readonly targetUtilization?: number | undefined
-}) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
+declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L115)
+
+Since v2.0.0

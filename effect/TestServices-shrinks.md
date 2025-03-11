@@ -1,17 +1,13 @@
-# shrinks
+## shrinks
 
 The maximum number of shrinkings to minimize large failures.
-
-To import and use `shrinks` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.shrinks
-```
 
 **Signature**
 
 ```ts
-export declare const shrinks: Effect.Effect<number, never, never>
+declare const shrinks: Effect.Effect<number, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L390)
+
+Since v2.0.0

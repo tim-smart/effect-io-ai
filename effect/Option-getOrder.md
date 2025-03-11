@@ -1,4 +1,4 @@
-# getOrder
+## getOrder
 
 Creates an `Order` instance for comparing `Option` values, using a provided
 `Order` for the inner type.
@@ -11,14 +11,6 @@ values to be compared:
 - `None` is always considered less than any `Some` value.
 - If both are `Some`, their inner values are compared using the provided
   `Order` instance.
-
-To import and use `getOrder` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.getOrder
-```
 
 **Example**
 
@@ -46,5 +38,9 @@ console.log(order(Option.some(1), Option.some(1)))
 **Signature**
 
 ```ts
-export declare const getOrder: <A>(O: Order<A>) => Order<Option<A>>
+declare const getOrder: <A>(O: Order<A>) => Order<Option<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1731)
+
+Since v2.0.0

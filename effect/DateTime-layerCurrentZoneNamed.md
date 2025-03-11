@@ -1,17 +1,13 @@
-# layerCurrentZoneNamed
+## layerCurrentZoneNamed
 
 Create a Layer from the given IANA time zone identifier.
-
-To import and use `layerCurrentZoneNamed` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.layerCurrentZoneNamed
-```
 
 **Signature**
 
 ```ts
-export declare const layerCurrentZoneNamed: (zoneId: string) => Layer.Layer<CurrentTimeZone, IllegalArgumentException>
+declare const layerCurrentZoneNamed: (zoneId: string) => Layer.Layer<CurrentTimeZone, IllegalArgumentException>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1574)
+
+Since v3.6.0

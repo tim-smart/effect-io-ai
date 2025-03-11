@@ -1,11 +1,13 @@
-# CloseableScopeTypeId
+## CloseableScopeTypeId
 
 The type of the unique identifier for `CloseableScope`.
 
-To import and use `CloseableScopeTypeId` from the "Scope" module:
+**Signature**
 
 ```ts
-import * as Scope from "effect/Scope"
-// Can be accessed like this
-Scope.CloseableScopeTypeId
+type CloseableScopeTypeId = typeof CloseableScopeTypeId
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L43)
+
+Since v2.0.0

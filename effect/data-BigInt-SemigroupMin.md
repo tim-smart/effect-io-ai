@@ -1,18 +1,11 @@
-# SemigroupMin
+## SemigroupMin
 
 A `Semigroup` that uses the minimum between two values.
-
-To import and use `SemigroupMin` from the "BigInt" module:
-
-```ts
-import * as BigInt from "@effect/typeclass/data/BigInt"
-// Can be accessed like this
-BigInt.SemigroupMin
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { SemigroupMin } from "@effect/typeclass/data/BigInt"
 
 assert.deepStrictEqual(SemigroupMin.combine(2n, 3n), 2n)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(SemigroupMin.combine(2n, 3n), 2n)
 **Signature**
 
 ```ts
-export declare const SemigroupMin: semigroup.Semigroup<bigint>
+declare const SemigroupMin: semigroup.Semigroup<bigint>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L64)
+
+Since v0.24.0

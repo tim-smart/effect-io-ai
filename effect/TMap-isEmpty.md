@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Tests if the map is empty or not.
-
-To import and use `isEmpty` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <K, V>(self: TMap<K, V>) => STM.STM<boolean>
+declare const isEmpty: <K, V>(self: TMap<K, V>) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L185)
+
+Since v2.0.0

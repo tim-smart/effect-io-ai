@@ -1,4 +1,4 @@
-# hourOfDay
+## hourOfDay
 
 Creates a schedule that recurs at a specific hour of each day.
 
@@ -15,16 +15,12 @@ schedule is executed.
 This is useful for scheduling daily recurring tasks at a fixed time, such as
 running batch jobs or refreshing data.
 
-To import and use `hourOfDay` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.hourOfDay
-```
-
 **Signature**
 
 ```ts
-export declare const hourOfDay: (hour: number) => Schedule<number>
+declare const hourOfDay: (hour: number) => Schedule<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L696)
+
+Since v2.0.0

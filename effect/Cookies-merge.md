@@ -1,17 +1,13 @@
-# merge
+## merge
 
 Combine two Cookies objects, removing duplicates from the first
-
-To import and use `merge` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.merge
-```
 
 **Signature**
 
 ```ts
-export declare const merge: { (that: Cookies): (self: Cookies) => Cookies; (self: Cookies, that: Cookies): Cookies }
+declare const merge: { (that: Cookies): (self: Cookies) => Cookies; (self: Cookies, that: Cookies): Cookies; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L421)
+
+Since v1.0.0

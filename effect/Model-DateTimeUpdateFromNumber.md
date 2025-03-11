@@ -1,4 +1,4 @@
-# DateTimeUpdateFromNumber
+## DateTimeUpdateFromNumber
 
 A field that represents a date-time value that is updated as the current
 `DateTime.Utc`. It is serialized as a `number`.
@@ -6,16 +6,12 @@ A field that represents a date-time value that is updated as the current
 It is set to the current `DateTime.Utc` on updates and inserts and is
 available for selection.
 
-To import and use `DateTimeUpdateFromNumber` from the "Model" module:
-
-```ts
-import * as Model from "@effect/sql/Model"
-// Can be accessed like this
-Model.DateTimeUpdateFromNumber
-```
-
 **Signature**
 
 ```ts
-export declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber
+declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L573)
+
+Since v1.0.0

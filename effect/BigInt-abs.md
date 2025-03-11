@@ -1,18 +1,11 @@
-# abs
+## abs
 
 Determines the absolute value of a given `bigint`.
-
-To import and use `abs` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.abs
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { abs } from "effect/BigInt"
 
 assert.deepStrictEqual(abs(-5n), 5n)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(abs(5n), 5n)
 **Signature**
 
 ```ts
-export declare const abs: (n: bigint) => bigint
+declare const abs: (n: bigint) => bigint
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L406)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# locally
+## locally
 
 Temporarily sets a `LogLevel` for an `Effect` workflow.
 
@@ -13,22 +13,14 @@ previous state.
 This is particularly useful when you want to adjust the verbosity of logging
 for specific parts of your program without affecting the global log level.
 
-To import and use `locally` from the "LogLevel" module:
-
-```ts
-import * as LogLevel from "effect/LogLevel"
-// Can be accessed like this
-LogLevel.locally
-```
-
 **Example**
 
 ```ts
 import { Effect, LogLevel } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.log("message1")
-  yield* Effect.gen(function* () {
+  yield* Effect.gen(function*() {
     yield* Effect.log("message2")
     yield* Effect.log("message3")
   }).pipe(LogLevel.locally(LogLevel.Warning))
@@ -43,8 +35,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const locally: {
-  (self: LogLevel): <A, E, R>(use: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
-  <A, E, R>(use: Effect.Effect<A, E, R>, self: LogLevel): Effect.Effect<A, E, R>
-}
+declare const locally: { (self: LogLevel): <A, E, R>(use: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(use: Effect.Effect<A, E, R>, self: LogLevel): Effect.Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LogLevel.ts#L208)
+
+Since v2.0.0

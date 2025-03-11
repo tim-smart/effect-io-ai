@@ -1,17 +1,13 @@
-# array
+## array
 
 Creates a new `Equivalence` for an array of values based on a given `Equivalence` for the elements of the array.
-
-To import and use `array` from the "Equivalence" module:
-
-```ts
-import * as Equivalence from "effect/Equivalence"
-// Can be accessed like this
-Equivalence.array
-```
 
 **Signature**
 
 ```ts
-export declare const array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
+declare const array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equivalence.ts#L200)
+
+Since v2.0.0

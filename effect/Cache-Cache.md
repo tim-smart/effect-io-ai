@@ -1,4 +1,4 @@
-# Cache
+## Cache
 
 A `Cache` is defined in terms of a lookup function that, given a key of
 type `Key`, can either fail with an error of type `Error` or succeed with a
@@ -17,10 +17,44 @@ The cache is safe for concurrent access. If multiple fibers attempt to get
 the same key the lookup function will only be computed once and the result
 will be returned to all fibers.
 
-To import and use `Cache` from the "Cache" module:
+**Signature**
 
 ```ts
-import * as Cache from "effect/Cache"
-// Can be accessed like this
-Cache.Cache
+export interface Cache<in out Key, in out Value, out Error = never>
+  extends ConsumerCache<Key, Value, Error>, Cache.Variance<Key, Value, Error>
+{
+  /**
+   * Retrieves the value associated with the specified key if it exists.
+   * Otherwise computes the value with the lookup function, puts it in the
+   * cache, and returns it.
+   */
+  get(key: Key): Effect.Effect<Value, Error>
+
+  /**
+   * Retrieves the value associated with the specified key if it exists as a left.
+   * Otherwise computes the value with the lookup function, puts it in the
+   * cache, and returns it as a right.
+   */
+  getEither(key: Key): Effect.Effect<Either<Value, Value>, Error>
+
+  /**
+   * Computes the value associated with the specified key, with the lookup
+   * function, and puts it in the cache. The difference between this and
+   * `get` method is that `refresh` triggers (re)computation of the value
+   * without invalidating it in the cache, so any request to the associated
+   * key can still be served while the value is being re-computed/retrieved
+   * by the lookup function. Additionally, `refresh` always triggers the
+   * lookup function, disregarding the last `Error`.
+   */
+  refresh(key: Key): Effect.Effect<void, Error>
+
+  /**
+   * Associates the specified value with the specified key in the cache.
+   */
+  set(key: Key, value: Value): Effect.Effect<void>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L58)
+
+Since v2.0.0

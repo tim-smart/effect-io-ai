@@ -1,18 +1,14 @@
-# interruptible
+## interruptible
 
 Flag the effect as interruptible, which means that when the effect is
 interrupted, it will be interrupted immediately.
 
-To import and use `interruptible` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.interruptible
-```
-
 **Signature**
 
 ```ts
-export declare const interruptible: <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, R>
+declare const interruptible: <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3665)
+
+Since v3.4.0

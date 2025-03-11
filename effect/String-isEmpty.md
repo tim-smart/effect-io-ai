@@ -1,26 +1,23 @@
-# isEmpty
+## isEmpty
 
 Test whether a `string` is empty.
-
-To import and use `isEmpty` from the "String" module:
-
-```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.isEmpty
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { String } from "effect"
 
-assert.deepStrictEqual(String.isEmpty(""), true)
-assert.deepStrictEqual(String.isEmpty("a"), false)
+assert.deepStrictEqual(String.isEmpty(''), true)
+assert.deepStrictEqual(String.isEmpty('a'), false)
 ```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: (self: string) => self is ""
+declare const isEmpty: (self: string) => self is ""
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L228)
+
+Since v2.0.0

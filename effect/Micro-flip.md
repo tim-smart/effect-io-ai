@@ -1,17 +1,13 @@
-# flip
+## flip
 
 Swap the error and success types of the `Micro` effect.
-
-To import and use `flip` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.flip
-```
 
 **Signature**
 
 ```ts
-export declare const flip: <A, E, R>(self: Micro<A, E, R>) => Micro<E, A, R>
+declare const flip: <A, E, R>(self: Micro<A, E, R>) => Micro<E, A, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1280)
+
+Since v3.4.0

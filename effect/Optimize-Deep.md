@@ -1,4 +1,4 @@
-# Deep
+## Deep
 
 Instructs the document fusion optimizer to recurse into all leaves of the
 document tree, including different layout alternatives and all
@@ -11,10 +11,14 @@ that is to be pretty printed.
 This value should only be utilized if profiling demonstrates that it is
 **significantly** faster than using `Shallow`.
 
-To import and use `Deep` from the "Optimize" module:
+**Signature**
 
 ```ts
-import * as Optimize from "@effect/printer/Optimize"
-// Can be accessed like this
-Optimize.Deep
+export interface Deep {
+  readonly _tag: "Deep"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L68)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# first
+## first
 
 Always return the first argument.
-
-To import and use `first` from the "Semigroup" module:
-
-```ts
-import * as Semigroup from "@effect/typeclass/Semigroup"
-// Can be accessed like this
-Semigroup.first
-```
 
 **Signature**
 
 ```ts
-export declare const first: <A = never>() => Semigroup<A>
+declare const first: <A = never>() => Semigroup<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L109)
+
+Since v0.24.0

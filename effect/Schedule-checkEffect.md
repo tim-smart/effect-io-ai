@@ -1,4 +1,4 @@
-# checkEffect
+## checkEffect
 
 Conditionally filters schedule executions using an effectful function.
 
@@ -11,24 +11,16 @@ schedule should continue (`true`) or stop (`false`).
 This is useful when the decision to continue depends on external factors such
 as database lookups, API calls, or other asynchronous computations.
 
-To import and use `checkEffect` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.checkEffect
-```
+- `check` If you need to use a pure test function.
 
 **Signature**
 
 ```ts
-export declare const checkEffect: {
-  <In, Out, R2>(
-    test: (input: In, output: Out) => Effect.Effect<boolean, never, R2>
-  ): <R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>
-  <Out, In, R, R2>(
-    self: Schedule<Out, In, R>,
-    test: (input: In, output: Out) => Effect.Effect<boolean, never, R2>
-  ): Schedule<Out, In, R | R2>
-}
+declare const checkEffect: { <In, Out, R2>(test: (input: In, output: Out) => Effect.Effect<boolean, never, R2>): <R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>; <Out, In, R, R2>(self: Schedule<Out, In, R>, test: (input: In, output: Out) => Effect.Effect<boolean, never, R2>): Schedule<Out, In, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L393)
+
+Since v2.0.0

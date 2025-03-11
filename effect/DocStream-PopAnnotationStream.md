@@ -1,11 +1,16 @@
-# PopAnnotationStream
+## PopAnnotationStream
 
 Represents the removal of a previously pushed annotation from a `Doc`.
 
-To import and use `PopAnnotationStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.PopAnnotationStream
+export interface PopAnnotationStream<A> extends DocStream.Variance<A> {
+  readonly _tag: "PopAnnotationStream"
+  readonly stream: DocStream<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L156)
+
+Since v1.0.0

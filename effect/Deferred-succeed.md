@@ -1,20 +1,13 @@
-# succeed
+## succeed
 
 Completes the `Deferred` with the specified value.
-
-To import and use `succeed` from the "Deferred" module:
-
-```ts
-import * as Deferred from "effect/Deferred"
-// Can be accessed like this
-Deferred.succeed
-```
 
 **Signature**
 
 ```ts
-export declare const succeed: {
-  <A>(value: A): <E>(self: Deferred<A, E>) => Effect.Effect<boolean>
-  <A, E>(self: Deferred<A, E>, value: A): Effect.Effect<boolean>
-}
+declare const succeed: { <A>(value: A): <E>(self: Deferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: Deferred<A, E>, value: A): Effect.Effect<boolean>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L270)
+
+Since v2.0.0

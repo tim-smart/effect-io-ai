@@ -1,17 +1,13 @@
-# some
+## some
 
 A sink that returns whether an element satisfies the specified predicate.
-
-To import and use `some` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.some
-```
 
 **Signature**
 
 ```ts
-export declare const some: <In>(predicate: Predicate<In>) => Sink<boolean, In, In>
+declare const some: <In>(predicate: Predicate<In>) => Sink<boolean, In, In>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1262)
+
+Since v2.0.0

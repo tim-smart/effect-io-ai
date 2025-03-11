@@ -1,17 +1,13 @@
-# setPassword
+## setPassword
 
 Updates the password used for authentication.
-
-To import and use `setPassword` from the "Url" module:
-
-```ts
-import * as Url from "@effect/platform/Url"
-// Can be accessed like this
-Url.setPassword
-```
 
 **Signature**
 
 ```ts
-export declare const setPassword: { (password: string): (url: URL) => URL; (url: URL, password: string): URL }
+declare const setPassword: { (password: string): (url: URL) => URL; (url: URL, password: string): URL; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L158)
+
+Since v1.0.0

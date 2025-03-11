@@ -1,17 +1,13 @@
-# flatten
+## flatten
 
 Flattens a chunk of chunks into a single chunk by concatenating all chunks.
-
-To import and use `flatten` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.flatten
-```
 
 **Signature**
 
 ```ts
-export declare const flatten: <S extends Chunk<Chunk<any>>>(self: S) => Chunk.Flatten<S>
+declare const flatten: <S extends Chunk<Chunk<any>>>(self: S) => Chunk.Flatten<S>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L767)
+
+Since v2.0.0

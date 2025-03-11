@@ -1,18 +1,11 @@
-# isNotNullable
+## isNotNullable
 
 A guard that succeeds when the input is not `null` or `undefined`.
-
-To import and use `isNotNullable` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isNotNullable
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isNotNullable } from "effect/Predicate"
 
 assert.deepStrictEqual(isNotNullable({}), true)
@@ -25,5 +18,9 @@ assert.deepStrictEqual(isNotNullable(undefined), false)
 **Signature**
 
 ```ts
-export declare const isNotNullable: <A>(input: A) => input is NonNullable<A>
+declare const isNotNullable: <A>(input: A) => input is NonNullable<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L537)
+
+Since v2.0.0

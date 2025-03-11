@@ -1,4 +1,4 @@
-# option
+## option
 
 Encapsulates the result of an effect in an `Option`.
 
@@ -13,14 +13,6 @@ absence of a value explicitly, without causing the resulting effect to fail.
 The resulting effect has an error type of `never`, meaning it cannot fail
 directly. However, unrecoverable errors, also referred to as defects, are
 not captured and will still result in failure.
-
-To import and use `option` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.option
-```
 
 **Example**
 
@@ -59,8 +51,17 @@ const maybe3 = Effect.option(Effect.die("Boom!"))
 // }
 ```
 
+**See**
+
+- `either` for a version that uses `Either` instead.
+- `exit` for a version that encapsulates both recoverable errors and defects in an `Exit`.
+
 **Signature**
 
 ```ts
-export declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, never, R>
+declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7935)
+
+Since v2.0.0

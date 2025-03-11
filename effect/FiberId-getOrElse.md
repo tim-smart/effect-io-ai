@@ -1,17 +1,13 @@
-# getOrElse
+## getOrElse
 
 Returns this `FiberId` if it is not `None`, otherwise returns that `FiberId`.
-
-To import and use `getOrElse` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.getOrElse
-```
 
 **Signature**
 
 ```ts
-export declare const getOrElse: { (that: FiberId): (self: FiberId) => FiberId; (self: FiberId, that: FiberId): FiberId }
+declare const getOrElse: { (that: FiberId): (self: FiberId) => FiberId; (self: FiberId, that: FiberId): FiberId; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L143)
+
+Since v2.0.0

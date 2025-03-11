@@ -1,17 +1,13 @@
-# angleBracketed
+## angleBracketed
 
 Encloses the input document in angle brackets (`<>`).
-
-To import and use `angleBracketed` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.angleBracketed
-```
 
 **Signature**
 
 ```ts
-export declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>
+declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2288)
+
+Since v1.0.0

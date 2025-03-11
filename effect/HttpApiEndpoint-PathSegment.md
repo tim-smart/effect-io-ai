@@ -1,12 +1,14 @@
-# PathSegment
+## PathSegment
 
 Represents a path segment. A path segment is a string that represents a
 segment of a URL path.
 
-To import and use `PathSegment` from the "HttpApiEndpoint" module:
+**Signature**
 
 ```ts
-import * as HttpApiEndpoint from "@effect/platform/HttpApiEndpoint"
-// Can be accessed like this
-HttpApiEndpoint.PathSegment
+type PathSegment = `/${string}`
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L43)
+
+Since v1.0.0

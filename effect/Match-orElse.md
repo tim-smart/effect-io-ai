@@ -1,4 +1,4 @@
-# orElse
+## orElse
 
 Provides a fallback value when no patterns match.
 
@@ -8,14 +8,6 @@ This function ensures that a matcher always returns a valid result, even if
 no defined patterns match. It acts as a default case, similar to the
 `default` clause in a `switch` statement or the final `else` in an `if-else`
 chain.
-
-To import and use `orElse` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.orElse
-```
 
 **Example**
 
@@ -41,9 +33,9 @@ console.log(match("b"))
 **Signature**
 
 ```ts
-export declare const orElse: <RA, Ret, F extends (_: RA) => Ret>(
-  f: F
-) => <I, R, A, Pr>(
-  self: Matcher<I, R, RA, A, Pr, Ret>
-) => [Pr] extends [never] ? (input: I) => Unify<ReturnType<F> | A> : Unify<ReturnType<F> | A>
+declare const orElse: <RA, Ret, F extends (_: RA) => Ret>(f: F) => <I, R, A, Pr>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<ReturnType<F> | A> : Unify<ReturnType<F> | A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1091)
+
+Since v1.0.0

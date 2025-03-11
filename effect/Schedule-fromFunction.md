@@ -1,4 +1,4 @@
-# fromFunction
+## fromFunction
 
 Creates a schedule that always recurs, transforming input values using the
 specified function.
@@ -13,16 +13,12 @@ values as they are processed.
 This is useful when defining schedules that map inputs to outputs, allowing
 dynamic transformations of incoming data.
 
-To import and use `fromFunction` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.fromFunction
-```
-
 **Signature**
 
 ```ts
-export declare const fromFunction: <A, B>(f: (a: A) => B) => Schedule<B, A>
+declare const fromFunction: <A, B>(f: (a: A) => B) => Schedule<B, A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1118)
+
+Since v2.0.0

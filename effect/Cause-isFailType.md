@@ -1,17 +1,17 @@
-# isFailType
+## isFailType
 
 Checks if a `Cause` is a `Fail` type.
 
-To import and use `isFailType` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isFailType
-```
+- `fail` Create a new `Fail` cause
 
 **Signature**
 
 ```ts
-export declare const isFailType: <E>(self: Cause<E>) => self is Fail<E>
+declare const isFailType: <E>(self: Cause<E>) => self is Fail<E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L682)
+
+Since v2.0.0

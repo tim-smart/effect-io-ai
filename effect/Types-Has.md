@@ -1,14 +1,6 @@
-# Has
+## Has
 
 Determines if a record contains any of the given keys.
-
-To import and use `Has` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Has
-```
 
 **Example**
 
@@ -18,3 +10,15 @@ import type { Types } from "effect"
 type Res1 = Types.Has<{ a: number }, "a" | "b"> // true
 type Res2 = Types.Has<{ c: number }, "a" | "b"> // false
 ```
+
+**Signature**
+
+```ts
+type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : never) extends never
+  ? false
+  : true
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L161)
+
+Since v2.0.0

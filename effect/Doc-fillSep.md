@@ -1,4 +1,4 @@
-# fillSep
+## fillSep
 
 The `fillSep` combinator concatenates all documents in a collection
 horizontally by placing a `space` between each pair of documents as long as
@@ -9,16 +9,12 @@ the process is repeated for all documents in the collection.
 separated with a `space` instead of newlines. See `fillCat` if you do not
 want a `space`.
 
-To import and use `fillSep` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.fillSep
-```
-
 **Signature**
 
 ```ts
-export declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>
+declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1300)
+
+Since v1.0.0

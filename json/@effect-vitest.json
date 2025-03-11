@@ -2,101 +2,78 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "addEqualityTesters",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const addEqualityTesters: () => void"
+    "signature": "declare const addEqualityTesters: () => void"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "effect",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const effect: Vitest.Tester<TestServices.TestServices>"
+    "signature": "declare const effect: Vitest.Tester<TestServices.TestServices>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "scoped",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const scoped: Vitest.Tester<TestServices.TestServices | Scope.Scope>"
+    "signature": "declare const scoped: Vitest.Tester<TestServices.TestServices | Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "live",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const live: Vitest.Tester<never>"
+    "signature": "declare const live: Vitest.Tester<never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "scopedLive",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const scopedLive: Vitest.Tester<Scope.Scope>"
+    "signature": "declare const scopedLive: Vitest.Tester<Scope.Scope>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "layer",
@@ -105,132 +82,174 @@
     "examples": [],
     "since": "1.0.0\n\n```ts\nimport { expect, layer } from \"@effect/vitest\"\nimport { Context, Effect, Layer } from \"effect\"\n\nclass Foo extends Context.Tag(\"Foo\")<Foo, \"foo\">() {\n  static Live = Layer.succeed(Foo, \"foo\")\n}\n\nclass Bar extends Context.Tag(\"Bar\")<Bar, \"bar\">() {\n  static Live = Layer.effect(\n    Bar,\n    Effect.map(Foo, () => \"bar\" as const)\n  )\n}\n\nlayer(Foo.Live)(\"layer\", (it) => {\n  it.effect(\"adds context\", () =>\n    Effect.gen(function* () {\n      const foo = yield* Foo\n      expect(foo).toEqual(\"foo\")\n    })\n  )\n\n  it.layer(Bar.Live)(\"nested\", (it) => {\n    it.effect(\"adds context\", () =>\n      Effect.gen(function* () {\n        const foo = yield* Foo\n        const bar = yield* Bar\n        expect(foo).toEqual(\"foo\")\n        expect(bar).toEqual(\"bar\")\n      })\n    )\n  })\n})\n```",
     "category": null,
-    "signature": "export declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }"
+    "signature": "declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "flakyTest",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const flakyTest: <A, E, R>(self: Effect.Effect<A, E, R>, timeout?: Duration.DurationInput) => Effect.Effect<A, never, R>"
+    "signature": "declare const flakyTest: <A, E, R>(self: Effect.Effect<A, E, R>, timeout?: Duration.DurationInput) => Effect.Effect<A, never, R>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "prop",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const prop: <const Arbs extends Vitest.Arbitraries>(name: string, arbitraries: Arbs, self: (properties: { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }, ctx: V.TestContext) => void, timeout?: number | (V.TestOptions & { fastCheck?: FC.Parameters<{ [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }>; })) => void"
+    "signature": "declare const prop: <const Arbs extends Vitest.Arbitraries>(name: string, arbitraries: Arbs, self: (properties: { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }, ctx: V.TestContext) => void, timeout?: number | (V.TestOptions & { fastCheck?: FC.Parameters<{ [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]>; }>; })) => void"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "it",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const it: Vitest.Methods<never>"
+    "signature": "declare const it: Vitest.Methods<never>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "makeMethods",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const makeMethods: (it: V.TestAPI) => Vitest.Methods"
+    "signature": "declare const makeMethods: (it: V.TestAPI) => Vitest.Methods"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "describeWrapped",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const describeWrapped: (name: string, f: (it: Vitest.Methods) => void) => V.SuiteCollector"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/vitest",
-    "name": "From \"vitest\"",
-    "description": "Re-exports all named exports from the \"vitest\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"vitest\""
+    "signature": "declare const describeWrapped: (name: string, f: (it: Vitest.Methods) => void) => V.SuiteCollector"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "index.ts",
+      "path": "src/index.ts"
     },
     "project": "@effect/vitest",
     "name": "API",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export type API = V.TestAPI<{}>"
+    "signature": "type API = V.TestAPI<{}>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.TestFunction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface TestFunction<A, E, R, TestArgs extends Array<any>> {\n    (...args: TestArgs): Effect.Effect<A, E, R>\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Test",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Test<R> {\n    <A, E>(\n      name: string,\n      self: TestFunction<A, E, R, [V.TestContext]>,\n      timeout?: number | V.TestOptions\n    ): void\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Tester",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Tester<R> extends Vitest.Test<R> {\n    skip: Vitest.Test<R>\n    skipIf: (condition: unknown) => Vitest.Test<R>\n    runIf: (condition: unknown) => Vitest.Test<R>\n    only: Vitest.Test<R>\n    each: <T>(\n      cases: ReadonlyArray<T>\n    ) => <A, E>(name: string, self: TestFunction<A, E, R, Array<T>>, timeout?: number | V.TestOptions) => void\n    fails: Vitest.Test<R>\n\n    /**\n     * @since 1.0.0\n     */\n    prop: <const Arbs extends Arbitraries, A, E>(\n      name: string,\n      arbitraries: Arbs,\n      self: TestFunction<\n        A,\n        E,\n        R,\n        [\n          { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]> },\n          V.TestContext\n        ]\n      >,\n      timeout?:\n        | number\n        | V.TestOptions & {\n          fastCheck?: FC.Parameters<\n            { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]> }\n          >\n        }\n    ) => void\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.MethodsNonLive",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface MethodsNonLive<R = never> extends API {\n    readonly effect: Vitest.Tester<TestServices.TestServices | R>\n    readonly flakyTest: <A, E, R2>(\n      self: Effect.Effect<A, E, R2>,\n      timeout?: Duration.DurationInput\n    ) => Effect.Effect<A, never, R2>\n    readonly scoped: Vitest.Tester<TestServices.TestServices | Scope.Scope | R>\n    readonly layer: <R2, E>(layer: Layer.Layer<R2, E, R>, options?: {\n      readonly timeout?: Duration.DurationInput\n    }) => {\n      (f: (it: Vitest.MethodsNonLive<R | R2>) => void): void\n      (name: string, f: (it: Vitest.MethodsNonLive<R | R2>) => void): void\n    }\n\n    /**\n     * @since 1.0.0\n     */\n    readonly prop: <const Arbs extends Arbitraries>(\n      name: string,\n      arbitraries: Arbs,\n      self: (\n        properties: { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]> },\n        ctx: V.TestContext\n      ) => void,\n      timeout?:\n        | number\n        | V.TestOptions & {\n          fastCheck?: FC.Parameters<\n            { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Schema.Schema.Type<Arbs[K]> }\n          >\n        }\n    ) => void\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Methods",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Methods<R = never> extends MethodsNonLive<R> {\n    readonly live: Vitest.Tester<R>\n    readonly scopedLive: Vitest.Tester<Scope.Scope | R>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Arbitraries",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Arbitraries = | Array<Schema.Schema.Any | FC.Arbitrary<any>>\n    | { [K in string]: Schema.Schema.Any | FC.Arbitrary<any> }"
   }
 ]

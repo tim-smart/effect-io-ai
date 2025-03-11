@@ -1,17 +1,13 @@
-# secret
+## ~~secret~~
 
 Constructs a config for a secret value.
-
-To import and use `secret` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.secret
-```
 
 **Signature**
 
 ```ts
-export declare const secret: (name?: string) => Config<Secret.Secret>
+declare const secret: (name?: string) => Config<Secret.Secret>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L349)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# nonEmptyString
+## nonEmptyString
 
 Constructs a config for a non-empty string value.
-
-To import and use `nonEmptyString` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.nonEmptyString
-```
 
 **Signature**
 
 ```ts
-export declare const nonEmptyString: (name?: string) => Config<string>
+declare const nonEmptyString: (name?: string) => Config<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L384)
+
+Since v3.7.0

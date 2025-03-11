@@ -1,18 +1,14 @@
-# setFiberRefs
+## setFiberRefs
 
 Sets the `FiberRef` values for the fiber running this effect to the values
 in the specified collection of `FiberRef` values.
 
-To import and use `setFiberRefs` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.setFiberRefs
-```
-
 **Signature**
 
 ```ts
-export declare const setFiberRefs: (fiberRefs: FiberRefs.FiberRefs) => Effect<void>
+declare const setFiberRefs: (fiberRefs: FiberRefs.FiberRefs) => Effect<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10281)
+
+Since v2.0.0

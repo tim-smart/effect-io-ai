@@ -1,19 +1,13 @@
-# fromOption
+## fromOption
 
 Construct a `Channel` from an `Option`.
-
-To import and use `fromOption` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.fromOption
-```
 
 **Signature**
 
 ```ts
-export declare const fromOption: <A>(
-  option: Option.Option<A>
-) => Channel<never, unknown, Option.Option<never>, unknown, A, unknown>
+declare const fromOption: <A>(option: Option.Option<A>) => Channel<never, unknown, Option.Option<never>, unknown, A, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L1133)
+
+Since v2.0.0

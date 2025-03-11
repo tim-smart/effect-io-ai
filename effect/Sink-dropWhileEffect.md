@@ -1,19 +1,13 @@
-# dropWhileEffect
+## dropWhileEffect
 
 Drops incoming elements as long as the effectful predicate is satisfied.
-
-To import and use `dropWhileEffect` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.dropWhileEffect
-```
 
 **Signature**
 
 ```ts
-export declare const dropWhileEffect: <In, E, R>(
-  predicate: (input: In) => Effect.Effect<boolean, E, R>
-) => Sink<unknown, In, In, E, R>
+declare const dropWhileEffect: <In, E, R>(predicate: (input: In) => Effect.Effect<boolean, E, R>) => Sink<unknown, In, In, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L484)
+
+Since v2.0.0

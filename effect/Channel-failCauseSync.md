@@ -1,20 +1,14 @@
-# failCauseSync
+## failCauseSync
 
 Constructs a channel that succeeds immediately with the specified lazily
 evaluated `Cause`.
 
-To import and use `failCauseSync` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.failCauseSync
-```
-
 **Signature**
 
 ```ts
-export declare const failCauseSync: <E>(
-  evaluate: LazyArg<Cause.Cause<E>>
-) => Channel<never, unknown, E, unknown, never, unknown>
+declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Channel<never, unknown, E, unknown, never, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L832)
+
+Since v2.0.0

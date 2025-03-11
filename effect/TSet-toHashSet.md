@@ -1,17 +1,13 @@
-# toHashSet
+## toHashSet
 
 Collects all elements into a `HashSet`.
-
-To import and use `toHashSet` from the "TSet" module:
-
-```ts
-import * as TSet from "effect/TSet"
-// Can be accessed like this
-TSet.toHashSet
-```
 
 **Signature**
 
 ```ts
-export declare const toHashSet: <A>(self: TSet<A>) => STM.STM<HashSet.HashSet<A>>
+declare const toHashSet: <A>(self: TSet<A>) => STM.STM<HashSet.HashSet<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TSet.ts#L315)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# vcat
+## vcat
 
 The `vcat` combinator concatenates all documents in a collection vertically.
 If the output is grouped then the line breaks are removed.
@@ -6,17 +6,10 @@ If the output is grouped then the line breaks are removed.
 In other words `vcat` is like `vsep`, with newlines removed instead of
 replaced by spaces.
 
-To import and use `vcat` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.vcat
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import * as String from "effect/String"
 
@@ -35,5 +28,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>
+declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1153)
+
+Since v1.0.0

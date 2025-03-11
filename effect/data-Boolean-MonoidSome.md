@@ -1,19 +1,15 @@
-# MonoidSome
+## MonoidSome
 
-`boolean` monoid under disjunction, see also {@link SemigroupSome}.
+`boolean` monoid under disjunction, see also `SemigroupSome`.
 
 The `empty` value is `false`.
-
-To import and use `MonoidSome` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.MonoidSome
-```
 
 **Signature**
 
 ```ts
-export declare const MonoidSome: monoid.Monoid<boolean>
+declare const MonoidSome: monoid.Monoid<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L127)
+
+Since v0.24.0

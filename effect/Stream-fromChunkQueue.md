@@ -1,20 +1,17 @@
-# fromChunkQueue
+## fromChunkQueue
 
 Creates a stream from a `Queue` of values.
 
-To import and use `fromChunkQueue` from the "Stream" module:
+**Options**
 
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromChunkQueue
-```
+- `shutdown`: If `true`, the queue will be shutdown after the stream is evaluated (defaults to `false`)
 
 **Signature**
 
 ```ts
-export declare const fromChunkQueue: <A>(
-  queue: Queue.Dequeue<Chunk.Chunk<A>>,
-  options?: { readonly shutdown?: boolean | undefined }
-) => Stream<A>
+declare const fromChunkQueue: <A>(queue: Queue.Dequeue<Chunk.Chunk<A>>, options?: { readonly shutdown?: boolean | undefined; }) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1975)
+
+Since v2.0.0

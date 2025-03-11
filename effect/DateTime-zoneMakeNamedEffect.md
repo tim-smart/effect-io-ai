@@ -1,18 +1,14 @@
-# zoneMakeNamedEffect
+## zoneMakeNamedEffect
 
 Create a named time zone from a IANA time zone identifier. If the time zone
 is invalid, it will fail with an `IllegalArgumentException`.
 
-To import and use `zoneMakeNamedEffect` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.zoneMakeNamedEffect
-```
-
 **Signature**
 
 ```ts
-export declare const zoneMakeNamedEffect: (zoneId: string) => Effect.Effect<TimeZone.Named, IllegalArgumentException>
+declare const zoneMakeNamedEffect: (zoneId: string) => Effect.Effect<TimeZone.Named, IllegalArgumentException>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L546)
+
+Since v3.6.0

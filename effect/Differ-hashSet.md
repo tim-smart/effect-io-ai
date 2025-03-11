@@ -1,17 +1,13 @@
-# hashSet
+## hashSet
 
 Constructs a differ that knows how to diff a `HashSet` of values.
-
-To import and use `hashSet` from the "Differ" module:
-
-```ts
-import * as Differ from "effect/Differ"
-// Can be accessed like this
-Differ.hashSet
-```
 
 **Signature**
 
 ```ts
-export declare const hashSet: <Value>() => Differ<HashSet<Value>, Differ.HashSet.Patch<Value>>
+declare const hashSet: <Value>() => Differ<HashSet<Value>, Differ.HashSet.Patch<Value>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Differ.ts#L355)
+
+Since v2.0.0

@@ -1,19 +1,24 @@
-# LazyArg
+## LazyArg
 
 A lazy argument.
-
-To import and use `LazyArg` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.LazyArg
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { LazyArg, constant } from "effect/Function"
 
 const constNull: LazyArg<null> = constant(null)
 ```
+
+**Signature**
+
+```ts
+export interface LazyArg<A> {
+  (): A
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L181)
+
+Since v2.0.0

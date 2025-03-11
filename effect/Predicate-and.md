@@ -1,18 +1,11 @@
-# and
+## and
 
 Combines two predicates into a new predicate that returns `true` if both of the predicates returns `true`.
-
-To import and use `and` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.and
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Predicate } from "effect"
 
 const minLength = (n: number) => (s: string) => s.length >= n
@@ -28,10 +21,9 @@ assert.deepStrictEqual(length(2)("aaa"), false)
 **Signature**
 
 ```ts
-export declare const and: {
-  <A, C extends A>(that: Refinement<A, C>): <B extends A>(self: Refinement<A, B>) => Refinement<A, B & C>
-  <A, B extends A, C extends A>(self: Refinement<A, B>, that: Refinement<A, C>): Refinement<A, B & C>
-  <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>
-  <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>
-}
+declare const and: { <A, C extends A>(that: Refinement<A, C>): <B extends A>(self: Refinement<A, B>) => Refinement<A, B & C>; <A, B extends A, C extends A>(self: Refinement<A, B>, that: Refinement<A, C>): Refinement<A, B & C>; <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L882)
+
+Since v2.0.0

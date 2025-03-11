@@ -1,14 +1,6 @@
-# empty
+## empty
 
 The empty stream.
-
-To import and use `empty` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.empty
-```
 
 **Example**
 
@@ -24,5 +16,9 @@ const stream = Stream.empty
 **Signature**
 
 ```ts
-export declare const empty: Stream<never, never, never>
+declare const empty: Stream<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1469)
+
+Since v2.0.0

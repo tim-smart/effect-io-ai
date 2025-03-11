@@ -1,11 +1,20 @@
-# Empty
+## Empty
 
 Represents a lack of errors within a `Cause`.
 
-To import and use `Empty` from the "Cause" module:
+**See**
+
+- `empty` Construct a new `Empty` cause
+- `isEmptyType` Check if a `Cause` is an `Empty` type
+
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.Empty
+export interface Empty extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {
+  readonly _tag: "Empty"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L454)
+
+Since v2.0.0

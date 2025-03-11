@@ -1,17 +1,13 @@
-# url
+## url
 
 Constructs a config for a URL value.
-
-To import and use `url` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.url
-```
 
 **Signature**
 
 ```ts
-export declare const url: (name?: string) => Config<URL>
+declare const url: (name?: string) => Config<URL>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L137)
+
+Since v3.11.0

@@ -1,18 +1,14 @@
-# repeat
+## repeat
 
 Returns a config that describes a sequence of values, each of which has the
 structure of this config.
 
-To import and use `repeat` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.repeat
-```
-
 **Signature**
 
 ```ts
-export declare const repeat: <A>(self: Config<A>) => Config<Array<A>>
+declare const repeat: <A>(self: Config<A>) => Config<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L340)
+
+Since v2.0.0

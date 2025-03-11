@@ -1,4 +1,4 @@
-# product
+## product
 
 Combines two `Option` values into a single `Option` containing a tuple of
 their values if both are `Some`.
@@ -10,16 +10,12 @@ B]` if both are `Some`. If either of the `Option`s is `None`, the result is
 `None`. This is particularly useful for combining multiple `Option` values
 into a single one, ensuring both contain valid values.
 
-To import and use `product` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.product
-```
-
 **Signature**
 
 ```ts
-export declare const product: <A, B>(self: Option<A>, that: Option<B>) => Option<[A, B]>
+declare const product: <A, B>(self: Option<A>, that: Option<B>) => Option<[A, B]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1310)
+
+Since v2.0.0

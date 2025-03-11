@@ -1,4 +1,4 @@
-# as
+## as
 
 Replaces the value inside an effect with a constant value.
 
@@ -13,14 +13,6 @@ It is useful when you no longer need the value produced by an effect but want
 to ensure that the effect completes successfully with a specific constant
 result instead. For instance, you can replace the value produced by a
 computation with a predefined value, ignoring what was calculated before.
-
-To import and use `as` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.as
-```
 
 **Example**
 
@@ -38,8 +30,9 @@ const program = pipe(Effect.succeed(5), Effect.as("new value"))
 **Signature**
 
 ```ts
-export declare const as: {
-  <B>(value: B): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E, R>
-  <A, E, R, B>(self: Effect<A, E, R>, value: B): Effect<B, E, R>
-}
+declare const as: { <B>(value: B): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, value: B): Effect<B, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4947)
+
+Since v2.0.0

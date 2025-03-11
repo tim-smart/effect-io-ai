@@ -1,20 +1,13 @@
-# primitive
+## primitive
 
 Constructs a new primitive config.
-
-To import and use `primitive` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.primitive
-```
 
 **Signature**
 
 ```ts
-export declare const primitive: <A>(
-  description: string,
-  parse: (text: string) => Either.Either<A, ConfigError.ConfigError>
-) => Config<A>
+declare const primitive: <A>(description: string, parse: (text: string) => Either.Either<A, ConfigError.ConfigError>) => Config<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L328)
+
+Since v2.0.0

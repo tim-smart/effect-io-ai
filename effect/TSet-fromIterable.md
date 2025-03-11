@@ -1,17 +1,13 @@
-# fromIterable
+## fromIterable
 
 Creates a new `TSet` from an iterable collection of values.
-
-To import and use `fromIterable` from the "TSet" module:
-
-```ts
-import * as TSet from "effect/TSet"
-// Can be accessed like this
-TSet.fromIterable
-```
 
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<TSet<A>>
+declare const fromIterable: <A>(iterable: Iterable<A>) => STM.STM<TSet<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TSet.ts#L104)
+
+Since v2.0.0

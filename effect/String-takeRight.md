@@ -1,4 +1,4 @@
-# takeRight
+## takeRight
 
 Keep the specified number of characters from the end of a string.
 
@@ -9,17 +9,10 @@ If `n` is not a positive number, an empty string will be returned.
 
 If `n` is a float, it will be rounded down to the nearest integer.
 
-To import and use `takeRight` from the "String" module:
-
-```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.takeRight
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { String } from "effect"
 
 assert.deepStrictEqual(String.takeRight("Hello World", 5), "World")
@@ -28,5 +21,9 @@ assert.deepStrictEqual(String.takeRight("Hello World", 5), "World")
 **Signature**
 
 ```ts
-export declare const takeRight: { (n: number): (self: string) => string; (self: string, n: number): string }
+declare const takeRight: { (n: number): (self: string) => string; (self: string, n: number): string; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L615)
+
+Since v2.0.0

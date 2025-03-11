@@ -1,4 +1,4 @@
-# sequential
+## sequential
 
 Combines two `Cause`s sequentially.
 
@@ -8,16 +8,16 @@ This function merges two errors that occurred in sequence, such as a main
 error followed by a finalization error. It preserves both errors for complete
 failure information.
 
-To import and use `sequential` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.sequential
-```
+- `isSequentialType` Check if a `Cause` is a `Sequential`
 
 **Signature**
 
 ```ts
-export declare const sequential: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
+declare const sequential: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L654)
+
+Since v2.0.0

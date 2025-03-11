@@ -1,4 +1,4 @@
-# urlParams
+## urlParams
 
 Retrieves the query parameters from a URL.
 
@@ -7,14 +7,6 @@ Retrieves the query parameters from a URL.
 This function extracts the query parameters from a `URL` object and returns
 them as `UrlParams`. The resulting structure can be easily manipulated or
 inspected.
-
-To import and use `urlParams` from the "Url" module:
-
-```ts
-import * as Url from "@effect/platform/Url"
-// Can be accessed like this
-Url.urlParams
-```
 
 **Example**
 
@@ -33,5 +25,9 @@ console.log(params)
 **Signature**
 
 ```ts
-export declare const urlParams: (url: URL) => UrlParams.UrlParams
+declare const urlParams: (url: URL) => UrlParams.UrlParams
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L279)
+
+Since v1.0.0

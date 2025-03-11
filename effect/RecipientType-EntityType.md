@@ -1,11 +1,13 @@
-# EntityType
+## EntityType
 
 An EntityType is a RecipientType that is ensured to be alive only on a single Pod at a time.
 
-To import and use `EntityType` from the "RecipientType" module:
+**Signature**
 
 ```ts
-import * as RecipientType from "@effect/cluster/RecipientType"
-// Can be accessed like this
-RecipientType.EntityType
+declare class EntityType<Msg>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L25)
+
+Since v1.0.0

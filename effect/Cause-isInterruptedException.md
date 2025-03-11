@@ -1,17 +1,13 @@
-# isInterruptedException
+## isInterruptedException
 
 Checks if a given unknown value is an `InterruptedException`.
-
-To import and use `isInterruptedException` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isInterruptedException
-```
 
 **Signature**
 
 ```ts
-export declare const isInterruptedException: (u: unknown) => u is InterruptedException
+declare const isInterruptedException: (u: unknown) => u is InterruptedException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1335)
+
+Since v2.0.0

@@ -1,19 +1,15 @@
-# MonoidXor
+## MonoidXor
 
-`boolean` monoid under exclusive disjunction, see also {@link SemigroupXor}.
+`boolean` monoid under exclusive disjunction, see also `SemigroupXor`.
 
 The `empty` value is `false`.
-
-To import and use `MonoidXor` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.MonoidXor
-```
 
 **Signature**
 
 ```ts
-export declare const MonoidXor: monoid.Monoid<boolean>
+declare const MonoidXor: monoid.Monoid<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L137)
+
+Since v0.24.0

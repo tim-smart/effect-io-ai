@@ -1,18 +1,11 @@
-# subtract
+## subtract
 
 Provides a subtraction operation on `number`s.
-
-To import and use `subtract` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.subtract
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { subtract } from "effect/Number"
 
 assert.deepStrictEqual(subtract(2, 3), -1)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(subtract(2, 3), -1)
 **Signature**
 
 ```ts
-export declare const subtract: { (that: number): (self: number) => number; (self: number, that: number): number }
+declare const subtract: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L85)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# interrupt
+## interrupt
 
 Creates an `Interrupt` cause from a `FiberId`.
 
@@ -8,16 +8,16 @@ This function represents a fiber that has been interrupted. It stores the
 identifier of the interrupted fiber, enabling precise tracking of concurrent
 cancellations.
 
-To import and use `interrupt` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.interrupt
-```
+- `isInterrupted` Check if a `Cause` contains an interruption
 
 **Signature**
 
 ```ts
-export declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>
+declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L622)
+
+Since v2.0.0

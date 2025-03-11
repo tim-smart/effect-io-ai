@@ -1,17 +1,13 @@
-# drain
+## drain
 
 A sink that ignores its inputs.
-
-To import and use `drain` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.drain
-```
 
 **Signature**
 
 ```ts
-export declare const drain: Sink<void, unknown, never, never, never>
+declare const drain: Sink<void, unknown, never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L442)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# never
+## never
 
 A data source that never executes requests.
-
-To import and use `never` from the "RequestResolver" module:
-
-```ts
-import * as RequestResolver from "effect/RequestResolver"
-// Can be accessed like this
-RequestResolver.never
-```
 
 **Signature**
 
 ```ts
-export declare const never: RequestResolver<never, never>
+declare const never: RequestResolver<never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L314)
+
+Since v2.0.0

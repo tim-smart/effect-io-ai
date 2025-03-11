@@ -1,15 +1,7 @@
-# batched
+## batched
 
 Creates a batched logger that groups log messages together and processes them
 in intervals.
-
-To import and use `batched` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.batched
-```
 
 **Example**
 
@@ -23,7 +15,7 @@ const LoggerLive = Logger.replaceScoped(
   )
 )
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.log("one")
   yield* Effect.log("two")
   yield* Effect.log("three")
@@ -40,15 +32,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const batched: {
-  <Output, R>(
-    window: DurationInput,
-    f: (messages: Array<Types.NoInfer<Output>>) => Effect<void, never, R>
-  ): <Message>(self: Logger<Message, Output>) => Effect<Logger<Message, void>, never, R | Scope>
-  <Message, Output, R>(
-    self: Logger<Message, Output>,
-    window: DurationInput,
-    f: (messages: Array<Types.NoInfer<Output>>) => Effect<void, never, R>
-  ): Effect<Logger<Message, void>, never, Scope | R>
-}
+declare const batched: { <Output, R>(window: DurationInput, f: (messages: Array<Types.NoInfer<Output>>) => Effect<void, never, R>): <Message>(self: Logger<Message, Output>) => Effect<Logger<Message, void>, never, R | Scope>; <Message, Output, R>(self: Logger<Message, Output>, window: DurationInput, f: (messages: Array<Types.NoInfer<Output>>) => Effect<void, never, R>): Effect<Logger<Message, void>, never, Scope | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L225)
+
+Since v2.0.0

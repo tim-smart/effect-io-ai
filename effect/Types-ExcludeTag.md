@@ -1,14 +1,6 @@
-# ExcludeTag
+## ExcludeTag
 
 Excludes the tagged object from the type.
-
-To import and use `ExcludeTag` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.ExcludeTag
-```
 
 **Example**
 
@@ -17,3 +9,13 @@ import type { Types } from "effect"
 
 type Res = Types.ExcludeTag<string | { _tag: "a" } | { _tag: "b" }, "a"> // string | { _tag: "b" }
 ```
+
+**Signature**
+
+```ts
+type ExcludeTag<E, K> = Exclude<E, { _tag: K }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L85)
+
+Since v2.0.0

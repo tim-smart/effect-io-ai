@@ -1,19 +1,13 @@
-# concatAll
+## concatAll
 
 Concat sequentially a channel of channels.
-
-To import and use `concatAll` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.concatAll
-```
 
 **Signature**
 
 ```ts
-export declare const concatAll: <OutElem, InElem, OutErr, InErr, InDone, Env>(
-  channels: Channel<Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>, InElem, OutErr, InErr, any, InDone, Env>
-) => Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>
+declare const concatAll: <OutElem, InElem, OutErr, InErr, InDone, Env>(channels: Channel<Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>, InElem, OutErr, InErr, any, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, any, InDone, Env>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L355)
+
+Since v2.0.0

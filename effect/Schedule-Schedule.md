@@ -1,15 +1,15 @@
-# Schedule
+## Schedule
 
 A `Schedule<Out, In, R>` defines a recurring schedule, which consumes values
 of type `In`, and which returns values of type `Out`.
 
 The `Schedule` type is structured as follows:
 
-```text
-          ┌─── The type of output produced by the schedule
-          │   ┌─── The type of input consumed by the schedule
-          │   │     ┌─── Additional requirements for the schedule
-          ▼   ▼     ▼
+```ts
+//        ┌─── The type of output produced by the schedule
+//        │   ┌─── The type of input consumed by the schedule
+//        │   │     ┌─── Additional requirements for the schedule
+//        ▼   ▼     ▼
 Schedule<Out, In, Requirements>
 ```
 
@@ -45,10 +45,25 @@ A variety of other operators exist for transforming and combining schedules,
 and the companion object for `Schedule` contains all common types of
 schedules, both for performing retrying, as well as performing repetition.
 
-To import and use `Schedule` from the "Schedule" module:
+**Signature**
 
 ```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.Schedule
+export interface Schedule<out Out, in In = unknown, out R = never> extends Schedule.Variance<Out, In, R>, Pipeable {
+  /**
+   * Initial State
+   */
+  readonly initial: any
+  /**
+   * Schedule Step
+   */
+  step(
+    now: number,
+    input: In,
+    state: any
+  ): Effect.Effect<readonly [any, Out, ScheduleDecision.ScheduleDecision], never, R>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L94)
+
+Since v2.0.0

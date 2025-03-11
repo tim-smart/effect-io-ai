@@ -1,11 +1,13 @@
-# Capitalize
+## Capitalize
 
 This schema converts a string to capitalized one.
 
-To import and use `Capitalize` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.Capitalize
+declare class Capitalize
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4660)
+
+Since v3.10.0

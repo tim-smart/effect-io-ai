@@ -1,18 +1,11 @@
-# lessThan
+## lessThan
 
 Returns `true` if the first argument is less than the second, otherwise `false`.
-
-To import and use `lessThan` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.lessThan
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { lessThan, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(lessThan(unsafeFromString("2"), unsafeFromString("3")), true)
@@ -23,8 +16,9 @@ assert.deepStrictEqual(lessThan(unsafeFromString("4"), unsafeFromString("3")), f
 **Signature**
 
 ```ts
-export declare const lessThan: {
-  (that: BigDecimal): (self: BigDecimal) => boolean
-  (self: BigDecimal, that: BigDecimal): boolean
-}
+declare const lessThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L480)
+
+Since v2.0.0

@@ -1,11 +1,15 @@
-# Sequential
+## Sequential
 
 Execute effects sequentially.
 
-To import and use `Sequential` from the "ExecutionStrategy" module:
+**Signature**
 
 ```ts
-import * as ExecutionStrategy from "effect/ExecutionStrategy"
-// Can be accessed like this
-ExecutionStrategy.Sequential
+export interface Sequential {
+  readonly _tag: "Sequential"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ExecutionStrategy.ts#L25)
+
+Since v2.0.0

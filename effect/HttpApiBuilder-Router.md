@@ -1,11 +1,13 @@
-# Router
+## Router
 
 The router that the API endpoints are attached to.
 
-To import and use `Router` from the "HttpApiBuilder" module:
+**Signature**
 
 ```ts
-import * as HttpApiBuilder from "@effect/platform/HttpApiBuilder"
-// Can be accessed like this
-HttpApiBuilder.Router
+declare class Router
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L50)
+
+Since v1.0.0

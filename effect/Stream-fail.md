@@ -1,14 +1,6 @@
-# fail
+## fail
 
 Terminates with the specified error.
-
-To import and use `fail` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fail
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ Effect.runPromiseExit(Stream.runCollect(stream)).then(console.log)
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Stream<never, E>
+declare const fail: <E>(error: E) => Stream<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1580)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# annotateLogsScoped
+## annotateLogsScoped
 
 Adds log annotations with a limited scope to enhance contextual logging.
 
@@ -15,20 +15,12 @@ The annotations can be provided as a single key-value pair or as a record of
 multiple key-value pairs. This flexibility enables fine-grained control over
 the additional metadata included in logs for specific tasks or operations.
 
-To import and use `annotateLogsScoped` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.annotateLogsScoped
-```
-
 **Example**
 
 ```ts
 import { Effect } from "effect"
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.log("no annotations")
   yield* Effect.annotateLogsScoped({ key: "value" })
   yield* Effect.log("message1") // Annotation is applied to this log
@@ -42,11 +34,16 @@ const program = Effect.gen(function* () {
 // timestamp=... level=INFO fiber=#0 message="no annotations again"
 ```
 
+**See**
+
+- `annotateLogs` to add custom annotations to log entries generated within an effect.
+
 **Signature**
 
 ```ts
-export declare const annotateLogsScoped: {
-  (key: string, value: unknown): Effect<void, never, Scope.Scope>
-  (values: Record<string, unknown>): Effect<void, never, Scope.Scope>
-}
+declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope.Scope>; (values: Record<string, unknown>): Effect<void, never, Scope.Scope>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10920)
+
+Since v3.1.0

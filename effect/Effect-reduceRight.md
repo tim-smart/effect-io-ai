@@ -1,4 +1,4 @@
-# reduceRight
+## reduceRight
 
 Reduces an `Iterable<A>` using an effectual function `f`, working
 sequentially from right to left.
@@ -18,27 +18,21 @@ The function is often used for operations like summing a collection of
 numbers or combining results from multiple tasks. It ensures that operations
 are performed one after the other, maintaining the order of the elements.
 
-To import and use `reduceRight` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.reduceRight
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
 const processOrder = (id: number) =>
-  Effect.succeed({ id, price: 100 * id }).pipe(
-    Effect.tap(() => Console.log(`Order ${id} processed`)),
-    Effect.delay(500 - id * 100)
-  )
+  Effect.succeed({ id, price: 100 * id })
+    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))
 
-const program = Effect.reduceRight([1, 2, 3, 4], 0, (id, acc, i) =>
-  processOrder(id).pipe(Effect.map((order) => acc + order.price))
+const program = Effect.reduceRight(
+  [1, 2, 3, 4],
+  0,
+  (id, acc, i) =>
+    processOrder(id)
+      .pipe(Effect.map((order) => acc + order.price))
 )
 
 // Effect.runPromise(program).then(console.log)
@@ -50,11 +44,16 @@ const program = Effect.reduceRight([1, 2, 3, 4], 0, (id, acc, i) =>
 // 1000
 ```
 
+**See**
+
+- `reduce` for a similar function that works from left to right.
+
 **Signature**
 
 ```ts
-export declare const reduceRight: {
-  <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>
-  <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>
-}
+declare const reduceRight: { <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1936)
+
+Since v2.0.0

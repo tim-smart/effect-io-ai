@@ -1,17 +1,13 @@
-# empty
+## empty
 
 The empty `RuntimeFlagsPatch`.
-
-To import and use `empty` from the "RuntimeFlagsPatch" module:
-
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
-// Can be accessed like this
-RuntimeFlagsPatch.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: RuntimeFlagsPatch
+declare const empty: RuntimeFlagsPatch
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlagsPatch.ts#L22)
+
+Since v2.0.0

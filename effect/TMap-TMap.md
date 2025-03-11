@@ -1,12 +1,14 @@
-# TMap
+## TMap
 
 Transactional map implemented on top of `TRef` and `TArray`. Resolves
 conflicts via chaining.
 
-To import and use `TMap` from the "TMap" module:
+**Signature**
 
 ```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.TMap
+export interface TMap<in out K, in out V> extends TMap.Variance<K, V> {}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L33)
+
+Since v2.0.0

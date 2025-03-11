@@ -1,11 +1,15 @@
-# Line
+## Line
 
 Represents a document that contains a hard line break.
 
-To import and use `Line` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Line
+export interface Line<A> extends Doc.Variance<A> {
+  readonly _tag: "Line"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L189)
+
+Since v1.0.0

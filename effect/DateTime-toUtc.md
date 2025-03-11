@@ -1,14 +1,6 @@
-# toUtc
+## toUtc
 
 For a `DateTime` returns a new `DateTime.Utc`.
-
-To import and use `toUtc` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.toUtc
-```
 
 **Example**
 
@@ -24,5 +16,9 @@ const utc: DateTime.Utc = DateTime.toUtc(now)
 **Signature**
 
 ```ts
-export declare const toUtc: (self: DateTime) => Utc
+declare const toUtc: (self: DateTime) => Utc
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L455)
+
+Since v3.13.0

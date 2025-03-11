@@ -1,18 +1,11 @@
-# identity
+## identity
 
 The identity function, i.e. A function that returns its input argument.
-
-To import and use `identity` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.identity
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { identity } from "effect/Function"
 
 assert.deepStrictEqual(identity(5), 5)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(identity(5), 5)
 **Signature**
 
 ```ts
-export declare const identity: <A>(a: A) => A
+declare const identity: <A>(a: A) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L213)
+
+Since v2.0.0

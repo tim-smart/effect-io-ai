@@ -1,18 +1,11 @@
-# isNotUndefined
+## isNotUndefined
 
 Tests if a value is not `undefined`.
-
-To import and use `isNotUndefined` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isNotUndefined
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isNotUndefined } from "effect/Predicate"
 
 assert.deepStrictEqual(isNotUndefined(null), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isNotUndefined(undefined), false)
 **Signature**
 
 ```ts
-export declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
+declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L354)
+
+Since v2.0.0

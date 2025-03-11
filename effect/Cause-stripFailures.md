@@ -1,4 +1,4 @@
-# stripFailures
+## stripFailures
 
 Removes `Fail` and `Interrupt` nodes from a `Cause`, keeping only defects
 (`Die`).
@@ -9,16 +9,12 @@ This function is similar to `keepDefects` but returns a `Cause<never>`
 directly, which can still store `Die` or finalizer-related defects. It's
 helpful for analyzing only the irrecoverable portion of the error.
 
-To import and use `stripFailures` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.stripFailures
-```
-
 **Signature**
 
 ```ts
-export declare const stripFailures: <E>(self: Cause<E>) => Cause<never>
+declare const stripFailures: <E>(self: Cause<E>) => Cause<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L963)
+
+Since v2.0.0

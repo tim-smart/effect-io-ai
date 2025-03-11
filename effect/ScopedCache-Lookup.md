@@ -1,11 +1,15 @@
-# Lookup
+## Lookup
 
 Similar to `Cache.Lookup`, but executes the lookup function within a `Scope`.
 
-To import and use `Lookup` from the "ScopedCache" module:
+**Signature**
 
 ```ts
-import * as ScopedCache from "effect/ScopedCache"
-// Can be accessed like this
-ScopedCache.Lookup
+type Lookup<Key, Value, Error, Environment> = (
+  key: Key
+) => Effect.Effect<Value, Error, Environment | Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScopedCache.ts#L149)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# SemigroupSome
+## SemigroupSome
 
 `boolean` semigroup under disjunction.
-
-To import and use `SemigroupSome` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.SemigroupSome
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { SemigroupSome } from "@effect/typeclass/data/Boolean"
 
 assert.deepStrictEqual(SemigroupSome.combine(true, true), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(SemigroupSome.combine(false, false), false)
 **Signature**
 
 ```ts
-export declare const SemigroupSome: semigroup.Semigroup<boolean>
+declare const SemigroupSome: semigroup.Semigroup<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L56)
+
+Since v0.24.0

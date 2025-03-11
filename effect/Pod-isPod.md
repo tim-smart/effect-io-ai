@@ -1,17 +1,13 @@
-# isPod
+## isPod
 
 Given a value, ensures that it's a valid Pod.
-
-To import and use `isPod` from the "Pod" module:
-
-```ts
-import * as Pod from "@effect/cluster/Pod"
-// Can be accessed like this
-Pod.isPod
-```
 
 **Signature**
 
 ```ts
-export declare function isPod(value: unknown): value is Pod
+declare const isPod: (value: unknown) => value is Pod
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L69)
+
+Since v1.0.0

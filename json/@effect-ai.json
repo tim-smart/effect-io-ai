@@ -2,483 +2,389 @@
   {
     "_tag": "Class",
     "module": {
-      "name": "AiChat",
-      "path": [
-        "src",
-        "AiChat.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
     },
     "project": "@effect/ai",
     "name": "AiChat",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class AiChat"
+    "signature": "declare class AiChat"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiChat",
-      "path": [
-        "src",
-        "AiChat.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
     },
     "project": "@effect/ai",
     "name": "fromInput",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const fromInput: (input: AiInput.Input) => Effect.Effect<AiChat.Service, [YieldWrap<Effect.Effect<Ref.Ref<AiInput.AiInput>, never, never>> | YieldWrap<Effect.Effect<Effect.Semaphore, never, never>> | YieldWrap<Tag<Completions, Completions.Service>>] extends [never] ? never : [YieldWrap<Effect.Effect<Ref.Ref<AiInput.AiInput>, never, never>> | YieldWrap<Effect.Effect<Effect.Semaphore, never, never>> | YieldWrap<Tag<Completions, Completions.Service>>] extends [YieldWrap<Effect.Effect<infer _A, infer E, infer _R>>] ? E : never, [YieldWrap<Effect.Effect<Ref.Ref<AiInput.AiInput>, never, never>> | YieldWrap<Effect.Effect<Effect.Semaphore, never, never>> | YieldWrap<Tag<Completions, Completions.Service>>] extends [never] ? never : [YieldWrap<Effect.Effect<Ref.Ref<AiInput.AiInput>, never, never>> | YieldWrap<Effect.Effect<Effect.Semaphore, never, never>> | YieldWrap<Tag<Completions, Completions.Service>>] extends [YieldWrap<Effect.Effect<infer _A, infer _E, infer R>>] ? R : never>"
+    "signature": "declare const fromInput: (input: AiInput.Input) => Effect.Effect<AiChat.Service, never, Completions>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiChat",
-      "path": [
-        "src",
-        "AiChat.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
     },
     "project": "@effect/ai",
     "name": "empty",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const empty: Effect.Effect<AiChat.Service, never, Completions>"
+    "signature": "declare const empty: Effect.Effect<AiChat.Service, never, Completions>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AiChat",
-      "path": [
-        "src",
-        "AiChat.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
     },
     "project": "@effect/ai",
     "name": "fromExport",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const fromExport: (data: unknown) => Effect.Effect<AiChat.Service, ParseError, Completions>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AiChat",
-      "path": [
-        "src",
-        "AiChat.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
     },
     "project": "@effect/ai",
     "name": "fromJson",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiError",
-      "path": [
-        "src",
-        "AiError.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "AiError",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "errors",
-    "signature": "export declare class AiError"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiError",
-      "path": [
-        "src",
-        "AiError.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiError",
-      "path": [
-        "src",
-        "AiError.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ImagePart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class ImagePart"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ImageUrlPart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class ImageUrlPart"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Message",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "message",
-    "signature": "export declare class Message"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "SystemInstruction",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "system",
-    "signature": "export declare class SystemInstruction"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "TextPart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class TextPart"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ToolCallPart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class ToolCallPart"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ToolCallResolvedPart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class ToolCallResolvedPart"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "PartTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare const PartTypeId: typeof PartTypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ImageQuality",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare const ImageQuality: Schema_.Literal<[\"low\", \"high\", \"auto\"]>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Base64DataUrl",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "base64",
-    "signature": "export declare const Base64DataUrl: Base64DataUrl"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Part",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare const Part: Part.Schema"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "MessageTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "message",
-    "signature": "export declare const MessageTypeId: typeof MessageTypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "empty",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const empty: AiInput"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Schema",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export declare const Schema: Schema_.Chunk<typeof Message>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "SchemaJson",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "schemas",
-    "signature": "export declare const SchemaJson: Schema_.Schema<Chunk.Chunk<Message>, string, never>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "provideSystem",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "system",
-    "signature": "export declare const provideSystem: { (input: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, SystemInstruction>>; <A, E, R>(effect: Effect.Effect<A, E, R>, input: string): Effect.Effect<A, E, Exclude<R, SystemInstruction>>; }"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "isPart",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": null
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "make",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": null
+    "signature": "declare const fromJson: (data: string) => Effect.Effect<AiChat.Service, ParseError, Completions>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiChat.ts",
+      "path": "src/AiChat.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiChat.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly history: Effect.Effect<AiInput.AiInput>\n    readonly export: Effect.Effect<unknown>\n    readonly exportJson: Effect.Effect<string>\n    readonly send: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Completions.StructuredSchema<A, I, R>\n      }): Effect.Effect<A, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<A, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiError.ts",
+      "path": "src/AiError.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class AiError"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiError.ts",
+      "path": "src/AiError.ts"
+    },
+    "project": "@effect/ai",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: unique symbol"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiError.ts",
+      "path": "src/AiError.ts"
+    },
+    "project": "@effect/ai",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "TextPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class TextPart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ImageUrlPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class ImageUrlPart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ImagePart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class ImagePart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ToolCallPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class ToolCallPart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ToolCallResolvedPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class ToolCallResolvedPart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Message",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "message",
+    "signature": "declare class Message"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "SystemInstruction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "system",
+    "signature": "declare class SystemInstruction"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "PartTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare const PartTypeId: unique symbol"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ImageQuality",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare const ImageQuality: Schema_.Literal<[\"low\", \"high\", \"auto\"]>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
     "name": "Base64DataUrl",
-    "description": null,
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "base64",
+    "signature": "declare const Base64DataUrl: Base64DataUrl"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Part",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare const Part: Part.Schema"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "MessageTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "message",
+    "signature": "declare const MessageTypeId: unique symbol"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "empty",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const empty: AiInput"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Schema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "declare const Schema: Schema_.Chunk<typeof Message>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "SchemaJson",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "declare const SchemaJson: Schema_.Schema<Chunk.Chunk<Message>, string, never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "provideSystem",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "system",
+    "signature": "declare const provideSystem: { (input: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, SystemInstruction>>; <A, E, R>(effect: Effect.Effect<A, E, R>, input: string): Effect.Effect<A, E, Exclude<R, SystemInstruction>>; }"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "isPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare const isPart: (u: unknown) => u is Part"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (input: Input, options?: { readonly role?: AiRole.AiRole; }) => AiInput"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Base64DataUrl",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -488,177 +394,165 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
-    "name": "AiInput",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export type AiInput = Chunk.Chunk<Message>"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ImageQuality",
-    "description": null,
+    "name": "PartTypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export type ImageQuality = typeof ImageQuality.Type"
+    "signature": "type PartTypeId = typeof PartTypeId"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
-    "name": "Input",
-    "description": null,
+    "name": "ImageQuality",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "models",
-    "signature": "export type Input =\n  | string\n  | Part\n  | Iterable<Part>\n  | Message\n  | Iterable<Message>\n  | AiResponse\n  | WithResolved<unknown>"
+    "category": "parts",
+    "signature": "type ImageQuality = typeof ImageQuality.Type"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Part",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "type Part = TextPart | ToolCallPart | ToolCallResolvedPart | ImagePart | ImageUrlPart"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
     "name": "MessageTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "message",
-    "signature": "export type MessageTypeId = typeof MessageTypeId"
+    "signature": "type MessageTypeId = typeof MessageTypeId"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
-    "name": "Part",
-    "description": null,
+    "name": "Input",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "parts",
-    "signature": "export type Part = TextPart | ToolCallPart | ToolCallResolvedPart | ImagePart | ImageUrlPart"
+    "category": "models",
+    "signature": "type Input = | string\n  | Part\n  | Iterable<Part>\n  | Message\n  | Iterable<Message>\n  | AiResponse\n  | WithResolved<unknown>"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiInput",
-      "path": [
-        "src",
-        "AiInput.ts"
-      ]
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
     },
     "project": "@effect/ai",
-    "name": "PartTypeId",
-    "description": null,
+    "name": "AiInput",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AiInput = Chunk.Chunk<Message>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Part.Schema",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export type PartTypeId = typeof PartTypeId"
+    "signature": "type Schema = Schema_.Union<[\n    typeof TextPart,\n    typeof ToolCallPart,\n    typeof ToolCallResolvedPart,\n    typeof ImagePart,\n    typeof ImageUrlPart\n  ]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiInput.ts",
+      "path": "src/AiInput.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Message.Input",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "message",
+    "signature": "type Input = string | Part | Iterable<Part>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
     "name": "PlanTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const PlanTypeId: typeof PlanTypeId"
+    "signature": "declare const PlanTypeId: unique symbol"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: <Provides, Requires>(options: { readonly model: string; readonly cacheKey: symbol; readonly requires: Context.Tag<Requires, any>; readonly provides: AiModel.ContextBuilder<Provides, Requires>; readonly updateContext: (context: Context.Context<Provides>) => Context.Context<Provides>; }) => AiModel<Provides, Requires>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
     "name": "AiModel",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -668,159 +562,151 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
-    "name": "PlanTypeId",
-    "description": null,
+    "name": "TypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type PlanTypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiModel",
-      "path": [
-        "src",
-        "AiModel.ts"
-      ]
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
     },
     "project": "@effect/ai",
-    "name": "TypeId",
-    "description": null,
+    "name": "PlanTypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type PlanTypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiModel.ts",
+      "path": "src/AiModel.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiModel.ContextBuilder",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "AiModel",
+    "signature": "type ContextBuilder<Provides, Requires> = Effect.Effect<\n    Context.Context<Provides>,\n    never,\n    Requires | Scope.Scope\n  >"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiModels",
-      "path": [
-        "src",
-        "AiModels.ts"
-      ]
+      "name": "AiModels.ts",
+      "path": "src/AiModels.ts"
     },
     "project": "@effect/ai",
     "name": "AiModels",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class AiModels"
+    "signature": "declare class AiModels"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiModels",
-      "path": [
-        "src",
-        "AiModels.ts"
-      ]
+      "name": "AiModels.ts",
+      "path": "src/AiModels.ts"
     },
     "project": "@effect/ai",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "export declare const layer: Layer.Layer<AiModels, never, never>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "fromModel",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const fromModel: <Provides, Requires, EW, Out, ES, RW = never, RS = never>(model: AiModel.AiModel<Provides, Requires>, options?: { readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }) => AiPlan<EW & ES, Provides, RW | RS | Requires>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "withFallback",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "error handling",
-    "signature": "export declare const withFallback: { <Provides, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): <E, Requires>(self: AiPlan<E, Provides, Requires>) => AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; <E, Provides, Requires, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(self: AiPlan<E, Provides, Requires>, options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; }"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "concatSteps",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "combination",
-    "signature": "export declare const concatSteps: { <Error2, Provides2, Requires2>(other: AiPlan<Error2, Provides2, Requires2>): <Error, Provides, Requires>(self: AiPlan<Error, Provides, Requires>) => AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; <Error, Provides, Requires, Error2, Provides2, Requires2>(self: AiPlan<Error, Provides, Requires>, other: AiPlan<Error2, Provides2, Requires2>): AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; }"
+    "signature": "declare const layer: Layer.Layer<AiModels, never, never>"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
+      "name": "AiModels.ts",
+      "path": "src/AiModels.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiModels.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly build: <Provides, Requires>(\n      model: AiModel<Provides, Requires>,\n      context: Context.Context<Requires>\n    ) => Effect.Effect<Context.Context<Provides>, never, Scope.Scope>\n  }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
+    },
+    "project": "@effect/ai",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: unique symbol"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
+    },
+    "project": "@effect/ai",
+    "name": "fromModel",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromModel: <Provides, Requires, EW, Out, ES, RW = never, RS = never>(model: AiModel.AiModel<Provides, Requires>, options?: { readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }) => AiPlan<EW & ES, Provides, RW | RS | Requires>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
+    },
+    "project": "@effect/ai",
+    "name": "withFallback",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "error handling",
+    "signature": "declare const withFallback: { <Provides, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): <E, Requires>(self: AiPlan<E, Provides, Requires>) => AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; <E, Provides, Requires, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(self: AiPlan<E, Provides, Requires>, options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; }"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
+    },
+    "project": "@effect/ai",
+    "name": "concatSteps",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combination",
+    "signature": "declare const concatSteps: { <Error2, Provides2, Requires2>(other: AiPlan<Error2, Provides2, Requires2>): <Error, Provides, Requires>(self: AiPlan<Error, Provides, Requires>) => AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; <Error, Provides, Requires, Error2, Provides2, Requires2>(self: AiPlan<Error, Provides, Requires>, other: AiPlan<Error2, Provides2, Requires2>): AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
     "name": "AiPlan",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -830,15 +716,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
     "name": "AiPlanUnify",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -848,15 +730,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
     "name": "AiPlanUnifyIgnore",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -866,479 +744,414 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiPlan",
-      "path": [
-        "src",
-        "AiPlan.ts"
-      ]
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
-    "_tag": "Class",
+    "_tag": "Interface",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
-    "name": "AiResponse",
-    "description": null,
+    "name": "AiPlan.Provider",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "models",
-    "signature": "export declare class AiResponse"
+    "category": "AiPlan",
+    "signature": "export interface Provider<Provides> {\n    readonly provide: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Provides>>\n  }"
   },
   {
-    "_tag": "Class",
+    "_tag": "Interface",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
     },
     "project": "@effect/ai",
-    "name": "ImageUrlPart",
-    "description": null,
+    "name": "AiPlan.Step",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "parts",
-    "signature": "export declare class ImageUrlPart"
+    "category": "AiPlan",
+    "signature": "export interface Step<Error, Provides, Requires> {\n    readonly model: AiModel.AiModel<Provides, Requires>\n    readonly check: Option.Option<(error: Error) => boolean | Effect.Effect<boolean>>\n    readonly schedule: Option.Option<Schedule.Schedule<any, Error, Requires>>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiPlan.ts",
+      "path": "src/AiPlan.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiPlan.Builder",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "AiPlan",
+    "signature": "type Builder<Provides, Requires> = Effect.Effect<Provider<Provides>, never, AiModels | Requires>"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "TextPart",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export declare class TextPart"
+    "signature": "declare class TextPart"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "ToolCallPart",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export declare class ToolCallPart"
+    "signature": "declare class ToolCallPart"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ImageUrlPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "declare class ImageUrlPart"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "declare class AiResponse"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "WithResolved",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "export declare class WithResolved<A>"
+    "signature": "declare class WithResolved<A>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "PartTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export declare const PartTypeId: typeof PartTypeId"
+    "signature": "declare const PartTypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "ToolCallId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export declare const ToolCallId: Schema.brand<typeof Schema.String, \"ToolCallId\">"
+    "signature": "declare const ToolCallId: Schema.brand<typeof Schema.String, \"ToolCallId\">"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "Part",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "export declare const Part: Schema.Union<[typeof TextPart, typeof ToolCallPart, typeof ImageUrlPart]>"
+    "signature": "declare const Part: Schema.Union<[typeof TextPart, typeof ToolCallPart, typeof ImageUrlPart]>"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "WithResolvedTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "export declare const WithResolvedTypeId: typeof WithResolvedTypeId"
+    "signature": "declare const WithResolvedTypeId: unique symbol"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Part",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export type Part = TextPart | ToolCallPart | ImageUrlPart"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "PartTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export type PartTypeId = typeof PartTypeId"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "ToolCallId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "parts",
-    "signature": "export type ToolCallId = typeof ToolCallId.Type"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiResponse",
-      "path": [
-        "src",
-        "AiResponse.ts"
-      ]
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
+    },
+    "project": "@effect/ai",
+    "name": "PartTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "type PartTypeId = typeof PartTypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ToolCallId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "type ToolCallId = typeof ToolCallId.Type"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Part",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "parts",
+    "signature": "type Part = TextPart | ToolCallPart | ImageUrlPart"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiResponse.ts",
+      "path": "src/AiResponse.ts"
     },
     "project": "@effect/ai",
     "name": "WithResolvedTypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "export type WithResolvedTypeId = typeof WithResolvedTypeId"
+    "signature": "type WithResolvedTypeId = typeof WithResolvedTypeId"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "Model",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export declare class Model"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "User",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export declare class User"
+    "signature": "declare class User"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "UserWithName",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export declare class UserWithName"
+    "signature": "declare class UserWithName"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "declare class Model"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "user",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const user: AiRole"
+    "signature": "declare const user: AiRole"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "model",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export declare const model: AiRole"
+    "signature": "declare const model: AiRole"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "AiRole",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "roles",
-    "signature": "export declare const AiRole: Schema.Union<[typeof User, typeof UserWithName, typeof Model]>"
+    "signature": "declare const AiRole: Schema.Union<[typeof User, typeof UserWithName, typeof Model]>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "userWithName",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const userWithName: (name: string) => AiRole"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "AiRole",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export type AiRole = User | UserWithName | Model"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiRole",
-      "path": [
-        "src",
-        "AiRole.ts"
-      ]
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiRole.ts",
+      "path": "src/AiRole.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiRole",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AiRole = User | UserWithName | Model"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "AiTelemetry",
-      "path": [
-        "src",
-        "AiTelemetry.ts"
-      ]
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
     },
     "project": "@effect/ai",
     "name": "addGenAIAnnotations",
@@ -1347,52 +1160,27 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }"
+    "signature": "declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "AiTelemetry",
-      "path": [
-        "src",
-        "AiTelemetry.ts"
-      ]
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
     },
     "project": "@effect/ai",
     "name": "addSpanAttributes",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": null
+    "signature": "declare const addSpanAttributes: (keyPrefix: string, transformKey: (key: string) => string) => <Attributes extends Record<string, any>>(span: Span, attributes: Attributes) => void"
   },
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiTelemetry",
-      "path": [
-        "src",
-        "AiTelemetry.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "GenAITelemetryAttributeOptions",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export type GenAITelemetryAttributeOptions = GenAI.BaseAttributes & {\n  readonly operation?: GenAI.OperationAttributes | undefined\n  readonly request?: GenAI.RequestAttributes | undefined\n  readonly response?: GenAI.ResponseAttributes | undefined\n  readonly token?: GenAI.TokenAttributes | undefined\n  readonly usage?: GenAI.UsageAttributes | undefined\n}"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiTelemetry",
-      "path": [
-        "src",
-        "AiTelemetry.ts"
-      ]
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
     },
     "project": "@effect/ai",
     "name": "GenAITelemetryAttributes",
@@ -1401,92 +1189,249 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export type GenAITelemetryAttributes = Simplify<\n  & GenAI.AttributesWithPrefix<GenAI.BaseAttributes, \"gen_ai\">\n  & GenAI.AttributesWithPrefix<GenAI.OperationAttributes, \"gen_ai.operation\">\n  & GenAI.AttributesWithPrefix<GenAI.TokenAttributes, \"gen_ai.token\">\n  & GenAI.AttributesWithPrefix<GenAI.UsageAttributes, \"gen_ai.usage\">\n  & GenAI.AttributesWithPrefix<GenAI.RequestAttributes, \"gen_ai.request\">\n  & GenAI.AttributesWithPrefix<GenAI.ResponseAttributes, \"gen_ai.response\">\n>"
+    "signature": "type GenAITelemetryAttributes = Simplify<\n  & GenAI.AttributesWithPrefix<GenAI.BaseAttributes, \"gen_ai\">\n  & GenAI.AttributesWithPrefix<GenAI.OperationAttributes, \"gen_ai.operation\">\n  & GenAI.AttributesWithPrefix<GenAI.TokenAttributes, \"gen_ai.token\">\n  & GenAI.AttributesWithPrefix<GenAI.UsageAttributes, \"gen_ai.usage\">\n  & GenAI.AttributesWithPrefix<GenAI.RequestAttributes, \"gen_ai.request\">\n  & GenAI.AttributesWithPrefix<GenAI.ResponseAttributes, \"gen_ai.response\">\n>"
   },
   {
-    "_tag": "Class",
+    "_tag": "TypeAlias",
     "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
     },
     "project": "@effect/ai",
-    "name": "Registry",
-    "description": null,
+    "name": "GenAITelemetryAttributeOptions",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "registry",
-    "signature": "export declare class Registry"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "TypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "empty",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "export declare const empty: AiToolkit<never>"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "HandlersTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "handlers",
-    "signature": "export declare const HandlersTypeId: typeof HandlersTypeId"
+    "category": null,
+    "signature": "type GenAITelemetryAttributeOptions = GenAI.BaseAttributes & {\n  readonly operation?: GenAI.OperationAttributes | undefined\n  readonly request?: GenAI.RequestAttributes | undefined\n  readonly response?: GenAI.ResponseAttributes | undefined\n  readonly token?: GenAI.TokenAttributes | undefined\n  readonly usage?: GenAI.UsageAttributes | undefined\n}"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.BaseAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface BaseAttributes {\n    /**\n     * The Generative AI product as identified by the client or server\n     * instrumentation.\n     */\n    readonly system?: (string & {}) | WellKnownSystem | null | undefined\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.OperationAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.operation`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface OperationAttributes {\n    readonly name?: (string & {}) | WellKnownOperationName | null | undefined\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.TokenAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.token`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface TokenAttributes {\n    readonly type?: string | null | undefined\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.UsageAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.usage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UsageAttributes {\n    readonly inputTokens?: number | null | undefined\n    readonly outputTokens?: number | null | undefined\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.RequestAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.request`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RequestAttributes {\n    /**\n     * The name of the GenAI model a request is being made to.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly temperature?: number | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly topK?: number | null | undefined\n    /**\n     * The top_k sampling setting for the GenAI request.\n     */\n    readonly topP?: number | null | undefined\n    /**\n     * The top_p sampling setting for the GenAI request.\n     */\n    readonly maxTokens?: number | null | undefined\n    /**\n     * The encoding formats requested in an embeddings operation, if specified.\n     */\n    readonly encodingFormats?: ReadonlyArray<string> | null | undefined\n    /**\n     * List of sequences that the model will use to stop generating further\n     * tokens.\n     */\n    readonly stopSequences?: ReadonlyArray<string> | null | undefined\n    /**\n     * The frequency penalty setting for the GenAI request.\n     */\n    readonly frequencyPenalty?: number | null | undefined\n    /**\n     * The presence penalty setting for the GenAI request.\n     */\n    readonly presencePenalty?: number | null | undefined\n    /**\n     * The seed setting for the GenAI request. Requests with same seed value\n     * are more likely to return same result.\n     */\n    readonly seed?: number | null | undefined\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.ResponseAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.response`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ResponseAttributes {\n    /**\n     * The unique identifier for the completion.\n     */\n    readonly id?: string | null | undefined\n    /**\n     * The name of the model that generated the response.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * Array of reasons the model stopped generating tokens, corresponding to\n     * each generation received.\n     */\n    readonly finishReasons?: ReadonlyArray<string> | null | undefined\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.AllAttributes",
+    "description": "All telemetry attributes which are part of the GenAI specification.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AllAttributes = & BaseAttributes\n    & OperationAttributes\n    & TokenAttributes\n    & UsageAttributes\n    & RequestAttributes\n    & ResponseAttributes"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.WellKnownOperationName",
+    "description": "The `gen_ai.operation.name` attribute has the following list of well-known\nvalues.\n\nIf one of them applies, then the respective value **MUST** be used;\notherwise, a custom value **MAY** be used.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type WellKnownOperationName = \"chat\" | \"embeddings\" | \"text_completion\""
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.WellKnownSystem",
+    "description": "The `gen_ai.system` attribute has the following list of well-known values.\n\nIf one of them applies, then the respective value **MUST** be used;\notherwise, a custom value **MAY** be used.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type WellKnownSystem = | \"anthropic\"\n    | \"aws.bedrock\"\n    | \"az.ai.inference\"\n    | \"az.ai.openai\"\n    | \"cohere\"\n    | \"deepseek\"\n    | \"gemini\"\n    | \"groq\"\n    | \"ibm.watsonx.ai\"\n    | \"mistral_ai\"\n    | \"openai\"\n    | \"perplexity\"\n    | \"vertex_ai\"\n    | \"xai\""
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.AttributesWithPrefix",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AttributesWithPrefix<Attributes, Prefix> = {\n    [Name in keyof Attributes as `${Prefix}.${FormatAttributeName<Name>}`]: Attributes[Name]\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiTelemetry.ts",
+      "path": "src/AiTelemetry.ts"
+    },
+    "project": "@effect/ai",
+    "name": "GenAI.FormatAttributeName",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type FormatAttributeName<T> = T extends string ?\n    T extends `${infer First}${infer Rest}`\n      ? `${First extends Uppercase<First> ? \"_\" : \"\"}${Lowercase<First>}${FormatAttributeName<Rest>}`\n    : T :\n    never"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Registry",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "registry",
+    "signature": "declare class Registry"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: unique symbol"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "empty",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const empty: AiToolkit<never>"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "HandlersTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": "declare const HandlersTypeId: unique symbol"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
     },
     "project": "@effect/ai",
     "name": "AiToolkit",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1496,15 +1441,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
     },
     "project": "@effect/ai",
     "name": "Handlers",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1514,87 +1455,235 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "HandlersTypeId",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "handlers",
-    "signature": "export type HandlersTypeId = typeof HandlersTypeId"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "AiToolkit",
-      "path": [
-        "src",
-        "AiToolkit.ts"
-      ]
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
     },
     "project": "@effect/ai",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
-    "_tag": "Class",
+    "_tag": "TypeAlias",
     "module": {
-      "name": "Completions",
-      "path": [
-        "src",
-        "Completions.ts"
-      ]
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
     },
     "project": "@effect/ai",
-    "name": "Completions",
-    "description": null,
+    "name": "HandlersTypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "tags",
-    "signature": "export declare class Completions"
+    "category": "handlers",
+    "signature": "type HandlersTypeId = typeof HandlersTypeId"
   },
   {
-    "_tag": "Function",
+    "_tag": "TypeAlias",
     "module": {
-      "name": "Completions",
-      "path": [
-        "src",
-        "Completions.ts"
-      ]
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
     },
     "project": "@effect/ai",
-    "name": "make",
-    "description": null,
+    "name": "AiToolkit.Tools",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "constructors",
-    "signature": null
+    "category": "models",
+    "signature": "type Tools<A> = A extends AiToolkit<infer Tools> ? Tools : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiToolkit.SuccessSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type SuccessSchema<A> = A extends AiToolkit<infer Tools> ? Tools[\"success\"] : never"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "Completions",
-      "path": [
-        "src",
-        "Completions.ts"
-      ]
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.AnySchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "export interface AnySchema {\n    readonly [Schema.TypeId]: any\n    readonly _tag: string\n    readonly Type: Schema.SerializableWithResult.All\n    readonly success: Schema.Schema.Any\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "export interface Service<Tag extends string> {\n    readonly _: unique symbol\n    readonly name: Types.Invariant<Tag>\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Success",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type Success<Tool> = Schema.WithResult.Success<Tool[\"Type\"]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Failure",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type Failure<Tool> = Schema.WithResult.Failure<Tool[\"Type\"]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Context",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type Context<Tool> = Schema.WithResult.Context<Tool[\"Type\"]>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Handler",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type Handler<Tool, R> = (\n    params: Tool[\"Type\"]\n  ) => Effect.Effect<Success<Tool>, Failure<Tool>, R>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.HandlerAny",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type HandlerAny = (params: any) => Effect.Effect<any, any, any>"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.ServiceFromTag",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type ServiceFromTag<Tag> = Tag extends infer T ? T extends string ? Service<T> : never : never"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tool.Services",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tool",
+    "signature": "type Services<Tools> = ServiceFromTag<Tools[\"_tag\"]>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AiToolkit.ts",
+      "path": "src/AiToolkit.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Handlers.Variance",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "handlers",
+    "signature": "export interface Variance<Tools extends Tool.AnySchema> {\n    readonly _Tools: Types.Invariant<Tools>\n  }"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Completions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class Completions"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: { readonly create: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Effect.Effect<AiResponse, AiError>; readonly stream: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Stream.Stream<AiResponse, AiError>; }) => Effect.Effect<Completions.Service>"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
     },
     "project": "@effect/ai",
     "name": "CompletionOptions",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -1602,49 +1691,94 @@
     "signature": "export interface CompletionOptions {\n  readonly system: Option.Option<string>\n  readonly input: Chunk.NonEmptyChunk<Message>\n  readonly tools: Array<{\n    readonly name: string\n    readonly description: string\n    readonly parameters: JsonSchema.JsonSchema7\n    readonly structured: boolean\n  }>\n  readonly required: boolean | string\n}"
   },
   {
+    "_tag": "Interface",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Completions.TaggedSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface TaggedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly _tag: string\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Completions.IdentifiedSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface IdentifiedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly identifier: string\n  }"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Completions.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly create: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: StructuredSchema<A, I, R>\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Completions.ts",
+      "path": "src/Completions.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Completions.StructuredSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type StructuredSchema<A, I, R> = TaggedSchema<A, I, R> | IdentifiedSchema<A, I, R>"
+  },
+  {
     "_tag": "Class",
     "module": {
-      "name": "Embeddings",
-      "path": [
-        "src",
-        "Embeddings.ts"
-      ]
+      "name": "Embeddings.ts",
+      "path": "src/Embeddings.ts"
     },
     "project": "@effect/ai",
     "name": "Embeddings",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class Embeddings"
+    "signature": "declare class Embeddings"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Embeddings",
-      "path": [
-        "src",
-        "Embeddings.ts"
-      ]
+      "name": "Embeddings.ts",
+      "path": "src/Embeddings.ts"
     },
     "project": "@effect/ai",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<Embeddings.Service, never, never>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Embeddings",
-      "path": [
-        "src",
-        "Embeddings.ts"
-      ]
+      "name": "Embeddings.ts",
+      "path": "src/Embeddings.ts"
     },
     "project": "@effect/ai",
     "name": "makeDataLoader",
@@ -1653,276 +1787,76 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<Embeddings.Service, never, Scope>"
   },
   {
-    "_tag": "Export",
+    "_tag": "Interface",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "Embeddings.ts",
+      "path": "src/Embeddings.ts"
     },
     "project": "@effect/ai",
-    "name": "From \"./AiChat.js\"",
-    "description": "Re-exports all named exports from the \"./AiChat.js\" module as `AiChat`.",
+    "name": "Embeddings.Service",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiChat from \"./AiChat.js\""
+    "category": "models",
+    "signature": "export interface Service {\n    readonly embed: (input: string) => Effect.Effect<Array<number>, AiError>\n  }"
   },
   {
-    "_tag": "Export",
+    "_tag": "Interface",
     "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
+      "name": "Embeddings.ts",
+      "path": "src/Embeddings.ts"
     },
     "project": "@effect/ai",
-    "name": "From \"./AiError.js\"",
-    "description": "Re-exports all named exports from the \"./AiError.js\" module as `AiError`.",
+    "name": "Embeddings.Result",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiError from \"./AiError.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiInput.js\"",
-    "description": "Re-exports all named exports from the \"./AiInput.js\" module as `AiInput`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiInput from \"./AiInput.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiModel.js\"",
-    "description": "Re-exports all named exports from the \"./AiModel.js\" module as `AiModel`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiModel from \"./AiModel.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiModels.js\"",
-    "description": "Re-exports all named exports from the \"./AiModels.js\" module as `AiModels`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiModels from \"./AiModels.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiPlan.js\"",
-    "description": "Re-exports all named exports from the \"./AiPlan.js\" module as `AiPlan`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiPlan from \"./AiPlan.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiResponse.js\"",
-    "description": "Re-exports all named exports from the \"./AiResponse.js\" module as `AiResponse`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiResponse from \"./AiResponse.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiRole.js\"",
-    "description": "Re-exports all named exports from the \"./AiRole.js\" module as `AiRole`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiRole from \"./AiRole.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiTelemetry.js\"",
-    "description": "Re-exports all named exports from the \"./AiTelemetry.js\" module as `AiTelemetry`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiTelemetry from \"./AiTelemetry.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./AiToolkit.js\"",
-    "description": "Re-exports all named exports from the \"./AiToolkit.js\" module as `AiToolkit`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as AiToolkit from \"./AiToolkit.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./Completions.js\"",
-    "description": "Re-exports all named exports from the \"./Completions.js\" module as `Completions`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Completions from \"./Completions.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./Embeddings.js\"",
-    "description": "Re-exports all named exports from the \"./Embeddings.js\" module as `Embeddings`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Embeddings from \"./Embeddings.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/ai",
-    "name": "From \"./Tokenizer.js\"",
-    "description": "Re-exports all named exports from the \"./Tokenizer.js\" module as `Tokenizer`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as Tokenizer from \"./Tokenizer.js\""
+    "category": "models",
+    "signature": "export interface Result {\n    readonly index: number\n    readonly embeddings: Array<number>\n  }"
   },
   {
     "_tag": "Class",
     "module": {
-      "name": "Tokenizer",
-      "path": [
-        "src",
-        "Tokenizer.ts"
-      ]
+      "name": "Tokenizer.ts",
+      "path": "src/Tokenizer.ts"
     },
     "project": "@effect/ai",
     "name": "Tokenizer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare class Tokenizer"
+    "signature": "declare class Tokenizer"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "Tokenizer",
-      "path": [
-        "src",
-        "Tokenizer.ts"
-      ]
+      "name": "Tokenizer.ts",
+      "path": "src/Tokenizer.ts"
     },
     "project": "@effect/ai",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: { readonly tokenize: (content: AiInput.AiInput) => Effect.Effect<Array<number>, AiError>; }) => Tokenizer.Service"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Tokenizer.ts",
+      "path": "src/Tokenizer.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tokenizer.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Service {\n    readonly tokenize: (content: AiInput.Input) => Effect.Effect<Array<number>, AiError>\n    readonly truncate: (content: AiInput.Input, tokens: number) => Effect.Effect<AiInput.Input, AiError>\n  }"
   }
 ]

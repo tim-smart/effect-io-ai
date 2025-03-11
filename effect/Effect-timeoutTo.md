@@ -1,4 +1,4 @@
-# timeoutTo
+## timeoutTo
 
 Provides custom behavior for successful and timed-out operations.
 
@@ -7,7 +7,6 @@ Provides custom behavior for successful and timed-out operations.
 This function allows you to define distinct outcomes for an effect depending
 on whether it completes within a specified time frame or exceeds the timeout
 duration. You can provide:
-
 - `onSuccess`: A handler for processing the result of the effect if it
   completes successfully within the time limit.
 - `onTimeout`: A handler for generating a result when the effect times out.
@@ -15,19 +14,11 @@ duration. You can provide:
 
 **When to Use**
 
-Unlike {@link timeout}, which raises an exception for timeouts, this function
+Unlike `timeout`, which raises an exception for timeouts, this function
 gives you full control over the behavior for both success and timeout
 scenarios. It is particularly useful when you want to encapsulate timeouts
 and successes into a specific data structure, like an `Either` type, to
 represent these outcomes in a meaningful way.
-
-To import and use `timeoutTo` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.timeoutTo
-```
 
 **Example**
 
@@ -44,8 +35,10 @@ const task = Effect.gen(function* () {
 const program = task.pipe(
   Effect.timeoutTo({
     duration: "1 second",
-    onSuccess: (result): Either.Either<string, string> => Either.right(result),
-    onTimeout: (): Either.Either<string, string> => Either.left("Timed out!")
+    onSuccess: (result): Either.Either<string, string> =>
+      Either.right(result),
+    onTimeout: (): Either.Either<string, string> =>
+      Either.left("Timed out!")
   })
 )
 
@@ -59,22 +52,18 @@ const program = task.pipe(
 // }
 ```
 
+**See**
+
+- `timeout` for a version that raises a `TimeoutException`.
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutFailCause` for a version that raises a custom defect.
+
 **Signature**
 
 ```ts
-export declare const timeoutTo: {
-  <A, B, B1>(options: {
-    readonly onTimeout: LazyArg<B1>
-    readonly onSuccess: (a: A) => B
-    readonly duration: Duration.DurationInput
-  }): <E, R>(self: Effect<A, E, R>) => Effect<B | B1, E, R>
-  <A, E, R, B1, B>(
-    self: Effect<A, E, R>,
-    options: {
-      readonly onTimeout: LazyArg<B1>
-      readonly onSuccess: (a: A) => B
-      readonly duration: Duration.DurationInput
-    }
-  ): Effect<B1 | B, E, R>
-}
+declare const timeoutTo: { <A, B, B1>(options: { readonly onTimeout: LazyArg<B1>; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput; }): <E, R>(self: Effect<A, E, R>) => Effect<B | B1, E, R>; <A, E, R, B1, B>(self: Effect<A, E, R>, options: { readonly onTimeout: LazyArg<B1>; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput; }): Effect<B1 | B, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7133)
+
+Since v2.0.0

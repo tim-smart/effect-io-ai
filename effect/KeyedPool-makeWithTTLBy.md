@@ -1,4 +1,4 @@
-# makeWithTTLBy
+## makeWithTTLBy
 
 Makes a new pool with the specified minimum and maximum sizes and time to
 live before a pool whose excess items are not being used will be shrunk
@@ -9,21 +9,12 @@ unspecified order.
 
 The size of the underlying pools can be configured per key.
 
-To import and use `makeWithTTLBy` from the "KeyedPool" module:
-
-```ts
-import * as KeyedPool from "effect/KeyedPool"
-// Can be accessed like this
-KeyedPool.makeWithTTLBy
-```
-
 **Signature**
 
 ```ts
-export declare const makeWithTTLBy: <K, A, E, R>(options: {
-  readonly acquire: (key: K) => Effect.Effect<A, E, R>
-  readonly min: (key: K) => number
-  readonly max: (key: K) => number
-  readonly timeToLive: (key: K) => Duration.DurationInput
-}) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
+declare const makeWithTTLBy: <K, A, E, R>(options: { readonly acquire: (key: K) => Effect.Effect<A, E, R>; readonly min: (key: K) => number; readonly max: (key: K) => number; readonly timeToLive: (key: K) => Duration.DurationInput; }) => Effect.Effect<KeyedPool<K, A, E>, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/KeyedPool.ts#L133)
+
+Since v2.0.0

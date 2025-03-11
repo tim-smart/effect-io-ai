@@ -1,4 +1,4 @@
-# succeedNone
+## succeedNone
 
 Returns an effect which succeeds with `None`.
 
@@ -9,16 +9,16 @@ code, especially when working with optional data. This can be helpful when
 you want to indicate that no result is available without throwing an error or
 performing additional logic.
 
-To import and use `succeedNone` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.succeedNone
-```
+- `succeedSome` to create an effect that succeeds with a `Some` value.
 
 **Signature**
 
 ```ts
-export declare const succeedNone: Effect<Option.Option<never>, never, never>
+declare const succeedNone: Effect<Option.Option<never>, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3111)
+
+Since v2.0.0

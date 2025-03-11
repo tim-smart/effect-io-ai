@@ -1,17 +1,13 @@
-# readLock
+## readLock
 
 Obtains a read lock in a scoped context.
-
-To import and use `readLock` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.readLock
-```
 
 **Signature**
 
 ```ts
-export declare const readLock: (self: TReentrantLock) => Effect.Effect<number, never, Scope.Scope>
+declare const readLock: (self: TReentrantLock) => Effect.Effect<number, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L133)
+
+Since v2.0.0

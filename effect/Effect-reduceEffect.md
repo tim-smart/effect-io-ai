@@ -1,4 +1,4 @@
-# reduceEffect
+## reduceEffect
 
 Reduces an `Iterable<Effect<A, E, R>>` to a single effect.
 
@@ -15,24 +15,14 @@ specifying options such as concurrency, batching, and how finalizers behave.
 These options provide flexibility in running the effects concurrently or
 adjusting other execution details.
 
-To import and use `reduceEffect` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.reduceEffect
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
 const processOrder = (id: number) =>
-  Effect.succeed({ id, price: 100 * id }).pipe(
-    Effect.tap(() => Console.log(`Order ${id} processed`)),
-    Effect.delay(500 - id * 100)
-  )
+  Effect.succeed({ id, price: 100 * id })
+    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))
 
 const program = Effect.reduceEffect(
   [processOrder(1), processOrder(2), processOrder(3), processOrder(4)],
@@ -52,29 +42,9 @@ const program = Effect.reduceEffect(
 **Signature**
 
 ```ts
-export declare const reduceEffect: {
-  <Z, E, R, Eff extends Effect<any, any, any>>(
-    zero: Effect<Z, E, R>,
-    f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
-  <Eff extends Effect<any, any, any>, Z, E, R>(
-    elements: Iterable<Eff>,
-    zero: Effect<Z, E, R>,
-    f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z,
-    options?:
-      | {
-          readonly concurrency?: Concurrency | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>
-}
+declare const reduceEffect: { <Z, E, R, Eff extends Effect<any, any, any>>(zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z, E, R>(elements: Iterable<Eff>, zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1983)
+
+Since v2.0.0

@@ -1,17 +1,9 @@
-# interleave
+## interleave
 
 Interleaves this stream and the specified stream deterministically by
 alternating pulling values from this stream and the specified stream. When
 one stream is exhausted all remaining values in the other stream will be
 pulled.
-
-To import and use `interleave` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.interleave
-```
 
 **Example**
 
@@ -30,8 +22,9 @@ const stream = Stream.interleave(s1, s2)
 **Signature**
 
 ```ts
-export declare const interleave: {
-  <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<A | A2, E | E2, R | R2>
-}
+declare const interleave: { <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<A | A2, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2503)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# scheduleSpaced
+## scheduleSpaced
 
 Create a `MicroSchedule` that will generate a constant delay.
-
-To import and use `scheduleSpaced` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.scheduleSpaced
-```
 
 **Signature**
 
 ```ts
-export declare const scheduleSpaced: (millis: number) => MicroSchedule
+declare const scheduleSpaced: (millis: number) => MicroSchedule
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L2458)
+
+Since v3.4.6

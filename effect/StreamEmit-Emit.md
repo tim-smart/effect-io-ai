@@ -1,4 +1,4 @@
-# Emit
+## Emit
 
 An `Emit<R, E, A, B>` represents an asynchronous callback that can be
 called multiple times. The callback can be called with a value of type
@@ -7,10 +7,14 @@ indicates to emit those elements, failing with `Some<E>` indicates to
 terminate with that error, and failing with `None` indicates to terminate
 with an end of stream signal.
 
-To import and use `Emit` from the "StreamEmit" module:
+**Signature**
 
 ```ts
-import * as StreamEmit from "effect/StreamEmit"
-// Can be accessed like this
-StreamEmit.Emit
+export interface Emit<in R, in E, in A, out B> extends EmitOps<R, E, A, B> {
+  (f: Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>): Promise<B>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/StreamEmit.ts#L21)
+
+Since v2.0.0

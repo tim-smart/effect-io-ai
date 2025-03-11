@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Returns `true` if the `Queue` contains zero elements, `false` otherwise.
-
-To import and use `isEmpty` from the "PubSub" module:
-
-```ts
-import * as PubSub from "effect/PubSub"
-// Can be accessed like this
-PubSub.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: PubSub<A>) => Effect.Effect<boolean>
+declare const isEmpty: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L121)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isSuccess
+## isSuccess
 
 Returns whether this transactional effect is a success.
-
-To import and use `isSuccess` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.isSuccess
-```
 
 **Signature**
 
 ```ts
-export declare const isSuccess: <A, E, R>(self: STM<A, E, R>) => STM<boolean, never, R>
+declare const isSuccess: <A, E, R>(self: STM<A, E, R>) => STM<boolean, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1163)
+
+Since v2.0.0

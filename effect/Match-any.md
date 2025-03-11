@@ -1,17 +1,13 @@
-# any
+## any
 
 Matches any value without restrictions.
-
-To import and use `any` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.any
-```
 
 **Signature**
 
 ```ts
-export declare const any: SafeRefinement<unknown, any>
+declare const any: SafeRefinement<unknown, any>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L968)
+
+Since v1.0.0

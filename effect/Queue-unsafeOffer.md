@@ -1,20 +1,13 @@
-# unsafeOffer
+## unsafeOffer
 
 Places one value in the queue.
-
-To import and use `unsafeOffer` from the "Queue" module:
-
-```ts
-import * as Queue from "effect/Queue"
-// Can be accessed like this
-Queue.unsafeOffer
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeOffer: {
-  <A>(value: A): (self: Enqueue<A>) => boolean
-  <A>(self: Enqueue<A>, value: A): boolean
-}
+declare const unsafeOffer: { <A>(value: A): (self: Enqueue<A>) => boolean; <A>(self: Enqueue<A>, value: A): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L554)
+
+Since v2.0.0

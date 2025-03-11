@@ -1,4 +1,4 @@
-# zipWith
+## zipWith
 
 Combines two `Option` values into a new `Option` by applying a provided
 function to their values.
@@ -12,14 +12,6 @@ to their values, and the result is wrapped in a new `Some`. If either
 
 This utility is useful for combining two optional computations into a single
 result while maintaining type safety and avoiding explicit checks for `None`.
-
-To import and use `zipWith` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.zipWith
-```
 
 **Example**
 
@@ -43,8 +35,9 @@ console.log(person)
 **Signature**
 
 ```ts
-export declare const zipWith: {
-  <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>
-  <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>
-}
+declare const zipWith: { <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>; <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1455)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# encodeHex
+## encodeHex
 
 Encodes the given value into a hex `string`.
-
-To import and use `encodeHex` from the "Encoding" module:
-
-```ts
-import * as Encoding from "effect/Encoding"
-// Can be accessed like this
-Encoding.encodeHex
-```
 
 **Signature**
 
 ```ts
-export declare const encodeHex: (input: Uint8Array | string) => string
+declare const encodeHex: (input: Uint8Array | string) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L72)
+
+Since v2.0.0

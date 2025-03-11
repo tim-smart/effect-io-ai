@@ -1,17 +1,13 @@
-# isDocStream
+## isDocStream
 
 Returns `true` if the specified value is a `DocStream`, `false` otherwise.
-
-To import and use `isDocStream` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.isDocStream
-```
 
 **Signature**
 
 ```ts
-export declare const isDocStream: (u: unknown) => u is DocStream<unknown>
+declare const isDocStream: (u: unknown) => u is DocStream<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L171)
+
+Since v1.0.0

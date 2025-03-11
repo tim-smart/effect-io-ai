@@ -1,4 +1,4 @@
-# Fail
+## Fail
 
 Represents an expected error within a `Cause`.
 
@@ -8,10 +8,20 @@ This interface models a `Cause` that carries an expected or known error of
 type `E`. For example, if you validate user input and find it invalid, you
 might store that error within a `Fail`.
 
-To import and use `Fail` from the "Cause" module:
+**See**
+
+- `fail` Construct a `Fail` cause
+- `isFailType` Check if a `Cause` is a `Fail`
+
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.Fail
+export interface Fail<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, Inspectable {
+  readonly _tag: "Fail"
+  readonly error: E
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L473)
+
+Since v2.0.0

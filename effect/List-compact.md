@@ -1,17 +1,13 @@
-# compact
+## compact
 
 Removes all `None` values from the specified list.
-
-To import and use `compact` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.compact
-```
 
 **Signature**
 
 ```ts
-export declare const compact: <A>(self: List<Option.Option<A>>) => List<A>
+declare const compact: <A>(self: List<Option.Option<A>>) => List<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L617)
+
+Since v2.0.0

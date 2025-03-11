@@ -1,4 +1,4 @@
-# throttleEffect
+## throttleEffect
 
 Delays the chunks of this stream according to the given bandwidth
 parameters using the token bucket algorithm. Allows for burst in the
@@ -12,34 +12,12 @@ until they can be emitted without exceeding the bandwidth constraints.
 
 Defaults to the "shape" strategy.
 
-To import and use `throttleEffect` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.throttleEffect
-```
-
 **Signature**
 
 ```ts
-export declare const throttleEffect: {
-  <A, E2, R2>(options: {
-    readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>
-    readonly units: number
-    readonly duration: Duration.DurationInput
-    readonly burst?: number | undefined
-    readonly strategy?: "enforce" | "shape" | undefined
-  }): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>
-  <A, E, R, E2, R2>(
-    self: Stream<A, E, R>,
-    options: {
-      readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>
-      readonly units: number
-      readonly duration: Duration.DurationInput
-      readonly burst?: number | undefined
-      readonly strategy?: "enforce" | "shape" | undefined
-    }
-  ): Stream<A, E | E2, R | R2>
-}
+declare const throttleEffect: { <A, E2, R2>(options: { readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Stream<A, E, R>, options: { readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): Stream<A, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5049)
+
+Since v2.0.0

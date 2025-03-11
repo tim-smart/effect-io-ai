@@ -1,17 +1,13 @@
-# accumulateChunks
+## accumulateChunks
 
 Re-chunks the elements of the stream by accumulating each underlying chunk.
-
-To import and use `accumulateChunks` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.accumulateChunks
-```
 
 **Signature**
 
 ```ts
-export declare const accumulateChunks: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
+declare const accumulateChunks: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L189)
+
+Since v2.0.0

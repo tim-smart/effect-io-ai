@@ -1,17 +1,13 @@
-# repeated
+## repeated
 
 An annotation which counts repeated tests.
-
-To import and use `repeated` from the "TestAnnotation" module:
-
-```ts
-import * as TestAnnotation from "effect/TestAnnotation"
-// Can be accessed like this
-TestAnnotation.repeated
-```
 
 **Signature**
 
 ```ts
-export declare const repeated: TestAnnotation<number>
+declare const repeated: TestAnnotation<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestAnnotation.ts#L132)
+
+Since v2.0.0

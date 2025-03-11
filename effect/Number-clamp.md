@@ -1,4 +1,4 @@
-# clamp
+## clamp
 
 Restricts the given `number` to be within the range specified by the `minimum` and `maximum` values.
 
@@ -6,17 +6,10 @@ Restricts the given `number` to be within the range specified by the `minimum` a
 - If the `number` is greater than the `maximum` value, the function returns the `maximum` value.
 - Otherwise, it returns the original `number`.
 
-To import and use `clamp` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.clamp
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Number } from "effect"
 
 const clamp = Number.clamp({ minimum: 1, maximum: 5 })
@@ -29,8 +22,9 @@ assert.equal(clamp(6), 5)
 **Signature**
 
 ```ts
-export declare const clamp: {
-  (options: { minimum: number; maximum: number }): (self: number) => number
-  (self: number, options: { minimum: number; maximum: number }): number
-}
+declare const clamp: { (options: { minimum: number; maximum: number; }): (self: number) => number; (self: number, options: { minimum: number; maximum: number; }): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L312)
+
+Since v2.0.0

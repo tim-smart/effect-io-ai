@@ -1,160 +1,96 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-pg",
-    "name": "From \"./PgClient.js\"",
-    "description": "Re-exports all named exports from the \"./PgClient.js\" module as `PgClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as PgClient from \"./PgClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-pg",
-    "name": "From \"./PgMigrator.js\"",
-    "description": "Re-exports all named exports from the \"./PgMigrator.js\" module as `PgMigrator`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as PgMigrator from \"./PgMigrator.js\""
-  },
-  {
     "_tag": "Constant",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "PgClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const PgClient: Context.Tag<PgClient, PgClient>"
+    "signature": "declare const PgClient: Context.Tag<PgClient, PgClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: PgClientConfig) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<PgClientConfig>) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (config: PgClientConfig) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "makeCompiler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": null
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "PgClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -164,15 +100,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "PgClientConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -182,109 +114,57 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
-    },
-    "project": "@effect/sql-pg",
-    "name": "PgCustom",
-    "description": null,
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "custom types",
-    "signature": "export type PgCustom = PgJson | PgArray"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "PgClient",
-      "path": [
-        "src",
-        "PgClient.ts"
-      ]
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
     },
     "project": "@effect/sql-pg",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "PgClient.ts",
+      "path": "src/PgClient.ts"
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgCustom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "custom types",
+    "signature": "type PgCustom = PgJson | PgArray"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "PgMigrator",
-      "path": [
-        "src",
-        "PgMigrator.ts"
-      ]
+      "name": "PgMigrator.ts",
+      "path": "src/PgMigrator.ts"
     },
     "project": "@effect/sql-pg",
     "name": "run",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | PgClient | Client.SqlClient | CommandExecutor | R2>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "PgMigrator",
-      "path": [
-        "src",
-        "PgMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-pg",
-    "name": "From \"@effect/sql/Migrator\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "PgMigrator",
-      "path": [
-        "src",
-        "PgMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-pg",
-    "name": "From \"@effect/sql/Migrator/FileSystem\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+    "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | PgClient | Client.SqlClient | CommandExecutor | R2>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "PgMigrator",
-      "path": [
-        "src",
-        "PgMigrator.ts"
-      ]
+      "name": "PgMigrator.ts",
+      "path": "src/PgMigrator.ts"
     },
     "project": "@effect/sql-pg",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, PgClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>"
   }
 ]

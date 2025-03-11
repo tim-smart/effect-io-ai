@@ -1,16 +1,8 @@
-# structured
+## structured
 
 The structured logger provides detailed log outputs, structured in a way that
 retains comprehensive traceability of the events, suitable for deeper
 analysis and troubleshooting.
-
-To import and use `structured` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.structured
-```
 
 **Example**
 
@@ -37,5 +29,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const structured: Layer.Layer<never, never, never>
+declare const structured: Layer.Layer<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L670)
+
+Since v2.0.0

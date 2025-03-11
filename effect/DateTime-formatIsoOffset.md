@@ -1,17 +1,13 @@
-# formatIsoOffset
+## formatIsoOffset
 
 Format a `DateTime.Zoned` as a ISO string with an offset.
-
-To import and use `formatIsoOffset` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.formatIsoOffset
-```
 
 **Signature**
 
 ```ts
-export declare const formatIsoOffset: (self: DateTime) => string
+declare const formatIsoOffset: (self: DateTime) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1539)
+
+Since v3.6.0

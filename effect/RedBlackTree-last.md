@@ -1,17 +1,13 @@
-# last
+## last
 
 Returns the last entry in the tree, if it exists.
-
-To import and use `last` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.last
-```
 
 **Signature**
 
 ```ts
-export declare const last: <K, V>(self: RedBlackTree<K, V>) => Option<[K, V]>
+declare const last: <K, V>(self: RedBlackTree<K, V>) => Option<[K, V]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L262)
+
+Since v2.0.0

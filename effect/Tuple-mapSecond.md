@@ -1,22 +1,15 @@
-# mapSecond
+## mapSecond
 
 Transforms the second component of a tuple using a given function.
-
-To import and use `mapSecond` from the "Tuple" module:
-
-```ts
-import * as Tuple from "effect/Tuple"
-// Can be accessed like this
-Tuple.mapSecond
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { mapSecond } from "effect/Tuple"
 
 assert.deepStrictEqual(
-  mapSecond(["hello", 42], (n) => n.toString()),
+  mapSecond(["hello", 42], n => n.toString()),
   ["hello", "42"]
 )
 ```
@@ -24,8 +17,9 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const mapSecond: {
-  <R1, R2>(f: (right: R1) => R2): <L>(self: readonly [L, R1]) => [L, R2]
-  <L, R1, R2>(self: readonly [L, R1], f: (right: R1) => R2): [L, R2]
-}
+declare const mapSecond: { <R1, R2>(f: (right: R1) => R2): <L>(self: readonly [L, R1]) => [L, R2]; <L, R1, R2>(self: readonly [L, R1], f: (right: R1) => R2): [L, R2]; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L178)
+
+Since v2.0.0

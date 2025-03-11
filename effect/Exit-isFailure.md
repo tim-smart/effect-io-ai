@@ -1,17 +1,13 @@
-# isFailure
+## isFailure
 
 Returns `true` if the specified `Exit` is a `Failure`, `false` otherwise.
-
-To import and use `isFailure` from the "Exit" module:
-
-```ts
-import * as Exit from "effect/Exit"
-// Can be accessed like this
-Exit.isFailure
-```
 
 **Signature**
 
 ```ts
-export declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
+declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L94)
+
+Since v2.0.0

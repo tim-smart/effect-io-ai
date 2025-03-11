@@ -1,4 +1,4 @@
-# forever
+## forever
 
 Repeats an effect indefinitely until an error occurs.
 
@@ -15,16 +15,12 @@ continuous polling tasks, but you should ensure proper error handling or
 combine it with other operators like `timeout` or `schedule` to prevent
 unintentional infinite loops.
 
-To import and use `forever` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.forever
-```
-
 **Signature**
 
 ```ts
-export declare const forever: <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
+declare const forever: <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9684)
+
+Since v2.0.0

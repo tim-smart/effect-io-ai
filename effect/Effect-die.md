@@ -1,4 +1,4 @@
-# die
+## die
 
 Creates an effect that terminates a fiber with a specified error.
 
@@ -17,14 +17,6 @@ Use this function when encountering unexpected conditions in your code that
 should not be handled as regular errors but instead represent unrecoverable
 defects.
 
-To import and use `die` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.die
-```
-
 **Example**
 
 ```ts
@@ -32,7 +24,9 @@ Effect.die
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
-  b === 0 ? Effect.die(new Error("Cannot divide by zero")) : Effect.succeed(a / b)
+  b === 0
+    ? Effect.die(new Error("Cannot divide by zero"))
+    : Effect.succeed(a / b)
 
 //      ┌─── Effect<number, never, never>
 //      ▼
@@ -44,8 +38,19 @@ const program = divide(1, 0)
 //   ...stack trace...
 ```
 
+**See**
+
+- `dieSync` for a variant that throws a specified error, evaluated
+lazily.
+- `dieMessage` for a variant that throws a `RuntimeException` with a
+message.
+
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Effect<never>
+declare const die: (defect: unknown) => Effect<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2582)
+
+Since v2.0.0

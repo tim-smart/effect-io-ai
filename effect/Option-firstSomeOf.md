@@ -1,4 +1,4 @@
-# firstSomeOf
+## firstSomeOf
 
 Returns the first `Some` value found in an `Iterable` collection of
 `Option`s, or `None` if no `Some` is found.
@@ -14,27 +14,25 @@ options.
 The iteration stops as soon as a `Some` is found, making this function
 efficient for large collections.
 
-To import and use `firstSomeOf` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.firstSomeOf
-```
-
 **Example**
 
 ```ts
 import { Option } from "effect"
 
-console.log(Option.firstSomeOf([Option.none(), Option.some(1), Option.some(2)]))
+console.log(Option.firstSomeOf([
+  Option.none(),
+  Option.some(1),
+  Option.some(2)
+]))
 // Output: { _id: 'Option', _tag: 'Some', value: 1 }
 ```
 
 **Signature**
 
 ```ts
-export declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(
-  collection: C
-) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
+declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(collection: C) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L651)
+
+Since v2.0.0

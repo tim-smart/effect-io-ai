@@ -1,17 +1,13 @@
-# dieSync
+## dieSync
 
 Constructs a layer that dies with the specified defect.
-
-To import and use `dieSync` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.dieSync
-```
 
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Layer<unknown>
+declare const dieSync: (evaluate: LazyArg<unknown>) => Layer<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L255)
+
+Since v2.0.0

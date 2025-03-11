@@ -1,10 +1,10 @@
-# retry
+## retry
 
 Retries a failing effect based on a defined retry policy.
 
 **Details**
 
-The `Effect.retry` function takes an effect and a {@link Schedule} policy,
+The `Effect.retry` function takes an effect and a `Schedule` policy,
 and will automatically retry the effect if it fails, following the rules of
 the policy.
 
@@ -19,14 +19,6 @@ This can be useful when dealing with intermittent failures, such as network
 issues or temporary resource unavailability. By defining a retry policy, you
 can control the number of retries, the delay between them, and when to stop
 retrying.
-
-To import and use `retry` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.retry
-```
 
 **Example**
 
@@ -122,18 +114,17 @@ const program = Effect.retry(action, {
 // }
 ```
 
+**See**
+
+- `retryOrElse` for a version that allows you to run a fallback.
+- `repeat` if your retry condition is based on successful outcomes rather than errors.
+
 **Signature**
 
 ```ts
-export declare const retry: {
-  <E, O extends NoExcessProperties<Retry.Options<E>, O>>(
-    options: O
-  ): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>
-  <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>
-  <A, E, R, O extends NoExcessProperties<Retry.Options<E>, O>>(
-    self: Effect<A, E, R>,
-    options: O
-  ): Retry.Return<R, E, A, O>
-  <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, E, R1>): Effect<A, E, R1 | R>
-}
+declare const retry: { <E, O extends NoExcessProperties<Retry.Options<E>, O>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Retry.Options<E>, O>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, E, R1>): Effect<A, E, R1 | R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4327)
+
+Since v2.0.0

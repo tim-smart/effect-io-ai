@@ -1,17 +1,13 @@
-# isPageWidth
+## isPageWidth
 
 Returns `true` if the specified value is a `PageWidth`, `false` otherwise.
-
-To import and use `isPageWidth` from the "PageWidth" module:
-
-```ts
-import * as PageWidth from "@effect/printer/PageWidth"
-// Can be accessed like this
-PageWidth.isPageWidth
-```
 
 **Signature**
 
 ```ts
-export declare const isPageWidth: (u: unknown) => u is PageWidth
+declare const isPageWidth: (u: unknown) => u is PageWidth
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L90)
+
+Since v1.0.0

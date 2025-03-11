@@ -1,18 +1,14 @@
-# succeed
+## succeed
 
 Returns a schedule that recurs indefinitely, always producing the specified
 constant value.
 
-To import and use `succeed` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.succeed
-```
-
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Schedule<A>
+declare const succeed: <A>(value: A) => Schedule<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1772)
+
+Since v2.0.0

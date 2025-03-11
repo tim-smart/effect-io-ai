@@ -1,4 +1,4 @@
-# andThen
+## andThen
 
 Runs two schedules sequentially, merging their outputs.
 
@@ -6,31 +6,24 @@ Runs two schedules sequentially, merging their outputs.
 
 This function executes two schedules one after the other. The first schedule
 runs to completion, and then the second schedule begins execution. Unlike
-{@link andThenEither}, this function merges the outputs instead of wrapping
+`andThenEither`, this function merges the outputs instead of wrapping
 them in `Either`, allowing both schedules to contribute their results
 directly.
 
 This is useful when a workflow consists of two phases where the second phase
 should start only after the first one has fully completed.
 
-To import and use `andThen` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.andThen
-```
+- `andThenEither` If you need to keep track of which schedule
+produced each result.
 
 **Signature**
 
 ```ts
-export declare const andThen: {
-  <Out2, In2, R2>(
-    that: Schedule<Out2, In2, R2>
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out2 | Out, In & In2, R2 | R>
-  <Out, In, R, Out2, In2, R2>(
-    self: Schedule<Out, In, R>,
-    that: Schedule<Out2, In2, R2>
-  ): Schedule<Out | Out2, In & In2, R | R2>
-}
+declare const andThen: { <Out2, In2, R2>(that: Schedule<Out2, In2, R2>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out2 | Out, In & In2, R2 | R>; <Out, In, R, Out2, In2, R2>(self: Schedule<Out, In, R>, that: Schedule<Out2, In2, R2>): Schedule<Out | Out2, In & In2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L247)
+
+Since v2.0.0

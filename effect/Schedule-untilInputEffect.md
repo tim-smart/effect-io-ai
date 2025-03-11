@@ -1,4 +1,4 @@
-# untilInputEffect
+## untilInputEffect
 
 Returns a new schedule that stops execution when the given effectful
 predicate on the input evaluates to `true`.
@@ -10,24 +10,16 @@ only while the provided effectful predicate returns `false` for incoming
 inputs. The predicate is an `Effect`, meaning it can involve asynchronous
 computations or dependency-based logic.
 
-To import and use `untilInputEffect` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.untilInputEffect
-```
+- `untilInput` If you need to use a pure predicate.
 
 **Signature**
 
 ```ts
-export declare const untilInputEffect: {
-  <In, R2>(
-    f: (input: In) => Effect.Effect<boolean, never, R2>
-  ): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>
-  <Out, In, R, R2>(
-    self: Schedule<Out, In, R>,
-    f: (input: In) => Effect.Effect<boolean, never, R2>
-  ): Schedule<Out, In, R | R2>
-}
+declare const untilInputEffect: { <In, R2>(f: (input: In) => Effect.Effect<boolean, never, R2>): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>; <Out, In, R, R2>(self: Schedule<Out, In, R>, f: (input: In) => Effect.Effect<boolean, never, R2>): Schedule<Out, In, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1948)
+
+Since v2.0.0

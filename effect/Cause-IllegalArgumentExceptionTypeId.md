@@ -1,4 +1,4 @@
-# IllegalArgumentExceptionTypeId
+## IllegalArgumentExceptionTypeId
 
 A unique symbol identifying the `IllegalArgumentException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies an `IllegalArgumentException`. This is
 often used in scenarios where invalid arguments are supplied to methods that
 expect specific input.
 
-To import and use `IllegalArgumentExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.IllegalArgumentExceptionTypeId
-```
+- `IllegalArgumentException` Create or work with an `IllegalArgumentException`
 
 **Signature**
 
 ```ts
-export declare const IllegalArgumentExceptionTypeId: typeof IllegalArgumentExceptionTypeId
+declare const IllegalArgumentExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L121)
+
+Since v2.0.0

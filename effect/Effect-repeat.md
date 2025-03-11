@@ -1,4 +1,4 @@
-# repeat
+## repeat
 
 Repeats an effect based on a specified schedule or until the first failure.
 
@@ -20,14 +20,6 @@ performing a series of dependent actions.
 You can combine schedules for more advanced repetition logic, such as adding
 delays, limiting recursions, or dynamically adjusting based on the outcome of
 each execution.
-
-To import and use `repeat` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.repeat
-```
 
 **Example**
 
@@ -71,15 +63,9 @@ const program = Effect.repeat(action, policy)
 **Signature**
 
 ```ts
-export declare const repeat: {
-  <O extends NoExcessProperties<Repeat.Options<A>, O>, A>(
-    options: O
-  ): <E, R>(self: Effect<A, E, R>) => Repeat.Return<R, E, A, O>
-  <B, A, R1>(schedule: Schedule.Schedule<B, A, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R1 | R>
-  <A, E, R, O extends NoExcessProperties<Repeat.Options<A>, O>>(
-    self: Effect<A, E, R>,
-    options: O
-  ): Repeat.Return<R, E, A, O>
-  <A, E, R, B, R1>(self: Effect<A, E, R>, schedule: Schedule.Schedule<B, A, R1>): Effect<B, E, R | R1>
-}
+declare const repeat: { <O extends NoExcessProperties<Repeat.Options<A>, O>, A>(options: O): <E, R>(self: Effect<A, E, R>) => Repeat.Return<R, E, A, O>; <B, A, R1>(schedule: Schedule.Schedule<B, A, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Repeat.Options<A>, O>>(self: Effect<A, E, R>, options: O): Repeat.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, schedule: Schedule.Schedule<B, A, R1>): Effect<B, E, R | R1>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9988)
+
+Since v2.0.0

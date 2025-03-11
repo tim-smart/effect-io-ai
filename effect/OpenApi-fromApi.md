@@ -1,4 +1,4 @@
-# fromApi
+## fromApi
 
 Converts an `HttpApi` instance into an OpenAPI Specification object.
 
@@ -22,14 +22,6 @@ and overrides. Cached results are used for better performance when the same
   - `"strict"`: Disallow additional properties (default behavior).
   - `"allow"`: Allow additional properties.
 
-To import and use `fromApi` from the "OpenApi" module:
-
-```ts
-import * as OpenApi from "@effect/platform/OpenApi"
-// Can be accessed like this
-OpenApi.fromApi
-```
-
 **Example**
 
 ```ts
@@ -37,7 +29,10 @@ import { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from "@effect/platfor
 import { Schema } from "effect"
 
 const api = HttpApi.make("api").add(
-  HttpApiGroup.make("group").add(HttpApiEndpoint.get("get", "/items").addSuccess(Schema.Array(Schema.String)))
+  HttpApiGroup.make("group").add(
+    HttpApiEndpoint.get("get", "/items")
+      .addSuccess(Schema.Array(Schema.String))
+  )
 )
 
 const spec = OpenApi.fromApi(api)
@@ -49,8 +44,9 @@ const spec = OpenApi.fromApi(api)
 **Signature**
 
 ```ts
-export declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any, E, R>(
-  api: HttpApi.HttpApi<Id, Groups, E, R>,
-  options?: { readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined } | undefined
-) => OpenAPISpec
+declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>, options?: { readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined; } | undefined) => OpenAPISpec
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L228)
+
+Since v1.0.0

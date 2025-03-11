@@ -1,4 +1,4 @@
-# flip
+## flip
 
 Swaps the success and error channels of an effect.
 
@@ -7,14 +7,6 @@ Swaps the success and error channels of an effect.
 This function reverses the flow of an effect by swapping its success and
 error channels. The success value becomes an error, and the error value
 becomes a success.
-
-To import and use `flip` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.flip
-```
 
 **Example**
 
@@ -33,5 +25,9 @@ const flipped = Effect.flip(program)
 **Signature**
 
 ```ts
-export declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
+declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5008)
+
+Since v2.0.0

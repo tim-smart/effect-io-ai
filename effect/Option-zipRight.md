@@ -1,4 +1,4 @@
-# zipRight
+## zipRight
 
 Combines two `Option`s, keeping the value from the second `Option` if both
 are `Some`.
@@ -14,19 +14,12 @@ This is particularly useful when sequencing computations where the result of
 the first computation is not needed, and you only care about the result of
 the second computation.
 
-To import and use `zipRight` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.zipRight
-```
-
 **Signature**
 
 ```ts
-export declare const zipRight: {
-  <B>(that: Option<B>): <_>(self: Option<_>) => Option<B>
-  <X, B>(self: Option<X>, that: Option<B>): Option<B>
-}
+declare const zipRight: { <B>(that: Option<B>): <_>(self: Option<_>) => Option<B>; <X, B>(self: Option<X>, that: Option<B>): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1190)
+
+Since v2.0.0

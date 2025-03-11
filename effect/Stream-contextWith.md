@@ -1,17 +1,13 @@
-# contextWith
+## contextWith
 
 Accesses the context of the stream.
-
-To import and use `contextWith` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.contextWith
-```
 
 **Signature**
 
 ```ts
-export declare const contextWith: <R, A>(f: (env: Context.Context<R>) => A) => Stream<A, never, R>
+declare const contextWith: <R, A>(f: (env: Context.Context<R>) => A) => Stream<A, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1530)
+
+Since v2.0.0

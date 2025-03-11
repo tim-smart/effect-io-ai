@@ -1,18 +1,11 @@
-# constFalse
+## constFalse
 
 A thunk that returns always `false`.
-
-To import and use `constFalse` from the "Function" module:
-
-```ts
-import * as Function from "effect/Function"
-// Can be accessed like this
-Function.constFalse
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { constFalse } from "effect/Function"
 
 assert.deepStrictEqual(constFalse(), false)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(constFalse(), false)
 **Signature**
 
 ```ts
-export declare const constFalse: LazyArg<boolean>
+declare const constFalse: LazyArg<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L301)
+
+Since v2.0.0

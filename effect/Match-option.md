@@ -1,4 +1,4 @@
-# option
+## option
 
 Wraps the match result in an `Option`, representing an optional match.
 
@@ -11,14 +11,6 @@ it returns `Some(value)`, otherwise, it returns `None`.
 This is useful in cases where a missing match is expected and should be
 handled explicitly rather than throwing an error or returning a default
 value.
-
-To import and use `option` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.option
-```
 
 **Example**
 
@@ -45,7 +37,9 @@ console.log(getRole({ role: "viewer" }))
 **Signature**
 
 ```ts
-export declare const option: <I, F, R, A, Pr, Ret>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => [Pr] extends [never] ? (input: I) => Option.Option<Unify<A>> : Option.Option<Unify<A>>
+declare const option: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Option.Option<Unify<A>> : Option.Option<Unify<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1198)
+
+Since v1.0.0

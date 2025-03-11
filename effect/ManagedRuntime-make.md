@@ -1,15 +1,7 @@
-# make
+## make
 
 Convert a Layer into an ManagedRuntime, that can be used to run Effect's using
 your services.
-
-To import and use `make` from the "ManagedRuntime" module:
-
-```ts
-import * as ManagedRuntime from "effect/ManagedRuntime"
-// Can be accessed like this
-ManagedRuntime.make
-```
 
 **Example**
 
@@ -35,8 +27,9 @@ main()
 **Signature**
 
 ```ts
-export declare const make: <R, E>(
-  layer: Layer.Layer<R, E, never>,
-  memoMap?: Layer.MemoMap | undefined
-) => ManagedRuntime<R, E>
+declare const make: <R, E>(layer: Layer.Layer<R, E, never>, memoMap?: Layer.MemoMap | undefined) => ManagedRuntime<R, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ManagedRuntime.ts#L177)
+
+Since v2.0.0

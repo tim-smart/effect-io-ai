@@ -1,17 +1,13 @@
-# check
+## check
 
 Checks the condition, and if it's true, returns unit, otherwise, retries.
-
-To import and use `check` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.check
-```
 
 **Signature**
 
 ```ts
-export declare const check: (predicate: LazyArg<boolean>) => STM<void>
+declare const check: (predicate: LazyArg<boolean>) => STM<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L394)
+
+Since v2.0.0

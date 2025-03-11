@@ -1,11 +1,15 @@
-# FailedStream
+## FailedStream
 
 Represents a `Doc` that failed to be laid out.
 
-To import and use `FailedStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.FailedStream
+export interface FailedStream<A> extends DocStream.Variance<A> {
+  readonly _tag: "FailedStream"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L86)
+
+Since v1.0.0

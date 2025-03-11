@@ -1,17 +1,13 @@
-# make
+## make
 
 Creates a new `Deferred`.
-
-To import and use `make` from the "Deferred" module:
-
-```ts
-import * as Deferred from "effect/Deferred"
-// Can be accessed like this
-Deferred.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <A, E = never>() => Effect.Effect<Deferred<A, E>>
+declare const make: <A, E = never>() => Effect.Effect<Deferred<A, E>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L88)
+
+Since v2.0.0

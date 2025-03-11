@@ -1,24 +1,13 @@
-# traverseFilterMap
+## traverseFilterMap
 
 Returns a default binary `traverseFilterMap` implementation.
-
-To import and use `traverseFilterMap` from the "TraversableFilterable" module:
-
-```ts
-import * as TraversableFilterable from "@effect/typeclass/TraversableFilterable"
-// Can be accessed like this
-TraversableFilterable.traverseFilterMap
-```
 
 **Signature**
 
 ```ts
-export declare const traverseFilterMap: <T extends TypeLambda>(
-  T: Traversable<T> & Filterable<T>
-) => <F extends TypeLambda>(
-  F: Applicative<F>
-) => <TR, TO, TE, A, R, O, E, B>(
-  self: Kind<T, TR, TO, TE, A>,
-  f: (a: A) => Kind<F, R, O, E, Option<B>>
-) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>
+declare const traverseFilterMap: <T extends TypeLambda>(T: Traversable<T> & Filterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, Option<B>>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L71)
+
+Since v0.24.0

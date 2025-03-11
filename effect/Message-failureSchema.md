@@ -1,17 +1,13 @@
-# failureSchema
+## failureSchema
 
 Extracts the failure schema from a Message. This schema will be used to encode remote failures of the Message processor.
-
-To import and use `failureSchema` from the "Message" module:
-
-```ts
-import * as Message from "@effect/cluster/Message"
-// Can be accessed like this
-Message.failureSchema
-```
 
 **Signature**
 
 ```ts
-export declare const failureSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Error<A>, unknown>
+declare const failureSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Error<A>, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L121)
+
+Since v1.0.0

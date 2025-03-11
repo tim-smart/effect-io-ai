@@ -1,17 +1,13 @@
-# isRuntime
+## isRuntime
 
 Returns `true` if the `FiberId` is a `Runtime`, `false` otherwise.
-
-To import and use `isRuntime` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.isRuntime
-```
 
 **Signature**
 
 ```ts
-export declare const isRuntime: (self: FiberId) => self is Runtime
+declare const isRuntime: (self: FiberId) => self is Runtime
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L108)
+
+Since v2.0.0

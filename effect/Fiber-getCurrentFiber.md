@@ -1,17 +1,13 @@
-# getCurrentFiber
+## getCurrentFiber
 
 Gets the current fiber if one is running.
-
-To import and use `getCurrentFiber` from the "Fiber" module:
-
-```ts
-import * as Fiber from "effect/Fiber"
-// Can be accessed like this
-Fiber.getCurrentFiber
-```
 
 **Signature**
 
 ```ts
-export declare const getCurrentFiber: () => Option.Option<RuntimeFiber<any, any>>
+declare const getCurrentFiber: () => Option.Option<RuntimeFiber<any, any>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L432)
+
+Since v2.0.0

@@ -1,19 +1,13 @@
-# EntityRegistered
+## EntityRegistered
 
 Constructs and event that occurs when a new EntityType gets registered.
-
-To import and use `EntityRegistered` from the "ShardingRegistrationEvent" module:
-
-```ts
-import * as ShardingRegistrationEvent from "@effect/cluster/ShardingRegistrationEvent"
-// Can be accessed like this
-ShardingRegistrationEvent.EntityRegistered
-```
 
 **Signature**
 
 ```ts
-export declare function EntityRegistered<Msg extends Message.Message.Any>(
-  entityType: RecipientType.EntityType<Msg>
-): ShardingRegistrationEvent
+declare const EntityRegistered: <Msg extends Message.Message.Any>(entityType: RecipientType.EntityType<Msg>) => ShardingRegistrationEvent
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L18)
+
+Since v1.0.0

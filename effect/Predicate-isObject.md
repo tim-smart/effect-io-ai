@@ -1,18 +1,11 @@
-# isObject
+## isObject
 
 Tests if a value is an `object`.
-
-To import and use `isObject` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isObject
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isObject } from "effect/Predicate"
 
 assert.deepStrictEqual(isObject({}), true)
@@ -25,5 +18,9 @@ assert.deepStrictEqual(isObject(undefined), false)
 **Signature**
 
 ```ts
-export declare const isObject: (input: unknown) => input is object
+declare const isObject: (input: unknown) => input is object
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L455)
+
+Since v2.0.0

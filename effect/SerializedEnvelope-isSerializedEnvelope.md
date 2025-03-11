@@ -1,17 +1,13 @@
-# isSerializedEnvelope
+## isSerializedEnvelope
 
 Ensures that the given value is a SerializedEnvelope.
-
-To import and use `isSerializedEnvelope` from the "SerializedEnvelope" module:
-
-```ts
-import * as SerializedEnvelope from "@effect/cluster/SerializedEnvelope"
-// Can be accessed like this
-SerializedEnvelope.isSerializedEnvelope
-```
 
 **Signature**
 
 ```ts
-export declare function isSerializedEnvelope(value: unknown): value is SerializedEnvelope
+declare const isSerializedEnvelope: (value: unknown) => value is SerializedEnvelope
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L91)
+
+Since v1.0.0

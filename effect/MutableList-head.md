@@ -1,17 +1,13 @@
-# head
+## head
 
 Returns the first element of the list, if it exists.
-
-To import and use `head` from the "MutableList" module:
-
-```ts
-import * as MutableList from "effect/MutableList"
-// Can be accessed like this
-MutableList.head
-```
 
 **Signature**
 
 ```ts
-export declare const head: <A>(self: MutableList<A>) => A | undefined
+declare const head: <A>(self: MutableList<A>) => A | undefined
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L160)
+
+Since v2.0.0

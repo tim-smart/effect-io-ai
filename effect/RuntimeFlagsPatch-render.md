@@ -1,17 +1,13 @@
-# render
+## render
 
 Renders the provided `RuntimeFlagsPatch` to a string.
-
-To import and use `render` from the "RuntimeFlagsPatch" module:
-
-```ts
-import * as RuntimeFlagsPatch from "effect/RuntimeFlagsPatch"
-// Can be accessed like this
-RuntimeFlagsPatch.render
-```
 
 **Signature**
 
 ```ts
-export declare const render: (self: RuntimeFlagsPatch) => string
+declare const render: (self: RuntimeFlagsPatch) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlagsPatch.ts#L183)
+
+Since v2.0.0

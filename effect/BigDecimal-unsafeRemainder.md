@@ -1,20 +1,13 @@
-# unsafeRemainder
+## unsafeRemainder
 
 Returns the remainder left over when one operand is divided by a second operand.
 
 Throws a `RangeError` if the divisor is `0`.
 
-To import and use `unsafeRemainder` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.unsafeRemainder
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { unsafeRemainder, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(unsafeRemainder(unsafeFromString("2"), unsafeFromString("2")), unsafeFromString("0"))
@@ -25,8 +18,9 @@ assert.deepStrictEqual(unsafeRemainder(unsafeFromString("-4"), unsafeFromString(
 **Signature**
 
 ```ts
-export declare const unsafeRemainder: {
-  (divisor: BigDecimal): (self: BigDecimal) => BigDecimal
-  (self: BigDecimal, divisor: BigDecimal): BigDecimal
-}
+declare const unsafeRemainder: { (divisor: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, divisor: BigDecimal): BigDecimal; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L755)
+
+Since v2.0.0

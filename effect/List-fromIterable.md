@@ -1,17 +1,13 @@
-# fromIterable
+## fromIterable
 
 Creates a new `List` from an iterable collection of values.
-
-To import and use `fromIterable` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.fromIterable
-```
 
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(prefix: Iterable<A>) => List<A>
+declare const fromIterable: <A>(prefix: Iterable<A>) => List<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L285)
+
+Since v2.0.0

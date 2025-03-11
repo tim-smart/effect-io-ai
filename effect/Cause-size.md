@@ -1,4 +1,4 @@
-# size
+## size
 
 Calculates the size of a `Cause`.
 
@@ -7,16 +7,12 @@ Calculates the size of a `Cause`.
 This function returns the total number of `Cause` nodes in the semiring
 structure, reflecting how many individual error elements are recorded.
 
-To import and use `size` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.size
-```
-
 **Signature**
 
 ```ts
-export declare const size: <E>(self: Cause<E>) => number
+declare const size: <E>(self: Cause<E>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L735)
+
+Since v2.0.0

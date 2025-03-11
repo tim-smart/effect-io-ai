@@ -1,4 +1,4 @@
-# debounce
+## debounce
 
 Delays the emission of values by holding new values for a set duration. If
 no new values arrive during that time the value is emitted, however if a
@@ -9,14 +9,6 @@ This operator is useful if you have a stream of "bursty" events which
 eventually settle down and you only need the final event of the burst. For
 example, a search engine may only want to initiate a search after a user
 has paused typing so as to not prematurely recommend results.
-
-To import and use `debounce` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.debounce
-```
 
 **Example**
 
@@ -63,8 +55,9 @@ const stream = Stream.make(1, 2, 3).pipe(
 **Signature**
 
 ```ts
-export declare const debounce: {
-  (duration: Duration.DurationInput): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
-  <A, E, R>(self: Stream<A, E, R>, duration: Duration.DurationInput): Stream<A, E, R>
-}
+declare const debounce: { (duration: Duration.DurationInput): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, duration: Duration.DurationInput): Stream<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1238)
+
+Since v2.0.0

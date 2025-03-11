@@ -1,19 +1,21 @@
-# ExtractTag
+## ExtractTag
 
 Extracts the type of the given tag.
-
-To import and use `ExtractTag` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.ExtractTag
-```
 
 **Example**
 
 ```ts
 import type { Types } from "effect"
 
-type Res = Types.ExtractTag<{ _tag: "a"; a: number } | { _tag: "b"; b: number }, "b"> // { _tag: "b", b: number }
+type Res = Types.ExtractTag<{ _tag: "a", a: number } | { _tag: "b", b: number }, "b"> // { _tag: "b", b: number }
 ```
+
+**Signature**
+
+```ts
+type ExtractTag<E, K> = Extract<E, { _tag: K }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L100)
+
+Since v2.0.0

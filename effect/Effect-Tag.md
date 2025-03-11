@@ -1,4 +1,4 @@
-# Tag
+## Tag
 
 Creates a unique tag for a dependency, embedding the service's methods as
 static properties.
@@ -14,14 +14,6 @@ contexts.
 In the example below, the fields of the service (in this case, the `notify`
 method) are turned into static properties of the Notifications class, making
 it easier to access them.
-
-To import and use `Tag` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.Tag
-```
 
 **Example**
 
@@ -40,16 +32,9 @@ const action = Notifications.notify("Hello, world!")
 **Signature**
 
 ```ts
-export declare const Tag: <const Id extends string>(
-  id: Id
-) => <Self, Type extends Tag.AllowedType>() => Context.TagClass<Self, Id, Type> &
-  (Type extends Record<PropertyKey, any> ? Tag.Proxy<Self, Type> : {}) & {
-    use: <X>(
-      body: (_: Type) => X
-    ) => [X] extends [Effect<infer A, infer E, infer R>]
-      ? Effect<A, E, R | Self>
-      : [X] extends [PromiseLike<infer A>]
-        ? Effect<A, Cause.UnknownException, Self>
-        : Effect<X, never, Self>
-  }
+declare const Tag: <const Id extends string>(id: Id) => <Self, Type extends Tag.AllowedType>() => Context.TagClass<Self, Id, Type> & (Type extends Record<PropertyKey, any> ? Tag.Proxy<Self, Type> : {}) & { use: <X>(body: (_: Type) => X) => [X] extends [Effect<infer A, infer E, infer R>] ? Effect<A, E, R | Self> : [X] extends [PromiseLike<infer A>] ? Effect<A, Cause.UnknownException, Self> : Effect<X, never, Self>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13168)
+
+Since v2.0.0

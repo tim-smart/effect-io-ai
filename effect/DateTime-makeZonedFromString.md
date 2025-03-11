@@ -1,19 +1,15 @@
-# makeZonedFromString
+## makeZonedFromString
 
 Create a `DateTime.Zoned` from a string.
 
 It uses the format: `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]`.
 
-To import and use `makeZonedFromString` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.makeZonedFromString
-```
-
 **Signature**
 
 ```ts
-export declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
+declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L410)
+
+Since v3.6.0

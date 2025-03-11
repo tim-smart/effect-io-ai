@@ -1,4 +1,4 @@
-# ExceededCapacityExceptionTypeId
+## ExceededCapacityExceptionTypeId
 
 A unique symbol identifying the `ExceededCapacityException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies an `ExceededCapacityException`. It
 denotes situations where a resource has exceeded its configured capacity
 limit.
 
-To import and use `ExceededCapacityExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.ExceededCapacityExceptionTypeId
-```
+- `ExceededCapacityException` Create or work with an `ExceededCapacityException`
 
 **Signature**
 
 ```ts
-export declare const ExceededCapacityExceptionTypeId: typeof ExceededCapacityExceptionTypeId
+declare const ExceededCapacityExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L187)
+
+Since v3.5.0

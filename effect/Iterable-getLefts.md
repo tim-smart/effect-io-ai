@@ -1,25 +1,25 @@
-# getLefts
+## getLefts
 
 Retrieves the `Left` values from an `Iterable` of `Either`s.
-
-To import and use `getLefts` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.getLefts
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Iterable, Either } from "effect"
 
-assert.deepStrictEqual(Array.from(Iterable.getLefts([Either.right(1), Either.left("err"), Either.right(2)])), ["err"])
+assert.deepStrictEqual(
+  Array.from(Iterable.getLefts([Either.right(1), Either.left("err"), Either.right(2)])),
+  ["err"]
+)
 ```
 
 **Signature**
 
 ```ts
-export declare const getLefts: <R, L>(self: Iterable<Either<R, L>>) => Iterable<L>
+declare const getLefts: <R, L>(self: Iterable<Either<R, L>>) => Iterable<L>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L870)
+
+Since v2.0.0

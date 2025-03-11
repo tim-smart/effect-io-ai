@@ -1,17 +1,13 @@
-# some
+## some
 
 Converts an option on values into an option on errors.
-
-To import and use `some` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.some
-```
 
 **Signature**
 
 ```ts
-export declare const some: <A, E, R>(self: STM<Option.Option<A>, E, R>) => STM<A, Option.Option<E>, R>
+declare const some: <A, E, R>(self: STM<Option.Option<A>, E, R>) => STM<A, Option.Option<E>, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1706)
+
+Since v2.0.0

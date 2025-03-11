@@ -1,4 +1,4 @@
-# DocTree
+## DocTree
 
 Represents a document that has been laid out into a tree-like structure.
 
@@ -11,10 +11,17 @@ until the end of some pre-defined markup. These formats would benefit more
 from a tree-like structure that explicitly marks its contents as annotated.
 A `DocTree` is therefore much more suitable for this use case.
 
-To import and use `DocTree` from the "DocTree" module:
+**Signature**
 
 ```ts
-import * as DocTree from "@effect/printer/DocTree"
-// Can be accessed like this
-DocTree.DocTree
+type DocTree<A> = | EmptyTree<A>
+  | CharTree<A>
+  | TextTree<A>
+  | LineTree<A>
+  | AnnotationTree<A>
+  | ConcatTree<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L44)
+
+Since v1.0.0

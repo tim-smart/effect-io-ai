@@ -1,17 +1,13 @@
-# writeLocks
+## writeLocks
 
 Computes the number of write locks held by fibers.
-
-To import and use `writeLocks` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.writeLocks
-```
 
 **Signature**
 
 ```ts
-export declare const writeLocks: (self: TReentrantLock) => STM.STM<number>
+declare const writeLocks: (self: TReentrantLock) => STM.STM<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L224)
+
+Since v2.0.0

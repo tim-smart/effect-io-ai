@@ -1,17 +1,13 @@
-# ignored
+## ignored
 
 An annotation which counts ignored tests.
-
-To import and use `ignored` from the "TestAnnotation" module:
-
-```ts
-import * as TestAnnotation from "effect/TestAnnotation"
-// Can be accessed like this
-TestAnnotation.ignored
-```
 
 **Signature**
 
 ```ts
-export declare const ignored: TestAnnotation<number>
+declare const ignored: TestAnnotation<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestAnnotation.ts#L121)
+
+Since v2.0.0

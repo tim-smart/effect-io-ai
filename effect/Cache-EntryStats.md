@@ -1,11 +1,15 @@
-# EntryStats
+## EntryStats
 
 Represents a snapshot of statistics for an entry in the cache.
 
-To import and use `EntryStats` from the "Cache" module:
+**Signature**
 
 ```ts
-import * as Cache from "effect/Cache"
-// Can be accessed like this
-Cache.EntryStats
+export interface EntryStats {
+  readonly loadedMillis: number
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L259)
+
+Since v2.0.0

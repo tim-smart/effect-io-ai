@@ -1,4 +1,4 @@
-# Interrupt
+## Interrupt
 
 Represents fiber interruption within a `Cause`.
 
@@ -9,10 +9,20 @@ signal, carrying a `FiberId` that identifies which fiber was interrupted.
 Interruption is a normal part of concurrency, used for cancellation or
 resource cleanup.
 
-To import and use `Interrupt` from the "Cause" module:
+**See**
+
+- `interrupt` Construct an `Interrupt` cause
+- `isInterruptType` Check if a `Cause` is an `Interrupt`
+
+**Signature**
 
 ```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.Interrupt
+export interface Interrupt extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {
+  readonly _tag: "Interrupt"
+  readonly fiberId: FiberId.FiberId
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L514)
+
+Since v2.0.0

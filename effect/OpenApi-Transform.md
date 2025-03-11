@@ -1,11 +1,13 @@
-# Transform
+## Transform
 
 Transforms the generated OpenAPI specification
 
-To import and use `Transform` from the "OpenApi" module:
+**Signature**
 
 ```ts
-import * as OpenApi from "@effect/platform/OpenApi"
-// Can be accessed like this
-OpenApi.Transform
+declare class Transform
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L102)
+
+Since v1.0.0

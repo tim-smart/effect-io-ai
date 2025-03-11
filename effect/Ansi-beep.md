@@ -1,17 +1,13 @@
-# beep
+## beep
 
 Play a beeping sound.
-
-To import and use `beep` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.beep
-```
 
 **Signature**
 
 ```ts
-export declare const beep: Ansi
+declare const beep: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L300)
+
+Since v1.0.0

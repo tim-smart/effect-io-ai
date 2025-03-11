@@ -1,4 +1,4 @@
-# Matcher
+## Matcher
 
 Pattern matching follows a structured process:
 
@@ -11,14 +11,6 @@ Pattern matching follows a structured process:
 - **Completing the match**: Apply a finalizer such as `Match.exhaustive`,
   `Match.orElse`, or `Match.option` to determine how unmatched cases should
   be handled.
-
-To import and use `Matcher` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.Matcher
-```
 
 **Example**
 
@@ -42,3 +34,14 @@ const result = Match.value(input).pipe(
 console.log(result)
 // Output: "string: some input"
 ```
+
+**Signature**
+
+```ts
+type Matcher<Input, Filters, RemainingApplied, Result, Provided, Return> = | TypeMatcher<Input, Filters, RemainingApplied, Result, Return>
+  | ValueMatcher<Input, Filters, RemainingApplied, Result, Provided, Return>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L87)
+
+Since v1.0.0

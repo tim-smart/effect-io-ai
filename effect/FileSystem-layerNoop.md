@@ -1,17 +1,13 @@
-# layerNoop
+## layerNoop
 
 Create a no-op file system that can be used for testing.
-
-To import and use `layerNoop` from the "FileSystem" module:
-
-```ts
-import * as FileSystem from "@effect/platform/FileSystem"
-// Can be accessed like this
-FileSystem.layerNoop
-```
 
 **Signature**
 
 ```ts
-export declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer<FileSystem>
+declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer<FileSystem>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L463)
+
+Since v1.0.0

@@ -1,18 +1,14 @@
-# noop
+## noop
 
 A layer that creates a service that does nothing when called.
 Useful for testing ShardManager or when using Sharding.local.
 
-To import and use `noop` from the "Pods" module:
-
-```ts
-import * as Pods from "@effect/cluster/Pods"
-// Can be accessed like this
-Pods.noop
-```
-
 **Signature**
 
 ```ts
-export declare const noop: Layer.Layer<Pods, never, never>
+declare const noop: Layer.Layer<Pods, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L100)
+
+Since v1.0.0

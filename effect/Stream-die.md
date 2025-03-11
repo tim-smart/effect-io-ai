@@ -1,17 +1,13 @@
-# die
+## die
 
 The stream that dies with the specified defect.
-
-To import and use `die` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.die
-```
 
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Stream<never>
+declare const die: (defect: unknown) => Stream<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1249)
+
+Since v2.0.0

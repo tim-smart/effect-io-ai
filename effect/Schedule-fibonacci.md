@@ -1,4 +1,4 @@
-# fibonacci
+## fibonacci
 
 Creates a schedule that recurs indefinitely with Fibonacci-based increasing
 delays.
@@ -14,16 +14,12 @@ This is useful for progressive backoff strategies, where delays grow
 naturally over time without increasing as aggressively as an exponential
 schedule.
 
-To import and use `fibonacci` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.fibonacci
-```
-
 **Signature**
 
 ```ts
-export declare const fibonacci: (one: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const fibonacci: (one: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1024)
+
+Since v2.0.0

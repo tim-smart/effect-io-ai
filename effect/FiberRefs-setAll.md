@@ -1,17 +1,13 @@
-# setAll
+## setAll
 
 Set each ref to either its value or its default.
-
-To import and use `setAll` from the "FiberRefs" module:
-
-```ts
-import * as FiberRefs from "effect/FiberRefs"
-// Can be accessed like this
-FiberRefs.setAll
-```
 
 **Signature**
 
 ```ts
-export declare const setAll: (self: FiberRefs) => Effect.Effect<void>
+declare const setAll: (self: FiberRefs) => Effect.Effect<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberRefs.ts#L118)
+
+Since v2.0.0

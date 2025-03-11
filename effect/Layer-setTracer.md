@@ -1,17 +1,13 @@
-# setTracer
+## setTracer
 
 Create a Layer that sets the current Tracer
-
-To import and use `setTracer` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.setTracer
-```
 
 **Signature**
 
 ```ts
-export declare const setTracer: (tracer: Tracer.Tracer) => Layer<never>
+declare const setTracer: (tracer: Tracer.Tracer) => Layer<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1008)
+
+Since v2.0.0

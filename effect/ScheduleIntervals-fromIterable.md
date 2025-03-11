@@ -1,17 +1,13 @@
-# fromIterable
+## fromIterable
 
 Creates `Intervals` from the specified `Iterable<Interval>`.
-
-To import and use `fromIterable` from the "ScheduleIntervals" module:
-
-```ts
-import * as ScheduleIntervals from "effect/ScheduleIntervals"
-// Can be accessed like this
-ScheduleIntervals.fromIterable
-```
 
 **Signature**
 
 ```ts
-export declare const fromIterable: (intervals: Iterable<Interval.Interval>) => Intervals
+declare const fromIterable: (intervals: Iterable<Interval.Interval>) => Intervals
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScheduleIntervals.ts#L53)
+
+Since v2.0.0

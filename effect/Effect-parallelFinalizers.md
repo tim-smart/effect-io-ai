@@ -1,4 +1,4 @@
-# parallelFinalizers
+## parallelFinalizers
 
 Ensures that finalizers are run concurrently when the scope of an effect is
 closed.
@@ -19,21 +19,13 @@ independent cleanup tasks need to be performed. However, it requires that
 these tasks do not depend on the order of execution or introduce race
 conditions.
 
-To import and use `parallelFinalizers` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.parallelFinalizers
-```
-
 **Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
 // Define a program that adds multiple finalizers
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.addFinalizer(() => Console.log("Finalizer 1 executed").pipe(Effect.delay("300 millis")))
   yield* Effect.addFinalizer(() => Console.log("Finalizer 2 executed").pipe(Effect.delay("100 millis")))
   yield* Effect.addFinalizer(() => Console.log("Finalizer 3 executed").pipe(Effect.delay("200 millis")))
@@ -52,8 +44,16 @@ const runnable = Effect.scoped(modified)
 // Finalizer 1 executed
 ```
 
+**See**
+
+- `sequentialFinalizers` for a version that ensures finalizers are run sequentially.
+
 **Signature**
 
 ```ts
-export declare const parallelFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
+declare const parallelFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5814)
+
+Since v2.0.0

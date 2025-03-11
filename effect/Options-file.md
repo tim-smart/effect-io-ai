@@ -1,17 +1,13 @@
-# file
+## file
 
 Creates a parameter expecting path to a file.
-
-To import and use `file` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.file
-```
 
 **Signature**
 
 ```ts
-export declare const file: (name: string, config?: Options.PathOptionsConfig) => Options<string>
+declare const file: (name: string, config?: Options.PathOptionsConfig) => Options<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L234)
+
+Since v1.0.0

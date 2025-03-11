@@ -1,18 +1,14 @@
-# isNoUpstream
+## isNoUpstream
 
 Returns `true` if the specified `UpstreamPullRequest` is a `NoUpstream`,
 `false` otherwise.
 
-To import and use `isNoUpstream` from the "UpstreamPullRequest" module:
-
-```ts
-import * as UpstreamPullRequest from "effect/UpstreamPullRequest"
-// Can be accessed like this
-UpstreamPullRequest.isNoUpstream
-```
-
 **Signature**
 
 ```ts
-export declare const isNoUpstream: <A>(self: UpstreamPullRequest<A>) => self is NoUpstream
+declare const isNoUpstream: <A>(self: UpstreamPullRequest<A>) => self is NoUpstream
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UpstreamPullRequest.ts#L95)
+
+Since v2.0.0

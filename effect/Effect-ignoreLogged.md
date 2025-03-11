@@ -1,4 +1,4 @@
-# ignoreLogged
+## ignoreLogged
 
 Ignores the result of an effect but logs any failures.
 
@@ -15,16 +15,12 @@ This is useful in scenarios where you want to continue with your program
 regardless of the result of the effect, but you still want to be aware of
 potential failures that may need attention later.
 
-To import and use `ignoreLogged` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.ignoreLogged
-```
-
 **Signature**
 
 ```ts
-export declare const ignoreLogged: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
+declare const ignoreLogged: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4067)
+
+Since v2.0.0

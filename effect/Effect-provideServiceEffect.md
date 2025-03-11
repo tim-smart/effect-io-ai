@@ -1,4 +1,4 @@
-# provideServiceEffect
+## provideServiceEffect
 
 Dynamically provides an implementation for a service using an effect.
 
@@ -14,26 +14,12 @@ For example, you can use this function to lazily initialize a database
 connection or fetch configuration values from an external source before
 making the service available to your effect.
 
-To import and use `provideServiceEffect` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.provideServiceEffect
-```
-
 **Signature**
 
 ```ts
-export declare const provideServiceEffect: {
-  <I, S, E1, R1>(
-    tag: Context.Tag<I, S>,
-    effect: Effect<NoInfer<S>, E1, R1>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | Exclude<R, I>>
-  <A, E, R, I, S, E1, R1>(
-    self: Effect<A, E, R>,
-    tag: Context.Tag<I, S>,
-    effect: Effect<NoInfer<S>, E1, R1>
-  ): Effect<A, E | E1, R1 | Exclude<R, I>>
-}
+declare const provideServiceEffect: { <I, S, E1, R1>(tag: Context.Tag<I, S>, effect: Effect<NoInfer<S>, E1, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | Exclude<R, I>>; <A, E, R, I, S, E1, R1>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, effect: Effect<NoInfer<S>, E1, R1>): Effect<A, E | E1, R1 | Exclude<R, I>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7491)
+
+Since v2.0.0

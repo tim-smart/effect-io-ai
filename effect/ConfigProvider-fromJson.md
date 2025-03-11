@@ -1,17 +1,13 @@
-# fromJson
+## fromJson
 
 Constructs a new `ConfigProvider` from a JSON object.
-
-To import and use `fromJson` from the "ConfigProvider" module:
-
-```ts
-import * as ConfigProvider from "effect/ConfigProvider"
-// Can be accessed like this
-ConfigProvider.fromJson
-```
 
 **Signature**
 
 ```ts
-export declare const fromJson: (json: unknown) => ConfigProvider
+declare const fromJson: (json: unknown) => ConfigProvider
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L200)
+
+Since v2.0.0

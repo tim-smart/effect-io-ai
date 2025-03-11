@@ -1,17 +1,13 @@
-# collectAllToSetN
+## collectAllToSetN
 
 A sink that collects first `n` distinct inputs into a set.
-
-To import and use `collectAllToSetN` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.collectAllToSetN
-```
 
 **Signature**
 
 ```ts
-export declare const collectAllToSetN: <In>(n: number) => Sink<HashSet.HashSet<In>, In, In>
+declare const collectAllToSetN: <In>(n: number) => Sink<HashSet.HashSet<In>, In, In>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L190)
+
+Since v2.0.0

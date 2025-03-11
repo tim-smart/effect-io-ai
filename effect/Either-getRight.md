@@ -1,26 +1,23 @@
-# getRight
+## getRight
 
 Converts a `Either` to an `Option` discarding the `Left`.
-
-To import and use `getRight` from the "Either" module:
-
-```ts
-import * as Either from "effect/Either"
-// Can be accessed like this
-Either.getRight
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Either, Option } from "effect"
 
-assert.deepStrictEqual(Either.getRight(Either.right("ok")), Option.some("ok"))
-assert.deepStrictEqual(Either.getRight(Either.left("err")), Option.none())
+assert.deepStrictEqual(Either.getRight(Either.right('ok')), Option.some('ok'))
+assert.deepStrictEqual(Either.getRight(Either.left('err')), Option.none())
 ```
 
 **Signature**
 
 ```ts
-export declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
+declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L289)
+
+Since v2.0.0

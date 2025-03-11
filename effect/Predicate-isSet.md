@@ -1,18 +1,11 @@
-# isSet
+## isSet
 
 Tests if a value is a `Set`.
-
-To import and use `isSet` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isSet
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isSet } from "effect/Predicate"
 
 assert.deepStrictEqual(isSet(new Set([1, 2])), true)
@@ -25,5 +18,9 @@ assert.deepStrictEqual(isSet(undefined), false)
 **Signature**
 
 ```ts
-export declare const isSet: (input: unknown) => input is Set<unknown>
+declare const isSet: (input: unknown) => input is Set<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L189)
+
+Since v2.0.0

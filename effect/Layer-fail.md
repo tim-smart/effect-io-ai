@@ -1,17 +1,13 @@
-# fail
+## fail
 
 Constructs a layer that fails with the specified error.
-
-To import and use `fail` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.fail
-```
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Layer<unknown, E>
+declare const fail: <E>(error: E) => Layer<unknown, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L321)
+
+Since v2.0.0

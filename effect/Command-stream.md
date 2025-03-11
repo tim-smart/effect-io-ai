@@ -1,17 +1,13 @@
-# stream
+## stream
 
 Start running the command and return the output as a `Stream`.
-
-To import and use `stream` from the "Command" module:
-
-```ts
-import * as Command from "@effect/platform/Command"
-// Can be accessed like this
-Command.stream
-```
 
 **Signature**
 
 ```ts
-export declare const stream: (command: Command) => Stream<Uint8Array, PlatformError, CommandExecutor>
+declare const stream: (command: Command) => Stream<Uint8Array, PlatformError, CommandExecutor>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L227)
+
+Since v1.0.0

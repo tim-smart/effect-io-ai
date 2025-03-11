@@ -1,17 +1,13 @@
-# unfoldChunk
+## unfoldChunk
 
 Creates a stream by peeling off the "layers" of a value of type `S`.
-
-To import and use `unfoldChunk` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.unfoldChunk
-```
 
 **Signature**
 
 ```ts
-export declare const unfoldChunk: <S, A>(s: S, f: (s: S) => Option.Option<readonly [Chunk.Chunk<A>, S]>) => Stream<A>
+declare const unfoldChunk: <S, A>(s: S, f: (s: S) => Option.Option<readonly [Chunk.Chunk<A>, S]>) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5370)
+
+Since v2.0.0

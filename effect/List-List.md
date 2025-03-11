@@ -1,4 +1,4 @@
-# List
+## List
 
 Represents an immutable linked list of elements of type `A`.
 
@@ -6,10 +6,12 @@ A `List` is optimal for last-in-first-out (LIFO), stack-like access patterns.
 If you need another access pattern, for example, random access or FIFO,
 consider using a collection more suited for that other than `List`.
 
-To import and use `List` from the "List" module:
+**Signature**
 
 ```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.List
+type List<A> = Cons<A> | Nil<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L49)
+
+Since v2.0.0

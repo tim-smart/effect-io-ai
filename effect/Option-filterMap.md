@@ -1,14 +1,6 @@
-# filterMap
+## filterMap
 
-Alias of {@link flatMap}.
-
-To import and use `filterMap` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.filterMap
-```
+Alias of `flatMap`.
 
 **Example**
 
@@ -32,8 +24,9 @@ console.log(transformEven(Option.some(2)))
 **Signature**
 
 ```ts
-export declare const filterMap: {
-  <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>
-  <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>
-}
+declare const filterMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1608)
+
+Since v2.0.0

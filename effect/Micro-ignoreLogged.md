@@ -1,17 +1,13 @@
-# ignoreLogged
+## ignoreLogged
 
 Ignore any expected errors of the given `Micro` effect, returning `void`.
-
-To import and use `ignoreLogged` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.ignoreLogged
-```
 
 **Signature**
 
 ```ts
-export declare const ignoreLogged: <A, E, R>(self: Micro<A, E, R>) => Micro<void, never, R>
+declare const ignoreLogged: <A, E, R>(self: Micro<A, E, R>) => Micro<void, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L2906)
+
+Since v3.4.0

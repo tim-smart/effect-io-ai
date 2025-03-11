@@ -1,4 +1,4 @@
-# fromString
+## fromString
 
 Parses a URL string into a `URL` object, returning an `Either` type for safe
 error handling.
@@ -15,14 +15,6 @@ An optional `base` parameter can be provided to resolve relative URLs. If
 specified, the function interprets the input `url` as relative to this
 `base`. This is especially useful when dealing with URLs that might not be
 fully qualified.
-
-To import and use `fromString` from the "Url" module:
-
-```ts
-import * as Url from "@effect/platform/Url"
-// Can be accessed like this
-Url.fromString
-```
 
 **Example**
 
@@ -57,8 +49,9 @@ if (Either.isRight(relativeParsed)) {
 **Signature**
 
 ```ts
-export declare const fromString: (
-  url: string,
-  base?: string | URL | undefined
-) => Either.Either<URL, Cause.IllegalArgumentException>
+declare const fromString: (url: string, base?: string | URL | undefined) => Either.Either<URL, Cause.IllegalArgumentException>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L58)
+
+Since v1.0.0

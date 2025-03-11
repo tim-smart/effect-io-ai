@@ -1,4 +1,4 @@
-# all
+## all
 
 Combines a structure of `Option`s into a single `Option` containing the
 values with the same structure.
@@ -17,14 +17,6 @@ output.
   containing a struct with the same keys.
 - If the input is an iterable, the result will be an `Option` containing an
   array.
-
-To import and use `all` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.all
-```
 
 **Example**
 
@@ -52,11 +44,9 @@ console.log(struct)
 **Signature**
 
 ```ts
-export declare const all: <const I extends Iterable<Option<any>> | Record<string, Option<any>>>(
-  input: I
-) => [I] extends [ReadonlyArray<Option<any>>]
-  ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
-  : [I] extends [Iterable<Option<infer A>>]
-    ? Option<Array<A>>
-    : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never }>
+declare const all: <const I extends Iterable<Option<any>> | Record<string, Option<any>>>(input: I) => [I] extends [ReadonlyArray<Option<any>>] ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }> : [I] extends [Iterable<Option<infer A>>] ? Option<Array<A>> : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1389)
+
+Since v2.0.0

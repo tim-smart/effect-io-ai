@@ -1,21 +1,14 @@
-# delay
+## delay
 
 Returns an effect that will delay the execution of this effect by the
 specified duration.
 
-To import and use `delay` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.delay
-```
-
 **Signature**
 
 ```ts
-export declare const delay: {
-  (millis: number): <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, R>
-  <A, E, R>(self: Micro<A, E, R>, millis: number): Micro<A, E, R>
-}
+declare const delay: { (millis: number): <A, E, R>(self: Micro<A, E, R>) => Micro<A, E, R>; <A, E, R>(self: Micro<A, E, R>, millis: number): Micro<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3186)
+
+Since v3.4.0

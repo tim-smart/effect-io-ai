@@ -1,21 +1,14 @@
-# provideSomeContext
+## provideSomeContext
 
 Splits the context into two parts, providing one part using the
 specified layer and leaving the remainder `R0`.
 
-To import and use `provideSomeContext` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.provideSomeContext
-```
-
 **Signature**
 
 ```ts
-export declare const provideSomeContext: {
-  <R>(context: Context.Context<R>): <R1, E, A>(self: STM<A, E, R1>) => STM<A, E, Exclude<R1, R>>
-  <R, R1, E, A>(self: STM<A, E, R1>, context: Context.Context<R>): STM<A, E, Exclude<R1, R>>
-}
+declare const provideSomeContext: { <R>(context: Context.Context<R>): <R1, E, A>(self: STM<A, E, R1>) => STM<A, E, Exclude<R1, R>>; <R, R1, E, A>(self: STM<A, E, R1>, context: Context.Context<R>): STM<A, E, Exclude<R1, R>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1462)
+
+Since v2.0.0

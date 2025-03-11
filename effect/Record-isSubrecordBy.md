@@ -1,20 +1,13 @@
-# isSubrecordBy
+## isSubrecordBy
 
 Check if all the keys and values in one record are also found in another record.
-
-To import and use `isSubrecordBy` from the "Record" module:
-
-```ts
-import * as Record from "effect/Record"
-// Can be accessed like this
-Record.isSubrecordBy
-```
 
 **Signature**
 
 ```ts
-export declare const isSubrecordBy: <A>(equivalence: Equivalence<A>) => {
-  <K extends string>(that: ReadonlyRecord<K, A>): (self: ReadonlyRecord<K, A>) => boolean
-  <K extends string>(self: ReadonlyRecord<K, A>, that: ReadonlyRecord<K, A>): boolean
-}
+declare const isSubrecordBy: <A>(equivalence: Equivalence<A>) => { <K extends string>(that: ReadonlyRecord<K, A>): (self: ReadonlyRecord<K, A>) => boolean; <K extends string>(self: ReadonlyRecord<K, A>, that: ReadonlyRecord<K, A>): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L990)
+
+Since v2.0.0

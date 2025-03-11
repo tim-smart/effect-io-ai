@@ -1,17 +1,13 @@
-# layerWebSocketConstructor
+## layerWebSocketConstructor
 
 A WebSocket constructor that uses globalThis.WebSocket.
-
-To import and use `layerWebSocketConstructor` from the "BrowserSocket" module:
-
-```ts
-import * as BrowserSocket from "@effect/platform-browser/BrowserSocket"
-// Can be accessed like this
-BrowserSocket.layerWebSocketConstructor
-```
 
 **Signature**
 
 ```ts
-export declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>
+declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L24)
+
+Since v1.0.0

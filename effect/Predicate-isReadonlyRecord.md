@@ -1,18 +1,11 @@
-# isReadonlyRecord
+## isReadonlyRecord
 
 A guard that succeeds when the input is a readonly record.
-
-To import and use `isReadonlyRecord` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isReadonlyRecord
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isReadonlyRecord } from "effect/Predicate"
 
 assert.deepStrictEqual(isReadonlyRecord({}), true)
@@ -27,5 +20,9 @@ assert.deepStrictEqual(isReadonlyRecord(undefined), false)
 **Signature**
 
 ```ts
-export declare const isReadonlyRecord: (input: unknown) => input is { readonly [x: string | symbol]: unknown }
+declare const isReadonlyRecord: (input: unknown) => input is { readonly [x: string | symbol]: unknown; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L660)
+
+Since v2.0.0

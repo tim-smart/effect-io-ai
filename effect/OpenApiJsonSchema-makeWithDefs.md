@@ -1,4 +1,4 @@
-# makeWithDefs
+## makeWithDefs
 
 Creates a schema with additional options and definitions.
 
@@ -13,24 +13,12 @@ Creates a schema with additional options and definitions.
   - `"strict"`: Disallow additional properties (default behavior).
   - `"allow"`: Allow additional properties.
 
-To import and use `makeWithDefs` from the "OpenApiJsonSchema" module:
-
-```ts
-import * as OpenApiJsonSchema from "@effect/platform/OpenApiJsonSchema"
-// Can be accessed like this
-OpenApiJsonSchema.makeWithDefs
-```
-
 **Signature**
 
 ```ts
-export declare const makeWithDefs: <A, I, R>(
-  schema: Schema.Schema<A, I, R>,
-  options: {
-    readonly defs: Record<string, any>
-    readonly defsPath?: string | undefined
-    readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy | undefined
-    readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined
-  }
-) => JsonSchema
+declare const makeWithDefs: <A, I, R>(schema: Schema.Schema<A, I, R>, options: { readonly defs: Record<string, any>; readonly defsPath?: string | undefined; readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy | undefined; readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined; }) => JsonSchema
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApiJsonSchema.ts#L279)
+
+Since v1.0.0

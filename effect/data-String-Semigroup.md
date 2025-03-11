@@ -1,17 +1,13 @@
-# Semigroup
+## Semigroup
 
 `string` semigroup under concatenation.
-
-To import and use `Semigroup` from the "String" module:
-
-```ts
-import * as String from "@effect/typeclass/data/String"
-// Can be accessed like this
-String.Semigroup
-```
 
 **Signature**
 
 ```ts
-export declare const Semigroup: semigroup.Semigroup<string>
+declare const Semigroup: semigroup.Semigroup<string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/String.ts#L13)
+
+Since v0.24.0

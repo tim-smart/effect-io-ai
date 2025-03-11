@@ -1,4 +1,4 @@
-# UnknownExceptionTypeId
+## UnknownExceptionTypeId
 
 A unique symbol identifying the `UnknownException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies an `UnknownException`. It is typically
 used for generic or unexpected errors that do not fit other specific
 exception categories.
 
-To import and use `UnknownExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.UnknownExceptionTypeId
-```
+- `UnknownException` Create or work with an `UnknownException`
 
 **Signature**
 
 ```ts
-export declare const UnknownExceptionTypeId: typeof UnknownExceptionTypeId
+declare const UnknownExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L231)
+
+Since v2.0.0

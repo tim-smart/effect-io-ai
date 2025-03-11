@@ -1,4 +1,4 @@
-# suspend
+## suspend
 
 Delays the creation of an `Effect` until it is actually needed.
 
@@ -7,7 +7,6 @@ Delays the creation of an `Effect` until it is actually needed.
 The `Effect.suspend` function takes a thunk that represents the effect and
 wraps it in a suspended effect. This means the effect will not be created
 until it is explicitly needed, which is helpful in various scenarios:
-
 - **Lazy Evaluation**: Helps optimize performance by deferring computations,
   especially when the effect might not be needed, or when its computation is
   expensive. This also ensures that any side effects or scoped captures are
@@ -25,14 +24,6 @@ Use this function when you need to defer the evaluation of an effect until it
 is required. This is particularly useful for optimizing expensive
 computations, managing circular dependencies, or resolving type inference
 issues.
-
-To import and use `suspend` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.suspend
-```
 
 **Example**
 
@@ -60,7 +51,9 @@ console.log(Effect.runSync(good)) // Output: 2
 import { Effect } from "effect"
 
 const blowsUp = (n: number): Effect.Effect<number> =>
-  n < 2 ? Effect.succeed(1) : Effect.zipWith(blowsUp(n - 1), blowsUp(n - 2), (a, b) => a + b)
+  n < 2
+    ? Effect.succeed(1)
+    : Effect.zipWith(blowsUp(n - 1), blowsUp(n - 2), (a, b) => a + b)
 
 // console.log(Effect.runSync(blowsUp(32)))
 // crash: JavaScript heap out of memory
@@ -89,17 +82,27 @@ import { Effect } from "effect"
 //     (a: number, b: number) =>
 //       Effect<never, Error, never> | Effect<number, never, never>
 const withoutSuspend = (a: number, b: number) =>
-  b === 0 ? Effect.fail(new Error("Cannot divide by zero")) : Effect.succeed(a / b)
+  b === 0
+    ? Effect.fail(new Error("Cannot divide by zero"))
+    : Effect.succeed(a / b)
 
 //   Using suspend to unify return types.
 //   Inferred type:
 //     (a: number, b: number) => Effect<number, Error, never>
 const withSuspend = (a: number, b: number) =>
-  Effect.suspend(() => (b === 0 ? Effect.fail(new Error("Cannot divide by zero")) : Effect.succeed(a / b)))
+  Effect.suspend(() =>
+    b === 0
+      ? Effect.fail(new Error("Cannot divide by zero"))
+      : Effect.succeed(a / b)
+  )
 ```
 
 **Signature**
 
 ```ts
-export declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
+declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3217)
+
+Since v2.0.0

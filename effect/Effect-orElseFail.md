@@ -1,4 +1,4 @@
-# orElseFail
+## orElseFail
 
 Replaces the failure of an effect with a custom failure value.
 
@@ -16,14 +16,6 @@ This is particularly useful when you want to standardize error handling or
 provide a consistent failure value for specific operations. It simplifies
 error management by ensuring that all failures are replaced with a controlled
 alternative.
-
-To import and use `orElseFail` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.orElseFail
-```
 
 **Example**
 
@@ -51,11 +43,16 @@ console.log(Effect.runSyncExit(program))
 // }
 ```
 
+**See**
+
+- `mapError` if you need to access the error to transform it.
+
 **Signature**
 
 ```ts
-export declare const orElseFail: {
-  <E2>(evaluate: LazyArg<E2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2, R>
-  <A, E, R, E2>(self: Effect<A, E, R>, evaluate: LazyArg<E2>): Effect<A, E2, R>
-}
+declare const orElseFail: { <E2>(evaluate: LazyArg<E2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2, R>; <A, E, R, E2>(self: Effect<A, E, R>, evaluate: LazyArg<E2>): Effect<A, E2, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11205)
+
+Since v2.0.0

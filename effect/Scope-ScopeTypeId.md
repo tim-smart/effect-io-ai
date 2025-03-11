@@ -1,11 +1,13 @@
-# ScopeTypeId
+## ScopeTypeId
 
 The type of the unique identifier for `Scope`.
 
-To import and use `ScopeTypeId` from the "Scope" module:
+**Signature**
 
 ```ts
-import * as Scope from "effect/Scope"
-// Can be accessed like this
-Scope.ScopeTypeId
+type ScopeTypeId = typeof ScopeTypeId
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L27)
+
+Since v2.0.0

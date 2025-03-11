@@ -1,20 +1,14 @@
-# fromAcquire
+## fromAcquire
 
 Creates a new `ScopedRef` from an effect that resourcefully produces a
 value.
 
-To import and use `fromAcquire` from the "ScopedRef" module:
-
-```ts
-import * as ScopedRef from "effect/ScopedRef"
-// Can be accessed like this
-ScopedRef.fromAcquire
-```
-
 **Signature**
 
 ```ts
-export declare const fromAcquire: <A, E, R>(
-  acquire: Effect.Effect<A, E, R>
-) => Effect.Effect<ScopedRef<A>, E, Scope.Scope | R>
+declare const fromAcquire: <A, E, R>(acquire: Effect.Effect<A, E, R>) => Effect.Effect<ScopedRef<A>, E, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScopedRef.ts#L82)
+
+Since v2.0.0

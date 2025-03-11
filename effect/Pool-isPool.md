@@ -1,17 +1,13 @@
-# isPool
+## isPool
 
 Returns `true` if the specified value is a `Pool`, `false` otherwise.
-
-To import and use `isPool` from the "Pool" module:
-
-```ts
-import * as Pool from "effect/Pool"
-// Can be accessed like this
-Pool.isPool
-```
 
 **Signature**
 
 ```ts
-export declare const isPool: (u: unknown) => u is Pool<unknown, unknown>
+declare const isPool: (u: unknown) => u is Pool<unknown, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L94)
+
+Since v2.0.0

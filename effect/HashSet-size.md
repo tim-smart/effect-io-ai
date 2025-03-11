@@ -1,17 +1,13 @@
-# size
+## size
 
 Calculates the number of values in the `HashSet`.
-
-To import and use `size` from the "HashSet" module:
-
-```ts
-import * as HashSet from "effect/HashSet"
-// Can be accessed like this
-HashSet.size
-```
 
 **Signature**
 
 ```ts
-export declare const size: <A>(self: HashSet<A>) => number
+declare const size: <A>(self: HashSet<A>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L132)
+
+Since v2.0.0

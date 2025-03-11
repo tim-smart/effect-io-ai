@@ -1,15 +1,7 @@
-# scan
+## scan
 
 Statefully maps over the elements of this stream to produce all
 intermediate results of type `S` given an initial S.
-
-To import and use `scan` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.scan
-```
 
 **Example**
 
@@ -25,8 +17,9 @@ const stream = Stream.range(1, 6).pipe(Stream.scan(0, (a, b) => a + b))
 **Signature**
 
 ```ts
-export declare const scan: {
-  <S, A>(s: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>
-  <A, E, R, S>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Stream<S, E, R>
-}
+declare const scan: { <S, A>(s: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Stream<S, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4478)
+
+Since v2.0.0

@@ -1,18 +1,14 @@
-# takeAll
+## takeAll
 
 Takes all the values in the queue and returns the values. If the queue is
 empty returns an empty collection.
 
-To import and use `takeAll` from the "TQueue" module:
-
-```ts
-import * as TQueue from "effect/TQueue"
-// Can be accessed like this
-TQueue.takeAll
-```
-
 **Signature**
 
 ```ts
-export declare const takeAll: <A>(self: TDequeue<A>) => STM.STM<Array<A>>
+declare const takeAll: <A>(self: TDequeue<A>) => STM.STM<Array<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TQueue.ts#L387)
+
+Since v2.0.0

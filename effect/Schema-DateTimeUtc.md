@@ -1,11 +1,13 @@
-# DateTimeUtc
+## DateTimeUtc
 
 Defines a schema that attempts to convert a `string` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
 
-To import and use `DateTimeUtc` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DateTimeUtc
+declare class DateTimeUtc
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6887)
+
+Since v3.10.0

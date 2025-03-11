@@ -1,17 +1,13 @@
-# commit
+## commit
 
 Commits this transaction atomically.
-
-To import and use `commit` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.commit
-```
 
 **Signature**
 
 ```ts
-export declare const commit: <A, E, R>(self: STM<A, E, R>) => Effect.Effect<A, E, R>
+declare const commit: <A, E, R>(self: STM<A, E, R>) => Effect.Effect<A, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L424)
+
+Since v2.0.0

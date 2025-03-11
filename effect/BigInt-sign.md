@@ -1,18 +1,11 @@
-# sign
+## sign
 
 Determines the sign of a given `bigint`.
-
-To import and use `sign` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.sign
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { sign } from "effect/BigInt"
 
 assert.deepStrictEqual(sign(-5n), -1)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(sign(5n), 1)
 **Signature**
 
 ```ts
-export declare const sign: (n: bigint) => Ordering
+declare const sign: (n: bigint) => Ordering
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L388)
+
+Since v2.0.0

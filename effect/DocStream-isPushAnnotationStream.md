@@ -1,17 +1,13 @@
-# isPushAnnotationStream
+## isPushAnnotationStream
 
 Returns `true` if the specified `DocStream` is a `PushAnnotationStream`, `false` otherwise.
-
-To import and use `isPushAnnotationStream` from the "DocStream" module:
-
-```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.isPushAnnotationStream
-```
 
 **Signature**
 
 ```ts
-export declare const isPushAnnotationStream: <A>(self: DocStream<A>) => self is PushAnnotationStream<A>
+declare const isPushAnnotationStream: <A>(self: DocStream<A>) => self is PushAnnotationStream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L219)
+
+Since v1.0.0

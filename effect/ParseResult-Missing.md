@@ -1,11 +1,22 @@
-# Missing
+## Missing
 
 Error that occurs when a required key or index is missing.
 
-To import and use `Missing` from the "ParseResult" module:
+**Signature**
 
 ```ts
-import * as ParseResult from "effect/ParseResult"
-// Can be accessed like this
-ParseResult.Missing
+declare class Missing { constructor(
+    /**
+     * @since 3.10.0
+     */
+    readonly ast: AST.Type,
+    /**
+     * @since 3.10.0
+     */
+    readonly message?: string
+  ) }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L95)
+
+Since v3.10.0

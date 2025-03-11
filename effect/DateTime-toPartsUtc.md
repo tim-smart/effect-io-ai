@@ -1,19 +1,15 @@
-# toPartsUtc
+## toPartsUtc
 
 Get the different parts of a `DateTime` as an object.
 
 The parts will be in UTC.
 
-To import and use `toPartsUtc` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.toPartsUtc
-```
-
 **Signature**
 
 ```ts
-export declare const toPartsUtc: (self: DateTime) => DateTime.PartsWithWeekday
+declare const toPartsUtc: (self: DateTime) => DateTime.PartsWithWeekday
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L897)
+
+Since v3.6.0

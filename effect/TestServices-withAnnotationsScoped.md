@@ -1,20 +1,14 @@
-# withAnnotationsScoped
+## withAnnotationsScoped
 
 Sets the implementation of the annotations service to the specified value
 and restores it to its original value when the scope is closed.
 
-To import and use `withAnnotationsScoped` from the "TestServices" module:
-
-```ts
-import * as TestServices from "effect/TestServices"
-// Can be accessed like this
-TestServices.withAnnotationsScoped
-```
-
 **Signature**
 
 ```ts
-export declare const withAnnotationsScoped: (
-  annotations: Annotations.TestAnnotations
-) => Effect.Effect<void, never, Scope.Scope>
+declare const withAnnotationsScoped: (annotations: Annotations.TestAnnotations) => Effect.Effect<void, never, Scope.Scope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestServices.ts#L95)
+
+Since v2.0.0

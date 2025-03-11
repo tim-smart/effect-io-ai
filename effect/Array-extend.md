@@ -1,23 +1,14 @@
-# extend
+## extend
 
 Extends an array with a function that maps each subarray to a value.
-
-To import and use `extend` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.extend
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers = [1, 2, 3]
-const result = Array.extend(numbers, (as) => as.length)
-assert.deepStrictEqual(result, [3, 2, 1])
+const result = Array.extend([1, 2, 3], as => as.length)
+console.log(result) // [3, 2, 1]
 
 // Explanation:
 // The function maps each subarray starting from each element to its length.
@@ -29,8 +20,9 @@ assert.deepStrictEqual(result, [3, 2, 1])
 **Signature**
 
 ```ts
-export declare const extend: {
-  <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>
-  <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>
-}
+declare const extend: { <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>; <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2879)
+
+Since v2.0.0

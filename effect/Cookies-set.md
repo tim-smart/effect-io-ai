@@ -1,20 +1,13 @@
-# set
+## set
 
 Add a cookie to a Cookies object
-
-To import and use `set` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.set
-```
 
 **Signature**
 
 ```ts
-export declare const set: {
-  (name: string, value: string, options?: Cookie["options"]): (self: Cookies) => Either.Either<Cookies, CookiesError>
-  (self: Cookies, name: string, value: string, options?: Cookie["options"]): Either.Either<Cookies, CookiesError>
-}
+declare const set: { (name: string, value: string, options?: Cookie["options"]): (self: Cookies) => Either.Either<Cookies, CookiesError>; (self: Cookies, name: string, value: string, options?: Cookie["options"]): Either.Either<Cookies, CookiesError>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L482)
+
+Since v1.0.0

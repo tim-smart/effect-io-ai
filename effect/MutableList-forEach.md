@@ -1,20 +1,13 @@
-# forEach
+## forEach
 
 Executes the specified function `f` for each element in the list.
-
-To import and use `forEach` from the "MutableList" module:
-
-```ts
-import * as MutableList from "effect/MutableList"
-// Can be accessed like this
-MutableList.forEach
-```
 
 **Signature**
 
 ```ts
-export declare const forEach: {
-  <A>(f: (element: A) => void): (self: MutableList<A>) => void
-  <A>(self: MutableList<A>, f: (element: A) => void): void
-}
+declare const forEach: { <A>(f: (element: A) => void): (self: MutableList<A>) => void; <A>(self: MutableList<A>, f: (element: A) => void): void; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L168)
+
+Since v2.0.0

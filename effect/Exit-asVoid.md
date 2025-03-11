@@ -1,17 +1,13 @@
-# asVoid
+## asVoid
 
 Maps the `Success` value of the specified exit to a void.
-
-To import and use `asVoid` from the "Exit" module:
-
-```ts
-import * as Exit from "effect/Exit"
-// Can be accessed like this
-Exit.asVoid
-```
 
 **Signature**
 
 ```ts
-export declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
+declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L131)
+
+Since v2.0.0

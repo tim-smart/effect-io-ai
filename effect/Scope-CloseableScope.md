@@ -1,11 +1,22 @@
-# CloseableScope
+## CloseableScope
 
 A scope that can be explicitly closed with a specified exit value.
 
-To import and use `CloseableScope` from the "Scope" module:
+**Signature**
 
 ```ts
-import * as Scope from "effect/Scope"
-// Can be accessed like this
-Scope.CloseableScope
+export interface CloseableScope extends Scope, Pipeable {
+  readonly [CloseableScopeTypeId]: CloseableScopeTypeId
+
+  /**
+   * Closes this scope with the given exit value, running all finalizers.
+   *
+   * @internal
+   */
+  close(exit: Exit.Exit<unknown, unknown>): Effect.Effect<void>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L78)
+
+Since v2.0.0

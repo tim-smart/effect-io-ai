@@ -1,4 +1,4 @@
-# Effect
+## Effect
 
 The `Effect` interface defines a value that describes a workflow or job,
 which can succeed or fail.
@@ -18,10 +18,17 @@ concurrency and error management.
 To execute an `Effect` value, you need a `Runtime`, which provides the
 environment necessary to run and manage the computation.
 
-To import and use `Effect` from the "Effect" module:
+**Signature**
 
 ```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.Effect
+export interface Effect<out A, out E = never, out R = never> extends Effect.Variance<A, E, R>, Pipeable {
+  readonly [Unify.typeSymbol]?: unknown
+  readonly [Unify.unifySymbol]?: EffectUnify<this>
+  readonly [Unify.ignoreSymbol]?: EffectUnifyIgnore
+  [Symbol.iterator](): EffectGenerator<Effect<A, E, R>>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L101)
+
+Since v2.0.0

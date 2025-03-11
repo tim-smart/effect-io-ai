@@ -1,17 +1,9 @@
-# gen
+## gen
 
 Similar to `Effect.gen`, `Option.gen` provides a more readable,
 generator-based syntax for working with `Option` values, making code that
 involves `Option` easier to write and understand. This approach is similar to
 using `async/await` but tailored for `Option`.
-
-To import and use `gen` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.gen
-```
 
 **Example**
 
@@ -36,5 +28,9 @@ console.log(person)
 **Signature**
 
 ```ts
-export declare const gen: Gen.Gen<OptionTypeLambda, Gen.Adapter<OptionTypeLambda>>
+declare const gen: Gen.Gen<OptionTypeLambda, Gen.Adapter<OptionTypeLambda>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2141)
+
+Since v2.0.0

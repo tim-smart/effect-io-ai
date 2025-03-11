@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Checks whether the queue is empty.
-
-To import and use `isEmpty` from the "TPriorityQueue" module:
-
-```ts
-import * as TPriorityQueue from "effect/TPriorityQueue"
-// Can be accessed like this
-TPriorityQueue.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: TPriorityQueue<A>) => STM.STM<boolean>
+declare const isEmpty: <A>(self: TPriorityQueue<A>) => STM.STM<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPriorityQueue.ts#L85)
+
+Since v2.0.0

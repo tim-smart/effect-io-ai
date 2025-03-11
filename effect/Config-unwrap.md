@@ -1,4 +1,4 @@
-# unwrap
+## unwrap
 
 Constructs a config from some configuration wrapped with the `Wrap<A>` utility type.
 
@@ -12,16 +12,12 @@ interface Options { key: string }
 const makeConfig = (config: Config.Wrap<Options>): Config<Options> => unwrap(config)
 ```
 
-To import and use `unwrap` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.unwrap
-```
-
 **Signature**
 
 ```ts
-export declare const unwrap: <A>(wrapped: Config.Wrap<A>) => Config<A>
+declare const unwrap: <A>(wrapped: Config.Wrap<A>) => Config<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L434)
+
+Since v2.0.0

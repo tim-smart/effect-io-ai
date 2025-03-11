@@ -1,18 +1,11 @@
-# sign
+## sign
 
 Determines the sign of a given `BigDecimal`.
-
-To import and use `sign` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.sign
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { sign, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(sign(unsafeFromString("-5")), -1)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(sign(unsafeFromString("5")), 1)
 **Signature**
 
 ```ts
-export declare const sign: (n: BigDecimal) => Ordering
+declare const sign: (n: BigDecimal) => Ordering
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L670)
+
+Since v2.0.0

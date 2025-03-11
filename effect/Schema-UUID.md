@@ -1,13 +1,15 @@
-# UUID
+## UUID
 
 Represents a Universally Unique Identifier (UUID).
 
 This schema ensures that the provided string adheres to the standard UUID format.
 
-To import and use `UUID` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.UUID
+declare class UUID
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4832)
+
+Since v3.10.0

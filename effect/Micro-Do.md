@@ -1,17 +1,13 @@
-# Do
+## Do
 
 Start a do notation block.
-
-To import and use `Do` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.Do
-```
 
 **Signature**
 
 ```ts
-export declare const Do: Micro<{}, never, never>
+declare const Do: Micro<{}, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4036)
+
+Since v3.4.0

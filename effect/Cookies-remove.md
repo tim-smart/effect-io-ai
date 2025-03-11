@@ -1,17 +1,13 @@
-# remove
+## remove
 
 Remove a cookie by name
-
-To import and use `remove` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.remove
-```
 
 **Signature**
 
 ```ts
-export declare const remove: { (name: string): (self: Cookies) => Cookies; (self: Cookies, name: string): Cookies }
+declare const remove: { (name: string): (self: Cookies) => Cookies; (self: Cookies, name: string): Cookies; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L439)
+
+Since v1.0.0

@@ -1,18 +1,11 @@
-# pageWidth
+## pageWidth
 
 Lays out a document according to the document"s`PageWidth`.
-
-To import and use `pageWidth` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.pageWidth
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import * as String from "effect/String"
 
@@ -22,7 +15,9 @@ const doc = Doc.hsep([
     switch (pageWidth._tag) {
       case "AvailablePerLine": {
         const { lineWidth, ribbonFraction } = pageWidth
-        return Doc.squareBracketed(Doc.text(`Width: ${lineWidth}, Ribbon Fraction: ${ribbonFraction}`))
+        return Doc.squareBracketed(
+          Doc.text(`Width: ${lineWidth}, Ribbon Fraction: ${ribbonFraction}`)
+        )
       }
       case "Unbounded": {
         return Doc.empty
@@ -49,5 +44,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>
+declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1616)
+
+Since v1.0.0

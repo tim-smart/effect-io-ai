@@ -1,14 +1,6 @@
-# zipWithPreviousAndNext
+## zipWithPreviousAndNext
 
 Zips each element with both the previous and next element.
-
-To import and use `zipWithPreviousAndNext` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.zipWithPreviousAndNext
-```
 
 **Example**
 
@@ -45,7 +37,9 @@ const stream = Stream.zipWithPreviousAndNext(Stream.make(1, 2, 3, 4))
 **Signature**
 
 ```ts
-export declare const zipWithPreviousAndNext: <A, E, R>(
-  self: Stream<A, E, R>
-) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
+declare const zipWithPreviousAndNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6120)
+
+Since v2.0.0

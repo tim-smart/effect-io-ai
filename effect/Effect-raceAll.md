@@ -1,4 +1,4 @@
-# raceAll
+## raceAll
 
 Races multiple effects and returns the first successful result.
 
@@ -17,14 +17,6 @@ This is useful when you want to race multiple effects, but only care about
 the first one to succeed. It is commonly used in cases like timeouts,
 retries, or when you want to optimize for the faster response without
 worrying about the other effects.
-
-To import and use `raceAll` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.raceAll
-```
 
 **Example**
 
@@ -123,10 +115,16 @@ const program = Effect.raceAll([task1, task2, task3])
 // }
 ```
 
+**See**
+
+- `race` for a version that handles only two effects.
+
 **Signature**
 
 ```ts
-export declare const raceAll: <Eff extends Effect<any, any, any>>(
-  all: Iterable<Eff>
-) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
+declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9039)
+
+Since v2.0.0

@@ -1,20 +1,13 @@
-# unsafeWipe
+## unsafeWipe
 
 Erases the underlying value of a `Redacted` instance, rendering it unusable.
 This function is intended to ensure that sensitive data does not remain in
 memory longer than necessary.
 
-To import and use `unsafeWipe` from the "Redacted" module:
-
-```ts
-import * as Redacted from "effect/Redacted"
-// Can be accessed like this
-Redacted.unsafeWipe
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Redacted } from "effect"
 
 const API_KEY = Redacted.make("1234567890")
@@ -29,5 +22,9 @@ assert.throws(() => Redacted.value(API_KEY), new Error("Unable to get redacted v
 **Signature**
 
 ```ts
-export declare const unsafeWipe: <A>(self: Redacted<A>) => boolean
+declare const unsafeWipe: <A>(self: Redacted<A>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Redacted.ts#L118)
+
+Since v3.3.0

@@ -1,4 +1,4 @@
-# mapInput
+## mapInput
 
 Transforms the input type of a schedule.
 
@@ -12,19 +12,16 @@ using the provided mapping function `f`.
 This is useful when you have a schedule that expects a specific input type
 but you need to adapt it to work with a different type.
 
-To import and use `mapInput` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.mapInput
-```
+- `mapInputEffect` If you need to use an effectful transformation function.
 
 **Signature**
 
 ```ts
-export declare const mapInput: {
-  <In, In2>(f: (in2: In2) => In): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In2, R>
-  <Out, In, R, In2>(self: Schedule<Out, In, R>, f: (in2: In2) => In): Schedule<Out, In2, R>
-}
+declare const mapInput: { <In, In2>(f: (in2: In2) => In): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In2, R>; <Out, In, R, In2>(self: Schedule<Out, In, R>, f: (in2: In2) => In): Schedule<Out, In2, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L551)
+
+Since v2.0.0

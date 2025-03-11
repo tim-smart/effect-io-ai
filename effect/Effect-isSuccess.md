@@ -1,4 +1,4 @@
-# isSuccess
+## isSuccess
 
 Checks if an effect has succeeded.
 
@@ -11,16 +11,12 @@ effect succeeded and `false` otherwise.
 The resulting effect cannot fail (`never` in the error channel) but retains
 the context of the original effect.
 
-To import and use `isSuccess` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.isSuccess
-```
-
 **Signature**
 
 ```ts
-export declare const isSuccess: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
+declare const isSuccess: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10341)
+
+Since v2.0.0

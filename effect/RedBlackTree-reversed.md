@@ -1,17 +1,13 @@
-# reversed
+## reversed
 
 Traverse the tree in reverse order.
-
-To import and use `reversed` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.reversed
-```
 
 **Signature**
 
 ```ts
-export declare const reversed: <K, V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
+declare const reversed: <K, V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L397)
+
+Since v2.0.0

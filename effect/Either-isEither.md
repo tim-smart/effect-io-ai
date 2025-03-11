@@ -1,18 +1,11 @@
-# isEither
+## isEither
 
 Tests if a value is a `Either`.
-
-To import and use `isEither` from the "Either" module:
-
-```ts
-import * as Either from "effect/Either"
-// Can be accessed like this
-Either.isEither
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Either } from "effect"
 
 assert.deepStrictEqual(Either.isEither(Either.right(1)), true)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(Either.isEither({ right: 1 }), false)
 **Signature**
 
 ```ts
-export declare const isEither: (input: unknown) => input is Either<unknown, unknown>
+declare const isEither: (input: unknown) => input is Either<unknown, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L238)
+
+Since v2.0.0

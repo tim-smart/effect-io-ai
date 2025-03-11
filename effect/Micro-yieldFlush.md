@@ -1,17 +1,13 @@
-# yieldFlush
+## yieldFlush
 
 Flush any yielded effects that are waiting to be executed.
-
-To import and use `yieldFlush` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.yieldFlush
-```
 
 **Signature**
 
 ```ts
-export declare const yieldFlush: Micro<void, never, never>
+declare const yieldFlush: Micro<void, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L1127)
+
+Since v3.4.0

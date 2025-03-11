@@ -1,17 +1,13 @@
-# langle
+## langle
 
 A document containing a single `<` character.
-
-To import and use `langle` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.langle
-```
 
 **Signature**
 
 ```ts
-export declare const langle: Doc<never>
+declare const langle: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L759)
+
+Since v1.0.0

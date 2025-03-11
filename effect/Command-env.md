@@ -1,20 +1,13 @@
-# env
+## env
 
 Specify the environment variables that will be used when running this command.
-
-To import and use `env` from the "Command" module:
-
-```ts
-import * as Command from "@effect/platform/Command"
-// Can be accessed like this
-Command.env
-```
 
 **Signature**
 
 ```ts
-export declare const env: {
-  (environment: Record<string, string | undefined>): (self: Command) => Command
-  (self: Command, environment: Record<string, string | undefined>): Command
-}
+declare const env: { (environment: Record<string, string | undefined>): (self: Command) => Command; (self: Command, environment: Record<string, string | undefined>): Command; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L128)
+
+Since v1.0.0

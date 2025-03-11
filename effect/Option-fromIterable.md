@@ -1,4 +1,4 @@
-# fromIterable
+## fromIterable
 
 Converts an `Iterable` into an `Option`, wrapping the first element if it
 exists.
@@ -17,14 +17,6 @@ content:
 This utility is useful for safely handling collections that might be empty,
 ensuring you explicitly handle both cases where a value exists or doesn't.
 
-To import and use `fromIterable` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.fromIterable
-```
-
 **Example**
 
 ```ts
@@ -40,5 +32,9 @@ console.log(Option.fromIterable([]))
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(collection: Iterable<A>) => Option<A>
+declare const fromIterable: <A>(collection: Iterable<A>) => Option<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L390)
+
+Since v2.0.0

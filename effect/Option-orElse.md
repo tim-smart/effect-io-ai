@@ -1,4 +1,4 @@
-# orElse
+## orElse
 
 Returns the provided `Option` `that` if the current `Option` (`self`) is
 `None`; otherwise, it returns `self`.
@@ -14,14 +14,6 @@ unchanged.
 This is particularly useful for chaining fallback values or computations,
 allowing you to provide alternative `Option` values when the first one is
 empty.
-
-To import and use `orElse` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.orElse
-```
 
 **Example**
 
@@ -44,8 +36,9 @@ console.log(Option.some("a").pipe(Option.orElse(() => Option.some("b"))))
 **Signature**
 
 ```ts
-export declare const orElse: {
-  <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<B | A>
-  <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<A | B>
-}
+declare const orElse: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<A | B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L544)
+
+Since v2.0.0

@@ -1,21 +1,14 @@
-# unsafeGet
+## unsafeGet
 
 Get a service from the context that corresponds to the given tag.
 This function is unsafe because if the tag is not present in the context, a runtime error will be thrown.
 
-For a safer version see {@link getOption}.
-
-To import and use `unsafeGet` from the "Context" module:
-
-```ts
-import * as Context from "effect/Context"
-// Can be accessed like this
-Context.unsafeGet
-```
+For a safer version see `getOption`.
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Context } from "effect"
 
 const Port = Context.GenericTag<{ PORT: number }>("Port")
@@ -30,8 +23,9 @@ assert.throws(() => Context.unsafeGet(Services, Timeout))
 **Signature**
 
 ```ts
-export declare const unsafeGet: {
-  <S, I>(tag: Tag<I, S>): <Services>(self: Context<Services>) => S
-  <Services, S, I>(self: Context<Services>, tag: Tag<I, S>): S
-}
+declare const unsafeGet: { <S, I>(tag: Tag<I, S>): <Services>(self: Context<Services>) => S; <Services, S, I>(self: Context<Services>, tag: Tag<I, S>): S; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L368)
+
+Since v2.0.0

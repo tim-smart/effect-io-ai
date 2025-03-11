@@ -1,17 +1,13 @@
-# succeed
+## succeed
 
 Constructs a config which contains the specified value.
-
-To import and use `succeed` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.succeed
-```
 
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Config<A>
+declare const succeed: <A>(value: A) => Config<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L392)
+
+Since v2.0.0

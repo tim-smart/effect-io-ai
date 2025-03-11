@@ -1,14 +1,6 @@
-# zipWithNext
+## zipWithNext
 
 Zips each element with the next element if present.
-
-To import and use `zipWithNext` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.zipWithNext
-```
 
 **Example**
 
@@ -29,5 +21,9 @@ const stream = Stream.zipWithNext(Stream.make(1, 2, 3, 4))
 **Signature**
 
 ```ts
-export declare const zipWithNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, Option.Option<A>], E, R>
+declare const zipWithNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, Option.Option<A>], E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6056)
+
+Since v2.0.0

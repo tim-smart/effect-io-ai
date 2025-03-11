@@ -1,17 +1,13 @@
-# isAnd
+## isAnd
 
 Returns `true` if the specified `ConfigError` is an `And`, `false` otherwise.
-
-To import and use `isAnd` from the "ConfigError" module:
-
-```ts
-import * as ConfigError from "effect/ConfigError"
-// Can be accessed like this
-ConfigError.isAnd
-```
 
 **Signature**
 
 ```ts
-export declare const isAnd: (self: ConfigError) => self is And
+declare const isAnd: (self: ConfigError) => self is And
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L198)
+
+Since v2.0.0

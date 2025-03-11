@@ -1,27 +1,22 @@
-# contains
+## contains
 
 Returns a function that checks if a `ReadonlyArray` contains a given value using the default `Equivalence`.
-
-To import and use `contains` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.contains
-```
 
 **Example**
 
 ```ts
-import { Array } from "effect"
+import { Array, pipe } from "effect"
 
-const letters = ["a", "b", "c", "d"]
-const result = Array.contains("c")(letters)
-assert.deepStrictEqual(result, true)
+const result = pipe(['a', 'b', 'c', 'd'], Array.contains('c'))
+console.log(result) // true
 ```
 
 **Signature**
 
 ```ts
-export declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean }
+declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1732)
+
+Since v2.0.0

@@ -1,20 +1,13 @@
-# get
+## get
 
 This function provides a safe way to read a value at a particular index from a `Chunk`.
-
-To import and use `get` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.get
-```
 
 **Signature**
 
 ```ts
-export declare const get: {
-  (index: number): <A>(self: Chunk<A>) => Option<A>
-  <A>(self: Chunk<A>, index: number): Option<A>
-}
+declare const get: { (index: number): <A>(self: Chunk<A>) => Option<A>; <A>(self: Chunk<A>, index: number): Option<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L372)
+
+Since v2.0.0

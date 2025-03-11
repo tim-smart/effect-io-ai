@@ -1,23 +1,20 @@
-# softLine
+## softLine
 
 The `softLine` document behaves like `space` if the resulting output fits
 onto the page, otherwise it behaves like `line`.
 
-To import and use `softLine` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.softLine
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import * as String from "effect/String"
 
-const doc: Doc.Doc<never> = Doc.hcat([Doc.text("lorem ipsum"), Doc.softLine, Doc.text("dolor sit amet")])
+const doc: Doc.Doc<never> = Doc.hcat([
+  Doc.text("lorem ipsum"),
+  Doc.softLine,
+  Doc.text("dolor sit amet")
+])
 
 // Here we have enough space to put everything onto one line
 assert.strictEqual(
@@ -45,5 +42,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const softLine: Doc<never>
+declare const softLine: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L624)
+
+Since v1.0.0

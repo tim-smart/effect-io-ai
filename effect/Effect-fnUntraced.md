@@ -1,17 +1,17 @@
-# fnUntraced
+## fnUntraced
 
-Same as {@link fn}, but allows you to create a function that is not traced, for when performance is critical.
+Same as `fn`, but allows you to create a function that is not traced, for when performance is critical.
 
-To import and use `fnUntraced` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.fnUntraced
-```
+- `fn` for a version that includes tracing.
 
 **Signature**
 
 ```ts
-export declare const fnUntraced: fn.Gen
+declare const fnUntraced: fn.Gen
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14113)
+
+Since v3.12.0

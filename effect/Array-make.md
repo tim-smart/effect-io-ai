@@ -1,14 +1,6 @@
-# make
+## make
 
 Builds a `NonEmptyArray` from an non-empty collection of elements.
-
-To import and use `make` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.make
-```
 
 **Example**
 
@@ -16,13 +8,15 @@ Array.make
 import { Array } from "effect"
 
 const result = Array.make(1, 2, 3)
-assert.deepStrictEqual(result, [1, 2, 3])
+console.log(result) // [1, 2, 3]
 ```
 
 **Signature**
 
 ```ts
-export declare const make: <Elements extends NonEmptyArray<any>>(
-  ...elements: Elements
-) => NonEmptyArray<Elements[number]>
+declare const make: <Elements extends NonEmptyArray<any>>(...elements: Elements) => NonEmptyArray<Elements[number]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L61)
+
+Since v2.0.0

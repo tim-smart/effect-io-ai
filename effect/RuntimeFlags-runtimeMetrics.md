@@ -1,18 +1,14 @@
-# runtimeMetrics
+## runtimeMetrics
 
 Returns `true` if the `RuntimeMetrics` `RuntimeFlag` is enabled, `false`
 otherwise.
 
-To import and use `runtimeMetrics` from the "RuntimeFlags" module:
-
-```ts
-import * as RuntimeFlags from "effect/RuntimeFlags"
-// Can be accessed like this
-RuntimeFlags.runtimeMetrics
-```
-
 **Signature**
 
 ```ts
-export declare const runtimeMetrics: (self: RuntimeFlags) => boolean
+declare const runtimeMetrics: (self: RuntimeFlags) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RuntimeFlags.ts#L319)
+
+Since v2.0.0

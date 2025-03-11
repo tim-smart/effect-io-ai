@@ -1,4 +1,4 @@
-# takeUntil
+## takeUntil
 
 Takes elements from a collection until the effectful predicate returns
 `true`.
@@ -25,14 +25,6 @@ collection based on a dynamic condition. For example, you may want to collect
 numbers from a list until a certain threshold is reached, or gather items
 until a specific condition is met.
 
-To import and use `takeUntil` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.takeUntil
-```
-
 **Example**
 
 ```ts
@@ -41,7 +33,7 @@ import { Effect } from "effect"
 const numbers = [1, 2, 3, 4, 5, 6]
 const predicate = (n: number, i: number) => Effect.succeed(n > 3)
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   const result = yield* Effect.takeUntil(numbers, predicate)
   console.log(result)
 })
@@ -50,16 +42,17 @@ const program = Effect.gen(function* () {
 // Output: [ 1, 2, 3, 4 ]
 ```
 
+**See**
+
+- `takeWhile` for a similar function that takes elements while the
+predicate returns `true`.
+
 **Signature**
 
 ```ts
-export declare const takeUntil: {
-  <A, R, E>(
-    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
-  ): (elements: Iterable<A>) => Effect<Array<A>, E, R>
-  <A, E, R>(
-    elements: Iterable<A>,
-    predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>
-  ): Effect<Array<A>, E, R>
-}
+declare const takeUntil: { <A, R, E>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1156)
+
+Since v2.0.0

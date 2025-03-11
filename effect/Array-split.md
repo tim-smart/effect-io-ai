@@ -1,34 +1,22 @@
-# split
+## split
 
 Splits this iterable into `n` equally sized arrays.
-
-To import and use `split` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.split
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-const result = Array.split(numbers, 3)
-assert.deepStrictEqual(result, [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8]
-])
+const result = Array.split([1, 2, 3, 4, 5, 6, 7, 8], 3)
+console.log(result) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 ```
 
 **Signature**
 
 ```ts
-export declare const split: {
-  (n: number): <A>(self: Iterable<A>) => Array<Array<A>>
-  <A>(self: Iterable<A>, n: number): Array<Array<A>>
-}
+declare const split: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1861)
+
+Since v2.0.0

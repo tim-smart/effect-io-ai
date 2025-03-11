@@ -1,17 +1,13 @@
-# eraseLines
+## eraseLines
 
 Erase from the current cursor position up the specified amount of rows.
-
-To import and use `eraseLines` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.eraseLines
-```
 
 **Signature**
 
 ```ts
-export declare const eraseLines: (rows: number) => Ansi
+declare const eraseLines: (rows: number) => Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L435)
+
+Since v1.0.0

@@ -1,18 +1,14 @@
-# cursorRestorePosition
+## cursorRestorePosition
 
 Restores the cursor position, encoding shift state and formatting attributes
 from the previous save, if any, otherwise resets these all to their defaults.
 
-To import and use `cursorRestorePosition` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.cursorRestorePosition
-```
-
 **Signature**
 
 ```ts
-export declare const cursorRestorePosition: Ansi
+declare const cursorRestorePosition: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L393)
+
+Since v1.0.0

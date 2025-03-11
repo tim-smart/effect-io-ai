@@ -1,17 +1,17 @@
-# succeedSome
+## succeedSome
 
 Returns an effect which succeeds with the value wrapped in a `Some`.
 
-To import and use `succeedSome` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.succeedSome
-```
+- `succeedNone` for a similar function that returns `None` when the value is absent.
 
 **Signature**
 
 ```ts
-export declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>>
+declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3121)
+
+Since v2.0.0

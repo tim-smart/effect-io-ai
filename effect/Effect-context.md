@@ -1,4 +1,4 @@
-# context
+## context
 
 Accesses the full context of the effect.
 
@@ -9,16 +9,12 @@ an effect. The context is a container that holds dependencies or environment
 values needed by an effect to run. By using this function, you can retrieve
 and work with the context directly within an effect.
 
-To import and use `context` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.context
-```
-
 **Signature**
 
 ```ts
-export declare const context: <R>() => Effect<Context.Context<R>, never, R>
+declare const context: <R>() => Effect<Context.Context<R>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7236)
+
+Since v2.0.0

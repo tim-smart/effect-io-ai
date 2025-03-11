@@ -1,17 +1,13 @@
-# noop
+## noop
 
 A layer that does nothing, useful for testing.
-
-To import and use `noop` from the "Storage" module:
-
-```ts
-import * as Storage from "@effect/cluster/Storage"
-// Can be accessed like this
-Storage.noop
-```
 
 **Signature**
 
 ```ts
-export declare const noop: Layer.Layer<Storage, never, never>
+declare const noop: Layer.Layer<Storage, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L92)
+
+Since v1.0.0

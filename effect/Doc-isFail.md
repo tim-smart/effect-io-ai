@@ -1,17 +1,13 @@
-# isFail
+## isFail
 
 Returns `true` if the specified `Doc` is a `Fail`, `false` otherwise.
-
-To import and use `isFail` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.isFail
-```
 
 **Signature**
 
 ```ts
-export declare const isFail: <A>(self: Doc<A>) => self is Fail<A>
+declare const isFail: <A>(self: Doc<A>) => self is Fail<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L326)
+
+Since v1.0.0

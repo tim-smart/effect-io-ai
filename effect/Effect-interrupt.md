@@ -1,4 +1,4 @@
-# interrupt
+## interrupt
 
 Represents an effect that interrupts the current fiber.
 
@@ -8,15 +8,7 @@ This effect models the explicit interruption of the fiber in which it runs.
 When executed, it causes the fiber to stop its operation immediately,
 capturing the interruption details such as the fiber's ID and its start time.
 The resulting interruption can be observed in the `Exit` type if the effect
-is run with functions like {@link runPromiseExit}.
-
-To import and use `interrupt` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.interrupt
-```
+is run with functions like `runPromiseExit`.
 
 **Example**
 
@@ -53,5 +45,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const interrupt: Effect<never, never, never>
+declare const interrupt: Effect<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4789)
+
+Since v2.0.0

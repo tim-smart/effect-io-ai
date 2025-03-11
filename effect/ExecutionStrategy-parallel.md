@@ -1,17 +1,13 @@
-# parallel
+## parallel
 
 Execute effects in parallel.
-
-To import and use `parallel` from the "ExecutionStrategy" module:
-
-```ts
-import * as ExecutionStrategy from "effect/ExecutionStrategy"
-// Can be accessed like this
-ExecutionStrategy.parallel
-```
 
 **Signature**
 
 ```ts
-export declare const parallel: ExecutionStrategy
+declare const parallel: ExecutionStrategy
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ExecutionStrategy.ts#L64)
+
+Since v2.0.0

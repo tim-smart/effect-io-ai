@@ -1,4 +1,4 @@
-# TReentrantLock
+## TReentrantLock
 
 A `TReentrantLock` is a reentrant read/write lock. Multiple readers may all
 concurrently acquire read locks. Only one writer is allowed to acquire a
@@ -15,10 +15,12 @@ provide consistent read/write access to mutable state; and being in STM
 allows this structure to be composed into more complicated concurrent
 structures that are consumed from effectful code.
 
-To import and use `TReentrantLock` from the "TReentrantLock" module:
+**Signature**
 
 ```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.TReentrantLock
+export interface TReentrantLock extends TReentrantLock.Proto {}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L41)
+
+Since v2.0.0

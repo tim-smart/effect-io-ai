@@ -1,18 +1,14 @@
-# isCommand
+## isCommand
 
 Returns `true` if the specified value is a `Command`, otherwise returns
 `false`.
 
-To import and use `isCommand` from the "Command" module:
-
-```ts
-import * as Command from "@effect/platform/Command"
-// Can be accessed like this
-Command.isCommand
-```
-
 **Signature**
 
 ```ts
-export declare const isCommand: (u: unknown) => u is Command
+declare const isCommand: (u: unknown) => u is Command
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L120)
+
+Since v1.0.0

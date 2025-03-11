@@ -1,19 +1,15 @@
-# unsafeFromDate
+## unsafeFromDate
 
 Create a `DateTime` from a `Date`.
 
 If the `Date` is invalid, an `IllegalArgumentException` will be thrown.
 
-To import and use `unsafeFromDate` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.unsafeFromDate
-```
-
 **Signature**
 
 ```ts
-export declare const unsafeFromDate: (date: Date) => Utc
+declare const unsafeFromDate: (date: Date) => Utc
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L299)
+
+Since v3.6.0

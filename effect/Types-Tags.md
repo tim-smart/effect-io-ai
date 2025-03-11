@@ -1,19 +1,21 @@
-# Tags
+## Tags
 
 Returns the tags in a type.
-
-To import and use `Tags` from the "Types" module:
-
-```ts
-import * as Types from "effect/Types"
-// Can be accessed like this
-Types.Tags
-```
 
 **Example**
 
 ```ts
 import type { Types } from "effect"
 
-type Res = Types.Tags<string | { _tag: "a" } | { _tag: "b" }> // "a" | "b"
+type Res = Types.Tags<string | { _tag: "a" } | { _tag: "b" } > // "a" | "b"
 ```
+
+**Signature**
+
+```ts
+type Tags<E> = E extends { _tag: string } ? E["_tag"] : never
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L71)
+
+Since v2.0.0

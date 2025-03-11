@@ -1,56 +1,30 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/cluster-browser",
-    "name": "From \"./RpcBroadcastChannel.js\"",
-    "description": "Re-exports all named exports from the \"./RpcBroadcastChannel.js\" module as `RpcBroadcastChannel`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as RpcBroadcastChannel from \"./RpcBroadcastChannel.js\""
-  },
-  {
     "_tag": "Function",
     "module": {
-      "name": "RpcBroadcastChannel",
-      "path": [
-        "src",
-        "RpcBroadcastChannel.ts"
-      ]
+      "name": "RpcBroadcastChannel.ts",
+      "path": "src/RpcBroadcastChannel.ts"
     },
     "project": "@effect/cluster-browser",
     "name": "toBroadcastChannelRouter",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": null
+    "signature": "declare const toBroadcastChannelRouter: <R extends RpcRouter.RpcRouter<any, any>>(self: R, channelId: string) => Effect.Effect<RuntimeFiber<void, ParseError>, never, Scope>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "RpcBroadcastChannel",
-      "path": [
-        "src",
-        "RpcBroadcastChannel.ts"
-      ]
+      "name": "RpcBroadcastChannel.ts",
+      "path": "src/RpcBroadcastChannel.ts"
     },
     "project": "@effect/cluster-browser",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": null
+    "signature": "declare const make: <R extends RpcRouter.RpcRouter<any, any>>(channelId: string) => RequestResolver.RequestResolver<Rpc.Request<RpcRouter.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<RpcRouter.RpcRouter.Request<R>>>"
   }
 ]

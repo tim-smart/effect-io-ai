@@ -1,17 +1,13 @@
-# greaterThan
+## greaterThan
 
 Test whether one value is _strictly greater than_ another.
-
-To import and use `greaterThan` from the "Order" module:
-
-```ts
-import * as Order from "effect/Order"
-// Can be accessed like this
-Order.greaterThan
-```
 
 **Signature**
 
 ```ts
-export declare const greaterThan: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean }
+declare const greaterThan: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Order.ts#L272)
+
+Since v2.0.0

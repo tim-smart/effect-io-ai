@@ -1,18 +1,14 @@
-# cursorPrevLine
+## cursorPrevLine
 
 Moves cursor to beginning of the line the specified number of rows up
 (default `1`).
 
-To import and use `cursorPrevLine` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.cursorPrevLine
-```
-
 **Signature**
 
 ```ts
-export declare const cursorPrevLine: (rows?: number) => Ansi
+declare const cursorPrevLine: (rows?: number) => Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L411)
+
+Since v1.0.0

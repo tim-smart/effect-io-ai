@@ -1,16 +1,8 @@
-# toArray
+## toArray
 
 Converts an `Option` into an `Array`.
 If the input is `None`, an empty array is returned.
 If the input is `Some`, its value is wrapped in a single-element array.
-
-To import and use `toArray` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.toArray
-```
 
 **Example**
 
@@ -27,5 +19,9 @@ console.log(Option.toArray(Option.none()))
 **Signature**
 
 ```ts
-export declare const toArray: <A>(self: Option<A>) => Array<A>
+declare const toArray: <A>(self: Option<A>) => Array<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1545)
+
+Since v2.0.0

@@ -1,12 +1,18 @@
-# ChannelException
+## ChannelException
 
 Represents a generic checked exception which occurs when a `Channel` is
 executed.
 
-To import and use `ChannelException` from the "Channel" module:
+**Signature**
 
 ```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.ChannelException
+export interface ChannelException<out E> {
+  readonly _tag: "ChannelException"
+  readonly [ChannelExceptionTypeId]: ChannelExceptionTypeId
+  readonly error: E
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L183)
+
+Since v2.0.0

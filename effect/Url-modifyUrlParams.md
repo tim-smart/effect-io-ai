@@ -1,4 +1,4 @@
-# modifyUrlParams
+## modifyUrlParams
 
 Reads, modifies, and updates the query parameters of a URL.
 
@@ -8,14 +8,6 @@ This function provides a functional way to interact with query parameters by
 reading the current parameters, applying a transformation function, and then
 writing the updated parameters back to the URL. It returns a new `URL` object
 with the modified parameters, ensuring immutability.
-
-To import and use `modifyUrlParams` from the "Url" module:
-
-```ts
-import * as Url from "@effect/platform/Url"
-// Can be accessed like this
-Url.modifyUrlParams
-```
 
 **Example**
 
@@ -33,8 +25,9 @@ console.log(changedUrl.toString())
 **Signature**
 
 ```ts
-export declare const modifyUrlParams: {
-  (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL
-  (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL
-}
+declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L306)
+
+Since v1.0.0

@@ -1,19 +1,15 @@
-# eraseLine
+## eraseLine
 
 Clears the current line.
 
 The current cursor position does not change.
 
-To import and use `eraseLine` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.eraseLine
-```
-
 **Signature**
 
 ```ts
-export declare const eraseLine: Ansi
+declare const eraseLine: Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L465)
+
+Since v1.0.0

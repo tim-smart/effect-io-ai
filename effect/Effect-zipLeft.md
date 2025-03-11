@@ -1,4 +1,4 @@
-# zipLeft
+## zipLeft
 
 Executes two effects sequentially, returning the result of the first effect
 and ignoring the result of the second.
@@ -20,21 +20,19 @@ Use this function when you are only interested in the result of the first
 effect but still need to run the second effect for its side effects, such as
 logging or performing a cleanup action.
 
-To import and use `zipLeft` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.zipLeft
-```
-
 **Example**
 
 ```ts
 import { Effect } from "effect"
 
-const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
-const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
+const task1 = Effect.succeed(1).pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Effect.log("task1 done"))
+)
+const task2 = Effect.succeed("hello").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Effect.log("task2 done"))
+)
 
 const program = Effect.zipLeft(task1, task2)
 
@@ -45,30 +43,17 @@ const program = Effect.zipLeft(task1, task2)
 // 1
 ```
 
+**See**
+
+- `zipRight` for a version that returns the result of the second
+effect.
+
 **Signature**
 
 ```ts
-export declare const zipLeft: {
-  <A2, E2, R2>(
-    that: Effect<A2, E2, R2>,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(
-    self: Effect<A, E, R>,
-    that: Effect<A2, E2, R2>,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<A, E | E2, R | R2>
-}
+declare const zipLeft: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<A, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12366)
+
+Since v2.0.0

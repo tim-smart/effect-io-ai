@@ -1,18 +1,14 @@
-# defaultOptions
+## defaultOptions
 
 The default layout options, which are suitable when you want to obtain output
 but do not care about the details.
 
-To import and use `defaultOptions` from the "Layout" module:
-
-```ts
-import * as Layout from "@effect/printer/Layout"
-// Can be accessed like this
-Layout.defaultOptions
-```
-
 **Signature**
 
 ```ts
-export declare const defaultOptions: Layout.Options
+declare const defaultOptions: Layout.Options
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L71)
+
+Since v1.0.0

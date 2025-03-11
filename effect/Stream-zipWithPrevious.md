@@ -1,15 +1,7 @@
-# zipWithPrevious
+## zipWithPrevious
 
 Zips each element with the previous element. Initially accompanied by
 `None`.
-
-To import and use `zipWithPrevious` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.zipWithPrevious
-```
 
 **Example**
 
@@ -30,5 +22,9 @@ const stream = Stream.zipWithPrevious(Stream.make(1, 2, 3, 4))
 **Signature**
 
 ```ts
-export declare const zipWithPrevious: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A], E, R>
+declare const zipWithPrevious: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A], E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6080)
+
+Since v2.0.0

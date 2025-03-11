@@ -1,19 +1,15 @@
-# MonoidEvery
+## MonoidEvery
 
-`boolean` monoid under conjunction, see also {@link SemigroupEvery}.
+`boolean` monoid under conjunction, see also `SemigroupEvery`.
 
 The `empty` value is `true`.
-
-To import and use `MonoidEvery` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.MonoidEvery
-```
 
 **Signature**
 
 ```ts
-export declare const MonoidEvery: monoid.Monoid<boolean>
+declare const MonoidEvery: monoid.Monoid<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L117)
+
+Since v0.24.0

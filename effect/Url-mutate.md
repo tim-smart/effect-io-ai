@@ -1,15 +1,7 @@
-# mutate
+## mutate
 
 This function clones the original `URL` object and applies a callback to the
 clone, allowing multiple updates at once.
-
-To import and use `mutate` from the "Url" module:
-
-```ts
-import * as Url from "@effect/platform/Url"
-// Can be accessed like this
-Url.mutate
-```
 
 **Example**
 
@@ -30,5 +22,9 @@ console.log("Mutated:", mutatedUrl.toString())
 **Signature**
 
 ```ts
-export declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL }
+declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L89)
+
+Since v1.0.0

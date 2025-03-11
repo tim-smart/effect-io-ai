@@ -1,160 +1,96 @@
 [
   {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mysql2",
-    "name": "From \"./MysqlClient.js\"",
-    "description": "Re-exports all named exports from the \"./MysqlClient.js\" module as `MysqlClient`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as MysqlClient from \"./MysqlClient.js\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index",
-      "path": [
-        "src",
-        "index.ts"
-      ]
-    },
-    "project": "@effect/sql-mysql2",
-    "name": "From \"./MysqlMigrator.js\"",
-    "description": "Re-exports all named exports from the \"./MysqlMigrator.js\" module as `MysqlMigrator`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * as MysqlMigrator from \"./MysqlMigrator.js\""
-  },
-  {
     "_tag": "Constant",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export declare const TypeId: typeof TypeId"
+    "signature": "declare const TypeId: unique symbol"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "MysqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "export declare const MysqlClient: Context.Tag<MysqlClient, MysqlClient>"
+    "signature": "declare const MysqlClient: Context.Tag<MysqlClient, MysqlClient>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "make",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": null
+    "signature": "declare const make: (options: MysqlClientConfig) => Effect.Effect<MysqlClient, SqlError, Scope | Reactivity.Reactivity>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "layerConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<MysqlClientConfig>) => Layer.Layer<MysqlClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: (config: MysqlClientConfig) => Layer.Layer<MysqlClient | Client.SqlClient, ConfigError | SqlError>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "makeCompiler",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": null
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler"
   },
   {
     "_tag": "Interface",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "MysqlClient",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -164,15 +100,11 @@
   {
     "_tag": "Interface",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "MysqlClientConfig",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -182,91 +114,43 @@
   {
     "_tag": "TypeAlias",
     "module": {
-      "name": "MysqlClient",
-      "path": [
-        "src",
-        "MysqlClient.ts"
-      ]
+      "name": "MysqlClient.ts",
+      "path": "src/MysqlClient.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "TypeId",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "export type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "MysqlMigrator",
-      "path": [
-        "src",
-        "MysqlMigrator.ts"
-      ]
+      "name": "MysqlMigrator.ts",
+      "path": "src/MysqlMigrator.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "run",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "export declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | MysqlClient | Client.SqlClient | CommandExecutor | R2>"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "MysqlMigrator",
-      "path": [
-        "src",
-        "MysqlMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-mysql2",
-    "name": "From \"@effect/sql/Migrator\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator\""
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "MysqlMigrator",
-      "path": [
-        "src",
-        "MysqlMigrator.ts"
-      ]
-    },
-    "project": "@effect/sql-mysql2",
-    "name": "From \"@effect/sql/Migrator/FileSystem\"",
-    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "exports",
-    "signature": "export * from \"@effect/sql/Migrator/FileSystem\""
+    "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | MysqlClient | Client.SqlClient | CommandExecutor | R2>"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "MysqlMigrator",
-      "path": [
-        "src",
-        "MysqlMigrator.ts"
-      ]
+      "name": "MysqlMigrator.ts",
+      "path": "src/MysqlMigrator.ts"
     },
     "project": "@effect/sql-mysql2",
     "name": "layer",
-    "description": null,
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": null
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, MysqlClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>"
   }
 ]

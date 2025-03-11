@@ -1,18 +1,11 @@
-# isPositive
+## isPositive
 
 Checks if a given `BigDecimal` is positive.
-
-To import and use `isPositive` from the "BigDecimal" module:
-
-```ts
-import * as BigDecimal from "effect/BigDecimal"
-// Can be accessed like this
-BigDecimal.isPositive
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isPositive, unsafeFromString } from "effect/BigDecimal"
 
 assert.deepStrictEqual(isPositive(unsafeFromString("-1")), false)
@@ -23,5 +16,9 @@ assert.deepStrictEqual(isPositive(unsafeFromString("1")), true)
 **Signature**
 
 ```ts
-export declare const isPositive: (n: BigDecimal) => boolean
+declare const isPositive: (n: BigDecimal) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1125)
+
+Since v2.0.0

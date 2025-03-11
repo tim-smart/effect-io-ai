@@ -1,17 +1,13 @@
-# makeSpan
+## makeSpan
 
 Create a new span for tracing.
-
-To import and use `makeSpan` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.makeSpan
-```
 
 **Signature**
 
 ```ts
-export declare const makeSpan: (name: string, options?: Tracer.SpanOptions) => Effect<Tracer.Span>
+declare const makeSpan: (name: string, options?: Tracer.SpanOptions) => Effect<Tracer.Span>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12781)
+
+Since v2.0.0

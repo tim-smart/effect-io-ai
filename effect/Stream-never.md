@@ -1,17 +1,13 @@
-# never
+## never
 
 The stream that never produces any value or fails with any error.
-
-To import and use `never` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.never
-```
 
 **Signature**
 
 ```ts
-export declare const never: Stream<never, never, never>
+declare const never: Stream<never, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3148)
+
+Since v2.0.0

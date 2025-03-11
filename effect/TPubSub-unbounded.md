@@ -1,17 +1,13 @@
-# unbounded
+## unbounded
 
 Creates an unbounded `TPubSub`.
-
-To import and use `unbounded` from the "TPubSub" module:
-
-```ts
-import * as TPubSub from "effect/TPubSub"
-// Can be accessed like this
-TPubSub.unbounded
-```
 
 **Signature**
 
 ```ts
-export declare const unbounded: <A>() => STM.STM<TPubSub<A>>
+declare const unbounded: <A>() => STM.STM<TPubSub<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TPubSub.ts#L200)
+
+Since v2.0.0

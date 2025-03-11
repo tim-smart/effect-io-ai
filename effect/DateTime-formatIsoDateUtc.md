@@ -1,17 +1,13 @@
-# formatIsoDateUtc
+## formatIsoDateUtc
 
 Format a `DateTime` as a UTC ISO date string.
-
-To import and use `formatIsoDateUtc` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.formatIsoDateUtc
-```
 
 **Signature**
 
 ```ts
-export declare const formatIsoDateUtc: (self: DateTime) => string
+declare const formatIsoDateUtc: (self: DateTime) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1531)
+
+Since v3.6.0

@@ -1,4 +1,4 @@
-# flatten
+## flatten
 
 Flattens an `Option` of `Option` into a single `Option`.
 
@@ -12,16 +12,12 @@ remains `None`.
 This is useful for simplifying nested `Option` structures that may arise
 during functional operations.
 
-To import and use `flatten` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.flatten
-```
-
 **Signature**
 
 ```ts
-export declare const flatten: <A>(self: Option<Option<A>>) => Option<A>
+declare const flatten: <A>(self: Option<Option<A>>) => Option<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1170)
+
+Since v2.0.0

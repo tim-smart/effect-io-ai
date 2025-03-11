@@ -1,18 +1,11 @@
-# between
+## between
 
 Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
-
-To import and use `between` from the "BigInt" module:
-
-```ts
-import * as BigInt from "effect/BigInt"
-// Can be accessed like this
-BigInt.between
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { BigInt } from "effect"
 
 const between = BigInt.between({ minimum: 0n, maximum: 5n })
@@ -25,8 +18,9 @@ assert.deepStrictEqual(between(6n), false)
 **Signature**
 
 ```ts
-export declare const between: {
-  (options: { minimum: bigint; maximum: bigint }): (self: bigint) => boolean
-  (self: bigint, options: { minimum: bigint; maximum: bigint }): boolean
-}
+declare const between: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => boolean; (self: bigint, options: { minimum: bigint; maximum: bigint; }): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L293)
+
+Since v2.0.0

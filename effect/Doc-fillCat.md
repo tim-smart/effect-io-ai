@@ -1,4 +1,4 @@
-# fillCat
+## fillCat
 
 The `fillCat` combinator concatenates all documents in a collection
 horizontally by placing a `empty` between each pair of documents as long as
@@ -9,16 +9,12 @@ and the process is repeated for all documents in the collection.
 be separated with `empty` instead of newlines. See `fillSep` if you want a
 `space` instead.
 
-To import and use `fillCat` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.fillCat
-```
-
 **Signature**
 
 ```ts
-export declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>
+declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1191)
+
+Since v1.0.0

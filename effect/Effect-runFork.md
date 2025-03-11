@@ -1,4 +1,4 @@
-# runFork
+## runFork
 
 Runs an effect in the background, returning a fiber that can be observed or
 interrupted.
@@ -29,14 +29,6 @@ observation or management, like logging, monitoring, or scheduled tasks.
 This function is ideal if you don't need the result immediately or if the
 effect is part of a larger concurrent workflow.
 
-To import and use `runFork` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.runFork
-```
-
 **Example**
 
 ```ts
@@ -45,7 +37,10 @@ import { Effect, Console, Schedule, Fiber } from "effect"
 
 //      ┌─── Effect<number, never, never>
 //      ▼
-const program = Effect.repeat(Console.log("running..."), Schedule.spaced("200 millis"))
+const program = Effect.repeat(
+  Console.log("running..."),
+  Schedule.spaced("200 millis")
+)
 
 //      ┌─── RuntimeFiber<number, never>
 //      ▼
@@ -59,5 +54,9 @@ setTimeout(() => {
 **Signature**
 
 ```ts
-export declare const runFork: <A, E>(effect: Effect<A, E>, options?: Runtime.RunForkOptions) => Fiber.RuntimeFiber<A, E>
+declare const runFork: <A, E>(effect: Effect<A, E>, options?: Runtime.RunForkOptions) => Fiber.RuntimeFiber<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11815)
+
+Since v2.0.0

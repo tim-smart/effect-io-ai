@@ -1,4 +1,4 @@
-# catchTag
+## catchTag
 
 Catches and handles specific errors by their `_tag` field, which is used as a
 discriminator.
@@ -12,14 +12,6 @@ handling, ensuring that only specific errors are caught and handled.
 
 The error type must have a readonly `_tag` field to use `catchTag`. This
 field is used to identify and match errors.
-
-To import and use `catchTag` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.catchTag
-```
 
 **Example**
 
@@ -53,22 +45,23 @@ const program = Effect.gen(function* () {
 //      ▼
 const recovered = program.pipe(
   // Only handle HttpError errors
-  Effect.catchTag("HttpError", (_HttpError) => Effect.succeed("Recovering from HttpError"))
+  Effect.catchTag("HttpError", (_HttpError) =>
+    Effect.succeed("Recovering from HttpError")
+  )
 )
 ```
+
+**See**
+
+- `catchTags` for a version that allows you to handle multiple error
+types at once.
 
 **Signature**
 
 ```ts
-export declare const catchTag: {
-  <K extends E extends { _tag: string } ? E["_tag"] : never, E, A1, E1, R1>(
-    k: K,
-    f: (e: NoInfer<Extract<E, { _tag: K }>>) => Effect<A1, E1, R1>
-  ): <A, R>(self: Effect<A, E, R>) => Effect<A1 | A, E1 | Exclude<E, { _tag: K }>, R1 | R>
-  <A, E, R, K extends E extends { _tag: string } ? E["_tag"] : never, R1, E1, A1>(
-    self: Effect<A, E, R>,
-    k: K,
-    f: (e: Extract<E, { _tag: K }>) => Effect<A1, E1, R1>
-  ): Effect<A | A1, E1 | Exclude<E, { _tag: K }>, R | R1>
-}
+declare const catchTag: { <K extends E extends { _tag: string; } ? E["_tag"] : never, E, A1, E1, R1>(k: K, f: (e: NoInfer<Extract<E, { _tag: K; }>>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A1 | A, E1 | Exclude<E, { _tag: K; }>, R1 | R>; <A, E, R, K extends E extends { _tag: string; } ? E["_tag"] : never, R1, E1, A1>(self: Effect<A, E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Effect<A1, E1, R1>): Effect<A | A1, E1 | Exclude<E, { _tag: K; }>, R | R1>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3811)
+
+Since v2.0.0

@@ -1,14 +1,6 @@
-# withCurrentZoneOffset
+## withCurrentZoneOffset
 
 Provide the `CurrentTimeZone` to an effect, using a offset.
-
-To import and use `withCurrentZoneOffset` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.withCurrentZoneOffset
-```
 
 **Example**
 
@@ -24,8 +16,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const withCurrentZoneOffset: {
-  (offset: number): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>
-  <A, E, R>(effect: Effect.Effect<A, E, R>, offset: number): Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>
-}
+declare const withCurrentZoneOffset: { (offset: number): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; <A, E, R>(effect: Effect.Effect<A, E, R>, offset: number): Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1063)
+
+Since v3.6.0

@@ -1,21 +1,14 @@
-# greaterThan
+## greaterThan
 
 Returns an iterator that traverse entries in order with keys greater than the
 specified key.
 
-To import and use `greaterThan` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.greaterThan
-```
-
 **Signature**
 
 ```ts
-export declare const greaterThan: {
-  <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
-  <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<[K, V]>
-}
+declare const greaterThan: { <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>; <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<[K, V]>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L178)
+
+Since v2.0.0

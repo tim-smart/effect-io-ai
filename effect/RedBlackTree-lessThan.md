@@ -1,21 +1,14 @@
-# lessThan
+## lessThan
 
 Returns an iterator that traverse entries in order with keys less than the
 specified key.
 
-To import and use `lessThan` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.lessThan
-```
-
 **Signature**
 
 ```ts
-export declare const lessThan: {
-  <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>
-  <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<[K, V]>
-}
+declare const lessThan: { <K>(key: K): <V>(self: RedBlackTree<K, V>) => Iterable<[K, V]>; <K, V>(self: RedBlackTree<K, V>, key: K): Iterable<[K, V]>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L271)
+
+Since v2.0.0

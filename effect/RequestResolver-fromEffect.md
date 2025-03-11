@@ -1,19 +1,13 @@
-# fromEffect
+## fromEffect
 
 Constructs a data source from an effectual function.
-
-To import and use `fromEffect` from the "RequestResolver" module:
-
-```ts
-import * as RequestResolver from "effect/RequestResolver"
-// Can be accessed like this
-RequestResolver.fromEffect
-```
 
 **Signature**
 
 ```ts
-export declare const fromEffect: <R, A extends Request.Request<any, any>>(
-  f: (a: A) => Effect.Effect<Request.Request.Success<A>, Request.Request.Error<A>, R>
-) => RequestResolver<A, R>
+declare const fromEffect: <R, A extends Request.Request<any, any>>(f: (a: A) => Effect.Effect<Request.Request.Success<A>, Request.Request.Error<A>, R>) => RequestResolver<A, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L282)
+
+Since v2.0.0

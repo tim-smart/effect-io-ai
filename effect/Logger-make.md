@@ -1,15 +1,7 @@
-# make
+## make
 
 Creates a custom logger that formats log messages according to the provided
 function.
-
-To import and use `make` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.make
-```
 
 **Example**
 
@@ -23,12 +15,15 @@ const logger = Logger.make(({ logLevel, message }) => {
 const task1 = Effect.logDebug("task1 done")
 const task2 = Effect.logDebug("task2 done")
 
-const program = Effect.gen(function* () {
+const program = Effect.gen(function*() {
   yield* Effect.log("start")
   yield* task1
   yield* task2
   yield* Effect.log("done")
-}).pipe(Logger.withMinimumLogLevel(LogLevel.Debug), Effect.provide(Logger.replace(Logger.defaultLogger, logger)))
+}).pipe(
+  Logger.withMinimumLogLevel(LogLevel.Debug),
+  Effect.provide(Logger.replace(Logger.defaultLogger, logger))
+)
 
 // Effect.runFork(program)
 // [INFO] start
@@ -40,7 +35,9 @@ const program = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const make: <Message, Output>(
-  log: (options: Logger.Options<Message>) => Output
-) => Logger<Message, Output>
+declare const make: <Message, Output>(log: (options: Logger.Options<Message>) => Output) => Logger<Message, Output>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L110)
+
+Since v2.0.0

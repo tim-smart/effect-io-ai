@@ -1,18 +1,14 @@
-# scheduleRecurs
+## scheduleRecurs
 
 Create a `MicroSchedule` that will stop repeating after the specified number
 of attempts.
 
-To import and use `scheduleRecurs` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.scheduleRecurs
-```
-
 **Signature**
 
 ```ts
-export declare const scheduleRecurs: (n: number) => MicroSchedule
+declare const scheduleRecurs: (n: number) => MicroSchedule
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L2449)
+
+Since v3.4.6

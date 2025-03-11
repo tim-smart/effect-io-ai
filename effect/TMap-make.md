@@ -1,17 +1,13 @@
-# make
+## make
 
 Makes a new `TMap` that is initialized with specified values.
-
-To import and use `make` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <K, V>(...entries: Array<readonly [K, V]>) => STM.STM<TMap<K, V>>
+declare const make: <K, V>(...entries: Array<readonly [K, V]>) => STM.STM<TMap<K, V>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L201)
+
+Since v2.0.0

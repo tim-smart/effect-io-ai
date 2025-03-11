@@ -1,4 +1,4 @@
-# getSemigroupUnion
+## getSemigroupUnion
 
 A `Semigroup` that creates a union of two records.
 
@@ -8,17 +8,10 @@ If a key exists in only one of the records, that key-value pair is included as i
 
 For example, when using the `MonoidSum`, values for matching keys will be summed.
 
-To import and use `getSemigroupUnion` from the "Record" module:
-
-```ts
-import * as Record from "@effect/typeclass/data/Record"
-// Can be accessed like this
-Record.getSemigroupUnion
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getSemigroupUnion } from "@effect/typeclass/data/Record"
 
@@ -28,7 +21,9 @@ assert.deepStrictEqual(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a:
 **Signature**
 
 ```ts
-export declare const getSemigroupUnion: <A>(
-  value: semigroup.Semigroup<A>
-) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
+declare const getSemigroupUnion: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L228)
+
+Since v0.29.4

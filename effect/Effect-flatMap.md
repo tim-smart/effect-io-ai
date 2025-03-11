@@ -1,4 +1,4 @@
-# flatMap
+## flatMap
 
 Chains effects to produce new `Effect` instances, useful for combining
 operations that depend on previous results.
@@ -29,21 +29,16 @@ Use `flatMap` when you need to chain multiple effects, ensuring that each
 step produces a new `Effect` while flattening any nested effects that may
 occur.
 
-To import and use `flatMap` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.flatMap
-```
-
 **Example**
 
 ```ts
 import { pipe, Effect } from "effect"
 
 // Function to apply a discount safely to a transaction amount
-const applyDiscount = (total: number, discountRate: number): Effect.Effect<number, Error> =>
+const applyDiscount = (
+  total: number,
+  discountRate: number
+): Effect.Effect<number, Error> =>
   discountRate === 0
     ? Effect.fail(new Error("Discount rate cannot be zero"))
     : Effect.succeed(total - (total * discountRate) / 100)
@@ -61,11 +56,16 @@ const finalAmount = pipe(
 // Output: 95
 ```
 
+**See**
+
+- `tap` for a version that ignores the result of the effect.
+
 **Signature**
 
 ```ts
-export declare const flatMap: {
-  <A, B, E1, R1>(f: (a: A) => Effect<B, E1, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R1 | R>
-  <A, E, R, B, E1, R1>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E1, R1>): Effect<B, E | E1, R | R1>
-}
+declare const flatMap: { <A, B, E1, R1>(f: (a: A) => Effect<B, E1, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E1, R1>): Effect<B, E | E1, R | R1>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8663)
+
+Since v2.0.0

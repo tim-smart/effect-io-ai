@@ -1,4 +1,4 @@
-# parallelErrors
+## parallelErrors
 
 Combines all errors from concurrent operations into a single error.
 
@@ -15,14 +15,6 @@ When using this function, any errors that occur in the concurrently running
 operations will be grouped together into a single error. This helps simplify
 error handling in cases where you don't need to differentiate between each
 failure, but simply want to know that multiple failures occurred.
-
-To import and use `parallelErrors` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.parallelErrors
-```
 
 **Example**
 
@@ -50,5 +42,9 @@ const program = Effect.all([fail1, fail2, die], {
 **Signature**
 
 ```ts
-export declare const parallelErrors: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Array<E>, R>
+declare const parallelErrors: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Array<E>, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4111)
+
+Since v2.0.0

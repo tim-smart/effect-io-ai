@@ -1,20 +1,14 @@
-# collectAllWhileEffect
+## collectAllWhileEffect
 
 Accumulates incoming elements into a chunk as long as they verify effectful
 predicate `p`.
 
-To import and use `collectAllWhileEffect` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.collectAllWhileEffect
-```
-
 **Signature**
 
 ```ts
-export declare const collectAllWhileEffect: <In, E, R>(
-  predicate: (input: In) => Effect.Effect<boolean, E, R>
-) => Sink<Chunk.Chunk<In>, In, In, E, R>
+declare const collectAllWhileEffect: <In, E, R>(predicate: (input: In) => Effect.Effect<boolean, E, R>) => Sink<Chunk.Chunk<In>, In, In, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L231)
+
+Since v2.0.0

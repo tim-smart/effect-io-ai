@@ -1,16 +1,8 @@
-# structuredLogger
+## structuredLogger
 
 The structured logger provides detailed log outputs, structured in a way that
 retains comprehensive traceability of the events, suitable for deeper
 analysis and troubleshooting.
-
-To import and use `structuredLogger` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.structuredLogger
-```
 
 **Example**
 
@@ -37,16 +29,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const structuredLogger: Logger<
-  unknown,
-  {
-    readonly logLevel: string
-    readonly fiberId: string
-    readonly timestamp: string
-    readonly message: unknown
-    readonly cause: string | undefined
-    readonly annotations: Record<string, unknown>
-    readonly spans: Record<string, number>
-  }
->
+declare const structuredLogger: Logger<unknown, { readonly logLevel: string; readonly fiberId: string; readonly timestamp: string; readonly message: unknown; readonly cause: string | undefined; readonly annotations: Record<string, unknown>; readonly spans: Record<string, number>; }>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L549)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# fromEffect
+## fromEffect
 
 Creates a new supervisor that constantly yields effect when polled
-
-To import and use `fromEffect` from the "Supervisor" module:
-
-```ts
-import * as Supervisor from "effect/Supervisor"
-// Can be accessed like this
-Supervisor.fromEffect
-```
 
 **Signature**
 
 ```ts
-export declare const fromEffect: <A>(effect: Effect.Effect<A>) => Supervisor<A>
+declare const fromEffect: <A>(effect: Effect.Effect<A>) => Supervisor<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Supervisor.ts#L125)
+
+Since v2.0.0

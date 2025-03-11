@@ -1,17 +1,13 @@
-# scope
+## scope
 
 Access the current `MicroScope`.
-
-To import and use `scope` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.scope
-```
 
 **Signature**
 
 ```ts
-export declare const scope: Micro<MicroScope, never, MicroScope>
+declare const scope: Micro<MicroScope, never, MicroScope>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L3401)
+
+Since v3.4.0

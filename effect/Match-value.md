@@ -1,4 +1,4 @@
-# value
+## value
 
 Creates a matcher from a specific value.
 
@@ -10,15 +10,7 @@ enabling structured pattern matching on objects, primitives, or any data
 structure.
 
 Once the matcher is created, you can use pattern-matching functions like
-{@link when} to define how different cases should be handled.
-
-To import and use `value` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.value
-```
+`when` to define how different cases should be handled.
 
 **Example**
 
@@ -31,7 +23,10 @@ const input = { name: "John", age: 30 }
 // Create a matcher for the specific object
 const result = Match.value(input).pipe(
   // Match when the 'name' property is "John"
-  Match.when({ name: "John" }, (user) => `${user.name} is ${user.age} years old`),
+  Match.when(
+    { name: "John" },
+    (user) => `${user.name} is ${user.age} years old`
+  ),
   // Provide a fallback if no match is found
   Match.orElse(() => "Oh, not John")
 )
@@ -40,8 +35,16 @@ console.log(result)
 // Output: "John is 30 years old"
 ```
 
+**See**
+
+- `type` for creating a matcher from a specific type.
+
 **Signature**
 
 ```ts
-export declare const value: <const I>(i: I) => Matcher<I, Types.Without<never>, I, never, I>
+declare const value: <const I>(i: I) => Matcher<I, Types.Without<never>, I, never, I>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L235)
+
+Since v1.0.0

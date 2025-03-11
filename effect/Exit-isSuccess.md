@@ -1,17 +1,13 @@
-# isSuccess
+## isSuccess
 
 Returns `true` if the specified `Exit` is a `Success`, `false` otherwise.
-
-To import and use `isSuccess` from the "Exit" module:
-
-```ts
-import * as Exit from "effect/Exit"
-// Can be accessed like this
-Exit.isSuccess
-```
 
 **Signature**
 
 ```ts
-export declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
+declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L102)
+
+Since v2.0.0

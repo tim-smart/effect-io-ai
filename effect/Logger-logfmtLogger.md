@@ -1,15 +1,7 @@
-# logfmtLogger
+## logfmtLogger
 
 This logger outputs logs in a human-readable format that is easy to read
 during development or in a production console.
-
-To import and use `logfmtLogger` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.logfmtLogger
-```
 
 **Example**
 
@@ -28,5 +20,9 @@ const program = Effect.log("message1", "message2").pipe(
 **Signature**
 
 ```ts
-export declare const logfmtLogger: Logger<unknown, string>
+declare const logfmtLogger: Logger<unknown, string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L468)
+
+Since v2.0.0

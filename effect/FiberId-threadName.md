@@ -1,18 +1,14 @@
-# threadName
+## threadName
 
 Creates a string representing the name of the current thread of execution
 represented by the specified `FiberId`.
 
-To import and use `threadName` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.threadName
-```
-
 **Signature**
 
 ```ts
-export declare const threadName: (self: FiberId) => string
+declare const threadName: (self: FiberId) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L171)
+
+Since v2.0.0

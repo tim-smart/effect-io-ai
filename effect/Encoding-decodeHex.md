@@ -1,17 +1,13 @@
-# decodeHex
+## decodeHex
 
 Decodes a hex encoded `string` into a `Uint8Array`.
-
-To import and use `decodeHex` from the "Encoding" module:
-
-```ts
-import * as Encoding from "effect/Encoding"
-// Can be accessed like this
-Encoding.decodeHex
-```
 
 **Signature**
 
 ```ts
-export declare const decodeHex: (str: string) => Either.Either<Uint8Array, DecodeException>
+declare const decodeHex: (str: string) => Either.Either<Uint8Array, DecodeException>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L81)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# isRecipientAddress
+## isRecipientAddress
 
 Ensure that given value is a RecipientAddress
-
-To import and use `isRecipientAddress` from the "RecipientAddress" module:
-
-```ts
-import * as RecipientAddress from "@effect/cluster/RecipientAddress"
-// Can be accessed like this
-RecipientAddress.isRecipientAddress
-```
 
 **Signature**
 
 ```ts
-export declare function isRecipientAddress(value: unknown): value is RecipientAddress
+declare const isRecipientAddress: (value: unknown) => value is RecipientAddress
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L56)
+
+Since v1.0.0

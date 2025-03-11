@@ -1,17 +1,13 @@
-# toRecord
+## toRecord
 
 To record
-
-To import and use `toRecord` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.toRecord
-```
 
 **Signature**
 
 ```ts
-export declare const toRecord: (self: Cookies) => Record<string, string>
+declare const toRecord: (self: Cookies) => Record<string, string>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L678)
+
+Since v1.0.0

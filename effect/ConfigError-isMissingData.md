@@ -1,18 +1,14 @@
-# isMissingData
+## isMissingData
 
 Returns `true` if the specified `ConfigError` is an `MissingData`, `false`
 otherwise.
 
-To import and use `isMissingData` from the "ConfigError" module:
-
-```ts
-import * as ConfigError from "effect/ConfigError"
-// Can be accessed like this
-ConfigError.isMissingData
-```
-
 **Signature**
 
 ```ts
-export declare const isMissingData: (self: ConfigError) => self is MissingData
+declare const isMissingData: (self: ConfigError) => self is MissingData
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L224)
+
+Since v2.0.0

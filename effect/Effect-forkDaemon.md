@@ -1,4 +1,4 @@
-# forkDaemon
+## forkDaemon
 
 Creates a long-running background fiber that is independent of its parent.
 
@@ -11,14 +11,6 @@ the global scope closes or the fiber completes naturally. This makes it
 useful for tasks that need to run in the background independently, such as
 periodic logging, monitoring, or background data processing.
 
-To import and use `forkDaemon` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.forkDaemon
-```
-
 **Example**
 
 ```ts
@@ -26,7 +18,10 @@ Effect.forkDaemon
 import { Effect, Console, Schedule } from "effect"
 
 // Daemon fiber that logs a message repeatedly every second
-const daemon = Effect.repeat(Console.log("daemon: still running!"), Schedule.fixed("1 second"))
+const daemon = Effect.repeat(
+  Console.log("daemon: still running!"),
+  Schedule.fixed("1 second")
+)
 
 const parent = Effect.gen(function* () {
   console.log("parent: started!")
@@ -54,5 +49,9 @@ const parent = Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const forkDaemon: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
+declare const forkDaemon: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6176)
+
+Since v2.0.0

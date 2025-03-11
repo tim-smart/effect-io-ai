@@ -1,17 +1,13 @@
-# context
+## context
 
 Accesses the whole context of the channel.
-
-To import and use `context` from the "Channel" module:
-
-```ts
-import * as Channel from "effect/Channel"
-// Can be accessed like this
-Channel.context
-```
 
 **Signature**
 
 ```ts
-export declare const context: <Env>() => Channel<never, unknown, never, unknown, Context.Context<Env>, unknown, Env>
+declare const context: <Env>() => Channel<never, unknown, never, unknown, Context.Context<Env>, unknown, Env>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L766)
+
+Since v2.0.0

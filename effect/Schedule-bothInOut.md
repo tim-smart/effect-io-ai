@@ -1,4 +1,4 @@
-# bothInOut
+## bothInOut
 
 Combines two schedules, preserving both their inputs and outputs.
 
@@ -13,24 +13,12 @@ It recurs if either schedule wants to continue, using the shorter delay.
 This is useful when you want to track multiple schedules simultaneously,
 ensuring that both receive the same inputs and produce combined results.
 
-To import and use `bothInOut` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.bothInOut
-```
-
 **Signature**
 
 ```ts
-export declare const bothInOut: {
-  <Out2, In2, R2>(
-    that: Schedule<Out2, In2, R2>
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<[Out, Out2], readonly [In, In2], R2 | R>
-  <Out, In, R, Out2, In2, R2>(
-    self: Schedule<Out, In, R>,
-    that: Schedule<Out2, In2, R2>
-  ): Schedule<[Out, Out2], readonly [In, In2], R | R2>
-}
+declare const bothInOut: { <Out2, In2, R2>(that: Schedule<Out2, In2, R2>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<[Out, Out2], readonly [In, In2], R2 | R>; <Out, In, R, Out2, In2, R2>(self: Schedule<Out, In, R>, that: Schedule<Out2, In2, R2>): Schedule<[Out, Out2], readonly [In, In2], R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L343)
+
+Since v2.0.0

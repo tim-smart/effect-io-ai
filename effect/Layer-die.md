@@ -1,17 +1,13 @@
-# die
+## die
 
 Constructs a layer that dies with the specified defect.
-
-To import and use `die` from the "Layer" module:
-
-```ts
-import * as Layer from "effect/Layer"
-// Can be accessed like this
-Layer.die
-```
 
 **Signature**
 
 ```ts
-export declare const die: (defect: unknown) => Layer<unknown>
+declare const die: (defect: unknown) => Layer<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L247)
+
+Since v2.0.0

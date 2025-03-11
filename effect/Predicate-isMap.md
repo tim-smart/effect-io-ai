@@ -1,18 +1,11 @@
-# isMap
+## isMap
 
 Tests if a value is a `Map`.
-
-To import and use `isMap` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isMap
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isMap } from "effect/Predicate"
 
 assert.deepStrictEqual(isMap(new Map()), true)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(isMap(undefined), false)
 **Signature**
 
 ```ts
-export declare const isMap: (input: unknown) => input is Map<unknown, unknown>
+declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L208)
+
+Since v2.0.0

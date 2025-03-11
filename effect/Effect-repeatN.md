@@ -1,4 +1,4 @@
-# repeatN
+## repeatN
 
 Repeats an effect a specified number of times or until the first failure.
 
@@ -17,14 +17,6 @@ further repetitions are attempted.
 This function is useful for tasks that need to be retried a fixed number of
 times or for performing repeated actions without requiring a schedule.
 
-To import and use `repeatN` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.repeatN
-```
-
 **Example**
 
 ```ts
@@ -39,8 +31,9 @@ const program = Effect.repeatN(action, 2)
 **Signature**
 
 ```ts
-export declare const repeatN: {
-  (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
-  <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>
-}
+declare const repeatN: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10035)
+
+Since v2.0.0

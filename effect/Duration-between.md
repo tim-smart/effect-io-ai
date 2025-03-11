@@ -1,20 +1,13 @@
-# between
+## between
 
 Checks if a `Duration` is between a `minimum` and `maximum` value.
-
-To import and use `between` from the "Duration" module:
-
-```ts
-import * as Duration from "effect/Duration"
-// Can be accessed like this
-Duration.between
-```
 
 **Signature**
 
 ```ts
-export declare const between: {
-  (options: { minimum: DurationInput; maximum: DurationInput }): (self: DurationInput) => boolean
-  (self: DurationInput, options: { minimum: DurationInput; maximum: DurationInput }): boolean
-}
+declare const between: { (options: { minimum: DurationInput; maximum: DurationInput; }): (self: DurationInput) => boolean; (self: DurationInput, options: { minimum: DurationInput; maximum: DurationInput; }): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L520)
+
+Since v2.0.0

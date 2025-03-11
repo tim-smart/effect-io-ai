@@ -1,14 +1,6 @@
-# distanceDuration
+## distanceDuration
 
 Calulate the distance between two `DateTime` values.
-
-To import and use `distanceDuration` from the "DateTime" module:
-
-```ts
-import * as DateTime from "effect/DateTime"
-// Can be accessed like this
-DateTime.distanceDuration
-```
 
 **Example**
 
@@ -27,8 +19,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const distanceDuration: {
-  (other: DateTime): (self: DateTime) => Duration.Duration
-  (self: DateTime, other: DateTime): Duration.Duration
-}
+declare const distanceDuration: { (other: DateTime): (self: DateTime) => Duration.Duration; (self: DateTime, other: DateTime): Duration.Duration; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L715)
+
+Since v3.6.0

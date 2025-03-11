@@ -1,17 +1,13 @@
-# isSchema
+## isSchema
 
 Tests if a value is a `Schema`.
-
-To import and use `isSchema` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.isSchema
-```
 
 **Signature**
 
 ```ts
-export declare const isSchema: (u: unknown) => u is Schema.Any
+declare const isSchema: (u: unknown) => u is Schema.Any
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L664)
+
+Since v3.10.0

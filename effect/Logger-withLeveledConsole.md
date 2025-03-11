@@ -1,22 +1,17 @@
-# withLeveledConsole
+## withLeveledConsole
 
 Takes a `Logger<M, O>` and returns a logger that calls the respective `Console` method
 based on the log level.
-
-To import and use `withLeveledConsole` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.withLeveledConsole
-```
 
 **Example**
 
 ```ts
 import { Logger, Effect } from "effect"
 
-const loggerLayer = Logger.replace(Logger.defaultLogger, Logger.withLeveledConsole(Logger.stringLogger))
+const loggerLayer = Logger.replace(
+  Logger.defaultLogger,
+  Logger.withLeveledConsole(Logger.stringLogger),
+)
 
 Effect.gen(function* () {
   yield* Effect.logError("an error")
@@ -27,5 +22,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-export declare const withLeveledConsole: <M, O>(self: Logger<M, O>) => Logger<M, void>
+declare const withLeveledConsole: <M, O>(self: Logger<M, O>) => Logger<M, void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L265)
+
+Since v3.8.0

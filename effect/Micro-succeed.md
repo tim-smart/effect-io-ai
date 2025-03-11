@@ -1,17 +1,13 @@
-# succeed
+## succeed
 
 Creates a `Micro` effect that will succeed with the specified constant value.
-
-To import and use `succeed` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.succeed
-```
 
 **Signature**
 
 ```ts
-export declare const succeed: <A>(value: A) => Micro<A>
+declare const succeed: <A>(value: A) => Micro<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L827)
+
+Since v3.4.0

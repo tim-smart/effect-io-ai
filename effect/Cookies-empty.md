@@ -1,17 +1,13 @@
-# empty
+## empty
 
 An empty Cookies object
-
-To import and use `empty` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: Cookies
+declare const empty: Cookies
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L296)
+
+Since v1.0.0

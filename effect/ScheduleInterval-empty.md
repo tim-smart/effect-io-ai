@@ -1,17 +1,13 @@
-# empty
+## empty
 
 An `Interval` of zero-width.
-
-To import and use `empty` from the "ScheduleInterval" module:
-
-```ts
-import * as ScheduleInterval from "effect/ScheduleInterval"
-// Can be accessed like this
-ScheduleInterval.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: Interval
+declare const empty: Interval
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScheduleInterval.ts#L49)
+
+Since v2.0.0

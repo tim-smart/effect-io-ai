@@ -1,20 +1,16 @@
-# bearer
+## bearer
 
 Create an Bearer token security scheme.
 
 You can implement some api middleware for this security scheme using
 `HttpApiBuilder.middlewareSecurity`.
 
-To import and use `bearer` from the "HttpApiSecurity" module:
-
-```ts
-import * as HttpApiSecurity from "@effect/platform/HttpApiSecurity"
-// Can be accessed like this
-HttpApiSecurity.bearer
-```
-
 **Signature**
 
 ```ts
-export declare const bearer: Bearer
+declare const bearer: Bearer
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSecurity.ts#L102)
+
+Since v1.0.0

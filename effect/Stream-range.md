@@ -1,14 +1,6 @@
-# range
+## range
 
 Constructs a stream from a range of integers, including both endpoints.
-
-To import and use `range` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.range
-```
 
 **Example**
 
@@ -25,5 +17,9 @@ const stream = Stream.range(1, 5)
 **Signature**
 
 ```ts
-export declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
+declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3812)
+
+Since v2.0.0

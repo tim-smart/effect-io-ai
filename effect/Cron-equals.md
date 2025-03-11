@@ -1,17 +1,13 @@
-# equals
+## equals
 
 Checks if two `Cron`s are equal.
-
-To import and use `equals` from the "Cron" module:
-
-```ts
-import * as Cron from "effect/Cron"
-// Can be accessed like this
-Cron.equals
-```
 
 **Signature**
 
 ```ts
-export declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean }
+declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L552)
+
+Since v2.0.0

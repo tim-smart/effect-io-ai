@@ -1,4 +1,4 @@
-# dieOption
+## dieOption
 
 Retrieves the first `Die` defect in a `Cause`, if present.
 
@@ -8,16 +8,12 @@ This function returns an `Option` containing the first unexpected failure
 (`Die`) discovered. It's helpful for diagnosing the primary defect in a chain
 of errors.
 
-To import and use `dieOption` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.dieOption
-```
-
 **Signature**
 
 ```ts
-export declare const dieOption: <E>(self: Cause<E>) => Option.Option<unknown>
+declare const dieOption: <E>(self: Cause<E>) => Option.Option<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L903)
+
+Since v2.0.0

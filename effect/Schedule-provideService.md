@@ -1,4 +1,4 @@
-# provideService
+## provideService
 
 Returns a new schedule with a single required service provided, eliminating
 the need for external dependencies.
@@ -12,26 +12,12 @@ multiple services, consider using `provideContext` instead.
 This is useful when working with schedules that require a specific service,
 such as logging, metrics, or configuration retrieval.
 
-To import and use `provideService` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.provideService
-```
-
 **Signature**
 
 ```ts
-export declare const provideService: {
-  <I, S>(
-    tag: Context.Tag<I, S>,
-    service: Types.NoInfer<S>
-  ): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, Exclude<R, I>>
-  <Out, In, R, I, S>(
-    self: Schedule<Out, In, R>,
-    tag: Context.Tag<I, S>,
-    service: Types.NoInfer<S>
-  ): Schedule<Out, In, Exclude<R, I>>
-}
+declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: Types.NoInfer<S>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, Exclude<R, I>>; <Out, In, R, I, S>(self: Schedule<Out, In, R>, tag: Context.Tag<I, S>, service: Types.NoInfer<S>): Schedule<Out, In, Exclude<R, I>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1466)
+
+Since v2.0.0

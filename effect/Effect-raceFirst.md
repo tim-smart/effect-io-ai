@@ -1,4 +1,4 @@
-# raceFirst
+## raceFirst
 
 Races two effects and returns the result of the first one to complete.
 
@@ -32,14 +32,6 @@ Effect.raceFirst(Effect.disconnect(task1), Effect.disconnect(task2))
 
 This allows both effects to complete independently while still terminating the losing effect in the background.
 
-To import and use `raceFirst` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.raceFirst
-```
-
 **Example**
 
 ```ts
@@ -49,15 +41,21 @@ import { Effect, Console } from "effect"
 const task1 = Effect.succeed("task1").pipe(
   Effect.delay("100 millis"),
   Effect.tap(Console.log("task1 done")),
-  Effect.onInterrupt(() => Console.log("task1 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task1 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 const task2 = Effect.succeed("task2").pipe(
   Effect.delay("200 millis"),
   Effect.tap(Console.log("task2 done")),
-  Effect.onInterrupt(() => Console.log("task2 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task2 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 
-const program = Effect.raceFirst(task1, task2).pipe(Effect.tap(Console.log("more work...")))
+const program = Effect.raceFirst(task1, task2).pipe(
+  Effect.tap(Console.log("more work..."))
+)
 
 // Effect.runPromiseExit(program).then(console.log)
 // Output:
@@ -76,15 +74,21 @@ import { Effect, Console } from "effect"
 const task1 = Effect.fail("task1").pipe(
   Effect.delay("100 millis"),
   Effect.tap(Console.log("task1 done")),
-  Effect.onInterrupt(() => Console.log("task1 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task1 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 const task2 = Effect.succeed("task2").pipe(
   Effect.delay("200 millis"),
   Effect.tap(Console.log("task2 done")),
-  Effect.onInterrupt(() => Console.log("task2 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task2 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 
-const program = Effect.raceFirst(task1, task2).pipe(Effect.tap(Console.log("more work...")))
+const program = Effect.raceFirst(task1, task2).pipe(
+  Effect.tap(Console.log("more work..."))
+)
 
 // Effect.runPromiseExit(program).then(console.log)
 // Output:
@@ -105,18 +109,23 @@ import { Effect, Console } from "effect"
 const task1 = Effect.succeed("task1").pipe(
   Effect.delay("100 millis"),
   Effect.tap(Console.log("task1 done")),
-  Effect.onInterrupt(() => Console.log("task1 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task1 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 const task2 = Effect.succeed("task2").pipe(
   Effect.delay("200 millis"),
   Effect.tap(Console.log("task2 done")),
-  Effect.onInterrupt(() => Console.log("task2 interrupted").pipe(Effect.delay("100 millis")))
+  Effect.onInterrupt(() =>
+    Console.log("task2 interrupted").pipe(Effect.delay("100 millis"))
+  )
 )
 
 // Race the two tasks with disconnect to allow quicker return
-const program = Effect.raceFirst(Effect.disconnect(task1), Effect.disconnect(task2)).pipe(
-  Effect.tap(Console.log("more work..."))
-)
+const program = Effect.raceFirst(
+  Effect.disconnect(task1),
+  Effect.disconnect(task2)
+).pipe(Effect.tap(Console.log("more work...")))
 
 // Effect.runPromiseExit(program).then(console.log)
 // Output:
@@ -129,8 +138,9 @@ const program = Effect.raceFirst(Effect.disconnect(task1), Effect.disconnect(tas
 **Signature**
 
 ```ts
-export declare const raceFirst: {
-  <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>
-}
+declare const raceFirst: { <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9179)
+
+Since v2.0.0

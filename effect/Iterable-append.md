@@ -1,20 +1,13 @@
-# append
+## append
 
 Append an element to the end of an `Iterable`, creating a new `Iterable`.
-
-To import and use `append` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.append
-```
 
 **Signature**
 
 ```ts
-export declare const append: {
-  <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>
-  <A, B>(self: Iterable<A>, last: B): Iterable<A | B>
-}
+declare const append: { <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, last: B): Iterable<A | B>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L169)
+
+Since v2.0.0

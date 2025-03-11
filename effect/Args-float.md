@@ -1,19 +1,15 @@
-# float
+## float
 
 Creates a floating point number argument.
 
 Can optionally provide a custom argument name (defaults to `"float"`).
 
-To import and use `float` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.float
-```
-
 **Signature**
 
 ```ts
-export declare const float: (config?: Args.BaseArgsConfig) => Args<number>
+declare const float: (config?: Args.BaseArgsConfig) => Args<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L281)
+
+Since v1.0.0

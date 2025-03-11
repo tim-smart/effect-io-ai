@@ -1,18 +1,14 @@
-# isParallel
+## isParallel
 
 Returns `true` if the specified `ExecutionStrategy` is an instance of
 `Sequential`, `false` otherwise.
 
-To import and use `isParallel` from the "ExecutionStrategy" module:
-
-```ts
-import * as ExecutionStrategy from "effect/ExecutionStrategy"
-// Can be accessed like this
-ExecutionStrategy.isParallel
-```
-
 **Signature**
 
 ```ts
-export declare const isParallel: (self: ExecutionStrategy) => self is Parallel
+declare const isParallel: (self: ExecutionStrategy) => self is Parallel
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ExecutionStrategy.ts#L90)
+
+Since v2.0.0

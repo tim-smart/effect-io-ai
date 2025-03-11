@@ -1,19 +1,15 @@
-# MonoidEqv
+## MonoidEqv
 
 `boolean` monoid under equivalence.
 
 The `empty` value is `true`.
 
-To import and use `MonoidEqv` from the "Boolean" module:
-
-```ts
-import * as Boolean from "@effect/typeclass/data/Boolean"
-// Can be accessed like this
-Boolean.MonoidEqv
-```
-
 **Signature**
 
 ```ts
-export declare const MonoidEqv: monoid.Monoid<boolean>
+declare const MonoidEqv: monoid.Monoid<boolean>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L147)
+
+Since v0.24.0

@@ -1,4 +1,4 @@
-# partitionMap
+## partitionMap
 
 Splits an `Option` into two `Option`s based on the result of a mapping
 function that produces an `Either`.
@@ -18,19 +18,12 @@ If the input `Option` is `None`, both returned `Option`s are `None`.
 This utility is useful for filtering and categorizing the contents of an
 `Option` based on a bifurcating computation.
 
-To import and use `partitionMap` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.partitionMap
-```
-
 **Signature**
 
 ```ts
-export declare const partitionMap: {
-  <A, B, C>(f: (a: A) => Either<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]
-  <A, B, C>(self: Option<A>, f: (a: A) => Either<C, B>): [left: Option<B>, right: Option<C>]
-}
+declare const partitionMap: { <A, B, C>(f: (a: A) => Either<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]; <A, B, C>(self: Option<A>, f: (a: A) => Either<C, B>): [left: Option<B>, right: Option<C>]; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1569)
+
+Since v2.0.0

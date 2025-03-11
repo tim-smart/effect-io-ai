@@ -1,4 +1,4 @@
-# runSyncExit
+## runSyncExit
 
 Runs an effect synchronously and returns the result as an `Exit` type.
 
@@ -6,7 +6,6 @@ Runs an effect synchronously and returns the result as an `Exit` type.
 
 This function executes the provided effect synchronously and returns an `Exit`
 type that encapsulates the outcome of the effect:
-
 - If the effect succeeds, the result is wrapped in a `Success`.
 - If the effect fails, it returns a `Failure` containing a `Cause` that explains
   the failure.
@@ -19,20 +18,11 @@ in nature.
 **When to Use**
 
 Use this function when:
-
 - You want to handle both success and failure outcomes in a structured way using the `Exit` type.
 - You are working with effects that are purely synchronous and do not involve asynchronous operations.
 - You need to debug or inspect failures, including their causes, in a detailed manner.
 
 Avoid using this function for effects that involve asynchronous operations, as it will fail with a `Die` cause.
-
-To import and use `runSyncExit` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.runSyncExit
-```
 
 **Example**
 
@@ -87,5 +77,9 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 **Signature**
 
 ```ts
-export declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
+declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12102)
+
+Since v2.0.0

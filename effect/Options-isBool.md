@@ -1,18 +1,14 @@
-# isBool
+## isBool
 
 Returns `true` if the specified `Options` is a boolean flag, `false`
 otherwise.
 
-To import and use `isBool` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.isBool
-```
-
 **Signature**
 
 ```ts
-export declare const isBool: <A>(self: Options<A>) => boolean
+declare const isBool: <A>(self: Options<A>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L388)
+
+Since v1.0.0

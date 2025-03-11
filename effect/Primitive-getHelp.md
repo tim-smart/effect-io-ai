@@ -1,17 +1,13 @@
-# getHelp
+## getHelp
 
 Returns help documentation for a primitive type.
-
-To import and use `getHelp` from the "Primitive" module:
-
-```ts
-import * as Primitive from "@effect/cli/Primitive"
-// Can be accessed like this
-Primitive.getHelp
-```
 
 **Signature**
 
 ```ts
-export declare const getHelp: <A>(self: Primitive<A>) => Span
+declare const getHelp: <A>(self: Primitive<A>) => Span
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Primitive.ts#L128)
+
+Since v1.0.0

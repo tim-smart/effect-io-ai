@@ -1,4 +1,4 @@
-# andThen
+## andThen
 
 Chains two actions, where the second action can depend on the result of the
 first.
@@ -23,23 +23,15 @@ combining effects or handling computations that must happen in order.
 
 The second action can be:
 
-- A constant value (similar to {@link as})
-- A function returning a value (similar to {@link map})
+- A constant value (similar to `as`)
+- A function returning a value (similar to `map`)
 - A `Promise`
 - A function returning a `Promise`
 - An `Effect`
-- A function returning an `Effect` (similar to {@link flatMap})
+- A function returning an `Effect` (similar to `flatMap`)
 
 **Note:** `andThen` works well with both `Option` and `Either` types,
 treating them as effects.
-
-To import and use `andThen` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.andThen
-```
 
 **Example**
 
@@ -48,7 +40,10 @@ Effect.andThen
 import { pipe, Effect } from "effect"
 
 // Function to apply a discount safely to a transaction amount
-const applyDiscount = (total: number, discountRate: number): Effect.Effect<number, Error> =>
+const applyDiscount = (
+  total: number,
+  discountRate: number
+): Effect.Effect<number, Error> =>
   discountRate === 0
     ? Effect.fail(new Error("Discount rate cannot be zero"))
     : Effect.succeed(total - (total * discountRate) / 100)
@@ -80,40 +75,9 @@ const result2 = pipe(
 **Signature**
 
 ```ts
-export declare const andThen: {
-  <A, X>(
-    f: (a: NoInfer<A>) => X
-  ): <E, R>(
-    self: Effect<A, E, R>
-  ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
-    ? Effect<A1, E | E1, R | R1>
-    : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, E | Cause.UnknownException, R>
-      : Effect<X, E, R>
-  <X>(
-    f: NotFunction<X>
-  ): <A, E, R>(
-    self: Effect<A, E, R>
-  ) => [X] extends [Effect<infer A1, infer E1, infer R1>]
-    ? Effect<A1, E | E1, R | R1>
-    : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, E | Cause.UnknownException, R>
-      : Effect<X, E, R>
-  <A, E, R, X>(
-    self: Effect<A, E, R>,
-    f: (a: NoInfer<A>) => X
-  ): [X] extends [Effect<infer A1, infer E1, infer R1>]
-    ? Effect<A1, E | E1, R | R1>
-    : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, E | Cause.UnknownException, R>
-      : Effect<X, E, R>
-  <A, E, R, X>(
-    self: Effect<A, E, R>,
-    f: NotFunction<X>
-  ): [X] extends [Effect<infer A1, infer E1, infer R1>]
-    ? Effect<A1, E | E1, R | R1>
-    : [X] extends [PromiseLike<infer A1>]
-      ? Effect<A1, E | Cause.UnknownException, R>
-      : Effect<X, E, R>
-}
+declare const andThen: { <A, X>(f: (a: NoInfer<A>) => X): <E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <X>(f: NotFunction<X>): <A, E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => X): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: NotFunction<X>): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8743)
+
+Since v2.0.0

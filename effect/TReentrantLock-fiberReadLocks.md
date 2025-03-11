@@ -1,17 +1,13 @@
-# fiberReadLocks
+## fiberReadLocks
 
 Retrieves the number of acquired read locks for this fiber.
-
-To import and use `fiberReadLocks` from the "TReentrantLock" module:
-
-```ts
-import * as TReentrantLock from "effect/TReentrantLock"
-// Can be accessed like this
-TReentrantLock.fiberReadLocks
-```
 
 **Signature**
 
 ```ts
-export declare const fiberReadLocks: (self: TReentrantLock) => STM.STM<number>
+declare const fiberReadLocks: (self: TReentrantLock) => STM.STM<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TReentrantLock.ts#L90)
+
+Since v2.0.0

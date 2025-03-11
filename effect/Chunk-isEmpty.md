@@ -1,17 +1,13 @@
-# isEmpty
+## isEmpty
 
 Determines if the chunk is empty.
-
-To import and use `isEmpty` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.isEmpty
-```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: Chunk<A>) => boolean
+declare const isEmpty: <A>(self: Chunk<A>) => boolean
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L817)
+
+Since v2.0.0

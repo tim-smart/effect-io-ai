@@ -1,25 +1,22 @@
-# range
+## range
 
 Return a `NonEmptyArray` containing a range of integers, including both endpoints.
-
-To import and use `range` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.range
-```
 
 **Example**
 
 ```ts
 import { range } from "effect/Array"
 
-assert.deepStrictEqual(range(1, 3), [1, 2, 3])
+const result = range(1, 3)
+console.log(result) // [1, 2, 3]
 ```
 
 **Signature**
 
 ```ts
-export declare const range: (start: number, end: number) => NonEmptyArray<number>
+declare const range: (start: number, end: number) => NonEmptyArray<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L126)
+
+Since v2.0.0

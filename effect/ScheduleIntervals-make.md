@@ -1,17 +1,13 @@
-# make
+## make
 
 Creates a new `Intervals` from a `List` of `Interval`s.
-
-To import and use `make` from the "ScheduleIntervals" module:
-
-```ts
-import * as ScheduleIntervals from "effect/ScheduleIntervals"
-// Can be accessed like this
-ScheduleIntervals.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: (intervals: Check.Chunk<Interval.Interval>) => Intervals
+declare const make: (intervals: Check.Chunk<Interval.Interval>) => Intervals
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScheduleIntervals.ts#L37)
+
+Since v2.0.0

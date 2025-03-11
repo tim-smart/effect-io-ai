@@ -1,17 +1,13 @@
-# nextBoolean
+## nextBoolean
 
 Returns the next boolean value from the pseudo-random number generator.
-
-To import and use `nextBoolean` from the "Random" module:
-
-```ts
-import * as Random from "effect/Random"
-// Can be accessed like this
-Random.nextBoolean
-```
 
 **Signature**
 
 ```ts
-export declare const nextBoolean: Effect.Effect<boolean, never, never>
+declare const nextBoolean: Effect.Effect<boolean, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Random.ts#L81)
+
+Since v2.0.0

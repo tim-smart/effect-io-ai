@@ -1,22 +1,14 @@
-# linear
+## linear
 
 A helper method to create histogram bucket boundaries for a histogram
 with linear increasing values.
 
-To import and use `linear` from the "MetricBoundaries" module:
-
-```ts
-import * as MetricBoundaries from "effect/MetricBoundaries"
-// Can be accessed like this
-MetricBoundaries.linear
-```
-
 **Signature**
 
 ```ts
-export declare const linear: (options: {
-  readonly start: number
-  readonly width: number
-  readonly count: number
-}) => MetricBoundaries
+declare const linear: (options: { readonly start: number; readonly width: number; readonly count: number; }) => MetricBoundaries
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MetricBoundaries.ts#L48)
+
+Since v2.0.0

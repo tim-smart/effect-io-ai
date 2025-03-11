@@ -1,11 +1,21 @@
-# FunctionWithSpanOptions
+## FunctionWithSpanOptions
 
 Wraps a function that returns an effect with a new span for tracing.
 
-To import and use `FunctionWithSpanOptions` from the "Effect" module:
+**Signature**
 
 ```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.FunctionWithSpanOptions
+export interface FunctionWithSpanOptions {
+  readonly name: string
+  readonly attributes?: Record<string, unknown> | undefined
+  readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined
+  readonly parent?: Tracer.AnySpan | undefined
+  readonly root?: boolean | undefined
+  readonly context?: Context.Context<never> | undefined
+  readonly kind?: Tracer.SpanKind | undefined
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12844)
+
+Since v3.2.0

@@ -1,26 +1,23 @@
-# isEmpty
+## isEmpty
 
 Determine if an `Iterable` is empty
-
-To import and use `isEmpty` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.isEmpty
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isEmpty } from "effect/Iterable"
 
-assert.deepStrictEqual(isEmpty([]), true)
-assert.deepStrictEqual(isEmpty([1, 2, 3]), false)
+assert.deepStrictEqual(isEmpty([]), true);
+assert.deepStrictEqual(isEmpty([1, 2, 3]), false);
 ```
 
 **Signature**
 
 ```ts
-export declare const isEmpty: <A>(self: Iterable<A>) => self is Iterable<never>
+declare const isEmpty: <A>(self: Iterable<A>) => self is Iterable<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L252)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# foldWeightedDecompose
+## foldWeightedDecompose
 
 Creates a sink that folds elements of type `In` into a structure of type
 `S`, until `max` worth of elements (determined by the `costFn`) have been
@@ -33,22 +33,12 @@ choice than to yield a value that will cross the threshold.
 `Sink.foldWeightedDecomposeEffect` allows the decompose function to return an
 effect value, and consequently it allows the sink to fail.
 
-To import and use `foldWeightedDecompose` from the "Sink" module:
-
-```ts
-import * as Sink from "effect/Sink"
-// Can be accessed like this
-Sink.foldWeightedDecompose
-```
-
 **Signature**
 
 ```ts
-export declare const foldWeightedDecompose: <S, In>(options: {
-  readonly initial: S
-  readonly maxCost: number
-  readonly cost: (s: S, input: In) => number
-  readonly decompose: (input: In) => Chunk.Chunk<In>
-  readonly body: (s: S, input: In) => S
-}) => Sink<S, In, In>
+declare const foldWeightedDecompose: <S, In>(options: { readonly initial: S; readonly maxCost: number; readonly cost: (s: S, input: In) => number; readonly decompose: (input: In) => Chunk.Chunk<In>; readonly body: (s: S, input: In) => S; }) => Sink<S, In, In>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L845)
+
+Since v2.0.0

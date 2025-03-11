@@ -1,11 +1,13 @@
-# TimeoutException
+## TimeoutException
 
 Represents a checked exception which occurs when a timeout occurs.
 
-To import and use `TimeoutException` from the "Micro" module:
+**Signature**
 
 ```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.TimeoutException
+declare class TimeoutException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4404)
+
+Since v3.4.4

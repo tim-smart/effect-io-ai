@@ -1,4 +1,4 @@
-# tagsExhaustive
+## tagsExhaustive
 
 Matches values based on their `_tag` field and requires handling of all
 possible cases.
@@ -6,18 +6,10 @@ possible cases.
 **Details**
 
 This function is designed for **discriminated unions** where every possible
-`_tag` value must have a corresponding handler. Unlike {@link tags}, this
+`_tag` value must have a corresponding handler. Unlike `tags`, this
 function ensures **exhaustiveness**, meaning all cases must be explicitly
 handled. If a `_tag` value is missing from the mapping, TypeScript will
 report an error.
-
-To import and use `tagsExhaustive` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.tagsExhaustive
-```
 
 **Example**
 
@@ -37,15 +29,9 @@ const match = pipe(
 **Signature**
 
 ```ts
-export declare const tagsExhaustive: <
-  R,
-  Ret,
-  P extends { readonly [Tag in Types.Tags<"_tag", R> & string]: (_: Extract<R, Record<"_tag", Tag>>) => Ret } & {
-    readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never
-  }
->(
-  fields: P
-) => <I, F, A, Pr>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => [Pr] extends [never] ? (u: I) => Unify<A | ReturnType<P[keyof P]>> : Unify<A | ReturnType<P[keyof P]>>
+declare const tagsExhaustive: <R, Ret, P extends { readonly [Tag in Types.Tags<"_tag", R> & string]: (_: Extract<R, Record<"_tag", Tag>>) => Ret; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A | ReturnType<P[keyof P]>> : Unify<A | ReturnType<P[keyof P]>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L862)
+
+Since v1.0.0

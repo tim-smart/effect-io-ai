@@ -1,18 +1,11 @@
-# nand
+## nand
 
 Combines two boolean using NAND: `!(self && that)`.
-
-To import and use `nand` from the "Boolean" module:
-
-```ts
-import * as Boolean from "effect/Boolean"
-// Can be accessed like this
-Boolean.nand
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { nand } from "effect/Boolean"
 
 assert.deepStrictEqual(nand(true, true), false)
@@ -24,5 +17,9 @@ assert.deepStrictEqual(nand(false, false), true)
 **Signature**
 
 ```ts
-export declare const nand: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean }
+declare const nand: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L128)
+
+Since v2.0.0

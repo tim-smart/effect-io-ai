@@ -1,14 +1,6 @@
-# allocate
+## allocate
 
 Creates a new `Array` of the specified length.
-
-To import and use `allocate` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.allocate
-```
 
 **Example**
 
@@ -16,11 +8,15 @@ Array.allocate
 import { Array } from "effect"
 
 const result = Array.allocate<number>(3)
-assert.deepStrictEqual(result.length, 3)
+console.log(result) // [ <3 empty items> ]
 ```
 
 **Signature**
 
 ```ts
-export declare const allocate: <A = never>(n: number) => Array<A | undefined>
+declare const allocate: <A = never>(n: number) => Array<A | undefined>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L80)
+
+Since v2.0.0

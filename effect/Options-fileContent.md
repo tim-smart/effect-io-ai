@@ -1,17 +1,13 @@
-# fileContent
+## fileContent
 
 Creates a parameter expecting path to a file and reads its contents.
-
-To import and use `fileContent` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.fileContent
-```
 
 **Signature**
 
 ```ts
-export declare const fileContent: (name: string) => Options<readonly [path: string, content: Uint8Array]>
+declare const fileContent: (name: string) => Options<readonly [path: string, content: Uint8Array]>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L242)
+
+Since v1.0.0

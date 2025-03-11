@@ -1,4 +1,4 @@
-# promise
+## promise
 
 Creates an `Effect` that represents an asynchronous computation guaranteed to
 succeed.
@@ -11,7 +11,7 @@ will be treated as a "defect".
 This defect is not a standard error but indicates a flaw in the logic that
 was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
-{@link catchAllDefect}.
+`catchAllDefect`.
 
 **Interruptions**
 
@@ -21,14 +21,6 @@ wrapped `Promise` API.
 **When to Use**
 
 Use this function when you are sure the operation will not reject.
-
-To import and use `promise` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.promise
-```
 
 **Example**
 
@@ -51,8 +43,16 @@ const delay = (message: string) =>
 const program = delay("Async operation completed successfully!")
 ```
 
+**See**
+
+- `tryPromise` for a version that can handle failures.
+
 **Signature**
 
 ```ts
-export declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
+declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3065)
+
+Since v2.0.0

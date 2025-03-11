@@ -1,18 +1,11 @@
-# sum
+## sum
 
 Provides an addition operation on `number`s.
-
-To import and use `sum` from the "Number" module:
-
-```ts
-import * as Number from "effect/Number"
-// Can be accessed like this
-Number.sum
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { sum } from "effect/Number"
 
 assert.deepStrictEqual(sum(2, 3), 5)
@@ -21,5 +14,9 @@ assert.deepStrictEqual(sum(2, 3), 5)
 **Signature**
 
 ```ts
-export declare const sum: { (that: number): (self: number) => number; (self: number, that: number): number }
+declare const sum: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L47)
+
+Since v2.0.0

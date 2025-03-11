@@ -1,14 +1,6 @@
-# isSome
+## isSome
 
 Checks whether an `Option` contains a value (`Some`).
-
-To import and use `isSome` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.isSome
-```
 
 **Example**
 
@@ -22,8 +14,16 @@ console.log(Option.isSome(Option.none()))
 // Output: false
 ```
 
+**See**
+
+- `isNone` for the opposite check.
+
 **Signature**
 
 ```ts
-export declare const isSome: <A>(self: Option<A>) => self is Some<A>
+declare const isSome: <A>(self: Option<A>) => self is Some<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L258)
+
+Since v2.0.0

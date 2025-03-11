@@ -1,4 +1,4 @@
-# logWithLevel
+## logWithLevel
 
 Logs messages or error causes at a specified log level.
 
@@ -9,20 +9,16 @@ specifying the desired log level (e.g., DEBUG, INFO, ERROR). It provides
 flexibility in categorizing logs based on their importance or severity,
 making it easier to filter logs during debugging or production monitoring.
 
-To import and use `logWithLevel` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.logWithLevel
-```
-
 **Example**
 
 ```ts
 import { Cause, Effect, LogLevel } from "effect"
 
-const program = Effect.logWithLevel(LogLevel.Error, "Critical error encountered", Cause.die("System failure!"))
+const program = Effect.logWithLevel(
+  LogLevel.Error,
+  "Critical error encountered",
+  Cause.die("System failure!")
+)
 
 // Effect.runFork(program)
 // Output:
@@ -32,5 +28,9 @@ const program = Effect.logWithLevel(LogLevel.Error, "Critical error encountered"
 **Signature**
 
 ```ts
-export declare const logWithLevel: (level: LogLevel.LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
+declare const logWithLevel: (level: LogLevel.LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10687)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# make
+## make
 
 Creates a new `SubscriptionRef` with the specified value.
-
-To import and use `make` from the "SubscriptionRef" module:
-
-```ts
-import * as SubscriptionRef from "effect/SubscriptionRef"
-// Can be accessed like this
-SubscriptionRef.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <A>(value: A) => Effect.Effect<SubscriptionRef<A>>
+declare const make: <A>(value: A) => Effect.Effect<SubscriptionRef<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SubscriptionRef.ts#L148)
+
+Since v2.0.0

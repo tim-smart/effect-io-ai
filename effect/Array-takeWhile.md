@@ -1,23 +1,14 @@
-# takeWhile
+## takeWhile
 
 Calculate the longest initial subarray for which all element satisfy the specified predicate, creating a new `Array`.
-
-To import and use `takeWhile` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.takeWhile
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers = [1, 3, 2, 4, 1, 2]
-const result = Array.takeWhile(numbers, (x) => x < 4)
-assert.deepStrictEqual(result, [1, 3, 2])
+const result = Array.takeWhile([1, 3, 2, 4, 1, 2], x => x < 4)
+console.log(result) // [1, 3, 2]
 
 // Explanation:
 // - The function starts with the first element (`1`), which is less than `4`, so it adds `1` to the result.
@@ -29,10 +20,9 @@ assert.deepStrictEqual(result, [1, 3, 2])
 **Signature**
 
 ```ts
-export declare const takeWhile: {
-  <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => Array<B>
-  <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>
-  <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Array<B>
-  <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>
-}
+declare const takeWhile: { <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => Array<B>; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Array<B>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L855)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# size
+## size
 
 Return the number of elements in a `Iterable`.
-
-To import and use `size` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.size
-```
 
 **Signature**
 
 ```ts
-export declare const size: <A>(self: Iterable<A>) => number
+declare const size: <A>(self: Iterable<A>) => number
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L263)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# rangle
+## rangle
 
 A document containing a single `>` character.
-
-To import and use `rangle` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.rangle
-```
 
 **Signature**
 
 ```ts
-export declare const rangle: Doc<never>
+declare const rangle: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L791)
+
+Since v1.0.0

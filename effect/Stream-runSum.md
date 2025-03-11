@@ -1,17 +1,13 @@
-# runSum
+## runSum
 
 Runs the stream to a sink which sums elements, provided they are Numeric.
-
-To import and use `runSum` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.runSum
-```
 
 **Signature**
 
 ```ts
-export declare const runSum: <E, R>(self: Stream<number, E, R>) => Effect.Effect<number, E, R>
+declare const runSum: <E, R>(self: Stream<number, E, R>) => Effect.Effect<number, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4459)
+
+Since v2.0.0

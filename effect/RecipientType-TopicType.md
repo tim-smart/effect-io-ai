@@ -1,11 +1,13 @@
-# TopicType
+## TopicType
 
 A TopicType can live on multiple Pods at the same time.
 
-To import and use `TopicType` from the "RecipientType" module:
+**Signature**
 
 ```ts
-import * as RecipientType from "@effect/cluster/RecipientType"
-// Can be accessed like this
-RecipientType.TopicType
+declare class TopicType<Msg>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L58)
+
+Since v1.0.0

@@ -1,4 +1,4 @@
-# loop
+## loop
 
 Repeatedly executes a loop with a state, collecting results or discarding
 them based on configuration.
@@ -39,14 +39,6 @@ based on the `discard` option.
 This is useful for implementing loops where you need to perform effectful
 computations repeatedly, such as processing items in a list, generating
 values, or performing iterative updates.
-
-To import and use `loop` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.loop
-```
 
 **Example**
 
@@ -106,42 +98,9 @@ const result = Effect.loop(
 **Signature**
 
 ```ts
-export declare const loop: {
-  <A, B extends A, C, E, R>(
-    initial: A,
-    options: {
-      readonly while: Refinement<A, B>
-      readonly step: (b: B) => A
-      readonly body: (b: B) => Effect<C, E, R>
-      readonly discard?: false | undefined
-    }
-  ): Effect<Array<C>, E, R>
-  <A, C, E, R>(
-    initial: A,
-    options: {
-      readonly while: (a: A) => boolean
-      readonly step: (a: A) => A
-      readonly body: (a: A) => Effect<C, E, R>
-      readonly discard?: false | undefined
-    }
-  ): Effect<Array<C>, E, R>
-  <A, B extends A, C, E, R>(
-    initial: A,
-    options: {
-      readonly while: Refinement<A, B>
-      readonly step: (b: B) => A
-      readonly body: (b: B) => Effect<C, E, R>
-      readonly discard: true
-    }
-  ): Effect<void, E, R>
-  <A, C, E, R>(
-    initial: A,
-    options: {
-      readonly while: (a: A) => boolean
-      readonly step: (a: A) => A
-      readonly body: (a: A) => Effect<C, E, R>
-      readonly discard: true
-    }
-  ): Effect<void, E, R>
-}
+declare const loop: { <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9855)
+
+Since v2.0.0

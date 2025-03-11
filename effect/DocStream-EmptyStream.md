@@ -1,11 +1,15 @@
-# EmptyStream
+## EmptyStream
 
 Represents the an empty `Doc`.
 
-To import and use `EmptyStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.EmptyStream
+export interface EmptyStream<A> extends DocStream.Variance<A> {
+  readonly _tag: "EmptyStream"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L96)
+
+Since v1.0.0

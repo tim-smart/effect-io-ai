@@ -1,14 +1,6 @@
-# fromIterable
+## fromIterable
 
 Creates a new `Stream` from an iterable collection of values.
-
-To import and use `fromIterable` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.fromIterable
-```
 
 **Example**
 
@@ -26,5 +18,9 @@ const stream = Stream.fromIterable(numbers)
 **Signature**
 
 ```ts
-export declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<A>
+declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2085)
+
+Since v2.0.0

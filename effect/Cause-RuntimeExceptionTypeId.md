@@ -1,4 +1,4 @@
-# RuntimeExceptionTypeId
+## RuntimeExceptionTypeId
 
 A unique symbol identifying the `RuntimeException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies a `RuntimeException`. This is
 typically used internally by the library to recognize checked exceptions that
 occur during runtime.
 
-To import and use `RuntimeExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.RuntimeExceptionTypeId
-```
+- `RuntimeException` Create or work with a `RuntimeException`
 
 **Signature**
 
 ```ts
-export declare const RuntimeExceptionTypeId: typeof RuntimeExceptionTypeId
+declare const RuntimeExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L77)
+
+Since v2.0.0

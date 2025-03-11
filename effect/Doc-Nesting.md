@@ -1,11 +1,16 @@
-# Nesting
+## Nesting
 
 Represents a document that reacts to the current nesting level.
 
-To import and use `Nesting` from the "Doc" module:
+**Signature**
 
 ```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.Nesting
+export interface Nesting<A> extends Doc.Variance<A> {
+  readonly _tag: "Nesting"
+  readonly react: (level: number) => Doc<A>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L291)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# dieSync
+## dieSync
 
 The stream that dies with the specified lazily evaluated defect.
-
-To import and use `dieSync` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.dieSync
-```
 
 **Signature**
 
 ```ts
-export declare const dieSync: (evaluate: LazyArg<unknown>) => Stream<never>
+declare const dieSync: (evaluate: LazyArg<unknown>) => Stream<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1257)
+
+Since v2.0.0

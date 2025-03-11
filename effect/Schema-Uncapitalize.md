@@ -1,11 +1,13 @@
-# Uncapitalize
+## Uncapitalize
 
 This schema converts a string to uncapitalized one.
 
-To import and use `Uncapitalize` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.Uncapitalize
+declare class Uncapitalize
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4676)
+
+Since v3.10.0

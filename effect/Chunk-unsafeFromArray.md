@@ -1,17 +1,13 @@
-# unsafeFromArray
+## unsafeFromArray
 
 Wraps an array into a chunk without copying, unsafe on mutable arrays
-
-To import and use `unsafeFromArray` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.unsafeFromArray
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeFromArray: <A>(self: ReadonlyArray<A>) => Chunk<A>
+declare const unsafeFromArray: <A>(self: ReadonlyArray<A>) => Chunk<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L387)
+
+Since v2.0.0

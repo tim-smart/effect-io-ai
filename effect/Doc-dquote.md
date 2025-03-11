@@ -1,17 +1,13 @@
-# dquote
+## dquote
 
 A document containing a single `"` character.
-
-To import and use `dquote` from the "Doc" module:
-
-```ts
-import * as Doc from "@effect/printer/Doc"
-// Can be accessed like this
-Doc.dquote
-```
 
 **Signature**
 
 ```ts
-export declare const dquote: Doc<never>
+declare const dquote: Doc<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L743)
+
+Since v1.0.0

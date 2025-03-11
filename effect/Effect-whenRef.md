@@ -1,4 +1,4 @@
-# whenRef
+## whenRef
 
 Executes an effect conditionally based on the value of a `Ref` that satisfies
 a predicate.
@@ -12,19 +12,12 @@ an `Option.some`. If the predicate is not satisfied, the effect is skipped,
 and the result is `Option.none`. In both cases, the current value of the
 `Ref` is included in the result.
 
-To import and use `whenRef` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.whenRef
-```
-
 **Signature**
 
 ```ts
-export declare const whenRef: {
-  <S>(ref: Ref.Ref<S>, predicate: Predicate<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<[S, Option.Option<A>], E, R>
-  <A, E, R, S>(self: Effect<A, E, R>, ref: Ref.Ref<S>, predicate: Predicate<S>): Effect<[S, Option.Option<A>], E, R>
-}
+declare const whenRef: { <S>(ref: Ref.Ref<S>, predicate: Predicate<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<[S, Option.Option<A>], E, R>; <A, E, R, S>(self: Effect<A, E, R>, ref: Ref.Ref<S>, predicate: Predicate<S>): Effect<[S, Option.Option<A>], E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8597)
+
+Since v2.0.0

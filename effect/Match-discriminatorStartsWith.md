@@ -1,4 +1,4 @@
-# discriminatorStartsWith
+## discriminatorStartsWith
 
 Matches values where a specified field starts with a given prefix.
 
@@ -13,14 +13,6 @@ Instead of checking for exact matches, this function lets you match values
 that share a common prefix. For example, if your discriminant field contains
 hierarchical names like `"A"`, `"A.A"`, and `"B"`, you can match all values
 starting with `"A"` using a single rule.
-
-To import and use `discriminatorStartsWith` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.discriminatorStartsWith
-```
 
 **Example**
 
@@ -42,19 +34,9 @@ console.log(match({ type: "A.A" })) // 1
 **Signature**
 
 ```ts
-export declare const discriminatorStartsWith: <D extends string>(
-  field: D
-) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(
-  pattern: P,
-  f: Fn
-) => <I, F, A, Pr>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => Matcher<
-  I,
-  Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>,
-  Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>,
-  A | ReturnType<Fn>,
-  Pr,
-  Ret
->
+declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L561)
+
+Since v1.0.0

@@ -1,17 +1,13 @@
-# number
+## number
 
 Constructs a config for a float value.
-
-To import and use `number` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.number
-```
 
 **Signature**
 
 ```ts
-export declare const number: (name?: string) => Config<number>
+declare const number: (name?: string) => Config<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L169)
+
+Since v2.0.0

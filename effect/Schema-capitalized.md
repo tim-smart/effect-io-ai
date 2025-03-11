@@ -1,19 +1,13 @@
-# capitalized
+## capitalized
 
 Verifies that a string is capitalized.
-
-To import and use `capitalized` from the "Schema" module:
-
-```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.capitalized
-```
 
 **Signature**
 
 ```ts
-export declare const capitalized: <S extends Schema.Any>(
-  annotations?: Annotations.Filter<Schema.Type<S>>
-) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
+declare const capitalized: <S extends Schema.Any>(annotations?: Annotations.Filter<Schema.Type<S>>) => <A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => filter<S>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4547)
+
+Since v3.10.0

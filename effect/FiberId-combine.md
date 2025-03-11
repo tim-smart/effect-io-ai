@@ -1,17 +1,13 @@
-# combine
+## combine
 
 Combine two `FiberId`s.
-
-To import and use `combine` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.combine
-```
 
 **Signature**
 
 ```ts
-export declare const combine: { (that: FiberId): (self: FiberId) => FiberId; (self: FiberId, that: FiberId): FiberId }
+declare const combine: { (that: FiberId): (self: FiberId) => FiberId; (self: FiberId, that: FiberId): FiberId; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L124)
+
+Since v2.0.0

@@ -1,20 +1,13 @@
-# has
+## has
 
 Tests whether or not map contains a key.
-
-To import and use `has` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.has
-```
 
 **Signature**
 
 ```ts
-export declare const has: {
-  <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<boolean>
-  <K, V>(self: TMap<K, V>, key: K): STM.STM<boolean>
-}
+declare const has: { <K>(key: K): <V>(self: TMap<K, V>) => STM.STM<boolean>; <K, V>(self: TMap<K, V>, key: K): STM.STM<boolean>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L174)
+
+Since v2.0.0

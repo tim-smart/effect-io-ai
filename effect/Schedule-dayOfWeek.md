@@ -1,4 +1,4 @@
-# dayOfWeek
+## dayOfWeek
 
 Creates a schedule that recurs on a specific day of the week.
 
@@ -12,16 +12,12 @@ incrementing with each recurrence.
 The `day` parameter is validated lazily, meaning errors may only be detected
 when the schedule is executed.
 
-To import and use `dayOfWeek` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.dayOfWeek
-```
-
 **Signature**
 
 ```ts
-export declare const dayOfWeek: (day: number) => Schedule<number>
+declare const dayOfWeek: (day: number) => Schedule<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L735)
+
+Since v2.0.0

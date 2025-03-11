@@ -1,22 +1,14 @@
-# exponential
+## exponential
 
 A helper method to create histogram bucket boundaries for a histogram
 with exponentially increasing values.
 
-To import and use `exponential` from the "MetricBoundaries" module:
-
-```ts
-import * as MetricBoundaries from "effect/MetricBoundaries"
-// Can be accessed like this
-MetricBoundaries.exponential
-```
-
 **Signature**
 
 ```ts
-export declare const exponential: (options: {
-  readonly start: number
-  readonly factor: number
-  readonly count: number
-}) => MetricBoundaries
+declare const exponential: (options: { readonly start: number; readonly factor: number; readonly count: number; }) => MetricBoundaries
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MetricBoundaries.ts#L63)
+
+Since v2.0.0

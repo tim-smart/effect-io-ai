@@ -1,12 +1,31 @@
-# Terminal
+## Terminal
 
 A `Terminal` represents a command-line interface which can read input from a
 user and display messages to a user.
 
-To import and use `Terminal` from the "Terminal" module:
+**Signature**
 
 ```ts
-import * as Terminal from "@effect/platform/Terminal"
-// Can be accessed like this
-Terminal.Terminal
+export interface Terminal {
+  /**
+   * The number of columns available on the platform's terminal interface.
+   */
+  readonly columns: Effect<number>
+  /**
+   * Reads a single input event from the default standard input.
+   */
+  readonly readInput: Effect<UserInput, QuitException>
+  /**
+   * Reads a single line from the default standard input.
+   */
+  readonly readLine: Effect<string, QuitException>
+  /**
+   * Displays text to the the default standard output.
+   */
+  readonly display: (text: string) => Effect<void, PlatformError>
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L18)
+
+Since v1.0.0

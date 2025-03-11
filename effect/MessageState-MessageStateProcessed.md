@@ -1,13 +1,19 @@
-# MessageStateProcessed
+## MessageStateProcessed
 
 A message state given to processed messages.
 This state tells the sender that the receiver has already received and processed the message.
 This will also tell the sender the result for this message.
 
-To import and use `MessageStateProcessed` from the "MessageState" module:
+**Signature**
 
 ```ts
-import * as MessageState from "@effect/cluster/MessageState"
-// Can be accessed like this
-MessageState.MessageStateProcessed
+export interface MessageStateProcessed<A> {
+  readonly [MessageStateTypeId]: MessageStateTypeId
+  readonly _tag: "@effect/cluster/MessageState/Processed"
+  readonly result: A
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L40)
+
+Since v1.0.0

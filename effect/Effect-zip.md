@@ -1,4 +1,4 @@
-# zip
+## zip
 
 Combines two effects into a single effect, producing a tuple of their
 results.
@@ -14,22 +14,20 @@ By default, the effects are executed sequentially. If the `concurrent` option
 is set to `true`, the effects will run concurrently, potentially improving
 performance for independent operations.
 
-To import and use `zip` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.zip
-```
-
 **Example**
 
 ```ts
 // Title: Combining Two Effects Sequentially
 import { Effect } from "effect"
 
-const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
-const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
+const task1 = Effect.succeed(1).pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Effect.log("task1 done"))
+)
+const task2 = Effect.succeed("hello").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Effect.log("task2 done"))
+)
 
 // Combine the two effects together
 //
@@ -50,8 +48,14 @@ const program = Effect.zip(task1, task2)
 // Title: Combining Two Effects Concurrently
 import { Effect } from "effect"
 
-const task1 = Effect.succeed(1).pipe(Effect.delay("200 millis"), Effect.tap(Effect.log("task1 done")))
-const task2 = Effect.succeed("hello").pipe(Effect.delay("100 millis"), Effect.tap(Effect.log("task2 done")))
+const task1 = Effect.succeed(1).pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Effect.log("task1 done"))
+)
+const task2 = Effect.succeed("hello").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Effect.log("task2 done"))
+)
 
 // Run both effects concurrently using the concurrent option
 const program = Effect.zip(task1, task2, { concurrent: true })
@@ -63,30 +67,18 @@ const program = Effect.zip(task1, task2, { concurrent: true })
 // [ 1, 'hello' ]
 ```
 
+**See**
+
+- `zipWith` for a version that combines the results with a custom
+function.
+- `validate` for a version that accumulates errors.
+
 **Signature**
 
 ```ts
-export declare const zip: {
-  <A2, E2, R2>(
-    that: Effect<A2, E2, R2>,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>
-  <A, E, R, A2, E2, R2>(
-    self: Effect<A, E, R>,
-    that: Effect<A2, E2, R2>,
-    options?:
-      | {
-          readonly concurrent?: boolean | undefined
-          readonly batching?: boolean | "inherit" | undefined
-          readonly concurrentFinalizers?: boolean | undefined
-        }
-      | undefined
-  ): Effect<[A, A2], E | E2, R | R2>
-}
+declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, A2], E | E2, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12293)
+
+Since v2.0.0

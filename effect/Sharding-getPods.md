@@ -1,17 +1,13 @@
-# getPods
+## getPods
 
 Get the list of pods currently registered to the Shard Manager
-
-To import and use `getPods` from the "Sharding" module:
-
-```ts
-import * as Sharding from "@effect/cluster/Sharding"
-// Can be accessed like this
-Sharding.getPods
-```
 
 **Signature**
 
 ```ts
-export declare const getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>, never, Sharding>
+declare const getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>, never, Sharding>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L190)
+
+Since v1.0.0

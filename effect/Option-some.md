@@ -1,14 +1,6 @@
-# some
+## some
 
 Wraps the given value into an `Option` to represent its presence.
-
-To import and use `some` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.some
-```
 
 **Example**
 
@@ -26,8 +18,16 @@ console.log(value)
 // Output: { _id: 'Option', _tag: 'Some', value: 1 }
 ```
 
+**See**
+
+- `none` for the opposite operation.
+
 **Signature**
 
 ```ts
-export declare const some: <A>(value: A) => Option<A>
+declare const some: <A>(value: A) => Option<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L187)
+
+Since v2.0.0

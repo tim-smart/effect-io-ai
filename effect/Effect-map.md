@@ -1,4 +1,4 @@
-# map
+## map
 
 Transforms the value inside an effect by applying a function to it.
 
@@ -21,14 +21,6 @@ It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
 
-To import and use `map` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.map
-```
-
 **Example**
 
 ```ts
@@ -39,17 +31,27 @@ const addServiceCharge = (amount: number) => amount + 1
 
 const fetchTransactionAmount = Effect.promise(() => Promise.resolve(100))
 
-const finalAmount = pipe(fetchTransactionAmount, Effect.map(addServiceCharge))
+const finalAmount = pipe(
+  fetchTransactionAmount,
+  Effect.map(addServiceCharge)
+)
 
 // Effect.runPromise(finalAmount).then(console.log)
 // Output: 101
 ```
 
+**See**
+
+- `mapError` for a version that operates on the error channel.
+- `mapBoth` for a version that operates on both channels.
+- `flatMap` or `andThen` for a version that can return a new effect.
+
 **Signature**
 
 ```ts
-export declare const map: {
-  <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>
-  <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>
-}
+declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5073)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# make
+## make
 
 Constructs a `Take`.
-
-To import and use `make` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.make
-```
 
 **Signature**
 
 ```ts
-export declare const make: <A, E>(exit: Exit.Exit<Chunk.Chunk<A>, Option.Option<E>>) => Take<A, E>
+declare const make: <A, E>(exit: Exit.Exit<Chunk.Chunk<A>, Option.Option<E>>) => Take<A, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L171)
+
+Since v2.0.0

@@ -1,18 +1,11 @@
-# isUnknown
+## isUnknown
 
 A guard that always succeeds.
-
-To import and use `isUnknown` from the "Predicate" module:
-
-```ts
-import * as Predicate from "effect/Predicate"
-// Can be accessed like this
-Predicate.isUnknown
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { isUnknown } from "effect/Predicate"
 
 assert.deepStrictEqual(isUnknown(null), true)
@@ -25,5 +18,9 @@ assert.deepStrictEqual(isUnknown([]), true)
 **Signature**
 
 ```ts
-export declare const isUnknown: (input: unknown) => input is unknown
+declare const isUnknown: (input: unknown) => input is unknown
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L431)
+
+Since v2.0.0

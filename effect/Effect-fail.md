@@ -1,4 +1,4 @@
-# fail
+## fail
 
 Creates an `Effect` that represents a recoverable error.
 
@@ -6,15 +6,7 @@ Creates an `Effect` that represents a recoverable error.
 
 Use this function to explicitly signal an error in an `Effect`. The error
 will keep propagating unless it is handled. You can handle the error with
-functions like {@link catchAll} or {@link catchTag}.
-
-To import and use `fail` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.fail
-```
+functions like `catchAll` or `catchTag`.
 
 **Example**
 
@@ -24,11 +16,21 @@ import { Effect } from "effect"
 
 //      ┌─── Effect<never, Error, never>
 //      ▼
-const failure = Effect.fail(new Error("Operation failed due to network error"))
+const failure = Effect.fail(
+  new Error("Operation failed due to network error")
+)
 ```
+
+**See**
+
+- `succeed` to create an effect that represents a successful value.
 
 **Signature**
 
 ```ts
-export declare const fail: <E>(error: E) => Effect<never, E>
+declare const fail: <E>(error: E) => Effect<never, E>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2510)
+
+Since v2.0.0

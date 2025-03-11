@@ -1,20 +1,13 @@
-# smart
+## smart
 
 A layout algorithm with more look ahead than `pretty`, which will introduce
 line breaks into a document earlier if the content does not, or will not, fit
 onto one line.
 
-To import and use `smart` from the "Layout" module:
-
-```ts
-import * as Layout from "@effect/printer/Layout"
-// Can be accessed like this
-Layout.smart
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import * as Doc from "@effect/printer/Doc"
 import type * as DocStream from "@effect/printer/DocStream"
 import * as Layout from "@effect/printer/Layout"
@@ -24,9 +17,16 @@ import * as String from "effect/String"
 
 // Consider the following python-ish document:
 const fun = <A>(doc: Doc.Doc<A>): Doc.Doc<A> =>
-  Doc.hcat([pipe(Doc.hcat([Doc.text("fun("), Doc.softLineBreak, doc]), Doc.hang(2)), Doc.text(")")])
+  Doc.hcat([
+    pipe(
+      Doc.hcat([Doc.text("fun("), Doc.softLineBreak, doc]),
+      Doc.hang(2)
+    ),
+    Doc.text(")")
+  ])
 
-const funs = <A>(doc: Doc.Doc<A>): Doc.Doc<A> => pipe(doc, fun, fun, fun, fun, fun)
+const funs = <A>(doc: Doc.Doc<A>): Doc.Doc<A> =>
+  pipe(doc, fun, fun, fun, fun, fun)
 
 const doc = funs(Doc.align(Doc.list(Doc.words("abcdef ghijklm"))))
 
@@ -37,10 +37,12 @@ const layoutOptions = Layout.options(pageWidth)
 const dashes = Doc.text(Array.from({ length: 26 - 2 }, () => "-").join(""))
 const hr = Doc.hcat([Doc.vbar, dashes, Doc.vbar])
 
-const render =
-  <A>(doc: Doc.Doc<A>) =>
-  (layoutAlgorithm: (options: Layout.Layout.Options) => (doc: Doc.Doc<A>) => DocStream.DocStream<A>): string =>
-    pipe(Doc.vsep([hr, doc, hr]), layoutAlgorithm(layoutOptions), Doc.renderStream)
+const render = <A>(
+  doc: Doc.Doc<A>
+) =>
+  (
+    layoutAlgorithm: (options: Layout.Layout.Options) => (doc: Doc.Doc<A>) => DocStream.DocStream<A>
+  ): string => pipe(Doc.vsep([hr, doc, hr]), layoutAlgorithm(layoutOptions), Doc.renderStream)
 
 // If rendered using `Layout.pretty`, with a page width of `26` characters per line,
 // all the calls to `fun` will fit into the first line. However, this exceeds the
@@ -94,8 +96,9 @@ assert.strictEqual(
 **Signature**
 
 ```ts
-export declare const smart: {
-  (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>
-  <A>(self: Doc<A>, options: Layout.Options): DocStream<A>
-}
+declare const smart: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L255)
+
+Since v1.0.0

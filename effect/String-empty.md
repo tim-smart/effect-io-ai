@@ -1,17 +1,13 @@
-# empty
+## empty
 
 The empty string `""`.
-
-To import and use `empty` from the "String" module:
-
-```ts
-import * as String from "effect/String"
-// Can be accessed like this
-String.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: ""
+declare const empty: ""
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L54)
+
+Since v2.0.0

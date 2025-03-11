@@ -1,4 +1,4 @@
-# MicroCause
+## MicroCause
 
 A `MicroCause` is a data type that represents the different ways a `Micro` can fail.
 
@@ -10,10 +10,14 @@ A `MicroCause` is a data type that represents the different ways a `Micro` can f
 - `Fail`: Covers anticipated errors that are recognized and typically handled within the application.
 - `Interrupt`: Signifies an operation that has been purposefully stopped.
 
-To import and use `MicroCause` from the "Micro" module:
+**Signature**
 
 ```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.MicroCause
+type MicroCause<E> = | MicroCause.Die
+  | MicroCause.Fail<E>
+  | MicroCause.Interrupt
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L186)
+
+Since v3.4.6

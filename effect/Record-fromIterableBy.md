@@ -1,18 +1,11 @@
-# fromIterableBy
+## fromIterableBy
 
 Creates a new record from an iterable, utilizing the provided function to determine the key for each element.
-
-To import and use `fromIterableBy` from the "Record" module:
-
-```ts
-import * as Record from "effect/Record"
-// Can be accessed like this
-Record.fromIterableBy
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { fromIterableBy } from "effect/Record"
 
 const users = [
@@ -21,7 +14,7 @@ const users = [
 ]
 
 assert.deepStrictEqual(
-  fromIterableBy(users, (user) => user.id),
+  fromIterableBy(users, user => user.id),
   {
     "2": { id: "2", name: "name2" },
     "1": { id: "1", name: "name1" }
@@ -32,8 +25,9 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-export declare const fromIterableBy: <A, K extends string | symbol>(
-  items: Iterable<A>,
-  f: (a: A) => K
-) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
+declare const fromIterableBy: <A, K extends string | symbol>(items: Iterable<A>, f: (a: A) => K) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L171)
+
+Since v2.0.0

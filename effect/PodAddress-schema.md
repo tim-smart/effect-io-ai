@@ -1,17 +1,13 @@
-# schema
+## schema
 
 This is the schema for a PodAddress.
-
-To import and use `schema` from the "PodAddress" module:
-
-```ts
-import * as PodAddress from "@effect/cluster/PodAddress"
-// Can be accessed like this
-PodAddress.schema
-```
 
 **Signature**
 
 ```ts
-export declare const schema: Schema.Schema<PodAddress, PodAddress.Encoded, never>
+declare const schema: Schema.Schema<PodAddress, PodAddress.Encoded, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L91)
+
+Since v1.0.0

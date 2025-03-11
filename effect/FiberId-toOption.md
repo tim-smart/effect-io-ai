@@ -1,17 +1,13 @@
-# toOption
+## toOption
 
 Convert a `FiberId` into an `Option<FiberId>`.
-
-To import and use `toOption` from the "FiberId" module:
-
-```ts
-import * as FiberId from "effect/FiberId"
-// Can be accessed like this
-FiberId.toOption
-```
 
 **Signature**
 
 ```ts
-export declare const toOption: (self: FiberId) => Option.Option<FiberId>
+declare const toOption: (self: FiberId) => Option.Option<FiberId>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberId.ts#L179)
+
+Since v2.0.0

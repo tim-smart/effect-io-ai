@@ -1,19 +1,15 @@
-# secret
+## secret
 
 Creates a text argument.
 
 Can optionally provide a custom argument name (defaults to `"secret"`).
 
-To import and use `secret` from the "Args" module:
-
-```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.secret
-```
-
 **Signature**
 
 ```ts
-export declare const secret: (config?: Args.BaseArgsConfig) => Args<Secret>
+declare const secret: (config?: Args.BaseArgsConfig) => Args<Secret>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L398)
+
+Since v1.0.0

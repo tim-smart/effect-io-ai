@@ -1,17 +1,13 @@
-# none
+## none
 
 A logger that does nothing in response to logging events.
-
-To import and use `none` from the "Logger" module:
-
-```ts
-import * as Logger from "effect/Logger"
-// Can be accessed like this
-Logger.none
-```
 
 **Signature**
 
 ```ts
-export declare const none: Logger<unknown, void>
+declare const none: Logger<unknown, void>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L279)
+
+Since v2.0.0

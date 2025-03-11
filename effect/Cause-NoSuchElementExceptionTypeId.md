@@ -1,4 +1,4 @@
-# NoSuchElementExceptionTypeId
+## NoSuchElementExceptionTypeId
 
 A unique symbol identifying the `NoSuchElementException` type.
 
@@ -8,16 +8,16 @@ This provides a symbol that identifies a `NoSuchElementException`. It helps
 differentiate cases where a required element is missing within a data
 structure.
 
-To import and use `NoSuchElementExceptionTypeId` from the "Cause" module:
+**See**
 
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.NoSuchElementExceptionTypeId
-```
+- `NoSuchElementException` Create or work with a `NoSuchElementException`
 
 **Signature**
 
 ```ts
-export declare const NoSuchElementExceptionTypeId: typeof NoSuchElementExceptionTypeId
+declare const NoSuchElementExceptionTypeId: unique symbol
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L143)
+
+Since v2.0.0

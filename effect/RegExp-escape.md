@@ -1,18 +1,11 @@
-# escape
+## escape
 
 Escapes special characters in a regular expression pattern.
-
-To import and use `escape` from the "RegExp" module:
-
-```ts
-import * as RegExp from "effect/RegExp"
-// Can be accessed like this
-RegExp.escape
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { RegExp } from "effect"
 
 assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
@@ -21,5 +14,9 @@ assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
 **Signature**
 
 ```ts
-export declare const escape: (string: string) => string
+declare const escape: (string: string) => string
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L38)
+
+Since v2.0.0

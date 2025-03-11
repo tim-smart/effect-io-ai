@@ -1,18 +1,14 @@
-# diff
+## diff
 
 Constructs a patch that describes the changes between the specified
 collections of `FiberRef`
 
-To import and use `diff` from the "FiberRefsPatch" module:
-
-```ts
-import * as FiberRefsPatch from "effect/FiberRefsPatch"
-// Can be accessed like this
-FiberRefsPatch.diff
-```
-
 **Signature**
 
 ```ts
-export declare const diff: (oldValue: FiberRefs.FiberRefs, newValue: FiberRefs.FiberRefs) => FiberRefsPatch
+declare const diff: (oldValue: FiberRefs.FiberRefs, newValue: FiberRefs.FiberRefs) => FiberRefsPatch
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberRefsPatch.ts#L80)
+
+Since v2.0.0

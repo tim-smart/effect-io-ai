@@ -1,11 +1,11 @@
-# acquireUseRelease
+## acquireUseRelease
 
 Creates a scoped resource and automatically handles the use effect during the
 scope.
 
 **Details**
 
-This function is similar to {@link acquireRelease}, but it introduces an
+This function is similar to `acquireRelease`, but it introduces an
 additional `use` effect. This allows you to automatically execute the `use`
 effect while the resource is acquired, and it also ensures that the `release`
 effect is performed when the scope is closed.
@@ -13,14 +13,6 @@ effect is performed when the scope is closed.
 The `acquire` effect is used to obtain the resource, the `use` effect
 operates while the resource is in use, and the `release` effect cleans up the
 resource when the scope ends.
-
-To import and use `acquireUseRelease` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.acquireUseRelease
-```
 
 **Example**
 
@@ -74,15 +66,9 @@ const program = Effect.acquireUseRelease(acquire, use, release)
 **Signature**
 
 ```ts
-export declare const acquireUseRelease: {
-  <A2, E2, R2, A, X, R3>(
-    use: (a: A) => Effect<A2, E2, R2>,
-    release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>
-  ): <E, R>(acquire: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R3 | R>
-  <A, E, R, A2, E2, R2, X, R3>(
-    acquire: Effect<A, E, R>,
-    use: (a: A) => Effect<A2, E2, R2>,
-    release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>
-  ): Effect<A2, E | E2, R | R2 | R3>
-}
+declare const acquireUseRelease: { <A2, E2, R2, A, X, R3>(use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): <E, R>(acquire: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R3 | R>; <A, E, R, A2, E2, R2, X, R3>(acquire: Effect<A, E, R>, use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): Effect<A2, E | E2, R | R2 | R3>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5451)
+
+Since v2.0.0

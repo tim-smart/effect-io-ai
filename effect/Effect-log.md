@@ -1,4 +1,4 @@
-# log
+## log
 
 Logs one or more messages or error causes at the current log level.
 
@@ -15,20 +15,17 @@ The log output includes useful metadata like the current timestamp, log
 level, and fiber ID, making it suitable for debugging and tracking purposes.
 This function does not interrupt or alter the effect's execution flow.
 
-To import and use `log` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.log
-```
-
 **Example**
 
 ```ts
 import { Cause, Effect } from "effect"
 
-const program = Effect.log("message1", "message2", Cause.die("Oh no!"), Cause.die("Oh uh!"))
+const program = Effect.log(
+  "message1",
+  "message2",
+  Cause.die("Oh no!"),
+  Cause.die("Oh uh!")
+)
 
 // Effect.runFork(program)
 // Output:
@@ -39,5 +36,9 @@ const program = Effect.log("message1", "message2", Cause.die("Oh no!"), Cause.di
 **Signature**
 
 ```ts
-export declare const log: (...message: ReadonlyArray<any>) => Effect<void, never, never>
+declare const log: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10657)
+
+Since v2.0.0

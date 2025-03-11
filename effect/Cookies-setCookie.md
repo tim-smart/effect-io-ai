@@ -1,20 +1,13 @@
-# setCookie
+## setCookie
 
 Add a cookie to a Cookies object
-
-To import and use `setCookie` from the "Cookies" module:
-
-```ts
-import * as Cookies from "@effect/platform/Cookies"
-// Can be accessed like this
-Cookies.setCookie
-```
 
 **Signature**
 
 ```ts
-export declare const setCookie: {
-  (cookie: Cookie): (self: Cookies) => Cookies
-  (self: Cookies, cookie: Cookie): Cookies
-}
+declare const setCookie: { (cookie: Cookie): (self: Cookies) => Cookies; (self: Cookies, cookie: Cookie): Cookies; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L379)
+
+Since v1.0.0

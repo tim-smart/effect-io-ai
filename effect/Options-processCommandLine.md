@@ -1,4 +1,4 @@
-# processCommandLine
+## processCommandLine
 
 Processes the provided command-line arguments, searching for the specified
 `Options`.
@@ -10,28 +10,12 @@ parsing the command-line arguments. This is because `ValidationError`s are
 also used internally to control the end of the command-line arguments (i.e.
 the command-line symbol `--`) corresponding to options.
 
-To import and use `processCommandLine` from the "Options" module:
-
-```ts
-import * as Options from "@effect/cli/Options"
-// Can be accessed like this
-Options.processCommandLine
-```
-
 **Signature**
 
 ```ts
-export declare const processCommandLine: {
-  (
-    args: ReadonlyArray<string>,
-    config: CliConfig
-  ): <A>(
-    self: Options<A>
-  ) => Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>
-  <A>(
-    self: Options<A>,
-    args: ReadonlyArray<string>,
-    config: CliConfig
-  ): Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>
-}
+declare const processCommandLine: { (args: ReadonlyArray<string>, config: CliConfig): <A>(self: Options<A>) => Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>; <A>(self: Options<A>, args: ReadonlyArray<string>, config: CliConfig): Effect<[Option<ValidationError>, Array<string>, A], ValidationError, FileSystem | Path | Terminal>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Options.ts#L483)
+
+Since v1.0.0

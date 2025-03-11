@@ -1,11 +1,15 @@
-# AlreadyFlat
+## AlreadyFlat
 
 Represents a `FlattenResult` where the input was already flat.
 
-To import and use `AlreadyFlat` from the "Flatten" module:
+**Signature**
 
 ```ts
-import * as Flatten from "@effect/printer/Flatten"
-// Can be accessed like this
-Flatten.AlreadyFlat
+export interface AlreadyFlat<A> extends Flatten.Variance<A> {
+  readonly _tag: "AlreadyFlat"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L79)
+
+Since v1.0.0

@@ -1,31 +1,22 @@
-# cartesianWith
+## cartesianWith
 
 Zips this chunk crosswise with the specified chunk using the specified combiner.
-
-To import and use `cartesianWith` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.cartesianWith
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const array1 = [1, 2]
-const array2 = ["a", "b"]
-const product = Array.cartesianWith(array1, array2, (a, b) => `${a}-${b}`)
-assert.deepStrictEqual(product, ["1-a", "1-b", "2-a", "2-b"])
+const result = Array.cartesianWith([1, 2], ["a", "b"], (a, b) => `${a}-${b}`)
+console.log(result) // ["1-a", "1-b", "2-a", "2-b"]
 ```
 
 **Signature**
 
 ```ts
-export declare const cartesianWith: {
-  <A, B, C>(that: ReadonlyArray<B>, f: (a: A, b: B) => C): (self: ReadonlyArray<A>) => Array<C>
-  <A, B, C>(self: ReadonlyArray<A>, that: ReadonlyArray<B>, f: (a: A, b: B) => C): Array<C>
-}
+declare const cartesianWith: { <A, B, C>(that: ReadonlyArray<B>, f: (a: A, b: B) => C): (self: ReadonlyArray<A>) => Array<C>; <A, B, C>(self: ReadonlyArray<A>, that: ReadonlyArray<B>, f: (a: A, b: B) => C): Array<C>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3161)
+
+Since v2.0.0

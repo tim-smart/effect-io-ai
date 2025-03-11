@@ -1,20 +1,13 @@
-# split
+## split
 
 Splits this chunk into `n` equally sized chunks.
-
-To import and use `split` from the "Chunk" module:
-
-```ts
-import * as Chunk from "effect/Chunk"
-// Can be accessed like this
-Chunk.split
-```
 
 **Signature**
 
 ```ts
-export declare const split: {
-  (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>
-  <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>
-}
+declare const split: { (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>; <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1080)
+
+Since v2.0.0

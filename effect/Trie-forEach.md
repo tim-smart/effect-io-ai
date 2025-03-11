@@ -1,18 +1,11 @@
-# forEach
+## forEach
 
 Applies the specified function to the entries of the `Trie`.
-
-To import and use `forEach` from the "Trie" module:
-
-```ts
-import * as Trie from "effect/Trie"
-// Can be accessed like this
-Trie.forEach
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Trie } from "effect"
 
 let value = 0
@@ -32,8 +25,9 @@ assert.equal(value, 17)
 **Signature**
 
 ```ts
-export declare const forEach: {
-  <V>(f: (value: V, key: string) => void): (self: Trie<V>) => void
-  <V>(self: Trie<V>, f: (value: V, key: string) => void): void
-}
+declare const forEach: { <V>(f: (value: V, key: string) => void): (self: Trie<V>) => void; <V>(self: Trie<V>, f: (value: V, key: string) => void): void; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L747)
+
+Since v2.0.0

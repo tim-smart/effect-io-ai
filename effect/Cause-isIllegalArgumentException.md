@@ -1,17 +1,13 @@
-# isIllegalArgumentException
+## isIllegalArgumentException
 
 Checks if a given unknown value is an `IllegalArgumentException`.
-
-To import and use `isIllegalArgumentException` from the "Cause" module:
-
-```ts
-import * as Cause from "effect/Cause"
-// Can be accessed like this
-Cause.isIllegalArgumentException
-```
 
 **Signature**
 
 ```ts
-export declare const isIllegalArgumentException: (u: unknown) => u is IllegalArgumentException
+declare const isIllegalArgumentException: (u: unknown) => u is IllegalArgumentException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1358)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# addFinalizer
+## addFinalizer
 
 Ensures a finalizer is added to the scope of the calling effect, guaranteeing
 it runs when the scope is closed.
@@ -18,14 +18,6 @@ Finalizers operate in conjunction with Effect's scoped resources. If an
 effect with a finalizer is wrapped in a scope, the finalizer will execute
 automatically when the scope ends.
 
-To import and use `addFinalizer` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.addFinalizer
-```
-
 **Example**
 
 ```ts
@@ -35,7 +27,9 @@ import { Effect, Console } from "effect"
 //      ┌─── Effect<string, never, Scope>
 //      ▼
 const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) => Console.log(`Finalizer executed. Exit status: ${exit._tag}`))
+  yield* Effect.addFinalizer((exit) =>
+    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
+  )
   return "some result"
 })
 
@@ -60,7 +54,9 @@ import { Effect, Console } from "effect"
 //      ┌─── Effect<never, string, Scope>
 //      ▼
 const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) => Console.log(`Finalizer executed. Exit status: ${exit._tag}`))
+  yield* Effect.addFinalizer((exit) =>
+    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
+  )
   return yield* Effect.fail("Uh oh!")
 })
 
@@ -89,7 +85,9 @@ import { Effect, Console } from "effect"
 //      ┌─── Effect<never, never, Scope>
 //      ▼
 const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) => Console.log(`Finalizer executed. Exit status: ${exit._tag}`))
+  yield* Effect.addFinalizer((exit) =>
+    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
+  )
   return yield* Effect.interrupt
 })
 
@@ -118,10 +116,16 @@ const runnable = Effect.scoped(program)
 // }
 ```
 
+**See**
+
+- `onExit` for attaching a finalizer directly to an effect.
+
 **Signature**
 
 ```ts
-export declare const addFinalizer: <X, R>(
-  finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>
-) => Effect<void, never, Scope.Scope | R>
+declare const addFinalizer: <X, R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>) => Effect<void, never, Scope.Scope | R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5582)
+
+Since v2.0.0

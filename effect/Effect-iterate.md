@@ -1,4 +1,4 @@
-# iterate
+## iterate
 
 Repeatedly updates a state through an effectful operation until a condition
 is no longer met.
@@ -33,14 +33,6 @@ This is particularly useful for scenarios where looping logic involves
 asynchronous or side-effectful operations, such as polling or iterative
 computations that depend on external factors.
 
-To import and use `iterate` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.iterate
-```
-
 **Example**
 
 ```ts
@@ -65,14 +57,9 @@ const result = Effect.iterate(
 **Signature**
 
 ```ts
-export declare const iterate: {
-  <A, B extends A, R, E>(
-    initial: A,
-    options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<A, E, R> }
-  ): Effect<A, E, R>
-  <A, R, E>(
-    initial: A,
-    options: { readonly while: Predicate<A>; readonly body: (a: A) => Effect<A, E, R> }
-  ): Effect<A, E, R>
-}
+declare const iterate: { <A, B extends A, R, E>(initial: A, options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<A, E, R>; }): Effect<A, E, R>; <A, R, E>(initial: A, options: { readonly while: Predicate<A>; readonly body: (a: A) => Effect<A, E, R>; }): Effect<A, E, R>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9743)
+
+Since v2.0.0

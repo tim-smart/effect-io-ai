@@ -1,17 +1,13 @@
-# succeedSome
+## succeedSome
 
 Creates a `Micro` effect that will succeed with the value wrapped in `Some`.
-
-To import and use `succeedSome` from the "Micro" module:
-
-```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.succeedSome
-```
 
 **Signature**
 
 ```ts
-export declare const succeedSome: <A>(a: A) => Micro<Option.Option<A>>
+declare const succeedSome: <A>(a: A) => Micro<Option.Option<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L939)
+
+Since v3.4.0

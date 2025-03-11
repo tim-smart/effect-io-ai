@@ -1,4 +1,4 @@
-# scheduleForked
+## scheduleForked
 
 Runs an effect repeatedly on a new fiber according to a given schedule.
 
@@ -19,24 +19,12 @@ This is particularly useful for concurrent execution of scheduled tasks or
 when you want to continue processing without waiting for the repetitions to
 complete.
 
-To import and use `scheduleForked` from the "Effect" module:
-
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.scheduleForked
-```
-
 **Signature**
 
 ```ts
-export declare const scheduleForked: {
-  <Out, R2>(
-    schedule: Schedule.Schedule<Out, unknown, R2>
-  ): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R2 | R>
-  <A, E, R, Out, R2>(
-    self: Effect<A, E, R>,
-    schedule: Schedule.Schedule<Out, unknown, R2>
-  ): Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R | R2>
-}
+declare const scheduleForked: { <Out, R2>(schedule: Schedule.Schedule<Out, unknown, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R2 | R>; <A, E, R, Out, R2>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, unknown, R2>): Effect<Fiber.RuntimeFiber<Out, E>, never, Scope.Scope | R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10160)
+
+Since v2.0.0

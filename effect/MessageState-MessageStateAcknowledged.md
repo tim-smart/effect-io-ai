@@ -1,12 +1,17 @@
-# MessageStateAcknowledged
+## MessageStateAcknowledged
 
 A message state given to just acknowledged messages.
 This state tells the sender that the receiver has received the message and will eventually process it later.
 
-To import and use `MessageStateAcknowledged` from the "MessageState" module:
+**Signature**
 
 ```ts
-import * as MessageState from "@effect/cluster/MessageState"
-// Can be accessed like this
-MessageState.MessageStateAcknowledged
+export interface MessageStateAcknowledged {
+  readonly [MessageStateTypeId]: MessageStateTypeId
+  readonly _tag: "@effect/cluster/MessageState/Acknowledged"
+}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L27)
+
+Since v1.0.0

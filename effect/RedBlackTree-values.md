@@ -1,17 +1,13 @@
-# values
+## values
 
 Get all values present in the tree in order.
-
-To import and use `values` from the "RedBlackTree" module:
-
-```ts
-import * as RedBlackTree from "effect/RedBlackTree"
-// Can be accessed like this
-RedBlackTree.values
-```
 
 **Signature**
 
 ```ts
-export declare const values: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<V>
+declare const values: <K, V>(self: RedBlackTree<K, V>) => IterableIterator<V>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RedBlackTree.ts#L413)
+
+Since v2.0.0

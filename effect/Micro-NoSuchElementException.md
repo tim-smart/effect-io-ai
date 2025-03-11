@@ -1,12 +1,14 @@
-# NoSuchElementException
+## NoSuchElementException
 
 Represents a checked exception which occurs when an expected element was
 unable to be found.
 
-To import and use `NoSuchElementException` from the "Micro" module:
+**Signature**
 
 ```ts
-import * as Micro from "effect/Micro"
-// Can be accessed like this
-Micro.NoSuchElementException
+declare class NoSuchElementException
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4395)
+
+Since v3.4.4

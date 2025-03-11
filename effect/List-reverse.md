@@ -1,17 +1,13 @@
-# reverse
+## reverse
 
 Returns a new list with the elements of the specified list in reverse order.
-
-To import and use `reverse` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.reverse
-```
 
 **Signature**
 
 ```ts
-export declare const reverse: <A>(self: List<A>) => List<A>
+declare const reverse: <A>(self: List<A>) => List<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L869)
+
+Since v2.0.0

@@ -1,18 +1,14 @@
-# isUpstreamPullStrategy
+## isUpstreamPullStrategy
 
 Returns `true` if the specified value is an `UpstreamPullStrategy`, `false`
 otherwise.
 
-To import and use `isUpstreamPullStrategy` from the "UpstreamPullStrategy" module:
-
-```ts
-import * as UpstreamPullStrategy from "effect/UpstreamPullStrategy"
-// Can be accessed like this
-UpstreamPullStrategy.isUpstreamPullStrategy
-```
-
 **Signature**
 
 ```ts
-export declare const isUpstreamPullStrategy: (u: unknown) => u is UpstreamPullStrategy<unknown>
+declare const isUpstreamPullStrategy: (u: unknown) => u is UpstreamPullStrategy<unknown>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UpstreamPullStrategy.ts#L79)
+
+Since v2.0.0

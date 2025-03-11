@@ -1,4 +1,4 @@
-# Do
+## Do
 
 The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 
@@ -9,17 +9,10 @@ Here's how the do simulation works:
 3. You can accumulate multiple `bind` statements to define multiple variables within the scope
 4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
 
-To import and use `Do` from the "Stream" module:
-
-```ts
-import * as Stream from "effect/Stream"
-// Can be accessed like this
-Stream.Do
-```
-
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Chunk, Effect, pipe, Stream } from "effect"
 
 const result = pipe(
@@ -31,8 +24,19 @@ const result = pipe(
 assert.deepStrictEqual(Effect.runSync(Stream.runCollect(result)), Chunk.of({ x: 2, y: 3, sum: 5 }))
 ```
 
+**See**
+
+- `bindTo`
+- `bind`
+- `bindEffect`
+- `let`
+
 **Signature**
 
 ```ts
-export declare const Do: Stream<{}, never, never>
+declare const Do: Stream<{}, never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6183)
+
+Since v2.0.0

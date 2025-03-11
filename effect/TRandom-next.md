@@ -1,17 +1,13 @@
-# next
+## next
 
 Returns the next number from the pseudo-random number generator.
-
-To import and use `next` from the "TRandom" module:
-
-```ts
-import * as TRandom from "effect/TRandom"
-// Can be accessed like this
-TRandom.next
-```
 
 **Signature**
 
 ```ts
-export declare const next: STM.STM<number, never, TRandom>
+declare const next: STM.STM<number, never, TRandom>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TRandom.ts#L87)
+
+Since v2.0.0

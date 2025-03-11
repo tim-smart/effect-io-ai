@@ -1,4 +1,4 @@
-# iterate
+## iterate
 
 Iterates with the specified transactional function. The moral equivalent
 of:
@@ -13,19 +13,12 @@ while (cont(s)) {
 return s
 ```
 
-To import and use `iterate` from the "STM" module:
-
-```ts
-import * as STM from "effect/STM"
-// Can be accessed like this
-STM.iterate
-```
-
 **Signature**
 
 ```ts
-export declare const iterate: <Z, E, R>(
-  initial: Z,
-  options: { readonly while: Predicate<Z>; readonly body: (z: Z) => STM<Z, E, R> }
-) => STM<Z, E, R>
+declare const iterate: <Z, E, R>(initial: Z, options: { readonly while: Predicate<Z>; readonly body: (z: Z) => STM<Z, E, R>; }) => STM<Z, E, R>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/STM.ts#L1182)
+
+Since v2.0.0

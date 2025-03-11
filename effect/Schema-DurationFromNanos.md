@@ -1,12 +1,14 @@
-# DurationFromNanos
+## DurationFromNanos
 
 A schema that transforms a non negative `bigint` into a `Duration`. Treats
 the value as the number of nanoseconds.
 
-To import and use `DurationFromNanos` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.DurationFromNanos
+declare class DurationFromNanos
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5870)
+
+Since v3.10.0

@@ -1,18 +1,14 @@
-# cursorNextLine
+## cursorNextLine
 
 Moves cursor to beginning of the line the specified number of rows down
 (default `1`).
 
-To import and use `cursorNextLine` from the "Ansi" module:
-
-```ts
-import * as Ansi from "@effect/printer-ansi/Ansi"
-// Can be accessed like this
-Ansi.cursorNextLine
-```
-
 **Signature**
 
 ```ts
-export declare const cursorNextLine: (rows?: number) => Ansi
+declare const cursorNextLine: (rows?: number) => Ansi
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L402)
+
+Since v1.0.0

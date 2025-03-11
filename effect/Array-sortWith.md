@@ -1,25 +1,16 @@
-# sortWith
+## sortWith
 
 Sorts an array based on a provided mapping function and order. The mapping
 function transforms the elements into a value that can be compared, and the
 order defines how those values should be sorted.
-
-To import and use `sortWith` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.sortWith
-```
 
 **Example**
 
 ```ts
 import { Array, Order } from "effect"
 
-const strings = ["aaa", "b", "cc"]
-const result = Array.sortWith(strings, (s) => s.length, Order.number)
-assert.deepStrictEqual(result, ["b", "cc", "aaa"])
+const result = Array.sortWith(["aaa", "b", "cc"], (s) => s.length, Order.number)
+console.log(result) // ["b", "cc", "aaa"]
 
 // Explanation:
 // The array of strings is sorted based on their lengths. The mapping function `(s) => s.length`
@@ -30,12 +21,9 @@ assert.deepStrictEqual(result, ["b", "cc", "aaa"])
 **Signature**
 
 ```ts
-export declare const sortWith: {
-  <S extends Iterable<any>, B>(
-    f: (a: ReadonlyArray.Infer<S>) => B,
-    order: Order.Order<B>
-  ): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>
-  <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B, O: Order.Order<B>): NonEmptyArray<A>
-  <A, B>(self: Iterable<A>, f: (a: A) => B, order: Order.Order<B>): Array<A>
-}
+declare const sortWith: { <S extends Iterable<any>, B>(f: (a: ReadonlyArray.Infer<S>) => B, order: Order.Order<B>): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B, O: Order.Order<B>): NonEmptyArray<A>; <A, B>(self: Iterable<A>, f: (a: A) => B, order: Order.Order<B>): Array<A>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1358)
+
+Since v2.0.0

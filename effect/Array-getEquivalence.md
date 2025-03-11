@@ -1,30 +1,22 @@
-# getEquivalence
+## getEquivalence
 
 Creates an equivalence relation for arrays.
-
-To import and use `getEquivalence` from the "Array" module:
-
-```ts
-import * as Array from "effect/Array"
-// Can be accessed like this
-Array.getEquivalence
-```
 
 **Example**
 
 ```ts
 import { Array } from "effect"
 
-const numbers1 = [1, 2, 3]
-const numbers2 = [1, 2, 3]
 const eq = Array.getEquivalence<number>((a, b) => a === b)
-assert.deepStrictEqual(eq(numbers1, numbers2), true)
+console.log(eq([1, 2, 3], [1, 2, 3])) // true
 ```
 
 **Signature**
 
 ```ts
-export declare const getEquivalence: <A>(
-  isEquivalent: Equivalence.Equivalence<A>
-) => Equivalence.Equivalence<ReadonlyArray<A>>
+declare const getEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<ReadonlyArray<A>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2967)
+
+Since v2.0.0

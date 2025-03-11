@@ -1,17 +1,13 @@
-# dedupeAdjacent
+## dedupeAdjacent
 
 Deduplicates adjacent elements that are identical.
-
-To import and use `dedupeAdjacent` from the "Iterable" module:
-
-```ts
-import * as Iterable from "effect/Iterable"
-// Can be accessed like this
-Iterable.dedupeAdjacent
-```
 
 **Signature**
 
 ```ts
-export declare const dedupeAdjacent: <A>(self: Iterable<A>) => Iterable<A>
+declare const dedupeAdjacent: <A>(self: Iterable<A>) => Iterable<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1054)
+
+Since v2.0.0

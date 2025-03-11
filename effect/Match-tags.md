@@ -1,4 +1,4 @@
-# tags
+## tags
 
 Matches values based on their `_tag` field, mapping each tag to a
 corresponding handler.
@@ -9,14 +9,6 @@ This function provides a way to handle discriminated unions by mapping `_tag`
 values to specific functions. Each handler receives the matched value and
 returns a transformed result. If all possible tags are handled, you can
 enforce exhaustiveness using `Match.exhaustive` to ensure no case is missed.
-
-To import and use `tags` from the "Match" module:
-
-```ts
-import * as Match from "effect/Match"
-// Can be accessed like this
-Match.tags
-```
 
 **Example**
 
@@ -37,22 +29,9 @@ const match = pipe(
 **Signature**
 
 ```ts
-export declare const tags: <
-  R,
-  Ret,
-  P extends {
-    readonly [Tag in Types.Tags<"_tag", R> & string]?: ((_: Extract<R, Record<"_tag", Tag>>) => Ret) | undefined
-  } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never }
->(
-  fields: P
-) => <I, F, A, Pr>(
-  self: Matcher<I, F, R, A, Pr, Ret>
-) => Matcher<
-  I,
-  Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>,
-  Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>>,
-  A | ReturnType<P[keyof P] & {}>,
-  Pr,
-  Ret
->
+declare const tags: <R, Ret, P extends { readonly [Tag in Types.Tags<"_tag", R> & string]?: ((_: Extract<R, Record<"_tag", Tag>>) => Ret) | undefined; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>>, A | ReturnType<P[keyof P] & {}>, Pr, Ret>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L814)
+
+Since v1.0.0

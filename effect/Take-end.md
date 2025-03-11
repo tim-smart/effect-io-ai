@@ -1,17 +1,13 @@
-# end
+## end
 
 Represents the end-of-stream marker.
-
-To import and use `end` from the "Take" module:
-
-```ts
-import * as Take from "effect/Take"
-// Can be accessed like this
-Take.end
-```
 
 **Signature**
 
 ```ts
-export declare const end: Take<never, never>
+declare const end: Take<never, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L92)
+
+Since v2.0.0

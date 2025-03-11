@@ -1,17 +1,13 @@
-# empty
+## empty
 
 Creates a new `HashMap`.
-
-To import and use `empty` from the "HashMap" module:
-
-```ts
-import * as HashMap from "effect/HashMap"
-// Can be accessed like this
-HashMap.empty
-```
 
 **Signature**
 
 ```ts
-export declare const empty: <K = never, V = never>() => HashMap<K, V>
+declare const empty: <K = never, V = never>() => HashMap<K, V>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L108)
+
+Since v2.0.0

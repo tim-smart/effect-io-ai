@@ -1,18 +1,11 @@
-# TaggedClass
+## TaggedClass
 
 Provides a Tagged constructor for a Case Class.
-
-To import and use `TaggedClass` from the "Data" module:
-
-```ts
-import * as Data from "effect/Data"
-// Can be accessed like this
-Data.TaggedClass
-```
 
 **Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Data, Equal } from "effect"
 
 class Person extends Data.TaggedClass("Person")<{ readonly name: string }> {}
@@ -32,9 +25,9 @@ assert.deepStrictEqual(mike1._tag, "Person")
 **Signature**
 
 ```ts
-export declare const TaggedClass: <Tag extends string>(
-  tag: Tag
-) => new <A extends Record<string, any> = {}>(
-  args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A as P extends "_tag" ? never : P]: A[P] }
-) => Readonly<A> & { readonly _tag: Tag }
+declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }) => Readonly<A> & { readonly _tag: Tag; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L234)
+
+Since v2.0.0

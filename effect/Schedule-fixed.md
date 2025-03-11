@@ -1,4 +1,4 @@
-# fixed
+## fixed
 
 Creates a schedule that recurs at a fixed interval.
 
@@ -10,21 +10,21 @@ than the interval, the next execution will happen immediately to prevent
 "pile-ups," ensuring that the schedule remains consistent without overlapping
 executions.
 
-```
+```text
 |-----interval-----|-----interval-----|-----interval-----|
 |---------action--------||action|-----|action|-----------|
 ```
 
-To import and use `fixed` from the "Schedule" module:
+**See**
 
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.fixed
-```
+- `spaced` If you need to run from the end of the last execution.
 
 **Signature**
 
 ```ts
-export declare const fixed: (interval: Duration.DurationInput) => Schedule<number>
+declare const fixed: (interval: Duration.DurationInput) => Schedule<number>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1047)
+
+Since v2.0.0

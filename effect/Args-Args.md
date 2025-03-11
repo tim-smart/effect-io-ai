@@ -1,11 +1,13 @@
-# Args
+## Args
 
 Represents arguments that can be passed to a command-line application.
 
-To import and use `Args` from the "Args" module:
+**Signature**
 
 ```ts
-import * as Args from "@effect/cli/Args"
-// Can be accessed like this
-Args.Args
+export interface Args<A> extends Args.Variance<A>, Pipeable {}
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Args.ts#L40)
+
+Since v1.0.0

@@ -1,11 +1,13 @@
-# Char
+## Char
 
 A schema representing a single character.
 
-To import and use `Char` from the "Schema" module:
+**Signature**
 
 ```ts
-import * as Schema from "effect/Schema"
-// Can be accessed like this
-Schema.Char
+declare class Char
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4607)
+
+Since v3.10.0

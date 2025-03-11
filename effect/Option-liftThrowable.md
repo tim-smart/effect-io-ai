@@ -1,4 +1,4 @@
-# liftThrowable
+## liftThrowable
 
 Lifts a function that throws exceptions into a function that returns an
 `Option`.
@@ -10,14 +10,6 @@ transforms it into a safer function that returns an `Option`. If the original
 function executes successfully, the result is wrapped in a `Some`. If an
 exception is thrown, the result is `None`, allowing the developer to handle
 errors in a functional, type-safe way.
-
-To import and use `liftThrowable` from the "Option" module:
-
-```ts
-import * as Option from "effect/Option"
-// Can be accessed like this
-Option.liftThrowable
-```
 
 **Example**
 
@@ -36,5 +28,9 @@ console.log(parse(""))
 **Signature**
 
 ```ts
-export declare const liftThrowable: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<B>
+declare const liftThrowable: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<B>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L812)
+
+Since v2.0.0

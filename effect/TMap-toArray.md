@@ -1,17 +1,13 @@
-# toArray
+## toArray
 
 Collects all bindings into an `Array`.
-
-To import and use `toArray` from the "TMap" module:
-
-```ts
-import * as TMap from "effect/TMap"
-// Can be accessed like this
-TMap.toArray
-```
 
 **Signature**
 
 ```ts
-export declare const toArray: <K, V>(self: TMap<K, V>) => STM.STM<Array<[K, V]>>
+declare const toArray: <K, V>(self: TMap<K, V>) => STM.STM<Array<[K, V]>>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TMap.ts#L433)
+
+Since v2.0.0

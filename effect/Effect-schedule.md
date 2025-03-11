@@ -1,4 +1,4 @@
-# schedule
+## schedule
 
 Repeats an effect based on a specified schedule.
 
@@ -15,21 +15,17 @@ adds delays between repetitions, or customizes repetition behavior based on
 external inputs. The effect runs initially and is repeated according to the
 schedule.
 
-To import and use `schedule` from the "Effect" module:
+**See**
 
-```ts
-import * as Effect from "effect/Effect"
-// Can be accessed like this
-Effect.schedule
-```
+- `scheduleFrom` for a variant that allows the schedule's decision
+to depend on the result of this effect.
 
 **Signature**
 
 ```ts
-export declare const schedule: {
-  <A, R2, Out>(
-    schedule: Schedule.Schedule<Out, NoInfer<A> | undefined, R2>
-  ): <E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>
-  <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, A | undefined, R2>): Effect<Out, E, R | R2>
-}
+declare const schedule: { <A, R2, Out>(schedule: Schedule.Schedule<Out, NoInfer<A> | undefined, R2>): <E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>; <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, A | undefined, R2>): Effect<Out, E, R | R2>; }
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10127)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-# DocStream
+## DocStream
 
 Represents a document that has been laid out and can be processed used by the
 rendering algorithms.
@@ -9,10 +9,18 @@ best fits the layout constraints. Therefore, a `DocStream` has all complexity
 contained in a `Doc` resolved, making it very easy to convert to other
 formats, such as plaintext or terminal output.
 
-To import and use `DocStream` from the "DocStream" module:
+**Signature**
 
 ```ts
-import * as DocStream from "@effect/printer/DocStream"
-// Can be accessed like this
-DocStream.DocStream
+type DocStream<A> = | FailedStream<A>
+  | EmptyStream<A>
+  | CharStream<A>
+  | TextStream<A>
+  | LineStream<A>
+  | PushAnnotationStream<A>
+  | PopAnnotationStream<A>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L42)
+
+Since v1.0.0

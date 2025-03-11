@@ -1,17 +1,13 @@
-# fail
+## fail
 
 Constructs a config that fails with the specified message.
-
-To import and use `fail` from the "Config" module:
-
-```ts
-import * as Config from "effect/Config"
-// Can be accessed like this
-Config.fail
-```
 
 **Signature**
 
 ```ts
-export declare const fail: (message: string) => Config<never>
+declare const fail: (message: string) => Config<never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L161)
+
+Since v2.0.0

@@ -1,17 +1,13 @@
-# unsafeLast
+## unsafeLast
 
 Unsafely returns the last element of the specified `List`.
-
-To import and use `unsafeLast` from the "List" module:
-
-```ts
-import * as List from "effect/List"
-// Can be accessed like this
-List.unsafeLast
-```
 
 **Signature**
 
 ```ts
-export declare const unsafeLast: <A>(self: List<A>) => A
+declare const unsafeLast: <A>(self: List<A>) => A
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/List.ts#L953)
+
+Since v2.0.0

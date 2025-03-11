@@ -1,4 +1,4 @@
-# count
+## count
 
 A schedule that recurs indefinitely, counting the number of recurrences.
 
@@ -10,16 +10,12 @@ Each recurrence increases the count, starting from `0`.
 This is useful when tracking the number of attempts in retry policies,
 measuring execution loops, or implementing infinite polling scenarios.
 
-To import and use `count` from the "Schedule" module:
-
-```ts
-import * as Schedule from "effect/Schedule"
-// Can be accessed like this
-Schedule.count
-```
-
 **Signature**
 
 ```ts
-export declare const count: Schedule<number, unknown, never>
+declare const count: Schedule<number, unknown, never>
 ```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L622)
+
+Since v2.0.0
