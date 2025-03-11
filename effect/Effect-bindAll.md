@@ -38,12 +38,15 @@ export declare const bindAll: {
   <
     A extends object,
     X extends Record<string, Effect<any, any, any>>,
-    O extends {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly mode?: "default" | "validate" | "either" | undefined
-      readonly concurrentFinalizers?: boolean | undefined
-    }
+    O extends NoExcessProperties<
+      {
+        readonly concurrency?: Concurrency | undefined
+        readonly batching?: boolean | "inherit" | undefined
+        readonly mode?: "default" | "validate" | "either" | undefined
+        readonly concurrentFinalizers?: boolean | undefined
+      },
+      O
+    >
   >(
     f: (a: NoInfer<A>) => [Extract<keyof X, keyof A>] extends [never] ? X : `Duplicate keys`,
     options?: undefined | O
@@ -59,12 +62,15 @@ export declare const bindAll: {
   <
     A extends object,
     X extends Record<string, Effect<any, any, any>>,
-    O extends {
-      readonly concurrency?: Concurrency | undefined
-      readonly batching?: boolean | "inherit" | undefined
-      readonly mode?: "default" | "validate" | "either" | undefined
-      readonly concurrentFinalizers?: boolean | undefined
-    },
+    O extends NoExcessProperties<
+      {
+        readonly concurrency?: Concurrency | undefined
+        readonly batching?: boolean | "inherit" | undefined
+        readonly mode?: "default" | "validate" | "either" | undefined
+        readonly concurrentFinalizers?: boolean | undefined
+      },
+      O
+    >,
     E1,
     R1
   >(

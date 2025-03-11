@@ -14,6 +14,11 @@ HttpApiBuilder.middlewareOpenApi
 
 ```ts
 export declare const middlewareOpenApi: (
-  options?: { readonly path?: HttpApiEndpoint.PathSegment | undefined } | undefined
+  options?:
+    | {
+        readonly path?: HttpApiEndpoint.PathSegment | undefined
+        readonly additionalPropertiesStrategy?: OpenApi.AdditionalPropertiesStrategy | undefined
+      }
+    | undefined
 ) => Layer.Layer<never, never, HttpApi.Api>
 ```

@@ -17,7 +17,10 @@ Micro.all
 ```ts
 export declare const all: <
   const Arg extends Iterable<Micro<any, any, any>> | Record<string, Micro<any, any, any>>,
-  O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined }
+  O extends NoExcessProperties<
+    { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined },
+    O
+  >
 >(
   arg: Arg,
   options?: O

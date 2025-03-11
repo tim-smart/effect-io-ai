@@ -11946,12 +11946,12 @@
     },
     "project": "effect",
     "name": "fromEnv",
-    "description": "A config provider that loads configuration from context variables,\nusing the default System service.",
+    "description": "A config provider that loads configuration from context variables\n\n**Options**:\n\n- `pathDelim`: The delimiter for the path segments (default: `\"_\"`).\n- `seqDelim`: The delimiter for the sequence of values (default: `\",\"`).",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
-    "signature": "export declare const fromEnv: (config?: ConfigProvider.FromEnvConfig) => ConfigProvider"
+    "signature": "export declare const fromEnv: (options?: Partial<ConfigProvider.FromEnvConfig>) => ConfigProvider"
   },
   {
     "_tag": "Constant",
@@ -17767,7 +17767,7 @@
     ],
     "since": "2.0.0",
     "category": "Collecting",
-    "signature": "export declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: boolean | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }>(arg: Arg, options?: O) => All.Return<Arg, O>"
+    "signature": "export declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: boolean | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(arg: Arg, options?: O) => All.Return<Arg, O>"
   },
   {
     "_tag": "Constant",
@@ -17787,7 +17787,7 @@
     ],
     "since": "2.0.0",
     "category": "Collecting",
-    "signature": "export declare const allWith: <O extends { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: boolean | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }>(options?: O) => <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>>(arg: Arg) => All.Return<Arg, O>"
+    "signature": "export declare const allWith: <O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly discard?: boolean | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(options?: O) => <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>>(arg: Arg) => All.Return<Arg, O>"
   },
   {
     "_tag": "Constant",
@@ -18948,7 +18948,7 @@
     ],
     "since": "2.0.0",
     "category": "Error handling",
-    "signature": "export declare const retry: { <E, O extends Retry.Options<E>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, O extends Retry.Options<E>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, E, R1>): Effect<A, E, R1 | R>; }"
+    "signature": "export declare const retry: { <E, O extends NoExcessProperties<Retry.Options<E>, O>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Retry.Options<E>, O>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, E, R1>): Effect<A, E, R1 | R>; }"
   },
   {
     "_tag": "Constant",
@@ -20949,7 +20949,7 @@
     ],
     "since": "3.7.0",
     "category": "Do notation",
-    "signature": "export declare const bindAll: { <A extends object, X extends Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }>(f: (a: NoInfer<A>) => [Extract<keyof X, keyof A>] extends [never] ? X : `Duplicate keys`, options?: undefined | O): <E1, R1>(self: Effect<A, E1, R1>) => [All.ReturnObject<X, false, All.ExtractMode<O>>] extends [Effect<infer Success, infer Error, infer Context>] ? Effect<{ [K in keyof A | keyof Success]: K extends keyof A ? A[K] : K extends keyof Success ? Success[K] : never; }, E1 | Error, R1 | Context> : never; <A extends object, X extends Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, E1, R1>(self: Effect<A, E1, R1>, f: (a: NoInfer<A>) => [Extract<keyof X, keyof A>] extends [never] ? X : `Duplicate keys`, options?: undefined | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): [All.ReturnObject<X, false, All.ExtractMode<O>>] extends [Effect<infer Success, infer Error, infer Context>] ? Effect<{ [K in keyof A | keyof Success]: K extends keyof A ? A[K] : K extends keyof Success ? Success[K] : never; }, E1 | Error, R1 | Context> : never; }"
+    "signature": "export declare const bindAll: { <A extends object, X extends Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(f: (a: NoInfer<A>) => [Extract<keyof X, keyof A>] extends [never] ? X : `Duplicate keys`, options?: undefined | O): <E1, R1>(self: Effect<A, E1, R1>) => [All.ReturnObject<X, false, All.ExtractMode<O>>] extends [Effect<infer Success, infer Error, infer Context>] ? Effect<{ [K in keyof A | keyof Success]: K extends keyof A ? A[K] : K extends keyof Success ? Success[K] : never; }, E1 | Error, R1 | Context> : never; <A extends object, X extends Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>, E1, R1>(self: Effect<A, E1, R1>, f: (a: NoInfer<A>) => [Extract<keyof X, keyof A>] extends [never] ? X : `Duplicate keys`, options?: undefined | { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly mode?: \"default\" | \"validate\" | \"either\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): [All.ReturnObject<X, false, All.ExtractMode<O>>] extends [Effect<infer Success, infer Error, infer Context>] ? Effect<{ [K in keyof A | keyof Success]: K extends keyof A ? A[K] : K extends keyof Success ? Success[K] : never; }, E1 | Error, R1 | Context> : never; }"
   },
   {
     "_tag": "Constant",
@@ -21638,7 +21638,7 @@
     ],
     "since": "2.0.0",
     "category": "Repetition / Recursion",
-    "signature": "export declare const repeat: { <O extends Repeat.Options<A>, A>(options: O): <E, R>(self: Effect<A, E, R>) => Repeat.Return<R, E, A, O>; <B, A, R1>(schedule: Schedule.Schedule<B, A, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R1 | R>; <A, E, R, O extends Repeat.Options<A>>(self: Effect<A, E, R>, options: O): Repeat.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, schedule: Schedule.Schedule<B, A, R1>): Effect<B, E, R | R1>; }"
+    "signature": "export declare const repeat: { <O extends NoExcessProperties<Repeat.Options<A>, O>, A>(options: O): <E, R>(self: Effect<A, E, R>) => Repeat.Return<R, E, A, O>; <B, A, R1>(schedule: Schedule.Schedule<B, A, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Repeat.Options<A>, O>>(self: Effect<A, E, R>, options: O): Repeat.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, schedule: Schedule.Schedule<B, A, R1>): Effect<B, E, R | R1>; }"
   },
   {
     "_tag": "Constant",
@@ -37242,7 +37242,7 @@
     },
     "project": "effect",
     "name": "fromAST",
-    "description": "Returns a JSON Schema with additional options and definitions.\n\n**Warning**\n\nThis function is experimental and subject to change.\n\n**Details**\n\n- `definitions`: A record of definitions that are included in the schema.\n- `definitionPath`: The path to the definitions within the schema (defaults\n  to \"#/$defs/\").\n- `target`: Which spec to target. Possible values are:\n  - `'jsonSchema7'`: JSON Schema draft-07 (default behavior).\n  - `'jsonSchema2019-09'`: JSON Schema draft-2019-09.\n  - `'openApi3.1'`: OpenAPI 3.1.\n- `topLevelReferenceStrategy`: Controls the handling of the top-level\n  reference. Possible values are:\n  - `\"keep\"`: Keep the top-level reference (default behavior).\n  - `\"skip\"`: Skip the top-level reference.",
+    "description": "Returns a JSON Schema with additional options and definitions.\n\n**Warning**\n\nThis function is experimental and subject to change.\n\n**Options**\n\n- `definitions`: A record of definitions that are included in the schema.\n- `definitionPath`: The path to the definitions within the schema (defaults\n  to \"#/$defs/\").\n- `target`: Which spec to target. Possible values are:\n  - `'jsonSchema7'`: JSON Schema draft-07 (default behavior).\n  - `'jsonSchema2019-09'`: JSON Schema draft-2019-09.\n  - `'openApi3.1'`: OpenAPI 3.1.\n- `topLevelReferenceStrategy`: Controls the handling of the top-level\n  reference. Possible values are:\n  - `\"keep\"`: Keep the top-level reference (default behavior).\n  - `\"skip\"`: Skip the top-level reference.\n- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:\n  - `\"strict\"`: Disallow additional properties (default behavior).\n  - `\"allow\"`: Allow additional properties.",
     "deprecated": false,
     "examples": [],
     "since": "3.11.5",

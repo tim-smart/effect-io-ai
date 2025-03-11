@@ -14,11 +14,16 @@ HttpClient.retry
 
 ```ts
 export declare const retry: {
-  <E, O extends Effect.Retry.Options<E>>(options: O): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>
+  <E, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(
+    options: O
+  ): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>
   <B, E, R1>(
     policy: Schedule.Schedule<B, NoInfer<E>, R1>
   ): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>
-  <E, R, O extends Effect.Retry.Options<E>>(self: HttpClient.With<E, R>, options: O): Retry.Return<R, E, O>
+  <E, R, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(
+    self: HttpClient.With<E, R>,
+    options: O
+  ): Retry.Return<R, E, O>
   <E, R, B, R1>(self: HttpClient.With<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient.With<E, R1 | R>
 }
 ```

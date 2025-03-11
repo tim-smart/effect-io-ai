@@ -16,6 +16,12 @@ integrates annotations like descriptions, summaries, external documentation,
 and overrides. Cached results are used for better performance when the same
 `HttpApi` instance is processed multiple times.
 
+**Options**
+
+- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:
+  - `"strict"`: Disallow additional properties (default behavior).
+  - `"allow"`: Allow additional properties.
+
 To import and use `fromApi` from the "OpenApi" module:
 
 ```ts
@@ -44,6 +50,7 @@ const spec = OpenApi.fromApi(api)
 
 ```ts
 export declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any, E, R>(
-  api: HttpApi.HttpApi<Id, Groups, E, R>
+  api: HttpApi.HttpApi<Id, Groups, E, R>,
+  options?: { readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined } | undefined
 ) => OpenAPISpec
 ```

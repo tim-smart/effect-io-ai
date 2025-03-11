@@ -6,7 +6,7 @@ Returns a JSON Schema with additional options and definitions.
 
 This function is experimental and subject to change.
 
-**Details**
+**Options**
 
 - `definitions`: A record of definitions that are included in the schema.
 - `definitionPath`: The path to the definitions within the schema (defaults
@@ -19,6 +19,9 @@ This function is experimental and subject to change.
   reference. Possible values are:
   - `"keep"`: Keep the top-level reference (default behavior).
   - `"skip"`: Skip the top-level reference.
+- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:
+  - `"strict"`: Disallow additional properties (default behavior).
+  - `"allow"`: Allow additional properties.
 
 To import and use `fromAST` from the "JSONSchema" module:
 
@@ -35,9 +38,10 @@ export declare const fromAST: (
   ast: AST.AST,
   options: {
     readonly definitions: Record<string, JsonSchema7>
-    readonly definitionPath?: string
-    readonly target?: Target
-    readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy
+    readonly definitionPath?: string | undefined
+    readonly target?: Target | undefined
+    readonly topLevelReferenceStrategy?: TopLevelReferenceStrategy | undefined
+    readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined
   }
 ) => JsonSchema7
 ```
