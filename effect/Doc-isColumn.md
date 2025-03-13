@@ -1,4 +1,7 @@
-## isColumn
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isColumn
 
 Returns `true` if the specified `Doc` is a `Column`, `false` otherwise.
 

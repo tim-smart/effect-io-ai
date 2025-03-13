@@ -1,4 +1,7 @@
-## allocate
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.allocate
 
 Creates a new `Array` of the specified length.
 

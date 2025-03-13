@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.max
 
 Returns the maximum between two `BigDecimal`s.
 

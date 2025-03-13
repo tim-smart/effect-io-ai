@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.contains
 
 Returns a function that checks if a `Chunk` contains a given value using the default `Equivalence`.
 

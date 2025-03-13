@@ -1,4 +1,7 @@
-## remainingWidth
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.remainingWidth
 
 Calculates the remaining width on the current line.
 

@@ -1,4 +1,7 @@
-## mapOutEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapOutEffect
 
 Creates a channel that is like this channel but the given effectful function
 gets applied to each emitted output element.

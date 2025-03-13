@@ -1,4 +1,7 @@
-## fromIterableWith
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.fromIterableWith
 
 Takes an iterable and a projection function and returns a record.
 The projection function maps each value of the iterable to a tuple of a key and a value, which is then added to the resulting record.

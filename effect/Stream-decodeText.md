@@ -1,4 +1,7 @@
-## decodeText
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.decodeText
 
 Decode Uint8Array chunks into a stream of strings using the specified encoding.
 

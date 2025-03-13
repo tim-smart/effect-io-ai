@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.flatMap
 
 Applies a function to the value of a `Some` and flattens the resulting
 `Option`. If the input is `None`, it remains `None`.

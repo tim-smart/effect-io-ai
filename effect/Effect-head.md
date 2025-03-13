@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.head
 
 Returns the first element of the iterable if the collection is non-empty, or
 fails with the error `NoSuchElementException` if the collection is empty.

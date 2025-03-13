@@ -1,4 +1,7 @@
-## sumAll
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.sumAll
 
 Takes an `Iterable` of `number`s and returns their sum as a single `number`.
 

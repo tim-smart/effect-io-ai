@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.zip
 
 Takes two `Iterable`s and returns an `Iterable` of corresponding pairs.
 

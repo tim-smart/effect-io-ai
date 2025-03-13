@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.min
 
 Returns the minimum between two `BigDecimal`s.
 

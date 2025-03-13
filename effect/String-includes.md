@@ -1,4 +1,7 @@
-## includes
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.includes
 
 Returns `true` if `searchString` appears as a substring of `self`, at one or more positions that are
 greater than or equal to `position`; otherwise, returns `false`.

@@ -1,4 +1,7 @@
-## log
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.log
 
 Logs one or more messages or error causes at the current log level.
 

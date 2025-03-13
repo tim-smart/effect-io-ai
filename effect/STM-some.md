@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.some
 
 Converts an option on values into an option on errors.
 

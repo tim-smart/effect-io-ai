@@ -1,4 +1,7 @@
-## mergeWithTag
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mergeWithTag
 
 Merges a struct of streams into a single stream of tagged values.
 

@@ -1,4 +1,7 @@
-## constVoid
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constVoid
 
 A thunk that returns always `void`.
 

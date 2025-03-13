@@ -1,4 +1,7 @@
-## findFirstIndex
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.findFirstIndex
 
 Return the first index for which a predicate holds.
 

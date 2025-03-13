@@ -1,4 +1,7 @@
-## forever
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.forever
 
 Repeats this stream forever.
 

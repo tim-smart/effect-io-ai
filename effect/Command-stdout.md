@@ -1,4 +1,7 @@
-## stdout
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.stdout
 
 Specify the standard output stream for a command.
 

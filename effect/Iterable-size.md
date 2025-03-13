@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.size
 
 Return the number of elements in a `Iterable`.
 

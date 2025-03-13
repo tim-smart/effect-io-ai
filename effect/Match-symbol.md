@@ -1,4 +1,7 @@
-## symbol
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.symbol
 
 Matches values of type `symbol`.
 

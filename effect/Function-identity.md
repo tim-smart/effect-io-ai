@@ -1,4 +1,7 @@
-## identity
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.identity
 
 The identity function, i.e. A function that returns its input argument.
 

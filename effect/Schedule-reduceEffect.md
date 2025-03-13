@@ -1,4 +1,7 @@
-## reduceEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.reduceEffect
 
 Returns a new schedule that effectfully folds over the outputs of this one.
 

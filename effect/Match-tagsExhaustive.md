@@ -1,4 +1,7 @@
-## tagsExhaustive
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.tagsExhaustive
 
 Matches values based on their `_tag` field and requires handling of all
 possible cases.

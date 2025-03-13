@@ -1,4 +1,7 @@
-## reloadFork
+Package: `effect`<br />
+Module: `Reloadable`<br />
+
+## Reloadable.reloadFork
 
 Forks the reload of the service in the background, ignoring any errors.
 

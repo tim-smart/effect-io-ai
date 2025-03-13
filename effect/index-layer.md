@@ -1,4 +1,7 @@
-## layer
+Package: `@effect/vitest`<br />
+Module: `index`<br />
+
+## index.layer
 
 Share a `Layer` between multiple tests, optionally wrapping
 the tests in a `describe` block if a name is provided.

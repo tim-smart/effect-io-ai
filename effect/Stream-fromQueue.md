@@ -1,4 +1,7 @@
-## fromQueue
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromQueue
 
 Creates a stream from a queue of values
 

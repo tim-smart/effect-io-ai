@@ -1,4 +1,7 @@
-## formatIsoZoned
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatIsoZoned
 
 Format a `DateTime.Zoned` as a string.
 

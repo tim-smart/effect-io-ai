@@ -1,4 +1,7 @@
-## required
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.required
 
 Equivalent at runtime to the built-in TypeScript utility type `Required`.
 

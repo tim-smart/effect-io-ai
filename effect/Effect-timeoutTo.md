@@ -1,4 +1,7 @@
-## timeoutTo
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timeoutTo
 
 Provides custom behavior for successful and timed-out operations.
 

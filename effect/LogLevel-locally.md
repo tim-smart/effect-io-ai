@@ -1,4 +1,7 @@
-## locally
+Package: `effect`<br />
+Module: `LogLevel`<br />
+
+## LogLevel.locally
 
 Temporarily sets a `LogLevel` for an `Effect` workflow.
 

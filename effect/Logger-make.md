@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.make
 
 Creates a custom logger that formats log messages according to the provided
 function.

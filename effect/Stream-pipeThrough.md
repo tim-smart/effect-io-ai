@@ -1,4 +1,7 @@
-## pipeThrough
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.pipeThrough
 
 Pipes all of the values from this stream through the provided sink.
 

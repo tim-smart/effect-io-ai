@@ -1,4 +1,7 @@
-## readLocked
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.readLocked
 
 Determines if any fiber has a read lock.
 

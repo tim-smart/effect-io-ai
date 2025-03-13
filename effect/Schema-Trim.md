@@ -1,4 +1,7 @@
-## Trim
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Trim
 
 This schema allows removing whitespaces from the beginning and end of a string.
 

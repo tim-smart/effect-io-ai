@@ -1,4 +1,7 @@
-## bearer
+Package: `@effect/platform`<br />
+Module: `HttpApiSecurity`<br />
+
+## HttpApiSecurity.bearer
 
 Create an Bearer token security scheme.
 

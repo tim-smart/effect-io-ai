@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.orElse
 
 Switch to another sink in case of failure
 

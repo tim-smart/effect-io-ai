@@ -1,4 +1,7 @@
-## MonoidMin
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.MonoidMin
 
 A `Monoid` that uses the minimum between two values.
 

@@ -1,4 +1,7 @@
-## Primitive
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.Primitive
 
 A `Primitive` represents the primitive types supported by Effect CLI.
 

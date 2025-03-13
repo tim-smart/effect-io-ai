@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.as
 
 Create a `Micro` effect that will replace the success value of the given
 effect.

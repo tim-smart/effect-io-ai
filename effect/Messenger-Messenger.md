@@ -1,4 +1,7 @@
-## Messenger
+Package: `@effect/cluster`<br />
+Module: `Messenger`<br />
+
+## Messenger.Messenger
 
 An interface to communicate with a remote entity.
 

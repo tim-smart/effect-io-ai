@@ -1,4 +1,7 @@
-## tuple
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.tuple
 
 Similar to `Promise.all` but operates on `Monoid`s.
 

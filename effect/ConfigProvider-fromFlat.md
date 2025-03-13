@@ -1,4 +1,7 @@
-## fromFlat
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.fromFlat
 
 Constructs a new `ConfigProvider` from a key/value (flat) provider, where
 nesting is embedded into the string keys.

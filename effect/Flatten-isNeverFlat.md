@@ -1,4 +1,7 @@
-## isNeverFlat
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.isNeverFlat
 
 Returns `true` if the specified `Flatten` is a `NeverFlat`, `false` otherwise.
 

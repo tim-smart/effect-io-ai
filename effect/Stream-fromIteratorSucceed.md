@@ -1,4 +1,7 @@
-## fromIteratorSucceed
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromIteratorSucceed
 
 Creates a stream from an iterator
 

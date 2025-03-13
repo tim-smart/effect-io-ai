@@ -1,4 +1,7 @@
-## transposeOption
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.transposeOption
 
 Converts an `Option` of an `Effect` into an `Effect` of an `Option`.
 

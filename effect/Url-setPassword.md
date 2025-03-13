@@ -1,4 +1,7 @@
-## setPassword
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setPassword
 
 Updates the password used for authentication.
 

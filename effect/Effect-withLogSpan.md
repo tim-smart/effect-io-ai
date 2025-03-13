@@ -1,4 +1,7 @@
-## withLogSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withLogSpan
 
 Adds a log span to an effect for tracking and logging its execution duration.
 

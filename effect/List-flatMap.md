@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.flatMap
 
 Applies a function to each element in a list and returns a new list containing the concatenated mapped elements.
 

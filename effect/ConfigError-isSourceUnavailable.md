@@ -1,4 +1,7 @@
-## isSourceUnavailable
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isSourceUnavailable
 
 Returns `true` if the specified `ConfigError` is a `SourceUnavailable`,
 `false` otherwise.

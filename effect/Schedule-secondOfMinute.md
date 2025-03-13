@@ -1,4 +1,7 @@
-## secondOfMinute
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.secondOfMinute
 
 Cron-like schedule that recurs at a specific second of each minute.
 

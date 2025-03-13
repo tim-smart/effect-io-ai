@@ -1,4 +1,7 @@
-## value
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.value
 
 Retrieves a snapshot of the value of the metric at this moment in time.
 

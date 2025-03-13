@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.map
 
 Maps over the `Success` value of the specified exit using the provided
 function.

@@ -1,4 +1,7 @@
-## inheritAll
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.inheritAll
 
 Inherits values from all `FiberRef` instances into current fiber. This
 will resume immediately.

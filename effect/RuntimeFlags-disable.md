@@ -1,4 +1,7 @@
-## disable
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.disable
 
 Disables the specified `RuntimeFlag`.
 

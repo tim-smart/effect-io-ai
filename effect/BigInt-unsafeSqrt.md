@@ -1,4 +1,7 @@
-## unsafeSqrt
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.unsafeSqrt
 
 Determines the square root of a given `bigint` unsafely. Throws if the given `bigint` is negative.
 

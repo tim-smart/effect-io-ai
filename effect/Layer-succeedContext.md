@@ -1,4 +1,7 @@
-## succeedContext
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.succeedContext
 
 Constructs a layer from the specified value, which must return one or more
 services.

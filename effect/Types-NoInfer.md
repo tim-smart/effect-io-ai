@@ -1,4 +1,7 @@
-## NoInfer
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.NoInfer
 
 Avoid inference on a specific parameter
 

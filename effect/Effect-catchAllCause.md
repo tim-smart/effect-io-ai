@@ -1,4 +1,7 @@
-## catchAllCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchAllCause
 
 Handles both recoverable and unrecoverable errors by providing a recovery
 effect.

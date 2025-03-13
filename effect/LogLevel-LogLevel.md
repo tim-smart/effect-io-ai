@@ -1,4 +1,7 @@
-## LogLevel
+Package: `effect`<br />
+Module: `LogLevel`<br />
+
+## LogLevel.LogLevel
 
 A `LogLevel` represents the log level associated with an individual logging
 operation. Log levels are used both to describe the granularity (or

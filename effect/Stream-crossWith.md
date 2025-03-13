@@ -1,4 +1,7 @@
-## crossWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.crossWith
 
 Composes this stream with the specified stream to create a cartesian
 product of elements with a specified function. The `right` stream would be

@@ -1,4 +1,7 @@
-## catchSomeCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchSomeCause
 
 Recovers from specific causes using a provided partial function.
 

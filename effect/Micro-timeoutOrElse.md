@@ -1,4 +1,7 @@
-## timeoutOrElse
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.timeoutOrElse
 
 Returns an effect that will timeout this effect, that will execute the
 fallback effect if the timeout elapses before the effect has produced a value.

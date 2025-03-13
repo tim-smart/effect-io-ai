@@ -1,4 +1,7 @@
-## isBigDecimal
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.isBigDecimal
 
 Checks if a given value is a `BigDecimal`.
 

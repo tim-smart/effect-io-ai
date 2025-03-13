@@ -1,4 +1,7 @@
-## concatAll
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.concatAll
 
 Concatenates all of the streams in the chunk to one stream.
 

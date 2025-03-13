@@ -1,4 +1,7 @@
-## async
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.async
 
 Creates an `Effect` from a callback-based asynchronous function.
 

@@ -1,4 +1,7 @@
-## extend
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.extend
 
 Extends a schema with another schema.
 

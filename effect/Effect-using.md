@@ -1,4 +1,7 @@
-## using
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.using
 
 Scopes all resources acquired by one effect to the lifetime of another
 effect.

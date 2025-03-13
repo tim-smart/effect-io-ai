@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scoped
 
 Scopes all resources used in an effect to the lifetime of the effect.
 

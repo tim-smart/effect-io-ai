@@ -1,4 +1,7 @@
-## not
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.not
 
 Negates the given boolean: `!self`
 

@@ -1,4 +1,7 @@
-## finalizersMask
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.finalizersMask
 
 Applies a custom execution strategy to finalizers within a scoped workflow.
 

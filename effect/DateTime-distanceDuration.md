@@ -1,4 +1,7 @@
-## distanceDuration
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.distanceDuration
 
 Calulate the distance between two `DateTime` values.
 

@@ -1,4 +1,7 @@
-## reduceSTM
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.reduceSTM
 
 Atomically folds using a transactional function.
 

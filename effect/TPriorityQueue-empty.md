@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.empty
 
 Constructs a new empty `TPriorityQueue` with the specified `Order`.
 

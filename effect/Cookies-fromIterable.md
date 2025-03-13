@@ -1,4 +1,7 @@
-## fromIterable
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.fromIterable
 
 Create a Cookies object from an Iterable
 

@@ -1,4 +1,7 @@
-## checkEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.checkEffect
 
 Conditionally filters schedule executions using an effectful function.
 

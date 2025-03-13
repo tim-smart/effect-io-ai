@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.sync
 
 Completes the `Deferred` with the specified lazily evaluated value.
 

@@ -1,4 +1,7 @@
-## partitionMap
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.partitionMap
 
 Partition a list into two lists, where the first list contains all elements
 for which the specified function returned a `Left`, and the second list

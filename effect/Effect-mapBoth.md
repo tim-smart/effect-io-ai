@@ -1,4 +1,7 @@
-## mapBoth
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mapBoth
 
 Applies transformations to both the success and error channels of an effect.
 

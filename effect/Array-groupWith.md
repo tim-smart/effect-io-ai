@@ -1,4 +1,7 @@
-## groupWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.groupWith
 
 Group equal, consecutive elements of a `NonEmptyReadonlyArray` into `NonEmptyArray`s using the provided `isEquivalent` function.
 

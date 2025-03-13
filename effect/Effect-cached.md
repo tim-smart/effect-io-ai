@@ -1,4 +1,7 @@
-## cached
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.cached
 
 Returns an effect that lazily computes a result and caches it for subsequent
 evaluations.

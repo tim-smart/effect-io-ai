@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.context
 
 Accesses the whole context of the sink.
 

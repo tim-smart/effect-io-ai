@@ -1,4 +1,7 @@
-## setFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.setFiberRefs
 
 Sets the `FiberRef` values for the fiber running this effect to the values
 in the specified collection of `FiberRef` values.

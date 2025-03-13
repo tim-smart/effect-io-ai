@@ -1,4 +1,7 @@
-## DurationFromNanos
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DurationFromNanos
 
 A schema that transforms a non negative `bigint` into a `Duration`. Treats
 the value as the number of nanoseconds.

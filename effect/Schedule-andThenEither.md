@@ -1,4 +1,7 @@
-## andThenEither
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.andThenEither
 
 Runs two schedules sequentially, collecting results in an `Either`.
 

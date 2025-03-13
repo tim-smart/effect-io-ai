@@ -1,4 +1,7 @@
-## mapOrFail
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.mapOrFail
 
 Returns a new config whose structure is the samea as this one, but which
 may produce a different value, constructed using the specified fallible

@@ -1,4 +1,7 @@
-## SerializableWithResult
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.SerializableWithResult
 
 The `SerializableWithResult` trait is specifically designed to model remote
 procedures that require serialization of their input and output, managing

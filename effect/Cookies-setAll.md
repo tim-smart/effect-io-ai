@@ -1,4 +1,7 @@
-## setAll
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.setAll
 
 Add multiple cookies to a Cookies object
 

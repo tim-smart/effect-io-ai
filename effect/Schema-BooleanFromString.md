@@ -1,4 +1,7 @@
-## BooleanFromString
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.BooleanFromString
 
 Converts an `string` value into its corresponding `boolean`
 ("true" as `true` and "false" as `false`).

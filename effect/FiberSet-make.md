@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.make
 
 A FiberSet can be used to store a collection of fibers.
 When the associated Scope is closed, all fibers in the set will be interrupted.

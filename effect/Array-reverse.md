@@ -1,4 +1,7 @@
-## reverse
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.reverse
 
 Reverse an `Iterable`, creating a new `Array`.
 

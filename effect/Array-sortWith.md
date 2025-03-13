@@ -1,4 +1,7 @@
-## sortWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.sortWith
 
 Sorts an array based on a provided mapping function and order. The mapping
 function transforms the elements into a value that can be compared, and the

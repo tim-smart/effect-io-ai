@@ -1,4 +1,7 @@
-## length
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.length
 
 Returns the length of the list.
 

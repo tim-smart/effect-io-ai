@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `SortedSet`<br />
+
+## SortedSet.fromIterable
 
 Creates a new `SortedSet` from an iterable collection of values.
 

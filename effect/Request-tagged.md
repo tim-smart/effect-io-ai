@@ -1,4 +1,7 @@
-## tagged
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.tagged
 
 Constructs a new `Request`.
 

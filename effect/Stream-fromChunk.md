@@ -1,4 +1,7 @@
-## fromChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromChunk
 
 Creates a stream from a `Chunk` of values.
 

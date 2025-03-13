@@ -1,4 +1,7 @@
-## appendElement
+Package: `@effect/typeclass`<br />
+Module: `SemiProduct`<br />
+
+## SemiProduct.appendElement
 
 Appends an element to the end of a tuple.
 

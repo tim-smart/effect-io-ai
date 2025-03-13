@@ -1,4 +1,7 @@
-## TRef
+Package: `effect`<br />
+Module: `TRef`<br />
+
+## TRef.TRef
 
 A `TRef<A>` is a purely functional description of a mutable reference that can
 be modified as part of a transactional effect. The fundamental operations of

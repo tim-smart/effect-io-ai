@@ -1,4 +1,7 @@
-## and
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.and
 
 Combines two predicates into a new predicate that returns `true` if both of the predicates returns `true`.
 

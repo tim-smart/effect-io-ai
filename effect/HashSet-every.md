@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.every
 
 Check if a predicate holds true for every `HashSet` element.
 

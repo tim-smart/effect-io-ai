@@ -1,4 +1,7 @@
-## chunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.chunks
 
 Exposes the underlying chunks of the stream as a stream of chunks of
 elements.

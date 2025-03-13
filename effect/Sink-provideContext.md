@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.provideContext
 
 Provides the sink with its required context, which eliminates its
 dependency on `R`.

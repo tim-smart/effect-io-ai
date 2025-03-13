@@ -1,4 +1,7 @@
-## groupWith
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.groupWith
 
 Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s using the provided `isEquivalent` function.
 

@@ -1,4 +1,7 @@
-## supervised
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.supervised
 
 Supervises child fibers by reporting them to a specified supervisor.
 

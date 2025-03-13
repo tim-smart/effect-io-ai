@@ -1,4 +1,7 @@
-## unsafeMake
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.unsafeMake
 
 Note: it will not copy the provided Map, make sure to provide a fresh one.
 

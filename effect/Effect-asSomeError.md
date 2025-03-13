@@ -1,4 +1,7 @@
-## asSomeError
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.asSomeError
 
 This function maps the error value of an `Effect` value to a `Some` value
 in an `Option` value. If the original `Effect` value succeeds, the returned

@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.poll
 
 An effect that polls a value that may be fed to the metric.
 

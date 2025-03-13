@@ -1,4 +1,7 @@
-## keysWithPrefix
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.keysWithPrefix
 
 Returns an `IterableIterator` of the keys within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).

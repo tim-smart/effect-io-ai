@@ -1,4 +1,7 @@
-## sumAll
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.sumAll
 
 Takes an `Iterable` of `bigint`s and returns their sum as a single `bigint
 

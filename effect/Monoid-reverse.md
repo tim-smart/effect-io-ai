@@ -1,4 +1,7 @@
-## reverse
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.reverse
 
 The dual of a `Monoid`, obtained by swapping the arguments of `combine`.
 

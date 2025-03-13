@@ -1,4 +1,7 @@
-## squareBracketed
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.squareBracketed
 
 Encloses the input document in square brackets (`[]`).
 

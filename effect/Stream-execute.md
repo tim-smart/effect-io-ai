@@ -1,4 +1,7 @@
-## execute
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.execute
 
 Creates a stream that executes the specified effect but emits no elements.
 

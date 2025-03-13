@@ -1,4 +1,7 @@
-## Message.Success
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message.Success
 
 Extracts the success type from a `Message`.
 

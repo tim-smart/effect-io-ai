@@ -1,4 +1,7 @@
-## lessThanOrEqualTo
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.lessThanOrEqualTo
 
 Returns a function that checks if a given `bigint` is less than or equal to the provided one.
 

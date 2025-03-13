@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filter
 
 Filters the collection using the specified effectual predicate.
 

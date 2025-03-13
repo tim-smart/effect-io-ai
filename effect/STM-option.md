@@ -1,4 +1,7 @@
-## option
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.option
 
 Converts the failure channel into an `Option`.
 

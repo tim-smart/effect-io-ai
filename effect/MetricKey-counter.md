@@ -1,4 +1,7 @@
-## counter
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.counter
 
 Creates a metric key for a counter, with the specified name.
 

@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.as
 
 Returns a new channel that is the same as this one, except the terminal
 value of the channel is the specified constant value.

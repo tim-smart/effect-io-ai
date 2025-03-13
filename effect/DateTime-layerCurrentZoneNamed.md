@@ -1,4 +1,7 @@
-## layerCurrentZoneNamed
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.layerCurrentZoneNamed
 
 Create a Layer from the given IANA time zone identifier.
 

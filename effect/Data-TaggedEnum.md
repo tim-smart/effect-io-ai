@@ -1,4 +1,7 @@
-## TaggedEnum
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.TaggedEnum
 
 Create a tagged enum data type, which is a union of `Data` structs.
 

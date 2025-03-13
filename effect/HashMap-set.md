@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.set
 
 Sets the specified key to the specified value using the internal hashing
 function.

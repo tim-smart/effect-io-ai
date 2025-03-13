@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.either
 
 Encapsulates both success and failure of an `Effect` into an `Either` type.
 

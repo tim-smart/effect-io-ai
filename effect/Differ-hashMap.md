@@ -1,4 +1,7 @@
-## hashMap
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.hashMap
 
 Constructs a differ that knows how to diff a `HashMap` of keys and values given
 a differ that knows how to diff the values.

@@ -1,4 +1,7 @@
-## PageWidth
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.PageWidth
 
 Represents the maximum number of characters that fit onto a single line in a
 document. The layout algorithms will try to avoid exceeding the set character

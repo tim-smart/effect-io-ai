@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.unsafeGet
 
 Unsafely lookup the value for the specified key in the `Trie`.
 

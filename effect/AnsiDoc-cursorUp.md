@@ -1,4 +1,7 @@
-## cursorUp
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorUp
 
 Moves the cursor up by the specified number of `lines` (default `1`) relative
 to the current cursor position.

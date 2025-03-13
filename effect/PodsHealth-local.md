@@ -1,4 +1,7 @@
-## local
+Package: `@effect/cluster`<br />
+Module: `PodsHealth`<br />
+
+## PodsHealth.local
 
 A layer that pings the pod directly to check if it's alive.
 This is useful for developing and testing but not reliable in production.

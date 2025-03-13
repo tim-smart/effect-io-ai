@@ -1,4 +1,7 @@
-## DurationFromMillis
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DurationFromMillis
 
 A schema that transforms a (possibly Infinite) non negative number into a
 `Duration`. Treats the value as the number of milliseconds.

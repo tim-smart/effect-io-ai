@@ -1,4 +1,7 @@
-## setIfAbsent
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.setIfAbsent
 
 Stores new binding in the map if it does not already exist.
 

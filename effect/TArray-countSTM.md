@@ -1,4 +1,7 @@
-## countSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.countSTM
 
 Count the values in the array matching a transactional predicate.
 

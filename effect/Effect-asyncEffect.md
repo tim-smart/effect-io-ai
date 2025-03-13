@@ -1,4 +1,7 @@
-## asyncEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.asyncEffect
 
 A variant of `async` where the registration function may return an `Effect`.
 

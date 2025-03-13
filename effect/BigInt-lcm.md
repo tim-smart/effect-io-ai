@@ -1,4 +1,7 @@
-## lcm
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.lcm
 
 Determines the least common multiple of two `bigint`s.
 

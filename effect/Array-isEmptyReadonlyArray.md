@@ -1,4 +1,7 @@
-## isEmptyReadonlyArray
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.isEmptyReadonlyArray
 
 Determine if a `ReadonlyArray` is empty narrowing down the type to `readonly []`.
 

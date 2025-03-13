@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.forEach
 
 Atomically performs transactional effect for each item in array.
 

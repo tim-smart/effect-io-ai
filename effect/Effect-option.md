@@ -1,4 +1,7 @@
-## option
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.option
 
 Encapsulates the result of an effect in an `Option`.
 

@@ -1,4 +1,7 @@
-## append
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.append
 
 Appends the specified element to the end of the `List`, creating a new `Cons`.
 

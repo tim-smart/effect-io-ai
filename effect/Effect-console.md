@@ -1,4 +1,7 @@
-## console
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.console
 
 Retreives the `Console` service from the context
 

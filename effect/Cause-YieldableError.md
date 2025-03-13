@@ -1,4 +1,7 @@
-## YieldableError
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.YieldableError
 
 Represents an error object that can be yielded in `Effect.gen`.
 

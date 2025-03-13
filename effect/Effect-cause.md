@@ -1,4 +1,7 @@
-## cause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.cause
 
 Retrieves the cause of a failure in an effect.
 

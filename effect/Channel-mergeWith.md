@@ -1,4 +1,7 @@
-## mergeWith
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mergeWith
 
 Returns a new channel, which is the merge of this channel and the specified
 channel, where the behavior of the returned channel on left or right early

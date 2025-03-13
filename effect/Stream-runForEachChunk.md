@@ -1,4 +1,7 @@
-## runForEachChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEachChunk
 
 Consumes all elements of the stream, passing them to the specified
 callback.

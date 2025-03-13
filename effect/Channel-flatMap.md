@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.flatMap
 
 Returns a new channel, which sequentially combines this channel, together
 with the provided factory function, which creates a second channel based on

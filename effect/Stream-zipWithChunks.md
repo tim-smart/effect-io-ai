@@ -1,4 +1,7 @@
-## zipWithChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipWithChunks
 
 Zips this stream with another point-wise and applies the function to the
 paired elements.

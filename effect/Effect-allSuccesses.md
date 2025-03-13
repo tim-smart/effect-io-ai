@@ -1,4 +1,7 @@
-## allSuccesses
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.allSuccesses
 
 Evaluates and runs each effect in the iterable, collecting only the
 successful results while discarding failures.

@@ -1,4 +1,7 @@
-## matchCauseEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.matchCauseEffect
 
 Handles failures with access to the cause and allows performing side effects.
 

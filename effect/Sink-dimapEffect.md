@@ -1,4 +1,7 @@
-## dimapEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dimapEffect
 
 Effectfully transforms both inputs and result of this sink using the
 provided functions.

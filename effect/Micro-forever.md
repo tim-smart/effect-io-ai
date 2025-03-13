@@ -1,4 +1,7 @@
-## forever
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.forever
 
 Repeat the given `Micro` effect forever, only stopping if the effect fails.
 

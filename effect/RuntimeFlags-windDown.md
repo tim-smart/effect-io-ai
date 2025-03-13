@@ -1,4 +1,7 @@
-## windDown
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.windDown
 
 Returns `true` if the `WindDown` `RuntimeFlag` is enabled, `false`
 otherwise.

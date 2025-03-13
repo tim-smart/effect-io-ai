@@ -1,4 +1,7 @@
-## modify
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.modify
 
 Apply a function to the element at the specified key, creating a new record.
 If the key does not exist, the record is returned unchanged.

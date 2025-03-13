@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.either
 
 Replace the success value of the given `Micro` effect with an `Either`,
 wrapping the success value in `Right` and wrapping any expected errors with

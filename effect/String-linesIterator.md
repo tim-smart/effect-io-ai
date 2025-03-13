@@ -1,4 +1,7 @@
-## linesIterator
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.linesIterator
 
 Returns an `IterableIterator` which yields each line contained within the
 string, trimming off the trailing newline character.

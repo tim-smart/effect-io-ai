@@ -1,4 +1,7 @@
-## branchAfter
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.branchAfter
 
 Returns a `Stream` that first collects `n` elements from the input `Stream`,
 and then creates a new `Stream` using the specified function, and sends all

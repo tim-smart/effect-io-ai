@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.make
 
 Makes a new reentrant read/write lock.
 

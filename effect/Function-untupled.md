@@ -1,4 +1,7 @@
-## untupled
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.untupled
 
 Inverse function of `tupled`
 

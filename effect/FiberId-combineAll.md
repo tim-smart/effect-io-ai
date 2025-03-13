@@ -1,4 +1,7 @@
-## combineAll
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.combineAll
 
 Combines a set of `FiberId`s into a single `FiberId`.
 

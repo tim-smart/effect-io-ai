@@ -1,4 +1,7 @@
-## not
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.not
 
 Excludes a specific value from matching while allowing all others.
 

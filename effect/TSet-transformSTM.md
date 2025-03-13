@@ -1,4 +1,7 @@
-## transformSTM
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.transformSTM
 
 Atomically updates all elements using a transactional function.
 

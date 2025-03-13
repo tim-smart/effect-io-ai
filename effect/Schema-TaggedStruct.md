@@ -1,4 +1,7 @@
-## TaggedStruct
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TaggedStruct
 
 A tagged struct is a struct that has a tag property that is used to distinguish between different types of objects.
 

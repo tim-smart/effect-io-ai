@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.size
 
 Returns the number of bindings.
 

@@ -1,4 +1,7 @@
-## scheduleAddDelay
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleAddDelay
 
 Returns a new `MicroSchedule` with an added calculated delay to each delay
 returned by this schedule.

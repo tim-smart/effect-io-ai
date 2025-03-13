@@ -1,4 +1,7 @@
-## isBool
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.isBool
 
 Returns `true` if the specified `Options` is a boolean flag, `false`
 otherwise.

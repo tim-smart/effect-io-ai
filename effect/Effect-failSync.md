@@ -1,4 +1,7 @@
-## failSync
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.failSync
 
 Creates an `Effect` that fails with the specified error, evaluated lazily.
 

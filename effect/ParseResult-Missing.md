@@ -1,4 +1,7 @@
-## Missing
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Missing
 
 Error that occurs when a required key or index is missing.
 

@@ -1,4 +1,7 @@
-## getTemplateLiteralRegExp
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.getTemplateLiteralRegExp
 
 Generates a regular expression from a `TemplateLiteral` AST node.
 

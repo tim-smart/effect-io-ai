@@ -1,4 +1,7 @@
-## getHelp
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.getHelp
 
 Returns help documentation for a primitive type.
 

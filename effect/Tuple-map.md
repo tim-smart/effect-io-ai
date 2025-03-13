@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.map
 
 Transforms each element of tuple using the given function, treating tuple homomorphically
 

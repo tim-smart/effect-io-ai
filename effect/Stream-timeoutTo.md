@@ -1,4 +1,7 @@
-## timeoutTo
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.timeoutTo
 
 Switches the stream if it does not produce a value after the specified
 duration.

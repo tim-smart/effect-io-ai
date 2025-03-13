@@ -1,4 +1,7 @@
-## async
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.async
 
 Create a `Micro` effect from an asynchronous computation.
 

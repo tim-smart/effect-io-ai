@@ -1,4 +1,7 @@
-## validate
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.validate
 
 Combines multiple effects and accumulates both successes and failures.
 

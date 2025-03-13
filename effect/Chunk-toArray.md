@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.toArray
 
 Converts a `Chunk` into an `Array`. If the provided `Chunk` is non-empty
 (`NonEmptyChunk`), the function will return a `NonEmptyArray`, ensuring the

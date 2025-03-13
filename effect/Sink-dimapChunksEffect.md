@@ -1,4 +1,7 @@
-## dimapChunksEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dimapChunksEffect
 
 Effectfully transforms both input chunks and result of this sink using the
 provided functions. `f` and `g` must preserve chunking-invariance.

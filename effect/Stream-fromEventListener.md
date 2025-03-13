@@ -1,4 +1,7 @@
-## fromEventListener
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromEventListener
 
 Creates a `Stream` using addEventListener.
 

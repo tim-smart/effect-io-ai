@@ -1,4 +1,7 @@
-## negate
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.negate
 
 Returns a new effect where boolean value of this effect is negated.
 

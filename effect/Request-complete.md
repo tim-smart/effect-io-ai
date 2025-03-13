@@ -1,4 +1,7 @@
-## complete
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.complete
 
 Complete a `Request` with the specified result.
 

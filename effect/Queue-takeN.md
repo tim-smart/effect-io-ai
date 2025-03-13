@@ -1,4 +1,7 @@
-## takeN
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.takeN
 
 Takes the specified number of elements from the queue. If there are fewer
 than the specified number of elements available, it suspends until they

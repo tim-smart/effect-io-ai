@@ -1,4 +1,7 @@
-## withDefault
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.withDefault
 
 Returns a config that describes the same structure as this one, but has the
 specified default value in case the information cannot be found.

@@ -1,4 +1,7 @@
-## product
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.product
 
 Combines two `Option` values into a single `Option` containing a tuple of
 their values if both are `Some`.

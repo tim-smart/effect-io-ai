@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.run
 
 Runs the sink on the stream to produce either the sink's result or an error.
 

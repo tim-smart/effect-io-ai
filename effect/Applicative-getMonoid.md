@@ -1,4 +1,7 @@
-## getMonoid
+Package: `@effect/typeclass`<br />
+Module: `Applicative`<br />
+
+## Applicative.getMonoid
 
 Lift a `Monoid` into `F`, combining the inner values using the provided `Monoid`:
 

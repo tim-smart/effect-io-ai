@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.head
 
 Get the first element of a `ReadonlyArray`, or `None` if the array is empty.
 

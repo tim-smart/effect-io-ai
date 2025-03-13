@@ -1,4 +1,7 @@
-## toQueue
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toQueue
 
 Converts the stream to a scoped queue of chunks. After the scope is closed,
 the queue will never again produce values and should be discarded.

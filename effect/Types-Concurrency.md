@@ -1,4 +1,7 @@
-## Concurrency
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Concurrency
 
 Describes the concurrency to use when executing multiple Effect's.
 

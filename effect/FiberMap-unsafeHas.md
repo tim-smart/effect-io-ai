@@ -1,4 +1,7 @@
-## unsafeHas
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.unsafeHas
 
 Check if a key exists in the FiberMap.
 

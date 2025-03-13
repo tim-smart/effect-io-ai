@@ -1,4 +1,7 @@
-## isFull
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.isFull
 
 Returns `true` if the `TQueue` contains at least one element, `false`
 otherwise.

@@ -1,4 +1,7 @@
-## makeAs
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.makeAs
 
 Creates a new `Deferred` from the specified `FiberId`.
 

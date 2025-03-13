@@ -1,4 +1,7 @@
-## drain
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.drain
 
 A sink that ignores its inputs.
 

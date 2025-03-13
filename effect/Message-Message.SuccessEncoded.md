@@ -1,4 +1,7 @@
-## Message.SuccessEncoded
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message.SuccessEncoded
 
 Extracts the success type from a `Message`.
 

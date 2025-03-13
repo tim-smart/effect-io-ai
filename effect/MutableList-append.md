@@ -1,4 +1,7 @@
-## append
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.append
 
 Appends the specified element to the end of the `MutableList`.
 

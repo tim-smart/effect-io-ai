@@ -1,4 +1,7 @@
-## mergeAll
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.mergeAll
 
 Combines all the provided layers concurrently, creating a new layer with merged input, error, and output types.
 

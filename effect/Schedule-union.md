@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.union
 
 Combines two schedules, continuing execution as long as at least one of them
 allows it, using the shorter delay.

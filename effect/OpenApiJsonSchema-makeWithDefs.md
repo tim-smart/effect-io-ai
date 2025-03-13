@@ -1,4 +1,7 @@
-## makeWithDefs
+Package: `@effect/platform`<br />
+Module: `OpenApiJsonSchema`<br />
+
+## OpenApiJsonSchema.makeWithDefs
 
 Creates a schema with additional options and definitions.
 

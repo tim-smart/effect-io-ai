@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.zipWith
 
 Apply a function to pairs of elements at the same index in two `Iterable`s, collecting the results. If one
 input `Iterable` is short, excess elements of the longer `Iterable` are discarded.

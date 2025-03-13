@@ -1,4 +1,7 @@
-## fromSchedule
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromSchedule
 
 Creates a stream from a `Schedule` that does not require any further
 input. The stream will emit an element for each value output from the

@@ -1,4 +1,7 @@
-## eraseStartLine
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.eraseStartLine
 
 Clears from the current cursor position to the start of the current line.
 

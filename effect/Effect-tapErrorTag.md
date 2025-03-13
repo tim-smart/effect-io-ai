@@ -1,4 +1,7 @@
-## tapErrorTag
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tapErrorTag
 
 Inspect errors matching a specific tag without altering the original effect.
 

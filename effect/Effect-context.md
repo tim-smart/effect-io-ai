@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.context
 
 Accesses the full context of the effect.
 

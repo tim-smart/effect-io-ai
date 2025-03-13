@@ -1,4 +1,7 @@
-## struct
+Package: `effect`<br />
+Module: `Equivalence`<br />
+
+## Equivalence.struct
 
 Given a struct of `Equivalence`s returns a new `Equivalence` that compares values of a struct
 by applying each `Equivalence` to the corresponding property of the struct.

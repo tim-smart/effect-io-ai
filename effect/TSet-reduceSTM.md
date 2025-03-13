@@ -1,4 +1,7 @@
-## reduceSTM
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.reduceSTM
 
 Atomically folds using a transactional function.
 

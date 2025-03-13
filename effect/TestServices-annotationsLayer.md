@@ -1,4 +1,7 @@
-## annotationsLayer
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.annotationsLayer
 
 Constructs a new `Annotations` service wrapped in a layer.
 

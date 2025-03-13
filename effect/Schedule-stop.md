@@ -1,4 +1,7 @@
-## stop
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.stop
 
 A schedule that does not recur and stops immediately.
 

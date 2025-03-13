@@ -1,4 +1,7 @@
-## liftPredicate
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.liftPredicate
 
 Lifts a `Predicate` or `Refinement` into the `Option` context, returning a
 `Some` of the input value if the predicate is satisfied, or `None` otherwise.

@@ -1,4 +1,7 @@
-## constFalse
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constFalse
 
 A thunk that returns always `false`.
 

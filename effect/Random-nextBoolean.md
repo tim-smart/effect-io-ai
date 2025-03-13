@@ -1,4 +1,7 @@
-## nextBoolean
+Package: `effect`<br />
+Module: `Random`<br />
+
+## Random.nextBoolean
 
 Returns the next boolean value from the pseudo-random number generator.
 

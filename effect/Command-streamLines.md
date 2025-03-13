@@ -1,4 +1,7 @@
-## streamLines
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.streamLines
 
 Runs the command returning the output as an stream of lines with the
 specified encoding.

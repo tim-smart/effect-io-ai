@@ -1,4 +1,7 @@
-## isShutdown
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.isShutdown
 
 Returns `true` if `shutdown` has been called, otherwise returns `false`.
 

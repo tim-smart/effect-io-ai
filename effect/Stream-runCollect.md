@@ -1,4 +1,7 @@
-## runCollect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runCollect
 
 Runs the stream and collects all of its elements to a chunk.
 

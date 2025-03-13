@@ -1,4 +1,7 @@
-## runIntoQueueElementsScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runIntoQueueElementsScoped
 
 Like `Stream.runIntoQueue`, but provides the result as a scoped [[ZIO]]
 to allow for scope composition.

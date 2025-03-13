@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.succeed
 
 Returns a fiber that has already succeeded with the specified value.
 

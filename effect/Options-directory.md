@@ -1,4 +1,7 @@
-## directory
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.directory
 
 Creates a parameter expecting path to a directory.
 

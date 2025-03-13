@@ -1,4 +1,7 @@
-## cursorLeft
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorLeft
 
 Moves the cursor to the first column of the current row.
 

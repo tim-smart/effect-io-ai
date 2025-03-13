@@ -1,4 +1,7 @@
-## opSupervision
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.opSupervision
 
 Returns `true` if the `OpSupervision` `RuntimeFlag` is enabled, `false`
 otherwise.

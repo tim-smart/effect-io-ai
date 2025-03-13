@@ -1,4 +1,7 @@
-## isExit
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.isExit
 
 Returns `true` if the specified value is an `Exit`, `false` otherwise.
 

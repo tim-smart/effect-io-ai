@@ -1,4 +1,7 @@
-## DateFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateFromSelf
 
 Describes a schema that accommodates potentially invalid `Date` instances,
 such as `new Date("Invalid Date")`, without rejection.

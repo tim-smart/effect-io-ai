@@ -1,4 +1,7 @@
-## cursorRestorePosition
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorRestorePosition
 
 Restores the cursor position, encoding shift state and formatting attributes
 from the previous save, if any, otherwise resets these all to their defaults.

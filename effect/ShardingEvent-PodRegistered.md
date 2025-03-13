@@ -1,4 +1,7 @@
-## PodRegistered
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.PodRegistered
 
 Constructs the event that occurs when a new Pod has registered
 

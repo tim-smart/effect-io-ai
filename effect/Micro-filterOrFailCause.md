@@ -1,4 +1,7 @@
-## filterOrFailCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.filterOrFailCause
 
 Filter the specified effect with the provided function, failing with specified
 `MicroCause` if the predicate fails.

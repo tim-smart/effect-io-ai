@@ -1,4 +1,7 @@
-## remainder
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.remainder
 
 Returns the remainder left over when one operand is divided by a second operand.
 

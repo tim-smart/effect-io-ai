@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.size
 
 Calculates the size of the `Interval` as the `Duration` from the start of the
 interval to the end of the interval.

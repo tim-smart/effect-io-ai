@@ -1,4 +1,7 @@
-## OptionFromNonEmptyTrimmedString
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.OptionFromNonEmptyTrimmedString
 
 Transforms strings into an Option type, effectively filtering out empty or
 whitespace-only strings by trimming them and checking their length. Returns

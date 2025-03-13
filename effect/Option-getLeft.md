@@ -1,4 +1,7 @@
-## getLeft
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getLeft
 
 Converts an `Either` into an `Option` by discarding the right value and
 extracting the left value.

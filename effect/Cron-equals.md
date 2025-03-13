@@ -1,4 +1,7 @@
-## equals
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.equals
 
 Checks if two `Cron`s are equal.
 

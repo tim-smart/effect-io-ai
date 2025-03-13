@@ -1,4 +1,7 @@
-## makeSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.makeSpan
 
 Create a new span for tracing.
 

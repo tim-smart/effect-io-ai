@@ -1,4 +1,7 @@
-## cachedFunction
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.cachedFunction
 
 Returns a memoized version of a function with effects, reusing results for
 the same inputs.

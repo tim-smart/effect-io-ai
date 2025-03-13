@@ -1,4 +1,7 @@
-## releaseRead
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.releaseRead
 
 Releases a read lock held by this fiber. Succeeds with the outstanding
 number of read locks held by this fiber.

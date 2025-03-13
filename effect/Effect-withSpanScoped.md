@@ -1,4 +1,7 @@
-## withSpanScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withSpanScoped
 
 Wraps the effect with a new span for tracing.
 

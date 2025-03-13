@@ -1,4 +1,7 @@
-## isEmptyTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.isEmptyTree
 
 Returns `true` if the specified `DocTree` is an `EmptyTree`, `false` otherwise.
 

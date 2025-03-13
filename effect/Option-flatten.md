@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.flatten
 
 Flattens an `Option` of `Option` into a single `Option`.
 

@@ -1,4 +1,7 @@
-## isSerializedEnvelope
+Package: `@effect/cluster`<br />
+Module: `SerializedEnvelope`<br />
+
+## SerializedEnvelope.isSerializedEnvelope
 
 Ensures that the given value is a SerializedEnvelope.
 

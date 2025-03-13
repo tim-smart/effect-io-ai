@@ -1,4 +1,7 @@
-## auto
+Package: `effect`<br />
+Module: `Resource`<br />
+
+## Resource.auto
 
 Creates a new `Resource` value that is automatically refreshed according to
 the specified policy. Note that error retrying is not performed

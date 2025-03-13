@@ -1,4 +1,7 @@
-## keysReversed
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.keysReversed
 
 Get all the keys present in the tree in reverse order.
 

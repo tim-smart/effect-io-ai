@@ -1,4 +1,7 @@
-## eraseLine
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.eraseLine
 
 Clears the current line.
 

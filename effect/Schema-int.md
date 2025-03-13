@@ -1,4 +1,7 @@
-## int
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.int
 
 Ensures that the provided value is an integer number (excluding NaN, +Infinity, and -Infinity).
 

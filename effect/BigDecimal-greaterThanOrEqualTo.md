@@ -1,4 +1,7 @@
-## greaterThanOrEqualTo
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.greaterThanOrEqualTo
 
 Checks if a given `BigDecimal` is greater than or equal to the provided one.
 

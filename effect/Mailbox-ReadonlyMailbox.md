@@ -1,4 +1,7 @@
-## ReadonlyMailbox
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.ReadonlyMailbox
 
 A `ReadonlyMailbox` represents a mailbox that can only be read from.
 

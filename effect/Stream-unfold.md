@@ -1,4 +1,7 @@
-## unfold
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.unfold
 
 Creates a stream by peeling off the "layers" of a value of type `S`.
 

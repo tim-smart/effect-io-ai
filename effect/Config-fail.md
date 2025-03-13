@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.fail
 
 Constructs a config that fails with the specified message.
 

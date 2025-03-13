@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.between
 
 Checks if a `BigDecimal` is between a `minimum` and `maximum` value (inclusive).
 

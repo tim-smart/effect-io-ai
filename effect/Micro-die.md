@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.die
 
 Creates a `Micro` effect that will die with the specified error.
 

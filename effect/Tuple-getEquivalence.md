@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.getEquivalence
 
 Given a tuple of `Equivalence`s returns a new `Equivalence` that compares values of a tuple
 by applying each `Equivalence` to the corresponding element of the tuple.

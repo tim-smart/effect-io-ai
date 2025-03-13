@@ -1,4 +1,7 @@
-## makeRuntimePromise
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.makeRuntimePromise
 
 Create an Effect run function that is backed by a FiberHandle.
 

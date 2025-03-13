@@ -1,4 +1,7 @@
-## PCGRandom
+Package: `effect`<br />
+Module: `Utils`<br />
+
+## Utils.PCGRandom
 
 PCG is a family of simple fast space-efficient statistically good algorithms
 for random number generation. Unlike many general-purpose RNGs, they are also

@@ -1,4 +1,7 @@
-## getSemigroupUnion
+Package: `@effect/typeclass`<br />
+Module: `Record`<br />
+
+## Record.getSemigroupUnion
 
 A `Semigroup` that creates a union of two records.
 

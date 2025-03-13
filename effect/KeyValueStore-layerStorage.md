@@ -1,4 +1,7 @@
-## layerStorage
+Package: `@effect/platform`<br />
+Module: `KeyValueStore`<br />
+
+## KeyValueStore.layerStorage
 
 Creates an KeyValueStorage from an instance of the `Storage` api.
 

@@ -1,4 +1,7 @@
-## JsonNumber
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.JsonNumber
 
 The `JsonNumber` is a schema for representing JSON numbers. It ensures that the provided value is a valid
 number by filtering out `NaN` and `(+/-) Infinity`. This is useful when you want to validate and represent numbers in JSON

@@ -1,4 +1,7 @@
-## Optimize
+Package: `@effect/printer`<br />
+Module: `Optimize`<br />
+
+## Optimize.Optimize
 
 Represents optimization of a given document tree through fusion of redundant
 document nodes.

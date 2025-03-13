@@ -1,4 +1,7 @@
-## unwrap
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.unwrap
 
 Creates a stream produced from an `Effect`.
 

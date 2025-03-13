@@ -1,4 +1,7 @@
-## isEnqueue
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.isEnqueue
 
 Returns `true` if the specified value is a `Enqueue`, `false` otherwise.
 

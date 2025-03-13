@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.flatten
 
 Flattens layers nested in the context of an effect.
 

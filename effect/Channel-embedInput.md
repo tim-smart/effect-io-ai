@@ -1,4 +1,7 @@
-## embedInput
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.embedInput
 
 Returns a new channel which connects the given `AsyncInputProducer` as
 this channel's input.

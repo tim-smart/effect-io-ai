@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.andThen
 
 Sequences two `Cause`s. The second `Cause` can be dependent on the result of
 the first `Cause`.

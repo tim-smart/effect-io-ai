@@ -1,4 +1,7 @@
-## List
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.List
 
 Represents an immutable linked list of elements of type `A`.
 

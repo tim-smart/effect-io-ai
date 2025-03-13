@@ -1,4 +1,7 @@
-## unwrapScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.unwrapScoped
 
 Creates a stream produced from a scoped `Effect`.
 

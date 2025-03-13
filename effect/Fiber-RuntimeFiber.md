@@ -1,4 +1,7 @@
-## RuntimeFiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.RuntimeFiber
 
 A runtime fiber that is executing an effect. Runtime fibers have an
 identity and a trace.

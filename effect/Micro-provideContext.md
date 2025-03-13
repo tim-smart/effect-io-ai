@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.provideContext
 
 Merge the given `Context` with the current context.
 

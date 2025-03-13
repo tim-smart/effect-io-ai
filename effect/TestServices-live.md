@@ -1,4 +1,7 @@
-## live
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.live
 
 Retrieves the `Live` service for this test.
 

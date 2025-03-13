@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `MergeStrategy`<br />
+
+## MergeStrategy.match
 
 Folds an `MergeStrategy` into a value of type `A`.
 

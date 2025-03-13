@@ -1,4 +1,7 @@
-## aggregateWithinEither
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.aggregateWithinEither
 
 Aggregates elements using the provided sink until it completes, or until
 the delay signalled by the schedule has passed.

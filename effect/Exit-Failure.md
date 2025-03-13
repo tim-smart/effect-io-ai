@@ -1,4 +1,7 @@
-## Failure
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.Failure
 
 Represents a failed `Effect` workflow containing the `Cause` of the failure
 of type `E`.

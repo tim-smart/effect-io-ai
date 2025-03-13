@@ -1,4 +1,7 @@
-## isCharStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isCharStream
 
 Returns `true` if the specified `DocStream` is a `CharStream`, `false` otherwise.
 

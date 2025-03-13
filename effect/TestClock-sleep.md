@@ -1,4 +1,7 @@
-## sleep
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.sleep
 
 Semantically blocks the current fiber until the clock time is equal to or
 greater than the specified duration. Once the clock time is adjusted to

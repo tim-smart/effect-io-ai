@@ -1,4 +1,7 @@
-## intersection
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.intersection
 
 Returns a `HashSet` of values which are present in both this set and that
 `Iterable<A>`.

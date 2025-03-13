@@ -1,4 +1,7 @@
-## nearest
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.nearest
 
 Converts a `DateTime` to the nearest given `part`.
 

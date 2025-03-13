@@ -1,4 +1,7 @@
-## zipAll
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipAll
 
 Zips this stream with another point-wise, creating a new stream of pairs of
 elements from both sides.

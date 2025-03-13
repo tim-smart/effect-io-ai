@@ -1,4 +1,7 @@
-## annotation
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.annotation
 
 Annotate the specified `DocTree` with an annotation of type `A`.
 

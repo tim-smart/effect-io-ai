@@ -1,4 +1,7 @@
-## isTQueue
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.isTQueue
 
 Returns `true` if the specified value is a `TQueue`, `false` otherwise.
 

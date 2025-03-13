@@ -1,4 +1,7 @@
-## array
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.array
 
 This function creates and returns a new `Order` for an array of values based on a given `Order` for the elements of the array.
 The returned `Order` compares two arrays by applying the given `Order` to each element in the arrays.

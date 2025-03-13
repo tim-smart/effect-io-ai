@@ -1,4 +1,7 @@
-## intersection
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.intersection
 
 Atomically transforms the set into the intersection of itself and the
 provided set.

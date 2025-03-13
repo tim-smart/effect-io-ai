@@ -1,4 +1,7 @@
-## Matcher
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.Matcher
 
 Pattern matching follows a structured process:
 

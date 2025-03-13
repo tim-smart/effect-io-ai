@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.size
 
 Retrieves the size of the `TPubSub`, which is equal to the number of elements
 in the `TPubSub`. This may be negative if fibers are suspended waiting for

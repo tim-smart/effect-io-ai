@@ -1,4 +1,7 @@
-## repeatEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEffect
 
 Creates a stream from an effect producing a value of type `A` which repeats
 forever.

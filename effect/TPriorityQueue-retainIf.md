@@ -1,4 +1,7 @@
-## retainIf
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.retainIf
 
 Retains only elements from the queue matching the specified predicate.
 

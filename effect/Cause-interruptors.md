@@ -1,4 +1,7 @@
-## interruptors
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.interruptors
 
 Collects all `FiberId`s responsible for interrupting a fiber.
 

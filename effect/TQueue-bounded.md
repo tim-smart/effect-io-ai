@@ -1,4 +1,7 @@
-## bounded
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.bounded
 
 Creates a bounded queue with the back pressure strategy. The queue will
 retain values until they have been taken, applying back pressure to

@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.context
 
 Accesses the whole context of the stream.
 

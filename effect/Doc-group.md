@@ -1,4 +1,7 @@
-## group
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.group
 
 The `group` combinator attempts to lay out a document onto a single line by
 removing the contained line breaks. If the result does not fit the page, or

@@ -1,4 +1,7 @@
-## withConfigProviderScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withConfigProviderScoped
 
 Sets a configuration provider within a scope.
 

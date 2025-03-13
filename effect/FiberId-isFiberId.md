@@ -1,4 +1,7 @@
-## isFiberId
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.isFiberId
 
 Returns `true` if the specified unknown value is a `FiberId`, `false`
 otherwise.

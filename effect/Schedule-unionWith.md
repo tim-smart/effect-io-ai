@@ -1,4 +1,7 @@
-## unionWith
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.unionWith
 
 Combines two schedules, continuing execution as long as at least one of them
 wants to continue, merging their intervals using a custom merge function.

@@ -1,4 +1,7 @@
-## withTracerPropagation
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.withTracerPropagation
 
 Enables or disables tracing propagation for the request.
 

@@ -1,4 +1,7 @@
-## tapErrorCause
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tapErrorCause
 
 Returns a stream that effectfully "peeks" at the cause of failure of the
 stream.

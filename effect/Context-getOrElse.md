@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.getOrElse
 
 Get a service from the context that corresponds to the given tag, or
 use the fallback value.

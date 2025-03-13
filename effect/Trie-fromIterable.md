@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.fromIterable
 
 Creates a new `Trie` from an iterable collection of key/value pairs (e.g. `Array<[string, V]>`).
 

@@ -1,4 +1,7 @@
-## entries
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.entries
 
 Returns an `IterableIterator` of the entries within the `HashMap`.
 

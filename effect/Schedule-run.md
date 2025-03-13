@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.run
 
 Runs a schedule using the provided inputs and collects all outputs.
 

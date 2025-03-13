@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `ScopedCache`<br />
+
+## ScopedCache.make
 
 Constructs a new cache with the specified capacity, time to live, and
 lookup function.

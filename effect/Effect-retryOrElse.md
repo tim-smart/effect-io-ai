@@ -1,4 +1,7 @@
-## retryOrElse
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.retryOrElse
 
 Retries a failing effect and runs a fallback effect if retries are exhausted.
 

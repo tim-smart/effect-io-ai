@@ -1,4 +1,7 @@
-## registerScoped
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.registerScoped
 
 Same as `register`, but will automatically call `unregister` when the `Scope` is terminated.
 

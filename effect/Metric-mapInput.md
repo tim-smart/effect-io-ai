@@ -1,4 +1,7 @@
-## mapInput
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.mapInput
 
 Returns a new metric that is powered by this one, but which accepts updates
 of the specified new type, which must be transformable to the input type of

@@ -1,4 +1,7 @@
-## timeoutOption
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.timeoutOption
 
 Returns an effect that will timeout this effect, succeeding with a `None`
 if the timeout elapses before the effect has produced a value; and `Some` of

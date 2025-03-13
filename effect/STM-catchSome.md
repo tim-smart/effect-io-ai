@@ -1,4 +1,7 @@
-## catchSome
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.catchSome
 
 Recovers from some or all of the error cases.
 

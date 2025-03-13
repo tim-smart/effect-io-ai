@@ -1,4 +1,7 @@
-## toEntries
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.toEntries
 
 Returns an `Array<[K, V]>` of the entries within the `HashMap`.
 

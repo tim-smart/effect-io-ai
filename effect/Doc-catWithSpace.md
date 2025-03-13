@@ -1,4 +1,7 @@
-## catWithSpace
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.catWithSpace
 
 The `catWithSpace` combinator concatenates two documents by placing a
 `space` document between them.

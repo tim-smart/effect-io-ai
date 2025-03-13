@@ -1,4 +1,7 @@
-## windowed
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.windowed
 
 Creates a schedule that divides time into fixed `interval`-long windows,
 triggering execution at the start of each new window.

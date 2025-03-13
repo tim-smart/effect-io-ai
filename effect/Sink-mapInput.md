@@ -1,4 +1,7 @@
-## mapInput
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mapInput
 
 Transforms this sink's input elements.
 

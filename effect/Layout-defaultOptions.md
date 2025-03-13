@@ -1,4 +1,7 @@
-## defaultOptions
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.defaultOptions
 
 The default layout options, which are suitable when you want to obtain output
 but do not care about the details.

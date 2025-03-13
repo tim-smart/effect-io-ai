@@ -1,4 +1,7 @@
-## integer
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.integer
 
 Creates an integer argument.
 

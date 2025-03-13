@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.join
 
 Join all fibers in the FiberMap. If any of the Fiber's in the map terminate with a failure,
 the returned Effect will terminate with the first failure that occurred.

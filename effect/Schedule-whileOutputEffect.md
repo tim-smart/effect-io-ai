@@ -1,4 +1,7 @@
-## whileOutputEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.whileOutputEffect
 
 Returns a new schedule that continues execution for as long as the given
 effectful predicate on the output evaluates to `true`.

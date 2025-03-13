@@ -1,4 +1,7 @@
-## alterAnnotations
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.alterAnnotations
 
 Change the annotation of a document to a different annotation, or none at
 all.

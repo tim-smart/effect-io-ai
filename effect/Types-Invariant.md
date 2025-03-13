@@ -1,4 +1,7 @@
-## Invariant
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Invariant
 
 Invariant helper.
 

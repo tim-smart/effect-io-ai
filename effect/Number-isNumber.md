@@ -1,4 +1,7 @@
-## isNumber
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.isNumber
 
 Tests if a value is a `number`.
 

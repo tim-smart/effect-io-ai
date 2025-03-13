@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.max
 
 Take the maximum of two values. If they are considered equal, the first argument is chosen.
 

@@ -1,4 +1,7 @@
-## isUndefined
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isUndefined
 
 Tests if a value is `undefined`.
 

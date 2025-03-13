@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.join
 
 Joins the elements together with "sep" in the middle.
 

@@ -1,4 +1,7 @@
-## URLFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.URLFromSelf
 
 Defines a schema that represents a `URL` object.
 

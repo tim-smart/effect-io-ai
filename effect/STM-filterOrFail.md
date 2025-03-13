@@ -1,4 +1,7 @@
-## filterOrFail
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filterOrFail
 
 Fails with the specified error if the predicate fails.
 

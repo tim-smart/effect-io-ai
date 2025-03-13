@@ -1,4 +1,7 @@
-## filterStatusOk
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.filterStatusOk
 
 Filters responses that return a 2xx status code.
 

@@ -1,4 +1,7 @@
-## reAnnotate
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.reAnnotate
 
 Modify the annotations of a document.
 

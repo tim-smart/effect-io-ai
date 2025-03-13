@@ -1,4 +1,7 @@
-## provideWithLive
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.provideWithLive
 
 Runs a transformation function with the live default Effect services while
 ensuring that the workflow itself is run with the test services.

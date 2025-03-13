@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.reduce
 
 Atomically folds using a pure function.
 

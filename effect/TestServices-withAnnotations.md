@@ -1,4 +1,7 @@
-## withAnnotations
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withAnnotations
 
 Executes the specified workflow with the specified implementation of the
 annotations service.

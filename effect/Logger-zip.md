@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.zip
 
 Combines this logger with the specified logger to produce a new logger that
 logs to both this logger and that logger.

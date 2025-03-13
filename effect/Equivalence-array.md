@@ -1,4 +1,7 @@
-## array
+Package: `effect`<br />
+Module: `Equivalence`<br />
+
+## Equivalence.array
 
 Creates a new `Equivalence` for an array of values based on a given `Equivalence` for the elements of the array.
 

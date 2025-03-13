@@ -1,4 +1,7 @@
-## withEarlyRelease
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withEarlyRelease
 
 Returns the result of the effect and a finalizer to close its scope.
 

@@ -1,4 +1,7 @@
-## encodeText
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.encodeText
 
 Encode a stream of strings into a stream of Uint8Array chunks using the specified encoding.
 

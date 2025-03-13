@@ -1,4 +1,7 @@
-## difference
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.difference
 
 Merge two records, preserving only the entries that are unique to each record.
 

@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.context
 
 Access the current `Context` from the environment.
 

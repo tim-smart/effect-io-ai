@@ -1,4 +1,7 @@
-## findFirstIndex
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.findFirstIndex
 
 Return the first index for which a predicate holds.
 

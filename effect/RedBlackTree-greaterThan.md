@@ -1,4 +1,7 @@
-## greaterThan
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.greaterThan
 
 Returns an iterator that traverse entries in order with keys greater than the
 specified key.

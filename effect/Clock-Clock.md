@@ -1,4 +1,7 @@
-## Clock
+Package: `effect`<br />
+Module: `Clock`<br />
+
+## Clock.Clock
 
 Represents a time-based clock which provides functionality related to time
 and scheduling.

@@ -1,4 +1,7 @@
-## finite
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.finite
 
 Ensures that the provided value is a finite number (excluding NaN, +Infinity, and -Infinity).
 

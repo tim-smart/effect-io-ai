@@ -1,4 +1,7 @@
-## compose
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.compose
 
 Composes two functions, `ab` and `bc` into a single function that takes in an argument `a` of type `A` and returns a result of type `C`.
 The result is obtained by first applying the `ab` function to `a` and then applying the `bc` function to the result of `ab`.

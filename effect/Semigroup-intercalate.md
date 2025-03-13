@@ -1,4 +1,7 @@
-## intercalate
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.intercalate
 
 The `intercalate` API returns a function that takes a `Semigroup` instance and a separator value, and returns a new
 `Semigroup` instance that combines values with the given separator.

@@ -1,4 +1,7 @@
-## middlewareOpenApi
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.middlewareOpenApi
 
 A middleware that adds an openapi.json endpoint to the API.
 

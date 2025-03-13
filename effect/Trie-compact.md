@@ -1,4 +1,7 @@
-## compact
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.compact
 
 Filters out `None` values from a `Trie` of `Options`s.
 

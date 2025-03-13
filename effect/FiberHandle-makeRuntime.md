@@ -1,4 +1,7 @@
-## makeRuntime
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.makeRuntime
 
 Create an Effect run function that is backed by a FiberHandle.
 

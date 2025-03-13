@@ -1,4 +1,7 @@
-## validate
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.validate
 
 Returns a config that describes the same structure as this one, but which
 performs validation during loading.

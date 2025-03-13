@@ -1,4 +1,7 @@
-## min
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.min
 
 `Semigroup` that returns last minimum of elements.
 

@@ -1,4 +1,7 @@
-## layerLocalStorage
+Package: `@effect/platform-browser`<br />
+Module: `BrowserKeyValueStore`<br />
+
+## BrowserKeyValueStore.layerLocalStorage
 
 Creates a KeyValueStore layer that uses the browser's localStorage api. Values are stored between sessions.
 

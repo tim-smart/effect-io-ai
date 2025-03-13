@@ -1,4 +1,7 @@
-## currentTimeMillis
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.currentTimeMillis
 
 Accesses the current time of a `TestClock` instance in the context in
 milliseconds.

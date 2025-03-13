@@ -1,4 +1,7 @@
-## isFailedStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isFailedStream
 
 Returns `true` if the specified `DocStream` is a `FailedStream`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## Differ
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.Differ
 
 A `Differ<Value, Patch>` knows how to compare an old value and new value of
 type `Value` to produce a patch of type `Patch` that describes the

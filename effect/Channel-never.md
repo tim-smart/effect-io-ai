@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.never
 
 Returns a channel that never completes
 

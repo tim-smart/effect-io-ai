@@ -1,4 +1,7 @@
-## isSome
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.isSome
 
 Checks whether an `Option` contains a value (`Some`).
 

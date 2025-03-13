@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.join
 
 Joins the elements together with "sep" in the middle.
 

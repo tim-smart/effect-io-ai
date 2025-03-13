@@ -1,4 +1,7 @@
-## raceAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.raceAll
 
 Races multiple effects and returns the first successful result.
 

@@ -1,4 +1,7 @@
-## separate
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.separate
 
 Separates an `Iterable` into two arrays based on a predicate.
 

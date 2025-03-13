@@ -1,4 +1,7 @@
-## ignoreLeftover
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.ignoreLeftover
 
 Drains the remaining elements from the stream after the sink finishes
 

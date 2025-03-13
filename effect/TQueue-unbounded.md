@@ -1,4 +1,7 @@
-## unbounded
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.unbounded
 
 Creates an unbounded queue.
 

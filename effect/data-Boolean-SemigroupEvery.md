@@ -1,4 +1,7 @@
-## SemigroupEvery
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.SemigroupEvery
 
 `boolean` semigroup under conjunction.
 

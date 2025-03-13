@@ -1,4 +1,7 @@
-## pick
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.pick
 
 Create a new object by picking properties of an existing object.
 

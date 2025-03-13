@@ -1,4 +1,7 @@
-## toChunk
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.toChunk
 
 Collects all bindings into a `Chunk`.
 

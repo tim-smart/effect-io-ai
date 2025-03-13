@@ -1,4 +1,7 @@
-## TimeoutExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.TimeoutExceptionTypeId
 
 A unique symbol identifying the `TimeoutException` type.
 

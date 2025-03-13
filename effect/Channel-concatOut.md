@@ -1,4 +1,7 @@
-## concatOut
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.concatOut
 
 Returns a new channel, which is the concatenation of all the channels that
 are written out by this channel. This method may only be called on channels

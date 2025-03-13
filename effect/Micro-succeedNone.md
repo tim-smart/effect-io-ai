@@ -1,4 +1,7 @@
-## succeedNone
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.succeedNone
 
 Creates a `Micro` effect that succeeds with `None`.
 

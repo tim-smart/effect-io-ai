@@ -1,4 +1,7 @@
-## capacity
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.capacity
 
 Returns the number of elements the queue can hold.
 

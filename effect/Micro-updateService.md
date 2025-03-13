@@ -1,4 +1,7 @@
-## updateService
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.updateService
 
 Update the service for the given `Context.Tag` in the environment.
 

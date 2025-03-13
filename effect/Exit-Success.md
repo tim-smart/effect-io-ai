@@ -1,4 +1,7 @@
-## Success
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.Success
 
 Represents a successful `Effect` workflow and containing the returned value
 of type `A`.

@@ -1,4 +1,7 @@
-## retry
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.retry
 
 Retries the request based on a provided schedule or policy.
 

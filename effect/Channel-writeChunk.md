@@ -1,4 +1,7 @@
-## writeChunk
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.writeChunk
 
 Writes a `Chunk` of values to the channel.
 

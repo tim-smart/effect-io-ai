@@ -1,4 +1,7 @@
-## lbrace
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.lbrace
 
 A document containing a single `{` character.
 

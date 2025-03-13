@@ -1,4 +1,7 @@
-## histogram
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.histogram
 
 Creates a metric key for a histogram, with the specified name and boundaries.
 

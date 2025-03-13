@@ -1,4 +1,7 @@
-## dropWhileEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dropWhileEffect
 
 Drops incoming elements as long as the effectful predicate is satisfied.
 

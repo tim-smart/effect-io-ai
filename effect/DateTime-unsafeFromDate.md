@@ -1,4 +1,7 @@
-## unsafeFromDate
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.unsafeFromDate
 
 Create a `DateTime` from a `Date`.
 

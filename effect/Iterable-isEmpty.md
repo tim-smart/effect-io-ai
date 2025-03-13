@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.isEmpty
 
 Determine if an `Iterable` is empty
 

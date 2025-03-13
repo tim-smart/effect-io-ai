@@ -1,4 +1,7 @@
-## offerAll
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.offerAll
 
 For Bounded Queue: uses the `BackPressure` Strategy, places the values in
 the queue and always returns true. If the queue has reached capacity, then

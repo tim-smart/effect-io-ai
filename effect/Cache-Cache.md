@@ -1,4 +1,7 @@
-## Cache
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.Cache
 
 A `Cache` is defined in terms of a lookup function that, given a key of
 type `Key`, can either fail with an error of type `Error` or succeed with a

@@ -1,4 +1,7 @@
-## writeAll
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.writeAll
 
 Writes a sequence of values to the channel.
 

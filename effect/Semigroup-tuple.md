@@ -1,4 +1,7 @@
-## tuple
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.tuple
 
 Similar to `Promise.all` but operates on `Semigroup`s.
 

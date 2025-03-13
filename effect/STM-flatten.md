@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.flatten
 
 Flattens out a nested `STM` effect.
 

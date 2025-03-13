@@ -1,4 +1,7 @@
-## foldEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldEffect
 
 A sink that effectfully folds its inputs with the provided function,
 termination predicate and initial state.

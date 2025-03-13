@@ -1,4 +1,7 @@
-## minOption
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.minOption
 
 Atomically compute the least element in the array, if it exists.
 

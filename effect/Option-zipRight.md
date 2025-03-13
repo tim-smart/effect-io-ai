@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.zipRight
 
 Combines two `Option`s, keeping the value from the second `Option` if both
 are `Some`.

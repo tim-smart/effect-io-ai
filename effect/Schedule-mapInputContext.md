@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.mapInputContext
 
 Transforms the required context of a schedule.
 

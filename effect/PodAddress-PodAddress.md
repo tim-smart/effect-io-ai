@@ -1,4 +1,7 @@
-## PodAddress
+Package: `@effect/cluster`<br />
+Module: `PodAddress`<br />
+
+## PodAddress.PodAddress
 
 A PodAddress is a unique identifier of a Pod (application server).
 It is conventially built by using an address and a port, so that messaging implementations may use directly the

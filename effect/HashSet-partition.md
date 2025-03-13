@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.partition
 
 Partition the values of a `HashSet` using the specified predicate.
 

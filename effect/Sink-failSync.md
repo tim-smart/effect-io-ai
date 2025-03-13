@@ -1,4 +1,7 @@
-## failSync
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.failSync
 
 A sink that always fails with the specified lazily evaluated error.
 

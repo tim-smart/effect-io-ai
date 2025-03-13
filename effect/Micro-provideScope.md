@@ -1,4 +1,7 @@
-## provideScope
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.provideScope
 
 Provide a `MicroScope` to an effect.
 

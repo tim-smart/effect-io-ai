@@ -1,4 +1,7 @@
-## last
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.last
 
 Get the last element in a `ReadonlyArray`, or `None` if the `ReadonlyArray` is empty.
 

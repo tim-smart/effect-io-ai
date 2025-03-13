@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.empty
 
 Creates an empty `Trie`.
 

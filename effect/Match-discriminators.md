@@ -1,4 +1,7 @@
-## discriminators
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.discriminators
 
 Matches values based on a field that serves as a discriminator, mapping each
 possible value to a corresponding handler.

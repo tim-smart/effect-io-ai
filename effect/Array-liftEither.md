@@ -1,4 +1,7 @@
-## liftEither
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.liftEither
 
 Lifts a function that returns an `Either` into a function that returns an array.
 If the `Either` is a left, it returns an empty array.

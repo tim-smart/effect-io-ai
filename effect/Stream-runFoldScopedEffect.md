@@ -1,4 +1,7 @@
-## runFoldScopedEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFoldScopedEffect
 
 Executes an effectful fold over the stream of values. Returns a scoped
 value that represents the scope of the stream.

@@ -1,4 +1,7 @@
-## GenAITelemetryAttributes
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.GenAITelemetryAttributes
 
 The attributes used to describe telemetry in the context of Generative
 Artificial Intelligence (GenAI) Models requests and responses.

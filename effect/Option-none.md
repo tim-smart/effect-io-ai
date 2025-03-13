@@ -1,4 +1,7 @@
-## none
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.none
 
 Represents the absence of a value by creating an empty `Option`.
 

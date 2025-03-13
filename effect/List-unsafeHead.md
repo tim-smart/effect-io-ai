@@ -1,4 +1,7 @@
-## unsafeHead
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.unsafeHead
 
 Unsafely returns the first element of the specified `List`.
 

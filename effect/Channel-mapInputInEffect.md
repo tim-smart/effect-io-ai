@@ -1,4 +1,7 @@
-## mapInputInEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapInputInEffect
 
 Returns a new channel which is the same as this one but applies the given
 effectual function to the input channel's output elements.

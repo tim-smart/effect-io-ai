@@ -1,4 +1,7 @@
-## MetricPolling
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.MetricPolling
 
 A `MetricPolling` is a combination of a metric and an effect that polls for
 updates to the metric.

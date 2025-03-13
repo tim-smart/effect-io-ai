@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `PodsHealth`<br />
+
+## PodsHealth.make
 
 Constructs a PodsHealth from its implementation
 

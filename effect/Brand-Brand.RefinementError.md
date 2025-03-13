@@ -1,4 +1,7 @@
-## Brand.RefinementError
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.RefinementError
 
 Represents an error that occurs when the provided value of the branded type does not pass the refinement predicate.
 

@@ -1,4 +1,7 @@
-## layer
+Package: `@effect/platform`<br />
+Module: `Path`<br />
+
+## Path.layer
 
 An implementation of the Path interface that can be used in all environments
 (including browsers).

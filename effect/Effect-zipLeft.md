@@ -1,4 +1,7 @@
-## zipLeft
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.zipLeft
 
 Executes two effects sequentially, returning the result of the first effect
 and ignoring the result of the second.

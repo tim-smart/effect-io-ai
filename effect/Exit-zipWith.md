@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.zipWith
 
 Zips this exit together with that exit using the specified combination
 functions.

@@ -1,4 +1,7 @@
-## stream
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.stream
 
 Start running the command and return the output as a `Stream`.
 

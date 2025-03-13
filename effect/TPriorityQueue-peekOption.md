@@ -1,4 +1,7 @@
-## peekOption
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.peekOption
 
 Peeks at the first value in the queue without removing it, returning `None`
 if there is not a value in the queue.

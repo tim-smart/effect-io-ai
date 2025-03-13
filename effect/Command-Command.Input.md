@@ -1,4 +1,7 @@
-## Command.Input
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.Command.Input
 
 Configures the pipe that is established between the parent and child
 processes' `stdin` stream.

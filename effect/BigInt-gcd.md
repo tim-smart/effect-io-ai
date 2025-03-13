@@ -1,4 +1,7 @@
-## gcd
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.gcd
 
 Determines the greatest common divisor of two `bigint`s.
 

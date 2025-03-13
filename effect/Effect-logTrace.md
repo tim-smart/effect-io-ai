@@ -1,4 +1,7 @@
-## logTrace
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logTrace
 
 Logs messages at the TRACE log level.
 

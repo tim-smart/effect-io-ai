@@ -1,4 +1,7 @@
-## copy
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.copy
 
 Copies an array.
 

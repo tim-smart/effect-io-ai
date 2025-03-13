@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.min
 
 Finds the minimum element in an array based on a comparator.
 

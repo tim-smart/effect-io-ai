@@ -1,4 +1,7 @@
-## isZero
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.isZero
 
 Checks if a given `BigDecimal` is `0`.
 

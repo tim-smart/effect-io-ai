@@ -1,4 +1,7 @@
-## unsandbox
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.unsandbox
 
 The `unsandbox` function is used to revert an effect that has been
 sandboxed by `sandbox`. When you apply `unsandbox`, the

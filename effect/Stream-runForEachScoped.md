@@ -1,4 +1,7 @@
-## runForEachScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEachScoped
 
 Like `Stream.forEach`, but returns a scoped effect so the finalization
 order can be controlled.

@@ -1,4 +1,7 @@
-## ignore
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.ignore
 
 Returns a new effect that ignores the success or failure of this effect.
 

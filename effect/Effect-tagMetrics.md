@@ -1,4 +1,7 @@
-## tagMetrics
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tagMetrics
 
 Tags each metric in an effect with specific key-value pairs.
 

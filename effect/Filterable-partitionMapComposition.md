@@ -1,4 +1,7 @@
-## partitionMapComposition
+Package: `@effect/typeclass`<br />
+Module: `Filterable`<br />
+
+## Filterable.partitionMapComposition
 
 Returns a default binary `partitionMap` composition.
 

@@ -1,4 +1,7 @@
-## makeLazy
+Package: `effect`<br />
+Module: `Arbitrary`<br />
+
+## Arbitrary.makeLazy
 
 Returns a LazyArbitrary for the `A` type of the provided schema.
 

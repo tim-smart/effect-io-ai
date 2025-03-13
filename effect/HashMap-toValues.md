@@ -1,4 +1,7 @@
-## toValues
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.toValues
 
 Returns an `Array` of the values within the `HashMap`.
 

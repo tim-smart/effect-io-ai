@@ -1,4 +1,7 @@
-## interruptWhenDeferred
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.interruptWhenDeferred
 
 Returns a new channel, which is the same as this one, except it will be
 interrupted when the specified deferred is completed. If the deferred is

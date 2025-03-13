@@ -1,4 +1,7 @@
-## divide
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.divide
 
 Provides a division operation on `bigint`s.
 

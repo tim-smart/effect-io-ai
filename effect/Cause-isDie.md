@@ -1,4 +1,7 @@
-## isDie
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isDie
 
 Checks if a `Cause` contains a defect.
 

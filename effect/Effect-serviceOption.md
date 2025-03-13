@@ -1,4 +1,7 @@
-## serviceOption
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.serviceOption
 
 Retrieves an optional service from the context as an `Option`.
 

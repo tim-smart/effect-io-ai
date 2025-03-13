@@ -1,4 +1,7 @@
-## lowercased
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.lowercased
 
 Verifies that a string is lowercased.
 

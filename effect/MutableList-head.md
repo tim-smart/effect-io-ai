@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.head
 
 Returns the first element of the list, if it exists.
 

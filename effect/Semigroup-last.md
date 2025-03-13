@@ -1,4 +1,7 @@
-## last
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.last
 
 Always return the last argument.
 

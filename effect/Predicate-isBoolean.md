@@ -1,4 +1,7 @@
-## isBoolean
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isBoolean
 
 Tests if a value is a `boolean`.
 

@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.interrupt
 
 Interrupts the fiber from whichever fiber is calling this method. If the
 fiber has already exited, the returned effect will resume immediately.

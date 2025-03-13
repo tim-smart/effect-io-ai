@@ -1,4 +1,7 @@
-## OpenAiTelemetry.RequestAttributes
+Package: `@effect/ai-openai`<br />
+Module: `OpenAiTelemetry`<br />
+
+## OpenAiTelemetry.OpenAiTelemetry.RequestAttributes
 
 Telemetry attributes which are part of the GenAI specification and are
 namespaced by `gen_ai.openai.request`.

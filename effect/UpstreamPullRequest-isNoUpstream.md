@@ -1,4 +1,7 @@
-## isNoUpstream
+Package: `effect`<br />
+Module: `UpstreamPullRequest`<br />
+
+## UpstreamPullRequest.isNoUpstream
 
 Returns `true` if the specified `UpstreamPullRequest` is a `NoUpstream`,
 `false` otherwise.

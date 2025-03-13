@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.fromIterable
 
 Creates a new `MutableList` from an iterable collection of values.
 

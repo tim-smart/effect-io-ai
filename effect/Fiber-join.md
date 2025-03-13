@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.join
 
 Joins the fiber, which suspends the joining fiber until the result of the
 fiber has been determined. Attempting to join a fiber that has erred will

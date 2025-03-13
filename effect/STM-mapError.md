@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.mapError
 
 Maps from one error type to another.
 

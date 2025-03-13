@@ -1,4 +1,7 @@
-## contextWithEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.contextWithEffect
 
 Accesses the context of the channel in the context of an effect.
 

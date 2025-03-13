@@ -1,4 +1,7 @@
-## unbounded
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.unbounded
 
 Creates a new unbounded `MutableQueue`.
 

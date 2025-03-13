@@ -1,4 +1,7 @@
-## RedBlackTree
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.RedBlackTree
 
 A Red-Black Tree.
 

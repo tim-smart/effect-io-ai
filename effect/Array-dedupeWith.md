@@ -1,4 +1,7 @@
-## dedupeWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.dedupeWith
 
 Remove duplicates from an `Iterable` using the provided `isEquivalent` function,
 preserving the order of the first occurrence of each element.

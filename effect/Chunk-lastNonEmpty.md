@@ -1,4 +1,7 @@
-## lastNonEmpty
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.lastNonEmpty
 
 Returns the last element of this non empty chunk.
 

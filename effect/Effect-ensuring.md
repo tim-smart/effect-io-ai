@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.ensuring
 
 Guarantees the execution of a finalizer when an effect starts execution.
 

@@ -1,4 +1,7 @@
-## satisfies
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.satisfies
 
 A function that ensures that the type of an expression matches some type,
 without changing the resulting type of that expression.

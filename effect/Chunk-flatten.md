@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.flatten
 
 Flattens a chunk of chunks into a single chunk by concatenating all chunks.
 

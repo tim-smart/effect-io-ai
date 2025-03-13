@@ -1,4 +1,7 @@
-## fromPubSubScoped
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromPubSubScoped
 
 Construct a `Channel` from a `PubSub` within a scoped effect.
 

@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.either
 
 Returns a stream whose failures and successes have been lifted into an
 `Either`. The resulting stream cannot fail, because the failures have been

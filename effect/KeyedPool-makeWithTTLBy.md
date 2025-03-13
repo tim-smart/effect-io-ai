@@ -1,4 +1,7 @@
-## makeWithTTLBy
+Package: `effect`<br />
+Module: `KeyedPool`<br />
+
+## KeyedPool.makeWithTTLBy
 
 Makes a new pool with the specified minimum and maximum sizes and time to
 live before a pool whose excess items are not being used will be shrunk

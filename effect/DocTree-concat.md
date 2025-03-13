@@ -1,4 +1,7 @@
-## concat
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.concat
 
 Horizontally concatenates multiple `DocTree`s.
 

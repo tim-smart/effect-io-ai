@@ -1,4 +1,7 @@
-## rparen
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.rparen
 
 A document containing a single `)` character.
 

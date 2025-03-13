@@ -1,4 +1,7 @@
-## Semigroup
+Package: `@effect/typeclass`<br />
+Module: `String`<br />
+
+## String.Semigroup
 
 `string` semigroup under concatenation.
 

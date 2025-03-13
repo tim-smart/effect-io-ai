@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.remove
 
 Remove a fiber from the FiberMap, interrupting it if it exists.
 

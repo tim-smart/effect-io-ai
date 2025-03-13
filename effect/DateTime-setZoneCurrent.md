@@ -1,4 +1,7 @@
-## setZoneCurrent
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setZoneCurrent
 
 Set the time zone of a `DateTime` to the current time zone, which is
 determined by the `CurrentTimeZone` service.

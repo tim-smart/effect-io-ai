@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.asVoid
 
 Maps the `Success` value of the specified exit to a void.
 

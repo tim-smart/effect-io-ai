@@ -1,4 +1,7 @@
-## loop
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.loop
 
 Repeatedly executes a loop with a state, collecting results or discarding
 them based on configuration.

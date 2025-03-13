@@ -1,4 +1,7 @@
-## formatIntl
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatIntl
 
 Format a `DateTime` as a string using the `DateTimeFormat` API.
 

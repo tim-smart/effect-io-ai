@@ -1,4 +1,7 @@
-## fromDotEnv
+Package: `@effect/platform`<br />
+Module: `PlatformConfigProvider`<br />
+
+## PlatformConfigProvider.fromDotEnv
 
 Create a dotenv ConfigProvider.
 

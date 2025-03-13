@@ -1,4 +1,7 @@
-## omit
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.omit
 
 Equivalent at runtime to the built-in TypeScript utility type `Omit`.
 

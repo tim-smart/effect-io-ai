@@ -1,4 +1,7 @@
-## nested
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.nested
 
 Returns a config that has this configuration nested as a property of the
 specified name.

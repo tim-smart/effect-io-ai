@@ -1,4 +1,7 @@
-## Sensitive
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.Sensitive
 
 A field that represents a sensitive value that should not be exposed in the
 JSON variants.

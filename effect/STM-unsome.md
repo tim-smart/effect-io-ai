@@ -1,4 +1,7 @@
-## unsome
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.unsome
 
 Converts an option on errors into an option on values.
 

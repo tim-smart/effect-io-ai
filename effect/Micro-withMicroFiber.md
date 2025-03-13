@@ -1,4 +1,7 @@
-## withMicroFiber
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.withMicroFiber
 
 Create a `Micro` effect using the current `MicroFiber`.
 

@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.make
 
 Creates a new closeable scope where finalizers will run according to the
 specified `ExecutionStrategy`. If no execution strategy is provided, `sequential`

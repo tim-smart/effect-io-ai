@@ -1,4 +1,7 @@
-## tap
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.tap
 
 Performs an additional effect after a successful request.
 

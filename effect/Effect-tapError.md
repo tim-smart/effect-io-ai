@@ -1,4 +1,7 @@
-## tapError
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tapError
 
 Execute a side effect on failure without modifying the original effect.
 

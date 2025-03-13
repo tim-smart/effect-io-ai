@@ -1,4 +1,7 @@
-## replicate
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.replicate
 
 Replicates the given effect `n` times.
 

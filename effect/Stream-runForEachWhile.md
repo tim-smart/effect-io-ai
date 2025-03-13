@@ -1,4 +1,7 @@
-## runForEachWhile
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEachWhile
 
 Consumes elements of the stream, passing them to the specified callback,
 and terminating consumption when the callback returns `false`.

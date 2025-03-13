@@ -1,4 +1,7 @@
-## collectAllToSetN
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllToSetN
 
 A sink that collects first `n` distinct inputs into a set.
 

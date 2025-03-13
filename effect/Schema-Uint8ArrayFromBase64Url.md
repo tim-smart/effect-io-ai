@@ -1,4 +1,7 @@
-## Uint8ArrayFromBase64Url
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Uint8ArrayFromBase64Url
 
 Decodes a base64 (URL) encoded string into a `Uint8Array`.
 

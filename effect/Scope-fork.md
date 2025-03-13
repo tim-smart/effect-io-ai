@@ -1,4 +1,7 @@
-## fork
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.fork
 
 Forks a new child scope with the specified execution strategy. The child scope
 will automatically be closed when this scope is closed.

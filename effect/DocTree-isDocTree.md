@@ -1,4 +1,7 @@
-## isDocTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.isDocTree
 
 Returns `true` if the specified value is a `DocTree`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## fromFunction
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.fromFunction
 
 Creates a schedule that always recurs, transforming input values using the
 specified function.

@@ -1,4 +1,7 @@
-## withDefaults
+Package: `@effect/cluster`<br />
+Module: `ShardingConfig`<br />
+
+## ShardingConfig.withDefaults
 
 Provides the ShardingConfig, values that are omitted will be read from the defaults
 

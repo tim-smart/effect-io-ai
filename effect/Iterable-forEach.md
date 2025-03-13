@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.forEach
 
 Iterate over the `Iterable` applying `f`.
 

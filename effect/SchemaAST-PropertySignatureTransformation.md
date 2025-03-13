@@ -1,4 +1,7 @@
-## PropertySignatureTransformation
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.PropertySignatureTransformation
 
 Represents a `PropertySignature -> PropertySignature` transformation
 

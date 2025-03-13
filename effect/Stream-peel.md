@@ -1,4 +1,7 @@
-## peel
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.peel
 
 Peels off enough material from the stream to construct a `Z` using the
 provided `Sink` and then returns both the `Z` and the rest of the

@@ -1,4 +1,7 @@
-## singleQuoted
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.singleQuoted
 
 Encloses the input document in single quotes (`""`).
 

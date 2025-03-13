@@ -1,4 +1,7 @@
-## shuffle
+Package: `effect`<br />
+Module: `Random`<br />
+
+## Random.shuffle
 
 Uses the pseudo-random number generator to shuffle the specified iterable.
 

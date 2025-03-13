@@ -1,4 +1,7 @@
-## json
+Package: `@effect/cluster`<br />
+Module: `Serialization`<br />
+
+## Serialization.json
 
 A layer that uses JSON serialization for encoding and decoding messages.
 This is useful for testing and not recommended to use in production.

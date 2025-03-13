@@ -1,4 +1,7 @@
-## zoneFromString
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneFromString
 
 Try parse a TimeZone from a string
 

@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.has
 
 Checks if the specified key has an entry in the `HashMap`.
 

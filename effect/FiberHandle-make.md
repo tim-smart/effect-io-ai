@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.make
 
 A FiberHandle can be used to store a single fiber.
 When the associated Scope is closed, the contained fiber will be interrupted.

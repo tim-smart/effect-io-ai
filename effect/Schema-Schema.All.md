@@ -1,4 +1,7 @@
-## Schema.All
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Schema.All
 
 Any schema, including `never`.
 

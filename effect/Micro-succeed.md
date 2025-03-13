@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.succeed
 
 Creates a `Micro` effect that will succeed with the specified constant value.
 

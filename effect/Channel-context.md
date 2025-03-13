@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.context
 
 Accesses the whole context of the channel.
 

@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.getEquivalence
 
 Given a struct of `Equivalence`s returns a new `Equivalence` that compares values of a struct
 by applying each `Equivalence` to the corresponding property of the struct.

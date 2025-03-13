@@ -1,4 +1,7 @@
-## withConsole
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withConsole
 
 Executes the specified workflow with the specified implementation of the
 console service.

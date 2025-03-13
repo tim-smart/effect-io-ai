@@ -1,4 +1,7 @@
-## error
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.error
 
 Returns a `BrandErrors` that contains a single `RefinementError`.
 

@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.flatMap
 
 Applies a function to each element in an Iterable and returns a new Iterable containing the concatenated mapped elements.
 

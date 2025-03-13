@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filterMap
 
 Filters and maps elements sequentially in one operation.
 

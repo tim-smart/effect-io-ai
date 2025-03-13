@@ -1,4 +1,7 @@
-## failSync
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.failSync
 
 Fails the transactional effect with the specified lazily evaluated error.
 

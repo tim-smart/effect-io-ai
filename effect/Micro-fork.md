@@ -1,4 +1,7 @@
-## fork
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.fork
 
 Run the `Micro` effect in a new `MicroFiber` that can be awaited, joined, or
 aborted.

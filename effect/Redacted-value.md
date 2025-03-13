@@ -1,4 +1,7 @@
-## value
+Package: `effect`<br />
+Module: `Redacted`<br />
+
+## Redacted.value
 
 Retrieves the original value from a `Redacted` instance. Use this function
 with caution, as it exposes the sensitive data.

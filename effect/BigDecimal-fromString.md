@@ -1,4 +1,7 @@
-## fromString
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.fromString
 
 Parses a numerical `string` into a `BigDecimal`.
 

@@ -1,4 +1,7 @@
-## parallelFinalizers
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.parallelFinalizers
 
 Ensures that finalizers are run concurrently when the scope of an effect is
 closed.

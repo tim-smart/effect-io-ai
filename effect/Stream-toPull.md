@@ -1,4 +1,7 @@
-## toPull
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toPull
 
 Returns in a scope a ZIO effect that can be used to repeatedly pull chunks
 from the stream. The pull effect fails with None when the stream is

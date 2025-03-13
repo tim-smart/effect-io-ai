@@ -1,4 +1,7 @@
-## mapFiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.mapFiber
 
 Passes the success of this fiber to the specified callback, and continues
 with the fiber that it returns.

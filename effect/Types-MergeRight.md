@@ -1,4 +1,7 @@
-## MergeRight
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.MergeRight
 
 Merges two object where the keys of the right object take precedence in the case of a conflict.
 

@@ -1,4 +1,7 @@
-## isUnsupported
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isUnsupported
 
 Returns `true` if the specified `ConfigError` is an `Unsupported`, `false`
 otherwise.

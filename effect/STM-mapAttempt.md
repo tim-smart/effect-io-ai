@@ -1,4 +1,7 @@
-## mapAttempt
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.mapAttempt
 
 Maps the value produced by the effect with the specified function that may
 throw exceptions but is otherwise pure, translating any thrown exceptions

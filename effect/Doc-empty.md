@@ -1,4 +1,7 @@
-## empty
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.empty
 
 The `empty` document behaves like a document containing the empty string
 (`""`), so it has a height of `1`.

@@ -1,4 +1,7 @@
-## vbar
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.vbar
 
 A document containing a single `|` character.
 

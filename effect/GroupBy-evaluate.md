@@ -1,4 +1,7 @@
-## evaluate
+Package: `effect`<br />
+Module: `GroupBy`<br />
+
+## GroupBy.evaluate
 
 Run the function across all groups, collecting the results in an
 arbitrary order.

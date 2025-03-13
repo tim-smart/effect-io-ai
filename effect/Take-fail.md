@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.fail
 
 Creates a failing `Take` with the specified error.
 

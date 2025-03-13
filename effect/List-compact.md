@@ -1,4 +1,7 @@
-## compact
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.compact
 
 Removes all `None` values from the specified list.
 

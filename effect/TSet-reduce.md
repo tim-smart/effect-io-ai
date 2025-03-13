@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.reduce
 
 Atomically folds using a pure function.
 

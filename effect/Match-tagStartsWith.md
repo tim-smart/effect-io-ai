@@ -1,4 +1,7 @@
-## tagStartsWith
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.tagStartsWith
 
 Matches values where the `_tag` field starts with a given prefix.
 

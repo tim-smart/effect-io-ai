@@ -1,4 +1,7 @@
-## fiberReadLocks
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.fiberReadLocks
 
 Retrieves the number of acquired read locks for this fiber.
 

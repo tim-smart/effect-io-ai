@@ -1,4 +1,7 @@
-## toStream
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.toStream
 
 Create a `Stream` from a `Mailbox`.
 

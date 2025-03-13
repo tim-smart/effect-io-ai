@@ -1,4 +1,7 @@
-## parallel
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.parallel
 
 Combines two `Cause`s in parallel.
 

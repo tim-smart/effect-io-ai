@@ -1,4 +1,7 @@
-## middleware
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.middleware
 
 Create an `HttpApi` level middleware `Layer`.
 

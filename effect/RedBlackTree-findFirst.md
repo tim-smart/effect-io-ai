@@ -1,4 +1,7 @@
-## findFirst
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.findFirst
 
 Finds the first value in the tree associated with the specified key, if it exists.
 

@@ -1,4 +1,7 @@
-## isRecipientAddress
+Package: `@effect/cluster`<br />
+Module: `RecipientAddress`<br />
+
+## RecipientAddress.isRecipientAddress
 
 Ensure that given value is a RecipientAddress
 

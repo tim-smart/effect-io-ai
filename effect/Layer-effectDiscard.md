@@ -1,4 +1,7 @@
-## effectDiscard
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.effectDiscard
 
 Constructs a layer from the specified effect, discarding its output.
 

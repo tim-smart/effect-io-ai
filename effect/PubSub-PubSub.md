@@ -1,4 +1,7 @@
-## PubSub
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.PubSub
 
 A `PubSub<A>` is an asynchronous message hub into which publishers can publish
 messages of type `A` and subscribers can subscribe to take messages of type

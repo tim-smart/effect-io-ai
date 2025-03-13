@@ -1,4 +1,7 @@
-## ExtractTag
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.ExtractTag
 
 Extracts the type of the given tag.
 

@@ -1,4 +1,7 @@
-## setSearch
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setSearch
 
 Updates the query string of the URL.
 

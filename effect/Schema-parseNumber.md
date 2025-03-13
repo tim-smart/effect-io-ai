@@ -1,4 +1,7 @@
-## parseNumber
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.parseNumber
 
 Transforms a `string` into a `number` by parsing the string using the `parse`
 function of the `effect/Number` module.

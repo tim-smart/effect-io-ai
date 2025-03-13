@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.match
 
 Folds over the failure cause, success value and end-of-stream marker to
 yield a value.

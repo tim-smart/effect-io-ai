@@ -1,4 +1,7 @@
-## TimeZoneNamedFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TimeZoneNamedFromSelf
 
 Describes a schema that represents a `TimeZone.Named` instance.
 

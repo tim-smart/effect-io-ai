@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.mapInputContext
 
 Transforms the environment being provided to this effect with the specified
 function.

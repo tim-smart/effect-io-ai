@@ -1,4 +1,7 @@
-## mapInputErrorEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapInputErrorEffect
 
 Returns a new channel which is the same as this one but applies the given
 effectual function to the input channel's error value.

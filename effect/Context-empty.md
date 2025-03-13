@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.empty
 
 Returns an empty `Context`.
 

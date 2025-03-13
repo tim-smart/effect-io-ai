@@ -1,4 +1,7 @@
-## isSubrecordBy
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.isSubrecordBy
 
 Check if all the keys and values in one record are also found in another record.
 

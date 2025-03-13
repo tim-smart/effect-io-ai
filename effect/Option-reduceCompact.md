@@ -1,4 +1,7 @@
-## reduceCompact
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.reduceCompact
 
 Reduces an `Iterable` of `Option<A>` to a single value of type `B`, ignoring
 elements that are `None`.

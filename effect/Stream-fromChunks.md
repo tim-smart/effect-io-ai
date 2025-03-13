@@ -1,4 +1,7 @@
-## fromChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromChunks
 
 Creates a stream from an arbitrary number of chunks.
 

@@ -1,4 +1,7 @@
-## withConsoleScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withConsoleScoped
 
 Sets the implementation of the console service to the specified value and
 restores it to its original value when the scope is closed.

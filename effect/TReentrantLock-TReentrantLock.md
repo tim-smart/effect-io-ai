@@ -1,4 +1,7 @@
-## TReentrantLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.TReentrantLock
 
 A `TReentrantLock` is a reentrant read/write lock. Multiple readers may all
 concurrently acquire read locks. Only one writer is allowed to acquire a

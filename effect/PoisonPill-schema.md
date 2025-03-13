@@ -1,4 +1,7 @@
-## schema
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.schema
 
 This is the schema for a PoisonPill that is used to encode the value over the wire.
 This is useful if you want a behavior that can be shut down from an external message.

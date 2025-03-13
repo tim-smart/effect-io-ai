@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.fromIterable
 
 Creates a new `HashMap` from an iterable collection of key/value pairs.
 

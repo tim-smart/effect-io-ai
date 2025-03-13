@@ -1,4 +1,7 @@
-## RuntimeMetrics
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.RuntimeMetrics
 
 The runtime metrics flag determines whether or not the Effect runtime system
 will collect metrics about the Effect runtime. Use of this flag will have a

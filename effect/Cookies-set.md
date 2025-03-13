@@ -1,4 +1,7 @@
-## set
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.set
 
 Add a cookie to a Cookies object
 

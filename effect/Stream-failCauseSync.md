@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.failCauseSync
 
 The stream that always fails with the specified lazily evaluated `Cause`.
 

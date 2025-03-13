@@ -1,4 +1,7 @@
-## exponential
+Package: `effect`<br />
+Module: `MetricBoundaries`<br />
+
+## MetricBoundaries.exponential
 
 A helper method to create histogram bucket boundaries for a histogram
 with exponentially increasing values.

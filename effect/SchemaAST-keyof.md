@@ -1,4 +1,7 @@
-## keyof
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.keyof
 
 Equivalent at runtime to the TypeScript type-level `keyof` operator.
 

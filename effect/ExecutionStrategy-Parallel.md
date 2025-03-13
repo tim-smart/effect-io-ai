@@ -1,4 +1,7 @@
-## Parallel
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.Parallel
 
 Execute effects in parallel.
 

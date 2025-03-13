@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.union
 
 Performs a union of this `HashMap` and that `HashMap`.
 

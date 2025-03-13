@@ -1,4 +1,7 @@
-## reversed
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.reversed
 
 Traverse the tree in reverse order.
 

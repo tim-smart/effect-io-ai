@@ -1,4 +1,7 @@
-## isTag
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.isTag
 
 Checks if the provided argument is a `Tag`.
 

@@ -1,4 +1,7 @@
-## successSchema
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.successSchema
 
 Extracts the success schema from a Message. This schema will be used to encode the remote success of the Message processor.
 

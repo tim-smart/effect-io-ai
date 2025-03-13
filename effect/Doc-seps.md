@@ -1,4 +1,7 @@
-## seps
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.seps
 
 The `seps` combinator will attempt to lay out a collection of documents
 separated by `space`s. If the output does not fit the page, then the

@@ -1,4 +1,7 @@
-## singleton
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.singleton
 
 Create a non-empty record from a single element.
 

@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.match
 
 Transforms a `Cause` into a single value using custom handlers for each
 possible case.

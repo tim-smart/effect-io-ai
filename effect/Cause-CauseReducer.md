@@ -1,4 +1,7 @@
-## CauseReducer
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.CauseReducer
 
 Describes methods for reducing a `Cause<E>` into a value of type `Z` with
 access to contextual information.

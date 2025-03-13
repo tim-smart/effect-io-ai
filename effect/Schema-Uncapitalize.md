@@ -1,4 +1,7 @@
-## Uncapitalize
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Uncapitalize
 
 This schema converts a string to uncapitalized one.
 

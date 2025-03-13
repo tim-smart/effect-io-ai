@@ -1,4 +1,7 @@
-## collectWhile
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.collectWhile
 
 Collects all inputs into a `Chunk` while a condition holds.
 

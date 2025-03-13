@@ -1,4 +1,7 @@
-## zipWith
+Package: `@effect/typeclass`<br />
+Module: `SemiApplicative`<br />
+
+## SemiApplicative.zipWith
 
 Zips two `F` values together using a provided function, returning a new `F` of the result.
 

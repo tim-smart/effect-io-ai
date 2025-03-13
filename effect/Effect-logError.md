@@ -1,4 +1,7 @@
-## logError
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logError
 
 Logs messages at the ERROR log level.
 

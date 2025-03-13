@@ -1,4 +1,7 @@
-## getOrder
+Package: `effect`<br />
+Module: `SortedMap`<br />
+
+## SortedMap.getOrder
 
 Gets the `Order<K>` that the `SortedMap<K, V>` is using.
 

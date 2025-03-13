@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.make
 
 Constructs a new cache with the specified capacity, time to live, and
 lookup function.

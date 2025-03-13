@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.suspend
 
 Lazily creates a `Micro` effect from the given side-effect.
 

@@ -1,4 +1,7 @@
-## adjust
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.adjust
 
 Accesses a `TestClock` instance in the context and increments the time
 by the specified duration, running any actions scheduled for on or before

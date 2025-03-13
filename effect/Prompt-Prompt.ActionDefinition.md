@@ -1,4 +1,7 @@
-## Prompt.ActionDefinition
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.Prompt.ActionDefinition
 
 Represents the definition of an `Action`.
 

@@ -1,4 +1,7 @@
-## orElseSucceed
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.orElseSucceed
 
 Ensures the effect always succeeds by replacing failures with a default
 success value.

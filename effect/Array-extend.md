@@ -1,4 +1,7 @@
-## extend
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.extend
 
 Extends an array with a function that maps each subarray to a value.
 

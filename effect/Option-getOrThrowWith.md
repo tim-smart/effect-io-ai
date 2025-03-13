@@ -1,4 +1,7 @@
-## getOrThrowWith
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrThrowWith
 
 Extracts the value of an `Option` or throws an error if the `Option` is
 `None`, using a custom error factory.

@@ -1,4 +1,7 @@
-## unsafeNow
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.unsafeNow
 
 Get the current time using `Date.now`.
 

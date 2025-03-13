@@ -1,4 +1,7 @@
-## trackErrorWith
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackErrorWith
 
 Returns an aspect that will update this metric with the result of applying
 the specified function to the error value of the effects that the aspect is

@@ -1,4 +1,7 @@
-## provideService
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.provideService
 
 Returns a new schedule with a single required service provided, eliminating
 the need for external dependencies.

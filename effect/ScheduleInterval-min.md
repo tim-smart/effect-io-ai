@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.min
 
 Returns the minimum of two `Interval`s.
 

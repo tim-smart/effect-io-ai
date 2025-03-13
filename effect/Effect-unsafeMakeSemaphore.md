@@ -1,4 +1,7 @@
-## unsafeMakeSemaphore
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.unsafeMakeSemaphore
 
 Unsafely creates a new Semaphore.
 

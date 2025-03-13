@@ -1,4 +1,7 @@
-## MicroSchedule
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.MicroSchedule
 
 The `MicroSchedule` type represents a function that can be used to calculate
 the delay between repeats.

@@ -1,4 +1,7 @@
-## render
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.render
 
 Renders the provided `RuntimeFlagsPatch` to a string.
 

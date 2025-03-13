@@ -1,4 +1,7 @@
-## concat
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.concat
 
 Concatenates the specified stream with this stream, resulting in a stream
 that emits the elements from this stream and then the elements from the

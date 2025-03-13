@@ -1,4 +1,7 @@
-## findFirstSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findFirstSTM
 
 Find the first element in the array matching a transactional predicate.
 

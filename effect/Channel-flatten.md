@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.flatten
 
 Returns a new channel, which flattens the terminal value of this channel.
 This function may only be called if the terminal value of this channel is

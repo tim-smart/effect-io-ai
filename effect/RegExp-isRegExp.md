@@ -1,4 +1,7 @@
-## isRegExp
+Package: `effect`<br />
+Module: `RegExp`<br />
+
+## RegExp.isRegExp
 
 Tests if a value is a `RegExp`.
 

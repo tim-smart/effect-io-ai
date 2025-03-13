@@ -1,4 +1,7 @@
-## logInfo
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logInfo
 
 Logs messages at the INFO log level.
 

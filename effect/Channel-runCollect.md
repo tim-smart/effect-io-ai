@@ -1,4 +1,7 @@
-## runCollect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.runCollect
 
 Run the channel until it finishes with a done value or fails with an error
 and collects its emitted output elements.

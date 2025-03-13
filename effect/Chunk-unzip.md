@@ -1,4 +1,7 @@
-## unzip
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.unzip
 
 Takes a `Chunk` of pairs and return two corresponding `Chunk`s.
 

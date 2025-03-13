@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.succeed
 
 Constructs a new `Exit.Success` containing the specified value of type `A`.
 

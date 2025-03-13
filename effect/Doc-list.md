@@ -1,4 +1,7 @@
-## list
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.list
 
 A Haskell-inspired variant of `encloseSep` that uses a comma as the separator
 and braces as the enclosure for a collection of documents.

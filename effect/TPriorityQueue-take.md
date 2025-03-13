@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.take
 
 Takes a value from the queue, retrying until a value is in the queue.
 

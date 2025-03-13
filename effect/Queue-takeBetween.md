@@ -1,4 +1,7 @@
-## takeBetween
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.takeBetween
 
 Takes a number of elements from the queue between the specified minimum and
 maximum. If there are fewer than the minimum number of elements available,

@@ -1,4 +1,7 @@
-## getAt
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.getAt
 
 Returns the element at the specified index within the tree or `None` if the
 specified index does not exist.

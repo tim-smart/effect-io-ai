@@ -1,4 +1,7 @@
-## transform
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.transform
 
 Create a new `Schema` by transforming the input and output of an existing `Schema`
 using the provided mapping functions.

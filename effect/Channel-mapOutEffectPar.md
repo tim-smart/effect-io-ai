@@ -1,4 +1,7 @@
-## mapOutEffectPar
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapOutEffectPar
 
 Creates a channel that is like this channel but the given ZIO function gets
 applied to each emitted output element, taking `n` elements at once and

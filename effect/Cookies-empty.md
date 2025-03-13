@@ -1,4 +1,7 @@
-## empty
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.empty
 
 An empty Cookies object
 

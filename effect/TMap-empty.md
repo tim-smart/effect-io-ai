@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.empty
 
 Makes an empty `TMap`.
 

@@ -1,4 +1,7 @@
-## imap
+Package: `@effect/typeclass`<br />
+Module: `Contravariant`<br />
+
+## Contravariant.imap
 
 Returns a default `imap` implementation.
 

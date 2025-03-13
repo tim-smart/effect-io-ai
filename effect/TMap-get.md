@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.get
 
 Retrieves value associated with given key.
 

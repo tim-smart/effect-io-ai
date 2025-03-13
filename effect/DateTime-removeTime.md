@@ -1,4 +1,7 @@
-## removeTime
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.removeTime
 
 Remove the time aspect of a `DateTime`, first adjusting for the time
 zone. It will return a `DateTime.Utc` only containing the date.

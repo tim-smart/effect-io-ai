@@ -1,4 +1,7 @@
-## pretty
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.pretty
 
 Converts a `Cause` into a human-readable string.
 

@@ -1,4 +1,7 @@
-## TopicType
+Package: `@effect/cluster`<br />
+Module: `RecipientType`<br />
+
+## RecipientType.TopicType
 
 A TopicType can live on multiple Pods at the same time.
 

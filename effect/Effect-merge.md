@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.merge
 
 Combines both success and error channels of an effect into a single outcome.
 

@@ -1,4 +1,7 @@
-## array
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.array
 
 Given a type `A`, this function creates and returns a `Semigroup` for `ReadonlyArray<A>`.
 The returned `Semigroup` combines two arrays by concatenating them.

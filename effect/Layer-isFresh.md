@@ -1,4 +1,7 @@
-## isFresh
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.isFresh
 
 Returns `true` if the specified `Layer` is a fresh version that will not be
 shared, `false` otherwise.

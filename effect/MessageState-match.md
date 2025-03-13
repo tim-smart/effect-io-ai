@@ -1,4 +1,7 @@
-## match
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.match
 
 Match over the possible states of a MessageState
 

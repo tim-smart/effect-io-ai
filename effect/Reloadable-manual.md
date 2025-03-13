@@ -1,4 +1,7 @@
-## manual
+Package: `effect`<br />
+Module: `Reloadable`<br />
+
+## Reloadable.manual
 
 Makes a new reloadable service from a layer that describes the construction
 of a static service.

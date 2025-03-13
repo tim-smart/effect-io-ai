@@ -1,4 +1,7 @@
-## retries
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.retries
 
 The number of times to retry flaky tests.
 

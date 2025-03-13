@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.all
 
 Combines two or more brands together to form a single branded type.
 This API is useful when you want to validate that the input data passes multiple brand validators.

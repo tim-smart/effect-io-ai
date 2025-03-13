@@ -1,4 +1,7 @@
-## negate
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.negate
 
 Returns a new effect with the boolean value of this effect negated.
 

@@ -1,4 +1,7 @@
-## dropping
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.dropping
 
 Creates a bounded `TPubSub` with the dropping strategy. The `TPubSub` will drop new
 messages if the `TPubSub` is at capacity.

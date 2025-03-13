@@ -1,4 +1,7 @@
-## partitionMap
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.partitionMap
 
 Applies a function to each element of the `Iterable`, categorizing the results into two separate arrays.
 This function is particularly useful for operations where each element can result in two possible types,

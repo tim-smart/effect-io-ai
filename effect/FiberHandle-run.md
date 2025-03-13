@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.run
 
 Run an Effect and add the forked fiber to the FiberHandle.
 When the fiber completes, it will be removed from the FiberHandle.

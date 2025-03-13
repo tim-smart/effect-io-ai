@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.sync
 
 Returns an `STM` effect that succeeds with the specified lazily evaluated
 value.

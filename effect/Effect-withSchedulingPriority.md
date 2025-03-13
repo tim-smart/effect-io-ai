@@ -1,4 +1,7 @@
-## withSchedulingPriority
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withSchedulingPriority
 
 Sets the scheduling priority used when yielding
 

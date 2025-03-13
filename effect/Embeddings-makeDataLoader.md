@@ -1,4 +1,7 @@
-## makeDataLoader
+Package: `@effect/ai`<br />
+Module: `Embeddings`<br />
+
+## Embeddings.makeDataLoader
 
 Creates an `Embeddings` service which will aggregate all `embed` requests
 received during the specified `window` (up to a maximum of `maxBatchSize`

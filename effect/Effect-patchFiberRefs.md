@@ -1,4 +1,7 @@
-## patchFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.patchFiberRefs
 
 Applies the specified changes to the `FiberRef` values for the fiber
 running this workflow.

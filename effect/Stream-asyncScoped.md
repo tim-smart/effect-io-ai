@@ -1,4 +1,7 @@
-## asyncScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.asyncScoped
 
 Creates a stream from an asynchronous callback that can be called multiple
 times. The registration of the callback itself returns an a scoped

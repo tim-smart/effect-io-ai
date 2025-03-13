@@ -1,4 +1,7 @@
-## addFinalizer
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.addFinalizer
 
 Add a finalizer to the current `MicroScope`.
 

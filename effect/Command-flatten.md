@@ -1,4 +1,7 @@
-## flatten
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.flatten
 
 Flatten this command to a non-empty array of standard commands.
 

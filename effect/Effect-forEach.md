@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forEach
 
 Executes an effectful operation for each element in an `Iterable`.
 

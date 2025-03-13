@@ -1,4 +1,7 @@
-## race
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.race
 
 Returns a new data source that executes requests by sending them to this
 data source and that data source, returning the results from the first data

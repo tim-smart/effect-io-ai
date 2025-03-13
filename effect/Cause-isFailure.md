@@ -1,4 +1,7 @@
-## isFailure
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isFailure
 
 Checks if a `Cause` contains a failure.
 

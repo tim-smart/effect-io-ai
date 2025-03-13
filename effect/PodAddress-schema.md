@@ -1,4 +1,7 @@
-## schema
+Package: `@effect/cluster`<br />
+Module: `PodAddress`<br />
+
+## PodAddress.schema
 
 This is the schema for a PodAddress.
 

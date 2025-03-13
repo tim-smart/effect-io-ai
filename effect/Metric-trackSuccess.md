@@ -1,4 +1,7 @@
-## trackSuccess
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackSuccess
 
 Returns an aspect that will update this metric with the success value of
 the effects that it is applied to.

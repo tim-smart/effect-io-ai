@@ -1,4 +1,7 @@
-## isRuntimeFiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.isRuntimeFiber
 
 Returns `true` if the specified `Fiber` is a `RuntimeFiber`, `false`
 otherwise.

@@ -1,4 +1,7 @@
-## reduceRight
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.reduceRight
 
 Reduces an `Iterable<A>` using an effectual function `f`, working
 sequentially from right to left.

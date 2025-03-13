@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.scoped
 
 Use a scoped effect to emit an output element.
 

@@ -1,4 +1,7 @@
-## mapEffect
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.mapEffect
 
 Effectually maps over the value the fiber computes.
 

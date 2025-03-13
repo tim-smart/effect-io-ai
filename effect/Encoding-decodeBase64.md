@@ -1,4 +1,7 @@
-## decodeBase64
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeBase64
 
 Decodes a base64 (RFC4648) encoded `string` into a `Uint8Array`.
 

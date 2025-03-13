@@ -1,4 +1,7 @@
-## clamp
+Package: `@effect/typeclass`<br />
+Module: `Bounded`<br />
+
+## Bounded.clamp
 
 Clamp a value between `minBound` and `maxBound` values.
 

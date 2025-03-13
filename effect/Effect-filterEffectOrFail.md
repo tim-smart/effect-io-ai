@@ -1,4 +1,7 @@
-## filterEffectOrFail
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filterEffectOrFail
 
 Filters an effect with an effectful predicate, failing with a custom error if the predicate fails.
 

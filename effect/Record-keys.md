@@ -1,4 +1,7 @@
-## keys
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.keys
 
 Retrieve the keys of a given record as an array.
 

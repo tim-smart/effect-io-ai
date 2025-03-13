@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.some
 
 Check if a predicate holds true for some `HashSet` element.
 

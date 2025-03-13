@@ -1,4 +1,7 @@
-## update
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.update
 
 Updates the metric with the specified update message. For example, if the
 metric were a counter, the update would increment the method by the

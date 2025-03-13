@@ -1,4 +1,7 @@
-## DateTime
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.DateTime
 
 A `DateTime` represents a point in time. It can optionally have a time zone
 associated with it.

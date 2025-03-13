@@ -1,4 +1,7 @@
-## linesWithSeparators
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.linesWithSeparators
 
 Returns an `IterableIterator` which yields each line contained within the
 string as well as the trailing newline character.

@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.never
 
 The stream that never produces any value or fails with any error.
 

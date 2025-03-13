@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.all
 
 Combines multiple effects into one, returning results based on the input
 structure.

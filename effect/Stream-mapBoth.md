@@ -1,4 +1,7 @@
-## mapBoth
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapBoth
 
 Returns a stream whose failure and success channels have been mapped by the
 specified `onFailure` and `onSuccess` functions.

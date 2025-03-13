@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.die
 
 Constructs a layer that dies with the specified defect.
 

@@ -1,4 +1,7 @@
-## asSomeError
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.asSomeError
 
 Maps the error value of this effect to an optional value.
 

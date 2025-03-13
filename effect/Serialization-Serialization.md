@@ -1,4 +1,7 @@
-## Serialization
+Package: `@effect/cluster`<br />
+Module: `Serialization`<br />
+
+## Serialization.Serialization
 
 An interface to serialize user messages that will be sent between pods.
 

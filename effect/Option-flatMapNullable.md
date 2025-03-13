@@ -1,4 +1,7 @@
-## flatMapNullable
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.flatMapNullable
 
 Combines `flatMap` and `fromNullable`, transforming the value inside a `Some`
 using a function that may return `null` or `undefined`.

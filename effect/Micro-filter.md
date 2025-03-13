@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.filter
 
 Effectfully filter the elements of the provided iterable.
 

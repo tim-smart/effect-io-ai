@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.filterMap
 
 Maps over the entries of the `Trie` using the specified partial function
 and filters out `None` values.

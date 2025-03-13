@@ -1,4 +1,7 @@
-## provideSomeContext
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.provideSomeContext
 
 Splits the context into two parts, providing one part using the
 specified layer and leaving the remainder `R0`.

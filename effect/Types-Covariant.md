@@ -1,4 +1,7 @@
-## Covariant
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Covariant
 
 Covariant helper.
 

@@ -1,4 +1,7 @@
-## isError
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isError
 
 A guard that succeeds when the input is an `Error`.
 

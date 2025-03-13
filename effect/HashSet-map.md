@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.map
 
 Maps over the values of the `HashSet` using the specified function.
 

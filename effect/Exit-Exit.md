@@ -1,4 +1,7 @@
-## Exit
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.Exit
 
 An `Exit<A, E = never>` describes the result of a executing an `Effect` workflow.
 

@@ -1,4 +1,7 @@
-## mapRequest
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.mapRequest
 
 Appends a transformation of the request object before sending it.
 

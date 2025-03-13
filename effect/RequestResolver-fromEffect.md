@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.fromEffect
 
 Constructs a data source from an effectual function.
 

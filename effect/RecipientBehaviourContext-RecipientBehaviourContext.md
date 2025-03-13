@@ -1,4 +1,7 @@
-## RecipientBehaviourContext
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.RecipientBehaviourContext
 
 This is the context information that is available to the RecipientBehaviour and has general informations
 about this specific entity, like the entityId or the recipientType.

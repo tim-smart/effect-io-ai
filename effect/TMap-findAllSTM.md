@@ -1,4 +1,7 @@
-## findAllSTM
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.findAllSTM
 
 Finds all the key/value pairs matching the specified predicate, and uses
 the provided effectful function to extract values out of them..

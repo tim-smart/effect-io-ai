@@ -1,4 +1,7 @@
-## isEmptyRecord
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.isEmptyRecord
 
 Determine if a record is empty.
 

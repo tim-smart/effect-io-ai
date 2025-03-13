@@ -1,4 +1,7 @@
-## setTime
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.setTime
 
 Accesses a `TestClock` instance in the context and sets the clock time
 to the specified `Instant`, running any actions scheduled for on or before

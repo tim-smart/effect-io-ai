@@ -1,4 +1,7 @@
-## modifyOption
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.modifyOption
 
 Apply a function to the element at the specified key, creating a new record,
 or return `None` if the key doesn't exist.

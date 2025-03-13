@@ -1,4 +1,7 @@
-## orElseFail
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.orElseFail
 
 Replaces the failure of an effect with a custom failure value.
 

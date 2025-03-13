@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.fail
 
 Complete a `Request` with the specified error.
 

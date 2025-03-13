@@ -1,4 +1,7 @@
-## promise
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.promise
 
 Creates an `Effect` that represents an asynchronous computation guaranteed to
 succeed.

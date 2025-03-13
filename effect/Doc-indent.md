@@ -1,4 +1,7 @@
-## indent
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.indent
 
 The `indent` combinator indents a document by the specified `indent`
 beginning from the current cursor position.

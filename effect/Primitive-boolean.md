@@ -1,4 +1,7 @@
-## boolean
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.boolean
 
 Represents a boolean value.
 

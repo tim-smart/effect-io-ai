@@ -1,4 +1,7 @@
-## isNone
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.isNone
 
 Checks whether an `Option` represents the absence of a value (`None`).
 

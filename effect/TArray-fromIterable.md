@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.fromIterable
 
 Creates a new `TArray` from an iterable collection of values.
 

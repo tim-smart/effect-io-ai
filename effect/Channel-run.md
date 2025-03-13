@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.run
 
 Runs a channel until the end is received.
 

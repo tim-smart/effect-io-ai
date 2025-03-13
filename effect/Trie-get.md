@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.get
 
 Safely lookup the value for the specified key in the `Trie`.
 

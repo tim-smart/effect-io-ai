@@ -1,4 +1,7 @@
-## matchRight
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.matchRight
 
 Matches the elements of an array from the right, applying functions to cases of empty and non-empty arrays.
 

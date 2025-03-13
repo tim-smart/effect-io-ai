@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.fail
 
 Fails the transactional effect with the specified error.
 

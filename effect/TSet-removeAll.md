@@ -1,4 +1,7 @@
-## removeAll
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.removeAll
 
 Removes elements from the set.
 

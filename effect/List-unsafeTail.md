@@ -1,4 +1,7 @@
-## unsafeTail
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.unsafeTail
 
 Unsafely returns the tail of the specified `List`.
 

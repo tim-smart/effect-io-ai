@@ -1,4 +1,7 @@
-## throttle
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.throttle
 
 Delays the chunks of this stream according to the given bandwidth
 parameters using the token bucket algorithm. Allows for burst in the

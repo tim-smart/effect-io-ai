@@ -1,4 +1,7 @@
-## sort
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.sort
 
 Create a new array with elements sorted in increasing order based on the specified comparator.
 If the input is a `NonEmptyReadonlyArray`, the output will also be a `NonEmptyReadonlyArray`.

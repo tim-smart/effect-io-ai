@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.max
 
 Returns the maximum of the two `Intervals` (i.e. which has the latest start).
 

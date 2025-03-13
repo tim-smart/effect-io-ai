@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.between
 
 Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
 

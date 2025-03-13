@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.some
 
 Checks if any entry in a hashmap meets a specific condition.
 

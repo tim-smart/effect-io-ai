@@ -1,4 +1,7 @@
-## divide
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.divide
 
 Provides a division operation on `number`s.
 

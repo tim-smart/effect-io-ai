@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.all
 
 Takes a structure of `Either`s and returns an `Either` of values with the same structure.
 

@@ -1,4 +1,7 @@
-## interleave
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.interleave
 
 Interleaves this stream and the specified stream deterministically by
 alternating pulling values from this stream and the specified stream. When

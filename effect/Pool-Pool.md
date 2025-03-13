@@ -1,4 +1,7 @@
-## Pool
+Package: `effect`<br />
+Module: `Pool`<br />
+
+## Pool.Pool
 
 A `Pool<A, E>` is a pool of items of type `A`, each of which may be
 associated with the acquisition and release of resources. An attempt to get

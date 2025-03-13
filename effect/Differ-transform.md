@@ -1,4 +1,7 @@
-## transform
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.transform
 
 Transforms the type of values that this differ knows how to differ using
 the specified functions that map the new and old value types to each other.

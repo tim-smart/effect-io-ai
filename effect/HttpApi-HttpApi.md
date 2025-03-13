@@ -1,4 +1,7 @@
-## HttpApi
+Package: `@effect/platform`<br />
+Module: `HttpApi`<br />
+
+## HttpApi.HttpApi
 
 An `HttpApi` is a collection of `HttpApiEndpoint`s. You can use an `HttpApi` to
 represent a portion of your domain.

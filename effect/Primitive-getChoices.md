@@ -1,4 +1,7 @@
-## getChoices
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.getChoices
 
 Returns a text representation of the valid choices for a primitive type, if
 any.

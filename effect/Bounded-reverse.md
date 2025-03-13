@@ -1,4 +1,7 @@
-## reverse
+Package: `@effect/typeclass`<br />
+Module: `Bounded`<br />
+
+## Bounded.reverse
 
 Reverses the `Order` of a `Bounded` and flips `maxBound` and `minBound` values.
 

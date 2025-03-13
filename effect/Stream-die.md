@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.die
 
 The stream that dies with the specified defect.
 

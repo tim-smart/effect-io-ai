@@ -1,4 +1,7 @@
-## broadcastedQueues
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.broadcastedQueues
 
 Converts the stream to a scoped list of queues. Every value will be
 replicated to every queue with the slowest queue being allowed to buffer

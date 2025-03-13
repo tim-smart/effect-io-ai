@@ -1,4 +1,7 @@
-## entries
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.entries
 
 Returns an `IterableIterator` of the entries within the `Trie`.
 

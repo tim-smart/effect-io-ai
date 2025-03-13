@@ -1,4 +1,7 @@
-## interruptWhen
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.interruptWhen
 
 Returns a new channel, which is the same as this one, except it will be
 interrupted when the specified effect completes. If the effect completes

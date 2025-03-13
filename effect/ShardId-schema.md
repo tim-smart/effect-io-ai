@@ -1,4 +1,7 @@
-## schema
+Package: `@effect/cluster`<br />
+Module: `ShardId`<br />
+
+## ShardId.schema
 
 This is the schema for a ShardId.
 

@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.empty
 
 A Layer that constructs an empty Context.
 

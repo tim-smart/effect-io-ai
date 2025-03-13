@@ -1,4 +1,7 @@
-## runFork
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runFork
 
 Runs an effect in the background, returning a fiber that can be observed or
 interrupted.

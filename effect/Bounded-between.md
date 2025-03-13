@@ -1,4 +1,7 @@
-## between
+Package: `@effect/typeclass`<br />
+Module: `Bounded`<br />
+
+## Bounded.between
 
 Checks if a value is between the lower and upper limit of a bound.
 

@@ -1,4 +1,7 @@
-## runFoldWhileEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFoldWhileEffect
 
 Executes an effectful fold over the stream of values. Stops the fold early
 when the condition is not fulfilled.

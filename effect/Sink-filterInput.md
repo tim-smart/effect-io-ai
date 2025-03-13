@@ -1,4 +1,7 @@
-## filterInput
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.filterInput
 
 Filters the sink's input with the given predicate.
 

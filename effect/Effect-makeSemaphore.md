@@ -1,4 +1,7 @@
-## makeSemaphore
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.makeSemaphore
 
 Creates a new semaphore with the specified number of permits.
 

@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.get
 
 Retrieve a fiber from the FiberMap.
 

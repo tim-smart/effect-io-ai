@@ -1,4 +1,7 @@
-## provideLive
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.provideLive
 
 Provides a workflow with the "live" default Effect services.
 

@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.filterMap
 
 Maps over the entries of the `HashMap` using the specified partial function
 and filters out `None` values.

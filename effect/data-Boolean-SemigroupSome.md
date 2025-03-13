@@ -1,4 +1,7 @@
-## SemigroupSome
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.SemigroupSome
 
 `boolean` semigroup under disjunction.
 

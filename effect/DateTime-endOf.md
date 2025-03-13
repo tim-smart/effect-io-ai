@@ -1,4 +1,7 @@
-## endOf
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.endOf
 
 Converts a `DateTime` to the end of the given `part`.
 

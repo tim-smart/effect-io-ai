@@ -1,4 +1,7 @@
-## findAll
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.findAll
 
 Finds all values in the tree associated with the specified key.
 

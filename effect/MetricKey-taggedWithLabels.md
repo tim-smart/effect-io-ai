@@ -1,4 +1,7 @@
-## taggedWithLabels
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.taggedWithLabels
 
 Returns a new `MetricKey` with the specified tags appended.
 

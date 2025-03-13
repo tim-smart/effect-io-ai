@@ -1,4 +1,7 @@
-## unsafeMakeZoned
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.unsafeMakeZoned
 
 Create a `DateTime.Zoned` using `DateTime.unsafeMake` and a time zone.
 

@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.forEach
 
 For each element of the provided iterable, run the effect and collect the
 results.

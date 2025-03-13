@@ -1,4 +1,7 @@
-## makeBy
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.makeBy
 
 Return a `Iterable` with element `i` initialized with `f(i)`.
 

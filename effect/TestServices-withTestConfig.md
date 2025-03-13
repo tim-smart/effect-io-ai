@@ -1,4 +1,7 @@
-## withTestConfig
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withTestConfig
 
 Executes the specified workflow with the specified implementation of the
 config service.

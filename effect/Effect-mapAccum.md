@@ -1,4 +1,7 @@
-## mapAccum
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mapAccum
 
 Applies a stateful transformation to each element of a collection, producing
 new elements along with an updated state.

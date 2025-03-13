@@ -1,4 +1,7 @@
-## is
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.is
 
 Matches a specific set of literal values (e.g., `Match.is("a", 42, true)`).
 

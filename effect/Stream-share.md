@@ -1,4 +1,7 @@
-## share
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.share
 
 Returns a new Stream that multicasts the original Stream, subscribing to it as soon as the first consumer subscribes.
 As long as there is at least one consumer, the upstream will continue running and emitting data.

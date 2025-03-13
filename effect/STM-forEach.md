@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.forEach
 
 Applies the function `f` to each element of the `Iterable<A>` and returns
 a transactional effect that produces a new `Chunk<A2>`.

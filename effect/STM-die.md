@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.die
 
 Fails the transactional effect with the specified defect.
 

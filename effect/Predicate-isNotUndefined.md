@@ -1,4 +1,7 @@
-## isNotUndefined
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNotUndefined
 
 Tests if a value is not `undefined`.
 

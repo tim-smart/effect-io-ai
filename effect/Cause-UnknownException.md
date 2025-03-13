@@ -1,4 +1,7 @@
-## UnknownException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.UnknownException
 
 A checked exception for handling unknown or unexpected errors.
 

@@ -1,4 +1,7 @@
-## removeMany
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.removeMany
 
 Removes all entries in the `Trie` which have the specified keys.
 

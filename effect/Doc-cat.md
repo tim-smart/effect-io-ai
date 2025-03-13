@@ -1,4 +1,7 @@
-## cat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.cat
 
 The `cat` combinator lays out two documents separated by nothing.
 

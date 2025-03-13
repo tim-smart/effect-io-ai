@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromEffect
 
 Either emits the success value of this effect or terminates the stream
 with the failure value of this effect.

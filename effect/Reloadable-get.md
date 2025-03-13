@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Reloadable`<br />
+
+## Reloadable.get
 
 Retrieves the current version of the reloadable service.
 

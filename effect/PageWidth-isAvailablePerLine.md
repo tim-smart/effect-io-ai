@@ -1,4 +1,7 @@
-## isAvailablePerLine
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.isAvailablePerLine
 
 Returns `true` if the specified `PageWidth` is an `AvailablePerLine`, `false`
 otherwise.

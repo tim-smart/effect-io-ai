@@ -1,4 +1,7 @@
-## nextIntBetween
+Package: `effect`<br />
+Module: `TRandom`<br />
+
+## TRandom.nextIntBetween
 
 Returns the next integer in the specified range from the pseudo-random number
 generator.

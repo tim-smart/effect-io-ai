@@ -1,4 +1,7 @@
-## pipeThroughChannel
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.pipeThroughChannel
 
 Pipes all the values from this stream through the provided channel.
 

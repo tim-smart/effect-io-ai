@@ -1,4 +1,7 @@
-## Take
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.Take
 
 A `Take<A, E>` represents a single `take` from a queue modeling a stream of
 values. A `Take` may be a failure cause `Cause<E>`, a chunk value `Chunk<A>`,

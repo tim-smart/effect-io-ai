@@ -1,4 +1,7 @@
-## discriminatorStartsWith
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.discriminatorStartsWith
 
 Matches values where a specified field starts with a given prefix.
 

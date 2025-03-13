@@ -1,4 +1,7 @@
-## haltWhen
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.haltWhen
 
 Halts the evaluation of this stream when the provided effect completes. The
 given effect will be forked as part of the returned stream, and its success

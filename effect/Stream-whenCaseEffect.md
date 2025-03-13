@@ -1,4 +1,7 @@
-## whenCaseEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.whenCaseEffect
 
 Returns the stream when the given partial function is defined for the given
 effectful value, otherwise returns an empty stream.

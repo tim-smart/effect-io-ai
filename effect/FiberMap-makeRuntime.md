@@ -1,4 +1,7 @@
-## makeRuntime
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.makeRuntime
 
 Create an Effect run function that is backed by a FiberMap.
 

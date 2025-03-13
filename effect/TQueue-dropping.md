@@ -1,4 +1,7 @@
-## dropping
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.dropping
 
 Creates a bounded queue with the dropping strategy. The queue will drop new
 values if the queue is at capacity.

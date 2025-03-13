@@ -1,4 +1,7 @@
-## yieldFlush
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.yieldFlush
 
 Flush any yielded effects that are waiting to be executed.
 

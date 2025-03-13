@@ -1,4 +1,7 @@
-## whenOr
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.whenOr
 
 Matches one of multiple patterns in a single condition.
 

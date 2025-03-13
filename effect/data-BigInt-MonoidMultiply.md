@@ -1,4 +1,7 @@
-## MonoidMultiply
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.MonoidMultiply
 
 `bigint` monoid under multiplication.
 

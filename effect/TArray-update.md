@@ -1,4 +1,7 @@
-## update
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.update
 
 Updates element in the array with given function.
 

@@ -1,4 +1,7 @@
-## dual
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.dual
 
 Creates a function that can be used in a data-last (aka `pipe`able) or
 data-first style.

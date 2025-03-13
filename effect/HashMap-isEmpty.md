@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.isEmpty
 
 Checks if the `HashMap` contains any entries.
 

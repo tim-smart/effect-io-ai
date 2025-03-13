@@ -1,4 +1,7 @@
-## build
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.build
 
 Builds a layer into a scoped value.
 

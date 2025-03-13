@@ -1,4 +1,7 @@
-## orElseEither
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orElseEither
 
 Returns a transactional effect that will produce the value of this effect
 in left side, unless it fails or retries, in which case, it will produce

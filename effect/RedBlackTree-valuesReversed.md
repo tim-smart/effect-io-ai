@@ -1,4 +1,7 @@
-## valuesReversed
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.valuesReversed
 
 Get all values present in the tree in reverse order.
 

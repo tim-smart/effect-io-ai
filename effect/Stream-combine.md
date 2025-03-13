@@ -1,4 +1,7 @@
-## combine
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.combine
 
 Combines the elements from this stream and the specified stream by
 repeatedly applying the function `f` to extract an element using both sides

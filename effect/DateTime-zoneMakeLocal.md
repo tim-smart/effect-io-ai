@@ -1,4 +1,7 @@
-## zoneMakeLocal
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneMakeLocal
 
 Create a named time zone from the system's local time zone.
 

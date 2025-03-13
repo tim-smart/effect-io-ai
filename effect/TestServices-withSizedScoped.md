@@ -1,4 +1,7 @@
-## withSizedScoped
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withSizedScoped
 
 Sets the implementation of the sized service to the specified value and
 restores it to its original value when the scope is closed.

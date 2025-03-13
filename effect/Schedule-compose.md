@@ -1,4 +1,7 @@
-## compose
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.compose
 
 Chains two schedules, passing the output of the first as the input to the
 second, while selecting the shorter delay between them.

@@ -1,4 +1,7 @@
-## withDefaults
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.withDefaults
 
 Enhances a property signature with a default decoding value and a default constructor value.
 

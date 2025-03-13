@@ -1,4 +1,7 @@
-## id
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.id
 
 The identity of the fiber.
 

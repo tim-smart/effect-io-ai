@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.set
 
 Set the fiber in the FiberHandle. When the fiber completes, it will be removed from the FiberHandle.
 If a fiber already exists in the FiberHandle, it will be interrupted unless `options.onlyIfMissing` is set.

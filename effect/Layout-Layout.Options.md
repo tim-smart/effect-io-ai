@@ -1,4 +1,7 @@
-## Layout.Options
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.Layout.Options
 
 Represents the options that will influence the layout algorithms.
 

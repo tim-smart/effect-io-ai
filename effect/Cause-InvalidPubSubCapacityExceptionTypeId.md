@@ -1,4 +1,7 @@
-## InvalidPubSubCapacityExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.InvalidPubSubCapacityExceptionTypeId
 
 A unique symbol identifying the `InvalidPubSubCapacityException` type.
 

@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.zipWith
 
 Equivalent to `intersect` followed by `map`.
 

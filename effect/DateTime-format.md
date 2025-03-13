@@ -1,4 +1,7 @@
-## format
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.format
 
 Format a `DateTime` as a string using the `DateTimeFormat` API.
 

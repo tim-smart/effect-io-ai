@@ -1,4 +1,7 @@
-## last
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.last
 
 Creates a sink containing the last value.
 

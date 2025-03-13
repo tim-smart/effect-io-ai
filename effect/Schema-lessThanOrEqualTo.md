@@ -1,4 +1,7 @@
-## lessThanOrEqualTo
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.lessThanOrEqualTo
 
 This schema checks whether the provided number is less than or equal to the specified maximum.
 

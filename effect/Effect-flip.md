@@ -1,4 +1,7 @@
-## flip
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.flip
 
 Swaps the success and error channels of an effect.
 

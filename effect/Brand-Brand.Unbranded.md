@@ -1,4 +1,7 @@
-## Brand.Unbranded
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.Unbranded
 
 A utility type to extract the value type from a brand.
 

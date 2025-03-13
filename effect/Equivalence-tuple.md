@@ -1,4 +1,7 @@
-## tuple
+Package: `effect`<br />
+Module: `Equivalence`<br />
+
+## Equivalence.tuple
 
 Similar to `Promise.all` but operates on `Equivalence`s.
 

@@ -1,4 +1,7 @@
-## fromQueue
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fromQueue
 
 Create a sink which enqueues each element into the specified queue.
 

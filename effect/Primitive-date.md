@@ -1,4 +1,7 @@
-## date
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.date
 
 Represents a date in ISO-8601 format, such as `2007-12-03T10:15:30`.
 

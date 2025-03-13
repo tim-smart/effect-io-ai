@@ -1,4 +1,7 @@
-## unfoldChunkEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.unfoldChunkEffect
 
 Creates a stream by effectfully peeling off the "layers" of a value of type
 `S`.

@@ -1,4 +1,7 @@
-## hashMap
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.hashMap
 
 Constructs a config for a sequence of values.
 

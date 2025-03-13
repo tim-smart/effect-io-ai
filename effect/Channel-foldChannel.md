@@ -1,4 +1,7 @@
-## foldChannel
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.foldChannel
 
 Folds over the result of this channel.
 

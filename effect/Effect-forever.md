@@ -1,4 +1,7 @@
-## forever
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forever
 
 Repeats an effect indefinitely until an error occurs.
 

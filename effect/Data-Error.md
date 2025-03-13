@@ -1,4 +1,7 @@
-## Error
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.Error
 
 Provides a constructor for a Case Class.
 

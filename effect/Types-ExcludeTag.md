@@ -1,4 +1,7 @@
-## ExcludeTag
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.ExcludeTag
 
 Excludes the tagged object from the type.
 

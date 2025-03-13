@@ -1,4 +1,7 @@
-## orDie
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orDie
 
 Translates `STM` effect failure into death of the fiber, making all
 failures unchecked and not a part of the type of the effect.

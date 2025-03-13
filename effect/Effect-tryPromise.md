@@ -1,4 +1,7 @@
-## tryPromise
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tryPromise
 
 Creates an `Effect` that represents an asynchronous computation that might
 fail.

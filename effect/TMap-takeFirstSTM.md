@@ -1,4 +1,7 @@
-## takeFirstSTM
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.takeFirstSTM
 
 Takes the first matching value, or retries until there is one.
 

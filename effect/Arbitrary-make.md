@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Arbitrary`<br />
+
+## Arbitrary.make
 
 Returns a fast-check Arbitrary for the `A` type of the provided schema.
 

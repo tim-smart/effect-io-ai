@@ -1,4 +1,7 @@
-## isBigInt
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.isBigInt
 
 Tests if a value is a `bigint`.
 

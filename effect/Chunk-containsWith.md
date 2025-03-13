@@ -1,4 +1,7 @@
-## containsWith
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.containsWith
 
 Returns a function that checks if a `Chunk` contains a given value using a provided `isEquivalent` function.
 

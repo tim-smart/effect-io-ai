@@ -1,4 +1,7 @@
-## isFunction
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.isFunction
 
 Tests if a value is a `function`.
 

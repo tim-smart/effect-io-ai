@@ -1,4 +1,7 @@
-## replicateSTMDiscard
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.replicateSTMDiscard
 
 Performs this transaction the specified number of times, discarding the
 results.

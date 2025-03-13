@@ -1,4 +1,7 @@
-## scheduleSpaced
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleSpaced
 
 Create a `MicroSchedule` that will generate a constant delay.
 

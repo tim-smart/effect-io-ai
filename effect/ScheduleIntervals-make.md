@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.make
 
 Creates a new `Intervals` from a `List` of `Interval`s.
 

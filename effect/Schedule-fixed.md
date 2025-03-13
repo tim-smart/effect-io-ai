@@ -1,4 +1,7 @@
-## fixed
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.fixed
 
 Creates a schedule that recurs at a fixed interval.
 

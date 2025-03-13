@@ -1,4 +1,7 @@
-## isNest
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isNest
 
 Returns `true` if the specified `Doc` is a `Nest`, `false` otherwise.
 

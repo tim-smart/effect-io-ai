@@ -1,4 +1,7 @@
-## Tags
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Tags
 
 Returns the tags in a type.
 

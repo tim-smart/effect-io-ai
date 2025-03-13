@@ -1,4 +1,7 @@
-## intersection
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.intersection
 
 Creates a Chunk of unique values that are included in all given Chunks.
 

@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.retry
 
 Retry the given `Micro` effect using the provided options.
 

@@ -1,4 +1,7 @@
-## tail
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.tail
 
 Returns the last element of the list, if it exists.
 

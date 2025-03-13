@@ -1,4 +1,7 @@
-## tryMap
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tryMap
 
 Returns an effect that maps its success using the specified side-effecting
 `try` function, converting any errors into typed failed effects using the

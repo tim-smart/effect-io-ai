@@ -1,4 +1,7 @@
-## decrement
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.decrement
 
 Decrements a number by `1n`.
 

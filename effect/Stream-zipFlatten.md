@@ -1,4 +1,7 @@
-## zipFlatten
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipFlatten
 
 Zips this stream with another point-wise and emits tuples of elements from
 both streams.

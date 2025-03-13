@@ -1,4 +1,7 @@
-## setConfigProvider
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.setConfigProvider
 
 Sets the current `ConfigProvider`.
 

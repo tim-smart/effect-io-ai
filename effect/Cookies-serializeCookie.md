@@ -1,4 +1,7 @@
-## serializeCookie
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.serializeCookie
 
 Serialize a cookie into a string
 

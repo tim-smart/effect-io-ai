@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.some
 
 This utility function is used to check if at least one of the elements in a collection of boolean values is `true`.
 

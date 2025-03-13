@@ -1,4 +1,7 @@
-## isRequest
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.isRequest
 
 Returns `true` if the specified value is a `Request`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.make
 
 Builds a `NonEmptyChunk` from an non-empty collection of elements.
 

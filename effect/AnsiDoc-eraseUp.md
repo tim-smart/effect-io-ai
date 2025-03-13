@@ -1,4 +1,7 @@
-## eraseUp
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.eraseUp
 
 Clears from the current cursor position to the beginning of the screen.
 

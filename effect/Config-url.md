@@ -1,4 +1,7 @@
-## url
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.url
 
 Constructs a config for a URL value.
 

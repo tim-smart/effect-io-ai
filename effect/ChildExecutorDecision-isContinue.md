@@ -1,4 +1,7 @@
-## isContinue
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.isContinue
 
 Returns `true` if the specified `ChildExecutorDecision` is a `Continue`,
 `false` otherwise.

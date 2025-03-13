@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `SerializedMessage`<br />
+
+## SerializedMessage.make
 
 Construct a new `SerializedMessage` from its internal string value.
 

@@ -1,4 +1,7 @@
-## implies
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.implies
 
 Represents the logical implication combinator for predicates. In formal
 logic, the implication operator `->` denotes that if the first proposition

@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.contains
 
 Returns a function that checks if a `Iterable` contains a given value using the default `Equivalence`.
 

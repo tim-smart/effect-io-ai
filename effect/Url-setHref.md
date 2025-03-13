@@ -1,4 +1,7 @@
-## setHref
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setHref
 
 Replaces the entire URL string.
 

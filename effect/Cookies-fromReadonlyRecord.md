@@ -1,4 +1,7 @@
-## fromReadonlyRecord
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.fromReadonlyRecord
 
 Create a Cookies object from an Iterable
 

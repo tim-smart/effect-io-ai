@@ -1,4 +1,7 @@
-## maxOption
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.maxOption
 
 Atomically compute the greatest element in the array, if it exists.
 

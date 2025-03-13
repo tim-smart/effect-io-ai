@@ -1,4 +1,7 @@
-## children
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.children
 
 Retrieves the immediate children of the fiber.
 

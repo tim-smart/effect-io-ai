@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.take
 
 Takes the specified number of elements from the beginning of the specified
 list.

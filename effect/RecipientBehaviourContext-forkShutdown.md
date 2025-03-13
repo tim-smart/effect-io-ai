@@ -1,4 +1,7 @@
-## forkShutdown
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.forkShutdown
 
 Forks the shutdown of the current recipient behaviour as soon as possible.
 

@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.contains
 
 Returns a function that checks if a `ReadonlyArray` contains a given value using the default `Equivalence`.
 

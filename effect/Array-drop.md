@@ -1,4 +1,7 @@
-## drop
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.drop
 
 Drop a max number of elements from the start of an `Iterable`, creating a new `Array`.
 

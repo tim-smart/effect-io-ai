@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.reduce
 
 Reduce a state over the entries of the tree.
 

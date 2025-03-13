@@ -1,4 +1,7 @@
-## boolean
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.boolean
 
 Constructs a config for a boolean value.
 

@@ -1,4 +1,7 @@
-## Redacted
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Redacted
 
 A transformation that transform a `Schema<A, I, R>` into a
 `RedactedFromSelf<A>`.

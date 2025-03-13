@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.zipRight
 
 Executes two effects sequentially, returning the result of the second effect
 while ignoring the result of the first.

@@ -1,4 +1,7 @@
-## catWithLineBreak
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.catWithLineBreak
 
 The `catWithLineBreak` combinator concatenates two documents by placing a
 `lineBreak` document between them.

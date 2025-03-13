@@ -1,4 +1,7 @@
-## toEpochMillis
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.toEpochMillis
 
 Get the milliseconds since the Unix epoch of a `DateTime`.
 

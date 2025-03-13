@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `ShardId`<br />
+
+## ShardId.make
 
 Constructs a shard id from its numerical value.
 The shard id is currently built up by making the hash of the entity id, and then modulo the max amount of shards configured in ManagerConfig.

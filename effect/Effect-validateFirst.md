@@ -1,4 +1,7 @@
-## validateFirst
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.validateFirst
 
 This function is similar to `validateAll` but with a key difference: it
 returns the first successful result or all errors if none of the operations

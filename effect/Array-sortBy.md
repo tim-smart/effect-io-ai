@@ -1,4 +1,7 @@
-## sortBy
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.sortBy
 
 Sorts the elements of an `Iterable` in increasing order based on the provided
 orders. The elements are compared using the first order in `orders`, then the

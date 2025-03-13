@@ -1,4 +1,7 @@
-## bindTo
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.bindTo
 
 The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 

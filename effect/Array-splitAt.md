@@ -1,4 +1,7 @@
-## splitAt
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.splitAt
 
 Splits an `Iterable` into two segments, with the first segment containing a maximum of `n` elements.
 The value of `n` can be `0`.

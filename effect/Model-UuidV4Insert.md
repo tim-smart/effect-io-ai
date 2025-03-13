@@ -1,4 +1,7 @@
-## UuidV4Insert
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.UuidV4Insert
 
 A field that represents a binary UUID v4 that is generated on inserts.
 

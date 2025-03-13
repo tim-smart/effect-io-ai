@@ -1,4 +1,7 @@
-## cross
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.cross
 
 Composes this stream with the specified stream to create a cartesian
 product of elements. The `right` stream would be run multiple times, for

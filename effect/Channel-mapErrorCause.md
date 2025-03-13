@@ -1,4 +1,7 @@
-## mapErrorCause
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapErrorCause
 
 A more powerful version of `mapError` which also surfaces the `Cause`
 of the channel failure.

@@ -1,4 +1,7 @@
-## when
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.when
 
 Defines a condition for matching values.
 

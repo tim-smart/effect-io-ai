@@ -1,4 +1,7 @@
-## xor
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.xor
 
 Combines two booleans using XOR: `(!self && that) || (self && !that)`.
 

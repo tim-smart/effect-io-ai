@@ -1,4 +1,7 @@
-## MonoidSum
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.MonoidSum
 
 `number` monoid under addition.
 

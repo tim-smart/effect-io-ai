@@ -1,4 +1,7 @@
-## withConfigProvider
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withConfigProvider
 
 Executes an effect using a specific configuration provider.
 

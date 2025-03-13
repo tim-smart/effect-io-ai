@@ -1,4 +1,7 @@
-## Union
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Union
 
 Represents the union of two documents. Used to implement layout alternatives
 for `group`.

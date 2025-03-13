@@ -1,4 +1,7 @@
-## withScheduler
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withScheduler
 
 Sets the provided scheduler for usage in the wrapped effect
 

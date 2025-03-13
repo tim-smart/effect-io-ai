@@ -1,4 +1,7 @@
-## interleaveWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.interleaveWith
 
 Combines this stream and the specified stream deterministically using the
 stream of boolean values `pull` to control which stream to pull from next.

@@ -1,4 +1,7 @@
-## onExit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.onExit
 
 When the `Micro` effect is completed, run the given finalizer effect with the
 `MicroExit` of the executed effect.

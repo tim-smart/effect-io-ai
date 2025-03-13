@@ -1,4 +1,7 @@
-## QuitException
+Package: `@effect/platform`<br />
+Module: `Terminal`<br />
+
+## Terminal.QuitException
 
 A `QuitException` represents an exception that occurs when a user attempts to
 quit out of a `Terminal` prompt for input (usually by entering `ctrl`+`c`).

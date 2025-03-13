@@ -1,4 +1,7 @@
-## retried
+Package: `effect`<br />
+Module: `TestAnnotation`<br />
+
+## TestAnnotation.retried
 
 An annotation which counts retried tests.
 

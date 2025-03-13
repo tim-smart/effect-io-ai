@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.succeed
 
 Complete a `Request` with the specified value.
 

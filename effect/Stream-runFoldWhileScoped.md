@@ -1,4 +1,7 @@
-## runFoldWhileScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFoldWhileScoped
 
 Executes a pure fold over the stream of values. Returns a scoped value that
 represents the scope of the stream. Stops the fold early when the condition

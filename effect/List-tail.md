@@ -1,4 +1,7 @@
-## tail
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.tail
 
 Returns the tail of the specified list, or `None` if the list is empty.
 

@@ -1,4 +1,7 @@
-## replaceOption
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.replaceOption
 
 Replaces a value in the record with the new value passed as parameter.
 

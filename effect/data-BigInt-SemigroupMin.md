@@ -1,4 +1,7 @@
-## SemigroupMin
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.SemigroupMin
 
 A `Semigroup` that uses the minimum between two values.
 

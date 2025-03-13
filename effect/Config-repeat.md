@@ -1,4 +1,7 @@
-## repeat
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.repeat
 
 Returns a config that describes a sequence of values, each of which has the
 structure of this config.

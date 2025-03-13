@@ -1,4 +1,7 @@
-## fromPubSub
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromPubSub
 
 Construct a `Channel` from a `PubSub`.
 

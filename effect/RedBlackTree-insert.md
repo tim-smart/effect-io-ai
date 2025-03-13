@@ -1,4 +1,7 @@
-## insert
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.insert
 
 Insert a new item into the tree.
 

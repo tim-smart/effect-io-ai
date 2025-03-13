@@ -1,4 +1,7 @@
-## sort
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.sort
 
 Sort the elements of a Chunk in increasing order, creating a new Chunk.
 

@@ -1,4 +1,7 @@
-## setPartsUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setPartsUtc
 
 Set the different parts of a `DateTime` as an object.
 

@@ -1,4 +1,7 @@
-## enableAll
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.enableAll
 
 Enables all of the `RuntimeFlag`s in the specified set of `RuntimeFlags`.
 

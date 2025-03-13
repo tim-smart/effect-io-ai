@@ -1,4 +1,7 @@
-## pollUpTo
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.pollUpTo
 
 Dequeues up to `n` elements from the queue.
 

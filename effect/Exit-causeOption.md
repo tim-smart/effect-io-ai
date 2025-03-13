@@ -1,4 +1,7 @@
-## causeOption
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.causeOption
 
 Returns a `Some<Cause<E>>` if the specified exit is a `Failure`, `None`
 otherwise.

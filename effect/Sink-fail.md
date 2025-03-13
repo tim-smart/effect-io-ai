@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fail
 
 A sink that always fails with the specified error.
 

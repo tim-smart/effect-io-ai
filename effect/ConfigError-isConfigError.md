@@ -1,4 +1,7 @@
-## isConfigError
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isConfigError
 
 Returns `true` if the specified value is a `ConfigError`, `false` otherwise.
 

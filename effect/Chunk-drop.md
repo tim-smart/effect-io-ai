@@ -1,4 +1,7 @@
-## drop
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.drop
 
 Drops the first up to `n` elements from the chunk
 

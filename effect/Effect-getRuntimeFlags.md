@@ -1,4 +1,7 @@
-## getRuntimeFlags
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.getRuntimeFlags
 
 Retrieves an effect that succeeds with the current runtime flags, which
 govern behavior and features of the runtime system.

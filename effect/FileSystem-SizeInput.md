@@ -1,4 +1,7 @@
-## SizeInput
+Package: `@effect/platform`<br />
+Module: `FileSystem`<br />
+
+## FileSystem.SizeInput
 
 Represents a size in bytes.
 

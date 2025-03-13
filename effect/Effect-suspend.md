@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.suspend
 
 Delays the creation of an `Effect` until it is actually needed.
 

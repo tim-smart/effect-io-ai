@@ -1,4 +1,7 @@
-## DateTimeZonedFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateTimeZonedFromSelf
 
 Describes a schema that represents a `DateTime.Zoned` instance.
 

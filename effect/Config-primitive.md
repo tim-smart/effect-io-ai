@@ -1,4 +1,7 @@
-## primitive
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.primitive
 
 Constructs a new primitive config.
 

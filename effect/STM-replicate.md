@@ -1,4 +1,7 @@
-## replicate
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.replicate
 
 Replicates the given effect n times. If 0 or negative numbers are given, an
 empty `Chunk` will be returned.

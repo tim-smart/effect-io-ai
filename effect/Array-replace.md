@@ -1,4 +1,7 @@
-## replace
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.replace
 
 Change the element at the specified index, creating a new `Array`,
 or return a copy of the input if the index is out of bounds.

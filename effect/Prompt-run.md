@@ -1,4 +1,7 @@
-## run
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.run
 
 Executes the specified `Prompt`.
 

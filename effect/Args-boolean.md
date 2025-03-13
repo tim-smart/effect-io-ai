@@ -1,4 +1,7 @@
-## boolean
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.boolean
 
 Creates a boolean argument.
 

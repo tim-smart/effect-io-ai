@@ -1,4 +1,7 @@
-## intersperse
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.intersperse
 
 Intersperse stream with provided `element`.
 

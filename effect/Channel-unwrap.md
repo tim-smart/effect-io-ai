@@ -1,4 +1,7 @@
-## unwrap
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.unwrap
 
 Constructs a `Channel` from an effect that will result in a `Channel` if
 successful.

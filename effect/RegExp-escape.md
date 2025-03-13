@@ -1,4 +1,7 @@
-## escape
+Package: `effect`<br />
+Module: `RegExp`<br />
+
+## RegExp.escape
 
 Escapes special characters in a regular expression pattern.
 

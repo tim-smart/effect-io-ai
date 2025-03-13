@@ -1,4 +1,7 @@
-## lift2
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.lift2
 
 Lifts a binary function to work with `Option` values, allowing the function
 to operate on two `Option`s.

@@ -1,4 +1,7 @@
-## catchTag
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.catchTag
 
 Recovers from the specified tagged error.
 

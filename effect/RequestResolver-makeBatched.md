@@ -1,4 +1,7 @@
-## makeBatched
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.makeBatched
 
 Constructs a data source from a function taking a collection of requests.
 

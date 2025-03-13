@@ -1,4 +1,7 @@
-## dropUntilEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dropUntilEffect
 
 Drops incoming elements until the effectful predicate is satisfied.
 

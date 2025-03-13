@@ -1,4 +1,7 @@
-## offer
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.offer
 
 Places one value in the queue.
 

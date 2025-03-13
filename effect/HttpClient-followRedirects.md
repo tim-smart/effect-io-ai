@@ -1,4 +1,7 @@
-## followRedirects
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.followRedirects
 
 Follows HTTP redirects up to a specified number of times.
 

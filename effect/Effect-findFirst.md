@@ -1,4 +1,7 @@
-## findFirst
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.findFirst
 
 Returns the first element that satisfies the effectful predicate.
 

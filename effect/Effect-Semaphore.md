@@ -1,4 +1,7 @@
-## Semaphore
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Semaphore
 
 A semaphore is a synchronization mechanism used to manage access to a shared
 resource. In Effect, semaphores help control resource access or coordinate

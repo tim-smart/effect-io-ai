@@ -1,4 +1,7 @@
-## CacheStats
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.CacheStats
 
 `CacheStats` represents a snapshot of statistics for the cache as of a
 point in time.

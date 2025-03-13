@@ -1,4 +1,7 @@
-## ExceededCapacityException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.ExceededCapacityException
 
 An error that occurs when resource capacity is exceeded.
 

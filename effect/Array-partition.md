@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.partition
 
 Separate elements based on a predicate that also exposes the index of the element.
 

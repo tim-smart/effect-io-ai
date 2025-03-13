@@ -1,4 +1,7 @@
-## type
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.type
 
 Creates a matcher for a specific type.
 

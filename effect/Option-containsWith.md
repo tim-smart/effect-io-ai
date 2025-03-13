@@ -1,4 +1,7 @@
-## containsWith
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.containsWith
 
 Returns a function that checks if an `Option` contains a specified value,
 using a provided equivalence function.

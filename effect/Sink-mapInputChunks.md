@@ -1,4 +1,7 @@
-## mapInputChunks
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mapInputChunks
 
 Transforms this sink's input chunks. `f` must preserve chunking-invariance.
 

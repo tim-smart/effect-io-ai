@@ -1,4 +1,7 @@
-## transformOrFail
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.transformOrFail
 
 Create a new `Schema` by transforming the input and output of an existing `Schema`
 using the provided decoding functions.

@@ -1,4 +1,7 @@
-## mergeEither
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mergeEither
 
 Merges this stream and the specified stream together to produce a stream of
 eithers.

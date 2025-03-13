@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.filter
 
 Filters values out of a `HashSet` using the specified predicate.
 

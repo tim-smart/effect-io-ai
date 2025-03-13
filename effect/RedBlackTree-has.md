@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.has
 
 Finds the item with key, if it exists.
 

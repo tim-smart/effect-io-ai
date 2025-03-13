@@ -1,4 +1,7 @@
-## matchCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.matchCause
 
 Handles failures by matching the cause of failure.
 

@@ -1,4 +1,7 @@
-## check
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.check
 
 Filters schedule executions based on a custom condition.
 

@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchAll
 
 Catch the error of the given `Micro` effect, allowing you to recover from it.
 

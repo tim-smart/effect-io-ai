@@ -1,4 +1,7 @@
-## provideServiceStream
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.provideServiceStream
 
 Provides the stream with the single service it requires. If the stream
 requires more than one service use `Stream.provideContext` instead.

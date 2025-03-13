@@ -1,4 +1,7 @@
-## counter
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.counter
 
 Represents a Counter metric that tracks cumulative numerical values over time.
 Counters can be incremented and decremented and provide a running total of changes.

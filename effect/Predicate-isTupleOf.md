@@ -1,4 +1,7 @@
-## isTupleOf
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isTupleOf
 
 Determine if an `Array` is a tuple with exactly `N` elements, narrowing down the type to `TupleOf`.
 

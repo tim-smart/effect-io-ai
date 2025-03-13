@@ -1,4 +1,7 @@
-## cachedWithTTL
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.cachedWithTTL
 
 Returns an effect that caches its result for a specified `Duration`,
 known as "timeToLive" (TTL).

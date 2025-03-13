@@ -1,4 +1,7 @@
-## pollAndUpdate
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.pollAndUpdate
 
 An effect that polls for a value and uses the value to update the metric.
 

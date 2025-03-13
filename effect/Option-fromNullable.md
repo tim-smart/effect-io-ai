@@ -1,4 +1,7 @@
-## fromNullable
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.fromNullable
 
 Converts a nullable value into an `Option`. Returns `None` if the value is
 `null` or `undefined`, otherwise wraps the value in a `Some`.

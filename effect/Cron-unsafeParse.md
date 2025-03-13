@@ -1,4 +1,7 @@
-## unsafeParse
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.unsafeParse
 
 Parses a cron expression into a `Cron` instance.
 

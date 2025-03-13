@@ -1,4 +1,7 @@
-## scopedContext
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.scopedContext
 
 Constructs a layer from the specified scoped effect, which must return one
 or more services.

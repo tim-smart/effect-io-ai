@@ -1,4 +1,7 @@
-## PrettyError
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.PrettyError
 
 A shape for prettified errors, optionally including a source span.
 

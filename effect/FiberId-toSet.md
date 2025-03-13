@@ -1,4 +1,7 @@
-## toSet
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.toSet
 
 Convert a `FiberId` into a `HashSet<FiberId>`.
 

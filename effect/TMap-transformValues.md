@@ -1,4 +1,7 @@
-## transformValues
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.transformValues
 
 Atomically updates all values using a pure function.
 

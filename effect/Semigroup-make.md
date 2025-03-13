@@ -1,4 +1,7 @@
-## make
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.make
 
 The `combineMany` parameter is optional and defaults to a standard
 implementation. You can provide a custom implementation when performance

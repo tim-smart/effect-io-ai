@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.make
 
 Creates a new config provider.
 

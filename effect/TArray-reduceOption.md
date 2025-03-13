@@ -1,4 +1,7 @@
-## reduceOption
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.reduceOption
 
 Atomically reduce the array, if non-empty, by a binary operator.
 

@@ -1,4 +1,7 @@
-## isDequeue
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.isDequeue
 
 Returns `true` if the specified value is a `Dequeue`, `false` otherwise.
 

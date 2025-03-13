@@ -1,4 +1,7 @@
-## status
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.status
 
 Returns the `FiberStatus` of a `RuntimeFiber`.
 

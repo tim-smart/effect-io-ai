@@ -1,4 +1,7 @@
-## liftPredicate
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.liftPredicate
 
 Transforms a `Predicate` function into a `Right` of the input value if the predicate returns `true`
 or `Left` of the result of the provided function if the predicate returns false

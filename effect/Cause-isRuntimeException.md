@@ -1,4 +1,7 @@
-## isRuntimeException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isRuntimeException
 
 Checks if a given unknown value is a `RuntimeException`.
 

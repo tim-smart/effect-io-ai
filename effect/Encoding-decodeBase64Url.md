@@ -1,4 +1,7 @@
-## decodeBase64Url
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeBase64Url
 
 Decodes a base64 (URL) encoded `string` into a `Uint8Array`.
 

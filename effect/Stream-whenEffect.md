@@ -1,4 +1,7 @@
-## whenEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.whenEffect
 
 Returns the stream if the given effectful condition is satisfied, otherwise
 returns an empty stream.

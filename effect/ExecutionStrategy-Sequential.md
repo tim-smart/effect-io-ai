@@ -1,4 +1,7 @@
-## Sequential
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.Sequential
 
 Execute effects sequentially.
 

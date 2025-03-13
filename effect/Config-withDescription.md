@@ -1,4 +1,7 @@
-## withDescription
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.withDescription
 
 Adds a description to this configuration, which is intended for humans.
 

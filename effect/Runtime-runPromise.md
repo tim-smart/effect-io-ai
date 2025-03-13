@@ -1,4 +1,7 @@
-## runPromise
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runPromise
 
 Runs the `Effect`, returning a JavaScript `Promise` that will be resolved
 with the value of the effect once the effect has been executed, or will be

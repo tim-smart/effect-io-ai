@@ -1,4 +1,7 @@
-## lessThan
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.lessThan
 
 Returns `true` if the start of this `Intervals` is before the start of that
 `Intervals`, `false` otherwise.

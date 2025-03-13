@@ -1,4 +1,7 @@
-## publishAll
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.publishAll
 
 Publishes all of the specified messages to the `PubSub`, returning whether they
 were published to the `PubSub`.

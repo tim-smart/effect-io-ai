@@ -1,4 +1,7 @@
-## unsafeDivide
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.unsafeDivide
 
 Provides an unsafe division operation on `BigDecimal`s.
 

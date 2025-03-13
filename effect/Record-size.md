@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.size
 
 Returns the number of key/value pairs in a record.
 

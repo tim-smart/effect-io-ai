@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.zip
 
 Sequentially zips this value with the specified one.
 

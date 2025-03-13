@@ -1,4 +1,7 @@
-## prependAll
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.prependAll
 
 Prepends the specified prefix list to the beginning of the specified list.
 If either list is non-empty, the result is also a non-empty list.

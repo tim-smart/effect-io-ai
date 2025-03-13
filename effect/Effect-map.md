@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.map
 
 Transforms the value inside an effect by applying a function to it.
 

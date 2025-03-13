@@ -1,4 +1,7 @@
-## langle
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.langle
 
 A document containing a single `<` character.
 

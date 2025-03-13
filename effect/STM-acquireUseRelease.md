@@ -1,4 +1,7 @@
-## acquireUseRelease
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.acquireUseRelease
 
 Treats the specified `acquire` transaction as the acquisition of a
 resource. The `acquire` transaction will be executed interruptibly. If it

@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.match
 
 Takes two functions and an `Either` value, if the value is a `Left` the inner value is applied to the `onLeft function,
 if the value is a `Right` the inner value is applied to the `onRight` function.

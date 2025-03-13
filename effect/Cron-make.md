@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.make
 
 Creates a `Cron` instance.
 

@@ -1,4 +1,7 @@
-## unsafeAdd
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.unsafeAdd
 
 Add a fiber to the FiberSet. When the fiber completes, it will be removed.
 

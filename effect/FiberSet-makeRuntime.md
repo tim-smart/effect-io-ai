@@ -1,4 +1,7 @@
-## makeRuntime
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.makeRuntime
 
 Create an Effect run function that is backed by a FiberSet.
 

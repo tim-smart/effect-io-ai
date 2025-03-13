@@ -1,4 +1,7 @@
-## fromString
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.fromString
 
 Parses a URL string into a `URL` object, returning an `Either` type for safe
 error handling.

@@ -1,4 +1,7 @@
-## filterMapWhileEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.filterMapWhileEffect
 
 Effectfully transforms all elements of the stream for as long as the
 specified partial function is defined.

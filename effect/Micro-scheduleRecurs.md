@@ -1,4 +1,7 @@
-## scheduleRecurs
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleRecurs
 
 Create a `MicroSchedule` that will stop repeating after the specified number
 of attempts.

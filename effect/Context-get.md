@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.get
 
 Get a service from the context that corresponds to the given tag.
 

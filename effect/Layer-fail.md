@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.fail
 
 Constructs a layer that fails with the specified error.
 

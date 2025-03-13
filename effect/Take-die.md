@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.die
 
 Creates a failing `Take` with the specified defect.
 

@@ -1,4 +1,7 @@
-## isReadonlyRecord
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isReadonlyRecord
 
 A guard that succeeds when the input is a readonly record.
 

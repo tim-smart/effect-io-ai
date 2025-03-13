@@ -1,4 +1,7 @@
-## findLastIndex
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.findLastIndex
 
 Return the last index for which a predicate holds.
 

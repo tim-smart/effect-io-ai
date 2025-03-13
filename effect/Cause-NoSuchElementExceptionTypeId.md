@@ -1,4 +1,7 @@
-## NoSuchElementExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.NoSuchElementExceptionTypeId
 
 A unique symbol identifying the `NoSuchElementException` type.
 

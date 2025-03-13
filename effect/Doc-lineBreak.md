@@ -1,4 +1,7 @@
-## lineBreak
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.lineBreak
 
 The `lineBreak` document is like `line` but behaves like `empty` if the line
 break is undone by `group` (instead of `space`).

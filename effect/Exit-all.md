@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.all
 
 Collects all of the specified exit values into a `Some<Exit<List<A>, E>>`. If
 the provided iterable contains no elements, `None` will be returned.

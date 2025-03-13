@@ -1,4 +1,7 @@
-## isString
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isString
 
 Tests if a value is a `string`.
 

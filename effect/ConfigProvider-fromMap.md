@@ -1,4 +1,7 @@
-## fromMap
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.fromMap
 
 Constructs a ConfigProvider using a map and the specified delimiter string,
 which determines how to split the keys in the map into path segments.

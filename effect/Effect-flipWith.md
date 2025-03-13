@@ -1,4 +1,7 @@
-## flipWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.flipWith
 
 Swaps the error/value parameters, applies the function `f` and flips the
 parameters back

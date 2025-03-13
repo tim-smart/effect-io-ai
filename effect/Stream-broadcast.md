@@ -1,4 +1,7 @@
-## broadcast
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.broadcast
 
 Fan out the stream, producing a list of streams that have the same elements
 as this stream. The driver stream will only ever advance the `maximumLag`

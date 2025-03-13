@@ -1,4 +1,7 @@
-## writeLocks
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.writeLocks
 
 Computes the number of write locks held by fibers.
 

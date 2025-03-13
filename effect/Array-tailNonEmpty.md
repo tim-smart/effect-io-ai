@@ -1,4 +1,7 @@
-## tailNonEmpty
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.tailNonEmpty
 
 Get all but the first element of a `NonEmptyReadonlyArray`.
 

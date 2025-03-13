@@ -1,4 +1,7 @@
-## greaterThanOrEqualTo
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.greaterThanOrEqualTo
 
 Returns a function that checks if a given `number` is greater than or equal to the provided one.
 

@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `KeyedPool`<br />
+
+## KeyedPool.make
 
 Makes a new pool of the specified fixed size. The pool is returned in a
 `Scope`, which governs the lifetime of the pool. When the pool is shutdown

@@ -1,4 +1,7 @@
-## annotate
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.annotate
 
 Accesses an `Annotations` instance in the context and appends the
 specified annotation to the annotation map.

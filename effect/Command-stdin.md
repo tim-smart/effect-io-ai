@@ -1,4 +1,7 @@
-## stdin
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.stdin
 
 Specify the standard input stream for a command.
 

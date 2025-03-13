@@ -1,4 +1,7 @@
-## render
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.render
 
 Converts the provided `RuntimeFlags` into a `string`.
 

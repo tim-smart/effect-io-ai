@@ -1,4 +1,7 @@
-## offer
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.offer
 
 Offers an element to the queue.
 

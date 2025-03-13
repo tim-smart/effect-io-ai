@@ -1,4 +1,7 @@
-## succeedSome
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.succeedSome
 
 Returns an effect with the optional value.
 

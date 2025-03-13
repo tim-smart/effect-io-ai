@@ -1,4 +1,7 @@
-## structuredLogger
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.structuredLogger
 
 The structured logger provides detailed log outputs, structured in a way that
 retains comprehensive traceability of the events, suitable for deeper

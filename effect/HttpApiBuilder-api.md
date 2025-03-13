@@ -1,4 +1,7 @@
-## api
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.api
 
 Create a top-level `HttpApi` layer.
 

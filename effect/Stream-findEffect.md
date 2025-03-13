@@ -1,4 +1,7 @@
-## findEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.findEffect
 
 Finds the first element emitted by this stream that satisfies the provided
 effectful predicate.

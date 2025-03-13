@@ -1,4 +1,7 @@
-## curlyBraced
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.curlyBraced
 
 Encloses the input document in curly braces (`{}`).
 

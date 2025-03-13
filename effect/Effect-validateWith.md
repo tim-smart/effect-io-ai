@@ -1,4 +1,7 @@
-## validateWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.validateWith
 
 Sequentially combines two effects using a specified combiner function while
 accumulating errors.

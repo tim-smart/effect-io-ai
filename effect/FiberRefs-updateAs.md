@@ -1,4 +1,7 @@
-## updateAs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.updateAs
 
 Updates the value of the specified `FiberRef` using the provided `FiberId`
 

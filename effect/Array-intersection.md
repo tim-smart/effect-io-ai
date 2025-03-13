@@ -1,4 +1,7 @@
-## intersection
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.intersection
 
 Creates an `Array` of unique values that are included in all given `Iterable`s.
 The order and references of result values are determined by the first `Iterable`.

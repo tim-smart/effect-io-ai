@@ -1,4 +1,7 @@
-## hang
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.hang
 
 The `hang` combinator lays out a document with the nesting level set to
 the *current column* plus the specified `indent`. Negative values for

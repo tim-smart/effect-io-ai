@@ -1,4 +1,7 @@
-## Processed
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.Processed
 
 Constructs a ProcessedMessageState from the result of the message being processed.
 

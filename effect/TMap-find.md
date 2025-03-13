@@ -1,4 +1,7 @@
-## find
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.find
 
 Finds the key/value pair matching the specified predicate, and uses the
 provided function to extract a value out of it.

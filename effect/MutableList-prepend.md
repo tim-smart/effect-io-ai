@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.prepend
 
 Prepends the specified value to the beginning of the list.
 

@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.zipWith
 
 The `Micro.zipWith` function combines two `Micro` effects and allows you to
 apply a function to the results of the combined effects, transforming them

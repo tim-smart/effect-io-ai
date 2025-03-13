@@ -1,4 +1,7 @@
-## constTrue
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constTrue
 
 A thunk that returns always `true`.
 

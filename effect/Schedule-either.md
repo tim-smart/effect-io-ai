@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.either
 
 Alias of `union`.
 

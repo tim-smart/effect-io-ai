@@ -1,4 +1,7 @@
-## ignoreLogged
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.ignoreLogged
 
 Ignore any expected errors of the given `Micro` effect, returning `void`.
 

@@ -1,4 +1,7 @@
-## fromChannel
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromChannel
 
 Creates a stream from a `Channel`.
 

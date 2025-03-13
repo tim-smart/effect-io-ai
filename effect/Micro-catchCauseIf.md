@@ -1,4 +1,7 @@
-## catchCauseIf
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchCauseIf
 
 Selectively catch a `MicroCause` object of the given `Micro` effect,
 using the provided predicate to determine if the failure should be caught.

@@ -1,4 +1,7 @@
-## ofComposition
+Package: `@effect/typeclass`<br />
+Module: `Of`<br />
+
+## Of.ofComposition
 
 Returns a default `of` composition.
 

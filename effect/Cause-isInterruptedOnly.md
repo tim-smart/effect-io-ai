@@ -1,4 +1,7 @@
-## isInterruptedOnly
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isInterruptedOnly
 
 Checks if a `Cause` contains only interruptions.
 

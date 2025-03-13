@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.remove
 
 Removes a value from the `HashSet`.
 

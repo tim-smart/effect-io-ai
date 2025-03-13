@@ -1,4 +1,7 @@
-## fromExit
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.fromExit
 
 Creates a `Take` from an `Exit`.
 

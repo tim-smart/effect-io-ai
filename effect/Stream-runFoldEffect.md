@@ -1,4 +1,7 @@
-## runFoldEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFoldEffect
 
 Executes an effectful fold over the stream of values.
 

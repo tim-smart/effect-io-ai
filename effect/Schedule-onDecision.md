@@ -1,4 +1,7 @@
-## onDecision
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.onDecision
 
 Returns a new schedule that executes an effect every time the schedule makes
 a decision.

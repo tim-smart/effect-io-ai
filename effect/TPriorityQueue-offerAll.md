@@ -1,4 +1,7 @@
-## offerAll
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.offerAll
 
 Offers all of the elements in the specified collection to the queue.
 

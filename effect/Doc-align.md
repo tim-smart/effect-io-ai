@@ -1,4 +1,7 @@
-## align
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.align
 
 The `align` combinator lays out a document with the nesting level set to the
 current column.

@@ -1,4 +1,7 @@
-## NumberFromString
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.NumberFromString
 
 This schema transforms a `string` into a `number` by parsing the string using the `parse` function of the `effect/Number` module.
 

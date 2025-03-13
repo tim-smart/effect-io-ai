@@ -1,4 +1,7 @@
-## secret
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.secret
 
 Creates a text argument.
 

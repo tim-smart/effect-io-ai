@@ -1,4 +1,7 @@
-## PodUnregistered
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.PodUnregistered
 
 Constructs the event that occurs when a pod has unregistered
 

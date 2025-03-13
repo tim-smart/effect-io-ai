@@ -1,4 +1,7 @@
-## completeWith
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.completeWith
 
 Completes the deferred with the result of the specified effect. If the
 deferred has already been completed, the method will produce false.

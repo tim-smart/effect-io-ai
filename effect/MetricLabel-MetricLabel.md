@@ -1,4 +1,7 @@
-## MetricLabel
+Package: `effect`<br />
+Module: `MetricLabel`<br />
+
+## MetricLabel.MetricLabel
 
 A `MetricLabel` represents a key value pair that allows analyzing metrics at
 an additional level of granularity.

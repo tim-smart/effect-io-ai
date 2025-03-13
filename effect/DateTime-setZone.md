@@ -1,4 +1,7 @@
-## setZone
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setZone
 
 Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
 

@@ -1,4 +1,7 @@
-## LineStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.LineStream
 
 Represents a `Doc` containing a single line. The `indentation`
 represents the indentation level for the subsequent line in the

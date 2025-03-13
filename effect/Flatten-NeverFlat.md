@@ -1,4 +1,7 @@
-## NeverFlat
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.NeverFlat
 
 Represents a `FlattenResult` where the input cannot be flattened.
 

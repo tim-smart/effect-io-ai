@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.catchAll
 
 Returns a new channel that is the same as this one, except if this channel
 errors for any typed error, then the returned channel will switch over to

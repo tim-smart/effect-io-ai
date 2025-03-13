@@ -1,4 +1,7 @@
-## provideMerge
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.provideMerge
 
 Feeds the output services of this layer into the input of the specified
 layer, resulting in a new layer with the inputs of this layer, and the

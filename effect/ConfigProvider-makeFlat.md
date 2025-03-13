@@ -1,4 +1,7 @@
-## makeFlat
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.makeFlat
 
 Creates a new flat config provider.
 

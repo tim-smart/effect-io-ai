@@ -1,4 +1,7 @@
-## provideService
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.provideService
 
 Provides the effect with the single service it requires. If the effect
 requires more than one service use `provideContext` instead.

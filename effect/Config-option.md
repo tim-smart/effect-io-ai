@@ -1,4 +1,7 @@
-## option
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.option
 
 Returns an optional version of this config, which will be `None` if the
 data is missing from configuration, and `Some` otherwise.

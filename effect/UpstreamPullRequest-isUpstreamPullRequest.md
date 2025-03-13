@@ -1,4 +1,7 @@
-## isUpstreamPullRequest
+Package: `effect`<br />
+Module: `UpstreamPullRequest`<br />
+
+## UpstreamPullRequest.isUpstreamPullRequest
 
 Returns `true` if the specified value is an `UpstreamPullRequest`, `false`
 otherwise.

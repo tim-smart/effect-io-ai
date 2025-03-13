@@ -1,4 +1,7 @@
-## addFinalizerExit
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.addFinalizerExit
 
 Adds a finalizer to this scope. The finalizer receives the `Exit` value
 when the scope is closed, allowing it to perform different actions based

@@ -1,4 +1,7 @@
-## toEntries
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.toEntries
 
 Takes a record and returns an array of tuples containing its keys and values.
 

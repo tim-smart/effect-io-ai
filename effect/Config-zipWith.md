@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.zipWith
 
 Returns a config that is the composes this config and the specified config
 using the provided function.

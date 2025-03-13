@@ -1,4 +1,7 @@
-## DateTimeInsert
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.DateTimeInsert
 
 A field that represents a date-time value that is inserted as the current
 `DateTime.Utc`. It is serialized as a string for the database.

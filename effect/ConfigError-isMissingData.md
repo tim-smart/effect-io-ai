@@ -1,4 +1,7 @@
-## isMissingData
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isMissingData
 
 Returns `true` if the specified `ConfigError` is an `MissingData`, `false`
 otherwise.

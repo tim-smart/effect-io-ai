@@ -1,4 +1,7 @@
-## isFailure
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.isFailure
 
 Checks if an effect has failed.
 

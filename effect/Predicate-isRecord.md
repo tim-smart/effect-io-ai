@@ -1,4 +1,7 @@
-## isRecord
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isRecord
 
 A guard that succeeds when the input is a record.
 

@@ -1,4 +1,7 @@
-## SerializedEnvelope
+Package: `@effect/cluster`<br />
+Module: `SerializedEnvelope`<br />
+
+## SerializedEnvelope.SerializedEnvelope
 
 A SerializedEnvelope is the message that goes over the wire between pods.
 Inside the Envelope, you have the encoded messages, plus some informations on where it should be routed to.

@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.filterMap
 
 Performs a filter and map in a single step.
 

@@ -1,4 +1,7 @@
-## decodeHexString
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeHexString
 
 Decodes a hex encoded `string` into a UTF-8 `string`.
 

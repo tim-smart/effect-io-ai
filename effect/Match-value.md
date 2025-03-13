@@ -1,4 +1,7 @@
-## value
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.value
 
 Creates a matcher from a specific value.
 

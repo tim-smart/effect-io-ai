@@ -1,4 +1,7 @@
-## choice
+Package: `effect`<br />
+Module: `Random`<br />
+
+## Random.choice
 
 Get a random element from an iterable.
 

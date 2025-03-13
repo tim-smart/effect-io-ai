@@ -1,4 +1,7 @@
-## failSync
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.failSync
 
 Constructs a channel that succeeds immediately with the specified lazily
 evaluated value.

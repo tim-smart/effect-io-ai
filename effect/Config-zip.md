@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.zip
 
 Returns a config that is the composition of this config and the specified
 config.

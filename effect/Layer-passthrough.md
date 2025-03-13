@@ -1,4 +1,7 @@
-## passthrough
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.passthrough
 
 Returns a new layer that produces the outputs of this layer but also
 passes through the inputs.

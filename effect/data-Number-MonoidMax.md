@@ -1,4 +1,7 @@
-## MonoidMax
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.MonoidMax
 
 A `Monoid` that uses the maximum between two values.
 

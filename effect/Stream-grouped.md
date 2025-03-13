@@ -1,4 +1,7 @@
-## grouped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.grouped
 
 Partitions the stream with specified `chunkSize`.
 

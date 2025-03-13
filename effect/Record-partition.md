@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.partition
 
 Partitions a record into two separate records based on the result of a predicate function.
 

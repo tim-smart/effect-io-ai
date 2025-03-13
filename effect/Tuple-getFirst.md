@@ -1,4 +1,7 @@
-## getFirst
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.getFirst
 
 Return the first element of a tuple.
 

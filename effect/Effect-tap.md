@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tap
 
 Runs a side effect with the result of an effect without changing the original
 value.

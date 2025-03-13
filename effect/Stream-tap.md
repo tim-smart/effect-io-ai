@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tap
 
 Adds an effect to consumption of every element of the stream.
 

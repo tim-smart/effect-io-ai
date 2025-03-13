@@ -1,4 +1,7 @@
-## Cause.Variance
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Cause.Variance
 
 This interface is used internally to manage the type variance of `Cause`.
 

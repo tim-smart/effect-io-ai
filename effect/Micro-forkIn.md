@@ -1,4 +1,7 @@
-## forkIn
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.forkIn
 
 Run the `Micro` effect in a new `MicroFiber` that can be awaited, joined, or
 aborted.

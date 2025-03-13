@@ -1,4 +1,7 @@
-## toQueue
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toQueue
 
 Converts a `Channel` to a `Queue`.
 

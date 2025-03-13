@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.contains
 
 Returns a function that checks if an `Option` contains a specified value
 using the default `Equivalence`.

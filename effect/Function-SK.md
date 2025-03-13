@@ -1,4 +1,7 @@
-## SK
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.SK
 
 The SK combinator, also known as the "S-K combinator" or "S-combinator", is a fundamental combinator in the
 lambda calculus and the SKI combinator calculus.

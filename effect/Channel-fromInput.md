@@ -1,4 +1,7 @@
-## fromInput
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromInput
 
 Construct a `Channel` from an `AsyncInputConsumer`.
 

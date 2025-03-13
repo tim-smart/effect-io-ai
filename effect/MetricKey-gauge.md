@@ -1,4 +1,7 @@
-## gauge
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.gauge
 
 Creates a metric key for a gauge, with the specified name.
 

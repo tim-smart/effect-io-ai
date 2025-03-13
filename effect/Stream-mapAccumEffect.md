@@ -1,4 +1,7 @@
-## mapAccumEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapAccumEffect
 
 Statefully and effectfully maps over the elements of this stream to produce
 new elements.

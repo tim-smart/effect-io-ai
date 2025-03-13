@@ -1,4 +1,7 @@
-## TimeZoneOffset
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TimeZoneOffset
 
 Defines a schema that converts a `number` to a `TimeZone.Offset` instance using the `DateTime.zoneMakeOffset` constructor.
 

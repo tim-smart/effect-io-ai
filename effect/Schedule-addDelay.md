@@ -1,4 +1,7 @@
-## addDelay
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.addDelay
 
 Adds a delay to every interval in a schedule.
 

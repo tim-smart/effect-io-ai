@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.flatten
 
 Flattens any nested `Micro` effects, merging the error and requirement types.
 

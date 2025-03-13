@@ -1,4 +1,7 @@
-## reflow
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.reflow
 
 Splits a string of words into individual `Text` documents using the specified
 `char` to split on (defaults to `" "`). In addition, a `softLine` is inserted

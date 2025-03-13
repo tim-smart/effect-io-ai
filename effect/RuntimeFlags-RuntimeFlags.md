@@ -1,4 +1,7 @@
-## RuntimeFlags
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.RuntimeFlags
 
 Represents a set of `RuntimeFlag`s. `RuntimeFlag`s affect the operation of
 the Effect runtime system. They are exposed to application-level code because

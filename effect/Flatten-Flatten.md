@@ -1,4 +1,7 @@
-## Flatten
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.Flatten
 
 Because certain documents do not change after removal of newlines, etc, there
 is no point in creating a `Union` of the flattened and unflattened versions.

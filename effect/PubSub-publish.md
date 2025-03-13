@@ -1,4 +1,7 @@
-## publish
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.publish
 
 Publishes a message to the `PubSub`, returning whether the message was published
 to the `PubSub`.

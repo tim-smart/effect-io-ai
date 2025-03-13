@@ -1,4 +1,7 @@
-## shutdown
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.shutdown
 
 Interrupts any fibers that are suspended on `offer` or `take`. Future calls
 to `offer*` and `take*` will be interrupted immediately.

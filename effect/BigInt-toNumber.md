@@ -1,4 +1,7 @@
-## toNumber
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.toNumber
 
 Takes a `bigint` and returns an `Option` of `number`.
 

@@ -1,4 +1,7 @@
-## zipLeft
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.zipLeft
 
 Combines two `Option`s, keeping the value from the first `Option` if both are
 `Some`.

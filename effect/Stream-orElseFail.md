@@ -1,4 +1,7 @@
-## orElseFail
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseFail
 
 Fails with given error in case this one fails with a typed error.
 

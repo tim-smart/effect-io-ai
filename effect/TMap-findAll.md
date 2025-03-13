@@ -1,4 +1,7 @@
-## findAll
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.findAll
 
 Finds all the key/value pairs matching the specified predicate, and uses
 the provided function to extract values out them.

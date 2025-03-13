@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.take
 
 A sink that takes the specified number of values.
 

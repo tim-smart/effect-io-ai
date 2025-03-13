@@ -1,4 +1,7 @@
-## orElseSucceed
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.orElseSucceed
 
 Recover from all errors by succeeding with the given value.
 

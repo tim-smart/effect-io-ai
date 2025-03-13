@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.make
 
 Create a `DateTime` from one of the following:
 

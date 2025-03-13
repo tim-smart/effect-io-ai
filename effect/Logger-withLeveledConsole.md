@@ -1,4 +1,7 @@
-## withLeveledConsole
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.withLeveledConsole
 
 Takes a `Logger<M, O>` and returns a logger that calls the respective `Console` method
 based on the log level.

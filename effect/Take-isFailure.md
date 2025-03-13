@@ -1,4 +1,7 @@
-## isFailure
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.isFailure
 
 Checks if this `take` is a failure.
 

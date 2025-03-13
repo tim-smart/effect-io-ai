@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.make
 
 Creates a new `Deferred`.
 

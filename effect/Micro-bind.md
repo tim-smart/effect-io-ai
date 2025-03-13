@@ -1,4 +1,7 @@
-## bind
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.bind
 
 Bind the success value of this `Micro` effect to the provided name.
 

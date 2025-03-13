@@ -1,4 +1,7 @@
-## sandbox
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.sandbox
 
 Replace the error type of the given `Micro` with the full `MicroCause` object.
 

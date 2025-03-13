@@ -1,4 +1,7 @@
-## lift2
+Package: `@effect/typeclass`<br />
+Module: `SemiApplicative`<br />
+
+## SemiApplicative.lift2
 
 Lifts a binary function into `F`.
 

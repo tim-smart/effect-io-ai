@@ -1,4 +1,7 @@
-## appendElement
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.appendElement
 
 Appends an element to the end of a tuple.
 

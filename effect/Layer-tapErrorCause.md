@@ -1,4 +1,7 @@
-## tapErrorCause
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.tapErrorCause
 
 Performs the specified effect if this layer fails.
 

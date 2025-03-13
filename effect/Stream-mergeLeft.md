@@ -1,4 +1,7 @@
-## mergeLeft
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mergeLeft
 
 Merges this stream and the specified stream together, discarding the values
 from the right stream.

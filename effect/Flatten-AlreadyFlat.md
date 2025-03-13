@@ -1,4 +1,7 @@
-## AlreadyFlat
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.AlreadyFlat
 
 Represents a `FlattenResult` where the input was already flat.
 

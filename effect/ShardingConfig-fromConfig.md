@@ -1,4 +1,7 @@
-## fromConfig
+Package: `@effect/cluster`<br />
+Module: `ShardingConfig`<br />
+
+## ShardingConfig.fromConfig
 
 Reads the ShardingConfig from the effect/ConfigProvider
 

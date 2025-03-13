@@ -1,4 +1,7 @@
-## unlessEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.unlessEffect
 
 Conditionally execute an effect based on the result of another effect.
 

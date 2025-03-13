@@ -1,4 +1,7 @@
-## isAnnotationTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.isAnnotationTree
 
 Returns `true` if the specified `DocTree` is an `AnnotationTree`, `false` otherwise.
 

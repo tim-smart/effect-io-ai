@@ -1,4 +1,7 @@
-## Class
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Class
 
 Provides a constructor for a Request Class.
 

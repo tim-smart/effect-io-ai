@@ -1,4 +1,7 @@
-## Empty
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Empty
 
 Represents the empty document.
 

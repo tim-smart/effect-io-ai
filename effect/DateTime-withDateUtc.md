@@ -1,4 +1,7 @@
-## withDateUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.withDateUtc
 
 Using the time zone adjusted `Date`, apply a function to the `Date` and
 return the result.

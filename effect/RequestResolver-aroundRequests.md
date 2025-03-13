@@ -1,4 +1,7 @@
-## aroundRequests
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.aroundRequests
 
 A data source aspect that executes requests between two effects, `before`
 and `after`, where the result of `before` can be used by `after`.

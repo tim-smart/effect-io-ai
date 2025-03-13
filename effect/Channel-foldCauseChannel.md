@@ -1,4 +1,7 @@
-## foldCauseChannel
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.foldCauseChannel
 
 Folds over the result of this channel including any cause of termination.
 

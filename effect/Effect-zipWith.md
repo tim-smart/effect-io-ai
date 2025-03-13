@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.zipWith
 
 Combines two effects sequentially and applies a function to their results to
 produce a single value.

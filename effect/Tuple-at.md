@@ -1,4 +1,7 @@
-## at
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.at
 
 Retrieves the element at a specified index from a tuple.
 

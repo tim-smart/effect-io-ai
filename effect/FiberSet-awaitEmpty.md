@@ -1,4 +1,7 @@
-## awaitEmpty
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.awaitEmpty
 
 Wait until the fiber set is empty.
 

@@ -1,4 +1,7 @@
-## mapEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mapEffect
 
 Effectfully transforms this sink's result.
 

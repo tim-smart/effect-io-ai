@@ -1,4 +1,7 @@
-## extendScope
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.extendScope
 
 Extends the scope of this layer, returning a new layer that when provided
 to an effect will not immediately release its associated resources when

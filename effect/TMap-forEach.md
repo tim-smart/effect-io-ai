@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.forEach
 
 Atomically performs transactional-effect for each binding present in map.
 

@@ -1,4 +1,7 @@
-## isEnabled
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.isEnabled
 
 Returns `true` if the specified `RuntimeFlag` is enabled, `false` otherwise.
 

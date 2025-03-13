@@ -1,4 +1,7 @@
-## sum
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.sum
 
 Provides an addition operation on `BigDecimal`s.
 

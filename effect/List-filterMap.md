@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.filterMap
 
 Filters and maps a list using the specified partial function. The resulting
 list may be smaller than the input list due to the possibility of the partial

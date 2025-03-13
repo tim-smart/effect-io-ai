@@ -1,4 +1,7 @@
-## GenAI.ResponseAttributes
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.GenAI.ResponseAttributes
 
 Telemetry attributes which are part of the GenAI specification and are
 namespaced by `gen_ai.response`.

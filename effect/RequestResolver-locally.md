@@ -1,4 +1,7 @@
-## locally
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.locally
 
 Returns a new data source with a localized FiberRef
 

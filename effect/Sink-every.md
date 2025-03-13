@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.every
 
 A sink that returns whether all elements satisfy the specified predicate.
 

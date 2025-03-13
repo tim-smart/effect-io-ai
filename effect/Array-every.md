@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.every
 
 Check if a predicate holds true for every `ReadonlyArray` element.
 

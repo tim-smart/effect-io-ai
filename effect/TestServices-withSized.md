@@ -1,4 +1,7 @@
-## withSized
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withSized
 
 Executes the specified workflow with the specified implementation of the
 sized service.

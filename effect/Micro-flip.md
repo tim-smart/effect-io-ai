@@ -1,4 +1,7 @@
-## flip
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.flip
 
 Swap the error and success types of the `Micro` effect.
 

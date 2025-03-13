@@ -1,4 +1,7 @@
-## filterMapComposition
+Package: `@effect/typeclass`<br />
+Module: `Filterable`<br />
+
+## Filterable.filterMapComposition
 
 Returns a default binary `filterMap` composition.
 

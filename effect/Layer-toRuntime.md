@@ -1,4 +1,7 @@
-## toRuntime
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.toRuntime
 
 Converts a layer that requires no services into a scoped runtime, which can
 be used to execute effects.

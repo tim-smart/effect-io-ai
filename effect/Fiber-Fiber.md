@@ -1,4 +1,7 @@
-## Fiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.Fiber
 
 A fiber is a lightweight thread of execution that never consumes more than a
 whole thread (but may consume much less, depending on contention and

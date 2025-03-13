@@ -1,4 +1,7 @@
-## traverseFilterMap
+Package: `@effect/typeclass`<br />
+Module: `TraversableFilterable`<br />
+
+## TraversableFilterable.traverseFilterMap
 
 Returns a default binary `traverseFilterMap` implementation.
 

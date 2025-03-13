@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.flatMap
 
 Applies a function to each element in a chunk and returns a new chunk containing the concatenated mapped elements.
 

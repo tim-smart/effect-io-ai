@@ -1,4 +1,7 @@
-## hardLine
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.hardLine
 
 The `hardLine` document is always laid out as a line break, regardless of
 space or whether or not the document was `group`"ed.

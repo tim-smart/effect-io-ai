@@ -1,4 +1,7 @@
-## reset
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.reset
 
 Removes all elements from the doubly-linked list.
 

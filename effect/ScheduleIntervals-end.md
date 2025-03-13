@@ -1,4 +1,7 @@
-## end
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.end
 
 The end of the latest interval in the specified `Intervals`.
 

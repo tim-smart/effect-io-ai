@@ -1,4 +1,7 @@
-## TextStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.TextStream
 
 Represents a `Doc` containing a string of text.
 

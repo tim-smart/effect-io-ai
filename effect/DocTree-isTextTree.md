@@ -1,4 +1,7 @@
-## isTextTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.isTextTree
 
 Returns `true` if the specified `DocTree` is an `TextTree`, `false` otherwise.
 

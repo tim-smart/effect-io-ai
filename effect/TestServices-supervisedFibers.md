@@ -1,4 +1,7 @@
-## supervisedFibers
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.supervisedFibers
 
 Returns the set of all fibers in this test.
 

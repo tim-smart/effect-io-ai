@@ -1,4 +1,7 @@
-## unsafeDivide
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.unsafeDivide
 
 Provides a division operation on `bigint`s.
 

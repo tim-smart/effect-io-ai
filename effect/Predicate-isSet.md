@@ -1,4 +1,7 @@
-## isSet
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isSet
 
 Tests if a value is a `Set`.
 

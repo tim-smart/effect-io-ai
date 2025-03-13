@@ -1,4 +1,7 @@
-## succeedNone
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.succeedNone
 
 Returns an effect with the empty value.
 

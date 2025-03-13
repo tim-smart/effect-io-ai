@@ -1,4 +1,7 @@
-## takeUpTo
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.takeUpTo
 
 Takes up to max number of values from the queue.
 

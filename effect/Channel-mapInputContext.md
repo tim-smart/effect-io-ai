@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapInputContext
 
 Transforms the context being provided to the channel with the specified
 function.

@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.isEmpty
 
 Returns `true` if the `TQueue` contains zero elements, `false` otherwise.
 

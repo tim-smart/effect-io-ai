@@ -1,4 +1,7 @@
-## lessThanOrEqualTo
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.lessThanOrEqualTo
 
 Returns a function that checks if a given `number` is less than or equal to the provided one.
 

@@ -1,4 +1,7 @@
-## randomWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.randomWith
 
 Retrieves the `Random` service from the context and uses it to run the
 specified effect.

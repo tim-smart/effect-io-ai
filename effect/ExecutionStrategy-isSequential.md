@@ -1,4 +1,7 @@
-## isSequential
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.isSequential
 
 Returns `true` if the specified `ExecutionStrategy` is an instance of
 `Sequential`, `false` otherwise.

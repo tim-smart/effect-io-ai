@@ -1,4 +1,7 @@
-## Request.Success
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Request.Success
 
 A utility type to extract the value type from a `Request`.
 

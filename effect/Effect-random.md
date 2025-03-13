@@ -1,4 +1,7 @@
-## random
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.random
 
 Retrieves the `Random` service from the context.
 

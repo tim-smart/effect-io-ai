@@ -1,4 +1,7 @@
-## isMessageState
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.isMessageState
 
 Ensures that the given value is a MessageState
 

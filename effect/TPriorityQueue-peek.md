@@ -1,4 +1,7 @@
-## peek
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.peek
 
 Peeks at the first value in the queue without removing it, retrying until a
 value is in the queue.

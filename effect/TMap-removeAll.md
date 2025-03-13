@@ -1,4 +1,7 @@
-## removeAll
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.removeAll
 
 Deletes all entries associated with the specified keys.
 

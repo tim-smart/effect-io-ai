@@ -1,4 +1,7 @@
-## Semigroup
+Package: `@effect/typeclass`<br />
+Module: `Ordering`<br />
+
+## Ordering.Semigroup
 
 `Semigroup` instance for `Ordering`, returns the left-most non-zero `Ordering`.
 

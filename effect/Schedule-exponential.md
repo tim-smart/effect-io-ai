@@ -1,4 +1,7 @@
-## exponential
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.exponential
 
 Creates a schedule that recurs indefinitely with exponentially increasing
 delays.

@@ -1,4 +1,7 @@
-## EntryStats
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.EntryStats
 
 Represents a snapshot of statistics for an entry in the cache.
 

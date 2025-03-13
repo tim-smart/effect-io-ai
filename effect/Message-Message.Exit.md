@@ -1,4 +1,7 @@
-## Message.Exit
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message.Exit
 
 Extracts the exit type from a `Message`.
 

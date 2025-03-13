@@ -1,4 +1,7 @@
-## mapConcat
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapConcat
 
 Maps each element to an iterable, and flattens the iterables into the
 output of this stream.

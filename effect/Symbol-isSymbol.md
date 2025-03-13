@@ -1,4 +1,7 @@
-## isSymbol
+Package: `effect`<br />
+Module: `Symbol`<br />
+
+## Symbol.isSymbol
 
 Tests if a value is a `symbol`.
 

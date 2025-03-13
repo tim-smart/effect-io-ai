@@ -1,4 +1,7 @@
-## addFinalizer
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.addFinalizer
 
 Ensures a finalizer is added to the scope of the calling effect, guaranteeing
 it runs when the scope is closed.

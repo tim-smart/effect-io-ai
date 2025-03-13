@@ -1,4 +1,7 @@
-## subtract
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.subtract
 
 Provides a subtraction operation on `BigDecimal`s.
 

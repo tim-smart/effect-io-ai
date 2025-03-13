@@ -1,4 +1,7 @@
-## collectAllWhile
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllWhile
 
 Accumulates incoming elements into a chunk as long as they verify predicate
 `p`.

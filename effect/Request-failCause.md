@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.failCause
 
 Complete a `Request` with the specified cause.
 

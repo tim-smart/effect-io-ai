@@ -1,4 +1,7 @@
-## fromConfig
+Package: `@effect/cluster`<br />
+Module: `ManagerConfig`<br />
+
+## ManagerConfig.fromConfig
 
 Reads the ManagerConfig from the provided Config.
 

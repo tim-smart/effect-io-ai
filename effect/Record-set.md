@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.set
 
 Add a new key-value pair or update an existing key's value in a record.
 

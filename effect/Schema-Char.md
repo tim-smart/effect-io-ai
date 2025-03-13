@@ -1,4 +1,7 @@
-## Char
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Char
 
 A schema representing a single character.
 

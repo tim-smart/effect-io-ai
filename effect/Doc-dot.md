@@ -1,4 +1,7 @@
-## dot
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.dot
 
 A document containing a single `.` character.
 

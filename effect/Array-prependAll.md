@@ -1,4 +1,7 @@
-## prependAll
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.prependAll
 
 Prepends the specified prefix array (or iterable) to the beginning of the specified array (or iterable).
 If either array is non-empty, the result is also a non-empty array.

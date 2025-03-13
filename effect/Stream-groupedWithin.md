@@ -1,4 +1,7 @@
-## groupedWithin
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.groupedWithin
 
 Partitions the stream with the specified `chunkSize` or until the specified
 `duration` has passed, whichever is satisfied first.

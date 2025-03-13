@@ -1,4 +1,7 @@
-## isDone
+Package: `effect`<br />
+Module: `FiberStatus`<br />
+
+## FiberStatus.isDone
 
 Returns `true` if the specified `FiberStatus` is `Done`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## getCurrentFiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.getCurrentFiber
 
 Gets the current fiber if one is running.
 

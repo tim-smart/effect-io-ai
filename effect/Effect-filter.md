@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filter
 
 Filters an iterable using the specified effectful predicate.
 

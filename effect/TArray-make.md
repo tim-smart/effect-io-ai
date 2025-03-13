@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.make
 
 Makes a new `TArray` that is initialized with specified values.
 

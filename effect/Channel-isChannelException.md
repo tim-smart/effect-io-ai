@@ -1,4 +1,7 @@
-## isChannelException
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.isChannelException
 
 Returns `true` if the specified value is an `ChannelException`, `false`
 otherwise.

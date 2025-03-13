@@ -1,4 +1,7 @@
-## sum
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.sum
 
 Provides an addition operation on `number`s.
 

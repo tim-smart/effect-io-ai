@@ -1,4 +1,7 @@
-## scheduleWithMaxDelay
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleWithMaxDelay
 
 Transform a `MicroSchedule` to one that will have a delay that will never exceed
 the specified maximum.

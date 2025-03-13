@@ -1,4 +1,7 @@
-## use
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.use
 
 Provides this closeable scope to an `Effect` that requires a scope,
 guaranteeing that the scope is closed with the result of that effect as

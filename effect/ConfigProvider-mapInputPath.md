@@ -1,4 +1,7 @@
-## mapInputPath
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.mapInputPath
 
 Returns a new config provider that will automatically tranform all path
 configuration names with the specified function. This can be utilized to

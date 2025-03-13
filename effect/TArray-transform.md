@@ -1,4 +1,7 @@
-## transform
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.transform
 
 Atomically updates all elements using a pure function.
 

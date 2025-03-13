@@ -1,4 +1,7 @@
-## eventually
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.eventually
 
 Runs an effect repeatedly until it succeeds, ignoring errors.
 

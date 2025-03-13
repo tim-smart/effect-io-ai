@@ -1,4 +1,7 @@
-## annotateLogs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.annotateLogs
 
 Adds custom annotations to log entries generated within an effect.
 

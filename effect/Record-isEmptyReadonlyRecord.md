@@ -1,4 +1,7 @@
-## isEmptyReadonlyRecord
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.isEmptyReadonlyRecord
 
 Determine if a record is empty.
 

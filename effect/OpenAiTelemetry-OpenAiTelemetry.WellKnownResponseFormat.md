@@ -1,4 +1,7 @@
-## OpenAiTelemetry.WellKnownResponseFormat
+Package: `@effect/ai-openai`<br />
+Module: `OpenAiTelemetry`<br />
+
+## OpenAiTelemetry.OpenAiTelemetry.WellKnownResponseFormat
 
 The `gen_ai.openai.request.response_format` attribute has the following
 list of well-known values.

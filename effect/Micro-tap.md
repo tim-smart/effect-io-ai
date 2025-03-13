@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tap
 
 Execute a side effect from the success value of the `Micro` effect.
 

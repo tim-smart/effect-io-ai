@@ -1,4 +1,7 @@
-## decrement
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.decrement
 
 Decrements a number by `1`.
 

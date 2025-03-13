@@ -1,4 +1,7 @@
-## encodedSchema
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.encodedSchema
 
 The `encodedSchema` function allows you to extract the `Encoded` portion of a
 schema, creating a new schema that conforms to the properties defined in the

@@ -1,4 +1,7 @@
-## takeRight
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.takeRight
 
 Keep the specified number of characters from the end of a string.
 

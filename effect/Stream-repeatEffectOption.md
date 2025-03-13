@@ -1,4 +1,7 @@
-## repeatEffectOption
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEffectOption
 
 Creates a stream from an effect producing values of type `A` until it fails
 with `None`.

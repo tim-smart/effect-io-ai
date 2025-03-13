@@ -1,4 +1,7 @@
-## makeWithEntry
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.makeWithEntry
 
 Constructs a data source with the specified identifier and method to run
 requests.

@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapError
 
 Transforms the errors emitted by this stream using `f`.
 

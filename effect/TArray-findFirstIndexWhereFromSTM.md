@@ -1,4 +1,7 @@
-## findFirstIndexWhereFromSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findFirstIndexWhereFromSTM
 
 Starting at specified index, get the index of the next entry that matches a
 transactional predicate.

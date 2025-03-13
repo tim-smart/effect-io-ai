@@ -1,4 +1,7 @@
-## recurWhileEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.recurWhileEffect
 
 A schedule that recurs as long as the given effectful predicate evaluates to
 true.

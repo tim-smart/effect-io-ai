@@ -1,4 +1,7 @@
-## AsyncInputProducer
+Package: `effect`<br />
+Module: `SingleProducerAsyncInput`<br />
+
+## SingleProducerAsyncInput.AsyncInputProducer
 
 Producer-side view of `SingleProducerAsyncInput` for variance purposes.
 

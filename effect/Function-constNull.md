@@ -1,4 +1,7 @@
-## constNull
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constNull
 
 A thunk that returns always `null`.
 

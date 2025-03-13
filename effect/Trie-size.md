@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.size
 
 Returns the size of the `Trie` (number of entries in the `Trie`).
 

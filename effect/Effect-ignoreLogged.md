@@ -1,4 +1,7 @@
-## ignoreLogged
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.ignoreLogged
 
 Ignores the result of an effect but logs any failures.
 

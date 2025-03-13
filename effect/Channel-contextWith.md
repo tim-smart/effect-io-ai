@@ -1,4 +1,7 @@
-## contextWith
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.contextWith
 
 Accesses the context of the channel with the specified function.
 

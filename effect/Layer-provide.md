@@ -1,4 +1,7 @@
-## provide
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.provide
 
 Feeds the output services of this builder into the input of the specified
 builder, resulting in a new builder with the inputs of this builder as

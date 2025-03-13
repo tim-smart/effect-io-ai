@@ -1,4 +1,7 @@
-## buildWithScope
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.buildWithScope
 
 Builds a layer into an `Effect` value. Any resources associated with this
 layer will be released when the specified scope is closed unless their scope

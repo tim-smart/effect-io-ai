@@ -1,4 +1,7 @@
-## getRights
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.getRights
 
 Given a record with `Either` values, returns a new record containing only the `Right` values, preserving the original keys.
 

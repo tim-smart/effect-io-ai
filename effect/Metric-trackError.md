@@ -1,4 +1,7 @@
-## trackError
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackError
 
 Returns an aspect that will update this metric with the failure value of
 the effects that it is applied to.

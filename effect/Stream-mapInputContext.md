@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapInputContext
 
 Transforms the context being provided to the stream with the specified
 function.

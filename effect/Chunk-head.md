@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.head
 
 Returns the first element of this chunk if it exists.
 

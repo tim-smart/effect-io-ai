@@ -1,4 +1,7 @@
-## mergeAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mergeAll
 
 Merges an `Iterable<Effect<A, E, R>>` to a single effect.
 

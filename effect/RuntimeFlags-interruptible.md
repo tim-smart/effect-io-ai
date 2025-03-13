@@ -1,4 +1,7 @@
-## interruptible
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.interruptible
 
 Returns true only if the `Interruption` flag is **enabled** and the
 `WindDown` flag is **disabled**.

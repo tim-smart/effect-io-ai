@@ -1,4 +1,7 @@
-## replace
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.replace
 
 Change the element at the specified index, creating a new `Chunk`,
 or returning the input if the index is out of bounds.

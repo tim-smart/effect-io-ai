@@ -1,4 +1,7 @@
-## provideLayer
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.provideLayer
 
 Provides a layer to the channel, which translates it to another level.
 

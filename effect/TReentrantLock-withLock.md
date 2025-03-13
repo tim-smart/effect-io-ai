@@ -1,4 +1,7 @@
-## withLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.withLock
 
 Runs the specified workflow with a lock.
 

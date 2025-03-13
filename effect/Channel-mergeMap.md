@@ -1,4 +1,7 @@
-## mergeMap
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mergeMap
 
 Returns a new channel which creates a new channel for each emitted element
 and merges some of them together. Different merge strategies control what

@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Supervisor`<br />
+
+## Supervisor.fromEffect
 
 Creates a new supervisor that constantly yields effect when polled
 

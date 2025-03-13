@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.scoped
 
 Creates a single-valued stream from a scoped resource.
 

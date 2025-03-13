@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.succeed
 
 Creates a metric that ignores input and produces constant output.
 

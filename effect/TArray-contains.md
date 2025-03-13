@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.contains
 
 Determine if the array contains a specified value.
 

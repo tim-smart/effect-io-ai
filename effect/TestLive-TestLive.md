@@ -1,4 +1,7 @@
-## TestLive
+Package: `effect`<br />
+Module: `TestLive`<br />
+
+## TestLive.TestLive
 
 The `Live` trait provides access to the "live" default Effect services from
 within tests for workflows such as printing test results to the console or

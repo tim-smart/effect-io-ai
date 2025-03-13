@@ -1,4 +1,7 @@
-## failureOption
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.failureOption
 
 Retrieves the first `Fail` error in a `Cause`, if present.
 

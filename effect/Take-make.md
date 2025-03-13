@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.make
 
 Constructs a `Take`.
 

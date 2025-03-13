@@ -1,4 +1,7 @@
-## collectFirst
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.collectFirst
 
 Finds the result of applying a partial function to the first value in its
 domain.

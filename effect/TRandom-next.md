@@ -1,4 +1,7 @@
-## next
+Package: `effect`<br />
+Module: `TRandom`<br />
+
+## TRandom.next
 
 Returns the next number from the pseudo-random number generator.
 

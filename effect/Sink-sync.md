@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.sync
 
 A sink that immediately ends with the specified lazy value.
 

@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.fromIterable
 
 Creates `Intervals` from the specified `Iterable<Interval>`.
 

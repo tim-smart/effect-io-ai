@@ -1,4 +1,7 @@
-## squashWith
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.squashWith
 
 Extracts the most "important" defect from a `Cause`, transforming failures
 into defects using a provided function.

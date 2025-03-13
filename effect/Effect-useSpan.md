@@ -1,4 +1,7 @@
-## useSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.useSpan
 
 Create a new span for tracing, and automatically close it when the effect
 completes.

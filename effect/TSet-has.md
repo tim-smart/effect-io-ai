@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.has
 
 Tests whether or not set contains an element.
 

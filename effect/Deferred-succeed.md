@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.succeed
 
 Completes the `Deferred` with the specified value.
 

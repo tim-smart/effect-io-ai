@@ -1,4 +1,7 @@
-## lowerCase
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.lowerCase
 
 Returns a new config provider that will automatically convert all property
 names to lower case. This can be utilized to adapt the names of

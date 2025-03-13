@@ -1,4 +1,7 @@
-## Unexpected
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Unexpected
 
 Error that occurs when an unexpected key or index is present.
 

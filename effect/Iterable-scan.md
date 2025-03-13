@@ -1,4 +1,7 @@
-## scan
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.scan
 
 Reduce an `Iterable` from the left, keeping all intermediate results instead of only the final result.
 

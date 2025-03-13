@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.min
 
 Take the minimum of two values. If they are considered equal, the first argument is chosen.
 

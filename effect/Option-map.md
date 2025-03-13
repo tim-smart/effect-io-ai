@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.map
 
 Transforms the value inside a `Some` to a new value using the provided
 function, while leaving `None` unchanged.

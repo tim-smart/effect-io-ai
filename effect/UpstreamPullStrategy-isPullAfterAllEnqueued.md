@@ -1,4 +1,7 @@
-## isPullAfterAllEnqueued
+Package: `effect`<br />
+Module: `UpstreamPullStrategy`<br />
+
+## UpstreamPullStrategy.isPullAfterAllEnqueued
 
 Returns `true` if the specified `UpstreamPullStrategy` is a
 `PullAfterAllEnqueued`, `false` otherwise.

@@ -1,4 +1,7 @@
-## isChunk
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.isChunk
 
 Checks if `u` is a `Chunk<unknown>`
 

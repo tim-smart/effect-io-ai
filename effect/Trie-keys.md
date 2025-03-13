@@ -1,4 +1,7 @@
-## keys
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.keys
 
 Returns an `IterableIterator` of the keys within the `Trie`.
 

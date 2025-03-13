@@ -1,4 +1,7 @@
-## setProtocol
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setProtocol
 
 Updates the protocol (e.g., `http`, `https`).
 

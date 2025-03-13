@@ -1,4 +1,7 @@
-## sleeps
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.sleeps
 
 Accesses a `TestClock` instance in the context and returns a list of
 times that effects are scheduled to run.

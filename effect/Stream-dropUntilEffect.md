@@ -1,4 +1,7 @@
-## dropUntilEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.dropUntilEffect
 
 Drops all elements of the stream until the specified effectful predicate
 evaluates to `true`.

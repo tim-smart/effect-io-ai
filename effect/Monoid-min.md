@@ -1,4 +1,7 @@
-## min
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.min
 
 Get a monoid where `combine` will return the minimum, based on the provided bounded order.
 

@@ -1,4 +1,7 @@
-## tag
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.tag
 
 The `Match.tag` function allows pattern matching based on the `_tag` field in
 a [Discriminated Union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions).

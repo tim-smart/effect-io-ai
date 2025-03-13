@@ -1,4 +1,7 @@
-## modifyAt
+Package: `effect`<br />
+Module: `MutableHashMap`<br />
+
+## MutableHashMap.modifyAt
 
 Set or remove the specified key in the `MutableHashMap` using the specified
 update function.

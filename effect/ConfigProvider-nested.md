@@ -1,4 +1,7 @@
-## nested
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.nested
 
 Returns a new config provider that will automatically nest all
 configuration under the specified property name. This can be utilized to

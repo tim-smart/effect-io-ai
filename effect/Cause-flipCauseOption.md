@@ -1,4 +1,7 @@
-## flipCauseOption
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.flipCauseOption
 
 Strips out failures with an error of `None` from a `Cause<Option<E>>`.
 

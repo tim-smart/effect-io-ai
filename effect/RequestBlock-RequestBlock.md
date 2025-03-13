@@ -1,4 +1,7 @@
-## RequestBlock
+Package: `effect`<br />
+Module: `RequestBlock`<br />
+
+## RequestBlock.RequestBlock
 
 `RequestBlock` captures a collection of blocked requests as a data
 structure. By doing this the library is able to preserve information about

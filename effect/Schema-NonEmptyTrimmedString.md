@@ -1,4 +1,7 @@
-## NonEmptyTrimmedString
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.NonEmptyTrimmedString
 
 Useful for validating strings that must contain meaningful characters without
 leading or trailing whitespace.

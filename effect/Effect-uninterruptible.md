@@ -1,4 +1,7 @@
-## uninterruptible
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.uninterruptible
 
 Marks an effect as uninterruptible.
 

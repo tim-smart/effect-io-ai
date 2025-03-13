@@ -1,4 +1,7 @@
-## summarized
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.summarized
 
 Summarize a sink by running an effect when the sink starts and again when
 it completes.

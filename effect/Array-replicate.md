@@ -1,4 +1,7 @@
-## replicate
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.replicate
 
 Return a `NonEmptyArray` containing a value repeated the specified number of times.
 

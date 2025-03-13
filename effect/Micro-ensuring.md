@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.ensuring
 
 Regardless of the result of the this `Micro` effect, run the finalizer effect.
 

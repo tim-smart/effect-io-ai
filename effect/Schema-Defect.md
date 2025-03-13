@@ -1,4 +1,7 @@
-## Defect
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Defect
 
 Defines a schema for handling JavaScript errors (`Error` instances) and other types of defects.
 It decodes objects into Error instances if they match the expected structure (i.e., have a `message` and optionally a `name` and `stack`),

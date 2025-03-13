@@ -1,4 +1,7 @@
-## runtime
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runtime
 
 Returns an effect that accesses the runtime, which can be used to (unsafely)
 execute tasks.

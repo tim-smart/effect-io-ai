@@ -1,4 +1,7 @@
-## eraseLines
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.eraseLines
 
 Erase from the current cursor position up the specified amount of rows.
 

@@ -1,4 +1,7 @@
-## chunk
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.chunk
 
 Constructs a differ that knows how to diff a `Chunk` of values given a
 differ that knows how to diff the values.

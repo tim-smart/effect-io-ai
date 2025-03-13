@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.size
 
 Calculates the number of values in the `HashSet`.
 

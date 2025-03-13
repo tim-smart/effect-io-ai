@@ -1,4 +1,7 @@
-## logAnnotations
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logAnnotations
 
 Retrieves the current log annotations for the current scope.
 

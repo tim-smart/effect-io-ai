@@ -1,4 +1,7 @@
-## fromOption
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.fromOption
 
 Converts an `Option` into a `Micro` effect, that will fail with
 `NoSuchElementException` if the option is `None`. Otherwise, it will succeed with the

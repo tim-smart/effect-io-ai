@@ -1,4 +1,7 @@
-## dedupeAdjacent
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.dedupeAdjacent
 
 Deduplicates adjacent elements that are identical.
 

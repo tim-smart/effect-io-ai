@@ -1,4 +1,7 @@
-## InterruptedException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.InterruptedException
 
 An error representing fiber interruption.
 

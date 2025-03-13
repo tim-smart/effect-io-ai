@@ -1,4 +1,7 @@
-## onError
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.onError
 
 Runs the specified effect if this stream fails, providing the error to the
 effect if it exists.

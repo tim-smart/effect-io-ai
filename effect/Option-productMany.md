@@ -1,4 +1,7 @@
-## productMany
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.productMany
 
 Combines an `Option` with a collection of `Option`s into a single `Option`
 containing a tuple of their values if all are `Some`.

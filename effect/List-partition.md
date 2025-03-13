@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.partition
 
 Partition a list into two lists, where the first list contains all elements
 that did not satisfy the specified predicate, and the second list contains

@@ -1,4 +1,7 @@
-## tapBoth
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tapBoth
 
 Returns a stream that effectfully "peeks" at the failure or success of
 the stream.

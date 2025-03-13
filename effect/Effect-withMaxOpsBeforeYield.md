@@ -1,4 +1,7 @@
-## withMaxOpsBeforeYield
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withMaxOpsBeforeYield
 
 Sets the maximum number of operations before yield by the default schedulers
 

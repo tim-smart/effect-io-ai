@@ -1,4 +1,7 @@
-## bothInOut
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.bothInOut
 
 Combines two schedules, preserving both their inputs and outputs.
 

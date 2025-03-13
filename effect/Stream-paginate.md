@@ -1,4 +1,7 @@
-## paginate
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.paginate
 
 Like `Stream.unfold`, but allows the emission of values to end one step further
 than the unfolding of the state. This is useful for embedding paginated

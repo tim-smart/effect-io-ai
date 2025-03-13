@@ -1,4 +1,7 @@
-## catchAllDefect
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchAllDefect
 
 Catch any unexpected errors of the given `Micro` effect, allowing you to recover from them.
 

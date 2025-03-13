@@ -1,4 +1,7 @@
-## getFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.getFiberRefs
 
 Returns a collection of all `FiberRef` values for the fiber running this
 effect.

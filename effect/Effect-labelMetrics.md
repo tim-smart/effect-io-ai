@@ -1,4 +1,7 @@
-## labelMetrics
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.labelMetrics
 
 Adds labels to metrics within an effect using `MetricLabel` objects.
 

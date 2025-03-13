@@ -1,4 +1,7 @@
-## emitCollect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.emitCollect
 
 Returns a new channel that collects the output and terminal value of this
 channel, which it then writes as output of the returned channel.

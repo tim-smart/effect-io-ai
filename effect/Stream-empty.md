@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.empty
 
 The empty stream.
 

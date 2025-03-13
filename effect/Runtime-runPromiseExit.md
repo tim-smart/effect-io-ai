@@ -1,4 +1,7 @@
-## runPromiseExit
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runPromiseExit
 
 Runs the `Effect`, returning a JavaScript `Promise` that will be resolved
 with the `Exit` state of the effect once the effect has been executed.

@@ -1,4 +1,7 @@
-## defined
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.defined
 
 Matches any defined (non-null and non-undefined) value.
 

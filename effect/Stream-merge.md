@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.merge
 
 Merges this stream and the specified stream together.
 

@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.empty
 
 An empty patch that describes no changes.
 

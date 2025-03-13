@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.toArray
 
 Collects all elements into a chunk.
 

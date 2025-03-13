@@ -1,4 +1,7 @@
-## fiberRefs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.fiberRefs
 
 Returns a set of each `FiberRef` in this collection.
 

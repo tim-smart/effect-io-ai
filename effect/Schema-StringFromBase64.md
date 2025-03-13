@@ -1,4 +1,7 @@
-## StringFromBase64
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.StringFromBase64
 
 Decodes a base64 (RFC4648) encoded string into a UTF-8 string.
 

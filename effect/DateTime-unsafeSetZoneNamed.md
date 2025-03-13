@@ -1,4 +1,7 @@
-## unsafeSetZoneNamed
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.unsafeSetZoneNamed
 
 Set the time zone of a `DateTime` from an IANA time zone identifier. If the
 time zone is invalid, an `IllegalArgumentException` will be thrown.

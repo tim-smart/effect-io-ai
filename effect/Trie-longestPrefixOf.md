@@ -1,4 +1,7 @@
-## longestPrefixOf
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.longestPrefixOf
 
 Returns the longest key/value in the `Trie`
 that is a prefix of that `key` if it exists, `None` otherwise.

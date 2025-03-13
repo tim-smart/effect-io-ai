@@ -1,4 +1,7 @@
-## when
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.when
 
 Returns the specified stream if the given condition is satisfied, otherwise
 returns an empty stream.

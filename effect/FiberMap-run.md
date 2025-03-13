@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.run
 
 Run an Effect and add the forked fiber to the FiberMap.
 When the fiber completes, it will be removed from the FiberMap.

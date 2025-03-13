@@ -1,4 +1,7 @@
-## group
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.group
 
 Create a `Layer` that will implement all the endpoints in an `HttpApi`.
 

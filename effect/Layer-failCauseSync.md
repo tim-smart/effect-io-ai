@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.failCauseSync
 
 Constructs a layer that fails with the specified cause.
 

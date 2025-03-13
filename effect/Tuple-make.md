@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.make
 
 Constructs a new tuple from the provided values.
 

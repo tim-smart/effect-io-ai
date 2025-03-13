@@ -1,4 +1,7 @@
-## mapOut
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapOut
 
 Maps the output of this channel using the specified function.
 

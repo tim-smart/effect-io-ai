@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.union
 
 Creates a union of two arrays, removing duplicates.
 

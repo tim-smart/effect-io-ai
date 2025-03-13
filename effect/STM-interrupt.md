@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.interrupt
 
 Interrupts the fiber running the effect.
 

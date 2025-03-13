@@ -1,4 +1,7 @@
-## forEachWhile
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.forEachWhile
 
 A sink that executes the provided effectful function for every element fed
 to it until `f` evaluates to `false`.

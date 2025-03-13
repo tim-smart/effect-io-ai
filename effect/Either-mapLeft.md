@@ -1,4 +1,7 @@
-## mapLeft
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.mapLeft
 
 Maps the `Left` side of an `Either` value to a new `Either` value.
 

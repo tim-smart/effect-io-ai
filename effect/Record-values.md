@@ -1,4 +1,7 @@
-## values
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.values
 
 Retrieve the values of a given record as an array.
 

@@ -1,4 +1,7 @@
-## nest
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.nest
 
 Lays out a document with the current nesting level (indentation
 of the following lines) increased by the specified `indent`.

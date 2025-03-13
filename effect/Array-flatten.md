@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.flatten
 
 Combines multiple arrays into a single array by concatenating all elements
 from each nested array. This function ensures that the structure of nested

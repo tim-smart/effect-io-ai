@@ -1,4 +1,7 @@
-## fromFiber
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fromFiber
 
 Creates an `Effect` value that represents the exit value of the specified
 fiber.

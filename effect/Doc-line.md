@@ -1,4 +1,7 @@
-## line
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.line
 
 The `line` document advances to the next line and indents to the current
 nesting level. However, `line` will behave like `space` if the line break is

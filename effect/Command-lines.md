@@ -1,4 +1,7 @@
-## lines
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.lines
 
 Runs the command returning the output as an array of lines with the specified
 encoding.

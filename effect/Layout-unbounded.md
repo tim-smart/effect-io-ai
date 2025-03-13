@@ -1,4 +1,7 @@
-## unbounded
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.unbounded
 
 The `unbounded` layout algorithm will lay out a document an `Unbounded`
 page width.

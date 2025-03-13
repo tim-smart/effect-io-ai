@@ -1,4 +1,7 @@
-## Pods
+Package: `@effect/cluster`<br />
+Module: `Pods`<br />
+
+## Pods.Pods
 
 An interface to communicate with remote pods.
 This is used by the Shard Manager for assigning and unassigning shards.

@@ -1,4 +1,7 @@
-## provideSomeLayer
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.provideSomeLayer
 
 Splits the context into two parts, providing one part using the
 specified layer and leaving the remainder `Env0`.

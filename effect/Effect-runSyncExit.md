@@ -1,4 +1,7 @@
-## runSyncExit
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runSyncExit
 
 Runs an effect synchronously and returns the result as an `Exit` type.
 

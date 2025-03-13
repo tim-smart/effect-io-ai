@@ -1,4 +1,7 @@
-## dieMessage
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.dieMessage
 
 Kills the fiber running the effect with a `Cause.RuntimeException` that
 contains the specified message.

@@ -1,4 +1,7 @@
-## splitWhere
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.splitWhere
 
 Splits the sink on the specified predicate, returning a new sink that
 consumes elements until an element after the first satisfies the specified

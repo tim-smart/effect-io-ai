@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.ensuring
 
 Attaches a finalizer to a schedule that runs when the schedule completes.
 

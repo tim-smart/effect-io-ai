@@ -1,4 +1,7 @@
-## orElseSucceed
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orElseSucceed
 
 Tries this effect first, and if it fails or retries, succeeds with the
 specified value.

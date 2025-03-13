@@ -1,4 +1,7 @@
-## within
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.within
 
 Returns a new config provider that transforms the config provider with the
 specified function within the specified path.

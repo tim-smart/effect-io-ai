@@ -1,4 +1,7 @@
-## Parallel
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Parallel
 
 Represents parallel composition of two `Cause`s.
 

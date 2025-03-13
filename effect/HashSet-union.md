@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.union
 
 Computes the set union `(`self` + `that`)` between this `HashSet` and the
 specified `Iterable<A>`.

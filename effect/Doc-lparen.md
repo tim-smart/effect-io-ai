@@ -1,4 +1,7 @@
-## lparen
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.lparen
 
 A document containing a single `(` character.
 

@@ -1,4 +1,7 @@
-## aggregateWithin
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.aggregateWithin
 
 Like `aggregateWithinEither`, but only returns the `Right` results.
 

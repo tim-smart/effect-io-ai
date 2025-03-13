@@ -1,4 +1,7 @@
-## Reference
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.Reference
 
 Creates a context tag with a default value.
 

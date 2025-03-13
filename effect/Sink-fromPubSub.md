@@ -1,4 +1,7 @@
-## fromPubSub
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fromPubSub
 
 Create a sink which publishes each element to the specified `PubSub`.
 

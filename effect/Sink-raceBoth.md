@@ -1,4 +1,7 @@
-## raceBoth
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.raceBoth
 
 Runs both sinks in parallel on the input, returning the result or the error
 from the one that finishes first.

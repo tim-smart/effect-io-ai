@@ -1,4 +1,7 @@
-## fileContent
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.fileContent
 
 Creates a parameter expecting path to a file and reads its contents.
 

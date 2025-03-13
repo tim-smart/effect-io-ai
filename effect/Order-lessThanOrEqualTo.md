@@ -1,4 +1,7 @@
-## lessThanOrEqualTo
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.lessThanOrEqualTo
 
 Test whether one value is _non-strictly less than_ another.
 

@@ -1,4 +1,7 @@
-## Interruption
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.Interruption
 
 The interruption flag determines whether or not the Effect runtime system will
 interrupt a fiber.

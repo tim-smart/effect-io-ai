@@ -1,4 +1,7 @@
-## fromOption
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.fromOption
 
 Lifts an `Option` into a `STM`.
 

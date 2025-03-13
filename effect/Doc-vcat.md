@@ -1,4 +1,7 @@
-## vcat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.vcat
 
 The `vcat` combinator concatenates all documents in a collection vertically.
 If the output is grouped then the line breaks are removed.

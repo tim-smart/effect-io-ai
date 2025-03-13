@@ -1,4 +1,7 @@
-## layer
+Package: `@effect/platform-browser`<br />
+Module: `Permissions`<br />
+
+## Permissions.layer
 
 A layer that directly interfaces with the `navigator.permissions` api
 

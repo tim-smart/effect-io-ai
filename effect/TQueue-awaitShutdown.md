@@ -1,4 +1,7 @@
-## awaitShutdown
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.awaitShutdown
 
 Waits until the queue is shutdown. The `STM` returned by this method will
 not resume until the queue has been shutdown. If the queue is already

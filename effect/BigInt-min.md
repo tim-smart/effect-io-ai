@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.min
 
 Returns the minimum between two `bigint`s.
 

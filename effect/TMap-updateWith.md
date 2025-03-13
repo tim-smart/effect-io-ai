@@ -1,4 +1,7 @@
-## updateWith
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.updateWith
 
 Updates the mapping for the specified key with the specified function,
 which takes the current value of the key as an input, if it exists, and

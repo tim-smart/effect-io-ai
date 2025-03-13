@@ -1,4 +1,7 @@
-## resetWhen
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.resetWhen
 
 Resets the schedule when the specified predicate on the schedule output
 evaluates to `true`.

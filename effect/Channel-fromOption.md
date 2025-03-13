@@ -1,4 +1,7 @@
-## fromOption
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromOption
 
 Construct a `Channel` from an `Option`.
 

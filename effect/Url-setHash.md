@@ -1,4 +1,7 @@
-## setHash
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setHash
 
 Updates the hash fragment of the URL.
 

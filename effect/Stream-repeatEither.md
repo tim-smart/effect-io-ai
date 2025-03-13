@@ -1,4 +1,7 @@
-## repeatEither
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEither
 
 Repeats the entire stream using the specified schedule. The stream will
 execute normally, and then repeat again according to the provided schedule.

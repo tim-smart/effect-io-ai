@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getEquivalence
 
 Creates an `Equivalence` instance for comparing `Option` values, using a
 provided `Equivalence` for the inner type.

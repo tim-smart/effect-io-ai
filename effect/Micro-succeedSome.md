@@ -1,4 +1,7 @@
-## succeedSome
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.succeedSome
 
 Creates a `Micro` effect that will succeed with the value wrapped in `Some`.
 

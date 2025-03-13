@@ -1,4 +1,7 @@
-## tailNonEmpty
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.tailNonEmpty
 
 Returns every elements after the first.
 

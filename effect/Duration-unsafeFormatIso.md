@@ -1,4 +1,7 @@
-## unsafeFormatIso
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.unsafeFormatIso
 
 Formats a Duration into an ISO8601 duration string.
 

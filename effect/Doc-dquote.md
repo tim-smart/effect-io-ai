@@ -1,4 +1,7 @@
-## dquote
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.dquote
 
 A document containing a single `"` character.
 

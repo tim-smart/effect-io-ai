@@ -1,4 +1,7 @@
-## custom
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.custom
 
 Creates a custom `Prompt` from the specified initial state and handlers.
 

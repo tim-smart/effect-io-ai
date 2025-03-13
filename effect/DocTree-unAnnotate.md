@@ -1,4 +1,7 @@
-## unAnnotate
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.unAnnotate
 
 Remove all annotations from a `DocTree`.
 

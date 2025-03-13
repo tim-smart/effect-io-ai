@@ -1,4 +1,7 @@
-## UnknownExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.UnknownExceptionTypeId
 
 A unique symbol identifying the `UnknownException` type.
 

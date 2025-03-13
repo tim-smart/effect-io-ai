@@ -1,4 +1,7 @@
-## withCookiesRef
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.withCookiesRef
 
 Associates a `Ref` of cookies with the client for handling cookies across requests.
 

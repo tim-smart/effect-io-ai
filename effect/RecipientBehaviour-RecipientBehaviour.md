@@ -1,4 +1,7 @@
-## RecipientBehaviour
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviour`<br />
+
+## RecipientBehaviour.RecipientBehaviour
 
 A RecipientBehaviour describes how a specific RecipientType should behave.
 This is the actual implementation of what an entity should do upon receiving a Msg,

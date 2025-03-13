@@ -1,4 +1,7 @@
-## withCurrentZoneLocal
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.withCurrentZoneLocal
 
 Provide the `CurrentTimeZone` to an effect, using the system's local time
 zone.

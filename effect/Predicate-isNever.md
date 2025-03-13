@@ -1,4 +1,7 @@
-## isNever
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNever
 
 A guard that always fails.
 

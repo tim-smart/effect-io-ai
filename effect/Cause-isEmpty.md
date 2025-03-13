@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isEmpty
 
 Checks if a `Cause` is entirely empty.
 

@@ -1,4 +1,7 @@
-## MicroExit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.MicroExit
 
 The `MicroExit` type is used to represent the result of a `Micro` computation. It
 can either be successful, containing a value of type `A`, or it can fail,

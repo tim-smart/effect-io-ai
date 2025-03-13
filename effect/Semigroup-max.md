@@ -1,4 +1,7 @@
-## max
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.max
 
 `Semigroup` that returns last maximum of elements.
 

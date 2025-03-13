@@ -1,4 +1,7 @@
-## toRefinement
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.toRefinement
 
 Converts an `Option`-returning function into a type guard.
 

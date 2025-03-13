@@ -1,4 +1,7 @@
-## intoDeferred
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.intoDeferred
 
 Converts an `Effect` into an operation that completes a `Deferred` with its result.
 

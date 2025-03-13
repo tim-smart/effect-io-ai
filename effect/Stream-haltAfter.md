@@ -1,4 +1,7 @@
-## haltAfter
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.haltAfter
 
 Specialized version of haltWhen which halts the evaluation of this stream
 after the given duration.

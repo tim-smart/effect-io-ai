@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.every
 
 Check if a predicate holds true for every `List` element.
 

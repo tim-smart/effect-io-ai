@@ -1,4 +1,7 @@
-## appendAll
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.appendAll
 
 Concatenates two chunks, combining their elements.
 If either chunk is non-empty, the result is also a non-empty chunk.

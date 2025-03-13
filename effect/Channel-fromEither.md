@@ -1,4 +1,7 @@
-## fromEither
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromEither
 
 Constructs a channel from an `Either`.
 

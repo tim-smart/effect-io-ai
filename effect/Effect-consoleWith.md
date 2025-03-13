@@ -1,4 +1,7 @@
-## consoleWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.consoleWith
 
 Retreives the `Console` service from the context and provides it to the
 specified effectful function.

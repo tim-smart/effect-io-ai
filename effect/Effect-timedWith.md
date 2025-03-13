@@ -1,4 +1,7 @@
-## timedWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timedWith
 
 Executes an effect and measures its execution time using a custom clock.
 

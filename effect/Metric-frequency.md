@@ -1,4 +1,7 @@
-## frequency
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.frequency
 
 Creates a Frequency metric to count occurrences of events.
 Frequency metrics are used to count the number of times specific events or incidents occur.

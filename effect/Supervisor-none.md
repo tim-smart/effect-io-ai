@@ -1,4 +1,7 @@
-## none
+Package: `effect`<br />
+Module: `Supervisor`<br />
+
+## Supervisor.none
 
 A supervisor that doesn't do anything in response to supervision events.
 

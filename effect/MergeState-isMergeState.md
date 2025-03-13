@@ -1,4 +1,7 @@
-## isMergeState
+Package: `effect`<br />
+Module: `MergeState`<br />
+
+## MergeState.isMergeState
 
 Returns `true` if the specified value is a `MergeState`, `false` otherwise.
 

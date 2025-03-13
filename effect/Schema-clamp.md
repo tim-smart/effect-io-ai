@@ -1,4 +1,7 @@
-## clamp
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.clamp
 
 Clamps a number between a minimum and a maximum value.
 

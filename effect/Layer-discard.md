@@ -1,4 +1,7 @@
-## discard
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.discard
 
 Replaces the layer's output with `void` and includes the layer only for its
 side-effects.

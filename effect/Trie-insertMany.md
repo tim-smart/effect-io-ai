@@ -1,4 +1,7 @@
-## insertMany
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.insertMany
 
 Insert multiple entries in the `Trie` at once.
 

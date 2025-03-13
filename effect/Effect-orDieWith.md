@@ -1,4 +1,7 @@
-## orDieWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.orDieWith
 
 Converts an effect's failure into a fiber termination with a custom error.
 

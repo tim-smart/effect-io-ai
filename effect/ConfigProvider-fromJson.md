@@ -1,4 +1,7 @@
-## fromJson
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.fromJson
 
 Constructs a new `ConfigProvider` from a JSON object.
 

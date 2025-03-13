@@ -1,4 +1,7 @@
-## pipeToOrFail
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.pipeToOrFail
 
 Returns a new channel that pipes the output of this channel into the
 specified channel and preserves this channel's failures without providing

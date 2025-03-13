@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `ManagedRuntime`<br />
+
+## ManagedRuntime.make
 
 Convert a Layer into an ManagedRuntime, that can be used to run Effect's using
 your services.

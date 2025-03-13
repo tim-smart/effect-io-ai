@@ -1,4 +1,7 @@
-## transform
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.transform
 
 Atomically updates all bindings using a pure function.
 

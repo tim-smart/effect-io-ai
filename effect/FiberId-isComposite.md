@@ -1,4 +1,7 @@
-## isComposite
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.isComposite
 
 Returns `true` if the `FiberId` is a `Composite`, `false` otherwise.
 

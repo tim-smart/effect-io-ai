@@ -1,4 +1,7 @@
-## updateService
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.updateService
 
 Updates the specified service within the context of the `Stream`.
 

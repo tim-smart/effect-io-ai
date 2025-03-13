@@ -1,4 +1,7 @@
-## succeedNone
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.succeedNone
 
 Returns an effect which succeeds with `None`.
 

@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.prepend
 
 Prepends the specified element to the beginning of the list.
 

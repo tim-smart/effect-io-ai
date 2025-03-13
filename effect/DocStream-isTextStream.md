@@ -1,4 +1,7 @@
-## isTextStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isTextStream
 
 Returns `true` if the specified `DocStream` is a `TextStream`, `false` otherwise.
 

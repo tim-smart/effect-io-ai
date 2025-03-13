@@ -1,4 +1,7 @@
-## unsafeMakeCookie
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.unsafeMakeCookie
 
 Create a new cookie, throwing an error if invalid
 

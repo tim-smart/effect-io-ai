@@ -1,4 +1,7 @@
-## isList
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.isList
 
 Returns `true` if the specified value is a `List`, `false` otherwise.
 

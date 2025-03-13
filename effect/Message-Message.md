@@ -1,4 +1,7 @@
-## Message
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message
 
 A Message is a request for an entity that will process it.
 A Message also has a PrimaryKey so that the receiver is eventually able to detect duplicated messages.

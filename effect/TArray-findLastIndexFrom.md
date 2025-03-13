@@ -1,4 +1,7 @@
-## findLastIndexFrom
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findLastIndexFrom
 
 Get the last index of a specific value in the array bounded above by a
 specific index.

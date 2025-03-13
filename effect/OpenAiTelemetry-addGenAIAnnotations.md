@@ -1,4 +1,7 @@
-## addGenAIAnnotations
+Package: `@effect/ai-openai`<br />
+Module: `OpenAiTelemetry`<br />
+
+## OpenAiTelemetry.addGenAIAnnotations
 
 Applies the specified OpenAi GenAI telemetry attributes to the provided
 `Span`.

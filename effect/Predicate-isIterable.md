@@ -1,4 +1,7 @@
-## isIterable
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isIterable
 
 A guard that succeeds when the input is an `Iterable`.
 

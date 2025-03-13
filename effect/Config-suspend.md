@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.suspend
 
 Lazily constructs a config.
 

@@ -1,4 +1,7 @@
-## isSTM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.isSTM
 
 Returns `true` if the provided value is an `STM`, `false` otherwise.
 

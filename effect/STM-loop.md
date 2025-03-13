@@ -1,4 +1,7 @@
-## loop
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.loop
 
 Loops with the specified transactional function, collecting the results
 into a list. The moral equivalent of:

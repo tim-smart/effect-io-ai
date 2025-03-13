@@ -1,4 +1,7 @@
-## addGenAIAnnotations
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.addGenAIAnnotations
 
 Applies the specified GenAI telemetry attributes to the provided `Span`.
 

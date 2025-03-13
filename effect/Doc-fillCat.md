@@ -1,4 +1,7 @@
-## fillCat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.fillCat
 
 The `fillCat` combinator concatenates all documents in a collection
 horizontally by placing a `empty` between each pair of documents as long as

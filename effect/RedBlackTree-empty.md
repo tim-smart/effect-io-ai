@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.empty
 
 Creates an empty `RedBlackTree`.
 

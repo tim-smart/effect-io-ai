@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromIterable
 
 Creates a new `Stream` from an iterable collection of values.
 

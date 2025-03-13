@@ -1,4 +1,7 @@
-## splitAt
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.splitAt
 
 Splits the specified list into two lists at the specified index.
 

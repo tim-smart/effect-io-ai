@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.map
 
 Returns a new metric that is powered by this one, but which outputs a new
 state type, determined by transforming the state type of this metric by the

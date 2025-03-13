@@ -1,4 +1,7 @@
-## ignore
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.ignore
 
 Discards both the success and failure values of an effect.
 

@@ -1,4 +1,7 @@
-## fromQueue
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromQueue
 
 Construct a `Channel` from a `Queue`.
 

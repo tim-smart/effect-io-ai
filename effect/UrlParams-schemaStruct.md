@@ -1,4 +1,7 @@
-## schemaStruct
+Package: `@effect/platform`<br />
+Module: `UrlParams`<br />
+
+## UrlParams.schemaStruct
 
 Extract schema from all key-value pairs in the given `UrlParams`.
 

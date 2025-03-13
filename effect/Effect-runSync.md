@@ -1,4 +1,7 @@
-## runSync
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runSync
 
 Executes an effect synchronously, running it immediately and returning the
 result.

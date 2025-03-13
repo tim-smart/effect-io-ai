@@ -1,4 +1,7 @@
-## Request.OptionalResult
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Request.OptionalResult
 
 A utility type to extract the optional result type from a `Request`.
 

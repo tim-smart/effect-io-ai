@@ -1,4 +1,7 @@
-## scope
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.scope
 
 A layer that constructs a scope and closes it when the workflow the layer
 is provided to completes execution, whether by success, failure, or

@@ -1,4 +1,7 @@
-## layer
+Package: `@effect/platform-node-shared`<br />
+Module: `ParcelWatcher`<br />
+
+## ParcelWatcher.layer
 
 You can provide this Layer to use `@parcel/watcher` as the backend for watching files.
 

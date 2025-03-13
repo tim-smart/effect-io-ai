@@ -1,4 +1,7 @@
-## reflect
+Package: `@effect/platform`<br />
+Module: `HttpApi`<br />
+
+## HttpApi.reflect
 
 Extract metadata from an `HttpApi`, which can be used to generate documentation
 or other tooling.

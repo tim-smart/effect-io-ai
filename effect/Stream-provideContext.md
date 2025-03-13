@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.provideContext
 
 Provides the stream with its required context, which eliminates its
 dependency on `R`.

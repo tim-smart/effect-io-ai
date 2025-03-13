@@ -1,4 +1,7 @@
-## mapBothEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.mapBothEffect
 
 Transforms both the input and output of a schedule using effectful
 computations.

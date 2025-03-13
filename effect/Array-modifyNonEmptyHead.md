@@ -1,4 +1,7 @@
-## modifyNonEmptyHead
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.modifyNonEmptyHead
 
 Apply a function to the head, creating a new `NonEmptyReadonlyArray`.
 

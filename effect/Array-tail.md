@@ -1,4 +1,7 @@
-## tail
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.tail
 
 Get all but the first element of an `Iterable`, creating a new `Array`, or `None` if the `Iterable` is empty.
 

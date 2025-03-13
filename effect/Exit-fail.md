@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.fail
 
 Constructs a new `Exit.Failure` from the specified recoverable error of type
 `E`.

@@ -1,4 +1,7 @@
-## filterEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.filterEffect
 
 Effectfully filters the elements emitted by this stream.
 

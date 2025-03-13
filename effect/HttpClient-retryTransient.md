@@ -1,4 +1,7 @@
-## retryTransient
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.retryTransient
 
 Retries common transient errors, such as rate limiting, timeouts or network issues.
 

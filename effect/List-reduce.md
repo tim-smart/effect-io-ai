@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.reduce
 
 Folds over the elements of the list using the specified function, using the
 specified initial value.

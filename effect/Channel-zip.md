@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.zip
 
 Returns a new channel that is the sequential composition of this channel
 and the specified channel. The returned channel terminates with a tuple of

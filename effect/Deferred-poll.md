@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.poll
 
 Returns a `Some<Effect<A, E, R>>` from the `Deferred` if this `Deferred` has
 already been completed, `None` otherwise.

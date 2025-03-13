@@ -1,4 +1,7 @@
-## Lookup
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.Lookup
 
 A `Lookup` represents a lookup function that, given a key of type `Key`, can
 return an effect that will either produce a value of type `Value` or fail

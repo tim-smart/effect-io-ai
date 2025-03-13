@@ -1,4 +1,7 @@
-## timeout
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timeout
 
 Adds a time limit to an effect, triggering a timeout if the effect exceeds
 the duration.

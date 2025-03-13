@@ -1,4 +1,7 @@
-## ShardsUnassigned
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.ShardsUnassigned
 
 Constructs the event that occurs when shards are unassigned to a Pod
 

@@ -1,4 +1,7 @@
-## subtract
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.subtract
 
 Provides a subtraction operation on `bigint`s.
 

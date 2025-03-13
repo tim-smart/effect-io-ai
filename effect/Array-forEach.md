@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.forEach
 
 Performs a side-effect for each element of the `Iterable`.
 

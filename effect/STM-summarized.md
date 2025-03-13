@@ -1,4 +1,7 @@
-## summarized
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.summarized
 
 Summarizes a `STM` effect by computing a provided value before and after
 execution, and then combining the values to produce a summary, together

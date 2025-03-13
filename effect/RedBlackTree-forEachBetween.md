@@ -1,4 +1,7 @@
-## forEachBetween
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.forEachBetween
 
 Visit each node of the tree in order with key lower than max and greater
 than or equal to min.

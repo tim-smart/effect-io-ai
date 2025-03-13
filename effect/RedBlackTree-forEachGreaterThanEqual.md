@@ -1,4 +1,7 @@
-## forEachGreaterThanEqual
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.forEachGreaterThanEqual
 
 Visit each node of the tree in order with key greater then or equal to max.
 

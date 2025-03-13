@@ -1,4 +1,7 @@
-## isNonEmpty
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.isNonEmpty
 
 Returns `true` if this `Intervals` is non-empty, `false` otherwise.
 

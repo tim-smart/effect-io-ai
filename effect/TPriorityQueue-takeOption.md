@@ -1,4 +1,7 @@
-## takeOption
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.takeOption
 
 Takes a value from the queue, returning `None` if there is not a value in
 the queue.

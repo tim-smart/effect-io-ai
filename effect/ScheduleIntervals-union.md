@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.union
 
 Computes the union of this `Intervals` and  that `Intervals`
 

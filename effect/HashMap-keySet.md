@@ -1,4 +1,7 @@
-## keySet
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.keySet
 
 Returns a `HashSet` of keys within the `HashMap`.
 

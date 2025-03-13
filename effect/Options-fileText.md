@@ -1,4 +1,7 @@
-## fileText
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.fileText
 
 Creates a parameter expecting path to a file and reads its contents.
 

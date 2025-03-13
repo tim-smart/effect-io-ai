@@ -1,4 +1,7 @@
-## unwrapScopedWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.unwrapScopedWith
 
 Creates a stream produced from a function which receives a `Scope` and
 returns an `Effect`. The resulting stream will emit a single element, which

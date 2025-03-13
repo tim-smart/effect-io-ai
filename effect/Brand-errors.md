@@ -1,4 +1,7 @@
-## errors
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.errors
 
 Takes a variable number of `BrandErrors` and returns a single `BrandErrors` that contains all refinement errors.
 

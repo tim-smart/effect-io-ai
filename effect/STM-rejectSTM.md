@@ -1,4 +1,7 @@
-## rejectSTM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.rejectSTM
 
 Continue with the returned computation if the specified partial function
 matches, translating the successful match into a failure, otherwise continue

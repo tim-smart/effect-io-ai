@@ -1,4 +1,7 @@
-## concatAll
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.concatAll
 
 Concat sequentially a channel of channels.
 

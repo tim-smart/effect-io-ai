@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.empty
 
 The empty `RuntimeFlagsPatch`.
 

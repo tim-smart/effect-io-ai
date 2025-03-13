@@ -1,4 +1,7 @@
-## boolean
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.boolean
 
 Matches values of type `boolean`.
 

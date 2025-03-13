@@ -1,4 +1,7 @@
-## trackDuration
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackDuration
 
 Returns an aspect that will update this metric with the duration that the
 effect takes to execute. To call this method, the input type of the metric

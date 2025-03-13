@@ -1,4 +1,7 @@
-## string
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.string
 
 Matches values of type `string`.
 

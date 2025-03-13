@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.tap
 
 Applies the provided function `f` to the value of the `Option` if it is
 `Some` and returns the original `Option`, unless `f` returns `None`, in which

@@ -1,4 +1,7 @@
-## runScoped
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.runScoped
 
 Run the channel until it finishes with a done value or fails with an error.
 The channel must not read any input or write any output.

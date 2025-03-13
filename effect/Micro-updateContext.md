@@ -1,4 +1,7 @@
-## updateContext
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.updateContext
 
 Update the Context with the given mapping function.
 

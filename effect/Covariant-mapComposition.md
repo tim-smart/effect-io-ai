@@ -1,4 +1,7 @@
-## mapComposition
+Package: `@effect/typeclass`<br />
+Module: `Covariant`<br />
+
+## Covariant.mapComposition
 
 Returns a default `map` composition.
 

@@ -1,4 +1,7 @@
-## SemigroupXor
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.SemigroupXor
 
 `boolean` semigroup under exclusive disjunction.
 

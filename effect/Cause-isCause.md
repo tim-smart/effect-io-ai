@@ -1,4 +1,7 @@
-## isCause
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isCause
 
 Checks if a value is a `Cause`.
 

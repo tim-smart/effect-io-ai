@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.zip
 
 Zips this chunk pointwise with the specified chunk.
 

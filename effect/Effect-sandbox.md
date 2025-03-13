@@ -1,4 +1,7 @@
-## sandbox
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.sandbox
 
 Transforms an effect to expose detailed error causes.
 

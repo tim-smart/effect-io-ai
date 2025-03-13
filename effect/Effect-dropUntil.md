@@ -1,4 +1,7 @@
-## dropUntil
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.dropUntil
 
 Drops elements until the effectful predicate returns `true`.
 

@@ -1,4 +1,7 @@
-## decodeUriComponent
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeUriComponent
 
 Decodes a URI component `string` into a UTF-8 `string`.
 

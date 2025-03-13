@@ -1,4 +1,7 @@
-## when
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.when
 
 The moral equivalent of `if (p) exp`.
 

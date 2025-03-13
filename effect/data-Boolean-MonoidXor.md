@@ -1,4 +1,7 @@
-## MonoidXor
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.MonoidXor
 
 `boolean` monoid under exclusive disjunction, see also `SemigroupXor`.
 

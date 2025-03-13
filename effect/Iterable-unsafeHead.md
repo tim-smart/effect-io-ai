@@ -1,4 +1,7 @@
-## unsafeHead
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.unsafeHead
 
 Get the first element of a `Iterable`, or throw an error if the `Iterable` is empty.
 

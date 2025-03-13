@@ -1,4 +1,7 @@
-## intersectionWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.intersectionWith
 
 Creates an `Array` of unique values that are included in all given `Iterable`s using the provided `isEquivalent` function.
 The order and references of result values are determined by the first `Iterable`.

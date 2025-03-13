@@ -1,4 +1,7 @@
-## interruptWhen
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.interruptWhen
 
 Interrupts the evaluation of this stream when the provided effect
 completes. The given effect will be forked as part of this stream, and its

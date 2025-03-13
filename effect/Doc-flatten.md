@@ -1,4 +1,7 @@
-## flatten
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.flatten
 
 Flattens a document but does not report changes.
 

@@ -1,4 +1,7 @@
-## clamp
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.clamp
 
 Clamp a value between a minimum and a maximum.
 

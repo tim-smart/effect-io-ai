@@ -1,4 +1,7 @@
-## refresh
+Package: `effect`<br />
+Module: `Resource`<br />
+
+## Resource.refresh
 
 Refreshes the cache. This method will not return until either the refresh
 is successful, or the refresh operation fails.

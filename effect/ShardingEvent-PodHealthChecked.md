@@ -1,4 +1,7 @@
-## PodHealthChecked
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.PodHealthChecked
 
 Constructs the event that occurs when the health of a Pod has been checked
 

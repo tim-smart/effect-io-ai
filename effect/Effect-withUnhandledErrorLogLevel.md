@@ -1,4 +1,7 @@
-## withUnhandledErrorLogLevel
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withUnhandledErrorLogLevel
 
 Configures whether child fibers will log unhandled errors and at what log
 level.

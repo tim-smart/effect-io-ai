@@ -1,4 +1,7 @@
-## isSuspended
+Package: `effect`<br />
+Module: `FiberStatus`<br />
+
+## FiberStatus.isSuspended
 
 Returns `true` if the specified `FiberStatus` is `Suspended`, `false`
 otherwise.

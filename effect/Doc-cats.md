@@ -1,4 +1,7 @@
-## cats
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.cats
 
 The `cats` combinator will attempt to lay out a collection of documents
 separated by nothing. If the output does not fit the page, then the documents

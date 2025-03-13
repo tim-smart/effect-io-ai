@@ -1,4 +1,7 @@
-## httpApp
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.httpApp
 
 Construct an `HttpApp` from an `HttpApi` instance.
 

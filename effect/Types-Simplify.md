@@ -1,4 +1,7 @@
-## Simplify
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Simplify
 
 Simplifies the type signature of a type.
 

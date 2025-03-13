@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.reduce
 
 Reduces the specified state over the entries of the `HashMap`.
 

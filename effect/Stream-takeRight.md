@@ -1,4 +1,7 @@
-## takeRight
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.takeRight
 
 Takes the last specified number of elements from this stream.
 

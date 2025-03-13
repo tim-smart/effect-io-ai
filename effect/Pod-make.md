@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `Pod`<br />
+
+## Pod.make
 
 Constructs a Pod from it's identifing PodAddress and application server version.
 

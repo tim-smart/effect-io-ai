@@ -1,4 +1,7 @@
-## JsonFromString
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.JsonFromString
 
 A field that represents a JSON value stored as text in the database.
 

@@ -1,4 +1,7 @@
-## slidingSize
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.slidingSize
 
 Like `sliding`, but with a configurable `stepSize` parameter.
 

@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.getEquivalence
 
 Create an `Equivalence` for records using the provided `Equivalence` for values.
 

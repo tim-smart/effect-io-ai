@@ -1,4 +1,7 @@
-## eitherWith
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.eitherWith
 
 Alias of `unionWith`.
 

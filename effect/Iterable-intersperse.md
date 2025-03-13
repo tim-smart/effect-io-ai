@@ -1,4 +1,7 @@
-## intersperse
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.intersperse
 
 Places an element in between members of an `Iterable`.
 If the input is a non-empty array, the result is also a non-empty array.

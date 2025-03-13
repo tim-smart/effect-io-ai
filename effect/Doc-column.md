@@ -1,4 +1,7 @@
-## column
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.column
 
 Lays out a document depending upon the column at which the document starts.
 

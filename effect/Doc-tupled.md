@@ -1,4 +1,7 @@
-## tupled
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.tupled
 
 A Haskell-inspired variant of `encloseSep` that uses a comma as the separator
 and parentheses as the enclosure for a collection of documents.

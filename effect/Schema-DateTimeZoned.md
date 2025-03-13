@@ -1,4 +1,7 @@
-## DateTimeZoned
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateTimeZoned
 
 Defines a schema that attempts to convert a `string` to a `DateTime.Zoned` instance.
 

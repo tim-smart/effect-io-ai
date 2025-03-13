@@ -1,4 +1,7 @@
-## ConsumerCache
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.ConsumerCache
 
 A ConsumerCache models a portion of a cache which is safe to share without allowing to create new values or access existing ones.
 

@@ -1,4 +1,7 @@
-## daemonChildren
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.daemonChildren
 
 Returns a new workflow that will not supervise any fibers forked by this
 workflow.

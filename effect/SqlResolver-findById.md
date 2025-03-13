@@ -1,4 +1,7 @@
-## findById
+Package: `@effect/sql`<br />
+Module: `SqlResolver`<br />
+
+## SqlResolver.findById
 
 Create a resolver that resolves results by id.
 

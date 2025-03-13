@@ -1,4 +1,7 @@
-## reverse
+Package: `effect`<br />
+Module: `Ordering`<br />
+
+## Ordering.reverse
 
 Inverts the ordering of the input `Ordering`.
 

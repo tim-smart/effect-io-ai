@@ -1,4 +1,7 @@
-## CliConfig
+Package: `@effect/cli`<br />
+Module: `CliConfig`<br />
+
+## CliConfig.CliConfig
 
 Represents how arguments from the command-line are to be parsed.
 

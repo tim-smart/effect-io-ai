@@ -1,4 +1,7 @@
-## nonEmptyString
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.nonEmptyString
 
 Matches non-empty strings.
 

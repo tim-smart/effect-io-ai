@@ -1,4 +1,7 @@
-## annotateSpans
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.annotateSpans
 
 Adds annotations to each span in the effect for enhanced traceability.
 

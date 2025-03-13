@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.map
 
 Returns a  config whose structure is the same as this one, but which produces
 a different value, constructed using the specified function.

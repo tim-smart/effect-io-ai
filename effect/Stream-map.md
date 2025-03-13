@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.map
 
 Transforms the elements of this stream using the supplied function.
 

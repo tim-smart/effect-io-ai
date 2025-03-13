@@ -1,4 +1,7 @@
-## isFlatten
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.isFlatten
 
 Returns `true` if the specified value is a `Flatten`, `false` otherwise.
 

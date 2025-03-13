@@ -1,4 +1,7 @@
-## when
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.when
 
 The moral equivalent of `if (p) exp`.
 

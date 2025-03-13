@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.asVoid
 
 Transforms a schedule to always return `void` instead of its output.
 

@@ -1,4 +1,7 @@
-## Nest
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Nest
 
 Represents a document that is indented by a certain number of columns.
 

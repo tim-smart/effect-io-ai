@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.some
 
 Wraps the given value into an `Option` to represent its presence.
 

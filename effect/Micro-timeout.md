@@ -1,4 +1,7 @@
-## timeout
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.timeout
 
 Returns an effect that will timeout this effect, that will fail with a
 `TimeoutException` if the timeout elapses before the effect has produced a

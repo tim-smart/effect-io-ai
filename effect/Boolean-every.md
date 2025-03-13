@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.every
 
 This utility function is used to check if all the elements in a collection of boolean values are `true`.
 

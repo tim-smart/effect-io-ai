@@ -1,4 +1,7 @@
-## Cat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Cat
 
 Represents the concatenation of two documents.
 

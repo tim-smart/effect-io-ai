@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `SortedSet`<br />
+
+## SortedSet.some
 
 Check if a predicate holds true for some `SortedSet` element.
 

@@ -1,4 +1,7 @@
-## toPartsUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.toPartsUtc
 
 Get the different parts of a `DateTime` as an object.
 

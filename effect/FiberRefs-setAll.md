@@ -1,4 +1,7 @@
-## setAll
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.setAll
 
 Set each ref to either its value or its default.
 

@@ -1,4 +1,7 @@
-## trackDefect
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackDefect
 
 Returns an aspect that will update this metric with the defects of the
 effects that it is applied to.

@@ -1,4 +1,7 @@
-## fromRecord
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.fromRecord
 
 Takes a record and returns an Iterable of tuples containing its keys and values.
 

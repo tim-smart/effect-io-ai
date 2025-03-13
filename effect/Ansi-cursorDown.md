@@ -1,4 +1,7 @@
-## cursorDown
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorDown
 
 Moves the cursor down by the specified number of `lines` (default `1`)
 relative to the current cursor position.

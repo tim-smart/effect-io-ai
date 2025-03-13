@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.isEmpty
 
 Returns `true` if the specified `RuntimeFlagsPatch` is empty.
 

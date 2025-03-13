@@ -1,4 +1,7 @@
-## liftNullable
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.liftNullable
 
 Lifts a function that returns `null` or `undefined` into the `Option`
 context.

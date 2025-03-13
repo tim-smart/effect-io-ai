@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.flatMap
 
 Runs this sink until it yields a result, then uses that result to create
 another sink from the provided function which will continue to run until it

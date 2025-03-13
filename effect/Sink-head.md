@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.head
 
 Creates a sink containing the first value.
 

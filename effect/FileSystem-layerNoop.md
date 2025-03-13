@@ -1,4 +1,7 @@
-## layerNoop
+Package: `@effect/platform`<br />
+Module: `FileSystem`<br />
+
+## FileSystem.layerNoop
 
 Create a no-op file system that can be used for testing.
 

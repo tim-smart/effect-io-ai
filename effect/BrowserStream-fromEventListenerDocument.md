@@ -1,4 +1,7 @@
-## fromEventListenerDocument
+Package: `@effect/platform-browser`<br />
+Module: `BrowserStream`<br />
+
+## BrowserStream.fromEventListenerDocument
 
 Creates a `Stream` from document.addEventListener.
 

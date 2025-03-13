@@ -1,4 +1,7 @@
-## getOption
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.getOption
 
 Get the value associated with the specified tag from the context wrapped in an `Option` object. If the tag is not
 found, the `Option` object will be `None`.

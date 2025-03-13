@@ -1,4 +1,7 @@
-## someOrElse
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.someOrElse
 
 Extracts the optional value, or returns the given 'default'.
 

@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.flatMap
 
 Applies a function to each element in an array and returns a new array containing the concatenated mapped elements.
 

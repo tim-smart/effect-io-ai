@@ -1,4 +1,7 @@
-## initNonEmpty
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.initNonEmpty
 
 Get all but the last element of a non empty array, creating a new array.
 

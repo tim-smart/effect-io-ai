@@ -1,4 +1,7 @@
-## OpSupervision
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.OpSupervision
 
 The op supervision flag determines whether or not the Effect runtime system
 will supervise all operations of the Effect runtime. Use of this flag will

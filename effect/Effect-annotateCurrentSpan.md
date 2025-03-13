@@ -1,4 +1,7 @@
-## annotateCurrentSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.annotateCurrentSpan
 
 Adds annotations to the currently active span for traceability.
 

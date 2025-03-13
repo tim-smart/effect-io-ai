@@ -1,4 +1,7 @@
-## zipAllWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipAllWith
 
 Zips this stream with another point-wise. The provided functions will be
 used to create elements for the composed stream.

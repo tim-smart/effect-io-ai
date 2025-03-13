@@ -1,4 +1,7 @@
-## liveServices
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.liveServices
 
 The default Effect test services.
 

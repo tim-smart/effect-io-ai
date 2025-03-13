@@ -1,4 +1,7 @@
-## offer
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.offer
 
 Places one value in the queue.
 

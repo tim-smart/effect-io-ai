@@ -1,4 +1,7 @@
-## updateSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.updateSTM
 
 Atomically updates element in the array with given transactional effect.
 

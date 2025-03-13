@@ -1,4 +1,7 @@
-## ULID
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.ULID
 
 Represents a Universally Unique Lexicographically Sortable Identifier (ULID).
 

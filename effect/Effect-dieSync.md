@@ -1,4 +1,7 @@
-## dieSync
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.dieSync
 
 Creates an effect that dies with the specified error, evaluated lazily.
 

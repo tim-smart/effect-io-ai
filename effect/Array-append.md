@@ -1,4 +1,7 @@
-## append
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.append
 
 Append an element to the end of an `Iterable`, creating a new `NonEmptyArray`.
 

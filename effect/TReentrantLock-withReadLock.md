@@ -1,4 +1,7 @@
-## withReadLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.withReadLock
 
 Runs the specified workflow with a read lock.
 

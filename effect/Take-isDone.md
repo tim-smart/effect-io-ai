@@ -1,4 +1,7 @@
-## isDone
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.isDone
 
 Checks if this `take` is done (`Take.end`).
 

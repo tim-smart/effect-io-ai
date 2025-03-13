@@ -1,4 +1,7 @@
-## LazyArg
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.LazyArg
 
 A lazy argument.
 

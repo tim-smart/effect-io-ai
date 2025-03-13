@@ -1,4 +1,7 @@
-## isBufferSliding
+Package: `effect`<br />
+Module: `MergeStrategy`<br />
+
+## MergeStrategy.isBufferSliding
 
 Returns `true` if the specified `MergeStrategy` is a `BufferSliding`, `false`
 otherwise.

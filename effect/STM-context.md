@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.context
 
 Retrieves the environment inside an stm.
 

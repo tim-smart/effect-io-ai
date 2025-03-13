@@ -1,4 +1,7 @@
-## width
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.width
 
 The `width` combinator makes the column width of a document available to the
 document while rendering.

@@ -1,4 +1,7 @@
-## isInterruptedException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isInterruptedException
 
 Checks if a given unknown value is an `InterruptedException`.
 

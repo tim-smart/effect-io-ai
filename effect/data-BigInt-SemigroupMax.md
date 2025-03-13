@@ -1,4 +1,7 @@
-## SemigroupMax
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.SemigroupMax
 
 A `Semigroup` that uses the maximum between two values.
 

@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.empty
 
 Constructs an empty list of `Interval`s.
 

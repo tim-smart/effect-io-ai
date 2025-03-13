@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.map
 
 Returns a new schedule that transforms its output using the specified
 function.

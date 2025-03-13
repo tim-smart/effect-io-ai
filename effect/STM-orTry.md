@@ -1,4 +1,7 @@
-## orTry
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orTry
 
 Tries this effect first, and if it enters retry, then it tries the other
 effect. This is an equivalent of Haskell's orElse.

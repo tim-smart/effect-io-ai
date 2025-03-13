@@ -1,4 +1,7 @@
-## isSequentialType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isSequentialType
 
 Checks if a `Cause` is a `Sequential` type.
 

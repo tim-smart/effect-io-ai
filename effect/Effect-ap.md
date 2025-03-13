@@ -1,4 +1,7 @@
-## ap
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.ap
 
 Applies the function produced by one effect to the value produced by another effect.
 

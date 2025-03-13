@@ -1,4 +1,7 @@
-## unsafeMake
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.unsafeMake
 
 Unsafely creates a new `FiberId`.
 

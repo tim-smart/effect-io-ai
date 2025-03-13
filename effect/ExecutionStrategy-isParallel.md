@@ -1,4 +1,7 @@
-## isParallel
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.isParallel
 
 Returns `true` if the specified `ExecutionStrategy` is an instance of
 `Sequential`, `false` otherwise.

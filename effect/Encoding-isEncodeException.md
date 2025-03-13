@@ -1,4 +1,7 @@
-## isEncodeException
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.isEncodeException
 
 Returns `true` if the specified value is an `EncodeException`, `false` otherwise.
 

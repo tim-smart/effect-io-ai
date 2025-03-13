@@ -1,4 +1,7 @@
-## forEachChunk
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.forEachChunk
 
 A sink that executes the provided effectful function for every chunk fed to
 it.

@@ -1,4 +1,7 @@
-## unsafeSnapshot
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.unsafeSnapshot
 
 Unsafely captures a snapshot of all metrics recorded by the application.
 

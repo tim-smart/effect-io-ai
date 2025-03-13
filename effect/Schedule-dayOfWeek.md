@@ -1,4 +1,7 @@
-## dayOfWeek
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.dayOfWeek
 
 Creates a schedule that recurs on a specific day of the week.
 

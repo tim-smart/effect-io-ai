@@ -1,4 +1,7 @@
-## toFile
+Package: `@effect/platform`<br />
+Module: `PlatformLogger`<br />
+
+## PlatformLogger.toFile
 
 Create a Logger from another string Logger that writes to the specified file.
 

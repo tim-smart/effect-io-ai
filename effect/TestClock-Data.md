@@ -1,4 +1,7 @@
-## Data
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.Data
 
 `Data` represents the state of the `TestClock`, including the clock time.
 

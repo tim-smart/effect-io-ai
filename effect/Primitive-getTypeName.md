@@ -1,4 +1,7 @@
-## getTypeName
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.getTypeName
 
 Returns a string representation of the primitive type.
 

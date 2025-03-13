@@ -1,4 +1,7 @@
-## foldLeftChunksEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldLeftChunksEffect
 
 A sink that effectfully folds its input chunks with the provided function
 and initial state. `f` must preserve chunking-invariance.

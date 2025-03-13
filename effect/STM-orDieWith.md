@@ -1,4 +1,7 @@
-## orDieWith
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orDieWith
 
 Keeps none of the errors, and terminates the fiber running the `STM` effect
 with them, using the specified function to convert the `E` into a defect.

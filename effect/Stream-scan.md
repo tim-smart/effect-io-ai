@@ -1,4 +1,7 @@
-## scan
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.scan
 
 Statefully maps over the elements of this stream to produce all
 intermediate results of type `S` given an initial S.

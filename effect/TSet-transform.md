@@ -1,4 +1,7 @@
-## transform
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.transform
 
 Atomically updates all elements using a pure function.
 

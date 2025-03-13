@@ -1,4 +1,7 @@
-## dropping
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.dropping
 
 Creates a bounded `PubSub` with the dropping strategy. The `PubSub` will drop new
 messages if the `PubSub` is at capacity.

@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.zipWith
 
 Combines this layer with the specified layer concurrently, creating a new layer with merged input types and
 combined output types using the provided function.

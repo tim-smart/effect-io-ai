@@ -1,4 +1,7 @@
-## isFull
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.isFull
 
 Returns `true` if the queue is full, `false` otherwise.
 

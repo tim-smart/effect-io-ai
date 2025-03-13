@@ -1,4 +1,7 @@
-## isSubrecord
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.isSubrecord
 
 Check if one record is a subrecord of another, meaning it contains all the keys and values found in the second record.
 This comparison uses default equality checks (`Equal.equivalence()`).

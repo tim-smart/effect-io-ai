@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.get
 
 Safely lookup the value for the specified key in the `HashMap` using the
 internal hashing function.

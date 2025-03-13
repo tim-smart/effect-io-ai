@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.isEmpty
 
 Returns `true` if the queue is empty, `false` otherwise.
 

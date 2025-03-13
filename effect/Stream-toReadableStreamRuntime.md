@@ -1,4 +1,7 @@
-## toReadableStreamRuntime
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toReadableStreamRuntime
 
 Converts the stream to a `ReadableStream` using the provided runtime.
 

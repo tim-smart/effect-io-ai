@@ -1,4 +1,7 @@
-## recurUpTo
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.recurUpTo
 
 A schedule that recurs until the specified duration has elapsed.
 

@@ -1,4 +1,7 @@
-## isConcatTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.isConcatTree
 
 Returns `true` if the specified `DocTree` is an `ConcatTree`, `false` otherwise.
 

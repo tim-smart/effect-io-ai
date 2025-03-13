@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.filterMap
 
 Applies a function to each element of the `Iterable` and filters based on the result, keeping the transformed values where the function returns `Some`.
 This method combines filtering and mapping functionalities, allowing transformations and filtering of elements based on a single function pass.

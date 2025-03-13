@@ -1,4 +1,7 @@
-## gen
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.gen
 
 Similar to `Effect.gen`, `Option.gen` provides a more readable,
 generator-based syntax for working with `Option` values, making code that

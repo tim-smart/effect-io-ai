@@ -1,4 +1,7 @@
-## start
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.start
 
 Start running the command and return a handle to the running process.
 

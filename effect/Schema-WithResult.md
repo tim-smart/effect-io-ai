@@ -1,4 +1,7 @@
-## WithResult
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.WithResult
 
 The `WithResult` trait is designed to encapsulate the outcome of an
 operation, distinguishing between success and failure cases. Each case is

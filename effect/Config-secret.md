@@ -1,4 +1,7 @@
-## ~~secret~~
+Package: `effect`<br />
+Module: `Config`<br />
+
+## ~~Config.secret~~
 
 Constructs a config for a secret value.
 

@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.make
 
 Makes a new `TSet` that is initialized with specified values.
 

@@ -1,4 +1,7 @@
-## keys
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.keys
 
 Returns an `IterableIterator` of the keys within the `HashMap`.
 

@@ -1,4 +1,7 @@
-## into
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.into
 
 Run an `Effect` into a `Mailbox`, where success ends the mailbox and failure
 fails the mailbox.

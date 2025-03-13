@@ -1,4 +1,7 @@
-## fromEither
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.fromEither
 
 Converts an `Either` into a `Micro` effect, that will fail with the left side
 of the either if it is a `Left`. Otherwise, it will succeed with the right

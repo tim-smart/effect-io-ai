@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.tap
 
 "Peeks" at the success of transactional effect.
 

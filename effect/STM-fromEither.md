@@ -1,4 +1,7 @@
-## fromEither
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.fromEither
 
 Lifts an `Either` into a `STM`.
 

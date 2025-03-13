@@ -1,4 +1,7 @@
-## EmptyStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.EmptyStream
 
 Represents the an empty `Doc`.
 

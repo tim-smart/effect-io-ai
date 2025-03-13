@@ -1,4 +1,7 @@
-## disable
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.disable
 
 Creates a `RuntimeFlagsPatch` describing disabling the provided `RuntimeFlag`.
 

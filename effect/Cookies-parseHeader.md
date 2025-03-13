@@ -1,4 +1,7 @@
-## parseHeader
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.parseHeader
 
 Parse a cookie header into a record of key-value pairs
 

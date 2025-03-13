@@ -1,4 +1,7 @@
-## CauseTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.CauseTypeId
 
 A unique symbol identifying the `Cause` type.
 

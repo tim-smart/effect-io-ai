@@ -1,4 +1,7 @@
-## getAssignedShardIds
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.getAssignedShardIds
 
 Gets the list of shardIds assigned to the current Pod
 

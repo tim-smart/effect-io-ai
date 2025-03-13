@@ -1,4 +1,7 @@
-## isPopAnnotationStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isPopAnnotationStream
 
 Returns `true` if the specified `DocStream` is a `PopAnnotationStream`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## minuteOfHour
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.minuteOfHour
 
 Creates a schedule that recurs every specified minute of each hour.
 

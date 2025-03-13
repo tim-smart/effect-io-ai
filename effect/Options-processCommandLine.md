@@ -1,4 +1,7 @@
-## processCommandLine
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.processCommandLine
 
 Processes the provided command-line arguments, searching for the specified
 `Options`.

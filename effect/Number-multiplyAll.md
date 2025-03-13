@@ -1,4 +1,7 @@
-## multiplyAll
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.multiplyAll
 
 Takes an `Iterable` of `number`s and returns their multiplication as a single `number`.
 

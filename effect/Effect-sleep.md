@@ -1,4 +1,7 @@
-## sleep
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.sleep
 
 Suspends the execution of an effect for a specified `Duration`.
 

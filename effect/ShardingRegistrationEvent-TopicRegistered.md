@@ -1,4 +1,7 @@
-## TopicRegistered
+Package: `@effect/cluster`<br />
+Module: `ShardingRegistrationEvent`<br />
+
+## ShardingRegistrationEvent.TopicRegistered
 
 Constructs a new event that occurs when a topic is Registered.
 

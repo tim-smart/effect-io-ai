@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.remove
 
 Delete the element at the specified index, creating a new `Chunk`.
 

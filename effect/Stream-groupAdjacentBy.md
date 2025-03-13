@@ -1,4 +1,7 @@
-## groupAdjacentBy
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.groupAdjacentBy
 
 Creates a pipeline that groups on adjacent keys, calculated by the
 specified function.

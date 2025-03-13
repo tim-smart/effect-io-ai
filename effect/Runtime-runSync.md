@@ -1,4 +1,7 @@
-## runSync
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runSync
 
 Executes the effect synchronously throwing in case of errors or async boundaries.
 

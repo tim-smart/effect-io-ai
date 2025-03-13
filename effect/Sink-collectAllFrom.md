@@ -1,4 +1,7 @@
-## collectAllFrom
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllFrom
 
 Repeatedly runs the sink and accumulates its results into a `Chunk`.
 

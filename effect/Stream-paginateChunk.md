@@ -1,4 +1,7 @@
-## paginateChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.paginateChunk
 
 Like `Stream.unfoldChunk`, but allows the emission of values to end one step
 further than the unfolding of the state. This is useful for embedding

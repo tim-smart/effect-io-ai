@@ -1,4 +1,7 @@
-## toRecord
+Package: `@effect/platform`<br />
+Module: `UrlParams`<br />
+
+## UrlParams.toRecord
 
 Builds a `Record` containing all the key-value pairs in the given `UrlParams`
 as `string` (if only one value for a key) or a `NonEmptyArray<string>`

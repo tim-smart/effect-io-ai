@@ -1,4 +1,7 @@
-## scheduleIntersect
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleIntersect
 
 Combines two `MicroSchedule`s, by recurring only if both schedules want to
 recur, using the maximum of the two durations between recurrences.

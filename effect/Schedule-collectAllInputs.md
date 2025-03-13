@@ -1,4 +1,7 @@
-## collectAllInputs
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.collectAllInputs
 
 A schedule that collects all inputs into a `Chunk`.
 

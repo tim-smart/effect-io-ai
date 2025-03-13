@@ -1,4 +1,7 @@
-## WindDown
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.WindDown
 
 The wind down flag determines whether the Effect runtime system will execute
 effects in wind-down mode. In wind-down mode, even if interruption is

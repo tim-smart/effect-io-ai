@@ -1,4 +1,7 @@
-## ExceededCapacityExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.ExceededCapacityExceptionTypeId
 
 A unique symbol identifying the `ExceededCapacityException` type.
 

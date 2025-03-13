@@ -1,4 +1,7 @@
-## groupBy
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.groupBy
 
 Splits an `Iterable` into sub-non-empty-arrays stored in an object, based on the result of calling a `string`-returning
 function on each element, and grouping the results according to values returned

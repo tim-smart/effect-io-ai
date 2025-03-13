@@ -1,4 +1,7 @@
-## unsafeTrack
+Package: `effect`<br />
+Module: `Supervisor`<br />
+
+## Supervisor.unsafeTrack
 
 Unsafely creates a new supervisor that tracks children in a set.
 

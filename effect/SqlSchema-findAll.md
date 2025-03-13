@@ -1,4 +1,7 @@
-## findAll
+Package: `@effect/sql`<br />
+Module: `SqlSchema`<br />
+
+## SqlSchema.findAll
 
 Run a sql query with a request schema and a result schema.
 

@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fromEffect
 
 Creates a single-value sink produced from an effect.
 

@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.succeed
 
 Returns a schedule that recurs indefinitely, always producing the specified
 constant value.

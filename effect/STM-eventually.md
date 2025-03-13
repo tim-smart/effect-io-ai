@@ -1,4 +1,7 @@
-## eventually
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.eventually
 
 Returns an effect that ignores errors and runs repeatedly until it
 eventually succeeds.

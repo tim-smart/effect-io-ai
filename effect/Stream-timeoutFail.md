@@ -1,4 +1,7 @@
-## timeoutFail
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.timeoutFail
 
 Fails the stream with given error if it does not produce a value after d
 duration.

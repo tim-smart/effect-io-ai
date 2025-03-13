@@ -1,4 +1,7 @@
-## tapError
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.tapError
 
 "Peeks" at the error of the transactional effect.
 

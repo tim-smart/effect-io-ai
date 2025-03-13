@@ -1,4 +1,7 @@
-## logFmt
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.logFmt
 
 This logger outputs logs in a human-readable format that is easy to read
 during development or in a production console.

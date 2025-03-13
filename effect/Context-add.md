@@ -1,4 +1,7 @@
-## add
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.add
 
 Adds a service to a given `Context`.
 

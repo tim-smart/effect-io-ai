@@ -1,4 +1,7 @@
-## cron
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.cron
 
 Creates a schedule that recurs based on a cron expression.
 

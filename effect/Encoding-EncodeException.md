@@ -1,4 +1,7 @@
-## EncodeException
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.EncodeException
 
 Represents a checked exception which occurs when encoding fails.
 

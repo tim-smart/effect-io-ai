@@ -1,4 +1,7 @@
-## toMap
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.toMap
 
 Collects all bindings into a `Map`.
 

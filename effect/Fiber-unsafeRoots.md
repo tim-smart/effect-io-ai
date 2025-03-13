@@ -1,4 +1,7 @@
-## unsafeRoots
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.unsafeRoots
 
 Returns a chunk containing all root fibers.
 

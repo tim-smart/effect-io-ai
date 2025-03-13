@@ -1,4 +1,7 @@
-## runForEachChunkScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEachChunkScoped
 
 Like `Stream.runForEachChunk`, but returns a scoped effect so the
 finalization order can be controlled.

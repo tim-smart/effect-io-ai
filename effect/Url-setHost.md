@@ -1,4 +1,7 @@
-## setHost
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setHost
 
 Updates the host (domain and port) of the URL.
 

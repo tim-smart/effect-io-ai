@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.empty
 
 Creates a new `HashMap`.
 

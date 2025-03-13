@@ -1,4 +1,7 @@
-## runSync
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.runSync
 
 Attempt to execute the `Micro` effect synchronously and return the success
 value.

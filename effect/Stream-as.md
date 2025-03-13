@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.as
 
 Maps the success values of this stream to the specified constant value.
 

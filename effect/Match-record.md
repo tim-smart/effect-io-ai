@@ -1,4 +1,7 @@
-## record
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.record
 
 Matches objects where keys are `string` or `symbol` and values are `unknown`.
 

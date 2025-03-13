@@ -1,4 +1,7 @@
-## mutate
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.mutate
 
 Mutates the `HashSet` within the context of the provided function.
 

@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.provideContext
 
 Provides the channel with its required context, which eliminates its
 dependency on `Env`.

@@ -1,4 +1,7 @@
-## partitionMap
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.partitionMap
 
 Partitions the elements of a record into two groups: those that match a predicate, and those that don't.
 

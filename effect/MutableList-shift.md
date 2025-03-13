@@ -1,4 +1,7 @@
-## shift
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.shift
 
 Removes the first value from the list and returns it, if it exists.
 

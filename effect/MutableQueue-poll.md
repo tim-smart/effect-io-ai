@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.poll
 
 Dequeues an element from the queue.
 

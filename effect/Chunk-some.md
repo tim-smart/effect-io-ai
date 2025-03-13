@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.some
 
 Check if a predicate holds true for some `Chunk` element.
 

@@ -1,4 +1,7 @@
-## leftover
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.leftover
 
 Creates a sink that does not consume any input but provides the given chunk
 as its leftovers

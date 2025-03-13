@@ -1,4 +1,7 @@
-## scopeWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scopeWith
 
 Accesses the current scope and uses it to perform the specified effect.
 

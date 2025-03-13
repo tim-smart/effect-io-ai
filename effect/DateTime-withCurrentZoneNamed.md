@@ -1,4 +1,7 @@
-## withCurrentZoneNamed
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.withCurrentZoneNamed
 
 Provide the `CurrentTimeZone` to an effect using an IANA time zone
 identifier.

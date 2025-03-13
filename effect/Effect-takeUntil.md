@@ -1,4 +1,7 @@
-## takeUntil
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.takeUntil
 
 Takes elements from a collection until the effectful predicate returns
 `true`.

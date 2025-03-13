@@ -1,4 +1,7 @@
-## Latch
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Latch
 
 A `Latch` is a synchronization primitive that allows you to control the
 execution of fibers based on an open or closed state. It acts as a gate,

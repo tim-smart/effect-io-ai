@@ -1,4 +1,7 @@
-## fromEnv
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.fromEnv
 
 A config provider that loads configuration from context variables
 

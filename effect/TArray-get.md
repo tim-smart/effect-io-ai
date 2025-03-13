@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.get
 
 Extracts value from ref in array.
 

@@ -1,4 +1,7 @@
-## linearize
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.linearize
 
 Linearizes a `Cause` into a set of parallel causes, each containing a
 sequential chain of failures.

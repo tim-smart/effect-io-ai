@@ -1,4 +1,7 @@
-## rotate
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.rotate
 
 Rotate an `Iterable` by `n` steps.
 If the input is a non-empty array, the result is also a non-empty array.

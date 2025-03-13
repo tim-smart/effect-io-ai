@@ -1,4 +1,7 @@
-## lastNonEmpty
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.lastNonEmpty
 
 Get the last element of a non empty array.
 

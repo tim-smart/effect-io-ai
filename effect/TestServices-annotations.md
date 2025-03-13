@@ -1,4 +1,7 @@
-## annotations
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.annotations
 
 Retrieves the `Annotations` service for this test.
 

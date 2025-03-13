@@ -1,4 +1,7 @@
-## isPositive
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.isPositive
 
 Checks if a given `BigDecimal` is positive.
 

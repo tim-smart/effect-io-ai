@@ -1,4 +1,7 @@
-## encodeBase64Url
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.encodeBase64Url
 
 Encodes the given value into a base64 (URL) `string`.
 

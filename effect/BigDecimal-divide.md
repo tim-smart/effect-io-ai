@@ -1,4 +1,7 @@
-## divide
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.divide
 
 Provides a division operation on `BigDecimal`s.
 

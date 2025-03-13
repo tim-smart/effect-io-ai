@@ -1,4 +1,7 @@
-## string
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.string
 
 Runs the command returning the entire output as a string with the
 specified encoding.

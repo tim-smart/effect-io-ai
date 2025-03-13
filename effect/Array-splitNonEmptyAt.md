@@ -1,4 +1,7 @@
-## splitNonEmptyAt
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.splitNonEmptyAt
 
 Splits a `NonEmptyReadonlyArray` into two segments, with the first segment containing a maximum of `n` elements.
 The value of `n` must be `>= 1`.

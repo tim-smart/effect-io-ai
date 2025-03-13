@@ -1,4 +1,7 @@
-## serviceOption
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.serviceOption
 
 Access the given `Context.Tag` from the environment, without tracking the
 dependency at the type level.

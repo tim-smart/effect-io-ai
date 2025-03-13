@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.map
 
 Maps a record into another record by applying a transformation function to each of its values.
 

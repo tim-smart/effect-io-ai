@@ -1,4 +1,7 @@
-## tryMapPromise
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tryMapPromise
 
 Returns an effect that maps its success using the specified side-effecting
 `try` function, converting any promise rejections into typed failed effects

@@ -1,4 +1,7 @@
-## scheduleExponential
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleExponential
 
 Create a `MicroSchedule` that will generate a delay with an exponential backoff.
 

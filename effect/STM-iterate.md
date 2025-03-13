@@ -1,4 +1,7 @@
-## iterate
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.iterate
 
 Iterates with the specified transactional function. The moral equivalent
 of:

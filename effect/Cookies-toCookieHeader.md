@@ -1,4 +1,7 @@
-## toCookieHeader
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.toCookieHeader
 
 Serialize a Cookies object into a Cookie header
 

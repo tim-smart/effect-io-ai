@@ -1,4 +1,7 @@
-## formatIso
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.formatIso
 
 Formats a Duration into an ISO8601 duration string.
 

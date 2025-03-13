@@ -1,4 +1,7 @@
-## getSemigroup
+Package: `@effect/typeclass`<br />
+Module: `SemiApplicative`<br />
+
+## SemiApplicative.getSemigroup
 
 Lift a `Semigroup` into 'F', the inner values are combined using the provided `Semigroup`.
 

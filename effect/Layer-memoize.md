@@ -1,4 +1,7 @@
-## memoize
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.memoize
 
 Returns a scoped effect that, if evaluated, will return the lazily computed
 result of this layer.

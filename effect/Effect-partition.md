@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.partition
 
 Processes an iterable and applies an effectful function to each element,
 categorizing the results into successes and failures.

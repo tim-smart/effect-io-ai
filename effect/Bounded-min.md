@@ -1,4 +1,7 @@
-## min
+Package: `@effect/typeclass`<br />
+Module: `Bounded`<br />
+
+## Bounded.min
 
 `Monoid` that returns last minimum of elements.
 

@@ -1,4 +1,7 @@
-## length
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.length
 
 Calculate the number of characters in a `string`.
 

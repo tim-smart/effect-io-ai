@@ -1,4 +1,7 @@
-## diffFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.diffFiberRefs
 
 Returns a new workflow that executes this one and captures the changes in
 `FiberRef` values.

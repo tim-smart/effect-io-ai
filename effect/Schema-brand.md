@@ -1,4 +1,7 @@
-## brand
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.brand
 
 Returns a nominal branded schema by applying a brand to a given schema.
 

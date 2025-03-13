@@ -1,4 +1,7 @@
-## EventGroup
+Package: `@effect/experimental`<br />
+Module: `EventGroup`<br />
+
+## EventGroup.EventGroup
 
 An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to
 represent a portion of your domain.

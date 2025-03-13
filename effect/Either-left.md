@@ -1,4 +1,7 @@
-## left
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.left
 
 Constructs a new `Either` holding a `Left` value. This usually represents a failure, due to the right-bias of this
 structure.

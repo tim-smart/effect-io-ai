@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.join
 
 If any of the Fiber's in the handle terminate with a failure,
 the returned Effect will terminate with the first failure that occurred.

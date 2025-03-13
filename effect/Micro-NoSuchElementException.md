@@ -1,4 +1,7 @@
-## NoSuchElementException
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.NoSuchElementException
 
 Represents a checked exception which occurs when an expected element was
 unable to be found.

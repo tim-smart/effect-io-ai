@@ -1,4 +1,7 @@
-## Contravariant
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Contravariant
 
 Contravariant helper.
 

@@ -1,4 +1,7 @@
-## Uint8ArrayFromBase64
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Uint8ArrayFromBase64
 
 Decodes a base64 (RFC4648) encoded string into a `Uint8Array`.
 

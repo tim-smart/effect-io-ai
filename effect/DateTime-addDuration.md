@@ -1,4 +1,7 @@
-## addDuration
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.addDuration
 
 Add the given `Duration` to a `DateTime`.
 

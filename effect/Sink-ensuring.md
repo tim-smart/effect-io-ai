@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.ensuring
 
 Returns a new sink with an attached finalizer. The finalizer is guaranteed
 to be executed so long as the sink begins execution (and regardless of

@@ -1,4 +1,7 @@
-## layerTest
+Package: `@effect/platform-node`<br />
+Module: `NodeHttpServer`<br />
+
+## NodeHttpServer.layerTest
 
 Layer starting a server on a random port and producing an `HttpClient`
 with prepended url of the running http server.

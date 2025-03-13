@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.prepend
 
 Prepend an element to the front of a `Chunk`, creating a new `NonEmptyChunk`.
 

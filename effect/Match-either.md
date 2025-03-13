@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.either
 
 Wraps the match result in an `Either`, distinguishing matched and unmatched
 cases.

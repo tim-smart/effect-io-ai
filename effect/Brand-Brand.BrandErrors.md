@@ -1,4 +1,7 @@
-## Brand.BrandErrors
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.BrandErrors
 
 Represents a list of refinement errors.
 

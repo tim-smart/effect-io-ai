@@ -1,4 +1,7 @@
-## Lowercase
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Lowercase
 
 This schema converts a string to lowercase.
 

@@ -1,4 +1,7 @@
-## getLefts
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.getLefts
 
 Given a record with `Either` values, returns a new record containing only the `Left` values, preserving the original keys.
 

@@ -1,4 +1,7 @@
-## OpenAiTelemetryAttributes
+Package: `@effect/ai-openai`<br />
+Module: `OpenAiTelemetry`<br />
+
+## OpenAiTelemetry.OpenAiTelemetryAttributes
 
 The attributes used to describe telemetry in the context of Generative
 Artificial Intelligence (GenAI) Models requests and responses.

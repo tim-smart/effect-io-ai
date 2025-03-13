@@ -1,4 +1,7 @@
-## isCons
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.isCons
 
 Returns `true` if the specified value is a `List.Cons<A>`, `false` otherwise.
 

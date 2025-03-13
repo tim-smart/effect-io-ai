@@ -1,4 +1,7 @@
-## offerAll
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.offerAll
 
 For Bounded TQueue: uses the `BackPressure` Strategy, places the values in
 the queue and always returns true. If the queue has reached capacity, then

@@ -1,4 +1,7 @@
-## stripFailures
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.stripFailures
 
 Removes `Fail` and `Interrupt` nodes from a `Cause`, keeping only defects
 (`Die`).

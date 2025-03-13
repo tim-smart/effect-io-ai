@@ -1,4 +1,7 @@
-## handler
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.handler
 
 Create a `Handler` for a single endpoint.
 

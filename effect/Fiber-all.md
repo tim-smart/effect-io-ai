@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.all
 
 Collects all fibers into a single fiber producing an in-order list of the
 results.

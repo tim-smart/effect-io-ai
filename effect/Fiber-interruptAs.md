@@ -1,4 +1,7 @@
-## interruptAs
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.interruptAs
 
 Interrupts the fiber as if interrupted from the specified fiber. If the
 fiber has already exited, the returned effect will resume immediately.

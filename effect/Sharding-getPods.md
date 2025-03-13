@@ -1,4 +1,7 @@
-## getPods
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.getPods
 
 Get the list of pods currently registered to the Shard Manager
 

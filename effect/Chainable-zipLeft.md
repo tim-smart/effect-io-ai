@@ -1,4 +1,7 @@
-## zipLeft
+Package: `@effect/typeclass`<br />
+Module: `Chainable`<br />
+
+## Chainable.zipLeft
 
 Sequences the specified effect after this effect, but ignores the value
 produced by the effect.

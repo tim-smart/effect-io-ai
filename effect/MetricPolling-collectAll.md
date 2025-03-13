@@ -1,4 +1,7 @@
-## collectAll
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.collectAll
 
 Collects all of the polling metrics into a single polling metric, which
 polls for, updates, and produces the outputs of all individual metrics.

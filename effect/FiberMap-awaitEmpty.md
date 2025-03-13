@@ -1,4 +1,7 @@
-## awaitEmpty
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.awaitEmpty
 
 Wait for the FiberMap to be empty.
 

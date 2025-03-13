@@ -1,4 +1,7 @@
-## fromInMemoryQueue
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviour`<br />
+
+## RecipientBehaviour.fromInMemoryQueue
 
 This behaviour uses a Queue where the entity will accumulate messages to be processed,
 and then you can use the Dequeue to take messages and process them.

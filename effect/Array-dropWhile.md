@@ -1,4 +1,7 @@
-## dropWhile
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.dropWhile
 
 Remove the longest initial subarray for which all element satisfy the specified predicate, creating a new `Array`.
 

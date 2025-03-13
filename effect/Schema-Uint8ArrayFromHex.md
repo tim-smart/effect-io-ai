@@ -1,4 +1,7 @@
-## Uint8ArrayFromHex
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Uint8ArrayFromHex
 
 Decodes a hex encoded string into a `Uint8Array`.
 

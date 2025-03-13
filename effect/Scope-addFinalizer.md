@@ -1,4 +1,7 @@
-## addFinalizer
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.addFinalizer
 
 Adds a finalizer to this scope. The finalizer is guaranteed to be run when
 the scope is closed. Use this when the finalizer does not need to know the

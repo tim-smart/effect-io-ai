@@ -1,4 +1,7 @@
-## accumulate
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.accumulate
 
 Collects each underlying Chunk of the stream into a new chunk, and emits it
 on each pull.

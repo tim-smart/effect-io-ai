@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.size
 
 Retireves the size of the chunk
 

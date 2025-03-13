@@ -1,4 +1,7 @@
-## tapError
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tapError
 
 Returns a stream that effectfully "peeks" at the failure of the stream.
 

@@ -1,4 +1,7 @@
-## findLast
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.findLast
 
 Find the last element for which a predicate holds.
 

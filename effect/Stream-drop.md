@@ -1,4 +1,7 @@
-## drop
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.drop
 
 Drops the specified number of elements from this stream.
 

@@ -1,4 +1,7 @@
-## scopedWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scopedWith
 
 Creates a `Scope`, passes it to the specified effectful function, and closes
 the scope when the effect completes (whether through success, failure, or

@@ -1,4 +1,7 @@
-## getOrNull
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrNull
 
 Returns the value contained in the `Option` if it is `Some`; otherwise,
 returns `null`.

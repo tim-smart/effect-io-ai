@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.every
 
 Check if a predicate holds true for every `Chunk` element.
 

@@ -1,4 +1,7 @@
-## fromEffectTagged
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.fromEffectTagged
 
 Constructs a data source from a list of tags paired to functions, that takes
 a list of requests and returns a list of results of the same size. Each item

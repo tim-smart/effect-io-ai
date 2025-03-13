@@ -1,4 +1,7 @@
-## layerSessionStorage
+Package: `@effect/platform-browser`<br />
+Module: `BrowserKeyValueStore`<br />
+
+## BrowserKeyValueStore.layerSessionStorage
 
 Creates a KeyValueStore layer that uses the browser's sessionStorage api. Values are stored only for the current session.
 

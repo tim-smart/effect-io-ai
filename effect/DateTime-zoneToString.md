@@ -1,4 +1,7 @@
-## zoneToString
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneToString
 
 Format a `TimeZone` as a string.
 

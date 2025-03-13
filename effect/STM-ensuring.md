@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.ensuring
 
 Executes the specified finalization transaction whether or not this effect
 succeeds. Note that as with all STM transactions, if the full transaction

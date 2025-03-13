@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.prepend
 
 Prepend an element to the front of an `Iterable`, creating a new `NonEmptyArray`.
 

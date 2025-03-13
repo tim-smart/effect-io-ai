@@ -1,4 +1,7 @@
-## SemigroupSum
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.SemigroupSum
 
 `bigint` semigroup under addition.
 

@@ -1,4 +1,7 @@
-## peek
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.peek
 
 Views the next element in the queue without removing it, retrying if the
 queue is empty.

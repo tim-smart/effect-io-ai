@@ -1,4 +1,7 @@
-## whenAnd
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.whenAnd
 
 Matches a value that satisfies all provided patterns.
 

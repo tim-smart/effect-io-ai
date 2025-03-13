@@ -1,4 +1,7 @@
-## combine
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.combine
 
 Combines two patches to produce a new patch that describes the updates of
 the first patch and then the updates of the second patch. The combine

@@ -1,4 +1,7 @@
-## cursorTo
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorTo
 
 Moves the cursor to the specified `row` and `column`.
 

@@ -1,4 +1,7 @@
-## isSuccess
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.isSuccess
 
 Returns `true` if the specified `Exit` is a `Success`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.empty
 
 The empty collection of `FiberRef` values.
 

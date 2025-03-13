@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.tap
 
 Returns an effect that effectfully "peeks" at the success of this take.
 

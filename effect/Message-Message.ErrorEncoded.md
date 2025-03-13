@@ -1,4 +1,7 @@
-## Message.ErrorEncoded
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message.ErrorEncoded
 
 Extracts the error type from a `Message`.
 

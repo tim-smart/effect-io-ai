@@ -1,4 +1,7 @@
-## fail
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.fail
 
 The `fail` document is a document that cannot be rendered.
 

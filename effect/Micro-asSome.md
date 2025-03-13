@@ -1,4 +1,7 @@
-## asSome
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.asSome
 
 Wrap the success value of this `Micro` effect in a `Some`.
 

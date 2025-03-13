@@ -1,4 +1,7 @@
-## Scope
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.Scope
 
 Represents a scope that manages finalizers and can fork child scopes.
 

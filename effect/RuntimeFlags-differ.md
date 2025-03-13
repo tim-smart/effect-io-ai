@@ -1,4 +1,7 @@
-## differ
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.differ
 
 Constructs a differ that knows how to diff `RuntimeFlags` values.
 

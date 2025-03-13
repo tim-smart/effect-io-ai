@@ -1,4 +1,7 @@
-## isLeftDone
+Package: `effect`<br />
+Module: `MergeState`<br />
+
+## MergeState.isLeftDone
 
 Returns `true` if the specified `MergeState` is a `LeftDone`, `false`
 otherwise.

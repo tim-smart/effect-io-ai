@@ -1,4 +1,7 @@
-## zipAllSortedByKeyLeft
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipAllSortedByKeyLeft
 
 Zips this stream that is sorted by distinct keys and the specified stream
 that is sorted by distinct keys to produce a new stream that is sorted by

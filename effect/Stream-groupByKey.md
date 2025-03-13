@@ -1,4 +1,7 @@
-## groupByKey
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.groupByKey
 
 Partition a stream using a function and process each stream individually.
 This returns a data structure that can be used to further filter down which

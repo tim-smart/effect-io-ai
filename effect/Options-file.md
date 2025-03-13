@@ -1,4 +1,7 @@
-## file
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.file
 
 Creates a parameter expecting path to a file.
 

@@ -1,4 +1,7 @@
-## length
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.length
 
 Return the number of elements in a `ReadonlyArray`.
 

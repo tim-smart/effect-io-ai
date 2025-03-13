@@ -1,4 +1,7 @@
-## runFold
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFold
 
 Executes a pure fold over the stream of values - reduces all elements in
 the stream to a value of type `S`.

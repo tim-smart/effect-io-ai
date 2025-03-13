@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.succeed
 
 Creates an `Effect` that always succeeds with a given value.
 

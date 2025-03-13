@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.getOrElse
 
 Returns this `FiberId` if it is not `None`, otherwise returns that `FiberId`.
 

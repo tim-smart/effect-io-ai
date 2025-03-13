@@ -1,4 +1,7 @@
-## struct
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.struct
 
 This function creates and returns a new `Monoid` for a struct of values based on the given `Monoid`s for each property in the struct.
 The returned `Monoid` combines two structs of the same type by applying the corresponding `Monoid` passed as arguments to each property in the struct.

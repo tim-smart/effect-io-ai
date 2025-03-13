@@ -1,4 +1,7 @@
-## tagged
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.tagged
 
 Provides a tagged constructor for the specified `Case`.
 

@@ -1,4 +1,7 @@
-## race
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.race
 
 Returns a stream that mirrors the first upstream to emit an item.
 As soon as one of the upstream emits a first value, the other is interrupted.

@@ -1,4 +1,7 @@
-## any
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.any
 
 Matches any value without restrictions.
 

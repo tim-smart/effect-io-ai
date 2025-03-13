@@ -1,4 +1,7 @@
-## Pod
+Package: `@effect/cluster`<br />
+Module: `Pod`<br />
+
+## Pod.Pod
 
 A pod is an application server that is able to run entities. A pod can run multiple entities,
 but a single entity will live on a given pod at a time.

@@ -1,4 +1,7 @@
-## dieMessage
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.dieMessage
 
 The stream that dies with an exception described by `message`.
 

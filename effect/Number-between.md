@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.between
 
 Checks if a `number` is between a `minimum` and `maximum` value (inclusive).
 

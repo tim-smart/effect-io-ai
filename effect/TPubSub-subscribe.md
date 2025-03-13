@@ -1,4 +1,7 @@
-## subscribe
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.subscribe
 
 Subscribes to receive messages from the `TPubSub`. The resulting subscription can
 be evaluated multiple times to take a message from the `TPubSub` each time. The

@@ -1,4 +1,7 @@
-## isSubset
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.isSubset
 
 Returns `true` if and only if every element in the this `HashSet` is an
 element of the second set,

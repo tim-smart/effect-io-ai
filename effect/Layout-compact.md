@@ -1,4 +1,7 @@
-## compact
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.compact
 
 A layout algorithm which will lay out a document without adding any
 indentation and without preserving annotations.

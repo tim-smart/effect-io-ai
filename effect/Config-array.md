@@ -1,4 +1,7 @@
-## array
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.array
 
 Constructs a config for an array of values.
 

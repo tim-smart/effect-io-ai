@@ -1,4 +1,7 @@
-## isNoSuchElementException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isNoSuchElementException
 
 Checks if a given unknown value is a `NoSuchElementException`.
 

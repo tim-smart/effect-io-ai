@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.match
 
 Feeds the error or output services of this layer into the input of either
 the specified `failure` or `success` layers, resulting in a new layer with

@@ -1,4 +1,7 @@
-## tagged
+Package: `effect`<br />
+Module: `TestAnnotation`<br />
+
+## TestAnnotation.tagged
 
 An annotation which tags tests with strings.
 

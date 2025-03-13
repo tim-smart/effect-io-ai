@@ -1,4 +1,7 @@
-## mapKeys
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.mapKeys
 
 Maps the keys of a `ReadonlyRecord` while preserving the corresponding values.
 

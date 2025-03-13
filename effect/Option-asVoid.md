@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.asVoid
 
 Replaces the value inside a `Some` with the constant value `void`, leaving
 `None` unchanged.

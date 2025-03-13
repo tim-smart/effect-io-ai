@@ -1,4 +1,7 @@
-## contextWith
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.contextWith
 
 Accesses the environment of the transaction to perform a transaction.
 

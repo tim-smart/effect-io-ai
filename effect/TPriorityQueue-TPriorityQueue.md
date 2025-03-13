@@ -1,4 +1,7 @@
-## TPriorityQueue
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.TPriorityQueue
 
 A `TPriorityQueue` contains values of type `A` that an `Order` is defined
 on. Unlike a `TQueue`, `take` returns the highest priority value (the value

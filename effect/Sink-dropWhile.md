@@ -1,4 +1,7 @@
-## dropWhile
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dropWhile
 
 Drops incoming elements as long as the predicate is satisfied.
 

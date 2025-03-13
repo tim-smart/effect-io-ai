@@ -1,4 +1,7 @@
-## flatAlt
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.flatAlt
 
 The `flatAlt` document will render `left` by default. However, when
 `group`ed, `y` will be preferred with `left` as the fallback for cases where

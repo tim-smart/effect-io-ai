@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mapInputContext
 
 Provides part of the required context while leaving the rest unchanged.
 

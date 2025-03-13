@@ -1,4 +1,7 @@
-## mkString
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mkString
 
 Returns a combined string resulting from concatenating each of the values
 from the stream.

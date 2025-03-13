@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.make
 
 Constructs a new polling metric from a metric and poll effect.
 

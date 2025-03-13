@@ -1,4 +1,7 @@
-## pretty
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.pretty
 
 The `pretty` layout algorithm is the default algorithm for rendering
 documents.

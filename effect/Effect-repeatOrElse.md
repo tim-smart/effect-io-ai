@@ -1,4 +1,7 @@
-## repeatOrElse
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.repeatOrElse
 
 Repeats an effect with a schedule, handling failures using a custom handler.
 

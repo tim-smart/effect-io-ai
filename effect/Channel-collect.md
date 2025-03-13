@@ -1,4 +1,7 @@
-## collect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.collect
 
 Returns a new channel, which is the same as this one, except its outputs
 are filtered and transformed by the specified partial function.

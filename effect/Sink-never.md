@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.never
 
 Creates a sink which never terminates.
 

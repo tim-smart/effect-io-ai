@@ -1,4 +1,7 @@
-## beginMutation
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.beginMutation
 
 Marks the `HashMap` as mutable.
 

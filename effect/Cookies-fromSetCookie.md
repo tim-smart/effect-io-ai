@@ -1,4 +1,7 @@
-## fromSetCookie
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.fromSetCookie
 
 Create a Cookies object from a set of Set-Cookie headers
 

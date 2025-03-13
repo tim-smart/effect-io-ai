@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.empty
 
 Creates a new, empty record.
 

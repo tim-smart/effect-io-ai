@@ -1,4 +1,7 @@
-## Router
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.Router
 
 The router that the API endpoints are attached to.
 

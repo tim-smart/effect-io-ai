@@ -1,4 +1,7 @@
-## chunk
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.chunk
 
 Constructs a config for a sequence of values.
 

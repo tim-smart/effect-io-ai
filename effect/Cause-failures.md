@@ -1,4 +1,7 @@
-## failures
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.failures
 
 Extracts all recoverable errors of type `E` from a `Cause`.
 

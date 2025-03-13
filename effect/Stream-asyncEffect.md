@@ -1,4 +1,7 @@
-## asyncEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.asyncEffect
 
 Creates a stream from an asynchronous callback that can be called multiple
 times The registration of the callback itself returns an effect. The

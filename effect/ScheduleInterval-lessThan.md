@@ -1,4 +1,7 @@
-## lessThan
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.lessThan
 
 Returns `true` if this `Interval` is less than `that` interval, `false`
 otherwise.

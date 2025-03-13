@@ -1,4 +1,7 @@
-## after
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.after
 
 Construct an `Interval` that includes all time equal to and after the
 specified start time.

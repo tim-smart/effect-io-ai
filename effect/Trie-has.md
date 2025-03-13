@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.has
 
 Check if the given key exists in the `Trie`.
 

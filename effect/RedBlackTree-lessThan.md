@@ -1,4 +1,7 @@
-## lessThan
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.lessThan
 
 Returns an iterator that traverse entries in order with keys less than the
 specified key.

@@ -1,4 +1,7 @@
-## takeRight
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.takeRight
 
 Keep only a max number of elements from the end of an `Iterable`, creating a new `Array`.
 

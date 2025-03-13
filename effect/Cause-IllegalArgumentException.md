@@ -1,4 +1,7 @@
-## IllegalArgumentException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.IllegalArgumentException
 
 An error representing an invalid argument passed to a method.
 

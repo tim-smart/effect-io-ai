@@ -1,4 +1,7 @@
-## toSet
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.toSet
 
 Converts the provided `RuntimeFlags` into a `ReadonlySet<number>`.
 

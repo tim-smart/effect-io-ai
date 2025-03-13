@@ -1,4 +1,7 @@
-## isFiber
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.isFiber
 
 Returns `true` if the specified value is a `Fiber`, `false` otherwise.
 

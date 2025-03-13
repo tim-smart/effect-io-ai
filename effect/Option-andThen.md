@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.andThen
 
 Chains two `Option`s together. The second `Option` can either be a static
 value or depend on the result of the first `Option`.

@@ -1,4 +1,7 @@
-## linear
+Package: `effect`<br />
+Module: `MetricBoundaries`<br />
+
+## MetricBoundaries.linear
 
 A helper method to create histogram bucket boundaries for a histogram
 with linear increasing values.

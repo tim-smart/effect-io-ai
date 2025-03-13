@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.asVoid
 
 This function maps the success value of an `Effect` value to `void`. If the
 original `Effect` value succeeds, the returned `Effect` value will also

@@ -1,4 +1,7 @@
-## BooleanFromNumber
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.BooleanFromNumber
 
 A boolean parsed from 0 or 1
 

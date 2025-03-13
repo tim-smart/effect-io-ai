@@ -1,4 +1,7 @@
-## FailedStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.FailedStream
 
 Represents a `Doc` that failed to be laid out.
 

@@ -1,4 +1,7 @@
-## replace
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.replace
 
 Replace a key's value in a record and return the updated record.
 If the key does not exist in the record, a copy of the original record is returned.

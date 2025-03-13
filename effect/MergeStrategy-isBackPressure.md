@@ -1,4 +1,7 @@
-## isBackPressure
+Package: `effect`<br />
+Module: `MergeStrategy`<br />
+
+## MergeStrategy.isBackPressure
 
 Returns `true` if the specified `MergeStrategy` is a `BackPressure`, `false`
 otherwise.

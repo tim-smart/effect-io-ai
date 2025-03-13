@@ -1,4 +1,7 @@
-## whenEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.whenEffect
 
 Conditionally executes an effect based on the result of another effect.
 

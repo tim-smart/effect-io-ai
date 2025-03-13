@@ -1,4 +1,7 @@
-## fileParse
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.fileParse
 
 Creates a file argument that reads and parses its contents.
 

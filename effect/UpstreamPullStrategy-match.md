@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `UpstreamPullStrategy`<br />
+
+## UpstreamPullStrategy.match
 
 Folds an `UpstreamPullStrategy<A>` into a value of type `Z`.
 

@@ -1,4 +1,7 @@
-## crossLeft
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.crossLeft
 
 Composes this stream with the specified stream to create a cartesian
 product of elements, but keeps only elements from `left` stream. The `right`

@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.get
 
 Accesses an `Annotations` instance in the context and retrieves the
 annotation of the specified type, or its default value if there is none.

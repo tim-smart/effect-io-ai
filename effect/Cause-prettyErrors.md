@@ -1,4 +1,7 @@
-## prettyErrors
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.prettyErrors
 
 Returns a list of prettified errors (`PrettyError`) from a `Cause`.
 

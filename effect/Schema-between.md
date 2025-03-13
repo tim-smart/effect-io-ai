@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.between
 
 This filter checks whether the provided number falls within the specified minimum and maximum values.
 

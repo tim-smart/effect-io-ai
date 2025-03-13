@@ -1,4 +1,7 @@
-## matchAll
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.matchAll
 
 It is the `pipe`-able version of the native `matchAll` method.
 

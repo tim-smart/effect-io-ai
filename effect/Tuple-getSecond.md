@@ -1,4 +1,7 @@
-## getSecond
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.getSecond
 
 Return the second element of a tuple.
 

@@ -1,4 +1,7 @@
-## fileParse
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.fileParse
 
 Creates a parameter expecting path to a file and parse its contents.
 

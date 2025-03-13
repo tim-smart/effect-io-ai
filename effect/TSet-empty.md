@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.empty
 
 Makes an empty `TSet`.
 

@@ -1,4 +1,7 @@
-## withConstantInput
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.withConstantInput
 
 Returns a new metric that is powered by this one, but which accepts updates
 of any type, and translates them to updates with the specified constant

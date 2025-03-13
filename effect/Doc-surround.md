@@ -1,4 +1,7 @@
-## surround
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.surround
 
 The `surround` combinator encloses a document in between `left` and `right`
 documents.

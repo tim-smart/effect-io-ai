@@ -1,4 +1,7 @@
-## Option
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.Option
 
 The `Option` data type represents optional values. An `Option<A>` can either
 be `Some<A>`, containing a value of type `A`, or `None`, representing the

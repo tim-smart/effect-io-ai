@@ -1,4 +1,7 @@
-## runForEach
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEach
 
 Consumes all elements of the stream, passing them to the specified
 callback.

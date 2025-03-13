@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.sync
 
 Creates a metric that ignores input and produces constant output.
 

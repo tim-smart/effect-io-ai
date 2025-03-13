@@ -1,4 +1,7 @@
-## ScopeTypeId
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.ScopeTypeId
 
 The type of the unique identifier for `Scope`.
 

@@ -1,4 +1,7 @@
-## isEmptyStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isEmptyStream
 
 Returns `true` if the specified `DocStream` is a `EmptyStream`, `false` otherwise.
 

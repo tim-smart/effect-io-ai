@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.reduce
 
 Folds an `Iterable<A>` using an effectual function f, working sequentially
 from left to right.

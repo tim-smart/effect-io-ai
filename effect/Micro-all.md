@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.all
 
 Runs all the provided effects in sequence respecting the structure provided in input.
 

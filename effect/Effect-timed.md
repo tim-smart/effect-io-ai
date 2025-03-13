@@ -1,4 +1,7 @@
-## timed
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timed
 
 Executes an effect and measures the time it takes to complete.
 

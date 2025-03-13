@@ -1,4 +1,7 @@
-## makeTopicType
+Package: `@effect/cluster`<br />
+Module: `RecipientType`<br />
+
+## RecipientType.makeTopicType
 
 Given a name and a schema for the protocol, constructs an TopicType.
 

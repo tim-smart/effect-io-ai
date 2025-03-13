@@ -1,4 +1,7 @@
-## FunctionWithSpanOptions
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.FunctionWithSpanOptions
 
 Wraps a function that returns an effect with a new span for tracing.
 

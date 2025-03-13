@@ -1,4 +1,7 @@
-## Entry
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Entry
 
 A `Entry<A>` keeps track of a request of type `A` along with a
 `Ref` containing the result of the request, existentially hiding the result

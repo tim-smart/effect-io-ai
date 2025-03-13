@@ -1,4 +1,7 @@
-## tapErrorCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tapErrorCause
 
 Perform a side effect using the full `MicroCause` object of the given `Micro`.
 

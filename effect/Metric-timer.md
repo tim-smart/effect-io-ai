@@ -1,4 +1,7 @@
-## timer
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.timer
 
 Creates a timer metric, based on a histogram, which keeps track of
 durations in milliseconds. The unit of time will automatically be added to

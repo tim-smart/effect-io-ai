@@ -1,4 +1,7 @@
-## write
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.write
 
 Writes a single value to the channel.
 

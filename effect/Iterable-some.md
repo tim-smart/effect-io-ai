@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.some
 
 Check if a predicate holds true for some `Iterable` element.
 

@@ -1,4 +1,7 @@
-## someOrFail
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.someOrFail
 
 Extracts the optional value, or fails with the given error 'e'.
 

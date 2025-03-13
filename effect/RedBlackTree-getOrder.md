@@ -1,4 +1,7 @@
-## getOrder
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.getOrder
 
 Gets the `Order<K>` that the `RedBlackTree<K, V>` is using.
 

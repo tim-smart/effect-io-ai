@@ -1,4 +1,7 @@
-## UUID
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.UUID
 
 Represents a Universally Unique Identifier (UUID).
 

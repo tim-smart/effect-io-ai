@@ -1,4 +1,7 @@
-## Option.Value
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.Option.Value
 
 Extracts the type of the value contained in an `Option`.
 

@@ -1,4 +1,7 @@
-## interruptOption
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.interruptOption
 
 Retrieves the first `Interrupt` in a `Cause`, if present.
 

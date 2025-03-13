@@ -1,4 +1,7 @@
-## samples
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.samples
 
 The number of sufficient samples to check for a random variable.
 

@@ -1,4 +1,7 @@
-## asserts
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.asserts
 
 By default the option `exact` is set to `true`.
 

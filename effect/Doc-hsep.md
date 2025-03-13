@@ -1,4 +1,7 @@
-## hsep
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.hsep
 
 The `hsep` combinator concatenates all documents in a collection horizontally
 by placing a `space` between each pair of documents.

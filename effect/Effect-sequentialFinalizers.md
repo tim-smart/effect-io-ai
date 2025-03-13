@@ -1,4 +1,7 @@
-## sequentialFinalizers
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.sequentialFinalizers
 
 Ensures that finalizers are run sequentially in reverse order of their
 addition.

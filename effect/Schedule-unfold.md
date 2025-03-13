@@ -1,4 +1,7 @@
-## unfold
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.unfold
 
 Creates a schedule that repeatedly applies a function to transform a state
 value, producing a sequence of values.

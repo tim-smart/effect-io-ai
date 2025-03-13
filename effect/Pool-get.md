@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Pool`<br />
+
+## Pool.get
 
 Retrieves an item from the pool in a scoped effect. Note that if
 acquisition fails, then the returned effect will fail for that same reason.

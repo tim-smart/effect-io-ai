@@ -1,4 +1,7 @@
-## offer
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.offer
 
 Offers the specified value to the queue.
 

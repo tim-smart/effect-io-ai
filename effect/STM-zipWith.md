@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.zipWith
 
 Sequentially zips this value with the specified one, combining the values
 using the specified combiner function.

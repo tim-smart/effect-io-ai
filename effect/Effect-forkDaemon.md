@@ -1,4 +1,7 @@
-## forkDaemon
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forkDaemon
 
 Creates a long-running background fiber that is independent of its parent.
 

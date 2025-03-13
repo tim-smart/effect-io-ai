@@ -1,4 +1,7 @@
-## alterAnnotations
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.alterAnnotations
 
 Changes the annotation of a document to a different annotation, or to
 none at all.

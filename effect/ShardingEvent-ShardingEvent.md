@@ -1,4 +1,7 @@
-## ShardingEvent
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.ShardingEvent
 
 This are the events that may occur over the ShardManager during its lifetime.
 

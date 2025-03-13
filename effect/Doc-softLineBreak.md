@@ -1,4 +1,7 @@
-## softLineBreak
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.softLineBreak
 
 The `softLineBreak` document is similar to `softLine`, but behaves like
 `empty` if the resulting output does not fit onto the page (instead of

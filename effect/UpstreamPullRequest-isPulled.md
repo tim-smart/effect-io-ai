@@ -1,4 +1,7 @@
-## isPulled
+Package: `effect`<br />
+Module: `UpstreamPullRequest`<br />
+
+## UpstreamPullRequest.isPulled
 
 Returns `true` if the specified `UpstreamPullRequest` is a `Pulled`, `false`
 otherwise.

@@ -1,4 +1,7 @@
-## contains
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.contains
 
 Checks if the current `Cause` contains or is equal to another `Cause`.
 

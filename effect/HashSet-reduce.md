@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.reduce
 
 Reduces the specified state over the values of the `HashSet`.
 

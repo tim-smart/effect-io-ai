@@ -1,4 +1,7 @@
-## clockWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.clockWith
 
 Retrieves the `Clock` service from the context and provides it to the
 specified effectful function.

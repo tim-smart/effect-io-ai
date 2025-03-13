@@ -1,4 +1,7 @@
-## MessageState
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.MessageState
 
 Once a Message is sent to an entity to be processed,
 the state of that message over that entity is either Acknoledged (not yet processed) or Processed.

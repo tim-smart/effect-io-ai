@@ -1,4 +1,7 @@
-## isChildExecutorDecision
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.isChildExecutorDecision
 
 Returns `true` if the specified value is a `ChildExecutorDecision`, `false`
 otherwise.

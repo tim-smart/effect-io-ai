@@ -1,4 +1,7 @@
-## difference
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.difference
 
 Atomically transforms the set into the difference of itself and the
 provided set.

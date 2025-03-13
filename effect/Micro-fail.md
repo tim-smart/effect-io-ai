@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.fail
 
 Creates a `Micro` effect that fails with the given error.
 

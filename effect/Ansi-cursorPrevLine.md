@@ -1,4 +1,7 @@
-## cursorPrevLine
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorPrevLine
 
 Moves cursor to beginning of the line the specified number of rows up
 (default `1`).

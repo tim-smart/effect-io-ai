@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.make
 
 Creates a stream from an sequence of values.
 

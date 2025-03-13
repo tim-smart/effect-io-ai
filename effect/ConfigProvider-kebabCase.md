@@ -1,4 +1,7 @@
-## kebabCase
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.kebabCase
 
 Returns a new config provider that will automatically convert all property
 names to kebab case. This can be utilized to adapt the names of

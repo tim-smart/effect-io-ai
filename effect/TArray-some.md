@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.some
 
 Determine if the array contains a value satisfying a predicate.
 

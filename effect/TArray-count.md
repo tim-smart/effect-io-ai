@@ -1,4 +1,7 @@
-## count
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.count
 
 Count the values in the array matching a predicate.
 

@@ -1,4 +1,7 @@
-## compact
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.compact
 
 Filter out optional values
 

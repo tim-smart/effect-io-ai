@@ -1,4 +1,7 @@
-## launch
+Package: `@effect/platform`<br />
+Module: `WorkerRunner`<br />
+
+## WorkerRunner.launch
 
 Launch the specified layer, interrupting the fiber when the CloseLatch is
 triggered.

@@ -1,4 +1,7 @@
-## noop
+Package: `@effect/cluster`<br />
+Module: `PodsHealth`<br />
+
+## PodsHealth.noop
 
 A layer that considers pods as always alive.
 This is useful for testing only.

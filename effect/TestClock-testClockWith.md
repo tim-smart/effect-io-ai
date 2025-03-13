@@ -1,4 +1,7 @@
-## testClockWith
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.testClockWith
 
 Retrieves the `TestClock` service for this test and uses it to run the
 specified workflow.

@@ -1,4 +1,7 @@
-## Interrupt
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Interrupt
 
 Represents fiber interruption within a `Cause`.
 

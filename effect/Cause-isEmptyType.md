@@ -1,4 +1,7 @@
-## isEmptyType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isEmptyType
 
 Checks if a `Cause` is an `Empty` type.
 

@@ -1,4 +1,7 @@
-## roots
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.roots
 
 Returns a chunk containing all root fibers.
 

@@ -1,4 +1,7 @@
-## debounce
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.debounce
 
 Delays the emission of values by holding new values for a set duration. If
 no new values arrive during that time the value is emitted, however if a

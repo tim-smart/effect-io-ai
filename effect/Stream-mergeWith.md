@@ -1,4 +1,7 @@
-## mergeWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mergeWith
 
 Merges this stream and the specified stream together to a common element
 type with the specified mapping functions.

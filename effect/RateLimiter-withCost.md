@@ -1,4 +1,7 @@
-## withCost
+Package: `effect`<br />
+Module: `RateLimiter`<br />
+
+## RateLimiter.withCost
 
 Alters the per-effect cost of the rate-limiter.
 

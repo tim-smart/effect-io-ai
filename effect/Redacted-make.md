@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Redacted`<br />
+
+## Redacted.make
 
 This function creates a `Redacted<A>` instance from a given value `A`,
 securely hiding its content.

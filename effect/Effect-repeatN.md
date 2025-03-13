@@ -1,4 +1,7 @@
-## repeatN
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.repeatN
 
 Repeats an effect a specified number of times or until the first failure.
 

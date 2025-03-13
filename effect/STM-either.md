@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.either
 
 Converts the failure channel into an `Either`.
 

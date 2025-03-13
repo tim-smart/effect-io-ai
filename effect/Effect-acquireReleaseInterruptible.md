@@ -1,4 +1,7 @@
-## acquireReleaseInterruptible
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.acquireReleaseInterruptible
 
 Creates a scoped resource with an interruptible acquire action.
 

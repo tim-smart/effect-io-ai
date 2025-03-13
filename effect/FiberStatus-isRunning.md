@@ -1,4 +1,7 @@
-## isRunning
+Package: `effect`<br />
+Module: `FiberStatus`<br />
+
+## FiberStatus.isRunning
 
 Returns `true` if the specified `FiberStatus` is `Running`, `false`
 otherwise.

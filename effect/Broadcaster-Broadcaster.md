@@ -1,4 +1,7 @@
-## Broadcaster
+Package: `@effect/cluster`<br />
+Module: `Broadcaster`<br />
+
+## Broadcaster.Broadcaster
 
 An interface to communicate with a remote broadcast receiver
 

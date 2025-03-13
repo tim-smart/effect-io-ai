@@ -1,4 +1,7 @@
-## next
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.next
 
 Returns the next run `Date` for the given `Cron` instance.
 

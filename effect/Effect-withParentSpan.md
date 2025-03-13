@@ -1,4 +1,7 @@
-## withParentSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withParentSpan
 
 Adds the provided span to the current span stack.
 

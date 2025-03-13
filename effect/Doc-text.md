@@ -1,4 +1,7 @@
-## text
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.text
 
 A document containing a string of text.
 

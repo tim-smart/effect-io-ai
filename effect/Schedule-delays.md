@@ -1,4 +1,7 @@
-## delays
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.delays
 
 Transforms a schedule to output the delay between each occurrence.
 

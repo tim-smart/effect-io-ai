@@ -1,4 +1,7 @@
-## forever
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.forever
 
 Creates a schedule that recurs indefinitely, producing a count of
 repetitions.

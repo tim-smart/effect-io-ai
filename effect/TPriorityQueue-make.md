@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.make
 
 Makes a new `TPriorityQueue` that is initialized with specified values.
 

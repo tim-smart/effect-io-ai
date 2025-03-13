@@ -1,4 +1,7 @@
-## withWriteLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.withWriteLock
 
 Runs the specified workflow with a write lock.
 

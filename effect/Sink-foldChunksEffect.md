@@ -1,4 +1,7 @@
-## foldChunksEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldChunksEffect
 
 A sink that effectfully folds its input chunks with the provided function,
 termination predicate and initial state. `contFn` condition is checked only

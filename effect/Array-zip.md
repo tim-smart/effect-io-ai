@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.zip
 
 Takes two `Iterable`s and returns an `Array` of corresponding pairs.
 If one input `Iterable` is short, excess elements of the

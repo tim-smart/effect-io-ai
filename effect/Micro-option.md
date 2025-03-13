@@ -1,4 +1,7 @@
-## option
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.option
 
 Replace the success value of the given `Micro` effect with an `Option`,
 wrapping the success value in `Some` and returning `None` if the effect fails

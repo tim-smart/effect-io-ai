@@ -1,4 +1,7 @@
-## isUnion
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isUnion
 
 Returns `true` if the specified `Doc` is a `Union`, `false` otherwise.
 

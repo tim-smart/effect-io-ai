@@ -1,4 +1,7 @@
-## capacity
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.capacity
 
 The **maximum** number of elements that a queue can hold.
 

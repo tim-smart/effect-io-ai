@@ -1,4 +1,7 @@
-## reverse
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.reverse
 
 Reverses the order of elements in a `Chunk`.
 Importantly, if the input chunk is a `NonEmptyChunk`, the reversed chunk will also be a `NonEmptyChunk`.

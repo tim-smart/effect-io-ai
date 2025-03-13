@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.merge
 
 Merges two `Context`s, returning a new `Context` containing the services of both.
 

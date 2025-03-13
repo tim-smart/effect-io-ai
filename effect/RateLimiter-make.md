@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `RateLimiter`<br />
+
+## RateLimiter.make
 
 Constructs a new `RateLimiter` which will utilize the specified algorithm
 to limit requests (defaults to `token-bucket`).

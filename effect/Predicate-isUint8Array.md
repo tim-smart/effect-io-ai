@@ -1,4 +1,7 @@
-## isUint8Array
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isUint8Array
 
 A guard that succeeds when the input is a `Uint8Array`.
 

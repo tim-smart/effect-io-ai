@@ -1,4 +1,7 @@
-## option
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.option
 
 Wraps the match result in an `Option`, representing an optional match.
 

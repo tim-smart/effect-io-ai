@@ -1,4 +1,7 @@
-## fileContent
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.fileContent
 
 Creates a file argument that reads its contents.
 

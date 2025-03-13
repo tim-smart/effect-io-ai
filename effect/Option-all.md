@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.all
 
 Combines a structure of `Option`s into a single `Option` containing the
 values with the same structure.

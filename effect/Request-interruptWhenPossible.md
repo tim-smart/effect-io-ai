@@ -1,4 +1,7 @@
-## interruptWhenPossible
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.interruptWhenPossible
 
 Interrupts the child effect when requests are no longer needed
 

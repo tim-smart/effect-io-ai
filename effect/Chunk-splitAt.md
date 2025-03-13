@@ -1,4 +1,7 @@
-## splitAt
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.splitAt
 
 Returns two splits of this chunk at the specified index.
 

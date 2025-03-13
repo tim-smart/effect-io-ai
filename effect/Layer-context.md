@@ -1,4 +1,7 @@
-## context
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.context
 
 Constructs a `Layer` that passes along the specified context as an
 output.

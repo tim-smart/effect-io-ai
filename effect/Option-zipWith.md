@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.zipWith
 
 Combines two `Option` values into a new `Option` by applying a provided
 function to their values.

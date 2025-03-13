@@ -1,4 +1,7 @@
-## identity
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.identity
 
 The identity pipeline, which does not modify streams in any way.
 

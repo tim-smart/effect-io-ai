@@ -1,4 +1,7 @@
-## sliding
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.sliding
 
 Creates a bounded queue with the sliding strategy. The queue will add new
 values and drop old values if the queue is at capacity.

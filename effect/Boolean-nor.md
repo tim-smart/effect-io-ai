@@ -1,4 +1,7 @@
-## nor
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.nor
 
 Combines two booleans using NOR: `!(self || that)`.
 

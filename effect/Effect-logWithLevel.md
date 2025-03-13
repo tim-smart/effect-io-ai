@@ -1,4 +1,7 @@
-## logWithLevel
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logWithLevel
 
 Logs messages or error causes at a specified log level.
 

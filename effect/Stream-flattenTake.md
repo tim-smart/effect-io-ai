@@ -1,4 +1,7 @@
-## flattenTake
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flattenTake
 
 Unwraps `Exit` values and flatten chunks that also signify end-of-stream
 by failing with `None`.

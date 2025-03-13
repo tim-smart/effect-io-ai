@@ -1,4 +1,7 @@
-## filterOrElse
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filterOrElse
 
 Supplies `orElse` if the predicate fails.
 

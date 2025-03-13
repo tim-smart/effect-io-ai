@@ -1,4 +1,7 @@
-## beep
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.beep
 
 Play a beeping sound.
 

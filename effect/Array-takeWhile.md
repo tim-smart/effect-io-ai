@@ -1,4 +1,7 @@
-## takeWhile
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.takeWhile
 
 Calculate the longest initial subarray for which all element satisfy the specified predicate, creating a new `Array`.
 

@@ -1,4 +1,7 @@
-## unwrap
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.unwrap
 
 Creates a sink produced from an effect.
 

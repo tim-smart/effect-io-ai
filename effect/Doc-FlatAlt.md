@@ -1,4 +1,7 @@
-## FlatAlt
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.FlatAlt
 
 Represents a flattened alternative of two documents. The layout algorithms
 will choose the first document, but when flattened (via `group`) the second

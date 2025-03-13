@@ -1,4 +1,7 @@
-## collect
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.collect
 
 Simultaneously filters and maps the value produced by this effect.
 

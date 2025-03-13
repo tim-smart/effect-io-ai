@@ -1,4 +1,7 @@
-## repeated
+Package: `effect`<br />
+Module: `TestAnnotation`<br />
+
+## TestAnnotation.repeated
 
 An annotation which counts repeated tests.
 

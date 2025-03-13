@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.make
 
 Constructs a new `HashMap` from an array of key/value pairs.
 

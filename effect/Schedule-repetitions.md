@@ -1,4 +1,7 @@
-## repetitions
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.repetitions
 
 Returns a new schedule that outputs the number of repetitions of this one.
 

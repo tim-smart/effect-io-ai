@@ -1,4 +1,7 @@
-## orElseSucceed
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseSucceed
 
 Succeeds with the specified value if this one fails with a typed error.
 

@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.unsafeGet
 
 Retrieve the fiber from the FiberHandle.
 

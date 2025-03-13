@@ -1,4 +1,7 @@
-## onExit
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.onExit
 
 Guarantees that a cleanup function runs regardless of whether the effect
 succeeds, fails, or is interrupted.

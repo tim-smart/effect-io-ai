@@ -1,4 +1,7 @@
-## unsafeFromNonEmptyArray
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.unsafeFromNonEmptyArray
 
 Wraps an array into a chunk without copying, unsafe on mutable arrays
 

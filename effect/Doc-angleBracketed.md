@@ -1,4 +1,7 @@
-## angleBracketed
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.angleBracketed
 
 Encloses the input document in angle brackets (`<>`).
 

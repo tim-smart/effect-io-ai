@@ -1,4 +1,7 @@
-## functionWithSpan
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.functionWithSpan
 
 Wraps a function that returns an effect with a new span for tracing.
 

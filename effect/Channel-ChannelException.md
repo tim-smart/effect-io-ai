@@ -1,4 +1,7 @@
-## ChannelException
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.ChannelException
 
 Represents a generic checked exception which occurs when a `Channel` is
 executed.

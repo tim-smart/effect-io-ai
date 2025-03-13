@@ -1,4 +1,7 @@
-## MergeLeft
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.MergeLeft
 
 Merges two object where the keys of the left object take precedence in the case of a conflict.
 

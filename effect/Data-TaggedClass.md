@@ -1,4 +1,7 @@
-## TaggedClass
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.TaggedClass
 
 Provides a Tagged constructor for a Case Class.
 

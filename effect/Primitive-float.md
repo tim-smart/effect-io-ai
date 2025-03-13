@@ -1,4 +1,7 @@
-## float
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.float
 
 Represents a floating point number.
 

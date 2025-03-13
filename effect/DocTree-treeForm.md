@@ -1,4 +1,7 @@
-## treeForm
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.treeForm
 
 Converts a `DocStream<A>` into a `DocTree<A>`.
 

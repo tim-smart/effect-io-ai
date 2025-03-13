@@ -1,4 +1,7 @@
-## greaterThanOrEqualTo
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.greaterThanOrEqualTo
 
 Returns a function that checks if a given `bigint` is greater than or equal to the provided one.
 

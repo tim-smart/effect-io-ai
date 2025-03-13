@@ -1,4 +1,7 @@
-## zipLatestWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipLatestWith
 
 Zips the two streams so that when a value is emitted by either of the two
 streams, it is combined with the latest value from the other stream to

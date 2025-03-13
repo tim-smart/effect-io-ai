@@ -1,4 +1,7 @@
-## foldLeftEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldLeftEffect
 
 A sink that effectfully folds its inputs with the provided function and
 initial state.

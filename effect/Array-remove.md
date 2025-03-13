@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.remove
 
 Delete the element at the specified index, creating a new `Array`,
 or return a copy of the input if the index is out of bounds.

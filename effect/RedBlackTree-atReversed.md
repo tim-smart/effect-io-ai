@@ -1,4 +1,7 @@
-## atReversed
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.atReversed
 
 Returns an iterator that points to the element at the specified index of the
 tree.

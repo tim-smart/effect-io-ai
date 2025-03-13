@@ -1,4 +1,7 @@
-## eraseDown
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.eraseDown
 
 Clears from the current cursor position to the end of the screen.
 

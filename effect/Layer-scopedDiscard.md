@@ -1,4 +1,7 @@
-## scopedDiscard
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.scopedDiscard
 
 Constructs a layer from the specified scoped effect.
 

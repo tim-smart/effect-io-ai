@@ -1,4 +1,7 @@
-## cond
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.cond
 
 Similar to Either.cond, evaluate the predicate, return the given A as
 success if predicate returns true, and the given E as error otherwise

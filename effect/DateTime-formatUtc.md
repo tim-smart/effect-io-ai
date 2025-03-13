@@ -1,4 +1,7 @@
-## formatUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatUtc
 
 Format a `DateTime` as a string using the `DateTimeFormat` API.
 

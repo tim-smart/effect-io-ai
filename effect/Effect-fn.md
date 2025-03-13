@@ -1,4 +1,7 @@
-## fn
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fn
 
 The `Effect.fn` function allows you to create traced functions that return an
 effect. It provides two key features:

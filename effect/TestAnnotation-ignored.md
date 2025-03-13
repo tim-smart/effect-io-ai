@@ -1,4 +1,7 @@
-## ignored
+Package: `effect`<br />
+Module: `TestAnnotation`<br />
+
+## TestAnnotation.ignored
 
 An annotation which counts ignored tests.
 

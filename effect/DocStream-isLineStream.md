@@ -1,4 +1,7 @@
-## isLineStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isLineStream
 
 Returns `true` if the specified `DocStream` is a `LineStream`, `false` otherwise.
 

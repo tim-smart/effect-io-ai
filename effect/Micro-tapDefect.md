@@ -1,4 +1,7 @@
-## tapDefect
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tapDefect
 
 Perform a side effect from unexpected errors of the given `Micro`.
 

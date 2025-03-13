@@ -1,4 +1,7 @@
-## remove
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.remove
 
 Remove a cookie by name
 

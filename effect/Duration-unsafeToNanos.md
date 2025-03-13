@@ -1,4 +1,7 @@
-## unsafeToNanos
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.unsafeToNanos
 
 Get the duration in nanoseconds as a bigint.
 

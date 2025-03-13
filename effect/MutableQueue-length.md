@@ -1,4 +1,7 @@
-## length
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.length
 
 Returns the current number of elements in the queue.
 

@@ -1,4 +1,7 @@
-## scheduleWithMaxElapsed
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleWithMaxElapsed
 
 Transform a `MicroSchedule` to one that will stop repeating after the specified
 amount of time.

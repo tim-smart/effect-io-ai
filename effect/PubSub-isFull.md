@@ -1,4 +1,7 @@
-## isFull
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.isFull
 
 Returns `true` if the `Queue` contains at least one element, `false`
 otherwise.

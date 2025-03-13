@@ -1,4 +1,7 @@
-## provideServiceEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.provideServiceEffect
 
 Dynamically provides an implementation for a service using an effect.
 

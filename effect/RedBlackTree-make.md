@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.make
 
 Constructs a new `RedBlackTree` from the specified entries.
 

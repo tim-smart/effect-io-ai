@@ -1,4 +1,7 @@
-## tupled
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.tupled
 
 Creates a   version of this function: instead of `n` arguments, it accepts a single tuple argument.
 

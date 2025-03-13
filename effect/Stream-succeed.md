@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.succeed
 
 Creates a single-valued pure stream.
 

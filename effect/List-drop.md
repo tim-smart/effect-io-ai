@@ -1,4 +1,7 @@
-## drop
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.drop
 
 Drops the first `n` elements from the specified list.
 

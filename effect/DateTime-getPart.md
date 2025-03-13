@@ -1,4 +1,7 @@
-## getPart
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.getPart
 
 Get a part of a `DateTime` as a number.
 

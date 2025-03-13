@@ -1,4 +1,7 @@
-## constant
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constant
 
 Creates a constant value that never changes.
 

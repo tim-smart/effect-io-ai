@@ -1,4 +1,7 @@
-## fromTPubSub
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromTPubSub
 
 Creates a stream from a subscription to a `TPubSub`.
 

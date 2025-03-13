@@ -1,4 +1,7 @@
-## linear
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.linear
 
 Creates a schedule that recurs indefinitely, increasing the delay linearly.
 

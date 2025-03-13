@@ -1,4 +1,7 @@
-## cursorMove
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorMove
 
 Move the cursor position the specified number of `rows` and `columns`
 relative to the current cursor position.

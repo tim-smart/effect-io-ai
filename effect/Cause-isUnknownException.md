@@ -1,4 +1,7 @@
-## isUnknownException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isUnknownException
 
 Checks if a given unknown value is an `UnknownException`.
 

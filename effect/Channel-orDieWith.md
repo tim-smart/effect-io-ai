@@ -1,4 +1,7 @@
-## orDieWith
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.orDieWith
 
 Keeps none of the errors, and terminates the fiber with them, using the
 specified function to convert the `OutErr` into a defect.

@@ -1,4 +1,7 @@
-## toOption
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.toOption
 
 Convert a `FiberId` into an `Option<FiberId>`.
 

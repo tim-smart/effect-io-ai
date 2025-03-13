@@ -1,4 +1,7 @@
-## getSomes
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.getSomes
 
 Given a record with `Option` values, returns a new record containing only the `Some` values, preserving the original keys.
 

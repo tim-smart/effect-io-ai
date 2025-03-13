@@ -1,4 +1,7 @@
-## runFork
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.runFork
 
 Execute the `Micro` effect and return a `MicroFiber` that can be awaited, joined,
 or aborted.

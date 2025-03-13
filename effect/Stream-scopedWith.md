@@ -1,4 +1,7 @@
-## scopedWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.scopedWith
 
 Use a function that receives a scope and returns an effect to emit an output
 element. The output element will be the result of the returned effect, if

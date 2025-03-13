@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.poll
 
 Takes a single element from the queue, returning `None` if the queue is
 empty.

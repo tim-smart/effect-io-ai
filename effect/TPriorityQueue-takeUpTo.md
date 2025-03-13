@@ -1,4 +1,7 @@
-## takeUpTo
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.takeUpTo
 
 Takes up to the specified maximum number of elements from the queue.
 

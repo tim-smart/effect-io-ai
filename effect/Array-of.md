@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.of
 
 Constructs a new `NonEmptyArray<A>` from the specified value.
 

@@ -1,4 +1,7 @@
-## appendAll
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.appendAll
 
 Concatenates two arrays (or iterables), combining their elements.
 If either array is non-empty, the result is also a non-empty array.

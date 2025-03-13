@@ -1,4 +1,7 @@
-## provideLayer
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.provideLayer
 
 Provides a `Layer` to the stream, which translates it to another level.
 

@@ -1,4 +1,7 @@
-## getOrDefault
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.getOrDefault
 
 Gets the value of the specified `FiberRef` in this collection of `FiberRef`
 values if it exists or the `initial` value of the `FiberRef` otherwise.

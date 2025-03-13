@@ -1,4 +1,7 @@
-## nowInCurrentZone
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.nowInCurrentZone
 
 Get the current time as a `DateTime.Zoned`, using the `CurrentTimeZone`.
 

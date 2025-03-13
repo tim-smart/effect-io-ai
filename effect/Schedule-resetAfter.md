@@ -1,4 +1,7 @@
-## resetAfter
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.resetAfter
 
 Returns a new schedule that automatically resets to its initial state after a
 period of inactivity defined by `duration`.

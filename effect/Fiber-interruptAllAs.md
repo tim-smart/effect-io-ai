@@ -1,4 +1,7 @@
-## interruptAllAs
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.interruptAllAs
 
 Interrupts all fibers as by the specified fiber, awaiting their
 interruption.

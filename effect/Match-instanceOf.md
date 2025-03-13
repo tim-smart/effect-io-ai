@@ -1,4 +1,7 @@
-## instanceOf
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.instanceOf
 
 Matches instances of a given class.
 

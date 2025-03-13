@@ -1,4 +1,7 @@
-## fromPull
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.fromPull
 
 Creates effect from `Effect<Chunk<A>, Option<E>, R>` that does not fail, but
 succeeds with the `Take<A, E>`. Errors from stream when pulling are converted

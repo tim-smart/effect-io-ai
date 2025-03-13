@@ -1,4 +1,7 @@
-## unsafeDone
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.unsafeDone
 
 Unsafely exits the `Deferred` with the specified `Exit` value, which will be
 propagated to all fibers waiting on the value of the `Deferred`.

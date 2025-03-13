@@ -1,4 +1,7 @@
-## multiply
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.multiply
 
 Provides a multiplication operation on `BigDecimal`s.
 

@@ -1,4 +1,7 @@
-## toDateUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.toDateUtc
 
 Get the UTC `Date` of a `DateTime`.
 

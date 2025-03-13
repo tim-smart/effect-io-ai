@@ -1,4 +1,7 @@
-## validate
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.validate
 
 Validates that the specified value, if any, matches the specified primitive
 type.

@@ -1,4 +1,7 @@
-## DeepMutable
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.DeepMutable
 
 Like `Types.Mutable`, but works recursively.
 

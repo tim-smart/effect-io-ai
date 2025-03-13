@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.as
 
 Replaces the value inside a `Some` with the specified constant value, leaving
 `None` unchanged.

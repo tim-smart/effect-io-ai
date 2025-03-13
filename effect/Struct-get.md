@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.get
 
 Retrieves the value associated with the specified key from a struct.
 

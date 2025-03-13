@@ -1,4 +1,7 @@
-## choice
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.choice
 
 Creates a choice argument.
 

@@ -1,4 +1,7 @@
-## fromIterableEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromIterableEffect
 
 Creates a stream from an effect producing a value of type `Iterable<A>`.
 

@@ -1,4 +1,7 @@
-## keepDefects
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.keepDefects
 
 Removes all `Fail` and `Interrupt` nodes, keeping only defects (`Die`) in a
 `Cause`.

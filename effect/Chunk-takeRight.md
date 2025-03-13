@@ -1,4 +1,7 @@
-## takeRight
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.takeRight
 
 Takes the last `n` elements.
 

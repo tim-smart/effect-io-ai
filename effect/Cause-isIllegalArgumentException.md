@@ -1,4 +1,7 @@
-## isIllegalArgumentException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isIllegalArgumentException
 
 Checks if a given unknown value is an `IllegalArgumentException`.
 

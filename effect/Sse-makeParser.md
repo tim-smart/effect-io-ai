@@ -1,4 +1,7 @@
-## makeParser
+Package: `@effect/experimental`<br />
+Module: `Sse`<br />
+
+## Sse.makeParser
 
 Create a SSE parser.
 

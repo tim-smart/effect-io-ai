@@ -1,4 +1,7 @@
-## entriesWithPrefix
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.entriesWithPrefix
 
 Returns an `IterableIterator` of the entries within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).

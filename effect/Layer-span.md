@@ -1,4 +1,7 @@
-## span
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.span
 
 Create and add a span to the current span stack.
 

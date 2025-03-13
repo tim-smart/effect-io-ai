@@ -1,4 +1,7 @@
-## pick
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.pick
 
 Equivalent at runtime to the built-in TypeScript utility type `Pick`.
 

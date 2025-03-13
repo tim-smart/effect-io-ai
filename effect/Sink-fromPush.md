@@ -1,4 +1,7 @@
-## fromPush
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fromPush
 
 Creates a sink from a chunk processing function.
 

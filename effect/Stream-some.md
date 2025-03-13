@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.some
 
 Converts an option on values into an option on errors.
 

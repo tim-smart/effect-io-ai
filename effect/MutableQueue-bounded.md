@@ -1,4 +1,7 @@
-## bounded
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.bounded
 
 Creates a new bounded `MutableQueue`.
 

@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.make
 
 Creates a new `MutableList` from the specified elements.
 

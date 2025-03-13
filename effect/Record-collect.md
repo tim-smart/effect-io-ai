@@ -1,4 +1,7 @@
-## collect
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.collect
 
 Transforms the values of a record into an `Array` with a custom mapping function.
 

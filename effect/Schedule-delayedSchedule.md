@@ -1,4 +1,7 @@
-## delayedSchedule
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.delayedSchedule
 
 Uses the delays produced by a schedule to further delay its intervals.
 

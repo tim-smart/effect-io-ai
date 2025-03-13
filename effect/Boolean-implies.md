@@ -1,4 +1,7 @@
-## implies
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.implies
 
 Combines two booleans using an implication: `(!self || that)`.
 

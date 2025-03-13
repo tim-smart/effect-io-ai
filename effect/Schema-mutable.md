@@ -1,4 +1,7 @@
-## mutable
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.mutable
 
 Creates a new schema with shallow mutability applied to its properties.
 

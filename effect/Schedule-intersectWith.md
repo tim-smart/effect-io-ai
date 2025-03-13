@@ -1,4 +1,7 @@
-## intersectWith
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.intersectWith
 
 Combines two schedules, continuing only if both want to continue, merging
 intervals using a custom function.

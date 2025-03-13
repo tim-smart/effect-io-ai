@@ -1,4 +1,7 @@
-## getOrUndefined
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrUndefined
 
 Returns the value contained in the `Option` if it is `Some`; otherwise,
 returns `undefined`.

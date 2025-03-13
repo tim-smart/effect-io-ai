@@ -1,4 +1,7 @@
-## succeed
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.succeed
 
 Creates a `Prompt` which immediately succeeds with the specified value.
 

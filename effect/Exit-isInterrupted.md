@@ -1,4 +1,7 @@
-## isInterrupted
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.isInterrupted
 
 Returns `true` if the specified exit is a `Failure` **and** the `Cause` of
 the failure was due to interruption, `false` otherwise.

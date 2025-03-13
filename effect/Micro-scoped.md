@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scoped
 
 Provide a `MicroScope` to the given effect, closing it after the effect has
 finished executing.

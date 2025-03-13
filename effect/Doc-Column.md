@@ -1,4 +1,7 @@
-## Column
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Column
 
 Represents a document that reacts to the current cursor position.
 

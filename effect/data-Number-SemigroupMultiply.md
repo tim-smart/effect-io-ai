@@ -1,4 +1,7 @@
-## SemigroupMultiply
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.SemigroupMultiply
 
 `number` semigroup under multiplication.
 

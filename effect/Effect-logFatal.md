@@ -1,4 +1,7 @@
-## logFatal
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logFatal
 
 Logs messages at the FATAL log level.
 

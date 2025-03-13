@@ -1,4 +1,7 @@
-## updateManyAs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.updateManyAs
 
 Updates the values of the specified `FiberRef` & value pairs using the provided `FiberId`
 

@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.size
 
 Returns the set's cardinality.
 

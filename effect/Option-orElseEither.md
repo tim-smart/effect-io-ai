@@ -1,4 +1,7 @@
-## orElseEither
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.orElseEither
 
 Similar to `orElse`, but returns an `Either` wrapped in an `Option` to
 indicate the source of the value.

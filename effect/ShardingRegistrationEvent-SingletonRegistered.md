@@ -1,4 +1,7 @@
-## SingletonRegistered
+Package: `@effect/cluster`<br />
+Module: `ShardingRegistrationEvent`<br />
+
+## ShardingRegistrationEvent.SingletonRegistered
 
 Constructs a new event that occurs when a new Singleton is registered.
 

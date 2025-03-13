@@ -1,4 +1,7 @@
-## collectAllN
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllN
 
 A sink that collects first `n` elements into a chunk.
 

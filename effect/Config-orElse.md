@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.orElse
 
 Returns a config whose structure is preferentially described by this
 config, but which falls back to the specified config if there is an issue

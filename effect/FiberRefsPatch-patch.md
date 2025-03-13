@@ -1,4 +1,7 @@
-## patch
+Package: `effect`<br />
+Module: `FiberRefsPatch`<br />
+
+## FiberRefsPatch.patch
 
 Applies the changes described by this patch to the specified collection
 of `FiberRef` values.

@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.map
 
 Maps over the entries of the `Trie` using the specified function.
 

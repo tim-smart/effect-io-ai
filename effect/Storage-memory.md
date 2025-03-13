@@ -1,4 +1,7 @@
-## memory
+Package: `@effect/cluster`<br />
+Module: `Storage`<br />
+
+## Storage.memory
 
 A layer that stores data in-memory.
 This is useful for testing with a single pod only.

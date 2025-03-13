@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.forEach
 
 Applies the specified function to each element of the `List`.
 

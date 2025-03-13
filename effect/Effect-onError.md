@@ -1,4 +1,7 @@
-## onError
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.onError
 
 Ensures a cleanup effect runs whenever the calling effect fails, providing
 the failure cause to the cleanup effect.

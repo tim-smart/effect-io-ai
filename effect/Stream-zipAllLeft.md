@@ -1,4 +1,7 @@
-## zipAllLeft
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipAllLeft
 
 Zips this stream with another point-wise, and keeps only elements from this
 stream.

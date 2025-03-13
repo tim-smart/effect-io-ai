@@ -1,4 +1,7 @@
-## CooperativeYielding
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.CooperativeYielding
 
 The cooperative yielding flag determines whether the Effect runtime will
 yield to another fiber.

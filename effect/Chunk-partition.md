@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.partition
 
 Separate elements based on a predicate that also exposes the index of the element.
 

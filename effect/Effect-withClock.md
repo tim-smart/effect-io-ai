@@ -1,4 +1,7 @@
-## withClock
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withClock
 
 Executes the specified workflow with the specified implementation of the
 `Clock` service.

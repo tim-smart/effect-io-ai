@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.zip
 
 Combines two effects into a single effect, producing a tuple of their
 results.

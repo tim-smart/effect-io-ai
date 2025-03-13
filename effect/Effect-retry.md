@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.retry
 
 Retries a failing effect based on a defined retry policy.
 

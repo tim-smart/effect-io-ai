@@ -1,4 +1,7 @@
-## contextWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.contextWith
 
 Accesses the context and applies a transformation function.
 

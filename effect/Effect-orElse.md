@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.orElse
 
 Attempts one effect, and if it fails, falls back to another effect.
 

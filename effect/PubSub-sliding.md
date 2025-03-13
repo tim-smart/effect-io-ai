@@ -1,4 +1,7 @@
-## sliding
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.sliding
 
 Creates a bounded `PubSub` with the sliding strategy. The `PubSub` will add new
 messages and drop old messages if the `PubSub` is at capacity.

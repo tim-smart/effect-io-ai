@@ -1,4 +1,7 @@
-## isWithPageWidth
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isWithPageWidth
 
 Returns `true` if the specified `Doc` is a `WithPageWidth`, `false` otherwise.
 

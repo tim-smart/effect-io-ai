@@ -1,4 +1,7 @@
-## clampDuration
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.clampDuration
 
 Clamps a `Duration` between a minimum and a maximum value.
 

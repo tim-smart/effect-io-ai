@@ -1,4 +1,7 @@
-## diff
+Package: `effect`<br />
+Module: `FiberRefsPatch`<br />
+
+## FiberRefsPatch.diff
 
 Constructs a patch that describes the changes between the specified
 collections of `FiberRef`

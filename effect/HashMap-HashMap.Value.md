@@ -1,4 +1,7 @@
-## HashMap.Value
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.HashMap.Value
 
 This type-level utility extracts the value type `V` from a `HashMap<K, V>` type.
 

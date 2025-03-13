@@ -1,4 +1,7 @@
-## podsRpc
+Package: `@effect/cluster-node`<br />
+Module: `PodsRpc`<br />
+
+## PodsRpc.podsRpc
 
 Given a function that resolves an RPC client, constructs a Pods service that uses RPC to communicate
 

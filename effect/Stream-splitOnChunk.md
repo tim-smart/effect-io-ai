@@ -1,4 +1,7 @@
-## splitOnChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.splitOnChunk
 
 Splits elements on a delimiter and transforms the splits into desired output.
 

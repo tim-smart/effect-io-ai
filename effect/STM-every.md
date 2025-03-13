@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.every
 
 Determines whether all elements of the `Iterable<A>` satisfy the effectual
 predicate.

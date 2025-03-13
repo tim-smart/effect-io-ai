@@ -1,4 +1,7 @@
-## apiKey
+Package: `@effect/platform`<br />
+Module: `HttpApiSecurity`<br />
+
+## HttpApiSecurity.apiKey
 
 Create an API key security scheme.
 

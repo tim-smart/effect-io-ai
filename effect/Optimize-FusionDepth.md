@@ -1,4 +1,7 @@
-## FusionDepth
+Package: `@effect/printer`<br />
+Module: `Optimize`<br />
+
+## Optimize.FusionDepth
 
 Represents an instruction that determines how deeply the document fusion
 optimizer should traverse the document tree.

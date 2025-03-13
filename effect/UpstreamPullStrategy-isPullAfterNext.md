@@ -1,4 +1,7 @@
-## isPullAfterNext
+Package: `effect`<br />
+Module: `UpstreamPullStrategy`<br />
+
+## UpstreamPullStrategy.isPullAfterNext
 
 Returns `true` if the specified `UpstreamPullStrategy` is a `PullAfterNext`,
 `false` otherwise.

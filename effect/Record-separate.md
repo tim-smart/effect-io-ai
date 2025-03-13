@@ -1,4 +1,7 @@
-## separate
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.separate
 
 Partitions a record of `Either` values into two separate records,
 one with the `Left` values and one with the `Right` values.

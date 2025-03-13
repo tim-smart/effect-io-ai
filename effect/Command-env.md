@@ -1,4 +1,7 @@
-## env
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.env
 
 Specify the environment variables that will be used when running this command.
 

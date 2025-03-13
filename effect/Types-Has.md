@@ -1,4 +1,7 @@
-## Has
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Has
 
 Determines if a record contains any of the given keys.
 

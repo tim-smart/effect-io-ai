@@ -1,4 +1,7 @@
-## foldWeightedEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldWeightedEffect
 
 Creates a sink that effectfully folds elements of type `In` into a
 structure of type `S`, until `max` worth of elements (determined by the

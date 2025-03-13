@@ -1,4 +1,7 @@
-## isFailType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isFailType
 
 Checks if a `Cause` is a `Fail` type.
 

@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.unsafeGet
 
 Gets an element unsafely, will throw on out of bounds
 

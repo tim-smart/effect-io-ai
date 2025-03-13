@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `RcRef`<br />
+
+## RcRef.make
 
 Create an `RcRef` from an acquire `Effect`.
 

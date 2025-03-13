@@ -1,4 +1,7 @@
-## prependAll
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.prependAll
 
 Prepends the specified prefix chunk to the beginning of the specified chunk.
 If either chunk is non-empty, the result is also a non-empty chunk.

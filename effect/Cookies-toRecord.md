@@ -1,4 +1,7 @@
-## toRecord
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.toRecord
 
 To record
 

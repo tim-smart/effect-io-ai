@@ -1,4 +1,7 @@
-## setUsername
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setUsername
 
 Updates the username used for authentication.
 

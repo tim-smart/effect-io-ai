@@ -1,4 +1,7 @@
-## repeat
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.repeat
 
 Repeat the given `Micro` effect using the provided options. Only successful
 results will be repeated.

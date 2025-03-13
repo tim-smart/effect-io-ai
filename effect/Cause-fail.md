@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.fail
 
 Creates a `Fail` cause from an expected error.
 

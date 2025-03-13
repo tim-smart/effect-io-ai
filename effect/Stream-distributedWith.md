@@ -1,4 +1,7 @@
-## distributedWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.distributedWith
 
 More powerful version of `Stream.broadcast`. Allows to provide a function
 that determines what queues should receive which elements. The decide

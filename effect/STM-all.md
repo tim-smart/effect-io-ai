@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.all
 
 Runs all the provided transactional effects in sequence respecting the
 structure provided in input.

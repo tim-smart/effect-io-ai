@@ -1,4 +1,7 @@
-## date
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.date
 
 Constructs a config for a date value.
 

@@ -1,4 +1,7 @@
-## layerTest
+Package: `@effect/platform-bun`<br />
+Module: `BunHttpServer`<br />
+
+## BunHttpServer.layerTest
 
 Layer starting a server on a random port and producing an `HttpClient`
 with prepended url of the running http server.

@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.get
 
 Retrieve a value at a particular key from a record, returning it wrapped in an `Option`.
 

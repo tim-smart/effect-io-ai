@@ -1,4 +1,7 @@
-## autoFromConfig
+Package: `effect`<br />
+Module: `Reloadable`<br />
+
+## Reloadable.autoFromConfig
 
 Makes a new reloadable service from a layer that describes the construction
 of a static service. The service is automatically reloaded according to a

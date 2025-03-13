@@ -1,4 +1,7 @@
-## catchAllCause
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.catchAllCause
 
 Switches over to the stream produced by the provided function in case this
 one fails. Allows recovery from all causes of failure, including

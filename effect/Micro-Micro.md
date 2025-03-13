@@ -1,4 +1,7 @@
-## Micro
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.Micro
 
 A lightweight alternative to the `Effect` data type, with a subset of the functionality.
 

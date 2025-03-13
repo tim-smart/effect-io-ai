@@ -1,4 +1,7 @@
-## recipientType
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.recipientType
 
 Gets the current recipientType
 

@@ -1,4 +1,7 @@
-## redacted
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.redacted
 
 Creates a text argument.
 

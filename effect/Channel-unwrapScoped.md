@@ -1,4 +1,7 @@
-## unwrapScoped
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.unwrapScoped
 
 Constructs a `Channel` from a scoped effect that will result in a
 `Channel` if successful.

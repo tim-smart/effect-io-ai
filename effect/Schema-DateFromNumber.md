@@ -1,4 +1,7 @@
-## DateFromNumber
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateFromNumber
 
 Defines a schema that converts a `number` into a `Date` object using the `new
 Date` constructor. This schema does not validate the numerical input,

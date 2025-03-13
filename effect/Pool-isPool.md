@@ -1,4 +1,7 @@
-## isPool
+Package: `effect`<br />
+Module: `Pool`<br />
+
+## Pool.isPool
 
 Returns `true` if the specified value is a `Pool`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## filterOrLeft
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.filterOrLeft
 
 Filter the right value with the provided function.
 If the predicate fails, set the left value with the result of the provided function.

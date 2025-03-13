@@ -1,4 +1,7 @@
-## StringFromUriComponent
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.StringFromUriComponent
 
 Decodes a URI component encoded string into a UTF-8 string.
 Can be used to store data in a URL.

@@ -1,4 +1,7 @@
-## allowInterrupt
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.allowInterrupt
 
 Allows interruption of the current fiber, even in uninterruptible regions.
 

@@ -1,4 +1,7 @@
-## CharStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.CharStream
 
 Represents a `Doc` containing a single character.
 

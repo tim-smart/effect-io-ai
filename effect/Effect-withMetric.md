@@ -1,4 +1,7 @@
-## withMetric
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withMetric
 
 Associates a metric with the current effect, updating it as the effect progresses.
 

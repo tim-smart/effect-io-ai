@@ -1,4 +1,7 @@
-## Schedule
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.Schedule
 
 A `Schedule<Out, In, R>` defines a recurring schedule, which consumes values
 of type `In`, and which returns values of type `Out`.

@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.provideContext
 
 Provides this data source with its required context.
 

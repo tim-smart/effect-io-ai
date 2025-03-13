@@ -1,4 +1,7 @@
-## mapErrorCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mapErrorCause
 
 Maps the cause of failure of an effect using a specified function.
 

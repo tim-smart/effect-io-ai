@@ -1,4 +1,7 @@
-## greaterThan
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.greaterThan
 
 Returns `true` if the first argument is greater than the second, otherwise `false`.
 

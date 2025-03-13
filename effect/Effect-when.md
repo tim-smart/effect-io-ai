@@ -1,4 +1,7 @@
-## when
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.when
 
 Conditionally executes an effect based on a boolean condition.
 

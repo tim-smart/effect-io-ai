@@ -1,4 +1,7 @@
-## setUrlParams
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setUrlParams
 
 Updates the query parameters of a URL.
 

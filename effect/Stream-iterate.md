@@ -1,4 +1,7 @@
-## iterate
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.iterate
 
 The infinite stream of iterative function application: a, f(a), f(f(a)),
 f(f(f(a))), ...

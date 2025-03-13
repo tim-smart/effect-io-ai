@@ -1,4 +1,7 @@
-## repeats
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.repeats
 
 The number of times to repeat tests to ensure they are stable.
 

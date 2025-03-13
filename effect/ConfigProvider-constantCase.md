@@ -1,4 +1,7 @@
-## constantCase
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.constantCase
 
 Returns a new config provider that will automatically convert all property
 names to constant case. This can be utilized to adapt the names of

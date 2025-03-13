@@ -1,4 +1,7 @@
-## runCallback
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runCallback
 
 Executes an effect asynchronously and handles the result using a callback.
 

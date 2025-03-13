@@ -1,4 +1,7 @@
-## toReadableStreamEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toReadableStreamEffect
 
 Converts the stream to a `Effect<ReadableStream>`.
 

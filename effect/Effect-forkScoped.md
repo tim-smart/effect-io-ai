@@ -1,4 +1,7 @@
-## forkScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forkScoped
 
 Forks a fiber in a local scope, ensuring it outlives its parent.
 

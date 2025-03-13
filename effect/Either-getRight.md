@@ -1,4 +1,7 @@
-## getRight
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.getRight
 
 Converts a `Either` to an `Option` discarding the `Left`.
 

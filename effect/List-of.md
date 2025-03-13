@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.of
 
 Constructs a new `List<A>` from the specified value.
 

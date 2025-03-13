@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.size
 
 Returns the number of entries within the `HashMap`.
 

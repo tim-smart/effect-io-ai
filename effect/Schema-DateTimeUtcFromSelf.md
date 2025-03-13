@@ -1,4 +1,7 @@
-## DateTimeUtcFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateTimeUtcFromSelf
 
 Describes a schema that represents a `DateTime.Utc` instance.
 

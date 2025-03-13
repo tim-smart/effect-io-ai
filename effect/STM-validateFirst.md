@@ -1,4 +1,7 @@
-## validateFirst
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.validateFirst
 
 Feeds elements of type `A` to `f` until it succeeds. Returns first success
 or the accumulation of all errors.

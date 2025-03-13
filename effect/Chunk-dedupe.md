@@ -1,4 +1,7 @@
-## dedupe
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.dedupe
 
 Remove duplicates from an array, keeping the first occurrence of an element.
 

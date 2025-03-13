@@ -1,4 +1,7 @@
-## isObject
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isObject
 
 Tests if a value is an `object`.
 

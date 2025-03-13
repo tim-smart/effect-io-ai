@@ -1,4 +1,7 @@
-## logDebug
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logDebug
 
 Logs messages at the DEBUG log level.
 

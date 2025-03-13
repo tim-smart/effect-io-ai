@@ -1,4 +1,7 @@
-## CloseLatch
+Package: `@effect/platform`<br />
+Module: `WorkerRunner`<br />
+
+## WorkerRunner.CloseLatch
 
 The worker close latch is used by platform runners to signal that the worker
 has been closed.

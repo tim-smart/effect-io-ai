@@ -1,4 +1,7 @@
-## getSomes
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.getSomes
 
 Retrieves the `Some` values from an `Iterable` of `Option`s, collecting them into an array.
 

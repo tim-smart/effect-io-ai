@@ -1,4 +1,7 @@
-## setPathname
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setPathname
 
 Updates the path of the URL.
 

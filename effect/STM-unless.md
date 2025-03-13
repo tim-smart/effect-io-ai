@@ -1,4 +1,7 @@
-## unless
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.unless
 
 The moral equivalent of `if (!p) exp`
 

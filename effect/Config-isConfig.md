@@ -1,4 +1,7 @@
-## isConfig
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.isConfig
 
 This function returns `true` if the specified value is an `Config` value,
 `false` otherwise.

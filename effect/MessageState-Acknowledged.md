@@ -1,4 +1,7 @@
-## Acknowledged
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.Acknowledged
 
 Constructs an AcknowledgedMessageState.
 

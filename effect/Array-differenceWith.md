@@ -1,4 +1,7 @@
-## differenceWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.differenceWith
 
 Creates a `Array` of values not included in the other given `Iterable` using the provided `isEquivalent` function.
 The order and references of result values are determined by the first `Iterable`.

@@ -1,4 +1,7 @@
-## transformSTM
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.transformSTM
 
 Atomically updates all bindings using a transactional function.
 

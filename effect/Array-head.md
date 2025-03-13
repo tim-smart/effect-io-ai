@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.head
 
 Get the first element of a `ReadonlyArray`, or `None` if the `ReadonlyArray` is empty.
 

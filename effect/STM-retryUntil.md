@@ -1,4 +1,7 @@
-## retryUntil
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.retryUntil
 
 Filters the value produced by this effect, retrying the transaction until
 the predicate returns `true` for the value.

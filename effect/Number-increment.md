@@ -1,4 +1,7 @@
-## increment
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.increment
 
 Returns the result of adding `1` to a given number.
 

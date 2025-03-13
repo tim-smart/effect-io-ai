@@ -1,4 +1,7 @@
-## parseJson
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.parseJson
 
 The `ParseJson` combinator provides a method to convert JSON strings into the `unknown` type using the underlying
 functionality of `JSON.parse`. It also utilizes `JSON.stringify` for encoding.

@@ -1,4 +1,7 @@
-## attachPropertySignature
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.attachPropertySignature
 
 Attaches a property signature with the specified key and value to the schema.
 This API is useful when you want to add a property to your schema which doesn't describe the shape of the input,

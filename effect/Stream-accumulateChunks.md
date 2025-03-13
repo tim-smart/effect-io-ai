@@ -1,4 +1,7 @@
-## accumulateChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.accumulateChunks
 
 Re-chunks the elements of the stream by accumulating each underlying chunk.
 

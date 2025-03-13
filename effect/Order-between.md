@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.between
 
 Test whether a value is between a minimum and a maximum (inclusive).
 

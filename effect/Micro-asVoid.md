@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.asVoid
 
 Replace the success value of the `Micro` effect with `void`.
 

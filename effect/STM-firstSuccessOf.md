@@ -1,4 +1,7 @@
-## firstSuccessOf
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.firstSuccessOf
 
 This function takes an iterable of `STM` values and returns a new
 `STM` value that represents the first `STM` value in the iterable

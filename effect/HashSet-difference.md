@@ -1,4 +1,7 @@
-## difference
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.difference
 
 Computes the set difference between this `HashSet` and the specified
 `Iterable<A>`.

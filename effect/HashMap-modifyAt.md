@@ -1,4 +1,7 @@
-## modifyAt
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.modifyAt
 
 Set or remove the specified key in the `HashMap` using the specified
 update function. The value of the specified key will be computed using the

@@ -1,4 +1,7 @@
-## tap
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.tap
 
 Performs the specified effect if this layer succeeds.
 

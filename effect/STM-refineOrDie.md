@@ -1,4 +1,7 @@
-## refineOrDie
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.refineOrDie
 
 Keeps some of the errors, and terminates the fiber with the rest.
 

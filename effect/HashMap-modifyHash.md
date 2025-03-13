@@ -1,4 +1,7 @@
-## modifyHash
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.modifyHash
 
 Alter the value of the specified key in the `HashMap` using the specified
 update function. The value of the specified key will be computed using the

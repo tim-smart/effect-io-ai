@@ -1,4 +1,7 @@
-## zoneMakeNamedEffect
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneMakeNamedEffect
 
 Create a named time zone from a IANA time zone identifier. If the time zone
 is invalid, it will fail with an `IllegalArgumentException`.

@@ -1,4 +1,7 @@
-## bounded
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.bounded
 
 Makes a new bounded `Queue`. When the capacity of the queue is reached, any
 additional calls to `offer` will be suspended until there is more room in

@@ -1,4 +1,7 @@
-## scheduleFrom
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scheduleFrom
 
 Runs an effect repeatedly according to a schedule, starting from a specified
 input value.

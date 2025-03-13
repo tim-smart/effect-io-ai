@@ -1,4 +1,7 @@
-## OpenAiTelemetry.AllAttributes
+Package: `@effect/ai-openai`<br />
+Module: `OpenAiTelemetry`<br />
+
+## OpenAiTelemetry.OpenAiTelemetry.AllAttributes
 
 All telemetry attributes which are part of the GenAI specification,
 including the OpenAi-specific attributes.

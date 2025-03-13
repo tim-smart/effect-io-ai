@@ -1,4 +1,7 @@
-## interruptFork
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.interruptFork
 
 Interrupts the fiber from whichever fiber is calling this method. The
 interruption will happen in a separate daemon fiber, and the returned

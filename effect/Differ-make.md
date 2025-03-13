@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.make
 
 Constructs a new `Differ`.
 

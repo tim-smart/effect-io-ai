@@ -1,4 +1,7 @@
-## delay
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.delay
 
 Delays the execution of an effect by a specified `Duration`.
 

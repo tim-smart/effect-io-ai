@@ -1,4 +1,7 @@
-## clampBigInt
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.clampBigInt
 
 Clamps a bigint between a minimum and a maximum value.
 

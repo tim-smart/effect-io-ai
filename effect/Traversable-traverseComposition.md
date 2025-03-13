@@ -1,4 +1,7 @@
-## traverseComposition
+Package: `@effect/typeclass`<br />
+Module: `Traversable`<br />
+
+## Traversable.traverseComposition
 
 Returns a default binary `traverse` composition.
 

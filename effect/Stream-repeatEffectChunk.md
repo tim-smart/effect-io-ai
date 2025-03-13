@@ -1,4 +1,7 @@
-## repeatEffectChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEffectChunk
 
 Creates a stream from an effect producing chunks of `A` values which
 repeats forever.

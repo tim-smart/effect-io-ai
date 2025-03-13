@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.failCauseSync
 
 Creates a `Micro` effect that will fail with the lazily evaluated `MicroCause`.
 

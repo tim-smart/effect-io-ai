@@ -1,4 +1,7 @@
-## or
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.or
 
 Combines two predicates into a new predicate that returns `true` if at least one of the predicates returns `true`.
 

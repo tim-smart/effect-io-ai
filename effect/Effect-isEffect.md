@@ -1,4 +1,7 @@
-## isEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.isEffect
 
 Checks if a given value is an `Effect` value.
 

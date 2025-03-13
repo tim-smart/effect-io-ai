@@ -1,4 +1,7 @@
-## dieMessage
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.dieMessage
 
 Creates a failing `Take` with the specified error message.
 

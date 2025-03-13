@@ -1,4 +1,7 @@
-## ExecutionStrategy
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.ExecutionStrategy
 
 Describes a strategy for evaluating multiple effects, potentially in
 parallel.

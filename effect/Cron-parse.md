@@ -1,4 +1,7 @@
-## parse
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.parse
 
 Parses a cron expression into a `Cron` instance.
 

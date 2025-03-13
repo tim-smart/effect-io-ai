@@ -1,4 +1,7 @@
-## withDuration
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.withDuration
 
 Returns the sink that executes this one and times its execution.
 

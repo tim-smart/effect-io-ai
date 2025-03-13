@@ -1,4 +1,7 @@
-## stderr
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.stderr
 
 Specify the standard error stream for a command.
 

@@ -1,4 +1,7 @@
-## multiply
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.multiply
 
 Provides a multiplication operation on `number`s.
 

@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.match
 
 Folds over the specified `ExecutionStrategy` using the provided case
 functions.

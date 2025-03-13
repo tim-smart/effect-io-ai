@@ -1,4 +1,7 @@
-## catchAllDefect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchAllDefect
 
 Recovers from all defects using a provided recovery function.
 

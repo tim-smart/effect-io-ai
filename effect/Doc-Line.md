@@ -1,4 +1,7 @@
-## Line
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Line
 
 Represents a document that contains a hard line break.
 

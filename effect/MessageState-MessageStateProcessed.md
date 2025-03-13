@@ -1,4 +1,7 @@
-## MessageStateProcessed
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.MessageStateProcessed
 
 A message state given to processed messages.
 This state tells the sender that the receiver has already received and processed the message.

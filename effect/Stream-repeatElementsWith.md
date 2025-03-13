@@ -1,4 +1,7 @@
-## repeatElementsWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatElementsWith
 
 Repeats each element of the stream using the provided schedule. When the
 schedule is finished, then the output of the schedule will be emitted into

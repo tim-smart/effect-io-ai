@@ -1,4 +1,7 @@
-## collectUntilEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.collectUntilEffect
 
 Collects all inputs into a `Chunk` until an effectful condition fails.
 

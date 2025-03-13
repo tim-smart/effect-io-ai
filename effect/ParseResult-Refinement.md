@@ -1,4 +1,7 @@
-## Refinement
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Refinement
 
 Error that occurs when a refinement has an error.
 

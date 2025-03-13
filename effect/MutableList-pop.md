@@ -1,4 +1,7 @@
-## pop
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.pop
 
 Removes the last value from the list and returns it, if it exists.
 

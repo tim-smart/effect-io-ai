@@ -1,4 +1,7 @@
-## takeLeft
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.takeLeft
 
 Keep the specified number of characters from the start of a string.
 

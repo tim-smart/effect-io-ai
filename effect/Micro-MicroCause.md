@@ -1,4 +1,7 @@
-## MicroCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.MicroCause
 
 A `MicroCause` is a data type that represents the different ways a `Micro` can fail.
 

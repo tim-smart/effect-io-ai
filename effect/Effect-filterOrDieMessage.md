@@ -1,4 +1,7 @@
-## filterOrDieMessage
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filterOrDieMessage
 
 Filters an effect, dying with a custom message if the predicate fails.
 

@@ -1,4 +1,7 @@
-## isActive
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.isActive
 
 Returns `true` if the `RuntimeFlagsPatch` describes the specified
 `RuntimeFlag` as active.

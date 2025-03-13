@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.take
 
 Keep only a max number of elements from the start of an `Iterable`, creating a new `Array`.
 

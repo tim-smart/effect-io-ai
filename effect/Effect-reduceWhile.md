@@ -1,4 +1,7 @@
-## reduceWhile
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.reduceWhile
 
 Reduces an `Iterable<A>` using an effectual function `body`, working
 sequentially from left to right, stopping the process early when the

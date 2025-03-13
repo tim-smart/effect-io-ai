@@ -1,4 +1,7 @@
-## pipe
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.pipe
 
 Pipes the value of an expression into a pipeline of functions.
 

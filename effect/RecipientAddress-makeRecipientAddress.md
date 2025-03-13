@@ -1,4 +1,7 @@
-## makeRecipientAddress
+Package: `@effect/cluster`<br />
+Module: `RecipientAddress`<br />
+
+## RecipientAddress.makeRecipientAddress
 
 Given a name and a schema for the protocol, constructs an EntityType.
 

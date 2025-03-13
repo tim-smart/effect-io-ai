@@ -1,4 +1,7 @@
-## runPromiseExit
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runPromiseExit
 
 Runs an effect and returns a `Promise` that resolves to an `Exit`,
 representing the outcome.

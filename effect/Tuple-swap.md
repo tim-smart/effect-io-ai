@@ -1,4 +1,7 @@
-## swap
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.swap
 
 Swaps the two elements of a tuple.
 

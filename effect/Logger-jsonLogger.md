@@ -1,4 +1,7 @@
-## jsonLogger
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.jsonLogger
 
 The `jsonLogger` logger formats log entries as JSON objects, making them easy to
 integrate with logging systems that consume JSON data.

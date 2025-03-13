@@ -1,4 +1,7 @@
-## scope
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scope
 
 Access the current `MicroScope`.
 

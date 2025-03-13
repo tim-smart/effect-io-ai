@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.empty
 
 Creates an empty `HashSet`.
 

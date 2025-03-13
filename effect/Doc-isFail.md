@@ -1,4 +1,7 @@
-## isFail
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isFail
 
 Returns `true` if the specified `Doc` is a `Fail`, `false` otherwise.
 

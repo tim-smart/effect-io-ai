@@ -1,4 +1,7 @@
-## UnionToIntersection
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.UnionToIntersection
 
 A utility type that transforms a union type `T` into an intersection type.
 

@@ -1,4 +1,7 @@
-## first
+Package: `effect`<br />
+Module: `GroupBy`<br />
+
+## GroupBy.first
 
 Only consider the first `n` groups found in the `Stream`.
 

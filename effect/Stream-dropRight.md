@@ -1,4 +1,7 @@
-## dropRight
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.dropRight
 
 Drops the last specified number of elements from this stream.
 

@@ -1,4 +1,7 @@
-## withCurrentZoneOffset
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.withCurrentZoneOffset
 
 Provide the `CurrentTimeZone` to an effect, using a offset.
 

@@ -1,4 +1,7 @@
-## RequestResolver
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.RequestResolver
 
 The `RequestResolver<A, R>` interface requires an environment `R` and handles
 the execution of requests of type `A`.

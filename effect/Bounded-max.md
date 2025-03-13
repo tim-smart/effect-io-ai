@@ -1,4 +1,7 @@
-## max
+Package: `@effect/typeclass`<br />
+Module: `Bounded`<br />
+
+## Bounded.max
 
 `Monoid` that returns last maximum of elements.
 

@@ -1,4 +1,7 @@
-## none
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.none
 
 Creates an empty argument.
 

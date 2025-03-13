@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.orElse
 
 Returns a fiber that prefers `this` fiber, but falls back to the `that` one
 when `this` one fails. Interrupting the returned fiber will interrupt both

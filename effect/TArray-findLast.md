@@ -1,4 +1,7 @@
-## findLast
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findLast
 
 Find the last element in the array matching a predicate.
 

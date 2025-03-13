@@ -1,4 +1,7 @@
-## isUpstreamPullStrategy
+Package: `effect`<br />
+Module: `UpstreamPullStrategy`<br />
+
+## UpstreamPullStrategy.isUpstreamPullStrategy
 
 Returns `true` if the specified value is an `UpstreamPullStrategy`, `false`
 otherwise.

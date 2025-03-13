@@ -1,4 +1,7 @@
-## format
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.format
 
 Converts a `Duration` to a human readable string.
 

@@ -1,4 +1,7 @@
-## recurUntilEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.recurUntilEffect
 
 A schedule that recurs until the given effectful predicate evaluates to true.
 

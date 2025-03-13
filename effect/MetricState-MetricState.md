@@ -1,4 +1,7 @@
-## MetricState
+Package: `effect`<br />
+Module: `MetricState`<br />
+
+## MetricState.MetricState
 
 A `MetricState` describes the state of a metric. The type parameter of a
 metric state corresponds to the type of the metric key (`MetricStateType`).

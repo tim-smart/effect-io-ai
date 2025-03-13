@@ -1,4 +1,7 @@
-## stripMarginWith
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.stripMarginWith
 
 For every line in this string, strip a leading prefix consisting of blanks
 or control characters followed by the character specified by `marginChar`

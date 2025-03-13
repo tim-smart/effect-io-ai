@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.match
 
 Matches the elements of an array, applying functions to cases of empty and non-empty arrays.
 

@@ -1,4 +1,7 @@
-## isSchema
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.isSchema
 
 Tests if a value is a `Schema`.
 

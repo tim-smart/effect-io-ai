@@ -1,4 +1,7 @@
-## isDate
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isDate
 
 A guard that succeeds when the input is a `Date`.
 

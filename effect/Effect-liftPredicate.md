@@ -1,4 +1,7 @@
-## liftPredicate
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.liftPredicate
 
 Transforms a `Predicate` function into an `Effect` returning the input value if the predicate returns `true`
 or failing with specified error if the predicate fails

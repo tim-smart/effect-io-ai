@@ -1,4 +1,7 @@
-## format
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.format
 
 Formats a given `BigDecimal` as a `string`.
 

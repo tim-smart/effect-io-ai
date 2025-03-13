@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.unsafeGet
 
 Get a service from the context that corresponds to the given tag.
 This function is unsafe because if the tag is not present in the context, a runtime error will be thrown.

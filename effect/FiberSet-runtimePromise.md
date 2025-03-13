@@ -1,4 +1,7 @@
-## runtimePromise
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.runtimePromise
 
 Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.
 

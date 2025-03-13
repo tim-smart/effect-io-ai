@@ -1,4 +1,7 @@
-## pad
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.pad
 
 Pads an array.
 Returns a new array of length `n` with the elements of `array` followed by `fill` elements if `array` is shorter than `n`.

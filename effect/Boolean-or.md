@@ -1,4 +1,7 @@
-## or
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.or
 
 Combines two boolean using OR: `self || that`.
 

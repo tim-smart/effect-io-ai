@@ -1,4 +1,7 @@
-## BooleanFromUnknown
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.BooleanFromUnknown
 
 Converts an arbitrary value to a `boolean` by testing whether it is truthy.
 Uses `!!val` to coerce the value to a `boolean`.

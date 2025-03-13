@@ -1,4 +1,7 @@
-## makeDataLoaders
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.makeDataLoaders
 
 Create some simple data loaders from a model.
 

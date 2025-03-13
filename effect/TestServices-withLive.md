@@ -1,4 +1,7 @@
-## withLive
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withLive
 
 Executes the specified workflow with the specified implementation of the
 live service.

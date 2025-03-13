@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.catchAll
 
 Recovers from all errors.
 

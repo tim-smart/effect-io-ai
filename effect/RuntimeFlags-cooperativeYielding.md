@@ -1,4 +1,7 @@
-## cooperativeYielding
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.cooperativeYielding
 
 Returns `true` if the `CooperativeYielding` `RuntimeFlag` is enabled, `false`
 otherwise.

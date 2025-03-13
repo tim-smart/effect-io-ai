@@ -1,4 +1,7 @@
-## uppercased
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.uppercased
 
 Verifies that a string is uppercased.
 

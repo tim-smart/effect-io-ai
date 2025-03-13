@@ -1,4 +1,7 @@
-## Handlers
+Package: `@effect/experimental`<br />
+Module: `EventLog`<br />
+
+## EventLog.Handlers
 
 Represents a handled `EventGroup`.
 

@@ -1,4 +1,7 @@
-## Scope.Finalizer
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.Scope.Finalizer
 
 A finalizer function that takes an `Exit` value and returns an `Effect`.
 

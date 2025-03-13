@@ -1,4 +1,7 @@
-## lastOption
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.lastOption
 
 The last entry in the array, if it exists.
 

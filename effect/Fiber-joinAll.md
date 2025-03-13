@@ -1,4 +1,7 @@
-## joinAll
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.joinAll
 
 Joins all fibers, awaiting their _successful_ completion. Attempting to
 join a fiber that has erred will result in a catchable error, _if_ that

@@ -1,4 +1,7 @@
-## getOrThrow
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.getOrThrow
 
 Extracts the value of an `Either` or throws if the `Either` is `Left`.
 

@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipRight
 
 Zips this stream with another point-wise, but keeps only the outputs of the
 `right` stream.

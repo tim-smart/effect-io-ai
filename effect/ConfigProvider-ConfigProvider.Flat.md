@@ -1,4 +1,7 @@
-## ConfigProvider.Flat
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.ConfigProvider.Flat
 
 A simplified config provider that knows only how to deal with flat
 (key/value) properties. Because these providers are common, there is

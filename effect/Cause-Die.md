@@ -1,4 +1,7 @@
-## Die
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Die
 
 Represents an unexpected defect within a `Cause`.
 

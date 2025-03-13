@@ -1,4 +1,7 @@
-## encloseSep
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.encloseSep
 
 The `encloseSep` combinator concatenates a collection of documents,
 separating each document in the collection using the specified `sep`

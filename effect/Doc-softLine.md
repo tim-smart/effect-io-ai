@@ -1,4 +1,7 @@
-## softLine
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.softLine
 
 The `softLine` document behaves like `space` if the resulting output fits
 onto the page, otherwise it behaves like `line`.

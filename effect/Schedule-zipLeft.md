@@ -1,4 +1,7 @@
-## zipLeft
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.zipLeft
 
 The same as `intersect` but ignores the right output.
 

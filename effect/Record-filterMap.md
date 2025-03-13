@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.filterMap
 
 Transforms a record into a record by applying the function `f` to each key and value in the original record.
 If the function returns `Some`, the key-value pair is included in the output record.

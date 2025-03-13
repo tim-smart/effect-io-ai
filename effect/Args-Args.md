@@ -1,4 +1,7 @@
-## Args
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.Args
 
 Represents arguments that can be passed to a command-line application.
 

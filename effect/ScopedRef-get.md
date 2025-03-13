@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `ScopedRef`<br />
+
+## ScopedRef.get
 
 Retrieves the current value of the scoped reference.
 

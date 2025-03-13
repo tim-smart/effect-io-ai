@@ -1,4 +1,7 @@
-## MonoidSum
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.MonoidSum
 
 `bigint` monoid under addition.
 

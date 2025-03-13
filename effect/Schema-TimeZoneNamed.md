@@ -1,4 +1,7 @@
-## TimeZoneNamed
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TimeZoneNamed
 
 Defines a schema that attempts to convert a `string` to a `TimeZone.Named` instance using the `DateTime.zoneUnsafeMakeNamed` constructor.
 

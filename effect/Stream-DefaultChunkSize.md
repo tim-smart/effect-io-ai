@@ -1,4 +1,7 @@
-## DefaultChunkSize
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.DefaultChunkSize
 
 The default chunk size used by the various combinators and constructors of
 `Stream`.

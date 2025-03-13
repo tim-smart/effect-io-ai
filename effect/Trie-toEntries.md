@@ -1,4 +1,7 @@
-## toEntries
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.toEntries
 
 Returns an `Array<[K, V]>` of the entries within the `Trie`.
 

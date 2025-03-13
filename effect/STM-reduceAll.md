@@ -1,4 +1,7 @@
-## reduceAll
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.reduceAll
 
 Reduces an `Iterable<STM>` to a single `STM`, working sequentially.
 

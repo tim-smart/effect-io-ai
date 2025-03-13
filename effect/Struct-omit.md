@@ -1,4 +1,7 @@
-## omit
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.omit
 
 Create a new object by omitting properties of an existing object.
 

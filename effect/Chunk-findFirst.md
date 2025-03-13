@@ -1,4 +1,7 @@
-## findFirst
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.findFirst
 
 Returns the first element that satisfies the specified
 predicate, or `None` if no such element exists.

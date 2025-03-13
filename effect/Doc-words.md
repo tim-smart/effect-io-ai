@@ -1,4 +1,7 @@
-## words
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.words
 
 Splits a string of words into individual `Text` documents using the
 specified `char` to split on (defaults to `" "`).

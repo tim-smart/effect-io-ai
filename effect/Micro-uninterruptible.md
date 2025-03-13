@@ -1,4 +1,7 @@
-## uninterruptible
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.uninterruptible
 
 Flag the effect as uninterruptible, which means that when the effect is
 interrupted, it will be allowed to continue running until completion.

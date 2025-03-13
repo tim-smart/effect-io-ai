@@ -1,4 +1,7 @@
-## rbracket
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.rbracket
 
 A document containing a single `]` character.
 

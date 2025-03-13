@@ -1,4 +1,7 @@
-## EntityType
+Package: `@effect/cluster`<br />
+Module: `RecipientType`<br />
+
+## RecipientType.EntityType
 
 An EntityType is a RecipientType that is ensured to be alive only on a single Pod at a time.
 

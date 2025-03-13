@@ -1,4 +1,7 @@
-## forkWithErrorHandler
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forkWithErrorHandler
 
 Like `fork` but handles an error with the provided handler.
 

@@ -1,4 +1,7 @@
-## declare
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.declare
 
 The constraint `R extends Schema.Context<P[number]>` enforces dependencies solely from `typeParameters`.
 This ensures that when you call `Schema.to` or `Schema.from`, you receive a schema with a `never` context.

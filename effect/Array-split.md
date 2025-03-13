@@ -1,4 +1,7 @@
-## split
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.split
 
 Splits this iterable into `n` equally sized arrays.
 

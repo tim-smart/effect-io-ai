@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.make
 
 Constructs a new `List<A>` from the specified values.
 

@@ -1,4 +1,7 @@
-## isPod
+Package: `@effect/cluster`<br />
+Module: `Pod`<br />
+
+## Pod.isPod
 
 Given a value, ensures that it's a valid Pod.
 

@@ -1,4 +1,7 @@
-## intersection
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.intersection
 
 Merge two records, retaining only the entries that exist in both records.
 

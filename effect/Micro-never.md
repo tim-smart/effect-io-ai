@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.never
 
 A `Micro` that will never succeed or fail. It wraps `setInterval` to prevent
 the Javascript runtime from exiting.

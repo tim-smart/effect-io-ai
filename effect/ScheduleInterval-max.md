@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.max
 
 Returns the maximum of two `Interval`s.
 

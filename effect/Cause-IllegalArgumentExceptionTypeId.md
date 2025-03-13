@@ -1,4 +1,7 @@
-## IllegalArgumentExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.IllegalArgumentExceptionTypeId
 
 A unique symbol identifying the `IllegalArgumentException` type.
 

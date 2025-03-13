@@ -1,4 +1,7 @@
-## unsafeToNumber
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.unsafeToNumber
 
 Converts a `BigDecimal` to a `number`.
 

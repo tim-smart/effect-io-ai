@@ -1,4 +1,7 @@
-## mapErrorCause
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.mapErrorCause
 
 Maps over the `Cause` contained in the `Failure` of the specified exit using
 the provided function.

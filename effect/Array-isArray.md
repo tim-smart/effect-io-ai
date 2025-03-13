@@ -1,4 +1,7 @@
-## isArray
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.isArray
 
 Determine if `unknown` is an Array.
 

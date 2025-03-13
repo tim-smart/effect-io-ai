@@ -1,4 +1,7 @@
-## concatMapWith
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.concatMapWith
 
 Returns a new channel whose outputs are fed to the specified factory
 function, which creates new channels in response. These new channels are

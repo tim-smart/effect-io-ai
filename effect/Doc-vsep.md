@@ -1,4 +1,7 @@
-## vsep
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.vsep
 
 The `vsep` combinator concatenates all documents in a collection vertically.
 If a `group` undoes the line breaks inserted by `vsep`, the documents are

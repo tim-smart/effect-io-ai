@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.never
 
 A fiber that never fails or succeeds.
 

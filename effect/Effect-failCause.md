@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.failCause
 
 Creates an `Effect` that fails with the specified `Cause`.
 

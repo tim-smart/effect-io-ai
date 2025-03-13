@@ -1,4 +1,7 @@
-## zonedOffsetIso
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zonedOffsetIso
 
 Calculate the time zone offset of a `DateTime` in milliseconds.
 

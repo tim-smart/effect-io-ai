@@ -1,4 +1,7 @@
-## recurs
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.recurs
 
 A schedule that recurs a fixed number of times before terminating.
 

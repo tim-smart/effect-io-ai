@@ -1,4 +1,7 @@
-## encodeBase64
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.encodeBase64
 
 Encodes the given value into a base64 (RFC4648) `string`.
 

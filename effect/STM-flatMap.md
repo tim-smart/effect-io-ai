@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.flatMap
 
 Feeds the value produced by this effect to the specified function, and then
 runs the returned effect as well to produce its results.

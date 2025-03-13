@@ -1,4 +1,7 @@
-## aggregate
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.aggregate
 
 Aggregates elements of this stream using the provided sink for as long as
 the downstream operators on the stream are busy.

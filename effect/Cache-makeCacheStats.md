@@ -1,4 +1,7 @@
-## makeCacheStats
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.makeCacheStats
 
 Constructs a new `CacheStats` from the specified values.
 

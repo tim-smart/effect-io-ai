@@ -1,4 +1,7 @@
-## renderSimplyDecorated
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.renderSimplyDecorated
 
 The simplest possible tree-based renderer.
 

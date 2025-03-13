@@ -1,4 +1,7 @@
-## TimeoutException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.TimeoutException
 
 An error representing a computation that timed out.
 

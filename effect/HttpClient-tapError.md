@@ -1,4 +1,7 @@
-## tapError
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.tapError
 
 Performs an additional effect after an unsuccessful request.
 

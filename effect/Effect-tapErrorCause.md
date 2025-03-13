@@ -1,4 +1,7 @@
-## tapErrorCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tapErrorCause
 
 Inspect the complete cause of an error, including failures and defects.
 

@@ -1,4 +1,7 @@
-## awaitShutdown
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.awaitShutdown
 
 Waits until the `TPubSub` is shutdown. The `STM` returned by this method will
 not resume until the queue has been shutdown. If the `TPubSub` is already

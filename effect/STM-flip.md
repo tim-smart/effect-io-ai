@@ -1,4 +1,7 @@
-## flip
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.flip
 
 Flips the success and failure channels of this transactional effect. This
 allows you to use all methods on the error channel, possibly before

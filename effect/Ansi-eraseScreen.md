@@ -1,4 +1,7 @@
-## eraseScreen
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.eraseScreen
 
 Clears the entire screen and move the cursor to the upper left.
 

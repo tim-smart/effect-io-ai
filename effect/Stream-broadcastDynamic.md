@@ -1,4 +1,7 @@
-## broadcastDynamic
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.broadcastDynamic
 
 Fan out the stream, producing a dynamic number of streams that have the
 same elements as this stream. The driver stream will only ever advance the

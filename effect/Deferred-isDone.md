@@ -1,4 +1,7 @@
-## isDone
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.isDone
 
 Returns `true` if this `Deferred` has already been completed with a value or
 an error, `false` otherwise.

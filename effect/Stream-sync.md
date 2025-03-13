@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.sync
 
 Creates a single-valued pure stream.
 

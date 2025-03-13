@@ -1,4 +1,7 @@
-## upperCase
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.upperCase
 
 Returns a new config provider that will automatically convert all property
 names to upper case. This can be utilized to adapt the names of

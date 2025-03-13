@@ -1,4 +1,7 @@
-## toExponential
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.toExponential
 
 Formats a given `BigDecimal` as a `string` in scientific notation.
 

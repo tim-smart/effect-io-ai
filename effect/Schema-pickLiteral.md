@@ -1,4 +1,7 @@
-## pickLiteral
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.pickLiteral
 
 Creates a new `Schema` from a literal schema.
 

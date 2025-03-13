@@ -1,4 +1,7 @@
-## elapsed
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.elapsed
 
 Creates a schedule that tracks the total elapsed duration since it started.
 

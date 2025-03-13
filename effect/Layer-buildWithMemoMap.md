@@ -1,4 +1,7 @@
-## buildWithMemoMap
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.buildWithMemoMap
 
 Builds a layer into an `Effect` value, using the specified `MemoMap` to memoize
 the layer construction.

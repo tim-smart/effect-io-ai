@@ -1,4 +1,7 @@
-## alterAnnotations
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.alterAnnotations
 
 Change the annotations of a document. Individual annotations can be removed,
 changed, or replaced by multiple ones.

@@ -1,4 +1,7 @@
-## jitteredWith
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.jitteredWith
 
 Returns a new schedule that randomly adjusts the interval size within a
 user-defined range.

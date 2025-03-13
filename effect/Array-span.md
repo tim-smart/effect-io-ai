@@ -1,4 +1,7 @@
-## span
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.span
 
 Split an `Iterable` into two parts:
 

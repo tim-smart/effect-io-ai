@@ -1,4 +1,7 @@
-## filterMapWhile
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.filterMapWhile
 
 Transforms all elements of the chunk for as long as the specified function returns some value
 

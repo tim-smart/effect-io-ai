@@ -1,4 +1,7 @@
-## broadcastedQueuesDynamic
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.broadcastedQueuesDynamic
 
 Converts the stream to a scoped dynamic amount of queues. Every chunk will
 be replicated to every queue with the slowest queue being allowed to buffer

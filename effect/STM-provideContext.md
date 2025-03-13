@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.provideContext
 
 Provides the transaction its required environment, which eliminates its
 dependency on `R`.

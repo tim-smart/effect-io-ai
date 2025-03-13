@@ -1,4 +1,7 @@
-## rangle
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.rangle
 
 A document containing a single `>` character.
 

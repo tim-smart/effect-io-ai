@@ -1,4 +1,7 @@
-## TestConfig
+Package: `effect`<br />
+Module: `TestConfig`<br />
+
+## TestConfig.TestConfig
 
 The `TestConfig` service provides access to default configuration settings
 used by tests, including the number of times to repeat tests to ensure

@@ -1,4 +1,7 @@
-## Service
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Service
 
 Simplifies the creation and management of services in Effect by defining both
 a `Tag` and a `Layer`.

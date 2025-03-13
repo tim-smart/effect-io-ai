@@ -1,4 +1,7 @@
-## acquireWrite
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.acquireWrite
 
 Acquires a write lock. The transaction will suspend until no other fibers
 are holding read or write locks. Succeeds with the number of write locks

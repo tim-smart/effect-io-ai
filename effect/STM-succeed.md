@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.succeed
 
 Returns an `STM` effect that succeeds with the specified value.
 

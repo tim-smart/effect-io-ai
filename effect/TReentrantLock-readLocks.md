@@ -1,4 +1,7 @@
-## readLocks
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.readLocks
 
 Retrieves the total number of acquired read locks.
 

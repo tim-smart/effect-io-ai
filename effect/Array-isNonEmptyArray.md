@@ -1,4 +1,7 @@
-## isNonEmptyArray
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.isNonEmptyArray
 
 Determine if an `Array` is non empty narrowing down the type to `NonEmptyArray`.
 

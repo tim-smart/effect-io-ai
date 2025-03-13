@@ -1,4 +1,7 @@
-## awaitShutdown
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.awaitShutdown
 
 Waits until the queue is shutdown. The `Effect` returned by this method will
 not resume until the queue has been shutdown. If the queue is already

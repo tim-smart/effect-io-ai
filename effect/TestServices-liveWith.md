@@ -1,4 +1,7 @@
-## liveWith
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.liveWith
 
 Retrieves the `Live` service for this test and uses it to run the specified
 workflow.

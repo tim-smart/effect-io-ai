@@ -1,4 +1,7 @@
-## fromOption
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.fromOption
 
 Converts an `Option` to an array.
 

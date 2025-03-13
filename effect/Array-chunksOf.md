@@ -1,4 +1,7 @@
-## chunksOf
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.chunksOf
 
 Splits an `Iterable` into length-`n` pieces. The last piece will be shorter if `n` does not evenly divide the length of
 the `Iterable`. Note that `chunksOf(n)([])` is `[]`, not `[[]]`. This is intentional, and is consistent with a recursive

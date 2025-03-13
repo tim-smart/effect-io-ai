@@ -1,4 +1,7 @@
-## modifyDelayEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.modifyDelayEffect
 
 Returns a new schedule that modifies the delay before execution using an
 effectful function.

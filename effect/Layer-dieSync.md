@@ -1,4 +1,7 @@
-## dieSync
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.dieSync
 
 Constructs a layer that dies with the specified defect.
 

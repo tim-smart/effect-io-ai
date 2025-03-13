@@ -1,4 +1,7 @@
-## isContext
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.isContext
 
 Checks if the provided argument is a `Context`.
 

@@ -1,4 +1,7 @@
-## fibersIn
+Package: `effect`<br />
+Module: `Supervisor`<br />
+
+## Supervisor.fibersIn
 
 Creates a new supervisor that tracks children in a set.
 

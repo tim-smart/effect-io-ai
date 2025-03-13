@@ -1,4 +1,7 @@
-## isInteger
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.isInteger
 
 Checks if a given `BigDecimal` is an integer.
 

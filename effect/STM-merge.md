@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.merge
 
 Returns a new effect where the error channel has been merged into the
 success channel to their common combined type.

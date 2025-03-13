@@ -1,4 +1,7 @@
-## getOrThrow
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrThrow
 
 Extracts the value of an `Option` or throws a default error if the `Option`
 is `None`.

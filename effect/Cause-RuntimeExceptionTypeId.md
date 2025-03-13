@@ -1,4 +1,7 @@
-## RuntimeExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.RuntimeExceptionTypeId
 
 A unique symbol identifying the `RuntimeException` type.
 

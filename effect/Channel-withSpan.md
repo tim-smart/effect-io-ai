@@ -1,4 +1,7 @@
-## withSpan
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.withSpan
 
 Wraps the channel with a new span for tracing.
 

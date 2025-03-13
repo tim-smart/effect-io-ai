@@ -1,4 +1,7 @@
-## changesWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.changesWith
 
 Returns a new stream that only emits elements that are not equal to the
 previous element emitted, using the specified function to determine whether

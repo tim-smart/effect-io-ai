@@ -1,4 +1,7 @@
-## modify
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.modify
 
 Updates the value of the specified key within the `Trie` if it exists.
 

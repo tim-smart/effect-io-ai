@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.flatMap
 
 Transforms errors in a `Cause` into new causes.
 

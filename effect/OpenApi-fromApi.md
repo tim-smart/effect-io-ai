@@ -1,4 +1,7 @@
-## fromApi
+Package: `@effect/platform`<br />
+Module: `OpenApi`<br />
+
+## OpenApi.fromApi
 
 Converts an `HttpApi` instance into an OpenAPI Specification object.
 

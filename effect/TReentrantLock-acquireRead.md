@@ -1,4 +1,7 @@
-## acquireRead
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.acquireRead
 
 Acquires a read lock. The transaction will suspend until no other fiber is
 holding a write lock. Succeeds with the number of read locks held by this

@@ -1,4 +1,7 @@
-## CloseableScopeTypeId
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.CloseableScopeTypeId
 
 The type of the unique identifier for `CloseableScope`.
 

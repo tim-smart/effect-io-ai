@@ -1,4 +1,7 @@
-## linkSpans
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.linkSpans
 
 For all spans in this effect, add a link with the provided span.
 

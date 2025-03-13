@@ -1,4 +1,7 @@
-## spaces
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.spaces
 
 The `spaces` combinator lays out a document containing `n` spaces. Negative
 values for `n` count as `0` spaces.

@@ -1,4 +1,7 @@
-## fromKey
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.fromKey
 
 Enhances a property signature by specifying a different key for it in the Encoded type.
 

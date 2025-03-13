@@ -1,4 +1,7 @@
-## catWithSoftLine
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.catWithSoftLine
 
 The `catWithSoftLine` combinator concatenates two documents by placing a
 `softLine` document between them.

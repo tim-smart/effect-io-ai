@@ -1,4 +1,7 @@
-## onStart
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.onStart
 
 Adds an effect to be executed at the start of the stream.
 

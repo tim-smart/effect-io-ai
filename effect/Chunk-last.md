@@ -1,4 +1,7 @@
-## last
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.last
 
 Returns the last element of this chunk if it exists.
 

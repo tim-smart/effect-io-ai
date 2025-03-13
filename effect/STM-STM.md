@@ -1,4 +1,7 @@
-## STM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.STM
 
 `STM<A, E, R>` represents an effect that can be performed transactionally,
  resulting in a failure `E` or a value `A` that may require an environment

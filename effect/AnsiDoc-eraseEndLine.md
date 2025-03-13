@@ -1,4 +1,7 @@
-## eraseEndLine
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.eraseEndLine
 
 Clears from the current cursor position to the end of the current line.
 

@@ -1,4 +1,7 @@
-## cons
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.cons
 
 Constructs a new `List.Cons<A>` from the specified `head` and `tail` values.
 

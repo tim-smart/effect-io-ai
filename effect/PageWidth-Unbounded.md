@@ -1,4 +1,7 @@
-## Unbounded
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.Unbounded
 
 Represents a `PageWidth` setting that informs the layout algorithms to avoid
 introducing line breaks into a document.

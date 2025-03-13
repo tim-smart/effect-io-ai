@@ -1,4 +1,7 @@
-## tapErrorCauseIf
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tapErrorCauseIf
 
 Perform a side effect using if a `MicroCause` object matches the specified
 predicate.

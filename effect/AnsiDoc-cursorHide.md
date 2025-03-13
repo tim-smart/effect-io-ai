@@ -1,4 +1,7 @@
-## cursorHide
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorHide
 
 Hides the cursor.
 

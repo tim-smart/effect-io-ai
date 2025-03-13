@@ -1,4 +1,7 @@
-## ValidDateFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.ValidDateFromSelf
 
 Defines a schema that ensures only valid dates are accepted. This schema
 rejects values like `new Date("Invalid Date")`, which, despite being a `Date`

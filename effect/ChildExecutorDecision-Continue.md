@@ -1,4 +1,7 @@
-## Continue
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.Continue
 
 Continue executing the current substream
 

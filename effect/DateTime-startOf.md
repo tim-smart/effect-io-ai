@@ -1,4 +1,7 @@
-## startOf
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.startOf
 
 Converts a `DateTime` to the start of the given `part`.
 

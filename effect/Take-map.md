@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.map
 
 Transforms `Take<A, E>` to `Take<B, A>` by applying function `f`.
 

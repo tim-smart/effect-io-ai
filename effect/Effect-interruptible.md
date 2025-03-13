@@ -1,4 +1,7 @@
-## interruptible
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.interruptible
 
 Marks an effect as interruptible.
 

@@ -1,4 +1,7 @@
-## groupBy
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.groupBy
 
 More powerful version of `Stream.groupByKey`.
 

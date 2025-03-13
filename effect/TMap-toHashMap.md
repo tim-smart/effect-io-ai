@@ -1,4 +1,7 @@
-## toHashMap
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.toHashMap
 
 Collects all bindings into a `HashMap`.
 

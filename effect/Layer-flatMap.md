@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.flatMap
 
 Constructs a layer dynamically based on the output of this layer.
 

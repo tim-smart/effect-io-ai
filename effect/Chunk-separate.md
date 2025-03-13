@@ -1,4 +1,7 @@
-## separate
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.separate
 
 Partitions the elements of this chunk into two chunks.
 

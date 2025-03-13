@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.of
 
 Constructs a new `Iterable<A>` from the specified value.
 

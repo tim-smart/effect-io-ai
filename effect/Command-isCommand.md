@@ -1,4 +1,7 @@
-## isCommand
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.isCommand
 
 Returns `true` if the specified value is a `Command`, otherwise returns
 `false`.

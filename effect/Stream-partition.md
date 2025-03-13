@@ -1,4 +1,7 @@
-## partition
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.partition
 
 Splits a stream into two substreams based on a predicate.
 

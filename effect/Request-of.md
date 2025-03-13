@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.of
 
 Constructs a new `Request`.
 

@@ -1,4 +1,7 @@
-## ignore
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.ignore
 
 Ignore any expected errors of the given `Micro` effect, returning `void`.
 

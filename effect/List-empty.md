@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.empty
 
 Constructs a new empty `List<A>`.
 

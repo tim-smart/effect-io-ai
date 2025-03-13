@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.reduce
 
 Combines all parts of a `Cause` into a single value by starting with an
 initial value.

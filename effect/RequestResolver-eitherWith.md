@@ -1,4 +1,7 @@
-## eitherWith
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.eitherWith
 
 Returns a new data source that executes requests of type `C` using the
 specified function to transform `C` requests into requests that either this

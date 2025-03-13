@@ -1,4 +1,7 @@
-## whenSTM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.whenSTM
 
 The moral equivalent of `if (p) exp` when `p` has side-effects.
 

@@ -1,4 +1,7 @@
-## PushAnnotationStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.PushAnnotationStream
 
 Represents the addition of an annotation of type `A` to a `Doc`.
 

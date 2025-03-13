@@ -1,4 +1,7 @@
-## cursorNextLine
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorNextLine
 
 Moves cursor to beginning of the line the specified number of rows down
 (default `1`).

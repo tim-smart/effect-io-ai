@@ -1,4 +1,7 @@
-## squash
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.squash
 
 Extracts the most "important" defect from a `Cause`.
 

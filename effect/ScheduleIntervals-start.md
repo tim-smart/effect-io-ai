@@ -1,4 +1,7 @@
-## start
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.start
 
 The start of the earliest interval in the specified `Intervals`.
 

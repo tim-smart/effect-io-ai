@@ -1,4 +1,7 @@
-## fromNullable
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fromNullable
 
 Safely handles nullable values by creating an effect that fails for `null` or
 `undefined`.

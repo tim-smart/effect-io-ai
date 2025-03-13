@@ -1,4 +1,7 @@
-## forEachLessThan
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.forEachLessThan
 
 Visit each node of the tree in order with key lower then max.
 

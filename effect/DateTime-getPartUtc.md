@@ -1,4 +1,7 @@
-## getPartUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.getPartUtc
 
 Get a part of a `DateTime` as a number.
 

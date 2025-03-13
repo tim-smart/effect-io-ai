@@ -1,4 +1,7 @@
-## unsafeLast
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.unsafeLast
 
 Returns the last element of this chunk.
 

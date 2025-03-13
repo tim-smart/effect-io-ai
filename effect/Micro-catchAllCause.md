@@ -1,4 +1,7 @@
-## catchAllCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchAllCause
 
 Catch the full `MicroCause` object of the given `Micro` effect, allowing you to
 recover from any kind of cause.

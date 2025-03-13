@@ -1,4 +1,7 @@
-## decodeBase64UrlString
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeBase64UrlString
 
 Decodes a base64 (URL) encoded `string` into a UTF-8 `string`.
 

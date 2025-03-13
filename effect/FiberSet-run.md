@@ -1,4 +1,7 @@
-## run
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.run
 
 Fork an Effect and add the forked fiber to the FiberSet.
 When the fiber completes, it will be removed from the FiberSet.

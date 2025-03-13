@@ -1,4 +1,7 @@
-## orDieWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orDieWith
 
 Keeps none of the errors, and terminates the stream with them, using the
 specified function to convert the `E` into a defect.

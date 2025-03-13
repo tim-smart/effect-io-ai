@@ -1,4 +1,7 @@
-## interrupted
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.interrupted
 
 Constructrs a `Fiber` that is already interrupted.
 

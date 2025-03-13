@@ -1,4 +1,7 @@
-## zonedOffset
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zonedOffset
 
 Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
 

@@ -1,4 +1,7 @@
-## firstSomeOf
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.firstSomeOf
 
 Returns the first `Some` value found in an `Iterable` collection of
 `Option`s, or `None` if no `Some` is found.

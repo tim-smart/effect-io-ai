@@ -1,4 +1,7 @@
-## dieMessage
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.dieMessage
 
 Creates an effect that terminates a fiber with a `RuntimeException`
 containing the specified message.

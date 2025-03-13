@@ -1,4 +1,7 @@
-## WithPageWidth
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.WithPageWidth
 
 Represents a document that reacts to the current page width.
 

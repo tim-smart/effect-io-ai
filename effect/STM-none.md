@@ -1,4 +1,7 @@
-## none
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.none
 
 Requires the option produced by this value to be `None`.
 

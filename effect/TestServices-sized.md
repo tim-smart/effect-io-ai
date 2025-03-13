@@ -1,4 +1,7 @@
-## sized
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.sized
 
 Retrieves the `Sized` service for this test.
 

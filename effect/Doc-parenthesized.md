@@ -1,4 +1,7 @@
-## parenthesized
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.parenthesized
 
 Encloses the input document in parentheses (`()`).
 

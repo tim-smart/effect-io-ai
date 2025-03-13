@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.zip
 
 Zips this polling metric with the specified polling metric.
 

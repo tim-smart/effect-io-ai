@@ -1,4 +1,7 @@
-## intersperseAffixes
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.intersperseAffixes
 
 Intersperse the specified element, also adding a prefix and a suffix.
 

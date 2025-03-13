@@ -1,4 +1,7 @@
-## feed
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.feed
 
 Feed a string to standard input (default encoding of UTF-8).
 

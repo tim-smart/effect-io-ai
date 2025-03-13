@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.take
 
 Takes the specified number of elements from this stream.
 

@@ -1,4 +1,7 @@
-## MonoidEqv
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.MonoidEqv
 
 `boolean` monoid under equivalence.
 

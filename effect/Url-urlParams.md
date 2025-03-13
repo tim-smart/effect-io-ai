@@ -1,4 +1,7 @@
-## urlParams
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.urlParams
 
 Retrieves the query parameters from a URL.
 

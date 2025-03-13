@@ -1,4 +1,7 @@
-## flatMapNullable
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.flatMapNullable
 
 Maps over an array and flattens the result, removing null and undefined values.
 

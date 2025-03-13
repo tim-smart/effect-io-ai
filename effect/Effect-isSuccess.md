@@ -1,4 +1,7 @@
-## isSuccess
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.isSuccess
 
 Checks if an effect has succeeded.
 

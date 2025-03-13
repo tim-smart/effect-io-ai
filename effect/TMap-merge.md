@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.merge
 
 If the key is not already associated with a value, stores the provided value,
 otherwise merge the existing value with the new one using function `f` and

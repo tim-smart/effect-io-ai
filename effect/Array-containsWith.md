@@ -1,4 +1,7 @@
-## containsWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.containsWith
 
 Returns a function that checks if a `ReadonlyArray` contains a given value using a provided `isEquivalent` function.
 

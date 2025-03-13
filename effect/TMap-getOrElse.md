@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.getOrElse
 
 Retrieves value associated with given key or default value, in case the key
 isn't present.

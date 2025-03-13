@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.zipRight
 
 Sequentially zips this value with the specified one, discarding the first
 element of the tuple.

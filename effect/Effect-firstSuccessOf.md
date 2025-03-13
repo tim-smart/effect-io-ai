@@ -1,4 +1,7 @@
-## firstSuccessOf
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.firstSuccessOf
 
 Runs a sequence of effects and returns the result of the first successful
 one.

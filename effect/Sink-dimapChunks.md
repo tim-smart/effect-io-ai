@@ -1,4 +1,7 @@
-## dimapChunks
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dimapChunks
 
 Transforms both input chunks and result of this sink using the provided
 functions.

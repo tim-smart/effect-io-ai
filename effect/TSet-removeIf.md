@@ -1,4 +1,7 @@
-## removeIf
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.removeIf
 
 Removes entries from a `TSet` that satisfy the specified predicate and returns the removed entries
 (or `void` if `discard = true`).

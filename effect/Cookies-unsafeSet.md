@@ -1,4 +1,7 @@
-## unsafeSet
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.unsafeSet
 
 Add a cookie to a Cookies object
 

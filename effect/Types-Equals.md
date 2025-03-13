@@ -1,4 +1,7 @@
-## Equals
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Equals
 
 Determines if two types are equal.
 

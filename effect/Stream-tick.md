@@ -1,4 +1,7 @@
-## tick
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tick
 
 A stream that emits void values spaced by the specified duration.
 

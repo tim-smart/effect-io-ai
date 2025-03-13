@@ -1,4 +1,7 @@
-## isClose
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.isClose
 
 Returns `true` if the specified `ChildExecutorDecision` is a `Close`, `false`
 otherwise.

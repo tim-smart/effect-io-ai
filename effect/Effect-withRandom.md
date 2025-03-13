@@ -1,4 +1,7 @@
-## withRandom
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withRandom
 
 Executes the specified effect with the specified implementation of the
 `Random` service.

@@ -1,4 +1,7 @@
-## lessThan
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.lessThan
 
 This filter checks whether the provided number is less than the specified maximum.
 

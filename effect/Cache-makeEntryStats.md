@@ -1,4 +1,7 @@
-## makeEntryStats
+Package: `effect`<br />
+Module: `Cache`<br />
+
+## Cache.makeEntryStats
 
 Constructs a new `EntryStats` from the specified values.
 

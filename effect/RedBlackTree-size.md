@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.size
 
 Returns the size of the tree.
 

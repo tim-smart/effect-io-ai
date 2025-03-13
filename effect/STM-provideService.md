@@ -1,4 +1,7 @@
-## provideService
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.provideService
 
 Provides the effect with the single service it requires. If the transactional
 effect requires more than one service use `provideEnvironment` instead.

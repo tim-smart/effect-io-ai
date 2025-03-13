@@ -1,4 +1,7 @@
-## distanceDurationEither
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.distanceDurationEither
 
 Calulate the difference between two `DateTime` values.
 

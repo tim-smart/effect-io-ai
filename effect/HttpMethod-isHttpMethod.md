@@ -1,4 +1,7 @@
-## isHttpMethod
+Package: `@effect/platform`<br />
+Module: `HttpMethod`<br />
+
+## HttpMethod.isHttpMethod
 
 Tests if a value is a `HttpMethod`.
 

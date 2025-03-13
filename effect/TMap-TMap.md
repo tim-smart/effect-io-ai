@@ -1,4 +1,7 @@
-## TMap
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.TMap
 
 Transactional map implemented on top of `TRef` and `TArray`. Resolves
 conflicts via chaining.

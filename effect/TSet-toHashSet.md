@@ -1,4 +1,7 @@
-## toHashSet
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.toHashSet
 
 Collects all elements into a `HashSet`.
 

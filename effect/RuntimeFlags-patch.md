@@ -1,4 +1,7 @@
-## patch
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.patch
 
 Patches a set of `RuntimeFlag`s with a `RuntimeFlagsPatch`, returning the
 patched set of `RuntimeFlag`s.

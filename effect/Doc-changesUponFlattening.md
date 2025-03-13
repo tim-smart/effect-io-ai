@@ -1,4 +1,7 @@
-## changesUponFlattening
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.changesUponFlattening
 
 Select the first element of each `Union` and discard the first element of
 each `FlatAlt` to produce a "flattened" version of the input document.

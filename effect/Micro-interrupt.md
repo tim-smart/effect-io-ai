@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.interrupt
 
 Abort the current `Micro` effect.
 

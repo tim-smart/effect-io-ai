@@ -1,4 +1,7 @@
-## merge
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.merge
 
 Combine two Cookies objects, removing duplicates from the first
 

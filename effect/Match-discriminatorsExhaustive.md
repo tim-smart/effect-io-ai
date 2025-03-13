@@ -1,4 +1,7 @@
-## discriminatorsExhaustive
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.discriminatorsExhaustive
 
 Matches values based on a discriminator field and **ensures all cases are
 handled**.

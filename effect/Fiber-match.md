@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.match
 
 Folds over the `Fiber` or `RuntimeFiber`.
 

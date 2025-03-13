@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.reduce
 
 Reduces an array from the left.
 

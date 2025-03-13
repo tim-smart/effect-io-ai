@@ -1,4 +1,7 @@
-## enable
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.enable
 
 Creates a `RuntimeFlagsPatch` describing enabling the provided `RuntimeFlag`.
 

@@ -1,4 +1,7 @@
-## fromAST
+Package: `effect`<br />
+Module: `JSONSchema`<br />
+
+## JSONSchema.fromAST
 
 Returns a JSON Schema with additional options and definitions.
 

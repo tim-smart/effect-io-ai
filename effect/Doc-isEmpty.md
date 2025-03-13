@@ -1,4 +1,7 @@
-## isEmpty
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isEmpty
 
 Returns `true` if the specified `Doc` is an `Empty`, `false` otherwise.
 

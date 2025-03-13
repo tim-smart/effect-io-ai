@@ -1,4 +1,7 @@
-## pop
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.pop
 
 Retrieves the value of the property with the given `key` from a record and returns an `Option`
 of a tuple with the value and the record with the removed property.

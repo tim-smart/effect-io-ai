@@ -1,4 +1,7 @@
-## isChar
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isChar
 
 Returns `true` if the specified `Doc` is a `Char`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## tryPromise
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tryPromise
 
 Wrap a `Promise` into a `Micro` effect. Any errors will be caught and
 converted into a specific error type.

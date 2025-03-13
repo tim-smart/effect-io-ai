@@ -1,4 +1,7 @@
-## isText
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isText
 
 Returns `true` if the specified `Doc` is a `Text`, `false` otherwise.
 

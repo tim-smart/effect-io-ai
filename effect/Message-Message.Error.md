@@ -1,4 +1,7 @@
-## Message.Error
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.Message.Error
 
 Extracts the error type from a `Message`.
 

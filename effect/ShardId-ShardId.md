@@ -1,4 +1,7 @@
-## ShardId
+Package: `@effect/cluster`<br />
+Module: `ShardId`<br />
+
+## ShardId.ShardId
 
 A shard is a logical grouping of multiple entities. There could be thousands of entities in your system,
 so instead of managing every single entity id, the shard manager group them by shard id, and when they are assigned

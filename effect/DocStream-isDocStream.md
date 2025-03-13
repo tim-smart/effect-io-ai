@@ -1,4 +1,7 @@
-## isDocStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isDocStream
 
 Returns `true` if the specified value is a `DocStream`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## split
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.split
 
 Splits this chunk into `n` equally sized chunks.
 

@@ -1,4 +1,7 @@
-## cachedInvalidateWithTTL
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.cachedInvalidateWithTTL
 
 Caches an effect's result for a specified duration and allows manual
 invalidation before expiration.

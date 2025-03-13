@@ -1,4 +1,7 @@
-## Transformation
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Transformation
 
 Error that occurs when a transformation has an error.
 

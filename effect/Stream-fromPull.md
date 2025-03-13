@@ -1,4 +1,7 @@
-## fromPull
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromPull
 
 Creates a stream from an effect that pulls elements from another stream.
 

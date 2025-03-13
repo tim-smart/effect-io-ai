@@ -1,4 +1,7 @@
-## diff
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.diff
 
 Creates a `RuntimeFlagsPatch` which describes the difference between `self`
 and `that`.

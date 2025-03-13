@@ -1,4 +1,7 @@
-## exit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.exit
 
 Access the `MicroExit` of the given `Micro` effect.
 

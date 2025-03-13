@@ -1,4 +1,7 @@
-## fibonacci
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.fibonacci
 
 Creates a schedule that recurs indefinitely with Fibonacci-based increasing
 delays.

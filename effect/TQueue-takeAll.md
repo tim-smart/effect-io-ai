@@ -1,4 +1,7 @@
-## takeAll
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.takeAll
 
 Takes all the values in the queue and returns the values. If the queue is
 empty returns an empty collection.

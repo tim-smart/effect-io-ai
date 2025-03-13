@@ -1,4 +1,7 @@
-## Config
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.Config
 
 A `Config` describes the structure of some configuration data.
 

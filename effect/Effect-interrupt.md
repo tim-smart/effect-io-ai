@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.interrupt
 
 Represents an effect that interrupts the current fiber.
 

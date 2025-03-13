@@ -1,4 +1,7 @@
-## isNonEmpty
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.isNonEmpty
 
 Test whether a `string` is non empty.
 

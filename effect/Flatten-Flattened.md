@@ -1,4 +1,7 @@
-## Flattened
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.Flattened
 
 Represents a `FlattenResult` where `A` is likely flatter than the input.
 

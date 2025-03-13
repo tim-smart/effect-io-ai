@@ -1,4 +1,7 @@
-## takeOrInterrupt
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.takeOrInterrupt
 
 Attempts to take a message from the queue in the same way Queue.take does.
 If the result is a PoisonPill, it will interrupt the effect.

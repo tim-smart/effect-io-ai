@@ -1,4 +1,7 @@
-## Class
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.Class
 
 Provides a constructor for a Case Class.
 

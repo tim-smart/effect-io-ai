@@ -1,4 +1,7 @@
-## fiberId
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.fiberId
 
 Returns the fiber id of the fiber committing the transaction.
 

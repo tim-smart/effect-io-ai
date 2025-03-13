@@ -1,4 +1,7 @@
-## unwrap
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.unwrap
 
 Constructs a config from some configuration wrapped with the `Wrap<A>` utility type.
 

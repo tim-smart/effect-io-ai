@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `TestAnnotationMap`<br />
+
+## TestAnnotationMap.get
 
 Retrieves the annotation of the specified type, or its default value if
 there is none.

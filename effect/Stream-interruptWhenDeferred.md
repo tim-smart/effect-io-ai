@@ -1,4 +1,7 @@
-## interruptWhenDeferred
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.interruptWhenDeferred
 
 Interrupts the evaluation of this stream when the provided promise
 resolves. This combinator will also interrupt any in-progress element being

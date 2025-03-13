@@ -1,4 +1,7 @@
-## getLefts
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.getLefts
 
 Retrieves the `Left` values from an `Iterable` of `Either`s, collecting them into an array.
 

@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.map
 
 Maps over the entries of the `HashMap` using the specified function.
 

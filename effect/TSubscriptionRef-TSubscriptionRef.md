@@ -1,4 +1,7 @@
-## TSubscriptionRef
+Package: `effect`<br />
+Module: `TSubscriptionRef`<br />
+
+## TSubscriptionRef.TSubscriptionRef
 
 A `TSubscriptionRef<A>` is a `TRef` that can be subscribed to in order to
 receive a `TDequeue<A>` of the current value and all committed changes to the value.

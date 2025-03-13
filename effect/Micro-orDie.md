@@ -1,4 +1,7 @@
-## orDie
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.orDie
 
 Elevate any expected errors of the given `Micro` effect to unexpected errors,
 resulting in an error type of `never`.

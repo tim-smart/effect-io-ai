@@ -1,4 +1,7 @@
-## negate
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.negate
 
 Provides a negate operation on `BigDecimal`s.
 

@@ -1,4 +1,7 @@
-## getHash
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.getHash
 
 Lookup the value for the specified key in the `HashMap` using a custom hash.
 

@@ -1,4 +1,7 @@
-## Event
+Package: `@effect/experimental`<br />
+Module: `Event`<br />
+
+## Event.Event
 
 Represents an event in an EventLog.
 

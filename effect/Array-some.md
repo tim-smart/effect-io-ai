@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.some
 
 Check if a predicate holds true for some `ReadonlyArray` element.
 

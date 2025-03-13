@@ -1,4 +1,7 @@
-## scope
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scope
 
 Provides access to the current scope in a scoped workflow.
 

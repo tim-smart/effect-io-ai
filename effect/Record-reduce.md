@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.reduce
 
 Reduce a record to a single value by combining its entries with a specified function.
 

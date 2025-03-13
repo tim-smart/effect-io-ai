@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fromEffect
 
 Use an effect to end a channel.
 

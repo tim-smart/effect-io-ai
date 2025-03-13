@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.zipWith
 
 Zips this chunk pointwise with the specified chunk using the specified combiner.
 

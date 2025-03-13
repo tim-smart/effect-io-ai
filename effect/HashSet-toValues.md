@@ -1,4 +1,7 @@
-## toValues
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.toValues
 
 Returns an `Array` of the values within the `HashSet`.
 

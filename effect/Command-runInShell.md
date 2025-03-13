@@ -1,4 +1,7 @@
-## runInShell
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.runInShell
 
 Allows for specifying whether or not a `Command` should be run inside a
 shell.

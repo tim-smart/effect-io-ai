@@ -1,4 +1,7 @@
-## lbracket
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.lbracket
 
 A document containing a single `[` character.
 

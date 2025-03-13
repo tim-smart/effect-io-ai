@@ -1,4 +1,7 @@
-## retryWhile
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.retryWhile
 
 Filters the value produced by this effect, retrying the transaction while
 the predicate returns `true` for the value.

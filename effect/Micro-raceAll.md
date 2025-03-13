@@ -1,4 +1,7 @@
-## raceAll
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.raceAll
 
 Returns an effect that races all the specified effects,
 yielding the value of the first effect to succeed with a value. Losers of

@@ -1,4 +1,7 @@
-## unless
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.unless
 
 Executes an effect only if the condition is `false`.
 

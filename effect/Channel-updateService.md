@@ -1,4 +1,7 @@
-## updateService
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.updateService
 
 Updates a service in the context of this channel.
 

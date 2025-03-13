@@ -1,4 +1,7 @@
-## RecipientType
+Package: `@effect/cluster`<br />
+Module: `RecipientType`<br />
+
+## RecipientType.RecipientType
 
 A RecipientType is basically a pointer to a logical grouping of multiple enties having the same RecipientBehaviour.
 This value is required to be able to message with an entity/topic since it holds the Schema for the messages over the wire.

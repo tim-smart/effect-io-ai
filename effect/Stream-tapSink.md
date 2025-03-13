@@ -1,4 +1,7 @@
-## tapSink
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.tapSink
 
 Sends all elements emitted by this stream to the specified sink in addition
 to emitting them.

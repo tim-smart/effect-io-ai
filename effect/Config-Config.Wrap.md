@@ -1,4 +1,7 @@
-## Config.Wrap
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.Config.Wrap
 
 Wraps a nested structure, converting all primitives to a `Config`.
 

@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.forEach
 
 Execute the specified function for each node of the tree, in order.
 

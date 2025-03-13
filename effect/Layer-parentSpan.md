@@ -1,4 +1,7 @@
-## parentSpan
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.parentSpan
 
 Adds the provided span to the span stack.
 

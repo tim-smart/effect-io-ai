@@ -1,4 +1,7 @@
-## equals
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.equals
 
 Checks if two `BigDecimal`s are equal.
 

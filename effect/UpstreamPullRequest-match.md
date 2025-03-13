@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `UpstreamPullRequest`<br />
+
+## UpstreamPullRequest.match
 
 Folds an `UpstreamPullRequest<A>` into a value of type `Z`.
 

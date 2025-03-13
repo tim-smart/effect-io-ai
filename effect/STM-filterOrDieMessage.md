@@ -1,4 +1,7 @@
-## filterOrDieMessage
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filterOrDieMessage
 
 Dies with a `Cause.RuntimeException` having the specified  message if the
 predicate fails.

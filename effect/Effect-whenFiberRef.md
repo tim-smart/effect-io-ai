@@ -1,4 +1,7 @@
-## whenFiberRef
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.whenFiberRef
 
 Executes an effect conditionally based on the value of a `FiberRef` that
 satisfies a predicate.

@@ -1,4 +1,7 @@
-## abs
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.abs
 
 Determines the absolute value of a given `BigDecimal`.
 

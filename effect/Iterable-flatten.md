@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.flatten
 
 Flattens an Iterable of Iterables into a single Iterable
 

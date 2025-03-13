@@ -1,4 +1,7 @@
-## layerDotEnv
+Package: `@effect/platform`<br />
+Module: `PlatformConfigProvider`<br />
+
+## PlatformConfigProvider.layerDotEnv
 
 Add the dotenv ConfigProvider to the environment, replacing the current ConfigProvider.
 

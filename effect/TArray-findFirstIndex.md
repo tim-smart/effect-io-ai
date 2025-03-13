@@ -1,4 +1,7 @@
-## findFirstIndex
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findFirstIndex
 
 Get the first index of a specific value in the array.
 

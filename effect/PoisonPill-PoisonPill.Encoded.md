@@ -1,4 +1,7 @@
-## PoisonPill.Encoded
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.PoisonPill.Encoded
 
 This is the shape that a PoisonPill takes over the wire.
 

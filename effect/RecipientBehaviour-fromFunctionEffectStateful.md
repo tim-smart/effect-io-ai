@@ -1,4 +1,7 @@
-## fromFunctionEffectStateful
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviour`<br />
+
+## RecipientBehaviour.fromFunctionEffectStateful
 
 This is a stateful version of fromFunctionEffect.
 You can provide a function to get the initialState, and then it will be passed as Ref.

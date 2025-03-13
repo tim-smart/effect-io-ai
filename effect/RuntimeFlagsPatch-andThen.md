@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.andThen
 
 Creates a `RuntimeFlagsPatch` describing the application of the `self` patch,
 followed by `that` patch.

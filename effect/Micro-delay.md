@@ -1,4 +1,7 @@
-## delay
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.delay
 
 Returns an effect that will delay the execution of this effect by the
 specified duration.

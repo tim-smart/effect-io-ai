@@ -1,4 +1,7 @@
-## changes
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.changes
 
 Returns a new stream that only emits elements that are not equal to the
 previous element emitted, using natural equality to determine whether two

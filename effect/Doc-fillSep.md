@@ -1,4 +1,7 @@
-## fillSep
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.fillSep
 
 The `fillSep` combinator concatenates all documents in a collection
 horizontally by placing a `space` between each pair of documents as long as

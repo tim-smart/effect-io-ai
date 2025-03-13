@@ -1,4 +1,7 @@
-## Doc
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Doc
 
 Represents a prettified document that has been annotated with data of type
 `A`.

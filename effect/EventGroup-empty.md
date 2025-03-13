@@ -1,4 +1,7 @@
-## empty
+Package: `@effect/experimental`<br />
+Module: `EventGroup`<br />
+
+## EventGroup.empty
 
 An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to
 represent a portion of your domain.

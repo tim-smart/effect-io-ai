@@ -1,4 +1,7 @@
-## mapBoth
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.mapBoth
 
 Returns an `STM` effect whose failure and success channels have been mapped
 by the specified pair of functions, `f` and `g`.

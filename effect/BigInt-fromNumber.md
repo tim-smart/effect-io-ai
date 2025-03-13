@@ -1,4 +1,7 @@
-## fromNumber
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.fromNumber
 
 Takes a number and returns an `Option` of `bigint`.
 

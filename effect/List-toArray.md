@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.toArray
 
 Converts the specified `List` to an `Array`.
 

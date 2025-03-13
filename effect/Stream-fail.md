@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fail
 
 Terminates with the specified error.
 

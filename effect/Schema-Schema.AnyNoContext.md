@@ -1,4 +1,7 @@
-## Schema.AnyNoContext
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Schema.AnyNoContext
 
 Any schema with `Context = never`, except for `never`.
 

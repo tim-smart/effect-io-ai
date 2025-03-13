@@ -1,4 +1,7 @@
-## raceFirst
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.raceFirst
 
 Returns an effect that races two effects, yielding the value of the first
 effect to succeed *or* fail. Losers of the race will be interrupted immediately.

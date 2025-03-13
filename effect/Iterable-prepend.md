@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.prepend
 
 Prepend an element to the front of an `Iterable`, creating a new `Iterable`.
 

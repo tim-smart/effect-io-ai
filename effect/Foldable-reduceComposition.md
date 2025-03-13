@@ -1,4 +1,7 @@
-## reduceComposition
+Package: `@effect/typeclass`<br />
+Module: `Foldable`<br />
+
+## Foldable.reduceComposition
 
 Returns a default ternary `reduce` composition.
 

@@ -1,4 +1,7 @@
-## nesting
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.nesting
 
 Lays out a document depending upon the current nesting level (i.e., the
 current indentation of the document).

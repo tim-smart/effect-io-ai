@@ -1,4 +1,7 @@
-## testConfigWith
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.testConfigWith
 
 Retrieves the `TestConfig` service for this test and uses it to run the
 specified workflow.

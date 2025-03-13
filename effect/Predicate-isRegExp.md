@@ -1,4 +1,7 @@
-## isRegExp
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isRegExp
 
 Tests if a value is a `RegExp`.
 

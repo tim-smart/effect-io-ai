@@ -1,4 +1,7 @@
-## combine
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.combine
 
 Combine two `FiberId`s.
 

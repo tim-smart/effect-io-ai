@@ -1,4 +1,7 @@
-## fromFunction
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.fromFunction
 
 Constructs a data source from a pure function.
 

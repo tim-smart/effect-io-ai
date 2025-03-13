@@ -1,4 +1,7 @@
-## add
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.add
 
 Adds a value to the `HashSet`.
 

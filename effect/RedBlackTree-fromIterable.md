@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.fromIterable
 
 Creates a new `RedBlackTree` from an iterable collection of key/value pairs.
 

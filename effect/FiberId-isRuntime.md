@@ -1,4 +1,7 @@
-## isRuntime
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.isRuntime
 
 Returns `true` if the `FiberId` is a `Runtime`, `false` otherwise.
 

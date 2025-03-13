@@ -1,4 +1,7 @@
-## Intervals
+Package: `effect`<br />
+Module: `ScheduleIntervals`<br />
+
+## ScheduleIntervals.Intervals
 
 An `Intervals` represents a list of several `Interval`s.
 

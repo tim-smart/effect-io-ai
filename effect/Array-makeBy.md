@@ -1,4 +1,7 @@
-## makeBy
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.makeBy
 
 Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.
 

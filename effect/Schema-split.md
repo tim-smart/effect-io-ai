@@ -1,4 +1,7 @@
-## split
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.split
 
 Returns a schema that allows splitting a string into an array of strings.
 

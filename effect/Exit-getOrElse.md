@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.getOrElse
 
 Returns the `A` if specified exit is a `Success`, otherwise returns the
 alternate `A` value computed from the specified function which receives the

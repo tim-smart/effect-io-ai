@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.catchAll
 
 Recovers from all errors.
 

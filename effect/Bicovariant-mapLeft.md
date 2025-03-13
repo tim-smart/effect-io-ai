@@ -1,4 +1,7 @@
-## mapLeft
+Package: `@effect/typeclass`<br />
+Module: `Bicovariant`<br />
+
+## Bicovariant.mapLeft
 
 Returns a default `mapLeft` implementation.
 

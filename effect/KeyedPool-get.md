@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `KeyedPool`<br />
+
+## KeyedPool.get
 
 Retrieves an item from the pool belonging to the given key in a scoped
 effect. Note that if acquisition fails, then the returned effect will fail

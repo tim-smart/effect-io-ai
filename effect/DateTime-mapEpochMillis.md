@@ -1,4 +1,7 @@
-## mapEpochMillis
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.mapEpochMillis
 
 Transform a `DateTime` by applying a function to the number of milliseconds
 since the Unix epoch.

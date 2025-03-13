@@ -1,4 +1,7 @@
-## unbounded
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.unbounded
 
 Creates an unbounded `PubSub`.
 

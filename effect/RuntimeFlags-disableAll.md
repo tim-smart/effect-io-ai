@@ -1,4 +1,7 @@
-## disableAll
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.disableAll
 
 Disables all of the `RuntimeFlag`s in the specified set of `RuntimeFlags`.
 

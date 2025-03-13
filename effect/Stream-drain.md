@@ -1,4 +1,7 @@
-## drain
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.drain
 
 Converts this stream to a stream that executes its effects but emits no
 elements. Useful for sequencing effects using streams:

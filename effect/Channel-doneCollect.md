@@ -1,4 +1,7 @@
-## doneCollect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.doneCollect
 
 Returns a new channel, which is the same as this one, except that all the
 outputs are collected and bundled into a tuple together with the terminal

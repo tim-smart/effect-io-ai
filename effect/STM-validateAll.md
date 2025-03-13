@@ -1,4 +1,7 @@
-## validateAll
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.validateAll
 
 Feeds elements of type `A` to `f` and accumulates all errors in error
 channel or successes in success channel.

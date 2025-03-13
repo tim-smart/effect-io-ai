@@ -1,4 +1,7 @@
-## mergeAll
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.mergeAll
 
 Merges an `Iterable<STM>` to a single `STM`, working sequentially.
 

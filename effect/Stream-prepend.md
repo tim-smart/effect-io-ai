@@ -1,4 +1,7 @@
-## prepend
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.prepend
 
 Emits the provided chunk before emitting any other value.
 

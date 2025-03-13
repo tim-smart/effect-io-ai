@@ -1,4 +1,7 @@
-## dedupeAdjacentWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.dedupeAdjacentWith
 
 Deduplicates adjacent elements that are identical using the provided `isEquivalent` function.
 

@@ -1,4 +1,7 @@
-## isRecipientType
+Package: `@effect/cluster`<br />
+Module: `RecipientType`<br />
+
+## RecipientType.isRecipientType
 
 Ensure that given value is a RecipientType
 

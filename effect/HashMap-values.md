@@ -1,4 +1,7 @@
-## values
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.values
 
 Returns an `IterableIterator` of the values within the `HashMap`.
 

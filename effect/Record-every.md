@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.every
 
 Check if all entries in a record meet a specific condition.
 

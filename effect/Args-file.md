@@ -1,4 +1,7 @@
-## file
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.file
 
 Creates a file argument.
 

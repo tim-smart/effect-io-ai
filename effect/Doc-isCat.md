@@ -1,4 +1,7 @@
-## isCat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isCat
 
 Returns `true` if the specified `Doc` is a `Cat`, `false` otherwise.
 

@@ -1,4 +1,7 @@
-## formatIsoDate
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatIsoDate
 
 Format a `DateTime` as a time zone adjusted ISO date string.
 

@@ -1,4 +1,7 @@
-## punctuate
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.punctuate
 
 The `punctuate` combinator appends the `punctuator` document to all but the
 last document in a collection of documents. The separators are places after

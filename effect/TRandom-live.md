@@ -1,4 +1,7 @@
-## live
+Package: `effect`<br />
+Module: `TRandom`<br />
+
+## TRandom.live
 
 The "live" `TRandom` service wrapped into a `Layer`.
 

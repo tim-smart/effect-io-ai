@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.filterMap
 
 Alias of `flatMap`.
 

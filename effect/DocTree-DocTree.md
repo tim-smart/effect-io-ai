@@ -1,4 +1,7 @@
-## DocTree
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.DocTree
 
 Represents a document that has been laid out into a tree-like structure.
 

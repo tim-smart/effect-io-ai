@@ -1,4 +1,7 @@
-## runFork
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runFork
 
 Executes the effect using the provided Scheduler or using the global
 Scheduler if not provided

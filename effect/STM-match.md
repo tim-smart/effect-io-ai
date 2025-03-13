@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.match
 
 Folds over the `STM` effect, handling both failure and success, but not
 retry.

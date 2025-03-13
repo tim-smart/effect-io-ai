@@ -1,4 +1,7 @@
-## isSymbol
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isSymbol
 
 Tests if a value is a `symbol`.
 

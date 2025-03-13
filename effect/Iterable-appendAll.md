@@ -1,4 +1,7 @@
-## appendAll
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.appendAll
 
 Concatenates two iterables, combining their elements.
 

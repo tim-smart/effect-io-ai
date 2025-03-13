@@ -1,4 +1,7 @@
-## end
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.end
 
 Represents the end-of-stream marker.
 

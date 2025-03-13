@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.interrupt
 
 Constructs a new `Exit.Failure` from the specified `FiberId` indicating that
 the `Fiber` running an `Effect` workflow was terminated due to interruption.

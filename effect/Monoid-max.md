@@ -1,4 +1,7 @@
-## max
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.max
 
 Get a monoid where `combine` will return the maximum, based on the provided bounded order.
 

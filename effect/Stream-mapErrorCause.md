@@ -1,4 +1,7 @@
-## mapErrorCause
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapErrorCause
 
 Transforms the full causes of failures emitted by this stream.
 

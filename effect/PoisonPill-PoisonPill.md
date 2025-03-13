@@ -1,4 +1,7 @@
-## PoisonPill
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.PoisonPill
 
 A PoisonPill is a special value that tells a behaviour entity to shut itself down.
 PoisonPill is handled only when you are using a Queue-based RecipientBehaviour.

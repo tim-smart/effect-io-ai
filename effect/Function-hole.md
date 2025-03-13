@@ -1,4 +1,7 @@
-## hole
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.hole
 
 Type hole simulation.
 

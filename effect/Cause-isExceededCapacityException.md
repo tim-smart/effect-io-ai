@@ -1,4 +1,7 @@
-## isExceededCapacityException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isExceededCapacityException
 
 Checks if a given unknown value is an `ExceededCapacityException`.
 

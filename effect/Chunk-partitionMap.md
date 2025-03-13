@@ -1,4 +1,7 @@
-## partitionMap
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.partitionMap
 
 Partitions the elements of this chunk into two chunks using f.
 

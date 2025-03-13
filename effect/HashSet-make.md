@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.make
 
 Construct a new `HashSet` from a variable number of values.
 

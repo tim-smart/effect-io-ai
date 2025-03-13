@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.head
 
 Returns a successful effect with the head of the list if the list is
 non-empty or fails with the error `None` if the list is empty.

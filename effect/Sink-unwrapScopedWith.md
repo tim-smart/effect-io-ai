@@ -1,4 +1,7 @@
-## unwrapScopedWith
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.unwrapScopedWith
 
 Constructs a `Sink` from a function which receives a `Scope` and returns
 an effect that will result in a `Sink` if successful.

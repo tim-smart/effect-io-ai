@@ -1,4 +1,7 @@
-## min
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.min
 
 Returns the minimum between two `number`s.
 

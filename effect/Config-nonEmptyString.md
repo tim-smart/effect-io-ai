@@ -1,4 +1,7 @@
-## nonEmptyString
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.nonEmptyString
 
 Constructs a config for a non-empty string value.
 

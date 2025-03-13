@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.map
 
 Maps the value produced by the effect.
 

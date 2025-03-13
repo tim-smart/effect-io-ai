@@ -1,4 +1,7 @@
-## sum
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.sum
 
 A sink that sums incoming numeric values.
 

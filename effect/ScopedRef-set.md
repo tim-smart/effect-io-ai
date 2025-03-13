@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `ScopedRef`<br />
+
+## ScopedRef.set
 
 Sets the value of this reference to the specified resourcefully-created
 value. Any resources associated with the old value will be released.

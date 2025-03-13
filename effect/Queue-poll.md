@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.poll
 
 Returns the first value in the `Queue` as a `Some<A>`, or `None` if the queue
 is empty.

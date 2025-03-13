@@ -1,4 +1,7 @@
-## runLast
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runLast
 
 Runs the stream to completion and yields the last value emitted by it,
 discarding the rest of the elements.

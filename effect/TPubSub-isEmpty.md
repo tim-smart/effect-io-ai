@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.isEmpty
 
 Returns `true` if the `TPubSub` contains zero elements, `false` otherwise.
 

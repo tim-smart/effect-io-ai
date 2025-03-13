@@ -1,4 +1,7 @@
-## defaults
+Package: `@effect/cluster`<br />
+Module: `ManagerConfig`<br />
+
+## ManagerConfig.defaults
 
 Uses the default as ManagerConfig.
 

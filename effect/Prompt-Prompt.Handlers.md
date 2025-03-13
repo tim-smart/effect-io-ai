@@ -1,4 +1,7 @@
-## Prompt.Handlers
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.Prompt.Handlers
 
 Represents the set of handlers used by a `Prompt` to:
 

@@ -1,4 +1,7 @@
-## sign
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.sign
 
 Determines the sign of a given `number`.
 

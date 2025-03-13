@@ -1,4 +1,7 @@
-## zipWithIndex
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipWithIndex
 
 Zips this stream together with the index of elements.
 

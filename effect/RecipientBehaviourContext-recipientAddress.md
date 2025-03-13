@@ -1,4 +1,7 @@
-## recipientAddress
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.recipientAddress
 
 Gets the current entityId
 

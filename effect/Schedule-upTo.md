@@ -1,4 +1,7 @@
-## upTo
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.upTo
 
 Returns a new schedule that limits execution to a fixed duration.
 

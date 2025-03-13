@@ -1,4 +1,7 @@
-## dieOption
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.dieOption
 
 Retrieves the first `Die` defect in a `Cause`, if present.
 

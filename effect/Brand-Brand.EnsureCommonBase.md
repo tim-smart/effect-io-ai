@@ -1,4 +1,7 @@
-## Brand.EnsureCommonBase
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.EnsureCommonBase
 
 A utility type that checks that all brands have the same base type.
 

@@ -1,4 +1,7 @@
-## mapChunksEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapChunksEffect
 
 Effectfully transforms the chunks emitted by this stream.
 

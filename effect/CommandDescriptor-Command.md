@@ -1,4 +1,7 @@
-## Command
+Package: `@effect/cli`<br />
+Module: `CommandDescriptor`<br />
+
+## CommandDescriptor.Command
 
 A `Command` represents a command in a command-line application.
 

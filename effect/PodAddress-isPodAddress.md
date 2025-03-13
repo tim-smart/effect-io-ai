@@ -1,4 +1,7 @@
-## isPodAddress
+Package: `@effect/cluster`<br />
+Module: `PodAddress`<br />
+
+## PodAddress.isPodAddress
 
 Ensures that the given value is a valid PodAddress.
 

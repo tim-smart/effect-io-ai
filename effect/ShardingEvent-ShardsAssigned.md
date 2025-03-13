@@ -1,4 +1,7 @@
-## ShardsAssigned
+Package: `@effect/cluster`<br />
+Module: `ShardingEvent`<br />
+
+## ShardingEvent.ShardsAssigned
 
 Constructs the event that occurs when new shards are assigned to Pod.
 

@@ -1,4 +1,7 @@
-## getSemigroupIntersection
+Package: `@effect/typeclass`<br />
+Module: `Record`<br />
+
+## Record.getSemigroupIntersection
 
 A `Semigroup` that creates an intersection of two records.
 

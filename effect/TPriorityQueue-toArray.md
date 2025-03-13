@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.toArray
 
 Collects all values into an array.
 

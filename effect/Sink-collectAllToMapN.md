@@ -1,4 +1,7 @@
-## collectAllToMapN
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllToMapN
 
 A sink that collects first `n` keys into a map. The keys are calculated
 from inputs using the keying function `key`; if multiple inputs use the the

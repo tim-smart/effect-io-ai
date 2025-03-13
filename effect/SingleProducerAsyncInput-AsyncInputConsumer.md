@@ -1,4 +1,7 @@
-## AsyncInputConsumer
+Package: `effect`<br />
+Module: `SingleProducerAsyncInput`<br />
+
+## SingleProducerAsyncInput.AsyncInputConsumer
 
 Consumer-side view of `SingleProducerAsyncInput` for variance purposes.
 

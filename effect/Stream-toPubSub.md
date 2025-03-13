@@ -1,4 +1,7 @@
-## toPubSub
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toPubSub
 
 Converts the stream to a scoped `PubSub` of chunks. After the scope is closed,
 the `PubSub` will never again produce values and should be discarded.

@@ -1,4 +1,7 @@
-## runHead
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runHead
 
 Runs the stream to completion and yields the first value emitted by it,
 discarding the rest of the elements.

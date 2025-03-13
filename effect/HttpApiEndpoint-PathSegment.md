@@ -1,4 +1,7 @@
-## PathSegment
+Package: `@effect/platform`<br />
+Module: `HttpApiEndpoint`<br />
+
+## HttpApiEndpoint.PathSegment
 
 Represents a path segment. A path segment is a string that represents a
 segment of a URL path.

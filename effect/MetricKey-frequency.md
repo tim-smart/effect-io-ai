@@ -1,4 +1,7 @@
-## frequency
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.frequency
 
 Creates a metric key for a categorical frequency table, with the specified
 name.

@@ -1,4 +1,7 @@
-## combine
+Package: `effect`<br />
+Module: `FiberRefsPatch`<br />
+
+## FiberRefsPatch.combine
 
 Combines this patch and the specified patch to create a new patch that
 describes applying the changes from this patch and the specified patch

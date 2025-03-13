@@ -1,4 +1,7 @@
-## makeWithState
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.makeWithState
 
 Creates a new schedule with a custom state and step function.
 

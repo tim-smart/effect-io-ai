@@ -1,4 +1,7 @@
-## TimeZone
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TimeZone
 
 Defines a schema that attempts to convert a `string` to a `TimeZone` using the `DateTime.zoneFromString` constructor.
 

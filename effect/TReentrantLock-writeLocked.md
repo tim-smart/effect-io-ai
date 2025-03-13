@@ -1,4 +1,7 @@
-## writeLocked
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.writeLocked
 
 Determines if a write lock is held by some fiber.
 

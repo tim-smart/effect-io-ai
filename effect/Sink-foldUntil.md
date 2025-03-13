@@ -1,4 +1,7 @@
-## foldUntil
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldUntil
 
 Creates a sink that folds elements of type `In` into a structure of type
 `S` until `max` elements have been folded.

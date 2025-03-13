@@ -1,4 +1,7 @@
-## catchIf
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchIf
 
 Recovers from specific errors based on a predicate.
 

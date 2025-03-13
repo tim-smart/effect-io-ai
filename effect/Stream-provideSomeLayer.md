@@ -1,4 +1,7 @@
-## provideSomeLayer
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.provideSomeLayer
 
 Splits the context into two parts, providing one part using the
 specified layer and leaving the remainder `R0`.

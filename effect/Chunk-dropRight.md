@@ -1,4 +1,7 @@
-## dropRight
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.dropRight
 
 Drops the last `n` elements.
 

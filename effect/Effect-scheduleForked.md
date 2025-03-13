@@ -1,4 +1,7 @@
-## scheduleForked
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.scheduleForked
 
 Runs an effect repeatedly on a new fiber according to a given schedule.
 

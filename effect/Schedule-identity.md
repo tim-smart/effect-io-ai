@@ -1,4 +1,7 @@
-## identity
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.identity
 
 Creates a schedule that always recurs, passing inputs directly as outputs.
 

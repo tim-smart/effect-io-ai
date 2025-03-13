@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `SubscriptionRef`<br />
+
+## SubscriptionRef.make
 
 Creates a new `SubscriptionRef` with the specified value.
 

@@ -1,4 +1,7 @@
-## Layout.FittingPredicate
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.Layout.FittingPredicate
 
 Decides whether a `DocStream` fits the given constraints, namely:
 - original indentation of the current column

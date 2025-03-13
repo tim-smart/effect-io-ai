@@ -1,4 +1,7 @@
-## timerWithBoundaries
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.timerWithBoundaries
 
 Creates a timer metric, based on a histogram created from the provided
 boundaries, which keeps track of durations in milliseconds. The unit of time

@@ -1,4 +1,7 @@
-## isNumber
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNumber
 
 Tests if a value is a `number`.
 

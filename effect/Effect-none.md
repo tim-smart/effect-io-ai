@@ -1,4 +1,7 @@
-## none
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.none
 
 Ensures the `Option` is `None`, returning `void`. Otherwise, raises a
 `NoSuchElementException`.

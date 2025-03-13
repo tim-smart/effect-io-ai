@@ -1,4 +1,7 @@
-## reduceWithContext
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.reduceWithContext
 
 Combines all parts of a `Cause` into a single value using a custom reducer
 and a context.

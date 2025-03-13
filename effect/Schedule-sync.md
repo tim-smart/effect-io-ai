@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.sync
 
 Returns a schedule that recurs indefinitely, evaluating the given function to
 produce a constant value.

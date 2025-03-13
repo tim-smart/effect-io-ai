@@ -1,4 +1,7 @@
-## increment
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.increment
 
 Returns the result of adding `1n` to a given number.
 

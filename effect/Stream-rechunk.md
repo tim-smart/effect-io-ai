@@ -1,4 +1,7 @@
-## rechunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.rechunk
 
 Re-chunks the elements of the stream into chunks of `n` elements each. The
 last chunk might contain less than `n` elements.

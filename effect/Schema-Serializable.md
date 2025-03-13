@@ -1,4 +1,7 @@
-## Serializable
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Serializable
 
 The `Serializable` trait allows objects to define their own schema for
 serialization.

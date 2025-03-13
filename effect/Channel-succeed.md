@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.succeed
 
 Constructs a channel that succeeds immediately with the specified value.
 

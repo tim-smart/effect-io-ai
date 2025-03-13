@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.remove
 
 Remove the entry for the specified key in the `Trie`.
 

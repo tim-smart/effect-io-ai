@@ -1,4 +1,7 @@
-## unsafeWipe
+Package: `effect`<br />
+Module: `Redacted`<br />
+
+## Redacted.unsafeWipe
 
 Erases the underlying value of a `Redacted` instance, rendering it unusable.
 This function is intended to ensure that sensitive data does not remain in

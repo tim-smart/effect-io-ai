@@ -1,4 +1,7 @@
-## flattenEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flattenEffect
 
 Flattens `Effect` values into the stream's structure, preserving all
 information about the effect.

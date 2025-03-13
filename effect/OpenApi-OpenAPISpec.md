@@ -1,4 +1,7 @@
-## OpenAPISpec
+Package: `@effect/platform`<br />
+Module: `OpenApi`<br />
+
+## OpenApi.OpenAPISpec
 
 This model describes the OpenAPI specification (version 3.1.0) returned by
 `fromApi`. It is not intended to describe the entire OpenAPI

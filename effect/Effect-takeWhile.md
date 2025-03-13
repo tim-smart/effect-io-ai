@@ -1,4 +1,7 @@
-## takeWhile
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.takeWhile
 
 Takes elements as long as the predicate returns `true`.
 

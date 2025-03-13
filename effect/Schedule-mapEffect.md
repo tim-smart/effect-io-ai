@@ -1,4 +1,7 @@
-## mapEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.mapEffect
 
 Returns a new schedule that applies an effectful transformation to its
 output.

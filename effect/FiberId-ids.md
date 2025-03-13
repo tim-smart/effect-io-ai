@@ -1,4 +1,7 @@
-## ids
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.ids
 
 Get the set of identifiers for this `FiberId`.
 

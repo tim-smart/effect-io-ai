@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.filter
 
 Preserves parts of a `Cause` that match a given predicate.
 

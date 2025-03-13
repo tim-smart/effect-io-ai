@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.failCause
 
 Constructs a layer that fails with the specified cause.
 

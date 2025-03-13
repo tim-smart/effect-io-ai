@@ -1,4 +1,7 @@
-## getOrder
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.getOrder
 
 This function creates and returns a new `Order` for a tuple of values based on the given `Order`s for each element in the tuple.
 The returned `Order` compares two tuples of the same type by applying the corresponding `Order` to each element in the tuple.

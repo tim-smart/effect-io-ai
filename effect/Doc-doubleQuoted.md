@@ -1,4 +1,7 @@
-## doubleQuoted
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.doubleQuoted
 
 Encloses the input document in double quotes (`""`).
 

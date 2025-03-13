@@ -1,4 +1,7 @@
-## concatWith
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.concatWith
 
 The `concatWith` combinator concatenates all documents in a collection
 element-wise with the specified binary function.

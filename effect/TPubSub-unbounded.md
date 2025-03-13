@@ -1,4 +1,7 @@
-## unbounded
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.unbounded
 
 Creates an unbounded `TPubSub`.
 

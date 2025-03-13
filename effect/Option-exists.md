@@ -1,4 +1,7 @@
-## exists
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.exists
 
 Checks if a value in an `Option` satisfies a given predicate or refinement.
 

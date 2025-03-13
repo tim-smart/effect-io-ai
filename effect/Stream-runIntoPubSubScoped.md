@@ -1,4 +1,7 @@
-## runIntoPubSubScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runIntoPubSubScoped
 
 Like `Stream.runIntoPubSub`, but provides the result as a scoped effect to
 allow for scope composition.

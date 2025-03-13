@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.make
 
 Creates a new RecipientBehaviourContext
 

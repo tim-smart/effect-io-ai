@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.suspend
 
 Lazily constructs a layer. This is useful to avoid infinite recursion when
 creating layers that refer to themselves.

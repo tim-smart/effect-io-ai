@@ -1,4 +1,7 @@
-## trackDefectWith
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackDefectWith
 
 Returns an aspect that will update this metric with the result of applying
 the specified function to the defect throwables of the effects that the

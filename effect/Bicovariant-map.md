@@ -1,4 +1,7 @@
-## map
+Package: `@effect/typeclass`<br />
+Module: `Bicovariant`<br />
+
+## Bicovariant.map
 
 Returns a default `map` implementation.
 

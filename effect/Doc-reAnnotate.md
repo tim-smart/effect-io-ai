@@ -1,4 +1,7 @@
-## reAnnotate
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.reAnnotate
 
 Changes the annotation of a document. Useful for modifying documents embedded
 with one form of annotation with a more general annotation.

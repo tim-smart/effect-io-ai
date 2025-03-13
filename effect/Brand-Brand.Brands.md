@@ -1,4 +1,7 @@
-## Brand.Brands
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.Brands
 
 A utility type to extract the brands from a branded type.
 

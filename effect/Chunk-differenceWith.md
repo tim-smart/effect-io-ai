@@ -1,4 +1,7 @@
-## differenceWith
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.differenceWith
 
 Creates a `Chunk` of values not included in the other given `Chunk` using the provided `isEquivalent` function.
 The order and references of result values are determined by the first `Chunk`.

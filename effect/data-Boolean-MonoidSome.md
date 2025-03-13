@@ -1,4 +1,7 @@
-## MonoidSome
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.MonoidSome
 
 `boolean` monoid under disjunction, see also `SemigroupSome`.
 

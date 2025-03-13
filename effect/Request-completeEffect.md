@@ -1,4 +1,7 @@
-## completeEffect
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.completeEffect
 
 Complete a `Request` with the specified effectful computation, failing the
 request with the error from the effect workflow if it fails, and completing

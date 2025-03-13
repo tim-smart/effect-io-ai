@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.filter
 
 Selects properties from a record whose values match the given predicate.
 

@@ -1,4 +1,7 @@
-## TupleOf
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.TupleOf
 
 Represents a tuple with a fixed number of elements of type `T`.
 

@@ -1,4 +1,7 @@
-## take
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.take
 
 Takes the first up to `n` elements from the chunk
 

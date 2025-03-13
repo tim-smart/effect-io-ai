@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.andThen
 
 Executes a sequence of two `Either`s. The second `Either` can be dependent on the result of the first `Either`.
 

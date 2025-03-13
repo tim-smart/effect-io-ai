@@ -1,4 +1,7 @@
-## lock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.lock
 
 Just a convenience method for applications that only need reentrant locks,
 without needing a distinction between readers / writers.

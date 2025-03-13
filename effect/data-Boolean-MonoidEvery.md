@@ -1,4 +1,7 @@
-## MonoidEvery
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.MonoidEvery
 
 `boolean` monoid under conjunction, see also `SemigroupEvery`.
 

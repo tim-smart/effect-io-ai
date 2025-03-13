@@ -1,4 +1,7 @@
-## withTracerDisabledWhen
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.withTracerDisabledWhen
 
 Disables tracing for specific requests based on a provided predicate.
 

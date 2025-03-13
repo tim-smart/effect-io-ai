@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.andThen
 
 Chains two actions, where the second action can depend on the result of the
 first.

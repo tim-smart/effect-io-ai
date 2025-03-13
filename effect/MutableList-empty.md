@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.empty
 
 Creates an empty `MutableList`.
 

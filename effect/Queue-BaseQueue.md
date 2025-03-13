@@ -1,4 +1,7 @@
-## BaseQueue
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.BaseQueue
 
 The base interface that all `Queue`s must implement.
 

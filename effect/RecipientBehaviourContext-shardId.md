@@ -1,4 +1,7 @@
-## shardId
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviourContext`<br />
+
+## RecipientBehaviourContext.shardId
 
 Gets the current shardId
 

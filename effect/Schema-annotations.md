@@ -1,4 +1,7 @@
-## annotations
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.annotations
 
 Merges a set of new annotations with existing ones, potentially overwriting
 any duplicates.

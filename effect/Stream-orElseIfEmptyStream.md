@@ -1,4 +1,7 @@
-## orElseIfEmptyStream
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseIfEmptyStream
 
 Switches to the provided stream in case this one is empty.
 

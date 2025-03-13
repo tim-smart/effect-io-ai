@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.every
 
 Atomically evaluate the conjunction of a predicate across the members of
 the array.

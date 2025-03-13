@@ -1,4 +1,7 @@
-## Permissions
+Package: `@effect/platform-browser`<br />
+Module: `Permissions`<br />
+
+## Permissions.Permissions
 
 Wrapper on the Permission API (`navigator.permissions`)
 with methods for querying status of permissions.

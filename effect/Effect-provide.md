@@ -1,4 +1,7 @@
-## provide
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.provide
 
 Provides necessary dependencies to an effect, removing its environmental
 requirements.

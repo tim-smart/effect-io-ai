@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zip
 
 Zips this stream with another point-wise and emits tuples of elements from
 both streams.

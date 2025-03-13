@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.size
 
 Returns the number of elements contained in the specified `List`
 

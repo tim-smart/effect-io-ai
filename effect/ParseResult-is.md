@@ -1,4 +1,7 @@
-## is
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.is
 
 By default the option `exact` is set to `true`.
 

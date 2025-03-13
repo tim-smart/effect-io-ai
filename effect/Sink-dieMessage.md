@@ -1,4 +1,7 @@
-## dieMessage
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dieMessage
 
 Creates a sink halting with the specified message, wrapped in a
 `RuntimeException`.

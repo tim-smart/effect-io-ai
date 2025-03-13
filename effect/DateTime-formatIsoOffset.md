@@ -1,4 +1,7 @@
-## formatIsoOffset
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatIsoOffset
 
 Format a `DateTime.Zoned` as a ISO string with an offset.
 

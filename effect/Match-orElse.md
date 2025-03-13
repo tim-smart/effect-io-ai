@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.orElse
 
 Provides a fallback value when no patterns match.
 

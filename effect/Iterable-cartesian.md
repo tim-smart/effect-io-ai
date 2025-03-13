@@ -1,4 +1,7 @@
-## cartesian
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.cartesian
 
 Zips this Iterable crosswise with the specified Iterable.
 

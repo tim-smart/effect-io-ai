@@ -1,4 +1,7 @@
-## register
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.register
 
 Notify the shard manager that shards can now be assigned to this pod.
 

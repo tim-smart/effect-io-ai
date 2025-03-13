@@ -1,4 +1,7 @@
-## zipWith
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.zipWith
 
 Zips this fiber with the specified fiber, combining their results using the
 specified combiner function. Both joins and interruptions are performed in

@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.max
 
 Finds the maximum element in an array based on a comparator.
 

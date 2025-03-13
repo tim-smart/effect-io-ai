@@ -1,4 +1,7 @@
-## tuple
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.tuple
 
 Similar to `Promise.all` but operates on `Predicate`s.
 

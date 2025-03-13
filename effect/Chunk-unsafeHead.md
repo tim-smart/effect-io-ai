@@ -1,4 +1,7 @@
-## unsafeHead
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.unsafeHead
 
 Returns the first element of this chunk.
 

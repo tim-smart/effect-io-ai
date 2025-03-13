@@ -1,4 +1,7 @@
-## findEffect
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.findEffect
 
 Creates a sink that produces values until one verifies the predicate `f`.
 

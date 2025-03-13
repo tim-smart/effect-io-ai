@@ -1,4 +1,7 @@
-## partial
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.partial
 
 Equivalent at runtime to the built-in TypeScript utility type `Partial`.
 

@@ -1,4 +1,7 @@
-## array
+Package: `@effect/typeclass`<br />
+Module: `Monoid`<br />
+
+## Monoid.array
 
 Given a type `A`, this function creates and returns a `Semigroup` for `ReadonlyArray<A>`.
 

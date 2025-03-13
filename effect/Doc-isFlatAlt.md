@@ -1,4 +1,7 @@
-## isFlatAlt
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isFlatAlt
 
 Returns `true` if the specified `Doc` is a `FlatAlt`, `false` otherwise.
 

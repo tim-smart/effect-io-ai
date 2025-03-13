@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.set
 
 Add a fiber to the FiberMap. When the fiber completes, it will be removed from the FiberMap.
 If the key already exists in the FiberMap, the previous fiber will be interrupted.

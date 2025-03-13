@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.union
 
 Merge two records, preserving entries that exist in either of the records.
 

@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.unsafeGet
 
 Unsafely lookup the value for the specified key in the `HashMap` using the
 internal hashing function.

@@ -1,4 +1,7 @@
-## scheduleWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.scheduleWith
 
 Schedules the output of the stream using the provided `schedule` and emits
 its output at the end (if `schedule` is finite). Uses the provided function

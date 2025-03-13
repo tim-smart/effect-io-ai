@@ -1,4 +1,7 @@
-## endMutation
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.endMutation
 
 Marks the `HashMap` as immutable.
 

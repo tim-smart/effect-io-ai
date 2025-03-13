@@ -1,4 +1,7 @@
-## ~~fromNumber~~
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## ~~BigDecimal.fromNumber~~
 
 Creates a `BigDecimal` from a `number` value.
 

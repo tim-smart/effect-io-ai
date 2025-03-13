@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Redacted`<br />
+
+## Redacted.getEquivalence
 
 Generates an equivalence relation for `Redacted<A>` values based on an
 equivalence relation for the underlying values `A`. This function is useful

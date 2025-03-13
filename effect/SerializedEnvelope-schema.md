@@ -1,4 +1,7 @@
-## schema
+Package: `@effect/cluster`<br />
+Module: `SerializedEnvelope`<br />
+
+## SerializedEnvelope.schema
 
 This is the schema for a value.
 

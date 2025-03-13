@@ -1,4 +1,7 @@
-## drain
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.drain
 
 Returns a new channel which reads all the elements from upstream's output
 channel and ignores them, then terminates with the upstream result value.

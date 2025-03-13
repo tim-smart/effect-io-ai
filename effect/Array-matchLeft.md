@@ -1,4 +1,7 @@
-## matchLeft
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.matchLeft
 
 Matches the elements of an array from the left, applying functions to cases of empty and non-empty arrays.
 

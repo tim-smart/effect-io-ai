@@ -1,4 +1,7 @@
-## subtractDuration
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.subtractDuration
 
 Subtract the given `Duration` from a `DateTime`.
 

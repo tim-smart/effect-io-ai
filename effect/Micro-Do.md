@@ -1,4 +1,7 @@
-## Do
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.Do
 
 Start a do notation block.
 

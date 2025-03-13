@@ -1,4 +1,7 @@
-## safeFromNumber
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.safeFromNumber
 
 Creates a `BigDecimal` from a `number` value.
 

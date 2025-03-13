@@ -1,4 +1,7 @@
-## prependAll
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.prependAll
 
 Prepends the specified prefix iterable to the beginning of the specified iterable.
 

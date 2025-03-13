@@ -1,4 +1,7 @@
-## headOrElse
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.headOrElse
 
 Retrieves the first element of a `ReadonlyArray`.
 

@@ -1,4 +1,7 @@
-## Monoid
+Package: `@effect/typeclass`<br />
+Module: `Ordering`<br />
+
+## Ordering.Monoid
 
 `Monoid` instance for `Ordering`, returns the left-most non-zero `Ordering`.
 

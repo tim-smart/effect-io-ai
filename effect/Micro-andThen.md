@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.andThen
 
 A more flexible version of `flatMap` that combines `map` and `flatMap` into a
 single API.

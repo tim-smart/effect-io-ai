@@ -1,4 +1,7 @@
-## isNonEmpty
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.isNonEmpty
 
 Determines if the chunk is not empty.
 

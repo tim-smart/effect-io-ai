@@ -1,4 +1,7 @@
-## compact
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.compact
 
 Filters out `None` values from a `HashMap` of `Options`s.
 

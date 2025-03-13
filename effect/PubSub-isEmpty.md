@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.isEmpty
 
 Returns `true` if the `Queue` contains zero elements, `false` otherwise.
 

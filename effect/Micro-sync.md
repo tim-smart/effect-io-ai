@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.sync
 
 Creates a `Micro` effect that succeeds with a lazily evaluated value.
 

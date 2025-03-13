@@ -1,4 +1,7 @@
-## all
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.all
 
 Constructs a config from a tuple / struct / arguments of configs.
 

@@ -1,4 +1,7 @@
-## hashSet
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.hashSet
 
 Constructs a config for a sequence of values.
 

@@ -1,4 +1,7 @@
-## updateWith
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.updateWith
 
 A variant of `update` that allows specifying the function that will be used
 to combine old values with new values.

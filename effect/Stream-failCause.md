@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.failCause
 
 The stream that always fails with the specified `Cause`.
 

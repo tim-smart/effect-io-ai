@@ -1,4 +1,7 @@
-## raceWith
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.raceWith
 
 Runs both sinks in parallel on the input, using the specified merge
 function as soon as one result or the other has been computed.

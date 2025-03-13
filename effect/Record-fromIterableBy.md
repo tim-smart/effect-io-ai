@@ -1,4 +1,7 @@
-## fromIterableBy
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.fromIterableBy
 
 Creates a new record from an iterable, utilizing the provided function to determine the key for each element.
 

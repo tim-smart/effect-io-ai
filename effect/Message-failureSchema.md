@@ -1,4 +1,7 @@
-## failureSchema
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.failureSchema
 
 Extracts the failure schema from a Message. This schema will be used to encode remote failures of the Message processor.
 

@@ -1,4 +1,7 @@
-## modify
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.modify
 
 Modifies the metric with the specified update message. For example, if the
 metric were a gauge, the update would increment the method by the provided

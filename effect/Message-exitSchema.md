@@ -1,4 +1,7 @@
-## exitSchema
+Package: `@effect/cluster`<br />
+Module: `Message`<br />
+
+## Message.exitSchema
 
 Extracts the exit schema from a Message. This schema will be used to encode the remote exit of the Message processor.
 

@@ -1,4 +1,7 @@
-## ManagerConfig
+Package: `@effect/cluster`<br />
+Module: `ManagerConfig`<br />
+
+## ManagerConfig.ManagerConfig
 
 This is the Shard Manager configuration.
 

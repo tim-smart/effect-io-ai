@@ -1,4 +1,7 @@
-## isBothRunning
+Package: `effect`<br />
+Module: `MergeState`<br />
+
+## MergeState.isBothRunning
 
 Returns `true` if the specified `MergeState` is a `BothRunning`, `false`
 otherwise.

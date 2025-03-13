@@ -1,4 +1,7 @@
-## withTrace
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.withTrace
 
 Add a stack trace to any failures that occur in the effect. The trace will be
 added to the `traces` field of the `MicroCause` object.

@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.map
 
 Transforms the elements of a chunk using the specified mapping function.
 If the input chunk is non-empty, the resulting chunk will also be non-empty.

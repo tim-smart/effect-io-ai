@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.failCause
 
 Creates a `Fiber` that has already failed with the specified cause.
 

@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.retry
 
 Retries constructing this layer according to the specified schedule.
 

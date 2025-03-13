@@ -1,4 +1,7 @@
-## optimize
+Package: `@effect/printer`<br />
+Module: `Optimize`<br />
+
+## Optimize.optimize
 
 The `optimize` function will combine text nodes so that they can be rendered
 more efficiently. An optimized document is always laid out in an identical

@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.fromIterable
 
 Creates a new `HashSet` from an iterable collection of values.
 

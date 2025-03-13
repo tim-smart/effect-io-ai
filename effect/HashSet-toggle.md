@@ -1,4 +1,7 @@
-## toggle
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.toggle
 
 Checks if a value is present in the `HashSet`. If it is present, the value
 will be removed from the `HashSet`, otherwise the value will be added to the

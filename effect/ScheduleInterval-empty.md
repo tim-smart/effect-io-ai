@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.empty
 
 An `Interval` of zero-width.
 

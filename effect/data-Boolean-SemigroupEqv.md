@@ -1,4 +1,7 @@
-## SemigroupEqv
+Package: `@effect/typeclass`<br />
+Module: `Boolean`<br />
+
+## Boolean.SemigroupEqv
 
 `boolean` semigroup under equivalence.
 

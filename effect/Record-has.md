@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.has
 
 Check if a given `key` exists in a record.
 

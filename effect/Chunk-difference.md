@@ -1,4 +1,7 @@
-## difference
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.difference
 
 Creates a `Chunk` of values not included in the other given `Chunk`.
 The order and references of result values are determined by the first `Chunk`.

@@ -1,4 +1,7 @@
-## filterMapWhile
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.filterMapWhile
 
 Applies a function to each element of the array and filters based on the result, stopping when a condition is not met.
 This method combines filtering and mapping in a single pass, and short-circuits, i.e., stops processing, as soon as the function returns `None`.

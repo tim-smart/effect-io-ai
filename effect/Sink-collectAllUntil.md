@@ -1,4 +1,7 @@
-## collectAllUntil
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllUntil
 
 Accumulates incoming elements into a chunk until predicate `p` is
 satisfied.

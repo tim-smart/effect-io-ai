@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.make
 
 Makes a new `TMap` that is initialized with specified values.
 

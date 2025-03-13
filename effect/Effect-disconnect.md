@@ -1,4 +1,7 @@
-## disconnect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.disconnect
 
 Provides a way to handle timeouts in uninterruptible effects, allowing them
 to continue in the background while the main control flow proceeds with the

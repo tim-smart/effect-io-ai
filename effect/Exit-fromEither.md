@@ -1,4 +1,7 @@
-## fromEither
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.fromEither
 
 Converts an `Either<R, L>` into an `Exit<R, L>`.
 

@@ -1,4 +1,7 @@
-## parse
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.parse
 
 Tries to parse a `number` from a `string` using the `Number()` function.
 The following special string values are supported: "NaN", "Infinity", "-Infinity".

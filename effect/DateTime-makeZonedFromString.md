@@ -1,4 +1,7 @@
-## makeZonedFromString
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.makeZonedFromString
 
 Create a `DateTime.Zoned` from a string.
 

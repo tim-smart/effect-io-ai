@@ -1,4 +1,7 @@
-## NdjsonOptions
+Package: `@effect/experimental`<br />
+Module: `Ndjson`<br />
+
+## Ndjson.NdjsonOptions
 
 Represents a set of options which can be used to control how the newline
 delimited JSON is handled.

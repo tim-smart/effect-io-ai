@@ -1,4 +1,7 @@
-## PodAddress.Encoded
+Package: `@effect/cluster`<br />
+Module: `PodAddress`<br />
+
+## PodAddress.PodAddress.Encoded
 
 This is the shape one PodAddress has over the wire.
 

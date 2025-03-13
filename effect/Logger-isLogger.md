@@ -1,4 +1,7 @@
-## isLogger
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.isLogger
 
 Returns `true` if the specified value is a `Logger`, otherwise returns `false`.
 

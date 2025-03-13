@@ -1,4 +1,7 @@
-## catchSomeDefect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchSomeDefect
 
 Recovers from specific defects using a provided partial function.
 

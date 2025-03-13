@@ -1,4 +1,7 @@
-## SerializedMessage
+Package: `@effect/cluster`<br />
+Module: `SerializedMessage`<br />
+
+## SerializedMessage.SerializedMessage
 
 Represents a Message that has been serialized.
 

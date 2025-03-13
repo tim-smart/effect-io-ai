@@ -1,4 +1,7 @@
-## runDrain
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runDrain
 
 Runs the stream only for its effects. The emitted elements are discarded.
 

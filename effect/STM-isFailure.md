@@ -1,4 +1,7 @@
-## isFailure
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.isFailure
 
 Returns whether this transactional effect is a failure.
 

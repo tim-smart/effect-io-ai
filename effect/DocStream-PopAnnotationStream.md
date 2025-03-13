@@ -1,4 +1,7 @@
-## PopAnnotationStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.PopAnnotationStream
 
 Represents the removal of a previously pushed annotation from a `Doc`.
 

@@ -1,4 +1,7 @@
-## untilOutput
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.untilOutput
 
 Returns a new schedule that stops execution when the given predicate on the
 output evaluates to `true`.

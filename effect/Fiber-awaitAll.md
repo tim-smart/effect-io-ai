@@ -1,4 +1,7 @@
-## awaitAll
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.awaitAll
 
 Awaits on all fibers to be completed, successfully or not.
 

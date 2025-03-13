@@ -1,4 +1,7 @@
-## drop
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.drop
 
 Creates a sink that drops `n` elements.
 

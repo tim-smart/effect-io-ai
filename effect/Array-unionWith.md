@@ -1,4 +1,7 @@
-## unionWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.unionWith
 
 Calculates the union of two arrays using the provided equivalence relation.
 

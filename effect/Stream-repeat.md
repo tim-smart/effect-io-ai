@@ -1,4 +1,7 @@
-## repeat
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeat
 
 Repeats the entire stream using the specified schedule. The stream will
 execute normally, and then repeat again according to the provided schedule.

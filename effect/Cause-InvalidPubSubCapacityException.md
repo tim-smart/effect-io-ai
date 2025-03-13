@@ -1,4 +1,7 @@
-## InvalidPubSubCapacityException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.InvalidPubSubCapacityException
 
 An error indicating invalid capacity for a `PubSub`.
 

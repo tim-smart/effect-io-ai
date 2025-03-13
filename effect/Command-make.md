@@ -1,4 +1,7 @@
-## make
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.make
 
 Create a command with the specified process name and an optional list of
 arguments.

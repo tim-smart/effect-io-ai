@@ -1,4 +1,7 @@
-## isPoisonPill
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.isPoisonPill
 
 Checks if the given value is a PoisonPill.
 

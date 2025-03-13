@@ -1,4 +1,7 @@
-## fromTQueue
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromTQueue
 
 Creates a stream from a TQueue of values
 

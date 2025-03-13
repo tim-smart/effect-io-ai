@@ -1,4 +1,7 @@
-## Nesting
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Nesting
 
 Represents a document that reacts to the current nesting level.
 

@@ -1,4 +1,7 @@
-## toStream
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toStream
 
 Converts this channel to a `Stream`.
 

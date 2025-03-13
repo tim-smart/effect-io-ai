@@ -1,4 +1,7 @@
-## orElseAbsurd
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.orElseAbsurd
 
 Throws an error if no pattern matches.
 

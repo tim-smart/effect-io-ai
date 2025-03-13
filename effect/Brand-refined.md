@@ -1,4 +1,7 @@
-## refined
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.refined
 
 Returns a `Brand.Constructor` that can construct a branded type from an unbranded value using the provided `refinement`
 predicate as validation of the input data.

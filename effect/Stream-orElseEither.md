@@ -1,4 +1,7 @@
-## orElseEither
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseEither
 
 Switches to the provided stream in case this one fails with a typed error.
 

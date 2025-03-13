@@ -1,4 +1,7 @@
-## withRandomScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withRandomScoped
 
 Sets the implementation of the `Random` service to the specified value and
 restores it to its original value when the scope is closed.

@@ -1,4 +1,7 @@
-## onEnd
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.onEnd
 
 Adds an effect to be executed at the end of the stream.
 

@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.retry
 
 When the stream fails, retry it according to the given schedule
 

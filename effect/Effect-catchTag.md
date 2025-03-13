@@ -1,4 +1,7 @@
-## catchTag
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchTag
 
 Catches and handles specific errors by their `_tag` field, which is used as a
 discriminator.

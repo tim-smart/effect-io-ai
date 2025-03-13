@@ -1,4 +1,7 @@
-## DocStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.DocStream
 
 Represents a document that has been laid out and can be processed used by the
 rendering algorithms.

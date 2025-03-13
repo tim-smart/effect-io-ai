@@ -1,4 +1,7 @@
-## whileInput
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.whileInput
 
 Returns a new schedule that continues execution as long as the given
 predicate on the input is true.

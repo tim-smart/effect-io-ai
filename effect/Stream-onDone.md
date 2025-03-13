@@ -1,4 +1,7 @@
-## onDone
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.onDone
 
 Runs the specified effect if this stream ends.
 

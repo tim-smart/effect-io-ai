@@ -1,4 +1,7 @@
-## ShardingConfig
+Package: `@effect/cluster`<br />
+Module: `ShardingConfig`<br />
+
+## ShardingConfig.ShardingConfig
 
 Sharding configuration
 

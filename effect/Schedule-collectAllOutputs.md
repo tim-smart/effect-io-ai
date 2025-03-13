@@ -1,4 +1,7 @@
-## collectAllOutputs
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.collectAllOutputs
 
 Collects all outputs of a schedule into a `Chunk`.
 

@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.remove
 
 Remove the entry for the specified key in the `HashMap` using the internal
 hashing function.

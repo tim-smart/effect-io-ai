@@ -1,4 +1,7 @@
-## remainder
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.remainder
 
 Returns the remainder left over when one operand is divided by a second operand.
 

@@ -1,4 +1,7 @@
-## DateTimeUpdateFromNumber
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.DateTimeUpdateFromNumber
 
 A field that represents a date-time value that is updated as the current
 `DateTime.Utc`. It is serialized as a `number`.

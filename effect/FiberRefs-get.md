@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.get
 
 Gets the value of the specified `FiberRef` in this collection of `FiberRef`
 values if it exists or `None` otherwise.

@@ -1,4 +1,7 @@
-## provideContext
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.provideContext
 
 Returns a new schedule with a provided context, eliminating the need for
 external dependencies.

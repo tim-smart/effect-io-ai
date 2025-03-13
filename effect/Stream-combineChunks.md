@@ -1,4 +1,7 @@
-## combineChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.combineChunks
 
 Combines the chunks from this stream and the specified stream by repeatedly
 applying the function `f` to extract a chunk using both sides and

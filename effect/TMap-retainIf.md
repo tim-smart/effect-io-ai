@@ -1,4 +1,7 @@
-## retainIf
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.retainIf
 
 Retains entries in a `TMap` that satisfy the specified predicate and returns the removed entries
 (or `void` if `discard = true`).

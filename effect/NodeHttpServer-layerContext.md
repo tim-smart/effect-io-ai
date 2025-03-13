@@ -1,4 +1,7 @@
-## layerContext
+Package: `@effect/platform-node`<br />
+Module: `NodeHttpServer`<br />
+
+## NodeHttpServer.layerContext
 
 A Layer providing the `HttpPlatform`, `FileSystem`, `Etag.Generator`, and `Path`
 services.

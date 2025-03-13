@@ -1,4 +1,7 @@
-## CliApp
+Package: `@effect/cli`<br />
+Module: `CliApp`<br />
+
+## CliApp.CliApp
 
 A `CliApp<A>` is a complete description of a command-line application.
 

@@ -1,4 +1,7 @@
-## GenAI.WellKnownSystem
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.GenAI.WellKnownSystem
 
 The `gen_ai.system` attribute has the following list of well-known values.
 

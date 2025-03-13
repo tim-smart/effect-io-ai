@@ -1,4 +1,7 @@
-## runDrain
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.runDrain
 
 Runs a channel until the end is received.
 

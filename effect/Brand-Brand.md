@@ -1,4 +1,7 @@
-## Brand
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand
 
 A generic interface that defines a branded type.
 

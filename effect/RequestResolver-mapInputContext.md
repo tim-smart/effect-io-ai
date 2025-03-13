@@ -1,4 +1,7 @@
-## mapInputContext
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.mapInputContext
 
 Provides this data source with part of its required context.
 

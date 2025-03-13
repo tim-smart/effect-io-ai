@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.zip
 
 Combines this differ and the specified differ to produce a new differ that
 knows how to diff the product of their values.

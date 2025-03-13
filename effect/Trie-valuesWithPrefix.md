@@ -1,4 +1,7 @@
-## valuesWithPrefix
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.valuesWithPrefix
 
 Returns an `IterableIterator` of the values within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).

@@ -1,4 +1,7 @@
-## summary
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.summary
 
 Creates a Summary metric that records observations and calculates quantiles.
 Summary metrics provide statistical information about a set of values, including quantiles.

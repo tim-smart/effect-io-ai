@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.fromIterable
 
 Creates a new `Array` from an iterable collection of values.
 If the input is already an array, it returns the input as-is.

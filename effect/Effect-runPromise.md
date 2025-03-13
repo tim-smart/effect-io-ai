@@ -1,4 +1,7 @@
-## runPromise
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.runPromise
 
 Executes an effect and returns the result as a `Promise`.
 

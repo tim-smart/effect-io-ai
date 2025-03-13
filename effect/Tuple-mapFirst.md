@@ -1,4 +1,7 @@
-## mapFirst
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.mapFirst
 
 Transforms the first component of a tuple using a given function.
 

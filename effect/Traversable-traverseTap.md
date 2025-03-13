@@ -1,4 +1,7 @@
-## traverseTap
+Package: `@effect/typeclass`<br />
+Module: `Traversable`<br />
+
+## Traversable.traverseTap
 
 Given a function which returns a `F` effect, thread this effect
 through the running of this function on all the values in `T`,

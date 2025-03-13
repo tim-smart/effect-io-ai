@@ -1,4 +1,7 @@
-## ArrayFormatterIssue
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.ArrayFormatterIssue
 
 Represents an issue returned by the `ArrayFormatter` formatter.
 

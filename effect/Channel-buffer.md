@@ -1,4 +1,7 @@
-## buffer
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.buffer
 
 Creates a channel backed by a buffer. When the buffer is empty, the channel
 will simply passthrough its input as output. However, when the buffer is

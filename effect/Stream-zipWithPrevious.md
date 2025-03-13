@@ -1,4 +1,7 @@
-## zipWithPrevious
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipWithPrevious
 
 Zips each element with the previous element. Initially accompanied by
 `None`.

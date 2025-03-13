@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.retry
 
 Abort and retry the whole transaction when any of the underlying
 transactional variables have changed.

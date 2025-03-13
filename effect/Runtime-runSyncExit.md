@@ -1,4 +1,7 @@
-## runSyncExit
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runSyncExit
 
 Executes the effect synchronously returning the exit.
 

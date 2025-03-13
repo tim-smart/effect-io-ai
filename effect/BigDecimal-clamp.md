@@ -1,4 +1,7 @@
-## clamp
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.clamp
 
 Restricts the given `BigDecimal` to be within the range specified by the `minimum` and `maximum` values.
 

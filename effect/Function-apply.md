@@ -1,4 +1,7 @@
-## apply
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.apply
 
 Apply a function to a given value.
 

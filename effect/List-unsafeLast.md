@@ -1,4 +1,7 @@
-## unsafeLast
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.unsafeLast
 
 Unsafely returns the last element of the specified `List`.
 

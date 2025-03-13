@@ -1,4 +1,7 @@
-## registerTopic
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.registerTopic
 
 Register a new topic type, allowing pods to broadcast messages to subscribers.
 

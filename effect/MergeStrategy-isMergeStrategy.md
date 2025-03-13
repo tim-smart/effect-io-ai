@@ -1,4 +1,7 @@
-## isMergeStrategy
+Package: `effect`<br />
+Module: `MergeStrategy`<br />
+
+## MergeStrategy.isMergeStrategy
 
 Returns `true` if the specified value is a `MergeStrategy`, `false`
 otherwise.

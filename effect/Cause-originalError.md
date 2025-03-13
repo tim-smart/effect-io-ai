@@ -1,4 +1,7 @@
-## originalError
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.originalError
 
 Retrieves the original, unproxied error instance from an error object.
 

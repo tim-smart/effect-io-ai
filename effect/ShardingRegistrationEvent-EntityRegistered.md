@@ -1,4 +1,7 @@
-## EntityRegistered
+Package: `@effect/cluster`<br />
+Module: `ShardingRegistrationEvent`<br />
+
+## ShardingRegistrationEvent.EntityRegistered
 
 Constructs and event that occurs when a new EntityType gets registered.
 

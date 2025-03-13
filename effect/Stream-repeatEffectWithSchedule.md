@@ -1,4 +1,7 @@
-## repeatEffectWithSchedule
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEffectWithSchedule
 
 Creates a stream from an effect producing a value of type `A`, which is
 repeated using the specified schedule.

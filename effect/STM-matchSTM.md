@@ -1,4 +1,7 @@
-## matchSTM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.matchSTM
 
 Effectfully folds over the `STM` effect, handling both failure and success.
 

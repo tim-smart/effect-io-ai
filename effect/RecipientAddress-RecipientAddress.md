@@ -1,4 +1,7 @@
-## RecipientAddress
+Package: `@effect/cluster`<br />
+Module: `RecipientAddress`<br />
+
+## RecipientAddress.RecipientAddress
 
 A RecipientAddress uniquely identifies a RecipientType + EntityId instance.
 

@@ -1,4 +1,7 @@
-## dieSync
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.dieSync
 
 Fails the transactional effect with the specified lazily evaluated defect.
 

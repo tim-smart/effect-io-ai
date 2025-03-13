@@ -1,4 +1,7 @@
-## fromAsyncIterable
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromAsyncIterable
 
 Creates a stream from an `AsyncIterable`.
 

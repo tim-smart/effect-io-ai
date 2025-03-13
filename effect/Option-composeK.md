@@ -1,4 +1,7 @@
-## composeK
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.composeK
 
 Composes two functions that return `Option` values, creating a new function
 that chains them together.

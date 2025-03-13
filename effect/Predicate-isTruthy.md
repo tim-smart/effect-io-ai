@@ -1,4 +1,7 @@
-## isTruthy
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isTruthy
 
 Tests if a value is `truthy`.
 

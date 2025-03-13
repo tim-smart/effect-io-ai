@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.fromIterable
 
 Creates a new `Chunk` from an iterable collection of values.
 

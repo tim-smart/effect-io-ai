@@ -1,4 +1,7 @@
-## unzip
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.unzip
 
 This function is the inverse of `zip`. Takes an `Iterable` of pairs and return two corresponding `Array`s.
 

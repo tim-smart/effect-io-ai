@@ -1,4 +1,7 @@
-## append
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.append
 
 Append an element to the end of an `Iterable`, creating a new `Iterable`.
 

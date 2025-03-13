@@ -1,4 +1,7 @@
-## FiberRefs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.FiberRefs
 
 `FiberRefs` is a data type that represents a collection of `FiberRef` values.
 

@@ -1,4 +1,7 @@
-## withTestConfigScoped
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withTestConfigScoped
 
 Sets the implementation of the config service to the specified value and
 restores it to its original value when the scope is closed.

@@ -1,4 +1,7 @@
-## greaterThan
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.greaterThan
 
 This filter checks whether the provided number is greater than the specified minimum.
 

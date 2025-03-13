@@ -1,4 +1,7 @@
-## tupled
+Package: `@effect/typeclass`<br />
+Module: `Invariant`<br />
+
+## Invariant.tupled
 
 Convert a value in a singleton array in a given effect.
 

@@ -1,4 +1,7 @@
-## runCallback
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.runCallback
 
 Executes the effect asynchronously, eventually passing the exit value to
 the specified callback.

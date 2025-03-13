@@ -1,4 +1,7 @@
-## isFailure
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.isFailure
 
 Returns `true` if the specified `Exit` is a `Failure`, `false` otherwise.
 

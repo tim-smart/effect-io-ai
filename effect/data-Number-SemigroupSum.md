@@ -1,4 +1,7 @@
-## SemigroupSum
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.SemigroupSum
 
 `number` semigroup under addition.
 

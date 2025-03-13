@@ -1,4 +1,7 @@
-## NoSuchElementException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.NoSuchElementException
 
 An error that occurs when an expected element is missing.
 

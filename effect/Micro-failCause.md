@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.failCause
 
 Creates a `Micro` effect that will fail with the specified `MicroCause`.
 

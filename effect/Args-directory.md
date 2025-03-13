@@ -1,4 +1,7 @@
-## directory
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.directory
 
 Creates a directory argument.
 

@@ -1,4 +1,7 @@
-## filterLogLevel
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.filterLogLevel
 
 Returns a version of this logger that only logs messages when the log level
 satisfies the specified predicate.

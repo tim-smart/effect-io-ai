@@ -1,4 +1,7 @@
-## Command.Output
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.Command.Output
 
 Configures the pipes that are established between the parent and child
 processes `stderr` and `stdout` streams.

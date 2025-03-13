@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.suspend
 
 Suspends creation of the specified transaction lazily.
 

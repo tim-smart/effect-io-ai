@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.map
 
 Transforms the errors in a `Cause` using a user-provided function.
 

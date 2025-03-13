@@ -1,4 +1,7 @@
-## cursorForward
+Package: `@effect/printer-ansi`<br />
+Module: `AnsiDoc`<br />
+
+## AnsiDoc.cursorForward
 
 Moves the cursor forward by the specified number of `columns` (default `1`)
 relative to the current cursor position.

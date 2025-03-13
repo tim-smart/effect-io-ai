@@ -1,4 +1,7 @@
-## getOrder
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.getOrder
 
 This function creates and returns a new `Order` for a struct of values based on the given `Order`s
 for each property in the struct.

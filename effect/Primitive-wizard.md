@@ -1,4 +1,7 @@
-## wizard
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.wizard
 
 Runs a wizard that will prompt the user for input matching the specified
 primitive type.

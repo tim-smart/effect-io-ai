@@ -1,4 +1,7 @@
-## typeSchema
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.typeSchema
 
 The `typeSchema` function allows you to extract the `Type` portion of a
 schema, creating a new schema that conforms to the properties defined in the

@@ -1,4 +1,7 @@
-## TestClock
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.TestClock
 
 A `TestClock` makes it easy to deterministically and efficiently test effects
 involving the passage of time.

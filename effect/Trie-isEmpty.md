@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.isEmpty
 
 Checks if the `Trie` contains any entries.
 

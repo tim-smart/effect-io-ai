@@ -1,4 +1,7 @@
-## trimmed
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.trimmed
 
 Verifies that a string contains no leading or trailing whitespaces.
 

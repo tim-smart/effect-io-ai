@@ -1,4 +1,7 @@
-## serviceFunction
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.serviceFunction
 
 Creates a function that uses a service from the context to produce a value.
 

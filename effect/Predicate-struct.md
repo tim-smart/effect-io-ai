@@ -1,4 +1,7 @@
-## struct
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.struct
 
 ```ts
 { ab: Refinement<A, B>; cd: Refinement<C, D>, ... } -> Refinement<{ ab: A; cd: C; ... }, { ab: B; cd: D; ... }>

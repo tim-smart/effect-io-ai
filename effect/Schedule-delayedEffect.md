@@ -1,4 +1,7 @@
-## delayedEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.delayedEffect
 
 Modifies a schedule by adding an effectfully computed delay before each
 execution.

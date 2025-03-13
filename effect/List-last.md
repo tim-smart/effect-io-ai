@@ -1,4 +1,7 @@
-## last
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.last
 
 Returns the last element of the specified list, or `None` if the list is
 empty.

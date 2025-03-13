@@ -1,4 +1,7 @@
-## filterMapWhile
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.filterMapWhile
 
 Transforms all elements of the `Iterable` for as long as the specified function returns some value
 

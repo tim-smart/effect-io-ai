@@ -1,4 +1,7 @@
-## toPullIn
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toPullIn
 
 Returns an `Effect` that can be used to repeatedly pull elements from the
 constructed `Channel` within the provided `Scope`. The pull effect fails

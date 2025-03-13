@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.union
 
 Creates a Chunks of unique values, in order, from all given Chunks.
 

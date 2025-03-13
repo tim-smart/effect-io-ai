@@ -1,4 +1,7 @@
-## isDoc
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isDoc
 
 Returns `true` if the specified value is a `Doc`, `false` otherwise.
 

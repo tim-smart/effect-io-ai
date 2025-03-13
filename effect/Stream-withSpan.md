@@ -1,4 +1,7 @@
-## withSpan
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.withSpan
 
 Wraps the stream with a new span for tracing.
 

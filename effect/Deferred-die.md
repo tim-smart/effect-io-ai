@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.die
 
 Kills the `Deferred` with the specified defect, which will be propagated to
 all fibers waiting on the value of the `Deferred`.

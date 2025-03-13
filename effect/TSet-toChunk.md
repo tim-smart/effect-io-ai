@@ -1,4 +1,7 @@
-## toChunk
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.toChunk
 
 Collects all elements into a `Chunk`.
 

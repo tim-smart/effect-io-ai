@@ -1,4 +1,7 @@
-## flattenIterables
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flattenIterables
 
 Submerges the iterables carried by this stream into the stream's structure,
 while still preserving them.

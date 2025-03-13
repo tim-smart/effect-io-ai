@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.make
 
 Constructs a new `Trie` from the specified entries (`[string, V]`).
 

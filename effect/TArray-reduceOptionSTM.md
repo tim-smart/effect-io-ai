@@ -1,4 +1,7 @@
-## reduceOptionSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.reduceOptionSTM
 
 Atomically reduce the non-empty array using a transactional binary
 operator.

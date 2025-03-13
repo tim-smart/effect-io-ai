@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.forEach
 
 Applies the specified function to the entries of the `Trie`.
 

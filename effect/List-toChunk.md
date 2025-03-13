@@ -1,4 +1,7 @@
-## toChunk
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.toChunk
 
 Converts the specified `List` to a `Chunk`.
 

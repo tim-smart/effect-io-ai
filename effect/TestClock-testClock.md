@@ -1,4 +1,7 @@
-## testClock
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.testClock
 
 Retrieves the `TestClock` service for this test.
 

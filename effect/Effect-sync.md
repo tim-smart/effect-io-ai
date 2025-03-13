@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.sync
 
 Creates an `Effect` that represents a synchronous side-effectful computation.
 

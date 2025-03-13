@@ -1,4 +1,7 @@
-## catchSome
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchSome
 
 Catches and recovers from specific types of errors, allowing you to attempt
 recovery only for certain errors.

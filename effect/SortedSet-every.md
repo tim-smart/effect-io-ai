@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `SortedSet`<br />
+
+## SortedSet.every
 
 Check if a predicate holds true for every `SortedSet` element.
 

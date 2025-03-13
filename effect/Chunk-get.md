@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.get
 
 This function provides a safe way to read a value at a particular index from a `Chunk`.
 

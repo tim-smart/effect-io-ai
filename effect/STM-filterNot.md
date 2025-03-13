@@ -1,4 +1,7 @@
-## filterNot
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filterNot
 
 Filters the collection using the specified effectual predicate, removing
 all elements that satisfy the predicate.

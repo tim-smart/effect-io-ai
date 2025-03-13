@@ -1,4 +1,7 @@
-## split
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.split
 
 Splits elements based on a predicate or refinement.
 

@@ -1,4 +1,7 @@
-## fork
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fork
 
 Creates a new fiber to run an effect concurrently.
 

@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.isEmpty
 
 Tests if the set is empty or not
 

@@ -1,4 +1,7 @@
-## clampBigDecimal
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.clampBigDecimal
 
 Clamps a `BigDecimal` between a minimum and a maximum value.
 

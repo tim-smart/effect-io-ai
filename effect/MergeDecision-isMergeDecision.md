@@ -1,4 +1,7 @@
-## isMergeDecision
+Package: `effect`<br />
+Module: `MergeDecision`<br />
+
+## MergeDecision.isMergeDecision
 
 Returns `true` if the specified value is a `MergeDecision`, `false`
 otherwise.

@@ -1,4 +1,7 @@
-## onInterrupt
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.onInterrupt
 
 Registers a cleanup effect to run when an effect is interrupted.
 

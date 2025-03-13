@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.fail
 
 Constructs a channel that fails immediately with the specified error.
 

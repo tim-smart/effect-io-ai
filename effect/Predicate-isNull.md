@@ -1,4 +1,7 @@
-## isNull
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNull
 
 Tests if a value is `null`.
 

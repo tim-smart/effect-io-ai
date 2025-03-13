@@ -1,4 +1,7 @@
-## bounded
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.bounded
 
 Creates a bounded `PubSub` with the back pressure strategy. The `PubSub` will retain
 messages until they have been taken by all subscribers, applying back

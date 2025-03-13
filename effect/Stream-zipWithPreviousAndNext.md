@@ -1,4 +1,7 @@
-## zipWithPreviousAndNext
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipWithPreviousAndNext
 
 Zips each element with both the previous and next element.
 

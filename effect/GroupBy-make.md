@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `GroupBy`<br />
+
+## GroupBy.make
 
 Constructs a `GroupBy` from a `Stream`.
 

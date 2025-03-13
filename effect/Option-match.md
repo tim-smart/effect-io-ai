@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.match
 
 Performs pattern matching on an `Option` to handle both `Some` and `None`
 cases.

@@ -1,4 +1,7 @@
-## isNonEmptyReadonlyArray
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.isNonEmptyReadonlyArray
 
 Determine if a `ReadonlyArray` is non empty narrowing down the type to `NonEmptyReadonlyArray`.
 

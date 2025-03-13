@@ -1,4 +1,7 @@
-## isEmptyArray
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.isEmptyArray
 
 Determine if an `Array` is empty narrowing down the type to `[]`.
 

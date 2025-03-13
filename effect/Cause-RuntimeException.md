@@ -1,4 +1,7 @@
-## RuntimeException
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.RuntimeException
 
 An error representing a runtime error.
 

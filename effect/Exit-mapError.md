@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.mapError
 
 Maps over the error contained in the `Failure` of the specified exit using
 the provided function.

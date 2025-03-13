@@ -1,4 +1,7 @@
-## isPushAnnotationStream
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.isPushAnnotationStream
 
 Returns `true` if the specified `DocStream` is a `PushAnnotationStream`, `false` otherwise.
 

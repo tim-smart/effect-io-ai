@@ -1,4 +1,7 @@
-## reverse
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.reverse
 
 Returns a new list with the elements of the specified list in reverse order.
 

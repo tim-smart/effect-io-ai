@@ -1,4 +1,7 @@
-## values
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.values
 
 Returns an `IterableIterator` of the values within the `Trie`.
 

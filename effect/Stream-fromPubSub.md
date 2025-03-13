@@ -1,4 +1,7 @@
-## fromPubSub
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromPubSub
 
 Creates a stream from a subscription to a `PubSub`.
 

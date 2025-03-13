@@ -1,4 +1,7 @@
-## Composite
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Composite
 
 Error that contains multiple issues.
 

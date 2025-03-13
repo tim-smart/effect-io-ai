@@ -1,4 +1,7 @@
-## raceWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.raceWith
 
 Races two effects and calls a finisher when the first one completes.
 

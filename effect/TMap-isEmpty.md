@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.isEmpty
 
 Tests if the map is empty or not.
 

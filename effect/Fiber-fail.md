@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.fail
 
 A fiber that has already failed with the specified value.
 

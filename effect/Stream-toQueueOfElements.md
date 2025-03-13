@@ -1,4 +1,7 @@
-## toQueueOfElements
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toQueueOfElements
 
 Converts the stream to a scoped queue of elements. After the scope is
 closed, the queue will never again produce values and should be discarded.

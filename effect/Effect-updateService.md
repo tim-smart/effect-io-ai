@@ -1,4 +1,7 @@
-## updateService
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.updateService
 
 Updates a service in the context with a new implementation.
 

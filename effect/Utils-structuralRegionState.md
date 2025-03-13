@@ -1,4 +1,7 @@
-## structuralRegionState
+Package: `effect`<br />
+Module: `Utils`<br />
+
+## Utils.structuralRegionState
 
 Note: this is an experimental feature made available to allow custom matchers in tests, not to be directly used yet in user code
 

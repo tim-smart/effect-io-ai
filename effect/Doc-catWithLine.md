@@ -1,4 +1,7 @@
-## catWithLine
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.catWithLine
 
 The `catWithLine` combinator concatenates two documents by placing a `line`
 document between them.

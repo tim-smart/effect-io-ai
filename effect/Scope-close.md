@@ -1,4 +1,7 @@
-## close
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.close
 
 Closes this scope with the specified exit value, running all finalizers that
 have been added to the scope.

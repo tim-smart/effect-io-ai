@@ -1,4 +1,7 @@
-## scheduleUnion
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.scheduleUnion
 
 Combines two `MicroSchedule`s, by recurring if either schedule wants to
 recur, using the minimum of the two durations between recurrences.

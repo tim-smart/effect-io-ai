@@ -1,4 +1,7 @@
-## sum
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.sum
 
 Provides an addition operation on `bigint`s.
 

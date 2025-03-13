@@ -1,4 +1,7 @@
-## pretty
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.pretty
 
 The pretty logger utilizes the capabilities of the console API to generate
 visually engaging and color-enhanced log outputs. This feature is

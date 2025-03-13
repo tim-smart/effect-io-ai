@@ -1,4 +1,7 @@
-## modifyDelay
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.modifyDelay
 
 Returns a new schedule that modifies the delay between executions using a
 custom function.

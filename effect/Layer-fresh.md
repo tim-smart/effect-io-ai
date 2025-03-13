@@ -1,4 +1,7 @@
-## fresh
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.fresh
 
 Creates a fresh version of this layer that will not be shared.
 

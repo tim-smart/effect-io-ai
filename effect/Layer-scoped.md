@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.scoped
 
 Constructs a layer from the specified scoped effect.
 

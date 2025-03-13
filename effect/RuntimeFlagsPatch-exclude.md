@@ -1,4 +1,7 @@
-## exclude
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.exclude
 
 Creates a `RuntimeFlagsPatch` which describes exclusion of the specified
 `RuntimeFlag` from the set of `RuntimeFlags`.

@@ -1,4 +1,7 @@
-## middlewareCors
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.middlewareCors
 
 A CORS middleware layer that can be provided to the `HttpApiBuilder.serve` layer.
 

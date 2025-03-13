@@ -1,4 +1,7 @@
-## replicate
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.replicate
 
 Replicates the given effect `n` times.
 

@@ -1,4 +1,7 @@
-## Close
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.Close
 
 Close the current substream with a given value and pass execution to the
 next substream

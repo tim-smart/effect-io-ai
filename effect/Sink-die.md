@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.die
 
 Creates a sink halting with the specified defect.
 

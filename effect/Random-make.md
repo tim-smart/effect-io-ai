@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Random`<br />
+
+## Random.make
 
 Constructs the `Random` service, seeding the pseudo-random number generator
 with an hash of the specified seed.

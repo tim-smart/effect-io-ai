@@ -1,4 +1,7 @@
-## runPromise
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.runPromise
 
 Execute the `Micro` effect and return a `Promise` that resolves with the
 successful value of the computation.

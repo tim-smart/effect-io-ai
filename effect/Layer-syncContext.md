@@ -1,4 +1,7 @@
-## syncContext
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.syncContext
 
 Lazily constructs a layer from the specified value, which must return one or more
 services.

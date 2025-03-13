@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.zip
 
 Zips this fiber and the specified fiber together, producing a tuple of
 their output.

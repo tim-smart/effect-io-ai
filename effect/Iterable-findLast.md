@@ -1,4 +1,7 @@
-## findLast
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.findLast
 
 Find the last element for which a predicate holds.
 

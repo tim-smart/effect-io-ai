@@ -1,4 +1,7 @@
-## isNesting
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isNesting
 
 Returns `true` if the specified `Doc` is a `Nesting`, `false` otherwise.
 

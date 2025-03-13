@@ -1,4 +1,7 @@
-## DateFromString
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateFromString
 
 Defines a schema that attempts to convert a `string` to a `Date` object using
 the `new Date` constructor. This conversion is lenient, meaning it does not

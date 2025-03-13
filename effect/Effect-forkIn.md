@@ -1,4 +1,7 @@
-## forkIn
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forkIn
 
 Forks an effect in a specific scope, allowing finer control over its
 execution.

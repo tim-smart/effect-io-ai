@@ -1,4 +1,7 @@
-## Handlers
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.Handlers
 
 Represents a handled `HttpApi`.
 

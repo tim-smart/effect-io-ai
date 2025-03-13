@@ -1,4 +1,7 @@
-## logLevel
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.logLevel
 
 Constructs a config for a `LogLevel` value.
 

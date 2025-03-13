@@ -1,4 +1,7 @@
-## service
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.service
 
 Access the given `Context.Tag` from the environment.
 

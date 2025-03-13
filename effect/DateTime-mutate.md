@@ -1,4 +1,7 @@
-## mutate
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.mutate
 
 Modify a `DateTime` by applying a function to a cloned `Date` instance.
 

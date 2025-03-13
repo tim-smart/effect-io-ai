@@ -1,4 +1,7 @@
-## unsafeMake
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.unsafeMake
 
 Unsafely creates a new `Deferred` from the specified `FiberId`.
 

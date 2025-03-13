@@ -1,4 +1,7 @@
-## scanReduce
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.scanReduce
 
 Statefully maps over the elements of this stream to produce all
 intermediate results.

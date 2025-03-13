@@ -1,4 +1,7 @@
-## layerContext
+Package: `@effect/platform-bun`<br />
+Module: `BunHttpServer`<br />
+
+## BunHttpServer.layerContext
 
 A Layer providing the `HttpPlatform`, `FileSystem`, `Etag.Generator`, and `Path`
 services.

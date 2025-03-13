@@ -1,4 +1,7 @@
-## subtract
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.subtract
 
 Provides a subtraction operation on `number`s.
 

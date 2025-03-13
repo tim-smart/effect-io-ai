@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.fromIterable
 
 Converts an `Iterable` into an `Option`, wrapping the first element if it
 exists.

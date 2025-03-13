@@ -1,4 +1,7 @@
-## spaced
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.spaced
 
 Returns a schedule that recurs continuously, with each repetition
 spaced by the specified `duration` from the last run.

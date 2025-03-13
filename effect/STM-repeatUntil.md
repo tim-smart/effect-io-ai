@@ -1,4 +1,7 @@
-## repeatUntil
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.repeatUntil
 
 Repeats this `STM` effect until its result satisfies the specified
 predicate.

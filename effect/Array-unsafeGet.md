@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.unsafeGet
 
 Gets an element unsafely, will throw on out of bounds.
 

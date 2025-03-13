@@ -1,4 +1,7 @@
-## concat
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.concat
 
 Concatenates two strings at runtime.
 

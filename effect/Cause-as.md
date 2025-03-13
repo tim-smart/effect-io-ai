@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.as
 
 Replaces any errors in a `Cause` with a provided constant error.
 

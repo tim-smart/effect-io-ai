@@ -1,4 +1,7 @@
-## isUnknown
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isUnknown
 
 A guard that always succeeds.
 

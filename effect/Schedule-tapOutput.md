@@ -1,4 +1,7 @@
-## tapOutput
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.tapOutput
 
 Returns a new schedule that runs the given effectful function for each output
 before continuing execution.

@@ -1,4 +1,7 @@
-## toDate
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.toDate
 
 Convert a `DateTime` to a `Date`, applying the time zone first.
 

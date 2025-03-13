@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.fromIterable
 
 Creates a new `List` from an iterable collection of values.
 

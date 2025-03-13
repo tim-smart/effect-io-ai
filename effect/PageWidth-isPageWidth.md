@@ -1,4 +1,7 @@
-## isPageWidth
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.isPageWidth
 
 Returns `true` if the specified value is a `PageWidth`, `false` otherwise.
 

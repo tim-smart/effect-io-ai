@@ -1,4 +1,7 @@
-## dropRight
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.dropRight
 
 Drop a max number of elements from the end of an `Iterable`, creating a new `Array`.
 

@@ -1,4 +1,7 @@
-## DataFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DataFromSelf
 
 Type and Encoded must extend `Readonly<Record<string, any>> |
 ReadonlyArray<any>` to be compatible with this API.

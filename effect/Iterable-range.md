@@ -1,4 +1,7 @@
-## range
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.range
 
 Return a `Iterable` containing a range of integers, including both endpoints.
 

@@ -1,4 +1,7 @@
-## chunk
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.chunk
 
 Creates a `Take` with the specified chunk.
 

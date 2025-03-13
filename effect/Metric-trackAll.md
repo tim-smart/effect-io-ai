@@ -1,4 +1,7 @@
-## trackAll
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.trackAll
 
 Returns an aspect that will update this metric with the specified constant
 value every time the aspect is applied to an effect, regardless of whether

@@ -1,4 +1,7 @@
-## propertySignature
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.propertySignature
 
 Lifts a `Schema` into a `PropertySignature`.
 

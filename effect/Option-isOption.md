@@ -1,4 +1,7 @@
-## isOption
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.isOption
 
 Determines whether the given value is an `Option`.
 

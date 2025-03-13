@@ -1,4 +1,7 @@
-## remove
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.remove
 
 Removes binding for given key.
 

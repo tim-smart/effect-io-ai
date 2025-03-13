@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.of
 
 Builds a `NonEmptyChunk` from a single element.
 

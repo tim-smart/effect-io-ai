@@ -1,4 +1,7 @@
-## findFirst
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.findFirst
 
 Returns the first element that satisfies the specified
 predicate, or `None` if no such element exists.

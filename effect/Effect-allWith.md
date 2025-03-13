@@ -1,4 +1,7 @@
-## allWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.allWith
 
 A data-last version of `all`, designed for use in pipelines.
 

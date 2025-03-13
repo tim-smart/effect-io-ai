@@ -1,4 +1,7 @@
-## acquireRelease
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.acquireRelease
 
 Creates a scoped resource using an `acquire` and `release` effect.
 

@@ -1,4 +1,7 @@
-## add
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.add
 
 Stores new element in the set.
 

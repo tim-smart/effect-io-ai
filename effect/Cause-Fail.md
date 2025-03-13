@@ -1,4 +1,7 @@
-## Fail
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Fail
 
 Represents an expected error within a `Cause`.
 

@@ -1,4 +1,7 @@
-## cursorSavePosition
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorSavePosition
 
 Saves the cursor position, encoding shift state and formatting attributes.
 

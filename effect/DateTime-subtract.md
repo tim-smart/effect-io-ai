@@ -1,4 +1,7 @@
-## subtract
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.subtract
 
 Subtract the given `amount` of `unit`'s from a `DateTime`.
 

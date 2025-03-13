@@ -1,4 +1,7 @@
-## number
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.number
 
 Matches values of type `number`.
 

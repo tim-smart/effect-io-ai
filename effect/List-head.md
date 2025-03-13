@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.head
 
 Returns the first element of the specified list, or `None` if the list is
 empty.

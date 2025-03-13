@@ -1,4 +1,7 @@
-## intersect
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.intersect
 
 Computes a new `Interval` which is the intersection of this `Interval` and
 that `Interval`.

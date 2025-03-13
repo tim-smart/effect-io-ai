@@ -1,4 +1,7 @@
-## clamp
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.clamp
 
 Restricts the given `bigint` to be within the range specified by the `minimum` and `maximum` values.
 

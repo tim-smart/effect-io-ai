@@ -1,4 +1,7 @@
-## liftPredicate
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.liftPredicate
 
 Lifts a predicate into an array.
 

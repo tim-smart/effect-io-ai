@@ -1,4 +1,7 @@
-## Do
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.Do
 
 The "do simulation" for array allows you to sequentially apply operations to the elements of arrays, just as nested loops allow you to go through all combinations of elements in an arrays.
 

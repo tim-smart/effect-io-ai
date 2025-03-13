@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.die
 
 Constructs a new `Exit.Failure` from the specified unrecoverable defect.
 

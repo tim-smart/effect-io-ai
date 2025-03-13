@@ -1,4 +1,7 @@
-## findFirst
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findFirst
 
 Find the first element in the array matching the specified predicate.
 

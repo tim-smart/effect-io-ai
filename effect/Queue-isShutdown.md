@@ -1,4 +1,7 @@
-## isShutdown
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.isShutdown
 
 Returns `true` if `shutdown` has been called, otherwise returns `false`.
 

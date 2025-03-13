@@ -1,4 +1,7 @@
-## zipLatestAll
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipLatestAll
 
 Zips multiple streams so that when a value is emitted by any of the streams,
 it is combined with the latest values from the other streams to produce a result.

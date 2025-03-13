@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `StreamHaltStrategy`<br />
+
+## StreamHaltStrategy.match
 
 Folds over the specified `HaltStrategy` using the provided case functions.
 

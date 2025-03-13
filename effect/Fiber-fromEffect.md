@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.fromEffect
 
 Lifts an `Effect` into a `Fiber`.
 

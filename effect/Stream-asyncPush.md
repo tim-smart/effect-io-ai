@@ -1,4 +1,7 @@
-## asyncPush
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.asyncPush
 
 Creates a stream from an external push-based resource.
 

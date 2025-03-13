@@ -1,4 +1,7 @@
-## flattenChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flattenChunks
 
 Submerges the chunks carried by this stream into the stream's structure,
 while still preserving them.

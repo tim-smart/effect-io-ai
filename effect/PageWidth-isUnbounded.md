@@ -1,4 +1,7 @@
-## isUnbounded
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.isUnbounded
 
 Returns `true` if the specified `PageWidth` is an `Unbounded`, `false`
 otherwise.

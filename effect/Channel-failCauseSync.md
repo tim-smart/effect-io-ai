@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.failCauseSync
 
 Constructs a channel that succeeds immediately with the specified lazily
 evaluated `Cause`.

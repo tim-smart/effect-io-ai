@@ -1,4 +1,7 @@
-## withReturnType
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.withReturnType
 
 Ensures that all branches of a matcher return a specific type.
 

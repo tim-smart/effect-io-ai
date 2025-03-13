@@ -1,4 +1,7 @@
-## PodsHealth
+Package: `@effect/cluster`<br />
+Module: `PodsHealth`<br />
+
+## PodsHealth.PodsHealth
 
 An interface to check a pod's health.
 This is used when a pod is unresponsive, to check if it should be unassigned all its shards or not.

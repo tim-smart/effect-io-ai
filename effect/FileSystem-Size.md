@@ -1,4 +1,7 @@
-## Size
+Package: `@effect/platform`<br />
+Module: `FileSystem`<br />
+
+## FileSystem.Size
 
 Represents a size in bytes.
 

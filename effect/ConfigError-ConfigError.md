@@ -1,4 +1,7 @@
-## ConfigError
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.ConfigError
 
 The possible ways that loading configuration data may fail.
 

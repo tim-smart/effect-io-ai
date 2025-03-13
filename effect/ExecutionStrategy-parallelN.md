@@ -1,4 +1,7 @@
-## parallelN
+Package: `effect`<br />
+Module: `ExecutionStrategy`<br />
+
+## ExecutionStrategy.parallelN
 
 Execute effects in parallel, up to the specified number of concurrent fibers.
 

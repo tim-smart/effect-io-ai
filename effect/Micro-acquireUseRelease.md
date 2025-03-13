@@ -1,4 +1,7 @@
-## acquireUseRelease
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.acquireUseRelease
 
 Acquire a resource, use it, and then release the resource when the `use`
 effect has completed.

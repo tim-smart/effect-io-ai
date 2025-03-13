@@ -1,4 +1,7 @@
-## distance
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.distance
 
 Calulate the difference between two `DateTime` values, returning the number
 of milliseconds the `other` DateTime is from `self`.

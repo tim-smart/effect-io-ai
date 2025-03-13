@@ -1,4 +1,7 @@
-## zipWithNext
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.zipWithNext
 
 Zips each element with the next element if present.
 

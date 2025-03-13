@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.catchAll
 
 Switches over to the stream produced by the provided function in case this
 one fails with a typed error.

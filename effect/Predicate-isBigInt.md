@@ -1,4 +1,7 @@
-## isBigInt
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isBigInt
 
 Tests if a value is a `bigint`.
 

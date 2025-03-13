@@ -1,4 +1,7 @@
-## merge
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.merge
 
 Merges this layer with the specified layer concurrently, producing a new layer with combined input and output types.
 

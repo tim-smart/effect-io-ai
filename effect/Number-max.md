@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.max
 
 Returns the maximum between two `number`s.
 

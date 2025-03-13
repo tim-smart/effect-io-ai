@@ -1,4 +1,7 @@
-## mutate
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.mutate
 
 Mutates the `HashMap` within the context of the provided function.
 

@@ -1,4 +1,7 @@
-## refineOrDieWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.refineOrDieWith
 
 Keeps some of the errors, and terminates the fiber with the rest, using the
 specified function to convert the `E` into a defect.

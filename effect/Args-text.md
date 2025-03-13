@@ -1,4 +1,7 @@
-## text
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.text
 
 Creates a text argument.
 

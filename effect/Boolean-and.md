@@ -1,4 +1,7 @@
-## and
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.and
 
 Combines two boolean using AND: `self && that`.
 

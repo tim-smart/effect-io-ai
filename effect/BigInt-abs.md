@@ -1,4 +1,7 @@
-## abs
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.abs
 
 Determines the absolute value of a given `bigint`.
 

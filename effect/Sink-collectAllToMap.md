@@ -1,4 +1,7 @@
-## collectAllToMap
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllToMap
 
 A sink that collects all of its inputs into a map. The keys are extracted
 from inputs using the keying function `key`; if multiple inputs use the

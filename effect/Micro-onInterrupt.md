@@ -1,4 +1,7 @@
-## onInterrupt
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.onInterrupt
 
 If this `Micro` effect is aborted, run the finalizer effect.
 

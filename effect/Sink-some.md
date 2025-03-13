@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.some
 
 A sink that returns whether an element satisfies the specified predicate.
 

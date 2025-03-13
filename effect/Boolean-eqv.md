@@ -1,4 +1,7 @@
-## eqv
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.eqv
 
 Combines two booleans using EQV (aka XNOR): `!xor(self, that)`.
 

@@ -1,4 +1,7 @@
-## filterOrDie
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.filterOrDie
 
 Dies with specified defect if the predicate fails.
 

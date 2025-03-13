@@ -1,4 +1,7 @@
-## toChunk
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.toChunk
 
 Collects all values into a `Chunk`.
 

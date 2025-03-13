@@ -1,4 +1,7 @@
-## withSpanContext
+Package: `@effect/opentelemetry`<br />
+Module: `Tracer`<br />
+
+## Tracer.withSpanContext
 
 Set the effect's parent span from the given opentelemetry `SpanContext`.
 

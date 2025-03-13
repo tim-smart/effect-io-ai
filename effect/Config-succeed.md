@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.succeed
 
 Constructs a config which contains the specified value.
 

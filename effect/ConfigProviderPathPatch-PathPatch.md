@@ -1,4 +1,7 @@
-## PathPatch
+Package: `effect`<br />
+Module: `ConfigProviderPathPatch`<br />
+
+## ConfigProviderPathPatch.PathPatch
 
 Represents a description of how to modify the path to a configuration
 value.

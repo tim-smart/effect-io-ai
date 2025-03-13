@@ -1,4 +1,7 @@
-## provideService
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.provideService
 
 Provides an implementation for a service in the context of an effect.
 

@@ -1,4 +1,7 @@
-## mapInputEffect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.mapInputEffect
 
 Transforms the input type of a schedule using an effectful function.
 

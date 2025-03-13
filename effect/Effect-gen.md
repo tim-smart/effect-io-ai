@@ -1,4 +1,7 @@
-## gen
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.gen
 
 Provides a way to write effectful code using generator functions, simplifying
 control flow and error handling.

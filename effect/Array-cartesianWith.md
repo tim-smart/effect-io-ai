@@ -1,4 +1,7 @@
-## cartesianWith
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.cartesianWith
 
 Zips this chunk crosswise with the specified chunk using the specified combiner.
 

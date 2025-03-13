@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `SortedMap`<br />
+
+## SortedMap.fromIterable
 
 Creates a new `SortedMap` from an iterable collection of key/value pairs.
 

@@ -1,4 +1,7 @@
-## messenger
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.messenger
 
 Get an object that allows sending messages to a given entity type.
 You can provide a custom send timeout to override the one globally defined.

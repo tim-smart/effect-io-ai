@@ -1,4 +1,7 @@
-## choiceWithValue
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.choiceWithValue
 
 Constructs command-line `Options` that represent a choice between several
 inputs. The input will be mapped to it's associated value during parsing.

@@ -1,4 +1,7 @@
-## Yield
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.Yield
 
 Pass execution to the next substream. This either pulls a new element
 from upstream, or yields to an already created active substream.

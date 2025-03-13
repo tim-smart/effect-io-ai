@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `ScheduleInterval`<br />
+
+## ScheduleInterval.make
 
 Constructs a new interval from the two specified endpoints. If the start
 endpoint greater than the end endpoint, then a zero size interval will be

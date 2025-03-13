@@ -1,4 +1,7 @@
-## fromRecord
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.fromRecord
 
 Takes a record and returns an array of tuples containing its keys and values.
 

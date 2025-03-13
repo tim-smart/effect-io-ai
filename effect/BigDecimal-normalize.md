@@ -1,4 +1,7 @@
-## normalize
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.normalize
 
 Normalizes a given `BigDecimal` by removing trailing zeros.
 

@@ -1,4 +1,7 @@
-## date
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.date
 
 Matches values that are instances of `Date`.
 

@@ -1,4 +1,7 @@
-## fromEntries
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.fromEntries
 
 Builds a record from an iterable of key-value pairs.
 

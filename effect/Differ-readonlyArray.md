@@ -1,4 +1,7 @@
-## readonlyArray
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.readonlyArray
 
 Constructs a differ that knows how to diff a `ReadonlyArray` of values.
 

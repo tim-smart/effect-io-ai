@@ -1,4 +1,7 @@
-## sqrt
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.sqrt
 
 Determines the square root of a given `bigint` safely. Returns `none` if the given `bigint` is negative.
 

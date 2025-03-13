@@ -1,4 +1,7 @@
-## collectAllToSet
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllToSet
 
 A sink that collects all of its inputs into a set.
 

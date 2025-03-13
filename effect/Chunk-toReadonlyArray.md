@@ -1,4 +1,7 @@
-## toReadonlyArray
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.toReadonlyArray
 
 Converts a `Chunk` into a `ReadonlyArray`. If the provided `Chunk` is
 non-empty (`NonEmptyChunk`), the function will return a

@@ -1,4 +1,7 @@
-## orDie
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orDie
 
 Translates any failure into a stream termination, making the stream
 infallible and all failures unchecked.

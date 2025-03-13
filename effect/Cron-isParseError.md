@@ -1,4 +1,7 @@
-## isParseError
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.isParseError
 
 Returns `true` if the specified value is an `ParseError`, `false` otherwise.
 

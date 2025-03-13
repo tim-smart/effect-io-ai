@@ -1,4 +1,7 @@
-## mapErrorCause
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.mapErrorCause
 
 Transform the full `MicroCause` object of the given `Micro` effect.
 

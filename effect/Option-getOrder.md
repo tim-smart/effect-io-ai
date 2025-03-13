@@ -1,4 +1,7 @@
-## getOrder
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrder
 
 Creates an `Order` instance for comparing `Option` values, using a provided
 `Order` for the inner type.

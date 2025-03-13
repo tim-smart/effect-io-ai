@@ -1,4 +1,7 @@
-## every
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.every
 
 Determines whether all elements of the iterable satisfy the effectful
 predicate.

@@ -1,4 +1,7 @@
-## sliding
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.sliding
 
 Emits a sliding window of `n` elements.
 

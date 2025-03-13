@@ -1,4 +1,7 @@
-## serve
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.serve
 
 Build an `HttpApp` from an `HttpApi` instance, and serve it using an
 `HttpServer`.

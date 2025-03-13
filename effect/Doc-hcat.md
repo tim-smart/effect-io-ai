@@ -1,4 +1,7 @@
-## hcat
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.hcat
 
 The `hcat` combinator concatenates all documents in a collection horizontally
 without any spacing.

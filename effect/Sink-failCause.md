@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.failCause
 
 Creates a sink halting with a specified `Cause`.
 

@@ -1,4 +1,7 @@
-## acquireRelease
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.acquireRelease
 
 Create a resource with a cleanup `Micro` effect, ensuring the cleanup is
 executed when the `MicroScope` is closed.

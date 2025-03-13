@@ -1,4 +1,7 @@
-## isYield
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.isYield
 
 Returns `true` if the specified `ChildExecutorDecision` is a `Yield`, `false`
 otherwise.

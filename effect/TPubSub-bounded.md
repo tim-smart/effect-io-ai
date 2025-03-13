@@ -1,4 +1,7 @@
-## bounded
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.bounded
 
 Creates a bounded `TPubSub` with the back pressure strategy. The `TPubSub` will retain
 messages until they have been taken by all subscribers, applying back

@@ -1,4 +1,7 @@
-## mapRequestInputEffect
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.mapRequestInputEffect
 
 Prepends an effectful transformation of the request object before sending it.
 

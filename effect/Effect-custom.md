@@ -1,4 +1,7 @@
-## custom
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.custom
 
 Low level constructor that enables for custom stack tracing cutpoints.
 

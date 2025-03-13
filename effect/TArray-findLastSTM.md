@@ -1,4 +1,7 @@
-## findLastSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findLastSTM
 
 Find the last element in the array matching a transactional predicate.
 

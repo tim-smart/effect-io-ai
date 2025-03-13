@@ -1,4 +1,7 @@
-## pageWidth
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.pageWidth
 
 Lays out a document according to the document"s`PageWidth`.
 

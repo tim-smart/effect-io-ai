@@ -1,4 +1,7 @@
-## manual
+Package: `effect`<br />
+Module: `Resource`<br />
+
+## Resource.manual
 
 Creates a new `Resource` value that must be manually refreshed by calling
 the refresh method. Note that error retrying is not performed

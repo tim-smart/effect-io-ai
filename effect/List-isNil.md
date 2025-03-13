@@ -1,4 +1,7 @@
-## isNil
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.isNil
 
 Returns `true` if the specified value is a `List.Nil<A>`, `false` otherwise.
 

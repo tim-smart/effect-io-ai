@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.make
 
 Creates a new `Context` with a single service associated to the tag.
 

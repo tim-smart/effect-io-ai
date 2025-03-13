@@ -1,4 +1,7 @@
-## Date
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.Date
 
 A schema for a `DateTime.Utc` that is serialized as a date string in the
 format `YYYY-MM-DD`.

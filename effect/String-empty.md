@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.empty
 
 The empty string `""`.
 

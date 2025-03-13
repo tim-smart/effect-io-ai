@@ -1,4 +1,7 @@
-## zipLeft
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.zipLeft
 
 Sequentially zips the this result with the specified result discarding the
 second element of the tuple or else returns the failed `Cause<E | E2>`.

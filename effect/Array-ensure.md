@@ -1,4 +1,7 @@
-## ensure
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.ensure
 
 Creates a new `Array` from a value that might not be an iterable.
 

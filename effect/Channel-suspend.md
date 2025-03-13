@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.suspend
 
 Lazily constructs a channel from the given side effect.
 

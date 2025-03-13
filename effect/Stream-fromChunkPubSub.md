@@ -1,4 +1,7 @@
-## fromChunkPubSub
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromChunkPubSub
 
 Creates a stream from a subscription to a `PubSub`.
 

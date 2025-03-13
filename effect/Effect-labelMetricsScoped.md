@@ -1,4 +1,7 @@
-## labelMetricsScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.labelMetricsScoped
 
 Adds labels to metrics within a scope using `MetricLabel` objects.
 

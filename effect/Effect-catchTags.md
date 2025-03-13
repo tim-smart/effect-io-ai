@@ -1,4 +1,7 @@
-## catchTags
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchTags
 
 Handles multiple errors in a single block of code using their `_tag` field.
 

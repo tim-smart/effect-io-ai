@@ -1,4 +1,7 @@
-## tapRequest
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.tapRequest
 
 Performs an additional effect on the request before sending it.
 

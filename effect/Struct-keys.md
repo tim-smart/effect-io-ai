@@ -1,4 +1,7 @@
-## keys
+Package: `effect`<br />
+Module: `Struct`<br />
+
+## Struct.keys
 
 Retrieves the object keys that are strings in a typed manner
 

@@ -1,4 +1,7 @@
-## fromFunctionBatched
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.fromFunctionBatched
 
 Constructs a data source from a pure function that takes a list of requests
 and returns a list of results of the same size. Each item in the result

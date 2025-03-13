@@ -1,4 +1,7 @@
-## registerSingleton
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.registerSingleton
 
 Start a computation that is guaranteed to run only on a single pod.
 Each pod should call `registerSingleton` but only a single pod will actually run it at any given time.

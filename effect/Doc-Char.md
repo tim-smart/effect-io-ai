@@ -1,4 +1,7 @@
-## Char
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Char
 
 Represents a document containing a single character.
 

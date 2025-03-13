@@ -1,4 +1,7 @@
-## isRight
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.isRight
 
 Determine if a `Either` is a `Right`.
 

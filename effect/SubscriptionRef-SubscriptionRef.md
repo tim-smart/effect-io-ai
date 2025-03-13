@@ -1,4 +1,7 @@
-## SubscriptionRef
+Package: `effect`<br />
+Module: `SubscriptionRef`<br />
+
+## SubscriptionRef.SubscriptionRef
 
 A `SubscriptionRef<A>` is a `Ref` that can be subscribed to in order to
 receive the current value as well as all changes to the value.

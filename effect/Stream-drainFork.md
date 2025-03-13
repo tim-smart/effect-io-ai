@@ -1,4 +1,7 @@
-## drainFork
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.drainFork
 
 Drains the provided stream in the background for as long as this stream is
 running. If this stream ends before `other`, `other` will be interrupted.

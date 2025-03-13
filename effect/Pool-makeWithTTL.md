@@ -1,4 +1,7 @@
-## makeWithTTL
+Package: `effect`<br />
+Module: `Pool`<br />
+
+## Pool.makeWithTTL
 
 Makes a new pool with the specified minimum and maximum sizes and time to
 live before a pool whose excess items are not being used will be shrunk

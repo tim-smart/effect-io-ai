@@ -1,4 +1,7 @@
-## Deferred
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.Deferred
 
 A `Deferred` represents an asynchronous variable that can be set exactly
 once, with the ability for an arbitrary number of fibers to suspend (by

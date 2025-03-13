@@ -1,4 +1,7 @@
-## takeSome
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.takeSome
 
 Takes all matching values, or retries until there is at least one.
 

@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.forEach
 
 Iterates over each element of a `Chunk` and applies a function to it.
 

@@ -1,4 +1,7 @@
-## flip
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.flip
 
 Reverses the order of arguments for a curried function.
 

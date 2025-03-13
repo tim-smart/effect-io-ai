@@ -1,4 +1,7 @@
-## isSuccess
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.isSuccess
 
 Returns whether this transactional effect is a success.
 

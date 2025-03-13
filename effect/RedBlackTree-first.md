@@ -1,4 +1,7 @@
-## first
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.first
 
 Returns the first entry in the tree, if it exists.
 

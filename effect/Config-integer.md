@@ -1,4 +1,7 @@
-## integer
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.integer
 
 Constructs a config for a integer value.
 

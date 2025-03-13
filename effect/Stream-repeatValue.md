@@ -1,4 +1,7 @@
-## repeatValue
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatValue
 
 Repeats the provided value infinitely.
 

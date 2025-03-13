@@ -1,4 +1,7 @@
-## CloseableScope
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.CloseableScope
 
 A scope that can be explicitly closed with a specified exit value.
 

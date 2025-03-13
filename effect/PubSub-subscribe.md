@@ -1,4 +1,7 @@
-## subscribe
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.subscribe
 
 Subscribes to receive messages from the `PubSub`. The resulting subscription can
 be evaluated multiple times within the scope to take a message from the `PubSub`

@@ -1,4 +1,7 @@
-## runPromiseExit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.runPromiseExit
 
 Execute the `Micro` effect and return a `Promise` that resolves with the
 `MicroExit` of the computation.

@@ -1,4 +1,7 @@
-## failSync
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.failSync
 
 Terminates with the specified lazily evaluated error.
 

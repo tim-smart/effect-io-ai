@@ -1,4 +1,7 @@
-## isMap
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isMap
 
 Tests if a value is a `Map`.
 

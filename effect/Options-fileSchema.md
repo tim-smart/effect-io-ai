@@ -1,4 +1,7 @@
-## fileSchema
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.fileSchema
 
 Creates a parameter expecting path to a file, parse its contents and validate
 it with a Schema.

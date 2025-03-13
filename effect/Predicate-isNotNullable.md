@@ -1,4 +1,7 @@
-## isNotNullable
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNotNullable
 
 A guard that succeeds when the input is not `null` or `undefined`.
 

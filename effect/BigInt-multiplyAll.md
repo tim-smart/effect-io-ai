@@ -1,4 +1,7 @@
-## multiplyAll
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.multiplyAll
 
 Takes an `Iterable` of `bigint`s and returns their multiplication as a single `number`.
 

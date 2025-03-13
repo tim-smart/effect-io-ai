@@ -1,4 +1,7 @@
-## clock
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.clock
 
 Retrieves the `Clock` service from the context.
 

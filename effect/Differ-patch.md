@@ -1,4 +1,7 @@
-## patch
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.patch
 
 Applies a patch to an old value to produce a new value that is equal to the
 old value with the updates described by the patch.

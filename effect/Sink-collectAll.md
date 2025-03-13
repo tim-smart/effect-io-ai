@@ -1,4 +1,7 @@
-## collectAll
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAll
 
 A sink that collects all elements into a `Chunk`.
 

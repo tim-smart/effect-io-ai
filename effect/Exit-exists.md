@@ -1,4 +1,7 @@
-## exists
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.exists
 
 Executes the predicate on the value of the specified exit if it is a
 `Success`, otherwise returns `false`.

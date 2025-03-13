@@ -1,4 +1,7 @@
-## acquireUseRelease
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.acquireUseRelease
 
 Creates a scoped resource and automatically handles the use effect during the
 scope.

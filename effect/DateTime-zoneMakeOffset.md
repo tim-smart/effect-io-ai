@@ -1,4 +1,7 @@
-## zoneMakeOffset
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneMakeOffset
 
 Create a fixed offset time zone.
 

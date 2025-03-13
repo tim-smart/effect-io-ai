@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.make
 
 Builds a `NonEmptyArray` from an non-empty collection of elements.
 

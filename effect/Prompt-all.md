@@ -1,4 +1,7 @@
-## all
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.all
 
 Runs all the provided prompts in sequence respecting the structure provided
 in input.

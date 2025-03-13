@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.zip
 
 Combine two `Micro` effects into a single effect that produces a tuple of
 their results.

@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.fromIterable
 
 Creates a new `TPriorityQueue` from an iterable collection of values.
 

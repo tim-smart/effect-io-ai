@@ -1,4 +1,7 @@
-## range
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.range
 
 Create a non empty `Chunk` containing a range of integers, including both endpoints.
 

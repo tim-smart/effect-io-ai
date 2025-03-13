@@ -1,4 +1,7 @@
-## catchTag
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.catchTag
 
 Switches over to the stream produced by the provided function in case this
 one fails with an error matching the given `_tag`.

@@ -1,4 +1,7 @@
-## sign
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.sign
 
 Determines the sign of a given `bigint`.
 

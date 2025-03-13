@@ -1,4 +1,7 @@
-## headNonEmpty
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.headNonEmpty
 
 Returns the first element of this non empty chunk.
 

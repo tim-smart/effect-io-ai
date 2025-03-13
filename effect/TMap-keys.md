@@ -1,4 +1,7 @@
-## keys
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.keys
 
 Collects all keys stored in map.
 

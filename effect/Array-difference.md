@@ -1,4 +1,7 @@
-## difference
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.difference
 
 Creates a `Array` of values not included in the other given `Iterable`.
 The order and references of result values are determined by the first `Iterable`.

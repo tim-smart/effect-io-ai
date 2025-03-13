@@ -1,4 +1,7 @@
-## mapEffect
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapEffect
 
 Returns a new channel, which is the same as this one, except the terminal
 value of the returned channel is created by applying the specified

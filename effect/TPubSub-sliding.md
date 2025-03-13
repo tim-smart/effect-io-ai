@@ -1,4 +1,7 @@
-## sliding
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.sliding
 
 Creates a bounded `TPubSub` with the sliding strategy. The `TPubSub` will add new
 messages and drop old messages if the `TPubSub` is at capacity.

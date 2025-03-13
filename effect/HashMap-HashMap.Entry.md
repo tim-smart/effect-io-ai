@@ -1,4 +1,7 @@
-## HashMap.Entry
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.HashMap.Entry
 
 This type-level utility extracts the entry type `[K, V]` from a `HashMap<K, V>` type.
 

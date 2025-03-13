@@ -1,4 +1,7 @@
-## update
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.update
 
 Constructs a differ that just diffs two values by returning a function that
 sets the value to the new value. This differ does not support combining

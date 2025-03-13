@@ -1,4 +1,7 @@
-## provideService
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.provideService
 
 Add the provided service to the current context.
 

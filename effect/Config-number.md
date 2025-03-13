@@ -1,4 +1,7 @@
-## number
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.number
 
 Constructs a config for a float value.
 

@@ -1,4 +1,7 @@
-## ensuringChildren
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.ensuringChildren
 
 Acts on the children of this fiber, guaranteeing the specified callback
 will be invoked, whether or not this effect succeeds.

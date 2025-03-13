@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.size
 
 Calculates the size of a `Cause`.
 

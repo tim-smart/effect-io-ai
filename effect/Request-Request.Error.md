@@ -1,4 +1,7 @@
-## Request.Error
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Request.Error
 
 A utility type to extract the error type from a `Request`.
 

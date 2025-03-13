@@ -1,4 +1,7 @@
-## withLiveScoped
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.withLiveScoped
 
 Sets the implementation of the live service to the specified value and
 restores it to its original value when the scope is closed.

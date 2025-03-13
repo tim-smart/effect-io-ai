@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.has
 
 Tests whether or not map contains a key.
 

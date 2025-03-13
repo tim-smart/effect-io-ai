@@ -1,4 +1,7 @@
-## extend
+Package: `effect`<br />
+Module: `Scope`<br />
+
+## Scope.extend
 
 Extends the scope of an `Effect` that requires a scope into this scope.
 It provides this scope to the effect but does not close the scope when the

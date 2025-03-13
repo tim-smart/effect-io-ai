@@ -1,4 +1,7 @@
-## TestAnnotations
+Package: `effect`<br />
+Module: `TestAnnotations`<br />
+
+## TestAnnotations.TestAnnotations
 
 The `Annotations` trait provides access to an annotation map that tests can
 add arbitrary annotations to. Each annotation consists of a string

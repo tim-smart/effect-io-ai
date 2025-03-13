@@ -1,4 +1,7 @@
-## hashSet
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.hashSet
 
 Constructs a differ that knows how to diff a `HashSet` of values.
 

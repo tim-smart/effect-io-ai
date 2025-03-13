@@ -1,4 +1,7 @@
-## duration
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.duration
 
 Constructs a config for a duration value.
 

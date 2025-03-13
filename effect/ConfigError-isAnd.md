@@ -1,4 +1,7 @@
-## isAnd
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isAnd
 
 Returns `true` if the specified `ConfigError` is an `And`, `false` otherwise.
 

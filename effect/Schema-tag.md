@@ -1,4 +1,7 @@
-## tag
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.tag
 
 Returns a property signature that represents a tag.
 A tag is a literal value that is used to distinguish between different types of objects.

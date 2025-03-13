@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.match
 
 It is the `pipe`-able version of the native `match` method.
 

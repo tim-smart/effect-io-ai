@@ -1,4 +1,7 @@
-## None
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.None
 
 No runtime flags.
 

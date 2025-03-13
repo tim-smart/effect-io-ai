@@ -1,4 +1,7 @@
-## orElseOptional
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.orElseOptional
 
 Returns an effect that will produce the value of this effect, unless it
 fails with the `None` value, in which case it will produce the value of the

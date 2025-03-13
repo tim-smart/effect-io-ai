@@ -1,4 +1,7 @@
-## AdditionalSchemas
+Package: `@effect/platform`<br />
+Module: `HttpApi`<br />
+
+## HttpApi.AdditionalSchemas
 
 Adds additional schemas to components/schemas.
 The provided schemas must have a `identifier` annotation.

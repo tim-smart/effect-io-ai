@@ -1,4 +1,7 @@
-## toEntriesWithPrefix
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.toEntriesWithPrefix
 
 Returns `Array<[K, V]>` of the entries within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).

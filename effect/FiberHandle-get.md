@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.get
 
 Retrieve the fiber from the FiberHandle.
 

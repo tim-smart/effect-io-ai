@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.ensuring
 
 Returns a new channel with an attached finalizer. The finalizer is
 guaranteed to be executed so long as the channel begins execution (and

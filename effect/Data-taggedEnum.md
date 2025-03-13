@@ -1,4 +1,7 @@
-## taggedEnum
+Package: `effect`<br />
+Module: `Data`<br />
+
+## Data.taggedEnum
 
 Create a constructor for a tagged union of `Data` structs.
 

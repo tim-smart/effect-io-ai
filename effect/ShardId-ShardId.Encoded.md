@@ -1,4 +1,7 @@
-## ShardId.Encoded
+Package: `@effect/cluster`<br />
+Module: `ShardId`<br />
+
+## ShardId.ShardId.Encoded
 
 This is the shape that a shard id has over the wire.
 

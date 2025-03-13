@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flatMap
 
 Returns a stream made of the concatenation in strict order of all the
 streams produced by passing each element of this stream to `f0`

@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.die
 
 Creates an effect that terminates a fiber with a specified error.
 

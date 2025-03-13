@@ -1,4 +1,7 @@
-## pluck
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.pluck
 
 Given a schema `Schema<A, I, R>` and a key `key: K`, this function extracts a specific field from the `A` type,
 producing a new schema that represents a transformation from the `{ readonly [key]: I[K] }` type to `A[K]`.

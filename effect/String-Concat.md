@@ -1,4 +1,7 @@
-## Concat
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.Concat
 
 Concatenates two strings at the type level.
 

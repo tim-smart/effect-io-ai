@@ -1,4 +1,7 @@
-## orElseIfEmpty
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseIfEmpty
 
 Produces the specified element if this stream is empty.
 

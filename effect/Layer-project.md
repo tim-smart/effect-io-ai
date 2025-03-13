@@ -1,4 +1,7 @@
-## project
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.project
 
 Projects out part of one of the services output by this layer using the
 specified function.

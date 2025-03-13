@@ -1,4 +1,7 @@
-## collectAllWhileWith
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectAllWhileWith
 
 Repeatedly runs the sink for as long as its results satisfy the predicate
 `p`. The sink's results will be accumulated using the stepping function `f`.

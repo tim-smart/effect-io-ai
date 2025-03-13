@@ -1,4 +1,7 @@
-## runIntoPubSub
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runIntoPubSub
 
 Publishes elements of this stream to a `PubSub`. Stream failure and ending will
 also be signalled.

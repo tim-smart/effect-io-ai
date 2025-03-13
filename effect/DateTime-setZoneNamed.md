@@ -1,4 +1,7 @@
-## setZoneNamed
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setZoneNamed
 
 Set the time zone of a `DateTime` from an IANA time zone identifier. If the
 time zone is invalid, `None` will be returned.

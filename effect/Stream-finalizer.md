@@ -1,4 +1,7 @@
-## finalizer
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.finalizer
 
 Creates a one-element stream that never fails and executes the finalizer
 when it ends.

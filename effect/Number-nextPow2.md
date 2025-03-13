@@ -1,4 +1,7 @@
-## nextPow2
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.nextPow2
 
 Returns the next power of 2 from the given number.
 

@@ -1,4 +1,7 @@
-## EntityBehaviourOptions
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviour`<br />
+
+## RecipientBehaviour.EntityBehaviourOptions
 
 This are the options for an EntityBehaviour. This controls the entityMaxIdleTime,
 check out more on that over the ShardingConfig.

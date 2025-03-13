@@ -1,4 +1,7 @@
-## not
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.not
 
 Negates the result of a given predicate.
 

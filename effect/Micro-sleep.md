@@ -1,4 +1,7 @@
-## sleep
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.sleep
 
 Create a `Micro` effect that will sleep for the specified duration.
 

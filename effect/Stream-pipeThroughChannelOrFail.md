@@ -1,4 +1,7 @@
-## pipeThroughChannelOrFail
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.pipeThroughChannelOrFail
 
 Pipes all values from this stream through the provided channel, passing
 through any error emitted by this stream unchanged.

@@ -1,4 +1,7 @@
-## isPromise
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isPromise
 
 A guard that succeeds when the input is a Promise.
 

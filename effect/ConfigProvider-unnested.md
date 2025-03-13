@@ -1,4 +1,7 @@
-## unnested
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.unnested
 
 Returns a new config provider that will automatically un-nest all
 configuration under the specified property name. This can be utilized to

@@ -1,4 +1,7 @@
-## last
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.last
 
 Returns the last entry in the tree, if it exists.
 

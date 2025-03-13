@@ -1,4 +1,7 @@
-## toChannel
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.toChannel
 
 Create a `Channel` from a `Mailbox`.
 

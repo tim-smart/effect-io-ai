@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.mapError
 
 Transforms or modifies the error produced by an effect without affecting its
 success value.

@@ -1,4 +1,7 @@
-## BaseTQueue
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.BaseTQueue
 
 The base interface that all `TQueue`s must implement.
 

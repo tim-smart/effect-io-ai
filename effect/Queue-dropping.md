@@ -1,4 +1,7 @@
-## dropping
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.dropping
 
 Makes a new bounded `Queue` with the dropping strategy.
 

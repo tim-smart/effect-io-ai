@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.make
 
 A FiberMap can be used to store a collection of fibers, indexed by some key.
 When the associated Scope is closed, all fibers in the map will be interrupted.

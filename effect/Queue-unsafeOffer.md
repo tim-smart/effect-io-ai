@@ -1,4 +1,7 @@
-## unsafeOffer
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.unsafeOffer
 
 Places one value in the queue.
 

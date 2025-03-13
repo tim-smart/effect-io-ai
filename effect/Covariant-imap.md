@@ -1,4 +1,7 @@
-## imap
+Package: `@effect/typeclass`<br />
+Module: `Covariant`<br />
+
+## Covariant.imap
 
 Returns a default `imap` implementation.
 

@@ -1,4 +1,7 @@
-## join
+Package: `effect`<br />
+Module: `FiberSet`<br />
+
+## FiberSet.join
 
 Join all fibers in the FiberSet. If any of the Fiber's in the set terminate with a failure,
 the returned Effect will terminate with the first failure that occurred.

@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.toArray
 
 Collects all bindings into an `Array`.
 

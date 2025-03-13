@@ -1,4 +1,7 @@
-## toReadonlySet
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.toReadonlySet
 
 Collects all elements into a `ReadonlySet`.
 

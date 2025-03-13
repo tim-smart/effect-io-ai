@@ -1,4 +1,7 @@
-## acquireRelease
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.acquireRelease
 
 Creates a stream from a single value that will get cleaned up after the
 stream is consumed.

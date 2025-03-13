@@ -1,4 +1,7 @@
-## withTracerEnabled
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withTracerEnabled
 
 Disable the tracer for the given Effect.
 

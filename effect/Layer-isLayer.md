@@ -1,4 +1,7 @@
-## isLayer
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.isLayer
 
 Returns `true` if the specified value is a `Layer`, `false` otherwise.
 

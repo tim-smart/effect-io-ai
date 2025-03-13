@@ -1,4 +1,7 @@
-## layerFileTreeAdd
+Package: `@effect/platform`<br />
+Module: `PlatformConfigProvider`<br />
+
+## PlatformConfigProvider.layerFileTreeAdd
 
 Add the file tree ConfigProvider to the environment, as a fallback to the current ConfigProvider.
 

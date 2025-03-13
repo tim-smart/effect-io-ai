@@ -1,4 +1,7 @@
-## scan
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.scan
 
 Accumulates values from an `Iterable` starting from the left, storing
 each intermediate result in an array. Useful for tracking the progression of

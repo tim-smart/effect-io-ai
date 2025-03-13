@@ -1,4 +1,7 @@
-## Capitalize
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Capitalize
 
 This schema converts a string to capitalized one.
 

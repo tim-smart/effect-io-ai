@@ -1,4 +1,7 @@
-## isInterruptType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isInterruptType
 
 Checks if a `Cause` is an `Interrupt` type.
 

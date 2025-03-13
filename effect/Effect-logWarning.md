@@ -1,4 +1,7 @@
-## logWarning
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.logWarning
 
 Logs messages at the WARNING log level.
 

@@ -1,4 +1,7 @@
-## equivalence
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.equivalence
 
 Given a schema `Schema<A, I, R>`, returns an `Equivalence` instance for `A`.
 

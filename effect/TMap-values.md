@@ -1,4 +1,7 @@
-## values
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.values
 
 Collects all values stored in map.
 

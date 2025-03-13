@@ -1,4 +1,7 @@
-## now
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.now
 
 Get the current time using the `Clock` service and convert it to a `DateTime`.
 

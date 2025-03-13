@@ -1,4 +1,7 @@
-## pick
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.pick
 
 Returns a new `Context` that contains only the specified services.
 

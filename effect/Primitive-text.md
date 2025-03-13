@@ -1,4 +1,7 @@
-## text
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.text
 
 Represents a user-defined piece of text.
 

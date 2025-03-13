@@ -1,4 +1,7 @@
-## fillBreak
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.fillBreak
 
 The `fillBreak` combinator first lays out the document `x` and then appends
 `space`s until the width of the document is equal to the specified `width`.

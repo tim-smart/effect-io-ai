@@ -1,4 +1,7 @@
-## fileText
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.fileText
 
 Creates a file argument that reads it's contents.
 

@@ -1,4 +1,7 @@
-## getRight
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getRight
 
 Converts an `Either` into an `Option` by discarding the error and extracting
 the right value.

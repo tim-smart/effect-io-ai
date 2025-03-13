@@ -1,4 +1,7 @@
-## zipRight
+Package: `@effect/typeclass`<br />
+Module: `FlatMap`<br />
+
+## FlatMap.zipRight
 
 A variant of `flatMap` that ignores the value produced by this effect.
 

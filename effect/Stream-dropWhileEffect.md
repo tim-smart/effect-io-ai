@@ -1,4 +1,7 @@
-## dropWhileEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.dropWhileEffect
 
 Drops all elements of the stream for as long as the specified predicate
 produces an effect that evalutates to `true`

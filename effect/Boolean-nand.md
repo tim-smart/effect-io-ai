@@ -1,4 +1,7 @@
-## nand
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.nand
 
 Combines two boolean using NAND: `!(self && that)`.
 

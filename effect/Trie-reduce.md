@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.reduce
 
 Reduce a state over the entries of the `Trie`.
 

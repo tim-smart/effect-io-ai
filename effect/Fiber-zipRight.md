@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.zipRight
 
 Same as `zip` but discards the output of this `Fiber`.
 

@@ -1,4 +1,7 @@
-## partitionMap
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.partitionMap
 
 Splits an `Option` into two `Option`s based on the result of a mapping
 function that produces an `Either`.

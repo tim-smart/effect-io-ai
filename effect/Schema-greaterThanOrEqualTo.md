@@ -1,4 +1,7 @@
-## greaterThanOrEqualTo
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.greaterThanOrEqualTo
 
 This filter checks whether the provided number is greater than or equal to the specified minimum.
 

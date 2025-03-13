@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.filter
 
 Filters an `Option` using a predicate. If the predicate is not satisfied or the `Option` is `None` returns `None`.
 

@@ -1,4 +1,7 @@
-## filterOrFail
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.filterOrFail
 
 Filters the result of a response, or throws an error if the predicate fails.
 

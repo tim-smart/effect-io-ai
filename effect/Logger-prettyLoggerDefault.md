@@ -1,4 +1,7 @@
-## prettyLoggerDefault
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.prettyLoggerDefault
 
 A default version of the pretty logger.
 

@@ -1,4 +1,7 @@
-## taggedWithLabelsInput
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.taggedWithLabelsInput
 
 Returns a new metric, which is identical in every way to this one, except
 dynamic tags are added based on the update values. Note that the metric

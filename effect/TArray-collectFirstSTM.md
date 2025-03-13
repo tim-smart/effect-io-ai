@@ -1,4 +1,7 @@
-## collectFirstSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.collectFirstSTM
 
 Finds the result of applying an transactional partial function to the first
 value in its domain.

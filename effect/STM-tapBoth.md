@@ -1,4 +1,7 @@
-## tapBoth
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.tapBoth
 
 "Peeks" at both sides of an transactional effect.
 

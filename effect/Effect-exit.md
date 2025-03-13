@@ -1,4 +1,7 @@
-## exit
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.exit
 
 Encapsulates both success and failure of an `Effect` using the `Exit` type.
 

@@ -1,4 +1,7 @@
-## set
+Package: `effect`<br />
+Module: `TMap`<br />
+
+## TMap.set
 
 Stores new binding into the map.
 

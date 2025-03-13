@@ -1,4 +1,7 @@
-## Fiber.Descriptor
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.Fiber.Descriptor
 
 A record containing information about a `Fiber`.
 

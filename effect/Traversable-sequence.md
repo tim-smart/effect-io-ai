@@ -1,4 +1,7 @@
-## sequence
+Package: `@effect/typeclass`<br />
+Module: `Traversable`<br />
+
+## Traversable.sequence
 
 Returns a default `sequence` implementation.
 

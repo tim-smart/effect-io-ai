@@ -1,4 +1,7 @@
-## decodeHex
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeHex
 
 Decodes a hex encoded `string` into a `Uint8Array`.
 

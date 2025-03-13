@@ -1,4 +1,7 @@
-## layerCurrentZone
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.layerCurrentZone
 
 Create a Layer from the given time zone.
 

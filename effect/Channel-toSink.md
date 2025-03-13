@@ -1,4 +1,7 @@
-## toSink
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toSink
 
 Converts this channel to a `Sink`.
 

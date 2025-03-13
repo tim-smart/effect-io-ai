@@ -1,4 +1,7 @@
-## HelpDoc
+Package: `@effect/cli`<br />
+Module: `HelpDoc`<br />
+
+## HelpDoc.HelpDoc
 
 A `HelpDoc` models the full documentation for a command-line application.
 

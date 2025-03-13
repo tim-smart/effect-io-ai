@@ -1,4 +1,7 @@
-## chop
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.chop
 
 A useful recursion pattern for processing an `Iterable` to produce a new `Array`, often used for "chopping" up the input
 `Iterable`. Typically chop is called with some function that will consume an initial prefix of the `Iterable` and produce a

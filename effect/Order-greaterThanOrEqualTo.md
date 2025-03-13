@@ -1,4 +1,7 @@
-## greaterThanOrEqualTo
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.greaterThanOrEqualTo
 
 Test whether one value is _non-strictly greater than_ another.
 

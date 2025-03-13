@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flatten
 
 Flattens this stream-of-streams into a stream made of the concatenation in
 strict order of all the streams.

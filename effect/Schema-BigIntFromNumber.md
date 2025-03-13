@@ -1,4 +1,7 @@
-## BigIntFromNumber
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.BigIntFromNumber
 
 This schema transforms a `number` into a `bigint` by parsing the number using the `BigInt` function.
 

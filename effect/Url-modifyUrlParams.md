@@ -1,4 +1,7 @@
-## modifyUrlParams
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.modifyUrlParams
 
 Reads, modifies, and updates the query parameters of a URL.
 

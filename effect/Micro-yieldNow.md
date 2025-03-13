@@ -1,4 +1,7 @@
-## yieldNow
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.yieldNow
 
 Pause the execution of the current `Micro` effect, and resume it on the next
 scheduler tick.

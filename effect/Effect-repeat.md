@@ -1,4 +1,7 @@
-## repeat
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.repeat
 
 Repeats an effect based on a specified schedule or until the first failure.
 

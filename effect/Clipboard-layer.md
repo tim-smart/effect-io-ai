@@ -1,4 +1,7 @@
-## layer
+Package: `@effect/platform-browser`<br />
+Module: `Clipboard`<br />
+
+## Clipboard.layer
 
 A layer that directly interfaces with the navigator.clipboard api
 

@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.orElse
 
 Executes this layer and returns its output, if it succeeds, but otherwise
 executes the specified layer.

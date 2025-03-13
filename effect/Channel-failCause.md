@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.failCause
 
 Constructs a channel that fails immediately with the specified `Cause`.
 

@@ -1,4 +1,7 @@
-## getRights
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.getRights
 
 Retrieves the `Right` values from an `Iterable` of `Either`s.
 

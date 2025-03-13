@@ -1,4 +1,7 @@
-## reAnnotate
+Package: `@effect/printer`<br />
+Module: `DocTree`<br />
+
+## DocTree.reAnnotate
 
 Change the annotation of a `DocTree`.
 

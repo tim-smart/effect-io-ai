@@ -1,4 +1,7 @@
-## haltWhenDeferred
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.haltWhenDeferred
 
 Halts the evaluation of this stream when the provided promise resolves.
 

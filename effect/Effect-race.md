@@ -1,4 +1,7 @@
-## race
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.race
 
 Races two effects and returns the result of the first successful one.
 

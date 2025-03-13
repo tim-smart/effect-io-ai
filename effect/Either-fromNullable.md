@@ -1,4 +1,7 @@
-## fromNullable
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.fromNullable
 
 Takes a lazy default and a nullable value, if the value is not nully (`null` or `undefined`), turn it into a `Right`, if the value is nully use
 the provided default as a `Left`.

@@ -1,4 +1,7 @@
-## insertAt
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.insertAt
 
 Insert an element at the specified index, creating a new `NonEmptyArray`,
 or return `None` if the index is out of bounds.

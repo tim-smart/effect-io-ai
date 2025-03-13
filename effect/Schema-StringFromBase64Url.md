@@ -1,4 +1,7 @@
-## StringFromBase64Url
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.StringFromBase64Url
 
 Decodes a base64 (URL) encoded string into a UTF-8 string.
 

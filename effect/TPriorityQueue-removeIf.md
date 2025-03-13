@@ -1,4 +1,7 @@
-## removeIf
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.removeIf
 
 Removes all elements from the queue matching the specified predicate.
 

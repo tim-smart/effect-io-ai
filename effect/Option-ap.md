@@ -1,4 +1,7 @@
-## ap
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.ap
 
 Applies a function inside a `Some` to a value inside another `Some`,
 combining them into a new `Option`.

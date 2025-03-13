@@ -1,4 +1,7 @@
-## runCount
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runCount
 
 Runs the stream and emits the number of elements processed
 

@@ -1,4 +1,7 @@
-## releaseWrite
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.releaseWrite
 
 Releases a write lock held by this fiber. Succeeds with the outstanding
 number of write locks held by this fiber.

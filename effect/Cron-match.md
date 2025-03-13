@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.match
 
 Checks if a given `Date` falls within an active `Cron` time window.
 

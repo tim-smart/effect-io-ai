@@ -1,4 +1,7 @@
-## hourOfDay
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.hourOfDay
 
 Creates a schedule that recurs at a specific hour of each day.
 

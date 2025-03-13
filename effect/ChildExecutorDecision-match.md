@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `ChildExecutorDecision`<br />
+
+## ChildExecutorDecision.match
 
 Folds over a `ChildExecutorDecision` to produce a value of type `A`.
 

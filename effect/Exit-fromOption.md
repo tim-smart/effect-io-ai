@@ -1,4 +1,7 @@
-## fromOption
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.fromOption
 
 Converts an `Option<A>` into an `Exit<void, A>`.
 

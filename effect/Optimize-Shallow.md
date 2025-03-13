@@ -1,4 +1,7 @@
-## Shallow
+Package: `@effect/printer`<br />
+Module: `Optimize`<br />
+
+## Optimize.Shallow
 
 Instructs the document fusion optimizer to avoid diving deeply into nested
 documents, fusing mostly concatenations of text nodes together.

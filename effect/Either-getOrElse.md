@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.getOrElse
 
 Returns the wrapped value if it's a `Right` or a default value if is a `Left`.
 

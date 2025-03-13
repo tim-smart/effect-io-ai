@@ -1,4 +1,7 @@
-## dieSync
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.dieSync
 
 Creates a sink halting with the specified defect.
 

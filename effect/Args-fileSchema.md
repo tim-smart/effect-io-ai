@@ -1,4 +1,7 @@
-## fileSchema
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.fileSchema
 
 Creates a file argument that reads, parses and validates its contents.
 

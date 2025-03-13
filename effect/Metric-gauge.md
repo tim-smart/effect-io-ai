@@ -1,4 +1,7 @@
-## gauge
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.gauge
 
 Represents a Gauge metric that tracks and reports a single numerical value at a specific moment.
 Gauges are suitable for metrics that represent instantaneous values, such as memory usage or CPU load.

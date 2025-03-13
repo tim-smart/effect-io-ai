@@ -1,4 +1,7 @@
-## removeFirst
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.removeFirst
 
 Removes the entry with the specified key, if it exists.
 

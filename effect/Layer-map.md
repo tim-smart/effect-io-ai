@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.map
 
 Returns a new layer whose output is mapped by the specified function.
 

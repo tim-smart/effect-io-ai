@@ -1,4 +1,7 @@
-## everySTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.everySTM
 
 Atomically evaluate the conjunction of a transactional predicate across the
 members of the array.

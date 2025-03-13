@@ -1,4 +1,7 @@
-## encodeHex
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.encodeHex
 
 Encodes the given value into a hex `string`.
 

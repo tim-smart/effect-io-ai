@@ -1,4 +1,7 @@
-## fromStream
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.fromStream
 
 Create a `ReadonlyMailbox` from a `Stream`.
 

@@ -1,4 +1,7 @@
-## withConcurrency
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.withConcurrency
 
 If you have a `Micro` that uses `concurrency: "inherit"`, you can use this
 api to control the concurrency of that `Micro` when it is run.

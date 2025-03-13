@@ -1,4 +1,7 @@
-## Duration
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Duration
 
 A schema that converts a JSON-compatible tagged union into a `Duration`.
 

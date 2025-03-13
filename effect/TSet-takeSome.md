@@ -1,4 +1,7 @@
-## takeSome
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.takeSome
 
 Takes all matching values, or retries until there is at least one.
 

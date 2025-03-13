@@ -1,4 +1,7 @@
-## mapEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapEffect
 
 Maps over elements of the stream with the specified effectful function.
 

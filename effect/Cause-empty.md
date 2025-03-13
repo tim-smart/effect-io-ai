@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.empty
 
 Creates an `Empty` cause.
 

@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.size
 
 Returns the size of the queue.
 

@@ -1,4 +1,7 @@
-## replicateSTM
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.replicateSTM
 
 Performs this transaction the specified number of times and collects the
 results.

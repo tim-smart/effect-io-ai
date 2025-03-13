@@ -1,4 +1,7 @@
-## max
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.max
 
 Returns the maximum between two `bigint`s.
 

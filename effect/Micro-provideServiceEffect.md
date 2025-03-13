@@ -1,4 +1,7 @@
-## provideServiceEffect
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.provideServiceEffect
 
 Create a service using the provided `Micro` effect, and add it to the
 current context.

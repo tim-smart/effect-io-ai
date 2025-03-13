@@ -1,4 +1,7 @@
-## InterruptedExceptionTypeId
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.InterruptedExceptionTypeId
 
 A unique symbol identifying the `InterruptedException` type.
 

@@ -1,4 +1,7 @@
-## Emit
+Package: `effect`<br />
+Module: `StreamEmit`<br />
+
+## StreamEmit.Emit
 
 An `Emit<R, E, A, B>` represents an asynchronous callback that can be
 called multiple times. The callback can be called with a value of type

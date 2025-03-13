@@ -1,4 +1,7 @@
-## isEither
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.isEither
 
 Tests if a value is a `Either`.
 

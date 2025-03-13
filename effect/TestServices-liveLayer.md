@@ -1,4 +1,7 @@
-## liveLayer
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.liveLayer
 
 Constructs a new `Live` service wrapped in a layer.
 

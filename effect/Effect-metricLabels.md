@@ -1,4 +1,7 @@
-## metricLabels
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.metricLabels
 
 Retrieves the metric labels associated with the current scope.
 

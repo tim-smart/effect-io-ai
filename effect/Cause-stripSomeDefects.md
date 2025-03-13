@@ -1,4 +1,7 @@
-## stripSomeDefects
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.stripSomeDefects
 
 Removes matching defects from a `Cause` using a partial function, returning
 the remainder.

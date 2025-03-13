@@ -1,4 +1,7 @@
-## registerEntity
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.registerEntity
 
 Register a new entity type, allowing pods to send messages to entities of this type.
 

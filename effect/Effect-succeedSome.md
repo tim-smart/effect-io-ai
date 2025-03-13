@@ -1,4 +1,7 @@
-## succeedSome
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.succeedSome
 
 Returns an effect which succeeds with the value wrapped in a `Some`.
 

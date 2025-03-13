@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.as
 
 Replaces the value inside an effect with a constant value.
 

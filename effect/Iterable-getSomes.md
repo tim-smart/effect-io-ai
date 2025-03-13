@@ -1,4 +1,7 @@
-## getSomes
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.getSomes
 
 Retrieves the `Some` values from an `Iterable` of `Option`s.
 

@@ -1,4 +1,7 @@
-## cursorShow
+Package: `@effect/printer-ansi`<br />
+Module: `Ansi`<br />
+
+## Ansi.cursorShow
 
 Shows the cursor.
 

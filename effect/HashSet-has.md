@@ -1,4 +1,7 @@
-## has
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.has
 
 Checks if the specified value exists in the `HashSet`.
 

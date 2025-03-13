@@ -1,4 +1,7 @@
-## isLine
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.isLine
 
 Returns `true` if the specified `Doc` is a `Line`, `false` otherwise.
 

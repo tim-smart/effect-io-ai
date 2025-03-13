@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.zip
 
 Feeds inputs to this sink until it yields a result, then switches over to
 the provided sink until it yields a result, finally combining the two

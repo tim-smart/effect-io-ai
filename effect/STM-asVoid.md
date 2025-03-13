@@ -1,4 +1,7 @@
-## asVoid
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.asVoid
 
 This function maps the success value of an `STM` to `void`. If the original
 `STM` succeeds, the returned `STM` will also succeed. If the original `STM`

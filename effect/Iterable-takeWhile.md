@@ -1,4 +1,7 @@
-## takeWhile
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.takeWhile
 
 Calculate the longest initial Iterable for which all element satisfy the specified predicate, creating a new `Iterable`.
 

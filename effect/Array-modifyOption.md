@@ -1,4 +1,7 @@
-## modifyOption
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.modifyOption
 
 Apply a function to the element at the specified index, creating a new `Array`,
 or return `None` if the index is out of bounds.

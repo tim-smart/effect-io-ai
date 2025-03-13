@@ -1,4 +1,7 @@
-## unwrapScoped
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.unwrapScoped
 
 Creates a sink produced from a scoped effect.
 

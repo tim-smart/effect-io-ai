@@ -1,4 +1,7 @@
-## strict
+Package: `effect`<br />
+Module: `Equivalence`<br />
+
+## Equivalence.strict
 
 Return an `Equivalence` that uses strict equality (===) to compare values.
 

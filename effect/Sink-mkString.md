@@ -1,4 +1,7 @@
-## mkString
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mkString
 
 Creates a sink which transforms it's inputs into a string.
 

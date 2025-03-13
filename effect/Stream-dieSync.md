@@ -1,4 +1,7 @@
-## dieSync
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.dieSync
 
 The stream that dies with the specified lazily evaluated defect.
 

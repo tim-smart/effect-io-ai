@@ -1,4 +1,7 @@
-## noop
+Package: `@effect/cluster`<br />
+Module: `Pods`<br />
+
+## Pods.noop
 
 A layer that creates a service that does nothing when called.
 Useful for testing ShardManager or when using Sharding.local.

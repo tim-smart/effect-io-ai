@@ -1,4 +1,7 @@
-## chunksOf
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.chunksOf
 
 Splits an `Iterable` into length-`n` pieces. The last piece will be shorter if `n` does not evenly divide the length of
 the `Iterable`.

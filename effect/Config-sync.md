@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.sync
 
 Constructs a config which contains the specified lazy value.
 

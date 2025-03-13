@@ -1,4 +1,7 @@
-## effectContext
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.effectContext
 
 Constructs a layer from the specified effect, which must return one or more
 services.

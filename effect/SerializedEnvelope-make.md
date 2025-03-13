@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `SerializedEnvelope`<br />
+
+## SerializedEnvelope.make
 
 Construct a new `SerializedEnvelope`
 

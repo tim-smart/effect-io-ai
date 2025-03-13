@@ -1,4 +1,7 @@
-## GenAI.AllAttributes
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.GenAI.AllAttributes
 
 All telemetry attributes which are part of the GenAI specification.
 

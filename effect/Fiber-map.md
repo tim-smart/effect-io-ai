@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.map
 
 Maps over the value the Fiber computes.
 

@@ -1,4 +1,7 @@
-## launch
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.launch
 
 Builds this layer and uses it until it is interrupted. This is useful when
 your entire application is a layer, such as an HTTP server.

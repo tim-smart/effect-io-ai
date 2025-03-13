@@ -1,4 +1,7 @@
-## between
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.between
 
 Checks if a `Duration` is between a `minimum` and `maximum` value.
 

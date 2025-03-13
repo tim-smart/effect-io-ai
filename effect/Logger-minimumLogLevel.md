@@ -1,4 +1,7 @@
-## minimumLogLevel
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.minimumLogLevel
 
 Sets the minimum log level for logging operations, allowing control over
 which log messages are displayed based on their severity.

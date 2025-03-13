@@ -1,4 +1,7 @@
-## mapEffect
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.mapEffect
 
 Effectfully transform the <A> type of the MessageState<A>.
 

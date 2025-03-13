@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Deferred`<br />
+
+## Deferred.failCauseSync
 
 Fails the `Deferred` with the specified `Cause`, which will be propagated to
 all fibers waiting on the value of the `Deferred`.

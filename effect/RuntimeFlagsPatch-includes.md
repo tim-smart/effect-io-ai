@@ -1,4 +1,7 @@
-## includes
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.includes
 
 Returns `true` if the `RuntimeFlagsPatch` includes the specified
 `RuntimeFlag`, `false` otherwise.

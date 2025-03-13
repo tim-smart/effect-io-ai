@@ -1,4 +1,7 @@
-## union
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.union
 
 Atomically transforms the set into the union of itself and the provided
 set.

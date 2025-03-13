@@ -1,4 +1,7 @@
-## tuple
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.tuple
 
 Similar to `Promise.all` but operates on `Order`s.
 

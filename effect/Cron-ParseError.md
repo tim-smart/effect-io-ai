@@ -1,4 +1,7 @@
-## ParseError
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.ParseError
 
 Represents a checked exception which occurs when decoding fails.
 

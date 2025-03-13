@@ -1,4 +1,7 @@
-## subscribeScoped
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.subscribeScoped
 
 Subscribes to receive messages from the `TPubSub`. The resulting subscription can
 be evaluated multiple times within the scope to take a message from the `TPubSub`

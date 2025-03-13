@@ -1,4 +1,7 @@
-## Forbidden
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.Forbidden
 
 The `Forbidden` variant of the `ParseIssue` type represents a forbidden operation, such as when encountering an Effect that is not allowed to execute (e.g., using `runSync`).
 

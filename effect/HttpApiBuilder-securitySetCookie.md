@@ -1,4 +1,7 @@
-## securitySetCookie
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.securitySetCookie
 
 Set a cookie from an `HttpApiSecurity.HttpApiKey` instance.
 

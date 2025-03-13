@@ -1,4 +1,7 @@
-## intersect
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.intersect
 
 Combines two schedules, continuing only if both schedules want to continue,
 using the longer delay.

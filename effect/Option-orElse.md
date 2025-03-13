@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.orElse
 
 Returns the provided `Option` `that` if the current `Option` (`self`) is
 `None`; otherwise, it returns `self`.

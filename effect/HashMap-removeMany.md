@@ -1,4 +1,7 @@
-## removeMany
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.removeMany
 
 Removes all entries in the `HashMap` which have the specified keys.
 

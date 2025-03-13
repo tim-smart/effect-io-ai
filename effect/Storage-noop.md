@@ -1,4 +1,7 @@
-## noop
+Package: `@effect/cluster`<br />
+Module: `Storage`<br />
+
+## Storage.noop
 
 A layer that does nothing, useful for testing.
 

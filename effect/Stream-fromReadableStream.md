@@ -1,4 +1,7 @@
-## fromReadableStream
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromReadableStream
 
 Creates a stream from a `ReadableStream`.
 

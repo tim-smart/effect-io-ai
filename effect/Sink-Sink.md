@@ -1,4 +1,7 @@
-## Sink
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.Sink
 
 A `Sink<A, In, L, E, R>` is used to consume elements produced by a `Stream`.
 You can think of a sink as a function that will consume a variable amount of

@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.match
 
 Handles both success and failure cases of an effect without performing side
 effects.

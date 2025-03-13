@@ -1,4 +1,7 @@
-## layerWebSocketConstructor
+Package: `@effect/platform-browser`<br />
+Module: `BrowserSocket`<br />
+
+## BrowserSocket.layerWebSocketConstructor
 
 A WebSocket constructor that uses globalThis.WebSocket.
 

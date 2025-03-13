@@ -1,4 +1,7 @@
-## mapConcatChunkEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.mapConcatChunkEffect
 
 Effectfully maps each element to a chunk, and flattens the chunks into the
 output of this stream.

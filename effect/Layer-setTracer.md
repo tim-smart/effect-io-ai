@@ -1,4 +1,7 @@
-## setTracer
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.setTracer
 
 Create a Layer that sets the current Tracer
 

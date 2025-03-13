@@ -1,4 +1,7 @@
-## Annotated
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Annotated
 
 Represents a document with an associated annotation.
 

@@ -1,4 +1,7 @@
-## interruptible
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.interruptible
 
 Flag the effect as interruptible, which means that when the effect is
 interrupted, it will be interrupted immediately.

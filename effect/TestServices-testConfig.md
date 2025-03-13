@@ -1,4 +1,7 @@
-## testConfig
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.testConfig
 
 Retrieves the `TestConfig` service for this test.
 

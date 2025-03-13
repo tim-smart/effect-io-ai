@@ -1,4 +1,7 @@
-## Prompt.Action
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.Prompt.Action
 
 Represents the action that should be taken by a `Prompt` based upon the
 user input received during the current frame.

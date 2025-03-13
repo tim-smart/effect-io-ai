@@ -1,4 +1,7 @@
-## float
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.float
 
 Creates a floating point number argument.
 

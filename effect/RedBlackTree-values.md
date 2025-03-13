@@ -1,4 +1,7 @@
-## values
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.values
 
 Get all values present in the tree in order.
 

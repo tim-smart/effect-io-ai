@@ -1,4 +1,7 @@
-## size
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.size
 
 Returns the size of the `TArray`.
 

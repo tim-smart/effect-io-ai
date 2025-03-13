@@ -1,4 +1,7 @@
-## MonoidMultiply
+Package: `@effect/typeclass`<br />
+Module: `Number`<br />
+
+## Number.MonoidMultiply
 
 `number` monoid under multiplication.
 

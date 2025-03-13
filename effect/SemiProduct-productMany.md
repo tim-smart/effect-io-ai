@@ -1,4 +1,7 @@
-## productMany
+Package: `@effect/typeclass`<br />
+Module: `SemiProduct`<br />
+
+## SemiProduct.productMany
 
 Returns a default `productMany` implementation.
 

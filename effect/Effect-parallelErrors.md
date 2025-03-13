@@ -1,4 +1,7 @@
-## parallelErrors
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.parallelErrors
 
 Combines all errors from concurrent operations into a single error.
 

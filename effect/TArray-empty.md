@@ -1,4 +1,7 @@
-## empty
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.empty
 
 Makes an empty `TArray`.
 

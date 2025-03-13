@@ -1,4 +1,7 @@
-## range
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.range
 
 Constructs a stream from a range of integers, including both endpoints.
 

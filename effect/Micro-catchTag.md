@@ -1,4 +1,7 @@
-## catchTag
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchTag
 
 Recovers from the specified tagged error.
 

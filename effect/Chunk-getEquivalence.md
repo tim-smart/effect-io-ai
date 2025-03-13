@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.getEquivalence
 
 Compares the two chunks of equal length using the specified function
 

@@ -1,4 +1,7 @@
-## of
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.of
 
 Creates a `Take` with a single value chunk.
 

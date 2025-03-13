@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.reduce
 
 Atomically folds using a pure function.
 

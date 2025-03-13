@@ -1,4 +1,7 @@
-## StringFromHex
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.StringFromHex
 
 Decodes a hex encoded string into a UTF-8 string.
 

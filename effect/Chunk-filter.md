@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.filter
 
 Returns a filtered and mapped subset of the elements.
 

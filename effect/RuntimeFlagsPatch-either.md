@@ -1,4 +1,7 @@
-## either
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.either
 
 Creates a `RuntimeFlagsPatch` describing application of either the `self`
 patch or `that` patch.

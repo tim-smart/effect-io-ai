@@ -1,4 +1,7 @@
-## some
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.some
 
 Check if any entry in a record meets a specific condition.
 

@@ -1,4 +1,7 @@
-## withClockScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.withClockScoped
 
 Sets the implementation of the `Clock` service to the specified value and
 restores it to its original value when the scope is closed.

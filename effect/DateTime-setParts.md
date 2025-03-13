@@ -1,4 +1,7 @@
-## setParts
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setParts
 
 Set the different parts of a `DateTime` as an object.
 

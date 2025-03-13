@@ -1,4 +1,7 @@
-## asSome
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.asSome
 
 Maps the success value of this effect to an optional value.
 

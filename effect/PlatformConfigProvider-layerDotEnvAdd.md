@@ -1,4 +1,7 @@
-## layerDotEnvAdd
+Package: `@effect/platform`<br />
+Module: `PlatformConfigProvider`<br />
+
+## PlatformConfigProvider.layerDotEnvAdd
 
 Add the dotenv ConfigProvider to the environment, as a fallback to the current ConfigProvider.
 If the file is not found, a debug log is produced and empty layer is returned.

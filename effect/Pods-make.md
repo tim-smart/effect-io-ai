@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `Pods`<br />
+
+## Pods.make
 
 Constructs a Pods service from its implementation
 

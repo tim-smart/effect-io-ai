@@ -1,4 +1,7 @@
-## repeatEffectChunkOption
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.repeatEffectChunkOption
 
 Creates a stream from an effect producing chunks of `A` values until it
 fails with `None`.

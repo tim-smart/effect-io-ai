@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.mapError
 
 Returns a layer with its error channel mapped using the specified function.
 

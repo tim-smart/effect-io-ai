@@ -1,4 +1,7 @@
-## catchTags
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.catchTags
 
 Recovers from multiple tagged errors.
 

@@ -1,4 +1,7 @@
-## ScopedRef
+Package: `effect`<br />
+Module: `ScopedRef`<br />
+
+## ScopedRef.ScopedRef
 
 A `ScopedRef` is a reference whose value is associated with resources,
 which must be released properly. You can both get the current value of any

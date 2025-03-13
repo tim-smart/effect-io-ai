@@ -1,4 +1,7 @@
-## isDieType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isDieType
 
 Checks if a `Cause` is a `Die` type.
 

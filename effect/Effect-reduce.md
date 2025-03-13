@@ -1,4 +1,7 @@
-## reduce
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.reduce
 
 Reduces an `Iterable<A>` using an effectual function `f`, working
 sequentially from left to right.

@@ -1,4 +1,7 @@
-## contextWithEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.contextWithEffect
 
 Accesses the context of the stream in the context of an effect.
 

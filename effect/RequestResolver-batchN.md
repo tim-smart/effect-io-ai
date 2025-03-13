@@ -1,4 +1,7 @@
-## batchN
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.batchN
 
 Returns a data source that executes at most `n` requests in parallel.
 

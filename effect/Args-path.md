@@ -1,4 +1,7 @@
-## path
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.path
 
 Creates a path argument.
 

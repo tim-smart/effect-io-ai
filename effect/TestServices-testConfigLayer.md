@@ -1,4 +1,7 @@
-## testConfigLayer
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.testConfigLayer
 
 Constructs a new `TestConfig` service with the specified settings.
 

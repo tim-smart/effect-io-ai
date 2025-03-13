@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `GroupBy`<br />
+
+## GroupBy.filter
 
 Filter the groups to be processed.
 

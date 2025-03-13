@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `Mailbox`<br />
+
+## Mailbox.make
 
 A `Mailbox` is a queue that can be signaled to be done or failed.
 

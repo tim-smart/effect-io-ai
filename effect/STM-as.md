@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.as
 
 Maps the success value of this effect to the specified constant value.
 

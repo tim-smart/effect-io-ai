@@ -1,4 +1,7 @@
-## filterOrElse
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filterOrElse
 
 Filters an effect, providing an alternative effect if the predicate fails.
 

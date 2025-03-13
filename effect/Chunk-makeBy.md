@@ -1,4 +1,7 @@
-## makeBy
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.makeBy
 
 Return a Chunk of length n with element i initialized with f(i).
 

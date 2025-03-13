@@ -1,4 +1,7 @@
-## once
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.once
 
 Returns an effect that executes only once, regardless of how many times it's
 called.

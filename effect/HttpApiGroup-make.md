@@ -1,4 +1,7 @@
-## make
+Package: `@effect/platform`<br />
+Module: `HttpApiGroup`<br />
+
+## HttpApiGroup.make
 
 An `HttpApiGroup` is a collection of `HttpApiEndpoint`s. You can use an `HttpApiGroup` to
 represent a portion of your domain.

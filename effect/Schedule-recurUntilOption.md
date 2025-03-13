@@ -1,4 +1,7 @@
-## recurUntilOption
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.recurUntilOption
 
 A schedule that recurs until the input value matches a partial function, then
 maps the value.

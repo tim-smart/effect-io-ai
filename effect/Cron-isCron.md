@@ -1,4 +1,7 @@
-## isCron
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.isCron
 
 Checks if a given value is a `Cron` instance.
 

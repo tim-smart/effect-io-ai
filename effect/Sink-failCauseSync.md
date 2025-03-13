@@ -1,4 +1,7 @@
-## failCauseSync
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.failCauseSync
 
 Creates a sink halting with a specified lazily evaluated `Cause`.
 

@@ -1,4 +1,7 @@
-## annotateLogsScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.annotateLogsScoped
 
 Adds log annotations with a limited scope to enhance contextual logging.
 

@@ -1,4 +1,7 @@
-## prependAllReversed
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.prependAllReversed
 
 Prepends the specified prefix list (in reverse order) to the beginning of the
 specified list.

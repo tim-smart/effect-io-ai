@@ -1,4 +1,7 @@
-## layerTestClient
+Package: `@effect/platform`<br />
+Module: `HttpServer`<br />
+
+## HttpServer.layerTestClient
 
 Layer producing an `HttpClient` with prepended url of the running http server.
 

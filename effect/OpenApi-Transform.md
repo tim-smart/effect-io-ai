@@ -1,4 +1,7 @@
-## Transform
+Package: `@effect/platform`<br />
+Module: `OpenApi`<br />
+
+## OpenApi.Transform
 
 Transforms the generated OpenAPI specification
 

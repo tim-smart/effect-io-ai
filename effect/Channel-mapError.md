@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mapError
 
 Returns a new channel, which is the same as this one, except the failure
 value of the returned channel is created by applying the specified function

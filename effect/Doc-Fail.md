@@ -1,4 +1,7 @@
-## Fail
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.Fail
 
 Represents a document that cannot be rendered. Generally occurs when
 flattening a line. The layout algorithms will reject this document and choose

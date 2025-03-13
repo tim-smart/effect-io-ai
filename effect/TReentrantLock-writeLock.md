@@ -1,4 +1,7 @@
-## writeLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.writeLock
 
 Obtains a write lock in a scoped context.
 

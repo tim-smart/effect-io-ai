@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.suspend
 
 Returns a lazily constructed sink that may require effects for its
 creation.

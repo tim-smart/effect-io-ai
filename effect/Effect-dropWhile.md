@@ -1,4 +1,7 @@
-## dropWhile
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.dropWhile
 
 Drops elements as long as the predicate returns `true`.
 

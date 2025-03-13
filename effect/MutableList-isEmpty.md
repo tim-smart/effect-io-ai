@@ -1,4 +1,7 @@
-## isEmpty
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.isEmpty
 
 Returns `true` if the list contains zero elements, `false`, otherwise.
 

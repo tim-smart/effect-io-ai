@@ -1,4 +1,7 @@
-## makeZoned
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.makeZoned
 
 Create a `DateTime.Zoned` using `DateTime.make` and a time zone.
 

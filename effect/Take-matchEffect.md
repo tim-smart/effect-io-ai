@@ -1,4 +1,7 @@
-## matchEffect
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.matchEffect
 
 Effectful version of `Take.fold`.
 

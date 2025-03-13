@@ -1,4 +1,7 @@
-## SemigroupMultiply
+Package: `@effect/typeclass`<br />
+Module: `BigInt`<br />
+
+## BigInt.SemigroupMultiply
 
 `bigint` semigroup under multiplication.
 

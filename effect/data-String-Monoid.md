@@ -1,4 +1,7 @@
-## Monoid
+Package: `@effect/typeclass`<br />
+Module: `String`<br />
+
+## String.Monoid
 
 `string` monoid under concatenation.
 

@@ -1,4 +1,7 @@
-## configProviderWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.configProviderWith
 
 Allows working with the default configuration provider.
 

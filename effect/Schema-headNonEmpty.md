@@ -1,4 +1,7 @@
-## headNonEmpty
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.headNonEmpty
 
 Get the first element of a `NonEmptyReadonlyArray`.
 

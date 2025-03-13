@@ -1,4 +1,7 @@
-## mapBoth
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.mapBoth
 
 Maps over the `Success` and `Failure` cases of the specified exit using the
 provided functions.

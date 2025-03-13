@@ -1,4 +1,7 @@
-## orElseEither
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.orElseEither
 
 Combines this differ and the specified differ to produce a differ that
 knows how to diff the sum of their values.

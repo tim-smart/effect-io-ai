@@ -1,4 +1,7 @@
-## seek
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.seek
 
 Drops elements from the queue while they do not satisfy the predicate,
 taking and returning the first element that does satisfy the predicate.

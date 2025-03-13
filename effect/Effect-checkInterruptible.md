@@ -1,4 +1,7 @@
-## checkInterruptible
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.checkInterruptible
 
 Checks if interruption is allowed and executes a callback accordingly.
 

@@ -1,4 +1,7 @@
-## isParallelType
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isParallelType
 
 Checks if a `Cause` is a `Parallel` type.
 

@@ -1,4 +1,7 @@
-## iterate
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.iterate
 
 Repeatedly updates a state through an effectful operation until a condition
 is no longer met.

@@ -1,4 +1,7 @@
-## TSet
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.TSet
 
 Transactional set implemented on top of `TMap`.
 

@@ -1,4 +1,7 @@
-## capacity
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.capacity
 
 Returns the number of elements the `TPubSub` can hold.
 

@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.orElse
 
 Returns `self` if it is a `Right` or `that` otherwise.
 

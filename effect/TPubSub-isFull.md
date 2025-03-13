@@ -1,4 +1,7 @@
-## isFull
+Package: `effect`<br />
+Module: `TPubSub`<br />
+
+## TPubSub.isFull
 
 Returns `true` if the `TPubSub` contains at least one element, `false`
 otherwise.

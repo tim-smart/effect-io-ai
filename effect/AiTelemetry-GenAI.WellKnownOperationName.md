@@ -1,4 +1,7 @@
-## GenAI.WellKnownOperationName
+Package: `@effect/ai`<br />
+Module: `AiTelemetry`<br />
+
+## AiTelemetry.GenAI.WellKnownOperationName
 
 The `gen_ai.operation.name` attribute has the following list of well-known
 values.

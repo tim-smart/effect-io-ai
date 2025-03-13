@@ -1,4 +1,7 @@
-## redacted
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.redacted
 
 Constructs a config for a redacted value.
 

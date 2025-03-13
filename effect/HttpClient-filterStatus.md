@@ -1,4 +1,7 @@
-## filterStatus
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.filterStatus
 
 Filters responses by HTTP status code.
 

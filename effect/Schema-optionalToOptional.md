@@ -1,4 +1,7 @@
-## optionalToOptional
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.optionalToOptional
 
 Converts an optional property to another optional property through a transformation `Option -> Option`.
 

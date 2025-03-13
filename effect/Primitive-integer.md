@@ -1,4 +1,7 @@
-## integer
+Package: `@effect/cli`<br />
+Module: `Primitive`<br />
+
+## Primitive.integer
 
 Represents an integer.
 

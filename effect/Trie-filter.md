@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.filter
 
 Filters entries out of a `Trie` using the specified predicate.
 

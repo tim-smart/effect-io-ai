@@ -1,4 +1,7 @@
-## commitEither
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.commitEither
 
 Commits this transaction atomically, regardless of whether the transaction
 is a success or a failure.

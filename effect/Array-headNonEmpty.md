@@ -1,4 +1,7 @@
-## headNonEmpty
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.headNonEmpty
 
 Get the first element of a non empty array.
 

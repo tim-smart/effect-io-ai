@@ -1,4 +1,7 @@
-## interruptibleMask
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.interruptibleMask
 
 This function behaves like `interruptible`, but it also provides a
 `restore` function. This function can be used to restore the interruptibility

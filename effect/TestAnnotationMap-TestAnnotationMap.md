@@ -1,4 +1,7 @@
-## TestAnnotationMap
+Package: `effect`<br />
+Module: `TestAnnotationMap`<br />
+
+## TestAnnotationMap.TestAnnotationMap
 
 An annotation map keeps track of annotations of different types.
 

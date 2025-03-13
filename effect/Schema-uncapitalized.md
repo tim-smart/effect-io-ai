@@ -1,4 +1,7 @@
-## uncapitalized
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.uncapitalized
 
 Verifies that a string is uncapitalized.
 

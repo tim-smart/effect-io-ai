@@ -1,4 +1,7 @@
-## fromDelays
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.fromDelays
 
 Creates a schedule that recurs once for each specified duration, applying the
 given delays sequentially.

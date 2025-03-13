@@ -1,4 +1,7 @@
-## collectLeftover
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.collectLeftover
 
 Collects the leftovers from the stream when the sink succeeds and returns
 them as part of the sink's result.

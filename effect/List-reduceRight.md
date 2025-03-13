@@ -1,4 +1,7 @@
-## reduceRight
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.reduceRight
 
 Folds over the elements of the list using the specified function, beginning
 with the last element of the list, using the specified initial value.

@@ -1,4 +1,7 @@
-## Mutable
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.Mutable
 
 Make all properties in `T` mutable. Supports arrays, tuples, and records as well.
 

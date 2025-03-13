@@ -1,4 +1,7 @@
-## nextRange
+Package: `effect`<br />
+Module: `Random`<br />
+
+## Random.nextRange
 
 Returns the next numeric value in the specified range from the
 pseudo-random number generator.

@@ -1,4 +1,7 @@
-## schedule
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.schedule
 
 Schedules the output of the stream using the provided `schedule`.
 

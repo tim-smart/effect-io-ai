@@ -1,4 +1,7 @@
-## struct
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.struct
 
 This function creates and returns a new `Semigroup` for a struct of values based on the given `Semigroup`s for each property in the struct.
 The returned `Semigroup` combines two structs of the same type by applying the corresponding `Semigroup` passed as arguments to each property in the struct.

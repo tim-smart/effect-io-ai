@@ -1,4 +1,7 @@
-## makeCookie
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.makeCookie
 
 Create a new cookie
 

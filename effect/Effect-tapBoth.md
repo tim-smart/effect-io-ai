@@ -1,4 +1,7 @@
-## tapBoth
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tapBoth
 
 Allows you to inspect both success and failure outcomes of an effect and
 perform side effects for each.

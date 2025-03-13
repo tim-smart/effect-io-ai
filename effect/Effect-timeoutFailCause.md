@@ -1,4 +1,7 @@
-## timeoutFailCause
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timeoutFailCause
 
 Specifies a custom defect to be thrown when a timeout occurs.
 

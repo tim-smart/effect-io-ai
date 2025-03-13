@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.succeed
 
 Constructs a layer from the specified value.
 

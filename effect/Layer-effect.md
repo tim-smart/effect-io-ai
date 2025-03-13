@@ -1,4 +1,7 @@
-## effect
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.effect
 
 Constructs a layer from the specified effect.
 

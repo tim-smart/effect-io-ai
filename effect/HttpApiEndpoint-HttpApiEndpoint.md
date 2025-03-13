@@ -1,4 +1,7 @@
-## HttpApiEndpoint
+Package: `@effect/platform`<br />
+Module: `HttpApiEndpoint`<br />
+
+## HttpApiEndpoint.HttpApiEndpoint
 
 Represents an API endpoint. An API endpoint is mapped to a single route on
 the underlying `HttpRouter`.

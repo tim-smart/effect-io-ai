@@ -1,4 +1,7 @@
-## encodeUriComponent
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.encodeUriComponent
 
 Encodes a UTF-8 `string` into a URI component `string`.
 

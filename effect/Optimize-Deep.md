@@ -1,4 +1,7 @@
-## Deep
+Package: `@effect/printer`<br />
+Module: `Optimize`<br />
+
+## Optimize.Deep
 
 Instructs the document fusion optimizer to recurse into all leaves of the
 document tree, including different layout alternatives and all

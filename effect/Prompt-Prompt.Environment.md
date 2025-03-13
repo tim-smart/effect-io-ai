@@ -1,4 +1,7 @@
-## Prompt.Environment
+Package: `@effect/cli`<br />
+Module: `Prompt`<br />
+
+## Prompt.Prompt.Environment
 
 Represents the services available to a custom `Prompt`.
 

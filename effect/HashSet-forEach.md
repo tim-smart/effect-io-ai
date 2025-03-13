@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.forEach
 
 Applies the specified function to the values of the `HashSet`.
 

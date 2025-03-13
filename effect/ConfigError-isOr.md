@@ -1,4 +1,7 @@
-## isOr
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isOr
 
 Returns `true` if the specified `ConfigError` is an `Or`, `false` otherwise.
 

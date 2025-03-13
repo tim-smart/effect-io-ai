@@ -1,4 +1,7 @@
-## offerAll
+Package: `effect`<br />
+Module: `MutableQueue`<br />
+
+## MutableQueue.offerAll
 
 Enqueues a collection of values into the queue.
 

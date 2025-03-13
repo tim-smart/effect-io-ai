@@ -1,4 +1,7 @@
-## productComposition
+Package: `@effect/typeclass`<br />
+Module: `SemiProduct`<br />
+
+## SemiProduct.productComposition
 
 Returns a default `product` composition.
 

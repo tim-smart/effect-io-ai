@@ -1,4 +1,7 @@
-## scale
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.scale
 
 Scales a given `BigDecimal` to the specified scale.
 

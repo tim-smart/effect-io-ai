@@ -1,4 +1,7 @@
-## failCause
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.failCause
 
 Constructs a new `Exit.Failure` from the specified `Cause` of type `E`.
 

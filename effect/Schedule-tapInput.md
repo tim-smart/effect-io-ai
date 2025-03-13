@@ -1,4 +1,7 @@
-## tapInput
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.tapInput
 
 Returns a new schedule that runs the given effectful function for each input
 before continuing execution.

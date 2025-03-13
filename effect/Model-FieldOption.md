@@ -1,4 +1,7 @@
-## FieldOption
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.FieldOption
 
 Convert a field to one that is optional for all variants.
 

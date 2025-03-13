@@ -1,4 +1,7 @@
-## lessThan
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.lessThan
 
 Returns `true` if the first argument is less than the second, otherwise `false`.
 

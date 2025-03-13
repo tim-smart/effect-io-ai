@@ -1,4 +1,7 @@
-## Schema.AsSchema
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Schema.AsSchema
 
 Type-level counterpart of `Schema.asSchema` function.
 

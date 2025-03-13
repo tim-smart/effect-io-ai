@@ -1,4 +1,7 @@
-## isAlreadyFlat
+Package: `@effect/printer`<br />
+Module: `Flatten`<br />
+
+## Flatten.isAlreadyFlat
 
 Returns `true` if the specified `Flatten` is an `AlreadyFlat`, `false` otherwise.
 

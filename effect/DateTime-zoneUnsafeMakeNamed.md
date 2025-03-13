@@ -1,4 +1,7 @@
-## zoneUnsafeMakeNamed
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.zoneUnsafeMakeNamed
 
 Attempt to create a named time zone from a IANA time zone identifier.
 

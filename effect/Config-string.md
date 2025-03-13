@@ -1,4 +1,7 @@
-## string
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.string
 
 Constructs a config for a string value.
 

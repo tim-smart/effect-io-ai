@@ -1,4 +1,7 @@
-## mapAttempt
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.mapAttempt
 
 Returns a config whose structure is the same as this one, but which may
 produce a different value, constructed using the specified function, which

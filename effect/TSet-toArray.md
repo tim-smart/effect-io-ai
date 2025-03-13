@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.toArray
 
 Collects all elements into a `Array`.
 

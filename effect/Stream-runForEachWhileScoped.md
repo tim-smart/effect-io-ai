@@ -1,4 +1,7 @@
-## runForEachWhileScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runForEachWhileScoped
 
 Like `Stream.runForEachWhile`, but returns a scoped effect so the
 finalization order can be controlled.

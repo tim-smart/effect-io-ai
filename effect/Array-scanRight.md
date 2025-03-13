@@ -1,4 +1,7 @@
-## scanRight
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.scanRight
 
 Accumulates values from an `Iterable` starting from the right, storing
 each intermediate result in an array. Useful for tracking the progression of

@@ -1,4 +1,7 @@
-## unsafeGet
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.unsafeGet
 
 Retrieve a fiber from the FiberMap.
 

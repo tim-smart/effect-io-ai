@@ -1,4 +1,7 @@
-## orElseSome
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.orElseSome
 
 Returns the provided default value wrapped in `Some` if the current `Option`
 (`self`) is `None`; otherwise, returns `self`.

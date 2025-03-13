@@ -1,4 +1,7 @@
-## failureOrCause
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.failureOrCause
 
 Splits a `Cause` into either its first `Fail` error or the rest of the cause
 (which might only contain `Die` or `Interrupt`).

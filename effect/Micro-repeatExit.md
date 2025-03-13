@@ -1,4 +1,7 @@
-## repeatExit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.repeatExit
 
 Repeat the given `Micro` using the provided options.
 

@@ -1,4 +1,7 @@
-## isTupleOfAtLeast
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isTupleOfAtLeast
 
 Determine if an `Array` is a tuple with at least `N` elements, narrowing down the type to `TupleOfAtLeast`.
 

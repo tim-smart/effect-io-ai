@@ -1,4 +1,7 @@
-## isComposite
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.isComposite
 
 Returns `true` if the value is a `Composite`.
 

@@ -1,4 +1,7 @@
-## toPubSub
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toPubSub
 
 Converts a `Channel` to a `PubSub`.
 

@@ -1,4 +1,7 @@
-## makeMemoMap
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.makeMemoMap
 
 Constructs a `MemoMap` that can be used to build additional layers.
 

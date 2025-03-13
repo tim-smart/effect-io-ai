@@ -1,4 +1,7 @@
-## mapSecond
+Package: `effect`<br />
+Module: `Tuple`<br />
+
+## Tuple.mapSecond
 
 Transforms the second component of a tuple using a given function.
 

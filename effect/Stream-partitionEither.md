@@ -1,4 +1,7 @@
-## partitionEither
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.partitionEither
 
 Splits a stream into two substreams based on an effectful condition.
 

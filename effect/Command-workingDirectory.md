@@ -1,4 +1,7 @@
-## workingDirectory
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.workingDirectory
 
 Set the working directory that will be used when this command will be run.
 

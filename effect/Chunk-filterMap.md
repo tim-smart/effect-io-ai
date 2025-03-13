@@ -1,4 +1,7 @@
-## filterMap
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.filterMap
 
 Returns a filtered and mapped subset of the elements.
 

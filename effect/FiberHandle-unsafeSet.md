@@ -1,4 +1,7 @@
-## unsafeSet
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.unsafeSet
 
 Set the fiber in a FiberHandle. When the fiber completes, it will be removed from the FiberHandle.
 If a fiber is already running, it will be interrupted unless `options.onlyIfMissing` is set.

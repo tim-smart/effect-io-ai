@@ -1,4 +1,7 @@
-## toWebHandler
+Package: `@effect/platform`<br />
+Module: `HttpApiBuilder`<br />
+
+## HttpApiBuilder.toWebHandler
 
 Construct an http web handler from an `HttpApi` instance.
 

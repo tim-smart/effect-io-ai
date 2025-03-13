@@ -1,4 +1,7 @@
-## broadcaster
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.broadcaster
 
 Get an object that allows broadcasting messages to a given topic type.
 You can provide a custom send timeout to override the one globally defined.

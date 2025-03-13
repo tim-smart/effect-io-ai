@@ -1,4 +1,7 @@
-## add
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.add
 
 Add the given `amount` of `unit`'s to a `DateTime`.
 

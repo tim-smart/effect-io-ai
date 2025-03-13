@@ -1,4 +1,7 @@
-## dropWhile
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.dropWhile
 
 Drops all elements so long as the predicate returns true.
 

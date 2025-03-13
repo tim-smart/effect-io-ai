@@ -1,4 +1,7 @@
-## tap
+Package: `@effect/typeclass`<br />
+Module: `Chainable`<br />
+
+## Chainable.tap
 
 Returns an effect that effectfully "peeks" at the success of this effect.
 

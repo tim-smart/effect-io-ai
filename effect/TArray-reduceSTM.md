@@ -1,4 +1,7 @@
-## reduceSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.reduceSTM
 
 Atomically folds using a transactional function.
 

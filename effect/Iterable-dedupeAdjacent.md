@@ -1,4 +1,7 @@
-## dedupeAdjacent
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.dedupeAdjacent
 
 Deduplicates adjacent elements that are identical.
 

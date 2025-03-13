@@ -1,4 +1,7 @@
-## mergeOutWith
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.mergeOutWith
 
 Returns a new channel which merges a number of channels emitted by this
 channel using the back pressuring merge strategy and uses a given function

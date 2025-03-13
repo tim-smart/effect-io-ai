@@ -1,4 +1,7 @@
-## inheritFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.inheritFiberRefs
 
 Inherits values from all `FiberRef` instances into current fiber.
 

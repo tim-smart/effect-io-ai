@@ -1,4 +1,7 @@
-## runIntoQueue
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runIntoQueue
 
 Enqueues elements of this stream into a queue. Stream failure and ending
 will also be signalled.

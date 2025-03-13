@@ -1,4 +1,7 @@
-## mutateUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.mutateUtc
 
 Modify a `DateTime` by applying a function to a cloned UTC `Date` instance.
 

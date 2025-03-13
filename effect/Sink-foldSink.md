@@ -1,4 +1,7 @@
-## foldSink
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.foldSink
 
 Folds over the result of the sink
 

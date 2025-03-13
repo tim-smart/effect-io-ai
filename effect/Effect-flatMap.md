@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.flatMap
 
 Chains effects to produce new `Effect` instances, useful for combining
 operations that depend on previous results.

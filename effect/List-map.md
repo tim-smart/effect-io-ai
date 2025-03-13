@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.map
 
 Applies the specified mapping function to each element of the list.
 

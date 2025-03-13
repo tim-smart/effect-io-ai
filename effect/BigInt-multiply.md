@@ -1,4 +1,7 @@
-## multiply
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.multiply
 
 Provides a multiplication operation on `bigint`s.
 

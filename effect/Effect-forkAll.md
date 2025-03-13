@@ -1,4 +1,7 @@
-## forkAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.forkAll
 
 Returns an effect that forks all of the specified values, and returns a
 composite fiber that produces a list of their results, in order.

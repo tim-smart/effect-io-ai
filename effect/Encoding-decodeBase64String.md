@@ -1,4 +1,7 @@
-## decodeBase64String
+Package: `effect`<br />
+Module: `Encoding`<br />
+
+## Encoding.decodeBase64String
 
 Decodes a base64 (RFC4648) encoded `string` into a UTF-8 `string`.
 

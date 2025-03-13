@@ -1,4 +1,7 @@
-## isManagedRuntime
+Package: `effect`<br />
+Module: `ManagedRuntime`<br />
+
+## ManagedRuntime.isManagedRuntime
 
 Checks if the provided argument is a `ManagedRuntime`.
 

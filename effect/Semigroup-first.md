@@ -1,4 +1,7 @@
-## first
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.first
 
 Always return the first argument.
 

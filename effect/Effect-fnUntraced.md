@@ -1,4 +1,7 @@
-## fnUntraced
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fnUntraced
 
 Same as `fn`, but allows you to create a function that is not traced, for when performance is critical.
 

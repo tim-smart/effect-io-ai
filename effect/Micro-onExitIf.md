@@ -1,4 +1,7 @@
-## onExitIf
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.onExitIf
 
 When the `Micro` effect is completed, run the given finalizer effect if it
 matches the specified predicate.

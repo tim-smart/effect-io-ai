@@ -1,4 +1,7 @@
-## interruption
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.interruption
 
 Returns `true` if the `Interruption` `RuntimeFlag` is enabled, `false`
 otherwise.

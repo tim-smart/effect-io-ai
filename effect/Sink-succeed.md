@@ -1,4 +1,7 @@
-## succeed
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.succeed
 
 A sink that immediately ends with the specified value.
 

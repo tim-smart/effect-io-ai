@@ -1,4 +1,7 @@
-## done
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.done
 
 A fiber that is done with the specified `Exit` value.
 

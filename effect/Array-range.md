@@ -1,4 +1,7 @@
-## range
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.range
 
 Return a `NonEmptyArray` containing a range of integers, including both endpoints.
 

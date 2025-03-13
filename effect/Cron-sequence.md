@@ -1,4 +1,7 @@
-## sequence
+Package: `effect`<br />
+Module: `Cron`<br />
+
+## Cron.sequence
 
 Returns an `IterableIterator` which yields the sequence of `Date`s that match the `Cron` instance.
 

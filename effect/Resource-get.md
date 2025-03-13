@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Resource`<br />
+
+## Resource.get
 
 Retrieves the current value stored in the cache.
 

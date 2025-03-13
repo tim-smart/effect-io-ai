@@ -1,4 +1,7 @@
-## isSchedule
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.isSchedule
 
 Checks whether a given value is a `Schedule`.
 

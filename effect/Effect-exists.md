@@ -1,4 +1,7 @@
-## exists
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.exists
 
 Determines whether any element of the iterable satisfies the effectual
 predicate.

@@ -1,4 +1,7 @@
-## grouped
+Package: `@effect/sql`<br />
+Module: `SqlResolver`<br />
+
+## SqlResolver.grouped
 
 Create a resolver the can return multiple results for a single request.
 

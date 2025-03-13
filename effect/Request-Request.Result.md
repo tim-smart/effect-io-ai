@@ -1,4 +1,7 @@
-## Request.Result
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.Request.Result
 
 A utility type to extract the result type from a `Request`.
 

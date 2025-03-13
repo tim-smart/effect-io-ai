@@ -1,4 +1,7 @@
-## Cause
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Cause
 
 Represents the full history of a failure within an `Effect`.
 

@@ -1,4 +1,7 @@
-## retry
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.retry
 
 Returns a new polling metric whose poll function will be retried with the
 specified retry policy.

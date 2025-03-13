@@ -1,4 +1,7 @@
-## distributedWithDynamic
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.distributedWithDynamic
 
 More powerful version of `Stream.distributedWith`. This returns a function
 that will produce new queues and corresponding indices. You can also

@@ -1,4 +1,7 @@
-## repeated
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.repeated
 
 Creates a channel which repeatedly runs this channel.
 

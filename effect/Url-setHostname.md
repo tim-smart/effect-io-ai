@@ -1,4 +1,7 @@
-## setHostname
+Package: `@effect/platform`<br />
+Module: `Url`<br />
+
+## Url.setHostname
 
 Updates the domain of the URL without modifying the port.
 

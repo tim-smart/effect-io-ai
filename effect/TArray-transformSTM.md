@@ -1,4 +1,7 @@
-## transformSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.transformSTM
 
 Atomically updates all elements using a transactional effect.
 

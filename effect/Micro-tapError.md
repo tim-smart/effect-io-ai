@@ -1,4 +1,7 @@
-## tapError
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.tapError
 
 Perform a side effect from expected errors of the given `Micro`.
 

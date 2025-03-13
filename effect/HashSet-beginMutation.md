@@ -1,4 +1,7 @@
-## beginMutation
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.beginMutation
 
 Marks the `HashSet` as mutable.
 

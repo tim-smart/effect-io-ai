@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.sync
 
 Constructs a channel that succeeds immediately with the specified lazy value.
 

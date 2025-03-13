@@ -1,4 +1,7 @@
-## Lookup
+Package: `effect`<br />
+Module: `ScopedCache`<br />
+
+## ScopedCache.Lookup
 
 Similar to `Cache.Lookup`, but executes the lookup function within a `Scope`.
 

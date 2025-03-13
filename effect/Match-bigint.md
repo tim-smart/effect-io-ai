@@ -1,4 +1,7 @@
-## bigint
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.bigint
 
 Matches values of type `bigint`.
 

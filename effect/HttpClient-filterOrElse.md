@@ -1,4 +1,7 @@
-## filterOrElse
+Package: `@effect/platform`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.filterOrElse
 
 Filters the result of a response, or runs an alternative effect if the predicate fails.
 

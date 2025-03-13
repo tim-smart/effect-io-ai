@@ -1,4 +1,7 @@
-## ensuring
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.ensuring
 
 Executes the provided finalizer after this stream's finalizers run.
 

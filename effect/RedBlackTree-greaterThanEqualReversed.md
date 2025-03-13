@@ -1,4 +1,7 @@
-## greaterThanEqualReversed
+Package: `effect`<br />
+Module: `RedBlackTree`<br />
+
+## RedBlackTree.greaterThanEqualReversed
 
 Returns an iterator that traverse entries in reverse order with keys greater
 than or equal to the specified key.

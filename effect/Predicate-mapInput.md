@@ -1,4 +1,7 @@
-## mapInput
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.mapInput
 
 Given a `Predicate<A>` returns a `Predicate<B>`
 

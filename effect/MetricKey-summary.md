@@ -1,4 +1,7 @@
-## summary
+Package: `effect`<br />
+Module: `MetricKey`<br />
+
+## MetricKey.summary
 
 Creates a metric key for a summary, with the specified name, maxAge,
 maxSize, error, and quantiles.

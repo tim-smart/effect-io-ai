@@ -1,4 +1,7 @@
-## TaggedClass
+Package: `effect`<br />
+Module: `Request`<br />
+
+## Request.TaggedClass
 
 Provides a Tagged constructor for a Request Class.
 

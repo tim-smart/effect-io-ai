@@ -1,4 +1,7 @@
-## TimeoutException
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.TimeoutException
 
 Represents a checked exception which occurs when a timeout occurs.
 

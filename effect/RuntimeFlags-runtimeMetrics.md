@@ -1,4 +1,7 @@
-## runtimeMetrics
+Package: `effect`<br />
+Module: `RuntimeFlags`<br />
+
+## RuntimeFlags.runtimeMetrics
 
 Returns `true` if the `RuntimeMetrics` `RuntimeFlag` is enabled, `false`
 otherwise.

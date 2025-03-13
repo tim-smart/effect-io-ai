@@ -1,4 +1,7 @@
-## hasProperty
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.hasProperty
 
 Checks whether a value is an `object` containing a specified property key.
 

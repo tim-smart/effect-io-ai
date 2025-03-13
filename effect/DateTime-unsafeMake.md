@@ -1,4 +1,7 @@
-## unsafeMake
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.unsafeMake
 
 Create a `DateTime` from one of the following:
 

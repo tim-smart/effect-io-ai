@@ -1,4 +1,7 @@
-## literal
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.literal
 
 Constructs a config for a literal value.
 

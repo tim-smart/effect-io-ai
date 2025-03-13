@@ -1,4 +1,7 @@
-## Sequential
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Sequential
 
 Represents sequential composition of two `Cause`s.
 

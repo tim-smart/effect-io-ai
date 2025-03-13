@@ -1,4 +1,7 @@
-## uninterruptibleMask
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.uninterruptibleMask
 
 Wrap the given `Micro` effect in an uninterruptible region, preventing the
 effect from being aborted.

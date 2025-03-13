@@ -1,4 +1,7 @@
-## snapshot
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.snapshot
 
 Captures a snapshot of all metrics recorded by the application.
 

@@ -1,4 +1,7 @@
-## batched
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.batched
 
 Creates a batched logger that groups log messages together and processes them
 in intervals.

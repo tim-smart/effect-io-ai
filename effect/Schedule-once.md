@@ -1,4 +1,7 @@
-## once
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.once
 
 A schedule that executes only once and then stops.
 

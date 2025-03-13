@@ -1,4 +1,7 @@
-## Brand.FromConstructor
+Package: `effect`<br />
+Module: `Brand`<br />
+
+## Brand.Brand.FromConstructor
 
 A utility type to extract a branded type from a `Brand.Constructor`.
 

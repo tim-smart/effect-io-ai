@@ -1,4 +1,7 @@
-## tagMetricsScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tagMetricsScoped
 
 Tags metrics within a scope with a specific key-value pair.
 

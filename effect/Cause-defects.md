@@ -1,4 +1,7 @@
-## defects
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.defects
 
 Extracts all unrecoverable defects from a `Cause`.
 

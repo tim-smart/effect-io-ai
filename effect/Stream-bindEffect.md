@@ -1,4 +1,7 @@
-## bindEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.bindEffect
 
 Binds an effectful value in a `do` scope
 

@@ -1,4 +1,7 @@
-## fromIterable
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.fromIterable
 
 Creates a new `TSet` from an iterable collection of values.
 

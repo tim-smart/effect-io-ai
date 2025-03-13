@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `MutableList`<br />
+
+## MutableList.forEach
 
 Executes the specified function `f` for each element in the list.
 

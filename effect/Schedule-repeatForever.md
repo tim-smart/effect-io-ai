@@ -1,4 +1,7 @@
-## repeatForever
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.repeatForever
 
 Alias of `forever`.
 

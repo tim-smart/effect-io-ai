@@ -1,4 +1,7 @@
-## transformLiterals
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.transformLiterals
 
 Creates a new `Schema` which maps between corresponding literal values.
 

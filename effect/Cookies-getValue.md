@@ -1,4 +1,7 @@
-## getValue
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.getValue
 
 Get a cookie from a Cookies object
 

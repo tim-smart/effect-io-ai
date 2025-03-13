@@ -1,4 +1,7 @@
-## getMonoidUnion
+Package: `@effect/typeclass`<br />
+Module: `Record`<br />
+
+## Record.getMonoidUnion
 
 A `Monoid` that creates a union of two records.
 

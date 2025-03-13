@@ -1,4 +1,7 @@
-## colon
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.colon
 
 A document containing a single `:` character.
 

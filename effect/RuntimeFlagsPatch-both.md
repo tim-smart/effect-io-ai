@@ -1,4 +1,7 @@
-## both
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.both
 
 Creates a `RuntimeFlagsPatch` describing application of both the `self` patch
 and `that` patch.

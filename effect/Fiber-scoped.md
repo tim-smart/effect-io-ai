@@ -1,4 +1,7 @@
-## scoped
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.scoped
 
 Converts this fiber into a scoped effect. The fiber is interrupted when the
 scope is closed.

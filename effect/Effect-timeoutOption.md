@@ -1,4 +1,7 @@
-## timeoutOption
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timeoutOption
 
 Gracefully handles timeouts by returning an `Option` that represents either
 the result or a timeout.

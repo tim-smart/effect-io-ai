@@ -1,4 +1,7 @@
-## asSome
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.asSome
 
 This function maps the success value of an `Effect` value to a `Some` value
 in an `Option` value. If the original `Effect` value fails, the returned

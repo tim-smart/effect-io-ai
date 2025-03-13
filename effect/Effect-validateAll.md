@@ -1,4 +1,7 @@
-## validateAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.validateAll
 
 Applies an effectful operation to each element in a collection while
 collecting both successes and failures.

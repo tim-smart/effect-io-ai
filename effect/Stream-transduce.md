@@ -1,4 +1,7 @@
-## transduce
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.transduce
 
 Applies the transducer to the stream and emits its outputs.
 

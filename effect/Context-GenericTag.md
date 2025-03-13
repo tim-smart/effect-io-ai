@@ -1,4 +1,7 @@
-## GenericTag
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.GenericTag
 
 Creates a new `Tag` instance with an optional key parameter.
 

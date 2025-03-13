@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.filter
 
 Filters entries out of a `HashMap` using the specified predicate.
 

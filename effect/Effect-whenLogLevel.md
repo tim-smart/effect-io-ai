@@ -1,4 +1,7 @@
-## whenLogLevel
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.whenLogLevel
 
 Conditionally executes an effect based on the specified log level and currently enabled log level.
 

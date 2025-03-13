@@ -1,4 +1,7 @@
-## exitCode
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.exitCode
 
 Returns the exit code of the command after the process has completed
 execution.

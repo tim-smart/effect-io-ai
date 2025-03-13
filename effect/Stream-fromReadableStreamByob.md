@@ -1,4 +1,7 @@
-## fromReadableStreamByob
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.fromReadableStreamByob
 
 Creates a stream from a `ReadableStreamBYOBReader`.
 

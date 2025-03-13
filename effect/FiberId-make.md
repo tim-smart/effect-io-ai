@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.make
 
 Creates a new `FiberId`.
 

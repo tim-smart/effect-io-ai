@@ -1,4 +1,7 @@
-## check
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.check
 
 Checks the condition, and if it's true, returns unit, otherwise, retries.
 

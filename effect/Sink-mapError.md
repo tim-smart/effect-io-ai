@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mapError
 
 Transforms the errors emitted by this sink using `f`.
 

@@ -1,4 +1,7 @@
-## appendAll
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.appendAll
 
 Concatenates two lists, combining their elements.
 If either list is non-empty, the result is also a non-empty list.

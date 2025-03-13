@@ -1,4 +1,7 @@
-## AvailablePerLine
+Package: `@effect/printer`<br />
+Module: `PageWidth`<br />
+
+## PageWidth.AvailablePerLine
 
 Represents a `PageWidth` setting that informs the layout algorithms to avoid
 exceeding the specified space per line.

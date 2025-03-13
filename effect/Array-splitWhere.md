@@ -1,4 +1,7 @@
-## splitWhere
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.splitWhere
 
 Splits this iterable on the first element that matches this predicate.
 Returns a tuple containing two arrays: the first one is before the match, and the second one is from the match onward.

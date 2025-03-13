@@ -1,4 +1,7 @@
-## isRequestResolver
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.isRequestResolver
 
 Returns `true` if the specified value is a `RequestResolver`, `false` otherwise.
 

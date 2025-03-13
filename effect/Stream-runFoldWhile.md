@@ -1,4 +1,7 @@
-## runFoldWhile
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runFoldWhile
 
 Reduces the elements in the stream to a value of type `S`. Stops the fold
 early when the condition is not fulfilled. Example:

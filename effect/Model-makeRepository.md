@@ -1,4 +1,7 @@
-## makeRepository
+Package: `@effect/sql`<br />
+Module: `Model`<br />
+
+## Model.makeRepository
 
 Create a simple CRUD repository from a model.
 

@@ -1,4 +1,7 @@
-## done
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.done
 
 Transforms a `Take<A, E>` to an `Effect<A, E>`.
 

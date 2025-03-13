@@ -1,4 +1,7 @@
-## insert
+Package: `effect`<br />
+Module: `Trie`<br />
+
+## Trie.insert
 
 Insert a new entry in the `Trie`.
 

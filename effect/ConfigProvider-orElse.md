@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.orElse
 
 Returns a new config provider that preferentially loads configuration data
 from this one, but which will fall back to the specified alternate provider

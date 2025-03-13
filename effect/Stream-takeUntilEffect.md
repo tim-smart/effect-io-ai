@@ -1,4 +1,7 @@
-## takeUntilEffect
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.takeUntilEffect
 
 Takes all elements of the stream until the specified effectual predicate
 evaluates to `true`.

@@ -1,4 +1,7 @@
-## replicateEffect
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.replicateEffect
 
 Performs this effect the specified number of times and collects the
 results.

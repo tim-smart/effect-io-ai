@@ -1,4 +1,7 @@
-## findFirstIndexWhere
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.findFirstIndexWhere
 
 Get the index of the first entry in the array matching a predicate.
 

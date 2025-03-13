@@ -1,4 +1,7 @@
-## getTemplateLiteralCapturingRegExp
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.getTemplateLiteralCapturingRegExp
 
 Generates a regular expression that captures the pattern defined by the given `TemplateLiteral` AST.
 

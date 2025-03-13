@@ -1,4 +1,7 @@
-## fromEffect
+Package: `effect`<br />
+Module: `Take`<br />
+
+## Take.fromEffect
 
 Creates an effect from `Effect<A, E, R>` that does not fail, but succeeds with
 the `Take<A, E>`. Error from stream when pulling is converted to

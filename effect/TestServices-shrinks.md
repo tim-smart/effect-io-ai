@@ -1,4 +1,7 @@
-## shrinks
+Package: `effect`<br />
+Module: `TestServices`<br />
+
+## TestServices.shrinks
 
 The maximum number of shrinkings to minimize large failures.
 

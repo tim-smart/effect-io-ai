@@ -1,4 +1,7 @@
-## inverse
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.inverse
 
 Creates a `RuntimeFlagsPatch` which describes the inverse of the patch
 specified by the provided `RuntimeFlagsPatch`.

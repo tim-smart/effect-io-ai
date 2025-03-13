@@ -1,4 +1,7 @@
-## andThen
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.andThen
 
 Runs two schedules sequentially, merging their outputs.
 

@@ -1,4 +1,7 @@
-## splitLines
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.splitLines
 
 Splits strings on newlines. Handles both Windows newlines (`\r\n`) and UNIX
 newlines (`\n`).

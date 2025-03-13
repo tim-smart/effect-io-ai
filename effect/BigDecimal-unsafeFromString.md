@@ -1,4 +1,7 @@
-## unsafeFromString
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.unsafeFromString
 
 Parses a numerical `string` into a `BigDecimal`.
 

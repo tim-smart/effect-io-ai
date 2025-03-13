@@ -1,4 +1,7 @@
-## duration
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.duration
 
 Alias of `fromDelay`.
 

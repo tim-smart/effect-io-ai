@@ -1,4 +1,7 @@
-## date
+Package: `@effect/cli`<br />
+Module: `Args`<br />
+
+## Args.date
 
 Creates a date argument.
 

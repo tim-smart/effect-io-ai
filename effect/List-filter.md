@@ -1,4 +1,7 @@
-## filter
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.filter
 
 Filters a list using the specified predicate.
 

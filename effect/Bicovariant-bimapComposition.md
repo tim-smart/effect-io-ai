@@ -1,4 +1,7 @@
-## bimapComposition
+Package: `@effect/typeclass`<br />
+Module: `Bicovariant`<br />
+
+## Bicovariant.bimapComposition
 
 Returns a default ternary `bimap` composition.
 

@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.as
 
 Replaces this sink's result with the provided value.
 

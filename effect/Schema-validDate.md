@@ -1,4 +1,7 @@
-## validDate
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.validDate
 
 Defines a filter that specifically rejects invalid dates, such as `new
 Date("Invalid Date")`. This filter ensures that only properly formatted and

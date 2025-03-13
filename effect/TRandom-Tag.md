@@ -1,4 +1,7 @@
-## Tag
+Package: `effect`<br />
+Module: `TRandom`<br />
+
+## TRandom.Tag
 
 The service tag used to access `TRandom` in the environment of an effect.
 

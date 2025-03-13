@@ -1,4 +1,7 @@
-## environment
+Package: `effect`<br />
+Module: `Differ`<br />
+
+## Differ.environment
 
 Constructs a differ that knows how to diff `Env` values.
 

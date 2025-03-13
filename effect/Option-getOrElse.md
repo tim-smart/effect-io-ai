@@ -1,4 +1,7 @@
-## getOrElse
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.getOrElse
 
 Returns the value contained in the `Option` if it is `Some`, otherwise
 evaluates and returns the result of `onNone`.

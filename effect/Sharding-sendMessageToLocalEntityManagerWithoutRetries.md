@@ -1,4 +1,7 @@
-## sendMessageToLocalEntityManagerWithoutRetries
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.sendMessageToLocalEntityManagerWithoutRetries
 
 Sends a raw message to the local entity manager without performing reties.
 Those are up to the caller.

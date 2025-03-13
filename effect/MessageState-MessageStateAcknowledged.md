@@ -1,4 +1,7 @@
-## MessageStateAcknowledged
+Package: `@effect/cluster`<br />
+Module: `MessageState`<br />
+
+## MessageState.MessageStateAcknowledged
 
 A message state given to just acknowledged messages.
 This state tells the sender that the receiver has received the message and will eventually process it later.

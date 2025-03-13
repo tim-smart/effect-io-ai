@@ -1,4 +1,7 @@
-## zipRight
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.zipRight
 
 Like `Sink.zip` but keeps only the result from `that` sink.
 

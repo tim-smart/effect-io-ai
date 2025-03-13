@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.flatMap
 
 Chains over the values of the `HashSet` using the specified function.
 

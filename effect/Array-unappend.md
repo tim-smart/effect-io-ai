@@ -1,4 +1,7 @@
-## unappend
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.unappend
 
 Return a tuple containing a copy of the `NonEmptyReadonlyArray` without its last element, and that last element.
 

@@ -1,4 +1,7 @@
-## retainIf
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.retainIf
 
 Retains entries in a `TSet` that satisfy the specified predicate and returns the removed entries
 (or `void` if `discard = true`).

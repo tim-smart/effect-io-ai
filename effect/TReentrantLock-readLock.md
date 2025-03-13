@@ -1,4 +1,7 @@
-## readLock
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.readLock
 
 Obtains a read lock in a scoped context.
 

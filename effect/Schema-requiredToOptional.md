@@ -1,4 +1,7 @@
-## requiredToOptional
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.requiredToOptional
 
 Converts an optional property to a required one through a transformation `Type -> Option`.
 

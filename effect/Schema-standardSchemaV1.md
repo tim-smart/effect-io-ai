@@ -1,4 +1,7 @@
-## standardSchemaV1
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.standardSchemaV1
 
 Returns a "Standard Schema" object conforming to the [Standard Schema
 v1](https://standardschema.dev/) specification.

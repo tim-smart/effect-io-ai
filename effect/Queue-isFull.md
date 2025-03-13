@@ -1,4 +1,7 @@
-## isFull
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.isFull
 
 Returns `true` if the `Queue` contains at least one element, `false`
 otherwise.

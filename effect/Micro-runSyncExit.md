@@ -1,4 +1,7 @@
-## runSyncExit
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.runSyncExit
 
 Attempt to execute the `Micro` effect synchronously and return the `MicroExit`.
 

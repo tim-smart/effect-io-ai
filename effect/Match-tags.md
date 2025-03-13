@@ -1,4 +1,7 @@
-## tags
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.tags
 
 Matches values based on their `_tag` field, mapping each tag to a
 corresponding handler.

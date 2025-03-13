@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `PoisonPill`<br />
+
+## PoisonPill.make
 
 Constructs a new PosionPill
 

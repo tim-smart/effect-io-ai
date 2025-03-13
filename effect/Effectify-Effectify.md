@@ -1,4 +1,7 @@
-## Effectify
+Package: `@effect/platform`<br />
+Module: `Effectify`<br />
+
+## Effectify.Effectify
 
 Converts a callback-based function to a function that returns an `Effect`.
 

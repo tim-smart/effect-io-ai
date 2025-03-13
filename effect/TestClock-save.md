@@ -1,4 +1,7 @@
-## save
+Package: `effect`<br />
+Module: `TestClock`<br />
+
+## TestClock.save
 
 Accesses a `TestClock` instance in the context and saves the clock
 state in an effect which, when run, will restore the `TestClock` to the

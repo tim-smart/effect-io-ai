@@ -1,4 +1,7 @@
-## poll
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.poll
 
 Tentatively observes the fiber, but returns immediately if it is not
 already done.

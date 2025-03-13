@@ -1,4 +1,7 @@
-## repeatWhile
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.repeatWhile
 
 Repeats this `STM` effect while its result satisfies the specified
 predicate.

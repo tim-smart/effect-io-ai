@@ -1,4 +1,7 @@
-## bufferChunks
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.bufferChunks
 
 Allows a faster producer to progress independently of a slower consumer by
 buffering up to `capacity` chunks in a queue.

@@ -1,4 +1,7 @@
-## mapEntries
+Package: `effect`<br />
+Module: `Record`<br />
+
+## Record.mapEntries
 
 Maps entries of a `ReadonlyRecord` using the provided function, allowing modification of both keys and corresponding values.
 

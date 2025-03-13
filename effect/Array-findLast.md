@@ -1,4 +1,7 @@
-## findLast
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.findLast
 
 Finds the last element in an iterable collection that satisfies the given predicate or refinement.
 Returns an `Option` containing the found element, or `Option.none` if no element matches.

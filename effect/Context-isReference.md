@@ -1,4 +1,7 @@
-## isReference
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.isReference
 
 Checks if the provided argument is a `Reference`.
 

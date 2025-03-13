@@ -1,4 +1,7 @@
-## traversePartitionMap
+Package: `@effect/typeclass`<br />
+Module: `TraversableFilterable`<br />
+
+## TraversableFilterable.traversePartitionMap
 
 Returns a default binary `traversePartitionMap` implementation.
 

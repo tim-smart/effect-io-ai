@@ -1,4 +1,7 @@
-## runIntoQueueScoped
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runIntoQueueScoped
 
 Like `Stream.runIntoQueue`, but provides the result as a scoped effect
 to allow for scope composition.

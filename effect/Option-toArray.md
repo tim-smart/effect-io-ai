@@ -1,4 +1,7 @@
-## toArray
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.toArray
 
 Converts an `Option` into an `Array`.
 If the input is `None`, an empty array is returned.

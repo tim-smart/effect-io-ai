@@ -1,4 +1,7 @@
-## reduceEffect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.reduceEffect
 
 Reduces an `Iterable<Effect<A, E, R>>` to a single effect.
 

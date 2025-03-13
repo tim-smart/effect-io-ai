@@ -1,4 +1,7 @@
-## annotate
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.annotate
 
 Adds an annotation to a `Doc`. The annotation can then be used by the rendering
 algorithm to, for example, add color to certain parts of the output.

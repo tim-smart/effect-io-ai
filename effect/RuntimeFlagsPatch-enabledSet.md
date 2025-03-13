@@ -1,4 +1,7 @@
-## enabledSet
+Package: `effect`<br />
+Module: `RuntimeFlagsPatch`<br />
+
+## RuntimeFlagsPatch.enabledSet
 
 Returns a `ReadonlySet<number>` containing the `RuntimeFlags` described as
 enabled by the specified `RuntimeFlagsPatch`.

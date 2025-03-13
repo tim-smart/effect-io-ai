@@ -1,4 +1,7 @@
-## suspend
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.suspend
 
 Returns a lazily constructed stream.
 

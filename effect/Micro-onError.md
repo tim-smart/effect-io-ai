@@ -1,4 +1,7 @@
-## onError
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.onError
 
 When the `Micro` effect fails, run the given finalizer effect with the
 `MicroCause` of the executed effect.

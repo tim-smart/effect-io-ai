@@ -1,4 +1,7 @@
-## bindAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.bindAll
 
 `bindAll` combines `all` with `bind`. It is useful
 when you want to concurrently run multiple effects and then combine their

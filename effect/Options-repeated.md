@@ -1,4 +1,7 @@
-## repeated
+Package: `@effect/cli`<br />
+Module: `Options`<br />
+
+## Options.repeated
 
 Indicates that the specified command-line option can be repeated `0` or more
 times.

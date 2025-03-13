@@ -1,4 +1,7 @@
-## group
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.group
 
 Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s.
 

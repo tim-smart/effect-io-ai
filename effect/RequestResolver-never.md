@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.never
 
 A data source that never executes requests.
 

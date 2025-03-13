@@ -1,4 +1,7 @@
-## map
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.map
 
 Transforms the success value of the `Micro` effect with the specified
 function.

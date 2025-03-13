@@ -1,4 +1,7 @@
-## never
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.never
 
 An effect that that runs indefinitely and never produces any result. The
 moral equivalent of `while(true) {}`, only without the wasted CPU cycles.

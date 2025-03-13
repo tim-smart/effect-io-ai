@@ -1,4 +1,7 @@
-## sequential
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.sequential
 
 Combines two `Cause`s sequentially.
 

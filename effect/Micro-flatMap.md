@@ -1,4 +1,7 @@
-## flatMap
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.flatMap
 
 Map the success value of this `Micro` effect to another `Micro` effect, then
 flatten the result.

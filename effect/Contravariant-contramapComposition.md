@@ -1,4 +1,7 @@
-## contramapComposition
+Package: `@effect/typeclass`<br />
+Module: `Contravariant`<br />
+
+## Contravariant.contramapComposition
 
 Composing two contravariant functors yields a Covariant functor.
 

@@ -1,4 +1,7 @@
-## absurd
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.absurd
 
 The `absurd` function is a stub for cases where a value of type `never` is encountered in your code,
 meaning that it should be impossible for this code to be executed.

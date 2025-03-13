@@ -1,4 +1,7 @@
-## ConfigProvider
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.ConfigProvider
 
 A ConfigProvider is a service that provides configuration given a description
 of the structure of that configuration.

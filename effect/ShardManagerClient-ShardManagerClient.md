@@ -1,4 +1,7 @@
-## ShardManagerClient
+Package: `@effect/cluster`<br />
+Module: `ShardManagerClient`<br />
+
+## ShardManagerClient.ShardManagerClient
 
 ShardManagerClient provides the methods exposed by the ShardManager and called by the Pod.
 

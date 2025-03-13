@@ -1,4 +1,7 @@
-## histogram
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.histogram
 
 Represents a Histogram metric that records observations in specified value boundaries.
 Histogram metrics are useful for measuring the distribution of values within a range.

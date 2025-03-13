@@ -1,4 +1,7 @@
-## taggedWithLabels
+Package: `effect`<br />
+Module: `Metric`<br />
+
+## Metric.taggedWithLabels
 
 Returns a new metric, which is identical in every way to this one, except
 the specified tags have been added to the tags of this metric.

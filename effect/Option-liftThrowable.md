@@ -1,4 +1,7 @@
-## liftThrowable
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.liftThrowable
 
 Lifts a function that throws exceptions into a function that returns an
 `Option`.

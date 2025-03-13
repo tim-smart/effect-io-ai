@@ -1,4 +1,7 @@
-## sliding
+Package: `effect`<br />
+Module: `Queue`<br />
+
+## Queue.sliding
 
 Makes a new bounded `Queue` with the sliding strategy.
 

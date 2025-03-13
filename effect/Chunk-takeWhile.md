@@ -1,4 +1,7 @@
-## takeWhile
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.takeWhile
 
 Takes all elements so long as the predicate returns true.
 

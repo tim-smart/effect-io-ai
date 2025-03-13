@@ -1,4 +1,7 @@
-## die
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.die
 
 Creates a `Die` cause from an unexpected error.
 

@@ -1,4 +1,7 @@
-## isNonEmpty
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.isNonEmpty
 
 Checks whether the queue is not empty.
 

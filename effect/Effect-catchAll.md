@@ -1,4 +1,7 @@
-## catchAll
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.catchAll
 
 Handles all errors in an effect by providing a fallback effect.
 

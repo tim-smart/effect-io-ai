@@ -1,4 +1,7 @@
-## pipeTo
+Package: `@effect/platform`<br />
+Module: `Command`<br />
+
+## Command.pipeTo
 
 Pipe one command to another command from left to right.
 

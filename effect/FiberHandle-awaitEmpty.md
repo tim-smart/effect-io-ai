@@ -1,4 +1,7 @@
-## awaitEmpty
+Package: `effect`<br />
+Module: `FiberHandle`<br />
+
+## FiberHandle.awaitEmpty
 
 Wait for the fiber in the FiberHandle to complete.
 

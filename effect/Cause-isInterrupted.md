@@ -1,4 +1,7 @@
-## isInterrupted
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isInterrupted
 
 Checks if a `Cause` contains an interruption.
 

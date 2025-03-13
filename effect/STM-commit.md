@@ -1,4 +1,7 @@
-## commit
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.commit
 
 Commits this transaction atomically.
 

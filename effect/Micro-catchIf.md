@@ -1,4 +1,7 @@
-## catchIf
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.catchIf
 
 Catch any expected errors that match the specified predicate.
 

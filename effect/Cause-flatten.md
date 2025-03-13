@@ -1,4 +1,7 @@
-## flatten
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.flatten
 
 Flattens a nested `Cause` structure.
 

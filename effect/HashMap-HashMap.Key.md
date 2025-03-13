@@ -1,4 +1,7 @@
-## HashMap.Key
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.HashMap.Key
 
 This type-level utility extracts the key type `K` from a `HashMap<K, V>` type.
 

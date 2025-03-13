@@ -1,4 +1,7 @@
-## constUndefined
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.constUndefined
 
 A thunk that returns always `undefined`.
 

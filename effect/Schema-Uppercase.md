@@ -1,4 +1,7 @@
-## Uppercase
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Uppercase
 
 This schema converts a string to uppercase.
 

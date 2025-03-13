@@ -1,4 +1,7 @@
-## schedule
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.schedule
 
 Repeats an effect based on a specified schedule.
 

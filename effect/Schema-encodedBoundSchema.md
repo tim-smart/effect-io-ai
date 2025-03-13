@@ -1,4 +1,7 @@
-## encodedBoundSchema
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.encodedBoundSchema
 
 The `encodedBoundSchema` function is similar to `encodedSchema` but preserves
 the refinements up to the first transformation point in the original schema.

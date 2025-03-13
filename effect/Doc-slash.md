@@ -1,4 +1,7 @@
-## slash
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.slash
 
 A document containing a single `/` character.
 

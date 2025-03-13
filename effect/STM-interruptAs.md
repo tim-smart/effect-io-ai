@@ -1,4 +1,7 @@
-## interruptAs
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.interruptAs
 
 Interrupts the fiber running the effect with the specified `FiberId`.
 

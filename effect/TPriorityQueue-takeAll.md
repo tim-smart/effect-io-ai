@@ -1,4 +1,7 @@
-## takeAll
+Package: `effect`<br />
+Module: `TPriorityQueue`<br />
+
+## TPriorityQueue.takeAll
 
 Takes all values from the queue.
 

@@ -1,4 +1,7 @@
-## service
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.service
 
 Constructs a layer that accesses and returns the specified service from the
 context.

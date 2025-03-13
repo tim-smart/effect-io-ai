@@ -1,4 +1,7 @@
-## unsafeDivide
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.unsafeDivide
 
 Provides a division operation on `number`s.
 

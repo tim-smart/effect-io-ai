@@ -1,4 +1,7 @@
-## someSTM
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.someSTM
 
 Determine if the array contains a value satisfying a transactional
 predicate.

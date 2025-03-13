@@ -1,4 +1,7 @@
-## getEquivalence
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.getEquivalence
 
 Creates an equivalence relation for arrays.
 

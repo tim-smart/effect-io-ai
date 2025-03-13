@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.as
 
 Maps the `Success` value of the specified exit to the provided constant
 value.

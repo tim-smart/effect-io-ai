@@ -1,4 +1,7 @@
-## find
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.find
 
 Searches a `Cause` using a partial function to extract information.
 

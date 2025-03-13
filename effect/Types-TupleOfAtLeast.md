@@ -1,4 +1,7 @@
-## TupleOfAtLeast
+Package: `effect`<br />
+Module: `Types`<br />
+
+## Types.TupleOfAtLeast
 
 Represents a tuple with at least `N` elements of type `T`.
 

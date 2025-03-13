@@ -1,4 +1,7 @@
-## makeLatch
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.makeLatch
 
 Creates a new `Latch`, starting in the specified state.
 

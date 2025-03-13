@@ -1,4 +1,7 @@
-## driver
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.driver
 
 Creates a driver to manually control the execution of a schedule.
 

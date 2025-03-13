@@ -1,4 +1,7 @@
-## passthrough
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.passthrough
 
 Transforms a schedule to pass through its inputs as outputs.
 

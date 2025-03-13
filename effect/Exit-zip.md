@@ -1,4 +1,7 @@
-## zip
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.zip
 
 Sequentially zips the this result with the specified result or else returns
 the failed `Cause<E | E2>`.

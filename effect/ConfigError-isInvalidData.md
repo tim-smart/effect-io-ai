@@ -1,4 +1,7 @@
-## isInvalidData
+Package: `effect`<br />
+Module: `ConfigError`<br />
+
+## ConfigError.isInvalidData
 
 Returns `true` if the specified `ConfigError` is an `InvalidData`, `false`
 otherwise.

@@ -1,4 +1,7 @@
-## endMutation
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.endMutation
 
 Marks the `HashSet` as immutable.
 

@@ -1,4 +1,7 @@
-## orDie
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.orDie
 
 Converts an effect's failure into a fiber termination, removing the error
 from the effect's type.

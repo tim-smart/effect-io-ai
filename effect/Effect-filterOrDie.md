@@ -1,4 +1,7 @@
-## filterOrDie
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.filterOrDie
 
 Filters an effect, dying with a custom defect if the predicate fails.
 

@@ -1,4 +1,7 @@
-## transplant
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.transplant
 
 Transplants specified effects so that when those effects fork other
 effects, the forked effects will be governed by the scope of the fiber that

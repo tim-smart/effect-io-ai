@@ -1,4 +1,7 @@
-## mutable
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.mutable
 
 Creates a new AST with shallow mutability applied to its properties.
 

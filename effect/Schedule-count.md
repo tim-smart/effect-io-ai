@@ -1,4 +1,7 @@
-## count
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.count
 
 A schedule that recurs indefinitely, counting the number of recurrences.
 

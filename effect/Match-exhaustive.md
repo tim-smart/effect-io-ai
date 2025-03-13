@@ -1,4 +1,7 @@
-## exhaustive
+Package: `effect`<br />
+Module: `Match`<br />
+
+## Match.exhaustive
 
 The `Match.exhaustive` method finalizes the pattern matching process by
 ensuring that all possible cases are accounted for. If any case is missing,

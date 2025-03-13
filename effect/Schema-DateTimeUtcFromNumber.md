@@ -1,4 +1,7 @@
-## DateTimeUtcFromNumber
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateTimeUtcFromNumber
 
 Defines a schema that attempts to convert a `number` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
 

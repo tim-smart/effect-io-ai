@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.forEach
 
 Applies the specified function to the entries of the `HashMap`.
 

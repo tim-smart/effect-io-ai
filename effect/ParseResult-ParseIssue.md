@@ -1,4 +1,7 @@
-## ParseIssue
+Package: `effect`<br />
+Module: `ParseResult`<br />
+
+## ParseResult.ParseIssue
 
 `ParseIssue` is a type that represents the different types of errors that can occur when decoding/encoding a value.
 

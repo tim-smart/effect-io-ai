@@ -1,4 +1,7 @@
-## isRightDone
+Package: `effect`<br />
+Module: `MergeState`<br />
+
+## MergeState.isRightDone
 
 Returns `true` if the specified `MergeState` is a `RightDone`, `false`
 otherwise.

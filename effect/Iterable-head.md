@@ -1,4 +1,7 @@
-## head
+Package: `effect`<br />
+Module: `Iterable`<br />
+
+## Iterable.head
 
 Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
 

@@ -1,4 +1,7 @@
-## orElseIfEmptyChunk
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.orElseIfEmptyChunk
 
 Produces the specified chunk if this stream is empty.
 

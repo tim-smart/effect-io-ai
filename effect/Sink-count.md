@@ -1,4 +1,7 @@
-## count
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.count
 
 A sink that counts the number of elements fed to it.
 

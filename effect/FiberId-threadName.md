@@ -1,4 +1,7 @@
-## threadName
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.threadName
 
 Creates a string representing the name of the current thread of execution
 represented by the specified `FiberId`.

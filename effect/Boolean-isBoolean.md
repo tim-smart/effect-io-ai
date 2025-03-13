@@ -1,4 +1,7 @@
-## isBoolean
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.isBoolean
 
 Tests if a value is a `boolean`.
 

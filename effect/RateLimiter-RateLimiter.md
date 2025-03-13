@@ -1,4 +1,7 @@
-## RateLimiter
+Package: `effect`<br />
+Module: `RateLimiter`<br />
+
+## RateLimiter.RateLimiter
 
 Limits the number of calls to a resource to a maximum amount in some interval.
 

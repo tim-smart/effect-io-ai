@@ -1,4 +1,7 @@
-## formatIsoDateUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.formatIsoDateUtc
 
 Format a `DateTime` as a UTC ISO date string.
 

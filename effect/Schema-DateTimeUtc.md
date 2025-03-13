@@ -1,4 +1,7 @@
-## DateTimeUtc
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.DateTimeUtc
 
 Defines a schema that attempts to convert a `string` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
 

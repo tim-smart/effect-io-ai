@@ -1,4 +1,7 @@
-## parts
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.parts
 
 Converts a `Duration` to its parts.
 

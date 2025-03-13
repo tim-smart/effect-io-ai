@@ -1,4 +1,7 @@
-## Empty
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.Empty
 
 Represents a lack of errors within a `Cause`.
 

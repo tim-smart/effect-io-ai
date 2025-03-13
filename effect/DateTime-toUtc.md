@@ -1,4 +1,7 @@
-## toUtc
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.toUtc
 
 For a `DateTime` returns a new `DateTime.Utc`.
 

@@ -1,4 +1,7 @@
-## NonNegativeInt
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.NonNegativeInt
 
 A non-negative integer. +Infinity is excluded.
 

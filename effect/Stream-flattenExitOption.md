@@ -1,4 +1,7 @@
-## flattenExitOption
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.flattenExitOption
 
 Unwraps `Exit` values that also signify end-of-stream by failing with `None`.
 

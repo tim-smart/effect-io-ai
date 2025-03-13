@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `RequestResolver`<br />
+
+## RequestResolver.make
 
 Constructs a data source with the specified identifier and method to run
 requests.

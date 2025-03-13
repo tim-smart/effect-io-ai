@@ -1,4 +1,7 @@
-## unsafeSetAll
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.unsafeSetAll
 
 Add multiple cookies to a Cookies object, throwing an error if invalid
 

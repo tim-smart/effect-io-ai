@@ -1,4 +1,7 @@
-## Tag
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Tag
 
 Creates a unique tag for a dependency, embedding the service's methods as
 static properties.

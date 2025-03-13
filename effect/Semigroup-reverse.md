@@ -1,4 +1,7 @@
-## reverse
+Package: `@effect/typeclass`<br />
+Module: `Semigroup`<br />
+
+## Semigroup.reverse
 
 The dual of a `Semigroup`, obtained by flipping the arguments of `combine`.
 

@@ -1,4 +1,7 @@
-## smart
+Package: `@effect/printer`<br />
+Module: `Layout`<br />
+
+## Layout.smart
 
 A layout algorithm with more look ahead than `pretty`, which will introduce
 line breaks into a document earlier if the content does not, or will not, fit

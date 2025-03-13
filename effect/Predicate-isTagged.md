@@ -1,4 +1,7 @@
-## isTagged
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isTagged
 
 Tests if a value is an `object` with a property `_tag` that matches the given tag.
 

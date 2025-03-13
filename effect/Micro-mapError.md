@@ -1,4 +1,7 @@
-## mapError
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.mapError
 
 Transform any expected errors of the given `Micro` effect.
 

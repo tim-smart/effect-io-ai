@@ -1,4 +1,7 @@
-## pipeTo
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.pipeTo
 
 Returns a new channel that pipes the output of this channel into the
 specified channel. The returned channel has the input type of this channel,

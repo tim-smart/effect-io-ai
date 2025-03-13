@@ -1,4 +1,7 @@
-## unregister
+Package: `@effect/cluster`<br />
+Module: `Sharding`<br />
+
+## Sharding.unregister
 
 Notify the shard manager that shards must be unassigned from this pod.
 

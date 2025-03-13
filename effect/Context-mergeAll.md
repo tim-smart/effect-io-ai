@@ -1,4 +1,7 @@
-## mergeAll
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.mergeAll
 
 Merges any number of `Context`s, returning a new `Context` containing the services of all.
 

@@ -1,4 +1,7 @@
-## exists
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.exists
 
 Determines whether any element of the `Iterable[A]` satisfies the effectual
 predicate `f`.

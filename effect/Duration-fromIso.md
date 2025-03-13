@@ -1,4 +1,7 @@
-## fromIso
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.fromIso
 
 Parses an ISO8601 duration string into a `Duration`.
 

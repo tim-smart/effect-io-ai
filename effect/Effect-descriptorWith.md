@@ -1,4 +1,7 @@
-## descriptorWith
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.descriptorWith
 
 Constructs an effect based on information about the current `Fiber`.
 

@@ -1,4 +1,7 @@
-## imapComposition
+Package: `@effect/typeclass`<br />
+Module: `Invariant`<br />
+
+## Invariant.imapComposition
 
 Returns a default ternary `imap` composition.
 

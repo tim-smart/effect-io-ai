@@ -1,4 +1,7 @@
-## sync
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.sync
 
 Lazily constructs a layer from the specified value.
 

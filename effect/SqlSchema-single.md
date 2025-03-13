@@ -1,4 +1,7 @@
-## single
+Package: `@effect/sql`<br />
+Module: `SqlSchema`<br />
+
+## SqlSchema.single
 
 Run a sql query with a request schema and a result schema and return the first result.
 

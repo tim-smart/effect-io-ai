@@ -1,4 +1,7 @@
-## Pod.Encoded
+Package: `@effect/cluster`<br />
+Module: `Pod`<br />
+
+## Pod.Pod.Encoded
 
 This is the shape that a Pod is represented over the wire.
 

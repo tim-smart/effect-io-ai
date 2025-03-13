@@ -1,4 +1,7 @@
-## unsafeCoerce
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.unsafeCoerce
 
 Casts the result to the specified type.
 

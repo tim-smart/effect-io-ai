@@ -1,4 +1,7 @@
-## reload
+Package: `effect`<br />
+Module: `Reloadable`<br />
+
+## Reloadable.reload
 
 Reloads the specified service.
 

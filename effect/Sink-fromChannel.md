@@ -1,4 +1,7 @@
-## fromChannel
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.fromChannel
 
 Creates a sink from a `Channel`.
 

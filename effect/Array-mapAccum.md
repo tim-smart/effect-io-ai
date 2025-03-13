@@ -1,4 +1,7 @@
-## mapAccum
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.mapAccum
 
 Statefully maps over the chunk, producing new elements of type `B`.
 

@@ -1,4 +1,7 @@
-## modify
+Package: `effect`<br />
+Module: `HashMap`<br />
+
+## HashMap.modify
 
 Updates the value of the specified key within the `HashMap` if it exists.
 

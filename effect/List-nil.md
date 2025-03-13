@@ -1,4 +1,7 @@
-## nil
+Package: `effect`<br />
+Module: `List`<br />
+
+## List.nil
 
 Constructs a new empty `List<A>`.
 

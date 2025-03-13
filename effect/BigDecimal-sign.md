@@ -1,4 +1,7 @@
-## sign
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.sign
 
 Determines the sign of a given `BigDecimal`.
 

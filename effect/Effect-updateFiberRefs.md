@@ -1,4 +1,7 @@
-## updateFiberRefs
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.updateFiberRefs
 
 Updates the `FiberRef` values for the fiber running this effect using the
 specified function.

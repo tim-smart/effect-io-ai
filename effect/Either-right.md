@@ -1,4 +1,7 @@
-## right
+Package: `effect`<br />
+Module: `Either`<br />
+
+## Either.right
 
 Constructs a new `Either` holding a `Right` value. This usually represents a successful value due to the right bias
 of this structure.

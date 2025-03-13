@@ -1,4 +1,7 @@
-## replaceOption
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.replaceOption
 
 Replaces an element in an array with the given value, returning an option of the updated array.
 

@@ -1,4 +1,7 @@
-## unAnnotate
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.unAnnotate
 
 Removes all annotations from a document.
 

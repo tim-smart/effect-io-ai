@@ -1,4 +1,7 @@
-## modifyNonEmptyLast
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.modifyNonEmptyLast
 
 Apply a function to the last element, creating a new `NonEmptyReadonlyArray`.
 

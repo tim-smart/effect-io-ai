@@ -1,4 +1,7 @@
-## orElse
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.orElse
 
 Returns a new channel that will perform the operations of this one, until
 failure, and then it will switch over to the operations of the specified

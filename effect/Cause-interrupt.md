@@ -1,4 +1,7 @@
-## interrupt
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.interrupt
 
 Creates an `Interrupt` cause from a `FiberId`.
 

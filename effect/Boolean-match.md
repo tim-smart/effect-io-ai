@@ -1,4 +1,7 @@
-## match
+Package: `effect`<br />
+Module: `Boolean`<br />
+
+## Boolean.match
 
 This function returns the result of either of the given functions depending on the value of the boolean parameter.
 It is useful when you have to run one of two functions depending on the boolean value.

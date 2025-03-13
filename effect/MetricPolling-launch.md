@@ -1,4 +1,7 @@
-## launch
+Package: `effect`<br />
+Module: `MetricPolling`<br />
+
+## MetricPolling.launch
 
 Returns an effect that will launch the polling metric in a background
 fiber, using the specified schedule.

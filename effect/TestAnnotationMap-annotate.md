@@ -1,4 +1,7 @@
-## annotate
+Package: `effect`<br />
+Module: `TestAnnotationMap`<br />
+
+## TestAnnotationMap.annotate
 
 Appends the specified annotation to the annotation map.
 

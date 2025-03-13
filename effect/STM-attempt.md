@@ -1,4 +1,7 @@
-## attempt
+Package: `effect`<br />
+Module: `STM`<br />
+
+## STM.attempt
 
 Creates an `STM` value from a partial (but pure) function.
 

@@ -1,4 +1,7 @@
-## round
+Package: `effect`<br />
+Module: `Number`<br />
+
+## Number.round
 
 Returns the number rounded with the given precision.
 

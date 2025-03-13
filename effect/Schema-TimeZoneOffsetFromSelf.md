@@ -1,4 +1,7 @@
-## TimeZoneOffsetFromSelf
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.TimeZoneOffsetFromSelf
 
 Describes a schema that represents a `TimeZone.Offset` instance.
 

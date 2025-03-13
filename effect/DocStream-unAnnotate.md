@@ -1,4 +1,7 @@
-## unAnnotate
+Package: `@effect/printer`<br />
+Module: `DocStream`<br />
+
+## DocStream.unAnnotate
 
 Remove all annotations from a document.
 

@@ -1,4 +1,7 @@
-## fail
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.fail
 
 Creates an `Effect` that represents a recoverable error.
 

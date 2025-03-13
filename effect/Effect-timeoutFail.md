@@ -1,4 +1,7 @@
-## timeoutFail
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.timeoutFail
 
 Specifies a custom error to be produced when a timeout occurs.
 

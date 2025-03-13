@@ -1,4 +1,7 @@
-## mapLeftover
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.mapLeftover
 
 Transforms the leftovers emitted by this sink using `f`.
 

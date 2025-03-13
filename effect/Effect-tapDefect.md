@@ -1,4 +1,7 @@
-## tapDefect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.tapDefect
 
 Inspect severe errors or defects (non-recoverable failures) in an effect.
 

@@ -1,4 +1,7 @@
-## none
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.none
 
 A logger that does nothing in response to logging events.
 

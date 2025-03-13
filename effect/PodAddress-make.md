@@ -1,4 +1,7 @@
-## make
+Package: `@effect/cluster`<br />
+Module: `PodAddress`<br />
+
+## PodAddress.make
 
 Constructs a PodAddress from an host and a port.
 

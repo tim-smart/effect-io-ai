@@ -1,4 +1,7 @@
-## Effect
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Effect
 
 The `Effect` interface defines a value that describes a workflow or job,
 which can succeed or fail.

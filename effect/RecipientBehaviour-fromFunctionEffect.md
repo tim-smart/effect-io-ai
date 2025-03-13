@@ -1,4 +1,7 @@
-## fromFunctionEffect
+Package: `@effect/cluster`<br />
+Module: `RecipientBehaviour`<br />
+
+## RecipientBehaviour.fromFunctionEffect
 
 This is the simplest behaviour you can have.
 You provide a function that given the entityId and the message, it will immediatly process it.

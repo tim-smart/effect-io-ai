@@ -1,4 +1,7 @@
-## Stream
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.Stream
 
 A `Stream<A, E, R>` is a description of a program that, when evaluated, may
 emit zero or more values of type `A`, may fail with errors of type `E`, and

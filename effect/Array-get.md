@@ -1,4 +1,7 @@
-## get
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.get
 
 This function provides a safe way to read a value at a particular index from a `ReadonlyArray`.
 

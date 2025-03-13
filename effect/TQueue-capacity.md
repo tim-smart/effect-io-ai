@@ -1,4 +1,7 @@
-## capacity
+Package: `effect`<br />
+Module: `TQueue`<br />
+
+## TQueue.capacity
 
 Returns the number of elements the queue can hold.
 

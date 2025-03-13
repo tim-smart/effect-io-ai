@@ -1,4 +1,7 @@
-## runSum
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.runSum
 
 Runs the stream to a sink which sums elements, provided they are Numeric.
 

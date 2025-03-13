@@ -1,4 +1,7 @@
-## unprepend
+Package: `effect`<br />
+Module: `Array`<br />
+
+## Array.unprepend
 
 Return a tuple containing the first element, and a new `Array` of the remaining elements, if any.
 

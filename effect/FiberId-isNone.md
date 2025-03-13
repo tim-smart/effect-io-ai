@@ -1,4 +1,7 @@
-## isNone
+Package: `effect`<br />
+Module: `FiberId`<br />
+
+## FiberId.isNone
 
 Returns `true` if the `FiberId` is a `None`, `false` otherwise.
 

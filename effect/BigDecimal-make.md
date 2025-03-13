@@ -1,4 +1,7 @@
-## make
+Package: `effect`<br />
+Module: `BigDecimal`<br />
+
+## BigDecimal.make
 
 Creates a `BigDecimal` from a `bigint` value and a scale.
 

@@ -1,4 +1,7 @@
-## forEach
+Package: `effect`<br />
+Module: `TSet`<br />
+
+## TSet.forEach
 
 Atomically performs transactional-effect for each element in set.
 

@@ -1,4 +1,7 @@
-## fromAcquire
+Package: `effect`<br />
+Module: `ScopedRef`<br />
+
+## ScopedRef.fromAcquire
 
 Creates a new `ScopedRef` from an effect that resourcefully produces a
 value.

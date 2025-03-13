@@ -1,4 +1,7 @@
-## as
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.as
 
 Transforms a schedule to always produce a constant output.
 

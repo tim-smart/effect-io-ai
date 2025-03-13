@@ -1,4 +1,7 @@
-## headOption
+Package: `effect`<br />
+Module: `TArray`<br />
+
+## TArray.headOption
 
 The first entry of the array, if it exists.
 

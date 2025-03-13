@@ -1,4 +1,7 @@
-## chunksOf
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.chunksOf
 
 Groups elements in chunks of up to `n` elements.
 

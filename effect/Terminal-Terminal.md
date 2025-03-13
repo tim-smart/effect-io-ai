@@ -1,4 +1,7 @@
-## Terminal
+Package: `@effect/platform`<br />
+Module: `Terminal`<br />
+
+## Terminal.Terminal
 
 A `Terminal` represents a command-line interface which can read input from a
 user and display messages to a user.

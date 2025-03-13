@@ -1,4 +1,7 @@
-## optionFromOptional
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.optionFromOptional
 
 Converts an effect that may fail with a `NoSuchElementException` into an
 effect that succeeds with an `Option`.

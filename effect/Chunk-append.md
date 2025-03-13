@@ -1,4 +1,7 @@
-## append
+Package: `effect`<br />
+Module: `Chunk`<br />
+
+## Chunk.append
 
 Appends the specified element to the end of the `Chunk`.
 

@@ -1,4 +1,7 @@
-## joinAs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.joinAs
 
 Joins this collection of fiber refs to the specified collection, as the
 specified fiber id. This will perform diffing and merging to ensure

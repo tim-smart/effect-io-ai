@@ -1,4 +1,7 @@
-## promise
+Package: `effect`<br />
+Module: `Micro`<br />
+
+## Micro.promise
 
 Wrap a `Promise` into a `Micro` effect.
 

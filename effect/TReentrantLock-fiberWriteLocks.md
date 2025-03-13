@@ -1,4 +1,7 @@
-## fiberWriteLocks
+Package: `effect`<br />
+Module: `TReentrantLock`<br />
+
+## TReentrantLock.fiberWriteLocks
 
 Retrieves the number of acquired write locks for this fiber.
 

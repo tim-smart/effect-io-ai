@@ -1,4 +1,7 @@
-## pretty
+Package: `effect`<br />
+Module: `Fiber`<br />
+
+## Fiber.pretty
 
 Pretty-prints a `RuntimeFiber`.
 

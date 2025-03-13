@@ -1,4 +1,7 @@
-## whenRef
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.whenRef
 
 Executes an effect conditionally based on the value of a `Ref` that satisfies
 a predicate.

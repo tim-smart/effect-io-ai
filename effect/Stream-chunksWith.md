@@ -1,4 +1,7 @@
-## chunksWith
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.chunksWith
 
 Performs the specified stream transformation with the chunk structure of
 the stream exposed.

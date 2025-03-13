@@ -1,4 +1,7 @@
-## makeSpanScoped
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.makeSpanScoped
 
 Create a new span for tracing, and automatically close it when the Scope
 finalizes.

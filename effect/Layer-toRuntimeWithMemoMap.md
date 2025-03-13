@@ -1,4 +1,7 @@
-## toRuntimeWithMemoMap
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.toRuntimeWithMemoMap
 
 Converts a layer that requires no services into a scoped runtime, which can
 be used to execute effects.

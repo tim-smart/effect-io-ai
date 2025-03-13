@@ -1,4 +1,7 @@
-## forkAs
+Package: `effect`<br />
+Module: `FiberRefs`<br />
+
+## FiberRefs.forkAs
 
 Forks this collection of fiber refs as the specified child fiber id. This
 will potentially modify the value of the fiber refs, as determined by the
