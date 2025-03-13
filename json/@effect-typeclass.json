@@ -11,7 +11,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Alternative<F extends TypeLambda> extends SemiAlternative<F>, Coproduct<F> {}"
+    "signature": "export interface Alternative<F extends TypeLambda> extends SemiAlternative<F>, Coproduct<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Alternative.ts#L12"
   },
   {
     "_tag": "Function",
@@ -26,7 +27,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const getMonoid: <F extends TypeLambda>(F: Applicative<F>) => <A, R, O, E>(M: Monoid<A>) => Monoid<Kind<F, R, O, E, A>>"
+    "signature": "declare const getMonoid: <F extends TypeLambda>(F: Applicative<F>) => <A, R, O, E>(M: Monoid<A>) => Monoid<Kind<F, R, O, E, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Applicative.ts#L25"
   },
   {
     "_tag": "Interface",
@@ -40,7 +42,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Applicative<F extends TypeLambda> extends SemiApplicative<F>, Product<F> {}"
+    "signature": "export interface Applicative<F extends TypeLambda> extends SemiApplicative<F>, Product<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Applicative.ts#L15"
   },
   {
     "_tag": "Function",
@@ -55,7 +58,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const bimapComposition: <F extends TypeLambda, G extends TypeLambda>(CovariantF: Covariant<F>, BicovariantG: Bicovariant<G>) => <FR, FO, FE, GR, GO, E1, A, E2, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, E1, A>>, f: (e: E1) => E2, g: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, E2, B>>"
+    "signature": "declare const bimapComposition: <F extends TypeLambda, G extends TypeLambda>(CovariantF: Covariant<F>, BicovariantG: Bicovariant<G>) => <FR, FO, FE, GR, GO, E1, A, E2, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, E1, A>>, f: (e: E1) => E2, g: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, E2, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bicovariant.ts#L31"
   },
   {
     "_tag": "Function",
@@ -70,7 +74,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const mapLeft: <F extends TypeLambda>(F: Bicovariant<F>) => { <E, G>(f: (e: E) => G): <R, O, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, G, A>; <R, O, E, A, G>(self: Kind<F, R, O, E, A>, f: (e: E) => G): Kind<F, R, O, G, A>; }"
+    "signature": "declare const mapLeft: <F extends TypeLambda>(F: Bicovariant<F>) => { <E, G>(f: (e: E) => G): <R, O, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, G, A>; <R, O, E, A, G>(self: Kind<F, R, O, E, A>, f: (e: E) => G): Kind<F, R, O, G, A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bicovariant.ts#L46"
   },
   {
     "_tag": "Function",
@@ -85,7 +90,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const map: <F extends TypeLambda>(F: Bicovariant<F>) => Covariant<F>[\"map\"]"
+    "signature": "declare const map: <F extends TypeLambda>(F: Bicovariant<F>) => Covariant<F>[\"map\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bicovariant.ts#L62"
   },
   {
     "_tag": "Interface",
@@ -99,7 +105,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Bicovariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly bimap: {\n    <E1, E2, A, B>(\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): <R, O>(self: Kind<F, R, O, E1, A>) => Kind<F, R, O, E2, B>\n    <R, O, E1, A, E2, B>(\n      self: Kind<F, R, O, E1, A>,\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): Kind<F, R, O, E2, B>\n  }\n}"
+    "signature": "export interface Bicovariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly bimap: {\n    <E1, E2, A, B>(\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): <R, O>(self: Kind<F, R, O, E1, A>) => Kind<F, R, O, E2, B>\n    <R, O, E1, A, E2, B>(\n      self: Kind<F, R, O, E1, A>,\n      f: (e: E1) => E2,\n      g: (a: A) => B\n    ): Kind<F, R, O, E2, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bicovariant.ts#L12"
   },
   {
     "_tag": "Function",
@@ -114,7 +121,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const min: <A>(B: Bounded<A>) => Monoid<A>"
+    "signature": "declare const min: <A>(B: Bounded<A>) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L35"
   },
   {
     "_tag": "Function",
@@ -129,7 +137,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const max: <A>(B: Bounded<A>) => Monoid<A>"
+    "signature": "declare const max: <A>(B: Bounded<A>) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L43"
   },
   {
     "_tag": "Function",
@@ -144,7 +153,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "predicates",
-    "signature": "declare const between: <A>(B: Bounded<A>) => (a: A) => boolean"
+    "signature": "declare const between: <A>(B: Bounded<A>) => (a: A) => boolean",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L51"
   },
   {
     "_tag": "Function",
@@ -159,7 +169,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "utils",
-    "signature": "declare const clamp: <A>(B: Bounded<A>) => (a: A) => A"
+    "signature": "declare const clamp: <A>(B: Bounded<A>) => (a: A) => A",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L60"
   },
   {
     "_tag": "Function",
@@ -174,7 +185,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "utils",
-    "signature": "declare const reverse: <A>(B: Bounded<A>) => Bounded<A>"
+    "signature": "declare const reverse: <A>(B: Bounded<A>) => Bounded<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L69"
   },
   {
     "_tag": "Interface",
@@ -188,7 +200,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Bounded<A> {\n  readonly compare: Order<A>\n  readonly maxBound: A\n  readonly minBound: A\n}"
+    "signature": "export interface Bounded<A> {\n  readonly compare: Order<A>\n  readonly maxBound: A\n  readonly minBound: A\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L15"
   },
   {
     "_tag": "Interface",
@@ -202,7 +215,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type lambdas",
-    "signature": "export interface BoundedTypeLambda extends TypeLambda {\n  readonly type: Bounded<this[\"Target\"]>\n}"
+    "signature": "export interface BoundedTypeLambda extends TypeLambda {\n  readonly type: Bounded<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Bounded.ts#L25"
   },
   {
     "_tag": "Function",
@@ -217,7 +231,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combining",
-    "signature": "declare const zipLeft: <F extends TypeLambda>(F: Chainable<F>) => { <R2, O2, E2, _>(that: Kind<F, R2, O2, E2, _>): <R1, O1, E1, A>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }"
+    "signature": "declare const zipLeft: <F extends TypeLambda>(F: Chainable<F>) => { <R2, O2, E2, _>(that: Kind<F, R2, O2, E2, _>): <R1, O1, E1, A>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Chainable.ts#L23"
   },
   {
     "_tag": "Function",
@@ -232,7 +247,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const tap: <F extends TypeLambda>(F: Chainable<F>) => { <A, R2, O2, E2, _>(f: (a: A) => Kind<F, R2, O2, E2, _>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, f: (a: A) => Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }"
+    "signature": "declare const tap: <F extends TypeLambda>(F: Chainable<F>) => { <A, R2, O2, E2, _>(f: (a: A) => Kind<F, R2, O2, E2, _>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, f: (a: A) => Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Chainable.ts#L42"
   },
   {
     "_tag": "Function",
@@ -246,7 +262,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "do notation",
-    "signature": "declare const bind: <F extends TypeLambda>(F: Chainable<F>) => { <N extends string, A extends object, R2, O2, E2, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R1, O1, E1, A extends object, N extends string, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }"
+    "signature": "declare const bind: <F extends TypeLambda>(F: Chainable<F>) => { <N extends string, A extends object, R2, O2, E2, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R1, O1, E1, A extends object, N extends string, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Chainable.ts#L63"
   },
   {
     "_tag": "Interface",
@@ -260,7 +277,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Chainable<F extends TypeLambda> extends FlatMap<F>, Covariant<F> {}"
+    "signature": "export interface Chainable<F extends TypeLambda> extends FlatMap<F>, Covariant<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Chainable.ts#L14"
   },
   {
     "_tag": "Function",
@@ -275,7 +293,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const contramapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Contravariant<F>, G: Contravariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>"
+    "signature": "declare const contramapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Contravariant<F>, G: Contravariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Contravariant.ts#L26"
   },
   {
     "_tag": "Function",
@@ -290,7 +309,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const imap: <F extends TypeLambda>(contramap: <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (b: B) => A) => Kind<F, R, O, E, B>) => Invariant<F>[\"imap\"]"
+    "signature": "declare const imap: <F extends TypeLambda>(contramap: <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (b: B) => A) => Kind<F, R, O, E, B>) => Invariant<F>[\"imap\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Contravariant.ts#L40"
   },
   {
     "_tag": "Interface",
@@ -304,7 +324,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Contravariant<F extends TypeLambda> extends Invariant<F> {\n  readonly contramap: {\n    <B, A>(f: (b: B) => A): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (b: B) => A): Kind<F, R, O, E, B>\n  }\n}"
+    "signature": "export interface Contravariant<F extends TypeLambda> extends Invariant<F> {\n  readonly contramap: {\n    <B, A>(f: (b: B) => A): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (b: B) => A): Kind<F, R, O, E, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Contravariant.ts#L12"
   },
   {
     "_tag": "Function",
@@ -318,7 +339,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const getMonoid: <F extends TypeLambda>(F: Coproduct<F>) => <R, O, E, A>() => Monoid<Kind<F, R, O, E, A>>"
+    "signature": "declare const getMonoid: <F extends TypeLambda>(F: Coproduct<F>) => <R, O, E, A>() => Monoid<Kind<F, R, O, E, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Coproduct.ts#L24"
   },
   {
     "_tag": "Interface",
@@ -332,7 +354,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Coproduct<F extends TypeLambda> extends SemiCoproduct<F> {\n  readonly zero: <A>() => Kind<F, unknown, never, never, A>\n\n  readonly coproductAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}"
+    "signature": "export interface Coproduct<F extends TypeLambda> extends SemiCoproduct<F> {\n  readonly zero: <A>() => Kind<F, unknown, never, never, A>\n\n  readonly coproductAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Coproduct.ts#L13"
   },
   {
     "_tag": "Function",
@@ -347,7 +370,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const mapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Covariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>"
+    "signature": "declare const mapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Covariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => B) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L24"
   },
   {
     "_tag": "Function",
@@ -362,7 +386,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const imap: <F extends TypeLambda>(map: <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B) => Kind<F, R, O, E, B>) => Invariant<F>[\"imap\"]"
+    "signature": "declare const imap: <F extends TypeLambda>(map: <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B) => Kind<F, R, O, E, B>) => Invariant<F>[\"imap\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L38"
   },
   {
     "_tag": "Function",
@@ -376,7 +401,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "mapping",
-    "signature": "declare const flap: <F extends TypeLambda>(F: Covariant<F>) => { <R, O, E, A, B>(self: Kind<F, R, O, E, (a: A) => B>): (a: A) => Kind<F, R, O, E, B>; <A, R, O, E, B>(a: A, self: Kind<F, R, O, E, (a: A) => B>): Kind<F, R, O, E, B>; }"
+    "signature": "declare const flap: <F extends TypeLambda>(F: Covariant<F>) => { <R, O, E, A, B>(self: Kind<F, R, O, E, (a: A) => B>): (a: A) => Kind<F, R, O, E, B>; <A, R, O, E, B>(a: A, self: Kind<F, R, O, E, (a: A) => B>): Kind<F, R, O, E, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L46"
   },
   {
     "_tag": "Function",
@@ -390,7 +416,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "mapping",
-    "signature": "declare const as: <F extends TypeLambda>(F: Covariant<F>) => { <B>(b: B): <R, O, E, _>(self: Kind<F, R, O, E, _>) => Kind<F, R, O, E, B>; <R, O, E, _, B>(self: Kind<F, R, O, E, _>, b: B): Kind<F, R, O, E, B>; }"
+    "signature": "declare const as: <F extends TypeLambda>(F: Covariant<F>) => { <B>(b: B): <R, O, E, _>(self: Kind<F, R, O, E, _>) => Kind<F, R, O, E, B>; <R, O, E, _, B>(self: Kind<F, R, O, E, _>, b: B): Kind<F, R, O, E, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L59"
   },
   {
     "_tag": "Function",
@@ -404,7 +431,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "mapping",
-    "signature": "declare const asVoid: <F extends TypeLambda>(F: Covariant<F>) => <R, O, E, _>(self: Kind<F, R, O, E, _>) => Kind<F, R, O, E, void>"
+    "signature": "declare const asVoid: <F extends TypeLambda>(F: Covariant<F>) => <R, O, E, _>(self: Kind<F, R, O, E, _>) => Kind<F, R, O, E, void>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L72"
   },
   {
     "_tag": "Interface",
@@ -418,7 +446,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Covariant<F extends TypeLambda> extends Invariant<F> {\n  readonly map: {\n    <A, B>(f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B): Kind<F, R, O, E, B>\n  }\n}"
+    "signature": "export interface Covariant<F extends TypeLambda> extends Invariant<F> {\n  readonly map: {\n    <A, B>(f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B): Kind<F, R, O, E, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -432,7 +461,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Of: of_.Of<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L109"
   },
   {
     "_tag": "Constant",
@@ -446,7 +476,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -460,7 +491,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L126"
   },
   {
     "_tag": "Constant",
@@ -474,7 +506,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -488,7 +521,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -502,7 +536,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L152"
   },
   {
     "_tag": "Constant",
@@ -516,7 +551,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Filterable: filterable.Filterable<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Filterable: filterable.Filterable<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L162"
   },
   {
     "_tag": "Constant",
@@ -530,7 +566,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Traversable: traversable.Traversable<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Traversable: traversable.Traversable<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -544,7 +581,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -558,7 +596,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L189"
   },
   {
     "_tag": "Constant",
@@ -572,7 +611,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Product: product_.Product<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L202"
   },
   {
     "_tag": "Constant",
@@ -586,7 +626,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Applicative: applicative.Applicative<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Applicative: applicative.Applicative<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L219"
   },
   {
     "_tag": "Constant",
@@ -600,7 +641,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L232"
   },
   {
     "_tag": "Constant",
@@ -614,7 +656,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Foldable: foldable.Foldable<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const Foldable: foldable.Foldable<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L243"
   },
   {
     "_tag": "Constant",
@@ -628,7 +671,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const TraversableFilterable: traversableFilterable.TraversableFilterable<ArrayInstances.ReadonlyArrayTypeLambda>"
+    "signature": "declare const TraversableFilterable: traversableFilterable.TraversableFilterable<ArrayInstances.ReadonlyArrayTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L251"
   },
   {
     "_tag": "Constant",
@@ -642,7 +686,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemigroup: <A>() => Semigroup<ReadonlyArray<A>>"
+    "signature": "declare const getSemigroup: <A>() => Semigroup<ReadonlyArray<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L262"
   },
   {
     "_tag": "Constant",
@@ -656,7 +701,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getMonoid: <A>() => Monoid<ReadonlyArray<A>>"
+    "signature": "declare const getMonoid: <A>() => Monoid<ReadonlyArray<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Array.ts#L268"
   },
   {
     "_tag": "Constant",
@@ -673,7 +719,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupSum: semigroup.Semigroup<bigint>"
+    "signature": "declare const SemigroupSum: semigroup.Semigroup<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -688,7 +735,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMultiply: semigroup.Semigroup<bigint>"
+    "signature": "declare const SemigroupMultiply: semigroup.Semigroup<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -705,7 +753,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMin: semigroup.Semigroup<bigint>"
+    "signature": "declare const SemigroupMin: semigroup.Semigroup<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -722,7 +771,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMax: semigroup.Semigroup<bigint>"
+    "signature": "declare const SemigroupMax: semigroup.Semigroup<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -739,7 +789,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidSum: monoid.Monoid<bigint>"
+    "signature": "declare const MonoidSum: monoid.Monoid<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L99"
   },
   {
     "_tag": "Constant",
@@ -756,7 +807,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMultiply: monoid.Monoid<bigint>"
+    "signature": "declare const MonoidMultiply: monoid.Monoid<bigint>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -773,7 +825,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupEvery: semigroup.Semigroup<boolean>"
+    "signature": "declare const SemigroupEvery: semigroup.Semigroup<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -790,7 +843,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupSome: semigroup.Semigroup<boolean>"
+    "signature": "declare const SemigroupSome: semigroup.Semigroup<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -807,7 +861,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupXor: semigroup.Semigroup<boolean>"
+    "signature": "declare const SemigroupXor: semigroup.Semigroup<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L88"
   },
   {
     "_tag": "Constant",
@@ -824,7 +879,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupEqv: semigroup.Semigroup<boolean>"
+    "signature": "declare const SemigroupEqv: semigroup.Semigroup<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -839,7 +895,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidEvery: monoid.Monoid<boolean>"
+    "signature": "declare const MonoidEvery: monoid.Monoid<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -854,7 +911,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidSome: monoid.Monoid<boolean>"
+    "signature": "declare const MonoidSome: monoid.Monoid<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -869,7 +927,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidXor: monoid.Monoid<boolean>"
+    "signature": "declare const MonoidXor: monoid.Monoid<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L137"
   },
   {
     "_tag": "Constant",
@@ -884,7 +943,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidEqv: monoid.Monoid<boolean>"
+    "signature": "declare const MonoidEqv: monoid.Monoid<boolean>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -898,7 +958,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Bounded: bounded.Bounded<Duration.Duration>"
+    "signature": "declare const Bounded: bounded.Bounded<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -912,7 +973,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupSum: semigroup.Semigroup<Duration.Duration>"
+    "signature": "declare const SemigroupSum: semigroup.Semigroup<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -926,7 +988,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidSum: monoid.Monoid<Duration.Duration>"
+    "signature": "declare const MonoidSum: monoid.Monoid<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -940,7 +1003,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMax: semigroup.Semigroup<Duration.Duration>"
+    "signature": "declare const SemigroupMax: semigroup.Semigroup<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -954,7 +1018,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMax: monoid.Monoid<Duration.Duration>"
+    "signature": "declare const MonoidMax: monoid.Monoid<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -968,7 +1033,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMin: semigroup.Semigroup<Duration.Duration>"
+    "signature": "declare const SemigroupMin: semigroup.Semigroup<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L53"
   },
   {
     "_tag": "Constant",
@@ -982,7 +1048,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMin: monoid.Monoid<Duration.Duration>"
+    "signature": "declare const MonoidMin: monoid.Monoid<Duration.Duration>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Duration.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -996,7 +1063,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<Effect.EffectTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -1010,7 +1078,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Effect.EffectTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -1024,7 +1093,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<Effect.EffectTypeLambda>"
+    "signature": "declare const Of: of_.Of<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -1038,7 +1108,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<Effect.EffectTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L76"
   },
   {
     "_tag": "Constant",
@@ -1052,7 +1123,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<Effect.EffectTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -1066,7 +1138,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<Effect.EffectTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L94"
   },
   {
     "_tag": "Constant",
@@ -1080,7 +1153,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<Effect.EffectTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L104"
   },
   {
     "_tag": "Function",
@@ -1094,7 +1168,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getSemiProduct: (options?: ConcurrencyOptions) => semiProduct.SemiProduct<Effect.EffectTypeLambda>"
+    "signature": "declare const getSemiProduct: (options?: ConcurrencyOptions) => semiProduct.SemiProduct<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L115"
   },
   {
     "_tag": "Function",
@@ -1108,7 +1183,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getProduct: (options?: ConcurrencyOptions) => product_.Product<Effect.EffectTypeLambda>"
+    "signature": "declare const getProduct: (options?: ConcurrencyOptions) => product_.Product<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L125"
   },
   {
     "_tag": "Function",
@@ -1122,7 +1198,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getSemiApplicative: (options?: ConcurrencyOptions) => semiApplicative.SemiApplicative<Effect.EffectTypeLambda>"
+    "signature": "declare const getSemiApplicative: (options?: ConcurrencyOptions) => semiApplicative.SemiApplicative<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L137"
   },
   {
     "_tag": "Function",
@@ -1136,7 +1213,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getApplicative: (options?: ConcurrencyOptions) => applicative.Applicative<Effect.EffectTypeLambda>"
+    "signature": "declare const getApplicative: (options?: ConcurrencyOptions) => applicative.Applicative<Effect.EffectTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L150"
   },
   {
     "_tag": "TypeAlias",
@@ -1150,7 +1228,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n  readonly batching?: boolean | \"inherit\" | undefined\n}"
+    "signature": "type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n  readonly batching?: boolean | \"inherit\" | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Effect.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -1164,7 +1243,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Bicovariant: bicovariant.Bicovariant<Either.EitherTypeLambda>"
+    "signature": "declare const Bicovariant: bicovariant.Bicovariant<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -1178,7 +1258,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<Either.EitherTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L142"
   },
   {
     "_tag": "Constant",
@@ -1192,7 +1273,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Either.EitherTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L151"
   },
   {
     "_tag": "Constant",
@@ -1206,7 +1288,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<Either.EitherTypeLambda>"
+    "signature": "declare const Of: of_.Of<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L159"
   },
   {
     "_tag": "Constant",
@@ -1220,7 +1303,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<Either.EitherTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L167"
   },
   {
     "_tag": "Constant",
@@ -1234,7 +1318,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<Either.EitherTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L177"
   },
   {
     "_tag": "Constant",
@@ -1248,7 +1333,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<Either.EitherTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L185"
   },
   {
     "_tag": "Constant",
@@ -1262,7 +1348,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<Either.EitherTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L195"
   },
   {
     "_tag": "Constant",
@@ -1276,7 +1363,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Either.EitherTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L206"
   },
   {
     "_tag": "Constant",
@@ -1290,7 +1378,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<Either.EitherTypeLambda>"
+    "signature": "declare const Product: product_.Product<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L216"
   },
   {
     "_tag": "Constant",
@@ -1304,7 +1393,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<Either.EitherTypeLambda>"
+    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L228"
   },
   {
     "_tag": "Constant",
@@ -1318,7 +1408,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Applicative: applicative.Applicative<Either.EitherTypeLambda>"
+    "signature": "declare const Applicative: applicative.Applicative<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L239"
   },
   {
     "_tag": "Constant",
@@ -1332,7 +1423,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Either.EitherTypeLambda>"
+    "signature": "declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L252"
   },
   {
     "_tag": "Constant",
@@ -1346,7 +1438,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiAlternative: semiAlternative.SemiAlternative<Either.EitherTypeLambda>"
+    "signature": "declare const SemiAlternative: semiAlternative.SemiAlternative<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L262"
   },
   {
     "_tag": "Constant",
@@ -1360,7 +1453,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Foldable: foldable.Foldable<Either.EitherTypeLambda>"
+    "signature": "declare const Foldable: foldable.Foldable<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L273"
   },
   {
     "_tag": "Constant",
@@ -1374,7 +1468,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Traversable: traversable.Traversable<Either.EitherTypeLambda>"
+    "signature": "declare const Traversable: traversable.Traversable<Either.EitherTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Either.ts#L284"
   },
   {
     "_tag": "Constant",
@@ -1388,7 +1483,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<IdentityTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L82"
   },
   {
     "_tag": "Constant",
@@ -1402,7 +1498,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<IdentityTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L91"
   },
   {
     "_tag": "Constant",
@@ -1416,7 +1513,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<IdentityTypeLambda>"
+    "signature": "declare const Of: of_.Of<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L99"
   },
   {
     "_tag": "Constant",
@@ -1430,7 +1528,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<IdentityTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -1444,7 +1543,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<IdentityTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -1458,7 +1558,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<IdentityTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L125"
   },
   {
     "_tag": "Constant",
@@ -1472,7 +1573,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<IdentityTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L135"
   },
   {
     "_tag": "Constant",
@@ -1486,7 +1588,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<IdentityTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L146"
   },
   {
     "_tag": "Constant",
@@ -1500,7 +1603,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<IdentityTypeLambda>"
+    "signature": "declare const Product: product_.Product<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L156"
   },
   {
     "_tag": "Constant",
@@ -1514,7 +1618,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<IdentityTypeLambda>"
+    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L168"
   },
   {
     "_tag": "Constant",
@@ -1528,7 +1633,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Applicative: applicative.Applicative<IdentityTypeLambda>"
+    "signature": "declare const Applicative: applicative.Applicative<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -1542,7 +1648,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Foldable: foldable.Foldable<IdentityTypeLambda>"
+    "signature": "declare const Foldable: foldable.Foldable<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L215"
   },
   {
     "_tag": "Constant",
@@ -1556,7 +1663,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Traversable: traversable.Traversable<IdentityTypeLambda>"
+    "signature": "declare const Traversable: traversable.Traversable<IdentityTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L223"
   },
   {
     "_tag": "Function",
@@ -1570,7 +1678,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemiCoproduct: <A>(S: Semigroup<A>) => semiCoproduct.SemiCoproduct<IdentityTypeLambdaFix<A>>"
+    "signature": "declare const getSemiCoproduct: <A>(S: Semigroup<A>) => semiCoproduct.SemiCoproduct<IdentityTypeLambdaFix<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L192"
   },
   {
     "_tag": "Function",
@@ -1584,7 +1693,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemiAlternative: <A>(S: Semigroup<A>) => semiAlternative.SemiAlternative<IdentityTypeLambdaFix<A>>"
+    "signature": "declare const getSemiAlternative: <A>(S: Semigroup<A>) => semiAlternative.SemiAlternative<IdentityTypeLambdaFix<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L204"
   },
   {
     "_tag": "Interface",
@@ -1598,7 +1708,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type lambdas",
-    "signature": "export interface IdentityTypeLambda extends TypeLambda {\n  readonly type: Identity<this[\"Target\"]>\n}"
+    "signature": "export interface IdentityTypeLambda extends TypeLambda {\n  readonly type: Identity<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L66"
   },
   {
     "_tag": "Interface",
@@ -1612,7 +1723,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type lambdas",
-    "signature": "export interface IdentityTypeLambdaFix<A> extends TypeLambda {\n  readonly type: Identity<A>\n}"
+    "signature": "export interface IdentityTypeLambdaFix<A> extends TypeLambda {\n  readonly type: Identity<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L74"
   },
   {
     "_tag": "TypeAlias",
@@ -1626,7 +1738,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "models",
-    "signature": "type A = A"
+    "signature": "type A = A",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Identity.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -1640,7 +1753,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<Micro.MicroTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -1654,7 +1768,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Micro.MicroTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -1668,7 +1783,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<Micro.MicroTypeLambda>"
+    "signature": "declare const Of: of_.Of<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -1682,7 +1798,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<Micro.MicroTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -1696,7 +1813,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<Micro.MicroTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L85"
   },
   {
     "_tag": "Constant",
@@ -1710,7 +1828,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<Micro.MicroTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L93"
   },
   {
     "_tag": "Constant",
@@ -1724,7 +1843,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<Micro.MicroTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L103"
   },
   {
     "_tag": "Function",
@@ -1738,7 +1858,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getSemiProduct: (options?: ConcurrencyOptions) => semiProduct.SemiProduct<Micro.MicroTypeLambda>"
+    "signature": "declare const getSemiProduct: (options?: ConcurrencyOptions) => semiProduct.SemiProduct<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L114"
   },
   {
     "_tag": "Function",
@@ -1752,7 +1873,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getProduct: (options?: ConcurrencyOptions) => product_.Product<Micro.MicroTypeLambda>"
+    "signature": "declare const getProduct: (options?: ConcurrencyOptions) => product_.Product<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L124"
   },
   {
     "_tag": "Function",
@@ -1766,7 +1888,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getSemiApplicative: (options?: ConcurrencyOptions) => semiApplicative.SemiApplicative<Micro.MicroTypeLambda>"
+    "signature": "declare const getSemiApplicative: (options?: ConcurrencyOptions) => semiApplicative.SemiApplicative<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L136"
   },
   {
     "_tag": "Function",
@@ -1780,7 +1903,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "declare const getApplicative: (options?: ConcurrencyOptions) => applicative.Applicative<Micro.MicroTypeLambda>"
+    "signature": "declare const getApplicative: (options?: ConcurrencyOptions) => applicative.Applicative<Micro.MicroTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L149"
   },
   {
     "_tag": "TypeAlias",
@@ -1794,7 +1918,8 @@
     "examples": [],
     "since": "0.24.40",
     "category": "instances",
-    "signature": "type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n}"
+    "signature": "type ConcurrencyOptions = {\n  readonly concurrency?: Concurrency | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Micro.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -1808,7 +1933,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Bounded: bounded.Bounded<number>"
+    "signature": "declare const Bounded: bounded.Bounded<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -1825,7 +1951,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupSum: semigroup.Semigroup<number>"
+    "signature": "declare const SemigroupSum: semigroup.Semigroup<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -1842,7 +1969,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMultiply: semigroup.Semigroup<number>"
+    "signature": "declare const SemigroupMultiply: semigroup.Semigroup<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -1859,7 +1987,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMin: semigroup.Semigroup<number>"
+    "signature": "declare const SemigroupMin: semigroup.Semigroup<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -1876,7 +2005,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemigroupMax: semigroup.Semigroup<number>"
+    "signature": "declare const SemigroupMax: semigroup.Semigroup<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -1893,7 +2023,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidSum: monoid.Monoid<number>"
+    "signature": "declare const MonoidSum: monoid.Monoid<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L115"
   },
   {
     "_tag": "Constant",
@@ -1910,7 +2041,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMultiply: monoid.Monoid<number>"
+    "signature": "declare const MonoidMultiply: monoid.Monoid<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -1927,7 +2059,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMin: monoid.Monoid<number>"
+    "signature": "declare const MonoidMin: monoid.Monoid<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -1944,7 +2077,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const MonoidMax: monoid.Monoid<number>"
+    "signature": "declare const MonoidMax: monoid.Monoid<number>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L172"
   },
   {
     "_tag": "Constant",
@@ -1958,7 +2092,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<Option.OptionTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -1972,7 +2107,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Option.OptionTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -1986,7 +2122,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<Option.OptionTypeLambda>"
+    "signature": "declare const Of: of_.Of<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L98"
   },
   {
     "_tag": "Constant",
@@ -2000,7 +2137,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Pointed: pointed.Pointed<Option.OptionTypeLambda>"
+    "signature": "declare const Pointed: pointed.Pointed<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L106"
   },
   {
     "_tag": "Constant",
@@ -2014,7 +2152,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const FlatMap: flatMap_.FlatMap<Option.OptionTypeLambda>"
+    "signature": "declare const FlatMap: flatMap_.FlatMap<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -2028,7 +2167,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Chainable: chainable.Chainable<Option.OptionTypeLambda>"
+    "signature": "declare const Chainable: chainable.Chainable<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -2042,7 +2182,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monad: monad.Monad<Option.OptionTypeLambda>"
+    "signature": "declare const Monad: monad.Monad<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -2056,7 +2197,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Option.OptionTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L145"
   },
   {
     "_tag": "Constant",
@@ -2070,7 +2212,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<Option.OptionTypeLambda>"
+    "signature": "declare const Product: product_.Product<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L155"
   },
   {
     "_tag": "Constant",
@@ -2084,7 +2227,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<Option.OptionTypeLambda>"
+    "signature": "declare const SemiApplicative: semiApplicative.SemiApplicative<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L167"
   },
   {
     "_tag": "Constant",
@@ -2098,7 +2242,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Applicative: applicative.Applicative<Option.OptionTypeLambda>"
+    "signature": "declare const Applicative: applicative.Applicative<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L178"
   },
   {
     "_tag": "Constant",
@@ -2112,7 +2257,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Option.OptionTypeLambda>"
+    "signature": "declare const SemiCoproduct: semiCoproduct.SemiCoproduct<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L191"
   },
   {
     "_tag": "Constant",
@@ -2126,7 +2272,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Coproduct: coproduct_.Coproduct<Option.OptionTypeLambda>"
+    "signature": "declare const Coproduct: coproduct_.Coproduct<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L201"
   },
   {
     "_tag": "Constant",
@@ -2140,7 +2287,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiAlternative: semiAlternative.SemiAlternative<Option.OptionTypeLambda>"
+    "signature": "declare const SemiAlternative: semiAlternative.SemiAlternative<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L213"
   },
   {
     "_tag": "Constant",
@@ -2154,7 +2302,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Alternative: alternative.Alternative<Option.OptionTypeLambda>"
+    "signature": "declare const Alternative: alternative.Alternative<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L224"
   },
   {
     "_tag": "Constant",
@@ -2168,7 +2317,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Foldable: foldable.Foldable<Option.OptionTypeLambda>"
+    "signature": "declare const Foldable: foldable.Foldable<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L237"
   },
   {
     "_tag": "Constant",
@@ -2182,7 +2332,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Filterable: filterable.Filterable<Option.OptionTypeLambda>"
+    "signature": "declare const Filterable: filterable.Filterable<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L248"
   },
   {
     "_tag": "Constant",
@@ -2196,7 +2347,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Traversable: traversable.Traversable<Option.OptionTypeLambda>"
+    "signature": "declare const Traversable: traversable.Traversable<Option.OptionTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L257"
   },
   {
     "_tag": "Function",
@@ -2210,7 +2362,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getOptionalMonoid: <A>(Semigroup: Semigroup<A>) => Monoid<Option.Option<A>>"
+    "signature": "declare const getOptionalMonoid: <A>(Semigroup: Semigroup<A>) => Monoid<Option.Option<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Option.ts#L265"
   },
   {
     "_tag": "Constant",
@@ -2227,7 +2380,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Semigroup: semigroup.Semigroup<Ordering>"
+    "signature": "declare const Semigroup: semigroup.Semigroup<Ordering>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -2244,7 +2398,8 @@
     ],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monoid: monoid.Monoid<Ordering>"
+    "signature": "declare const Monoid: monoid.Monoid<Ordering>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -2258,7 +2413,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Contravariant: contravariant.Contravariant<Predicate.PredicateTypeLambda>"
+    "signature": "declare const Contravariant: contravariant.Contravariant<Predicate.PredicateTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L57"
   },
   {
     "_tag": "Constant",
@@ -2272,7 +2428,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Predicate.PredicateTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<Predicate.PredicateTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -2286,7 +2443,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Of: of_.Of<Predicate.PredicateTypeLambda>"
+    "signature": "declare const Of: of_.Of<Predicate.PredicateTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L74"
   },
   {
     "_tag": "Constant",
@@ -2300,7 +2458,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Predicate.PredicateTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<Predicate.PredicateTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L82"
   },
   {
     "_tag": "Constant",
@@ -2314,7 +2473,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<Predicate.PredicateTypeLambda>"
+    "signature": "declare const Product: product_.Product<Predicate.PredicateTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L92"
   },
   {
     "_tag": "Function",
@@ -2328,7 +2488,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemigroupEqv: <A>() => Semigroup<Predicate.Predicate<A>>"
+    "signature": "declare const getSemigroupEqv: <A>() => Semigroup<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L104"
   },
   {
     "_tag": "Function",
@@ -2342,7 +2503,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getMonoidEqv: <A>() => monoid.Monoid<Predicate.Predicate<A>>"
+    "signature": "declare const getMonoidEqv: <A>() => monoid.Monoid<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L111"
   },
   {
     "_tag": "Function",
@@ -2356,7 +2518,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemigroupXor: <A>() => Semigroup<Predicate.Predicate<A>>"
+    "signature": "declare const getSemigroupXor: <A>() => Semigroup<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L118"
   },
   {
     "_tag": "Function",
@@ -2370,7 +2533,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getMonoidXor: <A>() => monoid.Monoid<Predicate.Predicate<A>>"
+    "signature": "declare const getMonoidXor: <A>() => monoid.Monoid<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L125"
   },
   {
     "_tag": "Function",
@@ -2384,7 +2548,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemigroupSome: <A>() => Semigroup<Predicate.Predicate<A>>"
+    "signature": "declare const getSemigroupSome: <A>() => Semigroup<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L132"
   },
   {
     "_tag": "Function",
@@ -2398,7 +2563,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getMonoidSome: <A>() => monoid.Monoid<Predicate.Predicate<A>>"
+    "signature": "declare const getMonoidSome: <A>() => monoid.Monoid<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L152"
   },
   {
     "_tag": "Function",
@@ -2412,7 +2578,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getSemigroupEvery: <A>() => Semigroup<Predicate.Predicate<A>>"
+    "signature": "declare const getSemigroupEvery: <A>() => Semigroup<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L159"
   },
   {
     "_tag": "Function",
@@ -2426,7 +2593,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getMonoidEvery: <A>() => monoid.Monoid<Predicate.Predicate<A>>"
+    "signature": "declare const getMonoidEvery: <A>() => monoid.Monoid<Predicate.Predicate<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Predicate.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -2440,7 +2608,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<Record.ReadonlyRecordTypeLambda<string>>"
+    "signature": "declare const Covariant: covariant.Covariant<Record.ReadonlyRecordTypeLambda<string>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L139"
   },
   {
     "_tag": "Constant",
@@ -2454,7 +2623,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<Record.ReadonlyRecordTypeLambda<string>>"
+    "signature": "declare const Invariant: invariant.Invariant<Record.ReadonlyRecordTypeLambda<string>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L155"
   },
   {
     "_tag": "Constant",
@@ -2468,7 +2638,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Filterable: filterable.Filterable<Record.ReadonlyRecordTypeLambda<string>>"
+    "signature": "declare const Filterable: filterable.Filterable<Record.ReadonlyRecordTypeLambda<string>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L172"
   },
   {
     "_tag": "Constant",
@@ -2482,7 +2653,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Traversable: traversable.Traversable<Record.ReadonlyRecordTypeLambda<string>>"
+    "signature": "declare const Traversable: traversable.Traversable<Record.ReadonlyRecordTypeLambda<string>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L188"
   },
   {
     "_tag": "Constant",
@@ -2496,7 +2668,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const TraversableFilterable: traversableFilterable.TraversableFilterable<Record.ReadonlyRecordTypeLambda<string>>"
+    "signature": "declare const TraversableFilterable: traversableFilterable.TraversableFilterable<Record.ReadonlyRecordTypeLambda<string>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L205"
   },
   {
     "_tag": "Function",
@@ -2510,7 +2683,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getCovariant: <K extends string>() => covariant.Covariant<Record.ReadonlyRecordTypeLambda<K>>"
+    "signature": "declare const getCovariant: <K extends string>() => covariant.Covariant<Record.ReadonlyRecordTypeLambda<K>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L128"
   },
   {
     "_tag": "Function",
@@ -2524,7 +2698,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getInvariant: <K extends string>() => invariant.Invariant<Record.ReadonlyRecordTypeLambda<K>>"
+    "signature": "declare const getInvariant: <K extends string>() => invariant.Invariant<Record.ReadonlyRecordTypeLambda<K>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L145"
   },
   {
     "_tag": "Function",
@@ -2538,7 +2713,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getFilterable: <K extends string>() => filterable.Filterable<Record.ReadonlyRecordTypeLambda<K>>"
+    "signature": "declare const getFilterable: <K extends string>() => filterable.Filterable<Record.ReadonlyRecordTypeLambda<K>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L161"
   },
   {
     "_tag": "Function",
@@ -2552,7 +2728,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getTraversable: <K extends string>() => traversable.Traversable<Record.ReadonlyRecordTypeLambda<K>>"
+    "signature": "declare const getTraversable: <K extends string>() => traversable.Traversable<Record.ReadonlyRecordTypeLambda<K>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L178"
   },
   {
     "_tag": "Function",
@@ -2566,7 +2743,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const getTraversableFilterable: <K extends string>() => traversableFilterable.TraversableFilterable<Record.ReadonlyRecordTypeLambda<K>>"
+    "signature": "declare const getTraversableFilterable: <K extends string>() => traversableFilterable.TraversableFilterable<Record.ReadonlyRecordTypeLambda<K>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L194"
   },
   {
     "_tag": "Function",
@@ -2583,7 +2761,8 @@
     ],
     "since": "0.29.4",
     "category": "instances",
-    "signature": "declare const getSemigroupUnion: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>"
+    "signature": "declare const getSemigroupUnion: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L228"
   },
   {
     "_tag": "Function",
@@ -2600,7 +2779,8 @@
     ],
     "since": "0.29.4",
     "category": "instances",
-    "signature": "declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>"
+    "signature": "declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L256"
   },
   {
     "_tag": "Function",
@@ -2617,7 +2797,8 @@
     ],
     "since": "0.29.4",
     "category": "instances",
-    "signature": "declare const getSemigroupIntersection: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>"
+    "signature": "declare const getSemigroupIntersection: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L279"
   },
   {
     "_tag": "Constant",
@@ -2632,7 +2813,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Semigroup: semigroup.Semigroup<string>"
+    "signature": "declare const Semigroup: semigroup.Semigroup<string>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/String.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -2647,7 +2829,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Monoid: monoid.Monoid<string>"
+    "signature": "declare const Monoid: monoid.Monoid<string>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/String.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -2661,7 +2844,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Bicovariant: bicovariant.Bicovariant<Tuple.TupleTypeLambda>"
+    "signature": "declare const Bicovariant: bicovariant.Bicovariant<Tuple.TupleTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Tuple.ts#L24"
   },
   {
     "_tag": "Function",
@@ -2676,7 +2860,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const partitionMapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Filterable<G>) => <FR, FO, FE, GR, GO, GE, A, B, C>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Either.Either<C, B>) => [Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>, Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, C>>]"
+    "signature": "declare const partitionMapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Filterable<G>) => <FR, FO, FE, GR, GO, GE, A, B, C>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Either.Either<C, B>) => [Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>, Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, C>>]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L40"
   },
   {
     "_tag": "Function",
@@ -2691,7 +2876,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const filterMapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Filterable<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Option.Option<B>) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>"
+    "signature": "declare const filterMapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Covariant<F>, G: Filterable<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Option.Option<B>) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L60"
   },
   {
     "_tag": "Function",
@@ -2705,7 +2891,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const compact: <F extends TypeLambda>(F: Filterable<F>) => <R, O, E, A>(self: Kind<F, R, O, E, Option.Option<A>>) => Kind<F, R, O, E, A>"
+    "signature": "declare const compact: <F extends TypeLambda>(F: Filterable<F>) => <R, O, E, A>(self: Kind<F, R, O, E, Option.Option<A>>) => Kind<F, R, O, E, A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L72"
   },
   {
     "_tag": "Function",
@@ -2719,7 +2906,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const separate: <F extends TypeLambda>(F: Filterable<F>) => <R, O, E, A, B>(self: Kind<F, R, O, E, Either.Either<B, A>>) => [Kind<F, R, O, E, A>, Kind<F, R, O, E, B>]"
+    "signature": "declare const separate: <F extends TypeLambda>(F: Filterable<F>) => <R, O, E, A, B>(self: Kind<F, R, O, E, Either.Either<B, A>>) => [Kind<F, R, O, E, A>, Kind<F, R, O, E, B>]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L79"
   },
   {
     "_tag": "Function",
@@ -2733,7 +2921,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const filter: <F extends TypeLambda>(F: Filterable<F>) => { <C extends A, B extends A, A = C>(refinement: (a: A) => a is B): <R, O, E>(self: Kind<F, R, O, E, C>) => Kind<F, R, O, E, B>; <B extends A, A = B>(predicate: (a: A) => boolean): <R, O, E>(self: Kind<F, R, O, E, B>) => Kind<F, R, O, E, B>; <R, O, E, C extends A, B extends A, A = C>(self: Kind<F, R, O, E, C>, refinement: (a: A) => a is B): Kind<F, R, O, E, B>; <R, O, E, B extends A, A = B>(self: Kind<F, R, O, E, B>, predicate: (a: A) => boolean): Kind<F, R, O, E, B>; }"
+    "signature": "declare const filter: <F extends TypeLambda>(F: Filterable<F>) => { <C extends A, B extends A, A = C>(refinement: (a: A) => a is B): <R, O, E>(self: Kind<F, R, O, E, C>) => Kind<F, R, O, E, B>; <B extends A, A = B>(predicate: (a: A) => boolean): <R, O, E>(self: Kind<F, R, O, E, B>) => Kind<F, R, O, E, B>; <R, O, E, C extends A, B extends A, A = C>(self: Kind<F, R, O, E, C>, refinement: (a: A) => a is B): Kind<F, R, O, E, B>; <R, O, E, B extends A, A = B>(self: Kind<F, R, O, E, B>, predicate: (a: A) => boolean): Kind<F, R, O, E, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L88"
   },
   {
     "_tag": "Function",
@@ -2747,7 +2936,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const partition: <F extends TypeLambda>(F: Filterable<F>) => { <C extends A, B extends A, A = C>(refinement: (a: A) => a is B): <R, O, E>(self: Kind<F, R, O, E, C>) => [Kind<F, R, O, E, C>, Kind<F, R, O, E, B>]; <B extends A, A = B>(predicate: (a: A) => boolean): <R, O, E>(self: Kind<F, R, O, E, B>) => [Kind<F, R, O, E, B>, Kind<F, R, O, E, B>]; <R, O, E, C extends A, B extends A, A = C>(self: Kind<F, R, O, E, C>, refinement: (a: A) => a is B): [Kind<F, R, O, E, C>, Kind<F, R, O, E, B>]; <R, O, E, B extends A, A = B>(self: Kind<F, R, O, E, B>, predicate: (a: A) => boolean): [Kind<F, R, O, E, B>, Kind<F, R, O, E, B>]; }"
+    "signature": "declare const partition: <F extends TypeLambda>(F: Filterable<F>) => { <C extends A, B extends A, A = C>(refinement: (a: A) => a is B): <R, O, E>(self: Kind<F, R, O, E, C>) => [Kind<F, R, O, E, C>, Kind<F, R, O, E, B>]; <B extends A, A = B>(predicate: (a: A) => boolean): <R, O, E>(self: Kind<F, R, O, E, B>) => [Kind<F, R, O, E, B>, Kind<F, R, O, E, B>]; <R, O, E, C extends A, B extends A, A = C>(self: Kind<F, R, O, E, C>, refinement: (a: A) => a is B): [Kind<F, R, O, E, C>, Kind<F, R, O, E, B>]; <R, O, E, B extends A, A = B>(self: Kind<F, R, O, E, B>, predicate: (a: A) => boolean): [Kind<F, R, O, E, B>, Kind<F, R, O, E, B>]; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L115"
   },
   {
     "_tag": "Interface",
@@ -2761,7 +2951,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "models",
-    "signature": "export interface Filterable<F extends TypeLambda> extends TypeClass<F> {\n  readonly partitionMap: {\n    <A, B, C>(\n      f: (a: A) => Either.Either<C, B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n    <R, O, E, A, B, C>(\n      self: Kind<F, R, O, E, A>,\n      f: (a: A) => Either.Either<C, B>\n    ): [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n  }\n\n  readonly filterMap: {\n    <A, B>(\n      f: (a: A) => Option.Option<B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => Option.Option<B>): Kind<F, R, O, E, B>\n  }\n}"
+    "signature": "export interface Filterable<F extends TypeLambda> extends TypeClass<F> {\n  readonly partitionMap: {\n    <A, B, C>(\n      f: (a: A) => Either.Either<C, B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n    <R, O, E, A, B, C>(\n      self: Kind<F, R, O, E, A>,\n      f: (a: A) => Either.Either<C, B>\n    ): [Kind<F, R, O, E, B>, Kind<F, R, O, E, C>]\n  }\n\n  readonly filterMap: {\n    <A, B>(\n      f: (a: A) => Option.Option<B>\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => Option.Option<B>): Kind<F, R, O, E, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Filterable.ts#L16"
   },
   {
     "_tag": "Function",
@@ -2775,7 +2966,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const flatten: <F extends TypeLambda>(F: FlatMap<F>) => <R2, O2, E2, R1, O1, E1, A>(self: Kind<F, R2, O2, E2, Kind<F, R1, O1, E1, A>>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, A>"
+    "signature": "declare const flatten: <F extends TypeLambda>(F: FlatMap<F>) => <R2, O2, E2, R1, O1, E1, A>(self: Kind<F, R2, O2, E2, Kind<F, R1, O1, E1, A>>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/FlatMap.ts#L26"
   },
   {
     "_tag": "Function",
@@ -2790,7 +2982,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const zipRight: <F extends TypeLambda>(F: FlatMap<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, _>(self: Kind<F, R1, O1, E1, _>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, _, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, _>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }"
+    "signature": "declare const zipRight: <F extends TypeLambda>(F: FlatMap<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, _>(self: Kind<F, R1, O1, E1, _>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, _, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, _>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/FlatMap.ts#L36"
   },
   {
     "_tag": "Function",
@@ -2804,7 +2997,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const composeK: <F extends TypeLambda>(F: FlatMap<F>) => { <B, R2, O2, E2, C>(bfc: (b: B) => Kind<F, R2, O2, E2, C>): <A, R1, O1, E1>(afb: (a: A) => Kind<F, R1, O1, E1, B>) => (a: A) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <A, R1, O1, E1, B, R2, O2, E2, C>(afb: (a: A) => Kind<F, R1, O1, E1, B>, bfc: (b: B) => Kind<F, R2, O2, E2, C>): (a: A) => Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }"
+    "signature": "declare const composeK: <F extends TypeLambda>(F: FlatMap<F>) => { <B, R2, O2, E2, C>(bfc: (b: B) => Kind<F, R2, O2, E2, C>): <A, R1, O1, E1>(afb: (a: A) => Kind<F, R1, O1, E1, B>) => (a: A) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <A, R1, O1, E1, B, R2, O2, E2, C>(afb: (a: A) => Kind<F, R1, O1, E1, B>, bfc: (b: B) => Kind<F, R2, O2, E2, C>): (a: A) => Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/FlatMap.ts#L53"
   },
   {
     "_tag": "Interface",
@@ -2818,7 +3012,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface FlatMap<F extends TypeLambda> extends TypeClass<F> {\n  readonly flatMap: {\n    <A, R2, O2, E2, B>(\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n    <R1, O1, E1, A, R2, O2, E2, B>(\n      self: Kind<F, R1, O1, E1, A>,\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n  }\n}"
+    "signature": "export interface FlatMap<F extends TypeLambda> extends TypeClass<F> {\n  readonly flatMap: {\n    <A, R2, O2, E2, B>(\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n    <R1, O1, E1, A, R2, O2, E2, B>(\n      self: Kind<F, R1, O1, E1, A>,\n      f: (a: A) => Kind<F, R2, O2, E2, B>\n    ): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/FlatMap.ts#L11"
   },
   {
     "_tag": "Function",
@@ -2833,7 +3028,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const reduceComposition: <F extends TypeLambda, G extends TypeLambda>(F: Foldable<F>, G: Foldable<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, b: B, f: (b: B, a: A) => B) => B"
+    "signature": "declare const reduceComposition: <F extends TypeLambda, G extends TypeLambda>(F: Foldable<F>, G: Foldable<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, b: B, f: (b: B, a: A) => B) => B",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L27"
   },
   {
     "_tag": "Function",
@@ -2847,7 +3043,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const toArrayMap: <F extends TypeLambda>(F: Foldable<F>) => { <A, B>(f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Array<B>; <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B): Array<B>; }"
+    "signature": "declare const toArrayMap: <F extends TypeLambda>(F: Foldable<F>) => { <A, B>(f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Array<B>; <R, O, E, A, B>(self: Kind<F, R, O, E, A>, f: (a: A) => B): Array<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L40"
   },
   {
     "_tag": "Function",
@@ -2861,7 +3058,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const toArray: <F extends TypeLambda>(F: Foldable<F>) => <R, O, E, A>(self: Kind<F, R, O, E, A>) => Array<A>"
+    "signature": "declare const toArray: <F extends TypeLambda>(F: Foldable<F>) => <R, O, E, A>(self: Kind<F, R, O, E, A>) => Array<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L55"
   },
   {
     "_tag": "Function",
@@ -2875,7 +3073,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const combineMap: <F extends TypeLambda>(F: Foldable<F>) => <M>(M: Monoid<M>) => { <A>(f: (a: A) => M): <R, O, E>(self: Kind<F, R, O, E, A>) => M; <R, O, E, A>(self: Kind<F, R, O, E, A>, f: (a: A) => M): M; }"
+    "signature": "declare const combineMap: <F extends TypeLambda>(F: Foldable<F>) => <M>(M: Monoid<M>) => { <A>(f: (a: A) => M): <R, O, E>(self: Kind<F, R, O, E, A>) => M; <R, O, E, A>(self: Kind<F, R, O, E, A>, f: (a: A) => M): M; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L62"
   },
   {
     "_tag": "Function",
@@ -2889,7 +3088,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const reduceKind: <F extends TypeLambda>(F: Foldable<F>) => <G extends TypeLambda>(G: Monad<G>) => { <B, A, R, O, E>(b: B, f: (b: B, a: A) => Kind<G, R, O, E, B>): <FR, FO, FE>(self: Kind<F, FR, FO, FE, A>) => Kind<G, R, O, E, B>; <FR, FO, FE, A, B, R, O, E>(self: Kind<F, FR, FO, FE, A>, b: B, f: (b: B, a: A) => Kind<G, R, O, E, B>): Kind<G, R, O, E, B>; }"
+    "signature": "declare const reduceKind: <F extends TypeLambda>(F: Foldable<F>) => <G extends TypeLambda>(G: Monad<G>) => { <B, A, R, O, E>(b: B, f: (b: B, a: A) => Kind<G, R, O, E, B>): <FR, FO, FE>(self: Kind<F, FR, FO, FE, A>) => Kind<G, R, O, E, B>; <FR, FO, FE, A, B, R, O, E>(self: Kind<F, FR, FO, FE, A>, b: B, f: (b: B, a: A) => Kind<G, R, O, E, B>): Kind<G, R, O, E, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L75"
   },
   {
     "_tag": "Function",
@@ -2903,7 +3103,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const coproductMapKind: <F extends TypeLambda>(F: Foldable<F>) => <G extends TypeLambda>(G: Coproduct<G>) => { <A, R, O, E, B>(f: (a: A) => Kind<G, R, O, E, B>): <FR, FO, FE>(self: Kind<F, FR, FO, FE, A>) => Kind<G, R, O, E, B>; <FR, FO, FE, A, R, O, E, B>(self: Kind<F, FR, FO, FE, A>, f: (a: A) => Kind<G, R, O, E, B>): Kind<G, R, O, E, B>; }"
+    "signature": "declare const coproductMapKind: <F extends TypeLambda>(F: Foldable<F>) => <G extends TypeLambda>(G: Coproduct<G>) => { <A, R, O, E, B>(f: (a: A) => Kind<G, R, O, E, B>): <FR, FO, FE>(self: Kind<F, FR, FO, FE, A>) => Kind<G, R, O, E, B>; <FR, FO, FE, A, R, O, E, B>(self: Kind<F, FR, FO, FE, A>, f: (a: A) => Kind<G, R, O, E, B>): Kind<G, R, O, E, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L101"
   },
   {
     "_tag": "Interface",
@@ -2917,7 +3118,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Foldable<F extends TypeLambda> extends TypeClass<F> {\n  readonly reduce: {\n    <A, B>(b: B, f: (b: B, a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => B\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, b: B, f: (b: B, a: A) => B): B\n  }\n}"
+    "signature": "export interface Foldable<F extends TypeLambda> extends TypeClass<F> {\n  readonly reduce: {\n    <A, B>(b: B, f: (b: B, a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => B\n    <R, O, E, A, B>(self: Kind<F, R, O, E, A>, b: B, f: (b: B, a: A) => B): B\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L15"
   },
   {
     "_tag": "Function",
@@ -2932,7 +3134,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const imapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Invariant<F>, G: Invariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, to: (a: A) => B, from: (b: B) => A) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>"
+    "signature": "declare const imapComposition: <F extends TypeLambda, G extends TypeLambda>(F: Invariant<F>, G: Invariant<G>) => <FR, FO, FE, GR, GO, GE, A, B>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, to: (a: A) => B, from: (b: B) => A) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Invariant.ts#L35"
   },
   {
     "_tag": "Function",
@@ -2946,7 +3149,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "do notation",
-    "signature": "declare const bindTo: <F extends TypeLambda>(F: Invariant<F>) => { <N extends string>(name: N): <R, O, E, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, { [K in N]: A; }>; <R, O, E, A, N extends string>(self: Kind<F, R, O, E, A>, name: N): Kind<F, R, O, E, { [K in N]: A; }>; }"
+    "signature": "declare const bindTo: <F extends TypeLambda>(F: Invariant<F>) => { <N extends string>(name: N): <R, O, E, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, { [K in N]: A; }>; <R, O, E, A, N extends string>(self: Kind<F, R, O, E, A>, name: N): Kind<F, R, O, E, { [K in N]: A; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Invariant.ts#L49"
   },
   {
     "_tag": "Function",
@@ -2961,7 +3165,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const tupled: <F extends TypeLambda>(F: Invariant<F>) => <R, O, E, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, [A]>"
+    "signature": "declare const tupled: <F extends TypeLambda>(F: Invariant<F>) => <R, O, E, A>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, [A]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Invariant.ts#L68"
   },
   {
     "_tag": "Interface",
@@ -2975,7 +3180,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Invariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly imap: {\n    <A, B>(\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(\n      self: Kind<F, R, O, E, A>,\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): Kind<F, R, O, E, B>\n  }\n}"
+    "signature": "export interface Invariant<F extends TypeLambda> extends TypeClass<F> {\n  readonly imap: {\n    <A, B>(\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, B>\n    <R, O, E, A, B>(\n      self: Kind<F, R, O, E, A>,\n      to: (a: A) => B,\n      from: (b: B) => A\n    ): Kind<F, R, O, E, B>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Invariant.ts#L16"
   },
   {
     "_tag": "Interface",
@@ -2989,7 +3195,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Monad<F extends TypeLambda> extends FlatMap<F>, Pointed<F> {}"
+    "signature": "export interface Monad<F extends TypeLambda> extends FlatMap<F>, Pointed<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monad.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3003,7 +3210,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const fromSemigroup: <A>(S: Semigroup<A>, empty: Monoid<A>[\"empty\"]) => Monoid<A>"
+    "signature": "declare const fromSemigroup: <A>(S: Semigroup<A>, empty: Monoid<A>[\"empty\"]) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L21"
   },
   {
     "_tag": "Function",
@@ -3018,7 +3226,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const min: <A>(B: Bounded<A>) => Monoid<A>"
+    "signature": "declare const min: <A>(B: Bounded<A>) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L36"
   },
   {
     "_tag": "Function",
@@ -3033,7 +3242,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const max: <A>(B: Bounded<A>) => Monoid<A>"
+    "signature": "declare const max: <A>(B: Bounded<A>) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L46"
   },
   {
     "_tag": "Function",
@@ -3048,7 +3258,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const reverse: <A>(M: Monoid<A>) => Monoid<A>"
+    "signature": "declare const reverse: <A>(M: Monoid<A>) => Monoid<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L54"
   },
   {
     "_tag": "Function",
@@ -3063,7 +3274,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const tuple: <T extends ReadonlyArray<Monoid<any>>>(...elements: T) => Monoid<{ readonly [I in keyof T]: [T[I]] extends [Monoid<infer A>] ? A : never; }>"
+    "signature": "declare const tuple: <T extends ReadonlyArray<Monoid<any>>>(...elements: T) => Monoid<{ readonly [I in keyof T]: [T[I]] extends [Monoid<infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L73"
   },
   {
     "_tag": "Function",
@@ -3078,7 +3290,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const array: <A>() => Monoid<ReadonlyArray<A>>"
+    "signature": "declare const array: <A>() => Monoid<ReadonlyArray<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L88"
   },
   {
     "_tag": "Function",
@@ -3093,7 +3306,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const struct: <R extends { readonly [x: string]: Monoid<any>; }>(fields: R) => Monoid<{ readonly [K in keyof R]: [R[K]] extends [Monoid<infer A>] ? A : never; }>"
+    "signature": "declare const struct: <R extends { readonly [x: string]: Monoid<any>; }>(fields: R) => Monoid<{ readonly [K in keyof R]: [R[K]] extends [Monoid<infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L101"
   },
   {
     "_tag": "Interface",
@@ -3107,7 +3321,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Monoid<A> extends Semigroup<A> {\n  readonly empty: A\n  readonly combineAll: (collection: Iterable<A>) => A\n}"
+    "signature": "export interface Monoid<A> extends Semigroup<A> {\n  readonly empty: A\n  readonly combineAll: (collection: Iterable<A>) => A\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Monoid.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3122,7 +3337,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const ofComposition: <F extends TypeLambda, G extends TypeLambda>(F: Of<F>, G: Of<G>) => <A>(a: A) => Kind<F, unknown, never, never, Kind<G, unknown, never, never, A>>"
+    "signature": "declare const ofComposition: <F extends TypeLambda, G extends TypeLambda>(F: Of<F>, G: Of<G>) => <A>(a: A) => Kind<F, unknown, never, never, Kind<G, unknown, never, never, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Of.ts#L19"
   },
   {
     "_tag": "Function",
@@ -3136,7 +3352,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "do notation",
-    "signature": "declare const Do: <F extends TypeLambda>(F: Of<F>) => <R = unknown, O = never, E = never>() => Kind<F, R, O, E, {}>"
+    "signature": "declare const Do: <F extends TypeLambda>(F: Of<F>) => <R = unknown, O = never, E = never>() => Kind<F, R, O, E, {}>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Of.ts#L40"
   },
   {
     "_tag": "Interface",
@@ -3150,7 +3367,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Of<F extends TypeLambda> extends TypeClass<F> {\n  readonly of: <A>(a: A) => Kind<F, unknown, never, never, A>\n}"
+    "signature": "export interface Of<F extends TypeLambda> extends TypeClass<F> {\n  readonly of: <A>(a: A) => Kind<F, unknown, never, never, A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Of.ts#L10"
   },
   {
     "_tag": "Interface",
@@ -3164,7 +3382,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Pointed<F extends TypeLambda> extends Covariant<F>, Of<F> {}"
+    "signature": "export interface Pointed<F extends TypeLambda> extends Covariant<F>, Of<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Pointed.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3178,7 +3397,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const tuple: <F extends TypeLambda>(F: Product<F>) => <T extends ReadonlyArray<Kind<F, any, any, any, any>>>(...elements: T) => Kind<F, ([T[number]] extends [Kind<F, infer R, any, any, any>] ? R : never), (T[number] extends never ? never : [T[number]] extends [Kind<F, any, infer O, any, any>] ? O : never), (T[number] extends never ? never : [T[number]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [I in keyof T]: [T[I]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>"
+    "signature": "declare const tuple: <F extends TypeLambda>(F: Product<F>) => <T extends ReadonlyArray<Kind<F, any, any, any, any>>>(...elements: T) => Kind<F, ([T[number]] extends [Kind<F, infer R, any, any, any>] ? R : never), (T[number] extends never ? never : [T[number]] extends [Kind<F, any, infer O, any, any>] ? O : never), (T[number] extends never ? never : [T[number]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [I in keyof T]: [T[I]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Product.ts#L22"
   },
   {
     "_tag": "Function",
@@ -3192,7 +3412,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const struct: <F extends TypeLambda>(F: Product<F>) => <R extends { readonly [x: string]: Kind<F, any, any, any, any>; }>(fields: R) => Kind<F, ([R[keyof R]] extends [Kind<F, infer R, any, any, any>] ? R : never), (R[keyof R] extends never ? never : [R[keyof R]] extends [Kind<F, any, infer O, any, any>] ? O : never), (R[keyof R] extends never ? never : [R[keyof R]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [K in keyof R]: [R[K]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>"
+    "signature": "declare const struct: <F extends TypeLambda>(F: Product<F>) => <R extends { readonly [x: string]: Kind<F, any, any, any, any>; }>(fields: R) => Kind<F, ([R[keyof R]] extends [Kind<F, infer R, any, any, any>] ? R : never), (R[keyof R] extends never ? never : [R[keyof R]] extends [Kind<F, any, infer O, any, any>] ? O : never), (R[keyof R] extends never ? never : [R[keyof R]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [K in keyof R]: [R[K]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Product.ts#L43"
   },
   {
     "_tag": "Interface",
@@ -3206,7 +3427,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Product<F extends TypeLambda> extends SemiProduct<F>, Of<F> {\n  readonly productAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, Array<A>>\n}"
+    "signature": "export interface Product<F extends TypeLambda> extends SemiProduct<F>, Of<F> {\n  readonly productAll: <R, O, E, A>(\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, Array<A>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Product.ts#L13"
   },
   {
     "_tag": "Interface",
@@ -3220,7 +3442,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface SemiAlternative<F extends TypeLambda> extends SemiCoproduct<F>, Covariant<F> {}"
+    "signature": "export interface SemiAlternative<F extends TypeLambda> extends SemiCoproduct<F>, Covariant<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiAlternative.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3235,7 +3458,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "lifting",
-    "signature": "declare const getSemigroup: <F extends TypeLambda>(F: SemiApplicative<F>) => <A, R, O, E>(S: Semigroup<A>) => Semigroup<Kind<F, R, O, E, A>>"
+    "signature": "declare const getSemigroup: <F extends TypeLambda>(F: SemiApplicative<F>) => <A, R, O, E>(S: Semigroup<A>) => Semigroup<Kind<F, R, O, E, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L23"
   },
   {
     "_tag": "Function",
@@ -3250,7 +3474,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const zipWith: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, B, A, C>(that: Kind<F, R2, O2, E2, B>, f: (a: A, b: B) => C): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <R1, O1, E1, A, R2, O2, E2, B, C>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>, f: (a: A, b: B) => C): Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }"
+    "signature": "declare const zipWith: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, B, A, C>(that: Kind<F, R2, O2, E2, B>, f: (a: A, b: B) => C): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <R1, O1, E1, A, R2, O2, E2, B, C>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>, f: (a: A, b: B) => C): Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L35"
   },
   {
     "_tag": "Function",
@@ -3264,7 +3489,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const ap: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, A>(that: Kind<F, R2, O2, E2, A>): <R1, O1, E1, B>(self: Kind<F, R1, O1, E1, (a: A) => B>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, A, B, R2, O2, E2>(self: Kind<F, R1, O1, E1, (a: A) => B>, that: Kind<F, R2, O2, E2, A>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }"
+    "signature": "declare const ap: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, A>(that: Kind<F, R2, O2, E2, A>): <R1, O1, E1, B>(self: Kind<F, R1, O1, E1, (a: A) => B>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, A, B, R2, O2, E2>(self: Kind<F, R1, O1, E1, (a: A) => B>, that: Kind<F, R2, O2, E2, A>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L58"
   },
   {
     "_tag": "Function",
@@ -3278,7 +3504,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const zipLeft: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, _>(that: Kind<F, R2, O2, E2, _>): <R1, O1, E1, A>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }"
+    "signature": "declare const zipLeft: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, _>(that: Kind<F, R2, O2, E2, _>): <R1, O1, E1, A>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, A>; <R1, O1, E1, A, R2, O2, E2, _>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, _>): Kind<F, R1 & R2, O1 | O2, E1 | E2, A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L77"
   },
   {
     "_tag": "Function",
@@ -3292,7 +3519,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const zipRight: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, _>(self: Kind<F, R1, O1, E1, _>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, _, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, _>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }"
+    "signature": "declare const zipRight: <F extends TypeLambda>(F: SemiApplicative<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, _>(self: Kind<F, R1, O1, E1, _>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, B>; <R1, O1, E1, _, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, _>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L94"
   },
   {
     "_tag": "Function",
@@ -3307,7 +3535,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "lifting",
-    "signature": "declare const lift2: <F extends TypeLambda>(F: SemiApplicative<F>) => <A, B, C>(f: (a: A, b: B) => C) => { <R2, O2, E2>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <R1, O1, E1, R2, O2, E2>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }"
+    "signature": "declare const lift2: <F extends TypeLambda>(F: SemiApplicative<F>) => <A, B, C>(f: (a: A, b: B) => C) => { <R2, O2, E2>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, C>; <R1, O1, E1, R2, O2, E2>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, C>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L114"
   },
   {
     "_tag": "Interface",
@@ -3321,7 +3550,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface SemiApplicative<F extends TypeLambda> extends SemiProduct<F>, Covariant<F> {}"
+    "signature": "export interface SemiApplicative<F extends TypeLambda> extends SemiProduct<F>, Covariant<F> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiApplicative.ts#L15"
   },
   {
     "_tag": "Function",
@@ -3335,7 +3565,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const getSemigroup: <F extends TypeLambda>(F: SemiCoproduct<F>) => <R, O, E, A>() => Semigroup<Kind<F, R, O, E, A>>"
+    "signature": "declare const getSemigroup: <F extends TypeLambda>(F: SemiCoproduct<F>) => <R, O, E, A>() => Semigroup<Kind<F, R, O, E, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiCoproduct.ts#L28"
   },
   {
     "_tag": "Interface",
@@ -3349,7 +3580,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface SemiCoproduct<F extends TypeLambda> extends Invariant<F> {\n  readonly coproduct: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, A | B>\n\n  readonly coproductMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}"
+    "signature": "export interface SemiCoproduct<F extends TypeLambda> extends Invariant<F> {\n  readonly coproduct: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, A | B>\n\n  readonly coproductMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiCoproduct.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -3364,7 +3596,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const intercalate: { <A>(separator: A): (S: Semigroup<A>) => Semigroup<A>; <A>(S: Semigroup<A>, separator: A): Semigroup<A>; }"
+    "signature": "declare const intercalate: { <A>(separator: A): (S: Semigroup<A>) => Semigroup<A>; <A>(S: Semigroup<A>, separator: A): Semigroup<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L95"
   },
   {
     "_tag": "Constant",
@@ -3378,7 +3611,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const imap: { <A, B>(to: (a: A) => B, from: (b: B) => A): (self: Semigroup<A>) => Semigroup<B>; <A, B>(self: Semigroup<A>, to: (a: A) => B, from: (b: B) => A): Semigroup<B>; }"
+    "signature": "declare const imap: { <A, B>(to: (a: A) => B, from: (b: B) => A): (self: Semigroup<A>) => Semigroup<B>; <A, B>(self: Semigroup<A>, to: (a: A) => B, from: (b: B) => A): Semigroup<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L131"
   },
   {
     "_tag": "Constant",
@@ -3392,7 +3626,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<SemigroupTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<SemigroupTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -3406,7 +3641,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const SemiProduct: semiProduct.SemiProduct<SemigroupTypeLambda>"
+    "signature": "declare const SemiProduct: semiProduct.SemiProduct<SemigroupTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -3420,7 +3656,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const Product: product_.Product<SemigroupTypeLambda>"
+    "signature": "declare const Product: product_.Product<SemigroupTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L191"
   },
   {
     "_tag": "Constant",
@@ -3435,7 +3672,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(...elements: T) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never; }>"
+    "signature": "declare const tuple: <T extends ReadonlyArray<Semigroup<any>>>(...elements: T) => Semigroup<{ readonly [I in keyof T]: [T[I]] extends [Semigroup<infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L214"
   },
   {
     "_tag": "Constant",
@@ -3450,7 +3688,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const struct: <R extends { readonly [x: string]: Semigroup<any>; }>(fields: R) => Semigroup<{ readonly [K in keyof R]: [R[K]] extends [Semigroup<infer A>] ? A : never; }>"
+    "signature": "declare const struct: <R extends { readonly [x: string]: Semigroup<any>; }>(fields: R) => Semigroup<{ readonly [K in keyof R]: [R[K]] extends [Semigroup<infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L236"
   },
   {
     "_tag": "Function",
@@ -3465,7 +3704,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const make: <A>(combine: Semigroup<A>[\"combine\"], combineMany?: Semigroup<A>[\"combineMany\"]) => Semigroup<A>"
+    "signature": "declare const make: <A>(combine: Semigroup<A>[\"combine\"], combineMany?: Semigroup<A>[\"combineMany\"]) => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L37"
   },
   {
     "_tag": "Function",
@@ -3480,7 +3720,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const min: <A>(O: Order<A>) => Semigroup<A>"
+    "signature": "declare const min: <A>(O: Order<A>) => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L51"
   },
   {
     "_tag": "Function",
@@ -3495,7 +3736,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const max: <A>(O: Order<A>) => Semigroup<A>"
+    "signature": "declare const max: <A>(O: Order<A>) => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L59"
   },
   {
     "_tag": "Function",
@@ -3509,7 +3751,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const constant: <A>(a: A) => Semigroup<A>"
+    "signature": "declare const constant: <A>(a: A) => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L65"
   },
   {
     "_tag": "Function",
@@ -3524,7 +3767,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const reverse: <A>(S: Semigroup<A>) => Semigroup<A>"
+    "signature": "declare const reverse: <A>(S: Semigroup<A>) => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L72"
   },
   {
     "_tag": "Function",
@@ -3539,7 +3783,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const first: <A = never>() => Semigroup<A>"
+    "signature": "declare const first: <A = never>() => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L109"
   },
   {
     "_tag": "Function",
@@ -3554,7 +3799,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "instances",
-    "signature": "declare const last: <A = never>() => Semigroup<A>"
+    "signature": "declare const last: <A = never>() => Semigroup<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L117"
   },
   {
     "_tag": "Function",
@@ -3569,7 +3815,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "combinators",
-    "signature": "declare const array: <A>() => Semigroup<ReadonlyArray<A>>"
+    "signature": "declare const array: <A>() => Semigroup<ReadonlyArray<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L225"
   },
   {
     "_tag": "Interface",
@@ -3583,7 +3830,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Semigroup<A> {\n  readonly combine: (self: A, that: A) => A\n  readonly combineMany: (self: A, collection: Iterable<A>) => A\n}"
+    "signature": "export interface Semigroup<A> {\n  readonly combine: (self: A, that: A) => A\n  readonly combineMany: (self: A, collection: Iterable<A>) => A\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L16"
   },
   {
     "_tag": "Interface",
@@ -3597,7 +3845,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type lambdas",
-    "signature": "export interface SemigroupTypeLambda extends TypeLambda {\n  readonly type: Semigroup<this[\"Target\"]>\n}"
+    "signature": "export interface SemigroupTypeLambda extends TypeLambda {\n  readonly type: Semigroup<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Semigroup.ts#L25"
   },
   {
     "_tag": "Function",
@@ -3612,7 +3861,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "constructors",
-    "signature": "declare const productMany: <F extends TypeLambda>(map: Covariant<F>[\"map\"], product: SemiProduct<F>[\"product\"]) => SemiProduct<F>[\"productMany\"]"
+    "signature": "declare const productMany: <F extends TypeLambda>(map: Covariant<F>[\"map\"], product: SemiProduct<F>[\"product\"]) => SemiProduct<F>[\"productMany\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L32"
   },
   {
     "_tag": "Function",
@@ -3627,7 +3877,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const productComposition: <F extends TypeLambda, G extends TypeLambda>(F: SemiApplicative<F>, G: SemiProduct<G>) => <FR1, FO1, FE1, GR1, GO1, GE1, A, FR2, FO2, FE2, GR2, GO2, GE2, B>(self: Kind<F, FR1, FO1, FE1, Kind<G, GR1, GO1, GE1, A>>, that: Kind<F, FR2, FO2, FE2, Kind<G, GR2, GO2, GE2, B>>) => Kind<F, FR1 & FR2, FO1 | FO2, FE1 | FE2, Kind<G, GR1 & GR2, GO1 | GO2, GE1 | GE2, [A, B]>>"
+    "signature": "declare const productComposition: <F extends TypeLambda, G extends TypeLambda>(F: SemiApplicative<F>, G: SemiProduct<G>) => <FR1, FO1, FE1, GR1, GO1, GE1, A, FR2, FO2, FE2, GR2, GO2, GE2, B>(self: Kind<F, FR1, FO1, FE1, Kind<G, GR1, GO1, GE1, A>>, that: Kind<F, FR2, FO2, FE2, Kind<G, GR2, GO2, GE2, B>>) => Kind<F, FR1 & FR2, FO1 | FO2, FE1 | FE2, Kind<G, GR1 & GR2, GO1 | GO2, GE1 | GE2, [A, B]>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L55"
   },
   {
     "_tag": "Function",
@@ -3642,7 +3893,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const productManyComposition: <F extends TypeLambda, G extends TypeLambda>(F: SemiApplicative<F>, G: SemiProduct<G>) => <FR, FO, FE, GR, GO, GE, A>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, collection: Iterable<Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>>) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, [A, ...Array<A>]>>"
+    "signature": "declare const productManyComposition: <F extends TypeLambda, G extends TypeLambda>(F: SemiApplicative<F>, G: SemiProduct<G>) => <FR, FO, FE, GR, GO, GE, A>(self: Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>, collection: Iterable<Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, A>>>) => Kind<F, FR, FO, FE, Kind<G, GR, GO, GE, [A, ...Array<A>]>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L75"
   },
   {
     "_tag": "Function",
@@ -3656,7 +3908,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "do notation",
-    "signature": "declare const andThenBind: <F extends TypeLambda>(F: SemiProduct<F>) => { <N extends string, A extends object, R2, O2, E2, B>(name: Exclude<N, keyof A>, that: Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R1, O1, E1, A extends object, N extends string, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, name: Exclude<N, keyof A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }"
+    "signature": "declare const andThenBind: <F extends TypeLambda>(F: SemiProduct<F>) => { <N extends string, A extends object, R2, O2, E2, B>(name: Exclude<N, keyof A>, that: Kind<F, R2, O2, E2, B>): <R1, O1, E1>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R1, O1, E1, A extends object, N extends string, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, name: Exclude<N, keyof A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L89"
   },
   {
     "_tag": "Function",
@@ -3671,7 +3924,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const appendElement: <F extends TypeLambda>(F: SemiProduct<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, A extends ReadonlyArray<any>>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, [...A, B]>; <R1, O1, E1, A extends ReadonlyArray<any>, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, [...A, B]>; }"
+    "signature": "declare const appendElement: <F extends TypeLambda>(F: SemiProduct<F>) => { <R2, O2, E2, B>(that: Kind<F, R2, O2, E2, B>): <R1, O1, E1, A extends ReadonlyArray<any>>(self: Kind<F, R1, O1, E1, A>) => Kind<F, R1 & R2, O2 | O1, E2 | E1, [...A, B]>; <R1, O1, E1, A extends ReadonlyArray<any>, R2, O2, E2, B>(self: Kind<F, R1, O1, E1, A>, that: Kind<F, R2, O2, E2, B>): Kind<F, R1 & R2, O1 | O2, E1 | E2, [...A, B]>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L118"
   },
   {
     "_tag": "Function",
@@ -3685,7 +3939,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const nonEmptyTuple: <F extends TypeLambda>(F: SemiProduct<F>) => <T extends readonly [Kind<F, any, any, any, any>, ...Array<Kind<F, any, any, any, any>>]>(...elements: T) => Kind<F, ([T[number]] extends [Kind<F, infer R, any, any, any>] ? R : never), ([T[number]] extends [Kind<F, any, infer O, any, any>] ? O : never), ([T[number]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [I in keyof T]: [T[I]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>"
+    "signature": "declare const nonEmptyTuple: <F extends TypeLambda>(F: SemiProduct<F>) => <T extends readonly [Kind<F, any, any, any, any>, ...Array<Kind<F, any, any, any, any>>]>(...elements: T) => Kind<F, ([T[number]] extends [Kind<F, infer R, any, any, any>] ? R : never), ([T[number]] extends [Kind<F, any, infer O, any, any>] ? O : never), ([T[number]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [I in keyof T]: [T[I]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L138"
   },
   {
     "_tag": "Function",
@@ -3699,7 +3954,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const nonEmptyStruct: <F extends TypeLambda>(F: SemiProduct<F>) => <R extends { readonly [x: string]: Kind<F, any, any, any, any>; }>(fields: EnforceNonEmptyRecord<R> & { readonly [x: string]: Kind<F, any, any, any, any>; }) => Kind<F, ([R[keyof R]] extends [Kind<F, infer R, any, any, any>] ? R : never), ([R[keyof R]] extends [Kind<F, any, infer O, any, any>] ? O : never), ([R[keyof R]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [K in keyof R]: [R[K]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>"
+    "signature": "declare const nonEmptyStruct: <F extends TypeLambda>(F: SemiProduct<F>) => <R extends { readonly [x: string]: Kind<F, any, any, any, any>; }>(fields: EnforceNonEmptyRecord<R> & { readonly [x: string]: Kind<F, any, any, any, any>; }) => Kind<F, ([R[keyof R]] extends [Kind<F, infer R, any, any, any>] ? R : never), ([R[keyof R]] extends [Kind<F, any, infer O, any, any>] ? O : never), ([R[keyof R]] extends [Kind<F, any, any, infer E, any>] ? E : never), { [K in keyof R]: [R[K]] extends [Kind<F, any, any, any, infer A>] ? A : never; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L161"
   },
   {
     "_tag": "Interface",
@@ -3713,7 +3969,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface SemiProduct<F extends TypeLambda> extends Invariant<F> {\n  readonly product: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, [A, B]>\n\n  readonly productMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, [A, ...Array<A>]>\n}"
+    "signature": "export interface SemiProduct<F extends TypeLambda> extends Invariant<F> {\n  readonly product: <R1, O1, E1, A, R2, O2, E2, B>(\n    self: Kind<F, R1, O1, E1, A>,\n    that: Kind<F, R2, O2, E2, B>\n  ) => Kind<F, R1 & R2, O1 | O2, E1 | E2, [A, B]>\n\n  readonly productMany: <R, O, E, A>(\n    self: Kind<F, R, O, E, A>,\n    collection: Iterable<Kind<F, R, O, E, A>>\n  ) => Kind<F, R, O, E, [A, ...Array<A>]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/SemiProduct.ts#L14"
   },
   {
     "_tag": "Function",
@@ -3728,7 +3985,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traverseComposition: <T extends TypeLambda, G extends TypeLambda>(T: Traversable<T>, G: Traversable<G>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, GR, GO, GE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Kind<F, R, O, E, B>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, Kind<G, GR, GO, GE, B>>>"
+    "signature": "declare const traverseComposition: <T extends TypeLambda, G extends TypeLambda>(T: Traversable<T>, G: Traversable<G>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, GR, GO, GE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, Kind<G, GR, GO, GE, A>>, f: (a: A) => Kind<F, R, O, E, B>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, Kind<G, GR, GO, GE, B>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Traversable.ts#L31"
   },
   {
     "_tag": "Function",
@@ -3743,7 +4001,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const sequence: <T extends TypeLambda>(T: Traversable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, R, O, E, A>(self: Kind<T, TR, TO, TE, Kind<F, R, O, E, A>>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>"
+    "signature": "declare const sequence: <T extends TypeLambda>(T: Traversable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, R, O, E, A>(self: Kind<T, TR, TO, TE, Kind<F, R, O, E, A>>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Traversable.ts#L46"
   },
   {
     "_tag": "Function",
@@ -3758,7 +4017,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traverseTap: <T extends TypeLambda>(T: Traversable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <A, R, O, E, B>(f: (a: A) => Kind<F, R, O, E, B>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>; <TR, TO, TE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, B>): Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>; }"
+    "signature": "declare const traverseTap: <T extends TypeLambda>(T: Traversable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <A, R, O, E, B>(f: (a: A) => Kind<F, R, O, E, B>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>; <TR, TO, TE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, B>): Kind<F, R, O, E, Kind<T, TR, TO, TE, A>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Traversable.ts#L61"
   },
   {
     "_tag": "Interface",
@@ -3772,7 +4032,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": "type class",
-    "signature": "export interface Traversable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traverse: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}"
+    "signature": "export interface Traversable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traverse: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, B>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Traversable.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3787,7 +4048,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traversePartitionMap: <T extends TypeLambda>(T: Traversable<T> & Covariant<T> & Filterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, A, R, O, E, B, C>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, Either<C, B>>) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>"
+    "signature": "declare const traversePartitionMap: <T extends TypeLambda>(T: Traversable<T> & Covariant<T> & Filterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, A, R, O, E, B, C>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, Either<C, B>>) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L55"
   },
   {
     "_tag": "Function",
@@ -3802,7 +4064,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traverseFilterMap: <T extends TypeLambda>(T: Traversable<T> & Filterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, Option<B>>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>"
+    "signature": "declare const traverseFilterMap: <T extends TypeLambda>(T: Traversable<T> & Filterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => <TR, TO, TE, A, R, O, E, B>(self: Kind<T, TR, TO, TE, A>, f: (a: A) => Kind<F, R, O, E, Option<B>>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L71"
   },
   {
     "_tag": "Function",
@@ -3816,7 +4079,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traverseFilter: <T extends TypeLambda>(T: TraversableFilterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <B extends A, R, O, E, A = B>(predicate: (a: A) => Kind<F, R, O, E, boolean>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, B>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>; <TR, TO, TE, B extends A, R, O, E, A = B>(self: Kind<T, TR, TO, TE, B>, predicate: (a: A) => Kind<F, R, O, E, boolean>): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>; }"
+    "signature": "declare const traverseFilter: <T extends TypeLambda>(T: TraversableFilterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <B extends A, R, O, E, A = B>(predicate: (a: A) => Kind<F, R, O, E, boolean>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, B>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>; <TR, TO, TE, B extends A, R, O, E, A = B>(self: Kind<T, TR, TO, TE, B>, predicate: (a: A) => Kind<F, R, O, E, boolean>): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L85"
   },
   {
     "_tag": "Function",
@@ -3830,7 +4094,8 @@
     "examples": [],
     "since": "0.24.0",
     "category": null,
-    "signature": "declare const traversePartition: <T extends TypeLambda>(T: TraversableFilterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <B extends A, R, O, E, A = B>(predicate: (a: A) => Kind<F, R, O, E, boolean>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, B>) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, B>]>; <TR, TO, TE, B extends A, R, O, E, A = B>(self: Kind<T, TR, TO, TE, B>, predicate: (a: A) => Kind<F, R, O, E, boolean>): Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, B>]>; }"
+    "signature": "declare const traversePartition: <T extends TypeLambda>(T: TraversableFilterable<T>) => <F extends TypeLambda>(F: Applicative<F>) => { <B extends A, R, O, E, A = B>(predicate: (a: A) => Kind<F, R, O, E, boolean>): <TR, TO, TE>(self: Kind<T, TR, TO, TE, B>) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, B>]>; <TR, TO, TE, B extends A, R, O, E, A = B>(self: Kind<T, TR, TO, TE, B>, predicate: (a: A) => Kind<F, R, O, E, boolean>): Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, B>]>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L113"
   },
   {
     "_tag": "Interface",
@@ -3844,6 +4109,7 @@
     "examples": [],
     "since": "0.24.0",
     "category": "models",
-    "signature": "export interface TraversableFilterable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traversePartitionMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B, C>(\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): <TR, TO, TE>(\n      self: Kind<T, TR, TO, TE, A>\n    ) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n    <TR, TO, TE, A, R, O, E, B, C>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n  }\n\n  readonly traverseFilterMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}"
+    "signature": "export interface TraversableFilterable<T extends TypeLambda> extends TypeClass<T> {\n  readonly traversePartitionMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B, C>(\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): <TR, TO, TE>(\n      self: Kind<T, TR, TO, TE, A>\n    ) => Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n    <TR, TO, TE, A, R, O, E, B, C>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Either<C, B>>\n    ): Kind<F, R, O, E, [Kind<T, TR, TO, TE, B>, Kind<T, TR, TO, TE, C>]>\n  }\n\n  readonly traverseFilterMap: <F extends TypeLambda>(\n    F: Applicative<F>\n  ) => {\n    <A, R, O, E, B>(\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): <TR, TO, TE>(self: Kind<T, TR, TO, TE, A>) => Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n    <TR, TO, TE, A, R, O, E, B>(\n      self: Kind<T, TR, TO, TE, A>,\n      f: (a: A) => Kind<F, R, O, E, Option<B>>\n    ): Kind<F, R, O, E, Kind<T, TR, TO, TE, B>>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/TraversableFilterable.ts#L22"
   }
 ]

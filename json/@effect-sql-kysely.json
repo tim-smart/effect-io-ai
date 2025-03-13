@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <DB>(config: KyselyConfig) => Kysely<DB>"
+    "signature": "declare const make: <DB>(config: KyselyConfig) => Kysely<DB>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/Kysely.ts#L10"
   },
   {
     "_tag": "Function",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>"
+    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/Mssql.ts#L12"
   },
   {
     "_tag": "Function",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>"
+    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/Mysql.ts#L12"
   },
   {
     "_tag": "Interface",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "types",
-    "signature": "export interface EffectKysely<DB> extends Omit<Kysely<DB>, \"transaction\"> {\n  withTransaction: <R, E, A>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E | SqlError, R>\n}"
+    "signature": "export interface EffectKysely<DB> extends Omit<Kysely<DB>, \"transaction\"> {\n  withTransaction: <R, E, A>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E | SqlError, R>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/patch.types.ts#L38"
   },
   {
     "_tag": "Function",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>"
+    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/Pg.ts#L12"
   },
   {
     "_tag": "Function",
@@ -81,6 +86,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>"
+    "signature": "declare const make: <DB>(config?: Omit<KyselyConfig, \"dialect\">) => Effect<EffectKysely<DB>, never, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-kysely/src/Sqlite.ts#L12"
   }
 ]

@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const PgClient: Context.Tag<PgClient, PgClient>"
+    "signature": "declare const PgClient: Context.Tag<PgClient, PgClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L54"
   },
   {
     "_tag": "Function",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: PgClientConfig) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>"
+    "signature": "declare const make: (options: PgClientConfig) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L137"
   },
   {
     "_tag": "Function",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (config: Config.Config.Wrap<PgClientConfig>) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>"
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<PgClientConfig>) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L322"
   },
   {
     "_tag": "Function",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (config: PgClientConfig) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>"
+    "signature": "declare const layer: (config: PgClientConfig) => Layer.Layer<PgClient | Client.SqlClient, ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L340"
   },
   {
     "_tag": "Function",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler"
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L354"
   },
   {
     "_tag": "Interface",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PgClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: PgClientConfig\n  readonly json: (_: unknown) => Fragment\n  readonly array: (_: ReadonlyArray<Primitive>) => Fragment\n  readonly listen: (channel: string) => Stream.Stream<string, SqlError>\n  readonly notify: (channel: string, payload: string) => Effect.Effect<void, SqlError>\n}"
+    "signature": "export interface PgClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: PgClientConfig\n  readonly json: (_: unknown) => Fragment\n  readonly array: (_: ReadonlyArray<Primitive>) => Fragment\n  readonly listen: (channel: string) => Stream.Stream<string, SqlError>\n  readonly notify: (channel: string, payload: string) => Effect.Effect<void, SqlError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L41"
   },
   {
     "_tag": "Interface",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "export interface PgClientConfig {\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly path?: string | undefined\n  readonly ssl?: boolean | ConnectionOptions | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  /**\n   * A function returning a custom socket to use. This parameter is not documented\n   * in the postgres.js's type signature. See their\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details) instead.\n   *\n   * @example\n   * ```ts\n   * import { AuthTypes, Connector } from \"@google-cloud/cloud-sql-connector\";\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Effect, Layer } from \"effect\"\n   *\n   * const layer = Effect.gen(function*() {\n   *   const connector = new Connector();\n   *   const clientOpts = yield* Effect.promise(() => connector.getOptions({\n   *     instanceConnectionName: \"project:region:instance\",\n   *     authType: AuthTypes.IAM,\n   *   }));\n   *   return PgClient.layer({ socket: clientOpts.stream, username: \"iam-user\" });\n   * }).pipe(Layer.unwrapEffect)\n   * ```\n   */\n  readonly socket?: (() => NodeStream.Duplex) | undefined\n\n  readonly idleTimeout?: Duration.DurationInput | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly applicationName?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n  readonly transformJson?: boolean | undefined\n  readonly fetchTypes?: boolean | undefined\n  readonly prepare?: boolean | undefined\n  /**\n   * A callback when postgres has a notice, see\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details).\n   * By default, postgres.js logs these with console.log.\n   * To silence notices, see the following example:\n   * @example\n   * ```ts\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Layer } from \"effect\"\n   *\n   * const layer = PgClient.layer({ onnotice: Config.succeed(() => {}) })\n   * ```\n   */\n  readonly onnotice?: (notice: postgres.Notice) => void\n  readonly types?: Record<string, postgres.PostgresType> | undefined\n\n  readonly debug?: postgres.Options<{}>[\"debug\"] | undefined\n}"
+    "signature": "export interface PgClientConfig {\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly path?: string | undefined\n  readonly ssl?: boolean | ConnectionOptions | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  /**\n   * A function returning a custom socket to use. This parameter is not documented\n   * in the postgres.js's type signature. See their\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details) instead.\n   *\n   * @example\n   * ```ts\n   * import { AuthTypes, Connector } from \"@google-cloud/cloud-sql-connector\";\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Effect, Layer } from \"effect\"\n   *\n   * const layer = Effect.gen(function*() {\n   *   const connector = new Connector();\n   *   const clientOpts = yield* Effect.promise(() => connector.getOptions({\n   *     instanceConnectionName: \"project:region:instance\",\n   *     authType: AuthTypes.IAM,\n   *   }));\n   *   return PgClient.layer({ socket: clientOpts.stream, username: \"iam-user\" });\n   * }).pipe(Layer.unwrapEffect)\n   * ```\n   */\n  readonly socket?: (() => NodeStream.Duplex) | undefined\n\n  readonly idleTimeout?: Duration.DurationInput | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly applicationName?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n  readonly transformJson?: boolean | undefined\n  readonly fetchTypes?: boolean | undefined\n  readonly prepare?: boolean | undefined\n  /**\n   * A callback when postgres has a notice, see\n   * [readme](https://github.com/porsager/postgres?tab=readme-ov-file#connection-details).\n   * By default, postgres.js logs these with console.log.\n   * To silence notices, see the following example:\n   * @example\n   * ```ts\n   * import { PgClient } from \"@effect/sql-pg\";\n   * import { Config, Layer } from \"effect\"\n   *\n   * const layer = PgClient.layer({ onnotice: Config.succeed(() => {}) })\n   * ```\n   */\n  readonly onnotice?: (notice: postgres.Notice) => void\n  readonly types?: Record<string, postgres.PostgresType> | undefined\n\n  readonly debug?: postgres.Options<{}>[\"debug\"] | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L60"
   },
   {
     "_tag": "TypeAlias",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L35"
   },
   {
     "_tag": "TypeAlias",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "custom types",
-    "signature": "type PgCustom = PgJson | PgArray"
+    "signature": "type PgCustom = PgJson | PgArray",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L426"
   },
   {
     "_tag": "Constant",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | PgClient | Client.SqlClient | CommandExecutor | R2>"
+    "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, FileSystem | Path | PgClient | Client.SqlClient | CommandExecutor | R2>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgMigrator.ts#L31"
   },
   {
     "_tag": "Function",
@@ -165,6 +176,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, PgClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>"
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, PgClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgMigrator.ts#L99"
   }
 ]

@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>"
+    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunCommandExecutor.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer.Layer<BunContext, never, never>"
+    "signature": "declare const layer: Layer.Layer<BunContext, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunContext.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type BunContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager"
+    "signature": "type BunContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunContext.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<FileSystem, never, never>"
+    "signature": "declare const layer: Layer<FileSystem, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<WatchBackend, never, never>"
+    "signature": "declare const layer: Layer<WatchBackend, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/ParcelWatcher.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, FileSystem.FileSystem | Etag.Generator>"
+    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, FileSystem.FileSystem | Etag.Generator>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpPlatform.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>"
+    "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpPlatform.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Effect.Effect<Server.HttpServer, never, Scope.Scope>"
+    "signature": "declare const make: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Effect.Effect<Server.HttpServer, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerServer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer>"
+    "signature": "declare const layerServer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>"
+    "signature": "declare const layer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -152,7 +162,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>"
+    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -166,7 +177,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (options: Config.Config.Wrap<Omit<ServeOptions, \"fetch\" | \"error\">>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>"
+    "signature": "declare const layerConfig: (options: Config.Config.Wrap<Omit<ServeOptions, \"fetch\" | \"error\">>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L61"
   },
   {
     "_tag": "Constant",
@@ -181,7 +193,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>"
+    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -195,7 +208,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const toRequest: (self: ServerRequest.HttpServerRequest) => Request"
+    "signature": "declare const toRequest: (self: ServerRequest.HttpServerRequest) => Request",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServerRequest.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -209,7 +223,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
+    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunKeyValueStore.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -223,7 +238,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const stream: (source: Request) => Stream.Stream<Multipart.Part, Multipart.MultipartError>"
+    "signature": "declare const stream: (source: Request) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -237,7 +253,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const persisted: (source: Request) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>"
+    "signature": "declare const persisted: (source: Request) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -251,7 +268,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<Path, never, never>"
+    "signature": "declare const layer: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -265,7 +283,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layerPosix: Layer<Path, never, never>"
+    "signature": "declare const layerPosix: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -279,7 +298,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layerWin32: Layer<Path, never, never>"
+    "signature": "declare const layerWin32: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -293,7 +313,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "runtime",
-    "signature": "declare const runMain: RunMain"
+    "signature": "declare const runMain: RunMain",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -307,7 +328,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
+    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L27"
   },
   {
     "_tag": "Function",
@@ -321,7 +343,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>"
+    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -335,7 +358,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
+    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -349,7 +373,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<Terminal, never, never>"
+    "signature": "declare const layer: Layer<Terminal, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -363,7 +388,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -377,7 +403,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -391,7 +418,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+    "signature": "declare const layer: (spawn: (id: number) => Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -405,6 +433,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L20"
   }
 ]

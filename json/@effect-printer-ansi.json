@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const AnsiTypeId: unique symbol"
+    "signature": "declare const AnsiTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const bold: Ansi"
+    "signature": "declare const bold: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const italicized: Ansi"
+    "signature": "declare const italicized: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const strikethrough: Ansi"
+    "signature": "declare const strikethrough: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const underlined: Ansi"
+    "signature": "declare const underlined: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const color: (color: Color) => Ansi"
+    "signature": "declare const color: (color: Color) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const brightColor: (color: Color) => Ansi"
+    "signature": "declare const brightColor: (color: Color) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const bgColor: (color: Color) => Ansi"
+    "signature": "declare const bgColor: (color: Color) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const bgColorBright: (color: Color) => Ansi"
+    "signature": "declare const bgColorBright: (color: Color) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const black: Ansi"
+    "signature": "declare const black: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const red: Ansi"
+    "signature": "declare const red: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -165,7 +176,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const green: Ansi"
+    "signature": "declare const green: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L114"
   },
   {
     "_tag": "Constant",
@@ -179,7 +191,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const yellow: Ansi"
+    "signature": "declare const yellow: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L120"
   },
   {
     "_tag": "Constant",
@@ -193,7 +206,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const blue: Ansi"
+    "signature": "declare const blue: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L126"
   },
   {
     "_tag": "Constant",
@@ -207,7 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const magenta: Ansi"
+    "signature": "declare const magenta: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -221,7 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const cyan: Ansi"
+    "signature": "declare const cyan: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -235,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const white: Ansi"
+    "signature": "declare const white: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -249,7 +266,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const blackBright: Ansi"
+    "signature": "declare const blackBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L150"
   },
   {
     "_tag": "Constant",
@@ -263,7 +281,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const redBright: Ansi"
+    "signature": "declare const redBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L156"
   },
   {
     "_tag": "Constant",
@@ -277,7 +296,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const greenBright: Ansi"
+    "signature": "declare const greenBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L162"
   },
   {
     "_tag": "Constant",
@@ -291,7 +311,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const yellowBright: Ansi"
+    "signature": "declare const yellowBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L168"
   },
   {
     "_tag": "Constant",
@@ -305,7 +326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const blueBright: Ansi"
+    "signature": "declare const blueBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L174"
   },
   {
     "_tag": "Constant",
@@ -319,7 +341,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const magentaBright: Ansi"
+    "signature": "declare const magentaBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L180"
   },
   {
     "_tag": "Constant",
@@ -333,7 +356,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const cyanBright: Ansi"
+    "signature": "declare const cyanBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L186"
   },
   {
     "_tag": "Constant",
@@ -347,7 +371,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const whiteBright: Ansi"
+    "signature": "declare const whiteBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L192"
   },
   {
     "_tag": "Constant",
@@ -361,7 +386,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgBlack: Ansi"
+    "signature": "declare const bgBlack: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L198"
   },
   {
     "_tag": "Constant",
@@ -375,7 +401,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgRed: Ansi"
+    "signature": "declare const bgRed: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L204"
   },
   {
     "_tag": "Constant",
@@ -389,7 +416,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgGreen: Ansi"
+    "signature": "declare const bgGreen: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L210"
   },
   {
     "_tag": "Constant",
@@ -403,7 +431,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgYellow: Ansi"
+    "signature": "declare const bgYellow: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L216"
   },
   {
     "_tag": "Constant",
@@ -417,7 +446,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgBlue: Ansi"
+    "signature": "declare const bgBlue: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L222"
   },
   {
     "_tag": "Constant",
@@ -431,7 +461,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgMagenta: Ansi"
+    "signature": "declare const bgMagenta: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L228"
   },
   {
     "_tag": "Constant",
@@ -445,7 +476,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgCyan: Ansi"
+    "signature": "declare const bgCyan: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L234"
   },
   {
     "_tag": "Constant",
@@ -459,7 +491,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgWhite: Ansi"
+    "signature": "declare const bgWhite: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L240"
   },
   {
     "_tag": "Constant",
@@ -473,7 +506,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgBlackBright: Ansi"
+    "signature": "declare const bgBlackBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L246"
   },
   {
     "_tag": "Constant",
@@ -487,7 +521,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgRedBright: Ansi"
+    "signature": "declare const bgRedBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L252"
   },
   {
     "_tag": "Constant",
@@ -501,7 +536,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgGreenBright: Ansi"
+    "signature": "declare const bgGreenBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L258"
   },
   {
     "_tag": "Constant",
@@ -515,7 +551,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgYellowBright: Ansi"
+    "signature": "declare const bgYellowBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L264"
   },
   {
     "_tag": "Constant",
@@ -529,7 +566,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgBlueBright: Ansi"
+    "signature": "declare const bgBlueBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L270"
   },
   {
     "_tag": "Constant",
@@ -543,7 +581,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgMagentaBright: Ansi"
+    "signature": "declare const bgMagentaBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L276"
   },
   {
     "_tag": "Constant",
@@ -557,7 +596,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgCyanBright: Ansi"
+    "signature": "declare const bgCyanBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L282"
   },
   {
     "_tag": "Constant",
@@ -571,7 +611,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "colors",
-    "signature": "declare const bgWhiteBright: Ansi"
+    "signature": "declare const bgWhiteBright: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L288"
   },
   {
     "_tag": "Constant",
@@ -586,7 +627,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const beep: Ansi"
+    "signature": "declare const beep: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L300"
   },
   {
     "_tag": "Constant",
@@ -601,7 +643,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorTo: (column: number, row?: number) => Ansi"
+    "signature": "declare const cursorTo: (column: number, row?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L312"
   },
   {
     "_tag": "Constant",
@@ -616,7 +659,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorMove: (column: number, row?: number) => Ansi"
+    "signature": "declare const cursorMove: (column: number, row?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L324"
   },
   {
     "_tag": "Constant",
@@ -631,7 +675,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorUp: (lines?: number) => Ansi"
+    "signature": "declare const cursorUp: (lines?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L335"
   },
   {
     "_tag": "Constant",
@@ -646,7 +691,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorDown: (lines?: number) => Ansi"
+    "signature": "declare const cursorDown: (lines?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L346"
   },
   {
     "_tag": "Constant",
@@ -661,7 +707,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorForward: (columns?: number) => Ansi"
+    "signature": "declare const cursorForward: (columns?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L357"
   },
   {
     "_tag": "Constant",
@@ -676,7 +723,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorBackward: (columns?: number) => Ansi"
+    "signature": "declare const cursorBackward: (columns?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L368"
   },
   {
     "_tag": "Constant",
@@ -691,7 +739,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorLeft: Ansi"
+    "signature": "declare const cursorLeft: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L376"
   },
   {
     "_tag": "Constant",
@@ -706,7 +755,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorSavePosition: Ansi"
+    "signature": "declare const cursorSavePosition: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L384"
   },
   {
     "_tag": "Constant",
@@ -721,7 +771,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorRestorePosition: Ansi"
+    "signature": "declare const cursorRestorePosition: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L393"
   },
   {
     "_tag": "Constant",
@@ -736,7 +787,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorNextLine: (rows?: number) => Ansi"
+    "signature": "declare const cursorNextLine: (rows?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L402"
   },
   {
     "_tag": "Constant",
@@ -751,7 +803,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorPrevLine: (rows?: number) => Ansi"
+    "signature": "declare const cursorPrevLine: (rows?: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L411"
   },
   {
     "_tag": "Constant",
@@ -766,7 +819,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorHide: Ansi"
+    "signature": "declare const cursorHide: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L419"
   },
   {
     "_tag": "Constant",
@@ -781,7 +835,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorShow: Ansi"
+    "signature": "declare const cursorShow: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L427"
   },
   {
     "_tag": "Constant",
@@ -796,7 +851,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseLines: (rows: number) => Ansi"
+    "signature": "declare const eraseLines: (rows: number) => Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L435"
   },
   {
     "_tag": "Constant",
@@ -811,7 +867,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseEndLine: Ansi"
+    "signature": "declare const eraseEndLine: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L445"
   },
   {
     "_tag": "Constant",
@@ -826,7 +883,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseStartLine: Ansi"
+    "signature": "declare const eraseStartLine: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L455"
   },
   {
     "_tag": "Constant",
@@ -841,7 +899,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseLine: Ansi"
+    "signature": "declare const eraseLine: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L465"
   },
   {
     "_tag": "Constant",
@@ -856,7 +915,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseDown: Ansi"
+    "signature": "declare const eraseDown: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L475"
   },
   {
     "_tag": "Constant",
@@ -871,7 +931,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseUp: Ansi"
+    "signature": "declare const eraseUp: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L485"
   },
   {
     "_tag": "Constant",
@@ -886,7 +947,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseScreen: Ansi"
+    "signature": "declare const eraseScreen: Ansi",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L493"
   },
   {
     "_tag": "Constant",
@@ -900,7 +962,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "destructors",
-    "signature": "declare const stringify: (self: Ansi) => string"
+    "signature": "declare const stringify: (self: Ansi) => string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L503"
   },
   {
     "_tag": "Constant",
@@ -914,7 +977,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const combine: { (that: Ansi): (self: Ansi) => Ansi; (self: Ansi, that: Ansi): Ansi; }"
+    "signature": "declare const combine: { (that: Ansi): (self: Ansi) => Ansi; (self: Ansi, that: Ansi): Ansi; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L513"
   },
   {
     "_tag": "Interface",
@@ -928,7 +992,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Ansi extends Ansi.Proto {}"
+    "signature": "export interface Ansi extends Ansi.Proto {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -942,7 +1007,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type AnsiTypeId = typeof AnsiTypeId"
+    "signature": "type AnsiTypeId = typeof AnsiTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L21"
   },
   {
     "_tag": "Interface",
@@ -956,7 +1022,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Proto {\n    readonly [AnsiTypeId]: AnsiTypeId\n  }"
+    "signature": "export interface Proto {\n    readonly [AnsiTypeId]: AnsiTypeId\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Ansi.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -971,7 +1038,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const beep: AnsiDoc"
+    "signature": "declare const beep: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -986,7 +1054,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const cursorTo: (column: number, row?: number) => AnsiDoc"
+    "signature": "declare const cursorTo: (column: number, row?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L79"
   },
   {
     "_tag": "Constant",
@@ -1001,7 +1070,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const cursorMove: (column: number, row?: number) => AnsiDoc"
+    "signature": "declare const cursorMove: (column: number, row?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L91"
   },
   {
     "_tag": "Constant",
@@ -1016,7 +1086,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorUp: (lines?: number) => AnsiDoc"
+    "signature": "declare const cursorUp: (lines?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -1031,7 +1102,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorDown: (lines?: number) => AnsiDoc"
+    "signature": "declare const cursorDown: (lines?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -1046,7 +1118,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorForward: (columns?: number) => AnsiDoc"
+    "signature": "declare const cursorForward: (columns?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -1061,7 +1134,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorBackward: (columns?: number) => AnsiDoc"
+    "signature": "declare const cursorBackward: (columns?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L135"
   },
   {
     "_tag": "Constant",
@@ -1076,7 +1150,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorLeft: AnsiDoc"
+    "signature": "declare const cursorLeft: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -1091,7 +1166,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorSavePosition: AnsiDoc"
+    "signature": "declare const cursorSavePosition: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L151"
   },
   {
     "_tag": "Constant",
@@ -1106,7 +1182,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorRestorePosition: AnsiDoc"
+    "signature": "declare const cursorRestorePosition: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -1121,7 +1198,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorNextLine: (rows?: number) => AnsiDoc"
+    "signature": "declare const cursorNextLine: (rows?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -1136,7 +1214,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorPrevLine: (rows?: number) => AnsiDoc"
+    "signature": "declare const cursorPrevLine: (rows?: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L178"
   },
   {
     "_tag": "Constant",
@@ -1151,7 +1230,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorHide: AnsiDoc"
+    "signature": "declare const cursorHide: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L186"
   },
   {
     "_tag": "Constant",
@@ -1166,7 +1246,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const cursorShow: AnsiDoc"
+    "signature": "declare const cursorShow: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L194"
   },
   {
     "_tag": "Constant",
@@ -1181,7 +1262,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseLines: (rows: number) => AnsiDoc"
+    "signature": "declare const eraseLines: (rows: number) => AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L202"
   },
   {
     "_tag": "Constant",
@@ -1196,7 +1278,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseEndLine: AnsiDoc"
+    "signature": "declare const eraseEndLine: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L212"
   },
   {
     "_tag": "Constant",
@@ -1211,7 +1294,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseStartLine: AnsiDoc"
+    "signature": "declare const eraseStartLine: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L222"
   },
   {
     "_tag": "Constant",
@@ -1226,7 +1310,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseLine: AnsiDoc"
+    "signature": "declare const eraseLine: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L232"
   },
   {
     "_tag": "Constant",
@@ -1241,7 +1326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseDown: AnsiDoc"
+    "signature": "declare const eraseDown: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L242"
   },
   {
     "_tag": "Constant",
@@ -1256,7 +1342,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseUp: AnsiDoc"
+    "signature": "declare const eraseUp: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L252"
   },
   {
     "_tag": "Constant",
@@ -1271,7 +1358,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "commands",
-    "signature": "declare const eraseScreen: AnsiDoc"
+    "signature": "declare const eraseScreen: AnsiDoc",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L260"
   },
   {
     "_tag": "Constant",
@@ -1285,7 +1373,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "destructors",
-    "signature": "declare const render: { (config: AnsiDoc.RenderConfig): (self: AnsiDoc) => string; (self: AnsiDoc, config: AnsiDoc.RenderConfig): string; }"
+    "signature": "declare const render: { (config: AnsiDoc.RenderConfig): (self: AnsiDoc) => string; (self: AnsiDoc, config: AnsiDoc.RenderConfig): string; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L270"
   },
   {
     "_tag": "TypeAlias",
@@ -1299,7 +1388,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type AnsiDoc = Doc<Ansi>"
+    "signature": "type AnsiDoc = Doc<Ansi>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L18"
   },
   {
     "_tag": "Interface",
@@ -1313,7 +1403,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Compact {\n    readonly style: \"compact\"\n  }"
+    "signature": "export interface Compact {\n    readonly style: \"compact\"\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L34"
   },
   {
     "_tag": "Interface",
@@ -1327,7 +1418,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Pretty {\n    readonly style: \"pretty\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }"
+    "signature": "export interface Pretty {\n    readonly style: \"pretty\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L42"
   },
   {
     "_tag": "Interface",
@@ -1341,7 +1433,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Smart {\n    readonly style: \"smart\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }"
+    "signature": "export interface Smart {\n    readonly style: \"smart\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L51"
   },
   {
     "_tag": "TypeAlias",
@@ -1355,7 +1448,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type RenderConfig = Compact | Pretty | Smart"
+    "signature": "type RenderConfig = Compact | Pretty | Smart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -1369,7 +1463,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const black: Color"
+    "signature": "declare const black: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L89"
   },
   {
     "_tag": "Constant",
@@ -1383,7 +1478,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const red: Color"
+    "signature": "declare const red: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L95"
   },
   {
     "_tag": "Constant",
@@ -1397,7 +1493,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const green: Color"
+    "signature": "declare const green: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L101"
   },
   {
     "_tag": "Constant",
@@ -1411,7 +1508,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const yellow: Color"
+    "signature": "declare const yellow: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -1425,7 +1523,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const blue: Color"
+    "signature": "declare const blue: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -1439,7 +1538,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const magenta: Color"
+    "signature": "declare const magenta: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -1453,7 +1553,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const cyan: Color"
+    "signature": "declare const cyan: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L125"
   },
   {
     "_tag": "Constant",
@@ -1467,7 +1568,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const white: Color"
+    "signature": "declare const white: Color",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L131"
   },
   {
     "_tag": "Constant",
@@ -1481,7 +1583,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "destructors",
-    "signature": "declare const toCode: (color: Color) => number"
+    "signature": "declare const toCode: (color: Color) => number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L141"
   },
   {
     "_tag": "Interface",
@@ -1495,7 +1598,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Black {\n  readonly _tag: \"Black\"\n}"
+    "signature": "export interface Black {\n  readonly _tag: \"Black\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L21"
   },
   {
     "_tag": "Interface",
@@ -1509,7 +1613,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Red {\n  readonly _tag: \"Red\"\n}"
+    "signature": "export interface Red {\n  readonly _tag: \"Red\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L29"
   },
   {
     "_tag": "Interface",
@@ -1523,7 +1628,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Green {\n  readonly _tag: \"Green\"\n}"
+    "signature": "export interface Green {\n  readonly _tag: \"Green\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L37"
   },
   {
     "_tag": "Interface",
@@ -1537,7 +1643,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Yellow {\n  readonly _tag: \"Yellow\"\n}"
+    "signature": "export interface Yellow {\n  readonly _tag: \"Yellow\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L45"
   },
   {
     "_tag": "Interface",
@@ -1551,7 +1658,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Blue {\n  readonly _tag: \"Blue\"\n}"
+    "signature": "export interface Blue {\n  readonly _tag: \"Blue\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L53"
   },
   {
     "_tag": "Interface",
@@ -1565,7 +1673,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Magenta {\n  readonly _tag: \"Magenta\"\n}"
+    "signature": "export interface Magenta {\n  readonly _tag: \"Magenta\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L61"
   },
   {
     "_tag": "Interface",
@@ -1579,7 +1688,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Cyan {\n  readonly _tag: \"Cyan\"\n}"
+    "signature": "export interface Cyan {\n  readonly _tag: \"Cyan\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L69"
   },
   {
     "_tag": "Interface",
@@ -1593,7 +1703,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface White {\n  readonly _tag: \"White\"\n}"
+    "signature": "export interface White {\n  readonly _tag: \"White\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L77"
   },
   {
     "_tag": "TypeAlias",
@@ -1607,6 +1718,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Color = Black | Red | Green | Yellow | Blue | Magenta | Cyan | White"
+    "signature": "type Color = Black | Red | Green | Yellow | Blue | Magenta | Cyan | White",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L15"
   }
 ]

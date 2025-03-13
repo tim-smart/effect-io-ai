@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class MysqlDrizzle"
+    "signature": "declare class MysqlDrizzle",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<MySqlRemoteDatabase, never, Client.SqlClient>"
+    "signature": "declare const make: Effect.Effect<MySqlRemoteDatabase, never, Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<MysqlDrizzle, never, Client.SqlClient>"
+    "signature": "declare const layer: Layer.Layer<MysqlDrizzle, never, Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L39"
   },
   {
     "_tag": "Class",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class PgDrizzle"
+    "signature": "declare class PgDrizzle",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<PgRemoteDatabase, never, Client.SqlClient>"
+    "signature": "declare const make: Effect.Effect<PgRemoteDatabase, never, Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<PgDrizzle, never, Client.SqlClient>"
+    "signature": "declare const layer: Layer.Layer<PgDrizzle, never, Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L39"
   },
   {
     "_tag": "Class",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class SqliteDrizzle"
+    "signature": "declare class SqliteDrizzle",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<SqliteRemoteDatabase<Record<string, never>>, never, Client.SqlClient | Scope>"
+    "signature": "declare const make: Effect.Effect<SqliteRemoteDatabase<Record<string, never>>, never, Client.SqlClient | Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -123,6 +131,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<SqliteDrizzle, never, Client.SqlClient>"
+    "signature": "declare const layer: Layer.Layer<SqliteDrizzle, never, Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L40"
   }
 ]

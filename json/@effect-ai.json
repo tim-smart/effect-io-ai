@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class AiChat"
+    "signature": "declare class AiChat",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromInput: (input: AiInput.Input) => Effect.Effect<AiChat.Service, never, Completions>"
+    "signature": "declare const fromInput: (input: AiInput.Input) => Effect.Effect<AiChat.Service, never, Completions>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const empty: Effect.Effect<AiChat.Service, never, Completions>"
+    "signature": "declare const empty: Effect.Effect<AiChat.Service, never, Completions>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L247"
   },
   {
     "_tag": "Function",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromExport: (data: unknown) => Effect.Effect<AiChat.Service, ParseError, Completions>"
+    "signature": "declare const fromExport: (data: unknown) => Effect.Effect<AiChat.Service, ParseError, Completions>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L253"
   },
   {
     "_tag": "Function",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromJson: (data: string) => Effect.Effect<AiChat.Service, ParseError, Completions>"
+    "signature": "declare const fromJson: (data: string) => Effect.Effect<AiChat.Service, ParseError, Completions>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L262"
   },
   {
     "_tag": "Interface",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly history: Effect.Effect<AiInput.AiInput>\n    readonly export: Effect.Effect<unknown>\n    readonly exportJson: Effect.Effect<string>\n    readonly send: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Completions.StructuredSchema<A, I, R>\n      }): Effect.Effect<A, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<A, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }"
+    "signature": "export interface Service {\n    readonly history: Effect.Effect<AiInput.AiInput>\n    readonly export: Effect.Effect<unknown>\n    readonly exportJson: Effect.Effect<string>\n    readonly send: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Completions.StructuredSchema<A, I, R>\n      }): Effect.Effect<A, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<A, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L36"
   },
   {
     "_tag": "Class",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "declare class AiError"
+    "signature": "declare class AiError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L10"
   },
   {
     "_tag": "TypeAlias",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L16"
   },
   {
     "_tag": "Class",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class TextPart"
+    "signature": "declare class TextPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L37"
   },
   {
     "_tag": "Class",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ImageUrlPart"
+    "signature": "declare class ImageUrlPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L68"
   },
   {
     "_tag": "Class",
@@ -165,7 +176,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ImagePart"
+    "signature": "declare class ImagePart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L138"
   },
   {
     "_tag": "Class",
@@ -179,7 +191,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ToolCallPart"
+    "signature": "declare class ToolCallPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L221"
   },
   {
     "_tag": "Class",
@@ -193,7 +206,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ToolCallResolvedPart"
+    "signature": "declare class ToolCallResolvedPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L236"
   },
   {
     "_tag": "Class",
@@ -207,7 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "message",
-    "signature": "declare class Message"
+    "signature": "declare class Message",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L300"
   },
   {
     "_tag": "Class",
@@ -221,7 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "system",
-    "signature": "declare class SystemInstruction"
+    "signature": "declare class SystemInstruction",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L452"
   },
   {
     "_tag": "Constant",
@@ -235,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const PartTypeId: unique symbol"
+    "signature": "declare const PartTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -249,7 +266,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const ImageQuality: Schema_.Literal<[\"low\", \"high\", \"auto\"]>"
+    "signature": "declare const ImageQuality: Schema_.Literal<[\"low\", \"high\", \"auto\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -263,7 +281,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "base64",
-    "signature": "declare const Base64DataUrl: Base64DataUrl"
+    "signature": "declare const Base64DataUrl: Base64DataUrl",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L101"
   },
   {
     "_tag": "Constant",
@@ -277,7 +296,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const Part: Part.Schema"
+    "signature": "declare const Part: Part.Schema",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L282"
   },
   {
     "_tag": "Constant",
@@ -291,7 +311,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "message",
-    "signature": "declare const MessageTypeId: unique symbol"
+    "signature": "declare const MessageTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L288"
   },
   {
     "_tag": "Constant",
@@ -305,7 +326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const empty: AiInput"
+    "signature": "declare const empty: AiInput",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L415"
   },
   {
     "_tag": "Constant",
@@ -319,7 +341,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": "declare const Schema: Schema_.Chunk<typeof Message>"
+    "signature": "declare const Schema: Schema_.Chunk<typeof Message>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L421"
   },
   {
     "_tag": "Constant",
@@ -333,7 +356,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": "declare const SchemaJson: Schema_.Schema<Chunk.Chunk<Message>, string, never>"
+    "signature": "declare const SchemaJson: Schema_.Schema<Chunk.Chunk<Message>, string, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L427"
   },
   {
     "_tag": "Constant",
@@ -347,7 +371,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "system",
-    "signature": "declare const provideSystem: { (input: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, SystemInstruction>>; <A, E, R>(effect: Effect.Effect<A, E, R>, input: string): Effect.Effect<A, E, Exclude<R, SystemInstruction>>; }"
+    "signature": "declare const provideSystem: { (input: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, SystemInstruction>>; <A, E, R>(effect: Effect.Effect<A, E, R>, input: string): Effect.Effect<A, E, Exclude<R, SystemInstruction>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L461"
   },
   {
     "_tag": "Function",
@@ -361,7 +386,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const isPart: (u: unknown) => u is Part"
+    "signature": "declare const isPart: (u: unknown) => u is Part",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L258"
   },
   {
     "_tag": "Function",
@@ -375,7 +401,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (input: Input, options?: { readonly role?: AiRole.AiRole; }) => AiInput"
+    "signature": "declare const make: (input: Input, options?: { readonly role?: AiRole.AiRole; }) => AiInput",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L387"
   },
   {
     "_tag": "Interface",
@@ -389,7 +416,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "base64",
-    "signature": "export interface Base64DataUrl extends\n  Schema_.transformOrFail<\n    typeof Schema_.String,\n    Schema_.Struct<{\n      data: Schema_.Schema<Uint8Array>\n      contentType: typeof Schema_.String\n    }>\n  >\n{}"
+    "signature": "export interface Base64DataUrl extends\n  Schema_.transformOrFail<\n    typeof Schema_.String,\n    Schema_.Struct<{\n      data: Schema_.Schema<Uint8Array>\n      contentType: typeof Schema_.String\n    }>\n  >\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L87"
   },
   {
     "_tag": "TypeAlias",
@@ -403,7 +431,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type PartTypeId = typeof PartTypeId"
+    "signature": "type PartTypeId = typeof PartTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L31"
   },
   {
     "_tag": "TypeAlias",
@@ -417,7 +446,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type ImageQuality = typeof ImageQuality.Type"
+    "signature": "type ImageQuality = typeof ImageQuality.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L62"
   },
   {
     "_tag": "TypeAlias",
@@ -431,7 +461,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type Part = TextPart | ToolCallPart | ToolCallResolvedPart | ImagePart | ImageUrlPart"
+    "signature": "type Part = TextPart | ToolCallPart | ToolCallResolvedPart | ImagePart | ImageUrlPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L252"
   },
   {
     "_tag": "TypeAlias",
@@ -445,7 +476,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "message",
-    "signature": "type MessageTypeId = typeof MessageTypeId"
+    "signature": "type MessageTypeId = typeof MessageTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L294"
   },
   {
     "_tag": "TypeAlias",
@@ -459,7 +491,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Input = | string\n  | Part\n  | Iterable<Part>\n  | Message\n  | Iterable<Message>\n  | AiResponse\n  | WithResolved<unknown>"
+    "signature": "type Input = | string\n  | Part\n  | Iterable<Part>\n  | Message\n  | Iterable<Message>\n  | AiResponse\n  | WithResolved<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L433"
   },
   {
     "_tag": "TypeAlias",
@@ -473,7 +506,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type AiInput = Chunk.Chunk<Message>"
+    "signature": "type AiInput = Chunk.Chunk<Message>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L446"
   },
   {
     "_tag": "TypeAlias",
@@ -487,7 +521,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type Schema = Schema_.Union<[\n    typeof TextPart,\n    typeof ToolCallPart,\n    typeof ToolCallResolvedPart,\n    typeof ImagePart,\n    typeof ImageUrlPart\n  ]>"
+    "signature": "type Schema = Schema_.Union<[\n    typeof TextPart,\n    typeof ToolCallPart,\n    typeof ToolCallResolvedPart,\n    typeof ImagePart,\n    typeof ImageUrlPart\n  ]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L269"
   },
   {
     "_tag": "TypeAlias",
@@ -501,7 +536,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "message",
-    "signature": "type Input = string | Part | Iterable<Part>"
+    "signature": "type Input = string | Part | Iterable<Part>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L380"
   },
   {
     "_tag": "Constant",
@@ -515,7 +551,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -529,7 +566,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const PlanTypeId: unique symbol"
+    "signature": "declare const PlanTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L27"
   },
   {
     "_tag": "Function",
@@ -543,7 +581,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <Provides, Requires>(options: { readonly model: string; readonly cacheKey: symbol; readonly requires: Context.Tag<Requires, any>; readonly provides: AiModel.ContextBuilder<Provides, Requires>; readonly updateContext: (context: Context.Context<Provides>) => Context.Context<Provides>; }) => AiModel<Provides, Requires>"
+    "signature": "declare const make: <Provides, Requires>(options: { readonly model: string; readonly cacheKey: symbol; readonly requires: Context.Tag<Requires, any>; readonly provides: AiModel.ContextBuilder<Provides, Requires>; readonly updateContext: (context: Context.Context<Provides>) => Context.Context<Provides>; }) => AiModel<Provides, Requires>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L72"
   },
   {
     "_tag": "Interface",
@@ -557,7 +596,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface AiModel<in out Provides, in out Requires> extends AiPlan.AiPlan<unknown, Provides, Requires> {\n  readonly [TypeId]: TypeId\n  readonly model: string\n  readonly cacheKey: symbol\n  readonly requires: Context.Tag<Requires, any>\n  readonly provides: AiModel.ContextBuilder<Provides, Requires>\n  readonly updateContext: (context: Context.Context<Provides>) => Context.Context<Provides>\n}"
+    "signature": "export interface AiModel<in out Provides, in out Requires> extends AiPlan.AiPlan<unknown, Provides, Requires> {\n  readonly [TypeId]: TypeId\n  readonly model: string\n  readonly cacheKey: symbol\n  readonly requires: Context.Tag<Requires, any>\n  readonly provides: AiModel.ContextBuilder<Provides, Requires>\n  readonly updateContext: (context: Context.Context<Provides>) => Context.Context<Provides>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L39"
   },
   {
     "_tag": "TypeAlias",
@@ -571,7 +611,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L21"
   },
   {
     "_tag": "TypeAlias",
@@ -585,7 +626,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type PlanTypeId = typeof TypeId"
+    "signature": "type PlanTypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L33"
   },
   {
     "_tag": "TypeAlias",
@@ -599,7 +641,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "AiModel",
-    "signature": "type ContextBuilder<Provides, Requires> = Effect.Effect<\n    Context.Context<Provides>,\n    never,\n    Requires | Scope.Scope\n  >"
+    "signature": "type ContextBuilder<Provides, Requires> = Effect.Effect<\n    Context.Context<Provides>,\n    never,\n    Requires | Scope.Scope\n  >",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModel.ts#L56"
   },
   {
     "_tag": "Class",
@@ -613,7 +656,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class AiModels"
+    "signature": "declare class AiModels",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModels.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -627,7 +671,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<AiModels, never, never>"
+    "signature": "declare const layer: Layer.Layer<AiModels, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModels.ts#L77"
   },
   {
     "_tag": "Interface",
@@ -641,7 +686,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly build: <Provides, Requires>(\n      model: AiModel<Provides, Requires>,\n      context: Context.Context<Requires>\n    ) => Effect.Effect<Context.Context<Provides>, never, Scope.Scope>\n  }"
+    "signature": "export interface Service {\n    readonly build: <Provides, Requires>(\n      model: AiModel<Provides, Requires>,\n      context: Context.Context<Requires>\n    ) => Effect.Effect<Context.Context<Provides>, never, Scope.Scope>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiModels.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -655,7 +701,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -669,7 +716,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromModel: <Provides, Requires, EW, Out, ES, RW = never, RS = never>(model: AiModel.AiModel<Provides, Requires>, options?: { readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }) => AiPlan<EW & ES, Provides, RW | RS | Requires>"
+    "signature": "declare const fromModel: <Provides, Requires, EW, Out, ES, RW = never, RS = never>(model: AiModel.AiModel<Provides, Requires>, options?: { readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }) => AiPlan<EW & ES, Provides, RW | RS | Requires>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L89"
   },
   {
     "_tag": "Constant",
@@ -683,7 +731,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "declare const withFallback: { <Provides, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): <E, Requires>(self: AiPlan<E, Provides, Requires>) => AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; <E, Provides, Requires, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(self: AiPlan<E, Provides, Requires>, options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; }"
+    "signature": "declare const withFallback: { <Provides, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): <E, Requires>(self: AiPlan<E, Provides, Requires>) => AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; <E, Provides, Requires, Provides2 extends Provides, Requires2, Out, EW, ES, RW = never, RS = never>(self: AiPlan<E, Provides, Requires>, options: { readonly model: AiModel.AiModel<Provides2, Requires2>; readonly attempts?: number | undefined; readonly while?: ((error: EW) => boolean | Effect.Effect<boolean, never, RW>) | undefined; readonly schedule?: Schedule.Schedule<Out, ES, RS> | undefined; }): AiPlan<E & EW & ES, Provides & Provides2, Requires | Requires2 | RW | RS>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -697,7 +746,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combination",
-    "signature": "declare const concatSteps: { <Error2, Provides2, Requires2>(other: AiPlan<Error2, Provides2, Requires2>): <Error, Provides, Requires>(self: AiPlan<Error, Provides, Requires>) => AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; <Error, Provides, Requires, Error2, Provides2, Requires2>(self: AiPlan<Error, Provides, Requires>, other: AiPlan<Error2, Provides2, Requires2>): AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; }"
+    "signature": "declare const concatSteps: { <Error2, Provides2, Requires2>(other: AiPlan<Error2, Provides2, Requires2>): <Error, Provides, Requires>(self: AiPlan<Error, Provides, Requires>) => AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; <Error, Provides, Requires, Error2, Provides2, Requires2>(self: AiPlan<Error, Provides, Requires>, other: AiPlan<Error2, Provides2, Requires2>): AiPlan<Error & Error2, Provides & Provides2, Requires | Requires2>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L128"
   },
   {
     "_tag": "Interface",
@@ -711,7 +761,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "AiPlan",
-    "signature": "export interface AiPlan<in Error, in out Provides, in out Requires>\n  extends Pipeable, AiPlan.Builder<Provides, Requires>\n{\n  readonly [TypeId]: TypeId\n  readonly [Unify.typeSymbol]?: unknown\n  readonly [Unify.unifySymbol]?: AiPlanUnify<this>\n  readonly [Unify.ignoreSymbol]?: AiPlanUnifyIgnore\n  readonly steps: NonEmptyReadonlyArray<AiPlan.Step<Error, Provides, Requires>>\n}"
+    "signature": "export interface AiPlan<in Error, in out Provides, in out Requires>\n  extends Pipeable, AiPlan.Builder<Provides, Requires>\n{\n  readonly [TypeId]: TypeId\n  readonly [Unify.typeSymbol]?: unknown\n  readonly [Unify.unifySymbol]?: AiPlanUnify<this>\n  readonly [Unify.ignoreSymbol]?: AiPlanUnifyIgnore\n  readonly steps: NonEmptyReadonlyArray<AiPlan.Step<Error, Provides, Requires>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L30"
   },
   {
     "_tag": "Interface",
@@ -725,7 +776,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Plan",
-    "signature": "export interface AiPlanUnify<A extends { [Unify.typeSymbol]?: any }> extends Effect.EffectUnify<A> {\n  AiPlan?: () => Extract<A[Unify.typeSymbol], AiPlan<any, any, any>>\n}"
+    "signature": "export interface AiPlanUnify<A extends { [Unify.typeSymbol]?: any }> extends Effect.EffectUnify<A> {\n  AiPlan?: () => Extract<A[Unify.typeSymbol], AiPlan<any, any, any>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L44"
   },
   {
     "_tag": "Interface",
@@ -739,7 +791,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Plan",
-    "signature": "export interface AiPlanUnifyIgnore extends Effect.EffectUnifyIgnore {\n  Effect?: true\n}"
+    "signature": "export interface AiPlanUnifyIgnore extends Effect.EffectUnifyIgnore {\n  Effect?: true\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L52"
   },
   {
     "_tag": "TypeAlias",
@@ -753,7 +806,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L24"
   },
   {
     "_tag": "Interface",
@@ -767,7 +821,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "AiPlan",
-    "signature": "export interface Provider<Provides> {\n    readonly provide: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Provides>>\n  }"
+    "signature": "export interface Provider<Provides> {\n    readonly provide: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Provides>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L70"
   },
   {
     "_tag": "Interface",
@@ -781,7 +836,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "AiPlan",
-    "signature": "export interface Step<Error, Provides, Requires> {\n    readonly model: AiModel.AiModel<Provides, Requires>\n    readonly check: Option.Option<(error: Error) => boolean | Effect.Effect<boolean>>\n    readonly schedule: Option.Option<Schedule.Schedule<any, Error, Requires>>\n  }"
+    "signature": "export interface Step<Error, Provides, Requires> {\n    readonly model: AiModel.AiModel<Provides, Requires>\n    readonly check: Option.Option<(error: Error) => boolean | Effect.Effect<boolean>>\n    readonly schedule: Option.Option<Schedule.Schedule<any, Error, Requires>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L78"
   },
   {
     "_tag": "TypeAlias",
@@ -795,7 +851,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "AiPlan",
-    "signature": "type Builder<Provides, Requires> = Effect.Effect<Provider<Provides>, never, AiModels | Requires>"
+    "signature": "type Builder<Provides, Requires> = Effect.Effect<Provider<Provides>, never, AiModels | Requires>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiPlan.ts#L64"
   },
   {
     "_tag": "Class",
@@ -809,7 +866,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class TextPart"
+    "signature": "declare class TextPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L44"
   },
   {
     "_tag": "Class",
@@ -823,7 +881,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ToolCallPart"
+    "signature": "declare class ToolCallPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L75"
   },
   {
     "_tag": "Class",
@@ -837,7 +896,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare class ImageUrlPart"
+    "signature": "declare class ImageUrlPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L125"
   },
   {
     "_tag": "Class",
@@ -851,7 +911,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class AiResponse"
+    "signature": "declare class AiResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L154"
   },
   {
     "_tag": "Class",
@@ -865,7 +926,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "declare class WithResolved<A>"
+    "signature": "declare class WithResolved<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L292"
   },
   {
     "_tag": "Constant",
@@ -879,7 +941,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -893,7 +956,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const PartTypeId: unique symbol"
+    "signature": "declare const PartTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -907,7 +971,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const ToolCallId: Schema.brand<typeof Schema.String, \"ToolCallId\">"
+    "signature": "declare const ToolCallId: Schema.brand<typeof Schema.String, \"ToolCallId\">",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L63"
   },
   {
     "_tag": "Constant",
@@ -921,7 +986,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "declare const Part: Schema.Union<[typeof TextPart, typeof ToolCallPart, typeof ImageUrlPart]>"
+    "signature": "declare const Part: Schema.Union<[typeof TextPart, typeof ToolCallPart, typeof ImageUrlPart]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -935,7 +1001,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "declare const WithResolvedTypeId: unique symbol"
+    "signature": "declare const WithResolvedTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L280"
   },
   {
     "_tag": "TypeAlias",
@@ -949,7 +1016,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L24"
   },
   {
     "_tag": "TypeAlias",
@@ -963,7 +1031,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type PartTypeId = typeof PartTypeId"
+    "signature": "type PartTypeId = typeof PartTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -977,7 +1046,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type ToolCallId = typeof ToolCallId.Type"
+    "signature": "type ToolCallId = typeof ToolCallId.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L69"
   },
   {
     "_tag": "TypeAlias",
@@ -991,7 +1061,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "parts",
-    "signature": "type Part = TextPart | ToolCallPart | ImageUrlPart"
+    "signature": "type Part = TextPart | ToolCallPart | ImageUrlPart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L138"
   },
   {
     "_tag": "TypeAlias",
@@ -1005,7 +1076,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tools",
-    "signature": "type WithResolvedTypeId = typeof WithResolvedTypeId"
+    "signature": "type WithResolvedTypeId = typeof WithResolvedTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L286"
   },
   {
     "_tag": "Class",
@@ -1019,7 +1091,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class User"
+    "signature": "declare class User",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L29"
   },
   {
     "_tag": "Class",
@@ -1033,7 +1106,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class UserWithName"
+    "signature": "declare class UserWithName",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L56"
   },
   {
     "_tag": "Class",
@@ -1047,7 +1121,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class Model"
+    "signature": "declare class Model",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L87"
   },
   {
     "_tag": "Constant",
@@ -1061,7 +1136,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -1075,7 +1151,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const user: AiRole"
+    "signature": "declare const user: AiRole",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -1089,7 +1166,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const model: AiRole"
+    "signature": "declare const model: AiRole",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -1103,7 +1181,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "roles",
-    "signature": "declare const AiRole: Schema.Union<[typeof User, typeof UserWithName, typeof Model]>"
+    "signature": "declare const AiRole: Schema.Union<[typeof User, typeof UserWithName, typeof Model]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L114"
   },
   {
     "_tag": "Function",
@@ -1117,7 +1196,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const userWithName: (name: string) => AiRole"
+    "signature": "declare const userWithName: (name: string) => AiRole",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L81"
   },
   {
     "_tag": "TypeAlias",
@@ -1131,7 +1211,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L17"
   },
   {
     "_tag": "TypeAlias",
@@ -1145,7 +1226,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type AiRole = User | UserWithName | Model"
+    "signature": "type AiRole = User | UserWithName | Model",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiRole.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -1160,7 +1242,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }"
+    "signature": "declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L271"
   },
   {
     "_tag": "Function",
@@ -1174,7 +1257,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const addSpanAttributes: (keyPrefix: string, transformKey: (key: string) => string) => <Attributes extends Record<string, any>>(span: Span, attributes: Attributes) => void"
+    "signature": "declare const addSpanAttributes: (keyPrefix: string, transformKey: (key: string) => string) => <Attributes extends Record<string, any>>(span: Span, attributes: Attributes) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L232"
   },
   {
     "_tag": "TypeAlias",
@@ -1189,7 +1273,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type GenAITelemetryAttributes = Simplify<\n  & GenAI.AttributesWithPrefix<GenAI.BaseAttributes, \"gen_ai\">\n  & GenAI.AttributesWithPrefix<GenAI.OperationAttributes, \"gen_ai.operation\">\n  & GenAI.AttributesWithPrefix<GenAI.TokenAttributes, \"gen_ai.token\">\n  & GenAI.AttributesWithPrefix<GenAI.UsageAttributes, \"gen_ai.usage\">\n  & GenAI.AttributesWithPrefix<GenAI.RequestAttributes, \"gen_ai.request\">\n  & GenAI.AttributesWithPrefix<GenAI.ResponseAttributes, \"gen_ai.response\">\n>"
+    "signature": "type GenAITelemetryAttributes = Simplify<\n  & GenAI.AttributesWithPrefix<GenAI.BaseAttributes, \"gen_ai\">\n  & GenAI.AttributesWithPrefix<GenAI.OperationAttributes, \"gen_ai.operation\">\n  & GenAI.AttributesWithPrefix<GenAI.TokenAttributes, \"gen_ai.token\">\n  & GenAI.AttributesWithPrefix<GenAI.UsageAttributes, \"gen_ai.usage\">\n  & GenAI.AttributesWithPrefix<GenAI.RequestAttributes, \"gen_ai.request\">\n  & GenAI.AttributesWithPrefix<GenAI.ResponseAttributes, \"gen_ai.response\">\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L20"
   },
   {
     "_tag": "TypeAlias",
@@ -1203,7 +1288,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type GenAITelemetryAttributeOptions = GenAI.BaseAttributes & {\n  readonly operation?: GenAI.OperationAttributes | undefined\n  readonly request?: GenAI.RequestAttributes | undefined\n  readonly response?: GenAI.ResponseAttributes | undefined\n  readonly token?: GenAI.TokenAttributes | undefined\n  readonly usage?: GenAI.UsageAttributes | undefined\n}"
+    "signature": "type GenAITelemetryAttributeOptions = GenAI.BaseAttributes & {\n  readonly operation?: GenAI.OperationAttributes | undefined\n  readonly request?: GenAI.RequestAttributes | undefined\n  readonly response?: GenAI.ResponseAttributes | undefined\n  readonly token?: GenAI.TokenAttributes | undefined\n  readonly usage?: GenAI.UsageAttributes | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L255"
   },
   {
     "_tag": "Interface",
@@ -1218,7 +1304,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface BaseAttributes {\n    /**\n     * The Generative AI product as identified by the client or server\n     * instrumentation.\n     */\n    readonly system?: (string & {}) | WellKnownSystem | null | undefined\n  }"
+    "signature": "export interface BaseAttributes {\n    /**\n     * The Generative AI product as identified by the client or server\n     * instrumentation.\n     */\n    readonly system?: (string & {}) | WellKnownSystem | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L55"
   },
   {
     "_tag": "Interface",
@@ -1233,7 +1320,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface OperationAttributes {\n    readonly name?: (string & {}) | WellKnownOperationName | null | undefined\n  }"
+    "signature": "export interface OperationAttributes {\n    readonly name?: (string & {}) | WellKnownOperationName | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L70"
   },
   {
     "_tag": "Interface",
@@ -1248,7 +1336,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface TokenAttributes {\n    readonly type?: string | null | undefined\n  }"
+    "signature": "export interface TokenAttributes {\n    readonly type?: string | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L81"
   },
   {
     "_tag": "Interface",
@@ -1263,7 +1352,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface UsageAttributes {\n    readonly inputTokens?: number | null | undefined\n    readonly outputTokens?: number | null | undefined\n  }"
+    "signature": "export interface UsageAttributes {\n    readonly inputTokens?: number | null | undefined\n    readonly outputTokens?: number | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L92"
   },
   {
     "_tag": "Interface",
@@ -1278,7 +1368,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface RequestAttributes {\n    /**\n     * The name of the GenAI model a request is being made to.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly temperature?: number | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly topK?: number | null | undefined\n    /**\n     * The top_k sampling setting for the GenAI request.\n     */\n    readonly topP?: number | null | undefined\n    /**\n     * The top_p sampling setting for the GenAI request.\n     */\n    readonly maxTokens?: number | null | undefined\n    /**\n     * The encoding formats requested in an embeddings operation, if specified.\n     */\n    readonly encodingFormats?: ReadonlyArray<string> | null | undefined\n    /**\n     * List of sequences that the model will use to stop generating further\n     * tokens.\n     */\n    readonly stopSequences?: ReadonlyArray<string> | null | undefined\n    /**\n     * The frequency penalty setting for the GenAI request.\n     */\n    readonly frequencyPenalty?: number | null | undefined\n    /**\n     * The presence penalty setting for the GenAI request.\n     */\n    readonly presencePenalty?: number | null | undefined\n    /**\n     * The seed setting for the GenAI request. Requests with same seed value\n     * are more likely to return same result.\n     */\n    readonly seed?: number | null | undefined\n  }"
+    "signature": "export interface RequestAttributes {\n    /**\n     * The name of the GenAI model a request is being made to.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly temperature?: number | null | undefined\n    /**\n     * The temperature setting for the GenAI request.\n     */\n    readonly topK?: number | null | undefined\n    /**\n     * The top_k sampling setting for the GenAI request.\n     */\n    readonly topP?: number | null | undefined\n    /**\n     * The top_p sampling setting for the GenAI request.\n     */\n    readonly maxTokens?: number | null | undefined\n    /**\n     * The encoding formats requested in an embeddings operation, if specified.\n     */\n    readonly encodingFormats?: ReadonlyArray<string> | null | undefined\n    /**\n     * List of sequences that the model will use to stop generating further\n     * tokens.\n     */\n    readonly stopSequences?: ReadonlyArray<string> | null | undefined\n    /**\n     * The frequency penalty setting for the GenAI request.\n     */\n    readonly frequencyPenalty?: number | null | undefined\n    /**\n     * The presence penalty setting for the GenAI request.\n     */\n    readonly presencePenalty?: number | null | undefined\n    /**\n     * The seed setting for the GenAI request. Requests with same seed value\n     * are more likely to return same result.\n     */\n    readonly seed?: number | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L104"
   },
   {
     "_tag": "Interface",
@@ -1293,7 +1384,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ResponseAttributes {\n    /**\n     * The unique identifier for the completion.\n     */\n    readonly id?: string | null | undefined\n    /**\n     * The name of the model that generated the response.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * Array of reasons the model stopped generating tokens, corresponding to\n     * each generation received.\n     */\n    readonly finishReasons?: ReadonlyArray<string> | null | undefined\n  }"
+    "signature": "export interface ResponseAttributes {\n    /**\n     * The unique identifier for the completion.\n     */\n    readonly id?: string | null | undefined\n    /**\n     * The name of the model that generated the response.\n     */\n    readonly model?: string | null | undefined\n    /**\n     * Array of reasons the model stopped generating tokens, corresponding to\n     * each generation received.\n     */\n    readonly finishReasons?: ReadonlyArray<string> | null | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L156"
   },
   {
     "_tag": "TypeAlias",
@@ -1308,7 +1400,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type AllAttributes = & BaseAttributes\n    & OperationAttributes\n    & TokenAttributes\n    & UsageAttributes\n    & RequestAttributes\n    & ResponseAttributes"
+    "signature": "type AllAttributes = & BaseAttributes\n    & OperationAttributes\n    & TokenAttributes\n    & UsageAttributes\n    & RequestAttributes\n    & ResponseAttributes",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -1323,7 +1416,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type WellKnownOperationName = \"chat\" | \"embeddings\" | \"text_completion\""
+    "signature": "type WellKnownOperationName = \"chat\" | \"embeddings\" | \"text_completion\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L182"
   },
   {
     "_tag": "TypeAlias",
@@ -1338,7 +1432,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type WellKnownSystem = | \"anthropic\"\n    | \"aws.bedrock\"\n    | \"az.ai.inference\"\n    | \"az.ai.openai\"\n    | \"cohere\"\n    | \"deepseek\"\n    | \"gemini\"\n    | \"groq\"\n    | \"ibm.watsonx.ai\"\n    | \"mistral_ai\"\n    | \"openai\"\n    | \"perplexity\"\n    | \"vertex_ai\"\n    | \"xai\""
+    "signature": "type WellKnownSystem = | \"anthropic\"\n    | \"aws.bedrock\"\n    | \"az.ai.inference\"\n    | \"az.ai.openai\"\n    | \"cohere\"\n    | \"deepseek\"\n    | \"gemini\"\n    | \"groq\"\n    | \"ibm.watsonx.ai\"\n    | \"mistral_ai\"\n    | \"openai\"\n    | \"perplexity\"\n    | \"vertex_ai\"\n    | \"xai\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L193"
   },
   {
     "_tag": "TypeAlias",
@@ -1352,7 +1447,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type AttributesWithPrefix<Attributes, Prefix> = {\n    [Name in keyof Attributes as `${Prefix}.${FormatAttributeName<Name>}`]: Attributes[Name]\n  }"
+    "signature": "type AttributesWithPrefix<Attributes, Prefix> = {\n    [Name in keyof Attributes as `${Prefix}.${FormatAttributeName<Name>}`]: Attributes[Name]\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L213"
   },
   {
     "_tag": "TypeAlias",
@@ -1366,7 +1462,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type FormatAttributeName<T> = T extends string ?\n    T extends `${infer First}${infer Rest}`\n      ? `${First extends Uppercase<First> ? \"_\" : \"\"}${Lowercase<First>}${FormatAttributeName<Rest>}`\n    : T :\n    never"
+    "signature": "type FormatAttributeName<T> = T extends string ?\n    T extends `${infer First}${infer Rest}`\n      ? `${First extends Uppercase<First> ? \"_\" : \"\"}${Lowercase<First>}${FormatAttributeName<Rest>}`\n    : T :\n    never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L221"
   },
   {
     "_tag": "Class",
@@ -1380,7 +1477,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "registry",
-    "signature": "declare class Registry"
+    "signature": "declare class Registry",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L141"
   },
   {
     "_tag": "Constant",
@@ -1394,7 +1492,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -1408,7 +1507,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const empty: AiToolkit<never>"
+    "signature": "declare const empty: AiToolkit<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -1422,7 +1522,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "declare const HandlersTypeId: unique symbol"
+    "signature": "declare const HandlersTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L244"
   },
   {
     "_tag": "Interface",
@@ -1436,7 +1537,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface AiToolkit<in out Tools extends Tool.AnySchema>\n  extends Effect.Effect<Handlers<Tools>, never, Tool.Services<Tools> | Registry>, Inspectable.Inspectable\n{\n  readonly [TypeId]: TypeId\n  readonly tools: HashMap.HashMap<string, Tools>\n  readonly add: <S extends Tool.AnySchema>(tool: S) => AiToolkit<Tools | S>\n  readonly addAll: <ToAdd extends ReadonlyArray<Tool.AnySchema>>(\n    ...tools: ToAdd\n  ) => AiToolkit<Tools | ToAdd[number]>\n  readonly concat: <T extends Tool.AnySchema>(that: AiToolkit<T>) => AiToolkit<Tools | T>\n  readonly implement: <R, EX = never, RX = never>(\n    f: (\n      handlers: Handlers<Tools>\n    ) => Handlers<never, R> | Effect.Effect<Handlers<never, R>, EX, RX>\n  ) => Layer.Layer<Tool.ServiceFromTag<Tools[\"_tag\"]> | Registry, EX, Exclude<R | RX, Scope>>\n}"
+    "signature": "export interface AiToolkit<in out Tools extends Tool.AnySchema>\n  extends Effect.Effect<Handlers<Tools>, never, Tool.Services<Tools> | Registry>, Inspectable.Inspectable\n{\n  readonly [TypeId]: TypeId\n  readonly tools: HashMap.HashMap<string, Tools>\n  readonly add: <S extends Tool.AnySchema>(tool: S) => AiToolkit<Tools | S>\n  readonly addAll: <ToAdd extends ReadonlyArray<Tool.AnySchema>>(\n    ...tools: ToAdd\n  ) => AiToolkit<Tools | ToAdd[number]>\n  readonly concat: <T extends Tool.AnySchema>(that: AiToolkit<T>) => AiToolkit<Tools | T>\n  readonly implement: <R, EX = never, RX = never>(\n    f: (\n      handlers: Handlers<Tools>\n    ) => Handlers<never, R> | Effect.Effect<Handlers<never, R>, EX, RX>\n  ) => Layer.Layer<Tool.ServiceFromTag<Tools[\"_tag\"]> | Registry, EX, Exclude<R | RX, Scope>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -1450,7 +1552,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "export interface Handlers<in out Tools extends Tool.AnySchema, R = never> {\n  readonly [HandlersTypeId]: Handlers.Variance<Tools>\n  readonly toolkit: AiToolkit<Tools>\n  readonly handlers: HashMap.HashMap<string, Tool.Handler<any, R>>\n  readonly handle: <Tag extends Types.Tags<Tools>, RH>(\n    tag: Tag,\n    f: Tool.Handler<Types.ExtractTag<Tools, Tag>, RH>\n  ) => Handlers<Types.ExcludeTag<Tools, Tag>, R | RH | Tool.Context<Types.ExtractTag<Tools, Tag>>>\n}"
+    "signature": "export interface Handlers<in out Tools extends Tool.AnySchema, R = never> {\n  readonly [HandlersTypeId]: Handlers.Variance<Tools>\n  readonly toolkit: AiToolkit<Tools>\n  readonly handlers: HashMap.HashMap<string, Tool.Handler<any, R>>\n  readonly handle: <Tag extends Types.Tags<Tools>, RH>(\n    tag: Tag,\n    f: Tool.Handler<Types.ExtractTag<Tools, Tag>, RH>\n  ) => Handlers<Types.ExcludeTag<Tools, Tag>, R | RH | Tool.Context<Types.ExtractTag<Tools, Tag>>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L256"
   },
   {
     "_tag": "TypeAlias",
@@ -1464,7 +1567,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L26"
   },
   {
     "_tag": "TypeAlias",
@@ -1478,7 +1582,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "type HandlersTypeId = typeof HandlersTypeId"
+    "signature": "type HandlersTypeId = typeof HandlersTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L250"
   },
   {
     "_tag": "TypeAlias",
@@ -1492,7 +1597,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Tools<A> = A extends AiToolkit<infer Tools> ? Tools : never"
+    "signature": "type Tools<A> = A extends AiToolkit<infer Tools> ? Tools : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L58"
   },
   {
     "_tag": "TypeAlias",
@@ -1506,7 +1612,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type SuccessSchema<A> = A extends AiToolkit<infer Tools> ? Tools[\"success\"] : never"
+    "signature": "type SuccessSchema<A> = A extends AiToolkit<infer Tools> ? Tools[\"success\"] : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L64"
   },
   {
     "_tag": "Interface",
@@ -1520,7 +1627,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "export interface AnySchema {\n    readonly [Schema.TypeId]: any\n    readonly _tag: string\n    readonly Type: Schema.SerializableWithResult.All\n    readonly success: Schema.Schema.Any\n  }"
+    "signature": "export interface AnySchema {\n    readonly [Schema.TypeId]: any\n    readonly _tag: string\n    readonly Type: Schema.SerializableWithResult.All\n    readonly success: Schema.Schema.Any\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L76"
   },
   {
     "_tag": "Interface",
@@ -1534,7 +1642,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "export interface Service<Tag extends string> {\n    readonly _: unique symbol\n    readonly name: Types.Invariant<Tag>\n  }"
+    "signature": "export interface Service<Tag extends string> {\n    readonly _: unique symbol\n    readonly name: Types.Invariant<Tag>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L119"
   },
   {
     "_tag": "TypeAlias",
@@ -1548,7 +1657,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type Success<Tool> = Schema.WithResult.Success<Tool[\"Type\"]>"
+    "signature": "type Success<Tool> = Schema.WithResult.Success<Tool[\"Type\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L87"
   },
   {
     "_tag": "TypeAlias",
@@ -1562,7 +1672,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type Failure<Tool> = Schema.WithResult.Failure<Tool[\"Type\"]>"
+    "signature": "type Failure<Tool> = Schema.WithResult.Failure<Tool[\"Type\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L93"
   },
   {
     "_tag": "TypeAlias",
@@ -1576,7 +1687,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type Context<Tool> = Schema.WithResult.Context<Tool[\"Type\"]>"
+    "signature": "type Context<Tool> = Schema.WithResult.Context<Tool[\"Type\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L99"
   },
   {
     "_tag": "TypeAlias",
@@ -1590,7 +1702,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type Handler<Tool, R> = (\n    params: Tool[\"Type\"]\n  ) => Effect.Effect<Success<Tool>, Failure<Tool>, R>"
+    "signature": "type Handler<Tool, R> = (\n    params: Tool[\"Type\"]\n  ) => Effect.Effect<Success<Tool>, Failure<Tool>, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L105"
   },
   {
     "_tag": "TypeAlias",
@@ -1604,7 +1717,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type HandlerAny = (params: any) => Effect.Effect<any, any, any>"
+    "signature": "type HandlerAny = (params: any) => Effect.Effect<any, any, any>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L113"
   },
   {
     "_tag": "TypeAlias",
@@ -1618,7 +1732,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type ServiceFromTag<Tag> = Tag extends infer T ? T extends string ? Service<T> : never : never"
+    "signature": "type ServiceFromTag<Tag> = Tag extends infer T ? T extends string ? Service<T> : never : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L128"
   },
   {
     "_tag": "TypeAlias",
@@ -1632,7 +1747,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tool",
-    "signature": "type Services<Tools> = ServiceFromTag<Tools[\"_tag\"]>"
+    "signature": "type Services<Tools> = ServiceFromTag<Tools[\"_tag\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L134"
   },
   {
     "_tag": "Interface",
@@ -1646,7 +1762,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "export interface Variance<Tools extends Tool.AnySchema> {\n    readonly _Tools: Types.Invariant<Tools>\n  }"
+    "signature": "export interface Variance<Tools extends Tool.AnySchema> {\n    readonly _Tools: Types.Invariant<Tools>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L275"
   },
   {
     "_tag": "Class",
@@ -1660,7 +1777,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class Completions"
+    "signature": "declare class Completions",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L27"
   },
   {
     "_tag": "Function",
@@ -1674,7 +1792,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: { readonly create: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Effect.Effect<AiResponse, AiError>; readonly stream: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Stream.Stream<AiResponse, AiError>; }) => Effect.Effect<Completions.Service>"
+    "signature": "declare const make: (options: { readonly create: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Effect.Effect<AiResponse, AiError>; readonly stream: (options: { readonly system: Option.Option<string>; readonly input: Chunk.NonEmptyChunk<Message>; readonly tools: Array<{ readonly name: string; readonly description: string; readonly parameters: JsonSchema.JsonSchema7; readonly structured: boolean; }>; readonly required: boolean | string; readonly span: Span; }) => Stream.Stream<AiResponse, AiError>; }) => Effect.Effect<Completions.Service>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L126"
   },
   {
     "_tag": "Interface",
@@ -1688,7 +1807,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface CompletionOptions {\n  readonly system: Option.Option<string>\n  readonly input: Chunk.NonEmptyChunk<Message>\n  readonly tools: Array<{\n    readonly name: string\n    readonly description: string\n    readonly parameters: JsonSchema.JsonSchema7\n    readonly structured: boolean\n  }>\n  readonly required: boolean | string\n}"
+    "signature": "export interface CompletionOptions {\n  readonly system: Option.Option<string>\n  readonly input: Chunk.NonEmptyChunk<Message>\n  readonly tools: Array<{\n    readonly name: string\n    readonly description: string\n    readonly parameters: JsonSchema.JsonSchema7\n    readonly structured: boolean\n  }>\n  readonly required: boolean | string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L110"
   },
   {
     "_tag": "Interface",
@@ -1702,7 +1822,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface TaggedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly _tag: string\n  }"
+    "signature": "export interface TaggedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly _tag: string\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L47"
   },
   {
     "_tag": "Interface",
@@ -1716,7 +1837,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface IdentifiedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly identifier: string\n  }"
+    "signature": "export interface IdentifiedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n    readonly identifier: string\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L55"
   },
   {
     "_tag": "Interface",
@@ -1730,7 +1852,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly create: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: StructuredSchema<A, I, R>\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }"
+    "signature": "export interface Service {\n    readonly create: (input: AiInput.Input) => Effect.Effect<AiResponse, AiError>\n    readonly stream: (input: AiInput.Input) => Stream.Stream<AiResponse, AiError>\n    readonly structured: {\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: StructuredSchema<A, I, R>\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n      <A, I, R>(options: {\n        readonly input: AiInput.Input\n        readonly schema: Schema.Schema<A, I, R>\n        readonly toolCallId: string\n      }): Effect.Effect<WithResolved<A>, AiError, R>\n    }\n    readonly toolkit: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Effect.Effect<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n    readonly toolkitStream: <Tools extends AiToolkit.Tool.AnySchema>(\n      options: {\n        readonly input: AiInput.Input\n        readonly tools: AiToolkit.Handlers<Tools>\n        readonly required?: Tools[\"_tag\"] | boolean | undefined\n        readonly concurrency?: Concurrency | undefined\n      }\n    ) => Stream.Stream<\n      WithResolved<AiToolkit.Tool.Success<Tools>>,\n      AiError | AiToolkit.Tool.Failure<Tools>,\n      AiToolkit.Tool.Context<Tools>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L63"
   },
   {
     "_tag": "TypeAlias",
@@ -1744,7 +1867,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type StructuredSchema<A, I, R> = TaggedSchema<A, I, R> | IdentifiedSchema<A, I, R>"
+    "signature": "type StructuredSchema<A, I, R> = TaggedSchema<A, I, R> | IdentifiedSchema<A, I, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Completions.ts#L41"
   },
   {
     "_tag": "Class",
@@ -1758,7 +1882,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class Embeddings"
+    "signature": "declare class Embeddings",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Embeddings.ts#L19"
   },
   {
     "_tag": "Function",
@@ -1772,7 +1897,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<Embeddings.Service, never, never>"
+    "signature": "declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<Embeddings.Service, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Embeddings.ts#L79"
   },
   {
     "_tag": "Function",
@@ -1787,7 +1913,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<Embeddings.Service, never, Scope>"
+    "signature": "declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Embeddings.Result>, AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<Embeddings.Service, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Embeddings.ts#L122"
   },
   {
     "_tag": "Interface",
@@ -1801,7 +1928,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly embed: (input: string) => Effect.Effect<Array<number>, AiError>\n  }"
+    "signature": "export interface Service {\n    readonly embed: (input: string) => Effect.Effect<Array<number>, AiError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Embeddings.ts#L33"
   },
   {
     "_tag": "Interface",
@@ -1815,7 +1943,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Result {\n    readonly index: number\n    readonly embeddings: Array<number>\n  }"
+    "signature": "export interface Result {\n    readonly index: number\n    readonly embeddings: Array<number>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Embeddings.ts#L41"
   },
   {
     "_tag": "Class",
@@ -1829,7 +1958,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class Tokenizer"
+    "signature": "declare class Tokenizer",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tokenizer.ts#L16"
   },
   {
     "_tag": "Function",
@@ -1843,7 +1973,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: { readonly tokenize: (content: AiInput.AiInput) => Effect.Effect<Array<number>, AiError>; }) => Tokenizer.Service"
+    "signature": "declare const make: (options: { readonly tokenize: (content: AiInput.AiInput) => Effect.Effect<Array<number>, AiError>; }) => Tokenizer.Service",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tokenizer.ts#L40"
   },
   {
     "_tag": "Interface",
@@ -1857,6 +1988,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export interface Service {\n    readonly tokenize: (content: AiInput.Input) => Effect.Effect<Array<number>, AiError>\n    readonly truncate: (content: AiInput.Input, tokens: number) => Effect.Effect<AiInput.Input, AiError>\n  }"
+    "signature": "export interface Service {\n    readonly tokenize: (content: AiInput.Input) => Effect.Effect<Array<number>, AiError>\n    readonly truncate: (content: AiInput.Input, tokens: number) => Effect.Effect<AiInput.Input, AiError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tokenizer.ts#L30"
   }
 ]

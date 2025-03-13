@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class XMLHttpRequest"
+    "signature": "declare class XMLHttpRequest",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>"
+    "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "declare const currentXHRResponseType: FiberRef.FiberRef<\"text\" | \"arraybuffer\">"
+    "signature": "declare const currentXHRResponseType: FiberRef.FiberRef<\"text\" | \"arraybuffer\">",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "declare const withXHRArrayBuffer: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>"
+    "signature": "declare const withXHRArrayBuffer: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -68,7 +72,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>"
+    "signature": "declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -83,7 +88,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>"
+    "signature": "declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -97,7 +103,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "runtime",
-    "signature": "declare const runMain: RunMain"
+    "signature": "declare const runMain: RunMain",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserRuntime.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -112,7 +119,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
+    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L24"
   },
   {
     "_tag": "Function",
@@ -126,7 +134,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>"
+    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -141,7 +150,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>"
+    "signature": "declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -156,7 +166,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>"
+    "signature": "declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | \"unbounded\" | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -170,7 +181,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -184,7 +196,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -198,7 +211,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+    "signature": "declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -212,7 +226,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (self: MessagePort | Window) => Runner.PlatformRunner"
+    "signature": "declare const make: (self: MessagePort | Window) => Runner.PlatformRunner",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -226,7 +241,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -240,7 +256,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<Runner.PlatformRunner>"
+    "signature": "declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<Runner.PlatformRunner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L32"
   },
   {
     "_tag": "Class",
@@ -254,7 +271,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "declare class ClipboardError"
+    "signature": "declare class ClipboardError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -268,7 +286,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -282,7 +301,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const ErrorTypeId: unique symbol"
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L40"
   },
   {
     "_tag": "Constant",
@@ -296,7 +316,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tag",
-    "signature": "declare const Clipboard: Context.Tag<Clipboard, Clipboard>"
+    "signature": "declare const Clipboard: Context.Tag<Clipboard, Clipboard>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L61"
   },
   {
     "_tag": "Constant",
@@ -311,7 +332,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Clipboard, never, never>"
+    "signature": "declare const layer: Layer.Layer<Clipboard, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L85"
   },
   {
     "_tag": "Function",
@@ -325,7 +347,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const make: (impl: Omit<Clipboard, \"clear\" | \"writeBlob\" | TypeId>) => Clipboard"
+    "signature": "declare const make: (impl: Omit<Clipboard, \"clear\" | \"writeBlob\" | TypeId>) => Clipboard",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L69"
   },
   {
     "_tag": "Interface",
@@ -339,7 +362,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "interface",
-    "signature": "export interface Clipboard {\n  readonly [TypeId]: TypeId\n\n  readonly read: Effect.Effect<ClipboardItems, ClipboardError>\n  readonly readString: Effect.Effect<string, ClipboardError>\n  readonly write: (items: ClipboardItems) => Effect.Effect<void, ClipboardError>\n  readonly writeString: (text: string) => Effect.Effect<void, ClipboardError>\n  readonly writeBlob: (blob: Blob) => Effect.Effect<void, ClipboardError>\n  readonly clear: Effect.Effect<void, ClipboardError>\n}"
+    "signature": "export interface Clipboard {\n  readonly [TypeId]: TypeId\n\n  readonly read: Effect.Effect<ClipboardItems, ClipboardError>\n  readonly readString: Effect.Effect<string, ClipboardError>\n  readonly write: (items: ClipboardItems) => Effect.Effect<void, ClipboardError>\n  readonly writeString: (text: string) => Effect.Effect<void, ClipboardError>\n  readonly writeBlob: (blob: Blob) => Effect.Effect<void, ClipboardError>\n  readonly clear: Effect.Effect<void, ClipboardError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L25"
   },
   {
     "_tag": "TypeAlias",
@@ -353,7 +377,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L19"
   },
   {
     "_tag": "TypeAlias",
@@ -367,7 +392,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type ErrorTypeId = typeof ErrorTypeId"
+    "signature": "type ErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L46"
   },
   {
     "_tag": "Class",
@@ -381,7 +407,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "declare class GeolocationError"
+    "signature": "declare class GeolocationError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -395,7 +422,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -409,7 +437,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const Geolocation: Context.Tag<Geolocation, Geolocation>"
+    "signature": "declare const Geolocation: Context.Tag<Geolocation, Geolocation>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -423,7 +452,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const ErrorTypeId: unique symbol"
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L55"
   },
   {
     "_tag": "Constant",
@@ -437,7 +467,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Geolocation, never, never>"
+    "signature": "declare const layer: Layer.Layer<Geolocation, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L108"
   },
   {
     "_tag": "Function",
@@ -451,7 +482,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "accessors",
-    "signature": "declare const watchPosition: (options?: (PositionOptions & { readonly bufferSize?: number | undefined; }) | undefined) => Stream.Stream<GeolocationPosition, GeolocationError, Geolocation>"
+    "signature": "declare const watchPosition: (options?: (PositionOptions & { readonly bufferSize?: number | undefined; }) | undefined) => Stream.Stream<GeolocationPosition, GeolocationError, Geolocation>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L131"
   },
   {
     "_tag": "Interface",
@@ -465,7 +497,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Geolocation {\n  readonly [TypeId]: TypeId\n  readonly getCurrentPosition: (\n    options?: PositionOptions | undefined\n  ) => Effect.Effect<GeolocationPosition, GeolocationError>\n  readonly watchPosition: (\n    options?:\n      | PositionOptions & {\n        readonly bufferSize?: number | undefined\n      }\n      | undefined\n  ) => Stream.Stream<GeolocationPosition, GeolocationError>\n}"
+    "signature": "export interface Geolocation {\n  readonly [TypeId]: TypeId\n  readonly getCurrentPosition: (\n    options?: PositionOptions | undefined\n  ) => Effect.Effect<GeolocationPosition, GeolocationError>\n  readonly watchPosition: (\n    options?:\n      | PositionOptions & {\n        readonly bufferSize?: number | undefined\n      }\n      | undefined\n  ) => Stream.Stream<GeolocationPosition, GeolocationError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -479,7 +512,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L23"
   },
   {
     "_tag": "TypeAlias",
@@ -493,7 +527,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type ErrorTypeId = typeof ErrorTypeId"
+    "signature": "type ErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L61"
   },
   {
     "_tag": "Class",
@@ -507,7 +542,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "declare class PermissionsError"
+    "signature": "declare class PermissionsError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -521,7 +557,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -535,7 +572,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const ErrorTypeId: unique symbol"
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -549,7 +587,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const Permissions: Context.Tag<Permissions, Permissions>"
+    "signature": "declare const Permissions: Context.Tag<Permissions, Permissions>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L74"
   },
   {
     "_tag": "Constant",
@@ -564,7 +603,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Permissions, never, never>"
+    "signature": "declare const layer: Layer.Layer<Permissions, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L84"
   },
   {
     "_tag": "Interface",
@@ -579,7 +619,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "interface",
-    "signature": "export interface Permissions {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Returns the state of a user permission on the global scope.\n   */\n  readonly query: <Name extends PermissionName>(\n    name: Name\n  ) => Effect.Effect<\n    // `name` is identical to the name passed to Permissions.query\n    // https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus\n    Omit<PermissionStatus, \"name\"> & { name: Name },\n    PermissionsError\n  >\n}"
+    "signature": "export interface Permissions {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Returns the state of a user permission on the global scope.\n   */\n  readonly query: <Name extends PermissionName>(\n    name: Name\n  ) => Effect.Effect<\n    // `name` is identical to the name passed to Permissions.query\n    // https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus\n    Omit<PermissionStatus, \"name\"> & { name: Name },\n    PermissionsError\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L28"
   },
   {
     "_tag": "TypeAlias",
@@ -593,7 +634,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L19"
   },
   {
     "_tag": "TypeAlias",
@@ -607,6 +649,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type ErrorTypeId = typeof ErrorTypeId"
+    "signature": "type ErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L54"
   }
 ]

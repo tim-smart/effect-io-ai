@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>"
+    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCommandExecutor.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer.Layer<NodeContext, never, never>"
+    "signature": "declare const layer: Layer.Layer<NodeContext, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeContext.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type NodeContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager"
+    "signature": "type NodeContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeContext.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<FileSystem, never, never>"
+    "signature": "declare const layer: Layer<FileSystem, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<WatchBackend, never, never>"
+    "signature": "declare const layer: Layer<WatchBackend, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/ParcelWatcher.ts#L12"
   },
   {
     "_tag": "Class",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare class UndiciRequestOptions"
+    "signature": "declare class UndiciRequestOptions",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "declare const HttpAgentTypeId: unique symbol"
+    "signature": "declare const HttpAgentTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "declare const HttpAgent: Context.Tag<HttpAgent, HttpAgent>"
+    "signature": "declare const HttpAgent: Context.Tag<HttpAgent, HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L41"
   },
   {
     "_tag": "Constant",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent, never, Scope.Scope>"
+    "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "declare const agentLayer: Layer.Layer<HttpAgent, never, never>"
+    "signature": "declare const agentLayer: Layer.Layer<HttpAgent, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "declare const makeAgentLayer: (options?: Https.AgentOptions) => Layer.Layer<HttpAgent>"
+    "signature": "declare const makeAgentLayer: (options?: Https.AgentOptions) => Layer.Layer<HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -165,7 +176,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>"
+    "signature": "declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -179,7 +191,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Client.HttpClient, never, never>"
+    "signature": "declare const layer: Layer.Layer<Client.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -193,7 +206,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>"
+    "signature": "declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -207,7 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare const Dispatcher: Context.Tag<Dispatcher, Undici.Dispatcher>"
+    "signature": "declare const Dispatcher: Context.Tag<Dispatcher, Undici.Dispatcher>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L92"
   },
   {
     "_tag": "Constant",
@@ -221,7 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>"
+    "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L98"
   },
   {
     "_tag": "Constant",
@@ -235,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare const dispatcherLayer: Layer.Layer<Dispatcher, never, never>"
+    "signature": "declare const dispatcherLayer: Layer.Layer<Dispatcher, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -249,7 +266,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>"
+    "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L110"
   },
   {
     "_tag": "Constant",
@@ -263,7 +281,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeUndici: (dispatcher: Undici.Dispatcher) => Client.HttpClient"
+    "signature": "declare const makeUndici: (dispatcher: Undici.Dispatcher) => Client.HttpClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L125"
   },
   {
     "_tag": "Constant",
@@ -277,7 +296,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>"
+    "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L131"
   },
   {
     "_tag": "Constant",
@@ -291,7 +311,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>"
+    "signature": "declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L137"
   },
   {
     "_tag": "Interface",
@@ -305,7 +326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "export interface HttpAgent {\n  readonly [HttpAgentTypeId]: typeof HttpAgentTypeId\n  readonly http: Http.Agent\n  readonly https: Https.Agent\n}"
+    "signature": "export interface HttpAgent {\n  readonly [HttpAgentTypeId]: typeof HttpAgentTypeId\n  readonly http: Http.Agent\n  readonly https: Https.Agent\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L31"
   },
   {
     "_tag": "Interface",
@@ -319,7 +341,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "export interface Dispatcher {\n  readonly _: unique symbol\n}"
+    "signature": "export interface Dispatcher {\n  readonly _: unique symbol\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L84"
   },
   {
     "_tag": "TypeAlias",
@@ -333,7 +356,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "agent",
-    "signature": "type HttpAgentTypeId = typeof HttpAgentTypeId"
+    "signature": "type HttpAgentTypeId = typeof HttpAgentTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -347,7 +371,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, Etag.Generator | FileSystem.FileSystem>"
+    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, Etag.Generator | FileSystem.FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -361,7 +386,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>"
+    "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -375,7 +401,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<Server.HttpServer, ServeError, Scope.Scope>"
+    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<Server.HttpServer, ServeError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -389,7 +416,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeHandler: { <R, E>(httpApp: App.Default<E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>>; <R, E, App extends App.Default<any, any>>(httpApp: App.Default<E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Effect.Context<App>, ServerRequest.HttpServerRequest | Scope.Scope>>; }"
+    "signature": "declare const makeHandler: { <R, E>(httpApp: App.Default<E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>>; <R, E, App extends App.Default<any, any>>(httpApp: App.Default<E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Effect.Context<App>, ServerRequest.HttpServerRequest | Scope.Scope>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L40"
   },
   {
     "_tag": "Constant",
@@ -403,7 +431,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<Server.HttpServer, ServeError>"
+    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<Server.HttpServer, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -417,7 +446,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ServeError>"
+    "signature": "declare const layer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -431,7 +461,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Config.Config.Wrap<Net.ListenOptions>) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ConfigError.ConfigError | ServeError>"
+    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Config.Config.Wrap<Net.ListenOptions>) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ConfigError.ConfigError | ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -448,7 +479,8 @@
     ],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>"
+    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L110"
   },
   {
     "_tag": "Constant",
@@ -463,7 +495,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>"
+    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L129"
   },
   {
     "_tag": "Constant",
@@ -477,7 +510,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const toIncomingMessage: (self: ServerRequest.HttpServerRequest) => Http.IncomingMessage"
+    "signature": "declare const toIncomingMessage: (self: ServerRequest.HttpServerRequest) => Http.IncomingMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -491,7 +525,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const toServerResponse: (self: ServerRequest.HttpServerRequest) => Http.ServerResponse"
+    "signature": "declare const toServerResponse: (self: ServerRequest.HttpServerRequest) => Http.ServerResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -505,7 +540,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>"
+    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeKeyValueStore.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -519,7 +555,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<Path, never, never>"
+    "signature": "declare const layer: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -533,7 +570,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layerPosix: Layer<Path, never, never>"
+    "signature": "declare const layerPosix: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -547,7 +585,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layerWin32: Layer<Path, never, never>"
+    "signature": "declare const layerWin32: Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -561,7 +600,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "runtime",
-    "signature": "declare const runMain: RunMain"
+    "signature": "declare const runMain: RunMain",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L11"
   },
   {
     "_tag": "Constant",
@@ -575,7 +615,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>"
+    "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L28"
   },
   {
     "_tag": "Function",
@@ -589,7 +630,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>"
+    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -603,7 +645,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>"
+    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -617,7 +660,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: Layer<Terminal, never, never>"
+    "signature": "declare const layer: Layer<Terminal, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -631,7 +675,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>"
+    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -645,7 +690,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>"
+    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -659,7 +705,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>"
+    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -673,6 +720,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>"
+    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L20"
   }
 ]

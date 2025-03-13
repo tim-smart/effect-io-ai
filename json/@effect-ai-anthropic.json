@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class AnthropicClient"
+    "signature": "declare class AnthropicClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L32"
   },
   {
     "_tag": "Class",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class StreamChunk"
+    "signature": "declare class StreamChunk",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L339"
   },
   {
     "_tag": "Function",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Effect.Effect<AnthropicClient.Service, never, HttpClient.HttpClient>"
+    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Effect.Effect<AnthropicClient.Service, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L60"
   },
   {
     "_tag": "Function",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AiModels.AiModels | AnthropicClient, never, HttpClient.HttpClient>"
+    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AiModels.AiModels | AnthropicClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L205"
   },
   {
     "_tag": "Function",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>"
+    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L222"
   },
   {
     "_tag": "Interface",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ContentPart {\n  readonly _tag: \"Content\"\n  readonly content: string\n}"
+    "signature": "export interface ContentPart {\n  readonly _tag: \"Content\"\n  readonly content: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L394"
   },
   {
     "_tag": "Interface",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ToolCallPart {\n  readonly _tag: \"ToolCall\"\n  readonly id: string\n  readonly name: string\n  readonly arguments: unknown\n}"
+    "signature": "export interface ToolCallPart {\n  readonly _tag: \"ToolCall\"\n  readonly id: string\n  readonly name: string\n  readonly arguments: unknown\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L403"
   },
   {
     "_tag": "Interface",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface UsagePart {\n  readonly _tag: \"Usage\"\n  readonly id: string\n  readonly model: string\n  readonly inputTokens: number\n  readonly outputTokens: number\n  readonly finishReasons: ReadonlyArray<string>\n}"
+    "signature": "export interface UsagePart {\n  readonly _tag: \"Usage\"\n  readonly id: string\n  readonly model: string\n  readonly inputTokens: number\n  readonly outputTokens: number\n  readonly finishReasons: ReadonlyArray<string>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L414"
   },
   {
     "_tag": "TypeAlias",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type StreamCompletionRequest = Omit<\n  typeof Generated.CreateMessageParams.Encoded,\n  \"stream\"\n>"
+    "signature": "type StreamCompletionRequest = Omit<\n  typeof Generated.CreateMessageParams.Encoded,\n  \"stream\"\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L242"
   },
   {
     "_tag": "TypeAlias",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type StreamChunkPart = ContentPart | ToolCallPart | UsagePart"
+    "signature": "type StreamChunkPart = ContentPart | ToolCallPart | UsagePart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L388"
   },
   {
     "_tag": "Interface",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly client: Generated.Client\n    readonly streamRequest: <A>(\n      request: HttpClientRequest.HttpClientRequest\n    ) => Stream.Stream<A, HttpClientError.HttpClientError>\n    readonly stream: (\n      request: StreamCompletionRequest\n    ) => Stream.Stream<StreamChunk, HttpClientError.HttpClientError>\n  }"
+    "signature": "export interface Service {\n    readonly client: Generated.Client\n    readonly streamRequest: <A>(\n      request: HttpClientRequest.HttpClientRequest\n    ) => Stream.Stream<A, HttpClientError.HttpClientError>\n    readonly stream: (\n      request: StreamCompletionRequest\n    ) => Stream.Stream<StreamChunk, HttpClientError.HttpClientError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L45"
   },
   {
     "_tag": "Class",
@@ -165,7 +176,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class Config"
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -179,7 +191,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "configuration",
-    "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }"
+    "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L222"
   },
   {
     "_tag": "Function",
@@ -193,7 +206,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "ai models",
-    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.AiModel<Completions.Completions | Tokenizer.Tokenizer, AnthropicClient>"
+    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.AiModel<Completions.Completions | Tokenizer.Tokenizer, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L85"
   },
   {
     "_tag": "Function",
@@ -207,7 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerCompletions: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions, never, AnthropicClient>"
+    "signature": "declare const layerCompletions: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions, never, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L199"
   },
   {
     "_tag": "Function",
@@ -221,7 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions | Tokenizer.Tokenizer, never, AnthropicClient>"
+    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<Completions.Completions | Tokenizer.Tokenizer, never, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L212"
   },
   {
     "_tag": "TypeAlias",
@@ -235,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Model = typeof Generated.ModelEnum.Encoded"
+    "signature": "type Model = typeof Generated.ModelEnum.Encoded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -249,7 +266,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "configuration",
-    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateMessageParams.Encoded,\n          \"messages\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}"
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateMessageParams.Encoded,\n          \"messages\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L63"
   },
   {
     "_tag": "Class",
@@ -263,7 +281,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare class AnthropicConfig"
+    "signature": "declare class AnthropicConfig",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -277,7 +296,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "configuration",
-    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }"
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L44"
   },
   {
     "_tag": "Interface",
@@ -291,7 +311,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }"
+    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -305,7 +326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Tokenizer.Tokenizer.Service"
+    "signature": "declare const make: Tokenizer.Tokenizer.Service",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTokenizer.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -319,6 +341,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Tokenizer.Tokenizer, never, never>"
+    "signature": "declare const layer: Layer.Layer<Tokenizer.Tokenizer, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTokenizer.ts#L56"
   }
 ]

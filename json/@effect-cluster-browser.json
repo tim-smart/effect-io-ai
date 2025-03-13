@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const toBroadcastChannelRouter: <R extends RpcRouter.RpcRouter<any, any>>(self: R, channelId: string) => Effect.Effect<RuntimeFiber<void, ParseError>, never, Scope>"
+    "signature": "declare const toBroadcastChannelRouter: <R extends RpcRouter.RpcRouter<any, any>>(self: R, channelId: string) => Effect.Effect<RuntimeFiber<void, ParseError>, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-browser/src/RpcBroadcastChannel.ts#L29"
   },
   {
     "_tag": "Function",
@@ -25,6 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const make: <R extends RpcRouter.RpcRouter<any, any>>(channelId: string) => RequestResolver.RequestResolver<Rpc.Request<RpcRouter.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<RpcRouter.RpcRouter.Request<R>>>"
+    "signature": "declare const make: <R extends RpcRouter.RpcRouter<any, any>>(channelId: string) => RequestResolver.RequestResolver<Rpc.Request<RpcRouter.RpcRouter.Request<R>>, Schema.SerializableWithResult.Context<RpcRouter.RpcRouter.Request<R>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-browser/src/RpcBroadcastChannel.ts#L71"
   }
 ]

@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "errors",
-    "signature": "declare class MigrationError"
+    "signature": "declare class MigrationError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L57"
   },
   {
     "_tag": "Function",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const make: <RD = never>({ dumpSchema }: { dumpSchema?: (path: string, migrationsTable: string) => Effect.Effect<void, MigrationError, RD>; }) => <R2 = never>({ loader, schemaDirectory, table }: MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, MigrationError | SqlError, Client.SqlClient | RD | R2>"
+    "signature": "declare const make: <RD = never>({ dumpSchema }: { dumpSchema?: (path: string, migrationsTable: string) => Effect.Effect<void, MigrationError, RD>; }) => <R2 = never>({ loader, schemaDirectory, table }: MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, MigrationError | SqlError, Client.SqlClient | RD | R2>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L72"
   },
   {
     "_tag": "Function",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": "declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader"
+    "signature": "declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L298"
   },
   {
     "_tag": "Function",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": "declare const fromBabelGlob: (migrations: Record<string, any>) => Loader"
+    "signature": "declare const fromBabelGlob: (migrations: Record<string, any>) => Loader",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L319"
   },
   {
     "_tag": "Interface",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface MigratorOptions<R = never> {\n  readonly loader: Loader<R>\n  readonly schemaDirectory?: string\n  readonly table?: string\n}"
+    "signature": "export interface MigratorOptions<R = never> {\n  readonly loader: Loader<R>\n  readonly schemaDirectory?: string\n  readonly table?: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L17"
   },
   {
     "_tag": "Interface",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Migration {\n  readonly id: number\n  readonly name: string\n  readonly createdAt: Date\n}"
+    "signature": "export interface Migration {\n  readonly id: number\n  readonly name: string\n  readonly createdAt: Date\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L47"
   },
   {
     "_tag": "TypeAlias",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Loader<R> = Effect.Effect<\n  ReadonlyArray<ResolvedMigration>,\n  MigrationError,\n  R\n>"
+    "signature": "type Loader<R> = Effect.Effect<\n  ReadonlyArray<ResolvedMigration>,\n  MigrationError,\n  R\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type ResolvedMigration = readonly [\n  id: number,\n  name: string,\n  load: Effect.Effect<any>\n]"
+    "signature": "type ResolvedMigration = readonly [\n  id: number,\n  name: string,\n  load: Effect.Effect<any>\n]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L37"
   },
   {
     "_tag": "Function",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "loaders",
-    "signature": "declare const fromFileSystem: (directory: string) => Loader<FileSystem>"
+    "signature": "declare const fromFileSystem: (directory: string) => Loader<FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/FileSystem.ts#L14"
   },
   {
     "_tag": "Class",
@@ -138,7 +147,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": "declare class BooleanFromNumber"
+    "signature": "declare class BooleanFromNumber",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L669"
   },
   {
     "_tag": "Constant",
@@ -152,7 +162,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "fields",
-    "signature": "declare const fields: <A extends VariantSchema.Struct<any>>(self: A) => A[VariantSchema.TypeId]"
+    "signature": "declare const fields: <A extends VariantSchema.Struct<any>>(self: A) => A[VariantSchema.TypeId]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L163"
   },
   {
     "_tag": "Constant",
@@ -166,7 +177,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "overrideable",
-    "signature": "declare const Override: <A>(value: A) => A & Brand<\"Override\">"
+    "signature": "declare const Override: <A>(value: A) => A & Brand<\"Override\">",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -181,7 +193,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "optional",
-    "signature": "declare const FieldOption: <Field extends VariantSchema.Field<any> | Schema.Schema.Any>(self: Field) => Field extends Schema.Schema.Any ? FieldOption<Field> : Field extends VariantSchema.Field<infer S> ? VariantSchema.Field<{ readonly [K in keyof S]: S[K] extends Schema.Schema.Any ? K extends VariantsDatabase ? Schema.OptionFromNullOr<S[K]> : Schema.optionalWith<S[K], { as: \"Option\"; nullable: true; }> : never; }> : never"
+    "signature": "declare const FieldOption: <Field extends VariantSchema.Field<any> | Schema.Schema.Any>(self: Field) => Field extends Schema.Schema.Any ? FieldOption<Field> : Field extends VariantSchema.Field<infer S> ? VariantSchema.Field<{ readonly [K in keyof S]: S[K] extends Schema.Schema.Any ? K extends VariantsDatabase ? Schema.OptionFromNullOr<S[K]> : Schema.optionalWith<S[K], { as: \"Option\"; nullable: true; }> : never; }> : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L289"
   },
   {
     "_tag": "Constant",
@@ -195,7 +208,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeFromDate: DateTimeFromDate"
+    "signature": "declare const DateTimeFromDate: DateTimeFromDate",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L324"
   },
   {
     "_tag": "Constant",
@@ -210,7 +224,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const Date: Date"
+    "signature": "declare const Date: Date",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L346"
   },
   {
     "_tag": "Constant",
@@ -224,7 +239,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
+    "signature": "declare const DateWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L366"
   },
   {
     "_tag": "Constant",
@@ -238,7 +254,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>"
+    "signature": "declare const DateTimeWithNow: VariantSchema.Overrideable<DateTime.Utc, string, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L377"
   },
   {
     "_tag": "Constant",
@@ -252,7 +269,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeFromDateWithNow: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date, never>"
+    "signature": "declare const DateTimeFromDateWithNow: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L389"
   },
   {
     "_tag": "Constant",
@@ -266,7 +284,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeFromNumberWithNow: VariantSchema.Overrideable<DateTime.Utc, number, never>"
+    "signature": "declare const DateTimeFromNumberWithNow: VariantSchema.Overrideable<DateTime.Utc, number, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L401"
   },
   {
     "_tag": "Constant",
@@ -281,7 +300,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeInsert: DateTimeInsert"
+    "signature": "declare const DateTimeInsert: DateTimeInsert",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L430"
   },
   {
     "_tag": "Constant",
@@ -296,7 +316,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeInsertFromDate: DateTimeInsertFromDate"
+    "signature": "declare const DateTimeInsertFromDate: DateTimeInsertFromDate",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L457"
   },
   {
     "_tag": "Constant",
@@ -311,7 +332,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber"
+    "signature": "declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L484"
   },
   {
     "_tag": "Constant",
@@ -326,7 +348,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeUpdate: DateTimeUpdate"
+    "signature": "declare const DateTimeUpdate: DateTimeUpdate",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L513"
   },
   {
     "_tag": "Constant",
@@ -341,7 +364,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeUpdateFromDate: DateTimeUpdateFromDate"
+    "signature": "declare const DateTimeUpdateFromDate: DateTimeUpdateFromDate",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L543"
   },
   {
     "_tag": "Constant",
@@ -356,7 +380,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber"
+    "signature": "declare const DateTimeUpdateFromNumber: DateTimeUpdateFromNumber",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L573"
   },
   {
     "_tag": "Function",
@@ -371,7 +396,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": "declare const Generated: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Generated<S>"
+    "signature": "declare const Generated: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Generated<S>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L191"
   },
   {
     "_tag": "Function",
@@ -386,7 +412,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": "declare const GeneratedByApp: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => GeneratedByApp<S>"
+    "signature": "declare const GeneratedByApp: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => GeneratedByApp<S>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L222"
   },
   {
     "_tag": "Function",
@@ -401,7 +428,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "sensitive",
-    "signature": "declare const Sensitive: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Sensitive<S>"
+    "signature": "declare const Sensitive: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => Sensitive<S>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L251"
   },
   {
     "_tag": "Function",
@@ -416,7 +444,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "json",
-    "signature": "declare const JsonFromString: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => JsonFromString<S>"
+    "signature": "declare const JsonFromString: <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => JsonFromString<S>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L604"
   },
   {
     "_tag": "Function",
@@ -430,7 +459,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": "declare const UuidV4WithGenerate: <B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>"
+    "signature": "declare const UuidV4WithGenerate: <B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L635"
   },
   {
     "_tag": "Function",
@@ -445,7 +475,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": "declare const UuidV4Insert: <const B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => UuidV4Insert<B>"
+    "signature": "declare const UuidV4Insert: <const B extends string | symbol>(schema: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>) => UuidV4Insert<B>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L653"
   },
   {
     "_tag": "Function",
@@ -460,7 +491,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "repository",
-    "signature": "declare const makeRepository: <S extends Any, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly update: (update: S[\"update\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly updateVoid: (update: S[\"update\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>, never, S[\"Context\"] | Schema.Schema.Context<S[\"fields\"][Id]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void, never, Schema.Schema.Context<S[\"fields\"][Id]>>; }, never, SqlClient>"
+    "signature": "declare const makeRepository: <S extends Any, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"insert\"][\"Context\"]>; readonly update: (update: S[\"update\"][\"Type\"]) => Effect.Effect<S[\"Type\"], never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly updateVoid: (update: S[\"update\"][\"Type\"]) => Effect.Effect<void, never, S[\"Context\"] | S[\"update\"][\"Context\"]>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>, never, S[\"Context\"] | Schema.Schema.Context<S[\"fields\"][Id]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void, never, Schema.Schema.Context<S[\"fields\"][Id]>>; }, never, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L684"
   },
   {
     "_tag": "Function",
@@ -475,7 +507,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "repository",
-    "signature": "declare const makeDataLoaders: <S extends AnyNoContext, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; readonly window: DurationInput; readonly maxBatchSize?: number | undefined; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void>; }, never, SqlClient | Scope>"
+    "signature": "declare const makeDataLoaders: <S extends AnyNoContext, Id extends (keyof S[\"Type\"]) & (keyof S[\"update\"][\"Type\"]) & (keyof S[\"fields\"])>(Model: S, options: { readonly tableName: string; readonly spanPrefix: string; readonly idColumn: Id; readonly window: DurationInput; readonly maxBatchSize?: number | undefined; }) => Effect.Effect<{ readonly insert: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<S[\"Type\"]>; readonly insertVoid: (insert: S[\"insert\"][\"Type\"]) => Effect.Effect<void>; readonly findById: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<Option.Option<S[\"Type\"]>>; readonly delete: (id: Schema.Schema.Type<S[\"fields\"][Id]>) => Effect.Effect<void>; }, never, SqlClient | Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L846"
   },
   {
     "_tag": "Interface",
@@ -489,7 +522,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": "export interface Generated<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly update: S\n    readonly json: S\n  }>\n{}"
+    "signature": "export interface Generated<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly update: S\n    readonly json: S\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L175"
   },
   {
     "_tag": "Interface",
@@ -503,7 +537,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "generated",
-    "signature": "export interface GeneratedByApp<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: S\n      readonly insert: S\n      readonly update: S\n      readonly json: S\n    }>\n{}"
+    "signature": "export interface GeneratedByApp<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: S\n      readonly insert: S\n      readonly update: S\n      readonly json: S\n    }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L204"
   },
   {
     "_tag": "Interface",
@@ -517,7 +552,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "sensitive",
-    "signature": "export interface Sensitive<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly insert: S\n    readonly update: S\n  }>\n{}"
+    "signature": "export interface Sensitive<S extends Schema.Schema.All | Schema.PropertySignature.All> extends\n  VariantSchema.Field<{\n    readonly select: S\n    readonly insert: S\n    readonly update: S\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L236"
   },
   {
     "_tag": "Interface",
@@ -532,7 +568,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "optional",
-    "signature": "export interface FieldOption<S extends Schema.Schema.Any> extends\n  VariantSchema.Field<{\n    readonly select: Schema.OptionFromNullOr<S>\n    readonly insert: Schema.OptionFromNullOr<S>\n    readonly update: Schema.OptionFromNullOr<S>\n    readonly json: Schema.optionalWith<S, { as: \"Option\" }>\n    readonly jsonCreate: Schema.optionalWith<S, { as: \"Option\"; nullable: true }>\n    readonly jsonUpdate: Schema.optionalWith<S, { as: \"Option\"; nullable: true }>\n  }>\n{}"
+    "signature": "export interface FieldOption<S extends Schema.Schema.Any> extends\n  VariantSchema.Field<{\n    readonly select: Schema.OptionFromNullOr<S>\n    readonly insert: Schema.OptionFromNullOr<S>\n    readonly update: Schema.OptionFromNullOr<S>\n    readonly json: Schema.optionalWith<S, { as: \"Option\" }>\n    readonly jsonCreate: Schema.optionalWith<S, { as: \"Option\"; nullable: true }>\n    readonly jsonUpdate: Schema.optionalWith<S, { as: \"Option\"; nullable: true }>\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L269"
   },
   {
     "_tag": "Interface",
@@ -546,7 +583,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeFromDate extends\n  Schema.transform<\n    typeof Schema.ValidDateFromSelf,\n    typeof Schema.DateTimeUtcFromSelf\n  >\n{}"
+    "signature": "export interface DateTimeFromDate extends\n  Schema.transform<\n    typeof Schema.ValidDateFromSelf,\n    typeof Schema.DateTimeUtcFromSelf\n  >\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L313"
   },
   {
     "_tag": "Interface",
@@ -560,7 +598,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface Date extends Schema.transformOrFail<typeof Schema.String, typeof Schema.DateTimeUtcFromSelf> {}"
+    "signature": "export interface Date extends Schema.transformOrFail<typeof Schema.String, typeof Schema.DateTimeUtcFromSelf> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L337"
   },
   {
     "_tag": "Interface",
@@ -574,7 +613,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeInsert extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+    "signature": "export interface DateTimeInsert extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L413"
   },
   {
     "_tag": "Interface",
@@ -588,7 +628,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeInsertFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+    "signature": "export interface DateTimeInsertFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L440"
   },
   {
     "_tag": "Interface",
@@ -602,7 +643,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeInsertFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
+    "signature": "export interface DateTimeInsertFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L467"
   },
   {
     "_tag": "Interface",
@@ -616,7 +658,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeUpdate extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+    "signature": "export interface DateTimeUpdate extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtc\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, string>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L494"
   },
   {
     "_tag": "Interface",
@@ -630,7 +673,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeUpdateFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}"
+    "signature": "export interface DateTimeUpdateFromDate extends\n  VariantSchema.Field<{\n    readonly select: DateTimeFromDate\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, globalThis.Date>\n    readonly json: typeof Schema.DateTimeUtc\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L524"
   },
   {
     "_tag": "Interface",
@@ -644,7 +688,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "date & time",
-    "signature": "export interface DateTimeUpdateFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}"
+    "signature": "export interface DateTimeUpdateFromNumber extends\n  VariantSchema.Field<{\n    readonly select: typeof Schema.DateTimeUtcFromNumber\n    readonly insert: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly update: VariantSchema.Overrideable<DateTime.Utc, number>\n    readonly json: typeof Schema.DateTimeUtcFromNumber\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L554"
   },
   {
     "_tag": "Interface",
@@ -658,7 +703,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "json",
-    "signature": "export interface JsonFromString<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly insert: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly update: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly json: S\n      readonly jsonCreate: S\n      readonly jsonUpdate: S\n    }>\n{}"
+    "signature": "export interface JsonFromString<S extends Schema.Schema.All | Schema.PropertySignature.All>\n  extends\n    VariantSchema.Field<{\n      readonly select: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly insert: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly update: Schema.Schema<Schema.Schema.Type<S>, string, Schema.Schema.Context<S>>\n      readonly json: S\n      readonly jsonCreate: S\n      readonly jsonUpdate: S\n    }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L584"
   },
   {
     "_tag": "Interface",
@@ -672,7 +718,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "uuid",
-    "signature": "export interface UuidV4Insert<B extends string | symbol> extends\n  VariantSchema.Field<{\n    readonly select: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly insert: VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>\n    readonly update: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly json: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n  }>\n{}"
+    "signature": "export interface UuidV4Insert<B extends string | symbol> extends\n  VariantSchema.Field<{\n    readonly select: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly insert: VariantSchema.Overrideable<Uint8Array & Brand<B>, Uint8Array>\n    readonly update: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n    readonly json: Schema.brand<typeof Schema.Uint8ArrayFromSelf, B>\n  }>\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L622"
   },
   {
     "_tag": "TypeAlias",
@@ -686,7 +733,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Any = Schema.Schema.Any & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.Any\n  readonly update: Schema.Schema.Any\n  readonly json: Schema.Schema.Any\n  readonly jsonCreate: Schema.Schema.Any\n  readonly jsonUpdate: Schema.Schema.Any\n}"
+    "signature": "type Any = Schema.Schema.Any & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.Any\n  readonly update: Schema.Schema.Any\n  readonly json: Schema.Schema.Any\n  readonly jsonCreate: Schema.Schema.Any\n  readonly jsonUpdate: Schema.Schema.Any\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L38"
   },
   {
     "_tag": "TypeAlias",
@@ -700,7 +748,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type AnyNoContext = Schema.Schema.AnyNoContext & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.AnyNoContext\n  readonly update: Schema.Schema.AnyNoContext\n  readonly json: Schema.Schema.AnyNoContext\n  readonly jsonCreate: Schema.Schema.AnyNoContext\n  readonly jsonUpdate: Schema.Schema.AnyNoContext\n}"
+    "signature": "type AnyNoContext = Schema.Schema.AnyNoContext & {\n  readonly fields: Schema.Struct.Fields\n  readonly insert: Schema.Schema.AnyNoContext\n  readonly update: Schema.Schema.AnyNoContext\n  readonly json: Schema.Schema.AnyNoContext\n  readonly jsonCreate: Schema.Schema.AnyNoContext\n  readonly jsonUpdate: Schema.Schema.AnyNoContext\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L51"
   },
   {
     "_tag": "TypeAlias",
@@ -714,7 +763,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type VariantsDatabase = \"select\" | \"insert\" | \"update\""
+    "signature": "type VariantsDatabase = \"select\" | \"insert\" | \"update\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L64"
   },
   {
     "_tag": "TypeAlias",
@@ -728,7 +778,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type VariantsJson = \"json\" | \"jsonCreate\" | \"jsonUpdate\""
+    "signature": "type VariantsJson = \"json\" | \"jsonCreate\" | \"jsonUpdate\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L70"
   },
   {
     "_tag": "Constant",
@@ -742,7 +793,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -756,7 +808,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare const SqlClient: Tag<SqlClient, SqlClient>"
+    "signature": "declare const SqlClient: Tag<SqlClient, SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L77"
   },
   {
     "_tag": "Constant",
@@ -770,7 +823,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: SqlClient.MakeOptions) => Effect<SqlClient, never, Reactivity>"
+    "signature": "declare const make: (options: SqlClient.MakeOptions) => Effect<SqlClient, never, Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L110"
   },
   {
     "_tag": "Constant",
@@ -784,7 +838,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "transactions",
-    "signature": "declare const makeWithTransaction: <I, S>(options: { readonly transactionTag: Tag<I, readonly [conn: S, counter: number]>; readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>; readonly acquireConnection: Effect<readonly [CloseableScope | undefined, S], SqlError>; readonly begin: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly savepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; readonly commit: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollback: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollbackSavepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; }) => <R, E, A>(effect: Effect<A, E, R>) => Effect<A, E | SqlError, R>"
+    "signature": "declare const makeWithTransaction: <I, S>(options: { readonly transactionTag: Tag<I, readonly [conn: S, counter: number]>; readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>; readonly acquireConnection: Effect<readonly [CloseableScope | undefined, S], SqlError>; readonly begin: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly savepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; readonly commit: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollback: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollbackSavepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; }) => <R, E, A>(effect: Effect<A, E, R>) => Effect<A, E | SqlError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -798,7 +853,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const TransactionConnection: Tag<TransactionConnection, readonly [conn: Connection, depth: number]>"
+    "signature": "declare const TransactionConnection: Tag<TransactionConnection, readonly [conn: Connection, depth: number]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L139"
   },
   {
     "_tag": "Interface",
@@ -812,7 +868,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface SqlClient extends Constructor {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Copy of the client for safeql etc.\n   */\n  readonly safe: this\n\n  /**\n   * Copy of the client without transformations.\n   */\n  readonly withoutTransforms: () => this\n\n  readonly reserve: Effect<Connection, SqlError, Scope>\n\n  /**\n   * With the given effect, ensure all sql queries are run in a transaction.\n   */\n  readonly withTransaction: <R, E, A>(\n    self: Effect<A, E, R>\n  ) => Effect<A, E | SqlError, R>\n\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactive: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Stream<A, E, R>\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactiveMailbox: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n}"
+    "signature": "export interface SqlClient extends Constructor {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Copy of the client for safeql etc.\n   */\n  readonly safe: this\n\n  /**\n   * Copy of the client without transformations.\n   */\n  readonly withoutTransforms: () => this\n\n  readonly reserve: Effect<Connection, SqlError, Scope>\n\n  /**\n   * With the given effect, ensure all sql queries are run in a transaction.\n   */\n  readonly withTransaction: <R, E, A>(\n    self: Effect<A, E, R>\n  ) => Effect<A, E | SqlError, R>\n\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactive: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Stream<A, E, R>\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactiveMailbox: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L33"
   },
   {
     "_tag": "Interface",
@@ -826,7 +883,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export interface TransactionConnection {\n  readonly _: unique symbol\n}"
+    "signature": "export interface TransactionConnection {\n  readonly _: unique symbol\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L132"
   },
   {
     "_tag": "TypeAlias",
@@ -840,7 +898,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L27"
   },
   {
     "_tag": "Interface",
@@ -854,7 +913,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MakeOptions {\n    readonly acquirer: Connection.Acquirer\n    readonly compiler: Compiler\n    readonly transactionAcquirer?: Connection.Acquirer\n    readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>\n    readonly beginTransaction?: string | undefined\n    readonly rollback?: string | undefined\n    readonly commit?: string | undefined\n    readonly savepoint?: ((name: string) => string) | undefined\n    readonly rollbackSavepoint?: ((name: string) => string) | undefined\n    readonly transformRows?: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n    readonly reactiveMailbox?: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect<A, E, R>\n    ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n  }"
+    "signature": "export interface MakeOptions {\n    readonly acquirer: Connection.Acquirer\n    readonly compiler: Compiler\n    readonly transactionAcquirer?: Connection.Acquirer\n    readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>\n    readonly beginTransaction?: string | undefined\n    readonly rollback?: string | undefined\n    readonly commit?: string | undefined\n    readonly savepoint?: ((name: string) => string) | undefined\n    readonly rollbackSavepoint?: ((name: string) => string) | undefined\n    readonly transformRows?: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n    readonly reactiveMailbox?: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect<A, E, R>\n    ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L88"
   },
   {
     "_tag": "Constant",
@@ -868,7 +928,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tag",
-    "signature": "declare const Connection: Context.Tag<Connection, Connection>"
+    "signature": "declare const Connection: Context.Tag<Connection, Connection>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlConnection.ts#L64"
   },
   {
     "_tag": "Interface",
@@ -882,7 +943,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Connection {\n  readonly execute: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Effect<ReadonlyArray<any>, SqlError>\n\n  /**\n   * Execute the specified SQL query and return the raw results directly from\n   * underlying SQL client.\n   */\n  readonly executeRaw: (\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ) => Effect<unknown, SqlError>\n\n  readonly executeStream: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Stream<any, SqlError>\n\n  readonly executeValues: (\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ) => Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n\n  readonly executeUnprepared: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Effect<ReadonlyArray<any>, SqlError>\n}"
+    "signature": "export interface Connection {\n  readonly execute: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Effect<ReadonlyArray<any>, SqlError>\n\n  /**\n   * Execute the specified SQL query and return the raw results directly from\n   * underlying SQL client.\n   */\n  readonly executeRaw: (\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ) => Effect<unknown, SqlError>\n\n  readonly executeStream: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Stream<any, SqlError>\n\n  readonly executeValues: (\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ) => Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n\n  readonly executeUnprepared: (\n    sql: string,\n    params: ReadonlyArray<Primitive>,\n    transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n  ) => Effect<ReadonlyArray<any>, SqlError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlConnection.ts#L15"
   },
   {
     "_tag": "TypeAlias",
@@ -896,7 +958,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Row = { readonly [column: string]: Primitive }"
+    "signature": "type Row = { readonly [column: string]: Primitive }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlConnection.ts#L70"
   },
   {
     "_tag": "TypeAlias",
@@ -910,7 +973,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Acquirer = Effect<Connection, SqlError, Scope>"
+    "signature": "type Acquirer = Effect<Connection, SqlError, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlConnection.ts#L57"
   },
   {
     "_tag": "Class",
@@ -924,7 +988,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare class SqlError"
+    "signature": "declare class SqlError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlError.ts#L19"
   },
   {
     "_tag": "Class",
@@ -938,7 +1003,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare class ResultLengthMismatch"
+    "signature": "declare class ResultLengthMismatch",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlError.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -952,7 +1018,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const SqlErrorTypeId: unique symbol"
+    "signature": "declare const SqlErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlError.ts#L9"
   },
   {
     "_tag": "TypeAlias",
@@ -966,7 +1033,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type SqlErrorTypeId = typeof SqlErrorTypeId"
+    "signature": "type SqlErrorTypeId = typeof SqlErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlError.ts#L14"
   },
   {
     "_tag": "Function",
@@ -980,7 +1048,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options?: { readonly entryTable?: string; readonly remotesTable?: string; }) => Effect.Effect<typeof EventJournal.EventJournal.Service, SqlError, SqlClient.SqlClient>"
+    "signature": "declare const make: (options?: { readonly entryTable?: string; readonly remotesTable?: string; }) => Effect.Effect<typeof EventJournal.EventJournal.Service, SqlError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventJournal.ts#L18"
   },
   {
     "_tag": "Function",
@@ -994,7 +1063,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options?: { readonly eventLogTable?: string; readonly remotesTable?: string; }) => Layer.Layer<EventJournal.EventJournal, SqlError, SqlClient.SqlClient>"
+    "signature": "declare const layer: (options?: { readonly eventLogTable?: string; readonly remotesTable?: string; }) => Layer.Layer<EventJournal.EventJournal, SqlError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventJournal.ts#L280"
   },
   {
     "_tag": "Function",
@@ -1008,7 +1078,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Effect.Effect<typeof EventLogServer.Storage.Service, SqlError, SqlClient.SqlClient | EventLogEncryption | Scope>"
+    "signature": "declare const makeStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Effect.Effect<typeof EventLogServer.Storage.Service, SqlError, SqlClient.SqlClient | EventLogEncryption | Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventLogServer.ts#L24"
   },
   {
     "_tag": "Function",
@@ -1022,7 +1093,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient | EventLogEncryption>"
+    "signature": "declare const layerStorage: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient | EventLogEncryption>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventLogServer.ts#L241"
   },
   {
     "_tag": "Function",
@@ -1036,7 +1108,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerStorageSubtle: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient>"
+    "signature": "declare const layerStorageSubtle: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventLogServer.ts#L252"
   },
   {
     "_tag": "Function",
@@ -1051,7 +1124,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": "declare const ordered: <T extends string, I, II, RI, A, IA, _, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, A, E | ResultLengthMismatch, RI>, never, RA | R>"
+    "signature": "declare const ordered: <T extends string, I, II, RI, A, IA, _, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<_>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, A, E | ResultLengthMismatch, RI>, never, RA | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L196"
   },
   {
     "_tag": "Function",
@@ -1066,7 +1140,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": "declare const grouped: <T extends string, I, II, K, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Array<A>, E, RI>, never, RA | R>"
+    "signature": "declare const grouped: <T extends string, I, II, K, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly RequestGroupKey: (request: Types.NoInfer<I>) => K; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultGroupKey: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => K; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Array<A>, E, RI>, never, RA | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L266"
   },
   {
     "_tag": "Function",
@@ -1081,7 +1156,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": "declare const findById: <T extends string, I, II, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Option.Option<A>, E, RI>, never, RA | R>"
+    "signature": "declare const findById: <T extends string, I, II, RI, A, IA, Row, E, RA = never, R = never>(tag: T, options: { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E>; readonly withContext?: false; } | { readonly Id: Schema.Schema<I, II, RI>; readonly Result: Schema.Schema<A, IA, RA>; readonly ResultId: (result: Types.NoInfer<A>, row: Types.NoInfer<Row>) => I; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<Row>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, Option.Option<A>, E, RI>, never, RA | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L345"
   },
   {
     "_tag": "Interface",
@@ -1095,7 +1171,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "requests",
-    "signature": "export interface SqlRequest<T extends string, A, E> extends Request.Request<A, E | ParseError> {\n  readonly _tag: T\n  readonly spanLink: Tracer.SpanLink\n  readonly input: unknown\n  readonly encoded: unknown\n}"
+    "signature": "export interface SqlRequest<T extends string, A, E> extends Request.Request<A, E | ParseError> {\n  readonly _tag: T\n  readonly spanLink: Tracer.SpanLink\n  readonly input: unknown\n  readonly encoded: unknown\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L26"
   },
   {
     "_tag": "Interface",
@@ -1109,7 +1186,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": "export interface SqlResolver<T extends string, I, A, E, R>\n  extends RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n{\n  readonly execute: (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly makeExecute: (\n    resolver: RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n  ) => (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly cachePopulate: (\n    id: I,\n    result: A\n  ) => Effect.Effect<void>\n  readonly cacheInvalidate: (id: I) => Effect.Effect<void>\n  readonly request: (input: I) => Effect.Effect<SqlRequest<T, A, E>, ParseError, R>\n}"
+    "signature": "export interface SqlResolver<T extends string, I, A, E, R>\n  extends RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n{\n  readonly execute: (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly makeExecute: (\n    resolver: RequestResolver.RequestResolver<SqlRequest<T, A, E>>\n  ) => (input: I) => Effect.Effect<A, E | ParseError, R>\n  readonly cachePopulate: (\n    id: I,\n    result: A\n  ) => Effect.Effect<void>\n  readonly cacheInvalidate: (id: I) => Effect.Effect<void>\n  readonly request: (input: I) => Effect.Effect<SqlRequest<T, A, E>, ParseError, R>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L98"
   },
   {
     "_tag": "Function",
@@ -1124,7 +1202,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const findAll: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<ReadonlyArray<A>, E | ParseError, R | IR | AR>"
+    "signature": "declare const findAll: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<ReadonlyArray<A>, E | ParseError, R | IR | AR>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L16"
   },
   {
     "_tag": "Function",
@@ -1139,7 +1218,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const findOne: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<Option.Option<A>, E | ParseError, R | IR | AR>"
+    "signature": "declare const findOne: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<Option.Option<A>, E | ParseError, R | IR | AR>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L60"
   },
   {
     "_tag": "Function",
@@ -1154,7 +1234,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const single: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<A, E | ParseError | Cause.NoSuchElementException, R | IR | AR>"
+    "signature": "declare const single: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<A, E | ParseError | Cause.NoSuchElementException, R | IR | AR>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L82"
   },
   {
     "_tag": "Function",
@@ -1168,7 +1249,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const asyncPauseResume: <A, E = never, R = never>(register: (emit: { readonly single: (item: A) => void; readonly chunk: (chunk: Chunk.Chunk<A>) => void; readonly array: (chunk: ReadonlyArray<A>) => void; readonly fail: (error: E) => void; readonly end: () => void; }) => { readonly onInterrupt: Effect.Effect<void, never, R>; readonly onPause: Effect.Effect<void>; readonly onResume: Effect.Effect<void>; }, bufferSize?: number) => Stream.Stream<A, E, R>"
+    "signature": "declare const asyncPauseResume: <A, E = never, R = never>(register: (emit: { readonly single: (item: A) => void; readonly chunk: (chunk: Chunk.Chunk<A>) => void; readonly array: (chunk: ReadonlyArray<A>) => void; readonly fail: (error: E) => void; readonly end: () => void; }) => { readonly onInterrupt: Effect.Effect<void, never, R>; readonly onPause: Effect.Effect<void>; readonly onResume: Effect.Effect<void>; }, bufferSize?: number) => Stream.Stream<A, E, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlStream.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -1182,7 +1264,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "declare const FragmentId: unique symbol"
+    "signature": "declare const FragmentId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -1196,7 +1279,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "declare const currentTransformer: FiberRef.FiberRef<Option.Option<Statement.Transformer>>"
+    "signature": "declare const currentTransformer: FiberRef.FiberRef<Option.Option<Statement.Transformer>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -1210,7 +1294,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "declare const withTransformer: { (f: Statement.Transformer): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, f: Statement.Transformer): Effect<A, E, R>; }"
+    "signature": "declare const withTransformer: { (f: Statement.Transformer): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, f: Statement.Transformer): Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -1224,7 +1309,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "declare const withTransformerDisabled: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>"
+    "signature": "declare const withTransformerDisabled: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -1238,7 +1324,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "transformer",
-    "signature": "declare const setTransformer: (f: Statement.Transformer) => Layer.Layer<never, never, never>"
+    "signature": "declare const setTransformer: (f: Statement.Transformer) => Layer.Layer<never, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -1252,7 +1339,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "guard",
-    "signature": "declare const isFragment: (u: unknown) => u is Fragment"
+    "signature": "declare const isFragment: (u: unknown) => u is Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -1266,7 +1354,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "guard",
-    "signature": "declare const isCustom: <A extends Custom<any, any, any, any>>(kind: A[\"kind\"]) => (u: unknown) => u is A"
+    "signature": "declare const isCustom: <A extends Custom<any, any, any, any>>(kind: A[\"kind\"]) => (u: unknown) => u is A",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -1280,7 +1369,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const custom: <C extends Custom<any, any, any, any>>(kind: C[\"kind\"]) => (i0: C[\"i0\"], i1: C[\"i1\"], i2: C[\"i2\"]) => Fragment"
+    "signature": "declare const custom: <C extends Custom<any, any, any, any>>(kind: C[\"kind\"]) => (i0: C[\"i0\"], i1: C[\"i1\"], i2: C[\"i2\"]) => Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L233"
   },
   {
     "_tag": "Constant",
@@ -1294,7 +1384,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const make: (acquirer: Connection.Acquirer, compiler: Compiler, spanAttributes: ReadonlyArray<readonly [string, unknown]>, transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined) => Constructor"
+    "signature": "declare const make: (acquirer: Connection.Acquirer, compiler: Compiler, spanAttributes: ReadonlyArray<readonly [string, unknown]>, transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined) => Constructor",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -1308,7 +1399,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const unsafeFragment: (sql: string, params?: ReadonlyArray<Primitive> | undefined) => Fragment"
+    "signature": "declare const unsafeFragment: (sql: string, params?: ReadonlyArray<Primitive> | undefined) => Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L392"
   },
   {
     "_tag": "Constant",
@@ -1322,7 +1414,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const and: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const and: (clauses: ReadonlyArray<string | Fragment>) => Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L401"
   },
   {
     "_tag": "Constant",
@@ -1336,7 +1429,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const or: (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const or: (clauses: ReadonlyArray<string | Fragment>) => Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L407"
   },
   {
     "_tag": "Constant",
@@ -1350,7 +1444,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const csv: { (values: ReadonlyArray<string | Fragment>): Fragment; (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment; }"
+    "signature": "declare const csv: { (values: ReadonlyArray<string | Fragment>): Fragment; (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -1364,7 +1459,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const join: (literal: string, addParens?: boolean, fallback?: string) => (clauses: ReadonlyArray<string | Fragment>) => Fragment"
+    "signature": "declare const join: (literal: string, addParens?: boolean, fallback?: string) => (clauses: ReadonlyArray<string | Fragment>) => Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L422"
   },
   {
     "_tag": "Constant",
@@ -1378,7 +1474,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "declare const makeCompiler: <C extends Custom<any, any, any, any> = any>(options: { readonly dialect: Dialect; readonly placeholder: (index: number, value: unknown) => string; readonly onIdentifier: (value: string, withoutTransform: boolean) => string; readonly onRecordUpdate: (placeholders: string, alias: string, columns: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onCustom: (type: C, placeholder: (u: unknown) => string, withoutTransform: boolean) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onInsert?: (columns: ReadonlyArray<string>, placeholders: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, binds: ReadonlyArray<Primitive>]; readonly onRecordUpdateSingle?: (columns: ReadonlyArray<string>, values: ReadonlyArray<Primitive>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; }) => Compiler"
+    "signature": "declare const makeCompiler: <C extends Custom<any, any, any, any> = any>(options: { readonly dialect: Dialect; readonly placeholder: (index: number, value: unknown) => string; readonly onIdentifier: (value: string, withoutTransform: boolean) => string; readonly onRecordUpdate: (placeholders: string, alias: string, columns: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onCustom: (type: C, placeholder: (u: unknown) => string, withoutTransform: boolean) => readonly [sql: string, params: ReadonlyArray<Primitive>]; readonly onInsert?: (columns: ReadonlyArray<string>, placeholders: string, values: ReadonlyArray<ReadonlyArray<Primitive>>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, binds: ReadonlyArray<Primitive>]; readonly onRecordUpdateSingle?: (columns: ReadonlyArray<string>, values: ReadonlyArray<Primitive>, returning: readonly [sql: string, params: ReadonlyArray<Primitive>] | undefined) => readonly [sql: string, params: ReadonlyArray<Primitive>]; }) => Compiler",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L445"
   },
   {
     "_tag": "Constant",
@@ -1392,7 +1489,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "declare const makeCompilerSqlite: (transform?: ((_: string) => string) | undefined) => Compiler"
+    "signature": "declare const makeCompilerSqlite: (transform?: ((_: string) => string) | undefined) => Compiler",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L480"
   },
   {
     "_tag": "Constant",
@@ -1406,7 +1504,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const defaultEscape: (c: string) => (str: string) => string"
+    "signature": "declare const defaultEscape: (c: string) => (str: string) => string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L486"
   },
   {
     "_tag": "Constant",
@@ -1420,7 +1519,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const primitiveKind: (value: Primitive) => PrimitiveKind"
+    "signature": "declare const primitiveKind: (value: Primitive) => PrimitiveKind",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L491"
   },
   {
     "_tag": "Constant",
@@ -1434,7 +1534,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const defaultTransforms: (transformer: (str: string) => string, nested?: boolean) => { readonly value: (value: any) => any; readonly object: (obj: Record<string, any>) => any; readonly array: <A extends object>(rows: ReadonlyArray<A>) => ReadonlyArray<A>; }"
+    "signature": "declare const defaultTransforms: (transformer: (str: string) => string, nested?: boolean) => { readonly value: (value: any) => any; readonly object: (obj: Record<string, any>) => any; readonly array: <A extends object>(rows: ReadonlyArray<A>) => ReadonlyArray<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L496"
   },
   {
     "_tag": "Interface",
@@ -1448,7 +1549,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Fragment {\n  readonly [FragmentId]: (_: never) => FragmentId\n  readonly segments: ReadonlyArray<Segment>\n}"
+    "signature": "export interface Fragment {\n  readonly [FragmentId]: (_: never) => FragmentId\n  readonly segments: ReadonlyArray<Segment>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -1462,7 +1564,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Statement<A> extends Fragment, Effect<ReadonlyArray<A>, SqlError>, Pipeable {\n  readonly raw: Effect<unknown, SqlError>\n  readonly withoutTransform: Effect<ReadonlyArray<A>, SqlError>\n  readonly stream: Stream.Stream<A, SqlError>\n  readonly values: Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n  readonly unprepared: Effect<ReadonlyArray<A>, SqlError>\n  readonly compile: (withoutTransform?: boolean | undefined) => readonly [\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ]\n}"
+    "signature": "export interface Statement<A> extends Fragment, Effect<ReadonlyArray<A>, SqlError>, Pipeable {\n  readonly raw: Effect<unknown, SqlError>\n  readonly withoutTransform: Effect<ReadonlyArray<A>, SqlError>\n  readonly stream: Stream.Stream<A, SqlError>\n  readonly values: Effect<ReadonlyArray<ReadonlyArray<Primitive>>, SqlError>\n  readonly unprepared: Effect<ReadonlyArray<A>, SqlError>\n  readonly compile: (withoutTransform?: boolean | undefined) => readonly [\n    sql: string,\n    params: ReadonlyArray<Primitive>\n  ]\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L47"
   },
   {
     "_tag": "Interface",
@@ -1476,7 +1579,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Literal {\n  readonly _tag: \"Literal\"\n  readonly value: string\n  readonly params?: ReadonlyArray<Primitive> | undefined\n}"
+    "signature": "export interface Literal {\n  readonly _tag: \"Literal\"\n  readonly value: string\n  readonly params?: ReadonlyArray<Primitive> | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L141"
   },
   {
     "_tag": "Interface",
@@ -1490,7 +1594,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Identifier {\n  readonly _tag: \"Identifier\"\n  readonly value: string\n}"
+    "signature": "export interface Identifier {\n  readonly _tag: \"Identifier\"\n  readonly value: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L151"
   },
   {
     "_tag": "Interface",
@@ -1504,7 +1609,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Parameter {\n  readonly _tag: \"Parameter\"\n  readonly value: Primitive\n}"
+    "signature": "export interface Parameter {\n  readonly _tag: \"Parameter\"\n  readonly value: Primitive\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L160"
   },
   {
     "_tag": "Interface",
@@ -1518,7 +1624,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface ArrayHelper {\n  readonly _tag: \"ArrayHelper\"\n  readonly value: ReadonlyArray<Primitive | Fragment>\n}"
+    "signature": "export interface ArrayHelper {\n  readonly _tag: \"ArrayHelper\"\n  readonly value: ReadonlyArray<Primitive | Fragment>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L169"
   },
   {
     "_tag": "Interface",
@@ -1532,7 +1639,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface RecordInsertHelper {\n  readonly _tag: \"RecordInsertHelper\"\n  readonly value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordInsertHelper\n}"
+    "signature": "export interface RecordInsertHelper {\n  readonly _tag: \"RecordInsertHelper\"\n  readonly value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordInsertHelper\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L178"
   },
   {
     "_tag": "Interface",
@@ -1546,7 +1654,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface RecordUpdateHelper {\n  readonly _tag: \"RecordUpdateHelper\"\n  readonly value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n  readonly alias: string\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordUpdateHelper\n}"
+    "signature": "export interface RecordUpdateHelper {\n  readonly _tag: \"RecordUpdateHelper\"\n  readonly value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n  readonly alias: string\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordUpdateHelper\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L190"
   },
   {
     "_tag": "Interface",
@@ -1560,7 +1669,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface RecordUpdateHelperSingle {\n  readonly _tag: \"RecordUpdateHelperSingle\"\n  readonly value: Record<string, Primitive | Fragment | undefined>\n  readonly omit: ReadonlyArray<string>\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordUpdateHelperSingle\n}"
+    "signature": "export interface RecordUpdateHelperSingle {\n  readonly _tag: \"RecordUpdateHelperSingle\"\n  readonly value: Record<string, Primitive | Fragment | undefined>\n  readonly omit: ReadonlyArray<string>\n  /** @internal */\n  readonly returningIdentifier: string | Fragment | undefined\n  readonly returning: (sql: string | Identifier | Fragment) => RecordUpdateHelperSingle\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L203"
   },
   {
     "_tag": "Interface",
@@ -1574,7 +1684,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Custom<\n  T extends string = string,\n  A = void,\n  B = void,\n  C = void\n> {\n  readonly _tag: \"Custom\"\n  readonly kind: T\n  readonly i0: A\n  readonly i1: B\n  readonly i2: C\n}"
+    "signature": "export interface Custom<\n  T extends string = string,\n  A = void,\n  B = void,\n  C = void\n> {\n  readonly _tag: \"Custom\"\n  readonly kind: T\n  readonly i0: A\n  readonly i1: B\n  readonly i2: C\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L216"
   },
   {
     "_tag": "Interface",
@@ -1588,7 +1699,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Constructor {\n  <A extends object = Row>(\n    strings: TemplateStringsArray,\n    ...args: Array<Argument>\n  ): Statement<A>\n\n  (value: string): Identifier\n\n  /**\n   * Create unsafe SQL query\n   */\n  readonly unsafe: <A extends object>(\n    sql: string,\n    params?: ReadonlyArray<Primitive> | undefined\n  ) => Statement<A>\n\n  readonly literal: (sql: string) => Fragment\n\n  readonly in: {\n    (value: ReadonlyArray<Primitive>): ArrayHelper\n    (column: string, value: ReadonlyArray<Primitive>): Fragment\n  }\n\n  readonly insert: {\n    (\n      value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n    ): RecordInsertHelper\n    (value: Record<string, Primitive | Fragment | undefined>): RecordInsertHelper\n  }\n\n  /** Update a single row */\n  readonly update: <A extends Record<string, Primitive | Fragment | undefined>>(\n    value: A,\n    omit?: ReadonlyArray<keyof A>\n  ) => RecordUpdateHelperSingle\n\n  /**\n   * Update multiple rows\n   *\n   * **Note:** Not supported in sqlite\n   */\n  readonly updateValues: (\n    value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>,\n    alias: string\n  ) => RecordUpdateHelper\n\n  /**\n   * Create an `AND` chain for a where clause\n   */\n  readonly and: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create an `OR` chain for a where clause\n   */\n  readonly or: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create comma seperated values, with an optional prefix\n   *\n   * Useful for `ORDER BY` and `GROUP BY` clauses\n   */\n  readonly csv: {\n    (values: ReadonlyArray<string | Fragment>): Fragment\n    (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment\n  }\n\n  readonly join: (\n    literal: string,\n    addParens?: boolean,\n    fallback?: string\n  ) => (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  readonly onDialect: <A, B, C, D, E>(options: {\n    readonly sqlite: () => A\n    readonly pg: () => B\n    readonly mysql: () => C\n    readonly mssql: () => D\n    readonly clickhouse: () => E\n  }) => A | B | C | D | E\n\n  readonly onDialectOrElse: <A, B = never, C = never, D = never, E = never, F = never>(options: {\n    readonly orElse: () => A\n    readonly sqlite?: () => B\n    readonly pg?: () => C\n    readonly mysql?: () => D\n    readonly mssql?: () => E\n    readonly clickhouse?: () => F\n  }) => A | B | C | D | E | F\n}"
+    "signature": "export interface Constructor {\n  <A extends object = Row>(\n    strings: TemplateStringsArray,\n    ...args: Array<Argument>\n  ): Statement<A>\n\n  (value: string): Identifier\n\n  /**\n   * Create unsafe SQL query\n   */\n  readonly unsafe: <A extends object>(\n    sql: string,\n    params?: ReadonlyArray<Primitive> | undefined\n  ) => Statement<A>\n\n  readonly literal: (sql: string) => Fragment\n\n  readonly in: {\n    (value: ReadonlyArray<Primitive>): ArrayHelper\n    (column: string, value: ReadonlyArray<Primitive>): Fragment\n  }\n\n  readonly insert: {\n    (\n      value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>\n    ): RecordInsertHelper\n    (value: Record<string, Primitive | Fragment | undefined>): RecordInsertHelper\n  }\n\n  /** Update a single row */\n  readonly update: <A extends Record<string, Primitive | Fragment | undefined>>(\n    value: A,\n    omit?: ReadonlyArray<keyof A>\n  ) => RecordUpdateHelperSingle\n\n  /**\n   * Update multiple rows\n   *\n   * **Note:** Not supported in sqlite\n   */\n  readonly updateValues: (\n    value: ReadonlyArray<Record<string, Primitive | Fragment | undefined>>,\n    alias: string\n  ) => RecordUpdateHelper\n\n  /**\n   * Create an `AND` chain for a where clause\n   */\n  readonly and: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create an `OR` chain for a where clause\n   */\n  readonly or: (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  /**\n   * Create comma seperated values, with an optional prefix\n   *\n   * Useful for `ORDER BY` and `GROUP BY` clauses\n   */\n  readonly csv: {\n    (values: ReadonlyArray<string | Fragment>): Fragment\n    (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment\n  }\n\n  readonly join: (\n    literal: string,\n    addParens?: boolean,\n    fallback?: string\n  ) => (clauses: ReadonlyArray<string | Fragment>) => Fragment\n\n  readonly onDialect: <A, B, C, D, E>(options: {\n    readonly sqlite: () => A\n    readonly pg: () => B\n    readonly mysql: () => C\n    readonly mssql: () => D\n    readonly clickhouse: () => E\n  }) => A | B | C | D | E\n\n  readonly onDialectOrElse: <A, B = never, C = never, D = never, E = never, F = never>(options: {\n    readonly orElse: () => A\n    readonly sqlite?: () => B\n    readonly pg?: () => C\n    readonly mysql?: () => D\n    readonly mssql?: () => E\n    readonly clickhouse?: () => F\n  }) => A | B | C | D | E | F\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L287"
   },
   {
     "_tag": "Interface",
@@ -1602,7 +1714,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "export interface Compiler {\n  readonly dialect: Dialect\n  readonly compile: (\n    statement: Fragment,\n    withoutTransform: boolean\n  ) => readonly [sql: string, params: ReadonlyArray<Primitive>]\n  readonly withoutTransform: this\n}"
+    "signature": "export interface Compiler {\n  readonly dialect: Dialect\n  readonly compile: (\n    statement: Fragment,\n    withoutTransform: boolean\n  ) => readonly [sql: string, params: ReadonlyArray<Primitive>]\n  readonly withoutTransform: this\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L432"
   },
   {
     "_tag": "TypeAlias",
@@ -1616,7 +1729,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "type FragmentId = typeof FragmentId"
+    "signature": "type FragmentId = typeof FragmentId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L26"
   },
   {
     "_tag": "TypeAlias",
@@ -1630,7 +1744,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Dialect = \"sqlite\" | \"pg\" | \"mysql\" | \"mssql\" | \"clickhouse\""
+    "signature": "type Dialect = \"sqlite\" | \"pg\" | \"mysql\" | \"mssql\" | \"clickhouse\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L41"
   },
   {
     "_tag": "TypeAlias",
@@ -1644,7 +1759,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Segment = | Literal\n  | Identifier\n  | Parameter\n  | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Custom"
+    "signature": "type Segment = | Literal\n  | Identifier\n  | Parameter\n  | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Custom",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L127"
   },
   {
     "_tag": "TypeAlias",
@@ -1658,7 +1774,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Primitive = | string\n  | number\n  | bigint\n  | boolean\n  | Date\n  | null\n  | Int8Array\n  | Uint8Array"
+    "signature": "type Primitive = | string\n  | number\n  | bigint\n  | boolean\n  | Date\n  | null\n  | Int8Array\n  | Uint8Array",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L241"
   },
   {
     "_tag": "TypeAlias",
@@ -1672,7 +1789,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type PrimitiveKind = | \"string\"\n  | \"number\"\n  | \"bigint\"\n  | \"boolean\"\n  | \"Date\"\n  | \"null\"\n  | \"Int8Array\"\n  | \"Uint8Array\""
+    "signature": "type PrimitiveKind = | \"string\"\n  | \"number\"\n  | \"bigint\"\n  | \"boolean\"\n  | \"Date\"\n  | \"null\"\n  | \"Int8Array\"\n  | \"Uint8Array\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L255"
   },
   {
     "_tag": "TypeAlias",
@@ -1686,7 +1804,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Helper = | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Identifier\n  | Custom"
+    "signature": "type Helper = | ArrayHelper\n  | RecordInsertHelper\n  | RecordUpdateHelper\n  | RecordUpdateHelperSingle\n  | Identifier\n  | Custom",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L269"
   },
   {
     "_tag": "TypeAlias",
@@ -1700,7 +1819,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Argument = Primitive | Helper | Fragment"
+    "signature": "type Argument = Primitive | Helper | Fragment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L281"
   },
   {
     "_tag": "TypeAlias",
@@ -1714,6 +1834,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Transformer = (\n    self: Statement<unknown>,\n    sql: Constructor,\n    context: FiberRefs.FiberRefs,\n    span: Tracer.Span\n  ) => Effect<Statement<unknown>>"
+    "signature": "type Transformer = (\n    self: Statement<unknown>,\n    sql: Constructor,\n    context: FiberRefs.FiberRefs,\n    span: Tracer.Span\n  ) => Effect<Statement<unknown>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Statement.ts#L68"
   }
 ]

@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const DocTypeId: unique symbol"
+    "signature": "declare const DocTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L41"
   },
   {
     "_tag": "Constant",
@@ -26,7 +27,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isDoc: (u: unknown) => u is Doc<unknown>"
+    "signature": "declare const isDoc: (u: unknown) => u is Doc<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L318"
   },
   {
     "_tag": "Constant",
@@ -41,7 +43,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isFail: <A>(self: Doc<A>) => self is Fail<A>"
+    "signature": "declare const isFail: <A>(self: Doc<A>) => self is Fail<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L326"
   },
   {
     "_tag": "Constant",
@@ -56,7 +59,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>"
+    "signature": "declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L334"
   },
   {
     "_tag": "Constant",
@@ -71,7 +75,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isChar: <A>(self: Doc<A>) => self is Char<A>"
+    "signature": "declare const isChar: <A>(self: Doc<A>) => self is Char<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L342"
   },
   {
     "_tag": "Constant",
@@ -86,7 +91,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isText: <A>(self: Doc<A>) => self is Text<A>"
+    "signature": "declare const isText: <A>(self: Doc<A>) => self is Text<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L350"
   },
   {
     "_tag": "Constant",
@@ -101,7 +107,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isLine: <A>(self: Doc<A>) => self is Line<A>"
+    "signature": "declare const isLine: <A>(self: Doc<A>) => self is Line<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L358"
   },
   {
     "_tag": "Constant",
@@ -116,7 +123,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>"
+    "signature": "declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L366"
   },
   {
     "_tag": "Constant",
@@ -131,7 +139,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isCat: <A>(self: Doc<A>) => self is Cat<A>"
+    "signature": "declare const isCat: <A>(self: Doc<A>) => self is Cat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L374"
   },
   {
     "_tag": "Constant",
@@ -146,7 +155,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isNest: <A>(self: Doc<A>) => self is Nest<A>"
+    "signature": "declare const isNest: <A>(self: Doc<A>) => self is Nest<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L382"
   },
   {
     "_tag": "Constant",
@@ -161,7 +171,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isUnion: <A>(self: Doc<A>) => self is Union<A>"
+    "signature": "declare const isUnion: <A>(self: Doc<A>) => self is Union<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L390"
   },
   {
     "_tag": "Constant",
@@ -176,7 +187,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isColumn: <A>(self: Doc<A>) => self is Column<A>"
+    "signature": "declare const isColumn: <A>(self: Doc<A>) => self is Column<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L398"
   },
   {
     "_tag": "Constant",
@@ -191,7 +203,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isWithPageWidth: <A>(self: Doc<A>) => self is WithPageWidth<A>"
+    "signature": "declare const isWithPageWidth: <A>(self: Doc<A>) => self is WithPageWidth<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L406"
   },
   {
     "_tag": "Constant",
@@ -206,7 +219,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>"
+    "signature": "declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L414"
   },
   {
     "_tag": "Constant",
@@ -221,7 +235,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>"
+    "signature": "declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L422"
   },
   {
     "_tag": "Constant",
@@ -236,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const char: (char: string) => Doc<never>"
+    "signature": "declare const char: (char: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L437"
   },
   {
     "_tag": "Constant",
@@ -251,7 +267,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const text: (text: string) => Doc<never>"
+    "signature": "declare const text: (text: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L449"
   },
   {
     "_tag": "Constant",
@@ -266,7 +283,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const string: (str: string) => Doc<never>"
+    "signature": "declare const string: (str: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L460"
   },
   {
     "_tag": "Constant",
@@ -283,7 +301,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const empty: Doc<never>"
+    "signature": "declare const empty: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L500"
   },
   {
     "_tag": "Constant",
@@ -298,7 +317,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const fail: Doc<never>"
+    "signature": "declare const fail: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L511"
   },
   {
     "_tag": "Constant",
@@ -315,7 +335,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const line: Doc<never>"
+    "signature": "declare const line: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L546"
   },
   {
     "_tag": "Constant",
@@ -332,7 +353,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const lineBreak: Doc<never>"
+    "signature": "declare const lineBreak: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L580"
   },
   {
     "_tag": "Constant",
@@ -349,7 +371,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const softLine: Doc<never>"
+    "signature": "declare const softLine: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L624"
   },
   {
     "_tag": "Constant",
@@ -366,7 +389,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const softLineBreak: Doc<never>"
+    "signature": "declare const softLineBreak: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L669"
   },
   {
     "_tag": "Constant",
@@ -383,7 +407,8 @@
     ],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const hardLine: Doc<never>"
+    "signature": "declare const hardLine: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L703"
   },
   {
     "_tag": "Constant",
@@ -398,7 +423,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const backslash: Doc<never>"
+    "signature": "declare const backslash: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L711"
   },
   {
     "_tag": "Constant",
@@ -413,7 +439,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const colon: Doc<never>"
+    "signature": "declare const colon: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L719"
   },
   {
     "_tag": "Constant",
@@ -428,7 +455,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const comma: Doc<never>"
+    "signature": "declare const comma: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L727"
   },
   {
     "_tag": "Constant",
@@ -443,7 +471,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const dot: Doc<never>"
+    "signature": "declare const dot: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L735"
   },
   {
     "_tag": "Constant",
@@ -458,7 +487,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const dquote: Doc<never>"
+    "signature": "declare const dquote: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L743"
   },
   {
     "_tag": "Constant",
@@ -473,7 +503,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const equalSign: Doc<never>"
+    "signature": "declare const equalSign: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L751"
   },
   {
     "_tag": "Constant",
@@ -488,7 +519,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const langle: Doc<never>"
+    "signature": "declare const langle: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L759"
   },
   {
     "_tag": "Constant",
@@ -503,7 +535,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const lbrace: Doc<never>"
+    "signature": "declare const lbrace: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L767"
   },
   {
     "_tag": "Constant",
@@ -518,7 +551,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const lbracket: Doc<never>"
+    "signature": "declare const lbracket: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L775"
   },
   {
     "_tag": "Constant",
@@ -533,7 +567,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const lparen: Doc<never>"
+    "signature": "declare const lparen: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L783"
   },
   {
     "_tag": "Constant",
@@ -548,7 +583,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const rangle: Doc<never>"
+    "signature": "declare const rangle: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L791"
   },
   {
     "_tag": "Constant",
@@ -563,7 +599,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const rbrace: Doc<never>"
+    "signature": "declare const rbrace: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L799"
   },
   {
     "_tag": "Constant",
@@ -578,7 +615,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const rbracket: Doc<never>"
+    "signature": "declare const rbracket: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L807"
   },
   {
     "_tag": "Constant",
@@ -593,7 +631,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const rparen: Doc<never>"
+    "signature": "declare const rparen: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L815"
   },
   {
     "_tag": "Constant",
@@ -608,7 +647,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const semi: Doc<never>"
+    "signature": "declare const semi: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L823"
   },
   {
     "_tag": "Constant",
@@ -623,7 +663,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const slash: Doc<never>"
+    "signature": "declare const slash: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L831"
   },
   {
     "_tag": "Constant",
@@ -638,7 +679,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const squote: Doc<never>"
+    "signature": "declare const squote: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L839"
   },
   {
     "_tag": "Constant",
@@ -653,7 +695,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const space: Doc<never>"
+    "signature": "declare const space: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L847"
   },
   {
     "_tag": "Constant",
@@ -668,7 +711,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "primitives",
-    "signature": "declare const vbar: Doc<never>"
+    "signature": "declare const vbar: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L855"
   },
   {
     "_tag": "Constant",
@@ -683,7 +727,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L867"
   },
   {
     "_tag": "Constant",
@@ -700,7 +745,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L912"
   },
   {
     "_tag": "Constant",
@@ -717,7 +763,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L942"
   },
   {
     "_tag": "Constant",
@@ -734,7 +781,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L980"
   },
   {
     "_tag": "Constant",
@@ -751,7 +799,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1021"
   },
   {
     "_tag": "Constant",
@@ -768,7 +817,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1062"
   },
   {
     "_tag": "Constant",
@@ -785,7 +835,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1091"
   },
   {
     "_tag": "Constant",
@@ -802,7 +853,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }"
+    "signature": "declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1120"
   },
   {
     "_tag": "Constant",
@@ -819,7 +871,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1153"
   },
   {
     "_tag": "Constant",
@@ -836,7 +889,8 @@
     ],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1176"
   },
   {
     "_tag": "Constant",
@@ -851,7 +905,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "concatenation",
-    "signature": "declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1191"
   },
   {
     "_tag": "Constant",
@@ -868,7 +923,8 @@
     ],
     "since": "1.0.0",
     "category": "separation",
-    "signature": "declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1232"
   },
   {
     "_tag": "Constant",
@@ -885,7 +941,8 @@
     ],
     "since": "1.0.0",
     "category": "separation",
-    "signature": "declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1285"
   },
   {
     "_tag": "Constant",
@@ -900,7 +957,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "separation",
-    "signature": "declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1300"
   },
   {
     "_tag": "Constant",
@@ -917,7 +975,8 @@
     ],
     "since": "1.0.0",
     "category": "separation",
-    "signature": "declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1342"
   },
   {
     "_tag": "Constant",
@@ -934,7 +993,8 @@
     ],
     "since": "1.0.0",
     "category": "alternative layouts",
-    "signature": "declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1421"
   },
   {
     "_tag": "Constant",
@@ -948,7 +1008,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "alternative layouts",
-    "signature": "declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }"
+    "signature": "declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1430"
   },
   {
     "_tag": "Constant",
@@ -963,7 +1024,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "alternative layouts",
-    "signature": "declare const group: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const group: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1446"
   },
   {
     "_tag": "Constant",
@@ -980,7 +1042,8 @@
     ],
     "since": "1.0.0",
     "category": "reactive layouts",
-    "signature": "declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>"
+    "signature": "declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1492"
   },
   {
     "_tag": "Constant",
@@ -997,7 +1060,8 @@
     ],
     "since": "1.0.0",
     "category": "reactive layouts",
-    "signature": "declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>"
+    "signature": "declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1524"
   },
   {
     "_tag": "Constant",
@@ -1014,7 +1078,8 @@
     ],
     "since": "1.0.0",
     "category": "reactive layouts",
-    "signature": "declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }"
+    "signature": "declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1567"
   },
   {
     "_tag": "Constant",
@@ -1031,7 +1096,8 @@
     ],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>"
+    "signature": "declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1616"
   },
   {
     "_tag": "Constant",
@@ -1048,7 +1114,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+    "signature": "declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1664"
   },
   {
     "_tag": "Constant",
@@ -1065,7 +1132,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const align: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const align: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1715"
   },
   {
     "_tag": "Constant",
@@ -1082,7 +1150,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+    "signature": "declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1754"
   },
   {
     "_tag": "Constant",
@@ -1099,7 +1168,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }"
+    "signature": "declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1792"
   },
   {
     "_tag": "Constant",
@@ -1116,7 +1186,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }"
+    "signature": "declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1849"
   },
   {
     "_tag": "Constant",
@@ -1133,7 +1204,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1882"
   },
   {
     "_tag": "Constant",
@@ -1150,7 +1222,8 @@
     ],
     "since": "1.0.0",
     "category": "alignment",
-    "signature": "declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>"
+    "signature": "declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1908"
   },
   {
     "_tag": "Constant",
@@ -1167,7 +1240,8 @@
     ],
     "since": "1.0.0",
     "category": "filling",
-    "signature": "declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+    "signature": "declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1960"
   },
   {
     "_tag": "Constant",
@@ -1184,7 +1258,8 @@
     ],
     "since": "1.0.0",
     "category": "filling",
-    "signature": "declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }"
+    "signature": "declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2012"
   },
   {
     "_tag": "Constant",
@@ -1199,7 +1274,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "flattening",
-    "signature": "declare const flatten: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const flatten: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2027"
   },
   {
     "_tag": "Constant",
@@ -1214,7 +1290,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "flattening",
-    "signature": "declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>"
+    "signature": "declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2046"
   },
   {
     "_tag": "Constant",
@@ -1229,7 +1306,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }"
+    "signature": "declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2062"
   },
   {
     "_tag": "Constant",
@@ -1244,7 +1322,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }"
+    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2088"
   },
   {
     "_tag": "Constant",
@@ -1259,7 +1338,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2104"
   },
   {
     "_tag": "Constant",
@@ -1274,7 +1354,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>"
+    "signature": "declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2119"
   },
   {
     "_tag": "Constant",
@@ -1288,7 +1369,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "folding",
-    "signature": "declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }"
+    "signature": "declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2129"
   },
   {
     "_tag": "Constant",
@@ -1302,7 +1384,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "rendering",
-    "signature": "declare const render: { (config: Doc.RenderConfig): <A>(self: Doc<A>) => string; <A>(self: Doc<A>, config: Doc.RenderConfig): string; }"
+    "signature": "declare const render: { (config: Doc.RenderConfig): <A>(self: Doc<A>) => string; <A>(self: Doc<A>, config: Doc.RenderConfig): string; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2175"
   },
   {
     "_tag": "Constant",
@@ -1316,7 +1399,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "rendering",
-    "signature": "declare const renderStream: <A>(self: DocStream<A>) => string"
+    "signature": "declare const renderStream: <A>(self: DocStream<A>) => string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2184"
   },
   {
     "_tag": "Constant",
@@ -1330,7 +1414,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
-    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }"
+    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2196"
   },
   {
     "_tag": "Constant",
@@ -1344,7 +1429,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const getSemigroup: <A>(_: void) => Semigroup<Doc<A>>"
+    "signature": "declare const getSemigroup: <A>(_: void) => Semigroup<Doc<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2205"
   },
   {
     "_tag": "Constant",
@@ -1358,7 +1444,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const getMonoid: <A>(_: void) => Monoid<Doc<A>>"
+    "signature": "declare const getMonoid: <A>(_: void) => Monoid<Doc<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2211"
   },
   {
     "_tag": "Constant",
@@ -1372,7 +1459,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<DocTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<DocTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2217"
   },
   {
     "_tag": "Constant",
@@ -1386,7 +1474,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<DocTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<DocTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2223"
   },
   {
     "_tag": "Constant",
@@ -1403,7 +1492,8 @@
     ],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }"
+    "signature": "declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2253"
   },
   {
     "_tag": "Constant",
@@ -1418,7 +1508,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2264"
   },
   {
     "_tag": "Constant",
@@ -1433,7 +1524,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2272"
   },
   {
     "_tag": "Constant",
@@ -1448,7 +1540,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const parenthesized: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const parenthesized: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2280"
   },
   {
     "_tag": "Constant",
@@ -1463,7 +1556,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2288"
   },
   {
     "_tag": "Constant",
@@ -1478,7 +1572,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2296"
   },
   {
     "_tag": "Constant",
@@ -1493,7 +1588,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>"
+    "signature": "declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2304"
   },
   {
     "_tag": "Constant",
@@ -1510,7 +1606,8 @@
     ],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const spaces: (n: number) => Doc<never>"
+    "signature": "declare const spaces: (n: number) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2326"
   },
   {
     "_tag": "Constant",
@@ -1524,7 +1621,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const textSpaces: (n: number) => string"
+    "signature": "declare const textSpaces: (n: number) => string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2332"
   },
   {
     "_tag": "Constant",
@@ -1541,7 +1639,8 @@
     ],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>"
+    "signature": "declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2354"
   },
   {
     "_tag": "Constant",
@@ -1558,7 +1657,8 @@
     ],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const reflow: (s: string, char?: string) => Doc<never>"
+    "signature": "declare const reflow: (s: string, char?: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2391"
   },
   {
     "_tag": "Constant",
@@ -1575,7 +1675,8 @@
     ],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }"
+    "signature": "declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2433"
   },
   {
     "_tag": "Interface",
@@ -1589,7 +1690,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface DocTypeLambda extends TypeLambda {\n  readonly type: Doc<this[\"Target\"]>\n}"
+    "signature": "export interface DocTypeLambda extends TypeLambda {\n  readonly type: Doc<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L126"
   },
   {
     "_tag": "Interface",
@@ -1604,7 +1706,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Fail<A> extends Doc.Variance<A> {\n  readonly _tag: \"Fail\"\n}"
+    "signature": "export interface Fail<A> extends Doc.Variance<A> {\n  readonly _tag: \"Fail\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L138"
   },
   {
     "_tag": "Interface",
@@ -1619,7 +1722,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Empty<A> extends Doc.Variance<A> {\n  readonly _tag: \"Empty\"\n}"
+    "signature": "export interface Empty<A> extends Doc.Variance<A> {\n  readonly _tag: \"Empty\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L150"
   },
   {
     "_tag": "Interface",
@@ -1634,7 +1738,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Char<A> extends Doc.Variance<A> {\n  readonly _tag: \"Char\"\n  readonly char: string\n}"
+    "signature": "export interface Char<A> extends Doc.Variance<A> {\n  readonly _tag: \"Char\"\n  readonly char: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L163"
   },
   {
     "_tag": "Interface",
@@ -1649,7 +1754,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Text<A> extends Doc.Variance<A> {\n  readonly _tag: \"Text\"\n  readonly text: string\n}"
+    "signature": "export interface Text<A> extends Doc.Variance<A> {\n  readonly _tag: \"Text\"\n  readonly text: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L178"
   },
   {
     "_tag": "Interface",
@@ -1664,7 +1770,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Line<A> extends Doc.Variance<A> {\n  readonly _tag: \"Line\"\n}"
+    "signature": "export interface Line<A> extends Doc.Variance<A> {\n  readonly _tag: \"Line\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L189"
   },
   {
     "_tag": "Interface",
@@ -1679,7 +1786,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface FlatAlt<A> extends Doc.Variance<A> {\n  readonly _tag: \"FlatAlt\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+    "signature": "export interface FlatAlt<A> extends Doc.Variance<A> {\n  readonly _tag: \"FlatAlt\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L204"
   },
   {
     "_tag": "Interface",
@@ -1694,7 +1802,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Cat<A> extends Doc.Variance<A> {\n  readonly _tag: \"Cat\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+    "signature": "export interface Cat<A> extends Doc.Variance<A> {\n  readonly _tag: \"Cat\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L216"
   },
   {
     "_tag": "Interface",
@@ -1709,7 +1818,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Nest<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nest\"\n  readonly indent: number\n  readonly doc: Doc<A>\n}"
+    "signature": "export interface Nest<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nest\"\n  readonly indent: number\n  readonly doc: Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L228"
   },
   {
     "_tag": "Interface",
@@ -1724,7 +1834,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Union<A> extends Doc.Variance<A> {\n  readonly _tag: \"Union\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}"
+    "signature": "export interface Union<A> extends Doc.Variance<A> {\n  readonly _tag: \"Union\"\n  readonly left: Doc<A>\n  readonly right: Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L246"
   },
   {
     "_tag": "Interface",
@@ -1739,7 +1850,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Column<A> extends Doc.Variance<A> {\n  readonly _tag: \"Column\"\n  readonly react: (position: number) => Doc<A>\n}"
+    "signature": "export interface Column<A> extends Doc.Variance<A> {\n  readonly _tag: \"Column\"\n  readonly react: (position: number) => Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L258"
   },
   {
     "_tag": "Interface",
@@ -1754,7 +1866,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}"
+    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L269"
   },
   {
     "_tag": "Interface",
@@ -1769,7 +1882,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}"
+    "signature": "export interface WithPageWidth<A> extends Doc.Variance<A> {\n  readonly _tag: \"WithPageWidth\"\n  readonly react: (pageWidth: PageWidth) => Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L280"
   },
   {
     "_tag": "Interface",
@@ -1784,7 +1898,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Nesting<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nesting\"\n  readonly react: (level: number) => Doc<A>\n}"
+    "signature": "export interface Nesting<A> extends Doc.Variance<A> {\n  readonly _tag: \"Nesting\"\n  readonly react: (level: number) => Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L291"
   },
   {
     "_tag": "Interface",
@@ -1799,7 +1914,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Annotated<A> extends Doc.Variance<A> {\n  readonly _tag: \"Annotated\"\n  readonly annotation: A\n  readonly doc: Doc<A>\n}"
+    "signature": "export interface Annotated<A> extends Doc.Variance<A> {\n  readonly _tag: \"Annotated\"\n  readonly annotation: A\n  readonly doc: Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L302"
   },
   {
     "_tag": "TypeAlias",
@@ -1813,7 +1929,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type DocTypeId = typeof DocTypeId"
+    "signature": "type DocTypeId = typeof DocTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L47"
   },
   {
     "_tag": "TypeAlias",
@@ -1828,7 +1945,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Doc<A> = | Fail<A>\n  | Empty<A>\n  | Char<A>\n  | Text<A>\n  | Line<A>\n  | FlatAlt<A>\n  | Cat<A>\n  | Nest<A>\n  | Union<A>\n  | Column<A>\n  | WithPageWidth<A>\n  | Nesting<A>\n  | Annotated<A>"
+    "signature": "type Doc<A> = | Fail<A>\n  | Empty<A>\n  | Char<A>\n  | Text<A>\n  | Line<A>\n  | FlatAlt<A>\n  | Cat<A>\n  | Nest<A>\n  | Union<A>\n  | Column<A>\n  | WithPageWidth<A>\n  | Nesting<A>\n  | Annotated<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L56"
   },
   {
     "_tag": "Interface",
@@ -1842,7 +1960,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Variance<A> extends Equal, Pipeable {\n    readonly [DocTypeId]: {\n      readonly _A: () => A\n    }\n  }"
+    "signature": "export interface Variance<A> extends Equal, Pipeable {\n    readonly [DocTypeId]: {\n      readonly _A: () => A\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L79"
   },
   {
     "_tag": "Interface",
@@ -1856,7 +1975,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Compact {\n    readonly style: \"compact\"\n  }"
+    "signature": "export interface Compact {\n    readonly style: \"compact\"\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L99"
   },
   {
     "_tag": "Interface",
@@ -1870,7 +1990,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Pretty {\n    readonly style: \"pretty\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }"
+    "signature": "export interface Pretty {\n    readonly style: \"pretty\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L107"
   },
   {
     "_tag": "Interface",
@@ -1884,7 +2005,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Smart {\n    readonly style: \"smart\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }"
+    "signature": "export interface Smart {\n    readonly style: \"smart\"\n    readonly options?: Partial<Omit<AvailablePerLine, \"_tag\">>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L116"
   },
   {
     "_tag": "TypeAlias",
@@ -1898,7 +2020,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type TypeLambda = DocTypeLambda"
+    "signature": "type TypeLambda = DocTypeLambda",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L88"
   },
   {
     "_tag": "TypeAlias",
@@ -1912,7 +2035,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type RenderConfig = Compact | Pretty | Smart"
+    "signature": "type RenderConfig = Compact | Pretty | Smart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L94"
   },
   {
     "_tag": "Constant",
@@ -1926,7 +2050,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const DocStreamTypeId: unique symbol"
+    "signature": "declare const DocStreamTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -1941,7 +2066,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isDocStream: (u: unknown) => u is DocStream<unknown>"
+    "signature": "declare const isDocStream: (u: unknown) => u is DocStream<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -1956,7 +2082,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isFailedStream: <A>(self: DocStream<A>) => self is FailedStream<A>"
+    "signature": "declare const isFailedStream: <A>(self: DocStream<A>) => self is FailedStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -1971,7 +2098,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isEmptyStream: <A>(self: DocStream<A>) => self is EmptyStream<A>"
+    "signature": "declare const isEmptyStream: <A>(self: DocStream<A>) => self is EmptyStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L187"
   },
   {
     "_tag": "Constant",
@@ -1986,7 +2114,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isCharStream: <A>(self: DocStream<A>) => self is CharStream<A>"
+    "signature": "declare const isCharStream: <A>(self: DocStream<A>) => self is CharStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L195"
   },
   {
     "_tag": "Constant",
@@ -2001,7 +2130,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isTextStream: <A>(self: DocStream<A>) => self is TextStream<A>"
+    "signature": "declare const isTextStream: <A>(self: DocStream<A>) => self is TextStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L203"
   },
   {
     "_tag": "Constant",
@@ -2016,7 +2146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isLineStream: <A>(self: DocStream<A>) => self is LineStream<A>"
+    "signature": "declare const isLineStream: <A>(self: DocStream<A>) => self is LineStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L211"
   },
   {
     "_tag": "Constant",
@@ -2031,7 +2162,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isPushAnnotationStream: <A>(self: DocStream<A>) => self is PushAnnotationStream<A>"
+    "signature": "declare const isPushAnnotationStream: <A>(self: DocStream<A>) => self is PushAnnotationStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L219"
   },
   {
     "_tag": "Constant",
@@ -2046,7 +2178,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isPopAnnotationStream: <A>(self: DocStream<A>) => self is PopAnnotationStream<A>"
+    "signature": "declare const isPopAnnotationStream: <A>(self: DocStream<A>) => self is PopAnnotationStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L229"
   },
   {
     "_tag": "Constant",
@@ -2060,7 +2193,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const failed: DocStream<never>"
+    "signature": "declare const failed: DocStream<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L241"
   },
   {
     "_tag": "Constant",
@@ -2074,7 +2208,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const empty: DocStream<never>"
+    "signature": "declare const empty: DocStream<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L247"
   },
   {
     "_tag": "Constant",
@@ -2088,7 +2223,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const char: { (char: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, char: string): DocStream<A>; }"
+    "signature": "declare const char: { (char: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, char: string): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L253"
   },
   {
     "_tag": "Constant",
@@ -2102,7 +2238,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const text: { (text: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, text: string): DocStream<A>; }"
+    "signature": "declare const text: { (text: string): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, text: string): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L262"
   },
   {
     "_tag": "Constant",
@@ -2116,7 +2253,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const line: { (indentation: number): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, indentation: number): DocStream<A>; }"
+    "signature": "declare const line: { (indentation: number): <A>(self: DocStream<A>) => DocStream<A>; <A>(self: DocStream<A>, indentation: number): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L271"
   },
   {
     "_tag": "Constant",
@@ -2130,7 +2268,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const pushAnnotation: { <B>(annotation: B): <A>(self: DocStream<A>) => DocStream<B | A>; <A, B>(self: DocStream<A>, annotation: B): DocStream<A | B>; }"
+    "signature": "declare const pushAnnotation: { <B>(annotation: B): <A>(self: DocStream<A>) => DocStream<B | A>; <A, B>(self: DocStream<A>, annotation: B): DocStream<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L280"
   },
   {
     "_tag": "Constant",
@@ -2144,7 +2283,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const popAnnotation: <A>(stream: DocStream<A>) => DocStream<A>"
+    "signature": "declare const popAnnotation: <A>(stream: DocStream<A>) => DocStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L289"
   },
   {
     "_tag": "Constant",
@@ -2159,7 +2299,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Option<B>): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => Option<B>): DocStream<B>; }"
+    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Option<B>): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => Option<B>): DocStream<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L302"
   },
   {
     "_tag": "Constant",
@@ -2174,7 +2315,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }"
+    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -2189,7 +2331,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const unAnnotate: <A>(self: DocStream<A>) => DocStream<never>"
+    "signature": "declare const unAnnotate: <A>(self: DocStream<A>) => DocStream<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L324"
   },
   {
     "_tag": "Constant",
@@ -2203,7 +2346,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "folding",
-    "signature": "declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocStream<A>) => M; <A, M>(self: DocStream<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }"
+    "signature": "declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocStream<A>) => M; <A, M>(self: DocStream<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L334"
   },
   {
     "_tag": "Constant",
@@ -2217,7 +2361,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "folding",
-    "signature": "declare const match: { <A, R>(patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): (self: DocStream<A>) => R; <A, R>(self: DocStream<A>, patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): R; }"
+    "signature": "declare const match: { <A, R>(patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): (self: DocStream<A>) => R; <A, R>(self: DocStream<A>, patterns: { readonly FailedStream: () => R; readonly EmptyStream: () => R; readonly CharStream: (char: string, stream: DocStream<A>) => R; readonly TextStream: (text: string, stream: DocStream<A>) => R; readonly LineStream: (indentation: number, stream: DocStream<A>) => R; readonly PushAnnotationStream: (annotation: A, stream: DocStream<A>) => R; readonly PopAnnotationStream: (stream: DocStream<A>) => R; }): R; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L343"
   },
   {
     "_tag": "Constant",
@@ -2231,7 +2376,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping",
-    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }"
+    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: DocStream<A>) => DocStream<B>; <A, B>(self: DocStream<A>, f: (a: A) => B): DocStream<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L373"
   },
   {
     "_tag": "Constant",
@@ -2245,7 +2391,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Functor: covariant.Covariant<DocStreamTypeLambda>"
+    "signature": "declare const Functor: covariant.Covariant<DocStreamTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L382"
   },
   {
     "_tag": "Constant",
@@ -2259,7 +2406,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<DocStreamTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<DocStreamTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L388"
   },
   {
     "_tag": "Interface",
@@ -2273,7 +2421,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface DocStreamTypeLambda extends TypeLambda {\n  readonly type: DocStream<this[\"Target\"]>\n}"
+    "signature": "export interface DocStreamTypeLambda extends TypeLambda {\n  readonly type: DocStream<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L76"
   },
   {
     "_tag": "Interface",
@@ -2288,7 +2437,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface FailedStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"FailedStream\"\n}"
+    "signature": "export interface FailedStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"FailedStream\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L86"
   },
   {
     "_tag": "Interface",
@@ -2303,7 +2453,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface EmptyStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"EmptyStream\"\n}"
+    "signature": "export interface EmptyStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"EmptyStream\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L96"
   },
   {
     "_tag": "Interface",
@@ -2318,7 +2469,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface CharStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"CharStream\"\n  readonly char: string\n  readonly stream: DocStream<A>\n}"
+    "signature": "export interface CharStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"CharStream\"\n  readonly char: string\n  readonly stream: DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L106"
   },
   {
     "_tag": "Interface",
@@ -2333,7 +2485,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface TextStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"TextStream\"\n  readonly text: string\n  readonly stream: DocStream<A>\n}"
+    "signature": "export interface TextStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"TextStream\"\n  readonly text: string\n  readonly stream: DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L118"
   },
   {
     "_tag": "Interface",
@@ -2348,7 +2501,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface LineStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"LineStream\"\n  readonly indentation: number\n  readonly stream: DocStream<A>\n}"
+    "signature": "export interface LineStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"LineStream\"\n  readonly indentation: number\n  readonly stream: DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L132"
   },
   {
     "_tag": "Interface",
@@ -2363,7 +2517,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface PushAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PushAnnotationStream\"\n  readonly annotation: A\n  readonly stream: DocStream<A>\n}"
+    "signature": "export interface PushAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PushAnnotationStream\"\n  readonly annotation: A\n  readonly stream: DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L144"
   },
   {
     "_tag": "Interface",
@@ -2378,7 +2533,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface PopAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PopAnnotationStream\"\n  readonly stream: DocStream<A>\n}"
+    "signature": "export interface PopAnnotationStream<A> extends DocStream.Variance<A> {\n  readonly _tag: \"PopAnnotationStream\"\n  readonly stream: DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L156"
   },
   {
     "_tag": "TypeAlias",
@@ -2392,7 +2548,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type DocStreamTypeId = typeof DocStreamTypeId"
+    "signature": "type DocStreamTypeId = typeof DocStreamTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -2407,7 +2564,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type DocStream<A> = | FailedStream<A>\n  | EmptyStream<A>\n  | CharStream<A>\n  | TextStream<A>\n  | LineStream<A>\n  | PushAnnotationStream<A>\n  | PopAnnotationStream<A>"
+    "signature": "type DocStream<A> = | FailedStream<A>\n  | EmptyStream<A>\n  | CharStream<A>\n  | TextStream<A>\n  | LineStream<A>\n  | PushAnnotationStream<A>\n  | PopAnnotationStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L42"
   },
   {
     "_tag": "Interface",
@@ -2421,7 +2579,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Variance<A> extends Equal {\n    readonly [DocStreamTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }"
+    "signature": "export interface Variance<A> extends Equal {\n    readonly [DocStreamTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -2435,7 +2594,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type TypeLambda = DocStreamTypeLambda"
+    "signature": "type TypeLambda = DocStreamTypeLambda",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocStream.ts#L69"
   },
   {
     "_tag": "Constant",
@@ -2449,7 +2609,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const DocTreeTypeId: unique symbol"
+    "signature": "declare const DocTreeTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -2464,7 +2625,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isDocTree: (u: unknown) => u is DocTree<unknown>"
+    "signature": "declare const isDocTree: (u: unknown) => u is DocTree<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -2479,7 +2641,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isEmptyTree: <A>(self: DocTree<A>) => self is EmptyTree<A>"
+    "signature": "declare const isEmptyTree: <A>(self: DocTree<A>) => self is EmptyTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L151"
   },
   {
     "_tag": "Constant",
@@ -2494,7 +2657,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isCharTree: <A>(self: DocTree<A>) => self is CharTree<A>"
+    "signature": "declare const isCharTree: <A>(self: DocTree<A>) => self is CharTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L159"
   },
   {
     "_tag": "Constant",
@@ -2509,7 +2673,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isTextTree: <A>(self: DocTree<A>) => self is TextTree<A>"
+    "signature": "declare const isTextTree: <A>(self: DocTree<A>) => self is TextTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L167"
   },
   {
     "_tag": "Constant",
@@ -2524,7 +2689,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isLineTree: <A>(self: DocTree<A>) => self is LineTree<A>"
+    "signature": "declare const isLineTree: <A>(self: DocTree<A>) => self is LineTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L175"
   },
   {
     "_tag": "Constant",
@@ -2539,7 +2705,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isAnnotationTree: <A>(self: DocTree<A>) => self is AnnotationTree<A>"
+    "signature": "declare const isAnnotationTree: <A>(self: DocTree<A>) => self is AnnotationTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L183"
   },
   {
     "_tag": "Constant",
@@ -2554,7 +2721,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isConcatTree: <A>(self: DocTree<A>) => self is ConcatTree<A>"
+    "signature": "declare const isConcatTree: <A>(self: DocTree<A>) => self is ConcatTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L191"
   },
   {
     "_tag": "Constant",
@@ -2568,7 +2736,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const empty: DocTree<never>"
+    "signature": "declare const empty: DocTree<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L201"
   },
   {
     "_tag": "Constant",
@@ -2582,7 +2751,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const char: <A>(char: string) => DocTree<A>"
+    "signature": "declare const char: <A>(char: string) => DocTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L207"
   },
   {
     "_tag": "Constant",
@@ -2596,7 +2766,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const text: <A>(text: string) => DocTree<A>"
+    "signature": "declare const text: <A>(text: string) => DocTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L213"
   },
   {
     "_tag": "Constant",
@@ -2610,7 +2781,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const line: <A>(indentation: number) => DocTree<A>"
+    "signature": "declare const line: <A>(indentation: number) => DocTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L219"
   },
   {
     "_tag": "Constant",
@@ -2625,7 +2797,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const annotation: { <A>(annotation: A): <B>(self: DocTree<B>) => DocTree<A | B>; <A, B>(self: DocTree<A>, annotation: B): DocTree<A | B>; }"
+    "signature": "declare const annotation: { <A>(annotation: A): <B>(self: DocTree<B>) => DocTree<A | B>; <A, B>(self: DocTree<A>, annotation: B): DocTree<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L227"
   },
   {
     "_tag": "Constant",
@@ -2640,7 +2813,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>"
+    "signature": "declare const concat: <A>(trees: ReadonlyArray<DocTree<A>>) => DocTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -2655,7 +2829,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => Iterable<B>): DocTree<B>; }"
+    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => Iterable<B>): DocTree<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L251"
   },
   {
     "_tag": "Constant",
@@ -2670,7 +2845,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => B): DocTree<B>; }"
+    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: DocTree<A>) => DocTree<B>; <A, B>(self: DocTree<A>, f: (a: A) => B): DocTree<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L262"
   },
   {
     "_tag": "Constant",
@@ -2685,7 +2861,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "annotations",
-    "signature": "declare const unAnnotate: <A>(self: DocTree<A>) => DocTree<never>"
+    "signature": "declare const unAnnotate: <A>(self: DocTree<A>) => DocTree<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L273"
   },
   {
     "_tag": "Constant",
@@ -2699,7 +2876,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "folding",
-    "signature": "declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }"
+    "signature": "declare const foldMap: { <A, M>(M: monoid.Monoid<M>, f: (a: A) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, f: (a: A) => M): M; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L283"
   },
   {
     "_tag": "Constant",
@@ -2716,7 +2894,8 @@
     ],
     "since": "1.0.0",
     "category": "rendering",
-    "signature": "declare const renderSimplyDecorated: { <A, M>(M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): M; }"
+    "signature": "declare const renderSimplyDecorated: { <A, M>(M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): (self: DocTree<A>) => M; <A, M>(self: DocTree<A>, M: monoid.Monoid<M>, renderText: (text: string) => M, renderAnnotation: (annotation: A, out: M) => M): M; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L332"
   },
   {
     "_tag": "Constant",
@@ -2731,7 +2910,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const treeForm: <A>(stream: DocStream.DocStream<A>) => DocTree<A>"
+    "signature": "declare const treeForm: <A>(stream: DocStream.DocStream<A>) => DocTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L356"
   },
   {
     "_tag": "Constant",
@@ -2745,7 +2925,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const getSemigroup: <A>(_: void) => semigroup.Semigroup<DocTree<A>>"
+    "signature": "declare const getSemigroup: <A>(_: void) => semigroup.Semigroup<DocTree<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L366"
   },
   {
     "_tag": "Constant",
@@ -2759,7 +2940,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const getMonoid: <A>(_: void) => monoid.Monoid<DocTree<A>>"
+    "signature": "declare const getMonoid: <A>(_: void) => monoid.Monoid<DocTree<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L372"
   },
   {
     "_tag": "Constant",
@@ -2773,7 +2955,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Covariant: covariant.Covariant<DocTreeTypeLambda>"
+    "signature": "declare const Covariant: covariant.Covariant<DocTreeTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L378"
   },
   {
     "_tag": "Constant",
@@ -2787,7 +2970,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Invariant: invariant.Invariant<DocTreeTypeLambda>"
+    "signature": "declare const Invariant: invariant.Invariant<DocTreeTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L384"
   },
   {
     "_tag": "Interface",
@@ -2801,7 +2985,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface DocTreeTypeLambda extends TypeLambda {\n  readonly type: DocTree<this[\"Target\"]>\n}"
+    "signature": "export interface DocTreeTypeLambda extends TypeLambda {\n  readonly type: DocTree<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L75"
   },
   {
     "_tag": "Interface",
@@ -2815,7 +3000,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface EmptyTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"EmptyTree\"\n}"
+    "signature": "export interface EmptyTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"EmptyTree\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L83"
   },
   {
     "_tag": "Interface",
@@ -2829,7 +3015,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface CharTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"CharTree\"\n  readonly char: string\n}"
+    "signature": "export interface CharTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"CharTree\"\n  readonly char: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L91"
   },
   {
     "_tag": "Interface",
@@ -2843,7 +3030,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface TextTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"TextTree\"\n  readonly text: string\n}"
+    "signature": "export interface TextTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"TextTree\"\n  readonly text: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L100"
   },
   {
     "_tag": "Interface",
@@ -2857,7 +3045,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface LineTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"LineTree\"\n  readonly indentation: number\n}"
+    "signature": "export interface LineTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"LineTree\"\n  readonly indentation: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L109"
   },
   {
     "_tag": "Interface",
@@ -2871,7 +3060,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface AnnotationTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"AnnotationTree\"\n  readonly annotation: A\n  readonly tree: DocTree<A>\n}"
+    "signature": "export interface AnnotationTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"AnnotationTree\"\n  readonly annotation: A\n  readonly tree: DocTree<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L118"
   },
   {
     "_tag": "Interface",
@@ -2885,7 +3075,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface ConcatTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"ConcatTree\"\n  readonly trees: ReadonlyArray<DocTree<A>>\n}"
+    "signature": "export interface ConcatTree<A> extends DocTree.Variance<A> {\n  readonly _tag: \"ConcatTree\"\n  readonly trees: ReadonlyArray<DocTree<A>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L128"
   },
   {
     "_tag": "TypeAlias",
@@ -2899,7 +3090,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type DocTreeTypeId = typeof DocTreeTypeId"
+    "signature": "type DocTreeTypeId = typeof DocTreeTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -2914,7 +3106,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type DocTree<A> = | EmptyTree<A>\n  | CharTree<A>\n  | TextTree<A>\n  | LineTree<A>\n  | AnnotationTree<A>\n  | ConcatTree<A>"
+    "signature": "type DocTree<A> = | EmptyTree<A>\n  | CharTree<A>\n  | TextTree<A>\n  | LineTree<A>\n  | AnnotationTree<A>\n  | ConcatTree<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L44"
   },
   {
     "_tag": "Interface",
@@ -2928,7 +3121,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export interface Variance<A> extends Equal {\n    readonly [DocTreeTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }"
+    "signature": "export interface Variance<A> extends Equal {\n    readonly [DocTreeTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -2942,7 +3136,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type TypeLambda = DocTreeTypeLambda"
+    "signature": "type TypeLambda = DocTreeTypeLambda",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/DocTree.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -2956,7 +3151,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const FlattenTypeId: unique symbol"
+    "signature": "declare const FlattenTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -2971,7 +3167,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isFlatten: (u: unknown) => u is Flatten<unknown>"
+    "signature": "declare const isFlatten: (u: unknown) => u is Flatten<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L103"
   },
   {
     "_tag": "Constant",
@@ -2986,7 +3183,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isFlattened: <A>(a: Flatten<A>) => a is Flattened<A>"
+    "signature": "declare const isFlattened: <A>(a: Flatten<A>) => a is Flattened<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -3001,7 +3199,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isAlreadyFlat: <A>(a: Flatten<A>) => a is AlreadyFlat<A>"
+    "signature": "declare const isAlreadyFlat: <A>(a: Flatten<A>) => a is AlreadyFlat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -3016,7 +3215,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isNeverFlat: <A>(a: Flatten<A>) => a is NeverFlat<A>"
+    "signature": "declare const isNeverFlat: <A>(a: Flatten<A>) => a is NeverFlat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -3030,7 +3230,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const flattened: <A>(value: A) => Flatten<A>"
+    "signature": "declare const flattened: <A>(value: A) => Flatten<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L137"
   },
   {
     "_tag": "Constant",
@@ -3044,7 +3245,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const alreadyFlat: Flatten<never>"
+    "signature": "declare const alreadyFlat: Flatten<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -3058,7 +3260,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const neverFlat: Flatten<never>"
+    "signature": "declare const neverFlat: Flatten<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L149"
   },
   {
     "_tag": "Constant",
@@ -3072,7 +3275,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "mapping",
-    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Flatten<A>) => Flatten<B>; <A, B>(self: Flatten<A>, f: (a: A) => B): Flatten<B>; }"
+    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Flatten<A>) => Flatten<B>; <A, B>(self: Flatten<A>, f: (a: A) => B): Flatten<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L159"
   },
   {
     "_tag": "Interface",
@@ -3086,7 +3290,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface FlattenTypeLambda extends TypeLambda {\n  readonly type: Flatten<this[\"Target\"]>\n}"
+    "signature": "export interface FlattenTypeLambda extends TypeLambda {\n  readonly type: Flatten<this[\"Target\"]>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L58"
   },
   {
     "_tag": "Interface",
@@ -3101,7 +3306,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Flattened<A> extends Flatten.Variance<A> {\n  readonly _tag: \"Flattened\"\n  readonly value: A\n}"
+    "signature": "export interface Flattened<A> extends Flatten.Variance<A> {\n  readonly _tag: \"Flattened\"\n  readonly value: A\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L68"
   },
   {
     "_tag": "Interface",
@@ -3116,7 +3322,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface AlreadyFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"AlreadyFlat\"\n}"
+    "signature": "export interface AlreadyFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"AlreadyFlat\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L79"
   },
   {
     "_tag": "Interface",
@@ -3131,7 +3338,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface NeverFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"NeverFlat\"\n}"
+    "signature": "export interface NeverFlat<A> extends Flatten.Variance<A> {\n  readonly _tag: \"NeverFlat\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L89"
   },
   {
     "_tag": "TypeAlias",
@@ -3145,7 +3353,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type FlattenTypeId = typeof FlattenTypeId"
+    "signature": "type FlattenTypeId = typeof FlattenTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L20"
   },
   {
     "_tag": "TypeAlias",
@@ -3160,7 +3369,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type Flatten<A> = Flattened<A> | AlreadyFlat<A> | NeverFlat<A>"
+    "signature": "type Flatten<A> = Flattened<A> | AlreadyFlat<A> | NeverFlat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -3174,7 +3384,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Variance<A> extends Equal {\n    readonly [FlattenTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }"
+    "signature": "export interface Variance<A> extends Equal {\n    readonly [FlattenTypeId]: {\n      readonly _A: (_: never) => A\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L42"
   },
   {
     "_tag": "TypeAlias",
@@ -3188,7 +3399,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type TypeLambda = FlattenTypeLambda"
+    "signature": "type TypeLambda = FlattenTypeLambda",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -3202,7 +3414,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const options: (pageWidth: PageWidth) => Layout.Options"
+    "signature": "declare const options: (pageWidth: PageWidth) => Layout.Options",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -3217,7 +3430,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const defaultOptions: Layout.Options"
+    "signature": "declare const defaultOptions: Layout.Options",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -3231,7 +3445,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layout algorithms",
-    "signature": "declare const wadlerLeijen: { <A>(fits: Layout.FittingPredicate<A>, options: Layout.Options): (self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, fits: Layout.FittingPredicate<A>, options: Layout.Options): DocStream<A>; }"
+    "signature": "declare const wadlerLeijen: { <A>(fits: Layout.FittingPredicate<A>, options: Layout.Options): (self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, fits: Layout.FittingPredicate<A>, options: Layout.Options): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -3248,7 +3463,8 @@
     ],
     "since": "1.0.0",
     "category": "layout algorithms",
-    "signature": "declare const compact: <A>(self: Doc<A>) => DocStream<A>"
+    "signature": "declare const compact: <A>(self: Doc<A>) => DocStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L137"
   },
   {
     "_tag": "Constant",
@@ -3263,7 +3479,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layout algorithms",
-    "signature": "declare const pretty: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }"
+    "signature": "declare const pretty: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L154"
   },
   {
     "_tag": "Constant",
@@ -3280,7 +3497,8 @@
     ],
     "since": "1.0.0",
     "category": "layout algorithms",
-    "signature": "declare const smart: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }"
+    "signature": "declare const smart: { (options: Layout.Options): <A>(self: Doc<A>) => DocStream<A>; <A>(self: Doc<A>, options: Layout.Options): DocStream<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L255"
   },
   {
     "_tag": "Constant",
@@ -3295,7 +3513,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layout algorithms",
-    "signature": "declare const unbounded: <A>(self: Doc<A>) => DocStream<A>"
+    "signature": "declare const unbounded: <A>(self: Doc<A>) => DocStream<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L267"
   },
   {
     "_tag": "Interface",
@@ -3309,7 +3528,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Layout<A> {\n  (options: Layout.Options): DocStream<A>\n}"
+    "signature": "export interface Layout<A> {\n  (options: Layout.Options): DocStream<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L20"
   },
   {
     "_tag": "Interface",
@@ -3324,7 +3544,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Options {\n    readonly pageWidth: PageWidth\n  }"
+    "signature": "export interface Options {\n    readonly pageWidth: PageWidth\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L34"
   },
   {
     "_tag": "Interface",
@@ -3339,7 +3560,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface FittingPredicate<A> {\n    (\n      stream: DocStream<A>,\n      indentation: number,\n      currentColumn: number,\n      comparator: LazyArg<DocStream<A>>\n    ): boolean\n  }"
+    "signature": "export interface FittingPredicate<A> {\n    (\n      stream: DocStream<A>,\n      indentation: number,\n      currentColumn: number,\n      comparator: LazyArg<DocStream<A>>\n    ): boolean\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Layout.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -3353,7 +3575,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Shallow: FusionDepth"
+    "signature": "declare const Shallow: FusionDepth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L76"
   },
   {
     "_tag": "Constant",
@@ -3367,7 +3590,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "instances",
-    "signature": "declare const Deep: FusionDepth"
+    "signature": "declare const Deep: FusionDepth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -3384,7 +3608,8 @@
     ],
     "since": "1.0.0",
     "category": "optimization",
-    "signature": "declare const optimize: { (depth: FusionDepth): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, depth: FusionDepth): Doc<A>; }"
+    "signature": "declare const optimize: { (depth: FusionDepth): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, depth: FusionDepth): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L129"
   },
   {
     "_tag": "Interface",
@@ -3399,7 +3624,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Optimize<A> {\n  (depth: Optimize.Depth): Doc<A>\n}"
+    "signature": "export interface Optimize<A> {\n  (depth: Optimize.Depth): Doc<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L19"
   },
   {
     "_tag": "Interface",
@@ -3414,7 +3640,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Shallow {\n  readonly _tag: \"Shallow\"\n}"
+    "signature": "export interface Shallow {\n  readonly _tag: \"Shallow\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L49"
   },
   {
     "_tag": "Interface",
@@ -3429,7 +3656,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Deep {\n  readonly _tag: \"Deep\"\n}"
+    "signature": "export interface Deep {\n  readonly _tag: \"Deep\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L68"
   },
   {
     "_tag": "TypeAlias",
@@ -3444,7 +3672,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type FusionDepth = Shallow | Deep"
+    "signature": "type FusionDepth = Shallow | Deep",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -3458,7 +3687,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type Depth = FusionDepth"
+    "signature": "type Depth = FusionDepth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Optimize.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -3472,7 +3702,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "declare const PageWidthTypeId: unique symbol"
+    "signature": "declare const PageWidthTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -3487,7 +3718,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isPageWidth: (u: unknown) => u is PageWidth"
+    "signature": "declare const isPageWidth: (u: unknown) => u is PageWidth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -3502,7 +3734,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isAvailablePerLine: (self: PageWidth) => self is AvailablePerLine"
+    "signature": "declare const isAvailablePerLine: (self: PageWidth) => self is AvailablePerLine",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L99"
   },
   {
     "_tag": "Constant",
@@ -3517,7 +3750,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "refinements",
-    "signature": "declare const isUnbounded: (self: PageWidth) => self is Unbounded"
+    "signature": "declare const isUnbounded: (self: PageWidth) => self is Unbounded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -3531,7 +3765,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const availablePerLine: (lineWidth: number, ribbonFraction: number) => PageWidth"
+    "signature": "declare const availablePerLine: (lineWidth: number, ribbonFraction: number) => PageWidth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L118"
   },
   {
     "_tag": "Constant",
@@ -3545,7 +3780,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const unbounded: PageWidth"
+    "signature": "declare const unbounded: PageWidth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -3559,7 +3795,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const defaultPageWidth: PageWidth"
+    "signature": "declare const defaultPageWidth: PageWidth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L130"
   },
   {
     "_tag": "Constant",
@@ -3574,7 +3811,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utilities",
-    "signature": "declare const remainingWidth: (lineLength: number, ribbonFraction: number, lineIndent: number, currentColumn: number) => number"
+    "signature": "declare const remainingWidth: (lineLength: number, ribbonFraction: number, lineIndent: number, currentColumn: number) => number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L142"
   },
   {
     "_tag": "Interface",
@@ -3589,7 +3827,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface AvailablePerLine extends PageWidth.Proto {\n  readonly _tag: \"AvailablePerLine\"\n  /**\n   * The number of characters, including whitespace, that can fit on a single\n   * line.\n   */\n  readonly lineWidth: number\n  /**\n   * The fraction of the total page width that can be printed on. This allows\n   * limiting the length of printable text per line. Values must be between\n   * `0` and `1` (`0.4` to `1` is typical).\n   */\n  readonly ribbonFraction: number\n}"
+    "signature": "export interface AvailablePerLine extends PageWidth.Proto {\n  readonly _tag: \"AvailablePerLine\"\n  /**\n   * The number of characters, including whitespace, that can fit on a single\n   * line.\n   */\n  readonly lineWidth: number\n  /**\n   * The fraction of the total page width that can be printed on. This allows\n   * limiting the length of printable text per line. Values must be between\n   * `0` and `1` (`0.4` to `1` is typical).\n   */\n  readonly ribbonFraction: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L54"
   },
   {
     "_tag": "Interface",
@@ -3604,7 +3843,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Unbounded extends PageWidth.Proto {\n  readonly _tag: \"Unbounded\"\n}"
+    "signature": "export interface Unbounded extends PageWidth.Proto {\n  readonly _tag: \"Unbounded\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L76"
   },
   {
     "_tag": "TypeAlias",
@@ -3618,7 +3858,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbol",
-    "signature": "type PageWidthTypeId = typeof PageWidthTypeId"
+    "signature": "type PageWidthTypeId = typeof PageWidthTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L22"
   },
   {
     "_tag": "TypeAlias",
@@ -3633,7 +3874,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type PageWidth = AvailablePerLine | Unbounded"
+    "signature": "type PageWidth = AvailablePerLine | Unbounded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -3647,6 +3889,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Proto extends Equal {\n    readonly [PageWidthTypeId]: PageWidthTypeId\n  }"
+    "signature": "export interface Proto extends Equal {\n    readonly [PageWidthTypeId]: PageWidthTypeId\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/PageWidth.ts#L42"
   }
 ]

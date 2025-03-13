@@ -12,7 +12,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const podsRpc: <R>(buildClient: (podAddress: PodAddress.PodAddress) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardingServiceRpc.ShardingServiceRpcRequest>, never>>) => Layer.Layer<Pods.Pods, never, R>"
+    "signature": "declare const podsRpc: <R>(buildClient: (podAddress: PodAddress.PodAddress) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardingServiceRpc.ShardingServiceRpcRequest>, never>>) => Layer.Layer<Pods.Pods, never, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/PodsRpc.ts#L25"
   },
   {
     "_tag": "Class",
@@ -26,7 +27,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class AssignShards"
+    "signature": "declare class AssignShards",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingProtocol.ts#L15"
   },
   {
     "_tag": "Class",
@@ -40,7 +42,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class UnassignShards"
+    "signature": "declare class UnassignShards",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingProtocol.ts#L31"
   },
   {
     "_tag": "Class",
@@ -54,7 +57,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class Send"
+    "signature": "declare class Send",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingProtocol.ts#L47"
   },
   {
     "_tag": "Class",
@@ -68,7 +72,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class PingShard"
+    "signature": "declare class PingShard",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingProtocol.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -82,7 +87,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "rpc",
-    "signature": "declare const router: RpcRouter.RpcRouter<ShardingProtocol.AssignShards | ShardingProtocol.UnassignShards | ShardingProtocol.PingShard | ShardingProtocol.Send, Sharding.Sharding>"
+    "signature": "declare const router: RpcRouter.RpcRouter<ShardingProtocol.AssignShards | ShardingProtocol.UnassignShards | ShardingProtocol.PingShard | ShardingProtocol.Send, Sharding.Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingServiceRpc.ts#L15"
   },
   {
     "_tag": "TypeAlias",
@@ -96,7 +102,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardingServiceRpc = typeof router"
+    "signature": "type ShardingServiceRpc = typeof router",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingServiceRpc.ts#L38"
   },
   {
     "_tag": "TypeAlias",
@@ -110,7 +117,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardingServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
+    "signature": "type ShardingServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardingServiceRpc.ts#L44"
   },
   {
     "_tag": "Function",
@@ -124,7 +132,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const shardManagerClientRpc: (makeClient: (shardManagerUri: string) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardManagerServiceRpc.ShardManagerServiceRpcRequest>, never>>) => Layer.Layer<ShardManagerClient.ShardManagerClient, never, ShardingConfig.ShardingConfig>"
+    "signature": "declare const shardManagerClientRpc: (makeClient: (shardManagerUri: string) => RpcResolver.Client<RequestResolver.RequestResolver<Rpc.Request<ShardManagerServiceRpc.ShardManagerServiceRpcRequest>, never>>) => Layer.Layer<ShardManagerClient.ShardManagerClient, never, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerClientRpc.ts#L19"
   },
   {
     "_tag": "Class",
@@ -138,7 +147,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class Register"
+    "signature": "declare class Register",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerProtocol.ts#L13"
   },
   {
     "_tag": "Class",
@@ -152,7 +162,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class Unregister"
+    "signature": "declare class Unregister",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerProtocol.ts#L28"
   },
   {
     "_tag": "Class",
@@ -166,7 +177,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class NotifyUnhealthyPod"
+    "signature": "declare class NotifyUnhealthyPod",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerProtocol.ts#L43"
   },
   {
     "_tag": "Class",
@@ -180,7 +192,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare class GetAssignements"
+    "signature": "declare class GetAssignements",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerProtocol.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -194,7 +207,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "rpc",
-    "signature": "declare const router: RpcRouter.RpcRouter<ShardManagerProtocolHttp.Register | ShardManagerProtocolHttp.Unregister | ShardManagerProtocolHttp.NotifyUnhealthyPod | ShardManagerProtocolHttp.GetAssignements, ShardManager.ShardManager>"
+    "signature": "declare const router: RpcRouter.RpcRouter<ShardManagerProtocolHttp.Register | ShardManagerProtocolHttp.Unregister | ShardManagerProtocolHttp.NotifyUnhealthyPod | ShardManagerProtocolHttp.GetAssignements, ShardManager.ShardManager>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerServiceRpc.ts#L15"
   },
   {
     "_tag": "TypeAlias",
@@ -208,7 +222,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardManagerServiceRpc = typeof router"
+    "signature": "type ShardManagerServiceRpc = typeof router",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerServiceRpc.ts#L42"
   },
   {
     "_tag": "TypeAlias",
@@ -222,7 +237,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardManagerServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>"
+    "signature": "type ShardManagerServiceRpcRequest = RpcRouter.RpcRouter.Request<typeof router>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/ShardManagerServiceRpc.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -236,6 +252,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const storageFile: Layer.Layer<Storage.Storage, never, never>"
+    "signature": "declare const storageFile: Layer.Layer<Storage.Storage, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster-node/src/StorageFile.ts#L134"
   }
 ]

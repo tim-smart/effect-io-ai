@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const atLeastOnceRecipientBehaviour: <Msg, R>(fa: RecipientBehaviour.RecipientBehaviour<Msg, R>) => RecipientBehaviour.RecipientBehaviour<Msg, R | AtLeastOnceStorage.AtLeastOnceStorage>"
+    "signature": "declare const atLeastOnceRecipientBehaviour: <Msg, R>(fa: RecipientBehaviour.RecipientBehaviour<Msg, R>) => RecipientBehaviour.RecipientBehaviour<Msg, R | AtLeastOnceStorage.AtLeastOnceStorage>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnce.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const runPendingMessageSweeperScoped: (interval: Duration.Duration) => Effect.Effect<void, never, AtLeastOnceStorage.AtLeastOnceStorage | Sharding.Sharding | Scope.Scope>"
+    "signature": "declare const runPendingMessageSweeperScoped: (interval: Duration.Duration) => Effect.Effect<void, never, AtLeastOnceStorage.AtLeastOnceStorage | Sharding.Sharding | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnce.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const AtLeastOnceStorage: Tag<AtLeastOnceStorage, AtLeastOnceStorage>"
+    "signature": "declare const AtLeastOnceStorage: Tag<AtLeastOnceStorage, AtLeastOnceStorage>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const layer: (options: AtLeastOnceStorage.MakeOptions) => Layer<AtLeastOnceStorage, SqlError, SqlClient | Serialization>"
+    "signature": "declare const layer: (options: AtLeastOnceStorage.MakeOptions) => Layer<AtLeastOnceStorage, SqlError, SqlClient | Serialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L94"
   },
   {
     "_tag": "Interface",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface AtLeastOnceStorage extends AtLeastOnceStorage.Proto {\n  /**\n   * Upserts a message into the storage, eventually returning the already\n   * existing message state as result in the storage.\n   */\n  upsert<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Marks the specified message as processed to prevent additional attempts to\n   * send the message.\n   */\n  markAsProcessed<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Returns a stream of messages that will be sent to the local pod as a second\n   * attempt.\n   */\n  sweepPending(shardIds: Iterable<ShardId>): Stream<SerializedEnvelope>\n}"
+    "signature": "export interface AtLeastOnceStorage extends AtLeastOnceStorage.Proto {\n  /**\n   * Upserts a message into the storage, eventually returning the already\n   * existing message state as result in the storage.\n   */\n  upsert<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Marks the specified message as processed to prevent additional attempts to\n   * send the message.\n   */\n  markAsProcessed<Msg extends Message.Any>(\n    recipientType: RecipientType<Msg>,\n    shardId: ShardId,\n    entityId: string,\n    message: Msg\n  ): Effect<void>\n\n  /**\n   * Returns a stream of messages that will be sent to the local pod as a second\n   * attempt.\n   */\n  sweepPending(shardIds: Iterable<ShardId>): Stream<SerializedEnvelope>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L33"
   },
   {
     "_tag": "TypeAlias",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L27"
   },
   {
     "_tag": "Interface",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Proto {\n    readonly [TypeId]: TypeId\n  }"
+    "signature": "export interface Proto {\n    readonly [TypeId]: TypeId\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L77"
   },
   {
     "_tag": "Interface",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MakeOptions {\n    readonly table: string\n  }"
+    "signature": "export interface MakeOptions {\n    readonly table: string\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/AtLeastOnceStorage.ts#L85"
   },
   {
     "_tag": "Interface",
@@ -138,7 +147,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Broadcaster<Msg extends Message.Message.Any> {\n  /**\n   * Broadcast a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely.\n   * @since 1.0.0\n   */\n  readonly broadcastDiscard: (\n    topicId: string\n  ) => (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Broadcast a message and wait for a response from each consumer\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   * @since 1.0.0\n   */\n  readonly broadcast: (\n    topicId: string\n  ) => <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    HashMap.HashMap<\n      PodAddress.PodAddress,\n      Either.Either<\n        ShardingException.ShardingException | Message.Message.Error<A>,\n        Message.Message.Success<A>\n      >\n    >,\n    ShardingException.ShardingException\n  >\n}"
+    "signature": "export interface Broadcaster<Msg extends Message.Message.Any> {\n  /**\n   * Broadcast a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely.\n   * @since 1.0.0\n   */\n  readonly broadcastDiscard: (\n    topicId: string\n  ) => (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Broadcast a message and wait for a response from each consumer\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   * @since 1.0.0\n   */\n  readonly broadcast: (\n    topicId: string\n  ) => <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    HashMap.HashMap<\n      PodAddress.PodAddress,\n      Either.Either<\n        ShardingException.ShardingException | Message.Message.Error<A>,\n        Message.Message.Success<A>\n      >\n    >,\n    ShardingException.ShardingException\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Broadcaster.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -152,7 +162,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ManagerConfigTypeId: unique symbol"
+    "signature": "declare const ManagerConfigTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -166,7 +177,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const ManagerConfig: Context.Tag<ManagerConfig, ManagerConfig>"
+    "signature": "declare const ManagerConfig: Context.Tag<ManagerConfig, ManagerConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -181,7 +193,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const defaults: Layer.Layer<ManagerConfig, never, never>"
+    "signature": "declare const defaults: Layer.Layer<ManagerConfig, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -196,7 +209,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromConfig: Layer.Layer<ManagerConfig, ConfigError.ConfigError, never>"
+    "signature": "declare const fromConfig: Layer.Layer<ManagerConfig, ConfigError.ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L67"
   },
   {
     "_tag": "Interface",
@@ -211,7 +225,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ManagerConfig {\n  readonly numberOfShards: number\n  readonly apiPort: number\n  readonly rebalanceInterval: Duration.Duration\n  readonly rebalanceRetryInterval: Duration.Duration\n  readonly pingTimeout: Duration.Duration\n  readonly persistRetryInterval: Duration.Duration\n  readonly persistRetryCount: number\n  readonly rebalanceRate: number\n}"
+    "signature": "export interface ManagerConfig {\n  readonly numberOfShards: number\n  readonly apiPort: number\n  readonly rebalanceInterval: Duration.Duration\n  readonly rebalanceRetryInterval: Duration.Duration\n  readonly pingTimeout: Duration.Duration\n  readonly persistRetryInterval: Duration.Duration\n  readonly persistRetryCount: number\n  readonly rebalanceRate: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -225,7 +240,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type ManagerConfigTypeId = typeof ManagerConfigTypeId"
+    "signature": "type ManagerConfigTypeId = typeof ManagerConfigTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ManagerConfig.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -239,7 +255,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": "declare const TaggedMessage: <Self>() => <Tag extends string, E, IE, A, IA, Fields extends Schema.Struct.Fields>(tag: Tag, failure: Schema.Schema<E, IE, never>, success: Schema.Schema<A, IA, never>, fields: Fields, messageToId: (message: Schema.Struct.Encoded<Fields>) => string) => TaggedMessageConstructor<Tag, Self, Schema.Schema.Context<Fields[keyof Fields]>, Types.Simplify<Schema.Struct.Encoded<Fields>>, Types.Simplify<Schema.Struct.Type<Fields>>, IE, E, IA, A>"
+    "signature": "declare const TaggedMessage: <Self>() => <Tag extends string, E, IE, A, IA, Fields extends Schema.Struct.Fields>(tag: Tag, failure: Schema.Schema<E, IE, never>, success: Schema.Schema<A, IA, never>, fields: Fields, messageToId: (message: Schema.Struct.Encoded<Fields>) => string) => TaggedMessageConstructor<Tag, Self, Schema.Schema.Context<Fields[keyof Fields]>, Types.Simplify<Schema.Struct.Encoded<Fields>>, Types.Simplify<Schema.Struct.Type<Fields>>, IE, E, IA, A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -253,7 +270,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isMessageWithResult: (value: unknown) => value is Message<unknown, unknown, unknown, unknown>"
+    "signature": "declare const isMessageWithResult: (value: unknown) => value is Message<unknown, unknown, unknown, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -268,7 +286,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const exitSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Exit<A>, unknown>"
+    "signature": "declare const exitSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Exit<A>, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -283,7 +302,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const failureSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Error<A>, unknown>"
+    "signature": "declare const failureSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Error<A>, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -298,7 +318,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const successSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Success<A>, unknown>"
+    "signature": "declare const successSchema: <A extends Message.Any>(message: A) => Schema.Schema<Message.Success<A>, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L131"
   },
   {
     "_tag": "Interface",
@@ -313,7 +334,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Message<A, AI, E, EI>\n  extends Schema.SerializableWithResult<any, any, never, A, AI, E, EI, never>, PrimaryKey.PrimaryKey\n{}"
+    "signature": "export interface Message<A, AI, E, EI>\n  extends Schema.SerializableWithResult<any, any, never, A, AI, E, EI, never>, PrimaryKey.PrimaryKey\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L17"
   },
   {
     "_tag": "Interface",
@@ -327,7 +349,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": "export interface TaggedMessageConstructor<Tag extends string, Self, R, IS, S, IE, E, IA, A>\n  extends Schema.Schema<Self, Types.Simplify<IS & { readonly _tag: Tag }>, R>\n{\n  new(\n    props: Types.Equals<S, {}> extends true ? void : S,\n    disableValidation?: boolean\n  ):\n    & Schema.TaggedRequest<Tag, S, IS & { readonly _tag: Tag }, never, A, IA, E, IE, never>\n    & S\n    & PrimaryKey.PrimaryKey\n}"
+    "signature": "export interface TaggedMessageConstructor<Tag extends string, Self, R, IS, S, IE, E, IA, A>\n  extends Schema.Schema<Self, Types.Simplify<IS & { readonly _tag: Tag }>, R>\n{\n  new(\n    props: Types.Equals<S, {}> extends true ? void : S,\n    disableValidation?: boolean\n  ):\n    & Schema.TaggedRequest<Tag, S, IS & { readonly _tag: Tag }, never, A, IA, E, IE, never>\n    & S\n    & PrimaryKey.PrimaryKey\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L80"
   },
   {
     "_tag": "TypeAlias",
@@ -341,7 +364,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Any = | Message<any, any, any, any>\n    | Message<any, any, never, never>"
+    "signature": "type Any = | Message<any, any, any, any>\n    | Message<any, any, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L30"
   },
   {
     "_tag": "TypeAlias",
@@ -356,7 +380,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type Success<S> = S extends Message<infer A, infer _AI, infer _E, infer _EI> ? A : never"
+    "signature": "type Success<S> = S extends Message<infer A, infer _AI, infer _E, infer _EI> ? A : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -371,7 +396,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type SuccessEncoded<S> = S extends Message<infer _A, infer _AI, infer _E, infer _EI> ? _AI : never"
+    "signature": "type SuccessEncoded<S> = S extends Message<infer _A, infer _AI, infer _E, infer _EI> ? _AI : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L48"
   },
   {
     "_tag": "TypeAlias",
@@ -386,7 +412,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type Error<S> = S extends Message<infer _A, infer _AI, infer E, infer _EI> ? E : never"
+    "signature": "type Error<S> = S extends Message<infer _A, infer _AI, infer E, infer _EI> ? E : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L56"
   },
   {
     "_tag": "TypeAlias",
@@ -401,7 +428,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type ErrorEncoded<S> = S extends Message<infer _A, infer _AI, infer _E, infer _EI> ? _EI : never"
+    "signature": "type ErrorEncoded<S> = S extends Message<infer _A, infer _AI, infer _E, infer _EI> ? _EI : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L64"
   },
   {
     "_tag": "TypeAlias",
@@ -416,7 +444,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type Exit<S> = S extends Schema.WithResult<infer A, infer _AI, infer E, infer _EI, infer _R> ? Exit_.Exit<A, E>\n    : never"
+    "signature": "type Exit<S> = S extends Schema.WithResult<infer A, infer _AI, infer E, infer _EI, infer _R> ? Exit_.Exit<A, E>\n    : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -430,7 +459,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const MessageStateTypeId: unique symbol"
+    "signature": "declare const MessageStateTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L12"
   },
   {
     "_tag": "Constant",
@@ -445,7 +475,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isMessageState: (value: unknown) => value is MessageState<unknown>"
+    "signature": "declare const isMessageState: (value: unknown) => value is MessageState<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -460,7 +491,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const match: <A, B, C = B>(cases: { onAcknowledged: (value: MessageStateAcknowledged) => B; onProcessed: (exit: MessageStateProcessed<A>) => C; }) => (value: MessageState<A>) => B | C"
+    "signature": "declare const match: <A, B, C = B>(cases: { onAcknowledged: (value: MessageStateAcknowledged) => B; onProcessed: (exit: MessageStateProcessed<A>) => C; }) => (value: MessageState<A>) => B | C",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L88"
   },
   {
     "_tag": "Constant",
@@ -475,7 +507,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const Acknowledged: MessageStateAcknowledged"
+    "signature": "declare const Acknowledged: MessageStateAcknowledged",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -490,7 +523,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const Processed: <A>(result: A) => MessageStateProcessed<A>"
+    "signature": "declare const Processed: <A>(result: A) => MessageStateProcessed<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -505,7 +539,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const mapEffect: <A, B, R, E>(value: MessageState<A>, fn: (value: A) => Effect.Effect<B, E, R>) => Effect.Effect<MessageState<B>, E, R>"
+    "signature": "declare const mapEffect: <A, B, R, E>(value: MessageState<A>, fn: (value: A) => Effect.Effect<B, E, R>) => Effect.Effect<MessageState<B>, E, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L112"
   },
   {
     "_tag": "Constant",
@@ -519,7 +554,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: <A, I>(result: Schema.Schema<A, I>) => Schema.Schema<MessageState<A>, MessageState.Encoded<I>>"
+    "signature": "declare const schema: <A, I>(result: Schema.Schema<A, I>) => Schema.Schema<MessageState<A>, MessageState.Encoded<I>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L121"
   },
   {
     "_tag": "Interface",
@@ -534,7 +570,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MessageStateAcknowledged {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Acknowledged\"\n}"
+    "signature": "export interface MessageStateAcknowledged {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Acknowledged\"\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L27"
   },
   {
     "_tag": "Interface",
@@ -549,7 +586,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MessageStateProcessed<A> {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Processed\"\n  readonly result: A\n}"
+    "signature": "export interface MessageStateProcessed<A> {\n  readonly [MessageStateTypeId]: MessageStateTypeId\n  readonly _tag: \"@effect/cluster/MessageState/Processed\"\n  readonly result: A\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -563,7 +601,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type MessageStateTypeId = typeof MessageStateTypeId"
+    "signature": "type MessageStateTypeId = typeof MessageStateTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L18"
   },
   {
     "_tag": "TypeAlias",
@@ -578,7 +617,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type MessageState<A> = MessageStateAcknowledged | MessageStateProcessed<A>"
+    "signature": "type MessageState<A> = MessageStateAcknowledged | MessageStateProcessed<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L53"
   },
   {
     "_tag": "TypeAlias",
@@ -592,7 +632,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Encoded<I> = {\n    readonly \"@effect/cluster/MessageState\": \"@effect/cluster/MessageState\"\n    readonly _tag: \"@effect/cluster/MessageState/Acknowledged\"\n  } | {\n    readonly result: I\n    readonly \"@effect/cluster/MessageState\": \"@effect/cluster/MessageState\"\n    readonly _tag: \"@effect/cluster/MessageState/Processed\"\n  }"
+    "signature": "type Encoded<I> = {\n    readonly \"@effect/cluster/MessageState\": \"@effect/cluster/MessageState\"\n    readonly _tag: \"@effect/cluster/MessageState/Acknowledged\"\n  } | {\n    readonly result: I\n    readonly \"@effect/cluster/MessageState\": \"@effect/cluster/MessageState\"\n    readonly _tag: \"@effect/cluster/MessageState/Processed\"\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageState.ts#L64"
   },
   {
     "_tag": "Interface",
@@ -607,7 +648,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Messenger<Msg extends Message.Message.Any> {\n  /**\n   * Send a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  sendDiscard(entityId: string): (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Send a message and wait for a response.\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  send(\n    entityId: string\n  ): <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    Message.Message.Success<A>,\n    ShardingException.ShardingException | Message.Message.Error<A>\n  >\n}"
+    "signature": "export interface Messenger<Msg extends Message.Message.Any> {\n  /**\n   * Send a message without waiting for a response (fire and forget)\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  sendDiscard(entityId: string): (message: Msg) => Effect.Effect<void, ShardingException.ShardingException>\n\n  /**\n   * Send a message and wait for a response.\n   *\n   * You can use Effect timeout to get send timeouts. The default behaviour is to send the message indifinetely\n   *\n   * @since 1.0.0\n   */\n  send(\n    entityId: string\n  ): <A extends Msg>(\n    message: A\n  ) => Effect.Effect<\n    Message.Message.Success<A>,\n    ShardingException.ShardingException | Message.Message.Error<A>\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Messenger.ts#L15"
   },
   {
     "_tag": "Class",
@@ -622,7 +664,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class Pod"
+    "signature": "declare class Pod",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L36"
   },
   {
     "_tag": "Constant",
@@ -636,7 +679,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const PodTypeId: unique symbol"
+    "signature": "declare const PodTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -650,7 +694,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<Pod, Pod.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<Pod, Pod.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L92"
   },
   {
     "_tag": "Function",
@@ -665,7 +710,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isPod: (value: unknown) => value is Pod"
+    "signature": "declare const isPod: (value: unknown) => value is Pod",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L69"
   },
   {
     "_tag": "Function",
@@ -680,7 +726,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (address: PodAddress.PodAddress, version: string) => Pod"
+    "signature": "declare const make: (address: PodAddress.PodAddress, version: string) => Pod",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L84"
   },
   {
     "_tag": "TypeAlias",
@@ -694,7 +741,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type PodTypeId = typeof PodTypeId"
+    "signature": "type PodTypeId = typeof PodTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L21"
   },
   {
     "_tag": "Interface",
@@ -709,7 +757,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof Pod> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof Pod> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pod.ts#L60"
   },
   {
     "_tag": "Class",
@@ -724,7 +773,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class PodAddress"
+    "signature": "declare class PodAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -738,7 +788,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const PodAddressTypeId: unique symbol"
+    "signature": "declare const PodAddressTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -753,7 +804,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<PodAddress, PodAddress.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<PodAddress, PodAddress.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L91"
   },
   {
     "_tag": "Function",
@@ -768,7 +820,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (host: string, port: number) => PodAddress"
+    "signature": "declare const make: (host: string, port: number) => PodAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L66"
   },
   {
     "_tag": "Function",
@@ -783,7 +836,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isPodAddress: (value: unknown) => value is PodAddress"
+    "signature": "declare const isPodAddress: (value: unknown) => value is PodAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L76"
   },
   {
     "_tag": "TypeAlias",
@@ -797,7 +851,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type PodAddressTypeId = typeof PodAddressTypeId"
+    "signature": "type PodAddressTypeId = typeof PodAddressTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L23"
   },
   {
     "_tag": "Interface",
@@ -812,7 +867,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof PodAddress> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof PodAddress> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodAddress.ts#L57"
   },
   {
     "_tag": "Constant",
@@ -826,7 +882,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const PodsTypeId: unique symbol"
+    "signature": "declare const PodsTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -840,7 +897,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const Pods: Context.Tag<Pods, Pods>"
+    "signature": "declare const Pods: Context.Tag<Pods, Pods>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -855,7 +913,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const make: (args: Omit<Pods, typeof PodsTypeId>) => Pods"
+    "signature": "declare const make: (args: Omit<Pods, typeof PodsTypeId>) => Pods",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L91"
   },
   {
     "_tag": "Constant",
@@ -870,7 +929,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const noop: Layer.Layer<Pods, never, never>"
+    "signature": "declare const noop: Layer.Layer<Pods, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L100"
   },
   {
     "_tag": "Interface",
@@ -885,7 +945,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Pods {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsTypeId]: PodsTypeId\n\n  /**\n   * Notify a pod that it was assigned a list of shards\n   * @since 1.0.0\n   */\n  readonly assignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Notify a pod that it was unassigned a list of shards\n   * @since 1.0.0\n   */\n  readonly unassignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Check that a pod is responsive\n   * @since 1.0.0\n   */\n  readonly ping: (pod: PodAddress.PodAddress) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Send a message to a pod and receive its message state\n   * @since 1.0.0\n   */\n  readonly sendAndGetState: (\n    pod: PodAddress.PodAddress,\n    envelope: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n}"
+    "signature": "export interface Pods {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsTypeId]: PodsTypeId\n\n  /**\n   * Notify a pod that it was assigned a list of shards\n   * @since 1.0.0\n   */\n  readonly assignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Notify a pod that it was unassigned a list of shards\n   * @since 1.0.0\n   */\n  readonly unassignShards: (\n    pod: PodAddress.PodAddress,\n    shards: HashSet.HashSet<ShardId.ShardId>\n  ) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Check that a pod is responsive\n   * @since 1.0.0\n   */\n  readonly ping: (pod: PodAddress.PodAddress) => Effect.Effect<void, ShardingException.PodUnavailableException>\n\n  /**\n   * Send a message to a pod and receive its message state\n   * @since 1.0.0\n   */\n  readonly sendAndGetState: (\n    pod: PodAddress.PodAddress,\n    envelope: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -899,7 +960,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type PodsTypeId = typeof PodsTypeId"
+    "signature": "type PodsTypeId = typeof PodsTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Pods.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -913,7 +975,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const PodsHealthTypeId: unique symbol"
+    "signature": "declare const PodsHealthTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L15"
   },
   {
     "_tag": "Constant",
@@ -928,7 +991,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (args: Omit<PodsHealth, typeof PodsHealthTypeId>) => PodsHealth"
+    "signature": "declare const make: (args: Omit<PodsHealth, typeof PodsHealthTypeId>) => PodsHealth",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -942,7 +1006,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const PodsHealth: Context.Tag<PodsHealth, PodsHealth>"
+    "signature": "declare const PodsHealth: Context.Tag<PodsHealth, PodsHealth>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -957,7 +1022,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const noop: Layer.Layer<PodsHealth, never, never>"
+    "signature": "declare const noop: Layer.Layer<PodsHealth, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -972,7 +1038,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const local: Layer.Layer<PodsHealth, never, Pods.Pods>"
+    "signature": "declare const local: Layer.Layer<PodsHealth, never, Pods.Pods>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L74"
   },
   {
     "_tag": "Interface",
@@ -987,7 +1054,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PodsHealth {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsHealthTypeId]: PodsHealthTypeId\n\n  /**\n   * Check if a pod is still alive.\n   * @since 1.0.0\n   */\n  readonly isAlive: (podAddress: PodAddress.PodAddress) => Effect.Effect<boolean>\n}"
+    "signature": "export interface PodsHealth {\n  /**\n   * @since 1.0.0\n   */\n  readonly [PodsHealthTypeId]: PodsHealthTypeId\n\n  /**\n   * Check if a pod is still alive.\n   * @since 1.0.0\n   */\n  readonly isAlive: (podAddress: PodAddress.PodAddress) => Effect.Effect<boolean>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L33"
   },
   {
     "_tag": "TypeAlias",
@@ -1001,7 +1069,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type PodsHealthTypeId = typeof PodsHealthTypeId"
+    "signature": "type PodsHealthTypeId = typeof PodsHealthTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PodsHealth.ts#L21"
   },
   {
     "_tag": "Class",
@@ -1016,7 +1085,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class PoisonPill"
+    "signature": "declare class PoisonPill",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -1030,7 +1100,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const PoisonPillTypeId: unique symbol"
+    "signature": "declare const PoisonPillTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -1045,7 +1116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<PoisonPill, never, never>"
+    "signature": "declare const make: Effect.Effect<PoisonPill, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -1060,7 +1132,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<PoisonPill, PoisonPill.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<PoisonPill, PoisonPill.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L86"
   },
   {
     "_tag": "Function",
@@ -1075,7 +1148,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isPoisonPill: (value: unknown) => value is PoisonPill"
+    "signature": "declare const isPoisonPill: (value: unknown) => value is PoisonPill",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L70"
   },
   {
     "_tag": "Function",
@@ -1090,7 +1164,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const takeOrInterrupt: <Req>(dequeue: Queue.Dequeue<Req | PoisonPill>) => Effect.Effect<Req>"
+    "signature": "declare const takeOrInterrupt: <Req>(dequeue: Queue.Dequeue<Req | PoisonPill>) => Effect.Effect<Req>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L98"
   },
   {
     "_tag": "TypeAlias",
@@ -1104,7 +1179,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type PoisonPillTypeId = typeof PoisonPillTypeId"
+    "signature": "type PoisonPillTypeId = typeof PoisonPillTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L23"
   },
   {
     "_tag": "Interface",
@@ -1119,7 +1195,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof PoisonPill> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof PoisonPill> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/PoisonPill.ts#L38"
   },
   {
     "_tag": "Class",
@@ -1134,7 +1211,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class RecipientAddress"
+    "signature": "declare class RecipientAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -1148,7 +1226,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const RecipientAddressTypeId: unique symbol"
+    "signature": "declare const RecipientAddressTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L15"
   },
   {
     "_tag": "Function",
@@ -1163,7 +1242,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const isRecipientAddress: (value: unknown) => value is RecipientAddress"
+    "signature": "declare const isRecipientAddress: (value: unknown) => value is RecipientAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L56"
   },
   {
     "_tag": "Function",
@@ -1178,7 +1258,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeRecipientAddress: (recipientTypeName: string, entityId: string) => RecipientAddress"
+    "signature": "declare const makeRecipientAddress: (recipientTypeName: string, entityId: string) => RecipientAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientAddress.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -1193,7 +1274,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const fromFunctionEffect: <Msg extends Message.Message.Any, R>(handler: (entityId: string, message: Msg) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R>) => RecipientBehaviour<Msg, R>"
+    "signature": "declare const fromFunctionEffect: <Msg extends Message.Message.Any, R>(handler: (entityId: string, message: Msg) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R>) => RecipientBehaviour<Msg, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviour.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -1208,7 +1290,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const fromFunctionEffectStateful: <S, R, Msg extends Message.Message.Any, R2>(initialState: (entityId: string) => Effect.Effect<S, never, R>, handler: (entityId: string, message: Msg, stateRef: Ref.Ref<S>) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R2>) => RecipientBehaviour<Msg, R | R2>"
+    "signature": "declare const fromFunctionEffectStateful: <S, R, Msg extends Message.Message.Any, R2>(initialState: (entityId: string) => Effect.Effect<S, never, R>, handler: (entityId: string, message: Msg, stateRef: Ref.Ref<S>) => Effect.Effect<MessageState.MessageState<Message.Message.Exit<Msg>>, never, R2>) => RecipientBehaviour<Msg, R | R2>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviour.ts#L82"
   },
   {
     "_tag": "Constant",
@@ -1223,7 +1306,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const fromInMemoryQueue: <Msg extends Message.Message.Any, R>(handler: (entityId: string, dequeue: Queue.Dequeue<Msg | PoisonPill.PoisonPill>, processed: <A extends Msg>(message: A, value: Option.Option<Message.Message.Exit<A>>) => Effect.Effect<void, never, never>) => Effect.Effect<void, never, R>) => RecipientBehaviour<Msg, R>"
+    "signature": "declare const fromInMemoryQueue: <Msg extends Message.Message.Any, R>(handler: (entityId: string, dequeue: Queue.Dequeue<Msg | PoisonPill.PoisonPill>, processed: <A extends Msg>(message: A, value: Option.Option<Message.Message.Exit<A>>) => Effect.Effect<void, never, never>) => Effect.Effect<void, never, R>) => RecipientBehaviour<Msg, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviour.ts#L99"
   },
   {
     "_tag": "Interface",
@@ -1238,7 +1322,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface RecipientBehaviour<Msg, R> extends\n  Effect.Effect<\n    <A extends Msg>(\n      message: A\n    ) => Effect.Effect<\n      MessageState.MessageState<Message.Message.Exit<A>>,\n      ShardingException.ExceptionWhileOfferingMessageException\n    >,\n    never,\n    R | RecipientBehaviourContext.RecipientBehaviourContext | Scope.Scope\n  >\n{}"
+    "signature": "export interface RecipientBehaviour<Msg, R> extends\n  Effect.Effect<\n    <A extends Msg>(\n      message: A\n    ) => Effect.Effect<\n      MessageState.MessageState<Message.Message.Exit<A>>,\n      ShardingException.ExceptionWhileOfferingMessageException\n    >,\n    never,\n    R | RecipientBehaviourContext.RecipientBehaviourContext | Scope.Scope\n  >\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviour.ts#L33"
   },
   {
     "_tag": "TypeAlias",
@@ -1253,7 +1338,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "type EntityBehaviourOptions = {\n  entityMaxIdleTime?: Option.Option<Duration.Duration>\n}"
+    "signature": "type EntityBehaviourOptions = {\n  entityMaxIdleTime?: Option.Option<Duration.Duration>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviour.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -1267,7 +1353,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const RecipientBehaviourContextTypeId: unique symbol"
+    "signature": "declare const RecipientBehaviourContextTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -1282,7 +1369,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const RecipientBehaviourContext: Context.Tag<RecipientBehaviourContext, RecipientBehaviourContext>"
+    "signature": "declare const RecipientBehaviourContext: Context.Tag<RecipientBehaviourContext, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L45"
   },
   {
     "_tag": "Constant",
@@ -1297,7 +1385,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (args: Omit<RecipientBehaviourContext, typeof RecipientBehaviourContextTypeId>) => RecipientBehaviourContext"
+    "signature": "declare const make: (args: Omit<RecipientBehaviourContext, typeof RecipientBehaviourContextTypeId>) => RecipientBehaviourContext",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -1312,7 +1401,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const entityId: Effect.Effect<string, never, RecipientBehaviourContext>"
+    "signature": "declare const entityId: Effect.Effect<string, never, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -1327,7 +1417,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const recipientAddress: Effect.Effect<RecipientAddress.RecipientAddress, never, RecipientBehaviourContext>"
+    "signature": "declare const recipientAddress: Effect.Effect<RecipientAddress.RecipientAddress, never, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -1342,7 +1433,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const shardId: Effect.Effect<ShardId.ShardId, never, RecipientBehaviourContext>"
+    "signature": "declare const shardId: Effect.Effect<ShardId.ShardId, never, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -1357,7 +1449,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const recipientType: Effect.Effect<RecipientType.RecipientType<Message.Message.Any>, never, RecipientBehaviourContext>"
+    "signature": "declare const recipientType: Effect.Effect<RecipientType.RecipientType<Message.Message.Any>, never, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L89"
   },
   {
     "_tag": "Constant",
@@ -1372,7 +1465,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const forkShutdown: Effect.Effect<void, never, RecipientBehaviourContext>"
+    "signature": "declare const forkShutdown: Effect.Effect<void, never, RecipientBehaviourContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L101"
   },
   {
     "_tag": "Interface",
@@ -1387,7 +1481,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface RecipientBehaviourContext {\n  readonly [RecipientBehaviourContextTypeId]: RecipientBehaviourContextTypeId\n  readonly recipientAddress: RecipientAddress.RecipientAddress\n  readonly shardId: ShardId.ShardId\n  readonly recipientType: RecipientType.RecipientType<Message.Message.Any>\n  readonly forkShutdown: Effect.Effect<void>\n}"
+    "signature": "export interface RecipientBehaviourContext {\n  readonly [RecipientBehaviourContextTypeId]: RecipientBehaviourContextTypeId\n  readonly recipientAddress: RecipientAddress.RecipientAddress\n  readonly shardId: ShardId.ShardId\n  readonly recipientType: RecipientType.RecipientType<Message.Message.Any>\n  readonly forkShutdown: Effect.Effect<void>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L31"
   },
   {
     "_tag": "TypeAlias",
@@ -1401,7 +1496,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type RecipientBehaviourContextTypeId = typeof RecipientBehaviourContextTypeId"
+    "signature": "type RecipientBehaviourContextTypeId = typeof RecipientBehaviourContextTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientBehaviourContext.ts#L22"
   },
   {
     "_tag": "Class",
@@ -1416,7 +1512,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class EntityType<Msg>"
+    "signature": "declare class EntityType<Msg>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L25"
   },
   {
     "_tag": "Class",
@@ -1431,7 +1528,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class TopicType<Msg>"
+    "signature": "declare class TopicType<Msg>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -1445,7 +1543,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const RecipientTypeTypeId: unique symbol"
+    "signature": "declare const RecipientTypeTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L17"
   },
   {
     "_tag": "Function",
@@ -1460,7 +1559,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const isRecipientType: <A extends Message.Message.Any>(value: unknown) => value is RecipientType<A>"
+    "signature": "declare const isRecipientType: <A extends Message.Message.Any>(value: unknown) => value is RecipientType<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L101"
   },
   {
     "_tag": "Function",
@@ -1475,7 +1575,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeEntityType: <Msg extends Message.Message.Any, I>(name: string, schema: Schema.Schema<Msg, I>) => EntityType<Msg>"
+    "signature": "declare const makeEntityType: <Msg extends Message.Message.Any, I>(name: string, schema: Schema.Schema<Msg, I>) => EntityType<Msg>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L112"
   },
   {
     "_tag": "Function",
@@ -1490,7 +1591,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeTopicType: <Msg extends Message.Message.Any, I>(name: string, schema: Schema.Schema<Msg, I>) => TopicType<Msg>"
+    "signature": "declare const makeTopicType: <Msg extends Message.Message.Any, I>(name: string, schema: Schema.Schema<Msg, I>) => TopicType<Msg>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L125"
   },
   {
     "_tag": "TypeAlias",
@@ -1505,7 +1607,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type RecipientType<Msg> = EntityType<Msg> | TopicType<Msg>"
+    "signature": "type RecipientType<Msg> = EntityType<Msg> | TopicType<Msg>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RecipientType.ts#L94"
   },
   {
     "_tag": "Constant",
@@ -1519,7 +1622,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const SerializationTypeId: unique symbol"
+    "signature": "declare const SerializationTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -1533,7 +1637,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const Serialization: Context.Tag<Serialization, Serialization>"
+    "signature": "declare const Serialization: Context.Tag<Serialization, Serialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -1547,7 +1652,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (args: Omit<Serialization, typeof SerializationTypeId>) => Serialization"
+    "signature": "declare const make: (args: Omit<Serialization, typeof SerializationTypeId>) => Serialization",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -1562,7 +1668,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const json: Layer.Layer<Serialization, never, never>"
+    "signature": "declare const json: Layer.Layer<Serialization, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L72"
   },
   {
     "_tag": "Interface",
@@ -1577,7 +1684,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Serialization {\n  /**\n   * @since 1.0.0\n   */\n  readonly [SerializationTypeId]: SerializationTypeId\n\n  /**\n   * Transforms the given message into binary\n   * @since 1.0.0\n   */\n  readonly encode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    message: A\n  ) => Effect.Effect<SerializedMessage.SerializedMessage, ShardingException.SerializationException>\n\n  /**\n   * Transform binary back into the given type\n   * @since 1.0.0\n   */\n  readonly decode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    bytes: SerializedMessage.SerializedMessage\n  ) => Effect.Effect<A, ShardingException.SerializationException>\n}"
+    "signature": "export interface Serialization {\n  /**\n   * @since 1.0.0\n   */\n  readonly [SerializationTypeId]: SerializationTypeId\n\n  /**\n   * Transforms the given message into binary\n   * @since 1.0.0\n   */\n  readonly encode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    message: A\n  ) => Effect.Effect<SerializedMessage.SerializedMessage, ShardingException.SerializationException>\n\n  /**\n   * Transform binary back into the given type\n   * @since 1.0.0\n   */\n  readonly decode: <A, I>(\n    schema: Schema.Schema<A, I>,\n    bytes: SerializedMessage.SerializedMessage\n  ) => Effect.Effect<A, ShardingException.SerializationException>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -1591,7 +1699,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type SerializationTypeId = typeof SerializationTypeId"
+    "signature": "type SerializationTypeId = typeof SerializationTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Serialization.ts#L22"
   },
   {
     "_tag": "Class",
@@ -1606,7 +1715,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class SerializedEnvelope"
+    "signature": "declare class SerializedEnvelope",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -1620,7 +1730,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const SerializedEnvelopeTypeId: unique symbol"
+    "signature": "declare const SerializedEnvelopeTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -1635,7 +1746,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<SerializedEnvelope, SerializedEnvelope.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<SerializedEnvelope, SerializedEnvelope.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L106"
   },
   {
     "_tag": "Function",
@@ -1650,7 +1762,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (recipientAddress: RecipientAddress.RecipientAddress, messageId: string, body: SerializedMessage.SerializedMessage) => SerializedEnvelope"
+    "signature": "declare const make: (recipientAddress: RecipientAddress.RecipientAddress, messageId: string, body: SerializedMessage.SerializedMessage) => SerializedEnvelope",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L72"
   },
   {
     "_tag": "Function",
@@ -1665,7 +1778,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isSerializedEnvelope: (value: unknown) => value is SerializedEnvelope"
+    "signature": "declare const isSerializedEnvelope: (value: unknown) => value is SerializedEnvelope",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L91"
   },
   {
     "_tag": "TypeAlias",
@@ -1679,7 +1793,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type SerializedEnvelopeTypeId = typeof SerializedEnvelopeTypeId"
+    "signature": "type SerializedEnvelopeTypeId = typeof SerializedEnvelopeTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L26"
   },
   {
     "_tag": "Interface",
@@ -1693,7 +1808,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof SerializedEnvelope> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof SerializedEnvelope> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedEnvelope.ts#L63"
   },
   {
     "_tag": "Class",
@@ -1708,7 +1824,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class SerializedMessage"
+    "signature": "declare class SerializedMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -1722,7 +1839,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const SerializedMessageTypeId: unique symbol"
+    "signature": "declare const SerializedMessageTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -1737,7 +1855,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<SerializedMessage, SerializedMessage.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<SerializedMessage, SerializedMessage.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L79"
   },
   {
     "_tag": "Function",
@@ -1752,7 +1871,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (value: string) => SerializedMessage"
+    "signature": "declare const make: (value: string) => SerializedMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L56"
   },
   {
     "_tag": "Function",
@@ -1766,7 +1886,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isSerializedMessage: (value: unknown) => value is SerializedMessage"
+    "signature": "declare const isSerializedMessage: (value: unknown) => value is SerializedMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L64"
   },
   {
     "_tag": "TypeAlias",
@@ -1780,7 +1901,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type SerializedMessageTypeId = typeof SerializedMessageTypeId"
+    "signature": "type SerializedMessageTypeId = typeof SerializedMessageTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L20"
   },
   {
     "_tag": "Interface",
@@ -1794,7 +1916,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof SerializedMessage> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof SerializedMessage> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SerializedMessage.ts#L47"
   },
   {
     "_tag": "Class",
@@ -1809,7 +1932,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class ShardId"
+    "signature": "declare class ShardId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -1823,7 +1947,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ShardIdTypeId: unique symbol"
+    "signature": "declare const ShardIdTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -1838,7 +1963,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Schema<ShardId, ShardId.Encoded, never>"
+    "signature": "declare const schema: Schema.Schema<ShardId, ShardId.Encoded, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L76"
   },
   {
     "_tag": "Function",
@@ -1853,7 +1979,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (value: number) => ShardId"
+    "signature": "declare const make: (value: number) => ShardId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L66"
   },
   {
     "_tag": "TypeAlias",
@@ -1867,7 +1994,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type ShardIdTypeId = typeof ShardIdTypeId"
+    "signature": "type ShardIdTypeId = typeof ShardIdTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L20"
   },
   {
     "_tag": "Interface",
@@ -1882,7 +2010,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof ShardId> {}"
+    "signature": "export interface Encoded extends Schema.Schema.Encoded<typeof ShardId> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -1896,7 +2025,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ShardingTypeId: unique symbol"
+    "signature": "declare const ShardingTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -1910,7 +2040,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const Tag: Tag<Sharding, Sharding>"
+    "signature": "declare const Tag: Tag<Sharding, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -1924,7 +2055,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const live: Layer<Sharding, never, Storage | ShardingConfig | Pods | ShardManagerClient | Serialization>"
+    "signature": "declare const live: Layer<Sharding, never, Storage | ShardingConfig | Pods | ShardManagerClient | Serialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -1939,7 +2071,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const register: Effect.Effect<void, never, Sharding>"
+    "signature": "declare const register: Effect.Effect<void, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -1954,7 +2087,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const unregister: Effect.Effect<void, never, Sharding>"
+    "signature": "declare const unregister: Effect.Effect<void, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L112"
   },
   {
     "_tag": "Constant",
@@ -1969,7 +2103,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const registerScoped: Effect.Effect<void, never, Sharding | Scope.Scope>"
+    "signature": "declare const registerScoped: Effect.Effect<void, never, Sharding | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L120"
   },
   {
     "_tag": "Constant",
@@ -1984,7 +2119,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, Sharding | R>"
+    "signature": "declare const registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, Sharding | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L129"
   },
   {
     "_tag": "Constant",
@@ -1999,7 +2135,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const registerEntity: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>"
+    "signature": "declare const registerEntity: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L140"
   },
   {
     "_tag": "Constant",
@@ -2014,7 +2151,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const registerTopic: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>"
+    "signature": "declare const registerTopic: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => <R>(behavior: RecipientBehaviour.RecipientBehaviour<Msg, R>, options?: RecipientBehaviour.EntityBehaviourOptions | undefined) => Effect.Effect<void, never, Sharding | Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L154"
   },
   {
     "_tag": "Constant",
@@ -2029,7 +2167,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const messenger: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => Effect.Effect<Messenger<Msg>, never, Sharding>"
+    "signature": "declare const messenger: <Msg extends Message.Message.Any>(entityType: RecipentType.EntityType<Msg>) => Effect.Effect<Messenger<Msg>, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -2044,7 +2183,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const broadcaster: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => Effect.Effect<Broadcaster<Msg>, never, Sharding>"
+    "signature": "declare const broadcaster: <Msg extends Message.Message.Any>(topicType: RecipentType.TopicType<Msg>) => Effect.Effect<Broadcaster<Msg>, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L180"
   },
   {
     "_tag": "Constant",
@@ -2059,7 +2199,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>, never, Sharding>"
+    "signature": "declare const getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L190"
   },
   {
     "_tag": "Constant",
@@ -2074,7 +2215,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const sendMessageToLocalEntityManagerWithoutRetries: (message: SerializedEnvelope.SerializedEnvelope) => Effect.Effect<MessageState.MessageState<SerializedMessage.SerializedMessage>, ShardingException.ShardingException, Sharding>"
+    "signature": "declare const sendMessageToLocalEntityManagerWithoutRetries: (message: SerializedEnvelope.SerializedEnvelope) => Effect.Effect<MessageState.MessageState<SerializedMessage.SerializedMessage>, ShardingException.ShardingException, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L199"
   },
   {
     "_tag": "Constant",
@@ -2089,7 +2231,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>, never, Sharding>"
+    "signature": "declare const getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>, never, Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L213"
   },
   {
     "_tag": "Interface",
@@ -2103,7 +2246,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Sharding {\n  readonly [ShardingTypeId]: ShardingTypeId\n  readonly register: Effect.Effect<void>\n  readonly unregister: Effect.Effect<void>\n  readonly messenger: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => Messenger<Msg>\n  readonly broadcaster: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => Broadcaster<Msg>\n  readonly isEntityOnLocalShards: (\n    recipientAddress: RecipientAddress.RecipientAddress\n  ) => Effect.Effect<boolean>\n  readonly isShuttingDown: Effect.Effect<boolean>\n\n  readonly registerScoped: Effect.Effect<void, never, Scope.Scope>\n  readonly registerEntity: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly registerTopic: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly getShardingRegistrationEvents: Stream.Stream<ShardingRegistrationEvent.ShardingRegistrationEvent>\n  readonly registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, R>\n  readonly assign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly unassign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly sendMessageToLocalEntityManagerWithoutRetries: (\n    message: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n  readonly getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>>\n  readonly getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>>\n  /** @internal */\n  readonly refreshAssignments: Effect.Effect<void, never, Scope.Scope>\n  /** @internal */\n  readonly getShardId: (recipientAddress: RecipientAddress.RecipientAddress) => ShardId.ShardId\n}"
+    "signature": "export interface Sharding {\n  readonly [ShardingTypeId]: ShardingTypeId\n  readonly register: Effect.Effect<void>\n  readonly unregister: Effect.Effect<void>\n  readonly messenger: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => Messenger<Msg>\n  readonly broadcaster: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => Broadcaster<Msg>\n  readonly isEntityOnLocalShards: (\n    recipientAddress: RecipientAddress.RecipientAddress\n  ) => Effect.Effect<boolean>\n  readonly isShuttingDown: Effect.Effect<boolean>\n\n  readonly registerScoped: Effect.Effect<void, never, Scope.Scope>\n  readonly registerEntity: <Msg extends Message.Message.Any>(\n    entityType: RecipentType.EntityType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly registerTopic: <Msg extends Message.Message.Any>(\n    topicType: RecipentType.TopicType<Msg>\n  ) => <R>(\n    behaviour: RecipientBehaviour.RecipientBehaviour<Msg, R>,\n    options?: RecipientBehaviour.EntityBehaviourOptions\n  ) => Effect.Effect<void, never, Exclude<R, RecipientBehaviourContext.RecipientBehaviourContext>>\n  readonly getShardingRegistrationEvents: Stream.Stream<ShardingRegistrationEvent.ShardingRegistrationEvent>\n  readonly registerSingleton: <R>(name: string, run: Effect.Effect<void, never, R>) => Effect.Effect<void, never, R>\n  readonly assign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly unassign: (shards: HashSet.HashSet<ShardId.ShardId>) => Effect.Effect<void>\n  readonly sendMessageToLocalEntityManagerWithoutRetries: (\n    message: SerializedEnvelope.SerializedEnvelope\n  ) => Effect.Effect<\n    MessageState.MessageState<SerializedMessage.SerializedMessage>,\n    ShardingException.ShardingException\n  >\n  readonly getPods: Effect.Effect<HashSet.HashSet<PodAddress.PodAddress>>\n  readonly getAssignedShardIds: Effect.Effect<HashSet.HashSet<ShardId.ShardId>>\n  /** @internal */\n  readonly refreshAssignments: Effect.Effect<void, never, Scope.Scope>\n  /** @internal */\n  readonly getShardId: (recipientAddress: RecipientAddress.RecipientAddress) => ShardId.ShardId\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -2117,7 +2261,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type ShardingTypeId = typeof ShardingTypeId"
+    "signature": "type ShardingTypeId = typeof ShardingTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -2131,7 +2276,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ShardingConfigTypeId: unique symbol"
+    "signature": "declare const ShardingConfigTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -2145,7 +2291,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const ShardingConfig: Context.Tag<ShardingConfig, ShardingConfig>"
+    "signature": "declare const ShardingConfig: Context.Tag<ShardingConfig, ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -2160,7 +2307,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const defaults: Layer.Layer<ShardingConfig, never, never>"
+    "signature": "declare const defaults: Layer.Layer<ShardingConfig, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -2175,7 +2323,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const withDefaults: (customs: Partial<ShardingConfig>) => Layer.Layer<ShardingConfig>"
+    "signature": "declare const withDefaults: (customs: Partial<ShardingConfig>) => Layer.Layer<ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -2190,7 +2339,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const fromConfig: Layer.Layer<ShardingConfig, ConfigError.ConfigError, never>"
+    "signature": "declare const fromConfig: Layer.Layer<ShardingConfig, ConfigError.ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L76"
   },
   {
     "_tag": "Interface",
@@ -2205,7 +2355,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ShardingConfig {\n  readonly numberOfShards: number\n  readonly selfHost: string\n  readonly shardingPort: number\n  readonly shardManagerUri: string\n  readonly serverVersion: string\n  readonly entityMaxIdleTime: Duration.Duration\n  readonly entityTerminationTimeout: Duration.Duration\n  readonly refreshAssignmentsRetryInterval: Duration.Duration\n  readonly unhealthyPodReportInterval: Duration.Duration\n}"
+    "signature": "export interface ShardingConfig {\n  readonly numberOfShards: number\n  readonly selfHost: string\n  readonly shardingPort: number\n  readonly shardManagerUri: string\n  readonly serverVersion: string\n  readonly entityMaxIdleTime: Duration.Duration\n  readonly entityTerminationTimeout: Duration.Duration\n  readonly refreshAssignmentsRetryInterval: Duration.Duration\n  readonly unhealthyPodReportInterval: Duration.Duration\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -2219,7 +2370,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type ShardingConfigTypeId = typeof ShardingConfigTypeId"
+    "signature": "type ShardingConfigTypeId = typeof ShardingConfigTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L20"
   },
   {
     "_tag": "Function",
@@ -2234,7 +2386,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const ShardsAssigned: (pod: PodAddress.PodAddress, shards: HashSet.HashSet<ShardId.ShardId>) => ShardsAssigned"
+    "signature": "declare const ShardsAssigned: (pod: PodAddress.PodAddress, shards: HashSet.HashSet<ShardId.ShardId>) => ShardsAssigned",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L24"
   },
   {
     "_tag": "Function",
@@ -2249,7 +2402,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const ShardsUnassigned: (pod: PodAddress.PodAddress, shards: HashSet.HashSet<ShardId.ShardId>) => ShardsUnassigned"
+    "signature": "declare const ShardsUnassigned: (pod: PodAddress.PodAddress, shards: HashSet.HashSet<ShardId.ShardId>) => ShardsUnassigned",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L46"
   },
   {
     "_tag": "Function",
@@ -2264,7 +2418,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const PodHealthChecked: (pod: PodAddress.PodAddress) => PodHealthChecked"
+    "signature": "declare const PodHealthChecked: (pod: PodAddress.PodAddress) => PodHealthChecked",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L68"
   },
   {
     "_tag": "Function",
@@ -2279,7 +2434,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const PodRegistered: (pod: PodAddress.PodAddress) => PodRegistered"
+    "signature": "declare const PodRegistered: (pod: PodAddress.PodAddress) => PodRegistered",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L87"
   },
   {
     "_tag": "Function",
@@ -2294,7 +2450,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const PodUnregistered: (pod: PodAddress.PodAddress) => PodUnregistered"
+    "signature": "declare const PodUnregistered: (pod: PodAddress.PodAddress) => PodUnregistered",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L106"
   },
   {
     "_tag": "Interface",
@@ -2308,7 +2465,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ShardsAssigned {\n  readonly _tag: \"ShardsAssigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}"
+    "signature": "export interface ShardsAssigned {\n  readonly _tag: \"ShardsAssigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L12"
   },
   {
     "_tag": "Interface",
@@ -2322,7 +2480,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ShardsUnassigned {\n  readonly _tag: \"ShardsUnassigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}"
+    "signature": "export interface ShardsUnassigned {\n  readonly _tag: \"ShardsUnassigned\"\n  readonly pod: PodAddress.PodAddress\n  readonly shards: HashSet.HashSet<ShardId.ShardId>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L35"
   },
   {
     "_tag": "Interface",
@@ -2336,7 +2495,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PodHealthChecked {\n  readonly _tag: \"PodHealthChecked\"\n  readonly pod: PodAddress.PodAddress\n}"
+    "signature": "export interface PodHealthChecked {\n  readonly _tag: \"PodHealthChecked\"\n  readonly pod: PodAddress.PodAddress\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L57"
   },
   {
     "_tag": "Interface",
@@ -2350,7 +2510,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PodRegistered {\n  readonly _tag: \"PodRegistered\"\n  readonly pod: PodAddress.PodAddress\n}"
+    "signature": "export interface PodRegistered {\n  readonly _tag: \"PodRegistered\"\n  readonly pod: PodAddress.PodAddress\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L76"
   },
   {
     "_tag": "Interface",
@@ -2364,7 +2525,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PodUnregistered {\n  readonly _tag: \"PodUnregistered\"\n  readonly pod: PodAddress.PodAddress\n}"
+    "signature": "export interface PodUnregistered {\n  readonly _tag: \"PodUnregistered\"\n  readonly pod: PodAddress.PodAddress\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L95"
   },
   {
     "_tag": "TypeAlias",
@@ -2379,7 +2541,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardingEvent = | ShardsAssigned\n  | ShardsUnassigned\n  | PodHealthChecked\n  | PodRegistered\n  | PodUnregistered"
+    "signature": "type ShardingEvent = | ShardsAssigned\n  | ShardsUnassigned\n  | PodHealthChecked\n  | PodRegistered\n  | PodUnregistered",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingEvent.ts#L116"
   },
   {
     "_tag": "Class",
@@ -2393,7 +2556,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class EntityNotManagedByThisPodException"
+    "signature": "declare class EntityNotManagedByThisPodException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L12"
   },
   {
     "_tag": "Class",
@@ -2407,7 +2571,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class EntityTypeNotRegisteredException"
+    "signature": "declare class EntityTypeNotRegisteredException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L30"
   },
   {
     "_tag": "Class",
@@ -2421,7 +2586,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class NoResultInProcessedMessageStateException"
+    "signature": "declare class NoResultInProcessedMessageStateException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L49"
   },
   {
     "_tag": "Class",
@@ -2435,7 +2601,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class PodNoLongerRegisteredException"
+    "signature": "declare class PodNoLongerRegisteredException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L67"
   },
   {
     "_tag": "Class",
@@ -2449,7 +2616,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class PodUnavailableException"
+    "signature": "declare class PodUnavailableException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L85"
   },
   {
     "_tag": "Class",
@@ -2463,7 +2631,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class SerializationException"
+    "signature": "declare class SerializationException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L103"
   },
   {
     "_tag": "Class",
@@ -2477,7 +2646,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "declare class ExceptionWhileOfferingMessageException"
+    "signature": "declare class ExceptionWhileOfferingMessageException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -2491,7 +2661,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isEntityNotManagedByThisPodException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityNotManagedByThisPodException"
+    "signature": "declare const isEntityNotManagedByThisPodException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityNotManagedByThisPodException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -2505,7 +2676,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isEntityTypeNotRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityTypeNotRegisteredException"
+    "signature": "declare const isEntityTypeNotRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is EntityTypeNotRegisteredException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -2519,7 +2691,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isNoResultInProcessedMessageStateException: (u: unknown, overrideOptions?: ParseOptions | number) => u is NoResultInProcessedMessageStateException"
+    "signature": "declare const isNoResultInProcessedMessageStateException: (u: unknown, overrideOptions?: ParseOptions | number) => u is NoResultInProcessedMessageStateException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L61"
   },
   {
     "_tag": "Constant",
@@ -2533,7 +2706,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isPodNoLongerRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodNoLongerRegisteredException"
+    "signature": "declare const isPodNoLongerRegisteredException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodNoLongerRegisteredException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L79"
   },
   {
     "_tag": "Constant",
@@ -2547,7 +2721,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isPodUnavailableException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodUnavailableException"
+    "signature": "declare const isPodUnavailableException: (u: unknown, overrideOptions?: ParseOptions | number) => u is PodUnavailableException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L97"
   },
   {
     "_tag": "Constant",
@@ -2561,7 +2736,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isSerializationException: (u: unknown, overrideOptions?: ParseOptions | number) => u is SerializationException"
+    "signature": "declare const isSerializationException: (u: unknown, overrideOptions?: ParseOptions | number) => u is SerializationException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -2575,7 +2751,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "utils",
-    "signature": "declare const isExceptionWhileOfferingMessageException: (u: unknown, overrideOptions?: ParseOptions | number) => u is ExceptionWhileOfferingMessageException"
+    "signature": "declare const isExceptionWhileOfferingMessageException: (u: unknown, overrideOptions?: ParseOptions | number) => u is ExceptionWhileOfferingMessageException",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L131"
   },
   {
     "_tag": "Constant",
@@ -2589,7 +2766,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schema",
-    "signature": "declare const schema: Schema.Union<[typeof SerializationException, typeof EntityNotManagedByThisPodException, typeof EntityTypeNotRegisteredException, typeof PodNoLongerRegisteredException, typeof PodUnavailableException, typeof NoResultInProcessedMessageStateException, typeof ExceptionWhileOfferingMessageException]>"
+    "signature": "declare const schema: Schema.Union<[typeof SerializationException, typeof EntityNotManagedByThisPodException, typeof EntityTypeNotRegisteredException, typeof PodNoLongerRegisteredException, typeof PodUnavailableException, typeof NoResultInProcessedMessageStateException, typeof ExceptionWhileOfferingMessageException]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L137"
   },
   {
     "_tag": "TypeAlias",
@@ -2603,7 +2781,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardingException = Schema.Schema.Type<typeof schema>"
+    "signature": "type ShardingException = Schema.Schema.Type<typeof schema>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingException.ts#L151"
   },
   {
     "_tag": "Function",
@@ -2618,7 +2797,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const EntityRegistered: <Msg extends Message.Message.Any>(entityType: RecipientType.EntityType<Msg>) => ShardingRegistrationEvent"
+    "signature": "declare const EntityRegistered: <Msg extends Message.Message.Any>(entityType: RecipientType.EntityType<Msg>) => ShardingRegistrationEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L18"
   },
   {
     "_tag": "Function",
@@ -2633,7 +2813,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const SingletonRegistered: (name: string) => ShardingRegistrationEvent"
+    "signature": "declare const SingletonRegistered: (name: string) => ShardingRegistrationEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L35"
   },
   {
     "_tag": "Function",
@@ -2648,7 +2829,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const TopicRegistered: <Msg extends Message.Message.Any>(topicType: RecipientType.TopicType<Msg>) => ShardingRegistrationEvent"
+    "signature": "declare const TopicRegistered: <Msg extends Message.Message.Any>(topicType: RecipientType.TopicType<Msg>) => ShardingRegistrationEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L49"
   },
   {
     "_tag": "TypeAlias",
@@ -2662,7 +2844,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardingRegistrationEvent = | EntityRegistered<any>\n  | SingletonRegistered\n  | TopicRegistered<any>"
+    "signature": "type ShardingRegistrationEvent = | EntityRegistered<any>\n  | SingletonRegistered\n  | TopicRegistered<any>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -2676,7 +2859,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ShardManagerTypeId: unique symbol"
+    "signature": "declare const ShardManagerTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -2690,7 +2874,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const ShardManager: Tag<ShardManager, ShardManager>"
+    "signature": "declare const ShardManager: Tag<ShardManager, ShardManager>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -2704,7 +2889,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const live: Layer<ShardManager, never, Storage | Pods | ManagerConfig | PodsHealth>"
+    "signature": "declare const live: Layer<ShardManager, never, Storage | Pods | ManagerConfig | PodsHealth>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L53"
   },
   {
     "_tag": "Interface",
@@ -2718,7 +2904,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ShardManager {\n  readonly getShardingEvents: Stream.Stream<ShardingEvent.ShardingEvent>\n  readonly register: (pod: Pod.Pod) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly checkAllPodsHealth: Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n  /* @internal */\n  readonly rebalance: (rebalanceImmediately: boolean) => Effect.Effect<void>\n  /* @internal */\n  readonly persistPods: Effect.Effect<void>\n}"
+    "signature": "export interface ShardManager {\n  readonly getShardingEvents: Stream.Stream<ShardingEvent.ShardingEvent>\n  readonly register: (pod: Pod.Pod) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly checkAllPodsHealth: Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n  /* @internal */\n  readonly rebalance: (rebalanceImmediately: boolean) => Effect.Effect<void>\n  /* @internal */\n  readonly persistPods: Effect.Effect<void>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -2732,7 +2919,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type ShardManagerTypeId = typeof ShardManagerTypeId"
+    "signature": "type ShardManagerTypeId = typeof ShardManagerTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -2746,7 +2934,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const ShardManagerClientTypeId: unique symbol"
+    "signature": "declare const ShardManagerClientTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -2760,7 +2949,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (args: Omit<ShardManagerClient, typeof ShardManagerClientTypeId>) => ShardManagerClient"
+    "signature": "declare const make: (args: Omit<ShardManagerClient, typeof ShardManagerClientTypeId>) => ShardManagerClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -2774,7 +2964,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const ShardManagerClient: Context.Tag<ShardManagerClient, ShardManagerClient>"
+    "signature": "declare const ShardManagerClient: Context.Tag<ShardManagerClient, ShardManagerClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -2788,7 +2979,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const local: Layer.Layer<ShardManagerClient, never, ShardingConfig.ShardingConfig>"
+    "signature": "declare const local: Layer.Layer<ShardManagerClient, never, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L57"
   },
   {
     "_tag": "Interface",
@@ -2803,7 +2995,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ShardManagerClient {\n  readonly [ShardManagerClientTypeId]: ShardManagerClientTypeId\n  readonly register: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n}"
+    "signature": "export interface ShardManagerClient {\n  readonly [ShardManagerClientTypeId]: ShardManagerClientTypeId\n  readonly register: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly unregister: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly notifyUnhealthyPod: (podAddress: PodAddress.PodAddress) => Effect.Effect<void>\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -2817,7 +3010,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type ShardManagerClientTypeId = typeof ShardManagerClientTypeId"
+    "signature": "type ShardManagerClientTypeId = typeof ShardManagerClientTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManagerClient.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -2831,7 +3025,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "declare const StorageTypeId: unique symbol"
+    "signature": "declare const StorageTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -2845,7 +3040,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (args: Omit<Storage, typeof StorageTypeId>) => Storage"
+    "signature": "declare const make: (args: Omit<Storage, typeof StorageTypeId>) => Storage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L69"
   },
   {
     "_tag": "Constant",
@@ -2859,7 +3055,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "context",
-    "signature": "declare const Storage: Context.Tag<Storage, Storage>"
+    "signature": "declare const Storage: Context.Tag<Storage, Storage>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -2874,7 +3071,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const memory: Layer.Layer<Storage, never, never>"
+    "signature": "declare const memory: Layer.Layer<Storage, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -2889,7 +3087,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const noop: Layer.Layer<Storage, never, never>"
+    "signature": "declare const noop: Layer.Layer<Storage, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L92"
   },
   {
     "_tag": "Interface",
@@ -2904,7 +3103,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Storage {\n  readonly [StorageTypeId]: StorageTypeId\n\n  /**\n   * Get the current state of shard assignments to pods\n   */\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Save the current state of shard assignments to pods\n   */\n  readonly saveAssignments: (\n    assignments: HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>\n  ) => Effect.Effect<void>\n\n  /**\n   * A stream that will emit the state of shard assignments whenever it changes\n   */\n  readonly assignmentsStream: Stream.Stream<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Get the list of existing pods\n   */\n  readonly getPods: Effect.Effect<HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>>\n\n  /**\n   * Save the list of existing pods\n   */\n  readonly savePods: (pods: HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>) => Effect.Effect<void>\n}"
+    "signature": "export interface Storage {\n  readonly [StorageTypeId]: StorageTypeId\n\n  /**\n   * Get the current state of shard assignments to pods\n   */\n  readonly getAssignments: Effect.Effect<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Save the current state of shard assignments to pods\n   */\n  readonly saveAssignments: (\n    assignments: HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>\n  ) => Effect.Effect<void>\n\n  /**\n   * A stream that will emit the state of shard assignments whenever it changes\n   */\n  readonly assignmentsStream: Stream.Stream<HashMap.HashMap<ShardId.ShardId, Option.Option<PodAddress.PodAddress>>>\n\n  /**\n   * Get the list of existing pods\n   */\n  readonly getPods: Effect.Effect<HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>>\n\n  /**\n   * Save the list of existing pods\n   */\n  readonly savePods: (pods: HashMap.HashMap<PodAddress.PodAddress, Pod.Pod>) => Effect.Effect<void>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L34"
   },
   {
     "_tag": "TypeAlias",
@@ -2918,6 +3118,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "symbols",
-    "signature": "type StorageTypeId = typeof StorageTypeId"
+    "signature": "type StorageTypeId = typeof StorageTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Storage.ts#L25"
   }
 ]

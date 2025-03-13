@@ -11,7 +11,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -25,7 +26,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const MssqlClient: Context.Tag<MssqlClient, MssqlClient>"
+    "signature": "declare const MssqlClient: Context.Tag<MssqlClient, MssqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -39,7 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>"
+    "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L510"
   },
   {
     "_tag": "Function",
@@ -53,7 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>"
+    "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L119"
   },
   {
     "_tag": "Function",
@@ -67,7 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (config: Config.Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>"
+    "signature": "declare const layerConfig: (config: Config.Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L429"
   },
   {
     "_tag": "Function",
@@ -81,7 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>"
+    "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L447"
   },
   {
     "_tag": "Function",
@@ -95,7 +101,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "compiler",
-    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler"
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L461"
   },
   {
     "_tag": "Interface",
@@ -109,7 +116,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: Statement.Primitive,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}"
+    "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: Statement.Primitive,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L43"
   },
   {
     "_tag": "Interface",
@@ -123,7 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly parameterTypes?: Record<Statement.PrimitiveKind, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}"
+    "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly parameterTypes?: Record<Statement.PrimitiveKind, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L73"
   },
   {
     "_tag": "TypeAlias",
@@ -137,7 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type ids",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -151,7 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
+    "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlMigrator.ts#L24"
   },
   {
     "_tag": "Function",
@@ -165,7 +176,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>"
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlMigrator.ts#L36"
   },
   {
     "_tag": "Constant",
@@ -179,7 +191,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "declare const ParameterId: unique symbol"
+    "signature": "declare const ParameterId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Parameter.ts#L12"
   },
   {
     "_tag": "Function",
@@ -193,7 +206,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const make: <A>(name: string, type: DataType, options?: ParameterOptions) => Parameter<A>"
+    "signature": "declare const make: <A>(name: string, type: DataType, options?: ParameterOptions) => Parameter<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Parameter.ts#L36"
   },
   {
     "_tag": "Interface",
@@ -207,7 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Parameter<A> {\n  readonly [ParameterId]: (_: never) => A\n  readonly _tag: \"Parameter\"\n  readonly name: string\n  readonly type: DataType\n  readonly options: ParameterOptions\n}"
+    "signature": "export interface Parameter<A> {\n  readonly [ParameterId]: (_: never) => A\n  readonly _tag: \"Parameter\"\n  readonly name: string\n  readonly type: DataType\n  readonly options: ParameterOptions\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Parameter.ts#L24"
   },
   {
     "_tag": "TypeAlias",
@@ -221,7 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "type ParameterId = typeof ParameterId"
+    "signature": "type ParameterId = typeof ParameterId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Parameter.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -235,7 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "declare const TypeId: unique symbol"
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L17"
   },
   {
     "_tag": "Function",
@@ -249,7 +266,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const make: (name: string) => Procedure<{}, {}>"
+    "signature": "declare const make: (name: string) => Procedure<{}, {}>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L100"
   },
   {
     "_tag": "Function",
@@ -263,7 +281,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": "declare const param: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<Simplify<I & { [K in N]: Parameter.Parameter<A>; }>, O>"
+    "signature": "declare const param: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<Simplify<I & { [K in N]: Parameter.Parameter<A>; }>, O>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L112"
   },
   {
     "_tag": "Function",
@@ -277,7 +296,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": "declare const outputParam: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, Simplify<O & { [K in N]: Parameter.Parameter<A>; }>>"
+    "signature": "declare const outputParam: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, Simplify<O & { [K in N]: Parameter.Parameter<A>; }>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L135"
   },
   {
     "_tag": "Function",
@@ -291,7 +311,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": "declare const withRows: <A extends object = Row>() => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, O, A>"
+    "signature": "declare const withRows: <A extends object = Row>() => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, O, A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L158"
   },
   {
     "_tag": "Function",
@@ -305,7 +326,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinator",
-    "signature": "declare const compile: <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>, A>(self: Procedure<I, O, A>) => (input: Procedure.ParametersRecord<I>) => ProcedureWithValues<I, O, A>"
+    "signature": "declare const compile: <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>, A>(self: Procedure<I, O, A>) => (input: Procedure.ParametersRecord<I>) => ProcedureWithValues<I, O, A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L170"
   },
   {
     "_tag": "Interface",
@@ -319,7 +341,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Procedure<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A = never\n> extends Pipeable {\n  readonly [TypeId]: {\n    readonly _A: Covariant<A>\n  }\n  readonly _tag: \"Procedure\"\n  readonly name: string\n  readonly params: I\n  readonly outputParams: O\n}"
+    "signature": "export interface Procedure<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A = never\n> extends Pipeable {\n  readonly [TypeId]: {\n    readonly _A: Covariant<A>\n  }\n  readonly _tag: \"Procedure\"\n  readonly name: string\n  readonly params: I\n  readonly outputParams: O\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L29"
   },
   {
     "_tag": "Interface",
@@ -333,7 +356,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface ProcedureWithValues<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A\n> extends Procedure<I, O, A> {\n  readonly values: Procedure.ParametersRecord<I>\n}"
+    "signature": "export interface ProcedureWithValues<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A\n> extends Procedure<I, O, A> {\n  readonly values: Procedure.ParametersRecord<I>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L47"
   },
   {
     "_tag": "TypeAlias",
@@ -347,7 +371,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "type TypeId = typeof TypeId"
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L23"
   },
   {
     "_tag": "Interface",
@@ -361,7 +386,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Result<\n    O extends Record<string, Parameter.Parameter<any>>,\n    A\n  > {\n    readonly output: ParametersRecord<O>\n    readonly rows: ReadonlyArray<A>\n  }"
+    "signature": "export interface Result<\n    O extends Record<string, Parameter.Parameter<any>>,\n    A\n  > {\n    readonly output: ParametersRecord<O>\n    readonly rows: ReadonlyArray<A>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L75"
   },
   {
     "_tag": "TypeAlias",
@@ -375,6 +401,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type { readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T : never; } = & {\n      readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T\n        : never\n    }\n    & {}"
+    "signature": "type { readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T : never; } = & {\n      readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T\n        : never\n    }\n    & {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/Procedure.ts#L62"
   }
 ]
