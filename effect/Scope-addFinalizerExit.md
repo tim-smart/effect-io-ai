@@ -17,6 +17,6 @@ on the exit status.
 declare const addFinalizerExit: (self: Scope, finalizer: Scope.Finalizer) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L142)
 
 Since v2.0.0

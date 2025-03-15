@@ -20,10 +20,9 @@ not handle or recover from the error.
 Use this function when you want to terminate a fiber due to an unrecoverable
 defect and include a clear explanation in the message.
 
-**Example**
+**Example** (Terminating on Division by Zero with a Specified Message)
 
 ```ts
-// Title: Terminating on Division by Zero with a Specified Message
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
@@ -35,7 +34,7 @@ const divide = (a: number, b: number) =>
 //      ▼
 const program = divide(1, 0)
 
-// Effect.runPromise(program).catch(console.error)
+Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) RuntimeException: Cannot divide by zero
 //   ...stack trace...
@@ -53,6 +52,6 @@ lazily.
 declare const dieMessage: (message: string) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2629)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2675)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ the scope is closed. Use this when the finalizer does not need to know the
 declare const addFinalizer: (self: Scope, finalizer: Effect.Effect<unknown>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L127)
 
 Since v2.0.0

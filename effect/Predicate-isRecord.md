@@ -27,6 +27,6 @@ assert.deepStrictEqual(isRecord(() => null), false)
 declare const isRecord: (input: unknown) => input is { [x: string | symbol]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L637)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L641)
 
 Since v2.0.0

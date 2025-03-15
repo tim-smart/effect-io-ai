@@ -21,6 +21,6 @@ exception categories.
 declare const UnknownExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L232)
 
 Since v2.0.0

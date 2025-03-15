@@ -27,7 +27,7 @@ const program = Effect.gen(function*() {
   yield* Effect.log("The job is finished!")
 }).pipe(Effect.withLogSpan("myspan"))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=INFO fiber=#0 message="The job is finished!" myspan=1011ms
 ```
 
@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const withLogSpan: { (label: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, label: string): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10832)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10999)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ versus just defects or interruptions.
 declare const isFailure: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L763)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L764)
 
 Since v2.0.0

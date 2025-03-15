@@ -34,7 +34,7 @@ const program = Effect.gen(function*() {
   return isCompleted
 })
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // 42
 // true
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const intoDeferred: { <A, E>(deferred: Deferred.Deferred<A, E>): <R>(self: Effect<A, E, R>) => Effect<boolean, never, R>; <A, E, R>(self: Effect<A, E, R>, deferred: Deferred.Deferred<A, E>): Effect<boolean, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8256)
 
 Since v2.0.0

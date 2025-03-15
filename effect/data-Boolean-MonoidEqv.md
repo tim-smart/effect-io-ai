@@ -13,6 +13,6 @@ The `empty` value is `true`.
 declare const MonoidEqv: monoid.Monoid<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L163)
 
 Since v0.24.0

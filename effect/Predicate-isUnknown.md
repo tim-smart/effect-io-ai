@@ -24,6 +24,6 @@ assert.deepStrictEqual(isUnknown([]), true)
 declare const isUnknown: (input: unknown) => input is unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L435)
 
 Since v2.0.0

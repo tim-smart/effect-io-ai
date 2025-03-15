@@ -17,7 +17,7 @@ const program = Stream.fromEffect(Console.log("Application Logic.")).pipe(
   )
 )
 
-// Effect.runPromise(Stream.runCollect(program)).then(console.log)
+Effect.runPromise(Stream.runCollect(program)).then(console.log)
 // Application Logic.
 // Finalizing the stream
 // Doing some other works after stream's finalization

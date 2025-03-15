@@ -16,7 +16,7 @@ const stream = Stream.make(1, 2, 3).pipe(
   Stream.tap((n) => Console.log(`after mapping: ${n}`))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Stream started
 // after mapping: 2
 // after mapping: 4

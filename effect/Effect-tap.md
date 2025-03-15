@@ -20,10 +20,9 @@ tracking, without modifying the main value. This is useful when you need to
 observe or record an action but want the original value to be passed to the
 next step.
 
-**Example**
+**Example** (Logging a step in a pipeline)
 
 ```ts
-// Title: Logging a step in a pipeline
 import { Console, Effect, pipe } from "effect"
 
 // Function to apply a discount safely to a transaction amount
@@ -46,7 +45,7 @@ const finalAmount = pipe(
   Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-// Effect.runPromise(finalAmount).then(console.log)
+Effect.runPromise(finalAmount).then(console.log)
 // Output:
 // Apply a discount to: 100
 // 95
@@ -62,6 +61,6 @@ const finalAmount = pipe(
 declare const tap: { <A, X>(f: (a: NoInfer<A>) => X): <E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer _A1, infer E1, infer R1>] ? Effect<A, E | E1, R | R1> : [X] extends [PromiseLike<infer _A1>] ? Effect<A, E | Cause.UnknownException, R> : Effect<A, E, R>; <A, X, E1, R1>(f: (a: NoInfer<A>) => Effect<X, E1, R1>, options: { onlyEffect: true; }): <E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R | R1>; <X>(f: NotFunction<X>): <A, E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer _A1, infer E1, infer R1>] ? Effect<A, E | E1, R | R1> : [X] extends [PromiseLike<infer _A1>] ? Effect<A, E | Cause.UnknownException, R> : Effect<A, E, R>; <X, E1, R1>(f: Effect<X, E1, R1>, options: { onlyEffect: true; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R | R1>; <A, E, R, X>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => X): [X] extends [Effect<infer _A1, infer E1, infer R1>] ? Effect<A, E | E1, R | R1> : [X] extends [PromiseLike<infer _A1>] ? Effect<A, E | Cause.UnknownException, R> : Effect<A, E, R>; <A, E, R, X, E1, R1>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => Effect<X, E1, R1>, options: { onlyEffect: true; }): Effect<A, E | E1, R | R1>; <A, E, R, X>(self: Effect<A, E, R>, f: NotFunction<X>): [X] extends [Effect<infer _A1, infer E1, infer R1>] ? Effect<A, E | E1, R | R1> : [X] extends [PromiseLike<infer _A1>] ? Effect<A, E | Cause.UnknownException, R> : Effect<A, E, R>; <A, E, R, X, E1, R1>(self: Effect<A, E, R>, f: Effect<X, E1, R1>, options: { onlyEffect: true; }): Effect<A, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9336)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9487)
 
 Since v2.0.0

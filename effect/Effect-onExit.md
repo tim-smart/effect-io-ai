@@ -19,31 +19,45 @@ result:
 The cleanup function is guaranteed to run uninterruptibly, ensuring reliable
 resource management even in complex or high-concurrency scenarios.
 
-**Example**
+**Example** (Running a Cleanup Function with the Effect’s Result)
 
 ```ts
 import { Console, Effect, Exit } from "effect"
 
-// Define a cleanup function that logs the outcome of the effect
-const handler = Effect.onExit((exit) => Console.log(`Cleanup completed: ${Exit.getOrElse(exit, String)}`))
+// Define a cleanup effect that logs the result
+const handler = Effect.onExit((exit) =>
+  Console.log(`Cleanup completed: ${Exit.getOrElse(exit, String)}`)
+)
 
-const success = Console.log("Task completed").pipe(Effect.as("some result"), handler)
+// Define a successful effect
+const success = Console.log("Task completed").pipe(
+  Effect.as("some result"),
+  handler
+)
 
-// Effect.runFork(success)
+Effect.runFork(success)
 // Output:
 // Task completed
 // Cleanup completed: some result
 
-const failure = Console.log("Task failed").pipe(Effect.andThen(Effect.fail("some error")), handler)
+// Define a failing effect
+const failure = Console.log("Task failed").pipe(
+  Effect.andThen(Effect.fail("some error")),
+  handler
+)
 
-// Effect.runFork(failure)
+Effect.runFork(failure)
 // Output:
 // Task failed
 // Cleanup completed: Error: some error
 
-const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.interrupt), handler)
+// Define an interrupted effect
+const interruption = Console.log("Task interrupted").pipe(
+  Effect.andThen(Effect.interrupt),
+  handler
+)
 
-// Effect.runFork(interruption)
+Effect.runFork(interruption)
 // Output:
 // Task interrupted
 // Cleanup completed: All fibers interrupted without errors.
@@ -55,6 +69,6 @@ const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.
 declare const onExit: { <A, E, X, R2>(cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>): <R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>; <A, E, R, X, R2>(self: Effect<A, E, R>, cleanup: (exit: Exit.Exit<A, E>) => Effect<X, never, R2>): Effect<A, E, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5755)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5879)
 
 Since v2.0.0

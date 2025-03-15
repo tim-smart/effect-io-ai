@@ -20,7 +20,7 @@ const stream = Stream.zipWith(
   (n, s) => [n - s.length, s]
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ [ 0, 'a' ], [ 1, 'b' ], [ 2, 'c' ] ] }
 ```
 

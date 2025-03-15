@@ -10,10 +10,9 @@ Creates an `Effect` that always succeeds with a given value.
 Use this function when you need an effect that completes successfully with a
 specific value without any errors or external dependencies.
 
-**Example**
+**Example** (Creating a Successful Effect)
 
 ```ts
-// Title: Creating a Successful Effect
 import { Effect } from "effect"
 
 // Creating an effect that represents a successful scenario
@@ -33,6 +32,6 @@ const success = Effect.succeed(42)
 declare const succeed: <A>(value: A) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3094)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3141)
 
 Since v2.0.0

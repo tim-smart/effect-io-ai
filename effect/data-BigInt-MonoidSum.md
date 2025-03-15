@@ -10,11 +10,12 @@ The `empty` value is `0n`.
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { MonoidSum } from "@effect/typeclass/data/BigInt"
 
-assert.deepStrictEqual(MonoidSum.combine(2n, 3n), 5n)
-assert.deepStrictEqual(MonoidSum.combine(2n, MonoidSum.empty), 2n)
+console.log(MonoidSum.combine(2n, 3n))
+// 5n
+console.log(MonoidSum.combine(2n, MonoidSum.empty))
+// 2n
 ```
 
 **Signature**
@@ -23,6 +24,6 @@ assert.deepStrictEqual(MonoidSum.combine(2n, MonoidSum.empty), 2n)
 declare const MonoidSum: monoid.Monoid<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L104)
 
 Since v0.24.0

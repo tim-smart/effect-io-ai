@@ -45,7 +45,7 @@ const program = Effect.gen(function* () {
   console.log(yield* memoized(10))
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Example Output:
 // non-memoized version:
 // 2
@@ -61,6 +61,6 @@ const program = Effect.gen(function* () {
 declare const cachedFunction: <A, B, E, R>(f: (a: A) => Effect<B, E, R>, eq?: Equivalence<A>) => Effect<(a: A) => Effect<B, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L535)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L539)
 
 Since v2.0.0

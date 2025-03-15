@@ -23,6 +23,6 @@ console.log(result) // [1, 2, 3, 0, 0, 0]
 declare const pad: { <A, T>(n: number, fill: T): (self: Array<A>) => Array<A | T>; <A, T>(self: Array<A>, n: number, fill: T): Array<A | T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1932)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1934)
 
 Since v3.8.4

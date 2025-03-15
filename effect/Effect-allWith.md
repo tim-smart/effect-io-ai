@@ -32,7 +32,7 @@ const program = pipe(
   Effect.allWith({ concurrency: 2 })
 )
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#3 message="task2 done"
 // timestamp=... level=INFO fiber=#2 message="task1 done"
@@ -45,6 +45,6 @@ const program = pipe(
 declare const allWith: <O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(options?: O) => <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>>(arg: Arg) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L839)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L857)
 
 Since v2.0.0

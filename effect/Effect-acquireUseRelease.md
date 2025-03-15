@@ -3,24 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.acquireUseRelease
 
-Creates a scoped resource and automatically handles the use effect during the
-scope.
+Many real-world operations involve working with resources that must be released when no longer needed, such as:
 
-**Details**
+- Database connections
+- File handles
+- Network requests
 
-This function is similar to `acquireRelease`, but it introduces an
-additional `use` effect. This allows you to automatically execute the `use`
-effect while the resource is acquired, and it also ensures that the `release`
-effect is performed when the scope is closed.
+This function ensures that a resource is:
 
-The `acquire` effect is used to obtain the resource, the `use` effect
-operates while the resource is in use, and the `release` effect cleans up the
-resource when the scope ends.
+1. **Acquired** properly.
+2. **Used** for its intended purpose.
+3. **Released** even if an error occurs.
 
-**Example**
+**Example** (Automatically Managing Resource Lifetime)
 
 ```ts
-// Title: Automatically Managing Resource Lifetime
 import { Effect, Console } from "effect"
 
 // Define an interface for a resource
@@ -59,7 +56,7 @@ const use = (res: MyResource) => Console.log(`content is ${res.contents}`)
 //      ▼
 const program = Effect.acquireUseRelease(acquire, use, release)
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output:
 // Resource acquired
 // content is lorem ipsum
@@ -72,6 +69,6 @@ const program = Effect.acquireUseRelease(acquire, use, release)
 declare const acquireUseRelease: { <A2, E2, R2, A, X, R3>(use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): <E, R>(acquire: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R3 | R>; <A, E, R, A2, E2, R2, X, R3>(acquire: Effect<A, E, R>, use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): Effect<A2, E | E2, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5451)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5520)
 
 Since v2.0.0

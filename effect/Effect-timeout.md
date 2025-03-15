@@ -35,7 +35,7 @@ const task = Effect.gen(function* () {
 // than the specified timeout duration
 const timedEffect = task.pipe(Effect.timeout("1 second"))
 
-// Effect.runPromiseExit(timedEffect).then(console.log)
+Effect.runPromiseExit(timedEffect).then(console.log)
 // Output:
 // Start processing...
 // {
@@ -62,6 +62,6 @@ timeout handlers.
 declare const timeout: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutException, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, Cause.TimeoutException | E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6867)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6997)
 
 Since v2.0.0

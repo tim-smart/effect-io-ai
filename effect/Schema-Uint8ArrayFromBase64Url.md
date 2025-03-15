@@ -11,6 +11,6 @@ Decodes a base64 (URL) encoded string into a `Uint8Array`.
 declare const Uint8ArrayFromBase64Url: Schema<Uint8Array<ArrayBufferLike>, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6232)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6276)
 
 Since v3.10.0

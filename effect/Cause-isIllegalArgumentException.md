@@ -11,6 +11,6 @@ Checks if a given unknown value is an `IllegalArgumentException`.
 declare const isIllegalArgumentException: (u: unknown) => u is IllegalArgumentException
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1359)
 
 Since v2.0.0

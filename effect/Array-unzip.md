@@ -20,6 +20,6 @@ console.log(result) // [[1, 2, 3], ['a', 'b', 'c']]
 declare const unzip: <S extends Iterable<readonly [any, any]>>(self: S) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]> ? [NonEmptyArray<A>, NonEmptyArray<B>] : S extends Iterable<readonly [infer A, infer B]> ? [Array<A>, Array<B>] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1503)
 
 Since v2.0.0

@@ -18,7 +18,7 @@ const s2 = Stream.make(4, 5, 6)
 
 const stream = Stream.interleave(s1, s2)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 4, 2, 5, 3, 6 ] }
 ```
 

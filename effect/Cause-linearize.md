@@ -17,6 +17,6 @@ parallel branch separately, even if they have multiple sequential errors.
 declare const linearize: <E>(self: Cause<E>) => HashSet.HashSet<Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L948)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L949)
 
 Since v2.0.0

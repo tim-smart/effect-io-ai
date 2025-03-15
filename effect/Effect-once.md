@@ -32,7 +32,7 @@ const program = Effect.gen(function* () {
   yield* Effect.repeatN(task2, 2)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // task1
 // task1
@@ -46,6 +46,6 @@ const program = Effect.gen(function* () {
 declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L585)
 
 Since v2.0.0

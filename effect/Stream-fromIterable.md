@@ -14,7 +14,7 @@ const numbers = [1, 2, 3]
 
 const stream = Stream.fromIterable(numbers)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 2, 3 ] }
 ```
 

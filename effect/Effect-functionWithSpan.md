@@ -25,6 +25,6 @@ const getTodo = Effect.functionWithSpan({
 declare const functionWithSpan: <Args extends Array<any>, Ret extends Effect<any, any, any>>(options: { readonly body: (...args: Args) => Ret; readonly options: FunctionWithSpanOptions | ((...args: Args) => FunctionWithSpanOptions); readonly captureStackTrace?: boolean | undefined; }) => (...args: Args) => Unify.Unify<Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12872)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13064)
 
 Since v3.2.0

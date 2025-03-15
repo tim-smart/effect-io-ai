@@ -11,6 +11,6 @@ Describes a schema that represents a `TimeZone.Named` instance.
 declare class TimeZoneNamedFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6941)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6985)
 
 Since v3.10.0

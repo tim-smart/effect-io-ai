@@ -20,6 +20,6 @@ console.log(result) // 1
 declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L699)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L696)
 
 Since v2.0.0

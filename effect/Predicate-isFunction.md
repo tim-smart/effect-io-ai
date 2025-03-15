@@ -22,6 +22,6 @@ assert.deepStrictEqual(isFunction("function"), false)
 declare const isFunction: (input: unknown) => input is Function
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L320)
 
 Since v2.0.0

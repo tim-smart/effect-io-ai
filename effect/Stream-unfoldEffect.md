@@ -16,7 +16,7 @@ const stream = Stream.unfoldEffect(1, (n) =>
     Effect.map((b) => (b ? Option.some([n, -n]) : Option.some([n, n])))
   ))
 
-// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
 // { _id: 'Chunk', values: [ 1, -1, -1, -1, -1 ] }
 ```
 

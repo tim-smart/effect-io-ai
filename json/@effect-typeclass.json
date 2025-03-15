@@ -712,15 +712,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupSum",
-    "description": "`bigint` semigroup under addition.",
+    "description": "`bigint` semigroup under addition.\n\n**Example**\n\n```ts\nimport { SemigroupSum } from \"@effect/typeclass/data/BigInt\"\n\nconsole.log(SemigroupSum.combine(2n, 3n))\n// 5n\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupSum } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupSum.combine(2n, 3n), 5n)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupSum: semigroup.Semigroup<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -736,7 +734,7 @@
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMultiply: semigroup.Semigroup<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -746,15 +744,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupMin",
-    "description": "A `Semigroup` that uses the minimum between two values.",
+    "description": "A `Semigroup` that uses the minimum between two values.\n\n**Example**\n\n```ts\nimport { SemigroupMin } from \"@effect/typeclass/data/BigInt\"\n\nconsole.log(SemigroupMin.combine(2n, 3n))\n// 2n\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupMin } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupMin.combine(2n, 3n), 2n)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMin: semigroup.Semigroup<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -764,15 +760,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupMax",
-    "description": "A `Semigroup` that uses the maximum between two values.",
+    "description": "A `Semigroup` that uses the maximum between two values.\n\n**Example**\n\n```ts\nimport { SemigroupMax } from \"@effect/typeclass/data/BigInt\"\n\nconsole.log(SemigroupMax.combine(2n, 3n))\n// 3n\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupMax } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(SemigroupMax.combine(2n, 3n), 3n)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMax: semigroup.Semigroup<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -782,15 +776,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidSum",
-    "description": "`bigint` monoid under addition.\n\nThe `empty` value is `0n`.",
+    "description": "`bigint` monoid under addition.\n\nThe `empty` value is `0n`.\n\n**Example**\n\n```ts\nimport { MonoidSum } from \"@effect/typeclass/data/BigInt\"\n\nconsole.log(MonoidSum.combine(2n, 3n))\n// 5n\nconsole.log(MonoidSum.combine(2n, MonoidSum.empty))\n// 2n\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidSum } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(MonoidSum.combine(2n, 3n), 5n)\nassert.deepStrictEqual(MonoidSum.combine(2n, MonoidSum.empty), 2n)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidSum: monoid.Monoid<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -800,15 +792,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidMultiply",
-    "description": "`bigint` monoid under multiplication.\n\nThe `empty` value is `1n`.",
+    "description": "`bigint` monoid under multiplication.\n\nThe `empty` value is `1n`.\n\n**Example**\n\n```ts\nimport { MonoidMultiply } from \"@effect/typeclass/data/BigInt\"\n\nconsole.log(MonoidMultiply.combine(2n, 3n))\n// 6n\nconsole.log(MonoidMultiply.combine(2n, MonoidMultiply.empty))\n// 2n\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidMultiply } from \"@effect/typeclass/data/BigInt\"\n\nassert.deepStrictEqual(MonoidMultiply.combine(2n, 3n), 6n)\nassert.deepStrictEqual(MonoidMultiply.combine(2n, MonoidMultiply.empty), 2n)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidMultiply: monoid.Monoid<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L128"
   },
   {
     "_tag": "Constant",
@@ -818,15 +808,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupEvery",
-    "description": "`boolean` semigroup under conjunction.",
+    "description": "`boolean` semigroup under conjunction.\n\n**Example**\n\n```ts\nimport { SemigroupEvery } from \"@effect/typeclass/data/Boolean\"\n\nconsole.log(SemigroupEvery.combine(true, true))\n// true\nconsole.log(SemigroupEvery.combine(true, false))\n// false\nconsole.log(SemigroupEvery.combine(false, true))\n// false\nconsole.log(SemigroupEvery.combine(false, false))\n// false\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupEvery } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupEvery.combine(true, true), true)\nassert.deepStrictEqual(SemigroupEvery.combine(true, false), false)\nassert.deepStrictEqual(SemigroupEvery.combine(false, true), false)\nassert.deepStrictEqual(SemigroupEvery.combine(false, false), false)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupEvery: semigroup.Semigroup<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -836,15 +824,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupSome",
-    "description": "`boolean` semigroup under disjunction.",
+    "description": "`boolean` semigroup under disjunction.\n\n**Example**\n\n```ts\nimport { SemigroupSome } from \"@effect/typeclass/data/Boolean\"\n\nconsole.log(SemigroupSome.combine(true, true))\n// true\nconsole.log(SemigroupSome.combine(true, false))\n// true\nconsole.log(SemigroupSome.combine(false, true))\n// true\nconsole.log(SemigroupSome.combine(false, false))\n// false\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupSome } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupSome.combine(true, true), true)\nassert.deepStrictEqual(SemigroupSome.combine(true, false), true)\nassert.deepStrictEqual(SemigroupSome.combine(false, true), true)\nassert.deepStrictEqual(SemigroupSome.combine(false, false), false)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupSome: semigroup.Semigroup<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -854,15 +840,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupXor",
-    "description": "`boolean` semigroup under exclusive disjunction.",
+    "description": "`boolean` semigroup under exclusive disjunction.\n\n**Example**\n\n```ts\nimport { SemigroupXor } from \"@effect/typeclass/data/Boolean\"\n\nconsole.log(SemigroupXor.combine(true, true))\n// false\nconsole.log(SemigroupXor.combine(true, false))\n// true\nconsole.log(SemigroupXor.combine(false, true))\n// true\nconsole.log(SemigroupXor.combine(false, false))\n// false\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupXor } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupXor.combine(true, true), false)\nassert.deepStrictEqual(SemigroupXor.combine(true, false), true)\nassert.deepStrictEqual(SemigroupXor.combine(false, true), true)\nassert.deepStrictEqual(SemigroupXor.combine(false, false), false)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupXor: semigroup.Semigroup<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -872,15 +856,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupEqv",
-    "description": "`boolean` semigroup under equivalence.",
+    "description": "`boolean` semigroup under equivalence.\n\n**Example**\n\n```ts\nimport { SemigroupEqv } from \"@effect/typeclass/data/Boolean\"\n\nconsole.log(SemigroupEqv.combine(true, true))\n// true\nconsole.log(SemigroupEqv.combine(true, false))\n// false\nconsole.log(SemigroupEqv.combine(false, true))\n// false\nconsole.log(SemigroupEqv.combine(false, false))\n// true\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupEqv } from \"@effect/typeclass/data/Boolean\"\n\nassert.deepStrictEqual(SemigroupEqv.combine(true, true), true)\nassert.deepStrictEqual(SemigroupEqv.combine(true, false), false)\nassert.deepStrictEqual(SemigroupEqv.combine(false, true), false)\nassert.deepStrictEqual(SemigroupEqv.combine(false, false), true)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupEqv: semigroup.Semigroup<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L123"
   },
   {
     "_tag": "Constant",
@@ -896,7 +878,7 @@
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidEvery: monoid.Monoid<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L133"
   },
   {
     "_tag": "Constant",
@@ -912,7 +894,7 @@
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidSome: monoid.Monoid<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -928,7 +910,7 @@
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidXor: monoid.Monoid<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L137"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -944,7 +926,7 @@
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidEqv: monoid.Monoid<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L163"
   },
   {
     "_tag": "Constant",
@@ -1944,15 +1926,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupSum",
-    "description": "`number` semigroup under addition.",
+    "description": "`number` semigroup under addition.\n\n**Example**\n\n```ts\nimport { SemigroupSum } from \"@effect/typeclass/data/Number\"\n\nconsole.log(SemigroupSum.combine(2, 3))\n// 5\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupSum } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupSum.combine(2, 3), 5)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupSum: semigroup.Semigroup<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -1962,15 +1942,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupMultiply",
-    "description": "`number` semigroup under multiplication.",
+    "description": "`number` semigroup under multiplication.\n\n**Example**\n\n```ts\nimport { SemigroupMultiply } from \"@effect/typeclass/data/Number\"\n\nconsole.log(SemigroupMultiply.combine(2, 3))\n// 6\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupMultiply } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMultiply.combine(2, 3), 6)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMultiply: semigroup.Semigroup<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -1980,15 +1958,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupMin",
-    "description": "A `Semigroup` that uses the minimum between two values.",
+    "description": "A `Semigroup` that uses the minimum between two values.\n\n**Example**\n\n```ts\nimport { SemigroupMin } from \"@effect/typeclass/data/Number\"\n\nconsole.log(SemigroupMin.combine(2, 3))\n// 2\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupMin } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMin.combine(2, 3), 2)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMin: semigroup.Semigroup<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -1998,15 +1974,13 @@
     },
     "project": "@effect/typeclass",
     "name": "SemigroupMax",
-    "description": "A `Semigroup` that uses the maximum between two values.",
+    "description": "A `Semigroup` that uses the maximum between two values.\n\n**Example**\n\n```ts\nimport { SemigroupMax } from \"@effect/typeclass/data/Number\"\n\nconsole.log(SemigroupMax.combine(2, 3))\n// 3\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { SemigroupMax } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(SemigroupMax.combine(2, 3), 3)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const SemigroupMax: semigroup.Semigroup<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -2016,15 +1990,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidSum",
-    "description": "`number` monoid under addition.\n\nThe `empty` value is `0`.",
+    "description": "`number` monoid under addition.\n\nThe `empty` value is `0`.\n\n**Example**\n\n```ts\nimport { MonoidSum } from \"@effect/typeclass/data/Number\"\n\nconsole.log(MonoidSum.combine(2, 3))\n// 5\nconsole.log(MonoidSum.combine(2, MonoidSum.empty))\n// 2\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidSum } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidSum.combine(2, 3), 5)\nassert.deepStrictEqual(MonoidSum.combine(2, MonoidSum.empty), 2)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidSum: monoid.Monoid<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L115"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -2034,15 +2006,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidMultiply",
-    "description": "`number` monoid under multiplication.\n\nThe `empty` value is `1`.",
+    "description": "`number` monoid under multiplication.\n\nThe `empty` value is `1`.\n\n**Example**\n\n```ts\nimport { MonoidMultiply } from \"@effect/typeclass/data/Number\"\n\nconsole.log(MonoidMultiply.combine(2, 3))\n// 6\nconsole.log(MonoidMultiply.combine(2, MonoidMultiply.empty))\n// 2\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidMultiply } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMultiply.combine(2, 3), 6)\nassert.deepStrictEqual(MonoidMultiply.combine(2, MonoidMultiply.empty), 2)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidMultiply: monoid.Monoid<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L142"
   },
   {
     "_tag": "Constant",
@@ -2052,15 +2022,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidMin",
-    "description": "A `Monoid` that uses the minimum between two values.\n\nThe `empty` value is `-Infinity`.",
+    "description": "A `Monoid` that uses the minimum between two values.\n\nThe `empty` value is `-Infinity`.\n\n**Example**\n\n```ts\nimport { MonoidMin } from \"@effect/typeclass/data/Number\"\n\nconsole.log(MonoidMin.combine(2, 3))\n// 2\nconsole.log(MonoidMin.combine(2, MonoidMin.empty))\n// 2\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidMin } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMin.combine(2, 3), 2)\nassert.deepStrictEqual(MonoidMin.combine(2, MonoidMin.empty), 2)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidMin: monoid.Monoid<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L163"
   },
   {
     "_tag": "Constant",
@@ -2070,15 +2038,13 @@
     },
     "project": "@effect/typeclass",
     "name": "MonoidMax",
-    "description": "A `Monoid` that uses the maximum between two values.\n\nThe `empty` value is `Infinity`.",
+    "description": "A `Monoid` that uses the maximum between two values.\n\nThe `empty` value is `Infinity`.\n\n**Example**\n\n```ts\nimport { MonoidMax } from \"@effect/typeclass/data/Number\"\n\nconsole.log(MonoidMax.combine(2, 3))\n// 3\nconsole.log(MonoidMax.combine(2, MonoidMax.empty))\n// 2\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { MonoidMax } from \"@effect/typeclass/data/Number\"\n\nassert.deepStrictEqual(MonoidMax.combine(2, 3), 3)\nassert.deepStrictEqual(MonoidMax.combine(2, MonoidMax.empty), 2)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const MonoidMax: monoid.Monoid<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -2373,15 +2339,13 @@
     },
     "project": "@effect/typeclass",
     "name": "Semigroup",
-    "description": "`Semigroup` instance for `Ordering`, returns the left-most non-zero `Ordering`.",
+    "description": "`Semigroup` instance for `Ordering`, returns the left-most non-zero `Ordering`.\n\n**Example**\n\n```ts\nimport { Semigroup } from \"@effect/typeclass/data/Ordering\"\n\nconsole.log(Semigroup.combine(0, -1))\n// -1\nconsole.log(Semigroup.combine(0, 1))\n// 1\nconsole.log(Semigroup.combine(1, -1))\n// 1\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Semigroup } from \"@effect/typeclass/data/Ordering\"\n\nassert.deepStrictEqual(Semigroup.combine(0, -1), -1)\nassert.deepStrictEqual(Semigroup.combine(0, 1), 1)\nassert.deepStrictEqual(Semigroup.combine(1, -1), 1)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const Semigroup: semigroup.Semigroup<Ordering>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -2391,15 +2355,13 @@
     },
     "project": "@effect/typeclass",
     "name": "Monoid",
-    "description": "`Monoid` instance for `Ordering`, returns the left-most non-zero `Ordering`.\n\nThe `empty` value is `0`.",
+    "description": "`Monoid` instance for `Ordering`, returns the left-most non-zero `Ordering`.\n\nThe `empty` value is `0`.\n\n**Example**\n\n```ts\nimport { Monoid } from \"@effect/typeclass/data/Ordering\"\n\nconsole.log(Monoid.combine(Monoid.empty, -1))\n// -1\nconsole.log(Monoid.combine(Monoid.empty, 1))\n// 1\nconsole.log(Monoid.combine(1, -1))\n// 1\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Monoid } from \"@effect/typeclass/data/Ordering\"\n\nassert.deepStrictEqual(Monoid.combine(Monoid.empty, -1), -1)\nassert.deepStrictEqual(Monoid.combine(Monoid.empty, 1), 1)\nassert.deepStrictEqual(Monoid.combine(1, -1), 1)\n```"
-    ],
+    "examples": [],
     "since": "0.24.0",
     "category": "instances",
     "signature": "declare const Monoid: monoid.Monoid<Ordering>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -2754,15 +2716,13 @@
     },
     "project": "@effect/typeclass",
     "name": "getSemigroupUnion",
-    "description": "A `Semigroup` that creates a union of two records.\n\nThis `Semigroup` takes two records and combines them into a single record.\nIf a key exists in both records, the provided `Semigroup` instance is used to combine the values for that key.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nFor example, when using the `MonoidSum`, values for matching keys will be summed.",
+    "description": "A `Semigroup` that creates a union of two records.\n\nThis `Semigroup` takes two records and combines them into a single record.\nIf a key exists in both records, the provided `Semigroup` instance is used to combine the values for that key.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nFor example, when using the `MonoidSum`, values for matching keys will be summed.\n\n**Example**\n\n```ts\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupUnion } from \"@effect/typeclass/data/Record\"\n\nconsole.log(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }))\n// { a: 2, b: 3 }\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupUnion } from \"@effect/typeclass/data/Record\"\n\nassert.deepStrictEqual(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })\n```"
-    ],
+    "examples": [],
     "since": "0.29.4",
     "category": "instances",
     "signature": "declare const getSemigroupUnion: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L229"
   },
   {
     "_tag": "Function",
@@ -2772,15 +2732,13 @@
     },
     "project": "@effect/typeclass",
     "name": "getMonoidUnion",
-    "description": "A `Monoid` that creates a union of two records.\n\nIt allows combining two records where values for matching keys are combined using the provided `Monoid` instance.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nThe `empty` value for this `Monoid` is an empty record `{}`.",
+    "description": "A `Monoid` that creates a union of two records.\n\nIt allows combining two records where values for matching keys are combined using the provided `Monoid` instance.\nIf a key exists in only one of the records, that key-value pair is included as is in the resulting record.\n\nThe `empty` value for this `Monoid` is an empty record `{}`.\n\n**Example**\n\n```ts\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getMonoidUnion } from \"@effect/typeclass/data/Record\"\n\nconst monoid = getMonoidUnion(NumberInstances.MonoidSum)\n\nconsole.log(monoid.combine({ a: 1 }, { a: 1, b: 3 }))\n// { a: 2, b: 3 }\n\nconsole.log(monoid.combine({ a: 1 }, monoid.empty))\n// { a: 1 }\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getMonoidUnion } from \"@effect/typeclass/data/Record\"\n\nconst monoid = getMonoidUnion(NumberInstances.MonoidSum)\n\nassert.deepStrictEqual(monoid.combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })\nassert.deepStrictEqual(monoid.combine({ a: 1 }, monoid.empty), { a: 1 })\n```"
-    ],
+    "examples": [],
     "since": "0.29.4",
     "category": "instances",
     "signature": "declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L256"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L260"
   },
   {
     "_tag": "Function",
@@ -2790,15 +2748,13 @@
     },
     "project": "@effect/typeclass",
     "name": "getSemigroupIntersection",
-    "description": "A `Semigroup` that creates an intersection of two records.\n\nThis `Semigroup` takes two records and combines them into a new record containing only the keys that are present in both records.\nThe values for matching keys are combined using the provided `Semigroup` instance.",
+    "description": "A `Semigroup` that creates an intersection of two records.\n\nThis `Semigroup` takes two records and combines them into a new record containing only the keys that are present in both records.\nThe values for matching keys are combined using the provided `Semigroup` instance.\n\n**Example**\n\n```ts\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupIntersection } from \"@effect/typeclass/data/Record\"\n\nconsole.log(getSemigroupIntersection(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }))\n// { a: 2 }\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport * as NumberInstances from \"@effect/typeclass/data/Number\"\nimport { getSemigroupIntersection } from \"@effect/typeclass/data/Record\"\n\nassert.deepStrictEqual(getSemigroupIntersection(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2 })\n```"
-    ],
+    "examples": [],
     "since": "0.29.4",
     "category": "instances",
     "signature": "declare const getSemigroupIntersection: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L284"
   },
   {
     "_tag": "Constant",

@@ -17,6 +17,6 @@ logging or combined error handling.
 declare const failures: <E>(self: Cause<E>) => Chunk.Chunk<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L817)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L818)
 
 Since v2.0.0

@@ -32,6 +32,6 @@ The options parameter provides handlers for:
 declare const match: { <Z, E>(options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): (self: Cause<E>) => Z; <Z, E>(self: Cause<E>, options: { readonly onEmpty: Z; readonly onFail: (error: E) => Z; readonly onDie: (defect: unknown) => Z; readonly onInterrupt: (fiberId: FiberId.FiberId) => Z; readonly onSequential: (left: Z, right: Z) => Z; readonly onParallel: (left: Z, right: Z) => Z; }): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1232)
 
 Since v2.0.0

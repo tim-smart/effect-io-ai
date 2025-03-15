@@ -20,6 +20,6 @@ console.log(result) // [[1, 2, 3], 4]
 declare const unappend: <A>(self: NonEmptyReadonlyArray<A>) => [arrayWithoutLastElement: Array<A>, lastElement: A]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L672)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L669)
 
 Since v2.0.0

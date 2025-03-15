@@ -32,7 +32,7 @@ const program = Effect.withConfigProvider(customProvider)(
   })
 )
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output:
 // Config value: custom-value
 ```
@@ -43,6 +43,6 @@ const program = Effect.withConfigProvider(customProvider)(
 declare const withConfigProvider: { (provider: ConfigProvider): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, provider: ConfigProvider): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7339)
 
 Since v2.0.0

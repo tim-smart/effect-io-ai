@@ -20,6 +20,6 @@ console.log(result) // [ <3 empty items> ]
 declare const allocate: <A = never>(n: number) => Array<A | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L77)
 
 Since v2.0.0

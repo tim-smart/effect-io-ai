@@ -26,10 +26,9 @@ behavior of the returned effect.
 Use `Effect.async` when dealing with APIs that use callback-style instead of
 `async/await` or `Promise`.
 
-**Example**
+**Example** (Wrapping a Callback API)
 
 ```ts
-// Title: Wrapping a Callback API
 import { Effect } from "effect"
 import * as NodeFS from "node:fs"
 
@@ -51,10 +50,9 @@ const readFile = (filename: string) =>
 const program = readFile("example.txt")
 ```
 
-**Example**
+**Example** (Handling Interruption with Cleanup)
 
 ```ts
-// Title: Handling Interruption with Cleanup
 import { Effect, Fiber } from "effect"
 import * as NodeFS from "node:fs"
 
@@ -89,15 +87,14 @@ const program = Effect.gen(function* () {
 })
 
 // Run the program
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output:
 // Cleaning up example.txt
 ```
 
-**Example**
+**Example** (Handling Interruption with AbortSignal)
 
 ```ts
-// Title: Handling Interruption with AbortSignal
 import { Effect, Fiber } from "effect"
 
 // A task that supports interruption using AbortSignal
@@ -123,7 +120,7 @@ const program = Effect.gen(function* () {
 })
 
 // Run the program
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output:
 // Abort signal received
 ```
@@ -134,6 +131,6 @@ const program = Effect.gen(function* () {
 declare const async: <A, E = never, R = never>(resume: (callback: (_: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>, blockingOn?: FiberId.FiberId) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2469)
 
 Since v2.0.0

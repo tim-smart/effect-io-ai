@@ -27,14 +27,13 @@ whether it succeeded or failed, and want to work with this result using
 that rely on promises but need more detailed error handling than a simple
 rejection.
 
-**Example**
+**Example** (Handling Results as Exit)
 
 ```ts
-// Title: Handling Results as Exit
 import { Effect } from "effect"
 
 // Execute a successful effect and get the Exit result as a Promise
-// Effect.runPromiseExit(Effect.succeed(1)).then(console.log)
+Effect.runPromiseExit(Effect.succeed(1)).then(console.log)
 // Output:
 // {
 //   _id: "Exit",
@@ -43,7 +42,7 @@ import { Effect } from "effect"
 // }
 
 // Execute a failing effect and get the Exit result as a Promise
-// Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
+Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 // Output:
 // {
 //   _id: "Exit",
@@ -62,6 +61,6 @@ import { Effect } from "effect"
 declare const runPromiseExit: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11946)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12125)
 
 Since v2.0.0

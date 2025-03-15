@@ -28,10 +28,9 @@ is required. This is particularly useful for optimizing expensive
 computations, managing circular dependencies, or resolving type inference
 issues.
 
-**Example**
+**Example** (Lazy Evaluation with Side Effects)
 
 ```ts
-// Title: Lazy Evaluation with Side Effects
 import { Effect } from "effect"
 
 let i = 0
@@ -47,10 +46,9 @@ console.log(Effect.runSync(good)) // Output: 1
 console.log(Effect.runSync(good)) // Output: 2
 ```
 
-**Example**
+**Example** (Recursive Fibonacci)
 
 ```ts
-// Title: Recursive Fibonacci
 import { Effect } from "effect"
 
 const blowsUp = (n: number): Effect.Effect<number> =>
@@ -58,7 +56,7 @@ const blowsUp = (n: number): Effect.Effect<number> =>
     ? Effect.succeed(1)
     : Effect.zipWith(blowsUp(n - 1), blowsUp(n - 2), (a, b) => a + b)
 
-// console.log(Effect.runSync(blowsUp(32)))
+console.log(Effect.runSync(blowsUp(32)))
 // crash: JavaScript heap out of memory
 
 const allGood = (n: number): Effect.Effect<number> =>
@@ -74,10 +72,9 @@ console.log(Effect.runSync(allGood(32)))
 // Output: 3524578
 ```
 
-**Example**
+**Example** (Using Effect.suspend to Help TypeScript Infer Types)
 
 ```ts
-// Title: Using Effect.suspend to Help TypeScript Infer Types
 import { Effect } from "effect"
 
 //   Without suspend, TypeScript may struggle with type inference.
@@ -106,6 +103,6 @@ const withSuspend = (a: number, b: number) =>
 declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3268)
 
 Since v2.0.0

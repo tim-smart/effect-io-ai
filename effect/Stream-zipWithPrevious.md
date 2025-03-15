@@ -13,7 +13,7 @@ import { Chunk, Effect, Stream } from "effect"
 
 const stream = Stream.zipWithPrevious(Stream.make(1, 2, 3, 4))
 
-// Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.toArray(chunk)))
+Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.toArray(chunk)))
 // [
 //   [ { _id: 'Option', _tag: 'None' }, 1 ],
 //   [ { _id: 'Option', _tag: 'Some', value: 1 }, 2 ],

@@ -22,7 +22,7 @@ const s2 = Stream.make(4, 5, 6).pipe(
 
 const stream = Stream.merge(s1, s2)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 4, 2, 3, 5, 6 ] }
 ```
 

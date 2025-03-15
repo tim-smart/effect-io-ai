@@ -18,6 +18,6 @@ helpful for analyzing only the irrecoverable portion of the error.
 declare const stripFailures: <E>(self: Cause<E>) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L963)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L964)
 
 Since v2.0.0

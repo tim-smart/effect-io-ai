@@ -11,6 +11,6 @@ Constructs a config for a sequence of values.
 declare const hashSet: <A>(config: Config<A>, name?: string) => Config<HashSet.HashSet<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L368)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L369)
 
 Since v2.0.0

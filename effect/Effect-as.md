@@ -17,16 +17,15 @@ to ensure that the effect completes successfully with a specific constant
 result instead. For instance, you can replace the value produced by a
 computation with a predefined value, ignoring what was calculated before.
 
-**Example**
+**Example** (Replacing a Value)
 
 ```ts
-// Title: Replacing a Value
 import { pipe, Effect } from "effect"
 
 // Replaces the value 5 with the constant "new value"
 const program = pipe(Effect.succeed(5), Effect.as("new value"))
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output: "new value"
 ```
 
@@ -36,6 +35,6 @@ const program = pipe(Effect.succeed(5), Effect.as("new value"))
 declare const as: { <B>(value: B): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, value: B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4947)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5012)
 
 Since v2.0.0

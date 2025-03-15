@@ -28,10 +28,9 @@ The function provided to `catchSomeDefect` acts as a filter and a handler for de
   an `Option.some` containing the recovery logic.
 - If the defect does not match, the function returns `Option.none`, allowing the defect to propagate.
 
-**Example**
+**Example** (Handling Specific Defects)
 
 ```ts
-// Title: Handling Specific Defects
 import { Effect, Cause, Option, Console } from "effect"
 
 // Simulating a runtime error
@@ -50,7 +49,7 @@ const program = Effect.catchSomeDefect(task, (defect) => {
 
 // Since we are only catching IllegalArgumentException
 // we will get an Exit.Failure because we simulated a runtime error.
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -69,6 +68,6 @@ const program = Effect.catchSomeDefect(task, (defect) => {
 declare const catchSomeDefect: { <A2, E2, R2>(pf: (defect: unknown) => Option.Option<Effect<A2, E2, R2>>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, pf: (defect: unknown) => Option.Option<Effect<A2, E2, R2>>): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3744)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3796)
 
 Since v2.0.0

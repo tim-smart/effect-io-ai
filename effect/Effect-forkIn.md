@@ -14,16 +14,13 @@ which takes the target scope as an argument.
 
 The fiber will be interrupted when the scope is closed.
 
-**Example**
+**Example** (Forking a Fiber in a Specific Scope)
+
+In this example, the child fiber is forked into the outerScope,
+allowing it to outlive the inner scope but still be terminated
+when the outerScope is closed.
 
 ```ts
-// Title: Forking a Fiber in a Specific Scope
-//
-// In this example, the child fiber is forked into the outerScope,
-// allowing it to outlive the inner scope but still be terminated
-// when the outerScope is closed.
-//
-
 import { Console, Effect, Schedule } from "effect"
 
 // Child fiber that logs a message repeatedly every second
@@ -57,7 +54,7 @@ const program = Effect.scoped(
   })
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // child: still running!
 // child: still running!
@@ -78,6 +75,6 @@ const program = Effect.scoped(
 declare const forkIn: { (scope: Scope.Scope): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, scope: Scope.Scope): Effect<Fiber.RuntimeFiber<A, E>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6277)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6403)
 
 Since v2.0.0

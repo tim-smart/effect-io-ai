@@ -12,10 +12,9 @@ no defined patterns match. It acts as a default case, similar to the
 `default` clause in a `switch` statement or the final `else` in an `if-else`
 chain.
 
-**Example**
+**Example** (Providing a Default Value When No Patterns Match)
 
 ```ts
-// Title: Providing a Default Value When No Patterns Match
 import { Match } from "effect"
 
 // Create a matcher for string or number values

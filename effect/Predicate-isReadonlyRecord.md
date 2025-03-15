@@ -26,6 +26,6 @@ assert.deepStrictEqual(isReadonlyRecord(undefined), false)
 declare const isReadonlyRecord: (input: unknown) => input is { readonly [x: string | symbol]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L660)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L664)
 
 Since v2.0.0

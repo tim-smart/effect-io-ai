@@ -37,6 +37,6 @@ logging.
 declare const squash: <E>(self: Cause<E>) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1118)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1119)
 
 Since v2.0.0

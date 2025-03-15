@@ -15,6 +15,6 @@ export interface Variance<out E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L271)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L272)
 
 Since v2.0.0

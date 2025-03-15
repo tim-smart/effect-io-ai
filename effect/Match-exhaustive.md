@@ -8,10 +8,9 @@ ensuring that all possible cases are accounted for. If any case is missing,
 TypeScript will produce a type error. This is particularly useful when
 working with unions, as it helps prevent unintended gaps in pattern matching.
 
-**Example**
+**Example** (Ensuring All Cases Are Covered)
 
 ```ts
-// Title: Ensuring All Cases Are Covered
 import { Match } from "effect"
 
 // Create a matcher for string or number values

@@ -21,6 +21,6 @@ computations.
 declare const fail: <E>(error: E) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L590)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L591)
 
 Since v2.0.0

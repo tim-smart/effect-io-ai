@@ -11,6 +11,6 @@ Defines a schema that attempts to convert a `string` to a `TimeZone.Named` insta
 declare class TimeZoneNamed
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6957)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7001)
 
 Since v3.10.0

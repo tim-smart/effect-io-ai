@@ -17,6 +17,6 @@ export interface YieldableError extends Pipeable, Inspectable, Readonly<Error> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L311)
 
 Since v2.0.0

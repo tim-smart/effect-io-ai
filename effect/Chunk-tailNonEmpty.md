@@ -11,6 +11,6 @@ Returns every elements after the first.
 declare const tailNonEmpty: <A>(self: NonEmptyChunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1121)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1123)
 
 Since v2.0.0

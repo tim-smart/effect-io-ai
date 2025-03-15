@@ -25,7 +25,7 @@ const program = application.pipe(
   )
 )
 
-// Effect.runPromise(Stream.runCollect(program)).then(console.log)
+Effect.runPromise(Stream.runCollect(program)).then(console.log)
 // Application Logic.
 // Deleting dir: tmp
 // Temporary directory was deleted.

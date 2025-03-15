@@ -11,6 +11,6 @@ Returns the last element of this chunk if it exists.
 declare const last: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L859)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L861)
 
 Since v2.0.0

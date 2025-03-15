@@ -18,7 +18,7 @@ const program = Effect.clockWith((clock) =>
   )
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Example Output:
 // Current time is: 1735484929744
 ```
@@ -29,6 +29,6 @@ const program = Effect.clockWith((clock) =>
 declare const clockWith: <A, E, R>(f: (clock: Clock.Clock) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6610)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6736)
 
 Since v2.0.0

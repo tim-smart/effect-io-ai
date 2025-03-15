@@ -22,6 +22,6 @@ console.log(result) // [1, 2, 3]
 declare const dropRight: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L951)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L948)
 
 Since v2.0.0

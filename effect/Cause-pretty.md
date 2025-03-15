@@ -25,6 +25,6 @@ rendered. By default, it includes essential details of all errors in the
 declare const pretty: <E>(cause: Cause<E>, options?: { readonly renderErrorCause?: boolean | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1505)
 
 Since v2.0.0

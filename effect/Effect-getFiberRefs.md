@@ -12,6 +12,6 @@ effect.
 declare const getFiberRefs: Effect<FiberRefs.FiberRefs, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10219)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10381)
 
 Since v2.0.0

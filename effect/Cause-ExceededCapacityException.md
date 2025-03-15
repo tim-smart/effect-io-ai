@@ -14,6 +14,6 @@ export interface ExceededCapacityException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L411)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L412)
 
 Since v3.5.0

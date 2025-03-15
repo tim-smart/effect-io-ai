@@ -17,9 +17,9 @@ console.log(Array.fromOption(Option.none())) // []
 **Signature**
 
 ```ts
-declare const fromOption: <A>(self: Option<A>) => Array<A>
+declare const fromOption: <A>(self: Option.Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L221)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L218)
 
 Since v2.0.0

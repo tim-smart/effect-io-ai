@@ -39,7 +39,7 @@ const program = Effect.gen(function*() {
   yield* Console.log(`Results: ${results.join(", ")}`)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // Task completed
 // Task completed
@@ -53,6 +53,6 @@ const program = Effect.gen(function*() {
 declare const replicateEffect: { (n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>; (n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<Array<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2096)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2135)
 
 Since v2.0.0

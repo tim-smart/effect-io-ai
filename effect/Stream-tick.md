@@ -20,7 +20,7 @@ const log = (message: string) =>
 
 const stream = Stream.tick("1 seconds").pipe(Stream.tap(() => log("tick")))
 
-// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
 // tick after 4ms
 // tick after 1003ms
 // tick after 1001ms

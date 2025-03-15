@@ -20,9 +20,9 @@ console.log(result) // [4, 16]
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B>(f: (a: A, i: number) => Option<B>): (self: Iterable<A>) => Array<B>; <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option<B>): Array<B>; }
+declare const filterMap: { <A, B>(f: (a: A, i: number) => Option.Option<B>): (self: Iterable<A>) => Array<B>; <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option.Option<B>): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2409)
 
 Since v2.0.0

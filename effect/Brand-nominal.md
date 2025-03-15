@@ -18,7 +18,8 @@ type UserId = number & Brand.Brand<"UserId">
 
 const UserId = Brand.nominal<UserId>()
 
-assert.strictEqual(UserId(1), 1)
+console.log(UserId(1))
+// 1
 ```
 
 **Signature**
@@ -27,6 +28,6 @@ assert.strictEqual(UserId(1), 1)
 declare const nominal: <A extends Brand<any>>() => Brand.Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L264)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L269)
 
 Since v2.0.0

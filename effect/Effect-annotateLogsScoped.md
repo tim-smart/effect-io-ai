@@ -30,7 +30,7 @@ const program = Effect.gen(function*() {
   yield* Effect.log("message2") // Annotation is applied to this log
 }).pipe(Effect.scoped, Effect.andThen(Effect.log("no annotations again")))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=INFO fiber=#0 message="no annotations"
 // timestamp=... level=INFO fiber=#0 message=message1 key=value
 // timestamp=... level=INFO fiber=#0 message=message2 key=value
@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope.Scope>; (values: Record<string, unknown>): Effect<void, never, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10920)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11089)
 
 Since v3.1.0

@@ -26,6 +26,6 @@ interruptions from a `Cause` while discarding unrelated parts.
 declare const filter: { <E, EB extends E>(refinement: Refinement<Cause<NoInfer<E>>, Cause<EB>>): (self: Cause<E>) => Cause<EB>; <E>(predicate: Predicate<Cause<NoInfer<E>>>): (self: Cause<E>) => Cause<E>; <E, EB extends E>(self: Cause<E>, refinement: Refinement<Cause<E>, Cause<EB>>): Cause<EB>; <E>(self: Cause<E>, predicate: Predicate<Cause<E>>): Cause<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1198)
 
 Since v2.0.0

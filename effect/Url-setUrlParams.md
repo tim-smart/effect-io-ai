@@ -34,6 +34,6 @@ console.log(updatedUrl.toString())
 declare const setUrlParams: { (urlParams: UrlParams.UrlParams): (url: URL) => URL; (url: URL, urlParams: UrlParams.UrlParams): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L246)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L249)
 
 Since v1.0.0

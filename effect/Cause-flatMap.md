@@ -21,6 +21,6 @@ types while preserving or combining cause information.
 declare const flatMap: { <E, E2>(f: (e: E) => Cause<E2>): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => Cause<E2>): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1036)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1037)
 
 Since v2.0.0

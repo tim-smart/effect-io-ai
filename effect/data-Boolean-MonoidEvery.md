@@ -13,6 +13,6 @@ The `empty` value is `true`.
 declare const MonoidEvery: monoid.Monoid<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L133)
 
 Since v0.24.0

@@ -11,6 +11,6 @@ Checks if a value is a `Cause`.
 declare const isCause: (u: unknown) => u is Cause<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L662)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L663)
 
 Since v2.0.0

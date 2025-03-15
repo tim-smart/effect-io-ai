@@ -12,6 +12,6 @@ or returning the input if the index is out of bounds.
 declare const modify: { <A, B>(i: number, f: (a: A) => B): (self: Chunk<A>) => Chunk<A | B>; <A, B>(self: Chunk<A>, i: number, f: (a: A) => B): Chunk<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1262)
 
 Since v2.0.0

@@ -13,14 +13,16 @@ The `empty` value for this `Monoid` is an empty record `{}`.
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getMonoidUnion } from "@effect/typeclass/data/Record"
 
 const monoid = getMonoidUnion(NumberInstances.MonoidSum)
 
-assert.deepStrictEqual(monoid.combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })
-assert.deepStrictEqual(monoid.combine({ a: 1 }, monoid.empty), { a: 1 })
+console.log(monoid.combine({ a: 1 }, { a: 1, b: 3 }))
+// { a: 2, b: 3 }
+
+console.log(monoid.combine({ a: 1 }, monoid.empty))
+// { a: 1 }
 ```
 
 **Signature**
@@ -29,6 +31,6 @@ assert.deepStrictEqual(monoid.combine({ a: 1 }, monoid.empty), { a: 1 })
 declare const getMonoidUnion: <A>(value: monoid.Monoid<A>) => monoid.Monoid<Record.ReadonlyRecord<string, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L260)
 
 Since v0.29.4

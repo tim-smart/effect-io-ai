@@ -11,6 +11,6 @@ Decodes a base64 (URL) encoded string into a UTF-8 string.
 declare const StringFromBase64Url: Schema<string, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6289)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6333)
 
 Since v3.10.0

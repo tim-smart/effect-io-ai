@@ -47,7 +47,7 @@ const program = Effect.gen(function* () {
 })
 
 // We get an Exit.Success because we caught all failures
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // RuntimeException defect caught: Boom!
 // {
@@ -68,6 +68,6 @@ const program = Effect.gen(function* () {
 declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8067)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8213)
 
 Since v2.0.0

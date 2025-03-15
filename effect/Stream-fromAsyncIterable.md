@@ -20,7 +20,7 @@ const stream = Stream.fromAsyncIterable(
   (e) => new Error(String(e)) // Error Handling
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 2 ] }
 ```
 

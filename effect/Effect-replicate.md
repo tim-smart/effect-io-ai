@@ -29,7 +29,7 @@ const program = Effect.gen(function*() {
   }
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // Hello, World!
 // Hello, World!
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const replicate: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Array<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, n: number): Array<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2044)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2082)
 
 Since v2.0.0

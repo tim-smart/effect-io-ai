@@ -32,6 +32,6 @@ Effect.gen(function* () {
 declare const schemaStruct: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L296)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L298)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Checks if a given unknown value is a `NoSuchElementException`.
 declare const isNoSuchElementException: (u: unknown) => u is NoSuchElementException
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1381)
 
 Since v2.0.0

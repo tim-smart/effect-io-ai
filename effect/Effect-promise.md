@@ -25,10 +25,9 @@ wrapped `Promise` API.
 
 Use this function when you are sure the operation will not reject.
 
-**Example**
+**Example** (Delayed Message)
 
 ```ts
-// Title: Delayed Message
 import { Effect } from "effect"
 
 const delay = (message: string) =>
@@ -56,6 +55,6 @@ const program = delay("Async operation completed successfully!")
 declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3065)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3112)
 
 Since v2.0.0

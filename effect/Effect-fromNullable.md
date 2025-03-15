@@ -34,7 +34,7 @@ import { Effect } from "effect"
 //      ▼
 const maybe1 = Effect.fromNullable(1)
 
-// Effect.runPromiseExit(maybe1).then(console.log)
+Effect.runPromiseExit(maybe1).then(console.log)
 // Output:
 // { _id: 'Exit', _tag: 'Success', value: 1 }
 
@@ -42,7 +42,7 @@ const maybe1 = Effect.fromNullable(1)
 //      ▼
 const maybe2 = Effect.fromNullable(null as number | null)
 
-// Effect.runPromiseExit(maybe2).then(console.log)
+Effect.runPromiseExit(maybe2).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -61,6 +61,6 @@ const maybe2 = Effect.fromNullable(null as number | null)
 declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12966)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13159)
 
 Since v2.0.0

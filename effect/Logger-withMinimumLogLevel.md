@@ -13,7 +13,7 @@ import { Effect, Logger, LogLevel } from "effect"
 
 const program = Effect.logDebug("message1").pipe(Logger.withMinimumLogLevel(LogLevel.Debug))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=DEBUG fiber=#0 message=message1
 ```
 

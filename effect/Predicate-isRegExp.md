@@ -21,6 +21,6 @@ assert.deepStrictEqual(Predicate.isRegExp("a"), false)
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L707)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L711)
 
 Since v3.9.0

@@ -18,6 +18,6 @@ recoverable path or if only unhandled issues remain.
 declare const failureOrCause: <E>(self: Cause<E>) => Either.Either<Cause<never>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L874)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L875)
 
 Since v2.0.0

@@ -25,7 +25,9 @@ const Positive = Brand.refined<Positive>(
 
 const PositiveInt = Brand.all(Int, Positive)
 
-assert.strictEqual(PositiveInt(1), 1)
+console.log(PositiveInt(1))
+// 1
+
 assert.throws(() => PositiveInt(1.1))
 ```
 
@@ -35,6 +37,6 @@ assert.throws(() => PositiveInt(1.1))
 declare const all: <Brands extends readonly [Brand.Constructor<any>, ...Array<Brand.Constructor<any>>]>(...brands: Brand.EnsureCommonBase<Brands>) => Brand.Constructor<Types.UnionToIntersection<{ [B in keyof Brands]: Brand.FromConstructor<Brands[B]>; }[number]> extends infer X extends Brand<any> ? X : Brand<any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L305)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L313)
 
 Since v2.0.0

@@ -16,7 +16,7 @@ const s3 = Stream.make(6, 7, 8)
 
 const stream = Stream.concatAll(Chunk.make(s1, s2, s3))
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // {
 //   _id: 'Chunk',
 //   values: [

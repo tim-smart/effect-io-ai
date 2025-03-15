@@ -17,9 +17,9 @@ console.log(result) // Option.some(2)
 **Signature**
 
 ```ts
-declare const findFirstIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option<number>; }
+declare const findFirstIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L998)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L995)
 
 Since v2.0.0

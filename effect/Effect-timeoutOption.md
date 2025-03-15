@@ -38,7 +38,7 @@ const timedOutEffect = Effect.all([
   task.pipe(Effect.timeoutOption("1 second"))
 ])
 
-// Effect.runPromise(timedOutEffect).then(console.log)
+Effect.runPromise(timedOutEffect).then(console.log)
 // Output:
 // Start processing...
 // Processing complete.
@@ -63,6 +63,6 @@ timeout handlers.
 declare const timeoutOption: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<Option.Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6927)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7058)
 
 Since v3.1.0

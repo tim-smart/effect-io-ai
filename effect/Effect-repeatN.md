@@ -28,7 +28,7 @@ import { Effect, Console } from "effect"
 const action = Console.log("success")
 const program = Effect.repeatN(action, 2)
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 ```
 
 **Signature**
@@ -37,6 +37,6 @@ const program = Effect.repeatN(action, 2)
 declare const repeatN: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10035)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10196)
 
 Since v2.0.0

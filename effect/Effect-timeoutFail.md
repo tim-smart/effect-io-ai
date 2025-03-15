@@ -45,7 +45,7 @@ const program = task.pipe(
   })
 )
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Start processing...
 // {
@@ -72,6 +72,6 @@ timeout handlers.
 declare const timeoutFail: { <E1>(options: { readonly onTimeout: LazyArg<E1>; readonly duration: Duration.DurationInput; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E1 | E, R>; <A, E, R, E1>(self: Effect<A, E, R>, options: { readonly onTimeout: LazyArg<E1>; readonly duration: Duration.DurationInput; }): Effect<A, E | E1, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6996)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7128)
 
 Since v2.0.0

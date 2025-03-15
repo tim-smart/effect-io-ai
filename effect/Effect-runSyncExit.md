@@ -27,10 +27,9 @@ Use this function when:
 
 Avoid using this function for effects that involve asynchronous operations, as it will fail with a `Die` cause.
 
-**Example**
+**Example** (Handling Results as Exit)
 
 ```ts
-// Title: Handling Results as Exit
 import { Effect } from "effect"
 
 console.log(Effect.runSyncExit(Effect.succeed(1)))
@@ -54,10 +53,9 @@ console.log(Effect.runSyncExit(Effect.fail("my error")))
 // }
 ```
 
-**Example**
+**Example** (Asynchronous Operation Resulting in Die)
 
 ```ts
-// Title: Asynchronous Operation Resulting in Die
 import { Effect } from "effect"
 
 console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
@@ -83,6 +81,6 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12285)
 
 Since v2.0.0

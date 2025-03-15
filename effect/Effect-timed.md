@@ -35,7 +35,7 @@ const program = Effect.gen(function*() {
   console.log(`Task completed in ${Duration.toMillis(duration)} ms with result: ${result}`)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: Task completed in 2003.749125 ms with result: some result
 ```
 
@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6786)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6915)
 
 Since v2.0.0

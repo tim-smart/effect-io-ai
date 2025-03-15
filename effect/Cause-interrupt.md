@@ -21,6 +21,6 @@ cancellations.
 declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L623)
 
 Since v2.0.0

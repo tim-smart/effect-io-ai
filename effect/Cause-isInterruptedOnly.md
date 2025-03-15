@@ -17,6 +17,6 @@ verifying purely "cancellation" scenarios.
 declare const isInterruptedOnly: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L803)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L804)
 
 Since v2.0.0

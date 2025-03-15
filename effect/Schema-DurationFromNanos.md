@@ -12,6 +12,6 @@ the value as the number of nanoseconds.
 declare class DurationFromNanos
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5870)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5914)
 
 Since v3.10.0

@@ -19,6 +19,6 @@ export interface IllegalArgumentException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L372)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L373)
 
 Since v2.0.0

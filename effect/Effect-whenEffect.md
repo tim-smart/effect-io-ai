@@ -19,10 +19,9 @@ This function is particularly useful when the decision to execute an effect
 depends on the result of another effect, such as a random value, a
 user-provided input, or a network request result.
 
-**Example**
+**Example** (Using an Effect as a Condition)
 
 ```ts
-// Title: Using an Effect as a Condition
 import { Effect, Random } from "effect"
 
 const randomIntOption = Random.nextInt.pipe(
@@ -45,6 +44,6 @@ console.log(Effect.runSync(randomIntOption))
 declare const whenEffect: { <E, R>(condition: Effect<boolean, E, R>): <A, E2, R2>(effect: Effect<A, E2, R2>) => Effect<Option.Option<A>, E | E2, R | R2>; <A, E2, R2, E, R>(self: Effect<A, E2, R2>, condition: Effect<boolean, E, R>): Effect<Option.Option<A>, E2 | E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8546)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8696)
 
 Since v2.0.0

@@ -21,10 +21,9 @@ the first one to succeed. It is commonly used in cases like timeouts,
 retries, or when you want to optimize for the faster response without
 worrying about the other effects.
 
-**Example**
+**Example** (All Tasks Succeed)
 
 ```ts
-// Title: All Tasks Succeed
 import { Effect, Console } from "effect"
 
 const task1 = Effect.succeed("task1").pipe(
@@ -46,17 +45,16 @@ const task3 = Effect.succeed("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // task1 done
 // task2 interrupted
 // task3 interrupted
 ```
 
-**Example**
+**Example** (One Task Fails, Two Tasks Succeed)
 
 ```ts
-// Title: One Task Fails, Two Tasks Succeed
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -78,16 +76,15 @@ const task3 = Effect.succeed("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // task3 done
 // task2 interrupted
 ```
 
-**Example**
+**Example** (All Tasks Fail)
 
 ```ts
-// Title: All Tasks Fail
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -109,7 +106,7 @@ const task3 = Effect.fail("task3").pipe(
 
 const program = Effect.raceAll([task1, task2, task3])
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -128,6 +125,6 @@ const program = Effect.raceAll([task1, task2, task3])
 declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9039)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9190)
 
 Since v2.0.0

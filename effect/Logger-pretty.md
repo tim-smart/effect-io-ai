@@ -18,7 +18,7 @@ const program = Effect.log("message1", "message2").pipe(
   Effect.withLogSpan("myspan")
 )
 
-// Effect.runFork(program.pipe(Effect.provide(Logger.pretty)))
+Effect.runFork(program.pipe(Effect.provide(Logger.pretty)))
 //         green --v                      v-- bold and cyan
 // [07:51:54.434] INFO (#0) myspan=1ms: message1
 //   message2

@@ -14,10 +14,9 @@ those that do not (evaluated to `false`).
 The faster stream may advance up to `bufferSize` elements ahead of the slower
 one.
 
-**Example**
+**Example** (Partitioning a Stream into Even and Odd Numbers)
 
 ```ts
-// Title: Partitioning a Stream into Even and Odd Numbers
 import { Effect, Stream } from "effect"
 
 const partition = Stream.range(1, 9).pipe(
@@ -32,7 +31,7 @@ const program = Effect.scoped(
   })
 )
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // { _id: 'Chunk', values: [ 1, 3, 5, 7, 9 ] }
 // { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
 ```

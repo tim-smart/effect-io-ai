@@ -16,10 +16,9 @@ This is useful for differentiating between different types of errors, such as
 regular failures, defects, or interruptions. You can provide specific
 handling logic for each failure type based on the cause.
 
-**Example**
+**Example** (Handling Different Failure Causes)
 
 ```ts
-// Title: Handling Different Failure Causes
 import { Effect } from "effect"
 
 const task: Effect.Effect<number, Error> = Effect.die("Uh oh!")
@@ -45,9 +44,8 @@ const program = Effect.matchCause(task, {
     `succeeded with ${value} value`
 })
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output: "Die: Uh oh!"
-
 ```
 
 **See**
@@ -62,6 +60,6 @@ handlers.
 declare const matchCause: { <E, A2, A, A3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10464)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10626)
 
 Since v2.0.0

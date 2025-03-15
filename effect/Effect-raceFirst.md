@@ -35,10 +35,9 @@ Effect.raceFirst(Effect.disconnect(task1), Effect.disconnect(task2))
 
 This allows both effects to complete independently while still terminating the losing effect in the background.
 
-**Example**
+**Example** (Both Tasks Succeed)
 
 ```ts
-// Title: Both Tasks Succeed
 import { Effect, Console } from "effect"
 
 const task1 = Effect.succeed("task1").pipe(
@@ -60,7 +59,7 @@ const program = Effect.raceFirst(task1, task2).pipe(
   Effect.tap(Console.log("more work..."))
 )
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task1 done
 // task2 interrupted
@@ -68,10 +67,9 @@ const program = Effect.raceFirst(task1, task2).pipe(
 // { _id: 'Exit', _tag: 'Success', value: 'task1' }
 ```
 
-**Example**
+**Example** (One Task Fails, One Succeeds)
 
 ```ts
-// Title: One Task Fails, One Succeeds
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -93,7 +91,7 @@ const program = Effect.raceFirst(task1, task2).pipe(
   Effect.tap(Console.log("more work..."))
 )
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task2 interrupted
 // {
@@ -103,10 +101,9 @@ const program = Effect.raceFirst(task1, task2).pipe(
 // }
 ```
 
-**Example**
+**Example** (Using Effect.disconnect for Quicker Return)
 
 ```ts
-// Title: Using Effect.disconnect for Quicker Return
 import { Effect, Console } from "effect"
 
 const task1 = Effect.succeed("task1").pipe(
@@ -130,7 +127,7 @@ const program = Effect.raceFirst(
   Effect.disconnect(task2)
 ).pipe(Effect.tap(Console.log("more work...")))
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // task1 done
 // more work...
@@ -144,6 +141,6 @@ const program = Effect.raceFirst(
 declare const raceFirst: { <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9330)
 
 Since v2.0.0

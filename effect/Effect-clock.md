@@ -16,7 +16,7 @@ const program = Effect.gen(function*() {
   console.log(`Current time in milliseconds: ${currentTime}`)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Example Output:
 // Current time in milliseconds: 1735484796134
 ```
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const clock: Effect<Clock.Clock, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6585)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6710)
 
 Since v2.0.0

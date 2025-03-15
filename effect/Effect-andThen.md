@@ -36,10 +36,9 @@ The second action can be:
 **Note:** `andThen` works well with both `Option` and `Either` types,
 treating them as effects.
 
-**Example**
+**Example** (Applying a Discount Based on Fetched Amount)
 
 ```ts
-// Title: Applying a Discount Based on Fetched Amount
 import { pipe, Effect } from "effect"
 
 // Function to apply a discount safely to a transaction amount
@@ -61,7 +60,7 @@ const result1 = pipe(
   Effect.flatMap((amount) => applyDiscount(amount, 5))
 )
 
-// Effect.runPromise(result1).then(console.log)
+Effect.runPromise(result1).then(console.log)
 // Output: 190
 
 // Using Effect.andThen
@@ -71,7 +70,7 @@ const result2 = pipe(
   Effect.andThen((amount) => applyDiscount(amount, 5))
 )
 
-// Effect.runPromise(result2).then(console.log)
+Effect.runPromise(result2).then(console.log)
 // Output: 190
 ```
 
@@ -81,6 +80,6 @@ const result2 = pipe(
 declare const andThen: { <A, X>(f: (a: NoInfer<A>) => X): <E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <X>(f: NotFunction<X>): <A, E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => X): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: NotFunction<X>): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8743)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8894)
 
 Since v2.0.0

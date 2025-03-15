@@ -20,6 +20,6 @@ console.log(result) // [2, 3, 4]
 declare const tailNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L753)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L750)
 
 Since v2.0.0

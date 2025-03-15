@@ -38,7 +38,7 @@ const program = Effect.reduceRight(
       .pipe(Effect.map((order) => acc + order.price))
 )
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // Order 4 processed
 // Order 3 processed
@@ -57,6 +57,6 @@ const program = Effect.reduceRight(
 declare const reduceRight: { <A, Z, R, E>(zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, R, E>(elements: Iterable<A>, zero: Z, f: (a: A, z: Z, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1936)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1972)
 
 Since v2.0.0

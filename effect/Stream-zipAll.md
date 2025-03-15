@@ -20,7 +20,7 @@ const stream = Stream.zipAll(Stream.make(1, 2, 3, 4, 5, 6), {
   defaultOther: "x"
 })
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: "Chunk", values: [ [ 1, "a" ], [ 2, "b" ], [ 3, "c" ], [ 4, "x" ], [ 5, "x" ], [ 6, "x" ] ] }
 ```
 

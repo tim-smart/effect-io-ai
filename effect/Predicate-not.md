@@ -24,6 +24,6 @@ assert.deepStrictEqual(isPositive(1), true)
 declare const not: <A>(self: Predicate<A>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L834)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L838)
 
 Since v2.0.0

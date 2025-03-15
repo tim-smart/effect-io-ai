@@ -21,6 +21,6 @@ expect specific input.
 declare const IllegalArgumentExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L121)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L122)
 
 Since v2.0.0

@@ -45,7 +45,7 @@ const runnable = Effect.provideService(program, Random, {
 })
 
 // Run successfully
-// Effect.runPromise(runnable)
+Effect.runPromise(runnable)
 // Example Output:
 // random number: 0.8241872233134417
 ```
@@ -60,6 +60,6 @@ const runnable = Effect.provideService(program, Random, {
 declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, service: NoInfer<S>): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7468)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7606)
 
 Since v2.0.0

@@ -21,10 +21,9 @@ Finalizers operate in conjunction with Effect's scoped resources. If an
 effect with a finalizer is wrapped in a scope, the finalizer will execute
 automatically when the scope ends.
 
-**Example**
+**Example** (Adding a Finalizer on Success)
 
 ```ts
-// Title: Adding a Finalizer on Success
 import { Effect, Console } from "effect"
 
 //      ┌─── Effect<string, never, Scope>
@@ -42,16 +41,15 @@ const program = Effect.gen(function* () {
 //      ▼
 const runnable = Effect.scoped(program)
 
-// Effect.runPromiseExit(runnable).then(console.log)
+Effect.runPromiseExit(runnable).then(console.log)
 // Output:
 // Finalizer executed. Exit status: Success
 // { _id: 'Exit', _tag: 'Success', value: 'some result' }
 ```
 
-**Example**
+**Example** (Adding a Finalizer on Failure)
 
 ```ts
-// Title: Adding a Finalizer on Failure
 import { Effect, Console } from "effect"
 
 //      ┌─── Effect<never, string, Scope>
@@ -69,7 +67,7 @@ const program = Effect.gen(function* () {
 //      ▼
 const runnable = Effect.scoped(program)
 
-// Effect.runPromiseExit(runnable).then(console.log)
+Effect.runPromiseExit(runnable).then(console.log)
 // Output:
 // Finalizer executed. Exit status: Failure
 // {
@@ -79,10 +77,9 @@ const runnable = Effect.scoped(program)
 // }
 ```
 
-**Example**
+**Example** (Adding a Finalizer on Interruption)
 
 ```ts
-// Title: Adding a Finalizer on Interruption
 import { Effect, Console } from "effect"
 
 //      ┌─── Effect<never, never, Scope>
@@ -100,7 +97,7 @@ const program = Effect.gen(function* () {
 //      ▼
 const runnable = Effect.scoped(program)
 
-// Effect.runPromiseExit(runnable).then(console.log)
+Effect.runPromiseExit(runnable).then(console.log)
 // Output:
 // Finalizer executed. Exit status: Failure
 // {
@@ -129,6 +126,6 @@ const runnable = Effect.scoped(program)
 declare const addFinalizer: <X, R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>) => Effect<void, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5582)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5651)
 
 Since v2.0.0

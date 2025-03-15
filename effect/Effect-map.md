@@ -24,10 +24,9 @@ It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
 
-**Example**
+**Example** (Adding a Service Charge)
 
 ```ts
-// Title: Adding a Service Charge
 import { pipe, Effect } from "effect"
 
 const addServiceCharge = (amount: number) => amount + 1
@@ -39,7 +38,7 @@ const finalAmount = pipe(
   Effect.map(addServiceCharge)
 )
 
-// Effect.runPromise(finalAmount).then(console.log)
+Effect.runPromise(finalAmount).then(console.log)
 // Output: 101
 ```
 
@@ -55,6 +54,6 @@ const finalAmount = pipe(
 declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5073)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5140)
 
 Since v2.0.0

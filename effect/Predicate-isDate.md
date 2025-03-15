@@ -23,6 +23,6 @@ assert.deepStrictEqual(isDate({}), false)
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L594)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L598)
 
 Since v2.0.0

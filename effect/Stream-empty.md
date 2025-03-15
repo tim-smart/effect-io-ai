@@ -12,7 +12,7 @@ import { Effect, Stream } from "effect"
 
 const stream = Stream.empty
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [] }
 ```
 

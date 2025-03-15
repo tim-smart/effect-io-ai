@@ -24,7 +24,7 @@ const program = Effect.gen(function*() {
   yield* Effect.log("three")
 }).pipe(Effect.provide(LoggerLive))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // BATCH [
 // timestamp=... level=INFO fiber=#0 message=one
 // timestamp=... level=INFO fiber=#0 message=two

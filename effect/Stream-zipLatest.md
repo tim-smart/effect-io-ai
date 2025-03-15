@@ -26,7 +26,7 @@ const s2 = Stream.make("a", "b", "c", "d").pipe(
 
 const stream = Stream.zipLatest(s1, s2)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: "Chunk", values: [ [ 1, "a" ], [ 1, "b" ], [ 2, "b" ], [ 2, "c" ], [ 2, "d" ], [ 3, "d" ] ] }
 ```
 

@@ -19,10 +19,9 @@ crash in the program, which can be further managed or logged using tools like
 
 Use this function when you are sure the operation will not fail.
 
-**Example**
+**Example** (Logging a Message)
 
 ```ts
-// Title: Logging a Message
 import { Effect } from "effect"
 
 const log = (message: string) =>
@@ -45,6 +44,6 @@ const program = log("Hello, World!")
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3307)
 
 Since v2.0.0

@@ -36,10 +36,9 @@ This is particularly useful for scenarios where looping logic involves
 asynchronous or side-effectful operations, such as polling or iterative
 computations that depend on external factors.
 
-**Example**
+**Example** (Effectful Iteration)
 
 ```ts
-// Title: Effectful Iteration
 import { Effect } from "effect"
 
 const result = Effect.iterate(
@@ -53,7 +52,7 @@ const result = Effect.iterate(
   }
 )
 
-// Effect.runPromise(result).then(console.log)
+Effect.runPromise(result).then(console.log)
 // Output: 6
 ```
 
@@ -63,6 +62,6 @@ const result = Effect.iterate(
 declare const iterate: { <A, B extends A, R, E>(initial: A, options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<A, E, R>; }): Effect<A, E, R>; <A, R, E>(initial: A, options: { readonly while: Predicate<A>; readonly body: (a: A) => Effect<A, E, R>; }): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9743)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9899)
 
 Since v2.0.0

@@ -22,10 +22,9 @@ This function provides a concise and functional way to handle optional values
 without resorting to `if` or manual checks, making your code more declarative
 and readable.
 
-**Example**
+**Example** (Pattern Matching with Option)
 
 ```ts
-// Title: Pattern Matching with Option
 import { Option } from "effect"
 
 const foo = Option.some(1)

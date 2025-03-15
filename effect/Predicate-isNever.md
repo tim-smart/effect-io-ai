@@ -23,6 +23,6 @@ assert.deepStrictEqual(isNever([]), false)
 declare const isNever: (input: unknown) => input is never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L411)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L415)
 
 Since v2.0.0

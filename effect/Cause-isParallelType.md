@@ -15,6 +15,6 @@ Checks if a `Cause` is a `Parallel` type.
 declare const isParallelType: <E>(self: Cause<E>) => self is Parallel<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L722)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L723)
 
 Since v2.0.0

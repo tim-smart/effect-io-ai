@@ -26,6 +26,6 @@ export interface Interrupt extends Cause.Variance<never>, Equal.Equal, Pipeable,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L514)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L515)
 
 Since v2.0.0

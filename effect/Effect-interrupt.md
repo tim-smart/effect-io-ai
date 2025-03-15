@@ -26,7 +26,7 @@ const program = Effect.gen(function* () {
   return "some result"
 })
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // start
 // {
@@ -51,6 +51,6 @@ const program = Effect.gen(function* () {
 declare const interrupt: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4789)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4853)
 
 Since v2.0.0

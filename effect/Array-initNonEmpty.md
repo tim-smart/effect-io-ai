@@ -20,6 +20,6 @@ console.log(result) // [1, 2, 3]
 declare const initNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L781)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L778)
 
 Since v2.0.0

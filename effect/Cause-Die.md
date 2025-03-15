@@ -25,6 +25,6 @@ export interface Die extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspe
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L493)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L494)
 
 Since v2.0.0

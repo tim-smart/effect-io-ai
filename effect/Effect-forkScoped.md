@@ -19,15 +19,12 @@ from fibers created with `fork`, which are terminated when the parent fiber
 terminates. With `forkScoped`, the child fiber will keep running until the
 local scope ends, regardless of the state of the parent fiber.
 
-**Example**
+**Example** (Forking a Fiber in a Local Scope)
+
+In this example, the child fiber continues to run beyond the lifetime of the parent fiber.
+The child fiber is tied to the local scope and will be terminated only when the scope ends.
 
 ```ts
-// Title: Forking a Fiber in a Local Scope
-//
-// In this example, the child fiber continues to run beyond the lifetime of the parent fiber.
-// The child fiber is tied to the local scope and will be terminated only when the scope ends.
-//
-
 import { Effect, Console, Schedule } from "effect"
 
 // Child fiber that logs a message repeatedly every second
@@ -57,7 +54,7 @@ const program = Effect.scoped(
   })
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // Local scope started!
 // parent: started!
@@ -76,6 +73,6 @@ const program = Effect.scoped(
 declare const forkScoped: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6476)
 
 Since v2.0.0

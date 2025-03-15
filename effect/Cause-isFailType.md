@@ -15,6 +15,6 @@ Checks if a `Cause` is a `Fail` type.
 declare const isFailType: <E>(self: Cause<E>) => self is Fail<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L682)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L683)
 
 Since v2.0.0

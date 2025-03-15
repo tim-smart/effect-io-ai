@@ -21,6 +21,6 @@ and debugging.
 declare const parallel: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L638)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L639)
 
 Since v2.0.0

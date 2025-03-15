@@ -37,7 +37,7 @@ const program = Effect.gen(function*() {
   console.log(result)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: { _id: 'Option', _tag: 'Some', value: 4 }
 ```
 
@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const findFirst: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Option.Option<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Option.Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1480)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1508)
 
 Since v2.0.0

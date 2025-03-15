@@ -24,6 +24,6 @@ assert.deepStrictEqual(isNullable([]), false)
 declare const isNullable: <A>(input: A) => input is Extract<A, null | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L517)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L521)
 
 Since v2.0.0

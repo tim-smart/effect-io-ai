@@ -13,10 +13,9 @@ The `Match.tag` function relies on the convention within the Effect ecosystem
 of naming the tag field as `"_tag"`. Ensure that your discriminated unions
 follow this naming convention for proper functionality.
 
-**Example**
+**Example** (Matching a Discriminated Union by Tag)
 
 ```ts
-// Title: Matching a Discriminated Union by Tag
 import { Match } from "effect"
 
 type Event =

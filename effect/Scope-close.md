@@ -12,6 +12,6 @@ have been added to the scope.
 declare const close: (self: CloseableScope, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L152)
 
 Since v2.0.0

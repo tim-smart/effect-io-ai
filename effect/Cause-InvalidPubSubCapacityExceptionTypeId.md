@@ -21,6 +21,6 @@ structure.
 declare const InvalidPubSubCapacityExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L166)
 
 Since v2.0.0

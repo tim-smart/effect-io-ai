@@ -33,6 +33,6 @@ Effect.log("a").pipe(
 declare const toFile: { (path: string, options?: (OpenFileOptions & { readonly batchWindow?: DurationInput | undefined; }) | undefined): <Message>(self: Logger.Logger<Message, string>) => Effect<Logger.Logger<Message, void>, PlatformError, Scope | FileSystem>; <Message>(self: Logger.Logger<Message, string>, path: string, options?: (OpenFileOptions & { readonly batchWindow?: DurationInput | undefined; }) | undefined): Effect<Logger.Logger<Message, void>, PlatformError, Scope | FileSystem>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/PlatformLogger.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/PlatformLogger.ts#L39)
 
 Since v1.0.0

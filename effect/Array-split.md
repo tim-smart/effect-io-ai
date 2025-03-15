@@ -20,6 +20,6 @@ console.log(result) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 declare const split: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1861)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1863)
 
 Since v2.0.0

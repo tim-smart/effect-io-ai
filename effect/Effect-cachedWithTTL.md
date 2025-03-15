@@ -52,7 +52,7 @@ const program = Effect.gen(function* () {
   yield* cached.pipe(Effect.andThen(Console.log))
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // expensive task...
 // result 1
@@ -74,6 +74,6 @@ additional effect for manually invalidating the cached value.
 declare const cachedWithTTL: { (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<Effect<A, E>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L331)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L332)
 
 Since v2.0.0

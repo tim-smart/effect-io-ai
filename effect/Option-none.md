@@ -9,10 +9,9 @@ Represents the absence of a value by creating an empty `Option`.
 This means you can use it in place of any `Option<A>` regardless of the type
 `A`.
 
-**Example**
+**Example** (Creating an Option with No Value)
 
 ```ts
-// Title: Creating an Option with No Value
 import { Option } from "effect"
 
 // An Option holding no value

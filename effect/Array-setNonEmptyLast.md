@@ -20,6 +20,6 @@ console.log(result) // [1, 2, 4]
 declare const setNonEmptyLast: { <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, b: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1640)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1642)
 
 Since v2.0.0

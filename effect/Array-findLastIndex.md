@@ -17,9 +17,9 @@ console.log(result) // Option.some(1)
 **Signature**
 
 ```ts
-declare const findLastIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option<number>; }
+declare const findLastIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1027)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1024)
 
 Since v2.0.0

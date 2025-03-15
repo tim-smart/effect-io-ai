@@ -24,6 +24,6 @@ assert.deepStrictEqual(isIterable({}), false)
 declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L614)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L618)
 
 Since v2.0.0

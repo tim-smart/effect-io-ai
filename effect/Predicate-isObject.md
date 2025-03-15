@@ -24,6 +24,6 @@ assert.deepStrictEqual(isObject(undefined), false)
 declare const isObject: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L459)
 
 Since v2.0.0

@@ -16,10 +16,9 @@ determine which substream it belongs to.
 The faster stream may advance up to `bufferSize` elements ahead of the slower
 one.
 
-**Example**
+**Example** (Partitioning a Stream with an Effectful Predicate)
 
 ```ts
-// Title: Partitioning a Stream with an Effectful Predicate
 import { Effect, Either, Stream } from "effect"
 
 const partition = Stream.range(1, 9).pipe(
@@ -37,7 +36,7 @@ const program = Effect.scoped(
   })
 )
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // { _id: 'Chunk', values: [ 1, 3, 5, 7, 9 ] }
 // { _id: 'Chunk', values: [ 2, 4, 6, 8 ] }
 ```

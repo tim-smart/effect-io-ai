@@ -38,7 +38,7 @@ const maybe1 = Effect.fromNullable(1)
 //      ▼
 const option1 = Effect.optionFromOptional(maybe1)
 
-// Effect.runPromise(option1).then(console.log)
+Effect.runPromise(option1).then(console.log)
 // Output: { _id: 'Option', _tag: 'Some', value: 1 }
 
 //      ┌─── Effect<number, NoSuchElementException, never>
@@ -49,7 +49,7 @@ const maybe2 = Effect.fromNullable(null as number | null)
 //      ▼
 const option2 = Effect.optionFromOptional(maybe2)
 
-// Effect.runPromise(option2).then(console.log)
+Effect.runPromise(option2).then(console.log)
 // Output: { _tag: 'None' }
 ```
 
@@ -59,6 +59,6 @@ const option2 = Effect.optionFromOptional(maybe2)
 declare const optionFromOptional: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13021)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13215)
 
 Since v2.0.0

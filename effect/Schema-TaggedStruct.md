@@ -27,6 +27,6 @@ assert.deepStrictEqual(User.make({ name: "John", age: 44 }), { _tag: "User", nam
 declare const TaggedStruct: <Tag extends AST.LiteralValue, Fields extends Struct.Fields>(value: Tag, fields: Fields) => TaggedStruct<Tag, Fields>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2980)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3010)
 
 Since v3.10.0

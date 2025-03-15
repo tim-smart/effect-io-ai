@@ -14,6 +14,6 @@ larger scope.
 declare const extend: { (scope: Scope): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Scope>>; <A, E, R>(effect: Effect.Effect<A, E, R>, scope: Scope): Effect.Effect<A, E, Exclude<R, Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L163)
 
 Since v2.0.0

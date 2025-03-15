@@ -19,7 +19,7 @@ const stream = Stream.zip(
   Stream.make("a", "b", "c")
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ [ 1, 'a' ], [ 2, 'b' ], [ 3, 'c' ] ] }
 ```
 

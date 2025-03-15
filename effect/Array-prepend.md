@@ -20,6 +20,6 @@ console.log(result) // [1, 2, 3, 4]
 declare const prepend: { <B>(head: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, head: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L364)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L361)
 
 Since v2.0.0

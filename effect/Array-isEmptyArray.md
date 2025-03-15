@@ -20,6 +20,6 @@ console.log(Array.isEmptyArray([1, 2, 3])) // false
 declare const isEmptyArray: <A>(self: Array<A>) => self is []
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L537)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L534)
 
 Since v2.0.0

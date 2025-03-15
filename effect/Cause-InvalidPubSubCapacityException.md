@@ -14,6 +14,6 @@ export interface InvalidPubSubCapacityException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L401)
 
 Since v2.0.0

@@ -14,7 +14,7 @@ import { Effect, Stream } from "effect"
 // An infinite Stream of numbers starting from 1 and incrementing
 const stream = Stream.iterate(1, (n) => n + 1)
 
-// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(10)))).then(console.log)
+Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(10)))).then(console.log)
 // { _id: 'Chunk', values: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] }
 ```
 

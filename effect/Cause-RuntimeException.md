@@ -19,6 +19,6 @@ export interface RuntimeException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L338)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L339)
 
 Since v2.0.0

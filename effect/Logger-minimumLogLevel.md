@@ -18,7 +18,7 @@ const program = Effect.gen(function*() {
 })
 
 // Logging disabled using a layer
-// Effect.runFork(program.pipe(Effect.provide(Logger.minimumLogLevel(LogLevel.None))))
+Effect.runFork(program.pipe(Effect.provide(Logger.minimumLogLevel(LogLevel.None))))
 // task done
 ```
 

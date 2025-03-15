@@ -17,6 +17,6 @@ failures.
 declare const isEmpty: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L749)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L750)
 
 Since v2.0.0

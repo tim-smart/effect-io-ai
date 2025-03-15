@@ -25,6 +25,6 @@ export interface Fail<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L473)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L474)
 
 Since v2.0.0

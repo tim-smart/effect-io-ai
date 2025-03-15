@@ -23,6 +23,6 @@ assert.deepStrictEqual(isError({}), false)
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L556)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L560)
 
 Since v2.0.0

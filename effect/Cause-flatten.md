@@ -21,6 +21,6 @@ repeated transformations or compositions.
 declare const flatten: <E>(self: Cause<Cause<E>>) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1069)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1070)
 
 Since v2.0.0

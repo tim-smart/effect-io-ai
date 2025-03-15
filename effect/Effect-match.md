@@ -18,10 +18,9 @@ effect fails.
 This is useful for structuring your code to respond differently to success or
 failure without triggering side effects.
 
-**Example**
+**Example** (Handling Both Success and Failure Cases)
 
 ```ts
-// Title: Handling Both Success and Failure Cases
 import { Effect } from "effect"
 
 const success: Effect.Effect<number, Error> = Effect.succeed(42)
@@ -32,7 +31,7 @@ const program1 = Effect.match(success, {
 })
 
 // Run and log the result of the successful effect
-// Effect.runPromise(program1).then(console.log)
+Effect.runPromise(program1).then(console.log)
 // Output: "success: 42"
 
 const failure: Effect.Effect<number, Error> = Effect.fail(
@@ -45,7 +44,7 @@ const program2 = Effect.match(failure, {
 })
 
 // Run and log the result of the failed effect
-// Effect.runPromise(program2).then(console.log)
+Effect.runPromise(program2).then(console.log)
 // Output: "failure: Uh oh!"
 ```
 
@@ -59,6 +58,6 @@ const program2 = Effect.match(failure, {
 declare const match: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10394)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10557)
 
 Since v2.0.0

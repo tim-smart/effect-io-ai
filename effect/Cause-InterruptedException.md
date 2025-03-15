@@ -21,6 +21,6 @@ export interface InterruptedException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L357)
 
 Since v2.0.0

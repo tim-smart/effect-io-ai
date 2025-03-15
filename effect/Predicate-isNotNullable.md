@@ -24,6 +24,6 @@ assert.deepStrictEqual(isNotNullable(undefined), false)
 declare const isNotNullable: <A>(input: A) => input is NonNullable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L537)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L541)
 
 Since v2.0.0

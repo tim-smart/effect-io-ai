@@ -17,10 +17,9 @@ as a defect.
 Use `orDieWith` when failures should terminate the fiber as defects, and you want to customize
 the error for clarity or debugging purposes.
 
-**Example**
+**Example** (Customizing Defect)
 
 ```ts
-// Title: Customizing Defect
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
@@ -35,7 +34,7 @@ const program = Effect.orDieWith(
   (error) => new Error(`defect: ${error.message}`)
 )
 
-// Effect.runPromise(program).catch(console.error)
+Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) Error: defect: Cannot divide by zero
 //   ...stack trace...
@@ -51,6 +50,6 @@ const program = Effect.orDieWith(
 declare const orDieWith: { <E>(f: (error: E) => unknown): <A, R>(self: Effect<A, E, R>) => Effect<A, never, R>; <A, E, R>(self: Effect<A, E, R>, f: (error: E) => unknown): Effect<A, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11280)
 
 Since v2.0.0

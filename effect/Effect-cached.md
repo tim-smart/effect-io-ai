@@ -45,7 +45,7 @@ const program = Effect.gen(function* () {
   yield* cached.pipe(Effect.andThen(Console.log))
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // non-cached version:
 // expensive task...
@@ -71,6 +71,6 @@ additional effect for manually invalidating the cached value.
 declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L478)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L481)
 
 Since v2.0.0

@@ -13,10 +13,9 @@ function simplifies the logic by allowing you to specify values to exclude.
 Any excluded value will bypass the provided function and continue matching
 through other cases.
 
-**Example**
+**Example** (Ignoring a Specific Value)
 
 ```ts
-// Title: Ignoring a Specific Value
 import { Match } from "effect"
 
 // Create a matcher for string or number values

@@ -12,6 +12,6 @@ will automatically be closed when this scope is closed.
 declare const fork: (self: Scope, strategy: ExecutionStrategy.ExecutionStrategy) => Effect.Effect<CloseableScope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L173)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L175)
 
 Since v2.0.0

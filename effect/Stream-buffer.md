@@ -22,7 +22,7 @@ const stream = Stream.range(1, 10).pipe(
   Stream.schedule(Schedule.spaced("5 seconds"))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // before buffering: 1
 // before buffering: 2
 // before buffering: 3

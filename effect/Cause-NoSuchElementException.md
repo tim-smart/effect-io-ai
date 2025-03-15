@@ -20,6 +20,6 @@ export interface NoSuchElementException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L389)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L390)
 
 Since v2.0.0

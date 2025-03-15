@@ -19,9 +19,9 @@ const getUsers = Database.pipe(Effect.andThen((_) => _.getUsers))
 
 const stream = Stream.fromIterableEffect(getUsers)
 
-// Effect.runPromise(
-//   Stream.runCollect(stream.pipe(Stream.provideService(Database, { getUsers: Effect.succeed(["user1", "user2"]) })))
-// ).then(console.log)
+Effect.runPromise(
+  Stream.runCollect(stream.pipe(Stream.provideService(Database, { getUsers: Effect.succeed(["user1", "user2"]) })))
+).then(console.log)
 // { _id: 'Chunk', values: [ 'user1', 'user2' ] }
 ```
 

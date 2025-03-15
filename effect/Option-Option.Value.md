@@ -5,10 +5,9 @@ Module: `Option`<br />
 
 Extracts the type of the value contained in an `Option`.
 
-**Example**
+**Example** (Getting the Value Type of an Option)
 
 ```ts
-// Title: Getting the Value Type of an Option
 import { Option } from "effect"
 
 // Declare an Option holding a string

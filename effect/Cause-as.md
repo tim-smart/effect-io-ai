@@ -21,6 +21,6 @@ the original error details but still want to keep the cause shape.
 declare const as: { <E2>(error: E2): <E>(self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, error: E2): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L998)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L999)
 
 Since v2.0.0

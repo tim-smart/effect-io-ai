@@ -21,6 +21,6 @@ limit.
 declare const ExceededCapacityExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L188)
 
 Since v3.5.0

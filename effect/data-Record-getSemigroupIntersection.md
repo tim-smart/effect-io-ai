@@ -11,11 +11,11 @@ The values for matching keys are combined using the provided `Semigroup` instanc
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getSemigroupIntersection } from "@effect/typeclass/data/Record"
 
-assert.deepStrictEqual(getSemigroupIntersection(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2 })
+console.log(getSemigroupIntersection(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }))
+// { a: 2 }
 ```
 
 **Signature**
@@ -24,6 +24,6 @@ assert.deepStrictEqual(getSemigroupIntersection(NumberInstances.MonoidSum).combi
 declare const getSemigroupIntersection: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L284)
 
 Since v0.29.4

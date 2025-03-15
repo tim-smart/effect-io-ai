@@ -26,6 +26,6 @@ export interface Parallel<out E> extends Cause.Variance<E>, Equal.Equal, Pipeabl
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L535)
 
 Since v2.0.0

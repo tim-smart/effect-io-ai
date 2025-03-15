@@ -8,13 +8,16 @@ Module: `Boolean`<br />
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { SemigroupSome } from "@effect/typeclass/data/Boolean"
 
-assert.deepStrictEqual(SemigroupSome.combine(true, true), true)
-assert.deepStrictEqual(SemigroupSome.combine(true, false), true)
-assert.deepStrictEqual(SemigroupSome.combine(false, true), true)
-assert.deepStrictEqual(SemigroupSome.combine(false, false), false)
+console.log(SemigroupSome.combine(true, true))
+// true
+console.log(SemigroupSome.combine(true, false))
+// true
+console.log(SemigroupSome.combine(false, true))
+// true
+console.log(SemigroupSome.combine(false, false))
+// false
 ```
 
 **Signature**
@@ -23,6 +26,6 @@ assert.deepStrictEqual(SemigroupSome.combine(false, false), false)
 declare const SemigroupSome: semigroup.Semigroup<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Boolean.ts#L64)
 
 Since v0.24.0

@@ -31,6 +31,6 @@ export interface CauseReducer<in C, in E, in out Z> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L295)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L296)
 
 Since v2.0.0

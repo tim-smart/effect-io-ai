@@ -30,7 +30,7 @@ const tapping = Effect.tapError(task, (error) =>
   Console.log(`expected error: ${error}`)
 )
 
-// Effect.runFork(tapping)
+Effect.runFork(tapping)
 // Output:
 // expected error: NetworkError
 ```
@@ -41,6 +41,6 @@ const tapping = Effect.tapError(task, (error) =>
 declare const tapError: { <E, X, E2, R2>(f: (e: NoInfer<E>) => Effect<X, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (e: E) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9543)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9697)
 
 Since v2.0.0

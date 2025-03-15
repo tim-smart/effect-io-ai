@@ -17,6 +17,6 @@ error to handle or display.
 declare const failureOption: <E>(self: Cause<E>) => Option.Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L859)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L860)
 
 Since v2.0.0

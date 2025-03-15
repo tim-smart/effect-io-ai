@@ -18,6 +18,6 @@ operations.
 declare const tagMetricsScoped: (key: string, value: string) => Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11478)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11653)
 
 Since v2.0.0

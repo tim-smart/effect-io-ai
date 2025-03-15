@@ -16,7 +16,7 @@ const program = Effect.log("message1", "message2").pipe(
   Effect.withLogSpan("myspan")
 )
 
-// Effect.runFork(program.pipe(Effect.provide(Logger.logFmt)))
+Effect.runFork(program.pipe(Effect.provide(Logger.logFmt)))
 // timestamp=... level=INFO fiber=#0 message=message1 message=message2 myspan=0ms key2=value2 key1=value1
 ```
 

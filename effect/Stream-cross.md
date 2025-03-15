@@ -19,7 +19,7 @@ const s2 = Stream.make("a", "b")
 
 const product = Stream.cross(s1, s2)
 
-// Effect.runPromise(Stream.runCollect(product)).then(console.log)
+Effect.runPromise(Stream.runCollect(product)).then(console.log)
 // {
 //   _id: "Chunk",
 //   values: [

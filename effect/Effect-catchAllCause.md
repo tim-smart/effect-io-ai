@@ -19,10 +19,9 @@ Defects are unexpected errors that typically shouldn't be recovered from, as
 they often indicate serious issues. However, in some cases, such as
 dynamically loaded plugins, controlled recovery might be needed.
 
-**Example**
+**Example** (Recovering from All Errors)
 
 ```ts
-// Title: Recovering from All Errors
 import { Cause, Effect } from "effect"
 
 // Define an effect that may fail with a recoverable or unrecoverable error
@@ -37,7 +36,7 @@ const recovered = program.pipe(
   )
 )
 
-// Effect.runPromise(recovered).then(console.log)
+Effect.runPromise(recovered).then(console.log)
 // Output: "Recovered from a regular error"
 ```
 
@@ -47,6 +46,6 @@ const recovered = program.pipe(
 declare const catchAllCause: { <E, A2, E2, R2>(f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>): Effect<A | A2, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3447)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3499)
 
 Since v2.0.0

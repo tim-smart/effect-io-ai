@@ -30,7 +30,7 @@ const stream = GroupBy.evaluate(groupByKeyResult, (key, stream) =>
     )
   ))
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // {
 //   _id: 'Chunk',
 //   values: [ [ 'M', 1 ], [ 'J', 3 ], [ 'R', 2 ], [ 'P', 2 ] ]

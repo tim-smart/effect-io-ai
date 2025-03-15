@@ -24,30 +24,43 @@ acquisition and release, see the `acquireRelease` family of functions.
 For use cases where you need access to the result of an effect, consider
 using `onExit`.
 
-**Example**
+**Example** (Running a Finalizer in All Outcomes)
 
 ```ts
 import { Console, Effect } from "effect"
 
+// Define a cleanup effect
 const handler = Effect.ensuring(Console.log("Cleanup completed"))
 
-const success = Console.log("Task completed").pipe(Effect.as("some result"), handler)
+// Define a successful effect
+const success = Console.log("Task completed").pipe(
+  Effect.as("some result"),
+  handler
+)
 
-// Effect.runFork(success)
+Effect.runFork(success)
 // Output:
 // Task completed
 // Cleanup completed
 
-const failure = Console.log("Task failed").pipe(Effect.andThen(Effect.fail("some error")), handler)
+// Define a failing effect
+const failure = Console.log("Task failed").pipe(
+  Effect.andThen(Effect.fail("some error")),
+  handler
+)
 
-// Effect.runFork(failure)
+Effect.runFork(failure)
 // Output:
 // Task failed
 // Cleanup completed
 
-const interruption = Console.log("Task interrupted").pipe(Effect.andThen(Effect.interrupt), handler)
+// Define an interrupted effect
+const interruption = Console.log("Task interrupted").pipe(
+  Effect.andThen(Effect.interrupt),
+  handler
+)
 
-// Effect.runFork(interruption)
+Effect.runFork(interruption)
 // Output:
 // Task interrupted
 // Cleanup completed
@@ -64,6 +77,6 @@ effect.
 declare const ensuring: { <X, R1>(finalizer: Effect<X, never, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, X, R1>(self: Effect<A, E, R>, finalizer: Effect<X, never, R1>): Effect<A, E, R1 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5725)
 
 Since v2.0.0

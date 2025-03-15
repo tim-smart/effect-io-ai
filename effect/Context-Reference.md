@@ -12,10 +12,9 @@ provide a default value for the service, which will automatically be used
 when the context is accessed, or override it with a custom implementation
 when needed.
 
-**Example**
+**Example** (Declaring a Tag with a default value)
 
 ```ts
-// Title: Declaring a Tag with a default value
 import * as assert from "node:assert"
 import { Context, Effect } from "effect"
 
@@ -36,10 +35,9 @@ Effect.runPromise(program)
 // Output: The special number is 2048
 ```
 
-**Example**
+**Example** (Overriding the default value)
 
 ```ts
-// Title: Overriding the default value
 import { Context, Effect } from "effect"
 
 class SpecialNumber extends Context.Reference<SpecialNumber>()(

@@ -22,6 +22,6 @@ console.log(result) // [1, 2, 3, 4, 5, 6]
 declare const flatten: <S extends ReadonlyArray<ReadonlyArray<any>>>(self: S) => ReadonlyArray.Flatten<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2385)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2387)
 
 Since v2.0.0

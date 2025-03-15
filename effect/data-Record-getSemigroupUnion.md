@@ -14,11 +14,11 @@ For example, when using the `MonoidSum`, values for matching keys will be summed
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import * as NumberInstances from "@effect/typeclass/data/Number"
 import { getSemigroupUnion } from "@effect/typeclass/data/Record"
 
-assert.deepStrictEqual(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }), { a: 2, b: 3 })
+console.log(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a: 1 }, { a: 1, b: 3 }))
+// { a: 2, b: 3 }
 ```
 
 **Signature**
@@ -27,6 +27,6 @@ assert.deepStrictEqual(getSemigroupUnion(NumberInstances.MonoidSum).combine({ a:
 declare const getSemigroupUnion: <A>(value: semigroup.Semigroup<A>) => semigroup.Semigroup<Record.ReadonlyRecord<string, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Record.ts#L229)
 
 Since v0.29.4

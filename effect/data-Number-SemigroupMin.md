@@ -8,10 +8,10 @@ A `Semigroup` that uses the minimum between two values.
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { SemigroupMin } from "@effect/typeclass/data/Number"
 
-assert.deepStrictEqual(SemigroupMin.combine(2, 3), 2)
+console.log(SemigroupMin.combine(2, 3))
+// 2
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(SemigroupMin.combine(2, 3), 2)
 declare const SemigroupMin: semigroup.Semigroup<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L83)
 
 Since v0.24.0

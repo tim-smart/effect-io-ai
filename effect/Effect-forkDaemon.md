@@ -14,10 +14,9 @@ the global scope closes or the fiber completes naturally. This makes it
 useful for tasks that need to run in the background independently, such as
 periodic logging, monitoring, or background data processing.
 
-**Example**
+**Example** (Creating a Daemon Fibe)
 
 ```ts
-// Title: Creating a Daemon Fibe
 import { Effect, Console, Schedule } from "effect"
 
 // Daemon fiber that logs a message repeatedly every second
@@ -34,7 +33,7 @@ const parent = Effect.gen(function* () {
   console.log("parent: finished!")
 })
 
-// Effect.runFork(parent)
+Effect.runFork(parent)
 // Output:
 // parent: started!
 // daemon: still running!
@@ -55,6 +54,6 @@ const parent = Effect.gen(function* () {
 declare const forkDaemon: <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6176)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6304)
 
 Since v2.0.0

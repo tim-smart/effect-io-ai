@@ -17,15 +17,14 @@ The resulting effect has an error type of `never`, meaning it cannot fail
 directly. However, unrecoverable errors, also referred to as defects, are
 not captured and will still result in failure.
 
-**Example**
+**Example** (Using Effect.option to Handle Errors)
 
 ```ts
-// Title: Using Effect.option to Handle Errors
 import { Effect } from "effect"
 
 const maybe1 = Effect.option(Effect.succeed(1))
 
-// Effect.runPromiseExit(maybe1).then(console.log)
+Effect.runPromiseExit(maybe1).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -35,7 +34,7 @@ const maybe1 = Effect.option(Effect.succeed(1))
 
 const maybe2 = Effect.option(Effect.fail("Uh oh!"))
 
-// Effect.runPromiseExit(maybe2).then(console.log)
+Effect.runPromiseExit(maybe2).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -45,7 +44,7 @@ const maybe2 = Effect.option(Effect.fail("Uh oh!"))
 
 const maybe3 = Effect.option(Effect.die("Boom!"))
 
-// Effect.runPromiseExit(maybe3).then(console.log)
+Effect.runPromiseExit(maybe3).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -65,6 +64,6 @@ const maybe3 = Effect.option(Effect.die("Boom!"))
 declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7935)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8079)
 
 Since v2.0.0

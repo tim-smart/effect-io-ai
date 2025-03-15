@@ -10,12 +10,14 @@ The `empty` value is `0`.
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { Monoid } from "@effect/typeclass/data/Ordering"
 
-assert.deepStrictEqual(Monoid.combine(Monoid.empty, -1), -1)
-assert.deepStrictEqual(Monoid.combine(Monoid.empty, 1), 1)
-assert.deepStrictEqual(Monoid.combine(1, -1), 1)
+console.log(Monoid.combine(Monoid.empty, -1))
+// -1
+console.log(Monoid.combine(Monoid.empty, 1))
+// 1
+console.log(Monoid.combine(1, -1))
+// 1
 ```
 
 **Signature**
@@ -24,6 +26,6 @@ assert.deepStrictEqual(Monoid.combine(1, -1), 1)
 declare const Monoid: monoid.Monoid<Ordering>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L58)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L64)
 
 Since v0.24.0

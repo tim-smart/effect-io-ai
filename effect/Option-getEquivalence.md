@@ -17,10 +17,9 @@ produces an `Equivalence` instance for `Option<A>`. The resulting
 - Two `Some` values are equivalent if their inner values are equivalent
   according to the provided `Equivalence`.
 
-**Example**
+**Example** (Comparing Optional Numbers for Equivalence)
 
 ```ts
-// Title: Comparing Optional Numbers for Equivalence
 import { Number, Option } from "effect"
 
 const isEquivalent = Option.getEquivalence(Number.Equivalence)

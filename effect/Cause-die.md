@@ -21,6 +21,6 @@ way.
 declare const die: (defect: unknown) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L606)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L607)
 
 Since v2.0.0

@@ -33,7 +33,7 @@ const program = Effect.all([fail1, fail2, die], {
   concurrency: "unbounded"
 }).pipe(Effect.asVoid, Effect.parallelErrors)
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -48,6 +48,6 @@ const program = Effect.all([fail1, fail2, die], {
 declare const parallelErrors: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Array<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4166)
 
 Since v2.0.0

@@ -23,7 +23,7 @@ const booleanStream = Stream.make(true, false, false).pipe(Stream.forever)
 
 const stream = Stream.interleaveWith(s1, s2, booleanStream)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // {
 //   _id: 'Chunk',
 //   values: [

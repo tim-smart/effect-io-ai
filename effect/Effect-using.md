@@ -26,7 +26,7 @@ const use = (resource: number) => Console.log(`Using resource: ${resource}`)
 
 const program = acquire.pipe(Effect.using(use))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // Acquiring resource
 // Using resource: 1
@@ -43,6 +43,6 @@ const program = acquire.pipe(Effect.using(use))
 declare const using: { <A, A2, E2, R2>(use: (a: A) => Effect<A2, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | Exclude<R, Scope.Scope>>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, use: (a: A) => Effect<A2, E2, R2>): Effect<A2, E | E2, R2 | Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5936)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6062)
 
 Since v2.0.0

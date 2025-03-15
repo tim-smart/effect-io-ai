@@ -14,7 +14,7 @@ const stream = Stream.make(10, 20, 30).pipe(
   Stream.mapEffect((n) => Random.nextIntBetween(0, n))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Example Output: { _id: 'Chunk', values: [ 7, 19, 8 ] }
 ```
 

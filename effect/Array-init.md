@@ -8,9 +8,9 @@ Get all but the last element of an `Iterable`, creating a new `Array`, or `None`
 **Signature**
 
 ```ts
-declare const init: <A>(self: Iterable<A>) => Option<Array<A>>
+declare const init: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L761)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L758)
 
 Since v2.0.0

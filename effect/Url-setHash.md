@@ -11,6 +11,6 @@ Updates the hash fragment of the URL.
 declare const setHash: { (hash: string): (url: URL) => URL; (url: URL, hash: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L116)
 
 Since v1.0.0

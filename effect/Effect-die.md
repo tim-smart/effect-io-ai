@@ -20,10 +20,9 @@ Use this function when encountering unexpected conditions in your code that
 should not be handled as regular errors but instead represent unrecoverable
 defects.
 
-**Example**
+**Example** (Terminating on Division by Zero with a Specified Error)
 
 ```ts
-// Title: Terminating on Division by Zero with a Specified Error
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
@@ -35,7 +34,7 @@ const divide = (a: number, b: number) =>
 //      ▼
 const program = divide(1, 0)
 
-// Effect.runPromise(program).catch(console.error)
+Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) Error: Cannot divide by zero
 //   ...stack trace...
@@ -54,6 +53,6 @@ message.
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2582)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2628)
 
 Since v2.0.0

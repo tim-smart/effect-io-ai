@@ -16,10 +16,9 @@ This function is useful when defining matchers that need to check for
 specific values or apply logical conditions to determine a match. It works
 well with structured objects and primitive types.
 
-**Example**
+**Example** (Matching with Values and Predicates)
 
 ```ts
-// Title: Matching with Values and Predicates
 import { Match } from "effect"
 
 // Create a matcher for objects with an "age" property

@@ -17,10 +17,9 @@ This approach is particularly useful when handling optional values or when an
 unmatched case should be explicitly handled rather than returning a default
 value or throwing an error.
 
-**Example**
+**Example** (Extracting a User Role with `Match.either`)
 
 ```ts
-// Title: Extracting a User Role with Either
 import { Match } from "effect"
 
 type User = { readonly role: "admin" | "editor" | "viewer" }

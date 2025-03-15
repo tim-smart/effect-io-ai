@@ -55,6 +55,6 @@ if (Either.isRight(relativeParsed)) {
 declare const fromString: (url: string, base?: string | URL | undefined) => Either.Either<URL, Cause.IllegalArgumentException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L58)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L59)
 
 Since v1.0.0

@@ -19,10 +19,9 @@ within the effect.
 Use `orDie` when failures should be treated as unrecoverable defects and no
 error handling is required.
 
-**Example**
+**Example** (Propagating an Error as a Defect)
 
 ```ts
-// Title: Propagating an Error as a Defect
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
@@ -34,7 +33,7 @@ const divide = (a: number, b: number) =>
 //      ▼
 const program = Effect.orDie(divide(1, 0))
 
-// Effect.runPromise(program).catch(console.error)
+Effect.runPromise(program).catch(console.error)
 // Output:
 // (FiberFailure) Error: Cannot divide by zero
 //   ...stack trace...
@@ -50,6 +49,6 @@ const program = Effect.orDie(divide(1, 0))
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11064)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11235)
 
 Since v2.0.0

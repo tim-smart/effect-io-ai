@@ -11,10 +11,9 @@ Discards both the success and failure values of an effect.
 it succeeds or fails. This is useful when you only care about the side
 effects of the effect and do not need to handle or process its outcome.
 
-**Example**
+**Example** (Using Effect.ignore to Discard Values)
 
 ```ts
-// Title: Using Effect.ignore to Discard Values
 import { Effect } from "effect"
 
 //      ┌─── Effect<number, string, never>
@@ -36,6 +35,6 @@ const program = Effect.ignore(task)
 declare const ignore: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4046)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4100)
 
 Since v2.0.0

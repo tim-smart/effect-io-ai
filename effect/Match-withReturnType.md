@@ -14,10 +14,9 @@ matching condition produces a value of the expected type.
 **Important:** This function must be the first step in the matcher pipeline.
 If used later, TypeScript will not enforce type consistency correctly.
 
-**Example**
+**Example** (Validating Return Type Consistency)
 
 ```ts
-// Title: Validating Return Type Consistency
 import { Match } from "effect"
 
 const match = Match.type<{ a: number } | { b: string }>().pipe(

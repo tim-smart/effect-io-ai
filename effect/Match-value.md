@@ -15,10 +15,9 @@ structure.
 Once the matcher is created, you can use pattern-matching functions like
 `when` to define how different cases should be handled.
 
-**Example**
+**Example** (Matching an Object by Property)
 
 ```ts
-// Title: Matching an Object by Property
 import { Match } from "effect"
 
 const input = { name: "John", age: 30 }

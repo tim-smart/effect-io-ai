@@ -11,6 +11,6 @@ Determines if the chunk is not empty.
 declare const isNonEmpty: <A>(self: Chunk<A>) => self is NonEmptyChunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L825)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L827)
 
 Since v2.0.0

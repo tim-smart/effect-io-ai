@@ -41,6 +41,6 @@ Effect.runFork(program.pipe(Effect.scoped))
 declare const withEarlyRelease: <A, E, R>(self: Effect<A, E, R>) => Effect<[finalizer: Effect<void>, result: A], E, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5981)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6108)
 
 Since v2.0.0

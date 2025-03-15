@@ -20,6 +20,6 @@ console.log(result) // 1
 declare const min: { <A>(O: Order.Order<A>): (self: NonEmptyReadonlyArray<A>) => A; <A>(self: NonEmptyReadonlyArray<A>, O: Order.Order<A>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2901)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2904)
 
 Since v2.0.0

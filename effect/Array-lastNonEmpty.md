@@ -20,6 +20,6 @@ console.log(result) // 4
 declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L725)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L722)
 
 Since v2.0.0

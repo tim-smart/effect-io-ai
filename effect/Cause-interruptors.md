@@ -17,6 +17,6 @@ issues or tracing cancellations.
 declare const interruptors: <E>(self: Cause<E>) => HashSet.HashSet<FiberId.FiberId>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L845)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L846)
 
 Since v2.0.0

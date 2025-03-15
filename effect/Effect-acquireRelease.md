@@ -37,10 +37,9 @@ acquisition of a resource (for example, opening a file, launching a thread,
 etc.) will not be interrupted, and that the resource will always be released
 when the `Effect` completes execution.
 
-**Example**
+**Example** (Defining a Simple Resource)
 
 ```ts
-// Title: Defining a Simple Resource
 import { Effect } from "effect"
 
 // Define an interface for a resource
@@ -90,6 +89,6 @@ const resource = Effect.acquireRelease(acquire, release)
 declare const acquireRelease: { <A, X, R2>(release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>): <E, R>(acquire: Effect<A, E, R>) => Effect<A, E, Scope.Scope | R2 | R>; <A, E, R, X, R2>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>): Effect<A, E, Scope.Scope | R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5423)
 
 Since v2.0.0

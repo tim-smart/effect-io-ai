@@ -2659,7 +2659,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare class Middleware",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L808"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L810"
   },
   {
     "_tag": "Constant",
@@ -2690,7 +2690,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const HandlersTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L191"
   },
   {
     "_tag": "Function",
@@ -2732,15 +2732,13 @@
     },
     "project": "@effect/platform",
     "name": "toWebHandler",
-    "description": "Construct an http web handler from an `HttpApi` instance.",
+    "description": "Construct an http web handler from an `HttpApi` instance.\n\n**Example**\n\n```ts\nimport { HttpApi, HttpApiBuilder, HttpServer } from \"@effect/platform\"\nimport { Layer } from \"effect\"\n\nclass MyApi extends HttpApi.make(\"api\") {}\n\nconst MyApiLive = HttpApiBuilder.api(MyApi)\n\nconst { dispose, handler } = HttpApiBuilder.toWebHandler(\n  Layer.mergeAll(\n    MyApiLive,\n    // you could also use NodeHttpServer.layerContext, depending on your\n    // server's platform\n    HttpServer.layerContext\n  )\n)\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { HttpApi, HttpApiBuilder, HttpServer } from \"@effect/platform\"\nimport { Layer } from \"effect\"\n\nclass MyApi extends HttpApi.make(\"api\") {}\n\nconst MyApiLive = HttpApiBuilder.api(MyApi)\n\nconst { dispose, handler } = HttpApiBuilder.toWebHandler(\n  Layer.mergeAll(\n    MyApiLive,\n    // you could also use NodeHttpServer.layerContext, depending on your\n    // server's platform\n    HttpServer.layerContext\n  )\n)\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const toWebHandler: <LA, LE>(layer: Layer.Layer<LA | HttpApi.Api | HttpRouter.HttpRouter.DefaultServices, LE>, options?: { readonly middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>; readonly memoMap?: Layer.MemoMap; }) => { readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; readonly dispose: () => Promise<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L151"
   },
   {
     "_tag": "Function",
@@ -2756,7 +2754,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const Name extends HttpApiGroup.HttpApiGroup.Name<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: Name, build: (handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.ApiGroup<ApiId, Name>, Handlers.Error<Return>, Exclude<Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L431"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L433"
   },
   {
     "_tag": "Function",
@@ -2772,7 +2770,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const handler: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"], const Name extends HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>[\"name\"], R>(_api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, _groupName: GroupName, _name: Name, f: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>) => HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L487"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L489"
   },
   {
     "_tag": "Function",
@@ -2788,7 +2786,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middleware: { <EX = never, RX = never>(middleware: MiddlewareFn<never> | Effect.Effect<MiddlewareFn<never>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <R, EX = never, RX = never>(middleware: MiddlewareFn<never, R> | Effect.Effect<MiddlewareFn<never, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>> | Effect.Effect<MiddlewareFn<NoInfer<Error>>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>, R> | Effect.Effect<MiddlewareFn<NoInfer<Error>, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L864"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L866"
   },
   {
     "_tag": "Function",
@@ -2804,7 +2802,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareCors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => Layer.Layer<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L920"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L922"
   },
   {
     "_tag": "Function",
@@ -2820,7 +2818,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareOpenApi: (options?: { readonly path?: HttpApiEndpoint.PathSegment | undefined; readonly additionalPropertiesStrategy?: OpenApi.AdditionalPropertiesStrategy | undefined; } | undefined) => Layer.Layer<never, never, HttpApi.Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L937"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L939"
   },
   {
     "_tag": "Function",
@@ -2835,7 +2833,7 @@
     "since": "1.0.0",
     "category": "security",
     "signature": "declare const securityDecode: <Security extends HttpApiSecurity.HttpApiSecurity>(self: Security) => Effect.Effect<HttpApiSecurity.HttpApiSecurity.Type<Security>, never, HttpServerRequest.HttpServerRequest | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L963"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L965"
   },
   {
     "_tag": "Function",
@@ -2851,7 +2849,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const securitySetCookie: (self: HttpApiSecurity.ApiKey, value: string | Redacted.Redacted, options?: Cookie[\"options\"]) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1034"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1036"
   },
   {
     "_tag": "Interface",
@@ -2867,7 +2865,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Handlers<\n  E,\n  Provides,\n  R,\n  Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Endpoints>\n  }\n  readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps\n  readonly handlers: Chunk.Chunk<Handlers.Item<E, R>>\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   */\n  handle<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<Endpoints, Name, E, R1>\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   * This version of the api allows you to return the full response object.\n   */\n  handleRaw<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerResponseWithName<Endpoints, Name, E, R1>\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L205"
   },
   {
     "_tag": "TypeAlias",
@@ -2882,7 +2880,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type HandlersTypeId = typeof HandlersTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L197"
   },
   {
     "_tag": "TypeAlias",
@@ -2897,7 +2895,7 @@
     "since": "1.0.0",
     "category": "global",
     "signature": "type MiddlewareFn<Error, R> = (\n  httpApp: HttpApp.Default\n) => HttpApp.Default<Error, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L835"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L837"
   },
   {
     "_tag": "Interface",
@@ -2912,7 +2910,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Any {\n    readonly [HandlersTypeId]: any\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L268"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L270"
   },
   {
     "_tag": "TypeAlias",
@@ -2927,7 +2925,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Middleware<E, R, E1, R1> = (self: HttpRouter.Route.Middleware<E, R>) => HttpApp.Default<E1, R1>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L276"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L278"
   },
   {
     "_tag": "TypeAlias",
@@ -2942,7 +2940,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Item<E, R> = {\n    readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.Any\n    readonly handler: HttpApiEndpoint.HttpApiEndpoint.Handler<any, E, R>\n    readonly withFullResponse: boolean\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L284"
   },
   {
     "_tag": "TypeAlias",
@@ -2957,7 +2955,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type FromGroup<ApiError, ApiR, Group> = Handlers<\n    | ApiError\n    | HttpApiGroup.HttpApiGroup.Error<Group>,\n    | HttpApiMiddleware.HttpApiMiddleware.ExtractProvides<ApiR>\n    | HttpApiGroup.HttpApiGroup.Provides<Group>,\n    never,\n    HttpApiGroup.HttpApiGroup.Endpoints<Group>\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L292"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L294"
   },
   {
     "_tag": "TypeAlias",
@@ -2972,7 +2970,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type ValidateReturn<A> = A extends (\n    | Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >\n    | Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    >\n  ) ? [_Endpoints] extends [never] ? A\n    : `Endpoint not handled: ${HttpApiEndpoint.HttpApiEndpoint.Name<_Endpoints>}` :\n    `Must return the implemented handlers`",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L309"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L311"
   },
   {
     "_tag": "TypeAlias",
@@ -2987,7 +2985,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Error<A> = A extends Effect.Effect<\n    Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >,\n    infer _EX,\n    infer _RX\n  > ? _EX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L336"
   },
   {
     "_tag": "TypeAlias",
@@ -3002,7 +3000,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Context<A> = A extends Handlers<\n    infer _E,\n    infer _Provides,\n    infer _R,\n    infer _Endpoints\n  > ? _R :\n    A extends Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    > ? _R | _RX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L350"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L352"
   },
   {
     "_tag": "Function",
@@ -4806,7 +4804,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; readonly source?: ScalarScriptSource; readonly scalar?: ScalarConfig; }) => Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L126"
   },
   {
     "_tag": "TypeAlias",
@@ -4850,8 +4848,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "type ScalarConfig = {\n  /** A string to use one of the color presets */\n  theme?: ScalarThemeId\n  /** The layout to use for the references */\n  layout?: \"modern\" | \"classic\"\n  /** URL to a request proxy for the API client */\n  proxy?: string\n  /** Whether the spec input should show */\n  isEditable?: boolean\n  /** Whether to show the sidebar */\n  showSidebar?: boolean\n  /**\n   * Whether to show models in the sidebar, search, and content.\n   *\n   * @default false\n   */\n  hideModels?: boolean\n  /**\n   * Whether to show the “Download OpenAPI Document” button\n   *\n   * @default false\n   */\n  hideDownloadButton?: boolean\n  /**\n   * Whether to show the “Test Request” button\n   *\n   * @default: false\n   */\n  hideTestRequestButton?: boolean\n  /**\n   * Whether to show the sidebar search bar\n   *\n   * @default: false\n   */\n  hideSearch?: boolean\n  /** Whether dark mode is on or off initially (light mode) */\n  darkMode?: boolean\n  /** forceDarkModeState makes it always this state no matter what*/\n  forceDarkModeState?: \"dark\" | \"light\"\n  /** Whether to show the dark mode toggle */\n  hideDarkModeToggle?: boolean\n  /**\n   * Path to a favicon image\n   *\n   * @default undefined\n   * @example '/favicon.svg'\n   */\n  favicon?: string\n  /** Custom CSS to be added to the page */\n  customCss?: string\n  /**\n   * The baseServerURL is used when the spec servers are relative paths and we are using SSR.\n   * On the client we can grab the window.location.origin but on the server we need\n   * to use this prop.\n   *\n   * @default undefined\n   * @example 'http://localhost:3000'\n   */\n  baseServerURL?: string\n  /**\n   * We’re using Inter and JetBrains Mono as the default fonts. If you want to use your own fonts, set this to false.\n   *\n   * @default true\n   */\n  withDefaultFonts?: boolean\n  /**\n   * By default we only open the relevant tag based on the url, however if you want all the tags open by default then set this configuration option :)\n   *\n   * @default false\n   */\n  defaultOpenAllTags?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L48"
+    "signature": "type ScalarConfig = {\n  /** A string to use one of the color presets */\n  theme?: ScalarThemeId\n  /** The layout to use for the references */\n  layout?: \"modern\" | \"classic\"\n  /** URL to a request proxy for the API client */\n  proxy?: string\n  /** Whether the spec input should show */\n  isEditable?: boolean\n  /** Whether to show the sidebar */\n  showSidebar?: boolean\n  /**\n   * Whether to show models in the sidebar, search, and content.\n   *\n   * Default: `false`\n   */\n  hideModels?: boolean\n  /**\n   * Whether to show the “Download OpenAPI Document” button\n   *\n   * Default: `false`\n   */\n  hideDownloadButton?: boolean\n  /**\n   * Whether to show the “Test Request” button\n   *\n   * Default: `false`\n   */\n  hideTestRequestButton?: boolean\n  /**\n   * Whether to show the sidebar search bar\n   *\n   * Default: `false`\n   */\n  hideSearch?: boolean\n  /** Whether dark mode is on or off initially (light mode) */\n  darkMode?: boolean\n  /** forceDarkModeState makes it always this state no matter what*/\n  forceDarkModeState?: \"dark\" | \"light\"\n  /** Whether to show the dark mode toggle */\n  hideDarkModeToggle?: boolean\n  /**\n   * Path to a favicon image\n   *\n   * Default: `undefined`\n   * Example: '/favicon.svg'\n   */\n  favicon?: string\n  /** Custom CSS to be added to the page */\n  customCss?: string\n  /**\n   * The baseServerURL is used when the spec servers are relative paths and we are using SSR.\n   * On the client we can grab the window.location.origin but on the server we need\n   * to use this prop.\n   *\n   * Default: `undefined`\n   * Example: 'http://localhost:3000'\n   */\n  baseServerURL?: string\n  /**\n   * We’re using Inter and JetBrains Mono as the default fonts. If you want to use your own fonts, set this to false.\n   *\n   * Default: `true`\n   */\n  withDefaultFonts?: boolean\n  /**\n   * By default we only open the relevant tag based on the url, however if you want all the tags open by default then set this configuration option :)\n   *\n   * Default: `false`\n   */\n  defaultOpenAllTags?: boolean\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -8015,15 +8013,13 @@
     },
     "project": "@effect/platform",
     "name": "isHttpMethod",
-    "description": "Tests if a value is a `HttpMethod`.",
+    "description": "Tests if a value is a `HttpMethod`.\n\n**Example**\n\n```ts\nimport { HttpMethod } from \"@effect/platform\"\n\nconsole.log(HttpMethod.isHttpMethod(\"GET\"))\n// true\nconsole.log(HttpMethod.isHttpMethod(\"get\"))\n// false\nconsole.log(HttpMethod.isHttpMethod(1))\n// false\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { HttpMethod } from \"@effect/platform\"\n\nassert.deepStrictEqual(HttpMethod.isHttpMethod(\"GET\"), true)\nassert.deepStrictEqual(HttpMethod.isHttpMethod(\"get\"), false)\nassert.deepStrictEqual(HttpMethod.isHttpMethod(1), false)\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isHttpMethod: (u: unknown) => u is HttpMethod",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMethod.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMethod.ts#L61"
   },
   {
     "_tag": "TypeAlias",
@@ -10981,7 +10977,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L240"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L241"
   },
   {
     "_tag": "Interface",
@@ -11757,15 +11753,13 @@
     },
     "project": "@effect/platform",
     "name": "fromApi",
-    "description": "Converts an `HttpApi` instance into an OpenAPI Specification object.\n\n**Details**\n\nThis function takes an `HttpApi` instance, which defines a structured API,\nand generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec\nadheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as\npaths, operations, security schemes, and components. The function processes\nthe API's annotations, middleware, groups, and endpoints to build a complete\nand accurate representation of the API in OpenAPI format.\n\nThe function also deduplicates schemas, applies transformations, and\nintegrates annotations like descriptions, summaries, external documentation,\nand overrides. Cached results are used for better performance when the same\n`HttpApi` instance is processed multiple times.\n\n**Options**\n\n- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:\n  - `\"strict\"`: Disallow additional properties (default behavior).\n  - `\"allow\"`: Allow additional properties.",
+    "description": "Converts an `HttpApi` instance into an OpenAPI Specification object.\n\n**Details**\n\nThis function takes an `HttpApi` instance, which defines a structured API,\nand generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec\nadheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as\npaths, operations, security schemes, and components. The function processes\nthe API's annotations, middleware, groups, and endpoints to build a complete\nand accurate representation of the API in OpenAPI format.\n\nThe function also deduplicates schemas, applies transformations, and\nintegrates annotations like descriptions, summaries, external documentation,\nand overrides. Cached results are used for better performance when the same\n`HttpApi` instance is processed multiple times.\n\n**Options**\n\n- `additionalPropertiesStrategy`: Controls the handling of additional properties. Possible values are:\n  - `\"strict\"`: Disallow additional properties (default behavior).\n  - `\"allow\"`: Allow additional properties.\n\n**Example**\n\n```ts\nimport { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from \"@effect/platform\"\nimport { Schema } from \"effect\"\n\nconst api = HttpApi.make(\"api\").add(\n  HttpApiGroup.make(\"group\").add(\n    HttpApiEndpoint.get(\"get\", \"/items\")\n      .addSuccess(Schema.Array(Schema.String))\n  )\n)\n\nconst spec = OpenApi.fromApi(api)\n\nconsole.log(JSON.stringify(spec, null, 2))\n// Output: OpenAPI specification in JSON format\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from \"@effect/platform\"\nimport { Schema } from \"effect\"\n\nconst api = HttpApi.make(\"api\").add(\n  HttpApiGroup.make(\"group\").add(\n    HttpApiEndpoint.get(\"get\", \"/items\")\n      .addSuccess(Schema.Array(Schema.String))\n  )\n)\n\nconst spec = OpenApi.fromApi(api)\n\n// console.log(JSON.stringify(spec, null, 2))\n// Output: OpenAPI specification in JSON format\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>, options?: { readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined; } | undefined) => OpenAPISpec",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L229"
   },
   {
     "_tag": "Interface",
@@ -11781,7 +11775,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpec {\n  openapi: \"3.1.0\"\n  info: OpenAPISpecInfo\n  paths: OpenAPISpecPaths\n  components: OpenAPIComponents\n  security: Array<OpenAPISecurityRequirement>\n  tags: Array<OpenAPISpecTag>\n  servers?: Array<OpenAPISpecServer>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L495"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L496"
   },
   {
     "_tag": "Interface",
@@ -11796,7 +11790,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecInfo {\n  title: string\n  version: string\n  description?: string\n  license?: OpenAPISpecLicense\n  summary?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L509"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L510"
   },
   {
     "_tag": "Interface",
@@ -11811,7 +11805,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecTag {\n  name: string\n  description?: string\n  externalDocs?: OpenAPISpecExternalDocs\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L521"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L522"
   },
   {
     "_tag": "Interface",
@@ -11826,7 +11820,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecExternalDocs {\n  url: string\n  description?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L531"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L532"
   },
   {
     "_tag": "Interface",
@@ -11841,7 +11835,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecLicense {\n  name: string\n  url?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L540"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L541"
   },
   {
     "_tag": "Interface",
@@ -11856,7 +11850,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecServer {\n  url: string\n  description?: string\n  variables?: Record<string, OpenAPISpecServerVariable>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L549"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L550"
   },
   {
     "_tag": "Interface",
@@ -11871,7 +11865,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecServerVariable {\n  default: string\n  enum?: NonEmptyArray<string>\n  description?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L559"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L560"
   },
   {
     "_tag": "Interface",
@@ -11886,7 +11880,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecParameter {\n  name: string\n  in: \"query\" | \"header\" | \"path\" | \"cookie\"\n  schema: JsonSchema.JsonSchema\n  required: boolean\n  description?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L597"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L598"
   },
   {
     "_tag": "Interface",
@@ -11901,7 +11895,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenApiSpecResponse {\n  description: string\n  content?: OpenApiSpecContent\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L634"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L635"
   },
   {
     "_tag": "Interface",
@@ -11916,7 +11910,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenApiSpecMediaType {\n  schema: JsonSchema.JsonSchema\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L643"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L644"
   },
   {
     "_tag": "Interface",
@@ -11931,7 +11925,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecRequestBody {\n  content: OpenApiSpecContent\n  required: true\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L651"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L652"
   },
   {
     "_tag": "Interface",
@@ -11946,7 +11940,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPIComponents {\n  schemas: Record<string, JsonSchema.JsonSchema>\n  securitySchemes: Record<string, OpenAPISecurityScheme>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L660"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L661"
   },
   {
     "_tag": "Interface",
@@ -11961,7 +11955,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPIHTTPSecurityScheme {\n  readonly type: \"http\"\n  scheme: \"bearer\" | \"basic\" | string\n  description?: string\n  /* only for scheme: 'bearer' */\n  bearerFormat?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L670"
   },
   {
     "_tag": "Interface",
@@ -11976,7 +11970,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPIApiKeySecurityScheme {\n  readonly type: \"apiKey\"\n  name: string\n  in: \"query\" | \"header\" | \"cookie\"\n  description?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L681"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L682"
   },
   {
     "_tag": "Interface",
@@ -11991,7 +11985,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface OpenAPISpecOperation {\n  operationId: string\n  parameters: Array<OpenAPISpecParameter>\n  responses: OpenAPISpecResponses\n  /** Always contains at least the title annotation or the group identifier */\n  tags: NonEmptyArray<string>\n  security: Array<OpenAPISecurityRequirement>\n  requestBody?: OpenAPISpecRequestBody\n  description?: string\n  summary?: string\n  deprecated?: boolean\n  externalDocs?: OpenAPISpecExternalDocs\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L706"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L707"
   },
   {
     "_tag": "TypeAlias",
@@ -12021,7 +12015,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISpecPaths = Record<string, OpenAPISpecPathItem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L569"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L570"
   },
   {
     "_tag": "TypeAlias",
@@ -12036,7 +12030,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISpecMethodName = | \"get\"\n  | \"put\"\n  | \"post\"\n  | \"delete\"\n  | \"options\"\n  | \"head\"\n  | \"patch\"\n  | \"trace\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L575"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L576"
   },
   {
     "_tag": "TypeAlias",
@@ -12051,7 +12045,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISpecPathItem = {\n  [K in OpenAPISpecMethodName]?: OpenAPISpecOperation\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L589"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L590"
   },
   {
     "_tag": "TypeAlias",
@@ -12066,7 +12060,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISpecResponses = Record<number, OpenApiSpecResponse>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L609"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L610"
   },
   {
     "_tag": "TypeAlias",
@@ -12081,7 +12075,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenApiSpecContentType = | \"application/json\"\n  | \"application/xml\"\n  | \"application/x-www-form-urlencoded\"\n  | \"multipart/form-data\"\n  | \"text/plain\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L615"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L616"
   },
   {
     "_tag": "TypeAlias",
@@ -12096,7 +12090,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenApiSpecContent = {\n  [K in OpenApiSpecContentType]?: OpenApiSpecMediaType\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L626"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L627"
   },
   {
     "_tag": "TypeAlias",
@@ -12111,7 +12105,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISecurityScheme = | OpenAPIHTTPSecurityScheme\n  | OpenAPIApiKeySecurityScheme",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L692"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L693"
   },
   {
     "_tag": "TypeAlias",
@@ -12126,7 +12120,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type OpenAPISecurityRequirement = Record<string, Array<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L700"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L701"
   },
   {
     "_tag": "Function",
@@ -12653,15 +12647,13 @@
     },
     "project": "@effect/platform",
     "name": "toFile",
-    "description": "Create a Logger from another string Logger that writes to the specified file.",
+    "description": "Create a Logger from another string Logger that writes to the specified file.\n\n**Example**\n\n```ts\nimport { PlatformLogger } from \"@effect/platform\"\nimport { NodeFileSystem, NodeRuntime } from \"@effect/platform-node\"\nimport { Effect, Layer, Logger } from \"effect\"\n\nconst fileLogger = Logger.logfmtLogger.pipe(\n  PlatformLogger.toFile(\"/tmp/log.txt\")\n)\nconst LoggerLive = Logger.replaceScoped(Logger.defaultLogger, fileLogger).pipe(\n  Layer.provide(NodeFileSystem.layer)\n)\n\nEffect.log(\"a\").pipe(\n  Effect.zipRight(Effect.log(\"b\")),\n  Effect.zipRight(Effect.log(\"c\")),\n  Effect.provide(LoggerLive),\n  NodeRuntime.runMain\n)\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { PlatformLogger } from \"@effect/platform\"\nimport { NodeFileSystem, NodeRuntime } from \"@effect/platform-node\"\nimport { Effect, Layer, Logger } from \"effect\"\n\nconst fileLogger = Logger.logfmtLogger.pipe(\n  PlatformLogger.toFile(\"/tmp/log.txt\")\n)\nconst LoggerLive = Logger.replaceScoped(Logger.defaultLogger, fileLogger).pipe(\n  Layer.provide(NodeFileSystem.layer)\n)\n\nEffect.log(\"a\").pipe(\n  Effect.zipRight(Effect.log(\"b\")),\n  Effect.zipRight(Effect.log(\"c\")),\n  Effect.provide(LoggerLive),\n  NodeRuntime.runMain\n)\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": null,
     "signature": "declare const toFile: { (path: string, options?: (OpenFileOptions & { readonly batchWindow?: DurationInput | undefined; }) | undefined): <Message>(self: Logger.Logger<Message, string>) => Effect<Logger.Logger<Message, void>, PlatformError, Scope | FileSystem>; <Message>(self: Logger.Logger<Message, string>, path: string, options?: (OpenFileOptions & { readonly batchWindow?: DurationInput | undefined; }) | undefined): Effect<Logger.Logger<Message, void>, PlatformError, Scope | FileSystem>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/PlatformLogger.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/PlatformLogger.ts#L39"
   },
   {
     "_tag": "Function",
@@ -13558,15 +13550,13 @@
     },
     "project": "@effect/platform",
     "name": "mutate",
-    "description": "This function clones the original `URL` object and applies a callback to the\nclone, allowing multiple updates at once.",
+    "description": "This function clones the original `URL` object and applies a callback to the\nclone, allowing multiple updates at once.\n\n**Example**\n\n```ts\nimport { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com\")\n\nconst mutatedUrl = Url.mutate(myUrl, (url) => {\n  url.username = \"user\"\n  url.password = \"pass\"\n})\n\nconsole.log(\"Mutated:\", mutatedUrl.toString())\n// Output: Mutated: https://user:pass@example.com/\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com\")\n\nconst mutatedUrl = Url.mutate(myUrl, (url) => {\n  url.username = \"user\"\n  url.password = \"pass\"\n})\n\nconsole.log(\"Mutated:\", mutatedUrl.toString())\n// Output: Mutated: https://user:pass@example.com/\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "Modifiers",
     "signature": "declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L91"
   },
   {
     "_tag": "Constant",
@@ -13582,7 +13572,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHash: { (hash: string): (url: URL) => URL; (url: URL, hash: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -13598,7 +13588,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHost: { (host: string): (url: URL) => URL; (url: URL, host: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -13614,7 +13604,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHostname: { (hostname: string): (url: URL) => URL; (url: URL, hostname: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -13630,7 +13620,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHref: { (href: string): (url: URL) => URL; (url: URL, href: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L149"
   },
   {
     "_tag": "Constant",
@@ -13646,7 +13636,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setPassword: { (password: string): (url: URL) => URL; (url: URL, password: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L158"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -13662,7 +13652,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setPathname: { (pathname: string): (url: URL) => URL; (url: URL, pathname: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -13678,7 +13668,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setPort: { (port: string): (url: URL) => URL; (url: URL, port: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L182"
   },
   {
     "_tag": "Constant",
@@ -13694,7 +13684,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setProtocol: { (protocol: string): (url: URL) => URL; (url: URL, protocol: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L193"
   },
   {
     "_tag": "Constant",
@@ -13710,7 +13700,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setSearch: { (search: string): (url: URL) => URL; (url: URL, search: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L204"
   },
   {
     "_tag": "Constant",
@@ -13726,7 +13716,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setUsername: { (username: string): (url: URL) => URL; (url: URL, username: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L213"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L215"
   },
   {
     "_tag": "Constant",
@@ -13736,15 +13726,13 @@
     },
     "project": "@effect/platform",
     "name": "setUrlParams",
-    "description": "Updates the query parameters of a URL.\n\n**Details**\n\nThis function allows you to set or replace the query parameters of a `URL`\nobject using the provided `UrlParams`. It creates a new `URL` object with the\nupdated parameters, leaving the original object unchanged.",
+    "description": "Updates the query parameters of a URL.\n\n**Details**\n\nThis function allows you to set or replace the query parameters of a `URL`\nobject using the provided `UrlParams`. It creates a new `URL` object with the\nupdated parameters, leaving the original object unchanged.\n\n**Example**\n\n```ts\nimport { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Write parameters\nconst updatedUrl = Url.setUrlParams(\n  myUrl,\n  UrlParams.fromInput([[\"key\", \"value\"]])\n)\n\nconsole.log(updatedUrl.toString())\n// Output: https://example.com/?key=value\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Write parameters\nconst updatedUrl = Url.setUrlParams(\n  myUrl,\n  UrlParams.fromInput([[\"key\", \"value\"]])\n)\n\nconsole.log(updatedUrl.toString())\n// Output: https://example.com/?key=value\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setUrlParams: { (urlParams: UrlParams.UrlParams): (url: URL) => URL; (url: URL, urlParams: UrlParams.UrlParams): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L249"
   },
   {
     "_tag": "Constant",
@@ -13754,15 +13742,13 @@
     },
     "project": "@effect/platform",
     "name": "modifyUrlParams",
-    "description": "Reads, modifies, and updates the query parameters of a URL.\n\n**Details**\n\nThis function provides a functional way to interact with query parameters by\nreading the current parameters, applying a transformation function, and then\nwriting the updated parameters back to the URL. It returns a new `URL` object\nwith the modified parameters, ensuring immutability.",
+    "description": "Reads, modifies, and updates the query parameters of a URL.\n\n**Details**\n\nThis function provides a functional way to interact with query parameters by\nreading the current parameters, applying a transformation function, and then\nwriting the updated parameters back to the URL. It returns a new `URL` object\nwith the modified parameters, ensuring immutability.\n\n**Example**\n\n```ts\nimport { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\nconst changedUrl = Url.modifyUrlParams(myUrl, UrlParams.append(\"key\", \"value\"))\n\nconsole.log(changedUrl.toString())\n// Output: https://example.com/?foo=bar&key=value\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { Url, UrlParams } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\nconst changedUrl = Url.modifyUrlParams(myUrl, UrlParams.append(\"key\", \"value\"))\n\nconsole.log(changedUrl.toString())\n// Output: https://example.com/?foo=bar&key=value\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "Modifiers",
     "signature": "declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L306"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L311"
   },
   {
     "_tag": "Function",
@@ -13772,15 +13758,13 @@
     },
     "project": "@effect/platform",
     "name": "fromString",
-    "description": "Parses a URL string into a `URL` object, returning an `Either` type for safe\nerror handling.\n\n**Details**\n\nThis function converts a string into a `URL` object, enabling safe URL\nparsing with built-in error handling. If the string is invalid or fails to\nparse, this function does not throw an error; instead, it wraps the error in\na `IllegalArgumentException` and returns it as the `Left` value of an\n`Either`. The `Right` value contains the successfully parsed `URL`.\n\nAn optional `base` parameter can be provided to resolve relative URLs. If\nspecified, the function interprets the input `url` as relative to this\n`base`. This is especially useful when dealing with URLs that might not be\nfully qualified.",
+    "description": "Parses a URL string into a `URL` object, returning an `Either` type for safe\nerror handling.\n\n**Details**\n\nThis function converts a string into a `URL` object, enabling safe URL\nparsing with built-in error handling. If the string is invalid or fails to\nparse, this function does not throw an error; instead, it wraps the error in\na `IllegalArgumentException` and returns it as the `Left` value of an\n`Either`. The `Right` value contains the successfully parsed `URL`.\n\nAn optional `base` parameter can be provided to resolve relative URLs. If\nspecified, the function interprets the input `url` as relative to this\n`base`. This is especially useful when dealing with URLs that might not be\nfully qualified.\n\n**Example**\n\n```ts\nimport { Url } from \"@effect/platform\"\nimport { Either } from \"effect\"\n\n// Parse an absolute URL\n//\n//      ┌─── Either<URL, IllegalArgumentException>\n//      ▼\nconst parsed = Url.fromString(\"https://example.com/path\")\n\nif (Either.isRight(parsed)) {\n  console.log(\"Parsed URL:\", parsed.right.toString())\n} else {\n  console.log(\"Error:\", parsed.left.message)\n}\n// Output: Parsed URL: https://example.com/path\n\n// Parse a relative URL with a base\nconst relativeParsed = Url.fromString(\"/relative-path\", \"https://example.com\")\n\nif (Either.isRight(relativeParsed)) {\n  console.log(\"Parsed relative URL:\", relativeParsed.right.toString())\n} else {\n  console.log(\"Error:\", relativeParsed.left.message)\n}\n// Output: Parsed relative URL: https://example.com/relative-path\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { Url } from \"@effect/platform\"\nimport { Either } from \"effect\"\n\n// Parse an absolute URL\n//\n//      ┌─── Either<URL, IllegalArgumentException>\n//      ▼\nconst parsed = Url.fromString(\"https://example.com/path\")\n\nif (Either.isRight(parsed)) {\n  console.log(\"Parsed URL:\", parsed.right.toString())\n} else {\n  console.log(\"Error:\", parsed.left.message)\n}\n// Output: Parsed URL: https://example.com/path\n\n// Parse a relative URL with a base\nconst relativeParsed = Url.fromString(\"/relative-path\", \"https://example.com\")\n\nif (Either.isRight(relativeParsed)) {\n  console.log(\"Parsed relative URL:\", relativeParsed.right.toString())\n} else {\n  console.log(\"Error:\", relativeParsed.left.message)\n}\n// Output: Parsed relative URL: https://example.com/relative-path\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromString: (url: string, base?: string | URL | undefined) => Either.Either<URL, Cause.IllegalArgumentException>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L59"
   },
   {
     "_tag": "Function",
@@ -13790,15 +13774,13 @@
     },
     "project": "@effect/platform",
     "name": "urlParams",
-    "description": "Retrieves the query parameters from a URL.\n\n**Details**\n\nThis function extracts the query parameters from a `URL` object and returns\nthem as `UrlParams`. The resulting structure can be easily manipulated or\ninspected.",
+    "description": "Retrieves the query parameters from a URL.\n\n**Details**\n\nThis function extracts the query parameters from a `URL` object and returns\nthem as `UrlParams`. The resulting structure can be easily manipulated or\ninspected.\n\n**Example**\n\n```ts\nimport { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Read parameters\nconst params = Url.urlParams(myUrl)\n\nconsole.log(params)\n// Output: [ [ 'foo', 'bar' ] ]\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport { Url } from \"@effect/platform\"\n\nconst myUrl = new URL(\"https://example.com?foo=bar\")\n\n// Read parameters\nconst params = Url.urlParams(myUrl)\n\nconsole.log(params)\n// Output: [ [ 'foo', 'bar' ] ]\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "Getters",
     "signature": "declare const urlParams: (url: URL) => UrlParams.UrlParams",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L283"
   },
   {
     "_tag": "Constant",
@@ -14003,15 +13985,13 @@
     },
     "project": "@effect/platform",
     "name": "toRecord",
-    "description": "Builds a `Record` containing all the key-value pairs in the given `UrlParams`\nas `string` (if only one value for a key) or a `NonEmptyArray<string>`\n(when more than one value for a key)",
+    "description": "Builds a `Record` containing all the key-value pairs in the given `UrlParams`\nas `string` (if only one value for a key) or a `NonEmptyArray<string>`\n(when more than one value for a key)\n\n**Example**\n\n```ts\nimport * as assert from \"node:assert\"\nimport { UrlParams } from \"@effect/platform\"\n\nconst urlParams = UrlParams.fromInput({ a: 1, b: true, c: \"string\", e: [1, 2, 3] })\nconst result = UrlParams.toRecord(urlParams)\n\nassert.deepStrictEqual(\n  result,\n  { \"a\": \"1\", \"b\": \"true\", \"c\": \"string\", \"e\": [\"1\", \"2\", \"3\"] }\n)\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { UrlParams } from \"@effect/platform\"\n\nconst urlParams = UrlParams.fromInput({ a: 1, b: true, c: \"string\", e: [1, 2, 3] })\nconst result = UrlParams.toRecord(urlParams)\n\nassert.deepStrictEqual(\n  result,\n  { \"a\": \"1\", \"b\": \"true\", \"c\": \"string\", \"e\": [\"1\", \"2\", \"3\"] }\n)\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toRecord: (self: UrlParams) => Record<string, string | Arr.NonEmptyArray<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L235"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L236"
   },
   {
     "_tag": "Function",
@@ -14026,7 +14006,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => { (field: string): (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>; (self: UrlParams, field: string): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L254"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L255"
   },
   {
     "_tag": "Function",
@@ -14036,15 +14016,13 @@
     },
     "project": "@effect/platform",
     "name": "schemaStruct",
-    "description": "Extract schema from all key-value pairs in the given `UrlParams`.",
+    "description": "Extract schema from all key-value pairs in the given `UrlParams`.\n\n**Example**\n\n```ts\nimport * as assert from \"node:assert\"\nimport { Effect, Schema } from \"effect\"\nimport { UrlParams } from \"@effect/platform\"\n\nEffect.gen(function* () {\n  const urlParams = UrlParams.fromInput({ \"a\": [10, \"string\"], \"b\": false })\n  const result = yield* UrlParams.schemaStruct(Schema.Struct({\n    a: Schema.Tuple(Schema.NumberFromString, Schema.String),\n    b: Schema.BooleanFromString\n  }))(urlParams)\n\n  assert.deepStrictEqual(result, {\n    a: [10, \"string\"],\n    b: false\n  })\n})\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Effect, Schema } from \"effect\"\nimport { UrlParams } from \"@effect/platform\"\n\nEffect.gen(function* () {\n  const urlParams = UrlParams.fromInput({ \"a\": [10, \"string\"], \"b\": false })\n  const result = yield* UrlParams.schemaStruct(Schema.Struct({\n    a: Schema.Tuple(Schema.NumberFromString, Schema.String),\n    b: Schema.BooleanFromString\n  }))(urlParams)\n\n  assert.deepStrictEqual(result, {\n    a: [10, \"string\"],\n    b: false\n  })\n})\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaStruct: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L296"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L298"
   },
   {
     "_tag": "Interface",

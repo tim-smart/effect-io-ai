@@ -21,6 +21,6 @@ a given timeframe.
 declare const TimeoutExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L209)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L210)
 
 Since v2.0.0

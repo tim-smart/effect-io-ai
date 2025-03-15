@@ -19,7 +19,7 @@ import { Effect, Logger, LogLevel } from "effect"
 
 const program = Effect.logDebug("message1").pipe(Logger.withMinimumLogLevel(LogLevel.Debug))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=DEBUG fiber=#0 message=message1
 ```
 
@@ -29,6 +29,6 @@ const program = Effect.logDebug("message1").pipe(Logger.withMinimumLogLevel(LogL
 declare const logDebug: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10741)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10907)
 
 Since v2.0.0

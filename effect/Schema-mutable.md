@@ -11,6 +11,6 @@ Creates a new schema with shallow mutability applied to its properties.
 declare const mutable: <S extends Schema.Any>(schema: S) => mutable<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3226)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3270)
 
 Since v3.10.0

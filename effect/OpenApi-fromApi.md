@@ -40,7 +40,7 @@ const api = HttpApi.make("api").add(
 
 const spec = OpenApi.fromApi(api)
 
-// console.log(JSON.stringify(spec, null, 2))
+console.log(JSON.stringify(spec, null, 2))
 // Output: OpenAPI specification in JSON format
 ```
 
@@ -50,6 +50,6 @@ const spec = OpenApi.fromApi(api)
 declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>, options?: { readonly additionalPropertiesStrategy?: AdditionalPropertiesStrategy | undefined; } | undefined) => OpenAPISpec
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApi.ts#L229)
 
 Since v1.0.0

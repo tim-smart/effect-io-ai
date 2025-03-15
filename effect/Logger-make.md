@@ -28,7 +28,7 @@ const program = Effect.gen(function*() {
   Effect.provide(Logger.replace(Logger.defaultLogger, logger))
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // [INFO] start
 // [DEBUG] task1 done
 // [DEBUG] task2 done

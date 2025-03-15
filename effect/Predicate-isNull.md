@@ -23,6 +23,6 @@ assert.deepStrictEqual(isNull("null"), false)
 declare const isNull: (input: unknown) => input is null
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L373)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L377)
 
 Since v2.0.0

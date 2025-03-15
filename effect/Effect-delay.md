@@ -28,7 +28,7 @@ const program = Console.log("start").pipe(
   )
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // start
 // Task executed
@@ -40,6 +40,6 @@ const program = Console.log("start").pipe(
 declare const delay: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6707)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6834)
 
 Since v2.0.0

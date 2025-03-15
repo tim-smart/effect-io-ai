@@ -29,7 +29,7 @@ const program = Effect.gen(function*() {
   }).pipe(LogLevel.locally(LogLevel.Warning))
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=INFO fiber=#0 message=message1
 // timestamp=... level=WARN fiber=#0 message=message2
 // timestamp=... level=WARN fiber=#0 message=message3

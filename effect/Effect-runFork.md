@@ -32,10 +32,9 @@ observation or management, like logging, monitoring, or scheduled tasks.
 This function is ideal if you don't need the result immediately or if the
 effect is part of a larger concurrent workflow.
 
-**Example**
+**Example** (Running an Effect in the Background)
 
 ```ts
-// Title: Running an Effect in the Background
 import { Effect, Console, Schedule, Fiber } from "effect"
 
 //      ┌─── Effect<number, never, never>
@@ -60,6 +59,6 @@ setTimeout(() => {
 declare const runFork: <A, E>(effect: Effect<A, E>, options?: Runtime.RunForkOptions) => Fiber.RuntimeFiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11815)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11992)
 
 Since v2.0.0

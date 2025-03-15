@@ -18,6 +18,6 @@ export interface Empty extends Cause.Variance<never>, Equal.Equal, Pipeable, Ins
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L454)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L455)
 
 Since v2.0.0

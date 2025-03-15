@@ -17,7 +17,7 @@ const stream = Stream.paginate(0, (n) => [
   n < 3 ? Option.some(n + 1) : Option.none()
 ])
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 0, 1, 2, 3 ] }
 ```
 

@@ -49,10 +49,9 @@ Similarly, the `{ mode: "validate" }` option uses `Option` to indicate
 success or failure. Each effect returns `None` for success and `Some` with
 the error for failure.
 
-**Example**
+**Example** (Combining Effects in Tuples)
 
 ```ts
-// Title: Combining Effects in Tuples
 import { Effect, Console } from "effect"
 
 const tupleOfEffects = [
@@ -64,17 +63,16 @@ const tupleOfEffects = [
 //      ▼
 const resultsAsTuple = Effect.all(tupleOfEffects)
 
-// Effect.runPromise(resultsAsTuple).then(console.log)
+Effect.runPromise(resultsAsTuple).then(console.log)
 // Output:
 // 42
 // Hello
 // [ 42, 'Hello' ]
 ```
 
-**Example**
+**Example** (Combining Effects in Iterables)
 
 ```ts
-// Title: Combining Effects in Iterables
 import { Effect, Console } from "effect"
 
 const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map(
@@ -85,7 +83,7 @@ const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map(
 //      ▼
 const resultsAsArray = Effect.all(iterableOfEffects)
 
-// Effect.runPromise(resultsAsArray).then(console.log)
+Effect.runPromise(resultsAsArray).then(console.log)
 // Output:
 // 1
 // 2
@@ -93,10 +91,9 @@ const resultsAsArray = Effect.all(iterableOfEffects)
 // [ 1, 2, 3 ]
 ```
 
-**Example**
+**Example** (Combining Effects in Structs)
 
 ```ts
-// Title: Combining Effects in Structs
 import { Effect, Console } from "effect"
 
 const structOfEffects = {
@@ -108,17 +105,16 @@ const structOfEffects = {
 //      ▼
 const resultsAsStruct = Effect.all(structOfEffects)
 
-// Effect.runPromise(resultsAsStruct).then(console.log)
+Effect.runPromise(resultsAsStruct).then(console.log)
 // Output:
 // 42
 // Hello
 // { a: 42, b: 'Hello' }
 ```
 
-**Example**
+**Example** (Combining Effects in Records)
 
 ```ts
-// Title: Combining Effects in Records
 import { Effect, Console } from "effect"
 
 const recordOfEffects: Record<string, Effect.Effect<number>> = {
@@ -130,17 +126,16 @@ const recordOfEffects: Record<string, Effect.Effect<number>> = {
 //      ▼
 const resultsAsRecord = Effect.all(recordOfEffects)
 
-// Effect.runPromise(resultsAsRecord).then(console.log)
+Effect.runPromise(resultsAsRecord).then(console.log)
 // Output:
 // 1
 // 2
 // { key1: 1, key2: 2 }
 ```
 
-**Example**
+**Example** (Short-Circuiting Behavior)
 
 ```ts
-// Title: Short-Circuiting Behavior
 import { Effect, Console } from "effect"
 
 const program = Effect.all([
@@ -150,7 +145,7 @@ const program = Effect.all([
   Effect.succeed("Task3").pipe(Effect.tap(Console.log))
 ])
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Task1
 // {
@@ -160,10 +155,9 @@ const program = Effect.all([
 // }
 ```
 
-**Example**
+**Example** (Collecting Results with `mode: "either"`)
 
 ```ts
-// Title: Collecting Results with `mode: "either"`
 import { Effect, Console } from "effect"
 
 const effects = [
@@ -174,7 +168,7 @@ const effects = [
 
 const program = Effect.all(effects, { mode: "either" })
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Task1
 // Task3
@@ -189,10 +183,9 @@ const program = Effect.all(effects, { mode: "either" })
 // }
 ```
 
-**Example**
+**Example** (Collecting Results with `mode: "validate"`)
 
 ```ts
-//Example: Collecting Results with `mode: "validate"`
 import { Effect, Console } from "effect"
 
 const effects = [
@@ -203,7 +196,7 @@ const effects = [
 
 const program = Effect.all(effects, { mode: "validate" })
 
-// Effect.runPromiseExit(program).then((result) => console.log("%o", result))
+Effect.runPromiseExit(program).then((result) => console.log("%o", result))
 // Output:
 // Task1
 // Task3
@@ -233,6 +226,6 @@ const program = Effect.all(effects, { mode: "validate" })
 declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L789)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L806)
 
 Since v2.0.0

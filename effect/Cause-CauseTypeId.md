@@ -21,6 +21,6 @@ building internal utilities that check whether an unknown value is a `Cause`.
 declare const CauseTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L56)
 
 Since v2.0.0

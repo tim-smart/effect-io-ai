@@ -13,7 +13,7 @@ import { Effect, Random, Stream } from "effect"
 
 const stream = Stream.fromEffect(Random.nextInt)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Example Output: { _id: 'Chunk', values: [ 922694024 ] }
 ```
 

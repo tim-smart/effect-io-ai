@@ -31,7 +31,7 @@ const tapping1 = Effect.tapDefect(task1, (cause) =>
   Console.log(`defect: ${cause}`)
 )
 
-// Effect.runFork(tapping1)
+Effect.runFork(tapping1)
 // No Output
 
 // Simulate a severe failure in the system
@@ -44,7 +44,7 @@ const tapping2 = Effect.tapDefect(task2, (cause) =>
   Console.log(`defect: ${cause}`)
 )
 
-// Effect.runFork(tapping2)
+Effect.runFork(tapping2)
 // Output:
 // defect: RuntimeException: Something went wrong
 //   ... stack trace ...
@@ -56,6 +56,6 @@ const tapping2 = Effect.tapDefect(task2, (cause) =>
 declare const tapDefect: { <X, E2, R2>(f: (cause: Cause.Cause<never>) => Effect<X, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<never>) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9498)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9651)
 
 Since v2.0.0

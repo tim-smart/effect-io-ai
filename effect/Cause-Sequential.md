@@ -26,6 +26,6 @@ export interface Sequential<out E> extends Cause.Variance<E>, Equal.Equal, Pipea
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L556)
 
 Since v2.0.0

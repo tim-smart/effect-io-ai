@@ -30,7 +30,7 @@ const program = Effect.gen(function*() {
   yield* Effect.log("message2")
 }).pipe(Effect.annotateLogs("taskId", "1234")) // Annotation as key/value pair
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=INFO fiber=#0 message=message1 taskId=1234
 // timestamp=... level=INFO fiber=#0 message=message2 taskId=1234
 ```
@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const annotateLogs: { (key: string, value: unknown): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; (values: Record<string, unknown>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, key: string, value: unknown): Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, values: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10874)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11042)
 
 Since v2.0.0

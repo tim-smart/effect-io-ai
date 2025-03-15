@@ -22,6 +22,6 @@ console.log(result) // [1, 2, 3]
 declare const fromIterable: <A>(collection: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L168)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L165)
 
 Since v2.0.0

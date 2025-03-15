@@ -12,10 +12,9 @@ to specify conditions for handling different cases. Once the matcher is
 created, you can use pattern-matching functions like `when` to define
 how different values should be processed.
 
-**Example**
+**Example** (Matching Numbers and Strings)
 
 ```ts
-// Title: Matching Numbers and Strings
 import { Match } from "effect"
 
 // Create a matcher for values that are either strings or numbers

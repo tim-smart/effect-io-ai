@@ -43,10 +43,9 @@ This is useful for implementing loops where you need to perform effectful
 computations repeatedly, such as processing items in a list, generating
 values, or performing iterative updates.
 
-**Example**
+**Example** (Looping with Collected Results)
 
 ```ts
-// Title: Looping with Collected Results
 import { Effect } from "effect"
 
 // A loop that runs 5 times, collecting each iteration's result
@@ -63,14 +62,13 @@ const result = Effect.loop(
   }
 )
 
-// Effect.runPromise(result).then(console.log)
+Effect.runPromise(result).then(console.log)
 // Output: [1, 2, 3, 4, 5]
 ```
 
-**Example**
+**Example** (Loop with Discarded Results)
 
 ```ts
-// Title: Loop with Discarded Results
 import { Effect, Console } from "effect"
 
 const result = Effect.loop(
@@ -88,7 +86,7 @@ const result = Effect.loop(
   }
 )
 
-// Effect.runPromise(result).then(console.log)
+Effect.runPromise(result).then(console.log)
 // Output:
 // Currently at state 1
 // Currently at state 2
@@ -104,6 +102,6 @@ const result = Effect.loop(
 declare const loop: { <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9855)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10013)
 
 Since v2.0.0

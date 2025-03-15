@@ -30,7 +30,7 @@ const program = Effect.log(
   Cause.die("Oh uh!")
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // timestamp=... level=INFO fiber=#0 message=message1 message=message2 cause="Error: Oh no!
 // Error: Oh uh!"
@@ -42,6 +42,6 @@ const program = Effect.log(
 declare const log: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10657)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10820)
 
 Since v2.0.0

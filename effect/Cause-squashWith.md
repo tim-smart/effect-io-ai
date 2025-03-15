@@ -32,6 +32,6 @@ transformation of errors while processing a `Cause`.
 declare const squashWith: { <E>(f: (error: E) => unknown): (self: Cause<E>) => unknown; <E>(self: Cause<E>, f: (error: E) => unknown): unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1146)
 
 Since v2.0.0

@@ -18,10 +18,9 @@ This function is useful for scenarios where you need to dynamically decide
 whether to execute an effect based on runtime logic, while also representing
 the skipped case explicitly.
 
-**Example**
+**Example** (Conditional Effect Execution)
 
 ```ts
-// Title: Conditional Effect Execution
 import { Effect, Option } from "effect"
 
 const validateWeightOption = (
@@ -31,7 +30,7 @@ const validateWeightOption = (
   Effect.succeed(weight).pipe(Effect.when(() => weight >= 0))
 
 // Run with a valid weight
-// Effect.runPromise(validateWeightOption(100)).then(console.log)
+Effect.runPromise(validateWeightOption(100)).then(console.log)
 // Output:
 // {
 //   _id: "Option",
@@ -40,7 +39,7 @@ const validateWeightOption = (
 // }
 
 // Run with an invalid weight
-// Effect.runPromise(validateWeightOption(-5)).then(console.log)
+Effect.runPromise(validateWeightOption(-5)).then(console.log)
 // Output:
 // {
 //   _id: "Option",
@@ -59,6 +58,6 @@ const validateWeightOption = (
 declare const when: { (condition: LazyArg<boolean>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, condition: LazyArg<boolean>): Effect<Option.Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8654)
 
 Since v2.0.0

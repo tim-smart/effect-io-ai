@@ -22,7 +22,9 @@ const Int = Brand.refined<Int>(
   (n) => Brand.error(`Expected ${n} to be an integer`)
 )
 
-assert.strictEqual(Int(1), 1)
+console.log(Int(1))
+// 1
+
 assert.throws(() => Int(1.1))
 ```
 
@@ -32,6 +34,6 @@ assert.throws(() => Int(1.1))
 declare const refined: { <A extends Brand<any>>(f: (unbranded: Brand.Unbranded<A>) => Option.Option<Brand.BrandErrors>): Brand.Constructor<A>; <A extends Brand<any>>(refinement: Predicate<Brand.Unbranded<A>>, onFailure: (unbranded: Brand.Unbranded<A>) => Brand.BrandErrors): Brand.Constructor<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L221)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L224)
 
 Since v2.0.0

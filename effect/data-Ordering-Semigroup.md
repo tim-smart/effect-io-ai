@@ -8,12 +8,14 @@ Module: `Ordering`<br />
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { Semigroup } from "@effect/typeclass/data/Ordering"
 
-assert.deepStrictEqual(Semigroup.combine(0, -1), -1)
-assert.deepStrictEqual(Semigroup.combine(0, 1), 1)
-assert.deepStrictEqual(Semigroup.combine(1, -1), 1)
+console.log(Semigroup.combine(0, -1))
+// -1
+console.log(Semigroup.combine(0, 1))
+// 1
+console.log(Semigroup.combine(1, -1))
+// 1
 ```
 
 **Signature**
@@ -22,6 +24,6 @@ assert.deepStrictEqual(Semigroup.combine(1, -1), 1)
 declare const Semigroup: semigroup.Semigroup<Ordering>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Ordering.ts#L27)
 
 Since v0.24.0

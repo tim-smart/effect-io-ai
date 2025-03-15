@@ -44,7 +44,7 @@ const timedEffect = longRunningTask.pipe(
   Effect.timeout("1 second")
 )
 
-// Effect.runPromiseExit(timedEffect).then(console.log)
+Effect.runPromiseExit(timedEffect).then(console.log)
 // Output:
 // Start heavy processing...
 // {
@@ -70,6 +70,6 @@ const timedEffect = longRunningTask.pipe(
 declare const disconnect: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4742)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4805)
 
 Since v2.0.0

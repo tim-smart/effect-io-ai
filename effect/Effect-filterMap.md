@@ -26,7 +26,7 @@ const program = Effect.filterMap(
   (n) => n % 2 === 0 ? Option.some(n) : Option.none()
 )
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // task1 done
 // task2 done
@@ -41,6 +41,6 @@ const program = Effect.filterMap(
 declare const filterMap: { <Eff extends Effect<any, any, any>, B>(pf: (a: Effect.Success<Eff>) => Option.Option<B>): (elements: Iterable<Eff>) => Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, B>(elements: Iterable<Eff>, pf: (a: Effect.Success<Eff>) => Option.Option<B>): Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1456)
 
 Since v2.0.0

@@ -27,7 +27,7 @@ const program = Effect.gen(function*() {
   }
 })
 
-// Effect.runPromise(Effect.scoped(program)).then(console.log, console.error)
+Effect.runPromise(Effect.scoped(program)).then(console.log, console.error)
 // { _id: 'Chunk', values: [ 1, 2 ] }
 // { _id: 'Chunk', values: [ 3, 4 ] }
 // { _id: 'Chunk', values: [ 5 ] }

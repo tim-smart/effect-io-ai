@@ -21,6 +21,6 @@ occur during runtime.
 declare const RuntimeExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L77)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L78)
 
 Since v2.0.0

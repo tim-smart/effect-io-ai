@@ -17,6 +17,6 @@ Effect code.
 declare const runtime: <R = never>() => Effect<Runtime.Runtime<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11392)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11567)
 
 Since v2.0.0

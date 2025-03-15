@@ -17,7 +17,7 @@ const stream = Stream.range(0, 9).pipe(
   Stream.take(3)
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log(Chunk.toArray(chunks)))
+Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log(Chunk.toArray(chunks)))
 // [
 //   {
 //     _id: 'Chunk',

@@ -8,10 +8,9 @@ generator-based syntax for working with `Option` values, making code that
 involves `Option` easier to write and understand. This approach is similar to
 using `async/await` but tailored for `Option`.
 
-**Example**
+**Example** (Using `Option.gen` to Create a Combined Value)
 
 ```ts
-// Title: Using Option.gen to Create a Combined Value
 import { Option } from "effect"
 
 const maybeName: Option.Option<string> = Option.some("John")

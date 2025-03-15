@@ -16,6 +16,6 @@ ensures that it is restored to its original value when the scope is closed.
 declare const withConfigProviderScoped: (provider: ConfigProvider) => Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7355)
 
 Since v2.0.0

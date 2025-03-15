@@ -11,6 +11,6 @@ Lazily constructs a config.
 declare const suspend: <A>(config: LazyArg<Config<A>>) => Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L401)
 
 Since v2.0.0

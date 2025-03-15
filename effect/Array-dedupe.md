@@ -12,6 +12,6 @@ The equivalence used to compare elements is provided by `Equal.equivalence()` fr
 declare const dedupe: <S extends Iterable<any>>(self: S) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3034)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3037)
 
 Since v2.0.0

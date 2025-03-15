@@ -16,7 +16,7 @@ const numbers = Stream.make("1-2-3", "4-5", "6").pipe(
   Stream.map((s) => parseInt(s))
 )
 
-// Effect.runPromise(Stream.runCollect(numbers)).then(console.log)
+Effect.runPromise(Stream.runCollect(numbers)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 2, 3, 4, 5, 6 ] }
 ```
 

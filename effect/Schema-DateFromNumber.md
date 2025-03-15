@@ -15,6 +15,6 @@ any invalid `Date` object will be encoded to `NaN`.
 declare class DateFromNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6815)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6859)
 
 Since v3.10.0

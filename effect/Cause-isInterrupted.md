@@ -15,6 +15,6 @@ This function returns `true` if the `Cause` includes any fiber interruptions.
 declare const isInterrupted: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L789)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L790)
 
 Since v2.0.0

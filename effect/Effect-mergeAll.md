@@ -36,7 +36,7 @@ const program = Effect.gen(function*() {
   console.log(total)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: 6
 ```
 
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const mergeAll: { <Z, Eff extends Effect<any, any, any>>(zero: Z, f: (z: Z, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z>(elements: Iterable<Eff>, zero: Z, f: (z: Z, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, Effect.Error<Eff>, Effect.Context<Eff>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1671)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1703)
 
 Since v2.0.0

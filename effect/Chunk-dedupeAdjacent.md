@@ -11,6 +11,6 @@ Deduplicates adjacent elements that are identical.
 declare const dedupeAdjacent: <A>(self: Chunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1185)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1187)
 
 Since v2.0.0

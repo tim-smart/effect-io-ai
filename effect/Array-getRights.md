@@ -17,9 +17,9 @@ console.log(result) // [1, 2]
 **Signature**
 
 ```ts
-declare const getRights: <T extends Iterable<Either<any, any>>>(self: T) => Array<Either.Right<ReadonlyArray.Infer<T>>>
+declare const getRights: <T extends Iterable<Either.Either<any, any>>>(self: T) => Array<Either.Either.Right<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2570)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2574)
 
 Since v2.0.0

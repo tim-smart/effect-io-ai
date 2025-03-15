@@ -18,6 +18,6 @@ accumulating data in an external variable.
 declare const forEach: { <A, B>(f: (a: A, index: number) => B): (self: Chunk<A>) => void; <A, B>(self: Chunk<A>, f: (a: A, index: number) => B): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L756)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L758)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(result) // [0, 1, 3, 6, 10]
 declare const scan: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => NonEmptyArray<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): NonEmptyArray<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L459)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L456)
 
 Since v2.0.0

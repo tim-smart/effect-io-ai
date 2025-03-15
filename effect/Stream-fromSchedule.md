@@ -19,7 +19,7 @@ const schedule = Schedule.spaced("1 second").pipe(
 
 const stream = Stream.fromSchedule(schedule)
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 0, 1, 2, 3, 4 ] }
 ```
 

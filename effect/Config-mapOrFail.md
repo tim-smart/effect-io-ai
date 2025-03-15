@@ -13,6 +13,6 @@ function.
 declare const mapOrFail: { <A, B>(f: (a: A) => Either.Either<B, ConfigError.ConfigError>): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => Either.Either<B, ConfigError.ConfigError>): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L259)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L260)
 
 Since v2.0.0

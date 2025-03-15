@@ -11,6 +11,6 @@ A schema representing a single character.
 declare class Char
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4607)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4651)
 
 Since v3.10.0

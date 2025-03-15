@@ -41,7 +41,7 @@ const program = Effect.partition([0, 1, 2, 3, 4], (n) => {
   }
 })
 
-// Effect.runPromise(program).then(console.log, console.error)
+Effect.runPromise(program).then(console.log, console.error)
 // Output:
 // [ [ '1 is not even', '3 is not even' ], [ 0, 2, 4 ] ]
 ```
@@ -57,6 +57,6 @@ const program = Effect.partition([0, 1, 2, 3, 4], (n) => {
 declare const partition: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1746)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1779)
 
 Since v2.0.0

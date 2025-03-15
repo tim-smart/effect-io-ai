@@ -40,7 +40,7 @@ const modified = program.pipe(Effect.parallelFinalizers)
 
 const runnable = Effect.scoped(modified)
 
-// Effect.runFork(runnable)
+Effect.runFork(runnable)
 // Output:
 // Finalizer 2 executed
 // Finalizer 3 executed
@@ -57,6 +57,6 @@ const runnable = Effect.scoped(modified)
 declare const parallelFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5814)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5939)
 
 Since v2.0.0

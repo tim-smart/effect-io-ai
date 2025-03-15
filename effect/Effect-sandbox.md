@@ -52,7 +52,7 @@ const program = Effect.catchTags(sandboxed, {
 // Restore the original error handling with unsandbox
 const main = Effect.unsandbox(program)
 
-// Effect.runPromise(main).then(console.log)
+Effect.runPromise(main).then(console.log)
 // Output:
 // Caught a defect: Oh uh!
 // fallback result on failure
@@ -68,6 +68,6 @@ const main = Effect.unsandbox(program)
 declare const sandbox: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Cause.Cause<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4173)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4229)
 
 Since v2.0.0

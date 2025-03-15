@@ -17,6 +17,6 @@ cancellations.
 declare const interruptOption: <E>(self: Cause<E>) => Option.Option<FiberId.FiberId>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L917)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L918)
 
 Since v2.0.0

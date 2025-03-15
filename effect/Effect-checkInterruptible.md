@@ -32,10 +32,10 @@ const program = Effect.gen(function*() {
   })
 })
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output: You can interrupt this operation.
 
-// Effect.runPromise(program.pipe(Effect.uninterruptible))
+Effect.runPromise(program.pipe(Effect.uninterruptible))
 // Output: This operation cannot be interrupted.
 
 ```
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const checkInterruptible: <A, E, R>(f: (isInterruptible: boolean) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4677)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4739)
 
 Since v2.0.0

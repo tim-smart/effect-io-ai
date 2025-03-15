@@ -11,6 +11,6 @@ Replaces the entire URL string.
 declare const setHref: { (href: string): (url: URL) => URL; (url: URL, href: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L149)
 
 Since v1.0.0

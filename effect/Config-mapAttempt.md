@@ -13,6 +13,6 @@ may throw exceptions that will be translated into validation errors.
 declare const mapAttempt: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L246)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L247)
 
 Since v2.0.0

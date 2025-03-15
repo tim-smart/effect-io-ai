@@ -39,7 +39,7 @@ const program = Effect.gen(function*() {
   console.log(result)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: [2, 4]
 ```
 
@@ -49,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <A, E, R>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly negate?: boolean | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly negate?: boolean | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Array<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1372)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1398)
 
 Since v2.0.0

@@ -27,7 +27,7 @@ const program = Effect.gen(function*() {
   console.log("Task completed!")
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // Starting task...
 // Task completed!
@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const sleep: (duration: Duration.DurationInput) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6745)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6873)
 
 Since v2.0.0

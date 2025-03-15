@@ -21,6 +21,6 @@ assert.deepStrictEqual(isPromise(Promise.resolve("hello")), true)
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L679)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L683)
 
 Since v2.0.0

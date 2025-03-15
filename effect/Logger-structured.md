@@ -17,7 +17,7 @@ const program = Effect.log("message1", "message2").pipe(
   Effect.withLogSpan("myspan")
 )
 
-// Effect.runFork(program.pipe(Effect.provide(Logger.structured)))
+Effect.runFork(program.pipe(Effect.provide(Logger.structured)))
 // {
 //   message: [ 'message1', 'message2' ],
 //   logLevel: 'INFO',

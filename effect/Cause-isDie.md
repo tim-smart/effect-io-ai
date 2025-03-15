@@ -17,6 +17,6 @@ unexpected ones.
 declare const isDie: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L777)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L778)
 
 Since v2.0.0

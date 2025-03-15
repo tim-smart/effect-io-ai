@@ -20,7 +20,7 @@ const stream = Stream.scoped(
  Stream.flatMap(() => Console.log("use"))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // acquire
 // use
 // release

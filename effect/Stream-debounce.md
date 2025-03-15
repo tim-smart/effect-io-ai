@@ -40,7 +40,7 @@ const stream = Stream.make(1, 2, 3).pipe(
   Stream.tap((n) => log(`> Emitted ${n}`))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Received 1 after 5ms
 // Received 2 after 2ms
 // Received 3 after 0ms

@@ -39,7 +39,7 @@ const program = Effect.validateAll([1, 2, 3, 4, 5], (n) => {
   }
 })
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // item 1
 // item 2
@@ -67,6 +67,6 @@ instead of losing successes with errors.
 declare const validateAll: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<B>, RA.NonEmptyArray<E>, R>; <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): (elements: Iterable<A>) => Effect<void, RA.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: false | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Array<B>, RA.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard: true; readonly concurrentFinalizers?: boolean | undefined; }): Effect<void, RA.NonEmptyArray<E>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2236)
 
 Since v2.0.0

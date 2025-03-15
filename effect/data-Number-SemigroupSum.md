@@ -8,10 +8,10 @@ Module: `Number`<br />
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { SemigroupSum } from "@effect/typeclass/data/Number"
 
-assert.deepStrictEqual(SemigroupSum.combine(2, 3), 5)
+console.log(SemigroupSum.combine(2, 3))
+// 5
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(SemigroupSum.combine(2, 3), 5)
 declare const SemigroupSum: semigroup.Semigroup<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Number.ts#L34)
 
 Since v0.24.0

@@ -19,6 +19,6 @@ unmatched defects.
 declare const stripSomeDefects: { (pf: (defect: unknown) => Option.Option<unknown>): <E>(self: Cause<E>) => Option.Option<Cause<E>>; <E>(self: Cause<E>, pf: (defect: unknown) => Option.Option<unknown>): Option.Option<Cause<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L979)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L980)
 
 Since v2.0.0

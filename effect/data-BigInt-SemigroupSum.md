@@ -8,10 +8,10 @@ Module: `BigInt`<br />
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { SemigroupSum } from "@effect/typeclass/data/BigInt"
 
-assert.deepStrictEqual(SemigroupSum.combine(2n, 3n), 5n)
+console.log(SemigroupSum.combine(2n, 3n))
+// 5n
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(SemigroupSum.combine(2n, 3n), 5n)
 declare const SemigroupSum: semigroup.Semigroup<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L23)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/BigInt.ts#L24)
 
 Since v0.24.0

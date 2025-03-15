@@ -41,7 +41,7 @@ const program = Effect.gen(function*() {
   console.log(result)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: [ 1, 2, 3, 4 ]
 ```
 
@@ -56,6 +56,6 @@ predicate returns `true`.
 declare const takeUntil: { <A, R, E>(predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<Array<A>, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: NoInfer<A>, i: number) => Effect<boolean, E, R>): Effect<Array<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1156)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1178)
 
 Since v2.0.0

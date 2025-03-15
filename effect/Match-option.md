@@ -15,10 +15,9 @@ This is useful in cases where a missing match is expected and should be
 handled explicitly rather than throwing an error or returning a default
 value.
 
-**Example**
+**Example** (Extracting a User Role with `Match.option`)
 
 ```ts
-// Title: Extracting a User Role with Option
 import { Match } from "effect"
 
 type User = { readonly role: "admin" | "editor" | "viewer" }

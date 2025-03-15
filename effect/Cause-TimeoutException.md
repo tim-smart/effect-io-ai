@@ -14,6 +14,6 @@ export interface TimeoutException extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L423)
 
 Since v2.0.0

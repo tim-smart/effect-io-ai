@@ -26,7 +26,7 @@ const stream = Stream.acquireRelease(
   (file) => file.close
 ).pipe(Stream.flatMap((file) => file.getLines))
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Opening file.txt
 // Closing file.txt
 // { _id: 'Chunk', values: [ [ 'Line 1', 'Line 2', 'Line 3' ] ] }

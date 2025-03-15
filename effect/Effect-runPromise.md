@@ -21,23 +21,21 @@ Use this function when you need to execute an effect and work with its result
 in a promise-based system, such as when integrating with third-party
 libraries that expect `Promise` results.
 
-**Example**
+**Example** (Running a Successful Effect as a Promise)
 
 ```ts
-// Title: Running a Successful Effect as a Promise
 import { Effect } from "effect"
 
-// Effect.runPromise(Effect.succeed(1)).then(console.log)
+Effect.runPromise(Effect.succeed(1)).then(console.log)
 // Output: 1
 ```
 
-**Example**
+**Example** (Handling a Failing Effect as a Rejected Promise)
 
 ```ts
-//Example: Handling a Failing Effect as a Rejected Promise
 import { Effect } from "effect"
 
-// Effect.runPromise(Effect.fail("my error")).catch(console.error)
+Effect.runPromise(Effect.fail("my error")).catch(console.error)
 // Output:
 // (FiberFailure) Error: my error
 ```
@@ -53,6 +51,6 @@ of rejecting.
 declare const runPromise: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11885)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12064)
 
 Since v2.0.0

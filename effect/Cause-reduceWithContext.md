@@ -30,6 +30,6 @@ context or configuration, such as:
 declare const reduceWithContext: { <C, E, Z>(context: C, reducer: CauseReducer<C, E, Z>): (self: Cause<E>) => Z; <C, E, Z>(self: Cause<E>, context: C, reducer: CauseReducer<C, E, Z>): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1309)
 
 Since v2.0.0

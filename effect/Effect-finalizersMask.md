@@ -20,6 +20,6 @@ the effect passed to it is executed under the default execution strategy.
 declare const finalizersMask: (strategy: ExecutionStrategy) => <A, E, R>(self: (restore: <A1, E1, R1>(self: Effect<A1, E1, R1>) => Effect<A1, E1, R1>) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5851)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5976)
 
 Since v2.0.0

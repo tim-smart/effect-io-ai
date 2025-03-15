@@ -8,9 +8,9 @@ Separates an `Iterable` into two arrays based on a predicate.
 **Signature**
 
 ```ts
-declare const separate: <T extends Iterable<Either<any, any>>>(self: T) => [Array<Either.Left<ReadonlyArray.Infer<T>>>, Array<Either.Right<ReadonlyArray.Infer<T>>>]
+declare const separate: <T extends Iterable<Either.Either<any, any>>>(self: T) => [Array<Either.Either.Left<ReadonlyArray.Infer<T>>>, Array<Either.Either.Right<ReadonlyArray.Infer<T>>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2656)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2660)
 
 Since v2.0.0

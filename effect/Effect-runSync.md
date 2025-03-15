@@ -32,10 +32,9 @@ Avoid using this function for effects that can fail or require asynchronous
 handling. For such cases, consider using `runPromise` or
 `runSyncExit`.
 
-**Example**
+**Example** (Synchronous Logging)
 
 ```ts
-// Title: Synchronous Logging
 import { Effect } from "effect"
 
 const program = Effect.sync(() => {
@@ -50,10 +49,9 @@ console.log(result)
 // Output: 1
 ```
 
-**Example**
+**Example** (Incorrect Usage with Failing or Async Effects)
 
 ```ts
-// Title: Incorrect Usage with Failing or Async Effects
 import { Effect } from "effect"
 
 try {
@@ -86,6 +84,6 @@ throwing an error.
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12207)
 
 Since v2.0.0

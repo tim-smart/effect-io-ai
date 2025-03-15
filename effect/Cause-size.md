@@ -16,6 +16,6 @@ structure, reflecting how many individual error elements are recorded.
 declare const size: <E>(self: Cause<E>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L735)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L736)
 
 Since v2.0.0

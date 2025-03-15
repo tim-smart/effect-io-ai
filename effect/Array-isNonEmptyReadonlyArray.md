@@ -22,6 +22,6 @@ console.log(Array.isNonEmptyReadonlyArray([1, 2, 3])) // true
 declare const isNonEmptyReadonlyArray: <A>(self: ReadonlyArray<A>) => self is NonEmptyReadonlyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L592)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L589)
 
 Since v2.0.0

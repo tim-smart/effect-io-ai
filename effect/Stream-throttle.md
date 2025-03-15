@@ -39,7 +39,7 @@ const stream = Stream.fromSchedule(Schedule.spaced("50 millis")).pipe(
   Stream.tap((n) => log(`> Emitted ${n}`))
 )
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Received 0 after 56ms
 // > Emitted 0 after 0ms
 // Received 1 after 52ms

@@ -17,6 +17,6 @@ This function inspects the entire `Cause` and produces an array of
 declare const prettyErrors: <E>(cause: Cause<E>) => Array<PrettyError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1530)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1531)
 
 Since v3.2.0

@@ -41,7 +41,7 @@ const effect = Effect.try(() => {
 
 const program = Effect.eventually(effect)
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // running effect
 // running effect
@@ -55,6 +55,6 @@ const program = Effect.eventually(effect)
 declare const eventually: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4016)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4070)
 
 Since v2.0.0

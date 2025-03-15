@@ -18,6 +18,6 @@ optional errors and filtering out certain error paths.
 declare const flipCauseOption: <E>(self: Cause<Option.Option<E>>) => Option.Option<Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L889)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L890)
 
 Since v2.0.0

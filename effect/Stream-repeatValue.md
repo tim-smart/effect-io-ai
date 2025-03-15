@@ -12,7 +12,7 @@ import { Effect, Stream } from "effect"
 
 const stream = Stream.repeatValue(0)
 
-// Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
 // { _id: 'Chunk', values: [ 0, 0, 0, 0, 0 ] }
 ```
 

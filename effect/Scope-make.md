@@ -13,6 +13,6 @@ will be used by default.
 declare const make: (executionStrategy?: ExecutionStrategy.ExecutionStrategy) => Effect.Effect<CloseableScope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L200)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L202)
 
 Since v2.0.0

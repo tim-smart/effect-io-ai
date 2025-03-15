@@ -15,10 +15,9 @@ using the provided fallback logic.
 **Note**: This function only handles recoverable errors. It will not recover
 from unrecoverable defects.
 
-**Example**
+**Example** (Providing Recovery Logic for Recoverable Errors)
 
 ```ts
-// Title: Providing Recovery Logic for Recoverable Errors
 import { Effect, Random } from "effect"
 
 class HttpError {
@@ -63,6 +62,6 @@ recoverable and unrecoverable errors.
 declare const catchAll: { <E, A2, E2, R2>(f: (e: E) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, f: (e: E) => Effect<A2, E2, R2>): Effect<A2 | A, E2, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3401)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3453)
 
 Since v2.0.0

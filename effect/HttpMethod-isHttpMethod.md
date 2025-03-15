@@ -8,12 +8,14 @@ Tests if a value is a `HttpMethod`.
 **Example**
 
 ```ts
-import * as assert from "node:assert"
 import { HttpMethod } from "@effect/platform"
 
-assert.deepStrictEqual(HttpMethod.isHttpMethod("GET"), true)
-assert.deepStrictEqual(HttpMethod.isHttpMethod("get"), false)
-assert.deepStrictEqual(HttpMethod.isHttpMethod(1), false)
+console.log(HttpMethod.isHttpMethod("GET"))
+// true
+console.log(HttpMethod.isHttpMethod("get"))
+// false
+console.log(HttpMethod.isHttpMethod(1))
+// false
 ```
 
 **Signature**
@@ -22,6 +24,6 @@ assert.deepStrictEqual(HttpMethod.isHttpMethod(1), false)
 declare const isHttpMethod: (u: unknown) => u is HttpMethod
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMethod.ts#L58)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMethod.ts#L61)
 
 Since v1.0.0

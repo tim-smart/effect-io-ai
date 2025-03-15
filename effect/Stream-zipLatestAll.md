@@ -21,7 +21,7 @@ const stream = Stream.zipLatestAll(
     Stream.fromSchedule(Schedule.spaced('4 millis')),
 ).pipe(Stream.take(6), Stream.tap(Console.log))
 
-// Effect.runPromise(Stream.runDrain(stream))
+Effect.runPromise(Stream.runDrain(stream))
 // Output:
 // [ 0, 0, 0 ]
 // [ 1, 0, 0 ]

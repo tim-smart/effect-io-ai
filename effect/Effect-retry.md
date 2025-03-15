@@ -23,10 +23,9 @@ issues or temporary resource unavailability. By defining a retry policy, you
 can control the number of retries, the delay between them, and when to stop
 retrying.
 
-**Example**
+**Example** (Retrying with a Fixed Delay)
 
 ```ts
-// Title: Retrying with a Fixed Delay
 import { Effect, Schedule } from "effect"
 
 let count = 0
@@ -48,7 +47,7 @@ const policy = Schedule.fixed("100 millis")
 
 const repeated = Effect.retry(task, policy)
 
-// Effect.runPromise(repeated).then(console.log)
+Effect.runPromise(repeated).then(console.log)
 // Output:
 // failure
 // failure
@@ -57,10 +56,9 @@ const repeated = Effect.retry(task, policy)
 // yay!
 ```
 
-**Example**
+**Example** (Retrying a Task up to 5 times)
 
 ```ts
-// Title: Retrying a Task up to 5 times
 import { Effect } from "effect"
 
 let count = 0
@@ -78,7 +76,7 @@ const task = Effect.async<string, Error>((resume) => {
 })
 
 // Retry the task up to 5 times
-// Effect.runPromise(Effect.retry(task, { times: 5 }))
+Effect.runPromise(Effect.retry(task, { times: 5 })).then(console.log)
 // Output:
 // failure
 // failure
@@ -86,10 +84,9 @@ const task = Effect.async<string, Error>((resume) => {
 // success
 ```
 
-**Example**
+**Example** (Retrying Until a Specific Condition is Met)
 
 ```ts
-// Title: Retrying Until a Specific Condition is Met
 import { Effect } from "effect"
 
 let count = 0
@@ -105,7 +102,7 @@ const program = Effect.retry(action, {
   until: (err) => err === "Error 3"
 })
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // Action called 1 time(s)
 // Action called 2 time(s)
@@ -128,6 +125,6 @@ const program = Effect.retry(action, {
 declare const retry: { <E, O extends NoExcessProperties<Retry.Options<E>, O>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Retry.Options<E>, O>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, E, R1>): Effect<A, E, R1 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4327)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4383)
 
 Since v2.0.0

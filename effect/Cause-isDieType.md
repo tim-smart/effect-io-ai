@@ -15,6 +15,6 @@ Checks if a `Cause` is a `Die` type.
 declare const isDieType: <E>(self: Cause<E>) => self is Die
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L692)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L693)
 
 Since v2.0.0

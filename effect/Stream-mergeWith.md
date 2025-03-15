@@ -26,7 +26,7 @@ const stream = Stream.mergeWith(s1, s2, {
   onOther: (n) => Math.floor(n)
 })
 
-// Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // { _id: 'Chunk', values: [ 1, 4, 2, 3, 5, 6 ] }
 ```
 

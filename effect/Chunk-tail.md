@@ -11,6 +11,6 @@ Returns every elements after the first.
 declare const tail: <A>(self: Chunk<A>) => Option<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1113)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1115)
 
 Since v2.0.0

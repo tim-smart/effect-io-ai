@@ -20,6 +20,6 @@ to represent an absence of failure conditions.
 declare const empty: Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L574)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L575)
 
 Since v2.0.0

@@ -23,7 +23,7 @@ const program = Effect.logWithLevel(
   Cause.die("System failure!")
 )
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // timestamp=... level=ERROR fiber=#0 message=Critical error encountered cause="Error: System failure!"
 ```
@@ -34,6 +34,6 @@ const program = Effect.logWithLevel(
 declare const logWithLevel: (level: LogLevel.LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10687)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10851)
 
 Since v2.0.0

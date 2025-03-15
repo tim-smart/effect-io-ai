@@ -12,7 +12,7 @@ import { Effect, Stream } from "effect"
 
 const stream = Stream.range(0, 8).pipe(Stream.grouped(3))
 
-// Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log("%o", chunks))
+Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log("%o", chunks))
 // {
 //   _id: 'Chunk',
 //   values: [

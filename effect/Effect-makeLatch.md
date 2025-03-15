@@ -32,7 +32,7 @@ const program = Effect.gen(function*() {
   yield* fiber.await
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: open sesame (after 1 second)
 ```
 
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const makeLatch: (open?: boolean | undefined) => Effect<Latch, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11759)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11936)
 
 Since v3.8.0

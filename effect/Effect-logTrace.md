@@ -20,7 +20,7 @@ import { Effect, Logger, LogLevel } from "effect"
 
 const program = Effect.logTrace("message1").pipe(Logger.withMinimumLogLevel(LogLevel.Trace))
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=TRACE fiber=#0 message=message1
 ```
 
@@ -30,6 +30,6 @@ const program = Effect.logTrace("message1").pipe(Logger.withMinimumLogLevel(LogL
 declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10716)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10881)
 
 Since v2.0.0

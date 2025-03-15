@@ -36,7 +36,7 @@ const numbers = Effect.scoped(
   )
 )
 
-// Effect.runPromise(numbers).then(console.log)
+Effect.runPromise(numbers).then(console.log)
 // Emit 1 element before broadcasting
 // Emit 2 element before broadcasting
 // Emit 3 element before broadcasting

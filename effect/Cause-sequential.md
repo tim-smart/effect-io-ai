@@ -21,6 +21,6 @@ failure information.
 declare const sequential: <E, E2>(left: Cause<E>, right: Cause<E2>) => Cause<E | E2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L654)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L655)
 
 Since v2.0.0

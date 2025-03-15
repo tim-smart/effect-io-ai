@@ -24,6 +24,6 @@ type Cause<E> = | Empty
   | Parallel<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L253)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L254)
 
 Since v2.0.0

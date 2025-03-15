@@ -30,6 +30,6 @@ Use this function when:
 declare const serviceOption: <I, S>(tag: Context.Tag<I, S>) => Effect<Option.Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7593)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7731)
 
 Since v2.0.0

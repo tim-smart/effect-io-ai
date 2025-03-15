@@ -21,6 +21,6 @@ helping the framework handle interruption logic correctly.
 declare const InterruptedExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L100)
 
 Since v2.0.0

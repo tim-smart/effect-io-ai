@@ -21,6 +21,6 @@ structure.
 declare const NoSuchElementExceptionTypeId: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L144)
 
 Since v2.0.0

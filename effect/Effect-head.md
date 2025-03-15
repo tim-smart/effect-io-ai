@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
   console.log(firstElement)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: 1
 ```
 
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const head: <A, E, R>(self: Effect<Iterable<A>, E, R>) => Effect<A, Cause.NoSuchElementException | E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1628)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1659)
 
 Since v2.0.0

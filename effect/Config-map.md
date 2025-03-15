@@ -12,6 +12,6 @@ a different value, constructed using the specified function.
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L234)
 
 Since v2.0.0

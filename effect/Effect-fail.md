@@ -11,10 +11,9 @@ Use this function to explicitly signal an error in an `Effect`. The error
 will keep propagating unless it is handled. You can handle the error with
 functions like `catchAll` or `catchTag`.
 
-**Example**
+**Example** (Creating a Failed Effect)
 
 ```ts
-// Title: Creating a Failed Effect
 import { Effect } from "effect"
 
 //      ┌─── Effect<never, Error, never>
@@ -34,6 +33,6 @@ const failure = Effect.fail(
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2510)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2556)
 
 Since v2.0.0

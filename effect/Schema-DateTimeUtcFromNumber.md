@@ -11,6 +11,6 @@ Defines a schema that attempts to convert a `number` to a `DateTime.Utc` instanc
 declare class DateTimeUtcFromNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6855)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6899)
 
 Since v3.10.0

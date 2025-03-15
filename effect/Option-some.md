@@ -5,10 +5,9 @@ Module: `Option`<br />
 
 Wraps the given value into an `Option` to represent its presence.
 
-**Example**
+**Example** (Creating an Option with a Value)
 
 ```ts
-// Title: Creating an Option with a Value
 import { Option } from "effect"
 
 // An Option holding the number 1

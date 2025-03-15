@@ -14,6 +14,6 @@ interruption.
 declare const use: { (scope: CloseableScope): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Scope>>; <A, E, R>(effect: Effect.Effect<A, E, R>, scope: CloseableScope): Effect.Effect<A, E, Exclude<R, Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L189)
 
 Since v2.0.0

@@ -29,7 +29,7 @@ const tapping1 = Effect.tapErrorCause(task1, (cause) =>
   Console.log(`error cause: ${cause}`)
 )
 
-// Effect.runFork(tapping1)
+Effect.runFork(tapping1)
 // Output:
 // error cause: Error: NetworkError
 
@@ -42,7 +42,7 @@ const tapping2 = Effect.tapErrorCause(task2, (cause) =>
   Console.log(`error cause: ${cause}`)
 )
 
-// Effect.runFork(tapping2)
+Effect.runFork(tapping2)
 // Output:
 // error cause: RuntimeException: Something went wrong
 //   ... stack trace ...
@@ -54,6 +54,6 @@ const tapping2 = Effect.tapErrorCause(task2, (cause) =>
 declare const tapErrorCause: { <E, X, E2, R2>(f: (cause: Cause.Cause<NoInfer<E>>) => Effect<X, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<E>) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9655)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9811)
 
 Since v2.0.0

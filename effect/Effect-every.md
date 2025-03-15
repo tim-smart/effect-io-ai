@@ -36,7 +36,7 @@ const program = Effect.gen(function*() {
   console.log(allEven)
 })
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output: true
 ```
 
@@ -51,6 +51,6 @@ whether **any** element satisfies the predicate.
 declare const every: { <A, E, R>(predicate: (a: A, i: number) => Effect<boolean, E, R>): (elements: Iterable<A>) => Effect<boolean, E, R>; <A, E, R>(elements: Iterable<A>, predicate: (a: A, i: number) => Effect<boolean, E, R>): Effect<boolean, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1280)
 
 Since v2.0.0

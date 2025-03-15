@@ -17,10 +17,9 @@ By default, the effects are executed sequentially. If the `concurrent` option
 is set to `true`, the effects will run concurrently, potentially improving
 performance for independent operations.
 
-**Example**
+**Example** (Combining Two Effects Sequentially)
 
 ```ts
-// Title: Combining Two Effects Sequentially
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(
@@ -38,17 +37,16 @@ const task2 = Effect.succeed("hello").pipe(
 //      ▼
 const program = Effect.zip(task1, task2)
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task1 done"
 // timestamp=... level=INFO fiber=#0 message="task2 done"
 // [ 1, 'hello' ]
 ```
 
-**Example**
+**Example** (Combining Two Effects Concurrently)
 
 ```ts
-// Title: Combining Two Effects Concurrently
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(
@@ -63,7 +61,7 @@ const task2 = Effect.succeed("hello").pipe(
 // Run both effects concurrently using the concurrent option
 const program = Effect.zip(task1, task2, { concurrent: true })
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // timestamp=... level=INFO fiber=#0 message="task2 done"
 // timestamp=... level=INFO fiber=#0 message="task1 done"
@@ -82,6 +80,6 @@ function.
 declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, A2], E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12293)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12479)
 
 Since v2.0.0

@@ -25,7 +25,7 @@ const program = Effect.gen(function* () {
   yield* Effect.whenLogLevel(Effect.logDebug("message2"), LogLevel.Debug); // returns `Some`
 }).pipe(Logger.withMinimumLogLevel(LogLevel.Debug));
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // timestamp=... level=DEBUG fiber=#0 message=message2
 ```
 
@@ -39,6 +39,6 @@ const program = Effect.gen(function* () {
 declare const whenLogLevel: { (level: LogLevel.LogLevel | LogLevel.Literal): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, level: LogLevel.LogLevel | LogLevel.Literal): Effect<Option.Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11017)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11188)
 
 Since v3.13.0

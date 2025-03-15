@@ -17,6 +17,6 @@ of errors.
 declare const dieOption: <E>(self: Cause<E>) => Option.Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L903)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L904)
 
 Since v2.0.0

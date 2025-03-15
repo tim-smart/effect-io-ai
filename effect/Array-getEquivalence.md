@@ -20,6 +20,6 @@ console.log(eq([1, 2, 3], [1, 2, 3])) // true
 declare const getEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2967)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2970)
 
 Since v2.0.0

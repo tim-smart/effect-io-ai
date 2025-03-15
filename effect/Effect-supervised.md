@@ -12,10 +12,9 @@ all child fibers forked within it are supervised by the provided supervisor.
 This enables you to capture detailed information about these child fibers,
 such as their status, through the supervisor.
 
-**Example**
+**Example** (Monitoring Fiber Count)
 
 ```ts
-// Title: Monitoring Fiber Count
 import { Effect, Supervisor, Schedule, Fiber, FiberStatus } from "effect"
 
 // Main program that monitors fibers while calculating a Fibonacci number
@@ -83,7 +82,7 @@ const fib = (n: number): Effect.Effect<number> =>
     return v1 + v2 // Combine the results
   })
 
-// Effect.runPromise(program)
+Effect.runPromise(program)
 // Output:
 // number of fibers: 0
 // number of fibers: 2
@@ -114,6 +113,6 @@ const fib = (n: number): Effect.Effect<number> =>
 declare const supervised: { <X>(supervisor: Supervisor.Supervisor<X>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, X>(self: Effect<A, E, R>, supervisor: Supervisor.Supervisor<X>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6502)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6626)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log("Mutated:", mutatedUrl.toString())
 declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L91)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Checks if a given unknown value is an `ExceededCapacityException`.
 declare const isExceededCapacityException: (u: unknown) => u is ExceededCapacityException
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1483)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1484)
 
 Since v3.5.0

@@ -28,10 +28,9 @@ it succeeds or fails, you can use the `Effect.either` function. This function
 wraps the result in an `Either` type, allowing you to see if the result
 was a success (`Right`) or a failure (`Left`).
 
-**Example**
+**Example** (Both Tasks Succeed)
 
 ```ts
-// Title: Both Tasks Succeed
 import { Effect, Console } from "effect"
 
 const task1 = Effect.succeed("task1").pipe(
@@ -47,16 +46,15 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // task1 done
 // task2 interrupted
 ```
 
-**Example**
+**Example** (One Task Fails, One Succeeds)
 
 ```ts
-// Title: One Task Fails, One Succeeds
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -72,15 +70,14 @@ const task2 = Effect.succeed("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-// Effect.runFork(program)
+Effect.runFork(program)
 // Output:
 // task2 done
 ```
 
-**Example**
+**Example** (Both Tasks Fail)
 
 ```ts
-// Title: Both Tasks Fail
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -96,7 +93,7 @@ const task2 = Effect.fail("task2").pipe(
 
 const program = Effect.race(task1, task2)
 
-// Effect.runPromiseExit(program).then(console.log)
+Effect.runPromiseExit(program).then(console.log)
 // Output:
 // {
 //   _id: 'Exit',
@@ -110,10 +107,9 @@ const program = Effect.race(task1, task2)
 // }
 ```
 
-**Example**
+**Example** (Handling Success or Failure with Either)
 
 ```ts
-// Title: Handling Success or Failure with Either
 import { Effect, Console } from "effect"
 
 const task1 = Effect.fail("task1").pipe(
@@ -131,7 +127,7 @@ const task2 = Effect.succeed("task2").pipe(
 // in Either to capture success or failure
 const program = Effect.race(Effect.either(task1), Effect.either(task2))
 
-// Effect.runPromise(program).then(console.log)
+Effect.runPromise(program).then(console.log)
 // Output:
 // task2 interrupted
 // { _id: 'Either', _tag: 'Left', left: 'task1' }
@@ -148,6 +144,6 @@ const program = Effect.race(Effect.either(task1), Effect.either(task2))
 declare const race: { <A2, E2, R2>(that: Effect<A2, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8916)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9067)
 
 Since v2.0.0

@@ -19,6 +19,6 @@ and defects could occur.
 declare const keepDefects: <E>(self: Cause<E>) => Option.Option<Cause<never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L933)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L934)
 
 Since v2.0.0

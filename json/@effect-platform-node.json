@@ -472,15 +472,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerTest",
-    "description": "Layer starting a server on a random port and producing an `HttpClient`\nwith prepended url of the running http server.",
+    "description": "Layer starting a server on a random port and producing an `HttpClient`\nwith prepended url of the running http server.\n\n**Example**\n\n```ts\nimport * as assert from \"node:assert\"\nimport { HttpClient, HttpRouter, HttpServer } from \"@effect/platform\"\nimport { NodeHttpServer } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  yield* HttpServer.serveEffect(HttpRouter.empty)\n  const response = yield* HttpClient.get(\"/\")\n  assert.strictEqual(response.status, 404)\n}).pipe(Effect.provide(NodeHttpServer.layerTest))\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { HttpClient, HttpRouter, HttpServer } from \"@effect/platform\"\nimport { NodeHttpServer } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  yield* HttpServer.serveEffect(HttpRouter.empty)\n  const response = yield* HttpClient.get(\"/\")\n  assert.strictEqual(response.status, 404)\n}).pipe(Effect.provide(NodeHttpServer.layerTest))\n```"
-    ],
+    "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -496,7 +494,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L130"
   },
   {
     "_tag": "Constant",

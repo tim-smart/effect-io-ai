@@ -17,6 +17,6 @@ error patterns or deduplicate repeated failures.
 declare const contains: { <E2>(that: Cause<E2>): <E>(self: Cause<E>) => boolean; <E, E2>(self: Cause<E>, that: Cause<E2>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1083)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1084)
 
 Since v2.0.0
