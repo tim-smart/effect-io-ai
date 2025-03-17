@@ -9,7 +9,7 @@ any duplicates.
 **Signature**
 
 ```ts
-declare const annotations: (ast: AST, a: Annotations) => AST
+declare const annotations: (ast: AST, overrides: Annotations) => AST
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2077)

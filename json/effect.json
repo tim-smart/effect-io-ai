@@ -66226,7 +66226,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": null,
-    "signature": "declare const annotations: (ast: AST, a: Annotations) => AST",
+    "signature": "declare const annotations: (ast: AST, overrides: Annotations) => AST",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2077"
   },
   {
@@ -66400,7 +66400,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const typeAST: (ast: AST) => AST",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2609"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2643"
   },
   {
     "_tag": "Function",
@@ -66415,7 +66415,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const encodedAST: (ast: AST) => AST",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2798"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2813"
   },
   {
     "_tag": "Function",
@@ -66430,7 +66430,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const encodedBoundAST: (ast: AST) => AST",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2803"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2818"
   },
   {
     "_tag": "Interface",
