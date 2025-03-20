@@ -3,14 +3,18 @@ Module: `ShardingRegistrationEvent`<br />
 
 ## ShardingRegistrationEvent.SingletonRegistered
 
-Constructs a new event that occurs when a new Singleton is registered.
+Represents an event that occurs when a new singleton is registered with a
+runner.
 
 **Signature**
 
 ```ts
-declare const SingletonRegistered: (name: string) => ShardingRegistrationEvent
+export interface SingletonRegistered {
+  readonly _tag: "SingletonRegistered"
+  readonly address: SingletonAddress
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L36)
 
 Since v1.0.0

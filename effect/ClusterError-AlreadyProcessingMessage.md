@@ -1,0 +1,17 @@
+Package: `@effect/cluster`<br />
+Module: `ClusterError`<br />
+
+## ClusterError.AlreadyProcessingMessage
+
+Represents an error that occurs when the entity is already processing a
+request.
+
+**Signature**
+
+```ts
+declare class AlreadyProcessingMessage
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L175)
+
+Since v1.0.0

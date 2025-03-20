@@ -11,6 +11,6 @@ Convert a `DateTime` to a `Date`, applying the time zone first.
 declare const toDate: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L825)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L841)
 
 Since v3.6.0

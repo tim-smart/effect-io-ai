@@ -39,6 +39,6 @@ assert.deepStrictEqual(result, Either.right({ x: 2, y: 3, sum: 5 }))
 declare const Do: Either<{}, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L839)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L840)
 
 Since v2.0.0

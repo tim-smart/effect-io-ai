@@ -20,6 +20,6 @@ console.log(result) // 6
 declare const reduceRight: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2704)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2736)
 
 Since v2.0.0

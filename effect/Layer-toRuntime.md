@@ -12,6 +12,6 @@ be used to execute effects.
 declare const toRuntime: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Runtime.Runtime<ROut>, E, Scope.Scope | RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L797)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L811)
 
 Since v2.0.0

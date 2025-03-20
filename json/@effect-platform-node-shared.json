@@ -2,6 +2,81 @@
   {
     "_tag": "Constant",
     "module": {
+      "name": "NodeClusterRunnerSocket.ts",
+      "path": "src/NodeClusterRunnerSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerSocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L27"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeClusterRunnerSocket.ts",
+      "path": "src/NodeClusterRunnerSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners, ConfigError, Storage extends \"sql\" ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L43"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterShardManagerSocket.ts",
+      "path": "src/NodeClusterShardManagerSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerSocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterShardManagerSocket.ts#L24"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeClusterShardManagerSocket.ts",
+      "path": "src/NodeClusterShardManagerSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; }) => Layer.Layer<ShardManager.ShardManager, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterShardManagerSocket.ts#L37"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterSocketCommon.ts",
+      "path": "src/NodeClusterSocketCommon.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerClientProtocol",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocketCommon.ts#L16"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
       "name": "NodeCommandExecutor.ts",
       "path": "src/NodeCommandExecutor.ts"
     },
@@ -238,7 +313,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L73"
   },
   {
     "_tag": "Function",
@@ -253,7 +328,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L178"
   },
   {
     "_tag": "Function",
@@ -268,7 +343,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L196"
   },
   {
     "_tag": "Interface",
@@ -284,6 +359,81 @@
     "category": "tags",
     "signature": "export interface NetSocket {\n  readonly _: unique symbol\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L20"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "IncomingMessage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class IncomingMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L24"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L33"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "makeWebSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const makeWebSocket: (options: WS.ServerOptions<typeof WS.WebSocket, typeof Http.IncomingMessage>) => Effect.Effect<SocketServer.SocketServer[\"Type\"], SocketServer.SocketServerError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L125"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Net.ServerOpts & Net.ListenOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L113"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerWebSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerWebSocket: (options: WS.ServerOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L210"
   },
   {
     "_tag": "Constant",

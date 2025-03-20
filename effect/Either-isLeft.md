@@ -21,6 +21,6 @@ assert.deepStrictEqual(Either.isLeft(Either.left("a")), true)
 declare const isLeft: <R, L>(self: Either<R, L>) => self is Left<L, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L255)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L256)
 
 Since v2.0.0

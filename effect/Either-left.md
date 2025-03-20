@@ -12,6 +12,6 @@ structure.
 declare const left: <L>(left: L) => Either<never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L137)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L138)
 
 Since v2.0.0

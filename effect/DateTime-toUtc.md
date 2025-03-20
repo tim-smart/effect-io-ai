@@ -22,6 +22,6 @@ const utc: DateTime.Utc = DateTime.toUtc(now)
 declare const toUtc: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L471)
 
 Since v3.13.0

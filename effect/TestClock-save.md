@@ -13,6 +13,6 @@ saved state.
 declare const save: () => Effect.Effect<Effect.Effect<void>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L492)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L493)
 
 Since v2.0.0

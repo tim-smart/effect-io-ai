@@ -145,6 +145,6 @@ Effect.runFork(myfunc(100).pipe(Effect.catchAllCause(Effect.logError)))
 declare const fn: fn.Gen & fn.NonGen & ((name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14188)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14253)
 
 Since v3.11.0

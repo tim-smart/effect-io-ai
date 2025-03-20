@@ -12,6 +12,6 @@ times that effects are scheduled to run.
 declare const sleeps: () => Effect.Effect<Chunk.Chunk<number>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L529)
 
 Since v2.0.0

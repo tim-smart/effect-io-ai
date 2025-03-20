@@ -12,6 +12,6 @@ milliseconds.
 declare const currentTimeMillis: Effect.Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L549)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L556)
 
 Since v2.0.0

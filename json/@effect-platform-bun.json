@@ -2,6 +2,66 @@
   {
     "_tag": "Constant",
     "module": {
+      "name": "BunClusterRunnerHttp.ts",
+      "path": "src/BunClusterRunnerHttp.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerHttpServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | BunContext, ServeError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterRunnerHttp.ts#L32"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "BunClusterRunnerHttp.ts",
+      "path": "src/BunClusterRunnerHttp.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = \"noop\">(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners, ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners, ServeError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterRunnerHttp.ts#L51"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunClusterShardManagerHttp.ts",
+      "path": "src/BunClusterShardManagerHttp.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerHttpServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | BunContext, ServeError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterShardManagerHttp.ts#L28"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "BunClusterShardManagerHttp.ts",
+      "path": "src/BunClusterShardManagerHttp.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = \"noop\">(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; }) => Layer.Layer<ShardManager.ShardManager, ServeError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterShardManagerHttp.ts#L44"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
       "name": "BunCommandExecutor.ts",
       "path": "src/BunCommandExecutor.ts"
     },
@@ -420,6 +480,21 @@
     "category": "layers",
     "signature": "declare const layer: (spawn: (id: number) => Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L24"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunWorker.ts",
+      "path": "src/BunWorker.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layerPlatform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerPlatform: (spawn: (id: number) => globalThis.Worker) => Layer.Layer<Worker.PlatformWorker | Worker.Spawner, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L32"
   },
   {
     "_tag": "Constant",

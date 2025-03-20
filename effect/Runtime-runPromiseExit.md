@@ -12,9 +12,9 @@ program.
 **Signature**
 
 ```ts
-declare const runPromiseExit: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>
+declare const runPromiseExit: { <R>(runtime: Runtime<R>): <A, E>(effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>; <R, A, E>(runtime: Runtime<R>, effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined): Promise<Exit.Exit<A, E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L187)
 
 Since v2.0.0

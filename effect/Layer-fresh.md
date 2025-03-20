@@ -11,6 +11,6 @@ Creates a fresh version of this layer that will not be shared.
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L394)
 
 Since v2.0.0

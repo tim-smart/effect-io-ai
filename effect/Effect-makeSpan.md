@@ -11,6 +11,6 @@ Create a new span for tracing.
 declare const makeSpan: (name: string, options?: Tracer.SpanOptions) => Effect<Tracer.Span>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12971)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12992)
 
 Since v2.0.0

@@ -11,9 +11,9 @@ program.
 **Signature**
 
 ```ts
-declare const runSync: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => A
+declare const runSync: { <A, E, R>(runtime: Runtime<R>, effect: Effect.Effect<A, E, R>): A; <R>(runtime: Runtime<R>): <A, E>(effect: Effect.Effect<A, E, R>) => A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L118)
 
 Since v2.0.0

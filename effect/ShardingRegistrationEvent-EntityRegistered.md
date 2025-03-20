@@ -3,14 +3,17 @@ Module: `ShardingRegistrationEvent`<br />
 
 ## ShardingRegistrationEvent.EntityRegistered
 
-Constructs and event that occurs when a new EntityType gets registered.
+Represents an event that occurs when a new entity is registered with a runner.
 
 **Signature**
 
 ```ts
-declare const EntityRegistered: <Msg extends Message.Message.Any>(entityType: RecipientType.EntityType<Msg>) => ShardingRegistrationEvent
+export interface EntityRegistered {
+  readonly _tag: "EntityRegistered"
+  readonly entity: Entity<any>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L18)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L24)
 
 Since v1.0.0

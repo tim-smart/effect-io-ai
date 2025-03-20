@@ -14,6 +14,6 @@ export interface Data {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L88)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L89)
 
 Since v2.0.1

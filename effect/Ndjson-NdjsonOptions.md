@@ -1,4 +1,4 @@
-Package: `@effect/experimental`<br />
+Package: `@effect/platform`<br />
 Module: `Ndjson`<br />
 
 ## Ndjson.NdjsonOptions
@@ -27,6 +27,6 @@ export interface NdjsonOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Ndjson.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L48)
 
 Since v1.0.0

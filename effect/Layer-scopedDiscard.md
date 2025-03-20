@@ -11,6 +11,6 @@ Constructs a layer from the specified scoped effect.
 declare const scopedDiscard: <X, E, R>(effect: Effect.Effect<X, E, R>) => Layer<never, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L670)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L684)
 
 Since v2.0.0

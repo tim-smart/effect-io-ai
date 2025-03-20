@@ -3,24 +3,14 @@ Module: `ShardingConfig`<br />
 
 ## ShardingConfig.ShardingConfig
 
-Sharding configuration
+Represents the configuration for the `Sharding` service on a given runner.
 
 **Signature**
 
 ```ts
-export interface ShardingConfig {
-  readonly numberOfShards: number
-  readonly selfHost: string
-  readonly shardingPort: number
-  readonly shardManagerUri: string
-  readonly serverVersion: string
-  readonly entityMaxIdleTime: Duration.Duration
-  readonly entityTerminationTimeout: Duration.Duration
-  readonly refreshAssignmentsRetryInterval: Duration.Duration
-  readonly unhealthyPodReportInterval: Duration.Duration
-}
+declare class ShardingConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L21)
 
 Since v1.0.0

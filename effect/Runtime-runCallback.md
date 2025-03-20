@@ -12,9 +12,9 @@ program.
 **Signature**
 
 ```ts
-declare const runCallback: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>, options?: RunCallbackOptions<A, E> | undefined) => Cancel<A, E>
+declare const runCallback: { <R>(runtime: Runtime<R>): <A, E>(effect: Effect.Effect<A, E, R>, options?: RunCallbackOptions<A, E> | undefined) => (fiberId?: FiberId.FiberId, options?: RunCallbackOptions<A, E> | undefined) => void; <R, A, E>(runtime: Runtime<R>, effect: Effect.Effect<A, E, R>, options?: RunCallbackOptions<A, E> | undefined): (fiberId?: FiberId.FiberId, options?: RunCallbackOptions<A, E> | undefined) => void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L141)
 
 Since v2.0.0

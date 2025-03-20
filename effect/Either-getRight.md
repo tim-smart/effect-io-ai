@@ -21,6 +21,6 @@ assert.deepStrictEqual(Either.getRight(Either.left('err')), Option.none())
 declare const getRight: <R, L>(self: Either<R, L>) => Option<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L289)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L290)
 
 Since v2.0.0

@@ -251,7 +251,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Model = typeof Generated.ModelEnum.Encoded",
+    "signature": "type Model = typeof Generated.Model.Encoded",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicCompletions.ts#L32"
   },
   {

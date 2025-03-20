@@ -14,6 +14,6 @@ workflow.
 declare const scope: Layer<Scope.Scope, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L660)
 
 Since v2.0.0

@@ -50,6 +50,6 @@ export interface TestClock extends Clock.Clock {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L75)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L76)
 
 Since v2.0.0

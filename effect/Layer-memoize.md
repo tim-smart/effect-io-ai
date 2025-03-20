@@ -12,6 +12,6 @@ result of this layer.
 declare const memoize: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Layer<ROut, E, RIn>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L498)
 
 Since v2.0.0

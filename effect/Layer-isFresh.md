@@ -12,6 +12,6 @@ shared, `false` otherwise.
 declare const isFresh: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L151)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L165)
 
 Since v2.0.0

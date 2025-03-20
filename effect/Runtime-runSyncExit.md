@@ -11,9 +11,9 @@ program.
 **Signature**
 
 ```ts
-declare const runSyncExit: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>) => Exit.Exit<A, E>
+declare const runSyncExit: { <A, E, R>(runtime: Runtime<R>, effect: Effect.Effect<A, E, R>): Exit.Exit<A, E>; <R>(runtime: Runtime<R>): <A, E>(effect: Effect.Effect<A, E, R>) => Exit.Exit<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L104)
 
 Since v2.0.0

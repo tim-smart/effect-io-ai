@@ -11,6 +11,6 @@ Sets the current `ConfigProvider`.
 declare const setConfigProvider: (configProvider: ConfigProvider) => Layer<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L924)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L938)
 
 Since v2.0.0

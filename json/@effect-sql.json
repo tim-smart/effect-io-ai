@@ -782,6 +782,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L70"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "SqlClient.ts",
+      "path": "src/SqlClient.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SafeIntegers",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare class SafeIntegers",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L146"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "SqlClient.ts",
@@ -794,7 +809,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -809,7 +824,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare const SqlClient: Tag<SqlClient, SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L77"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -824,7 +839,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: SqlClient.MakeOptions) => Effect<SqlClient, never, Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -839,7 +854,7 @@
     "since": "1.0.0",
     "category": "transactions",
     "signature": "declare const makeWithTransaction: <I, S>(options: { readonly transactionTag: Tag<I, readonly [conn: S, counter: number]>; readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>; readonly acquireConnection: Effect<readonly [CloseableScope | undefined, S], SqlError>; readonly begin: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly savepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; readonly commit: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollback: (conn: NoInfer<S>) => Effect<void, SqlError>; readonly rollbackSavepoint: (conn: NoInfer<S>, id: number) => Effect<void, SqlError>; }) => <R, E, A>(effect: Effect<A, E, R>) => Effect<A, E | SqlError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -854,7 +869,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const TransactionConnection: Tag<TransactionConnection, readonly [conn: Connection, depth: number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L140"
   },
   {
     "_tag": "Interface",
@@ -869,7 +884,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqlClient extends Constructor {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Copy of the client for safeql etc.\n   */\n  readonly safe: this\n\n  /**\n   * Copy of the client without transformations.\n   */\n  readonly withoutTransforms: () => this\n\n  readonly reserve: Effect<Connection, SqlError, Scope>\n\n  /**\n   * With the given effect, ensure all sql queries are run in a transaction.\n   */\n  readonly withTransaction: <R, E, A>(\n    self: Effect<A, E, R>\n  ) => Effect<A, E | SqlError, R>\n\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactive: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Stream<A, E, R>\n  /**\n   * Use the Reactivity service from @effect/experimental to create a reactive\n   * query.\n   */\n  readonly reactiveMailbox: <A, E, R>(\n    keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n    effect: Effect<A, E, R>\n  ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L34"
   },
   {
     "_tag": "Interface",
@@ -884,7 +899,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface TransactionConnection {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L133"
   },
   {
     "_tag": "TypeAlias",
@@ -899,7 +914,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L28"
   },
   {
     "_tag": "Interface",
@@ -914,7 +929,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MakeOptions {\n    readonly acquirer: Connection.Acquirer\n    readonly compiler: Compiler\n    readonly transactionAcquirer?: Connection.Acquirer\n    readonly spanAttributes: ReadonlyArray<readonly [string, unknown]>\n    readonly beginTransaction?: string | undefined\n    readonly rollback?: string | undefined\n    readonly commit?: string | undefined\n    readonly savepoint?: ((name: string) => string) | undefined\n    readonly rollbackSavepoint?: ((name: string) => string) | undefined\n    readonly transformRows?: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined\n    readonly reactiveMailbox?: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect<A, E, R>\n    ) => Effect<ReadonlyMailbox<A, E>, never, R | Scope>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlClient.ts#L89"
   },
   {
     "_tag": "Constant",

@@ -13,6 +13,6 @@ the new time in order.
 declare const adjust: (durationInput: Duration.DurationInput) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L469)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L470)
 
 Since v2.0.0

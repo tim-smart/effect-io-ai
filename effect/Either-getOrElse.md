@@ -21,6 +21,6 @@ assert.deepStrictEqual(Either.getOrElse(Either.left("not a number"), (error) => 
 declare const getOrElse: { <L, R2>(onLeft: (left: L) => R2): <R>(self: Either<R, L>) => R2 | R; <R, L, R2>(self: Either<R, L>, onLeft: (left: L) => R2): R | R2; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L540)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L541)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Format a `DateTime` as a UTC ISO date string.
 declare const formatIsoDateUtc: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1531)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1547)
 
 Since v3.6.0

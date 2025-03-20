@@ -22,6 +22,6 @@ assert.deepStrictEqual(Either.isEither({ right: 1 }), false)
 declare const isEither: (input: unknown) => input is Either<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L239)
 
 Since v2.0.0

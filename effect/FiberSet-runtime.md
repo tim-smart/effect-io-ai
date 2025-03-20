@@ -34,6 +34,6 @@ Effect.gen(function*() {
 declare const runtime: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Runtime.RunForkOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.RuntimeFiber<XA, XE>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L370)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L380)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ console.log(difference) // [1]
 declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Iterable<A>): (self: Iterable<A>) => Array<A>; (self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2269)
 
 Since v2.0.0

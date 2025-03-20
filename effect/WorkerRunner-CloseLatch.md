@@ -14,6 +14,6 @@ export interface CloseLatch {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L75)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L77)
 
 Since v1.0.0

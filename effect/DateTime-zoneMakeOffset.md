@@ -11,6 +11,6 @@ Create a fixed offset time zone.
 declare const zoneMakeOffset: (offset: number) => TimeZone.Offset
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L528)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L544)
 
 Since v3.6.0

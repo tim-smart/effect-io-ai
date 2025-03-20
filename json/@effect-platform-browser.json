@@ -211,8 +211,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerManager | Worker.Spawner, never, never>",
+    "signature": "declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerManager | Worker.Spawner>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L23"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BrowserWorker.ts",
+      "path": "src/BrowserWorker.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerPlatform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerPlatform: (spawn: (id: number) => globalThis.Worker | globalThis.SharedWorker | MessagePort) => Layer.Layer<Worker.PlatformWorker | Worker.Spawner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L31"
   },
   {
     "_tag": "Constant",

@@ -36,6 +36,6 @@ assert.deepStrictEqual(
 declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<NoInfer<A>, B>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<B, E>; <A, E>(predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<A, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orLeftWith: (a: A) => E): Either<B, E>; <A, E>(self: A, predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): Either<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L443)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L444)
 
 Since v3.4.0

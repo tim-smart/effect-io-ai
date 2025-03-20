@@ -2,6 +2,96 @@
   {
     "_tag": "Constant",
     "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "encodeUnknown",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const encodeUnknown: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<A>, IE | ParseError, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L45"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "decodeUnknown",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const decodeUnknown: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<any>, ParseError | IE, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L96"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplex: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<OI>, Chunk.Chunk<II>, OutErr, ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<OI>, Chunk.Chunk<II>, OutErr, ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L112"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplexUnknown",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplexUnknown: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<any>, OutErr, ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<any>, OutErr, ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L193"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "encode",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const encode: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<I>, Chunk.Chunk<A>, IE | ParseError, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L15"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ChannelSchema.ts",
+      "path": "src/ChannelSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "decode",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const decode: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<I>, ParseError | IE, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ChannelSchema.ts#L61"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
       "name": "Command.ts",
       "path": "src/Command.ts"
     },
@@ -2248,7 +2338,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "schemas",
-    "signature": "declare const schema: Schema.Schema<Headers, Record.ReadonlyRecord<string, string | ReadonlyArray<string>>, never>",
+    "signature": "declare const schema: Schema.Schema<Headers, Record.ReadonlyRecord<string, string>, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L70"
   },
   {
@@ -3014,8 +3104,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L240"
+    "signature": "declare const make: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>> | HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L244"
   },
   {
     "_tag": "Function",
@@ -3029,8 +3119,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"]>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupId: GroupName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<HttpApiGroup.WithName<Groups, GroupName>>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L271"
+    "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"]>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupId: GroupName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<HttpApiGroup.WithName<Groups, GroupName>>> | HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L275"
   },
   {
     "_tag": "Function",
@@ -3044,8 +3134,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const endpoint: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, const EndpointName extends HttpApiEndpoint.Name<HttpApiGroup.EndpointsWithName<Groups, GroupName>>>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: GroupName, endpointName: EndpointName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: string | undefined; }) => Effect.Effect<Client.Method<HttpApiEndpoint.WithName<HttpApiGroup.Endpoints<HttpApiGroup.WithName<Groups, GroupName>>, EndpointName>, HttpApiGroup.Error<HttpApiGroup.WithName<Groups, GroupName>>, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.Context<HttpApiGroup.WithName<Groups, GroupName>> | HttpApiEndpoint.ContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName> | HttpApiEndpoint.ErrorContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L311"
+    "signature": "declare const endpoint: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, const EndpointName extends HttpApiEndpoint.Name<HttpApiGroup.EndpointsWithName<Groups, GroupName>>>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: GroupName, endpointName: EndpointName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Method<HttpApiEndpoint.WithName<HttpApiGroup.Endpoints<HttpApiGroup.WithName<Groups, GroupName>>, EndpointName>, HttpApiGroup.Error<HttpApiGroup.WithName<Groups, GroupName>>, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.Context<HttpApiGroup.WithName<Groups, GroupName>> | HttpApiEndpoint.ContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName> | HttpApiEndpoint.ErrorContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName>> | HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L315"
   },
   {
     "_tag": "TypeAlias",
@@ -3195,7 +3285,37 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const del: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"DELETE\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"DELETE\">; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L915"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L913"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpApiEndpoint.ts",
+      "path": "src/HttpApiEndpoint.ts"
+    },
+    "project": "@effect/platform",
+    "name": "head",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const head: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"HEAD\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"HEAD\">; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L925"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpApiEndpoint.ts",
+      "path": "src/HttpApiEndpoint.ts"
+    },
+    "project": "@effect/platform",
+    "name": "options",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const options: { <const Name extends string>(name: Name): HttpApiEndpoint.Constructor<Name, \"OPTIONS\">; <const Name extends string>(name: Name, path: PathSegment): HttpApiEndpoint<Name, \"OPTIONS\">; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L937"
   },
   {
     "_tag": "Function",
@@ -5945,7 +6065,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const uint8Array: (body: globalThis.Uint8Array) => Uint8Array",
+    "signature": "declare const uint8Array: (body: globalThis.Uint8Array, contentType?: string) => Uint8Array",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L156"
   },
   {
@@ -8574,7 +8694,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class Default",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L824"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L833"
   },
   {
     "_tag": "Constant",
@@ -8589,7 +8709,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -8604,7 +8724,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const RouteTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L163"
   },
   {
     "_tag": "Constant",
@@ -8619,7 +8739,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const RouteContextTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L208"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L217"
   },
   {
     "_tag": "Constant",
@@ -8634,7 +8754,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const RouteContext: Context.Tag<RouteContext, RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L230"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L239"
   },
   {
     "_tag": "Constant",
@@ -8649,7 +8769,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const params: Effect.Effect<Readonly<Record<string, string | undefined>>, never, RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L245"
   },
   {
     "_tag": "Constant",
@@ -8664,7 +8784,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const schemaJson: <R, I extends Partial<{ readonly method: Method.HttpMethod; readonly url: string; readonly cookies: Readonly<Record<string, string | undefined>>; readonly headers: Readonly<Record<string, string | undefined>>; readonly pathParams: Readonly<Record<string, string | undefined>>; readonly searchParams: Readonly<Record<string, string | ReadonlyArray<string> | undefined>>; readonly body: any; }>, A>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, Error.RequestError | ParseResult.ParseError, RouteContext | R | ServerRequest.HttpServerRequest | ServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L255"
   },
   {
     "_tag": "Constant",
@@ -8679,7 +8799,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const schemaNoBody: <R, I extends Partial<{ readonly method: Method.HttpMethod; readonly url: string; readonly cookies: Readonly<Record<string, string | undefined>>; readonly headers: Readonly<Record<string, string | undefined>>; readonly pathParams: Readonly<Record<string, string | undefined>>; readonly searchParams: Readonly<Record<string, string | ReadonlyArray<string> | undefined>>; }>, A>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, R | RouteContext | ServerRequest.HttpServerRequest | ServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L271"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L280"
   },
   {
     "_tag": "Constant",
@@ -8694,7 +8814,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const schemaParams: <A, I extends Readonly<Record<string, string | ReadonlyArray<string> | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, R | RouteContext | ServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L297"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L306"
   },
   {
     "_tag": "Constant",
@@ -8709,7 +8829,7 @@
     "since": "1.0.0",
     "category": "route context",
     "signature": "declare const schemaPathParams: <A, I extends Readonly<Record<string, string | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, R | RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L307"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L316"
   },
   {
     "_tag": "Constant",
@@ -8724,7 +8844,7 @@
     "since": "1.0.0",
     "category": "router config",
     "signature": "declare const currentRouterConfig: FiberRef<Partial<RouterConfig>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L316"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L325"
   },
   {
     "_tag": "Constant",
@@ -8739,7 +8859,7 @@
     "since": "1.0.0",
     "category": "router config",
     "signature": "declare const withRouterConfig: { (config: Partial<RouterConfig>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, config: Partial<RouterConfig>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L322"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L331"
   },
   {
     "_tag": "Constant",
@@ -8754,7 +8874,7 @@
     "since": "1.0.0",
     "category": "router config",
     "signature": "declare const setRouterConfig: (config: Partial<RouterConfig>) => Layer.Layer<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L340"
   },
   {
     "_tag": "Constant",
@@ -8769,7 +8889,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const empty: HttpRouter<never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L337"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L346"
   },
   {
     "_tag": "Constant",
@@ -8784,7 +8904,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromIterable: <R extends Route<any, any>>(routes: Iterable<R>) => HttpRouter<R extends Route<infer E, infer _> ? E : never, R extends Route<infer _, infer Env> ? Env : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L352"
   },
   {
     "_tag": "Constant",
@@ -8799,7 +8919,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRoute: <E, R>(method: Method.HttpMethod | \"*\", path: PathInput, handler: Route.Handler<E, R>, options?: { readonly prefix?: string | undefined; readonly uninterruptible?: boolean | undefined; } | undefined) => Route<E, HttpRouter.ExcludeProvided<R>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L352"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L361"
   },
   {
     "_tag": "Constant",
@@ -8814,7 +8934,7 @@
     "since": "1.0.0",
     "category": "utils",
     "signature": "declare const prefixPath: { (prefix: string): (self: string) => string; (self: string, prefix: string): string; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L372"
   },
   {
     "_tag": "Constant",
@@ -8829,7 +8949,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const prefixAll: { (prefix: PathInput): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E, R>; <E, R>(self: HttpRouter<E, R>, prefix: PathInput): HttpRouter<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -8844,7 +8964,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const append: { <R1, E1>(route: Route<E1, R1>): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, route: Route<E1, R1>): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L390"
   },
   {
     "_tag": "Constant",
@@ -8859,7 +8979,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const concat: { <R1, E1>(that: HttpRouter<E1, R1>): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R1 | R>; <E, R, R1, E1>(self: HttpRouter<E, R>, that: HttpRouter<E1, R1>): HttpRouter<E | E1, R | R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L403"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L412"
   },
   {
     "_tag": "Constant",
@@ -8874,7 +8994,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const concatAll: <Routers extends ReadonlyArray<HttpRouter<unknown, unknown>>>(...routers: Routers) => [Routers[number]] extends [HttpRouter<infer E, infer R>] ? HttpRouter<E, R> : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L426"
   },
   {
     "_tag": "Constant",
@@ -8889,7 +9009,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const mount: { <R1, E1>(path: `/${string}`, that: HttpRouter<E1, R1>): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R1 | R>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: `/${string}`, that: HttpRouter<E1, R1>): HttpRouter<E | E1, R | R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L425"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L434"
   },
   {
     "_tag": "Constant",
@@ -8904,7 +9024,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const mountApp: { <R1, E1>(path: `/${string}`, that: App.Default<E1, R1>, options?: { readonly includePrefix?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, HttpRouter.ExcludeProvided<R1> | HttpRouter.ExcludeProvided<R>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: `/${string}`, that: App.Default<E1, R1>, options?: { readonly includePrefix?: boolean | undefined; } | undefined): HttpRouter<E | E1, HttpRouter.ExcludeProvided<R> | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L434"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L443"
   },
   {
     "_tag": "Constant",
@@ -8919,7 +9039,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const route: (method: Method.HttpMethod | \"*\") => { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | Exclude<R1, ServerRequest.HttpServerRequest | RouteContext | Scope.Scope>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | Exclude<R1, ServerRequest.HttpServerRequest | RouteContext | Scope.Scope>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L462"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L471"
   },
   {
     "_tag": "Constant",
@@ -8934,7 +9054,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const all: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L484"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L493"
   },
   {
     "_tag": "Constant",
@@ -8949,7 +9069,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const get: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L510"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L519"
   },
   {
     "_tag": "Constant",
@@ -8964,7 +9084,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const post: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L530"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L539"
   },
   {
     "_tag": "Constant",
@@ -8979,7 +9099,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const patch: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L550"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L559"
   },
   {
     "_tag": "Constant",
@@ -8994,7 +9114,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const put: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L570"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L579"
   },
   {
     "_tag": "Constant",
@@ -9009,7 +9129,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const del: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L599"
   },
   {
     "_tag": "Constant",
@@ -9024,7 +9144,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const head: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L610"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L619"
   },
   {
     "_tag": "Constant",
@@ -9039,7 +9159,7 @@
     "since": "1.0.0",
     "category": "routing",
     "signature": "declare const options: { <R1, E1>(path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, R | HttpRouter.ExcludeProvided<R1>>; <E, R, E1, R1>(self: HttpRouter<E, R>, path: PathInput, handler: Route.Handler<E1, R1>, options?: { readonly uninterruptible?: boolean | undefined; } | undefined): HttpRouter<E | E1, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L630"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L639"
   },
   {
     "_tag": "Constant",
@@ -9054,7 +9174,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const use: { <E, R, R1, E1>(f: (self: Route.Middleware<E, R>) => App.Default<E1, R1>): (self: HttpRouter<E, R>) => HttpRouter<E1, HttpRouter.ExcludeProvided<R1>>; <E, R, R1, E1>(self: HttpRouter<E, R>, f: (self: Route.Middleware<E, R>) => App.Default<E1, R1>): HttpRouter<E1, HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L650"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L659"
   },
   {
     "_tag": "Constant",
@@ -9069,7 +9189,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const transform: { <E, R, R1, E1>(f: (self: Route.Handler<E, R>) => App.HttpApp<Respondable.Respondable, E1, R1>): (self: HttpRouter<E, R>) => HttpRouter<E1, HttpRouter.ExcludeProvided<R1>>; <E, R, R1, E1>(self: HttpRouter<E, R>, f: (self: Route.Handler<E, R>) => App.HttpApp<Respondable.Respondable, E1, R1>): HttpRouter<E1, HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L664"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L673"
   },
   {
     "_tag": "Constant",
@@ -9084,7 +9204,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const catchAll: { <E, E2, R2>(f: (e: E) => Route.Handler<E2, R2>): <R>(self: HttpRouter<E, R>) => HttpRouter<E2, R | HttpRouter.ExcludeProvided<R2>>; <E, R, E2, R2>(self: HttpRouter<E, R>, f: (e: E) => Route.Handler<E2, R2>): HttpRouter<E2, R | HttpRouter.ExcludeProvided<R2>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L678"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L687"
   },
   {
     "_tag": "Constant",
@@ -9099,7 +9219,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const catchAllCause: { <E, E2, R2>(f: (e: Cause.Cause<E>) => Route.Handler<E2, R2>): <R>(self: HttpRouter<E, R>) => HttpRouter<E2, R | HttpRouter.ExcludeProvided<R2>>; <E, R, E2, R2>(self: HttpRouter<E, R>, f: (e: Cause.Cause<E>) => Route.Handler<E2, R2>): HttpRouter<E2, R | HttpRouter.ExcludeProvided<R2>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L692"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L701"
   },
   {
     "_tag": "Constant",
@@ -9114,7 +9234,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const catchTag: { <K extends E extends { _tag: string; } ? E[\"_tag\"] : never, E, E1, R1>(k: K, f: (e: Extract<E, { _tag: K; }>) => Route.Handler<E1, R1>): <R>(self: HttpRouter<E, R>) => HttpRouter<E1 | Exclude<E, { _tag: K; }>, R | HttpRouter.ExcludeProvided<R1>>; <E, R, K extends E extends { _tag: string; } ? E[\"_tag\"] : never, E1, R1>(self: HttpRouter<E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Route.Handler<E1, R1>): HttpRouter<E1 | Exclude<E, { _tag: K; }>, R | HttpRouter.ExcludeProvided<R1>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L706"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L715"
   },
   {
     "_tag": "Constant",
@@ -9129,7 +9249,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const catchTags: { <E, Cases extends E extends { _tag: string; } ? { [K in E[\"_tag\"]]+?: ((error: Extract<E, { _tag: K; }>) => Route.Handler<any, any>) | undefined; } : {}>(cases: Cases): <R>(self: HttpRouter<E, R>) => HttpRouter<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | HttpRouter.ExcludeProvided<{ [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>>; <R, E, Cases extends E extends { _tag: string; } ? { [K in E[\"_tag\"]]+?: ((error: Extract<E, { _tag: K; }>) => Route.Handler<any, any>) | undefined; } : {}>(self: HttpRouter<E, R>, cases: Cases): HttpRouter<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | HttpRouter.ExcludeProvided<{ [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L724"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L733"
   },
   {
     "_tag": "Constant",
@@ -9144,7 +9264,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const provideService: { <T extends Context.Tag<any, any>>(tag: T, service: Context.Tag.Service<T>): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E, Exclude<R, Context.Tag.Identifier<T>>>; <E, R, T extends Context.Tag<any, any>>(self: HttpRouter<E, R>, tag: T, service: Context.Tag.Service<T>): HttpRouter<E, Exclude<R, Context.Tag.Identifier<T>>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L773"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L782"
   },
   {
     "_tag": "Constant",
@@ -9159,7 +9279,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const provideServiceEffect: { <T extends Context.Tag<any, any>, R1, E1>(tag: T, effect: Effect.Effect<Context.Tag.Service<T>, E1, R1>): <E, R>(self: HttpRouter<E, R>) => HttpRouter<E1 | E, Exclude<R, Context.Tag.Identifier<T>> | Exclude<HttpRouter.ExcludeProvided<R1>, Context.Tag.Identifier<T>>>; <E, R, T extends Context.Tag<any, any>, R1, E1>(self: HttpRouter<E, R>, tag: T, effect: Effect.Effect<Context.Tag.Service<T>, E1, R1>): HttpRouter<E | E1, Exclude<R, Context.Tag.Identifier<T>> | Exclude<HttpRouter.ExcludeProvided<R1>, Context.Tag.Identifier<T>>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L789"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L798"
   },
   {
     "_tag": "Constant",
@@ -9174,7 +9294,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const Tag: <const Name extends string>(id: Name) => <Self, R = never, E = unknown>() => HttpRouter.TagClass<Self, Name, E, R | HttpRouter.DefaultServices>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L815"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L824"
   },
   {
     "_tag": "Interface",
@@ -9189,7 +9309,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface HttpRouter<E = never, R = never>\n  extends App.Default<E | Error.RouteNotFound, Exclude<R, RouteContext>>, Inspectable\n{\n  readonly [TypeId]: TypeId\n  readonly routes: Chunk.Chunk<Route<E, R>>\n  readonly mounts: Chunk.Chunk<\n    readonly [\n      prefix: string,\n      httpApp: App.Default<E, R>,\n      options?: { readonly includePrefix?: boolean | undefined } | undefined\n    ]\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L47"
   },
   {
     "_tag": "Interface",
@@ -9204,7 +9324,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Route<E = never, R = never> extends Inspectable {\n  readonly [RouteTypeId]: RouteTypeId\n  readonly method: Method.HttpMethod | \"*\"\n  readonly path: PathInput\n  readonly handler: Route.Handler<E, R>\n  readonly prefix: Option.Option<string>\n  readonly uninterruptible: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L181"
   },
   {
     "_tag": "Interface",
@@ -9219,7 +9339,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface RouteContext {\n  readonly [RouteContextTypeId]: RouteContextTypeId\n  readonly params: Readonly<Record<string, string | undefined>>\n  readonly route: Route<unknown, unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L220"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L229"
   },
   {
     "_tag": "TypeAlias",
@@ -9234,7 +9354,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L41"
   },
   {
     "_tag": "TypeAlias",
@@ -9249,7 +9369,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type RouteTypeId = typeof RouteTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L169"
   },
   {
     "_tag": "TypeAlias",
@@ -9264,7 +9384,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type PathInput = `/${string}` | \"*\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L175"
   },
   {
     "_tag": "TypeAlias",
@@ -9279,7 +9399,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type RouteContextTypeId = typeof RouteContextTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L214"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L223"
   },
   {
     "_tag": "Interface",
@@ -9294,7 +9414,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface Service<E, R> {\n    readonly router: Effect.Effect<HttpRouter<E, R>>\n    readonly addRoute: (route: Route<E, R>) => Effect.Effect<void>\n    readonly all: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly get: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly post: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly put: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly patch: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly del: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly head: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly options: (\n      path: PathInput,\n      handler: Route.Handler<E, R | Provided>,\n      options?: { readonly uninterruptible?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly mount: (\n      path: `/${string}`,\n      router: HttpRouter<E, R>\n    ) => Effect.Effect<void>\n    readonly mountApp: (\n      path: `/${string}`,\n      router: App.Default<E, R>,\n      options?: { readonly includePrefix?: boolean | undefined } | undefined\n    ) => Effect.Effect<void>\n    readonly concat: (router: HttpRouter<E, R>) => Effect.Effect<void>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L78"
   },
   {
     "_tag": "Interface",
@@ -9308,8 +9428,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export interface TagClass<Self, Name extends string, E, R> extends Context.Tag<Self, Service<E, R>> {\n    new(_: never): Context.TagClassShape<Name, Service<E, R>>\n    readonly Live: Layer.Layer<Self>\n    readonly router: Effect.Effect<HttpRouter<E, R>, never, Self>\n    readonly use: <XA, XE, XR>(\n      f: (router: Service<E, R>) => Effect.Effect<XA, XE, XR>\n    ) => Layer.Layer<never, XE, Exclude<XR, Scope.Scope>>\n    readonly unwrap: <XA, XE, XR>(f: (router: HttpRouter<E, R>) => Layer.Layer<XA, XE, XR>) => Layer.Layer<XA, XE, XR>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L139"
+    "signature": "export interface TagClass<Self, Name extends string, E, R> extends Context.Tag<Self, Service<E, R>> {\n    new(_: never): Context.TagClassShape<Name, Service<E, R>>\n    readonly Live: Layer.Layer<Self>\n    readonly router: Effect.Effect<HttpRouter<E, R>, never, Self>\n    readonly use: <XA, XE, XR>(\n      f: (router: Service<E, R>) => Effect.Effect<XA, XE, XR>\n    ) => Layer.Layer<never, XE, Exclude<XR, Scope.Scope>>\n    readonly unwrap: <XA, XE, XR>(f: (router: HttpRouter<E, R>) => Layer.Layer<XA, XE, XR>) => Layer.Layer<XA, XE, XR>\n    readonly serve: <E = never, R = never>(\n      middleware?: Middleware.HttpMiddleware.Applied<App.Default, E, R>\n    ) => Layer.Layer<\n      never,\n      never,\n      HttpServer.HttpServer | Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L141"
   },
   {
     "_tag": "TypeAlias",
@@ -9324,7 +9444,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Provided = RouteContext | ServerRequest.HttpServerRequest | ServerRequest.ParsedSearchParams | Scope.Scope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L68"
   },
   {
     "_tag": "TypeAlias",
@@ -9339,7 +9459,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ExcludeProvided<A> = Exclude<A, Provided>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L73"
   },
   {
     "_tag": "TypeAlias",
@@ -9354,7 +9474,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type DefaultServices = Platform.HttpPlatform | Etag.Generator | FileSystem | Path",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L136"
   },
   {
     "_tag": "TypeAlias",
@@ -9369,7 +9489,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Handler<E, R> = App.HttpApp<\n    Respondable.Respondable,\n    E,\n    R | RouteContext | ServerRequest.ParsedSearchParams\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L197"
   },
   {
     "_tag": "TypeAlias",
@@ -9384,7 +9504,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Middleware<E, R> = App.HttpApp<\n    ServerResponse.HttpServerResponse,\n    E,\n    R | RouteContext | ServerRequest.ParsedSearchParams\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L206"
   },
   {
     "_tag": "Constant",
@@ -11055,6 +11175,171 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L103"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "MsgPackError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class MsgPackError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L41"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L29"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplexSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplexSchema: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, IR | OR | R>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L198"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "pack",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const pack: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<unknown>, IE | MsgPackError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L62"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "packSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const packSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<A>, IE | MsgPackError | ParseError, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L96"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpack",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpack: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<Uint8Array>, IE | MsgPackError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L113"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpackSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpackSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array>, MsgPackError | ParseError | IE, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L169"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplex: <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | MsgPackError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, MsgPackError | OE, IE, OutDone, InDone, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L186"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "schema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "declare const schema: <S extends Schema.Schema.Any>(schema: S) => schema<S>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L328"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "schema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schemas",
+    "signature": "export interface schema<S extends Schema.Schema.Any> extends Schema.transformOrFail<Schema.Schema<Uint8Array>, S> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L322"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "type ErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L35"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Multipart.ts",
@@ -11533,6 +11818,247 @@
     "category": "models",
     "signature": "export interface Proto extends Inspectable {\n    readonly [TypeId]: TypeId\n    readonly _tag: string\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L53"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "NdjsonError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class NdjsonError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L32"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L18"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplex: { (options?: NdjsonOptions): <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | NdjsonError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | NdjsonError, OutDone, InDone, R>, options?: NdjsonOptions): Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L273"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplexString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplexString: { (options?: NdjsonOptions): <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OE, IE | NdjsonError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OE, IE | NdjsonError, OutDone, InDone, R>, options?: NdjsonOptions): Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, NdjsonError | OE, IE, OutDone, InDone, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L294"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplexSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplexSchema: { <IA, II, IR, OA, OI, OR>(options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>, options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L315"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "duplexSchemaString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const duplexSchemaString: { <IA, II, IR, OA, OI, OR>(options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, OutErr, NdjsonError | ParseError | InErr, OutDone, InDone, R>, options: Partial<NdjsonOptions> & { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, NdjsonError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L391"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "packString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const packString: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<unknown>, IE | NdjsonError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L69"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "pack",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const pack: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<unknown>, IE | NdjsonError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L106"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "packSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const packSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<A>, IE | NdjsonError | ParseError, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L119"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "packSchemaString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const packSchemaString: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<A>, IE | NdjsonError | ParseError, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L136"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpackString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpackString: <IE = never, Done = unknown>(options?: NdjsonOptions) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<string>, IE | NdjsonError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L178"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpack",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpack: <IE = never, Done = unknown>(options?: NdjsonOptions) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<Uint8Array>, IE | NdjsonError, IE, Done, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L224"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpackSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpackSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>(options?: NdjsonOptions) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array>, NdjsonError | ParseError | IE, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L239"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "unpackSchemaString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const unpackSchemaString: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>(options?: NdjsonOptions) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<string>, NdjsonError | ParseError | IE, IE, Done, Done, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L256"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "NdjsonOptions",
+    "description": "Represents a set of options which can be used to control how the newline\ndelimited JSON is handled.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface NdjsonOptions {\n  /**\n   * Whether or not the newline delimited JSON parser should ignore empty lines.\n   *\n   * Defaults to `false`.\n   *\n   * From the [newline delimited JSON spec](https://github.com/ndjson/ndjson-spec):\n   * ```text\n   * The parser MAY silently ignore empty lines, e.g. \\n\\n. This behavior MUST\n   * be documented and SHOULD be configurable by the user of the parser.\n   * ```\n   *\n   * @since 1.0.0\n   */\n  readonly ignoreEmptyLines?: boolean\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L48"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Ndjson.ts",
+      "path": "src/Ndjson.ts"
+    },
+    "project": "@effect/platform",
+    "name": "NdjsonErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type NdjsonErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Ndjson.ts#L24"
   },
   {
     "_tag": "Class",
@@ -13211,6 +13737,111 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L128"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class SocketServer",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L13"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SocketServerError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class SocketServerError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L39"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare const ErrorTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L27"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "TcpAddress",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface TcpAddress {\n  readonly _tag: \"TcpAddress\"\n  readonly hostname: string\n  readonly port: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L66"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "UnixAddress",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface UnixAddress {\n  readonly _tag: \"UnixAddress\"\n  readonly path: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L76"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "type ErrorTypeId = typeof ErrorTypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L33"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SocketServer.ts",
+      "path": "src/SocketServer.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Address",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Address = UnixAddress | TcpAddress",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketServer.ts#L60"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "Template.ts",
@@ -13435,7 +14066,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeCollector: Effect.Effect<CollectorService, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L63"
   },
   {
     "_tag": "Constant",
@@ -13450,7 +14081,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schema: { <I>(f: (_: I) => Iterable<globalThis.Transferable>): <A, R>(self: Schema.Schema<A, I, R>) => Schema.Schema<A, I, R>; <A, I, R>(self: Schema.Schema<A, I, R>, f: (_: I) => Iterable<globalThis.Transferable>): Schema.Schema<A, I, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L82"
   },
   {
     "_tag": "Constant",
@@ -13465,7 +14096,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const ImageData: Schema.Schema<ImageData, ImageData, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -13480,7 +14111,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const MessagePort: Schema.Schema<MessagePort, MessagePort, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -13495,7 +14126,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const Uint8Array: Schema.Schema<Uint8Array<ArrayBufferLike>, Uint8Array<ArrayBufferLike>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L122"
   },
   {
     "_tag": "Function",
@@ -13525,7 +14156,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const addAll: (tranferables: Iterable<globalThis.Transferable>) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L69"
   },
   {
     "_tag": "Interface",
@@ -13539,7 +14170,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface CollectorService {\n  readonly addAll: (_: Iterable<globalThis.Transferable>) => Effect.Effect<void>\n  readonly unsafeAddAll: (_: Iterable<globalThis.Transferable>) => void\n  readonly read: Effect.Effect<Array<globalThis.Transferable>>\n  readonly unsafeRead: () => Array<globalThis.Transferable>\n  readonly unsafeClear: () => void\n  readonly clear: Effect.Effect<void>\n}",
+    "signature": "export interface CollectorService {\n  readonly addAll: (_: Iterable<globalThis.Transferable>) => Effect.Effect<void>\n  readonly unsafeAddAll: (_: Iterable<globalThis.Transferable>) => void\n  readonly read: Effect.Effect<Array<globalThis.Transferable>>\n  readonly unsafeRead: () => Array<globalThis.Transferable>\n  readonly unsafeClear: () => Array<globalThis.Transferable>\n  readonly clear: Effect.Effect<Array<globalThis.Transferable>>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Transferable.ts#L15"
   },
   {
@@ -13667,7 +14298,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Setters",
-    "signature": "declare const setPort: { (port: string): (url: URL) => URL; (url: URL, port: string): URL; }",
+    "signature": "declare const setPort: { (port: string | number): (url: URL) => URL; (url: URL, port: string | number): URL; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L182"
   },
   {
@@ -13795,7 +14426,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const schema: Schema.Schema<UrlParams, ReadonlyArray<readonly [string, string]>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -13810,7 +14441,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const empty: UrlParams",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L94"
   },
   {
     "_tag": "Constant",
@@ -13825,7 +14456,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const getAll: { (key: string): (self: UrlParams) => ReadonlyArray<string>; (self: UrlParams, key: string): ReadonlyArray<string>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L73"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -13840,7 +14471,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const getFirst: { (key: string): (self: UrlParams) => Option.Option<string>; (self: UrlParams, key: string): Option.Option<string>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L118"
   },
   {
     "_tag": "Constant",
@@ -13855,7 +14486,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const getLast: { (key: string): (self: UrlParams) => Option.Option<string>; (self: UrlParams, key: string): Option.Option<string>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L131"
   },
   {
     "_tag": "Constant",
@@ -13870,7 +14501,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const set: { (key: string, value: Coercible): (self: UrlParams) => UrlParams; (self: UrlParams, key: string, value: Coercible): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -13885,7 +14516,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setAll: { (input: Input): (self: UrlParams) => UrlParams; (self: UrlParams, input: Input): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L157"
   },
   {
     "_tag": "Constant",
@@ -13900,7 +14531,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const append: { (key: string, value: Coercible): (self: UrlParams) => UrlParams; (self: UrlParams, key: string, value: Coercible): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L146"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L173"
   },
   {
     "_tag": "Constant",
@@ -13915,7 +14546,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const appendAll: { (input: Input): (self: UrlParams) => UrlParams; (self: UrlParams, input: Input): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L186"
   },
   {
     "_tag": "Constant",
@@ -13930,7 +14561,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const remove: { (key: string): (self: UrlParams) => UrlParams; (self: UrlParams, key: string): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L168"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L195"
   },
   {
     "_tag": "Function",
@@ -13945,7 +14576,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromInput: (input: Input) => UrlParams",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L46"
   },
   {
     "_tag": "Function",
@@ -13960,7 +14591,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const makeUrl: (url: string, params: UrlParams, hash: Option.Option<string>) => Either.Either<URL, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L204"
   },
   {
     "_tag": "Function",
@@ -13975,7 +14606,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toString: (self: UrlParams) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L199"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L226"
   },
   {
     "_tag": "Function",
@@ -13991,7 +14622,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toRecord: (self: UrlParams) => Record<string, string | Arr.NonEmptyArray<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L263"
   },
   {
     "_tag": "Function",
@@ -14006,7 +14637,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => { (field: string): (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>; (self: UrlParams, field: string): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L282"
   },
   {
     "_tag": "Function",
@@ -14022,7 +14653,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaStruct: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L298"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L325"
   },
   {
     "_tag": "Interface",
@@ -14040,6 +14671,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L17"
   },
   {
+    "_tag": "Interface",
+    "module": {
+      "name": "UrlParams.ts",
+      "path": "src/UrlParams.ts"
+    },
+    "project": "@effect/platform",
+    "name": "CoercibleRecord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface CoercibleRecord {\n  readonly [key: string]: Coercible | ReadonlyArray<Coercible> | CoercibleRecord\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L38"
+  },
+  {
     "_tag": "TypeAlias",
     "module": {
       "name": "UrlParams.ts",
@@ -14051,7 +14697,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Input = | Readonly<Record<string, Coercible | ReadonlyArray<Coercible>>>\n  | Iterable<readonly [string, Coercible]>\n  | URLSearchParams",
+    "signature": "type Input = | CoercibleRecord\n  | Iterable<readonly [string, Coercible]>\n  | URLSearchParams",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L23"
   },
   {
@@ -14652,7 +15298,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const PlatformRunnerTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -14667,7 +15313,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const PlatformRunner: Context.Tag<PlatformRunner, PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -14683,7 +15329,7 @@
     "since": "1.0.0",
     "category": "CloseLatch",
     "signature": "declare const CloseLatch: Context.Reference<CloseLatch, Deferred.Deferred<void, WorkerError>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L88"
   },
   {
     "_tag": "Constant",
@@ -14698,7 +15344,7 @@
     "since": "1.0.0",
     "category": "CloseLatch",
     "signature": "declare const layerCloseLatch: Layer.Layer<CloseLatch, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L94"
   },
   {
     "_tag": "Constant",
@@ -14713,7 +15359,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <I, E, R, O>(process: (request: I) => Stream.Stream<O, E, R> | Effect.Effect<O, E, R>, options?: Runner.Options<I, O, E>) => Effect.Effect<void, WorkerError, PlatformRunner | R | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -14728,7 +15374,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: <I, E, R, O>(process: (request: I) => Stream.Stream<O, E, R> | Effect.Effect<O, E, R>, options?: Runner.Options<I, O, E> | undefined) => Layer.Layer<never, WorkerError, R | PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L131"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L133"
   },
   {
     "_tag": "Constant",
@@ -14743,7 +15389,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeSerialized: <R, I, A extends Schema.TaggedRequest.All, const Handlers extends SerializedRunner.Handlers<A>>(schema: Schema.Schema<A, I, R>, handlers: Handlers) => Effect.Effect<void, WorkerError, PlatformRunner | Scope.Scope | R | SerializedRunner.HandlersContext<Handlers>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L213"
   },
   {
     "_tag": "Constant",
@@ -14758,7 +15404,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerSerialized: <R, I, A extends Schema.TaggedRequest.All, const Handlers extends SerializedRunner.Handlers<A>>(schema: Schema.Schema<A, I, R>, handlers: Handlers) => Layer.Layer<never, WorkerError, PlatformRunner | R | SerializedRunner.HandlersContext<Handlers>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L229"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L231"
   },
   {
     "_tag": "Constant",
@@ -14774,7 +15420,7 @@
     "since": "1.0.0",
     "category": "Execution",
     "signature": "declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect.Effect<void, E | WorkerError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L247"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L249"
   },
   {
     "_tag": "Interface",
@@ -14788,8 +15434,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface BackingRunner<I, O> {\n  readonly run: <A, E, R>(\n    handler: (portId: number, message: I) => Effect.Effect<A, E, R>\n  ) => Effect.Effect<void, never, Scope.Scope | R>\n  readonly send: (\n    portId: number,\n    message: O,\n    transfers?: ReadonlyArray<unknown>\n  ) => Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L18"
+    "signature": "export interface BackingRunner<I, O> {\n  readonly run: <A, E, R>(\n    handler: (portId: number, message: I) => Effect.Effect<A, E, R> | void\n  ) => Effect.Effect<void, never, Scope.Scope | R>\n  readonly send: (\n    portId: number,\n    message: O,\n    transfers?: ReadonlyArray<unknown>\n  ) => Effect.Effect<void>\n  readonly disconnects?: Mailbox.ReadonlyMailbox<number>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L19"
   },
   {
     "_tag": "Interface",
@@ -14804,7 +15450,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface PlatformRunner {\n  readonly [PlatformRunnerTypeId]: PlatformRunnerTypeId\n  readonly start: <I, O>(closeLatch: typeof CloseLatch.Service) => Effect.Effect<BackingRunner<I, O>, WorkerError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L59"
   },
   {
     "_tag": "Interface",
@@ -14820,7 +15466,7 @@
     "since": "1.0.0",
     "category": "CloseLatch",
     "signature": "export interface CloseLatch {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L77"
   },
   {
     "_tag": "TypeAlias",
@@ -14835,7 +15481,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type PlatformRunnerTypeId = typeof PlatformRunnerTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L53"
   },
   {
     "_tag": "TypeAlias",
@@ -14850,7 +15496,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Message<I> = readonly [request: 0, I] | readonly [close: 1]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L40"
   },
   {
     "_tag": "Interface",
@@ -14865,7 +15511,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Options<I, O, E> {\n    readonly decode?: (\n      message: unknown\n    ) => Effect.Effect<I, WorkerError>\n    readonly encodeOutput?: (\n      request: I,\n      message: O\n    ) => Effect.Effect<unknown, WorkerError>\n    readonly encodeError?: (\n      request: I,\n      error: E\n    ) => Effect.Effect<unknown, WorkerError>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L105"
   },
   {
     "_tag": "TypeAlias",
@@ -14880,7 +15526,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Handlers<A> = {\n    readonly [K in A[\"_tag\"]]: Extract<\n      A,\n      { readonly _tag: K }\n    > extends Schema.SerializableWithResult<\n      infer S,\n      infer _SI,\n      infer _SR,\n      infer A,\n      infer _AI,\n      infer E,\n      infer _EI,\n      infer _RR\n    > ? (\n        _: S\n      ) =>\n        | Stream.Stream<A, E, any>\n        | Effect.Effect<A, E, any>\n        | Layer.Layer<any, E, any>\n        | Layer.Layer<never, E, any>\n      : never\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L146"
   },
   {
     "_tag": "TypeAlias",
@@ -14895,6 +15541,6 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type HandlersContext<Handlers> = | Exclude<\n      {\n        [K in keyof Handlers]: ReturnType<Handlers[K]> extends Stream.Stream<\n          infer _A,\n          infer _E,\n          infer R\n        > ? R\n          : never\n      }[keyof Handlers],\n      InitialContext<Handlers>\n    >\n    | InitialEnv<Handlers>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkerRunner.ts#L172"
   }
 ]

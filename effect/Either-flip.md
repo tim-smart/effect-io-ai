@@ -12,6 +12,6 @@ use all methods on the error channel, possibly before flipping back.
 declare const flip: <R, L>(self: Either<R, L>) => Either<L, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L780)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L781)
 
 Since v2.0.0

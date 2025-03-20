@@ -11,6 +11,6 @@ Constructs a layer that dies with the specified defect.
 declare const die: (defect: unknown) => Layer<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L261)
 
 Since v2.0.0

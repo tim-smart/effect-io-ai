@@ -11,6 +11,6 @@ Get the milliseconds since the Unix epoch of a `DateTime`.
 declare const toEpochMillis: (self: DateTime) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L851)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L867)
 
 Since v3.6.0

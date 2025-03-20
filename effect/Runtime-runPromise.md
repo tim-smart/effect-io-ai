@@ -13,9 +13,9 @@ program.
 **Signature**
 
 ```ts
-declare const runPromise: <R>(runtime: Runtime<R>) => <A, E>(effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<A>
+declare const runPromise: { <R>(runtime: Runtime<R>): <A, E>(effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<A>; <R, A, E>(runtime: Runtime<R>, effect: Effect.Effect<A, E, R>, options?: { readonly signal?: AbortSignal; } | undefined): Promise<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L166)
 
 Since v2.0.0

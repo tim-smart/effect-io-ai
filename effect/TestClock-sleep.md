@@ -13,6 +13,6 @@ on or after the duration, the fiber will automatically be resumed.
 declare const sleep: (durationInput: Duration.DurationInput) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L511)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L518)
 
 Since v2.0.0

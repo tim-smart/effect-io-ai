@@ -20,6 +20,6 @@ console.log(result) // [1, 2, 3]
 declare const dedupeAdjacent: <A>(self: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3085)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3117)
 
 Since v2.0.0

@@ -13,6 +13,6 @@ The parts will be in UTC.
 declare const toPartsUtc: (self: DateTime) => DateTime.PartsWithWeekday
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L897)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L913)
 
 Since v3.6.0

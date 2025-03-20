@@ -38,6 +38,6 @@ const action = Notifications.notify("Hello, world!")
 declare const Tag: <const Id extends string>(id: Id) => <Self, Type extends Tag.AllowedType>() => Context.TagClass<Self, Id, Type> & (Type extends Record<PropertyKey, any> ? Tag.Proxy<Self, Type> : {}) & { use: <X>(body: (_: Type) => X) => [X] extends [Effect<infer A, infer E, infer R>] ? Effect<A, E, R | Self> : [X] extends [PromiseLike<infer A>] ? Effect<A, Cause.UnknownException, Self> : Effect<X, never, Self>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13364)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13429)
 
 Since v2.0.0

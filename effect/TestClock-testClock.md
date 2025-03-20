@@ -11,6 +11,6 @@ Retrieves the `TestClock` service for this test.
 declare const testClock: () => Effect.Effect<TestClock>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L529)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TestClock.ts#L536)
 
 Since v2.0.0
