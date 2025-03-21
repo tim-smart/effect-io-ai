@@ -28,7 +28,7 @@ assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 **Signature**
 
 ```ts
-declare const pick: <Services, S extends Array<ValidTagsById<Services>>>(...tags: S) => (self: Context<Services>) => Context<{ [k in keyof S]: Tag.Identifier<S[k]>; }[number]>
+declare const pick: <Tags extends ReadonlyArray<Tag<any, any>>>(...tags: Tags) => <Services>(self: Context<Services>) => Context<Services & Tag.Identifier<Tags[number]>>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L479)

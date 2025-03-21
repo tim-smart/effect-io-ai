@@ -2540,28 +2540,13 @@
       "path": "src/Sharding.ts"
     },
     "project": "@effect/cluster",
-    "name": "make",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const make: Effect.Effect<{ readonly getRegistrationEvents: Stream.Stream<ShardingRegistrationEvent>; readonly getShardId: (entityId: EntityId) => ShardId; readonly isShutdown: Effect.Effect<boolean>; readonly makeClient: <Rpcs extends Rpc.Any>(entity: Entity<Rpcs>) => Effect.Effect<(entityId: string) => RpcClient.RpcClient<Rpcs, MailboxFull | AlreadyProcessingMessage | PersistenceError>>; readonly registerEntity: <Rpcs extends Rpc.Any, Handlers extends HandlersFrom<Rpcs>, RX>(entity: Entity<Rpcs>, handlers: Effect.Effect<Handlers, never, RX>, options?: { readonly maxIdleTime?: DurationInput | undefined; readonly concurrency?: number | \"unbounded\" | undefined; readonly mailboxCapacity?: number | \"unbounded\" | undefined; }) => Effect.Effect<void, never, Rpc.Context<Rpcs> | Rpc.Middleware<Rpcs> | Exclude<RX, Scope.Scope | CurrentAddress>>; readonly registerSingleton: <E, R>(name: string, run: Effect.Effect<void, E, R>) => Effect.Effect<void, never, Exclude<R, Scope.Scope>>; readonly send: (message: Message.Incoming<any>) => Effect.Effect<void, EntityNotManagedByRunner | MailboxFull | AlreadyProcessingMessage>; readonly notify: (message: Message.Incoming<any>) => Effect.Effect<void, EntityNotManagedByRunner>; }, never, Scope.Scope | ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator | Runners | EntityReaper>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L139"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Sharding.ts",
-      "path": "src/Sharding.ts"
-    },
-    "project": "@effect/cluster",
     "name": "layer",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1080"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1076"
   },
   {
     "_tag": "Class",
