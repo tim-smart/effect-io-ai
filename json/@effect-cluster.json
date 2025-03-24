@@ -3439,7 +3439,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage.ShardStorage | MessageStorage | ShardingConfig | SocketServer | Runners.RpcClientProtocol | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -3454,7 +3454,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L50"
   },
   {
     "_tag": "Constant",
