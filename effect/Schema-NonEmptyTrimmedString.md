@@ -22,6 +22,6 @@ console.log(Schema.decodeOption(Schema.NonEmptyTrimmedString)("a")) // Option.so
 declare class NonEmptyTrimmedString
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4754)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4755)
 
 Since v3.10.0

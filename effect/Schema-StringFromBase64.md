@@ -11,6 +11,6 @@ Decodes a base64 (RFC4648) encoded string into a UTF-8 string.
 declare const StringFromBase64: Schema<string, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6321)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6322)
 
 Since v3.10.0

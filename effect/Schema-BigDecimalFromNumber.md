@@ -12,6 +12,6 @@ When encoding, this Schema will produce incorrect results if the BigDecimal exce
 declare class BigDecimalFromNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7931)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7932)
 
 Since v3.10.0

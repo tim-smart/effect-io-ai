@@ -12,6 +12,6 @@ A schema that transforms a (possibly Infinite) non negative number into a
 declare class DurationFromMillis
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5943)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5944)
 
 Since v3.10.0

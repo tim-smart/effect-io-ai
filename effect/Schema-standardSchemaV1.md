@@ -31,7 +31,7 @@ const standardSchema = Schema.standardSchemaV1(schema)
 **Signature**
 
 ```ts
-declare const standardSchemaV1: <A, I>(schema: Schema<A, I, never>, overrideOptions?: AST.ParseOptions) => StandardSchemaV1<I, A>
+declare const standardSchemaV1: <A, I>(schema: Schema<A, I, never>, overrideOptions?: AST.ParseOptions) => StandardSchemaV1<I, A> & SchemaClass<A, I, never>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L195)
