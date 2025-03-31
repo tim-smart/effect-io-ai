@@ -19,29 +19,49 @@ You can pass either the arity of the uncurried function or a predicate
 which determines if the function is being used in a data-first or
 data-last style.
 
-**Example**
+**Example** (Using arity to determine data-first or data-last style)
 
 ```ts
-import * as assert from "node:assert"
 import { dual, pipe } from "effect/Function"
 
-// Exampe using arity to determine data-first or data-last style
+const sum = dual<
+  (that: number) => (self: number) => number,
+  (self: number, that: number) => number
+>(2, (self, that) => self + that)
+
+console.log(sum(2, 3)) // 5
+console.log(pipe(2, sum(3))) // 5
+```
+
+**Example** (Using call signatures to define the overloads)
+
+```ts
+import { dual, pipe } from "effect/Function"
+
 const sum: {
   (that: number): (self: number) => number
   (self: number, that: number): number
 } = dual(2, (self: number, that: number): number => self + that)
 
-assert.deepStrictEqual(sum(2, 3), 5)
-assert.deepStrictEqual(pipe(2, sum(3)), 5)
+console.log(sum(2, 3)) // 5
+console.log(pipe(2, sum(3))) // 5
+```
 
-// Example using a predicate to determine data-first or data-last style
-const sum2: {
-  (that: number): (self: number) => number
-  (self: number, that: number): number
-} = dual((args) => args.length === 1, (self: number, that: number): number => self + that)
+**Example** (Using a predicate to determine data-first or data-last style)
 
-assert.deepStrictEqual(sum(2, 3), 5)
-assert.deepStrictEqual(pipe(2, sum(3)), 5)
+```ts
+import { dual, pipe } from "effect/Function"
+
+const sum = dual<
+  (that: number) => (self: number) => number,
+  (self: number, that: number) => number
+>(
+  (args) => args.length === 2,
+  (self, that) => self + that
+)
+
+console.log(sum(2, 3)) // 5
+console.log(pipe(2, sum(3))) // 5
 ```
 
 **Signature**
@@ -50,6 +70,6 @@ assert.deepStrictEqual(pipe(2, sum(3)), 5)
 declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>["length"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L95)
 
 Since v2.0.0

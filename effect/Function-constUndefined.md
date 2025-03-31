@@ -20,6 +20,6 @@ assert.deepStrictEqual(constUndefined(), undefined)
 declare const constUndefined: LazyArg<undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L331)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L352)
 
 Since v2.0.0

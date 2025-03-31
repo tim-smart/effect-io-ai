@@ -14,6 +14,6 @@ This function is particularly useful when it's necessary to specify that certain
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L399)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L420)
 
 Since v2.0.0

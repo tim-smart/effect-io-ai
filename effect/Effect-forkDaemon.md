@@ -14,7 +14,7 @@ the global scope closes or the fiber completes naturally. This makes it
 useful for tasks that need to run in the background independently, such as
 periodic logging, monitoring, or background data processing.
 
-**Example** (Creating a Daemon Fibe)
+**Example** (Creating a Daemon Fiber)
 
 ```ts
 import { Effect, Console, Schedule } from "effect"

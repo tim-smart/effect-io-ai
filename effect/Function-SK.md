@@ -23,6 +23,6 @@ assert.deepStrictEqual(SK(0, "hello"), "hello")
 declare const SK: <A, B>(_: A, b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1201)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1222)
 
 Since v2.0.0

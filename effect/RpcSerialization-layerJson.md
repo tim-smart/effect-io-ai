@@ -6,7 +6,7 @@ Module: `RpcSerialization`<br />
 A rpc serialization layer that uses JSON for serialization.
 
 Use this if your protocol supports framing for messages, otherwise use
-`layerSerializationNdjson`.
+`layerNdjson`.
 
 **Signature**
 

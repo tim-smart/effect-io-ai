@@ -27,6 +27,6 @@ assert.deepStrictEqual(satisfies<number>()(5), 5)
 declare const satisfies: <A>() => <B extends A>(b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L235)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L256)
 
 Since v2.0.0

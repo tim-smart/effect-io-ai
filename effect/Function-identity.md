@@ -20,6 +20,6 @@ assert.deepStrictEqual(identity(5), 5)
 declare const identity: <A>(a: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L213)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L234)
 
 Since v2.0.0

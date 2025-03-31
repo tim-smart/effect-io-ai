@@ -5,12 +5,35 @@ Module: `HashSet`<br />
 
 Creates an empty `HashSet`.
 
+Time complexity: **`O(1)`**
+
+**Example**
+
+```ts
+import { HashSet, pipe } from "effect"
+
+console.log(
+  pipe(
+    // Provide a type argument to create a HashSet of a specific type
+    HashSet.empty<number>(),
+    HashSet.add(1),
+    HashSet.add(1), // Notice the duplicate
+    HashSet.add(2),
+    HashSet.toValues
+  )
+) // Output: [1, 2]
+```
+
+**See**
+
+- Other `HashSet` constructors are `make` `fromIterable`
+
 **Signature**
 
 ```ts
 declare const empty: <A = never>() => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L374)
 
 Since v2.0.0

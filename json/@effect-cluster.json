@@ -1606,7 +1606,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "SaveResult",
-    "signature": "declare const SaveResult: { readonly Success: <A>(args: void) => SaveResult.Success; readonly Duplicate: <A>(args: { readonly originalId: Snowflake.Snowflake; readonly lastReceivedReply: Option.Option<Reply.Reply<any>>; }) => SaveResult.Duplicate<any>; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => { <T extends SaveResult<any>>(u: T): u is T & { readonly _tag: Tag; }; (u: unknown): u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.Duplicate<any>, { readonly _tag: Tag; }>; }; readonly $match: { <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<any>) => any; }>(cases: Cases): (self: SaveResult<any>) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<any>) => any; }>(self: SaveResult<any>, cases: Cases): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
+    "signature": "declare const SaveResult: { readonly Success: <A>(args: void) => SaveResult.Success; readonly Duplicate: <A>(args: { readonly originalId: Snowflake.Snowflake; readonly lastReceivedReply: Option.Option<Reply.Reply<A extends Rpc.Any ? A : never>>; }) => SaveResult.Duplicate<A extends Rpc.Any ? A : never>; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => { <T extends SaveResult<any>>(u: T): u is T & { readonly _tag: Tag; }; (u: unknown): u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.Duplicate<never>, { readonly _tag: Tag; }>; }; readonly $match: { <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(cases: Cases): (self: SaveResult<A extends Rpc.Any ? A : never>) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(self: SaveResult<A extends Rpc.Any ? A : never>, cases: Cases): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L109"
   },
   {
@@ -1831,7 +1831,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "SaveResult",
-    "signature": "export interface Constructor extends Data.TaggedEnum.WithGenerics<1> {\n    readonly taggedEnum: SaveResult<this[\"A\"]>\n  }",
+    "signature": "export interface Constructor extends Data.TaggedEnum.WithGenerics<1> {\n    readonly taggedEnum: SaveResult<this[\"A\"] extends Rpc.Any ? this[\"A\"] : never>\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L160"
   },
   {

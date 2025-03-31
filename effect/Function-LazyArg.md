@@ -22,6 +22,6 @@ export interface LazyArg<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L181)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L202)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Type hole simulation.
 declare const hole: <T>() => T
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1204)
 
 Since v2.0.0

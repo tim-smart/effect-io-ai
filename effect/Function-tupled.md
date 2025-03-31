@@ -22,6 +22,6 @@ assert.deepStrictEqual(sumTupled([1, 2]), 3)
 declare const tupled: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L418)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L439)
 
 Since v2.0.0

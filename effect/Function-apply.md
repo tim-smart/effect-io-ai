@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe(length, apply("hello")), 5)
 declare const apply: <A>(a: A) => <B>(self: (a: A) => B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L166)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L187)
 
 Since v2.0.0

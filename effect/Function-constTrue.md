@@ -20,6 +20,6 @@ assert.deepStrictEqual(constTrue(), true)
 declare const constTrue: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L286)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L307)
 
 Since v2.0.0

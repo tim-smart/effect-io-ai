@@ -20,6 +20,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constNull: LazyArg<null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L337)
 
 Since v2.0.0

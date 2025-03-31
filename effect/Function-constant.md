@@ -26,6 +26,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constant: <A>(value: A) => LazyArg<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L271)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L292)
 
 Since v2.0.0

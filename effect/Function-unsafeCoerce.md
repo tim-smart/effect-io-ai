@@ -20,6 +20,6 @@ assert.deepStrictEqual(unsafeCoerce, identity)
 declare const unsafeCoerce: <A, B>(a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L271)
 
 Since v2.0.0

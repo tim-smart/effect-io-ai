@@ -22,6 +22,6 @@ assert.deepStrictEqual(getFirst(1, 2), 1)
 declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L435)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L456)
 
 Since v2.0.0

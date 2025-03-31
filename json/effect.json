@@ -12696,7 +12696,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "models",
-    "signature": "export interface WithGenerics<Count extends number> {\n    readonly taggedEnum: { readonly _tag: string }\n    readonly numberOfGenerics: Count\n\n    readonly A: any\n    readonly B: any\n    readonly C: any\n    readonly D: any\n  }",
+    "signature": "export interface WithGenerics<Count extends number> {\n    readonly taggedEnum: { readonly _tag: string }\n    readonly numberOfGenerics: Count\n\n    readonly A: unknown\n    readonly B: unknown\n    readonly C: unknown\n    readonly D: unknown\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L308"
   },
   {
@@ -18036,7 +18036,7 @@
     },
     "project": "effect",
     "name": "forkDaemon",
-    "description": "Creates a long-running background fiber that is independent of its parent.\n\n**Details**\n\nThis function creates a \"daemon\" fiber that runs in the background and is not\ntied to the lifecycle of its parent fiber. Unlike normal fibers that stop\nwhen the parent fiber terminates, a daemon fiber will continue running until\nthe global scope closes or the fiber completes naturally. This makes it\nuseful for tasks that need to run in the background independently, such as\nperiodic logging, monitoring, or background data processing.\n\n**Example** (Creating a Daemon Fibe)\n\n```ts\nimport { Effect, Console, Schedule } from \"effect\"\n\n// Daemon fiber that logs a message repeatedly every second\nconst daemon = Effect.repeat(\n  Console.log(\"daemon: still running!\"),\n  Schedule.fixed(\"1 second\")\n)\n\nconst parent = Effect.gen(function* () {\n  console.log(\"parent: started!\")\n  // Daemon fiber running independently\n  yield* Effect.forkDaemon(daemon)\n  yield* Effect.sleep(\"3 seconds\")\n  console.log(\"parent: finished!\")\n})\n\nEffect.runFork(parent)\n// Output:\n// parent: started!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// parent: finished!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// ...etc...\n```",
+    "description": "Creates a long-running background fiber that is independent of its parent.\n\n**Details**\n\nThis function creates a \"daemon\" fiber that runs in the background and is not\ntied to the lifecycle of its parent fiber. Unlike normal fibers that stop\nwhen the parent fiber terminates, a daemon fiber will continue running until\nthe global scope closes or the fiber completes naturally. This makes it\nuseful for tasks that need to run in the background independently, such as\nperiodic logging, monitoring, or background data processing.\n\n**Example** (Creating a Daemon Fiber)\n\n```ts\nimport { Effect, Console, Schedule } from \"effect\"\n\n// Daemon fiber that logs a message repeatedly every second\nconst daemon = Effect.repeat(\n  Console.log(\"daemon: still running!\"),\n  Schedule.fixed(\"1 second\")\n)\n\nconst parent = Effect.gen(function* () {\n  console.log(\"parent: started!\")\n  // Daemon fiber running independently\n  yield* Effect.forkDaemon(daemon)\n  yield* Effect.sleep(\"3 seconds\")\n  console.log(\"parent: finished!\")\n})\n\nEffect.runFork(parent)\n// Output:\n// parent: started!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// parent: finished!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// daemon: still running!\n// ...etc...\n```",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
@@ -27703,15 +27703,13 @@
     },
     "project": "effect",
     "name": "dual",
-    "description": "Creates a function that can be used in a data-last (aka `pipe`able) or\ndata-first style.\n\nThe first parameter to `dual` is either the arity of the uncurried function\nor a predicate that determines if the function is being used in a data-first\nor data-last style.\n\nUsing the arity is the most common use case, but there are some cases where\nyou may want to use a predicate. For example, if you have a function that\ntakes an optional argument, you can use a predicate to determine if the\nfunction is being used in a data-first or data-last style.\n\nYou can pass either the arity of the uncurried function or a predicate\nwhich determines if the function is being used in a data-first or\ndata-last style.",
+    "description": "Creates a function that can be used in a data-last (aka `pipe`able) or\ndata-first style.\n\nThe first parameter to `dual` is either the arity of the uncurried function\nor a predicate that determines if the function is being used in a data-first\nor data-last style.\n\nUsing the arity is the most common use case, but there are some cases where\nyou may want to use a predicate. For example, if you have a function that\ntakes an optional argument, you can use a predicate to determine if the\nfunction is being used in a data-first or data-last style.\n\nYou can pass either the arity of the uncurried function or a predicate\nwhich determines if the function is being used in a data-first or\ndata-last style.\n\n**Example** (Using arity to determine data-first or data-last style)\n\n```ts\nimport { dual, pipe } from \"effect/Function\"\n\nconst sum = dual<\n  (that: number) => (self: number) => number,\n  (self: number, that: number) => number\n>(2, (self, that) => self + that)\n\nconsole.log(sum(2, 3)) // 5\nconsole.log(pipe(2, sum(3))) // 5\n```\n\n**Example** (Using call signatures to define the overloads)\n\n```ts\nimport { dual, pipe } from \"effect/Function\"\n\nconst sum: {\n  (that: number): (self: number) => number\n  (self: number, that: number): number\n} = dual(2, (self: number, that: number): number => self + that)\n\nconsole.log(sum(2, 3)) // 5\nconsole.log(pipe(2, sum(3))) // 5\n```\n\n**Example** (Using a predicate to determine data-first or data-last style)\n\n```ts\nimport { dual, pipe } from \"effect/Function\"\n\nconst sum = dual<\n  (that: number) => (self: number) => number,\n  (self: number, that: number) => number\n>(\n  (args) => args.length === 2,\n  (self, that) => self + that\n)\n\nconsole.log(sum(2, 3)) // 5\nconsole.log(pipe(2, sum(3))) // 5\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { dual, pipe } from \"effect/Function\"\n\n// Exampe using arity to determine data-first or data-last style\nconst sum: {\n  (that: number): (self: number) => number\n  (self: number, that: number): number\n} = dual(2, (self: number, that: number): number => self + that)\n\nassert.deepStrictEqual(sum(2, 3), 5)\nassert.deepStrictEqual(pipe(2, sum(3)), 5)\n\n// Example using a predicate to determine data-first or data-last style\nconst sum2: {\n  (that: number): (self: number) => number\n  (self: number, that: number): number\n} = dual((args) => args.length === 1, (self: number, that: number): number => self + that)\n\nassert.deepStrictEqual(sum(2, 3), 5)\nassert.deepStrictEqual(pipe(2, sum(3)), 5)\n```"
-    ],
+    "examples": [],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>[\"length\"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L95"
   },
   {
     "_tag": "Constant",
@@ -27729,7 +27727,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const unsafeCoerce: <A, B>(a: A) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L271"
   },
   {
     "_tag": "Constant",
@@ -27747,7 +27745,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constTrue: LazyArg<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L286"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L307"
   },
   {
     "_tag": "Constant",
@@ -27765,7 +27763,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constFalse: LazyArg<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L301"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L322"
   },
   {
     "_tag": "Constant",
@@ -27783,7 +27781,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constNull: LazyArg<null>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L316"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L337"
   },
   {
     "_tag": "Constant",
@@ -27801,7 +27799,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constUndefined: LazyArg<undefined>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L352"
   },
   {
     "_tag": "Constant",
@@ -27819,7 +27817,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constVoid: LazyArg<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L346"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L367"
   },
   {
     "_tag": "Constant",
@@ -27837,7 +27835,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const compose: { <B, C>(bc: (b: B) => C): <A>(self: (a: A) => B) => (a: A) => C; <A, B, C>(self: (a: A) => B, bc: (b: B) => C): (a: A) => C; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L386"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L407"
   },
   {
     "_tag": "Constant",
@@ -27853,7 +27851,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const hole: <T>() => T",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1183"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1204"
   },
   {
     "_tag": "Function",
@@ -27869,7 +27867,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const pipe: { <A>(a: A): A; <A, B = never>(a: A, ab: (a: A) => B): B; <A, B = never, C = never>(a: A, ab: (a: A) => B, bc: (b: B) => C): C; <A, B = never, C = never, D = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D): D; <A, B = never, C = never, D = never, E = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E): E; <A, B = never, C = never, D = never, E = never, F = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F): F; <A, B = never, C = never, D = never, E = never, F = never, G = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G): G; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H): H; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I): I; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J): J; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K): K; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L): L; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M): M; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N): N; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O): O; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never, P = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O, op: (o: O) => P): P; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never, P = never, Q = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O, op: (o: O) => P, pq: (p: P) => Q): Q; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never, P = never, Q = never, R = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O, op: (o: O) => P, pq: (p: P) => Q, qr: (q: Q) => R): R; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never, P = never, Q = never, R = never, S = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O, op: (o: O) => P, pq: (p: P) => Q, qr: (q: Q) => R, rs: (r: R) => S): S; <A, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never, K = never, L = never, M = never, N = never, O = never, P = never, Q = never, R = never, S = never, T = never>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J, jk: (j: J) => K, kl: (k: K) => L, lm: (l: L) => M, mn: (m: M) => N, no: (n: N) => O, op: (o: O) => P, pq: (p: P) => Q, qr: (q: Q) => R, rs: (r: R) => S, st: (s: S) => T): T; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L953"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L974"
   },
   {
     "_tag": "Function",
@@ -27887,7 +27885,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const flow: { <A extends ReadonlyArray<unknown>, B = never>(ab: (...a: A) => B): (...a: A) => B; <A extends ReadonlyArray<unknown>, B = never, C = never>(ab: (...a: A) => B, bc: (b: B) => C): (...a: A) => C; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D): (...a: A) => D; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E): (...a: A) => E; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never, F = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F): (...a: A) => F; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never, F = never, G = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G): (...a: A) => G; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never, F = never, G = never, H = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H): (...a: A) => H; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I): (...a: A) => I; <A extends ReadonlyArray<unknown>, B = never, C = never, D = never, E = never, F = never, G = never, H = never, I = never, J = never>(ab: (...a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H, hi: (h: H) => I, ij: (i: I) => J): (...a: A) => J; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1149"
   },
   {
     "_tag": "Function",
@@ -27923,7 +27921,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const apply: <A>(a: A) => <B>(self: (a: A) => B) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L187"
   },
   {
     "_tag": "Function",
@@ -27941,7 +27939,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const identity: <A>(a: A) => A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L213"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L234"
   },
   {
     "_tag": "Function",
@@ -27959,7 +27957,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const satisfies: <A>() => <B extends A>(b: B) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L235"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L256"
   },
   {
     "_tag": "Function",
@@ -27977,7 +27975,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const constant: <A>(value: A) => LazyArg<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L271"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L292"
   },
   {
     "_tag": "Function",
@@ -27995,7 +27993,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const flip: <A extends Array<unknown>, B extends Array<unknown>, C>(f: (...a: A) => (...b: B) => C) => (...b: B) => (...a: A) => C",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L384"
   },
   {
     "_tag": "Function",
@@ -28011,7 +28009,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const absurd: <A>(_: never) => A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L420"
   },
   {
     "_tag": "Function",
@@ -28029,7 +28027,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const tupled: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (a: A) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L418"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L439"
   },
   {
     "_tag": "Function",
@@ -28047,7 +28045,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L456"
   },
   {
     "_tag": "Function",
@@ -28065,7 +28063,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const SK: <A, B>(_: A, b: B) => B",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L1222"
   },
   {
     "_tag": "Interface",
@@ -28098,7 +28096,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "export interface LazyArg<A> {\n  (): A\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L202"
   },
   {
     "_tag": "Interface",
@@ -28115,7 +28113,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "export interface FunctionN<A extends ReadonlyArray<unknown>, B> {\n  (...args: A): B\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L217"
   },
   {
     "_tag": "Function",
@@ -29158,7 +29156,7 @@
     "since": "2.0.0",
     "category": "refinements",
     "signature": "declare const isHashSet: { <A>(u: Iterable<A>): u is HashSet<A>; (u: unknown): u is HashSet<unknown>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L293"
   },
   {
     "_tag": "Constant",
@@ -29168,13 +29166,15 @@
     },
     "project": "effect",
     "name": "empty",
-    "description": "Creates an empty `HashSet`.",
+    "description": "Creates an empty `HashSet`.\n\nTime complexity: **`O(1)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    // Provide a type argument to create a HashSet of a specific type\n    HashSet.empty<number>(),\n    HashSet.add(1),\n    HashSet.add(1), // Notice the duplicate\n    HashSet.add(2),\n    HashSet.toValues\n  )\n) // Output: [1, 2]\n```"
+    ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const empty: <A = never>() => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L374"
   },
   {
     "_tag": "Constant",
@@ -29184,13 +29184,19 @@
     },
     "project": "effect",
     "name": "fromIterable",
-    "description": "Creates a new `HashSet` from an iterable collection of values.",
+    "description": "Creates a new `HashSet` from an iterable collection of values.\n\nTime complexity: **`O(n)`** where n is the number of elements in the iterable",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "Creating a HashSet from an {@link Array}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    [1, 2, 3, 4, 5, 1, 2, 3], // Array<number> is an Iterable<number>;  Note the duplicates.\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [1, 2, 3, 4, 5]\n```",
+      "Creating a HashSet from a {@link Set}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    new Set([\"apple\", \"banana\", \"orange\", \"apple\"]), // Set<string> is an Iterable<string>\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [\"apple\", \"banana\", \"orange\"]\n```",
+      "Creating a HashSet from a {@link Generator}\n\n```ts\nimport { HashSet } from \"effect\"\n\n// Generator functions return iterables\nfunction* fibonacci(n: number): Generator<number, void, unknown> {\n  let [a, b] = [0, 1]\n  for (let i = 0; i < n; i++) {\n    yield a\n    ;[a, b] = [b, a + b]\n  }\n}\n\n// Create a HashSet from the first 10 Fibonacci numbers\nconst fibonacciSet = HashSet.fromIterable(fibonacci(10))\n\nconsole.log(HashSet.toValues(fibonacciSet))\n// Outputs: [0, 1, 2, 3, 5, 8, 13, 21, 34] but in unsorted order\n```",
+      "Creating a HashSet from another {@link HashSet}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    // since HashSet implements the Iterable interface, we can use it to create a new HashSet\n    HashSet.make(1, 2, 3, 4),\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Output: [1, 2, 3, 4]\n```",
+      "Creating a HashSet from other Effect's data structures like\n{@link Chunk}\n\n```ts\nimport { Chunk, HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    Chunk.make(1, 2, 3, 4), // Iterable<number>\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Outputs: [1, 2, 3, 4]\n```"
+    ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromIterable: <A>(elements: Iterable<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L465"
   },
   {
     "_tag": "Constant",
@@ -29200,13 +29206,15 @@
     },
     "project": "effect",
     "name": "make",
-    "description": "Construct a new `HashSet` from a variable number of values.",
+    "description": "Construct a new `HashSet` from a variable number of values.\n\nTime complexity: **`O(n)`** where n is the number of elements",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { Equal, Hash, HashSet, pipe } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nclass Character implements Equal.Equal {\n  readonly name: string\n  readonly trait: string\n\n  constructor(name: string, trait: string) {\n    this.name = name\n    this.trait = trait\n  }\n\n  // Define equality based on name, and trait\n  [Equal.symbol](that: Equal.Equal): boolean {\n    if (that instanceof Character) {\n      return (\n        Equal.equals(this.name, that.name) &&\n        Equal.equals(this.trait, that.trait)\n      )\n    }\n    return false\n  }\n\n  // Generate a hash code based on the sum of the character's name and trait\n  [Hash.symbol](): number {\n    return Hash.hash(this.name + this.trait)\n  }\n\n  static readonly of = (name: string, trait: string): Character => {\n    return new Character(name, trait)\n  }\n}\n\nassert.strictEqual(\n  Equal.equals(\n    HashSet.make(\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"White Rabbit\", \"Always late\"),\n      Character.of(\"Mad Hatter\", \"Tea enthusiast\")\n    ),\n    // Is the same as adding each character to an empty set\n    pipe(\n      HashSet.empty(),\n      HashSet.add(Character.of(\"Alice\", \"Curious\")),\n      HashSet.add(Character.of(\"Alice\", \"Curious\")), // Alice tried to attend twice!\n      HashSet.add(Character.of(\"White Rabbit\", \"Always late\")),\n      HashSet.add(Character.of(\"Mad Hatter\", \"Tea enthusiast\"))\n    )\n  ),\n  true,\n  \"`HashSet.make` and `HashSet.empty() + HashSet.add()` should be equal\"\n)\n\nassert.strictEqual(\n  Equal.equals(\n    HashSet.make(\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"White Rabbit\", \"Always late\"),\n      Character.of(\"Mad Hatter\", \"Tea enthusiast\")\n    ),\n    HashSet.fromIterable([\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"Alice\", \"Curious\"),\n      Character.of(\"White Rabbit\", \"Always late\"),\n      Character.of(\"Mad Hatter\", \"Tea enthusiast\")\n    ])\n  ),\n  true,\n  \"`HashSet.make` and `HashSet.fromIterable` should be equal\"\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const make: <As extends ReadonlyArray<any>>(...elements: As) => HashSet<As[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L554"
   },
   {
     "_tag": "Constant",
@@ -29216,13 +29224,15 @@
     },
     "project": "effect",
     "name": "has",
-    "description": "Checks if the specified value exists in the `HashSet`.",
+    "description": "Checks if the specified value exists in the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.has(3)) // false\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.has(3)) // false\n\n// or with `data-first` API\nHashSet.has(HashSet.make(0, 1, 2), 3) // false\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const has: { <A>(value: A): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, value: A): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L582"
   },
   {
     "_tag": "Constant",
@@ -29232,13 +29242,15 @@
     },
     "project": "effect",
     "name": "some",
-    "description": "Check if a predicate holds true for some `HashSet` element.",
+    "description": "Check if a predicate holds true for some `HashSet` element.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set: HashSet.HashSet<number> = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.some((n) => n > 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.some((n) => n > 0)) // true\n\n// or with `data-first` API\nHashSet.some(set, (n) => n > 0) // true\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const some: { <A>(f: Predicate<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, f: Predicate<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L648"
   },
   {
     "_tag": "Constant",
@@ -29248,13 +29260,16 @@
     },
     "project": "effect",
     "name": "every",
-    "description": "Check if a predicate holds true for every `HashSet` element.",
+    "description": "Check if a predicate holds true for every `HashSet` element.\n\nTime complexity is **`O(n)`** as it needs to traverse the whole HashSet\ncollection",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst numberOrString = HashSet.make(1, \"1\", \"one\", \"uno\")\n\n// with `data-last`, a.k.a. `pipeable` API and `Refinement`\npipe(\n  numberOrString, // HashSet.HashSet<number | string>\n  HashSet.every(Predicate.isString)\n) // HashSet.HashSet<string>\n\n// or piped with the pipe function and  `Refinement`\nnumberOrString // HashSet.HashSet<number | string>\n  .pipe(HashSet.every(Predicate.isString)) // HashSet.HashSet<string>\n\n// or with `data-first` API and `Refinement`\nHashSet.every(\n  numberOrString, // HashSet.HashSet<number | string>\n  Predicate.isString\n) // HashSet.HashSet<string>\n```",
+      "**syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set = HashSet.make(1, 2, 3)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.every((n) => n >= 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.every((n) => n >= 0)) // true\n\n// or with `data-first` API\nHashSet.every(set, (n) => n >= 0) // true\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const every: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => self is HashSet<B>; <A>(predicate: Predicate<A>): (self: HashSet<A>) => boolean; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): self is HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L757"
   },
   {
     "_tag": "Constant",
@@ -29264,13 +29279,15 @@
     },
     "project": "effect",
     "name": "isSubset",
-    "description": "Returns `true` if and only if every element in the this `HashSet` is an\nelement of the second set,\n\n**NOTE**: the hash and equal of both sets must be the same.",
+    "description": "Returns `true` if and only if every element in the this `HashSet` is an\nelement of the second set,\n\n**NOTE**: the hash and equal of both sets must be the same.\n\nTime complexity analysis is of **`O(n)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set1 = HashSet.make(0, 1)\nconst set2 = HashSet.make(1, 2)\nconst set3 = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(set1, HashSet.isSubset(set2)) // false\npipe(set1, HashSet.isSubset(set3)) // true\n\n// or piped with the pipe function\nset1.pipe(HashSet.isSubset(set2)) // false\nset1.pipe(HashSet.isSubset(set3)) // true\n\n// or with `data-first` API\nHashSet.isSubset(set1, set2) // false\nHashSet.isSubset(set1, set3) // true)\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const isSubset: { <A>(that: HashSet<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, that: HashSet<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L886"
   },
   {
     "_tag": "Constant",
@@ -29280,13 +29297,15 @@
     },
     "project": "effect",
     "name": "values",
-    "description": "Returns an `IterableIterator` of the values in the `HashSet`.",
+    "description": "Returns an `IterableIterator` of the values in the `HashSet`.\n\nTime complexity: **`O(1)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst numberIterable = pipe(\n  HashSet.make(0, 1, 1, 2), // HashSet.HashSet<number>\n  HashSet.values // takes an HashSet<A> and returns an IterableIterator<A>\n)\n\nfor (const number of numberIterable) {\n  console.log(number) // it will logs: 0, 1, 2\n}\n```"
+    ],
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const values: <A>(self: HashSet<A>) => IterableIterator<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L953"
   },
   {
     "_tag": "Constant",
@@ -29296,13 +29315,15 @@
     },
     "project": "effect",
     "name": "size",
-    "description": "Calculates the number of values in the `HashSet`.",
+    "description": "Calculates the number of values in the `HashSet`.\n\nTime complexity: **`O(1)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet, pipe } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nassert.deepStrictEqual(pipe(HashSet.empty(), HashSet.size), 0)\n\nassert.deepStrictEqual(\n  pipe(HashSet.make(1, 2, 2, 3, 4, 3), HashSet.size),\n  4\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const size: <A>(self: HashSet<A>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1006"
   },
   {
     "_tag": "Constant",
@@ -29312,13 +29333,15 @@
     },
     "project": "effect",
     "name": "beginMutation",
-    "description": "Marks the `HashSet` as mutable.",
+    "description": "Creates a new mutable version of the `HashSet`\n\nWhen a `HashSet` is mutable, operations like {@link add} and {@link remove}\nmodify the data structure in place instead of creating a new one, which is\nmore efficient when performing multiple operations.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nconst UPPER_BOUND = 10_000\n\nconst immutableSet = HashSet.empty<number>().pipe(HashSet.add(0))\n\n// Create a mutable version of the immutableSet\nconst mutableSet = HashSet.beginMutation(immutableSet)\n\nfor (let i = 1; i < UPPER_BOUND; i++) {\n  // Operations now modify the set in place instead of creating new instances\n  // This is more efficient when making multiple changes\n  const pointerToMutableSet = HashSet.add(mutableSet, i)\n\n  // the two sets have the same identity, hence `add` is mutating mutableSet and not returning a new HashSet instance\n  assert(Object.is(mutableSet, pointerToMutableSet))\n  assert.equal(HashSet.has(mutableSet, i), true) // `i` is in the mutableSet\n  assert.equal(HashSet.has(immutableSet, i), false) // `i` is not in the immutableSet\n}\n\nconst next = UPPER_BOUND + 1\n// When done, mark the set as immutable again\nHashSet.endMutation(mutableSet).pipe(\n  HashSet.add(next) // since this returns a new HashSet, it will not be logged as part of the mutableSet\n)\nassert.equal(HashSet.has(mutableSet, next), false)\n\nconsole.log(HashSet.toValues(immutableSet)) // [0]\nconsole.log(HashSet.toValues(mutableSet).sort((a, b) => a - b)) // [0, 1, 2, 3, ...rest]\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const beginMutation: <A>(self: HashSet<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1054"
   },
   {
     "_tag": "Constant",
@@ -29328,13 +29351,15 @@
     },
     "project": "effect",
     "name": "endMutation",
-    "description": "Marks the `HashSet` as immutable.",
+    "description": "Makes the `HashSet` immutable again.\n\nAfter calling `endMutation`, operations like {@link add} and {@link remove}\nwill create new instances of the `HashSet` instead of modifying the existing\none.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet } from \"effect\"\nimport assert from \"node:assert/strict\"\n\n// Create a mutable set\nconst mutableSet = HashSet.beginMutation(HashSet.empty<number>())\n\n// Add some elements to the mutable set\nHashSet.add(mutableSet, 1)\nHashSet.add(mutableSet, 2)\n\n// Before endMutation, operations modify the set in place\nconst sameSet = HashSet.add(mutableSet, 3)\nassert(Object.is(mutableSet, sameSet)) // true - same object reference\nassert.deepStrictEqual(HashSet.toValues(mutableSet).sort(), [1, 2, 3])\n\n// Make the set immutable again\nconst immutableSet = HashSet.endMutation(mutableSet)\n\n// endMutation returns the same set instance, now made immutable\nassert(Object.is(mutableSet, immutableSet)) // true - same object reference\n\n// After endMutation, operations create new instances\nconst newSet = HashSet.add(immutableSet, 4)\nassert(!Object.is(immutableSet, newSet)) // false - different object references\n\n// The original set remains unchanged\nassert.deepStrictEqual(HashSet.toValues(immutableSet).sort(), [1, 2, 3])\n\n// The new set contains the added element\nassert.deepStrictEqual(HashSet.toValues(newSet).sort(), [1, 2, 3, 4])\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const endMutation: <A>(self: HashSet<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L146"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1102"
   },
   {
     "_tag": "Constant",
@@ -29344,13 +29369,15 @@
     },
     "project": "effect",
     "name": "mutate",
-    "description": "Mutates the `HashSet` within the context of the provided function.",
+    "description": "Mutates the `HashSet` within the context of the provided function.\n\nYou can consider it a functional abstraction on top of the lower-level\nmutation primitives of {@linkcode HashSet.beginMutation} `->` `mutable\ncontext` `->` {@linkcode HashSet.endMutation}.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(\n  HashSet.make(1, 2, 3),\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or with data-first API\nHashSet.mutate(HashSet.make(1, 2, 3), (set) => {\n  HashSet.add(set, 4)\n  HashSet.remove(set, 1)\n})\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const mutate: { <A>(f: (set: HashSet<A>) => void): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, f: (set: HashSet<A>) => void): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1144"
   },
   {
     "_tag": "Constant",
@@ -29360,13 +29387,15 @@
     },
     "project": "effect",
     "name": "add",
-    "description": "Adds a value to the `HashSet`.",
+    "description": "Adds a value to the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.empty(), HashSet.add(0), HashSet.add(0))\n\n// or piped with the pipe function\nHashSet.empty().pipe(HashSet.add(0))\n\n// or with data-first API\nHashSet.add(HashSet.empty(), 0)\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const add: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L163"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1243"
   },
   {
     "_tag": "Constant",
@@ -29376,13 +29405,15 @@
     },
     "project": "effect",
     "name": "remove",
-    "description": "Removes a value from the `HashSet`.",
+    "description": "Removes a value from the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.remove(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.remove(0))\n\n// or with `data-first` API\nHashSet.remove(HashSet.make(0, 1, 2), 0)\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const remove: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1309"
   },
   {
     "_tag": "Constant",
@@ -29392,13 +29423,15 @@
     },
     "project": "effect",
     "name": "difference",
-    "description": "Computes the set difference between this `HashSet` and the specified\n`Iterable<A>`.\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
+    "description": "Computes the set difference `(A - B)` between this `HashSet` and the\nspecified `Iterable<A>`.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same; meaning we cannot compute a difference between a `HashSet\nof bananas` and a `HashSet of elephants` as they are not the same type and\nwon't implement the Equal trait in the same way.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const difference: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1377"
   },
   {
     "_tag": "Constant",
@@ -29408,13 +29441,15 @@
     },
     "project": "effect",
     "name": "intersection",
-    "description": "Returns a `HashSet` of values which are present in both this set and that\n`Iterable<A>`.\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
+    "description": "Returns a `HashSet` of values which are present in both this set and that\n`Iterable<A>`. Computes set intersection (A ∩ B)\n\nTime complexity: **`O(n)`** where n is the number of elements in the smaller\nset\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or with data-first API\nHashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const intersection: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1470"
   },
   {
     "_tag": "Constant",
@@ -29424,13 +29459,15 @@
     },
     "project": "effect",
     "name": "union",
-    "description": "Computes the set union `(`self` + `that`)` between this `HashSet` and the\nspecified `Iterable<A>`.\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
+    "description": "Computes the set union `( self ∪ that )` between this `HashSet` and the\nspecified `Iterable<A>`.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.union(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.union(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.union(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const union: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1562"
   },
   {
     "_tag": "Constant",
@@ -29440,13 +29477,15 @@
     },
     "project": "effect",
     "name": "toggle",
-    "description": "Checks if a value is present in the `HashSet`. If it is present, the value\nwill be removed from the `HashSet`, otherwise the value will be added to the\n`HashSet`.",
+    "description": "Checks if a value is present in the `HashSet`. If it is present, the value\nwill be removed from the `HashSet`, otherwise the value will be added to the\n`HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.toggle(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.toggle(0))\n\n// or with `data-first` API\nHashSet.toggle(HashSet.make(0, 1, 2), 0)\n```"
+    ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const toggle: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1666"
   },
   {
     "_tag": "Constant",
@@ -29456,13 +29495,15 @@
     },
     "project": "effect",
     "name": "map",
-    "description": "Maps over the values of the `HashSet` using the specified function.",
+    "description": "Maps over the values of the `HashSet` using the specified function.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.map(String) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.map(String))\n\n// or with `data-first` API\nHashSet.map(HashSet.make(0, 1, 2), String)\n```"
+    ],
     "since": "2.0.0",
     "category": "mapping",
     "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => B): HashSet<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1750"
   },
   {
     "_tag": "Constant",
@@ -29472,13 +29513,15 @@
     },
     "project": "effect",
     "name": "flatMap",
-    "description": "Chains over the values of the `HashSet` using the specified function.",
+    "description": "Chains over the values of the `HashSet` using the specified function.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2) // HashSet.HashSet<number>\n  .pipe(\n    HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n  )\n\n// or with `data-first` API\nHashSet.flatMap(HashSet.make(0, 1, 2), (n) => Array.of(String(n)))\n```"
+    ],
     "since": "2.0.0",
     "category": "sequencing",
     "signature": "declare const flatMap: { <A, B>(f: (a: A) => Iterable<B>): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => Iterable<B>): HashSet<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1817"
   },
   {
     "_tag": "Constant",
@@ -29488,13 +29531,15 @@
     },
     "project": "effect",
     "name": "forEach",
-    "description": "Applies the specified function to the values of the `HashSet`.",
+    "description": "Applies the specified function to the values of the `HashSet`.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or with `data-first` API\nHashSet.forEach(HashSet.make(0, 1, 2), console.log) // logs: 0 1 2\n```"
+    ],
     "since": "2.0.0",
     "category": "traversing",
     "signature": "declare const forEach: { <A>(f: (value: A) => void): (self: HashSet<A>) => void; <A>(self: HashSet<A>, f: (value: A) => void): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L260"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1877"
   },
   {
     "_tag": "Constant",
@@ -29504,13 +29549,15 @@
     },
     "project": "effect",
     "name": "reduce",
-    "description": "Reduces the specified state over the values of the `HashSet`.",
+    "description": "Reduces the specified state over the values of the `HashSet`.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst sum = (a: number, b: number): number => a + b\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.reduce(0, sum))\n\n// or with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.reduce(0, sum))\n\n// or with `data-first` API\nHashSet.reduce(HashSet.make(0, 1, 2), 0, sum)\n```"
+    ],
     "since": "2.0.0",
     "category": "folding",
     "signature": "declare const reduce: { <A, Z>(zero: Z, f: (accumulator: Z, value: A) => Z): (self: HashSet<A>) => Z; <A, Z>(self: HashSet<A>, zero: Z, f: (accumulator: Z, value: A) => Z): Z; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L271"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1943"
   },
   {
     "_tag": "Constant",
@@ -29520,13 +29567,16 @@
     },
     "project": "effect",
     "name": "filter",
-    "description": "Filters values out of a `HashSet` using the specified predicate.",
+    "description": "Filters values out of a `HashSet` using the specified predicate.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, type Predicate, pipe } from \"effect\"\n\nconst filterPositiveNumbers: Predicate.Predicate<number> = (n) => n > 0\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(-2, -1, 0, 1, 2),\n  HashSet.filter(filterPositiveNumbers)\n)\n\n// or with the pipe method\nHashSet.make(-2, -1, 0, 1, 2).pipe(HashSet.filter(filterPositiveNumbers))\n\n// or with `data-first` API\nHashSet.filter(HashSet.make(-2, -1, 0, 1, 2), filterPositiveNumbers)\n```",
+      "**Syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst stringRefinement = (value: unknown): value is string =>\n  typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // // HashSet.HashSet<number | string>\n  HashSet.filter(stringRefinement)\n) // HashSet.HashSet<string>\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\") // HashSet.HashSet<number | string>\n  .pipe(HashSet.filter(stringRefinement)) // HashSet.HashSet<string>\n\n// or with `data-first` API\nHashSet.filter(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // HashSet.HashSet<number | string>\n  stringRefinement\n) // HashSet.HashSet<string>\n```"
+    ],
     "since": "2.0.0",
     "category": "filtering",
     "signature": "declare const filter: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => HashSet<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => HashSet<A>; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2035"
   },
   {
     "_tag": "Constant",
@@ -29536,13 +29586,16 @@
     },
     "project": "effect",
     "name": "partition",
-    "description": "Partition the values of a `HashSet` using the specified predicate.\n\nIf a value matches the predicate, it will be placed into the `HashSet` on the\nright side of the resulting `Tuple`, otherwise the value will be placed into\nthe left side.",
+    "description": "Partition the values of a `HashSet` using the specified predicate.\n\nIf a value matches the predicate, it will be placed into the `HashSet` on the\nright side of the resulting `Tuple`, otherwise the value will be placed into\nthe left side.\n\nTime complexity is of **`O(n)`**.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2, 3, 4, 5),\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with the pipe method\nHashSet.make(0, 1, 2, 3, 4, 5).pipe(\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with `data-first` API\nHashSet.partition(HashSet.make(0, 1, 2, 3, 4, 5), (n) => n % 2 === 0)\n```",
+      "**Syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst stringRefinement: Predicate.Refinement<string | number, string> = (\n  value\n) => typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  HashSet.partition(stringRefinement)\n)\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\").pipe(\n  HashSet.partition(stringRefinement)\n)\n\n// or with `data-first` API\nHashSet.partition(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  stringRefinement\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "partitioning",
     "signature": "declare const partition: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => [excluded: HashSet<A>, satisfying: HashSet<A>]; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(self: HashSet<A>, predicate: Predicate<A>): [excluded: HashSet<A>, satisfying: HashSet<A>]; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L299"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2191"
   },
   {
     "_tag": "Function",
@@ -29552,13 +29605,15 @@
     },
     "project": "effect",
     "name": "toValues",
-    "description": "Returns an `Array` of the values within the `HashSet`.",
+    "description": "Returns an `Array` of the values within the `HashSet`.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HashSet, pipe } from \"effect\"\nimport { deepStrictEqual } from \"node:assert/strict\"\n\ndeepStrictEqual(\n  pipe(\n    HashSet.make(0, 1, 1, 2), // HashSet<number>\n    HashSet.toValues // takes an HashSet<A> and returns an Array<A>\n  ),\n  Array.of(0, 1, 2)\n)\n```"
+    ],
     "since": "3.13.0",
     "category": "getters",
     "signature": "declare const toValues: <A>(self: HashSet<A>) => Array<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L980"
   },
   {
     "_tag": "Interface",
@@ -29569,11 +29624,13 @@
     "project": "effect",
     "name": "HashSet",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "**Syntax**\n\n```ts\nimport { HashSet } from \"effect\"\n\nlet numberSet: HashSet.HashSet<number>\n```"
+    ],
     "since": "2.0.0",
     "category": "models",
     "signature": "export interface HashSet<out A> extends Iterable<A>, Equal, Pipeable, Inspectable {\n  readonly [TypeId]: TypeId\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L284"
   },
   {
     "_tag": "TypeAlias",
@@ -29588,7 +29645,7 @@
     "since": "2.0.0",
     "category": "symbol",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L268"
   },
   {
     "_tag": "Interface",
