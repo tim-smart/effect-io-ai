@@ -10,9 +10,7 @@ Time complexity: **`O(1)`** average
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with `data-last`, a.k.a. `pipeable` API
@@ -24,11 +22,10 @@ HashSet.make(0, 1, 2).pipe(HashSet.remove(0))
 // or with `data-first` API
 HashSet.remove(HashSet.make(0, 1, 2), 0)
 ```
-```
 
 **See**
 
-- Other `HashSet` mutations are `add` `toggle` `beginMutation` `endMutation` `mutate`
+- Other `HashSet` mutations are `module:HashSet.add` `module:HashSet.toggle` `module:HashSet.beginMutation` `module:HashSet.endMutation` `module:HashSet.mutate`
 
 **Signature**
 
@@ -36,6 +33,6 @@ HashSet.remove(HashSet.make(0, 1, 2), 0)
 declare const remove: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1309)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1330)
 
 Since v2.0.0

@@ -10,9 +10,7 @@ The time complexity is of **`O(n)`**.
 **Example**
 
 ```ts
-**Syntax** with {@link Predicate}
-
-```ts
+// Syntax with  Predicate
 import { HashSet, type Predicate, pipe } from "effect"
 
 const filterPositiveNumbers: Predicate.Predicate<number> = (n) => n > 0
@@ -29,14 +27,11 @@ HashSet.make(-2, -1, 0, 1, 2).pipe(HashSet.filter(filterPositiveNumbers))
 // or with `data-first` API
 HashSet.filter(HashSet.make(-2, -1, 0, 1, 2), filterPositiveNumbers)
 ```
-```
 
 **Example**
 
 ```ts
-**Syntax** with {@link Refinement}
-
-```ts
+/// Syntax with Refinement
 import { HashSet, pipe } from "effect"
 
 const stringRefinement = (value: unknown): value is string =>
@@ -58,7 +53,6 @@ HashSet.filter(
   stringRefinement
 ) // HashSet.HashSet<string>
 ```
-```
 
 **Signature**
 
@@ -66,6 +60,6 @@ HashSet.filter(
 declare const filter: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => HashSet<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => HashSet<A>; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2035)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2076)
 
 Since v2.0.0

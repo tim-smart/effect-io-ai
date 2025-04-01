@@ -15,9 +15,7 @@ must be the same.
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with data-last, a.k.a. pipeable API
@@ -29,11 +27,10 @@ HashSet.make(1, 2, 3).pipe(HashSet.intersection(HashSet.make(2, 3, 4)))
 // or with data-first API
 HashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))
 ```
-```
 
 **See**
 
-- Other `HashSet` operations are `difference` `union`
+- Other `HashSet` operations are `module:HashSet.difference` `module:HashSet.union`
 
 **Signature**
 
@@ -41,6 +38,6 @@ HashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))
 declare const intersection: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1470)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1497)
 
 Since v2.0.0

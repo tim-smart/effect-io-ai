@@ -900,7 +900,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "declare const make: <const Rpcs extends ReadonlyArray<Rpc.Any>>(...rpcs: Rpcs) => RpcGroup<Rpcs[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L298"
   },
   {
     "_tag": "Interface",
@@ -914,7 +914,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "groups",
-    "signature": "export interface RpcGroup<in out Rpcs extends Rpc.Any> extends Pipeable {\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n  readonly requests: ReadonlyMap<string, Rpcs>\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add one or more procedures to the group.\n   */\n  add<const Rpcs2 extends ReadonlyArray<Rpc.Any>>(\n    ...rpcs: Rpcs2\n  ): RpcGroup<Rpcs | Rpcs2[number]>\n\n  /**\n   * Merge this group with another group.\n   */\n  merge<Rpcs2 extends Rpc.Any>(\n    that: RpcGroup<Rpcs2>\n  ): RpcGroup<Rpcs | Rpcs2>\n\n  /**\n   * Add middleware to all the procedures added to the group until this point.\n   */\n  middleware<M extends RpcMiddleware.TagClassAny>(middleware: M): RpcGroup<Rpc.AddMiddleware<Rpcs, M>>\n\n  /**\n   * Implement the handlers for the procedures in this group, returning a\n   * context object.\n   */\n  toHandlersContext<\n    Handlers extends HandlersFrom<Rpcs>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<\n    Context.Context<Rpc.ToHandler<Rpcs>>,\n    EX,\n    | RX\n    | HandlersContext<Rpcs, Handlers>\n  >\n\n  /**\n   * Implement the handlers for the procedures in this group.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<Rpcs>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<\n    Rpc.ToHandler<Rpcs>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlersContext<Rpcs, Handlers>\n  >\n\n  /**\n   * Annotate the group with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<Rpcs>\n\n  /**\n   * Annotate the group with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): RpcGroup<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): RpcGroup<Rpcs>\n}",
+    "signature": "export interface RpcGroup<in out R extends Rpc.Any> extends Pipeable {\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n  readonly requests: ReadonlyMap<string, R>\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add one or more procedures to the group.\n   */\n  add<const Rpcs2 extends ReadonlyArray<Rpc.Any>>(\n    ...rpcs: Rpcs2\n  ): RpcGroup<R | Rpcs2[number]>\n\n  /**\n   * Merge this group with one or more other groups.\n   */\n  merge<const Groups extends ReadonlyArray<RpcGroup<any>>>(\n    ...groups: Groups\n  ): RpcGroup<R | Rpcs<Groups[number]>>\n\n  /**\n   * Add middleware to all the procedures added to the group until this point.\n   */\n  middleware<M extends RpcMiddleware.TagClassAny>(middleware: M): RpcGroup<Rpc.AddMiddleware<R, M>>\n\n  /**\n   * Implement the handlers for the procedures in this group, returning a\n   * context object.\n   */\n  toHandlersContext<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<\n    Context.Context<Rpc.ToHandler<R>>,\n    EX,\n    | RX\n    | HandlersContext<R, Handlers>\n  >\n\n  /**\n   * Implement the handlers for the procedures in this group.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<\n    Rpc.ToHandler<R>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlersContext<R, Handlers>\n  >\n\n  /**\n   * Annotate the group with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the group with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): RpcGroup<R>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L34"
   },
   {
@@ -989,7 +989,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "groups",
-    "signature": "type Rpcs<Group> = Group extends RpcGroup<infer R> ? R : never",
+    "signature": "type Rpcs<Group> = Group extends RpcGroup<infer R> ? string extends R[\"_tag\"] ? never : R : never",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L190"
   },
   {

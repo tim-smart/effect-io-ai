@@ -24,7 +24,7 @@ deepStrictEqual(
 
 **See**
 
-- Other `HashSet` getters are `values` `size`
+- Other `HashSet` getters are `module:HashSet.values` `module:HashSet.size`
 
 **Signature**
 
@@ -32,6 +32,6 @@ deepStrictEqual(
 declare const toValues: <A>(self: HashSet<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L980)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L994)
 
 Since v3.13.0

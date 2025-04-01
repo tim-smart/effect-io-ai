@@ -86,7 +86,7 @@ assert.strictEqual(
 
 **See**
 
-- Other `HashSet` constructors are {@linkcode fromIterable} {@linkcode empty}
+- Other `HashSet` constructors are `module:HashSet.fromIterable` `module:HashSet.empty`
 
 **Signature**
 
@@ -94,6 +94,6 @@ assert.strictEqual(
 declare const make: <As extends ReadonlyArray<any>>(...elements: As) => HashSet<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L554)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L559)
 
 Since v2.0.0

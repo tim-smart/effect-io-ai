@@ -11,9 +11,7 @@ collection
 **Example**
 
 ```ts
-**syntax** with {@link Refinement}
-
-```ts
+// Syntax with Refinement
 import { HashSet, pipe, Predicate } from "effect"
 
 const numberOrString = HashSet.make(1, "1", "one", "uno")
@@ -34,14 +32,11 @@ HashSet.every(
   Predicate.isString
 ) // HashSet.HashSet<string>
 ```
-```
 
 **Example**
 
 ```ts
-**syntax** with {@link Predicate}
-
-```ts
+// Syntax with Predicate
 import { HashSet, pipe } from "effect"
 
 const set = HashSet.make(1, 2, 3)
@@ -58,11 +53,10 @@ set.pipe(HashSet.every((n) => n >= 0)) // true
 // or with `data-first` API
 HashSet.every(set, (n) => n >= 0) // true
 ```
-```
 
 **See**
 
-- Other `HashSet` elements are `has` `some` `isSubset`
+- Other `HashSet` elements are `module:HashSet.has` `module:HashSet.some` `module:HashSet.isSubset`
 
 **Signature**
 
@@ -70,6 +64,6 @@ HashSet.every(set, (n) => n >= 0) // true
 declare const every: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => self is HashSet<B>; <A>(predicate: Predicate<A>): (self: HashSet<A>) => boolean; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): self is HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L757)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L770)
 
 Since v2.0.0

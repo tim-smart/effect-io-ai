@@ -13,9 +13,7 @@ Time complexity analysis is of **`O(n)`**
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 const set1 = HashSet.make(0, 1)
@@ -34,11 +32,10 @@ set1.pipe(HashSet.isSubset(set3)) // true
 HashSet.isSubset(set1, set2) // false
 HashSet.isSubset(set1, set3) // true)
 ```
-```
 
 **See**
 
-- Other `HashSet` elements are `has` `some` `every`
+- Other `HashSet` elements are `module:HashSet.has` `module:HashSet.some` `module:HashSet.every`
 
 **Signature**
 
@@ -46,6 +43,6 @@ HashSet.isSubset(set1, set3) // true)
 declare const isSubset: { <A>(that: HashSet<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, that: HashSet<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L886)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L900)
 
 Since v2.0.0

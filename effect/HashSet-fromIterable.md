@@ -10,9 +10,7 @@ Time complexity: **`O(n)`** where n is the number of elements in the iterable
 **Example**
 
 ```ts
-Creating a HashSet from an {@link Array}
-
-```ts
+// Creating a HashSet from an Array
 import { HashSet, pipe } from "effect"
 
 console.log(
@@ -23,14 +21,11 @@ console.log(
   )
 ) // Output: [1, 2, 3, 4, 5]
 ```
-```
 
 **Example**
 
 ```ts
-Creating a HashSet from a {@link Set}
-
-```ts
+// Creating a HashSet from a Set
 import { HashSet, pipe } from "effect"
 
 console.log(
@@ -41,14 +36,11 @@ console.log(
   )
 ) // Output: ["apple", "banana", "orange"]
 ```
-```
 
 **Example**
 
 ```ts
-Creating a HashSet from a {@link Generator}
-
-```ts
+// Creating a HashSet from a Generator
 import { HashSet } from "effect"
 
 // Generator functions return iterables
@@ -66,14 +58,11 @@ const fibonacciSet = HashSet.fromIterable(fibonacci(10))
 console.log(HashSet.toValues(fibonacciSet))
 // Outputs: [0, 1, 2, 3, 5, 8, 13, 21, 34] but in unsorted order
 ```
-```
 
 **Example**
 
 ```ts
-Creating a HashSet from another {@link HashSet}
-
-```ts
+//  Creating a HashSet from another HashSet
 import { HashSet, pipe } from "effect"
 
 console.log(
@@ -85,15 +74,11 @@ console.log(
   )
 ) // Output: [1, 2, 3, 4]
 ```
-```
 
 **Example**
 
 ```ts
-Creating a HashSet from other Effect's data structures like
-{@link Chunk}
-
-```ts
+// Creating a HashSet from other Effect's data structures like Chunk
 import { Chunk, HashSet, pipe } from "effect"
 
 console.log(
@@ -104,11 +89,10 @@ console.log(
   )
 ) // Outputs: [1, 2, 3, 4]
 ```
-```
 
 **See**
 
-- Other `HashSet` constructors are `empty` `make`
+- Other `HashSet` constructors are `module:HashSet.empty` `module:HashSet.make`
 
 **Signature**
 
@@ -116,6 +100,6 @@ console.log(
 declare const fromIterable: <A>(elements: Iterable<A>) => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L465)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L470)
 
 Since v2.0.0

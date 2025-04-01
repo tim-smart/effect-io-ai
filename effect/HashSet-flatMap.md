@@ -10,9 +10,7 @@ The time complexity is of **`O(n)`**.
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with `data-last`, a.k.a. `pipeable` API
@@ -30,7 +28,6 @@ HashSet.make(0, 1, 2) // HashSet.HashSet<number>
 // or with `data-first` API
 HashSet.flatMap(HashSet.make(0, 1, 2), (n) => Array.of(String(n)))
 ```
-```
 
 **Signature**
 
@@ -38,6 +35,6 @@ HashSet.flatMap(HashSet.make(0, 1, 2), (n) => Array.of(String(n)))
 declare const flatMap: { <A, B>(f: (a: A) => Iterable<B>): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => Iterable<B>): HashSet<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1817)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1854)
 
 Since v2.0.0

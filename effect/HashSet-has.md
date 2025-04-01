@@ -10,9 +10,7 @@ Time complexity: **`O(1)`** average
 **Example**
 
 ```ts
-**syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with `data-last`, a.k.a. `pipeable` API
@@ -24,11 +22,10 @@ HashSet.make(0, 1, 2).pipe(HashSet.has(3)) // false
 // or with `data-first` API
 HashSet.has(HashSet.make(0, 1, 2), 3) // false
 ```
-```
 
 **See**
 
-- Other `HashSet` elements are `some` `every` `isSubset`
+- Other `HashSet` elements are `module:HashSet.some` `module:HashSet.every` `module:HashSet.isSubset`
 
 **Signature**
 
@@ -36,6 +33,6 @@ HashSet.has(HashSet.make(0, 1, 2), 3) // false
 declare const has: { <A>(value: A): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, value: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L582)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L588)
 
 Since v2.0.0

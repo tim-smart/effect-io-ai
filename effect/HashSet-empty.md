@@ -26,7 +26,7 @@ console.log(
 
 **See**
 
-- Other `HashSet` constructors are `make` `fromIterable`
+- Other `HashSet` constructors are `module:HashSet.make` `module:HashSet.fromIterable`
 
 **Signature**
 
@@ -34,6 +34,6 @@ console.log(
 declare const empty: <A = never>() => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L374)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L375)
 
 Since v2.0.0

@@ -14,9 +14,7 @@ Time complexity is of **`O(n)`**.
 **Example**
 
 ```ts
-**Syntax** with {@link Predicate}
-
-```ts
+// Syntax with Predicate
 import { HashSet, pipe, Predicate } from "effect"
 
 // with `data-last`, a.k.a. `pipeable` API
@@ -33,14 +31,11 @@ HashSet.make(0, 1, 2, 3, 4, 5).pipe(
 // or with `data-first` API
 HashSet.partition(HashSet.make(0, 1, 2, 3, 4, 5), (n) => n % 2 === 0)
 ```
-```
 
 **Example**
 
 ```ts
-**Syntax** with {@link Refinement}
-
-```ts
+// Syntax with Refinement
 import { HashSet, pipe, Predicate } from "effect"
 
 const stringRefinement: Predicate.Refinement<string | number, string> = (
@@ -64,7 +59,6 @@ HashSet.partition(
   stringRefinement
 )
 ```
-```
 
 **Signature**
 
@@ -72,6 +66,6 @@ HashSet.partition(
 declare const partition: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => [excluded: HashSet<A>, satisfying: HashSet<A>]; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(self: HashSet<A>, predicate: Predicate<A>): [excluded: HashSet<A>, satisfying: HashSet<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2191)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2234)
 
 Since v2.0.0

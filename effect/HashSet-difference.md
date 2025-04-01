@@ -16,9 +16,7 @@ won't implement the Equal trait in the same way.
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with data-last, a.k.a. pipeable API
@@ -30,11 +28,10 @@ HashSet.make(1, 2, 3).pipe(HashSet.difference(HashSet.make(3, 4, 5)))
 // or with data-first API
 HashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))
 ```
-```
 
 **See**
 
-- Other `HashSet` operations are `intersection` `union`
+- Other `HashSet` operations are `module:HashSet.intersection` `module:HashSet.union`
 
 **Signature**
 
@@ -42,6 +39,6 @@ HashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))
 declare const difference: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1377)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1401)
 
 Since v2.0.0

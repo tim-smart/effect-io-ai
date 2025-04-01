@@ -46,7 +46,7 @@ console.log(HashSet.toValues(mutableSet).sort((a, b) => a - b)) // [0, 1, 2, 3, 
 
 **See**
 
-- Other `HashSet` mutations are `add` `remove` `toggle` `endMutation` `mutate`
+- Other `HashSet` mutations are `module:HashSet.add` `module:HashSet.remove` `module:HashSet.toggle` `module:HashSet.endMutation` `module:HashSet.mutate`
 
 **Signature**
 
@@ -54,6 +54,6 @@ console.log(HashSet.toValues(mutableSet).sort((a, b) => a - b)) // [0, 1, 2, 3, 
 declare const beginMutation: <A>(self: HashSet<A>) => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1054)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1068)
 
 Since v2.0.0

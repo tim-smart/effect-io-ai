@@ -6,15 +6,13 @@ Module: `HashSet`<br />
 Mutates the `HashSet` within the context of the provided function.
 
 You can consider it a functional abstraction on top of the lower-level
-mutation primitives of {@linkcode HashSet.beginMutation} `->` `mutable
-context` `->` {@linkcode HashSet.endMutation}.
+mutation primitives of `module:HashSet.beginMutation` `->` `mutable
+context` `->` `HashSet.endMutation`.
 
 **Example**
 
 ```ts
-**Syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 // with data-last, a.k.a. pipeable API
@@ -40,11 +38,10 @@ HashSet.mutate(HashSet.make(1, 2, 3), (set) => {
   HashSet.remove(set, 1)
 })
 ```
-```
 
 **See**
 
-- Other `HashSet` mutations are {@linkcode HashSet.add} {@linkcode HashSet.remove} {@linkcode HashSet.toggle} {@linkcode HashSet.beginMutation} {@linkcode HashSet.endMutation}
+- Other `HashSet` mutations are `module:HashSet.add` `module:HashSet.remove` `module:HashSet.toggle` `module:HashSet.beginMutation` `module:HashSet.endMutation`
 
 **Signature**
 
@@ -52,6 +49,6 @@ HashSet.mutate(HashSet.make(1, 2, 3), (set) => {
 declare const mutate: { <A>(f: (set: HashSet<A>) => void): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, f: (set: HashSet<A>) => void): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1144)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1159)
 
 Since v2.0.0

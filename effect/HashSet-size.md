@@ -23,7 +23,7 @@ assert.deepStrictEqual(
 
 **See**
 
-- Other `HashSet` getters are `values` `toValues`
+- Other `HashSet` getters are `module:HashSet.values` `module:HashSet.toValues`
 
 **Signature**
 
@@ -31,6 +31,6 @@ assert.deepStrictEqual(
 declare const size: <A>(self: HashSet<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1006)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1020)
 
 Since v2.0.0

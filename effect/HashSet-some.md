@@ -10,9 +10,7 @@ Time complexity: **`O(n)`** where n is the number of elements in the set
 **Example**
 
 ```ts
-**syntax**
-
-```ts
+// Syntax
 import { HashSet, pipe } from "effect"
 
 const set: HashSet.HashSet<number> = HashSet.make(0, 1, 2)
@@ -29,11 +27,10 @@ set.pipe(HashSet.some((n) => n > 0)) // true
 // or with `data-first` API
 HashSet.some(set, (n) => n > 0) // true
 ```
-```
 
 **See**
 
-- Other `HashSet` elements are `has` `every` `isSubset`
+- Other `HashSet` elements are `module:HashSet.has` `module:HashSet.every` `module:HashSet.isSubset`
 
 **Signature**
 
@@ -41,6 +38,6 @@ HashSet.some(set, (n) => n > 0) // true
 declare const some: { <A>(f: Predicate<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, f: Predicate<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L648)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L657)
 
 Since v2.0.0

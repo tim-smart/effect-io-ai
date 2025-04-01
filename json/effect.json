@@ -29156,7 +29156,7 @@
     "since": "2.0.0",
     "category": "refinements",
     "signature": "declare const isHashSet: { <A>(u: Iterable<A>): u is HashSet<A>; (u: unknown): u is HashSet<unknown>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L293"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L294"
   },
   {
     "_tag": "Constant",
@@ -29174,7 +29174,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const empty: <A = never>() => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L374"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L375"
   },
   {
     "_tag": "Constant",
@@ -29187,16 +29187,16 @@
     "description": "Creates a new `HashSet` from an iterable collection of values.\n\nTime complexity: **`O(n)`** where n is the number of elements in the iterable",
     "deprecated": false,
     "examples": [
-      "Creating a HashSet from an {@link Array}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    [1, 2, 3, 4, 5, 1, 2, 3], // Array<number> is an Iterable<number>;  Note the duplicates.\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [1, 2, 3, 4, 5]\n```",
-      "Creating a HashSet from a {@link Set}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    new Set([\"apple\", \"banana\", \"orange\", \"apple\"]), // Set<string> is an Iterable<string>\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [\"apple\", \"banana\", \"orange\"]\n```",
-      "Creating a HashSet from a {@link Generator}\n\n```ts\nimport { HashSet } from \"effect\"\n\n// Generator functions return iterables\nfunction* fibonacci(n: number): Generator<number, void, unknown> {\n  let [a, b] = [0, 1]\n  for (let i = 0; i < n; i++) {\n    yield a\n    ;[a, b] = [b, a + b]\n  }\n}\n\n// Create a HashSet from the first 10 Fibonacci numbers\nconst fibonacciSet = HashSet.fromIterable(fibonacci(10))\n\nconsole.log(HashSet.toValues(fibonacciSet))\n// Outputs: [0, 1, 2, 3, 5, 8, 13, 21, 34] but in unsorted order\n```",
-      "Creating a HashSet from another {@link HashSet}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    // since HashSet implements the Iterable interface, we can use it to create a new HashSet\n    HashSet.make(1, 2, 3, 4),\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Output: [1, 2, 3, 4]\n```",
-      "Creating a HashSet from other Effect's data structures like\n{@link Chunk}\n\n```ts\nimport { Chunk, HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    Chunk.make(1, 2, 3, 4), // Iterable<number>\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Outputs: [1, 2, 3, 4]\n```"
+      "```ts\n// Creating a HashSet from an Array\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    [1, 2, 3, 4, 5, 1, 2, 3], // Array<number> is an Iterable<number>;  Note the duplicates.\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [1, 2, 3, 4, 5]\n```",
+      "```ts\n// Creating a HashSet from a Set\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    new Set([\"apple\", \"banana\", \"orange\", \"apple\"]), // Set<string> is an Iterable<string>\n    HashSet.fromIterable,\n    HashSet.toValues\n  )\n) // Output: [\"apple\", \"banana\", \"orange\"]\n```",
+      "```ts\n// Creating a HashSet from a Generator\nimport { HashSet } from \"effect\"\n\n// Generator functions return iterables\nfunction* fibonacci(n: number): Generator<number, void, unknown> {\n  let [a, b] = [0, 1]\n  for (let i = 0; i < n; i++) {\n    yield a\n    ;[a, b] = [b, a + b]\n  }\n}\n\n// Create a HashSet from the first 10 Fibonacci numbers\nconst fibonacciSet = HashSet.fromIterable(fibonacci(10))\n\nconsole.log(HashSet.toValues(fibonacciSet))\n// Outputs: [0, 1, 2, 3, 5, 8, 13, 21, 34] but in unsorted order\n```",
+      "```ts\n//  Creating a HashSet from another HashSet\nimport { HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    // since HashSet implements the Iterable interface, we can use it to create a new HashSet\n    HashSet.make(1, 2, 3, 4),\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Output: [1, 2, 3, 4]\n```",
+      "```ts\n// Creating a HashSet from other Effect's data structures like Chunk\nimport { Chunk, HashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    Chunk.make(1, 2, 3, 4), // Iterable<number>\n    HashSet.fromIterable,\n    HashSet.toValues // turns the HashSet back into an array\n  )\n) // Outputs: [1, 2, 3, 4]\n```"
     ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromIterable: <A>(elements: Iterable<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L465"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L470"
   },
   {
     "_tag": "Constant",
@@ -29214,7 +29214,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const make: <As extends ReadonlyArray<any>>(...elements: As) => HashSet<As[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L554"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L559"
   },
   {
     "_tag": "Constant",
@@ -29227,12 +29227,12 @@
     "description": "Checks if the specified value exists in the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
     "examples": [
-      "**syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.has(3)) // false\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.has(3)) // false\n\n// or with `data-first` API\nHashSet.has(HashSet.make(0, 1, 2), 3) // false\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.has(3)) // false\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.has(3)) // false\n\n// or with `data-first` API\nHashSet.has(HashSet.make(0, 1, 2), 3) // false\n```"
     ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const has: { <A>(value: A): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, value: A): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L582"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L588"
   },
   {
     "_tag": "Constant",
@@ -29245,12 +29245,12 @@
     "description": "Check if a predicate holds true for some `HashSet` element.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set",
     "deprecated": false,
     "examples": [
-      "**syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set: HashSet.HashSet<number> = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.some((n) => n > 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.some((n) => n > 0)) // true\n\n// or with `data-first` API\nHashSet.some(set, (n) => n > 0) // true\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\nconst set: HashSet.HashSet<number> = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.some((n) => n > 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.some((n) => n > 0)) // true\n\n// or with `data-first` API\nHashSet.some(set, (n) => n > 0) // true\n```"
     ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const some: { <A>(f: Predicate<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, f: Predicate<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L648"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L657"
   },
   {
     "_tag": "Constant",
@@ -29263,13 +29263,13 @@
     "description": "Check if a predicate holds true for every `HashSet` element.\n\nTime complexity is **`O(n)`** as it needs to traverse the whole HashSet\ncollection",
     "deprecated": false,
     "examples": [
-      "**syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst numberOrString = HashSet.make(1, \"1\", \"one\", \"uno\")\n\n// with `data-last`, a.k.a. `pipeable` API and `Refinement`\npipe(\n  numberOrString, // HashSet.HashSet<number | string>\n  HashSet.every(Predicate.isString)\n) // HashSet.HashSet<string>\n\n// or piped with the pipe function and  `Refinement`\nnumberOrString // HashSet.HashSet<number | string>\n  .pipe(HashSet.every(Predicate.isString)) // HashSet.HashSet<string>\n\n// or with `data-first` API and `Refinement`\nHashSet.every(\n  numberOrString, // HashSet.HashSet<number | string>\n  Predicate.isString\n) // HashSet.HashSet<string>\n```",
-      "**syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set = HashSet.make(1, 2, 3)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.every((n) => n >= 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.every((n) => n >= 0)) // true\n\n// or with `data-first` API\nHashSet.every(set, (n) => n >= 0) // true\n```"
+      "```ts\n// Syntax with Refinement\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst numberOrString = HashSet.make(1, \"1\", \"one\", \"uno\")\n\n// with `data-last`, a.k.a. `pipeable` API and `Refinement`\npipe(\n  numberOrString, // HashSet.HashSet<number | string>\n  HashSet.every(Predicate.isString)\n) // HashSet.HashSet<string>\n\n// or piped with the pipe function and  `Refinement`\nnumberOrString // HashSet.HashSet<number | string>\n  .pipe(HashSet.every(Predicate.isString)) // HashSet.HashSet<string>\n\n// or with `data-first` API and `Refinement`\nHashSet.every(\n  numberOrString, // HashSet.HashSet<number | string>\n  Predicate.isString\n) // HashSet.HashSet<string>\n```",
+      "```ts\n// Syntax with Predicate\nimport { HashSet, pipe } from \"effect\"\n\nconst set = HashSet.make(1, 2, 3)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  set,\n  HashSet.every((n) => n >= 0)\n) // true\n\n// or piped with the pipe function\nset.pipe(HashSet.every((n) => n >= 0)) // true\n\n// or with `data-first` API\nHashSet.every(set, (n) => n >= 0) // true\n```"
     ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const every: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => self is HashSet<B>; <A>(predicate: Predicate<A>): (self: HashSet<A>) => boolean; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): self is HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L757"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L770"
   },
   {
     "_tag": "Constant",
@@ -29282,12 +29282,12 @@
     "description": "Returns `true` if and only if every element in the this `HashSet` is an\nelement of the second set,\n\n**NOTE**: the hash and equal of both sets must be the same.\n\nTime complexity analysis is of **`O(n)`**",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst set1 = HashSet.make(0, 1)\nconst set2 = HashSet.make(1, 2)\nconst set3 = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(set1, HashSet.isSubset(set2)) // false\npipe(set1, HashSet.isSubset(set3)) // true\n\n// or piped with the pipe function\nset1.pipe(HashSet.isSubset(set2)) // false\nset1.pipe(HashSet.isSubset(set3)) // true\n\n// or with `data-first` API\nHashSet.isSubset(set1, set2) // false\nHashSet.isSubset(set1, set3) // true)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\nconst set1 = HashSet.make(0, 1)\nconst set2 = HashSet.make(1, 2)\nconst set3 = HashSet.make(0, 1, 2)\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(set1, HashSet.isSubset(set2)) // false\npipe(set1, HashSet.isSubset(set3)) // true\n\n// or piped with the pipe function\nset1.pipe(HashSet.isSubset(set2)) // false\nset1.pipe(HashSet.isSubset(set3)) // true\n\n// or with `data-first` API\nHashSet.isSubset(set1, set2) // false\nHashSet.isSubset(set1, set3) // true)\n```"
     ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const isSubset: { <A>(that: HashSet<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, that: HashSet<A>): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L886"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L900"
   },
   {
     "_tag": "Constant",
@@ -29305,7 +29305,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const values: <A>(self: HashSet<A>) => IterableIterator<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L953"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L967"
   },
   {
     "_tag": "Constant",
@@ -29323,7 +29323,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const size: <A>(self: HashSet<A>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1006"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1020"
   },
   {
     "_tag": "Constant",
@@ -29341,7 +29341,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const beginMutation: <A>(self: HashSet<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1054"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1068"
   },
   {
     "_tag": "Constant",
@@ -29359,7 +29359,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const endMutation: <A>(self: HashSet<A>) => HashSet<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1116"
   },
   {
     "_tag": "Constant",
@@ -29369,15 +29369,15 @@
     },
     "project": "effect",
     "name": "mutate",
-    "description": "Mutates the `HashSet` within the context of the provided function.\n\nYou can consider it a functional abstraction on top of the lower-level\nmutation primitives of {@linkcode HashSet.beginMutation} `->` `mutable\ncontext` `->` {@linkcode HashSet.endMutation}.",
+    "description": "Mutates the `HashSet` within the context of the provided function.\n\nYou can consider it a functional abstraction on top of the lower-level\nmutation primitives of {@link module:HashSet.beginMutation} `->` `mutable\ncontext` `->` {@link HashSet.endMutation}.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(\n  HashSet.make(1, 2, 3),\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or with data-first API\nHashSet.mutate(HashSet.make(1, 2, 3), (set) => {\n  HashSet.add(set, 4)\n  HashSet.remove(set, 1)\n})\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(\n  HashSet.make(1, 2, 3),\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(\n  HashSet.mutate((set) => {\n    HashSet.add(set, 4)\n    HashSet.remove(set, 1)\n  })\n)\n\n// or with data-first API\nHashSet.mutate(HashSet.make(1, 2, 3), (set) => {\n  HashSet.add(set, 4)\n  HashSet.remove(set, 1)\n})\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const mutate: { <A>(f: (set: HashSet<A>) => void): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, f: (set: HashSet<A>) => void): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1159"
   },
   {
     "_tag": "Constant",
@@ -29390,12 +29390,12 @@
     "description": "Adds a value to the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.empty(), HashSet.add(0), HashSet.add(0))\n\n// or piped with the pipe function\nHashSet.empty().pipe(HashSet.add(0))\n\n// or with data-first API\nHashSet.add(HashSet.empty(), 0)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.empty(), HashSet.add(0), HashSet.add(0))\n\n// or piped with the pipe function\nHashSet.empty().pipe(HashSet.add(0))\n\n// or with data-first API\nHashSet.add(HashSet.empty(), 0)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const add: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1261"
   },
   {
     "_tag": "Constant",
@@ -29408,12 +29408,12 @@
     "description": "Removes a value from the `HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.remove(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.remove(0))\n\n// or with `data-first` API\nHashSet.remove(HashSet.make(0, 1, 2), 0)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.remove(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.remove(0))\n\n// or with `data-first` API\nHashSet.remove(HashSet.make(0, 1, 2), 0)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const remove: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1309"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1330"
   },
   {
     "_tag": "Constant",
@@ -29426,12 +29426,12 @@
     "description": "Computes the set difference `(A - B)` between this `HashSet` and the\nspecified `Iterable<A>`.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same; meaning we cannot compute a difference between a `HashSet\nof bananas` and a `HashSet of elephants` as they are not the same type and\nwon't implement the Equal trait in the same way.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.difference(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const difference: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1377"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1401"
   },
   {
     "_tag": "Constant",
@@ -29444,12 +29444,12 @@
     "description": "Returns a `HashSet` of values which are present in both this set and that\n`Iterable<A>`. Computes set intersection (A ∩ B)\n\nTime complexity: **`O(n)`** where n is the number of elements in the smaller\nset\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or with data-first API\nHashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.intersection(HashSet.make(2, 3, 4)))\n\n// or with data-first API\nHashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const intersection: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1470"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1497"
   },
   {
     "_tag": "Constant",
@@ -29462,12 +29462,12 @@
     "description": "Computes the set union `( self ∪ that )` between this `HashSet` and the\nspecified `Iterable<A>`.\n\nTime complexity: **`O(n)`** where n is the number of elements in the set\n\n**NOTE**: the hash and equal of the values in both the set and the iterable\nmust be the same.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.union(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.union(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.union(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(HashSet.make(1, 2, 3), HashSet.union(HashSet.make(3, 4, 5)))\n\n// or piped with the pipe function\nHashSet.make(1, 2, 3).pipe(HashSet.union(HashSet.make(3, 4, 5)))\n\n// or with data-first API\nHashSet.union(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const union: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1562"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1592"
   },
   {
     "_tag": "Constant",
@@ -29480,12 +29480,12 @@
     "description": "Checks if a value is present in the `HashSet`. If it is present, the value\nwill be removed from the `HashSet`, otherwise the value will be added to the\n`HashSet`.\n\nTime complexity: **`O(1)`** average",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.toggle(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.toggle(0))\n\n// or with `data-first` API\nHashSet.toggle(HashSet.make(0, 1, 2), 0)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.toggle(0))\n\n// or piped with the pipe function\nHashSet.make(0, 1, 2).pipe(HashSet.toggle(0))\n\n// or with `data-first` API\nHashSet.toggle(HashSet.make(0, 1, 2), 0)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const toggle: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1666"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1699"
   },
   {
     "_tag": "Constant",
@@ -29498,12 +29498,12 @@
     "description": "Maps over the values of the `HashSet` using the specified function.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.map(String) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.map(String))\n\n// or with `data-first` API\nHashSet.map(HashSet.make(0, 1, 2), String)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.map(String) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.map(String))\n\n// or with `data-first` API\nHashSet.map(HashSet.make(0, 1, 2), String)\n```"
     ],
     "since": "2.0.0",
     "category": "mapping",
     "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => B): HashSet<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1750"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1786"
   },
   {
     "_tag": "Constant",
@@ -29516,12 +29516,12 @@
     "description": "Chains over the values of the `HashSet` using the specified function.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2) // HashSet.HashSet<number>\n  .pipe(\n    HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n  )\n\n// or with `data-first` API\nHashSet.flatMap(HashSet.make(0, 1, 2), (n) => Array.of(String(n)))\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2), // HashSet.HashSet<number>\n  HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n)\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2) // HashSet.HashSet<number>\n  .pipe(\n    HashSet.flatMap((n) => Array.of(String(n))) // HashSet.HashSet<string>\n  )\n\n// or with `data-first` API\nHashSet.flatMap(HashSet.make(0, 1, 2), (n) => Array.of(String(n)))\n```"
     ],
     "since": "2.0.0",
     "category": "sequencing",
     "signature": "declare const flatMap: { <A, B>(f: (a: A) => Iterable<B>): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => Iterable<B>): HashSet<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1817"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1854"
   },
   {
     "_tag": "Constant",
@@ -29534,12 +29534,12 @@
     "description": "Applies the specified function to the values of the `HashSet`.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or with `data-first` API\nHashSet.forEach(HashSet.make(0, 1, 2), console.log) // logs: 0 1 2\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or piped with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.forEach(console.log)) // logs: 0 1 2\n\n// or with `data-first` API\nHashSet.forEach(HashSet.make(0, 1, 2), console.log) // logs: 0 1 2\n```"
     ],
     "since": "2.0.0",
     "category": "traversing",
     "signature": "declare const forEach: { <A>(f: (value: A) => void): (self: HashSet<A>) => void; <A>(self: HashSet<A>, f: (value: A) => void): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1877"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1915"
   },
   {
     "_tag": "Constant",
@@ -29552,12 +29552,12 @@
     "description": "Reduces the specified state over the values of the `HashSet`.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst sum = (a: number, b: number): number => a + b\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.reduce(0, sum))\n\n// or with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.reduce(0, sum))\n\n// or with `data-first` API\nHashSet.reduce(HashSet.make(0, 1, 2), 0, sum)\n```"
+      "```ts\n// Syntax\nimport { HashSet, pipe } from \"effect\"\n\nconst sum = (a: number, b: number): number => a + b\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(HashSet.make(0, 1, 2), HashSet.reduce(0, sum))\n\n// or with the pipe method\nHashSet.make(0, 1, 2).pipe(HashSet.reduce(0, sum))\n\n// or with `data-first` API\nHashSet.reduce(HashSet.make(0, 1, 2), 0, sum)\n```"
     ],
     "since": "2.0.0",
     "category": "folding",
     "signature": "declare const reduce: { <A, Z>(zero: Z, f: (accumulator: Z, value: A) => Z): (self: HashSet<A>) => Z; <A, Z>(self: HashSet<A>, zero: Z, f: (accumulator: Z, value: A) => Z): Z; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1943"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1982"
   },
   {
     "_tag": "Constant",
@@ -29570,13 +29570,13 @@
     "description": "Filters values out of a `HashSet` using the specified predicate.\n\nThe time complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, type Predicate, pipe } from \"effect\"\n\nconst filterPositiveNumbers: Predicate.Predicate<number> = (n) => n > 0\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(-2, -1, 0, 1, 2),\n  HashSet.filter(filterPositiveNumbers)\n)\n\n// or with the pipe method\nHashSet.make(-2, -1, 0, 1, 2).pipe(HashSet.filter(filterPositiveNumbers))\n\n// or with `data-first` API\nHashSet.filter(HashSet.make(-2, -1, 0, 1, 2), filterPositiveNumbers)\n```",
-      "**Syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe } from \"effect\"\n\nconst stringRefinement = (value: unknown): value is string =>\n  typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // // HashSet.HashSet<number | string>\n  HashSet.filter(stringRefinement)\n) // HashSet.HashSet<string>\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\") // HashSet.HashSet<number | string>\n  .pipe(HashSet.filter(stringRefinement)) // HashSet.HashSet<string>\n\n// or with `data-first` API\nHashSet.filter(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // HashSet.HashSet<number | string>\n  stringRefinement\n) // HashSet.HashSet<string>\n```"
+      "```ts\n// Syntax with  Predicate\nimport { HashSet, type Predicate, pipe } from \"effect\"\n\nconst filterPositiveNumbers: Predicate.Predicate<number> = (n) => n > 0\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(-2, -1, 0, 1, 2),\n  HashSet.filter(filterPositiveNumbers)\n)\n\n// or with the pipe method\nHashSet.make(-2, -1, 0, 1, 2).pipe(HashSet.filter(filterPositiveNumbers))\n\n// or with `data-first` API\nHashSet.filter(HashSet.make(-2, -1, 0, 1, 2), filterPositiveNumbers)\n```",
+      "```ts\n/// Syntax with Refinement\nimport { HashSet, pipe } from \"effect\"\n\nconst stringRefinement = (value: unknown): value is string =>\n  typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // // HashSet.HashSet<number | string>\n  HashSet.filter(stringRefinement)\n) // HashSet.HashSet<string>\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\") // HashSet.HashSet<number | string>\n  .pipe(HashSet.filter(stringRefinement)) // HashSet.HashSet<string>\n\n// or with `data-first` API\nHashSet.filter(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"), // HashSet.HashSet<number | string>\n  stringRefinement\n) // HashSet.HashSet<string>\n```"
     ],
     "since": "2.0.0",
     "category": "filtering",
     "signature": "declare const filter: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => HashSet<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => HashSet<A>; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): HashSet<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2035"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2076"
   },
   {
     "_tag": "Constant",
@@ -29589,13 +29589,13 @@
     "description": "Partition the values of a `HashSet` using the specified predicate.\n\nIf a value matches the predicate, it will be placed into the `HashSet` on the\nright side of the resulting `Tuple`, otherwise the value will be placed into\nthe left side.\n\nTime complexity is of **`O(n)`**.",
     "deprecated": false,
     "examples": [
-      "**Syntax** with {@link Predicate}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2, 3, 4, 5),\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with the pipe method\nHashSet.make(0, 1, 2, 3, 4, 5).pipe(\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with `data-first` API\nHashSet.partition(HashSet.make(0, 1, 2, 3, 4, 5), (n) => n % 2 === 0)\n```",
-      "**Syntax** with {@link Refinement}\n\n```ts\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst stringRefinement: Predicate.Refinement<string | number, string> = (\n  value\n) => typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  HashSet.partition(stringRefinement)\n)\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\").pipe(\n  HashSet.partition(stringRefinement)\n)\n\n// or with `data-first` API\nHashSet.partition(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  stringRefinement\n)\n```"
+      "```ts\n// Syntax with Predicate\nimport { HashSet, pipe, Predicate } from \"effect\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(0, 1, 2, 3, 4, 5),\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with the pipe method\nHashSet.make(0, 1, 2, 3, 4, 5).pipe(\n  HashSet.partition((n) => n % 2 === 0)\n)\n\n// or with `data-first` API\nHashSet.partition(HashSet.make(0, 1, 2, 3, 4, 5), (n) => n % 2 === 0)\n```",
+      "```ts\n// Syntax with Refinement\nimport { HashSet, pipe, Predicate } from \"effect\"\n\nconst stringRefinement: Predicate.Refinement<string | number, string> = (\n  value\n) => typeof value === \"string\"\n\n// with `data-last`, a.k.a. `pipeable` API\npipe(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  HashSet.partition(stringRefinement)\n)\n\n// or with the pipe method\nHashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\").pipe(\n  HashSet.partition(stringRefinement)\n)\n\n// or with `data-first` API\nHashSet.partition(\n  HashSet.make(1, \"unos\", 2, \"two\", 3, \"trois\", 4, \"vier\"),\n  stringRefinement\n)\n```"
     ],
     "since": "2.0.0",
     "category": "partitioning",
     "signature": "declare const partition: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(predicate: Predicate<NoInfer<A>>): (self: HashSet<A>) => [excluded: HashSet<A>, satisfying: HashSet<A>]; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): [excluded: HashSet<Exclude<A, B>>, satisfying: HashSet<B>]; <A>(self: HashSet<A>, predicate: Predicate<A>): [excluded: HashSet<A>, satisfying: HashSet<A>]; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L2234"
   },
   {
     "_tag": "Function",
@@ -29613,7 +29613,7 @@
     "since": "3.13.0",
     "category": "getters",
     "signature": "declare const toValues: <A>(self: HashSet<A>) => Array<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L980"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L994"
   },
   {
     "_tag": "Interface",
@@ -29625,12 +29625,12 @@
     "name": "HashSet",
     "deprecated": false,
     "examples": [
-      "**Syntax**\n\n```ts\nimport { HashSet } from \"effect\"\n\nlet numberSet: HashSet.HashSet<number>\n```"
+      "```ts\n// Syntax\nimport { HashSet } from \"effect\"\n\nlet numberSet: HashSet.HashSet<number>\n```"
     ],
     "since": "2.0.0",
     "category": "models",
     "signature": "export interface HashSet<out A> extends Iterable<A>, Equal, Pipeable, Inspectable {\n  readonly [TypeId]: TypeId\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L284"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L285"
   },
   {
     "_tag": "TypeAlias",

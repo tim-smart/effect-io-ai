@@ -46,7 +46,7 @@ assert.deepStrictEqual(HashSet.toValues(newSet).sort(), [1, 2, 3, 4])
 
 **See**
 
-- Other `HashSet` mutations are {@linkcode HashSet.add} {@linkcode HashSet.remove} {@linkcode HashSet.toggle} {@linkcode HashSet.beginMutation} {@linkcode HashSet.mutate}
+- Other `HashSet` mutations are `module:HashSet.add` `module:HashSet.remove` `module:HashSet.toggle` `module:HashSet.beginMutation` `module:HashSet.mutate`
 
 **Signature**
 
@@ -54,6 +54,6 @@ assert.deepStrictEqual(HashSet.toValues(newSet).sort(), [1, 2, 3, 4])
 declare const endMutation: <A>(self: HashSet<A>) => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1116)
 
 Since v2.0.0

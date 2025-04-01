@@ -24,7 +24,7 @@ for (const number of numberIterable) {
 
 **See**
 
-- Other `HashSet` getters are `toValues` `size`
+- Other `HashSet` getters are `module:HashSet.toValues` `module:HashSet.size`
 
 **Signature**
 
@@ -32,6 +32,6 @@ for (const number of numberIterable) {
 declare const values: <A>(self: HashSet<A>) => IterableIterator<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L953)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L967)
 
 Since v2.0.0
