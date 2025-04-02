@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface ContentPart {\n  readonly _tag: \"Content\"\n  readonly name?: string\n  readonly content: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L336"
   },
   {
     "_tag": "Interface",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface ToolCallPart {\n  readonly _tag: \"ToolCall\"\n  readonly id: string\n  readonly name: string\n  readonly arguments: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L341"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L346"
   },
   {
     "_tag": "Interface",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface UsagePart {\n  readonly _tag: \"Usage\"\n  readonly id: string\n  readonly model: string\n  readonly inputTokens: number\n  readonly outputTokens: number\n  readonly finishReasons: ReadonlyArray<string>\n  readonly systemFingerprint: string\n  readonly serviceTier: string | null\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L352"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L357"
   },
   {
     "_tag": "TypeAlias",
@@ -147,7 +147,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type StreamChunkPart = ContentPart | ToolCallPart | UsagePart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L330"
   },
   {
     "_tag": "Interface",
@@ -251,7 +251,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Model = typeof Generated.CreateChatCompletionRequestModelEnum.Encoded",
+    "signature": "type Model = typeof Generated.ModelIdsSharedEnum.Encoded",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiCompletions.ts#L31"
   },
   {

@@ -21069,7 +21069,7 @@
     "since": "3.11.0",
     "category": "Tracing",
     "signature": "declare const fn: fn.Gen & fn.NonGen & ((name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14472"
   },
   {
     "_tag": "Constant",
@@ -21084,8 +21084,8 @@
     "examples": [],
     "since": "3.12.0",
     "category": "Tracing",
-    "signature": "declare const fnUntraced: fn.Gen",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14375"
+    "signature": "declare const fnUntraced: fn.Untraced",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14594"
   },
   {
     "_tag": "Function",
@@ -21828,6 +21828,21 @@
     "category": "Models",
     "signature": "type NonGen = {\n    <Eff extends Effect<any, any, any>, Args extends Array<any>>(\n      body: (...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => E,\n      e: (_: E, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => E,\n      e: (_: E, ...args: Args) => F,\n      f: (_: F, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => E,\n      e: (_: E, ...args: Args) => F,\n      f: (_: F, ...args: Args) => G,\n      g: (_: G, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, H, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => E,\n      e: (_: E, ...args: Args) => F,\n      f: (_: F, ...args: Args) => G,\n      g: (_: G, ...args: Args) => H,\n      h: (_: H, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, H, I, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: Args) => B,\n      b: (_: B, ...args: Args) => C,\n      c: (_: C, ...args: Args) => D,\n      d: (_: D, ...args: Args) => E,\n      e: (_: E, ...args: Args) => F,\n      f: (_: F, ...args: Args) => G,\n      g: (_: G, ...args: Args) => H,\n      h: (_: H, ...args: Args) => I,\n      i: (_: H, ...args: Args) => Eff\n    ): (...args: Args) => Eff\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14036"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Effect.ts",
+      "path": "src/Effect.ts"
+    },
+    "project": "effect",
+    "name": "fn.Untraced",
+    "deprecated": false,
+    "examples": [],
+    "since": "3.11.0",
+    "category": "Models",
+    "signature": "type Untraced = {\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>>(\n      body: (...args: Args) => Generator<Eff, AEff, never>\n    ): (...args: Args) => Effect<\n      AEff,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n    >\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>, A>(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A\n    ): (...args: Args) => A\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>, A, B>(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B\n    ): (...args: Args) => B\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C\n    ): (...args: Args) => C\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D\n    ): (...args: Args) => D\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D,\n      e: (_: D, ...args: Args) => E\n    ): (...args: Args) => E\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D,\n      e: (_: D, ...args: Args) => E,\n      f: (_: E, ...args: Args) => F\n    ): (...args: Args) => F\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D,\n      e: (_: D, ...args: Args) => E,\n      f: (_: E, ...args: Args) => F,\n      g: (_: F, ...args: Args) => G\n    ): (...args: Args) => G\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D,\n      e: (_: D, ...args: Args) => E,\n      f: (_: E, ...args: Args) => F,\n      g: (_: F, ...args: Args) => G,\n      h: (_: G, ...args: Args) => H\n    ): (...args: Args) => H\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H,\n      I\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: Args\n      ) => A,\n      b: (_: A, ...args: Args) => B,\n      c: (_: B, ...args: Args) => C,\n      d: (_: C, ...args: Args) => D,\n      e: (_: D, ...args: Args) => E,\n      f: (_: E, ...args: Args) => F,\n      g: (_: F, ...args: Args) => G,\n      h: (_: G, ...args: Args) => H,\n      i: (_: H, ...args: Args) => I\n    ): (...args: Args) => I\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14118"
   },
   {
     "_tag": "Class",
@@ -23138,7 +23153,7 @@
     "since": "2.0.0",
     "category": "guards",
     "signature": "declare const isEqual: (u: unknown) => u is Equal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equal.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equal.ts#L90"
   },
   {
     "_tag": "Function",
@@ -23153,7 +23168,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const equivalence: <A>() => Equivalence<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equal.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equal.ts#L96"
   },
   {
     "_tag": "Interface",
@@ -28286,7 +28301,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const cached: { (self: object): (hash: number) => number; (self: object, hash: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L166"
   },
   {
     "_tag": "Function",
@@ -28316,7 +28331,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const random: <A extends object>(self: A) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L76"
   },
   {
     "_tag": "Function",
@@ -28331,7 +28346,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const combine: (b: number) => (self: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L85"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L87"
   },
   {
     "_tag": "Function",
@@ -28346,7 +28361,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const optimize: (n: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L93"
   },
   {
     "_tag": "Function",
@@ -28361,7 +28376,7 @@
     "since": "2.0.0",
     "category": "guards",
     "signature": "declare const isHash: (u: unknown) => u is Hash",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L97"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L99"
   },
   {
     "_tag": "Function",
@@ -28376,7 +28391,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const number: (n: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L105"
   },
   {
     "_tag": "Function",
@@ -28391,7 +28406,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const string: (str: string) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L123"
   },
   {
     "_tag": "Function",
@@ -28406,7 +28421,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const structureKeys: <A extends object>(o: A, keys: ReadonlyArray<keyof A>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L135"
   },
   {
     "_tag": "Function",
@@ -28421,7 +28436,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const structure: <A extends object>(o: A) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L147"
   },
   {
     "_tag": "Function",
@@ -28436,7 +28451,7 @@
     "since": "2.0.0",
     "category": "hashing",
     "signature": "declare const array: <A>(arr: ReadonlyArray<A>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Hash.ts#L154"
   },
   {
     "_tag": "Interface",
