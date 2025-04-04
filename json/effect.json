@@ -42954,12 +42954,13 @@
     },
     "project": "effect",
     "name": "add",
+    "description": "**Checks** whether the `MutableHashSet` contains the given element, and\n**adds** it if not.\n\nTime complexity: **`O(1)`** average\n\n**Syntax**\n\n```ts\nimport { MutableHashSet, pipe } from \"effect\"\n\n// with data-last, a.k.a. pipeable API\npipe(\n  MutableHashSet.empty(),\n  MutableHashSet.add(0),\n  MutableHashSet.add(0)\n)\n\n// or piped with the pipe function\nMutableHashSet.empty().pipe(MutableHashSet.add(0))\n\n// or with data-first API\nMutableHashSet.add(MutableHashSet.empty(), 0)\n```",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const add: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L402"
   },
   {
     "_tag": "Constant",
@@ -42969,12 +42970,13 @@
     },
     "project": "effect",
     "name": "has",
+    "description": "Checks if the specified value exists in the `MutableHashSet`.\n\nTime complexity: `O(1)` average\n\n**Syntax**\n\n```ts\nimport { MutableHashSet, pipe } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nassert.equal(\n  // with `data-last`, a.k.a. `pipeable` API\n  pipe(MutableHashSet.make(0, 1, 2), MutableHashSet.has(3)),\n  false\n)\n\nassert.equal(\n  // or piped with the pipe function\n  MutableHashSet.make(0, 1, 2).pipe(MutableHashSet.has(3)),\n  false\n)\n\nassert.equal(\n  // or with `data-first` API\n  MutableHashSet.has(MutableHashSet.make(0, 1, 2), 3),\n  false\n)\n```",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const has: { <V>(key: V): (self: MutableHashSet<V>) => boolean; <V>(self: MutableHashSet<V>, key: V): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L501"
   },
   {
     "_tag": "Constant",
@@ -42984,12 +42986,13 @@
     },
     "project": "effect",
     "name": "remove",
+    "description": "Removes a value from the `MutableHashSet`.\n\nTime complexity: **`O(1)`** average\n\n**Syntax**\n\n```ts\nimport { MutableHashSet, pipe } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nassert.equal(\n  // with `data-last`, a.k.a. `pipeable` API\n  pipe(\n    MutableHashSet.make(0, 1, 2),\n    MutableHashSet.remove(0),\n    MutableHashSet.has(0)\n  ),\n  false\n)\n\nassert.equal(\n  // or piped with the pipe function\n  MutableHashSet.make(0, 1, 2).pipe(\n    MutableHashSet.remove(0),\n    MutableHashSet.has(0)\n  ),\n  false\n)\n\nassert.equal(\n  // or with `data-first` API\n  MutableHashSet.remove(MutableHashSet.make(0, 1, 2), 0).pipe(\n    MutableHashSet.has(0)\n  ),\n  false\n)\n```",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const remove: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L584"
   },
   {
     "_tag": "Function",
@@ -42999,12 +43002,15 @@
     },
     "project": "effect",
     "name": "empty",
+    "description": "Creates an empty mutable hash set.\n\nThis function initializes and returns an empty `MutableHashSet` instance,\nwhich allows for efficient storage and manipulation of unique elements.\n\nTime complexity: **`O(1)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { MutableHashSet } from \"effect\"\n\ntype T = unknown // replace with your type\n\n// in places where the type can't be inferred, replace with your type\nconst set: MutableHashSet.MutableHashSet<T> = MutableHashSet.empty<T>()\n```"
+    ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const empty: <K = never>() => MutableHashSet<K>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L179"
   },
   {
     "_tag": "Function",
@@ -43014,13 +43020,13 @@
     },
     "project": "effect",
     "name": "fromIterable",
-    "description": "Creates a new `MutableHashSet` from an iterable collection of values.",
+    "description": "Creates a new `MutableHashSet` from an iterable collection of values.\nDuplicate values are omitted.\n\nTime complexity: **`O(n)`** where n is the number of elements in the iterable\n\nCreating a `MutableHashSet` from an {@link Array}\n\n```ts\nimport { MutableHashSet } from \"effect\"\n\nconst array: Iterable<number> = [1, 2, 3, 4, 5, 1, 2, 3] // Array<T> is also Iterable<T>\nconst mutableHashSet: MutableHashSet.MutableHashSet<number> =\n  MutableHashSet.fromIterable(array)\n\nconsole.log(\n  // MutableHashSet.MutableHashSet<T> is also an Iterable<T>\n  Array.from(mutableHashSet)\n) // Output: [1, 2, 3, 4, 5]\n```\n\nCreating a `MutableHashSet` from a {@link Set}\n\n```ts\nimport { MutableHashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    // Set<string> is an Iterable<string>\n    new Set([\"apple\", \"banana\", \"orange\", \"apple\"]),\n    // constructs MutableHashSet from an Iterable Set\n    MutableHashSet.fromIterable,\n    // since MutableHashSet it is itself an Iterable, we can pass it to other functions expecting an Iterable\n    Array.from\n  )\n) // Output: [\"apple\", \"banana\", \"orange\"]\n```\n\nCreating a `MutableHashSet` from a {@link Generator}\n\n```ts\nimport { MutableHashSet } from \"effect\"\n\n// Generator functions return iterables\nfunction* fibonacci(n: number): Generator<number, void, never> {\n  let [a, b] = [0, 1]\n  for (let i = 0; i < n; i++) {\n    yield a\n    ;[a, b] = [b, a + b]\n  }\n}\n\n// Create a MutableHashSet from the first 10 Fibonacci numbers\nconst fibonacciSet = MutableHashSet.fromIterable(fibonacci(10))\n\nconsole.log(Array.from(fibonacciSet))\n// Outputs: [0, 1, 2, 3, 5, 8, 13, 21, 34] but in unsorted order\n```\n\nCreating a `MutableHashSet` from another {@link module:MutableHashSet}\n\n```ts\nimport { MutableHashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    MutableHashSet.make(1, 2, 3, 4),\n    MutableHashSet.fromIterable,\n    Array.from\n  )\n) // Output: [1, 2, 3, 4]\n```\n\nCreating a `MutableHashSet` from an {@link module:HashSet}\n\n```ts\nimport { HashSet, MutableHashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    HashSet.make(1, 2, 3, 4), // it works also with its immutable HashSet sibling\n    MutableHashSet.fromIterable,\n    Array.from\n  )\n) // Output: [1, 2, 3, 4]\n```\n\nCreating a `MutableHashSet` from other Effect's data structures like\n{@link Chunk}\n\n```ts\nimport { Chunk, MutableHashSet, pipe } from \"effect\"\n\nconsole.log(\n  pipe(\n    Chunk.make(1, 2, 3, 4), //  Chunk is also an Iterable<T>\n    MutableHashSet.fromIterable,\n    Array.from\n  )\n) // Outputs: [1, 2, 3, 4]\n```",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromIterable: <K = never>(keys: Iterable<K>) => MutableHashSet<K>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L294"
   },
   {
     "_tag": "Function",
@@ -43030,12 +43036,15 @@
     },
     "project": "effect",
     "name": "make",
+    "description": "Construct a new `MutableHashSet` from a variable number of values.\n\nTime complexity: **`O(n)`** where n is the number of elements",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { Equal, Hash, MutableHashSet } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nclass Character implements Equal.Equal {\n  readonly name: string\n  readonly trait: string\n\n  constructor(name: string, trait: string) {\n    this.name = name\n    this.trait = trait\n  }\n\n  // Define equality based on name, and trait\n  [Equal.symbol](that: Equal.Equal): boolean {\n    if (that instanceof Character) {\n      return (\n        Equal.equals(this.name, that.name) &&\n        Equal.equals(this.trait, that.trait)\n      )\n    }\n    return false\n  }\n\n  // Generate a hash code based on the sum of the character's name and trait\n  [Hash.symbol](): number {\n    return Hash.hash(this.name + this.trait)\n  }\n\n  static readonly of = (name: string, trait: string): Character => {\n    return new Character(name, trait)\n  }\n}\n\nconst mutableCharacterHashSet = MutableHashSet.make(\n  Character.of(\"Alice\", \"Curious\"),\n  Character.of(\"Alice\", \"Curious\"),\n  Character.of(\"White Rabbit\", \"Always late\"),\n  Character.of(\"Mad Hatter\", \"Tea enthusiast\")\n)\n\nassert.equal(\n  MutableHashSet.has(\n    mutableCharacterHashSet,\n    Character.of(\"Alice\", \"Curious\")\n  ),\n  true\n)\nassert.equal(\n  MutableHashSet.has(\n    mutableCharacterHashSet,\n    Character.of(\"Fluffy\", \"Kind\")\n  ),\n  false\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const make: <Keys extends ReadonlyArray<unknown>>(...keys: Keys) => MutableHashSet<Keys[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L368"
   },
   {
     "_tag": "Function",
@@ -43045,12 +43054,15 @@
     },
     "project": "effect",
     "name": "size",
+    "description": "Calculates the number of values in the `HashSet`.\n\nTime complexity: **`O(1)`**",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { MutableHashSet } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nassert.equal(MutableHashSet.size(MutableHashSet.empty()), 0)\n\nassert.equal(\n  MutableHashSet.size(MutableHashSet.make(1, 2, 2, 3, 4, 3)),\n  4\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const size: <V>(self: MutableHashSet<V>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L672"
   },
   {
     "_tag": "Function",
@@ -43060,12 +43072,15 @@
     },
     "project": "effect",
     "name": "clear",
+    "description": "Removes all values from the `MutableHashSet`.\n\nThis function operates by delegating the clearing action to the underlying\nkey map associated with the given `MutableHashSet`. It ensures that the hash\nset becomes empty while maintaining its existence and structure.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { MutableHashSet, pipe } from \"effect\"\nimport assert from \"node:assert/strict\"\n\nassert.deepStrictEqual(\n  pipe(\n    MutableHashSet.make(1, 2, 3, 4),\n    MutableHashSet.clear,\n    MutableHashSet.size\n  ),\n  0\n)\n```"
+    ],
     "since": "2.0.0",
     "category": "elements",
     "signature": "declare const clear: <V>(self: MutableHashSet<V>) => MutableHashSet<V>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L704"
   },
   {
     "_tag": "Interface",
@@ -43080,7 +43095,7 @@
     "since": "2.0.0",
     "category": "models",
     "signature": "export interface MutableHashSet<out V> extends Iterable<V>, Pipeable, Inspectable {\n  readonly [TypeId]: TypeId\n\n  /** @internal */\n  readonly keyMap: MutableHashMap.MutableHashMap<V, boolean>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L113"
   },
   {
     "_tag": "TypeAlias",
@@ -43095,7 +43110,7 @@
     "since": "2.0.0",
     "category": "symbol",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L107"
   },
   {
     "_tag": "Constant",
