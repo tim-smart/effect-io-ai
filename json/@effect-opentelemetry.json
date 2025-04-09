@@ -132,7 +132,7 @@
     "since": "2.0.0",
     "category": "layer",
     "signature": "declare const layerEmpty: Layer.Layer<Resource.Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L107"
   },
   {
     "_tag": "Function",
@@ -162,7 +162,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <R, E>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L67"
   },
   {
     "_tag": "Interface",
@@ -176,7 +176,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  } | undefined\n}",
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: OtelApi.Attributes\n  } | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L23"
   },
   {
@@ -192,7 +192,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const Resource: Tag<Resource, Resources.Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -207,7 +207,7 @@
     "since": "2.0.0",
     "category": "layer",
     "signature": "declare const layerEmpty: Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L115"
   },
   {
     "_tag": "Function",
@@ -221,8 +221,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: Resources.ResourceAttributes; }) => Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L38"
+    "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Layer.Layer<Resource, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L39"
   },
   {
     "_tag": "Function",
@@ -236,8 +236,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "config",
-    "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: Resources.ResourceAttributes; }) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L52"
+    "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L53"
   },
   {
     "_tag": "Function",
@@ -251,8 +251,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layer",
-    "signature": "declare const layerFromEnv: (additionalAttributes?: Resources.ResourceAttributes | undefined) => Layer.Layer<Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L75"
+    "signature": "declare const layerFromEnv: (additionalAttributes?: OtelApi.Attributes | undefined) => Layer.Layer<Resource>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L76"
   },
   {
     "_tag": "Interface",
@@ -267,7 +267,7 @@
     "since": "1.0.0",
     "category": "identifier",
     "signature": "export interface Resource {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -553,7 +553,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <E, R>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L67"
   },
   {
     "_tag": "Interface",
@@ -567,7 +567,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Resources.ResourceAttributes\n  }\n}",
+    "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: OtelApi.Attributes\n  }\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L23"
   }
 ]
