@@ -11,6 +11,6 @@ Matches values of type `boolean`.
 declare const boolean: Predicate.Refinement<unknown, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L984)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L988)
 
 Since v1.0.0

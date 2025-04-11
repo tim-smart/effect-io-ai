@@ -11,6 +11,6 @@ Matches instances of a given class.
 declare const instanceOf: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1046)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1050)
 
 Since v1.0.0

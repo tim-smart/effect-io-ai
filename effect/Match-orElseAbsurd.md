@@ -21,6 +21,6 @@ ensures that an unmatched value is never silently ignored.
 declare const orElseAbsurd: <I, R, RA, A, Pr, Ret>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1118)
 
 Since v1.0.0

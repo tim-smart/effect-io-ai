@@ -38,6 +38,6 @@ console.log(match("b"))
 declare const orElse: <RA, Ret, F extends (_: RA) => Ret>(f: F) => <I, R, A, Pr>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<ReturnType<F> | A> : Unify<ReturnType<F> | A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1091)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1095)
 
 Since v1.0.0
