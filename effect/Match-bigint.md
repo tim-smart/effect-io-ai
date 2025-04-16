@@ -11,6 +11,6 @@ Matches values of type `bigint`.
 declare const bigint: Predicate.Refinement<unknown, bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1018)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1029)
 
 Since v1.0.0

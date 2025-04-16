@@ -11,6 +11,6 @@ Matches any defined (non-null and non-undefined) value.
 declare const defined: <A>(u: A) => u is A & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L980)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L991)
 
 Since v1.0.0

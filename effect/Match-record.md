@@ -11,6 +11,6 @@ Matches objects where keys are `string` or `symbol` and values are `unknown`.
 declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: symbol]: unknown; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1042)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1053)
 
 Since v1.0.0

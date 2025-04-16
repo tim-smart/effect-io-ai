@@ -35,6 +35,6 @@ const match = pipe(
 declare const tags: <R, Ret, P extends { readonly [Tag in Types.Tags<"_tag", R> & string]?: ((_: Extract<R, Record<"_tag", Tag>>) => Ret) | undefined; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>>, A | ReturnType<P[keyof P] & {}>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L818)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L829)
 
 Since v1.0.0

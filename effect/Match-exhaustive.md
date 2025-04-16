@@ -30,6 +30,6 @@ const match = Match.type<string | number>().pipe(
 declare const exhaustive: <I, F, A, Pr, Ret>(self: Matcher<I, F, never, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1242)
 
 Since v1.0.0

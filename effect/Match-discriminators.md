@@ -37,6 +37,6 @@ const match = pipe(
 declare const discriminators: <D extends string>(field: D) => <R, Ret, P extends { readonly [Tag in Types.Tags<D, R> & string]?: ((_: Extract<R, Record<D, Tag>>) => Ret) | undefined; } & { readonly [Tag in Exclude<keyof P, Types.Tags<D, R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, keyof P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, keyof P>>>>, A | ReturnType<P[keyof P] & {}>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L612)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L623)
 
 Since v1.0.0

@@ -180,6 +180,231 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L23"
   },
   {
+    "_tag": "Function",
+    "module": {
+      "name": "Otlp.ts",
+      "path": "src/Otlp.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly baseUrl: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly maxBatchSize?: number | undefined; readonly replaceLogger?: Logger.Logger<any, any> | undefined; readonly tracerContext?: (<X>(f: () => X, span: Tracer.AnySpan) => X) | undefined; readonly loggerExportInterval?: Duration.DurationInput | undefined; readonly metricsExportInterval?: Duration.DurationInput | undefined; readonly tracerExportInterval?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Otlp.ts#L18"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OtlpLogger.ts",
+      "path": "src/OtlpLogger.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; }) => Effect.Effect<Logger.Logger<unknown, void>, never, HttpClient.HttpClient | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpLogger.ts#L25"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OtlpLogger.ts",
+      "path": "src/OtlpLogger.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly replaceLogger?: Logger.Logger<any, any> | undefined; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpLogger.ts#L73"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OtlpMetrics.ts",
+      "path": "src/OtlpMetrics.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; }) => Effect.Effect<void, never, HttpClient.HttpClient | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpMetrics.ts#L23"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OtlpMetrics.ts",
+      "path": "src/OtlpMetrics.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpMetrics.ts#L281"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown> | undefined; }) => Resource",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L21"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "entriesToAttributes",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Attributes",
+    "signature": "declare const entriesToAttributes: (entries: Iterable<[string, unknown]>) => Array<KeyValue>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L54"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "unknownToAttributeValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Attributes",
+    "signature": "declare const unknownToAttributeValue: (value: unknown) => AnyValue",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L69"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Resource",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface Resource {\n  /** Resource attributes */\n  attributes: Array<KeyValue>\n  /** Resource droppedAttributesCount */\n  droppedAttributesCount: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L10"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "KeyValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface KeyValue {\n  /** KeyValue key */\n  key: string\n  /** KeyValue value */\n  value: AnyValue\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L109"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "AnyValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface AnyValue {\n  /** AnyValue stringValue */\n  stringValue?: string | null\n  /** AnyValue boolValue */\n  boolValue?: boolean | null\n  /** AnyValue intValue */\n  intValue?: number | null\n  /** AnyValue doubleValue */\n  doubleValue?: number | null\n  /** AnyValue arrayValue */\n  arrayValue?: ArrayValue\n  /** AnyValue kvlistValue */\n  kvlistValue?: KeyValueList\n  /** AnyValue bytesValue */\n  bytesValue?: Uint8Array\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L120"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "ArrayValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface ArrayValue {\n  /** ArrayValue values */\n  values: Array<AnyValue>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L141"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "KeyValueList",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface KeyValueList {\n  /** KeyValueList values */\n  values: Array<KeyValue>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L150"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "LongBits",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface LongBits {\n  low: number\n  high: number\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L159"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OtlpResource.ts",
+      "path": "src/OtlpResource.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Fixed64",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "type Fixed64 = LongBits | string | number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L168"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "OtlpTracer.ts",
@@ -191,7 +416,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; }) => Effect.Effect<Tracer.Tracer, never, HttpClient.HttpClient | Scope.Scope>",
+    "signature": "declare const make: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; readonly context?: (<X>(f: () => X, span: Tracer.AnySpan) => X) | undefined; }) => Effect.Effect<Tracer.Tracer, never, HttpClient.HttpClient | Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L25"
   },
   {
@@ -206,8 +431,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L171"
+    "signature": "declare const layer: (options: { readonly url: string; readonly resource: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; }; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; readonly context?: (<X>(f: () => X, span: Tracer.AnySpan) => X) | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L102"
   },
   {
     "_tag": "Constant",

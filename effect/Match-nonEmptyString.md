@@ -11,6 +11,6 @@ Matches non-empty strings.
 declare const nonEmptyString: SafeRefinement<string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L949)
 
 Since v1.0.0

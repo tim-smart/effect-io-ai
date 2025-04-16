@@ -11,6 +11,6 @@ Matches values of type `string`.
 declare const string: Predicate.Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L956)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L967)
 
 Since v1.0.0
