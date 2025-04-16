@@ -35384,7 +35384,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Defining patterns",
-    "signature": "declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Exclude<R, Types.ExtractMatch<R, Types.PForExclude<P>>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>",
+    "signature": "declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.NotMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L924"
   },
   {
@@ -35416,7 +35416,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Predicates",
-    "signature": "declare const is: <Literals extends ReadonlyArray<string | number | bigint | boolean | null>>(...literals: Literals) => Predicate.Refinement<unknown, Literals[number]>",
+    "signature": "declare const is: <Literals extends ReadonlyArray<string | number | bigint | boolean | null>>(...literals: Literals) => SafeRefinement<Literals[number]>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L957"
   },
   {
@@ -35840,7 +35840,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface Without<out X> {\n    readonly _tag: \"Without\"\n    readonly _X: X\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1357"
   },
   {
     "_tag": "Interface",
@@ -35855,7 +35855,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface Only<out X> {\n    readonly _tag: \"Only\"\n    readonly _X: X\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1368"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1365"
   },
   {
     "_tag": "TypeAlias",
@@ -35869,7 +35869,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type WhenMatch<R, P> = [0] extends [1 & R] ? PForMatch<P>\n      : P extends SafeRefinement<infer SP, never> ? SP\n      : P extends Predicate.Refinement<infer _R, infer RP>\n      // try to narrow refinement\n        ? [Extract<R, RP>] extends [infer X] ? [X] extends [never]\n            // fallback to original refinement\n            ? RP\n          : X\n        : never\n      : P extends PredicateA<infer PP> ? PP\n      : ExtractMatch<R, PForMatch<P>>",
+    "signature": "type WhenMatch<R, P> = [0] extends [1 & R] ? ResolvePred<P> :\n      P extends SafeRefinement<infer SP, never> ? SP\n      : P extends Predicate.Refinement<infer _R, infer RP>\n      // try to narrow refinement\n        ? [Extract<R, RP>] extends [infer X] ? [X] extends [never]\n            // fallback to original refinement\n            ? RP\n          : X\n        : never\n      : P extends PredicateA<infer PP> ? PP\n      : ExtractMatch<R, P>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1276"
   },
   {
@@ -35884,7 +35884,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type NotMatch<R, P> = Exclude<R, ExtractMatch<R, PForExclude<P>>>",
+    "signature": "type NotMatch<R, P> = Exclude<R, ExtractMatch<R, PForNotMatch<P>>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1293"
   },
   {
@@ -35899,8 +35899,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type PForMatch<P> = [SafeRefinementP<ResolvePred<P>>] extends [infer X] ? X\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1298"
+    "signature": "type PForMatch<P> = [ResolvePred<P>] extends [infer X] ? X\n    : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1301"
   },
   {
     "_tag": "TypeAlias",
@@ -35915,7 +35915,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type PForExclude<P> = [SafeRefinementR<ToSafeRefinement<P>>] extends [infer X] ? X\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1307"
   },
   {
     "_tag": "TypeAlias",
@@ -35930,7 +35930,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type PatternBase<A> = A extends ReadonlyArray<infer _T> ? ReadonlyArray<any> | PatternPrimitive<A>\n    : A extends Record<string, any> ? Partial<\n        { [K in keyof A]: PatternPrimitive<A[K] & {}> | PatternBase<A[K] & {}> }\n      >\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1346"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1343"
   },
   {
     "_tag": "TypeAlias",
@@ -35945,7 +35945,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type PatternPrimitive<A> = PredicateA<A> | A | SafeRefinement<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1352"
   },
   {
     "_tag": "TypeAlias",
@@ -35960,7 +35960,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type AddWithout<A, X> = [A] extends [Without<infer WX>] ? Without<X | WX>\n    : [A] extends [Only<infer OX>] ? Only<Exclude<OX, X>>\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1376"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1373"
   },
   {
     "_tag": "TypeAlias",
@@ -35975,7 +35975,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type AddOnly<A, X> = [A] extends [Without<infer WX>] ? [X] extends [WX] ? never\n    : Only<X>\n    : [A] extends [Only<infer OX>] ? [X] extends [OX] ? Only<X>\n      : never\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1383"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1380"
   },
   {
     "_tag": "TypeAlias",
@@ -35990,7 +35990,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ApplyFilters<I, A> = A extends Only<infer X> ? X\n    : A extends Without<infer X> ? Exclude<I, X>\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1389"
   },
   {
     "_tag": "TypeAlias",
@@ -36005,7 +36005,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Tags<D, P> = P extends Record<D, infer X> ? X : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1396"
   },
   {
     "_tag": "TypeAlias",
@@ -36020,7 +36020,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ArrayToIntersection<A> = T.UnionToIntersection<\n    A[number]\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1404"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1401"
   },
   {
     "_tag": "TypeAlias",
@@ -36035,7 +36035,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ExtractMatch<I, P> = [ExtractAndNarrow<I, P>] extends [infer EI] ? EI\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1408"
   },
   {
     "_tag": "Constant",
