@@ -734,7 +734,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L14"
   },
   {
     "_tag": "Constant",
@@ -749,7 +749,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -763,8 +763,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.WorkerManager | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L25"
+    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.WorkerManager | Worker.Spawner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -778,8 +778,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerPlatform: (spawn: (id: number) => WorkerThreads.Worker) => Layer.Layer<Worker.PlatformWorker | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L33"
+    "signature": "declare const layerPlatform: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.PlatformWorker | Worker.Spawner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L34"
   },
   {
     "_tag": "Constant",
