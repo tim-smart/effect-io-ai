@@ -26,6 +26,6 @@ assert.deepStrictEqual(BigInt.divide(6n, 0n), Option.none())
 declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L117)
 
 Since v2.0.0

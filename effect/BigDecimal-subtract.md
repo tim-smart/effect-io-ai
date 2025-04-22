@@ -20,6 +20,6 @@ assert.deepStrictEqual(subtract(unsafeFromString("2"), unsafeFromString("3")), u
 declare const subtract: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L272)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L275)
 
 Since v2.0.0

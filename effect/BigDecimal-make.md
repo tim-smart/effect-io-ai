@@ -11,6 +11,6 @@ Creates a `BigDecimal` from a `bigint` value and a scale.
 declare const make: (value: bigint, scale: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L103)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ assert.deepStrictEqual(multiply(unsafeFromString("2"), unsafeFromString("3")), u
 declare const multiply: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L250)
 
 Since v2.0.0

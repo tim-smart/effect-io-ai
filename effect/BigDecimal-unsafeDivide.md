@@ -26,6 +26,6 @@ assert.deepStrictEqual(unsafeDivide(unsafeFromString("6"), unsafeFromString("4")
 declare const unsafeDivide: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L427)
 
 Since v2.0.0

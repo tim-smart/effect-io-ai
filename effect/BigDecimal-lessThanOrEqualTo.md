@@ -22,6 +22,6 @@ assert.deepStrictEqual(lessThanOrEqualTo(unsafeFromString("4"), unsafeFromString
 declare const lessThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L504)
 
 Since v2.0.0

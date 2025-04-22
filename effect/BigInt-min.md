@@ -20,6 +20,6 @@ assert.deepStrictEqual(min(2n, 3n), 2n)
 declare const min: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L349)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L352)
 
 Since v2.0.0

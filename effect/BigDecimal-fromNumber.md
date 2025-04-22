@@ -16,6 +16,6 @@ Throws a `RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infin
 declare const fromNumber: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L837)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L840)
 
 Since v2.0.0

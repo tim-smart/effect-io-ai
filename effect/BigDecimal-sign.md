@@ -22,6 +22,6 @@ assert.deepStrictEqual(sign(unsafeFromString("5")), 1)
 declare const sign: (n: BigDecimal) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L670)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L673)
 
 Since v2.0.0

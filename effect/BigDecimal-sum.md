@@ -20,6 +20,6 @@ assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafe
 declare const sum: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L213)
 
 Since v2.0.0

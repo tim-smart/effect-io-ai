@@ -19,6 +19,6 @@ export interface WithResult<Success, SuccessEncoded, Failure, FailureEncoded, Re
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10218)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10221)
 
 Since v3.10.0

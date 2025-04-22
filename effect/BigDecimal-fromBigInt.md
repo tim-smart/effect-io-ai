@@ -11,6 +11,6 @@ Creates a `BigDecimal` from a `bigint` value.
 declare const fromBigInt: (n: bigint) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L800)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L803)
 
 Since v2.0.0

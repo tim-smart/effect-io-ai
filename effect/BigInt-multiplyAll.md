@@ -20,6 +20,6 @@ assert.deepStrictEqual(multiplyAll([2n, 3n, 4n]), 24n)
 declare const multiplyAll: (collection: Iterable<bigint>) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L543)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L546)
 
 Since v2.0.0

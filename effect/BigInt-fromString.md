@@ -25,6 +25,6 @@ assert.deepStrictEqual(BI.fromString("a"), Option.none())
 declare const fromString: (s: string) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L600)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L603)
 
 Since v2.4.12

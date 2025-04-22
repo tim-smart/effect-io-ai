@@ -24,6 +24,6 @@ assert.deepStrictEqual(BigDecimal.remainder(BigDecimal.unsafeFromString("-4"), B
 declare const remainder: { (divisor: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, divisor: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L725)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L728)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ assert.deepStrictEqual(min(unsafeFromString("2"), unsafeFromString("3")), unsafe
 declare const min: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L630)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L633)
 
 Since v2.0.0

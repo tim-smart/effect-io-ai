@@ -27,6 +27,6 @@ assert.deepStrictEqual(BigDecimal.safeFromNumber(Infinity), Option.none())
 declare const safeFromNumber: (n: number) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L861)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L864)
 
 Since v3.11.0

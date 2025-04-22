@@ -11,6 +11,6 @@ Checks if a given value is a `BigDecimal`.
 declare const isBigDecimal: (u: unknown) => u is BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L92)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L95)
 
 Since v2.0.0

@@ -2252,7 +2252,7 @@
     "since": "2.0.0",
     "category": "symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -2268,7 +2268,7 @@
     "since": "2.0.0",
     "category": "scaling",
     "signature": "declare const scale: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale: number): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -2286,7 +2286,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sum: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L213"
   },
   {
     "_tag": "Constant",
@@ -2304,7 +2304,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const multiply: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L247"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L250"
   },
   {
     "_tag": "Constant",
@@ -2322,7 +2322,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const subtract: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L275"
   },
   {
     "_tag": "Constant",
@@ -2340,7 +2340,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const divide: { (that: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, that: BigDecimal): Option.Option<BigDecimal>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L384"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L387"
   },
   {
     "_tag": "Constant",
@@ -2358,7 +2358,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const unsafeDivide: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L424"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L427"
   },
   {
     "_tag": "Constant",
@@ -2373,7 +2373,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Order: order.Order<BigDecimal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L447"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L450"
   },
   {
     "_tag": "Constant",
@@ -2391,7 +2391,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L480"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L483"
   },
   {
     "_tag": "Constant",
@@ -2409,7 +2409,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L501"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L504"
   },
   {
     "_tag": "Constant",
@@ -2427,7 +2427,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L522"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L525"
   },
   {
     "_tag": "Constant",
@@ -2445,7 +2445,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L543"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L546"
   },
   {
     "_tag": "Constant",
@@ -2463,7 +2463,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const between: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => boolean; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L569"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L572"
   },
   {
     "_tag": "Constant",
@@ -2481,7 +2481,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const clamp: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => BigDecimal; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L605"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L608"
   },
   {
     "_tag": "Constant",
@@ -2499,7 +2499,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const min: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L630"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L633"
   },
   {
     "_tag": "Constant",
@@ -2517,7 +2517,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const max: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L649"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L652"
   },
   {
     "_tag": "Constant",
@@ -2535,7 +2535,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const remainder: { (divisor: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, divisor: BigDecimal): Option.Option<BigDecimal>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L725"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L728"
   },
   {
     "_tag": "Constant",
@@ -2553,7 +2553,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const unsafeRemainder: { (divisor: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, divisor: BigDecimal): BigDecimal; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L755"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L758"
   },
   {
     "_tag": "Constant",
@@ -2568,7 +2568,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Equivalence: equivalence.Equivalence<BigDecimal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L771"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L774"
   },
   {
     "_tag": "Constant",
@@ -2584,7 +2584,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const equals: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L789"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L792"
   },
   {
     "_tag": "Constant",
@@ -2600,7 +2600,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromNumber: (n: number) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L837"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L840"
   },
   {
     "_tag": "Function",
@@ -2616,7 +2616,7 @@
     "since": "2.0.0",
     "category": "guards",
     "signature": "declare const isBigDecimal: (u: unknown) => u is BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L95"
   },
   {
     "_tag": "Function",
@@ -2632,7 +2632,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const make: (value: bigint, scale: number) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L103"
   },
   {
     "_tag": "Function",
@@ -2648,7 +2648,7 @@
     "since": "2.0.0",
     "category": "scaling",
     "signature": "declare const normalize: (self: BigDecimal) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L143"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L146"
   },
   {
     "_tag": "Function",
@@ -2666,7 +2666,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sign: (n: BigDecimal) => Ordering",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L670"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L673"
   },
   {
     "_tag": "Function",
@@ -2684,7 +2684,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const abs: (n: BigDecimal) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L688"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L691"
   },
   {
     "_tag": "Function",
@@ -2702,7 +2702,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const negate: (n: BigDecimal) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L705"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L708"
   },
   {
     "_tag": "Function",
@@ -2718,7 +2718,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromBigInt: (n: bigint) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L800"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L803"
   },
   {
     "_tag": "Function",
@@ -2736,7 +2736,7 @@
     "since": "3.11.0",
     "category": "constructors",
     "signature": "declare const unsafeFromNumber: (n: number) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L822"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L825"
   },
   {
     "_tag": "Function",
@@ -2754,7 +2754,7 @@
     "since": "3.11.0",
     "category": "constructors",
     "signature": "declare const safeFromNumber: (n: number) => Option.Option<BigDecimal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L861"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L864"
   },
   {
     "_tag": "Function",
@@ -2772,7 +2772,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const fromString: (s: string) => Option.Option<BigDecimal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L891"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L894"
   },
   {
     "_tag": "Function",
@@ -2790,7 +2790,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const unsafeFromString: (s: string) => BigDecimal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L952"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L955"
   },
   {
     "_tag": "Function",
@@ -2808,7 +2808,7 @@
     "since": "2.0.0",
     "category": "conversions",
     "signature": "declare const format: (n: BigDecimal) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L974"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L977"
   },
   {
     "_tag": "Function",
@@ -2826,7 +2826,7 @@
     "since": "3.11.0",
     "category": "conversions",
     "signature": "declare const toExponential: (n: BigDecimal) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1019"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1022"
   },
   {
     "_tag": "Function",
@@ -2844,7 +2844,7 @@
     "since": "2.0.0",
     "category": "conversions",
     "signature": "declare const unsafeToNumber: (n: BigDecimal) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1054"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1057"
   },
   {
     "_tag": "Function",
@@ -2862,7 +2862,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const isInteger: (n: BigDecimal) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1072"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1075"
   },
   {
     "_tag": "Function",
@@ -2880,7 +2880,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const isZero: (n: BigDecimal) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1089"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1092"
   },
   {
     "_tag": "Function",
@@ -2898,7 +2898,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const isNegative: (n: BigDecimal) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1110"
   },
   {
     "_tag": "Function",
@@ -2916,7 +2916,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const isPositive: (n: BigDecimal) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1128"
   },
   {
     "_tag": "Interface",
@@ -2931,7 +2931,7 @@
     "since": "2.0.0",
     "category": "models",
     "signature": "export interface BigDecimal extends Equal.Equal, Pipeable, Inspectable {\n  readonly [TypeId]: TypeId\n  readonly value: bigint\n  readonly scale: number\n  /** @internal */\n  normalized?: BigDecimal\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L50"
   },
   {
     "_tag": "TypeAlias",
@@ -2946,7 +2946,7 @@
     "since": "2.0.0",
     "category": "symbol",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -2964,7 +2964,7 @@
     "since": "2.0.0",
     "category": "guards",
     "signature": "declare const isBigInt: (u: unknown) => u is bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -2982,7 +2982,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sum: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -3000,7 +3000,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const multiply: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L73"
   },
   {
     "_tag": "Constant",
@@ -3018,7 +3018,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const subtract: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L92"
   },
   {
     "_tag": "Constant",
@@ -3036,7 +3036,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -3054,7 +3054,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const unsafeDivide: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L142"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L145"
   },
   {
     "_tag": "Constant",
@@ -3069,7 +3069,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Equivalence: equivalence.Equivalence<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L183"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L186"
   },
   {
     "_tag": "Constant",
@@ -3084,7 +3084,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Order: order.Order<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L192"
   },
   {
     "_tag": "Constant",
@@ -3102,7 +3102,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThan: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L210"
   },
   {
     "_tag": "Constant",
@@ -3120,7 +3120,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThanOrEqualTo: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L231"
   },
   {
     "_tag": "Constant",
@@ -3138,7 +3138,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThan: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L252"
   },
   {
     "_tag": "Constant",
@@ -3156,7 +3156,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThanOrEqualTo: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L273"
   },
   {
     "_tag": "Constant",
@@ -3174,7 +3174,7 @@
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const between: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => boolean; (self: bigint, options: { minimum: bigint; maximum: bigint; }): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L293"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L296"
   },
   {
     "_tag": "Constant",
@@ -3192,7 +3192,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const clamp: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => bigint; (self: bigint, options: { minimum: bigint; maximum: bigint; }): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L328"
   },
   {
     "_tag": "Constant",
@@ -3210,7 +3210,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const min: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L349"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L352"
   },
   {
     "_tag": "Constant",
@@ -3228,7 +3228,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const max: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L367"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L370"
   },
   {
     "_tag": "Constant",
@@ -3246,7 +3246,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const gcd: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L424"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L427"
   },
   {
     "_tag": "Constant",
@@ -3264,7 +3264,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const lcm: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L452"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L455"
   },
   {
     "_tag": "Function",
@@ -3282,7 +3282,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const increment: (n: bigint) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L161"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L164"
   },
   {
     "_tag": "Function",
@@ -3300,7 +3300,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const decrement: (n: bigint) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L180"
   },
   {
     "_tag": "Function",
@@ -3318,7 +3318,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sign: (n: bigint) => Ordering",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L391"
   },
   {
     "_tag": "Function",
@@ -3336,7 +3336,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const abs: (n: bigint) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L406"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L409"
   },
   {
     "_tag": "Function",
@@ -3354,7 +3354,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const unsafeSqrt: (n: bigint) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L473"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L476"
   },
   {
     "_tag": "Function",
@@ -3372,7 +3372,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sqrt: (n: bigint) => Option.Option<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L504"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L507"
   },
   {
     "_tag": "Function",
@@ -3390,7 +3390,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sumAll: (collection: Iterable<bigint>) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L521"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L524"
   },
   {
     "_tag": "Function",
@@ -3408,7 +3408,7 @@
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const multiplyAll: (collection: Iterable<bigint>) => bigint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L543"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L546"
   },
   {
     "_tag": "Function",
@@ -3426,7 +3426,7 @@
     "since": "2.0.0",
     "category": "conversions",
     "signature": "declare const toNumber: (b: bigint) => Option.Option<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L574"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L577"
   },
   {
     "_tag": "Function",
@@ -3444,7 +3444,7 @@
     "since": "2.4.12",
     "category": "conversions",
     "signature": "declare const fromString: (s: string) => Option.Option<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L600"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L603"
   },
   {
     "_tag": "Function",
@@ -3462,7 +3462,7 @@
     "since": "2.4.12",
     "category": "conversions",
     "signature": "declare const fromNumber: (n: number) => Option.Option<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L630"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L633"
   },
   {
     "_tag": "Constant",
@@ -43878,15 +43878,15 @@
     },
     "project": "effect",
     "name": "isNumber",
-    "description": "Tests if a value is a `number`.",
+    "description": "Type guard that tests if a value is a member of the set of JavaScript\nnumbers.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { isNumber } from \"effect/Number\"\n\nassert.deepStrictEqual(isNumber(2), true)\nassert.deepStrictEqual(isNumber(\"2\"), false)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport * as Number from \"effect/Number\"\n\n// Regular numbers\nassert.equal(Number.isNumber(2), true)\nassert.equal(Number.isNumber(-3.14), true)\nassert.equal(Number.isNumber(0), true)\n\n// Special numeric values\nassert.equal(Number.isNumber(Infinity), true)\nassert.equal(Number.isNumber(NaN), true)\n\n// Non-number values\nassert.equal(Number.isNumber(\"2\"), false)\nassert.equal(Number.isNumber(true), false)\nassert.equal(Number.isNumber(null), false)\nassert.equal(Number.isNumber(undefined), false)\nassert.equal(Number.isNumber({}), false)\nassert.equal(Number.isNumber([]), false)\n\n// Using as a type guard in conditionals\nfunction processValue(value: unknown): string {\n  if (Number.isNumber(value)) {\n    // TypeScript now knows 'value' is a number\n    return `Numeric value: ${value.toFixed(2)}`\n  }\n  return \"Not a number\"\n}\n\nassert.strictEqual(processValue(42), \"Numeric value: 42.00\")\nassert.strictEqual(processValue(\"hello\"), \"Not a number\")\n\n// Filtering for numbers in an array\nconst mixed = [1, \"two\", 3, false, 5]\nconst onlyNumbers = mixed.filter(Number.isNumber)\nassert.equal(onlyNumbers, [1, 3, 5])\n```"
     ],
     "since": "2.0.0",
     "category": "guards",
     "signature": "declare const isNumber: (input: unknown) => input is number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -43896,33 +43896,15 @@
     },
     "project": "effect",
     "name": "sum",
-    "description": "Provides an addition operation on `number`s.",
+    "description": "Performs addition in the set of JavaScript numbers.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { sum } from \"effect/Number\"\n\nassert.deepStrictEqual(sum(2, 3), 5)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe } from \"effect\"\nimport * as Number from \"effect/Number\"\n\n// Data-first style (direct application)\nassert.equal(Number.sum(2, 3), 5)\nassert.equal(Number.sum(-10, 5), -5)\nassert.equal(Number.sum(0.1, 0.2), 0.30000000000000004) // Note: floating-point precision limitation\n\n// Data-last style (pipeable)\nassert.equal(\n  pipe(\n    10,\n    Number.sum(5) // 10 + 5 = 15\n  ),\n  15\n)\n\n// Chaining multiple additions\nassert.equal(\n  pipe(\n    1,\n    Number.sum(2), // 1 + 2 = 3\n    Number.sum(3), // 3 + 3 = 6\n    Number.sum(4) // 6 + 4 = 10\n  ),\n  10\n)\n\n// Identity property: a + 0 = a\nassert.equal(Number.sum(42, 0), 42)\n\n// Commutative property: a + b = b + a\nassert.equal(Number.sum(5, 3), Number.sum(3, 5))\n```"
     ],
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sum: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L47"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "Number.ts",
-      "path": "src/Number.ts"
-    },
-    "project": "effect",
-    "name": "multiply",
-    "description": "Provides a multiplication operation on `number`s.",
-    "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { multiply } from \"effect/Number\"\n\nassert.deepStrictEqual(multiply(2, 3), 6)\n```"
-    ],
-    "since": "2.0.0",
-    "category": "math",
-    "signature": "declare const multiply: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L241"
   },
   {
     "_tag": "Constant",
@@ -43932,15 +43914,33 @@
     },
     "project": "effect",
     "name": "subtract",
-    "description": "Provides a subtraction operation on `number`s.",
+    "description": "Performs subtraction in the set of JavaScript numbers.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { subtract } from \"effect/Number\"\n\nassert.deepStrictEqual(subtract(2, 3), -1)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe } from \"effect\"\nimport * as Number from \"effect/Number\"\n\n// Data-first style (direct application)\nassert.equal(Number.subtract(2, 3), -1) // 2 - 3 = -1\nassert.equal(Number.subtract(10, 5), 5) // 10 - 5 = 5\nassert.equal(Number.subtract(0.3, 0.1), 0.19999999999999998) // Note: floating-point precision limitation\n\n// Data-last style (pipeable)\nassert.equal(\n  pipe(\n    10,\n    Number.subtract(5) // 10 - 5 = 5\n  ),\n  5\n)\n\n// Chaining multiple subtractions\nassert.equal(\n  pipe(\n    20,\n    Number.subtract(5), // 20 - 5 = 15\n    Number.subtract(3), // 15 - 3 = 12\n    Number.subtract(2) // 12 - 2 = 10\n  ),\n  10\n)\n\n// Right identity property: a - 0 = a\nassert.equal(Number.subtract(42, 0), 42)\n\n// Self-annihilation property: a - a = 0\nassert.equal(Number.subtract(42, 42), 0)\n\n// Non-commutative property: a - b ≠ b - a\nassert.equal(Number.subtract(5, 3), 2) // 5 - 3 = 2\nassert.equal(Number.subtract(3, 5), -2) // 3 - 5 = -2\n\n// Inverse relation: a - b = -(b - a)\nassert.equal(Number.subtract(5, 3), -Number.subtract(3, 5))\n```"
     ],
     "since": "2.0.0",
     "category": "math",
-    "signature": "declare const subtract: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L85"
+    "signature": "declare const subtract: { (subtrahend: number): (minuend: number) => number; (minuend: number, subtrahend: number): number; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L366"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Number.ts",
+      "path": "src/Number.ts"
+    },
+    "project": "effect",
+    "name": "multiply",
+    "description": "Performs **multiplication** in the set of JavaScript numbers.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe } from \"effect\"\nimport * as Number from \"effect/Number\"\n\n// Data-first style (direct application)\nassert.equal(Number.multiply(2, 3), 6) // 2 × 3 = 6\nassert.equal(Number.multiply(-4, 5), -20) // (-4) × 5 = -20\nassert.equal(Number.multiply(-3, -2), 6) // (-3) × (-2) = 6\nassert.equal(Number.multiply(0.1, 0.2), 0.020000000000000004) // Note: floating-point precision limitation\n\n// Data-last style (pipeable)\nassert.equal(\n  pipe(\n    10,\n    Number.multiply(5) // 10 × 5 = 50\n  ),\n  50\n)\n\n// Chaining multiple multiplications\nassert.equal(\n  pipe(\n    2,\n    Number.multiply(3), // 2 × 3 = 6\n    Number.multiply(4), // 6 × 4 = 24\n    Number.multiply(0.5) // 24 × 0.5 = 12\n  ),\n  12\n)\n\n// Identity property: a × 1 = a\nassert.equal(Number.multiply(42, 1), 42)\n\n// Zero property: a × 0 = 0\nassert.equal(Number.multiply(42, 0), 0)\n\n// Commutative property: a × b = b × a\nassert.equal(Number.multiply(5, 3), Number.multiply(3, 5))\n\n// Associative property: (a × b) × c = a × (b × c)\nconst a = 2,\n  b = 3,\n  c = 4\nassert.equal(\n  Number.multiply(Number.multiply(a, b), c),\n  Number.multiply(a, Number.multiply(b, c))\n)\n```"
+    ],
+    "since": "2.0.0",
+    "category": "math",
+    "signature": "declare const multiply: { (multiplicand: number): (multiplier: number) => number; (multiplier: number, multiplicand: number): number; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L450"
   },
   {
     "_tag": "Constant",
@@ -43950,15 +43950,15 @@
     },
     "project": "effect",
     "name": "divide",
-    "description": "Provides a division operation on `number`s.",
+    "description": "Performs division in the set of JavaScript numbers, returning the result\nwrapped in an `Option` to handle division by zero.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Number, Option } from \"effect\"\n\nassert.deepStrictEqual(Number.divide(6, 3), Option.some(2))\nassert.deepStrictEqual(Number.divide(6, 0), Option.none())\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe, Option } from \"effect\"\nimport * as Number from \"effect/Number\"\n\n// Data-first style (direct application)\nassert.equal(Number.divide(6, 3), Option.some(2)) // 6 ÷ 3 = 2\nassert.equal(Number.divide(-8, 4), Option.some(-2)) // (-8) ÷ 4 = -2\nassert.equal(Number.divide(-10, -5), Option.some(2)) // (-10) ÷ (-5) = 2\nassert.equal(Number.divide(1, 3), Option.some(0.3333333333333333)) // Note: floating-point approximation\n\n// Handling division by zero\nassert.equal(Number.divide(6, 0), Option.none()) // 6 ÷ 0 is undefined\n\n// Data-last style (pipeable)\nassert.equal(\n  pipe(\n    10,\n    Number.divide(2) // 10 ÷ 2 = 5\n  ),\n  Option.some(5)\n)\n\n// Chaining multiple divisions using Option combinators\nassert.equal(\n  pipe(\n    Option.some(24),\n    Option.flatMap((n) => Number.divide(n, 2)), // 24 ÷ 2 = 12\n    Option.flatMap(Number.divide(3)), // 12 ÷ 3 = 4\n    Option.flatMap(Number.divide(2)) // 4 ÷ 2 = 2\n  ),\n  Option.some(2)\n)\n\n// Division-by-one property: a ÷ 1 = a\nassert.equal(Number.divide(42, 1), Option.some(42))\n\n// Self-division property: a ÷ a = 1 (for a ≠ 0)\nassert.equal(Number.divide(42, 42), Option.some(1))\n\n// Non-commutative property: a ÷ b ≠ b ÷ a\nassert.notDeepStrictEqual(\n  Number.divide(6, 3), // 6 ÷ 3 = 2\n  Number.divide(3, 6) // 3 ÷ 6 = 0.5\n)\n```"
     ],
     "since": "2.0.0",
     "category": "math",
-    "signature": "declare const divide: { (that: number): (self: number) => Option<number>; (self: number, that: number): Option<number>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L105"
+    "signature": "declare const divide: { (divisor: number): (dividend: number) => Option<number>; (dividend: number, divisor: number): Option<number>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L589"
   },
   {
     "_tag": "Constant",
@@ -43968,15 +43968,15 @@
     },
     "project": "effect",
     "name": "unsafeDivide",
-    "description": "Provides a division operation on `number`s.\n\nThrows a `RangeError` if the divisor is `0`.",
+    "description": "Performs division in the set of JavaScript numbers, but misbehaves for\ndivision by zero.\n\nUnlike {@link module:Number.divide} which returns an Option, this function\ndirectly returns a number or `Infinity` or `NaN`.\n\n- If the `divisor` is zero, it returns `Infinity`.\n- If both the `dividend` and the `divisor` are zero, then it returns `NaN`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { unsafeDivide } from \"effect/Number\"\n\nassert.deepStrictEqual(unsafeDivide(6, 3), 2)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe } from \"effect\"\nimport * as Number from \"effect/Number\"\n\n// Data-first style (direct application)\nassert.equal(Number.unsafeDivide(6, 3), 2) // 6 ÷ 3 = 2\nassert.equal(Number.unsafeDivide(-8, 4), -2) // (-8) ÷ 4 = -2\nassert.equal(Number.unsafeDivide(-10, -5), 2) // (-10) ÷ (-5) = 2\nassert.equal(Number.unsafeDivide(1, 3), 0.3333333333333333)\n\n// Data-last style (pipeable)\nassert.equal(\n  pipe(\n    10,\n    Number.unsafeDivide(2) // 10 ÷ 2 = 5\n  ),\n  5\n)\n\n// Chaining multiple divisions\nassert.equal(\n  pipe(\n    24,\n    Number.unsafeDivide(2), // 24 ÷ 2 = 12\n    Number.unsafeDivide(3), // 12 ÷ 3 = 4\n    Number.unsafeDivide(2) // 4 ÷ 2 = 2\n  ),\n  2\n)\n\nassert.equal(Number.unsafeDivide(6, 0), Infinity)\n\nassert.equal(Number.unsafeDivide(0, 0), NaN)\n\n// Compare with safe division\nconst safeResult = Number.divide(6, 3) // Option.some(2)\nconst unsafeResult = Number.unsafeDivide(6, 3) // 2 directly\n```"
     ],
     "since": "2.0.0",
     "category": "math",
-    "signature": "declare const unsafeDivide: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L129"
+    "signature": "declare const unsafeDivide: { (divisor: number): (dividend: number) => number; (dividend: number, divisor: number): number; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L670"
   },
   {
     "_tag": "Constant",
@@ -43991,7 +43991,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Equivalence: equivalence.Equivalence<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L734"
   },
   {
     "_tag": "Constant",
@@ -44006,7 +44006,7 @@
     "since": "2.0.0",
     "category": "instances",
     "signature": "declare const Order: order.Order<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L176"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L741"
   },
   {
     "_tag": "Constant",
@@ -44016,15 +44016,15 @@
     },
     "project": "effect",
     "name": "lessThan",
-    "description": "Returns `true` if the first argument is less than the second, otherwise `false`.",
+    "description": "Returns `true` if the first argument is less than the second, otherwise\n`false`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { lessThan } from \"effect/Number\"\n\nassert.deepStrictEqual(lessThan(2, 3), true)\nassert.deepStrictEqual(lessThan(3, 3), false)\nassert.deepStrictEqual(lessThan(4, 3), false)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { lessThan } from \"effect/Number\"\n\nassert.equal(lessThan(2, 3), true)\nassert.equal(lessThan(3, 3), false)\nassert.equal(lessThan(4, 3), false)\n```"
     ],
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThan: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L761"
   },
   {
     "_tag": "Constant",
@@ -44034,15 +44034,15 @@
     },
     "project": "effect",
     "name": "lessThanOrEqualTo",
-    "description": "Returns a function that checks if a given `number` is less than or equal to the provided one.",
+    "description": "Returns a function that checks if a given `number` is less than or equal to\nthe provided one.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { lessThanOrEqualTo } from \"effect/Number\"\n\nassert.deepStrictEqual(lessThanOrEqualTo(2, 3), true)\nassert.deepStrictEqual(lessThanOrEqualTo(3, 3), true)\nassert.deepStrictEqual(lessThanOrEqualTo(4, 3), false)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { lessThanOrEqualTo } from \"effect/Number\"\n\nassert.equal(lessThanOrEqualTo(2, 3), true)\nassert.equal(lessThanOrEqualTo(3, 3), true)\nassert.equal(lessThanOrEqualTo(4, 3), false)\n```"
     ],
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const lessThanOrEqualTo: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L784"
   },
   {
     "_tag": "Constant",
@@ -44052,15 +44052,15 @@
     },
     "project": "effect",
     "name": "greaterThan",
-    "description": "Returns `true` if the first argument is greater than the second, otherwise `false`.",
+    "description": "Returns `true` if the first argument is greater than the second, otherwise\n`false`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { greaterThan } from \"effect/Number\"\n\nassert.deepStrictEqual(greaterThan(2, 3), false)\nassert.deepStrictEqual(greaterThan(3, 3), false)\nassert.deepStrictEqual(greaterThan(4, 3), true)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { greaterThan } from \"effect/Number\"\n\nassert.equal(greaterThan(2, 3), false)\nassert.equal(greaterThan(3, 3), false)\nassert.equal(greaterThan(4, 3), true)\n```"
     ],
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThan: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L807"
   },
   {
     "_tag": "Constant",
@@ -44070,15 +44070,15 @@
     },
     "project": "effect",
     "name": "greaterThanOrEqualTo",
-    "description": "Returns a function that checks if a given `number` is greater than or equal to the provided one.",
+    "description": "Returns a function that checks if a given `number` is greater than or equal\nto the provided one.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { greaterThanOrEqualTo } from \"effect/Number\"\n\nassert.deepStrictEqual(greaterThanOrEqualTo(2, 3), false)\nassert.deepStrictEqual(greaterThanOrEqualTo(3, 3), true)\nassert.deepStrictEqual(greaterThanOrEqualTo(4, 3), true)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { greaterThanOrEqualTo } from \"effect/Number\"\n\nassert.equal(greaterThanOrEqualTo(2, 3), false)\nassert.equal(greaterThanOrEqualTo(3, 3), true)\nassert.equal(greaterThanOrEqualTo(4, 3), true)\n```"
     ],
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const greaterThanOrEqualTo: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L257"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L830"
   },
   {
     "_tag": "Constant",
@@ -44091,12 +44091,12 @@
     "description": "Checks if a `number` is between a `minimum` and `maximum` value (inclusive).",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Number } from \"effect\"\n\nconst between = Number.between({ minimum: 0, maximum: 5 })\n\nassert.deepStrictEqual(between(3), true)\nassert.deepStrictEqual(between(-1), false)\nassert.deepStrictEqual(between(6), false)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { Number } from \"effect\"\n\nconst between = Number.between({ minimum: 0, maximum: 5 })\n\nassert.equal(between(3), true)\nassert.equal(between(-1), false)\nassert.equal(between(6), false)\n```"
     ],
     "since": "2.0.0",
     "category": "predicates",
     "signature": "declare const between: { (options: { minimum: number; maximum: number; }): (self: number) => boolean; (self: number, options: { minimum: number; maximum: number; }): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L854"
   },
   {
     "_tag": "Constant",
@@ -44106,15 +44106,15 @@
     },
     "project": "effect",
     "name": "clamp",
-    "description": "Restricts the given `number` to be within the range specified by the `minimum` and `maximum` values.\n\n- If the `number` is less than the `minimum` value, the function returns the `minimum` value.\n- If the `number` is greater than the `maximum` value, the function returns the `maximum` value.\n- Otherwise, it returns the original `number`.",
+    "description": "Restricts the given `number` to be within the range specified by the\n`minimum` and `maximum` values.\n\n- If the `number` is less than the `minimum` value, the function returns the\n  `minimum` value.\n- If the `number` is greater than the `maximum` value, the function returns the\n  `maximum` value.\n- Otherwise, it returns the original `number`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { Number } from \"effect\"\n\nconst clamp = Number.clamp({ minimum: 1, maximum: 5 })\n\nassert.equal(clamp(3), 3)\nassert.equal(clamp(0), 1)\nassert.equal(clamp(6), 5)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { Number } from \"effect\"\n\nconst clamp = Number.clamp({ minimum: 1, maximum: 5 })\n\nassert.equal(clamp(3), 3)\nassert.equal(clamp(0), 1)\nassert.equal(clamp(6), 5)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const clamp: { (options: { minimum: number; maximum: number; }): (self: number) => number; (self: number, options: { minimum: number; maximum: number; }): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L312"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L890"
   },
   {
     "_tag": "Constant",
@@ -44127,12 +44127,12 @@
     "description": "Returns the minimum between two `number`s.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { min } from \"effect/Number\"\n\nassert.deepStrictEqual(min(2, 3), 2)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { min } from \"effect/Number\"\n\nassert.equal(min(2, 3), 2)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const min: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L336"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L915"
   },
   {
     "_tag": "Constant",
@@ -44145,12 +44145,12 @@
     "description": "Returns the maximum between two `number`s.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { max } from \"effect/Number\"\n\nassert.deepStrictEqual(max(2, 3), 3)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { max } from \"effect/Number\"\n\nassert.equal(max(2, 3), 3)\n```"
     ],
     "since": "2.0.0",
     "category": null,
     "signature": "declare const max: { (that: number): (self: number) => number; (self: number, that: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L354"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L934"
   },
   {
     "_tag": "Constant",
@@ -44160,15 +44160,15 @@
     },
     "project": "effect",
     "name": "remainder",
-    "description": "Returns the remainder left over when one operand is divided by a second operand.\n\nIt always takes the sign of the dividend.",
+    "description": "Returns the remainder left over when one operand is divided by a second\noperand.\n\nIt always takes the sign of the dividend.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { remainder } from \"effect/Number\"\n\nassert.deepStrictEqual(remainder(2, 2), 0)\nassert.deepStrictEqual(remainder(3, 2), 1)\nassert.deepStrictEqual(remainder(-4, 2), -0)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { remainder } from \"effect/Number\"\n\nassert.equal(remainder(2, 2), 0)\nassert.equal(remainder(3, 2), 1)\nassert.equal(remainder(-4, 2), -0)\n```"
     ],
     "since": "2.0.0",
     "category": "math",
-    "signature": "declare const remainder: { (divisor: number): (self: number) => number; (self: number, divisor: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L442"
+    "signature": "declare const remainder: { (divisor: number): (dividend: number) => number; (dividend: number, divisor: number): number; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L978"
   },
   {
     "_tag": "Constant",
@@ -44181,12 +44181,66 @@
     "description": "Returns the number rounded with the given precision.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { round } from \"effect/Number\"\n\nassert.deepStrictEqual(round(1.1234, 2), 1.12)\nassert.deepStrictEqual(round(1.567, 2), 1.57)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { round } from \"effect/Number\"\n\nassert.equal(round(1.1234, 2), 1.12)\nassert.equal(round(1.567, 2), 1.57)\n```"
     ],
     "since": "3.8.0",
     "category": "math",
     "signature": "declare const round: { (precision: number): (self: number) => number; (self: number, precision: number): number; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L516"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L1065"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Number.ts",
+      "path": "src/Number.ts"
+    },
+    "project": "effect",
+    "name": "negate",
+    "description": "Returns the additive inverse of a number, effectively negating it.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { pipe } from \"effect\"\nimport * as Number from \"effect/Number\"\n\nassert.equal(\n  Number.negate(5), //\n  -5\n)\n\nassert.equal(\n  Number.negate(-5), //\n  5\n)\n\nassert.equal(\n  Number.negate(0), //\n  0\n)\n```"
+    ],
+    "since": "3.14.6",
+    "category": null,
+    "signature": "declare const negate: (n: number) => number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L194"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Number.ts",
+      "path": "src/Number.ts"
+    },
+    "project": "effect",
+    "name": "sumAll",
+    "description": "Computes the sum of all elements in an iterable collection of numbers.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport * as Number from \"effect/Number\"\n\n// Basic sums\nassert.equal(Number.sumAll([2, 3, 4]), 9) // 2 + 3 + 4 = 9\nassert.equal(Number.sumAll([1.1, 2.2, 3.3]), 6.6) // 1.1 + 2.2 + 3.3 = 6.6\n\n// Empty collection returns the additive identity (0)\nassert.equal(Number.sumAll([]), 0)\n\n// Single element collection\nassert.equal(Number.sumAll([42]), 42)\n\n// Sums with negative numbers\nassert.equal(Number.sumAll([2, -3, 4]), 3) // 2 + (-3) + 4 = 3\nassert.equal(Number.sumAll([-2, -3, -4]), -9) // (-2) + (-3) + (-4) = -9\n\n// Works with any iterable\nassert.equal(Number.sumAll(new Set([2, 3, 4])), 9)\n\n// Using with generated sequences\nfunction* range(start: number, end: number) {\n  for (let i = start; i <= end; i++) yield i\n}\n\n// Compute sum of first 5 natural numbers: 1 + 2 + 3 + 4 + 5 = 15\nassert.equal(Number.sumAll(range(1, 5)), 15)\n\n// Floating point precision example\nassert.equal(\n  Number.sumAll([0.1, 0.2]),\n  0.30000000000000004 // Note IEEE 754 precision limitation\n)\n```"
+    ],
+    "since": "2.0.0",
+    "category": "math",
+    "signature": "declare const sumAll: (collection: Iterable<number>) => number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L312"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Number.ts",
+      "path": "src/Number.ts"
+    },
+    "project": "effect",
+    "name": "multiplyAll",
+    "description": "Computes the product of all elements in an iterable collection of numbers.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport * as Number from \"effect/Number\"\n\n// Basic products\nassert.equal(Number.multiplyAll([2, 3, 4]), 24) // 2 × 3 × 4 = 24\nassert.equal(Number.multiplyAll([1.5, 2, 3]), 9) // 1.5 × 2 × 3 = 9\n\n// Empty collection returns the multiplicative identity (1)\nassert.equal(Number.multiplyAll([]), 1)\n\n// Single element collection\nassert.equal(Number.multiplyAll([42]), 42)\n\n// Products with negative numbers\nassert.equal(Number.multiplyAll([2, -3, 4]), -24) // 2 × (-3) × 4 = -24\nassert.equal(Number.multiplyAll([-2, -3]), 6) // (-2) × (-3) = 6\n\n// Zero property - if any element is zero, product is zero\nassert.equal(Number.multiplyAll([2, 0, 3]), 0)\n\n// Works with any iterable\nassert.equal(Number.multiplyAll(new Set([2, 3, 4])), 24)\n\n// Using with generated sequences\nfunction* range(start: number, end: number) {\n  for (let i = start; i <= end; i++) yield i\n}\n\n// Compute factorial: 5! = 5 × 4 × 3 × 2 × 1 = 120\nassert.equal(Number.multiplyAll(range(1, 5)), 120)\n```"
+    ],
+    "since": "2.0.0",
+    "category": "math",
+    "signature": "declare const multiplyAll: (collection: Iterable<number>) => number",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L522"
   },
   {
     "_tag": "Function",
@@ -44199,12 +44253,12 @@
     "description": "Returns the result of adding `1` to a given number.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { increment } from \"effect/Number\"\n\nassert.deepStrictEqual(increment(2), 3)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { increment } from \"effect/Number\"\n\nassert.equal(increment(2), 3)\n```"
     ],
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const increment: (n: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L710"
   },
   {
     "_tag": "Function",
@@ -44217,12 +44271,12 @@
     "description": "Decrements a number by `1`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { decrement } from \"effect/Number\"\n\nassert.deepStrictEqual(decrement(3), 2)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { decrement } from \"effect/Number\"\n\nassert.equal(decrement(3), 2)\n```"
     ],
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const decrement: (n: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L727"
   },
   {
     "_tag": "Function",
@@ -44235,48 +44289,12 @@
     "description": "Determines the sign of a given `number`.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { sign } from \"effect/Number\"\n\nassert.deepStrictEqual(sign(-5), -1)\nassert.deepStrictEqual(sign(0), 0)\nassert.deepStrictEqual(sign(5), 1)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { sign } from \"effect/Number\"\n\nassert.equal(sign(-5), -1)\nassert.equal(sign(0), 0)\nassert.equal(sign(5), 1)\n```"
     ],
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const sign: (n: number) => Ordering",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L375"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Number.ts",
-      "path": "src/Number.ts"
-    },
-    "project": "effect",
-    "name": "sumAll",
-    "description": "Takes an `Iterable` of `number`s and returns their sum as a single `number`.",
-    "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { sumAll } from \"effect/Number\"\n\nassert.deepStrictEqual(sumAll([2, 3, 4]), 9)\n```"
-    ],
-    "since": "2.0.0",
-    "category": "math",
-    "signature": "declare const sumAll: (collection: Iterable<number>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L391"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "Number.ts",
-      "path": "src/Number.ts"
-    },
-    "project": "effect",
-    "name": "multiplyAll",
-    "description": "Takes an `Iterable` of `number`s and returns their multiplication as a single `number`.",
-    "deprecated": false,
-    "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { multiplyAll } from \"effect/Number\"\n\nassert.deepStrictEqual(multiplyAll([2, 3, 4]), 24)\n```"
-    ],
-    "since": "2.0.0",
-    "category": "math",
-    "signature": "declare const multiplyAll: (collection: Iterable<number>) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L413"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L956"
   },
   {
     "_tag": "Function",
@@ -44286,15 +44304,15 @@
     },
     "project": "effect",
     "name": "nextPow2",
-    "description": "Returns the next power of 2 from the given number.",
+    "description": "Returns the next power of 2 greater than or equal to the given number.\n\n- For `positive` inputs, returns the smallest power of 2 that is >= the input\n- For `zero`, returns 2\n- For `negative` inputs, returns NaN (as logarithms of negative numbers are\n  undefined)\n- For `NaN` input, returns NaN\n- For `Infinity`, returns Infinity",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { nextPow2 } from \"effect/Number\"\n\nassert.deepStrictEqual(nextPow2(5), 8)\nassert.deepStrictEqual(nextPow2(17), 32)\n```"
+      "```ts\nimport * as assert from \"node:assert/strict\"\nimport { nextPow2 } from \"effect/Number\"\n\nassert.equal(nextPow2(5), 8)\nassert.equal(nextPow2(17), 32)\nassert.equal(nextPow2(0), 2)\nassert.equal(Number.isNaN(nextPow2(-1)), true) // Negative inputs result in NaN\n```"
     ],
     "since": "2.0.0",
     "category": "math",
     "signature": "declare const nextPow2: (n: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L470"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L1016"
   },
   {
     "_tag": "Function",
@@ -44304,13 +44322,13 @@
     },
     "project": "effect",
     "name": "parse",
-    "description": "Tries to parse a `number` from a `string` using the `Number()` function.\nThe following special string values are supported: \"NaN\", \"Infinity\", \"-Infinity\".",
+    "description": "Tries to parse a `number` from a `string` using the `Number()` function. The\nfollowing special string values are supported: \"NaN\", \"Infinity\",\n\"-Infinity\".",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const parse: (s: string) => Option<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L482"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L1030"
   },
   {
     "_tag": "Constant",
@@ -57729,7 +57747,7 @@
     "since": "3.10.0",
     "category": "FiberId constructors",
     "signature": "declare class FiberIdFromSelf",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9180"
   },
   {
     "_tag": "Class",
@@ -57744,7 +57762,7 @@
     "since": "3.10.0",
     "category": "FiberId transformations",
     "signature": "declare class FiberId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9216"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9219"
   },
   {
     "_tag": "Class",
@@ -57760,7 +57778,7 @@
     "since": "3.10.0",
     "category": "defect",
     "signature": "declare class Defect",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9489"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9492"
   },
   {
     "_tag": "Class",
@@ -57776,7 +57794,7 @@
     "since": "3.10.0",
     "category": "boolean constructors",
     "signature": "declare class BooleanFromUnknown",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10072"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10075"
   },
   {
     "_tag": "Class",
@@ -57792,7 +57810,7 @@
     "since": "3.11.0",
     "category": "boolean transformations",
     "signature": "declare class BooleanFromString",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10089"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10092"
   },
   {
     "_tag": "Class",
@@ -57807,7 +57825,7 @@
     "since": "3.12.5",
     "category": "ArrayFormatter",
     "signature": "declare class ArrayFormatterIssue",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10843"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10846"
   },
   {
     "_tag": "Constant",
@@ -59365,7 +59383,7 @@
     "since": "3.10.0",
     "category": "symbol",
     "signature": "declare const symbolSerializable: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10125"
   },
   {
     "_tag": "Constant",
@@ -59380,7 +59398,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserialize: { (value: unknown): <A, I, R>(self: Serializable<A, I, R>) => Effect.Effect<A, ParseResult.ParseError, R>; <A, I, R>(self: Serializable<A, I, R>, value: unknown): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10192"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10195"
   },
   {
     "_tag": "Constant",
@@ -59395,7 +59413,7 @@
     "since": "3.10.0",
     "category": "symbol",
     "signature": "declare const symbolWithResult: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10205"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10208"
   },
   {
     "_tag": "Constant",
@@ -59410,7 +59428,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeFailure: { <FA>(value: FA): <SA, SI, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<FI, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: FA): Effect.Effect<FI, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10331"
   },
   {
     "_tag": "Constant",
@@ -59425,7 +59443,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeFailure: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<FA, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<FA, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10346"
   },
   {
     "_tag": "Constant",
@@ -59440,7 +59458,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeSuccess: { <SA>(value: SA): <SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<SI, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: SA): Effect.Effect<SI, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10363"
   },
   {
     "_tag": "Constant",
@@ -59455,7 +59473,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeSuccess: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<SA, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<SA, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10375"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10378"
   },
   {
     "_tag": "Constant",
@@ -59470,7 +59488,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeExit: { <SA, FA>(value: exit_.Exit<SA, FA>): <SI, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<ExitEncoded<SI, FI, unknown>, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: exit_.Exit<SA, FA>): Effect.Effect<ExitEncoded<SI, FI, unknown>, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10395"
   },
   {
     "_tag": "Constant",
@@ -59485,7 +59503,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeExit: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<exit_.Exit<SA, FA>, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<exit_.Exit<SA, FA>, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10412"
   },
   {
     "_tag": "Function",
@@ -59855,7 +59873,7 @@
     "since": "3.10.0",
     "category": "HashSet transformations",
     "signature": "declare const HashSet: <Value extends Schema.Any>(value: Value) => HashSet<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9772"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9775"
   },
   {
     "_tag": "Function",
@@ -59870,7 +59888,7 @@
     "since": "3.10.0",
     "category": "List transformations",
     "signature": "declare const List: <Value extends Schema.Any>(value: Value) => List<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9957"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9960"
   },
   {
     "_tag": "Function",
@@ -59885,7 +59903,7 @@
     "since": "3.10.0",
     "category": "SortedSet transformations",
     "signature": "declare const SortedSet: <Value extends Schema.Any>(value: Value, ordA: Order.Order<Schema.Type<Value>>) => SortedSet<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10047"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10050"
   },
   {
     "_tag": "Function",
@@ -61841,7 +61859,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const Class: <Self = never>(identifier: string) => <Fields extends Struct.Fields>(fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"Class\"> : Class<Self, Fields, Struct.Encoded<Fields>, Struct.Context<Fields>, Struct.Constructor<Fields>, {}, {}>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8690"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8693"
   },
   {
     "_tag": "Function",
@@ -61858,7 +61876,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedClass: <Self = never>(identifier?: string) => <Tag extends string, Fields extends Struct.Fields>(tag: Tag, fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedClass\", `\"Tag\", `> : TaggedClass<Self, Tag, { readonly _tag: tag<Tag>; } & Fields>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8748"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8751"
   },
   {
     "_tag": "Function",
@@ -61875,7 +61893,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedError: <Self = never>(identifier?: string) => <Tag extends string, Fields extends Struct.Fields>(tag: Tag, fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedError\", `\"Tag\", `> : TaggedErrorClass<Self, Tag, { readonly _tag: tag<Tag>; } & Fields>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8811"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8814"
   },
   {
     "_tag": "Function",
@@ -61890,7 +61908,7 @@
     "since": "3.10.0",
     "category": "Cause transformations",
     "signature": "declare const CauseFromSelf: <E extends Schema.All, D extends Schema.All>({ defect, error }: { readonly error: E; readonly defect: D; }) => CauseFromSelf<E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9379"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9382"
   },
   {
     "_tag": "Function",
@@ -61905,7 +61923,7 @@
     "since": "3.10.0",
     "category": "Cause transformations",
     "signature": "declare const Cause: <E extends Schema.All, D extends Schema.All>({ defect, error }: { readonly error: E; readonly defect: D; }) => Cause<E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9458"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9461"
   },
   {
     "_tag": "Function",
@@ -61920,7 +61938,7 @@
     "since": "3.10.0",
     "category": "Exit transformations",
     "signature": "declare const ExitFromSelf: <A extends Schema.All, E extends Schema.All, D extends Schema.All>({ defect, failure, success }: { readonly failure: E; readonly success: A; readonly defect: D; }) => ExitFromSelf<A, E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9618"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9621"
   },
   {
     "_tag": "Function",
@@ -61935,7 +61953,7 @@
     "since": "3.10.0",
     "category": "Exit transformations",
     "signature": "declare const Exit: <A extends Schema.All, E extends Schema.All, D extends Schema.All>({ defect, failure, success }: { readonly failure: E; readonly success: A; readonly defect: D; }) => Exit<A, E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9674"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9677"
   },
   {
     "_tag": "Function",
@@ -61950,7 +61968,7 @@
     "since": "3.10.0",
     "category": "HashSet transformations",
     "signature": "declare const HashSetFromSelf: <Value extends Schema.Any>(value: Value) => HashSetFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9742"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9745"
   },
   {
     "_tag": "Function",
@@ -61965,7 +61983,7 @@
     "since": "3.10.0",
     "category": "HashMap transformations",
     "signature": "declare const HashMapFromSelf: <K extends Schema.Any, V extends Schema.Any>({ key, value }: { readonly key: K; readonly value: V; }) => HashMapFromSelf<K, V>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9840"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9843"
   },
   {
     "_tag": "Function",
@@ -61980,7 +61998,7 @@
     "since": "3.10.0",
     "category": "HashMap transformations",
     "signature": "declare const HashMap: <K extends Schema.Any, V extends Schema.Any>({ key, value }: { readonly key: K; readonly value: V; }) => HashMap<K, V>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9871"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9874"
   },
   {
     "_tag": "Function",
@@ -61995,7 +62013,7 @@
     "since": "3.10.0",
     "category": "List transformations",
     "signature": "declare const ListFromSelf: <Value extends Schema.Any>(value: Value) => ListFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9927"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9930"
   },
   {
     "_tag": "Function",
@@ -62010,7 +62028,7 @@
     "since": "3.10.0",
     "category": "SortedSet transformations",
     "signature": "declare const SortedSetFromSelf: <Value extends Schema.Any>(value: Value, ordA: Order.Order<Schema.Type<Value>>, ordI: Order.Order<Schema.Encoded<Value>>) => SortedSetFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10015"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10018"
   },
   {
     "_tag": "Function",
@@ -62025,7 +62043,7 @@
     "since": "3.10.0",
     "category": "Config validations",
     "signature": "declare const Config: <A, I extends string>(name: string, schema: Schema<A, I>) => config_.Config<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10106"
   },
   {
     "_tag": "Function",
@@ -62040,7 +62058,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asSerializable: <S extends Serializable.All>(serializable: S) => Serializable<Serializable.Type<S>, Serializable.Encoded<S>, Serializable.Context<S>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10171"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10174"
   },
   {
     "_tag": "Function",
@@ -62055,7 +62073,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const serializableSchema: <A, I, R>(self: Serializable<A, I, R>) => Schema<A, I, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10182"
   },
   {
     "_tag": "Function",
@@ -62070,7 +62088,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serialize: <A, I, R>(self: Serializable<A, I, R>) => Effect.Effect<I, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10185"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10188"
   },
   {
     "_tag": "Function",
@@ -62085,7 +62103,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asWithResult: <WR extends WithResult.All>(withExit: WR) => WithResult<WithResult.Success<WR>, WithResult.SuccessEncoded<WR>, WithResult.Failure<WR>, WithResult.FailureEncoded<WR>, WithResult.Context<WR>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10266"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10269"
   },
   {
     "_tag": "Function",
@@ -62100,7 +62118,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const failureSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<FA, FI, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10283"
   },
   {
     "_tag": "Function",
@@ -62115,7 +62133,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const successSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<SA, SI, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10287"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10290"
   },
   {
     "_tag": "Function",
@@ -62130,7 +62148,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const exitSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<exit_.Exit<SA, FA>, ExitEncoded<SI, FI, unknown>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10299"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10302"
   },
   {
     "_tag": "Function",
@@ -62145,7 +62163,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asSerializableWithResult: <SWR extends SerializableWithResult.All>(procedure: SWR) => SerializableWithResult<Serializable.Type<SWR>, Serializable.Encoded<SWR>, Serializable.Context<SWR>, WithResult.Success<SWR>, WithResult.SuccessEncoded<SWR>, WithResult.Failure<SWR>, WithResult.FailureEncoded<SWR>, WithResult.Context<SWR>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10475"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10478"
   },
   {
     "_tag": "Function",
@@ -62162,7 +62180,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedRequest: <Self = never>(identifier?: string) => <Tag extends string, Payload extends Struct.Fields, Success extends Schema.All, Failure extends Schema.All>(tag: Tag, options: { failure: Failure; success: Success; payload: Payload; }, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Payload>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedRequest\", `\"Tag\", SuccessSchema, FailureSchema, `> : TaggedRequestClass<Self, Tag, { readonly _tag: tag<Tag>; } & Payload, Success, Failure>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10584"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10587"
   },
   {
     "_tag": "Function",
@@ -62178,7 +62196,7 @@
     "since": "3.10.0",
     "category": "Equivalence",
     "signature": "declare const equivalence: <A, I, R>(schema: Schema<A, I, R>) => Equivalence.Equivalence<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10637"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10640"
   },
   {
     "_tag": "Interface",
@@ -63197,7 +63215,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make<Args extends Array<any>, X>(this: { new(...args: Args): X }, ...args: Args): X\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}",
+    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Self\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8481"
   },
   {
@@ -63213,7 +63231,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedClass<Self, Tag extends string, Fields extends Struct.Fields> extends\n  Class<\n    Self,\n    Fields,\n    Struct.Encoded<Fields>,\n    Struct.Context<Fields>,\n    Struct.Constructor<Omit<Fields, \"_tag\">>,\n    {},\n    {}\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8721"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8724"
   },
   {
     "_tag": "Interface",
@@ -63228,7 +63246,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedErrorClass<Self, Tag extends string, Fields extends Struct.Fields> extends\n  Class<\n    Self,\n    Fields,\n    Struct.Encoded<Fields>,\n    Struct.Context<Fields>,\n    Struct.Constructor<Omit<Fields, \"_tag\">>,\n    {},\n    cause_.YieldableError\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8776"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8779"
   },
   {
     "_tag": "Interface",
@@ -63243,7 +63261,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface CauseFromSelf<E extends Schema.All, D extends Schema.All> extends\n  AnnotableDeclare<\n    CauseFromSelf<E, D>,\n    cause_.Cause<Schema.Type<E>>,\n    cause_.Cause<Schema.Encoded<E>>,\n    [E, D]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9366"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9369"
   },
   {
     "_tag": "Interface",
@@ -63258,7 +63276,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface Cause<E extends Schema.All, D extends Schema.All> extends\n  transform<\n    SchemaClass<\n      CauseEncoded<Schema.Type<E>, Schema.Type<Defect>>,\n      CauseEncoded<Schema.Encoded<E>, Schema.Encoded<Defect>>,\n      Schema.Context<E> | Schema.Context<D>\n    >,\n    CauseFromSelf<SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9443"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9446"
   },
   {
     "_tag": "Interface",
@@ -63273,7 +63291,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface ExitFromSelf<A extends Schema.All, E extends Schema.All, D extends Schema.All>\n  extends\n    AnnotableDeclare<\n      ExitFromSelf<A, E, D>,\n      exit_.Exit<Schema.Type<A>, Schema.Type<E>>,\n      exit_.Exit<Schema.Encoded<A>, Schema.Encoded<E>>,\n      [A, E, D]\n    >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9604"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9607"
   },
   {
     "_tag": "Interface",
@@ -63288,7 +63306,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface Exit<A extends Schema.All, E extends Schema.All, D extends Schema.All> extends\n  transform<\n    Union<[\n      Struct<{\n        _tag: Literal<[\"Failure\"]>\n        cause: SchemaClass<\n          CauseEncoded<Schema.Type<E>, Schema.Type<D>>,\n          CauseEncoded<Schema.Encoded<E>, Schema.Encoded<D>>,\n          Schema.Context<E> | Schema.Context<D>\n        >\n      }>,\n      Struct<{\n        _tag: Literal<[\"Success\"]>\n        value: A\n      }>\n    ]>,\n    ExitFromSelf<SchemaClass<Schema.Type<A>>, SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9650"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9653"
   },
   {
     "_tag": "Interface",
@@ -63303,7 +63321,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    HashSetFromSelf<Value>,\n    hashSet_.HashSet<Schema.Type<Value>>,\n    hashSet_.HashSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9729"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9732"
   },
   {
     "_tag": "Interface",
@@ -63318,7 +63336,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, HashSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9764"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9767"
   },
   {
     "_tag": "Interface",
@@ -63333,7 +63351,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableDeclare<\n    HashMapFromSelf<K, V>,\n    hashMap_.HashMap<Schema.Type<K>, Schema.Type<V>>,\n    hashMap_.HashMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    [K, V]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9827"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9830"
   },
   {
     "_tag": "Interface",
@@ -63348,7 +63366,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashMap<K extends Schema.Any, V extends Schema.Any>\n  extends transform<Array$<Tuple2<K, V>>, HashMapFromSelf<SchemaClass<Schema.Type<K>>, SchemaClass<Schema.Type<V>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9863"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9866"
   },
   {
     "_tag": "Interface",
@@ -63363,7 +63381,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface ListFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    ListFromSelf<Value>,\n    list_.List<Schema.Type<Value>>,\n    list_.List<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9914"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9917"
   },
   {
     "_tag": "Interface",
@@ -63378,7 +63396,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface List<Value extends Schema.Any>\n  extends transform<Array$<Value>, ListFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9949"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9952"
   },
   {
     "_tag": "Interface",
@@ -63393,7 +63411,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface SortedSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    SortedSetFromSelf<Value>,\n    sortedSet_.SortedSet<Schema.Type<Value>>,\n    sortedSet_.SortedSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10002"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10005"
   },
   {
     "_tag": "Interface",
@@ -63408,7 +63426,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface SortedSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, SortedSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10039"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10042"
   },
   {
     "_tag": "Interface",
@@ -63424,7 +63442,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface Serializable<A, I, R> {\n  readonly [symbolSerializable]: Schema<A, I, R>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10136"
   },
   {
     "_tag": "Interface",
@@ -63440,7 +63458,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface WithResult<Success, SuccessEncoded, Failure, FailureEncoded, ResultR> {\n  readonly [symbolWithResult]: {\n    readonly success: Schema<Success, SuccessEncoded, ResultR>\n    readonly failure: Schema<Failure, FailureEncoded, ResultR>\n  }\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10218"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10221"
   },
   {
     "_tag": "Interface",
@@ -63456,7 +63474,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface SerializableWithResult<\n  A,\n  I,\n  R,\n  Success,\n  SuccessEncoded,\n  Failure,\n  FailureEncoded,\n  ResultR\n> extends Serializable<A, I, R>, WithResult<Success, SuccessEncoded, Failure, FailureEncoded, ResultR> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10438"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10441"
   },
   {
     "_tag": "Interface",
@@ -63471,7 +63489,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "export interface TaggedRequest<\n  Tag extends string,\n  A,\n  I,\n  R,\n  SuccessType,\n  SuccessEncoded,\n  FailureType,\n  FailureEncoded,\n  ResultR\n> extends\n  Request.Request<SuccessType, FailureType>,\n  SerializableWithResult<\n    A,\n    I,\n    R,\n    SuccessType,\n    SuccessEncoded,\n    FailureType,\n    FailureEncoded,\n    ResultR\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10491"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10494"
   },
   {
     "_tag": "Interface",
@@ -63486,7 +63504,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedRequestClass<\n  Self,\n  Tag extends string,\n  Payload extends Struct.Fields,\n  Success extends Schema.All,\n  Failure extends Schema.All\n> extends\n  Class<\n    Self,\n    Payload,\n    Struct.Encoded<Payload>,\n    Struct.Context<Payload>,\n    Struct.Constructor<Omit<Payload, \"_tag\">>,\n    TaggedRequest<\n      Tag,\n      Self,\n      Struct.Encoded<Payload>,\n      Struct.Context<Payload>,\n      Schema.Type<Success>,\n      Schema.Encoded<Success>,\n      Schema.Type<Failure>,\n      Schema.Encoded<Failure>,\n      Schema.Context<Success> | Schema.Context<Failure>\n    >,\n    {}\n  >\n{\n  readonly _tag: Tag\n  readonly success: Success\n  readonly failure: Failure\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10537"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10540"
   },
   {
     "_tag": "TypeAlias",
@@ -64041,7 +64059,7 @@
     "since": "3.13.4",
     "category": "Constructor utils",
     "signature": "type MakeOptions = boolean | {\n  readonly disableValidation?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8863"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8866"
   },
   {
     "_tag": "TypeAlias",
@@ -64056,7 +64074,7 @@
     "since": "3.10.0",
     "category": "FiberId",
     "signature": "type FiberIdEncoded = | {\n    readonly _tag: \"Composite\"\n    readonly left: FiberIdEncoded\n    readonly right: FiberIdEncoded\n  }\n  | {\n    readonly _tag: \"None\"\n  }\n  | {\n    readonly _tag: \"Runtime\"\n    readonly id: number\n    readonly startTimeMillis: number\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9120"
   },
   {
     "_tag": "TypeAlias",
@@ -64071,7 +64089,7 @@
     "since": "3.10.0",
     "category": "Cause utils",
     "signature": "type CauseEncoded<E, D> = | {\n    readonly _tag: \"Empty\"\n  }\n  | {\n    readonly _tag: \"Fail\"\n    readonly error: E\n  }\n  | {\n    readonly _tag: \"Die\"\n    readonly defect: D\n  }\n  | {\n    readonly _tag: \"Interrupt\"\n    readonly fiberId: FiberIdEncoded\n  }\n  | {\n    readonly _tag: \"Sequential\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }\n  | {\n    readonly _tag: \"Parallel\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9230"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9233"
   },
   {
     "_tag": "TypeAlias",
@@ -64086,7 +64104,7 @@
     "since": "3.10.0",
     "category": "Exit utils",
     "signature": "type ExitEncoded<A, E, D> = | {\n    readonly _tag: \"Failure\"\n    readonly cause: CauseEncoded<E, D>\n  }\n  | {\n    readonly _tag: \"Success\"\n    readonly value: A\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9522"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9525"
   },
   {
     "_tag": "TypeAlias",
@@ -64736,7 +64754,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Type<T> = T extends Serializable<infer A, infer _I, infer _R> ? A : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10148"
   },
   {
     "_tag": "TypeAlias",
@@ -64751,7 +64769,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Encoded<T> = T extends Serializable<infer _A, infer I, infer _R> ? I : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10152"
   },
   {
     "_tag": "TypeAlias",
@@ -64766,7 +64784,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<T> = T extends Serializable<infer _A, infer _I, infer R> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10156"
   },
   {
     "_tag": "TypeAlias",
@@ -64781,7 +64799,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = Serializable<any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10157"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10160"
   },
   {
     "_tag": "TypeAlias",
@@ -64796,7 +64814,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | Serializable<any, never, unknown>\n    | Serializable<never, any, unknown>\n    | Serializable<never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10161"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10164"
   },
   {
     "_tag": "TypeAlias",
@@ -64811,7 +64829,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Success<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _A : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10233"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10236"
   },
   {
     "_tag": "TypeAlias",
@@ -64826,7 +64844,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type SuccessEncoded<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _I : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10237"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10240"
   },
   {
     "_tag": "TypeAlias",
@@ -64841,7 +64859,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Failure<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _E : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10241"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10244"
   },
   {
     "_tag": "TypeAlias",
@@ -64856,7 +64874,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type FailureEncoded<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _EI : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10245"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10248"
   },
   {
     "_tag": "TypeAlias",
@@ -64871,7 +64889,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<T> = T extends WithResult<infer _SA, infer _SI, infer _FA, infer _FI, infer R> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10253"
   },
   {
     "_tag": "TypeAlias",
@@ -64886,7 +64904,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = WithResult<any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10254"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10257"
   },
   {
     "_tag": "TypeAlias",
@@ -64901,7 +64919,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | WithResult<any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10258"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10261"
   },
   {
     "_tag": "TypeAlias",
@@ -64916,7 +64934,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<P> = P extends\n    SerializableWithResult<infer _S, infer _SI, infer SR, infer _A, infer _AI, infer _E, infer _EI, infer RR> ? SR | RR\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10457"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10460"
   },
   {
     "_tag": "TypeAlias",
@@ -64931,7 +64949,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = SerializableWithResult<any, any, any, any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10463"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10466"
   },
   {
     "_tag": "TypeAlias",
@@ -64946,7 +64964,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | SerializableWithResult<any, any, any, any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10467"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10470"
   },
   {
     "_tag": "TypeAlias",
@@ -64961,7 +64979,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = TaggedRequest<string, any, any, any, any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10524"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10527"
   },
   {
     "_tag": "TypeAlias",
@@ -64976,7 +64994,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | TaggedRequest<string, any, any, any, any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10528"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10531"
   },
   {
     "_tag": "Class",

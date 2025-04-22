@@ -21,6 +21,6 @@ assert.deepStrictEqual(isBigInt(1), false)
 declare const isBigInt: (u: unknown) => u is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L38)
 
 Since v2.0.0

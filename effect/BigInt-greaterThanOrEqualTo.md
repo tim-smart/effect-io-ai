@@ -22,6 +22,6 @@ assert.deepStrictEqual(greaterThanOrEqualTo(4n, 3n), true)
 declare const greaterThanOrEqualTo: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L273)
 
 Since v2.0.0

@@ -22,6 +22,6 @@ assert.deepStrictEqual(unsafeSqrt(16n), 4n)
 declare const unsafeSqrt: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L473)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L476)
 
 Since v2.0.0

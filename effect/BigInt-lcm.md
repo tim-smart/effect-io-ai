@@ -22,6 +22,6 @@ assert.deepStrictEqual(lcm(16n, 24n), 48n)
 declare const lcm: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L455)
 
 Since v2.0.0

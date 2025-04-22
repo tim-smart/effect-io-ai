@@ -22,6 +22,6 @@ assert.deepStrictEqual(abs(unsafeFromString("5")), unsafeFromString("5"))
 declare const abs: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L688)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L691)
 
 Since v2.0.0

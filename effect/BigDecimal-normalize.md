@@ -21,6 +21,6 @@ assert.deepStrictEqual(normalize(unsafeFromString("12300000")), normalize(make(1
 declare const normalize: (self: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L146)
 
 Since v2.0.0

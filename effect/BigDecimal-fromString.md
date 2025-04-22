@@ -22,6 +22,6 @@ assert.deepStrictEqual(BigDecimal.fromString("123.abc"), Option.none())
 declare const fromString: (s: string) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L891)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L894)
 
 Since v2.0.0
