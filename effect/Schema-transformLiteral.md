@@ -22,6 +22,6 @@ assert.deepStrictEqual(S.decodeSync(schema)(0), "a")
 declare const transformLiteral: <Encoded extends AST.LiteralValue, Type extends AST.LiteralValue>(from: Encoded, to: Type) => transformLiteral<Type, Encoded>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4014)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4009)
 
 Since v3.10.0

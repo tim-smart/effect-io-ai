@@ -23,6 +23,6 @@ console.log(Schema.decodeSync(Schema.OptionFromNonEmptyTrimmedString)("a")) // O
 declare class OptionFromNonEmptyTrimmedString
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7311)
 
 Since v3.10.0

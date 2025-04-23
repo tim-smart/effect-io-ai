@@ -11,6 +11,6 @@ Describes a schema that represents a `DateTime.Utc` instance.
 declare class DateTimeUtcFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6876)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6871)
 
 Since v3.10.0

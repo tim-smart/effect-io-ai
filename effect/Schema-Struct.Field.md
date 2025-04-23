@@ -26,6 +26,6 @@ type Field = | Schema.All
     | PropertySignature.All
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2588)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2583)
 
 Since v3.13.11

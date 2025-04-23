@@ -26,6 +26,6 @@ export interface ArrayFormatterIssue {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L1952)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ParseResult.ts#L1953)
 
 Since v3.10.0

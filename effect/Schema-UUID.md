@@ -13,6 +13,6 @@ This schema ensures that the provided string adheres to the standard UUID format
 declare class UUID
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4877)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4872)
 
 Since v3.10.0

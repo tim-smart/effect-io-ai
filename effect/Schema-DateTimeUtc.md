@@ -11,6 +11,6 @@ Defines a schema that attempts to convert a `string` to a `DateTime.Utc` instanc
 declare class DateTimeUtc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6932)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6927)
 
 Since v3.10.0

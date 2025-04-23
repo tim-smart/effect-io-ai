@@ -11,6 +11,6 @@ Defines a schema that attempts to convert a `string` to a `DateTime.Zoned` insta
 declare class DateTimeZoned
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7080)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7075)
 
 Since v3.10.0

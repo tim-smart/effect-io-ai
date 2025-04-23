@@ -18,6 +18,6 @@ Converts an optional property to another optional property through a transformat
 declare const optionalToOptional: <FA, FI, FR, TA, TI, TR>(from: Schema<FA, FI, FR>, to: Schema<TA, TI, TR>, options: { readonly decode: (o: option_.Option<FA>) => option_.Option<TI>; readonly encode: (o: option_.Option<TI>) => option_.Option<FA>; }) => PropertySignature<"?:", TA, never, "?:", FI, false, FR | TR>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2303)
 
 Since v3.10.0

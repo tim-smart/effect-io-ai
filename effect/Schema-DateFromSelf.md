@@ -12,6 +12,6 @@ such as `new Date("Invalid Date")`, without rejection.
 declare class DateFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6783)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6778)
 
 Since v3.10.0
