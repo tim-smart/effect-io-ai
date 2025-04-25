@@ -9,10 +9,10 @@ the tests in a `describe` block if a name is provided.
 **Signature**
 
 ```ts
-declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }
+declare const layer: <R, E, const ExcludeTestServices extends boolean = false>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; readonly excludeTestServices?: ExcludeTestServices; }) => { (f: (it: Vitest.MethodsNonLive<R, ExcludeTestServices>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R, ExcludeTestServices>) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L209)
 
 Since v1.0.0
 
