@@ -13,19 +13,14 @@ import * as assert from "node:assert"
 import { pipe, Either } from "effect"
 
 const isPositive = (n: number): boolean => n > 0
+const isPositiveEither = Either.liftPredicate(isPositive, n => `${n} is not positive`)
 
 assert.deepStrictEqual(
-  pipe(
-    1,
-    Either.liftPredicate(isPositive, n => `${n} is not positive`)
-  ),
+  isPositiveEither(1),
   Either.right(1)
 )
 assert.deepStrictEqual(
-  pipe(
-    0,
-    Either.liftPredicate(isPositive, n => `${n} is not positive`)
-  ),
+  isPositiveEither(0),
   Either.left("0 is not positive")
 )
 ```
@@ -33,9 +28,9 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<NoInfer<A>, B>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<B, E>; <A, E>(predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<A, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orLeftWith: (a: A) => E): Either<B, E>; <A, E>(self: A, predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): Either<A, E>; }
+declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<A, B>, orLeftWith: (a: A) => E): (a: A) => Either<B, E>; <B extends A, E, A = B>(predicate: Predicate<A>, orLeftWith: (a: A) => E): (a: B) => Either<B, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orLeftWith: (a: A) => E): Either<B, E>; <B extends A, E, A = B>(self: B, predicate: Predicate<A>, orLeftWith: (a: A) => E): Either<B, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L444)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L439)
 
 Since v3.4.0

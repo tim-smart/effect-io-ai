@@ -35,6 +35,6 @@ console.log(Effect.runSync(result))
 declare const transposeOption: <A = never, E = never>(self: Option<Either<A, E>>) => Either<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L997)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L992)
 
 Since v3.14.0

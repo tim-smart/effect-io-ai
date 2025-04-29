@@ -36,6 +36,6 @@ assert.deepStrictEqual(
 declare const filterOrLeft: { <R, B extends R, L2>(refinement: Refinement<NoInfer<R>, B>, orLeftWith: (right: NoInfer<R>) => L2): <L>(self: Either<R, L>) => Either<B, L2 | L>; <R, L2>(predicate: Predicate<NoInfer<R>>, orLeftWith: (right: NoInfer<R>) => L2): <L>(self: Either<R, L>) => Either<R, L2 | L>; <R, L, B extends R, L2>(self: Either<R, L>, refinement: Refinement<R, B>, orLeftWith: (right: R) => L2): Either<B, L | L2>; <R, L, E2>(self: Either<R, L>, predicate: Predicate<R>, orLeftWith: (right: R) => E2): Either<R, L | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L491)
 
 Since v2.0.0

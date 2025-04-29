@@ -39,6 +39,6 @@ assert.deepStrictEqual(result, Either.right({ x: 2, y: 3, sum: 5 }))
 declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): <L1>(self: Either<A, L1>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Either<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L873)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L868)
 
 Since v2.0.0

@@ -17403,7 +17403,7 @@
     "examples": [],
     "since": "3.4.0",
     "category": "Condition Checking",
-    "signature": "declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<NoInfer<A>, B>, orFailWith: (a: NoInfer<A>) => E): (a: A) => Effect<B, E>; <A, E>(predicate: Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E): (a: A) => Effect<A, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orFailWith: (a: A) => E): Effect<B, E>; <A, E>(self: A, predicate: Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E): Effect<A, E>; }",
+    "signature": "declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<A, B>, orFailWith: (a: A) => E): (a: A) => Effect<B, E>; <B extends A, E, A = B>(predicate: Predicate<A>, orFailWith: (a: A) => E): (a: B) => Effect<B, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orFailWith: (a: A) => E): Effect<B, E>; <B extends A, E, A = B>(self: B, predicate: Predicate<A>, orFailWith: (a: A) => E): Effect<B, E>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4972"
   },
   {
@@ -22302,12 +22302,12 @@
     "description": "Transforms a `Predicate` function into a `Right` of the input value if the predicate returns `true`\nor `Left` of the result of the provided function if the predicate returns false",
     "deprecated": false,
     "examples": [
-      "```ts\nimport * as assert from \"node:assert\"\nimport { pipe, Either } from \"effect\"\n\nconst isPositive = (n: number): boolean => n > 0\n\nassert.deepStrictEqual(\n  pipe(\n    1,\n    Either.liftPredicate(isPositive, n => `${n} is not positive`)\n  ),\n  Either.right(1)\n)\nassert.deepStrictEqual(\n  pipe(\n    0,\n    Either.liftPredicate(isPositive, n => `${n} is not positive`)\n  ),\n  Either.left(\"0 is not positive\")\n)\n```"
+      "```ts\nimport * as assert from \"node:assert\"\nimport { pipe, Either } from \"effect\"\n\nconst isPositive = (n: number): boolean => n > 0\nconst isPositiveEither = Either.liftPredicate(isPositive, n => `${n} is not positive`)\n\nassert.deepStrictEqual(\n  isPositiveEither(1),\n  Either.right(1)\n)\nassert.deepStrictEqual(\n  isPositiveEither(0),\n  Either.left(\"0 is not positive\")\n)\n```"
     ],
     "since": "3.4.0",
     "category": "lifting",
-    "signature": "declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<NoInfer<A>, B>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<B, E>; <A, E>(predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): (a: A) => Either<A, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orLeftWith: (a: A) => E): Either<B, E>; <A, E>(self: A, predicate: Predicate<NoInfer<A>>, orLeftWith: (a: NoInfer<A>) => E): Either<A, E>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L444"
+    "signature": "declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<A, B>, orLeftWith: (a: A) => E): (a: A) => Either<B, E>; <B extends A, E, A = B>(predicate: Predicate<A>, orLeftWith: (a: A) => E): (a: B) => Either<B, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orLeftWith: (a: A) => E): Either<B, E>; <B extends A, E, A = B>(self: B, predicate: Predicate<A>, orLeftWith: (a: A) => E): Either<B, E>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L439"
   },
   {
     "_tag": "Constant",
@@ -22325,7 +22325,7 @@
     "since": "2.0.0",
     "category": "filtering & conditionals",
     "signature": "declare const filterOrLeft: { <R, B extends R, L2>(refinement: Refinement<NoInfer<R>, B>, orLeftWith: (right: NoInfer<R>) => L2): <L>(self: Either<R, L>) => Either<B, L2 | L>; <R, L2>(predicate: Predicate<NoInfer<R>>, orLeftWith: (right: NoInfer<R>) => L2): <L>(self: Either<R, L>) => Either<R, L2 | L>; <R, L, B extends R, L2>(self: Either<R, L>, refinement: Refinement<R, B>, orLeftWith: (right: R) => L2): Either<B, L | L2>; <R, L, E2>(self: Either<R, L>, predicate: Predicate<R>, orLeftWith: (right: R) => E2): Either<R, L | E2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L496"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L491"
   },
   {
     "_tag": "Constant",
@@ -22340,7 +22340,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const merge: <R, L>(self: Either<R, L>) => L | R",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L521"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L516"
   },
   {
     "_tag": "Constant",
@@ -22358,7 +22358,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const getOrElse: { <L, R2>(onLeft: (left: L) => R2): <R>(self: Either<R, L>) => R2 | R; <R, L, R2>(self: Either<R, L>, onLeft: (left: L) => R2): R | R2; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L541"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L536"
   },
   {
     "_tag": "Constant",
@@ -22375,7 +22375,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const getOrNull: <R, L>(self: Either<R, L>) => R | null",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L562"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L557"
   },
   {
     "_tag": "Constant",
@@ -22392,7 +22392,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const getOrUndefined: <R, L>(self: Either<R, L>) => R | undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L577"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L572"
   },
   {
     "_tag": "Constant",
@@ -22410,7 +22410,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const getOrThrowWith: { <L>(onLeft: (left: L) => unknown): <A>(self: Either<A, L>) => A; <R, L>(self: Either<R, L>, onLeft: (left: L) => unknown): R; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L599"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L594"
   },
   {
     "_tag": "Constant",
@@ -22428,7 +22428,7 @@
     "since": "2.0.0",
     "category": "getters",
     "signature": "declare const getOrThrow: <R, L>(self: Either<R, L>) => R",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L629"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L624"
   },
   {
     "_tag": "Constant",
@@ -22444,7 +22444,7 @@
     "since": "2.0.0",
     "category": "error handling",
     "signature": "declare const orElse: { <L, R2, L2>(that: (left: L) => Either<R2, L2>): <R>(self: Either<R, L>) => Either<R | R2, L2>; <R, L, R2, L2>(self: Either<R, L>, that: (left: L) => Either<R2, L2>): Either<R | R2, L2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L639"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L634"
   },
   {
     "_tag": "Constant",
@@ -22459,7 +22459,7 @@
     "since": "2.0.0",
     "category": "sequencing",
     "signature": "declare const flatMap: { <R, R2, L2>(f: (right: R) => Either<R2, L2>): <L>(self: Either<R, L>) => Either<R2, L | L2>; <R, L, R2, L2>(self: Either<R, L>, f: (right: R) => Either<R2, L2>): Either<R2, L | L2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L652"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L647"
   },
   {
     "_tag": "Constant",
@@ -22475,7 +22475,7 @@
     "since": "2.0.0",
     "category": "sequencing",
     "signature": "declare const andThen: { <R, R2, L2>(f: (right: R) => Either<R2, L2>): <L>(self: Either<R, L>) => Either<R2, L | L2>; <R2, L2>(f: Either<R2, L2>): <L, R1>(self: Either<R1, L>) => Either<R2, L | L2>; <R, R2>(f: (right: R) => R2): <L>(self: Either<R, L>) => Either<R2, L>; <R2>(right: NotFunction<R2>): <R1, L>(self: Either<R1, L>) => Either<R2, L>; <R, L, R2, L2>(self: Either<R, L>, f: (right: R) => Either<R2, L2>): Either<R2, L | L2>; <R, L, R2, L2>(self: Either<R, L>, f: Either<R2, L2>): Either<R2, L | L2>; <R, L, R2>(self: Either<R, L>, f: (right: R) => R2): Either<R2, L>; <R, L, R2>(self: Either<R, L>, f: NotFunction<R2>): Either<R2, L>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L667"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L662"
   },
   {
     "_tag": "Constant",
@@ -22490,7 +22490,7 @@
     "since": "2.0.0",
     "category": "zipping",
     "signature": "declare const zipWith: { <R2, L2, R, B>(that: Either<R2, L2>, f: (right: R, right2: R2) => B): <L>(self: Either<R, L>) => Either<B, L2 | L>; <R, L, R2, L2, B>(self: Either<R, L>, that: Either<R2, L2>, f: (right: R, right2: R2) => B): Either<B, L | L2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L689"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L684"
   },
   {
     "_tag": "Constant",
@@ -22505,7 +22505,7 @@
     "since": "2.0.0",
     "category": "combining",
     "signature": "declare const ap: { <R, L2>(that: Either<R, L2>): <R2, L>(self: Either<(right: R) => R2, L>) => Either<R2, L | L2>; <R, R2, L, L2>(self: Either<(right: R) => R2, L>, that: Either<R, L2>): Either<R2, L | L2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L709"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L704"
   },
   {
     "_tag": "Constant",
@@ -22523,7 +22523,7 @@
     "since": "2.0.0",
     "category": "do notation",
     "signature": "declare const Do: Either<{}, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L840"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L835"
   },
   {
     "_tag": "Constant",
@@ -22541,7 +22541,7 @@
     "since": "2.0.0",
     "category": "do notation",
     "signature": "declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): <L1>(self: Either<A, L1>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Either<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L873"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L868"
   },
   {
     "_tag": "Constant",
@@ -22559,7 +22559,7 @@
     "since": "2.0.0",
     "category": "do notation",
     "signature": "declare const bindTo: { <N extends string>(name: N): <R, L>(self: Either<R, L>) => Either<{ [K in N]: R; }, L>; <R, L, N extends string>(self: Either<R, L>, name: N): Either<{ [K in N]: R; }, L>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L916"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L911"
   },
   {
     "_tag": "Function",
@@ -22592,7 +22592,7 @@
     "since": "2.0.0",
     "category": "combining",
     "signature": "declare const all: <const I extends Iterable<Either<any, any>> | Record<string, Either<any, any>>>(input: I) => [I] extends [ReadonlyArray<Either<any, any>>] ? Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never; }, I[number] extends never ? never : [I[number]] extends [Either<any, infer L>] ? L : never> : [I] extends [Iterable<Either<infer R, infer L>>] ? Either<Array<R>, L> : Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never; }, I[keyof I] extends never ? never : [I[keyof I]] extends [Either<any, infer L>] ? L : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L739"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L734"
   },
   {
     "_tag": "Function",
@@ -22608,7 +22608,7 @@
     "since": "2.0.0",
     "category": "mapping",
     "signature": "declare const flip: <R, L>(self: Either<R, L>) => Either<L, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L781"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L776"
   },
   {
     "_tag": "Function",
@@ -22623,7 +22623,7 @@
     "since": "2.0.0",
     "category": "generators",
     "signature": "declare const gen: Gen.Gen<EitherTypeLambda, Gen.Adapter<EitherTypeLambda>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L789"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L784"
   },
   {
     "_tag": "Function",
@@ -22641,7 +22641,7 @@
     "since": "3.14.0",
     "category": "Optional Wrapping & Unwrapping",
     "signature": "declare const transposeOption: <A = never, E = never>(self: Option<Either<A, E>>) => Either<Option<A>, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L997"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L992"
   },
   {
     "_tag": "Interface",
@@ -57747,7 +57747,7 @@
     "since": "3.10.0",
     "category": "FiberId constructors",
     "signature": "declare class FiberIdFromSelf",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9172"
   },
   {
     "_tag": "Class",
@@ -57762,7 +57762,7 @@
     "since": "3.10.0",
     "category": "FiberId transformations",
     "signature": "declare class FiberId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9214"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9211"
   },
   {
     "_tag": "Class",
@@ -57778,7 +57778,7 @@
     "since": "3.10.0",
     "category": "defect",
     "signature": "declare class Defect",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9492"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9489"
   },
   {
     "_tag": "Class",
@@ -57794,7 +57794,7 @@
     "since": "3.10.0",
     "category": "boolean constructors",
     "signature": "declare class BooleanFromUnknown",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10075"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10072"
   },
   {
     "_tag": "Class",
@@ -57810,7 +57810,7 @@
     "since": "3.11.0",
     "category": "boolean transformations",
     "signature": "declare class BooleanFromString",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10092"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10089"
   },
   {
     "_tag": "Class",
@@ -57825,7 +57825,7 @@
     "since": "3.12.5",
     "category": "ArrayFormatter",
     "signature": "declare class ArrayFormatterIssue",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10846"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10843"
   },
   {
     "_tag": "Constant",
@@ -59383,7 +59383,7 @@
     "since": "3.10.0",
     "category": "symbol",
     "signature": "declare const symbolSerializable: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10122"
   },
   {
     "_tag": "Constant",
@@ -59398,7 +59398,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserialize: { (value: unknown): <A, I, R>(self: Serializable<A, I, R>) => Effect.Effect<A, ParseResult.ParseError, R>; <A, I, R>(self: Serializable<A, I, R>, value: unknown): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10192"
   },
   {
     "_tag": "Constant",
@@ -59413,7 +59413,7 @@
     "since": "3.10.0",
     "category": "symbol",
     "signature": "declare const symbolWithResult: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10208"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10205"
   },
   {
     "_tag": "Constant",
@@ -59428,7 +59428,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeFailure: { <FA>(value: FA): <SA, SI, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<FI, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: FA): Effect.Effect<FI, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10328"
   },
   {
     "_tag": "Constant",
@@ -59443,7 +59443,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeFailure: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<FA, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<FA, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10346"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10343"
   },
   {
     "_tag": "Constant",
@@ -59458,7 +59458,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeSuccess: { <SA>(value: SA): <SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<SI, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: SA): Effect.Effect<SI, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10360"
   },
   {
     "_tag": "Constant",
@@ -59473,7 +59473,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeSuccess: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<SA, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<SA, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10378"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10375"
   },
   {
     "_tag": "Constant",
@@ -59488,7 +59488,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serializeExit: { <SA, FA>(value: exit_.Exit<SA, FA>): <SI, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<ExitEncoded<SI, FI, unknown>, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: exit_.Exit<SA, FA>): Effect.Effect<ExitEncoded<SI, FI, unknown>, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10395"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10392"
   },
   {
     "_tag": "Constant",
@@ -59503,7 +59503,7 @@
     "since": "3.10.0",
     "category": "decoding",
     "signature": "declare const deserializeExit: { (value: unknown): <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Effect.Effect<exit_.Exit<SA, FA>, ParseResult.ParseError, R>; <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>, value: unknown): Effect.Effect<exit_.Exit<SA, FA>, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10412"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10409"
   },
   {
     "_tag": "Function",
@@ -59873,7 +59873,7 @@
     "since": "3.10.0",
     "category": "HashSet transformations",
     "signature": "declare const HashSet: <Value extends Schema.Any>(value: Value) => HashSet<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9775"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9772"
   },
   {
     "_tag": "Function",
@@ -59888,7 +59888,7 @@
     "since": "3.10.0",
     "category": "List transformations",
     "signature": "declare const List: <Value extends Schema.Any>(value: Value) => List<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9960"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9957"
   },
   {
     "_tag": "Function",
@@ -59903,7 +59903,7 @@
     "since": "3.10.0",
     "category": "SortedSet transformations",
     "signature": "declare const SortedSet: <Value extends Schema.Any>(value: Value, ordA: Order.Order<Schema.Type<Value>>) => SortedSet<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10050"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10047"
   },
   {
     "_tag": "Function",
@@ -61859,7 +61859,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const Class: <Self = never>(identifier: string) => <Fields extends Struct.Fields>(fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"Class\"> : Class<Self, Fields, Struct.Encoded<Fields>, Struct.Context<Fields>, Struct.Constructor<Fields>, {}, {}>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8688"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8685"
   },
   {
     "_tag": "Function",
@@ -61876,7 +61876,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedClass: <Self = never>(identifier?: string) => <Tag extends string, Fields extends Struct.Fields>(tag: Tag, fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedClass\", `\"Tag\", `> : TaggedClass<Self, Tag, { readonly _tag: tag<Tag>; } & Fields>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8746"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8743"
   },
   {
     "_tag": "Function",
@@ -61893,7 +61893,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedError: <Self = never>(identifier?: string) => <Tag extends string, Fields extends Struct.Fields>(tag: Tag, fieldsOr: Fields | HasFields<Fields>, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Fields>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedError\", `\"Tag\", `> : TaggedErrorClass<Self, Tag, { readonly _tag: tag<Tag>; } & Fields>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8809"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8806"
   },
   {
     "_tag": "Function",
@@ -61908,7 +61908,7 @@
     "since": "3.10.0",
     "category": "Cause transformations",
     "signature": "declare const CauseFromSelf: <E extends Schema.All, D extends Schema.All>({ defect, error }: { readonly error: E; readonly defect: D; }) => CauseFromSelf<E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9382"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9379"
   },
   {
     "_tag": "Function",
@@ -61923,7 +61923,7 @@
     "since": "3.10.0",
     "category": "Cause transformations",
     "signature": "declare const Cause: <E extends Schema.All, D extends Schema.All>({ defect, error }: { readonly error: E; readonly defect: D; }) => Cause<E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9461"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9458"
   },
   {
     "_tag": "Function",
@@ -61938,7 +61938,7 @@
     "since": "3.10.0",
     "category": "Exit transformations",
     "signature": "declare const ExitFromSelf: <A extends Schema.All, E extends Schema.All, D extends Schema.All>({ defect, failure, success }: { readonly failure: E; readonly success: A; readonly defect: D; }) => ExitFromSelf<A, E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9621"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9618"
   },
   {
     "_tag": "Function",
@@ -61953,7 +61953,7 @@
     "since": "3.10.0",
     "category": "Exit transformations",
     "signature": "declare const Exit: <A extends Schema.All, E extends Schema.All, D extends Schema.All>({ defect, failure, success }: { readonly failure: E; readonly success: A; readonly defect: D; }) => Exit<A, E, D>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9677"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9674"
   },
   {
     "_tag": "Function",
@@ -61968,7 +61968,7 @@
     "since": "3.10.0",
     "category": "HashSet transformations",
     "signature": "declare const HashSetFromSelf: <Value extends Schema.Any>(value: Value) => HashSetFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9745"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9742"
   },
   {
     "_tag": "Function",
@@ -61983,7 +61983,7 @@
     "since": "3.10.0",
     "category": "HashMap transformations",
     "signature": "declare const HashMapFromSelf: <K extends Schema.Any, V extends Schema.Any>({ key, value }: { readonly key: K; readonly value: V; }) => HashMapFromSelf<K, V>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9843"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9840"
   },
   {
     "_tag": "Function",
@@ -61998,7 +61998,7 @@
     "since": "3.10.0",
     "category": "HashMap transformations",
     "signature": "declare const HashMap: <K extends Schema.Any, V extends Schema.Any>({ key, value }: { readonly key: K; readonly value: V; }) => HashMap<K, V>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9874"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9871"
   },
   {
     "_tag": "Function",
@@ -62013,7 +62013,7 @@
     "since": "3.10.0",
     "category": "List transformations",
     "signature": "declare const ListFromSelf: <Value extends Schema.Any>(value: Value) => ListFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9930"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9927"
   },
   {
     "_tag": "Function",
@@ -62028,7 +62028,7 @@
     "since": "3.10.0",
     "category": "SortedSet transformations",
     "signature": "declare const SortedSetFromSelf: <Value extends Schema.Any>(value: Value, ordA: Order.Order<Schema.Type<Value>>, ordI: Order.Order<Schema.Encoded<Value>>) => SortedSetFromSelf<Value>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10018"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10015"
   },
   {
     "_tag": "Function",
@@ -62043,7 +62043,7 @@
     "since": "3.10.0",
     "category": "Config validations",
     "signature": "declare const Config: <A, I extends string>(name: string, schema: Schema<A, I>) => config_.Config<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10103"
   },
   {
     "_tag": "Function",
@@ -62058,7 +62058,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asSerializable: <S extends Serializable.All>(serializable: S) => Serializable<Serializable.Type<S>, Serializable.Encoded<S>, Serializable.Context<S>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10171"
   },
   {
     "_tag": "Function",
@@ -62073,7 +62073,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const serializableSchema: <A, I, R>(self: Serializable<A, I, R>) => Schema<A, I, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10179"
   },
   {
     "_tag": "Function",
@@ -62088,7 +62088,7 @@
     "since": "3.10.0",
     "category": "encoding",
     "signature": "declare const serialize: <A, I, R>(self: Serializable<A, I, R>) => Effect.Effect<I, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10185"
   },
   {
     "_tag": "Function",
@@ -62103,7 +62103,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asWithResult: <WR extends WithResult.All>(withExit: WR) => WithResult<WithResult.Success<WR>, WithResult.SuccessEncoded<WR>, WithResult.Failure<WR>, WithResult.FailureEncoded<WR>, WithResult.Context<WR>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10269"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10266"
   },
   {
     "_tag": "Function",
@@ -62118,7 +62118,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const failureSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<FA, FI, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10283"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10280"
   },
   {
     "_tag": "Function",
@@ -62133,7 +62133,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const successSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<SA, SI, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10287"
   },
   {
     "_tag": "Function",
@@ -62148,7 +62148,7 @@
     "since": "3.10.0",
     "category": "accessor",
     "signature": "declare const exitSchema: <SA, SI, FA, FI, R>(self: WithResult<SA, SI, FA, FI, R>) => Schema<exit_.Exit<SA, FA>, ExitEncoded<SI, FI, unknown>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10302"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10299"
   },
   {
     "_tag": "Function",
@@ -62163,7 +62163,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "declare const asSerializableWithResult: <SWR extends SerializableWithResult.All>(procedure: SWR) => SerializableWithResult<Serializable.Type<SWR>, Serializable.Encoded<SWR>, Serializable.Context<SWR>, WithResult.Success<SWR>, WithResult.SuccessEncoded<SWR>, WithResult.Failure<SWR>, WithResult.FailureEncoded<SWR>, WithResult.Context<SWR>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10478"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10475"
   },
   {
     "_tag": "Function",
@@ -62180,7 +62180,7 @@
     "since": "3.10.0",
     "category": "classes",
     "signature": "declare const TaggedRequest: <Self = never>(identifier?: string) => <Tag extends string, Payload extends Struct.Fields, Success extends Schema.All, Failure extends Schema.All>(tag: Tag, options: { failure: Failure; success: Success; payload: Payload; }, annotations?: ClassAnnotations<Self, Simplify<Struct.Type<{ readonly _tag: tag<Tag>; } & Payload>>>) => [Self] extends [never] ? MissingSelfGeneric<\"TaggedRequest\", `\"Tag\", SuccessSchema, FailureSchema, `> : TaggedRequestClass<Self, Tag, { readonly _tag: tag<Tag>; } & Payload, Success, Failure>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10587"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10584"
   },
   {
     "_tag": "Function",
@@ -62196,7 +62196,7 @@
     "since": "3.10.0",
     "category": "Equivalence",
     "signature": "declare const equivalence: <A, I, R>(schema: Schema<A, I, R>) => Equivalence.Equivalence<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10640"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10637"
   },
   {
     "_tag": "Interface",
@@ -63215,7 +63215,7 @@
     "examples": [],
     "since": "3.10.0",
     "category": "api interface",
-    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Self\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}",
+    "signature": "export interface Class<Self, Fields extends Struct.Fields, I, R, C, Inherited, Proto>\n  extends Schema<Self, Simplify<I>, R>\n{\n  new(\n    props: RequiredKeys<C> extends never ? void | Simplify<C> : Simplify<C>,\n    options?: MakeOptions\n  ): Struct.Type<Fields> & Inherited & Proto\n\n  /** @since 3.10.0 */\n  readonly ast: AST.Transformation\n\n  make<C extends new(...args: Array<any>) => any>(this: C, ...args: ConstructorParameters<C>): InstanceType<C>\n\n  annotations(annotations: Annotations.Schema<Self>): SchemaClass<Self, Simplify<I>, R>\n\n  readonly fields: { readonly [K in keyof Fields]: Fields[K] }\n\n  readonly identifier: string\n\n  /**\n   * @example\n   * ```ts\n   * import { Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *  myField: Schema.String\n   * }) {\n   *  myMethod() {\n   *    return this.myField + \"my\"\n   *  }\n   * }\n   *\n   * class NextClass extends MyClass.extend<NextClass>(\"NextClass\")({\n   *  nextField: Schema.Number\n   * }) {\n   *  nextMethod() {\n   *    return this.myMethod() + this.myField + this.nextField\n   *  }\n   * }\n   * ```\n   */\n  extend<Extended = never>(identifier: string): <NewFields extends Struct.Fields>(\n    fields: NewFields | HasFields<NewFields>,\n    annotations?: ClassAnnotations<Extended, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Extended] extends [never] ? MissingSelfGeneric<\"Base.extend\">\n    : Class<\n      Extended,\n      Fields & NewFields,\n      I & Struct.Encoded<NewFields>,\n      R | Struct.Context<NewFields>,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFail<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFail<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<Struct.Type<Fields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<Struct.Type<Fields & NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<Struct.Type<Fields & NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Struct.Type<Fields>, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFail\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n\n  /**\n   * @example\n   * ```ts\n   * import { Effect, Schema } from \"effect\"\n   *\n   * class MyClass extends Schema.Class<MyClass>(\"MyClass\")({\n   *   myField: Schema.String\n   * }) {\n   *   myMethod() {\n   *     return this.myField + \"my\"\n   *   }\n   * }\n   *\n   * class NextClass extends MyClass.transformOrFailFrom<NextClass>(\"NextClass\")({\n   *   nextField: Schema.Number\n   * }, {\n   *   decode: (i) =>\n   *     Effect.succeed({\n   *       myField: i.myField,\n   *       nextField: i.myField.length\n   *     }),\n   *   encode: (a) => Effect.succeed({ myField: a.myField })\n   * }) {\n   *   nextMethod() {\n   *     return this.myMethod() + this.myField + this.nextField\n   *   }\n   * }\n   * ```\n   */\n  transformOrFailFrom<Transformed = never>(identifier: string): <\n    NewFields extends Struct.Fields,\n    R2,\n    R3\n  >(\n    fields: NewFields,\n    options: {\n      readonly decode: (\n        input: Simplify<I>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<Simplify<I & Struct.Encoded<NewFields>>, ParseResult.ParseIssue, R2>\n      readonly encode: (\n        input: Simplify<I & Struct.Encoded<NewFields>>,\n        options: ParseOptions,\n        ast: AST.Transformation\n      ) => Effect.Effect<I, ParseResult.ParseIssue, R3>\n    },\n    annotations?: ClassAnnotations<Transformed, Simplify<Struct.Type<Fields & NewFields>>>\n  ) => [Transformed] extends [never] ? MissingSelfGeneric<\"Base.transformOrFailFrom\">\n    : Class<\n      Transformed,\n      Fields & NewFields,\n      I,\n      R | Struct.Context<NewFields> | R2 | R3,\n      C & Struct.Constructor<NewFields>,\n      Self,\n      Proto\n    >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8476"
   },
   {
@@ -63231,7 +63231,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedClass<Self, Tag extends string, Fields extends Struct.Fields> extends\n  Class<\n    Self,\n    Fields,\n    Struct.Encoded<Fields>,\n    Struct.Context<Fields>,\n    Struct.Constructor<Omit<Fields, \"_tag\">>,\n    {},\n    {}\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8719"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8716"
   },
   {
     "_tag": "Interface",
@@ -63246,7 +63246,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedErrorClass<Self, Tag extends string, Fields extends Struct.Fields> extends\n  Class<\n    Self,\n    Fields,\n    Struct.Encoded<Fields>,\n    Struct.Context<Fields>,\n    Struct.Constructor<Omit<Fields, \"_tag\">>,\n    {},\n    cause_.YieldableError\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8774"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8771"
   },
   {
     "_tag": "Interface",
@@ -63261,7 +63261,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface CauseFromSelf<E extends Schema.All, D extends Schema.All> extends\n  AnnotableDeclare<\n    CauseFromSelf<E, D>,\n    cause_.Cause<Schema.Type<E>>,\n    cause_.Cause<Schema.Encoded<E>>,\n    [E, D]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9366"
   },
   {
     "_tag": "Interface",
@@ -63276,7 +63276,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface Cause<E extends Schema.All, D extends Schema.All> extends\n  transform<\n    SchemaClass<\n      CauseEncoded<Schema.Type<E>, Schema.Type<Defect>>,\n      CauseEncoded<Schema.Encoded<E>, Schema.Encoded<Defect>>,\n      Schema.Context<E> | Schema.Context<D>\n    >,\n    CauseFromSelf<SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9443"
   },
   {
     "_tag": "Interface",
@@ -63291,7 +63291,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface ExitFromSelf<A extends Schema.All, E extends Schema.All, D extends Schema.All>\n  extends\n    AnnotableDeclare<\n      ExitFromSelf<A, E, D>,\n      exit_.Exit<Schema.Type<A>, Schema.Type<E>>,\n      exit_.Exit<Schema.Encoded<A>, Schema.Encoded<E>>,\n      [A, E, D]\n    >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9607"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9604"
   },
   {
     "_tag": "Interface",
@@ -63306,7 +63306,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface Exit<A extends Schema.All, E extends Schema.All, D extends Schema.All> extends\n  transform<\n    Union<[\n      Struct<{\n        _tag: Literal<[\"Failure\"]>\n        cause: SchemaClass<\n          CauseEncoded<Schema.Type<E>, Schema.Type<D>>,\n          CauseEncoded<Schema.Encoded<E>, Schema.Encoded<D>>,\n          Schema.Context<E> | Schema.Context<D>\n        >\n      }>,\n      Struct<{\n        _tag: Literal<[\"Success\"]>\n        value: A\n      }>\n    ]>,\n    ExitFromSelf<SchemaClass<Schema.Type<A>>, SchemaClass<Schema.Type<E>>, SchemaClass<Schema.Type<D>>>\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9653"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9650"
   },
   {
     "_tag": "Interface",
@@ -63321,7 +63321,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    HashSetFromSelf<Value>,\n    hashSet_.HashSet<Schema.Type<Value>>,\n    hashSet_.HashSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9732"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9729"
   },
   {
     "_tag": "Interface",
@@ -63336,7 +63336,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, HashSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9767"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9764"
   },
   {
     "_tag": "Interface",
@@ -63351,7 +63351,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashMapFromSelf<K extends Schema.Any, V extends Schema.Any> extends\n  AnnotableDeclare<\n    HashMapFromSelf<K, V>,\n    hashMap_.HashMap<Schema.Type<K>, Schema.Type<V>>,\n    hashMap_.HashMap<Schema.Encoded<K>, Schema.Encoded<V>>,\n    [K, V]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9830"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9827"
   },
   {
     "_tag": "Interface",
@@ -63366,7 +63366,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface HashMap<K extends Schema.Any, V extends Schema.Any>\n  extends transform<Array$<Tuple2<K, V>>, HashMapFromSelf<SchemaClass<Schema.Type<K>>, SchemaClass<Schema.Type<V>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9866"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9863"
   },
   {
     "_tag": "Interface",
@@ -63381,7 +63381,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface ListFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    ListFromSelf<Value>,\n    list_.List<Schema.Type<Value>>,\n    list_.List<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9917"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9914"
   },
   {
     "_tag": "Interface",
@@ -63396,7 +63396,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface List<Value extends Schema.Any>\n  extends transform<Array$<Value>, ListFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9952"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9949"
   },
   {
     "_tag": "Interface",
@@ -63411,7 +63411,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface SortedSetFromSelf<Value extends Schema.Any> extends\n  AnnotableDeclare<\n    SortedSetFromSelf<Value>,\n    sortedSet_.SortedSet<Schema.Type<Value>>,\n    sortedSet_.SortedSet<Schema.Encoded<Value>>,\n    [Value]\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10005"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10002"
   },
   {
     "_tag": "Interface",
@@ -63426,7 +63426,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface SortedSet<Value extends Schema.Any>\n  extends transform<Array$<Value>, SortedSetFromSelf<SchemaClass<Schema.Type<Value>>>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10042"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10039"
   },
   {
     "_tag": "Interface",
@@ -63442,7 +63442,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface Serializable<A, I, R> {\n  readonly [symbolSerializable]: Schema<A, I, R>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10133"
   },
   {
     "_tag": "Interface",
@@ -63458,7 +63458,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface WithResult<Success, SuccessEncoded, Failure, FailureEncoded, ResultR> {\n  readonly [symbolWithResult]: {\n    readonly success: Schema<Success, SuccessEncoded, ResultR>\n    readonly failure: Schema<Failure, FailureEncoded, ResultR>\n  }\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10221"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10218"
   },
   {
     "_tag": "Interface",
@@ -63474,7 +63474,7 @@
     "since": "3.10.0",
     "category": "model",
     "signature": "export interface SerializableWithResult<\n  A,\n  I,\n  R,\n  Success,\n  SuccessEncoded,\n  Failure,\n  FailureEncoded,\n  ResultR\n> extends Serializable<A, I, R>, WithResult<Success, SuccessEncoded, Failure, FailureEncoded, ResultR> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10441"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10438"
   },
   {
     "_tag": "Interface",
@@ -63489,7 +63489,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "export interface TaggedRequest<\n  Tag extends string,\n  A,\n  I,\n  R,\n  SuccessType,\n  SuccessEncoded,\n  FailureType,\n  FailureEncoded,\n  ResultR\n> extends\n  Request.Request<SuccessType, FailureType>,\n  SerializableWithResult<\n    A,\n    I,\n    R,\n    SuccessType,\n    SuccessEncoded,\n    FailureType,\n    FailureEncoded,\n    ResultR\n  >\n{\n  readonly _tag: Tag\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10491"
   },
   {
     "_tag": "Interface",
@@ -63504,7 +63504,7 @@
     "since": "3.10.0",
     "category": "api interface",
     "signature": "export interface TaggedRequestClass<\n  Self,\n  Tag extends string,\n  Payload extends Struct.Fields,\n  Success extends Schema.All,\n  Failure extends Schema.All\n> extends\n  Class<\n    Self,\n    Payload,\n    Struct.Encoded<Payload>,\n    Struct.Context<Payload>,\n    Struct.Constructor<Omit<Payload, \"_tag\">>,\n    TaggedRequest<\n      Tag,\n      Self,\n      Struct.Encoded<Payload>,\n      Struct.Context<Payload>,\n      Schema.Type<Success>,\n      Schema.Encoded<Success>,\n      Schema.Type<Failure>,\n      Schema.Encoded<Failure>,\n      Schema.Context<Success> | Schema.Context<Failure>\n    >,\n    {}\n  >\n{\n  readonly _tag: Tag\n  readonly success: Success\n  readonly failure: Failure\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10540"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10537"
   },
   {
     "_tag": "TypeAlias",
@@ -64059,7 +64059,7 @@
     "since": "3.13.4",
     "category": "Constructor utils",
     "signature": "type MakeOptions = boolean | {\n  readonly disableValidation?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8861"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8858"
   },
   {
     "_tag": "TypeAlias",
@@ -64074,7 +64074,7 @@
     "since": "3.10.0",
     "category": "FiberId",
     "signature": "type FiberIdEncoded = | {\n    readonly _tag: \"Composite\"\n    readonly left: FiberIdEncoded\n    readonly right: FiberIdEncoded\n  }\n  | {\n    readonly _tag: \"None\"\n  }\n  | {\n    readonly _tag: \"Runtime\"\n    readonly id: number\n    readonly startTimeMillis: number\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9115"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9112"
   },
   {
     "_tag": "TypeAlias",
@@ -64089,7 +64089,7 @@
     "since": "3.10.0",
     "category": "Cause utils",
     "signature": "type CauseEncoded<E, D> = | {\n    readonly _tag: \"Empty\"\n  }\n  | {\n    readonly _tag: \"Fail\"\n    readonly error: E\n  }\n  | {\n    readonly _tag: \"Die\"\n    readonly defect: D\n  }\n  | {\n    readonly _tag: \"Interrupt\"\n    readonly fiberId: FiberIdEncoded\n  }\n  | {\n    readonly _tag: \"Sequential\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }\n  | {\n    readonly _tag: \"Parallel\"\n    readonly left: CauseEncoded<E, D>\n    readonly right: CauseEncoded<E, D>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9225"
   },
   {
     "_tag": "TypeAlias",
@@ -64104,7 +64104,7 @@
     "since": "3.10.0",
     "category": "Exit utils",
     "signature": "type ExitEncoded<A, E, D> = | {\n    readonly _tag: \"Failure\"\n    readonly cause: CauseEncoded<E, D>\n  }\n  | {\n    readonly _tag: \"Success\"\n    readonly value: A\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9525"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9522"
   },
   {
     "_tag": "TypeAlias",
@@ -64754,7 +64754,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Type<T> = T extends Serializable<infer A, infer _I, infer _R> ? A : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10145"
   },
   {
     "_tag": "TypeAlias",
@@ -64769,7 +64769,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Encoded<T> = T extends Serializable<infer _A, infer I, infer _R> ? I : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10149"
   },
   {
     "_tag": "TypeAlias",
@@ -64784,7 +64784,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<T> = T extends Serializable<infer _A, infer _I, infer R> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10156"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10153"
   },
   {
     "_tag": "TypeAlias",
@@ -64799,7 +64799,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = Serializable<any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10157"
   },
   {
     "_tag": "TypeAlias",
@@ -64814,7 +64814,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | Serializable<any, never, unknown>\n    | Serializable<never, any, unknown>\n    | Serializable<never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10161"
   },
   {
     "_tag": "TypeAlias",
@@ -64829,7 +64829,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Success<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _A : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10233"
   },
   {
     "_tag": "TypeAlias",
@@ -64844,7 +64844,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type SuccessEncoded<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _I : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10240"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10237"
   },
   {
     "_tag": "TypeAlias",
@@ -64859,7 +64859,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Failure<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _E : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10244"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10241"
   },
   {
     "_tag": "TypeAlias",
@@ -64874,7 +64874,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type FailureEncoded<T> = T extends WithResult<infer _A, infer _I, infer _E, infer _EI, infer _R> ? _EI : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10245"
   },
   {
     "_tag": "TypeAlias",
@@ -64889,7 +64889,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<T> = T extends WithResult<infer _SA, infer _SI, infer _FA, infer _FI, infer R> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10250"
   },
   {
     "_tag": "TypeAlias",
@@ -64904,7 +64904,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = WithResult<any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10257"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10254"
   },
   {
     "_tag": "TypeAlias",
@@ -64919,7 +64919,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | WithResult<any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10261"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10258"
   },
   {
     "_tag": "TypeAlias",
@@ -64934,7 +64934,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Context<P> = P extends\n    SerializableWithResult<infer _S, infer _SI, infer SR, infer _A, infer _AI, infer _E, infer _EI, infer RR> ? SR | RR\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10457"
   },
   {
     "_tag": "TypeAlias",
@@ -64949,7 +64949,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = SerializableWithResult<any, any, any, any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10466"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10463"
   },
   {
     "_tag": "TypeAlias",
@@ -64964,7 +64964,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | SerializableWithResult<any, any, any, any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10470"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10467"
   },
   {
     "_tag": "TypeAlias",
@@ -64979,7 +64979,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type Any = TaggedRequest<string, any, any, any, any, any, any, any, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10527"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10524"
   },
   {
     "_tag": "TypeAlias",
@@ -64994,7 +64994,7 @@
     "since": "3.10.0",
     "category": null,
     "signature": "type All = | Any\n    | TaggedRequest<string, any, any, any, any, any, never, never, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10531"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10528"
   },
   {
     "_tag": "Class",

@@ -23,7 +23,7 @@ Effect.liftPredicate(0, isPositive, n => `${n} is not positive`)
 **Signature**
 
 ```ts
-declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<NoInfer<A>, B>, orFailWith: (a: NoInfer<A>) => E): (a: A) => Effect<B, E>; <A, E>(predicate: Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E): (a: A) => Effect<A, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orFailWith: (a: A) => E): Effect<B, E>; <A, E>(self: A, predicate: Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E): Effect<A, E>; }
+declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<A, B>, orFailWith: (a: A) => E): (a: A) => Effect<B, E>; <B extends A, E, A = B>(predicate: Predicate<A>, orFailWith: (a: A) => E): (a: B) => Effect<B, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orFailWith: (a: A) => E): Effect<B, E>; <B extends A, E, A = B>(self: B, predicate: Predicate<A>, orFailWith: (a: A) => E): Effect<B, E>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4972)
