@@ -2749,7 +2749,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare class Middleware",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L810"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L820"
   },
   {
     "_tag": "Constant",
@@ -2844,7 +2844,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const Name extends HttpApiGroup.HttpApiGroup.Name<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: Name, build: (handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.ApiGroup<ApiId, Name>, Handlers.Error<Return>, Exclude<Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L433"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L440"
   },
   {
     "_tag": "Function",
@@ -2860,7 +2860,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const handler: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"], const Name extends HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>[\"name\"], R>(_api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, _groupName: GroupName, _name: Name, f: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>) => HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L489"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L497"
   },
   {
     "_tag": "Function",
@@ -2876,7 +2876,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middleware: { <EX = never, RX = never>(middleware: MiddlewareFn<never> | Effect.Effect<MiddlewareFn<never>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <R, EX = never, RX = never>(middleware: MiddlewareFn<never, R> | Effect.Effect<MiddlewareFn<never, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>> | Effect.Effect<MiddlewareFn<NoInfer<Error>>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>, R> | Effect.Effect<MiddlewareFn<NoInfer<Error>, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L866"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L876"
   },
   {
     "_tag": "Function",
@@ -2892,7 +2892,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareCors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => Layer.Layer<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L922"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L932"
   },
   {
     "_tag": "Function",
@@ -2908,7 +2908,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareOpenApi: (options?: { readonly path?: HttpApiEndpoint.PathSegment | undefined; readonly additionalPropertiesStrategy?: OpenApi.AdditionalPropertiesStrategy | undefined; } | undefined) => Layer.Layer<never, never, HttpApi.Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L939"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L949"
   },
   {
     "_tag": "Function",
@@ -2923,7 +2923,7 @@
     "since": "1.0.0",
     "category": "security",
     "signature": "declare const securityDecode: <Security extends HttpApiSecurity.HttpApiSecurity>(self: Security) => Effect.Effect<HttpApiSecurity.HttpApiSecurity.Type<Security>, never, HttpServerRequest.HttpServerRequest | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L965"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L975"
   },
   {
     "_tag": "Function",
@@ -2939,7 +2939,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const securitySetCookie: (self: HttpApiSecurity.ApiKey, value: string | Redacted.Redacted, options?: Cookie[\"options\"]) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1036"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1046"
   },
   {
     "_tag": "Interface",
@@ -2954,7 +2954,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "export interface Handlers<\n  E,\n  Provides,\n  R,\n  Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Endpoints>\n  }\n  readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps\n  readonly handlers: Chunk.Chunk<Handlers.Item<E, R>>\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   */\n  handle<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<Endpoints, Name, E, R1>\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   * This version of the api allows you to return the full response object.\n   */\n  handleRaw<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerResponseWithName<Endpoints, Name, E, R1>\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n}",
+    "signature": "export interface Handlers<\n  E,\n  Provides,\n  R,\n  Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Endpoints>\n  }\n  readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps\n  readonly handlers: Chunk.Chunk<Handlers.Item<E, R>>\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   */\n  handle<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<Endpoints, Name, E, R1>,\n    options?: { readonly uninterruptible?: boolean | undefined } | undefined\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   * This version of the api allows you to return the full response object.\n   */\n  handleRaw<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerResponseWithName<Endpoints, Name, E, R1>,\n    options?: { readonly uninterruptible?: boolean | undefined } | undefined\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L205"
   },
   {
@@ -2985,7 +2985,7 @@
     "since": "1.0.0",
     "category": "global",
     "signature": "type MiddlewareFn<Error, R> = (\n  httpApp: HttpApp.Default\n) => HttpApp.Default<Error, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L837"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L847"
   },
   {
     "_tag": "Interface",
@@ -3000,7 +3000,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Any {\n    readonly [HandlersTypeId]: any\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L272"
   },
   {
     "_tag": "TypeAlias",
@@ -3015,7 +3015,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Middleware<E, R, E1, R1> = (self: HttpRouter.Route.Middleware<E, R>) => HttpApp.Default<E1, R1>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L278"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L280"
   },
   {
     "_tag": "TypeAlias",
@@ -3029,8 +3029,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "handlers",
-    "signature": "type Item<E, R> = {\n    readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.Any\n    readonly handler: HttpApiEndpoint.HttpApiEndpoint.Handler<any, E, R>\n    readonly withFullResponse: boolean\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L284"
+    "signature": "type Item<E, R> = {\n    readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.Any\n    readonly handler: HttpApiEndpoint.HttpApiEndpoint.Handler<any, E, R>\n    readonly withFullResponse: boolean\n    readonly uninterruptible: boolean\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L286"
   },
   {
     "_tag": "TypeAlias",
@@ -3045,7 +3045,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type FromGroup<ApiError, ApiR, Group> = Handlers<\n    | ApiError\n    | HttpApiGroup.HttpApiGroup.Error<Group>,\n    | HttpApiMiddleware.HttpApiMiddleware.ExtractProvides<ApiR>\n    | HttpApiGroup.HttpApiGroup.Provides<Group>,\n    never,\n    HttpApiGroup.HttpApiGroup.Endpoints<Group>\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L297"
   },
   {
     "_tag": "TypeAlias",
@@ -3060,7 +3060,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type ValidateReturn<A> = A extends (\n    | Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >\n    | Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    >\n  ) ? [_Endpoints] extends [never] ? A\n    : `Endpoint not handled: ${HttpApiEndpoint.HttpApiEndpoint.Name<_Endpoints>}` :\n    `Must return the implemented handlers`",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L314"
   },
   {
     "_tag": "TypeAlias",
@@ -3075,7 +3075,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Error<A> = A extends Effect.Effect<\n    Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >,\n    infer _EX,\n    infer _RX\n  > ? _EX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L336"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L339"
   },
   {
     "_tag": "TypeAlias",
@@ -3090,7 +3090,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Context<A> = A extends Handlers<\n    infer _E,\n    infer _Provides,\n    infer _R,\n    infer _Endpoints\n  > ? _R :\n    A extends Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    > ? _R | _RX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L352"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L355"
   },
   {
     "_tag": "Function",
