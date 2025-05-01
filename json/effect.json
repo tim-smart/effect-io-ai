@@ -12651,7 +12651,7 @@
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const TaggedError: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A as P extends \"_tag\" ? never : P]: A[P]; }) => Cause.YieldableError & { readonly _tag: Tag; } & Readonly<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L576"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L579"
   },
   {
     "_tag": "TypeAlias",
@@ -14043,7 +14043,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "formatting",
-    "signature": "declare const format: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }",
+    "signature": "declare const format: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): string; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1444"
   },
   {
@@ -14059,7 +14059,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "formatting",
-    "signature": "declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }",
+    "signature": "declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): string; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1470"
   },
   {
@@ -14075,7 +14075,7 @@
     "examples": [],
     "since": "3.6.0",
     "category": "formatting",
-    "signature": "declare const formatUtc: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }",
+    "signature": "declare const formatUtc: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): string; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1496"
   },
   {
@@ -21085,7 +21085,7 @@
     "since": "3.12.0",
     "category": "Tracing",
     "signature": "declare const fnUntraced: fn.Untraced",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14594"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14598"
   },
   {
     "_tag": "Function",
@@ -78638,7 +78638,7 @@
     ],
     "since": "2.0.0",
     "category": null,
-    "signature": "declare const localeCompare: (that: string, locales?: Array<string>, options?: Intl.CollatorOptions) => (self: string) => Ordering.Ordering",
+    "signature": "declare const localeCompare: (that: string, locales?: Intl.LocalesArgument, options?: Intl.CollatorOptions) => (self: string) => Ordering.Ordering",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L423"
   },
   {
@@ -78772,7 +78772,7 @@
     ],
     "since": "2.0.0",
     "category": null,
-    "signature": "declare const toLocaleLowerCase: (locale?: string | Array<string>) => (self: string) => string",
+    "signature": "declare const toLocaleLowerCase: (locale?: Intl.LocalesArgument) => (self: string) => string",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L552"
   },
   {
@@ -78789,7 +78789,7 @@
     ],
     "since": "2.0.0",
     "category": null,
-    "signature": "declare const toLocaleUpperCase: (locale?: string | Array<string>) => (self: string) => string",
+    "signature": "declare const toLocaleUpperCase: (locale?: Intl.LocalesArgument) => (self: string) => string",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L567"
   },
   {
@@ -88552,8 +88552,8 @@
     "examples": [],
     "since": "3.2.2",
     "category": "tracing",
-    "signature": "declare const internalCall: <A>(fn: () => A) => A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L793"
+    "signature": "declare const internalCall: <A>(body: () => A) => A",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L801"
   },
   {
     "_tag": "Function",
@@ -88644,7 +88644,7 @@
     "since": "3.11.0",
     "category": null,
     "signature": "declare const isGeneratorFunction: (u: unknown) => u is (...args: Array<any>) => Generator<any, any, any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L800"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L808"
   },
   {
     "_tag": "Interface",

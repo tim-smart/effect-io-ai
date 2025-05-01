@@ -4983,7 +4983,7 @@
     "since": "1.0.0",
     "category": "symbols",
     "signature": "declare const ValidationErrorTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L14"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L13"
   },
   {
     "_tag": "Constant",
@@ -4998,7 +4998,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isValidationError: (u: unknown) => u is ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L158"
   },
   {
     "_tag": "Constant",
@@ -5013,7 +5013,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isCommandMismatch: (self: ValidationError) => self is CommandMismatch",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L165"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L164"
   },
   {
     "_tag": "Constant",
@@ -5028,7 +5028,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isCorrectedFlag: (self: ValidationError) => self is CorrectedFlag",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -5043,7 +5043,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isHelpRequested: (self: ValidationError) => self is HelpRequested",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L177"
   },
   {
     "_tag": "Constant",
@@ -5058,7 +5058,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isInvalidArgument: (self: ValidationError) => self is InvalidArgument",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L183"
   },
   {
     "_tag": "Constant",
@@ -5073,7 +5073,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isInvalidValue: (self: ValidationError) => self is InvalidValue",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L190"
   },
   {
     "_tag": "Constant",
@@ -5088,7 +5088,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isMultipleValuesDetected: (self: ValidationError) => self is MultipleValuesDetected",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L196"
   },
   {
     "_tag": "Constant",
@@ -5103,7 +5103,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isMissingFlag: (self: ValidationError) => self is MissingFlag",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L203"
   },
   {
     "_tag": "Constant",
@@ -5118,7 +5118,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isMissingValue: (self: ValidationError) => self is MissingValue",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L209"
   },
   {
     "_tag": "Constant",
@@ -5133,7 +5133,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isMissingSubcommand: (self: ValidationError) => self is MissingSubcommand",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L216"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L215"
   },
   {
     "_tag": "Constant",
@@ -5148,7 +5148,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isNoBuiltInMatch: (self: ValidationError) => self is NoBuiltInMatch",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L223"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L222"
   },
   {
     "_tag": "Constant",
@@ -5163,7 +5163,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isUnclusteredFlag: (self: ValidationError) => self is UnclusteredFlag",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L230"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L229"
   },
   {
     "_tag": "Constant",
@@ -5178,7 +5178,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const commandMismatch: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L237"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L236"
   },
   {
     "_tag": "Constant",
@@ -5193,7 +5193,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const correctedFlag: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L242"
   },
   {
     "_tag": "Constant",
@@ -5208,7 +5208,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const helpRequested: <A>(command: Command<A>) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L248"
   },
   {
     "_tag": "Constant",
@@ -5223,7 +5223,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const invalidArgument: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L254"
   },
   {
     "_tag": "Constant",
@@ -5238,7 +5238,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const invalidValue: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L261"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L260"
   },
   {
     "_tag": "Constant",
@@ -5253,7 +5253,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const keyValuesDetected: (error: HelpDoc, keyValues: ReadonlyArray<string>) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L267"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L266"
   },
   {
     "_tag": "Constant",
@@ -5268,7 +5268,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const missingFlag: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L276"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L275"
   },
   {
     "_tag": "Constant",
@@ -5283,7 +5283,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const missingValue: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L281"
   },
   {
     "_tag": "Constant",
@@ -5298,7 +5298,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const missingSubcommand: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L288"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L287"
   },
   {
     "_tag": "Constant",
@@ -5313,7 +5313,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const noBuiltInMatch: (error: HelpDoc) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L293"
   },
   {
     "_tag": "Constant",
@@ -5328,7 +5328,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unclusteredFlag: (error: HelpDoc, unclustered: ReadonlyArray<string>, rest: ReadonlyArray<string>) => ValidationError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L299"
   },
   {
     "_tag": "Interface",
@@ -5343,7 +5343,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface CommandMismatch extends ValidationError.Proto {\n  readonly _tag: \"CommandMismatch\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L42"
   },
   {
     "_tag": "Interface",
@@ -5358,7 +5358,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface CorrectedFlag extends ValidationError.Proto {\n  readonly _tag: \"CorrectedFlag\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L51"
   },
   {
     "_tag": "Interface",
@@ -5372,8 +5372,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface HelpRequested extends ValidationError.Proto {\n  readonly _tag: \"HelpRequested\"\n  readonly error: HelpDoc\n  readonly command: CommandDescriptor.Command<unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L61"
+    "signature": "export interface HelpRequested extends ValidationError.Proto {\n  readonly _tag: \"HelpRequested\"\n  readonly error: HelpDoc\n  readonly command: Command<unknown>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L60"
   },
   {
     "_tag": "Interface",
@@ -5388,7 +5388,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface InvalidArgument extends ValidationError.Proto {\n  readonly _tag: \"InvalidArgument\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L70"
   },
   {
     "_tag": "Interface",
@@ -5403,7 +5403,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface InvalidValue extends ValidationError.Proto {\n  readonly _tag: \"InvalidValue\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L79"
   },
   {
     "_tag": "Interface",
@@ -5418,7 +5418,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MissingFlag extends ValidationError.Proto {\n  readonly _tag: \"MissingFlag\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L88"
   },
   {
     "_tag": "Interface",
@@ -5433,7 +5433,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MissingValue extends ValidationError.Proto {\n  readonly _tag: \"MissingValue\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L97"
   },
   {
     "_tag": "Interface",
@@ -5448,7 +5448,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MissingSubcommand extends ValidationError.Proto {\n  readonly _tag: \"MissingSubcommand\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L106"
   },
   {
     "_tag": "Interface",
@@ -5463,7 +5463,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MultipleValuesDetected extends ValidationError.Proto {\n  readonly _tag: \"MultipleValuesDetected\"\n  readonly error: HelpDoc\n  readonly values: ReadonlyArray<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L115"
   },
   {
     "_tag": "Interface",
@@ -5478,7 +5478,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface NoBuiltInMatch extends ValidationError.Proto {\n  readonly _tag: \"NoBuiltInMatch\"\n  readonly error: HelpDoc\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L125"
   },
   {
     "_tag": "Interface",
@@ -5493,7 +5493,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface UnclusteredFlag extends ValidationError.Proto {\n  readonly _tag: \"UnclusteredFlag\"\n  readonly error: HelpDoc\n  readonly unclustered: ReadonlyArray<string>\n  readonly rest: ReadonlyArray<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L135"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L134"
   },
   {
     "_tag": "TypeAlias",
@@ -5508,7 +5508,7 @@
     "since": "1.0.0",
     "category": "symbols",
     "signature": "type ValidationErrorTypeId = typeof ValidationErrorTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L19"
   },
   {
     "_tag": "TypeAlias",
@@ -5523,7 +5523,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ValidationError = | CommandMismatch\n  | CorrectedFlag\n  | HelpRequested\n  | InvalidArgument\n  | InvalidValue\n  | MissingValue\n  | MissingFlag\n  | MultipleValuesDetected\n  | MissingSubcommand\n  | NoBuiltInMatch\n  | UnclusteredFlag",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L25"
   },
   {
     "_tag": "Interface",
@@ -5538,6 +5538,6 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Proto {\n    readonly [ValidationErrorTypeId]: ValidationErrorTypeId\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L150"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ValidationError.ts#L149"
   }
 ]
