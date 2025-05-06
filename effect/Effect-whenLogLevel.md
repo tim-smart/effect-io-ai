@@ -31,7 +31,7 @@ Effect.runFork(program)
 
 **See**
 
-- `FiberRef.minimumLogLevel` to retrieve the current minimum log level.
+- `FiberRef.currentMinimumLogLevel` to retrieve the current minimum log level.
 
 **Signature**
 

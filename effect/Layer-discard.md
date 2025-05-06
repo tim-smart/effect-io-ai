@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.discard
 
-Replaces the layer's output with `void` and includes the layer only for its
+Replaces the layer's output with `never` and includes the layer only for its
 side-effects.
 
 **Signature**
