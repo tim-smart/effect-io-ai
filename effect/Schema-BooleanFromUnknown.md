@@ -16,6 +16,6 @@ Uses `!!val` to coerce the value to a `boolean`.
 declare class BooleanFromUnknown
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10072)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10083)
 
 Since v3.10.0
