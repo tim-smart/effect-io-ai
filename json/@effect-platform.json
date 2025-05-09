@@ -6919,7 +6919,7 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "fiber refs",
+    "category": "Tracing",
     "signature": "declare const currentTracerDisabledWhen: FiberRef.FiberRef<Predicate.Predicate<ClientRequest.HttpClientRequest>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L616"
   },
@@ -6935,8 +6935,8 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "fiber refs",
-    "signature": "declare const withTracerDisabledWhen: { (predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): Effect.Effect<A, E, R>; }",
+    "category": "Tracing",
+    "signature": "declare const withTracerDisabledWhen: { (predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): HttpClient.With<E, R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L625"
   },
   {
@@ -6950,7 +6950,7 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "fiber refs",
+    "category": "Tracing",
     "signature": "declare const currentTracerPropagation: FiberRef.FiberRef<boolean>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L639"
   },
@@ -6966,8 +6966,8 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "fiber refs",
-    "signature": "declare const withTracerPropagation: { (enabled: boolean): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, enabled: boolean): Effect.Effect<A, E, R>; }",
+    "category": "Tracing",
+    "signature": "declare const withTracerPropagation: { (enabled: boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, enabled: boolean): HttpClient.With<E, R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L647"
   },
   {
@@ -6986,6 +6986,37 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L655"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClient.ts",
+      "path": "src/HttpClient.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SpanNameGenerator",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "declare const SpanNameGenerator: Context.Reference<SpanNameGenerator, (request: ClientRequest.HttpClientRequest) => string>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L671"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClient.ts",
+      "path": "src/HttpClient.ts"
+    },
+    "project": "@effect/platform",
+    "name": "withSpanNameGenerator",
+    "description": "Customizes the span names for tracing.\n\n```ts\nimport { FetchHttpClient, HttpClient } from \"@effect/platform\"\nimport { NodeRuntime } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function* () {\n  const client = (yield* HttpClient.HttpClient).pipe(\n    // Customize the span names for this HttpClient\n    HttpClient.withSpanNameGenerator(\n      (request) => `http.client ${request.method} ${request.url}`\n    )\n  )\n\n  yield* client.get(\"https://jsonplaceholder.typicode.com/posts/1\")\n}).pipe(Effect.provide(FetchHttpClient.layer), NodeRuntime.runMain)\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "declare const withSpanNameGenerator: { (f: (request: ClientRequest.HttpClientRequest) => string): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (request: ClientRequest.HttpClientRequest) => string): HttpClient.With<E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L699"
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "HttpClient.ts",
@@ -6999,6 +7030,21 @@
     "category": "models",
     "signature": "export interface HttpClient extends HttpClient.With<Error.HttpClientError> {}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L37"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HttpClient.ts",
+      "path": "src/HttpClient.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SpanNameGenerator",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "export interface SpanNameGenerator {\n  readonly _: unique symbol\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L663"
   },
   {
     "_tag": "TypeAlias",
@@ -8199,7 +8245,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <M extends HttpMiddleware>(middleware: M) => M",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -8214,7 +8260,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const logger: <E, R>(httpApp: App.Default<E, R>) => App.Default<E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -8229,7 +8275,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const loggerDisabled: FiberRef.FiberRef<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -8244,7 +8290,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withLoggerDisabled: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L55"
   },
   {
     "_tag": "Constant",
@@ -8259,7 +8305,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentTracerDisabledWhen: FiberRef.FiberRef<Predicate.Predicate<ServerRequest.HttpServerRequest>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -8274,7 +8320,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withTracerDisabledWhen: { (predicate: Predicate.Predicate<ServerRequest.HttpServerRequest>): <A, E, R>(layer: Layer.Layer<A, E, R>) => Layer.Layer<A, E, R>; <A, E, R>(layer: Layer.Layer<A, E, R>, predicate: Predicate.Predicate<ServerRequest.HttpServerRequest>): Layer.Layer<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L69"
   },
   {
     "_tag": "Constant",
@@ -8289,7 +8335,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withTracerDisabledWhenEffect: { (predicate: Predicate.Predicate<ServerRequest.HttpServerRequest>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, predicate: Predicate.Predicate<ServerRequest.HttpServerRequest>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -8304,7 +8350,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withTracerDisabledForUrls: { (urls: ReadonlyArray<string>): <A, E, R>(layer: Layer.Layer<A, E, R>) => Layer.Layer<A, E, R>; <A, E, R>(layer: Layer.Layer<A, E, R>, urls: ReadonlyArray<string>): Layer.Layer<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L97"
   },
   {
     "_tag": "Constant",
@@ -8319,7 +8365,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const xForwardedHeaders: <E, R>(httpApp: App.Default<E, R>) => App.Default<E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L106"
   },
   {
     "_tag": "Constant",
@@ -8334,7 +8380,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const searchParamsParser: <E, R>(httpApp: App.Default<E, R>) => App.Default<E, Exclude<R, ServerRequest.ParsedSearchParams>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L112"
   },
   {
     "_tag": "Constant",
@@ -8349,7 +8395,38 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const cors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => <E, R>(httpApp: App.Default<E, R>) => App.Default<E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L123"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpMiddleware.ts",
+      "path": "src/HttpMiddleware.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SpanNameGenerator",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "declare const SpanNameGenerator: Context.Reference<SpanNameGenerator, (request: ServerRequest.HttpServerRequest) => string>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L146"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpMiddleware.ts",
+      "path": "src/HttpMiddleware.ts"
+    },
+    "project": "@effect/platform",
+    "name": "withSpanNameGenerator",
+    "description": "Customizes the span name for the http app.\n\n```ts\nimport {\n  HttpMiddleware,\n  HttpRouter,\n  HttpServer,\n  HttpServerResponse\n} from \"@effect/platform\"\nimport { NodeHttpServer, NodeRuntime } from \"@effect/platform-node\"\nimport { Layer } from \"effect\"\nimport { createServer } from \"http\"\n\nHttpRouter.empty.pipe(\n  HttpRouter.get(\"/\", HttpServerResponse.empty()),\n  HttpServer.serve(),\n  // Customize the span names for this HttpApp\n  HttpMiddleware.withSpanNameGenerator((request) => `GET ${request.url}`),\n  Layer.provide(NodeHttpServer.layer(createServer, { port: 3000 })),\n  Layer.launch,\n  NodeRuntime.runMain\n)\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "declare const withSpanNameGenerator: { (f: (request: ServerRequest.HttpServerRequest) => string): <A, E, R>(layer: Layer.Layer<A, E, R>) => Layer.Layer<A, E, R>; <A, E, R>(layer: Layer.Layer<A, E, R>, f: (request: ServerRequest.HttpServerRequest) => string): Layer.Layer<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L179"
   },
   {
     "_tag": "Interface",
@@ -8364,7 +8441,22 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface HttpMiddleware {\n  <E, R>(self: App.Default<E, R>): App.Default<any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L17"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HttpMiddleware.ts",
+      "path": "src/HttpMiddleware.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SpanNameGenerator",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tracing",
+    "signature": "export interface SpanNameGenerator {\n  readonly _: unique symbol\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L138"
   },
   {
     "_tag": "Interface",
@@ -8379,7 +8471,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface Applied<A extends App.Default<any, any>, E, R> {\n    (self: App.Default<E, R>): A\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L28"
   },
   {
     "_tag": "Constant",

@@ -8,7 +8,7 @@ Enables or disables tracing propagation for the request.
 **Signature**
 
 ```ts
-declare const withTracerPropagation: { (enabled: boolean): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, enabled: boolean): Effect.Effect<A, E, R>; }
+declare const withTracerPropagation: { (enabled: boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, enabled: boolean): HttpClient.With<E, R>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L647)
