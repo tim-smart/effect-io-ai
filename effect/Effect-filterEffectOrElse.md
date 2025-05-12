@@ -42,6 +42,6 @@ const program = pipe(
 declare const filterEffectOrElse: { <A, E2, R2, A2, E3, R3>(options: { readonly predicate: (a: NoInfer<A>) => Effect<boolean, E2, R2>; readonly orElse: (a: NoInfer<A>) => Effect<A2, E3, R3>; }): <E, R>(self: Effect<A, E, R>) => Effect<A | A2, E | E2 | E3, R | R2 | R3>; <A, E, R, E2, R2, A2, E3, R3>(self: Effect<A, E, R>, options: { readonly predicate: (a: A) => Effect<boolean, E2, R2>; readonly orElse: (a: A) => Effect<A2, E3, R3>; }): Effect<A | A2, E | E2 | E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8490)
 
 Since v3.13.0

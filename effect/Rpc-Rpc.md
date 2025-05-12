@@ -10,7 +10,7 @@ the underlying `HttpRouter`.
 
 ```ts
 export interface Rpc<
-  out Tag extends string,
+  in out Tag extends string,
   out Payload extends AnyStructSchema = Schema.Struct<{}>,
   out Success extends Schema.Schema.Any = typeof Schema.Void,
   out Error extends Schema.Schema.All = typeof Schema.Never,
@@ -88,6 +88,6 @@ export interface Rpc<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L44)
 
 Since v1.0.0

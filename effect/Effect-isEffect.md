@@ -18,6 +18,6 @@ to a function that expects an `Effect` value.
 declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L263)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L271)
 
 Since v2.0.0

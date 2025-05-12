@@ -22,6 +22,6 @@ even in regions of the code that are normally uninterruptible.
 declare const allowInterrupt: Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4696)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4702)
 
 Since v2.0.0

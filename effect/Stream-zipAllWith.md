@@ -31,6 +31,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const zipAllWith: { <A2, E2, R2, A, A3>(options: { readonly other: Stream<A2, E2, R2>; readonly onSelf: (a: A) => A3; readonly onOther: (a2: A2) => A3; readonly onBoth: (a: A, a2: A2) => A3; }): <E, R>(self: Stream<A, E, R>) => Stream<A3, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, A3>(self: Stream<A, E, R>, options: { readonly other: Stream<A2, E2, R2>; readonly onSelf: (a: A) => A3; readonly onOther: (a2: A2) => A3; readonly onBoth: (a: A, a2: A2) => A3; }): Stream<A3, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5824)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5852)
 
 Since v2.0.0

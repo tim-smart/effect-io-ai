@@ -12,6 +12,6 @@ otherwise.
 declare const isMissingData: (self: ConfigError) => self is MissingData
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L224)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L226)
 
 Since v2.0.0

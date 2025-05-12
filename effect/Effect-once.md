@@ -46,6 +46,6 @@ Effect.runFork(program)
 declare const once: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<void, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L585)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L593)
 
 Since v2.0.0

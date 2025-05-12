@@ -22,6 +22,6 @@ type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : nev
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L169)
 
 Since v2.0.0

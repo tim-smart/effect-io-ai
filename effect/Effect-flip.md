@@ -31,6 +31,6 @@ const flipped = Effect.flip(program)
 declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5074)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5082)
 
 Since v2.0.0

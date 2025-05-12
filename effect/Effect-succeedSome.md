@@ -15,6 +15,6 @@ Returns an effect which succeeds with the value wrapped in a `Some`.
 declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3168)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3176)
 
 Since v2.0.0

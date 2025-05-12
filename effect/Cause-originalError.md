@@ -19,6 +19,6 @@ debugging or integration with external systems.
 declare const originalError: <E>(obj: E) => E
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1547)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1555)
 
 Since v2.0.0

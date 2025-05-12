@@ -2443,7 +2443,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
-    "signature": "declare const remove: { (key: string): (self: Headers) => Headers; (self: Headers, key: string): Headers; }",
+    "signature": "declare const remove: { (key: string | RegExp | ReadonlyArray<string | RegExp>): (self: Headers) => Headers; (self: Headers, key: string | RegExp | ReadonlyArray<string | RegExp>): Headers; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L199"
   },
   {
@@ -2459,7 +2459,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const redact: { (key: string | RegExp | ReadonlyArray<string | RegExp>): (self: Headers) => Record<string, string | Redacted.Redacted>; (self: Headers, key: string | RegExp | ReadonlyArray<string | RegExp>): Record<string, string | Redacted.Redacted>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L235"
   },
   {
     "_tag": "Constant",
@@ -2474,7 +2474,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentRedactedNames: FiberRef.FiberRef<ReadonlyArray<string | RegExp>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L279"
   },
   {
     "_tag": "Function",

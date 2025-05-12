@@ -39,6 +39,6 @@ assert.deepStrictEqual(Effect.runSync(result), { x: 2, y: 3, sum: 5 })
 declare const Do: Effect<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7814)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7822)
 
 Since v2.0.0

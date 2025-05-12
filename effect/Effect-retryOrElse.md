@@ -67,6 +67,6 @@ Effect.runPromise(repeated).then(console.log)
 declare const retryOrElse: { <A1, E, R1, A2, E2, R2>(policy: Schedule.Schedule<A1, NoInfer<E>, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R1 | R2 | R>; <A, E, R, A1, R1, A2, E2, R2>(self: Effect<A, E, R>, policy: Schedule.Schedule<A1, NoInfer<E>, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): Effect<A | A2, E2, R | R1 | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4462)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4468)
 
 Since v2.0.0

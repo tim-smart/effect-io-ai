@@ -27,6 +27,6 @@ type Mutable<T> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L239)
 
 Since v2.0.0

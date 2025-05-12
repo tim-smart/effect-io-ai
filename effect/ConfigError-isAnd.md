@@ -11,6 +11,6 @@ Returns `true` if the specified `ConfigError` is an `And`, `false` otherwise.
 declare const isAnd: (self: ConfigError) => self is And
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L198)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L200)
 
 Since v2.0.0

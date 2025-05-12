@@ -12,6 +12,6 @@ or more services.
 declare const scopedContext: <A, E, R>(effect: Effect.Effect<Context.Context<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L694)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L696)
 
 Since v2.0.0

@@ -19,6 +19,6 @@ performing any active work.
 declare const never: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3039)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3047)
 
 Since v2.0.0

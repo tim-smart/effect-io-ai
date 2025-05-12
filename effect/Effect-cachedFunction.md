@@ -61,6 +61,6 @@ Effect.runFork(program)
 declare const cachedFunction: <A, B, E, R>(f: (a: A) => Effect<B, E, R>, eq?: Equivalence<A>) => Effect<(a: A) => Effect<B, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L547)
 
 Since v2.0.0

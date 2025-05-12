@@ -532,7 +532,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: (\n    envelope: Request<Current>\n  ) => RpcGroup.ResultFrom<Current> | Rpc.Fork<RpcGroup.ResultFrom<Current>>\n}",
+    "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: (\n    envelope: Request<Current>\n  ) => Rpc.ResultFrom<Current, any> | Rpc.Fork<Rpc.ResultFrom<Current, any>>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L159"
   },
   {

@@ -61,9 +61,9 @@ types at once.
 **Signature**
 
 ```ts
-declare const catchTag: { <K extends E extends { _tag: string; } ? E["_tag"] : never, E, A1, E1, R1>(k: K, f: (e: NoInfer<Extract<E, { _tag: K; }>>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A1 | A, E1 | Exclude<E, { _tag: K; }>, R1 | R>; <A, E, R, K extends E extends { _tag: string; } ? E["_tag"] : never, R1, E1, A1>(self: Effect<A, E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Effect<A1, E1, R1>): Effect<A | A1, E1 | Exclude<E, { _tag: K; }>, R | R1>; }
+declare const catchTag: { <E, const K extends RA.NonEmptyReadonlyArray<E extends { _tag: string; } ? E["_tag"] : never>, A1, E1, R1>(...args: [...tags: K, f: (e: Extract<NoInfer<E>, { _tag: K[number]; }>) => Effect<A1, E1, R1>]): <A, R>(self: Effect<A, E, R>) => Effect<A | A1, Exclude<E, { _tag: K[number]; }> | E1, R | R1>; <A, E, R, const K extends RA.NonEmptyReadonlyArray<E extends { _tag: string; } ? E["_tag"] : never>, R1, E1, A1>(self: Effect<A, E, R>, ...args: [...tags: K, f: (e: Extract<NoInfer<E>, { _tag: K[number]; }>) => Effect<A1, E1, R1>]): Effect<A | A1, Exclude<E, { _tag: K[number]; }> | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3863)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3871)
 
 Since v2.0.0

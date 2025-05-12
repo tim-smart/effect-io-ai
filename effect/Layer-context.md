@@ -12,6 +12,6 @@ output.
 declare const context: <R>() => Layer<R, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L253)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L255)
 
 Since v2.0.0

@@ -13,6 +13,6 @@ export interface PrettyError extends Error {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1515)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1523)
 
 Since v3.2.0

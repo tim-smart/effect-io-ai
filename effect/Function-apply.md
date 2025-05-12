@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.apply
 
-Apply a function to a given value.
+Apply a function to given values.
 
 **Example**
 
@@ -18,7 +18,7 @@ assert.deepStrictEqual(pipe(length, apply("hello")), 5)
 **Signature**
 
 ```ts
-declare const apply: <A>(a: A) => <B>(self: (a: A) => B) => B
+declare const apply: <A extends ReadonlyArray<unknown>>(...a: A) => <B>(self: (...a: A) => B) => B
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L187)

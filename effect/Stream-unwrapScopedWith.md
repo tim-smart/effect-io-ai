@@ -13,6 +13,6 @@ will be the result of the returned effect, if successful.
 declare const unwrapScopedWith: <A, E2, R2, E, R>(f: (scope: Scope.Scope) => Effect.Effect<Stream<A, E2, R2>, E, R>) => Stream<A, E | E2, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5460)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5488)
 
 Since v3.11.0

@@ -11,6 +11,6 @@ Covariant helper.
 type Covariant<A> = (_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L291)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L299)
 
 Since v2.0.0

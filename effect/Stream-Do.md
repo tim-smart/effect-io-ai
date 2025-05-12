@@ -40,6 +40,6 @@ assert.deepStrictEqual(Effect.runSync(Stream.runCollect(result)), Chunk.of({ x: 
 declare const Do: Stream<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6211)
 
 Since v2.0.0

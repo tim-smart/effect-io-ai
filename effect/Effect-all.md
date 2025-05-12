@@ -226,6 +226,6 @@ Effect.runPromiseExit(program).then((result) => console.log("%o", result))
 declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L806)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L814)
 
 Since v2.0.0

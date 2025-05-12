@@ -22,6 +22,6 @@ performing additional logic.
 declare const succeedNone: Effect<Option.Option<never>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3158)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3166)
 
 Since v2.0.0

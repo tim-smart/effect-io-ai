@@ -8,7 +8,7 @@ Creates an empty `MutableList`.
 **Signature**
 
 ```ts
-declare const empty: <A>() => MutableList<A>
+declare const empty: <A = never>() => MutableList<A>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L100)

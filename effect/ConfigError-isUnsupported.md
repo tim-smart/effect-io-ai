@@ -12,6 +12,6 @@ otherwise.
 declare const isUnsupported: (self: ConfigError) => self is Unsupported
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L252)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.l
 declare const unfoldEffect: <S, A, E, R>(s: S, f: (s: S) => Effect.Effect<Option.Option<readonly [A, S]>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5435)
 
 Since v2.0.0

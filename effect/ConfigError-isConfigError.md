@@ -11,6 +11,6 @@ Returns `true` if the specified value is a `ConfigError`, `false` otherwise.
 declare const isConfigError: (u: unknown) => u is ConfigError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L190)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L192)
 
 Since v2.0.0

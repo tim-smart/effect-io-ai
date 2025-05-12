@@ -12,15 +12,15 @@ Artificial Intelligence (GenAI) Models requests and responses.
 
 ```ts
 type GenAITelemetryAttributes = Simplify<
-  & GenAI.AttributesWithPrefix<GenAI.BaseAttributes, "gen_ai">
-  & GenAI.AttributesWithPrefix<GenAI.OperationAttributes, "gen_ai.operation">
-  & GenAI.AttributesWithPrefix<GenAI.TokenAttributes, "gen_ai.token">
-  & GenAI.AttributesWithPrefix<GenAI.UsageAttributes, "gen_ai.usage">
-  & GenAI.AttributesWithPrefix<GenAI.RequestAttributes, "gen_ai.request">
-  & GenAI.AttributesWithPrefix<GenAI.ResponseAttributes, "gen_ai.response">
+  & AttributesWithPrefix<BaseAttributes, "gen_ai">
+  & AttributesWithPrefix<OperationAttributes, "gen_ai.operation">
+  & AttributesWithPrefix<TokenAttributes, "gen_ai.token">
+  & AttributesWithPrefix<UsageAttributes, "gen_ai.usage">
+  & AttributesWithPrefix<RequestAttributes, "gen_ai.request">
+  & AttributesWithPrefix<ResponseAttributes, "gen_ai.response">
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L20)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L22)
 
 Since v1.0.0

@@ -52,6 +52,6 @@ lazily.
 declare const dieMessage: (message: string) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2675)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2683)
 
 Since v2.0.0

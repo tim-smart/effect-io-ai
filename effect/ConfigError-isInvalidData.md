@@ -12,6 +12,6 @@ otherwise.
 declare const isInvalidData: (self: ConfigError) => self is InvalidData
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L215)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigError.ts#L217)
 
 Since v2.0.0

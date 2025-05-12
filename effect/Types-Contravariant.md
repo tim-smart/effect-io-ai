@@ -11,6 +11,6 @@ Contravariant helper.
 type Contravariant<A> = (_: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L311)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L319)
 
 Since v2.0.0

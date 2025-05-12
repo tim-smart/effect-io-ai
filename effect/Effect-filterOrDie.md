@@ -19,9 +19,9 @@ fatal program errors.
 **Signature**
 
 ```ts
-declare const filterOrDie: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>, orDieWith: (a: NoInfer<A>) => unknown): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A>(predicate: Predicate<NoInfer<A>>, orDieWith: (a: NoInfer<A>) => unknown): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, B extends A>(self: Effect<A, E, R>, refinement: Refinement<A, B>, orDieWith: (a: A) => unknown): Effect<B, E, R>; <A, E, R>(self: Effect<A, E, R>, predicate: Predicate<A>, orDieWith: (a: A) => unknown): Effect<A, E, R>; }
+declare const filterOrDie: { <A, B extends A = A>(predicate: Predicate<NoInfer<A>> | Refinement<NoInfer<A>, B>, orDieWith: (a: EqualsWith<A, B, A, Exclude<A, B>>) => unknown): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B extends A>(self: Effect<A, E, R>, predicate: Predicate<A> | Refinement<A, B>, orDieWith: (a: EqualsWith<A, B, A, Exclude<A, B>>) => unknown): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8323)
 
 Since v2.0.0

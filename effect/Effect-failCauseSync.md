@@ -11,6 +11,6 @@ Creates an `Effect` that fails with the specified `Cause`, evaluated lazily.
 declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2588)
 
 Since v2.0.0

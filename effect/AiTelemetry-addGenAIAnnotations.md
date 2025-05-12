@@ -13,6 +13,6 @@ Applies the specified GenAI telemetry attributes to the provided `Span`.
 declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L271)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTelemetry.ts#L267)
 
-Since v1.0.0, utilities
+Since v1.0.0, Utilities

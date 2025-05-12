@@ -11,6 +11,6 @@ Constructs a layer from the specified scoped effect.
 declare const scoped: { <I, S>(tag: Context.Tag<I, S>): <E, R>(effect: Effect.Effect<Types.NoInfer<S>, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(tag: Context.Tag<I, S>, effect: Effect.Effect<Types.NoInfer<S>, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L668)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L670)
 
 Since v2.0.0

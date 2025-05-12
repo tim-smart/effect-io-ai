@@ -40,6 +40,6 @@ console.log(Effect.runSync(someSuccessResult))
 declare const transposeMapOption: (<A, B, E = never, R = never>(f: (self: A) => Effect<B, E, R>) => (self: Option.Option<A>) => Effect<Option.Option<B>, E, R>) & (<A, B, E = never, R = never>(self: Option.Option<A>, f: (self: A) => Effect<B, E, R>) => Effect<Option.Option<B>, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13299)
 
 Since v3.14.0

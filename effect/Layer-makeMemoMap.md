@@ -11,6 +11,6 @@ Constructs a `MemoMap` that can be used to build additional layers.
 declare const makeMemoMap: Effect.Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1096)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1107)
 
 Since v2.0.0

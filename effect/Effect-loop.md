@@ -102,6 +102,6 @@ Effect.runPromise(result).then(console.log)
 declare const loop: { <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard?: false | undefined; }): Effect<Array<C>, E, R>; <A, B extends A, C, E, R>(initial: A, options: { readonly while: Refinement<A, B>; readonly step: (b: B) => A; readonly body: (b: B) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; <A, C, E, R>(initial: A, options: { readonly while: (a: A) => boolean; readonly step: (a: A) => A; readonly body: (a: A) => Effect<C, E, R>; readonly discard: true; }): Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10013)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10002)
 
 Since v2.0.0

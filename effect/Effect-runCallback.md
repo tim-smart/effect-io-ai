@@ -23,6 +23,6 @@ program.
 declare const runCallback: <A, E>(effect: Effect<A, E>, options?: Runtime.RunCallbackOptions<A, E> | undefined) => Runtime.Cancel<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12025)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12014)
 
 Since v2.0.0
