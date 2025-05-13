@@ -15,6 +15,6 @@ JSON string. If your tool call parameters are already parsed, use
 declare const withToolCallsJson: { (toolCalls: Iterable<{ readonly id: string; readonly name: string; readonly params: string; }>): (self: AiResponse) => Effect.Effect<AiResponse, AiError>; (self: AiResponse, toolCalls: Iterable<{ readonly id: string; readonly name: string; readonly params: string; }>): Effect.Effect<AiResponse, AiError>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L796)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L835)
 
 Since v1.0.0

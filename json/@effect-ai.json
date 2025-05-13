@@ -1828,7 +1828,7 @@
     "since": "1.0.0",
     "category": "Combination",
     "signature": "declare const withToolCallsJson: { (toolCalls: Iterable<{ readonly id: string; readonly name: string; readonly params: string; }>): (self: AiResponse) => Effect.Effect<AiResponse, AiError>; (self: AiResponse, toolCalls: Iterable<{ readonly id: string; readonly name: string; readonly params: string; }>): Effect.Effect<AiResponse, AiError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L796"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L835"
   },
   {
     "_tag": "Function",
