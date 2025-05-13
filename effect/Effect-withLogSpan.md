@@ -37,6 +37,6 @@ Effect.runFork(program)
 declare const withLogSpan: { (label: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, label: string): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10988)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11011)
 
 Since v2.0.0

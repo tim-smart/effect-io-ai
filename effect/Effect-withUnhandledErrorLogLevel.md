@@ -40,6 +40,6 @@ Effect.runFork(program.pipe(Effect.withUnhandledErrorLogLevel(Option.some(LogLev
 declare const withUnhandledErrorLogLevel: { (level: Option.Option<LogLevel.LogLevel>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, level: Option.Option<LogLevel.LogLevel>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11163)
 
 Since v2.0.0

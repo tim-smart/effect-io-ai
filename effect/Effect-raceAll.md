@@ -125,6 +125,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9202)
 
 Since v2.0.0

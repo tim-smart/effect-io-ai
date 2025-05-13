@@ -60,6 +60,6 @@ handlers.
 declare const matchCause: { <E, A2, A, A3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10615)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10638)
 
 Since v2.0.0

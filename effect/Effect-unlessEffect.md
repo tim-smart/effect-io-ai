@@ -16,6 +16,6 @@ Conditionally execute an effect based on the result of another effect.
 declare const unlessEffect: { <E2, R2>(condition: Effect<boolean, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Effect<A, E, R>, condition: Effect<boolean, E2, R2>): Effect<Option.Option<A>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8585)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8608)
 
 Since v2.0.0

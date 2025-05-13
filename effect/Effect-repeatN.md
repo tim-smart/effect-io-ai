@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const repeatN: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10185)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10208)
 
 Since v2.0.0

@@ -701,7 +701,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const run: <R, E, _>(handle: (client: Client) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R | SocketServer.SocketServer>",
+    "signature": "declare const run: <R, E, _>(this: unknown, handle: (client: Client) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R | SocketServer.SocketServer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Server.ts#L25"
   },
   {

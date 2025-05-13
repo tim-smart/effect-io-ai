@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const fromPrompt: (options: { readonly prompt: AiInput.Raw; readonly system?: string; }) => Effect.Effect<AiChat.Service, never, AiLanguageModel.AiLanguageModel>",
+    "signature": "declare const fromPrompt: (this: unknown, options: { readonly prompt: AiInput.Raw; readonly system?: string; }) => Effect.Effect<AiChat.Service, never, AiLanguageModel.AiLanguageModel>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L104"
   },
   {

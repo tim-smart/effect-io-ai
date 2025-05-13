@@ -17,6 +17,6 @@ and are commonly used for highlighting normal, non-error operations.
 declare const logInfo: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10910)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10933)
 
 Since v2.0.0

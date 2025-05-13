@@ -27,6 +27,6 @@ your application.
 declare const logAnnotations: Effect<HashMap.HashMap<string, unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11126)
 
 Since v2.0.0

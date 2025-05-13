@@ -59,6 +59,6 @@ Effect.runPromise(option2).then(console.log)
 declare const optionFromOptional: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13248)
 
 Since v2.0.0

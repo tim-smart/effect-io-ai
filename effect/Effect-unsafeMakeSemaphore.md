@@ -11,6 +11,6 @@ Unsafely creates a new Semaphore.
 declare const unsafeMakeSemaphore: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11756)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11779)
 
 Since v2.0.0

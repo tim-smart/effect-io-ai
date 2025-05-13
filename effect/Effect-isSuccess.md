@@ -20,6 +20,6 @@ the context of the original effect.
 declare const isSuccess: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10493)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10516)
 
 Since v2.0.0
