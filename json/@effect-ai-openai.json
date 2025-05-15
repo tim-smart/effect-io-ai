@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L247"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L245"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<OpenAiClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L257"
   },
   {
     "_tag": "TypeAlias",
