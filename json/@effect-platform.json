@@ -6154,9 +6154,24 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "constructors",
+    "category": "FormData",
     "signature": "declare const formData: (body: globalThis.FormData) => FormData",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L203"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpBody.ts",
+      "path": "src/HttpBody.ts"
+    },
+    "project": "@effect/platform",
+    "name": "formDataRecord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "FormData",
+    "signature": "declare const formDataRecord: (entries: FormDataInput) => FormData",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L221"
   },
   {
     "_tag": "Constant",
@@ -6171,7 +6186,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const stream: (body: Stream_.Stream<globalThis.Uint8Array, unknown>, contentType?: string, contentLength?: number, etag?: string) => Stream",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L220"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -6186,7 +6201,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const file: (path: string, options?: FileSystem.StreamOptions & { readonly contentType?: string; }) => Effect.Effect<Stream, PlatformError.PlatformError, FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L231"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L249"
   },
   {
     "_tag": "Constant",
@@ -6201,7 +6216,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fileInfo: (path: string, info: FileSystem.File.Info, options?: FileSystem.StreamOptions & { readonly contentType?: string; }) => Effect.Effect<Stream, PlatformError.PlatformError, FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L240"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L258"
   },
   {
     "_tag": "Constant",
@@ -6216,7 +6231,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fileWeb: (file: HttpBody.FileLike) => Stream",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L268"
   },
   {
     "_tag": "Function",
@@ -6321,7 +6336,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Stream extends HttpBody.Proto {\n  readonly _tag: \"Stream\"\n  readonly stream: Stream_.Stream<globalThis.Uint8Array, unknown>\n  readonly contentType: string\n  readonly contentLength?: number | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L209"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L227"
   },
   {
     "_tag": "TypeAlias",
@@ -6382,6 +6397,36 @@
     "category": "errors",
     "signature": "type ErrorReason = {\n  readonly _tag: \"JsonError\"\n  readonly error: unknown\n} | {\n  readonly _tag: \"SchemaError\"\n  readonly error: ParseResult.ParseError\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L99"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "HttpBody.ts",
+      "path": "src/HttpBody.ts"
+    },
+    "project": "@effect/platform",
+    "name": "FormDataInput",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "FormData",
+    "signature": "type FormDataInput = Record<string, FormDataCoercible | ReadonlyArray<FormDataCoercible>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L209"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "HttpBody.ts",
+      "path": "src/HttpBody.ts"
+    },
+    "project": "@effect/platform",
+    "name": "FormDataCoercible",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "FormData",
+    "signature": "type FormDataCoercible = string | number | boolean | File | Blob | null | undefined",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L215"
   },
   {
     "_tag": "Interface",
@@ -7743,13 +7788,28 @@
       "path": "src/HttpClientRequest.ts"
     },
     "project": "@effect/platform",
+    "name": "bodyFormDataRecord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const bodyFormDataRecord: { (entries: Body.FormDataInput): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, entries: Body.FormDataInput): HttpClientRequest; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L366"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClientRequest.ts",
+      "path": "src/HttpClientRequest.ts"
+    },
+    "project": "@effect/platform",
     "name": "bodyStream",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyStream: { (body: Stream.Stream<Uint8Array, unknown>, options?: { readonly contentType?: string | undefined; readonly contentLength?: number | undefined; } | undefined): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: Stream.Stream<Uint8Array, unknown>, options?: { readonly contentType?: string | undefined; readonly contentLength?: number | undefined; } | undefined): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L366"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L375"
   },
   {
     "_tag": "Constant",
@@ -7764,7 +7824,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFile: { (path: string, options?: FileSystem.StreamOptions & { readonly contentType?: string; }): (self: HttpClientRequest) => Effect.Effect<HttpClientRequest, PlatformError.PlatformError, FileSystem.FileSystem>; (self: HttpClientRequest, path: string, options?: FileSystem.StreamOptions & { readonly contentType?: string; }): Effect.Effect<HttpClientRequest, PlatformError.PlatformError, FileSystem.FileSystem>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L382"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L391"
   },
   {
     "_tag": "Constant",
@@ -7779,7 +7839,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFileWeb: { (file: Body.HttpBody.FileLike): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, file: Body.HttpBody.FileLike): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L398"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L407"
   },
   {
     "_tag": "Interface",

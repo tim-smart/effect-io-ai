@@ -12,6 +12,6 @@ that it is not responsible for managing.
 declare class EntityNotManagedByRunner
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L55)
 
 Since v1.0.0

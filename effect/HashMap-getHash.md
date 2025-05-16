@@ -8,7 +8,7 @@ Lookup the value for the specified key in the `HashMap` using a custom hash.
 **Signature**
 
 ```ts
-declare const getHash: { <K1>(key: K1, hash: number): <K, V>(self: HashMap<K, V>) => Option<V>; <K, V, K1>(self: HashMap<K, V>, key: K1, hash: number): Option<V>; }
+declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: HashMap<K, V>) => Option<V>; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1, hash: number): Option<V>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L157)

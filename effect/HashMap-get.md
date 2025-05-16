@@ -9,7 +9,7 @@ internal hashing function.
 **Signature**
 
 ```ts
-declare const get: { <K1>(key: K1): <K, V>(self: HashMap<K, V>) => Option<V>; <K, V, K1>(self: HashMap<K, V>, key: K1): Option<V>; }
+declare const get: { <K1 extends K, K>(key: K1): <V>(self: HashMap<K, V>) => Option<V>; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): Option<V>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L146)

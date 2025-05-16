@@ -12,6 +12,6 @@ deserialized by an entity.
 declare class MalformedMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L79)
 
 Since v1.0.0
