@@ -11,6 +11,6 @@ Updates the path of the URL.
 declare const setPathname: { (pathname: string): (url: URL) => URL; (url: URL, pathname: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L177)
 
 Since v1.0.0

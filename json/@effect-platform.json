@@ -14354,7 +14354,7 @@
     "since": "1.0.0",
     "category": "Modifiers",
     "signature": "declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L92"
   },
   {
     "_tag": "Constant",
@@ -14370,7 +14370,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHash: { (hash: string): (url: URL) => URL; (url: URL, hash: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L117"
   },
   {
     "_tag": "Constant",
@@ -14386,7 +14386,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHost: { (host: string): (url: URL) => URL; (url: URL, host: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L128"
   },
   {
     "_tag": "Constant",
@@ -14402,7 +14402,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHostname: { (hostname: string): (url: URL) => URL; (url: URL, hostname: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L139"
   },
   {
     "_tag": "Constant",
@@ -14418,7 +14418,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setHref: { (href: string): (url: URL) => URL; (url: URL, href: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L150"
   },
   {
     "_tag": "Constant",
@@ -14433,8 +14433,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Setters",
-    "signature": "declare const setPassword: { (password: string): (url: URL) => URL; (url: URL, password: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L160"
+    "signature": "declare const setPassword: { (password: string | Redacted.Redacted): (url: URL) => URL; (url: URL, password: string | Redacted.Redacted): URL; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L161"
   },
   {
     "_tag": "Constant",
@@ -14450,7 +14450,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setPathname: { (pathname: string): (url: URL) => URL; (url: URL, pathname: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L171"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L177"
   },
   {
     "_tag": "Constant",
@@ -14466,7 +14466,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setPort: { (port: string | number): (url: URL) => URL; (url: URL, port: string | number): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L188"
   },
   {
     "_tag": "Constant",
@@ -14482,7 +14482,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setProtocol: { (protocol: string): (url: URL) => URL; (url: URL, protocol: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L199"
   },
   {
     "_tag": "Constant",
@@ -14498,7 +14498,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setSearch: { (search: string): (url: URL) => URL; (url: URL, search: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L210"
   },
   {
     "_tag": "Constant",
@@ -14514,7 +14514,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setUsername: { (username: string): (url: URL) => URL; (url: URL, username: string): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L221"
   },
   {
     "_tag": "Constant",
@@ -14530,7 +14530,7 @@
     "since": "1.0.0",
     "category": "Setters",
     "signature": "declare const setUrlParams: { (urlParams: UrlParams.UrlParams): (url: URL) => URL; (url: URL, urlParams: UrlParams.UrlParams): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L255"
   },
   {
     "_tag": "Constant",
@@ -14546,7 +14546,7 @@
     "since": "1.0.0",
     "category": "Modifiers",
     "signature": "declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L317"
   },
   {
     "_tag": "Function",
@@ -14562,7 +14562,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromString: (url: string, base?: string | URL | undefined) => Either.Either<URL, Cause.IllegalArgumentException>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L60"
   },
   {
     "_tag": "Function",
@@ -14578,7 +14578,7 @@
     "since": "1.0.0",
     "category": "Getters",
     "signature": "declare const urlParams: (url: URL) => UrlParams.UrlParams",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L283"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L289"
   },
   {
     "_tag": "Constant",

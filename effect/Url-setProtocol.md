@@ -11,6 +11,6 @@ Updates the protocol (e.g., `http`, `https`).
 declare const setProtocol: { (protocol: string): (url: URL) => URL; (url: URL, protocol: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Url.ts#L199)
 
 Since v1.0.0
