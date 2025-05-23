@@ -6471,7 +6471,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -6486,7 +6486,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const HttpClient: Context.Tag<HttpClient, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -6501,7 +6501,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const execute: (request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -6516,7 +6516,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const get: (url: string | URL, options?: ClientRequest.Options.NoBody | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -6531,7 +6531,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const head: (url: string | URL, options?: ClientRequest.Options.NoBody | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L131"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -6546,7 +6546,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const post: (url: string | URL, options?: ClientRequest.Options.NoUrl | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L145"
   },
   {
     "_tag": "Constant",
@@ -6561,7 +6561,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const patch: (url: string | URL, options?: ClientRequest.Options.NoUrl | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L157"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L158"
   },
   {
     "_tag": "Constant",
@@ -6576,7 +6576,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const put: (url: string | URL, options?: ClientRequest.Options.NoUrl | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -6591,7 +6591,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const del: (url: string | URL, options?: ClientRequest.Options.NoUrl | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L183"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -6606,7 +6606,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const options: (url: string | URL, options?: ClientRequest.Options.NoUrl | undefined) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError, HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L197"
   },
   {
     "_tag": "Constant",
@@ -6621,7 +6621,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "declare const catchAll: { <E, E2, R2>(f: (e: E) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E2, R2 | R>; <E, R, A2, E2, R2>(self: HttpClient.With<E, R>, f: (e: E) => Effect.Effect<A2, E2, R2>): HttpClient.With<E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L209"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L210"
   },
   {
     "_tag": "Constant",
@@ -6636,7 +6636,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "declare const catchTag: { <K extends E extends { _tag: string; } ? E[\"_tag\"] : never, E, E1, R1>(tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E1 | Exclude<E, { _tag: K; }>, R1 | R>; <R, E, K extends E extends { _tag: string; } ? E[\"_tag\"] : never, R1, E1>(self: HttpClient.With<E, R>, tag: K, f: (e: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E1 | Exclude<E, { _tag: K; }>, R1 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L223"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L224"
   },
   {
     "_tag": "Constant",
@@ -6651,7 +6651,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "declare const catchTags: { <E, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(cases: Cases): <R>(self: HttpClient.With<E, R>) => HttpClient.With<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; <E extends { _tag: string; }, R, Cases extends { [K in Extract<E, { _tag: string; }>[\"_tag\"]]+?: (error: Extract<E, { _tag: K; }>) => Effect.Effect<ClientResponse.HttpClientResponse, any, any>; } & (unknown extends E ? {} : { [K in Exclude<keyof Cases, Extract<E, { _tag: string; }>[\"_tag\"]>]: never; })>(self: HttpClient.With<E, R>, cases: Cases): HttpClient.With<Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, infer E, any> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Effect.Effect<any, any, infer R> ? R : never; }[keyof Cases]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L239"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L240"
   },
   {
     "_tag": "Constant",
@@ -6667,7 +6667,7 @@
     "since": "1.0.0",
     "category": "filters",
     "signature": "declare const filterOrElse: { <E2, R2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R2 | R>; <E, R, E2, R2>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orElse: (response: ClientResponse.HttpClientResponse) => Effect.Effect<ClientResponse.HttpClientResponse, E2, R2>): HttpClient.With<E2 | E, R2 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L295"
   },
   {
     "_tag": "Constant",
@@ -6683,7 +6683,7 @@
     "since": "1.0.0",
     "category": "filters",
     "signature": "declare const filterOrFail: { <E2>(predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R>; <E, R, E2>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientResponse.HttpClientResponse>, orFailWith: (response: ClientResponse.HttpClientResponse) => E2): HttpClient.With<E2 | E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L312"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -6699,7 +6699,7 @@
     "since": "1.0.0",
     "category": "filters",
     "signature": "declare const filterStatus: { (f: (status: number) => boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>; <E, R>(self: HttpClient.With<E, R>, f: (status: number) => boolean): HttpClient.With<E | Error.ResponseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L330"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L331"
   },
   {
     "_tag": "Constant",
@@ -6715,7 +6715,7 @@
     "since": "1.0.0",
     "category": "filters",
     "signature": "declare const filterStatusOk: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | Error.ResponseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L341"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L342"
   },
   {
     "_tag": "Constant",
@@ -6730,7 +6730,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWith: <E2, R2, E, R>(postprocess: (request: Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>, preprocess: HttpClient.Preprocess<E2, R2>) => HttpClient.With<E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L348"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L349"
   },
   {
     "_tag": "Constant",
@@ -6745,7 +6745,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (f: (request: ClientRequest.HttpClientRequest, url: URL, signal: AbortSignal, fiber: RuntimeFiber<ClientResponse.HttpClientResponse, Error.HttpClientError>) => Effect.Effect<ClientResponse.HttpClientResponse, Error.HttpClientError>) => HttpClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L359"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L360"
   },
   {
     "_tag": "Constant",
@@ -6760,7 +6760,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const transform: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient.With<E, R>) => HttpClient.With<E | E1, R | R1>; <E, R, E1, R1>(self: HttpClient.With<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>, request: ClientRequest.HttpClientRequest) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E | E1, R | R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L373"
   },
   {
     "_tag": "Constant",
@@ -6775,7 +6775,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const transformResponse: { <E, R, E1, R1>(f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): (self: HttpClient.With<E, R>) => HttpClient.With<E1, R1>; <E, R, E1, R1>(self: HttpClient.With<E, R>, f: (effect: Effect.Effect<ClientResponse.HttpClientResponse, E, R>) => Effect.Effect<ClientResponse.HttpClientResponse, E1, R1>): HttpClient.With<E1, R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L393"
   },
   {
     "_tag": "Constant",
@@ -6791,7 +6791,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const mapRequest: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L412"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -6807,7 +6807,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const mapRequestEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L428"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L429"
   },
   {
     "_tag": "Constant",
@@ -6823,7 +6823,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const mapRequestInput: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L444"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L445"
   },
   {
     "_tag": "Constant",
@@ -6839,7 +6839,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const mapRequestInputEffect: { <E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<ClientRequest.HttpClientRequest, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L461"
   },
   {
     "_tag": "Constant",
@@ -6855,7 +6855,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "declare const retry: { <E, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(options: O): <R>(self: HttpClient.With<E, R>) => Retry.Return<R, E, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(self: HttpClient.With<E, R>, options: O): Retry.Return<R, E, O>; <E, R, B, R1>(self: HttpClient.With<E, R>, policy: Schedule.Schedule<B, E, R1>): HttpClient.With<E, R1 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L498"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L499"
   },
   {
     "_tag": "Constant",
@@ -6871,7 +6871,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "declare const retryTransient: { <B, E, R1 = never>(options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never>(self: HttpClient.With<E, R>, options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): HttpClient.With<E, R1 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L524"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L525"
   },
   {
     "_tag": "Constant",
@@ -6887,7 +6887,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tap: { <_, E2, R2>(f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L548"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L549"
   },
   {
     "_tag": "Constant",
@@ -6903,7 +6903,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tapError: { <_, E, E2, R2>(f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L564"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L565"
   },
   {
     "_tag": "Constant",
@@ -6919,7 +6919,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tapRequest: { <_, E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L580"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L581"
   },
   {
     "_tag": "Constant",
@@ -6935,7 +6935,7 @@
     "since": "1.0.0",
     "category": "cookies",
     "signature": "declare const withCookiesRef: { (ref: Ref<Cookies>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, ref: Ref<Cookies>): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L596"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L597"
   },
   {
     "_tag": "Constant",
@@ -6951,7 +6951,7 @@
     "since": "1.0.0",
     "category": "redirects",
     "signature": "declare const followRedirects: { (maxRedirects?: number | undefined): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, maxRedirects?: number | undefined): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L607"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L608"
   },
   {
     "_tag": "Constant",
@@ -6966,7 +6966,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const currentTracerDisabledWhen: FiberRef.FiberRef<Predicate.Predicate<ClientRequest.HttpClientRequest>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L616"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L617"
   },
   {
     "_tag": "Constant",
@@ -6982,7 +6982,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerDisabledWhen: { (predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L625"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L626"
   },
   {
     "_tag": "Constant",
@@ -6997,7 +6997,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const currentTracerPropagation: FiberRef.FiberRef<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L639"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L640"
   },
   {
     "_tag": "Constant",
@@ -7013,7 +7013,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerPropagation: { (enabled: boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, enabled: boolean): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L648"
   },
   {
     "_tag": "Constant",
@@ -7028,7 +7028,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const layerMergedContext: <E, R>(effect: Effect.Effect<HttpClient, E, R>) => Layer<HttpClient, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L655"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L656"
   },
   {
     "_tag": "Constant",
@@ -7043,7 +7043,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const SpanNameGenerator: Context.Reference<SpanNameGenerator, (request: ClientRequest.HttpClientRequest) => string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L671"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L672"
   },
   {
     "_tag": "Constant",
@@ -7059,7 +7059,23 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withSpanNameGenerator: { (f: (request: ClientRequest.HttpClientRequest) => string): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (request: ClientRequest.HttpClientRequest) => string): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L699"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L700"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClient.ts",
+      "path": "src/HttpClient.ts"
+    },
+    "project": "@effect/platform",
+    "name": "withScope",
+    "description": "Ties the lifetime of the `HttpClientRequest` to a `Scope`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Scope",
+    "signature": "declare const withScope: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R | Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L713"
   },
   {
     "_tag": "Interface",
@@ -7074,7 +7090,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface HttpClient extends HttpClient.With<Error.HttpClientError> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L38"
   },
   {
     "_tag": "Interface",
@@ -7089,7 +7105,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "export interface SpanNameGenerator {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L663"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L664"
   },
   {
     "_tag": "TypeAlias",
@@ -7104,7 +7120,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L32"
   },
   {
     "_tag": "Interface",
@@ -7119,7 +7135,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface With<E, R = never> extends Pipeable, Inspectable {\n    readonly [TypeId]: TypeId\n    readonly execute: (\n      request: ClientRequest.HttpClientRequest\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n\n    readonly get: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoBody\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly head: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoBody\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly post: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoUrl\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly patch: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoUrl\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly put: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoUrl\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly del: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoUrl\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n    readonly options: (\n      url: string | URL,\n      options?: ClientRequest.Options.NoUrl\n    ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L48"
   },
   {
     "_tag": "TypeAlias",
@@ -7134,7 +7150,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Preprocess<E, R> = (\n    request: ClientRequest.HttpClientRequest\n  ) => Effect.Effect<ClientRequest.HttpClientRequest, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L88"
   },
   {
     "_tag": "TypeAlias",
@@ -7149,7 +7165,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Postprocess<E, R> = (\n    request: Effect.Effect<ClientRequest.HttpClientRequest, E, R>\n  ) => Effect.Effect<ClientResponse.HttpClientResponse, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L95"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L96"
   },
   {
     "_tag": "TypeAlias",
@@ -7164,7 +7180,7 @@
     "since": "1.0.0",
     "category": "error handling",
     "signature": "type HttpClient.With<(O extends { schedule: Schedule.Schedule<infer _O, infer _I, infer _R>; } ? E : O extends { until: Predicate.Refinement<E, infer E2>; } ? E2 : E) | (O extends { while: (...args: Array<any>) => Effect.Effect<infer _A, infer E, infer _R>; } ? E : never) | (O extends { until: (...args: Array<any>) => Effect.Effect<infer _A, infer E, infer _R>; } ? E : never), R | (O extends { schedule: Schedule.Schedule<infer _O, infer _I, infer R>; } ? R : never) | (O extends { while: (...args: Array<any>) => Effect.Effect<infer _A, infer _E, infer R>; } ? R : never) | (O extends { until: (...args: Array<any>) => Effect.Effect<infer _A, infer _E, infer R>; } ? R : never)> = HttpClient.With<\n    | (O extends { schedule: Schedule.Schedule<infer _O, infer _I, infer _R> } ? E\n      : O extends { until: Predicate.Refinement<E, infer E2> } ? E2\n      : E)\n    | (O extends { while: (...args: Array<any>) => Effect.Effect<infer _A, infer E, infer _R> } ? E : never)\n    | (O extends { until: (...args: Array<any>) => Effect.Effect<infer _A, infer E, infer _R> } ? E : never),\n    | R\n    | (O extends { schedule: Schedule.Schedule<infer _O, infer _I, infer R> } ? R : never)\n    | (O extends { while: (...args: Array<any>) => Effect.Effect<infer _A, infer _E, infer R> } ? R : never)\n    | (O extends { until: (...args: Array<any>) => Effect.Effect<infer _A, infer _E, infer R> } ? R : never)\n  > extends infer Z ? Z : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L479"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L480"
   },
   {
     "_tag": "Class",
@@ -7668,13 +7684,28 @@
       "path": "src/HttpClientRequest.ts"
     },
     "project": "@effect/platform",
+    "name": "toUrl",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const toUrl: (self: HttpClientRequest) => Option.Option<URL>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L291"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpClientRequest.ts",
+      "path": "src/HttpClientRequest.ts"
+    },
+    "project": "@effect/platform",
     "name": "setBody",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setBody: { (body: Body.HttpBody): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: Body.HttpBody): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L291"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L297"
   },
   {
     "_tag": "Constant",
@@ -7689,7 +7720,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyUint8Array: { (body: Uint8Array, contentType?: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: Uint8Array, contentType?: string): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L306"
   },
   {
     "_tag": "Constant",
@@ -7704,7 +7735,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyText: { (body: string, contentType?: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: string, contentType?: string): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L309"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L315"
   },
   {
     "_tag": "Constant",
@@ -7719,7 +7750,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyJson: { (body: unknown): (self: HttpClientRequest) => Effect.Effect<HttpClientRequest, Body.HttpBodyError>; (self: HttpClientRequest, body: unknown): Effect.Effect<HttpClientRequest, Body.HttpBodyError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L324"
   },
   {
     "_tag": "Constant",
@@ -7734,7 +7765,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyUnsafeJson: { (body: unknown): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: unknown): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L327"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L333"
   },
   {
     "_tag": "Constant",
@@ -7749,7 +7780,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const schemaBodyJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => { (body: A): (self: HttpClientRequest) => Effect.Effect<HttpClientRequest, Body.HttpBodyError, R>; (self: HttpClientRequest, body: A): Effect.Effect<HttpClientRequest, Body.HttpBodyError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L336"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L342"
   },
   {
     "_tag": "Constant",
@@ -7764,7 +7795,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyUrlParams: { (input: UrlParams.Input): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, input: UrlParams.Input): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L348"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L354"
   },
   {
     "_tag": "Constant",
@@ -7779,7 +7810,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFormData: { (body: FormData): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: FormData): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L357"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L363"
   },
   {
     "_tag": "Constant",
@@ -7794,7 +7825,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFormDataRecord: { (entries: Body.FormDataInput): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, entries: Body.FormDataInput): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L366"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L372"
   },
   {
     "_tag": "Constant",
@@ -7809,7 +7840,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyStream: { (body: Stream.Stream<Uint8Array, unknown>, options?: { readonly contentType?: string | undefined; readonly contentLength?: number | undefined; } | undefined): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: Stream.Stream<Uint8Array, unknown>, options?: { readonly contentType?: string | undefined; readonly contentLength?: number | undefined; } | undefined): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L375"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -7824,7 +7855,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFile: { (path: string, options?: FileSystem.StreamOptions & { readonly contentType?: string; }): (self: HttpClientRequest) => Effect.Effect<HttpClientRequest, PlatformError.PlatformError, FileSystem.FileSystem>; (self: HttpClientRequest, path: string, options?: FileSystem.StreamOptions & { readonly contentType?: string; }): Effect.Effect<HttpClientRequest, PlatformError.PlatformError, FileSystem.FileSystem>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L391"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L397"
   },
   {
     "_tag": "Constant",
@@ -7839,7 +7870,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const bodyFileWeb: { (file: Body.HttpBody.FileLike): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, file: Body.HttpBody.FileLike): HttpClientRequest; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L407"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientRequest.ts#L413"
   },
   {
     "_tag": "Interface",

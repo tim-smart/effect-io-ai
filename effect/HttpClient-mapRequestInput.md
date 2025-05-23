@@ -11,6 +11,6 @@ Prepends a transformation of the request object before sending it.
 declare const mapRequestInput: { (f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => ClientRequest.HttpClientRequest): HttpClient.With<E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L444)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L445)
 
 Since v1.0.0
