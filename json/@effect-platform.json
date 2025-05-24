@@ -3105,7 +3105,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L244"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L248"
   },
   {
     "_tag": "Function",
@@ -3120,7 +3120,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"]>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupId: GroupName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<HttpApiGroup.WithName<Groups, GroupName>>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L275"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L279"
   },
   {
     "_tag": "Function",
@@ -3135,7 +3135,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const endpoint: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, const EndpointName extends HttpApiEndpoint.Name<HttpApiGroup.EndpointsWithName<Groups, GroupName>>>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: GroupName, endpointName: EndpointName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Method<HttpApiEndpoint.WithName<HttpApiGroup.Endpoints<HttpApiGroup.WithName<Groups, GroupName>>, EndpointName>, HttpApiGroup.Error<HttpApiGroup.WithName<Groups, GroupName>>, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.Context<HttpApiGroup.WithName<Groups, GroupName>> | HttpApiEndpoint.ContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName> | HttpApiEndpoint.ErrorContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L319"
   },
   {
     "_tag": "TypeAlias",
@@ -4924,7 +4924,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; readonly source?: ScalarScriptSource; readonly scalar?: ScalarConfig; }) => Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L127"
   },
   {
     "_tag": "TypeAlias",
@@ -4939,7 +4939,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type ScalarThemeId = | \"alternate\"\n  | \"default\"\n  | \"moon\"\n  | \"purple\"\n  | \"solarized\"\n  | \"bluePlanet\"\n  | \"deepSpace\"\n  | \"saturn\"\n  | \"kepler\"\n  | \"mars\"\n  | \"none\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L17"
   },
   {
     "_tag": "TypeAlias",
@@ -4954,7 +4954,7 @@
     "since": "1.0.0",
     "category": "model\n\ncdn: `https://cdn.jsdelivr.net/npm/@scalar/api-reference@${source.version}/dist/browser/standalone.min.js`",
     "signature": "type ScalarScriptSource = | string\n  | { type: \"default\" }\n  | {\n    type: \"cdn\"\n    version?: \"latest\" | (string & {})\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -4969,7 +4969,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type ScalarConfig = {\n  /** A string to use one of the color presets */\n  theme?: ScalarThemeId\n  /** The layout to use for the references */\n  layout?: \"modern\" | \"classic\"\n  /** URL to a request proxy for the API client */\n  proxy?: string\n  /** Whether the spec input should show */\n  isEditable?: boolean\n  /** Whether to show the sidebar */\n  showSidebar?: boolean\n  /**\n   * Whether to show models in the sidebar, search, and content.\n   *\n   * Default: `false`\n   */\n  hideModels?: boolean\n  /**\n   * Whether to show the “Download OpenAPI Document” button\n   *\n   * Default: `false`\n   */\n  hideDownloadButton?: boolean\n  /**\n   * Whether to show the “Test Request” button\n   *\n   * Default: `false`\n   */\n  hideTestRequestButton?: boolean\n  /**\n   * Whether to show the sidebar search bar\n   *\n   * Default: `false`\n   */\n  hideSearch?: boolean\n  /** Whether dark mode is on or off initially (light mode) */\n  darkMode?: boolean\n  /** forceDarkModeState makes it always this state no matter what*/\n  forceDarkModeState?: \"dark\" | \"light\"\n  /** Whether to show the dark mode toggle */\n  hideDarkModeToggle?: boolean\n  /**\n   * Path to a favicon image\n   *\n   * Default: `undefined`\n   * Example: '/favicon.svg'\n   */\n  favicon?: string\n  /** Custom CSS to be added to the page */\n  customCss?: string\n  /**\n   * The baseServerURL is used when the spec servers are relative paths and we are using SSR.\n   * On the client we can grab the window.location.origin but on the server we need\n   * to use this prop.\n   *\n   * Default: `undefined`\n   * Example: 'http://localhost:3000'\n   */\n  baseServerURL?: string\n  /**\n   * We’re using Inter and JetBrains Mono as the default fonts. If you want to use your own fonts, set this to false.\n   *\n   * Default: `true`\n   */\n  withDefaultFonts?: boolean\n  /**\n   * By default we only open the relevant tag based on the url, however if you want all the tags open by default then set this configuration option :)\n   *\n   * Default: `false`\n   */\n  defaultOpenAllTags?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -5821,12 +5821,13 @@
     },
     "project": "@effect/platform",
     "name": "layer",
+    "description": "Exported layer mounting Swagger/OpenAPI documentation UI.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; }) => Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSwagger.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSwagger.ts#L21"
   },
   {
     "_tag": "Constant",
