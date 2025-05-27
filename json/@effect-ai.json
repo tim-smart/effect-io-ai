@@ -2812,6 +2812,198 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L104"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiChat",
+    "description": "Re-exports all named exports from the \"./AiChat.js\" module as `AiChat`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiChat from \"./AiChat.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiEmbeddingModel",
+    "description": "Re-exports all named exports from the \"./AiEmbeddingModel.js\" module as `AiEmbeddingModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiEmbeddingModel from \"./AiEmbeddingModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiError",
+    "description": "Re-exports all named exports from the \"./AiError.js\" module as `AiError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiError from \"./AiError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiInput",
+    "description": "Re-exports all named exports from the \"./AiInput.js\" module as `AiInput`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiInput from \"./AiInput.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiLanguageModel",
+    "description": "Re-exports all named exports from the \"./AiLanguageModel.js\" module as `AiLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiLanguageModel from \"./AiLanguageModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiModel",
+    "description": "Re-exports all named exports from the \"./AiModel.js\" module as `AiModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiModel from \"./AiModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiPlan",
+    "description": "Re-exports all named exports from the \"./AiPlan.js\" module as `AiPlan`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiPlan from \"./AiPlan.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiResponse",
+    "description": "Re-exports all named exports from the \"./AiResponse.js\" module as `AiResponse`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiResponse from \"./AiResponse.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiTelemetry",
+    "description": "Re-exports all named exports from the \"./AiTelemetry.js\" module as `AiTelemetry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiTelemetry from \"./AiTelemetry.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiTool",
+    "description": "Re-exports all named exports from the \"./AiTool.js\" module as `AiTool`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiTool from \"./AiTool.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "AiToolkit",
+    "description": "Re-exports all named exports from the \"./AiToolkit.js\" module as `AiToolkit`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AiToolkit from \"./AiToolkit.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Tokenizer",
+    "description": "Re-exports all named exports from the \"./Tokenizer.js\" module as `Tokenizer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Tokenizer from \"./Tokenizer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L59"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Tokenizer.ts",

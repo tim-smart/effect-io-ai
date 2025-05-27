@@ -118,5 +118,21 @@
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-d1/src/D1Client.ts#L31"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-d1",
+    "name": "D1Client",
+    "description": "Re-exports all named exports from the \"./D1Client.js\" module as `D1Client`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as D1Client from \"./D1Client.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-d1/src/index.ts#L4"
   }
 ]

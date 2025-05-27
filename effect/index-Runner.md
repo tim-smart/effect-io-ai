@@ -1,0 +1,16 @@
+Package: `@effect/cluster`<br />
+Module: `index`<br />
+
+## index.Runner
+
+Re-exports all named exports from the "./Runner.js" module as `Runner`.
+
+**Signature**
+
+```ts
+export * as Runner from "./Runner.js"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84)
+
+Since v1.0.0

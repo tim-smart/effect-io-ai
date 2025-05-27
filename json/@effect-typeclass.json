@@ -450,6 +450,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L12"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "Covariant.ts",
+      "path": "src/Covariant.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "let",
+    "description": "**Example**\n\n```ts\nimport * as covariant from \"@effect/typeclass/Covariant\"\nimport type { HKT } from \"effect\"\nimport { dual, pipe } from \"effect/Function\"\n\ninterface MyData<A> {\n  readonly value: A\n}\n\ninterface MyDataTypeLambda extends HKT.TypeLambda {\n  readonly type: MyData<this[\"Target\"]>\n}\n\nconst map: covariant.Covariant<MyDataTypeLambda>[\"map\"] = dual(\n  2,\n  <A, B>(self: MyData<A>, f: (a: A) => B): MyData<B> => ({ value: f(self.value) })\n)\n\nconst Covariant: covariant.Covariant<MyDataTypeLambda> = { imap: covariant.imap<MyDataTypeLambda>(map), map }\n\nconst notation = {\n  Do: { value: {} } as MyData<{}>,\n  let: covariant.let(Covariant)\n}\n\nconsole.log(pipe(notation.Do, notation.let(\"foo\", () => \"bar\")))\n// { value: { foo: \"bar\" } }\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": "do notation",
+    "signature": "declare const let: <F extends TypeLambda>(F: Covariant<F>) => { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: A) => B): <R, O, E>(self: Kind<F, R, O, E, A>) => Kind<F, R, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; <R, O, E, A extends object, N extends string, B>(self: Kind<F, R, O, E, A>, name: Exclude<N, keyof A>, f: (a: A) => B): Kind<F, R, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Covariant.ts#L134"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Array.ts",
@@ -3078,6 +3094,390 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Foldable.ts#L15"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Alternative",
+    "description": "Re-exports all named exports from the \"./Alternative.js\" module as `Alternative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Alternative from \"./Alternative.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Applicative",
+    "description": "Re-exports all named exports from the \"./Applicative.js\" module as `Applicative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Applicative from \"./Applicative.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Bicovariant",
+    "description": "Re-exports all named exports from the \"./Bicovariant.js\" module as `Bicovariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Bicovariant from \"./Bicovariant.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Bounded",
+    "description": "Re-exports all named exports from the \"./Bounded.js\" module as `Bounded`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Bounded from \"./Bounded.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Chainable",
+    "description": "Re-exports all named exports from the \"./Chainable.js\" module as `Chainable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Chainable from \"./Chainable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Contravariant",
+    "description": "Re-exports all named exports from the \"./Contravariant.js\" module as `Contravariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Contravariant from \"./Contravariant.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Coproduct",
+    "description": "Re-exports all named exports from the \"./Coproduct.js\" module as `Coproduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Coproduct from \"./Coproduct.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Covariant",
+    "description": "Re-exports all named exports from the \"./Covariant.js\" module as `Covariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Covariant from \"./Covariant.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Filterable",
+    "description": "Re-exports all named exports from the \"./Filterable.js\" module as `Filterable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Filterable from \"./Filterable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L46"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "FlatMap",
+    "description": "Re-exports all named exports from the \"./FlatMap.js\" module as `FlatMap`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as FlatMap from \"./FlatMap.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L51"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Foldable",
+    "description": "Re-exports all named exports from the \"./Foldable.js\" module as `Foldable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Foldable from \"./Foldable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L56"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Invariant",
+    "description": "Re-exports all named exports from the \"./Invariant.js\" module as `Invariant`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Invariant from \"./Invariant.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L66"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Monad",
+    "description": "Re-exports all named exports from the \"./Monad.js\" module as `Monad`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Monad from \"./Monad.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L71"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Monoid",
+    "description": "Re-exports all named exports from the \"./Monoid.js\" module as `Monoid`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Monoid from \"./Monoid.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L76"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Of",
+    "description": "Re-exports all named exports from the \"./Of.js\" module as `Of`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Of from \"./Of.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L81"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Pointed",
+    "description": "Re-exports all named exports from the \"./Pointed.js\" module as `Pointed`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Pointed from \"./Pointed.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L86"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Product",
+    "description": "Re-exports all named exports from the \"./Product.js\" module as `Product`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Product from \"./Product.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L91"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiAlternative",
+    "description": "Re-exports all named exports from the \"./SemiAlternative.js\" module as `SemiAlternative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as SemiAlternative from \"./SemiAlternative.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L96"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiApplicative",
+    "description": "Re-exports all named exports from the \"./SemiApplicative.js\" module as `SemiApplicative`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as SemiApplicative from \"./SemiApplicative.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L101"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiCoproduct",
+    "description": "Re-exports all named exports from the \"./SemiCoproduct.js\" module as `SemiCoproduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as SemiCoproduct from \"./SemiCoproduct.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L106"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "SemiProduct",
+    "description": "Re-exports all named exports from the \"./SemiProduct.js\" module as `SemiProduct`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as SemiProduct from \"./SemiProduct.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L111"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Semigroup",
+    "description": "Re-exports all named exports from the \"./Semigroup.js\" module as `Semigroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Semigroup from \"./Semigroup.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L116"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "Traversable",
+    "description": "Re-exports all named exports from the \"./Traversable.js\" module as `Traversable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as Traversable from \"./Traversable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L121"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "TraversableFilterable",
+    "description": "Re-exports all named exports from the \"./TraversableFilterable.js\" module as `TraversableFilterable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "export * as TraversableFilterable from \"./TraversableFilterable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/index.ts#L128"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "Invariant.ts",
@@ -3325,6 +3725,21 @@
     "category": "type class",
     "signature": "export interface Of<F extends TypeLambda> extends TypeClass<F> {\n  readonly of: <A>(a: A) => Kind<F, unknown, never, never, A>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Of.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Of.ts",
+      "path": "src/Of.ts"
+    },
+    "project": "@effect/typeclass",
+    "name": "void",
+    "deprecated": false,
+    "examples": [],
+    "since": "0.24.0",
+    "category": null,
+    "signature": "declare const void: <F extends TypeLambda>(F: Of<F>) => <R = unknown, O = never, E = never>() => Kind<F, R, O, E, void>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/typeclass/src/Of.ts#L33"
   },
   {
     "_tag": "Interface",

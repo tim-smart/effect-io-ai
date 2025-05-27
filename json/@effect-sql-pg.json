@@ -1,5 +1,37 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgClient",
+    "description": "Re-exports all named exports from the \"./PgClient.js\" module as `PgClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PgClient from \"./PgClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-pg",
+    "name": "PgMigrator",
+    "description": "Re-exports all named exports from the \"./PgMigrator.js\" module as `PgMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PgMigrator from \"./PgMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/index.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "PgClient.ts",
@@ -178,5 +210,37 @@
     "category": "layers",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, PgClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgMigrator.ts#L99"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "PgMigrator.ts",
+      "path": "src/PgMigrator.ts"
+    },
+    "project": "@effect/sql-pg",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgMigrator.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "PgMigrator.ts",
+      "path": "src/PgMigrator.ts"
+    },
+    "project": "@effect/sql-pg",
+    "name": "\"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgMigrator.ts#L25"
   }
 ]

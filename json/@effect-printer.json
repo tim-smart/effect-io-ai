@@ -3403,6 +3403,118 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Flatten.ts#L51"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "Doc",
+    "description": "Re-exports all named exports from the \"./Doc.js\" module as `Doc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Doc from \"./Doc.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "DocStream",
+    "description": "Re-exports all named exports from the \"./DocStream.js\" module as `DocStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DocStream from \"./DocStream.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "DocTree",
+    "description": "Re-exports all named exports from the \"./DocTree.js\" module as `DocTree`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DocTree from \"./DocTree.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "Flatten",
+    "description": "Re-exports all named exports from the \"./Flatten.js\" module as `Flatten`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Flatten from \"./Flatten.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "Layout",
+    "description": "Re-exports all named exports from the \"./Layout.js\" module as `Layout`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Layout from \"./Layout.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "Optimize",
+    "description": "Re-exports all named exports from the \"./Optimize.js\" module as `Optimize`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Optimize from \"./Optimize.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer",
+    "name": "PageWidth",
+    "description": "Re-exports all named exports from the \"./PageWidth.js\" module as `PageWidth`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PageWidth from \"./PageWidth.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/index.ts#L49"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Layout.ts",

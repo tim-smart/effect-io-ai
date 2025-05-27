@@ -1,5 +1,181 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Migrator",
+    "description": "Re-exports all named exports from the \"./Migrator.js\" module as `Migrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Migrator from \"./Migrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Model",
+    "description": "Re-exports all named exports from the \"./Model.js\" module as `Model`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Model from \"./Model.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlClient",
+    "description": "Re-exports all named exports from the \"./SqlClient.js\" module as `SqlClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlClient from \"./SqlClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlConnection",
+    "description": "Re-exports all named exports from the \"./SqlConnection.js\" module as `SqlConnection`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlConnection from \"./SqlConnection.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlError",
+    "description": "Re-exports all named exports from the \"./SqlError.js\" module as `SqlError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlError from \"./SqlError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlEventJournal",
+    "description": "Re-exports all named exports from the \"./SqlEventJournal.js\" module as `SqlEventJournal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlEventJournal from \"./SqlEventJournal.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlEventLogServer",
+    "description": "Re-exports all named exports from the \"./SqlEventLogServer.js\" module as `SqlEventLogServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlEventLogServer from \"./SqlEventLogServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlResolver",
+    "description": "Re-exports all named exports from the \"./SqlResolver.js\" module as `SqlResolver`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlResolver from \"./SqlResolver.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlSchema",
+    "description": "Re-exports all named exports from the \"./SqlSchema.js\" module as `SqlSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlSchema from \"./SqlSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "SqlStream",
+    "description": "Re-exports all named exports from the \"./SqlStream.js\" module as `SqlStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlStream from \"./SqlStream.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Statement",
+    "description": "Re-exports all named exports from the \"./Statement.js\" module as `Statement`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Statement from \"./Statement.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L54"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Migrator.ts",
@@ -782,6 +958,144 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L70"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Class",
+    "description": "A base class used for creating domain model schemas.\n\nIt supports common variants for database and JSON apis.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport { Schema } from \"effect\"\nimport { Model } from \"@effect/sql\"\n\nexport const GroupId = Schema.Number.pipe(Schema.brand(\"GroupId\"))\n\nexport class Group extends Model.Class<Group>(\"Group\")({\n  id: Model.Generated(GroupId),\n  name: Schema.NonEmptyTrimmedString,\n  createdAt: Model.DateTimeInsertFromDate,\n  updatedAt: Model.DateTimeUpdateFromDate\n}) {}\n\n// schema used for selects\nGroup\n\n// schema used for inserts\nGroup.insert\n\n// schema used for updates\nGroup.update\n\n// schema used for json api\nGroup.json\nGroup.jsonCreate\nGroup.jsonUpdate\n\n// you can also turn them into classes\nclass GroupJson extends Schema.Class<GroupJson>(\"GroupJson\")(Group.json) {\n  get upperName() {\n    return this.name.toUpperCase()\n  }\n}\n```"
+    ],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const Class: <Self = never>(identifier: string) => <const Fields extends VariantSchema.Struct.Fields>(fields: Fields & VariantSchema.Struct.Validate<Fields, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">, annotations?: Schema.Annotations.Schema<Self, readonly []> | undefined) => [Self] extends [never] ? \"Missing `Self` generic - use `class Self extends Class<Self>()({ ... })`\" : ClassFromFields<Self, Fields, { [K in keyof VariantSchema.ExtractFields<\"select\", Fields, true>]: VariantSchema.ExtractFields<\"select\", Fields, true>[K]; }> & { readonly insert: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"insert\", Fields, false>]: VariantSchema.ExtractFields<\"insert\", Fields, false>[K]; }>; readonly update: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"update\", Fields, false>]: VariantSchema.ExtractFields<\"update\", Fields, false>[K]; }>; readonly json: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"json\", Fields, false>]: VariantSchema.ExtractFields<\"json\", Fields, false>[K]; }>; readonly jsonCreate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"jsonCreate\", Fields, false>]: VariantSchema.ExtractFields<\"jsonCreate\", Fields, false>[K]; }>; readonly jsonUpdate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"jsonUpdate\", Fields, false>]: VariantSchema.ExtractFields<\"jsonUpdate\", Fields, false>[K]; }>; readonly select: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<\"select\", Fields, false>]: VariantSchema.ExtractFields<\"select\", Fields, false>[K]; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L116"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "extract",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "extraction",
+    "signature": "declare const extract: { <V extends \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">(variant: V): <A extends VariantSchema.Struct<any>>(self: A) => VariantSchema.Extract<V, A, V extends \"select\" ? true : false>; <V extends \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\", A extends VariantSchema.Struct<any>>(self: A, variant: V): VariantSchema.Extract<V, A, V extends \"select\" ? true : false>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L121"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Field",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fields",
+    "signature": "declare const Field: <const A extends VariantSchema.Field.ConfigWithKeys<\"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">>(config: A & { readonly [K in Exclude<keyof A, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">]: never; }) => VariantSchema.Field<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L126"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "fieldEvolve",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fields",
+    "signature": "declare const fieldEvolve: { <Self extends VariantSchema.Field<any> | VariantSchema.Field.ValueAny, const Mapping extends Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]?: ((variant: S[K]) => VariantSchema.Field.ValueAny) | undefined; } : { readonly insert?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly update?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly json?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly jsonCreate?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly jsonUpdate?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly select?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; }>(f: Mapping): (self: Self) => VariantSchema.Field<Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]: K extends keyof Mapping ? Mapping[K] extends (arg: any) => any ? ReturnType<Mapping[K]> : S[K] : S[K]; } : { readonly insert: \"insert\" extends keyof Mapping ? Mapping[keyof Mapping & \"insert\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"insert\"]> : Self : Self; readonly update: \"update\" extends keyof Mapping ? Mapping[keyof Mapping & \"update\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"update\"]> : Self : Self; readonly json: \"json\" extends keyof Mapping ? Mapping[keyof Mapping & \"json\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"json\"]> : Self : Self; readonly jsonCreate: \"jsonCreate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonCreate\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"jsonCreate\"]> : Self : Self; readonly jsonUpdate: \"jsonUpdate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonUpdate\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"jsonUpdate\"]> : Self : Self; readonly select: \"select\" extends keyof Mapping ? Mapping[keyof Mapping & \"select\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"select\"]> : Self : Self; }>; <Self extends VariantSchema.Field<any> | VariantSchema.Field.ValueAny, const Mapping extends Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]?: ((variant: S[K]) => VariantSchema.Field.ValueAny) | undefined; } : { readonly insert?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly update?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly json?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly jsonCreate?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly jsonUpdate?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; readonly select?: ((variant: Self) => VariantSchema.Field.ValueAny) | undefined; }>(self: Self, f: Mapping): VariantSchema.Field<Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]: K extends keyof Mapping ? Mapping[K] extends (arg: any) => any ? ReturnType<Mapping[K]> : S[K] : S[K]; } : { readonly insert: \"insert\" extends keyof Mapping ? Mapping[keyof Mapping & \"insert\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"insert\"]> : Self : Self; readonly update: \"update\" extends keyof Mapping ? Mapping[keyof Mapping & \"update\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"update\"]> : Self : Self; readonly json: \"json\" extends keyof Mapping ? Mapping[keyof Mapping & \"json\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"json\"]> : Self : Self; readonly jsonCreate: \"jsonCreate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonCreate\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"jsonCreate\"]> : Self : Self; readonly jsonUpdate: \"jsonUpdate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonUpdate\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"jsonUpdate\"]> : Self : Self; readonly select: \"select\" extends keyof Mapping ? Mapping[keyof Mapping & \"select\"] extends (arg: any) => any ? ReturnType<Mapping[keyof Mapping & \"select\"]> : Self : Self; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L131"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "FieldExcept",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fields",
+    "signature": "declare const FieldExcept: <const Keys extends ReadonlyArray<\"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">>(...keys: Keys) => <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => VariantSchema.Field<{ readonly [K in Exclude<\"insert\", Keys[number]> | Exclude<\"update\", Keys[number]> | Exclude<\"json\", Keys[number]> | Exclude<\"jsonCreate\", Keys[number]> | Exclude<\"jsonUpdate\", Keys[number]> | Exclude<\"select\", Keys[number]>]: S; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L136"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "fieldFromKey",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fields",
+    "signature": "declare const fieldFromKey: { <Self extends VariantSchema.Field<any> | VariantSchema.Field.ValueAny, const Mapping extends Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]?: string | undefined; } : { readonly insert?: string | undefined; readonly update?: string | undefined; readonly json?: string | undefined; readonly jsonCreate?: string | undefined; readonly jsonUpdate?: string | undefined; readonly select?: string | undefined; }>(mapping: Mapping): (self: Self) => VariantSchema.Field<Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]: K extends keyof Mapping ? Mapping[K] extends string ? VariantSchema.fromKey.Rename<S[K], Mapping[K]> : S[K] : S[K]; } : { readonly insert: \"insert\" extends keyof Mapping ? Mapping[keyof Mapping & \"insert\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"insert\"]> : Self : Self; readonly update: \"update\" extends keyof Mapping ? Mapping[keyof Mapping & \"update\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"update\"]> : Self : Self; readonly json: \"json\" extends keyof Mapping ? Mapping[keyof Mapping & \"json\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"json\"]> : Self : Self; readonly jsonCreate: \"jsonCreate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonCreate\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"jsonCreate\"]> : Self : Self; readonly jsonUpdate: \"jsonUpdate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonUpdate\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"jsonUpdate\"]> : Self : Self; readonly select: \"select\" extends keyof Mapping ? Mapping[keyof Mapping & \"select\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"select\"]> : Self : Self; }>; <Self extends VariantSchema.Field<any> | VariantSchema.Field.ValueAny, const Mapping extends Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]?: string | undefined; } : { readonly insert?: string | undefined; readonly update?: string | undefined; readonly json?: string | undefined; readonly jsonCreate?: string | undefined; readonly jsonUpdate?: string | undefined; readonly select?: string | undefined; }>(self: Self, mapping: Mapping): VariantSchema.Field<Self extends VariantSchema.Field<infer S extends VariantSchema.Field.Config> ? { readonly [K in keyof S]: K extends keyof Mapping ? Mapping[K] extends string ? VariantSchema.fromKey.Rename<S[K], Mapping[K]> : S[K] : S[K]; } : { readonly insert: \"insert\" extends keyof Mapping ? Mapping[keyof Mapping & \"insert\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"insert\"]> : Self : Self; readonly update: \"update\" extends keyof Mapping ? Mapping[keyof Mapping & \"update\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"update\"]> : Self : Self; readonly json: \"json\" extends keyof Mapping ? Mapping[keyof Mapping & \"json\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"json\"]> : Self : Self; readonly jsonCreate: \"jsonCreate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonCreate\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"jsonCreate\"]> : Self : Self; readonly jsonUpdate: \"jsonUpdate\" extends keyof Mapping ? Mapping[keyof Mapping & \"jsonUpdate\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"jsonUpdate\"]> : Self : Self; readonly select: \"select\" extends keyof Mapping ? Mapping[keyof Mapping & \"select\"] extends string ? VariantSchema.fromKey.Rename<Self, Mapping[keyof Mapping & \"select\"]> : Self : Self; }>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L141"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "FieldOnly",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fields",
+    "signature": "declare const FieldOnly: <const Keys extends ReadonlyArray<\"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">>(...keys: Keys) => <S extends Schema.Schema.All | Schema.PropertySignature.All>(schema: S) => VariantSchema.Field<{ readonly [K in Keys[number]]: S; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L146"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Struct",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const Struct: <const A extends VariantSchema.Struct.Fields>(fields: A & VariantSchema.Struct.Validate<A, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">) => VariantSchema.Struct<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L151"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Model.ts",
+      "path": "src/Model.ts"
+    },
+    "project": "@effect/sql",
+    "name": "Union",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const Union: <const Members extends ReadonlyArray<VariantSchema.Struct<any>>>(...members: Members) => VariantSchema.Union<Members> & VariantSchema.Union.Variants<Members, \"insert\" | \"update\" | \"json\" | \"jsonCreate\" | \"jsonUpdate\" | \"select\">",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Model.ts#L156"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "SqlClient.ts",
@@ -1205,6 +1519,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L98"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "SqlResolver.ts",
+      "path": "src/SqlResolver.ts"
+    },
+    "project": "@effect/sql",
+    "name": "void",
+    "description": "Create a resolver that performs side effects.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "resolvers",
+    "signature": "declare const void: <T extends string, I, II, RI, E, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, void, E, RI>, never, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L472"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "SqlSchema.ts",
@@ -1251,6 +1581,22 @@
     "category": "constructor",
     "signature": "declare const single: <IR, II, IA, AR, AI, A, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly Result: Schema.Schema<A, AI, AR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<A, E | ParseError | Cause.NoSuchElementException, R | IR | AR>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L82"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqlSchema.ts",
+      "path": "src/SqlSchema.ts"
+    },
+    "project": "@effect/sql",
+    "name": "void",
+    "description": "Run a sql query with a request schema and discard the result.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "declare const void: <IR, II, IA, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<void, E | ParseError, R | IR>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L51"
   },
   {
     "_tag": "Function",

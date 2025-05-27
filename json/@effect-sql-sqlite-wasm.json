@@ -1,5 +1,53 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "OpfsWorker",
+    "description": "Re-exports all named exports from the \"./OpfsWorker.js\" module as `OpfsWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpfsWorker from \"./OpfsWorker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteClient",
+    "description": "Re-exports all named exports from the \"./SqliteClient.js\" module as `SqliteClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteClient from \"./SqliteClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "SqliteMigrator",
+    "description": "Re-exports all named exports from the \"./SqliteMigrator.js\" module as `SqliteMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteMigrator from \"./SqliteMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/index.ts#L14"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "OpfsWorker.ts",
@@ -268,5 +316,21 @@
     "category": "constructor",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, R | Client.SqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteMigrator.ts#L31"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-wasm",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteMigrator.ts#L13"
   }
 ]

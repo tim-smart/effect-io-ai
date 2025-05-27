@@ -275,6 +275,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L32"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "BrowserWorkerRunner.ts",
+      "path": "src/BrowserWorkerRunner.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "launch",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L13"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Clipboard.ts",
@@ -544,6 +559,166 @@
     "category": "type ids",
     "signature": "type ErrorTypeId = typeof ErrorTypeId",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L61"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserHttpClient",
+    "description": "Re-exports all named exports from the \"./BrowserHttpClient.js\" module as `BrowserHttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserHttpClient from \"./BrowserHttpClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserKeyValueStore",
+    "description": "Re-exports all named exports from the \"./BrowserKeyValueStore.js\" module as `BrowserKeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserKeyValueStore from \"./BrowserKeyValueStore.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserRuntime",
+    "description": "Re-exports all named exports from the \"./BrowserRuntime.js\" module as `BrowserRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserRuntime from \"./BrowserRuntime.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserSocket",
+    "description": "Re-exports all named exports from the \"./BrowserSocket.js\" module as `BrowserSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserSocket from \"./BrowserSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserStream",
+    "description": "Re-exports all named exports from the \"./BrowserStream.js\" module as `BrowserStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserStream from \"./BrowserStream.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserWorker",
+    "description": "Re-exports all named exports from the \"./BrowserWorker.js\" module as `BrowserWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserWorker from \"./BrowserWorker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "BrowserWorkerRunner",
+    "description": "Re-exports all named exports from the \"./BrowserWorkerRunner.js\" module as `BrowserWorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserWorkerRunner from \"./BrowserWorkerRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Clipboard",
+    "description": "Re-exports all named exports from the \"./Clipboard.js\" module as `Clipboard`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Clipboard from \"./Clipboard.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Geolocation",
+    "description": "Re-exports all named exports from the \"./Geolocation.js\" module as `Geolocation`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Geolocation from \"./Geolocation.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Permissions",
+    "description": "Re-exports all named exports from the \"./Permissions.js\" module as `Permissions`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Permissions from \"./Permissions.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L49"
   },
   {
     "_tag": "Class",

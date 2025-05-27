@@ -1,5 +1,165 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "Rpc",
+    "description": "Re-exports all named exports from the \"./Rpc.js\" module as `Rpc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Rpc from \"./Rpc.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcClient",
+    "description": "Re-exports all named exports from the \"./RpcClient.js\" module as `RpcClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcClient from \"./RpcClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcGroup",
+    "description": "Re-exports all named exports from the \"./RpcGroup.js\" module as `RpcGroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcGroup from \"./RpcGroup.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcMessage",
+    "description": "Re-exports all named exports from the \"./RpcMessage.js\" module as `RpcMessage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcMessage from \"./RpcMessage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcMiddleware",
+    "description": "Re-exports all named exports from the \"./RpcMiddleware.js\" module as `RpcMiddleware`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcMiddleware from \"./RpcMiddleware.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcSchema",
+    "description": "Re-exports all named exports from the \"./RpcSchema.js\" module as `RpcSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcSchema from \"./RpcSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcSerialization",
+    "description": "Re-exports all named exports from the \"./RpcSerialization.js\" module as `RpcSerialization`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcSerialization from \"./RpcSerialization.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcServer",
+    "description": "Re-exports all named exports from the \"./RpcServer.js\" module as `RpcServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcServer from \"./RpcServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcTest",
+    "description": "Re-exports all named exports from the \"./RpcTest.js\" module as `RpcTest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcTest from \"./RpcTest.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcWorker",
+    "description": "Re-exports all named exports from the \"./RpcWorker.js\" module as `RpcWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcWorker from \"./RpcWorker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L49"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Rpc.ts",

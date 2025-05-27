@@ -1,5 +1,181 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Logger",
+    "description": "Re-exports all named exports from the \"./Logger.js\" module as `Logger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Logger from \"./Logger.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Metrics",
+    "description": "Re-exports all named exports from the \"./Metrics.js\" module as `Metrics`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Metrics from \"./Metrics.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "NodeSdk",
+    "description": "Re-exports all named exports from the \"./NodeSdk.js\" module as `NodeSdk`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeSdk from \"./NodeSdk.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Otlp",
+    "description": "Re-exports all named exports from the \"./Otlp.js\" module as `Otlp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Otlp from \"./Otlp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtlpLogger",
+    "description": "Re-exports all named exports from the \"./OtlpLogger.js\" module as `OtlpLogger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "export * as OtlpLogger from \"./OtlpLogger.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L25"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtlpMetrics",
+    "description": "Re-exports all named exports from the \"./OtlpMetrics.js\" module as `OtlpMetrics`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OtlpMetrics from \"./OtlpMetrics.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L30"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtlpResource",
+    "description": "Re-exports all named exports from the \"./OtlpResource.js\" module as `OtlpResource`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OtlpResource from \"./OtlpResource.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "OtlpTracer",
+    "description": "Re-exports all named exports from the \"./OtlpTracer.js\" module as `OtlpTracer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OtlpTracer from \"./OtlpTracer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L40"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Resource",
+    "description": "Re-exports all named exports from the \"./Resource.js\" module as `Resource`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Resource from \"./Resource.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L45"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "Tracer",
+    "description": "Re-exports all named exports from the \"./Tracer.js\" module as `Tracer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Tracer from \"./Tracer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L50"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "WebSdk",
+    "description": "Re-exports all named exports from the \"./WebSdk.js\" module as `WebSdk`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as WebSdk from \"./WebSdk.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L55"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Logger.ts",

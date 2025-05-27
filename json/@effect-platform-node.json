@@ -1,5 +1,373 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeClusterRunnerHttp",
+    "description": "Re-exports all named exports from the \"./NodeClusterRunnerHttp.js\" module as `NodeClusterRunnerHttp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterRunnerHttp from \"./NodeClusterRunnerHttp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeClusterRunnerSocket",
+    "description": "Re-exports all named exports from the \"./NodeClusterRunnerSocket.js\" module as `NodeClusterRunnerSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterRunnerSocket from \"./NodeClusterRunnerSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeClusterShardManagerHttp",
+    "description": "Re-exports all named exports from the \"./NodeClusterShardManagerHttp.js\" module as `NodeClusterShardManagerHttp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterShardManagerHttp from \"./NodeClusterShardManagerHttp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeClusterShardManagerSocket",
+    "description": "Re-exports all named exports from the \"./NodeClusterShardManagerSocket.js\" module as `NodeClusterShardManagerSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterShardManagerSocket from \"./NodeClusterShardManagerSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeCommandExecutor",
+    "description": "Re-exports all named exports from the \"./NodeCommandExecutor.js\" module as `NodeCommandExecutor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeCommandExecutor from \"./NodeCommandExecutor.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeContext",
+    "description": "Re-exports all named exports from the \"./NodeContext.js\" module as `NodeContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeContext from \"./NodeContext.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeFileSystem",
+    "description": "Re-exports all named exports from the \"./NodeFileSystem.js\" module as `NodeFileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpClient",
+    "description": "Re-exports all named exports from the \"./NodeHttpClient.js\" module as `NodeHttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeHttpClient from \"./NodeHttpClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpPlatform",
+    "description": "Re-exports all named exports from the \"./NodeHttpPlatform.js\" module as `NodeHttpPlatform`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpServer",
+    "description": "Re-exports all named exports from the \"./NodeHttpServer.js\" module as `NodeHttpServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeHttpServer from \"./NodeHttpServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpServerRequest",
+    "description": "Re-exports all named exports from the \"./NodeHttpServerRequest.js\" module as `NodeHttpServerRequest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeKeyValueStore",
+    "description": "Re-exports all named exports from the \"./NodeKeyValueStore.js\" module as `NodeKeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeKeyValueStore from \"./NodeKeyValueStore.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeMultipart",
+    "description": "Re-exports all named exports from the \"./NodeMultipart.js\" module as `NodeMultipart`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeMultipart from \"./NodeMultipart.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodePath",
+    "description": "Re-exports all named exports from the \"./NodePath.js\" module as `NodePath`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodePath from \"./NodePath.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeRuntime",
+    "description": "Re-exports all named exports from the \"./NodeRuntime.js\" module as `NodeRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeRuntime from \"./NodeRuntime.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeSink",
+    "description": "Re-exports all named exports from the \"./NodeSink.js\" module as `NodeSink`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeSink from \"./NodeSink.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L79"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeSocket",
+    "description": "Re-exports all named exports from the \"./NodeSocket.js\" module as `NodeSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeSocket from \"./NodeSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeSocketServer",
+    "description": "Re-exports all named exports from the \"./NodeSocketServer.js\" module as `NodeSocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeSocketServer from \"./NodeSocketServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeStream",
+    "description": "Re-exports all named exports from the \"./NodeStream.js\" module as `NodeStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeStream from \"./NodeStream.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeTerminal",
+    "description": "Re-exports all named exports from the \"./NodeTerminal.js\" module as `NodeTerminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeTerminal from \"./NodeTerminal.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L99"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeWorker",
+    "description": "Re-exports all named exports from the \"./NodeWorker.js\" module as `NodeWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeWorker from \"./NodeWorker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L104"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeWorkerRunner",
+    "description": "Re-exports all named exports from the \"./NodeWorkerRunner.js\" module as `NodeWorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L109"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "Undici",
+    "description": "Re-exports all named exports from the \"./Undici.js\" module as `Undici`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Undici from \"./Undici.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L114"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeClusterRunnerHttp.ts",
@@ -30,6 +398,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterRunnerHttp.ts#L33"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeClusterRunnerSocket.ts",
+      "path": "src/NodeClusterRunnerSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterRunnerSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterRunnerSocket.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeClusterShardManagerHttp.ts",
@@ -58,6 +442,22 @@
     "category": "Layers",
     "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = \"noop\">(options: { readonly protocol: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; }) => Layer.Layer<ShardManager.ShardManager, ServeError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterShardManagerHttp.ts#L45"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeClusterShardManagerSocket.ts",
+      "path": "src/NodeClusterShardManagerSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterShardManagerSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterShardManagerSocket.ts#L9"
   },
   {
     "_tag": "Constant",
@@ -602,6 +1002,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeKeyValueStore.ts#L13"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeMultipart\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeMultipart\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeMultipart\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L8"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodePath.ts",
@@ -662,6 +1078,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L11"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeSink\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSink\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSink\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L8"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeSocket.ts",
@@ -690,6 +1122,54 @@
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L17"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L11"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeSocketServer\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocketServer\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSocketServer\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L8"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeStream\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeStream\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeStream\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L8"
   },
   {
     "_tag": "Constant",
@@ -795,5 +1275,51 @@
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeWorkerRunner.ts",
+      "path": "src/NodeWorkerRunner.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "launch",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Undici.ts",
+      "path": "src/Undici.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "default",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "undici",
+    "signature": "declare const default: typeof Undici",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Undici.ts",
+      "path": "src/Undici.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"undici\"",
+    "description": "Re-exports all named exports from the \"undici\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "undici",
+    "signature": "export * from \"undici\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L16"
   }
 ]

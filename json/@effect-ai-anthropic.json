@@ -268,5 +268,85 @@
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<Tokenizer.Tokenizer, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTokenizer.ts#L68"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicClient",
+    "description": "Re-exports all named exports from the \"./AnthropicClient.js\" module as `AnthropicClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicClient from \"./AnthropicClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig",
+    "description": "Re-exports all named exports from the \"./AnthropicConfig.js\" module as `AnthropicConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicConfig from \"./AnthropicConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicLanguageModel",
+    "description": "Re-exports all named exports from the \"./AnthropicLanguageModel.js\" module as `AnthropicLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicLanguageModel from \"./AnthropicLanguageModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTokenizer",
+    "description": "Re-exports all named exports from the \"./AnthropicTokenizer.js\" module as `AnthropicTokenizer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicTokenizer from \"./AnthropicTokenizer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Generated",
+    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Generated from \"./Generated.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L24"
   }
 ]

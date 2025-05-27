@@ -1392,6 +1392,1746 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L18"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Annotated",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Annotated: Annotated<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L284"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Cat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Cat: Cat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L289"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Char",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Char: Char<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L294"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Column",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Column: Column<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L299"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Covariant",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Covariant: any",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L304"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Doc",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Doc: Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L309"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "DocTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const DocTypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L314"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "DocTypeLambda",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const DocTypeLambda: DocTypeLambda",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L319"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Empty",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Empty: Empty<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L324"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Fail",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Fail: Fail<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L329"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "FlatAlt",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const FlatAlt: FlatAlt<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L334"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Line",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Line: Line<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L339"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Nest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Nest: Nest<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L344"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Nesting",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Nesting: Nesting<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L349"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Text",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Text: Text<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L354"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Union",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Union: Union<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L359"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "WithPageWidth",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const WithPageWidth: WithPageWidth<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L364"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AlreadyFlat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const AlreadyFlat: AlreadyFlat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L372"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Flatten",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Flatten: Flatten<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L377"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Flattened",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const Flattened: Flattened<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L382"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "NeverFlat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "model",
+    "signature": "declare const NeverFlat: NeverFlat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L387"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "align",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const align: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L395"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "alterAnnotations",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L400"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "angleBracketed",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L405"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "annotate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L410"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "backslash",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const backslash: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L415"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L420"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "cats",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L425"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithLine",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L430"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithLineBreak",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L435"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSoftLine",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L440"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSoftLineBreak",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L445"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "catWithSpace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L450"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "changesUponFlattening",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L455"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "char",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const char: (char: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L460"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "colon",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const colon: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L465"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "column",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L470"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "comma",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const comma: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L475"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "concatWith",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L480"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "curlyBraced",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L485"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "dot",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const dot: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L490"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "doubleQuoted",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L495"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "dquote",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const dquote: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L500"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "empty",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const empty: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L505"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "encloseSep",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L510"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "equalSign",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const equalSign: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L515"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fail",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const fail: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L520"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fill",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L525"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillBreak",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L530"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillCat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L535"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "fillSep",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "filling",
+    "signature": "declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L540"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "flatAlt",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L545"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "flatten",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "flattening",
+    "signature": "declare const flatten: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L550"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "group",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "declare const group: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L555"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hang",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L560"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hardLine",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const hardLine: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L565"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hcat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L570"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "hsep",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L575"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "indent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L580"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Invariant",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "instances",
+    "signature": "declare const Invariant: Invariant<DocTypeLambda>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L585"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isAnnotated",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isAnnotated: <A>(self: Doc<A>) => self is Annotated<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L590"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isCat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isCat: <A>(self: Doc<A>) => self is Cat<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L595"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isChar",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isChar: <A>(self: Doc<A>) => self is Char<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L600"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isColumn",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isColumn: <A>(self: Doc<A>) => self is Column<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L605"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isDoc",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isDoc: (u: unknown) => u is Doc<unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L610"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isEmpty",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isEmpty: <A>(self: Doc<A>) => self is Empty<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L615"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isFail",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isFail: <A>(self: Doc<A>) => self is Fail<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L620"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isFlatAlt",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isFlatAlt: <A>(self: Doc<A>) => self is FlatAlt<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L625"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isLine",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isLine: <A>(self: Doc<A>) => self is Line<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L630"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isNest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isNest: <A>(self: Doc<A>) => self is Nest<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L635"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isNesting",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isNesting: <A>(self: Doc<A>) => self is Nesting<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L640"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isText",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isText: <A>(self: Doc<A>) => self is Text<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L645"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isUnion",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isUnion: <A>(self: Doc<A>) => self is Union<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L650"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "isWithPageWidth",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isWithPageWidth: <A>(self: Doc<A>) => self is WithPageWidth<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L655"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "langle",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const langle: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L660"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lbrace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const lbrace: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L665"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lbracket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const lbracket: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L670"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "line",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const line: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L675"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lineBreak",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const lineBreak: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L680"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "list",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L685"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "lparen",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const lparen: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L690"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "map",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L695"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "match",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "matching",
+    "signature": "declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L700"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "nest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L705"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "nesting",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L710"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "pageWidth",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L715"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "parenthesized",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const parenthesized: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L720"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "punctuate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L725"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rangle",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const rangle: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L730"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rbrace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const rbrace: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L735"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rbracket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const rbracket: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L740"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "reAnnotate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L745"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "reflow",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const reflow: (s: string, char?: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L750"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "rparen",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const rparen: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L755"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "semi",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const semi: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L760"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "seps",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L765"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "singleQuoted",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L770"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "slash",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const slash: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L775"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "softLine",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const softLine: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L780"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "softLineBreak",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const softLineBreak: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L785"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "space",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const space: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L790"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "spaces",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const spaces: (n: number) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L795"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "squareBracketed",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L800"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "squote",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const squote: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L805"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "string",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const string: (str: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L810"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "surround",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L815"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "text",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const text: (text: string) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L820"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "textSpaces",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const textSpaces: (n: number) => string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L825"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "tupled",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alignment",
+    "signature": "declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L830"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "unAnnotate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "annotations",
+    "signature": "declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L835"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "union",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "alternative layouts",
+    "signature": "declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L840"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vbar",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "primitives",
+    "signature": "declare const vbar: Doc<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L845"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vcat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "concatenation",
+    "signature": "declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L850"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "vsep",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "separation",
+    "signature": "declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L855"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "width",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "reactive layouts",
+    "signature": "declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L860"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "AnsiDoc.ts",
+      "path": "src/AnsiDoc.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "words",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/AnsiDoc.ts#L865"
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "AnsiDoc.ts",
@@ -1720,5 +3460,53 @@
     "category": "model",
     "signature": "type Color = Black | Red | Green | Yellow | Blue | Magenta | Cyan | White",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/Color.ts#L15"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Ansi",
+    "description": "Re-exports all named exports from the \"./Ansi.js\" module as `Ansi`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Ansi from \"./Ansi.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "AnsiDoc",
+    "description": "Re-exports all named exports from the \"./AnsiDoc.js\" module as `AnsiDoc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnsiDoc from \"./AnsiDoc.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/printer-ansi",
+    "name": "Color",
+    "description": "Re-exports all named exports from the \"./Color.js\" module as `Color`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Color from \"./Color.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer-ansi/src/index.ts#L14"
   }
 ]

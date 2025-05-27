@@ -2404,6 +2404,246 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Cloudflare.ts#L19"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "DevTools",
+    "description": "Re-exports all named exports from the \"./DevTools.js\" module as `DevTools`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DevTools from \"./DevTools.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Event",
+    "description": "Re-exports all named exports from the \"./Event.js\" module as `Event`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Event from \"./Event.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventGroup",
+    "description": "Re-exports all named exports from the \"./EventGroup.js\" module as `EventGroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventGroup from \"./EventGroup.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventJournal",
+    "description": "Re-exports all named exports from the \"./EventJournal.js\" module as `EventJournal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventJournal from \"./EventJournal.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventLog",
+    "description": "Re-exports all named exports from the \"./EventLog.js\" module as `EventLog`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventLog from \"./EventLog.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogEncryption",
+    "description": "Re-exports all named exports from the \"./EventLogEncryption.js\" module as `EventLogEncryption`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventLogEncryption from \"./EventLogEncryption.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogRemote",
+    "description": "Re-exports all named exports from the \"./EventLogRemote.js\" module as `EventLogRemote`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventLogRemote from \"./EventLogRemote.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventLogServer",
+    "description": "Re-exports all named exports from the \"./EventLogServer.js\" module as `EventLogServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventLogServer from \"./EventLogServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Machine",
+    "description": "Re-exports all named exports from the \"./Machine.js\" module as `Machine`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Machine from \"./Machine.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "PersistedCache",
+    "description": "Re-exports all named exports from the \"./PersistedCache.js\" module as `PersistedCache`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PersistedCache from \"./PersistedCache.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Persistence",
+    "description": "Re-exports all named exports from the \"./Persistence.js\" module as `Persistence`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Persistence from \"./Persistence.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Reactivity",
+    "description": "Re-exports all named exports from the \"./Reactivity.js\" module as `Reactivity`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Reactivity from \"./Reactivity.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RequestResolver",
+    "description": "Re-exports all named exports from the \"./RequestResolver.js\" module as `RequestResolver`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RequestResolver from \"./RequestResolver.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Sse",
+    "description": "Re-exports all named exports from the \"./Sse.js\" module as `Sse`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Sse from \"./Sse.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "VariantSchema",
+    "description": "Re-exports all named exports from the \"./VariantSchema.js\" module as `VariantSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as VariantSchema from \"./VariantSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L74"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "Machine.ts",
@@ -2717,6 +2957,53 @@
     "category": "type ids",
     "signature": "type ActorTypeId = typeof ActorTypeId",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Machine.ts#L132"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine.ts",
+      "path": "src/Machine.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "procedures",
+    "description": "Re-exports all named exports from the \"./Machine/ProcedureList.js\" module as `procedures`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "procedures",
+    "signature": "export * as procedures from \"./Machine/ProcedureList.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Machine.ts#L38"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine.ts",
+      "path": "src/Machine.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "serializable",
+    "description": "Re-exports all named exports from the \"./Machine/SerializableProcedureList.js\" module as `serializable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "procedures",
+    "signature": "export * as serializable from \"./Machine/SerializableProcedureList.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Machine.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Machine.ts",
+      "path": "src/Machine.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "NoReply",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "symbols",
+    "signature": "declare const NoReply: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Machine.ts#L51"
   },
   {
     "_tag": "TypeAlias",

@@ -1,5 +1,37 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "MysqlClient",
+    "description": "Re-exports all named exports from the \"./MysqlClient.js\" module as `MysqlClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as MysqlClient from \"./MysqlClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mysql2/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "MysqlMigrator",
+    "description": "Re-exports all named exports from the \"./MysqlMigrator.js\" module as `MysqlMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as MysqlMigrator from \"./MysqlMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mysql2/src/index.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "MysqlClient.ts",
@@ -163,5 +195,37 @@
     "category": "layers",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, MysqlClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mysql2/src/MysqlMigrator.ts#L97"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "MysqlMigrator.ts",
+      "path": "src/MysqlMigrator.ts"
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mysql2/src/MysqlMigrator.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "MysqlMigrator.ts",
+      "path": "src/MysqlMigrator.ts"
+    },
+    "project": "@effect/sql-mysql2",
+    "name": "\"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mysql2/src/MysqlMigrator.ts#L25"
   }
 ]

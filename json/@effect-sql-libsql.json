@@ -1,5 +1,37 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-libsql",
+    "name": "LibsqlClient",
+    "description": "Re-exports all named exports from the \"./LibsqlClient.js\" module as `LibsqlClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as LibsqlClient from \"./LibsqlClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-libsql",
+    "name": "LibsqlMigrator",
+    "description": "Re-exports all named exports from the \"./LibsqlMigrator.js\" module as `LibsqlMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as LibsqlMigrator from \"./LibsqlMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/index.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "LibsqlClient.ts",
@@ -193,5 +225,37 @@
     "category": "constructor",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/LibsqlMigrator.ts#L36"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "LibsqlMigrator.ts",
+      "path": "src/LibsqlMigrator.ts"
+    },
+    "project": "@effect/sql-libsql",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/LibsqlMigrator.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "LibsqlMigrator.ts",
+      "path": "src/LibsqlMigrator.ts"
+    },
+    "project": "@effect/sql-libsql",
+    "name": "\"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/LibsqlMigrator.ts#L18"
   }
 ]

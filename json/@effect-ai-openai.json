@@ -1,5 +1,117 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "Generated",
+    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Generated from \"./Generated.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiClient",
+    "description": "Re-exports all named exports from the \"./OpenAiClient.js\" module as `OpenAiClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiClient from \"./OpenAiClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiConfig",
+    "description": "Re-exports all named exports from the \"./OpenAiConfig.js\" module as `OpenAiConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiConfig from \"./OpenAiConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiEmbeddingModel",
+    "description": "Re-exports all named exports from the \"./OpenAiEmbeddingModel.js\" module as `OpenAiEmbeddingModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiEmbeddingModel from \"./OpenAiEmbeddingModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiLanguageModel",
+    "description": "Re-exports all named exports from the \"./OpenAiLanguageModel.js\" module as `OpenAiLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiLanguageModel from \"./OpenAiLanguageModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiTelemetry",
+    "description": "Re-exports all named exports from the \"./OpenAiTelemetry.js\" module as `OpenAiTelemetry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiTelemetry from \"./OpenAiTelemetry.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiTokenizer",
+    "description": "Re-exports all named exports from the \"./OpenAiTokenizer.js\" module as `OpenAiTokenizer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiTokenizer from \"./OpenAiTokenizer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L34"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "OpenAiClient.ts",

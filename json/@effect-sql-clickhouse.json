@@ -223,5 +223,69 @@
     "category": "layers",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseMigrator.ts#L36"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseMigrator.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "\"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseMigrator.ts#L18"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseClient",
+    "description": "Re-exports all named exports from the \"./ClickhouseClient.js\" module as `ClickhouseClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClickhouseClient from \"./ClickhouseClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseMigrator",
+    "description": "Re-exports all named exports from the \"./ClickhouseMigrator.js\" module as `ClickhouseMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClickhouseMigrator from \"./ClickhouseMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/index.ts#L9"
   }
 ]

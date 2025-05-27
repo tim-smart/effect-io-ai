@@ -1356,6 +1356,566 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L175"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ClusterError",
+    "description": "Re-exports all named exports from the \"./ClusterError.js\" module as `ClusterError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClusterError from \"./ClusterError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ClusterMetrics",
+    "description": "Re-exports all named exports from the \"./ClusterMetrics.js\" module as `ClusterMetrics`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClusterMetrics from \"./ClusterMetrics.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ClusterSchema",
+    "description": "Re-exports all named exports from the \"./ClusterSchema.js\" module as `ClusterSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClusterSchema from \"./ClusterSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "DeliverAt",
+    "description": "Re-exports all named exports from the \"./DeliverAt.js\" module as `DeliverAt`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DeliverAt from \"./DeliverAt.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Entity",
+    "description": "Re-exports all named exports from the \"./Entity.js\" module as `Entity`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Entity from \"./Entity.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "EntityAddress",
+    "description": "Re-exports all named exports from the \"./EntityAddress.js\" module as `EntityAddress`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EntityAddress from \"./EntityAddress.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "EntityId",
+    "description": "Re-exports all named exports from the \"./EntityId.js\" module as `EntityId`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EntityId from \"./EntityId.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "EntityType",
+    "description": "Re-exports all named exports from the \"./EntityType.js\" module as `EntityType`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EntityType from \"./EntityType.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Envelope",
+    "description": "Re-exports all named exports from the \"./Envelope.js\" module as `Envelope`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Envelope from \"./Envelope.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "HttpCommon",
+    "description": "Re-exports all named exports from the \"./HttpCommon.js\" module as `HttpCommon`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpCommon from \"./HttpCommon.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "HttpRunner",
+    "description": "Re-exports all named exports from the \"./HttpRunner.js\" module as `HttpRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpRunner from \"./HttpRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "HttpShardManager",
+    "description": "Re-exports all named exports from the \"./HttpShardManager.js\" module as `HttpShardManager`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpShardManager from \"./HttpShardManager.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "MachineId",
+    "description": "Re-exports all named exports from the \"./MachineId.js\" module as `MachineId`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as MachineId from \"./MachineId.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Message",
+    "description": "Re-exports all named exports from the \"./Message.js\" module as `Message`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Message from \"./Message.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "MessageStorage",
+    "description": "Re-exports all named exports from the \"./MessageStorage.js\" module as `MessageStorage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as MessageStorage from \"./MessageStorage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L74"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Reply",
+    "description": "Re-exports all named exports from the \"./Reply.js\" module as `Reply`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Reply from \"./Reply.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Runner",
+    "description": "Re-exports all named exports from the \"./Runner.js\" module as `Runner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Runner from \"./Runner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "RunnerAddress",
+    "description": "Re-exports all named exports from the \"./RunnerAddress.js\" module as `RunnerAddress`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RunnerAddress from \"./RunnerAddress.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "RunnerHealth",
+    "description": "Re-exports all named exports from the \"./RunnerHealth.js\" module as `RunnerHealth`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RunnerHealth from \"./RunnerHealth.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "RunnerServer",
+    "description": "Re-exports all named exports from the \"./RunnerServer.js\" module as `RunnerServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RunnerServer from \"./RunnerServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Runners",
+    "description": "Re-exports all named exports from the \"./Runners.js\" module as `Runners`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Runners from \"./Runners.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ShardId",
+    "description": "Re-exports all named exports from the \"./ShardId.js\" module as `ShardId`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ShardId from \"./ShardId.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ShardManager",
+    "description": "Re-exports all named exports from the \"./ShardManager.js\" module as `ShardManager`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ShardManager from \"./ShardManager.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ShardStorage",
+    "description": "Re-exports all named exports from the \"./ShardStorage.js\" module as `ShardStorage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ShardStorage from \"./ShardStorage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Sharding",
+    "description": "Re-exports all named exports from the \"./Sharding.js\" module as `Sharding`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Sharding from \"./Sharding.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingConfig",
+    "description": "Re-exports all named exports from the \"./ShardingConfig.js\" module as `ShardingConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ShardingConfig from \"./ShardingConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ShardingRegistrationEvent",
+    "description": "Re-exports all named exports from the \"./ShardingRegistrationEvent.js\" module as `ShardingRegistrationEvent`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ShardingRegistrationEvent from \"./ShardingRegistrationEvent.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Singleton",
+    "description": "Re-exports all named exports from the \"./Singleton.js\" module as `Singleton`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Singleton from \"./Singleton.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SingletonAddress",
+    "description": "Re-exports all named exports from the \"./SingletonAddress.js\" module as `SingletonAddress`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SingletonAddress from \"./SingletonAddress.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Snowflake",
+    "description": "Re-exports all named exports from the \"./Snowflake.js\" module as `Snowflake`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Snowflake from \"./Snowflake.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SocketRunner",
+    "description": "Re-exports all named exports from the \"./SocketRunner.js\" module as `SocketRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SocketRunner from \"./SocketRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SocketShardManager",
+    "description": "Re-exports all named exports from the \"./SocketShardManager.js\" module as `SocketShardManager`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SocketShardManager from \"./SocketShardManager.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SqlMessageStorage",
+    "description": "Re-exports all named exports from the \"./SqlMessageStorage.js\" module as `SqlMessageStorage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlMessageStorage from \"./SqlMessageStorage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SqlShardStorage",
+    "description": "Re-exports all named exports from the \"./SqlShardStorage.js\" module as `SqlShardStorage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlShardStorage from \"./SqlShardStorage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "SynchronizedClock",
+    "description": "Re-exports all named exports from the \"./SynchronizedClock.js\" module as `SynchronizedClock`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SynchronizedClock from \"./SynchronizedClock.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "MachineId.ts",
@@ -3515,7 +4075,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (this: unknown, options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly saveRequest: <R extends Any>(envelope: OutgoingRequest<R>) => Effect.Effect<MessageStorage.SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly repliesFor: <R extends Any>(requests: Iterable<OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly registerReplyHandler: <R extends Any>(message: OutgoingRequest<R> | IncomingRequest<R>) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -3530,7 +4090,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L775"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L782"
   },
   {
     "_tag": "Function",
@@ -3545,7 +4105,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; readonly replyPollInterval?: DurationInput | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L787"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L794"
   },
   {
     "_tag": "Constant",
@@ -3560,7 +4120,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (this: unknown, options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly getAssignments: Effect.Effect<ReadonlyMap<ShardId, Option<RunnerAddress>>, PersistenceError>; readonly saveAssignments: (assignments: Iterable<readonly [ShardId, Option<RunnerAddress>]>) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<[RunnerAddress, Runner]>, PersistenceError>; readonly saveRunners: (runners: Iterable<readonly [RunnerAddress, Runner]>) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -3575,7 +4135,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L290"
   },
   {
     "_tag": "Function",
@@ -3590,7 +4150,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L300"
   },
   {
     "_tag": "Constant",

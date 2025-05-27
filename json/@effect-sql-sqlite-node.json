@@ -1,5 +1,37 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-node",
+    "name": "SqliteClient",
+    "description": "Re-exports all named exports from the \"./SqliteClient.js\" module as `SqliteClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteClient from \"./SqliteClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-node/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-node",
+    "name": "SqliteMigrator",
+    "description": "Re-exports all named exports from the \"./SqliteMigrator.js\" module as `SqliteMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteMigrator from \"./SqliteMigrator.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-node/src/index.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "SqliteClient.ts",
@@ -163,5 +195,37 @@
     "category": "constructor",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, SqliteClient | Client.SqlClient | CommandExecutor | FileSystem | Path | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-node/src/SqliteMigrator.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-node",
+    "name": "\"@effect/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-node/src/SqliteMigrator.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-node",
+    "name": "\"@effect/sql/Migrator/FileSystem\"",
+    "description": "Re-exports all named exports from the \"@effect/sql/Migrator/FileSystem\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/sql/Migrator/FileSystem\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-node/src/SqliteMigrator.ts#L24"
   }
 ]

@@ -8099,6 +8099,51 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientResponse.ts#L44"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "HttpClientResponse.ts",
+      "path": "src/HttpClientResponse.ts"
+    },
+    "project": "@effect/platform",
+    "name": "schemaBodyJson",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare const schemaBodyJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => <E>(self: IncomingMessage.HttpIncomingMessage<E>) => Effect.Effect<A, E | ParseResult.ParseError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientResponse.ts#L21"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "HttpClientResponse.ts",
+      "path": "src/HttpClientResponse.ts"
+    },
+    "project": "@effect/platform",
+    "name": "schemaBodyUrlParams",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare const schemaBodyUrlParams: <A, I extends Readonly<Record<string, string | ReadonlyArray<string> | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => <E>(self: IncomingMessage.HttpIncomingMessage<E>) => Effect.Effect<A, E | ParseResult.ParseError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientResponse.ts#L26"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "HttpClientResponse.ts",
+      "path": "src/HttpClientResponse.ts"
+    },
+    "project": "@effect/platform",
+    "name": "schemaHeaders",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "schema",
+    "signature": "declare const schemaHeaders: <A, I extends Readonly<Record<string, string | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => <E>(self: IncomingMessage.HttpIncomingMessage<E>) => Effect.Effect<A, ParseResult.ParseError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClientResponse.ts#L31"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "HttpIncomingMessage.ts",
@@ -10443,6 +10488,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L43"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "HttpServerRequest.ts",
+      "path": "src/HttpServerRequest.ts"
+    },
+    "project": "@effect/platform",
+    "name": "maxBodySize",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "fiber refs",
+    "signature": "declare const maxBodySize: FiberRef<Option<FileSystem.Size>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L30"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "HttpServerRespondable.ts",
@@ -11148,6 +11208,950 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpTraceContext.ts#L12"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "ChannelSchema",
+    "description": "Re-exports all named exports from the \"./ChannelSchema.js\" module as `ChannelSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ChannelSchema from \"./ChannelSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Command",
+    "description": "Re-exports all named exports from the \"./Command.js\" module as `Command`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Command from \"./Command.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "CommandExecutor",
+    "description": "Re-exports all named exports from the \"./CommandExecutor.js\" module as `CommandExecutor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as CommandExecutor from \"./CommandExecutor.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Cookies",
+    "description": "Re-exports all named exports from the \"./Cookies.js\" module as `Cookies`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Cookies from \"./Cookies.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Effectify",
+    "description": "Re-exports all named exports from the \"./Effectify.js\" module as `Effectify`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Effectify from \"./Effectify.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Error",
+    "description": "Re-exports all named exports from the \"./Error.js\" module as `Error`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Error from \"./Error.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Etag",
+    "description": "Re-exports all named exports from the \"./Etag.js\" module as `Etag`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Etag from \"./Etag.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "FetchHttpClient",
+    "description": "Re-exports all named exports from the \"./FetchHttpClient.js\" module as `FetchHttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as FetchHttpClient from \"./FetchHttpClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "FileSystem",
+    "description": "Re-exports all named exports from the \"./FileSystem.js\" module as `FileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as FileSystem from \"./FileSystem.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Headers",
+    "description": "Re-exports all named exports from the \"./Headers.js\" module as `Headers`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Headers from \"./Headers.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApi",
+    "description": "Re-exports all named exports from the \"./HttpApi.js\" module as `HttpApi`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApi from \"./HttpApi.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiBuilder",
+    "description": "Re-exports all named exports from the \"./HttpApiBuilder.js\" module as `HttpApiBuilder`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiBuilder from \"./HttpApiBuilder.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiClient",
+    "description": "Re-exports all named exports from the \"./HttpApiClient.js\" module as `HttpApiClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiClient from \"./HttpApiClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiEndpoint",
+    "description": "Re-exports all named exports from the \"./HttpApiEndpoint.js\" module as `HttpApiEndpoint`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiEndpoint from \"./HttpApiEndpoint.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiError",
+    "description": "Re-exports all named exports from the \"./HttpApiError.js\" module as `HttpApiError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiError from \"./HttpApiError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L74"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiGroup",
+    "description": "Re-exports all named exports from the \"./HttpApiGroup.js\" module as `HttpApiGroup`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiGroup from \"./HttpApiGroup.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L79"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiMiddleware",
+    "description": "Re-exports all named exports from the \"./HttpApiMiddleware.js\" module as `HttpApiMiddleware`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiMiddleware from \"./HttpApiMiddleware.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiScalar",
+    "description": "Re-exports all named exports from the \"./HttpApiScalar.js\" module as `HttpApiScalar`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiScalar from \"./HttpApiScalar.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L89"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiSchema",
+    "description": "Re-exports all named exports from the \"./HttpApiSchema.js\" module as `HttpApiSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiSchema from \"./HttpApiSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L94"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiSecurity",
+    "description": "Re-exports all named exports from the \"./HttpApiSecurity.js\" module as `HttpApiSecurity`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiSecurity from \"./HttpApiSecurity.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L99"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApiSwagger",
+    "description": "Re-exports all named exports from the \"./HttpApiSwagger.js\" module as `HttpApiSwagger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApiSwagger from \"./HttpApiSwagger.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L104"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpApp",
+    "description": "Re-exports all named exports from the \"./HttpApp.js\" module as `HttpApp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpApp from \"./HttpApp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L109"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpBody",
+    "description": "Re-exports all named exports from the \"./HttpBody.js\" module as `HttpBody`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpBody from \"./HttpBody.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L114"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpClient",
+    "description": "Re-exports all named exports from the \"./HttpClient.js\" module as `HttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpClient from \"./HttpClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L119"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpClientError",
+    "description": "Re-exports all named exports from the \"./HttpClientError.js\" module as `HttpClientError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpClientError from \"./HttpClientError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L124"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpClientRequest",
+    "description": "Re-exports all named exports from the \"./HttpClientRequest.js\" module as `HttpClientRequest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpClientRequest from \"./HttpClientRequest.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L129"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpClientResponse",
+    "description": "Re-exports all named exports from the \"./HttpClientResponse.js\" module as `HttpClientResponse`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpClientResponse from \"./HttpClientResponse.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L134"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpIncomingMessage",
+    "description": "Re-exports all named exports from the \"./HttpIncomingMessage.js\" module as `HttpIncomingMessage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpIncomingMessage from \"./HttpIncomingMessage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L139"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpMethod",
+    "description": "Re-exports all named exports from the \"./HttpMethod.js\" module as `HttpMethod`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export * as HttpMethod from \"./HttpMethod.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L145"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpMiddleware",
+    "description": "Re-exports all named exports from the \"./HttpMiddleware.js\" module as `HttpMiddleware`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpMiddleware from \"./HttpMiddleware.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L150"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpMultiplex",
+    "description": "Re-exports all named exports from the \"./HttpMultiplex.js\" module as `HttpMultiplex`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpMultiplex from \"./HttpMultiplex.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L155"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpPlatform",
+    "description": "Re-exports all named exports from the \"./HttpPlatform.js\" module as `HttpPlatform`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpPlatform from \"./HttpPlatform.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L160"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpRouter",
+    "description": "Re-exports all named exports from the \"./HttpRouter.js\" module as `HttpRouter`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpRouter from \"./HttpRouter.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L165"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpServer",
+    "description": "Re-exports all named exports from the \"./HttpServer.js\" module as `HttpServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpServer from \"./HttpServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L170"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpServerError",
+    "description": "Re-exports all named exports from the \"./HttpServerError.js\" module as `HttpServerError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpServerError from \"./HttpServerError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L175"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpServerRequest",
+    "description": "Re-exports all named exports from the \"./HttpServerRequest.js\" module as `HttpServerRequest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpServerRequest from \"./HttpServerRequest.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L180"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpServerRespondable",
+    "description": "Re-exports all named exports from the \"./HttpServerRespondable.js\" module as `HttpServerRespondable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpServerRespondable from \"./HttpServerRespondable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L185"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpServerResponse",
+    "description": "Re-exports all named exports from the \"./HttpServerResponse.js\" module as `HttpServerResponse`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpServerResponse from \"./HttpServerResponse.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L190"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "HttpTraceContext",
+    "description": "Re-exports all named exports from the \"./HttpTraceContext.js\" module as `HttpTraceContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HttpTraceContext from \"./HttpTraceContext.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L195"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "KeyValueStore",
+    "description": "Re-exports all named exports from the \"./KeyValueStore.js\" module as `KeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as KeyValueStore from \"./KeyValueStore.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L200"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "MsgPack",
+    "description": "Re-exports all named exports from the \"./MsgPack.js\" module as `MsgPack`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as MsgPack from \"./MsgPack.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L205"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Multipart",
+    "description": "Re-exports all named exports from the \"./Multipart.js\" module as `Multipart`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Multipart from \"./Multipart.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L210"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Ndjson",
+    "description": "Re-exports all named exports from the \"./Ndjson.js\" module as `Ndjson`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Ndjson from \"./Ndjson.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L215"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "OpenApi",
+    "description": "Re-exports all named exports from the \"./OpenApi.js\" module as `OpenApi`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenApi from \"./OpenApi.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L220"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "OpenApiJsonSchema",
+    "description": "Re-exports all named exports from the \"./OpenApiJsonSchema.js\" module as `OpenApiJsonSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenApiJsonSchema from \"./OpenApiJsonSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L225"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Path",
+    "description": "Re-exports all named exports from the \"./Path.js\" module as `Path`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Path from \"./Path.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L230"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "PlatformConfigProvider",
+    "description": "Re-exports all named exports from the \"./PlatformConfigProvider.js\" module as `PlatformConfigProvider`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PlatformConfigProvider from \"./PlatformConfigProvider.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L235"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "PlatformLogger",
+    "description": "Re-exports all named exports from the \"./PlatformLogger.js\" module as `PlatformLogger`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as PlatformLogger from \"./PlatformLogger.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L240"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Runtime",
+    "description": "Re-exports all named exports from the \"./Runtime.js\" module as `Runtime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Runtime from \"./Runtime.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L245"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Socket",
+    "description": "Re-exports all named exports from the \"./Socket.js\" module as `Socket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Socket from \"./Socket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L250"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SocketServer",
+    "description": "Re-exports all named exports from the \"./SocketServer.js\" module as `SocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SocketServer from \"./SocketServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L255"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Template",
+    "description": "Re-exports all named exports from the \"./Template.js\" module as `Template`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Template from \"./Template.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L260"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Terminal",
+    "description": "Re-exports all named exports from the \"./Terminal.js\" module as `Terminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Terminal from \"./Terminal.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L265"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Transferable",
+    "description": "Re-exports all named exports from the \"./Transferable.js\" module as `Transferable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Transferable from \"./Transferable.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L270"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Url",
+    "description": "Re-exports all named exports from the \"./Url.js\" module as `Url`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Url from \"./Url.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L275"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "UrlParams",
+    "description": "Re-exports all named exports from the \"./UrlParams.js\" module as `UrlParams`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as UrlParams from \"./UrlParams.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L280"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Worker",
+    "description": "Re-exports all named exports from the \"./Worker.js\" module as `Worker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Worker from \"./Worker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L285"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "WorkerError",
+    "description": "Re-exports all named exports from the \"./WorkerError.js\" module as `WorkerError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as WorkerError from \"./WorkerError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L290"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform",
+    "name": "WorkerRunner",
+    "description": "Re-exports all named exports from the \"./WorkerRunner.js\" module as `WorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as WorkerRunner from \"./WorkerRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L295"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "KeyValueStore.ts",
@@ -11537,6 +12541,21 @@
     "category": "errors",
     "signature": "type ErrorTypeId = typeof ErrorTypeId",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "MsgPack.ts",
+      "path": "src/MsgPack.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Msgpackr",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "declare const Msgpackr: typeof Msgpackr",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L22"
   },
   {
     "_tag": "Constant",

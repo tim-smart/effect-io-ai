@@ -2931,6 +2931,262 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Span.ts#L11"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Args",
+    "description": "Re-exports all named exports from the \"./Args.js\" module as `Args`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Args from \"./Args.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "AutoCorrect",
+    "description": "Re-exports all named exports from the \"./AutoCorrect.js\" module as `AutoCorrect`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AutoCorrect from \"./AutoCorrect.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "BuiltInOptions",
+    "description": "Re-exports all named exports from the \"./BuiltInOptions.js\" module as `BuiltInOptions`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BuiltInOptions from \"./BuiltInOptions.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "CliApp",
+    "description": "Re-exports all named exports from the \"./CliApp.js\" module as `CliApp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as CliApp from \"./CliApp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "CliConfig",
+    "description": "Re-exports all named exports from the \"./CliConfig.js\" module as `CliConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as CliConfig from \"./CliConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Command",
+    "description": "Re-exports all named exports from the \"./Command.js\" module as `Command`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Command from \"./Command.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "CommandDescriptor",
+    "description": "Re-exports all named exports from the \"./CommandDescriptor.js\" module as `CommandDescriptor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as CommandDescriptor from \"./CommandDescriptor.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "CommandDirective",
+    "description": "Re-exports all named exports from the \"./CommandDirective.js\" module as `CommandDirective`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as CommandDirective from \"./CommandDirective.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "ConfigFile",
+    "description": "Re-exports all named exports from the \"./ConfigFile.js\" module as `ConfigFile`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "2.0.0",
+    "category": null,
+    "signature": "export * as ConfigFile from \"./ConfigFile.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "HelpDoc",
+    "description": "Re-exports all named exports from the \"./HelpDoc.js\" module as `HelpDoc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as HelpDoc from \"./HelpDoc.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Options",
+    "description": "Re-exports all named exports from the \"./Options.js\" module as `Options`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Options from \"./Options.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Primitive",
+    "description": "Re-exports all named exports from the \"./Primitive.js\" module as `Primitive`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Primitive from \"./Primitive.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Prompt",
+    "description": "Re-exports all named exports from the \"./Prompt.js\" module as `Prompt`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Prompt from \"./Prompt.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Usage",
+    "description": "Re-exports all named exports from the \"./Usage.js\" module as `Usage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Usage from \"./Usage.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "ValidationError",
+    "description": "Re-exports all named exports from the \"./ValidationError.js\" module as `ValidationError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ValidationError from \"./ValidationError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L74"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cli",
+    "name": "Span",
+    "description": "Re-exports all named exports from the \"./HelpDoc/Span.js\" module as `Span`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Span from \"./HelpDoc/Span.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/index.ts#L79"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Options.ts",

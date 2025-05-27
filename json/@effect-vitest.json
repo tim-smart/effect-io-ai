@@ -181,6 +181,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L22"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "\"vitest\"",
+    "description": "Re-exports all named exports from the \"vitest\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"vitest\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L17"
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "index.ts",

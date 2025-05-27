@@ -30,6 +30,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterRunnerHttp.ts#L51"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "BunClusterRunnerSocket.ts",
+      "path": "src/BunClusterRunnerSocket.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterRunnerSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterRunnerSocket.ts#L9"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "BunClusterShardManagerHttp.ts",
@@ -58,6 +74,22 @@
     "category": "Layers",
     "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = \"noop\">(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; }) => Layer.Layer<ShardManager.ShardManager, ServeError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterShardManagerHttp.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunClusterShardManagerSocket.ts",
+      "path": "src/BunClusterShardManagerSocket.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterShardManagerSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterShardManagerSocket.ts#L9"
   },
   {
     "_tag": "Constant",
@@ -377,6 +409,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L11"
   },
   {
+    "_tag": "Export",
+    "module": {
+      "name": "BunSink.ts",
+      "path": "src/BunSink.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeSink\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSink\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSink\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSink.ts#L8"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "BunSocket.ts",
@@ -405,6 +453,54 @@
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L16"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunSocket.ts",
+      "path": "src/BunSocket.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeSocket\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocket\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSocket\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunSocketServer.ts",
+      "path": "src/BunSocketServer.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeSocketServer\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocketServer\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeSocketServer\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocketServer.ts#L8"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunStream.ts",
+      "path": "src/BunStream.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "\"@effect/platform-node-shared/NodeStream\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeStream\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeStream\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L8"
   },
   {
     "_tag": "Constant",
@@ -510,5 +606,356 @@
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "BunWorkerRunner.ts",
+      "path": "src/BunWorkerRunner.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "launch",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunClusterRunnerHttp",
+    "description": "Re-exports all named exports from the \"./BunClusterRunnerHttp.js\" module as `BunClusterRunnerHttp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunClusterRunnerHttp from \"./BunClusterRunnerHttp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunClusterRunnerSocket",
+    "description": "Re-exports all named exports from the \"./BunClusterRunnerSocket.js\" module as `BunClusterRunnerSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunClusterRunnerSocket from \"./BunClusterRunnerSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunClusterShardManagerHttp",
+    "description": "Re-exports all named exports from the \"./BunClusterShardManagerHttp.js\" module as `BunClusterShardManagerHttp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunClusterShardManagerHttp from \"./BunClusterShardManagerHttp.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunClusterShardManagerSocket",
+    "description": "Re-exports all named exports from the \"./BunClusterShardManagerSocket.js\" module as `BunClusterShardManagerSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunClusterShardManagerSocket from \"./BunClusterShardManagerSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunCommandExecutor",
+    "description": "Re-exports all named exports from the \"./BunCommandExecutor.js\" module as `BunCommandExecutor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunCommandExecutor from \"./BunCommandExecutor.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunContext",
+    "description": "Re-exports all named exports from the \"./BunContext.js\" module as `BunContext`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunContext from \"./BunContext.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunFileSystem",
+    "description": "Re-exports all named exports from the \"./BunFileSystem.js\" module as `BunFileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunFileSystem from \"./BunFileSystem.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L34"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunHttpPlatform",
+    "description": "Re-exports all named exports from the \"./BunHttpPlatform.js\" module as `BunHttpPlatform`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunHttpPlatform from \"./BunHttpPlatform.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunHttpServer",
+    "description": "Re-exports all named exports from the \"./BunHttpServer.js\" module as `BunHttpServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunHttpServer from \"./BunHttpServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L44"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunHttpServerRequest",
+    "description": "Re-exports all named exports from the \"./BunHttpServerRequest.js\" module as `BunHttpServerRequest`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunHttpServerRequest from \"./BunHttpServerRequest.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L49"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunKeyValueStore",
+    "description": "Re-exports all named exports from the \"./BunKeyValueStore.js\" module as `BunKeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunKeyValueStore from \"./BunKeyValueStore.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L54"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunMultipart",
+    "description": "Re-exports all named exports from the \"./BunMultipart.js\" module as `BunMultipart`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunMultipart from \"./BunMultipart.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunPath",
+    "description": "Re-exports all named exports from the \"./BunPath.js\" module as `BunPath`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunPath from \"./BunPath.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunRuntime",
+    "description": "Re-exports all named exports from the \"./BunRuntime.js\" module as `BunRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunRuntime from \"./BunRuntime.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L69"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunSink",
+    "description": "Re-exports all named exports from the \"./BunSink.js\" module as `BunSink`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunSink from \"./BunSink.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L74"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunSocket",
+    "description": "Re-exports all named exports from the \"./BunSocket.js\" module as `BunSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunSocket from \"./BunSocket.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L79"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunSocketServer",
+    "description": "Re-exports all named exports from the \"./BunSocketServer.js\" module as `BunSocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunSocketServer from \"./BunSocketServer.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunStream",
+    "description": "Re-exports all named exports from the \"./BunStream.js\" module as `BunStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunStream from \"./BunStream.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L89"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunTerminal",
+    "description": "Re-exports all named exports from the \"./BunTerminal.js\" module as `BunTerminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunTerminal from \"./BunTerminal.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L94"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunWorker",
+    "description": "Re-exports all named exports from the \"./BunWorker.js\" module as `BunWorker`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunWorker from \"./BunWorker.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L99"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunWorkerRunner",
+    "description": "Re-exports all named exports from the \"./BunWorkerRunner.js\" module as `BunWorkerRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunWorkerRunner from \"./BunWorkerRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L104"
   }
 ]
