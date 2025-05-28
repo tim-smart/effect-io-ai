@@ -26,6 +26,6 @@ inputs.
 declare const collectAllInputs: <A>() => Schedule<Chunk.Chunk<A>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L424)
 
 Since v2.0.0

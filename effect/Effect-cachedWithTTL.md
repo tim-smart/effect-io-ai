@@ -74,6 +74,6 @@ additional effect for manually invalidating the cached value.
 declare const cachedWithTTL: { (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<Effect<A, E>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L340)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L351)
 
 Since v2.0.0

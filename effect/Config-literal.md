@@ -19,6 +19,6 @@ const config = Config.literal("http", "https")("PROTOCOL")
 declare const literal: <Literals extends ReadonlyArray<LiteralValue>>(...literals: Literals) => (name?: string) => Config<Literals[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L202)
 
 Since v2.0.0

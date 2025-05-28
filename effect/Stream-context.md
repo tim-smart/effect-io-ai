@@ -11,6 +11,6 @@ Accesses the whole context of the stream.
 declare const context: <R>() => Stream<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1523)
 
 Since v2.0.0

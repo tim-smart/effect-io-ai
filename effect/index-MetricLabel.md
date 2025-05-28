@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MetricLabel.js" module as `MetricLabel`
 export * as MetricLabel from "./MetricLabel.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L784)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L790)
 
 Since v2.0.0

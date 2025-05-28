@@ -12,6 +12,6 @@ data is missing from configuration, and `Some` otherwise.
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L321)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L330)
 
 Since v2.0.0

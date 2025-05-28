@@ -11,6 +11,6 @@ The stream that never produces any value or fails with any error.
 declare const never: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3149)
 
 Since v2.0.0

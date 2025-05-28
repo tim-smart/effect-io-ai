@@ -21,6 +21,6 @@ Any sink can be used here, but see `Sink.foldWeightedEffect` and
 declare const aggregate: { <B, A, A2, E2, R2>(sink: Sink.Sink<B, A | A2, A2, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<B, E2 | E, R2 | R>; <A, E, R, B, A2, E2, R2>(self: Stream<A, E, R>, sink: Sink.Sink<B, A | A2, A2, E2, R2>): Stream<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L244)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L245)
 
 Since v2.0.0

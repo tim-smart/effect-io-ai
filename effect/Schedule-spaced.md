@@ -22,6 +22,6 @@ from the end of the last execution, not from the schedule start time.
 declare const spaced: (duration: Duration.DurationInput) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1755)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1757)
 
 Since v2.0.0

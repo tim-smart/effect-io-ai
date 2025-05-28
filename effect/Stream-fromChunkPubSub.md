@@ -15,6 +15,6 @@ Creates a stream from a subscription to a `PubSub`.
 declare const fromChunkPubSub: { <A>(pubsub: PubSub.PubSub<Chunk.Chunk<A>>, options: { readonly scoped: true; readonly shutdown?: boolean | undefined; }): Effect.Effect<Stream<A>, never, Scope.Scope>; <A>(pubsub: PubSub.PubSub<Chunk.Chunk<A>>, options?: { readonly scoped?: false | undefined; readonly shutdown?: boolean | undefined; } | undefined): Stream<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1954)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1955)
 
 Since v2.0.0

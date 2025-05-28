@@ -19,6 +19,6 @@ measuring execution loops, or implementing infinite polling scenarios.
 declare const count: Schedule<number, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L624)
 
 Since v2.0.0

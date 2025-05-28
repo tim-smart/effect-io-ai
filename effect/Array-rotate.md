@@ -21,6 +21,6 @@ console.log(result) // ['c', 'd', 'a', 'b']
 declare const rotate: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1665)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1740)
 
 Since v2.0.0

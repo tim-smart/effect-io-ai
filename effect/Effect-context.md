@@ -18,6 +18,6 @@ and work with the context directly within an effect.
 declare const context: <R>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7379)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7401)
 
 Since v2.0.0

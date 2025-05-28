@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ScheduleDecision.js" module as `Schedul
 export * as ScheduleDecision from "./ScheduleDecision.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1224)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1230)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ schedule will be delayed by the duration it produces.
 declare const delayedSchedule: <In, R>(schedule: Schedule<Duration.Duration, In, R>) => Schedule<Duration.Duration, In, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L806)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L808)
 
 Since v2.0.0

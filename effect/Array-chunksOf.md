@@ -34,6 +34,6 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 declare const chunksOf: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, NonEmptyArray<ReadonlyArray.Infer<S>>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<NonEmptyArray<A>>; <A>(self: Iterable<A>, n: number): Array<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1981)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2056)
 
 Since v2.0.0

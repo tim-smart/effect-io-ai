@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Hash.js" module as `Hash`.
 export * as Hash from "./Hash.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L360)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L366)
 
 Since v2.0.0

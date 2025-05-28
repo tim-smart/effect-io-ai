@@ -89,6 +89,6 @@ const resource = Effect.acquireRelease(acquire, release)
 declare const acquireRelease: { <A, X, R2>(release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>): <E, R>(acquire: Effect<A, E, R>) => Effect<A, E, Scope.Scope | R2 | R>; <A, E, R, X, R2>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R2>): Effect<A, E, Scope.Scope | R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5453)
 
 Since v2.0.0

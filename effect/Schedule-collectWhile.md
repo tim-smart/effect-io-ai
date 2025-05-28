@@ -17,6 +17,6 @@ as the condition fails, the schedule stops.
 declare const collectWhile: <A>(f: Predicate<A>) => Schedule<Chunk.Chunk<A>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L488)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L490)
 
 Since v2.0.0

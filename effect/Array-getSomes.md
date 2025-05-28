@@ -20,6 +20,6 @@ console.log(result) // [1, 2]
 declare const getSomes: <T extends Iterable<Option.Option<X>>, X = any>(self: T) => Array<Option.Option.Value<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2559)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2634)
 
 Since v2.0.0

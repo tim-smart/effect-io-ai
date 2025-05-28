@@ -22,6 +22,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const as: { <B>(value: B): <A, E, R>(self: Stream<A, E, R>) => Stream<B, E, R>; <A, E, R, B>(self: Stream<A, E, R>, value: B): Stream<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L311)
 
 Since v2.0.0

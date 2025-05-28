@@ -20,6 +20,6 @@ detected when the schedule is executed.
 declare const cron: { (cron: Cron.Cron): Schedule<[number, number]>; (expression: string, tz?: DateTime.TimeZone | string): Schedule<[number, number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L639)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L641)
 
 Since v2.0.0

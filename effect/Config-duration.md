@@ -11,6 +11,6 @@ Constructs a config for a duration value.
 declare const duration: (name?: string) => Config<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L211)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L220)
 
 Since v2.5.0

@@ -41,6 +41,6 @@ Effect.runPromise(program).then(console.log)
 declare const filterMap: { <Eff extends Effect<any, any, any>, B>(pf: (a: Effect.Success<Eff>) => Option.Option<B>): (elements: Iterable<Eff>) => Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, B>(elements: Iterable<Eff>, pf: (a: Effect.Success<Eff>) => Option.Option<B>): Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1464)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1475)
 
 Since v2.0.0

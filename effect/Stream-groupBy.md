@@ -43,6 +43,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const groupBy: { <A, K, V, E2, R2>(f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>, options?: { readonly bufferSize?: number | undefined; } | undefined): <E, R>(self: Stream<A, E, R>) => GroupBy.GroupBy<K, V, E2 | E, R2 | R>; <A, E, R, K, V, E2, R2>(self: Stream<A, E, R>, f: (a: A) => Effect.Effect<readonly [K, V], E2, R2>, options?: { readonly bufferSize?: number | undefined; } | undefined): GroupBy.GroupBy<K, V, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2282)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2283)
 
 Since v2.0.0

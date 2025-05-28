@@ -45,6 +45,6 @@ const program = pipe(
 declare const filterEffectOrFail: { <A, E2, R2, E3>(options: { readonly predicate: (a: NoInfer<A>) => Effect<boolean, E2, R2>; readonly orFailWith: (a: NoInfer<A>) => E3; }): <E, R>(self: Effect<A, E, R>) => Effect<A, E | E2 | E3, R | R2>; <A, E, R, E2, R2, E3>(self: Effect<A, E, R>, options: { readonly predicate: (a: A) => Effect<boolean, E2, R2>; readonly orFailWith: (a: A) => E3; }): Effect<A, E | E2 | E3, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8569)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8591)
 
 Since v3.13.0

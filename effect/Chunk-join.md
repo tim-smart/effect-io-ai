@@ -11,6 +11,6 @@ Joins the elements together with "sep" in the middle.
 declare const join: { (sep: string): (self: Chunk<string>) => string; (self: Chunk<string>, sep: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1444)
 
 Since v2.0.0

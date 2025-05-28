@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Function.js" module as `Function`.
 export * as Function from "./Function.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L329)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L335)
 
 Since v2.0.0

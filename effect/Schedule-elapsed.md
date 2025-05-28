@@ -20,6 +20,6 @@ implementing logic based on how long a process has been running.
 declare const elapsed: Schedule<Duration.Duration, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L961)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L963)
 
 Since v2.0.0

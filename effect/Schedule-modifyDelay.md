@@ -23,6 +23,6 @@ adjusted delay.
 declare const modifyDelay: { <Out>(f: (out: Out, duration: Duration.Duration) => Duration.DurationInput): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>; <Out, In, R>(self: Schedule<Out, In, R>, f: (out: Out, duration: Duration.Duration) => Duration.DurationInput): Schedule<Out, In, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1354)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1356)
 
 Since v2.0.0

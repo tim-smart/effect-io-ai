@@ -11,6 +11,6 @@ Returns the number of entries within the `HashMap`.
 declare const size: <K, V>(self: HashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L262)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L283)
 
 Since v2.0.0

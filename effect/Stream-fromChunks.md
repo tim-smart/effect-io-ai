@@ -23,6 +23,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const fromChunks: <A>(...chunks: Array<Chunk.Chunk<A>>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1999)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2000)
 
 Since v2.0.0

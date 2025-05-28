@@ -25,6 +25,6 @@ such as API calls, database lookups, or other asynchronous computations.
 declare const mapInputEffect: { <In2, In, R2>(f: (in2: In2) => Effect.Effect<In, never, R2>): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In2, R2 | R>; <Out, In, R, In2, R2>(self: Schedule<Out, In, R>, f: (in2: In2) => Effect.Effect<In, never, R2>): Schedule<Out, In2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L574)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L576)
 
 Since v2.0.0

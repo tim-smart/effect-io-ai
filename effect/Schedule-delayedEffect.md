@@ -26,6 +26,6 @@ factors, such as API calls, database queries, or dynamic system conditions.
 declare const delayedEffect: { <R2>(f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, R2>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>; <Out, In, R, R2>(self: Schedule<Out, In, R>, f: (duration: Duration.Duration) => Effect.Effect<Duration.DurationInput, never, R2>): Schedule<Out, In, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L784)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L786)
 
 Since v2.0.0

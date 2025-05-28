@@ -32,6 +32,6 @@ export interface Effect<out A, out E = never, out R = never> extends Effect.Vari
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L111)
 
 Since v2.0.0

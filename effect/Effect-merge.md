@@ -37,6 +37,6 @@ const recovered = Effect.merge(program)
 declare const merge: <A, E, R>(self: Effect<A, E, R>) => Effect<E | A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5339)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5361)
 
 Since v2.0.0

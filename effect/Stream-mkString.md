@@ -12,6 +12,6 @@ from the stream.
 declare const mkString: <E, R>(self: Stream<string, E, R>) => Effect.Effect<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3141)
 
 Since v2.0.0

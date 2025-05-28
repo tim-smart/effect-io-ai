@@ -11,6 +11,6 @@ Constructs a config which contains the specified lazy value.
 declare const sync: <A>(value: LazyArg<A>) => Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L438)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ full control over how the schedule behaves at each step.
 declare const makeWithState: <S, In, Out, R = never>(initial: S, step: (now: number, input: In, state: S) => Effect.Effect<readonly [S, Out, ScheduleDecision.ScheduleDecision], never, R>) => Schedule<Out, In, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L166)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L168)
 
 Since v2.0.0

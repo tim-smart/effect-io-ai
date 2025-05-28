@@ -25,6 +25,6 @@ computation.
 declare const reduceEffect: { <Z, Out, R2>(zero: Z, f: (z: Z, out: Out) => Effect.Effect<Z, never, R2>): <In, R>(self: Schedule<Out, In, R>) => Schedule<Z, In, R2 | R>; <Out, In, R, Z, R2>(self: Schedule<Out, In, R>, zero: Z, f: (z: Z, out: Out) => Effect.Effect<Z, never, R2>): Schedule<Z, In, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1644)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1646)
 
 Since v2.0.0

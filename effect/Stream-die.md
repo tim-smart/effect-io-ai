@@ -11,6 +11,6 @@ The stream that dies with the specified defect.
 declare const die: (defect: unknown) => Stream<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1249)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1250)
 
 Since v2.0.0

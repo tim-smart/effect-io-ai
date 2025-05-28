@@ -20,6 +20,6 @@ console.log(result) // [1, 2, 3]
 declare const dedupeAdjacentWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3088)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3163)
 
 Since v2.0.0

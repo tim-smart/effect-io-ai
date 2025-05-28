@@ -11,6 +11,6 @@ Constructs a config that fails with the specified message.
 declare const fail: (message: string) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L170)
 
 Since v2.0.0

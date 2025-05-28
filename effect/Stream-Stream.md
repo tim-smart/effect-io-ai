@@ -29,6 +29,6 @@ export interface Stream<out A, out E = never, out R = never> extends Stream.Vari
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L70)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L71)
 
 Since v2.0.0

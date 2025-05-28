@@ -16,6 +16,6 @@ will continue but no longer backpressure on them.
 declare const distributedWithDynamic: { <A>(options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<Predicate<number>, never, never>; }): <E, R>(self: Stream<A, E, R>) => Effect.Effect<Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>, never, Scope.Scope | R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly maximumLag: number; readonly decide: (a: A) => Effect.Effect<Predicate<number>, never, never>; }): Effect.Effect<Effect.Effect<[number, Queue.Dequeue<Exit.Exit<A, Option.Option<E>>>], never, never>, never, Scope.Scope | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1306)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1307)
 
 Since v2.0.0

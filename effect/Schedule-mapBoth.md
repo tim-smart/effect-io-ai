@@ -22,6 +22,6 @@ a different input type while modifying its outputs as well.
 declare const mapBoth: { <In2, In, Out, Out2>(options: { readonly onInput: (in2: In2) => In; readonly onOutput: (out: Out) => Out2; }): <R>(self: Schedule<Out, In, R>) => Schedule<Out2, In2, R>; <Out, In, R, In2, Out2>(self: Schedule<Out, In, R>, options: { readonly onInput: (in2: In2) => In; readonly onOutput: (out: Out) => Out2; }): Schedule<Out2, In2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L838)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L840)
 
 Since v2.0.0

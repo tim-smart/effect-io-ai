@@ -47,6 +47,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const buffer: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L725)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L726)
 
 Since v2.0.0

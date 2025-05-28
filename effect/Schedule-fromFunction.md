@@ -22,6 +22,6 @@ dynamic transformations of incoming data.
 declare const fromFunction: <A, B>(f: (a: A) => B) => Schedule<B, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1118)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1120)
 
 Since v2.0.0

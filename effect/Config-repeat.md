@@ -12,6 +12,6 @@ structure of this config.
 declare const repeat: <A>(self: Config<A>) => Config<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L341)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L350)
 
 Since v2.0.0

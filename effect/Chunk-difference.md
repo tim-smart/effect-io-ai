@@ -12,6 +12,6 @@ The order and references of result values are determined by the first `Chunk`.
 declare const difference: { <A>(that: Chunk<A>): (self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, that: Chunk<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1470)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1489)
 
 Since v3.2.0

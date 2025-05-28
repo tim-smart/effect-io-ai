@@ -11,6 +11,6 @@ Creates a stream from a TQueue of values
 declare const fromTQueue: <A>(queue: TDequeue<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2162)
 
 Since v3.10.0

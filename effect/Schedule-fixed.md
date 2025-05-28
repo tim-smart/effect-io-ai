@@ -28,6 +28,6 @@ executions.
 declare const fixed: (interval: Duration.DurationInput) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1047)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1049)
 
 Since v2.0.0

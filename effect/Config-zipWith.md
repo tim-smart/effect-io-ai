@@ -12,6 +12,6 @@ using the provided function.
 declare const zipWith: { <B, A, C>(that: Config<B>, f: (a: A, b: B) => C): (self: Config<A>) => Config<C>; <A, B, C>(self: Config<A>, that: Config<B>, f: (a: A, b: B) => C): Config<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L510)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L539)
 
 Since v2.0.0

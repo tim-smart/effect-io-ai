@@ -22,6 +22,6 @@ console.log(result) // true
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Iterable<A>) => boolean; (self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1704)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1779)
 
 Since v2.0.0

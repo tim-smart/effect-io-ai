@@ -52,6 +52,6 @@ Effect.runFork(program)
 declare const catch: { <N extends keyof E, K extends E[N] & string, E, A1, E1, R1>(discriminator: N, options: { readonly failure: K; readonly onFailure: (error: Extract<E, { [n in N]: K; }>) => Effect<A1, E1, R1>; }): <A, R>(self: Effect<A, E, R>) => Effect<A1 | A, E1 | Exclude<E, { [n in N]: K; }>, R1 | R>; <A, E, R, N extends keyof E, K extends E[N] & string, A1, E1, R1>(self: Effect<A, E, R>, discriminator: N, options: { readonly failure: K; readonly onFailure: (error: Extract<E, { [n in N]: K; }>) => Effect<A1, E1, R1>; }): Effect<A | A1, E1 | Exclude<E, { [n in N]: K; }>, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3403)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3414)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Constructs a config for a sequence of values.
 declare const hashMap: <A>(config: Config<A>, name?: string) => Config<HashMap.HashMap<string, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L446)
 
 Since v2.0.0

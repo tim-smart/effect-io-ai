@@ -11,6 +11,6 @@ Constructs a config for a secret value.
 declare const secret: (name?: string) => Config<Secret.Secret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L350)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L359)
 
 Since v2.0.0

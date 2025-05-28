@@ -24,6 +24,6 @@ running batch jobs or refreshing data.
 declare const hourOfDay: (hour: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L696)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L698)
 
 Since v2.0.0

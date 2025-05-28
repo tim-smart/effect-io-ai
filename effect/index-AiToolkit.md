@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AiToolkit.js" module as `AiToolkit`.
 export * as AiToolkit from "./AiToolkit.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L49)
 
 Since v1.0.0

@@ -40,6 +40,6 @@ pipe(
 declare const groupByKey: { <A, K>(f: (a: A) => K, options?: { readonly bufferSize?: number | undefined; }): <E, R>(self: Stream<A, E, R>) => GroupBy.GroupBy<K, A, E, R>; <A, E, R, K>(self: Stream<A, E, R>, f: (a: A) => K, options?: { readonly bufferSize?: number | undefined; }): GroupBy.GroupBy<K, A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2329)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2330)
 
 Since v2.0.0

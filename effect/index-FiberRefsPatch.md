@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FiberRefsPatch.js" module as `FiberRefs
 export * as FiberRefsPatch from "./FiberRefsPatch.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L320)
 
 Since v2.0.0

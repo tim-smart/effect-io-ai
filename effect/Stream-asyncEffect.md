@@ -14,6 +14,6 @@ stream, by setting it to `None`.
 declare const asyncEffect: <A, E = never, R = never>(register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, R>, bufferSize?: number | "unbounded" | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; } | undefined) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L372)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L373)
 
 Since v2.0.0

@@ -48,6 +48,6 @@ Effect.runPromise(program).then(console.log)
 declare const reduceEffect: { <Z, E, R, Eff extends Effect<any, any, any>>(zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): (elements: Iterable<Eff>) => Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, Z, E, R>(elements: Iterable<Eff>, zero: Effect<Z, E, R>, f: (z: NoInfer<Z>, a: Effect.Success<Eff>, i: number) => Z, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<Z, E | Effect.Error<Eff>, R | Effect.Context<Eff>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2028)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2039)
 
 Since v2.0.0

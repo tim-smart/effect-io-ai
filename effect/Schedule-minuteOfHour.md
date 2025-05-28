@@ -21,6 +21,6 @@ executed.
 declare const minuteOfHour: (minute: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L675)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L677)
 
 Since v2.0.0

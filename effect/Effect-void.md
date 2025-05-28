@@ -19,6 +19,6 @@ from a function but do not need to compute or return any result.
 declare const void: Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3334)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3345)
 
 Since v2.0.0

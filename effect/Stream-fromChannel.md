@@ -11,6 +11,6 @@ Creates a stream from a `Channel`.
 declare const fromChannel: <A, E, R>(channel: Channel.Channel<Chunk.Chunk<A>, unknown, E, unknown, unknown, unknown, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1911)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1912)
 
 Since v2.0.0

@@ -14,6 +14,6 @@ end of the stream, by setting it to `None`.
 declare const asyncScoped: <A, E = never, R = never>(register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<unknown, E, R | Scope.Scope>, bufferSize?: number | "unbounded" | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; } | undefined) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L432)
 
 Since v2.0.0

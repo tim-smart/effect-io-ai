@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LogSpan.js" module as `LogSpan`.
 export * as LogSpan from "./LogSpan.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L693)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L699)
 
 Since v2.0.0

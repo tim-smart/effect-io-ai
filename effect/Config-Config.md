@@ -11,6 +11,6 @@ A `Config` describes the structure of some configuration data.
 export interface Config<out A> extends Config.Variance<A>, Effect.Effect<A, ConfigError.ConfigError> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L38)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L39)
 
 Since v2.0.0

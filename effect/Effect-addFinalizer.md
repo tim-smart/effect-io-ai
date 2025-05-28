@@ -126,6 +126,6 @@ Effect.runPromiseExit(runnable).then(console.log)
 declare const addFinalizer: <X, R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>) => Effect<void, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5659)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5681)
 
 Since v2.0.0

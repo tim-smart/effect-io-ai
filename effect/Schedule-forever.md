@@ -18,6 +18,6 @@ of how many times it has executed.
 declare const forever: Schedule<number, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1062)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1064)
 
 Since v2.0.0

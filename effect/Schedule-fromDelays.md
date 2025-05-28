@@ -22,6 +22,6 @@ fixed pattern like exponential or Fibonacci backoff.
 declare const fromDelays: (delay: Duration.DurationInput, ...delays: Array<Duration.DurationInput>) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1096)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1098)
 
 Since v2.0.0

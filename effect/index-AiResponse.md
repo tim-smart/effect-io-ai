@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AiResponse.js" module as `AiResponse`.
 export * as AiResponse from "./AiResponse.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L34)
 
 Since v1.0.0

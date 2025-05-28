@@ -26,6 +26,6 @@ Effect.runPromiseExit(Stream.runCollect(stream)).then(console.log)
 declare const fail: <E>(error: E) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1581)
 
 Since v2.0.0

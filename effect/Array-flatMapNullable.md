@@ -25,6 +25,6 @@ console.log(result) // [1, 3]
 declare const flatMapNullable: { <A, B>(f: (a: A) => B | null | undefined): (self: ReadonlyArray<A>) => Array<NonNullable<B>>; <A, B>(self: ReadonlyArray<A>, f: (a: A) => B | null | undefined): Array<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2811)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2886)
 
 Since v2.0.0

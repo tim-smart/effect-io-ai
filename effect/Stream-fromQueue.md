@@ -16,6 +16,6 @@ Creates a stream from a queue of values
 declare const fromQueue: <A>(queue: Queue.Dequeue<A>, options?: { readonly maxChunkSize?: number | undefined; readonly shutdown?: boolean | undefined; }) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2148)
 
 Since v2.0.0

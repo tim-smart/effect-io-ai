@@ -21,6 +21,6 @@ when the schedule is executed.
 declare const dayOfWeek: (day: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L735)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L737)
 
 Since v2.0.0

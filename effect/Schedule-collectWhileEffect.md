@@ -22,6 +22,6 @@ on an external or asynchronous factor.
 declare const collectWhileEffect: <A, R>(f: (a: A) => Effect.Effect<boolean, never, R>) => Schedule<Chunk.Chunk<A>, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L507)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L509)
 
 Since v2.0.0

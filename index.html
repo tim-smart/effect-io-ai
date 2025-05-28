@@ -161,6 +161,7 @@
 <li><a href="effect/Array-contains">Array-contains</a></li>
 <li><a href="effect/Array-containsWith">Array-containsWith</a></li>
 <li><a href="effect/Array-copy">Array-copy</a></li>
+<li><a href="effect/Array-countBy">Array-countBy</a></li>
 <li><a href="effect/Array-dedupe">Array-dedupe</a></li>
 <li><a href="effect/Array-dedupeAdjacent">Array-dedupeAdjacent</a></li>
 <li><a href="effect/Array-dedupeAdjacentWith">Array-dedupeAdjacentWith</a></li>
@@ -237,6 +238,7 @@
 <li><a href="effect/Array-reduce">Array-reduce</a></li>
 <li><a href="effect/Array-reduceRight">Array-reduceRight</a></li>
 <li><a href="effect/Array-remove">Array-remove</a></li>
+<li><a href="effect/Array-removeOption">Array-removeOption</a></li>
 <li><a href="effect/Array-replace">Array-replace</a></li>
 <li><a href="effect/Array-replaceOption">Array-replaceOption</a></li>
 <li><a href="effect/Array-replicate">Array-replicate</a></li>
@@ -273,11 +275,14 @@
 <li><a href="effect/Bicovariant-bimapComposition">Bicovariant-bimapComposition</a></li>
 <li><a href="effect/Bicovariant-map">Bicovariant-map</a></li>
 <li><a href="effect/Bicovariant-mapLeft">Bicovariant-mapLeft</a></li>
+<li><a href="effect/BigDecimal-RoundingMode">BigDecimal-RoundingMode</a></li>
 <li><a href="effect/BigDecimal-abs">BigDecimal-abs</a></li>
 <li><a href="effect/BigDecimal-between">BigDecimal-between</a></li>
+<li><a href="effect/BigDecimal-ceil">BigDecimal-ceil</a></li>
 <li><a href="effect/BigDecimal-clamp">BigDecimal-clamp</a></li>
 <li><a href="effect/BigDecimal-divide">BigDecimal-divide</a></li>
 <li><a href="effect/BigDecimal-equals">BigDecimal-equals</a></li>
+<li><a href="effect/BigDecimal-floor">BigDecimal-floor</a></li>
 <li><a href="effect/BigDecimal-format">BigDecimal-format</a></li>
 <li><a href="effect/BigDecimal-fromBigInt">BigDecimal-fromBigInt</a></li>
 <li><a href="effect/BigDecimal-fromNumber">BigDecimal-fromNumber</a></li>
@@ -298,12 +303,15 @@
 <li><a href="effect/BigDecimal-negate">BigDecimal-negate</a></li>
 <li><a href="effect/BigDecimal-normalize">BigDecimal-normalize</a></li>
 <li><a href="effect/BigDecimal-remainder">BigDecimal-remainder</a></li>
+<li><a href="effect/BigDecimal-round">BigDecimal-round</a></li>
 <li><a href="effect/BigDecimal-safeFromNumber">BigDecimal-safeFromNumber</a></li>
 <li><a href="effect/BigDecimal-scale">BigDecimal-scale</a></li>
 <li><a href="effect/BigDecimal-sign">BigDecimal-sign</a></li>
 <li><a href="effect/BigDecimal-subtract">BigDecimal-subtract</a></li>
 <li><a href="effect/BigDecimal-sum">BigDecimal-sum</a></li>
+<li><a href="effect/BigDecimal-sumAll">BigDecimal-sumAll</a></li>
 <li><a href="effect/BigDecimal-toExponential">BigDecimal-toExponential</a></li>
+<li><a href="effect/BigDecimal-truncate">BigDecimal-truncate</a></li>
 <li><a href="effect/BigDecimal-unsafeDivide">BigDecimal-unsafeDivide</a></li>
 <li><a href="effect/BigDecimal-unsafeFromNumber">BigDecimal-unsafeFromNumber</a></li>
 <li><a href="effect/BigDecimal-unsafeFromString">BigDecimal-unsafeFromString</a></li>
@@ -684,6 +692,7 @@
 <li><a href="effect/Config-all">Config-all</a></li>
 <li><a href="effect/Config-array">Config-array</a></li>
 <li><a href="effect/Config-boolean">Config-boolean</a></li>
+<li><a href="effect/Config-branded">Config-branded</a></li>
 <li><a href="effect/Config-chunk">Config-chunk</a></li>
 <li><a href="effect/Config-date">Config-date</a></li>
 <li><a href="effect/Config-duration">Config-duration</a></li>
@@ -703,6 +712,7 @@
 <li><a href="effect/Config-option">Config-option</a></li>
 <li><a href="effect/Config-orElse">Config-orElse</a></li>
 <li><a href="effect/Config-orElseIf">Config-orElseIf</a></li>
+<li><a href="effect/Config-port">Config-port</a></li>
 <li><a href="effect/Config-primitive">Config-primitive</a></li>
 <li><a href="effect/Config-redacted">Config-redacted</a></li>
 <li><a href="effect/Config-repeat">Config-repeat</a></li>
@@ -1329,6 +1339,7 @@
 <li><a href="effect/Effect-withConsole">Effect-withConsole</a></li>
 <li><a href="effect/Effect-withConsoleScoped">Effect-withConsoleScoped</a></li>
 <li><a href="effect/Effect-withEarlyRelease">Effect-withEarlyRelease</a></li>
+<li><a href="effect/Effect-withExecutionPlan">Effect-withExecutionPlan</a></li>
 <li><a href="effect/Effect-withLogSpan">Effect-withLogSpan</a></li>
 <li><a href="effect/Effect-withMaxOpsBeforeYield">Effect-withMaxOpsBeforeYield</a></li>
 <li><a href="effect/Effect-withMetric">Effect-withMetric</a></li>
@@ -1402,6 +1413,8 @@
 <li><a href="effect/EventGroup-EventGroup">EventGroup-EventGroup</a></li>
 <li><a href="effect/EventGroup-empty">EventGroup-empty</a></li>
 <li><a href="effect/EventLog-Handlers">EventLog-Handlers</a></li>
+<li><a href="effect/ExecutionPlan-ExecutionPlan">ExecutionPlan-ExecutionPlan</a></li>
+<li><a href="effect/ExecutionPlan-make">ExecutionPlan-make</a></li>
 <li><a href="effect/ExecutionStrategy-ExecutionStrategy">ExecutionStrategy-ExecutionStrategy</a></li>
 <li><a href="effect/ExecutionStrategy-Parallel">ExecutionStrategy-Parallel</a></li>
 <li><a href="effect/ExecutionStrategy-ParallelN">ExecutionStrategy-ParallelN</a></li>
@@ -1622,6 +1635,7 @@
 <li><a href="effect/HashMap-get">HashMap-get</a></li>
 <li><a href="effect/HashMap-getHash">HashMap-getHash</a></li>
 <li><a href="effect/HashMap-has">HashMap-has</a></li>
+<li><a href="effect/HashMap-hasBy">HashMap-hasBy</a></li>
 <li><a href="effect/HashMap-hasHash">HashMap-hasHash</a></li>
 <li><a href="effect/HashMap-isEmpty">HashMap-isEmpty</a></li>
 <li><a href="effect/HashMap-keySet">HashMap-keySet</a></li>
@@ -1731,6 +1745,7 @@
 <li><a href="effect/Iterable-chunksOf">Iterable-chunksOf</a></li>
 <li><a href="effect/Iterable-contains">Iterable-contains</a></li>
 <li><a href="effect/Iterable-containsWith">Iterable-containsWith</a></li>
+<li><a href="effect/Iterable-countBy">Iterable-countBy</a></li>
 <li><a href="effect/Iterable-dedupeAdjacent">Iterable-dedupeAdjacent</a></li>
 <li><a href="effect/Iterable-dedupeAdjacentWith">Iterable-dedupeAdjacentWith</a></li>
 <li><a href="effect/Iterable-drop">Iterable-drop</a></li>
@@ -3475,6 +3490,7 @@
 <li><a href="effect/Stream-whenCase">Stream-whenCase</a></li>
 <li><a href="effect/Stream-whenCaseEffect">Stream-whenCaseEffect</a></li>
 <li><a href="effect/Stream-whenEffect">Stream-whenEffect</a></li>
+<li><a href="effect/Stream-withExecutionPlan">Stream-withExecutionPlan</a></li>
 <li><a href="effect/Stream-withSpan">Stream-withSpan</a></li>
 <li><a href="effect/Stream-zip">Stream-zip</a></li>
 <li><a href="effect/Stream-zipAll">Stream-zipAll</a></li>
@@ -3930,7 +3946,6 @@
 <li><a href="effect/index-AiInput">index-AiInput</a></li>
 <li><a href="effect/index-AiLanguageModel">index-AiLanguageModel</a></li>
 <li><a href="effect/index-AiModel">index-AiModel</a></li>
-<li><a href="effect/index-AiPlan">index-AiPlan</a></li>
 <li><a href="effect/index-AiResponse">index-AiResponse</a></li>
 <li><a href="effect/index-AiTelemetry">index-AiTelemetry</a></li>
 <li><a href="effect/index-AiTool">index-AiTool</a></li>
@@ -4048,6 +4063,7 @@
 <li><a href="effect/index-EventLogEncryption">index-EventLogEncryption</a></li>
 <li><a href="effect/index-EventLogRemote">index-EventLogRemote</a></li>
 <li><a href="effect/index-EventLogServer">index-EventLogServer</a></li>
+<li><a href="effect/index-ExecutionPlan">index-ExecutionPlan</a></li>
 <li><a href="effect/index-ExecutionStrategy">index-ExecutionStrategy</a></li>
 <li><a href="effect/index-Exit">index-Exit</a></li>
 <li><a href="effect/index-FastCheck">index-FastCheck</a></li>

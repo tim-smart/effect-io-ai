@@ -19,6 +19,6 @@ effect's scope.
 declare const tagMetrics: { (key: string, value: string): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; (values: Record<string, string>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, key: string, value: string): Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, values: Record<string, string>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11627)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11649)
 
 Since v2.0.0

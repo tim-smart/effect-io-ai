@@ -11,6 +11,6 @@ Returns an `IterableIterator` of the values within the `HashMap`.
 declare const values: <K, V>(self: HashMap<K, V>) => IterableIterator<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L251)
 
 Since v2.0.0

@@ -40,6 +40,6 @@ Stream.asyncPush<string>((emit) =>
 declare const asyncPush: <A, E = never, R = never>(register: (emit: Emit.EmitOpsPush<E, A>) => Effect.Effect<unknown, E, R | Scope.Scope>, options?: { readonly bufferSize: "unbounded"; } | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | undefined; } | undefined) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L414)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L415)
 
 Since v3.6.0

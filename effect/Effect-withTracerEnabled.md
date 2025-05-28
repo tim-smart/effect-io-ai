@@ -23,6 +23,6 @@ Effect.succeed(42).pipe(
 declare const withTracerEnabled: { (enabled: boolean): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, enabled: boolean): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12884)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12906)
 
 Since v2.0.0

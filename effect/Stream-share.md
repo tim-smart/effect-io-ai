@@ -13,6 +13,6 @@ When all consumers have exited, the upstream will be finalized.
 declare const share: { <A, E>(config: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly idleTimeToLive?: Duration.DurationInput | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; readonly idleTimeToLive?: Duration.DurationInput | undefined; }): <R>(self: Stream<A, E, R>) => Effect.Effect<Stream<A, E>, never, R | Scope.Scope>; <A, E, R>(self: Stream<A, E, R>, config: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly idleTimeToLive?: Duration.DurationInput | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; readonly idleTimeToLive?: Duration.DurationInput | undefined; }): Effect.Effect<Stream<A, E>, never, R | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L568)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L569)
 
 Since v3.8.0

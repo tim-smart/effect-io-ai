@@ -21,6 +21,6 @@ schedule stops recurring.
 declare const recurWhile: <A>(f: Predicate<A>) => Schedule<A, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1569)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1571)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TArray.js" module as `TArray`.
 export * as TArray from "./TArray.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1359)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1365)
 
 Since v2.0.0

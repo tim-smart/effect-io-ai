@@ -66,6 +66,6 @@ throw errors.
 declare const try: { <A, E>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; }): Effect<A, E>; <A>(thunk: LazyArg<A>): Effect<A, Cause.UnknownException>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4545)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4567)
 
 Since v2.0.0

@@ -80,6 +80,6 @@ Effect.runPromise(result2).then(console.log)
 declare const andThen: { <A, X>(f: (a: NoInfer<A>) => X): <E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <X>(f: NotFunction<X>): <A, E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => X): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: NotFunction<X>): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8906)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8928)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ patterns that can cause bottlenecks.
 declare const jittered: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1232)
 
 Since v2.0.0

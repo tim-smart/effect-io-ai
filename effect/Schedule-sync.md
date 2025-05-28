@@ -12,6 +12,6 @@ produce a constant value.
 declare const sync: <A>(evaluate: LazyArg<A>) => Schedule<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1781)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1783)
 
 Since v2.0.0

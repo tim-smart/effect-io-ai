@@ -21,6 +21,6 @@ are discarded.
 declare const asVoid: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<void, In, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L323)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L325)
 
 Since v2.0.0

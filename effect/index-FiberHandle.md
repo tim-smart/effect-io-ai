@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FiberHandle.js" module as `FiberHandle`
 export * as FiberHandle from "./FiberHandle.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L289)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L295)
 
 Since v2.0.0

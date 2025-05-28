@@ -20,6 +20,6 @@ console.log(result) // [4, 3, 2, 1]
 declare const reverse: <S extends Iterable<any>>(self: S) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1389)
 
 Since v2.0.0

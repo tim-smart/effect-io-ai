@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MetricHook.js" module as `MetricHook`.
 export * as MetricHook from "./MetricHook.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L769)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L775)
 
 Since v2.0.0

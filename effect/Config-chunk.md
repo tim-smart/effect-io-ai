@@ -11,6 +11,6 @@ Constructs a config for a sequence of values.
 declare const chunk: <A>(config: Config<A>, name?: string) => Config<Chunk.Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L154)
 
 Since v2.0.0

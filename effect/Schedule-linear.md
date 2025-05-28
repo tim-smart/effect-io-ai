@@ -24,6 +24,6 @@ between retries increases at a steady rate.
 declare const linear: (base: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1282)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1284)
 
 Since v2.0.0

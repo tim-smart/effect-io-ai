@@ -77,6 +77,6 @@ a specified duration but does not include an effect for manual invalidation.
 declare const cachedInvalidateWithTTL: { (timeToLive: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E>, Effect<void>], never, R>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.DurationInput): Effect<[Effect<A, E>, Effect<void>], never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L415)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L426)
 
 Since v2.0.0

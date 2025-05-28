@@ -18,6 +18,6 @@ invalid values will only be caught at runtime.
 declare const secondOfMinute: (second: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L657)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L659)
 
 Since v2.0.0

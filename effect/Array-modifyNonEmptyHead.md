@@ -20,6 +20,6 @@ console.log(result) // [10, 2, 3]
 declare const modifyNonEmptyHead: { <A, B>(f: (a: A) => B): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1647)
 
 Since v2.0.0

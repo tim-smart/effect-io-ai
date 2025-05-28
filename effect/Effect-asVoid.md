@@ -14,6 +14,6 @@ will fail with the same error.
 declare const asVoid: <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5054)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5076)
 
 Since v2.0.0

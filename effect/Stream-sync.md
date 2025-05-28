@@ -11,6 +11,6 @@ Creates a single-valued pure stream.
 declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4743)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4766)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ execution.
 declare const exponential: (base: Duration.DurationInput, factor?: number) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1001)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1003)
 
 Since v2.0.0

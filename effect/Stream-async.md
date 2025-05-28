@@ -43,6 +43,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const async: <A, E = never, R = never>(register: (emit: Emit.Emit<R, E, A, void>) => Effect.Effect<void, never, R> | void, bufferSize?: number | "unbounded" | { readonly bufferSize?: number | undefined; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; } | undefined) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L360)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L361)
 
 Since v2.0.0

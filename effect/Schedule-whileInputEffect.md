@@ -22,6 +22,6 @@ predicate evaluates to `false` at any step, the schedule stops.
 declare const whileInputEffect: { <In, R2>(f: (input: In) => Effect.Effect<boolean, never, R2>): <Out, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>; <Out, In, R, R2>(self: Schedule<Out, In, R>, f: (input: In) => Effect.Effect<boolean, never, R2>): Schedule<Out, In, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2058)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2060)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Tuple.js" module as `Tuple`.
 export * as Tuple from "./Tuple.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1495)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1501)
 
 Since v2.0.0

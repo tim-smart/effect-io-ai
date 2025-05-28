@@ -45,6 +45,6 @@ Effect.runPromise(program).then(console.log)
 declare const allWith: <O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(options?: O) => <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>>(arg: Arg) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L865)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L876)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FiberSet.js" module as `FiberSet`.
 export * as FiberSet from "./FiberSet.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L319)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L325)
 
 Since v2.0.0

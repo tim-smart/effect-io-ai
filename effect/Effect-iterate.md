@@ -62,6 +62,6 @@ Effect.runPromise(result).then(console.log)
 declare const iterate: { <A, B extends A, R, E>(initial: A, options: { readonly while: Refinement<A, B>; readonly body: (b: B) => Effect<A, E, R>; }): Effect<A, E, R>; <A, R, E>(initial: A, options: { readonly while: Predicate<A>; readonly body: (a: A) => Effect<A, E, R>; }): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9911)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9933)
 
 Since v2.0.0

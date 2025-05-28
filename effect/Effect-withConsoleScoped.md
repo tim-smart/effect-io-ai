@@ -12,6 +12,6 @@ restores it to its original value when the scope is closed.
 declare const withConsoleScoped: <A extends Console>(console: A) => Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6792)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6814)
 
 Since v2.0.0

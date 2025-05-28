@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FiberId.js" module as `FiberId`.
 export * as FiberId from "./FiberId.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L294)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L300)
 
 Since v2.0.0

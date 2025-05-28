@@ -67,6 +67,6 @@ export interface Schedule<out Out, in In = unknown, out R = never> extends Sched
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L95)
 
 Since v2.0.0

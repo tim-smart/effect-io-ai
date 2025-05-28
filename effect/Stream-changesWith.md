@@ -13,6 +13,6 @@ two elements are equal.
 declare const changesWith: { <A>(f: (x: A, y: A) => boolean): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, f: (x: A, y: A) => boolean): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L930)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L931)
 
 Since v2.0.0

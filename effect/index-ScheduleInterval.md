@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ScheduleInterval.js" module as `Schedul
 export * as ScheduleInterval from "./ScheduleInterval.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1235)
 
 Since v2.0.0

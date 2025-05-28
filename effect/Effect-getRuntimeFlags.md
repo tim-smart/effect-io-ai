@@ -12,6 +12,6 @@ govern behavior and features of the runtime system.
 declare const getRuntimeFlags: Effect<RuntimeFlags.RuntimeFlags, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11588)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11610)
 
 Since v2.0.0

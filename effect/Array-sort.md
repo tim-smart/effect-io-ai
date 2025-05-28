@@ -12,6 +12,6 @@ If the input is a `NonEmptyReadonlyArray`, the output will also be a `NonEmptyRe
 declare const sort: { <B>(O: Order.Order<B>): <A extends B, S extends Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A extends B, B>(self: NonEmptyReadonlyArray<A>, O: Order.Order<B>): NonEmptyArray<A>; <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1326)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1401)
 
 Since v2.0.0

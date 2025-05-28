@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Match.js" module as `Match`.
 export * as Match from "./Match.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L739)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L745)
 
 Since v1.0.0

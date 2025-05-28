@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AiTelemetry.js" module as `AiTelemetry`
 export * as AiTelemetry from "./AiTelemetry.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L39)
 
 Since v1.0.0

@@ -12,6 +12,6 @@ on each pull.
 declare const accumulate: <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L181)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L182)
 
 Since v2.0.0

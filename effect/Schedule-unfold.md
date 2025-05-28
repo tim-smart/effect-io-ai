@@ -18,6 +18,6 @@ producing a stream of values by unfolding the state over time.
 declare const unfold: <A>(initial: A, f: (a: A) => A) => Schedule<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1842)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1844)
 
 Since v2.0.0

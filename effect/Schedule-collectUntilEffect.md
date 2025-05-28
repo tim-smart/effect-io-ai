@@ -18,6 +18,6 @@ like API calls, database lookups, or randomness.
 declare const collectUntilEffect: <A, R>(f: (a: A) => Effect.Effect<boolean, never, R>) => Schedule<Chunk.Chunk<A>, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L472)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L474)
 
 Since v2.0.0

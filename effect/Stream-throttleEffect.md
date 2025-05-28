@@ -21,6 +21,6 @@ Defaults to the "shape" strategy.
 declare const throttleEffect: { <A, E2, R2>(options: { readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Stream<A, E, R>, options: { readonly cost: (chunk: Chunk.Chunk<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5049)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5072)
 
 Since v2.0.0

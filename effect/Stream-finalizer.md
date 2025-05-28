@@ -38,6 +38,6 @@ Effect.runPromise(Stream.runCollect(program)).then(console.log)
 declare const finalizer: <R, X>(finalizer: Effect.Effect<X, never, R>) => Stream<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1730)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1731)
 
 Since v2.0.0

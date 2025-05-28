@@ -11,6 +11,6 @@ Terminates with the specified lazily evaluated error.
 declare const failSync: <E>(evaluate: LazyArg<E>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1588)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1589)
 
 Since v2.0.0

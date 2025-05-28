@@ -17,6 +17,6 @@ argument to a function that expects an `Config` value.
 declare const isConfig: (u: unknown) => u is Config<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L234)
 
 Since v2.0.0

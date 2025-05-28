@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Mailbox.js" module as `Mailbox`.
 export * as Mailbox from "./Mailbox.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L704)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L710)
 
 Since v3.8.0

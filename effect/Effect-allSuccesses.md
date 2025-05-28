@@ -47,6 +47,6 @@ Effect.runFork(program)
 declare const allSuccesses: <X extends Effect<any, any, any>>(elements: Iterable<X>, options?: { readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined) => Effect<Array<Effect.Success<X>>, never, Effect.Context<X>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1021)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1032)
 
 Since v2.0.0

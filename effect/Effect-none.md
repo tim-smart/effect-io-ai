@@ -25,6 +25,6 @@ unexpectedly present.
 declare const none: <A, E, R>(self: Effect<Option.Option<A>, E, R>) => Effect<void, E | Cause.NoSuchElementException, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3068)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3079)
 
 Since v2.0.0

@@ -21,6 +21,6 @@ const makeConfig = (config: Config.Wrap<Options>): Config<Options> => unwrap(con
 declare const unwrap: <A>(wrapped: Config.Wrap<A>) => Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L435)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L464)
 
 Since v2.0.0

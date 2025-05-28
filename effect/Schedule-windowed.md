@@ -28,6 +28,6 @@ follows:
 declare const windowed: (interval: Duration.DurationInput) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2136)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2138)
 
 Since v2.0.0

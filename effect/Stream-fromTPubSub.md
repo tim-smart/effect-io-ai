@@ -11,6 +11,6 @@ Creates a stream from a subscription to a `TPubSub`.
 declare const fromTPubSub: <A>(pubsub: TPubSub<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2065)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2066)
 
 Since v3.10.0

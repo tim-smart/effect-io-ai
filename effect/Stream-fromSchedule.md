@@ -29,6 +29,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const fromSchedule: <A, R>(schedule: Schedule.Schedule<A, unknown, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2231)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ transformations before passing the output forward.
 declare const mapEffect: { <Out, Out2, R2>(f: (out: Out) => Effect.Effect<Out2, never, R2>): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out2, In, R2 | R>; <Out, In, R, Out2, R2>(self: Schedule<Out, In, R>, f: (out: Out) => Effect.Effect<Out2, never, R2>): Schedule<Out2, In, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1328)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1330)
 
 Since v2.0.0

@@ -13,6 +13,6 @@ paginated APIs, hence the name.
 declare const paginateEffect: <S, A, E, R>(s: S, f: (s: S) => Effect.Effect<readonly [A, Option.Option<S>], E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3415)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3416)
 
 Since v2.0.0

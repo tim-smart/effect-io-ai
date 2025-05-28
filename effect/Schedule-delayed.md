@@ -25,6 +25,6 @@ as introducing jitter, exponential backoff, or custom delay logic.
 declare const delayed: { (f: (duration: Duration.Duration) => Duration.DurationInput): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>; <Out, In, R>(self: Schedule<Out, In, R>, f: (duration: Duration.Duration) => Duration.DurationInput): Schedule<Out, In, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L755)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L757)
 
 Since v2.0.0

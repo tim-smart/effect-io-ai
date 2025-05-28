@@ -17,6 +17,6 @@ recurrences.
 declare const recurs: (n: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1602)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1604)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./JSONSchema.js" module as `JSONSchema`.
 export * as JSONSchema from "./JSONSchema.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L637)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L643)
 
 Since v3.10.0

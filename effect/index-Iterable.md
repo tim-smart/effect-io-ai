@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Iterable.js" module as `Iterable`.
 export * as Iterable from "./Iterable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L632)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L638)
 
 Since v2.0.0

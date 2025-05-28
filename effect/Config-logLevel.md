@@ -11,6 +11,6 @@ Constructs a config for a `LogLevel` value.
 declare const logLevel: (name?: string) => Config<LogLevel.LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L203)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L212)
 
 Since v2.0.0

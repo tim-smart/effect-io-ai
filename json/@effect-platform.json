@@ -1273,22 +1273,7 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Effectify.ts#L166"
   },
   {
-    "_tag": "Constant",
-    "module": {
-      "name": "Error.ts",
-      "path": "src/Error.ts"
-    },
-    "project": "@effect/platform",
-    "name": "PlatformErrorTypeId",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "type id",
-    "signature": "declare const PlatformErrorTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L14"
-  },
-  {
-    "_tag": "Constant",
+    "_tag": "Class",
     "module": {
       "name": "Error.ts",
       "path": "src/Error.ts"
@@ -1298,12 +1283,12 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "error",
-    "signature": "declare const BadArgument: (props: Omit<BadArgument, PlatformError.ProvidedFields>) => BadArgument",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L91"
+    "category": "Models",
+    "signature": "declare class BadArgument",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L69"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Class",
     "module": {
       "name": "Error.ts",
       "path": "src/Error.ts"
@@ -1313,9 +1298,69 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "error",
-    "signature": "declare const SystemError: (props: Omit<SystemError, PlatformError.ProvidedFields>) => SystemError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L125"
+    "category": "models",
+    "signature": "declare class SystemError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L116"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Error.ts",
+      "path": "src/Error.ts"
+    },
+    "project": "@effect/platform",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type id",
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L14"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Error.ts",
+      "path": "src/Error.ts"
+    },
+    "project": "@effect/platform",
+    "name": "Module",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "declare const Module: Schema.Literal<[\"Clipboard\", \"Command\", \"FileSystem\", \"KeyValueStore\", \"Path\", \"Stream\", \"Terminal\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L55"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Error.ts",
+      "path": "src/Error.ts"
+    },
+    "project": "@effect/platform",
+    "name": "SystemErrorReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Model",
+    "signature": "declare const SystemErrorReason: Schema.Literal<[\"AlreadyExists\", \"BadResource\", \"Busy\", \"InvalidData\", \"NotFound\", \"PermissionDenied\", \"TimedOut\", \"UnexpectedEof\", \"Unknown\", \"WouldBlock\", \"WriteZero\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L92"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Error.ts",
+      "path": "src/Error.ts"
+    },
+    "project": "@effect/platform",
+    "name": "PlatformError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "declare const PlatformError: Schema.Union<[typeof BadArgument, typeof SystemError]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L150"
   },
   {
     "_tag": "Function",
@@ -1345,37 +1390,7 @@
     "since": "1.0.0",
     "category": "error",
     "signature": "declare const TypeIdError: <const TypeId extends symbol, const Tag extends string>(typeId: TypeId, tag: Tag) => new <A extends Record<string, any>>(args: Simplify<A>) => Cause.YieldableError & Record<TypeId, TypeId> & { readonly _tag: Tag; } & Readonly<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L38"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Error.ts",
-      "path": "src/Error.ts"
-    },
-    "project": "@effect/platform",
-    "name": "BadArgument",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "error",
-    "signature": "export interface BadArgument extends PlatformError.Base {\n  readonly _tag: \"BadArgument\"\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L83"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Error.ts",
-      "path": "src/Error.ts"
-    },
-    "project": "@effect/platform",
-    "name": "SystemError",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface SystemError extends PlatformError.Base {\n  readonly _tag: \"SystemError\"\n  readonly reason: SystemErrorReason\n  readonly syscall?: string | undefined\n  readonly pathOrDescriptor: string | number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -1384,28 +1399,13 @@
       "path": "src/Error.ts"
     },
     "project": "@effect/platform",
-    "name": "PlatformErrorTypeId",
+    "name": "TypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "type id",
-    "signature": "type PlatformErrorTypeId = typeof PlatformErrorTypeId",
+    "signature": "type TypeId = typeof TypeId",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L20"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "Error.ts",
-      "path": "src/Error.ts"
-    },
-    "project": "@effect/platform",
-    "name": "PlatformError",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "error",
-    "signature": "type PlatformError = BadArgument | SystemError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -1418,24 +1418,9 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "model",
-    "signature": "type SystemErrorReason = | \"AlreadyExists\"\n  | \"BadResource\"\n  | \"Busy\"\n  | \"InvalidData\"\n  | \"NotFound\"\n  | \"PermissionDenied\"\n  | \"TimedOut\"\n  | \"UnexpectedEof\"\n  | \"Unknown\"\n  | \"WouldBlock\"\n  | \"WriteZero\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L97"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "Error.ts",
-      "path": "src/Error.ts"
-    },
-    "project": "@effect/platform",
-    "name": "PlatformError.Base",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface Base {\n    readonly [PlatformErrorTypeId]: typeof PlatformErrorTypeId\n    readonly _tag: string\n    readonly module: \"Clipboard\" | \"Command\" | \"FileSystem\" | \"KeyValueStore\" | \"Path\" | \"Stream\" | \"Terminal\"\n    readonly method: string\n    readonly message: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L65"
+    "category": "Model",
+    "signature": "type SystemErrorReason = typeof SystemErrorReason.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L110"
   },
   {
     "_tag": "TypeAlias",
@@ -1444,13 +1429,13 @@
       "path": "src/Error.ts"
     },
     "project": "@effect/platform",
-    "name": "PlatformError.ProvidedFields",
+    "name": "PlatformError",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": null,
-    "signature": "type ProvidedFields = PlatformErrorTypeId | \"_tag\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L76"
+    "category": "Models",
+    "signature": "type PlatformError = BadArgument | SystemError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Error.ts#L144"
   },
   {
     "_tag": "Constant",

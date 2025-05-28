@@ -20,6 +20,6 @@ console.log(result) // [["a", "a"], ["b", "b", "b"], ["c"], ["a"]]
 declare const groupWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>; <A>(self: NonEmptyReadonlyArray<A>, isEquivalent: (self: A, that: A) => boolean): NonEmptyArray<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2044)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2119)
 
 Since v2.0.0

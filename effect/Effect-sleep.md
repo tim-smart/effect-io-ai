@@ -39,6 +39,6 @@ Effect.runFork(program)
 declare const sleep: (duration: Duration.DurationInput) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6881)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6903)
 
 Since v2.0.0

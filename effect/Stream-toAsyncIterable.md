@@ -11,6 +11,6 @@ Converts the stream to a `AsyncIterable`.
 declare const toAsyncIterable: <A, E>(self: Stream<A, E>) => AsyncIterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5361)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5384)
 
 Since v3.15.0

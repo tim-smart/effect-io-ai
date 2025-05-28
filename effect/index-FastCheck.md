@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FastCheck.js" module as `FastCheck`.
 export * as FastCheck from "./FastCheck.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L285)
 
 Since v3.10.0

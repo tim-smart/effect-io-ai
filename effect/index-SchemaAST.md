@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaAST.js" module as `SchemaAST`.
 export * as SchemaAST from "./SchemaAST.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1249)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1255)
 
 Since v3.10.0

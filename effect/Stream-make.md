@@ -22,6 +22,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const make: <As extends Array<any>>(...as: As) => Stream<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2699)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2700)
 
 Since v2.0.0

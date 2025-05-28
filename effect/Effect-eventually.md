@@ -55,6 +55,6 @@ Effect.runPromise(program).then(console.log)
 declare const eventually: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4076)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4087)
 
 Since v2.0.0

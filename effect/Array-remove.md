@@ -25,6 +25,6 @@ console.log(outOfBoundsResult) // [1, 2, 3, 4]
 declare const remove: { (i: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, i: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1287)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1330)
 
 Since v2.0.0

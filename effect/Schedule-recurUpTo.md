@@ -19,6 +19,6 @@ constraints, or ensuring that an operation does not run indefinitely.
 declare const recurUpTo: (duration: Duration.DurationInput) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1553)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1555)
 
 Since v2.0.0

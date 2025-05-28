@@ -20,6 +20,6 @@ The error is provided as a lazy argument, meaning it will only be evaluated when
 declare const dieSync: (evaluate: LazyArg<unknown>) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2698)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2709)
 
 Since v2.0.0

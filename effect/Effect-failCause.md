@@ -11,6 +11,6 @@ Creates an `Effect` that fails with the specified `Cause`.
 declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2591)
 
 Since v2.0.0

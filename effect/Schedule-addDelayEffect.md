@@ -22,6 +22,6 @@ delay duration.
 declare const addDelayEffect: { <Out, R2>(f: (out: Out) => Effect.Effect<Duration.DurationInput, never, R2>): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R2 | R>; <Out, In, R, R2>(self: Schedule<Out, In, R>, f: (out: Out) => Effect.Effect<Duration.DurationInput, never, R2>): Schedule<Out, In, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L219)
 
 Since v2.0.0

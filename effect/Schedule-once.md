@@ -16,6 +16,6 @@ repeat or apply any additional logic.
 declare const once: Schedule<void, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1427)
 
 Since v2.0.0

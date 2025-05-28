@@ -11,6 +11,6 @@ Returns an `Array` of the values within the `HashMap`.
 declare const toValues: <K, V>(self: HashMap<K, V>) => Array<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L259)
 
 Since v3.13.0

@@ -11,6 +11,6 @@ The identity pipeline, which does not modify streams in any way.
 declare const identity: <A, E = never, R = never>() => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2480)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2481)
 
 Since v2.0.0

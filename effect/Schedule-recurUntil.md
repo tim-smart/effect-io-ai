@@ -25,6 +25,6 @@ avoiding unnecessary retries.
 declare const recurUntil: <A>(f: Predicate<A>) => Schedule<A, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1498)
 
 Since v2.0.0

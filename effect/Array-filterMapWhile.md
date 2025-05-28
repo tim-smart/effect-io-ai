@@ -24,6 +24,6 @@ console.log(result) // [4, 16]
 declare const filterMapWhile: { <A, B>(f: (a: A, i: number) => Option.Option<B>): (self: Iterable<A>) => Array<B>; <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option.Option<B>): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2478)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2553)
 
 Since v2.0.0
