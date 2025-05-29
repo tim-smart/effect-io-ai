@@ -16,6 +16,8 @@ export interface Rpc<
   out Error extends Schema.Schema.All = typeof Schema.Never,
   out Middleware extends RpcMiddleware.TagClassAny = never
 > extends Pipeable {
+  new(_: never): {}
+
   readonly [TypeId]: TypeId
   readonly _tag: Tag
   readonly key: string
