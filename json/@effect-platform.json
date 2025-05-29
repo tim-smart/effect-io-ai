@@ -13984,7 +13984,7 @@
     "examples": [],
     "since": "0.71.0",
     "category": "model",
-    "signature": "export interface Empty extends Annotations {\n  $id: \"/schemas/{}\"\n  anyOf: [\n    { type: \"object\" },\n    { type: \"array\" }\n  ]\n  nullable?: boolean\n}",
+    "signature": "export interface Empty extends Annotations {\n  $id: \"/schemas/%7B%7D\"\n  anyOf: [\n    { type: \"object\" },\n    { type: \"array\" }\n  ]\n  nullable?: boolean\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/OpenApiJsonSchema.ts#L71"
   },
   {
