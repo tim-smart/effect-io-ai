@@ -8,8 +8,8 @@ A utility mapped type which associates tool names with their handlers.
 **Signature**
 
 ```ts
-type HandlersFrom<Tool> = {
-  [Name in Tool as Tool["name"]]: (params: AiTool.Parameters<Tool>) => AiTool.HandlerEffect<Tool>
+type HandlersFrom<Tools> = {
+  [Tool in Tools as Tool["name"]]: (params: AiTool.Parameters<Tool>) => AiTool.HandlerEffect<Tool>
 }
 ```
 

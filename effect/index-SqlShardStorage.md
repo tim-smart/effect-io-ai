@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlShardStorage.js" module as `SqlShard
 export * as SqlShardStorage from "./SqlShardStorage.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174)
 
 Since v1.0.0

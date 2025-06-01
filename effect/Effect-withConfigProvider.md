@@ -43,6 +43,6 @@ Effect.runPromise(program)
 declare const withConfigProvider: { (provider: ConfigProvider): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, provider: ConfigProvider): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7369)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7376)
 
 Since v2.0.0

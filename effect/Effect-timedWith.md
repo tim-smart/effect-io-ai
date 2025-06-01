@@ -19,6 +19,6 @@ clock instead of the default system clock.
 declare const timedWith: { <E1, R1>(nanoseconds: Effect<bigint, E1, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<[Duration.Duration, A], E1 | E, R1 | R>; <A, E, R, E1, R1>(self: Effect<A, E, R>, nanoseconds: Effect<bigint, E1, R1>): Effect<[Duration.Duration, A], E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6962)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6969)
 
 Since v2.0.0

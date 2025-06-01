@@ -57,6 +57,6 @@ Effect.runFork(runnable)
 declare const parallelFinalizers: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5969)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5976)
 
 Since v2.0.0

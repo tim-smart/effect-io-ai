@@ -39,6 +39,6 @@ assert.deepStrictEqual(Effect.runSync(result), { x: 2, y: 3, sum: 5 })
 declare const bindTo: { <N extends string>(name: N): <A, E, R>(self: Effect<A, E, R>) => Effect<{ [K in N]: A; }, E, R>; <A, E, R, N extends string>(self: Effect<A, E, R>, name: N): Effect<{ [K in N]: A; }, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7998)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8005)
 
 Since v2.0.0

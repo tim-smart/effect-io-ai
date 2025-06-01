@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Snowflake.js" module as `Snowflake`.
 export * as Snowflake from "./Snowflake.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154)
 
 Since v1.0.0

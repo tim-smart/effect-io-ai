@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RunnerHealth.js" module as `RunnerHealt
 export * as RunnerHealth from "./RunnerHealth.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99)
 
 Since v1.0.0

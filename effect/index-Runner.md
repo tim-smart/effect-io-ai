@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Runner.js" module as `Runner`.
 export * as Runner from "./Runner.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89)
 
 Since v1.0.0

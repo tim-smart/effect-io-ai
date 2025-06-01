@@ -11,6 +11,6 @@ Retrieves the `Random` service from the context.
 declare const random: Effect<Random.Random, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11562)
 
 Since v2.0.0

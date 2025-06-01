@@ -90,6 +90,6 @@ export interface Rpc<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L46)
 
 Since v1.0.0

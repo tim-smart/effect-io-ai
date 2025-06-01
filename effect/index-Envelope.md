@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Envelope.js" module as `Envelope`.
 export * as Envelope from "./Envelope.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L49)
 
 Since v1.0.0

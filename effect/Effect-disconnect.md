@@ -70,6 +70,6 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 declare const disconnect: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4833)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4840)
 
 Since v2.0.0

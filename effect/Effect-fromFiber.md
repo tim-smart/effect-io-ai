@@ -16,6 +16,6 @@ fiber.
 declare const fromFiber: <A, E>(fiber: Fiber.Fiber<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6541)
 
 Since v2.0.0

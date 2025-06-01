@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SocketRunner.js" module as `SocketRunne
 export * as SocketRunner from "./SocketRunner.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159)
 
 Since v1.0.0

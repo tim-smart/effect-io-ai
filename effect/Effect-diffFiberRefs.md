@@ -12,6 +12,6 @@ Returns a new workflow that executes this one and captures the changes in
 declare const diffFiberRefs: <A, E, R>(self: Effect<A, E, R>) => Effect<[FiberRefsPatch.FiberRefsPatch, A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6184)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6191)
 
 Since v2.0.0

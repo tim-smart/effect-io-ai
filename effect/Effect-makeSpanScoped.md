@@ -15,6 +15,6 @@ created for it.
 declare const makeSpanScoped: (name: string, options?: Tracer.SpanOptions | undefined) => Effect<Tracer.Span, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13041)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13048)
 
 Since v2.0.0

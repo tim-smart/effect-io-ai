@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners, ConfigError, Storage extends \"sql\" ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners, ConfigError, Storage extends \"sql\" ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L43"
   },
   {
@@ -387,7 +387,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (this: unknown, options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
+    "signature": "declare const make: (options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L33"
   },
   {

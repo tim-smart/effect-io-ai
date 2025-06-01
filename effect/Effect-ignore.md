@@ -35,6 +35,6 @@ const program = Effect.ignore(task)
 declare const ignore: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4124)
 
 Since v2.0.0

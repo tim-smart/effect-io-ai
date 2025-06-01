@@ -12,6 +12,6 @@ restores it to its original value when the scope is closed.
 declare const withClockScoped: <C extends Clock.Clock>(clock: C) => Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6775)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6782)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ running this workflow.
 declare const patchFiberRefs: (patch: FiberRefsPatch.FiberRefsPatch) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10468)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10475)
 
 Since v2.0.0

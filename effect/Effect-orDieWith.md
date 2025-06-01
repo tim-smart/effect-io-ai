@@ -50,6 +50,6 @@ Effect.runPromise(program).catch(console.error)
 declare const orDieWith: { <E>(f: (error: E) => unknown): <A, R>(self: Effect<A, E, R>) => Effect<A, never, R>; <A, E, R>(self: Effect<A, E, R>, f: (error: E) => unknown): Effect<A, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11321)
 
 Since v2.0.0

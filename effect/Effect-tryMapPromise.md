@@ -20,6 +20,6 @@ wrapped `Promise` API.
 declare const tryMapPromise: { <A, B, E1>(options: { readonly try: (a: A, signal: AbortSignal) => PromiseLike<B>; readonly catch: (error: unknown) => E1; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R>; <A, E, R, B, E1>(self: Effect<A, E, R>, options: { readonly try: (a: A, signal: AbortSignal) => PromiseLike<B>; readonly catch: (error: unknown) => E1; }): Effect<B, E | E1, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4603)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4610)
 
 Since v2.0.0

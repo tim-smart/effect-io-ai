@@ -13,6 +13,6 @@ in an `Option` value. If the original `Effect` value succeeds, the returned
 declare const asSomeError: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Option.Option<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5065)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5072)
 
 Since v2.0.0

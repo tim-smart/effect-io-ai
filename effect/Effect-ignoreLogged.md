@@ -24,6 +24,6 @@ potential failures that may need attention later.
 declare const ignoreLogged: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4145)
 
 Since v2.0.0

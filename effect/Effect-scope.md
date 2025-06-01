@@ -11,6 +11,6 @@ Provides access to the current scope in a scoped workflow.
 declare const scope: Effect<Scope.Scope, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6018)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6025)
 
 Since v2.0.0

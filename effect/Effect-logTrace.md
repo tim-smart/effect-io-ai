@@ -30,6 +30,6 @@ Effect.runFork(program)
 declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10915)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10922)
 
 Since v2.0.0

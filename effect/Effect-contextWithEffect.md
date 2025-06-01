@@ -21,6 +21,6 @@ involves asynchronous or effectful operations.
 declare const contextWithEffect: <R2, A, E, R>(f: (context: Context.Context<R2>) => Effect<A, E, R>) => Effect<A, E, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7433)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7440)
 
 Since v2.0.0

@@ -1,0 +1,16 @@
+Package: `@effect/workflow`<br />
+Module: `index`<br />
+
+## index.WorkflowEngine
+
+Re-exports all named exports from the "./WorkflowEngine.js" module as `WorkflowEngine`.
+
+**Signature**
+
+```ts
+export * as WorkflowEngine from "./WorkflowEngine.js"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/index.ts#L24)
+
+Since v1.0.0
