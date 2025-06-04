@@ -12,6 +12,6 @@ type ShardingRegistrationEvent = | EntityRegistered
   | SingletonRegistered
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L14)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L14)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./DurableClock.js" module as `DurableCloc
 export * as DurableClock from "./DurableClock.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L9)
 
 Since v1.0.0

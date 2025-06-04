@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Entity.js" module as `Entity`.
 export * as Entity from "./Entity.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34)
 
 Since v1.0.0

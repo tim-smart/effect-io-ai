@@ -18,6 +18,6 @@ application servers and slowly decommission older ones.
 declare const make: (props: { readonly address: RunnerAddress; readonly groups: ReadonlyArray<string>; readonly version: number; }) => Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L98)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runner.ts#L98)
 
 Since v1.0.0

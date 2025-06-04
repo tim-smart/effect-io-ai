@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Reply.js" module as `Reply`.
 export * as Reply from "./Reply.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L99)
 
 Since v1.0.0

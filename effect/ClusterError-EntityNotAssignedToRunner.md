@@ -12,6 +12,6 @@ that it is not assigned to it.
 declare class EntityNotAssignedToRunner
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L31)
 
 Since v1.0.0

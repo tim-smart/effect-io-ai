@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpCommon.js" module as `HttpCommon`.
 export * as HttpCommon from "./HttpCommon.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L69)
 
 Since v1.0.0

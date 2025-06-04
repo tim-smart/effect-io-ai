@@ -11,6 +11,6 @@ Represents the unique address of an singleton within the cluster.
 declare class SingletonAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SingletonAddress.ts#L27)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SingletonAddress.ts#L27)
 
 Since v1.0.0

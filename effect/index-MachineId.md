@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MachineId.js" module as `MachineId`.
 export * as MachineId from "./MachineId.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L84)
 
 Since v1.0.0

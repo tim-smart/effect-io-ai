@@ -15,6 +15,6 @@ export interface SingletonRegistered {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L36)
 
 Since v1.0.0

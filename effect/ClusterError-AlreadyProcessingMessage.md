@@ -12,6 +12,6 @@ request.
 declare class AlreadyProcessingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L199)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L199)
 
 Since v1.0.0
