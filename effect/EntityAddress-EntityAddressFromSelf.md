@@ -11,6 +11,6 @@ Represents the unique address of an entity within the cluster.
 declare const EntityAddressFromSelf: Schema.Schema<EntityAddress, EntityAddress, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L53)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L63)
 
 Since v1.0.0

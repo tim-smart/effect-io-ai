@@ -18,6 +18,6 @@ type ExtractSuccess<Options> = Options extends {
   : AiResponse.AiResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L144)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L146)
 
 Since v1.0.0

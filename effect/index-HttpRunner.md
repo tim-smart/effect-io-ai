@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpRunner.js" module as `HttpRunner`.
 export * as HttpRunner from "./HttpRunner.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L64)
 
 Since v1.0.0

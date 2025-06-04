@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ShardStorage.js" module as `ShardStorag
 export * as ShardStorage from "./ShardStorage.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129)
 
 Since v1.0.0

@@ -18,6 +18,6 @@ application servers and slowly decommission older ones.
 declare class Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L38)
 
 Since v1.0.0

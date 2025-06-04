@@ -12,6 +12,6 @@ cluster.
 declare class ShardStorage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L21)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L22)
 
 Since v1.0.0

@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Attempts",
     "signature": "declare class CurrentAttempt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "Error handling",
     "signature": "declare const retry: { <E, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(options: O): <A, R>(self: Effect.Effect<A, E, R>) => Effect.Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(self: Effect.Effect<A, E, R>, options: O): Effect.Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect.Effect<A, E, R>, policy: Schedule<B, NoInfer<E>, R1>): Effect.Effect<A, E, R1 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "Execution ID",
     "signature": "declare const executionIdWithAttempt: Effect.Effect<string, never, WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L142"
   },
   {
     "_tag": "Function",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <R, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: string; readonly success?: Success; readonly error?: Error; readonly execute: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>; }) => Activity<Success, Error, Exclude<R, WorkflowInstance | WorkflowEngine>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L77"
   },
   {
     "_tag": "Interface",
@@ -86,7 +86,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Activity<\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All,\n  R\n> extends\n  Effect.Effect<\n    Success[\"Type\"],\n    Error[\"Type\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n{\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly exitSchema: Schema.Schema<\n    Exit.Exit<Success[\"Type\"], Error[\"Type\"]>,\n    Exit.Exit<Success[\"Encoded\"], Error[\"Encoded\"]>,\n    Success[\"Context\"] | Error[\"Context\"]\n  >\n  readonly executeEncoded: Effect.Effect<\n    Success[\"Encoded\"],\n    Error[\"Encoded\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n}",
+    "signature": "export interface Activity<\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All,\n  R\n> extends\n  Effect.Effect<\n    Success[\"Type\"],\n    Error[\"Type\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n{\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly exitSchema: Schema.Schema<\n    Exit.Exit<Success[\"Type\"], Error[\"Type\"]>,\n    Exit.Exit<Success[\"Encoded\"], Error[\"Encoded\"]>,\n    Success[\"Context\"] | Error[\"Context\"]\n  >\n  readonly execute: Effect.Effect<\n    Success[\"Type\"],\n    Error[\"Type\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n  readonly executeEncoded: Effect.Effect<\n    Success[\"Encoded\"],\n    Error[\"Encoded\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L29"
   },
   {
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly executeEncoded: Effect.Effect<any, any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Activity.ts#L65"
   },
   {
     "_tag": "TypeAlias",
@@ -557,7 +557,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare class Complete<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L293"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L362"
   },
   {
     "_tag": "Class",
@@ -572,7 +572,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare class Suspended",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L362"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L431"
   },
   {
     "_tag": "Constant",
@@ -587,7 +587,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -602,7 +602,23 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const ResultTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L331"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "withCompensation",
+    "description": "Add compensation logic to an effect inside a Workflow. The compensation finalizer will be\ncalled if the entire workflow fails, allowing you to perform cleanup or\nother actions based on the success value and the cause of the workflow failure.\n\nNOTE: Compensation will not work for nested activities. Compensation\nfinalizers are only registered for top-level effects in the workflow.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Compensation",
+    "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L483"
   },
   {
     "_tag": "Function",
@@ -616,8 +632,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: <const Name extends string, Payload extends Schema.Struct.Fields | AnyStructSchema, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: Name; readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct.Type<Payload> : Payload[\"Type\"]) => string; readonly success?: Success; readonly error?: Error; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Workflow<Name, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L152"
+    "signature": "declare const make: <const Name extends string, Payload extends Schema.Struct.Fields | AnyStructSchema, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: Name; readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct.Type<Payload> : Payload[\"Type\"]) => string; readonly success?: Success; readonly error?: Error; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; readonly annotations?: Context.Context<never>; }) => Workflow<Name, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L206"
   },
   {
     "_tag": "Function",
@@ -632,7 +648,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromTaggedRequest: <S extends AnyTaggedRequestSchema>(schema: S, options?: { readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Workflow<S[\"_tag\"], S, S[\"success\"], S[\"failure\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L315"
   },
   {
     "_tag": "Function",
@@ -647,7 +663,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const isResult: <A = unknown, E = unknown>(u: unknown) => u is Result<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L274"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L343"
   },
   {
     "_tag": "Function",
@@ -662,7 +678,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const Result: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly success: Success; readonly error: Error; }) => Schema.Schema<Result<Success[\"Type\"], Error[\"Type\"]>, ResultEncoded<Success[\"Encoded\"], Error[\"Encoded\"]>, Success[\"Context\"] | Error[\"Context\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L442"
   },
   {
     "_tag": "Function",
@@ -677,7 +693,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const intoResult: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<Result<A, E>, never, R | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L457"
   },
   {
     "_tag": "Interface",
@@ -691,8 +707,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Workflow<\n  Name extends string,\n  Payload extends AnyStructSchema,\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All\n> {\n  readonly [TypeId]: TypeId\n  readonly name: Name\n  readonly payloadSchema: Payload\n  readonly successSchema: Success\n  readonly errorSchema: Error\n\n  /**\n   * Execute the workflow with the given payload.\n   */\n  readonly execute: <const Discard extends boolean = false>(\n    payload: [keyof Payload[\"fields\"]] extends [never] ? void\n      : Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>,\n    options?: {\n      readonly discard?: Discard\n    }\n  ) => Effect.Effect<\n    Discard extends true ? void : Success[\"Type\"],\n    Discard extends true ? never : Error[\"Type\"],\n    WorkflowEngine | Registration<Name> | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]\n  >\n\n  /**\n   * Interrupt a workflow execution for the given execution ID.\n   */\n  readonly interrupt: (executionId: string) => Effect.Effect<void, never, WorkflowEngine | Registration<Name>>\n\n  /**\n   * Create a layer that registers the workflow and provides an effect to\n   * execute it.\n   */\n  readonly toLayer: <R>(\n    execute: (\n      payload: Payload[\"Type\"],\n      executionId: string\n    ) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>\n  ) => Layer.Layer<\n    Registration<Name> | WorkflowEngine,\n    never,\n    | WorkflowEngine\n    | Exclude<R, WorkflowEngine | WorkflowInstance>\n    | Payload[\"Context\"]\n    | Success[\"Context\"]\n    | Error[\"Context\"]\n  >\n\n  /**\n   * For the given payload, compute the deterministic execution ID.\n   */\n  readonly executionId: (\n    payload: Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>\n  ) => Effect.Effect<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L34"
+    "signature": "export interface Workflow<\n  Name extends string,\n  Payload extends AnyStructSchema,\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All\n> {\n  readonly [TypeId]: TypeId\n  readonly name: Name\n  readonly payloadSchema: Payload\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add an annotation to the workflow.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Workflow<\n    Name,\n    Payload,\n    Success,\n    Error\n  >\n\n  /**\n   * Add the annotations from a Context object to the workflow.\n   */\n  annotateContext<I>(context: Context.Context<I>): Workflow<\n    Name,\n    Payload,\n    Success,\n    Error\n  >\n\n  /**\n   * Execute the workflow with the given payload.\n   */\n  readonly execute: <const Discard extends boolean = false>(\n    payload: [keyof Payload[\"fields\"]] extends [never] ? void\n      : Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>,\n    options?: {\n      readonly discard?: Discard\n    }\n  ) => Effect.Effect<\n    Discard extends true ? void : Success[\"Type\"],\n    Discard extends true ? never : Error[\"Type\"],\n    WorkflowEngine | Registration<Name> | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]\n  >\n\n  /**\n   * Interrupt a workflow execution for the given execution ID.\n   */\n  readonly interrupt: (executionId: string) => Effect.Effect<void, never, WorkflowEngine | Registration<Name>>\n\n  /**\n   * Create a layer that registers the workflow and provides an effect to\n   * execute it.\n   */\n  readonly toLayer: <R>(\n    execute: (\n      payload: Payload[\"Type\"],\n      executionId: string\n    ) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>\n  ) => Layer.Layer<\n    Registration<Name> | WorkflowEngine,\n    never,\n    | WorkflowEngine\n    | Exclude<R, WorkflowEngine | WorkflowInstance | Execution<Name> | Scope.Scope>\n    | Payload[\"Context\"]\n    | Success[\"Context\"]\n    | Error[\"Context\"]\n  >\n\n  /**\n   * For the given payload, compute the deterministic execution ID.\n   */\n  readonly executionId: (\n    payload: Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>\n  ) => Effect.Effect<string>\n\n  /**\n   * Add compensation logic to an effect inside a Workflow. The compensation finalizer will be\n   * called if the entire workflow fails, allowing you to perform cleanup or\n   * other actions based on the success value and the cause of the workflow failure.\n   *\n   * NOTE: Compensation will not work for nested activities. Compensation\n   * finalizers are only registered for top-level effects in the workflow.\n   */\n  readonly withCompensation: {\n    <A, R2>(\n      compensation: (value: A, cause: Cause.Cause<Error[\"Type\"]>) => Effect.Effect<void, never, R2>\n    ): <E, R>(\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope>\n    <A, E, R, R2>(\n      effect: Effect.Effect<A, E, R>,\n      compensation: (value: A, cause: Cause.Cause<Error[\"Type\"]>) => Effect.Effect<void, never, R2>\n    ): Effect.Effect<A, E, R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L37"
   },
   {
     "_tag": "Interface",
@@ -707,7 +723,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface AnyStructSchema extends Pipeable {\n  readonly [Schema.TypeId]: any\n  readonly make: any\n  readonly Type: any\n  readonly Encoded: any\n  readonly Context: any\n  readonly ast: AST.AST\n  readonly fields: Schema.Struct.Fields\n  readonly annotations: any\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L140"
   },
   {
     "_tag": "Interface",
@@ -722,7 +738,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface AnyTaggedRequestSchema extends AnyStructSchema {\n  readonly _tag: string\n  readonly Type: PrimaryKey.PrimaryKey\n  readonly success: Schema.Schema.Any\n  readonly failure: Schema.Schema.All\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L155"
   },
   {
     "_tag": "Interface",
@@ -737,7 +753,22 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Registration<Name extends string> {\n  readonly _: unique symbol\n  readonly name: Name\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L166"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "Execution",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface Execution<Name extends string> {\n  readonly _: unique symbol\n  readonly name: Name\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L175"
   },
   {
     "_tag": "Interface",
@@ -751,8 +782,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly payloadSchema: AnyStructSchema\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly executionId: (payload: any) => Effect.Effect<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L131"
+    "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly payloadSchema: AnyStructSchema\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly annotations: Context.Context<never>\n  readonly executionId: (payload: any) => Effect.Effect<string>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L184"
   },
   {
     "_tag": "Interface",
@@ -767,7 +798,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "export interface CompleteEncoded<A, E> {\n  readonly _tag: \"Complete\"\n  readonly exit: Schema.ExitEncoded<A, E, unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L353"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L422"
   },
   {
     "_tag": "TypeAlias",
@@ -782,7 +813,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L31"
   },
   {
     "_tag": "TypeAlias",
@@ -797,7 +828,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type ResultTypeId = typeof ResultTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L268"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L337"
   },
   {
     "_tag": "TypeAlias",
@@ -812,7 +843,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type Result<A, E> = Complete<A, E> | Suspended",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L281"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L350"
   },
   {
     "_tag": "TypeAlias",
@@ -827,7 +858,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type ResultEncoded<A, E> = CompleteEncoded<A, E> | typeof Suspended.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L287"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/workflow/src/Workflow.ts#L356"
   },
   {
     "_tag": "Class",

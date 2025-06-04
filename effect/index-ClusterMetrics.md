@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClusterMetrics.js" module as `ClusterMe
 export * as ClusterMetrics from "./ClusterMetrics.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L14)
 
 Since v1.0.0

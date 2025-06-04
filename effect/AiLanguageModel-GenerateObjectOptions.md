@@ -8,7 +8,7 @@ Options for generating a structured object using a large language model.
 **Signature**
 
 ```ts
-export interface GenerateObjectOptions<A, I, R> {
+export interface GenerateObjectOptions<A, I extends Record<string, unknown>, R> {
   /**
    * The prompt input to use to generate text.
    */
@@ -32,6 +32,6 @@ export interface GenerateObjectOptions<A, I, R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L116)
 
 Since v1.0.0

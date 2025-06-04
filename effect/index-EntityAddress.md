@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EntityAddress.js" module as `EntityAddr
 export * as EntityAddress from "./EntityAddress.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L39)
 
 Since v1.0.0

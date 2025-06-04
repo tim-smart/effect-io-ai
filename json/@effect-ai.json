@@ -86,7 +86,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service {\n    /**\n     * The chat history.\n     */\n    readonly history: Effect.Effect<AiInput.AiInput>\n\n    /**\n     * Exports the chat into a structured format.\n     */\n    readonly export: Effect.Effect<unknown>\n\n    /**\n     * Exports the chat as a JSON string.\n     */\n    readonly exportJson: Effect.Effect<string>\n\n    /**\n     * Generate text using a large language model for the specified `prompt`.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly generateText: <Tools extends AiTool.Any, Options>(\n      options: Options & Omit<AiLanguageModel.GenerateTextOptions<Tools>, \"system\">\n    ) => Effect.Effect<\n      AiLanguageModel.ExtractSuccess<Options>,\n      AiLanguageModel.ExtractError<Options>,\n      AiLanguageModel.ExtractContext<Options>\n    >\n\n    /**\n     * Generate text using a large language model for the specified `prompt`,\n     * streaming output from the model as soon as it is available.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly streamText: <Tools extends AiTool.Any, Options>(\n      options: Options & Omit<AiLanguageModel.GenerateTextOptions<Tools>, \"system\">\n    ) => Stream.Stream<\n      AiLanguageModel.ExtractSuccess<Options>,\n      AiLanguageModel.ExtractError<Options>,\n      AiLanguageModel.ExtractContext<Options>\n    >\n\n    /**\n     * Generate a structured object for the specified prompt and schema using a\n     * large language model.\n     *\n     * When using a `Schema` that does not have an `identifier` or `_tag`\n     * property, you must specify a `toolCallId` to properly associate the\n     * output of the model.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly generateObject: <A, I, R>(\n      options: Omit<AiLanguageModel.GenerateObjectOptions<A, I, R>, \"system\">\n    ) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, R>\n  }",
+    "signature": "export interface Service {\n    /**\n     * The chat history.\n     */\n    readonly history: Effect.Effect<AiInput.AiInput>\n\n    /**\n     * Exports the chat into a structured format.\n     */\n    readonly export: Effect.Effect<unknown>\n\n    /**\n     * Exports the chat as a JSON string.\n     */\n    readonly exportJson: Effect.Effect<string>\n\n    /**\n     * Generate text using a large language model for the specified `prompt`.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly generateText: <Tools extends AiTool.Any, Options>(\n      options: Options & Omit<AiLanguageModel.GenerateTextOptions<Tools>, \"system\">\n    ) => Effect.Effect<\n      AiLanguageModel.ExtractSuccess<Options>,\n      AiLanguageModel.ExtractError<Options>,\n      AiLanguageModel.ExtractContext<Options>\n    >\n\n    /**\n     * Generate text using a large language model for the specified `prompt`,\n     * streaming output from the model as soon as it is available.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly streamText: <Tools extends AiTool.Any, Options>(\n      options: Options & Omit<AiLanguageModel.GenerateTextOptions<Tools>, \"system\">\n    ) => Stream.Stream<\n      AiLanguageModel.ExtractSuccess<Options>,\n      AiLanguageModel.ExtractError<Options>,\n      AiLanguageModel.ExtractContext<Options>\n    >\n\n    /**\n     * Generate a structured object for the specified prompt and schema using a\n     * large language model.\n     *\n     * When using a `Schema` that does not have an `identifier` or `_tag`\n     * property, you must specify a `toolCallId` to properly associate the\n     * output of the model.\n     *\n     * Both input and output messages will be added to the chat history.\n     */\n    readonly generateObject: <A, I extends Record<string, unknown>, R>(\n      options: Omit<AiLanguageModel.GenerateObjectOptions<A, I, R>, \"system\">\n    ) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, R>\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L35"
   },
   {
@@ -810,7 +810,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <Config>(opts: { readonly generateText: (options: AiLanguageModelOptions) => Effect.Effect<AiResponse.AiResponse, AiError, Config>; readonly streamText: (options: AiLanguageModelOptions) => Stream.Stream<AiResponse.AiResponse, AiError, Config>; }) => Effect.Effect<AiLanguageModel.Service<Config>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L274"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L276"
   },
   {
     "_tag": "Constant",
@@ -826,7 +826,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateText: <Tools extends AiTool.Any, Options>(options: Options & GenerateTextOptions<Tools>) => Effect.Effect<ExtractSuccess<Options>, ExtractError<Options>, AiLanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L526"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L537"
   },
   {
     "_tag": "Constant",
@@ -841,8 +841,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Functions",
-    "signature": "declare const generateObject: <A, I, R>(options: GenerateObjectOptions<A, I, R>) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, AiLanguageModel | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L545"
+    "signature": "declare const generateObject: <A, I extends Record<string, unknown>, R>(options: GenerateObjectOptions<A, I, R>) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, AiLanguageModel | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L556"
   },
   {
     "_tag": "Function",
@@ -858,7 +858,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const streamText: <Tools extends AiTool.Any, Options>(options: Options & GenerateTextOptions<Tools>) => Stream.Stream<ExtractSuccess<Options>, ExtractError<Options>, AiLanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L563"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L574"
   },
   {
     "_tag": "Interface",
@@ -873,7 +873,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TaggedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n  readonly _tag: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L44"
   },
   {
     "_tag": "Interface",
@@ -888,7 +888,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface IdentifiedSchema<A, I, R> extends Schema.Schema<A, I, R> {\n  readonly identifier: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L52"
   },
   {
     "_tag": "Interface",
@@ -904,7 +904,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface GenerateTextOptions<Tools extends AiTool.Any> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: AiInput.Raw\n\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system?: string | undefined\n\n  /**\n   * A toolkit containing both the tools and the tool call handler to use to\n   * augment text generation.\n   */\n  readonly toolkit?: AiToolkit.ToHandler<Tools> | Effect.Effect<AiToolkit.ToHandler<Tools>, any, any>\n\n  /**\n   * The tool choice mode for the language model.\n   *\n   * - `auto` (default): The model can decide whether or not to call tools, as well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   */\n  readonly toolChoice?: ToolChoice<Tools>\n\n  /**\n   * The concurrency level for resolving tool calls.\n   */\n  readonly concurrency?: Concurrency | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L77"
   },
   {
     "_tag": "Interface",
@@ -919,8 +919,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface GenerateObjectOptions<A, I, R> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: AiInput.Raw\n\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system?: string | undefined\n\n  /**\n   * The schema to be used to specify the structure of the object to generate.\n   */\n  readonly schema: Schema.Schema<A, I, R>\n\n  /**\n   * The identifier to use to associating the underlying tool call with the\n   * generated output.\n   */\n  readonly toolCallId?: string | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L114"
+    "signature": "export interface GenerateObjectOptions<A, I extends Record<string, unknown>, R> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: AiInput.Raw\n\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system?: string | undefined\n\n  /**\n   * The schema to be used to specify the structure of the object to generate.\n   */\n  readonly schema: Schema.Schema<A, I, R>\n\n  /**\n   * The identifier to use to associating the underlying tool call with the\n   * generated output.\n   */\n  readonly toolCallId?: string | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L116"
   },
   {
     "_tag": "Interface",
@@ -935,7 +935,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AiLanguageModelOptions {\n  /**\n   * The prompt messages to use to generate text.\n   */\n  readonly prompt: AiInput.AiInput\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system: Option.Option<string>\n  /**\n   * The tools to use to generate text in an encoded format suitable for\n   * incorporation into requests to the large language model.\n   */\n  readonly tools: Array<{\n    readonly name: string\n    readonly description: string\n    readonly parameters: JsonSchema.JsonSchema7\n    readonly structured: boolean\n  }>\n  /**\n   * The tool choice mode for the language model.\n   *\n   * - `auto` (default): The model can decide whether or not to call tools, as well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   */\n  readonly toolChoice: ToolChoice<any>\n  /**\n   * The span to use to trace interactions with the large language model.\n   */\n  readonly span: Span\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L238"
   },
   {
     "_tag": "TypeAlias",
@@ -949,7 +949,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "type StructuredSchema<A, I, R> = TaggedSchema<A, I, R> | IdentifiedSchema<A, I, R>",
+    "signature": "type StructuredSchema<A, I, R> = | TaggedSchema<A, I, R>\n  | IdentifiedSchema<A, I, R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L36"
   },
   {
@@ -966,7 +966,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolChoice<Tool> = \"auto\" | \"none\" | \"required\" | {\n  readonly tool: Tool[\"name\"]\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L67"
   },
   {
     "_tag": "TypeAlias",
@@ -982,7 +982,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ExtractSuccess<Options> = Options extends {\n  toolkit: AiToolkit.ToHandler<infer _Tools>\n} ? AiResponse.WithToolCallResults<_Tools>\n  : Options extends {\n    toolkit: Effect.Effect<AiToolkit.ToHandler<infer _Tools>, infer _E, infer _R>\n  } ? AiResponse.WithToolCallResults<_Tools>\n  : AiResponse.AiResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L146"
   },
   {
     "_tag": "TypeAlias",
@@ -998,7 +998,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ExtractError<Options> = Options extends {\n  toolkit: AiToolkit.ToHandler<infer _Tools>\n} ? AiError | AiTool.Failure<_Tools>\n  : Options extends {\n    toolkit: Effect.Effect<AiToolkit.ToHandler<infer _Tools>, infer _E, infer _R>\n  } ? AiError | AiTool.Failure<_Tools> | _E\n  : AiError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L161"
   },
   {
     "_tag": "TypeAlias",
@@ -1014,7 +1014,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ExtractContext<Options> = Options extends {\n  toolkit: AiToolkit.ToHandler<infer _Tools>\n} ? AiTool.Context<_Tools>\n  : Options extends {\n    toolkit: Effect.Effect<AiToolkit.ToHandler<infer _Tools>, infer _E, infer _R>\n  } ? AiTool.Context<_Tools> | _R\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L176"
   },
   {
     "_tag": "Interface",
@@ -1028,8 +1028,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service<Config> {\n    /**\n     * Generate text using a large language model for the specified `prompt`.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     */\n    readonly generateText: <Tools extends AiTool.Any, Options>(\n      options: Options & GenerateTextOptions<Tools>\n    ) => Effect.Effect<\n      ExtractSuccess<Options>,\n      ExtractError<Options>,\n      ExtractContext<Options> | Config\n    >\n    /**\n     * Generate text using a large language model for the specified `prompt`,\n     * streaming output from the model as soon as it is available.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     */\n    readonly streamText: <Tools extends AiTool.Any, Options>(\n      options: Options & GenerateTextOptions<Tools>\n    ) => Stream.Stream<\n      ExtractSuccess<Options>,\n      ExtractError<Options>,\n      ExtractContext<Options> | Config\n    >\n\n    /**\n     * Generate a structured object for the specified prompt and schema using a\n     * large language model.\n     */\n    readonly generateObject: <A, I, R>(\n      options: GenerateObjectOptions<A, I, R>\n    ) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, R | Config>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L191"
+    "signature": "export interface Service<Config> {\n    /**\n     * Generate text using a large language model for the specified `prompt`.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     */\n    readonly generateText: <Tools extends AiTool.Any, Options>(\n      options: Options & GenerateTextOptions<Tools>\n    ) => Effect.Effect<\n      ExtractSuccess<Options>,\n      ExtractError<Options>,\n      ExtractContext<Options> | Config\n    >\n    /**\n     * Generate text using a large language model for the specified `prompt`,\n     * streaming output from the model as soon as it is available.\n     *\n     * If a `toolkit` is specified, the large language model will additionally\n     * be able to perform tool calls to augment its response.\n     */\n    readonly streamText: <Tools extends AiTool.Any, Options>(\n      options: Options & GenerateTextOptions<Tools>\n    ) => Stream.Stream<\n      ExtractSuccess<Options>,\n      ExtractError<Options>,\n      ExtractContext<Options> | Config\n    >\n\n    /**\n     * Generate a structured object for the specified prompt and schema using a\n     * large language model.\n     */\n    readonly generateObject: <A, I extends Record<string, unknown>, R>(\n      options: GenerateObjectOptions<A, I, R>\n    ) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, R | Config>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L193"
   },
   {
     "_tag": "Constant",
@@ -2400,7 +2400,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly tools: ReadonlyMap<string, AiTool.Any>\n}",
+    "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly tools: Record<string, AiTool.Any>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L71"
   },
   {
