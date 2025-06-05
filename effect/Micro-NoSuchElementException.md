@@ -12,6 +12,6 @@ unable to be found.
 declare class NoSuchElementException
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4395)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Micro.ts#L4396)
 
 Since v3.4.4

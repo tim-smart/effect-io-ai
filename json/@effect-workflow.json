@@ -589,7 +589,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare class Complete<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L386"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L385"
   },
   {
     "_tag": "Class",
@@ -604,7 +604,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare class Suspended",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L455"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L454"
   },
   {
     "_tag": "Constant",
@@ -634,7 +634,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const ResultTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L354"
   },
   {
     "_tag": "Constant",
@@ -650,7 +650,7 @@
     "since": "1.0.0",
     "category": "Compensation",
     "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L507"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L506"
   },
   {
     "_tag": "Function",
@@ -680,7 +680,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromTaggedRequest: <S extends AnyTaggedRequestSchema>(schema: S, options?: { readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Workflow<S[\"_tag\"], S, S[\"success\"], S[\"failure\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L339"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L338"
   },
   {
     "_tag": "Function",
@@ -695,7 +695,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const isResult: <A = unknown, E = unknown>(u: unknown) => u is Result<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L367"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L366"
   },
   {
     "_tag": "Function",
@@ -710,7 +710,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const Result: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly success: Success; readonly error: Error; }) => Schema.Schema<Result<Success[\"Type\"], Error[\"Type\"]>, ResultEncoded<Success[\"Encoded\"], Error[\"Encoded\"]>, Success[\"Context\"] | Error[\"Context\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L466"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L465"
   },
   {
     "_tag": "Function",
@@ -725,7 +725,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const intoResult: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<Result<A, E>, never, R | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L481"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L480"
   },
   {
     "_tag": "Interface",
@@ -830,7 +830,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "export interface CompleteEncoded<A, E> {\n  readonly _tag: \"Complete\"\n  readonly exit: Schema.ExitEncoded<A, E, unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L445"
   },
   {
     "_tag": "TypeAlias",
@@ -890,7 +890,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type ResultTypeId = typeof ResultTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L361"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L360"
   },
   {
     "_tag": "TypeAlias",
@@ -905,7 +905,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type Result<A, E> = Complete<A, E> | Suspended",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L374"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L373"
   },
   {
     "_tag": "TypeAlias",
@@ -920,7 +920,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "type ResultEncoded<A, E> = CompleteEncoded<A, E> | typeof Suspended.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L380"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L379"
   },
   {
     "_tag": "Class",
@@ -950,7 +950,7 @@
     "since": "1.0.0",
     "category": "Services",
     "signature": "declare class WorkflowInstance",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L96"
   },
   {
     "_tag": "Function",

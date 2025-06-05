@@ -2865,7 +2865,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Machine<\n  State,\n  Public extends Procedure.TaggedRequest.Any,\n  Private extends Procedure.TaggedRequest.Any,\n  Input,\n  InitErr,\n  R\n> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly initialize: Machine.Initialize<Input, State, Public, Private, InitErr, R, R>\n  readonly retryPolicy: Schedule.Schedule<unknown, InitErr | MachineDefect, R> | undefined\n}",
+    "signature": "export interface Machine<\n  State,\n  Public extends Procedure.TaggedRequest.Any,\n  Private extends Procedure.TaggedRequest.Any,\n  Input,\n  InitErr,\n  R\n> extends Pipeable {\n  readonly [TypeId]: TypeId\n  readonly initialize: Machine.Initialize<Input, State, Public, Private, R, InitErr, R>\n  readonly retryPolicy: Schedule.Schedule<unknown, InitErr | MachineDefect, R> | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Machine.ts#L70"
   },
   {
