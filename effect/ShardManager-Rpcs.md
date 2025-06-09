@@ -11,6 +11,6 @@ The messaging protocol for the `ShardManager`.
 declare class Rpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L280)
 
 Since v1.0.0

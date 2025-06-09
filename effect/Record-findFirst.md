@@ -19,7 +19,7 @@ console.log(result) // Option.Some(["c", 3])
 **Signature**
 
 ```ts
-declare const findFirst: { <K extends string | symbol, V, V2 extends V>(refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): (self: Record<K, V>) => Option.Option<[K, V2]>; <K extends string | symbol, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: Record<K, V>) => Option.Option<[K, V]>; <K extends string | symbol, V, V2 extends V>(self: Record<K, V>, refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): Option.Option<[K, V2]>; <K extends string | symbol, V>(self: Record<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): Option.Option<[K, V]>; }
+declare const findFirst: { <K extends string | symbol, V, V2 extends V>(refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): (self: ReadonlyRecord<K, V>) => Option.Option<[K, V2]>; <K extends string | symbol, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: ReadonlyRecord<K, V>) => Option.Option<[K, V]>; <K extends string | symbol, V, V2 extends V>(self: ReadonlyRecord<K, V>, refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): Option.Option<[K, V2]>; <K extends string | symbol, V>(self: ReadonlyRecord<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): Option.Option<[K, V]>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1247)
