@@ -652,6 +652,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L433"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "CaptureDefects",
+    "description": "If you set this annotation to `true` for a workflow, it will capture defects\nand include them in the result of the workflow or it's activities.\n\nBy default, this is set to `true`, meaning that defects will be captured.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Annotations",
+    "signature": "declare class CaptureDefects",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L557"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "Workflow.ts",
@@ -695,7 +711,7 @@
     "since": "1.0.0",
     "category": "Compensation",
     "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L514"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L520"
   },
   {
     "_tag": "Function",
@@ -785,7 +801,7 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const wrapActivityResult: <A, E, R>(effect: Effect.Effect<A, E, R>, isSuspend: (value: A) => boolean) => Effect.Effect<A, E, R | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L479"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L485"
   },
   {
     "_tag": "Interface",

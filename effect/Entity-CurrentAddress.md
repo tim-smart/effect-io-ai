@@ -11,6 +11,6 @@ A Context.Tag to access the current entity address.
 declare class CurrentAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L387)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L398)
 
 Since v1.0.0
