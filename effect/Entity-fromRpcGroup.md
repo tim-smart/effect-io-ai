@@ -12,6 +12,6 @@ that adhere to the provided `RpcGroup`.
 declare const fromRpcGroup: <Rpcs extends Rpc.Any>(type: string, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Rpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L355)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L359)
 
 Since v1.0.0

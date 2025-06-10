@@ -456,7 +456,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L398"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L402"
   },
   {
     "_tag": "Class",
@@ -472,7 +472,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentRunnerAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L413"
   },
   {
     "_tag": "Class",
@@ -487,7 +487,7 @@
     "since": "1.0.0",
     "category": "Request",
     "signature": "declare class Request<Rpc>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L458"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L462"
   },
   {
     "_tag": "Constant",
@@ -517,7 +517,7 @@
     "since": "1.0.0",
     "category": "Testing",
     "signature": "declare const makeTestClient: <Rpcs extends Rpc.Any, LA, LE, LR>(entity: Entity<Rpcs>, layer: Layer.Layer<LA, LE, LR>) => Effect.Effect<(entityId: string) => Effect.Effect<RpcClient.RpcClient<Rpcs>>, LE, Scope | ShardingConfig | Exclude<LR, Sharding> | Rpc.MiddlewareClient<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L487"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L491"
   },
   {
     "_tag": "Function",
@@ -532,7 +532,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isEntity: (u: unknown) => u is Any",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L204"
   },
   {
     "_tag": "Function",
@@ -548,7 +548,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromRpcGroup: <Rpcs extends Rpc.Any>(type: string, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Rpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L359"
   },
   {
     "_tag": "Function",
@@ -564,7 +564,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <Rpcs extends ReadonlyArray<Rpc.Any>>(type: string, protocol: Rpcs) => Entity<Rpcs[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L380"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L384"
   },
   {
     "_tag": "Interface",
@@ -578,7 +578,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Entity<in out Rpcs extends Rpc.Any> extends Equal.Equal {\n  readonly [TypeId]: TypeId\n  /**\n   * The name of the entity type.\n   */\n  readonly type: EntityType\n\n  /**\n   * A RpcGroup definition for messages which represents the messaging protocol\n   * that the entity is capable of processing.\n   */\n  readonly protocol: RpcGroup.RpcGroup<Rpcs>\n\n  /**\n   * Get the shard group for the given EntityId.\n   */\n  getShardGroup(entityId: EntityId): string\n\n  /**\n   * Get the ShardId for the given EntityId.\n   */\n  getShardId(entityId: EntityId): Effect.Effect<ShardId.ShardId, never, Sharding>\n\n  /**\n   * Annotate the entity with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Rpcs>\n\n  /**\n   * Annotate the entity with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): Entity<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): Entity<Rpcs>\n\n  /**\n   * Create a client for this entity.\n   */\n  readonly client: Effect.Effect<\n    (\n      entityId: string\n    ) => RpcClient.RpcClient<\n      Rpcs,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner\n    >,\n    never,\n    Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<Rpcs>,\n    RX = never\n  >(\n    build: Handlers | Effect.Effect<Handlers, never, RX>,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly concurrency?: number | \"unbounded\" | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | RpcGroup.HandlersContext<Rpcs, Handlers>\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayerMailbox<\n    R,\n    RX = never\n  >(\n    build:\n      | ((\n        mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n        replier: Replier<Rpcs>\n      ) => Effect.Effect<never, never, R>)\n      | Effect.Effect<\n        (\n          mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n          replier: Replier<Rpcs>\n        ) => Effect.Effect<never, never, R>,\n        never,\n        RX\n      >,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | R\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n}",
+    "signature": "export interface Entity<in out Rpcs extends Rpc.Any> extends Equal.Equal {\n  readonly [TypeId]: TypeId\n  /**\n   * The name of the entity type.\n   */\n  readonly type: EntityType\n\n  /**\n   * A RpcGroup definition for messages which represents the messaging protocol\n   * that the entity is capable of processing.\n   */\n  readonly protocol: RpcGroup.RpcGroup<Rpcs>\n\n  /**\n   * Get the shard group for the given EntityId.\n   */\n  getShardGroup(entityId: EntityId): string\n\n  /**\n   * Get the ShardId for the given EntityId.\n   */\n  getShardId(entityId: EntityId): Effect.Effect<ShardId.ShardId, never, Sharding>\n\n  /**\n   * Annotate the entity with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Rpcs>\n\n  /**\n   * Annotate the entity with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): Entity<Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): Entity<Rpcs>\n\n  /**\n   * Create a client for this entity.\n   */\n  readonly client: Effect.Effect<\n    (\n      entityId: string\n    ) => RpcClient.RpcClient<\n      Rpcs,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner\n    >,\n    never,\n    Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<Rpcs>,\n    RX = never\n  >(\n    build: Handlers | Effect.Effect<Handlers, never, RX>,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly concurrency?: number | \"unbounded\" | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | RpcGroup.HandlersContext<Rpcs, Handlers>\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayerMailbox<\n    R,\n    RX = never\n  >(\n    build:\n      | ((\n        mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n        replier: Replier<Rpcs>\n      ) => Effect.Effect<never, never, R>)\n      | Effect.Effect<\n        (\n          mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n          replier: Replier<Rpcs>\n        ) => Effect.Effect<never, never, R>,\n        never,\n        RX\n      >,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | R\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L60"
   },
   {
@@ -594,7 +594,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "export interface Replier<Rpcs extends Rpc.Any> {\n  readonly succeed: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    value: Replier.Success<R>\n  ) => Effect.Effect<void>\n\n  readonly fail: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    error: Rpc.Error<R>\n  ) => Effect.Effect<void>\n\n  readonly failCause: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    cause: Cause.Cause<Rpc.Error<R>>\n  ) => Effect.Effect<void>\n\n  readonly complete: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    exit: Exit.Exit<Replier.Success<R>, Rpc.Error<R>>\n  ) => Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L418"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L422"
   },
   {
     "_tag": "TypeAlias",
@@ -624,7 +624,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Any = Entity<Rpc.Any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L188"
   },
   {
     "_tag": "TypeAlias",
@@ -639,7 +639,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: (\n    envelope: Request<Current>\n  ) => Rpc.ResultFrom<Current, any> | Rpc.Fork<Rpc.ResultFrom<Current, any>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L192"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L194"
   },
   {
     "_tag": "TypeAlias",
@@ -654,7 +654,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "type Success<R> = Rpc.Success<R> extends Stream.Stream<infer _A, infer _E, infer _R> ?\n    Stream.Stream<_A, _E | Rpc.Error<R>, _R> | Mailbox.ReadonlyMailbox<_A, _E | Rpc.Error<R>>\n    : Rpc.Success<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L449"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L453"
   },
   {
     "_tag": "Class",
@@ -3413,7 +3413,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Sharding.ts#L1212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Sharding.ts#L1213"
   },
   {
     "_tag": "Class",
