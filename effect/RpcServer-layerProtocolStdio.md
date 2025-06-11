@@ -1,0 +1,16 @@
+Package: `@effect/rpc`<br />
+Module: `RpcServer`<br />
+
+## RpcServer.layerProtocolStdio
+
+Create a protocol that uses the provided `Stream` and `Sink` for communication.
+
+**Signature**
+
+```ts
+declare const layerProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, never, EOut, ROut>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | Exclude<RIn | ROut, Scope.Scope>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1239)
+
+Since v1.0.0

@@ -11,7 +11,7 @@ the underlying `HttpRouter`.
 ```ts
 export interface Rpc<
   in out Tag extends string,
-  out Payload extends AnyStructSchema = Schema.Struct<{}>,
+  out Payload extends AnySchema = typeof Schema.Void,
   out Success extends Schema.Schema.Any = typeof Schema.Void,
   out Error extends Schema.Schema.All = typeof Schema.Never,
   out Middleware extends RpcMiddleware.TagClassAny = never

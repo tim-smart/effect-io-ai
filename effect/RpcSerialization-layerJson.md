@@ -14,6 +14,6 @@ Use this if your protocol supports framing for messages, otherwise use
 declare const layerJson: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L362)
 
 Since v1.0.0
