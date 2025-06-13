@@ -15,6 +15,6 @@ export interface ToHandler<in out Tool extends AiTool.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L83)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L86)
 
 Since v1.0.0

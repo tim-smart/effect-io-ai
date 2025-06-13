@@ -11,6 +11,6 @@ A Context.Tag to access the current Runner address.
 declare class CurrentRunnerAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L417)
 
 Since v1.0.0

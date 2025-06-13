@@ -2413,7 +2413,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L24"
   },
   {
     "_tag": "Function",
@@ -2429,7 +2429,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <const Tools extends ReadonlyArray<AiTool.Any>>(...tools: Tools) => AiToolkit<Tools[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L241"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L245"
   },
   {
     "_tag": "Function",
@@ -2445,7 +2445,7 @@
     "since": "1.0.0",
     "category": "Merging",
     "signature": "declare const merge: <const Toolkits extends ReadonlyArray<Any>>(...toolkits: Toolkits) => AiToolkit<Tools<Toolkits[number]>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L251"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L255"
   },
   {
     "_tag": "Interface",
@@ -2460,8 +2460,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface AiToolkit<in out Tools extends AiTool.Any>\n  extends Effect.Effect<ToHandler<Tools>, never, AiTool.ToHandler<Tools>>, Inspectable, Pipeable\n{\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n\n  /**\n   * A map containing the tools that are part of this toolkit.\n   */\n  readonly tools: AiTool.ByName<Tools>\n\n  /**\n   * Converts this toolkit into a `Context` object containing the handlers for\n   * all tools in the toolkit.\n   */\n  toContext<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(\n    build: Handlers | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<Context.Context<AiTool.ToHandler<Tools>>, EX, RX>\n\n  /**\n   * Converts this toolkit into a `Layer` containing the handlers for all tools\n   * in the toolkit.\n   */\n  toLayer<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(\n    build: Handlers | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<AiTool.ToHandler<Tools>, EX, Exclude<RX, Scope.Scope>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L38"
+    "signature": "export interface AiToolkit<in out Tools extends AiTool.Any>\n  extends Effect.Effect<ToHandler<Tools>, never, AiTool.ToHandler<Tools>>, Inspectable, Pipeable\n{\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n\n  /**\n   * A map containing the tools that are part of this toolkit.\n   */\n  readonly tools: AiTool.ByName<Tools>\n\n  /**\n   * Converts this toolkit into a `Context` object containing the handlers for\n   * all tools in the toolkit.\n   */\n  toContext<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(\n    build: Handlers | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<Context.Context<AiTool.ToHandler<Tools>>, EX, RX>\n\n  /**\n   * Converts this toolkit into a `Layer` containing the handlers for all tools\n   * in the toolkit.\n   */\n  toLayer<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(\n    build: Handlers | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<AiTool.ToHandler<Tools>, EX, Exclude<RX, Scope.Scope>>\n\n  of<Handlers extends HandlersFrom<Tools>>(handlers: Handlers): Handlers\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L39"
   },
   {
     "_tag": "Interface",
@@ -2476,7 +2476,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly tools: Record<string, AiTool.Any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L74"
   },
   {
     "_tag": "Interface",
@@ -2492,7 +2492,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToHandler<in out Tool extends AiTool.Any> {\n  readonly tools: ReadonlyArray<Tool>\n  readonly handle: (toolName: AiTool.Name<Tool>, toolParams: AiTool.Parameters<Tool>) => AiTool.HandlerEffect<Tool>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L86"
   },
   {
     "_tag": "TypeAlias",
@@ -2507,7 +2507,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L30"
   },
   {
     "_tag": "TypeAlias",
@@ -2523,7 +2523,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type HandlersFrom<Tools> = {\n  [Tool in Tools as Tool[\"name\"]]: (params: AiTool.Parameters<Tool>) => AiTool.HandlerEffect<Tool>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L97"
   },
   {
     "_tag": "TypeAlias",
@@ -2539,7 +2539,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type Tools<Toolkit> = Toolkit extends AiToolkit<infer Tool> ? string extends Tool[\"name\"] ? never : Tool : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L107"
   },
   {
     "_tag": "Export",
@@ -4494,7 +4494,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare const registerResource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }): Effect.Effect<void, never, R | McpServer>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }) => Effect.Effect<void, never, R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never) | McpServer>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L578"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L581"
   },
   {
     "_tag": "Constant",
@@ -4509,8 +4509,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Resources",
-    "signature": "declare const resource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }): Layer.Layer<never, never, R | McpServer>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }) => Layer.Layer<never, never, McpServer | R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never)>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L727"
+    "signature": "declare const resource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }): Layer.Layer<never, never, R | McpServer>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }) => Layer.Layer<never, never, R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never)>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L730"
   },
   {
     "_tag": "Function",
@@ -4572,7 +4572,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const toolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Layer.Layer<never, never, AiTool.ToHandler<Tools> | McpServer>",
+    "signature": "declare const toolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Layer.Layer<never, never, AiTool.ToHandler<Tools>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L549"
   },
   {
@@ -4589,7 +4589,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare const registerPrompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<PromptMessage> | string, E, R>; }) => Effect.Effect<void, never, ParamsR | R | McpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L788"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L795"
   },
   {
     "_tag": "Function",
@@ -4604,8 +4604,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Resources",
-    "signature": "declare const prompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<PromptMessage> | string, E, R>; }) => Layer.Layer<never, never, ParamsR | R | McpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L886"
+    "signature": "declare const prompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<PromptMessage> | string, E, R>; }) => Layer.Layer<never, never, ParamsR | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L893"
   },
   {
     "_tag": "TypeAlias",
@@ -4620,7 +4620,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ValidateCompletions<Completions, Keys> = & Completions\n  & {\n    readonly [K in keyof Completions]: K extends Keys ? (input: string) => any : never\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L556"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L559"
   },
   {
     "_tag": "TypeAlias",
@@ -4635,7 +4635,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ResourceCompletions<Schemas> = {\n  readonly [\n    K in Extract<keyof Schemas, `${number}`> as Schemas[K] extends Param<infer Id, infer _S> ? Id\n      : `param${K}`\n  ]: (input: string) => Effect.Effect<Array<Schema.Schema.Type<Schemas[K]>>, any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L565"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L568"
   },
   {
     "_tag": "Class",

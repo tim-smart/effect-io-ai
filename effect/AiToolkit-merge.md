@@ -11,6 +11,6 @@ Merges this toolkit with one or more other toolkits.
 declare const merge: <const Toolkits extends ReadonlyArray<Any>>(...toolkits: Toolkits) => AiToolkit<Tools<Toolkits[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L251)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L255)
 
 Since v1.0.0

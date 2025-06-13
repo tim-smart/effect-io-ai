@@ -11,6 +11,6 @@ Constructs a new `AiToolkit` from the specified tools.
 declare const make: <const Tools extends ReadonlyArray<AiTool.Any>>(...tools: Tools) => AiToolkit<Tools[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L241)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L245)
 
 Since v1.0.0

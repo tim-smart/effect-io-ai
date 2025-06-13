@@ -36,9 +36,11 @@ export interface AiToolkit<in out Tools extends AiTool.Any>
   toLayer<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(
     build: Handlers | Effect.Effect<Handlers, EX, RX>
   ): Layer.Layer<AiTool.ToHandler<Tools>, EX, Exclude<RX, Scope.Scope>>
+
+  of<Handlers extends HandlersFrom<Tools>>(handlers: Handlers): Handlers
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L38)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiToolkit.ts#L39)
 
 Since v1.0.0

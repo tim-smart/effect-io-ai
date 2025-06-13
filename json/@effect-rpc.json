@@ -1075,7 +1075,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L22"
   },
   {
     "_tag": "Function",
@@ -1090,7 +1090,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "declare const make: <const Rpcs extends ReadonlyArray<Rpc.Any>>(...rpcs: Rpcs) => RpcGroup<Rpcs[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L349"
   },
   {
     "_tag": "Interface",
@@ -1104,8 +1104,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "groups",
-    "signature": "export interface RpcGroup<in out R extends Rpc.Any> extends Pipeable {\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n  readonly requests: ReadonlyMap<string, R>\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add one or more procedures to the group.\n   */\n  add<const Rpcs2 extends ReadonlyArray<Rpc.Any>>(\n    ...rpcs: Rpcs2\n  ): RpcGroup<R | Rpcs2[number]>\n\n  /**\n   * Merge this group with one or more other groups.\n   */\n  merge<const Groups extends ReadonlyArray<Any>>(\n    ...groups: Groups\n  ): RpcGroup<R | Rpcs<Groups[number]>>\n\n  /**\n   * Add middleware to all the procedures added to the group until this point.\n   */\n  middleware<M extends RpcMiddleware.TagClassAny>(middleware: M): RpcGroup<Rpc.AddMiddleware<R, M>>\n\n  /**\n   * Implement the handlers for the procedures in this group, returning a\n   * context object.\n   */\n  toHandlersContext<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<\n    Context.Context<Rpc.ToHandler<R>>,\n    EX,\n    | RX\n    | HandlersContext<R, Handlers>\n  >\n\n  /**\n   * Implement the handlers for the procedures in this group.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<\n    Rpc.ToHandler<R>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlersContext<R, Handlers>\n  >\n\n  /**\n   * Implement a single handler from the group.\n   */\n  toLayerHandler<\n    const Tag extends R[\"_tag\"],\n    Handler extends HandlerFrom<R, Tag>,\n    EX = never,\n    RX = never\n  >(\n    tag: Tag,\n    build:\n      | Handler\n      | Effect.Effect<Handler, EX, RX>\n  ): Layer.Layer<\n    Rpc.Handler<Tag>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlerContext<R, Tag, Handler>\n  >\n\n  /**\n   * Retrieve a handler for a specific procedure in the group.\n   */\n  accessHandler<const Tag extends R[\"_tag\"]>(tag: Tag): Effect.Effect<\n    (\n      payload: Rpc.Payload<Extract<R, { readonly _tag: Tag }>>,\n      headers: Headers\n    ) => Rpc.ResultFrom<Extract<R, { readonly _tag: Tag }>, never>,\n    never,\n    Rpc.Handler<Tag>\n  >\n\n  /**\n   * Annotate the group with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the group with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): RpcGroup<R>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L33"
+    "signature": "export interface RpcGroup<in out R extends Rpc.Any> extends Pipeable {\n  new(_: never): {}\n\n  readonly [TypeId]: TypeId\n  readonly requests: ReadonlyMap<string, R>\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add one or more procedures to the group.\n   */\n  add<const Rpcs2 extends ReadonlyArray<Rpc.Any>>(\n    ...rpcs: Rpcs2\n  ): RpcGroup<R | Rpcs2[number]>\n\n  /**\n   * Merge this group with one or more other groups.\n   */\n  merge<const Groups extends ReadonlyArray<Any>>(\n    ...groups: Groups\n  ): RpcGroup<R | Rpcs<Groups[number]>>\n\n  /**\n   * Add middleware to all the procedures added to the group until this point.\n   */\n  middleware<M extends RpcMiddleware.TagClassAny>(middleware: M): RpcGroup<Rpc.AddMiddleware<R, M>>\n\n  /**\n   * Implement the handlers for the procedures in this group, returning a\n   * context object.\n   */\n  toHandlersContext<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Effect.Effect<\n    Context.Context<Rpc.ToHandler<R>>,\n    EX,\n    | RX\n    | HandlersContext<R, Handlers>\n  >\n\n  /**\n   * Implement the handlers for the procedures in this group.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<R>,\n    EX = never,\n    RX = never\n  >(\n    build:\n      | Handlers\n      | Effect.Effect<Handlers, EX, RX>\n  ): Layer.Layer<\n    Rpc.ToHandler<R>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlersContext<R, Handlers>\n  >\n\n  of<Handlers extends HandlersFrom<R>>(handlers: Handlers): Handlers\n\n  /**\n   * Implement a single handler from the group.\n   */\n  toLayerHandler<\n    const Tag extends R[\"_tag\"],\n    Handler extends HandlerFrom<R, Tag>,\n    EX = never,\n    RX = never\n  >(\n    tag: Tag,\n    build:\n      | Handler\n      | Effect.Effect<Handler, EX, RX>\n  ): Layer.Layer<\n    Rpc.Handler<Tag>,\n    EX,\n    | Exclude<RX, Scope>\n    | HandlerContext<R, Tag, Handler>\n  >\n\n  /**\n   * Retrieve a handler for a specific procedure in the group.\n   */\n  accessHandler<const Tag extends R[\"_tag\"]>(tag: Tag): Effect.Effect<\n    (\n      payload: Rpc.Payload<Extract<R, { readonly _tag: Tag }>>,\n      headers: Headers\n    ) => Rpc.ResultFrom<Extract<R, { readonly _tag: Tag }>, never>,\n    never,\n    Rpc.Handler<Tag>\n  >\n\n  /**\n   * Annotate the group with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): RpcGroup<R>\n\n  /**\n   * Annotate the group with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): RpcGroup<R>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): RpcGroup<R>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L34"
   },
   {
     "_tag": "Interface",
@@ -1120,7 +1120,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L156"
   },
   {
     "_tag": "TypeAlias",
@@ -1135,7 +1135,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L28"
   },
   {
     "_tag": "TypeAlias",
@@ -1150,7 +1150,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: Rpc.ToHandlerFn<Current>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L161"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L164"
   },
   {
     "_tag": "TypeAlias",
@@ -1165,7 +1165,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "type HandlerFrom<Rpc, Tag> = Extract<Rpc, { readonly _tag: Tag }> extends\n  infer Current ? Current extends Rpc.Any ? Rpc.ToHandlerFn<Current> : never : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L172"
   },
   {
     "_tag": "TypeAlias",
@@ -1180,7 +1180,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "type HandlersContext<Rpcs, Handlers> = keyof Handlers extends infer K ?\n  K extends keyof Handlers & string ? HandlerContext<Rpcs, K, Handlers[K]> : never :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L176"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L179"
   },
   {
     "_tag": "TypeAlias",
@@ -1195,7 +1195,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "type HandlerContext<Rpcs, K, Handler> = [Rpc.IsStream<Rpcs, K>] extends\n  [true] ? Handler extends (...args: any) =>\n    | Stream.Stream<infer _A, infer _E, infer _R>\n    | Rpc.Fork<Stream.Stream<infer _A, infer _E, infer _R>>\n    | Effect.Effect<\n      ReadonlyMailbox<infer _A, infer _E>,\n      infer _EX,\n      infer _R\n    >\n    | Rpc.Fork<\n      Effect.Effect<\n        ReadonlyMailbox<infer _A, infer _E>,\n        infer _EX,\n        infer _R\n      >\n    > ? Exclude<Rpc.ExcludeProvides<_R, Rpcs, K>, Scope> :\n  never :\n  Handler extends (\n    ...args: any\n  ) => Effect.Effect<infer _A, infer _E, infer _R> | Rpc.Fork<Effect.Effect<infer _A, infer _E, infer _R>> ?\n    Rpc.ExcludeProvides<_R, Rpcs, K>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L187"
   },
   {
     "_tag": "TypeAlias",
@@ -1210,7 +1210,7 @@
     "since": "1.0.0",
     "category": "groups",
     "signature": "type Rpcs<Group> = Group extends RpcGroup<infer R> ? string extends R[\"_tag\"] ? never : R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcGroup.ts#L214"
   },
   {
     "_tag": "Constant",
