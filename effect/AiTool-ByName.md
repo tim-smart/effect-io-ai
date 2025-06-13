@@ -13,6 +13,6 @@ type ByName<Tools> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L207)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L237)
 
 Since v1.0.0

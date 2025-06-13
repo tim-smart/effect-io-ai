@@ -21,7 +21,7 @@ assert.deepStrictEqual(Context.get(Services, Port), { PORT: 8080 })
 **Signature**
 
 ```ts
-declare const make: <T extends Tag<any, any>>(tag: T, service: Tag.Service<T>) => Context<Tag.Identifier<T>>
+declare const make: <I, S>(tag: Tag<I, S>, service: Types.NoInfer<S>) => Context<I>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L265)

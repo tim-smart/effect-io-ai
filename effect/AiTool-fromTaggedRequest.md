@@ -11,6 +11,6 @@ Constructs a new `AiTool` from a `Schema.TaggedRequest`.
 declare const fromTaggedRequest: <S extends AnyTaggedRequestSchema>(schema: S) => FromTaggedRequest<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L487)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L531)
 
 Since v1.0.0

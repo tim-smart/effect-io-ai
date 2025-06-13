@@ -25,6 +25,6 @@ type HandlerEffect<Tool> = [Tool] extends [
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L167)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L197)
 
 Since v1.0.0

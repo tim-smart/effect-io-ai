@@ -54,6 +54,6 @@ condition.
 declare const when: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.WhenMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L366)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L368)
 
 Since v1.0.0

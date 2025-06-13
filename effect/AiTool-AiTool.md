@@ -54,6 +54,8 @@ export interface AiTool<
    */
   readonly failureSchema: Failure
 
+  readonly annotations: Context_.Context<never>
+
   /**
    * Adds a requirement on a particular service for the tool call to be able to
    * be executed.
@@ -67,7 +69,8 @@ export interface AiTool<
     Name,
     Parameters,
     SuccessSchema,
-    Failure
+    Failure,
+    Requirements
   >
 
   /**
@@ -77,7 +80,8 @@ export interface AiTool<
     Name,
     Parameters,
     Success,
-    FailureSchema
+    FailureSchema,
+    Requirements
   >
 
   /**
@@ -90,11 +94,35 @@ export interface AiTool<
     ParametersSchema extends Schema.Struct<infer _> ? ParametersSchema
       : ParametersSchema extends Schema.Struct.Fields ? Schema.Struct<ParametersSchema>
       : never,
-    Success
+    Success,
+    Failure,
+    Requirements
+  >
+
+  /**
+   * Add an annotation to the tool.
+   */
+  annotate<I, S>(tag: Context_.Tag<I, S>, value: S): AiTool<
+    Name,
+    Parameters,
+    Success,
+    Failure,
+    Requirements
+  >
+
+  /**
+   * Add many annotations to the tool.
+   */
+  annotateContext<I>(context: Context_.Context<I>): AiTool<
+    Name,
+    Parameters,
+    Success,
+    Failure,
+    Requirements
   >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L35)
 
 Since v1.0.0

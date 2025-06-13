@@ -40,6 +40,6 @@ console.log(match({ type: "A.A" })) // 1
 declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L576)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L578)
 
 Since v1.0.0

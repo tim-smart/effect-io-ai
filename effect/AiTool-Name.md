@@ -18,6 +18,6 @@ type Name<Tool> = Tool extends AiTool<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L247)
 
 Since v1.0.0

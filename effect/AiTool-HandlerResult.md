@@ -22,6 +22,6 @@ export interface HandlerResult<Tool extends Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L188)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L218)
 
 Since v1.0.0

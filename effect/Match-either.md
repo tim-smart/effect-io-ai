@@ -44,6 +44,6 @@ console.log(getRole({ role: "viewer" }))
 declare const either: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Either.Either<Unify<A>, R> : Either.Either<Unify<A>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1172)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1174)
 
 Since v1.0.0

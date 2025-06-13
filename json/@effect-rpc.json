@@ -2185,7 +2185,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const msgPack: { unsafeMake(): Parser; readonly contentType: string; readonly includesFraming: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L339"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L356"
   },
   {
     "_tag": "Constant",
@@ -2201,7 +2201,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L362"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L379"
   },
   {
     "_tag": "Constant",
@@ -2217,7 +2217,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L390"
   },
   {
     "_tag": "Constant",
@@ -2233,7 +2233,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L405"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L422"
   },
   {
     "_tag": "Function",
@@ -2248,7 +2248,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const jsonRpc: (options?: { readonly contentType?: string | undefined; }) => RpcSerialization[\"Type\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L89"
   },
   {
     "_tag": "Function",
@@ -2263,7 +2263,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const ndJsonRpc: (options?: { readonly contentType?: string | undefined; }) => RpcSerialization[\"Type\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L124"
   },
   {
     "_tag": "Function",
@@ -2279,7 +2279,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L398"
   },
   {
     "_tag": "Function",
@@ -2295,7 +2295,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L409"
   },
   {
     "_tag": "Interface",
@@ -2369,8 +2369,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "protocol",
-    "signature": "declare const makeProtocolSocketServer: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | SocketServer.SocketServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L752"
+    "signature": "declare const makeProtocolSocketServer: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<Iterable<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | SocketServer.SocketServer>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L753"
   },
   {
     "_tag": "Constant",
@@ -2386,7 +2386,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolSocketServer: Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | SocketServer.SocketServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L767"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L768"
   },
   {
     "_tag": "Constant",
@@ -2401,7 +2401,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWithHttpAppWebsocket: Effect.Effect<{ readonly protocol: Protocol[\"Type\"]; readonly httpApp: HttpApp.Default<never, Scope.Scope>; }, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L777"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L778"
   },
   {
     "_tag": "Constant",
@@ -2416,7 +2416,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWebsocket: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: Context.Tag<I, HttpRouter.HttpRouter.Service<any, any>>; }) => Effect.Effect<Protocol[\"Type\"], never, RpcSerialization.RpcSerialization | I>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L801"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L802"
   },
   {
     "_tag": "Constant",
@@ -2431,7 +2431,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWithHttpApp: Effect.Effect<{ readonly protocol: Protocol[\"Type\"]; readonly httpApp: HttpApp.Default<never, Scope.Scope>; }, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L842"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L843"
   },
   {
     "_tag": "Constant",
@@ -2445,8 +2445,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "protocol",
-    "signature": "declare const makeProtocolHttp: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, RpcSerialization.RpcSerialization | I>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L972"
+    "signature": "declare const makeProtocolHttp: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<Iterable<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, RpcSerialization.RpcSerialization | I>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L974"
   },
   {
     "_tag": "Constant",
@@ -2460,8 +2460,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "protocol",
-    "signature": "declare const makeProtocolWorkerRunner: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, WorkerError, Scope.Scope | WorkerRunner.PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L987"
+    "signature": "declare const makeProtocolWorkerRunner: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<Iterable<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, WorkerError, Scope.Scope | WorkerRunner.PlatformRunner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L989"
   },
   {
     "_tag": "Constant",
@@ -2476,7 +2476,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWorkerRunner: Layer.Layer<Protocol, WorkerError, WorkerRunner.PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1030"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1044"
   },
   {
     "_tag": "Constant",
@@ -2491,7 +2491,7 @@
     "since": "1.0.0",
     "category": "http app",
     "signature": "declare const toHttpApp: <Rpcs extends Rpc.Any>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; } | undefined) => Effect.Effect<HttpApp.Default<never, Scope.Scope>, never, Scope.Scope | RpcSerialization.RpcSerialization | Rpc.ToHandler<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1057"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1071"
   },
   {
     "_tag": "Constant",
@@ -2506,7 +2506,7 @@
     "since": "1.0.0",
     "category": "http app",
     "signature": "declare const toHttpAppWebsocket: <Rpcs extends Rpc.Any>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; } | undefined) => Effect.Effect<HttpApp.Default<never, Scope.Scope>, never, Scope.Scope | RpcSerialization.RpcSerialization | Rpc.ToHandler<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1092"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1106"
   },
   {
     "_tag": "Constant",
@@ -2521,8 +2521,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "protocol",
-    "signature": "declare const makeProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, never, EOut, ROut>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | RIn | Exclude<ROut, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1180"
+    "signature": "declare const makeProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, unknown, EOut, ROut>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<Iterable<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | RIn | Exclude<ROut, Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1194"
   },
   {
     "_tag": "Function",
@@ -2553,7 +2553,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWebsocket: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L827"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L828"
   },
   {
     "_tag": "Function",
@@ -2569,7 +2569,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolHttp: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1042"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1056"
   },
   {
     "_tag": "Function",
@@ -2585,7 +2585,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const toWebHandler: <Rpcs extends Rpc.Any, LE>(group: RpcGroup.RpcGroup<Rpcs>, options: { readonly layer: Layer.Layer<Rpc.ToHandler<Rpcs> | Rpc.Middleware<Rpcs> | RpcSerialization.RpcSerialization | HttpRouter.HttpRouter.DefaultServices, LE>; readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, HttpRouter.HttpRouter.DefaultServices>; readonly memoMap?: Layer.MemoMap; }) => { readonly handler: (request: globalThis.Request, context?: Context.Context<never> | undefined) => Promise<Response>; readonly dispose: () => Promise<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1143"
   },
   {
     "_tag": "Function",
@@ -2600,8 +2600,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "protocol",
-    "signature": "declare const layerProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, never, EOut, ROut>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | Exclude<RIn | ROut, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1239"
+    "signature": "declare const layerProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | RIn | ROut>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1254"
   },
   {
     "_tag": "Interface",

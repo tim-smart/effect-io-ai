@@ -12,6 +12,6 @@ tool call's protocol.
 declare const make: <const Name extends string, Parameters extends Schema.Struct.Fields = {}, Success extends Schema.Schema.Any = typeof Schema.Void, Failure extends Schema.Schema.All = typeof Schema.Never>(name: Name, options?: { readonly description?: string | undefined; readonly parameters?: Parameters; readonly success?: Success; readonly failure?: Failure; }) => AiTool<Name, Schema.Struct<Parameters>, Success, Failure>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L442)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L485)
 
 Since v1.0.0

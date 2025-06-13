@@ -11,6 +11,6 @@ Matches values that are instances of `Date`.
 declare const date: Predicate.Refinement<unknown, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1045)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1047)
 
 Since v1.0.0

@@ -19,6 +19,6 @@ type Success<Tool> = Tool extends AiTool<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L295)
 
 Since v1.0.0

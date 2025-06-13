@@ -4293,7 +4293,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Retry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L287"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L305"
   },
   {
     "_tag": "Constant",
@@ -4308,7 +4308,22 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const RetryTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L275"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L293"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "encoder",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const encoder: Encoder",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L331"
   },
   {
     "_tag": "Function",
@@ -4363,13 +4378,43 @@
       "path": "src/Sse.ts"
     },
     "project": "@effect/experimental",
+    "name": "Encoder",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Encoder {\n  write(event: AnyEvent): string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L264"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
     "name": "Event",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Event {\n  readonly _tag: \"Event\"\n  readonly event: string\n  readonly id: string | undefined\n  readonly data: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L264"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L272"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "EventEncoded",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EventEncoded {\n  readonly event: string\n  readonly id: string | undefined\n  readonly data: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L283"
   },
   {
     "_tag": "TypeAlias",
@@ -4384,7 +4429,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type RetryTypeId = typeof RetryTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L281"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L299"
   },
   {
     "_tag": "TypeAlias",
@@ -4399,7 +4444,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type AnyEvent = Event | Retry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L307"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L325"
   },
   {
     "_tag": "Constant",

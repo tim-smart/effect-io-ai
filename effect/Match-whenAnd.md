@@ -45,6 +45,6 @@ console.log(checkUser({ age: 20, role: "user" }))
 declare const whenAnd: <R, const P extends ReadonlyArray<Types.PatternPrimitive<R> | Types.PatternBase<R>>, Ret, Fn extends (_: Types.WhenMatch<R, T.UnionToIntersection<P[number]>>) => Ret>(...args: [...patterns: P, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<T.UnionToIntersection<P[number]>>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<T.UnionToIntersection<P[number]>>>>, A | ReturnType<Fn>, Pr>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L486)
 
 Since v1.0.0

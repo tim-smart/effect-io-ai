@@ -19,6 +19,6 @@ type Parameters<Tool> = Tool extends AiTool<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L263)
 
 Since v1.0.0

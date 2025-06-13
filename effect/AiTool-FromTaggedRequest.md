@@ -13,6 +13,6 @@ export interface FromTaggedRequest<S extends AnyTaggedRequestSchema>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L367)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiTool.ts#L397)
 
 Since v1.0.0

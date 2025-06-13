@@ -11,6 +11,6 @@ Matches values of type `symbol`.
 declare const symbol: Predicate.Refinement<unknown, symbol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1037)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1039)
 
 Since v1.0.0

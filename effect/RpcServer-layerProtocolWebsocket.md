@@ -11,6 +11,6 @@ A rpc protocol that uses websockets for communication.
 declare const layerProtocolWebsocket: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L827)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L828)
 
 Since v1.0.0

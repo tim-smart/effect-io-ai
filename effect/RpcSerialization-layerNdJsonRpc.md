@@ -12,6 +12,6 @@ new lines.
 declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L392)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L409)
 
 Since v1.0.0

@@ -32,6 +32,6 @@ assert.deepStrictEqual(Context.get(Services, Host), { HOST: "localhost" })
 declare const mergeAll: <T extends Array<unknown>>(...ctxs: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L451)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L443)
 
 Since v3.12.0
