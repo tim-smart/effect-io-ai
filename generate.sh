@@ -23,6 +23,12 @@ latest_tarball() {
   curl -L "$url" | tar -zx --strip-components 1
 }
 
+main_tarball() {
+  opts=(-s)
+  url="https://api.github.com/repos/$1/tarball/main"
+  curl -L "$url" | tar -zx --strip-components 1
+}
+
 for repo in ${repos[@]}; do
   IFS='/' read -ra repo_parts <<< "$repo"
   repo_name="${repo_parts[1]}"
@@ -60,3 +66,11 @@ rm -f json/_all.json
 jq -s '. | flatten' json/*.json > json/_all.json
 
 node $indexjs > index.html
+
+# website content
+
+rm -rf tmp
+mkdir tmp
+cd tmp
+main_tarball "effect-ts/website"
+ls content/src/content/docs/docs/**/*.mdx | jq -R -s -c 'split("\n")[:-1]' > ../website/content.json
