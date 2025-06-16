@@ -48,7 +48,7 @@ export interface Handlers<
    */
   handleRaw<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(
     name: Name,
-    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerResponseWithName<Endpoints, Name, E, R1>,
+    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerRawWithName<Endpoints, Name, E, R1>,
     options?: { readonly uninterruptible?: boolean | undefined } | undefined
   ): Handlers<
     E,

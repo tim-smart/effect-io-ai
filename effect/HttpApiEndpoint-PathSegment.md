@@ -12,6 +12,6 @@ segment of a URL path.
 type PathSegment = `/${string}`
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L46)
 
 Since v1.0.0

@@ -199,6 +199,6 @@ export interface HttpApiEndpoint<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiEndpoint.ts#L55)
 
 Since v1.0.0
