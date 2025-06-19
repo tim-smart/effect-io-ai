@@ -13,6 +13,6 @@ additional capabilities.
 declare class ClientCapabilities
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L196)
 
 Since v1.0.0

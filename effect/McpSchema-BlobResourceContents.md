@@ -11,6 +11,6 @@ The contents of a binary resource, which can be represented as an Uint8Array
 declare class BlobResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L670)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L663)
 
 Since v1.0.0

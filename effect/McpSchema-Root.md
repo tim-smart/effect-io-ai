@@ -11,6 +11,6 @@ Represents a root directory or file that the server can operate on.
 declare class Root
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1603)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1608)
 
 Since v1.0.0

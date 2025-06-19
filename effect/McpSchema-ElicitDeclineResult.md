@@ -1,0 +1,16 @@
+Package: `@effect/ai`<br />
+Module: `McpSchema`<br />
+
+## McpSchema.ElicitDeclineResult
+
+The client's response to an elicitation request
+
+**Signature**
+
+```ts
+declare class ElicitDeclineResult
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1706)
+
+Since v1.0.0

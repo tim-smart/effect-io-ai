@@ -11,6 +11,6 @@ Used by the client to invoke a tool provided by the server.
 declare class CallTool
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1218)
 
 Since v1.0.0

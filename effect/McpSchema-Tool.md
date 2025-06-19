@@ -11,6 +11,6 @@ Definition for a tool the client can call.
 declare class Tool
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1136)
 
 Since v1.0.0

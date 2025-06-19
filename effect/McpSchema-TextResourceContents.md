@@ -11,6 +11,6 @@ The contents of a text resource, which can be represented as a string.
 declare class TextResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L654)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L648)
 
 Since v1.0.0

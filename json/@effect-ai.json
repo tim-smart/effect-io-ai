@@ -2762,7 +2762,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class RequestMeta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L61"
   },
   {
     "_tag": "Class",
@@ -2777,7 +2777,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class ResultMeta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L78"
   },
   {
     "_tag": "Class",
@@ -2792,7 +2792,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class NotificationMeta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L90"
   },
   {
     "_tag": "Class",
@@ -2807,7 +2807,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class PaginatedRequestMeta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L116"
   },
   {
     "_tag": "Class",
@@ -2822,7 +2822,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class PaginatedResultMeta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L129"
   },
   {
     "_tag": "Class",
@@ -2838,7 +2838,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class Annotations",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L163"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L158"
   },
   {
     "_tag": "Class",
@@ -2854,7 +2854,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class Implementation",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L182"
   },
   {
     "_tag": "Class",
@@ -2870,7 +2870,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class ClientCapabilities",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L196"
   },
   {
     "_tag": "Class",
@@ -2886,7 +2886,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare class ServerCapabilities",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L237"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L233"
   },
   {
     "_tag": "Class",
@@ -2901,7 +2901,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class McpError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L296"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L290"
   },
   {
     "_tag": "Class",
@@ -2916,7 +2916,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class ParseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L339"
   },
   {
     "_tag": "Class",
@@ -2931,7 +2931,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class InvalidRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L354"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L348"
   },
   {
     "_tag": "Class",
@@ -2946,7 +2946,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class MethodNotFound",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L357"
   },
   {
     "_tag": "Class",
@@ -2961,7 +2961,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class InvalidParams",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L366"
   },
   {
     "_tag": "Class",
@@ -2976,7 +2976,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class InternalError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L375"
   },
   {
     "_tag": "Class",
@@ -2992,7 +2992,7 @@
     "since": "1.0.0",
     "category": "Ping",
     "signature": "declare class Ping",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L400"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L394"
   },
   {
     "_tag": "Class",
@@ -3008,7 +3008,7 @@
     "since": "1.0.0",
     "category": "Initialization",
     "signature": "declare class InitializeResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L411"
   },
   {
     "_tag": "Class",
@@ -3024,7 +3024,7 @@
     "since": "1.0.0",
     "category": "Initialization",
     "signature": "declare class Initialize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L440"
   },
   {
     "_tag": "Class",
@@ -3040,7 +3040,7 @@
     "since": "1.0.0",
     "category": "Initialization",
     "signature": "declare class InitializedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L476"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L470"
   },
   {
     "_tag": "Class",
@@ -3055,7 +3055,7 @@
     "since": "1.0.0",
     "category": "Cancellation",
     "signature": "declare class CancelledNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L488"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L482"
   },
   {
     "_tag": "Class",
@@ -3071,7 +3071,7 @@
     "since": "1.0.0",
     "category": "Progress",
     "signature": "declare class ProgressNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L517"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L511"
   },
   {
     "_tag": "Class",
@@ -3087,7 +3087,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class Resource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L551"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L545"
   },
   {
     "_tag": "Class",
@@ -3103,7 +3103,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ResourceTemplate",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L595"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L590"
   },
   {
     "_tag": "Class",
@@ -3119,7 +3119,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ResourceContents",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L635"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L631"
   },
   {
     "_tag": "Class",
@@ -3135,7 +3135,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class TextResourceContents",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L654"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L648"
   },
   {
     "_tag": "Class",
@@ -3151,7 +3151,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class BlobResourceContents",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L670"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L663"
   },
   {
     "_tag": "Class",
@@ -3167,7 +3167,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ListResourcesResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L685"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L677"
   },
   {
     "_tag": "Class",
@@ -3183,7 +3183,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ListResources",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L698"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L690"
   },
   {
     "_tag": "Class",
@@ -3199,7 +3199,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ListResourceTemplatesResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L710"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L702"
   },
   {
     "_tag": "Class",
@@ -3215,7 +3215,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ListResourceTemplates",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L723"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L715"
   },
   {
     "_tag": "Class",
@@ -3231,7 +3231,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ReadResourceResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L735"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L727"
   },
   {
     "_tag": "Class",
@@ -3247,7 +3247,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ReadResource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L751"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L741"
   },
   {
     "_tag": "Class",
@@ -3263,7 +3263,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ResourceListChangedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L772"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L762"
   },
   {
     "_tag": "Class",
@@ -3279,7 +3279,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class Subscribe",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L783"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L773"
   },
   {
     "_tag": "Class",
@@ -3295,7 +3295,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class Unsubscribe",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L803"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L793"
   },
   {
     "_tag": "Class",
@@ -3310,7 +3310,7 @@
     "since": "1.0.0",
     "category": "Resources",
     "signature": "declare class ResourceUpdatedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L819"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L809"
   },
   {
     "_tag": "Class",
@@ -3326,7 +3326,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class PromptArgument",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L839"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L829"
   },
   {
     "_tag": "Class",
@@ -3342,7 +3342,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L862"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L851"
   },
   {
     "_tag": "Class",
@@ -3358,7 +3358,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class TextContent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L885"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L875"
   },
   {
     "_tag": "Class",
@@ -3374,7 +3374,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class ImageContent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L905"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L893"
   },
   {
     "_tag": "Class",
@@ -3390,7 +3390,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class AudioContent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L930"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L916"
   },
   {
     "_tag": "Class",
@@ -3406,7 +3406,38 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class EmbeddedResource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L958"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L942"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ResourceLink",
+    "description": "A resource that the server is capable of reading, included in a prompt or tool call result.\n\nNote: resource links returned by tools are not guaranteed to appear in the results of `resources/list` requests.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Prompts",
+    "signature": "declare class ResourceLink",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L959"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ContentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Prompts",
+    "signature": "declare class ContentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L968"
   },
   {
     "_tag": "Class",
@@ -3422,7 +3453,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class PromptMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L978"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L985"
   },
   {
     "_tag": "Class",
@@ -3502,7 +3533,7 @@
     "since": "1.0.0",
     "category": "Prompts",
     "signature": "declare class PromptListChangedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1066"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1067"
   },
   {
     "_tag": "Class",
@@ -3518,7 +3549,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class ToolAnnotations",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1087"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1088"
   },
   {
     "_tag": "Class",
@@ -3534,7 +3565,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class Tool",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1135"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1136"
   },
   {
     "_tag": "Class",
@@ -3550,7 +3581,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class ListToolsResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1166"
   },
   {
     "_tag": "Class",
@@ -3566,7 +3597,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class ListTools",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1179"
   },
   {
     "_tag": "Class",
@@ -3582,7 +3613,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class CallToolResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1200"
   },
   {
     "_tag": "Class",
@@ -3598,7 +3629,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class CallTool",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1222"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1218"
   },
   {
     "_tag": "Class",
@@ -3614,7 +3645,7 @@
     "since": "1.0.0",
     "category": "Tools",
     "signature": "declare class ToolListChangedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1239"
   },
   {
     "_tag": "Class",
@@ -3630,7 +3661,7 @@
     "since": "1.0.0",
     "category": "Logging",
     "signature": "declare class SetLevel",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1297"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1293"
   },
   {
     "_tag": "Class",
@@ -3645,7 +3676,7 @@
     "since": "1.0.0",
     "category": "Logging",
     "signature": "declare class LoggingMessageNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1314"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1310"
   },
   {
     "_tag": "Class",
@@ -3661,7 +3692,7 @@
     "since": "1.0.0",
     "category": "Sampling",
     "signature": "declare class SamplingMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1339"
   },
   {
     "_tag": "Class",
@@ -3677,7 +3708,7 @@
     "since": "1.0.0",
     "category": "Sampling",
     "signature": "declare class ModelHint",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1359"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1353"
   },
   {
     "_tag": "Class",
@@ -3693,7 +3724,7 @@
     "since": "1.0.0",
     "category": "Sampling",
     "signature": "declare class ModelPreferences",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1393"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1385"
   },
   {
     "_tag": "Class",
@@ -3709,7 +3740,7 @@
     "since": "1.0.0",
     "category": "Sampling",
     "signature": "declare class CreateMessageResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1427"
   },
   {
     "_tag": "Class",
@@ -3725,7 +3756,7 @@
     "since": "1.0.0",
     "category": "Sampling",
     "signature": "declare class CreateMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1457"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1449"
   },
   {
     "_tag": "Class",
@@ -3741,7 +3772,7 @@
     "since": "1.0.0",
     "category": "Autocomplete",
     "signature": "declare class ResourceReference",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1502"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1494"
   },
   {
     "_tag": "Class",
@@ -3757,7 +3788,7 @@
     "since": "1.0.0",
     "category": "Autocomplete",
     "signature": "declare class PromptReference",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1518"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1508"
   },
   {
     "_tag": "Class",
@@ -3773,7 +3804,7 @@
     "since": "1.0.0",
     "category": "Autocomplete",
     "signature": "declare class CompleteResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1534"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1523"
   },
   {
     "_tag": "Class",
@@ -3789,7 +3820,7 @@
     "since": "1.0.0",
     "category": "Autocomplete",
     "signature": "declare class Complete",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1572"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1559"
   },
   {
     "_tag": "Class",
@@ -3805,7 +3836,7 @@
     "since": "1.0.0",
     "category": "Roots",
     "signature": "declare class Root",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1603"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1608"
   },
   {
     "_tag": "Class",
@@ -3821,7 +3852,7 @@
     "since": "1.0.0",
     "category": "Roots",
     "signature": "declare class ListRootsResult",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1628"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1633"
   },
   {
     "_tag": "Class",
@@ -3837,7 +3868,7 @@
     "since": "1.0.0",
     "category": "Roots",
     "signature": "declare class ListRoots",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1648"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1653"
   },
   {
     "_tag": "Class",
@@ -3853,7 +3884,99 @@
     "since": "1.0.0",
     "category": "Roots",
     "signature": "declare class RootsListChangedNotification",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1663"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1668"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ElicitAcceptResult",
+    "description": "The client's response to an elicitation request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare class ElicitAcceptResult",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1682"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ElicitDeclineResult",
+    "description": "The client's response to an elicitation request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare class ElicitDeclineResult",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1706"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "Elicit",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare class Elicit",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1734"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ElicitationDeclined",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare class ElicitationDeclined",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1755"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "McpServerClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "McpServerClient",
+    "signature": "declare class McpServerClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1770"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "McpServerClientMiddleware",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "McpServerClient",
+    "signature": "declare class McpServerClientMiddleware",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1782"
   },
   {
     "_tag": "Class",
@@ -3868,7 +3991,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "declare class ClientRequestRpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1756"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1877"
   },
   {
     "_tag": "Class",
@@ -3883,7 +4006,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "declare class ClientNotificationRpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1782"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1903"
   },
   {
     "_tag": "Class",
@@ -3898,7 +4021,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "declare class ClientRpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1799"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1920"
   },
   {
     "_tag": "Class",
@@ -3913,7 +4036,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "declare class ServerRequestRpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1817"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1938"
   },
   {
     "_tag": "Class",
@@ -3928,7 +4051,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "declare class ServerNotificationRpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1833"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1955"
   },
   {
     "_tag": "Constant",
@@ -3944,7 +4067,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare const RequestId: Schema.Union<[typeof Schema.String, typeof Schema.Number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -3960,7 +4083,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare const ProgressToken: Schema.Union<[typeof Schema.String, typeof Schema.Number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -3976,7 +4099,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare const Cursor: typeof Schema.String",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -3992,7 +4115,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "declare const Role: Schema.Literal<[\"user\", \"assistant\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -4007,7 +4130,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const INVALID_REQUEST_ERROR_CODE: -32600",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -4022,7 +4145,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const METHOD_NOT_FOUND_ERROR_CODE: -32601",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L324"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L318"
   },
   {
     "_tag": "Constant",
@@ -4037,7 +4160,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const INVALID_PARAMS_ERROR_CODE: -32602",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L329"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L323"
   },
   {
     "_tag": "Constant",
@@ -4052,7 +4175,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const INTERNAL_ERROR_CODE: -32603",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L328"
   },
   {
     "_tag": "Constant",
@@ -4067,7 +4190,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const PARSE_ERROR_CODE: -32700",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L339"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L333"
   },
   {
     "_tag": "Constant",
@@ -4083,7 +4206,23 @@
     "since": "1.0.0",
     "category": "Logging",
     "signature": "declare const LoggingLevel: Schema.Literal<[\"debug\", \"info\", \"notice\", \"warning\", \"error\", \"critical\", \"alert\", \"emergency\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1260"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1256"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "McpSchema.ts",
+      "path": "src/McpSchema.ts"
+    },
+    "project": "@effect/ai",
+    "name": "ElicitResult",
+    "description": "The client's response to an elicitation request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare const ElicitResult: Schema.Union<[typeof ElicitAcceptResult, typeof ElicitDeclineResult]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1725"
   },
   {
     "_tag": "Constant",
@@ -4098,7 +4237,7 @@
     "since": "1.0.0",
     "category": "Parameters",
     "signature": "declare const ParamAnnotation: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1882"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L2004"
   },
   {
     "_tag": "Function",
@@ -4114,7 +4253,7 @@
     "since": "1.0.0",
     "category": "Parameters",
     "signature": "declare const param: <const Id extends string, S extends Schema.Schema.Any>(id: Id, schema: S) => Param<Id, S>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1900"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L2022"
   },
   {
     "_tag": "Interface",
@@ -4129,7 +4268,7 @@
     "since": "1.0.0",
     "category": "Parameters",
     "signature": "export interface Param<Id extends string, S extends Schema.Schema.Any>\n  extends Schema.Schema<S[\"Type\"], S[\"Encoded\"], S[\"Context\"]>\n{\n  readonly [ParamAnnotation]: Id\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1888"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L2010"
   },
   {
     "_tag": "TypeAlias",
@@ -4145,7 +4284,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "type RequestId = typeof RequestId.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L34"
   },
   {
     "_tag": "TypeAlias",
@@ -4161,7 +4300,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "type ProgressToken = typeof ProgressToken.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L55"
   },
   {
     "_tag": "TypeAlias",
@@ -4176,7 +4315,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "type Cursor = typeof Cursor.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L110"
   },
   {
     "_tag": "TypeAlias",
@@ -4191,7 +4330,7 @@
     "since": "1.0.0",
     "category": "Common",
     "signature": "type Role = typeof Role.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L149"
   },
   {
     "_tag": "TypeAlias",
@@ -4207,7 +4346,7 @@
     "since": "1.0.0",
     "category": "Logging",
     "signature": "type LoggingLevel = typeof LoggingLevel.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1285"
   },
   {
     "_tag": "TypeAlias",
@@ -4222,7 +4361,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type RequestEncoded<Group> = RpcGroup.Rpcs<\n  Group\n> extends infer Rpc ? Rpc extends Rpc.Rpc<\n    infer _Tag,\n    infer _Payload,\n    infer _Success,\n    infer _Error,\n    infer _Middleware\n  > ? {\n      readonly _tag: \"Request\"\n      readonly id: string | number\n      readonly method: _Tag\n      readonly payload: _Payload[\"Encoded\"]\n    }\n  : never\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1675"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1796"
   },
   {
     "_tag": "TypeAlias",
@@ -4237,7 +4376,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type NotificationEncoded<Group> = RpcGroup.Rpcs<\n  Group\n> extends infer Rpc ? Rpc extends Rpc.Rpc<\n    infer _Tag,\n    infer _Payload,\n    infer _Success,\n    infer _Error,\n    infer _Middleware\n  > ? {\n      readonly _tag: \"Notification\"\n      readonly method: _Tag\n      readonly payload: _Payload[\"Encoded\"]\n    }\n  : never\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1696"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1817"
   },
   {
     "_tag": "TypeAlias",
@@ -4252,7 +4391,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type SuccessEncoded<Group> = RpcGroup.Rpcs<\n  Group\n> extends infer Rpc ? Rpc extends Rpc.Rpc<\n    infer _Tag,\n    infer _Payload,\n    infer _Success,\n    infer _Error,\n    infer _Middleware\n  > ? {\n      readonly _tag: \"Success\"\n      readonly id: string | number\n      readonly result: _Success[\"Encoded\"]\n    }\n  : never\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1716"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1837"
   },
   {
     "_tag": "TypeAlias",
@@ -4267,7 +4406,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type FailureEncoded<Group> = RpcGroup.Rpcs<\n  Group\n> extends infer Rpc ? Rpc extends Rpc.Rpc<\n    infer _Tag,\n    infer _Payload,\n    infer _Success,\n    infer _Error,\n    infer _Middleware\n  > ? {\n      readonly _tag: \"Failure\"\n      readonly id: string | number\n      readonly error: _Error[\"Encoded\"]\n    }\n  : never\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1736"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1857"
   },
   {
     "_tag": "TypeAlias",
@@ -4282,7 +4421,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ClientRequestEncoded = RequestEncoded<typeof ClientRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1776"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1897"
   },
   {
     "_tag": "TypeAlias",
@@ -4297,7 +4436,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ClientNotificationEncoded = NotificationEncoded<typeof ClientNotificationRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1793"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1914"
   },
   {
     "_tag": "TypeAlias",
@@ -4312,7 +4451,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ClientSuccessEncoded = SuccessEncoded<typeof ServerRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1805"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1926"
   },
   {
     "_tag": "TypeAlias",
@@ -4327,7 +4466,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ClientFailureEncoded = FailureEncoded<typeof ServerRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1811"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1932"
   },
   {
     "_tag": "TypeAlias",
@@ -4342,7 +4481,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ServerRequestEncoded = RequestEncoded<typeof ServerRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1827"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1949"
   },
   {
     "_tag": "TypeAlias",
@@ -4357,7 +4496,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ServerNotificationEncoded = NotificationEncoded<typeof ServerNotificationRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1847"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1969"
   },
   {
     "_tag": "TypeAlias",
@@ -4372,7 +4511,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ServerSuccessEncoded = SuccessEncoded<typeof ClientRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1853"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1975"
   },
   {
     "_tag": "TypeAlias",
@@ -4387,7 +4526,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ServerFailureEncoded = FailureEncoded<typeof ClientRequestRpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1859"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1981"
   },
   {
     "_tag": "TypeAlias",
@@ -4402,7 +4541,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type ServerResultEncoded = ServerSuccessEncoded | ServerFailureEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1865"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1987"
   },
   {
     "_tag": "TypeAlias",
@@ -4417,7 +4556,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type FromClientEncoded = ClientRequestEncoded | ClientNotificationEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1871"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1993"
   },
   {
     "_tag": "TypeAlias",
@@ -4432,7 +4571,7 @@
     "since": "1.0.0",
     "category": "Protocol",
     "signature": "type FromServerEncoded = ServerResultEncoded | ServerNotificationEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1876"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1998"
   },
   {
     "_tag": "Class",
@@ -4447,7 +4586,7 @@
     "since": "1.0.0",
     "category": "McpServer",
     "signature": "declare class McpServer",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L73"
   },
   {
     "_tag": "Constant",
@@ -4462,7 +4601,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const run: (options: { readonly name: string; readonly version: string; }) => Effect.Effect<never, never, McpServer | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L267"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L294"
   },
   {
     "_tag": "Constant",
@@ -4477,8 +4616,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const registerToolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Effect.Effect<void, never, McpServer | AiTool.ToHandler<Tools>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L486"
+    "signature": "declare const registerToolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Effect.Effect<void, never, McpServer | AiTool.ToHandler<Tools> | Exclude<AiTool.Context<Tools>, McpServerClient>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L583"
   },
   {
     "_tag": "Constant",
@@ -4493,8 +4632,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Resources",
-    "signature": "declare const registerResource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }): Effect.Effect<void, never, R | McpServer>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }) => Effect.Effect<void, never, R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never) | McpServer>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L581"
+    "signature": "declare const registerResource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<typeof ReadResourceResult.Type | string | Uint8Array, E, R>; }): Effect.Effect<void, never, Exclude<R, McpServerClient> | McpServer>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<typeof ReadResourceResult.Type | string | Uint8Array, E, R>; }) => Effect.Effect<void, never, Exclude<R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never), McpServerClient> | McpServer>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L686"
   },
   {
     "_tag": "Constant",
@@ -4509,8 +4648,24 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Resources",
-    "signature": "declare const resource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }): Layer.Layer<never, never, R>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<ReadResourceResult | string | Uint8Array, E, R>; }) => Layer.Layer<never, never, R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never)>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L730"
+    "signature": "declare const resource: { <E, R>(options: { readonly uri: string; readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly content: Effect.Effect<typeof ReadResourceResult.Type | string | Uint8Array, E, R>; }): Layer.Layer<never, never, Exclude<R, McpServerClient>>; <const Schemas extends ReadonlyArray<Schema.Schema.Any>>(segments: TemplateStringsArray, ...schemas: Schemas & { readonly [K in keyof Schemas]: Schema.Schema.Encoded<Schemas[K]> extends string ? unknown : \"Schema must be encodable to a string\"; }): <E, R, const Completions extends Partial<ResourceCompletions<Schemas>> = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly mimeType?: string | undefined; readonly audience?: ReadonlyArray<\"user\" | \"assistant\"> | undefined; readonly priority?: number | undefined; readonly completion?: ValidateCompletions<Completions, keyof ResourceCompletions<Schemas>> | undefined; readonly content: (uri: string, ...params: { readonly [K in keyof Schemas]: Schemas[K][\"Type\"]; }) => Effect.Effect<typeof ReadResourceResult.Type | string | Uint8Array, E, R>; }) => Layer.Layer<never, never, Exclude<R | (Completions[keyof Completions] extends (input: string) => infer Ret ? Ret extends Effect.Effect<infer _A, infer _E, infer _R> ? _R : never : never), McpServerClient>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L838"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "McpServer.ts",
+      "path": "src/McpServer.ts"
+    },
+    "project": "@effect/ai",
+    "name": "elicit",
+    "description": "Create an elicitation request",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Elicitation",
+    "signature": "declare const elicit: <A, I extends Record<string, any>, R>(options: { readonly message: string; readonly schema: Schema.Schema<A, I, R>; }) => Effect.Effect<A, ElicitationDeclined, McpServerClient | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L1029"
   },
   {
     "_tag": "Function",
@@ -4524,8 +4679,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: (options: { readonly name: string; readonly version: string; }) => Layer.Layer<McpServer, never, RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L329"
+    "signature": "declare const layer: (options: { readonly name: string; readonly version: string; }) => Layer.Layer<McpServer | McpServerClient, never, RpcServer.Protocol>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L426"
   },
   {
     "_tag": "Function",
@@ -4540,8 +4695,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerStdio: <EIn, RIn, EOut, ROut>(options: { readonly name: string; readonly version: string; readonly stdin: Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink<unknown, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<McpServer, never, RIn | ROut>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L394"
+    "signature": "declare const layerStdio: <EIn, RIn, EOut, ROut>(options: { readonly name: string; readonly version: string; readonly stdin: Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink<unknown, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<McpServer | McpServerClient, never, RIn | ROut>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L491"
   },
   {
     "_tag": "Function",
@@ -4556,8 +4711,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHttp: <I = HttpRouter.Default>(options: { readonly name: string; readonly version: string; readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<McpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L469"
+    "signature": "declare const layerHttp: <I = HttpRouter.Default>(options: { readonly name: string; readonly version: string; readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<McpServer | McpServerClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L566"
   },
   {
     "_tag": "Function",
@@ -4572,8 +4727,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const toolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Layer.Layer<never, never, AiTool.ToHandler<Tools>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L549"
+    "signature": "declare const toolkit: <Tools extends AiTool.Any>(toolkit: AiToolkit.AiToolkit<Tools>) => Layer.Layer<never, never, AiTool.ToHandler<Tools> | Exclude<AiTool.Context<Tools>, McpServerClient>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L650"
   },
   {
     "_tag": "Function",
@@ -4587,9 +4742,9 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "Resources",
-    "signature": "declare const registerPrompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<PromptMessage> | string, E, R>; }) => Effect.Effect<void, never, ParamsR | R | McpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L795"
+    "category": "Prompts",
+    "signature": "declare const registerPrompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<typeof PromptMessage.Type> | string, E, R>; }) => Effect.Effect<void, never, Exclude<ParamsR | R, McpServerClient> | McpServer>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L906"
   },
   {
     "_tag": "Function",
@@ -4603,9 +4758,9 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "Resources",
-    "signature": "declare const prompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<PromptMessage> | string, E, R>; }) => Layer.Layer<never, never, ParamsR | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L893"
+    "category": "Prompts",
+    "signature": "declare const prompt: <E, R, Params = {}, ParamsI extends Record<string, string> = {}, ParamsR = never, const Completions extends { readonly [K in keyof Params]?: (input: string) => Effect.Effect<Array<Params[K]>, any, any>; } = {}>(options: { readonly name: string; readonly description?: string | undefined; readonly parameters?: Schema.Schema<Params, ParamsI, ParamsR> | undefined; readonly completion?: ValidateCompletions<Completions, Extract<keyof Params, string>> | undefined; readonly content: (params: Params) => Effect.Effect<Array<typeof PromptMessage.Type> | string, E, R>; }) => Layer.Layer<never, never, Exclude<ParamsR | R, McpServerClient>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L1001"
   },
   {
     "_tag": "TypeAlias",
@@ -4620,7 +4775,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ValidateCompletions<Completions, Keys> = & Completions\n  & {\n    readonly [K in keyof Completions]: K extends Keys ? (input: string) => any : never\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L559"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L664"
   },
   {
     "_tag": "TypeAlias",
@@ -4635,7 +4790,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ResourceCompletions<Schemas> = {\n  readonly [\n    K in Extract<keyof Schemas, `${number}`> as Schemas[K] extends Param<infer Id, infer _S> ? Id\n      : `param${K}`\n  ]: (input: string) => Effect.Effect<Array<Schema.Schema.Type<Schemas[K]>>, any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L568"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L673"
   },
   {
     "_tag": "Class",

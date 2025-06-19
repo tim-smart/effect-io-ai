@@ -11,6 +11,6 @@ An image provided to or from an LLM.
 declare class ImageContent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L905)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L893)
 
 Since v1.0.0

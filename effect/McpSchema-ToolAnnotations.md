@@ -18,6 +18,6 @@ received from untrusted servers.
 declare class ToolAnnotations
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1087)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1088)
 
 Since v1.0.0

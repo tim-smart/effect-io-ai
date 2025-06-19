@@ -11,6 +11,6 @@ Describes a message issued to or received from an LLM API.
 declare class SamplingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1343)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1339)
 
 Since v1.0.0

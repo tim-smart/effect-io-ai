@@ -11,6 +11,6 @@ Identifies a prompt.
 declare class PromptReference
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1518)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1508)
 
 Since v1.0.0

@@ -12,6 +12,6 @@ response.
 declare class InitializeResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L411)
 
 Since v1.0.0

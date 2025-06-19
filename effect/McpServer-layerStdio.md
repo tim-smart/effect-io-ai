@@ -59,9 +59,9 @@ Layer.launch(ServerLayer).pipe(NodeRuntime.runMain)
 **Signature**
 
 ```ts
-declare const layerStdio: <EIn, RIn, EOut, ROut>(options: { readonly name: string; readonly version: string; readonly stdin: Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink<unknown, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<McpServer, never, RIn | ROut>
+declare const layerStdio: <EIn, RIn, EOut, ROut>(options: { readonly name: string; readonly version: string; readonly stdin: Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink<unknown, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<McpServer | McpServerClient, never, RIn | ROut>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L394)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpServer.ts#L491)
 
 Since v1.0.0

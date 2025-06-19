@@ -11,6 +11,6 @@ A reference to a resource or resource template definition.
 declare class ResourceReference
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1502)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1494)
 
 Since v1.0.0

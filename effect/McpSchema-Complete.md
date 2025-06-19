@@ -11,6 +11,6 @@ A request from the client to the server, to ask for completion options.
 declare class Complete
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1559)
 
 Since v1.0.0

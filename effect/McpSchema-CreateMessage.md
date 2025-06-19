@@ -14,6 +14,6 @@ in the loop) and decide whether to approve it.
 declare class CreateMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1449)
 
 Since v1.0.0

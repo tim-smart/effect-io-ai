@@ -11,6 +11,6 @@ The server's response to a resources/templates/list request from the client.
 declare class ListResourceTemplatesResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L710)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L702)
 
 Since v1.0.0

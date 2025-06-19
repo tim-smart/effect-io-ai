@@ -11,6 +11,6 @@ Sent from the client to request a list of resource templates the server has.
 declare class ListResourceTemplates
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L723)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L715)
 
 Since v1.0.0

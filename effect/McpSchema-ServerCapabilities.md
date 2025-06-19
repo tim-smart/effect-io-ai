@@ -13,6 +13,6 @@ its own, additional capabilities.
 declare class ServerCapabilities
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L233)
 
 Since v1.0.0
