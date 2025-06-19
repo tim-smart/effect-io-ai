@@ -13,6 +13,6 @@ setting.
 declare const fork: <A>(value: A) => Fork<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L722)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L724)
 
 Since v1.0.0

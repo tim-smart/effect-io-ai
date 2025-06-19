@@ -187,7 +187,7 @@
     "since": "1.0.0",
     "category": "Fork",
     "signature": "declare const ForkTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L697"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L699"
   },
   {
     "_tag": "Function",
@@ -217,7 +217,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Tag extends string, Payload extends Schema.Schema.Any | Schema.Struct.Fields = typeof Schema.Void, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never, const Stream extends boolean = false>(tag: Tag, options?: { readonly payload?: Payload; readonly success?: Success; readonly error?: Error; readonly stream?: Stream; readonly primaryKey?: [Payload] extends [Schema.Struct.Fields] ? ((payload: Schema.Simplify<Schema.Struct.Type<NoInfer<Payload>>>) => string) : never; }) => Rpc<Tag, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Stream extends true ? RpcSchema.Stream<Success, Error> : Success, Stream extends true ? typeof Schema.Never : Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L572"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L574"
   },
   {
     "_tag": "Function",
@@ -232,7 +232,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromTaggedRequest: <S extends AnyTaggedRequestSchema>(schema: S) => From<S>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L651"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L653"
   },
   {
     "_tag": "Function",
@@ -247,7 +247,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const exitSchema: <R extends Any>(self: R) => Schema.Schema<Exit<R>, ExitEncoded<R>, Context<R>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L671"
   },
   {
     "_tag": "Function",
@@ -263,7 +263,7 @@
     "since": "1.0.0",
     "category": "Fork",
     "signature": "declare const fork: <A>(value: A) => Fork<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L722"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L724"
   },
   {
     "_tag": "Function",
@@ -278,7 +278,7 @@
     "since": "1.0.0",
     "category": "Fork",
     "signature": "declare const isFork: (u: object) => u is Fork<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L728"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L730"
   },
   {
     "_tag": "Interface",
@@ -355,7 +355,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface From<S extends AnyTaggedRequestSchema> extends Rpc<S[\"_tag\"], S, S[\"success\"], S[\"failure\"]> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L447"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L449"
   },
   {
     "_tag": "Interface",
@@ -370,7 +370,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface AnySchema extends Pipeable {\n  readonly [Schema.TypeId]: any\n  readonly Type: any\n  readonly Encoded: any\n  readonly Context: any\n  readonly make?: (params: any, ...rest: ReadonlyArray<any>) => any\n  readonly ast: AST.AST\n  readonly annotations: any\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L627"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L629"
   },
   {
     "_tag": "Interface",
@@ -385,7 +385,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface AnyTaggedRequestSchema extends AnySchema {\n  readonly _tag: string\n  readonly success: Schema.Schema.Any\n  readonly failure: Schema.Schema.All\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L641"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L643"
   },
   {
     "_tag": "Interface",
@@ -400,7 +400,7 @@
     "since": "1.0.0",
     "category": "Fork",
     "signature": "export interface Fork<A> {\n  readonly [ForkTypeId]: ForkTypeId\n  readonly value: A\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L709"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L711"
   },
   {
     "_tag": "TypeAlias",
@@ -639,7 +639,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type PayloadConstructor<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? _Payload extends { readonly make: (params: infer P, ...rest: infer _Rest) => infer _ } ? P\n  : _Payload[\"Type\"]\n  : never",
+    "signature": "type PayloadConstructor<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n  _Payload extends { readonly fields: Schema.Struct.Fields } ?\n    Schema.Simplify<Schema.Struct.Constructor<_Payload[\"fields\"]>>\n  : _Payload[\"Type\"]\n  : never",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L284"
   },
   {
@@ -655,7 +655,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Payload<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? _Payload[\"Type\"]\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L298"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L300"
   },
   {
     "_tag": "TypeAlias",
@@ -670,7 +670,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Context<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"]\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L313"
   },
   {
     "_tag": "TypeAlias",
@@ -685,7 +685,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Middleware<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Context_.Tag.Identifier<_Middleware>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L324"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L326"
   },
   {
     "_tag": "TypeAlias",
@@ -700,7 +700,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type MiddlewareClient<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n  _Middleware extends { readonly requiredForClient: true }\n    ? RpcMiddleware.ForClient<Context_.Tag.Identifier<_Middleware>>\n  : never\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L337"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L339"
   },
   {
     "_tag": "TypeAlias",
@@ -715,7 +715,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type AddError<R, Error> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc<\n    _Tag,\n    _Payload,\n    _Success,\n    _Error | Error,\n    _Middleware\n  > :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L353"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L355"
   },
   {
     "_tag": "TypeAlias",
@@ -730,7 +730,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type AddMiddleware<R, Middleware> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc<\n    _Tag,\n    _Payload,\n    _Success,\n    _Error,\n    _Middleware | Middleware\n  > :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L374"
   },
   {
     "_tag": "TypeAlias",
@@ -745,7 +745,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ToHandler<R> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Handler<_Tag> :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L391"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L393"
   },
   {
     "_tag": "TypeAlias",
@@ -760,7 +760,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ToHandlerFn<Current, R> = (\n  payload: Payload<Current>,\n  headers: Headers\n) => ResultFrom<Current, R> | Fork<ResultFrom<Current, R>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L404"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L406"
   },
   {
     "_tag": "TypeAlias",
@@ -775,7 +775,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type IsStream<R, Tag> = R extends\n  Rpc<Tag, infer _Payload, RpcSchema.Stream<infer _A, infer _E>, infer _Error, infer _Middleware> ? true : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L413"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L415"
   },
   {
     "_tag": "TypeAlias",
@@ -790,7 +790,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ExtractTag<R, Tag> = R extends\n  Rpc<Tag, infer _Payload, infer _Success, infer _Error, infer _Middleware> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L420"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L422"
   },
   {
     "_tag": "TypeAlias",
@@ -805,7 +805,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ExtractProvides<R, Tag> = R extends\n  Rpc<Tag, infer _Payload, infer _Success, infer _Error, infer _Middleware> ? _Middleware extends {\n    readonly provides: Context_.Tag<infer _I, infer _S>\n  } ? _I :\n  never :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L427"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L429"
   },
   {
     "_tag": "TypeAlias",
@@ -820,7 +820,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ExcludeProvides<Env, R, Tag> = Exclude<\n  Env,\n  ExtractProvides<R, Tag>\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L438"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L440"
   },
   {
     "_tag": "TypeAlias",
@@ -835,7 +835,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ResultFrom<R, Context> = R extends Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? [_Success] extends [RpcSchema.Stream<infer _SA, infer _SE>] ?\n      | Stream<\n        _SA[\"Type\"],\n        _SE[\"Type\"] | _Error[\"Type\"],\n        Context\n      >\n      | Effect<\n        ReadonlyMailbox<_SA[\"Type\"], _SE[\"Type\"] | _Error[\"Type\"]>,\n        _SE[\"Type\"] | Schema.Schema.Type<_Error>,\n        Context\n      > :\n  Effect<\n    _Success[\"Type\"],\n    _Error[\"Type\"],\n    Context\n  > :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L453"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L455"
   },
   {
     "_tag": "TypeAlias",
@@ -850,7 +850,7 @@
     "since": "1.0.0",
     "category": "Fork",
     "signature": "type ForkTypeId = typeof ForkTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L703"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L705"
   },
   {
     "_tag": "Class",
