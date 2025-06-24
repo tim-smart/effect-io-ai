@@ -33,6 +33,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const scoped: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4618)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4630)
 
 Since v2.0.0

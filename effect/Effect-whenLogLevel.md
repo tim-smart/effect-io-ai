@@ -39,6 +39,6 @@ Effect.runFork(program)
 declare const whenLogLevel: { (level: LogLevel.LogLevel | LogLevel.Literal): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, level: LogLevel.LogLevel | LogLevel.Literal): Effect<Option.Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11225)
 
 Since v3.13.0

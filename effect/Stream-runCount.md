@@ -11,6 +11,6 @@ Runs the stream and emits the number of elements processed
 declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4125)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4137)
 
 Since v2.0.0

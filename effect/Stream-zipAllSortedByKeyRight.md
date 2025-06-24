@@ -18,6 +18,6 @@ streams are sorted by distinct keys.
 declare const zipAllSortedByKeyRight: { <K, A2, E2, R2>(options: { readonly other: Stream<readonly [K, A2], E2, R2>; readonly defaultOther: A2; readonly order: Order.Order<K>; }): <A, E, R>(self: Stream<readonly [K, A], E, R>) => Stream<[K, A2], E2 | E, R2 | R>; <A, E, R, K, A2, E2, R2>(self: Stream<readonly [K, A], E, R>, options: { readonly other: Stream<readonly [K, A2], E2, R2>; readonly defaultOther: A2; readonly order: Order.Order<K>; }): Stream<[K, A2], E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5796)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5808)
 
 Since v2.0.0

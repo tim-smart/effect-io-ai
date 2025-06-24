@@ -43,6 +43,6 @@ Effect.runPromise(Effect.scoped(program)).then(console.log, console.error)
 declare const toPull: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5248)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5260)
 
 Since v2.0.0

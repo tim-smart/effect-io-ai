@@ -24,6 +24,6 @@ unintentional infinite loops.
 declare const forever: <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9881)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9877)
 
 Since v2.0.0

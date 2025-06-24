@@ -18,6 +18,6 @@ attention.
 declare const logFatal: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11006)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11002)
 
 Since v2.0.0

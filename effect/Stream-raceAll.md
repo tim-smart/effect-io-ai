@@ -35,6 +35,6 @@ Effect.runPromise(Stream.runDrain(stream))
 declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Stream.Success<S[number]>, Stream.Error<S[number]>, Stream.Context<S[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3788)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3800)
 
 Since v3.5.0

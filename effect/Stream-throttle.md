@@ -61,6 +61,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const throttle: { <A>(options: { readonly cost: (chunk: Chunk.Chunk<A>) => number; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly cost: (chunk: Chunk.Chunk<A>) => number; readonly units: number; readonly duration: Duration.DurationInput; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5034)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5046)
 
 Since v2.0.0

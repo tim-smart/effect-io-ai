@@ -20,6 +20,6 @@ temporarily within the defined context.
 declare const labelMetricsScoped: (labels: ReadonlyArray<MetricLabel.MetricLabel>) => Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11708)
 
 Since v2.0.0

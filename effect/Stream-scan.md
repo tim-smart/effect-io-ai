@@ -23,6 +23,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const scan: { <S, A>(s: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Stream<S, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4513)
 
 Since v2.0.0

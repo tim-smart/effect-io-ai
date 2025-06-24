@@ -65,6 +65,6 @@ Effect.runFork(program)
 declare const raceWith: { <A1, E1, R1, E, A, A2, E2, R2, A3, E3, R3>(other: Effect<A1, E1, R1>, options: { readonly onSelfDone: (exit: Exit.Exit<A, E>, fiber: Fiber.Fiber<A1, E1>) => Effect<A2, E2, R2>; readonly onOtherDone: (exit: Exit.Exit<A1, E1>, fiber: Fiber.Fiber<A, E>) => Effect<A3, E3, R3>; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, E2 | E3, R1 | R2 | R3 | R>; <A, E, R, A1, E1, R1, A2, E2, R2, A3, E3, R3>(self: Effect<A, E, R>, other: Effect<A1, E1, R1>, options: { readonly onSelfDone: (exit: Exit.Exit<A, E>, fiber: Fiber.Fiber<A1, E1>) => Effect<A2, E2, R2>; readonly onOtherDone: (exit: Exit.Exit<A1, E1>, fiber: Fiber.Fiber<A, E>) => Effect<A3, E3, R3>; }): Effect<A2 | A3, E2 | E3, R | R1 | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9436)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9432)
 
 Since v2.0.0

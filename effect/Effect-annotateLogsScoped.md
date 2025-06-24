@@ -47,6 +47,6 @@ Effect.runFork(program)
 declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope.Scope>; (values: Record<string, unknown>): Effect<void, never, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11126)
 
 Since v3.1.0

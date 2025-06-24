@@ -11,6 +11,6 @@ Encode a stream of strings into a stream of Uint8Array chunks using the specifie
 declare const encodeText: <E, R>(self: Stream<string, E, R>) => Stream<Uint8Array, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6429)
 
 Since v2.0.0

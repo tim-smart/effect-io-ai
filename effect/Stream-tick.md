@@ -35,6 +35,6 @@ Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.l
 declare const tick: (interval: Duration.DurationInput) => Stream<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5135)
 
 Since v2.0.0

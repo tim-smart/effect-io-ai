@@ -23,6 +23,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3813)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3825)
 
 Since v2.0.0

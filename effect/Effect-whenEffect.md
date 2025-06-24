@@ -44,6 +44,6 @@ console.log(Effect.runSync(randomIntOption))
 declare const whenEffect: { <E, R>(condition: Effect<boolean, E, R>): <A, E2, R2>(effect: Effect<A, E2, R2>) => Effect<Option.Option<A>, E | E2, R | R2>; <A, E2, R2, E, R>(self: Effect<A, E2, R2>, condition: Effect<boolean, E, R>): Effect<Option.Option<A>, E2 | E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8737)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8733)
 
 Since v2.0.0

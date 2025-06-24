@@ -12,6 +12,6 @@ fails with `None`.
 declare const repeatEffectChunkOption: <A, E, R>(effect: Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3911)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3923)
 
 Since v2.0.0

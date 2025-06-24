@@ -11,6 +11,6 @@ Construct an `HttpApp` from an `HttpApi` instance.
 declare const httpApp: Effect.Effect<HttpApp.Default<never, HttpRouter.HttpRouter.DefaultServices>, never, HttpApi.Api | Router | Middleware>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L103)
 
 Since v1.0.0

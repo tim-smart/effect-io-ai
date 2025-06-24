@@ -26,6 +26,6 @@ const mutex = Effect.makeSemaphore(3)
 declare const makeSemaphore: (permits: number) => Effect<Semaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11831)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11827)
 
 Since v2.0.0

@@ -42,6 +42,6 @@ Effect.runFork(program)
 declare const makeLatch: (open?: boolean | undefined) => Effect<Latch, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11987)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11983)
 
 Since v3.8.0

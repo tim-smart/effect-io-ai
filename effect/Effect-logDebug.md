@@ -29,6 +29,6 @@ Effect.runFork(program)
 declare const logDebug: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10948)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10944)
 
 Since v2.0.0

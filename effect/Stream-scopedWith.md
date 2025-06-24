@@ -13,6 +13,6 @@ successful.
 declare const scopedWith: <A, E, R>(f: (scope: Scope.Scope) => Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4629)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4641)
 
 Since v3.11.0

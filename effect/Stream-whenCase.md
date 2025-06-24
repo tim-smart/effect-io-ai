@@ -12,6 +12,6 @@ for the given value, otherwise returns an empty stream.
 declare const whenCase: <A, A2, E, R>(evaluate: LazyArg<A>, pf: (a: A) => Option.Option<Stream<A2, E, R>>) => Stream<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5552)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5564)
 
 Since v2.0.0

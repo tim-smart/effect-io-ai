@@ -31,6 +31,6 @@ const drainIterator = <A>(it: Iterator<A>): Stream.Stream<A> =>
 declare const repeatEffectOption: <A, E, R>(effect: Effect.Effect<A, Option.Option<E>, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3940)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3952)
 
 Since v2.0.0

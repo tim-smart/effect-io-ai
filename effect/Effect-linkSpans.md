@@ -11,6 +11,6 @@ For all spans in this effect, add a link with the provided span.
 declare const linkSpans: { (span: Tracer.AnySpan, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, span: Tracer.AnySpan, attributes?: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13004)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13000)
 
 Since v2.0.0

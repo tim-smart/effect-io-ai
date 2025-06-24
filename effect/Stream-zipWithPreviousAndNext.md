@@ -43,6 +43,6 @@ Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.t
 declare const zipWithPreviousAndNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6183)
 
 Since v2.0.0

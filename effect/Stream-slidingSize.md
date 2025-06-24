@@ -11,6 +11,6 @@ Like `sliding`, but with a configurable `stepSize` parameter.
 declare const slidingSize: { (chunkSize: number, stepSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, stepSize: number): Stream<Chunk.Chunk<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4660)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4672)
 
 Since v2.0.0

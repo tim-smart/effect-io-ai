@@ -23,6 +23,6 @@ Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.l
 declare const repeatEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3892)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3904)
 
 Since v2.0.0

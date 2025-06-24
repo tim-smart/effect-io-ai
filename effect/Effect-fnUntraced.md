@@ -15,6 +15,6 @@ Same as `fn`, but allows you to create a function that is not traced, for when p
 declare const fnUntraced: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14726)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14722)
 
 Since v3.12.0

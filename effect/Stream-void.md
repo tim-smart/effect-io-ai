@@ -23,6 +23,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const void: Stream<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5481)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5493)
 
 Since v2.0.0
