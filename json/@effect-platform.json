@@ -3089,8 +3089,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L248"
+    "signature": "declare const make: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError, never>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>> | HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L250"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpApiClient.ts",
+      "path": "src/HttpApiClient.ts"
+    },
+    "project": "@effect/platform",
+    "name": "makeWith",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const makeWith: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, E, R>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options: { readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Simplify<Client<Groups, ApiError | E, R>>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<Groups>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L274"
   },
   {
     "_tag": "Function",
@@ -3104,8 +3119,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"]>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupId: GroupName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<HttpApiGroup.WithName<Groups, GroupName>>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L279"
+    "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, E, R>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options: { readonly group: GroupName; readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, ApiError | E, R>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.ClientContext<HttpApiGroup.WithName<Groups, GroupName>>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L305"
   },
   {
     "_tag": "Function",
@@ -3119,8 +3134,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const endpoint: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, const EndpointName extends HttpApiEndpoint.Name<HttpApiGroup.EndpointsWithName<Groups, GroupName>>>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: GroupName, endpointName: EndpointName, options?: { readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Method<HttpApiEndpoint.WithName<HttpApiGroup.Endpoints<HttpApiGroup.WithName<Groups, GroupName>>, EndpointName>, HttpApiGroup.Error<HttpApiGroup.WithName<Groups, GroupName>>, ApiError>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.Context<HttpApiGroup.WithName<Groups, GroupName>> | HttpApiEndpoint.ContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName> | HttpApiEndpoint.ErrorContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName>> | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L319"
+    "signature": "declare const endpoint: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiError, ApiR, const GroupName extends HttpApiGroup.Name<Groups>, const EndpointName extends HttpApiEndpoint.Name<HttpApiGroup.EndpointsWithName<Groups, GroupName>>, E, R>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, options: { readonly group: GroupName; readonly endpoint: EndpointName; readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown>) => Effect.Effect<unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Method<HttpApiEndpoint.WithName<HttpApiGroup.Endpoints<HttpApiGroup.WithName<Groups, GroupName>>, EndpointName>, HttpApiGroup.Error<HttpApiGroup.WithName<Groups, GroupName>>, ApiError | E, R>, never, HttpApiMiddleware.HttpApiMiddleware.Without<ApiR | HttpApiGroup.Context<HttpApiGroup.WithName<Groups, GroupName>> | HttpApiEndpoint.ContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName> | HttpApiEndpoint.ErrorContextWithName<HttpApiGroup.EndpointsWithName<Groups, GroupName>, EndpointName>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L347"
   },
   {
     "_tag": "TypeAlias",
@@ -3134,7 +3149,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Client<Groups, ApiError> = Simplify<\n  & {\n    readonly [Group in Extract<Groups, { readonly topLevel: false }> as HttpApiGroup.Name<Group>]: Client.Group<\n      Group,\n      Group[\"identifier\"],\n      ApiError\n    >\n  }\n  & {\n    readonly [Method in Client.TopLevelMethods<Groups, ApiError> as Method[0]]: Method[1]\n  }\n>",
+    "signature": "type Client<Groups, E, R> = Simplify<\n  & {\n    readonly [Group in Extract<Groups, { readonly topLevel: false }> as HttpApiGroup.Name<Group>]: Client.Group<\n      Group,\n      Group[\"identifier\"],\n      E,\n      R\n    >\n  }\n  & {\n    readonly [Method in Client.TopLevelMethods<Groups, E, R> as Method[0]]: Method[1]\n  }\n>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L31"
   },
   {
@@ -3149,8 +3164,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Group<Groups, GroupName, ApiError> = [HttpApiGroup.WithName<Groups, GroupName>] extends\n      [HttpApiGroup<infer _GroupName, infer _Endpoints, infer _GroupError, infer _GroupErrorR>] ? {\n        readonly [Endpoint in _Endpoints as HttpApiEndpoint.Name<Endpoint>]: Method<\n          Endpoint,\n          ApiError,\n          _GroupError\n        >\n      } :\n      never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L53"
+    "signature": "type Group<Groups, GroupName, E, R> = [HttpApiGroup.WithName<Groups, GroupName>] extends\n      [HttpApiGroup<infer _GroupName, infer _Endpoints, infer _GroupError, infer _GroupErrorR>] ? {\n        readonly [Endpoint in _Endpoints as HttpApiEndpoint.Name<Endpoint>]: Method<\n          Endpoint,\n          E,\n          _GroupError,\n          R\n        >\n      } :\n      never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L54"
   },
   {
     "_tag": "TypeAlias",
@@ -3164,8 +3179,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type Method<Endpoint, ApiError, GroupError> = [Endpoint] extends [\n    HttpApiEndpoint<\n      infer _Name,\n      infer _Method,\n      infer _Path,\n      infer _UrlParams,\n      infer _Payload,\n      infer _Headers,\n      infer _Success,\n      infer _Error,\n      infer _R,\n      infer _RE\n    >\n  ] ? <WithResponse extends boolean = false>(\n      request: Simplify<HttpApiEndpoint.ClientRequest<_Path, _UrlParams, _Payload, _Headers, WithResponse>>\n    ) => Effect.Effect<\n      WithResponse extends true ? [_Success, HttpClientResponse.HttpClientResponse] : _Success,\n      _Error | GroupError | ApiError | HttpClientError.HttpClientError | ParseResult.ParseError\n    > :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L68"
+    "signature": "type Method<Endpoint, E, GroupError, R> = [Endpoint] extends [\n    HttpApiEndpoint<\n      infer _Name,\n      infer _Method,\n      infer _Path,\n      infer _UrlParams,\n      infer _Payload,\n      infer _Headers,\n      infer _Success,\n      infer _Error,\n      infer _R,\n      infer _RE\n    >\n  ] ? <WithResponse extends boolean = false>(\n      request: Simplify<HttpApiEndpoint.ClientRequest<_Path, _UrlParams, _Payload, _Headers, WithResponse>>\n    ) => Effect.Effect<\n      WithResponse extends true ? [_Success, HttpClientResponse.HttpClientResponse] : _Success,\n      _Error | GroupError | E | HttpClientError.HttpClientError | ParseResult.ParseError,\n      R\n    > :\n    never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L70"
   },
   {
     "_tag": "TypeAlias",
@@ -3179,8 +3194,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type TopLevelMethods<Groups, ApiError> = Extract<Groups, { readonly topLevel: true }> extends\n      HttpApiGroup<infer _Id, infer _Endpoints, infer _Error, infer _ErrorR, infer _TopLevel> ?\n      _Endpoints extends infer Endpoint ? [HttpApiEndpoint.Name<Endpoint>, Method<Endpoint, ApiError, _Error>]\n      : never :\n      never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L93"
+    "signature": "type TopLevelMethods<Groups, E, R> = Extract<Groups, { readonly topLevel: true }> extends\n      HttpApiGroup<infer _Id, infer _Endpoints, infer _Error, infer _ErrorR, infer _TopLevel> ?\n      _Endpoints extends infer Endpoint ? [HttpApiEndpoint.Name<Endpoint>, Method<Endpoint, E, _Error, R>]\n      : never :\n      never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiClient.ts#L96"
   },
   {
     "_tag": "Constant",

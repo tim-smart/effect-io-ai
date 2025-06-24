@@ -9,9 +9,9 @@ that adhere to the provided `RpcGroup`.
 **Signature**
 
 ```ts
-declare const fromRpcGroup: <Rpcs extends Rpc.Any>(type: string, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Rpcs>
+declare const fromRpcGroup: <const Type extends string, Rpcs extends Rpc.Any>(type: Type, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Type, Rpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L363)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L367)
 
 Since v1.0.0

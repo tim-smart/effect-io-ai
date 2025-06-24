@@ -16,6 +16,6 @@ export interface Handler<Tag extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L132)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L143)
 
 Since v1.0.0

@@ -31,7 +31,7 @@ const RpcServerLayer = RpcServer.layer(MyRpcs).pipe(
 **Signature**
 
 ```ts
-declare const toRpcGroup: <Rpcs extends Rpc.Any, const Prefix extends string = "">(entity: Entity.Entity<Rpcs>, options?: { readonly prefix?: Prefix | undefined; }) => RpcGroup.RpcGroup<ConvertRpcs<Rpcs, Prefix>>
+declare const toRpcGroup: <Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => RpcGroup.RpcGroup<ConvertRpcs<Rpcs, Type>>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L48)

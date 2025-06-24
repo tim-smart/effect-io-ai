@@ -74,6 +74,17 @@ export interface Rpc<
   >
 
   /**
+   * Set the schema for the error response of the rpc.
+   */
+  prefix<const Prefix extends string>(prefix: Prefix): Rpc<
+    `${Prefix}${Tag}`,
+    Payload,
+    Success,
+    Error,
+    Middleware
+  >
+
+  /**
    * Add an annotation on the rpc.
    */
   annotate<I, S>(
