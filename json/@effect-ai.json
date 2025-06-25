@@ -56,7 +56,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const fromExport: (data: unknown) => Effect.Effect<AiChat.Service, ParseError, AiLanguageModel.AiLanguageModel>",
+    "signature": "declare const fromExport: (data: unknown, options?: { readonly system?: string | undefined; }) => Effect.Effect<AiChat.Service, ParseError, AiLanguageModel.AiLanguageModel>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L237"
   },
   {
@@ -71,8 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const fromJson: (data: string) => Effect.Effect<AiChat.Service, ParseError, AiLanguageModel.AiLanguageModel>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L246"
+    "signature": "declare const fromJson: (data: string, options?: { readonly system?: string | undefined; }) => Effect.Effect<AiChat.Service, ParseError, AiLanguageModel.AiLanguageModel>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiChat.ts#L248"
   },
   {
     "_tag": "Interface",
