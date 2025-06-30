@@ -1,0 +1,1434 @@
+[
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class AmazonBedrockClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L40"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "StreamChunk",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "declare class StreamChunk",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L376"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: { readonly apiUrl?: string | undefined; readonly accessKeyId: string; readonly secretAccessKey: Redacted.Redacted<string>; readonly sessionToken?: Redacted.Redacted<string> | undefined; readonly region?: string | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Effect.Effect<AmazonBedrockClient.Service, never, HttpClient.HttpClient | Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L82"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: { readonly apiUrl?: string | undefined; readonly accessKeyId: string; readonly secretAccessKey: Redacted.Redacted<string>; readonly sessionToken?: Redacted.Redacted<string> | undefined; readonly region?: string | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AmazonBedrockClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L287"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "layerConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiUrl?: string | undefined; readonly accessKeyId: string; readonly secretAccessKey: Redacted.Redacted<string>; readonly sessionToken?: Redacted.Redacted<string> | undefined; readonly region?: string | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<AmazonBedrockClient, ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L302"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "StreamChunkPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type StreamChunkPart = any",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L384"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockClient.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly client: Client\n    readonly streamRequest: (request: typeof ConverseRequest.Encoded) => Stream.Stream<\n      ConverseStreamResponse,\n      HttpClientError.HttpClientError | ParseError\n    >\n    readonly stream: (request: typeof ConverseRequest.Encoded) => Stream.Stream<\n      AiResponse.AiResponse,\n      HttpClientError.HttpClientError | ParseError\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L52"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AmazonBedrockClient.ts",
+      "path": "src/AmazonBedrockClient.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockClient.Client",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Client {\n    readonly converse: (\n      options: typeof ConverseRequest.Encoded\n    ) => Effect.Effect<typeof ConverseResponse.Type, HttpClientError.HttpClientError | ParseError>\n    readonly converseStream: (\n      options: typeof ConverseRequest.Encoded\n    ) => Effect.Effect<HttpClientResponse.HttpClientResponse, HttpClientError.HttpClientError | ParseError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L68"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockConfig.ts",
+      "path": "src/AmazonBedrockConfig.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class AmazonBedrockConfig",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockConfig.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockConfig.ts",
+      "path": "src/AmazonBedrockConfig.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "withClientTransform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Configuration",
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockConfig.ts#L43"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AmazonBedrockConfig.ts",
+      "path": "src/AmazonBedrockConfig.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockConfig.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.",
+    "category": "Models",
+    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockConfig.ts#L34"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "Config",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L53"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ProviderMetadata",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class ProviderMetadata",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L93"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<AiLanguageModel.AiLanguageModel.Service<never>, never, AmazonBedrockClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L130"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "withConfigOverride",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Configuration",
+    "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L245"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "AiModels",
+    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.AiModel<AiLanguageModel.AiLanguageModel, AmazonBedrockClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L121"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<AiLanguageModel.AiLanguageModel, never, AmazonBedrockClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L235"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "Model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "type Model = typeof BedrockFoundationModelId.Encoded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L43"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "Config.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Configuration",
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof ConverseRequest.Encoded,\n          \"messages\" | \"system\" | \"toolConfig\"\n        >\n      >\n    >\n  {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L73"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AmazonBedrockLanguageModel.ts",
+      "path": "src/AmazonBedrockLanguageModel.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ProviderMetadata.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Provider Metadata",
+    "signature": "export interface Service {\n    readonly metrics: ConverseMetrics\n    readonly trace?: ConverseTrace\n    readonly performanceConfig?: PerformanceConfiguration\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockLanguageModel.ts#L106"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "BedrockFoundationModelId",
+    "description": "The foundation models supported by Amazon Bedrock.\n\nAn up-to-date list can be generated with the following command:\n\n```sh\naws bedrock list-foundation-models --output json | jq '[.modelSummaries[].modelId]'\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class BedrockFoundationModelId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L22"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "CachePointBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class CachePointBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L119"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "DocumentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class DocumentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L148"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailConverseImageBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailConverseImageBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L164"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailConverseTextBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailConverseTextBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L177"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailConverseContentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailConverseContentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L188"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ImageBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ImageBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L208"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "JsonBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class JsonBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L219"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ReasoningContentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ReasoningContentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L227"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "VideoBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class VideoBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L241"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolResultBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolResultBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L267"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolUseBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolUseBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L287"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L305"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "Message",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class Message",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L321"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseOutput",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseOutput",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L330"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseMetrics",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseMetrics",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L338"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailContentFilter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailContentFilter",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L346"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailContentPolicyAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailContentPolicyAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L360"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailContextualGroundingFilter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailContextualGroundingFilter",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L370"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailContextualGroundingPolicyAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailContextualGroundingPolicyAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L384"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailImageCoverage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailImageCoverage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L396"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailTextCharactersCoverage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailTextCharactersCoverage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L407"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailCoverage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailCoverage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L418"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailUsage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailUsage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L427"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailInvocationMetrics",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailInvocationMetrics",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L441"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailPiiEntityFilter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailPiiEntityFilter",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L453"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailRegexFilter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailRegexFilter",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L498"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailSensitiveInformationPolicyAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailSensitiveInformationPolicyAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L512"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailTopic",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailTopic",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L525"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailTopicPolicyAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailTopicPolicyAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L536"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailCustomWord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailCustomWord",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L546"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailManagedWord",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailManagedWord",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L558"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailWordPolicyAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailWordPolicyAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L571"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L582"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailTraceAssessment",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailTraceAssessment",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L595"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "PromptRouterTrace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class PromptRouterTrace",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L614"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseTrace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseTrace",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L627"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "TokenUsage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class TokenUsage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L642"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "SystemContentBlock",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class SystemContentBlock",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L654"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "GuardrailConfiguration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class GuardrailConfiguration",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L664"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "InferenceConfiguration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class InferenceConfiguration",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L682"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "PerformanceConfiguration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class PerformanceConfiguration",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L701"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolSpecification",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolSpecification",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L711"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "Tool",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class Tool",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L734"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolChoice",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolChoice",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L745"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolConfiguration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolConfiguration",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L763"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseRequest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseRequest",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L774"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L816"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ReasoningContentBlockDelta",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ReasoningContentBlockDelta",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L842"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolUseBlockStart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolUseBlockStart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L852"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlockStart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlockStart",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L871"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlockStartEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlockStartEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L881"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlockStopEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlockStopEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L892"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ToolUseBlockDelta",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ToolUseBlockDelta",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L902"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlockDelta",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlockDelta",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L912"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ContentBlockDeltaEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ContentBlockDeltaEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L922"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "MessageStartEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class MessageStartEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L933"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "MessageStopEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class MessageStopEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L961"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseStreamMetrics",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseStreamMetrics",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L975"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseStreamTrace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseStreamTrace",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L985"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseStreamMetadataEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseStreamMetadataEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L996"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ConverseStreamResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class ConverseStreamResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L1009"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "DocumentFormat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare const DocumentFormat: Schema.Literal<[\"csv\", \"doc\", \"docx\", \"html\", \"md\", \"pdf\", \"txt\", \"xls\", \"xlsx\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L127"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ImageFormat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare const ImageFormat: Schema.Literal<[\"gif\", \"jpeg\", \"png\", \"webp\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L197"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "IntZeroOrGreater",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare const IntZeroOrGreater: Schema.filter<typeof Schema.Int>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L636"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "StopReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare const StopReason: Schema.Literal<[\"end_turn\", \"tool_use\", \"max_tokens\", \"stop_sequence\", \"guardrail_intervened\", \"content_filtered\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L943"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "DocumentFormat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "type DocumentFormat = typeof DocumentFormat.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L142"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "ImageFormat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "type ImageFormat = typeof ImageFormat.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L202"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AmazonBedrockSchema.ts",
+      "path": "src/AmazonBedrockSchema.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "StopReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "type StopReason = typeof StopReason.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockSchema.ts#L955"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventStreamEncoding.ts",
+      "path": "src/EventStreamEncoding.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "makeChannel",
+    "description": "An event stream encoding parser.\n\nSee the [AWS Documentation](https://docs.aws.amazon.com/lexv2/latest/dg/event-stream-encoding.html)\nfor more information.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const makeChannel: <A, I, IE, Done>(schema: Schema.Schema<A, I>, options?: { readonly bufferSize?: number; }) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array<ArrayBufferLike>>, IE | ParseError, IE, void, Done, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/EventStreamEncoding.ts#L22"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockClient",
+    "description": "Re-exports all named exports from the \"./AmazonBedrockClient.js\" module as `AmazonBedrockClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AmazonBedrockClient from \"./AmazonBedrockClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockConfig",
+    "description": "Re-exports all named exports from the \"./AmazonBedrockConfig.js\" module as `AmazonBedrockConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AmazonBedrockConfig from \"./AmazonBedrockConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockLanguageModel",
+    "description": "Re-exports all named exports from the \"./AmazonBedrockLanguageModel.js\" module as `AmazonBedrockLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AmazonBedrockLanguageModel from \"./AmazonBedrockLanguageModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "AmazonBedrockSchema",
+    "description": "Re-exports all named exports from the \"./AmazonBedrockSchema.js\" module as `AmazonBedrockSchema`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AmazonBedrockSchema from \"./AmazonBedrockSchema.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-amazon-bedrock",
+    "name": "EventStreamEncoding",
+    "description": "Re-exports all named exports from the \"./EventStreamEncoding.js\" module as `EventStreamEncoding`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EventStreamEncoding from \"./EventStreamEncoding.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/index.ts#L24"
+  }
+]
