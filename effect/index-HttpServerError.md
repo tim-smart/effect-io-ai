@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpServerError.js" module as `HttpServ
 export * as HttpServerError from "./HttpServerError.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L175)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L180)
 
 Since v1.0.0

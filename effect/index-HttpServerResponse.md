@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpServerResponse.js" module as `HttpS
 export * as HttpServerResponse from "./HttpServerResponse.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L190)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L195)
 
 Since v1.0.0

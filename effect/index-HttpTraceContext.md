@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpTraceContext.js" module as `HttpTra
 export * as HttpTraceContext from "./HttpTraceContext.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L200)
 
 Since v1.0.0

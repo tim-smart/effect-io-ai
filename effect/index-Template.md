@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Template.js" module as `Template`.
 export * as Template from "./Template.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L265)
 
 Since v1.0.0

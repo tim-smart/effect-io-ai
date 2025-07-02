@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpMiddleware.js" module as `HttpMiddl
 export * as HttpMiddleware from "./HttpMiddleware.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L155)
 
 Since v1.0.0

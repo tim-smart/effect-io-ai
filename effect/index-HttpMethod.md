@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpMethod.js" module as `HttpMethod`.
 export * as HttpMethod from "./HttpMethod.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L150)
 
 Since v1.0.0

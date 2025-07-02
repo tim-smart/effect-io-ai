@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpRouter.js" module as `HttpRouter`.
 export * as HttpRouter from "./HttpRouter.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L170)
 
 Since v1.0.0

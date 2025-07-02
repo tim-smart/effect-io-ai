@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Multipart.js" module as `Multipart`.
 export * as Multipart from "./Multipart.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L215)
 
 Since v1.0.0

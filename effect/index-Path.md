@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Path.js" module as `Path`.
 export * as Path from "./Path.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L235)
 
 Since v1.0.0

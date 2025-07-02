@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenApi.js" module as `OpenApi`.
 export * as OpenApi from "./OpenApi.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L225)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./WorkerRunner.js" module as `WorkerRunne
 export * as WorkerRunner from "./WorkerRunner.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L295)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L300)
 
 Since v1.0.0

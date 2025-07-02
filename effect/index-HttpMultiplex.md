@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpMultiplex.js" module as `HttpMultip
 export * as HttpMultiplex from "./HttpMultiplex.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L155)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L160)
 
 Since v1.0.0

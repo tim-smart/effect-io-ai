@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PlatformConfigProvider.js" module as `P
 export * as PlatformConfigProvider from "./PlatformConfigProvider.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L235)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L240)
 
 Since v1.0.0

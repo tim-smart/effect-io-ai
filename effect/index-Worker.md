@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Worker.js" module as `Worker`.
 export * as Worker from "./Worker.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L290)
 
 Since v1.0.0

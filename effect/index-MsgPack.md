@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MsgPack.js" module as `MsgPack`.
 export * as MsgPack from "./MsgPack.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L210)
 
 Since v1.0.0

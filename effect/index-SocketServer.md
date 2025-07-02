@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SocketServer.js" module as `SocketServe
 export * as SocketServer from "./SocketServer.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L255)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L260)
 
 Since v1.0.0
