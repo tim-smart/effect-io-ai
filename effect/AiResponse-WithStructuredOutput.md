@@ -29,6 +29,6 @@ declare class WithStructuredOutput<A> { constructor(props: {
   }, options?: Schema.MakeOptions) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L115)
 
 Since v1.0.0

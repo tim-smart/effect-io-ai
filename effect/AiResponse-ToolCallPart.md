@@ -12,6 +12,6 @@ provided with.
 declare class ToolCallPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L445)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L473)
 
 Since v1.0.0

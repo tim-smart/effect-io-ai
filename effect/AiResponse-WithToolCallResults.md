@@ -14,12 +14,18 @@ declare class WithToolCallResults<Tools> { constructor(props: {
      * The tool call results, represented as a mapping between the tool call
      * identifier and the result of the tool call handler.
      */
-    readonly results: ReadonlyMap<ToolCallId, AiTool.Success<Tools>>
+    readonly results: ReadonlyMap<ToolCallId, {
+      readonly name: string
+      readonly result: AiTool.Success<Tools>
+    }>
     /**
      * The encoded tool call results, suitable for incorporation into subsequent
      * requests to the large language model.
      */
-    readonly encodedResults: ReadonlyMap<ToolCallId, unknown>
+    readonly encodedResults: ReadonlyMap<ToolCallId, {
+      readonly name: string
+      readonly result: unknown
+    }>
     /**
      * The parts of the response.
      */
@@ -27,6 +33,6 @@ declare class WithToolCallResults<Tools> { constructor(props: {
   }, options?: Schema.MakeOptions) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L173)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L180)
 
 Since v1.0.0

@@ -12,6 +12,6 @@ to a request.
 declare class MetadataPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L524)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L552)
 
 Since v1.0.0

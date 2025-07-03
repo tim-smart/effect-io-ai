@@ -10,14 +10,17 @@ of `AiLanguageModel` from the provided options.
 
 ```ts
 type ExtractError<Options> = Options extends {
-  toolkit: AiToolkit.ToHandler<infer _Tools>
-} ? AiError | AiTool.Failure<_Tools>
+  disableToolCallResolution: true
+} ? AiError
+  : Options extends {
+    toolkit: AiToolkit.ToHandler<infer _Tools>
+  } ? AiError | AiTool.Failure<_Tools>
   : Options extends {
     toolkit: Effect.Effect<AiToolkit.ToHandler<infer _Tools>, infer _E, infer _R>
   } ? AiError | AiTool.Failure<_Tools> | _E
   : AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L177)
 
 Since v1.0.0

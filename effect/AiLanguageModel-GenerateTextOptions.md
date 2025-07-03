@@ -39,6 +39,19 @@ export interface GenerateTextOptions<Tools extends AiTool.Any> {
    * The concurrency level for resolving tool calls.
    */
   readonly concurrency?: Concurrency | undefined
+
+  /**
+   * When set to `true`, tool calls requested by the large language model
+   * will not be auto-resolved by the framework.
+   *
+   * This option is useful when:
+   *   1. The user wants to include tool call definitions from an `AiToolki`
+   *      in requests to the large language model so that the model has the
+   *      capability to call tools
+   *   2. The user wants to control the execution of tool call resolvers
+   *      instead of having the framework handle tool call resolution
+   */
+  readonly disableToolCallResolution?: boolean | undefined
 }
 ```
 

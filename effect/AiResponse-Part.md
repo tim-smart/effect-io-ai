@@ -11,6 +11,6 @@ Represents an single part of a response received from a large language model.
 declare const Part: Schema.Union<[typeof TextPart, typeof ReasoningPart, typeof RedactedReasoningPart, typeof ToolCallPart, typeof MetadataPart, typeof FinishPart]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L690)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L718)
 
 Since v1.0.0

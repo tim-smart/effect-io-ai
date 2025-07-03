@@ -12,6 +12,6 @@ response.
 declare class ReasoningPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L382)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L410)
 
 Since v1.0.0

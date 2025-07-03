@@ -11,6 +11,6 @@ Constructs a new `AiInput` from raw user input.
 declare const make: (input: Raw) => AiInput
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L486)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L490)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Represents a file that was used to generate a model response.
 declare class FileAnnotation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L276)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L304)
 
 Since v1.0.0

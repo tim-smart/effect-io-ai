@@ -11,6 +11,6 @@ The valid parts of a tool message.
 declare const ToolMessagePart: typeof ToolCallResultPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L447)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L451)
 
 Since v1.0.0

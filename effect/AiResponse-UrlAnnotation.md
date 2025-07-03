@@ -11,6 +11,6 @@ Represents a web resource that was used to generate a model response.
 declare class UrlAnnotation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L303)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L331)
 
 Since v1.0.0

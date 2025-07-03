@@ -12,6 +12,6 @@ creating a new `AiInput` with the messages from both.
 declare const concat: { (other: AiInput): (self: AiInput) => AiInput; (self: AiInput, other: AiInput): AiInput; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L560)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L565)
 
 Since v1.0.0

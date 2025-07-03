@@ -11,6 +11,6 @@ The valid parts of a user message.
 declare const UserMessagePart: Schema.Union<[typeof TextPart, typeof ImagePart, typeof ImageUrlPart, typeof FilePart, typeof FileUrlPart]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L397)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L401)
 
 Since v1.0.0

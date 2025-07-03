@@ -11,6 +11,6 @@ The valid parts of an assistant message.
 declare const AssistantMessagePart: Schema.Union<[typeof TextPart, typeof ReasoningPart, typeof RedactedReasoningPart, typeof ToolCallPart]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L423)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiInput.ts#L427)
 
 Since v1.0.0

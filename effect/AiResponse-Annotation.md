@@ -12,6 +12,6 @@ a model.
 declare const Annotation: Schema.Union<[typeof ContentSourceAnnotation, typeof FileAnnotation, typeof UrlAnnotation]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L333)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L361)
 
 Since v1.0.0

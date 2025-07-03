@@ -10,14 +10,17 @@ of `AiLanguageModel` from the provided options.
 
 ```ts
 type ExtractSuccess<Options> = Options extends {
-  toolkit: AiToolkit.ToHandler<infer _Tools>
-} ? AiResponse.WithToolCallResults<_Tools>
+  disableToolCallResolution: true
+} ? AiResponse.AiResponse
+  : Options extends {
+    toolkit: AiToolkit.ToHandler<infer _Tools>
+  } ? AiResponse.WithToolCallResults<_Tools>
   : Options extends {
     toolkit: Effect.Effect<AiToolkit.ToHandler<infer _Tools>, infer _E, infer _R>
   } ? AiResponse.WithToolCallResults<_Tools>
   : AiResponse.AiResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L146)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L159)
 
 Since v1.0.0

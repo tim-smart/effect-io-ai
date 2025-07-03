@@ -11,6 +11,6 @@ Combines two responses into a single response.
 declare const merge: { (other: AiResponse): (self: AiResponse) => AiResponse; (self: AiResponse, other: AiResponse): AiResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L753)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L781)
 
 Since v1.0.0

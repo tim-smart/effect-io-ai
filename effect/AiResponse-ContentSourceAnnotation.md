@@ -11,6 +11,6 @@ Represents a content source that was used to generate a model response.
 declare class ContentSourceAnnotation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L234)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiResponse.ts#L262)
 
 Since v1.0.0
