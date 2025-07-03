@@ -1531,7 +1531,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "resolvers",
-    "signature": "declare const void: <T extends string, I, II, RI, E, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, void, E, RI>, never, R>",
+    "signature": "declare const void: <T extends string, I, II, RI, E, R = never>(tag: T, options: { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<ReadonlyArray<unknown>, E>; readonly withContext?: false; } | { readonly Request: Schema.Schema<I, II, RI>; readonly execute: (requests: Array<Types.NoInfer<II>>) => Effect.Effect<unknown, E, R>; readonly withContext: true; }) => Effect.Effect<SqlResolver<T, I, void, E, RI>, never, R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlResolver.ts#L472"
   },
   {
@@ -1595,7 +1595,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructor",
-    "signature": "declare const void: <IR, II, IA, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly execute: (request: II) => Effect.Effect<ReadonlyArray<unknown>, E, R>; }) => (request: IA) => Effect.Effect<void, E | ParseError, R | IR>",
+    "signature": "declare const void: <IR, II, IA, R, E>(options: { readonly Request: Schema.Schema<IA, II, IR>; readonly execute: (request: II) => Effect.Effect<unknown, E, R>; }) => (request: IA) => Effect.Effect<void, E | ParseError, R | IR>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlSchema.ts#L51"
   },
   {

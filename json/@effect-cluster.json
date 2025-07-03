@@ -209,28 +209,13 @@
       "path": "src/ClusterMetrics.ts"
     },
     "project": "@effect/cluster",
-    "name": "mailboxSize",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "metrics",
-    "signature": "declare const mailboxSize: Metric.Metric.Gauge<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L24"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "ClusterMetrics.ts",
-      "path": "src/ClusterMetrics.ts"
-    },
-    "project": "@effect/cluster",
     "name": "singletons",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const singletons: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -245,7 +230,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const runners: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -260,7 +245,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const assignedShards: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L36"
   },
   {
     "_tag": "Constant",
@@ -275,7 +260,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const unassignedShards: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -290,22 +275,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const rebalances: Metric.Metric.Counter<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L56"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "ClusterMetrics.ts",
-      "path": "src/ClusterMetrics.ts"
-    },
-    "project": "@effect/cluster",
-    "name": "runnerHealthChecked",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "metrics",
-    "signature": "declare const runnerHealthChecked: Metric.Metric.Counter<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L48"
   },
   {
     "_tag": "Class",
@@ -3794,7 +3764,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: Layer.Layer<ShardManager, never, ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L737"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L740"
   },
   {
     "_tag": "Constant",
@@ -3809,7 +3779,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServerHandlers: Layer.Layer<Rpc.Handler<\"Register\"> | Rpc.Handler<\"Unregister\"> | Rpc.Handler<\"NotifyUnhealthyRunner\"> | Rpc.Handler<\"GetAssignments\"> | Rpc.Handler<\"ShardingEvents\"> | Rpc.Handler<\"GetTime\">, never, ShardManager>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L747"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L750"
   },
   {
     "_tag": "Constant",
@@ -3824,7 +3794,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServer: Layer.Layer<never, never, ShardManager | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L781"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L784"
   },
   {
     "_tag": "Function",

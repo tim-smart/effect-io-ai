@@ -11,6 +11,6 @@ Re-exports all named exports from the "find-my-way-ts" module as `FindMyWay`.
 export * as FindMyWay from "find-my-way-ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L30)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L31)
 
 Since v1.0.0

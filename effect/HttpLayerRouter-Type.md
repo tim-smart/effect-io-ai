@@ -16,6 +16,6 @@ export interface Type<Kind extends string, T> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L418)
 
 Since v1.0.0
