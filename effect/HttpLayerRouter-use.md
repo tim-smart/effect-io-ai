@@ -13,7 +13,7 @@ import * as Layer from "effect/Layer"
 const MyRoute = Layer.scopedDiscard(Effect.gen(function*() {
   const router = yield* HttpLayerRouter.HttpRouter
 
-  // then use `router.add` to add a route
+  // then use `yield* router.add(...)` to add a route
 }))
 ```
 
