@@ -5,6 +5,11 @@ Module: `HttpLayerRouter`<br />
 
 Create a middleware layer that can be used to modify requests and responses.
 
+By default, the middleware only affects the routes that it is provided to.
+
+If you want to create a middleware that applies globally to all routes, pass
+the `global` option as `true`.
+
 ```ts
 import * as HttpLayerRouter from "@effect/platform/HttpLayerRouter"
 import * as HttpMiddleware from "@effect/platform/HttpMiddleware"
@@ -59,6 +64,6 @@ Effect.gen(function*() {
 declare const middleware: middleware.Make<never, never> & (<Config extends { provides?: any; handles?: any; } = {}>() => middleware.Make<Config extends { provides: infer R; } ? R : never, Config extends { handles: infer E; } ? E : never>)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L681)
 
 Since v1.0.0

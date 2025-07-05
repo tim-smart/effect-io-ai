@@ -438,7 +438,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<AiLanguageModel.AiLanguageModel.Service<never>, never, OpenAiClient>",
+    "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<AiLanguageModel.AiLanguageModel.Service, never, OpenAiClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L161"
   },
   {

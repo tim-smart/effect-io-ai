@@ -1,0 +1,306 @@
+[
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "GoogleAiClient.ts",
+      "path": "src/GoogleAiClient.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class GoogleAiClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L37"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "GoogleAiClient.ts",
+      "path": "src/GoogleAiClient.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Effect.Effect<GoogleAiClient.Service, never, HttpClient.HttpClient | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L64"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "GoogleAiClient.ts",
+      "path": "src/GoogleAiClient.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<GoogleAiClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L262"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "GoogleAiClient.ts",
+      "path": "src/GoogleAiClient.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "layerConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }>) => Layer.Layer<GoogleAiClient, ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L290"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "GoogleAiClient.ts",
+      "path": "src/GoogleAiClient.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiClient.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface Service {\n    readonly client: Generated.Client\n    readonly stream: (\n      request: typeof Generated.GenerateContentRequest.Encoded\n    ) => Stream.Stream<AiResponse.AiResponse, HttpClientError | ParseError>\n    readonly streamRequest: (\n      request: typeof Generated.GenerateContentRequest.Encoded\n    ) => Stream.Stream<typeof Generated.GenerateContentResponse.Type, HttpClientError | ParseError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L49"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "GoogleAiConfig.ts",
+      "path": "src/GoogleAiConfig.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class GoogleAiConfig",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiConfig.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "GoogleAiConfig.ts",
+      "path": "src/GoogleAiConfig.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "withClientTransform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Configuration",
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiConfig.ts#L43"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "GoogleAiConfig.ts",
+      "path": "src/GoogleAiConfig.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiConfig.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.",
+    "category": "Models",
+    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiConfig.ts#L34"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "Config",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L41"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "ProviderMetadata",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Context",
+    "signature": "declare class ProviderMetadata",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L90"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<AiLanguageModel.AiLanguageModel.Service, never, GoogleAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L146"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "AiModel",
+    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.AiModel<AiLanguageModel.AiLanguageModel, GoogleAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L137"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<AiLanguageModel.AiLanguageModel, never, GoogleAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L250"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "Model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "type Model = string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L31"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "Config.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        & Omit<\n          typeof Generated.GenerateContentRequest.Encoded,\n          \"contents\" | \"tools\" | \"toolConfig\" | \"systemInstruction\"\n        >\n        & {\n          readonly toolConfig: Partial<{\n            readonly functionCallingConfig: Omit<\n              typeof Generated.FunctionCallingConfig.Encoded,\n              \"mode\"\n            >\n          }>\n        }\n      >\n    >\n  {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L62"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "GoogleAiLanguageModel.ts",
+      "path": "src/GoogleAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "ProviderMetadata.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Provider Metadata",
+    "signature": "export interface Service {\n    /**\n     * Citations to sources for a specific response.\n     */\n    readonly citationSources?: ReadonlyArray<typeof Generated.CitationSource.Encoded> | undefined\n    /**\n     * Attribution information for sources that contributed to a grounded answer.\n     */\n    readonly groundingAttributions?: ReadonlyArray<typeof Generated.GroundingAttribution.Encoded> | undefined\n    /**\n     * Grounding metadata for the candidate.\n     */\n    readonly groundingMetadata?: ReadonlyArray<typeof Generated.GroundingMetadata.Encoded> | undefined\n    /**\n     * The URLs that were retrieved by the URL context retrieval tool.\n     */\n    readonly retrievedUrls?: ReadonlyArray<typeof Generated.UrlMetadata.Encoded> | undefined\n    /**\n     * List of ratings for the safety of a response candidate.\n     *\n     * There is at most one rating per category.\n     */\n    readonly safetyRatings?: ReadonlyArray<typeof Generated.SafetyRating.Encoded> | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiLanguageModel.ts#L103"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "Generated",
+    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Generated from \"./Generated.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/index.ts#L4"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiClient",
+    "description": "Re-exports all named exports from the \"./GoogleAiClient.js\" module as `GoogleAiClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as GoogleAiClient from \"./GoogleAiClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/index.ts#L9"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiConfig",
+    "description": "Re-exports all named exports from the \"./GoogleAiConfig.js\" module as `GoogleAiConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as GoogleAiConfig from \"./GoogleAiConfig.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-google",
+    "name": "GoogleAiLanguageModel",
+    "description": "Re-exports all named exports from the \"./GoogleAiLanguageModel.js\" module as `GoogleAiLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as GoogleAiLanguageModel from \"./GoogleAiLanguageModel.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/index.ts#L19"
+  }
+]

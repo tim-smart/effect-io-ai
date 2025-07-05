@@ -32,6 +32,6 @@ export interface GenerateObjectOptions<A, I extends Record<string, unknown>, R> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L166)
 
 Since v1.0.0

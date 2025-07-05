@@ -55,6 +55,6 @@ export interface GenerateTextOptions<Tools extends AiTool.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L77)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L114)
 
 Since v1.0.0
