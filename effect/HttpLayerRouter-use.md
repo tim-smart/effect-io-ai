@@ -23,6 +23,6 @@ const MyRoute = Layer.scopedDiscard(Effect.gen(function*() {
 declare const use: <A, E, R>(f: (router: HttpRouter) => Effect.Effect<A, E, R>) => Layer.Layer<never, E, HttpRouter | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L278)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L284)
 
 Since v1.0.0

@@ -22,6 +22,6 @@ const Route = HttpLayerRouter.add("GET", "/hello", HttpServerResponse.text("Hell
 declare const disableLogger: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L927)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L933)
 
 Since v1.0.0

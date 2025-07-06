@@ -15,6 +15,6 @@ type Provided = | HttpServerRequest.HttpServerRequest
   | RouteContext
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L545)
 
 Since v1.0.0
