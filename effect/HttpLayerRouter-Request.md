@@ -1,7 +1,7 @@
 Package: `@effect/platform`<br />
 Module: `HttpLayerRouter`<br />
 
-## HttpLayerRouter.Type
+## HttpLayerRouter.Request
 
 Represents a request-level dependency, that needs to be provided by
 middleware.
@@ -9,7 +9,7 @@ middleware.
 **Signature**
 
 ```ts
-export interface Type<Kind extends string, T> {
+export interface Request<Kind extends string, T> {
   readonly _: unique symbol
   readonly kind: Kind
   readonly type: T
