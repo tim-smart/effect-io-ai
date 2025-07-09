@@ -942,7 +942,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "serialization / deserialization",
-    "signature": "declare const PartialEncodedRequest: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: typeof Schema.String; spanId: typeof Schema.String; sampled: typeof Schema.Boolean; }>",
+    "signature": "declare const PartialEncodedRequest: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L225"
   },
   {
@@ -957,7 +957,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "serialization / deserialization",
-    "signature": "declare const PartialEncoded: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: typeof Schema.String; spanId: typeof Schema.String; sampled: typeof Schema.Boolean; }>, typeof AckChunk, typeof Interrupt]>",
+    "signature": "declare const PartialEncoded: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, typeof AckChunk, typeof Interrupt]>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L253"
   },
   {
@@ -987,7 +987,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "serialization / deserialization",
-    "signature": "declare const PartialEncodedRequestFromSelf: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: typeof Schema.String; spanId: typeof Schema.String; sampled: typeof Schema.Boolean; }>",
+    "signature": "declare const PartialEncodedRequestFromSelf: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L289"
   },
   {
@@ -1002,7 +1002,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "serialization / deserialization",
-    "signature": "declare const PartialEncodedFromSelf: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: typeof Schema.String; spanId: typeof Schema.String; sampled: typeof Schema.Boolean; }>, Schema.Schema<AckChunk, AckChunk, never>, Schema.Schema<Interrupt, Interrupt, never>]>",
+    "signature": "declare const PartialEncodedFromSelf: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, Schema.Schema<AckChunk, AckChunk, never>, Schema.Schema<Interrupt, Interrupt, never>]>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L317"
   },
   {
@@ -1032,7 +1032,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeRequest: <Rpc extends Rpc.Any>(options: { readonly requestId: Snowflake; readonly address: EntityAddress; readonly tag: Rpc.Tag<Rpc>; readonly payload: Rpc.Payload<Rpc>; readonly headers: Headers.Headers; readonly traceId: string; readonly spanId: string; readonly sampled: boolean; }) => Request<Rpc>",
+    "signature": "declare const makeRequest: <Rpc extends Rpc.Any>(options: { readonly requestId: Snowflake; readonly address: EntityAddress; readonly tag: Rpc.Tag<Rpc>; readonly payload: Rpc.Payload<Rpc>; readonly headers: Headers.Headers; readonly traceId?: string | undefined; readonly spanId?: string | undefined; readonly sampled?: boolean | undefined; }) => Request<Rpc>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L175"
   },
   {
@@ -1077,7 +1077,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Request<in out Rpc extends Rpc.Any> {\n  readonly [TypeId]: TypeId\n  readonly _tag: \"Request\"\n  readonly requestId: Snowflake\n  readonly address: EntityAddress\n  readonly tag: Rpc.Tag<Rpc>\n  readonly payload: Rpc.Payload<Rpc>\n  readonly headers: Headers.Headers\n  readonly traceId: string\n  readonly spanId: string\n  readonly sampled: boolean\n}",
+    "signature": "export interface Request<in out Rpc extends Rpc.Any> {\n  readonly [TypeId]: TypeId\n  readonly _tag: \"Request\"\n  readonly requestId: Snowflake\n  readonly address: EntityAddress\n  readonly tag: Rpc.Tag<Rpc>\n  readonly payload: Rpc.Payload<Rpc>\n  readonly headers: Headers.Headers\n  readonly traceId?: string | undefined\n  readonly spanId?: string | undefined\n  readonly sampled?: boolean | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L58"
   },
   {
@@ -1167,7 +1167,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Encoded {\n    readonly _tag: \"Request\"\n    readonly requestId: string\n    readonly address: typeof EntityAddress.Encoded\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: ReadonlyRecord<string, string>\n    readonly traceId: string\n    readonly spanId: string\n    readonly sampled: boolean\n  }",
+    "signature": "export interface Encoded {\n    readonly _tag: \"Request\"\n    readonly requestId: string\n    readonly address: typeof EntityAddress.Encoded\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: ReadonlyRecord<string, string>\n    readonly traceId?: string | undefined\n    readonly spanId?: string | undefined\n    readonly sampled?: boolean | undefined\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L136"
   },
   {
@@ -1182,7 +1182,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface PartialEncoded {\n    readonly _tag: \"Request\"\n    readonly requestId: Snowflake\n    readonly address: EntityAddress\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: Headers.Headers\n    readonly traceId: string\n    readonly spanId: string\n    readonly sampled: boolean\n  }",
+    "signature": "export interface PartialEncoded {\n    readonly _tag: \"Request\"\n    readonly requestId: Snowflake\n    readonly address: EntityAddress\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: Headers.Headers\n    readonly traceId?: string | undefined\n    readonly spanId?: string | undefined\n    readonly sampled?: boolean | undefined\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L152"
   },
   {
@@ -4336,7 +4336,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L830"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L836"
   },
   {
     "_tag": "Function",
@@ -4351,7 +4351,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; readonly replyPollInterval?: DurationInput | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L842"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L848"
   },
   {
     "_tag": "Constant",
