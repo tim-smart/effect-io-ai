@@ -15,6 +15,6 @@ Creates an KeyValueStorage from an instance of the `Storage` api.
 declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L241)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L243)
 
 Since v1.0.0

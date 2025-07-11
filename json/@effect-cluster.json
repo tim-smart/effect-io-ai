@@ -334,8 +334,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: Effect.Effect<{ readonly register: (workflow: Workflow.Any, execute: (payload: object, executionId: string) => Effect.Effect<unknown, unknown, WorkflowInstance | WorkflowEngine>) => Effect.Effect<void>; readonly execute: <const Discard extends boolean>(options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly payload: object; readonly discard: Discard; }) => Effect.Effect<Discard extends true ? void : Workflow.Result<unknown, unknown>>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: (options: { readonly activity: Activity.Any; readonly attempt: number; }) => Effect.Effect<Workflow.Result<unknown, unknown>, never, WorkflowInstance>; readonly deferredResult: (deferred: DurableDeferred.Any) => Effect.Effect<Option.Option<Schema.ExitEncoded<unknown, unknown, unknown>>, never, WorkflowInstance>; readonly deferredDone: (options: { readonly workflowName: string; readonly executionId: string; readonly deferred: DurableDeferred.Any; readonly exit: Schema.ExitEncoded<unknown, unknown, unknown>; }) => Effect.Effect<void>; readonly scheduleClock: (options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope | MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L37"
+    "signature": "declare const make: Effect.Effect<{ readonly register: (workflow: Workflow.Any, execute: (payload: object, executionId: string) => Effect.Effect<unknown, unknown, WorkflowInstance | WorkflowEngine>) => Effect.Effect<void>; readonly execute: <const Discard extends boolean>(options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly payload: object; readonly discard: Discard; readonly parent?: WorkflowInstance[\"Type\"] | undefined; }) => Effect.Effect<Discard extends true ? void : Workflow.Result<unknown, unknown>>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: (options: { readonly activity: Activity.Any; readonly attempt: number; }) => Effect.Effect<Workflow.Result<unknown, unknown>, never, WorkflowInstance>; readonly deferredResult: (deferred: DurableDeferred.Any) => Effect.Effect<Option.Option<Schema.ExitEncoded<unknown, unknown, unknown>>, never, WorkflowInstance>; readonly deferredDone: (options: { readonly workflowName: string; readonly executionId: string; readonly deferred: DurableDeferred.Any; readonly exit: Schema.ExitEncoded<unknown, unknown, unknown>; }) => Effect.Effect<void>; readonly scheduleClock: (options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope | MessageStorage | Sharding.Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -350,7 +350,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L524"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L594"
   },
   {
     "_tag": "Constant",
@@ -748,7 +748,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const toHttpApiGroup: <const Name extends string, Type extends string, Rpcs extends Rpc.Any>(name: Name, entity: Entity.Entity<Type, Rpcs>) => HttpApiGroup.HttpApiGroup<Name, ConvertHttpApi<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L143"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L162"
   },
   {
     "_tag": "TypeAlias",
@@ -762,8 +762,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type ConvertRpcs<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc.Rpc<\n    `${Prefix}.${_Tag}`,\n    Schema.Struct<{\n      entityId: typeof Schema.String\n      payload: _Payload\n    }>,\n    _Success,\n    Schema.Schema<\n      _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n      | _Error[\"Encoded\"]\n      | typeof MailboxFull[\"Encoded\"]\n      | typeof AlreadyProcessingMessage[\"Encoded\"]\n      | typeof PersistenceError[\"Encoded\"]\n      | typeof EntityNotManagedByRunner[\"Encoded\"],\n      _Error[\"Context\"]\n    >\n  >\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L78"
+    "signature": "type ConvertRpcs<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n    | Rpc.Rpc<\n      `${Prefix}.${_Tag}`,\n      Schema.Struct<{\n        entityId: typeof Schema.String\n        payload: _Payload\n      }>,\n      _Success,\n      Schema.Schema<\n        _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n        | _Error[\"Encoded\"]\n        | typeof MailboxFull[\"Encoded\"]\n        | typeof AlreadyProcessingMessage[\"Encoded\"]\n        | typeof PersistenceError[\"Encoded\"]\n        | typeof EntityNotManagedByRunner[\"Encoded\"],\n        _Error[\"Context\"]\n      >\n    >\n    | Rpc.Rpc<\n      `${Prefix}.${_Tag}Discard`,\n      Schema.Struct<{\n        entityId: typeof Schema.String\n        payload: _Payload\n      }>,\n      typeof Schema.Void,\n      Schema.Union<[\n        typeof MailboxFull,\n        typeof AlreadyProcessingMessage,\n        typeof PersistenceError,\n        typeof EntityNotManagedByRunner\n      ]>\n    >\n  : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L82"
   },
   {
     "_tag": "TypeAlias",
@@ -777,8 +777,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type ConvertHttpApi<Rpcs> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? HttpApiEndpoint.HttpApiEndpoint<\n    _Tag,\n    \"POST\",\n    { readonly entityId: string },\n    never,\n    _Payload[\"Type\"],\n    never,\n    _Success[\"Type\"],\n    _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n    _Payload[\"Context\"] | _Success[\"Context\"],\n    _Error[\"Context\"]\n  > :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L171"
+    "signature": "type ConvertHttpApi<Rpcs> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n    | HttpApiEndpoint.HttpApiEndpoint<\n      _Tag,\n      \"POST\",\n      { readonly entityId: string },\n      never,\n      _Payload[\"Type\"],\n      never,\n      _Success[\"Type\"],\n      _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n      _Payload[\"Context\"] | _Success[\"Context\"],\n      _Error[\"Context\"]\n    >\n    | HttpApiEndpoint.HttpApiEndpoint<\n      `${_Tag}Discard`,\n      \"POST\",\n      { readonly entityId: string },\n      never,\n      _Payload[\"Type\"],\n      never,\n      void,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner\n    >\n  : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L195"
   },
   {
     "_tag": "Function",
@@ -808,7 +808,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpcHandlers: <const Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => Layer.Layer<RpcHandlers<Rpcs, Type>, never, Sharding | Rpc.Context<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -822,8 +822,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc.Handler<`${Prefix}.${_Tag}`>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L77"
+    "signature": "type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc.Handler<`${Prefix}.${_Tag}`> | Rpc.Handler<`${Prefix}.${_Tag}Discard`>\n  : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L89"
   },
   {
     "_tag": "Constant",

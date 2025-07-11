@@ -41,6 +41,6 @@ const ApiLayer = HttpApiBuilder.api(MyApi).pipe(
 declare const toHttpApiGroup: <const Name extends string, Type extends string, Rpcs extends Rpc.Any>(name: Name, entity: Entity.Entity<Type, Rpcs>) => HttpApiGroup.HttpApiGroup<Name, ConvertHttpApi<Rpcs>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L162)
 
 Since v1.0.0

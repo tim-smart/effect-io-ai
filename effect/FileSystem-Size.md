@@ -11,6 +11,6 @@ Represents a size in bytes.
 type Size = Brand.Branded<bigint, "Size">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L266)
 
 Since v1.0.0

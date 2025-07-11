@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class StreamChunk",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L376"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L378"
   },
   {
     "_tag": "Function",
@@ -71,7 +71,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (options: Config.Config.Wrap<{ readonly apiUrl?: string | undefined; readonly accessKeyId: string; readonly secretAccessKey: Redacted.Redacted<string>; readonly sessionToken?: Redacted.Redacted<string> | undefined; readonly region?: string | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }>) => Layer.Layer<AmazonBedrockClient, ConfigError, HttpClient.HttpClient>",
+    "signature": "declare const layerConfig: (options: { readonly apiUrl?: Config.Config<string> | undefined; readonly accessKeyId: Config.Config<string>; readonly secretAccessKey: Config.Config<Redacted.Redacted>; readonly sessionToken?: Config.Config<Redacted.Redacted> | undefined; readonly region?: Config.Config<string> | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AmazonBedrockClient, ConfigError, HttpClient.HttpClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L302"
   },
   {
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type StreamChunkPart = any",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L384"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L386"
   },
   {
     "_tag": "Interface",
