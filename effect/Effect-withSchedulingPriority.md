@@ -11,6 +11,6 @@ Sets the scheduling priority used when yielding
 declare const withSchedulingPriority: { (priority: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, priority: number): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6709)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6702)
 
 Since v2.0.0

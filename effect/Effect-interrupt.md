@@ -51,6 +51,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const interrupt: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4888)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4881)
 
 Since v2.0.0

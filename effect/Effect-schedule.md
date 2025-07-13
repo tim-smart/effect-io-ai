@@ -29,6 +29,6 @@ to depend on the result of this effect.
 declare const schedule: { <A, R2, Out>(schedule: Schedule.Schedule<Out, NoInfer<A> | undefined, R2>): <E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>; <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, A | undefined, R2>): Effect<Out, E, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10326)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10319)
 
 Since v2.0.0

@@ -67,6 +67,6 @@ Effect.runPromise(program).then(console.log)
 declare const timeoutTo: { <A, B, B1>(options: { readonly onTimeout: LazyArg<B1>; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput; }): <E, R>(self: Effect<A, E, R>) => Effect<B | B1, E, R>; <A, E, R, B1, B>(self: Effect<A, E, R>, options: { readonly onTimeout: LazyArg<B1>; readonly onSuccess: (a: A) => B; readonly duration: Duration.DurationInput; }): Effect<B1 | B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7304)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7297)
 
 Since v2.0.0

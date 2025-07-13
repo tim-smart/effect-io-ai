@@ -27,6 +27,6 @@ Effect.runFork(program)
 declare const clock: Effect<Clock.Clock, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6747)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6740)
 
 Since v2.0.0

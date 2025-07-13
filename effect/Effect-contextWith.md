@@ -21,6 +21,6 @@ returned within the effect.
 declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7417)
 
 Since v2.0.0

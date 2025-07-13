@@ -11,6 +11,6 @@ Constructs an effect with information about the current `Fiber`.
 declare const descriptor: Effect<Fiber.Fiber.Descriptor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6173)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6166)
 
 Since v2.0.0

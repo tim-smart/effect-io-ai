@@ -21,6 +21,6 @@ the `FiberRef` is included in the result.
 declare const whenFiberRef: { <S>(fiberRef: FiberRef.FiberRef<S>, predicate: Predicate<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<[S, Option.Option<A>], E, R>; <A, E, R, S>(self: Effect<A, E, R>, fiberRef: FiberRef.FiberRef<S>, predicate: Predicate<S>): Effect<[S, Option.Option<A>], E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8756)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8749)
 
 Since v2.0.0

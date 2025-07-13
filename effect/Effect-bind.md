@@ -39,6 +39,6 @@ assert.deepStrictEqual(Effect.runSync(result), { x: 2, y: 3, sum: 5 })
 declare const bind: { <N extends string, A extends object, B, E2, R2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E1, R1>(self: Effect<A, E1, R1>) => Effect<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E2 | E1, R2 | R1>; <A extends object, N extends string, E1, R1, B, E2, R2>(self: Effect<A, E1, R1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E1 | E2, R1 | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7885)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7878)
 
 Since v2.0.0

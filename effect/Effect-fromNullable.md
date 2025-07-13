@@ -61,6 +61,6 @@ Effect.runPromiseExit(maybe2).then(console.log)
 declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13210)
 
 Since v2.0.0
