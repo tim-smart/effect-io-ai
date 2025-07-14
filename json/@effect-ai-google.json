@@ -56,7 +56,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<GoogleAiClient, ConfigError, HttpClient.HttpClient>",
+    "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted | undefined> | undefined; readonly apiUrl?: Config.Config<string | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<GoogleAiClient, ConfigError, HttpClient.HttpClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleAiClient.ts#L290"
   },
   {

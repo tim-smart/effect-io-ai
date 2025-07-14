@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class MysqlDrizzle",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<MysqlDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L53"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWithConfig: (config: DrizzleConfig) => Effect.Effect<MySqlRemoteDatabase, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L32"
   },
   {
     "_tag": "Function",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWithConfig: (config: DrizzleConfig) => Layer.Layer<MysqlDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Mysql.ts#L59"
   },
   {
     "_tag": "Class",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class PgDrizzle",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<PgDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L53"
   },
   {
     "_tag": "Function",
@@ -132,7 +132,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWithConfig: (config: DrizzleConfig) => Effect.Effect<PgRemoteDatabase, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L32"
   },
   {
     "_tag": "Function",
@@ -147,7 +147,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWithConfig: (config: DrizzleConfig) => Layer.Layer<PgDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Pg.ts#L59"
   },
   {
     "_tag": "Class",
@@ -162,7 +162,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class SqliteDrizzle",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -177,7 +177,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<SqliteDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L53"
   },
   {
     "_tag": "Function",
@@ -207,7 +207,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWithConfig: (config: DrizzleConfig) => Effect.Effect<SqliteRemoteDatabase, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L32"
   },
   {
     "_tag": "Function",
@@ -222,6 +222,6 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWithConfig: (config: DrizzleConfig) => Layer.Layer<SqliteDrizzle, never, Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-drizzle/src/Sqlite.ts#L59"
   }
 ]

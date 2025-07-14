@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Effect.Effect<AnthropicClient.Service, never, HttpClient.HttpClient>",
+    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string | undefined; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Effect.Effect<AnthropicClient.Service, never, HttpClient.HttpClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L59"
   },
   {
@@ -41,8 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L307"
+    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L305"
   },
   {
     "_tag": "Function",
@@ -56,8 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly anthropicVersion?: Config.Config<string>; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L320"
+    "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted | undefined> | undefined; readonly apiUrl?: Config.Config<string | undefined> | undefined; readonly anthropicVersion?: Config.Config<string | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L316"
   },
   {
     "_tag": "TypeAlias",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type StreamCompletionRequest = Omit<\n  typeof Generated.CreateMessageParams.Encoded,\n  \"stream\"\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L341"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L335"
   },
   {
     "_tag": "Interface",

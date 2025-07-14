@@ -2734,7 +2734,7 @@
     "since": "1.0.0",
     "category": "router",
     "signature": "declare class Router",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L50"
   },
   {
     "_tag": "Class",
@@ -2749,7 +2749,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare class Middleware",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L867"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L853"
   },
   {
     "_tag": "Constant",
@@ -2765,7 +2765,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const httpApp: Effect.Effect<HttpApp.Default<never, HttpRouter.HttpRouter.DefaultServices>, never, HttpApi.Api | Router | Middleware>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -2780,7 +2780,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const buildMiddleware: <Id extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>) => Effect.Effect<(effect: Effect.Effect<HttpServerResponse.HttpServerResponse, unknown>) => Effect.Effect<HttpServerResponse.HttpServerResponse, unknown, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L129"
   },
   {
     "_tag": "Constant",
@@ -2795,7 +2795,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const HandlersTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L222"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L208"
   },
   {
     "_tag": "Function",
@@ -2811,7 +2811,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const api: <Id extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>) => Layer.Layer<HttpApi.Api, never, HttpApiGroup.HttpApiGroup.ToService<Id, Groups> | R | HttpApiGroup.HttpApiGroup.ErrorContext<Groups>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L58"
   },
   {
     "_tag": "Function",
@@ -2827,7 +2827,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const serve: <R = never>(middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, R>) => Layer.Layer<never, never, HttpServer.HttpServer | HttpRouter.HttpRouter.DefaultServices | Exclude<R, Scope | HttpServerRequest.HttpServerRequest> | HttpApi.Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L80"
   },
   {
     "_tag": "Function",
@@ -2843,7 +2843,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const toWebHandler: <LA, LE>(layer: Layer.Layer<LA | HttpApi.Api | HttpRouter.HttpRouter.DefaultServices, LE>, options?: { readonly middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, HttpApi.Api | Router | HttpRouter.HttpRouter.DefaultServices>; readonly memoMap?: Layer.MemoMap; }) => { readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; readonly dispose: () => Promise<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L181"
   },
   {
     "_tag": "Function",
@@ -2859,7 +2859,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const group: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const Name extends HttpApiGroup.HttpApiGroup.Name<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, groupName: Name, build: (handlers: Handlers.FromGroup<ApiError, ApiR, HttpApiGroup.HttpApiGroup.WithName<Groups, Name>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.ApiGroup<ApiId, Name>, Handlers.Error<Return>, Exclude<Handlers.Context<Return> | HttpApiGroup.HttpApiGroup.MiddlewareWithName<Groups, Name>, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L471"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L457"
   },
   {
     "_tag": "Function",
@@ -2875,7 +2875,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const handler: <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, ApiError, ApiR, const GroupName extends Groups[\"identifier\"], const Name extends HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>[\"name\"], R>(_api: HttpApi.HttpApi<ApiId, Groups, ApiError, ApiR>, _groupName: GroupName, _name: Name, f: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>) => HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<HttpApiGroup.HttpApiGroup.EndpointsWithName<Groups, GroupName>, Name, ApiError | HttpApiGroup.HttpApiGroup.ErrorWithName<Groups, GroupName>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L528"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L514"
   },
   {
     "_tag": "Function",
@@ -2891,7 +2891,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middleware: { <EX = never, RX = never>(middleware: MiddlewareFn<never> | Effect.Effect<MiddlewareFn<never>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <R, EX = never, RX = never>(middleware: MiddlewareFn<never, R> | Effect.Effect<MiddlewareFn<never, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>> | Effect.Effect<MiddlewareFn<NoInfer<Error>>, EX, RX>, options?: { readonly withContext?: false | undefined; }): Layer.Layer<never, EX, Exclude<RX, Scope>>; <ApiId extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, Error, ErrorR, R, EX = never, RX = never>(api: HttpApi.HttpApi<ApiId, Groups, Error, ErrorR>, middleware: MiddlewareFn<NoInfer<Error>, R> | Effect.Effect<MiddlewareFn<NoInfer<Error>, R>, EX, RX>, options: { readonly withContext: true; }): Layer.Layer<never, EX, Exclude<HttpRouter.HttpRouter.ExcludeProvided<R> | RX, Scope>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L923"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L909"
   },
   {
     "_tag": "Function",
@@ -2907,7 +2907,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareCors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => Layer.Layer<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L979"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L965"
   },
   {
     "_tag": "Function",
@@ -2923,7 +2923,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const middlewareOpenApi: (options?: { readonly path?: HttpApiEndpoint.PathSegment | undefined; readonly additionalPropertiesStrategy?: OpenApi.AdditionalPropertiesStrategy | undefined; } | undefined) => Layer.Layer<never, never, HttpApi.Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L996"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L982"
   },
   {
     "_tag": "Function",
@@ -2938,7 +2938,7 @@
     "since": "1.0.0",
     "category": "security",
     "signature": "declare const securityDecode: <Security extends HttpApiSecurity.HttpApiSecurity>(self: Security) => Effect.Effect<HttpApiSecurity.HttpApiSecurity.Type<Security>, never, HttpServerRequest.HttpServerRequest | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1022"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1008"
   },
   {
     "_tag": "Function",
@@ -2954,7 +2954,7 @@
     "since": "1.0.0",
     "category": "middleware",
     "signature": "declare const securitySetCookie: (self: HttpApiSecurity.ApiKey, value: string | Redacted.Redacted, options?: Cookie[\"options\"]) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1093"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L1079"
   },
   {
     "_tag": "Interface",
@@ -2970,7 +2970,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Handlers<\n  E,\n  Provides,\n  R,\n  Endpoints extends HttpApiEndpoint.HttpApiEndpoint.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Endpoints>\n  }\n  readonly group: HttpApiGroup.HttpApiGroup.AnyWithProps\n  readonly handlers: Chunk.Chunk<Handlers.Item<E, R>>\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   */\n  handle<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerWithName<Endpoints, Name, E, R1>,\n    options?: { readonly uninterruptible?: boolean | undefined } | undefined\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n\n  /**\n   * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.\n   * This version of the api allows you to return the full response object.\n   */\n  handleRaw<Name extends HttpApiEndpoint.HttpApiEndpoint.Name<Endpoints>, R1>(\n    name: Name,\n    handler: HttpApiEndpoint.HttpApiEndpoint.HandlerRawWithName<Endpoints, Name, E, R1>,\n    options?: { readonly uninterruptible?: boolean | undefined } | undefined\n  ): Handlers<\n    E,\n    Provides,\n    | R\n    | Exclude<\n      HttpApiEndpoint.HttpApiEndpoint.ExcludeProvided<\n        Endpoints,\n        Name,\n        R1 | HttpApiEndpoint.HttpApiEndpoint.ContextWithName<Endpoints, Name>\n      >,\n      Provides\n    >,\n    HttpApiEndpoint.HttpApiEndpoint.ExcludeName<Endpoints, Name>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L222"
   },
   {
     "_tag": "TypeAlias",
@@ -2985,7 +2985,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type HandlersTypeId = typeof HandlersTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L214"
   },
   {
     "_tag": "TypeAlias",
@@ -3000,7 +3000,7 @@
     "since": "1.0.0",
     "category": "global",
     "signature": "type MiddlewareFn<Error, R> = (\n  httpApp: HttpApp.Default\n) => HttpApp.Default<Error, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L894"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L880"
   },
   {
     "_tag": "Interface",
@@ -3015,7 +3015,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Any {\n    readonly [HandlersTypeId]: any\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L303"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L289"
   },
   {
     "_tag": "TypeAlias",
@@ -3030,7 +3030,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Middleware<E, R, E1, R1> = (self: HttpRouter.Route.Middleware<E, R>) => HttpApp.Default<E1, R1>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L297"
   },
   {
     "_tag": "TypeAlias",
@@ -3045,7 +3045,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Item<E, R> = {\n    readonly endpoint: HttpApiEndpoint.HttpApiEndpoint.Any\n    readonly handler: HttpApiEndpoint.HttpApiEndpoint.Handler<any, E, R>\n    readonly withFullRequest: boolean\n    readonly uninterruptible: boolean\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L317"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L303"
   },
   {
     "_tag": "TypeAlias",
@@ -3060,7 +3060,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type FromGroup<ApiError, ApiR, Group> = Handlers<\n    | ApiError\n    | HttpApiGroup.HttpApiGroup.Error<Group>,\n    | HttpApiMiddleware.HttpApiMiddleware.ExtractProvides<ApiR>\n    | HttpApiGroup.HttpApiGroup.Provides<Group>,\n    never,\n    HttpApiGroup.HttpApiGroup.Endpoints<Group>\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L314"
   },
   {
     "_tag": "TypeAlias",
@@ -3075,7 +3075,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type ValidateReturn<A> = A extends (\n    | Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >\n    | Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    >\n  ) ? [_Endpoints] extends [never] ? A\n    : `Endpoint not handled: ${HttpApiEndpoint.HttpApiEndpoint.Name<_Endpoints>}` :\n    `Must return the implemented handlers`",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L331"
   },
   {
     "_tag": "TypeAlias",
@@ -3090,7 +3090,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Error<A> = A extends Effect.Effect<\n    Handlers<\n      infer _E,\n      infer _Provides,\n      infer _R,\n      infer _Endpoints\n    >,\n    infer _EX,\n    infer _RX\n  > ? _EX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L370"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L356"
   },
   {
     "_tag": "TypeAlias",
@@ -3105,7 +3105,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Context<A> = A extends Handlers<\n    infer _E,\n    infer _Provides,\n    infer _R,\n    infer _Endpoints\n  > ? _R :\n    A extends Effect.Effect<\n      Handlers<\n        infer _E,\n        infer _Provides,\n        infer _R,\n        infer _Endpoints\n      >,\n      infer _EX,\n      infer _RX\n    > ? _R | _RX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L386"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L372"
   },
   {
     "_tag": "Function",
@@ -5992,7 +5992,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentPreResponseHandlers: FiberRef.FiberRef<Option.Option<PreResponseHandler>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L187"
   },
   {
     "_tag": "Constant",
@@ -6007,7 +6007,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const appendPreResponseHandler: (handler: PreResponseHandler) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L194"
   },
   {
     "_tag": "Constant",
@@ -6022,7 +6022,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withPreResponseHandler: ((handler: PreResponseHandler) => <A, E, R>(self: HttpApp<A, E, R>) => HttpApp<A, E, R>) & (<A, E, R>(self: HttpApp<A, E, R>, handler: PreResponseHandler) => HttpApp<A, E, R>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L200"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L201"
   },
   {
     "_tag": "Constant",
@@ -6037,7 +6037,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandler: <E>(self: Default<E, Scope.Scope>, middleware?: HttpMiddleware | undefined) => (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L240"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L243"
   },
   {
     "_tag": "Function",
@@ -6052,7 +6052,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toHandled: <E, R, _, EH, RH>(self: Default<E, R>, handleResponse: (request: ServerRequest.HttpServerRequest, response: ServerResponse.HttpServerResponse) => Effect.Effect<_, EH, RH>, middleware?: HttpMiddleware | undefined) => Effect.Effect<void, never, Exclude<R | RH | ServerRequest.HttpServerRequest, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L47"
   },
   {
     "_tag": "Function",
@@ -6068,7 +6068,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const ejectDefaultScopeClose: (scope: Scope.Scope) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L133"
   },
   {
     "_tag": "Function",
@@ -6083,7 +6083,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const unsafeEjectStreamScope: (response: ServerResponse.HttpServerResponse) => ServerResponse.HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L140"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L141"
   },
   {
     "_tag": "Function",
@@ -6098,7 +6098,22 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandlerRuntime: <R>(runtime: Runtime.Runtime<R>) => <E>(self: Default<E, R | Scope.Scope>, middleware?: HttpMiddleware | undefined) => (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L206"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L207"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpApp.ts",
+      "path": "src/HttpApp.ts"
+    },
+    "project": "@effect/platform",
+    "name": "toWebHandlerLayerWith",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toWebHandlerLayerWith: <E, R, RE, EX>(layer: Layer.Layer<R, RE>, options: { readonly toHandler: (runtime: Runtime.Runtime<R>) => Effect.Effect<Effect.Effect<ServerResponse.HttpServerResponse, E, R | Scope.Scope | ServerRequest.HttpServerRequest>, EX>; readonly middleware?: HttpMiddleware | undefined; readonly memoMap?: Layer.MemoMap | undefined; }) => { readonly dispose: () => Promise<void>; readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L254"
   },
   {
     "_tag": "Function",
@@ -6112,8 +6127,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const toWebHandlerLayer: <E, R, RE>(self: Default<E, R | Scope.Scope>, layer: Layer.Layer<R, RE>, middleware?: HttpMiddleware | undefined) => { readonly close: () => Promise<void>; readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L251"
+    "signature": "declare const toWebHandlerLayer: <E, R, RE>(self: Default<E, R | Scope.Scope>, layer: Layer.Layer<R, RE>, options?: { readonly memoMap?: Layer.MemoMap | undefined; readonly middleware?: HttpMiddleware | undefined; }) => { readonly dispose: () => Promise<void>; readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L302"
   },
   {
     "_tag": "TypeAlias",
@@ -6128,7 +6143,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type HttpApp<A, E, R> = Effect.Effect<\n  A,\n  E,\n  R | ServerRequest.HttpServerRequest\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -6143,7 +6158,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Default<E, R> = HttpApp<ServerResponse.HttpServerResponse, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L39"
   },
   {
     "_tag": "TypeAlias",
@@ -6158,7 +6173,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type PreResponseHandler = (\n  request: ServerRequest.HttpServerRequest,\n  response: ServerResponse.HttpServerResponse\n) => Effect.Effect<ServerResponse.HttpServerResponse, ServerError.ResponseError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L178"
   },
   {
     "_tag": "Constant",
@@ -8472,7 +8487,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "declare class RouterConfig",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L229"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L228"
   },
   {
     "_tag": "Constant",
@@ -8487,7 +8502,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -8502,7 +8517,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const HttpRouter: Context.Tag<HttpRouter, HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -8517,7 +8532,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const make: Effect.Effect<HttpRouter, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -8532,7 +8547,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const layer: Layer.Layer<HttpRouter, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L354"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L353"
   },
   {
     "_tag": "Constant",
@@ -8547,7 +8562,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "declare const RouteTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L387"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L386"
   },
   {
     "_tag": "Constant",
@@ -8562,7 +8577,7 @@
     "since": "1.0.0",
     "category": "PathInput",
     "signature": "declare const prefixPath: { (prefix: string): (self: string) => string; (self: string, prefix: string): string; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L476"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L475"
   },
   {
     "_tag": "Constant",
@@ -8577,7 +8592,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "declare const prefixRoute: { (prefix: string): <E, R>(self: Route<E, R>) => Route<E, R>; <E, R>(self: Route<E, R>, prefix: string): Route<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L488"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L487"
   },
   {
     "_tag": "Constant",
@@ -8592,7 +8607,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "declare const MiddlewareTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L565"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L564"
   },
   {
     "_tag": "Constant",
@@ -8608,7 +8623,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "declare const middleware: middleware.Make<never, never> & (<Config extends { provides?: any; handles?: any; } = {}>() => middleware.Make<Config extends { provides: infer R; } ? R : never, Config extends { handles: infer E; } ? E : never>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L687"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L686"
   },
   {
     "_tag": "Constant",
@@ -8624,7 +8639,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "declare const disableLogger: Layer.Layer<never, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L933"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L932"
   },
   {
     "_tag": "Function",
@@ -8640,7 +8655,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const use: <A, E, R>(f: (router: HttpRouter) => Effect.Effect<A, E, R>) => Layer.Layer<never, E, HttpRouter | Exclude<R, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L284"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L283"
   },
   {
     "_tag": "Function",
@@ -8656,7 +8671,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const add: <E, R>(method: \"*\" | \"GET\" | \"POST\" | \"PUT\" | \"PATCH\" | \"DELETE\" | \"OPTIONS\", path: PathInput, handler: Effect.Effect<HttpServerResponse.HttpServerResponse, E, R> | ((request: HttpServerRequest.HttpServerRequest) => Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>), options?: { readonly uninterruptible?: boolean | undefined; }) => Layer.Layer<never, never, HttpRouter | Request.From<\"Requires\", Exclude<R, Provided>> | Request.From<\"Error\", E>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L301"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L300"
   },
   {
     "_tag": "Function",
@@ -8672,7 +8687,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const addAll: <Routes extends ReadonlyArray<Route<any, any>>, EX = never, RX = never>(routes: Routes | Effect.Effect<Routes, EX, RX>, options?: { readonly prefix?: string | undefined; }) => Layer.Layer<never, EX, HttpRouter | Exclude<RX, Scope.Scope> | Request.From<\"Requires\", Exclude<Route.Context<Routes[number]>, Provided>> | Request.From<\"Error\", Route.Error<Routes[number]>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L327"
   },
   {
     "_tag": "Function",
@@ -8687,7 +8702,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "declare const toHttpEffect: <A, E, R>(appLayer: Layer.Layer<A, E, R>) => Effect.Effect<Effect.Effect<HttpServerResponse.HttpServerResponse, Request.Only<\"Error\", R> | Request.Only<\"GlobalRequires\", R> | HttpServerError.RouteNotFound, Scope.Scope | HttpServerRequest.HttpServerRequest | Request.Only<\"Requires\", R> | Request.Only<\"GlobalRequires\", R>>, Request.Without<E>, Exclude<Request.Without<R>, HttpRouter> | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L359"
   },
   {
     "_tag": "Function",
@@ -8702,7 +8717,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "declare const route: <E, R>(method: \"*\" | \"GET\" | \"POST\" | \"PUT\" | \"PATCH\" | \"DELETE\" | \"OPTIONS\", path: PathInput, handler: Effect.Effect<HttpServerResponse.HttpServerResponse, E, R> | ((request: HttpServerRequest.HttpServerRequest) => Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>), options?: { readonly uninterruptible?: boolean | undefined; }) => Route<E, Exclude<R, Provided>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L444"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L443"
   },
   {
     "_tag": "Function",
@@ -8718,7 +8733,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "declare const cors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => Layer.Layer<never, never, HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L905"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L904"
   },
   {
     "_tag": "Function",
@@ -8734,7 +8749,7 @@
     "since": "1.0.0",
     "category": "HttpApi",
     "signature": "declare const addHttpApi: <Id extends string, Groups extends HttpApiGroup.HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<Id, Groups, E, R>, options?: { readonly openapiPath?: `/${string}` | undefined; }) => Layer.Layer<never, never, Etag.Generator | HttpRouter | FileSystem | HttpPlatform | Path | R | HttpApiGroup.HttpApiGroup.ToService<Id, Groups> | HttpApiGroup.HttpApiGroup.ErrorContext<Groups>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L995"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L994"
   },
   {
     "_tag": "Function",
@@ -8750,7 +8765,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const serve: <A, E, R, HE, HR = Request.Only<\"Requires\", R> | Request.Only<\"GlobalRequires\", R>>(appLayer: Layer.Layer<A, E, R>, options?: { readonly routerConfig?: Partial<FindMyWay.RouterConfig> | undefined; readonly disableLogger?: boolean | undefined; readonly disableListenLog?: boolean; readonly middleware?: (effect: Effect.Effect<HttpServerResponse.HttpServerResponse, Request.Only<\"Error\", R> | Request.Only<\"GlobalError\", R> | HttpServerError.RouteNotFound, Scope.Scope | HttpServerRequest.HttpServerRequest | Request.Only<\"Requires\", R> | Request.Only<\"GlobalRequires\", R>>) => Effect.Effect<HttpServerResponse.HttpServerResponse, HE, HR>; }) => Layer.Layer<never, Request.Without<E>, HttpServer.HttpServer | Exclude<Request.Without<R> | Exclude<HR, GlobalProvided>, HttpRouter>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L1047"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L1046"
   },
   {
     "_tag": "Function",
@@ -8765,7 +8780,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const toWebHandler: <A, E, R extends HttpRouter | Request<\"Requires\", any> | Request<\"GlobalRequires\", any> | Request<\"Error\", any> | Request<\"GlobalError\", any>, HE, HR = Request.Only<\"Requires\", R> | Request.Only<\"GlobalRequires\", R>>(appLayer: Layer.Layer<A, E, R>, options?: { readonly memoMap?: Layer.MemoMap | undefined; readonly routerConfig?: Partial<FindMyWay.RouterConfig> | undefined; readonly disableLogger?: boolean | undefined; readonly middleware?: (effect: Effect.Effect<HttpServerResponse.HttpServerResponse, Request.Only<\"Error\", R> | Request.Only<\"GlobalError\", R> | HttpServerError.RouteNotFound, Scope.Scope | HttpServerRequest.HttpServerRequest | Request.Only<\"Requires\", R> | Request.Only<\"GlobalRequires\", R>>) => Effect.Effect<HttpServerResponse.HttpServerResponse, HE, HR>; }) => { readonly handler: [HR] extends [never] ? ((request: globalThis.Request, context?: Context.Context<never> | undefined) => Promise<Response>) : ((request: globalThis.Request, context: Context.Context<HR>) => Promise<Response>); readonly dispose: () => Promise<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L1103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L1102"
   },
   {
     "_tag": "Interface",
@@ -8780,7 +8795,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "export interface HttpRouter {\n  readonly [TypeId]: TypeId\n\n  readonly prefixed: (prefix: string) => HttpRouter\n\n  readonly add: <E, R>(\n    method: \"*\" | \"GET\" | \"POST\" | \"PUT\" | \"PATCH\" | \"DELETE\" | \"OPTIONS\",\n    path: PathInput,\n    handler:\n      | Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>\n      | ((request: HttpServerRequest.HttpServerRequest) => Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>),\n    options?: { readonly uninterruptible?: boolean | undefined } | undefined\n  ) => Effect.Effect<\n    void,\n    never,\n    Request.From<\"Requires\", Exclude<R, Provided>> | Request.From<\"Error\", E>\n  >\n\n  readonly addAll: <const Routes extends ReadonlyArray<Route<any, any>>>(\n    routes: Routes\n  ) => Effect.Effect<\n    void,\n    never,\n    | Request.From<\"Requires\", Exclude<Route.Context<Routes[number]>, Provided>>\n    | Request.From<\"Error\", Route.Error<Routes[number]>>\n  >\n\n  readonly addGlobalMiddleware: <E, R>(\n    middleware:\n      & ((\n        effect: Effect.Effect<HttpServerResponse.HttpServerResponse, unhandled>\n      ) => Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>)\n      & (unhandled extends E ? unknown : \"You cannot handle any errors\")\n  ) => Effect.Effect<\n    void,\n    never,\n    | Request.From<\"GlobalRequires\", Exclude<R, GlobalProvided>>\n    | Request.From<\"GlobalError\", Exclude<E, unhandled>>\n  >\n\n  readonly asHttpEffect: () => Effect.Effect<\n    HttpServerResponse.HttpServerResponse,\n    unknown,\n    HttpServerRequest.HttpServerRequest | Scope.Scope\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L54"
   },
   {
     "_tag": "Interface",
@@ -8795,7 +8810,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "export interface Route<E = never, R = never> {\n  readonly [RouteTypeId]: RouteTypeId\n  readonly method: HttpMethod.HttpMethod | \"*\"\n  readonly path: PathInput\n  readonly handler: Effect.Effect<HttpServerResponse.HttpServerResponse, E, R>\n  readonly uninterruptible: boolean\n  readonly prefix: Option.Option<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L398"
   },
   {
     "_tag": "Interface",
@@ -8811,7 +8826,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "export interface Request<Kind extends string, T> {\n  readonly _: unique symbol\n  readonly kind: Kind\n  readonly type: T\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L508"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L507"
   },
   {
     "_tag": "Interface",
@@ -8827,7 +8842,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "export interface unhandled {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L580"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L579"
   },
   {
     "_tag": "Interface",
@@ -8842,7 +8857,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "export interface Middleware<\n  Config extends {\n    provides: any\n    handles: any\n    error: any\n    requires: any\n    layerError: any\n    layerRequires: any\n  }\n> {\n  readonly [MiddlewareTypeId]: Config\n\n  readonly layer: [Config[\"requires\"]] extends [never] ? Layer.Layer<\n      Request.From<\"Requires\", Config[\"provides\"]>,\n      Config[\"layerError\"],\n      | Config[\"layerRequires\"]\n      | Request.From<\"Requires\", Config[\"requires\"]>\n      | Request.From<\"Error\", Config[\"error\"]>\n    >\n    : \"Need to .combine(middleware) that satisfy the missing request dependencies\"\n\n  readonly combine: <\n    Config2 extends {\n      provides: any\n      handles: any\n      error: any\n      requires: any\n      layerError: any\n      layerRequires: any\n    }\n  >(other: Middleware<Config2>) => Middleware<{\n    provides: Config2[\"provides\"] | Config[\"provides\"]\n    handles: Config2[\"handles\"] | Config[\"handles\"]\n    error: Config2[\"error\"] | Exclude<Config[\"error\"], Config2[\"handles\"]>\n    requires: Exclude<Config[\"requires\"], Config2[\"provides\"]> | Config2[\"requires\"]\n    layerError: Config[\"layerError\"] | Config2[\"layerError\"]\n    layerRequires: Config[\"layerRequires\"] | Config2[\"layerRequires\"]\n  }>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L588"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L587"
   },
   {
     "_tag": "TypeAlias",
@@ -8857,7 +8872,7 @@
     "since": "1.0.0",
     "category": "HttpRouter",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L48"
   },
   {
     "_tag": "TypeAlias",
@@ -8872,7 +8887,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "type RouteTypeId = typeof RouteTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L393"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L392"
   },
   {
     "_tag": "TypeAlias",
@@ -8887,7 +8902,7 @@
     "since": "1.0.0",
     "category": "PathInput",
     "signature": "type PathInput = `/${string}` | \"*\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L466"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L465"
   },
   {
     "_tag": "TypeAlias",
@@ -8903,7 +8918,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "type Provided = | HttpServerRequest.HttpServerRequest\n  | Scope.Scope\n  | HttpServerRequest.ParsedSearchParams\n  | RouteContext",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L545"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L544"
   },
   {
     "_tag": "TypeAlias",
@@ -8919,7 +8934,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "type GlobalProvided = | HttpServerRequest.HttpServerRequest\n  | Scope.Scope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L557"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L556"
   },
   {
     "_tag": "TypeAlias",
@@ -8934,7 +8949,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "type MiddlewareTypeId = typeof MiddlewareTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L571"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L570"
   },
   {
     "_tag": "Export",
@@ -8950,7 +8965,7 @@
     "since": "1.0.0",
     "category": "Re-exports",
     "signature": "export * as FindMyWay from \"find-my-way-ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L36"
   },
   {
     "_tag": "Export",
@@ -8965,7 +8980,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const params: Effect.Effect<Readonly<Record<string, string | undefined>>, never, RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L237"
   },
   {
     "_tag": "Export",
@@ -8980,7 +8995,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const RouteContext: Context.Tag<RouteContext, RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L242"
   },
   {
     "_tag": "Export",
@@ -8995,7 +9010,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const schemaJson: <R, I extends Partial<{ readonly method: HttpMethod.HttpMethod; readonly url: string; readonly cookies: Readonly<Record<string, string | undefined>>; readonly headers: Readonly<Record<string, string | undefined>>; readonly pathParams: Readonly<Record<string, string | undefined>>; readonly searchParams: Readonly<Record<string, string | ReadonlyArray<string> | undefined>>; readonly body: any; }>, A>(schema: Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, HttpServerError.RequestError | ParseError, RouteContext | R | HttpServerRequest.HttpServerRequest | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L247"
   },
   {
     "_tag": "Export",
@@ -9010,7 +9025,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const schemaNoBody: <R, I extends Partial<{ readonly method: HttpMethod.HttpMethod; readonly url: string; readonly cookies: Readonly<Record<string, string | undefined>>; readonly headers: Readonly<Record<string, string | undefined>>; readonly pathParams: Readonly<Record<string, string | undefined>>; readonly searchParams: Readonly<Record<string, string | ReadonlyArray<string> | undefined>>; }>, A>(schema: Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseError, R | RouteContext | HttpServerRequest.HttpServerRequest | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L252"
   },
   {
     "_tag": "Export",
@@ -9025,7 +9040,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const schemaParams: <A, I extends Readonly<Record<string, string | ReadonlyArray<string> | undefined>>, R>(schema: Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseError, R | RouteContext | HttpServerRequest.ParsedSearchParams>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L258"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L257"
   },
   {
     "_tag": "Export",
@@ -9040,7 +9055,7 @@
     "since": "1.0.0",
     "category": "Route context",
     "signature": "declare const schemaPathParams: <A, I extends Readonly<Record<string, string | undefined>>, R>(schema: Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseError, R | RouteContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L263"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L262"
   },
   {
     "_tag": "TypeAlias",
@@ -9055,7 +9070,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "type Error<R> = R extends Route<infer E, infer _R> ? E : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L416"
   },
   {
     "_tag": "TypeAlias",
@@ -9070,7 +9085,7 @@
     "since": "1.0.0",
     "category": "Route",
     "signature": "type Context<T> = T extends Route<infer _E, infer R> ? R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L423"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L422"
   },
   {
     "_tag": "TypeAlias",
@@ -9085,7 +9100,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "type From<Kind, R> = R extends infer T ? Request<Kind, T> : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L523"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L522"
   },
   {
     "_tag": "TypeAlias",
@@ -9100,7 +9115,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "type Only<Kind, A> = A extends Request<Kind, infer T> ? T : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L529"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L528"
   },
   {
     "_tag": "TypeAlias",
@@ -9115,7 +9130,7 @@
     "since": "1.0.0",
     "category": "Request types",
     "signature": "type Without<A> = A extends Request<infer _Kind, infer _> ? never : A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L535"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L534"
   },
   {
     "_tag": "TypeAlias",
@@ -9130,7 +9145,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "type Make<Provides, Handles> = {\n    <E, R, EX, RX, const Global extends boolean = false>(\n      middleware: Effect.Effect<\n        (\n          effect: Effect.Effect<\n            HttpServerResponse.HttpServerResponse,\n            Types.NoInfer<Handles | unhandled>,\n            Types.NoInfer<Provides>\n          >\n        ) =>\n          & Effect.Effect<\n            HttpServerResponse.HttpServerResponse,\n            E,\n            R\n          >\n          & (unhandled extends E ? unknown : \"You must only handle the configured errors\"),\n        EX,\n        RX\n      >,\n      options?: {\n        readonly global?: Global | undefined\n      }\n    ): Global extends true ? Layer.Layer<\n        | Request.From<\"Requires\", Provides>\n        | Request.From<\"Error\", Handles>\n        | Request.From<\"GlobalRequires\", Provides>\n        | Request.From<\"GlobalError\", Handles>,\n        EX,\n        | HttpRouter\n        | Exclude<RX, Scope.Scope>\n        | Request.From<\"GlobalRequires\", Exclude<R, GlobalProvided>>\n        | Request.From<\"GlobalError\", Exclude<E, unhandled>>\n      > :\n      Middleware<{\n        provides: Provides\n        handles: Handles\n        error: Exclude<E, unhandled>\n        requires: Exclude<R, Provided>\n        layerError: EX\n        layerRequires: Exclude<RX, Scope.Scope>\n      }>\n    <E, R, const Global extends boolean = false>(\n      middleware:\n        & ((\n          effect: Effect.Effect<\n            HttpServerResponse.HttpServerResponse,\n            Types.NoInfer<Handles | unhandled>,\n            Types.NoInfer<Provides>\n          >\n        ) => Effect.Effect<\n          HttpServerResponse.HttpServerResponse,\n          E,\n          R\n        >)\n        & (unhandled extends E ? unknown : \"You must only handle the configured errors\"),\n      options?: {\n        readonly global?: Global | undefined\n      }\n    ): Global extends true ? Layer.Layer<\n        | Request.From<\"Requires\", Provides>\n        | Request.From<\"Error\", Handles>\n        | Request.From<\"GlobalRequires\", Provides>\n        | Request.From<\"GlobalError\", Handles>,\n        never,\n        | HttpRouter\n        | Request.From<\"GlobalRequires\", Exclude<R, GlobalProvided>>\n        | Request.From<\"GlobalError\", Exclude<E, unhandled>>\n      > :\n      Middleware<{\n        provides: Provides\n        handles: Handles\n        error: Exclude<E, unhandled>\n        requires: Exclude<R, Provided>\n        layerError: never\n        layerRequires: never\n      }>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L812"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L811"
   },
   {
     "_tag": "TypeAlias",
@@ -9145,7 +9160,7 @@
     "since": "1.0.0",
     "category": "Middleware",
     "signature": "type Fn = (\n    effect: Effect.Effect<HttpServerResponse.HttpServerResponse>\n  ) => Effect.Effect<HttpServerResponse.HttpServerResponse>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L894"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L893"
   },
   {
     "_tag": "Constant",

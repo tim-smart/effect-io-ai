@@ -11,6 +11,6 @@ Asserts that `either` is `Right`.
 declare const assertRight: <R, L>(either: Either.Either<R, L>, expected: R, ..._: Array<never>) => asserts either is Either.Right<never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L226)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L227)
 
 Since v0.21.0
