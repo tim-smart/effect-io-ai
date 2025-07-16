@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Random.js" module as `Random`.
 export * as Random from "./Random.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1134)
 
 Since v2.0.0

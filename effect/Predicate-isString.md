@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isString
 
-Tests if a value is a `string`.
+A refinement that checks if a value is a `string`.
 
 **Example**
 
@@ -11,9 +11,11 @@ Tests if a value is a `string`.
 import * as assert from "node:assert"
 import { isString } from "effect/Predicate"
 
-assert.deepStrictEqual(isString("a"), true)
+assert.strictEqual(isString("hello"), true)
+assert.strictEqual(isString(""), true)
 
-assert.deepStrictEqual(isString(1), false)
+assert.strictEqual(isString(123), false)
+assert.strictEqual(isString(null), false)
 ```
 
 **Signature**
@@ -22,6 +24,6 @@ assert.deepStrictEqual(isString(1), false)
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L226)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L334)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isUndefined
 
-Tests if a value is `undefined`.
+A refinement that checks if a value is `undefined`.
 
 **Example**
 
@@ -11,10 +11,10 @@ Tests if a value is `undefined`.
 import * as assert from "node:assert"
 import { isUndefined } from "effect/Predicate"
 
-assert.deepStrictEqual(isUndefined(undefined), true)
+assert.strictEqual(isUndefined(undefined), true)
 
-assert.deepStrictEqual(isUndefined(null), false)
-assert.deepStrictEqual(isUndefined("undefined"), false)
+assert.strictEqual(isUndefined(null), false)
+assert.strictEqual(isUndefined("undefined"), false)
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(isUndefined("undefined"), false)
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L339)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L458)
 
 Since v2.0.0

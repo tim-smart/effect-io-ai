@@ -443,7 +443,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromConfig: (options?: { readonly serviceName?: string | undefined; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown> | undefined; } | undefined) => Effect.Effect<Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L58"
   },
   {
     "_tag": "Function",
@@ -458,7 +458,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly serviceName: string; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown> | undefined; }) => Resource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L25"
   },
   {
     "_tag": "Function",
@@ -473,7 +473,7 @@
     "since": "1.0.0",
     "category": "Attributes",
     "signature": "declare const unsafeServiceName: (resource: Resource) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L102"
   },
   {
     "_tag": "Function",
@@ -488,7 +488,7 @@
     "since": "1.0.0",
     "category": "Attributes",
     "signature": "declare const entriesToAttributes: (entries: Iterable<[string, unknown]>) => Array<KeyValue>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L115"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L116"
   },
   {
     "_tag": "Function",
@@ -503,7 +503,7 @@
     "since": "1.0.0",
     "category": "Attributes",
     "signature": "declare const unknownToAttributeValue: (value: unknown) => AnyValue",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L131"
   },
   {
     "_tag": "Interface",
@@ -518,7 +518,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Resource {\n  /** Resource attributes */\n  attributes: Array<KeyValue>\n  /** Resource droppedAttributesCount */\n  droppedAttributesCount: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L14"
   },
   {
     "_tag": "Interface",
@@ -533,7 +533,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface KeyValue {\n  /** KeyValue key */\n  key: string\n  /** KeyValue value */\n  value: AnyValue\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L171"
   },
   {
     "_tag": "Interface",
@@ -548,7 +548,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AnyValue {\n  /** AnyValue stringValue */\n  stringValue?: string | null\n  /** AnyValue boolValue */\n  boolValue?: boolean | null\n  /** AnyValue intValue */\n  intValue?: number | null\n  /** AnyValue doubleValue */\n  doubleValue?: number | null\n  /** AnyValue arrayValue */\n  arrayValue?: ArrayValue\n  /** AnyValue kvlistValue */\n  kvlistValue?: KeyValueList\n  /** AnyValue bytesValue */\n  bytesValue?: Uint8Array\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L182"
   },
   {
     "_tag": "Interface",
@@ -563,7 +563,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ArrayValue {\n  /** ArrayValue values */\n  values: Array<AnyValue>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L203"
   },
   {
     "_tag": "Interface",
@@ -578,7 +578,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface KeyValueList {\n  /** KeyValueList values */\n  values: Array<KeyValue>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L212"
   },
   {
     "_tag": "Interface",
@@ -593,7 +593,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface LongBits {\n  low: number\n  high: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L220"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L221"
   },
   {
     "_tag": "TypeAlias",
@@ -608,7 +608,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Fixed64 = LongBits | string | number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L229"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpResource.ts#L230"
   },
   {
     "_tag": "Constant",
@@ -623,7 +623,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly url: string; readonly resource?: { readonly serviceName?: string | undefined; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; } | undefined; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; readonly context?: (<X>(f: () => X, span: Tracer.AnySpan) => X) | undefined; readonly shutdownTimeout?: Duration.DurationInput | undefined; }) => Effect.Effect<Tracer.Tracer, never, HttpClient.HttpClient | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L26"
   },
   {
     "_tag": "Function",
@@ -638,7 +638,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly url: string; readonly resource?: { readonly serviceName?: string | undefined; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; } | undefined; readonly headers?: Headers.Input | undefined; readonly exportInterval?: Duration.DurationInput | undefined; readonly maxBatchSize?: number | undefined; readonly context?: (<X>(f: () => X, span: Tracer.AnySpan) => X) | undefined; readonly shutdownTimeout?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtlpTracer.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -653,7 +653,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const Resource: Tag<Resource, Resources.Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -668,7 +668,7 @@
     "since": "2.0.0",
     "category": "layer",
     "signature": "declare const layerEmpty: Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L115"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L108"
   },
   {
     "_tag": "Function",
@@ -683,7 +683,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L32"
   },
   {
     "_tag": "Function",
@@ -698,7 +698,7 @@
     "since": "1.0.0",
     "category": "config",
     "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L46"
   },
   {
     "_tag": "Function",
@@ -713,7 +713,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layerFromEnv: (additionalAttributes?: OtelApi.Attributes | undefined) => Layer.Layer<Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L69"
   },
   {
     "_tag": "Interface",
@@ -728,7 +728,7 @@
     "since": "1.0.0",
     "category": "identifier",
     "signature": "export interface Resource {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L18"
   },
   {
     "_tag": "Constant",

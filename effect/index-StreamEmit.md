@@ -11,6 +11,6 @@ Re-exports all named exports from the "./StreamEmit.js" module as `StreamEmit`.
 export * as StreamEmit from "./StreamEmit.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1306)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1321)
 
 Since v2.0.0

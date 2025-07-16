@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isFunction
 
-Tests if a value is a `function`.
+A refinement that checks if a value is a `Function`.
 
 **Example**
 
@@ -11,9 +11,10 @@ Tests if a value is a `function`.
 import * as assert from "node:assert"
 import { isFunction } from "effect/Predicate"
 
-assert.deepStrictEqual(isFunction(isFunction), true)
+assert.strictEqual(isFunction(() => {}), true)
+assert.strictEqual(isFunction(isFunction), true)
 
-assert.deepStrictEqual(isFunction("function"), false)
+assert.strictEqual(isFunction("function"), false)
 ```
 
 **Signature**
@@ -22,6 +23,6 @@ assert.deepStrictEqual(isFunction("function"), false)
 declare const isFunction: (input: unknown) => input is Function
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L320)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L439)
 
 Since v2.0.0

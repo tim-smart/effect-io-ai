@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isNotNull
 
-Tests if a value is not `null`.
+A refinement that checks if a value is not `null`.
 
 **Example**
 
@@ -11,10 +11,10 @@ Tests if a value is not `null`.
 import * as assert from "node:assert"
 import { isNotNull } from "effect/Predicate"
 
-assert.deepStrictEqual(isNotNull(undefined), true)
-assert.deepStrictEqual(isNotNull("null"), true)
+assert.strictEqual(isNotNull(undefined), true)
+assert.strictEqual(isNotNull("value"), true)
 
-assert.deepStrictEqual(isNotNull(null), false)
+assert.strictEqual(isNotNull(null), false)
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(isNotNull(null), false)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L396)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L515)
 
 Since v2.0.0

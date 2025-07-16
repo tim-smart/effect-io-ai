@@ -3,7 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isTruthy
 
-Tests if a value is `truthy`.
+A predicate that checks if a value is "truthy" in JavaScript.
+Fails for `false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, and `NaN`.
 
 **Example**
 
@@ -11,9 +12,14 @@ Tests if a value is `truthy`.
 import * as assert from "node:assert"
 import { isTruthy } from "effect/Predicate"
 
-assert.deepStrictEqual(isTruthy(1), true)
-assert.deepStrictEqual(isTruthy(0), false)
-assert.deepStrictEqual(isTruthy(""), false)
+assert.strictEqual(isTruthy(1), true)
+assert.strictEqual(isTruthy("hello"), true)
+assert.strictEqual(isTruthy({}), true)
+
+assert.strictEqual(isTruthy(0), false)
+assert.strictEqual(isTruthy(""), false)
+assert.strictEqual(isTruthy(null), false)
+assert.strictEqual(isTruthy(undefined), false)
 ```
 
 **Signature**
@@ -22,6 +28,6 @@ assert.deepStrictEqual(isTruthy(""), false)
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L169)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L275)
 
 Since v2.0.0

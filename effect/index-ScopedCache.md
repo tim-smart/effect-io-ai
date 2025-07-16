@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ScopedCache.js" module as `ScopedCache`
 export * as ScopedCache from "./ScopedCache.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1280)
 
 Since v2.0.0

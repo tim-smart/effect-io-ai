@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Ref.js" module as `Ref`.
 export * as Ref from "./Ref.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1168)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1183)
 
 Since v2.0.0

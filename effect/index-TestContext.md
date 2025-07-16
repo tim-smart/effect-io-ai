@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestContext.js" module as `TestContext`
 export * as TestContext from "./TestContext.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1470)
 
 Since v2.0.0

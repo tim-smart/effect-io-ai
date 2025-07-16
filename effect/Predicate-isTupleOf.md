@@ -3,9 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isTupleOf
 
-Determine if an `Array` is a tuple with exactly `N` elements, narrowing down the type to `TupleOf`.
-
-An `Array` is considered to be a `TupleOf` if its length is exactly `N`.
+A refinement that checks if a `ReadonlyArray<T>` is a tuple with exactly `N` elements.
+If the check is successful, the type is narrowed to `TupleOf<N, T>`.
 
 **Example**
 
@@ -13,14 +12,16 @@ An `Array` is considered to be a `TupleOf` if its length is exactly `N`.
 import * as assert from "node:assert"
 import { isTupleOf } from "effect/Predicate"
 
-assert.deepStrictEqual(isTupleOf([1, 2, 3], 3), true);
-assert.deepStrictEqual(isTupleOf([1, 2, 3], 2), false);
-assert.deepStrictEqual(isTupleOf([1, 2, 3], 4), false);
+const isTupleOf3 = isTupleOf(3)
+
+assert.strictEqual(isTupleOf3([1, 2, 3]), true);
+assert.strictEqual(isTupleOf3([1, 2]), false);
 
 const arr: number[] = [1, 2, 3];
 if (isTupleOf(arr, 3)) {
-  console.log(arr);
-  // ^? [number, number, number]
+  // The type of arr is now [number, number, number]
+  const [a, b, c] = arr;
+  assert.deepStrictEqual([a, b, c], [1, 2, 3])
 }
 ```
 
@@ -30,6 +31,6 @@ if (isTupleOf(arr, 3)) {
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L217)
 
 Since v3.3.0

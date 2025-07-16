@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Scope.js" module as `Scope`.
 export * as Scope from "./Scope.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1275)
 
 Since v2.0.0

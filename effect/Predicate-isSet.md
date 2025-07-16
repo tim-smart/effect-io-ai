@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isSet
 
-Tests if a value is a `Set`.
+A refinement that checks if a value is a `Set`.
 
 **Example**
 
@@ -11,11 +11,11 @@ Tests if a value is a `Set`.
 import * as assert from "node:assert"
 import { isSet } from "effect/Predicate"
 
-assert.deepStrictEqual(isSet(new Set([1, 2])), true)
-assert.deepStrictEqual(isSet(new Set()), true)
-assert.deepStrictEqual(isSet({}), false)
-assert.deepStrictEqual(isSet(null), false)
-assert.deepStrictEqual(isSet(undefined), false)
+assert.strictEqual(isSet(new Set([1, 2])), true)
+assert.strictEqual(isSet(new Set()), true)
+
+assert.strictEqual(isSet({}), false)
+assert.strictEqual(isSet([1, 2]), false)
 ```
 
 **Signature**
@@ -24,6 +24,6 @@ assert.deepStrictEqual(isSet(undefined), false)
 declare const isSet: (input: unknown) => input is Set<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L189)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L295)
 
 Since v2.0.0

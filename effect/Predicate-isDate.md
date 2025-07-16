@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isDate
 
-A guard that succeeds when the input is a `Date`.
+A refinement that checks if a value is a `Date` object.
 
 **Example**
 
@@ -11,10 +11,10 @@ A guard that succeeds when the input is a `Date`.
 import * as assert from "node:assert"
 import { isDate } from "effect/Predicate"
 
-assert.deepStrictEqual(isDate(new Date()), true)
+assert.strictEqual(isDate(new Date()), true)
 
-assert.deepStrictEqual(isDate(null), false)
-assert.deepStrictEqual(isDate({}), false)
+assert.strictEqual(isDate(Date.now()), false) // `Date.now()` returns a number
+assert.strictEqual(isDate("2023-01-01"), false)
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(isDate({}), false)
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L598)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L750)
 
 Since v2.0.0

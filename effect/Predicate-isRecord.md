@@ -3,7 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isRecord
 
-A guard that succeeds when the input is a record.
+A refinement that checks if a value is a record (i.e., a plain object).
+This check returns `false` for arrays, `null`, and functions.
 
 **Example**
 
@@ -11,15 +12,18 @@ A guard that succeeds when the input is a record.
 import * as assert from "node:assert"
 import { isRecord } from "effect/Predicate"
 
-assert.deepStrictEqual(isRecord({}), true)
-assert.deepStrictEqual(isRecord({ a: 1 }), true)
+assert.strictEqual(isRecord({}), true)
+assert.strictEqual(isRecord({ a: 1 }), true)
 
-assert.deepStrictEqual(isRecord([]), false)
-assert.deepStrictEqual(isRecord([1, 2, 3]), false)
-assert.deepStrictEqual(isRecord(null), false)
-assert.deepStrictEqual(isRecord(undefined), false)
-assert.deepStrictEqual(isRecord(() => null), false)
+assert.strictEqual(isRecord([]), false)
+assert.strictEqual(isRecord(new Date()), false)
+assert.strictEqual(isRecord(null), false)
+assert.strictEqual(isRecord(() => null), false)
 ```
+
+**See**
+
+- isObject
 
 **Signature**
 
@@ -27,6 +31,6 @@ assert.deepStrictEqual(isRecord(() => null), false)
 declare const isRecord: (input: unknown) => input is { [x: string | symbol]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L641)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L796)
 
 Since v2.0.0

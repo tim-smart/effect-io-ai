@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isNullable
 
-A guard that succeeds when the input is `null` or `undefined`.
+A refinement that checks if a value is either `null` or `undefined`.
 
 **Example**
 
@@ -11,12 +11,16 @@ A guard that succeeds when the input is `null` or `undefined`.
 import * as assert from "node:assert"
 import { isNullable } from "effect/Predicate"
 
-assert.deepStrictEqual(isNullable(null), true)
-assert.deepStrictEqual(isNullable(undefined), true)
+assert.strictEqual(isNullable(null), true)
+assert.strictEqual(isNullable(undefined), true)
 
-assert.deepStrictEqual(isNullable({}), false)
-assert.deepStrictEqual(isNullable([]), false)
+assert.strictEqual(isNullable(0), false)
+assert.strictEqual(isNullable(""), false)
 ```
+
+**See**
+
+- isNotNullable
 
 **Signature**
 
@@ -24,6 +28,6 @@ assert.deepStrictEqual(isNullable([]), false)
 declare const isNullable: <A>(input: A) => input is Extract<A, null | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L521)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L670)
 
 Since v2.0.0

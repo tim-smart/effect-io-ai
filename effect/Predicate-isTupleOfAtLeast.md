@@ -3,9 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isTupleOfAtLeast
 
-Determine if an `Array` is a tuple with at least `N` elements, narrowing down the type to `TupleOfAtLeast`.
-
-An `Array` is considered to be a `TupleOfAtLeast` if its length is at least `N`.
+A refinement that checks if a `ReadonlyArray<T>` is a tuple with at least `N` elements.
+If the check is successful, the type is narrowed to `TupleOfAtLeast<N, T>`.
 
 **Example**
 
@@ -13,14 +12,17 @@ An `Array` is considered to be a `TupleOfAtLeast` if its length is at least `N`.
 import * as assert from "node:assert"
 import { isTupleOfAtLeast } from "effect/Predicate"
 
-assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 3), true);
-assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 2), true);
-assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 4), false);
+const isTupleOfAtLeast3 = isTupleOfAtLeast(3)
+
+assert.strictEqual(isTupleOfAtLeast3([1, 2, 3]), true);
+assert.strictEqual(isTupleOfAtLeast3([1, 2, 3, 4]), true);
+assert.strictEqual(isTupleOfAtLeast3([1, 2]), false);
 
 const arr: number[] = [1, 2, 3, 4];
 if (isTupleOfAtLeast(arr, 3)) {
-  console.log(arr);
-  // ^? [number, number, number, ...number[]]
+  // The type of arr is now [number, number, number, ...number[]]
+  const [a, b, c] = arr;
+  assert.deepStrictEqual([a, b, c], [1, 2, 3])
 }
 ```
 
@@ -30,6 +32,6 @@ if (isTupleOfAtLeast(arr, 3)) {
 declare const isTupleOfAtLeast: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L248)
 
 Since v3.3.0

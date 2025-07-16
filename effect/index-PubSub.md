@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PubSub.js" module as `PubSub`.
 export * as PubSub from "./PubSub.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1124)
 
 Since v2.0.0

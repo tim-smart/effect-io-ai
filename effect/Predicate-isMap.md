@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isMap
 
-Tests if a value is a `Map`.
+A refinement that checks if a value is a `Map`.
 
 **Example**
 
@@ -11,10 +11,10 @@ Tests if a value is a `Map`.
 import * as assert from "node:assert"
 import { isMap } from "effect/Predicate"
 
-assert.deepStrictEqual(isMap(new Map()), true)
-assert.deepStrictEqual(isMap({}), false)
-assert.deepStrictEqual(isMap(null), false)
-assert.deepStrictEqual(isMap(undefined), false)
+assert.strictEqual(isMap(new Map()), true)
+
+assert.strictEqual(isMap({}), false)
+assert.strictEqual(isMap(new Set()), false)
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(isMap(undefined), false)
 declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L314)
 
 Since v2.0.0

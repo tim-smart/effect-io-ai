@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestAnnotation.js" module as `TestAnnot
 export * as TestAnnotation from "./TestAnnotation.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1430)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1445)
 
 Since v2.0.0

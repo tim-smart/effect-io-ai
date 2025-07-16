@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isNever
 
-A guard that always fails.
+A refinement that always returns `false`. The type is narrowed to `never`.
 
 **Example**
 
@@ -11,10 +11,9 @@ A guard that always fails.
 import * as assert from "node:assert"
 import { isNever } from "effect/Predicate"
 
-assert.deepStrictEqual(isNever(null), false)
-assert.deepStrictEqual(isNever(undefined), false)
-assert.deepStrictEqual(isNever({}), false)
-assert.deepStrictEqual(isNever([]), false)
+assert.strictEqual(isNever(1), false)
+assert.strictEqual(isNever(null), false)
+assert.strictEqual(isNever({}), false)
 ```
 
 **Signature**
@@ -23,6 +22,6 @@ assert.deepStrictEqual(isNever([]), false)
 declare const isNever: (input: unknown) => input is never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L415)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L533)
 
 Since v2.0.0

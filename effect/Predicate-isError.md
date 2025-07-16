@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isError
 
-A guard that succeeds when the input is an `Error`.
+A refinement that checks if a value is an instance of `Error`.
 
 **Example**
 
@@ -11,10 +11,11 @@ A guard that succeeds when the input is an `Error`.
 import * as assert from "node:assert"
 import { isError } from "effect/Predicate"
 
-assert.deepStrictEqual(isError(new Error()), true)
+assert.strictEqual(isError(new Error("boom")), true)
+assert.strictEqual(isError(new TypeError("boom")), true)
 
-assert.deepStrictEqual(isError(null), false)
-assert.deepStrictEqual(isError({}), false)
+assert.strictEqual(isError({ message: "boom" }), false)
+assert.strictEqual(isError("boom"), false)
 ```
 
 **Signature**
@@ -23,6 +24,6 @@ assert.deepStrictEqual(isError({}), false)
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L560)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L712)
 
 Since v2.0.0

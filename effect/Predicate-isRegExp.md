@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isRegExp
 
-Tests if a value is a `RegExp`.
+A refinement that checks if a value is a `RegExp`.
 
 **Example**
 
@@ -11,8 +11,10 @@ Tests if a value is a `RegExp`.
 import * as assert from "node:assert"
 import { Predicate } from "effect"
 
-assert.deepStrictEqual(Predicate.isRegExp(/a/), true)
-assert.deepStrictEqual(Predicate.isRegExp("a"), false)
+assert.strictEqual(Predicate.isRegExp(/a/), true)
+assert.strictEqual(Predicate.isRegExp(new RegExp("a")), true)
+
+assert.strictEqual(Predicate.isRegExp("/a/"), false)
 ```
 
 **Signature**
@@ -21,6 +23,6 @@ assert.deepStrictEqual(Predicate.isRegExp("a"), false)
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L711)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L889)
 
 Since v3.9.0

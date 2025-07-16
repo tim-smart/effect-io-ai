@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isSymbol
 
-Tests if a value is a `symbol`.
+A refinement that checks if a value is a `symbol`.
 
 **Example**
 
@@ -11,9 +11,9 @@ Tests if a value is a `symbol`.
 import * as assert from "node:assert"
 import { isSymbol } from "effect/Predicate"
 
-assert.deepStrictEqual(isSymbol(Symbol.for("a")), true)
+assert.strictEqual(isSymbol(Symbol.for("a")), true)
 
-assert.deepStrictEqual(isSymbol("a"), false)
+assert.strictEqual(isSymbol("a"), false)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isSymbol("a"), false)
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L298)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L413)
 
 Since v2.0.0

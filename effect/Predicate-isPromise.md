@@ -3,7 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isPromise
 
-A guard that succeeds when the input is a Promise.
+A refinement that checks if a value is a `Promise`. It performs a duck-typing check
+for `.then` and `.catch` methods.
 
 **Example**
 
@@ -11,9 +12,16 @@ A guard that succeeds when the input is a Promise.
 import * as assert from "node:assert"
 import { isPromise } from "effect/Predicate"
 
-assert.deepStrictEqual(isPromise({}), false)
-assert.deepStrictEqual(isPromise(Promise.resolve("hello")), true)
+assert.strictEqual(isPromise(Promise.resolve(1)), true)
+assert.strictEqual(isPromise(new Promise(() => {})), true)
+
+assert.strictEqual(isPromise({ then() {} }), false) // Missing .catch
+assert.strictEqual(isPromise({}), false)
 ```
+
+**See**
+
+- isPromiseLike
 
 **Signature**
 
@@ -21,6 +29,6 @@ assert.deepStrictEqual(isPromise(Promise.resolve("hello")), true)
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L683)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L844)
 
 Since v2.0.0

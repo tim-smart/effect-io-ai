@@ -3,7 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.isNumber
 
-Tests if a value is a `number`.
+A refinement that checks if a value is a `number`. Note that this
+check returns `false` for `NaN`.
 
 **Example**
 
@@ -11,9 +12,12 @@ Tests if a value is a `number`.
 import * as assert from "node:assert"
 import { isNumber } from "effect/Predicate"
 
-assert.deepStrictEqual(isNumber(2), true)
+assert.strictEqual(isNumber(123), true)
+assert.strictEqual(isNumber(0), true)
+assert.strictEqual(isNumber(-1.5), true)
 
-assert.deepStrictEqual(isNumber("2"), false)
+assert.strictEqual(isNumber("123"), false)
+assert.strictEqual(isNumber(NaN), false) // Special case: NaN is a number type but returns false
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.deepStrictEqual(isNumber("2"), false)
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L244)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L356)
 
 Since v2.0.0

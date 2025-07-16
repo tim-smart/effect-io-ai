@@ -11,6 +11,6 @@ Re-exports all named exports from the "./UpstreamPullRequest.js" module as `Upst
 export * as UpstreamPullRequest from "./UpstreamPullRequest.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1518)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1533)
 
 Since v2.0.0

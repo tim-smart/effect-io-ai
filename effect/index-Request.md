@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Request.js" module as `Request`.
 export * as Request from "./Request.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1185)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1200)
 
 Since v2.0.0

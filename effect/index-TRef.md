@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TRef.js" module as `TRef`.
 export * as TRef from "./TRef.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1405)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1420)
 
 Since v2.0.0

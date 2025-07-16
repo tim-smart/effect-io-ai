@@ -218,7 +218,7 @@
     "since": "1.0.0",
     "category": "loaders",
     "signature": "declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L298"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L296"
   },
   {
     "_tag": "Function",
@@ -233,7 +233,7 @@
     "since": "1.0.0",
     "category": "loaders",
     "signature": "declare const fromBabelGlob: (migrations: Record<string, any>) => Loader",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L317"
   },
   {
     "_tag": "Interface",

@@ -3,7 +3,10 @@ Module: `Predicate`<br />
 
 ## Predicate.not
 
-Negates the result of a given predicate.
+Returns a new predicate that is the logical negation of the given predicate.
+
+**Note**: If the input is a `Refinement`, the resulting predicate will be a
+simple `Predicate`, as TypeScript cannot infer the negative type.
 
 **Example**
 
@@ -11,11 +14,11 @@ Negates the result of a given predicate.
 import * as assert from "node:assert"
 import { Predicate, Number } from "effect"
 
-const isPositive = Predicate.not(Number.lessThan(0))
+const isNonPositive = Predicate.not(Number.greaterThan(0))
 
-assert.deepStrictEqual(isPositive(-1), false)
-assert.deepStrictEqual(isPositive(0), true)
-assert.deepStrictEqual(isPositive(1), true)
+assert.strictEqual(isNonPositive(-1), true)
+assert.strictEqual(isNonPositive(0), true)
+assert.strictEqual(isNonPositive(1), false)
 ```
 
 **Signature**
@@ -24,6 +27,6 @@ assert.deepStrictEqual(isPositive(1), true)
 declare const not: <A>(self: Predicate<A>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L838)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1103)
 
 Since v2.0.0
