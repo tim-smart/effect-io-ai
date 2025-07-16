@@ -208,8 +208,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Effect.Effect<Server.HttpServer, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L22"
+    "signature": "declare const make: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Effect.Effect<Server.HttpServer, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -223,8 +223,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerServer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L30"
+    "signature": "declare const layerServer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -238,8 +238,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options: Omit<ServeOptions, \"fetch\" | \"error\">) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L37"
+    "signature": "declare const layer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -255,7 +255,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -269,8 +269,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerConfig: (options: Config.Config.Wrap<Omit<ServeOptions, \"fetch\" | \"error\">>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L61"
+    "signature": "declare const layerConfig: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: Config.Config.Wrap<ServeOptions<R>>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -286,7 +286,22 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L92"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "BunHttpServer.ts",
+      "path": "src/BunHttpServer.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "ServeOptions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Options",
+    "signature": "type ServeOptions<R> = & (\n    | Omit<Bun.ServeOptions, \"fetch\" | \"error\">\n    | Bun.TLSServeOptions\n    | Bun.UnixServeOptions\n    | Bun.UnixTLSServeOptions\n  )\n  & { readonly routes?: R }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L22"
   },
   {
     "_tag": "Constant",

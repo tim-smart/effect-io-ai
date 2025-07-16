@@ -4233,7 +4233,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const dataLoader: ((options: { readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => <A extends Request.Request<any, any>>(self: RequestResolver.RequestResolver<A, never>) => Effect.Effect<RequestResolver.RequestResolver<A, never>, never, Scope.Scope>) & (<A extends Request.Request<any, any>>(self: RequestResolver.RequestResolver<A, never>, options: { readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<RequestResolver.RequestResolver<A, never>, never, Scope.Scope>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -4248,7 +4248,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const persisted: { <Req extends PersistedRequest.Any>(options: { readonly storeId: string; readonly timeToLive: (...args: Persistence.ResultPersistence.TimeToLiveArgs<Req>) => Duration.DurationInput; }): (self: RequestResolver.RequestResolver<Req, never>) => Effect.Effect<RequestResolver.RequestResolver<Req, Schema.WithResult.Context<Req>>, never, Persistence.ResultPersistence | Scope.Scope>; <Req extends PersistedRequest.Any>(self: RequestResolver.RequestResolver<Req, never>, options: { readonly storeId: string; readonly timeToLive: (...args: Persistence.ResultPersistence.TimeToLiveArgs<Req>) => Duration.DurationInput; }): Effect.Effect<RequestResolver.RequestResolver<Req, Schema.WithResult.Context<Req>>, never, Persistence.ResultPersistence | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L131"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L129"
   },
   {
     "_tag": "Interface",
@@ -4263,7 +4263,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface PersistedRequest<R, IE, E, IA, A> extends Request.Request<A, E>, Schema.WithResult<A, IA, E, IE, R> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L111"
   },
   {
     "_tag": "TypeAlias",
@@ -4278,7 +4278,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type Any = PersistedRequest<any, any, any, any, any> | PersistedRequest<any, never, never, any, any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RequestResolver.ts#L122"
   },
   {
     "_tag": "Class",

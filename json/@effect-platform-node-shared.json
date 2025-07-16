@@ -462,8 +462,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromReadable: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, { chunkSize }?: FromReadableOptions) => Stream.Stream<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L36"
+    "signature": "declare const fromReadable: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, options?: FromReadableOptions) => Stream.Stream<A, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -477,8 +477,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromReadableChannel: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, chunkSize: number | undefined) => Channel<Chunk<A>, unknown, E, unknown, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L46"
+    "signature": "declare const fromReadableChannel: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, options?: FromReadableOptions | undefined) => Channel<Chunk<A>, unknown, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -493,7 +493,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromDuplex: <IE, E, I = Uint8Array<ArrayBufferLike>, O = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Duplex>, onError: (error: unknown) => E, options?: FromReadableOptions & FromWritableOptions) => Channel<Chunk<O>, Chunk<I>, IE | E, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -508,7 +508,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const pipeThroughDuplex: { <E2, B = Uint8Array<ArrayBufferLike>>(duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): <R, E, A>(self: Stream.Stream<A, E, R>) => Stream.Stream<B, E2 | E, R>; <R, E, A, E2, B = Uint8Array<ArrayBufferLike>>(self: Stream.Stream<A, E, R>, duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): Stream.Stream<B, E | E2, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -523,7 +523,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream.Stream<string | Uint8Array, E, R>) => Stream.Stream<Uint8Array, E | PlatformError, R>; <R, E>(self: Stream.Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream.Stream<Uint8Array, PlatformError | E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -538,7 +538,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toReadable: <E, R>(stream: Stream.Stream<string | Uint8Array, E, R>) => Effect<Readable, never, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -553,7 +553,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toReadableNever: <E>(stream: Stream.Stream<string | Uint8Array, E, never>) => Readable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -568,7 +568,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toString: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect<string, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L114"
   },
   {
     "_tag": "Constant",
@@ -583,7 +583,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toUint8Array: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect<Uint8Array, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -598,7 +598,7 @@
     "since": "1.0.0",
     "category": "stdio",
     "signature": "declare const stdin: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L136"
   },
   {
     "_tag": "Interface",
@@ -612,7 +612,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface FromReadableOptions {\n  /** Defaults to undefined, which lets Node.js decide the chunk size */\n  readonly chunkSize?: SizeInput\n}",
+    "signature": "export interface FromReadableOptions {\n  /** Defaults to undefined, which lets Node.js decide the chunk size */\n  readonly chunkSize?: SizeInput\n  /** Default to true, which means the stream will be closed when done */\n  readonly closeOnDone?: boolean | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L18"
   },
   {
@@ -628,7 +628,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface FromWritableOptions {\n  readonly endOnDone?: boolean\n  readonly encoding?: BufferEncoding\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L29"
   },
   {
     "_tag": "Constant",
