@@ -3064,7 +3064,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<RunnerHealth, never, Runners.Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -3080,7 +3080,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerRpc: Layer.Layer<RunnerHealth, never, ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L84"
   },
   {
     "_tag": "Class",
