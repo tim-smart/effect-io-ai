@@ -10410,6 +10410,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L824"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpRouter.ts",
+      "path": "src/HttpRouter.ts"
+    },
+    "project": "@effect/platform",
+    "name": "toHttpApp",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utils",
+    "signature": "declare const toHttpApp: <E, R>(self: HttpRouter<E, R>) => Effect.Effect<App.Default<E | Error.RouteNotFound, R>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRouter.ts#L839"
+  },
+  {
     "_tag": "Interface",
     "module": {
       "name": "HttpRouter.ts",
