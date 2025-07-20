@@ -203,7 +203,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: <RD = never>({ dumpSchema }: { dumpSchema?: (path: string, migrationsTable: string) => Effect.Effect<void, MigrationError, RD>; }) => <R2 = never>({ loader, schemaDirectory, table }: MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, MigrationError | SqlError, Client.SqlClient | RD | R2>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L73"
   },
   {
     "_tag": "Function",
@@ -218,7 +218,7 @@
     "since": "1.0.0",
     "category": "loaders",
     "signature": "declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L296"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L298"
   },
   {
     "_tag": "Function",
@@ -233,7 +233,7 @@
     "since": "1.0.0",
     "category": "loaders",
     "signature": "declare const fromBabelGlob: (migrations: Record<string, any>) => Loader",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L317"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/Migrator.ts#L319"
   },
   {
     "_tag": "Interface",
