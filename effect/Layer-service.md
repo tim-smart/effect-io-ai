@@ -12,6 +12,6 @@ context.
 declare const service: <I, S>(tag: Context.Tag<I, S>) => Layer<I, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L707)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L758)
 
 Since v2.0.0

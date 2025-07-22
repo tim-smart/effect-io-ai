@@ -11,6 +11,6 @@ Combines all the provided layers concurrently, creating a new layer with merged 
 declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(...layers: Layers) => Layer<{ [k in keyof Layers]: Layer.Success<Layers[k]>; }[number], { [k in keyof Layers]: Layer.Error<Layers[k]>; }[number], { [k in keyof Layers]: Layer.Context<Layers[k]>; }[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L526)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L577)
 
 Since v2.0.0

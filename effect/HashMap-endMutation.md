@@ -11,6 +11,6 @@ Marks the `HashMap` as immutable.
 declare const endMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L297)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L318)
 
 Since v2.0.0

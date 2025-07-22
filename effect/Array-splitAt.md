@@ -21,6 +21,6 @@ console.log(result) // [[1, 2, 3], [4, 5]]
 declare const splitAt: { (n: number): <A>(self: Iterable<A>) => [beforeIndex: Array<A>, fromIndex: Array<A>]; <A>(self: Iterable<A>, n: number): [beforeIndex: Array<A>, fromIndex: Array<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1882)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1929)
 
 Since v2.0.0

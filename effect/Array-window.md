@@ -24,6 +24,6 @@ assert.deepStrictEqual(Array.window(numbers, 6), [])
 declare const window: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2090)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2137)
 
 Since v3.13.2

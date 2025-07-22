@@ -30,6 +30,6 @@ const myCache = globalValue(
 declare const globalValue: <A>(id: unknown, compute: () => A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/GlobalValue.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/GlobalValue.ts#L42)
 
 Since v2.0.0

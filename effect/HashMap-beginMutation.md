@@ -11,6 +11,6 @@ Marks the `HashMap` as mutable.
 declare const beginMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L290)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L311)
 
 Since v2.0.0

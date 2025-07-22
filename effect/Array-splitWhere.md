@@ -21,6 +21,6 @@ console.log(result) // [[1, 2, 3], [4, 5]]
 declare const splitWhere: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [beforeMatch: Array<A>, fromMatch: Array<A>]; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [beforeMatch: Array<A>, fromMatch: Array<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1962)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2009)
 
 Since v2.0.0

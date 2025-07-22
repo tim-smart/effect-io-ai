@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.swap
 
-Swaps the two elements of a tuple.
+Swaps the elements of a tuple with two elements.
 
 **Example**
 

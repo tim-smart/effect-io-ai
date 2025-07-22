@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.getSecond
 
-Return the second element of a tuple.
+Return the second element from a tuple with two elements.
 
 **Example**
 

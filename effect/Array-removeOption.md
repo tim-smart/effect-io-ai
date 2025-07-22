@@ -26,6 +26,6 @@ assert.deepStrictEqual(outOfBoundsResult, Option.none())
 declare const removeOption: { (i: number): <A>(self: Iterable<A>) => Option.Option<Array<A>>; <A>(self: Iterable<A>, i: number): Option.Option<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1361)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1408)
 
 Since v3.16.0

@@ -21,6 +21,6 @@ console.log(result) // [["a", "b", "c"], ["d", "e"]]
 declare const splitNonEmptyAt: { (n: number): <A>(self: NonEmptyReadonlyArray<A>) => [beforeIndex: NonEmptyArray<A>, fromIndex: Array<A>]; <A>(self: NonEmptyReadonlyArray<A>, n: number): [beforeIndex: NonEmptyArray<A>, fromIndex: Array<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1913)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1960)
 
 Since v2.0.0

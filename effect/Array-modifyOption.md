@@ -25,6 +25,6 @@ console.log(outOfBoundsResult) // Option.none()
 declare const modifyOption: { <A, B, S extends Iterable<A> = Iterable<A>>(i: number, f: (a: ReadonlyArray.Infer<S>) => B): (self: S) => Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; <A, B, S extends Iterable<A> = Iterable<A>>(self: S, i: number, f: (a: ReadonlyArray.Infer<S>) => B): Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1290)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1337)
 
 Since v2.0.0

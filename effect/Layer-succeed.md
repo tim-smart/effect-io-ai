@@ -11,6 +11,6 @@ Constructs a layer from the specified value.
 declare const succeed: { <I, S>(tag: Context.Tag<I, S>): (resource: Types.NoInfer<S>) => Layer<I>; <I, S>(tag: Context.Tag<I, S>, resource: Types.NoInfer<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L715)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L766)
 
 Since v2.0.0

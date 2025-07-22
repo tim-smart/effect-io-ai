@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.mapBoth
 
-Transforms both elements of a tuple using the given functions.
+Transforms both elements of a tuple with two elements using the given functions.
 
 **Example**
 

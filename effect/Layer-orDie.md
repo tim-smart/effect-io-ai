@@ -12,6 +12,6 @@ unchecked and not a part of the type of the layer.
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L541)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L592)
 
 Since v2.0.0

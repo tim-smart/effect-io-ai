@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.mapSecond
 
-Transforms the second component of a tuple using a given function.
+Transforms the second component of a tuple with two elements using a given function.
 
 **Example**
 

@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.getFirst
 
-Return the first element of a tuple.
+Return the first element from a tuple with two elements.
 
 **Example**
 

@@ -20,6 +20,6 @@ console.log(result) // 3
 declare const max: { <A>(O: Order.Order<A>): (self: NonEmptyReadonlyArray<A>) => A; <A>(self: NonEmptyReadonlyArray<A>, O: Order.Order<A>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3030)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3077)
 
 Since v2.0.0

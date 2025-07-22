@@ -12,6 +12,6 @@ services.
 declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L727)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L778)
 
 Since v2.0.0

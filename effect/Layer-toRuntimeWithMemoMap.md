@@ -12,6 +12,6 @@ be used to execute effects.
 declare const toRuntimeWithMemoMap: { (memoMap: MemoMap): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Runtime.Runtime<ROut>, E, Scope.Scope | RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap): Effect.Effect<Runtime.Runtime<ROut>, E, Scope.Scope | RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L824)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L875)
 
 Since v2.0.0
