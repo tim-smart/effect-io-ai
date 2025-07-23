@@ -16168,7 +16168,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "declare class QuitException",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -16183,7 +16183,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const Terminal: Tag<Terminal, Terminal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L90"
   },
   {
     "_tag": "Interface",
@@ -16198,8 +16198,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Terminal {\n  /**\n   * The number of columns available on the platform's terminal interface.\n   */\n  readonly columns: Effect<number>\n  /**\n   * Reads a single input event from the default standard input.\n   */\n  readonly readInput: Effect<UserInput, QuitException>\n  /**\n   * Reads a single line from the default standard input.\n   */\n  readonly readLine: Effect<string, QuitException>\n  /**\n   * Displays text to the the default standard output.\n   */\n  readonly display: (text: string) => Effect<void, PlatformError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L18"
+    "signature": "export interface Terminal {\n  /**\n   * The number of columns available on the platform's terminal interface.\n   */\n  readonly columns: Effect<number>\n  /**\n   * Reads input events from the default standard input.\n   */\n  readonly readInput: Effect<ReadonlyMailbox<UserInput>, never, Scope.Scope>\n  /**\n   * Reads a single line from the default standard input.\n   */\n  readonly readLine: Effect<string, QuitException>\n  /**\n   * Displays text to the the default standard output.\n   */\n  readonly display: (text: string) => Effect<void, PlatformError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L20"
   },
   {
     "_tag": "Interface",
@@ -16214,7 +16214,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Key {\n  /**\n   * The name of the key being pressed.\n   */\n  readonly name: string\n  /**\n   * If set to `true`, then the user is also holding down the `Ctrl` key.\n   */\n  readonly ctrl: boolean\n  /**\n   * If set to `true`, then the user is also holding down the `Meta` key.\n   */\n  readonly meta: boolean\n  /**\n   * If set to `true`, then the user is also holding down the `Shift` key.\n   */\n  readonly shift: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L43"
   },
   {
     "_tag": "Interface",
@@ -16229,7 +16229,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface UserInput {\n  /**\n   * The character read from the user (if any).\n   */\n  readonly input: Option<string>\n  /**\n   * The key that the user pressed.\n   */\n  readonly key: Key\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L66"
   },
   {
     "_tag": "Class",

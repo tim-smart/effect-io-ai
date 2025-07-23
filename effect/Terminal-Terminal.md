@@ -15,9 +15,9 @@ export interface Terminal {
    */
   readonly columns: Effect<number>
   /**
-   * Reads a single input event from the default standard input.
+   * Reads input events from the default standard input.
    */
-  readonly readInput: Effect<UserInput, QuitException>
+  readonly readInput: Effect<ReadonlyMailbox<UserInput>, never, Scope.Scope>
   /**
    * Reads a single line from the default standard input.
    */
@@ -29,6 +29,6 @@ export interface Terminal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L18)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L20)
 
 Since v1.0.0

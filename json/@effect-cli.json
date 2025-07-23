@@ -4543,7 +4543,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const select: <A>(options: Prompt.SelectOptions<A>) => Prompt<A>",
+    "signature": "declare const select: <const A>(options: Prompt.SelectOptions<A>) => Prompt<A>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L661"
   },
   {
@@ -4558,7 +4558,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const multiSelect: <A>(options: Prompt.SelectOptions<A> & Prompt.MultiSelectOptions) => Prompt<Array<A>>",
+    "signature": "declare const multiSelect: <const A>(options: Prompt.SelectOptions<A> & Prompt.MultiSelectOptions) => Prompt<Array<A>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L667"
   },
   {
